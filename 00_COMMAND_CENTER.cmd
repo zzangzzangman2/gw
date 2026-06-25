@@ -6,6 +6,9 @@ set "ROOT=%~dp0"
 set "TOOLS=%ROOT%_restore_tools"
 set "ARCHIVE=%TOOLS%\root_cmd_archive"
 set "STATUS=%ROOT%reports\WORK_SPLIT_STATUS_20260625_1708.md"
+set "UI111=%TOOLS%\111_REVALIDATE_MAININTERFACE_ROUTE_LABEL_RECT_OVERRIDES.cmd"
+set "UI110=%TOOLS%\110_FIX_MAININTERFACE_ROUTE_TMP_VARIANT_MATERIAL_TEXTURE_PTRS.cmd"
+set "BATTLE31=%TOOLS%\BATTLE_31_ATTACH_LOADABLE_ACTOR_SPINE_ANIMATION_RUNTIME_PROBE.cmd"
 set "BATTLE30=%TOOLS%\BATTLE_30_VERIFY_HERO_CARD_RUNTIME_LAYOUT_AND_ATTACH_ACTOR_ANIMATION_TRACE.cmd"
 set "BATTLE29=%TOOLS%\BATTLE_29_BIND_HERO_LIST_SKILLCARDS_AND_VALIDATE_CLIP05.cmd"
 
@@ -23,26 +26,39 @@ echo =======================
 echo.
 echo 1. Open active tools folder
 echo 2. Run MainInterface restore menu
-echo 3. Run latest battle validation
-echo 4. Open work split status report
-echo 5. Open battle reports folder
-echo 6. Open archived old root CMD shortcuts
-echo 7. Show git status
-echo 8. Run GitHub push helper from archive
+echo 3. Run latest MainInterface UI validation
+echo 4. Run latest battle validation
+echo 5. Open work split status report
+echo 6. Open MainInterface reports folder
+echo 7. Open battle reports folder
+echo 8. Open archived old root CMD shortcuts
+echo 9. Show git status
+echo A. Run GitHub push helper from archive
 echo Q. Quit
 echo.
-choice /c 12345678Q /n /m "Select: "
-if errorlevel 9 goto done
-if errorlevel 8 call "%ARCHIVE%\PUSH_TO_GITHUB_MAIN.cmd" & pause & goto menu
-if errorlevel 7 git -C "%ROOT%" status --short & pause & goto menu
-if errorlevel 6 start "" "%ARCHIVE%" & goto menu
-if errorlevel 5 start "" "%ROOT%reports\battle" & goto menu
-if errorlevel 4 start "" "%STATUS%" & goto menu
-if errorlevel 3 (
-  if exist "%BATTLE30%" (
+choice /c 123456789AQ /n /m "Select: "
+if errorlevel 11 goto done
+if errorlevel 10 call "%ARCHIVE%\PUSH_TO_GITHUB_MAIN.cmd" & pause & goto menu
+if errorlevel 9 git -C "%ROOT%" status --short & pause & goto menu
+if errorlevel 8 start "" "%ARCHIVE%" & goto menu
+if errorlevel 7 start "" "%ROOT%reports\battle" & goto menu
+if errorlevel 6 start "" "%ROOT%reports\maininterface" & goto menu
+if errorlevel 5 start "" "%STATUS%" & goto menu
+if errorlevel 4 (
+  if exist "%BATTLE31%" (
+    call "%BATTLE31%"
+  ) else if exist "%BATTLE30%" (
     call "%BATTLE30%"
   ) else (
     call "%BATTLE29%"
+  )
+  goto menu
+)
+if errorlevel 3 (
+  if exist "%UI111%" (
+    call "%UI111%"
+  ) else (
+    call "%UI110%"
   )
   goto menu
 )
