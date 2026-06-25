@@ -406,3 +406,36 @@
   - visible sprite sheet: `reports\battle\BATTLE_25_VISIBLE_HUD_SPRITE_TEXTURE_SHEET.jpg`
 - Next battle blocker:
   - `BATTLE_26_RESTORE_BATTLE_SCENE_ACTORS_SKILL_CARDS_AND_RUNTIME_CAMERA`
+
+## Update 2026-06-25 19:40 KST
+
+### Battle BATTLE_26/BATTLE_27 Result
+
+- User rejected the text-heavy/debug-looking battle capture; confirmed: that capture was diagnostic output, not a valid battle UI.
+- BATTLE_26 extracted `C:\Users\godho\Downloads\플레이.mp4` clip05 around 486s and compared the stage crop against extracted battlemap sprites.
+- Important BATTLE_26 finding:
+  - runtime flow manifest says `mapId=11001`
+  - video similarity strongly prefers `map_11003`
+  - top candidates are `Map_11003_2`, `Map_11003_5`, `Map_11003_4_2`, `Map_11003_3`
+- BATTLE_27 rebuilt a non-final preview with:
+  - BATTLE_25 original HUD sprite/texture rebinding carried over
+  - non-HUD diagnostic roots removed
+  - `map_11003` original sprite layers behind the HUD
+  - loadable runtime actor prefabs instantiated for models `1002`, `1034`, `3001`
+  - magenta missing-shader fallback repaired
+  - actor atlas textures connected well enough for visible textured actors
+- Current BATTLE_27 verdict:
+  - `improved_correct_map_and_hud_preview_not_final`
+  - no large white blocks
+  - no visible debug/path/evidence text
+  - actors are now visible with original atlas texture, but still not video-matched in position/scale/motion
+  - bottom skill-card runtime UI is still missing
+- Outputs:
+  - root CMD: `BATTLE_27_REBUILD_CORRECT_MAP_SCENE_HUD_PREVIEW_AND_VALIDATE_CLIP05.cmd`
+  - tool CMD: `_restore_tools\BATTLE_27_REBUILD_CORRECT_MAP_SCENE_HUD_PREVIEW_AND_VALIDATE_CLIP05.cmd`
+  - BATTLE_26 report: `reports\battle\BATTLE_26_MAP_VIDEO_MATCH_RUNTIME_SCENE_EVIDENCE_RESULT.md`
+  - BATTLE_27 report: `reports\battle\BATTLE_CORRECT_MAP_SCENE_HUD_PREVIEW_CLIP05_RESULT.md`
+  - BATTLE_27 capture: `girlswar_battle_unity\Assets\RestoreCaptures\battle_hud\BattleCorrectMapSceneHudPreviewClip05_1680x720.png`
+  - BATTLE_27 contact sheet: `reports\battle\BATTLE_27_CORRECT_MAP_SCENE_HUD_PREVIEW_CLIP05_CONTACT_SHEET.jpg`
+- Next battle blocker:
+  - `BATTLE_28_RESTORE_BATTLE_ACTOR_SPINE_RUNTIME_MOTION_AND_BOTTOM_SKILL_CARDS`
