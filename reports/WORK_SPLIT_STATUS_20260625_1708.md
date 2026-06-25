@@ -798,3 +798,82 @@
   - probe log: `reports\maininterface\unity_113_spine_route_cluster_transform_probe.log`
 - Next UI blocker:
   - `route SpineGraphic runtime replay / raw skeleton decode recovery`
+
+## Update 2026-06-25 21:38 KST
+
+### BATTLE_34 Result
+
+- Visual verdict: original clip05 actor motion is still not reproduced.
+- BATTLE_34 used `C:\Users\godho\Downloads\플레이.mp4` clip05 `485.0-487.0s` as the motion gate.
+- Verdict: `failed_spine_animationstate_mesh_generator_missing`.
+- This is not a final restored battle screen.
+- Runtime probe:
+  - `SkeletonAnimation` components: `3`
+  - `AnimationState.SetAnimation` proxy success: `3 / 3`
+  - real mesh updated count: `0 / 3`
+  - mesh vertices after probe: `3712`
+  - runtime bridge kind: `proxy_stub_no_mesh_generator_or_skeletonbinary`
+  - magenta pixel ratio: `0.073207`
+- Skel/atlas/material/texture evidence:
+  - traced actors: `3`
+  - expected animation exact match in `.skel`: `2 / 3`
+  - `1002`: expected `ult`, present `True`
+  - `1034`: expected `skill1`, present `True`
+  - `3001`: serialized `attack`, exact present `False`, `attackR`-style candidates exist
+- Important blocker:
+  - the project still has a proxy `spine-unity` bridge without real `SkeletonBinary` / `MeshGenerator`
+  - AnimationState calls can succeed at proxy level, but `LateUpdate` cannot produce real updated Spine actor mesh
+  - magenta/static rendering was not hidden with arbitrary material
+- Outputs:
+  - active tool: `_restore_tools\cmd_archive\BATTLE_34_RECONSTRUCT_SPINE_ANIMATIONSTATE_AND_SHADER_RENDER_FROM_SKEL_ATLAS.cmd`
+  - report: `reports\battle\BATTLE_34_RECONSTRUCT_SPINE_ANIMATIONSTATE_AND_SHADER_RENDER_FROM_SKEL_ATLAS_RESULT.md`
+  - JSON: `reports\battle\BATTLE_34_RECONSTRUCT_SPINE_ANIMATIONSTATE_AND_SHADER_RENDER_FROM_SKEL_ATLAS_RESULT.json`
+  - Unity data: `girlswar_battle_unity\Assets\RestoreData\battle\BATTLE_34_RECONSTRUCT_SPINE_ANIMATIONSTATE_AND_SHADER_RENDER_FROM_SKEL_ATLAS.json`
+  - component CSV: `girlswar_battle_unity\Assets\RestoreData\battle\BATTLE_34_RECONSTRUCT_SPINE_ANIMATIONSTATE_AND_SHADER_RENDER_FROM_SKEL_ATLAS_COMPONENTS.csv`
+  - Unity probe JSON: `girlswar_battle_unity\Assets\RestoreData\battle\BATTLE_34_RECONSTRUCT_SPINE_ANIMATIONSTATE_AND_SHADER_RENDER_FROM_SKEL_ATLAS_UNITY.json`
+  - contact sheet: `reports\battle\BATTLE_34_RECONSTRUCT_SPINE_ANIMATIONSTATE_AND_SHADER_RENDER_FROM_SKEL_ATLAS_CONTACT_SHEET.jpg`
+- Next battle blocker:
+  - `BATTLE_35_IMPORT_OR_RECONSTRUCT_REAL_SPINE_4_RUNTIME_MESH_GENERATOR_FOR_ACTORS`
+
+### UI MAININTERFACE_114 Result
+
+- Visual verdict: MainInterface is still not a normal/restored UI.
+- UI114 applied no visual fix to the MainInterface scene.
+- Important fixed blocker:
+  - previous extracted `.skel.txt` path was not enough for runtime decode
+  - clean UnityFS `AssetBundle.LoadFromFile` + direct `TextAsset.bytes` export recovered the raw skeleton decode
+- Decode recovery:
+  - `Spine_shijieanniu` / `spine_diqiu`: bones `8`, slots `9`, animations `1`, animation `A` confirmed
+  - `8007` / `spine_xiaoren`: bones `108`, slots `37`, animations `15`, animation `run` confirmed
+  - runtime attachment bounds rows: `140`
+  - blocked/exception rows: `0`
+- Rule gate preserved:
+  - no fake icon
+  - no whole atlas placement
+  - no guessed crop/cloud/person placement
+  - no debug/path/evidence overlay in final capture
+- Verification:
+  - graphics capture: `girlswar_maininterface_unity\Assets\RestoreCaptures\maininterface_restored_1680x720.png`
+  - click validation: `24 / 24 / 0 / 24`, generated `2026-06-25 21:34:37`
+- Outputs:
+  - active tool: `_restore_tools\cmd_archive\114_ROUTE_SPINEGRAPHIC_RUNTIME_REPLAY_RAW_SKELETON_DECODE_RECOVERY.cmd`
+  - report: `reports\maininterface\MAININTERFACE_ROUTE_SPINEGRAPHIC_RUNTIME_REPLAY_RAW_SKELETON_DECODE_RECOVERY_RESULT.md`
+  - JSON: `girlswar_maininterface_unity\Assets\RestoreData\maininterface_route_spinegraphic_runtime_replay_raw_skeleton_decode_recovery.json`
+  - CSV: `girlswar_maininterface_unity\Assets\RestoreData\reports\maininterface_route_spinegraphic_runtime_replay_raw_skeleton_decode_recovery.csv`
+  - probe log: `reports\maininterface\unity_114_route_raw_decode_recovery_probe.log`
+- Next UI blocker:
+  - `route SkeletonGraphic replay integration in MainInterface`
+
+### Command Folder Cleanup
+
+- Root command policy is preserved:
+  - root has only `00_COMMAND_CENTER.cmd`
+  - no new root CMD was created
+- `_restore_tools` direct CMD cleanup:
+  - historical direct tool CMD files moved to `_restore_tools\cmd_archive`
+  - `_restore_tools\current` now contains only the small current launchers
+  - `_restore_tools\current\01_RUN_LATEST_MAININTERFACE_UI_VALIDATION.cmd` now calls UI114 from the archive
+  - `_restore_tools\current\02_RUN_LATEST_BATTLE_VALIDATION.cmd` now calls BATTLE_34 from the archive
+- Final state:
+  - `_restore_tools` direct `.cmd` count is `0`
+  - all direct tool launchers are either under `_restore_tools\current` or `_restore_tools\cmd_archive`
