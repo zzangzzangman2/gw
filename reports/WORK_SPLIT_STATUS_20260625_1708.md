@@ -877,3 +877,79 @@
 - Final state:
   - `_restore_tools` direct `.cmd` count is `0`
   - all direct tool launchers are either under `_restore_tools\current` or `_restore_tools\cmd_archive`
+
+## Update 2026-06-25 21:53 KST
+
+### UI MAININTERFACE_115 Result
+
+- Visual verdict: MainInterface is still not a normal/restored UI.
+- UI115 applied no visual fix.
+- Decision: `route_skeletongraphic_replay_integration_trace_complete`.
+- Blocked targets: `2`
+  - `Spine_shijieanniu` / `spine_diqiu`
+  - `8007` / `spine_xiaoren`
+- Main blocker:
+  - `girlswar_maininterface_unity` does not yet have real `Spine.Unity.SkeletonGraphic`, `SkeletonDataAsset`, or `AtlasAsset` runtime types.
+  - The clean raw skeleton decode from UI114 exists, but it cannot yet be attached as evidence-backed `SkeletonGraphic` replay inside the MainInterface scene.
+- Rule gate preserved:
+  - no coordinate-only placement
+  - no whole atlas placement
+  - no crop guessing
+  - no fake icon
+  - no debug/path/evidence overlay in the final capture
+- Verification:
+  - capture: `girlswar_maininterface_unity\Assets\RestoreCaptures\maininterface_restored_1680x720.png`
+  - click validation: `24 / 24 / 0 / 24`, generated `2026-06-25 21:50:00`
+- Outputs:
+  - active tool: `_restore_tools\cmd_archive\115_ROUTE_SKELETONGRAPHIC_REPLAY_INTEGRATION_IN_MAININTERFACE.cmd`
+  - report: `reports\maininterface\MAININTERFACE_ROUTE_SKELETONGRAPHIC_REPLAY_INTEGRATION_RESULT.md`
+  - JSON: `girlswar_maininterface_unity\Assets\RestoreData\maininterface_route_skeletongraphic_replay_integration.json`
+  - CSV: `girlswar_maininterface_unity\Assets\RestoreData\reports\maininterface_route_skeletongraphic_replay_integration.csv`
+- Next UI blocker:
+  - `import real Spine 4 runtime into girlswar_maininterface_unity or build MainInterface replay scene inside the Spine probe project`
+
+### BATTLE_35 Result
+
+- Visual verdict: original clip05 actor motion is still not reproduced.
+- BATTLE_35 used `C:\Users\godho\Downloads\플레이.mp4` clip05 `485.0-487.0s` as the motion gate.
+- Verdict: `failed_spine_shader_or_runtime_mesh_still_magenta`.
+- This is not a final restored battle screen.
+- Runtime import/probe:
+  - imported vendor Spine runtime files: `174`
+  - imported runtime bytes: `1318977`
+  - Unity exit code after rerun: `0`
+  - real Spine runtime present: `True`
+  - `SkeletonAnimation` components: `3`
+  - `AnimationState.SetAnimation` success: `3 / 3`
+  - real mesh updated count: `0 / 3`
+  - magenta pixel ratio: `0.068621`
+- Skel/atlas/material/texture evidence:
+  - traced actors: `3`
+  - expected animation exact match in `.skel`: `2 / 3`
+  - `1002`: expected `ult`, present `True`
+  - `1034`: expected `skill1`, present `True`
+  - `3001`: serialized `attack`, exact present `False`
+- Important blocker:
+  - real Spine runtime types now compile and load, but the original AssetBundle actor instances still do not show a changed mesh after AnimationState/LateUpdate probe
+  - magenta/static rendering was not hidden with arbitrary material
+  - no fake actor motion was generated
+- Outputs:
+  - active tool: `_restore_tools\cmd_archive\BATTLE_35_IMPORT_OR_RECONSTRUCT_REAL_SPINE_4_RUNTIME_MESH_GENERATOR_FOR_ACTORS.cmd`
+  - report: `reports\battle\BATTLE_35_IMPORT_OR_RECONSTRUCT_REAL_SPINE_4_RUNTIME_MESH_GENERATOR_FOR_ACTORS_RESULT.md`
+  - JSON: `reports\battle\BATTLE_35_IMPORT_OR_RECONSTRUCT_REAL_SPINE_4_RUNTIME_MESH_GENERATOR_FOR_ACTORS_RESULT.json`
+  - Unity data: `girlswar_battle_unity\Assets\RestoreData\battle\BATTLE_35_IMPORT_OR_RECONSTRUCT_REAL_SPINE_4_RUNTIME_MESH_GENERATOR_FOR_ACTORS.json`
+  - Unity probe JSON: `girlswar_battle_unity\Assets\RestoreData\battle\BATTLE_35_IMPORT_OR_RECONSTRUCT_REAL_SPINE_4_RUNTIME_MESH_GENERATOR_FOR_ACTORS_UNITY.json`
+  - contact sheet: `reports\battle\BATTLE_35_IMPORT_OR_RECONSTRUCT_REAL_SPINE_4_RUNTIME_MESH_GENERATOR_FOR_ACTORS_CONTACT_SHEET.jpg`
+- Next battle blocker:
+  - `BATTLE_36_TRACE_REAL_SPINE_INITIALIZE_SKELETONDATA_MATERIAL_SHADER_BINDING`
+
+### Command Folder Cleanup
+
+- Root command policy is preserved:
+  - root has only `00_COMMAND_CENTER.cmd`
+  - root also has `README_COMMANDS.md` as documentation
+  - no new root CMD was created
+- `_restore_tools` direct CMD policy is preserved:
+  - `_restore_tools` direct `.cmd` count is `0`
+  - `_restore_tools\current\01_RUN_LATEST_MAININTERFACE_UI_VALIDATION.cmd` now calls UI115 from the archive
+  - `_restore_tools\current\02_RUN_LATEST_BATTLE_VALIDATION.cmd` now calls BATTLE_35 from the archive

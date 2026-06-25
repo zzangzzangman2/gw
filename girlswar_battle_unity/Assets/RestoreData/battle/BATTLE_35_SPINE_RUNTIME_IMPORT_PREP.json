@@ -1,0 +1,310 @@
+{
+  "vendorPackage": "C:\\Users\\godho\\Downloads\\girlswar\\_restore_tools\\vendor\\spine-unity-4.0-2024-08-21.unitypackage",
+  "vendorPackageExists": true,
+  "vendorPackageSize": 6881350,
+  "runtimeRoot": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_battle_unity\\Assets\\Spine\\Runtime",
+  "runtimeFileCount": 174,
+  "runtimeBytes": 1318977,
+  "stubAsmdef": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_battle_unity\\Assets\\Scripts\\BattleUIExternalStubs\\SpineUnity\\spine-unity.asmdef",
+  "stubAsmdefContent": "{\n  \"name\": \"girlswar-spine-proxy-disabled\",\n  \"references\": [\n    \"UnityEngine.UI\"\n  ],\n  \"autoReferenced\": true\n}\n",
+  "legacyProxyGuarded": {
+    "SpineActorRuntimeStubs": false,
+    "SpineUnityStubs": false
+  },
+  "sampleExtracted": [
+    {
+      "pathname": "Assets/Spine/Runtime/spine-unity/Shaders/Outline/BlendModes/Spine-Skeleton-PMA-Additive-Outline.shader",
+      "bytes": 1732
+    },
+    {
+      "pathname": "Assets/Spine/Runtime/spine-unity/Components/SkeletonUtility/FollowLocationRigidbody2D.cs",
+      "bytes": 2627
+    },
+    {
+      "pathname": "Assets/Spine/Runtime/spine-unity/Components/Following/BoundingBoxFollower.cs",
+      "bytes": 9742
+    },
+    {
+      "pathname": "Assets/Spine/Runtime/spine-unity/Modules/TK2D/SpriteCollectionAttachmentLoader.cs",
+      "bytes": 6206
+    },
+    {
+      "pathname": "Assets/Spine/Runtime/spine-csharp/MathUtils.cs",
+      "bytes": 6422
+    },
+    {
+      "pathname": "Assets/Spine/Runtime/spine-unity/SkeletonDataModifierAssets/BlendModeMaterials/SkeletonStraightMultiply.mat",
+      "bytes": 1222
+    },
+    {
+      "pathname": "Assets/Spine/Runtime/spine-csharp/Attachments/Attachment.cs",
+      "bytes": 2257
+    },
+    {
+      "pathname": "Assets/Spine/Runtime/spine-unity/Shaders/Sprite/CGIncludes/SpriteUnlit.cginc",
+      "bytes": 1399
+    },
+    {
+      "pathname": "Assets/Spine/Runtime/spine-unity/Utility/TimelineExtensions.cs",
+      "bytes": 4987
+    },
+    {
+      "pathname": "Assets/Spine/Runtime/spine-csharp/SkeletonBounds.cs",
+      "bytes": 9726
+    },
+    {
+      "pathname": "Assets/Spine/Runtime/spine-unity/Mesh Generation/DoubleBuffered.cs",
+      "bytes": 2030
+    },
+    {
+      "pathname": "Assets/Spine/Runtime/spine-unity/Shaders/Sprite/CGIncludes/SpriteLighting.cginc",
+      "bytes": 6385
+    },
+    {
+      "pathname": "Assets/Spine/Runtime/spine-unity/Shaders/Outline/Spine-Skeleton-Lit-Outline.shader",
+      "bytes": 1601
+    },
+    {
+      "pathname": "Assets/Spine/Runtime/spine-csharp/Skeleton.cs",
+      "bytes": 25631
+    },
+    {
+      "pathname": "Assets/Spine/Runtime/spine-unity/SkeletonDataModifierAssets/BlendModeMaterials/BlendModeMaterialsAsset.cs",
+      "bytes": 5447
+    },
+    {
+      "pathname": "Assets/Spine/Runtime/spine-unity/Asset Types/RegionlessAttachmentLoader.cs",
+      "bytes": 3217
+    },
+    {
+      "pathname": "Assets/Spine/Runtime/spine-unity/Shaders/Outline/Spine-Skeleton-OutlineOnly-ZWrite.shader",
+      "bytes": 1933
+    },
+    {
+      "pathname": "Assets/Spine/Runtime/spine-unity/SkeletonDataModifierAssets/BlendModeMaterials/SkeletonStraightScreen.mat",
+      "bytes": 1220
+    },
+    {
+      "pathname": "Assets/Spine/Runtime/spine-unity/Components/SkeletonRenderSeparator/SkeletonPartsRenderer.cs",
+      "bytes": 5622
+    },
+    {
+      "pathname": "Assets/Spine/Runtime/spine-unity/Components/Following/BoundingBoxFollowerGraphic.cs",
+      "bytes": 10068
+    },
+    {
+      "pathname": "Assets/Spine/Runtime/spine-unity/Shaders/Outline/Spine-Special-Skeleton-Grayscale-Outline.shader",
+      "bytes": 1696
+    },
+    {
+      "pathname": "Assets/Spine/Runtime/spine-unity/Shaders/Spine-Skeleton.shader",
+      "bytes": 3173
+    },
+    {
+      "pathname": "Assets/Spine/Runtime/spine-unity/SkeletonDataModifierAssets/BlendModeMaterials/Default BlendModeMaterials.asset",
+      "bytes": 701
+    },
+    {
+      "pathname": "Assets/Spine/Runtime/spine-unity/Utility/AtlasUtilities.cs",
+      "bytes": 39382
+    },
+    {
+      "pathname": "Assets/Spine/Runtime/spine-unity/Components/SkeletonRendererCustomMaterials/SkeletonRendererCustomMaterials.cs",
+      "bytes": 7679
+    },
+    {
+      "pathname": "Assets/Spine/Runtime/spine-unity/Shaders/CGIncludes/Spine-DepthOnlyPass.cginc",
+      "bytes": 920
+    },
+    {
+      "pathname": "Assets/Spine/Runtime/spine-unity/Shaders/Outline/Sprite/SpritesUnlit-Outline.shader",
+      "bytes": 2195
+    },
+    {
+      "pathname": "Assets/Spine/Runtime/spine-unity/Shaders/Outline/Spine-Skeleton-Outline.shader",
+      "bytes": 1763
+    },
+    {
+      "pathname": "Assets/Spine/Runtime/spine-csharp/SkeletonData.cs",
+      "bytes": 9307
+    },
+    {
+      "pathname": "Assets/Spine/Runtime/spine-unity/Shaders/Sprite/SpritesVertexLit.shader",
+      "bytes": 4522
+    },
+    {
+      "pathname": "Assets/Spine/Runtime/spine-csharp/BoneData.cs",
+      "bytes": 4459
+    },
+    {
+      "pathname": "Assets/Spine/Runtime/spine-csharp/TransformConstraint.cs",
+      "bytes": 13107
+    },
+    {
+      "pathname": "Assets/Spine/Runtime/spine-unity/Materials/SkeletonGraphicAdditive.mat",
+      "bytes": 2645
+    },
+    {
+      "pathname": "Assets/Spine/Runtime/spine-unity/Shaders/Outline/CGIncludes/Spine-Outline-Pass.cginc",
+      "bytes": 1897
+    },
+    {
+      "pathname": "Assets/Spine/Runtime/spine-unity/Shaders/Outline/Sprite/SpritesVertexLit-Outline.shader",
+      "bytes": 2846
+    },
+    {
+      "pathname": "Assets/Spine/Runtime/spine-unity/Mesh Generation/MeshGenerator.cs",
+      "bytes": 54313
+    },
+    {
+      "pathname": "Assets/Spine/Runtime/spine-csharp/Attachments/ClippingAttachment.cs",
+      "bytes": 2184
+    },
+    {
+      "pathname": "Assets/Spine/Runtime/spine-unity/Utility/AttachmentCloneExtensions.cs",
+      "bytes": 6632
+    },
+    {
+      "pathname": "Assets/Spine/Runtime/spine-csharp/Json.cs",
+      "bytes": 12405
+    },
+    {
+      "pathname": "Assets/Spine/Runtime/spine-csharp/EventData.cs",
+      "bytes": 2487
+    }
+  ],
+  "skipped": [
+    {
+      "pathname": "Assets/Spine/Runtime/spine-unity/Utility/YieldInstructions",
+      "reason": "directory_or_no_asset"
+    },
+    {
+      "pathname": "Assets/Spine/Runtime/spine-unity/SkeletonDataModifierAssets/BlendModeMaterials",
+      "reason": "directory_or_no_asset"
+    },
+    {
+      "pathname": "Assets/Spine/Runtime/spine-unity/Asset Types",
+      "reason": "directory_or_no_asset"
+    },
+    {
+      "pathname": "Assets/Spine/Runtime/spine-unity",
+      "reason": "directory_or_no_asset"
+    },
+    {
+      "pathname": "Assets/Spine/Runtime/spine-csharp/Attachments",
+      "reason": "directory_or_no_asset"
+    },
+    {
+      "pathname": "Assets/Spine/Runtime/spine-unity/Components/RootMotion",
+      "reason": "directory_or_no_asset"
+    },
+    {
+      "pathname": "Assets/Spine/Runtime/spine-unity/Shaders/Outline/CGIncludes",
+      "reason": "directory_or_no_asset"
+    },
+    {
+      "pathname": "Assets/Spine/Runtime/spine-unity/Components/SkeletonRenderSeparator",
+      "reason": "directory_or_no_asset"
+    },
+    {
+      "pathname": "Assets/Spine/Runtime/spine-unity/Materials",
+      "reason": "directory_or_no_asset"
+    },
+    {
+      "pathname": "Assets/Spine/Runtime/spine-unity/Shaders/Sprite/CGIncludes",
+      "reason": "directory_or_no_asset"
+    },
+    {
+      "pathname": "Assets/Spine/Runtime/spine-unity/Shaders/CGIncludes",
+      "reason": "directory_or_no_asset"
+    },
+    {
+      "pathname": "Assets/Spine/Runtime/spine-unity/Utility",
+      "reason": "directory_or_no_asset"
+    },
+    {
+      "pathname": "Assets/Spine/Runtime/spine-unity/SkeletonDataModifierAssets",
+      "reason": "directory_or_no_asset"
+    },
+    {
+      "pathname": "Assets/Spine/Runtime/spine-unity/Shaders/Outline/Sprite",
+      "reason": "directory_or_no_asset"
+    },
+    {
+      "pathname": "Assets/Spine/Runtime/spine-unity/Shaders/Outline/BlendModes",
+      "reason": "directory_or_no_asset"
+    },
+    {
+      "pathname": "Assets/Spine/Runtime/spine-unity/Shaders/Outline/SkeletonGraphic",
+      "reason": "directory_or_no_asset"
+    },
+    {
+      "pathname": "Assets/Spine/Runtime/spine-unity/Shaders/SkeletonGraphic",
+      "reason": "directory_or_no_asset"
+    },
+    {
+      "pathname": "Assets/Spine/Runtime/spine-unity/Components/Internal",
+      "reason": "directory_or_no_asset"
+    },
+    {
+      "pathname": "Assets/Spine/Runtime/spine-unity/Components",
+      "reason": "directory_or_no_asset"
+    },
+    {
+      "pathname": "Assets/Spine/Runtime/spine-csharp",
+      "reason": "directory_or_no_asset"
+    },
+    {
+      "pathname": "Assets/Spine/Runtime/spine-unity/Components/SkeletonRendererCustomMaterials",
+      "reason": "directory_or_no_asset"
+    },
+    {
+      "pathname": "Assets/Spine/Runtime/spine-unity/Modules",
+      "reason": "directory_or_no_asset"
+    },
+    {
+      "pathname": "Assets/Spine/Runtime/spine-unity/Shaders/Sprite",
+      "reason": "directory_or_no_asset"
+    },
+    {
+      "pathname": "Assets/Spine/Runtime/spine-unity/Components/Following",
+      "reason": "directory_or_no_asset"
+    },
+    {
+      "pathname": "Assets/Spine/Runtime/spine-unity/Shaders/BlendModes",
+      "reason": "directory_or_no_asset"
+    },
+    {
+      "pathname": "Assets/Spine/Runtime/spine-unity/Shaders/Utility",
+      "reason": "directory_or_no_asset"
+    },
+    {
+      "pathname": "Assets/Spine/Runtime/spine-unity/Shaders/SkeletonGraphic/CGIncludes",
+      "reason": "directory_or_no_asset"
+    },
+    {
+      "pathname": "Assets/Spine/Runtime/spine-unity/Mesh Generation",
+      "reason": "directory_or_no_asset"
+    },
+    {
+      "pathname": "Assets/Spine/Runtime",
+      "reason": "directory_or_no_asset"
+    },
+    {
+      "pathname": "Assets/Spine/Runtime/spine-unity/Modules/TK2D",
+      "reason": "directory_or_no_asset"
+    },
+    {
+      "pathname": "Assets/Spine/Runtime/spine-unity/Shaders/Outline",
+      "reason": "directory_or_no_asset"
+    },
+    {
+      "pathname": "Assets/Spine/Runtime/spine-unity/Shaders",
+      "reason": "directory_or_no_asset"
+    },
+    {
+      "pathname": "Assets/Spine/Runtime/spine-unity/Components/SkeletonUtility",
+      "reason": "directory_or_no_asset"
+    }
+  ]
+}

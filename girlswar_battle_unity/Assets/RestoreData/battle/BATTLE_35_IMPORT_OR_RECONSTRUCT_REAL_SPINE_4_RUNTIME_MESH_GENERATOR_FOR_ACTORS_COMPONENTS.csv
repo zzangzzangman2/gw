@@ -1,0 +1,4 @@
+﻿side,heroDid,modelId,bundle,skeletonDataPathID,skeletonTextAssetName,skeletonBytes,expectedAnimation,expectedAnimationInSkel,animationEvidence,atlasRegionCount,materialNames,textureNames,actorSerializedAnimationNames
+our,1002,1002,download/roleprefabsandres/battleprefabandres/1002.assetbundle,5410798655350692559,1002.skel,862131,ult,True,tx/skill0;tx/skill1;tx/skill2;tx/skill3;tx/skill4;tx/skill5;white;attack;run;skill1;stand;ult;ultx,252,1002_Material,1002(1024x512),ult
+our,1034,1034,download/roleprefabsandres/battleprefabandres/1034.assetbundle,3214316990278771306,1034.skel,820748,skill1,True,tx/ult_00000;ult;white;attack;run;skill1;stand;ultx,185,1034_Material,1034(2048x1024),skill1
+enemy,1100111,3001,download/roleprefabsandres/battleprefabandres/3001.assetbundle,-5838307213355684488,3001.skel,160467,attack,False,white8;attackR;RUn;RUN;runJ;run1;skill1a;stand,41,3001_Material,3001(512x512),attack

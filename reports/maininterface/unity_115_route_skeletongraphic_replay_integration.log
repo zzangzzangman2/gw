@@ -1,0 +1,576 @@
+[Licensing::Module] Trying to connect to existing licensing client channel...
+[Licensing::IpcConnector] Channel LicenseClient-godho doesn't exist
+Built from '6000.4/staging' branch; Version is '6000.4.9f1 (f7258d6eebbe) revision 16197005'; Using compiler version '194234433'; Build Type 'Release'
+OS: 'Windows 11  (10.0.26200) Professional' Language: 'ko' Physical Memory: 32022 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1
+System  architecture: x64
+Process architecture: x64
+Date: 2026-06-25T12:49:38Z
+[Licensing::Module] Successfully launched the LicensingClient (PId: 35708)
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\6000.4.9f1\Editor\Unity.exe
+-batchmode
+-nographics
+-quit
+-projectPath
+C:\Users\godho\Downloads\girlswar\girlswar_maininterface_unity
+-executeMethod
+GirlsWarRestore.MainInterfaceRouteSkeletonGraphicReplayIntegration.TraceRouteSkeletonGraphicReplayIntegration
+-logFile
+C:\Users\godho\Downloads\girlswar\reports\maininterface\unity_115_route_skeletongraphic_replay_integration.log
+Successfully changed project path to: C:\Users\godho\Downloads\girlswar\girlswar_maininterface_unity
+C:/Users/godho/Downloads/girlswar/girlswar_maininterface_unity
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gfx=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+Player connection [26924]  Target information:
+
+Player connection [26924]  * "[IP] 10.10.1.159 [Port] 55504 [Flags] 2 [Guid] 1337902211 [EditorId] 1337902211 [Version] 1048832 [Id] WindowsEditor(7,sjpark) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor"
+
+Player connection [26924]  * "[IP] 172.26.64.1 [Port] 55504 [Flags] 2 [Guid] 1337902211 [EditorId] 1337902211 [Version] 1048832 [Id] WindowsEditor(7,sjpark) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor"
+
+Player connection [26924]  * "[IP] 100.66.239.97 [Port] 55504 [Flags] 2 [Guid] 1337902211 [EditorId] 1337902211 [Version] 1048832 [Id] WindowsEditor(7,sjpark) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor"
+
+Player connection [26924] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [26924] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Input System module state changed to: Initialized.
+[Physics::Module] Initialized fallback backend.
+[Physics::Module] Id: 0xdecafbad
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-godho" at "2026-06-25T12:49:38.558962Z"
+[Package Manager] Connected to IPC stream "Upm-21052" after 0.2 seconds.
+[Licensing::Module] Licensing is not yet initialized.
+[Licensing::Client] Code 10 while verifying Licensing Client signature (process Id: 35708, path: "C:/Program Files/Unity/Hub/Editor/6000.4.9f1/Editor/Data/Resources/Licensing/Client/Unity.Licensing.Client.exe")
+[Licensing::Module] LicensingClient has failed validation; ignoring
+[Licensing::Client] Handshaking with LicensingClient:
+  Version:                 1.18.1+9fbee8e
+  Session Id:              10a2f368aaa24cf890a1e9504b00ae7d
+  Correlation Id:          d7199d98da39b0d5696c10da075b532d
+  External correlation Id: 1361925729037887162
+  Machine Id:              nETCb6mCOTg3uD4qHH44hI9aRsg=
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-godho" (connect: 0.37s, validation: 0.04s, handshake: 0.06s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-godho-notifications" at "2026-06-25T12:49:38.6664875Z"
+[Licensing::Module] Connected to LicensingClient (PId: 35708, launch time: 0.00, total connection time: 0.48s)
+[Licensing::Module] Error: Access token is unavailable; failed to update
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] License group:
+  Id: 14569760011564-UnityPersXXXX
+  Product: Unity Personal
+  Type: Assigned
+  Expiration: Unlimited
+[Licensing::Client] Successfully updated license, isAsync: True, time: 0.01
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] Licensing Background thread has ended after 0.52s
+[Licensing::Module] Licensing is initialized (took 0.14s).
+[Licensing::Client] Successfully resolved entitlement details
+Library Redirect Path: Library/
+[Physics::Module] Selected backend.
+[Physics::Module] Name: PhysX
+[Physics::Module] Id: 0xf2b8ea05
+[Physics::Module] SDK Version: 4.1.2
+[Physics::Module] Integration Version: 1.0.0
+[Physics::Module] Threading Mode: Multi-Threaded
+Artifact Garbage Collection - Removed 1 unused hashed content files
+Initialize engine version: 6000.4.9f1 (f7258d6eebbe)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/6000.4.9f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/godho/Downloads/girlswar/girlswar_maininterface_unity/Assets
+Forcing GfxDevice: Null
+GfxDevice: creating device client; kGfxThreadingModeNonThreaded
+NullGfxDevice:
+    Version:  NULL 1.0 [1.0]
+    Renderer: Null Device
+    Vendor:   Unity Technologies
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.4.9f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.4.9f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.4.9f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56052
+CodeReloadManager initialized
+Using cacheserver namespaces - metadata:defaultmetadata, artifacts:defaultartifacts
+Using cacheserver namespaces - metadata:defaultmetadata, artifacts:defaultartifacts
+ImportWorker Server TCP listen port: 0
+AcceleratorClientConnectionCallback - disconnected - :0
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.4.9f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.4.9f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.001975 seconds.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Package Manager log level set to [2]
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:False
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.267 seconds
+Domain Reload Profiling: 604ms
+	BeginReloadAssembly (107ms)
+	RebuildCommonClasses (26ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (50ms)
+	LoadAllAssembliesAndSetupDomain (144ms)
+		LoadAssemblies (103ms)
+		AnalyzeDomain (138ms)
+			TypeCache.Refresh (136ms)
+				TypeCache.ScanAssembly (126ms)
+	FinalizeReload (268ms)
+		SetupLoadedEditorAssemblies (0ms)
+			InitializePlatformSupportModulesInManaged (31ms)
+			BeforeProcessingInitializeOnLoad (55ms)
+			ProcessInitializeOnLoadAttributes (75ms)
+			ProcessInitializeOnLoadMethodAttributes (64ms)
+[Licensing::Client] Successfully resolved entitlement details
+Application.AssetDatabase Initial Refresh Start
+[Package Manager] Restoring resolved packages state from cache
+[Licensing::Client] Successfully resolved entitlement details
+[Package Manager] Registered 38 packages:
+  Built-in packages:
+    com.unity.multiplayer.center@1.0.1 (location: C:\Users\godho\Downloads\girlswar\girlswar_maininterface_unity\Library\PackageCache\com.unity.multiplayer.center@f01f4ba8d00a)
+    com.unity.modules.accessibility@1.0.0 (location: C:\Users\godho\Downloads\girlswar\girlswar_maininterface_unity\Library\PackageCache\com.unity.modules.accessibility)
+    com.unity.modules.adaptiveperformance@1.0.0 (location: C:\Users\godho\Downloads\girlswar\girlswar_maininterface_unity\Library\PackageCache\com.unity.modules.adaptiveperformance)
+    com.unity.modules.ai@1.0.0 (location: C:\Users\godho\Downloads\girlswar\girlswar_maininterface_unity\Library\PackageCache\com.unity.modules.ai)
+    com.unity.modules.androidjni@1.0.0 (location: C:\Users\godho\Downloads\girlswar\girlswar_maininterface_unity\Library\PackageCache\com.unity.modules.androidjni)
+    com.unity.modules.animation@1.0.0 (location: C:\Users\godho\Downloads\girlswar\girlswar_maininterface_unity\Library\PackageCache\com.unity.modules.animation)
+    com.unity.modules.assetbundle@1.0.0 (location: C:\Users\godho\Downloads\girlswar\girlswar_maininterface_unity\Library\PackageCache\com.unity.modules.assetbundle)
+    com.unity.modules.audio@1.0.0 (location: C:\Users\godho\Downloads\girlswar\girlswar_maininterface_unity\Library\PackageCache\com.unity.modules.audio)
+    com.unity.modules.cloth@1.0.0 (location: C:\Users\godho\Downloads\girlswar\girlswar_maininterface_unity\Library\PackageCache\com.unity.modules.cloth)
+    com.unity.modules.director@1.0.0 (location: C:\Users\godho\Downloads\girlswar\girlswar_maininterface_unity\Library\PackageCache\com.unity.modules.director)
+    com.unity.modules.imageconversion@1.0.0 (location: C:\Users\godho\Downloads\girlswar\girlswar_maininterface_unity\Library\PackageCache\com.unity.modules.imageconversion)
+    com.unity.modules.imgui@1.0.0 (location: C:\Users\godho\Downloads\girlswar\girlswar_maininterface_unity\Library\PackageCache\com.unity.modules.imgui)
+    com.unity.modules.jsonserialize@1.0.0 (location: C:\Users\godho\Downloads\girlswar\girlswar_maininterface_unity\Library\PackageCache\com.unity.modules.jsonserialize)
+    com.unity.modules.particlesystem@1.0.0 (location: C:\Users\godho\Downloads\girlswar\girlswar_maininterface_unity\Library\PackageCache\com.unity.modules.particlesystem)
+    com.unity.modules.physics@1.0.0 (location: C:\Users\godho\Downloads\girlswar\girlswar_maininterface_unity\Library\PackageCache\com.unity.modules.physics)
+    com.unity.modules.physics2d@1.0.0 (location: C:\Users\godho\Downloads\girlswar\girlswar_maininterface_unity\Library\PackageCache\com.unity.modules.physics2d)
+    com.unity.modules.screencapture@1.0.0 (location: C:\Users\godho\Downloads\girlswar\girlswar_maininterface_unity\Library\PackageCache\com.unity.modules.screencapture)
+    com.unity.modules.terrain@1.0.0 (location: C:\Users\godho\Downloads\girlswar\girlswar_maininterface_unity\Library\PackageCache\com.unity.modules.terrain)
+    com.unity.modules.terrainphysics@1.0.0 (location: C:\Users\godho\Downloads\girlswar\girlswar_maininterface_unity\Library\PackageCache\com.unity.modules.terrainphysics)
+    com.unity.modules.tilemap@1.0.0 (location: C:\Users\godho\Downloads\girlswar\girlswar_maininterface_unity\Library\PackageCache\com.unity.modules.tilemap)
+    com.unity.modules.ui@1.0.0 (location: C:\Users\godho\Downloads\girlswar\girlswar_maininterface_unity\Library\PackageCache\com.unity.modules.ui)
+    com.unity.modules.uielements@1.0.0 (location: C:\Users\godho\Downloads\girlswar\girlswar_maininterface_unity\Library\PackageCache\com.unity.modules.uielements)
+    com.unity.modules.umbra@1.0.0 (location: C:\Users\godho\Downloads\girlswar\girlswar_maininterface_unity\Library\PackageCache\com.unity.modules.umbra)
+    com.unity.modules.unityanalytics@1.0.0 (location: C:\Users\godho\Downloads\girlswar\girlswar_maininterface_unity\Library\PackageCache\com.unity.modules.unityanalytics)
+    com.unity.modules.unitywebrequest@1.0.0 (location: C:\Users\godho\Downloads\girlswar\girlswar_maininterface_unity\Library\PackageCache\com.unity.modules.unitywebrequest)
+    com.unity.modules.unitywebrequestassetbundle@1.0.0 (location: C:\Users\godho\Downloads\girlswar\girlswar_maininterface_unity\Library\PackageCache\com.unity.modules.unitywebrequestassetbundle)
+    com.unity.modules.unitywebrequestaudio@1.0.0 (location: C:\Users\godho\Downloads\girlswar\girlswar_maininterface_unity\Library\PackageCache\com.unity.modules.unitywebrequestaudio)
+    com.unity.modules.unitywebrequesttexture@1.0.0 (location: C:\Users\godho\Downloads\girlswar\girlswar_maininterface_unity\Library\PackageCache\com.unity.modules.unitywebrequesttexture)
+    com.unity.modules.unitywebrequestwww@1.0.0 (location: C:\Users\godho\Downloads\girlswar\girlswar_maininterface_unity\Library\PackageCache\com.unity.modules.unitywebrequestwww)
+    com.unity.modules.vectorgraphics@1.0.0 (location: C:\Users\godho\Downloads\girlswar\girlswar_maininterface_unity\Library\PackageCache\com.unity.modules.vectorgraphics)
+    com.unity.modules.vehicles@1.0.0 (location: C:\Users\godho\Downloads\girlswar\girlswar_maininterface_unity\Library\PackageCache\com.unity.modules.vehicles)
+    com.unity.modules.video@1.0.0 (location: C:\Users\godho\Downloads\girlswar\girlswar_maininterface_unity\Library\PackageCache\com.unity.modules.video)
+    com.unity.modules.vr@1.0.0 (location: C:\Users\godho\Downloads\girlswar\girlswar_maininterface_unity\Library\PackageCache\com.unity.modules.vr)
+    com.unity.modules.wind@1.0.0 (location: C:\Users\godho\Downloads\girlswar\girlswar_maininterface_unity\Library\PackageCache\com.unity.modules.wind)
+    com.unity.modules.xr@1.0.0 (location: C:\Users\godho\Downloads\girlswar\girlswar_maininterface_unity\Library\PackageCache\com.unity.modules.xr)
+    com.unity.ugui@2.0.0 (location: C:\Users\godho\Downloads\girlswar\girlswar_maininterface_unity\Library\PackageCache\com.unity.ugui@1f2d1ab0d950)
+    com.unity.modules.subsystems@1.0.0 (location: C:\Users\godho\Downloads\girlswar\girlswar_maininterface_unity\Library\PackageCache\com.unity.modules.subsystems)
+    com.unity.modules.hierarchycore@1.0.0 (location: C:\Users\godho\Downloads\girlswar\girlswar_maininterface_unity\Library\PackageCache\com.unity.modules.hierarchycore)
+[Subsystems] No new subsystems found in resolved package list.
+[Package Manager] Done registering packages in 0.01 seconds
+[ScriptCompilation] Requested script compilation because: AssetDatabase observed changes in script compilation related files
+Starting: C:\Program Files\Unity\Hub\Editor\6000.4.9f1\Editor\Data\Tools\BuildPipeline\bee_backend.exe --ipc --defer-dag-verification --dagfile="Library/Bee/1900b0aE.dag" --continue-on-failure --profile="Library/Bee/backend1.traceevents" ScriptAssemblies
+WorkingDir: C:/Users/godho/Downloads/girlswar/girlswar_maininterface_unity
+DisplayProgressbar: Compiling Scripts
+ExitCode: 0 Duration: 1s803ms
+[228/231    1s] Csc Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp-Editor.dll (+2 others)
+Assets\Editor\MainInterfaceSceneBuilder.cs(329,17): warning CS0162: Unreachable code detected
+
+Assets\Editor\MainInterfaceSceneBuilder.cs(378,26): warning CS0618: 'Object.FindFirstObjectByType<T>()' is obsolete: 'FindFirstObjectByType has been deprecated because it relies on instance ID ordering. Use FindAnyObjectByType instead, which does not depend on ordering.'
+
+Assets\Editor\MainInterfaceRouteTmpVariantMaterialAudit.cs(93,111): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+
+Assets\Editor\MainInterfaceRouteTmpVariantMaterialAudit.cs(93,28): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsInactive, FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+
+Assets\Editor\MainInterfaceRouteLabelRectOverrideRevalidation.cs(104,111): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+
+Assets\Editor\MainInterfaceRouteLabelRectOverrideRevalidation.cs(104,30): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsInactive, FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+
+Assets\Editor\MainInterfaceRouteLabelRectOverrideRevalidation.cs(154,53): warning CS0618: 'TMP_Text.enableWordWrapping' is obsolete: 'The enabledWordWrapping property is now obsolete. Please use the textWrappingMode property instead.'
+
+Assets\Editor\MainInterfaceGuildMainWhitePanelTrace.cs(256,87): warning CS0618: 'Object.GetInstanceID()' is obsolete: 'GetInstanceID is deprecated. Use GetEntityId instead. This will be removed in a future version.'
+
+Assets\Editor\MainInterfaceGuildMainWhitePanelTrace.cs(256,50): warning CS0618: 'Unsupported.GetLocalIdentifierInFile(int)' is obsolete: 'GetLocalIdentifierInFile() is deprecated. Use GetLocalIdentifierInFileForPersistentObject() instead.'
+
+Assets\Editor\MainInterfaceGuildMainWhitePanelTrace.cs(265,91): warning CS0618: 'Object.GetInstanceID()' is obsolete: 'GetInstanceID is deprecated. Use GetEntityId instead. This will be removed in a future version.'
+
+Assets\Editor\MainInterfaceGuildMainWhitePanelTrace.cs(265,54): warning CS0618: 'Unsupported.GetLocalIdentifierInFile(int)' is obsolete: 'GetLocalIdentifierInFile() is deprecated. Use GetLocalIdentifierInFileForPersistentObject() instead.'
+
+Assets\Editor\MainInterfaceRouteSkeletonGraphicReplayIntegration.cs(264,104): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+
+Assets\Editor\MainInterfaceRouteSkeletonGraphicReplayIntegration.cs(264,23): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsInactive, FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+
+Assets\Editor\MainInterfaceSceneBuilder.cs(794,21): warning CS0618: 'TMP_Text.enableWordWrapping' is obsolete: 'The enabledWordWrapping property is now obsolete. Please use the textWrappingMode property instead.'
+
+Assets\Editor\MainInterfaceSceneBuilder.cs(797,21): warning CS0618: 'TMP_Text.enableKerning' is obsolete: 'The "enableKerning" property has been deprecated. Use the "fontFeatures" property to control what features are enabled on the text component.'
+
+Assets\Editor\MainInterfaceNavigationTargetReferenceTrace.cs(294,73): warning CS0618: 'Object.GetInstanceID()' is obsolete: 'GetInstanceID is deprecated. Use GetEntityId instead. This will be removed in a future version.'
+
+Assets\Editor\MainInterfaceNavigationTargetReferenceTrace.cs(294,36): warning CS0618: 'Unsupported.GetLocalIdentifierInFile(int)' is obsolete: 'GetLocalIdentifierInFile() is deprecated. Use GetLocalIdentifierInFileForPersistentObject() instead.'
+
+Assets\Editor\MainInterfaceNavigationTargetReferenceTrace.cs(305,67): warning CS0618: 'SerializedProperty.objectReferenceInstanceIDValue' is obsolete: 'objectReferenceInstanceIDValue is obsolete. Use objectReferenceEntityIdValue instead'
+
+Assets\Editor\MainInterfaceNavigationTargetReferenceTrace.cs(307,20): warning CS0618: 'SerializedProperty.objectReferenceInstanceIDValue' is obsolete: 'objectReferenceInstanceIDValue is obsolete. Use objectReferenceEntityIdValue instead'
+
+Assets\Editor\MainInterfaceNavigationTargetReferenceTrace.cs(308,32): warning CS0618: 'SerializedProperty.objectReferenceInstanceIDValue' is obsolete: 'objectReferenceInstanceIDValue is obsolete. Use objectReferenceEntityIdValue instead'
+
+Assets\Editor\MainInterfaceRouteNonImageRendererEffectRuntimeStateTrace.cs(336,113): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+
+Assets\Editor\MainInterfaceRouteNonImageRendererEffectRuntimeStateTrace.cs(336,32): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsInactive, FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+[229/231    0s] CopyFiles Library/ScriptAssemblies/Assembly-CSharp-Editor.pdb
+[230/231    0s] CopyFiles Library/ScriptAssemblies/Assembly-CSharp-Editor.dll
+*** Tundra build success (1.78 seconds), 3 items updated, 231 evaluated
+Assets\Editor\MainInterfaceSceneBuilder.cs(329,17): warning CS0162: Unreachable code detected
+Assets\Editor\MainInterfaceSceneBuilder.cs(378,26): warning CS0618: 'Object.FindFirstObjectByType<T>()' is obsolete: 'FindFirstObjectByType has been deprecated because it relies on instance ID ordering. Use FindAnyObjectByType instead, which does not depend on ordering.'
+Assets\Editor\MainInterfaceRouteTmpVariantMaterialAudit.cs(93,111): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+Assets\Editor\MainInterfaceRouteTmpVariantMaterialAudit.cs(93,28): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsInactive, FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+Assets\Editor\MainInterfaceRouteLabelRectOverrideRevalidation.cs(104,111): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+Assets\Editor\MainInterfaceRouteLabelRectOverrideRevalidation.cs(104,30): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsInactive, FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+Assets\Editor\MainInterfaceRouteLabelRectOverrideRevalidation.cs(154,53): warning CS0618: 'TMP_Text.enableWordWrapping' is obsolete: 'The enabledWordWrapping property is now obsolete. Please use the textWrappingMode property instead.'
+Assets\Editor\MainInterfaceGuildMainWhitePanelTrace.cs(256,87): warning CS0618: 'Object.GetInstanceID()' is obsolete: 'GetInstanceID is deprecated. Use GetEntityId instead. This will be removed in a future version.'
+Assets\Editor\MainInterfaceGuildMainWhitePanelTrace.cs(256,50): warning CS0618: 'Unsupported.GetLocalIdentifierInFile(int)' is obsolete: 'GetLocalIdentifierInFile() is deprecated. Use GetLocalIdentifierInFileForPersistentObject() instead.'
+Assets\Editor\MainInterfaceGuildMainWhitePanelTrace.cs(265,91): warning CS0618: 'Object.GetInstanceID()' is obsolete: 'GetInstanceID is deprecated. Use GetEntityId instead. This will be removed in a future version.'
+Assets\Editor\MainInterfaceGuildMainWhitePanelTrace.cs(265,54): warning CS0618: 'Unsupported.GetLocalIdentifierInFile(int)' is obsolete: 'GetLocalIdentifierInFile() is deprecated. Use GetLocalIdentifierInFileForPersistentObject() instead.'
+Assets\Editor\MainInterfaceRouteSkeletonGraphicReplayIntegration.cs(264,104): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+Assets\Editor\MainInterfaceRouteSkeletonGraphicReplayIntegration.cs(264,23): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsInactive, FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+Assets\Editor\MainInterfaceSceneBuilder.cs(794,21): warning CS0618: 'TMP_Text.enableWordWrapping' is obsolete: 'The enabledWordWrapping property is now obsolete. Please use the textWrappingMode property instead.'
+Assets\Editor\MainInterfaceSceneBuilder.cs(797,21): warning CS0618: 'TMP_Text.enableKerning' is obsolete: 'The "enableKerning" property has been deprecated. Use the "fontFeatures" property to control what features are enabled on the text component.'
+Assets\Editor\MainInterfaceNavigationTargetReferenceTrace.cs(294,73): warning CS0618: 'Object.GetInstanceID()' is obsolete: 'GetInstanceID is deprecated. Use GetEntityId instead. This will be removed in a future version.'
+Assets\Editor\MainInterfaceNavigationTargetReferenceTrace.cs(294,36): warning CS0618: 'Unsupported.GetLocalIdentifierInFile(int)' is obsolete: 'GetLocalIdentifierInFile() is deprecated. Use GetLocalIdentifierInFileForPersistentObject() instead.'
+Assets\Editor\MainInterfaceNavigationTargetReferenceTrace.cs(305,67): warning CS0618: 'SerializedProperty.objectReferenceInstanceIDValue' is obsolete: 'objectReferenceInstanceIDValue is obsolete. Use objectReferenceEntityIdValue instead'
+Assets\Editor\MainInterfaceNavigationTargetReferenceTrace.cs(307,20): warning CS0618: 'SerializedProperty.objectReferenceInstanceIDValue' is obsolete: 'objectReferenceInstanceIDValue is obsolete. Use objectReferenceEntityIdValue instead'
+Assets\Editor\MainInterfaceNavigationTargetReferenceTrace.cs(308,32): warning CS0618: 'SerializedProperty.objectReferenceInstanceIDValue' is obsolete: 'objectReferenceInstanceIDValue is obsolete. Use objectReferenceEntityIdValue instead'
+Assets\Editor\MainInterfaceRouteNonImageRendererEffectRuntimeStateTrace.cs(336,113): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+Assets\Editor\MainInterfaceRouteNonImageRendererEffectRuntimeStateTrace.cs(336,32): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsInactive, FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+AssetDatabase: script compilation time: 2.087624s
+Begin MonoManager ReloadAssembly
+Assembly Assembly-CSharp-Editor-firstpass.dll at Library/ScriptAssemblies/Assembly-CSharp-Editor-firstpass.dll not valid. Loading of assembly skipped.
+Assembly Assembly-CSharp-firstpass.dll at Library/ScriptAssemblies/Assembly-CSharp-firstpass.dll not valid. Loading of assembly skipped.
+Assembly Unity.Multiplayer.Center.Editor.Tests.dll at Library/ScriptAssemblies/Unity.Multiplayer.Center.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Multiplayer.Center.Tests.dll at Library/ScriptAssemblies/Unity.Multiplayer.Center.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.TextMeshPro.Editor.Tests.dll at Library/ScriptAssemblies/Unity.TextMeshPro.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.TextMeshPro.Tests.dll at Library/ScriptAssemblies/Unity.TextMeshPro.Tests.dll not valid. Loading of assembly skipped.
+Assembly UnityEditor.UI.Common.Tests.dll at Library/ScriptAssemblies/UnityEditor.UI.Common.Tests.dll not valid. Loading of assembly skipped.
+Assembly UnityEditor.UI.EditorTests.dll at Library/ScriptAssemblies/UnityEditor.UI.EditorTests.dll not valid. Loading of assembly skipped.
+Assembly UnityEngine.UI.Tests.dll at Library/ScriptAssemblies/UnityEngine.UI.Tests.dll not valid. Loading of assembly skipped.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+ScheduleIndexationOnStartup MainProcess:True IndexOnStartup:True
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.291 seconds
+Domain Reload Profiling: 648ms
+	BeginReloadAssembly (270ms)
+		DisableScriptedObjects (16ms)
+		CreateAndSetChildDomain (146ms)
+	RebuildCommonClasses (24ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (31ms)
+	LoadAllAssembliesAndSetupDomain (23ms)
+		LoadAssemblies (80ms)
+		AnalyzeDomain (15ms)
+			TypeCache.Refresh (9ms)
+				TypeCache.ScanAssembly (5ms)
+			BuildScriptInfoCaches (3ms)
+	FinalizeReload (292ms)
+		SetupLoadedEditorAssemblies (0ms)
+			InitializePlatformSupportModulesInManaged (18ms)
+			BeforeProcessingInitializeOnLoad (75ms)
+			ProcessInitializeOnLoadAttributes (55ms)
+			ProcessInitializeOnLoadMethodAttributes (30ms)
+			AfterProcessingInitializeOnLoad (7ms)
+		AwakeInstancesAfterBackupRestoration (19ms)
+(Values over 0.050ms)
+Asset Pipeline Refresh (id=c7e0d4a81ad793349abc1d2cb82d206a): Total: 2.908 seconds - Initiated by InitialRefreshV2(ForceSynchronousImport)
+	Summary:
+		Imports: total=0 (actual=0, local cache=0, cache server=0)
+		Asset DB Process Time: managed=0 ms, native=393 ms
+		Asset DB Callback time: managed=42 ms, native=13 ms
+		Scripting: domain reloads=1, domain reload time=359 ms, compile time=2089 ms, other=8 ms
+		Project Asset Count: scripts=255, non-scripts=640
+		Asset File Changes: new=0, changed=1, moved=0, deleted=0
+		Scan Filter Count: 0
+	InvokePackagesCallback: 13.715ms
+	ApplyChangesToAssetFolders: 0.518ms
+	Scan: 26.899ms
+	OnSourceAssetsModified: 0.773ms
+	CategorizeScriptCompilationAssets: 0.856ms
+	ProcessAssetsWithTransientArtifactChanges: 4.557ms
+	CategorizeAssets: 3.537ms
+	CompileScripts: 2088.970ms
+	ImportOutOfDateAssets: 293.090ms (292.759ms without children)
+		UnloadImportedAssets: 0.078ms
+		EnsureUptoDateAssetsAreRegisteredWithGuidPM: 0.070ms
+		OnDemandSchedulerStart: 0.179ms
+	PostProcessAllAssets: 43.182ms
+		VCAutoAddAssetPostprocess 0.816ms
+		MonoPostProcessAllAssets: 41.984ms
+			AssetPostprocessor.OnPostprocessAllAssets 12.345ms
+			StyleCatalogPostProcessor.OnPostprocessAllAssets 8.803ms
+			WindowAssetPostprocessingWatcher.OnPostprocessAllAssets 4.678ms
+			BuilderAssetPostprocessor.OnPostprocessAllAssets 4.205ms
+			AssetChangedListener.OnPostprocessAllAssets 1.220ms
+			SyncVS.PostprocessSyncProject 1.046ms
+			RetainedModeAssetPostprocessor.OnPostprocessAllAssets 0.827ms
+			TextAssetPostProcessor.OnPostprocessAllAssets 0.621ms
+			SpeedTree9Postprocessor.OnPostprocessAllAssets 0.582ms
+			ArtifactBrowserPostProcessor.OnPostprocessAllAssets 0.359ms
+			TMPro_TexturePostProcessor.OnPostprocessAllAssets 0.295ms
+			ReferencedClipsPostProcessor.OnPostprocessAllAssets 0.263ms
+			AssetEvents.OnPostprocessAllAssets 0.168ms
+			TerrainToolbarOverlayPostProcessor.OnPostprocessAllAssets 0.160ms
+			AudioMixerPostprocessor.OnPostprocessAllAssets 0.159ms
+			SpeedTreePostProcessor.OnPostprocessAllAssets 0.111ms
+			AssetDatabaseCallbacks.OnPostprocessAllAssets 0.101ms
+			ConfigAssetsTracker.OnPostprocessAllAssets 0.076ms
+			ScenarioDriftAssetsTracker.OnPostprocessAllAssets 0.071ms
+			RenderPipelineGlobalSettingsPostprocessor.OnPostprocessAllAssets 0.071ms
+			AudioContainerPostProcessor.OnPostprocessAllAssets 0.051ms
+	PostAssetChangesProfiler: 0.528ms
+	UnloadStreamsBegin: 1.140ms
+	GenerateScriptTypeHashes: 0.212ms
+	GenerateScriptTypeSerializationHashes: 0.472ms
+	Untracked: 425.402ms
+
+Application.AssetDatabase Initial Refresh End
+Scanning for USB devices : 1.888ms
+Initializing Unity extensions:
+[MODES] ModeService[none].Initialize
+[MODES] ModeService[none].LoadModes
+[MODES] Loading mode Default (0) for mode-current-id-girlswar_maininterface_unity
+Unloading 18 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 467 unused Assets / (1.6 MB). Loaded Objects now: 1080.
+Memory consumption went from 102.7 MB to 101.1 MB.
+Total: 3.600300 ms (FindLiveObjects: 0.075100 ms CreateObjectMapping: 0.016300 ms MarkObjects: 2.895300 ms  DeleteObjects: 0.611600 ms)
+
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 0 unused Assets / (2.2 KB). Loaded Objects now: 1082.
+Memory consumption went from 95.6 MB to 95.6 MB.
+Total: 2.828400 ms (FindLiveObjects: 0.063200 ms CreateObjectMapping: 0.008100 ms MarkObjects: 2.753600 ms  DeleteObjects: 0.002600 ms)
+
+[GirlsWarRestore] Applied route rect overrides: 2/2
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GirlsWarRestore.MainInterfaceSceneBuilder:ApplyRectOverrides (System.Collections.Generic.List`1<GirlsWarRestore.MainInterfaceSceneBuilder/RectOverrideRow>,System.Collections.Generic.Dictionary`2<string, UnityEngine.RectTransform>,System.Collections.Generic.Dictionary`2<string, UnityEngine.RectTransform>) (at Assets/Editor/MainInterfaceSceneBuilder.cs:738)
+GirlsWarRestore.MainInterfaceSceneBuilder:BuildMainInterfaceScene () (at Assets/Editor/MainInterfaceSceneBuilder.cs:316)
+GirlsWarRestore.MainInterfaceRouteSkeletonGraphicReplayIntegration:TraceRouteSkeletonGraphicReplayIntegration () (at Assets/Editor/MainInterfaceRouteSkeletonGraphicReplayIntegration.cs:36)
+
+(Filename: Assets/Editor/MainInterfaceSceneBuilder.cs Line: 738)
+
+Asset Pipeline Refresh (id=82d417cec56807944aa649793bf18a15): Total: 0.017 seconds - Initiated by RefreshV2(NoUpdateAssetOptions)
+[GirlsWarRestore] Prepared sprite imports: 212 assets, changed 0
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GirlsWarRestore.MainInterfaceSceneBuilder:PrepareSpriteImports (System.Collections.Generic.List`1<GirlsWarRestore.MainInterfaceSceneBuilder/SpriteRow>) (at Assets/Editor/MainInterfaceSceneBuilder.cs:553)
+GirlsWarRestore.MainInterfaceSceneBuilder:BuildMainInterfaceScene () (at Assets/Editor/MainInterfaceSceneBuilder.cs:318)
+GirlsWarRestore.MainInterfaceRouteSkeletonGraphicReplayIntegration:TraceRouteSkeletonGraphicReplayIntegration () (at Assets/Editor/MainInterfaceRouteSkeletonGraphicReplayIntegration.cs:36)
+
+(Filename: Assets/Editor/MainInterfaceSceneBuilder.cs Line: 553)
+
+Asset Pipeline Refresh (id=14c8194c9b47e504380f45717d784104): Total: 0.004 seconds - Initiated by RefreshV2(NoUpdateAssetOptions)
+[GirlsWarRestore] Prepared visual override sprite imports: 4 rows, changed 0
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GirlsWarRestore.MainInterfaceSceneBuilder:PrepareVisualOverrideImports (System.Collections.Generic.List`1<GirlsWarRestore.MainInterfaceSceneBuilder/VisualOverrideRow>) (at Assets/Editor/MainInterfaceSceneBuilder.cs:589)
+GirlsWarRestore.MainInterfaceSceneBuilder:BuildMainInterfaceScene () (at Assets/Editor/MainInterfaceSceneBuilder.cs:319)
+GirlsWarRestore.MainInterfaceRouteSkeletonGraphicReplayIntegration:TraceRouteSkeletonGraphicReplayIntegration () (at Assets/Editor/MainInterfaceRouteSkeletonGraphicReplayIntegration.cs:36)
+
+(Filename: Assets/Editor/MainInterfaceSceneBuilder.cs Line: 589)
+
+[GirlsWarRestore] Applied active overrides: 26/29
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GirlsWarRestore.MainInterfaceSceneBuilder:ApplyActiveOverrides (GirlsWarRestore.MainInterfaceSceneBuilder/OverrideSet,System.Collections.Generic.Dictionary`2<string, UnityEngine.RectTransform>) (at Assets/Editor/MainInterfaceSceneBuilder.cs:604)
+GirlsWarRestore.MainInterfaceSceneBuilder:BuildMainInterfaceScene () (at Assets/Editor/MainInterfaceSceneBuilder.cs:320)
+GirlsWarRestore.MainInterfaceRouteSkeletonGraphicReplayIntegration:TraceRouteSkeletonGraphicReplayIntegration () (at Assets/Editor/MainInterfaceRouteSkeletonGraphicReplayIntegration.cs:36)
+
+(Filename: Assets/Editor/MainInterfaceSceneBuilder.cs Line: 604)
+
+[GirlsWarRestore] Applied sprites: 214/977
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GirlsWarRestore.MainInterfaceSceneBuilder:ApplyImagesAndSprites (System.Collections.Generic.List`1<GirlsWarRestore.MainInterfaceSceneBuilder/SpriteRow>,System.Collections.Generic.Dictionary`2<string, UnityEngine.RectTransform>,GirlsWarRestore.MainInterfaceSceneBuilder/OverrideSet) (at Assets/Editor/MainInterfaceSceneBuilder.cs:647)
+GirlsWarRestore.MainInterfaceSceneBuilder:BuildMainInterfaceScene () (at Assets/Editor/MainInterfaceSceneBuilder.cs:321)
+GirlsWarRestore.MainInterfaceRouteSkeletonGraphicReplayIntegration:TraceRouteSkeletonGraphicReplayIntegration () (at Assets/Editor/MainInterfaceRouteSkeletonGraphicReplayIntegration.cs:36)
+
+(Filename: Assets/Editor/MainInterfaceSceneBuilder.cs Line: 647)
+
+[GirlsWarRestore] Applied visual overrides: 4/4
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GirlsWarRestore.MainInterfaceSceneBuilder:ApplyVisualOverrides (System.Collections.Generic.List`1<GirlsWarRestore.MainInterfaceSceneBuilder/VisualOverrideRow>,System.Collections.Generic.Dictionary`2<string, UnityEngine.RectTransform>) (at Assets/Editor/MainInterfaceSceneBuilder.cs:710)
+GirlsWarRestore.MainInterfaceSceneBuilder:BuildMainInterfaceScene () (at Assets/Editor/MainInterfaceSceneBuilder.cs:322)
+GirlsWarRestore.MainInterfaceRouteSkeletonGraphicReplayIntegration:TraceRouteSkeletonGraphicReplayIntegration () (at Assets/Editor/MainInterfaceRouteSkeletonGraphicReplayIntegration.cs:36)
+
+(Filename: Assets/Editor/MainInterfaceSceneBuilder.cs Line: 710)
+
+[GirlsWarRestore] Applied texts: 138/495 (TMP 84/271, UGUI 54)
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GirlsWarRestore.MainInterfaceSceneBuilder:ApplyTexts (System.Collections.Generic.List`1<GirlsWarRestore.MainInterfaceSceneBuilder/TextRow>,System.Collections.Generic.Dictionary`2<string, UnityEngine.RectTransform>,System.Collections.Generic.Dictionary`2<string, GirlsWarRestore.MainInterfaceSceneBuilder/TmpTextDetailRow>) (at Assets/Editor/MainInterfaceSceneBuilder.cs:842)
+GirlsWarRestore.MainInterfaceSceneBuilder:BuildMainInterfaceScene () (at Assets/Editor/MainInterfaceSceneBuilder.cs:325)
+GirlsWarRestore.MainInterfaceRouteSkeletonGraphicReplayIntegration:TraceRouteSkeletonGraphicReplayIntegration () (at Assets/Editor/MainInterfaceRouteSkeletonGraphicReplayIntegration.cs:36)
+
+(Filename: Assets/Editor/MainInterfaceSceneBuilder.cs Line: 842)
+
+[GirlsWarRestore] Applied scroll rects: 3/12
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GirlsWarRestore.MainInterfaceSceneBuilder:ApplyScrollRects (System.Collections.Generic.List`1<GirlsWarRestore.MainInterfaceSceneBuilder/ScrollRow>,System.Collections.Generic.Dictionary`2<string, UnityEngine.RectTransform>,System.Collections.Generic.Dictionary`2<string, UnityEngine.RectTransform>) (at Assets/Editor/MainInterfaceSceneBuilder.cs:1326)
+GirlsWarRestore.MainInterfaceSceneBuilder:BuildMainInterfaceScene () (at Assets/Editor/MainInterfaceSceneBuilder.cs:327)
+GirlsWarRestore.MainInterfaceRouteSkeletonGraphicReplayIntegration:TraceRouteSkeletonGraphicReplayIntegration () (at Assets/Editor/MainInterfaceRouteSkeletonGraphicReplayIntegration.cs:36)
+
+(Filename: Assets/Editor/MainInterfaceSceneBuilder.cs Line: 1326)
+
+[GirlsWarRestore] Applied button click loggers: 77/261
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GirlsWarRestore.MainInterfaceSceneBuilder:AddButtonLoggers (System.Collections.Generic.List`1<GirlsWarRestore.MainInterfaceSceneBuilder/ButtonRow>,System.Collections.Generic.Dictionary`2<string, GirlsWarRestore.MainInterfaceSceneBuilder/ButtonHandlerRow>,System.Collections.Generic.Dictionary`2<string, GirlsWarRestore.MainInterfaceSceneBuilder/ButtonNavigationRow>,System.Collections.Generic.Dictionary`2<string, UnityEngine.RectTransform>,GirlsWarRestore.MainInterfaceSceneBuilder/OverrideSet) (at Assets/Editor/MainInterfaceSceneBuilder.cs:1430)
+GirlsWarRestore.MainInterfaceSceneBuilder:BuildMainInterfaceScene () (at Assets/Editor/MainInterfaceSceneBuilder.cs:333)
+GirlsWarRestore.MainInterfaceRouteSkeletonGraphicReplayIntegration:TraceRouteSkeletonGraphicReplayIntegration () (at Assets/Editor/MainInterfaceRouteSkeletonGraphicReplayIntegration.cs:36)
+
+(Filename: Assets/Editor/MainInterfaceSceneBuilder.cs Line: 1430)
+
+[GirlsWarRestore] Applied graphic raycast overrides: 3
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GirlsWarRestore.MainInterfaceSceneBuilder:ApplyGraphicRaycastOverrides (System.Collections.Generic.List`1<GirlsWarRestore.MainInterfaceSceneBuilder/SpriteRow>,System.Collections.Generic.Dictionary`2<string, UnityEngine.RectTransform>,GirlsWarRestore.MainInterfaceSceneBuilder/OverrideSet) (at Assets/Editor/MainInterfaceSceneBuilder.cs:1453)
+GirlsWarRestore.MainInterfaceSceneBuilder:BuildMainInterfaceScene () (at Assets/Editor/MainInterfaceSceneBuilder.cs:334)
+GirlsWarRestore.MainInterfaceRouteSkeletonGraphicReplayIntegration:TraceRouteSkeletonGraphicReplayIntegration () (at Assets/Editor/MainInterfaceRouteSkeletonGraphicReplayIntegration.cs:36)
+
+(Filename: Assets/Editor/MainInterfaceSceneBuilder.cs Line: 1453)
+
+[GirlsWarRestore] Applied raycast probes: 99
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GirlsWarRestore.MainInterfaceSceneBuilder:AddRaycastProbeLoggers (System.Collections.Generic.List`1<GirlsWarRestore.MainInterfaceSceneBuilder/SpriteRow>,System.Collections.Generic.List`1<GirlsWarRestore.MainInterfaceSceneBuilder/ButtonRow>,System.Collections.Generic.Dictionary`2<string, UnityEngine.RectTransform>) (at Assets/Editor/MainInterfaceSceneBuilder.cs:1490)
+GirlsWarRestore.MainInterfaceSceneBuilder:BuildMainInterfaceScene () (at Assets/Editor/MainInterfaceSceneBuilder.cs:335)
+GirlsWarRestore.MainInterfaceRouteSkeletonGraphicReplayIntegration:TraceRouteSkeletonGraphicReplayIntegration () (at Assets/Editor/MainInterfaceRouteSkeletonGraphicReplayIntegration.cs:36)
+
+(Filename: Assets/Editor/MainInterfaceSceneBuilder.cs Line: 1490)
+
+Start importing Assets/Scenes/MainInterface_Wireframe.unity using Guid(eb8b24cc809bed742b8bd84aa3cb817c) (DefaultImporter) -> (Import Result ID: 'f38662081956a7d2dc3d13937d770fda') in 0.0029562 seconds [static dependencies only]. Details - ImportResultOutputID=b99b9c6f6cd72acc35933c391b07b6f7 DependenciesID=cbe6373b12be5385c84c253bb474672f StaticDependenciesID=11b8d15115ea2b4e5a8c7bfeb72c1e48
+Asset Pipeline Refresh (id=d7614faaac5236a4ca843359d8d21331): Total: 0.021 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/RestoreData/maininterface_build_result.json using Guid(0c85ef2c20ca23f4eba0dd254b511b4e) (TextScriptImporter) -> (Import Result ID: '7987a156ccd1f8cb9fd7acee1607a817') in 0.001873 seconds [static dependencies only]. Details - ImportResultOutputID=1c8fe034f34bf9c3720e094a12bed8a7 DependenciesID=3a7f861d9bab8954bdca2e02777c178a StaticDependenciesID=7c9a0513c7f8d2d9486fd871dfabf390
+Asset Pipeline Refresh (id=afb702383d4283a40a0e462dad876a2b): Total: 0.031 seconds - Initiated by RefreshV2(NoUpdateAssetOptions)
+[GirlsWarRestore] MainInterface restored scene generated: 806 RectTransforms, 214 sprites, 138 texts (84 TMP, 54 UGUI), 3 scroll rects, 99 raycast probes, 26 active overrides, 3 graphic raycast overrides, 2 rect overrides, 4 visual overrides -> Assets/Scenes/MainInterface_Wireframe.unity
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GirlsWarRestore.MainInterfaceSceneBuilder:BuildMainInterfaceScene () (at Assets/Editor/MainInterfaceSceneBuilder.cs:361)
+GirlsWarRestore.MainInterfaceRouteSkeletonGraphicReplayIntegration:TraceRouteSkeletonGraphicReplayIntegration () (at Assets/Editor/MainInterfaceRouteSkeletonGraphicReplayIntegration.cs:36)
+
+(Filename: Assets/Editor/MainInterfaceSceneBuilder.cs Line: 361)
+
+Opening scene 'Assets/Scenes/MainInterface_Wireframe.unity'
+Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
+Loaded scene 'Assets/Scenes/MainInterface_Wireframe.unity'
+	Deserialize:            27.968 ms
+	Integration:            7.436 ms
+	Integration of assets:  0.032 ms
+	Thread Wait Time:       0.007 ms
+	Total Operation Time:   35.443 ms
+Unloading 220 unused Assets / (73.3 KB). Loaded Objects now: 4149.
+Memory consumption went from 125.4 MB to 125.3 MB.
+Total: 3.646400 ms (FindLiveObjects: 0.180200 ms CreateObjectMapping: 0.031500 ms MarkObjects: 3.269300 ms  DeleteObjects: 0.164500 ms)
+
+Start importing Assets/RestoreData/maininterface_route_skeletongraphic_replay_integration.json using Guid(9cd8e385cd1e5cb46b523913d4552cb0) (TextScriptImporter) -> (Import Result ID: '08593aea02f53ff6e6556f4ba951e460') in 0.0016881 seconds [static dependencies only]. Details - ImportResultOutputID=543fcf375b276193396ef88c087df04d DependenciesID=87bed4d7330cdac170baaae074c14b9e StaticDependenciesID=7b8cd154051253fd24db4a043b24b928
+Start importing Assets/RestoreData/reports/maininterface_route_skeletongraphic_replay_integration.csv using Guid(fe3f3d190f334b446a4c2d3e773a2e80) (TextScriptImporter) -> (Import Result ID: '26cfb5d421f582f6ad889934cb7ca0c6') in 0.0013959 seconds [static dependencies only]. Details - ImportResultOutputID=2d6e9facec0818f5c93ac265a3ffe7c0 DependenciesID=3a378f0b13896f379a212fc52efa6d63 StaticDependenciesID=bd4081f1b993d9070c18ab12fb8218bf
+Asset Pipeline Refresh (id=a573c7623436b9548adeb5f16cfdd553): Total: 0.051 seconds - Initiated by RefreshV2(NoUpdateAssetOptions)
+[GirlsWarRestore] UI115 route SkeletonGraphic replay integration trace: Assets/RestoreData/maininterface_route_skeletongraphic_replay_integration.json
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GirlsWarRestore.MainInterfaceRouteSkeletonGraphicReplayIntegration:TraceRouteSkeletonGraphicReplayIntegration () (at Assets/Editor/MainInterfaceRouteSkeletonGraphicReplayIntegration.cs:77)
+
+(Filename: Assets/Editor/MainInterfaceRouteSkeletonGraphicReplayIntegration.cs Line: 77)
+
+Batchmode quit successfully invoked - shutting down!
+[Physics::Module] Cleanup current backend.
+[Physics::Module] Id: 0xf2b8ea05
+Input System module state changed to: ShutdownInProgress.
+Input Polling Thread exited.
+Input System module state changed to: Shutdown.
+[Licensing::IpcConnector] LicenseClient-godho-notifications channel disconnected successfully.
+[Licensing::IpcConnector] LicenseClient-godho channel disconnected successfully.
+AcceleratorClientConnectionCallback - disconnected - :0
+Cleanup mono
+CodeReloadManager destroyed
+Exiting batchmode successfully now!
+Exiting without the bug reporter. Application will terminate with return code 0

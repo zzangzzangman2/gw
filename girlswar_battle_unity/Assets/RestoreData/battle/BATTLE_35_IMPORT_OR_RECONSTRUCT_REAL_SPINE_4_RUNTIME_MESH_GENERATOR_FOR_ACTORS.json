@@ -1,0 +1,709 @@
+{
+  "verdict": "clip05 actor motion not reproduced",
+  "visual_status": "failed_spine_shader_or_runtime_mesh_still_magenta",
+  "isFinalRestoredBattleScreen": false,
+  "reference_video_used": true,
+  "videoTimeRangeSeconds": "485.0-487.0",
+  "referenceFrameCount": 6,
+  "referenceMotionPairs": [
+    {
+      "pair": "485.0-485.4",
+      "changedPixels": 153123
+    },
+    {
+      "pair": "485.4-485.8",
+      "changedPixels": 117061
+    },
+    {
+      "pair": "485.8-486.2",
+      "changedPixels": 108567
+    },
+    {
+      "pair": "486.2-486.6",
+      "changedPixels": 155760
+    },
+    {
+      "pair": "486.6-487.0",
+      "changedPixels": 143611
+    }
+  ],
+  "actorMotionReplayed": false,
+  "unityExitCode": 0,
+  "runtimeImportPrep": {
+    "vendorPackage": "C:\\Users\\godho\\Downloads\\girlswar\\_restore_tools\\vendor\\spine-unity-4.0-2024-08-21.unitypackage",
+    "vendorPackageExists": true,
+    "vendorPackageSize": 6881350,
+    "runtimeRoot": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_battle_unity\\Assets\\Spine\\Runtime",
+    "runtimeFileCount": 174,
+    "runtimeBytes": 1318977,
+    "stubAsmdef": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_battle_unity\\Assets\\Scripts\\BattleUIExternalStubs\\SpineUnity\\spine-unity.asmdef",
+    "stubAsmdefContent": "{\n  \"name\": \"girlswar-spine-proxy-disabled\",\n  \"references\": [\n    \"UnityEngine.UI\"\n  ],\n  \"autoReferenced\": true\n}\n",
+    "legacyProxyGuarded": {
+      "SpineActorRuntimeStubs": false,
+      "SpineUnityStubs": false
+    },
+    "sampleExtracted": [
+      {
+        "pathname": "Assets/Spine/Runtime/spine-unity/Shaders/Outline/BlendModes/Spine-Skeleton-PMA-Additive-Outline.shader",
+        "bytes": 1732
+      },
+      {
+        "pathname": "Assets/Spine/Runtime/spine-unity/Components/SkeletonUtility/FollowLocationRigidbody2D.cs",
+        "bytes": 2627
+      },
+      {
+        "pathname": "Assets/Spine/Runtime/spine-unity/Components/Following/BoundingBoxFollower.cs",
+        "bytes": 9742
+      },
+      {
+        "pathname": "Assets/Spine/Runtime/spine-unity/Modules/TK2D/SpriteCollectionAttachmentLoader.cs",
+        "bytes": 6206
+      },
+      {
+        "pathname": "Assets/Spine/Runtime/spine-csharp/MathUtils.cs",
+        "bytes": 6422
+      },
+      {
+        "pathname": "Assets/Spine/Runtime/spine-unity/SkeletonDataModifierAssets/BlendModeMaterials/SkeletonStraightMultiply.mat",
+        "bytes": 1222
+      },
+      {
+        "pathname": "Assets/Spine/Runtime/spine-csharp/Attachments/Attachment.cs",
+        "bytes": 2257
+      },
+      {
+        "pathname": "Assets/Spine/Runtime/spine-unity/Shaders/Sprite/CGIncludes/SpriteUnlit.cginc",
+        "bytes": 1399
+      },
+      {
+        "pathname": "Assets/Spine/Runtime/spine-unity/Utility/TimelineExtensions.cs",
+        "bytes": 4987
+      },
+      {
+        "pathname": "Assets/Spine/Runtime/spine-csharp/SkeletonBounds.cs",
+        "bytes": 9726
+      },
+      {
+        "pathname": "Assets/Spine/Runtime/spine-unity/Mesh Generation/DoubleBuffered.cs",
+        "bytes": 2030
+      },
+      {
+        "pathname": "Assets/Spine/Runtime/spine-unity/Shaders/Sprite/CGIncludes/SpriteLighting.cginc",
+        "bytes": 6385
+      },
+      {
+        "pathname": "Assets/Spine/Runtime/spine-unity/Shaders/Outline/Spine-Skeleton-Lit-Outline.shader",
+        "bytes": 1601
+      },
+      {
+        "pathname": "Assets/Spine/Runtime/spine-csharp/Skeleton.cs",
+        "bytes": 25631
+      },
+      {
+        "pathname": "Assets/Spine/Runtime/spine-unity/SkeletonDataModifierAssets/BlendModeMaterials/BlendModeMaterialsAsset.cs",
+        "bytes": 5447
+      },
+      {
+        "pathname": "Assets/Spine/Runtime/spine-unity/Asset Types/RegionlessAttachmentLoader.cs",
+        "bytes": 3217
+      },
+      {
+        "pathname": "Assets/Spine/Runtime/spine-unity/Shaders/Outline/Spine-Skeleton-OutlineOnly-ZWrite.shader",
+        "bytes": 1933
+      },
+      {
+        "pathname": "Assets/Spine/Runtime/spine-unity/SkeletonDataModifierAssets/BlendModeMaterials/SkeletonStraightScreen.mat",
+        "bytes": 1220
+      },
+      {
+        "pathname": "Assets/Spine/Runtime/spine-unity/Components/SkeletonRenderSeparator/SkeletonPartsRenderer.cs",
+        "bytes": 5622
+      },
+      {
+        "pathname": "Assets/Spine/Runtime/spine-unity/Components/Following/BoundingBoxFollowerGraphic.cs",
+        "bytes": 10068
+      },
+      {
+        "pathname": "Assets/Spine/Runtime/spine-unity/Shaders/Outline/Spine-Special-Skeleton-Grayscale-Outline.shader",
+        "bytes": 1696
+      },
+      {
+        "pathname": "Assets/Spine/Runtime/spine-unity/Shaders/Spine-Skeleton.shader",
+        "bytes": 3173
+      },
+      {
+        "pathname": "Assets/Spine/Runtime/spine-unity/SkeletonDataModifierAssets/BlendModeMaterials/Default BlendModeMaterials.asset",
+        "bytes": 701
+      },
+      {
+        "pathname": "Assets/Spine/Runtime/spine-unity/Utility/AtlasUtilities.cs",
+        "bytes": 39382
+      },
+      {
+        "pathname": "Assets/Spine/Runtime/spine-unity/Components/SkeletonRendererCustomMaterials/SkeletonRendererCustomMaterials.cs",
+        "bytes": 7679
+      },
+      {
+        "pathname": "Assets/Spine/Runtime/spine-unity/Shaders/CGIncludes/Spine-DepthOnlyPass.cginc",
+        "bytes": 920
+      },
+      {
+        "pathname": "Assets/Spine/Runtime/spine-unity/Shaders/Outline/Sprite/SpritesUnlit-Outline.shader",
+        "bytes": 2195
+      },
+      {
+        "pathname": "Assets/Spine/Runtime/spine-unity/Shaders/Outline/Spine-Skeleton-Outline.shader",
+        "bytes": 1763
+      },
+      {
+        "pathname": "Assets/Spine/Runtime/spine-csharp/SkeletonData.cs",
+        "bytes": 9307
+      },
+      {
+        "pathname": "Assets/Spine/Runtime/spine-unity/Shaders/Sprite/SpritesVertexLit.shader",
+        "bytes": 4522
+      },
+      {
+        "pathname": "Assets/Spine/Runtime/spine-csharp/BoneData.cs",
+        "bytes": 4459
+      },
+      {
+        "pathname": "Assets/Spine/Runtime/spine-csharp/TransformConstraint.cs",
+        "bytes": 13107
+      },
+      {
+        "pathname": "Assets/Spine/Runtime/spine-unity/Materials/SkeletonGraphicAdditive.mat",
+        "bytes": 2645
+      },
+      {
+        "pathname": "Assets/Spine/Runtime/spine-unity/Shaders/Outline/CGIncludes/Spine-Outline-Pass.cginc",
+        "bytes": 1897
+      },
+      {
+        "pathname": "Assets/Spine/Runtime/spine-unity/Shaders/Outline/Sprite/SpritesVertexLit-Outline.shader",
+        "bytes": 2846
+      },
+      {
+        "pathname": "Assets/Spine/Runtime/spine-unity/Mesh Generation/MeshGenerator.cs",
+        "bytes": 54313
+      },
+      {
+        "pathname": "Assets/Spine/Runtime/spine-csharp/Attachments/ClippingAttachment.cs",
+        "bytes": 2184
+      },
+      {
+        "pathname": "Assets/Spine/Runtime/spine-unity/Utility/AttachmentCloneExtensions.cs",
+        "bytes": 6632
+      },
+      {
+        "pathname": "Assets/Spine/Runtime/spine-csharp/Json.cs",
+        "bytes": 12405
+      },
+      {
+        "pathname": "Assets/Spine/Runtime/spine-csharp/EventData.cs",
+        "bytes": 2487
+      }
+    ],
+    "skipped": [
+      {
+        "pathname": "Assets/Spine/Runtime/spine-unity/Utility/YieldInstructions",
+        "reason": "directory_or_no_asset"
+      },
+      {
+        "pathname": "Assets/Spine/Runtime/spine-unity/SkeletonDataModifierAssets/BlendModeMaterials",
+        "reason": "directory_or_no_asset"
+      },
+      {
+        "pathname": "Assets/Spine/Runtime/spine-unity/Asset Types",
+        "reason": "directory_or_no_asset"
+      },
+      {
+        "pathname": "Assets/Spine/Runtime/spine-unity",
+        "reason": "directory_or_no_asset"
+      },
+      {
+        "pathname": "Assets/Spine/Runtime/spine-csharp/Attachments",
+        "reason": "directory_or_no_asset"
+      },
+      {
+        "pathname": "Assets/Spine/Runtime/spine-unity/Components/RootMotion",
+        "reason": "directory_or_no_asset"
+      },
+      {
+        "pathname": "Assets/Spine/Runtime/spine-unity/Shaders/Outline/CGIncludes",
+        "reason": "directory_or_no_asset"
+      },
+      {
+        "pathname": "Assets/Spine/Runtime/spine-unity/Components/SkeletonRenderSeparator",
+        "reason": "directory_or_no_asset"
+      },
+      {
+        "pathname": "Assets/Spine/Runtime/spine-unity/Materials",
+        "reason": "directory_or_no_asset"
+      },
+      {
+        "pathname": "Assets/Spine/Runtime/spine-unity/Shaders/Sprite/CGIncludes",
+        "reason": "directory_or_no_asset"
+      },
+      {
+        "pathname": "Assets/Spine/Runtime/spine-unity/Shaders/CGIncludes",
+        "reason": "directory_or_no_asset"
+      },
+      {
+        "pathname": "Assets/Spine/Runtime/spine-unity/Utility",
+        "reason": "directory_or_no_asset"
+      },
+      {
+        "pathname": "Assets/Spine/Runtime/spine-unity/SkeletonDataModifierAssets",
+        "reason": "directory_or_no_asset"
+      },
+      {
+        "pathname": "Assets/Spine/Runtime/spine-unity/Shaders/Outline/Sprite",
+        "reason": "directory_or_no_asset"
+      },
+      {
+        "pathname": "Assets/Spine/Runtime/spine-unity/Shaders/Outline/BlendModes",
+        "reason": "directory_or_no_asset"
+      },
+      {
+        "pathname": "Assets/Spine/Runtime/spine-unity/Shaders/Outline/SkeletonGraphic",
+        "reason": "directory_or_no_asset"
+      },
+      {
+        "pathname": "Assets/Spine/Runtime/spine-unity/Shaders/SkeletonGraphic",
+        "reason": "directory_or_no_asset"
+      },
+      {
+        "pathname": "Assets/Spine/Runtime/spine-unity/Components/Internal",
+        "reason": "directory_or_no_asset"
+      },
+      {
+        "pathname": "Assets/Spine/Runtime/spine-unity/Components",
+        "reason": "directory_or_no_asset"
+      },
+      {
+        "pathname": "Assets/Spine/Runtime/spine-csharp",
+        "reason": "directory_or_no_asset"
+      },
+      {
+        "pathname": "Assets/Spine/Runtime/spine-unity/Components/SkeletonRendererCustomMaterials",
+        "reason": "directory_or_no_asset"
+      },
+      {
+        "pathname": "Assets/Spine/Runtime/spine-unity/Modules",
+        "reason": "directory_or_no_asset"
+      },
+      {
+        "pathname": "Assets/Spine/Runtime/spine-unity/Shaders/Sprite",
+        "reason": "directory_or_no_asset"
+      },
+      {
+        "pathname": "Assets/Spine/Runtime/spine-unity/Components/Following",
+        "reason": "directory_or_no_asset"
+      },
+      {
+        "pathname": "Assets/Spine/Runtime/spine-unity/Shaders/BlendModes",
+        "reason": "directory_or_no_asset"
+      },
+      {
+        "pathname": "Assets/Spine/Runtime/spine-unity/Shaders/Utility",
+        "reason": "directory_or_no_asset"
+      },
+      {
+        "pathname": "Assets/Spine/Runtime/spine-unity/Shaders/SkeletonGraphic/CGIncludes",
+        "reason": "directory_or_no_asset"
+      },
+      {
+        "pathname": "Assets/Spine/Runtime/spine-unity/Mesh Generation",
+        "reason": "directory_or_no_asset"
+      },
+      {
+        "pathname": "Assets/Spine/Runtime",
+        "reason": "directory_or_no_asset"
+      },
+      {
+        "pathname": "Assets/Spine/Runtime/spine-unity/Modules/TK2D",
+        "reason": "directory_or_no_asset"
+      },
+      {
+        "pathname": "Assets/Spine/Runtime/spine-unity/Shaders/Outline",
+        "reason": "directory_or_no_asset"
+      },
+      {
+        "pathname": "Assets/Spine/Runtime/spine-unity/Shaders",
+        "reason": "directory_or_no_asset"
+      },
+      {
+        "pathname": "Assets/Spine/Runtime/spine-unity/Components/SkeletonUtility",
+        "reason": "directory_or_no_asset"
+      }
+    ]
+  },
+  "runtimeTypePresence": {
+    "SkeletonAnimation": true,
+    "SkeletonRenderer": true,
+    "SkeletonDataAsset": true,
+    "MeshGenerator": true,
+    "SkeletonBinary": true,
+    "AnimationState": true,
+    "AtlasAttachmentLoader": true,
+    "realRuntimePresent": true
+  },
+  "skeletonDataTraceCount": 3,
+  "expectedAnimationInSkelCount": 2,
+  "skeletonAnimationComponentCount": 3,
+  "animationStateSetSucceededCount": 3,
+  "realMeshUpdatedCount": 0,
+  "captureMetrics": {
+    "captureExists": true,
+    "width": 1920,
+    "height": 1080,
+    "magentaPixelRatio": 0.068621,
+    "nonBlackPixelRatio": 0.068621
+  },
+  "unityProbe": {
+    "verdict": "battle35_real_spine_runtime_mesh_generator_probe",
+    "visual_status": "failed_clip05_actor_motion_not_verified",
+    "isFinalRestoredBattleScreen": false,
+    "scene": "Assets/Scenes/Battle35RealSpineRuntimeMeshGeneratorProbe.unity",
+    "capture": "Assets/RestoreCaptures/battle_actor/Battle35RealSpineRuntimeMeshGeneratorProbe_1920x1080.png",
+    "runtimeTypePresence": {
+      "SkeletonAnimation": true,
+      "SkeletonRenderer": true,
+      "SkeletonDataAsset": true,
+      "MeshGenerator": true,
+      "SkeletonBinary": true,
+      "AnimationState": true,
+      "AtlasAttachmentLoader": true,
+      "realRuntimePresent": true
+    },
+    "summary": {
+      "targetActorCount": 3,
+      "bundleLoadSuccess": 3,
+      "prefabInstantiateSuccess": 3,
+      "componentRowCount": 3,
+      "missingScriptCount": 0,
+      "skeletonAnimationComponentCount": 3,
+      "animationStateSetSucceededCount": 3,
+      "realMeshUpdatedCount": 0,
+      "meshVertexCountAfter": 2626,
+      "internalErrorShaderMaterialCount": 0
+    },
+    "shaderDependency": {
+      "bundle": "download/commonprefabsandres/spinematandshaders.assetbundle",
+      "absolutePath": "C:/Users/godho/Downloads/girlswar/girlswar_merged_extracted/extracted/unity/clean_unityfs_slices\\download\\commonprefabsandres\\spinematandshaders.assetbundle",
+      "fileExists": true,
+      "fileSize": 63614,
+      "loaded": true,
+      "status": "loaded",
+      "shaderNames": [
+        "Spine/Blend Modes/Skeleton PMA Additive",
+        "Spine/Blend Modes/Skeleton PMA Multiply",
+        "Spine/Blend Modes/Skeleton PMA Screen",
+        "Spine/Outline/Blend Modes/Skeleton PMA Additive",
+        "Spine/Outline/Blend Modes/Skeleton PMA Multiply",
+        "Spine/Outline/Blend Modes/Skeleton PMA Screen",
+        "Spine/Outline/SkeletonGraphic",
+        "Spine/Outline/SkeletonGraphic Tint Black",
+        "Spine/Outline/Skeleton Fill",
+        "Spine/Outline/Skeleton Lit",
+        "Spine/Outline/Skeleton Lit ZWrite",
+        "Spine/Outline/Skeleton",
+        "Spine/Outline/OutlineOnly-ZWrite",
+        "Spine/Outline/Skeleton Tint",
+        "Spine/Outline/Skeleton Tint Black",
+        "Spine/Outline/Special/Skeleton Grayscale",
+        "Spine/Outline/Sprite/Pixel Lit",
+        "Spine/Outline/Sprite/Unlit",
+        "Spine/Outline/Sprite/Vertex Lit",
+        "Spine/SkeletonGraphic Additive",
+        "Spine/SkeletonGraphic Multiply",
+        "Spine/SkeletonGraphic Screen",
+        "Spine/SkeletonGraphic Tint Black",
+        "Spine/SkeletonGraphic",
+        "Spine/Skeleton Fill",
+        "Spine/Skeleton Lit ZWrite",
+        "Spine/Skeleton Lit",
+        "Spine/Skeleton Tint",
+        "Spine/Skeleton Tint Black",
+        "Spine/Skeleton",
+        "Spine/Special/Skeleton Grayscale"
+      ],
+      "materialNames": [
+        "SkeletonGraphicDefault|shader=Spine/SkeletonGraphic",
+        "SkeletonGraphicDefaultAlpha|shader=Spine/SkeletonGraphic",
+        "SkeletonGraphicDefaultGrayscale|shader=Spine/Special/Skeleton Grayscale",
+        "SkeletonGraphicAdditive|shader=Spine/SkeletonGraphic Additive",
+        "SkeletonGraphicDefault|shader=Spine/SkeletonGraphic",
+        "SkeletonGraphicDefaultGrayscale|shader=Spine/Special/Skeleton Grayscale",
+        "SkeletonGraphicDefaultOutline|shader=Spine/Outline/SkeletonGraphic",
+        "SkeletonGraphicMultiply|shader=Spine/SkeletonGraphic Multiply",
+        "SkeletonGraphicScreen|shader=Spine/SkeletonGraphic Screen",
+        "SkeletonGraphicTintBlack|shader=Spine/SkeletonGraphic Tint Black",
+        "SkeletonGraphicTintBlackOutline|shader=Spine/Outline/SkeletonGraphic Tint Black"
+      ],
+      "assetTypes": [
+        "assets/download/commonprefabsandres/spinematandshaders/skeletongraphicdefault.mat|UnityEngine.Material",
+        "assets/download/commonprefabsandres/spinematandshaders/skeletongraphicdefaultalpha.mat|UnityEngine.Material",
+        "assets/download/commonprefabsandres/spinematandshaders/skeletongraphicdefaultgrayscale.mat|UnityEngine.Material",
+        "assets/download/commonprefabsandres/spinematandshaders/spinematerials/skeletongraphicadditive.mat|UnityEngine.Material",
+        "assets/download/commonprefabsandres/spinematandshaders/spinematerials/skeletongraphicdefault.mat|UnityEngine.Material",
+        "assets/download/commonprefabsandres/spinematandshaders/spinematerials/skeletongraphicdefaultgrayscale.mat|UnityEngine.Material",
+        "assets/download/commonprefabsandres/spinematandshaders/spinematerials/skeletongraphicdefaultoutline.mat|UnityEngine.Material",
+        "assets/download/commonprefabsandres/spinematandshaders/spinematerials/skeletongraphicmultiply.mat|UnityEngine.Material",
+        "assets/download/commonprefabsandres/spinematandshaders/spinematerials/skeletongraphicscreen.mat|UnityEngine.Material",
+        "assets/download/commonprefabsandres/spinematandshaders/spinematerials/skeletongraphictintblack.mat|UnityEngine.Material",
+        "assets/download/commonprefabsandres/spinematandshaders/spinematerials/skeletongraphictintblackoutline.mat|UnityEngine.Material",
+        "assets/download/commonprefabsandres/spinematandshaders/spineshaders/blendmodes/spine-skeleton-pma-additive.shader|UnityEngine.Shader",
+        "assets/download/commonprefabsandres/spinematandshaders/spineshaders/blendmodes/spine-skeleton-pma-multiply.shader|UnityEngine.Shader",
+        "assets/download/commonprefabsandres/spinematandshaders/spineshaders/blendmodes/spine-skeleton-pma-screen.shader|UnityEngine.Shader",
+        "assets/download/commonprefabsandres/spinematandshaders/spineshaders/outline/blendmodes/spine-skeleton-pma-additive-outline.shader|UnityEngine.Shader",
+        "assets/download/commonprefabsandres/spinematandshaders/spineshaders/outline/blendmodes/spine-skeleton-pma-multiply-outline.shader|UnityEngine.Shader",
+        "assets/download/commonprefabsandres/spinematandshaders/spineshaders/outline/blendmodes/spine-skeleton-pma-screen-outline.shader|UnityEngine.Shader",
+        "assets/download/commonprefabsandres/spinematandshaders/spineshaders/outline/skeletongraphic/spine-skeletongraphic-outline.shader|UnityEngine.Shader",
+        "assets/download/commonprefabsandres/spinematandshaders/spineshaders/outline/skeletongraphic/spine-skeletongraphic-tintblack-outline.shader|UnityEngine.Shader",
+        "assets/download/commonprefabsandres/spinematandshaders/spineshaders/outline/spine-skeleton-fill-outline.shader|UnityEngine.Shader",
+        "assets/download/commonprefabsandres/spinematandshaders/spineshaders/outline/spine-skeleton-lit-outline.shader|UnityEngine.Shader",
+        "assets/download/commonprefabsandres/spinematandshaders/spineshaders/outline/spine-skeleton-lit-zwrite-outline.shader|UnityEngine.Shader",
+        "assets/download/commonprefabsandres/spinematandshaders/spineshaders/outline/spine-skeleton-outline.shader|UnityEngine.Shader",
+        "assets/download/commonprefabsandres/spinematandshaders/spineshaders/outline/spine-skeleton-outlineonly-zwrite.shader|UnityEngine.Shader",
+        "assets/download/commonprefabsandres/spinematandshaders/spineshaders/outline/spine-skeleton-tint-outline.shader|UnityEngine.Shader",
+        "assets/download/commonprefabsandres/spinematandshaders/spineshaders/outline/spine-skeleton-tintblack-outline.shader|UnityEngine.Shader",
+        "assets/download/commonprefabsandres/spinematandshaders/spineshaders/outline/spine-special-skeleton-grayscale-outline.shader|UnityEngine.Shader",
+        "assets/download/commonprefabsandres/spinematandshaders/spineshaders/outline/sprite/spritespixellit-outline.shader|UnityEngine.Shader",
+        "assets/download/commonprefabsandres/spinematandshaders/spineshaders/outline/sprite/spritesunlit-outline.shader|UnityEngine.Shader",
+        "assets/download/commonprefabsandres/spinematandshaders/spineshaders/outline/sprite/spritesvertexlit-outline.shader|UnityEngine.Shader",
+        "assets/download/commonprefabsandres/spinematandshaders/spineshaders/skeletongraphic/spine-skeletongraphic-additive.shader|UnityEngine.Shader",
+        "assets/download/commonprefabsandres/spinematandshaders/spineshaders/skeletongraphic/spine-skeletongraphic-multiply.shader|UnityEngine.Shader",
+        "assets/download/commonprefabsandres/spinematandshaders/spineshaders/skeletongraphic/spine-skeletongraphic-screen.shader|UnityEngine.Shader",
+        "assets/download/commonprefabsandres/spinematandshaders/spineshaders/skeletongraphic/spine-skeletongraphic-tintblack.shader|UnityEngine.Shader",
+        "assets/download/commonprefabsandres/spinematandshaders/spineshaders/skeletongraphic/spine-skeletongraphic.shader|UnityEngine.Shader",
+        "assets/download/commonprefabsandres/spinematandshaders/spineshaders/spine-skeleton-fill.shader|UnityEngine.Shader",
+        "assets/download/commonprefabsandres/spinematandshaders/spineshaders/spine-skeleton-lit-zwrite.shader|UnityEngine.Shader",
+        "assets/download/commonprefabsandres/spinematandshaders/spineshaders/spine-skeleton-lit.shader|UnityEngine.Shader",
+        "assets/download/commonprefabsandres/spinematandshaders/spineshaders/spine-skeleton-tint.shader|UnityEngine.Shader",
+        "assets/download/commonprefabsandres/spinematandshaders/spineshaders/spine-skeleton-tintblack.shader|UnityEngine.Shader",
+        "assets/download/commonprefabsandres/spinematandshaders/spineshaders/spine-skeleton.shader|UnityEngine.Shader",
+        "assets/download/commonprefabsandres/spinematandshaders/spineshaders/spine-special-skeleton-grayscale.shader|UnityEngine.Shader",
+        "assets/download/commonprefabsandres/spinematandshaders/spineshadersvariantcollection.shadervariants|UnityEngine.ShaderVariantCollection"
+      ],
+      "loadExceptions": []
+    },
+    "actors": [
+      {
+        "side": "our",
+        "heroDid": "1002",
+        "modelId": "1002",
+        "expectedAnimation": "ult",
+        "bundleLoaded": true,
+        "prefabInstantiated": true,
+        "missingScriptCount": 0,
+        "skeletonAnimationComponentCount": 1,
+        "skeletonAnimationAssembly": "spine-unity",
+        "serializedAnimationName": "ult",
+        "animationStateSetSucceeded": true,
+        "animationStateUsedName": "ult",
+        "animationFallbackUsed": false,
+        "lateUpdateCalled": true,
+        "realMeshUpdated": false,
+        "meshVertexCountBefore": 732,
+        "meshVertexCountAfter": 732,
+        "meshTriangleIndexCountBefore": 2022,
+        "meshTriangleIndexCountAfter": 2022,
+        "skeletonDataAssetName": "1002_SkeletonData",
+        "skeletonDataAssetType": "Spine.Unity.SkeletonDataAsset",
+        "internalErrorShaderMaterialCount": 0,
+        "runtimeException": "",
+        "animationStateException": "",
+        "motionReplayStatus": "failed_real_spine_mesh_update_not_observed",
+        "failReason": "",
+        "textureNames": [
+          "1002(1024x512)"
+        ],
+        "bundleMaterialNames": [
+          "1002_Material-Screen|shader=Spine/Blend Modes/Skeleton PMA Screen|mainTex=1002",
+          "1002_Material|shader=Spine/Skeleton Tint|mainTex=1002"
+        ],
+        "rendererMaterialBefore": [
+          "1002_Material|shader=Spine/Skeleton Tint|mainTex=1002"
+        ],
+        "rendererMaterialAfter": [
+          "1002_Material|shader=Spine/Skeleton Tint|mainTex=1002"
+        ],
+        "skeletonLikeAssets": [
+          "assets/download/roleprefabsandres/battleprefabandres/1002/1002.atlas.txt",
+          "assets/download/roleprefabsandres/battleprefabandres/1002/1002.skel.bytes",
+          "assets/download/roleprefabsandres/battleprefabandres/1002/1002_atlas.asset",
+          "assets/download/roleprefabsandres/battleprefabandres/1002/1002_skeletondata.asset"
+        ],
+        "loadExceptions": []
+      },
+      {
+        "side": "our",
+        "heroDid": "1034",
+        "modelId": "1034",
+        "expectedAnimation": "skill1",
+        "bundleLoaded": true,
+        "prefabInstantiated": true,
+        "missingScriptCount": 0,
+        "skeletonAnimationComponentCount": 1,
+        "skeletonAnimationAssembly": "spine-unity",
+        "serializedAnimationName": "skill1",
+        "animationStateSetSucceeded": true,
+        "animationStateUsedName": "skill1",
+        "animationFallbackUsed": false,
+        "lateUpdateCalled": true,
+        "realMeshUpdated": false,
+        "meshVertexCountBefore": 1283,
+        "meshVertexCountAfter": 1283,
+        "meshTriangleIndexCountBefore": 3381,
+        "meshTriangleIndexCountAfter": 3381,
+        "skeletonDataAssetName": "1034_SkeletonData",
+        "skeletonDataAssetType": "Spine.Unity.SkeletonDataAsset",
+        "internalErrorShaderMaterialCount": 0,
+        "runtimeException": "",
+        "animationStateException": "",
+        "motionReplayStatus": "failed_real_spine_mesh_update_not_observed",
+        "failReason": "",
+        "textureNames": [
+          "1034(2048x1024)"
+        ],
+        "bundleMaterialNames": [
+          "1034_Material-Screen|shader=Spine/Blend Modes/Skeleton PMA Screen|mainTex=1034",
+          "1034_Material|shader=Spine/Skeleton Tint|mainTex=1034"
+        ],
+        "rendererMaterialBefore": [
+          "1034_Material|shader=Spine/Skeleton Tint|mainTex=1034",
+          "1034_Material-Screen|shader=Spine/Blend Modes/Skeleton PMA Screen|mainTex=1034"
+        ],
+        "rendererMaterialAfter": [
+          "1034_Material|shader=Spine/Skeleton Tint|mainTex=1034",
+          "1034_Material-Screen|shader=Spine/Blend Modes/Skeleton PMA Screen|mainTex=1034"
+        ],
+        "skeletonLikeAssets": [
+          "assets/download/roleprefabsandres/battleprefabandres/1034/1034.atlas.txt",
+          "assets/download/roleprefabsandres/battleprefabandres/1034/1034.skel.bytes",
+          "assets/download/roleprefabsandres/battleprefabandres/1034/1034_atlas.asset",
+          "assets/download/roleprefabsandres/battleprefabandres/1034/1034_skeletondata.asset"
+        ],
+        "loadExceptions": []
+      },
+      {
+        "side": "enemy",
+        "heroDid": "1100111",
+        "modelId": "3001",
+        "expectedAnimation": "attack",
+        "bundleLoaded": true,
+        "prefabInstantiated": true,
+        "missingScriptCount": 0,
+        "skeletonAnimationComponentCount": 1,
+        "skeletonAnimationAssembly": "spine-unity",
+        "serializedAnimationName": "attack",
+        "animationStateSetSucceeded": true,
+        "animationStateUsedName": "attack",
+        "animationFallbackUsed": false,
+        "lateUpdateCalled": true,
+        "realMeshUpdated": false,
+        "meshVertexCountBefore": 611,
+        "meshVertexCountAfter": 611,
+        "meshTriangleIndexCountBefore": 2103,
+        "meshTriangleIndexCountAfter": 2103,
+        "skeletonDataAssetName": "3001_SkeletonData",
+        "skeletonDataAssetType": "Spine.Unity.SkeletonDataAsset",
+        "internalErrorShaderMaterialCount": 0,
+        "runtimeException": "",
+        "animationStateException": "",
+        "motionReplayStatus": "failed_real_spine_mesh_update_not_observed",
+        "failReason": "",
+        "textureNames": [
+          "3001(512x512)"
+        ],
+        "bundleMaterialNames": [
+          "3001_Material|shader=Spine/Skeleton Tint|mainTex=3001"
+        ],
+        "rendererMaterialBefore": [
+          "3001_Material|shader=Spine/Skeleton Tint|mainTex=3001"
+        ],
+        "rendererMaterialAfter": [
+          "3001_Material|shader=Spine/Skeleton Tint|mainTex=3001"
+        ],
+        "skeletonLikeAssets": [
+          "assets/download/roleprefabsandres/battleprefabandres/3001/3001.atlas.txt",
+          "assets/download/roleprefabsandres/battleprefabandres/3001/3001.skel.bytes",
+          "assets/download/roleprefabsandres/battleprefabandres/3001/3001_atlas.asset",
+          "assets/download/roleprefabsandres/battleprefabandres/3001/3001_skeletondata.asset"
+        ],
+        "loadExceptions": []
+      }
+    ]
+  },
+  "skelAtlasTraceRows": [
+    {
+      "side": "our",
+      "heroDid": "1002",
+      "modelId": "1002",
+      "bundle": "download/roleprefabsandres/battleprefabandres/1002.assetbundle",
+      "skeletonDataPathID": 5410798655350692559,
+      "skeletonTextAssetName": "1002.skel",
+      "skeletonBytes": 862131,
+      "expectedAnimation": "ult",
+      "expectedAnimationInSkel": true,
+      "animationEvidence": "tx/skill0;tx/skill1;tx/skill2;tx/skill3;tx/skill4;tx/skill5;white;attack;run;skill1;stand;ult;ultx",
+      "atlasRegionCount": 252,
+      "materialNames": "1002_Material",
+      "textureNames": "1002(1024x512)",
+      "actorSerializedAnimationNames": "ult"
+    },
+    {
+      "side": "our",
+      "heroDid": "1034",
+      "modelId": "1034",
+      "bundle": "download/roleprefabsandres/battleprefabandres/1034.assetbundle",
+      "skeletonDataPathID": 3214316990278771306,
+      "skeletonTextAssetName": "1034.skel",
+      "skeletonBytes": 820748,
+      "expectedAnimation": "skill1",
+      "expectedAnimationInSkel": true,
+      "animationEvidence": "tx/ult_00000;ult;white;attack;run;skill1;stand;ultx",
+      "atlasRegionCount": 185,
+      "materialNames": "1034_Material",
+      "textureNames": "1034(2048x1024)",
+      "actorSerializedAnimationNames": "skill1"
+    },
+    {
+      "side": "enemy",
+      "heroDid": "1100111",
+      "modelId": "3001",
+      "bundle": "download/roleprefabsandres/battleprefabandres/3001.assetbundle",
+      "skeletonDataPathID": -5838307213355684488,
+      "skeletonTextAssetName": "3001.skel",
+      "skeletonBytes": 160467,
+      "expectedAnimation": "attack",
+      "expectedAnimationInSkel": false,
+      "animationEvidence": "white8;attackR;RUn;RUN;runJ;run1;skill1a;stand",
+      "atlasRegionCount": 41,
+      "materialNames": "3001_Material",
+      "textureNames": "3001(512x512)",
+      "actorSerializedAnimationNames": "attack"
+    }
+  ],
+  "blocker": "Real Spine runtime types are present, but the original AssetBundle actor instances did not show a changed mesh after AnimationState/LateUpdate probe.",
+  "nextBlocker": "BATTLE_36_TRACE_REAL_SPINE_INITIALIZE_SKELETONDATA_MATERIAL_SHADER_BINDING",
+  "outputs": {
+    "report": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_35_IMPORT_OR_RECONSTRUCT_REAL_SPINE_4_RUNTIME_MESH_GENERATOR_FOR_ACTORS_RESULT.md",
+    "resultJson": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_35_IMPORT_OR_RECONSTRUCT_REAL_SPINE_4_RUNTIME_MESH_GENERATOR_FOR_ACTORS_RESULT.json",
+    "unityDataJson": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_battle_unity\\Assets\\RestoreData\\battle\\BATTLE_35_IMPORT_OR_RECONSTRUCT_REAL_SPINE_4_RUNTIME_MESH_GENERATOR_FOR_ACTORS.json",
+    "unityProbeJson": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_battle_unity\\Assets\\RestoreData\\battle\\BATTLE_35_IMPORT_OR_RECONSTRUCT_REAL_SPINE_4_RUNTIME_MESH_GENERATOR_FOR_ACTORS_UNITY.json",
+    "traceCsv": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_battle_unity\\Assets\\RestoreData\\battle\\BATTLE_35_IMPORT_OR_RECONSTRUCT_REAL_SPINE_4_RUNTIME_MESH_GENERATOR_FOR_ACTORS_COMPONENTS.csv",
+    "unityComponentCsv": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_battle_unity\\Assets\\RestoreData\\battle\\BATTLE_35_IMPORT_OR_RECONSTRUCT_REAL_SPINE_4_RUNTIME_MESH_GENERATOR_FOR_ACTORS_UNITY_COMPONENTS.csv",
+    "capture": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_battle_unity\\Assets\\RestoreCaptures\\battle_actor\\Battle35RealSpineRuntimeMeshGeneratorProbe_1920x1080.png",
+    "contactSheet": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_35_IMPORT_OR_RECONSTRUCT_REAL_SPINE_4_RUNTIME_MESH_GENERATOR_FOR_ACTORS_CONTACT_SHEET.jpg",
+    "videoSequence": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_35_PLAY_VIDEO_CLIP05_485_487_SEQUENCE.jpg",
+    "unityLog": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_35_IMPORT_OR_RECONSTRUCT_REAL_SPINE_4_RUNTIME_MESH_GENERATOR_FOR_ACTORS.log"
+  },
+  "notes": [
+    "No fake material, fake animation, or coordinate-only visual correction was applied.",
+    "The capture must not be treated as success unless clip05 actor motion is visually/temporally matched.",
+    "3001 serialized animation remains attack; skel string evidence includes attackR-style candidates."
+  ]
+}

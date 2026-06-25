@@ -1,0 +1,310 @@
+#if BATTLE_USE_LEGACY_SPINE_PROXY
+using System;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.Rendering;
+
+namespace Spine
+{
+    [Serializable]
+    public class Skeleton
+    {
+        public SkeletonData Data;
+    }
+
+    [Serializable]
+    public class SkeletonData
+    {
+        public readonly List<Animation> Animations = new List<Animation>();
+
+        public Animation FindAnimation(string name)
+        {
+            if (string.IsNullOrEmpty(name)) return null;
+            foreach (var animation in Animations)
+            {
+                if (animation != null && animation.Name == name) return animation;
+            }
+            return null;
+        }
+    }
+
+    [Serializable]
+    public class Animation
+    {
+        public string Name;
+        public float Duration;
+
+        public Animation(string name, float duration = 0f)
+        {
+            Name = name;
+            Duration = duration;
+        }
+    }
+
+    [Serializable]
+    public class AnimationStateData
+    {
+        public SkeletonData SkeletonData;
+
+        public AnimationStateData() { }
+
+        public AnimationStateData(SkeletonData skeletonData)
+        {
+            SkeletonData = skeletonData;
+        }
+    }
+
+    [Serializable]
+    public class AnimationState
+    {
+        public TrackEntry Current;
+
+        public TrackEntry SetAnimation(int trackIndex, string animationName, bool loop)
+        {
+            Current = new TrackEntry { TrackIndex = trackIndex, AnimationName = animationName, Loop = loop };
+            return Current;
+        }
+    }
+
+    [Serializable]
+    public class TrackEntry
+    {
+        public int TrackIndex;
+        public string AnimationName;
+        public bool Loop;
+    }
+}
+#endif
+
+namespace Spine.Unity
+{
+    public enum UpdateMode
+    {
+        FullUpdate = 0,
+        OnlyUpdateStatus = 1,
+        OnlyEventTimelines = 2,
+    }
+
+    public interface ISkeletonComponent { }
+
+    public interface IHasSkeletonDataAsset
+    {
+        SkeletonDataAsset SkeletonDataAsset { get; }
+    }
+
+    public interface IAnimationStateComponent
+    {
+        Spine.AnimationState AnimationState { get; }
+    }
+
+    public interface ISkeletonAnimation : ISkeletonComponent, IAnimationStateComponent { }
+
+    public abstract class AtlasAssetBase : ScriptableObject
+    {
+        public virtual bool IsLoaded { get { return true; } }
+        public virtual IEnumerable<Material> Materials { get { yield break; } }
+        public virtual int MaterialCount { get { return 0; } }
+        public virtual Material PrimaryMaterial { get { return null; } }
+        public virtual void Clear() { }
+    }
+
+    public class SpineAtlasAsset : AtlasAssetBase
+    {
+        public TextAsset atlasFile;
+        public Material[] materials;
+
+        public override IEnumerable<Material> Materials
+        {
+            get
+            {
+                if (materials == null) yield break;
+                foreach (var material in materials)
+                {
+                    if (material != null) yield return material;
+                }
+            }
+        }
+
+        public override int MaterialCount { get { return materials == null ? 0 : materials.Length; } }
+        public override Material PrimaryMaterial { get { return materials != null && materials.Length > 0 ? materials[0] : null; } }
+    }
+
+    public class SkeletonDataModifierAsset : ScriptableObject
+    {
+        public virtual void Apply(Spine.SkeletonData skeletonData) { }
+    }
+
+    [Serializable]
+    public class BlendModeMaterials
+    {
+        public Material multiplyMaterial;
+        public Material screenMaterial;
+        public Material additiveMaterial;
+    }
+
+    public class SkeletonDataAsset : ScriptableObject
+    {
+        public AtlasAssetBase[] atlasAssets;
+        public float scale = 0.01f;
+        public TextAsset skeletonJSON;
+        public bool isUpgradingBlendModeMaterials;
+        public BlendModeMaterials blendModeMaterials;
+        public List<SkeletonDataModifierAsset> skeletonDataModifiers;
+        public string[] fromAnimation;
+        public string[] toAnimation;
+        public float[] duration;
+        public float defaultMix;
+        public RuntimeAnimatorController controller;
+
+        [SerializeField] private Spine.SkeletonData skeletonData;
+        [SerializeField] private Spine.AnimationStateData stateData;
+
+        public bool IsLoaded { get { return skeletonData != null; } }
+
+        public Spine.AnimationStateData GetAnimationStateData()
+        {
+            if (stateData == null) stateData = new Spine.AnimationStateData(GetSkeletonData(true));
+            return stateData;
+        }
+
+        public Spine.SkeletonData GetSkeletonData(bool quiet)
+        {
+            if (skeletonData == null)
+            {
+                skeletonData = new Spine.SkeletonData();
+                AddAnimationIfMissing("idle", 0f);
+                if (fromAnimation != null)
+                {
+                    foreach (var animationName in fromAnimation) AddAnimationIfMissing(animationName, 0f);
+                }
+                if (toAnimation != null)
+                {
+                    foreach (var animationName in toAnimation) AddAnimationIfMissing(animationName, 0f);
+                }
+            }
+            return skeletonData;
+        }
+
+        private void AddAnimationIfMissing(string animationName, float animationDuration)
+        {
+            if (string.IsNullOrEmpty(animationName)) return;
+            if (skeletonData.FindAnimation(animationName) == null)
+            {
+                skeletonData.Animations.Add(new Spine.Animation(animationName, animationDuration));
+            }
+        }
+    }
+
+    [ExecuteAlways]
+    [DisallowMultipleComponent]
+    [RequireComponent(typeof(MeshFilter))]
+    [RequireComponent(typeof(MeshRenderer))]
+    public class SkeletonRenderer : MonoBehaviour, ISkeletonComponent, IHasSkeletonDataAsset
+    {
+        public SkeletonDataAsset skeletonDataAsset;
+        public string initialSkinName;
+        public bool initialFlipX;
+        public bool initialFlipY;
+        [SerializeField] protected UpdateMode updateMode;
+        public UpdateMode updateWhenInvisible;
+        [SerializeField] protected string[] separatorSlotNames;
+        public readonly List<object> separatorSlots = new List<object>();
+        public float zSpacing;
+        public bool useClipping = true;
+        public bool immutableTriangles;
+        public bool pmaVertexColors = true;
+        public bool clearStateOnDisable = true;
+        public bool tintBlack;
+        public bool singleSubmesh;
+        public bool fixDrawOrder = true;
+        public bool addNormals;
+        public bool calculateTangents;
+        public SpriteMaskInteraction maskInteraction;
+        public bool disableRenderingOnOverride;
+        public bool valid;
+        public Spine.Skeleton skeleton;
+
+        public UpdateMode UpdateMode
+        {
+            get { return updateMode; }
+            set { updateMode = value; }
+        }
+
+        public Spine.Skeleton Skeleton { get { return skeleton; } }
+        public SkeletonDataAsset SkeletonDataAsset { get { return skeletonDataAsset; } }
+
+        public virtual void Awake()
+        {
+            Initialize(false, true);
+        }
+
+        public virtual void Initialize(bool overwrite, bool quiet = false)
+        {
+            if (skeleton == null || overwrite)
+            {
+                skeleton = new Spine.Skeleton();
+                if (skeletonDataAsset != null) skeleton.Data = skeletonDataAsset.GetSkeletonData(quiet);
+            }
+            valid = skeletonDataAsset != null;
+        }
+
+        public virtual void ClearState()
+        {
+            valid = false;
+        }
+
+        public virtual void LateUpdate() { }
+        public virtual void LateUpdateMesh() { }
+    }
+
+    public class SkeletonAnimation : SkeletonRenderer, ISkeletonAnimation
+    {
+        public string startingAnimation = "idle";
+        public bool startingLoop = true;
+        [SerializeField] private string _animationName = "";
+        public bool loop;
+        public float timeScale = 1f;
+        public bool skipByPass;
+        public bool invisible;
+        [SerializeField] private Spine.AnimationState animationState;
+
+        public Spine.AnimationState AnimationState
+        {
+            get
+            {
+                if (animationState == null) animationState = new Spine.AnimationState();
+                return animationState;
+            }
+        }
+
+        public override void Initialize(bool overwrite, bool quiet = false)
+        {
+            base.Initialize(overwrite, quiet);
+            string animationName = !string.IsNullOrEmpty(_animationName) ? _animationName : startingAnimation;
+            bool shouldLoop = !string.IsNullOrEmpty(_animationName) ? loop : startingLoop;
+            if (!string.IsNullOrEmpty(animationName))
+            {
+                AnimationState.SetAnimation(0, animationName, shouldLoop);
+            }
+        }
+
+        public Spine.TrackEntry SetAnimation(int trackIndex, string animationName, bool loop)
+        {
+            return AnimationState.SetAnimation(trackIndex, animationName, loop);
+        }
+    }
+
+    public class SkeletonMecanim : SkeletonRenderer, ISkeletonAnimation
+    {
+        [SerializeField] private Spine.AnimationState animationState;
+
+        public Spine.AnimationState AnimationState
+        {
+            get
+            {
+                if (animationState == null) animationState = new Spine.AnimationState();
+                return animationState;
+            }
+        }
+    }
+}
