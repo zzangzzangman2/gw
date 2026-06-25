@@ -1,0 +1,336 @@
+[Licensing::Module] Trying to connect to existing licensing client channel...
+Built from '6000.4/staging' branch; Version is '6000.4.9f1 (f7258d6eebbe) revision 16197005'; Using compiler version '194234433'; Build Type 'Release'
+[Licensing::IpcConnector] Channel LicenseClient-godho doesn't exist
+OS: 'Windows 11  (10.0.26200) Professional' Language: 'ko' Physical Memory: 32022 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1
+System  architecture: x64
+Process architecture: x64
+Date: 2026-06-25T08:12:06Z
+[Licensing::Module] Successfully launched the LicensingClient (PId: 32632)
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\6000.4.9f1\Editor\Unity.exe
+-batchmode
+-quit
+-projectPath
+C:\Users\godho\Downloads\girlswar\girlswar_battle_unity
+-executeMethod
+BattlePrototypeSceneBuilder.Build
+-logFile
+C:\Users\godho\Downloads\girlswar\reports\battle\BATTLE_08_UNITY_LOADMAP_MARKER.log
+Successfully changed project path to: C:\Users\godho\Downloads\girlswar\girlswar_battle_unity
+C:/Users/godho/Downloads/girlswar/girlswar_battle_unity
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gfx=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+Player connection [20888]  Target information:
+
+Player connection [20888]  * "[IP] 10.10.1.159 [Port] 55504 [Flags] 2 [Guid] 1393974441 [EditorId] 1393974441 [Version] 1048832 [Id] WindowsEditor(7,sjpark) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [20888]  * "[IP] 172.26.64.1 [Port] 55504 [Flags] 2 [Guid] 1393974441 [EditorId] 1393974441 [Version] 1048832 [Id] WindowsEditor(7,sjpark) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [20888]  * "[IP] 100.66.239.97 [Port] 55504 [Flags] 2 [Guid] 1393974441 [EditorId] 1393974441 [Version] 1048832 [Id] WindowsEditor(7,sjpark) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [20888] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [20888] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Input System module state changed to: Initialized.
+[Physics::Module] Initialized fallback backend.
+[Physics::Module] Id: 0xdecafbad
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-godho" at "2026-06-25T08:12:06.738126Z"
+[Licensing::Client] Code 10 while verifying Licensing Client signature (process Id: 32632, path: "C:/Program Files/Unity/Hub/Editor/6000.4.9f1/Editor/Data/Resources/Licensing/Client/Unity.Licensing.Client.exe")
+[Licensing::Module] LicensingClient has failed validation; ignoring
+[Package Manager] Connected to IPC stream "Upm-13120" after 0.2 seconds.
+[Licensing::Module] Licensing is not yet initialized.
+[Licensing::Client] Handshaking with LicensingClient:
+  Version:                 1.18.1+9fbee8e
+  Session Id:              1016919f43b342bfba7c808c1c1245a2
+  Correlation Id:          dc556c8a1e6d2f47647a3f3657c77634
+  External correlation Id: 6415155221385751991
+  Machine Id:              nETCb6mCOTg3uD4qHH44hI9aRsg=
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-godho" (connect: 0.37s, validation: 0.08s, handshake: 0.05s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-godho-notifications" at "2026-06-25T08:12:06.8636205Z"
+[Licensing::Module] Connected to LicensingClient (PId: 32632, launch time: 0.00, total connection time: 0.50s)
+[Licensing::Module] Error: Access token is unavailable; failed to update
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] License group:
+  Id: 14569760011564-UnityPersXXXX
+  Product: Unity Personal
+  Type: Assigned
+  Expiration: Unlimited
+[Licensing::Client] Successfully updated license, isAsync: True, time: 0.01
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] Licensing Background thread has ended after 0.54s
+[Licensing::Module] Licensing is initialized (took 0.08s).
+[Licensing::Client] Successfully resolved entitlement details
+Library Redirect Path: Library/
+[Physics::Module] Selected backend.
+[Physics::Module] Name: PhysX
+[Physics::Module] Id: 0xf2b8ea05
+[Physics::Module] SDK Version: 4.1.2
+[Physics::Module] Integration Version: 1.0.0
+[Physics::Module] Threading Mode: Multi-Threaded
+Initialize engine version: 6000.4.9f1 (f7258d6eebbe)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/6000.4.9f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/godho/Downloads/girlswar/girlswar_battle_unity/Assets
+GfxDevice: creating device client; kGfxThreadingModeNonThreaded
+d3d12: failed to query info queue interface (0x80004002).
+Direct3D:
+    Version:         Direct3D 12 [level 12.2]
+    Renderer:        Intel(R) Graphics (ID=0x7d67)
+    Vendor:          Intel
+    VRAM:            18252 MB
+    App VRAM Budget: 17484 MB
+    Driver:          32.0.101.8425
+    Unified Memory Architecture
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.4.9f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.4.9f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.4.9f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56120
+CodeReloadManager initialized
+Using cacheserver namespaces - metadata:defaultmetadata, artifacts:defaultartifacts
+Using cacheserver namespaces - metadata:defaultmetadata, artifacts:defaultartifacts
+ImportWorker Server TCP listen port: 0
+AcceleratorClientConnectionCallback - disconnected - :0
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.4.9f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.4.9f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.002818 seconds.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Package Manager log level set to [2]
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:False
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.263 seconds
+Domain Reload Profiling: 632ms
+	BeginReloadAssembly (144ms)
+		CreateAndSetChildDomain (31ms)
+	RebuildCommonClasses (25ms)
+	RebuildNativeTypeToScriptingClass (9ms)
+	initialDomainReloadingComplete (47ms)
+	LoadAllAssembliesAndSetupDomain (143ms)
+		LoadAssemblies (109ms)
+		AnalyzeDomain (137ms)
+			TypeCache.Refresh (135ms)
+				TypeCache.ScanAssembly (124ms)
+	FinalizeReload (264ms)
+		SetupLoadedEditorAssemblies (0ms)
+			InitializePlatformSupportModulesInManaged (34ms)
+			BeforeProcessingInitializeOnLoad (54ms)
+			ProcessInitializeOnLoadAttributes (71ms)
+			ProcessInitializeOnLoadMethodAttributes (62ms)
+[Licensing::Client] Successfully resolved entitlement details
+Application.AssetDatabase Initial Refresh Start
+[Package Manager] Restoring resolved packages state from cache
+[Licensing::Client] Successfully resolved entitlement details
+[Package Manager] Registered 37 packages:
+  Built-in packages:
+    com.unity.multiplayer.center@1.0.1 (location: C:\Users\godho\Downloads\girlswar\girlswar_battle_unity\Library\PackageCache\com.unity.multiplayer.center@f01f4ba8d00a)
+    com.unity.modules.accessibility@1.0.0 (location: C:\Users\godho\Downloads\girlswar\girlswar_battle_unity\Library\PackageCache\com.unity.modules.accessibility)
+    com.unity.modules.adaptiveperformance@1.0.0 (location: C:\Users\godho\Downloads\girlswar\girlswar_battle_unity\Library\PackageCache\com.unity.modules.adaptiveperformance)
+    com.unity.modules.ai@1.0.0 (location: C:\Users\godho\Downloads\girlswar\girlswar_battle_unity\Library\PackageCache\com.unity.modules.ai)
+    com.unity.modules.androidjni@1.0.0 (location: C:\Users\godho\Downloads\girlswar\girlswar_battle_unity\Library\PackageCache\com.unity.modules.androidjni)
+    com.unity.modules.animation@1.0.0 (location: C:\Users\godho\Downloads\girlswar\girlswar_battle_unity\Library\PackageCache\com.unity.modules.animation)
+    com.unity.modules.assetbundle@1.0.0 (location: C:\Users\godho\Downloads\girlswar\girlswar_battle_unity\Library\PackageCache\com.unity.modules.assetbundle)
+    com.unity.modules.audio@1.0.0 (location: C:\Users\godho\Downloads\girlswar\girlswar_battle_unity\Library\PackageCache\com.unity.modules.audio)
+    com.unity.modules.cloth@1.0.0 (location: C:\Users\godho\Downloads\girlswar\girlswar_battle_unity\Library\PackageCache\com.unity.modules.cloth)
+    com.unity.modules.director@1.0.0 (location: C:\Users\godho\Downloads\girlswar\girlswar_battle_unity\Library\PackageCache\com.unity.modules.director)
+    com.unity.modules.imageconversion@1.0.0 (location: C:\Users\godho\Downloads\girlswar\girlswar_battle_unity\Library\PackageCache\com.unity.modules.imageconversion)
+    com.unity.modules.imgui@1.0.0 (location: C:\Users\godho\Downloads\girlswar\girlswar_battle_unity\Library\PackageCache\com.unity.modules.imgui)
+    com.unity.modules.jsonserialize@1.0.0 (location: C:\Users\godho\Downloads\girlswar\girlswar_battle_unity\Library\PackageCache\com.unity.modules.jsonserialize)
+    com.unity.modules.particlesystem@1.0.0 (location: C:\Users\godho\Downloads\girlswar\girlswar_battle_unity\Library\PackageCache\com.unity.modules.particlesystem)
+    com.unity.modules.physics@1.0.0 (location: C:\Users\godho\Downloads\girlswar\girlswar_battle_unity\Library\PackageCache\com.unity.modules.physics)
+    com.unity.modules.physics2d@1.0.0 (location: C:\Users\godho\Downloads\girlswar\girlswar_battle_unity\Library\PackageCache\com.unity.modules.physics2d)
+    com.unity.modules.screencapture@1.0.0 (location: C:\Users\godho\Downloads\girlswar\girlswar_battle_unity\Library\PackageCache\com.unity.modules.screencapture)
+    com.unity.modules.terrain@1.0.0 (location: C:\Users\godho\Downloads\girlswar\girlswar_battle_unity\Library\PackageCache\com.unity.modules.terrain)
+    com.unity.modules.terrainphysics@1.0.0 (location: C:\Users\godho\Downloads\girlswar\girlswar_battle_unity\Library\PackageCache\com.unity.modules.terrainphysics)
+    com.unity.modules.tilemap@1.0.0 (location: C:\Users\godho\Downloads\girlswar\girlswar_battle_unity\Library\PackageCache\com.unity.modules.tilemap)
+    com.unity.modules.ui@1.0.0 (location: C:\Users\godho\Downloads\girlswar\girlswar_battle_unity\Library\PackageCache\com.unity.modules.ui)
+    com.unity.modules.uielements@1.0.0 (location: C:\Users\godho\Downloads\girlswar\girlswar_battle_unity\Library\PackageCache\com.unity.modules.uielements)
+    com.unity.modules.umbra@1.0.0 (location: C:\Users\godho\Downloads\girlswar\girlswar_battle_unity\Library\PackageCache\com.unity.modules.umbra)
+    com.unity.modules.unityanalytics@1.0.0 (location: C:\Users\godho\Downloads\girlswar\girlswar_battle_unity\Library\PackageCache\com.unity.modules.unityanalytics)
+    com.unity.modules.unitywebrequest@1.0.0 (location: C:\Users\godho\Downloads\girlswar\girlswar_battle_unity\Library\PackageCache\com.unity.modules.unitywebrequest)
+    com.unity.modules.unitywebrequestassetbundle@1.0.0 (location: C:\Users\godho\Downloads\girlswar\girlswar_battle_unity\Library\PackageCache\com.unity.modules.unitywebrequestassetbundle)
+    com.unity.modules.unitywebrequestaudio@1.0.0 (location: C:\Users\godho\Downloads\girlswar\girlswar_battle_unity\Library\PackageCache\com.unity.modules.unitywebrequestaudio)
+    com.unity.modules.unitywebrequesttexture@1.0.0 (location: C:\Users\godho\Downloads\girlswar\girlswar_battle_unity\Library\PackageCache\com.unity.modules.unitywebrequesttexture)
+    com.unity.modules.unitywebrequestwww@1.0.0 (location: C:\Users\godho\Downloads\girlswar\girlswar_battle_unity\Library\PackageCache\com.unity.modules.unitywebrequestwww)
+    com.unity.modules.vectorgraphics@1.0.0 (location: C:\Users\godho\Downloads\girlswar\girlswar_battle_unity\Library\PackageCache\com.unity.modules.vectorgraphics)
+    com.unity.modules.vehicles@1.0.0 (location: C:\Users\godho\Downloads\girlswar\girlswar_battle_unity\Library\PackageCache\com.unity.modules.vehicles)
+    com.unity.modules.video@1.0.0 (location: C:\Users\godho\Downloads\girlswar\girlswar_battle_unity\Library\PackageCache\com.unity.modules.video)
+    com.unity.modules.vr@1.0.0 (location: C:\Users\godho\Downloads\girlswar\girlswar_battle_unity\Library\PackageCache\com.unity.modules.vr)
+    com.unity.modules.wind@1.0.0 (location: C:\Users\godho\Downloads\girlswar\girlswar_battle_unity\Library\PackageCache\com.unity.modules.wind)
+    com.unity.modules.xr@1.0.0 (location: C:\Users\godho\Downloads\girlswar\girlswar_battle_unity\Library\PackageCache\com.unity.modules.xr)
+    com.unity.modules.subsystems@1.0.0 (location: C:\Users\godho\Downloads\girlswar\girlswar_battle_unity\Library\PackageCache\com.unity.modules.subsystems)
+    com.unity.modules.hierarchycore@1.0.0 (location: C:\Users\godho\Downloads\girlswar\girlswar_battle_unity\Library\PackageCache\com.unity.modules.hierarchycore)
+[Subsystems] No new subsystems found in resolved package list.
+[Package Manager] Done registering packages in 0.01 seconds
+[ScriptCompilation] Requested script compilation because: AssetDatabase observed changes in script compilation related files
+Starting: C:\Program Files\Unity\Hub\Editor\6000.4.9f1\Editor\Data\Tools\BuildPipeline\bee_backend.exe --ipc --defer-dag-verification --dagfile="Library/Bee/1900b0aE.dag" --continue-on-failure --profile="Library/Bee/backend1.traceevents" ScriptAssemblies
+WorkingDir: C:/Users/godho/Downloads/girlswar/girlswar_battle_unity
+DisplayProgressbar: Compiling Scripts
+ExitCode: 0 Duration: 1s246ms
+[166/169    1s] Csc Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp-Editor.dll (+2 others)
+[167/169    0s] CopyFiles Library/ScriptAssemblies/Assembly-CSharp-Editor.pdb
+[168/169    0s] CopyFiles Library/ScriptAssemblies/Assembly-CSharp-Editor.dll
+*** Tundra build success (1.22 seconds), 3 items updated, 169 evaluated
+AssetDatabase: script compilation time: 1.546606s
+Begin MonoManager ReloadAssembly
+Assembly Assembly-CSharp-Editor-firstpass.dll at Library/ScriptAssemblies/Assembly-CSharp-Editor-firstpass.dll not valid. Loading of assembly skipped.
+Assembly Assembly-CSharp-firstpass.dll at Library/ScriptAssemblies/Assembly-CSharp-firstpass.dll not valid. Loading of assembly skipped.
+Assembly Assembly-CSharp.dll at Library/ScriptAssemblies/Assembly-CSharp.dll not valid. Loading of assembly skipped.
+Assembly Unity.Multiplayer.Center.Editor.Tests.dll at Library/ScriptAssemblies/Unity.Multiplayer.Center.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Multiplayer.Center.Tests.dll at Library/ScriptAssemblies/Unity.Multiplayer.Center.Tests.dll not valid. Loading of assembly skipped.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+ScheduleIndexationOnStartup MainProcess:True IndexOnStartup:True
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.304 seconds
+Domain Reload Profiling: 668ms
+	BeginReloadAssembly (285ms)
+		DisableScriptedObjects (17ms)
+		CreateAndSetChildDomain (154ms)
+	RebuildCommonClasses (24ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (30ms)
+	LoadAllAssembliesAndSetupDomain (14ms)
+		LoadAssemblies (86ms)
+		AnalyzeDomain (7ms)
+			TypeCache.Refresh (5ms)
+	FinalizeReload (306ms)
+		SetupLoadedEditorAssemblies (0ms)
+			InitializePlatformSupportModulesInManaged (20ms)
+			BeforeProcessingInitializeOnLoad (76ms)
+			ProcessInitializeOnLoadAttributes (60ms)
+			ProcessInitializeOnLoadMethodAttributes (33ms)
+			AfterProcessingInitializeOnLoad (7ms)
+		AwakeInstancesAfterBackupRestoration (21ms)
+Start importing Assets/Scenes/BATTLE_07_SCENE_BUILD_RESULT.json using Guid(73a0b4cb147f78d478ff54c38c571840) (TextScriptImporter) -> (Import Result ID: '983903a28760bebe0245b1a50ab82a3f') in 0.0097219 seconds [static dependencies only]. Details - ImportResultOutputID=875f1f228c92f0d98ae9168369d8fdd4 DependenciesID=4b4a6f037ab3232f1f40363195aea36d StaticDependenciesID=c62207053e46cb92ba578eb4b4737bd6 
+Start importing Assets/RestoreData/battle/BATTLE_ASSETBUNDLE_LOAD_MAP.json using Guid(ff9cf9eeab8322f448528e4dc7b1a06c) (TextScriptImporter) -> (Import Result ID: '07072833cf8c0b4e8abad736d2eee3ad') in 0.0091506 seconds [static dependencies only]. Details - ImportResultOutputID=a44b690ac491bf6fab435dd1eba023cd DependenciesID=64bff45e8024bbfa0b9c14ecbfde0354 StaticDependenciesID=9b28f2edbddd641ddc6f7d7aab79f793 
+(Values over 0.050ms)
+Asset Pipeline Refresh (id=2786b34adc56bad44ba6c70ee9e3e2b3): Total: 2.407 seconds - Initiated by InitialRefreshV2(ForceSynchronousImport)
+	Summary:
+		Imports: total=2 (actual=2, local cache=0, cache server=0)
+		Asset DB Process Time: managed=1 ms, native=430 ms
+		Asset DB Callback time: managed=38 ms, native=14 ms
+		Scripting: domain reloads=1, domain reload time=365 ms, compile time=1548 ms, other=7 ms
+		Project Asset Count: scripts=116, non-scripts=92
+		Asset File Changes: new=1, changed=3, moved=0, deleted=0
+		Scan Filter Count: 0
+	InvokePackagesCallback: 16.266ms
+	ApplyChangesToAssetFolders: 0.535ms
+	Scan: 38.673ms
+	OnSourceAssetsModified: 0.649ms
+	CategorizeScriptCompilationAssets: 0.192ms
+	ProcessAssetsWithTransientArtifactChanges: 0.744ms
+	CategorizeAssets: 0.961ms
+	CompileScripts: 1548.041ms
+	ImportOutOfDateAssets: 326.892ms (306.245ms without children)
+		ImportManagerImport: 20.390ms (0.729ms without children)
+		UnloadImportedAssets: 0.085ms
+		OnDemandSchedulerStart: 0.125ms
+	PostProcessAllAssets: 37.784ms
+		MonoPostProcessAllAssets: 37.272ms
+			StyleCatalogPostProcessor.OnPostprocessAllAssets 10.087ms
+			AssetPostprocessor.OnPostprocessAllAssets 7.280ms
+			WindowAssetPostprocessingWatcher.OnPostprocessAllAssets 4.634ms
+			BuilderAssetPostprocessor.OnPostprocessAllAssets 3.927ms
+			SyncVS.PostprocessSyncProject 1.213ms
+			AssetChangedListener.OnPostprocessAllAssets 0.999ms
+			RetainedModeAssetPostprocessor.OnPostprocessAllAssets 0.746ms
+			SpeedTree9Postprocessor.OnPostprocessAllAssets 0.585ms
+			TextAssetPostProcessor.OnPostprocessAllAssets 0.393ms
+			ArtifactBrowserPostProcessor.OnPostprocessAllAssets 0.344ms
+			ReferencedClipsPostProcessor.OnPostprocessAllAssets 0.267ms
+			AssetEvents.OnPostprocessAllAssets 0.178ms
+			AudioMixerPostprocessor.OnPostprocessAllAssets 0.153ms
+			TerrainToolbarOverlayPostProcessor.OnPostprocessAllAssets 0.151ms
+			ConfigAssetsTracker.OnPostprocessAllAssets 0.112ms
+			SpeedTreePostProcessor.OnPostprocessAllAssets 0.099ms
+			AssetDatabaseCallbacks.OnPostprocessAllAssets 0.096ms
+			ScenarioDriftAssetsTracker.OnPostprocessAllAssets 0.074ms
+			RenderPipelineGlobalSettingsPostprocessor.OnPostprocessAllAssets 0.064ms
+	PostAssetChangesProfiler: 0.597ms
+	UnloadStreamsBegin: 1.078ms
+	PersistCurrentRevisions: 0.065ms
+	GenerateScriptTypeHashes: 0.192ms
+	GenerateScriptTypeSerializationHashes: 0.409ms
+	Untracked: 428.829ms
+
+Application.AssetDatabase Initial Refresh End
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.01 seconds
+Scanning for USB devices : 2.074ms
+Initializing Unity extensions:
+[MODES] ModeService[none].Initialize
+[MODES] ModeService[none].LoadModes
+[MODES] Loading mode Default (0) for mode-current-id-girlswar_battle_unity
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 77 unused Assets / (0.5 MB). Loaded Objects now: 716.
+Memory consumption went from 95.0 MB to 94.4 MB.
+Total: 3.322600 ms (FindLiveObjects: 0.052200 ms CreateObjectMapping: 0.005600 ms MarkObjects: 3.051100 ms  DeleteObjects: 0.211400 ms)
+
+Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 0 unused Assets / (0 B). Loaded Objects now: 716.
+Memory consumption went from 94.3 MB to 94.3 MB.
+Total: 3.029000 ms (FindLiveObjects: 0.030400 ms CreateObjectMapping: 0.005200 ms MarkObjects: 2.990100 ms  DeleteObjects: 0.002700 ms)
+
+Start importing Assets/Scenes/BattlePrototype.unity using Guid(1eead81e0f21d2942a033c7411089595) (DefaultImporter) -> (Import Result ID: '4013d64b2316b66d7ea6f38b7b546ed0') in 0.0013853 seconds [static dependencies only]. Details - ImportResultOutputID=b59f7c3f564d568501c40cb566437d78 DependenciesID=cbad95ff16e6b398eb9bf367ac6f5fee StaticDependenciesID=3f1c03c2d0aa385fbfff31b3625eea65 
+Asset Pipeline Refresh (id=024eda514edd06d4e8710d5d29195af5): Total: 0.017 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Asset Pipeline Refresh (id=c69e349bf14a5a347b66dd42a8876ff7): Total: 0.009 seconds - Initiated by RefreshV2(NoUpdateAssetOptions)
+BattlePrototype scene generated. actors=12, missingBundles=4
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+BattlePrototypeSceneBuilder:Build () (at Assets/Editor/BattlePrototypeSceneBuilder.cs:83)
+
+(Filename: Assets/Editor/BattlePrototypeSceneBuilder.cs Line: 83)
+
+Batchmode quit successfully invoked - shutting down!
+Curl error 42: Callback aborted
+[Physics::Module] Cleanup current backend.
+[Physics::Module] Id: 0xf2b8ea05
+Input System module state changed to: ShutdownInProgress.
+Input Polling Thread exited.
+Input System module state changed to: Shutdown.
+[Licensing::IpcConnector] LicenseClient-godho-notifications channel disconnected successfully.
+[Licensing::IpcConnector] LicenseClient-godho channel disconnected successfully.
+AcceleratorClientConnectionCallback - disconnected - :0
+Cleanup mono
+CodeReloadManager destroyed
+Exiting batchmode successfully now!
+Exiting without the bug reporter. Application will terminate with return code 0

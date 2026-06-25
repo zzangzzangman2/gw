@@ -1,0 +1,27 @@
+{
+  "raw_textassets": 4378,
+  "decode_rows": 4378,
+  "saved_decoded_outputs": 4375,
+  "classification_counts": {
+    "lua_like_text": 4375,
+    "binary": 3
+  },
+  "bundle_counts": {
+    "download/xlualogic/modules/battle.assetbundle": 52,
+    "download/xlualogic/modules/battlepreview.assetbundle": 2,
+    "download/xlualogic/modules/battlerelicscript.assetbundle": 55,
+    "download/xlualogic/modules/battleskillscript.assetbundle": 1728,
+    "download/xlualogic/modules/battlebuffscript.assetbundle": 2540,
+    "download/xlualogic/modules/procedure.assetbundle": 1
+  },
+  "security_xorscale_offset": "0x5829D1",
+  "security_xorscale_hex": "2D 42 26 37 17 FE 09 A5 5A 13 29 2D C9 3A 37 25 FE B9 A5 A9 13 AB",
+  "outputs": {
+    "raw_csv": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_XLUA_RAW_TEXTASSETS.csv",
+    "decode_csv": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_XLUA_DECODE_RESULTS.csv",
+    "summary_json": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\battle_xlua_decode_summary.json",
+    "decoded_dir": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\decoded\\xlua_battle",
+    "raw_dir": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\extracted\\unity\\raw_textassets\\battle_xlua",
+    "md": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_XLUA_DECODE_RESULTS.md"
+  }
+}

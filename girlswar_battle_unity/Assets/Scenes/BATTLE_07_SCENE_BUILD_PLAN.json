@@ -1,0 +1,8 @@
+{
+  "status": "skeleton_ready",
+  "sceneTarget": "Assets/Scenes/BattlePrototype.unity",
+  "editorScript": "Assets/Editor/BattlePrototypeSceneBuilder.cs",
+  "manifest": "Assets/RestoreData/battle/BATTLE_PROTOTYPE_MANIFEST.json",
+  "payload": "Assets/RestoreData/battle/BATTLE_TEST_PAYLOAD.json",
+  "nextManualUnityStep": "Open girlswar_battle_unity as a Unity project, then run GirlsWar/Battle/Build Minimal Prototype Scene."
+}

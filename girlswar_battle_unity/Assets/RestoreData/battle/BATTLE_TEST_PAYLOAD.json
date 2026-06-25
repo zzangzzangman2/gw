@@ -1,0 +1,2770 @@
+{
+  "battleInfo": {
+    "ourHeros": [
+      {
+        "heroDid": 1036,
+        "status": 2,
+        "rankLevel": 3,
+        "heroId": 51469,
+        "skills": [
+          {
+            "skillType": 1,
+            "skillDid": 1036101
+          },
+          {
+            "skillType": 1,
+            "skillDid": 1036201
+          },
+          {
+            "skillType": 1,
+            "skillDid": 1036301
+          },
+          {
+            "skillType": 2,
+            "skillDid": 1036401
+          },
+          {
+            "skillType": 2,
+            "skillDid": 1036402
+          },
+          {
+            "skillType": 2,
+            "skillDid": 0
+          }
+        ],
+        "curMp": 1000,
+        "soul": {
+          "soulType": 8,
+          "soulLevel": 1,
+          "soulClass": 4,
+          "soulExp": 0
+        },
+        "playerId": 48044,
+        "underwearDids": [],
+        "lockLevel": 1,
+        "attribute": [
+          {
+            "value": 1040392,
+            "id": 1
+          },
+          {
+            "value": 127864,
+            "id": 2
+          },
+          {
+            "value": 45400,
+            "id": 3
+          },
+          {
+            "value": 1000,
+            "id": 4
+          },
+          {
+            "value": 5570,
+            "id": 5
+          },
+          {
+            "value": 3000,
+            "id": 6
+          },
+          {
+            "value": 2785,
+            "id": 7
+          },
+          {
+            "value": 3000,
+            "id": 8
+          },
+          {
+            "value": 3000,
+            "id": 9
+          },
+          {
+            "value": 1500,
+            "id": 10
+          },
+          {
+            "value": 21000,
+            "id": 11
+          },
+          {
+            "value": 3000,
+            "id": 12
+          },
+          {
+            "value": 3000,
+            "id": 13
+          },
+          {
+            "value": 3000,
+            "id": 14
+          },
+          {
+            "value": 3000,
+            "id": 18
+          },
+          {
+            "value": 3000,
+            "id": 19
+          },
+          {
+            "value": 6000,
+            "id": 23
+          },
+          {
+            "value": 6000,
+            "id": 24
+          },
+          {
+            "value": 5500,
+            "id": 26
+          },
+          {
+            "value": 186,
+            "id": 27
+          }
+        ],
+        "curHp": 1040392,
+        "commonSouls": [
+          {
+            "soulType": 9,
+            "soulLevel": 1,
+            "soulClass": 5,
+            "soulExp": 0
+          },
+          {
+            "soulType": 10,
+            "soulLevel": 1,
+            "soulClass": 5,
+            "soulExp": 0
+          }
+        ]
+      },
+      {
+        "heroDid": 1002,
+        "status": 2,
+        "rankLevel": 1,
+        "heroId": 50870,
+        "skills": [
+          {
+            "skillType": 1,
+            "skillDid": 1002101
+          },
+          {
+            "skillType": 1,
+            "skillDid": 1002201
+          },
+          {
+            "skillType": 1,
+            "skillDid": 1002301
+          },
+          {
+            "skillType": 2,
+            "skillDid": 0
+          },
+          {
+            "skillType": 2,
+            "skillDid": 0
+          },
+          {
+            "skillType": 2,
+            "skillDid": 0
+          }
+        ],
+        "curMp": 1000,
+        "soul": {
+          "soulType": 7,
+          "soulLevel": 1,
+          "soulClass": 4,
+          "soulExp": 0
+        },
+        "playerId": 48044,
+        "underwearDids": [],
+        "lockLevel": 1,
+        "attribute": [
+          {
+            "value": 636907,
+            "id": 1
+          },
+          {
+            "value": 68399,
+            "id": 2
+          },
+          {
+            "value": 27077,
+            "id": 3
+          },
+          {
+            "value": 1000,
+            "id": 4
+          },
+          {
+            "value": 3000,
+            "id": 5
+          },
+          {
+            "value": 3000,
+            "id": 6
+          },
+          {
+            "value": 1500,
+            "id": 7
+          },
+          {
+            "value": 3000,
+            "id": 8
+          },
+          {
+            "value": 4670,
+            "id": 9
+          },
+          {
+            "value": 1500,
+            "id": 10
+          },
+          {
+            "value": 3000,
+            "id": 11
+          },
+          {
+            "value": 3000,
+            "id": 12
+          },
+          {
+            "value": 3835,
+            "id": 13
+          },
+          {
+            "value": 3000,
+            "id": 14
+          },
+          {
+            "value": 3000,
+            "id": 18
+          },
+          {
+            "value": 3000,
+            "id": 19
+          },
+          {
+            "value": 6000,
+            "id": 23
+          },
+          {
+            "value": 6000,
+            "id": 24
+          },
+          {
+            "value": 5500,
+            "id": 26
+          },
+          {
+            "value": 11,
+            "id": 27
+          }
+        ],
+        "curHp": 636907,
+        "commonSouls": [
+          {
+            "soulType": 9,
+            "soulLevel": 1,
+            "soulClass": 5,
+            "soulExp": 0
+          },
+          {
+            "soulType": 10,
+            "soulLevel": 1,
+            "soulClass": 5,
+            "soulExp": 0
+          }
+        ]
+      },
+      {
+        "heroDid": 1034,
+        "status": 2,
+        "rankLevel": 3,
+        "heroId": 50874,
+        "skills": [
+          {
+            "skillType": 1,
+            "skillDid": 1034101
+          },
+          {
+            "skillType": 1,
+            "skillDid": 1034201
+          },
+          {
+            "skillType": 1,
+            "skillDid": 1034301
+          },
+          {
+            "skillType": 2,
+            "skillDid": 1034401
+          },
+          {
+            "skillType": 2,
+            "skillDid": 1034402
+          },
+          {
+            "skillType": 2,
+            "skillDid": 0
+          }
+        ],
+        "curMp": 1000,
+        "soul": {
+          "soulType": 4,
+          "soulLevel": 1,
+          "soulClass": 2,
+          "soulExp": 0
+        },
+        "playerId": 48044,
+        "underwearDids": [],
+        "lockLevel": 1,
+        "attribute": [
+          {
+            "value": 1123327,
+            "id": 1
+          },
+          {
+            "value": 110537,
+            "id": 2
+          },
+          {
+            "value": 52627,
+            "id": 3
+          },
+          {
+            "value": 1000,
+            "id": 4
+          },
+          {
+            "value": 3000,
+            "id": 5
+          },
+          {
+            "value": 3000,
+            "id": 6
+          },
+          {
+            "value": 1500,
+            "id": 7
+          },
+          {
+            "value": 5570,
+            "id": 8
+          },
+          {
+            "value": 3000,
+            "id": 9
+          },
+          {
+            "value": 2785,
+            "id": 10
+          },
+          {
+            "value": 3000,
+            "id": 11
+          },
+          {
+            "value": 21000,
+            "id": 12
+          },
+          {
+            "value": 3000,
+            "id": 13
+          },
+          {
+            "value": 3000,
+            "id": 14
+          },
+          {
+            "value": 3000,
+            "id": 18
+          },
+          {
+            "value": 3000,
+            "id": 19
+          },
+          {
+            "value": 6000,
+            "id": 23
+          },
+          {
+            "value": 6000,
+            "id": 24
+          },
+          {
+            "value": 5500,
+            "id": 26
+          },
+          {
+            "value": 186,
+            "id": 27
+          }
+        ],
+        "curHp": 1123327,
+        "commonSouls": [
+          {
+            "soulType": 9,
+            "soulLevel": 1,
+            "soulClass": 5,
+            "soulExp": 0
+          },
+          {
+            "soulType": 10,
+            "soulLevel": 1,
+            "soulClass": 5,
+            "soulExp": 0
+          }
+        ]
+      }
+    ],
+    "battleType": 1,
+    "ourPlayerId": 48044,
+    "ourTeamFormation": [
+      {
+        "formationId": 68744,
+        "position": 1,
+        "heroId": 51469
+      },
+      {
+        "formationId": 65137,
+        "position": 2,
+        "heroId": 50870
+      },
+      {
+        "formationId": 68745,
+        "position": 3,
+        "heroId": 50874
+      },
+      {
+        "heroId": 0,
+        "position": 4
+      },
+      {
+        "heroId": 0,
+        "position": 5
+      },
+      {
+        "heroId": 0,
+        "position": 6
+      }
+    ],
+    "randomSeed": 445106,
+    "waveData": [
+      {
+        "waveNo": 1,
+        "enemyTeamFormation": [
+          {
+            "formationId": 0,
+            "heroDid": 1100111,
+            "position": 1,
+            "firstValue": 0,
+            "heroId": -1
+          },
+          {
+            "formationId": 0,
+            "heroDid": 1100112,
+            "position": 2,
+            "firstValue": 0,
+            "heroId": -2
+          },
+          {
+            "formationId": 0,
+            "heroDid": 1100113,
+            "position": 3,
+            "firstValue": 0,
+            "heroId": -3
+          }
+        ],
+        "bigRoundData": [
+          {
+            "bigRoundNo": 1,
+            "smallRoundData": [
+              {
+                "actionData": [
+                  {
+                    "heroId": 51469,
+                    "actionType": 3,
+                    "fireHeroId": 0
+                  },
+                  {
+                    "heroId": 50870,
+                    "actionType": 3,
+                    "fireHeroId": 0
+                  },
+                  {
+                    "heroId": 50874,
+                    "actionType": 3,
+                    "fireHeroId": 0
+                  },
+                  {
+                    "heroId": 50874,
+                    "actionType": 2,
+                    "fireHeroId": -1
+                  },
+                  {
+                    "heroId": 50870,
+                    "actionType": 2,
+                    "fireHeroId": -1
+                  },
+                  {
+                    "heroId": 51469,
+                    "actionType": 2,
+                    "fireHeroId": -1
+                  }
+                ],
+                "smallRoundNo": 1
+              },
+              {
+                "actionData": [
+                  {
+                    "heroId": -1,
+                    "actionType": 3,
+                    "fireHeroId": 0
+                  },
+                  {
+                    "heroId": -2,
+                    "actionType": 3,
+                    "fireHeroId": 0
+                  },
+                  {
+                    "heroId": -3,
+                    "actionType": 3,
+                    "fireHeroId": 0
+                  },
+                  {
+                    "heroId": -1,
+                    "actionType": 1,
+                    "fireHeroId": -1
+                  },
+                  {
+                    "heroId": -2,
+                    "actionType": 1,
+                    "fireHeroId": -1
+                  },
+                  {
+                    "heroId": -3,
+                    "actionType": 1,
+                    "fireHeroId": -1
+                  },
+                  {
+                    "heroId": -1,
+                    "actionType": 2,
+                    "fireHeroId": -1
+                  },
+                  {
+                    "heroId": -2,
+                    "actionType": 2,
+                    "fireHeroId": -1
+                  },
+                  {
+                    "heroId": -3,
+                    "actionType": 2,
+                    "fireHeroId": -1
+                  }
+                ],
+                "smallRoundNo": 2
+              }
+            ]
+          },
+          {
+            "bigRoundNo": 2,
+            "smallRoundData": [
+              {
+                "actionData": [
+                  {
+                    "heroId": 50874,
+                    "actionType": 1,
+                    "fireHeroId": -1
+                  },
+                  {
+                    "heroId": 50870,
+                    "actionType": 1,
+                    "fireHeroId": -1
+                  },
+                  {
+                    "heroId": 51469,
+                    "actionType": 1,
+                    "fireHeroId": -1
+                  },
+                  {
+                    "heroId": 50874,
+                    "actionType": 2,
+                    "fireHeroId": -2
+                  },
+                  {
+                    "heroId": 50870,
+                    "actionType": 2,
+                    "fireHeroId": -2
+                  },
+                  {
+                    "heroId": 51469,
+                    "actionType": 2,
+                    "fireHeroId": -2
+                  }
+                ],
+                "smallRoundNo": 1
+              },
+              {
+                "actionData": [
+                  {
+                    "heroId": -2,
+                    "actionType": 2,
+                    "fireHeroId": -2
+                  },
+                  {
+                    "heroId": -3,
+                    "actionType": 2,
+                    "fireHeroId": -2
+                  }
+                ],
+                "smallRoundNo": 2
+              }
+            ]
+          },
+          {
+            "bigRoundNo": 3,
+            "smallRoundData": [
+              {
+                "actionData": [
+                  {
+                    "heroId": 51469,
+                    "actionType": 3,
+                    "fireHeroId": 0
+                  },
+                  {
+                    "heroId": 50870,
+                    "actionType": 3,
+                    "fireHeroId": 0
+                  },
+                  {
+                    "heroId": 50874,
+                    "actionType": 3,
+                    "fireHeroId": 0
+                  },
+                  {
+                    "heroId": 50870,
+                    "actionType": 2,
+                    "fireHeroId": -2
+                  },
+                  {
+                    "heroId": 50874,
+                    "actionType": 2,
+                    "fireHeroId": -2
+                  },
+                  {
+                    "heroId": 51469,
+                    "actionType": 2,
+                    "fireHeroId": -2
+                  }
+                ],
+                "smallRoundNo": 1
+              },
+              {
+                "actionData": [
+                  {
+                    "heroId": -3,
+                    "actionType": 3,
+                    "fireHeroId": 0
+                  },
+                  {
+                    "heroId": -3,
+                    "actionType": 2,
+                    "fireHeroId": -3
+                  }
+                ],
+                "smallRoundNo": 2
+              }
+            ]
+          },
+          {
+            "bigRoundNo": 4,
+            "smallRoundData": [
+              {
+                "actionData": [
+                  {
+                    "heroId": 50870,
+                    "actionType": 2,
+                    "fireHeroId": -3
+                  },
+                  {
+                    "heroId": 50874,
+                    "actionType": 2,
+                    "fireHeroId": -3
+                  },
+                  {
+                    "heroId": 51469,
+                    "actionType": 2,
+                    "fireHeroId": -3
+                  }
+                ],
+                "smallRoundNo": 1
+              },
+              {
+                "actionData": [
+                  {
+                    "heroId": -3,
+                    "actionType": 1,
+                    "fireHeroId": -3
+                  },
+                  {
+                    "heroId": -3,
+                    "actionType": 2,
+                    "fireHeroId": -3
+                  }
+                ],
+                "smallRoundNo": 2
+              }
+            ]
+          },
+          {
+            "bigRoundNo": 5,
+            "smallRoundData": [
+              {
+                "actionData": [
+                  {
+                    "heroId": 51469,
+                    "actionType": 3,
+                    "fireHeroId": 0
+                  },
+                  {
+                    "heroId": 50870,
+                    "actionType": 3,
+                    "fireHeroId": 0
+                  },
+                  {
+                    "heroId": 50874,
+                    "actionType": 3,
+                    "fireHeroId": 0
+                  },
+                  {
+                    "heroId": 50870,
+                    "actionType": 2,
+                    "fireHeroId": -3
+                  },
+                  {
+                    "heroId": 50874,
+                    "actionType": 2,
+                    "fireHeroId": -3
+                  },
+                  {
+                    "heroId": 51469,
+                    "actionType": 2,
+                    "fireHeroId": -3
+                  }
+                ],
+                "smallRoundNo": 1
+              }
+            ]
+          }
+        ],
+        "heroStatistics": [
+          {
+            "healHp": 0,
+            "rankLevel": 2,
+            "heroId": -1,
+            "dmg": 1122389,
+            "controllRate": 0,
+            "curMp": 330,
+            "isOurHero": false,
+            "heroDid": 1100111,
+            "playerId": 0,
+            "lockLevel": 1,
+            "hpRate": 0,
+            "curHp": 0,
+            "outputDmg": 52568
+          },
+          {
+            "healHp": 0,
+            "rankLevel": 2,
+            "heroId": -2,
+            "dmg": 976705,
+            "controllRate": 0,
+            "curMp": 1000,
+            "isOurHero": false,
+            "heroDid": 1100112,
+            "playerId": 0,
+            "lockLevel": 1,
+            "hpRate": 0,
+            "curHp": 0,
+            "outputDmg": 55534
+          },
+          {
+            "healHp": 0,
+            "rankLevel": 2,
+            "heroId": -3,
+            "dmg": 941372,
+            "controllRate": 0,
+            "curMp": 550,
+            "isOurHero": false,
+            "heroDid": 1100113,
+            "playerId": 0,
+            "lockLevel": 1,
+            "hpRate": 0,
+            "curHp": 0,
+            "outputDmg": 102510
+          },
+          {
+            "healHp": 136798,
+            "rankLevel": 3,
+            "heroId": 50874,
+            "dmg": 42128,
+            "controllRate": 0,
+            "curMp": 1000,
+            "isOurHero": true,
+            "heroDid": 1034,
+            "playerId": 48044,
+            "lockLevel": 1,
+            "hpRate": 9742,
+            "curHp": 1094375,
+            "outputDmg": 1220467
+          },
+          {
+            "healHp": 136798,
+            "rankLevel": 3,
+            "heroId": 51469,
+            "dmg": 47162,
+            "controllRate": 0,
+            "curMp": 1000,
+            "isOurHero": true,
+            "heroDid": 1036,
+            "playerId": 48044,
+            "lockLevel": 1,
+            "hpRate": 9812,
+            "curHp": 1020833,
+            "outputDmg": 1578262
+          },
+          {
+            "healHp": 136798,
+            "rankLevel": 1,
+            "heroId": 50870,
+            "dmg": 121322,
+            "controllRate": 0,
+            "curMp": 738,
+            "isOurHero": true,
+            "heroDid": 1002,
+            "playerId": 48044,
+            "lockLevel": 1,
+            "hpRate": 9441,
+            "curHp": 601310,
+            "outputDmg": 241737
+          }
+        ],
+        "enemyHeros": [
+          {
+            "heroDid": 1100111,
+            "rankLevel": 2,
+            "heroId": -1,
+            "skills": [
+              {
+                "skillType": 1,
+                "skillDid": 1012101
+              },
+              {
+                "skillType": 1,
+                "skillDid": 1012201
+              },
+              {
+                "skillType": 1,
+                "skillDid": 1012301
+              },
+              {
+                "skillType": 2,
+                "skillDid": 1012401
+              },
+              {
+                "skillType": 2,
+                "skillDid": 1012403
+              }
+            ],
+            "curMp": 1000,
+            "soul": {
+              "soulClass": 4,
+              "soulLevel": 1,
+              "soulType": 7
+            },
+            "lockLevel": 1,
+            "attribute": [
+              {
+                "value": 917880,
+                "id": 1
+              },
+              {
+                "value": 1000,
+                "id": 4
+              },
+              {
+                "value": 26006,
+                "id": 2
+              },
+              {
+                "value": 19348,
+                "id": 3
+              },
+              {
+                "value": 4670,
+                "id": 5
+              },
+              {
+                "value": 3000,
+                "id": 6
+              },
+              {
+                "value": 2335,
+                "id": 7
+              },
+              {
+                "value": 8000,
+                "id": 8
+              },
+              {
+                "value": 3000,
+                "id": 9
+              },
+              {
+                "value": 1500,
+                "id": 10
+              },
+              {
+                "value": 3000,
+                "id": 11
+              },
+              {
+                "value": 3000,
+                "id": 12
+              },
+              {
+                "value": 3000,
+                "id": 13
+              },
+              {
+                "value": 3000,
+                "id": 14
+              },
+              {
+                "value": 0,
+                "id": 15
+              },
+              {
+                "value": 0,
+                "id": 16
+              },
+              {
+                "value": 0,
+                "id": 17
+              },
+              {
+                "value": 3000,
+                "id": 18
+              },
+              {
+                "value": 3000,
+                "id": 19
+              },
+              {
+                "value": 0,
+                "id": 20
+              },
+              {
+                "value": 0,
+                "id": 21
+              },
+              {
+                "id": 22
+              },
+              {
+                "value": 0,
+                "id": 23
+              },
+              {
+                "value": 0,
+                "id": 24
+              },
+              {
+                "value": 0,
+                "id": 26
+              },
+              {
+                "value": 1,
+                "id": 27
+              }
+            ],
+            "curHp": 917880,
+            "playerId": 0
+          },
+          {
+            "heroDid": 1100112,
+            "rankLevel": 2,
+            "heroId": -2,
+            "skills": [
+              {
+                "skillType": 1,
+                "skillDid": 1012101
+              },
+              {
+                "skillType": 1,
+                "skillDid": 1012201
+              },
+              {
+                "skillType": 1,
+                "skillDid": 1012301
+              },
+              {
+                "skillType": 2,
+                "skillDid": 1012401
+              },
+              {
+                "skillType": 2,
+                "skillDid": 1012403
+              }
+            ],
+            "curMp": 1000,
+            "soul": {
+              "soulClass": 4,
+              "soulLevel": 1,
+              "soulType": 7
+            },
+            "lockLevel": 1,
+            "attribute": [
+              {
+                "value": 917880,
+                "id": 1
+              },
+              {
+                "value": 1000,
+                "id": 4
+              },
+              {
+                "value": 26006,
+                "id": 2
+              },
+              {
+                "value": 20302,
+                "id": 3
+              },
+              {
+                "value": 3000,
+                "id": 5
+              },
+              {
+                "value": 3000,
+                "id": 6
+              },
+              {
+                "value": 1500,
+                "id": 7
+              },
+              {
+                "value": 8000,
+                "id": 8
+              },
+              {
+                "value": 4670,
+                "id": 9
+              },
+              {
+                "value": 1500,
+                "id": 10
+              },
+              {
+                "value": 3000,
+                "id": 11
+              },
+              {
+                "value": 3000,
+                "id": 12
+              },
+              {
+                "value": 3835,
+                "id": 13
+              },
+              {
+                "value": 3000,
+                "id": 14
+              },
+              {
+                "value": 0,
+                "id": 15
+              },
+              {
+                "value": 0,
+                "id": 16
+              },
+              {
+                "value": 0,
+                "id": 17
+              },
+              {
+                "value": 3000,
+                "id": 18
+              },
+              {
+                "value": 3000,
+                "id": 19
+              },
+              {
+                "value": 0,
+                "id": 20
+              },
+              {
+                "value": 0,
+                "id": 21
+              },
+              {
+                "id": 22
+              },
+              {
+                "value": 0,
+                "id": 23
+              },
+              {
+                "value": 0,
+                "id": 24
+              },
+              {
+                "value": 0,
+                "id": 26
+              },
+              {
+                "value": 1,
+                "id": 27
+              }
+            ],
+            "curHp": 917880,
+            "playerId": 0
+          },
+          {
+            "heroDid": 1100113,
+            "rankLevel": 2,
+            "heroId": -3,
+            "skills": [
+              {
+                "skillType": 1,
+                "skillDid": 1012101
+              },
+              {
+                "skillType": 1,
+                "skillDid": 1012201
+              },
+              {
+                "skillType": 1,
+                "skillDid": 1012301
+              },
+              {
+                "skillType": 2,
+                "skillDid": 1012401
+              },
+              {
+                "skillType": 2,
+                "skillDid": 1012403
+              }
+            ],
+            "curMp": 1000,
+            "soul": {
+              "soulClass": 4,
+              "soulLevel": 1,
+              "soulType": 7
+            },
+            "lockLevel": 1,
+            "attribute": [
+              {
+                "value": 917880,
+                "id": 1
+              },
+              {
+                "value": 1000,
+                "id": 4
+              },
+              {
+                "value": 26006,
+                "id": 2
+              },
+              {
+                "value": 29717,
+                "id": 3
+              },
+              {
+                "value": 3000,
+                "id": 5
+              },
+              {
+                "value": 3000,
+                "id": 6
+              },
+              {
+                "value": 1500,
+                "id": 7
+              },
+              {
+                "value": 8670,
+                "id": 8
+              },
+              {
+                "value": 3000,
+                "id": 9
+              },
+              {
+                "value": 2335,
+                "id": 10
+              },
+              {
+                "value": 3000,
+                "id": 11
+              },
+              {
+                "value": 3000,
+                "id": 12
+              },
+              {
+                "value": 3000,
+                "id": 13
+              },
+              {
+                "value": 3000,
+                "id": 14
+              },
+              {
+                "value": 0,
+                "id": 15
+              },
+              {
+                "value": 0,
+                "id": 16
+              },
+              {
+                "value": 0,
+                "id": 17
+              },
+              {
+                "value": 3000,
+                "id": 18
+              },
+              {
+                "value": 3000,
+                "id": 19
+              },
+              {
+                "value": 0,
+                "id": 20
+              },
+              {
+                "value": 0,
+                "id": 21
+              },
+              {
+                "id": 22
+              },
+              {
+                "value": 0,
+                "id": 23
+              },
+              {
+                "value": 0,
+                "id": 24
+              },
+              {
+                "value": 0,
+                "id": 26
+              },
+              {
+                "value": 1,
+                "id": 27
+              }
+            ],
+            "curHp": 917880,
+            "playerId": 0
+          }
+        ]
+      },
+      {
+        "waveNo": 2,
+        "enemyTeamFormation": [
+          {
+            "formationId": 0,
+            "heroDid": 1100121,
+            "position": 1,
+            "firstValue": 0,
+            "heroId": -1
+          },
+          {
+            "formationId": 0,
+            "heroDid": 1100122,
+            "position": 2,
+            "firstValue": 0,
+            "heroId": -2
+          },
+          {
+            "formationId": 0,
+            "heroDid": 1100123,
+            "position": 3,
+            "firstValue": 0,
+            "heroId": -3
+          }
+        ],
+        "bigRoundData": [
+          {
+            "bigRoundNo": 1,
+            "smallRoundData": [
+              {
+                "actionData": [
+                  {
+                    "heroId": 51469,
+                    "actionType": 3,
+                    "fireHeroId": 0
+                  },
+                  {
+                    "heroId": 50870,
+                    "actionType": 3,
+                    "fireHeroId": 0
+                  },
+                  {
+                    "heroId": 50874,
+                    "actionType": 3,
+                    "fireHeroId": 0
+                  },
+                  {
+                    "heroId": 50874,
+                    "actionType": 1,
+                    "fireHeroId": -1
+                  },
+                  {
+                    "heroId": 51469,
+                    "actionType": 1,
+                    "fireHeroId": -1
+                  },
+                  {
+                    "heroId": 50874,
+                    "actionType": 2,
+                    "fireHeroId": -1
+                  },
+                  {
+                    "heroId": 50870,
+                    "actionType": 2,
+                    "fireHeroId": -2
+                  },
+                  {
+                    "heroId": 51469,
+                    "actionType": 2,
+                    "fireHeroId": -2
+                  }
+                ],
+                "smallRoundNo": 1
+              },
+              {
+                "actionData": [
+                  {
+                    "heroId": -2,
+                    "actionType": 3,
+                    "fireHeroId": 0
+                  },
+                  {
+                    "heroId": -3,
+                    "actionType": 3,
+                    "fireHeroId": 0
+                  },
+                  {
+                    "heroId": -2,
+                    "actionType": 1,
+                    "fireHeroId": -2
+                  },
+                  {
+                    "heroId": -3,
+                    "actionType": 1,
+                    "fireHeroId": -2
+                  },
+                  {
+                    "heroId": -2,
+                    "actionType": 2,
+                    "fireHeroId": -2
+                  },
+                  {
+                    "heroId": -3,
+                    "actionType": 2,
+                    "fireHeroId": -2
+                  }
+                ],
+                "smallRoundNo": 2
+              }
+            ]
+          },
+          {
+            "bigRoundNo": 2,
+            "smallRoundData": [
+              {
+                "actionData": [
+                  {
+                    "heroId": 50874,
+                    "actionType": 2,
+                    "fireHeroId": -2
+                  },
+                  {
+                    "heroId": 50870,
+                    "actionType": 2,
+                    "fireHeroId": -2
+                  },
+                  {
+                    "heroId": 51469,
+                    "actionType": 2,
+                    "fireHeroId": -2
+                  }
+                ],
+                "smallRoundNo": 1
+              },
+              {
+                "actionData": [
+                  {
+                    "heroId": -3,
+                    "actionType": 2,
+                    "fireHeroId": -3
+                  }
+                ],
+                "smallRoundNo": 2
+              }
+            ]
+          },
+          {
+            "bigRoundNo": 3,
+            "smallRoundData": [
+              {
+                "actionData": [
+                  {
+                    "heroId": 51469,
+                    "actionType": 3,
+                    "fireHeroId": 0
+                  },
+                  {
+                    "heroId": 50870,
+                    "actionType": 3,
+                    "fireHeroId": 0
+                  },
+                  {
+                    "heroId": 50874,
+                    "actionType": 3,
+                    "fireHeroId": 0
+                  },
+                  {
+                    "heroId": 50870,
+                    "actionType": 2,
+                    "fireHeroId": -3
+                  },
+                  {
+                    "heroId": 51469,
+                    "actionType": 2,
+                    "fireHeroId": -3
+                  },
+                  {
+                    "heroId": 50874,
+                    "actionType": 2,
+                    "fireHeroId": -3
+                  }
+                ],
+                "smallRoundNo": 1
+              }
+            ]
+          }
+        ],
+        "heroStatistics": [
+          {
+            "healHp": 0,
+            "rankLevel": 2,
+            "heroId": -1,
+            "dmg": 1006453,
+            "controllRate": 0,
+            "curMp": 1000,
+            "isOurHero": false,
+            "heroDid": 1100121,
+            "playerId": 0,
+            "lockLevel": 1,
+            "hpRate": 0,
+            "curHp": 0,
+            "outputDmg": 0
+          },
+          {
+            "healHp": 0,
+            "rankLevel": 2,
+            "heroId": -2,
+            "dmg": 982156,
+            "controllRate": 0,
+            "curMp": 450,
+            "isOurHero": false,
+            "heroDid": 1100122,
+            "playerId": 0,
+            "lockLevel": 1,
+            "hpRate": 0,
+            "curHp": 0,
+            "outputDmg": 52568
+          },
+          {
+            "healHp": 0,
+            "rankLevel": 2,
+            "heroId": -3,
+            "dmg": 1114899,
+            "controllRate": 0,
+            "curMp": 810,
+            "isOurHero": false,
+            "heroDid": 1100123,
+            "playerId": 0,
+            "lockLevel": 1,
+            "hpRate": 0,
+            "curHp": 0,
+            "outputDmg": 62893
+          },
+          {
+            "healHp": 136798,
+            "rankLevel": 3,
+            "heroId": 50874,
+            "dmg": 59232,
+            "controllRate": 0,
+            "curMp": 1000,
+            "isOurHero": true,
+            "heroDid": 1034,
+            "playerId": 48044,
+            "lockLevel": 1,
+            "hpRate": 9534,
+            "curHp": 1071031,
+            "outputDmg": 2530165
+          },
+          {
+            "healHp": 136798,
+            "rankLevel": 3,
+            "heroId": 51469,
+            "dmg": 82129,
+            "controllRate": 0,
+            "curMp": 851,
+            "isOurHero": true,
+            "heroDid": 1036,
+            "playerId": 48044,
+            "lockLevel": 1,
+            "hpRate": 9385,
+            "curHp": 976506,
+            "outputDmg": 3182981
+          },
+          {
+            "healHp": 136798,
+            "rankLevel": 1,
+            "heroId": 50870,
+            "dmg": 184712,
+            "controllRate": 0,
+            "curMp": 1000,
+            "isOurHero": true,
+            "heroDid": 1002,
+            "playerId": 48044,
+            "lockLevel": 1,
+            "hpRate": 8298,
+            "curHp": 528560,
+            "outputDmg": 430828
+          }
+        ],
+        "enemyHeros": [
+          {
+            "heroDid": 1100121,
+            "rankLevel": 2,
+            "heroId": -1,
+            "skills": [
+              {
+                "skillType": 1,
+                "skillDid": 1012101
+              },
+              {
+                "skillType": 1,
+                "skillDid": 1012201
+              },
+              {
+                "skillType": 1,
+                "skillDid": 1012301
+              },
+              {
+                "skillType": 2,
+                "skillDid": 1012401
+              },
+              {
+                "skillType": 2,
+                "skillDid": 1012403
+              }
+            ],
+            "curMp": 1000,
+            "soul": {
+              "soulClass": 4,
+              "soulLevel": 0,
+              "soulType": 7
+            },
+            "lockLevel": 1,
+            "attribute": [
+              {
+                "value": 917880,
+                "id": 1
+              },
+              {
+                "value": 1000,
+                "id": 4
+              },
+              {
+                "value": 26006,
+                "id": 2
+              },
+              {
+                "value": 29717,
+                "id": 3
+              },
+              {
+                "value": 3000,
+                "id": 5
+              },
+              {
+                "value": 3000,
+                "id": 6
+              },
+              {
+                "value": 1500,
+                "id": 7
+              },
+              {
+                "value": 4670,
+                "id": 8
+              },
+              {
+                "value": 3000,
+                "id": 9
+              },
+              {
+                "value": 2335,
+                "id": 10
+              },
+              {
+                "value": 3000,
+                "id": 11
+              },
+              {
+                "value": 3000,
+                "id": 12
+              },
+              {
+                "value": 3000,
+                "id": 13
+              },
+              {
+                "value": 3000,
+                "id": 14
+              },
+              {
+                "value": 0,
+                "id": 15
+              },
+              {
+                "value": 0,
+                "id": 16
+              },
+              {
+                "value": 0,
+                "id": 17
+              },
+              {
+                "value": 3000,
+                "id": 18
+              },
+              {
+                "value": 3000,
+                "id": 19
+              },
+              {
+                "value": 0,
+                "id": 20
+              },
+              {
+                "value": 0,
+                "id": 21
+              },
+              {
+                "id": 22
+              },
+              {
+                "value": 0,
+                "id": 23
+              },
+              {
+                "value": 0,
+                "id": 24
+              },
+              {
+                "value": 0,
+                "id": 26
+              },
+              {
+                "value": 1,
+                "id": 27
+              }
+            ],
+            "curHp": 917880,
+            "playerId": 0
+          },
+          {
+            "heroDid": 1100122,
+            "rankLevel": 2,
+            "heroId": -2,
+            "skills": [
+              {
+                "skillType": 1,
+                "skillDid": 1012101
+              },
+              {
+                "skillType": 1,
+                "skillDid": 1012201
+              },
+              {
+                "skillType": 1,
+                "skillDid": 1012301
+              },
+              {
+                "skillType": 2,
+                "skillDid": 1012401
+              },
+              {
+                "skillType": 2,
+                "skillDid": 1012403
+              }
+            ],
+            "curMp": 1000,
+            "soul": {
+              "soulClass": 4,
+              "soulLevel": 0,
+              "soulType": 7
+            },
+            "lockLevel": 1,
+            "attribute": [
+              {
+                "value": 917880,
+                "id": 1
+              },
+              {
+                "value": 1000,
+                "id": 4
+              },
+              {
+                "value": 26006,
+                "id": 2
+              },
+              {
+                "value": 29717,
+                "id": 3
+              },
+              {
+                "value": 3000,
+                "id": 5
+              },
+              {
+                "value": 3000,
+                "id": 6
+              },
+              {
+                "value": 1500,
+                "id": 7
+              },
+              {
+                "value": 4670,
+                "id": 8
+              },
+              {
+                "value": 3000,
+                "id": 9
+              },
+              {
+                "value": 2335,
+                "id": 10
+              },
+              {
+                "value": 3000,
+                "id": 11
+              },
+              {
+                "value": 3000,
+                "id": 12
+              },
+              {
+                "value": 3000,
+                "id": 13
+              },
+              {
+                "value": 3000,
+                "id": 14
+              },
+              {
+                "value": 0,
+                "id": 15
+              },
+              {
+                "value": 0,
+                "id": 16
+              },
+              {
+                "value": 0,
+                "id": 17
+              },
+              {
+                "value": 3000,
+                "id": 18
+              },
+              {
+                "value": 3000,
+                "id": 19
+              },
+              {
+                "value": 0,
+                "id": 20
+              },
+              {
+                "value": 0,
+                "id": 21
+              },
+              {
+                "id": 22
+              },
+              {
+                "value": 0,
+                "id": 23
+              },
+              {
+                "value": 0,
+                "id": 24
+              },
+              {
+                "value": 0,
+                "id": 26
+              },
+              {
+                "value": 1,
+                "id": 27
+              }
+            ],
+            "curHp": 917880,
+            "playerId": 0
+          },
+          {
+            "heroDid": 1100123,
+            "rankLevel": 2,
+            "heroId": -3,
+            "skills": [
+              {
+                "skillType": 1,
+                "skillDid": 1012101
+              },
+              {
+                "skillType": 1,
+                "skillDid": 1012201
+              },
+              {
+                "skillType": 1,
+                "skillDid": 1012301
+              },
+              {
+                "skillType": 2,
+                "skillDid": 1012401
+              },
+              {
+                "skillType": 2,
+                "skillDid": 1012403
+              }
+            ],
+            "curMp": 1000,
+            "soul": {
+              "soulClass": 4,
+              "soulLevel": 0,
+              "soulType": 7
+            },
+            "lockLevel": 1,
+            "attribute": [
+              {
+                "value": 917880,
+                "id": 1
+              },
+              {
+                "value": 1000,
+                "id": 4
+              },
+              {
+                "value": 26006,
+                "id": 2
+              },
+              {
+                "value": 27087,
+                "id": 3
+              },
+              {
+                "value": 4670,
+                "id": 5
+              },
+              {
+                "value": 3000,
+                "id": 6
+              },
+              {
+                "value": 2335,
+                "id": 7
+              },
+              {
+                "value": 3000,
+                "id": 8
+              },
+              {
+                "value": 3000,
+                "id": 9
+              },
+              {
+                "value": 1500,
+                "id": 10
+              },
+              {
+                "value": 3000,
+                "id": 11
+              },
+              {
+                "value": 3000,
+                "id": 12
+              },
+              {
+                "value": 3000,
+                "id": 13
+              },
+              {
+                "value": 3000,
+                "id": 14
+              },
+              {
+                "value": 0,
+                "id": 15
+              },
+              {
+                "value": 0,
+                "id": 16
+              },
+              {
+                "value": 0,
+                "id": 17
+              },
+              {
+                "value": 3000,
+                "id": 18
+              },
+              {
+                "value": 3000,
+                "id": 19
+              },
+              {
+                "value": 0,
+                "id": 20
+              },
+              {
+                "value": 0,
+                "id": 21
+              },
+              {
+                "id": 22
+              },
+              {
+                "value": 0,
+                "id": 23
+              },
+              {
+                "value": 0,
+                "id": 24
+              },
+              {
+                "value": 0,
+                "id": 26
+              },
+              {
+                "value": 1,
+                "id": 27
+              }
+            ],
+            "curHp": 917880,
+            "playerId": 0
+          }
+        ]
+      },
+      {
+        "waveNo": 3,
+        "enemyTeamFormation": [
+          {
+            "formationId": 0,
+            "heroDid": 1100131,
+            "position": 1,
+            "firstValue": 0,
+            "heroId": -1
+          },
+          {
+            "formationId": 0,
+            "heroDid": 1100132,
+            "position": 2,
+            "firstValue": 0,
+            "heroId": -2
+          },
+          {
+            "formationId": 0,
+            "heroDid": 1100133,
+            "position": 3,
+            "firstValue": 0,
+            "heroId": -3
+          }
+        ],
+        "bigRoundData": [
+          {
+            "bigRoundNo": 1,
+            "smallRoundData": [
+              {
+                "actionData": [
+                  {
+                    "heroId": 51469,
+                    "actionType": 3,
+                    "fireHeroId": 0
+                  },
+                  {
+                    "heroId": 50870,
+                    "actionType": 3,
+                    "fireHeroId": 0
+                  },
+                  {
+                    "heroId": 50874,
+                    "actionType": 3,
+                    "fireHeroId": 0
+                  },
+                  {
+                    "heroId": 50874,
+                    "actionType": 2,
+                    "fireHeroId": -1
+                  },
+                  {
+                    "heroId": 50870,
+                    "actionType": 2,
+                    "fireHeroId": -1
+                  },
+                  {
+                    "heroId": 51469,
+                    "actionType": 2,
+                    "fireHeroId": -1
+                  }
+                ],
+                "smallRoundNo": 1
+              },
+              {
+                "actionData": [
+                  {
+                    "heroId": -1,
+                    "actionType": 3,
+                    "fireHeroId": 0
+                  },
+                  {
+                    "heroId": -2,
+                    "actionType": 3,
+                    "fireHeroId": 0
+                  },
+                  {
+                    "heroId": -3,
+                    "actionType": 3,
+                    "fireHeroId": 0
+                  },
+                  {
+                    "heroId": -1,
+                    "actionType": 2,
+                    "fireHeroId": -1
+                  },
+                  {
+                    "heroId": -2,
+                    "actionType": 2,
+                    "fireHeroId": -1
+                  },
+                  {
+                    "heroId": -3,
+                    "actionType": 2,
+                    "fireHeroId": -1
+                  }
+                ],
+                "smallRoundNo": 2
+              }
+            ]
+          },
+          {
+            "bigRoundNo": 2,
+            "smallRoundData": [
+              {
+                "actionData": [
+                  {
+                    "heroId": 50870,
+                    "actionType": 2,
+                    "fireHeroId": -1
+                  },
+                  {
+                    "heroId": 50874,
+                    "actionType": 2,
+                    "fireHeroId": -1
+                  },
+                  {
+                    "heroId": 51469,
+                    "actionType": 2,
+                    "fireHeroId": -1
+                  }
+                ],
+                "smallRoundNo": 1
+              },
+              {
+                "actionData": [
+                  {
+                    "heroId": -2,
+                    "actionType": 2,
+                    "fireHeroId": -2
+                  },
+                  {
+                    "heroId": -3,
+                    "actionType": 2,
+                    "fireHeroId": -2
+                  }
+                ],
+                "smallRoundNo": 2
+              }
+            ]
+          },
+          {
+            "bigRoundNo": 3,
+            "smallRoundData": [
+              {
+                "actionData": [
+                  {
+                    "heroId": 51469,
+                    "actionType": 3,
+                    "fireHeroId": 0
+                  },
+                  {
+                    "heroId": 50870,
+                    "actionType": 3,
+                    "fireHeroId": 0
+                  },
+                  {
+                    "heroId": 50874,
+                    "actionType": 3,
+                    "fireHeroId": 0
+                  },
+                  {
+                    "heroId": 51469,
+                    "actionType": 2,
+                    "fireHeroId": -2
+                  },
+                  {
+                    "heroId": 50874,
+                    "actionType": 2,
+                    "fireHeroId": -2
+                  },
+                  {
+                    "heroId": 50870,
+                    "actionType": 2,
+                    "fireHeroId": -3
+                  }
+                ],
+                "smallRoundNo": 1
+              },
+              {
+                "actionData": [
+                  {
+                    "heroId": -3,
+                    "actionType": 3,
+                    "fireHeroId": 0
+                  },
+                  {
+                    "heroId": -3,
+                    "actionType": 2,
+                    "fireHeroId": -3
+                  }
+                ],
+                "smallRoundNo": 2
+              }
+            ]
+          },
+          {
+            "bigRoundNo": 4,
+            "smallRoundData": [
+              {
+                "actionData": [
+                  {
+                    "heroId": 50874,
+                    "actionType": 2,
+                    "fireHeroId": -3
+                  },
+                  {
+                    "heroId": 50870,
+                    "actionType": 2,
+                    "fireHeroId": -3
+                  },
+                  {
+                    "heroId": 51469,
+                    "actionType": 2,
+                    "fireHeroId": -3
+                  }
+                ],
+                "smallRoundNo": 1
+              },
+              {
+                "actionData": [
+                  {
+                    "heroId": -3,
+                    "actionType": 2,
+                    "fireHeroId": -3
+                  }
+                ],
+                "smallRoundNo": 2
+              }
+            ]
+          },
+          {
+            "bigRoundNo": 5,
+            "smallRoundData": [
+              {
+                "actionData": [
+                  {
+                    "heroId": 51469,
+                    "actionType": 3,
+                    "fireHeroId": 0
+                  },
+                  {
+                    "heroId": 50870,
+                    "actionType": 3,
+                    "fireHeroId": 0
+                  },
+                  {
+                    "heroId": 50874,
+                    "actionType": 3,
+                    "fireHeroId": 0
+                  },
+                  {
+                    "heroId": 50874,
+                    "actionType": 2,
+                    "fireHeroId": -3
+                  }
+                ],
+                "smallRoundNo": 1
+              }
+            ]
+          }
+        ],
+        "heroStatistics": [
+          {
+            "healHp": 0,
+            "rankLevel": 2,
+            "heroId": -1,
+            "dmg": 1174352,
+            "controllRate": 0,
+            "curMp": 970,
+            "isOurHero": false,
+            "heroDid": 1100131,
+            "playerId": 0,
+            "lockLevel": 1,
+            "hpRate": 0,
+            "curHp": 0,
+            "outputDmg": 9477
+          },
+          {
+            "healHp": 0,
+            "rankLevel": 2,
+            "heroId": -2,
+            "dmg": 1021752,
+            "controllRate": 0,
+            "curMp": 1000,
+            "isOurHero": false,
+            "heroDid": 1100132,
+            "playerId": 0,
+            "lockLevel": 1,
+            "hpRate": 0,
+            "curHp": 0,
+            "outputDmg": 17323
+          },
+          {
+            "healHp": 0,
+            "rankLevel": 2,
+            "heroId": -3,
+            "dmg": 1136919,
+            "controllRate": 0,
+            "curMp": 1000,
+            "isOurHero": false,
+            "heroDid": 1100133,
+            "playerId": 0,
+            "lockLevel": 1,
+            "hpRate": 0,
+            "curHp": 0,
+            "outputDmg": 34646
+          },
+          {
+            "healHp": 136798,
+            "rankLevel": 3,
+            "heroId": 50874,
+            "dmg": 59232,
+            "controllRate": 0,
+            "curMp": 1000,
+            "isOurHero": true,
+            "heroDid": 1034,
+            "playerId": 48044,
+            "lockLevel": 1,
+            "hpRate": 9534,
+            "curHp": 1071031,
+            "outputDmg": 4306289
+          },
+          {
+            "healHp": 136798,
+            "rankLevel": 3,
+            "heroId": 51469,
+            "dmg": 143575,
+            "controllRate": 0,
+            "curMp": 1000,
+            "isOurHero": true,
+            "heroDid": 1036,
+            "playerId": 48044,
+            "lockLevel": 1,
+            "hpRate": 8675,
+            "curHp": 902580,
+            "outputDmg": 4459154
+          },
+          {
+            "healHp": 136798,
+            "rankLevel": 1,
+            "heroId": 50870,
+            "dmg": 184712,
+            "controllRate": 0,
+            "curMp": 1000,
+            "isOurHero": true,
+            "heroDid": 1002,
+            "playerId": 48044,
+            "lockLevel": 1,
+            "hpRate": 8298,
+            "curHp": 528560,
+            "outputDmg": 711554
+          }
+        ],
+        "enemyHeros": [
+          {
+            "heroDid": 1100131,
+            "rankLevel": 2,
+            "heroId": -1,
+            "skills": [
+              {
+                "skillType": 1,
+                "skillDid": 1012101
+              },
+              {
+                "skillType": 1,
+                "skillDid": 1012101
+              },
+              {
+                "skillType": 1,
+                "skillDid": 0
+              },
+              {
+                "skillType": 2,
+                "skillDid": 1001401
+              },
+              {
+                "skillType": 2,
+                "skillDid": 1001403
+              }
+            ],
+            "curMp": 1000,
+            "soul": {
+              "soulClass": 4,
+              "soulLevel": 0,
+              "soulType": 7
+            },
+            "lockLevel": 1,
+            "attribute": [
+              {
+                "value": 917880,
+                "id": 1
+              },
+              {
+                "value": 1000,
+                "id": 4
+              },
+              {
+                "value": 26006,
+                "id": 2
+              },
+              {
+                "value": 28423,
+                "id": 3
+              },
+              {
+                "value": 3000,
+                "id": 5
+              },
+              {
+                "value": 3000,
+                "id": 6
+              },
+              {
+                "value": 1500,
+                "id": 7
+              },
+              {
+                "value": 3000,
+                "id": 8
+              },
+              {
+                "value": 4670,
+                "id": 9
+              },
+              {
+                "value": 1500,
+                "id": 10
+              },
+              {
+                "value": 3000,
+                "id": 11
+              },
+              {
+                "value": 3000,
+                "id": 12
+              },
+              {
+                "value": 3835,
+                "id": 13
+              },
+              {
+                "value": 3000,
+                "id": 14
+              },
+              {
+                "value": 0,
+                "id": 15
+              },
+              {
+                "value": 0,
+                "id": 16
+              },
+              {
+                "value": 0,
+                "id": 17
+              },
+              {
+                "value": 3000,
+                "id": 18
+              },
+              {
+                "value": 3000,
+                "id": 19
+              },
+              {
+                "value": 0,
+                "id": 20
+              },
+              {
+                "value": 0,
+                "id": 21
+              },
+              {
+                "id": 22
+              },
+              {
+                "value": 0,
+                "id": 23
+              },
+              {
+                "value": 0,
+                "id": 24
+              },
+              {
+                "value": 0,
+                "id": 26
+              },
+              {
+                "value": 1,
+                "id": 27
+              }
+            ],
+            "curHp": 917880,
+            "playerId": 0
+          },
+          {
+            "heroDid": 1100132,
+            "rankLevel": 2,
+            "heroId": -2,
+            "skills": [
+              {
+                "skillType": 1,
+                "skillDid": 1012101
+              },
+              {
+                "skillType": 1,
+                "skillDid": 1012101
+              },
+              {
+                "skillType": 1,
+                "skillDid": 0
+              },
+              {
+                "skillType": 2,
+                "skillDid": 1001401
+              },
+              {
+                "skillType": 2,
+                "skillDid": 1001403
+              }
+            ],
+            "curMp": 1000,
+            "soul": {
+              "soulClass": 4,
+              "soulLevel": 0,
+              "soulType": 7
+            },
+            "lockLevel": 1,
+            "attribute": [
+              {
+                "value": 917880,
+                "id": 1
+              },
+              {
+                "value": 1000,
+                "id": 4
+              },
+              {
+                "value": 26006,
+                "id": 2
+              },
+              {
+                "value": 28423,
+                "id": 3
+              },
+              {
+                "value": 3000,
+                "id": 5
+              },
+              {
+                "value": 3000,
+                "id": 6
+              },
+              {
+                "value": 1500,
+                "id": 7
+              },
+              {
+                "value": 3000,
+                "id": 8
+              },
+              {
+                "value": 4670,
+                "id": 9
+              },
+              {
+                "value": 1500,
+                "id": 10
+              },
+              {
+                "value": 3000,
+                "id": 11
+              },
+              {
+                "value": 3000,
+                "id": 12
+              },
+              {
+                "value": 3835,
+                "id": 13
+              },
+              {
+                "value": 3000,
+                "id": 14
+              },
+              {
+                "value": 0,
+                "id": 15
+              },
+              {
+                "value": 0,
+                "id": 16
+              },
+              {
+                "value": 0,
+                "id": 17
+              },
+              {
+                "value": 3000,
+                "id": 18
+              },
+              {
+                "value": 3000,
+                "id": 19
+              },
+              {
+                "value": 0,
+                "id": 20
+              },
+              {
+                "value": 0,
+                "id": 21
+              },
+              {
+                "id": 22
+              },
+              {
+                "value": 0,
+                "id": 23
+              },
+              {
+                "value": 0,
+                "id": 24
+              },
+              {
+                "value": 0,
+                "id": 26
+              },
+              {
+                "value": 1,
+                "id": 27
+              }
+            ],
+            "curHp": 917880,
+            "playerId": 0
+          },
+          {
+            "heroDid": 1100133,
+            "rankLevel": 2,
+            "heroId": -3,
+            "skills": [
+              {
+                "skillType": 1,
+                "skillDid": 1012101
+              },
+              {
+                "skillType": 1,
+                "skillDid": 1012101
+              },
+              {
+                "skillType": 1,
+                "skillDid": 0
+              },
+              {
+                "skillType": 2,
+                "skillDid": 1001401
+              },
+              {
+                "skillType": 2,
+                "skillDid": 1001403
+              }
+            ],
+            "curMp": 1000,
+            "soul": {
+              "soulClass": 4,
+              "soulLevel": 0,
+              "soulType": 7
+            },
+            "lockLevel": 1,
+            "attribute": [
+              {
+                "value": 917880,
+                "id": 1
+              },
+              {
+                "value": 1000,
+                "id": 4
+              },
+              {
+                "value": 26006,
+                "id": 2
+              },
+              {
+                "value": 28423,
+                "id": 3
+              },
+              {
+                "value": 3000,
+                "id": 5
+              },
+              {
+                "value": 3000,
+                "id": 6
+              },
+              {
+                "value": 1500,
+                "id": 7
+              },
+              {
+                "value": 3000,
+                "id": 8
+              },
+              {
+                "value": 4670,
+                "id": 9
+              },
+              {
+                "value": 1500,
+                "id": 10
+              },
+              {
+                "value": 3000,
+                "id": 11
+              },
+              {
+                "value": 3000,
+                "id": 12
+              },
+              {
+                "value": 3835,
+                "id": 13
+              },
+              {
+                "value": 3000,
+                "id": 14
+              },
+              {
+                "value": 0,
+                "id": 15
+              },
+              {
+                "value": 0,
+                "id": 16
+              },
+              {
+                "value": 0,
+                "id": 17
+              },
+              {
+                "value": 3000,
+                "id": 18
+              },
+              {
+                "value": 3000,
+                "id": 19
+              },
+              {
+                "value": 0,
+                "id": 20
+              },
+              {
+                "value": 0,
+                "id": 21
+              },
+              {
+                "id": 22
+              },
+              {
+                "value": 0,
+                "id": 23
+              },
+              {
+                "value": 0,
+                "id": 24
+              },
+              {
+                "value": 0,
+                "id": 26
+              },
+              {
+                "value": 1,
+                "id": 27
+              }
+            ],
+            "curHp": 917880,
+            "playerId": 0
+          }
+        ]
+      }
+    ],
+    "mapId": 11001,
+    "fightResult": 1,
+    "enemyPlayerId": 0
+  }
+}

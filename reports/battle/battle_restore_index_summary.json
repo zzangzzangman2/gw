@@ -1,0 +1,47 @@
+{
+  "assetbundle_candidates": 149,
+  "textasset_candidates": 5787,
+  "image_candidates": 3057,
+  "xlua_decode_targets": 4382,
+  "assetbundle_category_counts": {
+    "battle_audio_preserved": 10,
+    "battle_ui_prefab_or_ext": 31,
+    "battle_ui_sprite": 4,
+    "battlemap_prefab_scene": 6,
+    "battlemap_sprite_art": 7,
+    "common_battle_runtime_asset": 15,
+    "datatable_battle": 5,
+    "proto_battle": 6,
+    "spine_battle_actor": 59,
+    "xlua_battle_preview": 1,
+    "xlua_battle_script_library": 3,
+    "xlua_core_battle": 1,
+    "xlua_procedure": 1
+  },
+  "textasset_category_counts": {
+    "battle_ui_prefab_or_ext": 86,
+    "common_battle_runtime_asset": 6,
+    "datatable_battle": 126,
+    "keyword_textasset": 1003,
+    "proto_battle": 44,
+    "spine_battle_actor": 140,
+    "xlua_battle_preview": 2,
+    "xlua_battle_script_library": 4323,
+    "xlua_core_battle": 52,
+    "xlua_procedure": 5
+  },
+  "image_category_counts": {
+    "battle_ui_prefab_or_ext": 160,
+    "battle_ui_sprite": 632,
+    "battlemap_sprite_art": 61,
+    "common_battle_runtime_asset": 1181,
+    "keyword_image": 1023
+  },
+  "outputs": {
+    "assetbundles_csv": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_ASSETBUNDLE_CANDIDATES.csv",
+    "textassets_csv": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_TEXTASSET_CANDIDATES.csv",
+    "images_csv": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_IMAGE_CANDIDATES.csv",
+    "xlua_targets_csv": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_XLUA_DECODE_TARGETS.csv",
+    "plan_md": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_RESTORE_PLAN.md"
+  }
+}

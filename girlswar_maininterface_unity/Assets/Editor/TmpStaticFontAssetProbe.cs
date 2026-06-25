@@ -17,9 +17,16 @@ namespace GirlsWarRestore
         private const string GlyphCsv = "Assets/RestoreData/reports/maininterface_original_tmp_static_glyphs.csv";
         private const string CharacterCsv = "Assets/RestoreData/reports/maininterface_original_tmp_static_characters.csv";
         private const string MaterialCsv = "Assets/RestoreData/reports/maininterface_original_tmp_static_material_properties.csv";
+        private const string VariantSummaryCsv = "Assets/RestoreData/reports/maininterface_active_tmp_variant_font_summary.csv";
+        private const string VariantGlyphCsv = "Assets/RestoreData/reports/maininterface_active_tmp_variant_glyphs.csv";
+        private const string VariantCharacterCsv = "Assets/RestoreData/reports/maininterface_active_tmp_variant_characters.csv";
+        private const string VariantMaterialCsv = "Assets/RestoreData/reports/maininterface_active_tmp_variant_material_properties.csv";
         private const string OutputDir = "Assets/RestoreData/TMP/static_probe";
+        private const string VariantOutputDir = "Assets/RestoreData/TMP/static_probe/variants";
         private const string ReportJson = "Assets/RestoreData/reports/maininterface_tmp_static_font_probe_result.json";
+        private const string VariantReportJson = "Assets/RestoreData/reports/maininterface_active_tmp_variant_static_font_probe_result.json";
         private const string ReportMdAbsolute = @"C:\Users\godho\Downloads\girlswar\reports\maininterface\MAININTERFACE_TMP_STATIC_FONT_PROBE_RESULT.md";
+        private const string VariantReportMdAbsolute = @"C:\Users\godho\Downloads\girlswar\reports\maininterface\MAININTERFACE_ACTIVE_TMP_VARIANT_STATIC_FONT_PROBE_RESULT.md";
 
         private sealed class FontSpec
         {
@@ -137,6 +144,41 @@ namespace GirlsWarRestore
             AssetDatabase.Refresh(ImportAssetOptions.ForceSynchronousImport);
             WriteReports(results);
             Debug.Log("[GirlsWarRestore] TMP static font probe complete: " + ReportJson);
+        }
+
+        public static void RunActiveVariants()
+        {
+            Directory.CreateDirectory(VariantOutputDir);
+            var specs = LoadVariantFontSpecs();
+            var glyphs = GroupByFont(LoadCsv(VariantGlyphCsv));
+            var characters = GroupByFont(LoadCsv(VariantCharacterCsv));
+            var materialProperties = GroupByFont(LoadCsv(VariantMaterialCsv));
+            var results = new List<ProbeResult>();
+
+            foreach (var spec in specs)
+            {
+                try
+                {
+                    results.Add(BuildStaticProbeFont(spec, glyphs, characters, materialProperties));
+                }
+                catch (Exception ex)
+                {
+                    results.Add(new ProbeResult
+                    {
+                        key = spec.key,
+                        success = false,
+                        message = ex.GetType().Name + ": " + ex.Message,
+                        outputAssetPath = spec.outputAssetPath,
+                        atlasAssetPath = spec.atlasAssetPath
+                    });
+                    Debug.LogWarning("[GirlsWarRestore] TMP active variant static probe failed for " + spec.key + ": " + ex);
+                }
+            }
+
+            AssetDatabase.SaveAssets();
+            AssetDatabase.Refresh(ImportAssetOptions.ForceSynchronousImport);
+            WriteReports(results, VariantReportJson, VariantReportMdAbsolute, "MainInterface Active TMP Variant Static Font Probe Result", "이 probe는 active route shared material 이름과 같은 TMP FontAsset bundle의 원본 정적 glyph/character table과 atlas PNG를 Unity `TMP_FontAsset`으로 재구성한다. 기본 복원 경로를 대체하지 않고 shared material pathID 기반 A/B 렌더 검증용 asset을 만든다.");
+            Debug.Log("[GirlsWarRestore] TMP active variant static font probe complete: " + VariantReportJson);
         }
 
         private static ProbeResult BuildStaticProbeFont(
@@ -324,6 +366,39 @@ namespace GirlsWarRestore
             return GroupByFont(LoadCsv(MaterialCsv));
         }
 
+        private static List<FontSpec> LoadVariantFontSpecs()
+        {
+            var result = new List<FontSpec>();
+            foreach (var row in LoadCsv(VariantSummaryCsv))
+            {
+                var key = Get(row, "font_key");
+                if (string.IsNullOrWhiteSpace(key))
+                    continue;
+                var atlasImagePath = Get(row, "atlas_image_path");
+                if (string.IsNullOrWhiteSpace(atlasImagePath))
+                    continue;
+                var safeKey = SanitizeFilePart(key);
+                result.Add(new FontSpec
+                {
+                    key = key,
+                    sourceFontPath = Get(row, "source_font_path"),
+                    outputAssetPath = VariantOutputDir + "/GirlsWarStaticProbe_" + safeKey + "_TMP.asset",
+                    materialAssetPath = VariantOutputDir + "/GirlsWarStaticProbe_" + safeKey + "_Material.mat",
+                    atlasSourcePath = atlasImagePath,
+                    atlasAssetPath = VariantOutputDir + "/atlas/" + safeKey + "_static_atlas.png",
+                    atlasWidth = Mathf.Max(1, Mathf.RoundToInt(ParseFloat(Get(row, "atlas_width")))),
+                    atlasHeight = Mathf.Max(1, Mathf.RoundToInt(ParseFloat(Get(row, "atlas_height")))),
+                    familyName = Get(row, "family_name"),
+                    styleName = Get(row, "style_name"),
+                    pointSize = ParseFloat(Get(row, "point_size")),
+                    lineHeight = ParseFloat(Get(row, "line_height")),
+                    ascentLine = ParseFloat(Get(row, "ascent_line")),
+                    descentLine = ParseFloat(Get(row, "descent_line"))
+                });
+            }
+            return result;
+        }
+
         private static Dictionary<string, List<Dictionary<string, string>>> GroupByFont(List<Dictionary<string, string>> rows)
         {
             var result = new Dictionary<string, List<Dictionary<string, string>>>();
@@ -422,7 +497,12 @@ namespace GirlsWarRestore
 
         private static void WriteReports(List<ProbeResult> results)
         {
-            Directory.CreateDirectory(Path.GetDirectoryName(ReportJson));
+            WriteReports(results, ReportJson, ReportMdAbsolute, "MainInterface TMP Static Font Probe Result", "이 probe는 원본 TMP 정적 glyph/character table과 추출 atlas PNG를 Unity `TMP_FontAsset`에 주입할 수 있는지 확인한다. 성공하면 MainInterface 빌더에 같은 방식을 통합해 source font dynamic preload 대신 원본 정적 TMP asset을 사용할 수 있다.");
+        }
+
+        private static void WriteReports(List<ProbeResult> results, string reportJson, string reportMdAbsolute, string title, string meaning)
+        {
+            Directory.CreateDirectory(Path.GetDirectoryName(reportJson));
             var json = new StringBuilder();
             json.AppendLine("{");
             json.AppendLine("  \"generatedAt\": \"" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss", CultureInfo.InvariantCulture) + "\",");
@@ -443,11 +523,11 @@ namespace GirlsWarRestore
             }
             json.AppendLine("  ]");
             json.AppendLine("}");
-            File.WriteAllText(ReportJson, json.ToString(), Encoding.UTF8);
+            File.WriteAllText(reportJson, json.ToString(), Encoding.UTF8);
 
-            Directory.CreateDirectory(Path.GetDirectoryName(ReportMdAbsolute));
+            Directory.CreateDirectory(Path.GetDirectoryName(reportMdAbsolute));
             var md = new StringBuilder();
-            md.AppendLine("# MainInterface TMP Static Font Probe Result");
+            md.AppendLine("# " + title);
             md.AppendLine();
             md.AppendLine("Generated: " + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss", CultureInfo.InvariantCulture));
             md.AppendLine();
@@ -460,17 +540,17 @@ namespace GirlsWarRestore
             md.AppendLine();
             md.AppendLine("## Meaning");
             md.AppendLine();
-            md.AppendLine("이 probe는 원본 TMP 정적 glyph/character table과 추출 atlas PNG를 Unity `TMP_FontAsset`에 주입할 수 있는지 확인한다. 성공하면 MainInterface 빌더에 같은 방식을 통합해 source font dynamic preload 대신 원본 정적 TMP asset을 사용할 수 있다.");
+            md.AppendLine(meaning);
             md.AppendLine();
             md.AppendLine("## Generated Files");
             md.AppendLine();
-            md.AppendLine("- `" + ReportJson + "`");
+            md.AppendLine("- `" + reportJson + "`");
             foreach (var r in results)
             {
                 md.AppendLine("- `" + r.outputAssetPath + "`");
                 md.AppendLine("- `" + r.atlasAssetPath + "`");
             }
-            File.WriteAllText(ReportMdAbsolute, md.ToString(), Encoding.UTF8);
+            File.WriteAllText(reportMdAbsolute, md.ToString(), Encoding.UTF8);
         }
 
         private static void SetPrivateField(object target, string fieldName, object value)
@@ -533,6 +613,21 @@ namespace GirlsWarRestore
         private static string EscapeJson(string value)
         {
             return (value ?? "").Replace("\\", "\\\\").Replace("\"", "\\\"");
+        }
+
+        private static string SanitizeFilePart(string value)
+        {
+            if (string.IsNullOrWhiteSpace(value))
+                return "unknown";
+            var builder = new StringBuilder();
+            foreach (var c in value)
+            {
+                if (char.IsLetterOrDigit(c))
+                    builder.Append(c);
+                else
+                    builder.Append('_');
+            }
+            return builder.ToString().Trim('_');
         }
     }
 }

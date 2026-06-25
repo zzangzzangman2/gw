@@ -1,0 +1,32 @@
+﻿{
+  "generatedAt": "2026-06-25 16:44:23",
+  "results": [
+    {
+      "key": "riyu_baibian_0.2_0.2_1",
+      "success": true,
+      "message": "saved",
+      "glyphCount": 599,
+      "characterCount": 601,
+      "outputAssetPath": "Assets/RestoreData/TMP/static_probe/variants/GirlsWarStaticProbe_riyu_baibian_0_2_0_2_1_TMP.asset",
+      "atlasAssetPath": "Assets/RestoreData/TMP/static_probe/variants/atlas/riyu_baibian_0_2_0_2_1_static_atlas.png"
+    },
+    {
+      "key": "riyu_shenzong_0.2_0.2",
+      "success": true,
+      "message": "saved",
+      "glyphCount": 424,
+      "characterCount": 426,
+      "outputAssetPath": "Assets/RestoreData/TMP/static_probe/variants/GirlsWarStaticProbe_riyu_shenzong_0_2_0_2_TMP.asset",
+      "atlasAssetPath": "Assets/RestoreData/TMP/static_probe/variants/atlas/riyu_shenzong_0_2_0_2_static_atlas.png"
+    },
+    {
+      "key": "EPM_bai_0.2_0.2",
+      "success": true,
+      "message": "saved",
+      "glyphCount": 588,
+      "characterCount": 591,
+      "outputAssetPath": "Assets/RestoreData/TMP/static_probe/variants/GirlsWarStaticProbe_EPM_bai_0_2_0_2_TMP.asset",
+      "atlasAssetPath": "Assets/RestoreData/TMP/static_probe/variants/atlas/EPM_bai_0_2_0_2_static_atlas.png"
+    }
+  ]
+}

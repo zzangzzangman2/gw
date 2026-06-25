@@ -1,0 +1,11 @@
+﻿mapId,bundle,exists,assetType,name,width,height,output,spriteCount,textureCount,gameObjectCount
+11001,download/artsources/map/battlemap/map_11001/map_11001_1.assetbundle,True,Sprite,Map_11001_3,1920,304,extracted/unity/bundles/b_0155ef2a953f53b0/images/S/-8432961922530428540_Map_11001_3.png,9,1,0
+11001,download/artsources/map/battlemap/map_11001/map_11001_1.assetbundle,True,Sprite,Map_11001_1_4,259,150,extracted/unity/bundles/b_0155ef2a953f53b0/images/S/-7882005510638080185_Map_11001_1_4.png,9,1,0
+11001,download/artsources/map/battlemap/map_11001/map_11001_1.assetbundle,True,Sprite,Map_11001_1_1,468,95,extracted/unity/bundles/b_0155ef2a953f53b0/images/S/-7352335555518323793_Map_11001_1_1.png,9,1,0
+11001,download/artsources/map/battlemap/map_11001/map_11001_1.assetbundle,True,Sprite,Map_11001_5_1,495,439,extracted/unity/bundles/b_0155ef2a953f53b0/images/S/-4891563928384609105_Map_11001_5_1.png,9,1,0
+11001,download/artsources/map/battlemap/map_11001/map_11001_1.assetbundle,True,Texture2D,sactx-0-2048x2048-ETC2-Map_11001_1-2ccb5b85,2048,2048,extracted/unity/bundles/b_0155ef2a953f53b0/images/T/-3924175387751401445_sactx-0-2048x2048-ETC2-Map_11001_1-2ccb5b85.png,9,1,0
+11001,download/artsources/map/battlemap/map_11001/map_11001_1.assetbundle,True,Sprite,Map_11001_4,702,350,extracted/unity/bundles/b_0155ef2a953f53b0/images/S/-3259072823952439402_Map_11001_4.png,9,1,0
+11001,download/artsources/map/battlemap/map_11001/map_11001_1.assetbundle,True,Sprite,Map_11001_2,1920,669,extracted/unity/bundles/b_0155ef2a953f53b0/images/S/-2857215938594995045_Map_11001_2.png,9,1,0
+11001,download/artsources/map/battlemap/map_11001/map_11001_1.assetbundle,True,Sprite,Map_11001_5_2,121,240,extracted/unity/bundles/b_0155ef2a953f53b0/images/S/5490800349379579821_Map_11001_5_2.png,9,1,0
+11001,download/artsources/map/battlemap/map_11001/map_11001_1.assetbundle,True,Sprite,Map_11001_1_2,351,135,extracted/unity/bundles/b_0155ef2a953f53b0/images/S/6425347890655533317_Map_11001_1_2.png,9,1,0
+11001,download/artsources/map/battlemap/map_11001/map_11001_1.assetbundle,True,Sprite,Map_11001_1_3,486,152,extracted/unity/bundles/b_0155ef2a953f53b0/images/S/6810977601385818246_Map_11001_1_3.png,9,1,0

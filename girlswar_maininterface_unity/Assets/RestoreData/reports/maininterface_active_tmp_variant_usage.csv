@@ -1,0 +1,4 @@
+﻿variant_font_name,usage_count,shared_material_path_ids,base_font_asset_names,game_object_names,text_samples,flags
+riyu_baibian_0.2_0.2_1,14,-6541690290105773087,riyu,lab_renwu_text;lab_shangdian_text;text_off;txt_act_name,마을;상점 ;옷장과의 약속;세 ;소환수;수호  ;무장 ;동맹 ,font_larger_than_rect;shared_material_found;visible_chain
+riyu_shenzong_0.2_0.2,6,4174273018840097604,riyu,text_big;text_name;text_small,모험;국;전,shared_material_found;visible_chain;zero_or_negative_height
+EPM_bai_0.2_0.2,1,3932716197974622303,EPM,text_wanfaTips,개최 중,shared_material_found;visible_chain

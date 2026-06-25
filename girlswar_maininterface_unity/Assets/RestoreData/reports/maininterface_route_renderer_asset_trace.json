@@ -1,0 +1,28 @@
+{
+  "generated_at": "2026-06-25 KST",
+  "trace_rows": 176,
+  "resource_rows": 12,
+  "particle_rows": 12,
+  "displayable_texture_count": 2,
+  "displayable_textures": [
+    "extracted/unity/bundles/b_35f69f1e4224c83e/images/T/-1569618029946744867_Spine_shijieanniu.png",
+    "extracted/unity/bundles/b_df52239564024098/images/T/1969165562093376026_8007.png"
+  ],
+  "fallback_applied": true,
+  "fallback_asset": "Assets/RestoreData/route_renderer_fallbacks/Spine_shijieanniu_diqiu.png",
+  "fallback_note": "cropped diqiu [2, 257, 704, 706] from girlswar_merged_extracted\\extracted\\unity\\bundles\\b_35f69f1e4224c83e\\images\\T\\-1569618029946744867_Spine_shijieanniu.png and applied to worldwanfaBtn",
+  "main_skeletons": [
+    {
+      "node": "spine_diqiu",
+      "skeletonDataAsset": "fileID 59 pathID 1138517909137294754",
+      "bundle": "download/ui/uiprefabandres/maininterface_ext_8.assetbundle",
+      "texture": "Spine_shijieanniu.png"
+    },
+    {
+      "node": "spine_xiaoren",
+      "skeletonDataAsset": "fileID 60 pathID 5595588015970333467",
+      "bundle": "download/roleprefabsandres/npcprefabandres/8007.assetbundle",
+      "texture": "8007.png"
+    }
+  ]
+}

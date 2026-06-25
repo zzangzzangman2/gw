@@ -22,6 +22,8 @@ namespace GirlsWarRestore
         private const string SpriteCsv = "Assets/RestoreData/maininterface_sprite_map.csv";
         private const string TextCsv = "Assets/RestoreData/maininterface_text_components.csv";
         private const string TmpTextDetailsCsv = "Assets/RestoreData/maininterface_text_tmp_details.csv";
+        private const string TmpSharedMaterialsCsv = "Assets/RestoreData/reports/maininterface_tmp_shared_materials.csv";
+        private const string ActiveTmpVariantFontSummaryCsv = "Assets/RestoreData/reports/maininterface_active_tmp_variant_font_summary.csv";
         private const string ScrollCsv = "Assets/RestoreData/maininterface_scrollrects.csv";
         private const string OverrideCsv = "Assets/RestoreData/maininterface_raycast_overrides.csv";
         private const string VisualOverrideCsv = "Assets/RestoreData/maininterface_visual_overrides.csv";
@@ -31,6 +33,8 @@ namespace GirlsWarRestore
         private const bool AddDebugLabels = false;
         private const float ReferenceWidth = 1680f;
         private const float ReferenceHeight = 720f;
+        private static Dictionary<string, string> sharedMaterialNameByPathId;
+        private static Dictionary<string, string> activeVariantStaticAssetByName;
 
         private sealed class RectRow
         {
@@ -147,6 +151,8 @@ namespace GirlsWarRestore
             public Vector2 anchoredPosition;
             public bool setSizeDelta;
             public Vector2 sizeDelta;
+            public bool setLocalScale;
+            public Vector3 localScale;
             public string reason;
         }
 
@@ -682,6 +688,8 @@ namespace GirlsWarRestore
                     rt.anchoredPosition = row.anchoredPosition;
                 if (row.setSizeDelta)
                     rt.sizeDelta = row.sizeDelta;
+                if (row.setLocalScale)
+                    rt.localScale = row.localScale;
                 applied++;
             }
             Debug.Log("[GirlsWarRestore] Applied route rect overrides: " + applied + "/" + rows.Count);
@@ -713,7 +721,12 @@ namespace GirlsWarRestore
                 {
                     var tmpText = GetOrCreateTmpText(rt, row);
                     tmpText.text = row.text ?? "";
-                    var tmpFontKey = GetTmpFontCacheKey(tmpDetail);
+                    var variantTmpFont = GetSharedMaterialVariantTmpFont(tmpDetail);
+                    var tmpFontKey = variantTmpFont != null ? "variant:" + tmpDetail.sharedMaterialPathId : GetTmpFontCacheKey(tmpDetail);
+                    if (variantTmpFont != null)
+                    {
+                        tmpFontCache[tmpFontKey] = variantTmpFont;
+                    }
                     if (!tmpFontCache.TryGetValue(tmpFontKey, out var tmpFont))
                     {
                         tmpFont = GetRestoreTmpFont(tmpDetail, tmpFontCharacterSets);
@@ -721,7 +734,7 @@ namespace GirlsWarRestore
                     }
                     if (tmpFont != null)
                         tmpText.font = tmpFont;
-                    var sharedMaterial = GetTmpSharedMaterial(tmpDetail);
+                    var sharedMaterial = variantTmpFont == null ? GetTmpSharedMaterial(tmpDetail) : null;
                     if (sharedMaterial != null)
                         tmpText.fontSharedMaterial = sharedMaterial;
                     tmpText.fontSize = Mathf.Max(1f, tmpDetail.fontSize > 0f ? tmpDetail.fontSize : row.fontSize);
@@ -868,6 +881,49 @@ namespace GirlsWarRestore
             Dictionary<string, string> tmpFontCharacterSets)
         {
             return GetOriginalTmpFont(detail, tmpFontCharacterSets) ?? GetFallbackTmpFont();
+        }
+
+        private static TMP_FontAsset GetSharedMaterialVariantTmpFont(TmpTextDetailRow detail)
+        {
+            if (string.IsNullOrWhiteSpace(detail.sharedMaterialPathId) || detail.sharedMaterialPathId == "0")
+                return null;
+            var materialNames = GetSharedMaterialNameByPathId();
+            if (!materialNames.TryGetValue(detail.sharedMaterialPathId, out var materialName) || string.IsNullOrWhiteSpace(materialName))
+                return null;
+            var variants = GetActiveVariantStaticAssetByName();
+            if (!variants.TryGetValue(materialName, out var assetPath) || string.IsNullOrWhiteSpace(assetPath))
+                return null;
+            return AssetDatabase.LoadAssetAtPath<TMP_FontAsset>(assetPath);
+        }
+
+        private static Dictionary<string, string> GetSharedMaterialNameByPathId()
+        {
+            if (sharedMaterialNameByPathId != null)
+                return sharedMaterialNameByPathId;
+            sharedMaterialNameByPathId = new Dictionary<string, string>();
+            foreach (var row in LoadCsv(TmpSharedMaterialsCsv))
+            {
+                var pathId = Get(row, "shared_material_path_id");
+                var name = Get(row, "material_name");
+                if (!string.IsNullOrWhiteSpace(pathId) && !string.IsNullOrWhiteSpace(name))
+                    sharedMaterialNameByPathId[pathId] = name;
+            }
+            return sharedMaterialNameByPathId;
+        }
+
+        private static Dictionary<string, string> GetActiveVariantStaticAssetByName()
+        {
+            if (activeVariantStaticAssetByName != null)
+                return activeVariantStaticAssetByName;
+            activeVariantStaticAssetByName = new Dictionary<string, string>();
+            foreach (var row in LoadCsv(ActiveTmpVariantFontSummaryCsv))
+            {
+                var name = Get(row, "font_key");
+                var assetPath = Get(row, "static_asset_path");
+                if (!string.IsNullOrWhiteSpace(name) && !string.IsNullOrWhiteSpace(assetPath) && File.Exists(assetPath))
+                    activeVariantStaticAssetByName[name] = assetPath;
+            }
+            return activeVariantStaticAssetByName;
         }
 
         private static Material GetTmpSharedMaterial(TmpTextDetailRow detail)
@@ -1718,6 +1774,8 @@ namespace GirlsWarRestore
                     anchoredPosition = new Vector2(F(Get(record, "anchored_pos_x")), F(Get(record, "anchored_pos_y"))),
                     setSizeDelta = B(Get(record, "set_size_delta")),
                     sizeDelta = new Vector2(F(Get(record, "size_delta_x")), F(Get(record, "size_delta_y"))),
+                    setLocalScale = B(Get(record, "set_local_scale")),
+                    localScale = new Vector3(F(Get(record, "local_scale_x")), F(Get(record, "local_scale_y")), F(Get(record, "local_scale_z"))),
                     reason = Get(record, "reason")
                 });
             }
@@ -1928,6 +1986,13 @@ namespace GirlsWarRestore
                 result.Add(dict);
             }
             return result;
+        }
+
+        private static List<Dictionary<string, string>> LoadCsv(string path)
+        {
+            if (!File.Exists(path))
+                return new List<Dictionary<string, string>>();
+            return ParseCsv(File.ReadAllText(path, Encoding.UTF8));
         }
 
         [Serializable]

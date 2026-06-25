@@ -1,0 +1,48 @@
+local o=require("Modules/Battle/BattleUtil")
+local t={}
+local i=t
+function t.GetCanAdd(e,e)
+return true
+end
+function t.OnAdd(e,t)
+e.CurrHeroCtrl.HeroBattleInfo:AddImmunneCtrlBuffId(e.buffId)
+end
+function t.OnRemoveSelf(e,t)
+e.CurrHeroCtrl.HeroBattleInfo:RemoveImmunneCtrlBuffId(e.buffId)
+end
+function t.DoAction(t,e,i,i,a)
+if t==nil or t.CurrHeroCtrl==nil or t.CurrHeroCtrl.HeroBattleInfo==nil or t.CurrHeroCtrl.HeroBattleInfo.CurrHP<=0 then
+return
+end
+local a=a[1]
+if o:IsStrongCtlBuff(a)then
+if e[3]~=ModulesInit.ProcedureNormalBattle.CurrBattleBigRound then
+e[3]=ModulesInit.ProcedureNormalBattle.CurrBattleBigRound
+e[2]=0
+end
+if e[2]<e[1]then
+e[2]=e[2]+1
+if e[2]>=e[1]and t:GetRound()<=1 then
+t.isExec=true
+return{
+ret=true,
+remove=true
+}
+end
+return{
+ret=true,
+remove=false
+}
+end
+end
+return{
+ret=false
+}
+end
+function t.GetCanTrigger(e)
+return false
+end
+function t.SetLogicData(e,e)
+end
+return i
+

@@ -1,0 +1,13 @@
+﻿side,waveNo,payloadHeroDid,payloadHeroId,datatable,datatableFound,modelId,modelFound,prefabId,petPrefabId,haloPrefabId,actorBundle,actorBundleExists,skillDidList
+our,,1036,51469,hero,True,1036,True,1036,0,0,download/roleprefabsandres/battleprefabandres/1036.assetbundle,False,"1036101,1036201,1036301,1036401,1036402"
+our,,1002,50870,hero,True,1002,True,1002,0,0,download/roleprefabsandres/battleprefabandres/1002.assetbundle,True,"1002101,1002201,1002301"
+our,,1034,50874,hero,True,1034,True,1034,0,0,download/roleprefabsandres/battleprefabandres/1034.assetbundle,True,"1034101,1034201,1034301,1034401,1034402"
+enemy,1,1100111,-1,monster,False,,False,,,,,False,"1012101,1012201,1012301,1012401,1012403"
+enemy,1,1100112,-2,monster,False,,False,,,,,False,"1012101,1012201,1012301,1012401,1012403"
+enemy,1,1100113,-3,monster,False,,False,,,,,False,"1012101,1012201,1012301,1012401,1012403"
+enemy,2,1100121,-1,monster,False,,False,,,,,False,"1012101,1012201,1012301,1012401,1012403"
+enemy,2,1100122,-2,monster,False,,False,,,,,False,"1012101,1012201,1012301,1012401,1012403"
+enemy,2,1100123,-3,monster,False,,False,,,,,False,"1012101,1012201,1012301,1012401,1012403"
+enemy,3,1100131,-1,monster,False,,False,,,,,False,"1012101,1012101,1001401,1001403"
+enemy,3,1100132,-2,monster,False,,False,,,,,False,"1012101,1012101,1001401,1001403"
+enemy,3,1100133,-3,monster,False,,False,,,,,False,"1012101,1012101,1001401,1001403"

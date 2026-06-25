@@ -1,0 +1,14 @@
+{
+  "copied": {
+    "manifest": true,
+    "payload": true,
+    "actors": true,
+    "skills": true,
+    "bundles": true
+  },
+  "resourceIndex": {
+    "bundleReferences": 15,
+    "existing": 11,
+    "missing": 4
+  }
+}

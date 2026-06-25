@@ -1,0 +1,20 @@
+{
+  "status": "unity_scene_generated",
+  "visualManifest": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_battle_unity\\Assets\\RestoreData\\battle\\BATTLE_ASSET_BACKED_PREVIEW_VISUALS.json",
+  "scenePath": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_battle_unity\\Assets\\Scenes\\BattleAssetBackedPreview.unity",
+  "visualAssetCopiedCount": 12,
+  "mapLayerCount": 3,
+  "actorTextureFallbackCount": 3,
+  "missingPlaceholderCount": 9,
+  "actorTotal": 12,
+  "sceneExists": true,
+  "sceneBytes": 122954,
+  "unityLog": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_09_UNITY_ASSET_BACKED_PREVIEW.log",
+  "unityBatchmodeSuccess": true,
+  "scenePatternCounts": {
+    "TextureActor": 3,
+    "MissingActor": 9,
+    "MapLayer": 3
+  },
+  "nextStepRecommendation": "AssetBundle streaming is faster next than full Spine runtime import: texture/evidence paths are already staged, while Spine runtime needs package/API compatibility work."
+}

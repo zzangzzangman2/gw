@@ -1,0 +1,26 @@
+{
+  "summary": {
+    "actorTotal": 12,
+    "actorLoadable": 3,
+    "ourActorLoadable": 2,
+    "enemyResolvedViaKO": 1,
+    "enemyCandidateBundleExisting": 1,
+    "mapCandidateRows": 10,
+    "skillCandidateRows": 24,
+    "skillFoundRows": 42,
+    "skillMissingRows": 22,
+    "remainingMissing": {
+      "listed_in_cdn_versionfile_not_extracted": 1,
+      "path_normalize_issue": 3
+    },
+    "inputFiles": {
+      "manifest": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_PROTOTYPE_MANIFEST.json",
+      "payload": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_TEST_PAYLOAD.json",
+      "traceCsvExists": true,
+      "bundlesCsv": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_PROTOTYPE_BUNDLES.csv",
+      "resourceIndex": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_battle_unity\\Assets\\RestoreData\\battle\\resource_index.csv"
+    },
+    "loadMap": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_battle_unity\\Assets\\RestoreData\\battle\\BATTLE_ASSETBUNDLE_LOAD_MAP.json"
+  },
+  "loadMap": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_battle_unity\\Assets\\RestoreData\\battle\\BATTLE_ASSETBUNDLE_LOAD_MAP.json"
+}

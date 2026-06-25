@@ -1,2 +1,3 @@
-﻿target_kind,component_path_id,game_object_id,game_object_name,sprite_asset_path,color_r,color_g,color_b,color_a,preserve_aspect,image_type,raycast_target,reason
+target_kind,component_path_id,game_object_id,game_object_name,sprite_asset_path,color_r,color_g,color_b,color_a,preserve_aspect,image_type,raycast_target,reason
 Image,6259596902678607660,-1457103517121630268,UI_bg,Assets/RestoredSprites/maininterface/runtime_dynamic/runtime_UI_bg_noalphabg_PaintingBG_1001.png,1,1,1,1,0,0,,UI_MainPage refreshMiddle line 1559-1560 loads UI_bg from UIUtil.GetPaintingBg(heroId); default config hero id 1001
+RouteRendererFallback,,2331390164297400090,worldwanfaBtn,Assets/RestoreData/route_renderer_fallbacks/Spine_shijieanniu_diqiu.png,1,1,1,1,1,0,0,route renderer fallback: original worldwanfaBtn child spine_diqiu references Spine_shijieanniu_SkeletonData; diqiu atlas region is the globe bitmap used by that SkeletonGraphic

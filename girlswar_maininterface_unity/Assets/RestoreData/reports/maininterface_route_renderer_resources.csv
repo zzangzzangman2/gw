@@ -1,0 +1,13 @@
+source,resource_type,bundle,path_id,name,size,extracted_path,note
+spine_diqiu,SkeletonDataAsset,download/ui/uiprefabandres/maininterface_ext_8.assetbundle,1138517909137294754,Spine_shijieanniu_SkeletonData,,,referenced by SkeletonGraphic
+spine_diqiu,TextAsset,download/ui/uiprefabandres/maininterface_ext_8.assetbundle,-6625475740475696418,Spine_shijieanniu.skel,1737,extracted/unity/bundles/b_35f69f1e4224c83e/textassets/-6625475740475696418_Spine_shijieanniu.skel.txt,skeletonJSON
+spine_diqiu,AtlasAsset,download/ui/uiprefabandres/maininterface_ext_8.assetbundle,-5873287455191341032,Spine_shijieanniu_Atlas,,,SkeletonData atlasAssets
+spine_diqiu,TextAsset,download/ui/uiprefabandres/maininterface_ext_8.assetbundle,4125696125331628132,Spine_shijieanniu.atlas,276,extracted/unity/bundles/b_35f69f1e4224c83e/textassets/4125696125331628132_Spine_shijieanniu.atlas.txt,atlasFile
+spine_diqiu,Texture2D,download/ui/uiprefabandres/maininterface_ext_8.assetbundle,-1569618029946744867,Spine_shijieanniu,1024x1024,extracted/unity/bundles/b_35f69f1e4224c83e/images/T/-1569618029946744867_Spine_shijieanniu.png,atlas page Spine_shijieanniu.png; regions=5
+spine_diqiu,Material,download/ui/uiprefabandres/maininterface_ext_8.assetbundle,-1774888747434813747,,,,atlas material
+spine_xiaoren,SkeletonDataAsset,download/roleprefabsandres/npcprefabandres/8007.assetbundle,5595588015970333467,8007_SkeletonData,,,referenced by SkeletonGraphic
+spine_xiaoren,TextAsset,download/roleprefabsandres/npcprefabandres/8007.assetbundle,5717351362711680443,8007.skel,488422,extracted/unity/bundles/b_df52239564024098/textassets/5717351362711680443_8007.skel.txt,skeletonJSON
+spine_xiaoren,AtlasAsset,download/roleprefabsandres/npcprefabandres/8007.assetbundle,-37888027881364440,8007_Atlas,,,SkeletonData atlasAssets
+spine_xiaoren,TextAsset,download/roleprefabsandres/npcprefabandres/8007.assetbundle,-5959284149285428779,8007.atlas,2062,extracted/unity/bundles/b_df52239564024098/textassets/-5959284149285428779_8007.atlas.txt,atlasFile
+spine_xiaoren,Texture2D,download/roleprefabsandres/npcprefabandres/8007.assetbundle,1969165562093376026,8007,512x256,extracted/unity/bundles/b_df52239564024098/images/T/1969165562093376026_8007.png,atlas page 8007.png; regions=73
+spine_xiaoren,Material,download/roleprefabsandres/npcprefabandres/8007.assetbundle,3554563505705047646,,,,atlas material

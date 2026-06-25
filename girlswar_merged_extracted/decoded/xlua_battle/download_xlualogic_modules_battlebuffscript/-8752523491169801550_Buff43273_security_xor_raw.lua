@@ -1,0 +1,32 @@
+local t={}
+local a=t
+function t.GetCanAdd(e,e)
+return true
+end
+function t.OnAdd(e,t)
+e.CurrHeroCtrl:AddTargetLevel(e.buffId,t[5])
+end
+function t.OnRemoveSelf(e,t)
+if e==nil or e.CurrHeroCtrl==nil or e.CurrHeroCtrl.HeroBattleInfo==nil then
+return
+end
+e.CurrHeroCtrl:RemoveTargetLevel(e.buffId)
+end
+function t.DoAction(e,t,a,a)
+if e==nil or e.CurrHeroCtrl==nil or e.CurrHeroCtrl.HeroBattleInfo==nil or e.CurrHeroCtrl.HeroBattleInfo.CurrHP<=0 then
+return
+end
+e.CurrHeroCtrl.HeroBattleInfo:CheckAddBuffValue(e.buffId,t[1],t[2])
+e.CurrHeroCtrl.HeroBattleInfo:CheckAddBuffValue(e.buffId,t[3],t[4])
+e.isExec=true
+end
+function t.GetCanTrigger(e)
+if(e==BuffTriggerTime.now)then
+return true
+end
+return false
+end
+function t.SetLogicData(e,e)
+end
+return a
+

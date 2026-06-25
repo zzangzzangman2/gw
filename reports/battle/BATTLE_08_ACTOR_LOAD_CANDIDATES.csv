@@ -1,0 +1,13 @@
+﻿side,waveNo,heroDid,heroId,model,prefab,bundle,exists,skeletonData,atlas,texture,material,gameObject,loadStatus,skelCandidates,atlasCandidates,textureCandidates,materialCandidates,gameObjectCandidates
+our,,1036,51469,1036,1036,download/roleprefabsandres/battleprefabandres/1036.assetbundle,False,,,,,,listed_in_cdn_versionfile_not_extracted,0,0,0,0,0
+our,,1002,50870,1002,1002,download/roleprefabsandres/battleprefabandres/1002.assetbundle,True,extracted/unity/bundles/b_a11e4439fd9a0a50/textassets/1665224429881118700_1002.skel.txt,extracted/unity/bundles/b_a11e4439fd9a0a50/textassets/3373340142783789617_1002.atlas.txt,extracted/unity/bundles/b_a11e4439fd9a0a50/images/T/2058673591951818171_1002.png,-3441070765647199456,2916762097377812642,loadable_spine_bundle,1,1,1,2,2
+our,,1034,50874,1034,1034,download/roleprefabsandres/battleprefabandres/1034.assetbundle,True,extracted/unity/bundles/b_da97dc9c8e06fcb3/textassets/-3260164475778644329_1034.skel.txt,extracted/unity/bundles/b_da97dc9c8e06fcb3/textassets/9008888806324543472_1034.atlas.txt,extracted/unity/bundles/b_da97dc9c8e06fcb3/images/T/-8601115882506527001_1034.png,-7701057228218361780,-2607777606180373203,loadable_spine_bundle,1,1,1,2,2
+enemy,1,1100111,-1,3001,3001,download/roleprefabsandres/battleprefabandres/3001.assetbundle,True,extracted/unity/bundles/b_5a764c3b78a2386a/textassets/-756768513637643680_3001.skel.txt,extracted/unity/bundles/b_5a764c3b78a2386a/textassets/-3102365806415234313_3001.atlas.txt,extracted/unity/bundles/b_5a764c3b78a2386a/images/T/-9168546056666942066_3001.png,1825831143407533424,-7718662271087589012,loadable_spine_bundle,1,1,1,1,2
+enemy,1,1100112,-2,,,,False,,,,,,not_loadable_yet,0,0,0,0,0
+enemy,1,1100113,-3,,,,False,,,,,,not_loadable_yet,0,0,0,0,0
+enemy,2,1100121,-1,,,,False,,,,,,not_loadable_yet,0,0,0,0,0
+enemy,2,1100122,-2,,,,False,,,,,,not_loadable_yet,0,0,0,0,0
+enemy,2,1100123,-3,,,,False,,,,,,not_loadable_yet,0,0,0,0,0
+enemy,3,1100131,-1,,,,False,,,,,,not_loadable_yet,0,0,0,0,0
+enemy,3,1100132,-2,,,,False,,,,,,not_loadable_yet,0,0,0,0,0
+enemy,3,1100133,-3,,,,False,,,,,,not_loadable_yet,0,0,0,0,0

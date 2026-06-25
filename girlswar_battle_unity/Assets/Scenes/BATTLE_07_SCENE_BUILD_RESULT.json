@@ -1,0 +1,30 @@
+{
+  "status": "unity_batchmode_generated",
+  "scenePath": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_battle_unity\\Assets\\Scenes\\BattlePrototype.unity",
+  "absoluteScenePath": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_battle_unity\\Assets\\Scenes\\BattlePrototype.unity",
+  "editorScript": "Assets/Editor/BattlePrototypeSceneBuilder.cs",
+  "manifestPath": "Assets/RestoreData/battle/BATTLE_PROTOTYPE_MANIFEST.json",
+  "payloadPath": "Assets/RestoreData/battle/BATTLE_TEST_PAYLOAD.json",
+  "mapId": 11001,
+  "battleType": 1,
+  "randomSeed": 445106,
+  "missingBundleCount": 4,
+  "nextCommand": "C:\\Users\\godho\\Downloads\\girlswar\\_restore_tools\\BATTLE_08_PREPARE_ASSETBUNDLE_SPINE_LOADING.cmd",
+  "objectCount": 16,
+  "actorPlaceholderCount": 12,
+  "mapPlaceholderCount": 1,
+  "placeholderCount": 13,
+  "ourActorCount": 3,
+  "enemyActorCount": 9,
+  "sceneExists": true,
+  "sceneFileBytes": 119346,
+  "unityBatchmodeLog": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_07_UNITY_BATCHMODE.log",
+  "unityBatchmodeSuccess": true,
+  "verifiedPatternCounts": {
+    "OurActor": 3,
+    "EnemyActor": 9,
+    "Map_11001": 1,
+    "SkillResourceSummary": 1,
+    "BattlePrototypeRoot": 1
+  }
+}

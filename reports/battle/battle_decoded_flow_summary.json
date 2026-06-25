@@ -1,0 +1,1418 @@
+{
+  "files": {
+    "ProcedureNormalBattle": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_procedure\\-3424355311143813575_ProcedureNormalBattle_security_xor_raw.lua",
+    "BattleManager": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-3683694185079020577_BattleManager_security_xor_raw.lua",
+    "BattleTeam": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\2347635220185957824_BattleTeam_security_xor_raw.lua",
+    "HeroCtrl": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+    "HeroBattleInfo": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\846054528645605280_HeroBattleInfo_security_xor_raw.lua",
+    "BattleInputMgr": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\8809785119562755294_BattleInputMgr_security_xor_raw.lua",
+    "BattleUtil": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\191332877364712173_BattleUtil_security_xor_raw.lua",
+    "fight_info": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\2406239097966023345_fight_info_security_xor_raw.lua"
+  },
+  "summaries": {
+    "ProcedureNormalBattle": {
+      "requires": [
+        {
+          "line": 3,
+          "text": "require\"Modules/Battle/BattleSkillEffectManager\""
+        },
+        {
+          "line": 5,
+          "text": "require\"Modules/Battle/BattleTeam\""
+        },
+        {
+          "line": 6,
+          "text": "require\"Modules/Battle/HeroCtrl\""
+        },
+        {
+          "line": 7,
+          "text": "require\"Modules/Battle/HeroBattleInfo\""
+        },
+        {
+          "line": 8,
+          "text": "require\"Modules/Battle/HeroSkillInfo\""
+        },
+        {
+          "line": 9,
+          "text": "require\"Modules/Battle/HeroBuffInfo\""
+        },
+        {
+          "line": 10,
+          "text": "require\"Modules/Battle/HeroBuffValueInfo\""
+        },
+        {
+          "line": 11,
+          "text": "require\"Modules/Battle/BattleEffectInfo\""
+        }
+      ],
+      "event_listeners": [
+        {
+          "line": 277,
+          "text": "EventSystem.AddListener(CommonEventId.ProcedureNormalBattle_OnEnter,e.ProcedureNormalBattle_OnEnter)"
+        },
+        {
+          "line": 278,
+          "text": "EventSystem.AddListener(CommonEventId.ProcedureNormalBattle_OnLeave,e.ProcedureNormalBattle_OnLeave)"
+        },
+        {
+          "line": 279,
+          "text": "EventSystem.AddListener(CommonEventId.ProcedureNormalBattle_TestBattle,e.ProcedureNormalBattle_TestBattle)"
+        },
+        {
+          "line": 280,
+          "text": "EventSystem.AddListener(CommonEventId.ProcedureNormalBattle_SetCurrAttackHeroId,e.OnSetCurrAttackHeroId)"
+        },
+        {
+          "line": 281,
+          "text": "EventSystem.AddListener(CommonEventId.ProcedureNormalBattle_SetCurrBeAttackHeroId,e.OnSetCurrBeAttackHeroId)"
+        },
+        {
+          "line": 282,
+          "text": "EventSystem.AddListener(CommonEventId.ProcedureNormalBattle_SetStaticTarget,e.OnSetStaticTarget)"
+        },
+        {
+          "line": 283,
+          "text": "EventSystem.AddListener(CommonEventId.TestBattleSceneHeroMove,e.TestBattleSceneHeroMove)"
+        },
+        {
+          "line": 284,
+          "text": "EventSystem.AddListener(CommonEventId.OnCreateNameFinish,e.OnCreateNameFinish)"
+        },
+        {
+          "line": 796,
+          "text": "EventSystem.AddListener(CommonEventId.OnPlayDamagePoint,e.OnPlayDamagePoint)"
+        },
+        {
+          "line": 797,
+          "text": "EventSystem.AddListener(CommonEventId.OnBattleUILoadComplete,e.OnBattleUILoadComplete)"
+        },
+        {
+          "line": 798,
+          "text": "EventSystem.AddListener(CommonEventId.OnClickScreen,e.OnClickCallBack)"
+        },
+        {
+          "line": 799,
+          "text": "EventSystem.AddListener(CommonEventId.OnScrollSceneMoveComplete,e.OnScrollSceneMoveComplete)"
+        },
+        {
+          "line": 800,
+          "text": "EventSystem.AddListener(CommonEventId.OnEventNetReconnectSuccess,e.OnEventNetReconnectSuccess)"
+        },
+        {
+          "line": 802,
+          "text": "EventSystem.AddListener(CommonEventId.OnBattleEndUIShowComplete,e.OnBattleEndUIShowComplete)"
+        },
+        {
+          "line": 803,
+          "text": "EventSystem.AddListener(CommonEventId.OnEventRespError,e.OnEventRespError)"
+        },
+        {
+          "line": 804,
+          "text": "EventSystem.AddListener(CommonEventId.KillDragonCountDownFinish,e.OnKillDragonCountDownFinish)"
+        },
+        {
+          "line": 805,
+          "text": "EventSystem.AddListener(CommonEventId.ProcedureNormalBattle_ShowHeadBar,e.OnShowHeadBar)"
+        },
+        {
+          "line": 909,
+          "text": "EventSystem.RemoveListener(CommonEventId.OnPlayDamagePoint,e.OnPlayDamagePoint)"
+        }
+      ],
+      "entry_points": [
+        {
+          "line": 425,
+          "text": "function t.BeginFightPlayWithServer(t)"
+        },
+        {
+          "line": 437,
+          "text": "function t.BeginBattleWithServer(t)"
+        },
+        {
+          "line": 448,
+          "text": "function t.InitDataWithFightPlayData(t)"
+        },
+        {
+          "line": 468,
+          "text": "function t.InitDataWithFightBeforeData(t)"
+        },
+        {
+          "line": 566,
+          "text": "function t.InitDataWithEmptyData()"
+        },
+        {
+          "line": 577,
+          "text": "function t.BeginBattleWithClient(t,a)"
+        },
+        {
+          "line": 588,
+          "text": "function t.BeginBattleWithServer_FightPlay()"
+        },
+        {
+          "line": 785,
+          "text": "function t.ProcedureNormalBattle_OnEnter(a)"
+        },
+        {
+          "line": 897,
+          "text": "function t.ProcedureNormalBattle_OnLeave()"
+        },
+        {
+          "line": 1225,
+          "text": "function t.ProcedureNormalBattle_TestBattle(t)"
+        },
+        {
+          "line": 1274,
+          "text": "function t.EnterBigSKillState(t)"
+        },
+        {
+          "line": 1375,
+          "text": "function t.SetBattleTeamTotalFirstValue(t)"
+        },
+        {
+          "line": 1581,
+          "text": "function t.LoadPlayerHeros(t,a,i,o)"
+        },
+        {
+          "line": 1687,
+          "text": "function t.LoadEnemyPlayerHeros(t,n,i,o)"
+        },
+        {
+          "line": 1791,
+          "text": "function t.LoadPlayerHero(h,n,i,s,r,a)"
+        },
+        {
+          "line": 4197,
+          "text": "function t.EnterBattleRoundNormalSkill()"
+        }
+      ],
+      "map_and_wave": [
+        {
+          "line": 54,
+          "text": "e.FightPlay_CurrWave=nil"
+        },
+        {
+          "line": 56,
+          "text": "e.FightBefore_CurrWave=nil"
+        },
+        {
+          "line": 62,
+          "text": "e.MapId=0"
+        },
+        {
+          "line": 70,
+          "text": "e.CurrMapsWavesIndex=0"
+        },
+        {
+          "line": 270,
+          "text": "FightDataReportMgr:VerifyStatistic(e.FightPlayData,e.CurrMapsWavesIndex,e.HeroDic[t])"
+        },
+        {
+          "line": 435,
+          "text": "e.LoadEnemyPlayerHeros(e.FightPlay_CurrWave.enemyTeamFormation,e.FightPlay_CurrWave.enemyTeamFormationAlter,e.FightPlay_CurrWave.enemyHeros,e.FightPlay_CurrWave.enemyPets)"
+        },
+        {
+          "line": 452,
+          "text": "e.MapId=t.mapId"
+        },
+        {
+          "line": 458,
+          "text": "e.CurrMapsWavesIndex=e.CurrMapsWavesIndex+1"
+        },
+        {
+          "line": 459,
+          "text": "e.FightPlay_CurrWave=t.waveData[e.CurrMapsWavesIndex]"
+        },
+        {
+          "line": 460,
+          "text": "e.MaxMapsWave=#t.waveData"
+        },
+        {
+          "line": 462,
+          "text": "FightDataReportMgr:InitReport(e.BattleType,e.MapId,RandomMgr.seed,t.ourPlayerId,t.enemyPlayerId,a)"
+        },
+        {
+          "line": 464,
+          "text": "e.InitSupplementHerosData(t,e.FightPlay_CurrWave)"
+        },
+        {
+          "line": 472,
+          "text": "e.MapId=t.mapId"
+        },
+        {
+          "line": 478,
+          "text": "e.CurrMapsWavesIndex=e.CurrMapsWavesIndex+1"
+        },
+        {
+          "line": 479,
+          "text": "e.FightBefore_CurrWave=e.FightBeforeData.waveData[e.CurrMapsWavesIndex]"
+        },
+        {
+          "line": 480,
+          "text": "e.MaxMapsWave=#t.waveData"
+        },
+        {
+          "line": 482,
+          "text": "e.FightPlay_CurrWave=e.FightBefore_CurrWave"
+        },
+        {
+          "line": 489,
+          "text": "FightDataReportMgr:InitReport(e.BattleType,e.MapId,RandomMgr.seed,t.ourPlayerId,t.enemyPlayerId,a)"
+        }
+      ],
+      "ui_and_result": [
+        {
+          "line": 188,
+          "text": "e.BattleResultReqCount=0"
+        },
+        {
+          "line": 757,
+          "text": "and ModulesInit.KillDragonsManager.CurFightInfo.resultShow"
+        },
+        {
+          "line": 758,
+          "text": "and ModulesInit.KillDragonsManager.CurFightInfo.resultShow.roomMember"
+        },
+        {
+          "line": 760,
+          "text": "local a=ModulesInit.KillDragonsManager.CurFightInfo.resultShow.roomMember"
+        },
+        {
+          "line": 836,
+          "text": "GameEntry.UI:OpenUIForm(UIFormId.UI_CommonLoading,{style=LoadingStyle.Cloud})"
+        },
+        {
+          "line": 852,
+          "text": "GameEntry.UI:OpenUIForm(UIFormId.UI_Global)"
+        },
+        {
+          "line": 1881,
+          "text": "GameEntry.UI:OpenUIForm(e.IsBattleTest and UIFormId.UI_TestBattle or UIFormId.UI_NormalBattle,{showOperMenu=e.showOperMenu})"
+        },
+        {
+          "line": 2285,
+          "text": "GameEntry.UI:OpenUIForm(UIFormId.UI_BattleVictory,t)"
+        },
+        {
+          "line": 2299,
+          "text": "if a==false and e.BattleResultReqCount>0 and t then"
+        },
+        {
+          "line": 2300,
+          "text": "e.BattleResultReqCount=e.BattleResultReqCount-1"
+        },
+        {
+          "line": 2307,
+          "text": "GameEntry.UI:OpenUIForm(UIFormId.UI_BattleFail,e)"
+        },
+        {
+          "line": 2309,
+          "text": "GameEntry.UI:OpenUIForm(UIFormId.UI_CommonLoading,{style=LoadingStyle.Black,blackAnimType=ELoadingBlackAnimType.Short,loadResFinish=function()"
+        },
+        {
+          "line": 2323,
+          "text": "if t==false and e.BattleResultReqCount>0 then"
+        },
+        {
+          "line": 2324,
+          "text": "e.BattleResultReqCount=e.BattleResultReqCount-1"
+        },
+        {
+          "line": 2331,
+          "text": "GameEntry.UI:OpenUIForm(UIFormId.UI_BattleFail,e)"
+        },
+        {
+          "line": 2343,
+          "text": "if t==false and e.BattleResultReqCount>0 then"
+        },
+        {
+          "line": 2344,
+          "text": "e.BattleResultReqCount=e.BattleResultReqCount-1"
+        },
+        {
+          "line": 2351,
+          "text": "GameEntry.UI:OpenUIForm(UIFormId.UI_BattleFail,e)"
+        }
+      ],
+      "test_payload": [
+        {
+          "line": 588,
+          "text": "function t.BeginBattleWithServer_FightPlay()"
+        },
+        {
+          "line": 589,
+          "text": "local t='{\"battleInfo\":{\"ourHeros\":[{\"heroDid\":1036,\"status\":2,\"rankLevel\":3,\"heroId\":51469,\"skills\":[{\"skillType\":1,\"skillDid\":1036101},{\"skillType\":1,\"skillDid\":1036201},{\"skillType\":1,\"skillDid\":1036301},{\"skillTyp..."
+        }
+      ]
+    },
+    "BattleManager": {
+      "manager": [
+        {
+          "line": 10,
+          "text": "local a=Class(\"BattleManager\")"
+        },
+        {
+          "line": 11,
+          "text": "function a:__init(n,d,a)"
+        },
+        {
+          "line": 15,
+          "text": "self.battleData=nil"
+        },
+        {
+          "line": 20,
+          "text": "self.battleData=e.New()"
+        },
+        {
+          "line": 22,
+          "text": "self.server:SetData(self.battleData)"
+        },
+        {
+          "line": 24,
+          "text": "self.client:SetData(self.battleData)"
+        },
+        {
+          "line": 25,
+          "text": "self.battleData:SetRefreshedCallback(self.client.OnDataRefreshed)"
+        },
+        {
+          "line": 30,
+          "text": "self.battleData=e.New()"
+        },
+        {
+          "line": 31,
+          "text": "self.client:SetData(self.battleData)"
+        },
+        {
+          "line": 35,
+          "text": "self.battleData=e.New()"
+        },
+        {
+          "line": 37,
+          "text": "self.server:SetData(self.battleData)"
+        }
+      ]
+    },
+    "BattleTeam": {
+      "team_setup": [
+        {
+          "line": 17,
+          "text": "function BattleTeam:New()"
+        },
+        {
+          "line": 76,
+          "text": "function BattleTeam:Init()"
+        },
+        {
+          "line": 141,
+          "text": "function BattleTeam:Reset()"
+        },
+        {
+          "line": 149,
+          "text": "function BattleTeam:ResetHeroDataWhenNextWave()"
+        },
+        {
+          "line": 165,
+          "text": "function BattleTeam:LoadTeamTreasure(o)"
+        },
+        {
+          "line": 231,
+          "text": "function BattleTeam:AddHeroCtrl(e)"
+        },
+        {
+          "line": 317,
+          "text": "function BattleTeam:GetHeroCtrl(t)"
+        },
+        {
+          "line": 331,
+          "text": "function BattleTeam:GetHeroCtrlWithBuffId(a)"
+        },
+        {
+          "line": 377,
+          "text": "function BattleTeam:GetHeroCtrlByStation(t)"
+        },
+        {
+          "line": 591,
+          "text": "function BattleTeam:GetHeroCtrlWithId(t)"
+        },
+        {
+          "line": 605,
+          "text": "function BattleTeam:GetHeroCtrlWithPos(a)"
+        },
+        {
+          "line": 1478,
+          "text": "function BattleTeam:ResetExplosiveState()"
+        },
+        {
+          "line": 1483,
+          "text": "function BattleTeam:ResetHerosRoundIsAttack(t)"
+        },
+        {
+          "line": 1496,
+          "text": "function BattleTeam:ResetPetRoundIsAttack(e)"
+        },
+        {
+          "line": 1580,
+          "text": "function BattleTeam:GetHeroCtrlWithAttrId(e,t,a)"
+        },
+        {
+          "line": 1583,
+          "text": "function BattleTeam:GetHeroCtrlWithAttrIdWithExcludeHeroId(e,n,i,t)"
+        },
+        {
+          "line": 1759,
+          "text": "function BattleTeam:ResetBuffInCurAttack()"
+        },
+        {
+          "line": 2622,
+          "text": "function BattleTeam:ResetHpHealthInTimeLine()"
+        }
+      ],
+      "attack_pipeline": [
+        {
+          "line": 3648,
+          "text": "function BattleTeam:TeamFightAttack(t,e)"
+        },
+        {
+          "line": 3653,
+          "text": "function BattleTeam:TeamFightBeginAttack()"
+        },
+        {
+          "line": 3661,
+          "text": "function BattleTeam:TeamFightAttackCoroutine()"
+        },
+        {
+          "line": 3779,
+          "text": "function BattleTeam:TeamFightAttackCoroutine_After(e,a,t)"
+        },
+        {
+          "line": 3796,
+          "text": "function BattleTeam:TeamFightAttackCoroutine_AfterAndCheckHurtValue(e,a,t)"
+        },
+        {
+          "line": 3801,
+          "text": "function BattleTeam:TeamFightAttackCoroutine_AfterAndCheckHeroDie(a,t,e)"
+        },
+        {
+          "line": 3806,
+          "text": "function BattleTeam:TeamFightAttackCoroutine_AfterAndEnd(e,e,e)"
+        },
+        {
+          "line": 3835,
+          "text": "function BattleTeam:OnTeamFightAttackComplete()"
+        }
+      ],
+      "skill_effect_bridge": [
+        {
+          "line": 1325,
+          "text": "if e~=nil and e:GetCanPetFightAttack(e.PetFightSkillId,t)then"
+        },
+        {
+          "line": 3686,
+          "text": "FightDataReportMgr:SetErrorCode(ServerErrorCode.SkillIdNoExists,string.format(\"技能Id不存在 TeamId %s TeamSkillId %s\",self.TeamId,o))"
+        },
+        {
+          "line": 3719,
+          "text": "ModulesInit.BattleSkillEffectManager.ResetStateOnStart()"
+        },
+        {
+          "line": 3728,
+          "text": "ModulesInit.BattleSkillEffectManager.CurrTimelineEffect=o:GetComponent(typeof(CS.YouYou.TimelineEffect))"
+        },
+        {
+          "line": 3729,
+          "text": "if ModulesInit.BattleSkillEffectManager.CurrTimelineEffect==nil then"
+        },
+        {
+          "line": 3730,
+          "text": "GameInit.LogErrorAndUpdate(\"battle TeamFightAttack CurrTimelineEffect == nil , skillPrefabId = \"..tostring(a))"
+        },
+        {
+          "line": 3732,
+          "text": "BuildPatchMgr:PlayTimeLine(ModulesInit.BattleSkillEffectManager.CurrTimelineEffect)"
+        },
+        {
+          "line": 3735,
+          "text": "ModulesInit.ProcedureNormalBattle.CurrTimelineEffectAttackPointCount=ModulesInit.BattleSkillEffectManager.CurrTimelineEffect.AttackPointCount"
+        },
+        {
+          "line": 3737,
+          "text": "ModulesInit.BattleSkillEffectManager.CurrTimelineEffect.OnStopped=function()"
+        },
+        {
+          "line": 3741,
+          "text": "ModulesInit.BattleSkillEffectManager:StopCurVideo()"
+        },
+        {
+          "line": 3775,
+          "text": "C:PlaySkillPrefabAndRemoveAsyncPreload(a,TeamFightAttack)"
+        },
+        {
+          "line": 3790,
+          "text": "ModulesInit.BattleSkillEffectManager.DespawnAllTrans()"
+        },
+        {
+          "line": 3791,
+          "text": "ModulesInit.BattleSkillEffectManager.CameraControlReset()"
+        },
+        {
+          "line": 3792,
+          "text": "ModulesInit.BattleSkillEffectManager.KillTweener()"
+        }
+      ],
+      "death_and_hurt_checks": [
+        {
+          "line": 1695,
+          "text": "function BattleTeam:CheckHeroDie(a)"
+        },
+        {
+          "line": 1749,
+          "text": "function BattleTeam:CheckHeroDieWhenWaiting()"
+        },
+        {
+          "line": 2385,
+          "text": "ModulesInit.ProcedureNormalBattle.CheckHeroDieWhenWaiting()"
+        },
+        {
+          "line": 2402,
+          "text": "ModulesInit.ProcedureNormalBattle.CheckHeroDieWhenWaiting()"
+        },
+        {
+          "line": 2589,
+          "text": "function BattleTeam:CheckHurtValue(t)"
+        },
+        {
+          "line": 2598,
+          "text": "e:CheckHurtValue()"
+        },
+        {
+          "line": 3698,
+          "text": "ModulesInit.ProcedureNormalBattle.CurrAttackCauseHeroDie=false"
+        },
+        {
+          "line": 3712,
+          "text": "self:TeamFightAttackCoroutine_AfterAndCheckHurtValue(nil,t,e.type)"
+        },
+        {
+          "line": 3748,
+          "text": "if(ModulesInit.ProcedureNormalBattle.isBattleEnd)then"
+        },
+        {
+          "line": 3794,
+          "text": "self:TeamFightAttackCoroutine_AfterAndCheckHurtValue(e,a,t)"
+        },
+        {
+          "line": 3796,
+          "text": "function BattleTeam:TeamFightAttackCoroutine_AfterAndCheckHurtValue(e,a,t)"
+        },
+        {
+          "line": 3797,
+          "text": "ModulesInit.ProcedureNormalBattle.CheckHurtValue(function()"
+        },
+        {
+          "line": 3798,
+          "text": "self:TeamFightAttackCoroutine_AfterAndCheckHeroDie(e,a,t)"
+        },
+        {
+          "line": 3801,
+          "text": "function BattleTeam:TeamFightAttackCoroutine_AfterAndCheckHeroDie(a,t,e)"
+        },
+        {
+          "line": 3802,
+          "text": "ModulesInit.ProcedureNormalBattle.CheckHeroDie(function()"
+        },
+        {
+          "line": 3810,
+          "text": "if(ModulesInit.ProcedureNormalBattle.isBattleEnd)then"
+        },
+        {
+          "line": 3817,
+          "text": "local t=ModulesInit.ProcedureNormalBattle.CurrAttackCauseHeroDie and 0.5 or 0"
+        }
+      ]
+    },
+    "HeroCtrl": {
+      "data_sources": [
+        {
+          "line": 21,
+          "text": "local i=require(\"DataNode/DataTable/Create/skillAct/DTSkillActDBModel\")"
+        },
+        {
+          "line": 22,
+          "text": "local m=require(\"DataNode/DataTable/Create/skillAct/DTSkillPasDBModel\")"
+        },
+        {
+          "line": 23,
+          "text": "local n=require(\"DataNode/DataTable/Create/model/DTmodelDBModel\")"
+        },
+        {
+          "line": 26,
+          "text": "local t=require(\"DataNode/DataTable/Create/skillAct/DTBuffDBModel\")"
+        },
+        {
+          "line": 124,
+          "text": "self.DTMonsterRow=nil"
+        },
+        {
+          "line": 125,
+          "text": "self.HeroServerData=nil"
+        },
+        {
+          "line": 127,
+          "text": "self.DTmodelRow=nil"
+        },
+        {
+          "line": 128,
+          "text": "self.PrefabId=0"
+        },
+        {
+          "line": 129,
+          "text": "self.haloPrefabId=0"
+        },
+        {
+          "line": 321,
+          "text": "self.petPrefabId=0"
+        },
+        {
+          "line": 329,
+          "text": "self.mCurTransferSkinPrefabId=0"
+        },
+        {
+          "line": 330,
+          "text": "self.mRecordTransferSkinPrefabId=0"
+        },
+        {
+          "line": 368,
+          "text": "self.CurImmnuneSepsisHpPrefabId=0"
+        },
+        {
+          "line": 369,
+          "text": "self.ImmuneSepsisHpEffectPrefabId=0"
+        },
+        {
+          "line": 590,
+          "text": "self.DTmodelRow=n.GetEntity(o)"
+        },
+        {
+          "line": 591,
+          "text": "self.PrefabId=self.DTmodelRow.prefabId"
+        },
+        {
+          "line": 592,
+          "text": "self.petPrefabId=self.DTmodelRow.petPainting"
+        },
+        {
+          "line": 593,
+          "text": "self.haloPrefabId=self.DTmodelRow.haloPrefabId"
+        }
+      ],
+      "spine_setup": [
+        {
+          "line": 57,
+          "text": "self.spineboy=nil"
+        },
+        {
+          "line": 58,
+          "text": "self.spineboyTransform=nil"
+        },
+        {
+          "line": 309,
+          "text": "self.spineboyScale=1"
+        },
+        {
+          "line": 317,
+          "text": "self.spinePet=nil"
+        },
+        {
+          "line": 1268,
+          "text": "self.spinePet=nil"
+        },
+        {
+          "line": 1299,
+          "text": "self.spinePet=e:GetComponent(typeof(CS.Spine.Unity.SkeletonAnimation))"
+        },
+        {
+          "line": 1306,
+          "text": "self:RefreshSpinePetScale()"
+        },
+        {
+          "line": 1319,
+          "text": "if not IsNil(self.spineboyTransform)then"
+        },
+        {
+          "line": 1320,
+          "text": "self.spineboyTransform:DOKill()"
+        },
+        {
+          "line": 1322,
+          "text": "self:SetSpineInvisible(false)"
+        },
+        {
+          "line": 1327,
+          "text": "self.spineboy=nil"
+        },
+        {
+          "line": 1328,
+          "text": "self.spineboyTransform=nil"
+        },
+        {
+          "line": 1354,
+          "text": "self.spineboy=e:GetComponent(typeof(CS.Spine.Unity.SkeletonAnimation))"
+        },
+        {
+          "line": 1355,
+          "text": "self.spineboyTransform=self.spineboy.transform"
+        },
+        {
+          "line": 1356,
+          "text": "self.topBone=self.spineboy.skeleton:FindBone(\"top\")"
+        },
+        {
+          "line": 1357,
+          "text": "self.pointBone=self.spineboy.skeleton:FindBone(\"point\")"
+        },
+        {
+          "line": 1368,
+          "text": "self:RefreshSpineBoyScale()"
+        },
+        {
+          "line": 1372,
+          "text": "self:SetSpineInvisible(false)"
+        }
+      ],
+      "animation_state": [
+        {
+          "line": 1120,
+          "text": "return self.DTmodelRow.deathEffectScale"
+        },
+        {
+          "line": 1382,
+          "text": "local t=e:FindAnimation(\"strike\")"
+        },
+        {
+          "line": 1388,
+          "text": "local t=e:FindAnimation(\"strike2\")"
+        },
+        {
+          "line": 1394,
+          "text": "local t=e:FindAnimation(\"death\")"
+        },
+        {
+          "line": 1396,
+          "text": "self.AnimLenDic[\"death\"]=t.Duration"
+        },
+        {
+          "line": 1398,
+          "text": "local t=e:FindAnimation(\"change\")"
+        },
+        {
+          "line": 1420,
+          "text": "self:SetSpineAnimation(0,\"run\",true)"
+        },
+        {
+          "line": 1440,
+          "text": "Vector3(self.DTmodelRow.standHeadOffsetX,self.DTmodelRow.standHeadOffsetY,0),"
+        },
+        {
+          "line": 1745,
+          "text": "function HeroCtrl:PlaySpineAnim(o,a,e,t)"
+        },
+        {
+          "line": 1754,
+          "text": "local t=self:SetSpineAnimation(0,o,a,t)"
+        },
+        {
+          "line": 1763,
+          "text": "self:ChangeToIdleAfterPlaySpineAnim(a)"
+        },
+        {
+          "line": 1767,
+          "text": "function HeroCtrl:PlaySpineAnims(i,a,e,s,r,h)"
+        },
+        {
+          "line": 1831,
+          "text": "a=self:AddSpineAnimation(0,i,true,0,h)"
+        },
+        {
+          "line": 1833,
+          "text": "a=self:AddSpineAnimation(0,i,false,0,h)"
+        },
+        {
+          "line": 1837,
+          "text": "if e~=t or i~=\"stand\"then"
+        },
+        {
+          "line": 1850,
+          "text": "self:ChangeToIdleAfterPlaySpineAnim(o)"
+        },
+        {
+          "line": 1853,
+          "text": "function HeroCtrl:ChangeToIdleAfterPlaySpineAnim(t)"
+        },
+        {
+          "line": 1917,
+          "text": "if e==\"stand\"then"
+        }
+      ],
+      "hurt_damage": [
+        {
+          "line": 5,
+          "text": "local E=require(\"Modules/Battle/HeroState/HurtState\")"
+        },
+        {
+          "line": 120,
+          "text": "self.CurrHurtNum=nil"
+        },
+        {
+          "line": 136,
+          "text": "self.WillHurtValueDic={}"
+        },
+        {
+          "line": 137,
+          "text": "self.willHurtQueue=nil"
+        },
+        {
+          "line": 138,
+          "text": "self.WillThornHurtValueQueue=nil"
+        },
+        {
+          "line": 140,
+          "text": "self.needHurtValue=0"
+        },
+        {
+          "line": 141,
+          "text": "self.hurtBeforeHP=0"
+        },
+        {
+          "line": 142,
+          "text": "self.needHurtArmorValue=0"
+        },
+        {
+          "line": 143,
+          "text": "self.hurtBeforeArmor=0"
+        },
+        {
+          "line": 145,
+          "text": "self.hurtBeforeSepsisHP=0"
+        },
+        {
+          "line": 146,
+          "text": "self.hurtBeforeCurrMaxHP=0"
+        },
+        {
+          "line": 147,
+          "text": "self.hurtBeforeCurrSepsisHp=0"
+        },
+        {
+          "line": 162,
+          "text": "self.PrevHurtCategory=0"
+        },
+        {
+          "line": 163,
+          "text": "self.PrevTotalHurtValue=0"
+        },
+        {
+          "line": 164,
+          "text": "self.HurtNumType=nil"
+        },
+        {
+          "line": 215,
+          "text": "self.hurtLimit=0"
+        },
+        {
+          "line": 219,
+          "text": "self.ImmuneReduceFury=false"
+        },
+        {
+          "line": 236,
+          "text": "self.WillAddFuryWithSkill=0"
+        }
+      ],
+      "effect_prefab": [
+        {
+          "line": 128,
+          "text": "self.PrefabId=0"
+        },
+        {
+          "line": 129,
+          "text": "self.haloPrefabId=0"
+        },
+        {
+          "line": 321,
+          "text": "self.petPrefabId=0"
+        },
+        {
+          "line": 329,
+          "text": "self.mCurTransferSkinPrefabId=0"
+        },
+        {
+          "line": 330,
+          "text": "self.mRecordTransferSkinPrefabId=0"
+        },
+        {
+          "line": 368,
+          "text": "self.CurImmnuneSepsisHpPrefabId=0"
+        },
+        {
+          "line": 369,
+          "text": "self.ImmuneSepsisHpEffectPrefabId=0"
+        },
+        {
+          "line": 591,
+          "text": "self.PrefabId=self.DTmodelRow.prefabId"
+        },
+        {
+          "line": 592,
+          "text": "self.petPrefabId=self.DTmodelRow.petPainting"
+        },
+        {
+          "line": 593,
+          "text": "self.haloPrefabId=self.DTmodelRow.haloPrefabId"
+        },
+        {
+          "line": 594,
+          "text": "if self.petPrefabId>0 then"
+        },
+        {
+          "line": 620,
+          "text": "self.PrefabId=self.DTmodelRow.prefabId"
+        },
+        {
+          "line": 621,
+          "text": "self.petPrefabId=self.DTmodelRow.petPainting"
+        },
+        {
+          "line": 622,
+          "text": "self.haloPrefabId=self.DTmodelRow.haloPrefabId"
+        },
+        {
+          "line": 667,
+          "text": "self.PrefabId=self.DTmodelRow.prefabId"
+        },
+        {
+          "line": 668,
+          "text": "self.petPrefabId=self.DTmodelRow.petPainting"
+        },
+        {
+          "line": 669,
+          "text": "self.haloPrefabId=self.DTmodelRow.haloPrefabId"
+        },
+        {
+          "line": 706,
+          "text": "if self.petPrefabId>0 then"
+        }
+      ]
+    },
+    "HeroBattleInfo": {
+      "skills": [
+        {
+          "line": 655,
+          "text": "self.CurrHeroCtrl.SkillMode=e.skillMode"
+        },
+        {
+          "line": 656,
+          "text": "if(e.skillMode==SkillMode.Normal)then"
+        },
+        {
+          "line": 664,
+          "text": "e.SkillDid=self.CurrHeroCtrl.NormalSkillId"
+        },
+        {
+          "line": 670,
+          "text": "e.SkillDid=self.CurrHeroCtrl.SmallSkillId"
+        },
+        {
+          "line": 676,
+          "text": "e.SkillDid=self.CurrHeroCtrl.BigSkillId"
+        },
+        {
+          "line": 679,
+          "text": "elseif(e.skillMode==SkillMode.DragonWar)then"
+        },
+        {
+          "line": 688,
+          "text": "t.SkillDid=e.monSkill1"
+        },
+        {
+          "line": 694,
+          "text": "t.SkillDid=e.monSkill2"
+        },
+        {
+          "line": 700,
+          "text": "t.SkillDid=e.monSkill3"
+        },
+        {
+          "line": 706,
+          "text": "t.SkillDid=e.monSkill4"
+        },
+        {
+          "line": 716,
+          "text": "e.SkillDid=t"
+        },
+        {
+          "line": 723,
+          "text": "if(e.SkillDid==t)then"
+        },
+        {
+          "line": 886,
+          "text": "function HeroBattleInfo:SetHeroSkill(e)"
+        },
+        {
+          "line": 891,
+          "text": "self.CurrHeroCtrl.SkillMode=e.skillMode"
+        },
+        {
+          "line": 892,
+          "text": "if(e.skillMode==SkillMode.DragonWar)then"
+        },
+        {
+          "line": 898,
+          "text": "local t=t.skillDid==nil and 0 or t.skillDid"
+        },
+        {
+          "line": 914,
+          "text": "local t=t.skillDid==nil and 0 or t.skillDid"
+        },
+        {
+          "line": 940,
+          "text": "function HeroBattleInfo:SetPetSkill(e)"
+        }
+      ],
+      "buffs": [
+        {
+          "line": 72,
+          "text": "BuffDic={},"
+        },
+        {
+          "line": 73,
+          "text": "BuffValueDic={},"
+        },
+        {
+          "line": 74,
+          "text": "TempBuffValueDic={},"
+        },
+        {
+          "line": 79,
+          "text": "BeforeTimeLineBuffValueDic={},"
+        },
+        {
+          "line": 82,
+          "text": "immuneBuffMap={},"
+        },
+        {
+          "line": 83,
+          "text": "mCtrlBuffImmuneMap={},"
+        },
+        {
+          "line": 93,
+          "text": "function HeroBattleInfo:DisposeBuff()"
+        },
+        {
+          "line": 95,
+          "text": "GameInit.LogError(\"Call HeroBattleInfo:DisposeBuff() When isTimeLine!\")"
+        },
+        {
+          "line": 98,
+          "text": "local e=self:GetBuffSortArr()"
+        },
+        {
+          "line": 101,
+          "text": "self:RemoveBuffWithId(e.buffId,BuffRemoveType.Expire)"
+        },
+        {
+          "line": 103,
+          "text": "self.BuffDic={}"
+        },
+        {
+          "line": 104,
+          "text": "self.BuffValueDic={}"
+        },
+        {
+          "line": 105,
+          "text": "self.TempBuffValueDic={}"
+        },
+        {
+          "line": 173,
+          "text": "local e=self:GetBuffSortArr()"
+        },
+        {
+          "line": 176,
+          "text": "self:RemoveBuffWithId(e.buffId,BuffRemoveType.Expire)"
+        },
+        {
+          "line": 179,
+          "text": "self.BuffDic={}"
+        },
+        {
+          "line": 180,
+          "text": "self.BuffValueDic={}"
+        },
+        {
+          "line": 181,
+          "text": "self.TempBuffValueDic={}"
+        }
+      ],
+      "attrs": [
+        {
+          "line": 1,
+          "text": "local e=require(\"DataNode/DataTable/Create/constant/DTBattleAttrDBModel\")"
+        },
+        {
+          "line": 21,
+          "text": "Fury=Constant.battle_fury_max,"
+        },
+        {
+          "line": 22,
+          "text": "OriginalFury=0,"
+        },
+        {
+          "line": 23,
+          "text": "CurrFury=0,"
+        },
+        {
+          "line": 24,
+          "text": "BeforeTimeLineFury=0,"
+        },
+        {
+          "line": 25,
+          "text": "OverdrawFury=0,"
+        },
+        {
+          "line": 26,
+          "text": "BeforeTimeLineOverdrawFury=0,"
+        },
+        {
+          "line": 29,
+          "text": "Critical=0,"
+        },
+        {
+          "line": 30,
+          "text": "CriticalRes=0,"
+        },
+        {
+          "line": 31,
+          "text": "CriticalStrength=0,"
+        },
+        {
+          "line": 61,
+          "text": "petCritical=0,"
+        },
+        {
+          "line": 62,
+          "text": "petCriticalRes=0,"
+        },
+        {
+          "line": 63,
+          "text": "petCriticalStrength=0,"
+        },
+        {
+          "line": 68,
+          "text": "petCriticalStrengthRes=0,"
+        },
+        {
+          "line": 85,
+          "text": "BeansStatFury=0,"
+        },
+        {
+          "line": 86,
+          "text": "BeforeTimeLineBeansStatFury=0,"
+        },
+        {
+          "line": 122,
+          "text": "self.Fury=Constant.battle_fury_max"
+        },
+        {
+          "line": 123,
+          "text": "self.OriginalFury=0"
+        }
+      ]
+    },
+    "BattleInputMgr": {
+      "input": [
+        {
+          "line": 4,
+          "text": "self.currentAuto=false"
+        },
+        {
+          "line": 7,
+          "text": "function e:SetAuto(e)"
+        },
+        {
+          "line": 8,
+          "text": "self.currentAuto=e"
+        },
+        {
+          "line": 13,
+          "text": "function e:SendEventDataRefreshed()"
+        },
+        {
+          "line": 22,
+          "text": "elseif self.currentAuto then"
+        },
+        {
+          "line": 23,
+          "text": "e=self:GenOneInputAuto()"
+        },
+        {
+          "line": 29,
+          "text": "self:SendEventDataRefreshed()"
+        },
+        {
+          "line": 31,
+          "text": "function e:GenOneInputAuto()"
+        }
+      ]
+    },
+    "BattleUtil": {
+      "utility": [
+        {
+          "line": 1,
+          "text": "local w=require(\"DataNode/DataTable/Create/skillAct/DTSkillActDBModel\")"
+        },
+        {
+          "line": 10,
+          "text": "local u=require(\"DataNode/DataTable/Create/treasure/DTTreasureSkillDBModel\")"
+        },
+        {
+          "line": 23,
+          "text": "function e:CheckCanTriggerAttackTask(e)"
+        },
+        {
+          "line": 24,
+          "text": "if e==ETriggerSkillAtkType.Normal"
+        },
+        {
+          "line": 25,
+          "text": "or e==ETriggerSkillAtkType.PursuitComboAttack then"
+        },
+        {
+          "line": 30,
+          "text": "function e:IsNormalSkillAtkType(e)"
+        },
+        {
+          "line": 31,
+          "text": "if e==ETriggerSkillAtkType.Normal then"
+        },
+        {
+          "line": 36,
+          "text": "function e:IsPreventSkillAtkType(e)"
+        },
+        {
+          "line": 37,
+          "text": "if e~=ETriggerSkillAtkType.Normal"
+        },
+        {
+          "line": 38,
+          "text": "and e~=ETriggerSkillAtkType.PursuitAttackMate then"
+        },
+        {
+          "line": 43,
+          "text": "function e:AddTriggerAttackTask(s,i,t,n)"
+        },
+        {
+          "line": 59,
+          "text": "local o=EBattleActionType.NormalOrSmallSkill"
+        },
+        {
+          "line": 60,
+          "text": "local a=e:GetSkillActData(i)"
+        },
+        {
+          "line": 62,
+          "text": "GameInit.LogError(\"BattleUtil:AddAttackTask drSkillData is nil skillDid = %s \",i)"
+        },
+        {
+          "line": 65,
+          "text": "local h=ModulesInit.ProcedureNormalBattle.GetHeroCtrl(s)"
+        },
+        {
+          "line": 70,
+          "text": "if ModulesInit.ProcedureNormalBattle.IsHeroSkillAttackState()==false then"
+        },
+        {
+          "line": 74,
+          "text": "if e:CheckCanTriggerAttackTask(n.triggerSkillAtkType)==false then"
+        },
+        {
+          "line": 84,
+          "text": "o=EBattleActionType.NormalOrSmallSkill"
+        }
+      ]
+    },
+    "fight_info": {
+      "schema": [
+        {
+          "line": 6,
+          "text": "waveData={"
+        },
+        {
+          "line": 13,
+          "text": "heroDid=1141011,"
+        },
+        {
+          "line": 14,
+          "text": "heroId=-1"
+        },
+        {
+          "line": 20,
+          "text": "heroDid=1141012,"
+        },
+        {
+          "line": 21,
+          "text": "heroId=-2"
+        },
+        {
+          "line": 27,
+          "text": "heroDid=1141013,"
+        },
+        {
+          "line": 28,
+          "text": "heroId=-3"
+        },
+        {
+          "line": 37,
+          "text": "actionData={"
+        },
+        {
+          "line": 39,
+          "text": "heroId=100174402,"
+        },
+        {
+          "line": 41,
+          "text": "actionType=2"
+        },
+        {
+          "line": 47,
+          "text": "actionData={"
+        },
+        {
+          "line": 49,
+          "text": "heroId=-2,"
+        },
+        {
+          "line": 51,
+          "text": "actionType=2"
+        },
+        {
+          "line": 54,
+          "text": "heroId=-3,"
+        },
+        {
+          "line": 56,
+          "text": "actionType=2"
+        },
+        {
+          "line": 67,
+          "text": "actionData={"
+        },
+        {
+          "line": 69,
+          "text": "heroId=100174402,"
+        },
+        {
+          "line": 71,
+          "text": "actionType=1"
+        }
+      ]
+    }
+  }
+}

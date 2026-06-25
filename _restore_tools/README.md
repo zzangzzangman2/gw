@@ -76,7 +76,19 @@
 - `91_OPEN_ROUTE_TMP_STATE_AFTER_MATERIAL.cmd`: route TMP 상태 분석 MD 열기
 - `92_OPEN_ROUTE_RECT_OVERRIDE_PLAN.cmd`: zero-height route TMP rect override 계획 MD 열기
 - `93_PUSH_TO_GITHUB_MAIN.cmd`: 현재 `girlswar` 루트를 GitHub `zzangzzangman2/gw` main으로 push
-- `94_SHOW_GIT_PUSH_STATUS.cmd`: git status, remote, 마지막 push 로그 확인
+- `94_SHOW_GIT_PUSH_STATUS.cmd`: tracked/untracked/LFS 요약, remote main, 실행 중인 push 프로세스 age/CPU, push 로그 tail 확인
 - `95_PUSH_TO_GITHUB_MAIN_BACKGROUND.cmd`: GitHub main push를 hidden background 프로세스로 시작
+- `96_EXPORT_ACTIVE_TMP_VARIANT_FONT_ASSETS.cmd`: active TMP shared material 기준 variant FontAsset glyph/character/atlas evidence 추출
+- `97_PROBE_ACTIVE_TMP_VARIANT_FONT_ASSETS.cmd`: 추출된 active TMP variant FontAsset을 Unity static TMP asset으로 probe
+- `990_OPEN_WORK_SPLIT_STATUS.cmd`: UI/전투 전용 채팅 분리와 GitHub push 상태 MD 열기
+- `991_PUSH_LATEST_TO_GITHUB_MAIN_AFTER_CURRENT.cmd`: 현재 LFS push가 끝난 뒤 최신 변경분 커밋/push
+- `992_PUSH_LATEST_TO_GITHUB_MAIN_AFTER_CURRENT_BACKGROUND.cmd`: 후속 push watcher를 hidden background 프로세스로 시작
+
+## 현재 Battle 핵심 CMD
+
+- `BATTLE_01_BUILD_RESTORE_INDEX.cmd`: battle 관련 AssetBundle/TextAsset/image/XLua 후보 인덱스와 복원 계획 생성
+- `BATTLE_02_EXTRACT_DECODE_XLUA.cmd`: battle/procedure/skill/buff XLua raw TextAsset 추출 및 `SecurityUtil.xorScale` decode
+- `BATTLE_03_OPEN_REPORTS.cmd`: battle 리포트 폴더 열기
+- `BATTLE_04_ANALYZE_DECODED_FLOW.cmd`: decoded battle Lua에서 `ProcedureNormalBattle`, `BattleTeam`, `HeroCtrl` 중심 진입/이벤트/맵웨이브 흐름 분석
 
 메인 폴더에는 작업 루트 폴더만 남기고, 실행 도구와 보고서는 각각 `_restore_tools`, `reports` 아래에서 관리한다.

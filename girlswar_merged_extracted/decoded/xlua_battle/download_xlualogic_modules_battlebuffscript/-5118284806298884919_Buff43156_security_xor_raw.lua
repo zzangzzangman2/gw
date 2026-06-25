@@ -1,0 +1,38 @@
+local a={}
+local n=a
+function a.GetCanAdd(e,e)
+return true
+end
+function a.DoAction(e,t,i,o,o,a)
+if e==nil or e.CurrHeroCtrl==nil or e.CurrHeroCtrl.HeroBattleInfo==nil or e.CurrHeroCtrl.HeroBattleInfo.CurrHP<=0 then
+return
+end
+if a.buffTriggerTime==BuffTriggerTime.now then
+e.CurrHeroCtrl.HeroBattleInfo:AddBuffValue(e.buffId,t[1],t[2])
+e.CurrHeroCtrl.HeroBattleInfo:AddBuffValue(e.buffId,t[3],t[4])
+elseif a.buffTriggerTime==BuffTriggerTime.attack then
+if t[5]>0 then
+local a=(1-i:CurrHPPer())*OneMillion/t[5]
+local o=math.floor(t[7]*a)
+if o>0 then
+local a=HeroBuffValueInfo:New()
+a.buffId=e.buffId
+a.attrId=t[6]
+a.value=o
+i.HeroBattleInfo:AddTempBuffValue(a)
+end
+end
+end
+return nil
+end
+function a.GetCanTrigger(e)
+if(e==BuffTriggerTime.now
+or e==BuffTriggerTime.attack)then
+return true
+end
+return false
+end
+function a.SetLogicData(e,e)
+end
+return n
+

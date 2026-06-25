@@ -12,6 +12,7 @@ girlswar_maininterface_unity/*.sln
 # Local probe/build scratch work. Scripts, reports, logs, templates, and vendor files stay tracked.
 _restore_tools/work/
 _restore_tools/logs/github_push_main.log
+_restore_tools/logs/github_push_followup_main.log
 
 # OS/editor noise
 Thumbs.db
