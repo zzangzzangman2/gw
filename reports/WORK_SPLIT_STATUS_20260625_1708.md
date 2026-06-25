@@ -513,3 +513,13 @@
   - map sprite sheet: `reports\battle\BATTLE_29_MAP_11003_SPRITE_CONTACT_SHEET.jpg`
 - Next battle blocker:
   - `BATTLE_30_VERIFY_HERO_CARD_RUNTIME_LAYOUT_AND_ATTACH_ACTOR_ANIMATION_TRACE`
+
+## Update 2026-06-25 20:32 KST
+
+### Root CMD Cleanup
+
+- Root command shortcuts were moved, not deleted: `33` files from root to `_restore_tools\root_cmd_archive\`.
+- Root now keeps one entry point: `00_COMMAND_CENTER.cmd`.
+- Active tool scripts remain under `_restore_tools\`; old root one-click launchers remain available in `_restore_tools\root_cmd_archive\` for checking.
+- Root guidance was added in `README_COMMANDS.md`.
+- This cleanup intentionally did not stage or change battle Unity scene/log modifications from the battle work area.
