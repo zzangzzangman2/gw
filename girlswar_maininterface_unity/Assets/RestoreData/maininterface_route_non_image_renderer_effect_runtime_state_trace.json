@@ -1,0 +1,278 @@
+﻿{
+  "generatedAt": "2026-06-25 21:02:00",
+  "visualVerdict": "not_normal_trace_only",
+  "newVisualFixApplied": 0,
+  "rowCount": 24,
+  "actionClassCounts": {
+    "applyable_already_applied": 4,
+    "blocked": 5,
+    "trace-only": 15
+  },
+  "decisionCounts": {
+    "blocked_particle_runtime_material_binding": 4,
+    "blocked_spine_runtime_slot_bone_animation_required": 1,
+    "keep_existing_region_layer": 3,
+    "keep_existing_three_layer_bitmap_fallback": 1,
+    "preserve_original_inactive_guide_state": 1,
+    "preserve_original_route_parent_state": 6,
+    "preserve_original_zero_scale_runtime_state": 2,
+    "trace_only_inactive_parent_chain": 1,
+    "trace_only_preserve_original_state": 2,
+    "trace_only_redpoint_skeleton_child_inactive": 1,
+    "trace_only_slot_transform_missing": 2
+  },
+  "clickValidation": {
+    "generatedAt": "2026-06-25 21:01:57",
+    "activeClickableBlockedInvoked": "24 / 24 / 0 / 24"
+  },
+  "capture": {
+    "path": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_maininterface_unity\\Assets\\RestoreCaptures\\maininterface_restored_1680x720.png",
+    "exists": true,
+    "length": 1525113,
+    "lastWriteTime": "2026-06-25 21:01:53 KST"
+  },
+  "csv": "Assets/RestoreData/reports/maininterface_route_non_image_renderer_effect_runtime_state_trace.csv",
+  "report": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\maininterface\\MAININTERFACE_ROUTE_NON_IMAGE_RENDERER_EFFECT_RUNTIME_STATE_TRACE_RESULT.md",
+  "rows": [
+    {
+      "category": "skeleton_graphic",
+      "actionClass": "applyable_already_applied",
+      "decision": "keep_existing_three_layer_bitmap_fallback",
+      "candidate": "spine_diqiu",
+      "owner": "wanfaWorldNode",
+      "originalPath": "UI_MainInterface(5568884429252053541)/right(6922878451781464554)/node_middle(9056630568254389742)/wanfaWorldNode(-3820167396480157270)/worldwanfaBtn(3512211464843089861)/spine_diqiu(-1766545527926586392)",
+      "currentPath": "Canvas_MainInterface_1280x720/MainInterface_Root_From_RectTransform_CSV/UI_MainInterface__5568884429252053541/right__6922878451781464554/node_middle__9056630568254389742/wanfaWorldNode__-3820167396480157270/worldwanfaBtn__3512211464843089861/spine_diqiu__-1766545527926586392",
+      "reason": "SkeletonGraphic evidence points to Spine_shijieanniu; only atlas regions with clear worldwanfaBtn/frame evidence are allowed. zhuye_di1/diqiu/zhuye_bian are already applied."
+    },
+    {
+      "category": "skeleton_graphic",
+      "actionClass": "blocked",
+      "decision": "blocked_spine_runtime_slot_bone_animation_required",
+      "candidate": "spine_xiaoren",
+      "owner": "wanfaWorldNode",
+      "originalPath": "UI_MainInterface(5568884429252053541)/right(6922878451781464554)/node_middle(9056630568254389742)/wanfaWorldNode(-3820167396480157270)/spine_xiaoren(3375689855543054311)",
+      "currentPath": "Canvas_MainInterface_1280x720/MainInterface_Root_From_RectTransform_CSV/UI_MainInterface__5568884429252053541/right__6922878451781464554/node_middle__9056630568254389742/wanfaWorldNode__-3820167396480157270/spine_xiaoren__3375689855543054311",
+      "reason": "8007 texture and SkeletonData are known, but the active node uses animation run at localScale 0.5; applying a whole texture or guessed crop would violate sprite/slot evidence gates."
+    },
+    {
+      "category": "atlas_region",
+      "actionClass": "applyable_already_applied",
+      "decision": "keep_existing_region_layer",
+      "candidate": "diqiu",
+      "owner": "worldwanfaBtn",
+      "originalPath": "Spine_shijieanniu.atlas/diqiu",
+      "currentPath": "worldwanfaBtn/route_fallback_diqiu",
+      "reason": "Globe attachment is proven under active spine_diqiu; current fallback is intentionally normalized to the original button rect until Spine runtime is restored."
+    },
+    {
+      "category": "atlas_region",
+      "actionClass": "trace-only",
+      "decision": "trace_only_slot_transform_missing",
+      "candidate": "yun",
+      "owner": "worldwanfaBtn",
+      "originalPath": "Spine_shijieanniu.atlas/yun",
+      "currentPath": "",
+      "reason": "Cloud region is cropped, but original Spine slot/bone transform is not decoded; placing it by eye would be coordinate-only."
+    },
+    {
+      "category": "atlas_region",
+      "actionClass": "trace-only",
+      "decision": "trace_only_slot_transform_missing",
+      "candidate": "yun2",
+      "owner": "worldwanfaBtn",
+      "originalPath": "Spine_shijieanniu.atlas/yun2",
+      "currentPath": "",
+      "reason": "Cloud region is cropped, but original Spine slot/bone transform is not decoded; placing it by eye would be coordinate-only."
+    },
+    {
+      "category": "atlas_region",
+      "actionClass": "applyable_already_applied",
+      "decision": "keep_existing_region_layer",
+      "candidate": "zhuye_bian",
+      "owner": "worldwanfaBtn",
+      "originalPath": "Spine_shijieanniu.atlas/zhuye_bian",
+      "currentPath": "worldwanfaBtn/route_fallback_zhuye_bian",
+      "reason": "Border/rim layer is same skeleton atlas and centered under worldwanfaBtn."
+    },
+    {
+      "category": "atlas_region",
+      "actionClass": "applyable_already_applied",
+      "decision": "keep_existing_region_layer",
+      "candidate": "zhuye_di1",
+      "owner": "worldwanfaBtn",
+      "originalPath": "Spine_shijieanniu.atlas/zhuye_di1",
+      "currentPath": "worldwanfaBtn/route_fallback_zhuye_di1",
+      "reason": "Base disk/frame region matches original worldwanfaBtn 253x253 rect."
+    },
+    {
+      "category": "particle_style_effect",
+      "actionClass": "blocked",
+      "decision": "blocked_particle_runtime_material_binding",
+      "candidate": "un_MainInterface_fire",
+      "owner": "UI_Main_wanfa_item_1",
+      "originalPath": "UI_MainInterface(5568884429252053541)/right(6922878451781464554)/node_middle(9056630568254389742)/UI_Main_wanfa_item_1(51920382737909704)/un_MainInterface_fire(-6801489505443444490)",
+      "currentPath": "Canvas_MainInterface_1280x720/MainInterface_Root_From_RectTransform_CSV/UI_MainInterface__5568884429252053541/right__6922878451781464554/node_middle__9056630568254389742/UI_Main_wanfa_item_1__51920382737909704/un_MainInterface_fire__-6801489505443444490",
+      "reason": "Original owner is inactive and/or zero-scale in route cluster evidence, while particle material/renderer fields are empty in current trace. Forcing it visible would violate active-chain and material evidence gates."
+    },
+    {
+      "category": "particle_style_effect",
+      "actionClass": "blocked",
+      "decision": "blocked_particle_runtime_material_binding",
+      "candidate": "un_MainInterface_fire",
+      "owner": "UI_Main_wanfa_item_2",
+      "originalPath": "UI_MainInterface(5568884429252053541)/right(6922878451781464554)/node_middle(9056630568254389742)/UI_Main_wanfa_item_2(-3930377403474185176)/un_MainInterface_fire(-9047331040974660233)",
+      "currentPath": "Canvas_MainInterface_1280x720/MainInterface_Root_From_RectTransform_CSV/UI_MainInterface__5568884429252053541/right__6922878451781464554/node_middle__9056630568254389742/UI_Main_wanfa_item_2__-3930377403474185176/un_MainInterface_fire__-9047331040974660233",
+      "reason": "Original owner is inactive and/or zero-scale in route cluster evidence, while particle material/renderer fields are empty in current trace. Forcing it visible would violate active-chain and material evidence gates."
+    },
+    {
+      "category": "particle_style_effect",
+      "actionClass": "blocked",
+      "decision": "blocked_particle_runtime_material_binding",
+      "candidate": "un_MainInterface_fire",
+      "owner": "UI_Main_wanfa_item_3",
+      "originalPath": "UI_MainInterface(5568884429252053541)/right(6922878451781464554)/node_middle(9056630568254389742)/UI_Main_wanfa_item_3(1745568030950951925)/un_MainInterface_fire(3550262967849686076)",
+      "currentPath": "Canvas_MainInterface_1280x720/MainInterface_Root_From_RectTransform_CSV/UI_MainInterface__5568884429252053541/right__6922878451781464554/node_middle__9056630568254389742/UI_Main_wanfa_item_3__1745568030950951925/un_MainInterface_fire__3550262967849686076",
+      "reason": "Original owner is inactive and/or zero-scale in route cluster evidence, while particle material/renderer fields are empty in current trace. Forcing it visible would violate active-chain and material evidence gates."
+    },
+    {
+      "category": "particle_style_effect",
+      "actionClass": "blocked",
+      "decision": "blocked_particle_runtime_material_binding",
+      "candidate": "un_MainInterface_fire",
+      "owner": "UI_Main_wanfa_item_4",
+      "originalPath": "UI_MainInterface(5568884429252053541)/right(6922878451781464554)/node_middle(9056630568254389742)/UI_Main_wanfa_item_4(7836085562230756963)/un_MainInterface_fire(2420700212528543409)",
+      "currentPath": "Canvas_MainInterface_1280x720/MainInterface_Root_From_RectTransform_CSV/UI_MainInterface__5568884429252053541/right__6922878451781464554/node_middle__9056630568254389742/UI_Main_wanfa_item_4__7836085562230756963/un_MainInterface_fire__2420700212528543409",
+      "reason": "Original owner is inactive and/or zero-scale in route cluster evidence, while particle material/renderer fields are empty in current trace. Forcing it visible would violate active-chain and material evidence gates."
+    },
+    {
+      "category": "skeleton_helper_chain",
+      "actionClass": "trace-only",
+      "decision": "trace_only_inactive_parent_chain",
+      "candidate": "spine_xiaoshou",
+      "owner": "wanfaWorldNode",
+      "originalPath": "UI_MainInterface(5568884429252053541)/right(6922878451781464554)/node_middle(9056630568254389742)/wanfaWorldNode(-3820167396480157270)/fanhui_guide_shou(4770820143629459276)/spine_xiaoshou(3122424037418622381)/Renderer20(-8041054903911149008)",
+      "currentPath": "Canvas_MainInterface_1280x720/MainInterface_Root_From_RectTransform_CSV/UI_MainInterface__5568884429252053541/right__6922878451781464554/node_middle__9056630568254389742/wanfaWorldNode__-3820167396480157270/fanhui_guide_shou__4770820143629459276/spine_xiaoshou__3122424037418622381/Renderer20__-8041054903911149008",
+      "reason": "fanhui_guide_shou active_chain is false in original route cluster evidence, so hand/guide renderers must not be forced visible."
+    },
+    {
+      "category": "route_runtime_state_node",
+      "actionClass": "trace-only",
+      "decision": "trace_only_preserve_original_state",
+      "candidate": "Entry",
+      "owner": "UI_Main_wanfa_item_1",
+      "originalPath": "UI_MainInterface(5568884429252053541)/right(6922878451781464554)/node_middle(9056630568254389742)/UI_Main_wanfa_item_1(51920382737909704)/Entry(1449871701069084495)",
+      "currentPath": "Canvas_MainInterface_1280x720/MainInterface_Root_From_RectTransform_CSV/UI_MainInterface__5568884429252053541/right__6922878451781464554/node_middle__9056630568254389742/UI_Main_wanfa_item_1__51920382737909704/Entry__1449871701069084495",
+      "reason": "Recorded for hierarchy/runtime-state comparison only."
+    },
+    {
+      "category": "route_runtime_state_node",
+      "actionClass": "trace-only",
+      "decision": "preserve_original_route_parent_state",
+      "candidate": "UI_Main_wanfa_item_1",
+      "owner": "UI_Main_wanfa_item_1",
+      "originalPath": "UI_MainInterface(5568884429252053541)/right(6922878451781464554)/node_middle(9056630568254389742)/UI_Main_wanfa_item_1(51920382737909704)",
+      "currentPath": "Canvas_MainInterface_1280x720/MainInterface_Root_From_RectTransform_CSV/UI_MainInterface__5568884429252053541/right__6922878451781464554/node_middle__9056630568254389742/UI_Main_wanfa_item_1__51920382737909704",
+      "reason": "Parent layout/active/sibling evidence is already preserved; route mismatch should not be fixed by moving this node."
+    },
+    {
+      "category": "route_runtime_state_node",
+      "actionClass": "trace-only",
+      "decision": "trace_only_preserve_original_state",
+      "candidate": "Entry",
+      "owner": "UI_Main_wanfa_item_2",
+      "originalPath": "UI_MainInterface(5568884429252053541)/right(6922878451781464554)/node_middle(9056630568254389742)/UI_Main_wanfa_item_2(-3930377403474185176)/Entry(-8318423108051799291)",
+      "currentPath": "Canvas_MainInterface_1280x720/MainInterface_Root_From_RectTransform_CSV/UI_MainInterface__5568884429252053541/right__6922878451781464554/node_middle__9056630568254389742/UI_Main_wanfa_item_2__-3930377403474185176/Entry__-8318423108051799291",
+      "reason": "Recorded for hierarchy/runtime-state comparison only."
+    },
+    {
+      "category": "route_runtime_state_node",
+      "actionClass": "trace-only",
+      "decision": "preserve_original_route_parent_state",
+      "candidate": "UI_Main_wanfa_item_2",
+      "owner": "UI_Main_wanfa_item_2",
+      "originalPath": "UI_MainInterface(5568884429252053541)/right(6922878451781464554)/node_middle(9056630568254389742)/UI_Main_wanfa_item_2(-3930377403474185176)",
+      "currentPath": "Canvas_MainInterface_1280x720/MainInterface_Root_From_RectTransform_CSV/UI_MainInterface__5568884429252053541/right__6922878451781464554/node_middle__9056630568254389742/UI_Main_wanfa_item_2__-3930377403474185176",
+      "reason": "Parent layout/active/sibling evidence is already preserved; route mismatch should not be fixed by moving this node."
+    },
+    {
+      "category": "route_runtime_state_node",
+      "actionClass": "trace-only",
+      "decision": "preserve_original_zero_scale_runtime_state",
+      "candidate": "Entry",
+      "owner": "UI_Main_wanfa_item_3",
+      "originalPath": "UI_MainInterface(5568884429252053541)/right(6922878451781464554)/node_middle(9056630568254389742)/UI_Main_wanfa_item_3(1745568030950951925)/Entry(-249494615586118723)",
+      "currentPath": "Canvas_MainInterface_1280x720/MainInterface_Root_From_RectTransform_CSV/UI_MainInterface__5568884429252053541/right__6922878451781464554/node_middle__9056630568254389742/UI_Main_wanfa_item_3__1745568030950951925/Entry__-249494615586118723",
+      "reason": "Entry localScale 0,0,0 is explicit original evidence for item 3/4 and must stay preserved."
+    },
+    {
+      "category": "route_runtime_state_node",
+      "actionClass": "trace-only",
+      "decision": "preserve_original_route_parent_state",
+      "candidate": "UI_Main_wanfa_item_3",
+      "owner": "UI_Main_wanfa_item_3",
+      "originalPath": "UI_MainInterface(5568884429252053541)/right(6922878451781464554)/node_middle(9056630568254389742)/UI_Main_wanfa_item_3(1745568030950951925)",
+      "currentPath": "Canvas_MainInterface_1280x720/MainInterface_Root_From_RectTransform_CSV/UI_MainInterface__5568884429252053541/right__6922878451781464554/node_middle__9056630568254389742/UI_Main_wanfa_item_3__1745568030950951925",
+      "reason": "Parent layout/active/sibling evidence is already preserved; route mismatch should not be fixed by moving this node."
+    },
+    {
+      "category": "route_runtime_state_node",
+      "actionClass": "trace-only",
+      "decision": "preserve_original_zero_scale_runtime_state",
+      "candidate": "Entry",
+      "owner": "UI_Main_wanfa_item_4",
+      "originalPath": "UI_MainInterface(5568884429252053541)/right(6922878451781464554)/node_middle(9056630568254389742)/UI_Main_wanfa_item_4(7836085562230756963)/Entry(-2663983105510939953)",
+      "currentPath": "Canvas_MainInterface_1280x720/MainInterface_Root_From_RectTransform_CSV/UI_MainInterface__5568884429252053541/right__6922878451781464554/node_middle__9056630568254389742/UI_Main_wanfa_item_4__7836085562230756963/Entry__-2663983105510939953",
+      "reason": "Entry localScale 0,0,0 is explicit original evidence for item 3/4 and must stay preserved."
+    },
+    {
+      "category": "route_runtime_state_node",
+      "actionClass": "trace-only",
+      "decision": "preserve_original_route_parent_state",
+      "candidate": "UI_Main_wanfa_item_4",
+      "owner": "UI_Main_wanfa_item_4",
+      "originalPath": "UI_MainInterface(5568884429252053541)/right(6922878451781464554)/node_middle(9056630568254389742)/UI_Main_wanfa_item_4(7836085562230756963)",
+      "currentPath": "Canvas_MainInterface_1280x720/MainInterface_Root_From_RectTransform_CSV/UI_MainInterface__5568884429252053541/right__6922878451781464554/node_middle__9056630568254389742/UI_Main_wanfa_item_4__7836085562230756963",
+      "reason": "Parent layout/active/sibling evidence is already preserved; route mismatch should not be fixed by moving this node."
+    },
+    {
+      "category": "route_runtime_state_node",
+      "actionClass": "trace-only",
+      "decision": "preserve_original_inactive_guide_state",
+      "candidate": "fanhui_guide_shou",
+      "owner": "wanfaWorldNode",
+      "originalPath": "UI_MainInterface(5568884429252053541)/right(6922878451781464554)/node_middle(9056630568254389742)/wanfaWorldNode(-3820167396480157270)/fanhui_guide_shou(4770820143629459276)",
+      "currentPath": "Canvas_MainInterface_1280x720/MainInterface_Root_From_RectTransform_CSV/UI_MainInterface__5568884429252053541/right__6922878451781464554/node_middle__9056630568254389742/wanfaWorldNode__-3820167396480157270/fanhui_guide_shou__4770820143629459276",
+      "reason": "Guide hand parent is inactive in original active chain, so its SkeletonGraphic helpers must not be shown."
+    },
+    {
+      "category": "route_runtime_state_node",
+      "actionClass": "trace-only",
+      "decision": "preserve_original_route_parent_state",
+      "candidate": "wanfaWorldNode",
+      "owner": "wanfaWorldNode",
+      "originalPath": "UI_MainInterface(5568884429252053541)/right(6922878451781464554)/node_middle(9056630568254389742)/wanfaWorldNode(-3820167396480157270)",
+      "currentPath": "Canvas_MainInterface_1280x720/MainInterface_Root_From_RectTransform_CSV/UI_MainInterface__5568884429252053541/right__6922878451781464554/node_middle__9056630568254389742/wanfaWorldNode__-3820167396480157270",
+      "reason": "Parent layout/active/sibling evidence is already preserved; route mismatch should not be fixed by moving this node."
+    },
+    {
+      "category": "route_runtime_state_node",
+      "actionClass": "trace-only",
+      "decision": "preserve_original_route_parent_state",
+      "candidate": "worldwanfaBtn",
+      "owner": "wanfaWorldNode",
+      "originalPath": "UI_MainInterface(5568884429252053541)/right(6922878451781464554)/node_middle(9056630568254389742)/wanfaWorldNode(-3820167396480157270)/worldwanfaBtn(3512211464843089861)",
+      "currentPath": "Canvas_MainInterface_1280x720/MainInterface_Root_From_RectTransform_CSV/UI_MainInterface__5568884429252053541/right__6922878451781464554/node_middle__9056630568254389742/wanfaWorldNode__-3820167396480157270/worldwanfaBtn__3512211464843089861",
+      "reason": "Parent layout/active/sibling evidence is already preserved; route mismatch should not be fixed by moving this node."
+    },
+    {
+      "category": "route_runtime_state_node",
+      "actionClass": "trace-only",
+      "decision": "trace_only_redpoint_skeleton_child_inactive",
+      "candidate": "world_node_red",
+      "owner": "wanfaWorldNode",
+      "originalPath": "UI_MainInterface(5568884429252053541)/right(6922878451781464554)/node_middle(9056630568254389742)/wanfaWorldNode(-3820167396480157270)/world_node_red(3339705364331503776)",
+      "currentPath": "Canvas_MainInterface_1280x720/MainInterface_Root_From_RectTransform_CSV/UI_MainInterface__5568884429252053541/right__6922878451781464554/node_middle__9056630568254389742/wanfaWorldNode__-3820167396480157270/world_node_red__3339705364331503776",
+      "reason": "Redpoint uses a SkeletonGraphic child, but child active chain is false; no safe visual override is applied."
+    }
+  ]
+}

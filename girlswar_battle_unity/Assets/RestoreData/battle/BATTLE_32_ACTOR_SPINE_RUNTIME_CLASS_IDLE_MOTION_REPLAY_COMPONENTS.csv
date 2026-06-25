@@ -1,0 +1,4 @@
+side,heroDid,modelId,hierarchyPath,componentTypes,rendererType,materialNames,shaderNames,textureNames,localPosition,localScale
+"our","1002","1002","BATTLE32_LoadableActor_our_1002_model_1002","UnityEngine.Transform;UnityEngine.MeshFilter;UnityEngine.MeshRenderer;MissingScript","MeshRenderer","1002_Material","Spine/Skeleton Tint","1002","-2.35/-0.35/0","0.72/0.72/0.72"
+"our","1034","1034","BATTLE32_LoadableActor_our_1034_model_1034","UnityEngine.Transform;UnityEngine.MeshFilter;UnityEngine.MeshRenderer;MissingScript","MeshRenderer","1034_Material;1034_Material-Screen","Spine/Skeleton Tint;Spine/Blend Modes/Skeleton PMA Screen","1034;1034","-0.2/-0.35/0","0.72/0.72/0.72"
+"enemy","1100111","3001","BATTLE32_LoadableActor_enemy_1100111_model_3001","UnityEngine.Transform;UnityEngine.MeshFilter;UnityEngine.MeshRenderer;MissingScript","MeshRenderer","3001_Material","Spine/Skeleton Tint","3001","2.1/-0.2/0","0.68/0.68/0.68"

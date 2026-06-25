@@ -641,3 +641,76 @@
   - contact sheet: `reports\battle\BATTLE_31_ACTOR_SPINE_ANIMATION_RUNTIME_PROBE_CONTACT_SHEET.jpg`
 - Next battle blocker:
   - `BATTLE_32_RESOLVE_BATTLE_ACTOR_SPINE_RUNTIME_CLASS_AND_IDLE_MOTION_REPLAY`
+
+## Update 2026-06-25 21:10 KST
+
+### Command Folder Cleanup
+
+- Root folder was re-verified clean.
+- Root CMD count: `1`.
+- Only root launcher: `00_COMMAND_CENTER.cmd`.
+- `00_COMMAND_CENTER.cmd` now opens a clean current command folder instead of dumping the full `_restore_tools` folder in Explorer:
+  - `_restore_tools\current\01_RUN_LATEST_MAININTERFACE_UI_VALIDATION.cmd`
+  - `_restore_tools\current\02_RUN_LATEST_BATTLE_VALIDATION.cmd`
+  - `_restore_tools\current\03_OPEN_MAININTERFACE_REPORTS.cmd`
+  - `_restore_tools\current\04_OPEN_BATTLE_REPORTS.cmd`
+  - `_restore_tools\current\05_SHOW_GIT_STATUS.cmd`
+- Full legacy tools remain preserved under `_restore_tools\` and old root shortcuts remain archived under `_restore_tools\root_cmd_archive\`.
+
+### MainInterface UI 112 Result
+
+- UI 112 did not claim the current MainInterface capture is final or normal.
+- Visual status by manual capture review: still not a normal/original MainInterface; the right route cluster remains visibly wrong.
+- New visual fixes applied: `0`.
+- Trace classification:
+  - trace rows: `24`
+  - applyable_already_applied: `4`
+  - blocked: `5`
+  - trace-only: `15`
+- Kept existing evidence-backed `Spine_shijieanniu` fallback layers:
+  - `zhuye_di1`
+  - `diqiu`
+  - `zhuye_bian`
+- Held back because applying them now would be coordinate-only / whole-texture / runtime-state guessing:
+  - `yun`
+  - `yun2`
+  - `spine_xiaoren/8007`
+  - `un_MainInterface_fire`
+- Verification:
+  - active tool: `_restore_tools\112_TRACE_MAININTERFACE_ROUTE_NON_IMAGE_RENDERER_EFFECT_RUNTIME_STATE.cmd`
+  - report: `reports\maininterface\MAININTERFACE_ROUTE_NON_IMAGE_RENDERER_EFFECT_RUNTIME_STATE_TRACE_RESULT.md`
+  - JSON: `girlswar_maininterface_unity\Assets\RestoreData\maininterface_route_non_image_renderer_effect_runtime_state_trace.json`
+  - CSV: `girlswar_maininterface_unity\Assets\RestoreData\reports\maininterface_route_non_image_renderer_effect_runtime_state_trace.csv`
+  - capture: `girlswar_maininterface_unity\Assets\RestoreCaptures\maininterface_restored_1680x720.png`
+  - click validation: `24 / 24 / 0 / 24`
+- Next UI blocker:
+  - `MAININTERFACE_113_RESTORE_SPINE_SLOT_BONE_ANIMATION_TRANSFORM_FOR_ROUTE_CLUSTER`
+
+### Battle BATTLE_32 Result
+
+- BATTLE_32 used `C:\Users\godho\Downloads\플레이.mp4` clip05 `485.0-487.0s` as the video motion gate.
+- Verdict: `failed_spine_shader_or_runtime_mesh_still_magenta`.
+- This is not a final restored battle screen.
+- Manual contact sheet review:
+  - reference sequence shows moving actors and battle layout
+  - current capture still shows static magenta meshes
+  - no clip05 actor motion replay is present
+- Runtime probe:
+  - MissingScript before/after: `3 / 3`
+  - MissingScript reduction: `0`
+  - `SkeletonAnimation` components resolved: `0`
+  - idle replay call success: `0`
+  - shader fallback applied: `0`
+  - magenta pixel ratio: `0.073207`
+  - shader dependency loaded: `True`
+- Outputs:
+  - active tool: `_restore_tools\BATTLE_32_RESOLVE_BATTLE_ACTOR_SPINE_RUNTIME_CLASS_AND_IDLE_MOTION_REPLAY.cmd`
+  - report: `reports\battle\BATTLE_32_ACTOR_SPINE_RUNTIME_CLASS_IDLE_MOTION_REPLAY_RESULT.md`
+  - JSON: `reports\battle\BATTLE_32_ACTOR_SPINE_RUNTIME_CLASS_IDLE_MOTION_REPLAY_RESULT.json`
+  - Unity data: `girlswar_battle_unity\Assets\RestoreData\battle\BATTLE_32_ACTOR_SPINE_RUNTIME_CLASS_IDLE_MOTION_REPLAY.json`
+  - component CSV: `girlswar_battle_unity\Assets\RestoreData\battle\BATTLE_32_ACTOR_SPINE_RUNTIME_CLASS_IDLE_MOTION_REPLAY_COMPONENTS.csv`
+  - probe scene: `girlswar_battle_unity\Assets\Scenes\Battle32ActorSpineRuntimeClassIdleMotionReplay.unity`
+  - static capture: `girlswar_battle_unity\Assets\RestoreCaptures\battle_actor\Battle32ActorSpineRuntimeClassIdleMotionReplay_1920x1080.png`
+  - contact sheet: `reports\battle\BATTLE_32_ACTOR_SPINE_RUNTIME_CLASS_IDLE_MOTION_REPLAY_CONTACT_SHEET.jpg`
+- Next battle blocker:
+  - `BATTLE_33_DEEP_TRACE_MONOSCRIPT_ASSEMBLY_GUID_FOR_ACTOR_PREFABS`
