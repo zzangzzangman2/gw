@@ -1,0 +1,2025 @@
+{
+  "verdict": "battle28_evidence_collected_not_final",
+  "referenceVideo": "C:\\Users\\godho\\Downloads\\플레이.mp4",
+  "videoClip": "clip05 around 486s",
+  "battle27Capture": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_battle_unity\\Assets\\RestoreCaptures\\battle_hud\\BattleCorrectMapSceneHudPreviewClip05_1680x720.png",
+  "contactSheet": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_28_ACTOR_MOTION_SKILLCARD_EVIDENCE_CONTACT_SHEET.jpg",
+  "motionEvidence": {
+    "pairCount": 5,
+    "motionComponentCount": 54,
+    "actorMotionComponentCount": 26,
+    "bottomMotionComponentCount": 14,
+    "largestMotionBoxes": [
+      {
+        "x": 67,
+        "y": 102,
+        "w": 47,
+        "h": 47,
+        "area": 728,
+        "cx": 90.5,
+        "cy": 125.5,
+        "pair": "485.0-485.4s",
+        "normX": 0.2155,
+        "normY": 0.6972
+      },
+      {
+        "x": 196,
+        "y": 147,
+        "w": 30,
+        "h": 26,
+        "area": 638,
+        "cx": 211.0,
+        "cy": 160.0,
+        "pair": "485.0-485.4s",
+        "normX": 0.5024,
+        "normY": 0.8889
+      },
+      {
+        "x": 164,
+        "y": 147,
+        "w": 29,
+        "h": 26,
+        "area": 632,
+        "cx": 178.5,
+        "cy": 160.0,
+        "pair": "485.0-485.4s",
+        "normX": 0.425,
+        "normY": 0.8889
+      },
+      {
+        "x": 229,
+        "y": 147,
+        "w": 29,
+        "h": 26,
+        "area": 631,
+        "cx": 243.5,
+        "cy": 160.0,
+        "pair": "485.0-485.4s",
+        "normX": 0.5798,
+        "normY": 0.8889
+      },
+      {
+        "x": 100,
+        "y": 73,
+        "w": 36,
+        "h": 56,
+        "area": 629,
+        "cx": 118.0,
+        "cy": 101.0,
+        "pair": "485.0-485.4s",
+        "normX": 0.281,
+        "normY": 0.5611
+      },
+      {
+        "x": 135,
+        "y": 87,
+        "w": 23,
+        "h": 50,
+        "area": 382,
+        "cx": 146.5,
+        "cy": 112.0,
+        "pair": "485.0-485.4s",
+        "normX": 0.3488,
+        "normY": 0.6222
+      },
+      {
+        "x": 364,
+        "y": 46,
+        "w": 21,
+        "h": 27,
+        "area": 204,
+        "cx": 374.5,
+        "cy": 59.5,
+        "pair": "485.0-485.4s",
+        "normX": 0.8917,
+        "normY": 0.3306
+      },
+      {
+        "x": 296,
+        "y": 70,
+        "w": 36,
+        "h": 15,
+        "area": 178,
+        "cx": 314.0,
+        "cy": 77.5,
+        "pair": "485.0-485.4s",
+        "normX": 0.7476,
+        "normY": 0.4306
+      },
+      {
+        "x": 320,
+        "y": 107,
+        "w": 27,
+        "h": 14,
+        "area": 159,
+        "cx": 333.5,
+        "cy": 114.0,
+        "pair": "485.0-485.4s",
+        "normX": 0.794,
+        "normY": 0.6333
+      },
+      {
+        "x": 399,
+        "y": 41,
+        "w": 18,
+        "h": 18,
+        "area": 156,
+        "cx": 408.0,
+        "cy": 50.0,
+        "pair": "485.0-485.4s",
+        "normX": 0.9714,
+        "normY": 0.2778
+      },
+      {
+        "x": 94,
+        "y": 59,
+        "w": 17,
+        "h": 16,
+        "area": 116,
+        "cx": 102.5,
+        "cy": 67.0,
+        "pair": "485.0-485.4s",
+        "normX": 0.244,
+        "normY": 0.3722
+      },
+      {
+        "x": 261,
+        "y": 66,
+        "w": 15,
+        "h": 15,
+        "area": 110,
+        "cx": 268.5,
+        "cy": 73.5,
+        "pair": "485.0-485.4s",
+        "normX": 0.6393,
+        "normY": 0.4083
+      },
+      {
+        "x": 36,
+        "y": 34,
+        "w": 19,
+        "h": 14,
+        "area": 108,
+        "cx": 45.5,
+        "cy": 41.0,
+        "pair": "485.0-485.4s",
+        "normX": 0.1083,
+        "normY": 0.2278
+      },
+      {
+        "x": 320,
+        "y": 49,
+        "w": 24,
+        "h": 11,
+        "area": 85,
+        "cx": 332.0,
+        "cy": 54.5,
+        "pair": "485.0-485.4s",
+        "normX": 0.7905,
+        "normY": 0.3028
+      },
+      {
+        "x": 73,
+        "y": 59,
+        "w": 85,
+        "h": 92,
+        "area": 2552,
+        "cx": 115.5,
+        "cy": 105.0,
+        "pair": "485.4-485.8s",
+        "normX": 0.275,
+        "normY": 0.5833
+      },
+      {
+        "x": 264,
+        "y": 62,
+        "w": 19,
+        "h": 18,
+        "area": 143,
+        "cx": 273.5,
+        "cy": 71.0,
+        "pair": "485.4-485.8s",
+        "normX": 0.6512,
+        "normY": 0.3944
+      },
+      {
+        "x": 320,
+        "y": 107,
+        "w": 27,
+        "h": 13,
+        "area": 127,
+        "cx": 333.5,
+        "cy": 113.5,
+        "pair": "485.4-485.8s",
+        "normX": 0.794,
+        "normY": 0.6306
+      },
+      {
+        "x": 67,
+        "y": 109,
+        "w": 12,
+        "h": 11,
+        "area": 99,
+        "cx": 73.0,
+        "cy": 114.5,
+        "pair": "485.4-485.8s",
+        "normX": 0.1738,
+        "normY": 0.6361
+      },
+      {
+        "x": 403,
+        "y": 45,
+        "w": 11,
+        "h": 14,
+        "area": 89,
+        "cx": 408.5,
+        "cy": 52.0,
+        "pair": "485.4-485.8s",
+        "normX": 0.9726,
+        "normY": 0.2889
+      },
+      {
+        "x": 312,
+        "y": 74,
+        "w": 20,
+        "h": 13,
+        "area": 85,
+        "cx": 322.0,
+        "cy": 80.5,
+        "pair": "485.4-485.8s",
+        "normX": 0.7667,
+        "normY": 0.4472
+      },
+      {
+        "x": 80,
+        "y": 103,
+        "w": 69,
+        "h": 46,
+        "area": 859,
+        "cx": 114.5,
+        "cy": 126.0,
+        "pair": "485.8-486.2s",
+        "normX": 0.2726,
+        "normY": 0.7
+      },
+      {
+        "x": 74,
+        "y": 62,
+        "w": 50,
+        "h": 33,
+        "area": 345,
+        "cx": 99.0,
+        "cy": 78.5,
+        "pair": "485.8-486.2s",
+        "normX": 0.2357,
+        "normY": 0.4361
+      },
+      {
+        "x": 151,
+        "y": 14,
+        "w": 18,
+        "h": 38,
+        "area": 341,
+        "cx": 160.0,
+        "cy": 33.0,
+        "pair": "485.8-486.2s",
+        "normX": 0.381,
+        "normY": 0.1833
+      },
+      {
+        "x": 116,
+        "y": 74,
+        "w": 30,
+        "h": 26,
+        "area": 308,
+        "cx": 131.0,
+        "cy": 87.0,
+        "pair": "485.8-486.2s",
+        "normX": 0.3119,
+        "normY": 0.4833
+      },
+      {
+        "x": 134,
+        "y": 93,
+        "w": 34,
+        "h": 15,
+        "area": 238,
+        "cx": 151.0,
+        "cy": 100.5,
+        "pair": "485.8-486.2s",
+        "normX": 0.3595,
+        "normY": 0.5583
+      }
+    ],
+    "actorMotionBoxes": [
+      {
+        "x": 67,
+        "y": 102,
+        "w": 47,
+        "h": 47,
+        "area": 728,
+        "cx": 90.5,
+        "cy": 125.5,
+        "pair": "485.0-485.4s",
+        "normX": 0.2155,
+        "normY": 0.6972
+      },
+      {
+        "x": 100,
+        "y": 73,
+        "w": 36,
+        "h": 56,
+        "area": 629,
+        "cx": 118.0,
+        "cy": 101.0,
+        "pair": "485.0-485.4s",
+        "normX": 0.281,
+        "normY": 0.5611
+      },
+      {
+        "x": 135,
+        "y": 87,
+        "w": 23,
+        "h": 50,
+        "area": 382,
+        "cx": 146.5,
+        "cy": 112.0,
+        "pair": "485.0-485.4s",
+        "normX": 0.3488,
+        "normY": 0.6222
+      },
+      {
+        "x": 364,
+        "y": 46,
+        "w": 21,
+        "h": 27,
+        "area": 204,
+        "cx": 374.5,
+        "cy": 59.5,
+        "pair": "485.0-485.4s",
+        "normX": 0.8917,
+        "normY": 0.3306
+      },
+      {
+        "x": 296,
+        "y": 70,
+        "w": 36,
+        "h": 15,
+        "area": 178,
+        "cx": 314.0,
+        "cy": 77.5,
+        "pair": "485.0-485.4s",
+        "normX": 0.7476,
+        "normY": 0.4306
+      },
+      {
+        "x": 320,
+        "y": 107,
+        "w": 27,
+        "h": 14,
+        "area": 159,
+        "cx": 333.5,
+        "cy": 114.0,
+        "pair": "485.0-485.4s",
+        "normX": 0.794,
+        "normY": 0.6333
+      },
+      {
+        "x": 399,
+        "y": 41,
+        "w": 18,
+        "h": 18,
+        "area": 156,
+        "cx": 408.0,
+        "cy": 50.0,
+        "pair": "485.0-485.4s",
+        "normX": 0.9714,
+        "normY": 0.2778
+      },
+      {
+        "x": 73,
+        "y": 59,
+        "w": 85,
+        "h": 92,
+        "area": 2552,
+        "cx": 115.5,
+        "cy": 105.0,
+        "pair": "485.4-485.8s",
+        "normX": 0.275,
+        "normY": 0.5833
+      },
+      {
+        "x": 264,
+        "y": 62,
+        "w": 19,
+        "h": 18,
+        "area": 143,
+        "cx": 273.5,
+        "cy": 71.0,
+        "pair": "485.4-485.8s",
+        "normX": 0.6512,
+        "normY": 0.3944
+      },
+      {
+        "x": 320,
+        "y": 107,
+        "w": 27,
+        "h": 13,
+        "area": 127,
+        "cx": 333.5,
+        "cy": 113.5,
+        "pair": "485.4-485.8s",
+        "normX": 0.794,
+        "normY": 0.6306
+      },
+      {
+        "x": 80,
+        "y": 103,
+        "w": 69,
+        "h": 46,
+        "area": 859,
+        "cx": 114.5,
+        "cy": 126.0,
+        "pair": "485.8-486.2s",
+        "normX": 0.2726,
+        "normY": 0.7
+      },
+      {
+        "x": 74,
+        "y": 62,
+        "w": 50,
+        "h": 33,
+        "area": 345,
+        "cx": 99.0,
+        "cy": 78.5,
+        "pair": "485.8-486.2s",
+        "normX": 0.2357,
+        "normY": 0.4361
+      },
+      {
+        "x": 151,
+        "y": 14,
+        "w": 18,
+        "h": 38,
+        "area": 341,
+        "cx": 160.0,
+        "cy": 33.0,
+        "pair": "485.8-486.2s",
+        "normX": 0.381,
+        "normY": 0.1833
+      },
+      {
+        "x": 116,
+        "y": 74,
+        "w": 30,
+        "h": 26,
+        "area": 308,
+        "cx": 131.0,
+        "cy": 87.0,
+        "pair": "485.8-486.2s",
+        "normX": 0.3119,
+        "normY": 0.4833
+      },
+      {
+        "x": 134,
+        "y": 93,
+        "w": 34,
+        "h": 15,
+        "area": 238,
+        "cx": 151.0,
+        "cy": 100.5,
+        "pair": "485.8-486.2s",
+        "normX": 0.3595,
+        "normY": 0.5583
+      },
+      {
+        "x": 262,
+        "y": 58,
+        "w": 21,
+        "h": 21,
+        "area": 180,
+        "cx": 272.5,
+        "cy": 68.5,
+        "pair": "486.2-486.6s",
+        "normX": 0.6488,
+        "normY": 0.3806
+      },
+      {
+        "x": 154,
+        "y": 14,
+        "w": 13,
+        "h": 38,
+        "area": 173,
+        "cx": 160.5,
+        "cy": 33.0,
+        "pair": "486.2-486.6s",
+        "normX": 0.3821,
+        "normY": 0.1833
+      },
+      {
+        "x": 97,
+        "y": 62,
+        "w": 27,
+        "h": 15,
+        "area": 158,
+        "cx": 110.5,
+        "cy": 69.5,
+        "pair": "486.2-486.6s",
+        "normX": 0.2631,
+        "normY": 0.3861
+      },
+      {
+        "x": 364,
+        "y": 47,
+        "w": 21,
+        "h": 15,
+        "area": 151,
+        "cx": 374.5,
+        "cy": 54.5,
+        "pair": "486.2-486.6s",
+        "normX": 0.8917,
+        "normY": 0.3028
+      },
+      {
+        "x": 139,
+        "y": 114,
+        "w": 24,
+        "h": 12,
+        "area": 138,
+        "cx": 151.0,
+        "cy": 120.0,
+        "pair": "486.2-486.6s",
+        "normX": 0.3595,
+        "normY": 0.6667
+      },
+      {
+        "x": 96,
+        "y": 78,
+        "w": 17,
+        "h": 25,
+        "area": 130,
+        "cx": 104.5,
+        "cy": 90.5,
+        "pair": "486.2-486.6s",
+        "normX": 0.2488,
+        "normY": 0.5028
+      },
+      {
+        "x": 97,
+        "y": 60,
+        "w": 26,
+        "h": 30,
+        "area": 233,
+        "cx": 110.0,
+        "cy": 75.0,
+        "pair": "486.6-487.0s",
+        "normX": 0.2619,
+        "normY": 0.4167
+      },
+      {
+        "x": 143,
+        "y": 94,
+        "w": 25,
+        "h": 15,
+        "area": 138,
+        "cx": 155.5,
+        "cy": 101.5,
+        "pair": "486.6-487.0s",
+        "normX": 0.3702,
+        "normY": 0.5639
+      },
+      {
+        "x": 262,
+        "y": 60,
+        "w": 11,
+        "h": 20,
+        "area": 130,
+        "cx": 267.5,
+        "cy": 70.0,
+        "pair": "486.6-487.0s",
+        "normX": 0.6369,
+        "normY": 0.3889
+      },
+      {
+        "x": 97,
+        "y": 78,
+        "w": 16,
+        "h": 25,
+        "area": 124,
+        "cx": 105.0,
+        "cy": 90.5,
+        "pair": "486.6-487.0s",
+        "normX": 0.25,
+        "normY": 0.5028
+      }
+    ],
+    "bottomMotionBoxes": [
+      {
+        "x": 67,
+        "y": 102,
+        "w": 47,
+        "h": 47,
+        "area": 728,
+        "cx": 90.5,
+        "cy": 125.5,
+        "pair": "485.0-485.4s",
+        "normX": 0.2155,
+        "normY": 0.6972
+      },
+      {
+        "x": 196,
+        "y": 147,
+        "w": 30,
+        "h": 26,
+        "area": 638,
+        "cx": 211.0,
+        "cy": 160.0,
+        "pair": "485.0-485.4s",
+        "normX": 0.5024,
+        "normY": 0.8889
+      },
+      {
+        "x": 164,
+        "y": 147,
+        "w": 29,
+        "h": 26,
+        "area": 632,
+        "cx": 178.5,
+        "cy": 160.0,
+        "pair": "485.0-485.4s",
+        "normX": 0.425,
+        "normY": 0.8889
+      },
+      {
+        "x": 229,
+        "y": 147,
+        "w": 29,
+        "h": 26,
+        "area": 631,
+        "cx": 243.5,
+        "cy": 160.0,
+        "pair": "485.0-485.4s",
+        "normX": 0.5798,
+        "normY": 0.8889
+      },
+      {
+        "x": 80,
+        "y": 103,
+        "w": 69,
+        "h": 46,
+        "area": 859,
+        "cx": 114.5,
+        "cy": 126.0,
+        "pair": "485.8-486.2s",
+        "normX": 0.2726,
+        "normY": 0.7
+      },
+      {
+        "x": 164,
+        "y": 130,
+        "w": 95,
+        "h": 40,
+        "area": 2467,
+        "cx": 211.5,
+        "cy": 150.0,
+        "pair": "486.2-486.6s",
+        "normX": 0.5036,
+        "normY": 0.8333
+      },
+      {
+        "x": 97,
+        "y": 130,
+        "w": 17,
+        "h": 22,
+        "area": 150,
+        "cx": 105.5,
+        "cy": 141.0,
+        "pair": "486.2-486.6s",
+        "normX": 0.2512,
+        "normY": 0.7833
+      },
+      {
+        "x": 82,
+        "y": 128,
+        "w": 12,
+        "h": 17,
+        "area": 108,
+        "cx": 88.0,
+        "cy": 136.5,
+        "pair": "486.2-486.6s",
+        "normX": 0.2095,
+        "normY": 0.7583
+      },
+      {
+        "x": 184,
+        "y": 141,
+        "w": 50,
+        "h": 33,
+        "area": 567,
+        "cx": 209.0,
+        "cy": 157.5,
+        "pair": "486.6-487.0s",
+        "normX": 0.4976,
+        "normY": 0.875
+      },
+      {
+        "x": 230,
+        "y": 130,
+        "w": 31,
+        "h": 40,
+        "area": 466,
+        "cx": 245.5,
+        "cy": 150.0,
+        "pair": "486.6-487.0s",
+        "normX": 0.5845,
+        "normY": 0.8333
+      },
+      {
+        "x": 80,
+        "y": 130,
+        "w": 32,
+        "h": 22,
+        "area": 277,
+        "cx": 96.0,
+        "cy": 141.0,
+        "pair": "486.6-487.0s",
+        "normX": 0.2286,
+        "normY": 0.7833
+      },
+      {
+        "x": 197,
+        "y": 130,
+        "w": 21,
+        "h": 27,
+        "area": 240,
+        "cx": 207.5,
+        "cy": 143.5,
+        "pair": "486.6-487.0s",
+        "normX": 0.494,
+        "normY": 0.7972
+      },
+      {
+        "x": 165,
+        "y": 130,
+        "w": 20,
+        "h": 24,
+        "area": 167,
+        "cx": 175.0,
+        "cy": 142.0,
+        "pair": "486.6-487.0s",
+        "normX": 0.4167,
+        "normY": 0.7889
+      },
+      {
+        "x": 162,
+        "y": 152,
+        "w": 27,
+        "h": 19,
+        "area": 137,
+        "cx": 175.5,
+        "cy": 161.5,
+        "pair": "486.6-487.0s",
+        "normX": 0.4179,
+        "normY": 0.8972
+      }
+    ]
+  },
+  "bottomSkillCardEvidence": {
+    "videoBottomCardColorRatios": [
+      {
+        "brightSaturatedRatio": 0.301593,
+        "highChromaRatio": 0.023956,
+        "time": 485.0
+      },
+      {
+        "brightSaturatedRatio": 0.371951,
+        "highChromaRatio": 0.043654,
+        "time": 485.4
+      },
+      {
+        "brightSaturatedRatio": 0.377418,
+        "highChromaRatio": 0.043489,
+        "time": 485.8
+      },
+      {
+        "brightSaturatedRatio": 0.37706,
+        "highChromaRatio": 0.043764,
+        "time": 486.2
+      },
+      {
+        "brightSaturatedRatio": 0.485055,
+        "highChromaRatio": 0.173324,
+        "time": 486.6
+      },
+      {
+        "brightSaturatedRatio": 0.522363,
+        "highChromaRatio": 0.206181,
+        "time": 487.0
+      }
+    ],
+    "battle27BottomCardColorRatio": {
+      "brightSaturatedRatio": 0.399478,
+      "highChromaRatio": 0.000522
+    }
+  },
+  "hudBottomComponentEvidence": {
+    "bottomCandidateCount": 56,
+    "activeVisibleBottomCandidateCount": 7,
+    "meaningfulBottomCandidateCount": 6,
+    "meaningfulBottomCenterCandidateCount": 0,
+    "bottomCenterExamples": []
+  },
+  "actorRuntimeEvidence": {
+    "runtimeSlotCount": 12,
+    "runtimePrefabSlotCount": 3,
+    "missingSlotCount": 9,
+    "battle27InstantiatedActorCount": 3,
+    "battle27TexturedActorCount": 3,
+    "missingSlots": [
+      {
+        "side": "our",
+        "wave": 0,
+        "slot": 1,
+        "heroDid": "1036",
+        "modelId": "1036",
+        "missingReason": "listed_in_cdn_versionfile_not_extracted",
+        "skillIds": [
+          1036101,
+          1036201,
+          1036301,
+          1036401,
+          1036402
+        ]
+      },
+      {
+        "side": "enemy",
+        "wave": 1,
+        "slot": 2,
+        "heroDid": "1100112",
+        "modelId": "1100112",
+        "missingReason": "not_loadable_yet",
+        "skillIds": [
+          1012101,
+          1012201,
+          1012301,
+          1012401,
+          1012403
+        ]
+      },
+      {
+        "side": "enemy",
+        "wave": 1,
+        "slot": 3,
+        "heroDid": "1100113",
+        "modelId": "1100113",
+        "missingReason": "not_loadable_yet",
+        "skillIds": [
+          1012101,
+          1012201,
+          1012301,
+          1012401,
+          1012403
+        ]
+      },
+      {
+        "side": "enemy",
+        "wave": 2,
+        "slot": 1,
+        "heroDid": "1100121",
+        "modelId": "1100121",
+        "missingReason": "not_loadable_yet",
+        "skillIds": [
+          1012101,
+          1012201,
+          1012301,
+          1012401,
+          1012403
+        ]
+      },
+      {
+        "side": "enemy",
+        "wave": 2,
+        "slot": 2,
+        "heroDid": "1100122",
+        "modelId": "1100122",
+        "missingReason": "not_loadable_yet",
+        "skillIds": [
+          1012101,
+          1012201,
+          1012301,
+          1012401,
+          1012403
+        ]
+      },
+      {
+        "side": "enemy",
+        "wave": 2,
+        "slot": 3,
+        "heroDid": "1100123",
+        "modelId": "1100123",
+        "missingReason": "not_loadable_yet",
+        "skillIds": [
+          1012101,
+          1012201,
+          1012301,
+          1012401,
+          1012403
+        ]
+      },
+      {
+        "side": "enemy",
+        "wave": 3,
+        "slot": 1,
+        "heroDid": "1100131",
+        "modelId": "1100131",
+        "missingReason": "not_loadable_yet",
+        "skillIds": [
+          1012101,
+          1012101,
+          1001401,
+          1001403
+        ]
+      },
+      {
+        "side": "enemy",
+        "wave": 3,
+        "slot": 2,
+        "heroDid": "1100132",
+        "modelId": "1100132",
+        "missingReason": "not_loadable_yet",
+        "skillIds": [
+          1012101,
+          1012101,
+          1001401,
+          1001403
+        ]
+      },
+      {
+        "side": "enemy",
+        "wave": 3,
+        "slot": 3,
+        "heroDid": "1100133",
+        "modelId": "1100133",
+        "missingReason": "not_loadable_yet",
+        "skillIds": [
+          1012101,
+          1012101,
+          1001401,
+          1001403
+        ]
+      }
+    ],
+    "instantiatedActors": [
+      {
+        "side": "our",
+        "wave": 0,
+        "slot": 2,
+        "heroDid": "1002",
+        "modelId": "1002",
+        "enabledRendererCount": 1,
+        "spineSkeletonGraphicCount": 0,
+        "spineSkeletonAnimationCount": 0,
+        "actorAtlasTextureBoundMaterialCount": 1
+      },
+      {
+        "side": "our",
+        "wave": 0,
+        "slot": 3,
+        "heroDid": "1034",
+        "modelId": "1034",
+        "enabledRendererCount": 1,
+        "spineSkeletonGraphicCount": 0,
+        "spineSkeletonAnimationCount": 0,
+        "actorAtlasTextureBoundMaterialCount": 2
+      },
+      {
+        "side": "enemy",
+        "wave": 1,
+        "slot": 1,
+        "heroDid": "1100111",
+        "modelId": "3001",
+        "enabledRendererCount": 1,
+        "spineSkeletonGraphicCount": 0,
+        "spineSkeletonAnimationCount": 0,
+        "actorAtlasTextureBoundMaterialCount": 1
+      }
+    ]
+  },
+  "skillEffectEvidence": {
+    "skillCount": 20,
+    "skillFoundCount": 12,
+    "timelineFoundCount": 12,
+    "loadableEffectBundleProbeCount": 12,
+    "loadableEffectPrefabCountTotal": 204,
+    "uniqueLoadableEffectBundleCount": 4,
+    "uniqueLoadableEffectPrefabCountTotal": 68,
+    "missingBundleCandidateCount": 8,
+    "uniqueMissingBundleCandidateCount": 3,
+    "loadableEffectBundleExamples": [
+      {
+        "skillId": 1002101,
+        "bundle": "download/skillprefabsandres/1002.assetbundle",
+        "loadSuccess": true,
+        "assetNameCount": 37,
+        "typeCounts": {
+          "GameObject": 17,
+          "Texture2D": 2,
+          "Sprite": 0,
+          "Material": 14,
+          "TextAsset": 0,
+          "AnimationClip": 0,
+          "PlayableAsset": 0
+        },
+        "matchingTimelinePrefabCount": 4,
+        "loadableEffectPrefabCount": 17,
+        "instantiateSuccess": true,
+        "failReason": ""
+      },
+      {
+        "skillId": 1002201,
+        "bundle": "download/skillprefabsandres/1002.assetbundle",
+        "loadSuccess": true,
+        "assetNameCount": 37,
+        "typeCounts": {
+          "GameObject": 17,
+          "Texture2D": 2,
+          "Sprite": 0,
+          "Material": 14,
+          "TextAsset": 0,
+          "AnimationClip": 0,
+          "PlayableAsset": 0
+        },
+        "matchingTimelinePrefabCount": 4,
+        "loadableEffectPrefabCount": 17,
+        "instantiateSuccess": true,
+        "failReason": ""
+      },
+      {
+        "skillId": 1002301,
+        "bundle": "download/skillprefabsandres/1002.assetbundle",
+        "loadSuccess": true,
+        "assetNameCount": 37,
+        "typeCounts": {
+          "GameObject": 17,
+          "Texture2D": 2,
+          "Sprite": 0,
+          "Material": 14,
+          "TextAsset": 0,
+          "AnimationClip": 0,
+          "PlayableAsset": 0
+        },
+        "matchingTimelinePrefabCount": 4,
+        "loadableEffectPrefabCount": 17,
+        "instantiateSuccess": true,
+        "failReason": ""
+      },
+      {
+        "skillId": 1012101,
+        "bundle": "download/skillprefabsandres/1012.assetbundle",
+        "loadSuccess": true,
+        "assetNameCount": 58,
+        "typeCounts": {
+          "GameObject": 18,
+          "Texture2D": 10,
+          "Sprite": 0,
+          "Material": 24,
+          "TextAsset": 0,
+          "AnimationClip": 0,
+          "PlayableAsset": 0
+        },
+        "matchingTimelinePrefabCount": 4,
+        "loadableEffectPrefabCount": 18,
+        "instantiateSuccess": true,
+        "failReason": ""
+      },
+      {
+        "skillId": 1012201,
+        "bundle": "download/skillprefabsandres/1012.assetbundle",
+        "loadSuccess": true,
+        "assetNameCount": 58,
+        "typeCounts": {
+          "GameObject": 18,
+          "Texture2D": 10,
+          "Sprite": 0,
+          "Material": 24,
+          "TextAsset": 0,
+          "AnimationClip": 0,
+          "PlayableAsset": 0
+        },
+        "matchingTimelinePrefabCount": 4,
+        "loadableEffectPrefabCount": 18,
+        "instantiateSuccess": true,
+        "failReason": ""
+      },
+      {
+        "skillId": 1012301,
+        "bundle": "download/skillprefabsandres/1012.assetbundle",
+        "loadSuccess": true,
+        "assetNameCount": 58,
+        "typeCounts": {
+          "GameObject": 18,
+          "Texture2D": 10,
+          "Sprite": 0,
+          "Material": 24,
+          "TextAsset": 0,
+          "AnimationClip": 0,
+          "PlayableAsset": 0
+        },
+        "matchingTimelinePrefabCount": 4,
+        "loadableEffectPrefabCount": 18,
+        "instantiateSuccess": true,
+        "failReason": ""
+      },
+      {
+        "skillId": 1034101,
+        "bundle": "download/skillprefabsandres/1034.assetbundle",
+        "loadSuccess": true,
+        "assetNameCount": 39,
+        "typeCounts": {
+          "GameObject": 16,
+          "Texture2D": 0,
+          "Sprite": 0,
+          "Material": 18,
+          "TextAsset": 0,
+          "AnimationClip": 0,
+          "PlayableAsset": 0
+        },
+        "matchingTimelinePrefabCount": 4,
+        "loadableEffectPrefabCount": 16,
+        "instantiateSuccess": true,
+        "failReason": ""
+      },
+      {
+        "skillId": 1034201,
+        "bundle": "download/skillprefabsandres/1034.assetbundle",
+        "loadSuccess": true,
+        "assetNameCount": 39,
+        "typeCounts": {
+          "GameObject": 16,
+          "Texture2D": 0,
+          "Sprite": 0,
+          "Material": 18,
+          "TextAsset": 0,
+          "AnimationClip": 0,
+          "PlayableAsset": 0
+        },
+        "matchingTimelinePrefabCount": 4,
+        "loadableEffectPrefabCount": 16,
+        "instantiateSuccess": true,
+        "failReason": ""
+      },
+      {
+        "skillId": 1034301,
+        "bundle": "download/skillprefabsandres/1034.assetbundle",
+        "loadSuccess": true,
+        "assetNameCount": 39,
+        "typeCounts": {
+          "GameObject": 16,
+          "Texture2D": 0,
+          "Sprite": 0,
+          "Material": 18,
+          "TextAsset": 0,
+          "AnimationClip": 0,
+          "PlayableAsset": 0
+        },
+        "matchingTimelinePrefabCount": 4,
+        "loadableEffectPrefabCount": 16,
+        "instantiateSuccess": true,
+        "failReason": ""
+      },
+      {
+        "skillId": 1036101,
+        "bundle": "download/skillprefabsandres/1036.assetbundle",
+        "loadSuccess": true,
+        "assetNameCount": 39,
+        "typeCounts": {
+          "GameObject": 17,
+          "Texture2D": 2,
+          "Sprite": 0,
+          "Material": 12,
+          "TextAsset": 0,
+          "AnimationClip": 1,
+          "PlayableAsset": 0
+        },
+        "matchingTimelinePrefabCount": 4,
+        "loadableEffectPrefabCount": 17,
+        "instantiateSuccess": true,
+        "failReason": ""
+      },
+      {
+        "skillId": 1036201,
+        "bundle": "download/skillprefabsandres/1036.assetbundle",
+        "loadSuccess": true,
+        "assetNameCount": 39,
+        "typeCounts": {
+          "GameObject": 17,
+          "Texture2D": 2,
+          "Sprite": 0,
+          "Material": 12,
+          "TextAsset": 0,
+          "AnimationClip": 1,
+          "PlayableAsset": 0
+        },
+        "matchingTimelinePrefabCount": 4,
+        "loadableEffectPrefabCount": 17,
+        "instantiateSuccess": true,
+        "failReason": ""
+      },
+      {
+        "skillId": 1036301,
+        "bundle": "download/skillprefabsandres/1036.assetbundle",
+        "loadSuccess": true,
+        "assetNameCount": 39,
+        "typeCounts": {
+          "GameObject": 17,
+          "Texture2D": 2,
+          "Sprite": 0,
+          "Material": 12,
+          "TextAsset": 0,
+          "AnimationClip": 1,
+          "PlayableAsset": 0
+        },
+        "matchingTimelinePrefabCount": 4,
+        "loadableEffectPrefabCount": 17,
+        "instantiateSuccess": true,
+        "failReason": ""
+      }
+    ],
+    "uniqueLoadableEffectBundleExamples": [
+      {
+        "skillId": 1002101,
+        "bundle": "download/skillprefabsandres/1002.assetbundle",
+        "loadSuccess": true,
+        "assetNameCount": 37,
+        "typeCounts": {
+          "GameObject": 17,
+          "Texture2D": 2,
+          "Sprite": 0,
+          "Material": 14,
+          "TextAsset": 0,
+          "AnimationClip": 0,
+          "PlayableAsset": 0
+        },
+        "matchingTimelinePrefabCount": 4,
+        "loadableEffectPrefabCount": 17,
+        "instantiateSuccess": true,
+        "failReason": ""
+      },
+      {
+        "skillId": 1012101,
+        "bundle": "download/skillprefabsandres/1012.assetbundle",
+        "loadSuccess": true,
+        "assetNameCount": 58,
+        "typeCounts": {
+          "GameObject": 18,
+          "Texture2D": 10,
+          "Sprite": 0,
+          "Material": 24,
+          "TextAsset": 0,
+          "AnimationClip": 0,
+          "PlayableAsset": 0
+        },
+        "matchingTimelinePrefabCount": 4,
+        "loadableEffectPrefabCount": 18,
+        "instantiateSuccess": true,
+        "failReason": ""
+      },
+      {
+        "skillId": 1034101,
+        "bundle": "download/skillprefabsandres/1034.assetbundle",
+        "loadSuccess": true,
+        "assetNameCount": 39,
+        "typeCounts": {
+          "GameObject": 16,
+          "Texture2D": 0,
+          "Sprite": 0,
+          "Material": 18,
+          "TextAsset": 0,
+          "AnimationClip": 0,
+          "PlayableAsset": 0
+        },
+        "matchingTimelinePrefabCount": 4,
+        "loadableEffectPrefabCount": 16,
+        "instantiateSuccess": true,
+        "failReason": ""
+      },
+      {
+        "skillId": 1036101,
+        "bundle": "download/skillprefabsandres/1036.assetbundle",
+        "loadSuccess": true,
+        "assetNameCount": 39,
+        "typeCounts": {
+          "GameObject": 17,
+          "Texture2D": 2,
+          "Sprite": 0,
+          "Material": 12,
+          "TextAsset": 0,
+          "AnimationClip": 1,
+          "PlayableAsset": 0
+        },
+        "matchingTimelinePrefabCount": 4,
+        "loadableEffectPrefabCount": 17,
+        "instantiateSuccess": true,
+        "failReason": ""
+      }
+    ],
+    "missingBundleCandidateExamples": [
+      {
+        "skillId": 1002201,
+        "bundle": "download/commonprefabsandres/skilleffect/commonskillprefabsandres1/pinkspeedline.assetbundle",
+        "absolutePath": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\extracted\\unity\\clean_unityfs_slices\\download\\commonprefabsandres\\skilleffect\\commonskillprefabsandres1\\pinkspeedline.assetbundle",
+        "exists": false,
+        "size": 0,
+        "normalizeNote": "as_normalized_lower_path",
+        "source": "timeline_prefab_dep"
+      },
+      {
+        "skillId": 1002301,
+        "bundle": "download/commonprefabsandres/skilleffect/commonskillprefabsandres1/pinkspeedline.assetbundle",
+        "absolutePath": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\extracted\\unity\\clean_unityfs_slices\\download\\commonprefabsandres\\skilleffect\\commonskillprefabsandres1\\pinkspeedline.assetbundle",
+        "exists": false,
+        "size": 0,
+        "normalizeNote": "as_normalized_lower_path",
+        "source": "timeline_prefab_dep"
+      },
+      {
+        "skillId": 1012201,
+        "bundle": "download/commonprefabsandres/skilleffect/commonskillprefabsandres1/redspeedline.assetbundle",
+        "absolutePath": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\extracted\\unity\\clean_unityfs_slices\\download\\commonprefabsandres\\skilleffect\\commonskillprefabsandres1\\redspeedline.assetbundle",
+        "exists": false,
+        "size": 0,
+        "normalizeNote": "as_normalized_lower_path",
+        "source": "timeline_prefab_dep"
+      },
+      {
+        "skillId": 1012301,
+        "bundle": "download/commonprefabsandres/skilleffect/commonskillprefabsandres1/redspeedline.assetbundle",
+        "absolutePath": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\extracted\\unity\\clean_unityfs_slices\\download\\commonprefabsandres\\skilleffect\\commonskillprefabsandres1\\redspeedline.assetbundle",
+        "exists": false,
+        "size": 0,
+        "normalizeNote": "as_normalized_lower_path",
+        "source": "timeline_prefab_dep"
+      },
+      {
+        "skillId": 1034201,
+        "bundle": "download/commonprefabsandres/skilleffect/commonskillprefabsandres1/yellospeedline.assetbundle",
+        "absolutePath": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\extracted\\unity\\clean_unityfs_slices\\download\\commonprefabsandres\\skilleffect\\commonskillprefabsandres1\\yellospeedline.assetbundle",
+        "exists": false,
+        "size": 0,
+        "normalizeNote": "as_normalized_lower_path",
+        "source": "timeline_prefab_dep"
+      },
+      {
+        "skillId": 1034301,
+        "bundle": "download/commonprefabsandres/skilleffect/commonskillprefabsandres1/yellospeedline.assetbundle",
+        "absolutePath": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\extracted\\unity\\clean_unityfs_slices\\download\\commonprefabsandres\\skilleffect\\commonskillprefabsandres1\\yellospeedline.assetbundle",
+        "exists": false,
+        "size": 0,
+        "normalizeNote": "as_normalized_lower_path",
+        "source": "timeline_prefab_dep"
+      },
+      {
+        "skillId": 1036201,
+        "bundle": "download/commonprefabsandres/skilleffect/commonskillprefabsandres1/redspeedline.assetbundle",
+        "absolutePath": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\extracted\\unity\\clean_unityfs_slices\\download\\commonprefabsandres\\skilleffect\\commonskillprefabsandres1\\redspeedline.assetbundle",
+        "exists": false,
+        "size": 0,
+        "normalizeNote": "as_normalized_lower_path",
+        "source": "timeline_prefab_dep"
+      },
+      {
+        "skillId": 1036301,
+        "bundle": "download/commonprefabsandres/skilleffect/commonskillprefabsandres1/yellospeedline.assetbundle",
+        "absolutePath": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\extracted\\unity\\clean_unityfs_slices\\download\\commonprefabsandres\\skilleffect\\commonskillprefabsandres1\\yellospeedline.assetbundle",
+        "exists": false,
+        "size": 0,
+        "normalizeNote": "as_normalized_lower_path",
+        "source": "timeline_prefab_dep"
+      }
+    ],
+    "uniqueMissingBundleCandidateExamples": [
+      {
+        "skillId": 1002201,
+        "bundle": "download/commonprefabsandres/skilleffect/commonskillprefabsandres1/pinkspeedline.assetbundle",
+        "absolutePath": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\extracted\\unity\\clean_unityfs_slices\\download\\commonprefabsandres\\skilleffect\\commonskillprefabsandres1\\pinkspeedline.assetbundle",
+        "exists": false,
+        "size": 0,
+        "normalizeNote": "as_normalized_lower_path",
+        "source": "timeline_prefab_dep"
+      },
+      {
+        "skillId": 1012201,
+        "bundle": "download/commonprefabsandres/skilleffect/commonskillprefabsandres1/redspeedline.assetbundle",
+        "absolutePath": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\extracted\\unity\\clean_unityfs_slices\\download\\commonprefabsandres\\skilleffect\\commonskillprefabsandres1\\redspeedline.assetbundle",
+        "exists": false,
+        "size": 0,
+        "normalizeNote": "as_normalized_lower_path",
+        "source": "timeline_prefab_dep"
+      },
+      {
+        "skillId": 1034201,
+        "bundle": "download/commonprefabsandres/skilleffect/commonskillprefabsandres1/yellospeedline.assetbundle",
+        "absolutePath": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\extracted\\unity\\clean_unityfs_slices\\download\\commonprefabsandres\\skilleffect\\commonskillprefabsandres1\\yellospeedline.assetbundle",
+        "exists": false,
+        "size": 0,
+        "normalizeNote": "as_normalized_lower_path",
+        "source": "timeline_prefab_dep"
+      }
+    ]
+  },
+  "luaEvidenceHits": [
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\191332877364712173_BattleUtil_security_xor_raw.lua",
+      "line": 983,
+      "text": "if ModulesInit.ProcedureNormalBattle.CheckDoGameFastSkillPlayFirstAnim(i)==false then"
+    },
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\191332877364712173_BattleUtil_security_xor_raw.lua",
+      "line": 984,
+      "text": "if ModulesInit.ProcedureNormalBattle.GameFastSkill==true then"
+    },
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\191332877364712173_BattleUtil_security_xor_raw.lua",
+      "line": 993,
+      "text": "if ModulesInit.ProcedureNormalBattle.CheckDoGameFastSkillPlayFirstAnim(i)==false then"
+    },
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\191332877364712173_BattleUtil_security_xor_raw.lua",
+      "line": 994,
+      "text": "if ModulesInit.ProcedureNormalBattle.GameFastSkill==true then"
+    },
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\191332877364712173_BattleUtil_security_xor_raw.lua",
+      "line": 1006,
+      "text": "if ModulesInit.ProcedureNormalBattle.CheckDoGameFastSkillPlayFirstAnim(i)==false then"
+    },
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\191332877364712173_BattleUtil_security_xor_raw.lua",
+      "line": 1007,
+      "text": "if ModulesInit.ProcedureNormalBattle.GameFastSkill==true and a.fastPrefabId2>0 then"
+    },
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\191332877364712173_BattleUtil_security_xor_raw.lua",
+      "line": 1014,
+      "text": "if ModulesInit.ProcedureNormalBattle.CheckDoGameFastSkillPlayFirstAnim(i)==false then"
+    },
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\191332877364712173_BattleUtil_security_xor_raw.lua",
+      "line": 1015,
+      "text": "if ModulesInit.ProcedureNormalBattle.GameFastSkill==true and a.fastPrefabId>0 then"
+    },
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\2411250927983938450_HeroSkillInfo_security_xor_raw.lua",
+      "line": 1,
+      "text": "HeroSkillInfo={"
+    },
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\2411250927983938450_HeroSkillInfo_security_xor_raw.lua",
+      "line": 3,
+      "text": "function HeroSkillInfo:New()"
+    },
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\2411250927983938450_HeroSkillInfo_security_xor_raw.lua",
+      "line": 12,
+      "text": "function HeroSkillInfo:SetSkill(e)"
+    },
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\5715894101901633899_RecordManager_security_xor_raw.lua",
+      "line": 33,
+      "text": "ModulesInit.ProcedureNormalBattle.SetLeftInfo(n,nil,i,o)"
+    },
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\5715894101901633899_RecordManager_security_xor_raw.lua",
+      "line": 34,
+      "text": "ModulesInit.ProcedureNormalBattle.SetRightInfo(nil,e.Icon,GameTools.GetLocalize(e.mosterName,LanguageCategory.LangBattle),e.level)"
+    },
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\5715894101901633899_RecordManager_security_xor_raw.lua",
+      "line": 37,
+      "text": "ModulesInit.ProcedureNormalBattle.SetLeftInfo(n,nil,i,o)"
+    },
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\846054528645605280_HeroBattleInfo_security_xor_raw.lua",
+      "line": 662,
+      "text": "e=HeroSkillInfo:New()"
+    },
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\846054528645605280_HeroBattleInfo_security_xor_raw.lua",
+      "line": 668,
+      "text": "e=HeroSkillInfo:New()"
+    },
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\846054528645605280_HeroBattleInfo_security_xor_raw.lua",
+      "line": 674,
+      "text": "e=HeroSkillInfo:New()"
+    },
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\846054528645605280_HeroBattleInfo_security_xor_raw.lua",
+      "line": 686,
+      "text": "t=HeroSkillInfo:New()"
+    },
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\846054528645605280_HeroBattleInfo_security_xor_raw.lua",
+      "line": 692,
+      "text": "t=HeroSkillInfo:New()"
+    },
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\846054528645605280_HeroBattleInfo_security_xor_raw.lua",
+      "line": 698,
+      "text": "t=HeroSkillInfo:New()"
+    },
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\846054528645605280_HeroBattleInfo_security_xor_raw.lua",
+      "line": 704,
+      "text": "t=HeroSkillInfo:New()"
+    },
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\846054528645605280_HeroBattleInfo_security_xor_raw.lua",
+      "line": 714,
+      "text": "local e=HeroSkillInfo:New()"
+    },
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\846054528645605280_HeroBattleInfo_security_xor_raw.lua",
+      "line": 896,
+      "text": "local a=HeroSkillInfo:New()"
+    },
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\846054528645605280_HeroBattleInfo_security_xor_raw.lua",
+      "line": 912,
+      "text": "local a=HeroSkillInfo:New()"
+    },
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\846054528645605280_HeroBattleInfo_security_xor_raw.lua",
+      "line": 949,
+      "text": "local t=HeroSkillInfo:New()"
+    },
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battlepreview\\4675926732120708722_BattlePreviewMgr_security_xor_raw.lua",
+      "line": 129,
+      "text": "ModulesInit.ProcedureNormalBattle.SetLeftInfo(nil,self.mMapData.leftIcon,a,0)"
+    },
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battlepreview\\4675926732120708722_BattlePreviewMgr_security_xor_raw.lua",
+      "line": 130,
+      "text": "ModulesInit.ProcedureNormalBattle.SetRightInfo(nil,self.mMapData.rightIcon,e,0)"
+    },
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_procedure\\-3424355311143813575_ProcedureNormalBattle_security_xor_raw.lua",
+      "line": 8,
+      "text": "require\"Modules/Battle/HeroSkillInfo\""
+    },
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_procedure\\-3424355311143813575_ProcedureNormalBattle_security_xor_raw.lua",
+      "line": 59,
+      "text": "e.GameFastSkill=false"
+    },
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_procedure\\-3424355311143813575_ProcedureNormalBattle_security_xor_raw.lua",
+      "line": 60,
+      "text": "e.GameFastSkillPlayFirstAnimMap={}"
+    },
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_procedure\\-3424355311143813575_ProcedureNormalBattle_security_xor_raw.lua",
+      "line": 149,
+      "text": "e.showOperMenu=true"
+    },
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_procedure\\-3424355311143813575_ProcedureNormalBattle_security_xor_raw.lua",
+      "line": 199,
+      "text": "e.skillCount=0"
+    },
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_procedure\\-3424355311143813575_ProcedureNormalBattle_security_xor_raw.lua",
+      "line": 206,
+      "text": "function t.SetLeftInfo(t,a,i,o,n)"
+    },
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_procedure\\-3424355311143813575_ProcedureNormalBattle_security_xor_raw.lua",
+      "line": 209,
+      "text": "function t.SetRightInfo(i,n,o,t,a)"
+    },
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_procedure\\-3424355311143813575_ProcedureNormalBattle_security_xor_raw.lua",
+      "line": 216,
+      "text": "e.showOperMenu=t"
+    },
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_procedure\\-3424355311143813575_ProcedureNormalBattle_security_xor_raw.lua",
+      "line": 420,
+      "text": "function t.OnShowHeadBar(t)"
+    },
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_procedure\\-3424355311143813575_ProcedureNormalBattle_security_xor_raw.lua",
+      "line": 425,
+      "text": "function t.BeginFightPlayWithServer(t)"
+    },
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_procedure\\-3424355311143813575_ProcedureNormalBattle_security_xor_raw.lua",
+      "line": 434,
+      "text": "e.LoadPlayerHeros(e.FightPlayData.ourTeamFormation,e.FightPlayData.ourTeamFormationAlter,e.FightPlayData.ourHeros,e.FightPlayData.ourPets)"
+    },
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_procedure\\-3424355311143813575_ProcedureNormalBattle_security_xor_raw.lua",
+      "line": 435,
+      "text": "e.LoadEnemyPlayerHeros(e.FightPlay_CurrWave.enemyTeamFormation,e.FightPlay_CurrWave.enemyTeamFormationAlter,e.FightPlay_CurrWave.enemyHeros,e.FightPlay_CurrWave.enemyPets)"
+    },
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_procedure\\-3424355311143813575_ProcedureNormalBattle_security_xor_raw.lua",
+      "line": 437,
+      "text": "function t.BeginBattleWithServer(t)"
+    },
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_procedure\\-3424355311143813575_ProcedureNormalBattle_security_xor_raw.lua",
+      "line": 588,
+      "text": "function t.BeginBattleWithServer_FightPlay()"
+    },
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_procedure\\-3424355311143813575_ProcedureNormalBattle_security_xor_raw.lua",
+      "line": 676,
+      "text": "ModulesInit.ProcedureNormalBattle.BeginBattleWithServer(table.deepCopy(o))"
+    },
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_procedure\\-3424355311143813575_ProcedureNormalBattle_security_xor_raw.lua",
+      "line": 696,
+      "text": "ModulesInit.ProcedureNormalBattle.BeginFightPlayWithServer(table.deepCopy(a))"
+    },
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_procedure\\-3424355311143813575_ProcedureNormalBattle_security_xor_raw.lua",
+      "line": 797,
+      "text": "EventSystem.AddListener(CommonEventId.OnBattleUILoadComplete,e.OnBattleUILoadComplete)"
+    },
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_procedure\\-3424355311143813575_ProcedureNormalBattle_security_xor_raw.lua",
+      "line": 805,
+      "text": "EventSystem.AddListener(CommonEventId.ProcedureNormalBattle_ShowHeadBar,e.OnShowHeadBar)"
+    },
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_procedure\\-3424355311143813575_ProcedureNormalBattle_security_xor_raw.lua",
+      "line": 859,
+      "text": "e.LoadGameFastSkill()"
+    },
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_procedure\\-3424355311143813575_ProcedureNormalBattle_security_xor_raw.lua",
+      "line": 910,
+      "text": "EventSystem.RemoveListener(CommonEventId.OnBattleUILoadComplete,e.OnBattleUILoadComplete)"
+    },
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_procedure\\-3424355311143813575_ProcedureNormalBattle_security_xor_raw.lua",
+      "line": 918,
+      "text": "EventSystem.RemoveListener(CommonEventId.ProcedureNormalBattle_ShowHeadBar,e.OnShowHeadBar)"
+    },
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_procedure\\-3424355311143813575_ProcedureNormalBattle_security_xor_raw.lua",
+      "line": 945,
+      "text": "function t.LoadGameFastSkill()"
+    },
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_procedure\\-3424355311143813575_ProcedureNormalBattle_security_xor_raw.lua",
+      "line": 946,
+      "text": "ModulesInit.ProcedureNormalBattle.GameFastSkill=false"
+    },
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_procedure\\-3424355311143813575_ProcedureNormalBattle_security_xor_raw.lua",
+      "line": 948,
+      "text": "local t=SaveMgr.GetFloatForKey(string.format(\"%d_GameFastSkill\",PlayerMgr.PlayerInfo.uid),0)"
+    },
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_procedure\\-3424355311143813575_ProcedureNormalBattle_security_xor_raw.lua",
+      "line": 951,
+      "text": "e.SetGameFastSkill(true)"
+    },
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_procedure\\-3424355311143813575_ProcedureNormalBattle_security_xor_raw.lua",
+      "line": 953,
+      "text": "ModulesInit.ProcedureNormalBattle.GameFastSkill=false"
+    },
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_procedure\\-3424355311143813575_ProcedureNormalBattle_security_xor_raw.lua",
+      "line": 957,
+      "text": "ModulesInit.ProcedureNormalBattle.GameFastSkill=false"
+    },
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_procedure\\-3424355311143813575_ProcedureNormalBattle_security_xor_raw.lua",
+      "line": 959,
+      "text": "ModulesInit.ProcedureNormalBattle.GameFastSkill=true"
+    },
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_procedure\\-3424355311143813575_ProcedureNormalBattle_security_xor_raw.lua",
+      "line": 964,
+      "text": "function t.ChangeGameFastSkill()"
+    },
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_procedure\\-3424355311143813575_ProcedureNormalBattle_security_xor_raw.lua",
+      "line": 965,
+      "text": "local t=ModulesInit.ProcedureNormalBattle.GameFastSkill==false"
+    },
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_procedure\\-3424355311143813575_ProcedureNormalBattle_security_xor_raw.lua",
+      "line": 966,
+      "text": "e.SetGameFastSkill(t)"
+    },
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_procedure\\-3424355311143813575_ProcedureNormalBattle_security_xor_raw.lua",
+      "line": 968,
+      "text": "function t.SetGameFastSkill(e)"
+    },
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_procedure\\-3424355311143813575_ProcedureNormalBattle_security_xor_raw.lua",
+      "line": 969,
+      "text": "ModulesInit.ProcedureNormalBattle.GameFastSkill=e"
+    },
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_procedure\\-3424355311143813575_ProcedureNormalBattle_security_xor_raw.lua",
+      "line": 971,
+      "text": "if ModulesInit.ProcedureNormalBattle.GameFastSkill then"
+    },
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_procedure\\-3424355311143813575_ProcedureNormalBattle_security_xor_raw.lua",
+      "line": 974,
+      "text": "SaveMgr.SetFloatForKey(string.format(\"%d_GameFastSkill\",PlayerMgr.PlayerInfo.uid),e)"
+    },
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_procedure\\-3424355311143813575_ProcedureNormalBattle_security_xor_raw.lua",
+      "line": 976,
+      "text": "function t.SetGameFastSkillPlayFirstAnim(t,e)"
+    },
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_procedure\\-3424355311143813575_ProcedureNormalBattle_security_xor_raw.lua",
+      "line": 978,
+      "text": "ModulesInit.ProcedureNormalBattle.GameFastSkillPlayFirstAnimMap[e]=t"
+    },
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_procedure\\-3424355311143813575_ProcedureNormalBattle_security_xor_raw.lua",
+      "line": 981,
+      "text": "SaveMgr.SetStringForKey(string.format(\"%d_%d_GameFastSkillPlayFirstAnim\",PlayerMgr.PlayerInfo.uid,e),t)"
+    },
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_procedure\\-3424355311143813575_ProcedureNormalBattle_security_xor_raw.lua",
+      "line": 985,
+      "text": "function t.GetGameFastSkillPlayFirstAnim(e)"
+    },
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_procedure\\-3424355311143813575_ProcedureNormalBattle_security_xor_raw.lua",
+      "line": 987,
+      "text": "if ModulesInit.ProcedureNormalBattle.GameFastSkillPlayFirstAnimMap[e]==nil then"
+    },
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_procedure\\-3424355311143813575_ProcedureNormalBattle_security_xor_raw.lua",
+      "line": 988,
+      "text": "local t=SaveMgr.GetStringForKey(string.format(\"%d_%d_GameFastSkillPlayFirstAnim\",PlayerMgr.PlayerInfo.uid,e),\"\")"
+    },
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_procedure\\-3424355311143813575_ProcedureNormalBattle_security_xor_raw.lua",
+      "line": 991,
+      "text": "ModulesInit.ProcedureNormalBattle.GameFastSkillPlayFirstAnimMap[e]=true"
+    },
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_procedure\\-3424355311143813575_ProcedureNormalBattle_security_xor_raw.lua",
+      "line": 993,
+      "text": "ModulesInit.ProcedureNormalBattle.GameFastSkillPlayFirstAnimMap[e]=false"
+    },
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_procedure\\-3424355311143813575_ProcedureNormalBattle_security_xor_raw.lua",
+      "line": 996,
+      "text": "return ModulesInit.ProcedureNormalBattle.GameFastSkillPlayFirstAnimMap[e]"
+    },
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_procedure\\-3424355311143813575_ProcedureNormalBattle_security_xor_raw.lua",
+      "line": 1001,
+      "text": "function t.CheckDoGameFastSkillPlayFirstAnim(t)"
+    },
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_procedure\\-3424355311143813575_ProcedureNormalBattle_security_xor_raw.lua",
+      "line": 1003,
+      "text": "if e.GetGameFastSkillPlayFirstAnim(t)then"
+    },
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_procedure\\-3424355311143813575_ProcedureNormalBattle_security_xor_raw.lua",
+      "line": 1006,
+      "text": "e.SetGameFastSkillPlayFirstAnim(true,t)"
+    },
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_procedure\\-3424355311143813575_ProcedureNormalBattle_security_xor_raw.lua",
+      "line": 1194,
+      "text": "e.LoadPlayerHeros(e.FightPlayData.ourTeamFormation,e.FightPlayData.ourTeamFormationAlter,e.FightPlayData.ourHeros,e.FightPlayData.ourPets)"
+    },
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_procedure\\-3424355311143813575_ProcedureNormalBattle_security_xor_raw.lua",
+      "line": 1195,
+      "text": "e.LoadEnemyPlayerHeros(e.FightPlay_CurrWave.enemyTeamFormation,e.FightPlay_CurrWave.enemyTeamFormationAlter,e.FightPlay_CurrWave.enemyHeros,e.FightPlay_CurrWave.enemyPets)"
+    },
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_procedure\\-3424355311143813575_ProcedureNormalBattle_security_xor_raw.lua",
+      "line": 1197,
+      "text": "e.LoadPlayerHeros(e.FightBeforeData.ourTeamFormation,e.FightBeforeData.ourTeamFormationAlter,e.FightBeforeData.ourHeros,e.FightBeforeData.ourPets)"
+    },
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_procedure\\-3424355311143813575_ProcedureNormalBattle_security_xor_raw.lua",
+      "line": 1198,
+      "text": "e.LoadEnemyPlayerHeros(e.FightBefore_CurrWave.enemyTeamFormation,e.FightBefore_CurrWave.enemyTeamFormationAlter,e.FightBefore_CurrWave.enemyHeros,e.FightBefore_CurrWave.enemyPets)"
+    },
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_procedure\\-3424355311143813575_ProcedureNormalBattle_security_xor_raw.lua",
+      "line": 1200,
+      "text": "e.LoadPlayerHeros()"
+    },
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_procedure\\-3424355311143813575_ProcedureNormalBattle_security_xor_raw.lua",
+      "line": 1444,
+      "text": "e.SetLeftInfo(PlayerMgr.PlayerInfo.head,nil,PlayerMgr.PlayerInfo.name,PlayerMgr.PlayerInfo.level)"
+    },
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_procedure\\-3424355311143813575_ProcedureNormalBattle_security_xor_raw.lua",
+      "line": 1446,
+      "text": "e.SetRightInfo(0,a.Icon,GameTools.GetLocalize(a.Name,LanguageCategory.LangBattle),a.level,\"UILEliteAdventure/IC_touxiangkuang\")"
+    },
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_procedure\\-3424355311143813575_ProcedureNormalBattle_security_xor_raw.lua",
+      "line": 1453,
+      "text": "e.SetLeftInfo(PlayerMgr.PlayerInfo.head,nil,PlayerMgr.PlayerInfo.name,PlayerMgr.PlayerInfo.level)"
+    },
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_procedure\\-3424355311143813575_ProcedureNormalBattle_security_xor_raw.lua",
+      "line": 1455,
+      "text": "e.SetRightInfo(0,a.Icon,GameTools.GetLocalize(a.Name,LanguageCategory.LangBattle),a.level,\"UILEliteAdventure/IC_touxiangkuang\")"
+    },
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_procedure\\-3424355311143813575_ProcedureNormalBattle_security_xor_raw.lua",
+      "line": 1462,
+      "text": "e.SetLeftInfo(PlayerMgr.PlayerInfo.head,nil,PlayerMgr.PlayerInfo.name,PlayerMgr.PlayerInfo.level)"
+    },
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_procedure\\-3424355311143813575_ProcedureNormalBattle_security_xor_raw.lua",
+      "line": 1464,
+      "text": "e.SetRightInfo(0,a.Icon,GameTools.GetLocalize(a.Name,LanguageCategory.LangBattle),a.level,\"UILEliteAdventure/IC_touxiangkuang\")"
+    },
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_procedure\\-3424355311143813575_ProcedureNormalBattle_security_xor_raw.lua",
+      "line": 1471,
+      "text": "e.SetLeftInfo(PlayerMgr.PlayerInfo.head,nil,PlayerMgr.PlayerInfo.name,PlayerMgr.PlayerInfo.level)"
+    },
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_procedure\\-3424355311143813575_ProcedureNormalBattle_security_xor_raw.lua",
+      "line": 1473,
+      "text": "e.SetRightInfo(0,a.Icon,GameTools.GetLocalize(a.Name,LanguageCategory.LangBattle),a.level,\"UILEliteAdventure/IC_touxiangkuang\")"
+    },
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_procedure\\-3424355311143813575_ProcedureNormalBattle_security_xor_raw.lua",
+      "line": 1479,
+      "text": "e.SetLeftInfo(PlayerMgr.PlayerInfo.head,nil,PlayerMgr.PlayerInfo.name,PlayerMgr.PlayerInfo.level)"
+    },
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_procedure\\-3424355311143813575_ProcedureNormalBattle_security_xor_raw.lua",
+      "line": 1480,
+      "text": "e.SetRightInfo(0,a.Icon,GameTools.GetLocalize(a.Name,LanguageCategory.LangBattle),a.level)"
+    },
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_procedure\\-3424355311143813575_ProcedureNormalBattle_security_xor_raw.lua",
+      "line": 1486,
+      "text": "e.SetLeftInfo(PlayerMgr.PlayerInfo.head,nil,PlayerMgr.PlayerInfo.name,PlayerMgr.PlayerInfo.level)"
+    },
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_procedure\\-3424355311143813575_ProcedureNormalBattle_security_xor_raw.lua",
+      "line": 1487,
+      "text": "e.SetRightInfo(0,a.Icon,GameTools.GetLocalize(a.Name,LanguageCategory.LangBattle),a.level)"
+    },
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_procedure\\-3424355311143813575_ProcedureNormalBattle_security_xor_raw.lua",
+      "line": 1581,
+      "text": "function t.LoadPlayerHeros(t,a,i,o)"
+    },
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_procedure\\-3424355311143813575_ProcedureNormalBattle_security_xor_raw.lua",
+      "line": 1687,
+      "text": "function t.LoadEnemyPlayerHeros(t,n,i,o)"
+    },
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_procedure\\-3424355311143813575_ProcedureNormalBattle_security_xor_raw.lua",
+      "line": 1726,
+      "text": "e.SetLeftInfo(PlayerMgr.PlayerInfo.head,nil,PlayerMgr.PlayerInfo.name,PlayerMgr.PlayerInfo.level)"
+    },
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_procedure\\-3424355311143813575_ProcedureNormalBattle_security_xor_raw.lua",
+      "line": 1728,
+      "text": "e.SetRightInfo(0,t.Icon,GameTools.GetLocalize(t.Name,LanguageCategory.LangBattle),t.level)"
+    },
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_procedure\\-3424355311143813575_ProcedureNormalBattle_security_xor_raw.lua",
+      "line": 1734,
+      "text": "e.SetLeftInfo(PlayerMgr.PlayerInfo.head,nil,PlayerMgr.PlayerInfo.name,PlayerMgr.PlayerInfo.level)"
+    },
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_procedure\\-3424355311143813575_ProcedureNormalBattle_security_xor_raw.lua",
+      "line": 1736,
+      "text": "e.SetRightInfo(0,t.Icon,GameTools.GetLocalize(t.Name,LanguageCategory.LangBattle),t.level,\"UILEliteAdventure/IC_touxiangkuang\")"
+    },
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_procedure\\-3424355311143813575_ProcedureNormalBattle_security_xor_raw.lua",
+      "line": 1742,
+      "text": "e.SetLeftInfo(PlayerMgr.PlayerInfo.head,nil,PlayerMgr.PlayerInfo.name,PlayerMgr.PlayerInfo.level)"
+    },
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_procedure\\-3424355311143813575_ProcedureNormalBattle_security_xor_raw.lua",
+      "line": 1744,
+      "text": "e.SetRightInfo(0,t.Icon,GameTools.GetLocalize(t.Name,LanguageCategory.LangBattle),t.level,\"UILEliteAdventure/IC_touxiangkuang\")"
+    },
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_procedure\\-3424355311143813575_ProcedureNormalBattle_security_xor_raw.lua",
+      "line": 1750,
+      "text": "e.SetLeftInfo(PlayerMgr.PlayerInfo.head,nil,PlayerMgr.PlayerInfo.name,PlayerMgr.PlayerInfo.level)"
+    },
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_procedure\\-3424355311143813575_ProcedureNormalBattle_security_xor_raw.lua",
+      "line": 1752,
+      "text": "e.SetRightInfo(0,t.Icon,GameTools.GetLocalize(t.Name,LanguageCategory.LangBattle),t.level,\"UILEliteAdventure/IC_touxiangkuang\")"
+    },
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_procedure\\-3424355311143813575_ProcedureNormalBattle_security_xor_raw.lua",
+      "line": 1758,
+      "text": "e.SetLeftInfo(PlayerMgr.PlayerInfo.head,nil,PlayerMgr.PlayerInfo.name,PlayerMgr.PlayerInfo.level)"
+    },
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_procedure\\-3424355311143813575_ProcedureNormalBattle_security_xor_raw.lua",
+      "line": 1760,
+      "text": "e.SetRightInfo(0,t.Icon,GameTools.GetLocalize(t.Name,LanguageCategory.LangBattle),t.level,\"UILEliteAdventure/IC_touxiangkuang\")"
+    },
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_procedure\\-3424355311143813575_ProcedureNormalBattle_security_xor_raw.lua",
+      "line": 1876,
+      "text": "e.OnBattleUILoadComplete()"
+    },
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_procedure\\-3424355311143813575_ProcedureNormalBattle_security_xor_raw.lua",
+      "line": 1881,
+      "text": "GameEntry.UI:OpenUIForm(e.IsBattleTest and UIFormId.UI_TestBattle or UIFormId.UI_NormalBattle,{showOperMenu=e.showOperMenu})"
+    },
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_procedure\\-3424355311143813575_ProcedureNormalBattle_security_xor_raw.lua",
+      "line": 1888,
+      "text": "function t.OnBattleUILoadComplete()"
+    },
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_procedure\\-3424355311143813575_ProcedureNormalBattle_security_xor_raw.lua",
+      "line": 2225,
+      "text": "e.LoadEnemyPlayerHeros(e.FightPlay_CurrWave.enemyTeamFormation,e.FightPlay_CurrWave.enemyTeamFormationAlter,e.FightPlay_CurrWave.enemyHeros,e.FightPlay_CurrWave.enemyPets)"
+    },
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_procedure\\-3424355311143813575_ProcedureNormalBattle_security_xor_raw.lua",
+      "line": 2228,
+      "text": "e.LoadEnemyPlayerHeros(e.FightBefore_CurrWave.enemyTeamFormation,e.FightBefore_CurrWave.enemyTeamFormationAlter,e.FightBefore_CurrWave.enemyHeros,e.FightBefore_CurrWave.enemyPets)"
+    },
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_procedure\\-3424355311143813575_ProcedureNormalBattle_security_xor_raw.lua",
+      "line": 6516,
+      "text": "GameTools.CloseUIForm(e.IsBattleTest and UIFormId.UI_TestBattle or UIFormId.UI_NormalBattle)"
+    },
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_procedure\\-3424355311143813575_ProcedureNormalBattle_security_xor_raw.lua",
+      "line": 6519,
+      "text": "if GameEntry.UI:IsExists(UIFormId.UI_NormalBattleSkipView)and e.GetIsAutoCloseSkipView()then"
+    },
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_procedure\\-3424355311143813575_ProcedureNormalBattle_security_xor_raw.lua",
+      "line": 6520,
+      "text": "GameTools.CloseUIForm(UIFormId.UI_NormalBattleSkipView)"
+    },
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_procedure\\-3424355311143813575_ProcedureNormalBattle_security_xor_raw.lua",
+      "line": 6541,
+      "text": "GameTools.CloseUIForm(e.IsBattleTest and UIFormId.UI_TestBattle or UIFormId.UI_NormalBattle)"
+    },
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_procedure\\-3424355311143813575_ProcedureNormalBattle_security_xor_raw.lua",
+      "line": 6671,
+      "text": "e.SetLeftInfo(t.headId,nil,a,o)"
+    },
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_procedure\\-3424355311143813575_ProcedureNormalBattle_security_xor_raw.lua",
+      "line": 6675,
+      "text": "e.SetRightInfo(t.headId,nil,a,o)"
+    },
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_procedure\\-3424355311143813575_ProcedureNormalBattle_security_xor_raw.lua",
+      "line": 6894,
+      "text": "e.skillCount=e.skillCount+1"
+    },
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_procedure\\-3424355311143813575_ProcedureNormalBattle_security_xor_raw.lua",
+      "line": 6895,
+      "text": "return e.skillCount"
+    },
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_procedure\\-3424355311143813575_ProcedureNormalBattle_security_xor_raw.lua",
+      "line": 6898,
+      "text": "return e.skillCount"
+    }
+  ],
+  "failureAxes": {
+    "actor_motion_not_proven": true,
+    "bottom_skill_cards_not_restored": true,
+    "missing_runtime_actor_bundles": true,
+    "skill_effects_available_but_not_integrated_into_motion": true,
+    "map_id_conflict_still_open": true
+  },
+  "nextBlocker": "BATTLE_29_BIND_UI_NORMALBATTLE_HERO_LIST_SKILL_CARDS_AND_TRACE_ACTOR_ANIMATION_RUNTIME"
+}

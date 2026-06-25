@@ -439,3 +439,41 @@
   - BATTLE_27 contact sheet: `reports\battle\BATTLE_27_CORRECT_MAP_SCENE_HUD_PREVIEW_CLIP05_CONTACT_SHEET.jpg`
 - Next battle blocker:
   - `BATTLE_28_RESTORE_BATTLE_ACTOR_SPINE_RUNTIME_MOTION_AND_BOTTOM_SKILL_CARDS`
+
+## Update 2026-06-25 19:50 KST
+
+### Battle BATTLE_28 Result
+
+- BATTLE_28 used `C:\Users\godho\Downloads\플레이.mp4` clip05 around 486s as a motion gate, not a single screenshot.
+- Verdict: `battle28_evidence_collected_not_final`.
+- Motion evidence:
+  - frame pairs checked: `5`
+  - total motion components: `54`
+  - actor motion components: `26`
+  - bottom-card/skill-region motion components: `14`
+- Bottom skill-card evidence:
+  - HUD bottom candidate rows: `56`
+  - active visible bottom candidate rows: `7`
+  - meaningful bottom-center rows: `0`
+  - the color/chroma ratio is not treated as decisive by itself because the floor is also high-chroma; the stronger evidence is video motion plus `0` meaningful bottom-center HUD rows.
+- Actor/runtime evidence:
+  - runtime actor slots: `12`
+  - runtime prefab slots: `3`
+  - missing actor slots: `9`
+  - BATTLE_27 textured actors: `3`
+- Skill/effect evidence:
+  - skill ids checked: `20`
+  - skill found count: `12`
+  - timeline found count: `12`
+  - unique loadable effect bundles: `4`
+  - unique loadable effect prefabs: `68`
+  - unique missing effect bundle candidates: `3`
+- Outputs:
+  - root CMD: `BATTLE_28_PROBE_ACTOR_MOTION_AND_SKILLCARD_EVIDENCE.cmd`
+  - tool CMD: `_restore_tools\BATTLE_28_PROBE_ACTOR_MOTION_AND_SKILLCARD_EVIDENCE.cmd`
+  - report: `reports\battle\BATTLE_28_ACTOR_MOTION_SKILLCARD_EVIDENCE_RESULT.md`
+  - JSON: `reports\battle\BATTLE_28_ACTOR_MOTION_SKILLCARD_EVIDENCE_RESULT.json`
+  - contact sheet: `reports\battle\BATTLE_28_ACTOR_MOTION_SKILLCARD_EVIDENCE_CONTACT_SHEET.jpg`
+  - reference sequence: `reports\battle\BATTLE_28_PLAY_VIDEO_CLIP05_486S_SEQUENCE.jpg`
+- Next battle blocker:
+  - `BATTLE_29_BIND_UI_NORMALBATTLE_HERO_LIST_SKILL_CARDS_AND_TRACE_ACTOR_ANIMATION_RUNTIME`
