@@ -10,19 +10,19 @@
 - contact sheet: `C:\Users\godho\Downloads\girlswar\reports\battle\BATTLE_32_ACTOR_SPINE_RUNTIME_CLASS_IDLE_MOTION_REPLAY_CONTACT_SHEET.jpg`
 
 ## Runtime Class / Shader Probe
-- MissingScript before/after: `3` / `3`
-- MissingScript reduction: `0`
-- SkeletonAnimation components resolved: `0`
-- idle replay call success: `0`
+- MissingScript before/after: `3` / `0`
+- MissingScript reduction: `3`
+- SkeletonAnimation components resolved: `3`
+- idle replay call success: `3`
 - shader fallback applied: `0`
 - magenta pixel ratio: `0.073207`
 - shader dependency loaded: `True`
 - shader dependency status: `loaded`
 
 ## Actor Details
-- `our` heroDid `1002` model `1002`: missingScript `1`, SkeletonAnimation `0`, idleReplay `False`, shaderFix `0`, idleInSkelBytes `False`, atlas `1002.png`
-- `our` heroDid `1034` model `1034`: missingScript `1`, SkeletonAnimation `0`, idleReplay `False`, shaderFix `0`, idleInSkelBytes `False`, atlas `1034.png`
-- `enemy` heroDid `1100111` model `3001`: missingScript `1`, SkeletonAnimation `0`, idleReplay `False`, shaderFix `0`, idleInSkelBytes `False`, atlas `3001.png`
+- `our` heroDid `1002` model `1002`: missingScript `0`, SkeletonAnimation `1`, idleReplay `True`, shaderFix `0`, idleInSkelBytes `False`, atlas `1002.png`
+- `our` heroDid `1034` model `1034`: missingScript `0`, SkeletonAnimation `1`, idleReplay `True`, shaderFix `0`, idleInSkelBytes `False`, atlas `1034.png`
+- `enemy` heroDid `1100111` model `3001`: missingScript `0`, SkeletonAnimation `1`, idleReplay `True`, shaderFix `0`, idleInSkelBytes `False`, atlas `3001.png`
 
 ## Blocker
 - Spine runtime proxy/shader evidence was probed, but original clip05 actor idle/motion is still not reproduced. The remaining blocker is MonoScript assembly/type binding if SkeletonAnimation did not resolve, otherwise real SkeletonData/AnimationState reconstruction from .skel.
@@ -36,4 +36,4 @@
 - contact sheet: `C:\Users\godho\Downloads\girlswar\reports\battle\BATTLE_32_ACTOR_SPINE_RUNTIME_CLASS_IDLE_MOTION_REPLAY_CONTACT_SHEET.jpg`
 
 ## Next Blocker
-- `BATTLE_33_DEEP_TRACE_MONOSCRIPT_ASSEMBLY_GUID_FOR_ACTOR_PREFABS`
+- `BATTLE_33_RECONSTRUCT_SPINE_ANIMATIONSTATE_FROM_SKEL_BINARY`

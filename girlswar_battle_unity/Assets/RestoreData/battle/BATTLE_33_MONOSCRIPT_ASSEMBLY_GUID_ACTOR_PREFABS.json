@@ -1,0 +1,956 @@
+{
+  "verdict": "아직 원본 clip05 actor motion 재현 아님",
+  "visual_status": "failed_actor_render_still_magenta_after_monoscript_binding_fixed",
+  "isFinalRestoredBattleScreen": false,
+  "reference_video_used": true,
+  "videoTimeRangeSeconds": "485.0-487.0",
+  "referenceFrameCount": 6,
+  "referenceMotionPairs": [
+    {
+      "pair": "485.0-485.4",
+      "changedPixels": 153123
+    },
+    {
+      "pair": "485.4-485.8",
+      "changedPixels": 117061
+    },
+    {
+      "pair": "485.8-486.2",
+      "changedPixels": 108567
+    },
+    {
+      "pair": "486.2-486.6",
+      "changedPixels": 155760
+    },
+    {
+      "pair": "486.6-487.0",
+      "changedPixels": 143611
+    }
+  ],
+  "actorMotionReplayed": false,
+  "monoBehaviourTraceCount": 12,
+  "spineUnityMonoBehaviourCount": 12,
+  "actorSkeletonAnimationMonoBehaviourCount": 3,
+  "missingScriptBeforeAfter": "3/0",
+  "missingScriptReduction": 3,
+  "skeletonAnimationComponentCount": 3,
+  "idleReplaySucceededCount": 3,
+  "captureMetrics": {
+    "captureExists": true,
+    "width": 1920,
+    "height": 1080,
+    "magentaPixelRatio": 0.073207,
+    "nonBlackPixelRatio": 0.073207
+  },
+  "asmdefShim": {
+    "path": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_battle_unity\\Assets\\Scripts\\BattleUIExternalStubs\\SpineUnity\\spine-unity.asmdef",
+    "exists": true,
+    "content": "{\n  \"name\": \"spine-unity\",\n  \"references\": [\n    \"UnityEngine.UI\"\n  ],\n  \"autoReferenced\": true\n}\n"
+  },
+  "spineActorStub": {
+    "path": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_battle_unity\\Assets\\Scripts\\BattleUIExternalStubs\\SpineUnity\\SpineActorRuntimeStubs.cs",
+    "exists": true
+  },
+  "il2cppEvidence": {
+    "dumpClassHits": [
+      {
+        "path": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\extracted\\il2cpp_dump\\dump.cs",
+        "line": 415550,
+        "text": "public class SkeletonDataAsset : ScriptableObject // TypeDefIndex: 7559"
+      },
+      {
+        "path": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\extracted\\il2cpp_dump\\dump.cs",
+        "line": 415675,
+        "text": "public class SpineAtlasAsset : AtlasAssetBase // TypeDefIndex: 7565"
+      },
+      {
+        "path": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\extracted\\il2cpp_dump\\dump.cs",
+        "line": 416396,
+        "text": "public class SkeletonAnimation : SkeletonRenderer, ISkeletonAnimation, IAnimationStateComponent // TypeDefIndex: 7581"
+      },
+      {
+        "path": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\extracted\\il2cpp_dump\\dump.cs",
+        "line": 417034,
+        "text": "public class SkeletonMecanim : SkeletonRenderer, ISkeletonAnimation // TypeDefIndex: 7590"
+      },
+      {
+        "path": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\extracted\\il2cpp_dump\\dump.cs",
+        "line": 417338,
+        "text": "public class SkeletonRenderer : MonoBehaviour, ISkeletonComponent, IHasSkeletonDataAsset // TypeDefIndex: 7598"
+      }
+    ],
+    "stringLiteralHits": [
+      {
+        "index": null,
+        "value": " 未挂载SkeletonAnimation"
+      },
+      {
+        "index": null,
+        "value": "Attached Spine component does not implement ISkeletonAnimation. This script is not compatible."
+      },
+      {
+        "index": null,
+        "value": "NewSkeletonAnimationGameObject"
+      },
+      {
+        "index": null,
+        "value": "Spine/Skeleton"
+      },
+      {
+        "index": null,
+        "value": "download/commonprefabsandres/spinematandshaders.assetbundle"
+      },
+      {
+        "index": null,
+        "value": "invalid arguments to Spine.Unity.SkeletonAnimation constructor!"
+      },
+      {
+        "index": null,
+        "value": "invalid arguments to Spine.Unity.SkeletonAnimation.AddToGameObject!"
+      },
+      {
+        "index": null,
+        "value": "invalid arguments to Spine.Unity.SkeletonAnimation.BeforeApply!"
+      },
+      {
+        "index": null,
+        "value": "invalid arguments to Spine.Unity.SkeletonAnimation.Initialize!"
+      },
+      {
+        "index": null,
+        "value": "invalid arguments to Spine.Unity.SkeletonAnimation.NewSkeletonAnimationGameObject!"
+      },
+      {
+        "index": null,
+        "value": "invalid arguments to Spine.Unity.SkeletonAnimation.UpdateComplete!"
+      },
+      {
+        "index": null,
+        "value": "invalid arguments to Spine.Unity.SkeletonAnimation.UpdateLocal!"
+      },
+      {
+        "index": null,
+        "value": "invalid arguments to Spine.Unity.SkeletonAnimation.UpdateWorld!"
+      }
+    ]
+  },
+  "bundleTraces": [
+    {
+      "target": {
+        "side": "our",
+        "heroDid": "1002",
+        "modelId": "1002",
+        "bundle": "download/roleprefabsandres/battleprefabandres/1002.assetbundle",
+        "prefabAsset": "assets/download/roleprefabsandres/battleprefabandres/1002/hero_1002.prefab",
+        "bundlePath": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\extracted\\unity\\clean_unityfs_slices\\download\\roleprefabsandres\\battleprefabandres\\1002.assetbundle"
+      },
+      "objectCount": 22,
+      "monoScriptCount": 4,
+      "monoBehaviourCount": 4,
+      "gameObjectCount": 2,
+      "prefabGameObjects": {
+        "7448313691814067227": "Hero_1002"
+      },
+      "monoScripts": [
+        {
+          "pathId": -6938409698251234290,
+          "name": "SkeletonGraphic",
+          "className": "SkeletonGraphic",
+          "namespace": "Spine.Unity",
+          "assemblyName": "spine-unity.dll"
+        },
+        {
+          "pathId": 1008803689438726606,
+          "name": "SpineAtlasAsset",
+          "className": "SpineAtlasAsset",
+          "namespace": "Spine.Unity",
+          "assemblyName": "spine-unity.dll"
+        },
+        {
+          "pathId": 8302033850027404168,
+          "name": "SkeletonDataAsset",
+          "className": "SkeletonDataAsset",
+          "namespace": "Spine.Unity",
+          "assemblyName": "spine-unity.dll"
+        },
+        {
+          "pathId": 9202454401006530641,
+          "name": "SkeletonAnimation",
+          "className": "SkeletonAnimation",
+          "namespace": "Spine.Unity",
+          "assemblyName": "spine-unity.dll"
+        }
+      ],
+      "monoBehaviours": [
+        {
+          "side": "our",
+          "heroDid": "1002",
+          "modelId": "1002",
+          "bundle": "download/roleprefabsandres/battleprefabandres/1002.assetbundle",
+          "monoBehaviourPathId": -8382606417504995930,
+          "gameObjectPathId": 2916762097377812642,
+          "gameObjectName": "HeroUI_1002",
+          "scriptFileId": 0,
+          "scriptPathId": -6938409698251234290,
+          "scriptName": "SkeletonGraphic",
+          "className": "SkeletonGraphic",
+          "namespace": "Spine.Unity",
+          "assemblyName": "spine-unity.dll",
+          "resolvedFullName": "Spine.Unity.SkeletonGraphic",
+          "serializedFields": {
+            "skeletonDataAsset": {
+              "m_FileID": 0,
+              "m_PathID": 5410798655350692559
+            },
+            "startingAnimation": "stand",
+            "startingLoop": 1,
+            "initialSkinName": "default",
+            "timeScale": 1.0,
+            "updateWhenInvisible": 3
+          },
+          "serializedFieldSummary": "{\"initialSkinName\": \"default\", \"skeletonDataAsset\": {\"m_FileID\": 0, \"m_PathID\": 5410798655350692559}, \"startingAnimation\": \"stand\", \"startingLoop\": 1, \"timeScale\": 1.0, \"updateWhenInvisible\": 3}",
+          "role": "hero_ui_spine_graphic"
+        },
+        {
+          "side": "our",
+          "heroDid": "1002",
+          "modelId": "1002",
+          "bundle": "download/roleprefabsandres/battleprefabandres/1002.assetbundle",
+          "monoBehaviourPathId": -1973848794011561530,
+          "gameObjectPathId": 7448313691814067227,
+          "gameObjectName": "Hero_1002",
+          "scriptFileId": 0,
+          "scriptPathId": 9202454401006530641,
+          "scriptName": "SkeletonAnimation",
+          "className": "SkeletonAnimation",
+          "namespace": "Spine.Unity",
+          "assemblyName": "spine-unity.dll",
+          "resolvedFullName": "Spine.Unity.SkeletonAnimation",
+          "serializedFields": {
+            "skeletonDataAsset": {
+              "m_FileID": 0,
+              "m_PathID": 5410798655350692559
+            },
+            "_animationName": "ult",
+            "loop": 0,
+            "initialSkinName": "",
+            "timeScale": 1.0,
+            "updateWhenInvisible": 3
+          },
+          "serializedFieldSummary": "{\"_animationName\": \"ult\", \"initialSkinName\": \"\", \"loop\": 0, \"skeletonDataAsset\": {\"m_FileID\": 0, \"m_PathID\": 5410798655350692559}, \"timeScale\": 1.0, \"updateWhenInvisible\": 3}",
+          "role": "actor_spine_runtime"
+        },
+        {
+          "side": "our",
+          "heroDid": "1002",
+          "modelId": "1002",
+          "bundle": "download/roleprefabsandres/battleprefabandres/1002.assetbundle",
+          "monoBehaviourPathId": -1014275597521971401,
+          "gameObjectPathId": 0,
+          "gameObjectName": "",
+          "scriptFileId": 0,
+          "scriptPathId": 1008803689438726606,
+          "scriptName": "SpineAtlasAsset",
+          "className": "SpineAtlasAsset",
+          "namespace": "Spine.Unity",
+          "assemblyName": "spine-unity.dll",
+          "resolvedFullName": "Spine.Unity.SpineAtlasAsset",
+          "serializedFields": {
+            "atlasFile": {
+              "m_FileID": 0,
+              "m_PathID": 3373340142783789617
+            },
+            "materials": [
+              {
+                "m_FileID": 0,
+                "m_PathID": -3441070765647199456
+              }
+            ]
+          },
+          "serializedFieldSummary": "{\"atlasFile\": {\"m_FileID\": 0, \"m_PathID\": 3373340142783789617}, \"materials\": [{\"m_FileID\": 0, \"m_PathID\": -3441070765647199456}]}",
+          "role": "spine_atlas_asset"
+        },
+        {
+          "side": "our",
+          "heroDid": "1002",
+          "modelId": "1002",
+          "bundle": "download/roleprefabsandres/battleprefabandres/1002.assetbundle",
+          "monoBehaviourPathId": 5410798655350692559,
+          "gameObjectPathId": 0,
+          "gameObjectName": "",
+          "scriptFileId": 0,
+          "scriptPathId": 8302033850027404168,
+          "scriptName": "SkeletonDataAsset",
+          "className": "SkeletonDataAsset",
+          "namespace": "Spine.Unity",
+          "assemblyName": "spine-unity.dll",
+          "resolvedFullName": "Spine.Unity.SkeletonDataAsset",
+          "serializedFields": {
+            "skeletonJSON": {
+              "m_FileID": 0,
+              "m_PathID": 1665224429881118700
+            },
+            "blendModeMaterials": {
+              "requiresBlendModeMaterials": 1,
+              "applyAdditiveMaterial": 0,
+              "additiveMaterials": [],
+              "multiplyMaterials": [],
+              "screenMaterials": [
+                {
+                  "pageName": "1002.png",
+                  "material": {
+                    "m_FileID": 0,
+                    "m_PathID": 7148116973307621835
+                  }
+                }
+              ]
+            },
+            "scale": 0.009999999776482582
+          },
+          "serializedFieldSummary": "{\"blendModeMaterials\": {\"additiveMaterials\": [], \"applyAdditiveMaterial\": 0, \"multiplyMaterials\": [], \"requiresBlendModeMaterials\": 1, \"screenMaterials\": [{\"material\": {\"m_FileID\": 0, \"m_PathID\": 7148116973307621835}, \"pageName\": \"1002.png\"}]}, \"scale\": 0.009999999776482582, \"skeletonJSON\": {\"m_FileID\": 0, \"m_PathID\": ",
+          "role": "spine_skeleton_data_asset"
+        }
+      ]
+    },
+    {
+      "target": {
+        "side": "our",
+        "heroDid": "1034",
+        "modelId": "1034",
+        "bundle": "download/roleprefabsandres/battleprefabandres/1034.assetbundle",
+        "prefabAsset": "assets/download/roleprefabsandres/battleprefabandres/1034/hero_1034.prefab",
+        "bundlePath": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\extracted\\unity\\clean_unityfs_slices\\download\\roleprefabsandres\\battleprefabandres\\1034.assetbundle"
+      },
+      "objectCount": 22,
+      "monoScriptCount": 4,
+      "monoBehaviourCount": 4,
+      "gameObjectCount": 2,
+      "prefabGameObjects": {
+        "1714688094397971808": "Hero_1034"
+      },
+      "monoScripts": [
+        {
+          "pathId": -6938409698251234290,
+          "name": "SkeletonGraphic",
+          "className": "SkeletonGraphic",
+          "namespace": "Spine.Unity",
+          "assemblyName": "spine-unity.dll"
+        },
+        {
+          "pathId": 1008803689438726606,
+          "name": "SpineAtlasAsset",
+          "className": "SpineAtlasAsset",
+          "namespace": "Spine.Unity",
+          "assemblyName": "spine-unity.dll"
+        },
+        {
+          "pathId": 8302033850027404168,
+          "name": "SkeletonDataAsset",
+          "className": "SkeletonDataAsset",
+          "namespace": "Spine.Unity",
+          "assemblyName": "spine-unity.dll"
+        },
+        {
+          "pathId": 9202454401006530641,
+          "name": "SkeletonAnimation",
+          "className": "SkeletonAnimation",
+          "namespace": "Spine.Unity",
+          "assemblyName": "spine-unity.dll"
+        }
+      ],
+      "monoBehaviours": [
+        {
+          "side": "our",
+          "heroDid": "1034",
+          "modelId": "1034",
+          "bundle": "download/roleprefabsandres/battleprefabandres/1034.assetbundle",
+          "monoBehaviourPathId": -6761371301451957790,
+          "gameObjectPathId": 1714688094397971808,
+          "gameObjectName": "Hero_1034",
+          "scriptFileId": 0,
+          "scriptPathId": 9202454401006530641,
+          "scriptName": "SkeletonAnimation",
+          "className": "SkeletonAnimation",
+          "namespace": "Spine.Unity",
+          "assemblyName": "spine-unity.dll",
+          "resolvedFullName": "Spine.Unity.SkeletonAnimation",
+          "serializedFields": {
+            "skeletonDataAsset": {
+              "m_FileID": 0,
+              "m_PathID": 3214316990278771306
+            },
+            "_animationName": "skill1",
+            "loop": 0,
+            "initialSkinName": "",
+            "timeScale": 1.0,
+            "updateWhenInvisible": 3
+          },
+          "serializedFieldSummary": "{\"_animationName\": \"skill1\", \"initialSkinName\": \"\", \"loop\": 0, \"skeletonDataAsset\": {\"m_FileID\": 0, \"m_PathID\": 3214316990278771306}, \"timeScale\": 1.0, \"updateWhenInvisible\": 3}",
+          "role": "actor_spine_runtime"
+        },
+        {
+          "side": "our",
+          "heroDid": "1034",
+          "modelId": "1034",
+          "bundle": "download/roleprefabsandres/battleprefabandres/1034.assetbundle",
+          "monoBehaviourPathId": -3112845323289359507,
+          "gameObjectPathId": 0,
+          "gameObjectName": "",
+          "scriptFileId": 0,
+          "scriptPathId": 1008803689438726606,
+          "scriptName": "SpineAtlasAsset",
+          "className": "SpineAtlasAsset",
+          "namespace": "Spine.Unity",
+          "assemblyName": "spine-unity.dll",
+          "resolvedFullName": "Spine.Unity.SpineAtlasAsset",
+          "serializedFields": {
+            "atlasFile": {
+              "m_FileID": 0,
+              "m_PathID": 9008888806324543472
+            },
+            "materials": [
+              {
+                "m_FileID": 0,
+                "m_PathID": 8481820798194157462
+              }
+            ]
+          },
+          "serializedFieldSummary": "{\"atlasFile\": {\"m_FileID\": 0, \"m_PathID\": 9008888806324543472}, \"materials\": [{\"m_FileID\": 0, \"m_PathID\": 8481820798194157462}]}",
+          "role": "spine_atlas_asset"
+        },
+        {
+          "side": "our",
+          "heroDid": "1034",
+          "modelId": "1034",
+          "bundle": "download/roleprefabsandres/battleprefabandres/1034.assetbundle",
+          "monoBehaviourPathId": 3214316990278771306,
+          "gameObjectPathId": 0,
+          "gameObjectName": "",
+          "scriptFileId": 0,
+          "scriptPathId": 8302033850027404168,
+          "scriptName": "SkeletonDataAsset",
+          "className": "SkeletonDataAsset",
+          "namespace": "Spine.Unity",
+          "assemblyName": "spine-unity.dll",
+          "resolvedFullName": "Spine.Unity.SkeletonDataAsset",
+          "serializedFields": {
+            "skeletonJSON": {
+              "m_FileID": 0,
+              "m_PathID": -3260164475778644329
+            },
+            "blendModeMaterials": {
+              "requiresBlendModeMaterials": 1,
+              "applyAdditiveMaterial": 0,
+              "additiveMaterials": [],
+              "multiplyMaterials": [],
+              "screenMaterials": [
+                {
+                  "pageName": "1034.png",
+                  "material": {
+                    "m_FileID": 0,
+                    "m_PathID": -7701057228218361780
+                  }
+                }
+              ]
+            },
+            "scale": 0.009999999776482582
+          },
+          "serializedFieldSummary": "{\"blendModeMaterials\": {\"additiveMaterials\": [], \"applyAdditiveMaterial\": 0, \"multiplyMaterials\": [], \"requiresBlendModeMaterials\": 1, \"screenMaterials\": [{\"material\": {\"m_FileID\": 0, \"m_PathID\": -7701057228218361780}, \"pageName\": \"1034.png\"}]}, \"scale\": 0.009999999776482582, \"skeletonJSON\": {\"m_FileID\": 0, \"m_PathID\":",
+          "role": "spine_skeleton_data_asset"
+        },
+        {
+          "side": "our",
+          "heroDid": "1034",
+          "modelId": "1034",
+          "bundle": "download/roleprefabsandres/battleprefabandres/1034.assetbundle",
+          "monoBehaviourPathId": 5225894138277579536,
+          "gameObjectPathId": -2607777606180373203,
+          "gameObjectName": "HeroUI_1034",
+          "scriptFileId": 0,
+          "scriptPathId": -6938409698251234290,
+          "scriptName": "SkeletonGraphic",
+          "className": "SkeletonGraphic",
+          "namespace": "Spine.Unity",
+          "assemblyName": "spine-unity.dll",
+          "resolvedFullName": "Spine.Unity.SkeletonGraphic",
+          "serializedFields": {
+            "skeletonDataAsset": {
+              "m_FileID": 0,
+              "m_PathID": 3214316990278771306
+            },
+            "startingAnimation": "stand",
+            "startingLoop": 1,
+            "initialSkinName": "default",
+            "timeScale": 1.0,
+            "updateWhenInvisible": 3
+          },
+          "serializedFieldSummary": "{\"initialSkinName\": \"default\", \"skeletonDataAsset\": {\"m_FileID\": 0, \"m_PathID\": 3214316990278771306}, \"startingAnimation\": \"stand\", \"startingLoop\": 1, \"timeScale\": 1.0, \"updateWhenInvisible\": 3}",
+          "role": "hero_ui_spine_graphic"
+        }
+      ]
+    },
+    {
+      "target": {
+        "side": "enemy",
+        "heroDid": "1100111",
+        "modelId": "3001",
+        "bundle": "download/roleprefabsandres/battleprefabandres/3001.assetbundle",
+        "prefabAsset": "assets/download/roleprefabsandres/battleprefabandres/3001/hero_3001.prefab",
+        "bundlePath": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\extracted\\unity\\clean_unityfs_slices\\download\\roleprefabsandres\\battleprefabandres\\3001.assetbundle"
+      },
+      "objectCount": 21,
+      "monoScriptCount": 4,
+      "monoBehaviourCount": 4,
+      "gameObjectCount": 2,
+      "prefabGameObjects": {
+        "7088941473386070899": "Hero_3001"
+      },
+      "monoScripts": [
+        {
+          "pathId": -6938409698251234290,
+          "name": "SkeletonGraphic",
+          "className": "SkeletonGraphic",
+          "namespace": "Spine.Unity",
+          "assemblyName": "spine-unity.dll"
+        },
+        {
+          "pathId": 1008803689438726606,
+          "name": "SpineAtlasAsset",
+          "className": "SpineAtlasAsset",
+          "namespace": "Spine.Unity",
+          "assemblyName": "spine-unity.dll"
+        },
+        {
+          "pathId": 8302033850027404168,
+          "name": "SkeletonDataAsset",
+          "className": "SkeletonDataAsset",
+          "namespace": "Spine.Unity",
+          "assemblyName": "spine-unity.dll"
+        },
+        {
+          "pathId": 9202454401006530641,
+          "name": "SkeletonAnimation",
+          "className": "SkeletonAnimation",
+          "namespace": "Spine.Unity",
+          "assemblyName": "spine-unity.dll"
+        }
+      ],
+      "monoBehaviours": [
+        {
+          "side": "enemy",
+          "heroDid": "1100111",
+          "modelId": "3001",
+          "bundle": "download/roleprefabsandres/battleprefabandres/3001.assetbundle",
+          "monoBehaviourPathId": -6073460784623367702,
+          "gameObjectPathId": 0,
+          "gameObjectName": "",
+          "scriptFileId": 0,
+          "scriptPathId": 1008803689438726606,
+          "scriptName": "SpineAtlasAsset",
+          "className": "SpineAtlasAsset",
+          "namespace": "Spine.Unity",
+          "assemblyName": "spine-unity.dll",
+          "resolvedFullName": "Spine.Unity.SpineAtlasAsset",
+          "serializedFields": {
+            "atlasFile": {
+              "m_FileID": 0,
+              "m_PathID": -3102365806415234313
+            },
+            "materials": [
+              {
+                "m_FileID": 0,
+                "m_PathID": 1825831143407533424
+              }
+            ]
+          },
+          "serializedFieldSummary": "{\"atlasFile\": {\"m_FileID\": 0, \"m_PathID\": -3102365806415234313}, \"materials\": [{\"m_FileID\": 0, \"m_PathID\": 1825831143407533424}]}",
+          "role": "spine_atlas_asset"
+        },
+        {
+          "side": "enemy",
+          "heroDid": "1100111",
+          "modelId": "3001",
+          "bundle": "download/roleprefabsandres/battleprefabandres/3001.assetbundle",
+          "monoBehaviourPathId": -5838307213355684488,
+          "gameObjectPathId": 0,
+          "gameObjectName": "",
+          "scriptFileId": 0,
+          "scriptPathId": 8302033850027404168,
+          "scriptName": "SkeletonDataAsset",
+          "className": "SkeletonDataAsset",
+          "namespace": "Spine.Unity",
+          "assemblyName": "spine-unity.dll",
+          "resolvedFullName": "Spine.Unity.SkeletonDataAsset",
+          "serializedFields": {
+            "skeletonJSON": {
+              "m_FileID": 0,
+              "m_PathID": -756768513637643680
+            },
+            "blendModeMaterials": {
+              "requiresBlendModeMaterials": 0,
+              "applyAdditiveMaterial": 1,
+              "additiveMaterials": [],
+              "multiplyMaterials": [],
+              "screenMaterials": []
+            },
+            "scale": 0.009999999776482582
+          },
+          "serializedFieldSummary": "{\"blendModeMaterials\": {\"additiveMaterials\": [], \"applyAdditiveMaterial\": 1, \"multiplyMaterials\": [], \"requiresBlendModeMaterials\": 0, \"screenMaterials\": []}, \"scale\": 0.009999999776482582, \"skeletonJSON\": {\"m_FileID\": 0, \"m_PathID\": -756768513637643680}}",
+          "role": "spine_skeleton_data_asset"
+        },
+        {
+          "side": "enemy",
+          "heroDid": "1100111",
+          "modelId": "3001",
+          "bundle": "download/roleprefabsandres/battleprefabandres/3001.assetbundle",
+          "monoBehaviourPathId": -4352857780542273386,
+          "gameObjectPathId": -7718662271087589012,
+          "gameObjectName": "HeroUI_3001",
+          "scriptFileId": 0,
+          "scriptPathId": -6938409698251234290,
+          "scriptName": "SkeletonGraphic",
+          "className": "SkeletonGraphic",
+          "namespace": "Spine.Unity",
+          "assemblyName": "spine-unity.dll",
+          "resolvedFullName": "Spine.Unity.SkeletonGraphic",
+          "serializedFields": {
+            "skeletonDataAsset": {
+              "m_FileID": 0,
+              "m_PathID": -5838307213355684488
+            },
+            "startingAnimation": "stand",
+            "startingLoop": 1,
+            "initialSkinName": "default",
+            "timeScale": 1.0,
+            "updateWhenInvisible": 3
+          },
+          "serializedFieldSummary": "{\"initialSkinName\": \"default\", \"skeletonDataAsset\": {\"m_FileID\": 0, \"m_PathID\": -5838307213355684488}, \"startingAnimation\": \"stand\", \"startingLoop\": 1, \"timeScale\": 1.0, \"updateWhenInvisible\": 3}",
+          "role": "hero_ui_spine_graphic"
+        },
+        {
+          "side": "enemy",
+          "heroDid": "1100111",
+          "modelId": "3001",
+          "bundle": "download/roleprefabsandres/battleprefabandres/3001.assetbundle",
+          "monoBehaviourPathId": 6497674388930808486,
+          "gameObjectPathId": 7088941473386070899,
+          "gameObjectName": "Hero_3001",
+          "scriptFileId": 0,
+          "scriptPathId": 9202454401006530641,
+          "scriptName": "SkeletonAnimation",
+          "className": "SkeletonAnimation",
+          "namespace": "Spine.Unity",
+          "assemblyName": "spine-unity.dll",
+          "resolvedFullName": "Spine.Unity.SkeletonAnimation",
+          "serializedFields": {
+            "skeletonDataAsset": {
+              "m_FileID": 0,
+              "m_PathID": -5838307213355684488
+            },
+            "_animationName": "attack",
+            "loop": 0,
+            "initialSkinName": "",
+            "timeScale": 1.0,
+            "updateWhenInvisible": 3
+          },
+          "serializedFieldSummary": "{\"_animationName\": \"attack\", \"initialSkinName\": \"\", \"loop\": 0, \"skeletonDataAsset\": {\"m_FileID\": 0, \"m_PathID\": -5838307213355684488}, \"timeScale\": 1.0, \"updateWhenInvisible\": 3}",
+          "role": "actor_spine_runtime"
+        }
+      ]
+    }
+  ],
+  "unityProbe": {
+    "verdict": "battle32_runtime_class_shader_probe_trace_only",
+    "visual_status": "failed_actor_idle_motion_not_replayed",
+    "isFinalRestoredBattleScreen": false,
+    "scene": "Assets/Scenes/Battle32ActorSpineRuntimeClassIdleMotionReplay.unity",
+    "capture": "Assets/RestoreCaptures/battle_actor/Battle32ActorSpineRuntimeClassIdleMotionReplay_1920x1080.png",
+    "summary": {
+      "targetActorCount": 3,
+      "bundleLoadSuccess": 3,
+      "prefabInstantiateSuccess": 3,
+      "componentRowCount": 3,
+      "missingScriptCount": 0,
+      "skeletonLikeAssetCount": 12,
+      "skeletonAnimationComponentCount": 3,
+      "idleReplaySucceededCount": 3,
+      "shaderFallbackAppliedCount": 0,
+      "localSpineShaderFound": true
+    },
+    "shaderDependency": {
+      "bundle": "download/commonprefabsandres/spinematandshaders.assetbundle",
+      "absolutePath": "C:/Users/godho/Downloads/girlswar/girlswar_merged_extracted/extracted/unity/clean_unityfs_slices\\download\\commonprefabsandres\\spinematandshaders.assetbundle",
+      "fileExists": true,
+      "fileSize": 63614,
+      "loaded": true,
+      "status": "loaded",
+      "shaderNames": [
+        "Spine/Blend Modes/Skeleton PMA Additive",
+        "Spine/Blend Modes/Skeleton PMA Multiply",
+        "Spine/Blend Modes/Skeleton PMA Screen",
+        "Spine/Outline/Blend Modes/Skeleton PMA Additive",
+        "Spine/Outline/Blend Modes/Skeleton PMA Multiply",
+        "Spine/Outline/Blend Modes/Skeleton PMA Screen",
+        "Spine/Outline/SkeletonGraphic",
+        "Spine/Outline/SkeletonGraphic Tint Black",
+        "Spine/Outline/Skeleton Fill",
+        "Spine/Outline/Skeleton Lit",
+        "Spine/Outline/Skeleton Lit ZWrite",
+        "Spine/Outline/Skeleton",
+        "Spine/Outline/OutlineOnly-ZWrite",
+        "Spine/Outline/Skeleton Tint",
+        "Spine/Outline/Skeleton Tint Black",
+        "Spine/Outline/Special/Skeleton Grayscale",
+        "Spine/Outline/Sprite/Pixel Lit",
+        "Spine/Outline/Sprite/Unlit",
+        "Spine/Outline/Sprite/Vertex Lit",
+        "Spine/SkeletonGraphic Additive",
+        "Spine/SkeletonGraphic Multiply",
+        "Spine/SkeletonGraphic Screen",
+        "Spine/SkeletonGraphic Tint Black",
+        "Spine/SkeletonGraphic",
+        "Spine/Skeleton Fill",
+        "Spine/Skeleton Lit ZWrite",
+        "Spine/Skeleton Lit",
+        "Spine/Skeleton Tint",
+        "Spine/Skeleton Tint Black",
+        "Spine/Skeleton",
+        "Spine/Special/Skeleton Grayscale"
+      ],
+      "materialNames": [
+        "SkeletonGraphicDefault|shader=Spine/SkeletonGraphic",
+        "SkeletonGraphicDefaultAlpha|shader=Spine/SkeletonGraphic",
+        "SkeletonGraphicDefaultGrayscale|shader=Spine/Special/Skeleton Grayscale",
+        "SkeletonGraphicAdditive|shader=Spine/SkeletonGraphic Additive",
+        "SkeletonGraphicDefault|shader=Spine/SkeletonGraphic",
+        "SkeletonGraphicDefaultGrayscale|shader=Spine/Special/Skeleton Grayscale",
+        "SkeletonGraphicDefaultOutline|shader=Spine/Outline/SkeletonGraphic",
+        "SkeletonGraphicMultiply|shader=Spine/SkeletonGraphic Multiply",
+        "SkeletonGraphicScreen|shader=Spine/SkeletonGraphic Screen",
+        "SkeletonGraphicTintBlack|shader=Spine/SkeletonGraphic Tint Black",
+        "SkeletonGraphicTintBlackOutline|shader=Spine/Outline/SkeletonGraphic Tint Black"
+      ],
+      "assetTypes": [
+        "assets/download/commonprefabsandres/spinematandshaders/skeletongraphicdefault.mat|UnityEngine.Material",
+        "assets/download/commonprefabsandres/spinematandshaders/skeletongraphicdefaultalpha.mat|UnityEngine.Material",
+        "assets/download/commonprefabsandres/spinematandshaders/skeletongraphicdefaultgrayscale.mat|UnityEngine.Material",
+        "assets/download/commonprefabsandres/spinematandshaders/spinematerials/skeletongraphicadditive.mat|UnityEngine.Material",
+        "assets/download/commonprefabsandres/spinematandshaders/spinematerials/skeletongraphicdefault.mat|UnityEngine.Material",
+        "assets/download/commonprefabsandres/spinematandshaders/spinematerials/skeletongraphicdefaultgrayscale.mat|UnityEngine.Material",
+        "assets/download/commonprefabsandres/spinematandshaders/spinematerials/skeletongraphicdefaultoutline.mat|UnityEngine.Material",
+        "assets/download/commonprefabsandres/spinematandshaders/spinematerials/skeletongraphicmultiply.mat|UnityEngine.Material",
+        "assets/download/commonprefabsandres/spinematandshaders/spinematerials/skeletongraphicscreen.mat|UnityEngine.Material",
+        "assets/download/commonprefabsandres/spinematandshaders/spinematerials/skeletongraphictintblack.mat|UnityEngine.Material",
+        "assets/download/commonprefabsandres/spinematandshaders/spinematerials/skeletongraphictintblackoutline.mat|UnityEngine.Material",
+        "assets/download/commonprefabsandres/spinematandshaders/spineshaders/blendmodes/spine-skeleton-pma-additive.shader|UnityEngine.Shader",
+        "assets/download/commonprefabsandres/spinematandshaders/spineshaders/blendmodes/spine-skeleton-pma-multiply.shader|UnityEngine.Shader",
+        "assets/download/commonprefabsandres/spinematandshaders/spineshaders/blendmodes/spine-skeleton-pma-screen.shader|UnityEngine.Shader",
+        "assets/download/commonprefabsandres/spinematandshaders/spineshaders/outline/blendmodes/spine-skeleton-pma-additive-outline.shader|UnityEngine.Shader",
+        "assets/download/commonprefabsandres/spinematandshaders/spineshaders/outline/blendmodes/spine-skeleton-pma-multiply-outline.shader|UnityEngine.Shader",
+        "assets/download/commonprefabsandres/spinematandshaders/spineshaders/outline/blendmodes/spine-skeleton-pma-screen-outline.shader|UnityEngine.Shader",
+        "assets/download/commonprefabsandres/spinematandshaders/spineshaders/outline/skeletongraphic/spine-skeletongraphic-outline.shader|UnityEngine.Shader",
+        "assets/download/commonprefabsandres/spinematandshaders/spineshaders/outline/skeletongraphic/spine-skeletongraphic-tintblack-outline.shader|UnityEngine.Shader",
+        "assets/download/commonprefabsandres/spinematandshaders/spineshaders/outline/spine-skeleton-fill-outline.shader|UnityEngine.Shader",
+        "assets/download/commonprefabsandres/spinematandshaders/spineshaders/outline/spine-skeleton-lit-outline.shader|UnityEngine.Shader",
+        "assets/download/commonprefabsandres/spinematandshaders/spineshaders/outline/spine-skeleton-lit-zwrite-outline.shader|UnityEngine.Shader",
+        "assets/download/commonprefabsandres/spinematandshaders/spineshaders/outline/spine-skeleton-outline.shader|UnityEngine.Shader",
+        "assets/download/commonprefabsandres/spinematandshaders/spineshaders/outline/spine-skeleton-outlineonly-zwrite.shader|UnityEngine.Shader",
+        "assets/download/commonprefabsandres/spinematandshaders/spineshaders/outline/spine-skeleton-tint-outline.shader|UnityEngine.Shader",
+        "assets/download/commonprefabsandres/spinematandshaders/spineshaders/outline/spine-skeleton-tintblack-outline.shader|UnityEngine.Shader",
+        "assets/download/commonprefabsandres/spinematandshaders/spineshaders/outline/spine-special-skeleton-grayscale-outline.shader|UnityEngine.Shader",
+        "assets/download/commonprefabsandres/spinematandshaders/spineshaders/outline/sprite/spritespixellit-outline.shader|UnityEngine.Shader",
+        "assets/download/commonprefabsandres/spinematandshaders/spineshaders/outline/sprite/spritesunlit-outline.shader|UnityEngine.Shader",
+        "assets/download/commonprefabsandres/spinematandshaders/spineshaders/outline/sprite/spritesvertexlit-outline.shader|UnityEngine.Shader",
+        "assets/download/commonprefabsandres/spinematandshaders/spineshaders/skeletongraphic/spine-skeletongraphic-additive.shader|UnityEngine.Shader",
+        "assets/download/commonprefabsandres/spinematandshaders/spineshaders/skeletongraphic/spine-skeletongraphic-multiply.shader|UnityEngine.Shader",
+        "assets/download/commonprefabsandres/spinematandshaders/spineshaders/skeletongraphic/spine-skeletongraphic-screen.shader|UnityEngine.Shader",
+        "assets/download/commonprefabsandres/spinematandshaders/spineshaders/skeletongraphic/spine-skeletongraphic-tintblack.shader|UnityEngine.Shader",
+        "assets/download/commonprefabsandres/spinematandshaders/spineshaders/skeletongraphic/spine-skeletongraphic.shader|UnityEngine.Shader",
+        "assets/download/commonprefabsandres/spinematandshaders/spineshaders/spine-skeleton-fill.shader|UnityEngine.Shader",
+        "assets/download/commonprefabsandres/spinematandshaders/spineshaders/spine-skeleton-lit-zwrite.shader|UnityEngine.Shader",
+        "assets/download/commonprefabsandres/spinematandshaders/spineshaders/spine-skeleton-lit.shader|UnityEngine.Shader",
+        "assets/download/commonprefabsandres/spinematandshaders/spineshaders/spine-skeleton-tint.shader|UnityEngine.Shader",
+        "assets/download/commonprefabsandres/spinematandshaders/spineshaders/spine-skeleton-tintblack.shader|UnityEngine.Shader",
+        "assets/download/commonprefabsandres/spinematandshaders/spineshaders/spine-skeleton.shader|UnityEngine.Shader",
+        "assets/download/commonprefabsandres/spinematandshaders/spineshaders/spine-special-skeleton-grayscale.shader|UnityEngine.Shader",
+        "assets/download/commonprefabsandres/spinematandshaders/spineshadersvariantcollection.shadervariants|UnityEngine.ShaderVariantCollection"
+      ],
+      "loadExceptions": []
+    },
+    "actors": [
+      {
+        "side": "our",
+        "heroDid": "1002",
+        "modelId": "1002",
+        "bundle": "download/roleprefabsandres/battleprefabandres/1002.assetbundle",
+        "absoluteBundlePath": "C:/Users/godho/Downloads/girlswar/girlswar_merged_extracted/extracted/unity/clean_unityfs_slices\\download\\roleprefabsandres\\battleprefabandres\\1002.assetbundle",
+        "fileExists": true,
+        "fileSize": 639953,
+        "bundleLoaded": true,
+        "prefabAsset": "assets/download/roleprefabsandres/battleprefabandres/1002/hero_1002.prefab",
+        "prefabInstantiated": true,
+        "assetNameCount": 9,
+        "rendererCount": 1,
+        "enabledRendererCount": 1,
+        "missingScriptCount": 0,
+        "skeletonComponentCount": 1,
+        "skeletonAnimationComponentCount": 1,
+        "skeletonRendererComponentCount": 0,
+        "skeletonMecanimComponentCount": 0,
+        "shaderFallbackAppliedCount": 0,
+        "internalErrorShaderMaterialCount": 0,
+        "atlasTextBytes": 8088,
+        "skelBytes": 868704,
+        "atlasFirstLine": "1002.png",
+        "idleStringInSkelBytes": false,
+        "idleReplaySucceeded": true,
+        "idleReplayAttemptReason": "",
+        "motionReplayStatus": "idle_replay_component_call_succeeded_but_visual_motion_not_verified",
+        "failReason": "",
+        "textureNames": [
+          "1002(1024x512)"
+        ],
+        "materialNamesBefore": [
+          "1002_Material-Screen|shader=Spine/Blend Modes/Skeleton PMA Screen|mainTex=1002",
+          "1002_Material|shader=Spine/Skeleton Tint|mainTex=1002"
+        ],
+        "materialNamesAfter": [
+          "1002_Material|before=Spine/Skeleton Tint|after=Spine/Skeleton Tint|mainTex=1002"
+        ],
+        "prefabAssetNames": [
+          "assets/download/roleprefabsandres/battleprefabandres/1002/hero_1002.prefab",
+          "assets/download/roleprefabsandres/battleprefabandres/1002/heroui_1002.prefab"
+        ],
+        "skeletonLikeAssets": [
+          "assets/download/roleprefabsandres/battleprefabandres/1002/1002.atlas.txt",
+          "assets/download/roleprefabsandres/battleprefabandres/1002/1002.skel.bytes",
+          "assets/download/roleprefabsandres/battleprefabandres/1002/1002_atlas.asset",
+          "assets/download/roleprefabsandres/battleprefabandres/1002/1002_skeletondata.asset"
+        ],
+        "skeletonRuntimeTypeNames": [
+          "Spine.Unity.SkeletonDataAsset"
+        ],
+        "loadExceptions": []
+      },
+      {
+        "side": "our",
+        "heroDid": "1034",
+        "modelId": "1034",
+        "bundle": "download/roleprefabsandres/battleprefabandres/1034.assetbundle",
+        "absoluteBundlePath": "C:/Users/godho/Downloads/girlswar/girlswar_merged_extracted/extracted/unity/clean_unityfs_slices\\download\\roleprefabsandres\\battleprefabandres\\1034.assetbundle",
+        "fileExists": true,
+        "fileSize": 863994,
+        "bundleLoaded": true,
+        "prefabAsset": "assets/download/roleprefabsandres/battleprefabandres/1034/hero_1034.prefab",
+        "prefabInstantiated": true,
+        "assetNameCount": 9,
+        "rendererCount": 1,
+        "enabledRendererCount": 1,
+        "missingScriptCount": 0,
+        "skeletonComponentCount": 1,
+        "skeletonAnimationComponentCount": 1,
+        "skeletonRendererComponentCount": 0,
+        "skeletonMecanimComponentCount": 0,
+        "shaderFallbackAppliedCount": 0,
+        "internalErrorShaderMaterialCount": 0,
+        "atlasTextBytes": 6199,
+        "skelBytes": 832584,
+        "atlasFirstLine": "1034.png",
+        "idleStringInSkelBytes": false,
+        "idleReplaySucceeded": true,
+        "idleReplayAttemptReason": "",
+        "motionReplayStatus": "idle_replay_component_call_succeeded_but_visual_motion_not_verified",
+        "failReason": "",
+        "textureNames": [
+          "1034(2048x1024)"
+        ],
+        "materialNamesBefore": [
+          "1034_Material-Screen|shader=Spine/Blend Modes/Skeleton PMA Screen|mainTex=1034",
+          "1034_Material|shader=Spine/Skeleton Tint|mainTex=1034"
+        ],
+        "materialNamesAfter": [
+          "1034_Material|before=Spine/Skeleton Tint|after=Spine/Skeleton Tint|mainTex=1034",
+          "1034_Material-Screen|before=Spine/Blend Modes/Skeleton PMA Screen|after=Spine/Blend Modes/Skeleton PMA Screen|mainTex=1034"
+        ],
+        "prefabAssetNames": [
+          "assets/download/roleprefabsandres/battleprefabandres/1034/hero_1034.prefab",
+          "assets/download/roleprefabsandres/battleprefabandres/1034/heroui_1034.prefab"
+        ],
+        "skeletonLikeAssets": [
+          "assets/download/roleprefabsandres/battleprefabandres/1034/1034.atlas.txt",
+          "assets/download/roleprefabsandres/battleprefabandres/1034/1034.skel.bytes",
+          "assets/download/roleprefabsandres/battleprefabandres/1034/1034_atlas.asset",
+          "assets/download/roleprefabsandres/battleprefabandres/1034/1034_skeletondata.asset"
+        ],
+        "skeletonRuntimeTypeNames": [
+          "Spine.Unity.SkeletonDataAsset"
+        ],
+        "loadExceptions": []
+      },
+      {
+        "side": "enemy",
+        "heroDid": "1100111",
+        "modelId": "3001",
+        "bundle": "download/roleprefabsandres/battleprefabandres/3001.assetbundle",
+        "absoluteBundlePath": "C:/Users/godho/Downloads/girlswar/girlswar_merged_extracted/extracted/unity/clean_unityfs_slices\\download\\roleprefabsandres\\battleprefabandres\\3001.assetbundle",
+        "fileExists": true,
+        "fileSize": 193954,
+        "bundleLoaded": true,
+        "prefabAsset": "assets/download/roleprefabsandres/battleprefabandres/3001/hero_3001.prefab",
+        "prefabInstantiated": true,
+        "assetNameCount": 8,
+        "rendererCount": 1,
+        "enabledRendererCount": 1,
+        "missingScriptCount": 0,
+        "skeletonComponentCount": 1,
+        "skeletonAnimationComponentCount": 1,
+        "skeletonRendererComponentCount": 0,
+        "skeletonMecanimComponentCount": 0,
+        "shaderFallbackAppliedCount": 0,
+        "internalErrorShaderMaterialCount": 0,
+        "atlasTextBytes": 1436,
+        "skelBytes": 162468,
+        "atlasFirstLine": "3001.png",
+        "idleStringInSkelBytes": false,
+        "idleReplaySucceeded": true,
+        "idleReplayAttemptReason": "",
+        "motionReplayStatus": "idle_replay_component_call_succeeded_but_visual_motion_not_verified",
+        "failReason": "",
+        "textureNames": [
+          "3001(512x512)"
+        ],
+        "materialNamesBefore": [
+          "3001_Material|shader=Spine/Skeleton Tint|mainTex=3001"
+        ],
+        "materialNamesAfter": [
+          "3001_Material|before=Spine/Skeleton Tint|after=Spine/Skeleton Tint|mainTex=3001"
+        ],
+        "prefabAssetNames": [
+          "assets/download/roleprefabsandres/battleprefabandres/3001/hero_3001.prefab",
+          "assets/download/roleprefabsandres/battleprefabandres/3001/heroui_3001.prefab"
+        ],
+        "skeletonLikeAssets": [
+          "assets/download/roleprefabsandres/battleprefabandres/3001/3001.atlas.txt",
+          "assets/download/roleprefabsandres/battleprefabandres/3001/3001.skel.bytes",
+          "assets/download/roleprefabsandres/battleprefabandres/3001/3001_atlas.asset",
+          "assets/download/roleprefabsandres/battleprefabandres/3001/3001_skeletondata.asset"
+        ],
+        "skeletonRuntimeTypeNames": [
+          "Spine.Unity.SkeletonDataAsset"
+        ],
+        "loadExceptions": []
+      }
+    ]
+  },
+  "blocker": "MonoScript assembly binding is now identified and validated: actor m_Script points to Spine.Unity.SkeletonAnimation in spine-unity.dll, and placing the proxy under the existing spine-unity asmdef reduces MissingScript 3->0. The remaining visual blocker is real Spine .skel AnimationState/mesh update plus Spine shader render compatibility; clip05 motion is still not reproduced.",
+  "nextBlocker": "BATTLE_34_RECONSTRUCT_SPINE_ANIMATIONSTATE_AND_SHADER_RENDER_FROM_SKEL_ATLAS",
+  "outputs": {
+    "report": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_33_MONOSCRIPT_ASSEMBLY_GUID_ACTOR_PREFABS_RESULT.md",
+    "resultJson": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_33_MONOSCRIPT_ASSEMBLY_GUID_ACTOR_PREFABS_RESULT.json",
+    "unityDataJson": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_battle_unity\\Assets\\RestoreData\\battle\\BATTLE_33_MONOSCRIPT_ASSEMBLY_GUID_ACTOR_PREFABS.json",
+    "csv": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_battle_unity\\Assets\\RestoreData\\battle\\BATTLE_33_MONOSCRIPT_ASSEMBLY_GUID_ACTOR_PREFABS_COMPONENTS.csv",
+    "contactSheet": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_33_MONOSCRIPT_ASSEMBLY_GUID_ACTOR_PREFABS_CONTACT_SHEET.jpg",
+    "videoSequence": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_33_PLAY_VIDEO_CLIP05_485_487_SEQUENCE.jpg",
+    "sourceCapture": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_battle_unity\\Assets\\RestoreCaptures\\battle_actor\\Battle32ActorSpineRuntimeClassIdleMotionReplay_1920x1080.png"
+  }
+}

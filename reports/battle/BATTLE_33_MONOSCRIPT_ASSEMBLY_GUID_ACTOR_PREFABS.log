@@ -5,8 +5,8 @@ OS: 'Windows 11  (10.0.26200) Professional' Language: 'ko' Physical Memory: 3202
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1
 System  architecture: x64
 Process architecture: x64
-Date: 2026-06-25T12:12:41Z
-[Licensing::Module] Successfully launched the LicensingClient (PId: 11428)
+Date: 2026-06-25T12:15:47Z
+[Licensing::Module] Successfully launched the LicensingClient (PId: 10624)
 
 COMMAND LINE ARGUMENTS:
 C:\Program Files\Unity\Hub\Editor\6000.4.9f1\Editor\Unity.exe
@@ -17,7 +17,7 @@ C:\Users\godho\Downloads\girlswar\girlswar_battle_unity
 -executeMethod
 BattleActorSpineRuntimeClassIdleMotionReplayEditor.Build
 -logFile
-C:\Users\godho\Downloads\girlswar\reports\battle\BATTLE_32_ACTOR_SPINE_RUNTIME_CLASS_IDLE_MOTION_REPLAY.log
+C:\Users\godho\Downloads\girlswar\reports\battle\BATTLE_33_MONOSCRIPT_ASSEMBLY_GUID_ACTOR_PREFABS.log
 Successfully changed project path to: C:\Users\godho\Downloads\girlswar\girlswar_battle_unity
 C:/Users/godho/Downloads/girlswar/girlswar_battle_unity
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -55,33 +55,33 @@ C:/Users/godho/Downloads/girlswar/girlswar_battle_unity
     "memorysetup-job-temp-allocator-block-size=2097152"
     "memorysetup-job-temp-allocator-block-size-background=1048576"
     "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
-Player connection [35000]  Target information:
+Player connection [36136]  Target information:
 
-Player connection [35000]  * "[IP] 10.10.1.159 [Port] 55504 [Flags] 2 [Guid] 3522792347 [EditorId] 3522792347 [Version] 1048832 [Id] WindowsEditor(7,sjpark) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [36136]  * "[IP] 10.10.1.159 [Port] 55504 [Flags] 2 [Guid] 357656470 [EditorId] 357656470 [Version] 1048832 [Id] WindowsEditor(7,sjpark) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [35000]  * "[IP] 172.26.64.1 [Port] 55504 [Flags] 2 [Guid] 3522792347 [EditorId] 3522792347 [Version] 1048832 [Id] WindowsEditor(7,sjpark) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [36136]  * "[IP] 172.26.64.1 [Port] 55504 [Flags] 2 [Guid] 357656470 [EditorId] 357656470 [Version] 1048832 [Id] WindowsEditor(7,sjpark) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [35000]  * "[IP] 100.66.239.97 [Port] 55504 [Flags] 2 [Guid] 3522792347 [EditorId] 3522792347 [Version] 1048832 [Id] WindowsEditor(7,sjpark) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [36136]  * "[IP] 100.66.239.97 [Port] 55504 [Flags] 2 [Guid] 357656470 [EditorId] 357656470 [Version] 1048832 [Id] WindowsEditor(7,sjpark) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [35000] Host joined multi-casting on [225.0.0.222:54997]...
-Player connection [35000] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [36136] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [36136] Host joined alternative multi-casting on [225.0.0.222:34997]...
 Input System module state changed to: Initialized.
 [Physics::Module] Initialized fallback backend.
 [Physics::Module] Id: 0xdecafbad
-[Package Manager] Connected to IPC stream "Upm-16900" after 0.2 seconds.
+[Package Manager] Connected to IPC stream "Upm-12104" after 0.2 seconds.
 [Licensing::Module] Licensing is not yet initialized.
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-godho" at "2026-06-25T12:12:41.8502309Z"
-[Licensing::Client] Code 10 while verifying Licensing Client signature (process Id: 11428, path: "C:/Program Files/Unity/Hub/Editor/6000.4.9f1/Editor/Data/Resources/Licensing/Client/Unity.Licensing.Client.exe")
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-godho" at "2026-06-25T12:15:47.5566726Z"
+[Licensing::Client] Code 10 while verifying Licensing Client signature (process Id: 10624, path: "C:/Program Files/Unity/Hub/Editor/6000.4.9f1/Editor/Data/Resources/Licensing/Client/Unity.Licensing.Client.exe")
 [Licensing::Module] LicensingClient has failed validation; ignoring
 [Licensing::Client] Handshaking with LicensingClient:
   Version:                 1.18.1+9fbee8e
-  Session Id:              0e872a3aa092403f99300b201185c92e
-  Correlation Id:          16568d097161682b025c20a8f7ec8664
-  External correlation Id: 6307483255314641606
+  Session Id:              cdb28514d65a438187adf33633ba66f7
+  Correlation Id:          e33c2f2944eeb950654f465cc56ce496
+  External correlation Id: 1154031736124222256
   Machine Id:              nETCb6mCOTg3uD4qHH44hI9aRsg=
-[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-godho" (connect: 0.37s, validation: 0.03s, handshake: 0.04s)
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-godho-notifications" at "2026-06-25T12:12:41.9271362Z"
-[Licensing::Module] Connected to LicensingClient (PId: 11428, launch time: 0.00, total connection time: 0.45s)
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-godho" (connect: 0.37s, validation: 0.09s, handshake: 0.04s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-godho-notifications" at "2026-06-25T12:15:47.6924955Z"
+[Licensing::Module] Connected to LicensingClient (PId: 10624, launch time: 0.00, total connection time: 0.51s)
 [Licensing::Module] Error: Access token is unavailable; failed to update
 [Licensing::Client] Successfully resolved entitlement details
 [Licensing::Module] License group:
@@ -91,8 +91,8 @@ Input System module state changed to: Initialized.
   Expiration: Unlimited
 [Licensing::Client] Successfully updated license, isAsync: True, time: 0.01
 [Licensing::Client] Successfully resolved entitlement details
-[Licensing::Module] Licensing Background thread has ended after 0.47s
-[Licensing::Module] Licensing is initialized (took 0.13s).
+[Licensing::Module] Licensing Background thread has ended after 0.54s
+[Licensing::Module] Licensing is initialized (took 0.22s).
 [Licensing::Client] Successfully resolved entitlement details
 Library Redirect Path: Library/
 [Physics::Module] Selected backend.
@@ -101,6 +101,7 @@ Library Redirect Path: Library/
 [Physics::Module] SDK Version: 4.1.2
 [Physics::Module] Integration Version: 1.0.0
 [Physics::Module] Threading Mode: Multi-Threaded
+Artifact Garbage Collection - Removed 2 unused hashed content files
 Initialize engine version: 6000.4.9f1 (f7258d6eebbe)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/6000.4.9f1/Editor/Data/Resources/UnitySubsystems
 [Subsystems] Discovering subsystems at path C:/Users/godho/Downloads/girlswar/girlswar_battle_unity/Assets
@@ -118,7 +119,7 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.4.9f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.4.9f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.4.9f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56900
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56104
 CodeReloadManager initialized
 Using cacheserver namespaces - metadata:defaultmetadata, artifacts:defaultartifacts
 Using cacheserver namespaces - metadata:defaultmetadata, artifacts:defaultartifacts
@@ -128,30 +129,30 @@ Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.4.9f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.4.9f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.002175 seconds.
+Registered in 0.002009 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
 Package Manager log level set to [2]
 ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:False
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.266 seconds
-Domain Reload Profiling: 588ms
-	BeginReloadAssembly (99ms)
-		CreateAndSetChildDomain (5ms)
+- Finished resetting the current domain, in  0.264 seconds
+Domain Reload Profiling: 595ms
+	BeginReloadAssembly (113ms)
+		CreateAndSetChildDomain (17ms)
 	RebuildCommonClasses (25ms)
 	RebuildNativeTypeToScriptingClass (8ms)
-	initialDomainReloadingComplete (47ms)
-	LoadAllAssembliesAndSetupDomain (141ms)
-		LoadAssemblies (92ms)
-		AnalyzeDomain (135ms)
-			TypeCache.Refresh (133ms)
-				TypeCache.ScanAssembly (122ms)
-	FinalizeReload (267ms)
+	initialDomainReloadingComplete (46ms)
+	LoadAllAssembliesAndSetupDomain (137ms)
+		LoadAssemblies (94ms)
+		AnalyzeDomain (131ms)
+			TypeCache.Refresh (129ms)
+				TypeCache.ScanAssembly (119ms)
+	FinalizeReload (265ms)
 		SetupLoadedEditorAssemblies (0ms)
-			InitializePlatformSupportModulesInManaged (30ms)
-			BeforeProcessingInitializeOnLoad (57ms)
-			ProcessInitializeOnLoadAttributes (72ms)
-			ProcessInitializeOnLoadMethodAttributes (65ms)
+			InitializePlatformSupportModulesInManaged (32ms)
+			BeforeProcessingInitializeOnLoad (56ms)
+			ProcessInitializeOnLoadAttributes (70ms)
+			ProcessInitializeOnLoadMethodAttributes (66ms)
 [Licensing::Client] Successfully resolved entitlement details
 Application.AssetDatabase Initial Refresh Start
 [Package Manager] Restoring resolved packages state from cache
@@ -198,33 +199,20 @@ Application.AssetDatabase Initial Refresh Start
     com.unity.modules.hierarchycore@1.0.0 (location: C:\Users\godho\Downloads\girlswar\girlswar_battle_unity\Library\PackageCache\com.unity.modules.hierarchycore)
 [Subsystems] No new subsystems found in resolved package list.
 [Package Manager] Done registering packages in 0.01 seconds
-A meta data file (.meta) exists but its asset 'Assets/Scripts/BattleActorRuntimeStubs/SpineUnity/SpineActorRuntimeStubs.cs' can't be found. When moving or deleting files outside of Unity, please ensure that the corresponding .meta file is moved or deleted along with it.
-[ScriptCompilation] Requested script compilation because: Assembly Definition File(s) changed
 [ScriptCompilation] Requested script compilation because: AssetDatabase observed changes in script compilation related files
 Starting: C:\Program Files\Unity\Hub\Editor\6000.4.9f1\Editor\Data\Tools\BuildPipeline\bee_backend.exe --ipc --defer-dag-verification --dagfile="Library/Bee/1900b0aE.dag" --continue-on-failure --profile="Library/Bee/backend1.traceevents" ScriptAssemblies
 WorkingDir: C:/Users/godho/Downloads/girlswar/girlswar_battle_unity
 DisplayProgressbar: Compiling Scripts
-Starting: C:\Program Files\Unity\Hub\Editor\6000.4.9f1\Editor\Data\netcorerun\netcorerun.exe "C:\Program Files\Unity\Hub\Editor\6000.4.9f1\Editor\Data\Tools\BuildPipeline\ScriptCompilationBuildProgram.exe" "Library/Bee/1900b0aE.dag.json" "Library/Bee/1900b0aE-inputdata.json" "Library\Bee\buildprogram0.traceevents"
-WorkingDir: C:/Users/godho/Downloads/girlswar/girlswar_battle_unity
-ExitCode: 4 Duration: 0s532ms
-Rebuilding DAG because FileSignature timestamp changed: Library/Bee/1900b0aE-inputdata.json
-*** Tundra requires additional run (0.50 seconds), 1 items updated, 248 evaluated
-ExitCode: 0 Duration: 0s210ms
-Starting: C:\Program Files\Unity\Hub\Editor\6000.4.9f1\Editor\Data\Tools\BuildPipeline\bee_backend.exe --ipc --defer-dag-verification --dagfile="Library/Bee/1900b0aE.dag" --continue-on-failure --dagfilejson="Library\Bee\1900b0aE.dag.json" --profile="Library/Bee/backend2.traceevents" ScriptAssemblies
-WorkingDir: C:/Users/godho/Downloads/girlswar/girlswar_battle_unity
-ExitCode: 0 Duration: 2s54ms
-Finished compiling graph: 258 nodes, 2633 flattened edges (2457 ToBuild, 26 ToUse), maximum node priority 144
-[194/255    0s] WriteText Library/Bee/artifacts/1900b0aE.dag/spine-unity.rsp
-[195/255    0s] WriteText Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp.rsp
+ExitCode: 0 Duration: 2s164ms
 [243/255    0s] Csc Library/Bee/artifacts/1900b0aE.dag/spine-unity.dll (+2 others)
 [244/255    0s] CopyFiles Library/ScriptAssemblies/spine-unity.pdb
 [245/255    0s] CopyFiles Library/ScriptAssemblies/spine-unity.dll
 [246/255    0s] Csc Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp-firstpass.dll (+2 others)
-[247/255    0s] CopyFiles Library/ScriptAssemblies/Assembly-CSharp-firstpass.pdb
-[248/255    0s] CopyFiles Library/ScriptAssemblies/Assembly-CSharp-firstpass.dll
+[247/255    0s] CopyFiles Library/ScriptAssemblies/Assembly-CSharp-firstpass.dll
+[248/255    0s] CopyFiles Library/ScriptAssemblies/Assembly-CSharp-firstpass.pdb
 [249/255    0s] Csc Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp.dll (+2 others)
-[250/255    0s] CopyFiles Library/ScriptAssemblies/Assembly-CSharp.dll
-[251/255    0s] CopyFiles Library/ScriptAssemblies/Assembly-CSharp.pdb
+[250/255    0s] CopyFiles Library/ScriptAssemblies/Assembly-CSharp.pdb
+[251/255    0s] CopyFiles Library/ScriptAssemblies/Assembly-CSharp.dll
 [252/255    0s] Csc Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp-Editor.dll (+2 others)
 Assets\Editor\BattleHudVisualSanityEditor.cs(95,30): warning CS0618: 'Object.FindObjectsOfType<T>(bool)' is obsolete: 'Object.FindObjectsOfType has been deprecated. Use Object.FindObjectsByType instead which lets you decide whether you need the results sorted or not.  FindObjectsOfType sorts the results by InstanceID but if you do not need this using FindObjectSortMode.None is considerably faster.'
 
@@ -234,13 +222,19 @@ Assets\Editor\BattleHudVisualSanityEditor.cs(97,31): warning CS0618: 'Object.Fin
 
 Assets\Editor\BattleHudAttachToFlowEditor.cs(216,24): warning CS0618: 'Object.FindObjectOfType<T>()' is obsolete: 'Object.FindObjectOfType has been deprecated. Use Object.FindAnyObjectByType instead.'
 
-Assets\Editor\BattleUIComponentTypeReconstructionEditor.cs(164,22): warning CS0618: 'Object.FindObjectOfType<T>()' is obsolete: 'Object.FindObjectOfType has been deprecated. Use Object.FindAnyObjectByType instead.'
+Assets\Editor\BattleCorrectMapSceneHudPreviewClip05Editor.cs(404,30): warning CS0618: 'Object.FindObjectsOfType<T>(bool)' is obsolete: 'Object.FindObjectsOfType has been deprecated. Use Object.FindObjectsByType instead which lets you decide whether you need the results sorted or not.  FindObjectsOfType sorts the results by InstanceID but if you do not need this using FindObjectSortMode.None is considerably faster.'
+
+Assets\Editor\BattleCorrectMapSceneHudPreviewClip05Editor.cs(409,29): warning CS0618: 'Object.FindObjectsOfType<T>(bool)' is obsolete: 'Object.FindObjectsOfType has been deprecated. Use Object.FindObjectsByType instead which lets you decide whether you need the results sorted or not.  FindObjectsOfType sorts the results by InstanceID but if you do not need this using FindObjectSortMode.None is considerably faster.'
+
+Assets\Editor\BattleCorrectMapSceneHudPreviewClip05Editor.cs(414,34): warning CS0618: 'Object.FindObjectsOfType<T>(bool)' is obsolete: 'Object.FindObjectsOfType has been deprecated. Use Object.FindObjectsByType instead which lets you decide whether you need the results sorted or not.  FindObjectsOfType sorts the results by InstanceID but if you do not need this using FindObjectSortMode.None is considerably faster.'
 
 Assets\Editor\BattleHudVisualSanityEditor.cs(184,30): warning CS0618: 'Object.FindObjectsOfType<T>(bool)' is obsolete: 'Object.FindObjectsOfType has been deprecated. Use Object.FindObjectsByType instead which lets you decide whether you need the results sorted or not.  FindObjectsOfType sorts the results by InstanceID but if you do not need this using FindObjectSortMode.None is considerably faster.'
 
 Assets\Editor\BattleHudVisualSanityEditor.cs(188,29): warning CS0618: 'Object.FindObjectsOfType<T>(bool)' is obsolete: 'Object.FindObjectsOfType has been deprecated. Use Object.FindObjectsByType instead which lets you decide whether you need the results sorted or not.  FindObjectsOfType sorts the results by InstanceID but if you do not need this using FindObjectSortMode.None is considerably faster.'
 
 Assets\Editor\BattleHudVisualSanityEditor.cs(192,34): warning CS0618: 'Object.FindObjectsOfType<T>(bool)' is obsolete: 'Object.FindObjectsOfType has been deprecated. Use Object.FindObjectsByType instead which lets you decide whether you need the results sorted or not.  FindObjectsOfType sorts the results by InstanceID but if you do not need this using FindObjectSortMode.None is considerably faster.'
+
+Assets\Editor\BattleUIComponentTypeReconstructionEditor.cs(164,22): warning CS0618: 'Object.FindObjectOfType<T>()' is obsolete: 'Object.FindObjectOfType has been deprecated. Use Object.FindAnyObjectByType instead.'
 
 Assets\Editor\BattleHudVisualSanityEditor.cs(201,30): warning CS0618: 'Object.FindObjectsOfType<T>(bool)' is obsolete: 'Object.FindObjectsOfType has been deprecated. Use Object.FindObjectsByType instead which lets you decide whether you need the results sorted or not.  FindObjectsOfType sorts the results by InstanceID but if you do not need this using FindObjectSortMode.None is considerably faster.'
 
@@ -252,27 +246,21 @@ Assets\Editor\BattleHudSpriteFontJoinEditor.cs(173,30): warning CS0618: 'Object.
 
 Assets\Editor\BattleHudSpriteFontJoinEditor.cs(177,29): warning CS0618: 'Object.FindObjectsOfType<T>(bool)' is obsolete: 'Object.FindObjectsOfType has been deprecated. Use Object.FindObjectsByType instead which lets you decide whether you need the results sorted or not.  FindObjectsOfType sorts the results by InstanceID but if you do not need this using FindObjectSortMode.None is considerably faster.'
 
-Assets\Editor\BattleCorrectMapSceneHudPreviewClip05Editor.cs(404,30): warning CS0618: 'Object.FindObjectsOfType<T>(bool)' is obsolete: 'Object.FindObjectsOfType has been deprecated. Use Object.FindObjectsByType instead which lets you decide whether you need the results sorted or not.  FindObjectsOfType sorts the results by InstanceID but if you do not need this using FindObjectSortMode.None is considerably faster.'
-
-Assets\Editor\BattleCorrectMapSceneHudPreviewClip05Editor.cs(409,29): warning CS0618: 'Object.FindObjectsOfType<T>(bool)' is obsolete: 'Object.FindObjectsOfType has been deprecated. Use Object.FindObjectsByType instead which lets you decide whether you need the results sorted or not.  FindObjectsOfType sorts the results by InstanceID but if you do not need this using FindObjectSortMode.None is considerably faster.'
-
-Assets\Editor\BattleCorrectMapSceneHudPreviewClip05Editor.cs(414,34): warning CS0618: 'Object.FindObjectsOfType<T>(bool)' is obsolete: 'Object.FindObjectsOfType has been deprecated. Use Object.FindObjectsByType instead which lets you decide whether you need the results sorted or not.  FindObjectsOfType sorts the results by InstanceID but if you do not need this using FindObjectSortMode.None is considerably faster.'
-
 Assets\Editor\BattleHudSpriteFontJoinEditor.cs(223,22): warning CS0618: 'Object.FindObjectOfType<T>()' is obsolete: 'Object.FindObjectOfType has been deprecated. Use Object.FindAnyObjectByType instead.'
 
 Assets\Editor\BattleHudVisualSanityEditor.cs(279,28): warning CS0618: 'Object.FindObjectsOfType<T>(bool)' is obsolete: 'Object.FindObjectsOfType has been deprecated. Use Object.FindObjectsByType instead which lets you decide whether you need the results sorted or not.  FindObjectsOfType sorts the results by InstanceID but if you do not need this using FindObjectSortMode.None is considerably faster.'
-
-Assets\Editor\BattleHudExternalDependencyLoadClip05Editor.cs(228,30): warning CS0618: 'Object.FindObjectsOfType<T>(bool)' is obsolete: 'Object.FindObjectsOfType has been deprecated. Use Object.FindObjectsByType instead which lets you decide whether you need the results sorted or not.  FindObjectsOfType sorts the results by InstanceID but if you do not need this using FindObjectSortMode.None is considerably faster.'
-
-Assets\Editor\BattleHudExternalDependencyLoadClip05Editor.cs(229,29): warning CS0618: 'Object.FindObjectsOfType<T>(bool)' is obsolete: 'Object.FindObjectsOfType has been deprecated. Use Object.FindObjectsByType instead which lets you decide whether you need the results sorted or not.  FindObjectsOfType sorts the results by InstanceID but if you do not need this using FindObjectSortMode.None is considerably faster.'
-
-Assets\Editor\BattleHudExternalDependencyLoadClip05Editor.cs(230,34): warning CS0618: 'Object.FindObjectsOfType<T>(bool)' is obsolete: 'Object.FindObjectsOfType has been deprecated. Use Object.FindObjectsByType instead which lets you decide whether you need the results sorted or not.  FindObjectsOfType sorts the results by InstanceID but if you do not need this using FindObjectSortMode.None is considerably faster.'
 
 Assets\Editor\BattleHudRuntimeBindingSpritePptrTraceEditor.cs(225,30): warning CS0618: 'Object.FindObjectsOfType<T>(bool)' is obsolete: 'Object.FindObjectsOfType has been deprecated. Use Object.FindObjectsByType instead which lets you decide whether you need the results sorted or not.  FindObjectsOfType sorts the results by InstanceID but if you do not need this using FindObjectSortMode.None is considerably faster.'
 
 Assets\Editor\BattleHudRuntimeBindingSpritePptrTraceEditor.cs(226,29): warning CS0618: 'Object.FindObjectsOfType<T>(bool)' is obsolete: 'Object.FindObjectsOfType has been deprecated. Use Object.FindObjectsByType instead which lets you decide whether you need the results sorted or not.  FindObjectsOfType sorts the results by InstanceID but if you do not need this using FindObjectSortMode.None is considerably faster.'
 
 Assets\Editor\BattleHudRuntimeBindingSpritePptrTraceEditor.cs(227,34): warning CS0618: 'Object.FindObjectsOfType<T>(bool)' is obsolete: 'Object.FindObjectsOfType has been deprecated. Use Object.FindObjectsByType instead which lets you decide whether you need the results sorted or not.  FindObjectsOfType sorts the results by InstanceID but if you do not need this using FindObjectSortMode.None is considerably faster.'
+
+Assets\Editor\BattleHudExternalDependencyLoadClip05Editor.cs(228,30): warning CS0618: 'Object.FindObjectsOfType<T>(bool)' is obsolete: 'Object.FindObjectsOfType has been deprecated. Use Object.FindObjectsByType instead which lets you decide whether you need the results sorted or not.  FindObjectsOfType sorts the results by InstanceID but if you do not need this using FindObjectSortMode.None is considerably faster.'
+
+Assets\Editor\BattleHudExternalDependencyLoadClip05Editor.cs(229,29): warning CS0618: 'Object.FindObjectsOfType<T>(bool)' is obsolete: 'Object.FindObjectsOfType has been deprecated. Use Object.FindObjectsByType instead which lets you decide whether you need the results sorted or not.  FindObjectsOfType sorts the results by InstanceID but if you do not need this using FindObjectSortMode.None is considerably faster.'
+
+Assets\Editor\BattleHudExternalDependencyLoadClip05Editor.cs(230,34): warning CS0618: 'Object.FindObjectsOfType<T>(bool)' is obsolete: 'Object.FindObjectsOfType has been deprecated. Use Object.FindObjectsByType instead which lets you decide whether you need the results sorted or not.  FindObjectsOfType sorts the results by InstanceID but if you do not need this using FindObjectSortMode.None is considerably faster.'
 
 Assets\Editor\BattleHudCanvasScalerSpriteTextureLuaStateClip05Editor.cs(313,55): warning CS0618: 'Object.GetInstanceID()' is obsolete: 'GetInstanceID is deprecated. Use GetEntityId instead. This will be removed in a future version.'
 
@@ -291,31 +279,31 @@ Assets\Editor\BattleHudSpriteAtlasTextureRuntimeBindingClip05Editor.cs(459,29): 
 Assets\Editor\BattleHudSpriteAtlasTextureRuntimeBindingClip05Editor.cs(460,34): warning CS0618: 'Object.FindObjectsOfType<T>(bool)' is obsolete: 'Object.FindObjectsOfType has been deprecated. Use Object.FindObjectsByType instead which lets you decide whether you need the results sorted or not.  FindObjectsOfType sorts the results by InstanceID but if you do not need this using FindObjectSortMode.None is considerably faster.'
 [253/255    0s] CopyFiles Library/ScriptAssemblies/Assembly-CSharp-Editor.pdb
 [254/255    0s] CopyFiles Library/ScriptAssemblies/Assembly-CSharp-Editor.dll
-*** Tundra build success (2.03 seconds), 14 items updated, 255 evaluated
+*** Tundra build success (2.14 seconds), 12 items updated, 255 evaluated
 Assets\Editor\BattleHudVisualSanityEditor.cs(95,30): warning CS0618: 'Object.FindObjectsOfType<T>(bool)' is obsolete: 'Object.FindObjectsOfType has been deprecated. Use Object.FindObjectsByType instead which lets you decide whether you need the results sorted or not.  FindObjectsOfType sorts the results by InstanceID but if you do not need this using FindObjectSortMode.None is considerably faster.'
 Assets\Editor\BattleHudVisualSanityEditor.cs(96,30): warning CS0618: 'Object.FindObjectsOfType<T>(bool)' is obsolete: 'Object.FindObjectsOfType has been deprecated. Use Object.FindObjectsByType instead which lets you decide whether you need the results sorted or not.  FindObjectsOfType sorts the results by InstanceID but if you do not need this using FindObjectSortMode.None is considerably faster.'
 Assets\Editor\BattleHudVisualSanityEditor.cs(97,31): warning CS0618: 'Object.FindObjectsOfType<T>(bool)' is obsolete: 'Object.FindObjectsOfType has been deprecated. Use Object.FindObjectsByType instead which lets you decide whether you need the results sorted or not.  FindObjectsOfType sorts the results by InstanceID but if you do not need this using FindObjectSortMode.None is considerably faster.'
 Assets\Editor\BattleHudAttachToFlowEditor.cs(216,24): warning CS0618: 'Object.FindObjectOfType<T>()' is obsolete: 'Object.FindObjectOfType has been deprecated. Use Object.FindAnyObjectByType instead.'
-Assets\Editor\BattleUIComponentTypeReconstructionEditor.cs(164,22): warning CS0618: 'Object.FindObjectOfType<T>()' is obsolete: 'Object.FindObjectOfType has been deprecated. Use Object.FindAnyObjectByType instead.'
+Assets\Editor\BattleCorrectMapSceneHudPreviewClip05Editor.cs(404,30): warning CS0618: 'Object.FindObjectsOfType<T>(bool)' is obsolete: 'Object.FindObjectsOfType has been deprecated. Use Object.FindObjectsByType instead which lets you decide whether you need the results sorted or not.  FindObjectsOfType sorts the results by InstanceID but if you do not need this using FindObjectSortMode.None is considerably faster.'
+Assets\Editor\BattleCorrectMapSceneHudPreviewClip05Editor.cs(409,29): warning CS0618: 'Object.FindObjectsOfType<T>(bool)' is obsolete: 'Object.FindObjectsOfType has been deprecated. Use Object.FindObjectsByType instead which lets you decide whether you need the results sorted or not.  FindObjectsOfType sorts the results by InstanceID but if you do not need this using FindObjectSortMode.None is considerably faster.'
+Assets\Editor\BattleCorrectMapSceneHudPreviewClip05Editor.cs(414,34): warning CS0618: 'Object.FindObjectsOfType<T>(bool)' is obsolete: 'Object.FindObjectsOfType has been deprecated. Use Object.FindObjectsByType instead which lets you decide whether you need the results sorted or not.  FindObjectsOfType sorts the results by InstanceID but if you do not need this using FindObjectSortMode.None is considerably faster.'
 Assets\Editor\BattleHudVisualSanityEditor.cs(184,30): warning CS0618: 'Object.FindObjectsOfType<T>(bool)' is obsolete: 'Object.FindObjectsOfType has been deprecated. Use Object.FindObjectsByType instead which lets you decide whether you need the results sorted or not.  FindObjectsOfType sorts the results by InstanceID but if you do not need this using FindObjectSortMode.None is considerably faster.'
 Assets\Editor\BattleHudVisualSanityEditor.cs(188,29): warning CS0618: 'Object.FindObjectsOfType<T>(bool)' is obsolete: 'Object.FindObjectsOfType has been deprecated. Use Object.FindObjectsByType instead which lets you decide whether you need the results sorted or not.  FindObjectsOfType sorts the results by InstanceID but if you do not need this using FindObjectSortMode.None is considerably faster.'
 Assets\Editor\BattleHudVisualSanityEditor.cs(192,34): warning CS0618: 'Object.FindObjectsOfType<T>(bool)' is obsolete: 'Object.FindObjectsOfType has been deprecated. Use Object.FindObjectsByType instead which lets you decide whether you need the results sorted or not.  FindObjectsOfType sorts the results by InstanceID but if you do not need this using FindObjectSortMode.None is considerably faster.'
+Assets\Editor\BattleUIComponentTypeReconstructionEditor.cs(164,22): warning CS0618: 'Object.FindObjectOfType<T>()' is obsolete: 'Object.FindObjectOfType has been deprecated. Use Object.FindAnyObjectByType instead.'
 Assets\Editor\BattleHudVisualSanityEditor.cs(201,30): warning CS0618: 'Object.FindObjectsOfType<T>(bool)' is obsolete: 'Object.FindObjectsOfType has been deprecated. Use Object.FindObjectsByType instead which lets you decide whether you need the results sorted or not.  FindObjectsOfType sorts the results by InstanceID but if you do not need this using FindObjectSortMode.None is considerably faster.'
 Assets\Editor\BattleHudVisualSanityEditor.cs(205,29): warning CS0618: 'Object.FindObjectsOfType<T>(bool)' is obsolete: 'Object.FindObjectsOfType has been deprecated. Use Object.FindObjectsByType instead which lets you decide whether you need the results sorted or not.  FindObjectsOfType sorts the results by InstanceID but if you do not need this using FindObjectSortMode.None is considerably faster.'
 Assets\Editor\BattleHudVisualSanityEditor.cs(209,34): warning CS0618: 'Object.FindObjectsOfType<T>(bool)' is obsolete: 'Object.FindObjectsOfType has been deprecated. Use Object.FindObjectsByType instead which lets you decide whether you need the results sorted or not.  FindObjectsOfType sorts the results by InstanceID but if you do not need this using FindObjectSortMode.None is considerably faster.'
 Assets\Editor\BattleHudSpriteFontJoinEditor.cs(173,30): warning CS0618: 'Object.FindObjectsOfType<T>(bool)' is obsolete: 'Object.FindObjectsOfType has been deprecated. Use Object.FindObjectsByType instead which lets you decide whether you need the results sorted or not.  FindObjectsOfType sorts the results by InstanceID but if you do not need this using FindObjectSortMode.None is considerably faster.'
 Assets\Editor\BattleHudSpriteFontJoinEditor.cs(177,29): warning CS0618: 'Object.FindObjectsOfType<T>(bool)' is obsolete: 'Object.FindObjectsOfType has been deprecated. Use Object.FindObjectsByType instead which lets you decide whether you need the results sorted or not.  FindObjectsOfType sorts the results by InstanceID but if you do not need this using FindObjectSortMode.None is considerably faster.'
-Assets\Editor\BattleCorrectMapSceneHudPreviewClip05Editor.cs(404,30): warning CS0618: 'Object.FindObjectsOfType<T>(bool)' is obsolete: 'Object.FindObjectsOfType has been deprecated. Use Object.FindObjectsByType instead which lets you decide whether you need the results sorted or not.  FindObjectsOfType sorts the results by InstanceID but if you do not need this using FindObjectSortMode.None is considerably faster.'
-Assets\Editor\BattleCorrectMapSceneHudPreviewClip05Editor.cs(409,29): warning CS0618: 'Object.FindObjectsOfType<T>(bool)' is obsolete: 'Object.FindObjectsOfType has been deprecated. Use Object.FindObjectsByType instead which lets you decide whether you need the results sorted or not.  FindObjectsOfType sorts the results by InstanceID but if you do not need this using FindObjectSortMode.None is considerably faster.'
-Assets\Editor\BattleCorrectMapSceneHudPreviewClip05Editor.cs(414,34): warning CS0618: 'Object.FindObjectsOfType<T>(bool)' is obsolete: 'Object.FindObjectsOfType has been deprecated. Use Object.FindObjectsByType instead which lets you decide whether you need the results sorted or not.  FindObjectsOfType sorts the results by InstanceID but if you do not need this using FindObjectSortMode.None is considerably faster.'
 Assets\Editor\BattleHudSpriteFontJoinEditor.cs(223,22): warning CS0618: 'Object.FindObjectOfType<T>()' is obsolete: 'Object.FindObjectOfType has been deprecated. Use Object.FindAnyObjectByType instead.'
 Assets\Editor\BattleHudVisualSanityEditor.cs(279,28): warning CS0618: 'Object.FindObjectsOfType<T>(bool)' is obsolete: 'Object.FindObjectsOfType has been deprecated. Use Object.FindObjectsByType instead which lets you decide whether you need the results sorted or not.  FindObjectsOfType sorts the results by InstanceID but if you do not need this using FindObjectSortMode.None is considerably faster.'
-Assets\Editor\BattleHudExternalDependencyLoadClip05Editor.cs(228,30): warning CS0618: 'Object.FindObjectsOfType<T>(bool)' is obsolete: 'Object.FindObjectsOfType has been deprecated. Use Object.FindObjectsByType instead which lets you decide whether you need the results sorted or not.  FindObjectsOfType sorts the results by InstanceID but if you do not need this using FindObjectSortMode.None is considerably faster.'
-Assets\Editor\BattleHudExternalDependencyLoadClip05Editor.cs(229,29): warning CS0618: 'Object.FindObjectsOfType<T>(bool)' is obsolete: 'Object.FindObjectsOfType has been deprecated. Use Object.FindObjectsByType instead which lets you decide whether you need the results sorted or not.  FindObjectsOfType sorts the results by InstanceID but if you do not need this using FindObjectSortMode.None is considerably faster.'
-Assets\Editor\BattleHudExternalDependencyLoadClip05Editor.cs(230,34): warning CS0618: 'Object.FindObjectsOfType<T>(bool)' is obsolete: 'Object.FindObjectsOfType has been deprecated. Use Object.FindObjectsByType instead which lets you decide whether you need the results sorted or not.  FindObjectsOfType sorts the results by InstanceID but if you do not need this using FindObjectSortMode.None is considerably faster.'
 Assets\Editor\BattleHudRuntimeBindingSpritePptrTraceEditor.cs(225,30): warning CS0618: 'Object.FindObjectsOfType<T>(bool)' is obsolete: 'Object.FindObjectsOfType has been deprecated. Use Object.FindObjectsByType instead which lets you decide whether you need the results sorted or not.  FindObjectsOfType sorts the results by InstanceID but if you do not need this using FindObjectSortMode.None is considerably faster.'
 Assets\Editor\BattleHudRuntimeBindingSpritePptrTraceEditor.cs(226,29): warning CS0618: 'Object.FindObjectsOfType<T>(bool)' is obsolete: 'Object.FindObjectsOfType has been deprecated. Use Object.FindObjectsByType instead which lets you decide whether you need the results sorted or not.  FindObjectsOfType sorts the results by InstanceID but if you do not need this using FindObjectSortMode.None is considerably faster.'
 Assets\Editor\BattleHudRuntimeBindingSpritePptrTraceEditor.cs(227,34): warning CS0618: 'Object.FindObjectsOfType<T>(bool)' is obsolete: 'Object.FindObjectsOfType has been deprecated. Use Object.FindObjectsByType instead which lets you decide whether you need the results sorted or not.  FindObjectsOfType sorts the results by InstanceID but if you do not need this using FindObjectSortMode.None is considerably faster.'
+Assets\Editor\BattleHudExternalDependencyLoadClip05Editor.cs(228,30): warning CS0618: 'Object.FindObjectsOfType<T>(bool)' is obsolete: 'Object.FindObjectsOfType has been deprecated. Use Object.FindObjectsByType instead which lets you decide whether you need the results sorted or not.  FindObjectsOfType sorts the results by InstanceID but if you do not need this using FindObjectSortMode.None is considerably faster.'
+Assets\Editor\BattleHudExternalDependencyLoadClip05Editor.cs(229,29): warning CS0618: 'Object.FindObjectsOfType<T>(bool)' is obsolete: 'Object.FindObjectsOfType has been deprecated. Use Object.FindObjectsByType instead which lets you decide whether you need the results sorted or not.  FindObjectsOfType sorts the results by InstanceID but if you do not need this using FindObjectSortMode.None is considerably faster.'
+Assets\Editor\BattleHudExternalDependencyLoadClip05Editor.cs(230,34): warning CS0618: 'Object.FindObjectsOfType<T>(bool)' is obsolete: 'Object.FindObjectsOfType has been deprecated. Use Object.FindObjectsByType instead which lets you decide whether you need the results sorted or not.  FindObjectsOfType sorts the results by InstanceID but if you do not need this using FindObjectSortMode.None is considerably faster.'
 Assets\Editor\BattleHudCanvasScalerSpriteTextureLuaStateClip05Editor.cs(313,55): warning CS0618: 'Object.GetInstanceID()' is obsolete: 'GetInstanceID is deprecated. Use GetEntityId instead. This will be removed in a future version.'
 Assets\Editor\BattleHudCanvasScalerSpriteTextureLuaStateClip05Editor.cs(324,30): warning CS0618: 'Object.FindObjectsOfType<T>(bool)' is obsolete: 'Object.FindObjectsOfType has been deprecated. Use Object.FindObjectsByType instead which lets you decide whether you need the results sorted or not.  FindObjectsOfType sorts the results by InstanceID but if you do not need this using FindObjectSortMode.None is considerably faster.'
 Assets\Editor\BattleHudCanvasScalerSpriteTextureLuaStateClip05Editor.cs(325,29): warning CS0618: 'Object.FindObjectsOfType<T>(bool)' is obsolete: 'Object.FindObjectsOfType has been deprecated. Use Object.FindObjectsByType instead which lets you decide whether you need the results sorted or not.  FindObjectsOfType sorts the results by InstanceID but if you do not need this using FindObjectSortMode.None is considerably faster.'
@@ -324,7 +312,7 @@ Assets\Editor\BattleHudSpriteAtlasTextureRuntimeBindingClip05Editor.cs(437,55): 
 Assets\Editor\BattleHudSpriteAtlasTextureRuntimeBindingClip05Editor.cs(458,30): warning CS0618: 'Object.FindObjectsOfType<T>(bool)' is obsolete: 'Object.FindObjectsOfType has been deprecated. Use Object.FindObjectsByType instead which lets you decide whether you need the results sorted or not.  FindObjectsOfType sorts the results by InstanceID but if you do not need this using FindObjectSortMode.None is considerably faster.'
 Assets\Editor\BattleHudSpriteAtlasTextureRuntimeBindingClip05Editor.cs(459,29): warning CS0618: 'Object.FindObjectsOfType<T>(bool)' is obsolete: 'Object.FindObjectsOfType has been deprecated. Use Object.FindObjectsByType instead which lets you decide whether you need the results sorted or not.  FindObjectsOfType sorts the results by InstanceID but if you do not need this using FindObjectSortMode.None is considerably faster.'
 Assets\Editor\BattleHudSpriteAtlasTextureRuntimeBindingClip05Editor.cs(460,34): warning CS0618: 'Object.FindObjectsOfType<T>(bool)' is obsolete: 'Object.FindObjectsOfType has been deprecated. Use Object.FindObjectsByType instead which lets you decide whether you need the results sorted or not.  FindObjectsOfType sorts the results by InstanceID but if you do not need this using FindObjectSortMode.None is considerably faster.'
-AssetDatabase: script compilation time: 3.094944s
+AssetDatabase: script compilation time: 2.448983s
 Begin MonoManager ReloadAssembly
 Assembly Assembly-CSharp-Editor-firstpass.dll at Library/ScriptAssemblies/Assembly-CSharp-Editor-firstpass.dll not valid. Loading of assembly skipped.
 Assembly Unity.Multiplayer.Center.Editor.Tests.dll at Library/ScriptAssemblies/Unity.Multiplayer.Center.Editor.Tests.dll not valid. Loading of assembly skipped.
@@ -338,98 +326,99 @@ Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
 ScheduleIndexationOnStartup MainProcess:True IndexOnStartup:True
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.293 seconds
-Domain Reload Profiling: 629ms
-	BeginReloadAssembly (255ms)
-		DisableScriptedObjects (16ms)
-		CreateAndSetChildDomain (135ms)
-	RebuildCommonClasses (23ms)
+- Finished resetting the current domain, in  0.308 seconds
+Domain Reload Profiling: 674ms
+	BeginReloadAssembly (277ms)
+		DisableScriptedObjects (17ms)
+		CreateAndSetChildDomain (144ms)
+	RebuildCommonClasses (25ms)
 	RebuildNativeTypeToScriptingClass (8ms)
-	initialDomainReloadingComplete (29ms)
-	LoadAllAssembliesAndSetupDomain (22ms)
-		LoadAssemblies (81ms)
-		AnalyzeDomain (14ms)
-			TypeCache.Refresh (9ms)
-				TypeCache.ScanAssembly (4ms)
+	initialDomainReloadingComplete (31ms)
+	LoadAllAssembliesAndSetupDomain (24ms)
+		LoadAssemblies (91ms)
+		AnalyzeDomain (16ms)
+			TypeCache.Refresh (10ms)
+				TypeCache.ScanAssembly (5ms)
 			BuildScriptInfoCaches (3ms)
-	FinalizeReload (293ms)
+	FinalizeReload (309ms)
 		SetupLoadedEditorAssemblies (0ms)
-			InitializePlatformSupportModulesInManaged (17ms)
-			BeforeProcessingInitializeOnLoad (76ms)
-			ProcessInitializeOnLoadAttributes (54ms)
-			ProcessInitializeOnLoadMethodAttributes (36ms)
-			AfterProcessingInitializeOnLoad (6ms)
+			InitializePlatformSupportModulesInManaged (18ms)
+			BeforeProcessingInitializeOnLoad (81ms)
+			ProcessInitializeOnLoadAttributes (59ms)
+			ProcessInitializeOnLoadMethodAttributes (34ms)
+			AfterProcessingInitializeOnLoad (5ms)
 		AwakeInstancesAfterBackupRestoration (19ms)
-Start importing Assets/RestoreData/battle/BATTLE_32_ACTOR_SPINE_RUNTIME_CLASS_IDLE_MOTION_REPLAY.json using Guid(ab848e5133d69ff4eb004032cc0994fd) (TextScriptImporter) -> (Import Result ID: '555235153e3b4d496827cb67d3a9b880') in 0.015455 seconds [static dependencies only]. Details - ImportResultOutputID=dea4068f61dc2ac000cf1bfc5cb09622 DependenciesID=bad50b331489a5c99e53daba08d0542a StaticDependenciesID=396e72aac1853d9958be7b2c80d48a60 
+Start importing Assets/RestoreData/battle/BATTLE_32_ACTOR_SPINE_RUNTIME_CLASS_IDLE_MOTION_REPLAY.json using Guid(ab848e5133d69ff4eb004032cc0994fd) (TextScriptImporter) -> (Import Result ID: '4776f0e51e335c6bb2eb65c88d1fdf1b') in 0.0069168 seconds [static dependencies only]. Details - ImportResultOutputID=1e374036b8810fff9f66793e2cb31907 DependenciesID=a5a1639bbe84d10e7ac10ff90002b8aa StaticDependenciesID=2fc349df509074dd3d10c0128534991b 
 (Values over 0.050ms)
-Asset Pipeline Refresh (id=27e956edc80f1794d97e64b52bfc9eba): Total: 3.914 seconds - Initiated by InitialRefreshV2(ForceSynchronousImport)
+Asset Pipeline Refresh (id=4a4b6764a3f8c324dabfd7387ca0c04d): Total: 3.315 seconds - Initiated by InitialRefreshV2(ForceSynchronousImport)
 	Summary:
 		Imports: total=1 (actual=1, local cache=0, cache server=0)
-		Asset DB Process Time: managed=1 ms, native=415 ms
+		Asset DB Process Time: managed=1 ms, native=432 ms
 		Asset DB Callback time: managed=39 ms, native=13 ms
-		Scripting: domain reloads=1, domain reload time=339 ms, compile time=3096 ms, other=8 ms
+		Scripting: domain reloads=1, domain reload time=368 ms, compile time=2450 ms, other=9 ms
 		Project Asset Count: scripts=224, non-scripts=239
-		Asset File Changes: new=1, changed=1, moved=0, deleted=2
+		Asset File Changes: new=0, changed=2, moved=0, deleted=0
 		Scan Filter Count: 0
-	InvokePackagesCallback: 13.417ms
-	ApplyChangesToAssetFolders: 0.661ms
-	Scan: 34.374ms
-	OnSourceAssetsModified: 0.470ms
-	CategorizeScriptCompilationAssets: 0.831ms
-	ProcessAssetsWithTransientArtifactChanges: 4.589ms
-	CategorizeAssets: 1.825ms
-	CompileScripts: 3096.193ms
-	ImportOutOfDateAssets: 311.014ms (294.197ms without children)
-		ImportManagerImport: 16.517ms (0.700ms without children)
-		UnloadImportedAssets: 0.086ms
-		OnDemandSchedulerStart: 0.157ms
-	PostProcessAllAssets: 39.542ms
-		AssemblyValidation.PostprocessAllAssets 0.617ms
-		VersionControlSettings.HiddenFilePostprocess 0.052ms
-		MonoPostProcessAllAssets: 38.447ms
-			AssetPostprocessor.OnPostprocessAllAssets 10.579ms
-			StyleCatalogPostProcessor.OnPostprocessAllAssets 8.659ms
-			WindowAssetPostprocessingWatcher.OnPostprocessAllAssets 4.686ms
-			BuilderAssetPostprocessor.OnPostprocessAllAssets 3.922ms
-			AssetChangedListener.OnPostprocessAllAssets 1.099ms
-			SyncVS.PostprocessSyncProject 0.949ms
-			RetainedModeAssetPostprocessor.OnPostprocessAllAssets 0.774ms
-			SpeedTree9Postprocessor.OnPostprocessAllAssets 0.489ms
-			TextAssetPostProcessor.OnPostprocessAllAssets 0.366ms
-			ArtifactBrowserPostProcessor.OnPostprocessAllAssets 0.342ms
-			TMPro_TexturePostProcessor.OnPostprocessAllAssets 0.296ms
-			ReferencedClipsPostProcessor.OnPostprocessAllAssets 0.250ms
-			AssetEvents.OnPostprocessAllAssets 0.165ms
-			AudioMixerPostprocessor.OnPostprocessAllAssets 0.154ms
-			TerrainToolbarOverlayPostProcessor.OnPostprocessAllAssets 0.140ms
-			SpeedTreePostProcessor.OnPostprocessAllAssets 0.102ms
-			AssetDatabaseCallbacks.OnPostprocessAllAssets 0.095ms
-			ConfigAssetsTracker.OnPostprocessAllAssets 0.073ms
-			ScenarioDriftAssetsTracker.OnPostprocessAllAssets 0.070ms
+	InvokePackagesCallback: 13.130ms
+	ApplyChangesToAssetFolders: 0.566ms
+	Scan: 39.539ms
+	OnSourceAssetsModified: 0.718ms
+	CategorizeScriptCompilationAssets: 0.820ms
+	ProcessAssetsWithTransientArtifactChanges: 4.663ms
+	CategorizeAssets: 2.025ms
+	CompileScripts: 2450.341ms
+	ImportOutOfDateAssets: 317.309ms (309.113ms without children)
+		ImportManagerImport: 7.868ms (0.632ms without children)
+		UnloadImportedAssets: 0.127ms
+		EnsureUptoDateAssetsAreRegisteredWithGuidPM: 0.054ms
+		OnDemandSchedulerStart: 0.138ms
+	PostProcessAllAssets: 40.008ms
+		VCAutoAddAssetPostprocess 0.765ms
+		MonoPostProcessAllAssets: 38.899ms
+			AssetPostprocessor.OnPostprocessAllAssets 9.891ms
+			StyleCatalogPostProcessor.OnPostprocessAllAssets 8.885ms
+			WindowAssetPostprocessingWatcher.OnPostprocessAllAssets 4.574ms
+			BuilderAssetPostprocessor.OnPostprocessAllAssets 3.810ms
+			AssetChangedListener.OnPostprocessAllAssets 1.057ms
+			SyncVS.PostprocessSyncProject 0.941ms
+			RetainedModeAssetPostprocessor.OnPostprocessAllAssets 0.777ms
+			SpeedTree9Postprocessor.OnPostprocessAllAssets 0.648ms
+			TextAssetPostProcessor.OnPostprocessAllAssets 0.467ms
+			ArtifactBrowserPostProcessor.OnPostprocessAllAssets 0.331ms
+			TMPro_TexturePostProcessor.OnPostprocessAllAssets 0.311ms
+			ReferencedClipsPostProcessor.OnPostprocessAllAssets 0.219ms
+			TerrainToolbarOverlayPostProcessor.OnPostprocessAllAssets 0.170ms
+			AudioMixerPostprocessor.OnPostprocessAllAssets 0.152ms
+			AssetEvents.OnPostprocessAllAssets 0.144ms
+			SpeedTreePostProcessor.OnPostprocessAllAssets 0.140ms
+			AssetDatabaseCallbacks.OnPostprocessAllAssets 0.099ms
+			ConfigAssetsTracker.OnPostprocessAllAssets 0.083ms
+			ScenarioDriftAssetsTracker.OnPostprocessAllAssets 0.071ms
 			RenderPipelineGlobalSettingsPostprocessor.OnPostprocessAllAssets 0.066ms
-	PostAssetChangesProfiler: 0.619ms
-	UnloadStreamsBegin: 1.119ms
-	PersistCurrentRevisions: 0.060ms
-	GenerateScriptTypeHashes: 0.167ms
-	GenerateScriptTypeSerializationHashes: 0.364ms
-	Untracked: 404.403ms
+			AudioContainerPostProcessor.OnPostprocessAllAssets 0.052ms
+	PostAssetChangesProfiler: 0.348ms
+	UnloadStreamsBegin: 1.080ms
+	PersistCurrentRevisions: 0.057ms
+	GenerateScriptTypeHashes: 0.224ms
+	GenerateScriptTypeSerializationHashes: 0.528ms
+	Untracked: 439.909ms
 
 Application.AssetDatabase Initial Refresh End
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.01 seconds
-Scanning for USB devices : 2.306ms
+Scanning for USB devices : 2.621ms
 Initializing Unity extensions:
 [MODES] ModeService[none].Initialize
 [MODES] ModeService[none].LoadModes
 [MODES] Loading mode Default (0) for mode-current-id-girlswar_battle_unity
 Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 463 unused Assets / (0.8 MB). Loaded Objects now: 1100.
-Memory consumption went from 99.9 MB to 99.2 MB.
-Total: 3.626300 ms (FindLiveObjects: 0.074900 ms CreateObjectMapping: 0.015300 ms MarkObjects: 3.167400 ms  DeleteObjects: 0.366400 ms)
+Unloading 463 unused Assets / (0.7 MB). Loaded Objects now: 1100.
+Memory consumption went from 99.9 MB to 99.1 MB.
+Total: 3.894200 ms (FindLiveObjects: 0.081800 ms CreateObjectMapping: 0.020600 ms MarkObjects: 3.408400 ms  DeleteObjects: 0.380300 ms)
 
 Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
 Unloading 0 unused Assets / (0 B). Loaded Objects now: 1100.
 Memory consumption went from 98.8 MB to 98.8 MB.
-Total: 3.012500 ms (FindLiveObjects: 0.050200 ms CreateObjectMapping: 0.008700 ms MarkObjects: 2.949100 ms  DeleteObjects: 0.003800 ms)
+Total: 3.048600 ms (FindLiveObjects: 0.047300 ms CreateObjectMapping: 0.008700 ms MarkObjects: 2.987700 ms  DeleteObjects: 0.003900 ms)
 
 Shader 'Spine/Outline/Sprite/Pixel Lit': fallback shader 'Spine/Sprite/Pixel Lit' not found
 Shader 'Spine/Outline/Sprite/Pixel Lit': fallback shader 'Spine/Sprite/Pixel Lit' not found
@@ -446,7 +435,7 @@ Shader 'Spine/Outline/Sprite/Vertex Lit': fallback shader 'Spine/Sprite/Vertex L
 WARNING: Shader Unsupported: 'Spine/Outline/Sprite/Vertex Lit' - All subshaders removed
 WARNING: Shader Did you use #pragma only_renderers and omit this platform?
 WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
-Could not extract GUID in text file Assets/Scenes/Battle32ActorSpineRuntimeClassIdleMotionReplay.unity at line 193.
+Could not extract GUID in text file Assets/Scenes/Battle32ActorSpineRuntimeClassIdleMotionReplay.unity at line 165.
 UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
 UnityEngine.StackTraceUtility:ExtractStackTrace ()
 UnityEditor.SceneManagement.EditorSceneManager:SaveSceneInternal (UnityEngine.SceneManagement.Scene,string,bool)
@@ -456,7 +445,7 @@ BattleActorSpineRuntimeClassIdleMotionReplayEditor:Build () (at Assets/Editor/Ba
 
 [Assets/Editor/BattleActorSpineRuntimeClassIdleMotionReplayEditor.cs line 62]
 
-Could not extract GUID in text file Assets/Scenes/Battle32ActorSpineRuntimeClassIdleMotionReplay.unity at line 194.
+Could not extract GUID in text file Assets/Scenes/Battle32ActorSpineRuntimeClassIdleMotionReplay.unity at line 168.
 UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
 UnityEngine.StackTraceUtility:ExtractStackTrace ()
 UnityEditor.SceneManagement.EditorSceneManager:SaveSceneInternal (UnityEngine.SceneManagement.Scene,string,bool)
@@ -466,7 +455,7 @@ BattleActorSpineRuntimeClassIdleMotionReplayEditor:Build () (at Assets/Editor/Ba
 
 [Assets/Editor/BattleActorSpineRuntimeClassIdleMotionReplayEditor.cs line 62]
 
-Could not extract GUID in text file Assets/Scenes/Battle32ActorSpineRuntimeClassIdleMotionReplay.unity at line 225.
+Could not extract GUID in text file Assets/Scenes/Battle32ActorSpineRuntimeClassIdleMotionReplay.unity at line 222.
 UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
 UnityEngine.StackTraceUtility:ExtractStackTrace ()
 UnityEditor.SceneManagement.EditorSceneManager:SaveSceneInternal (UnityEngine.SceneManagement.Scene,string,bool)
@@ -476,7 +465,7 @@ BattleActorSpineRuntimeClassIdleMotionReplayEditor:Build () (at Assets/Editor/Ba
 
 [Assets/Editor/BattleActorSpineRuntimeClassIdleMotionReplayEditor.cs line 62]
 
-Could not extract GUID in text file Assets/Scenes/Battle32ActorSpineRuntimeClassIdleMotionReplay.unity at line 380.
+Could not extract GUID in text file Assets/Scenes/Battle32ActorSpineRuntimeClassIdleMotionReplay.unity at line 253.
 UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
 UnityEngine.StackTraceUtility:ExtractStackTrace ()
 UnityEditor.SceneManagement.EditorSceneManager:SaveSceneInternal (UnityEngine.SceneManagement.Scene,string,bool)
@@ -486,7 +475,7 @@ BattleActorSpineRuntimeClassIdleMotionReplayEditor:Build () (at Assets/Editor/Ba
 
 [Assets/Editor/BattleActorSpineRuntimeClassIdleMotionReplayEditor.cs line 62]
 
-Could not extract GUID in text file Assets/Scenes/Battle32ActorSpineRuntimeClassIdleMotionReplay.unity at line 411.
+Could not extract GUID in text file Assets/Scenes/Battle32ActorSpineRuntimeClassIdleMotionReplay.unity at line 414.
 UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
 UnityEngine.StackTraceUtility:ExtractStackTrace ()
 UnityEditor.SceneManagement.EditorSceneManager:SaveSceneInternal (UnityEngine.SceneManagement.Scene,string,bool)
@@ -496,7 +485,7 @@ BattleActorSpineRuntimeClassIdleMotionReplayEditor:Build () (at Assets/Editor/Ba
 
 [Assets/Editor/BattleActorSpineRuntimeClassIdleMotionReplayEditor.cs line 62]
 
-Could not extract GUID in text file Assets/Scenes/Battle32ActorSpineRuntimeClassIdleMotionReplay.unity at line 483.
+Could not extract GUID in text file Assets/Scenes/Battle32ActorSpineRuntimeClassIdleMotionReplay.unity at line 417.
 UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
 UnityEngine.StackTraceUtility:ExtractStackTrace ()
 UnityEditor.SceneManagement.EditorSceneManager:SaveSceneInternal (UnityEngine.SceneManagement.Scene,string,bool)
@@ -506,7 +495,7 @@ BattleActorSpineRuntimeClassIdleMotionReplayEditor:Build () (at Assets/Editor/Ba
 
 [Assets/Editor/BattleActorSpineRuntimeClassIdleMotionReplayEditor.cs line 62]
 
-Could not extract GUID in text file Assets/Scenes/Battle32ActorSpineRuntimeClassIdleMotionReplay.unity at line 514.
+Could not extract GUID in text file Assets/Scenes/Battle32ActorSpineRuntimeClassIdleMotionReplay.unity at line 471.
 UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
 UnityEngine.StackTraceUtility:ExtractStackTrace ()
 UnityEditor.SceneManagement.EditorSceneManager:SaveSceneInternal (UnityEngine.SceneManagement.Scene,string,bool)
@@ -516,11 +505,69 @@ BattleActorSpineRuntimeClassIdleMotionReplayEditor:Build () (at Assets/Editor/Ba
 
 [Assets/Editor/BattleActorSpineRuntimeClassIdleMotionReplayEditor.cs line 62]
 
-Start importing Assets/Scenes/Battle32ActorSpineRuntimeClassIdleMotionReplay.unity using Guid(fb213f87daf29024eb83914ad7481d90) (DefaultImporter) -> (Import Result ID: 'f00fef6e98221dcc6295457772d94974') in 0.0014689 seconds [static dependencies only]. Details - ImportResultOutputID=ebe782aa335e0e48f9a19beb00fade81 DependenciesID=69b3f0f628d8d8209fe1fe7eb3d7b2f2 StaticDependenciesID=475d5b2fd46b16fd6f353fe2c2461583 
-Asset Pipeline Refresh (id=df35ddc62e65f7146bb0819ea31adda2): Total: 0.017 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
-Start importing Assets/RestoreData/battle/BATTLE_32_ACTOR_SPINE_RUNTIME_CLASS_IDLE_MOTION_REPLAY_COMPONENTS.csv using Guid(80dc6f7d24db748439e622d165d57561) (TextScriptImporter) -> (Import Result ID: '8d16f16fab6f5d93fe5741ce18e1c18f') in 0.0019078 seconds [static dependencies only]. Details - ImportResultOutputID=8dc0d3b796cafc9adfb5b8df3ee1289d DependenciesID=93786d88b9d2d242858ae81209275a03 StaticDependenciesID=2bac1a64698338635eb9bcf8156f7b9e 
-Start importing Assets/RestoreData/battle/BATTLE_32_ACTOR_SPINE_RUNTIME_CLASS_IDLE_MOTION_REPLAY_UNITY.json using Guid(cb1a157d9d0e3124797ea35ba8c1d373) (TextScriptImporter) -> (Import Result ID: '2042db77609d20736931a8cf0fe88cfb') in 0.0017206 seconds [static dependencies only]. Details - ImportResultOutputID=7f073a8191881f9f1ee83047a1a9f70c DependenciesID=900e7f6a9820b2176b40895b84e48a2a StaticDependenciesID=8331d48467496e83b4010527dacd1270 
-Asset Pipeline Refresh (id=03a00a49cece7ab4d9259e09f11d0055): Total: 0.016 seconds - Initiated by RefreshV2(NoUpdateAssetOptions)
+Could not extract GUID in text file Assets/Scenes/Battle32ActorSpineRuntimeClassIdleMotionReplay.unity at line 502.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:SaveSceneInternal (UnityEngine.SceneManagement.Scene,string,bool)
+UnityEditor.SceneManagement.EditorSceneManager:SaveScene (UnityEngine.SceneManagement.Scene,string,bool)
+UnityEditor.SceneManagement.EditorSceneManager:SaveScene (UnityEngine.SceneManagement.Scene,string)
+BattleActorSpineRuntimeClassIdleMotionReplayEditor:Build () (at Assets/Editor/BattleActorSpineRuntimeClassIdleMotionReplayEditor.cs:62)
+
+[Assets/Editor/BattleActorSpineRuntimeClassIdleMotionReplayEditor.cs line 62]
+
+Could not extract GUID in text file Assets/Scenes/Battle32ActorSpineRuntimeClassIdleMotionReplay.unity at line 643.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:SaveSceneInternal (UnityEngine.SceneManagement.Scene,string,bool)
+UnityEditor.SceneManagement.EditorSceneManager:SaveScene (UnityEngine.SceneManagement.Scene,string,bool)
+UnityEditor.SceneManagement.EditorSceneManager:SaveScene (UnityEngine.SceneManagement.Scene,string)
+BattleActorSpineRuntimeClassIdleMotionReplayEditor:Build () (at Assets/Editor/BattleActorSpineRuntimeClassIdleMotionReplayEditor.cs:62)
+
+[Assets/Editor/BattleActorSpineRuntimeClassIdleMotionReplayEditor.cs line 62]
+
+Could not extract GUID in text file Assets/Scenes/Battle32ActorSpineRuntimeClassIdleMotionReplay.unity at line 646.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:SaveSceneInternal (UnityEngine.SceneManagement.Scene,string,bool)
+UnityEditor.SceneManagement.EditorSceneManager:SaveScene (UnityEngine.SceneManagement.Scene,string,bool)
+UnityEditor.SceneManagement.EditorSceneManager:SaveScene (UnityEngine.SceneManagement.Scene,string)
+BattleActorSpineRuntimeClassIdleMotionReplayEditor:Build () (at Assets/Editor/BattleActorSpineRuntimeClassIdleMotionReplayEditor.cs:62)
+
+[Assets/Editor/BattleActorSpineRuntimeClassIdleMotionReplayEditor.cs line 62]
+
+Could not extract GUID in text file Assets/Scenes/Battle32ActorSpineRuntimeClassIdleMotionReplay.unity at line 700.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:SaveSceneInternal (UnityEngine.SceneManagement.Scene,string,bool)
+UnityEditor.SceneManagement.EditorSceneManager:SaveScene (UnityEngine.SceneManagement.Scene,string,bool)
+UnityEditor.SceneManagement.EditorSceneManager:SaveScene (UnityEngine.SceneManagement.Scene,string)
+BattleActorSpineRuntimeClassIdleMotionReplayEditor:Build () (at Assets/Editor/BattleActorSpineRuntimeClassIdleMotionReplayEditor.cs:62)
+
+[Assets/Editor/BattleActorSpineRuntimeClassIdleMotionReplayEditor.cs line 62]
+
+Could not extract GUID in text file Assets/Scenes/Battle32ActorSpineRuntimeClassIdleMotionReplay.unity at line 701.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:SaveSceneInternal (UnityEngine.SceneManagement.Scene,string,bool)
+UnityEditor.SceneManagement.EditorSceneManager:SaveScene (UnityEngine.SceneManagement.Scene,string,bool)
+UnityEditor.SceneManagement.EditorSceneManager:SaveScene (UnityEngine.SceneManagement.Scene,string)
+BattleActorSpineRuntimeClassIdleMotionReplayEditor:Build () (at Assets/Editor/BattleActorSpineRuntimeClassIdleMotionReplayEditor.cs:62)
+
+[Assets/Editor/BattleActorSpineRuntimeClassIdleMotionReplayEditor.cs line 62]
+
+Could not extract GUID in text file Assets/Scenes/Battle32ActorSpineRuntimeClassIdleMotionReplay.unity at line 732.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:SaveSceneInternal (UnityEngine.SceneManagement.Scene,string,bool)
+UnityEditor.SceneManagement.EditorSceneManager:SaveScene (UnityEngine.SceneManagement.Scene,string,bool)
+UnityEditor.SceneManagement.EditorSceneManager:SaveScene (UnityEngine.SceneManagement.Scene,string)
+BattleActorSpineRuntimeClassIdleMotionReplayEditor:Build () (at Assets/Editor/BattleActorSpineRuntimeClassIdleMotionReplayEditor.cs:62)
+
+[Assets/Editor/BattleActorSpineRuntimeClassIdleMotionReplayEditor.cs line 62]
+
+Start importing Assets/Scenes/Battle32ActorSpineRuntimeClassIdleMotionReplay.unity using Guid(fb213f87daf29024eb83914ad7481d90) (DefaultImporter) -> (Import Result ID: 'e204cebeb2e2db3a33fbc4c5491ae80e') in 0.0018203 seconds [static dependencies only]. Details - ImportResultOutputID=ebe782aa335e0e48f9a19beb00fade81 DependenciesID=f4b49189c644a7d4b55315fd3785cdad StaticDependenciesID=cc518358d3ac89b319797ba0c68a90fe 
+Asset Pipeline Refresh (id=d62ddbbed7141bc4c9f9577422bc29ff): Total: 0.018 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Asset Pipeline Refresh (id=0b448d79cc6311d47b605b1e5f9901c0): Total: 0.012 seconds - Initiated by RefreshV2(NoUpdateAssetOptions)
 BATTLE32 actor spine runtime class idle motion replay probe complete. actors=3, componentRows=3
 UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
 UnityEngine.StackTraceUtility:ExtractStackTrace ()

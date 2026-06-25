@@ -714,3 +714,53 @@
   - contact sheet: `reports\battle\BATTLE_32_ACTOR_SPINE_RUNTIME_CLASS_IDLE_MOTION_REPLAY_CONTACT_SHEET.jpg`
 - Next battle blocker:
   - `BATTLE_33_DEEP_TRACE_MONOSCRIPT_ASSEMBLY_GUID_FOR_ACTOR_PREFABS`
+
+## Update 2026-06-25 21:18 KST
+
+### Battle BATTLE_33 Result
+
+- BATTLE_33 used `C:\Users\godho\Downloads\플레이.mp4` clip05 `485.0-487.0s` as the video motion gate.
+- Verdict: `failed_actor_render_still_magenta_after_monoscript_binding_fixed`.
+- This is not a final restored battle screen.
+- Important fixed blocker:
+  - actor prefab `m_Script` PPtr was traced to `Spine.Unity.SkeletonAnimation` in assembly `spine-unity.dll`.
+  - the previous actor runtime proxy lived outside the existing `spine-unity` assembly.
+  - moving the actor Spine stub into `girlswar_battle_unity\Assets\Scripts\BattleUIExternalStubs\SpineUnity\` allowed AssetBundle MonoScript binding to resolve.
+- Runtime probe after the shim:
+  - MissingScript before/after: `3 / 0`
+  - MissingScript reduction: `3`
+  - `SkeletonAnimation` components resolved: `3`
+  - idle replay call success: `3`
+  - actor motion replayed: `False`
+  - magenta pixel ratio: `0.073207`
+- Actor serialized evidence:
+  - `1002` uses `Spine.Unity.SkeletonAnimation`, animation `ult`, loop `0`
+  - `1034` uses `Spine.Unity.SkeletonAnimation`, animation `skill1`, loop `0`
+  - `3001` uses `Spine.Unity.SkeletonAnimation`, animation `attack`, loop `0`
+- Manual contact sheet review:
+  - reference sequence shows moving actors and normal battle scene
+  - current capture still shows static magenta actor meshes
+  - no final-screen claim is allowed
+- Outputs:
+  - active tool: `_restore_tools\BATTLE_33_DEEP_TRACE_MONOSCRIPT_ASSEMBLY_GUID_FOR_ACTOR_PREFABS.cmd`
+  - report: `reports\battle\BATTLE_33_MONOSCRIPT_ASSEMBLY_GUID_ACTOR_PREFABS_RESULT.md`
+  - JSON: `reports\battle\BATTLE_33_MONOSCRIPT_ASSEMBLY_GUID_ACTOR_PREFABS_RESULT.json`
+  - Unity data: `girlswar_battle_unity\Assets\RestoreData\battle\BATTLE_33_MONOSCRIPT_ASSEMBLY_GUID_ACTOR_PREFABS.json`
+  - component CSV: `girlswar_battle_unity\Assets\RestoreData\battle\BATTLE_33_MONOSCRIPT_ASSEMBLY_GUID_ACTOR_PREFABS_COMPONENTS.csv`
+  - contact sheet: `reports\battle\BATTLE_33_MONOSCRIPT_ASSEMBLY_GUID_ACTOR_PREFABS_CONTACT_SHEET.jpg`
+- Note:
+  - BATTLE_33 reran the BATTLE_32 probe after the assembly shim, so BATTLE_32 JSON/CSV/report/capture now also show the post-shim `MissingScript 3 / 0` state.
+  - This is evidence of the BATTLE_33 fix, not a final actor motion/render success.
+- Next battle blocker:
+  - `BATTLE_34_RECONSTRUCT_SPINE_ANIMATIONSTATE_AND_SHADER_RENDER_FROM_SKEL_ATLAS`
+
+### UI 113 In Progress
+
+- UI113 has added a route-cluster Spine 4.0 probe tool under `_restore_tools`.
+- It is not committed yet because the first runs hit script/probe handling issues:
+  - a PowerShell markdown-string escape issue was fixed
+  - `8007.skel.bytes` currently throws `IndexOutOfRangeException` in Spine 4.0 `SkeletonBinary`
+- Current intended classification:
+  - `Spine_shijieanniu` continues toward slot/bone pose trace
+  - `8007` should be recorded as `blocked_8007_skeletonbinary_decode_failed` unless a stronger decode path is found
+- No UI113 final report has been accepted yet.

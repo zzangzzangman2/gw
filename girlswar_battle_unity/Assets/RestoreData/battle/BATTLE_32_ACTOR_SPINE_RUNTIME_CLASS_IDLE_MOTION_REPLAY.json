@@ -29,10 +29,10 @@
   ],
   "actorMotionReplayed": false,
   "beforeMissingScriptCount": 3,
-  "afterMissingScriptCount": 3,
-  "missingScriptReduction": 0,
-  "skeletonAnimationComponentCount": 0,
-  "idleReplaySucceededCount": 0,
+  "afterMissingScriptCount": 0,
+  "missingScriptReduction": 3,
+  "skeletonAnimationComponentCount": 3,
+  "idleReplaySucceededCount": 3,
   "shaderFallbackAppliedCount": 0,
   "captureMetrics": {
     "captureExists": true,
@@ -153,10 +153,10 @@
       "bundleLoadSuccess": 3,
       "prefabInstantiateSuccess": 3,
       "componentRowCount": 3,
-      "missingScriptCount": 3,
+      "missingScriptCount": 0,
       "skeletonLikeAssetCount": 12,
-      "skeletonAnimationComponentCount": 0,
-      "idleReplaySucceededCount": 0,
+      "skeletonAnimationComponentCount": 3,
+      "idleReplaySucceededCount": 3,
       "shaderFallbackAppliedCount": 0,
       "localSpineShaderFound": true
     },
@@ -275,9 +275,9 @@
         "assetNameCount": 9,
         "rendererCount": 1,
         "enabledRendererCount": 1,
-        "missingScriptCount": 1,
-        "skeletonComponentCount": 0,
-        "skeletonAnimationComponentCount": 0,
+        "missingScriptCount": 0,
+        "skeletonComponentCount": 1,
+        "skeletonAnimationComponentCount": 1,
         "skeletonRendererComponentCount": 0,
         "skeletonMecanimComponentCount": 0,
         "shaderFallbackAppliedCount": 0,
@@ -286,9 +286,9 @@
         "skelBytes": 868704,
         "atlasFirstLine": "1002.png",
         "idleStringInSkelBytes": false,
-        "idleReplaySucceeded": false,
-        "idleReplayAttemptReason": "SkeletonAnimation component not resolved from original MissingScript",
-        "motionReplayStatus": "failed_idle_motion_replay_runtime_bridge_incomplete",
+        "idleReplaySucceeded": true,
+        "idleReplayAttemptReason": "",
+        "motionReplayStatus": "idle_replay_component_call_succeeded_but_visual_motion_not_verified",
         "failReason": "",
         "textureNames": [
           "1002(1024x512)"
@@ -310,7 +310,9 @@
           "assets/download/roleprefabsandres/battleprefabandres/1002/1002_atlas.asset",
           "assets/download/roleprefabsandres/battleprefabandres/1002/1002_skeletondata.asset"
         ],
-        "skeletonRuntimeTypeNames": [],
+        "skeletonRuntimeTypeNames": [
+          "Spine.Unity.SkeletonDataAsset"
+        ],
         "loadExceptions": []
       },
       {
@@ -327,9 +329,9 @@
         "assetNameCount": 9,
         "rendererCount": 1,
         "enabledRendererCount": 1,
-        "missingScriptCount": 1,
-        "skeletonComponentCount": 0,
-        "skeletonAnimationComponentCount": 0,
+        "missingScriptCount": 0,
+        "skeletonComponentCount": 1,
+        "skeletonAnimationComponentCount": 1,
         "skeletonRendererComponentCount": 0,
         "skeletonMecanimComponentCount": 0,
         "shaderFallbackAppliedCount": 0,
@@ -338,9 +340,9 @@
         "skelBytes": 832584,
         "atlasFirstLine": "1034.png",
         "idleStringInSkelBytes": false,
-        "idleReplaySucceeded": false,
-        "idleReplayAttemptReason": "SkeletonAnimation component not resolved from original MissingScript",
-        "motionReplayStatus": "failed_idle_motion_replay_runtime_bridge_incomplete",
+        "idleReplaySucceeded": true,
+        "idleReplayAttemptReason": "",
+        "motionReplayStatus": "idle_replay_component_call_succeeded_but_visual_motion_not_verified",
         "failReason": "",
         "textureNames": [
           "1034(2048x1024)"
@@ -363,7 +365,9 @@
           "assets/download/roleprefabsandres/battleprefabandres/1034/1034_atlas.asset",
           "assets/download/roleprefabsandres/battleprefabandres/1034/1034_skeletondata.asset"
         ],
-        "skeletonRuntimeTypeNames": [],
+        "skeletonRuntimeTypeNames": [
+          "Spine.Unity.SkeletonDataAsset"
+        ],
         "loadExceptions": []
       },
       {
@@ -380,9 +384,9 @@
         "assetNameCount": 8,
         "rendererCount": 1,
         "enabledRendererCount": 1,
-        "missingScriptCount": 1,
-        "skeletonComponentCount": 0,
-        "skeletonAnimationComponentCount": 0,
+        "missingScriptCount": 0,
+        "skeletonComponentCount": 1,
+        "skeletonAnimationComponentCount": 1,
         "skeletonRendererComponentCount": 0,
         "skeletonMecanimComponentCount": 0,
         "shaderFallbackAppliedCount": 0,
@@ -391,9 +395,9 @@
         "skelBytes": 162468,
         "atlasFirstLine": "3001.png",
         "idleStringInSkelBytes": false,
-        "idleReplaySucceeded": false,
-        "idleReplayAttemptReason": "SkeletonAnimation component not resolved from original MissingScript",
-        "motionReplayStatus": "failed_idle_motion_replay_runtime_bridge_incomplete",
+        "idleReplaySucceeded": true,
+        "idleReplayAttemptReason": "",
+        "motionReplayStatus": "idle_replay_component_call_succeeded_but_visual_motion_not_verified",
         "failReason": "",
         "textureNames": [
           "3001(512x512)"
@@ -414,13 +418,15 @@
           "assets/download/roleprefabsandres/battleprefabandres/3001/3001_atlas.asset",
           "assets/download/roleprefabsandres/battleprefabandres/3001/3001_skeletondata.asset"
         ],
-        "skeletonRuntimeTypeNames": [],
+        "skeletonRuntimeTypeNames": [
+          "Spine.Unity.SkeletonDataAsset"
+        ],
         "loadExceptions": []
       }
     ]
   },
   "blocker": "Spine runtime proxy/shader evidence was probed, but original clip05 actor idle/motion is still not reproduced. The remaining blocker is MonoScript assembly/type binding if SkeletonAnimation did not resolve, otherwise real SkeletonData/AnimationState reconstruction from .skel.",
-  "nextBlocker": "BATTLE_33_DEEP_TRACE_MONOSCRIPT_ASSEMBLY_GUID_FOR_ACTOR_PREFABS",
+  "nextBlocker": "BATTLE_33_RECONSTRUCT_SPINE_ANIMATIONSTATE_FROM_SKEL_BINARY",
   "outputs": {
     "report": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_32_ACTOR_SPINE_RUNTIME_CLASS_IDLE_MOTION_REPLAY_RESULT.md",
     "resultJson": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_32_ACTOR_SPINE_RUNTIME_CLASS_IDLE_MOTION_REPLAY_RESULT.json",

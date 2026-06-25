@@ -259,7 +259,11 @@ namespace Spine.Unity
     {
         public string startingAnimation = "idle";
         public bool startingLoop = true;
+        [SerializeField] private string _animationName = "";
+        public bool loop;
         public float timeScale = 1f;
+        public bool skipByPass;
+        public bool invisible;
         [SerializeField] private Spine.AnimationState animationState;
 
         public Spine.AnimationState AnimationState
@@ -274,9 +278,11 @@ namespace Spine.Unity
         public override void Initialize(bool overwrite, bool quiet = false)
         {
             base.Initialize(overwrite, quiet);
-            if (!string.IsNullOrEmpty(startingAnimation))
+            string animationName = !string.IsNullOrEmpty(_animationName) ? _animationName : startingAnimation;
+            bool shouldLoop = !string.IsNullOrEmpty(_animationName) ? loop : startingLoop;
+            if (!string.IsNullOrEmpty(animationName))
             {
-                AnimationState.SetAnimation(0, startingAnimation, startingLoop);
+                AnimationState.SetAnimation(0, animationName, shouldLoop);
             }
         }
 
