@@ -8,6 +8,9 @@ set "CURRENT=%TOOLS%\current"
 set "ROOT_CMD_ARCHIVE=%TOOLS%\root_cmd_archive"
 set "CMD_ARCHIVE=%TOOLS%\cmd_archive"
 set "STATUS=%ROOT%reports\WORK_SPLIT_STATUS_20260625_1708.md"
+set "HOME_TEST=%CURRENT%\00_RUN_HOME_CHECKPOINT_TESTS.cmd"
+set "UI121=%CMD_ARCHIVE%\121_VERIFY_ROUTE_SKELETONGRAPHIC_CANVASRENDERER_TEXTURE_HANDOFF_AND_CLIPPING_TRIANGULATION_ZONG1.cmd"
+set "UI120=%CMD_ARCHIVE%\120_TRACE_ROUTE_SKELETONGRAPHIC_ORIGINAL_RUNTIME_MASK_STENCIL_ATTACHMENT_VISIBILITY.cmd"
 set "UI119=%CMD_ARCHIVE%\119_VALIDATE_ROUTE_SKELETONGRAPHIC_MESH_BOUNDS_CANVASRENDERER_SUBMESH_MATERIAL.cmd"
 set "UI118=%CMD_ARCHIVE%\118_BIND_ROUTE_SKELETONGRAPHIC_UI_MATERIAL_SHADER_PASS_FROM_ORIGINAL_FIELDS.cmd"
 set "UI117=%CMD_ARCHIVE%\117_VALIDATE_AND_FIX_ROUTE_SKELETONGRAPHIC_LAYOUT_AGAINST_ORIGINAL_EVIDENCE.cmd"
@@ -18,6 +21,8 @@ set "UI113=%CMD_ARCHIVE%\113_RESTORE_MAININTERFACE_ROUTE_SPINE_SLOT_BONE_ANIMATI
 set "UI112=%CMD_ARCHIVE%\112_TRACE_MAININTERFACE_ROUTE_NON_IMAGE_RENDERER_EFFECT_RUNTIME_STATE.cmd"
 set "UI111=%CMD_ARCHIVE%\111_REVALIDATE_MAININTERFACE_ROUTE_LABEL_RECT_OVERRIDES.cmd"
 set "UI110=%CMD_ARCHIVE%\110_FIX_MAININTERFACE_ROUTE_TMP_VARIANT_MATERIAL_TEXTURE_PTRS.cmd"
+set "BATTLE41=%CMD_ARCHIVE%\BATTLE_41_TRACE_BATTLE_HUD_RUNTIME_SPRITE_TEXTURE_PERSISTENCE_AND_CAPTURE_PIPELINE.cmd"
+set "BATTLE40=%CMD_ARCHIVE%\BATTLE_40_FIX_BATTLE_HUD_CAMERA_RENDER_BINDING_IN_RUNTIME_CONTEXT.cmd"
 set "BATTLE39=%CMD_ARCHIVE%\BATTLE_39_ATTACH_RUNTIME_ACTORS_TO_MAP11003_HUD_CONTEXT_WITH_EVIDENCE.cmd"
 set "BATTLE38=%CMD_ARCHIVE%\BATTLE_38_MATCH_ACTOR_SCALE_CAMERA_TIMING_AND_BATTLE_SCENE_CONTEXT_TO_CLIP05.cmd"
 set "BATTLE37=%CMD_ARCHIVE%\BATTLE_37_BIND_ORIGINAL_SPINE_SHADER_VARIANTS_AND_MATERIAL_PASSES.cmd"
@@ -52,10 +57,12 @@ echo 7. Open battle reports folder
 echo 8. Open legacy command archive
 echo 9. Show git status
 echo A. Run GitHub push helper from archive
+echo B. Run home checkpoint tests (UI121 + BATTLE40)
 echo Q. Quit
 echo.
-choice /c 123456789AQ /n /m "Select: "
-if errorlevel 11 goto done
+choice /c 123456789ABQ /n /m "Select: "
+if errorlevel 12 goto done
+if errorlevel 11 call "%HOME_TEST%" & goto menu
 if errorlevel 10 call "%ROOT_CMD_ARCHIVE%\PUSH_TO_GITHUB_MAIN.cmd" & pause & goto menu
 if errorlevel 9 git -C "%ROOT%" status --short & pause & goto menu
 if errorlevel 8 start "" "%CMD_ARCHIVE%" & goto menu
@@ -63,7 +70,9 @@ if errorlevel 7 start "" "%ROOT%reports\battle" & goto menu
 if errorlevel 6 start "" "%ROOT%reports\maininterface" & goto menu
 if errorlevel 5 start "" "%STATUS%" & goto menu
 if errorlevel 4 (
-  if exist "%BATTLE39%" (
+  if exist "%BATTLE40%" (
+    call "%BATTLE40%"
+  ) else if exist "%BATTLE39%" (
     call "%BATTLE39%"
   ) else if exist "%BATTLE38%" (
     call "%BATTLE38%"
@@ -89,7 +98,11 @@ if errorlevel 4 (
   goto menu
 )
 if errorlevel 3 (
-  if exist "%UI119%" (
+  if exist "%UI121%" (
+    call "%UI121%"
+  ) else if exist "%UI120%" (
+    call "%UI120%"
+  ) else if exist "%UI119%" (
     call "%UI119%"
   ) else if exist "%UI118%" (
     call "%UI118%"

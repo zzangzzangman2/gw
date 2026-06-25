@@ -1,6 +1,6 @@
 # GirlsWar Next Restore Handoff
 
-Generated: 2026-06-25 23:03 KST
+Generated: 2026-06-25 23:25 KST
 
 ## Pull At Home
 
@@ -11,9 +11,27 @@ git pull origin main
 
 Start from:
 - `00_COMMAND_CENTER.cmd`
-- stable handoff: `reports\NEXT_RESTORE_HANDOFF.md`
-- home resume note: `reports\HOME_RESUME_AFTER_UI119_BATTLE39_20260625_2303.md`
+- home checkpoint note: `reports\HOME_RESUME_AFTER_UI121_BATTLE40_20260625_2325.md`
 - running status log: `reports\WORK_SPLIT_STATUS_20260625_1708.md`
+
+## Home Test Commands
+
+Recommended:
+- Run `00_COMMAND_CENTER.cmd`
+- Press `B` for the home checkpoint test.
+
+Direct wrappers:
+- `_restore_tools\current\00_RUN_HOME_CHECKPOINT_TESTS.cmd`
+- `_restore_tools\current\01_RUN_LATEST_MAININTERFACE_UI_VALIDATION.cmd`
+- `_restore_tools\current\02_RUN_LATEST_BATTLE_VALIDATION.cmd`
+
+Checkpoint targets:
+- UI: `_restore_tools\cmd_archive\121_VERIFY_ROUTE_SKELETONGRAPHIC_CANVASRENDERER_TEXTURE_HANDOFF_AND_CLIPPING_TRIANGULATION_ZONG1.cmd`
+- Battle: `_restore_tools\cmd_archive\BATTLE_40_FIX_BATTLE_HUD_CAMERA_RENDER_BINDING_IN_RUNTIME_CONTEXT.cmd`
+
+Experimental next battle tool, not default:
+- `_restore_tools\cmd_archive\BATTLE_41_TRACE_BATTLE_HUD_RUNTIME_SPRITE_TEXTURE_PERSISTENCE_AND_CAPTURE_PIPELINE.cmd`
+- It was created as the next blocker probe but was not run before this checkpoint.
 
 ## Rule Source
 
@@ -23,12 +41,12 @@ Start from:
   - `reports\RESTORE_RULES_APPLIED_CURRENT.md`
 
 Hard rules still active:
-- Do not call a screen restored unless the actual capture matches the reference visually.
+- Do not call a screen restored unless the actual capture/contact sheet matches the reference visually.
 - No coordinate-only UI placement.
 - No whole-atlas placement, crop guessing, fake icon, fake HUD, debug text, path text, or evidence labels in final captures.
 - Preserve original hierarchy, RectTransform, anchors, pivot, localScale, sibling order, Canvas, CanvasScaler, and runtime binding unless exact evidence supports a change.
 - Validate button click/raycast with JSON/logs.
-- Compare battle against `C:\Users\godho\Downloads\플레이.mp4`, especially clip05 485.0-487.0s, as motion sequence evidence.
+- Compare battle against `C:\Users\godho\Downloads\플레이.mp4`, especially clip05 485.0-487.0s.
 - Do not delete or move original/evidence files such as XAPK, OBB, extracted bundles, decoded Lua, IL2CPP dumps, or raw TextAssets until usage coverage is documented.
 
 ## Current Command Layout
@@ -38,87 +56,75 @@ Hard rules still active:
   - `00_COMMAND_CENTER.cmd`
 - `_restore_tools` direct `.cmd` count must stay `0`.
 - Current wrappers:
+  - `_restore_tools\current\00_RUN_HOME_CHECKPOINT_TESTS.cmd`
   - `_restore_tools\current\01_RUN_LATEST_MAININTERFACE_UI_VALIDATION.cmd`
   - `_restore_tools\current\02_RUN_LATEST_BATTLE_VALIDATION.cmd`
 - Archive tools:
   - `_restore_tools\cmd_archive\`
 
-Latest validation targets:
-- MainInterface: `_restore_tools\cmd_archive\119_VALIDATE_ROUTE_SKELETONGRAPHIC_MESH_BOUNDS_CANVASRENDERER_SUBMESH_MATERIAL.cmd`
-- Battle: `_restore_tools\cmd_archive\BATTLE_39_ATTACH_RUNTIME_ACTORS_TO_MAP11003_HUD_CONTEXT_WITH_EVIDENCE.cmd`
-
 ## Latest UI State
 
-Latest task:
-- `MAININTERFACE_119_VALIDATE_ROUTE_SKELETONGRAPHIC_MESH_BOUNDS_CANVASRENDERER_SUBMESH_MATERIAL`
+Latest completed task:
+- `MAININTERFACE_121_VERIFY_ROUTE_SKELETONGRAPHIC_CANVASRENDERER_TEXTURE_HANDOFF_AND_CLIPPING_TRIANGULATION_ZONG1`
 
 Verdict:
 - MainInterface is still not a normal/restored UI.
-- UI119 was trace-only. It did not hide, scale, or move the white route diamond/panel.
-- The large white route shape is narrowed to original `Spine_shijieanniu` drawOrder attachment candidates, especially `zhuye_di1`, plus `zhuye_bian` and `diqiu`.
-- Removing those attachments without original runtime mask/stencil/attachment-visibility evidence would violate the restore rules.
+- UI121 was trace-only and applied no visual fix.
+- `zhuye_di1` and `zhuye_bian` are confirmed pre-clipping drawOrder attachments and should not be hidden by `zong1`.
+- `zong1` clipping affects later attachments such as `diqiu`, `yun`, and `yun2`.
+- Texture handoff is present through `SkeletonGraphic.mainTexture`, private `baseTexture`, atlas primary material, and attachment renderer objects. `CanvasRenderer.GetTexture` may remain empty by API/reflection path.
 
 Useful evidence:
-- Report: `reports\maininterface\MAININTERFACE_119_VALIDATE_ROUTE_SKELETONGRAPHIC_MESH_BOUNDS_CANVASRENDERER_SUBMESH_MATERIAL_RESULT.md`
-- Tool: `_restore_tools\cmd_archive\119_VALIDATE_ROUTE_SKELETONGRAPHIC_MESH_BOUNDS_CANVASRENDERER_SUBMESH_MATERIAL.cmd`
-- JSON: `girlswar_maininterface_unity\Assets\RestoreData\maininterface_119_route_skeletongraphic_mesh_bounds_canvasrenderer_submesh_material.json`
-- CSV: `girlswar_maininterface_unity\Assets\RestoreData\reports\maininterface_119_route_skeletongraphic_mesh_bounds_canvasrenderer_submesh_material.csv`
-- Reference capture reviewed: `girlswar_maininterface_unity\Assets\RestoreCaptures\maininterface_route_spine_runtime_ui_material_bound_1680x720.png`
+- Report: `reports\maininterface\MAININTERFACE_121_VERIFY_ROUTE_SKELETONGRAPHIC_CANVASRENDERER_TEXTURE_HANDOFF_AND_CLIPPING_TRIANGULATION_ZONG1_RESULT.md`
+- Tool: `_restore_tools\cmd_archive\121_VERIFY_ROUTE_SKELETONGRAPHIC_CANVASRENDERER_TEXTURE_HANDOFF_AND_CLIPPING_TRIANGULATION_ZONG1.cmd`
+- JSON: `girlswar_maininterface_unity\Assets\RestoreData\maininterface_121_route_skeletongraphic_canvasrenderer_texture_handoff_clipping_zong1.json`
+- CSV: `girlswar_maininterface_unity\Assets\RestoreData\reports\maininterface_121_route_skeletongraphic_canvasrenderer_texture_handoff_clipping_zong1.csv`
+- Reviewed capture: `girlswar_maininterface_unity\Assets\RestoreCaptures\maininterface_route_spine_runtime_ui_material_bound_1680x720.png`
 
 Key numbers:
 - visual fixes applied: `0`
-- targets considered/traced: `2 / 2`
-- drawOrder attachment rows: `46`
-- high-white atlas regions: `0`
-- large route shape candidates: `3`
-- `Spine_shijieanniu` mesh: `63` vertices, bounds `0,0,0 / 253,253,0`, CanvasRenderer materials `1`, texture empty
-- `8007` mesh: `737` vertices, bounds `-14.039,79.9131,0 / 144.8493,162.6354,0`, CanvasRenderer materials `1`, texture empty
-- mask state for both: `maskable=True;Mask=False;RectMask2D=False`
-- click validation: `2026-06-25 22:55:08`, `24 / 24 / 0 / 24`
+- targets considered/traced: `1 / 1`
+- clip rows / clipped rows: `9 / 6`
+- pre-clip zhuye rows: `2`
+- UV region rows: `5`
+- texture present / expected-missing rows: `11 / 3`
+- click validation: `2026-06-25 23:22:51`, `24 / 24 / 0 / 24`
 
 Next UI blocker:
-- `MAININTERFACE_120_TRACE_ROUTE_SKELETONGRAPHIC_ORIGINAL_RUNTIME_MASK_STENCIL_ATTACHMENT_VISIBILITY`
-- Target evidence: original runtime mask, stencil, CanvasRenderer texture handoff, and attachment visibility state for `zhuye_di1` and the world route frame.
+- `route frame visual mismatch likely original art/style expectation or SkeletonGraphic material property block texture path capture review, not evidence-backed zhuye hide`
 
 ## Latest Battle State
 
-Latest task:
-- `BATTLE_39_ATTACH_RUNTIME_ACTORS_TO_MAP11003_HUD_CONTEXT_WITH_EVIDENCE`
+Latest completed task:
+- `BATTLE_40_FIX_BATTLE_HUD_CAMERA_RENDER_BINDING_IN_RUNTIME_CONTEXT`
 
 Verdict:
 - Original clip05 actor motion/layout/timing + map/HUD context is still not reproduced.
-- BATTLE39 attached runtime actors to the BATTLE29 `map_11003` scene context, but the final capture does not show the clip05/BATTLE29 HUD/card regions correctly.
-- The report separates scene object existence from camera-visible HUD. Scene has map/HUD/card objects, but camera-visible HUD/cards is false.
-- Actor placement is still a candidate, not original runtime verified.
+- BATTLE40 confirmed the HUD Canvas is already `ScreenSpaceCamera` and world-camera bound.
+- The reopened runtime context has resolved active Graphic rows `0` and Image rows `0`, so final capture has no HUD/card render substance.
+- This means the next blocker is runtime UI component/sprite/texture persistence, not just camera binding.
 
 Useful evidence:
-- Report: `reports\battle\BATTLE_39_ATTACH_RUNTIME_ACTORS_TO_MAP11003_HUD_CONTEXT_WITH_EVIDENCE_RESULT.md`
-- JSON: `reports\battle\BATTLE_39_ATTACH_RUNTIME_ACTORS_TO_MAP11003_HUD_CONTEXT_WITH_EVIDENCE_RESULT.json`
-- Tool: `_restore_tools\cmd_archive\BATTLE_39_ATTACH_RUNTIME_ACTORS_TO_MAP11003_HUD_CONTEXT_WITH_EVIDENCE.cmd`
-- Scene: `girlswar_battle_unity\Assets\Scenes\Battle39RuntimeActorsMap11003HudContextCandidate.unity`
-- Capture: `girlswar_battle_unity\Assets\RestoreCaptures\battle_actor\Battle39RuntimeActorsMap11003HudContext_1920x1080.png`
-- Runtime sequence: `girlswar_battle_unity\Assets\RestoreCaptures\battle_actor\battle39_sequence\`
-- Contact sheet: `reports\battle\BATTLE_39_ATTACH_RUNTIME_ACTORS_TO_MAP11003_HUD_CONTEXT_WITH_EVIDENCE_CONTACT_SHEET.jpg`
-- Video sequence sheet: `reports\battle\BATTLE_39_PLAY_VIDEO_CLIP05_485_487_SEQUENCE.jpg`
-- Unity data: `girlswar_battle_unity\Assets\RestoreData\battle\BATTLE_39_ATTACH_RUNTIME_ACTORS_TO_MAP11003_HUD_CONTEXT_WITH_EVIDENCE.json`
-- Actor bounds CSV: `girlswar_battle_unity\Assets\RestoreData\battle\BATTLE_39_ATTACH_RUNTIME_ACTORS_TO_MAP11003_HUD_CONTEXT_WITH_EVIDENCE_ACTOR_BOUNDS.csv`
-- Comparison CSV: `girlswar_battle_unity\Assets\RestoreData\battle\BATTLE_39_ATTACH_RUNTIME_ACTORS_TO_MAP11003_HUD_CONTEXT_WITH_EVIDENCE_COMPARISON.csv`
+- Report: `reports\battle\BATTLE_40_FIX_BATTLE_HUD_CAMERA_RENDER_BINDING_IN_RUNTIME_CONTEXT_RESULT.md`
+- JSON: `reports\battle\BATTLE_40_FIX_BATTLE_HUD_CAMERA_RENDER_BINDING_IN_RUNTIME_CONTEXT_RESULT.json`
+- Tool: `_restore_tools\cmd_archive\BATTLE_40_FIX_BATTLE_HUD_CAMERA_RENDER_BINDING_IN_RUNTIME_CONTEXT.cmd`
+- Scene: `girlswar_battle_unity\Assets\Scenes\Battle40HudCameraRenderBindingRuntimeContext.unity`
+- Capture: `girlswar_battle_unity\Assets\RestoreCaptures\battle_actor\Battle40HudCameraRenderBindingRuntimeContext_1920x1080.png`
+- Contact sheet: `reports\battle\BATTLE_40_FIX_BATTLE_HUD_CAMERA_RENDER_BINDING_IN_RUNTIME_CONTEXT_CONTACT_SHEET.jpg`
+- Video sequence sheet: `reports\battle\BATTLE_40_PLAY_VIDEO_CLIP05_485_487_SEQUENCE.jpg`
 
 Key numbers:
-- visual status: `failed_hud_context_not_camera_visible_in_candidate_capture`
-- reference video used: `True`, 485.0-487.0s, frames `6`
-- map/HUD/cards object present: `True / True / True`
+- visual status: `failed_hud_graphic_components_missing_after_scene_reload`
+- reference video used: `True`, 485.0-487.0s
 - camera-visible HUD/cards: `False`
-- reference/runtime actor boxes: `181 / 18`
-- actor center gap norm: `0.499238`
-- runtime/reference actor area ratio: `0.042839`
-- mesh hash changed actors: `3 / 3`
-- AnimationState SetAnimation success: `3 / 3`
-- magenta pixel ratio: `0.025204`
+- resolved active Graphic rows: `0`
+- resolved Image rows: `0`
+- after ScreenSpaceCamera canvas rows: `18`
+- reference/runtime actor boxes: `181 / 0`
 
 Next battle blocker:
-- `BATTLE_40_FIX_BATTLE_HUD_CAMERA_RENDER_BINDING_IN_RUNTIME_CONTEXT`
-- Target evidence: why BATTLE29 HUD/card objects exist in the scene but do not render as the clip05/BATTLE29 top HP, bottom cards, and right controls in the final camera capture.
+- `BATTLE_41_TRACE_BATTLE_HUD_RUNTIME_SPRITE_TEXTURE_PERSISTENCE_AND_CAPTURE_PIPELINE`
+- BATTLE41 files exist but the tool was not run before this checkpoint; keep it experimental unless you want to test the next probe.
 
 ## Existing Threads
 
@@ -132,7 +138,7 @@ Use them separately:
 
 ## Suggested Next Work
 
-1. UI: run `MAININTERFACE_120_TRACE_ROUTE_SKELETONGRAPHIC_ORIGINAL_RUNTIME_MASK_STENCIL_ATTACHMENT_VISIBILITY`.
-2. Battle: run `BATTLE_40_FIX_BATTLE_HUD_CAMERA_RENDER_BINDING_IN_RUNTIME_CONTEXT`.
-3. Keep checking actual captures/contact sheets. Component counts and object presence are not enough.
-4. Keep root command layout clean: root only `00_COMMAND_CENTER.cmd`, `_restore_tools` direct CMD count `0`.
+1. Pull and run the home checkpoint test from `00_COMMAND_CENTER.cmd` option `B`.
+2. Review the UI121 and BATTLE40 reports/captures.
+3. If continuing, run BATTLE41 only as an experimental next probe, then make BATTLE42 persistent HUD reconstruction only from original prefab/PPtr/sprite evidence.
+4. For UI, do not hide `zhuye_di1`/`zhuye_bian`; they are pre-clipping original attachments.

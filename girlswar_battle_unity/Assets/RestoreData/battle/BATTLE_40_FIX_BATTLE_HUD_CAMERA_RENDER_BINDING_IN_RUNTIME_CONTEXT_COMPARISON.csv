@@ -1,0 +1,7 @@
+metric,value,note
+camera_visible_battle_hud,False,BATTLE29 reference-region similarity
+hud_zone_vote_count,2,top/bottom/right visibility vote
+canvas_fix_count,0,ScreenSpace/camera binding fixes recorded
+extracted_sprite_bind_count,0,evidence sprite/texture rebinds
+actor_center_gap_norm,,video union vs runtime union
+actor_area_ratio_runtime_to_reference,,scale/layout gap

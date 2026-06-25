@@ -1200,3 +1200,61 @@
   - contact sheet: `reports\battle\BATTLE_39_ATTACH_RUNTIME_ACTORS_TO_MAP11003_HUD_CONTEXT_WITH_EVIDENCE_CONTACT_SHEET.jpg`
 - Next battle blocker:
   - `BATTLE_40_FIX_BATTLE_HUD_CAMERA_RENDER_BINDING_IN_RUNTIME_CONTEXT`
+
+## Update 2026-06-25 23:25 KST
+
+### Home Checkpoint
+
+- User switched the goal from full restore to a temporary stop + push for home PC testing.
+- Stable handoff document updated:
+  - `reports\NEXT_RESTORE_HANDOFF.md`
+- Dedicated home resume note added:
+  - `reports\HOME_RESUME_AFTER_UI121_BATTLE40_20260625_2325.md`
+- Home checkpoint test wrapper added:
+  - `_restore_tools\current\00_RUN_HOME_CHECKPOINT_TESTS.cmd`
+- `00_COMMAND_CENTER.cmd` now has option `B` for the home checkpoint test.
+- Latest current wrappers now point at:
+  - MainInterface: `_restore_tools\cmd_archive\121_VERIFY_ROUTE_SKELETONGRAPHIC_CANVASRENDERER_TEXTURE_HANDOFF_AND_CLIPPING_TRIANGULATION_ZONG1.cmd`
+  - Battle: `_restore_tools\cmd_archive\BATTLE_40_FIX_BATTLE_HUD_CAMERA_RENDER_BINDING_IN_RUNTIME_CONTEXT.cmd`
+- Root command policy is preserved:
+  - root CMD count: `1`
+  - only root launcher: `00_COMMAND_CENTER.cmd`
+  - `_restore_tools` direct `.cmd` count: `0`
+
+### UI MAININTERFACE_121 Result
+
+- Visual verdict: MainInterface is still not a normal/restored UI.
+- UI121 was trace-only and applied no visual fix.
+- `zhuye_di1/zhuye_bian` are confirmed pre-clipping attachments and should not be hidden by `zong1`.
+- `zong1` clipping applies to later attachments such as `diqiu/yun/yun2`.
+- Texture handoff exists through `SkeletonGraphic.mainTexture`, private `baseTexture`, atlas primary material, and attachment renderer objects.
+- Key values:
+  - visual fixes applied: `0`
+  - targets considered/traced: `1 / 1`
+  - clip rows / clipped rows: `9 / 6`
+  - pre-clip zhuye rows: `2`
+  - click validation: `2026-06-25 23:22:51`, `24 / 24 / 0 / 24`
+- Outputs:
+  - report: `reports\maininterface\MAININTERFACE_121_VERIFY_ROUTE_SKELETONGRAPHIC_CANVASRENDERER_TEXTURE_HANDOFF_AND_CLIPPING_TRIANGULATION_ZONG1_RESULT.md`
+  - tool: `_restore_tools\cmd_archive\121_VERIFY_ROUTE_SKELETONGRAPHIC_CANVASRENDERER_TEXTURE_HANDOFF_AND_CLIPPING_TRIANGULATION_ZONG1.cmd`
+- Next UI blocker:
+  - `route frame visual mismatch likely original art/style expectation or SkeletonGraphic material property block texture path capture review`
+
+### Battle BATTLE_40 Result
+
+- Visual verdict: original clip05 actor motion/layout/timing + map/HUD context is still not reproduced.
+- BATTLE40 confirmed the HUD Canvas is already `ScreenSpaceCamera/worldCamera` bound.
+- Reopened runtime context still has active Graphic/Image rows `0 / 0`, so HUD/card render substance is absent.
+- Key values:
+  - visual status: `failed_hud_graphic_components_missing_after_scene_reload`
+  - camera-visible HUD/cards: `False`
+  - ScreenSpaceCamera canvas rows: `18`
+  - reference/runtime actor boxes: `181 / 0`
+- Outputs:
+  - report: `reports\battle\BATTLE_40_FIX_BATTLE_HUD_CAMERA_RENDER_BINDING_IN_RUNTIME_CONTEXT_RESULT.md`
+  - tool: `_restore_tools\cmd_archive\BATTLE_40_FIX_BATTLE_HUD_CAMERA_RENDER_BINDING_IN_RUNTIME_CONTEXT.cmd`
+  - contact sheet: `reports\battle\BATTLE_40_FIX_BATTLE_HUD_CAMERA_RENDER_BINDING_IN_RUNTIME_CONTEXT_CONTACT_SHEET.jpg`
+- Next battle blocker:
+  - `BATTLE_41_TRACE_BATTLE_HUD_RUNTIME_SPRITE_TEXTURE_PERSISTENCE_AND_CAPTURE_PIPELINE`
+- Note:
+  - BATTLE41 files were created as the next experimental probe but not run before the checkpoint push.

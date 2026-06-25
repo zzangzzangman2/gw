@@ -1,6 +1,6 @@
 # MainInterface 119 Validate Route SkeletonGraphic Mesh Bounds CanvasRenderer Submesh Material Result
 
-Generated: 2026-06-25 22:55:40 KST
+Generated: 2026-06-25 23:21:45 KST
 
 ## Verdict
 
@@ -50,7 +50,7 @@ Generated: 2026-06-25 22:55:40 KST
 | --- | --- |
 | graphics capture reviewed | `C:\Users\godho\Downloads\girlswar\girlswar_maininterface_unity\Assets\RestoreCaptures\maininterface_route_spine_runtime_ui_material_bound_1680x720.png` |
 | new visual capture generated | `False` |
-| click validation generated | `2026-06-25 22:55:08` |
+| click validation generated | `2026-06-25 23:14:33` |
 | active/clickable/blocked/invoked | `24 / 24 / 0 / 24` |
 | root CMD count | `1` |
 | root CMDs | `00_COMMAND_CENTER.cmd` |

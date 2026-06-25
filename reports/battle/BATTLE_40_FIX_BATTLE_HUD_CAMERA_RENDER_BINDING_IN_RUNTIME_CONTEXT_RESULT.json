@@ -1,0 +1,129 @@
+{
+  "verdict": "clip05 actor motion/layout/timing + map/HUD context not reproduced",
+  "visual_status": "failed_hud_graphic_components_missing_after_scene_reload",
+  "isFinalRestoredBattleScreen": false,
+  "reference_video_used": true,
+  "videoTimeRangeSeconds": "485.0-487.0",
+  "unityExitCode": 0,
+  "cameraVisibleBattleHud": false,
+  "hudVisibilityMetrics": {
+    "topHpVs": {
+      "meanAbsDiffVsBattle29HudReference": 0.031582,
+      "pixelCorrelationVsBattle29HudReference": 0.9002,
+      "zoneVisibleByReferenceSimilarity": true
+    },
+    "bottomCards": {
+      "meanAbsDiffVsBattle29HudReference": 0.090698,
+      "pixelCorrelationVsBattle29HudReference": 0.486029,
+      "zoneVisibleByReferenceSimilarity": false
+    },
+    "rightControls": {
+      "meanAbsDiffVsBattle29HudReference": 0.026358,
+      "pixelCorrelationVsBattle29HudReference": 0.734968,
+      "zoneVisibleByReferenceSimilarity": true
+    },
+    "cameraVisibleBattleHud": false,
+    "visibleHudZoneVoteCount": 2,
+    "reason": "HUD/card regions still do not match BATTLE29/clip05 reference visibility."
+  },
+  "captureMetrics": {
+    "captureExists": true,
+    "width": 1920,
+    "height": 1080,
+    "magentaPixelRatio": 0.025034,
+    "nonBlackPixelRatio": 0.900815
+  },
+  "actorMotionLayoutTimingMapHudContextReplayed": false,
+  "actorLayoutGap": {
+    "hasReference": true,
+    "hasRuntime": false
+  },
+  "referenceActorBoxCount": 181,
+  "runtimeActorBoxCount": 0,
+  "unitySummary": {
+    "canvasFixCount": 0,
+    "extractedSpriteBindCount": 0,
+    "beforeCanvasCount": 18,
+    "afterCanvasCount": 18,
+    "beforeImageWithTextureCount": 0,
+    "afterImageWithTextureCount": 0,
+    "afterActiveGraphicCount": 0,
+    "captureExists": true
+  },
+  "canvasSummary": {
+    "beforeCanvasRows": 18,
+    "afterCanvasRows": 18,
+    "afterScreenSpaceCamera": 18,
+    "afterScreenSpaceOverlay": 0,
+    "afterWorldCameraMatchRows": 18,
+    "fixRows": 0
+  },
+  "componentSummary": {
+    "rowCount": 0,
+    "activeGraphicCount": 0,
+    "imageRows": 0,
+    "imageWithSpriteRows": 0,
+    "imageWithTextureRows": 0,
+    "textRows": 0,
+    "buttonCandidateByPathRows": 0
+  },
+  "battle39Carryover": {
+    "visual_status": "failed_hud_context_not_camera_visible_in_candidate_capture",
+    "cameraVisibleBattleHud": false,
+    "actorLayoutGap": {
+      "hasReference": true,
+      "hasRuntime": true,
+      "referenceUnionNorm": {
+        "x": 0.030729,
+        "y": 0.061111,
+        "w": 0.969271,
+        "h": 0.666667,
+        "cx": 0.515365,
+        "cy": 0.394444
+      },
+      "runtimeUnionNorm": {
+        "x": 0.116146,
+        "y": 0.62037,
+        "w": 0.104167,
+        "h": 0.265741,
+        "cx": 0.168229,
+        "cy": 0.753241
+      },
+      "centerDistanceNorm": 0.499238,
+      "runtimeToReferenceAreaRatio": 0.042839
+    }
+  },
+  "battle29Context": {
+    "capture": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_battle_unity\\Assets\\RestoreCaptures\\battle_hud\\BattleHeroListSkillCardBindClip05_1920x1080.png",
+    "mapLayerCreatedCount": 10,
+    "boundHeroCardCount": 3,
+    "failureAxes": {
+      "heroitem_template_runtime_clone_missing_before_battle29": true,
+      "battle29_positions_inferred_not_original_runtime_verified": true,
+      "actor_motion_not_replayed": true,
+      "skill_effect_runtime_not_attached_to_cards_or_motion": true
+    }
+  },
+  "blocker": "HUD canvases are already ScreenSpaceCamera/worldCamera-bound, but the reopened BATTLE39/BATTLE40 scene has zero resolved active Graphic/Image rows; the issue is runtime UI component/sprite texture persistence, not only camera render binding.",
+  "nextBlocker": "BATTLE_41_TRACE_BATTLE_HUD_RUNTIME_SPRITE_TEXTURE_PERSISTENCE_AND_CAPTURE_PIPELINE",
+  "rootCmdCount": 1,
+  "restoreToolsDirectCmdCount": 0,
+  "outputs": {
+    "report": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_40_FIX_BATTLE_HUD_CAMERA_RENDER_BINDING_IN_RUNTIME_CONTEXT_RESULT.md",
+    "resultJson": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_40_FIX_BATTLE_HUD_CAMERA_RENDER_BINDING_IN_RUNTIME_CONTEXT_RESULT.json",
+    "unityDataJson": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_battle_unity\\Assets\\RestoreData\\battle\\BATTLE_40_FIX_BATTLE_HUD_CAMERA_RENDER_BINDING_IN_RUNTIME_CONTEXT.json",
+    "unityProbeJson": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_battle_unity\\Assets\\RestoreData\\battle\\BATTLE_40_FIX_BATTLE_HUD_CAMERA_RENDER_BINDING_IN_RUNTIME_CONTEXT_UNITY.json",
+    "componentsCsv": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_battle_unity\\Assets\\RestoreData\\battle\\BATTLE_40_FIX_BATTLE_HUD_CAMERA_RENDER_BINDING_IN_RUNTIME_CONTEXT_COMPONENTS.csv",
+    "canvasCsv": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_battle_unity\\Assets\\RestoreData\\battle\\BATTLE_40_FIX_BATTLE_HUD_CAMERA_RENDER_BINDING_IN_RUNTIME_CONTEXT_CANVAS_DIFF.csv",
+    "actorBoundsCsv": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_battle_unity\\Assets\\RestoreData\\battle\\BATTLE_40_FIX_BATTLE_HUD_CAMERA_RENDER_BINDING_IN_RUNTIME_CONTEXT_ACTOR_BOUNDS.csv",
+    "comparisonCsv": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_battle_unity\\Assets\\RestoreData\\battle\\BATTLE_40_FIX_BATTLE_HUD_CAMERA_RENDER_BINDING_IN_RUNTIME_CONTEXT_COMPARISON.csv",
+    "capture": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_battle_unity\\Assets\\RestoreCaptures\\battle_actor\\Battle40HudCameraRenderBindingRuntimeContext_1920x1080.png",
+    "contactSheet": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_40_FIX_BATTLE_HUD_CAMERA_RENDER_BINDING_IN_RUNTIME_CONTEXT_CONTACT_SHEET.jpg",
+    "unityLog": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_40_FIX_BATTLE_HUD_CAMERA_RENDER_BINDING_IN_RUNTIME_CONTEXT.log"
+  },
+  "notes": [
+    "Final capture has no debug/path/evidence labels from BATTLE40.",
+    "Canvas fixes are recorded with old/new renderMode/worldCamera/planeDistance values.",
+    "No fake HUD or coordinate-only actor placement success claim is made."
+  ]
+}
