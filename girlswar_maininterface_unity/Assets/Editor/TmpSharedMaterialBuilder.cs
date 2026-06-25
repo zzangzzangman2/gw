@@ -124,7 +124,7 @@ namespace GirlsWarRestore
                 else if (propertyType == "color")
                     material.SetColor(propertyName, ParseColor(value));
                 else if (propertyType == "texture")
-                    material.SetTexture(propertyName, atlas);
+                    ApplyTextureProperty(material, propertyName, value, atlas);
             }
 
             EditorUtility.SetDirty(material);
@@ -137,6 +137,24 @@ namespace GirlsWarRestore
                 success = true,
                 message = "saved"
             };
+        }
+
+        private static void ApplyTextureProperty(Material material, string propertyName, string value, Texture2D atlas)
+        {
+            if (propertyName == "_MainTex")
+            {
+                material.SetTexture(propertyName, atlas);
+                return;
+            }
+
+            // Preserve original empty texture references instead of using the atlas as a blanket fallback.
+            if (string.IsNullOrWhiteSpace(value) || value == "0")
+            {
+                material.SetTexture(propertyName, null);
+                return;
+            }
+
+            material.SetTexture(propertyName, atlas);
         }
 
         private static List<MaterialSpec> LoadMaterialSpecs()

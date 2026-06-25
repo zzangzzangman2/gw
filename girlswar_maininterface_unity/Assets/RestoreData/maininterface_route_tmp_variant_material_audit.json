@@ -1,0 +1,12 @@
+﻿{
+  "generatedAt": "2026-06-25 20:38:03",
+  "rowCount": 65,
+  "activeRows": 20,
+  "textureMismatchRows": 0,
+  "classifications": {
+    "actual_without_route_evidence": 26,
+    "evidence_path_material_ok": 21,
+    "inactive_original_evidence": 18
+  },
+  "csv": "Assets/RestoreData/reports/maininterface_route_tmp_variant_material_audit.csv"
+}

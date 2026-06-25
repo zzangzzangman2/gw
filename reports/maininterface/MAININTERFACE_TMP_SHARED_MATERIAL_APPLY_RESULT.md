@@ -1,6 +1,6 @@
 ﻿# MainInterface TMP Shared Material Apply Result
 
-Generated: 2026-06-25 15:53:22
+Generated: 2026-06-25 20:36:33
 
 ## Result
 
@@ -29,24 +29,6 @@ Generated: 2026-06-25 15:53:22
 ## Meaning
 
 원본 TMP shared material preset을 Unity Material asset으로 재구성했다. MainInterface 빌더는 `shared_material_path_id` 기준으로 이 material을 `TextMeshProUGUI.fontSharedMaterial`에 적용할 수 있다.
-
-## MainInterface Verification
-
-| 항목 | 결과 |
-|---|---:|
-| material assets built | 19 / 19 |
-| scene shared material refs | 84 / 84 |
-| Unity build compile errors | 0 |
-| capture size | 1680x720 |
-| visible pixel | 1,201,680 |
-| capture generated | 2026-06-25 15:54:18 |
-| active button raycast-clickable | 24 / 24 |
-| active button blocked | 0 |
-| click validation generated | 2026-06-25 15:54:58 |
-
-## Remaining Visual Issue
-
-shared material까지 적용했지만 route 라벨 크기/위치 문제는 남아 있다. `MAININTERFACE_ROUTE_TMP_STATE_AFTER_MATERIAL.md` 기준 active route TMP 21개 중 suspicious active row가 7개이며, zero-height active row 2개와 font-larger-than-rect active row 5개가 다음 보정 대상이다.
 
 ## Generated Files
 

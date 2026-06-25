@@ -317,12 +317,31 @@ namespace GirlsWarRestore
                     material.SetFloat(property, ParseFloat(value));
                 else if (type == "color")
                     material.SetColor(property, ParseColor(value));
-                else if (type == "texture" && property != "_MainTex")
-                    material.SetTexture(property, atlasTexture);
+                else if (type == "texture")
+                    ApplyTextureProperty(material, property, value, atlasTexture);
             }
             material.SetTexture("_MainTex", atlasTexture);
             AssetDatabase.CreateAsset(material, spec.materialAssetPath);
             return AssetDatabase.LoadAssetAtPath<Material>(spec.materialAssetPath);
+        }
+
+        private static void ApplyTextureProperty(Material material, string property, string value, Texture2D atlasTexture)
+        {
+            if (property == "_MainTex")
+            {
+                material.SetTexture(property, atlasTexture);
+                return;
+            }
+
+            // Original TMP material PPtr value 0 means this texture slot is empty.
+            // Filling every TMP texture slot with the atlas changes face/outline sampling.
+            if (string.IsNullOrWhiteSpace(value) || value == "0")
+            {
+                material.SetTexture(property, null);
+                return;
+            }
+
+            material.SetTexture(property, atlasTexture);
         }
 
         private static void ApplyFaceInfo(TMP_FontAsset fontAsset, FontSpec spec)

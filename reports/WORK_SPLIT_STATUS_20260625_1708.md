@@ -558,3 +558,27 @@
   - reference sequence: `reports\battle\BATTLE_30_PLAY_VIDEO_CLIP05_485_487_SEQUENCE.jpg`
 - Next battle blocker:
   - `BATTLE_31_ATTACH_LOADABLE_ACTOR_SPINE_ANIMATION_RUNTIME_PROBE`
+
+## Update 2026-06-25 20:40 KST
+
+### MainInterface UI 110 Result
+
+- UI 110 did not claim the current MainInterface capture is final or normal.
+- Visual status by manual capture review: still not a normal/original MainInterface; right route cluster text/layout remains suspicious.
+- Fixed evidence-backed issue:
+  - TMP material reconstruction was incorrectly filling non-main texture slots with the atlas.
+  - Original material property value `0` is now preserved as an empty texture reference for `_BumpMap`, `_Cube`, `_FaceTex`, and `_OutlineTex`.
+  - `_MainTex` remains assigned to the atlas.
+- Route label audit:
+  - route label rows checked: `6`
+  - active evidence-matched rows: `9`
+  - route labels use `GirlsWarStaticProbe_riyu_shenzong_0_2_0_2_TMP` and matching material.
+  - non-main texture slot mismatch rows: `0`
+- Verification:
+  - active tool: `_restore_tools\110_FIX_MAININTERFACE_ROUTE_TMP_VARIANT_MATERIAL_TEXTURE_PTRS.cmd`
+  - archived root shortcut: `_restore_tools\root_cmd_archive\110_FIX_MAININTERFACE_ROUTE_TMP_VARIANT_MATERIAL_TEXTURE_PTRS.cmd`
+  - report: `reports\maininterface\MAININTERFACE_ROUTE_TMP_VARIANT_MATERIAL_AUDIT_RESULT.md`
+  - capture: `girlswar_maininterface_unity\Assets\RestoreCaptures\maininterface_restored_1680x720.png`
+  - click validation: `24 / 24 / 0 / 24`
+- Next UI blocker:
+  - `MAININTERFACE_111_ROUTE_LABEL_RECT_OVERRIDE_REVALIDATION`

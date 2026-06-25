@@ -1,0 +1,2 @@
+@echo off
+call "%~dp0_restore_tools\110_FIX_MAININTERFACE_ROUTE_TMP_VARIANT_MATERIAL_TEXTURE_PTRS.cmd"
