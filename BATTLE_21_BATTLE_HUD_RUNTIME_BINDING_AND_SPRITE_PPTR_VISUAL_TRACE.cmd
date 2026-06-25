@@ -1,0 +1,2 @@
+@echo off
+call "%~dp0_restore_tools\BATTLE_21_BATTLE_HUD_RUNTIME_BINDING_AND_SPRITE_PPTR_VISUAL_TRACE.cmd"

@@ -1,0 +1,126 @@
+{
+  "reference_video_used": true,
+  "visual_status": "failed_missing_runtime_binding",
+  "matches_clip05_static_hud_layout": false,
+  "camera_visible_hud": true,
+  "camera_visible_original_hud": false,
+  "placeholder_block_visible": true,
+  "debug_or_evidence_overlay_visible": false,
+  "video_clip05_contact_compared": true,
+  "visible_original_sprite_count": 0,
+  "visible_original_sprite_candidate_count": 146,
+  "visible_placeholder_block_count": 16,
+  "activeGraphicCount": 275,
+  "battle20TopBottomRightZoneFalsePositive": true,
+  "componentRowCount": 505,
+  "pptrJoinMatchedCount": 445,
+  "reasonCounts": {
+    "sprite_pptr_unresolved": 188,
+    "resolved_or_inactive": 249,
+    "font_pptr_unresolved": 68
+  },
+  "captureVisualizationFixApplied": true,
+  "fixApplied": false,
+  "nextBlocker": "BATTLE_22_BATTLE_HUD_SPRITE_PPTR_DEEP_TRACE_AND_RUNTIME_LUA_BINDING",
+  "liveJson": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_battle_unity\\Assets\\RestoreData\\battle\\BATTLE_HUD_RUNTIME_BINDING_SPRITE_PPTR_TRACE_LIVE.json",
+  "componentsCsv": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_battle_unity\\Assets\\RestoreData\\battle\\BATTLE_HUD_RUNTIME_BINDING_SPRITE_PPTR_TRACE_COMPONENTS.csv",
+  "capture": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_battle_unity\\Assets\\RestoreCaptures\\battle_hud\\BattleHudRuntimeBindingSpritePptrTrace_1680x720.png",
+  "contactSheet": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_21_HUD_RUNTIME_BINDING_SPRITE_PPTR_TRACE_CONTACT_SHEET.jpg",
+  "luaIl2cppHints": [
+    {
+      "path": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_FLOW_WITH_HUD_ATTACH_RESULT.json",
+      "line": "4",
+      "text": "    \"ui_normalbattle.prefab\","
+    },
+    {
+      "path": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_FLOW_WITH_HUD_ATTACH_RESULT.json",
+      "line": "5",
+      "text": "    \"ui_battle3dui.prefab\","
+    },
+    {
+      "path": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_FLOW_WITH_HUD_ATTACH_RESULT.json",
+      "line": "6",
+      "text": "    \"ui_normalbattle_heroitem.prefab\","
+    },
+    {
+      "path": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_FLOW_WITH_HUD_ATTACH_RESULT.json",
+      "line": "9",
+      "text": "    \"ui_normalbattle_pause.prefab\","
+    },
+    {
+      "path": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_FLOW_WITH_HUD_ATTACH_RESULT.json",
+      "line": "10",
+      "text": "    \"ui_normalbattle_skipview.prefab\","
+    },
+    {
+      "path": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\decoded\\xlua\\-3029001242551076572_UI_Flower_Complete_Tips_security_xor_raw.lua",
+      "line": "75",
+      "text": "elseif GameEntry.Procedure.CurrProcedureState==CS.YouYou.ProcedureState.NormalBattle then"
+    },
+    {
+      "path": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_procedure\\-3424355311143813575_ProcedureNormalBattle_security_xor_raw.lua",
+      "line": "3",
+      "text": "require\"Modules/Battle/BattleSkillEffectManager\""
+    },
+    {
+      "path": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_procedure\\-3424355311143813575_ProcedureNormalBattle_security_xor_raw.lua",
+      "line": "8",
+      "text": "require\"Modules/Battle/HeroSkillInfo\""
+    },
+    {
+      "path": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_procedure\\-3424355311143813575_ProcedureNormalBattle_security_xor_raw.lua",
+      "line": "20",
+      "text": "local y=require(\"DataNode/DataTable/Create/skillAct/DTSkillActDBModel\")"
+    },
+    {
+      "path": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_procedure\\-3424355311143813575_ProcedureNormalBattle_security_xor_raw.lua",
+      "line": "38",
+      "text": "DTSkillPasDBModel,"
+    },
+    {
+      "path": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_procedure\\-3424355311143813575_ProcedureNormalBattle_security_xor_raw.lua",
+      "line": "41",
+      "text": "DTTreasureSkillDBModel,"
+    },
+    {
+      "path": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_procedure\\-3424355311143813575_ProcedureNormalBattle_security_xor_raw.lua",
+      "line": "58",
+      "text": "e.GameSpeed=1"
+    },
+    {
+      "path": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_procedure\\-3424355311143813575_ProcedureNormalBattle_security_xor_raw.lua",
+      "line": "59",
+      "text": "e.GameFastSkill=false"
+    },
+    {
+      "path": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_procedure\\-3424355311143813575_ProcedureNormalBattle_security_xor_raw.lua",
+      "line": "60",
+      "text": "e.GameFastSkillPlayFirstAnimMap={}"
+    },
+    {
+      "path": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_procedure\\-3424355311143813575_ProcedureNormalBattle_security_xor_raw.lua",
+      "line": "100",
+      "text": "e.CurrSkillMinStopTime=0"
+    },
+    {
+      "path": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_procedure\\-3424355311143813575_ProcedureNormalBattle_security_xor_raw.lua",
+      "line": "105",
+      "text": "e.CurrSkillAttackType=0"
+    },
+    {
+      "path": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_procedure\\-3424355311143813575_ProcedureNormalBattle_security_xor_raw.lua",
+      "line": "114",
+      "text": "e.IsAutoMode=false"
+    },
+    {
+      "path": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_procedure\\-3424355311143813575_ProcedureNormalBattle_security_xor_raw.lua",
+      "line": "150",
+      "text": "e.autoExitGuideBattle=true"
+    },
+    {
+      "path": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_procedure\\-3424355311143813575_ProcedureNormalBattle_security_xor_raw.lua",
+      "line": "159",
+      "text": "e.IsAutoCloseSkipView=true"
+    }
+  ]
+}

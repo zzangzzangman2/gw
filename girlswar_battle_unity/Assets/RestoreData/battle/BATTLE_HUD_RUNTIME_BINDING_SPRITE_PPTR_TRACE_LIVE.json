@@ -1,0 +1,15 @@
+﻿{
+  "hudRootFound": true,
+  "liveHudInstantiateCount": 10,
+  "componentRowCount": 505,
+  "visibleComponentCount": 275,
+  "visibleOriginalSpriteCount": 146,
+  "visiblePlaceholderBlockCount": 16,
+  "placeholderBlockVisible": true,
+  "cameraVisibleOriginalHud": false,
+  "captureVisualizationFixApplied": true,
+  "canvasFixCount": 8,
+  "capture": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_battle_unity\\Assets\\RestoreCaptures\\battle_hud\\BattleHudRuntimeBindingSpritePptrTrace_1680x720.png",
+  "captureExists": true,
+  "liveCsv": "C:/Users/godho/Downloads/girlswar/girlswar_battle_unity/Assets\\..\\Assets/RestoreData/battle/BATTLE_HUD_RUNTIME_BINDING_SPRITE_PPTR_TRACE_LIVE_COMPONENTS.csv"
+}

@@ -204,3 +204,70 @@
   - This status update
 - Do not kill the upload unless explicitly requested.
 - Next Git action should happen after the currently active UI/Battle tasks finish: commit and push only the latest useful outputs, while avoiding unnecessary Unity cache churn where practical.
+
+## Update 2026-06-25 18:55 KST
+
+### Rule Gate
+
+- `C:\Users\godho\Downloads\apk_extracted_ui_restore_rules.txt` is not currently present on disk under `C:\Users\godho\Downloads`.
+- The active rule gate was copied into `reports\RESTORE_RULES_APPLIED_CURRENT.md` so UI/Battle work keeps enforcing the same restore constraints:
+  - no coordinate-only restore
+  - preserve original hierarchy/anchors/pivot/scale/sibling order/CanvasScaler
+  - no whole-atlas Image placement
+  - no fake HUD, debug/evidence text, asset-path text, or placeholder overlays as final output
+  - visual captures must be judged by the user-visible result, not only counts
+  - original/evidence files must not be deleted until coverage is documented
+
+### Battle Latest
+
+- BATTLE_21 was corrected and rerun after an initial Unity compile/empty-trace failure.
+- Tool:
+  - `_restore_tools\BATTLE_21_BATTLE_HUD_RUNTIME_BINDING_AND_SPRITE_PPTR_VISUAL_TRACE.cmd`
+  - root shortcut `BATTLE_21_BATTLE_HUD_RUNTIME_BINDING_AND_SPRITE_PPTR_VISUAL_TRACE.cmd`
+- Report:
+  - `reports\battle\BATTLE_HUD_RUNTIME_BINDING_SPRITE_PPTR_TRACE_RESULT.md`
+  - `reports\battle\BATTLE_HUD_RUNTIME_BINDING_SPRITE_PPTR_TRACE_RESULT.json`
+  - `girlswar_battle_unity\Assets\RestoreData\battle\BATTLE_HUD_RUNTIME_BINDING_SPRITE_PPTR_TRACE.json`
+  - `girlswar_battle_unity\Assets\RestoreData\battle\BATTLE_HUD_RUNTIME_BINDING_SPRITE_PPTR_TRACE_COMPONENTS.csv`
+  - `reports\battle\BATTLE_21_HUD_RUNTIME_BINDING_SPRITE_PPTR_TRACE_CONTACT_SHEET.jpg`
+- Current visual verdict: still not original battle HUD.
+- Key values:
+  - `visual_status=failed_missing_runtime_binding`
+  - `matches_clip05_static_hud_layout=false`
+  - `camera_visible_hud=true`
+  - `camera_visible_original_hud=false`
+  - `placeholder_block_visible=true`
+  - `componentRowCount=505`
+  - `activeGraphicCount=275`
+  - `pptrJoinMatchedCount=445`
+  - `visible_placeholder_block_count=16`
+  - `sprite_pptr_unresolved=188`
+  - `font_pptr_unresolved=68`
+- The BATTLE_21 contact sheet now compares play.mp4 clip05 sequence with the current runtime capture and clearly shows the capture is placeholder-style, not the real HP/VS/skill-card/right-control HUD.
+- BATTLE_22 prompt was sent to the battle thread:
+  - `BATTLE_22_BATTLE_HUD_SPRITE_PPTR_DEEP_TRACE_AND_RUNTIME_LUA_BINDING`
+
+### UI Latest
+
+- UI108 report exists:
+  - `reports\maininterface\MAININTERFACE_GUILDMAIN_RUNTIME_LUA_XLUA_INITIALIZATION_TRACE_RESULT.md`
+  - `girlswar_maininterface_unity\Assets\RestoreData\maininterface_guildmain_runtime_lua_xlua_initialization_trace.json`
+  - CSV reports under `girlswar_maininterface_unity\Assets\RestoreData\reports\`
+- Current visual verdict: `UI_GuildMain` still not normal.
+- Key values:
+  - whiteish visible ratio unchanged: `0.8171147704124451`
+  - large white visible Images: `19`
+  - white no-sprite Images: `78`
+  - missing Image sprites: `152`
+  - missing script objects: `881`
+  - raw guild TextAssets extracted: `75`
+  - decoded guild Lua-like TextAssets: `75`
+  - blocker-to-runtime candidate rows: `56`
+  - high-confidence blocker rows: `23`
+  - evidence-based visual fix applied: `0`
+  - click validation: `24 / 24 / 0 / 24`
+- Important evidence:
+  - `UI_GuildMainView` is confirmed as UIForm id `219`, module `Guild`, prefab `UI_GuildMain`, sprite resource `UIGuild`.
+  - Runtime API evidence exists for `YouYouImage`, `UIMask`, `LuaUtils.SetImageSprite`, `SetImageColor`, `SetCanvasAlpha`, `LoadSpriteWithFullPath`, and `LoadMaterialAsset`.
+- Next UI blocker:
+  - `GuildMain custom component/type reconstruction for YouYouImage and missing MonoBehaviour bindings`.
