@@ -1,0 +1,21 @@
+﻿{
+  "status": "battle29_hero_list_skillcard_bind_clip05",
+  "isFinalRestoredBattleScreen": false,
+  "templateSource": "ui_normalbattle_heroitem prefab from battle_ext_prefabs",
+  "targetContainer": "ui_normalbattle/root_battle/BottomCenter/HeroListContainer",
+  "templateFound": true,
+  "containerFound": true,
+  "boundHeroCardCount": 3,
+  "headSpriteBindCount": 3,
+  "extractedSpriteBindCount": 57,
+  "hiddenUnresolvedWhiteDataIconCount": 9,
+  "visibleCardImageCount": 51,
+  "visibleWhiteLikeCardImageCount": 0,
+  "capture": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_battle_unity\\Assets\\RestoreCaptures\\battle_hud\\BattleHeroListSkillCardBindClip05_1920x1080.png",
+  "captureExists": true,
+  "cards": [
+    {"slot":1,"heroDid":"1036","heroId":"51469","cloneName":"Battle29BoundHeroCard_1_1036","hierarchyPath":"HeroListContainer/Battle29BoundHeroCard_1_1036","anchoredPosition":"-190/0","sizeDelta":"269/200","headSprite":"head1036","headPngPath":"C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\extracted\\unity\\bundles\\b_6ca02dad4f8af848\\images\\S\\-1006758698391221614_head1036.png","headBindCount":1,"extractedSpriteBindCount":19,"hiddenUnresolvedWhiteDataIconCount":3,"activeFixCount":0,"imageCount":22,"visibleImageCount":17,"visibleWhiteLikeImageCount":0,"visibleWhiteLikeImagePaths":[],"normalSkill":"1036101","smallSkill":"1036201","bigSkill":"1036301"},
+    {"slot":2,"heroDid":"1002","heroId":"50870","cloneName":"Battle29BoundHeroCard_2_1002","hierarchyPath":"HeroListContainer/Battle29BoundHeroCard_2_1002","anchoredPosition":"0/0","sizeDelta":"269/200","headSprite":"head1002","headPngPath":"C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\extracted\\unity\\bundles\\b_6ca02dad4f8af848\\images\\S\\-296058673418415307_head1002.png","headBindCount":1,"extractedSpriteBindCount":19,"hiddenUnresolvedWhiteDataIconCount":3,"activeFixCount":0,"imageCount":22,"visibleImageCount":17,"visibleWhiteLikeImageCount":0,"visibleWhiteLikeImagePaths":[],"normalSkill":"1002101","smallSkill":"1002201","bigSkill":"1002301"},
+    {"slot":3,"heroDid":"1034","heroId":"50874","cloneName":"Battle29BoundHeroCard_3_1034","hierarchyPath":"HeroListContainer/Battle29BoundHeroCard_3_1034","anchoredPosition":"190/0","sizeDelta":"269/200","headSprite":"head1034","headPngPath":"C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\extracted\\unity\\bundles\\b_6ca02dad4f8af848\\images\\S\\401204702686331365_head1034.png","headBindCount":1,"extractedSpriteBindCount":19,"hiddenUnresolvedWhiteDataIconCount":3,"activeFixCount":0,"imageCount":22,"visibleImageCount":17,"visibleWhiteLikeImageCount":0,"visibleWhiteLikeImagePaths":[],"normalSkill":"1034101","smallSkill":"1034201","bigSkill":"1034301"}
+  ]
+}

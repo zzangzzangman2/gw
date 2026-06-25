@@ -10,7 +10,7 @@ REPORT_DIR = BASE / "reports" / "battle"
 VIDEO = Path(r"C:\Users\godho\Downloads\플레이.mp4")
 
 LIVE_JSON = UNITY_DATA / "BATTLE_CORRECT_MAP_SCENE_HUD_PREVIEW_CLIP05.json"
-CAPTURE = UNITY_DIR / "Assets" / "RestoreCaptures" / "battle_hud" / "BattleCorrectMapSceneHudPreviewClip05_1680x720.png"
+CAPTURE = UNITY_DIR / "Assets" / "RestoreCaptures" / "battle_hud" / "BattleCorrectMapSceneHudPreviewClip05_1920x1080.png"
 REFERENCE_SEQUENCE = REPORT_DIR / "BATTLE_27_PLAY_VIDEO_CLIP05_486S_SEQUENCE.jpg"
 CONTACT = REPORT_DIR / "BATTLE_27_CORRECT_MAP_SCENE_HUD_PREVIEW_CLIP05_CONTACT_SHEET.jpg"
 REPORT_JSON = REPORT_DIR / "BATTLE_CORRECT_MAP_SCENE_HUD_PREVIEW_CLIP05_RESULT.json"

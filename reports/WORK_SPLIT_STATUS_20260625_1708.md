@@ -477,3 +477,39 @@
   - reference sequence: `reports\battle\BATTLE_28_PLAY_VIDEO_CLIP05_486S_SEQUENCE.jpg`
 - Next battle blocker:
   - `BATTLE_29_BIND_UI_NORMALBATTLE_HERO_LIST_SKILL_CARDS_AND_TRACE_ACTOR_ANIMATION_RUNTIME`
+
+## Update 2026-06-25 20:27 KST
+
+### Battle BATTLE_29 Result After User Rejection
+
+- User rejected the battle UI as invalid; confirmed: the previous capture still did not match `C:\Users\godho\Downloads\플레이.mp4` clip05 motion/layout.
+- Root causes found and corrected in this pass:
+  - battle capture was using `1680x720` while the reference video is `1920x1080`; BATTLE_27/BATTLE_29 captures now use `1920x1080`.
+  - `ui_normalbattle_heroitem` existed only as a detached template; BATTLE_29 now clones the original template into `root_battle/BottomCenter/HeroListContainer`.
+  - white placeholder card blocks came from unresolved data icons `im_frame`, `im_quality`, `im_zhiye`; these are now hidden and counted as unresolved, not presented as restored UI.
+  - `download/map/battlemap/11003.assetbundle` loads from `clean_unityfs_slices`; its renderer names (`bg1_1`, `bg4_2`, etc.) are traced and matched to extracted `Map_11003_*` sprites.
+  - visual map output now uses `1920x1080` pixel-space `Map_11003_*` layers to remove the invalid black band while preserving original sprite-piece evidence.
+- Current BATTLE_29 verdict:
+  - `improved_hero_list_cards_bound_not_final`
+  - `visibleWhiteLikeCardImageCount=0`
+  - `hiddenUnresolvedWhiteDataIconCount=9`
+  - `boundHeroCardCount=3`
+  - `headSpriteBindCount=3`
+  - `extractedSpriteBindCount=57`
+  - battle map original bundle loaded: `true`
+  - pixel-matched map layer count: `9`
+- Still not final:
+  - hero card positions are video/pixel matched enough for preview, but not yet proven through the original runtime Lua layout pass.
+  - actor positions/scale are still not matched to the video sequence.
+  - actor animation/motion is not replayed; only static prefab instances are visible.
+  - 9 actor slots remain missing/unresolved.
+- Outputs:
+  - root CMD: `BATTLE_29_BIND_HERO_LIST_SKILLCARDS_AND_VALIDATE_CLIP05.cmd`
+  - tool CMD: `_restore_tools\BATTLE_29_BIND_HERO_LIST_SKILLCARDS_AND_VALIDATE_CLIP05.cmd`
+  - report: `reports\battle\BATTLE_HERO_LIST_SKILLCARD_BIND_CLIP05_RESULT.md`
+  - JSON: `reports\battle\BATTLE_HERO_LIST_SKILLCARD_BIND_CLIP05_RESULT.json`
+  - capture: `girlswar_battle_unity\Assets\RestoreCaptures\battle_hud\BattleHeroListSkillCardBindClip05_1920x1080.png`
+  - contact sheet: `reports\battle\BATTLE_29_HERO_LIST_SKILLCARD_BIND_CLIP05_CONTACT_SHEET.jpg`
+  - map sprite sheet: `reports\battle\BATTLE_29_MAP_11003_SPRITE_CONTACT_SHEET.jpg`
+- Next battle blocker:
+  - `BATTLE_30_VERIFY_HERO_CARD_RUNTIME_LAYOUT_AND_ATTACH_ACTOR_ANIMATION_TRACE`

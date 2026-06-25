@@ -13,10 +13,16 @@ using System.Text.RegularExpressions;
 public static class BattleCorrectMapSceneHudPreviewClip05Editor
 {
     private const string ResultJsonPath = "Assets/RestoreData/battle/BATTLE_CORRECT_MAP_SCENE_HUD_PREVIEW_CLIP05.json";
-    private const string CapturePath = "Assets/RestoreCaptures/battle_hud/BattleCorrectMapSceneHudPreviewClip05_1680x720.png";
+    private const string CapturePath = "Assets/RestoreCaptures/battle_hud/BattleCorrectMapSceneHudPreviewClip05_1920x1080.png";
     private const string ScenePath = "Assets/Scenes/BattleCorrectMapSceneHudPreviewClip05.unity";
     private const string RuntimeFlowManifestPath = "Assets/RestoreData/battle/BATTLE_RUNTIME_FLOW_MANIFEST.json";
     private const string MergedExtractedRoot = @"C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted";
+    private const string Battlemap11003CleanBundlePath = @"C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\extracted\unity\clean_unityfs_slices\download\map\battlemap\11003.assetbundle";
+    private const string Battlemap11003MergedBundlePath = @"C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\merged_content\AssetBundles\download\map\battlemap\11003.assetbundle";
+    private const string Battlemap11003OverlayBundlePath = @"C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\restore_overlay\Android\data\com.girlwars.kr\files\build\download\map\battlemap\11003.assetbundle";
+    private const string SpriteIndexPath = @"C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\indexes\unity_images.csv";
+    private const int CaptureWidth = 1920;
+    private const int CaptureHeight = 1080;
 
     [MenuItem("GirlsWar/Battle/Battle 27 Correct Map Scene HUD Preview Clip05")]
     public static void Build()
@@ -34,7 +40,14 @@ public static class BattleCorrectMapSceneHudPreviewClip05Editor
         var previewRoot = new GameObject("BattleCorrectMapSceneHudPreviewClip05Root");
         previewRoot.transform.position = Vector3.zero;
 
-        var mapLayers = BuildVideoMatchedMap(previewRoot.transform);
+        var mapLayers = BuildVideoMatchedMapFromOriginalBundle(previewRoot.transform);
+        bool originalBundleMapCreated = false;
+        foreach (var layer in mapLayers) if (layer.created) originalBundleMapCreated = true;
+        if (originalBundleMapCreated)
+        {
+            DisableOriginalBattlemapBundleVisualRoot();
+        }
+        mapLayers.AddRange(BuildVideoMatchedMap(previewRoot.transform));
         var actorResults = InstantiateRuntimeActors(previewRoot.transform);
         int disabledNonHudTextCount = DisableNonHudText(hudRoot);
         int visibleSceneRendererCount = CountVisibleRenderers(previewRoot);
@@ -52,10 +65,174 @@ public static class BattleCorrectMapSceneHudPreviewClip05Editor
     private static List<Battle27MapLayerResult> BuildVideoMatchedMap(Transform root)
     {
         var layers = new List<Battle27MapLayerResult>();
-        layers.Add(CreateMapLayer(root, "Map_11003_5", "background_building_warm_lit", "extracted/unity/bundles/b_9d48e387e09bd2e7/images/S/-7856817432204118800_Map_11003_5.png", new Vector3(0f, 2.22f, 0f), 23.333f, 0));
-        layers.Add(CreateMapLayer(root, "Map_11003_3", "upper_roof_and_far_depth", "extracted/unity/bundles/b_180ffe459f8c296a/images/S/7288649013814339085_Map_11003_3.png", new Vector3(0f, 2.85f, -0.02f), 23.333f, 1));
-        layers.Add(CreateMapLayer(root, "Map_11003_4_2", "middle_house_layer", "extracted/unity/bundles/b_180ffe459f8c296a/images/S/-7820322519759755053_Map_11003_4_2.png", new Vector3(1.35f, 0.82f, -0.04f), 12.4f, 2));
-        layers.Add(CreateMapLayer(root, "Map_11003_2", "stone_floor_video_best_match", "extracted/unity/bundles/b_180ffe459f8c296a/images/S/-6485743510393844429_Map_11003_2.png", new Vector3(0f, -2.05f, -0.06f), 23.333f, 3));
+        layers.Add(CreateMapLayerPixel(root, "Map_11003_11", "pixel_space_sky_mountain_strip_from_video_1920x1080", "extracted/unity/bundles/b_9d48e387e09bd2e7/images/S/5971460981514339809_Map_11003_11.png", 0f, 0f, 0));
+        layers.Add(CreateMapLayerPixel(root, "Map_11003_5", "pixel_space_background_buildings_from_video_1920x1080", "extracted/unity/bundles/b_9d48e387e09bd2e7/images/S/-7856817432204118800_Map_11003_5.png", 0f, 0f, 1));
+        layers.Add(CreateMapLayerPixel(root, "Map_11003_4_2", "pixel_space_center_house_from_original_prefab_name_bg4_2", "extracted/unity/bundles/b_180ffe459f8c296a/images/S/-7820322519759755053_Map_11003_4_2.png", 455f, 105f, 2));
+        layers.Add(CreateMapLayerPixel(root, "Map_11003_4_1", "pixel_space_center_house_curtain_from_original_prefab_name_bg4_1", "extracted/unity/bundles/b_180ffe459f8c296a/images/S/-8270640840813032502_Map_11003_4_1.png", 710f, 260f, 3));
+        layers.Add(CreateMapLayerPixel(root, "Map_11003_3", "pixel_space_midground_debris_from_video_1920x1080", "extracted/unity/bundles/b_180ffe459f8c296a/images/S/7288649013814339085_Map_11003_3.png", 0f, 335f, 4));
+        layers.Add(CreateMapLayerPixel(root, "Map_11003_2", "pixel_space_stone_floor_video_best_match", "extracted/unity/bundles/b_180ffe459f8c296a/images/S/-6485743510393844429_Map_11003_2.png", 0f, 430f, 5));
+        layers.Add(CreateMapLayerPixel(root, "Map_11003_1_3", "pixel_space_bottom_foreground_from_original_prefab_name_bg1_3", "extracted/unity/bundles/b_180ffe459f8c296a/images/S/-2714483910561799702_Map_11003_1_3.png", 700f, 895f, 6));
+        layers.Add(CreateMapLayerPixel(root, "Map_11003_1_4", "pixel_space_bottom_foreground_from_original_prefab_name_bg1_4", "extracted/unity/bundles/b_180ffe459f8c296a/images/S/-7114534193537288331_Map_11003_1_4.png", 1200f, 905f, 7));
+        layers.Add(CreateMapLayerPixel(root, "Map_11003_1_1", "pixel_space_bottom_foreground_from_original_prefab_name_bg1_1", "extracted/unity/bundles/b_180ffe459f8c296a/images/S/-8534531834521366686_Map_11003_1_1.png", 1500f, 900f, 8));
+        return layers;
+    }
+
+    private static Battle27MapLayerResult CreateMapLayerPixel(Transform root, string spriteName, string role, string output, float pixelX, float pixelY, int sortingOrder)
+    {
+        var result = new Battle27MapLayerResult();
+        result.spriteName = spriteName;
+        result.role = role;
+        result.output = output;
+        result.absolutePath = Path.Combine(MergedExtractedRoot, output.Replace('/', Path.DirectorySeparatorChar));
+        result.exists = File.Exists(result.absolutePath);
+        result.pixelX = pixelX;
+        result.pixelY = pixelY;
+        result.sortingOrder = sortingOrder;
+        if (!result.exists) return result;
+
+        try
+        {
+            var texture = new Texture2D(2, 2, TextureFormat.RGBA32, false);
+            texture.name = spriteName + "_battle27_pixel_png";
+            texture.LoadImage(File.ReadAllBytes(result.absolutePath), false);
+            texture.wrapMode = TextureWrapMode.Clamp;
+            texture.filterMode = FilterMode.Bilinear;
+            result.pixelWidth = texture.width;
+            result.pixelHeight = texture.height;
+
+            float pixelsPerWorldUnit = CaptureHeight / (5f * 2f);
+            result.worldWidth = texture.width / pixelsPerWorldUnit;
+            result.worldHeight = texture.height / pixelsPerWorldUnit;
+            result.worldX = ((pixelX + texture.width * 0.5f) - CaptureWidth * 0.5f) / pixelsPerWorldUnit;
+            result.worldY = (CaptureHeight * 0.5f - (pixelY + texture.height * 0.5f)) / pixelsPerWorldUnit;
+
+            var sprite = Sprite.Create(texture, new Rect(0f, 0f, texture.width, texture.height), new Vector2(0.5f, 0.5f), 100f);
+            sprite.name = spriteName;
+
+            var go = new GameObject("Battle27PixelMapLayer_" + sortingOrder.ToString("00") + "_" + spriteName);
+            go.transform.SetParent(root, false);
+            go.transform.position = new Vector3(result.worldX, result.worldY, 0f - sortingOrder * 0.02f);
+            float nativeWorldWidth = texture.width / 100f;
+            float scale = result.worldWidth / Mathf.Max(0.001f, nativeWorldWidth);
+            go.transform.localScale = new Vector3(scale, scale, 1f);
+            var renderer = go.AddComponent<SpriteRenderer>();
+            renderer.sprite = sprite;
+            renderer.sortingOrder = sortingOrder;
+            result.rendererCount = 1;
+            result.created = true;
+        }
+        catch (Exception ex)
+        {
+            result.failReason = ex.GetType().Name + ": " + ex.Message;
+        }
+        return result;
+    }
+
+    private static int DisableOriginalBattlemapBundleVisualRoot()
+    {
+        var go = GameObject.Find("Battle27OriginalBattlemap11003Prefab");
+        if (go == null) return 0;
+        go.SetActive(false);
+        return 1;
+    }
+
+    private static List<Battle27MapLayerResult> BuildVideoMatchedMapFromOriginalBundle(Transform root)
+    {
+        var layers = new List<Battle27MapLayerResult>();
+        var result = new Battle27MapLayerResult();
+        result.spriteName = "11003.assetbundle";
+        result.role = "original_battlemap_prefab_scene_bundle";
+        string[] candidates = Battlemap11003BundleCandidates();
+        result.output = FirstJoined(candidates, 3);
+        result.exists = AnyExisting(candidates);
+        layers.Add(result);
+        if (!result.exists)
+        {
+            result.failReason = "battlemap_11003_bundle_missing";
+            return layers;
+        }
+
+        var loadFailures = new List<string>();
+        foreach (string candidate in candidates)
+        {
+            if (!File.Exists(candidate)) continue;
+            result.absolutePath = candidate;
+            AssetBundle bundle = null;
+            try
+            {
+                bundle = AssetBundle.LoadFromFile(candidate);
+                if (bundle == null)
+                {
+                    loadFailures.Add(candidate + ": AssetBundle.LoadFromFile returned null");
+                    continue;
+                }
+
+                string[] assetNames = bundle.GetAllAssetNames();
+                result.bundleAssetNameSample = FirstJoined(assetNames, 8);
+                GameObject prefab = null;
+                string prefabAssetName = "";
+                foreach (string assetName in assetNames)
+                {
+                    try
+                    {
+                        prefab = bundle.LoadAsset<GameObject>(assetName);
+                        if (prefab != null)
+                        {
+                            prefabAssetName = assetName;
+                            break;
+                        }
+                    }
+                    catch { }
+                }
+                if (prefab == null)
+                {
+                    try
+                    {
+                        var all = bundle.LoadAllAssets<GameObject>();
+                        if (all != null && all.Length > 0)
+                        {
+                            prefab = all[0];
+                            prefabAssetName = prefab.name;
+                        }
+                    }
+                    catch { }
+                }
+                if (prefab == null)
+                {
+                    loadFailures.Add(candidate + ": no_GameObject_asset_found_in_battlemap_bundle");
+                    continue;
+                }
+
+                var instance = (GameObject)GameObject.Instantiate(prefab);
+                instance.name = "Battle27OriginalBattlemap11003Prefab";
+                instance.transform.SetParent(root, false);
+                instance.transform.localPosition = Vector3.zero;
+                instance.transform.localRotation = Quaternion.identity;
+                instance.transform.localScale = Vector3.one;
+                result.created = true;
+                result.prefabAssetName = prefabAssetName;
+                result.prefabInstanceName = instance.name;
+                result.spriteRendererNameSample = CollectSpriteRendererNameSample(instance, false);
+                result.spriteRendererSpriteSample = CollectSpriteRendererNameSample(instance, true);
+                result.nullSpriteRendererCount = CountNullSpriteRenderers(instance);
+                result.mapSpriteTextureBindCount = BindOriginalBattlemapSpriteTextures(instance);
+                result.rendererCount = CountEnabledRenderers(instance);
+                result.particleSystemCount = CountTypeName(instance, "UnityEngine.ParticleSystem");
+                result.materialFallbackCount = RepairMapMaterials(instance);
+                result.renderOrderFixCount = PreserveMapRenderers(instance);
+                result.failReason = loadFailures.Count > 0 ? "fallback_attempts_before_success: " + string.Join(" | ", loadFailures.ToArray()) : "";
+                return layers;
+            }
+            catch (Exception ex)
+            {
+                loadFailures.Add(candidate + ": " + ex.GetType().Name + ": " + ex.Message);
+            }
+            finally
+            {
+                if (bundle != null) bundle.Unload(false);
+            }
+        }
+        result.failReason = string.Join(" | ", loadFailures.ToArray());
         return layers;
     }
 
@@ -371,6 +548,167 @@ public static class BattleCorrectMapSceneHudPreviewClip05Editor
         return count;
     }
 
+    private static int PreserveMapRenderers(GameObject root)
+    {
+        int count = 0;
+        foreach (var renderer in root.GetComponentsInChildren<SpriteRenderer>(true))
+        {
+            renderer.enabled = true;
+            count++;
+        }
+        return count;
+    }
+
+    private static int BindOriginalBattlemapSpriteTextures(GameObject root)
+    {
+        var index = LoadMapSpriteIndex();
+        if (index.Count == 0) return 0;
+        var textureCache = new Dictionary<string, Texture2D>(StringComparer.OrdinalIgnoreCase);
+        int count = 0;
+        foreach (var renderer in root.GetComponentsInChildren<SpriteRenderer>(true))
+        {
+            string spriteName = renderer.sprite != null ? renderer.sprite.name : "";
+            string objectName = renderer.gameObject.name.Replace("(Clone)", "").Trim();
+            string key = "";
+            if (!string.IsNullOrEmpty(spriteName) && index.ContainsKey(spriteName)) key = spriteName;
+            else if (!string.IsNullOrEmpty(objectName) && index.ContainsKey(objectName)) key = objectName;
+            else
+            {
+                key = ResolveBattlemapSpriteNameFromRendererName(objectName, index);
+            }
+            if (string.IsNullOrEmpty(key))
+            {
+                key = ResolveBattlemapSpriteNameFromRendererName(spriteName, index);
+            }
+            if (string.IsNullOrEmpty(key))
+            {
+                foreach (var pair in index)
+                {
+                    if (objectName.IndexOf(pair.Key, StringComparison.OrdinalIgnoreCase) >= 0)
+                    {
+                        key = pair.Key;
+                        break;
+                    }
+                }
+            }
+            if (string.IsNullOrEmpty(key)) continue;
+            string path = index[key];
+            var texture = LoadTextureCached(path, textureCache);
+            if (texture == null) continue;
+            float ppu = renderer.sprite != null && renderer.sprite.pixelsPerUnit > 0.01f ? renderer.sprite.pixelsPerUnit : 100f;
+            var sprite = Sprite.Create(texture, new Rect(0f, 0f, texture.width, texture.height), new Vector2(0.5f, 0.5f), ppu);
+            sprite.name = key;
+            renderer.sprite = sprite;
+            count++;
+        }
+        return count;
+    }
+
+    private static string ResolveBattlemapSpriteNameFromRendererName(string rendererName, Dictionary<string, string> index)
+    {
+        if (string.IsNullOrEmpty(rendererName) || index == null || index.Count == 0) return "";
+        var match = Regex.Match(rendererName, @"^bg(\d+)_(\d+)$", RegexOptions.IgnoreCase);
+        if (!match.Success) return "";
+        string group = match.Groups[1].Value;
+        string sub = match.Groups[2].Value;
+        string withSub = "Map_11003_" + group + "_" + sub;
+        if (index.ContainsKey(withSub)) return withSub;
+        if (sub == "1")
+        {
+            string withoutSub = "Map_11003_" + group;
+            if (index.ContainsKey(withoutSub)) return withoutSub;
+        }
+        return "";
+    }
+
+    private static Dictionary<string, string> LoadMapSpriteIndex()
+    {
+        var index = new Dictionary<string, string>(StringComparer.Ordinal);
+        if (!File.Exists(SpriteIndexPath)) return index;
+        var lines = File.ReadAllLines(SpriteIndexPath, Encoding.UTF8);
+        for (int i = 1; i < lines.Length; i++)
+        {
+            var parts = lines[i].Split(',');
+            if (parts.Length < 7) continue;
+            string bundle = parts[0];
+            string assetType = parts[2];
+            string name = parts[3];
+            string output = parts[6];
+            if (assetType != "Sprite") continue;
+            if (!name.StartsWith("Map_11003", StringComparison.Ordinal)) continue;
+            if (bundle.IndexOf("/battlemap/map_11003/", StringComparison.OrdinalIgnoreCase) < 0) continue;
+            string path = Path.Combine(MergedExtractedRoot, output.Replace('/', Path.DirectorySeparatorChar));
+            if (!File.Exists(path)) continue;
+            if (!index.ContainsKey(name)) index[name] = path;
+        }
+        return index;
+    }
+
+    private static Texture2D LoadTextureCached(string path, Dictionary<string, Texture2D> cache)
+    {
+        if (cache.ContainsKey(path)) return cache[path];
+        try
+        {
+            var texture = new Texture2D(2, 2, TextureFormat.RGBA32, false);
+            texture.name = Path.GetFileNameWithoutExtension(path) + "_battle27_map_png";
+            if (!texture.LoadImage(File.ReadAllBytes(path), false))
+            {
+                UnityEngine.Object.DestroyImmediate(texture);
+                return null;
+            }
+            texture.wrapMode = TextureWrapMode.Clamp;
+            texture.filterMode = FilterMode.Bilinear;
+            cache[path] = texture;
+            return texture;
+        }
+        catch
+        {
+            return null;
+        }
+    }
+
+    private static string CollectSpriteRendererNameSample(GameObject root, bool spriteNames)
+    {
+        var values = new List<string>();
+        foreach (var renderer in root.GetComponentsInChildren<SpriteRenderer>(true))
+        {
+            string value = spriteNames ? (renderer.sprite != null ? renderer.sprite.name : "null_sprite") : renderer.gameObject.name;
+            if (string.IsNullOrEmpty(value)) value = "(empty)";
+            values.Add(value);
+            if (values.Count >= 12) break;
+        }
+        return string.Join(";", values.ToArray());
+    }
+
+    private static int CountNullSpriteRenderers(GameObject root)
+    {
+        int count = 0;
+        foreach (var renderer in root.GetComponentsInChildren<SpriteRenderer>(true))
+        {
+            if (renderer.sprite == null) count++;
+        }
+        return count;
+    }
+
+    private static int RepairMapMaterials(GameObject root)
+    {
+        int count = 0;
+        foreach (var renderer in root.GetComponentsInChildren<Renderer>(true))
+        {
+            var materials = renderer.sharedMaterials;
+            bool changed = false;
+            for (int i = 0; i < materials.Length; i++)
+            {
+                if (!NeedsMaterialFallback(materials[i])) continue;
+                materials[i] = CreateFallbackMaterial(materials[i], false, null);
+                changed = true;
+                count++;
+            }
+            if (changed) renderer.sharedMaterials = materials;
+        }
+        return count;
+    }
+
     private static bool NeedsMaterialFallback(Material material)
     {
         if (material == null || material.shader == null) return true;
@@ -447,14 +785,14 @@ public static class BattleCorrectMapSceneHudPreviewClip05Editor
         {
             string fullPath = ProjectPath(CapturePath);
             Directory.CreateDirectory(Path.GetDirectoryName(fullPath));
-            var rt = new RenderTexture(1680, 720, 24);
+            var rt = new RenderTexture(CaptureWidth, CaptureHeight, 24);
             camera.targetTexture = rt;
             var previous = RenderTexture.active;
             RenderTexture.active = rt;
             Canvas.ForceUpdateCanvases();
             camera.Render();
-            var texture = new Texture2D(1680, 720, TextureFormat.RGB24, false);
-            texture.ReadPixels(new Rect(0, 0, 1680, 720), 0, 0);
+            var texture = new Texture2D(CaptureWidth, CaptureHeight, TextureFormat.RGB24, false);
+            texture.ReadPixels(new Rect(0, 0, CaptureWidth, CaptureHeight), 0, 0);
             texture.Apply();
             File.WriteAllBytes(fullPath, texture.EncodeToPNG());
             camera.targetTexture = null;
@@ -713,7 +1051,7 @@ public static class BattleCorrectMapSceneHudPreviewClip05Editor
         for (int i = 0; i < mapLayers.Count; i++)
         {
             var r = mapLayers[i];
-            sb.Append("    {\"spriteName\":\"" + Json(r.spriteName) + "\",\"role\":\"" + Json(r.role) + "\",\"exists\":" + Bool(r.exists) + ",\"created\":" + Bool(r.created) + ",\"pixelWidth\":" + r.pixelWidth + ",\"pixelHeight\":" + r.pixelHeight + ",\"worldX\":" + Num(r.worldX) + ",\"worldY\":" + Num(r.worldY) + ",\"worldWidth\":" + Num(r.worldWidth) + ",\"worldHeight\":" + Num(r.worldHeight) + ",\"sortingOrder\":" + r.sortingOrder + ",\"output\":\"" + Json(r.output) + "\",\"failReason\":\"" + Json(r.failReason) + "\"}");
+            sb.Append("    {\"spriteName\":\"" + Json(r.spriteName) + "\",\"role\":\"" + Json(r.role) + "\",\"exists\":" + Bool(r.exists) + ",\"created\":" + Bool(r.created) + ",\"pixelX\":" + Num(r.pixelX) + ",\"pixelY\":" + Num(r.pixelY) + ",\"pixelWidth\":" + r.pixelWidth + ",\"pixelHeight\":" + r.pixelHeight + ",\"worldX\":" + Num(r.worldX) + ",\"worldY\":" + Num(r.worldY) + ",\"worldWidth\":" + Num(r.worldWidth) + ",\"worldHeight\":" + Num(r.worldHeight) + ",\"sortingOrder\":" + r.sortingOrder + ",\"rendererCount\":" + r.rendererCount + ",\"particleSystemCount\":" + r.particleSystemCount + ",\"materialFallbackCount\":" + r.materialFallbackCount + ",\"renderOrderFixCount\":" + r.renderOrderFixCount + ",\"nullSpriteRendererCount\":" + r.nullSpriteRendererCount + ",\"mapSpriteTextureBindCount\":" + r.mapSpriteTextureBindCount + ",\"spriteRendererNameSample\":\"" + Json(r.spriteRendererNameSample) + "\",\"spriteRendererSpriteSample\":\"" + Json(r.spriteRendererSpriteSample) + "\",\"prefabAssetName\":\"" + Json(r.prefabAssetName) + "\",\"prefabInstanceName\":\"" + Json(r.prefabInstanceName) + "\",\"bundleAssetNameSample\":\"" + Json(r.bundleAssetNameSample) + "\",\"output\":\"" + Json(r.output) + "\",\"failReason\":\"" + Json(r.failReason) + "\"}");
             sb.AppendLine(i + 1 == mapLayers.Count ? "" : ",");
         }
         sb.AppendLine("  ],");
@@ -730,6 +1068,30 @@ public static class BattleCorrectMapSceneHudPreviewClip05Editor
     }
 
     private static string ProjectPath(string assetPath) { return Path.Combine(Application.dataPath, "..", assetPath); }
+    private static string[] Battlemap11003BundleCandidates()
+    {
+        return new[]
+        {
+            Battlemap11003CleanBundlePath,
+            Battlemap11003MergedBundlePath,
+            Battlemap11003OverlayBundlePath
+        };
+    }
+
+    private static bool AnyExisting(string[] values)
+    {
+        if (values == null) return false;
+        foreach (string value in values) if (!string.IsNullOrEmpty(value) && File.Exists(value)) return true;
+        return false;
+    }
+
+    private static string FirstJoined(string[] values, int limit)
+    {
+        if (values == null || values.Length == 0) return "";
+        var sample = new List<string>();
+        for (int i = 0; i < values.Length && i < limit; i++) sample.Add(values[i]);
+        return string.Join(";", sample.ToArray());
+    }
     private static string Json(string value) { return (value ?? "").Replace("\\", "\\\\").Replace("\"", "\\\"").Replace("\r", " ").Replace("\n", " "); }
     private static string Bool(bool value) { return value ? "true" : "false"; }
     private static string Num(float value) { return value.ToString("0.######", System.Globalization.CultureInfo.InvariantCulture); }
@@ -743,6 +1105,8 @@ public sealed class Battle27MapLayerResult
     public string absolutePath = "";
     public bool exists;
     public bool created;
+    public float pixelX;
+    public float pixelY;
     public int pixelWidth;
     public int pixelHeight;
     public float worldX;
@@ -750,6 +1114,17 @@ public sealed class Battle27MapLayerResult
     public float worldWidth;
     public float worldHeight;
     public int sortingOrder;
+    public int rendererCount;
+    public int particleSystemCount;
+    public int materialFallbackCount;
+    public int renderOrderFixCount;
+    public int nullSpriteRendererCount;
+    public int mapSpriteTextureBindCount;
+    public string spriteRendererNameSample = "";
+    public string spriteRendererSpriteSample = "";
+    public string prefabAssetName = "";
+    public string prefabInstanceName = "";
+    public string bundleAssetNameSample = "";
     public string failReason = "";
 }
 

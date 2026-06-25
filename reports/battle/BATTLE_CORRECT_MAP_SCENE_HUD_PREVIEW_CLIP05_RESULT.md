@@ -7,15 +7,15 @@ This is not a final restored battle screen. It replaces the rejected debug/text-
 - reference video: `C:\Users\godho\Downloads\플레이.mp4` clip05 around 486s
 - chosen map evidence: `map_11003` from BATTLE_26 video similarity
 - runtime flow manifest mapId: `11001`
-- capture: `C:\Users\godho\Downloads\girlswar\girlswar_battle_unity\Assets\RestoreCaptures\battle_hud\BattleCorrectMapSceneHudPreviewClip05_1680x720.png`
+- capture: `C:\Users\godho\Downloads\girlswar\girlswar_battle_unity\Assets\RestoreCaptures\battle_hud\BattleCorrectMapSceneHudPreviewClip05_1920x1080.png`
 - contact sheet: `C:\Users\godho\Downloads\girlswar\reports\battle\BATTLE_27_CORRECT_MAP_SCENE_HUD_PREVIEW_CLIP05_CONTACT_SHEET.jpg`
 
 ## Screen Gate
 - capture exists: `True`
-- nearWhiteRatio: `0.000278`
-- nearBlackRatio: `0.087222`
-- magentaRatio: `0.000503`
-- visiblePixelRatio: `0.898386`
+- nearWhiteRatio: `0.000265`
+- nearBlackRatio: `0.071402`
+- magentaRatio: `0.000238`
+- visiblePixelRatio: `0.91336`
 - finalCaptureHasLargeWhiteBlocks: `False`
 - finalCaptureHasMagentaMissingShader: `False`
 - debugTextExpectedVisible: `False`
@@ -23,7 +23,7 @@ This is not a final restored battle screen. It replaces the rejected debug/text-
 
 ## Restored Evidence Used
 - correctMapLayersLoaded: `True`
-- mapLayerCreatedCount: `4`
+- mapLayerCreatedCount: `10`
 - runtimeActorSlots: `12`
 - runtimeActorInstantiatedCount: `3`
 - runtimeActorEnabledRendererCount: `3`
@@ -35,10 +35,16 @@ This is not a final restored battle screen. It replaces the rejected debug/text-
 - runtimeActorAtlasTextureBoundMaterialCount: `4`
 
 ## Map Layers
-- `Map_11003_5` role `background_building_warm_lit` created `True` world `23.333x5.262078`
-- `Map_11003_3` role `upper_roof_and_far_depth` created `True` world `23.333x3.305508`
-- `Map_11003_4_2` role `middle_house_layer` created `True` world `12.4x5.119604`
-- `Map_11003_2` role `stone_floor_video_best_match` created `True` world `23.333x7.27941`
+- `11003.assetbundle` role `original_battlemap_prefab_scene_bundle` created `True` world `0x0`
+- `Map_11003_11` role `pixel_space_sky_mountain_strip_from_video_1920x1080` created `True` world `15.55556x2.231482`
+- `Map_11003_5` role `pixel_space_background_buildings_from_video_1920x1080` created `True` world `17.77778x4.009259`
+- `Map_11003_4_2` role `pixel_space_center_house_from_original_prefab_name_bg4_2` created `True` world `9.351851x3.861111`
+- `Map_11003_4_1` role `pixel_space_center_house_curtain_from_original_prefab_name_bg4_1` created `True` world `3.037037x1.064815`
+- `Map_11003_3` role `pixel_space_midground_debris_from_video_1920x1080` created `True` world `17.77778x2.518518`
+- `Map_11003_2` role `pixel_space_stone_floor_video_best_match` created `True` world `17.77778x5.546296`
+- `Map_11003_1_3` role `pixel_space_bottom_foreground_from_original_prefab_name_bg1_3` created `True` world `4.722222x1.583333`
+- `Map_11003_1_4` role `pixel_space_bottom_foreground_from_original_prefab_name_bg1_4` created `True` world `5.694445x1.37037`
+- `Map_11003_1_1` role `pixel_space_bottom_foreground_from_original_prefab_name_bg1_1` created `True` world `3.351852x1.62037`
 
 ## Actor Slots
 - `our` wave `0` slot `1` model `1036` instantiated `False` renderers `0` graphics `0` atlasLoaded `False` atlasAssign `0` atlasBound `0` reason `listed_in_cdn_versionfile_not_extracted`
