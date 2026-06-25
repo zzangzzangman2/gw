@@ -1074,3 +1074,58 @@
 - This is still not a final battle screen because actor scale/camera/timing/context does not match the video.
 - Next battle blocker:
   - `BATTLE_38_MATCH_ACTOR_SCALE_CAMERA_TIMING_AND_BATTLE_SCENE_CONTEXT_TO_CLIP05`
+
+## Update 2026-06-25 22:41 KST
+
+### Home Handoff
+
+- Stable handoff document updated:
+  - `reports\NEXT_RESTORE_HANDOFF.md`
+- Latest current wrappers now point at:
+  - MainInterface: `_restore_tools\cmd_archive\118_BIND_ROUTE_SKELETONGRAPHIC_UI_MATERIAL_SHADER_PASS_FROM_ORIGINAL_FIELDS.cmd`
+  - Battle: `_restore_tools\cmd_archive\BATTLE_38_MATCH_ACTOR_SCALE_CAMERA_TIMING_AND_BATTLE_SCENE_CONTEXT_TO_CLIP05.cmd`
+- Root command policy is preserved:
+  - root CMD count: `1`
+  - only root launcher: `00_COMMAND_CENTER.cmd`
+  - `_restore_tools` direct `.cmd` count: `0`
+
+### UI MAININTERFACE_118 Result
+
+- Visual verdict: MainInterface is still not a normal/restored UI.
+- UI118 applied evidence-backed UI `SkeletonGraphic` material/shader pass binding to route `SkeletonGraphic` targets.
+- The capture still shows the large white route diamond/panel, so this is only a partial material/pass candidate.
+- Verification:
+  - targets bound: `2 / 2`
+  - SkeletonGraphic default material evidence: `True`
+  - visible/magenta/whiteish pixels: `1201680 / 223 / 160880`
+  - click validation: `2026-06-25 22:37:21`, `24 / 24 / 0 / 24`
+- Outputs:
+  - report: `reports\maininterface\MAININTERFACE_118_BIND_ROUTE_SKELETONGRAPHIC_UI_MATERIAL_SHADER_PASS_FROM_ORIGINAL_FIELDS_RESULT.md`
+  - tool: `_restore_tools\cmd_archive\118_BIND_ROUTE_SKELETONGRAPHIC_UI_MATERIAL_SHADER_PASS_FROM_ORIGINAL_FIELDS.cmd`
+  - scene: `girlswar_maininterface_unity\Assets\Scenes\MainInterface_RouteSpineRuntimeReplay_UIMaterialBound.unity`
+  - capture: `girlswar_maininterface_unity\Assets\RestoreCaptures\maininterface_route_spine_runtime_ui_material_bound_1680x720.png`
+- Next UI blocker:
+  - `MAININTERFACE_119_VALIDATE_ROUTE_SKELETONGRAPHIC_MESH_BOUNDS_CANVASRENDERER_SUBMESH_MATERIAL`
+
+### Battle BATTLE_38 Result
+
+- Visual verdict: original clip05 actor motion/layout/timing is still not reproduced.
+- BATTLE38 used `C:\Users\godho\Downloads\플레이.mp4` clip05 `485.0-487.0s` as the motion gate.
+- Verdict: `failed_battle_scene_context_map_hud_missing`.
+- The actor runtime sequence exists, but it is still an actor-only scene without the original map/HUD context.
+- Key values:
+  - reference/runtime actor boxes: `181 / 16`
+  - actor center gap norm: `0.020345`
+  - runtime/reference actor area ratio: `0.227836`
+  - runtime map/HUD: `False / False`
+  - BATTLE29 context map layers/cards: `10 / 3`
+  - mesh hash changed actors: `3 / 3`
+  - magenta pixel ratio: `0.000387`
+- Outputs:
+  - report: `reports\battle\BATTLE_38_MATCH_ACTOR_SCALE_CAMERA_TIMING_AND_BATTLE_SCENE_CONTEXT_TO_CLIP05_RESULT.md`
+  - tool: `_restore_tools\cmd_archive\BATTLE_38_MATCH_ACTOR_SCALE_CAMERA_TIMING_AND_BATTLE_SCENE_CONTEXT_TO_CLIP05.cmd`
+  - scene: `girlswar_battle_unity\Assets\Scenes\Battle38MatchActorScaleCameraTimingAndBattleSceneContextToClip05.unity`
+  - contact sheet: `reports\battle\BATTLE_38_MATCH_ACTOR_SCALE_CAMERA_TIMING_AND_BATTLE_SCENE_CONTEXT_TO_CLIP05_CONTACT_SHEET.jpg`
+  - video sequence: `reports\battle\BATTLE_38_PLAY_VIDEO_CLIP05_485_487_SEQUENCE.jpg`
+- Next battle blocker:
+  - `BATTLE_39_ATTACH_RUNTIME_ACTORS_TO_MAP11003_HUD_CONTEXT_WITH_EVIDENCE`

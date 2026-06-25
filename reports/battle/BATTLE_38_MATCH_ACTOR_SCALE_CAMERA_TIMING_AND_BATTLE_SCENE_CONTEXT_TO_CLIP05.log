@@ -1,0 +1,587 @@
+[Licensing::Module] Trying to connect to existing licensing client channel...
+Built from '6000.4/staging' branch; Version is '6000.4.9f1 (f7258d6eebbe) revision 16197005'; Using compiler version '194234433'; Build Type 'Release'
+[Licensing::IpcConnector] Channel LicenseClient-godho doesn't exist
+OS: 'Windows 11  (10.0.26200) Professional' Language: 'ko' Physical Memory: 32022 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1
+System  architecture: x64
+Process architecture: x64
+Date: 2026-06-25T13:38:59Z
+[Licensing::Module] Successfully launched the LicensingClient (PId: 26124)
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\6000.4.9f1\Editor\Unity.exe
+-batchmode
+-quit
+-projectPath
+C:\Users\godho\Downloads\girlswar\girlswar_battle_unity
+-executeMethod
+Battle38MatchActorScaleCameraTimingAndBattleSceneContextToClip05Editor.Build
+-logFile
+C:\Users\godho\Downloads\girlswar\reports\battle\BATTLE_38_MATCH_ACTOR_SCALE_CAMERA_TIMING_AND_BATTLE_SCENE_CONTEXT_TO_CLIP05.log
+Successfully changed project path to: C:\Users\godho\Downloads\girlswar\girlswar_battle_unity
+C:/Users/godho/Downloads/girlswar/girlswar_battle_unity
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gfx=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+Player connection [25264]  Target information:
+
+Player connection [25264]  * "[IP] 10.10.1.159 [Port] 55504 [Flags] 2 [Guid] 4026606878 [EditorId] 4026606878 [Version] 1048832 [Id] WindowsEditor(7,sjpark) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor"
+
+Player connection [25264]  * "[IP] 172.26.64.1 [Port] 55504 [Flags] 2 [Guid] 4026606878 [EditorId] 4026606878 [Version] 1048832 [Id] WindowsEditor(7,sjpark) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor"
+
+Player connection [25264]  * "[IP] 100.66.239.97 [Port] 55504 [Flags] 2 [Guid] 4026606878 [EditorId] 4026606878 [Version] 1048832 [Id] WindowsEditor(7,sjpark) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor"
+
+Player connection [25264] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [25264] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Input System module state changed to: Initialized.
+[Physics::Module] Initialized fallback backend.
+[Physics::Module] Id: 0xdecafbad
+[Package Manager] Connected to IPC stream "Upm-11184" after 0.2 seconds.
+[Licensing::Module] Licensing is not yet initialized.
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-godho" at "2026-06-25T13:39:00.0058679Z"
+[Licensing::Client] Code 10 while verifying Licensing Client signature (process Id: 26124, path: "C:/Program Files/Unity/Hub/Editor/6000.4.9f1/Editor/Data/Resources/Licensing/Client/Unity.Licensing.Client.exe")
+[Licensing::Module] LicensingClient has failed validation; ignoring
+[Licensing::Client] Handshaking with LicensingClient:
+  Version:                 1.18.1+9fbee8e
+  Session Id:              f99a658624fe4b969e3eddc171ffcf6e
+  Correlation Id:          7a96207b33a4a0088577bdea0e14714f
+  External correlation Id: 5662972794283690087
+  Machine Id:              nETCb6mCOTg3uD4qHH44hI9aRsg=
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-godho" (connect: 0.37s, validation: 0.03s, handshake: 0.05s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-godho-notifications" at "2026-06-25T13:39:00.0882596Z"
+[Licensing::Module] Connected to LicensingClient (PId: 26124, launch time: 0.00, total connection time: 0.46s)
+[Licensing::Module] Error: Access token is unavailable; failed to update
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] License group:
+  Id: 14569760011564-UnityPersXXXX
+  Product: Unity Personal
+  Type: Assigned
+  Expiration: Unlimited
+[Licensing::Client] Successfully updated license, isAsync: True, time: 0.01
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] Licensing Background thread has ended after 0.48s
+[Licensing::Module] Licensing is initialized (took 0.15s).
+[Licensing::Client] Successfully resolved entitlement details
+Library Redirect Path: Library/
+[Physics::Module] Selected backend.
+[Physics::Module] Name: PhysX
+[Physics::Module] Id: 0xf2b8ea05
+[Physics::Module] SDK Version: 4.1.2
+[Physics::Module] Integration Version: 1.0.0
+[Physics::Module] Threading Mode: Multi-Threaded
+Initialize engine version: 6000.4.9f1 (f7258d6eebbe)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/6000.4.9f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/godho/Downloads/girlswar/girlswar_battle_unity/Assets
+GfxDevice: creating device client; kGfxThreadingModeNonThreaded
+d3d12: failed to query info queue interface (0x80004002).
+Direct3D:
+    Version:         Direct3D 12 [level 12.2]
+    Renderer:        Intel(R) Graphics (ID=0x7d67)
+    Vendor:          Intel
+    VRAM:            18252 MB
+    App VRAM Budget: 17484 MB
+    Driver:          32.0.101.8425
+    Unified Memory Architecture
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.4.9f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.4.9f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.4.9f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56184
+CodeReloadManager initialized
+Using cacheserver namespaces - metadata:defaultmetadata, artifacts:defaultartifacts
+Using cacheserver namespaces - metadata:defaultmetadata, artifacts:defaultartifacts
+ImportWorker Server TCP listen port: 0
+AcceleratorClientConnectionCallback - disconnected - :0
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.4.9f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.4.9f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.001954 seconds.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Package Manager log level set to [2]
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:False
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.258 seconds
+Domain Reload Profiling: 578ms
+	BeginReloadAssembly (101ms)
+		CreateAndSetChildDomain (5ms)
+	RebuildCommonClasses (26ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (46ms)
+	LoadAllAssembliesAndSetupDomain (138ms)
+		LoadAssemblies (94ms)
+		AnalyzeDomain (131ms)
+			TypeCache.Refresh (130ms)
+				TypeCache.ScanAssembly (119ms)
+	FinalizeReload (259ms)
+		SetupLoadedEditorAssemblies (0ms)
+			InitializePlatformSupportModulesInManaged (30ms)
+			BeforeProcessingInitializeOnLoad (53ms)
+			ProcessInitializeOnLoadAttributes (69ms)
+			ProcessInitializeOnLoadMethodAttributes (65ms)
+[Licensing::Client] Successfully resolved entitlement details
+Application.AssetDatabase Initial Refresh Start
+[Package Manager] Restoring resolved packages state from cache
+[Licensing::Client] Successfully resolved entitlement details
+[Package Manager] Registered 38 packages:
+  Built-in packages:
+    com.unity.ugui@2.0.0 (location: C:\Users\godho\Downloads\girlswar\girlswar_battle_unity\Library\PackageCache\com.unity.ugui@1f2d1ab0d950)
+    com.unity.multiplayer.center@1.0.1 (location: C:\Users\godho\Downloads\girlswar\girlswar_battle_unity\Library\PackageCache\com.unity.multiplayer.center@f01f4ba8d00a)
+    com.unity.modules.accessibility@1.0.0 (location: C:\Users\godho\Downloads\girlswar\girlswar_battle_unity\Library\PackageCache\com.unity.modules.accessibility)
+    com.unity.modules.adaptiveperformance@1.0.0 (location: C:\Users\godho\Downloads\girlswar\girlswar_battle_unity\Library\PackageCache\com.unity.modules.adaptiveperformance)
+    com.unity.modules.ai@1.0.0 (location: C:\Users\godho\Downloads\girlswar\girlswar_battle_unity\Library\PackageCache\com.unity.modules.ai)
+    com.unity.modules.androidjni@1.0.0 (location: C:\Users\godho\Downloads\girlswar\girlswar_battle_unity\Library\PackageCache\com.unity.modules.androidjni)
+    com.unity.modules.animation@1.0.0 (location: C:\Users\godho\Downloads\girlswar\girlswar_battle_unity\Library\PackageCache\com.unity.modules.animation)
+    com.unity.modules.assetbundle@1.0.0 (location: C:\Users\godho\Downloads\girlswar\girlswar_battle_unity\Library\PackageCache\com.unity.modules.assetbundle)
+    com.unity.modules.audio@1.0.0 (location: C:\Users\godho\Downloads\girlswar\girlswar_battle_unity\Library\PackageCache\com.unity.modules.audio)
+    com.unity.modules.cloth@1.0.0 (location: C:\Users\godho\Downloads\girlswar\girlswar_battle_unity\Library\PackageCache\com.unity.modules.cloth)
+    com.unity.modules.director@1.0.0 (location: C:\Users\godho\Downloads\girlswar\girlswar_battle_unity\Library\PackageCache\com.unity.modules.director)
+    com.unity.modules.imageconversion@1.0.0 (location: C:\Users\godho\Downloads\girlswar\girlswar_battle_unity\Library\PackageCache\com.unity.modules.imageconversion)
+    com.unity.modules.imgui@1.0.0 (location: C:\Users\godho\Downloads\girlswar\girlswar_battle_unity\Library\PackageCache\com.unity.modules.imgui)
+    com.unity.modules.jsonserialize@1.0.0 (location: C:\Users\godho\Downloads\girlswar\girlswar_battle_unity\Library\PackageCache\com.unity.modules.jsonserialize)
+    com.unity.modules.particlesystem@1.0.0 (location: C:\Users\godho\Downloads\girlswar\girlswar_battle_unity\Library\PackageCache\com.unity.modules.particlesystem)
+    com.unity.modules.physics@1.0.0 (location: C:\Users\godho\Downloads\girlswar\girlswar_battle_unity\Library\PackageCache\com.unity.modules.physics)
+    com.unity.modules.physics2d@1.0.0 (location: C:\Users\godho\Downloads\girlswar\girlswar_battle_unity\Library\PackageCache\com.unity.modules.physics2d)
+    com.unity.modules.screencapture@1.0.0 (location: C:\Users\godho\Downloads\girlswar\girlswar_battle_unity\Library\PackageCache\com.unity.modules.screencapture)
+    com.unity.modules.terrain@1.0.0 (location: C:\Users\godho\Downloads\girlswar\girlswar_battle_unity\Library\PackageCache\com.unity.modules.terrain)
+    com.unity.modules.terrainphysics@1.0.0 (location: C:\Users\godho\Downloads\girlswar\girlswar_battle_unity\Library\PackageCache\com.unity.modules.terrainphysics)
+    com.unity.modules.tilemap@1.0.0 (location: C:\Users\godho\Downloads\girlswar\girlswar_battle_unity\Library\PackageCache\com.unity.modules.tilemap)
+    com.unity.modules.ui@1.0.0 (location: C:\Users\godho\Downloads\girlswar\girlswar_battle_unity\Library\PackageCache\com.unity.modules.ui)
+    com.unity.modules.uielements@1.0.0 (location: C:\Users\godho\Downloads\girlswar\girlswar_battle_unity\Library\PackageCache\com.unity.modules.uielements)
+    com.unity.modules.umbra@1.0.0 (location: C:\Users\godho\Downloads\girlswar\girlswar_battle_unity\Library\PackageCache\com.unity.modules.umbra)
+    com.unity.modules.unityanalytics@1.0.0 (location: C:\Users\godho\Downloads\girlswar\girlswar_battle_unity\Library\PackageCache\com.unity.modules.unityanalytics)
+    com.unity.modules.unitywebrequest@1.0.0 (location: C:\Users\godho\Downloads\girlswar\girlswar_battle_unity\Library\PackageCache\com.unity.modules.unitywebrequest)
+    com.unity.modules.unitywebrequestassetbundle@1.0.0 (location: C:\Users\godho\Downloads\girlswar\girlswar_battle_unity\Library\PackageCache\com.unity.modules.unitywebrequestassetbundle)
+    com.unity.modules.unitywebrequestaudio@1.0.0 (location: C:\Users\godho\Downloads\girlswar\girlswar_battle_unity\Library\PackageCache\com.unity.modules.unitywebrequestaudio)
+    com.unity.modules.unitywebrequesttexture@1.0.0 (location: C:\Users\godho\Downloads\girlswar\girlswar_battle_unity\Library\PackageCache\com.unity.modules.unitywebrequesttexture)
+    com.unity.modules.unitywebrequestwww@1.0.0 (location: C:\Users\godho\Downloads\girlswar\girlswar_battle_unity\Library\PackageCache\com.unity.modules.unitywebrequestwww)
+    com.unity.modules.vectorgraphics@1.0.0 (location: C:\Users\godho\Downloads\girlswar\girlswar_battle_unity\Library\PackageCache\com.unity.modules.vectorgraphics)
+    com.unity.modules.vehicles@1.0.0 (location: C:\Users\godho\Downloads\girlswar\girlswar_battle_unity\Library\PackageCache\com.unity.modules.vehicles)
+    com.unity.modules.video@1.0.0 (location: C:\Users\godho\Downloads\girlswar\girlswar_battle_unity\Library\PackageCache\com.unity.modules.video)
+    com.unity.modules.vr@1.0.0 (location: C:\Users\godho\Downloads\girlswar\girlswar_battle_unity\Library\PackageCache\com.unity.modules.vr)
+    com.unity.modules.wind@1.0.0 (location: C:\Users\godho\Downloads\girlswar\girlswar_battle_unity\Library\PackageCache\com.unity.modules.wind)
+    com.unity.modules.xr@1.0.0 (location: C:\Users\godho\Downloads\girlswar\girlswar_battle_unity\Library\PackageCache\com.unity.modules.xr)
+    com.unity.modules.subsystems@1.0.0 (location: C:\Users\godho\Downloads\girlswar\girlswar_battle_unity\Library\PackageCache\com.unity.modules.subsystems)
+    com.unity.modules.hierarchycore@1.0.0 (location: C:\Users\godho\Downloads\girlswar\girlswar_battle_unity\Library\PackageCache\com.unity.modules.hierarchycore)
+[Subsystems] No new subsystems found in resolved package list.
+[Package Manager] Done registering packages in 0.01 seconds
+[ScriptCompilation] Requested script compilation because: AssetDatabase observed changes in script compilation related files
+Assembly for Assembly Definition File 'Assets/Scripts/BattleUIExternalStubs/SpineUnity/spine-unity.asmdef' will not be compiled, because it has no scripts associated with it.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:LogFormat (UnityEngine.LogType,string,object[])
+UnityEngine.Debug:LogWarningFormat (string,object[])
+UnityEditor.Scripting.ScriptCompilation.EditorCompilation:WarnIfThereAreAssembliesWithoutAnyScripts (UnityEditor.Scripting.ScriptCompilation.ScriptAssemblySettings,UnityEditor.Scripting.ScriptCompilation.ScriptAssembly[])
+UnityEditor.Scripting.ScriptCompilation.EditorCompilation:CompileScriptsWithSettings (UnityEditor.Scripting.ScriptCompilation.ScriptAssemblySettings)
+UnityEditor.Scripting.ScriptCompilation.EditorCompilation:CompileScripts (UnityEditor.Scripting.ScriptCompilation.EditorScriptCompilationOptions,UnityEditor.BuildTarget,int,string[])
+UnityEditor.Scripting.ScriptCompilation.EditorCompilationInterface/<>c__DisplayClass21_0:<CompileScripts>b__0 ()
+UnityEditor.Scripting.ScriptCompilation.EditorCompilationInterface:EmitExceptionAsError<UnityEditor.Scripting.ScriptCompilation.EditorCompilation/CompileStatus> (System.Func`1<UnityEditor.Scripting.ScriptCompilation.EditorCompilation/CompileStatus>,UnityEditor.Scripting.ScriptCompilation.EditorCompilation/CompileStatus)
+UnityEditor.Scripting.ScriptCompilation.EditorCompilationInterface:CompileScripts (UnityEditor.Scripting.ScriptCompilation.EditorScriptCompilationOptions,UnityEditor.BuildTarget,int,string[])
+
+Starting: C:\Program Files\Unity\Hub\Editor\6000.4.9f1\Editor\Data\Tools\BuildPipeline\bee_backend.exe --ipc --defer-dag-verification --dagfile="Library/Bee/1900b0aE.dag" --continue-on-failure --profile="Library/Bee/backend1.traceevents" ScriptAssemblies
+WorkingDir: C:/Users/godho/Downloads/girlswar/girlswar_battle_unity
+DisplayProgressbar: Compiling Scripts
+ExitCode: 0 Duration: 1s341ms
+[260/263    0s] Csc Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp-Editor.dll (+2 others)
+Assets\Editor\BattleHudAttachToFlowEditor.cs(216,24): warning CS0618: 'Object.FindObjectOfType<T>()' is obsolete: 'Object.FindObjectOfType has been deprecated. Use Object.FindAnyObjectByType instead.'
+
+Assets\Editor\BattleHudVisualSanityEditor.cs(95,30): warning CS0618: 'Object.FindObjectsOfType<T>(bool)' is obsolete: 'Object.FindObjectsOfType has been deprecated. Use Object.FindObjectsByType instead which lets you decide whether you need the results sorted or not.  FindObjectsOfType sorts the results by InstanceID but if you do not need this using FindObjectSortMode.None is considerably faster.'
+
+Assets\Editor\BattleHudVisualSanityEditor.cs(96,30): warning CS0618: 'Object.FindObjectsOfType<T>(bool)' is obsolete: 'Object.FindObjectsOfType has been deprecated. Use Object.FindObjectsByType instead which lets you decide whether you need the results sorted or not.  FindObjectsOfType sorts the results by InstanceID but if you do not need this using FindObjectSortMode.None is considerably faster.'
+
+Assets\Editor\BattleHudVisualSanityEditor.cs(97,31): warning CS0618: 'Object.FindObjectsOfType<T>(bool)' is obsolete: 'Object.FindObjectsOfType has been deprecated. Use Object.FindObjectsByType instead which lets you decide whether you need the results sorted or not.  FindObjectsOfType sorts the results by InstanceID but if you do not need this using FindObjectSortMode.None is considerably faster.'
+
+Assets\Editor\BattleHudSpriteFontJoinEditor.cs(173,30): warning CS0618: 'Object.FindObjectsOfType<T>(bool)' is obsolete: 'Object.FindObjectsOfType has been deprecated. Use Object.FindObjectsByType instead which lets you decide whether you need the results sorted or not.  FindObjectsOfType sorts the results by InstanceID but if you do not need this using FindObjectSortMode.None is considerably faster.'
+
+Assets\Editor\BattleHudSpriteFontJoinEditor.cs(177,29): warning CS0618: 'Object.FindObjectsOfType<T>(bool)' is obsolete: 'Object.FindObjectsOfType has been deprecated. Use Object.FindObjectsByType instead which lets you decide whether you need the results sorted or not.  FindObjectsOfType sorts the results by InstanceID but if you do not need this using FindObjectSortMode.None is considerably faster.'
+
+Assets\Editor\BattleHudSpriteFontJoinEditor.cs(223,22): warning CS0618: 'Object.FindObjectOfType<T>()' is obsolete: 'Object.FindObjectOfType has been deprecated. Use Object.FindAnyObjectByType instead.'
+
+Assets\Editor\BattleHudVisualSanityEditor.cs(184,30): warning CS0618: 'Object.FindObjectsOfType<T>(bool)' is obsolete: 'Object.FindObjectsOfType has been deprecated. Use Object.FindObjectsByType instead which lets you decide whether you need the results sorted or not.  FindObjectsOfType sorts the results by InstanceID but if you do not need this using FindObjectSortMode.None is considerably faster.'
+
+Assets\Editor\BattleHudVisualSanityEditor.cs(188,29): warning CS0618: 'Object.FindObjectsOfType<T>(bool)' is obsolete: 'Object.FindObjectsOfType has been deprecated. Use Object.FindObjectsByType instead which lets you decide whether you need the results sorted or not.  FindObjectsOfType sorts the results by InstanceID but if you do not need this using FindObjectSortMode.None is considerably faster.'
+
+Assets\Editor\BattleHudVisualSanityEditor.cs(192,34): warning CS0618: 'Object.FindObjectsOfType<T>(bool)' is obsolete: 'Object.FindObjectsOfType has been deprecated. Use Object.FindObjectsByType instead which lets you decide whether you need the results sorted or not.  FindObjectsOfType sorts the results by InstanceID but if you do not need this using FindObjectSortMode.None is considerably faster.'
+
+Assets\Editor\BattleHudVisualSanityEditor.cs(201,30): warning CS0618: 'Object.FindObjectsOfType<T>(bool)' is obsolete: 'Object.FindObjectsOfType has been deprecated. Use Object.FindObjectsByType instead which lets you decide whether you need the results sorted or not.  FindObjectsOfType sorts the results by InstanceID but if you do not need this using FindObjectSortMode.None is considerably faster.'
+
+Assets\Editor\BattleHudVisualSanityEditor.cs(205,29): warning CS0618: 'Object.FindObjectsOfType<T>(bool)' is obsolete: 'Object.FindObjectsOfType has been deprecated. Use Object.FindObjectsByType instead which lets you decide whether you need the results sorted or not.  FindObjectsOfType sorts the results by InstanceID but if you do not need this using FindObjectSortMode.None is considerably faster.'
+
+Assets\Editor\BattleHudVisualSanityEditor.cs(209,34): warning CS0618: 'Object.FindObjectsOfType<T>(bool)' is obsolete: 'Object.FindObjectsOfType has been deprecated. Use Object.FindObjectsByType instead which lets you decide whether you need the results sorted or not.  FindObjectsOfType sorts the results by InstanceID but if you do not need this using FindObjectSortMode.None is considerably faster.'
+
+Assets\Editor\BattleHudRuntimeBindingSpritePptrTraceEditor.cs(225,30): warning CS0618: 'Object.FindObjectsOfType<T>(bool)' is obsolete: 'Object.FindObjectsOfType has been deprecated. Use Object.FindObjectsByType instead which lets you decide whether you need the results sorted or not.  FindObjectsOfType sorts the results by InstanceID but if you do not need this using FindObjectSortMode.None is considerably faster.'
+
+Assets\Editor\BattleHudRuntimeBindingSpritePptrTraceEditor.cs(226,29): warning CS0618: 'Object.FindObjectsOfType<T>(bool)' is obsolete: 'Object.FindObjectsOfType has been deprecated. Use Object.FindObjectsByType instead which lets you decide whether you need the results sorted or not.  FindObjectsOfType sorts the results by InstanceID but if you do not need this using FindObjectSortMode.None is considerably faster.'
+
+Assets\Editor\BattleHudRuntimeBindingSpritePptrTraceEditor.cs(227,34): warning CS0618: 'Object.FindObjectsOfType<T>(bool)' is obsolete: 'Object.FindObjectsOfType has been deprecated. Use Object.FindObjectsByType instead which lets you decide whether you need the results sorted or not.  FindObjectsOfType sorts the results by InstanceID but if you do not need this using FindObjectSortMode.None is considerably faster.'
+
+Assets\Editor\BattleHudExternalDependencyLoadClip05Editor.cs(228,30): warning CS0618: 'Object.FindObjectsOfType<T>(bool)' is obsolete: 'Object.FindObjectsOfType has been deprecated. Use Object.FindObjectsByType instead which lets you decide whether you need the results sorted or not.  FindObjectsOfType sorts the results by InstanceID but if you do not need this using FindObjectSortMode.None is considerably faster.'
+
+Assets\Editor\BattleHudExternalDependencyLoadClip05Editor.cs(229,29): warning CS0618: 'Object.FindObjectsOfType<T>(bool)' is obsolete: 'Object.FindObjectsOfType has been deprecated. Use Object.FindObjectsByType instead which lets you decide whether you need the results sorted or not.  FindObjectsOfType sorts the results by InstanceID but if you do not need this using FindObjectSortMode.None is considerably faster.'
+
+Assets\Editor\BattleHudExternalDependencyLoadClip05Editor.cs(230,34): warning CS0618: 'Object.FindObjectsOfType<T>(bool)' is obsolete: 'Object.FindObjectsOfType has been deprecated. Use Object.FindObjectsByType instead which lets you decide whether you need the results sorted or not.  FindObjectsOfType sorts the results by InstanceID but if you do not need this using FindObjectSortMode.None is considerably faster.'
+
+Assets\Editor\BattleCorrectMapSceneHudPreviewClip05Editor.cs(404,30): warning CS0618: 'Object.FindObjectsOfType<T>(bool)' is obsolete: 'Object.FindObjectsOfType has been deprecated. Use Object.FindObjectsByType instead which lets you decide whether you need the results sorted or not.  FindObjectsOfType sorts the results by InstanceID but if you do not need this using FindObjectSortMode.None is considerably faster.'
+
+Assets\Editor\BattleCorrectMapSceneHudPreviewClip05Editor.cs(409,29): warning CS0618: 'Object.FindObjectsOfType<T>(bool)' is obsolete: 'Object.FindObjectsOfType has been deprecated. Use Object.FindObjectsByType instead which lets you decide whether you need the results sorted or not.  FindObjectsOfType sorts the results by InstanceID but if you do not need this using FindObjectSortMode.None is considerably faster.'
+
+Assets\Editor\BattleCorrectMapSceneHudPreviewClip05Editor.cs(414,34): warning CS0618: 'Object.FindObjectsOfType<T>(bool)' is obsolete: 'Object.FindObjectsOfType has been deprecated. Use Object.FindObjectsByType instead which lets you decide whether you need the results sorted or not.  FindObjectsOfType sorts the results by InstanceID but if you do not need this using FindObjectSortMode.None is considerably faster.'
+
+Assets\Editor\BattleHudVisualSanityEditor.cs(279,28): warning CS0618: 'Object.FindObjectsOfType<T>(bool)' is obsolete: 'Object.FindObjectsOfType has been deprecated. Use Object.FindObjectsByType instead which lets you decide whether you need the results sorted or not.  FindObjectsOfType sorts the results by InstanceID but if you do not need this using FindObjectSortMode.None is considerably faster.'
+
+Assets\Editor\BattleHudCanvasScalerSpriteTextureLuaStateClip05Editor.cs(313,55): warning CS0618: 'Object.GetInstanceID()' is obsolete: 'GetInstanceID is deprecated. Use GetEntityId instead. This will be removed in a future version.'
+
+Assets\Editor\BattleHudCanvasScalerSpriteTextureLuaStateClip05Editor.cs(324,30): warning CS0618: 'Object.FindObjectsOfType<T>(bool)' is obsolete: 'Object.FindObjectsOfType has been deprecated. Use Object.FindObjectsByType instead which lets you decide whether you need the results sorted or not.  FindObjectsOfType sorts the results by InstanceID but if you do not need this using FindObjectSortMode.None is considerably faster.'
+
+Assets\Editor\BattleHudCanvasScalerSpriteTextureLuaStateClip05Editor.cs(325,29): warning CS0618: 'Object.FindObjectsOfType<T>(bool)' is obsolete: 'Object.FindObjectsOfType has been deprecated. Use Object.FindObjectsByType instead which lets you decide whether you need the results sorted or not.  FindObjectsOfType sorts the results by InstanceID but if you do not need this using FindObjectSortMode.None is considerably faster.'
+
+Assets\Editor\BattleHudCanvasScalerSpriteTextureLuaStateClip05Editor.cs(326,34): warning CS0618: 'Object.FindObjectsOfType<T>(bool)' is obsolete: 'Object.FindObjectsOfType has been deprecated. Use Object.FindObjectsByType instead which lets you decide whether you need the results sorted or not.  FindObjectsOfType sorts the results by InstanceID but if you do not need this using FindObjectSortMode.None is considerably faster.'
+
+Assets\Editor\BattleHudSpriteAtlasTextureRuntimeBindingClip05Editor.cs(437,55): warning CS0618: 'Object.GetInstanceID()' is obsolete: 'GetInstanceID is deprecated. Use GetEntityId instead. This will be removed in a future version.'
+
+Assets\Editor\BattleHudSpriteAtlasTextureRuntimeBindingClip05Editor.cs(458,30): warning CS0618: 'Object.FindObjectsOfType<T>(bool)' is obsolete: 'Object.FindObjectsOfType has been deprecated. Use Object.FindObjectsByType instead which lets you decide whether you need the results sorted or not.  FindObjectsOfType sorts the results by InstanceID but if you do not need this using FindObjectSortMode.None is considerably faster.'
+
+Assets\Editor\BattleHudSpriteAtlasTextureRuntimeBindingClip05Editor.cs(459,29): warning CS0618: 'Object.FindObjectsOfType<T>(bool)' is obsolete: 'Object.FindObjectsOfType has been deprecated. Use Object.FindObjectsByType instead which lets you decide whether you need the results sorted or not.  FindObjectsOfType sorts the results by InstanceID but if you do not need this using FindObjectSortMode.None is considerably faster.'
+
+Assets\Editor\BattleHudSpriteAtlasTextureRuntimeBindingClip05Editor.cs(460,34): warning CS0618: 'Object.FindObjectsOfType<T>(bool)' is obsolete: 'Object.FindObjectsOfType has been deprecated. Use Object.FindObjectsByType instead which lets you decide whether you need the results sorted or not.  FindObjectsOfType sorts the results by InstanceID but if you do not need this using FindObjectSortMode.None is considerably faster.'
+
+Assets\Editor\BattleUIComponentTypeReconstructionEditor.cs(164,22): warning CS0618: 'Object.FindObjectOfType<T>()' is obsolete: 'Object.FindObjectOfType has been deprecated. Use Object.FindAnyObjectByType instead.'
+[261/263    0s] CopyFiles Library/ScriptAssemblies/Assembly-CSharp-Editor.pdb
+[262/263    0s] CopyFiles Library/ScriptAssemblies/Assembly-CSharp-Editor.dll
+*** Tundra build success (1.32 seconds), 3 items updated, 263 evaluated
+Assets\Editor\BattleHudAttachToFlowEditor.cs(216,24): warning CS0618: 'Object.FindObjectOfType<T>()' is obsolete: 'Object.FindObjectOfType has been deprecated. Use Object.FindAnyObjectByType instead.'
+Assets\Editor\BattleHudVisualSanityEditor.cs(95,30): warning CS0618: 'Object.FindObjectsOfType<T>(bool)' is obsolete: 'Object.FindObjectsOfType has been deprecated. Use Object.FindObjectsByType instead which lets you decide whether you need the results sorted or not.  FindObjectsOfType sorts the results by InstanceID but if you do not need this using FindObjectSortMode.None is considerably faster.'
+Assets\Editor\BattleHudVisualSanityEditor.cs(96,30): warning CS0618: 'Object.FindObjectsOfType<T>(bool)' is obsolete: 'Object.FindObjectsOfType has been deprecated. Use Object.FindObjectsByType instead which lets you decide whether you need the results sorted or not.  FindObjectsOfType sorts the results by InstanceID but if you do not need this using FindObjectSortMode.None is considerably faster.'
+Assets\Editor\BattleHudVisualSanityEditor.cs(97,31): warning CS0618: 'Object.FindObjectsOfType<T>(bool)' is obsolete: 'Object.FindObjectsOfType has been deprecated. Use Object.FindObjectsByType instead which lets you decide whether you need the results sorted or not.  FindObjectsOfType sorts the results by InstanceID but if you do not need this using FindObjectSortMode.None is considerably faster.'
+Assets\Editor\BattleHudSpriteFontJoinEditor.cs(173,30): warning CS0618: 'Object.FindObjectsOfType<T>(bool)' is obsolete: 'Object.FindObjectsOfType has been deprecated. Use Object.FindObjectsByType instead which lets you decide whether you need the results sorted or not.  FindObjectsOfType sorts the results by InstanceID but if you do not need this using FindObjectSortMode.None is considerably faster.'
+Assets\Editor\BattleHudSpriteFontJoinEditor.cs(177,29): warning CS0618: 'Object.FindObjectsOfType<T>(bool)' is obsolete: 'Object.FindObjectsOfType has been deprecated. Use Object.FindObjectsByType instead which lets you decide whether you need the results sorted or not.  FindObjectsOfType sorts the results by InstanceID but if you do not need this using FindObjectSortMode.None is considerably faster.'
+Assets\Editor\BattleHudSpriteFontJoinEditor.cs(223,22): warning CS0618: 'Object.FindObjectOfType<T>()' is obsolete: 'Object.FindObjectOfType has been deprecated. Use Object.FindAnyObjectByType instead.'
+Assets\Editor\BattleHudVisualSanityEditor.cs(184,30): warning CS0618: 'Object.FindObjectsOfType<T>(bool)' is obsolete: 'Object.FindObjectsOfType has been deprecated. Use Object.FindObjectsByType instead which lets you decide whether you need the results sorted or not.  FindObjectsOfType sorts the results by InstanceID but if you do not need this using FindObjectSortMode.None is considerably faster.'
+Assets\Editor\BattleHudVisualSanityEditor.cs(188,29): warning CS0618: 'Object.FindObjectsOfType<T>(bool)' is obsolete: 'Object.FindObjectsOfType has been deprecated. Use Object.FindObjectsByType instead which lets you decide whether you need the results sorted or not.  FindObjectsOfType sorts the results by InstanceID but if you do not need this using FindObjectSortMode.None is considerably faster.'
+Assets\Editor\BattleHudVisualSanityEditor.cs(192,34): warning CS0618: 'Object.FindObjectsOfType<T>(bool)' is obsolete: 'Object.FindObjectsOfType has been deprecated. Use Object.FindObjectsByType instead which lets you decide whether you need the results sorted or not.  FindObjectsOfType sorts the results by InstanceID but if you do not need this using FindObjectSortMode.None is considerably faster.'
+Assets\Editor\BattleHudVisualSanityEditor.cs(201,30): warning CS0618: 'Object.FindObjectsOfType<T>(bool)' is obsolete: 'Object.FindObjectsOfType has been deprecated. Use Object.FindObjectsByType instead which lets you decide whether you need the results sorted or not.  FindObjectsOfType sorts the results by InstanceID but if you do not need this using FindObjectSortMode.None is considerably faster.'
+Assets\Editor\BattleHudVisualSanityEditor.cs(205,29): warning CS0618: 'Object.FindObjectsOfType<T>(bool)' is obsolete: 'Object.FindObjectsOfType has been deprecated. Use Object.FindObjectsByType instead which lets you decide whether you need the results sorted or not.  FindObjectsOfType sorts the results by InstanceID but if you do not need this using FindObjectSortMode.None is considerably faster.'
+Assets\Editor\BattleHudVisualSanityEditor.cs(209,34): warning CS0618: 'Object.FindObjectsOfType<T>(bool)' is obsolete: 'Object.FindObjectsOfType has been deprecated. Use Object.FindObjectsByType instead which lets you decide whether you need the results sorted or not.  FindObjectsOfType sorts the results by InstanceID but if you do not need this using FindObjectSortMode.None is considerably faster.'
+Assets\Editor\BattleHudRuntimeBindingSpritePptrTraceEditor.cs(225,30): warning CS0618: 'Object.FindObjectsOfType<T>(bool)' is obsolete: 'Object.FindObjectsOfType has been deprecated. Use Object.FindObjectsByType instead which lets you decide whether you need the results sorted or not.  FindObjectsOfType sorts the results by InstanceID but if you do not need this using FindObjectSortMode.None is considerably faster.'
+Assets\Editor\BattleHudRuntimeBindingSpritePptrTraceEditor.cs(226,29): warning CS0618: 'Object.FindObjectsOfType<T>(bool)' is obsolete: 'Object.FindObjectsOfType has been deprecated. Use Object.FindObjectsByType instead which lets you decide whether you need the results sorted or not.  FindObjectsOfType sorts the results by InstanceID but if you do not need this using FindObjectSortMode.None is considerably faster.'
+Assets\Editor\BattleHudRuntimeBindingSpritePptrTraceEditor.cs(227,34): warning CS0618: 'Object.FindObjectsOfType<T>(bool)' is obsolete: 'Object.FindObjectsOfType has been deprecated. Use Object.FindObjectsByType instead which lets you decide whether you need the results sorted or not.  FindObjectsOfType sorts the results by InstanceID but if you do not need this using FindObjectSortMode.None is considerably faster.'
+Assets\Editor\BattleHudExternalDependencyLoadClip05Editor.cs(228,30): warning CS0618: 'Object.FindObjectsOfType<T>(bool)' is obsolete: 'Object.FindObjectsOfType has been deprecated. Use Object.FindObjectsByType instead which lets you decide whether you need the results sorted or not.  FindObjectsOfType sorts the results by InstanceID but if you do not need this using FindObjectSortMode.None is considerably faster.'
+Assets\Editor\BattleHudExternalDependencyLoadClip05Editor.cs(229,29): warning CS0618: 'Object.FindObjectsOfType<T>(bool)' is obsolete: 'Object.FindObjectsOfType has been deprecated. Use Object.FindObjectsByType instead which lets you decide whether you need the results sorted or not.  FindObjectsOfType sorts the results by InstanceID but if you do not need this using FindObjectSortMode.None is considerably faster.'
+Assets\Editor\BattleHudExternalDependencyLoadClip05Editor.cs(230,34): warning CS0618: 'Object.FindObjectsOfType<T>(bool)' is obsolete: 'Object.FindObjectsOfType has been deprecated. Use Object.FindObjectsByType instead which lets you decide whether you need the results sorted or not.  FindObjectsOfType sorts the results by InstanceID but if you do not need this using FindObjectSortMode.None is considerably faster.'
+Assets\Editor\BattleCorrectMapSceneHudPreviewClip05Editor.cs(404,30): warning CS0618: 'Object.FindObjectsOfType<T>(bool)' is obsolete: 'Object.FindObjectsOfType has been deprecated. Use Object.FindObjectsByType instead which lets you decide whether you need the results sorted or not.  FindObjectsOfType sorts the results by InstanceID but if you do not need this using FindObjectSortMode.None is considerably faster.'
+Assets\Editor\BattleCorrectMapSceneHudPreviewClip05Editor.cs(409,29): warning CS0618: 'Object.FindObjectsOfType<T>(bool)' is obsolete: 'Object.FindObjectsOfType has been deprecated. Use Object.FindObjectsByType instead which lets you decide whether you need the results sorted or not.  FindObjectsOfType sorts the results by InstanceID but if you do not need this using FindObjectSortMode.None is considerably faster.'
+Assets\Editor\BattleCorrectMapSceneHudPreviewClip05Editor.cs(414,34): warning CS0618: 'Object.FindObjectsOfType<T>(bool)' is obsolete: 'Object.FindObjectsOfType has been deprecated. Use Object.FindObjectsByType instead which lets you decide whether you need the results sorted or not.  FindObjectsOfType sorts the results by InstanceID but if you do not need this using FindObjectSortMode.None is considerably faster.'
+Assets\Editor\BattleHudVisualSanityEditor.cs(279,28): warning CS0618: 'Object.FindObjectsOfType<T>(bool)' is obsolete: 'Object.FindObjectsOfType has been deprecated. Use Object.FindObjectsByType instead which lets you decide whether you need the results sorted or not.  FindObjectsOfType sorts the results by InstanceID but if you do not need this using FindObjectSortMode.None is considerably faster.'
+Assets\Editor\BattleHudCanvasScalerSpriteTextureLuaStateClip05Editor.cs(313,55): warning CS0618: 'Object.GetInstanceID()' is obsolete: 'GetInstanceID is deprecated. Use GetEntityId instead. This will be removed in a future version.'
+Assets\Editor\BattleHudCanvasScalerSpriteTextureLuaStateClip05Editor.cs(324,30): warning CS0618: 'Object.FindObjectsOfType<T>(bool)' is obsolete: 'Object.FindObjectsOfType has been deprecated. Use Object.FindObjectsByType instead which lets you decide whether you need the results sorted or not.  FindObjectsOfType sorts the results by InstanceID but if you do not need this using FindObjectSortMode.None is considerably faster.'
+Assets\Editor\BattleHudCanvasScalerSpriteTextureLuaStateClip05Editor.cs(325,29): warning CS0618: 'Object.FindObjectsOfType<T>(bool)' is obsolete: 'Object.FindObjectsOfType has been deprecated. Use Object.FindObjectsByType instead which lets you decide whether you need the results sorted or not.  FindObjectsOfType sorts the results by InstanceID but if you do not need this using FindObjectSortMode.None is considerably faster.'
+Assets\Editor\BattleHudCanvasScalerSpriteTextureLuaStateClip05Editor.cs(326,34): warning CS0618: 'Object.FindObjectsOfType<T>(bool)' is obsolete: 'Object.FindObjectsOfType has been deprecated. Use Object.FindObjectsByType instead which lets you decide whether you need the results sorted or not.  FindObjectsOfType sorts the results by InstanceID but if you do not need this using FindObjectSortMode.None is considerably faster.'
+Assets\Editor\BattleHudSpriteAtlasTextureRuntimeBindingClip05Editor.cs(437,55): warning CS0618: 'Object.GetInstanceID()' is obsolete: 'GetInstanceID is deprecated. Use GetEntityId instead. This will be removed in a future version.'
+Assets\Editor\BattleHudSpriteAtlasTextureRuntimeBindingClip05Editor.cs(458,30): warning CS0618: 'Object.FindObjectsOfType<T>(bool)' is obsolete: 'Object.FindObjectsOfType has been deprecated. Use Object.FindObjectsByType instead which lets you decide whether you need the results sorted or not.  FindObjectsOfType sorts the results by InstanceID but if you do not need this using FindObjectSortMode.None is considerably faster.'
+Assets\Editor\BattleHudSpriteAtlasTextureRuntimeBindingClip05Editor.cs(459,29): warning CS0618: 'Object.FindObjectsOfType<T>(bool)' is obsolete: 'Object.FindObjectsOfType has been deprecated. Use Object.FindObjectsByType instead which lets you decide whether you need the results sorted or not.  FindObjectsOfType sorts the results by InstanceID but if you do not need this using FindObjectSortMode.None is considerably faster.'
+Assets\Editor\BattleHudSpriteAtlasTextureRuntimeBindingClip05Editor.cs(460,34): warning CS0618: 'Object.FindObjectsOfType<T>(bool)' is obsolete: 'Object.FindObjectsOfType has been deprecated. Use Object.FindObjectsByType instead which lets you decide whether you need the results sorted or not.  FindObjectsOfType sorts the results by InstanceID but if you do not need this using FindObjectSortMode.None is considerably faster.'
+Assets\Editor\BattleUIComponentTypeReconstructionEditor.cs(164,22): warning CS0618: 'Object.FindObjectOfType<T>()' is obsolete: 'Object.FindObjectOfType has been deprecated. Use Object.FindAnyObjectByType instead.'
+AssetDatabase: script compilation time: 1.631329s
+Begin MonoManager ReloadAssembly
+Assembly Assembly-CSharp-Editor-firstpass.dll at Library/ScriptAssemblies/Assembly-CSharp-Editor-firstpass.dll not valid. Loading of assembly skipped.
+Assembly girlswar-spine-proxy-disabled.dll at Library/ScriptAssemblies/girlswar-spine-proxy-disabled.dll not valid. Loading of assembly skipped.
+Assembly Unity.Multiplayer.Center.Editor.Tests.dll at Library/ScriptAssemblies/Unity.Multiplayer.Center.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Multiplayer.Center.Tests.dll at Library/ScriptAssemblies/Unity.Multiplayer.Center.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.TextMeshPro.Editor.Tests.dll at Library/ScriptAssemblies/Unity.TextMeshPro.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.TextMeshPro.Tests.dll at Library/ScriptAssemblies/Unity.TextMeshPro.Tests.dll not valid. Loading of assembly skipped.
+Assembly UnityEditor.UI.Common.Tests.dll at Library/ScriptAssemblies/UnityEditor.UI.Common.Tests.dll not valid. Loading of assembly skipped.
+Assembly UnityEditor.UI.EditorTests.dll at Library/ScriptAssemblies/UnityEditor.UI.EditorTests.dll not valid. Loading of assembly skipped.
+Assembly UnityEngine.UI.Tests.dll at Library/ScriptAssemblies/UnityEngine.UI.Tests.dll not valid. Loading of assembly skipped.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+ScheduleIndexationOnStartup MainProcess:True IndexOnStartup:True
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.287 seconds
+Domain Reload Profiling: 641ms
+	BeginReloadAssembly (270ms)
+		DisableScriptedObjects (17ms)
+		CreateAndSetChildDomain (146ms)
+	RebuildCommonClasses (23ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (29ms)
+	LoadAllAssembliesAndSetupDomain (23ms)
+		LoadAssemblies (82ms)
+		AnalyzeDomain (15ms)
+			TypeCache.Refresh (9ms)
+				TypeCache.ScanAssembly (5ms)
+			BuildScriptInfoCaches (3ms)
+	FinalizeReload (288ms)
+		SetupLoadedEditorAssemblies (0ms)
+			InitializePlatformSupportModulesInManaged (17ms)
+			BeforeProcessingInitializeOnLoad (75ms)
+			ProcessInitializeOnLoadAttributes (54ms)
+			ProcessInitializeOnLoadMethodAttributes (29ms)
+			AfterProcessingInitializeOnLoad (6ms)
+		AwakeInstancesAfterBackupRestoration (19ms)
+Start importing Assets/Scenes/BattleCorrectMapSceneHudPreviewClip05.unity using Guid(185ce4ee6a7fc404a9c8decae7a9b37e) (DefaultImporter) -> (Import Result ID: '7fd05b6479b231f2979fcd385df87c8e') in 0.0056188 seconds [static dependencies only]. Details - ImportResultOutputID=1a9b609b1acf867f6d851d2882531cfa DependenciesID=d289e1ffca8ad2cc35cedad81ca21358 StaticDependenciesID=fed6d34469f0108a9c885f99f104d79b
+Start importing Assets/Scenes/Battle37BindOriginalSpineShaderVariantsAndMaterialPasses.unity using Guid(f8c65954919a2c147af9898bd17e1a30) (DefaultImporter) -> (Import Result ID: '895aa5b246a47172351f00182876d00a') in 0.0006995 seconds [static dependencies only]. Details - ImportResultOutputID=567b9ad74ce79eeb8dfd495b0bfa463c DependenciesID=31635a42701a561d07c4347193679901 StaticDependenciesID=f1b92efa431116ad0210903e3210b97f
+Start importing Assets/Scenes/BattleHeroListSkillCardBindClip05.unity using Guid(3e9aa63cde8d9a84283a0658a195b3ef) (DefaultImporter) -> (Import Result ID: 'f14b83ea4522f47eb0fe8232cb53bc24') in 0.0004498 seconds [static dependencies only]. Details - ImportResultOutputID=331e715f7ef73e2dbd8d96f3d6ffd5f7 DependenciesID=f7669c00ae37817161bba151d0d80c30 StaticDependenciesID=7b69acf07ca399dd58bdaf53ab86003d
+Start importing Assets/RestoreCaptures/battle_actor/Battle37BindOriginalSpineShaderVariantsAndMaterialPasses_1920x1080.png using Guid(a17407e7368dbeb41875b682d9b4ce6a) (TextureImporter) -> (Import Result ID: '5afbaf2559acb10d7f02448b38cfd90a') in 0.0346219 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=6b492a9a4f8874057dac1211645f2953 DependenciesID=204dfd14db63df44dbecdad9fd551042 StaticDependenciesID=9cd515e32f5d25381cf46f90beac2420
+Start importing Assets/RestoreData/battle/BATTLE_37_BIND_ORIGINAL_SPINE_SHADER_VARIANTS_AND_MATERIAL_PASSES.json using Guid(8278e8bc8f1afbd42b86a7f52c695b07) (TextScriptImporter) -> (Import Result ID: '7d1df766f4f306da5a8495b429800f29') in 0.0107019 seconds [static dependencies only]. Details - ImportResultOutputID=380aa29bcd850b57e45f742edb0a0ecc DependenciesID=8b883127a9cd92839e01d365bd09f930 StaticDependenciesID=60961e2d7892b5a29fc4cff33826085e
+Start importing Assets/RestoreData/battle/BATTLE_38_MATCH_ACTOR_SCALE_CAMERA_TIMING_AND_BATTLE_SCENE_CONTEXT_TO_CLIP05_COMPARISON.csv using Guid(43196e303b57be7468e465953212782b) (TextScriptImporter) -> (Import Result ID: '037433fbbf367293746e320b5297087f') in 0.0023625 seconds [static dependencies only]. Details - ImportResultOutputID=c4362c6cff540a366d97d80c33ce7d9b DependenciesID=4b4b410eb43a0c2f7c3508b9d30e72bd StaticDependenciesID=64183b442f78cb5c412a2c868c96118a
+Start importing Assets/RestoreData/battle/BATTLE_38_MATCH_ACTOR_SCALE_CAMERA_TIMING_AND_BATTLE_SCENE_CONTEXT_TO_CLIP05.json using Guid(741d991f433437f4fb854ea198e10595) (TextScriptImporter) -> (Import Result ID: '3493195989912077db81150b968c5e4a') in 0.0023601 seconds [static dependencies only]. Details - ImportResultOutputID=d0b64b2a7a16da3b661d5faceb1d4ff3 DependenciesID=58a91f0c9a4a68a45219b37281922e4f StaticDependenciesID=cda2c361f967f3093951e6e16c7f5e36
+Start importing Assets/RestoreData/battle/BATTLE_37_BIND_ORIGINAL_SPINE_SHADER_VARIANTS_AND_MATERIAL_PASSES_UNITY.json using Guid(94d54e678c71122419990165051084a2) (TextScriptImporter) -> (Import Result ID: '31a2093b1492e2bacd1daece92f08886') in 0.0017415 seconds [static dependencies only]. Details - ImportResultOutputID=d6b3580b4a7c2b03b18576a44c2b049c DependenciesID=dff5e478da9c474f4d6c494495182427 StaticDependenciesID=d45c971388179f561974b8645430386f
+Start importing Assets/RestoreData/battle/BATTLE_37_BIND_ORIGINAL_SPINE_SHADER_VARIANTS_AND_MATERIAL_PASSES_COMPONENTS.csv using Guid(f961627ab48767d4a8053da959263b3f) (TextScriptImporter) -> (Import Result ID: '8fc13ff23fb5d8f15287504446c1ec6b') in 0.0013127 seconds [static dependencies only]. Details - ImportResultOutputID=2d47a66717dcaf4fb2c5958663a67fce DependenciesID=169447cc59d6cd2d78c56be0565e20a9 StaticDependenciesID=d08064619c6730a0a54f1e898cf7ae3e
+Start importing Assets/RestoreData/battle/BATTLE_37_BIND_ORIGINAL_SPINE_SHADER_VARIANTS_AND_MATERIAL_PASSES_MATERIALS.csv using Guid(4ac221b0ac9ae7c4ca82c65a7b7c208f) (TextScriptImporter) -> (Import Result ID: '816f0779a7ee9b34d939b24914a8ba67') in 0.0048217 seconds [static dependencies only]. Details - ImportResultOutputID=04760a0bc6d1bac3ead244ec67085229 DependenciesID=14c2e49b58e1fb69c229b2ad395116ec StaticDependenciesID=354eb8a706725465fe564aa2596a8e15
+(Values over 0.050ms)
+Asset Pipeline Refresh (id=cf0f0da9d92147f49b948d657a21219d): Total: 2.523 seconds - Initiated by InitialRefreshV2(ForceSynchronousImport)
+	Summary:
+		Imports: total=10 (actual=10, local cache=0, cache server=0)
+		Asset DB Process Time: managed=2 ms, native=468 ms
+		Asset DB Callback time: managed=40 ms, native=13 ms
+		Scripting: domain reloads=1, domain reload time=356 ms, compile time=1633 ms, other=9 ms
+		Project Asset Count: scripts=260, non-scripts=344
+		Asset File Changes: new=2, changed=3, moved=0, deleted=0
+		Scan Filter Count: 0
+	InvokePackagesCallback: 13.753ms
+	ApplyChangesToAssetFolders: 0.549ms
+	Scan: 36.558ms
+	OnSourceAssetsModified: 0.510ms
+	CategorizeScriptCompilationAssets: 1.015ms
+	ProcessAssetsWithTransientArtifactChanges: 5.404ms
+	CategorizeAssets: 2.474ms
+	CompileScripts: 1632.604ms
+	ImportOutOfDateAssets: 357.327ms (288.889ms without children)
+		ImportManagerImport: 68.150ms (0.813ms without children)
+			UpdateCategorizedAssets: 0.057ms
+		UnloadImportedAssets: 0.084ms
+		EnsureUptoDateAssetsAreRegisteredWithGuidPM: 0.056ms
+		OnDemandSchedulerStart: 0.139ms
+	PostProcessAllAssets: 40.308ms
+		MonoPostProcessAllAssets: 39.561ms
+			AssetPostprocessor.OnPostprocessAllAssets 11.612ms
+			StyleCatalogPostProcessor.OnPostprocessAllAssets 7.359ms
+			WindowAssetPostprocessingWatcher.OnPostprocessAllAssets 5.172ms
+			BuilderAssetPostprocessor.OnPostprocessAllAssets 3.913ms
+			TextAssetPostProcessor.OnPostprocessAllAssets 1.137ms
+			AssetChangedListener.OnPostprocessAllAssets 1.102ms
+			SyncVS.PostprocessSyncProject 0.915ms
+			RetainedModeAssetPostprocessor.OnPostprocessAllAssets 0.779ms
+			SpeedTree9Postprocessor.OnPostprocessAllAssets 0.505ms
+			ArtifactBrowserPostProcessor.OnPostprocessAllAssets 0.340ms
+			TMPro_TexturePostProcessor.OnPostprocessAllAssets 0.295ms
+			ReferencedClipsPostProcessor.OnPostprocessAllAssets 0.221ms
+			AudioMixerPostprocessor.OnPostprocessAllAssets 0.162ms
+			TerrainToolbarOverlayPostProcessor.OnPostprocessAllAssets 0.140ms
+			AssetEvents.OnPostprocessAllAssets 0.130ms
+			SpeedTreePostProcessor.OnPostprocessAllAssets 0.108ms
+			AssetDatabaseCallbacks.OnPostprocessAllAssets 0.096ms
+			ConfigAssetsTracker.OnPostprocessAllAssets 0.074ms
+			ScenarioDriftAssetsTracker.OnPostprocessAllAssets 0.072ms
+			RenderPipelineGlobalSettingsPostprocessor.OnPostprocessAllAssets 0.065ms
+	PostAssetChangesProfiler: 0.592ms
+	UnloadStreamsBegin: 1.055ms
+	PersistCurrentRevisions: 0.108ms
+	GenerateScriptTypeHashes: 0.170ms
+	GenerateScriptTypeSerializationHashes: 0.369ms
+	Untracked: 422.646ms
+
+Application.AssetDatabase Initial Refresh End
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.01 seconds
+Scanning for USB devices : 2.702ms
+Initializing Unity extensions:
+[MODES] ModeService[none].Initialize
+[MODES] ModeService[none].LoadModes
+[MODES] Loading mode Default (0) for mode-current-id-girlswar_battle_unity
+Unloading 45 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 604 unused Assets / (5.5 MB). Loaded Objects now: 1202.
+Memory consumption went from 115.2 MB to 109.8 MB.
+Total: 5.128000 ms (FindLiveObjects: 0.087100 ms CreateObjectMapping: 0.024100 ms MarkObjects: 2.950900 ms  DeleteObjects: 2.064100 ms)
+
+Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 0 unused Assets / (0 B). Loaded Objects now: 1202.
+Memory consumption went from 109.6 MB to 109.6 MB.
+Total: 2.862800 ms (FindLiveObjects: 0.047000 ms CreateObjectMapping: 0.008600 ms MarkObjects: 2.804100 ms  DeleteObjects: 0.002400 ms)
+
+Shader 'Spine/Outline/Sprite/Pixel Lit': fallback shader 'Spine/Sprite/Pixel Lit' not found
+Shader 'Spine/Outline/Sprite/Pixel Lit': fallback shader 'Spine/Sprite/Pixel Lit' not found
+WARNING: Shader Unsupported: 'Spine/Outline/Sprite/Pixel Lit' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+Shader 'Spine/Outline/Sprite/Unlit': fallback shader 'Spine/Sprite/Unlit' not found
+Shader 'Spine/Outline/Sprite/Unlit': fallback shader 'Spine/Sprite/Unlit' not found
+WARNING: Shader Unsupported: 'Spine/Outline/Sprite/Unlit' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+Shader 'Spine/Outline/Sprite/Vertex Lit': fallback shader 'Spine/Sprite/Vertex Lit' not found
+Shader 'Spine/Outline/Sprite/Vertex Lit': fallback shader 'Spine/Sprite/Vertex Lit' not found
+WARNING: Shader Unsupported: 'Spine/Outline/Sprite/Vertex Lit' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+Start importing Assets/Scenes/Battle38MatchActorScaleCameraTimingAndBattleSceneContextToClip05.unity using Guid(6361475349fc63e4aaddb6cfc889461f) (DefaultImporter) -> (Import Result ID: '6204100468f295daeca1800543317d7f') in 0.0037807 seconds [static dependencies only]. Details - ImportResultOutputID=d368895fe3db940df15bce5ecda17e07 DependenciesID=19ed3b5b0890020a2e50e540ea92892e StaticDependenciesID=51eb35b3d9152d7a0b2205523bad60b3
+Could not extract GUID in text file Assets/Scenes/Battle38MatchActorScaleCameraTimingAndBattleSceneContextToClip05.unity at line 165.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:SaveSceneInternal (UnityEngine.SceneManagement.Scene,string,bool)
+UnityEditor.SceneManagement.EditorSceneManager:SaveScene (UnityEngine.SceneManagement.Scene,string,bool)
+UnityEditor.SceneManagement.EditorSceneManager:SaveScene (UnityEngine.SceneManagement.Scene,string)
+Battle38MatchActorScaleCameraTimingAndBattleSceneContextToClip05Editor:Build () (at Assets/Editor/Battle38MatchActorScaleCameraTimingAndBattleSceneContextToClip05Editor.cs:69)
+
+[Assets/Editor/Battle38MatchActorScaleCameraTimingAndBattleSceneContextToClip05Editor.cs line 69]
+
+Could not extract GUID in text file Assets/Scenes/Battle38MatchActorScaleCameraTimingAndBattleSceneContextToClip05.unity at line 168.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:SaveSceneInternal (UnityEngine.SceneManagement.Scene,string,bool)
+UnityEditor.SceneManagement.EditorSceneManager:SaveScene (UnityEngine.SceneManagement.Scene,string,bool)
+UnityEditor.SceneManagement.EditorSceneManager:SaveScene (UnityEngine.SceneManagement.Scene,string)
+Battle38MatchActorScaleCameraTimingAndBattleSceneContextToClip05Editor:Build () (at Assets/Editor/Battle38MatchActorScaleCameraTimingAndBattleSceneContextToClip05Editor.cs:69)
+
+[Assets/Editor/Battle38MatchActorScaleCameraTimingAndBattleSceneContextToClip05Editor.cs line 69]
+
+Could not extract GUID in text file Assets/Scenes/Battle38MatchActorScaleCameraTimingAndBattleSceneContextToClip05.unity at line 219.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:SaveSceneInternal (UnityEngine.SceneManagement.Scene,string,bool)
+UnityEditor.SceneManagement.EditorSceneManager:SaveScene (UnityEngine.SceneManagement.Scene,string,bool)
+UnityEditor.SceneManagement.EditorSceneManager:SaveScene (UnityEngine.SceneManagement.Scene,string)
+Battle38MatchActorScaleCameraTimingAndBattleSceneContextToClip05Editor:Build () (at Assets/Editor/Battle38MatchActorScaleCameraTimingAndBattleSceneContextToClip05Editor.cs:69)
+
+[Assets/Editor/Battle38MatchActorScaleCameraTimingAndBattleSceneContextToClip05Editor.cs line 69]
+
+Could not extract GUID in text file Assets/Scenes/Battle38MatchActorScaleCameraTimingAndBattleSceneContextToClip05.unity at line 220.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:SaveSceneInternal (UnityEngine.SceneManagement.Scene,string,bool)
+UnityEditor.SceneManagement.EditorSceneManager:SaveScene (UnityEngine.SceneManagement.Scene,string,bool)
+UnityEditor.SceneManagement.EditorSceneManager:SaveScene (UnityEngine.SceneManagement.Scene,string)
+Battle38MatchActorScaleCameraTimingAndBattleSceneContextToClip05Editor:Build () (at Assets/Editor/Battle38MatchActorScaleCameraTimingAndBattleSceneContextToClip05Editor.cs:69)
+
+[Assets/Editor/Battle38MatchActorScaleCameraTimingAndBattleSceneContextToClip05Editor.cs line 69]
+
+Could not extract GUID in text file Assets/Scenes/Battle38MatchActorScaleCameraTimingAndBattleSceneContextToClip05.unity at line 412.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:SaveSceneInternal (UnityEngine.SceneManagement.Scene,string,bool)
+UnityEditor.SceneManagement.EditorSceneManager:SaveScene (UnityEngine.SceneManagement.Scene,string,bool)
+UnityEditor.SceneManagement.EditorSceneManager:SaveScene (UnityEngine.SceneManagement.Scene,string)
+Battle38MatchActorScaleCameraTimingAndBattleSceneContextToClip05Editor:Build () (at Assets/Editor/Battle38MatchActorScaleCameraTimingAndBattleSceneContextToClip05Editor.cs:69)
+
+[Assets/Editor/Battle38MatchActorScaleCameraTimingAndBattleSceneContextToClip05Editor.cs line 69]
+
+Could not extract GUID in text file Assets/Scenes/Battle38MatchActorScaleCameraTimingAndBattleSceneContextToClip05.unity at line 415.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:SaveSceneInternal (UnityEngine.SceneManagement.Scene,string,bool)
+UnityEditor.SceneManagement.EditorSceneManager:SaveScene (UnityEngine.SceneManagement.Scene,string,bool)
+UnityEditor.SceneManagement.EditorSceneManager:SaveScene (UnityEngine.SceneManagement.Scene,string)
+Battle38MatchActorScaleCameraTimingAndBattleSceneContextToClip05Editor:Build () (at Assets/Editor/Battle38MatchActorScaleCameraTimingAndBattleSceneContextToClip05Editor.cs:69)
+
+[Assets/Editor/Battle38MatchActorScaleCameraTimingAndBattleSceneContextToClip05Editor.cs line 69]
+
+Could not extract GUID in text file Assets/Scenes/Battle38MatchActorScaleCameraTimingAndBattleSceneContextToClip05.unity at line 466.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:SaveSceneInternal (UnityEngine.SceneManagement.Scene,string,bool)
+UnityEditor.SceneManagement.EditorSceneManager:SaveScene (UnityEngine.SceneManagement.Scene,string,bool)
+UnityEditor.SceneManagement.EditorSceneManager:SaveScene (UnityEngine.SceneManagement.Scene,string)
+Battle38MatchActorScaleCameraTimingAndBattleSceneContextToClip05Editor:Build () (at Assets/Editor/Battle38MatchActorScaleCameraTimingAndBattleSceneContextToClip05Editor.cs:69)
+
+[Assets/Editor/Battle38MatchActorScaleCameraTimingAndBattleSceneContextToClip05Editor.cs line 69]
+
+Could not extract GUID in text file Assets/Scenes/Battle38MatchActorScaleCameraTimingAndBattleSceneContextToClip05.unity at line 541.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:SaveSceneInternal (UnityEngine.SceneManagement.Scene,string,bool)
+UnityEditor.SceneManagement.EditorSceneManager:SaveScene (UnityEngine.SceneManagement.Scene,string,bool)
+UnityEditor.SceneManagement.EditorSceneManager:SaveScene (UnityEngine.SceneManagement.Scene,string)
+Battle38MatchActorScaleCameraTimingAndBattleSceneContextToClip05Editor:Build () (at Assets/Editor/Battle38MatchActorScaleCameraTimingAndBattleSceneContextToClip05Editor.cs:69)
+
+[Assets/Editor/Battle38MatchActorScaleCameraTimingAndBattleSceneContextToClip05Editor.cs line 69]
+
+Could not extract GUID in text file Assets/Scenes/Battle38MatchActorScaleCameraTimingAndBattleSceneContextToClip05.unity at line 544.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:SaveSceneInternal (UnityEngine.SceneManagement.Scene,string,bool)
+UnityEditor.SceneManagement.EditorSceneManager:SaveScene (UnityEngine.SceneManagement.Scene,string,bool)
+UnityEditor.SceneManagement.EditorSceneManager:SaveScene (UnityEngine.SceneManagement.Scene,string)
+Battle38MatchActorScaleCameraTimingAndBattleSceneContextToClip05Editor:Build () (at Assets/Editor/Battle38MatchActorScaleCameraTimingAndBattleSceneContextToClip05Editor.cs:69)
+
+[Assets/Editor/Battle38MatchActorScaleCameraTimingAndBattleSceneContextToClip05Editor.cs line 69]
+
+Could not extract GUID in text file Assets/Scenes/Battle38MatchActorScaleCameraTimingAndBattleSceneContextToClip05.unity at line 595.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:SaveSceneInternal (UnityEngine.SceneManagement.Scene,string,bool)
+UnityEditor.SceneManagement.EditorSceneManager:SaveScene (UnityEngine.SceneManagement.Scene,string,bool)
+UnityEditor.SceneManagement.EditorSceneManager:SaveScene (UnityEngine.SceneManagement.Scene,string)
+Battle38MatchActorScaleCameraTimingAndBattleSceneContextToClip05Editor:Build () (at Assets/Editor/Battle38MatchActorScaleCameraTimingAndBattleSceneContextToClip05Editor.cs:69)
+
+[Assets/Editor/Battle38MatchActorScaleCameraTimingAndBattleSceneContextToClip05Editor.cs line 69]
+
+Asset Pipeline Refresh (id=cb845c175c714a14b96f79ebfe642a34): Total: 0.021 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/RestoreCaptures/battle_actor/battle38_sequence using Guid(78f65e00e55248d409c7e2d75bad0330) (DefaultImporter) -> (Import Result ID: 'd7ed14e82f964918319dc00c59223457') in 0.002528 seconds [static dependencies only]. Details - ImportResultOutputID=462705c7c573a8329f1b93ac87a442ab DependenciesID=48e88c58f68b8651c6f649b566120e3f StaticDependenciesID=d1587f2dde083d9fd43fa048f76ee20d
+Start importing Assets/RestoreCaptures/battle_actor/battle38_sequence/Battle38Runtime_04_1920x1080.png using Guid(1516742676dfc1c4b80b01cf81638b68) (TextureImporter) -> (Import Result ID: 'eeff1fe299be6c5b5773720f7c6af568') in 0.0330533 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=345b756e78b15ff0a45ca121c59a83a1 DependenciesID=d90734346fe0ae1167cf681e9efa2811 StaticDependenciesID=8f9f0dec65b45062e20a78957a1247d2
+Start importing Assets/RestoreCaptures/battle_actor/Battle38MatchActorScaleCameraTimingAndBattleSceneContextToClip05_1920x1080.png using Guid(f74cd5b5e3b8769478dbdad76368b5a1) (TextureImporter) -> (Import Result ID: 'fdbd17dd4b730aafa9f79e5468200451') in 0.0326818 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=bf25bcac24627c7b0410c179c80e77c5 DependenciesID=d7c09e30ee677ce26035862ecea20dbb StaticDependenciesID=ac9e9c2ced8ab3e190ebb883c12b906c
+Start importing Assets/RestoreCaptures/battle_actor/battle38_sequence/Battle38Runtime_00_1920x1080.png using Guid(ba70e446395567b40ad80d05f808b49f) (TextureImporter) -> (Import Result ID: '921bcd0038923b8f73c172f7e846b52b') in 0.03216 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=6188cc3fa128326b6fd245877276abf0 DependenciesID=87eaed5ac58df8fd907953af8ffcb190 StaticDependenciesID=27989f37e2a104170c8ee7f52fde8c63
+Start importing Assets/RestoreCaptures/battle_actor/battle38_sequence/Battle38Runtime_05_1920x1080.png using Guid(ea56be914bbd00049941d3d293ca87c0) (TextureImporter) -> (Import Result ID: '5ded67da9a7162553ab4e4a277d89952') in 0.0316252 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=f889f429b85aa914a5555c4ad5b01506 DependenciesID=e115b9e322441b078268f13ee7f71810 StaticDependenciesID=4f749097f2b83db6ae782ab8f0050c27
+Start importing Assets/RestoreCaptures/battle_actor/battle38_sequence/Battle38Runtime_01_1920x1080.png using Guid(fa7bcfe393a91c94a9644ab671462f47) (TextureImporter) -> (Import Result ID: 'dedda907ed91e1f7d3a0b2893d6f34cf') in 0.0311152 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=8c5b70815061f13f7face0fc45cbd40d DependenciesID=d0898230361b8e09722627d136525c8f StaticDependenciesID=bb570ea5135cd1a188e069d01c5e0a8e
+Start importing Assets/RestoreCaptures/battle_actor/battle38_sequence/Battle38Runtime_03_1920x1080.png using Guid(abd7ec75fff1b174ea4655d1f3ad3513) (TextureImporter) -> (Import Result ID: 'c309c71e8537402b9c2956eab4a4d725') in 0.0319988 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=ab19a74ec4e1e8c5bb43fb5515fdea47 DependenciesID=458150838933aaa0d026462f8ed203e6 StaticDependenciesID=95ce62fbdfa18065a1961a8ad611598b
+Start importing Assets/RestoreCaptures/battle_actor/battle38_sequence/Battle38Runtime_02_1920x1080.png using Guid(db4d2d654a529d943a006f56ad082260) (TextureImporter) -> (Import Result ID: 'e1055c411e87c8cba50af9d624650d58') in 0.0321657 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=93fa1f15218404dbe9205ffda7d77482 DependenciesID=3ad102f454f4ba5e42f421039de7e0e8 StaticDependenciesID=fc38ceb5755ba5e8e641a0f53859d5a9
+Start importing Assets/RestoreData/battle/BATTLE_38_MATCH_ACTOR_SCALE_CAMERA_TIMING_AND_BATTLE_SCENE_CONTEXT_TO_CLIP05_ACTOR_BOUNDS.csv using Guid(48c594b3d1157a040b5589ea6c5e920e) (TextScriptImporter) -> (Import Result ID: '27bed0670a6f273074efde08ae06352b') in 0.0026923 seconds [static dependencies only]. Details - ImportResultOutputID=4d450cf50f6fe769932edca67bb370ef DependenciesID=639be30a2ac983e1d457503f09a4b389 StaticDependenciesID=8a19893aa08211f6a2bd265ea315de7c
+Start importing Assets/RestoreData/battle/BATTLE_38_MATCH_ACTOR_SCALE_CAMERA_TIMING_AND_BATTLE_SCENE_CONTEXT_TO_CLIP05_UNITY.json using Guid(bbfe3f01f4d906746800316fc18a82a2) (TextScriptImporter) -> (Import Result ID: '599f05fe1a0f9a4b817e1635b3967f0c') in 0.0023976 seconds [static dependencies only]. Details - ImportResultOutputID=aebf64a58d1bdf285452e99f9e47c335 DependenciesID=95206bef54975e4f2096c00c9d20bb52 StaticDependenciesID=f8b290b1af520e11585061081fa5e3e4
+Asset Pipeline Refresh (id=4b1b2056941491b44839303785509573): Total: 0.296 seconds - Initiated by RefreshV2(NoUpdateAssetOptions)
+BATTLE38 actor scale/camera/timing probe complete. actors=3, rows=18
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Battle38MatchActorScaleCameraTimingAndBattleSceneContextToClip05Editor:Build () (at Assets/Editor/Battle38MatchActorScaleCameraTimingAndBattleSceneContextToClip05Editor.cs:74)
+
+(Filename: Assets/Editor/Battle38MatchActorScaleCameraTimingAndBattleSceneContextToClip05Editor.cs Line: 74)
+
+Batchmode quit successfully invoked - shutting down!
+[Physics::Module] Cleanup current backend.
+[Physics::Module] Id: 0xf2b8ea05
+Input System module state changed to: ShutdownInProgress.
+Input Polling Thread exited.
+Input System module state changed to: Shutdown.
+[Licensing::IpcConnector] LicenseClient-godho-notifications channel disconnected successfully.
+[Licensing::IpcConnector] LicenseClient-godho channel disconnected successfully.
+AcceleratorClientConnectionCallback - disconnected - :0
+Cleanup mono
+CodeReloadManager destroyed
+Exiting batchmode successfully now!
+Exiting without the bug reporter. Application will terminate with return code 0

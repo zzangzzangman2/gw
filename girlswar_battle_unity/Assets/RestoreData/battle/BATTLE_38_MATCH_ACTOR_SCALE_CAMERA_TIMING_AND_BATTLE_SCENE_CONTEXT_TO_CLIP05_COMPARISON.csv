@@ -1,0 +1,7 @@
+metric,value,note
+actor_center_gap_norm,0.020345,video union vs BATTLE38 runtime union
+actor_area_ratio_runtime_to_reference,0.227836,scale/layout gap
+runtime_has_battle_map,False,BATTLE38 actor-only probe
+runtime_has_battle_hud,False,BATTLE38 actor-only probe
+mesh_hash_changed_actor_count,3,runtime motion evidence
+magenta_pixel_ratio,0.000387,shader blocker nearly closed

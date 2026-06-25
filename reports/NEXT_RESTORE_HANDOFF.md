@@ -1,6 +1,6 @@
 # GirlsWar Next Restore Handoff
 
-Generated: 2026-06-25 22:30 KST
+Generated: 2026-06-25 22:41 KST
 
 ## Pull At Home
 
@@ -44,60 +44,72 @@ Hard rules still active:
 ## Latest UI State
 
 Latest task:
-- `MAININTERFACE_117_VALIDATE_AND_FIX_ROUTE_SKELETONGRAPHIC_LAYOUT_AGAINST_ORIGINAL_EVIDENCE`
+- `MAININTERFACE_118_BIND_ROUTE_SKELETONGRAPHIC_UI_MATERIAL_SHADER_PASS_FROM_ORIGINAL_FIELDS`
 
 Verdict:
 - MainInterface is still not a normal/restored UI.
-- UI117 only cleaned up evidence-backed duplicate interim bitmap fallback layers in a separate replay candidate scene.
-- The validated capture still shows a large white route diamond/panel around the route cluster.
+- UI118 bound route `SkeletonGraphic` targets to the evidence-backed UI `SkeletonGraphic` material/shader pass.
+- The capture still shows the same large white route diamond/panel around the route cluster, so shader/pass binding alone did not fix the visible defect.
+- No coordinate, scale, RectTransform, sibling order, whole-atlas, crop, fake icon, or debug/path text fix was applied.
 
 Useful evidence:
-- Report: `reports\maininterface\MAININTERFACE_117_VALIDATE_AND_FIX_ROUTE_SKELETONGRAPHIC_LAYOUT_AGAINST_ORIGINAL_EVIDENCE_RESULT.md`
-- Tool: `_restore_tools\cmd_archive\117_VALIDATE_AND_FIX_ROUTE_SKELETONGRAPHIC_LAYOUT_AGAINST_ORIGINAL_EVIDENCE.cmd`
-- Scene: `girlswar_maininterface_unity\Assets\Scenes\MainInterface_RouteSpineRuntimeReplay_Validated.unity`
-- Capture: `girlswar_maininterface_unity\Assets\RestoreCaptures\maininterface_route_spine_runtime_bridge_validated_1680x720.png`
-- JSON: `girlswar_maininterface_unity\Assets\RestoreData\maininterface_117_route_skeletongraphic_layout_validation.json`
-- CSV: `girlswar_maininterface_unity\Assets\RestoreData\reports\maininterface_117_route_skeletongraphic_layout_validation.csv`
+- Report: `reports\maininterface\MAININTERFACE_118_BIND_ROUTE_SKELETONGRAPHIC_UI_MATERIAL_SHADER_PASS_FROM_ORIGINAL_FIELDS_RESULT.md`
+- Tool: `_restore_tools\cmd_archive\118_BIND_ROUTE_SKELETONGRAPHIC_UI_MATERIAL_SHADER_PASS_FROM_ORIGINAL_FIELDS.cmd`
+- Scene: `girlswar_maininterface_unity\Assets\Scenes\MainInterface_RouteSpineRuntimeReplay_UIMaterialBound.unity`
+- Capture: `girlswar_maininterface_unity\Assets\RestoreCaptures\maininterface_route_spine_runtime_ui_material_bound_1680x720.png`
+- JSON: `girlswar_maininterface_unity\Assets\RestoreData\maininterface_118_route_skeletongraphic_ui_material_shader_pass_binding.json`
+- CSV: `girlswar_maininterface_unity\Assets\RestoreData\reports\maininterface_118_route_skeletongraphic_ui_material_shader_pass_binding.csv`
 
 Key numbers:
-- `spine_diqiu`, `spine_xiaoren`: RectTransform/sibling/animation evidence matched `2/2`
-- route TMP label variant: `6/6`
-- interim bitmap fallback suppressed: `3`
-- click validation: `2026-06-25 22:25:37`, `24 / 24 / 0 / 24`
+- targets bound: `2 / 2`
+- original refs present: `2 / 2`
+- additive/multiply/screen material refs bound: `2 / 2 / 2`
+- SkeletonGraphic default material evidence: `True`
+- visible/magenta/whiteish pixels: `1201680 / 223 / 160880`
+- click validation: `2026-06-25 22:37:21`, `24 / 24 / 0 / 24`
 
 Next UI blocker:
-- `MAININTERFACE_118_BIND_ROUTE_SKELETONGRAPHIC_UI_MATERIAL_SHADER_PASS_FROM_ORIGINAL_FIELDS`
-- Reason: route `SkeletonGraphic` currently uses `Spine/Skeleton` material/shader, and the remaining white diamond/panel suggests the original UI `SkeletonGraphic` material/shader pass binding is still wrong.
+- `MAININTERFACE_119_VALIDATE_ROUTE_SKELETONGRAPHIC_MESH_BOUNDS_CANVASRENDERER_SUBMESH_MATERIAL`
+- Reason: the route `SkeletonGraphic` UI material is now evidence-bound, but the large white route diamond/panel remains. Next pass should validate mesh bounds, CanvasRenderer material/submesh state, stencil/mask interaction, and original runtime fields.
 
 ## Latest Battle State
 
 Latest task:
-- `BATTLE_37_BIND_ORIGINAL_SPINE_SHADER_VARIANTS_AND_MATERIAL_PASSES`
+- `BATTLE_38_MATCH_ACTOR_SCALE_CAMERA_TIMING_AND_BATTLE_SCENE_CONTEXT_TO_CLIP05`
 
 Verdict:
-- Original clip05 actor motion is still not reproduced.
-- BATTLE37 greatly reduced the magenta shader problem, but actor scale/camera/timing/battle context does not match the video yet.
+- Original clip05 actor motion/layout/timing is still not reproduced.
+- BATTLE38 used `C:\Users\godho\Downloads\플레이.mp4` 485.0-487.0s sequence and found the current runtime actor probe remains actor-only.
+- Actor motion exists, but the scene has no original battle map/HUD/context attached, so it must not be called a restored battle screen.
 
 Useful evidence:
-- Report: `reports\battle\BATTLE_37_BIND_ORIGINAL_SPINE_SHADER_VARIANTS_AND_MATERIAL_PASSES_RESULT.md`
-- Tool: `_restore_tools\cmd_archive\BATTLE_37_BIND_ORIGINAL_SPINE_SHADER_VARIANTS_AND_MATERIAL_PASSES.cmd`
-- Scene: `girlswar_battle_unity\Assets\Scenes\Battle37BindOriginalSpineShaderVariantsAndMaterialPasses.unity`
-- Capture: `girlswar_battle_unity\Assets\RestoreCaptures\battle_actor\Battle37BindOriginalSpineShaderVariantsAndMaterialPasses_1920x1080.png`
-- Contact sheet: `reports\battle\BATTLE_37_BIND_ORIGINAL_SPINE_SHADER_VARIANTS_AND_MATERIAL_PASSES_CONTACT_SHEET.jpg`
-- JSON: `reports\battle\BATTLE_37_BIND_ORIGINAL_SPINE_SHADER_VARIANTS_AND_MATERIAL_PASSES_RESULT.json`
-- Unity data: `girlswar_battle_unity\Assets\RestoreData\battle\BATTLE_37_BIND_ORIGINAL_SPINE_SHADER_VARIANTS_AND_MATERIAL_PASSES.json`
-- Material CSV: `girlswar_battle_unity\Assets\RestoreData\battle\BATTLE_37_BIND_ORIGINAL_SPINE_SHADER_VARIANTS_AND_MATERIAL_PASSES_MATERIALS.csv`
+- Report: `reports\battle\BATTLE_38_MATCH_ACTOR_SCALE_CAMERA_TIMING_AND_BATTLE_SCENE_CONTEXT_TO_CLIP05_RESULT.md`
+- Tool: `_restore_tools\cmd_archive\BATTLE_38_MATCH_ACTOR_SCALE_CAMERA_TIMING_AND_BATTLE_SCENE_CONTEXT_TO_CLIP05.cmd`
+- Scene: `girlswar_battle_unity\Assets\Scenes\Battle38MatchActorScaleCameraTimingAndBattleSceneContextToClip05.unity`
+- Capture: `girlswar_battle_unity\Assets\RestoreCaptures\battle_actor\Battle38MatchActorScaleCameraTimingAndBattleSceneContextToClip05_1920x1080.png`
+- Runtime sequence: `girlswar_battle_unity\Assets\RestoreCaptures\battle_actor\battle38_sequence\`
+- Contact sheet: `reports\battle\BATTLE_38_MATCH_ACTOR_SCALE_CAMERA_TIMING_AND_BATTLE_SCENE_CONTEXT_TO_CLIP05_CONTACT_SHEET.jpg`
+- Video sequence sheet: `reports\battle\BATTLE_38_PLAY_VIDEO_CLIP05_485_487_SEQUENCE.jpg`
+- JSON: `reports\battle\BATTLE_38_MATCH_ACTOR_SCALE_CAMERA_TIMING_AND_BATTLE_SCENE_CONTEXT_TO_CLIP05_RESULT.json`
+- Unity data: `girlswar_battle_unity\Assets\RestoreData\battle\BATTLE_38_MATCH_ACTOR_SCALE_CAMERA_TIMING_AND_BATTLE_SCENE_CONTEXT_TO_CLIP05.json`
+- Actor bounds CSV: `girlswar_battle_unity\Assets\RestoreData\battle\BATTLE_38_MATCH_ACTOR_SCALE_CAMERA_TIMING_AND_BATTLE_SCENE_CONTEXT_TO_CLIP05_ACTOR_BOUNDS.csv`
+- Comparison CSV: `girlswar_battle_unity\Assets\RestoreData\battle\BATTLE_38_MATCH_ACTOR_SCALE_CAMERA_TIMING_AND_BATTLE_SCENE_CONTEXT_TO_CLIP05_COMPARISON.csv`
 
 Key numbers:
-- unsupported shader/material before: `5`
-- unsupported shader/material after: `0`
-- same-name supported project shader rebinds: `5`
-- magenta ratio: `0.071884 -> 0.000387`
+- visual status: `failed_battle_scene_context_map_hud_missing`
+- reference video used: `True`, 485.0-487.0s, frames `6`
+- reference/runtime actor boxes: `181 / 16`
+- actor center gap norm: `0.020345`
+- runtime/reference actor area ratio: `0.227836`
+- runtime map/HUD: `False / False`
+- BATTLE29 context map layers/cards: `10 / 3`
 - mesh hash changed actors: `3 / 3`
+- AnimationState SetAnimation success: `3 / 3`
+- magenta pixel ratio: `0.000387`
 
 Next battle blocker:
-- `BATTLE_38_MATCH_ACTOR_SCALE_CAMERA_TIMING_AND_BATTLE_SCENE_CONTEXT_TO_CLIP05`
-- Reason: shader/pass binding improved rendering, but the full video motion/layout/timing still does not match `플레이.mp4` clip05.
+- `BATTLE_39_ATTACH_RUNTIME_ACTORS_TO_MAP11003_HUD_CONTEXT_WITH_EVIDENCE`
+- Reason: BATTLE29 has evidence for `map_11003` map/HUD/card context and BATTLE38 has runtime actor sequence evidence, but they are still separate. Next pass must join them through original scene/prefab/Lua evidence, not coordinate-only placement.
 
 ## Existing Threads
 
@@ -111,6 +123,6 @@ Use them separately:
 
 ## Suggested Next Work
 
-1. UI: run UI118 to trace original `SkeletonGraphic` UI material/shader pass fields and bind the correct UI shader/material evidence.
-2. Battle: run BATTLE38 to match actor scale, camera, timing, and scene context to `플레이.mp4` clip05.
+1. UI: run UI119 to inspect route `SkeletonGraphic` mesh bounds, CanvasRenderer submesh material, mask/stencil state, and runtime field evidence for the remaining white diamond/panel.
+2. Battle: run BATTLE39 to attach runtime actors to the evidence-backed `map_11003` battle context with HUD/card layout, then compare the sequence against `플레이.mp4` clip05.
 3. Keep using graphics captures and contact sheets. Do not call a capture restored unless the visual evidence actually matches.
