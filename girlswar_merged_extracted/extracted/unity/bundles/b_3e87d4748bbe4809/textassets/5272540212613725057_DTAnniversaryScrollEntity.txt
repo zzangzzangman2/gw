@@ -1,0 +1,34 @@
+local a={id=0,type=0,num=0,listId=0,goods=0,award={{},{}},doubleAward={{},{}},spineRateName="",langId=""}
+a.__index=a
+function a.New(i,h,n,t,d,l,r,s,o)
+local e={}
+setmetatable(e,a)
+e.id=i
+e.type=h
+e.num=n
+e.listId=t
+e.goods=d
+e.award=l
+e.doubleAward=r
+e.spineRateName=s
+e.langId=o
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.type=t[2]
+e.num=t[3]
+e.listId=t[4]
+e.goods=t[5]
+e.award=t[6]
+e.doubleAward=t[7]
+e.spineRateName=t[8]
+e.langId=t[9]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/activity/DTAnniversaryScrollEntityTableData')
+end
+return a 

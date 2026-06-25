@@ -1,0 +1,11 @@
+local t={}
+function t:OnHandle(e)
+local e=assert(GlobalPB.decode("PRT_NEW_MARKET_SUIT_SELECT_ITEM_RESP",e));
+if(GameInit.GetDebugLogProto())then
+;
+;
+end
+ModulesInit.ActNewMarketSuitMgr:SyncSelectItem(e)
+return e
+end
+return t 

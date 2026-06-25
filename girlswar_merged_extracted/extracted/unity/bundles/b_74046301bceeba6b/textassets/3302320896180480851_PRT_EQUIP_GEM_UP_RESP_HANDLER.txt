@@ -1,0 +1,10 @@
+local e={}
+function e:OnHandle(e)
+local e=assert(GlobalPB.decode("PRT_EQUIP_GEM_UP_RESP",e));
+if(GameInit.GetDebugLogProto())then
+;
+;
+end
+EventSystem.SendEvent(CommonEventId.OnEquipGemUpResp,e)
+end
+return e 

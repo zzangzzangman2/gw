@@ -1,0 +1,11 @@
+local e={}
+function e:OnHandle(e)
+local e=assert(GlobalPB.decode("PRT_HERO_INHERIT_RESP",e));
+if(GameInit.GetDebugLogProto())then
+;
+;
+end
+EventSystem.SendEvent(CommonEventId.OnHeroInheritSure)
+return e
+end
+return e 

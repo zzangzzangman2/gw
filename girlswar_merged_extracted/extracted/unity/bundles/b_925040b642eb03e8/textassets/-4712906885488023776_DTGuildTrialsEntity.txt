@@ -1,0 +1,32 @@
+local a={id=0,chapter=0,lv=0,name="",stageOne={},stageTwo={},trialEvents={},trialEventsDesc=""}
+a.__index=a
+function a.New(i,h,n,t,d,r,s,o)
+local e={}
+setmetatable(e,a)
+e.id=i
+e.chapter=h
+e.lv=n
+e.name=t
+e.stageOne=d
+e.stageTwo=r
+e.trialEvents=s
+e.trialEventsDesc=o
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.chapter=t[2]
+e.lv=t[3]
+e.name=t[4]
+e.stageOne=t[5]
+e.stageTwo=t[6]
+e.trialEvents=t[7]
+e.trialEventsDesc=t[8]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/guild/DTGuildTrialsEntityTableData')
+end
+return a 

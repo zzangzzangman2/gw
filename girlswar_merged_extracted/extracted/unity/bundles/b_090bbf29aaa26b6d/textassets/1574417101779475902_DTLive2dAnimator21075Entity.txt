@@ -1,0 +1,44 @@
+local a={id="",isIdle=0,nextAnimatorName="",expType=0,changeToExpType=0,hitArea="",connectCdTime=0,playIdleAnimatorName="",paramState="",changAnimator="",playAudioVoice="",playAudioEffect=0,hasKrAnimation=0,layer=0}
+a.__index=a
+function a.New(s,l,r,t,u,m,f,w,c,d,i,o,n,h)
+local e={}
+setmetatable(e,a)
+e.id=s
+e.isIdle=l
+e.nextAnimatorName=r
+e.expType=t
+e.changeToExpType=u
+e.hitArea=m
+e.connectCdTime=f
+e.playIdleAnimatorName=w
+e.paramState=c
+e.changAnimator=d
+e.playAudioVoice=i
+e.playAudioEffect=o
+e.hasKrAnimation=n
+e.layer=h
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.isIdle=t[2]
+e.nextAnimatorName=t[3]
+e.expType=t[4]
+e.changeToExpType=t[5]
+e.hitArea=t[6]
+e.connectCdTime=t[7]
+e.playIdleAnimatorName=t[8]
+e.paramState=t[9]
+e.changAnimator=t[10]
+e.playAudioVoice=t[11]
+e.playAudioEffect=t[12]
+e.hasKrAnimation=t[13]
+e.layer=t[14]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/live2d/DTLive2dAnimator21075EntityTableData')
+end
+return a 

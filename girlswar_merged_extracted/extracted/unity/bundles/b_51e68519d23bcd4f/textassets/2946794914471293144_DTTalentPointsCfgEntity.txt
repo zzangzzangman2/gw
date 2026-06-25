@@ -1,0 +1,26 @@
+local e={id=0,resetTime=0,pointFakeItem=0,startGroupId=0,starItem=0}
+e.__index=e
+function e.New(o,n,a,s,i)
+local t={}
+setmetatable(t,e)
+t.id=o
+t.resetTime=n
+t.pointFakeItem=a
+t.startGroupId=s
+t.starItem=i
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.resetTime=a[2]
+t.pointFakeItem=a[3]
+t.startGroupId=a[4]
+t.starItem=a[5]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/deityStatue/DTTalentPointsCfgEntityTableData')
+end
+return e 

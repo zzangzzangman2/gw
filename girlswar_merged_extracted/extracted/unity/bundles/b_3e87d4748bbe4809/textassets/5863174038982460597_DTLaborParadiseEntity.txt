@@ -1,0 +1,48 @@
+local a={id=0,diceCost={},shopCost={},floorTime=0,goods=0,fundAward={},offset=0,blockSize=0,specialItem={},actItem={},touchGirl=0,exchangeGirl=0,taskGirl=0,shopGril=0,iconographyProve=0,atlasId=0}
+a.__index=a
+function a.New(h,u,d,t,c,f,y,w,p,m,l,n,i,o,s,r)
+local e={}
+setmetatable(e,a)
+e.id=h
+e.diceCost=u
+e.shopCost=d
+e.floorTime=t
+e.goods=c
+e.fundAward=f
+e.offset=y
+e.blockSize=w
+e.specialItem=p
+e.actItem=m
+e.touchGirl=l
+e.exchangeGirl=n
+e.taskGirl=i
+e.shopGril=o
+e.iconographyProve=s
+e.atlasId=r
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.diceCost=t[2]
+e.shopCost=t[3]
+e.floorTime=t[4]
+e.goods=t[5]
+e.fundAward=t[6]
+e.offset=t[7]
+e.blockSize=t[8]
+e.specialItem=t[9]
+e.actItem=t[10]
+e.touchGirl=t[11]
+e.exchangeGirl=t[12]
+e.taskGirl=t[13]
+e.shopGril=t[14]
+e.iconographyProve=t[15]
+e.atlasId=t[16]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/activity/DTLaborParadiseEntityTableData')
+end
+return a 

@@ -1,0 +1,14 @@
+Spine_niao.png
+size:1024,512
+filter:Linear,Linear
+scale:0.2
+1073skill-fx_00000
+bounds:397,14,500,460
+offsets:0,14,500,500
+rotate:180
+1073skill-fx_00001
+bounds:2,424,78,50
+offsets:0,5,78,67
+1073skill-fx_00002
+bounds:2,2,500,472
+offsets:0,0,500,500

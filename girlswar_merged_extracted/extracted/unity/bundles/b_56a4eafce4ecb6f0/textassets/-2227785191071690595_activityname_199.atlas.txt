@@ -1,0 +1,16 @@
+activityname_199.png
+size:124,88
+filter:Linear,Linear
+2
+bounds:95,58,28,27
+offsets:1,1,30,29
+rotate:90
+4
+bounds:95,35,21,21
+offsets:1,1,23,23
+5
+bounds:95,35,21,21
+offsets:1,1,23,23
+jumpicon_1581
+bounds:2,2,91,84
+offsets:15,2,120,90

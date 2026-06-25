@@ -1,0 +1,12 @@
+local e=
+{
+ByIdx={
+{10001,2,26445,6,"ExhibitHallDesignerPoint01"},
+{10101,2,26446,12,"ExhibitHallDesignerPoint02"},
+{10102,2,26447,12,"ExhibitHallDesignerPoint03"},
+{10103,2,26449,3,"ExhibitHallDesignerPoint04"},
+{10104,2,26450,12,"ExhibitHallDesignerPoint05"}
+},
+Len=5
+}
+return e 

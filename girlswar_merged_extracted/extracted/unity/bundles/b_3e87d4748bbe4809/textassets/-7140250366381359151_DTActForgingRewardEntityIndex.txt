@@ -1,0 +1,19 @@
+local e={}
+e.__index=e
+function e.Init()
+e.indexData={}
+e.indexData['rewardType']={}
+e.indexData['rewardType']['1']={1}
+e.indexData['rewardType']['2']={2,3}
+e.indexData['rewardType']['3']={4}
+e.indexData['rewardType']['4']={5}
+end
+function e.GetByIndex(t,a)
+if e.indexData[t]and e.indexData[t][a]then
+return e.indexData[t][a]
+else
+return{}
+end
+end
+return e
+

@@ -1,0 +1,22 @@
+local e={id=0,itemid=0,times=0}
+e.__index=e
+function e.New(o,a,i)
+local t={}
+setmetatable(t,e)
+t.id=o
+t.itemid=a
+t.times=i
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.itemid=a[2]
+t.times=a[3]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/activity/DTPushCoinsSelectEntityTableData')
+end
+return e 

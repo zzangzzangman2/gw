@@ -1,0 +1,11 @@
+local t={}
+function t:OnHandle(e)
+local e=assert(GlobalPB.decode("PRT_FISHING_SHOP_BUY_RESP",e));
+if(GameInit.GetDebugLogProto())then
+;
+;
+end
+ModulesInit.ActActivityFishingMgr:OnRespActFishingShopBuy(e)
+return e
+end
+return t 

@@ -1,0 +1,6 @@
+92001.png
+size:2048,1024
+filter:Linear,Linear
+scale:0.87
+0000
+bounds:2,2,1843,786

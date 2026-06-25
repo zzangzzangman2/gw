@@ -1,0 +1,36 @@
+local a={id=0,functionName="",tabType=0,functionNum=0,unlockLv=0,unlockLevel=0,useItem={},unlockLv1={},unlockLevel1={},onlyDisplay=0}
+a.__index=a
+function a.New(n,r,s,t,l,u,d,h,o,i)
+local e={}
+setmetatable(e,a)
+e.id=n
+e.functionName=r
+e.tabType=s
+e.functionNum=t
+e.unlockLv=l
+e.unlockLevel=u
+e.useItem=d
+e.unlockLv1=h
+e.unlockLevel1=o
+e.onlyDisplay=i
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.functionName=t[2]
+e.tabType=t[3]
+e.functionNum=t[4]
+e.unlockLv=t[5]
+e.unlockLevel=t[6]
+e.useItem=t[7]
+e.unlockLv1=t[8]
+e.unlockLevel1=t[9]
+e.onlyDisplay=t[10]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/helper/DTHelperFunEntityTableData')
+end
+return a 

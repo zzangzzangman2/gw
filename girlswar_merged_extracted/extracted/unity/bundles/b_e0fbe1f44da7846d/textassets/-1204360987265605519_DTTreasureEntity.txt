@@ -1,0 +1,44 @@
+local a={id=0,battleName="",name="",icon="",type=0,color=0,classLimit=0,eleLimit=0,getExp=0,skill=0,listId=0,specialEffects=0,maxBreakTime=0,jump={}}
+a.__index=a
+function a.New(s,l,r,t,u,m,f,w,c,d,i,o,n,h)
+local e={}
+setmetatable(e,a)
+e.id=s
+e.battleName=l
+e.name=r
+e.icon=t
+e.type=u
+e.color=m
+e.classLimit=f
+e.eleLimit=w
+e.getExp=c
+e.skill=d
+e.listId=i
+e.specialEffects=o
+e.maxBreakTime=n
+e.jump=h
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.battleName=t[2]
+e.name=t[3]
+e.icon=t[4]
+e.type=t[5]
+e.color=t[6]
+e.classLimit=t[7]
+e.eleLimit=t[8]
+e.getExp=t[9]
+e.skill=t[10]
+e.listId=t[11]
+e.specialEffects=t[12]
+e.maxBreakTime=t[13]
+e.jump=t[14]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/treasure/DTTreasureEntityTableData')
+end
+return a 

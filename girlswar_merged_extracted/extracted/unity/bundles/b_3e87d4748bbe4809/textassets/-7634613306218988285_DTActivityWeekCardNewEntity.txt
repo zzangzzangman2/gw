@@ -1,0 +1,36 @@
+local a={id=0,goods=0,unlockType=0,endTime="",duration=0,maxNum=0,buyAward={{},{}},dailyAward={{},{}},title="",baseplate=0}
+a.__index=a
+function a.New(n,r,s,t,l,u,d,h,o,i)
+local e={}
+setmetatable(e,a)
+e.id=n
+e.goods=r
+e.unlockType=s
+e.endTime=t
+e.duration=l
+e.maxNum=u
+e.buyAward=d
+e.dailyAward=h
+e.title=o
+e.baseplate=i
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.goods=t[2]
+e.unlockType=t[3]
+e.endTime=t[4]
+e.duration=t[5]
+e.maxNum=t[6]
+e.buyAward=t[7]
+e.dailyAward=t[8]
+e.title=t[9]
+e.baseplate=t[10]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/activity/DTActivityWeekCardNewEntityTableData')
+end
+return a 

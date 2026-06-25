@@ -1,0 +1,19 @@
+
+?
+ActLuckyMarbles.protoCommons.proto"?
+PRT_LUCKY_MARBLES
+step (Rstep
+canDraw (RcanDraw$
+nextResetTime (RnextResetTime*
+chargeShowCfgDid (RchargeShowCfgDid0
+chargeShowCloseTime (RchargeShowCloseTime"
+actCloseTime (RactCloseTime
+drawDids (RdrawDids"
+PRT_LUCKY_MARBLES_INFO_REQ"E
+PRT_LUCKY_MARBLES_INFO_RESP&
+info (2.PRT_LUCKY_MARBLESRinfo"
+PRT_LUCKY_MARBLES_DRAW_REQ"h
+PRT_LUCKY_MARBLES_DRAW_RESP&
+info (2.PRT_LUCKY_MARBLESRinfo!
+award (2.PRT_REWARDRawardB
+com.next1b.nextsvr.protobproto3

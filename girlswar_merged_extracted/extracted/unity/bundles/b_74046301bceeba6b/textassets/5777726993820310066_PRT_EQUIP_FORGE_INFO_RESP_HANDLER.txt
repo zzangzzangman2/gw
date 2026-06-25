@@ -1,0 +1,12 @@
+local t={}
+function t:OnHandle(e)
+local e=assert(GlobalPB.decode("PRT_EQUIP_FORGE_INFO_RESP",e));
+if(GameInit.GetDebugLogProto())then
+;
+;
+end
+local t=require("Modules/Equip/UI_Make")
+t:recordMakeInfo(e)
+return e
+end
+return t 

@@ -1,0 +1,17 @@
+sp_Realm_icon_02.png
+size:512,512
+filter:Linear,Linear
+a1
+bounds:0,0,497,44
+offsets:7,1,512,46
+a3
+bounds:0,221,466,137
+offsets:28,11,512,150
+a4
+bounds:0,46,512,50
+kr
+bounds:0,360,500,118
+offsets:0,1,500,120
+tx_kr
+bounds:0,98,431,121
+offsets:15,15,461,151

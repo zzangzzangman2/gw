@@ -1,0 +1,40 @@
+local a={id=0,monType=0,layer=0,type=0,monIndex=0,monster={},award={{},{}},awardItemRandom=0,firstAward={{},{}},firstAwardNew={{},{}},battleScene=0,monsterName=""}
+a.__index=a
+function a.New(s,d,h,t,u,c,m,l,r,i,o,n)
+local e={}
+setmetatable(e,a)
+e.id=s
+e.monType=d
+e.layer=h
+e.type=t
+e.monIndex=u
+e.monster=c
+e.award=m
+e.awardItemRandom=l
+e.firstAward=r
+e.firstAwardNew=i
+e.battleScene=o
+e.monsterName=n
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.monType=t[2]
+e.layer=t[3]
+e.type=t[4]
+e.monIndex=t[5]
+e.monster=t[6]
+e.award=t[7]
+e.awardItemRandom=t[8]
+e.firstAward=t[9]
+e.firstAwardNew=t[10]
+e.battleScene=t[11]
+e.monsterName=t[12]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/maze/DTMazeMonGroupEntityTableData')
+end
+return a 

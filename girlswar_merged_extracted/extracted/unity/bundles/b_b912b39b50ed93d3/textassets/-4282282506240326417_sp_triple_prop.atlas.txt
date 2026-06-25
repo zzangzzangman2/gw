@@ -1,0 +1,6 @@
+sp_triple_prop.png
+size:16,16
+filter:Linear,Linear
+scale:0.1
+sdfds
+bounds:2,2,6,8

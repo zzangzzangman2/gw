@@ -1,0 +1,12 @@
+busiyi_yun2.png
+size:2048,2048
+filter:Linear,Linear
+1
+bounds:2,2,783,264
+2
+bounds:1408,254,965,530
+rotate:90
+3
+bounds:2,268,1098,470
+4
+bounds:2,740,1405,479

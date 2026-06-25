@@ -1,0 +1,28 @@
+local e={id=0,daysOfWeek={},desc="",lvLimit=0,value=0,lvLimitNew=0}
+e.__index=e
+function e.New(a,i,o,h,s,n)
+local t={}
+setmetatable(t,e)
+t.id=a
+t.daysOfWeek=i
+t.desc=o
+t.lvLimit=h
+t.value=s
+t.lvLimitNew=n
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.daysOfWeek=a[2]
+t.desc=a[3]
+t.lvLimit=a[4]
+t.value=a[5]
+t.lvLimitNew=a[6]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/activity/DTActivityDoubleEntityTableData')
+end
+return e 

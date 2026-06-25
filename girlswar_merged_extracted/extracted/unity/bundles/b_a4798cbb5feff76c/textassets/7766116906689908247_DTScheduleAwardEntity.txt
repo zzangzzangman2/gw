@@ -1,0 +1,24 @@
+local e={id=0,openServerDayMin=0,openServerDayMax=0,award={{},{}}}
+e.__index=e
+function e.New(o,a,n,i)
+local t={}
+setmetatable(t,e)
+t.id=o
+t.openServerDayMin=a
+t.openServerDayMax=n
+t.award=i
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.openServerDayMin=a[2]
+t.openServerDayMax=a[3]
+t.award=a[4]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/worldMap/DTScheduleAwardEntityTableData')
+end
+return e 

@@ -1,0 +1,99 @@
+{
+  "generated_at": "2026-06-25 13:50:31",
+  "base": "C:\\Users\\godho\\Downloads\\girlswar",
+  "run_result": {
+    "generated_at": "2026-06-25 13:50:23",
+    "base": "C:\\Users\\godho\\Downloads\\girlswar",
+    "probe_project": "C:\\Users\\godho\\Downloads\\girlswar\\_restore_tools\\work\\spine40_unity6000_probe_20260625_134314",
+    "unity_exe": "C:\\Program Files\\Unity\\Hub\\Editor\\6000.4.9f1\\Editor\\Unity.exe",
+    "probe_importer": "C:\\Users\\godho\\Downloads\\girlswar\\_restore_tools\\work\\spine40_unity6000_probe_20260625_134314\\Assets\\Editor\\GirlsWarSpineProbeHeroImporter.cs",
+    "log": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\maininterface\\spine40_hero1001_import_latest.log",
+    "unity_process_exit_code": null,
+    "unity_log_return_code": 1,
+    "unity_exit_code": 1
+  },
+  "asset_scan": {
+    "probe_project": "C:\\Users\\godho\\Downloads\\girlswar\\_restore_tools\\work\\spine40_unity6000_probe_20260625_134314",
+    "exists": true,
+    "assets": [
+      {
+        "asset": "Assets/RestoreData/hero1001_spine_source_raw/paintingprefabandres_1001/Painting_1001_SkeletonData.asset",
+        "exists": true,
+        "size": 1190
+      },
+      {
+        "asset": "Assets/RestoreData/hero1001_spine_source_raw/paintingprefabandres_1001/Painting_1001_Front_SkeletonData.asset",
+        "exists": true,
+        "size": 1088
+      },
+      {
+        "asset": "Assets/RestoreData/hero1001_spine_source_raw/paintingprefabandres_1001/Painting_1001_Back_SkeletonData.asset",
+        "exists": true,
+        "size": 1086
+      },
+      {
+        "asset": "Assets/RestoreData/hero1001_spine_source_raw/paintingprefabandres_1001/SP_heroname_1001_SkeletonData.asset",
+        "exists": true,
+        "size": 1082
+      }
+    ],
+    "generated_asset_or_mat_count": 17,
+    "generated_asset_or_mat_sample": [
+      "Assets/RestoreData/hero1001_spine_source_raw/paintingprefabandres_1001/Painting_1001_Atlas.asset",
+      "Assets/RestoreData/hero1001_spine_source_raw/paintingprefabandres_1001/Painting_1001_Back_Atlas.asset",
+      "Assets/RestoreData/hero1001_spine_source_raw/paintingprefabandres_1001/Painting_1001_Back_Material-Screen.mat",
+      "Assets/RestoreData/hero1001_spine_source_raw/paintingprefabandres_1001/Painting_1001_Back_Material.mat",
+      "Assets/RestoreData/hero1001_spine_source_raw/paintingprefabandres_1001/Painting_1001_Back_SkeletonData.asset",
+      "Assets/RestoreData/hero1001_spine_source_raw/paintingprefabandres_1001/Painting_1001_Front_Atlas.asset",
+      "Assets/RestoreData/hero1001_spine_source_raw/paintingprefabandres_1001/Painting_1001_Front_Material-Additive.mat",
+      "Assets/RestoreData/hero1001_spine_source_raw/paintingprefabandres_1001/Painting_1001_Front_Material.mat",
+      "Assets/RestoreData/hero1001_spine_source_raw/paintingprefabandres_1001/Painting_1001_Front_SkeletonData.asset",
+      "Assets/RestoreData/hero1001_spine_source_raw/paintingprefabandres_1001/Painting_1001_Material-Additive.mat",
+      "Assets/RestoreData/hero1001_spine_source_raw/paintingprefabandres_1001/Painting_1001_Material-Screen.mat",
+      "Assets/RestoreData/hero1001_spine_source_raw/paintingprefabandres_1001/Painting_1001_Material.mat",
+      "Assets/RestoreData/hero1001_spine_source_raw/paintingprefabandres_1001/Painting_1001_SkeletonData.asset",
+      "Assets/RestoreData/hero1001_spine_source_raw/paintingprefabandres_1001/SP_heroname_1001_Atlas.asset",
+      "Assets/RestoreData/hero1001_spine_source_raw/paintingprefabandres_1001/SP_heroname_1001_Material-Additive.mat",
+      "Assets/RestoreData/hero1001_spine_source_raw/paintingprefabandres_1001/SP_heroname_1001_Material.mat",
+      "Assets/RestoreData/hero1001_spine_source_raw/paintingprefabandres_1001/SP_heroname_1001_SkeletonData.asset"
+    ]
+  },
+  "log_scan": {
+    "line_count": 967,
+    "success_marker": true,
+    "declared_return_code": 0,
+    "hard_issue_count": 0,
+    "hard_issues": [],
+    "probe_lines": [
+      {
+        "line": 532,
+        "text": "[GirlsWarRestore][SpineProbe] ImportHero1001 start"
+      },
+      {
+        "line": 896,
+        "text": "[GirlsWarRestore][SpineProbe] SkeletonData OK path=Assets/RestoreData/hero1001_spine_source_raw/paintingprefabandres_1001/Painting_1001_SkeletonData.asset bones=326 slots=146 skins=1 animations=4"
+      },
+      {
+        "line": 908,
+        "text": "[GirlsWarRestore][SpineProbe] SkeletonData OK path=Assets/RestoreData/hero1001_spine_source_raw/paintingprefabandres_1001/Painting_1001_Front_SkeletonData.asset bones=39 slots=4 skins=1 animations=4"
+      },
+      {
+        "line": 920,
+        "text": "[GirlsWarRestore][SpineProbe] SkeletonData OK path=Assets/RestoreData/hero1001_spine_source_raw/paintingprefabandres_1001/Painting_1001_Back_SkeletonData.asset bones=32 slots=3 skins=1 animations=4"
+      },
+      {
+        "line": 932,
+        "text": "[GirlsWarRestore][SpineProbe] SkeletonData OK path=Assets/RestoreData/hero1001_spine_source_raw/paintingprefabandres_1001/SP_heroname_1001_SkeletonData.asset bones=5 slots=6 skins=1 animations=2"
+      },
+      {
+        "line": 944,
+        "text": "[GirlsWarRestore][SpineProbe] ImportHero1001 complete"
+      }
+    ]
+  },
+  "decision": {
+    "status": "hero1001_skeletondata_ready_in_probe",
+    "verdict": "The probe created and loaded the 1001 SkeletonDataAsset files through Spine 4.0.",
+    "next": "Attach Painting_1001_SkeletonData.asset to a SkeletonGraphic under UI_heroSpine in the probe and capture graphics output."
+  }
+}

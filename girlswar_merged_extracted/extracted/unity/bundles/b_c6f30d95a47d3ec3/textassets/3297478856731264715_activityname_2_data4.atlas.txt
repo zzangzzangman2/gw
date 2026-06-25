@@ -1,0 +1,6 @@
+activityname_2_data4.png
+size:128,128
+filter:Linear,Linear
+aa
+bounds:0,0,83,81
+offsets:3,3,90,84

@@ -1,0 +1,70 @@
+local a={id=0,name="",mapName="",mapFullName="",firstStage=0,bigStage=0,smallStage=0,prefabId=0,HeroInitColor_R=0,HeroInitColor_G=0,HeroInitColor_B=0,mapBasepImage="",heroHead=0,heroName="",recLevel=0,chapterId=0,subType=0,nextMap=0,unlockDay=0,unlockPara="",proposalLv=0,suppress=0,firstDrop={{},{}},checkFight=0,bossSign=0,starConditions={{},{}},unlockDayPlayer=0}
+a.__index=a
+function a.New(l,y,f,t,g,b,p,v,q,z,j,E,_,x,T,k,w,h,s,n,o,i,r,u,d,m,c)
+local e={}
+setmetatable(e,a)
+e.id=l
+e.name=y
+e.mapName=f
+e.mapFullName=t
+e.firstStage=g
+e.bigStage=b
+e.smallStage=p
+e.prefabId=v
+e.HeroInitColor_R=q
+e.HeroInitColor_G=z
+e.HeroInitColor_B=j
+e.mapBasepImage=E
+e.heroHead=_
+e.heroName=x
+e.recLevel=T
+e.chapterId=k
+e.subType=w
+e.nextMap=h
+e.unlockDay=s
+e.unlockPara=n
+e.proposalLv=o
+e.suppress=i
+e.firstDrop=r
+e.checkFight=u
+e.bossSign=d
+e.starConditions=m
+e.unlockDayPlayer=c
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.name=t[2]
+e.mapName=t[3]
+e.mapFullName=t[4]
+e.firstStage=t[5]
+e.bigStage=t[6]
+e.smallStage=t[7]
+e.prefabId=t[8]
+e.HeroInitColor_R=t[9]
+e.HeroInitColor_G=t[10]
+e.HeroInitColor_B=t[11]
+e.mapBasepImage=t[12]
+e.heroHead=t[13]
+e.heroName=t[14]
+e.recLevel=t[15]
+e.chapterId=t[16]
+e.subType=t[17]
+e.nextMap=t[18]
+e.unlockDay=t[19]
+e.unlockPara=t[20]
+e.proposalLv=t[21]
+e.suppress=t[22]
+e.firstDrop=t[23]
+e.checkFight=t[24]
+e.bossSign=t[25]
+e.starConditions=t[26]
+e.unlockDayPlayer=t[27]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/activity/DTUrTestEntityTableData')
+end
+return a 

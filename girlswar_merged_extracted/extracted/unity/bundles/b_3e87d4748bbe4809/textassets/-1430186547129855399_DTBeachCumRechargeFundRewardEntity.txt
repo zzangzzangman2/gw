@@ -1,0 +1,26 @@
+local e={id=0,day=0,award_1={},award_2={{},{}},award_3={}}
+e.__index=e
+function e.New(o,n,a,s,i)
+local t={}
+setmetatable(t,e)
+t.id=o
+t.day=n
+t.award_1=a
+t.award_2=s
+t.award_3=i
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.day=a[2]
+t.award_1=a[3]
+t.award_2=a[4]
+t.award_3=a[5]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/activity/DTBeachCumRechargeFundRewardEntityTableData')
+end
+return e 

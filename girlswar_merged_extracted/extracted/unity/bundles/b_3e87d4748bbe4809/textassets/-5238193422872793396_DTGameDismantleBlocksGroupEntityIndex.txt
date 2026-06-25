@@ -1,0 +1,25 @@
+local e={}
+e.__index=e
+function e.Init()
+e.indexData={}
+e.indexData['index_1']={}
+e.indexData['index_1']['1']={1,2,3,4}
+e.indexData['index_1']['10']={37,38,39,40}
+e.indexData['index_1']['2']={5,6,7,8}
+e.indexData['index_1']['3']={9,10,11,12}
+e.indexData['index_1']['4']={13,14,15,16}
+e.indexData['index_1']['5']={17,18,19,20}
+e.indexData['index_1']['6']={21,22,23,24}
+e.indexData['index_1']['7']={25,26,27,28}
+e.indexData['index_1']['8']={29,30,31,32}
+e.indexData['index_1']['9']={33,34,35,36}
+end
+function e.GetByIndex(t,a)
+if e.indexData[t]and e.indexData[t][a]then
+return e.indexData[t][a]
+else
+return{}
+end
+end
+return e
+

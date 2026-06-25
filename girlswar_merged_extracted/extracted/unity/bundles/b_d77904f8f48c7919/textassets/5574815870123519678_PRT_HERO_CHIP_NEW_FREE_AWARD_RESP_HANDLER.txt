@@ -1,0 +1,11 @@
+local t={}
+function t:OnHandle(e)
+local e=assert(GlobalPB.decode("PRT_HERO_CHIP_NEW_FREE_AWARD_RESP",e));
+if(GameInit.GetDebugLogProto())then
+;
+;
+end
+EventSystem.SendEvent(CommonEventId.OnHeroFramentNewFreeGet,e)
+return e
+end
+return t 

@@ -1,0 +1,10 @@
+MH_sdx1.png
+size:2048,2048
+filter:Linear,Linear
+scale:0.8
+sudu10001
+bounds:2,2,1280,576
+sudu10005
+bounds:2,580,1280,576
+sudu10008
+bounds:2,1158,1280,576

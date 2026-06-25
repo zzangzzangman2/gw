@@ -1,0 +1,10 @@
+local e={}
+function e:OnHandle(e)
+local e=assert(GlobalPB.decode("PRT_CITY_GARRISON_CANCEL_RESP",e));
+if(GameInit.GetDebugLogProto())then
+;
+;
+end
+ModulesInit.CityManager:OnBuildCancelResponse(e)
+end
+return e 

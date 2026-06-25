@@ -1,0 +1,52 @@
+local a={id=0,goldPool=0,itemPool=0,clothId1=0,clothId2=0,clothId3=0,themeBg=0,themeTitleImg="",themeName="",themeDesc="",themeSelectBg="",themeStoryBg="",themePlayer=0,themeGameBg="",show="",unlockPlotCost=0,plotCost=0,prologue=0}
+a.__index=a
+function a.New(d,c,l,t,f,m,y,v,p,b,w,u,n,i,o,s,r,h)
+local e={}
+setmetatable(e,a)
+e.id=d
+e.goldPool=c
+e.itemPool=l
+e.clothId1=t
+e.clothId2=f
+e.clothId3=m
+e.themeBg=y
+e.themeTitleImg=v
+e.themeName=p
+e.themeDesc=b
+e.themeSelectBg=w
+e.themeStoryBg=u
+e.themePlayer=n
+e.themeGameBg=i
+e.show=o
+e.unlockPlotCost=s
+e.plotCost=r
+e.prologue=h
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.goldPool=t[2]
+e.itemPool=t[3]
+e.clothId1=t[4]
+e.clothId2=t[5]
+e.clothId3=t[6]
+e.themeBg=t[7]
+e.themeTitleImg=t[8]
+e.themeName=t[9]
+e.themeDesc=t[10]
+e.themeSelectBg=t[11]
+e.themeStoryBg=t[12]
+e.themePlayer=t[13]
+e.themeGameBg=t[14]
+e.show=t[15]
+e.unlockPlotCost=t[16]
+e.plotCost=t[17]
+e.prologue=t[18]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/activity/DTCrowsTheatreThemeEntityTableData')
+end
+return a 

@@ -1,0 +1,11 @@
+local t={}
+function t:OnHandle(e)
+local e=assert(GlobalPB.decode("PRT_HERO_LOVER_EVENT_READ_RESP",e));
+if(GameInit.GetDebugLogProto())then
+;
+;
+end
+ModulesInit.FavorabilityManage:OnLoverEventResponse(e)
+EventSystem.SendEvent(CommonEventId.OnFavorabilityEventAdd,e)
+end
+return t 

@@ -1,0 +1,28 @@
+local e={id=0,powerMax=0,powerCD=0,addPowerConsume={{},{}},loveItemExpRate=0,redPointShowNum=0}
+e.__index=e
+function e.New(a,i,o,h,s,n)
+local t={}
+setmetatable(t,e)
+t.id=a
+t.powerMax=i
+t.powerCD=o
+t.addPowerConsume=h
+t.loveItemExpRate=s
+t.redPointShowNum=n
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.powerMax=a[2]
+t.powerCD=a[3]
+t.addPowerConsume=a[4]
+t.loveItemExpRate=a[5]
+t.redPointShowNum=a[6]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/marry/DTMarryHaremEntityTableData')
+end
+return e 

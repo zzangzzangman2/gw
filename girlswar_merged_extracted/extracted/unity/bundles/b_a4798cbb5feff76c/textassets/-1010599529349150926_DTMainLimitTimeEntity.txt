@@ -1,0 +1,36 @@
+local a={id=0,showTime={},closeTime={},showLimitIcon="",tipsDesc="",pageName="",sortid=0,showPageIndex=0,funcId=0,mapId=0}
+a.__index=a
+function a.New(n,r,s,t,l,u,d,h,o,i)
+local e={}
+setmetatable(e,a)
+e.id=n
+e.showTime=r
+e.closeTime=s
+e.showLimitIcon=t
+e.tipsDesc=l
+e.pageName=u
+e.sortid=d
+e.showPageIndex=h
+e.funcId=o
+e.mapId=i
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.showTime=t[2]
+e.closeTime=t[3]
+e.showLimitIcon=t[4]
+e.tipsDesc=t[5]
+e.pageName=t[6]
+e.sortid=t[7]
+e.showPageIndex=t[8]
+e.funcId=t[9]
+e.mapId=t[10]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/worldMap/DTMainLimitTimeEntityTableData')
+end
+return a 

@@ -1,0 +1,26 @@
+local e={id=0,hp=0,dmgRes=0,playerAward={},firstAward={}}
+e.__index=e
+function e.New(o,n,a,s,i)
+local t={}
+setmetatable(t,e)
+t.id=o
+t.hp=n
+t.dmgRes=a
+t.playerAward=s
+t.firstAward=i
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.hp=a[2]
+t.dmgRes=a[3]
+t.playerAward=a[4]
+t.firstAward=a[5]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/titans/DTTitansBossEntityTableData')
+end
+return e 

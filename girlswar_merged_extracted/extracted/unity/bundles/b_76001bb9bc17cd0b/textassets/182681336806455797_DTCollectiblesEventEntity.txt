@@ -1,0 +1,36 @@
+local a={id=0,eventName="",eventStar=0,completeTimes=0,reward={{},{}},event={{},{}},borrowReward={},costTimes=0,eventIcon="",heroNum=0}
+a.__index=a
+function a.New(n,r,s,t,l,u,d,h,o,i)
+local e={}
+setmetatable(e,a)
+e.id=n
+e.eventName=r
+e.eventStar=s
+e.completeTimes=t
+e.reward=l
+e.event=u
+e.borrowReward=d
+e.costTimes=h
+e.eventIcon=o
+e.heroNum=i
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.eventName=t[2]
+e.eventStar=t[3]
+e.completeTimes=t[4]
+e.reward=t[5]
+e.event=t[6]
+e.borrowReward=t[7]
+e.costTimes=t[8]
+e.eventIcon=t[9]
+e.heroNum=t[10]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/collectibles/DTCollectiblesEventEntityTableData')
+end
+return a 

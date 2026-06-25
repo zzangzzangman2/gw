@@ -1,0 +1,28 @@
+local e=
+{
+ByIdx={
+{1,"UI_DeepSea/shmj_unlock_1","unlock_desc_1","","",{0}},
+{2,"UI_DeepSea/shmj_unlock_2","unlock_desc_2","","",{0}},
+{3,"UI_DeepSea/shmj_unlock_3","unlock_desc_3","","",{0}},
+{4,"UI_DeepSea/shmj_unlock_4","unlock_desc_4","","",{0}},
+{5,"UI_DeepSea/shmj_unlock_5","unlock_desc_5","","",{0}},
+{6,"UI_DeepSea/shmj_unlock_6","unlock_desc_6","","",{0}},
+{7,"UI_DeepSea/shmj_unlock_7","unlock_desc_7","","",{0}},
+{8,"UI_DeepSea/shmj_unlock_8","unlock_desc_8","","",{0}},
+{9,"UI_DeepSea/shmj_unlock_9","unlock_desc_9","","",{0}},
+{10,"UI_DeepSea/shmj_unlock_10","unlock_desc_10","","",{0}},
+{11,"UI_DeepSea/shmj_unlock_11","unlock_desc_11","","ui_deepsea_levelup_6",{100,120,140,160,170,180,185,190,195,200}},
+{12,"UI_DeepSea/shmj_unlock_12","unlock_desc_12","","ui_deepsea_levelup_5",{16,17,18,19,20,21,22,23,24,25}},
+{13,"UI_DeepSea/shmj_unlock_13","unlock_desc_13","","ui_deepsea_levelup_4",{8,8,9,9,10,10,11,11,12,12}},
+{14,"UI_DeepSea/shmj_unlock_14","unlock_desc_14","","ui_deepsea_levelup_3",{8,8,9,9,10,10,11,11,12,12}},
+{15,"UI_DeepSea/shmj_unlock_15","unlock_desc_15","","",{0}},
+{16,"UI_DeepSea/shmj_unlock_16","unlock_desc_16","","",{0}},
+{17,"UI_DeepSea/shmj_unlock_17","unlock_desc_17","","",{0}},
+{18,"UI_DeepSea/shmj_unlock_18","unlock_desc_18","","",{0}},
+{19,"UI_DeepSea/shmj_unlock_19","unlock_desc_19","","ui_deepsea_levelup_7",{0,4,4,5,5,6,6,7,7,8}},
+{20,"UI_DeepSea/shmj_unlock_20","unlock_desc_20","","ui_deepsea_levelup_8",{0,0,0,0,2,3,3,4,4,5}},
+{21,"UI_DeepSea/shmj_unlock_21","unlock_desc_21","","",{0}}
+},
+Len=21
+}
+return e 

@@ -1,0 +1,28 @@
+local e={id=0,source=0,needVip=0,target=0,consume={{},{}},result={}}
+e.__index=e
+function e.New(a,i,o,h,s,n)
+local t={}
+setmetatable(t,e)
+t.id=a
+t.source=i
+t.needVip=o
+t.target=h
+t.consume=s
+t.result=n
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.source=a[2]
+t.needVip=a[3]
+t.target=a[4]
+t.consume=a[5]
+t.result=a[6]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/item/DTItemComposeEntityTableData')
+end
+return e 

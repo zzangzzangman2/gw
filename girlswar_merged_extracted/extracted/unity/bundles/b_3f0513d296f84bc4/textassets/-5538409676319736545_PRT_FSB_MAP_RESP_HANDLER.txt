@@ -1,0 +1,11 @@
+local t={}
+function t:OnHandle(e)
+local e=assert(GlobalPB.decode("PRT_FSB_MAP_RESP",e));
+if(GameInit.GetDebugLogProto())then
+;
+;
+end
+ModulesInit.FullServerBattleMgr:onNetCallBack(ProtoId.PRT_FSB_MAP_RESP,e)
+return e
+end
+return t 

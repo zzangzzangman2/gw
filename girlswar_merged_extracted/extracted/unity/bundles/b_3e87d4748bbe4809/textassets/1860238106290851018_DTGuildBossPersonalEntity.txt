@@ -1,0 +1,40 @@
+local a={id=0,nextId=0,stageType=0,stageLevel=0,mapId=0,monster={},monsterId=0,name="",level=0,eliteReward={{},{}},mosterPhoto=0,finalReward={{},{}}}
+a.__index=a
+function a.New(s,d,h,t,u,c,m,l,r,i,o,n)
+local e={}
+setmetatable(e,a)
+e.id=s
+e.nextId=d
+e.stageType=h
+e.stageLevel=t
+e.mapId=u
+e.monster=c
+e.monsterId=m
+e.name=l
+e.level=r
+e.eliteReward=i
+e.mosterPhoto=o
+e.finalReward=n
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.nextId=t[2]
+e.stageType=t[3]
+e.stageLevel=t[4]
+e.mapId=t[5]
+e.monster=t[6]
+e.monsterId=t[7]
+e.name=t[8]
+e.level=t[9]
+e.eliteReward=t[10]
+e.mosterPhoto=t[11]
+e.finalReward=t[12]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/activity/DTGuildBossPersonalEntityTableData')
+end
+return a 

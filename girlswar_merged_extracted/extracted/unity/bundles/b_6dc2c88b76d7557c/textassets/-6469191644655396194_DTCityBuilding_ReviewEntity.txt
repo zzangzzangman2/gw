@@ -1,0 +1,88 @@
+local a={id=0,buildName="",bulidIcon="",randomDesc="",buildDesc="",buildType=0,functionId=0,buildLevel=0,canLevelUp=0,upCost={},unlockType=0,unlockPara={},new2unlockType=0,new2unlockPara={},new3unlockType=0,new3unlockPara={},new4UnlockType=0,new4UnlockPara={},mapBuildingIcon="",heroNum=0,timeMin=0,timeMax=0,rewardType=0,rewardNum=0,itemName="",randomReward={},rate=0,new1RewardType=0,new1RewardNum=0,new1ItemName="",new1RandomReward={},new1Rate=0,cityNPC="",npcId=0,voice={},showRewardType=0}
+a.__index=a
+function a.New(f,k,b,t,_,E,z,q,j,x,A,S,O,R,D,H,I,N,L,T,g,l,d,h,r,s,o,i,n,u,w,c,p,v,y,m)
+local e={}
+setmetatable(e,a)
+e.id=f
+e.buildName=k
+e.bulidIcon=b
+e.randomDesc=t
+e.buildDesc=_
+e.buildType=E
+e.functionId=z
+e.buildLevel=q
+e.canLevelUp=j
+e.upCost=x
+e.unlockType=A
+e.unlockPara=S
+e.new2unlockType=O
+e.new2unlockPara=R
+e.new3unlockType=D
+e.new3unlockPara=H
+e.new4UnlockType=I
+e.new4UnlockPara=N
+e.mapBuildingIcon=L
+e.heroNum=T
+e.timeMin=g
+e.timeMax=l
+e.rewardType=d
+e.rewardNum=h
+e.itemName=r
+e.randomReward=s
+e.rate=o
+e.new1RewardType=i
+e.new1RewardNum=n
+e.new1ItemName=u
+e.new1RandomReward=w
+e.new1Rate=c
+e.cityNPC=p
+e.npcId=v
+e.voice=y
+e.showRewardType=m
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.buildName=t[2]
+e.bulidIcon=t[3]
+e.randomDesc=t[4]
+e.buildDesc=t[5]
+e.buildType=t[6]
+e.functionId=t[7]
+e.buildLevel=t[8]
+e.canLevelUp=t[9]
+e.upCost=t[10]
+e.unlockType=t[11]
+e.unlockPara=t[12]
+e.new2unlockType=t[13]
+e.new2unlockPara=t[14]
+e.new3unlockType=t[15]
+e.new3unlockPara=t[16]
+e.new4UnlockType=t[17]
+e.new4UnlockPara=t[18]
+e.mapBuildingIcon=t[19]
+e.heroNum=t[20]
+e.timeMin=t[21]
+e.timeMax=t[22]
+e.rewardType=t[23]
+e.rewardNum=t[24]
+e.itemName=t[25]
+e.randomReward=t[26]
+e.rate=t[27]
+e.new1RewardType=t[28]
+e.new1RewardNum=t[29]
+e.new1ItemName=t[30]
+e.new1RandomReward=t[31]
+e.new1Rate=t[32]
+e.cityNPC=t[33]
+e.npcId=t[34]
+e.voice=t[35]
+e.showRewardType=t[36]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/city/DTCityBuilding_ReviewEntityTableData')
+end
+return a 

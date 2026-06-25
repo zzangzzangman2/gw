@@ -1,0 +1,13 @@
+local e=
+{
+ByIdx={
+{1,{1,4},"actDoubleDesc_1",8,1.5,8},
+{2,{1,7},"actDoubleDesc_2",8,1.5,70},
+{3,{4,5},"actDoubleDesc_3",8,1.5,8},
+{4,{3,6},"actDoubleDesc_4",8,1.5,8},
+{5,{2,5,7},"actDoubleDesc_5",8,1.5,8},
+{6,{2,6},"actDoubleDesc_6",8,2,8}
+},
+Len=6
+}
+return e 

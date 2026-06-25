@@ -1,0 +1,44 @@
+local a={id=0,speedUpCost={},speedUpFree=0,speedUpFristGift=0,speedUpEffect=0,unlockShopCost={},shopCost={},waterAward={},reclamationAward={},sowAward={},growAward={},spcEventProbability=0,orderNeedCount={{},{}},seedItem={}}
+a.__index=a
+function a.New(s,l,r,t,u,m,f,w,c,d,i,o,n,h)
+local e={}
+setmetatable(e,a)
+e.id=s
+e.speedUpCost=l
+e.speedUpFree=r
+e.speedUpFristGift=t
+e.speedUpEffect=u
+e.unlockShopCost=m
+e.shopCost=f
+e.waterAward=w
+e.reclamationAward=c
+e.sowAward=d
+e.growAward=i
+e.spcEventProbability=o
+e.orderNeedCount=n
+e.seedItem=h
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.speedUpCost=t[2]
+e.speedUpFree=t[3]
+e.speedUpFristGift=t[4]
+e.speedUpEffect=t[5]
+e.unlockShopCost=t[6]
+e.shopCost=t[7]
+e.waterAward=t[8]
+e.reclamationAward=t[9]
+e.sowAward=t[10]
+e.growAward=t[11]
+e.spcEventProbability=t[12]
+e.orderNeedCount=t[13]
+e.seedItem=t[14]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/magicOrchard/DTMagicOrchardEntityTableData')
+end
+return a 

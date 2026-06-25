@@ -1,0 +1,11 @@
+sp_limitedtime_entry.png
+size:512,256
+filter:Linear,Linear
+111
+bounds:0,0,215,48
+2
+bounds:175,50,56,31
+3
+bounds:175,132,91,91
+4
+bounds:0,50,173,173

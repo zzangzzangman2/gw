@@ -1,0 +1,12 @@
+local e=
+{
+ByIdx={
+{1,40,3,"kvkcityname_1"},
+{3,60,15,"kvkcityname_3"},
+{4,40,7,"kvkcityname_4"},
+{5,25,3,"kvkcityname_5"},
+{6,15,1,"kvkcityname_6"}
+},
+Len=5
+}
+return e 

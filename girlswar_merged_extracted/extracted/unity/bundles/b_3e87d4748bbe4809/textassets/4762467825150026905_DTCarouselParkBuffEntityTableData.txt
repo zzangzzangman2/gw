@@ -1,0 +1,13 @@
+local e=
+{
+ByIdx={
+{9101,1,"ParkSkillName_9101","ParkSkillDesc_9101","hzzz_buff01"},
+{9102,1,"ParkSkillName_9102","ParkSkillDesc_9102","hzzz_buff02"},
+{9103,1,"ParkSkillName_9103","ParkSkillDesc_9103","hzzz_buff03"},
+{9201,2,"ParkSkillName_9201","ParkSkillDesc_9201","ParkSkillIcon_9201"},
+{9301,3,"ParkSkillName_9301","ParkSkillDesc_9301","ParkSkillIcon_9301"},
+{9401,4,"ParkSkillName_9401","ParkSkillDesc_9401","ParkSkillIcon_9401"}
+},
+Len=6
+}
+return e 

@@ -1,0 +1,14 @@
+local e=
+{
+ByIdx={
+{1,"npcName_1",1,11011,"npcIcon_1",902402,"npcDesc_1","tips.common_59"},
+{2,"npcName_2",1,11057,"npcIcon_2",902202,"npcDesc_2","tips.common_60"},
+{3,"npcName_3",1,11052,"npcIcon_3",902102,"npcDesc_3","tips.common_61"},
+{4,"npcName_4",1,11040,"npcIcon_4",901802,"npcDesc_4","tips.common_62"},
+{5,"npcName_5",1,11180,"npcIcon_5",902002,"npcDesc_5","tips.common_63"},
+{6,"npcName_6",1,11018,"0",902302,"npcDesc_6","tips.common_64"},
+{7,"npcName_7",0,11041,"0",901902,"0","0"}
+},
+Len=7
+}
+return e 

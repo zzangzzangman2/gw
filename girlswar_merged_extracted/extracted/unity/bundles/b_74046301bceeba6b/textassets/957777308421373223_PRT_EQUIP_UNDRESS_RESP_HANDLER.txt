@@ -1,0 +1,10 @@
+local e={}
+function e:OnHandle(e)
+local e=assert(GlobalPB.decode("PRT_EQUIP_UNDRESS_RESP",e));
+if(GameInit.GetDebugLogProto())then
+;
+;
+end
+EventSystem.SendEvent(CommonEventId.OnEquipUnDress,e)
+end
+return e 

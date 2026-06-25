@@ -1,0 +1,24 @@
+local e={id=0,type=0,point=0,text=""}
+e.__index=e
+function e.New(o,a,n,i)
+local t={}
+setmetatable(t,e)
+t.id=o
+t.type=a
+t.point=n
+t.text=i
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.type=a[2]
+t.point=a[3]
+t.text=a[4]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/activity/DTBestTreasurePointEntityTableData')
+end
+return e 

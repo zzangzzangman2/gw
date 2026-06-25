@@ -1,0 +1,6 @@
+shmj_jianzhujiesuoqipao.png
+size:128,128
+filter:Linear,Linear
+a3
+bounds:2,2,95,101
+offsets:1,1,97,105

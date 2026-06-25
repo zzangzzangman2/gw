@@ -1,0 +1,12 @@
+Painting_21015_Back.png
+size:2048,2048
+filter:Linear,Linear
+bgb1
+bounds:0,830,1541,988
+bgb2
+bounds:0,266,1097,563
+bgb3
+bounds:841,0,1207,988
+rotate:180
+effect/effect_5
+bounds:1098,629,214,200

@@ -1,0 +1,20 @@
+local e={id=0,unit={}}
+e.__index=e
+function e.New(a,o)
+local t={}
+setmetatable(t,e)
+t.id=a
+t.unit=o
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.unit=a[2]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/activity/DTGameDismantleBlocksUnitEntityTableData')
+end
+return e 

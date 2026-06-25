@@ -1,0 +1,10 @@
+
+?
+ActTotalRechargeGem.protoActTotalRecharge.proto"!
+PRT_TOTAL_RECHARGE_GEM_INFO_REQ"?
+ PRT_TOTAL_RECHARGE_GEM_INFO_RESP
+endTime (RendTime
+curDay (RcurDay1
+charges (2.PRT_TOTAL_RECHARGE_DAYRcharges
+	awardDays (R	awardDaysB
+com.next1b.nextsvr.protobproto3

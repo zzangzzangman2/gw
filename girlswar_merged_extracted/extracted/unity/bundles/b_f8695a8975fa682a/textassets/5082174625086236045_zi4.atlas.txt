@@ -1,0 +1,8 @@
+zi4.png
+size:512,512
+filter:Linear,Linear
+effect/effect_1
+bounds:0,49,397,391
+zi_5
+bounds:0,0,385,47
+offsets:1,1,387,48

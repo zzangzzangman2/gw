@@ -1,0 +1,19 @@
+local e=
+{
+ByIdx={
+{1,150,180,0,"luckydesc_1","luckydesc_2",170},
+{2,300,190,0,"luckydesc_3","luckydesc_4",180},
+{3,550,200,0,"luckydesc_5","luckydesc_6",190},
+{4,150,180,0,"luckydesc_7","luckydesc_8",170},
+{5,300,190,0,"luckydesc_9","luckydesc_10",180},
+{6,550,200,0,"luckydesc_11","luckydesc_12",190},
+{7,150,180,0,"luckydesc_13","luckydesc_14",170},
+{8,300,190,0,"luckydesc_15","luckydesc_16",180},
+{9,550,200,0,"luckydesc_17","luckydesc_18",190},
+{10,150,180,0,"luckydesc_19","luckydesc_20",170},
+{11,300,190,0,"luckydesc_21","luckydesc_22",180},
+{12,550,200,0,"luckydesc_23","luckydesc_24",190}
+},
+Len=12
+}
+return e 

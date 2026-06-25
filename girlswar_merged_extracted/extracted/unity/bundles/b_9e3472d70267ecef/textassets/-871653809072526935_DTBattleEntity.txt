@@ -1,0 +1,30 @@
+local t={id=0,enum="",prefabId=0,maxTurn=0,canSkip=0,poseChange=0,PreloadMapItemCount=0}
+t.__index=t
+function t.New(o,h,a,s,r,n,i)
+local e={}
+setmetatable(e,t)
+e.id=o
+e.enum=h
+e.prefabId=a
+e.maxTurn=s
+e.canSkip=r
+e.poseChange=n
+e.PreloadMapItemCount=i
+return e
+end
+function t.NewFromArrItem(a)
+local e={}
+setmetatable(e,t)
+e.id=a[1]
+e.enum=a[2]
+e.prefabId=a[3]
+e.maxTurn=a[4]
+e.canSkip=a[5]
+e.poseChange=a[6]
+e.PreloadMapItemCount=a[7]
+return e
+end
+function t.GetArr()
+return require('DataNode/DataTable/Create/constant/DTBattleEntityTableData')
+end
+return t 

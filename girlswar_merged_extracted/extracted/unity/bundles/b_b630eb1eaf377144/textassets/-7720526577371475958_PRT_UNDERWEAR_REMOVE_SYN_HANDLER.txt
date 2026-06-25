@@ -1,0 +1,10 @@
+local e={}
+function e:OnHandle(e)
+local e=assert(GlobalPB.decode("PRT_UNDERWEAR_REMOVE_SYN",e));
+if(GameInit.GetDebugLogProto())then
+;
+;
+end
+UnderwearMgr:RemoveUnderwear(e)
+end
+return e 

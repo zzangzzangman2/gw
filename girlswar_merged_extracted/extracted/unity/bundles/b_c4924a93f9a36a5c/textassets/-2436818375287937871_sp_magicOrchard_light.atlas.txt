@@ -1,0 +1,9 @@
+sp_magicOrchard_light.png
+size:1024,512
+filter:Linear,Linear
+666
+bounds:0,0,500,536
+rotate:90
+c007
+bounds:537,112,378,388
+offsets:27,0,430,388

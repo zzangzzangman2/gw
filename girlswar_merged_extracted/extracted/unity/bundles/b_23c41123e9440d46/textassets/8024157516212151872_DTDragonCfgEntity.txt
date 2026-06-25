@@ -1,0 +1,42 @@
+local a={id=0,groupCopyNum=0,copyTime="",startTime=0,actDays=0,openTime="",endTime="",dailyHelpTime=0,roomCloseTime=0,keyMaxDrop=0,helpOpenLv=0,activityTicketItem={},activityDailyHelpNum=0}
+a.__index=a
+function a.New(s,d,h,t,l,c,m,f,u,r,i,o,n)
+local e={}
+setmetatable(e,a)
+e.id=s
+e.groupCopyNum=d
+e.copyTime=h
+e.startTime=t
+e.actDays=l
+e.openTime=c
+e.endTime=m
+e.dailyHelpTime=f
+e.roomCloseTime=u
+e.keyMaxDrop=r
+e.helpOpenLv=i
+e.activityTicketItem=o
+e.activityDailyHelpNum=n
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.groupCopyNum=t[2]
+e.copyTime=t[3]
+e.startTime=t[4]
+e.actDays=t[5]
+e.openTime=t[6]
+e.endTime=t[7]
+e.dailyHelpTime=t[8]
+e.roomCloseTime=t[9]
+e.keyMaxDrop=t[10]
+e.helpOpenLv=t[11]
+e.activityTicketItem=t[12]
+e.activityDailyHelpNum=t[13]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/dragon/DTDragonCfgEntityTableData')
+end
+return a 

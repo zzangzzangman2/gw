@@ -1,0 +1,38 @@
+local a={id=0,startAttr={{},{}},baseCost={},spCost={},shopCost=0,baseCostChange={},spCostChange={},reviveCost={},reviveCutNum=0,initialMap=0,accelerationFactor=0}
+a.__index=a
+function a.New(n,r,s,t,l,u,c,d,h,o,i)
+local e={}
+setmetatable(e,a)
+e.id=n
+e.startAttr=r
+e.baseCost=s
+e.spCost=t
+e.shopCost=l
+e.baseCostChange=u
+e.spCostChange=c
+e.reviveCost=d
+e.reviveCutNum=h
+e.initialMap=o
+e.accelerationFactor=i
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.startAttr=t[2]
+e.baseCost=t[3]
+e.spCost=t[4]
+e.shopCost=t[5]
+e.baseCostChange=t[6]
+e.spCostChange=t[7]
+e.reviveCost=t[8]
+e.reviveCutNum=t[9]
+e.initialMap=t[10]
+e.accelerationFactor=t[11]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/activity/DTCarouselParkBaseEntityTableData')
+end
+return a 

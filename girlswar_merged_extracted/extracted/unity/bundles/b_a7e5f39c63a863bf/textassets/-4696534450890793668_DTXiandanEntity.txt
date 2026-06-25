@@ -1,0 +1,26 @@
+local e={id=0,activityId=0,activityArgs=0,multiCount=0,consumeItem={}}
+e.__index=e
+function e.New(o,n,a,s,i)
+local t={}
+setmetatable(t,e)
+t.id=o
+t.activityId=n
+t.activityArgs=a
+t.multiCount=s
+t.consumeItem=i
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.activityId=a[2]
+t.activityArgs=a[3]
+t.multiCount=a[4]
+t.consumeItem=a[5]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/xiandan/DTXiandanEntityTableData')
+end
+return e 

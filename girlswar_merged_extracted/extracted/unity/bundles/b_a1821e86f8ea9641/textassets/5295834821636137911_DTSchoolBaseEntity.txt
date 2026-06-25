@@ -1,0 +1,48 @@
+local a={id=0,childStorage=0,requestStorage=0,matchStorage=0,freeTeaching=0,requestTimes=0,bogusGet={{},{}},resumption=0,autoUnlockType=0,autoUnlockPara={},replenishItem=0,convertible=0,marryLevel={},lowClassTierGraduReward={{},{}},midClassTierGraduReward={{},{}},highClassTierGraduReward={{},{}}}
+a.__index=a
+function a.New(h,u,d,t,c,f,y,w,p,m,l,n,i,o,s,r)
+local e={}
+setmetatable(e,a)
+e.id=h
+e.childStorage=u
+e.requestStorage=d
+e.matchStorage=t
+e.freeTeaching=c
+e.requestTimes=f
+e.bogusGet=y
+e.resumption=w
+e.autoUnlockType=p
+e.autoUnlockPara=m
+e.replenishItem=l
+e.convertible=n
+e.marryLevel=i
+e.lowClassTierGraduReward=o
+e.midClassTierGraduReward=s
+e.highClassTierGraduReward=r
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.childStorage=t[2]
+e.requestStorage=t[3]
+e.matchStorage=t[4]
+e.freeTeaching=t[5]
+e.requestTimes=t[6]
+e.bogusGet=t[7]
+e.resumption=t[8]
+e.autoUnlockType=t[9]
+e.autoUnlockPara=t[10]
+e.replenishItem=t[11]
+e.convertible=t[12]
+e.marryLevel=t[13]
+e.lowClassTierGraduReward=t[14]
+e.midClassTierGraduReward=t[15]
+e.highClassTierGraduReward=t[16]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/school/DTSchoolBaseEntityTableData')
+end
+return a 

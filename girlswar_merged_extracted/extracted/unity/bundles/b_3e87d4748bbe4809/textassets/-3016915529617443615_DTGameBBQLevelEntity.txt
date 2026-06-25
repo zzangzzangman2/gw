@@ -1,0 +1,28 @@
+local e={id=0,scoreLevel={},orderFoodMaterialNum={{},{}},orderScore={{},{}},orderFeverScore={{},{}},SpecialOrderWeight={}}
+e.__index=e
+function e.New(a,i,o,h,s,n)
+local t={}
+setmetatable(t,e)
+t.id=a
+t.scoreLevel=i
+t.orderFoodMaterialNum=o
+t.orderScore=h
+t.orderFeverScore=s
+t.SpecialOrderWeight=n
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.scoreLevel=a[2]
+t.orderFoodMaterialNum=a[3]
+t.orderScore=a[4]
+t.orderFeverScore=a[5]
+t.SpecialOrderWeight=a[6]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/activity/DTGameBBQLevelEntityTableData')
+end
+return e 

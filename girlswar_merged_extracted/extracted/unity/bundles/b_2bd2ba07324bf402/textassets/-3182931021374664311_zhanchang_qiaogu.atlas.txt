@@ -1,0 +1,9 @@
+zhanchang_qiaogu.png
+size:256,512
+filter:Linear,Linear
+jtzbz_btntiaozhan
+bounds:0,188,105,105
+jtzbz_btntiaozhanbg
+bounds:0,0,185,185
+jtzbz_btntiaozhanbg1
+bounds:107,187,83,106

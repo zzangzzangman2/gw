@@ -1,0 +1,11 @@
+local t={}
+function t:OnHandle(e)
+local e=assert(GlobalPB.decode("PRT_SERVER_DATA_SYN",e));
+if(GameInit.GetDebugLogProto())then
+;
+;
+end
+ServerIssueMgr:synData(e)
+return e
+end
+return t 

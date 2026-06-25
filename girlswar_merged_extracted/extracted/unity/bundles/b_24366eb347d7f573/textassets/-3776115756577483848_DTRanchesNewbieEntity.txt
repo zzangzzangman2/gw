@@ -1,0 +1,30 @@
+local t={id=0,points=0,typology=0,occupancy=0,prefabId=0,skillId=0,ranchesIcon=""}
+t.__index=t
+function t.New(o,h,a,s,r,n,i)
+local e={}
+setmetatable(e,t)
+e.id=o
+e.points=h
+e.typology=a
+e.occupancy=s
+e.prefabId=r
+e.skillId=n
+e.ranchesIcon=i
+return e
+end
+function t.NewFromArrItem(a)
+local e={}
+setmetatable(e,t)
+e.id=a[1]
+e.points=a[2]
+e.typology=a[3]
+e.occupancy=a[4]
+e.prefabId=a[5]
+e.skillId=a[6]
+e.ranchesIcon=a[7]
+return e
+end
+function t.GetArr()
+return require('DataNode/DataTable/Create/herbs/DTRanchesNewbieEntityTableData')
+end
+return t 

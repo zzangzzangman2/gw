@@ -1,0 +1,28 @@
+local e={id=0,consumption={{},{}},finallyAward={{},{}},showRank=0,rebateShow=0,mainItem={}}
+e.__index=e
+function e.New(a,i,o,h,s,n)
+local t={}
+setmetatable(t,e)
+t.id=a
+t.consumption=i
+t.finallyAward=o
+t.showRank=h
+t.rebateShow=s
+t.mainItem=n
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.consumption=a[2]
+t.finallyAward=a[3]
+t.showRank=a[4]
+t.rebateShow=a[5]
+t.mainItem=a[6]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/activity/DTValentineEntityTableData')
+end
+return e 

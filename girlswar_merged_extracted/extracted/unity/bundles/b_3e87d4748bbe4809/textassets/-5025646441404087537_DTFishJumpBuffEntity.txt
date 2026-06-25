@@ -1,0 +1,26 @@
+local e={id=0,itemId=0,fishJumpExp=0,fishJumpPointBonus=0,buffDesc=""}
+e.__index=e
+function e.New(o,n,a,s,i)
+local t={}
+setmetatable(t,e)
+t.id=o
+t.itemId=n
+t.fishJumpExp=a
+t.fishJumpPointBonus=s
+t.buffDesc=i
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.itemId=a[2]
+t.fishJumpExp=a[3]
+t.fishJumpPointBonus=a[4]
+t.buffDesc=a[5]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/activity/DTFishJumpBuffEntityTableData')
+end
+return e 

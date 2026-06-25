@@ -1,0 +1,20 @@
+local e=
+{
+ByIdx={
+{1,"UIActSilveryPark/renou_1","UIActSilveryPark/gf1_bg1",0,0,{}},
+{2,"UIActSilveryPark/renou_2","UIActSilveryPark/gf1_bg1",0,0,{}},
+{3,"UIActSilveryPark/renou_3","UIActSilveryPark/gf1_bg1",0,0,{}},
+{4,"UIActSilveryPark/renou_4","UIActSilveryPark/gf1_bg1",0,0,{}},
+{5,"UIActSilveryPark/renou_5","UIActSilveryPark/gf1_bg2",1,1000,{{26503,1,10000}}},
+{6,"UIActSilveryPark/renou_6","UIActSilveryPark/gf1_bg2",2,1050,{{26504,1,10000}}},
+{7,"UIActSilveryPark/renou_7","UIActSilveryPark/gf1_bg2",4,1400,{{26505,1,10000}}},
+{8,"UIActSilveryPark/renou_8","UIActSilveryPark/gf1_bg3",8,2100,{{26506,1,10000}}},
+{9,"UIActSilveryPark/renou_9","UIActSilveryPark/gf1_bg3",16,3400,{{26507,1,10000}}},
+{10,"UIActSilveryPark/renou_10","UIActSilveryPark/gf1_bg3",32,5600,{{26508,1,10000}}},
+{11,"UIActSilveryPark/renou_11","UIActSilveryPark/gf1_bg4",64,8500,{{26509,1,10000}}},
+{12,"UIActSilveryPark/renou_12","UIActSilveryPark/gf1_bg4",128,10000,{{26510,1,10000}}},
+{13,"UIActSilveryPark/renou_13","UIActSilveryPark/gf1_bg4",256,10000,{{26511,1,10000}}}
+},
+Len=13
+}
+return e 

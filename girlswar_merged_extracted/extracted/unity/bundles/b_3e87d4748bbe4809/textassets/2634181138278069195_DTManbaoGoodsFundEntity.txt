@@ -1,0 +1,28 @@
+local e={id=0,condition=0,award={},chargeAward={},goods=0,fristBuyGet={}}
+e.__index=e
+function e.New(a,i,o,h,s,n)
+local t={}
+setmetatable(t,e)
+t.id=a
+t.condition=i
+t.award=o
+t.chargeAward=h
+t.goods=s
+t.fristBuyGet=n
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.condition=a[2]
+t.award=a[3]
+t.chargeAward=a[4]
+t.goods=a[5]
+t.fristBuyGet=a[6]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/activity/DTManbaoGoodsFundEntityTableData')
+end
+return e 

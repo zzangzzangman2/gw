@@ -1,0 +1,19 @@
+local e=
+{
+ByIdx={
+{1,1,0,2,1,{99707,1},{99706,60},"leyuanshop_99707","candyLandTabName_1",1,"UIActUrgrassland/shangdian_pztx_hong",6},
+{2,1,0,2,1,{20308,90},{99706,20},"leyuanshop_20308","candyLandTabName_1",1,"UIActUrgrassland/shangdian_pztx_hong",6},
+{3,2,1,2,1,{99707,1},{99706,60},"leyuanshop_99707","candyLandTabName_2",1,"UIActUrgrassland/shangdian_pztx_hong",6},
+{4,2,1,2,2,{72000,10},{99706,30},"leyuanshop_72000","candyLandTabName_2",1,"UIActUrgrassland/shangdian_pztx_hong",6},
+{5,3,2,2,1,{99707,1},{99706,60},"leyuanshop_99707","candyLandTabName_3",1,"UIActUrgrassland/shangdian_pztx_hong",6},
+{6,3,2,2,1,{20290,1},{99706,40},"leyuanshop_20290","candyLandTabName_3",1,"UIActUrgrassland/shangdian_pztx_hong",6},
+{7,1,0,2,1,{10024,30},{99944,20},"leyuanshop_10024","candyLandTabName_1",2,"UIActUrgrassland/shangdian_pztx_hong",6},
+{8,1,0,2,1,{20048,40},{99944,60},"leyuanshop_20048","candyLandTabName_1",2,"UIActUrgrassland/shangdian_pztx_hong",6},
+{9,2,1,2,3,{10024,35},{99944,20},"leyuanshop_10024","candyLandTabName_2",2,"UIActUrgrassland/shangdian_pztx_hong",6},
+{10,2,1,2,2,{72000,10},{99944,30},"leyuanshop_72000","candyLandTabName_2",2,"UIActUrgrassland/shangdian_pztx_hong",6},
+{11,3,2,2,2,{10024,120},{99944,50},"leyuanshop_10024","candyLandTabName_3",2,"UIActUrgrassland/shangdian_pztx_hong",6},
+{12,3,2,2,2,{20290,1},{99944,30},"leyuanshop_20290","candyLandTabName_3",2,"UIActUrgrassland/shangdian_pztx_hong",6}
+},
+Len=12
+}
+return e 

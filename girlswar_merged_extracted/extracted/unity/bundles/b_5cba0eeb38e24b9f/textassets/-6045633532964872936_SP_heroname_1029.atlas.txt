@@ -1,0 +1,13 @@
+SP_heroname_1029.png
+size:208,299
+filter:Linear,Linear
+images/1029
+bounds:2,2,295,65
+offsets:1,2,327,70
+rotate:90
+images/ssr
+bounds:69,5,153,79
+rotate:90
+images/t3
+bounds:69,160,137,137
+offsets:31,32,214,200

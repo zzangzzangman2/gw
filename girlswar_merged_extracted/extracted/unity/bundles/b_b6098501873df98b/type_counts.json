@@ -1,0 +1,16 @@
+{
+  "MonoBehaviour": 766,
+  "GameObject": 261,
+  "Transform": 261,
+  "ParticleSystem": 208,
+  "ParticleSystemRenderer": 208,
+  "Material": 82,
+  "MonoScript": 45,
+  "Texture2D": 27,
+  "PlayableDirector": 19,
+  "MeshRenderer": 11,
+  "Mesh": 11,
+  "MeshFilter": 11,
+  "Shader": 3,
+  "AssetBundle": 1
+}

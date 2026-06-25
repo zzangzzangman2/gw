@@ -1,0 +1,32 @@
+﻿{
+  "generatedAt": "2026-06-25 15:41:24",
+  "results": [
+    {
+      "key": "riyu",
+      "success": true,
+      "message": "saved",
+      "glyphCount": 383,
+      "characterCount": 384,
+      "outputAssetPath": "Assets/RestoreData/TMP/static_probe/GirlsWarStaticProbe_riyu_TMP.asset",
+      "atlasAssetPath": "Assets/RestoreData/TMP/static_probe/atlas/riyu_static_atlas.png"
+    },
+    {
+      "key": "EPM",
+      "success": true,
+      "message": "saved",
+      "glyphCount": 442,
+      "characterCount": 444,
+      "outputAssetPath": "Assets/RestoreData/TMP/static_probe/GirlsWarStaticProbe_EPM_TMP.asset",
+      "atlasAssetPath": "Assets/RestoreData/TMP/static_probe/atlas/EPM_static_atlas.png"
+    },
+    {
+      "key": "num",
+      "success": true,
+      "message": "saved",
+      "glyphCount": 24,
+      "characterCount": 24,
+      "outputAssetPath": "Assets/RestoreData/TMP/static_probe/GirlsWarStaticProbe_num_TMP.asset",
+      "atlasAssetPath": "Assets/RestoreData/TMP/static_probe/atlas/num_static_atlas.png"
+    }
+  ]
+}

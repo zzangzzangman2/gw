@@ -1,0 +1,9 @@
+local e=
+{
+ByIdx={
+{1,1,2,20058,20042,20273,14070001,"Assets/Download/UI/UIPrefabAndRes/ActCrowsTheatre_Ext_1__jp/actCrowsTheatre_title.png","crowsTheatreTheme_name_1","crowsTheatreTheme_desc_1","Assets/Download/UI/UIPrefabAndRes/ActCrowsTheatre_Ext_1/actCrowsTheatre_scriptBanner1.png","Assets/Download/UI/UIPrefabAndRes/ActCrowsTheatre_Ext_1/actCrowsTheatre_stageBg1.png",14060001,"Assets/Download/UI/UIPrefabAndRes/ActCrowsTheatre_Ext_1/actCrowsTheatre_gachaThemeBg.png","Assets/Download/UI/UIPrefabAndRes/ActCrowsTheatre_Prefabs/ActCrowsTheatreShow1.prefab",20004,20003,4510100},
+{2,3,4,20057,20041,20275,14070001,"Assets/Download/UI/UIPrefabAndRes/ActCrowsTheatre_Ext_1__jp/actCrowsTheatre_title.png","crowsTheatreTheme_name_2","crowsTheatreTheme_desc_2","Assets/Download/UI/UIPrefabAndRes/ActCrowsTheatre_Ext_1/actCrowsTheatre_scriptBanner1.png","Assets/Download/UI/UIPrefabAndRes/ActCrowsTheatre_Ext_1/actCrowsTheatre_stageBg1.png",14060001,"Assets/Download/UI/UIPrefabAndRes/ActCrowsTheatre_Ext_1/actCrowsTheatre_gachaThemeBg.png","Assets/Download/UI/UIPrefabAndRes/ActCrowsTheatre_Prefabs/ActCrowsTheatreShow1.prefab",20004,20003,4510100}
+},
+Len=2
+}
+return e 

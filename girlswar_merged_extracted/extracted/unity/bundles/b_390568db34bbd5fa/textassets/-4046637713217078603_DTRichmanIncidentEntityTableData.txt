@@ -1,0 +1,12 @@
+local e=
+{
+ByIdx={
+{1,2,"monotoSelf1","monotoNews1"},
+{2,2,"monotoSelf2","monotoNews2"},
+{3,2,"monotoSelf3","monotoNews3"},
+{4,2,"monotoSelf4","monotoNews4"},
+{6,20,"monotoSelf6","monotoNews6"}
+},
+Len=5
+}
+return e 

@@ -1,0 +1,32 @@
+local a={id=0,weight=0,universalCardWeight=0,reward={{},{}},prizeProbability=0,CardTypeTitle="",CardTypeDes="",rewardPreview=0}
+a.__index=a
+function a.New(i,h,n,t,d,r,s,o)
+local e={}
+setmetatable(e,a)
+e.id=i
+e.weight=h
+e.universalCardWeight=n
+e.reward=t
+e.prizeProbability=d
+e.CardTypeTitle=r
+e.CardTypeDes=s
+e.rewardPreview=o
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.weight=t[2]
+e.universalCardWeight=t[3]
+e.reward=t[4]
+e.prizeProbability=t[5]
+e.CardTypeTitle=t[6]
+e.CardTypeDes=t[7]
+e.rewardPreview=t[8]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/activity/DTCastleDivineCardTypeEntityTableData')
+end
+return a 

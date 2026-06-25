@@ -1,0 +1,576 @@
+﻿bundle,path_id,field,text,game_object_id,game_object_name
+download/ui/uiprefabandres/maininterface.assetbundle,-9169955995487634709,m_text,동 맹,6099186281708994144,text_off
+download/ui/uiprefabandres/maininterface.assetbundle,-9101714339323267865,m_Text,6,-6179388290721735867,text_num
+download/ui/uiprefabandres/maininterface.assetbundle,-9075025307981695997,m_text,수령 ,-6005187361460479994,text
+download/ui/uiprefabandres/maininterface.assetbundle,-9036452279196250576,m_Text,6,-8734565794043040060,text_num
+download/ui/uiprefabandres/maininterface.assetbundle,-9001524857115273491,m_text,무 장,4733557662678222366,text_off
+download/ui/uiprefabandres/maininterface.assetbundle,-8933725059554946811,m_Text,한,-1759341788187230058,text_kr
+download/ui/uiprefabandres/maininterface.assetbundle,-8842570151588361151,m_text,      d,-7349131133143407055,text_youjian
+download/ui/uiprefabandres/maininterface.assetbundle,-8816761211318364610,m_Text,동맹 선물 구매 정보 숨기기,1108672014035209329,text_set1
+download/ui/uiprefabandres/maininterface.assetbundle,-8785529312977370068,m_text,마을,-6388828218037548926,text_off
+download/ui/uiprefabandres/maininterface.assetbundle,-8686807682725696350,m_text,총 6명의 소녀 무장을 배경으로 선택하실 수 있습니다.,-7758940932814905663,text
+download/ui/uiprefabandres/maininterface.assetbundle,-8686722307351452481,m_Text,시스템 ,8323713141565151266,text_name
+download/ui/uiprefabandres/maininterface.assetbundle,-8600598423974834717,m_Text,1234,-6776804184382871339,inputAcc
+download/ui/uiprefabandres/maininterface.assetbundle,-8587595076594253511,m_text,이름,4913076362513536371,text_name
+download/ui/uiprefabandres/maininterface.assetbundle,-8558017568156120155,m_text,99,-3035383074510152146,num
+download/ui/uiprefabandres/maininterface.assetbundle,-8548314998860509617,m_text,"844,651,695",4149620439162436217,text_fight_num
+download/ui/uiprefabandres/maininterface.assetbundle,-8509123253941265486,m_Text,6,7427960514218364506,text_num
+download/ui/uiprefabandres/maininterface.assetbundle,-8426488999792253068,m_Text,Apple 로그인 삭제,-5413678246363012866,txt_apple_unbind
+download/ui/uiprefabandres/maininterface.assetbundle,-8409273557318605140,m_text,이미지,8136134781209646885,text_title
+download/ui/uiprefabandres/maininterface.assetbundle,-8358797115357997715,m_text,      dadfadsfadsf,4512528125967927824,text_youjian
+download/ui/uiprefabandres/maininterface.assetbundle,-8318630676036174251,m_text,000,2553992600669226189,text_wanfaTips
+download/ui/uiprefabandres/maininterface.assetbundle,-8285597675448055735,m_text,모 험,8611650040139552239,text_off
+download/ui/uiprefabandres/maininterface.assetbundle,-8241999686805195154,m_text,"용녀 토벌령
+뜨겁게 진행 중!",1476419751717041805,text_tmp_message (1)
+download/ui/uiprefabandres/maininterface.assetbundle,-8139157947392758730,m_text,동 맹,4082039795303117925,text_off
+download/ui/uiprefabandres/maininterface.assetbundle,-8067749576511705451,m_Text,취소,1379931244662496729,text_queren
+download/ui/uiprefabandres/maininterface.assetbundle,-8010001099342242387,m_Text,6,-2002401583210569359,text_num
+download/ui/uiprefabandres/maininterface.assetbundle,-8005870272167240310,m_Text,홍옥 소비 알림,2300963885127414928,text_set1
+download/ui/uiprefabandres/maininterface.assetbundle,-7996790143332653384,m_text,"7
+",-4284752466418043719,text_tmp_nandu_num
+download/ui/uiprefabandres/maininterface.assetbundle,-7978778445362889911,m_Text,동맹 가입시 홍옥 400개 무료 획득,5211986611953937469,text_message
+download/ui/uiprefabandres/maininterface.assetbundle,-7932612160430140606,m_text,마 을,7976057013547036725,text_off
+download/ui/uiprefabandres/maininterface.assetbundle,-7921586808545455900,m_Text,시스템,-1581283951147234726,text_name
+download/ui/uiprefabandres/maininterface.assetbundle,-7865037889663508451,m_Text,음악 설정,863557913757643176,text
+download/ui/uiprefabandres/maininterface.assetbundle,-7855073822951797152,m_text,12,-6041248253756072020,text_level_num
+download/ui/uiprefabandres/maininterface.assetbundle,-7764631197483468842,m_text,전속 비서,-1247753148101655124,text_qianghua
+download/ui/uiprefabandres/maininterface.assetbundle,-7755602249026151433,m_text, 설정,-6676038060271445053,text_6
+download/ui/uiprefabandres/maininterface.assetbundle,-7749753264278278351,m_text,설정,769869287154541144,text_shezhi
+download/ui/uiprefabandres/maininterface.assetbundle,-7704712689043706027,m_Text,6,1834040184046815307,text_num
+download/ui/uiprefabandres/maininterface.assetbundle,-7633222589485954418,m_Text,99,62432215881023157,text_num
+download/ui/uiprefabandres/maininterface.assetbundle,-7613288749363844043,m_text,임무 관련 설명,6094897319733571985,text
+download/ui/uiprefabandres/maininterface.assetbundle,-7548399963800416050,m_text,상점 ,-7982451266254442775,lab_shangdian_text
+download/ui/uiprefabandres/maininterface.assetbundle,-7523546300752786205,m_Text,이메일 삭제,-8159328885677309973,text_queren
+download/ui/uiprefabandres/maininterface.assetbundle,-7501338167499325205,m_text,<color=#599F50>누적 {0}시간</color> 방치 보상! 어서 수령하세요!,-2850655315310142644,text_tmp_message
+download/ui/uiprefabandres/maininterface.assetbundle,-7486414071341900398,m_Text,"주의사항: 로그인 시, 기존 서버를 선택해 주세요.",-4383067012425487823,text_2
+download/ui/uiprefabandres/maininterface.assetbundle,-7477270092640817535,m_text,동맹원: ,-1112031935058178255,text_tmp_chengyuan
+download/ui/uiprefabandres/maininterface.assetbundle,-7433060445405961867,m_Text,lv.150  123456789/12345678,-154447302177155526,text_lv
+download/ui/uiprefabandres/maininterface.assetbundle,-7414013004970850872,m_Text,비밀번호를 재입력해 주세요.,1265805457670374347,text_3
+download/ui/uiprefabandres/maininterface.assetbundle,-7378265728464933854,m_Text,OFF,8703052681660568353,text_guan
+download/ui/uiprefabandres/maininterface.assetbundle,-7348836297357461492,m_Text,시스템,-1720728295328038582,text_name
+download/ui/uiprefabandres/maininterface.assetbundle,-7310084777890929750,m_Text,탭하여 계속,-3934390202619264207,text
+download/ui/uiprefabandres/maininterface.assetbundle,-7272962661191208142,m_Text,시스템,5488681531515364937,text_name
+download/ui/uiprefabandres/maininterface.assetbundle,-7215615813942939380,m_Text,게임 설정,-5099918058730559217,text_bai
+download/ui/uiprefabandres/maininterface.assetbundle,-7167492412130985777,m_text,모 험,-4647534743836315149,text_on
+download/ui/uiprefabandres/maininterface.assetbundle,-7140258731040497940,m_text,옷장과의 약속,-3465555151582871899,txt_act_name
+download/ui/uiprefabandres/maininterface.assetbundle,-7138955852173365339,m_text,주 이미지 ,-4624424882258481730,text_small
+download/ui/uiprefabandres/maininterface.assetbundle,-7111680956927124694,m_Text,누적 4시간 방치 보상! 어서 수령하세요!,-6384874289575702343,text_message
+download/ui/uiprefabandres/maininterface.assetbundle,-7054099519597033566,m_text,출 정,-5362629721147960785,text_on
+download/ui/uiprefabandres/maininterface.assetbundle,-7031758716302067052,m_Text,ON,3902150363741132424,text_kai
+download/ui/uiprefabandres/maininterface.assetbundle,-7023270221163910281,m_Text,6,8208488197589711393,text_num
+download/ui/uiprefabandres/maininterface.assetbundle,-7012165538203657239,m_Text,99,-2511822428997417503,text_num
+download/ui/uiprefabandres/maininterface.assetbundle,-7001099708774699602,m_text,천하 쟁패 열렬히 진행 중!,5716084942009330476,text_tmp_message (1)
+download/ui/uiprefabandres/maininterface.assetbundle,-6963228740554706761,m_text,000,6235884102698714236,text_wanfaTips
+download/ui/uiprefabandres/maininterface.assetbundle,-6925197596620428308,m_text,옷장 속 약속,7161233510276806440,txt_face_name
+download/ui/uiprefabandres/maininterface.assetbundle,-6918775254588449823,m_text,출 정,316781895615049324,text_off
+download/ui/uiprefabandres/maininterface.assetbundle,-6908690484839911143,m_text,옷장과의 약속,-8835942810468792613,txt_act_name
+download/ui/uiprefabandres/maininterface.assetbundle,-6896733852254509727,m_text,옷장과의 약속,-5656279968327262454,txt_act_name
+download/ui/uiprefabandres/maininterface.assetbundle,-6878161557483508084,m_Text,OFF,2178913777330991865,text_guan
+download/ui/uiprefabandres/maininterface.assetbundle,-6861762346444819007,m_text,천하쟁패 진행 중,-1179192665805161621,text_tmp_message (1)
+download/ui/uiprefabandres/maininterface.assetbundle,-6842083781619974025,m_text,동맹 가입시 홍옥 400개 무료 획득,5256767050185476651,text_tmp_message
+download/ui/uiprefabandres/maininterface.assetbundle,-6840370240762915729,m_text,중,-8182693786225017022,text_title
+download/ui/uiprefabandres/maininterface.assetbundle,-6818907815447891745,m_text,      d,-7961927376928750478,text_youjian
+download/ui/uiprefabandres/maininterface.assetbundle,-6793392015219792289,m_text,모 험,-6603914356686123075,text_off
+download/ui/uiprefabandres/maininterface.assetbundle,-6761004256052244022,m_Text,"계정을 삭제하실 경우, 모든 서버의 계정 이메일 및 스토어 로그인 정보가 삭제됩니다. 계정을 정말로 삭제하시겠습니까?",-5217565220173274662,text_message
+download/ui/uiprefabandres/maininterface.assetbundle,-6683319376100122280,m_Text,보연사의 얼굴보연사의 얼굴,7422402691137615744,text_attrInfo
+download/ui/uiprefabandres/maininterface.assetbundle,-6596920605527704737,m_text,옷장과의 약속,7789208860844877972,txt_act_name
+download/ui/uiprefabandres/maininterface.assetbundle,-6565129774202569810,m_text,저장,7163977588355364015,text_queren
+download/ui/uiprefabandres/maininterface.assetbundle,-6376659564963010681,m_Text,시스템 ,6989945350092074715,text_name
+download/ui/uiprefabandres/maininterface.assetbundle,-6325968150810998117,m_Text,사용 중,-5299236617504205340,text_shiyong
+download/ui/uiprefabandres/maininterface.assetbundle,-6290140139471312832,m_Text,app시작→로그인 화면→데이터 연동→메일 주소와 비밀 번호 입력 후 연동하실 수 있습니다.,-4523279253066314993,text_2
+download/ui/uiprefabandres/maininterface.assetbundle,-6251953685070859637,m_Text,"이 이용약관(이하 약관이라 함)은 주식회사 tlcGames (이하 회사)가 스마트 기기를 통해 제공하는 게임 및 관련 제반서비스를 이용자가 이용함에 있어 회사와 이용자간의 권리, 의무 및 책임사항, 기타 필요한 사항을 규정함을 목적으로 합니다.
+
+제 1조 이용약관의 효력 및 변경
+1)회사는 이 약관의 내용을 이용자가 알 수 있도록 서비스 내에 게시합니다. 
+2) 합리적인 사유가 발생할 경우, 회사는 관계법령에 위배되지 않는 범위 내에서 본 약관을 개정할 수 있습니다. 
+3) 회사가 본 약관을 개정하는 경우에는 적용일자 및 개정사유를 명시하여 현행 약관과 함께 서비스 내 '공지사항'란을 통해 그 적용일자 7일 이전부터(이용자에게 불리한 내용의 경우에는 30일 이상) 적용일자 전일까지 가능한 전자적 수단을 통해 따로 명확히 통지할 수 있습니다. 
+4) 이 약관에 동의하는 것은 정기적으로 서비스 페이지를 방문하여 약관의 변경 사항을 확인하는 것에 동의함을 의미합니다. 변경된 약관에 대한 정보를 알지 못해 발생하는 이용자의 피해는 회사에서 책임지지 않습니다. 
+5) 이용자는 변경된 약관에 동의하지 않을 경우 이용계약을 해지할 수 있으며, 변경된 약관의 효력 발생일 이후에도 서비스를 계속 사용할 경우 약관의 변경 사항에 동의한 것으로 간주됩니다.
+
+제 2조 약관 외 준칙
+본 약관은 회사가 제공하는 개별 서비스의 별도 정책과 함께 적용되며 이에 명시되지 아니한 사항에 대해서는 정보통신망 이용촉진 및 정보보호 등에 관한 법률 및 기타 관계 법령에 따릅니다.
+
+제 3조 용어의 정의
+1. 본 약관에서 사용하는 용어의 정의는 다음과 같습니다.
+1) 회사라 함은 회원에게 서비스(콘텐츠 및 제반 서비스)를 제공하는 자를 말합니다.
+2) 회원이라 함은 본 약관에 동의하고 회사가 제공하는 서비스(콘텐츠 및 제반 서비스)의 이용자
+권한을 부여 받은 자를 말합니다.
+3) 임시회원(게스트 회원이라 칭함)이라 함은 회원 중 오픈마켓을 통한 회원 인증을 하지 않고 게스트로그인 모드를 이용하여 회사가 제공하는 서비스(콘텐츠 및 제반 서비스)를 이용하는 회원을 말합니다.
+4) 서비스 중 콘텐츠라 함은 모바일 기기로 이용할 수 있도록 회사가 서비스 제공과 관련하여 디지털방식으로 제작한 유료 또는 무료의 내용물 일체(게임 및 네트워크 서비스, 애플리케이션, 게임 머니, 게임 아이템 등)를 의미합니다.아이디(ID)라 함은 회원의 식별과 서비스(콘텐츠 및 제반 서비스)의 이용을 위하여 회원이 정하고, 회사가 승인하는 문자 또는 숫자의 조합을 말합니다.
+5) 비밀번호(PASSWORD)라 함은 회원임을 확인하고, 비밀의 보호를 위해 회원에게 부여된 아이디와 일치되는 회원 자신이 정한 문자 또는 숫자의 조합을 말합니다.
+6) 유상포인트라 함은 서비스(콘텐츠 및 제반 서비스)를 이용 또는 구매함에 있어 대금결제수단으로 사용할 수 있는 정보로서 회원이 회사 또는 제3자로부터 유상으로 구입한 것을 말합니다.
+7) 무상포인트라 함은 서비스(콘텐츠 및 제반 서비스)를 이용 또는 구매함에 있어 대금결제수단으로 사용할 수 있는 정보로서 회사 또는 제3자가 무상으로 회원에게 지급한 것을 말합니다.
+8) 오픈마켓 사업자라 함은 모바일 기기를 이용하여, 서비스를 다운로드 받고 결제를 대행하는 제3의 회사를 말합니다.
+2. 본 약관에 사용하는 용어의 정의는 제1항 각호에서 정하는 것을 제외하고는 관계법령 및 기타 일반적인 상관례에 의합니다.
+
+제 4조 서비스 이용계약의 성립
+이용계약은 이용자가 본 이용약관에 대한 동의 또는 회사의 게임을 다운로드 받거나 네트워크를 이용하여 콘텐츠를 이용하는 경우 이 약관에 동의한 것으로 봅니다.
+
+제 5조 이용신청 및 제한
+1)이용자는 애플리케이션을 다운로드하여 설치하거나, 네트워크를 이용하여 서비스 이용에 필요한 양식에서 요구하는 사항을 기재하는 등의 방법을 통해 이용 신청 및 이용이 가능 합니다. 
+2) 회사는 아래 사항에 해당되는 경우에 대해서는 승낙하지 않거나, 서비스 이용을 제한할 수 있습니다. 
+① 타인의 명의, 전화번호 및 단말기를 도용한 경우 
+② 이용 계약 신청서의 내용을 허위로 기재한 경우 
+③ 형법에서 규정한 범죄 행위의 목적으로 본 서비스를 이용하고자 하는 경우 
+④ 청소년보호법의 취지에 위배되는 목적으로 본 서비스를 이용하고자 하는 경우 
+⑤ 기타 현행 법령에 위배되는 목적으로 본 서비스를 이용하고자 하는 경우 
+⑥ 영리를 추구할 목적으로 본 서비스를 이용하고자 하는 경우 
+⑦ 본 서비스와 경쟁 관계에 있는 이용자가 회사의 이익을 저해하려는 목적으로 신청하는 경우 
+⑧ 대한민국 이외의 국가 중 서비스를 제공할 것으로 결정하지 않은 국가의 접속이용자에 대해 관리, 운영상 필요한 경우 
+⑨ 기타 규정한 제반 사항을 위반하며 신청하는 경우 
+3) 회사는 서비스 이용 신청자 또는 이용자에 대해 다음 각 호에 해당하는 경우에는 그 이용 신청 또는 서비스 이용을 사유가 해소될 때까지 제한할 수 있습니다. 
+① 회사가 설비의 여유가 없는 경우 
+② 회사의 기술상 지장이 있는 경우 
+③ 기타 회사의 사정으로 이용 승낙이 곤란한 경우
+
+제 6조 개인정보의 보호 및 사용
+1)회사는 관계 법령이 정하는 바에 따라 이용자 등록정보를 포함한 이용자의 개인정보를 보호하기 위해 노력하며, 개인정보의 보호 및 사용에 대해서는 관련 법령 및 회사의 ""개인정보 처리방침""에 따릅니다. 단, 회사의 공식 사이트 이외의 링크된 사이트에서는 회사의 ""개인정보 처리방침""이 적용되지 않습니다. 
+2) 서비스의 특성에 따라 이용자에게 입력 받은 별명, 사진 등 자신을 소개하는 내용이 이용자에게 공개될 수 있습니다.
+
+제 7조 회사의 의무
+1)""회사""는 관련법과 본 약관의 금지하는 행위를 하지 않으며, 계속적이고 안정적으로 서비스를 제공하기 위하여 최선을 다하여 노력합니다. 
+2) ""회사""는 안전하게 서비스를 이용할 수 있도록 개인정보보호를 위해 보안시스템을 갖추어야 합니다. 
+3) ""회사""는 이용 고객으로부터 제기되는 의견이나 불만이 정당하다고 객관적으로 인정될 경우에는 적절한 절차를 거쳐 즉시 처리하여야 합니다. 다만, 즉시 처리가 곤란한 경우는 이용자에게 그 사유와 처리 일정을 통보 하여야 합니다.
+
+제 8조 이용자의 의무
+1) 이용자는 본 약관에서 규정하는 사항과 기타 회사가 정한 제반 규정, 회사가 공지하는 사항을 준수하여야 합니다. 또한 이용자는 회사의 업무에 방해가 되는 행위, 회사의 명예를 손상시키는 행위를 해서는 안됩니다. 
+2) 이용자는 청소년보호법 등 관계 법령을 준수하여야 합니다. 이용자가 청소년 보호법 등 관계 법령을 위반한 경우는 해당 법령에 의거 처벌을 받게 됩니다. 
+3) 이용자는 회사의 사전 승낙 없이 서비스를 이용하여 영업 활동을 할 수 없으며, 그 영업 활동의 결과에 대한책임은 이용자에게 있습니다. 또한 이용자는 이와 같은 영업 활동으로 회사에 손해를 끼칠 경우, 이용자는 회사에 대해 손해배상 의무를 지며 회사는 해당 이용자에 대해 서비스 이용 제한 및 적법한 절차를 거쳐 손해배상 등을 청구할 수 있습니다. 
+4) 이용자ID에 관한 관리책임은 이용자에게 있으며, 이를 제3자가 이용하도록 하여서는 안됩니다. 
+5) 이용자는 다음 각 호에 해당하는 행위를 하여서는 안되며, 해당 행위를 하는 경우에 회사는 이용자의 서비스 이용제한, 관련 정보(글, 사진, 영상 등) 삭제 및 적법 조치를 포함한 이용제한 조치를 가할 수 있습니다. 또한 그로 인해 발생한 문제의 책임은 이용자 본인에게 있습니다. 
+① 각종 신청, 변경, 등록 시 허위의 내용을 등록하거나, 타인을 기망하는 행위 
+② 타인의 정보를 도용한 행위 
+③ 회사로부터 특별한 권리를 받지 않고 회사의 프로그램을 변경하거나, 회사의 서버를 해킹 하거나 웹사이트 또는 게시된 정보의 일부분 또는 전체를 임의로 변경하거나, 회사의 서비스를 비정상적인 방법으로 사용하는 행위 
+④ 회사 프로그램 상의 버그를 악용하는 행위 
+⑤ 정상적이지 아니한 방법으로 사이버 자산(ID, 캐릭터, 아이템, 게임 내 머니 등)을 취득, 양도 또는 매매하는 행위 
+⑥ 서비스에 위해를 가하거나 서비스를 고의로 방해하는 행위 
+⑦ 회사의 사전 승낙 없이 서비스를 이용하여 영업활동을 하는 행위 
+⑧ 본 서비스를 통해 얻은 정보를 회사의 사전 승낙 없이 서비스 이용 외의 목적으로 복제하거나, 이를 출판 및 방송 등에 사용하거나, 제 3자에게 제공하는 행위 
+⑨ 타인의 특허, 상표, 영업비밀, 저작권, 기타 지적재산권을 침해하는 내용을. 전송, 게시 또는 기타의 방법으로 타인에게 유포하는 행위 
+⑩ 청소년보호법 또는 법에 위반되는 저속, 음란한 내용의 정보, 문장, 도형, 음향, 동영상을 전송, 게시 또는 기타의 방법으로 타인에게 유포하는 행위 
+⑪ 심히 모욕적이거나 개인신상에 대한 내용이어서 타인의 명예나 프라이버시를 침해할 수 있는 내용을 전송, 게시 또는 기타의 방법으로 타인에게 유포하는 행위 
+⑫ 다른 이용자를 희롱 또는 위협하거나, 특정 이용자에게 지속적으로 고통 또는 불편을 주는 행위 
+⑬ 회사의 승인을 받지 않고 다른 사용자의 개인정보를 수집 또는 저장하는 행위 
+⑭ 범죄와 결부된다고 객관적으로 판단되는 행위 
+⑮ 기타 관계 법령에 위배되는 행위
+
+제 9조 서비스의 이용
+1) 회사는 본 서비스 이용 희망자의 전용 애플리케이션 다운로드, 설치, 네트워크를 통한 이용신청  즉시 서비스를 개시합니다. 단, 회사의 업무상 또는 기술상의 장애로 인하여 서비스를 개시하지 못하는 경우, 서비스 상에 공지하거나 이용자에게 즉시 이를 통지합니다. 
+2) 회사는 스마트 기기를 위한 전용 애플리케이션 또는 네트워크를 이용하여 서비스를 제공하며, 이용자는 애플리케이션을 다운로드하여 설치하거나 네트워크를 이용하여 무료 또는 유료로 서비스를 이용할 수 있습니다. 
+3) 유료 서비스의 경우 해당 서비스에 명시된 요금을 지불하여야 사용 가능하며 네트워크를 통해 애플리케이션 다운로드 또는 서비스를 이용하는 경우 가입한 이동통신사에서 정한 별도의 요금이 발생할 수 있습니다. 
+4) 다운로드하여 설치한 애플리케이션 또는 네트워크 서비스를 통해 이용하는 서비스의 경우 스마트 기기 또는 이동통신사의 특성에 맞도록 제공되며 스마트 기기의 변경, 번호 변경 및 해외 로밍의 경우 콘텐츠의 전부 또는 일부 기능을 이용할 수 없으며 이 경우 회사는 어떠한 책임도 부담하지 않습니다.
+
+제 10조 서비스의 변경 및 중지
+1)회사는 시스템 점검, 증설 및 교체 등 부득이한 사유로 인하여 서비스를 중단할 수 있으며 서비스 페이지를 통해 사전 고지합니다. 사전에 통지할 수 없는 부득이한 사정이 있는 경우는 사후에 통지를 할 수 있습니다. 
+2) 회사는 새로운 콘텐츠, 콘텐츠의 내용(아이템, 경험치, 게임 내 머니 등)이 운영상, 기술상 필요한 경우에 서비스의 전부 또는 일부를 사전 공지 후 수정할 수 있습니다. 단, 부득이한 사유가 있는 경우에는 사후 공지할 수 있습니다. 
+3) 서비스의 변경 등으로 이용자는 유료 서비스 이용이 불가함으로 인해 받은 손해 외에 별도의 손해배상을 청구할 수 없습니다. 특히, 서비스 이용에 따른 기대수익, 회사가 직접 제공하지 않은 혜택의 상실로 인한 피해에 대해 회사는 책임질 의무를 지지 않습니다. 
+4) 회사는 기술상, 운영상에 필요에 의해 서비스 전부를 중단할 경우 30일전에 서비스페이지에 이를 공지하고 서비스의 제공을 중단할 수 있습니다. 사전에 통지할 수 없는 부득이한 사정이 있는 경우는 사후에 통지를 할 수 있습니다.
+
+제 11조 서비스 이용제한
+회사는 이용자가 서비스 이용내용에 있어서 본 약관 제 9조 내용을 위반하는 경우 사전통보 없이 서비스 이용을 제한할 수 있습니다.
+
+제 12조 광고의 제공 및 광고주와의 거래
+1)회사가 이용자에게 서비스를 제공할 수 있는 서비스 투자 기반의 일부는 광고 게재를 통한 수익으로부터 나옵니다. 서비스를 이용하고자 하는 이용자는 서비스 이용 시 노출되는 광고 게재에 대해 동의하는 것으로 간주됩니다. 
+2) 회사는 본 서비스에 게재되어 있거나 본 서비스를 통한 광고주의 판촉 활동에 이용자가 참여하거나 교신 또는 거래의 결과로서 발생하는 모든 손실 또는 손해에 대해 책임을 지지 않습니다.
+
+제 13조 게시물에 대한 저작권
+1)이용자가 서비스를 이용하면서 게시한 저작물에 대한 권리와 책임은 이용자 본인에게 있습니다. 
+2) 회사가 작성한 저작물에 대한 저작권 기타 지적재산권은 회사에 귀속합니다. 
+3) 회사는 특정 게시물이 명예훼손, 사생활침해 등에 해당한다고 판단될 경우 그 게시자에게 사전 통지 없이 관련 게시물이나 자료에 대하여 '임시조치'를 취하며, 그 이후에는 당사자간 합의와 관련 법령 및 회사의 정책에 따라 이를 삭제 또는 복원할 수 있습니다.
+
+제 14조 대금결제
+콘텐츠에 대한 구매 대금은 원칙적으로 이동통신사와 애플리케이션 스토어 등에서 정하는 정책, 방법 등에 따라 부과되며 납부 방법 역시 정해진 방법에 따라 납부해야 합니다. 회사 및 결제업체(이동통신사, 애플리케이션 스토어 등)의 정책, 정부의 방침 등에 따라 한도가 부여 또는 조정될 수 있습니다.
+
+제15조 모바일 사이버캐쉬 환불
+1)모바일 사이버캐쉬 충전 서비스 관련하여 다음의 각 호와 같은 경우에 해당된다면, 고객센터를 통한 환불 신청 절차에 따라 환불을 받을 수 있습니다. 
+ ① 모바일 사이버캐쉬를 충전하였으나, 사용할 수 있는 서비스가 전무하여 그에 대한 책임이 전적으로 회사에 있는 경우 (단, 사전 공지된 서비스 점검의 경우 등 제외) 
+ ② 기타 소비자 보호를 위해 회사에서 따로 정하는 경우 
+2) 모바일 사이버캐쉬 환불을 원하는 회원은 회사가 정한 절차를 통해 환불을 신청해야 하며, 회사는 환불 신청이 정당한지 여부를 심사한 후, 정당한 이유가 있는 것으로 판단되는 경우 회원에게 환불합니다. 
+3) 회사가 회원의 환불 신청에 대하여 환불하는 것으로 결정한 경우, 해당 회원은 사이버캐쉬 잔액 중 회원이 직접 충전한 잔여 금액을 대상으로 환불 수수료 10%를 제한 나머지 금액을 환불 받게 됩니다.
+
+제 16조 청약철회
+1)이용자가 구매하는 유료 콘텐츠는 청약철회가 가능한 콘텐츠와 청약철회가 제한되는 콘텐츠로 구분되며 이는 이용자가 유료 콘텐츠를 구매하는 경우에 표시됩니다. 청약철회가 가능한 콘텐츠에 대해서는 이동통신사 또는 애플리케이션 스토어의 정책에 따라서 청약철회가 이루어집니다. 단, 구매 후 7일이 지났거나 사용한 경우, 1회성 콘텐츠 및 재화 등의 가치가 현저히 감소한 경우에는 청약철회가 제한됩니다. 구매 후 7일이 지난 사용하지 않은 사이버캐쉬는 제16조에 따라 환불이 가능합니다. 
+2) 회사가 이용자에게 지급한 이벤트 또는 무료 애플리케이션 및 컨텐츠(ID, 아이템, 게임 내 머니, 이용권 등)는 청약철회의 대상에서 제외됩니다.
+
+제 17조 과오금의 환불
+1)이용자에게 과오금이 발생한 경우 이동통신사 또는 애플리케이션 스토어의 정책에 따라 환불이 이루어집니다. 
+2) 애플리케이션 다운로드 또는 네트워크 서비스를 이용하여 발생되는 요금(통화료, 데이터 통화료 등)은 환불 대상에서 제외될 수 있습니다.
+3) 회사는 과오납금이 발생하는 경우 과오납금을 회원에게 환급합니다. 다만, 과오납금이 회사의 고의 또는 과실 없이 회원의 과실로 인하여 발생한 경우에는 그 환급에 소요되는 실제 비용은 합리적인 범위 내에서 회원이 부담합니다.
+4) 애플리케이션을 통한 결제는 결제 업체가 제공하는 결제방식에 따릅니다. 따라서 결제 과정에서 과오금이 발생하는 경우 원칙적으로 결제업체에게 환급을 요청하여야 합니다. 단, 결제업체의 정책, 시스템에 따라 가능한 경우 회사가 결제 업체에게 필요한 환급절차의 이행을 요청할 수도 있습니다.
+5) 회원이 환불 등을 요구할 경우에는 회사 고객센터를 통해 별도의 개인 정보 취급 동의 과정을 거친 후 회사의 구매내역 확인에 의해 진행되며, 이 과정 중 플랫폼 사업자 또는 결제업체를 통해 구매내역을 확인하는 절차를 거친 다음 진행됩니다. 회사는 이 과정 중에서 회원의 정당한 철회 사유를 확인하기 위해 필요시 회원에게서 제공받은 정보를 통해 회원에게 연락하며 정확한 사실 확인을 할 수 있으며, 추가적으로 증빙을 요구할 수 있습니다.
+6) 회사는 회원으로부터 환급 청구 및 환불에 필요한 관련서류를 받은 날로부터 3영업일 내에 환불을 완료하도록 노력합니다.
+
+제 18조 손해배상
+1)회사는 회사가 제공하는 무료 서비스 이용과 관련하여 이용자에게 발생한 어떠한 손해에 대해서도 책임을 지지 않습니다.
+2) 회사가 개별서비스 제공자와 제휴 계약을 맺고 이용자에게 개별서비스를 제공함에 있어 이용자가 개별서비스 이용약관에 동의를 한 뒤 개별서비스 제공자의 귀책 사유로 인해 손해가 발생할 경우 관련 손해에 대해서는 개별서비스 제공자가 책임을 집니다.
+
+제 19조 면책조항
+1)회사는 천재지변 또는 이에 준하는 불가항력으로 인하여 서비스를 제공할 수 없는 경우에는 서비스 제공에 관한 책임이 면제됩니다. 
+2) 회사는 서비스용 설비의 보수, 교체, 정기점검, 공사 등 부득이한 사유로 발생한 손해에 대한 책임이 면제됩니다. 
+3) 회사는 이용자의 귀책사유로 인한 서비스 이용의 장애에 대하여는 책임이 면제됩니다. 
+4) 회사는 이용자가 서비스와 관련하여 게재한 정보, 자료, 사실의 신뢰도, 정확성 등의 내용에 관하여는 책임을 지지 않습니다. 
+5) 회사는 이용자 간 또는 이용자와 제3자 상호간에 서비스를 매개로 하여 거래 등을 한 경우에는 책임이 면제됩니다. 
+6) 회사는 무료로 제공되는 서비스 이용과 관련하여 관련법에 특별한 규정이 없는 한 책임을 지지 않습니다. 
+7) 회사는 이용자가 서비스를 이용하여 기대하는 이익을 얻지 못하거나 상실한 것에 대하여 책임을 지지 않습니다. 
+8) 회사는 이용자의 게임상 경험치, 등급, 아이템, 게임상 머니 등의 손실에 대하여 회사의 과실로 인한 경우를 제외하고는 책임을 지지 않습니다.
+
+제 20조 재판권 및 준거법
+1)이 약관에 명시되지 않은 사항이 관계법령에 규정되어 있을 경우에는 해당 규정에 따릅니다. 
+2) 서비스 이용으로 발생한 분쟁에 대해 소송이 제기되는 경우 법령에 정한 절차에 따른 법원을 관할 법원으로 합니다.
+
+<부칙>본 약관은 2022년 10월 26일부터 시행됩니다.",-3370910421933199600,text_1
+download/ui/uiprefabandres/maininterface.assetbundle,-6235400507303986474,m_Text,탭하여 계속,-7008869909423426450,text
+download/ui/uiprefabandres/maininterface.assetbundle,-6173522342477839959,m_Text,99,5696875034211781883,text_num
+download/ui/uiprefabandres/maininterface.assetbundle,-6120851281973913099,m_text,임무 관련 설명,-2316530401820829433,text_notice_desc
+download/ui/uiprefabandres/maininterface.assetbundle,-6020606819238375932,m_Text,6,-5955704976088786855,text_num
+download/ui/uiprefabandres/maininterface.assetbundle,-5953848173708324971,m_text,더 많은 헤드셋을 획득하세요!,3690231018011681145,text_recruit_notice_desc
+download/ui/uiprefabandres/maininterface.assetbundle,-5936422979741657769,m_Text,6,-7488715732073879045,text_num
+download/ui/uiprefabandres/maininterface.assetbundle,-5922627222013638865,m_Text,「잠금 해제」,-4033777195307519406,text_figure_get_source
+download/ui/uiprefabandres/maininterface.assetbundle,-5856043947668704779,m_text,확인,-5505958763005030163,text_queren
+download/ui/uiprefabandres/maininterface.assetbundle,-5695365601494457536,m_Text,비밀번호,4062132828296340788,text_2
+download/ui/uiprefabandres/maininterface.assetbundle,-5626267715295998269,m_text,0%,-8375142999910234370,tmp_bubble_pro
+download/ui/uiprefabandres/maininterface.assetbundle,-5606722052427148190,m_text,배,-1470358971078244732,text_big
+download/ui/uiprefabandres/maininterface.assetbundle,-5590805882823348685,m_text,성주 이미지,-2611710425058347222,text_on
+download/ui/uiprefabandres/maininterface.assetbundle,-5459314327766913882,m_text,옷장과의 약속,2957941445581383747,txt_act_name
+download/ui/uiprefabandres/maininterface.assetbundle,-5395364026331428708,m_Text,99,-5338024170456147472,text_num
+download/ui/uiprefabandres/maininterface.assetbundle,-5390558241358794429,m_Text,50,-3998848861875736924,text_num
+download/ui/uiprefabandres/maininterface.assetbundle,-5384058894936008617,m_text,대 정,816140254116763512,text_on
+download/ui/uiprefabandres/maininterface.assetbundle,-5381728793143999291,m_text,주둔 중...,38278958632096779,text_tmp_zudui
+download/ui/uiprefabandres/maininterface.assetbundle,-5362839224953832784,m_Text,Apple로 로그인,1634693867808640098,txt_apple_bind
+download/ui/uiprefabandres/maininterface.assetbundle,-5304685203258624322,m_text,"7
+",1651421886250963479,text_tmp_nandu_num
+download/ui/uiprefabandres/maininterface.assetbundle,-5257761772503759392,m_Text,6,-1109842003341931814,text_num
+download/ui/uiprefabandres/maininterface.assetbundle,-5221493122430570029,m_Text,6,-1315993129005937158,text_num
+download/ui/uiprefabandres/maininterface.assetbundle,-5183406937836664764,m_Text,전투력: 1234567890,-8528935278060413204,text_zhanli
+download/ui/uiprefabandres/maininterface.assetbundle,-5107299833966323059,m_Text,동맹명 7글자,760470209764422072,text_name
+download/ui/uiprefabandres/maininterface.assetbundle,-4994706493621853313,m_text,백화요란,-9018793156970758840,text_tmp_message (1)
+download/ui/uiprefabandres/maininterface.assetbundle,-4952564599587562003,m_text,알림 설정,508371787320640280,text_4
+download/ui/uiprefabandres/maininterface.assetbundle,-4921193480247524263,m_text,Lv.199,-7566271219758052902,text_num
+download/ui/uiprefabandres/maininterface.assetbundle,-4908437900668700639,m_Text,이미지,-3727297232248907223,text_off
+download/ui/uiprefabandres/maininterface.assetbundle,-4779367882687866600,m_text,확인,-6419369856926941894,text
+download/ui/uiprefabandres/maininterface.assetbundle,-4758395004685055735,m_text,친구,-4700950276111012610,text_haoyou
+download/ui/uiprefabandres/maininterface.assetbundle,-4748401263181185969,m_Text,아이콘,1081354099300082038,text_off
+download/ui/uiprefabandres/maininterface.assetbundle,-4747315768451741140,m_Text,6,-642145601148978621,text_num
+download/ui/uiprefabandres/maininterface.assetbundle,-4719942701293263070,m_text,옷장과의 약속,-8795012448601939192,txt_act_name
+download/ui/uiprefabandres/maininterface.assetbundle,-4716614771542978490,m_text,이름,6775142546654259139,text_attr
+download/ui/uiprefabandres/maininterface.assetbundle,-4712464059344164223,m_text,{0}/3,6145396869797241131,text_tmp_chengyuan_num
+download/ui/uiprefabandres/maininterface.assetbundle,-4698591989917927995,m_Text,시스템 ,-5639841623893862463,text_name
+download/ui/uiprefabandres/maininterface.assetbundle,-4645615851564029608,m_text,모험,-291297989148258381,text_name
+download/ui/uiprefabandres/maininterface.assetbundle,-4616237029522372465,m_Text,동맹에 가입하면 400홍옥을 획득할 수 있습니다,-6585112581559350160,text_message
+download/ui/uiprefabandres/maininterface.assetbundle,-4562632481229212548,m_text,10:10,-63333470463546325,txt_face_time
+download/ui/uiprefabandres/maininterface.assetbundle,-4557561921863122656,m_Text,6,-2141157803510213047,text_num
+download/ui/uiprefabandres/maininterface.assetbundle,-4536177973001128485,m_text,옷장의 약속,-8785160916621469625,txt_act_name
+download/ui/uiprefabandres/maininterface.assetbundle,-4490971451945214292,m_Text,99,-890553325020752838,text_num
+download/ui/uiprefabandres/maininterface.assetbundle,-4432198984411048004,m_Text,성주명 7글자,-7679958003094526325,text_name
+download/ui/uiprefabandres/maininterface.assetbundle,-4406433705725249392,m_text,옷장과의 약속,-396334067970484332,txt_act_name
+download/ui/uiprefabandres/maininterface.assetbundle,-4266749706999477775,m_text,보너스 발동 중,6957178394920827744,text_temporary_buff
+download/ui/uiprefabandres/maininterface.assetbundle,-4217180272990054400,m_Text,OFF,-6307446535535038157,text_guan
+download/ui/uiprefabandres/maininterface.assetbundle,-4215383214559706659,m_text,무 장,779767625800159046,text_on
+download/ui/uiprefabandres/maininterface.assetbundle,-4166442183002583538,m_text,경고,7587108082613734587,text_title
+download/ui/uiprefabandres/maininterface.assetbundle,-4153891689386772735,m_text,개최 중,4337440627242472922,text_wanfaTips
+download/ui/uiprefabandres/maininterface.assetbundle,-4026675507575082113,m_text,옷장의 약속,-3899332699982458604,txt_act_name
+download/ui/uiprefabandres/maininterface.assetbundle,-3994136810415134093,m_Text,6,-5030543243302824793,text_num
+download/ui/uiprefabandres/maininterface.assetbundle,-3919027556224185734,m_Text,소전소전,3164292924273442175,p_chat_private_name
+download/ui/uiprefabandres/maininterface.assetbundle,-3858624121484597821,m_text,옷장과의 약속,-7355809044290086139,txt_act_name
+download/ui/uiprefabandres/maininterface.assetbundle,-3775175152396708435,m_text,이용 약관,5920351076424378390,text_title
+download/ui/uiprefabandres/maininterface.assetbundle,-3733078969197661961,m_Text,Google 로그인 삭제,-9154578521220723421,txt_google_unbind
+download/ui/uiprefabandres/maininterface.assetbundle,-3719500758707414628,m_Text,99,6297942551162799969,text_num
+download/ui/uiprefabandres/maininterface.assetbundle,-3640637124532811865,m_text,옷장과의 약속,3388711752727808777,txt_act_name
+download/ui/uiprefabandres/maininterface.assetbundle,-3637451941960252787,m_Text,"성주님 계정은 환불 관련 이상 행위로 홍옥이 차감됩니다. 서포트 메일로 연락주시면 확인 도움드리겠습니다.
+",1800921510980015704,Text
+download/ui/uiprefabandres/maininterface.assetbundle,-3628135033563152214,m_Text,천하를 제패한다,-5452141197370613704,text_1
+download/ui/uiprefabandres/maininterface.assetbundle,-3600855773427548556,m_text,10:10:10,-926212944341804861,txt_act_leftTime
+download/ui/uiprefabandres/maininterface.assetbundle,-3600662802828654368,m_text,백화요란,5528896163126906778,text_tmp_message (1)
+download/ui/uiprefabandres/maininterface.assetbundle,-3561959608767410091,m_text,성주 이미지,5174668149665534999,text_off
+download/ui/uiprefabandres/maininterface.assetbundle,-3538571108680457942,m_text,전투 프레임 설정,-9095276062903511997,text_name
+download/ui/uiprefabandres/maininterface.assetbundle,-3439184744174724072,m_text,옷장과의 약속,8339887719812294043,txt_act_name
+download/ui/uiprefabandres/maininterface.assetbundle,-3420936602906826514,m_Text,일,7781997036337733198,text_jp
+download/ui/uiprefabandres/maininterface.assetbundle,-3384129350637846094,m_text,창 고,-1033555349742279189,text_on
+download/ui/uiprefabandres/maininterface.assetbundle,-3293142939939209297,m_text,모험,-7326818543664987603,text_name
+download/ui/uiprefabandres/maininterface.assetbundle,-3286087635009545465,m_text,용녀 궁극 도전 진행 중,6596840305995767808,text_tmp_message (1)
+download/ui/uiprefabandres/maininterface.assetbundle,-3222963095139945549,m_text,취소,-2013163567826070483,text_fanhui
+download/ui/uiprefabandres/maininterface.assetbundle,-3193892867909508880,m_text,창 고,8613188406530377168,text_off
+download/ui/uiprefabandres/maininterface.assetbundle,-3165428132115043244,m_Text,사용 기간: 영구,7431496993532651830,text_2
+download/ui/uiprefabandres/maininterface.assetbundle,-3143585305720165528,m_Text,10,-6385402897518220814,text_actBanner_nun
+download/ui/uiprefabandres/maininterface.assetbundle,-3099873401714447580,m_text,저,5167026378536917594,text_title
+download/ui/uiprefabandres/maininterface.assetbundle,-3075695246698130565,m_text,동 맹,-2205595283249093026,text_on
+download/ui/uiprefabandres/maininterface.assetbundle,-3026823933575211230,m_Text,OFF,5885814599266429739,text_guan
+download/ui/uiprefabandres/maininterface.assetbundle,-2957374496632782462,m_text,세 ,1432122010037201562,lab_renwu_text
+download/ui/uiprefabandres/maininterface.assetbundle,-2873038812337735990,m_text,옷장과의 약속,6781692360083484183,txt_act_name
+download/ui/uiprefabandres/maininterface.assetbundle,-2839090340222616229,m_text,임무 설명,-819521724186643816,text
+download/ui/uiprefabandres/maininterface.assetbundle,-2807868796350714424,m_text,      d,2336825764081242233,text_youjian
+download/ui/uiprefabandres/maininterface.assetbundle,-2637318495598865759,m_Text,이메일 사용,-7359546656060983044,text_fanhui
+download/ui/uiprefabandres/maininterface.assetbundle,-2572118259742004150,m_Text,ON,-1407715955899531458,text_kai
+download/ui/uiprefabandres/maininterface.assetbundle,-2562080740259261548,m_text,취소,7095887746599411964,text
+download/ui/uiprefabandres/maininterface.assetbundle,-2551577209855462847,m_text,옷장의 약속,-2419639228354464084,txt_act_name
+download/ui/uiprefabandres/maininterface.assetbundle,-2524522046209478776,m_Text,워너비 얼굴 워너비 얼굴,5042582987698722480,text_1
+download/ui/uiprefabandres/maininterface.assetbundle,-2399657150263647179,m_text,옷장과의 약속,4278825851567896220,txt_act_name
+download/ui/uiprefabandres/maininterface.assetbundle,-2369142647594526233,m_Text,6,3949935945273723311,text_num
+download/ui/uiprefabandres/maininterface.assetbundle,-2312606369372106433,m_text,123456789하하하하（ ）,-3356654974546260300,txt_taskName
+download/ui/uiprefabandres/maininterface.assetbundle,-2307939049040022704,m_text,음악 설정,2199294880174297562,text
+download/ui/uiprefabandres/maininterface.assetbundle,-2227559149275086826,m_text,전체 화면,1689314621125780933,text_yincang
+download/ui/uiprefabandres/maininterface.assetbundle,-2225395521712408118,m_text,수령 ,178585903253559835,text
+download/ui/uiprefabandres/maininterface.assetbundle,-2180222401681699953,m_Text,누적 4시간 방치 보상입니다. 수령하세요.,136003650410995197,text_message
+download/ui/uiprefabandres/maininterface.assetbundle,-2099125043876261509,m_Text,OFF,-8258955200618923769,text_guan
+download/ui/uiprefabandres/maininterface.assetbundle,-2094753982861944411,m_text,사용 완료,-7062966723378894068,text_shiyong
+download/ui/uiprefabandres/maininterface.assetbundle,-2070592367784635101,m_Text,지역: [{0}] {1},576458093971690121,text_qufu
+download/ui/uiprefabandres/maininterface.assetbundle,-2069073510760865282,m_Text,탭하여 계속,7056107878401908667,text
+download/ui/uiprefabandres/maininterface.assetbundle,-2028628353578089832,m_text,10,-4683327800261080248,text_vip_num
+download/ui/uiprefabandres/maininterface.assetbundle,-2005166804734993153,m_text,임무 설명,-4473345024729134793,text_notice_desc
+download/ui/uiprefabandres/maininterface.assetbundle,-1989298952755557513,m_Text,6,4265595133686228730,text_num
+download/ui/uiprefabandres/maininterface.assetbundle,-1961083730743611690,m_text,소환수,-1832995482963497425,text_off
+download/ui/uiprefabandres/maininterface.assetbundle,-1813219672799800517,m_text,계정 삭제,5631799779920375719,text_6
+download/ui/uiprefabandres/maininterface.assetbundle,-1801940412903541869,m_text,{0}/3,-2823915497717620358,text_tmp_chengyuan_num
+download/ui/uiprefabandres/maininterface.assetbundle,-1789441632598128506,m_text,확인,-3545382676881243917,text_baocun
+download/ui/uiprefabandres/maininterface.assetbundle,-1784866053434258673,m_text,설정,8269384983956887302,text_title
+download/ui/uiprefabandres/maininterface.assetbundle,-1638121611861842512,m_text,무 장,-8561725280337607681,text_off
+download/ui/uiprefabandres/maininterface.assetbundle,-1634462727428147019,m_text,푸쉬 알림,-5972492728204808982,text
+download/ui/uiprefabandres/maininterface.assetbundle,-1613621357929257433,m_Text,12345678,5813488514342770361,text_num
+download/ui/uiprefabandres/maininterface.assetbundle,-1597486061051816208,m_Text,ON,1973151710953559597,text_kai
+download/ui/uiprefabandres/maininterface.assetbundle,-1541358849016420366,m_text,모 험,-7591240847253327332,text_on
+download/ui/uiprefabandres/maininterface.assetbundle,-1507584442257895570,m_text,      dadfadsfadsf,6274518623476594027,text_youjian
+download/ui/uiprefabandres/maininterface.assetbundle,-1383741745290759450,m_text,취소,-5759456530739565412,text_fanhui
+download/ui/uiprefabandres/maininterface.assetbundle,-1373288693547125509,m_text,확인,-7824331157083763726,text_queren
+download/ui/uiprefabandres/maininterface.assetbundle,-1321490898155011159,m_Text,6,4668531496860081711,text_num
+download/ui/uiprefabandres/maininterface.assetbundle,-1113127177776717998,m_Text,탭하여 계속,-1593582216113689585,text
+download/ui/uiprefabandres/maininterface.assetbundle,-965082705466288810,m_Text,6,7858867629901984477,text_num
+download/ui/uiprefabandres/maininterface.assetbundle,-960054914133671743,m_text,      dadfadsfadsf,-2420845226721817554,text_youjian
+download/ui/uiprefabandres/maininterface.assetbundle,-860432529618070325,m_Text,4시간의 방치 보상을 누적했습니다. 수령하세요!,-4167614338200313322,text_message
+download/ui/uiprefabandres/maininterface.assetbundle,-788683636284879390,m_Text,99,8481172556636018139,text_num
+download/ui/uiprefabandres/maininterface.assetbundle,-726239598754600751,m_Text,시스템 ,-4697279176345789174,text_name
+download/ui/uiprefabandres/maininterface.assetbundle,-703201251692064089,m_text,옷장과의 약속,6357774995664806671,txt_act_name
+download/ui/uiprefabandres/maininterface.assetbundle,-679027772695288242,m_text,경 선택,3217494563554573961,text_small
+download/ui/uiprefabandres/maininterface.assetbundle,-573082890981176809,m_text,창 고,-4033238693889733817,text_off
+download/ui/uiprefabandres/maininterface.assetbundle,-471446797960966245,m_Text,ID：1234567890,4464139151172587830,text_id
+download/ui/uiprefabandres/maininterface.assetbundle,-464012599870155755,m_text,난이도: ,-8366981079532286971,text_tmp_nandu
+download/ui/uiprefabandres/maininterface.assetbundle,-443654024818713719,m_Text,Google로 로그인,5691412050505406721,txt_google_bind
+download/ui/uiprefabandres/maininterface.assetbundle,-441628418449363965,m_text,옷장과의 약속,-8885445564047677716,txt_act_name
+download/ui/uiprefabandres/maininterface.assetbundle,-295735465406277247,m_text,출 정,-2795127626663238307,text_on
+download/ui/uiprefabandres/maininterface.assetbundle,-273602488197287469,m_text,이용 약관,5105253933797817669,text_5
+download/ui/uiprefabandres/maininterface.assetbundle,-260190421799707760,m_text,취소,3010861280831687171,text
+download/ui/uiprefabandres/maininterface.assetbundle,-226833648074064889,m_text,고,2884496491090111494,text_title
+download/ui/uiprefabandres/maininterface.assetbundle,-193089368467340196,m_text,구나,-7920073282247712660,text_name
+download/ui/uiprefabandres/maininterface.assetbundle,-190486133616775973,m_Text,탭하여 계속,-4672106238998048257,text
+download/ui/uiprefabandres/maininterface.assetbundle,-186972456736479388,m_Text,OFF,-1481869333528195865,text_guan
+download/ui/uiprefabandres/maininterface.assetbundle,-131134144844215732,m_Text,탭하여 계속,6780694365893887038,text
+download/ui/uiprefabandres/maininterface.assetbundle,-111991504318333045,m_Text,ON,-4132847901802887968,text_kai
+download/ui/uiprefabandres/maininterface.assetbundle,-101596063538263805,m_Text,OFF,-32354723206716115,text_guan
+download/ui/uiprefabandres/maininterface.assetbundle,-100947146656255752,m_Text,탭하여 계속,7222022444769498556,text
+download/ui/uiprefabandres/maininterface.assetbundle,-96895775606802452,m_Text,확인,9029997569038591871,txt_delete
+download/ui/uiprefabandres/maininterface.assetbundle,-34403014449559604,m_text,동맹에 가입하면 400홍옥을 획득할 수 있습니다,-7510942591569796354,text_tmp_message
+download/ui/uiprefabandres/maininterface.assetbundle,44315232562533827,m_Text,app시작→로그인 화면→시작→메인 화면→우측 아이콘→데이터 연동을 통해 연동하실 수 있습니다.,3082455879660433184,text_1
+download/ui/uiprefabandres/maininterface.assetbundle,113263800626038991,m_text,위치 리셋,-4638265455088201322,text_resetAutoHelperPos
+download/ui/uiprefabandres/maininterface.assetbundle,192028260037076307,m_Text,New Text,3727368145299080508,text
+download/ui/uiprefabandres/maininterface.assetbundle,195458850470940076,m_Text,아이콘 프레임,5332909665757525538,text_off
+download/ui/uiprefabandres/maininterface.assetbundle,219699257298319104,m_text,동맹 가입 후 바로 400개 홍옥 무료 획득,4456560816933972679,text_tmp_message
+download/ui/uiprefabandres/maininterface.assetbundle,241774567153145770,m_text,선물 코드,2396226906897281691,text_1
+download/ui/uiprefabandres/maininterface.assetbundle,288184748427920268,m_Text,탭하여 계속,-3681373620435298291,text
+download/ui/uiprefabandres/maininterface.assetbundle,319362272665425900,m_text,수호  ,-4617369723046342989,text_off
+download/ui/uiprefabandres/maininterface.assetbundle,327129994856517961,m_text,（ 999/999 ）,-8556551994401714767,txt_taskRedNum
+download/ui/uiprefabandres/maininterface.assetbundle,335298350427246524,m_text,옷장과의 약속,2413393275785012534,txt_act_name
+download/ui/uiprefabandres/maininterface.assetbundle,408888341813724008,m_text,설정,-6990893972402420963,text_title
+download/ui/uiprefabandres/maininterface.assetbundle,445667802950747837,m_text,중,-1630477654354613615,text_title
+download/ui/uiprefabandres/maininterface.assetbundle,449297348946720043,m_text,출 정,-4837164631973843497,text_off
+download/ui/uiprefabandres/maininterface.assetbundle,460420578943670878,m_Text,6,8617642629069255043,text_num
+download/ui/uiprefabandres/maininterface.assetbundle,473095554059136577,m_Text,1234,8499064858951870944,Text
+download/ui/uiprefabandres/maininterface.assetbundle,500045989305474561,m_Text,ON,-2132014133505926986,text_kai
+download/ui/uiprefabandres/maininterface.assetbundle,534555935323681485,m_Text,탭하여 계속,3170679409313559450,text
+download/ui/uiprefabandres/maininterface.assetbundle,539858698054503520,m_text,"천하쟁패
+뜨겁게 진행 중!",5999561601694272343,text_tmp_message (1)
+download/ui/uiprefabandres/maininterface.assetbundle,599372584807793799,m_text,일반 설정,6655765173166843292,text
+download/ui/uiprefabandres/maininterface.assetbundle,648766559103610478,m_text,      dadfadsfadsf,6125115078841407778,text_youjian
+download/ui/uiprefabandres/maininterface.assetbundle,700332984572693626,m_text,붙여넣기,4307782877884265298,text_qianghua
+download/ui/uiprefabandres/maininterface.assetbundle,703983922566146299,m_text,99,6543114220310106892,num
+download/ui/uiprefabandres/maininterface.assetbundle,712315446371784348,m_text,      d,1968600425452808370,text_youjian
+download/ui/uiprefabandres/maininterface.assetbundle,722436400546327096,m_text,10:10:10,-6404015471484609493,txt_act_leftTime
+download/ui/uiprefabandres/maininterface.assetbundle,768631141846905603,m_Text,효과음,1576856725783462075,text_set1
+download/ui/uiprefabandres/maininterface.assetbundle,787560506700148718,m_text,2,8023123150926035151,text_guan_num
+download/ui/uiprefabandres/maininterface.assetbundle,808325475093391870,m_text,마 을,-4336606352320595248,text_on
+download/ui/uiprefabandres/maininterface.assetbundle,852255455198611886,m_Text,기간: ,2770547858865865064,text_time
+download/ui/uiprefabandres/maininterface.assetbundle,868565163235763402,m_text,0%,-5910782650127326653,tmp_bubble_pro
+download/ui/uiprefabandres/maininterface.assetbundle,1035039476499944081,m_Text,탭하여 계속,-2117794867616349825,text
+download/ui/uiprefabandres/maininterface.assetbundle,1081424751859742640,m_Text,+99,4392692548550227206,text_num
+download/ui/uiprefabandres/maininterface.assetbundle,1102235407617583013,m_text,옷장의 약속,5572519946260618904,txt_act_name
+download/ui/uiprefabandres/maininterface.assetbundle,1109510913128741177,m_Text,최대 2~6자로 입력해 주세요.,7110215365529764944,Placeholder
+download/ui/uiprefabandres/maininterface.assetbundle,1150260131987345861,m_Text,시스템 ,-2261659972829547729,text_name
+download/ui/uiprefabandres/maininterface.assetbundle,1162734898485723834,m_text,창 고,6690195056615534671,text_on
+download/ui/uiprefabandres/maininterface.assetbundle,1183123163927012631,m_Text,50,4469175752445145626,text_num
+download/ui/uiprefabandres/maininterface.assetbundle,1302121541561232306,m_text,"보물 사냥꾼
+포획 진행 중!",1807834619902876383,text_tmp_message (1)
+download/ui/uiprefabandres/maininterface.assetbundle,1309870981421419680,m_text,데이터 연동,1779838916102720287,text_3
+download/ui/uiprefabandres/maininterface.assetbundle,1310765127338207322,m_Text,6,8458886583278328879,text_num
+download/ui/uiprefabandres/maininterface.assetbundle,1410564674237950582,m_text,모험,-9142860793671649322,text_name
+download/ui/uiprefabandres/maininterface.assetbundle,1423139765395603904,m_Text,6,-7336271198868114901,text_num
+download/ui/uiprefabandres/maininterface.assetbundle,1460182654232979344,m_text,저장,-3579708364547838601,text_baocun
+download/ui/uiprefabandres/maininterface.assetbundle,1494296624665947677,m_text,옷장과의 약속,5870002579785325674,txt_act_name
+download/ui/uiprefabandres/maininterface.assetbundle,1558039099827973650,m_Text,자기소개를 입력해 주세요. 글자수: 100,3760588224588223019,Placeholder
+download/ui/uiprefabandres/maininterface.assetbundle,1622689069955777750,m_text,임무 설명,412640609316537146,text_notice_desc
+download/ui/uiprefabandres/maininterface.assetbundle,1672376588603166914,m_Text,쿠폰 코드,-3550406908011235806,text_title2
+download/ui/uiprefabandres/maininterface.assetbundle,1708541173605532676,m_Text,6,5089301840846303053,text_num
+download/ui/uiprefabandres/maininterface.assetbundle,1737680288529030686,m_Text,시스템,-5697565362855235581,text_name
+download/ui/uiprefabandres/maininterface.assetbundle,1809488825805341128,m_text,무장 ,-8900963993445214466,text_off
+download/ui/uiprefabandres/maininterface.assetbundle,1819610823305606261,m_text,저장,-1556761135499895722,text_baocun
+download/ui/uiprefabandres/maininterface.assetbundle,1820284744839754537,m_Text,11:26:00,-3069743592985124934,text_time
+download/ui/uiprefabandres/maininterface.assetbundle,1826538969913598716,m_Text,6,3448053851825228807,text_num
+download/ui/uiprefabandres/maininterface.assetbundle,1889729062985530078,m_text,대 정,6100890132421248635,text_off
+download/ui/uiprefabandres/maininterface.assetbundle,1918916168854199662,m_text,10:10:10,5827211316784777166,txt_act_leftTime
+download/ui/uiprefabandres/maininterface.assetbundle,1955026695596329008,m_Text,6,-841665030076573394,text_num
+download/ui/uiprefabandres/maininterface.assetbundle,1967363928516198309,m_Text,탭하여 계속,-5667268894720914655,text
+download/ui/uiprefabandres/maininterface.assetbundle,1993100537840356201,m_text,도감,2050117984093734304,text_fanhui
+download/ui/uiprefabandres/maininterface.assetbundle,2009338116974369872,m_text,무장 이미지,-1120662286893843839,text_on
+download/ui/uiprefabandres/maininterface.assetbundle,2010396889390554488,m_Text,6,8686619616004789762,text_num
+download/ui/uiprefabandres/maininterface.assetbundle,2014339370955641866,m_text,동맹 ,-7119749123123539974,text_off
+download/ui/uiprefabandres/maininterface.assetbundle,2021558878004009752,m_text,쿠폰 코드,-7332301570053424969,text_title1
+download/ui/uiprefabandres/maininterface.assetbundle,2033115754278307449,m_text,부대 개설 중,-5404332535075547773,text_tmp_zudui
+download/ui/uiprefabandres/maininterface.assetbundle,2065951070904294560,m_Text,배경 음악,7861665851199484432,text_set1
+download/ui/uiprefabandres/maininterface.assetbundle,2103812768715243612,m_text,옷장과의 약속,3625863876679466853,txt_act_name
+download/ui/uiprefabandres/maininterface.assetbundle,2113514592662937494,m_Text,ON,1339599501297173342,text_kai
+download/ui/uiprefabandres/maininterface.assetbundle,2129893367027402585,m_Text,탭하여 계속,-5447781863096329278,text
+download/ui/uiprefabandres/maininterface.assetbundle,2274607719334317502,m_Text,6,-8847232525691174279,text_num
+download/ui/uiprefabandres/maininterface.assetbundle,2302883853893964168,m_Text,99,6771335317813939766,text_num
+download/ui/uiprefabandres/maininterface.assetbundle,2331590415046579926,m_text,대 정,822030277297649142,text_off
+download/ui/uiprefabandres/maininterface.assetbundle,2353169876852337036,m_Text,천하쟁패,-3508196563006778016,text_name
+download/ui/uiprefabandres/maininterface.assetbundle,2375076291113936407,m_Text,닫기,2210380455104549376,text_guan
+download/ui/uiprefabandres/maininterface.assetbundle,2381210383054804207,m_Text,적용 중,1357046509366955587,text_shiyong
+download/ui/uiprefabandres/maininterface.assetbundle,2449161208592732988,m_text,출처,-2669504085166667333,text_queren
+download/ui/uiprefabandres/maininterface.assetbundle,2539704928449349141,m_text,HOT 진행 중,9183019677871609451,text_bhll_message
+download/ui/uiprefabandres/maininterface.assetbundle,2560812117783934357,m_Text,동맹 가입 후 바로 400개 홍옥 무료 획득,1927213568672909579,text_message
+download/ui/uiprefabandres/maininterface.assetbundle,2653871209655485179,m_text,확인,-5494057412932805412,text
+download/ui/uiprefabandres/maininterface.assetbundle,2656415923922827881,m_Text,"소중한 게임 정보를 위해 데이터연동을 권장드립니다. 사용하는 메일 주소와 비밀 번호를 입력해 주세요. 데이터 연동시, 설정하신 이메일은 노출되지 않습니다. 비밀 번호는 6~12자리로 설정해 주세요.",-3461099738976598453,text_1
+download/ui/uiprefabandres/maininterface.assetbundle,2760010110110243400,m_Text,+99,4231705735427583372,text_num
+download/ui/uiprefabandres/maininterface.assetbundle,2865253671476055292,m_Text,6,5788610858786603854,text_num
+download/ui/uiprefabandres/maininterface.assetbundle,2939825908815517174,m_text,천하 쟁패 열렬히 진행 중!,7305323444230931808,text_tmp_message (1)
+download/ui/uiprefabandres/maininterface.assetbundle,2940597352286279953,m_text,대원 수: ,6354927500825063211,text_tmp_chengyuan
+download/ui/uiprefabandres/maininterface.assetbundle,2948046897945516968,m_text,이야기,-923206203383997592,text_wuyu
+download/ui/uiprefabandres/maininterface.assetbundle,3004734236240850978,m_text,서포트,-3687013379981045514,text_qianghua
+download/ui/uiprefabandres/maininterface.assetbundle,3013961471886434007,m_text,<color=#599F50>{0}시간</color>의 방치 보상을 누적했습니다. 수령하세요!,-5550206479805750103,text_tmp_message
+download/ui/uiprefabandres/maininterface.assetbundle,3049370305541623329,m_text,천하쟁패 진행 중,-5379328363407262686,text_tmp_message (1)
+download/ui/uiprefabandres/maininterface.assetbundle,3129338827919232922,m_text,옷장과의 약속,-2466256942621471669,txt_act_name
+download/ui/uiprefabandres/maininterface.assetbundle,3140549923334480066,m_text,문지기,8202627625062689223,text_beijing
+download/ui/uiprefabandres/maininterface.assetbundle,3152975774092550836,m_text,2wwwww,-4071579860983673736,text_unLockTips
+download/ui/uiprefabandres/maininterface.assetbundle,3172751504594326057,m_text,설정,7527954076965940227,text_title
+download/ui/uiprefabandres/maininterface.assetbundle,3238533815181045741,m_text,확인,-6409410144359743679,text_queren
+download/ui/uiprefabandres/maininterface.assetbundle,3254271780195498366,m_text,츠루히메,4890618312773669379,text_name
+download/ui/uiprefabandres/maininterface.assetbundle,3282704847722282954,m_text,보물사냥꾼 진행 중,3577759783976046276,text_tmp_message (1)
+download/ui/uiprefabandres/maininterface.assetbundle,3305304211651340008,m_text,일반 설정,893643913718280452,text
+download/ui/uiprefabandres/maininterface.assetbundle,3349515491679665981,m_text,고,7456910039473267543,text_title
+download/ui/uiprefabandres/maininterface.assetbundle,3411124726138056487,m_text,대 정,-418366252442010271,text_on
+download/ui/uiprefabandres/maininterface.assetbundle,3452207239419729149,m_text,특수 효과 품질,2370961171334398542,text_name
+download/ui/uiprefabandres/maininterface.assetbundle,3517576923641970456,m_Text,음성 언어 변경,-3370744289380112837,text_set1
+download/ui/uiprefabandres/maininterface.assetbundle,3520089846475135275,m_Text,50,-5815953558023932094,text_num
+download/ui/uiprefabandres/maininterface.assetbundle,3573826417293429615,m_text,2,-4250581376721635161,text_guan_num
+download/ui/uiprefabandres/maininterface.assetbundle,3589420374710585487,m_Text,사용 중,404934611233057979,text_shiyong
+download/ui/uiprefabandres/maininterface.assetbundle,3596140422473737642,m_text,옷장과의 약속,8889540005387589298,txt_act_name
+download/ui/uiprefabandres/maininterface.assetbundle,3680839984282145261,m_Text,+99,5261157128720721713,text_num
+download/ui/uiprefabandres/maininterface.assetbundle,3691299046859798585,m_text,옷장의 약속,8092235672866061430,txt_act_name
+download/ui/uiprefabandres/maininterface.assetbundle,3719112378252768598,m_text,옷장과의 약속,-1937010338670785580,txt_act_name
+download/ui/uiprefabandres/maininterface.assetbundle,3768559997973738949,m_text,계정 ,-5955619468029432818,text_title
+download/ui/uiprefabandres/maininterface.assetbundle,3804901053719442468,m_Text,시스템,1515094637757893971,text_name
+download/ui/uiprefabandres/maininterface.assetbundle,3998026351692875407,m_text,상점,3025582206056342729,text_haoyou (1)
+download/ui/uiprefabandres/maininterface.assetbundle,4036057916051507927,m_text,국,3269679188853907257,text_small
+download/ui/uiprefabandres/maininterface.assetbundle,4047271992946697897,m_text,10:10:10,-635418476074080082,txt_act_leftTime
+download/ui/uiprefabandres/maininterface.assetbundle,4068324179463690241,m_text,무장 이미지,-5566001548572381927,text_off
+download/ui/uiprefabandres/maininterface.assetbundle,4109847289303078088,m_text,취소,6002156102106249922,text_fanhui
+download/ui/uiprefabandres/maininterface.assetbundle,4199174567344744176,m_text,"+10
+",-2816438481794318255,officer_show_num
+download/ui/uiprefabandres/maininterface.assetbundle,4213581009035423146,m_text,저,8904030895818889665,text_title
+download/ui/uiprefabandres/maininterface.assetbundle,4263962541710713983,m_text,옷장과의 약속,-3024126261802321382,txt_act_name
+download/ui/uiprefabandres/maininterface.assetbundle,4341913971970687672,m_text,<color=#599F50>{0}시간</color> 방치 보상 누적! 빨리 수령하세요~,8954434186850425045,text_tmp_message
+download/ui/uiprefabandres/maininterface.assetbundle,4353992223491964989,m_text,10:10:10,-1401897514360478770,txt_act_leftTime
+download/ui/uiprefabandres/maininterface.assetbundle,4532184670447047875,m_Text,99,671647325173146510,text_num
+download/ui/uiprefabandres/maininterface.assetbundle,4597064876088122198,m_Text,99,-5050999309918644687,text_num
+download/ui/uiprefabandres/maininterface.assetbundle,4599784209678870789,m_text,전,-3622256103402489428,text_big
+download/ui/uiprefabandres/maininterface.assetbundle,4656406818834685048,m_text,취소,-7555813264443288394,text_fanhui
+download/ui/uiprefabandres/maininterface.assetbundle,4708790099955819904,m_text,999,-6105161941737198218,text_num
+download/ui/uiprefabandres/maininterface.assetbundle,4774047824855211122,m_text,옷장과의 약속,-5610434472521949266,txt_act_name
+download/ui/uiprefabandres/maininterface.assetbundle,4821314536758496802,m_text,모험,-6175129878799362794,text_name
+download/ui/uiprefabandres/maininterface.assetbundle,4860818453018432222,m_Text,99,2235889287015223365,text_num
+download/ui/uiprefabandres/maininterface.assetbundle,4891978149075195337,m_Text,열기,6136165481064867322,text_kai
+download/ui/uiprefabandres/maininterface.assetbundle,4990990155609086381,m_text,임무,8561149659368592950,text
+download/ui/uiprefabandres/maininterface.assetbundle,5005216041756256702,m_Text,시스템,-5305890895038409809,text_name
+download/ui/uiprefabandres/maininterface.assetbundle,5035080593300919861,m_Text,이메일,1182533870321525067,text_1
+download/ui/uiprefabandres/maininterface.assetbundle,5039044419737761419,m_Text,동맹 우편,3074229512200357405,text_set1
+download/ui/uiprefabandres/maininterface.assetbundle,5046196445646187920,m_Text,2021.6.1-7.1,7407220585355954507,text_num
+download/ui/uiprefabandres/maininterface.assetbundle,5047995611121187345,m_text,"천하쟁패
+뜨겁게 진행 중!",7668178775499440762,text_tmp_message (1)
+download/ui/uiprefabandres/maininterface.assetbundle,5094767843496544983,m_text,옷장과의 약속,7805934585274089073,txt_act_name
+download/ui/uiprefabandres/maininterface.assetbundle,5129814699496415320,m_Text,6,-5471583097819019190,text_num
+download/ui/uiprefabandres/maininterface.assetbundle,5156527730587256354,m_Text,탭하여 계속,3630472094520797848,text
+download/ui/uiprefabandres/maininterface.assetbundle,5214737158410963764,m_text,마 을,836455085596956480,text_off
+download/ui/uiprefabandres/maininterface.assetbundle,5220811020680094165,m_text,수령,-6901355708932153240,text
+download/ui/uiprefabandres/maininterface.assetbundle,5282519860984731819,m_text,모험,-8854196726050555180,text_name
+download/ui/uiprefabandres/maininterface.assetbundle,5354244687440816369,m_text,옷장의 약속,5144518541600342099,txt_act_name
+download/ui/uiprefabandres/maininterface.assetbundle,5498321106507379292,m_text,아이콘 프레임,8562787331258257825,text_on
+download/ui/uiprefabandres/maininterface.assetbundle,5562087421765864867,m_text,10:10:10,-4629919051947902025,txt_act_leftTime
+download/ui/uiprefabandres/maininterface.assetbundle,5767144020104502383,m_Text,1,4017601424443547587,text_num
+download/ui/uiprefabandres/maininterface.assetbundle,5806224610843121178,m_text,クローゼットの約束,3602759129492269193,txt_act_name
+download/ui/uiprefabandres/maininterface.assetbundle,5838876319235362301,m_Text,+99,-8374239129144630016,text_num
+download/ui/uiprefabandres/maininterface.assetbundle,5853484538577760245,m_text,화면 프레임 설정,5595925147983156578,text_name
+download/ui/uiprefabandres/maininterface.assetbundle,5860693552761195248,m_text,10:10:10,7417499991823863260,txt_act_leftTime
+download/ui/uiprefabandres/maininterface.assetbundle,5922234982208853027,m_text,옷장과의 약속,4211405187702228721,txt_act_name
+download/ui/uiprefabandres/maininterface.assetbundle,5974763630117980081,m_Text,+99,-2529104306956994839,text_num
+download/ui/uiprefabandres/maininterface.assetbundle,6080763092956196416,m_text,000,6093124956331945900,text_wanfaTips
+download/ui/uiprefabandres/maininterface.assetbundle,6102501445377543947,m_Text,New Text,7425589153441513280,text
+download/ui/uiprefabandres/maininterface.assetbundle,6140769153042574221,m_text,확인,-189526805836538566,text
+download/ui/uiprefabandres/maininterface.assetbundle,6146466143187303252,m_text,임무 설명,6435572421204311039,text
+download/ui/uiprefabandres/maininterface.assetbundle,6281437685538382712,m_text,      dadfadsfadsf,5983221704899991947,text_youjian
+download/ui/uiprefabandres/maininterface.assetbundle,6314521230353675734,m_Text,미해제,7429793365333988437,text_weijiesuo
+download/ui/uiprefabandres/maininterface.assetbundle,6399748161028495206,m_text,푸쉬 알림,8910731253140585657,text
+download/ui/uiprefabandres/maininterface.assetbundle,6422072023439289374,m_Text,개인 채팅,-8890192002162937898,text_set1
+download/ui/uiprefabandres/maininterface.assetbundle,6451561412797640242,m_text,옷장 속 약속,-168378924471343848,txt_act_name
+download/ui/uiprefabandres/maininterface.assetbundle,6468058510287199963,m_text,고,-3545752441958694629,text_title
+download/ui/uiprefabandres/maininterface.assetbundle,6492703601902915344,m_Text,6,-2558152898537721066,text_num
+download/ui/uiprefabandres/maininterface.assetbundle,6517490023020068477,m_Text,워너비 얼굴 워너비 얼굴,-6036082621262113253,text_1
+download/ui/uiprefabandres/maininterface.assetbundle,6553582660566089908,m_text,5099만,-6396064382286451856,text_num
+download/ui/uiprefabandres/maininterface.assetbundle,6553719533327474451,m_text,난이도: ,-953506933814388801,text_tmp_nandu
+download/ui/uiprefabandres/maininterface.assetbundle,6611117816126961576,m_Text,1,8307327182772749936,text_num
+download/ui/uiprefabandres/maininterface.assetbundle,6628719587475827897,m_Text,탭하여 계속,-4167451348393186933,text
+download/ui/uiprefabandres/maininterface.assetbundle,6630219736976811187,m_Text,[친밀도],1800502210056752034,text_2
+download/ui/uiprefabandres/maininterface.assetbundle,6675572399670912367,m_Text,시스템,-2125596245433072955,text_name
+download/ui/uiprefabandres/maininterface.assetbundle,6698590838802698220,m_Text,기간:,4358766163448529707,text_time
+download/ui/uiprefabandres/maininterface.assetbundle,6712386918601976158,m_text,데이터 연동,-3247807790458613733,text_title
+download/ui/uiprefabandres/maininterface.assetbundle,6757477781003812798,m_Text,아아아아 ,-2664795204961004959,p_chat_private_name
+download/ui/uiprefabandres/maininterface.assetbundle,6781715143459593817,m_Text,6,3866379780511732004,text_num
+download/ui/uiprefabandres/maininterface.assetbundle,6799714340494444035,m_Text,차차: 너무 하잖아! 게다가 이 배는 MS 이거 밖에 없다고 뭐야뭐야뭐야,-508764795197773011,text_duihua
+download/ui/uiprefabandres/maininterface.assetbundle,6887591968045706857,m_text,마 을,-1402344259299138719,text_on
+download/ui/uiprefabandres/maininterface.assetbundle,6979044101012215167,m_text,이름 변경,-4579643630075461137,text_title
+download/ui/uiprefabandres/maininterface.assetbundle,6984997826909053595,m_text,더 많은 헤드셋을 획득하세요!,1493929892518263742,text
+download/ui/uiprefabandres/maininterface.assetbundle,7113133980265974870,m_Text,탭하여 계속,-1373016432397272794,text
+download/ui/uiprefabandres/maininterface.assetbundle,7226059144363469769,m_text,옷장과의 약속,2445175754248453681,txt_act_name
+download/ui/uiprefabandres/maininterface.assetbundle,7285294230046218058,m_text,옷장의 약속,7850506122048201432,txt_act_name
+download/ui/uiprefabandres/maininterface.assetbundle,7286214307252419776,m_text,순위,-137068472931522463,text_paihangbang
+download/ui/uiprefabandres/maininterface.assetbundle,7340059015411536760,m_text,동 맹,-2487809167956589797,text_on
+download/ui/uiprefabandres/maininterface.assetbundle,7394630791653342251,m_text,안나 ,9124936205022313351,text_name
+download/ui/uiprefabandres/maininterface.assetbundle,7403574300332015325,m_text,보물 상자 소녀 포획이 뜨겁게 진행 중!,-2219652695543342022,text_tmp_message (1)
+download/ui/uiprefabandres/maininterface.assetbundle,7490148270530628374,m_text,창고,-5247421378083060640,text_off
+download/ui/uiprefabandres/maininterface.assetbundle,7594275942114094148,m_text,10:10:10,6098515086917437577,txt_act_leftTime
+download/ui/uiprefabandres/maininterface.assetbundle,7646951693848176828,m_Text,시스템 ,-2501870962174975777,text_name
+download/ui/uiprefabandres/maininterface.assetbundle,7660367274985249466,m_text,확인,6502753209649587747,text_queding
+download/ui/uiprefabandres/maininterface.assetbundle,7667294746708336078,m_text,공지사항,5230044875724538083,text_2
+download/ui/uiprefabandres/maininterface.assetbundle,7727487722921026611,m_text,999/999,5149598096271686710,txt_taskGreenNum
+download/ui/uiprefabandres/maininterface.assetbundle,7746313231915994686,m_Text,99,2984524217661879110,text_num
+download/ui/uiprefabandres/maininterface.assetbundle,7782263607108480300,m_text,확인,8551599332610891091,text
+download/ui/uiprefabandres/maininterface.assetbundle,7891304659190227719,m_text,게임 설정,-5528799586619958472,text_lan
+download/ui/uiprefabandres/maininterface.assetbundle,7908149426457973808,m_text,취소,-6789061844235517004,text_fanhui
+download/ui/uiprefabandres/maininterface.assetbundle,8044333615286443151,m_text,성주 이미지의 속성만 적용됩니다.,-5989105860112691070,text_onlyUseAttTips
+download/ui/uiprefabandres/maininterface.assetbundle,8073948470005584573,m_text,수호부,6358563347593162612,text_off
+download/ui/uiprefabandres/maininterface.assetbundle,8109547085297186541,m_text,저,-644506755750958373,text_title
+download/ui/uiprefabandres/maininterface.assetbundle,8234353941209081049,m_text,이미지,1363344555166535865,text_on
+download/ui/uiprefabandres/maininterface.assetbundle,8318246745321009504,m_text,데이터 연동 설정,-5762562598582990575,text_title
+download/ui/uiprefabandres/maininterface.assetbundle,8366533991662520156,m_text,성,-1759885877706205010,text_big
+download/ui/uiprefabandres/maininterface.assetbundle,8380018854360254853,m_text,무 장,-1322721838834555723,text_on
+download/ui/uiprefabandres/maininterface.assetbundle,8418036365610519499,m_Text,2021.6.1-7.1,8466860003617424560,text_num
+download/ui/uiprefabandres/maininterface.assetbundle,8424758100576444379,m_Text,99,-5263500692873989470,text_num
+download/ui/uiprefabandres/maininterface.assetbundle,8531269640313861221,m_text,아이콘 ,8616096679132831387,text_on
+download/ui/uiprefabandres/maininterface.assetbundle,8601308495330952284,m_Text,+99,5665082111309376883,text_num
+download/ui/uiprefabandres/maininterface.assetbundle,8740868442077227350,m_text,옷장과의 약속,-7164761427818791499,txt_act_name
+download/ui/uiprefabandres/maininterface.assetbundle,8750435316676647817,m_text,HOT 진행 중,-3929109341262636932,text_bhll_message
+download/ui/uiprefabandres/maininterface.assetbundle,8891103446742871576,m_text,우편,5995850538302798717,text_youjian
+download/ui/uiprefabandres/maininterface.assetbundle,9001081495977623299,m_Text,사용 중,-8878451759636123651,text_shiyong
+download/ui/uiprefabandres/maininterface.assetbundle,9010065287356584973,m_Text,6,-4124794954245948774,text_num
+download/ui/uiprefabandres/maininterface.assetbundle,9054600382744092628,m_text,도감,9108673291308610571,text_tujian
+download/ui/uiprefabandres/maininterface.assetbundle,9081019547408105937,m_Text,ON,-1530297410951016236,text_kai
+download/ui/uiprefabandres/maininterface.assetbundle,9087748208037772888,m_text,옷장의 약속,7208628158592166336,txt_act_name
+download/ui/uiprefabandres/maininterface.assetbundle,9174704388117501842,m_Text,탭하여 계속,7174785619249945575,text
+download/ui/uiprefabandres/maininterface.assetbundle,9186101186045350520,m_Text,"성주님 계정은 환불 관련 이상 행위로 홍옥이 차감됩니다. 서포트 메일로 연락주시면 확인 도움드리겠습니다.
+",-7197450785939764689,Text

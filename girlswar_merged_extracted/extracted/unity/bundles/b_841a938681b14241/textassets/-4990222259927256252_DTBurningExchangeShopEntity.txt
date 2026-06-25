@@ -1,0 +1,26 @@
+local e={id=0,award={},limitType=0,limitPara=0,cost={}}
+e.__index=e
+function e.New(o,n,a,s,i)
+local t={}
+setmetatable(t,e)
+t.id=o
+t.award=n
+t.limitType=a
+t.limitPara=s
+t.cost=i
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.award=a[2]
+t.limitType=a[3]
+t.limitPara=a[4]
+t.cost=a[5]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/burning/DTBurningExchangeShopEntityTableData')
+end
+return e 

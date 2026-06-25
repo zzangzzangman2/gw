@@ -1,0 +1,16 @@
+
+?
+ActUniversalSlice.proto"C
+PRT_UNIVERSAL_SLICE_GOODS
+did (Rdid
+count (Rcount"
+PRT_UNIVERSAL_SLICE_INFO_REQ"q
+PRT_UNIVERSAL_SLICE_INFO_RESP
+leftTime (RleftTime4
+goodses (2.PRT_UNIVERSAL_SLICE_GOODSRgoodses"6
+"PRT_UNIVERSAL_SLICE_FREE_AWARD_REQ
+did (Rdid"M
+#PRT_UNIVERSAL_SLICE_FREE_AWARD_RESP
+did (Rdid
+count (RcountB
+com.next1b.nextsvr.protobproto3

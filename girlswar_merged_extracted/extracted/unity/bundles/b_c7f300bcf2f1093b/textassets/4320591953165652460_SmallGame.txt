@@ -1,0 +1,57 @@
+
+?
+SmallGame.protoCommons.proto"
+PRT_SMALL_GAME_INFO_REQ"?
+PRT_SMALL_GAME_INFO_RESP:
+smallGameList (2.PRT_SMALL_GAME_ITEMRsmallGameList(
+nextRefreshTime (RnextRefreshTime*
+stageRefreshTime (RstageRefreshTime
+stageNum (RstageNum 
+stageReward (RstageReward"
+PRT_COLLECTION_INFO_REQ"?
+PRT_COLLECTION_INFO_RESP<
+collectionInfo (2.PRT_COLLECTION_PAGERcollectionInfo$
+collectNumber (RcollectNumber
+	maxNumber (R	maxNumber"-
+PRT_COLLECTION_REWARD_REQ
+did (Rdid"Z
+PRT_COLLECTION_REWARD_RESP<
+collectionItem (2.PRT_COLLECTION_ITEMRcollectionItem")
+PRT_INSECT_REWARD_REQ
+did (Rdid"?
+PRT_INSECT_REWARD_RESPE
+collectItemList (2.PRT_COLLECTION_REWARD_ITEMRcollectItemList"
+reward (2
+.PRT_THINGRreward"+
+PRT_ENTER_GAME_INFO_REQ
+did (Rdid"D
+PRT_ENTER_GAME_INFO_RESP(
+info (2.PRT_SMALL_GAME_ITEMRinfo"X
+PRT_FISHING_REWARD_REQ
+did (Rdid
+fishId (RfishId
+isWin (RisWin"?
+PRT_FISHING_REWARD_RESPE
+collectItemList (2.PRT_COLLECTION_REWARD_ITEMRcollectItemList"
+reward (2
+.PRT_THINGRreward"!
+PRT_SMALL_GAME_STAGE_REWARD_REQ"r
+ PRT_SMALL_GAME_STAGE_REWARD_RESP*
+stageRefreshTime (RstageRefreshTime"
+reward (2
+.PRT_THINGRreward"S
+PRT_COLLECTION_PAGE
+type (Rtype(
+item (2.PRT_COLLECTION_ITEMRitem"W
+PRT_COLLECTION_ITEM
+did (Rdid
+status (Rstatus
+number (Rnumber"L
+PRT_COLLECTION_REWARD_ITEM
+did (Rdid
+	firstDrop (R	firstDrop"O
+PRT_SMALL_GAME_ITEM
+did (Rdid
+num (Rnum
+point (RpointB
+com.next1b.nextsvr.protobproto3

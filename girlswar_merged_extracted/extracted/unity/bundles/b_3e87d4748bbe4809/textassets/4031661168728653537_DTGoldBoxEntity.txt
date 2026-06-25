@@ -1,0 +1,22 @@
+local e={id=0,oneCost={},typeSort={}}
+e.__index=e
+function e.New(o,a,i)
+local t={}
+setmetatable(t,e)
+t.id=o
+t.oneCost=a
+t.typeSort=i
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.oneCost=a[2]
+t.typeSort=a[3]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/activity/DTGoldBoxEntityTableData')
+end
+return e 

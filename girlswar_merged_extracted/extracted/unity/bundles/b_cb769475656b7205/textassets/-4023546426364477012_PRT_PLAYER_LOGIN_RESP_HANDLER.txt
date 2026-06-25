@@ -1,0 +1,11 @@
+local t={}
+function t:OnHandle(e)
+local e=assert(GlobalPB.decode("PRT_PLAYER_LOGIN_RESP",e));
+if(GameInit.GetDebugLogProto())then
+;
+;
+end
+PlayerMgr:LoginResp(e)
+return e
+end
+return t 

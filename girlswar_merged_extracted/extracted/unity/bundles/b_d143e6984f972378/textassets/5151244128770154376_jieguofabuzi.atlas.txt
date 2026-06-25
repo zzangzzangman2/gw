@@ -1,0 +1,14 @@
+jieguofabuzi.png
+size:512,256
+filter:Linear,Linear
+n
+bounds:0,137,443,73
+n1
+bounds:265,67,232,69
+offsets:5,1,443,73
+n2
+bounds:0,68,264,68
+offsets:90,1,443,73
+n3
+bounds:0,0,233,67
+offsets:203,2,443,73

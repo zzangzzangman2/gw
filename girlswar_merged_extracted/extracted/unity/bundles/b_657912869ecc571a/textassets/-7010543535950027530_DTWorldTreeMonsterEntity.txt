@@ -1,0 +1,32 @@
+local a={id=0,keyItem=0,passAward={{},{}},passAward102={{},{}},passAwardTimes=0,damagePointAward=0,teamAward={{},{}},teamAward102={{},{}}}
+a.__index=a
+function a.New(i,h,n,t,d,r,s,o)
+local e={}
+setmetatable(e,a)
+e.id=i
+e.keyItem=h
+e.passAward=n
+e.passAward102=t
+e.passAwardTimes=d
+e.damagePointAward=r
+e.teamAward=s
+e.teamAward102=o
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.keyItem=t[2]
+e.passAward=t[3]
+e.passAward102=t[4]
+e.passAwardTimes=t[5]
+e.damagePointAward=t[6]
+e.teamAward=t[7]
+e.teamAward102=t[8]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/worldTree/DTWorldTreeMonsterEntityTableData')
+end
+return a 

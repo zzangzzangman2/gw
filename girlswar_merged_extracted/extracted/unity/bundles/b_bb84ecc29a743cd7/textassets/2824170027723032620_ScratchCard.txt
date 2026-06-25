@@ -1,0 +1,50 @@
+
+?	
+ScratchCard.protoCommons.proto"<
+PRT_SCRATCH_TASK
+did (Rdid
+status (Rstatus"?
+PRT_SCRATCH_INFO
+id (Rid
+
+resetTimes (R
+resetTimes
+poses (Rposes'
+tasks (2.PRT_SCRATCH_TASKRtasks"
+PRT_SCRATCH_CARD_INFO_REQ"C
+PRT_SCRATCH_CARD_INFO_RESP%
+info (2.PRT_SCRATCH_INFORinfo"O
+PRT_SCRATCH_CARD_OPEN_REQ
+pos (Rpos 
+clientParam (	RclientParam"w
+PRT_SCRATCH_CARD_OPEN_RESP
+pos (Rpos%
+info (2.PRT_SCRATCH_INFORinfo 
+clientParam (	RclientParam"
+PRT_SCRATCH_CARD_RESET_REQ"D
+PRT_SCRATCH_CARD_RESET_RESP%
+info (2.PRT_SCRATCH_INFORinfo"E
+PRT_SCRATCH_CARD_REC_TASK_REQ
+did (Rdid
+auto (Rauto"Y
+PRT_SCRATCH_CARD_REC_TASK_RESP%
+info (2.PRT_SCRATCH_INFORinfo
+did (Rdid" 
+PRT_SCRATCH_CARD_SHOP_INFO_REQ"a
+PRT_SCRATCH_CARD_SHOP_INFO_RESP 
+goods (2
+.PRT_GOODSRgoods
+	resetTime (R	resetTime"G
+PRT_SCRATCH_CARD_SHOP_BUY_REQ
+did (Rdid
+count (Rcount"T
+PRT_SCRATCH_CARD_SHOP_BUY_RESP
+did (Rdid 
+goods (2
+.PRT_GOODSRgoods"'
+%PRT_SCRATCH_CARD_CHARGE_SHOP_INFO_REQ"h
+&PRT_SCRATCH_CARD_CHARGE_SHOP_INFO_RESP 
+goods (2
+.PRT_GOODSRgoods
+	resetTime (R	resetTimeB
+com.next1b.nextsvr.protobproto3

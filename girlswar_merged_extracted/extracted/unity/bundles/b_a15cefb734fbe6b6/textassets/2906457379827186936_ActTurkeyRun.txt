@@ -1,0 +1,51 @@
+
+?
+ActTurkeyRun.protoCommons.proto"?
+PRT_TURKEY_RUN_DRAW
+position (Rposition
+awarded (Rawarded#
+things (2.PRT_REWARDRthings
+
+isBigAward (R
+isBigAward"
+PRT_TURKEY_RUN_INFO_REQ"?
+PRT_TURKEY_RUN_INFO_RESP
+score (Rscore$
+scoreLevelDid (RscoreLevelDid
+endTime (RendTime
+round (Rround*
+draws (2.PRT_TURKEY_RUN_DRAWRdraws"
+dailyAwarded (RdailyAwarded
+dayDid (RdayDid"
+PRT_TURKEY_RUN_DAILYAWARD_REQ"
+PRT_TURKEY_RUN_DAILYAWARD_RESP!
+award (2.PRT_REWARDRaward"
+dailyAwarded (RdailyAwarded
+dayDid (RdayDid" 
+PRT_TURKEY_RUN_SCORE_AWARD_REQ"j
+PRT_TURKEY_RUN_SCORE_AWARD_RESP!
+award (2.PRT_REWARDRaward$
+scoreLevelDid (RscoreLevelDid"5
+PRT_TURKEY_RUN_DRAW_REQ
+position (Rposition"?
+PRT_TURKEY_RUN_DRAW_RESP,
+awards (2.PRT_TURKEY_RUN_DRAWRawards
+score (Rscore"
+drawPosition (RdrawPosition"6
+PRT_TURKEY_RUN_CLAIM_REQ
+position (Rposition"m
+PRT_TURKEY_RUN_CLAIM_RESP*
+draws (2.PRT_TURKEY_RUN_DRAWRdraws$
+claimPosition (RclaimPosition"
+PRT_TURKEY_RUN_SHOP_REQ"L
+PRT_TURKEY_RUN_SHOP_RESP0
+itemInfo (2.PRT_TURKEY_RUN_ITEMRitemInfo">
+"PRT_TURKEY_RUN_FREE_GIFT_AWARD_REQ
+giftDid (RgiftDid"]
+#PRT_TURKEY_RUN_FREE_GIFT_AWARD_RESP6
+giftBuyInfo (2.PRT_TURKEY_RUN_ITEMRgiftBuyInfo"i
+PRT_TURKEY_RUN_ITEM
+giftDid (RgiftDid
+buyTimes (RbuyTimes
+	resetTime (R	resetTimeB
+com.next1b.nextsvr.protobproto3

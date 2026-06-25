@@ -1,0 +1,22 @@
+local e={id=0,unlockType=0,unlockParameters=0}
+e.__index=e
+function e.New(o,a,i)
+local t={}
+setmetatable(t,e)
+t.id=o
+t.unlockType=a
+t.unlockParameters=i
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.unlockType=a[2]
+t.unlockParameters=a[3]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/activity/DTOverseasTradePositionEntityTableData')
+end
+return e 

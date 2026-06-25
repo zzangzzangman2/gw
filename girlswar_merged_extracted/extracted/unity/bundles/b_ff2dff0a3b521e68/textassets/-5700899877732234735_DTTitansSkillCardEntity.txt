@@ -1,0 +1,36 @@
+local a={id=0,skillName="",skillIcon="",related=0,relatedIcon="",rare=0,weight=0,skillDesc="",effectPara={},showEffectPara={}}
+a.__index=a
+function a.New(n,r,s,t,l,u,d,h,o,i)
+local e={}
+setmetatable(e,a)
+e.id=n
+e.skillName=r
+e.skillIcon=s
+e.related=t
+e.relatedIcon=l
+e.rare=u
+e.weight=d
+e.skillDesc=h
+e.effectPara=o
+e.showEffectPara=i
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.skillName=t[2]
+e.skillIcon=t[3]
+e.related=t[4]
+e.relatedIcon=t[5]
+e.rare=t[6]
+e.weight=t[7]
+e.skillDesc=t[8]
+e.effectPara=t[9]
+e.showEffectPara=t[10]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/titans/DTTitansSkillCardEntityTableData')
+end
+return a 

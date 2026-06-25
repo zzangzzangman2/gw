@@ -1,0 +1,26 @@
+
+?
+FireworksParty.protoCommons.proto"?
+PRT_BULLET_CHAT
+playerId (RplayerId
+head (Rhead
+	headFrame (R	headFrame
+wishStr (	RwishStr&
+sendPlayerName (	RsendPlayerName"
+PRT_GET_BULLET_CHAT_LIST_REQ"
+PRT_GET_BULLET_CHAT_LIST_RESP&
+imageIds (2
+.PRT_THINGRimageIds
+isReward (RisReward
+leftTime (RleftTime"I
+PRT_SET_BULLET_CHAT_REQ
+chat (	Rchat
+isPublic (RisPublic"~
+PRT_SET_BULLET_CHAT_RESP
+chat (	Rchat&
+imageIds (2
+.PRT_THINGRimageIds&
+chats (2.PRT_BULLET_CHATRchats"
+PRT_REWARD_BULLET_CHAT_REQ"
+PRT_REWARD_BULLET_CHAT_RESPB
+com.next1b.nextsvr.protobproto3

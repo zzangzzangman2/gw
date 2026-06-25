@@ -1,0 +1,40 @@
+local a={id=0,type=0,size={},rarity=0,rewardNum=0,enhanceRarityNum=0,icon="",name="",prefabId=0,sortId=0,bgIndex=0,scale=0}
+a.__index=a
+function a.New(s,d,h,t,u,c,m,l,r,i,o,n)
+local e={}
+setmetatable(e,a)
+e.id=s
+e.type=d
+e.size=h
+e.rarity=t
+e.rewardNum=u
+e.enhanceRarityNum=c
+e.icon=m
+e.name=l
+e.prefabId=r
+e.sortId=i
+e.bgIndex=o
+e.scale=n
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.type=t[2]
+e.size=t[3]
+e.rarity=t[4]
+e.rewardNum=t[5]
+e.enhanceRarityNum=t[6]
+e.icon=t[7]
+e.name=t[8]
+e.prefabId=t[9]
+e.sortId=t[10]
+e.bgIndex=t[11]
+e.scale=t[12]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/activity/DTFilpCardTypeEntityTableData')
+end
+return a 

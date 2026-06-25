@@ -1,0 +1,7 @@
+Painting_1010_Front.png
+size:2048,2048
+filter:Linear,Linear
+bg2
+bounds:2,2,1264,720
+bg5
+bounds:2,724,1292,1062

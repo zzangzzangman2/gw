@@ -1,0 +1,36 @@
+local a={id=0,exp=0,big_reward=0,award_1={},goods_2=0,award_2={},goods_3=0,award_3={{},{}},stage=0,followactivity=0}
+a.__index=a
+function a.New(n,r,s,t,l,u,d,h,o,i)
+local e={}
+setmetatable(e,a)
+e.id=n
+e.exp=r
+e.big_reward=s
+e.award_1=t
+e.goods_2=l
+e.award_2=u
+e.goods_3=d
+e.award_3=h
+e.stage=o
+e.followactivity=i
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.exp=t[2]
+e.big_reward=t[3]
+e.award_1=t[4]
+e.goods_2=t[5]
+e.award_2=t[6]
+e.goods_3=t[7]
+e.award_3=t[8]
+e.stage=t[9]
+e.followactivity=t[10]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/activity/DTAnniversary3FundRewardEntityTableData')
+end
+return a 

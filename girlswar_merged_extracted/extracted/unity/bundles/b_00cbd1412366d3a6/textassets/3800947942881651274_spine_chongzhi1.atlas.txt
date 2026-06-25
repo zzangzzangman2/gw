@@ -1,0 +1,6 @@
+spine_chongzhi1.png
+size:32,32
+filter:Linear,Linear
+a9
+bounds:2,3,17,16
+offsets:0,1,17,17

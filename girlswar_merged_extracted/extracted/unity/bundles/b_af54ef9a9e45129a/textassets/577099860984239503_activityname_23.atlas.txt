@@ -1,0 +1,9 @@
+activityname_23.png
+size:256,512
+filter:Linear,Linear
+01
+bounds:132,49,83,81
+activityicon_6_tb
+bounds:2,2,128,128
+t3
+bounds:2,132,214,200

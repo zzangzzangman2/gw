@@ -1,0 +1,30 @@
+local t={id=0,magicType=0,magicLv=0,pos=0,exp=0,gold=0,attr={}}
+t.__index=t
+function t.New(o,h,a,s,r,n,i)
+local e={}
+setmetatable(e,t)
+e.id=o
+e.magicType=h
+e.magicLv=a
+e.pos=s
+e.exp=r
+e.gold=n
+e.attr=i
+return e
+end
+function t.NewFromArrItem(a)
+local e={}
+setmetatable(e,t)
+e.id=a[1]
+e.magicType=a[2]
+e.magicLv=a[3]
+e.pos=a[4]
+e.exp=a[5]
+e.gold=a[6]
+e.attr=a[7]
+return e
+end
+function t.GetArr()
+return require('DataNode/DataTable/Create/equip/DTMagicEntityTableData')
+end
+return t 

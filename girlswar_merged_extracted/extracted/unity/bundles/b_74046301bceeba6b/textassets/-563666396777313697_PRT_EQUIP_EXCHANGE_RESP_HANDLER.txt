@@ -1,0 +1,11 @@
+local e={}
+function e:OnHandle(e)
+local e=assert(GlobalPB.decode("PRT_EQUIP_EXCHANGE_RESP",e));
+if(GameInit.GetDebugLogProto())then
+;
+;
+end
+GameTools:PlayAudioLua(390)
+EventSystem.SendEvent(CommonEventId.OnEquipChange,e)
+end
+return e 

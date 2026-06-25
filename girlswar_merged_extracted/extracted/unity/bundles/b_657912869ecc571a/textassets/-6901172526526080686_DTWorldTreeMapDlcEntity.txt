@@ -1,0 +1,46 @@
+local a={id=0,show=0,staminaCost=0,exploreTimes=0,presetBoss=0,bossId={{},{}},eventPool={{},{}},mapPrefabId=0,showEventId={},name="",titleName="",desc="",bannerPath="",mapPosRoot=0,explorePointEvent=0}
+a.__index=a
+function a.New(s,l,r,t,u,m,w,f,y,c,d,i,o,n,h)
+local e={}
+setmetatable(e,a)
+e.id=s
+e.show=l
+e.staminaCost=r
+e.exploreTimes=t
+e.presetBoss=u
+e.bossId=m
+e.eventPool=w
+e.mapPrefabId=f
+e.showEventId=y
+e.name=c
+e.titleName=d
+e.desc=i
+e.bannerPath=o
+e.mapPosRoot=n
+e.explorePointEvent=h
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.show=t[2]
+e.staminaCost=t[3]
+e.exploreTimes=t[4]
+e.presetBoss=t[5]
+e.bossId=t[6]
+e.eventPool=t[7]
+e.mapPrefabId=t[8]
+e.showEventId=t[9]
+e.name=t[10]
+e.titleName=t[11]
+e.desc=t[12]
+e.bannerPath=t[13]
+e.mapPosRoot=t[14]
+e.explorePointEvent=t[15]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/worldTree/DTWorldTreeMapDlcEntityTableData')
+end
+return a 

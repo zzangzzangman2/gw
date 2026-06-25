@@ -1,0 +1,9 @@
+activityname_401_1035.png
+size:256,128
+filter:Linear,Linear
+w1
+bounds:2,2,60,82
+w2
+bounds:130,8,47,76
+w3
+bounds:64,14,64,70

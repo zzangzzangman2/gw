@@ -1,0 +1,58 @@
+local a={id=0,day=0,name="",desc="",listAward={},rankListAward={},youngRanklistaward={},spineIcon="",tabIcon="",icon="",banner="",timeText=0,timeBack="",rankMail=0,allRankMail=0,reissueMail=0,resetType=0,isHot=0,type=0,show=0,listId=0}
+a.__index=a
+function a.New(l,m,u,t,y,w,f,v,g,b,k,q,p,c,s,n,i,o,h,d,r)
+local e={}
+setmetatable(e,a)
+e.id=l
+e.day=m
+e.name=u
+e.desc=t
+e.listAward=y
+e.rankListAward=w
+e.youngRanklistaward=f
+e.spineIcon=v
+e.tabIcon=g
+e.icon=b
+e.banner=k
+e.timeText=q
+e.timeBack=p
+e.rankMail=c
+e.allRankMail=s
+e.reissueMail=n
+e.resetType=i
+e.isHot=o
+e.type=h
+e.show=d
+e.listId=r
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.day=t[2]
+e.name=t[3]
+e.desc=t[4]
+e.listAward=t[5]
+e.rankListAward=t[6]
+e.youngRanklistaward=t[7]
+e.spineIcon=t[8]
+e.tabIcon=t[9]
+e.icon=t[10]
+e.banner=t[11]
+e.timeText=t[12]
+e.timeBack=t[13]
+e.rankMail=t[14]
+e.allRankMail=t[15]
+e.reissueMail=t[16]
+e.resetType=t[17]
+e.isHot=t[18]
+e.type=t[19]
+e.show=t[20]
+e.listId=t[21]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/activity/DTCalendarActivityEntityTableData')
+end
+return a 

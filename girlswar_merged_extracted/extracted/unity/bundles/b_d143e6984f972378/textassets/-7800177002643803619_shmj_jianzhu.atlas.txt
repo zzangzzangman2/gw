@@ -1,0 +1,10 @@
+shmj_jianzhu.png
+size:512,512
+filter:Linear,Linear
+scale:0.5
+48d94f30a44827d8aff2c8df3ecd298a68600d4722d45f-CTIbWS
+bounds:2,77,275,278
+offsets:62,51,400,400
+m9
+bounds:2,2,73,73
+offsets:2,2,77,77

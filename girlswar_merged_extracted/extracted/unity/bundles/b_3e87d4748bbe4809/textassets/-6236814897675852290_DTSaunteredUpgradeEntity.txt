@@ -1,0 +1,28 @@
+local e={id=0,stallId=0,level=0,unlockLevel={},lvProbabilityList={},lvCardNum={}}
+e.__index=e
+function e.New(a,i,o,h,s,n)
+local t={}
+setmetatable(t,e)
+t.id=a
+t.stallId=i
+t.level=o
+t.unlockLevel=h
+t.lvProbabilityList=s
+t.lvCardNum=n
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.stallId=a[2]
+t.level=a[3]
+t.unlockLevel=a[4]
+t.lvProbabilityList=a[5]
+t.lvCardNum=a[6]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/activity/DTSaunteredUpgradeEntityTableData')
+end
+return e 

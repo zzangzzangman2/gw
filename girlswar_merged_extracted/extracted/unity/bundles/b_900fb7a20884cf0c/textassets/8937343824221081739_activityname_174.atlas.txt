@@ -1,0 +1,8 @@
+activityname_174.png
+size:64,128
+filter:Linear,Linear
+2
+bounds:0,0,37,40
+rotate:90
+3
+bounds:0,39,55,56

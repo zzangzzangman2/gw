@@ -1,0 +1,28 @@
+local e={id=0,issueNum=0,type=0,itemId=0,point=0,text=""}
+e.__index=e
+function e.New(a,i,o,h,s,n)
+local t={}
+setmetatable(t,e)
+t.id=a
+t.issueNum=i
+t.type=o
+t.itemId=h
+t.point=s
+t.text=n
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.issueNum=a[2]
+t.type=a[3]
+t.itemId=a[4]
+t.point=a[5]
+t.text=a[6]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/activity/DTBestAirshipArchitectPointEntityTableData')
+end
+return e 

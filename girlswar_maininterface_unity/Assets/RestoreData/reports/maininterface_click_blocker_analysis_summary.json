@@ -1,0 +1,18 @@
+{
+  "generated_at": "2026-06-25 13:18:58",
+  "total_buttons": 77,
+  "active_buttons": 24,
+  "inactive_buttons": 53,
+  "raycast_clickable_buttons": 24,
+  "active_blocked_buttons": 0,
+  "invoked_clicks": 24,
+  "category_counts": {},
+  "top_blocker_counts": {},
+  "lua_confidence_counts_for_active_blocked": {},
+  "buttons_by_category": {},
+  "outputs": {
+    "csv": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_maininterface_unity\\Assets\\RestoreData\\reports\\maininterface_click_blocker_analysis.csv",
+    "json": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_maininterface_unity\\Assets\\RestoreData\\reports\\maininterface_click_blocker_analysis_summary.json",
+    "md": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\maininterface\\MAININTERFACE_CLICK_BLOCKER_ANALYSIS.md"
+  }
+}

@@ -1,0 +1,40 @@
+local a={id=0,name="",desc="",unlockDesc="",color=0,speed=0,lucky=0,smallPrefab=0,bigPrefab=0,sort=0,slgPrefab=0,attr={{},{}}}
+a.__index=a
+function a.New(s,d,h,t,u,c,m,l,r,i,o,n)
+local e={}
+setmetatable(e,a)
+e.id=s
+e.name=d
+e.desc=h
+e.unlockDesc=t
+e.color=u
+e.speed=c
+e.lucky=m
+e.smallPrefab=l
+e.bigPrefab=r
+e.sort=i
+e.slgPrefab=o
+e.attr=n
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.name=t[2]
+e.desc=t[3]
+e.unlockDesc=t[4]
+e.color=t[5]
+e.speed=t[6]
+e.lucky=t[7]
+e.smallPrefab=t[8]
+e.bigPrefab=t[9]
+e.sort=t[10]
+e.slgPrefab=t[11]
+e.attr=t[12]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/airship/DTAirShipAtlasEntityTableData')
+end
+return a 

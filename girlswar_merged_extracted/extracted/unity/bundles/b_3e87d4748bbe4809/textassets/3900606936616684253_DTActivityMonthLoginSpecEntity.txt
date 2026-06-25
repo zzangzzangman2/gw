@@ -1,0 +1,26 @@
+local e={id=0,month=0,day=0,award={{},{}},heroId=0}
+e.__index=e
+function e.New(o,n,a,s,i)
+local t={}
+setmetatable(t,e)
+t.id=o
+t.month=n
+t.day=a
+t.award=s
+t.heroId=i
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.month=a[2]
+t.day=a[3]
+t.award=a[4]
+t.heroId=a[5]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/activity/DTActivityMonthLoginSpecEntityTableData')
+end
+return e 

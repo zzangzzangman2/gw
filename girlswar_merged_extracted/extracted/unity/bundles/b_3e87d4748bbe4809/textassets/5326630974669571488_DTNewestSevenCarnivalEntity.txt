@@ -1,0 +1,26 @@
+local e={id=0,heroId=0,days=0,currency1={},progressitem=0}
+e.__index=e
+function e.New(o,n,a,s,i)
+local t={}
+setmetatable(t,e)
+t.id=o
+t.heroId=n
+t.days=a
+t.currency1=s
+t.progressitem=i
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.heroId=a[2]
+t.days=a[3]
+t.currency1=a[4]
+t.progressitem=a[5]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/activity/DTNewestSevenCarnivalEntityTableData')
+end
+return e 

@@ -1,0 +1,50 @@
+local a={id=0,group=0,weaponType=0,name="",color=0,icon="",cardIDs={{},{}},maxLevel=0,distance=0,distanceWd=0,speed=0,critRate=0,criticalStrike=0,size=0,continueTime=0,injuryInterval=0,unlock=0}
+a.__index=a
+function a.New(h,u,d,t,m,c,w,p,y,v,f,l,n,i,o,s,r)
+local e={}
+setmetatable(e,a)
+e.id=h
+e.group=u
+e.weaponType=d
+e.name=t
+e.color=m
+e.icon=c
+e.cardIDs=w
+e.maxLevel=p
+e.distance=y
+e.distanceWd=v
+e.speed=f
+e.critRate=l
+e.criticalStrike=n
+e.size=i
+e.continueTime=o
+e.injuryInterval=s
+e.unlock=r
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.group=t[2]
+e.weaponType=t[3]
+e.name=t[4]
+e.color=t[5]
+e.icon=t[6]
+e.cardIDs=t[7]
+e.maxLevel=t[8]
+e.distance=t[9]
+e.distanceWd=t[10]
+e.speed=t[11]
+e.critRate=t[12]
+e.criticalStrike=t[13]
+e.size=t[14]
+e.continueTime=t[15]
+e.injuryInterval=t[16]
+e.unlock=t[17]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/activity/DTActCellSurvivorWeaponEntityTableData')
+end
+return a 

@@ -1,0 +1,46 @@
+local a={id=0,challengeNum=0,repliesNum=0,rescueNum=0,removeNum=0,receivedNum=0,mapsTime="",challengeTime="",recordNum=0,guildRank=0,playerRank=0,rescueNoteNum=0,challengeNumDay=0,rescueNumaward={},newAwardReset=""}
+a.__index=a
+function a.New(s,l,r,t,u,m,w,f,y,c,d,i,o,n,h)
+local e={}
+setmetatable(e,a)
+e.id=s
+e.challengeNum=l
+e.repliesNum=r
+e.rescueNum=t
+e.removeNum=u
+e.receivedNum=m
+e.mapsTime=w
+e.challengeTime=f
+e.recordNum=y
+e.guildRank=c
+e.playerRank=d
+e.rescueNoteNum=i
+e.challengeNumDay=o
+e.rescueNumaward=n
+e.newAwardReset=h
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.challengeNum=t[2]
+e.repliesNum=t[3]
+e.rescueNum=t[4]
+e.removeNum=t[5]
+e.receivedNum=t[6]
+e.mapsTime=t[7]
+e.challengeTime=t[8]
+e.recordNum=t[9]
+e.guildRank=t[10]
+e.playerRank=t[11]
+e.rescueNoteNum=t[12]
+e.challengeNumDay=t[13]
+e.rescueNumaward=t[14]
+e.newAwardReset=t[15]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/guild/DTGuildTrialsBaseEntityTableData')
+end
+return a 

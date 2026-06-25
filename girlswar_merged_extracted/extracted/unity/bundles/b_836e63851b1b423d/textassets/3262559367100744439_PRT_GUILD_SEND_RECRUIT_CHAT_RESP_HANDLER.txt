@@ -1,0 +1,13 @@
+local t={}
+function t:OnHandle(e)
+local e=assert(GlobalPB.decode("PRT_GUILD_SEND_RECRUIT_CHAT_RESP",e));
+if(GameInit.GetDebugLogProto())then
+;
+;
+end
+ModulesInit.GuildMgr.guildInfo.recruitChat=e.recruitMsg
+ModulesInit.GuildMgr.recruitCD=e.sendRecruitMS
+EventSystem.SendEvent(CommonEventId.SendGuildRecruitChat)
+return e
+end
+return t 

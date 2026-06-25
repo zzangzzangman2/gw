@@ -1,0 +1,11 @@
+local t={}
+function t:OnHandle(e)
+local e=assert(GlobalPB.decode("PRT_BUNS_GAME_RESET_RESP",e));
+if(GameInit.GetDebugLogProto())then
+;
+;
+end
+ModulesInit.ActTripleMgr:SyncResetBoard(e)
+return e
+end
+return t 

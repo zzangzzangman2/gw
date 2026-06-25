@@ -1,0 +1,14 @@
+Painting_1013_Front.png
+size:1024,512
+filter:Linear,Linear
+bgb6
+bounds:2,2,327,307
+offsets:0,12,327,319
+bgb7
+bounds:523,69,240,220
+offsets:0,3,240,223
+rotate:270
+bgb8
+bounds:276,47,262,246
+offsets:0,10,262,256
+rotate:270

@@ -1,0 +1,6 @@
+sp_magicOrchard_strip.png
+size:64,64
+filter:Linear,Linear
+hdxg3
+bounds:0,7,37,30
+offsets:10,13,57,57

@@ -1,0 +1,8 @@
+painting_1054_Back.png
+size:2048,2048
+filter:Linear,Linear
+scale:0.8
+bgb1
+bounds:0,775,2023,1000
+bgb2
+bounds:0,0,2023,774

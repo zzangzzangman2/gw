@@ -1,0 +1,92 @@
+
+?
+ActForging.protoCommons.proto"u
+PRT_ACT_FORGING_TASK
+did (Rdid
+
+curProcess (R
+curProcess+
+status (2.ENUM_REWARD_STATUSRstatus"
+PRT_ACT_FORGING_INFO_REQ"?
+PRT_ACT_FORGING_INFO_RESP
+forging (Rforging
+curScore (RcurScore
+multi (Rmulti+
+tasks (2.PRT_ACT_FORGING_TASKRtasks
+showType (RshowType"1
+PRT_ACT_FORGING_BEGIN_REQ
+multi (Rmulti"d
+PRT_ACT_FORGING_BEGIN_RESP
+score (Rscore
+multi (Rmulti
+showType (RshowType"?
+PRT_ACT_FORGING_DROP_REQ
+id (Rid 
+autoForging (RautoForging
+
+usePerfect (R
+usePerfect
+tarScore (RtarScore"]
+PRT_ACT_FORGING_DROP_RESP
+score (Rscore
+id (Rid
+addScore (RaddScore"
+PRT_ACT_FORGING_FINISH_REQ"?
+PRT_ACT_FORGING_FINISH_RESP 
+award (2
+.PRT_THINGRaward"G
+PRT_ACT_FORGING_TASK_SYN+
+tasks (2.PRT_ACT_FORGING_TASKRtasks"@
+PRT_ACT_FORGING_TASK_AWARD_REQ
+
+taskIdList (R
+taskIdList"N
+PRT_ACT_FORGING_TASK_AWARD_RESP+
+tasks (2.PRT_ACT_FORGING_TASKRtasks"
+PRT_ACT_FORGING_GIFT_INFO_REQ"?
+PRT_ACT_FORGING_GIFT_INFO_RESP 
+gifts (2
+.PRT_GOODSRgifts
+freeCD (RfreeCD.
+historyGifts (2
+.PRT_GOODSRhistoryGifts"N
+PRT_ACT_FORGING_GIFT_BUY_REQ
+giftDid (RgiftDid
+count (Rcount"?
+PRT_ACT_FORGING_GIFT_BUY_RESP
+gift (2
+.PRT_GOODSRgift"
+PRT_ACT_FORGING_FUND_INFO_REQ"?
+PRT_ACT_FORGING_FUND_INFO_RESP
+isCharge (RisCharge 
+recFreeDids (RrecFreeDids$
+recChargeDids (RrecChargeDids
+nowDay (RnowDay"X
+PRT_ACT_FORGING_FUND_AWARD_REQ
+awardDid (RawardDid
+isCharge (RisCharge"Y
+PRT_ACT_FORGING_FUND_AWARD_RESP
+awardDid (RawardDid
+isCharge (RisCharge"
+PRT_ACT_FORGING_SHOP_INFO_REQ"l
+PRT_ACT_FORGING_SHOP_INFO_RESP 
+items (2
+.PRT_GOODSRitems(
+unlockItemCount (RunlockItemCount"P
+PRT_ACT_FORGING_SHOP_BUY_REQ
+goodsDid (RgoodsDid
+count (Rcount"i
+PRT_ACT_FORGING_SHOP_BUY_RESP
+item (2
+.PRT_GOODSRitem(
+unlockItemCount (RunlockItemCount"
+PRT_ACT_FORGING_RANK_REQ"?
+PRT_ACT_FORGING_RANK_RESP1
+	rankDatas (2.PRT_CS_COMMON_RANKR	rankDatas/
+selfRank (2.PRT_CS_COMMON_RANKRselfRank
+playerId (RplayerId"x
+(PRT_CS_ACT_FORGING_RANK_SCORE_UPDATE_SYN
+playerId (RplayerId
+score (Rscore
+changeMS (RchangeMSB
+com.next1b.nextsvr.protobproto3

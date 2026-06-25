@@ -1,0 +1,13 @@
+local e=
+{
+ByIdx={
+{1,0,{1001,300},50,{{26101,1}},300,"newMakterURGiftTitle_1"},
+{2,304,{0},2,{{26101,3},{75002,8}},980,"newMakterURGiftTitle_2"},
+{3,310,{0},2,{{26101,8},{75002,23}},2630,"newMakterURGiftTitle_3"},
+{4,324,{0},2,{{26101,15},{75002,45}},4950,"newMakterURGiftTitle_4"},
+{5,327,{0},3,{{26101,25},{75002,75}},8250,"newMakterURGiftTitle_5"},
+{6,329,{0},12,{{26101,50},{75002,150}},16500,"newMakterURGiftTitle_6"}
+},
+Len=6
+}
+return e 

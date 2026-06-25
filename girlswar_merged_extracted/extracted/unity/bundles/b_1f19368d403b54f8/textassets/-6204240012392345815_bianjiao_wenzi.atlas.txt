@@ -1,0 +1,17 @@
+bianjiao_wenzi.png
+size:309,160
+filter:Linear,Linear
+1_10
+bounds:141,53,98,47
+1_6
+bounds:258,102,49,56
+1_7
+bounds:141,102,115,56
+1_8
+bounds:141,4,98,47
+1_9
+bounds:241,2,98,47
+rotate:90
+t3
+bounds:2,21,137,137
+offsets:31,32,214,200

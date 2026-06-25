@@ -1,0 +1,28 @@
+local e={id=0,attractionStage={},spine="",extraAttraction=0,chatBubble="",givingGiftsBubble=""}
+e.__index=e
+function e.New(a,i,o,h,s,n)
+local t={}
+setmetatable(t,e)
+t.id=a
+t.attractionStage=i
+t.spine=o
+t.extraAttraction=h
+t.chatBubble=s
+t.givingGiftsBubble=n
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.attractionStage=a[2]
+t.spine=a[3]
+t.extraAttraction=a[4]
+t.chatBubble=a[5]
+t.givingGiftsBubble=a[6]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/activity/DTDragonActBossGirlEntityTableData')
+end
+return e 

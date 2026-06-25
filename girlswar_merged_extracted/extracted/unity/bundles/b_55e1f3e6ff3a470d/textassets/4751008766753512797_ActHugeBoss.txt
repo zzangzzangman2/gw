@@ -1,0 +1,68 @@
+
+?
+ActHugeBoss.protoCommons.protoFight.protoFormation.proto"?
+HUGE_BOSS_BOX_STRUCT
+did (Rdid+
+status (2.ENUM_REWARD_STATUSRstatus1
+	payStatus (2.ENUM_REWARD_STATUSR	payStatus"d
+HUGE_BOSS_PLAYER_ATTACK_STRUCT
+name (	Rname
+score (Rscore
+profile (Rprofile"
+PRT_HUGE_BOSS_INFO_REQ"?
+PRT_HUGE_BOSS_INFO_RESP
+leftTime (RleftTime
+score (Rscore
+power (Rpower
+maxPower (RmaxPower
+progress (Rprogress'
+box (2.HUGE_BOSS_BOX_STRUCTRbox8
+nextRecoverPowerSeconds (RnextRecoverPowerSeconds6
+receivedScoreAwardDids (RreceivedScoreAwardDids
+selfRank	 (RselfRank
+isPay
+ (RisPay"F
+PRT_HUGE_BOSS_BOX_REWARD_REQ
+did (Rdid
+isPay (RisPay"p
+PRT_HUGE_BOSS_BOX_REWARD_RESP
+did (Rdid
+isPay (RisPay'
+box (2.HUGE_BOSS_BOX_STRUCTRbox" 
+PRT_HUGE_BOSS_REVIEW_ENEMY_REQ"?
+PRT_HUGE_BOSS_REVIEW_ENEMY_RESP
+
+monsterDid (R
+monsterDid 
+monsterStar (RmonsterStar
+winScore (RwinScore8
+nextRefreshEnemySeconds (RnextRefreshEnemySeconds8
+nextRecoverPowerSeconds (RnextRecoverPowerSeconds"?
+PRT_HUGE_BOSS_FIGHT_BEFORE_REQG
+formationPositions (2.PRT_FORMATION_POSITIONRformationPositionsQ
+formationAlterPositions (2.PRT_FORMATION_POSITIONRformationAlterPositions"R
+PRT_HUGE_BOSS_FIGHT_BEFORE_RESP/
+
+beforeInfo (2.PRT_FIGHT_PLAYR
+beforeInfo"J
+PRT_HUGE_BOSS_FIGHT_REQ/
+
+battleInfo (2.PRT_FIGHT_PLAYR
+battleInfo"|
+PRT_HUGE_BOSS_FIGHT_RESP
+invalid (Rinvalid
+score (Rscore
+power (Rpower
+progress (Rprogress"
+PRT_HUGE_BOSS_RANK_REQ"e
+PRT_HUGE_BOSS_RANK_RESP$
+self (2.PRT_COMMON_RANKRself$
+rank (2.PRT_COMMON_RANKRrank"&
+$PRT_HUGE_BOSS_PLAYER_ATTACK_LIST_REQ"n
+%PRT_HUGE_BOSS_PLAYER_ATTACK_LIST_RESPE
+playerAttacks (2.HUGE_BOSS_PLAYER_ATTACK_STRUCTRplayerAttacks";
+PRT_HUGE_BOSS_SCORE_AWARD_REQ
+awardDid (RawardDid"<
+PRT_HUGE_BOSS_SCORE_AWARD_RESP
+awardDid (RawardDidB
+com.next1b.nextsvr.protobproto3

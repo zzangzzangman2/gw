@@ -1,0 +1,48 @@
+
+?
+ActCarnivalNew.protoCommons.protoFormation.protoFight.protoActCarnival.proto"
+PRT_CARNIVAL_NEW_INFO_REQ"?
+PRT_CARNIVAL_NEW_INFO_RESP
+leftTime (RleftTime
+power (Rpower"
+powerBeginMS (RpowerBeginMS$
+powerBuyCount (RpowerBuyCount%
+maps (2.PRT_CARNIVAL_MAPRmaps 
+buyGiftDids (RbuyGiftDids"8
+PRT_CARNIVAL_NEW_POWER_BUY_REQ
+counts (Rcounts"]
+PRT_CARNIVAL_NEW_POWER_BUY_RESP
+buyCount (RbuyCount
+
+awardPower (R
+awardPower"?
+!PRT_CARNIVAL_NEW_FIGHT_BEFORE_REQ
+mapDid (RmapDidG
+formationPositions (2.PRT_FORMATION_POSITIONRformationPositionsQ
+formationAlterPositions (2.PRT_FORMATION_POSITIONRformationAlterPositions"U
+"PRT_CARNIVAL_NEW_FIGHT_BEFORE_RESP/
+
+beforeInfo (2.PRT_FIGHT_PLAYR
+beforeInfo"M
+PRT_CARNIVAL_NEW_FIGHT_REQ/
+
+battleInfo (2.PRT_FIGHT_PLAYR
+battleInfo"Z
+PRT_CARNIVAL_NEW_FIGHT_RESP
+invalid (Rinvalid!
+award (2.PRT_FAWARDRaward"O
+PRT_CARNIVAL_NEW_FAST_FIGHT_REQ
+mapDid (RmapDid
+count (Rcount"?
+ PRT_CARNIVAL_NEW_FAST_FIGHT_RESP#
+awards (2.PRT_REWARDRawards
+power (Rpower"
+powerBeginMS (RpowerBeginMS"
+PRT_CARNIVAL_NEW_TASK_REQ"=
+PRT_CARNIVAL_NEW_TASK_RESP
+tasks (2	.PRT_TASKRtasks"=
+PRT_CARNIVAL_NEW_TASK_AWARD_REQ
+awardDid (RawardDid">
+ PRT_CARNIVAL_NEW_TASK_AWARD_RESP
+awardDid (RawardDidB
+com.next1b.nextsvr.protobproto3

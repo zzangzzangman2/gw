@@ -1,0 +1,10 @@
+Painting_1035.png
+size:2048,2048
+filter:Linear,Linear
+scale:0.24
+Painting_1035
+bounds:0,0,1616,1000
+offsets:424,192,2040,1256
+bg
+bounds:0,1000,2040,952
+offsets:0,149,2040,1139

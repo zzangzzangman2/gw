@@ -1,0 +1,30 @@
+local t={id=0,fightShowRankCount=0,MapShowRankCount=0,fightLifeCycle=0,mapLifeCycle=0,needMap=0,maxMapTime=0}
+t.__index=t
+function t.New(o,h,a,s,r,n,i)
+local e={}
+setmetatable(e,t)
+e.id=o
+e.fightShowRankCount=h
+e.MapShowRankCount=a
+e.fightLifeCycle=s
+e.mapLifeCycle=r
+e.needMap=n
+e.maxMapTime=i
+return e
+end
+function t.NewFromArrItem(a)
+local e={}
+setmetatable(e,t)
+e.id=a[1]
+e.fightShowRankCount=a[2]
+e.MapShowRankCount=a[3]
+e.fightLifeCycle=a[4]
+e.mapLifeCycle=a[5]
+e.needMap=a[6]
+e.maxMapTime=a[7]
+return e
+end
+function t.GetArr()
+return require('DataNode/DataTable/Create/activity/DTNewPlayerFightRankConfigEntityTableData')
+end
+return t 

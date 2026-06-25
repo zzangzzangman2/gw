@@ -1,0 +1,28 @@
+local e={id=0,level=0,type=0,cost={{},{}},attr={{},{}},desc=""}
+e.__index=e
+function e.New(a,i,o,h,s,n)
+local t={}
+setmetatable(t,e)
+t.id=a
+t.level=i
+t.type=o
+t.cost=h
+t.attr=s
+t.desc=n
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.level=a[2]
+t.type=a[3]
+t.cost=a[4]
+t.attr=a[5]
+t.desc=a[6]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/player/DTHeroSpaEntityTableData')
+end
+return e 

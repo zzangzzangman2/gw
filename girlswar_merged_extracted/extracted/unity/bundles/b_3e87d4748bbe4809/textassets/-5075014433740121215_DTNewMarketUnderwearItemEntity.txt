@@ -1,0 +1,32 @@
+local a={id=0,type=0,rewardStar2={},rewardStar3={},title="",icon="",desc="",tips=""}
+a.__index=a
+function a.New(i,h,n,t,d,r,s,o)
+local e={}
+setmetatable(e,a)
+e.id=i
+e.type=h
+e.rewardStar2=n
+e.rewardStar3=t
+e.title=d
+e.icon=r
+e.desc=s
+e.tips=o
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.type=t[2]
+e.rewardStar2=t[3]
+e.rewardStar3=t[4]
+e.title=t[5]
+e.icon=t[6]
+e.desc=t[7]
+e.tips=t[8]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/activity/DTNewMarketUnderwearItemEntityTableData')
+end
+return a 

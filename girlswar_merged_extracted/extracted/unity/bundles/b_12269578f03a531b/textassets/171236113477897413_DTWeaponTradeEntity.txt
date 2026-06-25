@@ -1,0 +1,28 @@
+local e={id=0,itemNum=0,cost={},exchange=0,exchangeServer=0,exchangeNew=0}
+e.__index=e
+function e.New(a,i,o,h,s,n)
+local t={}
+setmetatable(t,e)
+t.id=a
+t.itemNum=i
+t.cost=o
+t.exchange=h
+t.exchangeServer=s
+t.exchangeNew=n
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.itemNum=a[2]
+t.cost=a[3]
+t.exchange=a[4]
+t.exchangeServer=a[5]
+t.exchangeNew=a[6]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/equip/DTWeaponTradeEntityTableData')
+end
+return e 

@@ -1,0 +1,11 @@
+local t={}
+function t:OnHandle(e)
+local e=assert(GlobalPB.decode("PRT_AMULET_MAKE_RESP",e));
+if(GameInit.GetDebugLogProto())then
+;
+;
+end
+AmuletMgr:SynAmuletMakeData(e)
+return e
+end
+return t 

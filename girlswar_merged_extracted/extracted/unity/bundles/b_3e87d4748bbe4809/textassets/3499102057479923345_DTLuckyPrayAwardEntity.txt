@@ -1,0 +1,28 @@
+local e={id=0,luckyCoinType=0,choose=0,mustAward={},award={{},{}},successType={}}
+e.__index=e
+function e.New(a,i,o,h,s,n)
+local t={}
+setmetatable(t,e)
+t.id=a
+t.luckyCoinType=i
+t.choose=o
+t.mustAward=h
+t.award=s
+t.successType=n
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.luckyCoinType=a[2]
+t.choose=a[3]
+t.mustAward=a[4]
+t.award=a[5]
+t.successType=a[6]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/activity/DTLuckyPrayAwardEntityTableData')
+end
+return e 

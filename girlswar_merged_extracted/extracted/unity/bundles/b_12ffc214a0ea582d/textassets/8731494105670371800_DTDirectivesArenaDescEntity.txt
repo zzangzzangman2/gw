@@ -1,0 +1,22 @@
+local e={id=0,attackDesc="",catapultDesc=""}
+e.__index=e
+function e.New(o,a,i)
+local t={}
+setmetatable(t,e)
+t.id=o
+t.attackDesc=a
+t.catapultDesc=i
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.attackDesc=a[2]
+t.catapultDesc=a[3]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/directives/DTDirectivesArenaDescEntityTableData')
+end
+return e 

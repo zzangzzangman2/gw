@@ -1,0 +1,41 @@
+
+?
+ActURegg.protoCommons.proto"
+PRT_UREGG_INFO_REQ"?
+PRT_UREGG_INFO_RESP
+leftTime (RleftTime$
+curUreggCount (RcurUreggCount*
+curUreggRecCount (RcurUreggRecCount(
+remainOpenCount (RremainOpenCount$
+selectItemDid (RselectItemDid"D
+PRT_UREGG_SELECT_ITEMDID_REQ$
+selectItemDid (RselectItemDid"E
+PRT_UREGG_SELECT_ITEMDID_RESP$
+selectItemDid (RselectItemDid":
+PRT_UREGG_BREAK_REQ#
+type (2.ENUM_DRAW_TYPERtype"?
+PRT_UREGG_BREAK_RESP#
+type (2.ENUM_DRAW_TYPERtype(
+breakUreggCount (RbreakUreggCount'
+awards (2.PRT_ONCE_AWARDRawards$
+curUreggCount (RcurUreggCount(
+remainOpenCount (RremainOpenCount"
+PRT_UREGG_REC_REQ"
+PRT_UREGG_REC_RESP"3
+PRT_UREGG_GIFT_FREE_REQ
+giftDid (RgiftDid":
+PRT_UREGG_GIFT_FREE_RESP
+gift (2
+.PRT_GOODSRgift"H
+PRT_UREGG_GIFT_BUY_REQ
+giftDid (RgiftDid
+count (Rcount"9
+PRT_UREGG_GIFT_BUY_RESP
+gift (2
+.PRT_GOODSRgift"
+PRT_UREGG_GIFT_REQ"U
+PRT_UREGG_GIFT_RESP 
+gifts (2
+.PRT_GOODSRgifts
+	resetTime (R	resetTimeB
+com.next1b.nextsvr.protobproto3

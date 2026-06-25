@@ -1,0 +1,10 @@
+local e={}
+function e:OnHandle(e)
+local e=assert(GlobalPB.decode("PRT_EQUIP_GEM_BATCH_COMPOSE_RESP",e));
+if(GameInit.GetDebugLogProto())then
+;
+;
+end
+EventSystem.SendEvent(CommonEventId.OnEquipGemBatchCompose,e)
+end
+return e 

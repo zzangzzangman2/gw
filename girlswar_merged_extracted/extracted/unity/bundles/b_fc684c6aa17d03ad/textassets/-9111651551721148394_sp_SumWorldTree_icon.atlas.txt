@@ -1,0 +1,14 @@
+sp_SumWorldTree_icon.png
+size:256,64
+filter:Linear,Linear
+gou1
+bounds:98,19,27,45
+gou2
+bounds:0,0,72,64
+gou4
+bounds:73,18,46,24
+offsets:1,1,48,26
+rotate:90
+gpu3
+bounds:122,0,53,38
+rotate:270

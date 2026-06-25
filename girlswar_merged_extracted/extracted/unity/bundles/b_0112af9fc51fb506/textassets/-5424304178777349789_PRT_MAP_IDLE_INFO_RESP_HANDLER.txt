@@ -1,0 +1,10 @@
+local e={}
+function e:OnHandle(e)
+local e=assert(GlobalPB.decode("PRT_MAP_IDLE_INFO_RESP",e));
+if(GameInit.GetDebugLogProto())then
+;
+end
+ModulesInit.ExpeditionManager:OnSendMapIdleInfoRequest(e)
+return e
+end
+return e 

@@ -1,0 +1,8 @@
+activityname_147.png
+size:148,60
+filter:Linear,Linear
+2
+bounds:2,2,93,56
+huangsexing
+bounds:97,9,49,49
+offsets:1,0,50,49

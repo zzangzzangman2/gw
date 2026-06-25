@@ -1,0 +1,64 @@
+local a={id=0,modelID=0,hideBar=0,hideShadow=0,monName="",monMode=0,profession=0,star=0,monOfficer=0,rankLevel=0,monType=0,monLevel=0,soulId=0,lockLevel=0,skillMode=0,monSkill1=0,monSkill2=0,monSkill3=0,monSkill4=0,monSkillPas={},monAttr={{},{}},monValue=0,treasureId=0,treasureLevel=0}
+a.__index=a
+function a.New(u,w,m,t,v,p,y,g,q,k,x,j,z,b,f,h,s,n,o,i,r,l,d,c)
+local e={}
+setmetatable(e,a)
+e.id=u
+e.modelID=w
+e.hideBar=m
+e.hideShadow=t
+e.monName=v
+e.monMode=p
+e.profession=y
+e.star=g
+e.monOfficer=q
+e.rankLevel=k
+e.monType=x
+e.monLevel=j
+e.soulId=z
+e.lockLevel=b
+e.skillMode=f
+e.monSkill1=h
+e.monSkill2=s
+e.monSkill3=n
+e.monSkill4=o
+e.monSkillPas=i
+e.monAttr=r
+e.monValue=l
+e.treasureId=d
+e.treasureLevel=c
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.modelID=t[2]
+e.hideBar=t[3]
+e.hideShadow=t[4]
+e.monName=t[5]
+e.monMode=t[6]
+e.profession=t[7]
+e.star=t[8]
+e.monOfficer=t[9]
+e.rankLevel=t[10]
+e.monType=t[11]
+e.monLevel=t[12]
+e.soulId=t[13]
+e.lockLevel=t[14]
+e.skillMode=t[15]
+e.monSkill1=t[16]
+e.monSkill2=t[17]
+e.monSkill3=t[18]
+e.monSkill4=t[19]
+e.monSkillPas=t[20]
+e.monAttr=t[21]
+e.monValue=t[22]
+e.treasureId=t[23]
+e.treasureLevel=t[24]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/monster/DTMonster_GEntityTableData')
+end
+return a 

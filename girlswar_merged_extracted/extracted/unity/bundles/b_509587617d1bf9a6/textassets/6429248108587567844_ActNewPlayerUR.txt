@@ -1,0 +1,37 @@
+
+?	
+ActNewPlayerUR.protoCommons.proto"?
+PRT_NEW_PLAYER_UR_DRAW
+freeCD (RfreeCD,
+alreadyDrawNumber (RalreadyDrawNumber
+multiple (Rmultiple
+heroDid (RheroDid"
+PRT_NEW_PLAYER_UR_INFO_REQ"?
+PRT_NEW_PLAYER_UR_INFO_RESP-
+draws (2.PRT_NEW_PLAYER_UR_DRAWRdraws&
+firstDayStatus (RfirstDayStatus4
+newSevenDayGiftStatus (RnewSevenDayGiftStatus0
+accumulateItemCount (RaccumulateItemCount"#
+!PRT_NEW_PLAYER_UR_DAILY_AWARD_REQ"N
+"PRT_NEW_PLAYER_UR_DAILY_AWARD_RESP(
+isRecDailyAward (RisRecDailyAward"?
+PRT_NEW_PLAYER_UR_DRAW_REQ
+heroDid (RheroDid#
+type (2.ENUM_DRAW_TYPERtype&
+isCostCurrency (RisCostCurrency
+itemDid (RitemDid"?
+PRT_NEW_PLAYER_UR_DRAW_RESP+
+draw (2.PRT_NEW_PLAYER_UR_DRAWRdraw'
+awards (2.PRT_ONCE_AWARDRawards&
+activeHeroDids (RactiveHeroDids"
+PRT_NEW_PLAYER_UR_TASK_REQ">
+PRT_NEW_PLAYER_UR_TASK_RESP
+tasks (2	.PRT_TASKRtasks"<
+ PRT_NEW_PLAYER_UR_TASK_AWARD_REQ
+taskDid (RtaskDid"B
+!PRT_NEW_PLAYER_UR_TASK_AWARD_RESP
+task (2	.PRT_TASKRtask"#
+!PRT_NEW_PLAYER_UR_TRIAL_COUNT_REQ":
+"PRT_NEW_PLAYER_UR_TRIAL_COUNT_RESP
+count (RcountB
+com.next1b.nextsvr.protobproto3

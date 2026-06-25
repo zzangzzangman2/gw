@@ -1,0 +1,29 @@
+
+?
+FiveDayChargeGift.protoCommons.proto"#
+!PRT_FIVE_DAY_CHARGE_GIFT_INFO_REQ"?
+"PRT_FIVE_DAY_CHARGE_GIFT_INFO_RESP
+curDay (RcurDay"
+receivedDids (RreceivedDids
+	freeAward (R	freeAward
+
+finalAward (R
+finalAward 
+selectIndex (RselectIndex"G
+#PRT_FIVE_DAY_CHARGE_GIFT_SELECT_REQ 
+selectIndex (RselectIndex"H
+$PRT_FIVE_DAY_CHARGE_GIFT_SELECT_RESP 
+selectIndex (RselectIndex"*
+(PRT_FIVE_DAY_CHARGE_GIFT_FINAL_AWARD_REQ"M
+)PRT_FIVE_DAY_CHARGE_GIFT_FINAL_AWARD_RESP 
+drops (2
+.PRT_THINGRdrops")
+'PRT_FIVE_DAY_CHARGE_GIFT_FREE_AWARD_REQ"L
+(PRT_FIVE_DAY_CHARGE_GIFT_FREE_AWARD_RESP 
+drops (2
+.PRT_THINGRdrops"o
+'PRT_FIVE_DAY_CHARGE_GIFT_BUY_AWARD_SYNC"
+receivedDids (RreceivedDids 
+drops (2
+.PRT_THINGRdropsB
+com.next1b.nextsvr.protobproto3

@@ -1,0 +1,16 @@
+local e=
+{
+ByIdx={
+{0,"nybqy_14","nybqy_5",0},
+{1,"nybqy_12","nybqy_3",8},
+{2,"nybqy_10","nybqy_1",3},
+{3,"nybqy_17","nybqy_8",4},
+{4,"nybqy_11","nybqy_2",10},
+{5,"nybqy_15","nybqy_6",5},
+{6,"nybqy_16","nybqy_7",7},
+{7,"nybqy_13","nybqy_4",9},
+{8,"nybqy_18","nybqy_9",11}
+},
+Len=9
+}
+return e 

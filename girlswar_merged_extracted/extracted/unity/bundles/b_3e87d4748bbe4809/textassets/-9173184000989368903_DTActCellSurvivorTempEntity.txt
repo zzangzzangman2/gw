@@ -1,0 +1,54 @@
+local a={id=0,taskGroup=0,bpGroup=0,rankGroup=0,weaponGroup=0,stageGroup=0,infiniteGroup=0,infiniteAwardGroup=0,shopGroup=0,smallchargeOff=0,smallchargeRewardAdd=0,smallchargeScoreAdd=0,bigchargeRewardAdd=0,bigchargeScoreAdd=0,bigchargeOff=0,bpExtraIntergral=0,bpExtraIntergralAward={{},{}},collection={},collectTemp=""}
+a.__index=a
+function a.New(d,c,l,t,f,m,y,v,p,b,g,w,u,n,i,o,s,r,h)
+local e={}
+setmetatable(e,a)
+e.id=d
+e.taskGroup=c
+e.bpGroup=l
+e.rankGroup=t
+e.weaponGroup=f
+e.stageGroup=m
+e.infiniteGroup=y
+e.infiniteAwardGroup=v
+e.shopGroup=p
+e.smallchargeOff=b
+e.smallchargeRewardAdd=g
+e.smallchargeScoreAdd=w
+e.bigchargeRewardAdd=u
+e.bigchargeScoreAdd=n
+e.bigchargeOff=i
+e.bpExtraIntergral=o
+e.bpExtraIntergralAward=s
+e.collection=r
+e.collectTemp=h
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.taskGroup=t[2]
+e.bpGroup=t[3]
+e.rankGroup=t[4]
+e.weaponGroup=t[5]
+e.stageGroup=t[6]
+e.infiniteGroup=t[7]
+e.infiniteAwardGroup=t[8]
+e.shopGroup=t[9]
+e.smallchargeOff=t[10]
+e.smallchargeRewardAdd=t[11]
+e.smallchargeScoreAdd=t[12]
+e.bigchargeRewardAdd=t[13]
+e.bigchargeScoreAdd=t[14]
+e.bigchargeOff=t[15]
+e.bpExtraIntergral=t[16]
+e.bpExtraIntergralAward=t[17]
+e.collection=t[18]
+e.collectTemp=t[19]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/activity/DTActCellSurvivorTempEntityTableData')
+end
+return a 

@@ -1,0 +1,28 @@
+local e={id=0,tabName="",tabFunList={},tabNum=0,unlockLv=0,unlockLevel=0}
+e.__index=e
+function e.New(a,i,o,h,s,n)
+local t={}
+setmetatable(t,e)
+t.id=a
+t.tabName=i
+t.tabFunList=o
+t.tabNum=h
+t.unlockLv=s
+t.unlockLevel=n
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.tabName=a[2]
+t.tabFunList=a[3]
+t.tabNum=a[4]
+t.unlockLv=a[5]
+t.unlockLevel=a[6]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/helper/DTHelperTabEntityTableData')
+end
+return e 

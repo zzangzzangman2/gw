@@ -1,0 +1,459 @@
+
+?k
+Island.protoCommons.protoFight.protoFormation.protoSnapshot.proto
+Hero.protoEquip.protoUnderwear.protoMagicOrchard.protoSummonPet.proto"?
+*PRT_CS_ISLAND_PLAYER_RANK_SCORE_UPDATE_SYN
+playerId (RplayerId
+score (Rscore
+changeMS (RchangeMS
+route (Rroute"?
+)PRT_CS_ISLAND_GUILD_RANK_SCORE_UPDATE_SYN
+playerId (RplayerId
+score (Rscore
+changeMS (RchangeMS
+guildId (RguildId
+route (Rroute"x
+(PRT_CS_ISLAND_TASK_RANK_SCORE_UPDATE_SYN
+playerId (RplayerId
+score (Rscore
+changeMS (RchangeMS"?
+0PRT_CS_ISLAND_TASK_POINT_PLAYER_SCORE_UPDATE_SYNg
+playerScores (2C.PRT_CS_ISLAND_TASK_POINT_PLAYER_SCORE_UPDATE_SYN.PlayerScoresEntryRplayerScores
+changeMS (RchangeMS?
+PlayerScoresEntry
+key (Rkey
+value (Rvalue:8"?
+/PRT_CS_ISLAND_TASK_POINT_GUILD_SCORE_UPDATE_SYN
+guidId (RguidId
+changeMS (RchangeMS
+score (Rscore&
+leaderPlayerId (RleaderPlayerId"\
+PRT_ISLAND_ROUTE_POINT
+pointId (RpointId(
+addInvestIndexs (RaddInvestIndexs"T
+PRT_ISLAND_ROUTE_THING
+thingDid (RthingDid
+
+thingCount (R
+thingCount"?
+PRT_ISLAND_ROUTE_RANK
+roadId (RroadId0
+
+playerRank (2.PRT_COMMON_RANKR
+playerRank6
+
+guildRanks (2.PRT_COMMON_GUILD_RANKR
+guildRanks"\
+PRT_ISLAND_ROUTE_PLAYER_RANK
+roadID (RroadID$
+rank (2.PRT_COMMON_RANKRrank"=
+PRT_ISLAND_ROUTE_INFO_REQ 
+useOrderIds (RuseOrderIds"?
+PRT_ISLAND_ROUTE_INFO_RESP
+endTime (RendTime&
+maxIsLandPoint (RmaxIsLandPoint7
+
+pointDatas (2.PRT_ISLAND_ROUTE_POINTR
+pointDatas6
+
+firstRanks (2.PRT_ISLAND_ROUTE_RANKR
+firstRanks.
+alreadyExchangeNum (RalreadyExchangeNum
+playerId (RplayerId-
+	orderInfo (2.PRT_ORDER_INFOR	orderInfo"7
+PRT_ISLAND_ROUTE_ACTIVE_REQ
+pointId (RpointId"8
+PRT_ISLAND_ROUTE_ACTIVE_RESP
+pointId (RpointId"c
+PRT_ISLAND_ROUTE_ADD_INVEST_REQ
+pointId (RpointId&
+addInvestIndex (RaddInvestIndex"d
+ PRT_ISLAND_ROUTE_ADD_INVEST_RESP
+pointId (RpointId&
+addInvestIndex (RaddInvestIndex"!
+PRT_ISLAND_ROUTE_LEVEL_INFO_REQ":
+ PRT_ISLAND_ROUTE_LEVEL_INFO_RESP
+levels (Rlevels""
+ PRT_ISLAND_ROUTE_LEVEL_AWARD_REQ"9
+!PRT_ISLAND_ROUTE_LEVEL_AWARD_RESP
+level (Rlevel"3
+PRT_ISLAND_ROUTE_RANK_REQ
+roadId (RroadId"?
+PRT_ISLAND_ROUTE_RANK_RESP&
+ranks (2.PRT_COMMON_RANKRranks,
+selfRank (2.PRT_COMMON_RANKRselfRank
+roadId (RroadId
+playerId (RplayerId"9
+PRT_ISLAND_ROUTE_GUILD_RANK_REQ
+roadId (RroadId"?
+ PRT_ISLAND_ROUTE_GUILD_RANK_RESP,
+ranks (2.PRT_COMMON_GUILD_RANKRranks2
+selfRank (2.PRT_COMMON_GUILD_RANKRselfRank
+roadId (RroadId
+playerId (RplayerId"P
+PRT_ISLAND_ROUTE_EXCHANGE_REQ/
+things (2.PRT_ISLAND_ROUTE_THINGRthings"v
+PRT_ISLAND_ROUTE_EXCHANGE_RESP.
+alreadyExchangeNum (RalreadyExchangeNum$
+rewards (2
+.PRT_THINGRrewards"!
+PRT_ISLAND_ROUTE_RANK_FIRST_REQ"v
+ PRT_ISLAND_ROUTE_RANK_FIRST_RESP6
+
+firstRanks (2.PRT_ISLAND_ROUTE_RANKR
+firstRanks
+playerId (RplayerId"
+PRT_ISLAND_WEEK_CARD_REQ"
+PRT_ISLAND_WEEK_CARD_RESP 
+leftEndTime (RleftEndTime$
+dayRewardFlag (RdayRewardFlag
+buyCount (RbuyCount"&
+$PRT_ISLAND_WEEK_CARD_FREE_REWARD_REQ"?
+%PRT_ISLAND_WEEK_CARD_FREE_REWARD_RESP 
+leftEndTime (RleftEndTime$
+dayRewardFlag (RdayRewardFlag 
+drops (2
+.PRT_THINGRdrops"!
+PRT_ISLAND_TASK_PLAYER_INFO_REQ"a
+ PRT_ISLAND_TASK_PLAYER_INFO_RESP
+tasks (2	.PRT_TASKRtasks
+	rankScore (R	rankScore"<
+ PRT_ISLAND_TASK_PLAYER_AWARD_REQ
+taskDid (RtaskDid"B
+!PRT_ISLAND_TASK_PLAYER_AWARD_RESP
+task (2	.PRT_TASKRtask" 
+PRT_ISLAND_TASK_GUILD_INFO_REQ"`
+PRT_ISLAND_TASK_GUILD_INFO_RESP
+tasks (2	.PRT_TASKRtasks
+	rankScore (R	rankScore";
+PRT_ISLAND_TASK_GUILD_AWARD_REQ
+taskDid (RtaskDid"A
+ PRT_ISLAND_TASK_GUILD_AWARD_RESP
+task (2	.PRT_TASKRtask"
+PRT_ISLAND_DAY_LOGIN_INFO_REQ"?
+PRT_ISLAND_DAY_LOGIN_INFO_RESP
+endTime (RendTime
+	loginDays (R	loginDays"
+receivedDids (RreceivedDids
+	rankScore (R	rankScore"2
+PRT_ISLAND_DAY_LOGIN_AWARD_REQ
+day (Rday"c
+PRT_ISLAND_DAY_LOGIN_AWARD_RESP"
+receivedDids (RreceivedDids
+	rankScore (R	rankScore"?
+PRT_ISLAND_GROW_INFO
+curCount (RcurCount,
+chargeAwardUnlock (RchargeAwardUnlock,
+receivedAwardDids (RreceivedAwardDids8
+receivedChargeAwardDids (RreceivedChargeAwardDids"
+PRT_ISLAND_GROW_INFO_REQ"F
+PRT_ISLAND_GROW_INFO_RESP)
+info (2.PRT_ISLAND_GROW_INFORinfo"W
+!PRT_ISLAND_GROW_RECEIVE_AWARD_REQ
+did (Rdid 
+chargeAward (RchargeAward"O
+"PRT_ISLAND_GROW_RECEIVE_AWARD_RESP)
+info (2.PRT_ISLAND_GROW_INFORinfo"'
+%PRT_ISLAND_GROW_RECEIVE_AWARD_ALL_REQ"S
+&PRT_ISLAND_GROW_RECEIVE_AWARD_ALL_RESP)
+info (2.PRT_ISLAND_GROW_INFORinfo"!
+PRT_ISLAND_NORMAL_SHOP_INFO_REQ"n
+ PRT_ISLAND_NORMAL_SHOP_INFO_RESP 
+items (2
+.PRT_GOODSRitems(
+unlockItemCount (RunlockItemCount"R
+PRT_ISLAND_NORMAL_SHOP_BUY_REQ
+goodsDid (RgoodsDid
+count (Rcount"k
+PRT_ISLAND_NORMAL_SHOP_BUY_RESP
+item (2
+.PRT_GOODSRitem(
+unlockItemCount (RunlockItemCount"
+PRT_ISLAND_PARK_GIFT_INFO_REQ"Z
+PRT_ISLAND_PARK_GIFT_INFO_RESP 
+gifts (2
+.PRT_GOODSRgifts
+freeCD (RfreeCD"?
+#PRT_ISLAND_PARK_GIFT_FREE_AWARD_REQ
+giftDid (RgiftDid"F
+$PRT_ISLAND_PARK_GIFT_FREE_AWARD_RESP
+gift (2
+.PRT_GOODSRgift"?
+PRT_ISLAND_GUILD_RANK
+rank (Rrank
+guildId (RguildId
+	guildName (	R	guildName
+bg (Rbg
+fg (Rfg
+
+totalScore (R
+totalScore
+serverId (RserverId 
+captainName	 (	RcaptainName"
+PRT_ISLAND_TOTAL_RANK_REQ"?
+PRT_ISLAND_TOTAL_RANK_RESP&
+ranks (2.PRT_COMMON_RANKRranks,
+selfRank (2.PRT_COMMON_RANKRselfRankN
+guildTotalbBeliefRanks (2.PRT_ISLAND_GUILD_RANKRguildTotalbBeliefRanksR
+selfGuildTotalBeliefRank (2.PRT_ISLAND_GUILD_RANKRselfGuildTotalBeliefRank
+playerId (RplayerId"?
+PRT_MAPS_GIFT
+giftDid (RgiftDid
+	endSecond (R	endSecond
+giftId (RgiftId
+status (Rstatus 
+fromRouteId (RfromRouteId"
+PRT_ISLAND_GIFT_NEW_INFO_REQ"E
+PRT_ISLAND_GIFT_NEW_INFO_RESP$
+gifts (2.PRT_MAPS_GIFTRgifts"Z
+PRT_ORDER_HERO
+heroDid (RheroDid
+	rankLevel (R	rankLevel
+pos (Rpos"?
+PRT_JOIN_PLAYER
+playerId (RplayerId
+name (	Rname
+head (Rhead
+	headFrame (R	headFrame%
+heros (2.PRT_ORDER_HERORheros
+serverId (RserverId
+
+powerFight (R
+powerFight
+level (Rlevel
+	guildName	 (	R	guildName"w
+PRT_ORDER_DROP_INFO"
+awards (2
+.PRT_THINGRawards 
+isPlundered (RisPlundered
+isExtAdd (RisExtAdd"?
+	PRT_ORDER
+orderId (RorderId
+orderDid (RorderDid
+
+plunderNum (R
+plunderNum
+
+createTime (R
+createTime
+endTime (RendTime2
+ownerPlayer (2.PRT_JOIN_PLAYERRownerPlayer*
+drops (2.PRT_ORDER_DROP_INFORdrops
+
+carSkinDid	 (R
+carSkinDid
+routeDid
+ (RrouteDid
+orderPos (RorderPos"
+orderNameDid (RorderNameDid"?
+PRT_PREVIEW_ORDER
+orderDid (RorderDid*
+drops (2.PRT_ORDER_DROP_INFORdrops"
+refreshCount (RrefreshCount
+orderPos (RorderPos%
+heros (2.PRT_ORDER_HERORheros"
+orderNameDid (RorderNameDid"?
+PRT_BATTLE_LOG_RESULT
+isWin (RisWin0
+
+playerInfo (2.PRT_JOIN_PLAYERR
+playerInfo,
+awards (2.PRT_ORDER_DROP_INFORawards
+
+battleTime (R
+battleTime"p
+PRT_ORDER_BATTLE_LOG 
+order (2
+.PRT_ORDERRorder6
+
+battleLogs (2.PRT_BATTLE_LOG_RESULTR
+battleLogs"?
+PRT_ORDER_INFO,
+otherOrders (2
+.PRT_ORDERRotherOrders*
+
+selfOrders (2
+.PRT_ORDERR
+selfOrders$
+attackerCount (RattackerCount&
+usedOrderCount (RusedOrderCount>
+selectOrderDatas (2.PRT_PREVIEW_ORDERRselectOrderDatas&
+extAttackerNum (RextAttackerNum,
+extCreateOrderNum (RextCreateOrderNum8
+bossInfo (2.PRT_ISLAND_ESCORT_BOSS_INFORbossInfo"?
+PRT_ESCORT_ORDER_INFO_REQ"
+usedOrderIds (RusedOrderIds"g
+PRT_ESCORT_ORDER_INFO_RESP-
+	orderInfo (2.PRT_ORDER_INFOR	orderInfo
+playerId (RplayerId"G
+!PRT_ESCORT_REFRESH_ORDER_LIST_REQ"
+usedOrderIds (RusedOrderIds"?
+"PRT_ESCORT_REFRESH_ORDER_LIST_RESP,
+otherOrders (2
+.PRT_ORDERRotherOrders
+playerId (RplayerId3
+	bossDatas (2.PRT_ESCORT_BOSS_DATAR	bossDatas"E
+'PRT_ESCORT_REFRESH_DISPATCHER_ORDER_REQ
+orderPos (RorderPos"h
+(PRT_ESCORT_REFRESH_DISPATCHER_ORDER_RESP<
+selectOrderData (2.PRT_PREVIEW_ORDERRselectOrderData"?
+PRT_ESCORT_CREATE_ORDER_REQ
+orderPos (RorderPos5
+	positions (2.PRT_FORMATION_POSITIONR	positions0
+snapshot (2.PRT_PLAYER_SNAPSHOTRsnapshot"
+awards (2
+.PRT_THINGRawards
+orderDid (RorderDid&
+airshipSkinDid (RairshipSkinDid"
+orderNameDid (RorderNameDid&
+extSubBuffTime (RextSubBuffTime&
+extAddDropsPos	 (RextAddDropsPos"?
+PRT_ESCORT_CREATE_ORDER_RESP 
+order (2
+.PRT_ORDERRorder&
+usedOrderCount (RusedOrderCount
+playerId (RplayerId
+
+useHeroIds (R
+useHeroIds"?
+PRT_ESCORT_PLUNDER_ORDER_REQ
+orderId (RorderId5
+	positions (2.PRT_FORMATION_POSITIONR	positions6
+acksnapshot (2.PRT_PLAYER_SNAPSHOTRacksnapshot"?
+PRT_ESCORT_PLUNDER_ORDER_RESP/
+
+battleInfo (2.PRT_FIGHT_PLAYR
+battleInfo 
+fightResult (RfightResult#
+awards (2.PRT_REWARDRawards$
+attackerCount (RattackerCount 
+order (2
+.PRT_ORDERRorder
+playerId (RplayerId*
+drops (2.PRT_ORDER_DROP_INFORdrops";
+PRT_ESCORT_ORDER_BATTLE_LOG_REQ
+orderId (RorderId"s
+ PRT_ESCORT_ORDER_BATTLE_LOG_RESP3
+	orderLogs (2.PRT_ORDER_BATTLE_LOGR	orderLogs
+playerId (RplayerId"P
+$PRT_ESCORT_SELF_ORDER_BATTLE_LOG_REQ(
+plunderOrderIds (RplunderOrderIds"x
+%PRT_ESCORT_SELF_ORDER_BATTLE_LOG_RESP3
+	orderLogs (2.PRT_ORDER_BATTLE_LOGR	orderLogs
+playerId (RplayerId"R
+PRT_ESCORT_ORDER_AWARD_REQ
+orderPos (RorderPos
+orderId (RorderId"?
+PRT_ESCORT_ORDER_AWARD_RESP<
+selectOrderData (2.PRT_PREVIEW_ORDERRselectOrderData2
+	realDrops (2.PRT_ORDER_DROP_INFOR	realDrops
+playerId (RplayerId
+orderPos (RorderPos
+orderId (RorderId"U
+PRT_ESCORT_FORMATION_FIND_REQ
+playerId (RplayerId
+orderId (RorderId"?
+PRT_ESCORT_FORMATION_FIND_RESP,
+	formation (2.PRT_FORMATIONR	formation6
+formationAlter (2.PRT_FORMATIONRformationAlter$
+firstValueExt (RfirstValueExt
+heros (2	.PRT_HERORheros"
+equips (2
+.PRT_EQUIPRequips.
+
+underwears (2.PRT_UNDERWEARR
+underwears
+fightExt (RfightExtX
+orchardEquipSuitAttrs (2".PRT_MAGIC_ORCHARD_EQUIP_SUIT_ATTRRorchardEquipSuitAttrs/
+
+summonPets	 (2.PRT_SUMMON_PETR
+summonPetsI
+summonPetFormation
+ (2.PRT_SUMMON_PET_FORMATIONRsummonPetFormation
+playerId (RplayerId"B
+PRT_ESCORT_BOSS_DATA
+bossDid (RbossDid
+pos (Rpos"?
+PRT_ISLAND_ESCORT_BOSS_INFO/
+status (2.PRT_ESCORT_BOSS_STATUSRstatus,
+nextBossOpenTimer (RnextBossOpenTimer3
+	bossDatas (2.PRT_ESCORT_BOSS_DATAR	bossDatas 
+bossAtkNums (RbossAtkNums&
+bossMaxAtkNums (RbossMaxAtkNums
+atKNum (RatKNum"@
+"PRT_ISLAND_ESCORT_BOSS_ATK_NUM_REQ
+playerId (RplayerId"?
+#PRT_ISLAND_ESCORT_BOSS_ATK_NUM_RESP 
+bossAtkNums (RbossAtkNums&
+bossMaxAtkNums (RbossMaxAtkNums/
+status (2.PRT_ESCORT_BOSS_STATUSRstatus,
+nextBossOpenTimer (RnextBossOpenTimer
+playerId (RplayerId"T
+$PRT_ISLAND_ESCORT_BOSS_BATTLE_RECORD
+ackType (RackType
+hurt (Rhurt"`
+ PRT_ISLAND_ESCORT_BOSS_FIGHT_REQ
+bossPos (RbossPos"
+airshipAttrs (RairshipAttrs"?
+!PRT_ISLAND_ESCORT_BOSS_FIGHT_RESP?
+records (2%.PRT_ISLAND_ESCORT_BOSS_BATTLE_RECORDRrecords
+playerId (RplayerId 
+drops (2
+.PRT_THINGRdrops(
+	winsDrops (2
+.PRT_THINGR	winsDrops$
+selfAirshipHp (RselfAirshipHp
+isWin (RisWin
+bossDid (RbossDid"?
+!PRT_ISLAND_ESCORT_BOSS_BATTLE_LOG
+bossDid (RbossDid
+isWin (RisWin&
+winDrops (2
+.PRT_THINGRwinDrops
+
+battleTime (R
+battleTime",
+*PRT_ISLAND_ESCORT_BOSS_BATTLE_LOG_LIST_REQ"e
++PRT_ISLAND_ESCORT_BOSS_BATTLE_LOG_LIST_RESP6
+logs (2".PRT_ISLAND_ESCORT_BOSS_BATTLE_LOGRlogs"?
+!PRT_ISLAND_ESCORT_BOSS_STATUS_REQ/
+status (2.PRT_ESCORT_BOSS_STATUSRstatus&
+bossUsedPosIds (RbossUsedPosIds
+bossIds (RbossIds"$
+"PRT_ISLAND_ESCORT_BOSS_STATUS_RESP"%
+#PRT_ISLAND_SEVEN_DAY_LOGIN_INFO_REQ"h
+$PRT_ISLAND_SEVEN_DAY_LOGIN_INFO_RESP
+	loginDays (R	loginDays"
+receivedDids (RreceivedDids"8
+$PRT_ISLAND_SEVEN_DAY_LOGIN_AWARD_REQ
+day (Rday"m
+%PRT_ISLAND_SEVEN_DAY_LOGIN_AWARD_RESP"
+receivedDids (RreceivedDids 
+drops (2
+.PRT_THINGRdrops""
+ PRT_ISLAND_AIRSHIP_GIFT_INFO_REQ"A
+!PRT_ISLAND_AIRSHIP_GIFT_INFO_RESP
+	curBuyDid (R	curBuyDid"
+PRT_ISLAND_LICENSE_INFO_REQ"t
+PRT_ISLAND_LICENSE_INFO_RESP
+
+hasLicense (R
+hasLicense
+score (Rscore
+
+rewardDids (R
+rewardDids"7
+#PRT_ISLAND_LICENSE_POINT_REWARD_REQ
+did (Rdid"n
+$PRT_ISLAND_LICENSE_POINT_REWARD_RESP
+score (Rscore
+did (Rdid
+
+rewardDids (R
+rewardDids*?
+PRT_ESCORT_BOSS_STATUS
+PRT_ESCORT_BOSS_STATUS_NONE (
+$PRT_ESCORT_BOSS_STATUS_FIGHT_PREPARE#
+PRT_ESCORT_BOSS_STATUS_FIGHTING!
+PRT_ESCORT_BOSS_STATUS_FINISHB
+com.next1b.nextsvr.protobproto3

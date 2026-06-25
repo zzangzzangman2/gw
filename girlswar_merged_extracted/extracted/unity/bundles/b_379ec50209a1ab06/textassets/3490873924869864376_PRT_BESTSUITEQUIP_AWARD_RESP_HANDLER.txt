@@ -1,0 +1,11 @@
+local t={}
+function t:OnHandle(e)
+local e=assert(GlobalPB.decode("PRT_BESTSUITEQUIP_AWARD_RESP",e));
+if(GameInit.GetDebugLogProto())then
+;
+;
+end
+EventSystem.SendEvent(CommonEventId.OnRespBestCeoGetTaskReward,{actId=ModulesInit.ActBestCeoConfigMgr.EActId.actId_777,proto=e})
+return e
+end
+return t 

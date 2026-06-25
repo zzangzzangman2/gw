@@ -1,0 +1,30 @@
+local t={id=0,name="",desc="",taskdesc="",targetCount=0,jumpId=0,award={{},{}}}
+t.__index=t
+function t.New(o,h,a,s,r,n,i)
+local e={}
+setmetatable(e,t)
+e.id=o
+e.name=h
+e.desc=a
+e.taskdesc=s
+e.targetCount=r
+e.jumpId=n
+e.award=i
+return e
+end
+function t.NewFromArrItem(a)
+local e={}
+setmetatable(e,t)
+e.id=a[1]
+e.name=a[2]
+e.desc=a[3]
+e.taskdesc=a[4]
+e.targetCount=a[5]
+e.jumpId=a[6]
+e.award=a[7]
+return e
+end
+function t.GetArr()
+return require('DataNode/DataTable/Create/directives/DTDirectivesArenaEntityTableData')
+end
+return t 

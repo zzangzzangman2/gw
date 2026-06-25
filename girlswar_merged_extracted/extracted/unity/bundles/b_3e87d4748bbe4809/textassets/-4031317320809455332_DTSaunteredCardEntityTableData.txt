@@ -1,0 +1,27 @@
+local e=
+{
+ByIdx={
+{99302,3,{{20001,5}},10000,"SaunteredCardName_99302","SaunteredCardDesc_99302","UIActSauntered/xg_yinhua1"},
+{99303,3,{{20001,5}},10000,"SaunteredCardName_99303","SaunteredCardDesc_99303","UIActSauntered/xg_yinhua5"},
+{99304,4,{{20002,3}},20000,"SaunteredCardName_99304","SaunteredCardDesc_99304","UIActSauntered/xg_yinhua9"},
+{99305,5,{{20003,2}},30000,"SaunteredCardName_99305","SaunteredCardDesc_99305","UIActSauntered/xg_yinhua13"},
+{99306,6,{{20004,1}},50000,"SaunteredCardName_99306","SaunteredCardDesc_99306","UIActSauntered/xg_yinhua17"},
+{99307,3,{{20001,5}},10000,"SaunteredCardName_99307","SaunteredCardDesc_99307","UIActSauntered/xg_yinhua2"},
+{99308,3,{{20001,5}},10000,"SaunteredCardName_99308","SaunteredCardDesc_99308","UIActSauntered/xg_yinhua6"},
+{99309,4,{{20002,3}},20000,"SaunteredCardName_99309","SaunteredCardDesc_99309","UIActSauntered/xg_yinhua10"},
+{99310,5,{{20003,2}},30000,"SaunteredCardName_99310","SaunteredCardDesc_99310","UIActSauntered/xg_yinhua14"},
+{99311,6,{{20004,1}},50000,"SaunteredCardName_99311","SaunteredCardDesc_99311","UIActSauntered/xg_yinhua18"},
+{99312,3,{{20001,5}},10000,"SaunteredCardName_99312","SaunteredCardDesc_99312","UIActSauntered/xg_yinhua3"},
+{99313,3,{{20001,5}},10000,"SaunteredCardName_99313","SaunteredCardDesc_99313","UIActSauntered/xg_yinhua7"},
+{99314,4,{{20002,3}},20000,"SaunteredCardName_99314","SaunteredCardDesc_99314","UIActSauntered/xg_yinhua11"},
+{99315,5,{{20003,2}},30000,"SaunteredCardName_99315","SaunteredCardDesc_99315","UIActSauntered/xg_yinhua15"},
+{99316,6,{{20004,1}},50000,"SaunteredCardName_99316","SaunteredCardDesc_99316","UIActSauntered/xg_yinhua19"},
+{99317,3,{{20001,5}},10000,"SaunteredCardName_99317","SaunteredCardDesc_99317","UIActSauntered/xg_yinhua4"},
+{99318,3,{{20001,5}},10000,"SaunteredCardName_99318","SaunteredCardDesc_99318","UIActSauntered/xg_yinhua8"},
+{99319,4,{{20002,3}},20000,"SaunteredCardName_99319","SaunteredCardDesc_99319","UIActSauntered/xg_yinhua12"},
+{99320,5,{{20003,2}},30000,"SaunteredCardName_99320","SaunteredCardDesc_99320","UIActSauntered/xg_yinhua16"},
+{99321,6,{{20004,1}},50000,"SaunteredCardName_99321","SaunteredCardDesc_99321","UIActSauntered/xg_yinhua20"}
+},
+Len=20
+}
+return e 

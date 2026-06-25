@@ -1,0 +1,15 @@
+{
+  "Texture2D": 76,
+  "Material": 36,
+  "MeshRenderer": 34,
+  "GameObject": 34,
+  "MeshFilter": 34,
+  "Transform": 34,
+  "Mesh": 34,
+  "AnimationClip": 7,
+  "Avatar": 6,
+  "Animator": 6,
+  "Shader": 4,
+  "AssetBundle": 1,
+  "Sprite": 1
+}

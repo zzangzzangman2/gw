@@ -1,0 +1,14 @@
+tqy.png
+size:512,1024
+filter:Linear,Linear
+effect/daoguang/474_add
+bounds:2,297,64,64
+tqy1
+bounds:2,2,377,217
+tqy2
+bounds:381,163,139,124
+rotate:90
+tqy3
+bounds:2,221,462,315
+tqy4
+bounds:2,278,54,17

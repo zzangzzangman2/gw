@@ -1,0 +1,52 @@
+local a={id=0,goods=0,chargeAward={},buffId=0,dmgBuffId=0,advBuffId=0,ragBuffId=0,breakPoint={},breakPointRes={},dmgRes=0,advDam=0,critRate=0,bossContrlRate=0,rank=0,rankShow=0,heroUseCount=0,debuffCd=0,eventCount=0}
+a.__index=a
+function a.New(d,c,l,t,f,m,y,v,p,b,w,u,n,i,o,s,r,h)
+local e={}
+setmetatable(e,a)
+e.id=d
+e.goods=c
+e.chargeAward=l
+e.buffId=t
+e.dmgBuffId=f
+e.advBuffId=m
+e.ragBuffId=y
+e.breakPoint=v
+e.breakPointRes=p
+e.dmgRes=b
+e.advDam=w
+e.critRate=u
+e.bossContrlRate=n
+e.rank=i
+e.rankShow=o
+e.heroUseCount=s
+e.debuffCd=r
+e.eventCount=h
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.goods=t[2]
+e.chargeAward=t[3]
+e.buffId=t[4]
+e.dmgBuffId=t[5]
+e.advBuffId=t[6]
+e.ragBuffId=t[7]
+e.breakPoint=t[8]
+e.breakPointRes=t[9]
+e.dmgRes=t[10]
+e.advDam=t[11]
+e.critRate=t[12]
+e.bossContrlRate=t[13]
+e.rank=t[14]
+e.rankShow=t[15]
+e.heroUseCount=t[16]
+e.debuffCd=t[17]
+e.eventCount=t[18]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/activity/DTWatermelonCfgEntityTableData')
+end
+return a 

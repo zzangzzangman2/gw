@@ -1,0 +1,30 @@
+local t={id=0,award={},addAward={{},{}},awardReset={},awardReset2={},awardReset3={},addAwardReset={{},{}}}
+t.__index=t
+function t.New(o,h,a,s,r,n,i)
+local e={}
+setmetatable(e,t)
+e.id=o
+e.award=h
+e.addAward=a
+e.awardReset=s
+e.awardReset2=r
+e.awardReset3=n
+e.addAwardReset=i
+return e
+end
+function t.NewFromArrItem(a)
+local e={}
+setmetatable(e,t)
+e.id=a[1]
+e.award=a[2]
+e.addAward=a[3]
+e.awardReset=a[4]
+e.awardReset2=a[5]
+e.awardReset3=a[6]
+e.addAwardReset=a[7]
+return e
+end
+function t.GetArr()
+return require('DataNode/DataTable/Create/activity/DTNewSevenLoginEntityTableData')
+end
+return t 

@@ -1,0 +1,9 @@
+local e=
+{
+ByIdx={
+{1,{1000,202,1000,203,1000},100000,"TemporaryBuffName_1","UIActGroupPhotoBuff/buff_bgyx",2,820},
+{2,{0},99994,"TemporaryBuffName_2","UIActGroupPhotoBuff/buff_haidao",1,878}
+},
+Len=2
+}
+return e 

@@ -1,0 +1,11 @@
+local e={}
+function e:OnHandle(e)
+local e=assert(GlobalPB.decode("PRT_TOWER_PASS_RECORD_RESP",e))
+if(GameInit.GetDebugLogProto())then
+
+
+end
+EventSystem.SendEvent(CommonEventId.OnTowerPassRecordResp,e)
+end
+return e
+

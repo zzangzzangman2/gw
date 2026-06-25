@@ -1,0 +1,22 @@
+local e={id=0,type=0,combination={}}
+e.__index=e
+function e.New(o,a,i)
+local t={}
+setmetatable(t,e)
+t.id=o
+t.type=a
+t.combination=i
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.type=a[2]
+t.combination=a[3]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/activity/DTDiveExplorationPerspectiveEntityTableData')
+end
+return e 

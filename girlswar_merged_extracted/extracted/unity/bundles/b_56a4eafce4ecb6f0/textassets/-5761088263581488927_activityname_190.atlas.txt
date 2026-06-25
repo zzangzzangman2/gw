@@ -1,0 +1,17 @@
+activityname_190.png
+size:165,77
+filter:Linear,Linear
+10
+bounds:145,26,9,10
+11
+bounds:145,17,7,7
+44b
+bounds:78,11,64,65
+rotate:90
+8
+bounds:145,57,18,18
+9
+bounds:145,38,17,17
+quan
+bounds:2,2,73,74
+rotate:90

@@ -1,0 +1,54 @@
+local a={id=0,activityTimeRange={{},{}},defultRewardTimes=0,dailyRewardAdd=0,timeStage1=0,missionStage1={{},{}},baitStage1=0,timeStage2=0,missionStage2=0,clickNumsStage2=0,chestReward1={{},{}},chestReward2={{},{}},fishRewad=0,fishPosList={},teamListMax=0,fishPrefabId=0,inviteCloseTime=0,avgId=0,exchangeAvgId=0}
+a.__index=a
+function a.New(d,c,l,t,f,m,y,v,p,b,g,w,u,n,i,o,s,r,h)
+local e={}
+setmetatable(e,a)
+e.id=d
+e.activityTimeRange=c
+e.defultRewardTimes=l
+e.dailyRewardAdd=t
+e.timeStage1=f
+e.missionStage1=m
+e.baitStage1=y
+e.timeStage2=v
+e.missionStage2=p
+e.clickNumsStage2=b
+e.chestReward1=g
+e.chestReward2=w
+e.fishRewad=u
+e.fishPosList=n
+e.teamListMax=i
+e.fishPrefabId=o
+e.inviteCloseTime=s
+e.avgId=r
+e.exchangeAvgId=h
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.activityTimeRange=t[2]
+e.defultRewardTimes=t[3]
+e.dailyRewardAdd=t[4]
+e.timeStage1=t[5]
+e.missionStage1=t[6]
+e.baitStage1=t[7]
+e.timeStage2=t[8]
+e.missionStage2=t[9]
+e.clickNumsStage2=t[10]
+e.chestReward1=t[11]
+e.chestReward2=t[12]
+e.fishRewad=t[13]
+e.fishPosList=t[14]
+e.teamListMax=t[15]
+e.fishPrefabId=t[16]
+e.inviteCloseTime=t[17]
+e.avgId=t[18]
+e.exchangeAvgId=t[19]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/activity/DTActivitySeaFishingEntityTableData')
+end
+return a 

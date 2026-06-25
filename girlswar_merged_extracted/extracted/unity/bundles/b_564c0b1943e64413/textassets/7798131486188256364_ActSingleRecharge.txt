@@ -1,0 +1,16 @@
+
+?
+ActSingleRecharge.proto"
+PRT_SINGLE_RECHARGE_AWARD
+awardDid (RawardDid 
+chargeCount (RchargeCount$
+receivedCount (RreceivedCount"
+PRT_SINGLE_RECHARGE_INFO_REQ"o
+PRT_SINGLE_RECHARGE_INFO_RESP
+leftTime (RleftTime2
+awards (2.PRT_SINGLE_RECHARGE_AWARDRawards"=
+PRT_SINGLE_RECHARGE_RECEIVE_REQ
+awardDid (RawardDid">
+ PRT_SINGLE_RECHARGE_RECEIVE_RESP
+awardDid (RawardDidB
+com.next1b.nextsvr.protobproto3

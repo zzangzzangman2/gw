@@ -1,0 +1,11 @@
+local t={}
+function t:OnHandle(e)
+local e=assert(GlobalPB.decode("PRT_OLYMPICS_SUPPORT_BET_RESP",e));
+if(GameInit.GetDebugLogProto())then
+;
+;
+end
+ModulesInit.ActGuessMgr:synOlympicsSupportBet(e)
+return e
+end
+return t 

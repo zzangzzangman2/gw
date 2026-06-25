@@ -1,0 +1,30 @@
+local t={id=0,wishesText="",interruptionTime=0,needNum=0,reward={{},{}},maxTimes=0,clickCd=0}
+t.__index=t
+function t.New(o,h,a,s,r,n,i)
+local e={}
+setmetatable(e,t)
+e.id=o
+e.wishesText=h
+e.interruptionTime=a
+e.needNum=s
+e.reward=r
+e.maxTimes=n
+e.clickCd=i
+return e
+end
+function t.NewFromArrItem(a)
+local e={}
+setmetatable(e,t)
+e.id=a[1]
+e.wishesText=a[2]
+e.interruptionTime=a[3]
+e.needNum=a[4]
+e.reward=a[5]
+e.maxTimes=a[6]
+e.clickCd=a[7]
+return e
+end
+function t.GetArr()
+return require('DataNode/DataTable/Create/activity/DTYuanDanWishesEntityTableData')
+end
+return t 

@@ -1,0 +1,48 @@
+local a={id=0,questType=0,day=0,needCount=0,needCountFront=0,priority=0,isActiveCount=0,isClose=0,numType=0,reward={{},{}},name="",text="",icon="",jump=0,listNum=0,rewardText=""}
+a.__index=a
+function a.New(h,u,d,t,c,f,y,w,p,m,l,n,i,o,s,r)
+local e={}
+setmetatable(e,a)
+e.id=h
+e.questType=u
+e.day=d
+e.needCount=t
+e.needCountFront=c
+e.priority=f
+e.isActiveCount=y
+e.isClose=w
+e.numType=p
+e.reward=m
+e.name=l
+e.text=n
+e.icon=i
+e.jump=o
+e.listNum=s
+e.rewardText=r
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.questType=t[2]
+e.day=t[3]
+e.needCount=t[4]
+e.needCountFront=t[5]
+e.priority=t[6]
+e.isActiveCount=t[7]
+e.isClose=t[8]
+e.numType=t[9]
+e.reward=t[10]
+e.name=t[11]
+e.text=t[12]
+e.icon=t[13]
+e.jump=t[14]
+e.listNum=t[15]
+e.rewardText=t[16]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/activity/DTSevenDayEnjoyEntityTableData')
+end
+return a 

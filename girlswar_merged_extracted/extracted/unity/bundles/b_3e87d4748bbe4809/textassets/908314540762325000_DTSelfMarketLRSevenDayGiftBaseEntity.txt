@@ -1,0 +1,26 @@
+local e={id=0,sevenDayGoods=0,reward={{},{}},activityStage=0,activityStageFORMULA=""}
+e.__index=e
+function e.New(o,n,a,s,i)
+local t={}
+setmetatable(t,e)
+t.id=o
+t.sevenDayGoods=n
+t.reward=a
+t.activityStage=s
+t.activityStageFORMULA=i
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.sevenDayGoods=a[2]
+t.reward=a[3]
+t.activityStage=a[4]
+t.activityStageFORMULA=a[5]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/activity/DTSelfMarketLRSevenDayGiftBaseEntityTableData')
+end
+return e 

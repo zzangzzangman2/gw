@@ -1,0 +1,28 @@
+local e={id="",title="",desc="",helpImage=0,descImage="",battleZoneShow=0}
+e.__index=e
+function e.New(a,i,o,h,s,n)
+local t={}
+setmetatable(t,e)
+t.id=a
+t.title=i
+t.desc=o
+t.helpImage=h
+t.descImage=s
+t.battleZoneShow=n
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.title=a[2]
+t.desc=a[3]
+t.helpImage=a[4]
+t.descImage=a[5]
+t.battleZoneShow=a[6]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/help/DTHelpEntityTableData')
+end
+return e 

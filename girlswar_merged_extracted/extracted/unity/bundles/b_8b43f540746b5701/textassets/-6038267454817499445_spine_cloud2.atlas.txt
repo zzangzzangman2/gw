@@ -1,0 +1,10 @@
+spine_cloud2.png
+size:2048,1024
+filter:Linear,Linear
+yun2
+bounds:1136,2,1012,627
+offsets:118,0,1200,779
+rotate:90
+yun3
+bounds:2,375,1133,639
+offsets:28,42,1200,709

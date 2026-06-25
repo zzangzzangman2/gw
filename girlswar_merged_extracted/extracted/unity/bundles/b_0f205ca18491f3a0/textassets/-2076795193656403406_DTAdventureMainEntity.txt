@@ -1,0 +1,24 @@
+local e={id=0,funcId="",funcDesc="",showAward={}}
+e.__index=e
+function e.New(o,a,n,i)
+local t={}
+setmetatable(t,e)
+t.id=o
+t.funcId=a
+t.funcDesc=n
+t.showAward=i
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.funcId=a[2]
+t.funcDesc=a[3]
+t.showAward=a[4]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/function/DTAdventureMainEntityTableData')
+end
+return e 

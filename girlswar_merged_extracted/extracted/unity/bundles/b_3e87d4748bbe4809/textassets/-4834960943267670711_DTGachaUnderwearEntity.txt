@@ -1,0 +1,40 @@
+local a={id=0,bigOneCost=0,bigAllCost=0,smallOneCost=0,smallAllCost=0,chargeAward=0,newbieCoin=0,showRankCount=0,bigOnePoint=0,smallOnePoint=0,bigAllPoint=0,smallAllPoint=0}
+a.__index=a
+function a.New(s,d,h,t,u,c,m,l,r,i,o,n)
+local e={}
+setmetatable(e,a)
+e.id=s
+e.bigOneCost=d
+e.bigAllCost=h
+e.smallOneCost=t
+e.smallAllCost=u
+e.chargeAward=c
+e.newbieCoin=m
+e.showRankCount=l
+e.bigOnePoint=r
+e.smallOnePoint=i
+e.bigAllPoint=o
+e.smallAllPoint=n
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.bigOneCost=t[2]
+e.bigAllCost=t[3]
+e.smallOneCost=t[4]
+e.smallAllCost=t[5]
+e.chargeAward=t[6]
+e.newbieCoin=t[7]
+e.showRankCount=t[8]
+e.bigOnePoint=t[9]
+e.smallOnePoint=t[10]
+e.bigAllPoint=t[11]
+e.smallAllPoint=t[12]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/activity/DTGachaUnderwearEntityTableData')
+end
+return a 

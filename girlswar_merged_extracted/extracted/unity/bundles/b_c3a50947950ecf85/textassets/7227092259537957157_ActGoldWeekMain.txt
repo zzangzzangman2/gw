@@ -1,0 +1,13 @@
+
+?
+ActGoldWeekMain.proto"u
+PRT_GOLD_WEEK_MAIN_ACTIVITY
+
+activityId (R
+activityId
+	startTime (R	startTime
+endTime (RendTime"
+PRT_GOLD_WEEK_MAIN_INFO_REQ"P
+PRT_GOLD_WEEK_MAIN_INFO_RESP0
+acts (2.PRT_GOLD_WEEK_MAIN_ACTIVITYRactsB
+com.next1b.nextsvr.protobproto3

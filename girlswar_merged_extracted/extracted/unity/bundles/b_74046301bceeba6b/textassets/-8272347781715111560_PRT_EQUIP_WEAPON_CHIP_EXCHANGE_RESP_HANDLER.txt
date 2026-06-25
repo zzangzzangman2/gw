@@ -1,0 +1,10 @@
+local e={}
+function e:OnHandle(e)
+local e=assert(GlobalPB.decode("PRT_EQUIP_WEAPON_CHIP_EXCHANGE_RESP",e));
+if(GameInit.GetDebugLogProto())then
+;
+;
+end
+GameTools:PlayAudioLua(305)
+end
+return e 

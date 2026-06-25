@@ -1,0 +1,16 @@
+local t={}
+function t:OnHandle(e)
+local e=assert(GlobalPB.decode("PRT_PLAYER_CHANGE_PROFILE_RESP",e));
+if(GameInit.GetDebugLogProto())then
+;
+;
+end
+PlayerMgr.PlayerInfo.useLordProfileAttr=e.useLordProfileAttr
+if PlayerMgr:GetProfileTypeById(e.profile)==ELordProfileType.HeroProfile then
+PlayerMgr.PlayerInfo.profile=e.profile
+elseif PlayerMgr:GetProfileTypeById(e.profile)==ELordProfileType.LordProfile then
+PlayerMgr.PlayerInfo.lordProfile=e.profile
+end
+EventSystem.SendEvent(CommonEventId.OnPlayInfoChange)
+end
+return t 

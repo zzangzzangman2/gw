@@ -1,0 +1,25 @@
+local e=
+{
+ByIdx={
+{"ParamClothLeft","ParamClothLeft",0,{{2,0}},"HitArea_BreastL",0,0,5,10,0,1,"","","1:rodClothLeft1","","",1,35,0},
+{"ParamClothRight","ParamClothRight",0,{{1,0}},"HitArea_BreastR",0,0,5,10,0,1,"","","1:rodClothRight1","","",1,35,0},
+{"ParamSkirt","ParamSkirt",0,{{3,0}},"HitArea_Skirt",0,0,5,10,0,1,"","","1:rodSkirt1","rodSkirt1","rodSkirt1:2",1,25,0},
+{"ParamPants","ParamPants",1,{{1,0}},"HitArea_Pants,HitArea_Pants2",0,0,0,10,1,1,"","idle1_Bar","1:rodPants2_2","rodPhone2_1","rodPhone2_1:2",1,45,0},
+{"ParamPhone","ParamPhone",1,{{3,0}},"HitArea_Hand",0,0,0,10,1,1,"","idle1_Pants","1:rodPhone2_1","rodPhone2_1","rodPhone2_1:2",1,45,0},
+{"ParamLeg","ParamLeg",1,{{1,0}},"HitArea_rodLeg",0,0,15,30,0,1,"","","1:rodLeg2","","tapTrigone2_sp_1:2",1,60,0},
+{"ParamLightOff1","ParamLightOff1",2,{},"",0,0,0,10,3,1,"","","","","",1,20,0},
+{"ParamLightOff","ParamLightOff",2,{{3,0}},"HitArea_Light2",0,0,5,10,0,1,"ParamLightOff1:2","","","","",1,10,0},
+{"ParamButtontime1","ParamButtontime1",2,{},"HitArea_Button1",0,0,0,10,0,1,"","game3,tapLight3","","","",1,10,0},
+{"ParamButtontime2","ParamButtontime2",2,{},"HitArea_Button2",0,0,0,10,3,1,"","game3","","","",1,10,0},
+{"ParamButtontime3","ParamButtontime3",2,{},"HitArea_Button3",0,0,0,10,3,1,"","game3","","","",1,10,0},
+{"ParamButtontime4","ParamButtontime4",2,{},"HitArea_Button4",0,0,0,10,3,1,"","game3","","","",1,10,0},
+{"ParamRodtime1","ParamRodtime1",2,{{3,0}},"HitArea_Rod1",0,0,5,10,0,1,"","game2,game4,tapLight3","","","",1,10,0},
+{"ParamRodtime2","ParamRodtime2",2,{{4,0}},"HitArea_Rod2",0,0,5,10,0,1,"","game4","","","",1,20,0},
+{"ParamRotateX","ParamRotateX",2,{{1,-1},{2,0}},"HitArea_Rotate",-10,0,1000,10,2,0,"","game5","","","",5,20,0},
+{"ParamRotateY","ParamRotateY",2,{{3,0},{4,-1}},"HitArea_Rotate",-10,0,1000,10,2,0,"","game5","","","",5,10,0},
+{"ParamSP","ParamSP",2,{},"",0,0,0,10,0,0,"","tapLight3","","","tapCord3_sp:2",1,10,0},
+{"DragEmptyPants","",1,{{1,0}},"HitArea_Pants,HitArea_Pants2",0,0,10,10,2,2,"","","1:rodPants2_1","","",10,10,0}
+},
+Len=18
+}
+return e 

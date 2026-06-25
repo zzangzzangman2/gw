@@ -1,0 +1,5 @@
+chongnengtiao.png
+size:512,32
+filter:Linear,Linear
+ssr_bar_1
+bounds:2,2,489,17

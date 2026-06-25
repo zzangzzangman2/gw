@@ -1,0 +1,11 @@
+SP_heroname_1021.png
+size:256,512
+filter:Linear,Linear
+images/1021
+bounds:0,0,310,70
+rotate:90
+images/ssr
+bounds:72,0,153,79
+rotate:90
+images/t3
+bounds:0,312,214,200

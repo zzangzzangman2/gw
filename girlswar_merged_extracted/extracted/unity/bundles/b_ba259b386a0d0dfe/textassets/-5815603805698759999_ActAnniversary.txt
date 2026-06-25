@@ -1,0 +1,37 @@
+
+?
+ActAnniversary.protoCommons.proto"
+PRT_ANNIVERSARY_INFO_REQ"?
+PRT_ANNIVERSARY_INFO_RESP
+leftTime (RleftTime
+gemType (RgemType
+gemLevel (RgemLevel
+regDays (RregDays"
+refreshCount (RrefreshCount
+tasks (2	.PRT_TASKRtasks 
+recGemCount (RrecGemCount 
+gemLv9Count (RgemLv9Count"6
+PRT_ANNIVERSARY_CHOOSE_REQ
+gemType (RgemType"S
+PRT_ANNIVERSARY_CHOOSE_RESP
+gemType (RgemType
+gemLevel (RgemLevel"-
+PRT_ANNIVERSARY_AWARD_REQ
+did (Rdid".
+PRT_ANNIVERSARY_AWARD_RESP
+did (Rdid"#
+!PRT_ANNIVERSARY_REFRESH_LEVEL_REQ"?
+"PRT_ANNIVERSARY_REFRESH_LEVEL_RESP
+gemType (RgemType
+gemLevel (RgemLevel
+	isSuccess (R	isSuccess"
+refreshCount (RrefreshCount 
+gemLv9Count (RgemLv9Count"
+PRT_ANNIVERSARY_REC_GEM_REQ"?
+PRT_ANNIVERSARY_REC_GEM_RESP 
+recGemCount (RrecGemCount
+gemType (RgemType
+gemLevel (RgemLevel"
+refreshCount (RrefreshCount 
+gemLv9Count (RgemLv9CountB
+com.next1b.nextsvr.protobproto3

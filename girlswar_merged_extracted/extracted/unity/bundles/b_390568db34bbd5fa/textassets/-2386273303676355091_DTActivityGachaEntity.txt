@@ -1,0 +1,46 @@
+local a={id=0,freeCd=0,oneCost={},tenCost={},multipiRate=0,multipiResults={{},{}},multipiLuckyScore={{},{}},commPool=0,newCommPool=0,floorTime=0,floorPool=0,newFloorPool=0,hero=0,newHero=0,itemCost=0}
+a.__index=a
+function a.New(s,l,r,t,u,m,w,f,y,c,d,i,o,n,h)
+local e={}
+setmetatable(e,a)
+e.id=s
+e.freeCd=l
+e.oneCost=r
+e.tenCost=t
+e.multipiRate=u
+e.multipiResults=m
+e.multipiLuckyScore=w
+e.commPool=f
+e.newCommPool=y
+e.floorTime=c
+e.floorPool=d
+e.newFloorPool=i
+e.hero=o
+e.newHero=n
+e.itemCost=h
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.freeCd=t[2]
+e.oneCost=t[3]
+e.tenCost=t[4]
+e.multipiRate=t[5]
+e.multipiResults=t[6]
+e.multipiLuckyScore=t[7]
+e.commPool=t[8]
+e.newCommPool=t[9]
+e.floorTime=t[10]
+e.floorPool=t[11]
+e.newFloorPool=t[12]
+e.hero=t[13]
+e.newHero=t[14]
+e.itemCost=t[15]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/calendar/DTActivityGachaEntityTableData')
+end
+return a 

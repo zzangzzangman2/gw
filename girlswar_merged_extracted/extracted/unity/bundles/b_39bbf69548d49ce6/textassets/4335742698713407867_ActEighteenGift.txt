@@ -1,0 +1,14 @@
+
+?
+ActEighteenGift.proto"
+PRT_EIGHTEEN_GIFT_INFO_REQ"u
+PRT_EIGHTEEN_GIFT_INFO_RESP
+leftTime (RleftTime
+giftDid (RgiftDid 
+giftEndTime (RgiftEndTime"8
+PRT_EIGHTEEN_GIFT_CHOOSE_REQ
+giftDid (RgiftDid"[
+PRT_EIGHTEEN_GIFT_CHOOSE_RESP
+giftDid (RgiftDid 
+giftEndTime (RgiftEndTimeB
+com.next1b.nextsvr.protobproto3

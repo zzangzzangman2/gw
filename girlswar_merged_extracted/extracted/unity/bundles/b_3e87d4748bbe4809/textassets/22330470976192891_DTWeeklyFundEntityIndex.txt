@@ -1,0 +1,18 @@
+local e={}
+e.__index=e
+function e.Init()
+e.indexData={}
+e.indexData['index_1']={}
+e.indexData['index_1']['2']={2001,2002,2003,2004,2005,2006,2007}
+e.indexData['index_1']['4']={4001,4002,4003,4004,4005,4006,4007}
+e.indexData['index_1']['8']={8001,8002,8003,8004,8005,8006,8007}
+end
+function e.GetByIndex(t,a)
+if e.indexData[t]and e.indexData[t][a]then
+return e.indexData[t][a]
+else
+return{}
+end
+end
+return e
+

@@ -1,0 +1,5 @@
+activityname_401_1017.png
+size:128,128
+filter:Linear,Linear
+napolun
+bounds:2,2,120,90

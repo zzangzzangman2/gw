@@ -1,0 +1,11 @@
+local t={}
+function t:OnHandle(e)
+local e=assert(GlobalPB.decode("PRT_SUMMON_PET_FACTOR_SYN",e));
+if(GameInit.GetDebugLogProto())then
+;
+;
+end
+SummonPetEquipMgr:OnSummonPetEquipSyn(e)
+return e
+end
+return t 

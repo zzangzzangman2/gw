@@ -1,0 +1,8 @@
+bianjiao_gantanhao.png
+size:128,64
+filter:Linear,Linear
+qpsp1
+bounds:66,15,31,49
+qpsp2
+bounds:0,0,64,65
+rotate:90

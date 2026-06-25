@@ -1,0 +1,40 @@
+local a={id=0,petAtk=0,petCritical=0,petCriticalRes=0,petCriticalStrength=0,petInjure=0,petInjureRes=0,petControl=0,petControlRes=0,petCriticalStrengthRes=0,petDefFactor=0,petAtkFactor=0}
+a.__index=a
+function a.New(s,d,h,t,u,c,m,l,r,i,o,n)
+local e={}
+setmetatable(e,a)
+e.id=s
+e.petAtk=d
+e.petCritical=h
+e.petCriticalRes=t
+e.petCriticalStrength=u
+e.petInjure=c
+e.petInjureRes=m
+e.petControl=l
+e.petControlRes=r
+e.petCriticalStrengthRes=i
+e.petDefFactor=o
+e.petAtkFactor=n
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.petAtk=t[2]
+e.petCritical=t[3]
+e.petCriticalRes=t[4]
+e.petCriticalStrength=t[5]
+e.petInjure=t[6]
+e.petInjureRes=t[7]
+e.petControl=t[8]
+e.petControlRes=t[9]
+e.petCriticalStrengthRes=t[10]
+e.petDefFactor=t[11]
+e.petAtkFactor=t[12]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/skillAct/DTBattleTestPetAttrEntityTableData')
+end
+return a 

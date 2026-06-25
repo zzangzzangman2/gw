@@ -1,0 +1,30 @@
+local t={id=0,breedFruuitStoryId=0,secondFruitStoryId=0,secondOrderStoryId=0,secondOrderSoltStoryId=0,threeOrderStoryId=0,goldThreeUp=0}
+t.__index=t
+function t.New(o,h,a,s,r,n,i)
+local e={}
+setmetatable(e,t)
+e.id=o
+e.breedFruuitStoryId=h
+e.secondFruitStoryId=a
+e.secondOrderStoryId=s
+e.secondOrderSoltStoryId=r
+e.threeOrderStoryId=n
+e.goldThreeUp=i
+return e
+end
+function t.NewFromArrItem(a)
+local e={}
+setmetatable(e,t)
+e.id=a[1]
+e.breedFruuitStoryId=a[2]
+e.secondFruitStoryId=a[3]
+e.secondOrderStoryId=a[4]
+e.secondOrderSoltStoryId=a[5]
+e.threeOrderStoryId=a[6]
+e.goldThreeUp=a[7]
+return e
+end
+function t.GetArr()
+return require('DataNode/DataTable/Create/magicOrchard/DTMagicOrchardStoryCfgEntityTableData')
+end
+return t 

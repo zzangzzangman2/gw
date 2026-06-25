@@ -1,0 +1,19 @@
+local e=
+{
+ByIdx={
+{1,1,{99840,10},1,"IslandRankPointDesc_1"},
+{2,2,{1},50,"IslandRankPointDesc_2"},
+{3,3,{10},50,"IslandRankPointDesc_3"},
+{4,4,{10},50,"IslandRankPointDesc_4"},
+{5,5,{1},50,"IslandRankPointDesc_5"},
+{6,6,{1},100,"IslandRankPointDesc_6"},
+{7,6,{2},150,"IslandRankPointDesc_7"},
+{8,6,{3},200,"IslandRankPointDesc_8"},
+{9,7,{6},100,"IslandRankPointDesc_9"},
+{10,7,{5},200,"IslandRankPointDesc_10"},
+{11,7,{4},500,"IslandRankPointDesc_11"},
+{12,7,{3},1000,"IslandRankPointDesc_12"}
+},
+Len=12
+}
+return e 

@@ -1,0 +1,17 @@
+local e=
+{
+ByIdx={
+{629,0,{0},629,0,"UIGoldweekHalloweenName_1",1,"icon_01",0},
+{780,0,{0},780,0,"UIGoldweekHalloweenName_2",1,"icon_02",0},
+{634,0,{0},634,0,"UIGoldweekHalloweenName_3",1,"icon_03",0},
+{892,0,{0},892,0,"UIGoldweekHalloweenName_4",1,"icon_04",0},
+{277,3,{0},277,0,"UIGoldweekHalloweenName_5",1,"icon_05",0},
+{919,0,{0},919,0,"UIGoldweekHalloweenName_6",1,"icon_06",0},
+{899,0,{0},899,0,"UIGoldweekHalloweenName_8",1,"icon_07",0},
+{257,2,{5,6},257,0,"",1,"icon_xieli",1},
+{622,0,{0},622,0,"",1,"icon_paihang",1},
+{276,3,{0},276,0,"UIGoldweekHalloweenName_7",1,"icon_08",0}
+},
+Len=10
+}
+return e 

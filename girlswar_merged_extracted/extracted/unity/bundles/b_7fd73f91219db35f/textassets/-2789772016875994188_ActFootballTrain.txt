@@ -1,0 +1,40 @@
+
+?	
+ActFootballTrain.protoCommons.proto"?
+PRT_FOOTBALL_TRAIN_DRAW
+position (Rposition
+awarded (Rawarded#
+things (2.PRT_REWARDRthings
+
+isBigAward (R
+isBigAward"
+PRT_FOOTBALL_TRAIN_INFO_REQ"?
+PRT_FOOTBALL_TRAIN_INFO_RESP
+score (Rscore$
+scoreLevelDid (RscoreLevelDid
+endTime (RendTime
+round (Rround.
+draws (2.PRT_FOOTBALL_TRAIN_DRAWRdraws"
+dailyAwarded (RdailyAwarded
+dayDid (RdayDid"#
+!PRT_FOOTBALL_TRAIN_DAILYAWARD_REQ"?
+"PRT_FOOTBALL_TRAIN_DAILYAWARD_RESP!
+award (2.PRT_REWARDRaward"
+dailyAwarded (RdailyAwarded
+dayDid (RdayDid"$
+"PRT_FOOTBALL_TRAIN_SCORE_AWARD_REQ"n
+#PRT_FOOTBALL_TRAIN_SCORE_AWARD_RESP!
+award (2.PRT_REWARDRaward$
+scoreLevelDid (RscoreLevelDid"9
+PRT_FOOTBALL_TRAIN_DRAW_REQ
+position (Rposition"?
+PRT_FOOTBALL_TRAIN_DRAW_RESP0
+awards (2.PRT_FOOTBALL_TRAIN_DRAWRawards
+score (Rscore"
+drawPosition (RdrawPosition":
+PRT_FOOTBALL_TRAIN_CLAIM_REQ
+position (Rposition"u
+PRT_FOOTBALL_TRAIN_CLAIM_RESP.
+draws (2.PRT_FOOTBALL_TRAIN_DRAWRdraws$
+claimPosition (RclaimPositionB
+com.next1b.nextsvr.protobproto3

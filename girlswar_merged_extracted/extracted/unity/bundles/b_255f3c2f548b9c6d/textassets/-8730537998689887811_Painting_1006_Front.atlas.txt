@@ -1,0 +1,8 @@
+Painting_1006_Front.png
+size:1024,512
+filter:Linear,Linear
+bgb10
+bounds:2,2,777,465
+bgb9
+bounds:730,192,275,178
+rotate:90

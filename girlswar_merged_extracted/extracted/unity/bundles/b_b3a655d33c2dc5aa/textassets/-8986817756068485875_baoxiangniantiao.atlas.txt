@@ -1,0 +1,13 @@
+baoxiangniantiao.png
+size:2048,128
+filter:Linear,Linear
+b1
+bounds:2,38,39,42
+offsets:3,0,42,42
+rotate:90
+b2
+bounds:1190,2,106,75
+baoxiangniantiao2
+bounds:46,20,70,57
+baoxiangniantiao3
+bounds:118,15,1070,62

@@ -1,0 +1,13 @@
+
+?
+ActMonthCardBig.proto"?
+PRT_PRIME_STATUS_SYN
+active (Ractive"
+isTodayAward (RisTodayAward
+
+firstAward (R
+firstAward
+leftDay (RleftDay"
+PRT_PRIME_DAY_AWARD_REQ"
+PRT_PRIME_DAY_AWARD_RESPB
+com.next1b.nextsvr.protobproto3

@@ -1,0 +1,25 @@
+local t={}
+function t:OnHandle(e)
+local e=assert(GlobalPB.decode("PRT_PLAYER_VIP_LEVEL_UP_RESP",e));
+if(GameInit.GetDebugLogProto())then
+;
+;
+end
+EventSystem.SendEvent(CommonEventId.VipUpgradeSuccess,e.level)
+if GameEntry.UI:IsExists(UIFormId.UI_ActBubbleMainThree)then
+ModulesInit.ActBubbleThreeMgr:SetVipLevel(e.level)
+elseif GameEntry.UI:IsExists(UIFormId.UI_ActBubbleMainFour)then
+ModulesInit.ActBubbleFourMgr:SetVipLevel(e.level)
+elseif GameEntry.UI:IsExists(UIFormId.UI_ActMeowDepartment_Main)then
+PayMgr:SetDelayVipLevel(ModulesInit.ActMeowDepartmentMgr.actId,e.level)
+else
+GameEntry.UI:OpenUIForm(UIFormId.UI_VIPUpgrade,{leve=e.level})
+end
+if GameEntry.UI:IsExists(UIFormId.UI_MonthSign)then
+local e=ModulesInit.MonthSignManager:SendMonthSignDataRequest()
+e.onCompleted=function(e,e)
+EventSystem.SendEvent(CommonEventId.OnrefreshMonthSign)
+end
+end
+end
+return t 

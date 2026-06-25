@@ -1,0 +1,52 @@
+local a={id=0,name="",mapName="",battlePrefabId=0,mosterName="",Icon="",level=0,nextMap={},mapType=0,targetCount=0,heroNum=0,unlockPara=0,monsterLists={},firstDrop={},enemy=0,idleAward={{},{}},idleRandomAward={{},{}},specialAward={{},{}}}
+a.__index=a
+function a.New(d,c,l,t,f,m,y,v,p,b,w,u,n,i,o,s,r,h)
+local e={}
+setmetatable(e,a)
+e.id=d
+e.name=c
+e.mapName=l
+e.battlePrefabId=t
+e.mosterName=f
+e.Icon=m
+e.level=y
+e.nextMap=v
+e.mapType=p
+e.targetCount=b
+e.heroNum=w
+e.unlockPara=u
+e.monsterLists=n
+e.firstDrop=i
+e.enemy=o
+e.idleAward=s
+e.idleRandomAward=r
+e.specialAward=h
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.name=t[2]
+e.mapName=t[3]
+e.battlePrefabId=t[4]
+e.mosterName=t[5]
+e.Icon=t[6]
+e.level=t[7]
+e.nextMap=t[8]
+e.mapType=t[9]
+e.targetCount=t[10]
+e.heroNum=t[11]
+e.unlockPara=t[12]
+e.monsterLists=t[13]
+e.firstDrop=t[14]
+e.enemy=t[15]
+e.idleAward=t[16]
+e.idleRandomAward=t[17]
+e.specialAward=t[18]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/mijing/DTMijingEntityTableData')
+end
+return a 

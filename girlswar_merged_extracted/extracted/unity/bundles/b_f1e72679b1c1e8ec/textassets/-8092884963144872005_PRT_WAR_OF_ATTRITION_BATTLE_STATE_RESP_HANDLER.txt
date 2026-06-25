@@ -1,0 +1,11 @@
+local t={}
+function t:OnHandle(e)
+local e=assert(GlobalPB.decode("PRT_WAR_OF_ATTRITION_BATTLE_STATE_RESP",e));
+if(GameInit.GetDebugLogProto())then
+;
+;
+end
+ModulesInit.WarOfAttritionMgr:RespBattleState(e)
+return e
+end
+return t 

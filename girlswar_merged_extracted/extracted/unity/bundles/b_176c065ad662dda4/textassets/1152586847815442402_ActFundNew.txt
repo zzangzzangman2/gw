@@ -1,0 +1,67 @@
+
+?
+ActFundNew.proto"
+PRT_GROW_FUND_NEW_REQ"~
+PRT_GROW_FUND_NEW_RESP
+charged (Rcharged"
+receivedFree (RreceivedFree&
+receivedCharge (RreceivedCharge"M
+PRT_GROW_FUND_AWARD_NEW_REQ
+mapDid (RmapDid
+charge (Rcharge"N
+PRT_GROW_FUND_AWARD_NEW_RESP
+mapDid (RmapDid
+charge (Rcharge"7
+PRT_GROW_FUND_AWARD_ALL_NEW_REQ
+stage (Rstage""
+ PRT_GROW_FUND_AWARD_ALL_NEW_RESP"
+PRT_TOWER_FUND_INFO_NEW_REQ"?
+PRT_TOWER_FUND_INFO_NEW_RESP
+leftTime (RleftTime
+charged (Rcharged
+layer (Rlayer*
+receivedFreeDids (RreceivedFreeDids.
+receivedChargeDids (RreceivedChargeDids"R
+PRT_TOWER_FUND_AWARD_NEW_REQ
+awardDid (RawardDid
+charge (Rcharge"S
+PRT_TOWER_FUND_AWARD_NEW_RESP
+awardDid (RawardDid
+charge (Rcharge"8
+ PRT_TOWER_FUND_AWARD_ALL_NEW_REQ
+stage (Rstage"#
+!PRT_TOWER_FUND_AWARD_ALL_NEW_RESP"
+PRT_SMELT_GROW_INFO_NEW_REQ"?
+PRT_SMELT_GROW_INFO_NEW_RESP
+leftTime (RleftTime
+charged (Rcharged
+
+equipCount (R
+equipCount*
+receivedFreeDids (RreceivedFreeDids.
+receivedChargeDids (RreceivedChargeDids"R
+PRT_SMELT_GROW_AWARD_NEW_REQ
+awardDid (RawardDid
+charge (Rcharge"S
+PRT_SMELT_GROW_AWARD_NEW_RESP
+awardDid (RawardDid
+charge (Rcharge""
+ PRT_SMELT_GROW_AWARD_ALL_NEW_REQ"#
+!PRT_SMELT_GROW_AWARD_ALL_NEW_RESP"?
+PRT_ACTIVE_FUND_INFO_NEW&
+curActiveCount (RcurActiveCount,
+chargeAwardUnlock (RchargeAwardUnlock,
+receivedAwardDids (RreceivedAwardDids8
+receivedChargeAwardDids (RreceivedChargeAwardDids"
+PRT_ACTIVE_FUND_INFO_NEW_REQ"N
+PRT_ACTIVE_FUND_INFO_NEW_RESP-
+info (2.PRT_ACTIVE_FUND_INFO_NEWRinfo"[
+%PRT_ACTIVE_FUND_RECEIVE_AWARD_NEW_REQ
+did (Rdid 
+chargeAward (RchargeAward"W
+&PRT_ACTIVE_FUND_RECEIVE_AWARD_NEW_RESP-
+info (2.PRT_ACTIVE_FUND_INFO_NEWRinfo"+
+)PRT_ACTIVE_FUND_RECEIVE_AWARD_ALL_NEW_REQ"[
+*PRT_ACTIVE_FUND_RECEIVE_AWARD_ALL_NEW_RESP-
+info (2.PRT_ACTIVE_FUND_INFO_NEWRinfoB
+com.next1b.nextsvr.protobproto3

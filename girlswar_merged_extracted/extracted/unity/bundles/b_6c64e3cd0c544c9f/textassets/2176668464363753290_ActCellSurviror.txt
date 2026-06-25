@@ -1,0 +1,318 @@
+
+?Q
+ActCellSurviror.protoCommons.proto",
+
+PRT_HPDATA
+hp (Rhp
+id (Rid"?
+"PRT_CELL_SURVIROR_INFINITE_RUNTIME
+
+startIndex (R
+startIndex*
+circulationIndex (RcirculationIndex*
+circulationRound (RcirculationRound"?
+PRT_SAVEDATA%
+hpDatas (2.PRT_HPDATARhpDatas
+
+pathCursor (R
+pathCursor
+	monsterId (R	monsterId.
+infiniteWavesScore (RinfiniteWavesScoreM
+infiniteRuntime (2#.PRT_CELL_SURVIROR_INFINITE_RUNTIMERinfiniteRuntime";
+PRT_CELL_SURVIROR_MAIN_INFO_REQ
+isEnter (RisEnter"?
+ PRT_CELL_SURVIROR_MAIN_INFO_RESP
+	stepLevel (R	stepLevel&
+stepProcessNum (RstepProcessNum:
+	gameState (2.ENUM_CELL_SMALL_GAME_STATUSR	gameState
+physical (Rphysical"
+physicalTime (RphysicalTime"
+endlessPoint (RendlessPoint3
+weapons (2.PRT_CELL_SURVIROR_WEAPONRweaponsC
+gameStartInfo (2.PRT_CELL_SURVIROR_GAME_STARTRgameStartInfo
+skinDids	 (RskinDids&
+havingSkinDids
+ (RhavingSkinDids(
+processAwardIds (RprocessAwardIds
+	ordCharge (R	ordCharge
+	advCharge (R	advCharge,
+selfRank (2.PRT_COMMON_RANKRselfRank
+	serverIds (R	serverIds=
+gameEndInfo (2.PRT_CELL_SURVIROR_GAME_ENDRgameEndInfo"Z
+"PRT_CELL_SURVIROR_CS_MAIN_INFO_REQ
+isEnter (RisEnter
+playerId (RplayerId"?
+#PRT_CELL_SURVIROR_CS_MAIN_INFO_RESP
+playerId (RplayerId,
+selfRank (2.PRT_COMMON_RANKRselfRank
+isEnter (RisEnter
+	serverIds (R	serverIds"$
+"PRT_CELL_SURVIROR_REF_PHYSICAL_REQ"e
+#PRT_CELL_SURVIROR_REF_PHYSICAL_RESP
+physical (Rphysical"
+physicalTime (RphysicalTime"?
+PRT_CELL_SURVIROR_GAME_START
+	stepLevel (R	stepLevel 
+stepProcess (RstepProcess
+boxDid (RboxDid&
+selectCardDids (RselectCardDids2
+cards (2.PRT_CELL_SURVIROR_CARD_INFORcards?
+collects (2#.PRT_CELL_SURVIROR_COLLECT_GAMA_RUNRcollects7
+waves (2!.PRT_CELL_SURVIROR_INFINITE_WAVESRwaves
+	bodyMapId (R	bodyMapId 
+bodyProcess	 (RbodyProcess(
+isRefreshButten
+ (RisRefreshButten)
+saveData (2.PRT_SAVEDATARsaveData"?
+PRT_CELL_SURVIROR_GAME_END
+	stepLevel (R	stepLevel 
+stepProcess (RstepProcess"
+awards (2
+.PRT_THINGRawards.
+collectAward (2
+.PRT_THINGRcollectAward
+isWin (RisWin
+point (Rpoint(
+haveCollectDids (RhaveCollectDids"
+PRT_CELL_SURVIROR_BP_INFO_REQ"?
+PRT_CELL_SURVIROR_BP_INFO_RESP
+bpDid (RbpDid
+	ordCharge (R	ordCharge
+	advCharge (R	advCharge
+point (Rpoint
+exrPoint (RexrPoint*
+exrPointAwardNum (RexrPointAwardNum"
+awardNorDids (RawardNorDids"
+awardOrdDids (RawardOrdDids"
+awardAdvDids	 (RawardAdvDids
+exrAward
+ (RexrAward"!
+PRT_CELL_SURVIROR_TASK_INFO_REQ"j
+ PRT_CELL_SURVIROR_TASK_INFO_RESP%
+dayTasks (2	.PRT_TASKRdayTasks
+tasks (2	.PRT_TASKRtasks"!
+PRT_CELL_SURVIROR_SHOP_INFO_REQ"^
+ PRT_CELL_SURVIROR_SHOP_INFO_RESP 
+shops (2
+.PRT_GOODSRshops
+costNum (RcostNum"L
+PRT_CELL_SURVIROR_SHOP_BUY_REQ
+shopDid (RshopDid
+num (Rnum"[
+PRT_CELL_SURVIROR_SHOP_BUY_RESP
+shop (2
+.PRT_GOODSRshop
+costNum (RcostNum"?
+PRT_CELL_SURVIROR_BP_CHARGE_SYN
+	ordCharge (R	ordCharge
+	advCharge (R	advCharge
+point (Rpoint
+exrPoint (RexrPoint*
+exrPointAwardNum (RexrPointAwardNum"
+awardNorDids (RawardNorDids"
+awardOrdDids (RawardOrdDids"
+awardAdvDids (RawardAdvDids
+exrAward	 (RexrAward"<
+PRT_CELL_SURVIROR_BP_AWARD_REQ
+awardDid (RawardDid"?
+PRT_CELL_SURVIROR_BP_AWARD_RESP
+awardDid (RawardDid"
+awardNorDids (RawardNorDids"
+awardOrdDids (RawardOrdDids"
+awardAdvDids (RawardAdvDids 
+drops (2
+.PRT_THINGRdrops"$
+"PRT_CELL_SURVIROR_BP_EXR_AWARD_REQ"?
+#PRT_CELL_SURVIROR_BP_EXR_AWARD_RESP
+exrPoint (RexrPoint*
+exrPointAwardNum (RexrPointAwardNum
+exrAward (RexrAward"X
+ PRT_CELL_SURVIROR_TASK_AWARD_REQ
+taskDid (RtaskDid
+taskType (RtaskType"k
+!PRT_CELL_SURVIROR_TASK_AWARD_RESP%
+dayTasks (2	.PRT_TASKRdayTasks
+tasks (2	.PRT_TASKRtasks"B
+"PRT_CELL_SURVIROR_WEAPON_LEVEL_REQ
+	weaponDid (R	weaponDid"X
+#PRT_CELL_SURVIROR_WEAPON_LEVEL_RESP1
+weapon (2.PRT_CELL_SURVIROR_WEAPONRweapon"?
+ PRT_CELL_SURVIROR_BOX_APPEAR_REQ 
+stepProcess (RstepProcess&
+steoProcessBox (RsteoProcessBox)
+saveData (2.PRT_SAVEDATARsaveData"?
+!PRT_CELL_SURVIROR_BOX_APPEAR_RESP
+cardDids (RcardDids
+	sucStatus (R	sucStatus(
+isRefreshButten (RisRefreshButten"'
+%PRT_CELL_SURVIROR_GAME_BOX_REFESH_REQ"n
+&PRT_CELL_SURVIROR_GAME_BOX_REFESH_RESP
+cardDids (RcardDids(
+isRefreshButten (RisRefreshButten"R
+ PRT_CELL_SURVIROR_SELECT_BOX_REQ
+cardDid (RcardDid
+isAll (RisAll"?
+!PRT_CELL_SURVIROR_SELECT_BOX_RESP
+cardDids (RcardDids2
+cards (2.PRT_CELL_SURVIROR_CARD_INFORcards
+	collectId (R	collectId?
+collects (2#.PRT_CELL_SURVIROR_COLLECT_GAMA_RUNRcollects"o
+ PRT_CELL_SURVIROR_GAME_PAUSE_REQ 
+stepProcess (RstepProcess)
+saveData (2.PRT_SAVEDATARsaveData"#
+!PRT_CELL_SURVIROR_GAME_PAUSE_RESP"@
+ PRT_CELL_SURVIROR_GAME_START_REQ
+	stepLevel (R	stepLevel"A
+!PRT_CELL_SURVIROR_GAME_START_RESP
+	stepLevel (R	stepLevel"`
+PRT_CELL_SURVIROR_GAME_END_REQ
+	stepLevel (R	stepLevel 
+stepProcess (RstepProcess"?
+PRT_CELL_SURVIROR_GAME_END_RESP
+	stepLevel (R	stepLevel 
+stepProcess (RstepProcess"
+awards (2
+.PRT_THINGRawards.
+collectAward (2
+.PRT_THINGRcollectAward
+isWin (RisWin
+point (Rpoint(
+haveCollectDids (RhaveCollectDids"+
+)PRT_CELL_SURVIROR_INFINITE_GAME_START_REQ",
+*PRT_CELL_SURVIROR_INFINITE_GAME_START_RESP"|
+)PRT_CELL_SURVIROR_INFINITE_GAME_WAVES_REQ$
+passBodyMapId (RpassBodyMapId)
+saveData (2.PRT_SAVEDATARsaveData"?
+*PRT_CELL_SURVIROR_INFINITE_GAME_WAVES_RESP$
+passBodyMapId (RpassBodyMapId7
+waves (2!.PRT_CELL_SURVIROR_INFINITE_WAVESRwaves"b
+ PRT_CELL_SURVIROR_INFINITE_WAVES$
+passBodyMapId (RpassBodyMapId
+passNum (RpassNum"i
+'PRT_CELL_SURVIROR_INFINITE_GAME_END_REQ
+	bodyMapId (R	bodyMapId 
+bodyProcess (RbodyProcess"?
+(PRT_CELL_SURVIROR_INFINITE_GAME_END_RESP
+	bodyMapId (R	bodyMapId 
+bodyProcess (RbodyProcess7
+waves (2!.PRT_CELL_SURVIROR_INFINITE_WAVESRwaves"
+awards (2
+.PRT_THINGRawards.
+collectAward (2
+.PRT_THINGRcollectAward
+point (Rpoint
+oldPoint (RoldPoint"%
+#PRT_CELL_SURVIROR_INFINITE_RANK_REQ"?
+$PRT_CELL_SURVIROR_INFINITE_RANK_RESP,
+selfRank (2.PRT_COMMON_RANKRselfRank,
+allRanks (2.PRT_COMMON_RANKRallRanks"e
+-PRT_CELL_SURVIROR_CS_UPDATE_INFINITE_RANK_SYN
+playerId (RplayerId
+pointId (RpointId"D
+&PRT_CELL_SURVIROR_CS_INFINITE_RANK_REQ
+playerId (RplayerId"?
+'PRT_CELL_SURVIROR_CS_INFINITE_RANK_RESP,
+selfRank (2.PRT_COMMON_RANKRselfRank,
+allRanks (2.PRT_COMMON_RANKRallRanks
+playerId (RplayerId"K
++PRT_CELL_SURVIROR_GAME_END_DOUBLE_AWARD_REQ
+	isDoublue (R	isDoublue"?
+,PRT_CELL_SURVIROR_GAME_END_DOUBLE_AWARD_RESP
+	stepLevel (R	stepLevel 
+stepProcess (RstepProcess"
+awards (2
+.PRT_THINGRawards.
+collectAward (2
+.PRT_THINGRcollectAward
+	isDoublue (R	isDoublue
+point (Rpoint"p
+ PRT_CELL_SURVIROR_GAME_QUICK_REQ
+	stepLevel (R	stepLevel
+num (Rnum
+	doubleNum (R	doubleNum"?
+!PRT_CELL_SURVIROR_GAME_QUICK_RESP
+	stepLevel (R	stepLevel
+num (Rnum"
+awards (2
+.PRT_THINGRawards.
+collectAward (2
+.PRT_THINGRcollectAward
+	stepScore (R	stepScore(
+haveCollectDids (RhaveCollectDids"Z
+PRT_CELL_SURVIROR_WEAPON
+	weaponDid (R	weaponDid 
+weaponLevel (RweaponLevel"O
+PRT_CELL_SURVIROR_CARD_INFO
+cardId (RcardId
+cardNum (RcardNum"\
+"PRT_CELL_SURVIROR_COLLECT_GAMA_RUN
+	collectId (R	collectId
+cardNum (RcardNum"=
+!PRT_CELL_SURVIROR_CHANGE_SKIN_REQ
+skinDid (RskinDid"@
+"PRT_CELL_SURVIROR_CHANGE_SKIN_RESP
+skinDids (RskinDids";
+PRT_CELL_SURVIROR_DROP_SKIN_REQ
+skinDid (RskinDid">
+ PRT_CELL_SURVIROR_DROP_SKIN_RESP
+skinDids (RskinDids"M
+#PRT_CELL_SURVIROR_PROCESS_AWARD_REQ&
+processAwardId (RprocessAwardId"P
+$PRT_CELL_SURVIROR_PROCESS_AWARD_RESP(
+processAwardIds (RprocessAwardIds"+
+)PRT_CELL_SURVIROR_GAME_BOX_NET_REFESH_REQ"?
+*PRT_CELL_SURVIROR_GAME_BOX_NET_REFESH_RESP&
+steoProcessBox (RsteoProcessBox
+cardDids (RcardDids(
+isRefreshButten (RisRefreshButten2
+cards (2.PRT_CELL_SURVIROR_CARD_INFORcards?
+collects (2#.PRT_CELL_SURVIROR_COLLECT_GAMA_RUNRcollects"$
+"PRT_CELL_SURVIROR_COLLECT_INFO_REQ"?
+#PRT_CELL_SURVIROR_COLLECT_INFO_RESPC
+collectInfos (2.PRT_CELL_SURVIROR_COLLECT_INFORcollectInfos*
+processAwardDids (RprocessAwardDids2
+processTypeAwardDids (RprocessTypeAwardDids"`
+PRT_CELL_SURVIROR_COLLECT_INFO
+
+collectDid (R
+collectDid
+
+isReceiver (R
+isReceiver"K
+)PRT_CELL_SURVIROR_COLLECT_ALONE_AWARD_REQ
+
+collectDid (R
+collectDid"q
+*PRT_CELL_SURVIROR_COLLECT_ALONE_AWARD_RESPC
+collectInfos (2.PRT_CELL_SURVIROR_COLLECT_INFORcollectInfos"W
++PRT_CELL_SURVIROR_COLLECT_PROCESS_AWARD_REQ(
+processAwardDid (RprocessAwardDid"?
+,PRT_CELL_SURVIROR_COLLECT_PROCESS_AWARD_RESPC
+collectInfos (2.PRT_CELL_SURVIROR_COLLECT_INFORcollectInfos*
+processAwardDids (RprocessAwardDids2
+processTypeAwardDids (RprocessTypeAwardDids"d
+0PRT_CELL_SURVIROR_COLLECT_PROCESS_TYPE_AWARD_REQ0
+processTypeAwardDid (RprocessTypeAwardDid"?
+1PRT_CELL_SURVIROR_COLLECT_PROCESS_TYPE_AWARD_RESPC
+collectInfos (2.PRT_CELL_SURVIROR_COLLECT_INFORcollectInfos*
+processAwardDids (RprocessAwardDids2
+processTypeAwardDids (RprocessTypeAwardDids"`
+PRT_CELL_SURVIROR_SKIN_SYN
+skinDids (RskinDids&
+havingSkinDids (RhavingSkinDids"!
+PRT_CELL_SURVIROR_GIFT_INFO_REQ"b
+ PRT_CELL_SURVIROR_GIFT_INFO_RESP 
+gifts (2
+.PRT_GOODSRgifts
+	resetTime (R	resetTime"P
+PRT_CELL_SURVIROR_GIFT_BUY_REQ
+giftDid (RgiftDid
+count (Rcount"A
+PRT_CELL_SURVIROR_GIFT_BUY_RESP
+gift (2
+.PRT_GOODSRgift*^
+ENUM_CELL_SMALL_GAME_STATUS
+CELL_GAME_NOT_START 
+CELL_GAME_START
+CELL_GAME_ENDB
+com.next1b.nextsvr.protobproto3

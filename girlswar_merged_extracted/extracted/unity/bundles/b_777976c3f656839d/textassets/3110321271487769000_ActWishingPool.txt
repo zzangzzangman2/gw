@@ -1,0 +1,18 @@
+
+?
+ActWishingPool.protoCommons.proto"
+PRT_WISHINGPOOL_INFO_REQ"]
+PRT_WISHINGPOOL_INFO_RESP
+	drawCount (R	drawCount"
+awards (2
+.PRT_THINGRawards"?
+PRT_WISHINGPOOL_DRAW_REQ#
+type (2.ENUM_DRAW_TYPERtype"?
+PRT_WISHINGPOOL_DRAW_RESP#
+type (2.ENUM_DRAW_TYPERtype
+	drawCount (R	drawCount"
+awards (2
+.PRT_THINGRawards"
+PRT_WISHINGPOOL_REWARD_REQ"
+PRT_WISHINGPOOL_REWARD_RESPB
+com.next1b.nextsvr.protobproto3

@@ -1,0 +1,26 @@
+local e={id=0,unluckNeed={},unlockFun=0,funEventIdBefore=0,funEventIdAfter=0}
+e.__index=e
+function e.New(o,n,a,s,i)
+local t={}
+setmetatable(t,e)
+t.id=o
+t.unluckNeed=n
+t.unlockFun=a
+t.funEventIdBefore=s
+t.funEventIdAfter=i
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.unluckNeed=a[2]
+t.unlockFun=a[3]
+t.funEventIdBefore=a[4]
+t.funEventIdAfter=a[5]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/magicOrchard/DTMagicOrchardMapEntityTableData')
+end
+return e 

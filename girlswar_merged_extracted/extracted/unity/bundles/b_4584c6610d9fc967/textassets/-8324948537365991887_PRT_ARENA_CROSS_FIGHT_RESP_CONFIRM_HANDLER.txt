@@ -1,0 +1,9 @@
+local e={}
+function e:OnHandle(e)
+local e=assert(GlobalPB.decode("PRT_ARENA_CROSS_FIGHT_RESP_CONFIRM",e));
+if(GameInit.GetDebugLogProto())then
+;
+;
+end
+end
+return e 

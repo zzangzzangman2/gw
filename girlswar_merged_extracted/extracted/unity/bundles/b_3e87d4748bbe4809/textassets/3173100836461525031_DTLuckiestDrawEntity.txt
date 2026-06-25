@@ -1,0 +1,44 @@
+local a={id=0,openTime="",endTime="",reward1={{},{}},reward2={{},{}},reward3={{},{}},claimConditions1={{},{}},claimConditions2={{},{}},claimConditions3={{},{}},claimConditionsDesc1="",claimConditionsDesc2="",claimConditionsDesc3="",heroShow="",weight={{},{}}}
+a.__index=a
+function a.New(s,l,r,t,u,m,f,w,c,d,i,o,n,h)
+local e={}
+setmetatable(e,a)
+e.id=s
+e.openTime=l
+e.endTime=r
+e.reward1=t
+e.reward2=u
+e.reward3=m
+e.claimConditions1=f
+e.claimConditions2=w
+e.claimConditions3=c
+e.claimConditionsDesc1=d
+e.claimConditionsDesc2=i
+e.claimConditionsDesc3=o
+e.heroShow=n
+e.weight=h
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.openTime=t[2]
+e.endTime=t[3]
+e.reward1=t[4]
+e.reward2=t[5]
+e.reward3=t[6]
+e.claimConditions1=t[7]
+e.claimConditions2=t[8]
+e.claimConditions3=t[9]
+e.claimConditionsDesc1=t[10]
+e.claimConditionsDesc2=t[11]
+e.claimConditionsDesc3=t[12]
+e.heroShow=t[13]
+e.weight=t[14]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/activity/DTLuckiestDrawEntityTableData')
+end
+return a 

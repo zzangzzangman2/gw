@@ -1,0 +1,10 @@
+local e=
+{
+ByIdx={
+{1,75003,130,45,11570,"NewPlayerURJump_01","NewPlayerURLine_01","UIActNewMarket/ursd_tup03"},
+{2,75003,60,62,71176,"NewPlayerURJump_02","NewPlayerURLine_02","UIActNewMarket/ursd_tup05"},
+{3,75003,40,465,0,"NewPlayerURJump_03","NewPlayerURLine_03","UIActNewMarket/ursd_tup04"}
+},
+Len=3
+}
+return e 

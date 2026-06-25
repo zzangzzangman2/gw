@@ -1,0 +1,24 @@
+local e={id=0,num=0,reward={{},{}},rewardText=""}
+e.__index=e
+function e.New(o,a,n,i)
+local t={}
+setmetatable(t,e)
+t.id=o
+t.num=a
+t.reward=n
+t.rewardText=i
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.num=a[2]
+t.reward=a[3]
+t.rewardText=a[4]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/activity/DTSevenDayEnjoyScoreEntityTableData')
+end
+return e 

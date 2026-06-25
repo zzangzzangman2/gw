@@ -1,0 +1,58 @@
+local a={id=0,maxTaskInMap=0,maxDispatchTimes=0,dispatchRecoverTimes="",resetTime="",level3TaskAddProgress=0,level2TaskAddProgress=0,level1TaskAddProgress=0,maxGuildBorrowAssistance=0,maxAssistancePerTask=0,maxSameAssistancePerTask=0,limitedStar=0,limitRank=0,maxBorrowToGuild=0,coinsChange1={},coinsChange2={},coinsChange3={},shootGril=0,maxBlackDiamond=0,borrowMaxDays=0,guideCollectibles=0}
+a.__index=a
+function a.New(l,m,u,t,y,w,f,v,g,b,k,q,p,c,s,n,i,o,h,d,r)
+local e={}
+setmetatable(e,a)
+e.id=l
+e.maxTaskInMap=m
+e.maxDispatchTimes=u
+e.dispatchRecoverTimes=t
+e.resetTime=y
+e.level3TaskAddProgress=w
+e.level2TaskAddProgress=f
+e.level1TaskAddProgress=v
+e.maxGuildBorrowAssistance=g
+e.maxAssistancePerTask=b
+e.maxSameAssistancePerTask=k
+e.limitedStar=q
+e.limitRank=p
+e.maxBorrowToGuild=c
+e.coinsChange1=s
+e.coinsChange2=n
+e.coinsChange3=i
+e.shootGril=o
+e.maxBlackDiamond=h
+e.borrowMaxDays=d
+e.guideCollectibles=r
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.maxTaskInMap=t[2]
+e.maxDispatchTimes=t[3]
+e.dispatchRecoverTimes=t[4]
+e.resetTime=t[5]
+e.level3TaskAddProgress=t[6]
+e.level2TaskAddProgress=t[7]
+e.level1TaskAddProgress=t[8]
+e.maxGuildBorrowAssistance=t[9]
+e.maxAssistancePerTask=t[10]
+e.maxSameAssistancePerTask=t[11]
+e.limitedStar=t[12]
+e.limitRank=t[13]
+e.maxBorrowToGuild=t[14]
+e.coinsChange1=t[15]
+e.coinsChange2=t[16]
+e.coinsChange3=t[17]
+e.shootGril=t[18]
+e.maxBlackDiamond=t[19]
+e.borrowMaxDays=t[20]
+e.guideCollectibles=t[21]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/collectibles/DTCollectiblesBaseEntityTableData')
+end
+return a 

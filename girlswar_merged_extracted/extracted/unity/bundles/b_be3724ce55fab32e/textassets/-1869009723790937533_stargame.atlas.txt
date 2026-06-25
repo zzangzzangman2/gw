@@ -1,0 +1,9 @@
+stargame.png
+size:512,64
+filter:Linear,Linear
+1
+bounds:2,2,236,58
+offsets:1,1,238,60
+2
+bounds:240,16,91,44
+offsets:4,2,96,48

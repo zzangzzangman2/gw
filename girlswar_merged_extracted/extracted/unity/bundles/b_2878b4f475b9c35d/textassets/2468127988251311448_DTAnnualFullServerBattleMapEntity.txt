@@ -1,0 +1,26 @@
+local e={id=0,type=0,pos={},floor=0,locationName=""}
+e.__index=e
+function e.New(o,n,a,s,i)
+local t={}
+setmetatable(t,e)
+t.id=o
+t.type=n
+t.pos=a
+t.floor=s
+t.locationName=i
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.type=a[2]
+t.pos=a[3]
+t.floor=a[4]
+t.locationName=a[5]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/sourceWorld/DTAnnualFullServerBattleMapEntityTableData')
+end
+return e 

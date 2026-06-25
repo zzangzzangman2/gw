@@ -1,0 +1,10 @@
+shmj_mjbeike.png
+size:512,512
+filter:Linear,Linear
+shmj_mjbg1
+bounds:1,131,240,292
+shmj_mjbg3
+bounds:242,182,241,167
+rotate:90
+sun4
+bounds:242,1,180,180

@@ -1,0 +1,26 @@
+local e={id=0,shopType=0,avgRole=0,assetsPath="",avgFace=""}
+e.__index=e
+function e.New(o,n,a,s,i)
+local t={}
+setmetatable(t,e)
+t.id=o
+t.shopType=n
+t.avgRole=a
+t.assetsPath=s
+t.avgFace=i
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.shopType=a[2]
+t.avgRole=a[3]
+t.assetsPath=a[4]
+t.avgFace=a[5]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/shop/DTShopAvgEntityTableData')
+end
+return e 

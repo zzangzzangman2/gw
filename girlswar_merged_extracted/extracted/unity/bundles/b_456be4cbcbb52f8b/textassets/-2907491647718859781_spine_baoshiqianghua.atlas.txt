@@ -1,0 +1,14 @@
+spine_baoshiqianghua.png
+size:512,512
+filter:Linear,Linear
+light1_0
+bounds:258,259,135,134
+offsets:77,57,294,250
+light2_0
+bounds:0,129,135,134
+offsets:77,57,294,250
+light_0
+bounds:137,122,135,135
+offsets:76,61,290,254
+mvp_3
+bounds:0,265,256,128

@@ -1,0 +1,49 @@
+
+?
+DeityStatue.protoCommons.proto"
+PRT_DEITYSTATUE_INFO_REQ"g
+PRT_DEITYSTATUE_INFO_RESP 
+talentPoint (RtalentPoint(
+costTalentPoint (RcostTalentPoint"J
+PRT_DEITYSTATUE_ACTIVATE_REQ
+heroId (RheroId
+star (Rstar"Y
+PRT_DEITYSTATUE_ACTIVATE_RESP
+heroId (RheroId 
+talentPoint (RtalentPoint"!
+PRT_DEITYSTATUE_TALENT_INFO_REQ"?
+ PRT_DEITYSTATUE_TALENT_INFO_RESP:
+	talentMap (2.PRT_DEITYSTATUE_TALENT_PAGER	talentMap 
+talentPoint (RtalentPoint(
+costTalentPoint (RcostTalentPoint(
+enableResetTime (RenableResetTime"H
+ PRT_DEITYSTATUE_TALENT_LIGHT_REQ$
+talentPointId (RtalentPointId"?
+!PRT_DEITYSTATUE_TALENT_LIGHT_RESP:
+	talentMap (2.PRT_DEITYSTATUE_TALENT_PAGER	talentMap(
+costTalentPoint (RcostTalentPoint
+oldFight (RoldFight
+newFight (RnewFight&
+newLightTalent (RnewLightTalent"@
+ PRT_DEITYSTATUE_TALENT_RESET_REQ
+	curPageId (R	curPageId"?
+!PRT_DEITYSTATUE_TALENT_RESET_RESP:
+	talentMap (2.PRT_DEITYSTATUE_TALENT_PAGER	talentMap(
+costTalentPoint (RcostTalentPoint(
+enableResetTime (RenableResetTime.
+returnThings (2
+.PRT_THINGRreturnThings"?
+PRT_DEITYSTATUE_TALENT_PAGE$
+talentPageNum (RtalentPageNum0
+lightedTalentPoints (RlightedTalentPoints.
+curPageTalentValue (RcurPageTalentValue"
+PRT_DEITYSTATUE_ATTR_INFO_REQ"A
+PRT_DEITYSTATUE_ATTR_INFO_RESP
+attrs (2	.PRT_ATTRRattrs"&
+$PRT_DEITYSTATUE_TALENT_ATTR_INFO_REQ"d
+%PRT_DEITYSTATUE_TALENT_ATTR_INFO_RESP;
+attrMap (2!.PRT_DEITYSTATUE_TALENT_ATTR_PAGERattrMap"g
+ PRT_DEITYSTATUE_TALENT_ATTR_PAGE$
+talentPageNum (RtalentPageNum
+attr (2	.PRT_ATTRRattrB
+com.next1b.nextsvr.protobproto3

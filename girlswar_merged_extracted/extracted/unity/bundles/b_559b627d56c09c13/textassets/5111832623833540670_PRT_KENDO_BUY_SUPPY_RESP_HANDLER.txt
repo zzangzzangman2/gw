@@ -1,0 +1,11 @@
+local t={}
+function t:OnHandle(e)
+local e=assert(GlobalPB.decode("PRT_KENDO_BUY_SUPPY_RESP",e));
+if(GameInit.GetDebugLogProto())then
+;
+;
+end
+ModulesInit.ActKendoMgr:SyncShopBuy(e)
+return e
+end
+return t 

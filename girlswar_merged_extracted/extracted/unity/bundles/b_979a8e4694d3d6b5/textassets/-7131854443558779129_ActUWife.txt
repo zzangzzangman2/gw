@@ -1,0 +1,40 @@
+
+?
+ActUWife.protoCommons.proto"?
+PRT_U_WIFE_DRAW
+position (Rposition
+awarded (Rawarded#
+things (2.PRT_REWARDRthings
+
+isBigAward (R
+isBigAward"
+PRT_U_WIFE_INFO_REQ"?
+PRT_U_WIFE_INFO_RESP
+score (Rscore$
+scoreLevelDid (RscoreLevelDid
+endTime (RendTime
+round (Rround&
+draws (2.PRT_U_WIFE_DRAWRdraws"
+dailyAwarded (RdailyAwarded
+dayDid (RdayDid"
+PRT_U_WIFE_DAILYAWARD_REQ"{
+PRT_U_WIFE_DAILYAWARD_RESP!
+award (2.PRT_REWARDRaward"
+dailyAwarded (RdailyAwarded
+dayDid (RdayDid"
+PRT_U_WIFE_SCORE_AWARD_REQ"f
+PRT_U_WIFE_SCORE_AWARD_RESP!
+award (2.PRT_REWARDRaward$
+scoreLevelDid (RscoreLevelDid"1
+PRT_U_WIFE_DRAW_REQ
+position (Rposition"z
+PRT_U_WIFE_DRAW_RESP(
+awards (2.PRT_U_WIFE_DRAWRawards
+score (Rscore"
+drawPosition (RdrawPosition"2
+PRT_U_WIFE_CLAIM_REQ
+position (Rposition"e
+PRT_U_WIFE_CLAIM_RESP&
+draws (2.PRT_U_WIFE_DRAWRdraws$
+claimPosition (RclaimPositionB
+com.next1b.nextsvr.protobproto3

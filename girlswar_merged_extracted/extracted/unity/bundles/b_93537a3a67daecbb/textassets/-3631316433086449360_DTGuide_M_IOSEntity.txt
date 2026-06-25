@@ -1,0 +1,110 @@
+local a={id=0,unit=0,next={},heroImg="",talk="",name="",offX=0,frameId=0,focusNode="",isShowHand=0,isShowHalo=0,handOffX=0,handOffY=0,delayTimeShow="",bgFocusScale="",focusDelay="",isFocusStatus=0,isHideFocusBlack=0,isTouchOther=0,stopType=0,stopPara="",isFinish=0,extraOper=0,extraOperParam="",nextPara="",message="",messagePosType=0,messageOffX=0,messageOffY=0,award={{},{}},awardViewType=0,heroBubble="",heroBubbleSizeType=0,heroBubblePathType=0,heroBubbleOffX=0,heroBubbleOffY=0,heroBubbleNext=0,guiderMessage="",guiderClick=0,guiderAutoNext=0,guiderPathType=0,guiderPos={},guidePopMessage="",guidePopTitle="",guidePopClick=0,guidePopAutoNext=0,guideSkipUnits={}}
+a.__index=a
+function a.New(p,_,x,t,H,R,N,S,I,E,T,A,O,L,W,U,B,G,P,V,Y,C,M,F,K,D,z,c,l,u,r,d,h,o,i,n,s,m,v,f,q,j,g,k,b,w,y)
+local e={}
+setmetatable(e,a)
+e.id=p
+e.unit=_
+e.next=x
+e.heroImg=t
+e.talk=H
+e.name=R
+e.offX=N
+e.frameId=S
+e.focusNode=I
+e.isShowHand=E
+e.isShowHalo=T
+e.handOffX=A
+e.handOffY=O
+e.delayTimeShow=L
+e.bgFocusScale=W
+e.focusDelay=U
+e.isFocusStatus=B
+e.isHideFocusBlack=G
+e.isTouchOther=P
+e.stopType=V
+e.stopPara=Y
+e.isFinish=C
+e.extraOper=M
+e.extraOperParam=F
+e.nextPara=K
+e.message=D
+e.messagePosType=z
+e.messageOffX=c
+e.messageOffY=l
+e.award=u
+e.awardViewType=r
+e.heroBubble=d
+e.heroBubbleSizeType=h
+e.heroBubblePathType=o
+e.heroBubbleOffX=i
+e.heroBubbleOffY=n
+e.heroBubbleNext=s
+e.guiderMessage=m
+e.guiderClick=v
+e.guiderAutoNext=f
+e.guiderPathType=q
+e.guiderPos=j
+e.guidePopMessage=g
+e.guidePopTitle=k
+e.guidePopClick=b
+e.guidePopAutoNext=w
+e.guideSkipUnits=y
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.unit=t[2]
+e.next=t[3]
+e.heroImg=t[4]
+e.talk=t[5]
+e.name=t[6]
+e.offX=t[7]
+e.frameId=t[8]
+e.focusNode=t[9]
+e.isShowHand=t[10]
+e.isShowHalo=t[11]
+e.handOffX=t[12]
+e.handOffY=t[13]
+e.delayTimeShow=t[14]
+e.bgFocusScale=t[15]
+e.focusDelay=t[16]
+e.isFocusStatus=t[17]
+e.isHideFocusBlack=t[18]
+e.isTouchOther=t[19]
+e.stopType=t[20]
+e.stopPara=t[21]
+e.isFinish=t[22]
+e.extraOper=t[23]
+e.extraOperParam=t[24]
+e.nextPara=t[25]
+e.message=t[26]
+e.messagePosType=t[27]
+e.messageOffX=t[28]
+e.messageOffY=t[29]
+e.award=t[30]
+e.awardViewType=t[31]
+e.heroBubble=t[32]
+e.heroBubbleSizeType=t[33]
+e.heroBubblePathType=t[34]
+e.heroBubbleOffX=t[35]
+e.heroBubbleOffY=t[36]
+e.heroBubbleNext=t[37]
+e.guiderMessage=t[38]
+e.guiderClick=t[39]
+e.guiderAutoNext=t[40]
+e.guiderPathType=t[41]
+e.guiderPos=t[42]
+e.guidePopMessage=t[43]
+e.guidePopTitle=t[44]
+e.guidePopClick=t[45]
+e.guidePopAutoNext=t[46]
+e.guideSkipUnits=t[47]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/guide/DTGuide_M_IOSEntityTableData')
+end
+return a 

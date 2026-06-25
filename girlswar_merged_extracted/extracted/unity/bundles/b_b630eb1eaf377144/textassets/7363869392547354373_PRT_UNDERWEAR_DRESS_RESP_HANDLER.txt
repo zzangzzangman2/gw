@@ -1,0 +1,11 @@
+local e={}
+function e:OnHandle(e)
+local e=assert(GlobalPB.decode("PRT_UNDERWEAR_DRESS_RESP",e));
+if(GameInit.GetDebugLogProto())then
+;
+;
+end
+GameTools:PlayAudioLua(390)
+EventSystem.SendEvent(CommonEventId.OnUnderwearDress,e)
+end
+return e 

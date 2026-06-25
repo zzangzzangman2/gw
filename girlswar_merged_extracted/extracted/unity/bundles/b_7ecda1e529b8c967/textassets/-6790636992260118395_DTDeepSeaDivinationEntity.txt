@@ -1,0 +1,32 @@
+local a={id=0,buffId=0,buffTimes=0,buffPara={},award={},effectType=0,divinationPic="",divinationDesc=""}
+a.__index=a
+function a.New(i,h,n,t,d,r,s,o)
+local e={}
+setmetatable(e,a)
+e.id=i
+e.buffId=h
+e.buffTimes=n
+e.buffPara=t
+e.award=d
+e.effectType=r
+e.divinationPic=s
+e.divinationDesc=o
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.buffId=t[2]
+e.buffTimes=t[3]
+e.buffPara=t[4]
+e.award=t[5]
+e.effectType=t[6]
+e.divinationPic=t[7]
+e.divinationDesc=t[8]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/deepsea/DTDeepSeaDivinationEntityTableData')
+end
+return a 

@@ -1,0 +1,7 @@
+Painting_1034_Back.png
+size:2048,2048
+filter:Linear,Linear
+bgb
+bounds:2,516,1680,720
+cloud2
+bounds:2,2,512,512

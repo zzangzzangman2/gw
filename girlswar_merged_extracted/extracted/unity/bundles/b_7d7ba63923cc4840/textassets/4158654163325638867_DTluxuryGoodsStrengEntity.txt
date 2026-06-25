@@ -1,0 +1,30 @@
+local t={id=0,luxuryGoodsId=0,breakLv=0,level=0,attr={{},{}},consume={{},{}},breakConsume=0}
+t.__index=t
+function t.New(o,h,a,s,r,n,i)
+local e={}
+setmetatable(e,t)
+e.id=o
+e.luxuryGoodsId=h
+e.breakLv=a
+e.level=s
+e.attr=r
+e.consume=n
+e.breakConsume=i
+return e
+end
+function t.NewFromArrItem(a)
+local e={}
+setmetatable(e,t)
+e.id=a[1]
+e.luxuryGoodsId=a[2]
+e.breakLv=a[3]
+e.level=a[4]
+e.attr=a[5]
+e.consume=a[6]
+e.breakConsume=a[7]
+return e
+end
+function t.GetArr()
+return require('DataNode/DataTable/Create/luxuryGoods/DTluxuryGoodsStrengEntityTableData')
+end
+return t 

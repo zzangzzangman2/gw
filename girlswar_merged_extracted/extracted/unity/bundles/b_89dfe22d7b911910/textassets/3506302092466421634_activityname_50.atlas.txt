@@ -1,0 +1,10 @@
+activityname_50.png
+size:128,128
+filter:Linear,Linear
+libao
+bounds:2,2,72,68
+xing1
+bounds:76,47,23,22
+rotate:90
+xing2
+bounds:76,24,21,21

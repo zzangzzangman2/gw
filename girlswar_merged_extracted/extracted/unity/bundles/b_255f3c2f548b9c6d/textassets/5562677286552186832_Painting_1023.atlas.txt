@@ -1,0 +1,6 @@
+Painting_1023.png
+size:2048,1024
+filter:Linear,Linear
+102304
+bounds:0,0,1813,802
+offsets:0,38,1813,840

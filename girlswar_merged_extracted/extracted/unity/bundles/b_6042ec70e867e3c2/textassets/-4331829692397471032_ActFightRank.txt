@@ -1,0 +1,37 @@
+
+?	
+ActFightRank.protoCommons.proto"U
+PRT_FIGHT_RANK_RANK
+day (Rday
+rankNO (RrankNO
+score (Rscore"
+PRT_FIGHT_RANK_INFO_REQ"?
+PRT_FIGHT_RANK_INFO_RESP
+leftTime (RleftTime
+day (RdayA
+dailyTopRankDatas (2.PRT_CS_COMMON_RANKRdailyTopRankDatas9
+dailySelfRank (2.PRT_CS_COMMON_RANKRdailySelfRankA
+totalTopRankDatas (2.PRT_CS_COMMON_RANKRtotalTopRankDatas9
+totalSelfRank (2.PRT_CS_COMMON_RANKRtotalSelfRank"*
+PRT_FIGHT_RANK_DAY_REQ
+day (Rday"?
+PRT_FIGHT_RANK_DAY_RESP
+day (Rday1
+	rankDatas (2.PRT_CS_COMMON_RANKR	rankDatas/
+selfRank (2.PRT_CS_COMMON_RANKRselfRank"
+PRT_FIGHT_RANK_TOTAL_REQ"
+PRT_FIGHT_RANK_TOTAL_RESP1
+	rankDatas (2.PRT_CS_COMMON_RANKR	rankDatas/
+selfRank (2.PRT_CS_COMMON_RANKRselfRank"
+PRT_FIGHT_RANK_TASK_REQ";
+PRT_FIGHT_RANK_TASK_RESP
+tasks (2	.PRT_TASKRtasks";
+PRT_FIGHT_RANK_TASK_AWARD_REQ
+awardDid (RawardDid"<
+PRT_FIGHT_RANK_TASK_AWARD_RESP
+awardDid (RawardDid"h
+PRT_CS_FIGHT_RANK_UPDATE_SYN
+playerId (RplayerId
+day (Rday
+fightMax (RfightMaxB
+com.next1b.nextsvr.protobproto3

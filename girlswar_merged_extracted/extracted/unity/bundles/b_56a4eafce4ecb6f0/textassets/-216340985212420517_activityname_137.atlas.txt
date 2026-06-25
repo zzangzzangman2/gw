@@ -1,0 +1,11 @@
+activityname_137.png
+size:256,256
+filter:Linear,Linear
+2
+bounds:0,138,60,60
+guangll2
+bounds:62,134,64,64
+guangll3
+bounds:128,134,64,64
+hds_c_2
+bounds:0,0,142,132

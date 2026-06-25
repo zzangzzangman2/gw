@@ -1,0 +1,28 @@
+local e={id=0,ssrHeroId=0,award={},audioIndex=0,jump1=0,jump2=0}
+e.__index=e
+function e.New(a,i,o,h,s,n)
+local t={}
+setmetatable(t,e)
+t.id=a
+t.ssrHeroId=i
+t.award=o
+t.audioIndex=h
+t.jump1=s
+t.jump2=n
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.ssrHeroId=a[2]
+t.award=a[3]
+t.audioIndex=a[4]
+t.jump1=a[5]
+t.jump2=a[6]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/activity/DTActZiLongJiEntityTableData')
+end
+return e 

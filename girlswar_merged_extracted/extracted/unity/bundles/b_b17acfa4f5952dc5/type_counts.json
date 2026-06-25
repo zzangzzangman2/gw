@@ -1,0 +1,12 @@
+{
+  "GameObject": 4,
+  "Transform": 4,
+  "SpriteRenderer": 2,
+  "AnimationClip": 1,
+  "AnimatorController": 1,
+  "Material": 1,
+  "AssetBundle": 1,
+  "Texture2D": 1,
+  "Sprite": 1,
+  "Animator": 1
+}

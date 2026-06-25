@@ -1,0 +1,23 @@
+
+?
+ActFireworks.protoCommons.proto"M
+PRT_FIREWORKS_COMPOSE
+did (Rdid"
+alreadyCount (RalreadyCount"
+PRT_FIREWORKS_INFO_REQ"?
+PRT_FIREWORKS_INFO_RESP
+leftTime (RleftTime,
+topRanks (2.PRT_COMMON_RANKRtopRanks,
+selfRank (2.PRT_COMMON_RANKRselfRank2
+composes (2.PRT_FIREWORKS_COMPOSERcomposes"
+PRT_FIREWORKS_RANK_REQ"w
+PRT_FIREWORKS_RANK_RESP.
+	rankDatas (2.PRT_COMMON_RANKR	rankDatas,
+selfRank (2.PRT_COMMON_RANKRselfRank"C
+PRT_FIREWORKS_COMPOSE_REQ
+did (Rdid
+count (Rcount"q
+PRT_FIREWORKS_COMPOSE_RESP0
+compose (2.PRT_FIREWORKS_COMPOSERcompose!
+award (2.PRT_REWARDRawardB
+com.next1b.nextsvr.protobproto3

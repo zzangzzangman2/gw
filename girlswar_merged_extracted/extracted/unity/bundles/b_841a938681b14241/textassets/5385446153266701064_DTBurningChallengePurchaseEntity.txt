@@ -1,0 +1,22 @@
+local e={id=0,timesPurchase=0,consumePurchase={}}
+e.__index=e
+function e.New(o,a,i)
+local t={}
+setmetatable(t,e)
+t.id=o
+t.timesPurchase=a
+t.consumePurchase=i
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.timesPurchase=a[2]
+t.consumePurchase=a[3]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/burning/DTBurningChallengePurchaseEntityTableData')
+end
+return e 

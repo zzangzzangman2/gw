@@ -1,0 +1,17 @@
+local t={}
+function t:OnHandle(e)
+local e=assert(GlobalPB.decode("PRT_PLAYER_VIEW_RESP",e));
+if(GameInit.GetDebugLogProto())then
+;
+;
+end
+if GameTools:IsReview()==false then
+if not ModulesInit.WarOfAttritionMgr.IsDontPopUI then
+GameEntry.UI:OpenUIForm(UIFormId.UI_PersionInfoView,{mPlayerResp=e,isGuildManageMode=UIUtil.isGuildManageMode})
+UIUtil.isGuildManageMode=false
+end
+ModulesInit.WarOfAttritionMgr.IsDontPopUI=false
+ModulesInit.FriendManage:OnPlayerViewResp(e)
+end
+end
+return t 

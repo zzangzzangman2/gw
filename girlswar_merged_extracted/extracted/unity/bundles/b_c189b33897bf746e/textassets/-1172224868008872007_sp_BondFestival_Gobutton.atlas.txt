@@ -1,0 +1,9 @@
+sp_BondFestival_Gobutton.png
+size:256,256
+filter:Linear,Linear
+nyxyx_pao
+bounds:142,100,102,110
+wenzi
+bounds:0,0,132,72
+xg_chengann
+bounds:0,74,140,136

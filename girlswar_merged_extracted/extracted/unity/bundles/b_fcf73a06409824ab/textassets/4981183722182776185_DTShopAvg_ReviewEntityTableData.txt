@@ -1,0 +1,19 @@
+local e=
+{
+ByIdx={
+{1,1,902002,"Assets/Download/RolePrefabsAndRes/StoryPrefabAndRes/9020","face_happy"},
+{2,2,10011056,"Assets/Download/Review/RolePrefabsAndRes/StoryPrefabAndRes/1056_1","face_happy"},
+{3,3,10011057,"Assets/Download/Review/RolePrefabsAndRes/StoryPrefabAndRes/1057_1","face_nonmal"},
+{4,4,10011062,"Assets/Download/Review/RolePrefabsAndRes/StoryPrefabAndRes/1062_1","face_happy"},
+{5,5,99901,"Assets/Download/RolePrefabsAndRes/StoryPrefabAndRes/999_1","face_happy"},
+{6,6,10011051,"Assets/Download/Review/RolePrefabsAndRes/StoryPrefabAndRes/1051_1","face_none"},
+{7,7,902002,"Assets/Download/RolePrefabsAndRes/StoryPrefabAndRes/9020","face_happy"},
+{8,12,902002,"Assets/Download/RolePrefabsAndRes/StoryPrefabAndRes/9020","face_happy"},
+{9,8,902002,"Assets/Download/RolePrefabsAndRes/StoryPrefabAndRes/9020","face_happy"},
+{10,13,10011063,"Assets/Download/Review/RolePrefabsAndRes/StoryPrefabAndRes/1063_1","face_happy"},
+{11,14,100502,"Assets/Download/RolePrefabsAndRes/StoryPrefabAndRes/1005_1","face_happy"},
+{12,15,10011043,"Assets/Download/Review/RolePrefabsAndRes/StoryPrefabAndRes/1043_1","face_none"}
+},
+Len=12
+}
+return e 

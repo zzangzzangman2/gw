@@ -1,0 +1,11 @@
+local e=
+{
+ByIdx={
+{1,1023,"Assets/Download/UI/UIPrefabAndRes/CruiseShip_Ext_5/ycjb_npc1.png",101},
+{2,1044,"Assets/Download/UI/UIPrefabAndRes/CruiseShip_Ext_5/ycjb_npc3.png",102},
+{3,1041,"Assets/Download/UI/UIPrefabAndRes/CruiseShip_Ext_5/ycjb_npc2.png",104},
+{4,1043,"Assets/Download/UI/UIPrefabAndRes/CruiseShip_Ext_5/ycjb_npc6.png",106}
+},
+Len=4
+}
+return e 

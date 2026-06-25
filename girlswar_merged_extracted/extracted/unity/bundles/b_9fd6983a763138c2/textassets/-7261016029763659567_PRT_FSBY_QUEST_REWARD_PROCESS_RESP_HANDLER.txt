@@ -1,0 +1,11 @@
+local t={}
+function t:OnHandle(e)
+local e=assert(GlobalPB.decode("PRT_FSBY_QUEST_REWARD_PROCESS_RESP",e));
+if(GameInit.GetDebugLogProto())then
+;
+;
+end
+ModulesInit.FullServerBattleYearMgr:OnRespFsbyRewardProcess(e)
+return e
+end
+return t 

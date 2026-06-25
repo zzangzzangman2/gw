@@ -1,0 +1,46 @@
+local a={id=0,diceCost={},diceCostOdds={},beginItem={},goods=0,fundAward={},specialItem={},shopGril=0,iconographyProve=0,atlasId=0,smallestMultiple=0,stepSize=0,count=0,rankNum=0,jumpId=0}
+a.__index=a
+function a.New(s,l,r,t,u,m,w,f,y,c,d,i,o,n,h)
+local e={}
+setmetatable(e,a)
+e.id=s
+e.diceCost=l
+e.diceCostOdds=r
+e.beginItem=t
+e.goods=u
+e.fundAward=m
+e.specialItem=w
+e.shopGril=f
+e.iconographyProve=y
+e.atlasId=c
+e.smallestMultiple=d
+e.stepSize=i
+e.count=o
+e.rankNum=n
+e.jumpId=h
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.diceCost=t[2]
+e.diceCostOdds=t[3]
+e.beginItem=t[4]
+e.goods=t[5]
+e.fundAward=t[6]
+e.specialItem=t[7]
+e.shopGril=t[8]
+e.iconographyProve=t[9]
+e.atlasId=t[10]
+e.smallestMultiple=t[11]
+e.stepSize=t[12]
+e.count=t[13]
+e.rankNum=t[14]
+e.jumpId=t[15]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/activity/DTLunarDiskNumBaseEntityTableData')
+end
+return a 

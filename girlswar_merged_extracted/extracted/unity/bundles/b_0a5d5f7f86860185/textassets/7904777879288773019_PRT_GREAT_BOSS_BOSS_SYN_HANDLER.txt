@@ -1,0 +1,13 @@
+local t={}
+function t:OnHandle(e)
+local e=assert(GlobalPB.decode("PRT_GREAT_BOSS_BOSS_SYN",e));
+if(GameInit.GetDebugLogProto())then
+;
+;
+end
+if ModulesInit.GreatBossMgr.isEnterStatus then
+ModulesInit.GreatBossDataMgr:ChangeBossInfo(e.boss)
+end
+return e
+end
+return t 

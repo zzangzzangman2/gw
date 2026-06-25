@@ -1,0 +1,7 @@
+sp_magicOrchard_landup.png
+size:512,512
+filter:Linear,Linear
+mfgy_kkg
+bounds:0,140,276,162
+mfgy_kkgx
+bounds:0,0,268,138

@@ -1,0 +1,50 @@
+local a={id=0,nextId=0,roadId=0,stageId=0,name="",activeConsume={},activeAttr={},activeRridership=0,addConsume1={},addRidership1=0,addInvest1=0,addConsume2={},addRidership2=0,addInvest2=0,addConsume3={},addRidership3=0,addInvest3=0}
+a.__index=a
+function a.New(h,u,d,t,m,c,w,p,y,v,f,l,n,i,o,s,r)
+local e={}
+setmetatable(e,a)
+e.id=h
+e.nextId=u
+e.roadId=d
+e.stageId=t
+e.name=m
+e.activeConsume=c
+e.activeAttr=w
+e.activeRridership=p
+e.addConsume1=y
+e.addRidership1=v
+e.addInvest1=f
+e.addConsume2=l
+e.addRidership2=n
+e.addInvest2=i
+e.addConsume3=o
+e.addRidership3=s
+e.addInvest3=r
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.nextId=t[2]
+e.roadId=t[3]
+e.stageId=t[4]
+e.name=t[5]
+e.activeConsume=t[6]
+e.activeAttr=t[7]
+e.activeRridership=t[8]
+e.addConsume1=t[9]
+e.addRidership1=t[10]
+e.addInvest1=t[11]
+e.addConsume2=t[12]
+e.addRidership2=t[13]
+e.addInvest2=t[14]
+e.addConsume3=t[15]
+e.addRidership3=t[16]
+e.addInvest3=t[17]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/activity/DTIslandRouteMapEntityTableData')
+end
+return a 

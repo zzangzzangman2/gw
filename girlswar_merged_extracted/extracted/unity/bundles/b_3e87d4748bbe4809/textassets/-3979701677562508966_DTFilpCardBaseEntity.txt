@@ -1,0 +1,28 @@
+local e={id=0,baseCost={},shopCost=0,boxWeight={{},{}},guaranteeNum=0,crossShowRankCount=0}
+e.__index=e
+function e.New(a,i,o,h,s,n)
+local t={}
+setmetatable(t,e)
+t.id=a
+t.baseCost=i
+t.shopCost=o
+t.boxWeight=h
+t.guaranteeNum=s
+t.crossShowRankCount=n
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.baseCost=a[2]
+t.shopCost=a[3]
+t.boxWeight=a[4]
+t.guaranteeNum=a[5]
+t.crossShowRankCount=a[6]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/activity/DTFilpCardBaseEntityTableData')
+end
+return e 

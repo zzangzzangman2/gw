@@ -1,0 +1,13 @@
+local t={}
+function t:OnHandle(e)
+local e=assert(GlobalPB.decode("PRT_PLAYER_FIGHT_CHANGE_SYN",e));
+if(GameInit.GetDebugLogProto())then
+;
+;
+end
+if e.oldFight~=e.newFight then
+UIUtil.ShowAttrTips({fightInfo={old=e.oldFight,new=e.newFight}})
+end
+return e
+end
+return t 

@@ -1,0 +1,18 @@
+{
+    "generated_at":  "2026-06-25 14:54:00",
+    "status":  "tmp_compile_ok",
+    "unity_exit_code":  "not_reported_by_powershell",
+    "result_wait_seconds":  90,
+    "probe_project":  "C:\\Users\\godho\\Downloads\\girlswar\\_restore_tools\\work\\tmp_unity6000_probe_20260625_145349",
+    "unity_log":  "C:\\Users\\godho\\Downloads\\girlswar\\_restore_tools\\logs\\tmp_compile_probe_20260625_145349.log",
+    "manifest_dependencies":  [
+                                  "com.unity.ugui"
+                              ],
+    "textmeshpro_package_note":  "Unity 6000 com.unity.textmeshpro is a shim; TMP runtime is included through com.unity.ugui 2.0.",
+    "probe_result_json":  "C:\\Users\\godho\\Downloads\\girlswar\\_restore_tools\\work\\tmp_unity6000_probe_20260625_145349\\Assets\\RestoreData\\reports\\tmp_compile_probe_result.json",
+    "probe_result_exists":  true,
+    "compile_error_count":  0,
+    "compile_errors":  [
+
+                       ]
+}

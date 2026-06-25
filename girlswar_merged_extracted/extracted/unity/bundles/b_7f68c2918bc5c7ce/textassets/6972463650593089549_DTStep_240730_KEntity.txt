@@ -1,0 +1,18 @@
+local e={id=0}
+e.__index=e
+function e.New(a)
+local t={}
+setmetatable(t,e)
+t.id=a
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/step/DTStep_240730_KEntityTableData')
+end
+return e 

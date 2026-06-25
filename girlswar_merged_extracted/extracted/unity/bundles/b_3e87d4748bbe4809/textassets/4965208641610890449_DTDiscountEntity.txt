@@ -1,0 +1,24 @@
+local e={id=0,startTime="",endTime="",discount=0}
+e.__index=e
+function e.New(o,a,n,i)
+local t={}
+setmetatable(t,e)
+t.id=o
+t.startTime=a
+t.endTime=n
+t.discount=i
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.startTime=a[2]
+t.endTime=a[3]
+t.discount=a[4]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/activity/DTDiscountEntityTableData')
+end
+return e 

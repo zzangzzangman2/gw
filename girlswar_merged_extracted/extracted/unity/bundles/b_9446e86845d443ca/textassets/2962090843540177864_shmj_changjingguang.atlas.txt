@@ -1,0 +1,6 @@
+shmj_changjingguang.png
+size:1024,1024
+filter:Linear,Linear
+guangsu
+bounds:1,1,568,616
+offsets:75,45,648,666

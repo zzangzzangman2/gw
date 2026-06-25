@@ -1,0 +1,205 @@
+﻿symbol,rva,file_offset,status,first_12_instructions
+XXTEAUtil.DecryptByteArray,0x1C79B00,0x1C79B00,ok,"01c79b00: str      x23, [sp, #-0x40]!
+01c79b04: stp      x22, x21, [sp, #0x10]
+01c79b08: stp      x20, x19, [sp, #0x20]
+01c79b0c: stp      x29, x30, [sp, #0x30]
+01c79b10: add      x29, sp, #0x30
+01c79b14: adrp     x20, #0x3200000
+01c79b18: ldrb     w8, [x20, #0x97d]
+01c79b1c: mov      x19, x0
+01c79b20: tbnz     w8, #0, #0x1c79b68
+01c79b24: adrp     x0, #0x2fdf000
+01c79b28: ldr      x0, [x0, #0xb78]
+01c79b2c: bl       #0xa5ffc0"
+XXTEAUtil.DecryptGetString,0x1C79EF8,0x1C79EF8,ok,"01c79ef8: str      x21, [sp, #-0x30]!
+01c79efc: stp      x20, x19, [sp, #0x10]
+01c79f00: stp      x29, x30, [sp, #0x20]
+01c79f04: add      x29, sp, #0x20
+01c79f08: adrp     x21, #0x3200000
+01c79f0c: ldrb     w8, [x21, #0x97f]
+01c79f10: mov      x20, x1
+01c79f14: mov      x19, x0
+01c79f18: tbnz     w8, #0, #0x1c79f3c
+01c79f1c: adrp     x0, #0x2fec000
+01c79f20: ldr      x0, [x0, #0x3a0]
+01c79f24: bl       #0xa5ffc0"
+XXTEAUtil.DecryptGetArray,0x1C7A04C,0x1C7A04C,ok,"01c7a04c: stp      x26, x25, [sp, #-0x50]!
+01c7a050: stp      x24, x23, [sp, #0x10]
+01c7a054: stp      x22, x21, [sp, #0x20]
+01c7a058: stp      x20, x19, [sp, #0x30]
+01c7a05c: stp      x29, x30, [sp, #0x40]
+01c7a060: add      x29, sp, #0x40
+01c7a064: adrp     x21, #0x3200000
+01c7a068: ldrb     w8, [x21, #0x980]
+01c7a06c: mov      x19, x1
+01c7a070: mov      x20, x0
+01c7a074: tbnz     w8, #0, #0x1c7a098
+01c7a078: adrp     x0, #0x3013000"
+LuaManager.MyLoader,0xD2A5A0,0xD2A5A0,ok,"00d2a5a0: str      x21, [sp, #-0x30]!
+00d2a5a4: stp      x20, x19, [sp, #0x10]
+00d2a5a8: stp      x29, x30, [sp, #0x20]
+00d2a5ac: add      x29, sp, #0x20
+00d2a5b0: adrp     x21, #0x31f7000
+00d2a5b4: ldrb     w8, [x21, #0xe02]
+00d2a5b8: mov      x19, x1
+00d2a5bc: mov      x20, x0
+00d2a5c0: tbnz     w8, #0, #0xd2a5d8
+00d2a5c4: adrp     x0, #0x2ffb000
+00d2a5c8: ldr      x0, [x0, #0x2e0]
+00d2a5cc: bl       #0xa5ffc0"
+LuaManager.GetLuaBuff,0xD2A664,0xD2A664,ok,"00d2a664: sub      sp, sp, #0x50
+00d2a668: stp      x24, x23, [sp, #0x10]
+00d2a66c: stp      x22, x21, [sp, #0x20]
+00d2a670: stp      x20, x19, [sp, #0x30]
+00d2a674: stp      x29, x30, [sp, #0x40]
+00d2a678: add      x29, sp, #0x40
+00d2a67c: adrp     x22, #0x31f7000
+00d2a680: ldrb     w8, [x22, #0xe03]
+00d2a684: mov      w21, w2
+00d2a688: mov      x19, x1
+00d2a68c: mov      x20, x0
+00d2a690: tbnz     w8, #0, #0xd2a720"
+LuaManager.LoadUIScript,0xD2ADCC,0xD2ADCC,ok,"00d2adcc: str      x23, [sp, #-0x40]!
+00d2add0: stp      x22, x21, [sp, #0x10]
+00d2add4: stp      x20, x19, [sp, #0x20]
+00d2add8: stp      x29, x30, [sp, #0x30]
+00d2addc: add      x29, sp, #0x30
+00d2ade0: adrp     x23, #0x31f7000
+00d2ade4: ldrb     w8, [x23, #0xe05]
+00d2ade8: mov      x19, x3
+00d2adec: mov      x20, x2
+00d2adf0: mov      x21, x1
+00d2adf4: mov      x22, x0
+00d2adf8: tbnz     w8, #0, #0xd2ae4c"
+SecurityUtil.Xor,0xF84ED4,0xF84ED4,ok,"00f84ed4: stp      x24, x23, [sp, #-0x40]!
+00f84ed8: stp      x22, x21, [sp, #0x10]
+00f84edc: stp      x20, x19, [sp, #0x20]
+00f84ee0: stp      x29, x30, [sp, #0x30]
+00f84ee4: add      x29, sp, #0x30
+00f84ee8: adrp     x20, #0x31f8000
+00f84eec: ldrb     w8, [x20, #0xb00]
+00f84ef0: mov      x19, x0
+00f84ef4: tbnz     w8, #0, #0xf84f0c
+00f84ef8: adrp     x0, #0x3018000
+00f84efc: ldr      x0, [x0, #0x2a0]
+00f84f00: bl       #0xa5ffc0"
+SecurityUtil..cctor,0xF85030,0xF85030,ok,"00f85030: str      x19, [sp, #-0x20]!
+00f85034: stp      x29, x30, [sp, #0x10]
+00f85038: add      x29, sp, #0x10
+00f8503c: adrp     x19, #0x31f8000
+00f85040: ldrb     w8, [x19, #0xb01]
+00f85044: tbnz     w8, #0, #0xf85074
+00f85048: adrp     x0, #0x3008000
+00f8504c: ldr      x0, [x0, #0x160]
+00f85050: bl       #0xa5ffc0
+00f85054: adrp     x0, #0x3018000
+00f85058: ldr      x0, [x0, #0x2a0]
+00f8505c: bl       #0xa5ffc0"
+XXTEAUtil.Encrypt(byte[]),0x1C78D98,0x1C78D98,ok,"01c78d98: stp      x20, x19, [sp, #-0x20]!
+01c78d9c: stp      x29, x30, [sp, #0x10]
+01c78da0: add      x29, sp, #0x10
+01c78da4: adrp     x20, #0x3200000
+01c78da8: ldrb     w8, [x20, #0x97a]
+01c78dac: mov      x19, x0
+01c78db0: tbnz     w8, #0, #0x1c78dc8
+01c78db4: adrp     x0, #0x300c000
+01c78db8: ldr      x0, [x0, #0xdd8]
+01c78dbc: bl       #0xa5ffc0
+01c78dc0: mov      w8, #1
+01c78dc4: strb     w8, [x20, #0x97a]"
+XXTEAUtil.Decrypt(byte[]),0x1C79540,0x1C79540,ok,"01c79540: stp      x20, x19, [sp, #-0x20]!
+01c79544: stp      x29, x30, [sp, #0x10]
+01c79548: add      x29, sp, #0x10
+01c7954c: adrp     x20, #0x3200000
+01c79550: ldrb     w8, [x20, #0x97b]
+01c79554: mov      x19, x0
+01c79558: tbnz     w8, #0, #0x1c79570
+01c7955c: adrp     x0, #0x300c000
+01c79560: ldr      x0, [x0, #0xdd8]
+01c79564: bl       #0xa5ffc0
+01c79568: mov      w8, #1
+01c7956c: strb     w8, [x20, #0x97b]"
+"XXTEAUtil.Encrypt(string,key)",0x1C79974,0x1C79974,ok,"01c79974: str      x21, [sp, #-0x30]!
+01c79978: stp      x20, x19, [sp, #0x10]
+01c7997c: stp      x29, x30, [sp, #0x20]
+01c79980: add      x29, sp, #0x20
+01c79984: adrp     x21, #0x3200000
+01c79988: ldrb     w8, [x21, #0x97c]
+01c7998c: mov      x19, x1
+01c79990: mov      x20, x0
+01c79994: tbnz     w8, #0, #0x1c799c4
+01c79998: adrp     x0, #0x302c000
+01c7999c: ldr      x0, [x0, #0xc18]
+01c799a0: bl       #0xa5ffc0"
+"XXTEAUtil.Decrypt(string,key)",0x1C79D68,0x1C79D68,ok,"01c79d68: str      x21, [sp, #-0x30]!
+01c79d6c: stp      x20, x19, [sp, #0x10]
+01c79d70: stp      x29, x30, [sp, #0x20]
+01c79d74: add      x29, sp, #0x20
+01c79d78: adrp     x20, #0x3200000
+01c79d7c: ldrb     w8, [x20, #0x97e]
+01c79d80: mov      x19, x1
+01c79d84: mov      x21, x0
+01c79d88: tbnz     w8, #0, #0x1c79db8
+01c79d8c: adrp     x0, #0x302c000
+01c79d90: ldr      x0, [x0, #0xc18]
+01c79d94: bl       #0xa5ffc0"
+XXTEAUtil.ToIntArray,0x1C78E80,0x1C78E80,ok,"01c78e80: str      x25, [sp, #-0x50]!
+01c78e84: stp      x24, x23, [sp, #0x10]
+01c78e88: stp      x22, x21, [sp, #0x20]
+01c78e8c: stp      x20, x19, [sp, #0x30]
+01c78e90: stp      x29, x30, [sp, #0x40]
+01c78e94: add      x29, sp, #0x40
+01c78e98: adrp     x21, #0x3200000
+01c78e9c: ldrb     w8, [x21, #0x983]
+01c78ea0: mov      w20, w1
+01c78ea4: mov      x19, x0
+01c78ea8: tbnz     w8, #0, #0x1c78ecc
+01c78eac: adrp     x0, #0x2ffc000"
+XXTEAUtil.ToByteArray,0x1C793B0,0x1C793B0,ok,"01c793b0: str      x25, [sp, #-0x50]!
+01c793b4: stp      x24, x23, [sp, #0x10]
+01c793b8: stp      x22, x21, [sp, #0x20]
+01c793bc: stp      x20, x19, [sp, #0x30]
+01c793c0: stp      x29, x30, [sp, #0x40]
+01c793c4: add      x29, sp, #0x40
+01c793c8: adrp     x21, #0x3200000
+01c793cc: ldrb     w8, [x21, #0x984]
+01c793d0: mov      w20, w1
+01c793d4: mov      x19, x0
+01c793d8: tbnz     w8, #0, #0x1c793fc
+01c793dc: adrp     x0, #0x3008000"
+XXTEAUtil.Base64Decode,0x1C7A234,0x1C7A234,ok,"01c7a234: stp      x20, x19, [sp, #-0x20]!
+01c7a238: stp      x29, x30, [sp, #0x10]
+01c7a23c: add      x29, sp, #0x10
+01c7a240: adrp     x20, #0x3200000
+01c7a244: ldrb     w8, [x20, #0x985]
+01c7a248: mov      x19, x0
+01c7a24c: tbnz     w8, #0, #0x1c7a264
+01c7a250: adrp     x0, #0x302c000
+01c7a254: ldr      x0, [x0, #0xc18]
+01c7a258: bl       #0xa5ffc0
+01c7a25c: mov      w8, #1
+01c7a260: strb     w8, [x20, #0x985]"
+XXTEAUtil.Base64Encode,0x1C7A3F0,0x1C7A3F0,ok,"01c7a3f0: stp      x20, x19, [sp, #-0x20]!
+01c7a3f4: stp      x29, x30, [sp, #0x10]
+01c7a3f8: add      x29, sp, #0x10
+01c7a3fc: adrp     x20, #0x3200000
+01c7a400: ldrb     w8, [x20, #0x986]
+01c7a404: mov      x19, x0
+01c7a408: tbnz     w8, #0, #0x1c7a420
+01c7a40c: adrp     x0, #0x302c000
+01c7a410: ldr      x0, [x0, #0xc18]
+01c7a414: bl       #0xa5ffc0
+01c7a418: mov      w8, #1
+01c7a41c: strb     w8, [x20, #0x986]"
+XXTEAUtil..cctor,0x1C7A5A4,0x1C7A5A4,ok,"01c7a5a4: str      x21, [sp, #-0x30]!
+01c7a5a8: stp      x20, x19, [sp, #0x10]
+01c7a5ac: stp      x29, x30, [sp, #0x20]
+01c7a5b0: add      x29, sp, #0x20
+01c7a5b4: adrp     x19, #0x3200000
+01c7a5b8: ldrb     w8, [x19, #0x987]
+01c7a5bc: tbnz     w8, #0, #0x1c7a5f8
+01c7a5c0: adrp     x0, #0x3008000
+01c7a5c4: ldr      x0, [x0, #0x160]
+01c7a5c8: bl       #0xa5ffc0
+01c7a5cc: adrp     x0, #0x303a000
+01c7a5d0: ldr      x0, [x0, #0x278]"

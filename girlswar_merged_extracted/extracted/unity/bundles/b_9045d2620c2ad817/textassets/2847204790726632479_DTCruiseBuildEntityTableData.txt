@@ -1,0 +1,17 @@
+local e=
+{
+ByIdx={
+{1,"cruise_01","build01","Assets/Download/UI/UIPrefabAndRes/CruiseShip_Ext_8/buildbg1.png"},
+{2,"cruise_02","build02","Assets/Download/UI/UIPrefabAndRes/CruiseShip_Ext_8/buildbg2.png"},
+{3,"cruise_03","build03","Assets/Download/UI/UIPrefabAndRes/CruiseShip_Ext_8/buildbg3.png"},
+{4,"cruise_04","build04","Assets/Download/UI/UIPrefabAndRes/CruiseShip_Ext_8/buildbg4.png"},
+{5,"cruise_05","build05","Assets/Download/UI/UIPrefabAndRes/CruiseShip_Ext_8/buildbg5.png"},
+{6,"cruise_06","build06","Assets/Download/UI/UIPrefabAndRes/CruiseShip_Ext_8/buildbg6.png"},
+{7,"cruise_07","build07","Assets/Download/UI/UIPrefabAndRes/CruiseShip_Ext_8/buildbg7.png"},
+{8,"cruise_08","build08","Assets/Download/UI/UIPrefabAndRes/CruiseShip_Ext_8/buildbg8.png"},
+{9,"cruise_09","build09","Assets/Download/UI/UIPrefabAndRes/CruiseShip_Ext_8/buildbg9.png"},
+{10,"cruise_10","build10","Assets/Download/UI/UIPrefabAndRes/CruiseShip_Ext_8/buildbg10.png"}
+},
+Len=10
+}
+return e 

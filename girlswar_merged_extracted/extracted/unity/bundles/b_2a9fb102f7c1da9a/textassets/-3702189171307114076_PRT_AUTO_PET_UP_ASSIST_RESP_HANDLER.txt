@@ -1,0 +1,11 @@
+local t={}
+function t:OnHandle(e)
+local e=assert(GlobalPB.decode("PRT_AUTO_PET_UP_ASSIST_RESP",e));
+if(GameInit.GetDebugLogProto())then
+;
+;
+end
+SummonPetMgr:RespSummonPetGuardUp(e)
+return e
+end
+return t 

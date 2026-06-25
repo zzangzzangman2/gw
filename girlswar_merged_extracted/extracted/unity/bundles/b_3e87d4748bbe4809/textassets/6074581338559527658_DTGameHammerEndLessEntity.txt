@@ -1,0 +1,24 @@
+local e={id=0,breakTime=0,t0Wave={},t0WaveNum=0}
+e.__index=e
+function e.New(o,a,n,i)
+local t={}
+setmetatable(t,e)
+t.id=o
+t.breakTime=a
+t.t0Wave=n
+t.t0WaveNum=i
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.breakTime=a[2]
+t.t0Wave=a[3]
+t.t0WaveNum=a[4]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/activity/DTGameHammerEndLessEntityTableData')
+end
+return e 

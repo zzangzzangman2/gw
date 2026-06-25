@@ -1,0 +1,26 @@
+local e={id=0,taskId={},gift={{},{}},doubleAward={{},{}},spineRateName=""}
+e.__index=e
+function e.New(o,n,a,s,i)
+local t={}
+setmetatable(t,e)
+t.id=o
+t.taskId=n
+t.gift=a
+t.doubleAward=s
+t.spineRateName=i
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.taskId=a[2]
+t.gift=a[3]
+t.doubleAward=a[4]
+t.spineRateName=a[5]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/activity/DTAnniversaryParkTaskGiftEntityTableData')
+end
+return e 

@@ -1,0 +1,20 @@
+local e={id=0,eventNames=""}
+e.__index=e
+function e.New(a,o)
+local t={}
+setmetatable(t,e)
+t.id=a
+t.eventNames=o
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.eventNames=a[2]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/firebase/DTFirebaseEventEntityTableData')
+end
+return e 

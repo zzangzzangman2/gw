@@ -1,0 +1,9 @@
+local e={}
+function e:OnHandle(e)
+local e=assert(GlobalPB.decode("PRT_CS_MULTI_ROOM_STATUS_SYN",e));
+if(GameInit.GetDebugLogProto())then
+;
+;
+end
+end
+return e 

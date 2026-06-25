@@ -1,0 +1,28 @@
+local e={id=0,playPoint={},movingRadius=0,movingSpeed=0,awardTimes=0,itemAward={{},{}}}
+e.__index=e
+function e.New(a,i,o,h,s,n)
+local t={}
+setmetatable(t,e)
+t.id=a
+t.playPoint=i
+t.movingRadius=o
+t.movingSpeed=h
+t.awardTimes=s
+t.itemAward=n
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.playPoint=a[2]
+t.movingRadius=a[3]
+t.movingSpeed=a[4]
+t.awardTimes=a[5]
+t.itemAward=a[6]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/activity/DTAnniversaryFestivalEntityTableData')
+end
+return e 

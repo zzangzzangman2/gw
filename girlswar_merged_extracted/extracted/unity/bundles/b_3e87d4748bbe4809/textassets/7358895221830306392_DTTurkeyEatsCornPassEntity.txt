@@ -1,0 +1,28 @@
+local e={id=0,award={{},{}},advAward={{},{}},experience=0,animOn=0,spineAnimName=""}
+e.__index=e
+function e.New(a,i,o,h,s,n)
+local t={}
+setmetatable(t,e)
+t.id=a
+t.award=i
+t.advAward=o
+t.experience=h
+t.animOn=s
+t.spineAnimName=n
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.award=a[2]
+t.advAward=a[3]
+t.experience=a[4]
+t.animOn=a[5]
+t.spineAnimName=a[6]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/activity/DTTurkeyEatsCornPassEntityTableData')
+end
+return e 

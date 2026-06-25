@@ -1,0 +1,52 @@
+local a={id=0,name="",temp=0,itemIcon="",icon="",type=0,color=0,star=0,sort=0,award={},planNumber=0,desc="",weigtDesc="",dropIcon="",dropStep=0,dropDesc="",conversion={},tempDesc=""}
+a.__index=a
+function a.New(d,c,l,t,f,m,y,v,p,b,w,u,n,i,o,s,r,h)
+local e={}
+setmetatable(e,a)
+e.id=d
+e.name=c
+e.temp=l
+e.itemIcon=t
+e.icon=f
+e.type=m
+e.color=y
+e.star=v
+e.sort=p
+e.award=b
+e.planNumber=w
+e.desc=u
+e.weigtDesc=n
+e.dropIcon=i
+e.dropStep=o
+e.dropDesc=s
+e.conversion=r
+e.tempDesc=h
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.name=t[2]
+e.temp=t[3]
+e.itemIcon=t[4]
+e.icon=t[5]
+e.type=t[6]
+e.color=t[7]
+e.star=t[8]
+e.sort=t[9]
+e.award=t[10]
+e.planNumber=t[11]
+e.desc=t[12]
+e.weigtDesc=t[13]
+e.dropIcon=t[14]
+e.dropStep=t[15]
+e.dropDesc=t[16]
+e.conversion=t[17]
+e.tempDesc=t[18]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/activity/DTActCellSurvivorCollectionEntityTableData')
+end
+return a 

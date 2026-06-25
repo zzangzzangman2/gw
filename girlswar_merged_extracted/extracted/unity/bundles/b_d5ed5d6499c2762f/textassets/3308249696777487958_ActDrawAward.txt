@@ -1,0 +1,17 @@
+
+?
+ActDrawAward.proto"?
+PRT_DRAW_AWARD_INFO
+	drawCount (R	drawCount
+	taskWheel (R	taskWheel"
+receivedDids (RreceivedDids"
+endTimestamp (RendTimestamp"
+PRT_DRAW_AWARD_INFO_REQ"D
+PRT_DRAW_AWARD_INFO_RESP(
+info (2.PRT_DRAW_AWARD_INFORinfo".
+PRT_DRAW_AWARD_RECEIVE_REQ
+did (Rdid"Y
+PRT_DRAW_AWARD_RECEIVE_RESP
+did (Rdid(
+info (2.PRT_DRAW_AWARD_INFORinfoB
+com.next1b.nextsvr.protobproto3

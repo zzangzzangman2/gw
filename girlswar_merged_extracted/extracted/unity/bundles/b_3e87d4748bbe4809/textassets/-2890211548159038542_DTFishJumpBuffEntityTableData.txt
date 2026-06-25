@@ -1,0 +1,13 @@
+local e=
+{
+ByIdx={
+{1,99650,0,10,"UI.Fishjump.tips_08"},
+{2,99651,0,2,"UI.Fishjump.tips_08"},
+{3,99652,0,1,"UI.Fishjump.tips_08"},
+{4,99653,6,0,"UI.Fishjump.tips_09"},
+{5,99654,14,0,"UI.Fishjump.tips_09"},
+{6,99655,55,0,"UI.Fishjump.tips_09"}
+},
+Len=6
+}
+return e 

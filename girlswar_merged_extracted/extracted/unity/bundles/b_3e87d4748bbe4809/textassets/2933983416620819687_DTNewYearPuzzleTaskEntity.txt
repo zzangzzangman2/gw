@@ -1,0 +1,30 @@
+local t={id=0,describe="",parameter2=0,reward={},jump=0,icon="",isClose=0}
+t.__index=t
+function t.New(o,h,a,s,r,n,i)
+local e={}
+setmetatable(e,t)
+e.id=o
+e.describe=h
+e.parameter2=a
+e.reward=s
+e.jump=r
+e.icon=n
+e.isClose=i
+return e
+end
+function t.NewFromArrItem(a)
+local e={}
+setmetatable(e,t)
+e.id=a[1]
+e.describe=a[2]
+e.parameter2=a[3]
+e.reward=a[4]
+e.jump=a[5]
+e.icon=a[6]
+e.isClose=a[7]
+return e
+end
+function t.GetArr()
+return require('DataNode/DataTable/Create/activity/DTNewYearPuzzleTaskEntityTableData')
+end
+return t 

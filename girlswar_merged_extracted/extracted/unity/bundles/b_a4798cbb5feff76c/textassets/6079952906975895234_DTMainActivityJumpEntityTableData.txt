@@ -1,0 +1,12 @@
+local e=
+{
+ByIdx={
+{1,828,437,1,"UIMainInterface2/activity_828","activityname_828","buttonKey_828"},
+{2,836,455,2,"UIMainInterface2/activity_836","activityname_836","buttonKey_836"},
+{3,860,481,3,"UIMainInterface2/activity_860","activityname_860","buttonKey_860"},
+{4,867,503,4,"UIMainInterface2/activity_867","activityname_867","buttonKey_867"},
+{5,865,504,5,"UIMainInterface2/activity_867","activityname_867","buttonKey_868"}
+},
+Len=5
+}
+return e 

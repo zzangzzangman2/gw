@@ -1,0 +1,20 @@
+local e={id=0,key=""}
+e.__index=e
+function e.New(a,o)
+local t={}
+setmetatable(t,e)
+t.id=a
+t.key=o
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.key=a[2]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/guild/DTGreatBossMessageEntityTableData')
+end
+return e 

@@ -1,0 +1,12 @@
+shmj_nibeibule.png
+size:512,512
+filter:Linear,Linear
+a2
+bounds:295,115,274,145
+offsets:1,1,276,147
+rotate:90
+hdwn
+bounds:2,132,291,257
+hw
+bounds:2,2,238,128
+offsets:1,1,240,130

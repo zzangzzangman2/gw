@@ -1,0 +1,107 @@
+{
+  "generated_at": "2026-06-25 13:43:01",
+  "base": "C:\\Users\\godho\\Downloads\\girlswar",
+  "unity_project": {
+    "version": "6000.4.9f1",
+    "revision": "6000.4.9f1 (f7258d6eebbe)"
+  },
+  "installed_unity_versions": [
+    "6000.4.9f1"
+  ],
+  "manifest": {
+    "manifest_exists": true,
+    "mentions_spine": false,
+    "mentions_spine_unity": false
+  },
+  "project_spine_runtime": {
+    "present": false,
+    "match_count": 0,
+    "sample": []
+  },
+  "dummy_dlls": [
+    "girlswar_merged_extracted/extracted/il2cpp_dump/DummyDll/spine-unity-examples.dll",
+    "girlswar_merged_extracted/extracted/il2cpp_dump/DummyDll/spine-unity.dll"
+  ],
+  "unitypackage": {
+    "exists": true,
+    "path": "C:\\Users\\godho\\Downloads\\girlswar\\_restore_tools\\vendor\\spine-unity-4.0-2024-08-21.unitypackage",
+    "size": 6881350,
+    "sha256": "4a89ff00d727f9c2d67da1838edf7dc2463dc79059a4aaaa27723e84be42836d",
+    "pathname_count": 646,
+    "asset_file_count": 552,
+    "meta_file_count": 646,
+    "sample_pathnames": [
+      "Assets/Spine",
+      "Assets/Spine Examples",
+      "Assets/Spine Examples/Getting Started",
+      "Assets/Spine Examples/Getting Started/1 The Spine GameObject.unity",
+      "Assets/Spine Examples/Getting Started/2 Controlling Animation.unity",
+      "Assets/Spine Examples/Getting Started/3 Controlling Animation Continued.unity",
+      "Assets/Spine Examples/Getting Started/4 Object Oriented Sample.unity",
+      "Assets/Spine Examples/Getting Started/5 Basic Platformer.unity",
+      "Assets/Spine Examples/Getting Started/6 SkeletonGraphic.unity",
+      "Assets/Spine Examples/Images",
+      "Assets/Spine Examples/Images/outline-shaders-heading.png",
+      "Assets/Spine Examples/Other Examples",
+      "Assets/Spine Examples/Other Examples/Animation Tester",
+      "Assets/Spine Examples/Other Examples/Animation Tester/Animation Tester.unity",
+      "Assets/Spine Examples/Other Examples/Animation Tester/SpineAnimationTesterTool.cs",
+      "Assets/Spine Examples/Other Examples/AtlasRegionAttacher.unity",
+      "Assets/Spine Examples/Other Examples/BlendModes.unity",
+      "Assets/Spine Examples/Other Examples/Drunkboy.unity",
+      "Assets/Spine Examples/Other Examples/FixedTimestepUpdates.unity",
+      "Assets/Spine Examples/Other Examples/Freezeboy.unity",
+      "Assets/Spine Examples/Other Examples/Goblins.unity",
+      "Assets/Spine Examples/Other Examples/Instantiate from Script.unity",
+      "Assets/Spine Examples/Other Examples/Mix and Match Equip Assets",
+      "Assets/Spine Examples/Other Examples/Mix and Match Equip Assets/Goggles Normal.asset",
+      "Assets/Spine Examples/Other Examples/Mix and Match Equip Assets/Goggles Tactical.asset",
+      "Assets/Spine Examples/Other Examples/Mix and Match Equip Assets/Gun Freeze.asset",
+      "Assets/Spine Examples/Other Examples/Mix and Match Equip Assets/Gun Normal.asset",
+      "Assets/Spine Examples/Other Examples/Mix and Match Equip.unity",
+      "Assets/Spine Examples/Other Examples/Mix and Match Skins.unity",
+      "Assets/Spine Examples/Other Examples/Mix and Match.unity"
+    ],
+    "contains_skeleton_graphic": true,
+    "contains_spine_csharp": true,
+    "contains_spine_unity": true
+  },
+  "hero_skeletons": [
+    {
+      "relative_path": "Assets/RestoreData/hero1001_spine_source/battleprefabandres_1001_reference/1001.skel.bytes",
+      "size": 681766,
+      "detected_spine_binary_version": "4.0.64"
+    },
+    {
+      "relative_path": "Assets/RestoreData/hero1001_spine_source/paintingprefabandres_1001/Painting_1001.skel.bytes",
+      "size": 598675,
+      "detected_spine_binary_version": "4.0.56"
+    },
+    {
+      "relative_path": "Assets/RestoreData/hero1001_spine_source/paintingprefabandres_1001/Painting_1001_Back.skel.bytes",
+      "size": 22847,
+      "detected_spine_binary_version": "4.0.56"
+    },
+    {
+      "relative_path": "Assets/RestoreData/hero1001_spine_source/paintingprefabandres_1001/Painting_1001_Front.skel.bytes",
+      "size": 24512,
+      "detected_spine_binary_version": "4.0.56"
+    },
+    {
+      "relative_path": "Assets/RestoreData/hero1001_spine_source/paintingprefabandres_1001/SP_heroname_1001.skel.bytes",
+      "size": 5166,
+      "detected_spine_binary_version": "4.0.47"
+    }
+  ],
+  "official_reference": "https://en.esotericsoftware.com/spine-unity-download",
+  "decision": {
+    "status": "needs_probe_or_unity2022",
+    "verdict": "1001 home skeleton is Spine 4.0.x, but the restore project is Unity 6000. Do not import the 4.0 runtime into the main project as a blind final step.",
+    "safe_next_action": "Create an isolated probe project/copy for spine-unity 4.0 import, or use a Unity 2022.1-compatible editor for the exact runtime path. Only after compile/import logs are clean should UI_heroSpine be bound in the main restore project.",
+    "do_not_do": [
+      "Do not place Painting_1001.png as a whole UI Image.",
+      "Do not rely on Il2CppDumper DummyDll/spine-unity.dll as a runtime.",
+      "Do not claim the MainInterface visual restore is normal until UI_heroSpine renders through a real Spine runtime."
+    ]
+  }
+}

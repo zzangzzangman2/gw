@@ -1,0 +1,22 @@
+local e=
+{
+ByIdx={
+{1,1,0,1024,{15024,20},102401,0,3,"Assets/Download/RolePrefabsAndRes/RoleBigSetPainting/1024/T_ditu_marry_1024.png","heroname_1024",1,102417,"cruisenpc_xiehouman","cruisenpc_tip1","ycdt_hkbg1024"},
+{2,1,0,1030,{15030,30},103001,0,4,"Assets/Download/RolePrefabsAndRes/RoleBigSetPainting/1030/T_ditu_marry_1030.png","heroname_1030",2,103015,"cruisenpc_xiehouman","cruisenpc_tip2","ycdt_hkbg1030"},
+{3,1,11,1015,{15015,20},200000,0,1,"Assets/Download/RolePrefabsAndRes/RoleBigSetPainting/1015/T_ditu_marry_1015.png","heroname_1015",3,10230034,"cruisenpc_xiehouman","cruisenpc_tip3","ycdt_hkbg1015"},
+{4,1,0,1019,{15019,20},101901,0,6,"Assets/Download/RolePrefabsAndRes/RoleBigSetPainting/1019/T_ditu_marry_1019.png","heroname_1019",7,101912,"cruisenpc_xiehouman","cruisenpc_tip4","ycdt_hkbg1019"},
+{5,1,0,1042,{15042,20},104201,0,7,"Assets/Download/RolePrefabsAndRes/RoleBigSetPainting/1042/T_ditu_marry_1042.png","heroname_1042",4,104216,"cruisenpc_xiehouman","cruisenpc_tip5","ycdt_hkbg1042"},
+{6,1,0,1039,{15039,20},103901,0,8,"Assets/Download/RolePrefabsAndRes/RoleBigSetPainting/1039/T_ditu_marry_1039.png","heroname_1039",6,103913,"cruisenpc_xiehouman","cruisenpc_tip6","ycdt_hkbg1039"},
+{7,1,0,1012,{15012,20},101201,0,9,"Assets/Download/RolePrefabsAndRes/RoleBigSetPainting/1012/T_ditu_marry_1012.png","heroname_1012",5,10120001,"cruisenpc_xiehouman","cruisenpc_tip7","ycdt_hkbg1012"},
+{8,1,0,1016,{15016,20},101601,0,10,"Assets/Download/RolePrefabsAndRes/RoleBigSetPainting/1016/T_ditu_marry_1016.png","heroname_1016",8,101627,"cruisenpc_xiehouman","cruisenpc_tip8","ycdt_hkbg1016"},
+{9,1,0,1026,{15026,30},102601,0,11,"Assets/Download/RolePrefabsAndRes/RoleBigSetPainting/1026/T_ditu_marry_1026.png","heroname_1026",9,102618,"cruisenpc_xiehouman","cruisenpc_tip9","ycdt_hkbg1026"},
+{10,1,9,1029,{15029,20},300000,0,2,"Assets/Download/RolePrefabsAndRes/RoleBigSetPainting/1029/T_ditu_marry_1029.png","heroname_1029",9,103514,"cruisenpc_xiehouman","cruisenpc_tip10","ycdt_hkbg1029"},
+{11,1,0,1035,{15035,30},101501,0,5,"Assets/Download/RolePrefabsAndRes/RoleBigSetPainting/1035/T_ditu_marry_1035.png","heroname_1035",3,103530,"cruisenpc_xiehouman","cruisenpc_tip11","ycdt_hkbg1035"},
+{101,2,0,1023,{15023,20},0,10,12,"Assets/Download/RolePrefabsAndRes/RoleBigSetPainting/1023/T_ditu_marry_1023.png","heroname_1023",10,102312,"cruisenpc_xiehouman","cruisenpc_tip12","ycdt_hkbg1023"},
+{102,2,0,1044,{15044,30},0,25,13,"Assets/Download/RolePrefabsAndRes/RoleBigSetPainting/1044/T_ditu_marry_1044.png","heroname_1044",10,104410,"cruisenpc_xiehouman","cruisenpc_tip13","ycdt_hkbg1044"},
+{104,2,0,1041,{15041,30},0,25,14,"Assets/Download/RolePrefabsAndRes/RoleBigSetPainting/1041/T_ditu_marry_1041.png","heroname_1041",10,104113,"cruisenpc_xiehouman","cruisenpc_tip14","ycdt_hkbg1041"},
+{106,2,0,1043,{15043,20},0,15,15,"Assets/Download/RolePrefabsAndRes/RoleBigSetPainting/1043/T_ditu_marry_1043.png","heroname_1043",10,104313,"cruisenpc_xiehouman","cruisenpc_tip15","ycdt_hkbg1043"}
+},
+Len=15
+}
+return e 

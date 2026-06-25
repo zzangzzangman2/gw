@@ -1,0 +1,32 @@
+local a={id=0,dayNum=0,giftNum=0,goods=0,award={{},{}},discountShow=0,giftBg="",giftName=""}
+a.__index=a
+function a.New(i,h,n,t,d,r,s,o)
+local e={}
+setmetatable(e,a)
+e.id=i
+e.dayNum=h
+e.giftNum=n
+e.goods=t
+e.award=d
+e.discountShow=r
+e.giftBg=s
+e.giftName=o
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.dayNum=t[2]
+e.giftNum=t[3]
+e.goods=t[4]
+e.award=t[5]
+e.discountShow=t[6]
+e.giftBg=t[7]
+e.giftName=t[8]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/activity/DTGrandCitiesGiftEntityTableData')
+end
+return a 

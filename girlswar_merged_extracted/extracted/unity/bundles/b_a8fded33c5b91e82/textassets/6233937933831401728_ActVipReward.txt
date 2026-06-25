@@ -1,0 +1,16 @@
+
+?
+ActVipReward.proto"R
+PRT_VIP_REWARD_AWARD
+awardDid (RawardDid
+
+awardCount (R
+awardCount"
+PRT_VIP_REWARD_INFO_REQ"Y
+PRT_VIP_REWARD_INFO_RESP=
+receivedAwards (2.PRT_VIP_REWARD_AWARDRreceivedAwards"6
+PRT_VIP_REWARD_AWARD_REQ
+awardDid (RawardDid"H
+PRT_VIP_REWARD_AWARD_RESP+
+award (2.PRT_VIP_REWARD_AWARDRawardB
+com.next1b.nextsvr.protobproto3

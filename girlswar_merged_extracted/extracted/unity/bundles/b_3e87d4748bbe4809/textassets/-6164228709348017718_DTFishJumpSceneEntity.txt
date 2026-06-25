@@ -1,0 +1,28 @@
+local e={id=0,prefabId1=0,prefabId2=0,prefabId3=0,front_prefabId=0,back_prefabId=0}
+e.__index=e
+function e.New(a,i,o,h,s,n)
+local t={}
+setmetatable(t,e)
+t.id=a
+t.prefabId1=i
+t.prefabId2=o
+t.prefabId3=h
+t.front_prefabId=s
+t.back_prefabId=n
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.prefabId1=a[2]
+t.prefabId2=a[3]
+t.prefabId3=a[4]
+t.front_prefabId=a[5]
+t.back_prefabId=a[6]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/activity/DTFishJumpSceneEntityTableData')
+end
+return e 

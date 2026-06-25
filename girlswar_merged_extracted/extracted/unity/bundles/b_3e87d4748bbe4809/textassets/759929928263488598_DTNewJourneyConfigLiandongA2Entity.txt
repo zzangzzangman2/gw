@@ -1,0 +1,24 @@
+local e={id=0,crossShowRankCount=0,localShowRankCount=0,dtsysPrefabAvg=0}
+e.__index=e
+function e.New(o,a,n,i)
+local t={}
+setmetatable(t,e)
+t.id=o
+t.crossShowRankCount=a
+t.localShowRankCount=n
+t.dtsysPrefabAvg=i
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.crossShowRankCount=a[2]
+t.localShowRankCount=a[3]
+t.dtsysPrefabAvg=a[4]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/activity/DTNewJourneyConfigLiandongA2EntityTableData')
+end
+return e 

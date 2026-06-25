@@ -1,0 +1,52 @@
+local a={id=0,map=0,rank=0,awardStar6={{},{}},awardStar5={{},{}},awardStar4={{},{}},awardStar3={{},{}},awardNewbie={{},{}},awardStar6New={{},{}},awardStar5New={{},{}},awardStar4New={{},{}},awardStar3New={{},{}},awardNewbieNew={{},{}},awardStar6New3={{},{}},awardStar5New3={{},{}},awardStar4New3={{},{}},awardStar3New3={{},{}},awardNewbieNew3={{},{}}}
+a.__index=a
+function a.New(d,c,l,t,f,m,y,v,p,b,w,u,n,i,o,s,r,h)
+local e={}
+setmetatable(e,a)
+e.id=d
+e.map=c
+e.rank=l
+e.awardStar6=t
+e.awardStar5=f
+e.awardStar4=m
+e.awardStar3=y
+e.awardNewbie=v
+e.awardStar6New=p
+e.awardStar5New=b
+e.awardStar4New=w
+e.awardStar3New=u
+e.awardNewbieNew=n
+e.awardStar6New3=i
+e.awardStar5New3=o
+e.awardStar4New3=s
+e.awardStar3New3=r
+e.awardNewbieNew3=h
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.map=t[2]
+e.rank=t[3]
+e.awardStar6=t[4]
+e.awardStar5=t[5]
+e.awardStar4=t[6]
+e.awardStar3=t[7]
+e.awardNewbie=t[8]
+e.awardStar6New=t[9]
+e.awardStar5New=t[10]
+e.awardStar4New=t[11]
+e.awardStar3New=t[12]
+e.awardNewbieNew=t[13]
+e.awardStar6New3=t[14]
+e.awardStar5New3=t[15]
+e.awardStar4New3=t[16]
+e.awardStar3New3=t[17]
+e.awardNewbieNew3=t[18]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/cityWar/DTCityWarSeasonAwardEntityTableData')
+end
+return a 

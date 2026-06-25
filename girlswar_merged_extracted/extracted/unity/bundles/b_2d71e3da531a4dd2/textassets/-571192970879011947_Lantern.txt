@@ -1,0 +1,16 @@
+
+?
+Lantern.protoCommons.proto"
+PRT_LANTERN_ACTINFO_REQ"Z
+PRT_LANTERN_ACTINFO_RESP
+cutdown (Rcutdown
+id (Rid
+maxId (RmaxId":
+PRT_LANTERN_RESULT_REQ
+id (Rid
+idx (Ridx"K
+PRT_LANTERN_RESULT_RESP
+id (Rid 
+award (2
+.PRT_THINGRawardB
+com.next1b.nextsvr.protobproto3

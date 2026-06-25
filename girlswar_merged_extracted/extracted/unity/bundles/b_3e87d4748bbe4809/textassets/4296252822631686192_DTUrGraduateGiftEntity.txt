@@ -1,0 +1,28 @@
+local e={id=0,goods=0,type=0,buyCount=0,award={{},{}},name=""}
+e.__index=e
+function e.New(a,i,o,h,s,n)
+local t={}
+setmetatable(t,e)
+t.id=a
+t.goods=i
+t.type=o
+t.buyCount=h
+t.award=s
+t.name=n
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.goods=a[2]
+t.type=a[3]
+t.buyCount=a[4]
+t.award=a[5]
+t.name=a[6]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/activity/DTUrGraduateGiftEntityTableData')
+end
+return e 

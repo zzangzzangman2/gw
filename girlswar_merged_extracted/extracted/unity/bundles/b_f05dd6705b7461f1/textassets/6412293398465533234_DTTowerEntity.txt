@@ -1,0 +1,108 @@
+local a={id=0,name="",mapName="",roomPrefabId=0,roomConnect={{},{}},battlePrefabId=0,mosterName="",Icon="",level=0,mapType=0,subType=0,isPuzzle=0,nextMap={},needLevel=0,heroNum=0,unlockType=0,unlockPara="",unlockType2_old=0,unlockPara2_old="",unlockType2_new=0,unlockPara2_new="",starConditions={{},{}},monsterLists={},newMonsterLists={},score=0,suppress=0,enemy=0,npc=0,npcType=0,mine=0,npcDrop={{},{}},starDrop1={{},{}},starDrop2={{},{}},starDrop3={{},{}},starDrop1new={{},{}},starDrop2new={{},{}},starDrop3new={{},{}},starDrop2new2={{},{}},starDrop3new2={{},{}},idleGold=0,idleGoldNew=0,idleFame=0,idleTowerCoin=0,firstDropLoveFiveBox={{},{}},firstDropBoxWeek={{},{}},nextlevelPara={}}
+a.__index=a
+function a.New(p,_,x,t,H,R,N,S,I,E,T,A,O,L,W,U,B,P,V,Y,C,M,F,G,D,z,c,l,u,r,d,h,o,i,n,s,m,v,f,q,j,g,k,b,w,y)
+local e={}
+setmetatable(e,a)
+e.id=p
+e.name=_
+e.mapName=x
+e.roomPrefabId=t
+e.roomConnect=H
+e.battlePrefabId=R
+e.mosterName=N
+e.Icon=S
+e.level=I
+e.mapType=E
+e.subType=T
+e.isPuzzle=A
+e.nextMap=O
+e.needLevel=L
+e.heroNum=W
+e.unlockType=U
+e.unlockPara=B
+e.unlockType2_old=P
+e.unlockPara2_old=V
+e.unlockType2_new=Y
+e.unlockPara2_new=C
+e.starConditions=M
+e.monsterLists=F
+e.newMonsterLists=G
+e.score=D
+e.suppress=z
+e.enemy=c
+e.npc=l
+e.npcType=u
+e.mine=r
+e.npcDrop=d
+e.starDrop1=h
+e.starDrop2=o
+e.starDrop3=i
+e.starDrop1new=n
+e.starDrop2new=s
+e.starDrop3new=m
+e.starDrop2new2=v
+e.starDrop3new2=f
+e.idleGold=q
+e.idleGoldNew=j
+e.idleFame=g
+e.idleTowerCoin=k
+e.firstDropLoveFiveBox=b
+e.firstDropBoxWeek=w
+e.nextlevelPara=y
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.name=t[2]
+e.mapName=t[3]
+e.roomPrefabId=t[4]
+e.roomConnect=t[5]
+e.battlePrefabId=t[6]
+e.mosterName=t[7]
+e.Icon=t[8]
+e.level=t[9]
+e.mapType=t[10]
+e.subType=t[11]
+e.isPuzzle=t[12]
+e.nextMap=t[13]
+e.needLevel=t[14]
+e.heroNum=t[15]
+e.unlockType=t[16]
+e.unlockPara=t[17]
+e.unlockType2_old=t[18]
+e.unlockPara2_old=t[19]
+e.unlockType2_new=t[20]
+e.unlockPara2_new=t[21]
+e.starConditions=t[22]
+e.monsterLists=t[23]
+e.newMonsterLists=t[24]
+e.score=t[25]
+e.suppress=t[26]
+e.enemy=t[27]
+e.npc=t[28]
+e.npcType=t[29]
+e.mine=t[30]
+e.npcDrop=t[31]
+e.starDrop1=t[32]
+e.starDrop2=t[33]
+e.starDrop3=t[34]
+e.starDrop1new=t[35]
+e.starDrop2new=t[36]
+e.starDrop3new=t[37]
+e.starDrop2new2=t[38]
+e.starDrop3new2=t[39]
+e.idleGold=t[40]
+e.idleGoldNew=t[41]
+e.idleFame=t[42]
+e.idleTowerCoin=t[43]
+e.firstDropLoveFiveBox=t[44]
+e.firstDropBoxWeek=t[45]
+e.nextlevelPara=t[46]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/maps/DTTowerEntityTableData')
+end
+return a 

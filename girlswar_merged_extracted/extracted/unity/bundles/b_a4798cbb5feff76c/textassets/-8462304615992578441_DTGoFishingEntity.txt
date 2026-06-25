@@ -1,0 +1,38 @@
+local a={id=0,failAward={},failFishType={},fishingLow={},lowAward={},lowFishType={},fishingHigh={},highAward={},highFishType={},fishingBingo={},bingoReward={}}
+a.__index=a
+function a.New(n,r,s,t,l,u,c,d,h,o,i)
+local e={}
+setmetatable(e,a)
+e.id=n
+e.failAward=r
+e.failFishType=s
+e.fishingLow=t
+e.lowAward=l
+e.lowFishType=u
+e.fishingHigh=c
+e.highAward=d
+e.highFishType=h
+e.fishingBingo=o
+e.bingoReward=i
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.failAward=t[2]
+e.failFishType=t[3]
+e.fishingLow=t[4]
+e.lowAward=t[5]
+e.lowFishType=t[6]
+e.fishingHigh=t[7]
+e.highAward=t[8]
+e.highFishType=t[9]
+e.fishingBingo=t[10]
+e.bingoReward=t[11]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/worldMap/DTGoFishingEntityTableData')
+end
+return a 

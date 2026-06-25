@@ -1,0 +1,14 @@
+
+?
+ActFaceGift.proto"k
+PRT_FACE_GIFT
+giftDid (RgiftDid"
+endTimestamp (RendTimestamp
+	awardDids (R	awardDids"G
+PRT_FACE_GIFT_LOGIN_SYN,
+	faceGifts (2.PRT_FACE_GIFTR	faceGifts"C
+PRT_FACE_GIFT_NEW_SYN*
+faceGift (2.PRT_FACE_GIFTRfaceGift"C
+PRT_FACE_GIFT_PAY_SYN*
+faceGift (2.PRT_FACE_GIFTRfaceGiftB
+com.next1b.nextsvr.protobproto3

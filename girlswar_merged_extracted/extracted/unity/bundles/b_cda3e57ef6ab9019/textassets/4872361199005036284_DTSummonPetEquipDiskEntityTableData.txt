@@ -1,0 +1,10 @@
+local e=
+{
+ByIdx={
+{1,"PetEquipDiskName_01"},
+{2,"PetEquipDiskName_02"},
+{3,"PetEquipDiskName_03"}
+},
+Len=3
+}
+return e 

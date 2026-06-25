@@ -1,0 +1,11 @@
+local t={}
+function t:OnHandle(e)
+local e=assert(GlobalPB.decode("PRT_RING_HAREM_DOTE_RANDOM_RESP",e));
+if(GameInit.GetDebugLogProto())then
+;
+;
+end
+ModulesInit.MarryManager:OnMarryHeramDoteRandomResponse(e)
+return e
+end
+return t 

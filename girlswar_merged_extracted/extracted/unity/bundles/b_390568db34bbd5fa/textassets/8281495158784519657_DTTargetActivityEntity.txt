@@ -1,0 +1,32 @@
+local a={id=0,activityId=0,taskType=0,desc="",condition=0,num=0,award={{},{}},listId=0}
+a.__index=a
+function a.New(i,h,n,t,d,r,s,o)
+local e={}
+setmetatable(e,a)
+e.id=i
+e.activityId=h
+e.taskType=n
+e.desc=t
+e.condition=d
+e.num=r
+e.award=s
+e.listId=o
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.activityId=t[2]
+e.taskType=t[3]
+e.desc=t[4]
+e.condition=t[5]
+e.num=t[6]
+e.award=t[7]
+e.listId=t[8]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/calendar/DTTargetActivityEntityTableData')
+end
+return a 

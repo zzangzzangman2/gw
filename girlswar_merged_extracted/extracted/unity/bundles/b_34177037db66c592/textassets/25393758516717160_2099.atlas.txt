@@ -1,0 +1,5 @@
+2099.png
+size:1024,1024
+filter:Linear,Linear
+1
+bounds:0,0,712,1007

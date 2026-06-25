@@ -1,0 +1,42 @@
+local a={id=0,diceCost={},shopCost={},beginItem={},autoOpen={},goods=0,fundAward={},shopGril=0,iconographyProve=0,atlasId=0,awardShow={{},{}},jumpId=0,rankItem={{},{}}}
+a.__index=a
+function a.New(s,d,h,t,l,c,m,f,u,r,i,o,n)
+local e={}
+setmetatable(e,a)
+e.id=s
+e.diceCost=d
+e.shopCost=h
+e.beginItem=t
+e.autoOpen=l
+e.goods=c
+e.fundAward=m
+e.shopGril=f
+e.iconographyProve=u
+e.atlasId=r
+e.awardShow=i
+e.jumpId=o
+e.rankItem=n
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.diceCost=t[2]
+e.shopCost=t[3]
+e.beginItem=t[4]
+e.autoOpen=t[5]
+e.goods=t[6]
+e.fundAward=t[7]
+e.shopGril=t[8]
+e.iconographyProve=t[9]
+e.atlasId=t[10]
+e.awardShow=t[11]
+e.jumpId=t[12]
+e.rankItem=t[13]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/activity/DTFindMeEntityTableData')
+end
+return a 

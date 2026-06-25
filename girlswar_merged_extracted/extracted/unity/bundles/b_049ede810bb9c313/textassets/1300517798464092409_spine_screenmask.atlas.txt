@@ -1,0 +1,5 @@
+spine_screenmask.png
+size:32,32
+filter:Linear,Linear
+bai
+bounds:2,2,20,20

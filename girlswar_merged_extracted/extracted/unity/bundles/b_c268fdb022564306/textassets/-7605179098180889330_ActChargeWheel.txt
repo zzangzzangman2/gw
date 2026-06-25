@@ -1,0 +1,7 @@
+
+?
+ActChargeWheel.proto"
+PRT_CHARGE_WHEEL_INFO_REQ"8
+PRT_CHARGE_WHEEL_INFO_RESP
+leftTime (RleftTimeB
+com.next1b.nextsvr.protobproto3

@@ -1,0 +1,20 @@
+local e={id=0,upperlimit={}}
+e.__index=e
+function e.New(a,o)
+local t={}
+setmetatable(t,e)
+t.id=a
+t.upperlimit=o
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.upperlimit=a[2]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/activity/DTUWifeDailyLoginEntityTableData')
+end
+return e 

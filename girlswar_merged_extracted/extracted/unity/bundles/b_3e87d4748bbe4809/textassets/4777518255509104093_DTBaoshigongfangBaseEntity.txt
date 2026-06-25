@@ -1,0 +1,52 @@
+local a={id=0,refreshtime=0,goods={},shopCost={},buildCost={},speedCost={},refreshCost={},crossShowRankCount=0,rankItem={{},{}},conversion={{},{}},decomposeTimes=0,decomposeReward=0,synthesisID=0,synthesisCost={},guide_time=0,free_item={{},{}},autoSell=0,avgId=0}
+a.__index=a
+function a.New(d,c,l,t,f,m,y,v,p,b,w,u,n,i,o,s,r,h)
+local e={}
+setmetatable(e,a)
+e.id=d
+e.refreshtime=c
+e.goods=l
+e.shopCost=t
+e.buildCost=f
+e.speedCost=m
+e.refreshCost=y
+e.crossShowRankCount=v
+e.rankItem=p
+e.conversion=b
+e.decomposeTimes=w
+e.decomposeReward=u
+e.synthesisID=n
+e.synthesisCost=i
+e.guide_time=o
+e.free_item=s
+e.autoSell=r
+e.avgId=h
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.refreshtime=t[2]
+e.goods=t[3]
+e.shopCost=t[4]
+e.buildCost=t[5]
+e.speedCost=t[6]
+e.refreshCost=t[7]
+e.crossShowRankCount=t[8]
+e.rankItem=t[9]
+e.conversion=t[10]
+e.decomposeTimes=t[11]
+e.decomposeReward=t[12]
+e.synthesisID=t[13]
+e.synthesisCost=t[14]
+e.guide_time=t[15]
+e.free_item=t[16]
+e.autoSell=t[17]
+e.avgId=t[18]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/activity/DTBaoshigongfangBaseEntityTableData')
+end
+return a 

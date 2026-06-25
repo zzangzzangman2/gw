@@ -1,0 +1,304 @@
+
+?F
+ActSeaFishing.protoFriend.protoCommons.proto"?
+PRT_SEA_FISHING_PLYAER
+playerId (RplayerId
+level (Rlevel
+head (Rhead
+	headFrame (R	headFrame
+name (	Rname
+teamPos (RteamPos
+serverId (RserverId
+profile (Rprofile
+	guildName	 (	R	guildName7
+status
+ (2.ENUM_SEA_FISHING_PLAYER_STATUSRstatus
+
+fishPosDid (R
+fishPosDid
+	baitCount (R	baitCount,
+fishList (2.PRT_SEA_FISHINGRfishList&
+playerCatchNum (RplayerCatchNum 
+stage2Award (Rstage2Award 
+baitBuyCost (RbaitBuyCost"g
+PRT_SEA_FISHING_TEAM
+homeId (RhomeId7
+
+playerList (2.PRT_SEA_FISHING_PLYAERR
+playerList"I
+PRT_SEA_FISHING
+fishDid (RfishDid
+	fishCount (R	fishCount"?
+PRT_SEA_FISHING_HOME
+homeId (RhomeId5
+status (2.ENUM_SEA_FISHING_HOME_STATUSRstatus&
+statusOvertime (RstatusOvertime7
+
+playerList (2.PRT_SEA_FISHING_PLYAERR
+playerList"
+homeCatchNum (RhomeCatchNum"
+PRT_SEA_FISHING_INFO_REQ"?
+PRT_SEA_FISHING_INFO_RESP0
+status (2.ENUM_SEA_FISHING_STATUSRstatus&
+statusOvertime (RstatusOvertime
+awardNum (RawardNum"
+PRT_SEA_FISHING_TEAM_LIST_REQ"S
+PRT_SEA_FISHING_TEAM_LIST_RESP1
+teamList (2.PRT_SEA_FISHING_TEAMRteamList"!
+PRT_SEA_FISHING_HOME_CREATE_REQ"M
+ PRT_SEA_FISHING_HOME_CREATE_RESP)
+home (2.PRT_SEA_FISHING_HOMERhome"7
+PRT_SEA_FISHING_HOME_JOIN_REQ
+homeId (RhomeId"K
+PRT_SEA_FISHING_HOME_JOIN_RESP)
+home (2.PRT_SEA_FISHING_HOMERhome"E
+PRT_SEA_FISHING_HOME_SYN)
+home (2.PRT_SEA_FISHING_HOMERhome"%
+#PRT_SEA_FISHING_HOME_QUICK_JOIN_REQ"Q
+$PRT_SEA_FISHING_HOME_QUICK_JOIN_RESP)
+home (2.PRT_SEA_FISHING_HOMERhome";
+!PRT_SEA_FISHING_HOME_DISSOLVE_REQ
+homeId (RhomeId"<
+"PRT_SEA_FISHING_HOME_DISSOLVE_RESP
+homeId (RhomeId"}
+"PRT_SEA_FISHING_HOME_KICK_SELF_SYN
+homeId (RhomeId?
+status (2'.ENUM_SEA_FISHING_HOME_KICK_SELF_STATUSRstatus"I
+PRT_SEA_FISHING_HOME_KICK_REQ
+homeId (RhomeId
+pos (Rpos"J
+PRT_SEA_FISHING_HOME_KICK_RESP
+homeId (RhomeId
+pos (Rpos"7
+PRT_SEA_FISHING_HOME_QUIT_REQ
+homeId (RhomeId"8
+PRT_SEA_FISHING_HOME_QUIT_RESP
+homeId (RhomeId"N
+PRT_SEA_FISHING_HOME_READY_REQ
+homeId (RhomeId
+ready (Rready"O
+PRT_SEA_FISHING_HOME_READY_RESP
+homeId (RhomeId
+ready (Rready"B
+$PRT_SEA_FISHING_HOME_INTERACTIVE_REQ
+playerId (RplayerId"C
+%PRT_SEA_FISHING_HOME_INTERACTIVE_RESP
+isFriend (RisFriend"9
+PRT_SEA_FISHING_FRIEND_LIST_REQ
+homeId (RhomeId"u
+ PRT_SEA_FISHING_FRIEND_LIST_RESP%
+friends (2.PRT_FRIENDRfriends*
+invitedPlayerIds (RinvitedPlayerIds"W
+!PRT_SEA_FISHING_FRIEND_INVITE_REQ
+homeId (RhomeId
+playerId (RplayerId"?
+"PRT_SEA_FISHING_FRIEND_INVITE_RESP
+homeId (RhomeId
+playerId (RplayerId*
+invitedPlayerIds (RinvitedPlayerIds"?
+!PRT_SEA_FISHING_FRIEND_INVITE_SYN
+homeId (RhomeId
+
+sourceName (	R
+sourceName
+level (Rlevel
+head (Rhead
+	headFrame (R	headFrame"?
+%PRT_SEA_FISHING_CHAT_GUILD_INVITE_REQ
+homeId (RhomeId"@
+&PRT_SEA_FISHING_CHAT_GUILD_INVITE_RESP
+homeId (RhomeId"?
+%PRT_SEA_FISHING_CHAT_WOLRD_INVITE_REQ
+homeId (RhomeId"@
+&PRT_SEA_FISHING_CHAT_WOLRD_INVITE_RESP
+homeId (RhomeId"4
+PRT_SEA_FISHING_PROMPT_REQ
+homeId (RhomeId"5
+PRT_SEA_FISHING_PROMPT_RESP
+homeId (RhomeId"4
+PRT_SEA_FISHING_PROMPT_SYN
+homeId (RhomeId"3
+PRT_SEA_FISHING_MATCH_REQ
+homeId (RhomeId"4
+PRT_SEA_FISHING_MATCH_RESP
+homeId (RhomeId":
+ PRT_SEA_FISHING_MATCH_CANCEL_REQ
+homeId (RhomeId";
+!PRT_SEA_FISHING_MATCH_CANCEL_RESP
+homeId (RhomeId"J
+PRT_SEA_FISHING_MATCH_SUC_SYN)
+home (2.PRT_SEA_FISHING_HOMERhome"3
+PRT_SEA_FISHING_START_REQ
+homeId (RhomeId"4
+PRT_SEA_FISHING_START_RESP
+homeId (RhomeId":
+ PRT_SEA_FISHING_STAGE1_ENTER_REQ
+homeId (RhomeId";
+!PRT_SEA_FISHING_STAGE1_ENTER_RESP
+homeId (RhomeId"R
+$PRT_SEA_FISHING_STAGE1_ENTER_SUC_SYN
+homeId (RhomeId
+name (	Rname"L
+PRT_SEA_FISHING_STATE1_OPEN_SYN)
+home (2.PRT_SEA_FISHING_HOMERhome"X
+PRT_SEA_FISHING_SELECT_POS_REQ
+homeId (RhomeId
+
+fishPosDid (R
+fishPosDid"Y
+PRT_SEA_FISHING_SELECT_POS_RESP
+homeId (RhomeId
+
+fishPosDid (R
+fishPosDid"W
+PRT_SEA_FISHING_LEAVE_POS_REQ
+homeId (RhomeId
+
+fishPosDid (R
+fishPosDid"X
+PRT_SEA_FISHING_LEAVE_POS_RESP
+homeId (RhomeId
+
+fishPosDid (R
+fishPosDid"X
+PRT_SEA_FISHING_SWITCH_POS_REQ
+homeId (RhomeId
+
+fishPosDid (R
+fishPosDid"Y
+PRT_SEA_FISHING_SWITCH_POS_RESP
+homeId (RhomeId
+
+fishPosDid (R
+fishPosDid"3
+PRT_SEA_FISHING_PITCH_REQ
+homeId (RhomeId"N
+PRT_SEA_FISHING_PITCH_RESP
+homeId (RhomeId
+fishDid (RfishDid"N
+PRT_SEA_FISHING_FINISH_REQ
+homeId (RhomeId
+success (Rsuccess"i
+PRT_SEA_FISHING_FINISH_RESP
+homeId (RhomeId
+success (Rsuccess
+fishDid (RfishDid"?
+PRT_SEA_FISHING_FINISH_SYN
+fishDid (RfishDid)
+home (2.PRT_SEA_FISHING_HOMERhome
+
+fishPosDid (R
+fishPosDid
+homeId (RhomeId"
+fishPlayerId (RfishPlayerId"N
+PRT_SEA_FISHING_BAIT_BUY_REQ
+homeId (RhomeId
+isSelf (RisSelf"O
+PRT_SEA_FISHING_BAIT_BUY_RESP
+homeId (RhomeId
+isSelf (RisSelf"2
+PRT_SEA_FISHING_QUIT_REQ
+homeId (RhomeId"3
+PRT_SEA_FISHING_QUIT_RESP
+homeId (RhomeId"f
+PRT_SEA_FISHING_STAGE1_OVER_SYN
+success (Rsuccess)
+home (2.PRT_SEA_FISHING_HOMERhome":
+ PRT_SEA_FISHING_STAGE2_ENTER_REQ
+homeId (RhomeId";
+!PRT_SEA_FISHING_STAGE2_ENTER_RESP
+homeId (RhomeId"R
+$PRT_SEA_FISHING_STAGE2_ENTER_SUC_SYN
+name (	Rname
+homeId (RhomeId"L
+PRT_SEA_FISHING_STATE2_OPEN_SYN)
+home (2.PRT_SEA_FISHING_HOMERhome"O
+PRT_SEA_FISHING_CATCH_REQ
+homeId (RhomeId
+catchNum (RcatchNum"?
+PRT_SEA_FISHING_CATCH_RESP
+homeId (RhomeId
+catchNum (RcatchNum"
+homeCatchNum (RhomeCatchNum
+
+fishPosDid (R
+fishPosDid"?
+PRT_SEA_FISHING_CATCH_SYN
+homeId (RhomeId
+name (	Rname&
+playerCatchNum (RplayerCatchNum"
+homeCatchNum (RhomeCatchNum
+
+fishPosDid (R
+fishPosDid"?
+PRT_SEA_FISHING_STAGE2_OVER_SYN
+success (Rsuccess)
+home (2.PRT_SEA_FISHING_HOMERhome
+	friendIds (R	friendIds
+homeId (RhomeId"H
+PRT_SEA_FISHING_LIMIT_EXCHANGE
+did (Rdid
+count (Rcount"&
+$PRT_SEA_FISHING_LIMIT_AWARD_INFO_REQ"?
+%PRT_SEA_FISHING_LIMIT_AWARD_INFO_RESP
+fishDid (RfishDid
+	fishCount (R	fishCountC
+exchangeList (2.PRT_SEA_FISHING_LIMIT_EXCHANGERexchangeList";
+'PRT_SEA_FISHING_LIMIT_AWARD_EXCHANG_REQ
+did (Rdid"?
+(PRT_SEA_FISHING_LIMIT_AWARD_EXCHANG_RESP
+fishDid (RfishDid
+	fishCount (R	fishCountC
+exchangeList (2.PRT_SEA_FISHING_LIMIT_EXCHANGERexchangeList"h
+PRT_SEA_FISHING_TASK
+taskDid (RtaskDid
+progress (Rprogress
+received (Rreceived"
+PRT_SEA_FISHING_TASK_INFO_REQ"S
+PRT_SEA_FISHING_TASK_INFO_RESP1
+taskList (2.PRT_SEA_FISHING_TASKRtaskList"<
+ PRT_SEA_FISHING_TASK_RECEIVE_REQ
+taskDid (RtaskDid"N
+!PRT_SEA_FISHING_TASK_RECEIVE_RESP)
+task (2.PRT_SEA_FISHING_TASKRtask"2
+PRT_SEA_FISHING_HOME_REQ
+homeId (RhomeId"F
+PRT_SEA_FISHING_HOME_RESP)
+home (2.PRT_SEA_FISHING_HOMERhome";
+PRT_SEA_FISHING_CHANGE_AI_REQ
+playerId (RplayerId"j
+!PRT_SEA_FISHING_CS_RED_POINT_RESP
+playerId (RplayerId)
+redIds (2.ENUM_REDPOINT_IDRredIds*?
+ENUM_SEA_FISHING_STATUS
+SEA_FISHING_STATUS_NONE 
+SEA_FISHING_STATUS_WAITING
+SEA_FISHING_STATUS_OPEN
+SEA_FISHING_STATUS_AWARD*?
+ENUM_SEA_FISHING_PLAYER_STATUS"
+SEA_FISHING_PLAYER_STATUS_NONE $
+ SEA_FISHING_PLAYER_STATUS_NORMAL#
+SEA_FISHING_PLAYER_STATUS_READY*
+&SEA_FISHING_PLAYER_STATUS_STAGE1_READY)
+%SEA_FISHING_PLAYER_STATUS_STAGE1_WAIT)
+%SEA_FISHING_PLAYER_STATUS_STAGE1_FISH 
+SEA_FISHING_PLAYER_STATUS_AI*
+&SEA_FISHING_PLAYER_STATUS_STAGE2_READY)
+%SEA_FISHING_PLAYER_STATUS_STAGE2_FISH*?
+ENUM_SEA_FISHING_HOME_STATUS%
+!ENUM_SEA_FISHING_HOME_STATUS_NONE '
+#ENUM_SEA_FISHING_HOME_STATUS_NORMAL&
+"ENUM_SEA_FISHING_HOME_STATUS_MATCH-
+)ENUM_SEA_FISHING_HOME_STATUS_STAGE1_READY,
+(ENUM_SEA_FISHING_HOME_STATUS_STAGE1_FISH,
+(ENUM_SEA_FISHING_HOME_STATUS_STAGE1_OVER-
+)ENUM_SEA_FISHING_HOME_STATUS_STAGE2_READY,
+(ENUM_SEA_FISHING_HOME_STATUS_STAGE2_FISH,
+(ENUM_SEA_FISHING_HOME_STATUS_STAGE2_OVER*?
+&ENUM_SEA_FISHING_HOME_KICK_SELF_STATUS/
++ENUM_SEA_FISHING_HOME_KICK_SELF_STATUS_NONE /
++ENUM_SEA_FISHING_HOME_KICK_SELF_STATUS_KICK2
+.ENUM_SEA_FISHING_HOME_KICK_SELF_STATUS_DISBAND3
+/ENUM_SEA_FISHING_HOME_KICK_SELF_STATUS_MATCHSUC/
++ENUM_SEA_FISHING_HOME_KICK_SELF_STATUS_OVERB
+com.next1b.nextsvr.protobproto3

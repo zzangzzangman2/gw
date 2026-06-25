@@ -1,0 +1,5 @@
+Painting_1022_Front.png
+size:1024,1024
+filter:Linear,Linear
+effect/cloud2
+bounds:2,2,512,512

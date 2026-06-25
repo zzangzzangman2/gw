@@ -1,0 +1,28 @@
+local e={id=0,name="",firstReward={},receiptType=0,commonReward={{},{}},weightReward={{},{}}}
+e.__index=e
+function e.New(a,i,o,h,s,n)
+local t={}
+setmetatable(t,e)
+t.id=a
+t.name=i
+t.firstReward=o
+t.receiptType=h
+t.commonReward=s
+t.weightReward=n
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.name=a[2]
+t.firstReward=a[3]
+t.receiptType=a[4]
+t.commonReward=a[5]
+t.weightReward=a[6]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/burning/DTBurningMapsRewardsEntityTableData')
+end
+return e 

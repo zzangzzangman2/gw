@@ -1,0 +1,7 @@
+2244.png
+size:1024,512
+filter:Linear,Linear
+scale:0.18
+1
+bounds:0,0,1016,500
+offsets:53,0,1080,630

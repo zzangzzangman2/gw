@@ -1,0 +1,10 @@
+local e=
+{
+ByIdx={
+{26105,1,"newMakterSuitItemTitle_1","xstzbg1",1},
+{26106,1,"newMakterSuitItemTitle_2","xstzbg2",2},
+{26107,1,"newMakterSuitItemTitle_3","xstzbg3",3}
+},
+Len=3
+}
+return e 

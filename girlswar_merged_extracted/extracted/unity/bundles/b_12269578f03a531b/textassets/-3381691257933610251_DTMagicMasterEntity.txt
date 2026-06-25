@@ -1,0 +1,26 @@
+local e={id=0,allHp=0,allAtk=0,allDef=0,allAttr={{},{}}}
+e.__index=e
+function e.New(o,n,a,s,i)
+local t={}
+setmetatable(t,e)
+t.id=o
+t.allHp=n
+t.allAtk=a
+t.allDef=s
+t.allAttr=i
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.allHp=a[2]
+t.allAtk=a[3]
+t.allDef=a[4]
+t.allAttr=a[5]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/equip/DTMagicMasterEntityTableData')
+end
+return e 

@@ -1,0 +1,103 @@
+local o={}
+local e={
+AST_NONE=0,
+BATTLE_PUT_UP=1,
+BATTLE_MAP=2,
+FAST_MAP=3,
+ACT_CHARGEWHEEL=11
+}
+function o:OnHandle(e)
+local e=assert(GlobalPB.decode("PRT_AWARD_SYN",e))
+if(GameInit.GetDebugLogProto())then
+
+
+end
+ModulesInit.ProcedureNormalBattle.IsRespBattleSuc=true
+local o=e.isOrchardAddGold
+local i=false
+if e.award then
+if e.award.sourceType==PROTO_ENUM.ENUM_AWARD_SOURCE_TYPE.CHARGE_WHEEL then
+local t=e.award.chargeData
+local a={}
+for t=1,#e.award.rewardThings do
+local e=e.award.rewardThings[t]
+table.add(a,{itemDid=e.thingDid,count=e.thingCount,itemId=e.thingId,magicType=e.magicType})
+end
+if#a<=0 then
+GameInit.LogError("服务器发过来的：奖励获得---------------没有物品")
+end
+if not GameEntry.UI:IsExists(UIFormId.UI_ActChargeWheelMain)then
+GameEntry.UI:OpenUIForm(UIFormId.UI_ActChargeWheelMain,{chargeId=t.chargeDid,rate=t.rate,infos=a})
+else
+EventSystem.SendEvent(CommonEventId.ActChargeWheelMainShow,{chargeId=t.chargeDid,rate=t.rate,infos=a})
+end
+elseif e.award.sourceType==PROTO_ENUM.ENUM_AWARD_SOURCE_TYPE.UPGRAGE_DISCOUNT_PACK then
+local a=e.award.chargeData
+local t={}
+for a=1,#e.award.rewardThings do
+local e=e.award.rewardThings[a]
+table.add(t,{itemDid=e.thingDid,count=e.thingCount,itemId=e.thingId,magicType=e.magicType})
+end
+if#t<=0 then
+GameInit.LogError("服务器发过来的：奖励获得---------------没有物品")
+end
+local n=require('DataNode/DataTable/Create/activity/DTUpgradeDiscountPackDBModel')
+local n=n.GetEntity(a.chargeDid)
+local a=require("Modules/Act/ActUpgradeDiscountPack/ActUpgradeDiscountPackMgr")
+local a=a:getActivityPoint(n)
+if a>0 then
+local e=e.award.chargeData.rate and math.floor(tonumber(e.award.chargeData.rate)/100)or 1
+table.add(t,{itemDid=20994,count=tonumber(a)*e,itemId=20994})
+end
+GameEntry.UI:OpenUIForm(UIFormId.UI_RewardsShow,{infos=t,isOrchardAddGold=o,isOrchardAddSeasonEquip=i})
+elseif e.award.sourceType==PROTO_ENUM.ENUM_AWARD_SOURCE_TYPE.BATTLE_MAP then
+local t=ModulesInit.ExpeditionManager.FightClearState
+local e=ModulesInit.ExpeditionManager.FightClearInfo
+if t then
+PlayerMgr:AddFuncOpenTips()
+EventSystem.SendEvent(CommonEventId.OnReStartGuide,{event="FIGHT_BATTLE_VICTORY"})
+ModulesInit.FormationManager:CopyFormationDataToServer(PROTO_ENUM.FormationNO.FN_MAIN,PROTO_ENUM.FormationNO.FN_IDLE)
+GameEntry.UI:OpenUIForm(UIFormId.UI_BattleVictory,e)
+end
+elseif e.award.sourceType==PROTO_ENUM.ENUM_AWARD_SOURCE_TYPE.AST_BOX_WEEK_BOX then
+EventSystem.SendEvent(CommonEventId.OnDelayItemTips,e)
+elseif e.award.sourceType==PROTO_ENUM.ENUM_AWARD_SOURCE_TYPE.FLOWER then
+EventSystem.SendEvent(CommonEventId.OnDelayItemTips,e)
+elseif e.award.sourceType==PROTO_ENUM.ENUM_AWARD_SOURCE_TYPE.ACT_BUBBLE_THREE_AWARD then
+if GameEntry.UI:IsExists(UIFormId.UI_ActBubbleMainThree)then
+local t={}
+for a=1,#e.award.rewardThings do
+local e=e.award.rewardThings[a]
+table.add(t,{itemDid=e.thingDid,count=e.thingCount,itemId=e.thingId,magicType=e.magicType})
+end
+ModulesInit.ActBubbleThreeMgr:SetShowAward(t)
+else
+UIUtil.ShowServerAward(e)
+end
+elseif e.award.sourceType==PROTO_ENUM.ENUM_AWARD_SOURCE_TYPE.ACT_BUBBLE_FOUR_AWARD then
+if GameEntry.UI:IsExists(UIFormId.UI_ActBubbleMainFour)then
+local t={}
+for a=1,#e.award.rewardThings do
+local e=e.award.rewardThings[a]
+table.add(t,{itemDid=e.thingDid,count=e.thingCount,itemId=e.thingId,magicType=e.magicType})
+end
+ModulesInit.ActBubbleFourMgr:SetShowAward(t)
+else
+UIUtil.ShowServerAward(e)
+end
+elseif e.award.sourceType==PROTO_ENUM.ENUM_AWARD_SOURCE_TYPE.MAIN_QUEST then
+else
+if e.award.sourceType==PROTO_ENUM.ENUM_AWARD_SOURCE_TYPE.ACT_RANCHES_BOX_AWARD then
+local e=CS.DG.Tweening.DOTween.Sequence()
+e:AppendInterval(0.3)
+e:AppendCallback(function()
+GameTools:PlayAudioLua(730)
+end)
+end
+UIUtil.ShowServerAward(e)
+end
+EventSystem.SendEvent(CommonEventId.OnActivePetDids,e.award.activePetDids)
+end
+end
+return o
+

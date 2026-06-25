@@ -1,0 +1,7 @@
+activityname_417.png
+size:128,128
+filter:Linear,Linear
+zy1
+bounds:0,0,79,33
+zy2
+bounds:0,34,83,84

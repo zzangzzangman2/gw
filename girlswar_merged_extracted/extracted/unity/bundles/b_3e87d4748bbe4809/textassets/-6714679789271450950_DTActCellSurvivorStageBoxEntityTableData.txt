@@ -1,0 +1,19 @@
+local e=
+{
+ByIdx={
+{101,"actGhost_box_1","Assets/Download/ArtSources/UISpriteRes/UIActCellSuvivorGame/qmzs_xz1.png",101,1},
+{102,"actGhost_box_2","Assets/Download/ArtSources/UISpriteRes/UIActCellSuvivorGame/qmzs_xz2.png",102,1},
+{103,"actGhost_box_3","Assets/Download/ArtSources/UISpriteRes/UIActCellSuvivorGame/qmzs_xz3.png",103,2},
+{104,"actGhost_box_1","Assets/Download/ArtSources/UISpriteRes/UIActCellSuvivorGame/qmzs_xz1.png",104,1},
+{105,"actGhost_box_2","Assets/Download/ArtSources/UISpriteRes/UIActCellSuvivorGame/qmzs_xz2.png",105,1},
+{106,"actGhost_box_3","Assets/Download/ArtSources/UISpriteRes/UIActCellSuvivorGame/qmzs_xz3.png",106,2},
+{107,"actGhost_box_1","Assets/Download/ArtSources/UISpriteRes/UIActCellSuvivorGame/qmzs_xz1.png",107,1},
+{108,"actGhost_box_2","Assets/Download/ArtSources/UISpriteRes/UIActCellSuvivorGame/qmzs_xz2.png",108,1},
+{109,"actGhost_box_3","Assets/Download/ArtSources/UISpriteRes/UIActCellSuvivorGame/qmzs_xz3.png",109,2},
+{201,"actGhost_box_1","Assets/Download/ArtSources/UISpriteRes/UIActCellSuvivorGame/qmzs_xz1.png",201,1},
+{202,"actGhost_box_2","Assets/Download/ArtSources/UISpriteRes/UIActCellSuvivorGame/qmzs_xz2.png",202,1},
+{203,"actGhost_box_3","Assets/Download/ArtSources/UISpriteRes/UIActCellSuvivorGame/qmzs_xz3.png",203,2}
+},
+Len=12
+}
+return e 

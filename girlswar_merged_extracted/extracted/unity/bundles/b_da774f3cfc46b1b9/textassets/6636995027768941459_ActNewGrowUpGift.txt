@@ -1,0 +1,7 @@
+
+?
+ActNewGrowUpGift.proto"
+PRT_NEW_GROW_UP_GIFT_INFO_REQ":
+PRT_NEW_GROW_UP_GIFT_INFO_RESP
+endTime (RendTimeB
+com.next1b.nextsvr.protobproto3

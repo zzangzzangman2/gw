@@ -1,0 +1,6 @@
+2240.png
+size:512,128
+filter:Linear,Linear
+scale:0.28
+bat
+bounds:0,0,300,123

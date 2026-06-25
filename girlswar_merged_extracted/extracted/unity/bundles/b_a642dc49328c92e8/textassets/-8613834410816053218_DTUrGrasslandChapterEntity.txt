@@ -1,0 +1,44 @@
+local a={id=0,activityType=0,chapterId=0,previousChapter=0,type=0,sectionAward={{},{}},scoreHp=0,scoreAtk=0,isMopUp=0,consumeMopUp=0,showEventId="",sweepRewards={{},{}},nameChapter="",mapPrefabId=""}
+a.__index=a
+function a.New(s,l,r,t,u,m,f,w,c,d,i,o,n,h)
+local e={}
+setmetatable(e,a)
+e.id=s
+e.activityType=l
+e.chapterId=r
+e.previousChapter=t
+e.type=u
+e.sectionAward=m
+e.scoreHp=f
+e.scoreAtk=w
+e.isMopUp=c
+e.consumeMopUp=d
+e.showEventId=i
+e.sweepRewards=o
+e.nameChapter=n
+e.mapPrefabId=h
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.activityType=t[2]
+e.chapterId=t[3]
+e.previousChapter=t[4]
+e.type=t[5]
+e.sectionAward=t[6]
+e.scoreHp=t[7]
+e.scoreAtk=t[8]
+e.isMopUp=t[9]
+e.consumeMopUp=t[10]
+e.showEventId=t[11]
+e.sweepRewards=t[12]
+e.nameChapter=t[13]
+e.mapPrefabId=t[14]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/urgrassland/DTUrGrasslandChapterEntityTableData')
+end
+return a 

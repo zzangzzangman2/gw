@@ -1,0 +1,24 @@
+local e={id=0,prefabId=0,jump=0,countDownShow=0}
+e.__index=e
+function e.New(o,a,n,i)
+local t={}
+setmetatable(t,e)
+t.id=o
+t.prefabId=a
+t.jump=n
+t.countDownShow=i
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.prefabId=a[2]
+t.jump=a[3]
+t.countDownShow=a[4]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/activity/DTLiandongMainEntityTableData')
+end
+return e 

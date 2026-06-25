@@ -1,0 +1,12 @@
+Painting_1012_Front.png
+size:1024,1024
+filter:Linear,Linear
+bgb6
+bounds:94,41,372,492
+rotate:180
+bgb7
+bounds:2,2,608,720
+offsets:0,0,1680,720
+bgb8
+bounds:468,312,353,164
+rotate:90

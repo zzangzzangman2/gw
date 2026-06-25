@@ -1,0 +1,10 @@
+local e=
+{
+ByIdx={
+{1,{0,29},"",0,"DragonActBossGirl_01,DragonActBossGirl_02","DragonActBossGirl_07,DragonActBossGirl_08"},
+{2,{30,69},"",15,"DragonActBossGirl_03,DragonActBossGirl_04","DragonActBossGirl_09,DragonActBossGirl_10"},
+{3,{70,100},"",40,"DragonActBossGirl_05,DragonActBossGirl_06","DragonActBossGirl_11,DragonActBossGirl_12"}
+},
+Len=3
+}
+return e 

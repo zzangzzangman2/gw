@@ -1,0 +1,17 @@
+local e={}
+e.__index=e
+function e.Init()
+e.indexData={}
+e.indexData['index_1']={}
+e.indexData['index_1']['1']={10001,10101,10102,10103,10104,10105}
+e.indexData['index_1']['2']={20001,20101,20102,20103,20104,20105}
+end
+function e.GetByIndex(t,a)
+if e.indexData[t]and e.indexData[t][a]then
+return e.indexData[t][a]
+else
+return{}
+end
+end
+return e
+

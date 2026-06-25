@@ -1,0 +1,24 @@
+local e={id=0,award={},chargeAward={},chargeAwardShow={}}
+e.__index=e
+function e.New(o,a,n,i)
+local t={}
+setmetatable(t,e)
+t.id=o
+t.award=a
+t.chargeAward=n
+t.chargeAwardShow=i
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.award=a[2]
+t.chargeAward=a[3]
+t.chargeAwardShow=a[4]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/activity/DTFootBallFundEntityTableData')
+end
+return e 

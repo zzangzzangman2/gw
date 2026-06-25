@@ -1,0 +1,7 @@
+next.png
+size:128,64
+filter:Linear,Linear
+jiantou
+bounds:83,0,41,53
+next
+bounds:0,20,81,33

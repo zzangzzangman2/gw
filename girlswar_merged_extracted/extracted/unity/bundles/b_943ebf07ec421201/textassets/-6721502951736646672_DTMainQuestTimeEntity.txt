@@ -1,0 +1,22 @@
+local e={id=0,time="",level=0}
+e.__index=e
+function e.New(o,a,i)
+local t={}
+setmetatable(t,e)
+t.id=o
+t.time=a
+t.level=i
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.time=a[2]
+t.level=a[3]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/shouhu/DTMainQuestTimeEntityTableData')
+end
+return e 

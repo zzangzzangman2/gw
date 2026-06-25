@@ -1,0 +1,38 @@
+local a={id=0,optionDesc="",optionResult="",optionFunc=0,optionParam={{},{}},optionFunc2=0,optionParam2={{},{}},optionFunc3=0,optionParam3={{},{}},nextOptionTrigger=0,nextOption={}}
+a.__index=a
+function a.New(n,r,s,t,l,u,c,d,h,o,i)
+local e={}
+setmetatable(e,a)
+e.id=n
+e.optionDesc=r
+e.optionResult=s
+e.optionFunc=t
+e.optionParam=l
+e.optionFunc2=u
+e.optionParam2=c
+e.optionFunc3=d
+e.optionParam3=h
+e.nextOptionTrigger=o
+e.nextOption=i
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.optionDesc=t[2]
+e.optionResult=t[3]
+e.optionFunc=t[4]
+e.optionParam=t[5]
+e.optionFunc2=t[6]
+e.optionParam2=t[7]
+e.optionFunc3=t[8]
+e.optionParam3=t[9]
+e.nextOptionTrigger=t[10]
+e.nextOption=t[11]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/maze/DTMazeEventOptionEntityTableData')
+end
+return a 

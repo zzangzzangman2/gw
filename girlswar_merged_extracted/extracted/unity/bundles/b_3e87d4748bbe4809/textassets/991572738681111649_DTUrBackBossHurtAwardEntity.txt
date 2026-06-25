@@ -1,0 +1,26 @@
+local e={id=0,type=0,hurtNum=0,award={{},{}},desc=""}
+e.__index=e
+function e.New(o,n,a,s,i)
+local t={}
+setmetatable(t,e)
+t.id=o
+t.type=n
+t.hurtNum=a
+t.award=s
+t.desc=i
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.type=a[2]
+t.hurtNum=a[3]
+t.award=a[4]
+t.desc=a[5]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/activity/DTUrBackBossHurtAwardEntityTableData')
+end
+return e 

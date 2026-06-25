@@ -1,0 +1,8 @@
+local e=
+{
+ByIdx={
+{1,314159265,314159265,2,"DUMVOICE_{HEROID}","{HEROID}","{MARRYHEROHEADID}"}
+},
+Len=1
+}
+return e 

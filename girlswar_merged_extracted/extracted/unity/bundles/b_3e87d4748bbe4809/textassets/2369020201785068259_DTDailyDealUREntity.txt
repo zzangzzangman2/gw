@@ -1,0 +1,30 @@
+local t={id=0,goods=0,charge={},packageType=0,addAward={{},{}},rechargeGet={{},{}},giftInfo=0}
+t.__index=t
+function t.New(o,h,a,s,r,n,i)
+local e={}
+setmetatable(e,t)
+e.id=o
+e.goods=h
+e.charge=a
+e.packageType=s
+e.addAward=r
+e.rechargeGet=n
+e.giftInfo=i
+return e
+end
+function t.NewFromArrItem(a)
+local e={}
+setmetatable(e,t)
+e.id=a[1]
+e.goods=a[2]
+e.charge=a[3]
+e.packageType=a[4]
+e.addAward=a[5]
+e.rechargeGet=a[6]
+e.giftInfo=a[7]
+return e
+end
+function t.GetArr()
+return require('DataNode/DataTable/Create/activity/DTDailyDealUREntityTableData')
+end
+return t 

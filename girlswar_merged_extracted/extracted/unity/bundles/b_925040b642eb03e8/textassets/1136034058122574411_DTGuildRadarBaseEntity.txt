@@ -1,0 +1,30 @@
+local t={id=0,freeStayTime=0,airNum=0,armyStayTime=0,refreshDistance={},airSpeed=0,showAwards={}}
+t.__index=t
+function t.New(o,h,a,s,r,n,i)
+local e={}
+setmetatable(e,t)
+e.id=o
+e.freeStayTime=h
+e.airNum=a
+e.armyStayTime=s
+e.refreshDistance=r
+e.airSpeed=n
+e.showAwards=i
+return e
+end
+function t.NewFromArrItem(a)
+local e={}
+setmetatable(e,t)
+e.id=a[1]
+e.freeStayTime=a[2]
+e.airNum=a[3]
+e.armyStayTime=a[4]
+e.refreshDistance=a[5]
+e.airSpeed=a[6]
+e.showAwards=a[7]
+return e
+end
+function t.GetArr()
+return require('DataNode/DataTable/Create/guild/DTGuildRadarBaseEntityTableData')
+end
+return t 

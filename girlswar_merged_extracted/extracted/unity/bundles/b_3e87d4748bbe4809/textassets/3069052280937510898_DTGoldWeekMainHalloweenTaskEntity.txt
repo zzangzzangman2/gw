@@ -1,0 +1,30 @@
+local t={id=0,type=0,limtTime_1={},awardPoint={{},{}},jump=0,name="",day=0}
+t.__index=t
+function t.New(o,h,a,s,r,n,i)
+local e={}
+setmetatable(e,t)
+e.id=o
+e.type=h
+e.limtTime_1=a
+e.awardPoint=s
+e.jump=r
+e.name=n
+e.day=i
+return e
+end
+function t.NewFromArrItem(a)
+local e={}
+setmetatable(e,t)
+e.id=a[1]
+e.type=a[2]
+e.limtTime_1=a[3]
+e.awardPoint=a[4]
+e.jump=a[5]
+e.name=a[6]
+e.day=a[7]
+return e
+end
+function t.GetArr()
+return require('DataNode/DataTable/Create/activity/DTGoldWeekMainHalloweenTaskEntityTableData')
+end
+return t 

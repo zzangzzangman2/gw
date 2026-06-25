@@ -1,0 +1,10 @@
+local e={}
+function e:OnHandle(e)
+local e=assert(GlobalPB.decode("PRT_MULTI_ELITE_BATTLE_STATE_SYN",e));
+if(GameInit.GetDebugLogProto())then
+;
+;
+end
+ModulesInit.KillDragonsManager:OnRoomStateSync(e)
+end
+return e 

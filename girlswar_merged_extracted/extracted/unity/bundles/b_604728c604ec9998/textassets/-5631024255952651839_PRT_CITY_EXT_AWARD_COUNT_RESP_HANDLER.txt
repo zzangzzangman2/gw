@@ -1,0 +1,10 @@
+local e={}
+function e:OnHandle(e)
+local e=assert(GlobalPB.decode("PRT_CITY_EXT_AWARD_COUNT_RESP",e));
+if(GameInit.GetDebugLogProto())then
+;
+;
+end
+ModulesInit.VIPMgr:OnExtraClaim(e)
+end
+return e 

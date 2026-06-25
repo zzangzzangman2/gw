@@ -1,0 +1,22 @@
+
+?
+ActWeekGroupFun.proto"?
+PRT_ACT_WEEK_GROUP_FUN
+	groupType (R	groupType
+endTimer (RendTimer$
+freeRewardIds (RfreeRewardIds"
+buyRewardIds (RbuyRewardIds"
+canRewardIds (RcanRewardIds"
+PRT_WEEK_GROUP_FUN_LIST_REQ"u
+PRT_WEEK_GROUP_FUN_LIST_RESP1
+funList (2.PRT_ACT_WEEK_GROUP_FUNRfunList"
+buyGroupType (RbuyGroupType"k
+PRT_REWARD_WEEK_GROUP_FUN_REQ
+	groupType (R	groupType
+funDid (RfunDid
+isBuy (RisBuy"l
+PRT_REWARD_WEEK_GROUP_FUN_RESP
+	groupType (R	groupType
+funDid (RfunDid
+isBuy (RisBuyB
+com.next1b.nextsvr.protobproto3

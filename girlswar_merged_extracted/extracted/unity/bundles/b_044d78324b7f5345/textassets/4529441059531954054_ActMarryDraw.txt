@@ -1,0 +1,32 @@
+
+?
+ActMarryDraw.protoCommons.proto"Y
+PRT_MARRY_DRAW_WISH
+pos (Rpos
+itemDid (RitemDid
+isDraw (RisDraw"
+PRT_MARRY_DRAW_INFO_REQ"?
+PRT_MARRY_DRAW_INFO_RESP
+freeCD (RfreeCD,
+alreadyDrawNumber (RalreadyDrawNumber
+boxDid (RboxDid$
+boxDrawNumber (RboxDrawNumber*
+wishs (2.PRT_MARRY_DRAW_WISHRwishs"?
+PRT_MARRY_DRAW_DRAW_REQ#
+type (2.ENUM_DRAW_TYPERtype&
+isCostCurrency (RisCostCurrency(
+isOldDrawTicket (RisOldDrawTicket"?
+PRT_MARRY_DRAW_DRAW_RESP
+freeCD (RfreeCD,
+alreadyDrawNumber (RalreadyDrawNumber
+boxDid (RboxDid$
+boxDrawNumber (RboxDrawNumber*
+wishs (2.PRT_MARRY_DRAW_WISHRwishs'
+awards (2.PRT_ONCE_AWARDRawards(
+	boxAwards (2
+.PRT_THINGR	boxAwards"L
+PRT_MARRY_DRAW_MODIFY_WISH_REQ*
+wishs (2.PRT_MARRY_DRAW_WISHRwishs"M
+PRT_MARRY_DRAW_MODIFY_WISH_RESP*
+wishs (2.PRT_MARRY_DRAW_WISHRwishsB
+com.next1b.nextsvr.protobproto3

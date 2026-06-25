@@ -1,0 +1,58 @@
+local a={id=0,oneCost={},tenCost={},oneItemCost={},tenItemCost={},poolId=0,poolIdNew=0,dailyTimeLimit=0,lv55="",icon55="",lv70="",icon70="",lv85="",icon85="",lv100="",icon100="",freeMaxTimes=0,freeCd=0,multipiRate=0,multipiResults={{},{}},multipiLuckyScore={{},{}}}
+a.__index=a
+function a.New(l,m,u,t,y,w,f,v,g,b,k,q,p,c,s,n,i,o,h,d,r)
+local e={}
+setmetatable(e,a)
+e.id=l
+e.oneCost=m
+e.tenCost=u
+e.oneItemCost=t
+e.tenItemCost=y
+e.poolId=w
+e.poolIdNew=f
+e.dailyTimeLimit=v
+e.lv55=g
+e.icon55=b
+e.lv70=k
+e.icon70=q
+e.lv85=p
+e.icon85=c
+e.lv100=s
+e.icon100=n
+e.freeMaxTimes=i
+e.freeCd=o
+e.multipiRate=h
+e.multipiResults=d
+e.multipiLuckyScore=r
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.oneCost=t[2]
+e.tenCost=t[3]
+e.oneItemCost=t[4]
+e.tenItemCost=t[5]
+e.poolId=t[6]
+e.poolIdNew=t[7]
+e.dailyTimeLimit=t[8]
+e.lv55=t[9]
+e.icon55=t[10]
+e.lv70=t[11]
+e.icon70=t[12]
+e.lv85=t[13]
+e.icon85=t[14]
+e.lv100=t[15]
+e.icon100=t[16]
+e.freeMaxTimes=t[17]
+e.freeCd=t[18]
+e.multipiRate=t[19]
+e.multipiResults=t[20]
+e.multipiLuckyScore=t[21]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/activity/DTActvitySuitGachaEntityTableData')
+end
+return a 

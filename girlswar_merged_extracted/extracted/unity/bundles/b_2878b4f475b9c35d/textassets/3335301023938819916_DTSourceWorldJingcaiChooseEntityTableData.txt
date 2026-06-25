@@ -1,0 +1,26 @@
+local e=
+{
+ByIdx={
+{1,1,"jingcai_question_title1",{2,1},"2026-01-12 00:00:00","2026-01-17 20:50:00","2026-01-18 21:30:00",2,0,{{0},{1}},"jingcai_choose_desc_3,jingcai_choose_desc_2","jingcai_question_help_tip_1"},
+{2,2,"jingcai_question_title2",{2,1},"2026-01-12 00:00:00","2026-01-17 20:50:00","2026-01-18 21:30:00",2,0,{{0},{1}},"jingcai_choose_desc_3,jingcai_choose_desc_2","jingcai_question_help_tip_5"},
+{3,3,"jingcai_question_title3",{2,1},"2026-01-12 00:00:00","2026-01-17 20:50:00","2026-01-18 21:30:00",3,0,{{0,10},{11,20},{21,30},{31,999999}},"jingcai_choose_desc_4,jingcai_choose_desc_4,jingcai_choose_desc_4,jingcai_choose_desc_6",""},
+{4,4,"jingcai_question_title4",{4,2},"2026-01-19 00:00:00","2026-01-24 20:50:00","2026-01-25 21:30:00",4,0,{{0,40},{41,60},{61,80},{81,999999}},"jingcai_choose_desc_11,jingcai_choose_desc_11,jingcai_choose_desc_11,jingcai_choose_desc_6",""},
+{5,5,"jingcai_question_title5",{4,2},"2026-01-19 00:00:00","2026-01-24 20:50:00","2026-01-25 21:30:00",4,0,{{0,100},{101,150},{151,200},{201,999999}},"jingcai_choose_desc_11,jingcai_choose_desc_11,jingcai_choose_desc_11,jingcai_choose_desc_6",""},
+{6,6,"jingcai_question_title6",{4,2},"2026-01-19 00:00:00","2026-01-24 20:50:00","2026-01-25 21:30:00",4,0,{{0,140},{141,280},{281,400},{401,999999}},"jingcai_choose_desc_11,jingcai_choose_desc_11,jingcai_choose_desc_11,jingcai_choose_desc_6",""},
+{7,7,"jingcai_question_title7",{4,2},"2026-01-19 00:00:00","2026-01-24 20:50:00","2026-01-25 21:30:00",4,0,{{0,7},{8,14},{15,20},{21,999999}},"jingcai_choose_desc_11,jingcai_choose_desc_11,jingcai_choose_desc_11,jingcai_choose_desc_6",""},
+{8,4,"jingcai_question_title4",{4,2},"2026-01-26 00:00:00","2026-01-31 20:50:00","2026-02-01 21:30:00",4,0,{{0,40},{41,60},{61,80},{81,999999}},"jingcai_choose_desc_11,jingcai_choose_desc_11,jingcai_choose_desc_11,jingcai_choose_desc_6",""},
+{9,5,"jingcai_question_title5",{4,2},"2026-01-26 00:00:00","2026-01-31 20:50:00","2026-02-01 21:30:00",4,0,{{0,100},{101,150},{151,200},{201,999999}},"jingcai_choose_desc_11,jingcai_choose_desc_11,jingcai_choose_desc_11,jingcai_choose_desc_6",""},
+{10,6,"jingcai_question_title6",{4,2},"2026-01-26 00:00:00","2026-01-31 20:50:00","2026-02-01 21:30:00",4,0,{{0,140},{141,280},{281,400},{401,999999}},"jingcai_choose_desc_11,jingcai_choose_desc_11,jingcai_choose_desc_11,jingcai_choose_desc_6",""},
+{11,7,"jingcai_question_title7",{4,2},"2026-01-26 00:00:00","2026-01-31 20:50:00","2026-02-01 21:30:00",4,0,{{0,7},{8,14},{15,20},{21,999999}},"jingcai_choose_desc_11,jingcai_choose_desc_11,jingcai_choose_desc_11,jingcai_choose_desc_6",""},
+{12,8,"jingcai_question_title8",{4,2},"2026-02-02 00:00:00","2026-02-07 20:50:00","2026-02-08 21:30:00",3,0,{{0,1080},{1081,1800},{1801,999999}},"jingcai_choose_desc_7,jingcai_choose_desc_8,jingcai_choose_desc_9","jingcai_question_help_tip_1"},
+{13,9,"jingcai_question_title9",{4,2},"2026-02-02 00:00:00","2026-02-07 20:50:00","2026-02-08 21:30:00",4,0,{{1},{2},{3},{4}},"jingcai_choose_desc_10,jingcai_choose_desc_10,jingcai_choose_desc_10,jingcai_choose_desc_10","jingcai_question_help_tip_2"},
+{14,10,"jingcai_question_title10",{4,2},"2026-02-02 00:00:00","2026-02-07 20:50:00","2026-02-08 21:30:00",4,0,{{1,2},{3,4},{5,6},{7,8}},"jingcai_choose_desc_4,jingcai_choose_desc_4,jingcai_choose_desc_4,jingcai_choose_desc_4","jingcai_question_help_tip_3"},
+{15,11,"jingcai_question_title11",{4,2},"2026-02-02 00:00:00","2026-02-07 20:50:00","2026-02-08 21:30:00",4,0,{{0,5},{6,10},{11,15},{16,999999}},"jingcai_choose_desc_4,jingcai_choose_desc_4,jingcai_choose_desc_4,jingcai_choose_desc_6","jingcai_question_help_tip_4"},
+{16,12,"jingcai_question_title12",{6,3},"2026-02-09 00:00:00","2026-02-15 20:50:00","2026-02-15 21:30:00",3,1,{{0}},"0",""},
+{17,13,"jingcai_question_title13",{6,3},"2026-02-09 00:00:00","2026-02-15 20:50:00","2026-02-15 21:30:00",3,1,{{0}},"0",""},
+{18,14,"jingcai_question_title14",{6,3},"2026-02-09 00:00:00","2026-02-15 20:50:00","2026-02-15 21:30:00",3,1,{{0}},"0",""},
+{19,15,"jingcai_question_title15",{6,3},"2026-02-09 00:00:00","2026-02-15 20:50:00","2026-02-15 21:30:00",1,0,{{1}},"jingcai_choose_desc_1",""}
+},
+Len=19
+}
+return e 

@@ -1,0 +1,10 @@
+
+?
+Paopao.proto"1
+PRT_OPEN_PAOPAO_AWARDED_SYN
+dids (Rdids"-
+PRT_OPEN_PAOPAO_AWARD_REQ
+did (Rdid".
+PRT_OPEN_PAOPAO_AWARD_RESP
+did (RdidB
+com.next1b.nextsvr.protobproto3

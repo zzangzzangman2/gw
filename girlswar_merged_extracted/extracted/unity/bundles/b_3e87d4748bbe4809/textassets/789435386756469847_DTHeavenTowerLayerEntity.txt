@@ -1,0 +1,36 @@
+local a={id=0,layers={},nextLayersChange={},nextLayersChangeWeight={},nextLayersChange1={},nextLayersChangeWeight1={},windowsTypeWeight={},windowsTypePollId={},itemCost={},turntableCostItemMaxNum=0}
+a.__index=a
+function a.New(n,r,s,t,l,u,d,h,o,i)
+local e={}
+setmetatable(e,a)
+e.id=n
+e.layers=r
+e.nextLayersChange=s
+e.nextLayersChangeWeight=t
+e.nextLayersChange1=l
+e.nextLayersChangeWeight1=u
+e.windowsTypeWeight=d
+e.windowsTypePollId=h
+e.itemCost=o
+e.turntableCostItemMaxNum=i
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.layers=t[2]
+e.nextLayersChange=t[3]
+e.nextLayersChangeWeight=t[4]
+e.nextLayersChange1=t[5]
+e.nextLayersChangeWeight1=t[6]
+e.windowsTypeWeight=t[7]
+e.windowsTypePollId=t[8]
+e.itemCost=t[9]
+e.turntableCostItemMaxNum=t[10]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/activity/DTHeavenTowerLayerEntityTableData')
+end
+return a 

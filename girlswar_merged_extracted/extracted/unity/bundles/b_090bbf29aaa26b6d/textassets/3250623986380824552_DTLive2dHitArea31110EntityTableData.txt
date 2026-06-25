@@ -1,0 +1,21 @@
+local e=
+{
+ByIdx={
+{"HitArea_ButtonExit",1,0},
+{"HitArea_ButtonCream",2,0},
+{"HitArea_ButtonIcecream",3,0},
+{"HitArea_GameBall",4,0},
+{"HitArea_Hand3",5,0},
+{"HitArea_Hand",6,0},
+{"HitArea_Head",7,0},
+{"HitArea_BreastR",8,0},
+{"HitArea_BreastL",9,0},
+{"HitArea_Butt",10,0},
+{"HitArea_Leg",11,0},
+{"HitArea_RopeBed",12,0},
+{"HitArea_Seagull",13,0},
+{"HitArea_Ball",14,0}
+},
+Len=14
+}
+return e 

@@ -1,0 +1,46 @@
+local a={id=0,skillName="",skillText="",args={},argsPvp={},skillNeed=0,isCombat=0,attrs={{},{}},prefabId=0,skillIcon="",buffId=0,buffArgs={},trigger=0,exBigSkillId=0,argsPreview={}}
+a.__index=a
+function a.New(s,l,r,t,u,m,w,f,y,c,d,i,o,n,h)
+local e={}
+setmetatable(e,a)
+e.id=s
+e.skillName=l
+e.skillText=r
+e.args=t
+e.argsPvp=u
+e.skillNeed=m
+e.isCombat=w
+e.attrs=f
+e.prefabId=y
+e.skillIcon=c
+e.buffId=d
+e.buffArgs=i
+e.trigger=o
+e.exBigSkillId=n
+e.argsPreview=h
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.skillName=t[2]
+e.skillText=t[3]
+e.args=t[4]
+e.argsPvp=t[5]
+e.skillNeed=t[6]
+e.isCombat=t[7]
+e.attrs=t[8]
+e.prefabId=t[9]
+e.skillIcon=t[10]
+e.buffId=t[11]
+e.buffArgs=t[12]
+e.trigger=t[13]
+e.exBigSkillId=t[14]
+e.argsPreview=t[15]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/skillAct/DTSkillPasEntityTableData')
+end
+return a 

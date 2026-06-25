@@ -1,0 +1,24 @@
+local e={id=0,typeNum=0,attrType=0,attr={}}
+e.__index=e
+function e.New(o,a,n,i)
+local t={}
+setmetatable(t,e)
+t.id=o
+t.typeNum=a
+t.attrType=n
+t.attr=i
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.typeNum=a[2]
+t.attrType=a[3]
+t.attr=a[4]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/summonPet/DTSummonPetEquipLinkTypeAttrEntityTableData')
+end
+return e 

@@ -1,0 +1,30 @@
+local t={id=0,taskType=0,day=0,targetCount=0,normalAward={{},{}},jumpId=0,desc=""}
+t.__index=t
+function t.New(o,h,a,s,r,n,i)
+local e={}
+setmetatable(e,t)
+e.id=o
+e.taskType=h
+e.day=a
+e.targetCount=s
+e.normalAward=r
+e.jumpId=n
+e.desc=i
+return e
+end
+function t.NewFromArrItem(a)
+local e={}
+setmetatable(e,t)
+e.id=a[1]
+e.taskType=a[2]
+e.day=a[3]
+e.targetCount=a[4]
+e.normalAward=a[5]
+e.jumpId=a[6]
+e.desc=a[7]
+return e
+end
+function t.GetArr()
+return require('DataNode/DataTable/Create/activity/DTHorseRaceTaskEntityTableData')
+end
+return t 

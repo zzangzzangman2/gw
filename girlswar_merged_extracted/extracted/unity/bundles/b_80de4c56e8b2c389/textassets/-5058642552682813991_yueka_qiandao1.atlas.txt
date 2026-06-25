@@ -1,0 +1,6 @@
+yueka_qiandao1.png
+size:128,128
+filter:Linear,Linear
+xl_yeqianzs
+bounds:2,2,88,81
+offsets:1,1,89,82

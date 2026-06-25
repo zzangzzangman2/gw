@@ -1,0 +1,30 @@
+local t={id=0,dropNum=0,dropGold1=0,dropGold2=0,dropGold3=0,dropGold4=0,expNum=0}
+t.__index=t
+function t.New(o,h,a,s,r,n,i)
+local e={}
+setmetatable(e,t)
+e.id=o
+e.dropNum=h
+e.dropGold1=a
+e.dropGold2=s
+e.dropGold3=r
+e.dropGold4=n
+e.expNum=i
+return e
+end
+function t.NewFromArrItem(a)
+local e={}
+setmetatable(e,t)
+e.id=a[1]
+e.dropNum=a[2]
+e.dropGold1=a[3]
+e.dropGold2=a[4]
+e.dropGold3=a[5]
+e.dropGold4=a[6]
+e.expNum=a[7]
+return e
+end
+function t.GetArr()
+return require('DataNode/DataTable/Create/maps/DTDropShowEntityTableData')
+end
+return t 

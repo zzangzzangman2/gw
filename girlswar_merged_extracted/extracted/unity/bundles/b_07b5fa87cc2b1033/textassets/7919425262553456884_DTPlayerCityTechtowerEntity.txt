@@ -1,0 +1,36 @@
+local a={id=0,stage=0,position=0,nextId=0,level=0,attr={{},{}},cost={{},{}},name="",desc="",icon=""}
+a.__index=a
+function a.New(n,r,s,t,l,u,d,h,o,i)
+local e={}
+setmetatable(e,a)
+e.id=n
+e.stage=r
+e.position=s
+e.nextId=t
+e.level=l
+e.attr=u
+e.cost=d
+e.name=h
+e.desc=o
+e.icon=i
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.stage=t[2]
+e.position=t[3]
+e.nextId=t[4]
+e.level=t[5]
+e.attr=t[6]
+e.cost=t[7]
+e.name=t[8]
+e.desc=t[9]
+e.icon=t[10]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/playerCity/DTPlayerCityTechtowerEntityTableData')
+end
+return a 

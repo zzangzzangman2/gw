@@ -1,0 +1,13 @@
+local e=
+{
+ByIdx={
+{1,1,0,2,1,{10013,75},{26831,200},"leyuanshop_10013","candyLandTabName_1"},
+{2,1,0,2,1,{20321,150},{26831,500},"leyuanshop_20321","candyLandTabName_1"},
+{3,2,1,2,2,{1059,250},{26831,350},"leyuanshop_1059","candyLandTabName_2"},
+{4,2,1,2,6,{20048,20},{26831,700},"leyuanshop_20048","candyLandTabName_2"},
+{5,3,2,2,1,{72000,25},{26831,1400},"leyuanshop_72000","candyLandTabName_3"},
+{6,3,2,2,3,{20290,1},{26831,700},"leyuanshop_20290","candyLandTabName_3"}
+},
+Len=6
+}
+return e 

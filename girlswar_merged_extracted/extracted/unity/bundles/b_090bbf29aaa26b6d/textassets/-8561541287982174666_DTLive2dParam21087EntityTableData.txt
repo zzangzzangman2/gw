@@ -1,0 +1,28 @@
+local e=
+{
+ByIdx={
+{"ParamPurse","ParamPurse",0,{{1,-1}},"HitArea_HandL",-4,0,2,4,0,1,"","","1:rodPurse1","rodPurse1","rodPurse1:1",1.3,20,0},
+{"ParamSkirt1_empty","",0,{{3,0}},"HitArea_Trigone1,HitArea_Trigone2",0,0,5,10,0,1,"","","1:rodSkirt1","rodSkirt1","rodSkirt1:2",1,10,0},
+{"ParamSkirt1","ParamSkirt1",0,{{3,0}},"HitArea_Trigone1,HitArea_Trigone2",0,0,5,10,0,1,"","idle_sp2","","","",1,15,0},
+{"ParamSocks1","ParamSocks1",0,{},"",0,0,10,10,0,1,"","","","tapTrigone1_sp2","tapTrigone1_sp2:1",1,10,0},
+{"ParamBreast1","ParamBreast1",0,{{4,0}},"HitArea_BreastL,HitArea_BreastR",0,0,5,10,0,1,"","","1:rodBreast1","rodBreast1,rodBreast1_sp","rodBreast1:2",1,10,0},
+{"ParamBreast1_sp","ParamBreast1",0,{{4,0}},"HitArea_BreastL,HitArea_BreastR",0,0,5,10,0,1,"","idle_sp","1:rodBreast1_sp","rodBreast1,rodBreast1_sp","rodBreast1_sp:2",1,10,0},
+{"ParamSocksR1","ParamSocksR1",0,{{4,0},{3,0},{2,0},{1,0}},"HitArea_LegR1,HitArea_LegR2,HitArea_LegR3",0,0,10,10,1,1,"","","","","",1,10,0},
+{"ParamSocksL1","ParamSocksL1",0,{{4,0},{3,0},{2,0},{1,0}},"HitArea_LegL1,HitArea_LegL2,HitArea_LegL3,HitArea_LegL4,HitArea_LegL5",0,0,10,10,1,1,"","","","","",1,10,0},
+{"ParamSocksR2","ParamSocksR2",1,{{4,0}},"HitArea_LegR1,HitArea_LegR2,HitArea_LegR3",0,0,5,10,0,1,"","","","","",0.6,5,0},
+{"ParamSocksL2","ParamSocksL2",1,{{4,0}},"HitArea_LegL1,HitArea_LegL2,HitArea_LegL3,HitArea_LegL4,HitArea_LegL5",0,0,5,10,0,1,"","","","","",0.7,5,0},
+{"ParamBreastL2","ParamBreastL2",1,{{4,0}},"HitArea_BreastL",0,0,5,10,0,1,"","","1:rodBreastL2","rodBreastL2","rodBreastL2:2",1,10,0},
+{"ParamBreastR2","ParamBreastR2",1,{{4,0}},"HitArea_BreastR",0,0,5,10,0,1,"","","1:rodBreastR2","rodBreastR2","rodBreastR2:2",1,10,0},
+{"ParamSweat","ParamSweat",1,{},"",0,0,5,10,0,1,"","","","tapDegree2_sp","tapDegree2_sp:1",1,10,0},
+{"ParamGame","ParamGame",1,{},"",0,0,5,10,0,1,"","","","","",1,30,0},
+{"ParamTowel","ParamTowel",1,{},"",0,0,5,10,0,1,"","","","","",1,10,0},
+{"ParamDegree","ParamDegree",1,{},"",0,0,5,10,0,1,"","","","tapDegree2_sp","",1,10,0},
+{"ParamBreast3","ParamBreast3",2,{{3,0}},"HitArea_BreastL",0,0,5,10,0,1,"","","1:rodBreast3","rodBreast3","rodBreast3:2",1,10,0},
+{"ParamWire","ParamWire",2,{},"",0,0,5,10,0,1,"","","","tapWire3_sp2","tapWire3_sp2:1",1,10,0},
+{"ParamWaterGun","ParamWaterGun",2,{},"",0,0,5,10,0,1,"","","","tapWaterGun3_sp2","tapWaterGun3_sp2:1",1,10,0},
+{"ParamGame_idle4","ParamGame",2,{},"",0,0,5,10,0,1,"","","","","",1,30,0},
+{"ParamSweat_idle4","ParamSweat",2,{},"",0,0,5,10,0,1,"","","","tapWaterGun3_sp2","tapWaterGun3_sp2:2",1,10,0}
+},
+Len=21
+}
+return e 

@@ -1,0 +1,11 @@
+local t={}
+function t:OnHandle(e)
+local e=assert(GlobalPB.decode("PRT_HERO_BEANS_LEVELUP_RESP",e));
+if(GameInit.GetDebugLogProto())then
+;
+;
+end
+ModulesInit.ExplosiveBeansUpgradeMgr:SyncExplosiveBeansUpgrade(e)
+return e
+end
+return t 

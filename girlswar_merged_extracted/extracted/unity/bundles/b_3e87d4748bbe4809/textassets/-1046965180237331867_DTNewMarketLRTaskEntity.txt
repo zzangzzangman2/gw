@@ -1,0 +1,30 @@
+local t={id=0,type=0,needCount=0,awardType=0,award={{},{}},text="",listNum=0}
+t.__index=t
+function t.New(o,h,a,s,r,n,i)
+local e={}
+setmetatable(e,t)
+e.id=o
+e.type=h
+e.needCount=a
+e.awardType=s
+e.award=r
+e.text=n
+e.listNum=i
+return e
+end
+function t.NewFromArrItem(a)
+local e={}
+setmetatable(e,t)
+e.id=a[1]
+e.type=a[2]
+e.needCount=a[3]
+e.awardType=a[4]
+e.award=a[5]
+e.text=a[6]
+e.listNum=a[7]
+return e
+end
+function t.GetArr()
+return require('DataNode/DataTable/Create/activity/DTNewMarketLRTaskEntityTableData')
+end
+return t 

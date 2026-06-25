@@ -1,0 +1,9 @@
+local e={}
+function e:OnHandle(e)
+local e=assert(GlobalPB.decode("PRT_PLAYER_MODIFY_SHOW_HERO_INDEX_RESP",e));
+if(GameInit.GetDebugLogProto())then
+;
+;
+end
+end
+return e 

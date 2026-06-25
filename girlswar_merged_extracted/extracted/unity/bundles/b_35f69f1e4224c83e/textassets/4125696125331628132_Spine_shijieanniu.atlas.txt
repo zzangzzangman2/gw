@@ -1,0 +1,17 @@
+Spine_shijieanniu.png
+size:1024,1024
+filter:Linear,Linear
+diqiu
+bounds:2,257,704,706
+offsets:0,1,704,714
+yun
+bounds:497,152,83,36
+offsets:2,2,86,41
+yun2
+bounds:497,190,108,65
+offsets:0,1,109,67
+zhuye_bian
+bounds:257,17,238,238
+offsets:0,1,238,240
+zhuye_di1
+bounds:2,2,253,253

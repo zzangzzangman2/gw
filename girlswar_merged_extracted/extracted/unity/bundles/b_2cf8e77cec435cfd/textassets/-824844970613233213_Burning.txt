@@ -1,0 +1,169 @@
+
+?'
+Burning.protoCommons.protoFight.protoFormation.proto
+Hero.protoSnapshot.proto
+Enum.protoSummonPet.protoTreasure.protoUnderwear.proto"k
+PRT_BURNING_JOIN_HERO
+heroId (RheroId
+heroDid (RheroDid
+hp (Rhp
+rag (Rrag"?
+PRT_BURNING_ACT_INFO
+mapId (RmapId2
+remainChallengeCount (RremainChallengeCount
+	recMapIds (R	recMapIds
+	firstJoin (R	firstJoin4
+	joinHeros (2.PRT_BURNING_JOIN_HEROR	joinHeros
+maxMapId (RmaxMapId,
+buyChallengeCount (RbuyChallengeCountB
+playerFormations
+ (2.PRT_BURNING_FORMATIONRplayerFormations"
+PRT_BURNING_ACTINFO_REQ"E
+PRT_BURNING_ACTINFO_RESP)
+info (2.PRT_BURNING_ACT_INFORinfo"`
+PRT_BURNING_FORMATION_INFOB
+playerFormations (2.PRT_BURNING_FORMATIONRplayerFormations"r
+PRT_BURNING_FORMATION
+playerId (RplayerId
+hero (2	.PRT_HERORhero
+
+fightCount (R
+fightCount" 
+PRT_BURNING_FORMATION_LIST_REQ"e
+PRT_BURNING_FORMATION_LIST_RESPB
+playerFormations (2.PRT_BURNING_FORMATIONRplayerFormations"q
+!PRT_BURNING_PLAYER_FORMATION_INFO
+playerId (RplayerId
+heroDid (RheroDid
+heroId (RheroId"z
+ PRT_BURNING_UPDATE_FORMATION_REQV
+playerFormationInfos (2".PRT_BURNING_PLAYER_FORMATION_INFORplayerFormationInfos"g
+!PRT_BURNING_UPDATE_FORMATION_RESPB
+playerFormations
+ (2.PRT_BURNING_FORMATIONRplayerFormations"?
+PRT_BURNING_FORMATION_POSITION 
+formationId (RformationId
+position (Rposition
+heroId (RheroId
+heroDid (RheroDid
+
+firstValue (R
+firstValue
+type (Rtype"?
+PRT_BURNING_POSITION_INFO.
+formationNO (2.FormationNORformationNO=
+	positions (2.PRT_BURNING_FORMATION_POSITIONR	positions
+
+fightTotal (R
+fightTotal
+
+firstTotal (R
+firstTotal"U
+PRT_BURNING_POSITION=
+	positions (2.PRT_BURNING_FORMATION_POSITIONR	positions"a
+ PRT_BURNING_FORMATION_MODIFY_REQ=
+	positions (2.PRT_BURNING_FORMATION_POSITIONR	positions"c
+!PRT_BURNING_FORMATION_MODIFY_RESP>
+positionInfo (2.PRT_BURNING_POSITION_INFORpositionInfo")
+'PRT_BURNING_FORMATION_POSITION_LIST_REQ"j
+(PRT_BURNING_FORMATION_POSITION_LIST_RESP>
+positionInfo (2.PRT_BURNING_POSITION_INFORpositionInfo"5
+PRT_BURNING_BATTLE_REVIEW_REQ
+mapId (RmapId"?
+PRT_BURNING_BATTLE_REVIEW_RESP<
+
+playerSnap (2.PRT_BURNING_PLAYER_SNAPSHOTR
+playerSnap2
+monsters (2.PRT_BURNING_JOIN_HERORmonsters"?
+PRT_BURNING_PLAYER_SNAPSHOT0
+
+playerInfo (2.PRT_PLAYER_INFOR
+playerInfo
+heros (2	.PRT_HERORheros,
+	formation (2.PRT_FORMATIONR	formation.
+
+underwears (2.PRT_UNDERWEARR
+underwears+
+	treasures (2.PRT_TREASURER	treasures/
+
+summonPets
+ (2.PRT_SUMMON_PETR
+summonPetsI
+summonPetFormation (2.PRT_SUMMON_PET_FORMATIONRsummonPetFormation"%
+#PRT_BURNING_BUY_CHALLENGE_COUNT_REQ"?
+$PRT_BURNING_BUY_CHALLENGE_COUNT_RESP2
+remainChallengeCount (RremainChallengeCount,
+buyChallengeCount (RbuyChallengeCount"5
+PRT_BURNING_REC_MAP_AWARD_REQ
+mapId (RmapId"T
+PRT_BURNING_REC_MAP_AWARD_RESP
+mapId (RmapId
+	recMapIds (R	recMapIds"$
+"PRT_BURNING_EXCHANGE_SHOP_INFO_REQ"G
+#PRT_BURNING_EXCHANGE_SHOP_INFO_RESP 
+goods (2
+.PRT_GOODSRgoods"K
+!PRT_BURNING_EXCHANGE_SHOP_BUY_REQ
+did (Rdid
+count (Rcount"6
+"PRT_BURNING_EXCHANGE_SHOP_BUY_RESP
+did (Rdid"H
+PRT_BURNING_USE_BUFF
+itemDid (RitemDid
+heroId (RheroId"L
+PRT_BURNING_ATTR_SHOP_USE_REQ+
+buffs (2.PRT_BURNING_USE_BUFFRbuffs"?
+PRT_BURNING_ATTR_SHOP_USE_RESP+
+buffs (2.PRT_BURNING_USE_BUFFRbuffs4
+	joinHeros (2.PRT_BURNING_JOIN_HEROR	joinHeros"
+PRT_BURNING_RESET_REQ"C
+PRT_BURNING_RESET_RESP)
+info (2.PRT_BURNING_ACT_INFORinfo"?
+PRT_BURNING_INFO
+playerId (RplayerId
+level (Rlevel
+name (	Rname
+head (Rhead
+fight (Rfight
+profile (Rprofile
+sign	 (	Rsign
+guildId
+ (RguildId
+	guildName (	R	guildName
+	headFrame (R	headFrame
+officer (Rofficer"?
+PRT_BURNING_RECORD
+recordId (RrecordId'
+enemy (2.PRT_BURNING_INFORenemy
+	fightType (R	fightType
+	fightTime (	R	fightTime
+isWin (RisWin
+isBack (RisBack*
+targetFirstValue	 (RtargetFirstValue
+heros
+ (2	.PRT_HERORheros"
+PRT_BURNING_FIGHT_RECORD_REQ"N
+PRT_BURNING_FIGHT_RECORD_RESP-
+records (2.PRT_BURNING_RECORDRrecords"<
+PRT_BURNING_FIGHT_PLAYBACK_REQ
+recordId (RrecordId"?
+PRT_BURNING_FIGHT_PLAYBACK_RESP-
+	fightInfo (2.PRT_FIGHT_PLAYR	fightInfo 
+winPlayerId (RwinPlayerId&
+attackPlayerId (RattackPlayerId"?
+ PRT_BURNING_MAP_FIGHT_BEFORE_REQ
+mapDid (RmapDidG
+formationPositions (2.PRT_FORMATION_POSITIONRformationPositions"T
+!PRT_BURNING_MAP_FIGHT_BEFORE_RESP/
+
+beforeInfo (2.PRT_FIGHT_PLAYR
+beforeInfo"L
+PRT_BURNING_MAP_FIGHT_REQ/
+
+battleInfo (2.PRT_FIGHT_PLAYR
+battleInfo"h
+PRT_BURNING_MAP_FIGHT_RESP
+invalid (Rinvalid
+maxMapId (RmaxMapId
+mapId (RmapIdB
+com.next1b.nextsvr.protobproto3

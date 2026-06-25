@@ -1,0 +1,42 @@
+local a={id=0,treasure1={},treasure2={},treasure3={},treasure4={},treasure5={},treasure6={},treasure7={},treasure8={},treasure9={},treasure10={},treasure11={},treasure12={}}
+a.__index=a
+function a.New(s,d,h,t,l,c,m,f,u,r,i,o,n)
+local e={}
+setmetatable(e,a)
+e.id=s
+e.treasure1=d
+e.treasure2=h
+e.treasure3=t
+e.treasure4=l
+e.treasure5=c
+e.treasure6=m
+e.treasure7=f
+e.treasure8=u
+e.treasure9=r
+e.treasure10=i
+e.treasure11=o
+e.treasure12=n
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.treasure1=t[2]
+e.treasure2=t[3]
+e.treasure3=t[4]
+e.treasure4=t[5]
+e.treasure5=t[6]
+e.treasure6=t[7]
+e.treasure7=t[8]
+e.treasure8=t[9]
+e.treasure9=t[10]
+e.treasure10=t[11]
+e.treasure11=t[12]
+e.treasure12=t[13]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/skillAct/DTBattleTestTreasureEntityTableData')
+end
+return a 

@@ -1,0 +1,32 @@
+
+?
+
+Camp.proto"9
+PRT_CAMP_HERO
+heroId (RheroId
+pos (Rpos"?
+PRT_CAMP_INFO
+campDid (RcampDid(
+heroPos (2.PRT_CAMP_HERORheroPos
+	unlockPos (R	unlockPos
+baseAttr (RbaseAttr
+	extraAttr (R	extraAttr"
+PRT_CAMP_INFO_REQ":
+PRT_CAMP_INFO_RESP$
+camps (2.PRT_CAMP_INFORcamps"[
+PRT_CAMP_PUT_HERO_REQ
+campDid (RcampDid
+heroId (RheroId
+pos (Rpos">
+PRT_CAMP_PUT_HERO_RESP$
+camps (2.PRT_CAMP_INFORcamps"3
+PRT_CAMP_UNLOCK_POS_REQ
+campDid (RcampDid"@
+PRT_CAMP_UNLOCK_POS_RESP$
+camps (2.PRT_CAMP_INFORcamps"]
+PRT_CAMP_BATCH_PUT_HERO_REQ
+campDid (RcampDid$
+heros (2.PRT_CAMP_HERORheros"D
+PRT_CAMP_BATCH_PUT_HERO_RESP$
+camps (2.PRT_CAMP_INFORcampsB
+com.next1b.nextsvr.protobproto3

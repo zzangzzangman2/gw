@@ -1,0 +1,14 @@
+sp_BondFestival_light.png
+size:512,256
+filter:Linear,Linear
+light1
+bounds:444,135,70,64
+offsets:11,10,93,83
+rotate:90
+light2
+bounds:210,29,232,176
+offsets:19,16,270,209
+light3
+bounds:2,2,203,206
+offsets:29,22,249,236
+rotate:90

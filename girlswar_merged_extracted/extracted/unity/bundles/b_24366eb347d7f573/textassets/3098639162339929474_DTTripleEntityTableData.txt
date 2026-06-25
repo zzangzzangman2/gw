@@ -1,0 +1,13 @@
+local e=
+{
+ByIdx={
+{1,1,10,{1047,10},"UIActTriple/sanxiao_cjtb1",80,{1047,80},"UIActTriple/sanxiao_gjtb1",160,{1047,160},"UIActTriple/sanxiao_zjtb1"},
+{2,1,10,{1047,10},"UIActTriple/sanxiao_cjtb2",80,{1047,80},"UIActTriple/sanxiao_gjtb2",160,{1047,160},"UIActTriple/sanxiao_zjtb2"},
+{3,1,10,{1047,10},"UIActTriple/sanxiao_cjtb3",80,{1047,80},"UIActTriple/sanxiao_gjtb3",160,{1047,160},"UIActTriple/sanxiao_zjtb3"},
+{4,1,10,{1047,10},"UIActTriple/sanxiao_cjtb4",80,{1047,80},"UIActTriple/sanxiao_gjtb4",160,{1047,160},"UIActTriple/sanxiao_zjtb4"},
+{100,2,0,{0},"UIActTriple/sanxiao_zdtb",0,{0},"UIActTriple/sanxiao_zdtb",0,{0},"UIActTriple/sanxiao_zdtb"},
+{200,3,0,{0},"UIActTriple/sanxiao_yhtb",0,{0},"UIActTriple/sanxiao_yhtb",0,{0},"UIActTriple/sanxiao_yhtb"}
+},
+Len=6
+}
+return e 

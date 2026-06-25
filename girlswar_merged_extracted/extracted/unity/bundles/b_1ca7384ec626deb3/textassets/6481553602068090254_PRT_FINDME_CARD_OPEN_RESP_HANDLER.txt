@@ -1,0 +1,13 @@
+local t={}
+function t:OnHandle(e)
+local e=assert(GlobalPB.decode("PRT_FINDME_CARD_OPEN_RESP",e));
+if(GameInit.GetDebugLogProto())then
+;
+;
+end
+if e then
+ModulesInit.ScratchParkMgr:OpenLuckNumResq(e)
+end
+return e
+end
+return t 

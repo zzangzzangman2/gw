@@ -1,0 +1,6 @@
+1067_1.png
+size:1024,1024
+filter:Linear,Linear
+scale:0.25
+aaa
+bounds:0,0,874,1023

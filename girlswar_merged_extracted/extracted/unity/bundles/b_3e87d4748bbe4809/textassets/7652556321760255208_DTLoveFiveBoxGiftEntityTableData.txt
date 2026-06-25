@@ -1,0 +1,13 @@
+local e=
+{
+ByIdx={
+{1,{{26211,30}},"DTLoveFiveBoxGiftText_1","icon_qrjsd01",0,{0},0,1,1},
+{2,{{26214,2},{1001,330}},"DTLoveFiveBoxGiftText_2","icon_qrjsd02",2,{0},304,2,1},
+{3,{{26214,6},{1001,980}},"DTLoveFiveBoxGiftText_3","icon_qrjsd03",2,{0},310,2,1},
+{4,{{26214,12},{1001,1980}},"DTLoveFiveBoxGiftText_4","icon_qrjsd04",2,{0},324,2,2},
+{5,{{26214,20},{1001,3400}},"DTLoveFiveBoxGiftText_5","icon_qrjsd05",2,{0},327,2,5},
+{6,{{26214,40},{1001,6900}},"DTLoveFiveBoxGiftText_6","icon_qrjsd06",2,{0},329,2,15}
+},
+Len=6
+}
+return e 

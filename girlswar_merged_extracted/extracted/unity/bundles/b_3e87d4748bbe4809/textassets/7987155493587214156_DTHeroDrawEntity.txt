@@ -1,0 +1,54 @@
+local a={id=0,freeCd=0,oneCost={},tenCost={},commPool=0,floorTime=0,floorPool=0,itemCost=0,oldItemCost=0,wishRate=0,wishOpenNum=0,mapId=0,exchangePoolNum=0,exchangeCommPool=0,exchangeFloorPool=0,urHeroShow={},urHeroShowNew={},urHeroShowNewCopy={},urHeroShowNewData4_2={}}
+a.__index=a
+function a.New(d,c,l,t,f,m,y,v,p,b,g,w,u,n,i,o,s,r,h)
+local e={}
+setmetatable(e,a)
+e.id=d
+e.freeCd=c
+e.oneCost=l
+e.tenCost=t
+e.commPool=f
+e.floorTime=m
+e.floorPool=y
+e.itemCost=v
+e.oldItemCost=p
+e.wishRate=b
+e.wishOpenNum=g
+e.mapId=w
+e.exchangePoolNum=u
+e.exchangeCommPool=n
+e.exchangeFloorPool=i
+e.urHeroShow=o
+e.urHeroShowNew=s
+e.urHeroShowNewCopy=r
+e.urHeroShowNewData4_2=h
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.freeCd=t[2]
+e.oneCost=t[3]
+e.tenCost=t[4]
+e.commPool=t[5]
+e.floorTime=t[6]
+e.floorPool=t[7]
+e.itemCost=t[8]
+e.oldItemCost=t[9]
+e.wishRate=t[10]
+e.wishOpenNum=t[11]
+e.mapId=t[12]
+e.exchangePoolNum=t[13]
+e.exchangeCommPool=t[14]
+e.exchangeFloorPool=t[15]
+e.urHeroShow=t[16]
+e.urHeroShowNew=t[17]
+e.urHeroShowNewCopy=t[18]
+e.urHeroShowNewData4_2=t[19]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/activity/DTHeroDrawEntityTableData')
+end
+return a 

@@ -1,0 +1,36 @@
+local a={id=0,goods=0,type=0,buyCount=0,eegAward={},image="",titel=0,desc=0,itemId=0,effType=0}
+a.__index=a
+function a.New(n,r,s,t,l,u,d,h,o,i)
+local e={}
+setmetatable(e,a)
+e.id=n
+e.goods=r
+e.type=s
+e.buyCount=t
+e.eegAward=l
+e.image=u
+e.titel=d
+e.desc=h
+e.itemId=o
+e.effType=i
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.goods=t[2]
+e.type=t[3]
+e.buyCount=t[4]
+e.eegAward=t[5]
+e.image=t[6]
+e.titel=t[7]
+e.desc=t[8]
+e.itemId=t[9]
+e.effType=t[10]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/worldTree/DTWorldTreeBreedingGiftEntityTableData')
+end
+return a 

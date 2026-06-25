@@ -1,0 +1,30 @@
+local t={id=0,plotId=0,progress=0,reward={{},{}},headline="",depiction="",pictogram=""}
+t.__index=t
+function t.New(o,h,a,s,r,n,i)
+local e={}
+setmetatable(e,t)
+e.id=o
+e.plotId=h
+e.progress=a
+e.reward=s
+e.headline=r
+e.depiction=n
+e.pictogram=i
+return e
+end
+function t.NewFromArrItem(a)
+local e={}
+setmetatable(e,t)
+e.id=a[1]
+e.plotId=a[2]
+e.progress=a[3]
+e.reward=a[4]
+e.headline=a[5]
+e.depiction=a[6]
+e.pictogram=a[7]
+return e
+end
+function t.GetArr()
+return require('DataNode/DataTable/Create/activity/DTMushroomPlotEntityTableData')
+end
+return t 

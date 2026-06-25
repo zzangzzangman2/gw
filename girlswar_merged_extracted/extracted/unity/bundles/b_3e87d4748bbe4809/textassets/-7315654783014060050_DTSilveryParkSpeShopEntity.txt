@@ -1,0 +1,32 @@
+local a={id=0,wheel=0,unLock=0,limit=0,award={},cost={},iconBig="",tabName=""}
+a.__index=a
+function a.New(i,h,n,t,d,r,s,o)
+local e={}
+setmetatable(e,a)
+e.id=i
+e.wheel=h
+e.unLock=n
+e.limit=t
+e.award=d
+e.cost=r
+e.iconBig=s
+e.tabName=o
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.wheel=t[2]
+e.unLock=t[3]
+e.limit=t[4]
+e.award=t[5]
+e.cost=t[6]
+e.iconBig=t[7]
+e.tabName=t[8]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/activity/DTSilveryParkSpeShopEntityTableData')
+end
+return a 

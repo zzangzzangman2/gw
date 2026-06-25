@@ -1,0 +1,32 @@
+local a={id=0,gameType=0,name="",desc="",gameParam=0,bindingPointSpine=0,gameAward={},icon=""}
+a.__index=a
+function a.New(i,h,n,t,d,r,s,o)
+local e={}
+setmetatable(e,a)
+e.id=i
+e.gameType=h
+e.name=n
+e.desc=t
+e.gameParam=d
+e.bindingPointSpine=r
+e.gameAward=s
+e.icon=o
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.gameType=t[2]
+e.name=t[3]
+e.desc=t[4]
+e.gameParam=t[5]
+e.bindingPointSpine=t[6]
+e.gameAward=t[7]
+e.icon=t[8]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/worldMap/DTSmallGameEntityTableData')
+end
+return a 

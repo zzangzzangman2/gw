@@ -1,0 +1,13 @@
+Painting_1001_Back.png
+size:2048,1024
+filter:Linear,Linear
+scale:0.9
+bf_3
+bounds:719,0,908,382
+offsets:0,0,908,392
+rotate:180
+bgb
+bounds:0,370,1512,654
+bgb2
+bounds:0,121,656,249
+offsets:25,79,756,328

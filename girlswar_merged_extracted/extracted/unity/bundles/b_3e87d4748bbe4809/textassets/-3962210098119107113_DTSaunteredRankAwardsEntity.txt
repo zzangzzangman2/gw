@@ -1,0 +1,28 @@
+local e={id=0,rankType=0,topNum=0,show=0,awards={{},{}},useType=0}
+e.__index=e
+function e.New(a,i,o,h,s,n)
+local t={}
+setmetatable(t,e)
+t.id=a
+t.rankType=i
+t.topNum=o
+t.show=h
+t.awards=s
+t.useType=n
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.rankType=a[2]
+t.topNum=a[3]
+t.show=a[4]
+t.awards=a[5]
+t.useType=a[6]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/activity/DTSaunteredRankAwardsEntityTableData')
+end
+return e 

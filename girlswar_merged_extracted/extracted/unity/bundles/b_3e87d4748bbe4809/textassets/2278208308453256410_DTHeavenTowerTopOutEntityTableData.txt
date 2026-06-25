@@ -1,0 +1,10 @@
+local e=
+{
+ByIdx={
+{1,{1,12},101,"UIHeavenTower_1"},
+{2,{13,25},102,"UIHeavenTower_1"},
+{3,{26,99999},103,"UIHeavenTower_2"}
+},
+Len=3
+}
+return e 

@@ -1,0 +1,11 @@
+local t={}
+function t:OnHandle(e)
+local e=assert(GlobalPB.decode("PRT_ISLAND_GROW_RECEIVE_AWARD_ALL_RESP",e));
+if(GameInit.GetDebugLogProto())then
+;
+;
+end
+ModulesInit.ActIslandMgr:SyncFundReceiveAwardAll(e)
+return e
+end
+return t 

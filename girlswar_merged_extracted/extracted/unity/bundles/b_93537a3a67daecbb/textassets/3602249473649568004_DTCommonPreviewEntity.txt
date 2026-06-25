@@ -1,0 +1,26 @@
+local e={id=0,speakId=0,audioBanks="",storyPath="",heroIds={}}
+e.__index=e
+function e.New(o,n,a,s,i)
+local t={}
+setmetatable(t,e)
+t.id=o
+t.speakId=n
+t.audioBanks=a
+t.storyPath=s
+t.heroIds=i
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.speakId=a[2]
+t.audioBanks=a[3]
+t.storyPath=a[4]
+t.heroIds=a[5]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/guide/DTCommonPreviewEntityTableData')
+end
+return e 

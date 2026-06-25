@@ -1,0 +1,42 @@
+local a={id=0,freeCd=0,oneCost={},tenCost={},commPool=0,floorTime=0,floorPool=0,itemCost=0,oldItemCost=0,wishRate=0,wishOpenNum=0,firstPool=0,newDropTime=""}
+a.__index=a
+function a.New(s,d,h,t,l,c,m,f,u,r,i,o,n)
+local e={}
+setmetatable(e,a)
+e.id=s
+e.freeCd=d
+e.oneCost=h
+e.tenCost=t
+e.commPool=l
+e.floorTime=c
+e.floorPool=m
+e.itemCost=f
+e.oldItemCost=u
+e.wishRate=r
+e.wishOpenNum=i
+e.firstPool=o
+e.newDropTime=n
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.freeCd=t[2]
+e.oneCost=t[3]
+e.tenCost=t[4]
+e.commPool=t[5]
+e.floorTime=t[6]
+e.floorPool=t[7]
+e.itemCost=t[8]
+e.oldItemCost=t[9]
+e.wishRate=t[10]
+e.wishOpenNum=t[11]
+e.firstPool=t[12]
+e.newDropTime=t[13]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/activity/DTMarryDrawEntityTableData')
+end
+return a 

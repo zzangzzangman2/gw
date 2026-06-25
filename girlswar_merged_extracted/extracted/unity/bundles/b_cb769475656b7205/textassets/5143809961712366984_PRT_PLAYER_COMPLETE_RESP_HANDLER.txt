@@ -1,0 +1,22 @@
+local t={}
+function t:OnHandle(e)
+local e=assert(GlobalPB.decode("PRT_PLAYER_COMPLETE_RESP",e));
+if(GameInit.GetDebugLogProto())then
+;
+;
+end
+local t=NetManager:IsReconnet()
+if t then
+NetManager:ReconnetSuccess(e)
+PayMgr:Log("RemoveOldTrans")
+CS.YouYou.PayManager.RemoveOldTrans()
+CS.YouYou.PayManager.ColseHUD()
+else
+NetManager:ConnetSuccess()
+PlayerMgr:PlayerLoginComplete(e)
+end
+GameTools:SetUseNewIOS()
+UserAccountInfo:CheckHasNewRes()
+return e
+end
+return t 

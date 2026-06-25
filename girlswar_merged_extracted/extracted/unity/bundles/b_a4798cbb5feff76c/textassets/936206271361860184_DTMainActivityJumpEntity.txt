@@ -1,0 +1,30 @@
+local t={id=0,activityId=0,jumpId=0,order=0,showIcon="",activityName="",buttonKey=""}
+t.__index=t
+function t.New(o,h,a,s,r,n,i)
+local e={}
+setmetatable(e,t)
+e.id=o
+e.activityId=h
+e.jumpId=a
+e.order=s
+e.showIcon=r
+e.activityName=n
+e.buttonKey=i
+return e
+end
+function t.NewFromArrItem(a)
+local e={}
+setmetatable(e,t)
+e.id=a[1]
+e.activityId=a[2]
+e.jumpId=a[3]
+e.order=a[4]
+e.showIcon=a[5]
+e.activityName=a[6]
+e.buttonKey=a[7]
+return e
+end
+function t.GetArr()
+return require('DataNode/DataTable/Create/worldMap/DTMainActivityJumpEntityTableData')
+end
+return t 

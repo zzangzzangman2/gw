@@ -1,0 +1,46 @@
+local a={id=0,questType=0,day=0,tab=0,tabText="",needCount=0,needCountFront=0,priority=0,isActiveCount=0,isClose=0,numType=0,reward={{},{}},text="",jump=0,listNum=0}
+a.__index=a
+function a.New(s,l,r,t,u,m,w,f,y,c,d,i,o,n,h)
+local e={}
+setmetatable(e,a)
+e.id=s
+e.questType=l
+e.day=r
+e.tab=t
+e.tabText=u
+e.needCount=m
+e.needCountFront=w
+e.priority=f
+e.isActiveCount=y
+e.isClose=c
+e.numType=d
+e.reward=i
+e.text=o
+e.jump=n
+e.listNum=h
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.questType=t[2]
+e.day=t[3]
+e.tab=t[4]
+e.tabText=t[5]
+e.needCount=t[6]
+e.needCountFront=t[7]
+e.priority=t[8]
+e.isActiveCount=t[9]
+e.isClose=t[10]
+e.numType=t[11]
+e.reward=t[12]
+e.text=t[13]
+e.jump=t[14]
+e.listNum=t[15]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/activity/DTNewHandTargetEntityTableData')
+end
+return a 

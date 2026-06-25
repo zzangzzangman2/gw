@@ -1,0 +1,32 @@
+local a={id=0,taskGroup=0,tasktype={},taskParameters1=0,taskParameters2=0,rarity=0,depict1="",depict2=""}
+a.__index=a
+function a.New(i,h,n,t,d,r,s,o)
+local e={}
+setmetatable(e,a)
+e.id=i
+e.taskGroup=h
+e.tasktype=n
+e.taskParameters1=t
+e.taskParameters2=d
+e.rarity=r
+e.depict1=s
+e.depict2=o
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.taskGroup=t[2]
+e.tasktype=t[3]
+e.taskParameters1=t[4]
+e.taskParameters2=t[5]
+e.rarity=t[6]
+e.depict1=t[7]
+e.depict2=t[8]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/activity/DTActivityWarehouseTaskEntityTableData')
+end
+return a 

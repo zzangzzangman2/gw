@@ -1,0 +1,36 @@
+local a={id=0,num=0,eventWeight={{},{}},cost={},experience={},scene="",sceneName="",awardIcon={},animSpeed={},stageColor={}}
+a.__index=a
+function a.New(n,r,s,t,l,u,d,h,o,i)
+local e={}
+setmetatable(e,a)
+e.id=n
+e.num=r
+e.eventWeight=s
+e.cost=t
+e.experience=l
+e.scene=u
+e.sceneName=d
+e.awardIcon=h
+e.animSpeed=o
+e.stageColor=i
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.num=t[2]
+e.eventWeight=t[3]
+e.cost=t[4]
+e.experience=t[5]
+e.scene=t[6]
+e.sceneName=t[7]
+e.awardIcon=t[8]
+e.animSpeed=t[9]
+e.stageColor=t[10]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/activity/DTActivityTravelEventEntityTableData')
+end
+return a 

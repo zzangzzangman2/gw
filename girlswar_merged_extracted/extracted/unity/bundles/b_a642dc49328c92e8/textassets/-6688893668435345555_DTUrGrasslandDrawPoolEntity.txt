@@ -1,0 +1,32 @@
+local a={id=0,poolId=0,type=0,award={},rate=0,displayRate=0,itemtype=0,typename=""}
+a.__index=a
+function a.New(i,h,n,t,d,r,s,o)
+local e={}
+setmetatable(e,a)
+e.id=i
+e.poolId=h
+e.type=n
+e.award=t
+e.rate=d
+e.displayRate=r
+e.itemtype=s
+e.typename=o
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.poolId=t[2]
+e.type=t[3]
+e.award=t[4]
+e.rate=t[5]
+e.displayRate=t[6]
+e.itemtype=t[7]
+e.typename=t[8]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/urgrassland/DTUrGrasslandDrawPoolEntityTableData')
+end
+return a 

@@ -1,0 +1,34 @@
+local a={id=0,themeId=0,plotId=0,progress=0,reward={{},{}},bigReward=0,headline="",depiction="",bgImg=""}
+a.__index=a
+function a.New(i,h,n,t,d,l,r,s,o)
+local e={}
+setmetatable(e,a)
+e.id=i
+e.themeId=h
+e.plotId=n
+e.progress=t
+e.reward=d
+e.bigReward=l
+e.headline=r
+e.depiction=s
+e.bgImg=o
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.themeId=t[2]
+e.plotId=t[3]
+e.progress=t[4]
+e.reward=t[5]
+e.bigReward=t[6]
+e.headline=t[7]
+e.depiction=t[8]
+e.bgImg=t[9]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/activity/DTCrowsTheatrePlotEntityTableData')
+end
+return a 

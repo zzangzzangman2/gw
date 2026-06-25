@@ -1,0 +1,44 @@
+local a={id=0,taskType=0,taskTypeNew=0,day=0,targetCount={},targetCountNew={},award={},awardNew={},isClose=0,isCloseNew=0,jumpId=0,jumpIdNew=0,desc="",descNew=""}
+a.__index=a
+function a.New(s,l,r,t,u,m,f,w,c,d,i,o,n,h)
+local e={}
+setmetatable(e,a)
+e.id=s
+e.taskType=l
+e.taskTypeNew=r
+e.day=t
+e.targetCount=u
+e.targetCountNew=m
+e.award=f
+e.awardNew=w
+e.isClose=c
+e.isCloseNew=d
+e.jumpId=i
+e.jumpIdNew=o
+e.desc=n
+e.descNew=h
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.taskType=t[2]
+e.taskTypeNew=t[3]
+e.day=t[4]
+e.targetCount=t[5]
+e.targetCountNew=t[6]
+e.award=t[7]
+e.awardNew=t[8]
+e.isClose=t[9]
+e.isCloseNew=t[10]
+e.jumpId=t[11]
+e.jumpIdNew=t[12]
+e.desc=t[13]
+e.descNew=t[14]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/activity/DTNewestSevenCarnivalLimitEntityTableData')
+end
+return a 

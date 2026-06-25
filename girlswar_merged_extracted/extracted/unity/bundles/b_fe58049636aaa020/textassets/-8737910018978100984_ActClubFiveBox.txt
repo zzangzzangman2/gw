@@ -1,0 +1,57 @@
+
+?
+
+ActClubFiveBox.proto"J
+PRT_CLUB_FIVE_GIFT
+giftDid (RgiftDid
+buyCount (RbuyCount"
+PRT_CLUB_FIVE_BOX_INFO_REQ"?
+PRT_CLUB_FIVE_BOX_INFO_RESP
+overTime (RoverTime
+pointDid (RpointDid
+
+pointScore (R
+pointScore
+
+totalScore (R
+totalScore,
+receivedRoundDids (RreceivedRoundDids"L
+PRT_CLUB_FIVE_BOX_DRAW_REQ
+itemDid (RitemDid
+count (Rcount"?
+PRT_CLUB_FIVE_BOX_DRAW_RESP
+itemDid (RitemDid
+count (Rcount
+
+totalScore (R
+totalScore
+
+pointScore (R
+pointScore"#
+!PRT_CLUB_FIVE_BOX_POINT_AWARD_REQ"`
+"PRT_CLUB_FIVE_BOX_POINT_AWARD_RESP
+pointDid (RpointDid
+
+pointScore (R
+pointScore"?
+!PRT_CLUB_FIVE_BOX_ROUND_AWARD_REQ
+roundDid (RroundDid"n
+"PRT_CLUB_FIVE_BOX_ROUND_AWARD_RESP
+roundDid (RroundDid,
+receivedRoundDids (RreceivedRoundDids"!
+PRT_CLUB_FIVE_BOX_GIFT_INFO_REQ"M
+ PRT_CLUB_FIVE_BOX_GIFT_INFO_RESP)
+gifts (2.PRT_CLUB_FIVE_GIFTRgifts";
+PRT_CLUB_FIVE_BOX_GIFT_FREE_REQ
+giftDid (RgiftDid"g
+ PRT_CLUB_FIVE_BOX_GIFT_FREE_RESP
+giftDid (RgiftDid)
+gifts (2.PRT_CLUB_FIVE_GIFTRgifts"P
+PRT_CLUB_FIVE_BOX_GIFT_BUY_REQ
+giftDid (RgiftDid
+count (Rcount"|
+PRT_CLUB_FIVE_BOX_GIFT_BUY_RESP
+giftDid (RgiftDid
+count (Rcount)
+gifts (2.PRT_CLUB_FIVE_GIFTRgiftsB
+com.next1b.nextsvr.protobproto3

@@ -1,0 +1,12 @@
+SP_heroname_1050.png
+size:223,240
+filter:Linear,Linear
+images/1050
+bounds:2,2,236,64
+offsets:1,2,327,70
+rotate:90
+images/ssr
+bounds:68,20,153,79
+images/t3
+bounds:68,101,137,137
+offsets:31,32,214,200

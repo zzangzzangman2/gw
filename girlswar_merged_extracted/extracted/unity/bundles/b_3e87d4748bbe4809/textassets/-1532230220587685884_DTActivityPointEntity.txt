@@ -1,0 +1,26 @@
+local e={id=0,name="",desc="",icon="",jump={}}
+e.__index=e
+function e.New(o,n,a,s,i)
+local t={}
+setmetatable(t,e)
+t.id=o
+t.name=n
+t.desc=a
+t.icon=s
+t.jump=i
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.name=a[2]
+t.desc=a[3]
+t.icon=a[4]
+t.jump=a[5]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/activity/DTActivityPointEntityTableData')
+end
+return e 

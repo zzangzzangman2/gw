@@ -1,0 +1,16 @@
+
+?
+ActBubble.proto"
+PRT_BUBBLE_INFO_REQ"N
+PRT_BUBBLE_INFO_RESP
+	unLockDid (R	unLockDid
+endTime (RendTime"'
+PRT_BUBBLE_FREE_REQ
+did (Rdid"4
+PRT_BUBBLE_FREE_RESP
+	unLockDid (R	unLockDid"&
+PRT_BUBBLE_BUY_REQ
+did (Rdid"3
+PRT_BUBBLE_BUY_RESP
+	unLockDid (R	unLockDidB
+com.next1b.nextsvr.protobproto3

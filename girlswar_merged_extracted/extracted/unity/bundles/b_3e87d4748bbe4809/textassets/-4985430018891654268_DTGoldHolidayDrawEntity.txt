@@ -1,0 +1,24 @@
+local e={id=0,minNum=0,maxNum=0,floorPool=0}
+e.__index=e
+function e.New(o,a,n,i)
+local t={}
+setmetatable(t,e)
+t.id=o
+t.minNum=a
+t.maxNum=n
+t.floorPool=i
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.minNum=a[2]
+t.maxNum=a[3]
+t.floorPool=a[4]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/activity/DTGoldHolidayDrawEntityTableData')
+end
+return e 

@@ -1,0 +1,14 @@
+local e=
+{
+ByIdx={
+{1001,1,{1,1},-1,-1,-1,"hzzz_icon_chuansongmen","",0,1,1,1},
+{2001,2,{1,1},1,2,3,"hzzz_shuomingicon01","filpCard_box_name1",14080001,5,1,1.7},
+{2002,2,{2,2},1,2,3,"hzzz_shuomingicon02","filpCard_box_name2",14080002,4,2,1},
+{2003,2,{3,2},1,2,3,"hzzz_shuomingicon03","filpCard_box_name3",14080003,3,3,1},
+{2004,2,{2,2},4,2,0,"hzzz_shuomingicon04","filpCard_box_name4",14080004,2,4,1},
+{3001,3,{1,1},-1,1,-1,"hzzz_icon_jiangli","",0,0,0,1},
+{4001,4,{1,1},-1,-1,-1,"hzzz_icon_zhadan","",0,0,0,1}
+},
+Len=7
+}
+return e 

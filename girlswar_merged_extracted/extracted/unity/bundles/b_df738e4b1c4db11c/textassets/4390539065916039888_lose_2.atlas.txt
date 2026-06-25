@@ -1,0 +1,11 @@
+lose_2.png
+size:2048,2048
+filter:Linear,Linear
+bg4
+bounds:2,924,1677,755
+win_n_10
+bounds:2,204,823,718
+offsets:0,0,823,720
+win_n_11
+bounds:827,202,795,720
+offsets:0,0,823,720

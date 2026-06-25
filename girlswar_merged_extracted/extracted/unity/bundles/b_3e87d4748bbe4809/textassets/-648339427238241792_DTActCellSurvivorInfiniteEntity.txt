@@ -1,0 +1,32 @@
+local a={id=0,group=0,unlockLevel=0,name="",mapPrefab="",startMonster={},circulationMonster={},circulationUp=0}
+a.__index=a
+function a.New(i,h,n,t,d,r,s,o)
+local e={}
+setmetatable(e,a)
+e.id=i
+e.group=h
+e.unlockLevel=n
+e.name=t
+e.mapPrefab=d
+e.startMonster=r
+e.circulationMonster=s
+e.circulationUp=o
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.group=t[2]
+e.unlockLevel=t[3]
+e.name=t[4]
+e.mapPrefab=t[5]
+e.startMonster=t[6]
+e.circulationMonster=t[7]
+e.circulationUp=t[8]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/activity/DTActCellSurvivorInfiniteEntityTableData')
+end
+return a 

@@ -1,0 +1,38 @@
+local a={id=0,diceCost={},shopCost={},beginFishJumpPoint=0,tenConsecutiveOpen=0,goods=0,fundAward={},shopGril=0,iconographyProve=0,atlasId=0,prefabIdEnd={}}
+a.__index=a
+function a.New(n,r,s,t,l,u,c,d,h,o,i)
+local e={}
+setmetatable(e,a)
+e.id=n
+e.diceCost=r
+e.shopCost=s
+e.beginFishJumpPoint=t
+e.tenConsecutiveOpen=l
+e.goods=u
+e.fundAward=c
+e.shopGril=d
+e.iconographyProve=h
+e.atlasId=o
+e.prefabIdEnd=i
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.diceCost=t[2]
+e.shopCost=t[3]
+e.beginFishJumpPoint=t[4]
+e.tenConsecutiveOpen=t[5]
+e.goods=t[6]
+e.fundAward=t[7]
+e.shopGril=t[8]
+e.iconographyProve=t[9]
+e.atlasId=t[10]
+e.prefabIdEnd=t[11]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/activity/DTFishJumpEntityTableData')
+end
+return a 

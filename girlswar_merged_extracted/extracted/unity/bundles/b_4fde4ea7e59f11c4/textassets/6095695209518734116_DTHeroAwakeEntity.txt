@@ -1,0 +1,64 @@
+local a={id=0,rankLevel=0,rankStar=0,unlockOrder=0,profession=0,expert=0,star=0,consumNum=0,consumSoleNum=0,name="",icon="",atk=0,def=0,hp=0,critical=0,blockRes=0,block=0,criticalDmg=0,blood=0,injureRes=0,EXSkilllnjure=0,first=0,cityRate=0,attrs={}}
+a.__index=a
+function a.New(u,w,m,t,v,p,y,g,q,k,x,j,z,b,f,h,s,n,o,i,r,l,d,c)
+local e={}
+setmetatable(e,a)
+e.id=u
+e.rankLevel=w
+e.rankStar=m
+e.unlockOrder=t
+e.profession=v
+e.expert=p
+e.star=y
+e.consumNum=g
+e.consumSoleNum=q
+e.name=k
+e.icon=x
+e.atk=j
+e.def=z
+e.hp=b
+e.critical=f
+e.blockRes=h
+e.block=s
+e.criticalDmg=n
+e.blood=o
+e.injureRes=i
+e.EXSkilllnjure=r
+e.first=l
+e.cityRate=d
+e.attrs=c
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.rankLevel=t[2]
+e.rankStar=t[3]
+e.unlockOrder=t[4]
+e.profession=t[5]
+e.expert=t[6]
+e.star=t[7]
+e.consumNum=t[8]
+e.consumSoleNum=t[9]
+e.name=t[10]
+e.icon=t[11]
+e.atk=t[12]
+e.def=t[13]
+e.hp=t[14]
+e.critical=t[15]
+e.blockRes=t[16]
+e.block=t[17]
+e.criticalDmg=t[18]
+e.blood=t[19]
+e.injureRes=t[20]
+e.EXSkilllnjure=t[21]
+e.first=t[22]
+e.cityRate=t[23]
+e.attrs=t[24]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/hero/DTHeroAwakeEntityTableData')
+end
+return a 

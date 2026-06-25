@@ -1,0 +1,28 @@
+local e={id=0,type=0,num=0,award={},text="",awardNew={}}
+e.__index=e
+function e.New(a,i,o,h,s,n)
+local t={}
+setmetatable(t,e)
+t.id=a
+t.type=i
+t.num=o
+t.award=h
+t.text=s
+t.awardNew=n
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.type=a[2]
+t.num=a[3]
+t.award=a[4]
+t.text=a[5]
+t.awardNew=a[6]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/cityWar/DTCityWarTaskEntityTableData')
+end
+return e 

@@ -1,0 +1,38 @@
+{
+  "generated_at": "2026-06-25 13:00:06",
+  "base": "C:\\Users\\godho\\Downloads\\girlswar",
+  "xapk": {
+    "exists": true,
+    "ready_to_delete": true,
+    "entry_count": 5,
+    "matched_entries": 5,
+    "missing_entries": 0,
+    "mismatch_entries": 0,
+    "extracted_missing_entries": 0,
+    "note": "All XAPK entries are present as exact split_apks copies."
+  },
+  "com_dir": {
+    "exists": true,
+    "ready_to_delete": true,
+    "file_count": 6154,
+    "total_size": 2565300703,
+    "covered_count": 6154,
+    "not_needed_cache_count": 28,
+    "older_duplicate_count": 346,
+    "unresolved_count": 0,
+    "by_status": {
+      "covered_as_latest_winner": 5756,
+      "runtime_shader_cache_not_needed": 28,
+      "covered_by_newer_duplicate": 346,
+      "covered_in_il2cpp_native": 24
+    },
+    "note": "All useful files are merged, copied, or intentionally discarded as runtime shader cache."
+  },
+  "deleted_in_this_run": [
+    "C:\\Users\\godho\\Downloads\\girlswar\\girl1.xapk",
+    "C:\\Users\\godho\\Downloads\\girlswar\\com.girlwars.kr"
+  ],
+  "csv": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_maininterface_unity\\Assets\\RestoreData\\reports\\source_disposal_file_coverage.csv",
+  "json": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_maininterface_unity\\Assets\\RestoreData\\reports\\source_disposal_readiness_summary.json",
+  "markdown": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\source_cleanup\\SOURCE_DISPOSAL_READINESS.md"
+}

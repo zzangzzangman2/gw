@@ -1,0 +1,50 @@
+local a={id=0,shopCost={},investCost=0,goods=0,sevenDayGoods=0,reward={{},{}},order={},iconographyProve=0,atlasId=0,playerRankNum=0,guildRankNum=0,taskShowModelId=0,dayExchangeNum=0,autoExchange={},activityStage=0,activityStageFORMULA="",audioId={}}
+a.__index=a
+function a.New(h,u,d,t,m,c,w,p,y,v,f,l,n,i,o,s,r)
+local e={}
+setmetatable(e,a)
+e.id=h
+e.shopCost=u
+e.investCost=d
+e.goods=t
+e.sevenDayGoods=m
+e.reward=c
+e.order=w
+e.iconographyProve=p
+e.atlasId=y
+e.playerRankNum=v
+e.guildRankNum=f
+e.taskShowModelId=l
+e.dayExchangeNum=n
+e.autoExchange=i
+e.activityStage=o
+e.activityStageFORMULA=s
+e.audioId=r
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.shopCost=t[2]
+e.investCost=t[3]
+e.goods=t[4]
+e.sevenDayGoods=t[5]
+e.reward=t[6]
+e.order=t[7]
+e.iconographyProve=t[8]
+e.atlasId=t[9]
+e.playerRankNum=t[10]
+e.guildRankNum=t[11]
+e.taskShowModelId=t[12]
+e.dayExchangeNum=t[13]
+e.autoExchange=t[14]
+e.activityStage=t[15]
+e.activityStageFORMULA=t[16]
+e.audioId=t[17]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/activity/DTIslandBaseEntityTableData')
+end
+return a 

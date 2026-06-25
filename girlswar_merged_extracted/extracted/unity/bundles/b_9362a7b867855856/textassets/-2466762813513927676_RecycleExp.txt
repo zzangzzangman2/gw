@@ -1,0 +1,12 @@
+
+?
+RecycleExp.proto"
+PRT_RECYCLE_EXP_INFO_REQ"O
+PRT_RECYCLE_EXP_INFO_RESP
+awardExp (RawardExp
+costHC (RcostHC"
+PRT_RECYCLE_EXP_AWARD_REQ"P
+PRT_RECYCLE_EXP_AWARD_RESP
+awardExp (RawardExp
+costHC (RcostHCB
+com.next1b.nextsvr.protobproto3

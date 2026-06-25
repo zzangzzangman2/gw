@@ -1,0 +1,7 @@
+butterfly.png
+size:128,256
+filter:Linear,Linear
+itemicon_huajia
+bounds:2,2,65,52
+itemicon_huajiadi
+bounds:2,56,83,87

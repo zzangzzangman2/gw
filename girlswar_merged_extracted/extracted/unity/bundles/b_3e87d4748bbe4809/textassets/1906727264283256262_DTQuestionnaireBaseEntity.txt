@@ -1,0 +1,30 @@
+local t={id=0,type=0,maximumWordCount1=0,maximumWordCount2=0,reward={{},{}},timeLimit=0,unlockMap=0}
+t.__index=t
+function t.New(o,h,a,s,r,n,i)
+local e={}
+setmetatable(e,t)
+e.id=o
+e.type=h
+e.maximumWordCount1=a
+e.maximumWordCount2=s
+e.reward=r
+e.timeLimit=n
+e.unlockMap=i
+return e
+end
+function t.NewFromArrItem(a)
+local e={}
+setmetatable(e,t)
+e.id=a[1]
+e.type=a[2]
+e.maximumWordCount1=a[3]
+e.maximumWordCount2=a[4]
+e.reward=a[5]
+e.timeLimit=a[6]
+e.unlockMap=a[7]
+return e
+end
+function t.GetArr()
+return require('DataNode/DataTable/Create/activity/DTQuestionnaireBaseEntityTableData')
+end
+return t 

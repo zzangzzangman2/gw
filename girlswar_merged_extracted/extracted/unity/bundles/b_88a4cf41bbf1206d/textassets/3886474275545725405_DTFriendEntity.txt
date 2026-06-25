@@ -1,0 +1,28 @@
+local e={id=0,getMaxGiftCount=0,maxApplyCount=0,againFindTime=0,notLiveTime=0,pushFriendCount=0}
+e.__index=e
+function e.New(a,i,o,h,s,n)
+local t={}
+setmetatable(t,e)
+t.id=a
+t.getMaxGiftCount=i
+t.maxApplyCount=o
+t.againFindTime=h
+t.notLiveTime=s
+t.pushFriendCount=n
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.getMaxGiftCount=a[2]
+t.maxApplyCount=a[3]
+t.againFindTime=a[4]
+t.notLiveTime=a[5]
+t.pushFriendCount=a[6]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/friend/DTFriendEntityTableData')
+end
+return e 

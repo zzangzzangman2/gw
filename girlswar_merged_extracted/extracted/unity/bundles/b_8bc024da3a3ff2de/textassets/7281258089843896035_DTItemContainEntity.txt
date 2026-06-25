@@ -1,0 +1,32 @@
+local a={id=0,contain={{},{}},containNew={{},{}},itemDesc="",itemDescNew="",jump={},jumpNew={},jumpNewdata4_2={}}
+a.__index=a
+function a.New(i,h,n,t,d,r,s,o)
+local e={}
+setmetatable(e,a)
+e.id=i
+e.contain=h
+e.containNew=n
+e.itemDesc=t
+e.itemDescNew=d
+e.jump=r
+e.jumpNew=s
+e.jumpNewdata4_2=o
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.contain=t[2]
+e.containNew=t[3]
+e.itemDesc=t[4]
+e.itemDescNew=t[5]
+e.jump=t[6]
+e.jumpNew=t[7]
+e.jumpNewdata4_2=t[8]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/item/DTItemContainEntityTableData')
+end
+return a 

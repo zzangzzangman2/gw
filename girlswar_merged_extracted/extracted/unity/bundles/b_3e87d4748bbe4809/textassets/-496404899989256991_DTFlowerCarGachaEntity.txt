@@ -1,0 +1,24 @@
+local e={id=0,type=0,award={},weight=0}
+e.__index=e
+function e.New(o,a,n,i)
+local t={}
+setmetatable(t,e)
+t.id=o
+t.type=a
+t.award=n
+t.weight=i
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.type=a[2]
+t.award=a[3]
+t.weight=a[4]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/activity/DTFlowerCarGachaEntityTableData')
+end
+return e 

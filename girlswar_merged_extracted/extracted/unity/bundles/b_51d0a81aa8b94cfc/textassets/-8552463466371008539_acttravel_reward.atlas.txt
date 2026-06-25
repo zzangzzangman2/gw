@@ -1,0 +1,11 @@
+acttravel_reward.png
+size:256,256
+filter:Linear,Linear
+qinghe_baoxiang1
+bounds:0,0,78,78
+qinghe_baoxiang2
+bounds:121,38,78,78
+qinghe_baoxiang3
+bounds:121,117,78,78
+qinghe_baoxiangguang
+bounds:0,79,120,116

@@ -1,0 +1,10 @@
+{
+  "bundle": "download/ui/uiprefabandres/maininterface.assetbundle",
+  "game_objects": 2471,
+  "mono_behaviours": 2819,
+  "images": 977,
+  "buttons": 261,
+  "texts": 495,
+  "canvas_groups": 0,
+  "scrollrects": 12
+}

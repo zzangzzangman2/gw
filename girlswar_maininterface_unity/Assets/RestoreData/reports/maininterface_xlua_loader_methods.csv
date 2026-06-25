@@ -1,0 +1,13 @@
+﻿symbol,dump_line,rva,signature_or_field
+XXTEAUtil.DecryptByteArray,437391,0x1C79B00,public static string DecryptByteArray(byte[] source) { }
+XXTEAUtil.DecryptGetString,437398,0x1C79EF8,"public static string DecryptGetString(byte[] bytes, string key) { }"
+XXTEAUtil.DecryptGetArray,437401,0x1C7A04C,"public static string[] DecryptGetArray(byte[][] arr, string key) { }"
+LuaManager.Init,502822,0xD29558,public override void Init() { }
+LuaManager.InitLuaFunction,502825,0xD29BA0,private void InitLuaFunction() { }
+LuaManager.LoadLuaAssetBundle,502828,0xD2A1E4,private void LoadLuaAssetBundle() { }
+LuaManager.MyLoader,502831,0xD2A5A0,private byte[] MyLoader(ref string filePath) { }
+LuaManager.GetLuaBuff,502834,0xD2A664,"private byte[] GetLuaBuff(string filePath, bool isLuaUIFile) { }"
+LuaManager.LoadUIScript,502840,0xD2ADCC,"public object[] LoadUIScript(string fileName, string chunkName = ""chunk"", LuaTable env) { }"
+LuaForm.LuaScriptPath,502196,,public string LuaScriptPath; // 0x110
+LuaPage.LuaScriptPath,514276,,public string LuaScriptPath; // 0x78
+LuaUnit.LuaScriptPath,514497,,public string LuaScriptPath; // 0x58

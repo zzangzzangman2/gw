@@ -1,0 +1,42 @@
+local a={id=0,name="",giftName="",giftDesc="",rankBanner="",shopBanner="",rankScoreName="",rankScoreIcon="",rankMaxNumber=0,previewTime=0,isShow=0,jumpId=0,isShowGoods=0}
+a.__index=a
+function a.New(s,d,h,t,l,c,m,f,u,r,i,o,n)
+local e={}
+setmetatable(e,a)
+e.id=s
+e.name=d
+e.giftName=h
+e.giftDesc=t
+e.rankBanner=l
+e.shopBanner=c
+e.rankScoreName=m
+e.rankScoreIcon=f
+e.rankMaxNumber=u
+e.previewTime=r
+e.isShow=i
+e.jumpId=o
+e.isShowGoods=n
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.name=t[2]
+e.giftName=t[3]
+e.giftDesc=t[4]
+e.rankBanner=t[5]
+e.shopBanner=t[6]
+e.rankScoreName=t[7]
+e.rankScoreIcon=t[8]
+e.rankMaxNumber=t[9]
+e.previewTime=t[10]
+e.isShow=t[11]
+e.jumpId=t[12]
+e.isShowGoods=t[13]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/activity/DTRankCycleEntityTableData')
+end
+return a 

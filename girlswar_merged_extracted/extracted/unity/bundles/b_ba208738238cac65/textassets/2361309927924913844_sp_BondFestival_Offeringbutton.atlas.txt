@@ -1,0 +1,14 @@
+sp_BondFestival_Offeringbutton.png
+size:512,256
+filter:Linear,Linear
+bk
+bounds:214,61,190,189
+rotate:90
+nyxyx_pao
+bounds:0,21,212,230
+pingzi
+bounds:405,61,35,70
+wan
+bounds:317,25,89,34
+wenzi
+bounds:214,0,101,59

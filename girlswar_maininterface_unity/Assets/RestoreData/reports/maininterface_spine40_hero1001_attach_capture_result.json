@@ -1,0 +1,396 @@
+﻿{
+    "status": "hero1001_spine_rendered_in_probe",
+    "generatedAt": "2026-06-25 14:33:00",
+    "sourceScenePath": "Assets/Scenes/MainInterface_Wireframe.unity",
+    "probeScenePath": "Assets/Scenes/MainInterface_Wireframe_Hero1001SpineProbe.unity",
+    "heroParentName": "UI_heroSpine__-5284402592931468190",
+    "restoreRootName": "Restore_Hero1001_SpineRoot",
+    "homePara": "[1,0,0]",
+    "layerCount": 4,
+    "layers": [
+        {
+            "layerName": "Painting_1001_back",
+            "gameObjectName": "Restore_Hero1001_Painting_1001_back",
+            "skeletonDataAsset": "Assets/RestoreData/hero1001_spine_source_raw/paintingprefabandres_1001/Painting_1001_Back_SkeletonData.asset",
+            "animation": "A",
+            "bones": 32,
+            "slots": 3,
+            "skins": 1,
+            "animations": 4,
+            "material": "Painting_1001_Back_Material.mat",
+            "additiveMaterial": "",
+            "screenMaterial": "Painting_1001_Back_Material-Screen.mat",
+            "matchedBounds": true,
+            "vertexCount": 0,
+            "canvasRendererCount": 4,
+            "rectWidth": 3203.806396484375,
+            "rectHeight": 1896.5059814453125,
+            "pivotX": 0.4755207300186157,
+            "pivotY": 0.5004009008407593,
+            "layerCapture": {
+                "label": "layer_Painting_1001_back",
+                "capturePath": "Assets/RestoreCaptures/maininterface_spine_hero1001_probe_layer_Painting_1001_back_1680x720.png",
+                "width": 1680,
+                "height": 720,
+                "alphaPixelCount": 1165680,
+                "visiblePixelCount": 1165680,
+                "uniqueColorCount": 307991,
+                "boundsMinX": 61,
+                "boundsMinY": 0,
+                "boundsMaxX": 1679,
+                "boundsMaxY": 719
+            }
+        },
+        {
+            "layerName": "Painting_1001",
+            "gameObjectName": "Restore_Hero1001_Painting_1001",
+            "skeletonDataAsset": "Assets/RestoreData/hero1001_spine_source_raw/paintingprefabandres_1001/Painting_1001_SkeletonData.asset",
+            "animation": "A",
+            "bones": 326,
+            "slots": 146,
+            "skins": 1,
+            "animations": 4,
+            "material": "Painting_1001_Material.mat",
+            "additiveMaterial": "Painting_1001_Material-Additive.mat",
+            "screenMaterial": "Painting_1001_Material-Screen.mat",
+            "matchedBounds": true,
+            "vertexCount": 0,
+            "canvasRendererCount": 44,
+            "rectWidth": 1073.3389892578125,
+            "rectHeight": 955.410888671875,
+            "pivotX": 0.4645980894565582,
+            "pivotY": 0.4531422257423401,
+            "layerCapture": {
+                "label": "layer_Painting_1001",
+                "capturePath": "Assets/RestoreCaptures/maininterface_spine_hero1001_probe_layer_Painting_1001_1680x720.png",
+                "width": 1680,
+                "height": 720,
+                "alphaPixelCount": 402511,
+                "visiblePixelCount": 402344,
+                "uniqueColorCount": 127310,
+                "boundsMinX": 379,
+                "boundsMinY": 0,
+                "boundsMaxX": 1451,
+                "boundsMaxY": 719
+            }
+        },
+        {
+            "layerName": "Painting_1001_front",
+            "gameObjectName": "Restore_Hero1001_Painting_1001_front",
+            "skeletonDataAsset": "Assets/RestoreData/hero1001_spine_source_raw/paintingprefabandres_1001/Painting_1001_Front_SkeletonData.asset",
+            "animation": "A",
+            "bones": 39,
+            "slots": 4,
+            "skins": 1,
+            "animations": 4,
+            "material": "Painting_1001_Front_Material.mat",
+            "additiveMaterial": "Painting_1001_Front_Material-Additive.mat",
+            "screenMaterial": "",
+            "matchedBounds": true,
+            "vertexCount": 0,
+            "canvasRendererCount": 3,
+            "rectWidth": 2538.89892578125,
+            "rectHeight": 1350.8099365234375,
+            "pivotX": 0.6625292897224426,
+            "pivotY": 0.6239104866981506,
+            "layerCapture": {
+                "label": "layer_Painting_1001_front",
+                "capturePath": "Assets/RestoreCaptures/maininterface_spine_hero1001_probe_layer_Painting_1001_front_1680x720.png",
+                "width": 1680,
+                "height": 720,
+                "alphaPixelCount": 140719,
+                "visiblePixelCount": 140624,
+                "uniqueColorCount": 81988,
+                "boundsMinX": 4,
+                "boundsMinY": 1,
+                "boundsMaxX": 1283,
+                "boundsMaxY": 694
+            }
+        },
+        {
+            "layerName": "SP_heroname_1001",
+            "gameObjectName": "Restore_Hero1001_SP_heroname_1001",
+            "skeletonDataAsset": "Assets/RestoreData/hero1001_spine_source_raw/paintingprefabandres_1001/SP_heroname_1001_SkeletonData.asset",
+            "animation": "A1",
+            "bones": 5,
+            "slots": 6,
+            "skins": 1,
+            "animations": 2,
+            "material": "SP_heroname_1001_Material.mat",
+            "additiveMaterial": "SP_heroname_1001_Material-Additive.mat",
+            "screenMaterial": "",
+            "matchedBounds": true,
+            "vertexCount": 0,
+            "canvasRendererCount": 3,
+            "rectWidth": 314.2479248046875,
+            "rectHeight": 161.13595581054688,
+            "pivotX": 0.22451044619083405,
+            "pivotY": 0.45353007316589358,
+            "layerCapture": {
+                "label": "layer_SP_heroname_1001",
+                "capturePath": "Assets/RestoreCaptures/maininterface_spine_hero1001_probe_layer_SP_heroname_1001_1680x720.png",
+                "width": 1680,
+                "height": 720,
+                "alphaPixelCount": 16630,
+                "visiblePixelCount": 16630,
+                "uniqueColorCount": 7456,
+                "boundsMinX": 857,
+                "boundsMinY": 294,
+                "boundsMaxX": 1066,
+                "boundsMaxY": 455
+            }
+        }
+    ],
+    "fullCapture": {
+        "label": "full",
+        "capturePath": "Assets/RestoreCaptures/maininterface_spine_hero1001_probe_1680x720.png",
+        "width": 1680,
+        "height": 720,
+        "alphaPixelCount": 1209600,
+        "visiblePixelCount": 1203061,
+        "uniqueColorCount": 364016,
+        "boundsMinX": 0,
+        "boundsMinY": 0,
+        "boundsMaxX": 1679,
+        "boundsMaxY": 719
+    },
+    "heroOnlyCapture": {
+        "label": "hero_only",
+        "capturePath": "Assets/RestoreCaptures/maininterface_spine_hero1001_probe_hero_only_1680x720.png",
+        "width": 1680,
+        "height": 720,
+        "alphaPixelCount": 1166049,
+        "visiblePixelCount": 1166048,
+        "uniqueColorCount": 376643,
+        "boundsMinX": 4,
+        "boundsMinY": 0,
+        "boundsMaxX": 1679,
+        "boundsMaxY": 719
+    },
+    "variants": [
+        {
+            "variantName": "main_only",
+            "suffix": "full",
+            "keepsNonHeroEnabled": true,
+            "enabledGameObjects": [
+                "Restore_Hero1001_Painting_1001"
+            ],
+            "capture": {
+                "label": "variant_main_only_full",
+                "capturePath": "Assets/RestoreCaptures/maininterface_spine_hero1001_probe_variant_main_only_full_1680x720.png",
+                "width": 1680,
+                "height": 720,
+                "alphaPixelCount": 1209600,
+                "visiblePixelCount": 1203057,
+                "uniqueColorCount": 199527,
+                "boundsMinX": 0,
+                "boundsMinY": 0,
+                "boundsMaxX": 1679,
+                "boundsMaxY": 719
+            }
+        },
+        {
+            "variantName": "main_front",
+            "suffix": "full",
+            "keepsNonHeroEnabled": true,
+            "enabledGameObjects": [
+                "Restore_Hero1001_Painting_1001",
+                "Restore_Hero1001_Painting_1001_front"
+            ],
+            "capture": {
+                "label": "variant_main_front_full",
+                "capturePath": "Assets/RestoreCaptures/maininterface_spine_hero1001_probe_variant_main_front_full_1680x720.png",
+                "width": 1680,
+                "height": 720,
+                "alphaPixelCount": 1209600,
+                "visiblePixelCount": 1203057,
+                "uniqueColorCount": 250590,
+                "boundsMinX": 0,
+                "boundsMinY": 0,
+                "boundsMaxX": 1679,
+                "boundsMaxY": 719
+            }
+        },
+        {
+            "variantName": "main_name",
+            "suffix": "full",
+            "keepsNonHeroEnabled": true,
+            "enabledGameObjects": [
+                "Restore_Hero1001_Painting_1001",
+                "Restore_Hero1001_SP_heroname_1001"
+            ],
+            "capture": {
+                "label": "variant_main_name_full",
+                "capturePath": "Assets/RestoreCaptures/maininterface_spine_hero1001_probe_variant_main_name_full_1680x720.png",
+                "width": 1680,
+                "height": 720,
+                "alphaPixelCount": 1209600,
+                "visiblePixelCount": 1203057,
+                "uniqueColorCount": 197083,
+                "boundsMinX": 0,
+                "boundsMinY": 0,
+                "boundsMaxX": 1679,
+                "boundsMaxY": 719
+            }
+        },
+        {
+            "variantName": "main_front_name",
+            "suffix": "full",
+            "keepsNonHeroEnabled": true,
+            "enabledGameObjects": [
+                "Restore_Hero1001_Painting_1001",
+                "Restore_Hero1001_Painting_1001_front",
+                "Restore_Hero1001_SP_heroname_1001"
+            ],
+            "capture": {
+                "label": "variant_main_front_name_full",
+                "capturePath": "Assets/RestoreCaptures/maininterface_spine_hero1001_probe_variant_main_front_name_full_1680x720.png",
+                "width": 1680,
+                "height": 720,
+                "alphaPixelCount": 1209600,
+                "visiblePixelCount": 1203057,
+                "uniqueColorCount": 247683,
+                "boundsMinX": 0,
+                "boundsMinY": 0,
+                "boundsMaxX": 1679,
+                "boundsMaxY": 719
+            }
+        },
+        {
+            "variantName": "all_layers_with_back",
+            "suffix": "full",
+            "keepsNonHeroEnabled": true,
+            "enabledGameObjects": [
+                "Restore_Hero1001_Painting_1001_back",
+                "Restore_Hero1001_Painting_1001",
+                "Restore_Hero1001_Painting_1001_front",
+                "Restore_Hero1001_SP_heroname_1001"
+            ],
+            "capture": {
+                "label": "variant_all_layers_with_back_full",
+                "capturePath": "Assets/RestoreCaptures/maininterface_spine_hero1001_probe_variant_all_layers_with_back_full_1680x720.png",
+                "width": 1680,
+                "height": 720,
+                "alphaPixelCount": 1209600,
+                "visiblePixelCount": 1203061,
+                "uniqueColorCount": 364016,
+                "boundsMinX": 0,
+                "boundsMinY": 0,
+                "boundsMaxX": 1679,
+                "boundsMaxY": 719
+            }
+        },
+        {
+            "variantName": "main_only",
+            "suffix": "hero_only",
+            "keepsNonHeroEnabled": false,
+            "enabledGameObjects": [
+                "Restore_Hero1001_Painting_1001"
+            ],
+            "capture": {
+                "label": "variant_main_only_hero_only",
+                "capturePath": "Assets/RestoreCaptures/maininterface_spine_hero1001_probe_variant_main_only_hero_only_1680x720.png",
+                "width": 1680,
+                "height": 720,
+                "alphaPixelCount": 402511,
+                "visiblePixelCount": 402344,
+                "uniqueColorCount": 127310,
+                "boundsMinX": 379,
+                "boundsMinY": 0,
+                "boundsMaxX": 1451,
+                "boundsMaxY": 719
+            }
+        },
+        {
+            "variantName": "main_front",
+            "suffix": "hero_only",
+            "keepsNonHeroEnabled": false,
+            "enabledGameObjects": [
+                "Restore_Hero1001_Painting_1001",
+                "Restore_Hero1001_Painting_1001_front"
+            ],
+            "capture": {
+                "label": "variant_main_front_hero_only",
+                "capturePath": "Assets/RestoreCaptures/maininterface_spine_hero1001_probe_variant_main_front_hero_only_1680x720.png",
+                "width": 1680,
+                "height": 720,
+                "alphaPixelCount": 427583,
+                "visiblePixelCount": 427414,
+                "uniqueColorCount": 179400,
+                "boundsMinX": 4,
+                "boundsMinY": 0,
+                "boundsMaxX": 1451,
+                "boundsMaxY": 719
+            }
+        },
+        {
+            "variantName": "main_name",
+            "suffix": "hero_only",
+            "keepsNonHeroEnabled": false,
+            "enabledGameObjects": [
+                "Restore_Hero1001_Painting_1001",
+                "Restore_Hero1001_SP_heroname_1001"
+            ],
+            "capture": {
+                "label": "variant_main_name_hero_only",
+                "capturePath": "Assets/RestoreCaptures/maininterface_spine_hero1001_probe_variant_main_name_hero_only_1680x720.png",
+                "width": 1680,
+                "height": 720,
+                "alphaPixelCount": 404935,
+                "visiblePixelCount": 404768,
+                "uniqueColorCount": 125051,
+                "boundsMinX": 379,
+                "boundsMinY": 0,
+                "boundsMaxX": 1451,
+                "boundsMaxY": 719
+            }
+        },
+        {
+            "variantName": "main_front_name",
+            "suffix": "hero_only",
+            "keepsNonHeroEnabled": false,
+            "enabledGameObjects": [
+                "Restore_Hero1001_Painting_1001",
+                "Restore_Hero1001_Painting_1001_front",
+                "Restore_Hero1001_SP_heroname_1001"
+            ],
+            "capture": {
+                "label": "variant_main_front_name_hero_only",
+                "capturePath": "Assets/RestoreCaptures/maininterface_spine_hero1001_probe_variant_main_front_name_hero_only_1680x720.png",
+                "width": 1680,
+                "height": 720,
+                "alphaPixelCount": 429890,
+                "visiblePixelCount": 429721,
+                "uniqueColorCount": 176520,
+                "boundsMinX": 4,
+                "boundsMinY": 0,
+                "boundsMaxX": 1451,
+                "boundsMaxY": 719
+            }
+        },
+        {
+            "variantName": "all_layers_with_back",
+            "suffix": "hero_only",
+            "keepsNonHeroEnabled": false,
+            "enabledGameObjects": [
+                "Restore_Hero1001_Painting_1001_back",
+                "Restore_Hero1001_Painting_1001",
+                "Restore_Hero1001_Painting_1001_front",
+                "Restore_Hero1001_SP_heroname_1001"
+            ],
+            "capture": {
+                "label": "variant_all_layers_with_back_hero_only",
+                "capturePath": "Assets/RestoreCaptures/maininterface_spine_hero1001_probe_variant_all_layers_with_back_hero_only_1680x720.png",
+                "width": 1680,
+                "height": 720,
+                "alphaPixelCount": 1166049,
+                "visiblePixelCount": 1166048,
+                "uniqueColorCount": 376643,
+                "boundsMinX": 4,
+                "boundsMinY": 0,
+                "boundsMaxX": 1679,
+                "boundsMaxY": 719
+            }
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+loading.png
+size:128,256
+filter:Linear,Linear
+tb_jz1
+bounds:2,131,101,94
+tb_jz2
+bounds:2,2,28,25
+tb_jz3
+bounds:53,47,35,31
+tb_jz4
+bounds:2,29,49,49
+tb_jz5
+bounds:53,80,49,49
+tb_jz6
+bounds:2,80,49,49
+tb_jz7
+bounds:53,15,30,30

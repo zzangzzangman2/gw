@@ -1,0 +1,30 @@
+local t={id=0,weight=0,chargeRate=0,info=0,luckyDesc1="",luckyDesc2="",spineId=0}
+t.__index=t
+function t.New(o,h,a,s,r,n,i)
+local e={}
+setmetatable(e,t)
+e.id=o
+e.weight=h
+e.chargeRate=a
+e.info=s
+e.luckyDesc1=r
+e.luckyDesc2=n
+e.spineId=i
+return e
+end
+function t.NewFromArrItem(a)
+local e={}
+setmetatable(e,t)
+e.id=a[1]
+e.weight=a[2]
+e.chargeRate=a[3]
+e.info=a[4]
+e.luckyDesc1=a[5]
+e.luckyDesc2=a[6]
+e.spineId=a[7]
+return e
+end
+function t.GetArr()
+return require('DataNode/DataTable/Create/calendar/DTActivityLuckyRateEntityTableData')
+end
+return t 

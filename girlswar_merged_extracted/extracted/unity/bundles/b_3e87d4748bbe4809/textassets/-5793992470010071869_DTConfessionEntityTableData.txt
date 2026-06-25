@@ -1,0 +1,17 @@
+local e=
+{
+ByIdx={
+{1,"2025-10-28 00:00:00",31072,"AnniversaryConfession_31072",1911,{{26835,1},{1001,300},{99361,100}},"Assets/Download/UI/UIPrefabAndRes/ActConfession_Ext_Prefabs/ActConfession_Map_1.prefab","UIHeroHead_elite/jyfb_31072",3107202},
+{2,"2025-10-29 00:00:00",31041,"AnniversaryConfession_31041",1912,{{26836,1},{1001,300},{99361,100}},"Assets/Download/UI/UIPrefabAndRes/ActConfession_Ext_Prefabs/ActConfession_Map_2.prefab","UIHeroHead_elite/jyfb_31041",3104102},
+{3,"2025-10-30 00:00:00",31070,"AnniversaryConfession_31070",1913,{{26837,1},{1001,300},{99361,100}},"Assets/Download/UI/UIPrefabAndRes/ActConfession_Ext_Prefabs/ActConfession_Map_3.prefab","UIHeroHead_elite/jyfb_31070",3107002},
+{4,"2025-10-31 00:00:00",31105,"AnniversaryConfession_31105",1914,{{26838,1},{1001,300},{99361,100}},"Assets/Download/UI/UIPrefabAndRes/ActConfession_Ext_Prefabs/ActConfession_Map_4.prefab","UIHeroHead_elite/jyfb_31105",3110502},
+{5,"2025-11-01 00:00:00",31103,"AnniversaryConfession_31103",1915,{{26839,1},{1001,300},{99361,100}},"Assets/Download/UI/UIPrefabAndRes/ActConfession_Ext_Prefabs/ActConfession_Map_5.prefab","UIHeroHead_elite/jyfb_31103",3110302},
+{6,"2025-11-02 00:00:00",21101,"AnniversaryConfession_21101",1916,{{26840,1},{1001,300},{99361,100}},"Assets/Download/UI/UIPrefabAndRes/ActConfession_Ext_Prefabs/ActConfession_Map_1.prefab","UIHeroHead_elite/jyfb_21101",2110102},
+{7,"2025-11-03 00:00:00",21029,"AnniversaryConfession_21029",1917,{{26841,1},{1001,300},{99361,100}},"Assets/Download/UI/UIPrefabAndRes/ActConfession_Ext_Prefabs/ActConfession_Map_2.prefab","UIHeroHead_elite/jyfb_21029",2102902},
+{8,"2025-11-04 00:00:00",21090,"AnniversaryConfession_21090",1918,{{26842,1},{1001,300},{99361,100}},"Assets/Download/UI/UIPrefabAndRes/ActConfession_Ext_Prefabs/ActConfession_Map_3.prefab","UIHeroHead_elite/jyfb_21090",2109002},
+{9,"2025-11-05 00:00:00",21084,"AnniversaryConfession_21084",1919,{{26843,1},{1001,300},{99361,100}},"Assets/Download/UI/UIPrefabAndRes/ActConfession_Ext_Prefabs/ActConfession_Map_4.prefab","UIHeroHead_elite/jyfb_21084",2108402},
+{10,"2025-11-06 00:00:00",21087,"AnniversaryConfession_21087",1920,{{26844,1},{1001,300},{99361,100}},"Assets/Download/UI/UIPrefabAndRes/ActConfession_Ext_Prefabs/ActConfession_Map_5.prefab","UIHeroHead_elite/jyfb_21087",2108702}
+},
+Len=10
+}
+return e 

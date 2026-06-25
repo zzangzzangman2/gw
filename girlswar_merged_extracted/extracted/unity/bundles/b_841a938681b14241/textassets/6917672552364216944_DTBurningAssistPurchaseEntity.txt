@@ -1,0 +1,78 @@
+local a={id=0,hp=0,atk=0,def=0,critical=0,criticalRes=0,criticalStrength=0,block=0,blockRes=0,blockStrength=0,injure=0,injureRes=0,control=0,controlRes=0,blood=0,thorn=0,heal=0,ProfRes=0,ProfResed=0,eXSkillINjure=0,eXSkillINjureRes=0,fury=0,first=0,soulId=0,ExclusiveweaponsStar=0,rankLevel=0,heroId=0,score=0,camp=0,amountPurchase={},perRefund=0}
+a.__index=a
+function a.New(u,v,y,t,q,j,k,b,g,z,T,_,O,I,A,E,N,x,p,r,s,h,n,o,i,d,c,l,f,w,m)
+local e={}
+setmetatable(e,a)
+e.id=u
+e.hp=v
+e.atk=y
+e.def=t
+e.critical=q
+e.criticalRes=j
+e.criticalStrength=k
+e.block=b
+e.blockRes=g
+e.blockStrength=z
+e.injure=T
+e.injureRes=_
+e.control=O
+e.controlRes=I
+e.blood=A
+e.thorn=E
+e.heal=N
+e.ProfRes=x
+e.ProfResed=p
+e.eXSkillINjure=r
+e.eXSkillINjureRes=s
+e.fury=h
+e.first=n
+e.soulId=o
+e.ExclusiveweaponsStar=i
+e.rankLevel=d
+e.heroId=c
+e.score=l
+e.camp=f
+e.amountPurchase=w
+e.perRefund=m
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.hp=t[2]
+e.atk=t[3]
+e.def=t[4]
+e.critical=t[5]
+e.criticalRes=t[6]
+e.criticalStrength=t[7]
+e.block=t[8]
+e.blockRes=t[9]
+e.blockStrength=t[10]
+e.injure=t[11]
+e.injureRes=t[12]
+e.control=t[13]
+e.controlRes=t[14]
+e.blood=t[15]
+e.thorn=t[16]
+e.heal=t[17]
+e.ProfRes=t[18]
+e.ProfResed=t[19]
+e.eXSkillINjure=t[20]
+e.eXSkillINjureRes=t[21]
+e.fury=t[22]
+e.first=t[23]
+e.soulId=t[24]
+e.ExclusiveweaponsStar=t[25]
+e.rankLevel=t[26]
+e.heroId=t[27]
+e.score=t[28]
+e.camp=t[29]
+e.amountPurchase=t[30]
+e.perRefund=t[31]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/burning/DTBurningAssistPurchaseEntityTableData')
+end
+return a 

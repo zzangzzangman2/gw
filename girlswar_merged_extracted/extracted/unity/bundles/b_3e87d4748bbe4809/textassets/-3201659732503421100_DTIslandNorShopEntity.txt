@@ -1,0 +1,32 @@
+local a={id=0,activityStage=0,unlock=0,wheel=0,nextcount=0,limit=0,award={},price={}}
+a.__index=a
+function a.New(i,h,n,t,d,r,s,o)
+local e={}
+setmetatable(e,a)
+e.id=i
+e.activityStage=h
+e.unlock=n
+e.wheel=t
+e.nextcount=d
+e.limit=r
+e.award=s
+e.price=o
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.activityStage=t[2]
+e.unlock=t[3]
+e.wheel=t[4]
+e.nextcount=t[5]
+e.limit=t[6]
+e.award=t[7]
+e.price=t[8]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/activity/DTIslandNorShopEntityTableData')
+end
+return a 

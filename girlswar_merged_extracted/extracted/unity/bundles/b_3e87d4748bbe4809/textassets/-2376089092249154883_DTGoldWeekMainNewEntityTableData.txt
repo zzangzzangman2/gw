@@ -1,0 +1,19 @@
+local e=
+{
+ByIdx={
+{16,1,14020018,0,1,1,16,{0},"UIGoldweekNewName_1"},
+{624,2,14020019,0,2,1,624,{0},"UIGoldweekNewName_2"},
+{839,3,14020020,0,3,1,839,{0},"UIGoldweekNewName_3"},
+{282,4,14020021,0,4,1,282,{0},"UIGoldweekNewName_4"},
+{815,5,14020022,0,5,1,815,{0},"UIGoldweekNewName_5"},
+{130,6,14020023,0,6,1,130,{0},"UIGoldweekNewName_6"},
+{834,7,14020024,0,7,1,834,{0},"UIGoldweekNewName_7"},
+{46,8,14020025,0,8,1,46,{0},"UIGoldweekNewName_8"},
+{806,9,14020026,0,9,1,806,{0},"UIGoldweekNewName_9"},
+{51,10,14020027,0,10,1,51,{0},"UIGoldweekNewName_10"},
+{271,11,14020101,0,11,1,271,{313,80,151,501,152},"UIGoldweekNewName_11"},
+{272,12,14020102,0,12,1,272,{881,409,408,420},"UIGoldweekNewName_12"}
+},
+Len=12
+}
+return e 

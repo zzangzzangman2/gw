@@ -1,0 +1,30 @@
+local t={id=0,idleBuff={},heroBuffId=0,heroName="",icon="",index=0,activityID=0}
+t.__index=t
+function t.New(o,h,a,s,r,n,i)
+local e={}
+setmetatable(e,t)
+e.id=o
+e.idleBuff=h
+e.heroBuffId=a
+e.heroName=s
+e.icon=r
+e.index=n
+e.activityID=i
+return e
+end
+function t.NewFromArrItem(a)
+local e={}
+setmetatable(e,t)
+e.id=a[1]
+e.idleBuff=a[2]
+e.heroBuffId=a[3]
+e.heroName=a[4]
+e.icon=a[5]
+e.index=a[6]
+e.activityID=a[7]
+return e
+end
+function t.GetArr()
+return require('DataNode/DataTable/Create/activity/DTTemporaryBuffEntityTableData')
+end
+return t 

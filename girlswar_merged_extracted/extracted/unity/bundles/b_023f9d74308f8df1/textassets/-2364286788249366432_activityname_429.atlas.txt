@@ -1,0 +1,12 @@
+activityname_429.png
+size:188,68
+filter:Linear,Linear
+111
+bounds:2,2,71,63
+offsets:0,0,71,64
+b1
+bounds:75,9,79,56
+b2
+bounds:156,7,58,29
+offsets:0,0,58,31
+rotate:90

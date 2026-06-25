@@ -1,0 +1,18 @@
+local e=
+{
+ByIdx={
+{1,"soulName_1","soulDesc_1","soulDesc2_1",1},
+{2,"soulName_2","soulDesc_2","soulDesc2_2",1},
+{3,"soulName_3","soulDesc_3","soulDesc2_3",1},
+{4,"soulName_4","soulDesc_4","soulDesc2_4",1},
+{5,"soulName_5","soulDesc_5","soulDesc2_5",1},
+{6,"soulName_6","soulDesc_6","soulDesc2_6",1},
+{7,"soulName_7","soulDesc_7","soulDesc2_7",1},
+{8,"soulName_8","soulDesc_8","soulDesc2_8",1},
+{9,"soulName_9","soulDesc_9","soulDesc2_9",20},
+{10,"soulName_10","soulDesc_10","soulDesc2_10",30},
+{11,"soulName_11","soulDesc_11","soulDesc2_11",50}
+},
+Len=11
+}
+return e 

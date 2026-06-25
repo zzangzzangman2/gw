@@ -1,0 +1,44 @@
+local a={id=0,type=0,cost={{},{}},name="",bgPathName="",ornamentPathName1="",ornamentPathName2="",ornamentPathName3="",ornamentPathName4="",ornamentName1="",ornamentName2="",ornamentName3="",ornamentName4="",titleName=""}
+a.__index=a
+function a.New(s,l,r,t,u,m,f,w,c,d,i,o,n,h)
+local e={}
+setmetatable(e,a)
+e.id=s
+e.type=l
+e.cost=r
+e.name=t
+e.bgPathName=u
+e.ornamentPathName1=m
+e.ornamentPathName2=f
+e.ornamentPathName3=w
+e.ornamentPathName4=c
+e.ornamentName1=d
+e.ornamentName2=i
+e.ornamentName3=o
+e.ornamentName4=n
+e.titleName=h
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.type=t[2]
+e.cost=t[3]
+e.name=t[4]
+e.bgPathName=t[5]
+e.ornamentPathName1=t[6]
+e.ornamentPathName2=t[7]
+e.ornamentPathName3=t[8]
+e.ornamentPathName4=t[9]
+e.ornamentName1=t[10]
+e.ornamentName2=t[11]
+e.ornamentName3=t[12]
+e.ornamentName4=t[13]
+e.titleName=t[14]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/playerCity/DTPlayerCityAreaEntityTableData')
+end
+return a 

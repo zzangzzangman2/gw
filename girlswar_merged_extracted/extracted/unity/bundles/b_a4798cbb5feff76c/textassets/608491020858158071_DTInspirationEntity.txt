@@ -1,0 +1,40 @@
+local a={id=0,sort=0,inspirationType=0,cluster=0,tab=0,unlockType=0,unlockPara={},name="",desc="",icon="",award={{},{}},newAward={{},{}}}
+a.__index=a
+function a.New(s,d,h,t,u,c,m,l,r,i,o,n)
+local e={}
+setmetatable(e,a)
+e.id=s
+e.sort=d
+e.inspirationType=h
+e.cluster=t
+e.tab=u
+e.unlockType=c
+e.unlockPara=m
+e.name=l
+e.desc=r
+e.icon=i
+e.award=o
+e.newAward=n
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.sort=t[2]
+e.inspirationType=t[3]
+e.cluster=t[4]
+e.tab=t[5]
+e.unlockType=t[6]
+e.unlockPara=t[7]
+e.name=t[8]
+e.desc=t[9]
+e.icon=t[10]
+e.award=t[11]
+e.newAward=t[12]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/worldMap/DTInspirationEntityTableData')
+end
+return a 

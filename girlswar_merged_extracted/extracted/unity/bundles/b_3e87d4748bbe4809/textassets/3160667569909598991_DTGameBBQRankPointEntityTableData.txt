@@ -1,0 +1,13 @@
+local e=
+{
+ByIdx={
+{1,{4500,999999},"UIActGameBBQ/kcxyx_pinfenS","kcxyx_chahuaS"},
+{2,{3500,4500},"UIActGameBBQ/kcxyx_pinfenA","kcxyx_chahuaA"},
+{3,{2500,3500},"UIActGameBBQ/kcxyx_pinfenB","kcxyx_chahuaB"},
+{4,{1500,2500},"UIActGameBBQ/kcxyx_pinfenC","kcxyx_chahuaC"},
+{5,{500,1500},"UIActGameBBQ/kcxyx_pinfenD","kcxyx_chahuaD"},
+{6,{0,500},"UIActGameBBQ/kcxyx_pinfenF","kcxyx_chahuaF"}
+},
+Len=6
+}
+return e 

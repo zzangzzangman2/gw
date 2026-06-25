@@ -1,0 +1,11 @@
+local t={}
+function t:OnHandle(e)
+local e=assert(GlobalPB.decode("PRT_GAME_HAMMER_PASS_RESP",e));
+if(GameInit.GetDebugLogProto())then
+;
+;
+end
+ModulesInit.ActGameHammerMgr:OnRespActGameHammerPass(e)
+return e
+end
+return t 

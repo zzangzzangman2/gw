@@ -1,0 +1,38 @@
+local a={id=0,type=0,target=0,param1={},param2={},cd=0,name="",desc="",icon="",skillAction="",skillActionTime=0}
+a.__index=a
+function a.New(n,r,s,t,l,u,c,d,h,o,i)
+local e={}
+setmetatable(e,a)
+e.id=n
+e.type=r
+e.target=s
+e.param1=t
+e.param2=l
+e.cd=u
+e.name=c
+e.desc=d
+e.icon=h
+e.skillAction=o
+e.skillActionTime=i
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.type=t[2]
+e.target=t[3]
+e.param1=t[4]
+e.param2=t[5]
+e.cd=t[6]
+e.name=t[7]
+e.desc=t[8]
+e.icon=t[9]
+e.skillAction=t[10]
+e.skillActionTime=t[11]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/activity/DTCarouselParkSkillEntityTableData')
+end
+return a 

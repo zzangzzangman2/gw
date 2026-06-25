@@ -1,0 +1,11 @@
+local e=
+{
+ByIdx={
+{1,"CollectPavilionName_1",2,"museum_room_1_z","museum_room_1_q","museum_room_1_d"},
+{2,"CollectPavilionName_2",2,"museum_room_2_z","museum_room_2_q","museum_room_2_d"},
+{3,"CollectPavilionName_3",2,"museum_room_3_z","museum_room_3_q","museum_room_3_d"},
+{4,"CollectPavilionName_4",2,"museum_room_4_z","museum_room_4_q","museum_room_4_d"}
+},
+Len=4
+}
+return e 

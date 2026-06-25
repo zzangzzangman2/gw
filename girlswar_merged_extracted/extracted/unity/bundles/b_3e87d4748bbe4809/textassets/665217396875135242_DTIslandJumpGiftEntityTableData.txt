@@ -1,0 +1,19 @@
+local e=
+{
+ByIdx={
+{1,327,2,"IslandJumpGiftName_1","IslandJumpGiftDesc_1",{{99840,120000}},"ActMonthPurchase/ylb_beilv1700",86400},
+{101,304,1,"IslandJumpGiftName_1","IslandJumpGiftDesc_2",{{99840,12000}},"ActMonthPurchase/ylb_beilv1700",86400},
+{102,308,1,"IslandJumpGiftName_1","IslandJumpGiftDesc_2",{{99840,24000}},"ActMonthPurchase/ylb_beilv1700",86400},
+{103,310,1,"IslandJumpGiftName_1","IslandJumpGiftDesc_2",{{99840,36000}},"ActMonthPurchase/ylb_beilv1700",86400},
+{104,314,1,"IslandJumpGiftName_1","IslandJumpGiftDesc_2",{{99840,48000}},"ActMonthPurchase/ylb_beilv1700",86400},
+{105,314,1,"IslandJumpGiftName_1","IslandJumpGiftDesc_2",{{99840,48000}},"ActMonthPurchase/ylb_beilv1700",86400},
+{106,327,1,"IslandJumpGiftName_1","IslandJumpGiftDesc_2",{{99840,120000}},"ActMonthPurchase/ylb_beilv1700",86400},
+{107,327,1,"IslandJumpGiftName_1","IslandJumpGiftDesc_2",{{99840,120000}},"ActMonthPurchase/ylb_beilv1700",86400},
+{201,304,3,"IslandJumpGiftName_1","Islandboss_01",{{1001,310},{99848,1000},{99850,100}},"ActMonthPurchase/ylb_beilv2100",86400},
+{202,310,3,"IslandJumpGiftName_1","Islandboss_01",{{1001,1300},{99848,3000},{99850,300}},"ActMonthPurchase/ylb_beilv2100",86400},
+{203,314,3,"IslandJumpGiftName_1","Islandboss_01",{{1001,3400},{99848,6500},{99850,650},{99847,2000},{99852,200}},"ActMonthPurchase/ylb_beilv2100",86400},
+{204,327,3,"IslandJumpGiftName_1","Islandboss_01",{{1001,6900},{99848,12500},{99850,1250},{99847,4500},{99852,450}},"ActMonthPurchase/ylb_beilv2100",86400}
+},
+Len=12
+}
+return e 

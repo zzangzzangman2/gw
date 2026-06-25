@@ -1,0 +1,397 @@
+
+?`
+Flower.protoFight.proto
+Hero.protoCommons.protoSnapshot.proto"?
+PRT_FLOWER_ENTER_INFO.
+state (2.ENUM_FLOWER_FIGHT_STATERstate 
+isLastFinal (RisLastFinal
+isSign (RisSign
+stage (Rstage$
+stateOverTime (RstateOverTime9
+selfMaxType (2.ENUM_FLOWER_FIGHT_TYPERselfMaxType
+signMax (RsignMax"
+PRT_FLOWER_ENTER_REQ"?
+PRT_FLOWER_ENTER_RESP8
+
+serverType (2.ENUM_FLOWER_SERVER_TYPER
+serverType2
+raceInfo (2.PRT_FLOWER_ENTER_INFORraceInfo$
+selfScoreRank (RselfScoreRank
+season (Rseason
+openTime (RopenTime 
+serverCount (RserverCount
+upgrade (Rupgrade0
+upgradeEndTimestamp (RupgradeEndTimestamp
+
+csOpenTime	 (R
+csOpenTime"
+PRT_FLOWER_SIGN_REQ"
+PRT_FLOWER_SIGN_RESP"?
+PRT_PRELIME_RACE_PLAYER
+serverId (RserverId
+playerId (RplayerId
+name (	Rname
+
+fightValue (R
+fightValue
+heroDid (RheroDid$
+heroLockLevel (RheroLockLevel$
+heroRankLevel (RheroRankLevel&
+heroFirstValue (RheroFirstValue
+win	 (Rwin
+wheel
+ (Rwheel"?
+PRT_PRELIME_RACE_FIGHT8
+
+leftPlayer (2.PRT_PRELIME_RACE_PLAYERR
+leftPlayer:
+rightPlayer (2.PRT_PRELIME_RACE_PLAYERRrightPlayer
+wheel (Rwheel
+boxAward (RboxAward
+fightId (RfightId"U
+PRT_PRELIME_WIN_POINT
+wheel (Rwheel
+win (Rwin
+point (Rpoint"?
+PRT_RACE_WIN_SCORE2
+raceType (2.ENUM_FLOWER_RACE_TYPERraceType
+wheel (Rwheel
+win (Rwin
+score (Rscore"?
+PRT_PRELIME_RACE/
+fights (2.PRT_PRELIME_RACE_FIGHTRfights4
+	winPoints (2.PRT_PRELIME_WIN_POINTR	winPoints$
+prelimeRankNo (RprelimeRankNo;
+fightStatus (2.ENUM_FLOWER_FIGHT_STATUSRfightStatus&
+statusOverTime (RstatusOverTime
+	joinTop64 (R	joinTop64"?
+PRT_TOPN_RACE_PLAYER
+serverId (RserverId
+playerId (RplayerId
+name (	Rname
+
+fightValue (R
+fightValue
+head (Rhead
+	headFrame (R	headFrame"Q
+PRT_TOPN_RACE_FIGHT 
+winPlayerId (RwinPlayerId
+fightId (RfightId"?
+PRT_TOPN_RACE/
+players (2.PRT_TOPN_RACE_PLAYERRplayers4
+
+top4Fights (2.PRT_TOPN_RACE_FIGHTR
+top4Fights4
+
+top2Fights (2.PRT_TOPN_RACE_FIGHTR
+top2Fights2
+	top1Fight (2.PRT_TOPN_RACE_FIGHTR	top1Fight$
+wheelOverTime (RwheelOverTime
+wheel (Rwheel;
+fightStatus (2.ENUM_FLOWER_FIGHT_STATUSRfightStatus&
+topNGroupOrder (RtopNGroupOrder"]
+PRT_FLOWER_SELF_RACE_REQ
+stage (Rstage+
+type (2.ENUM_FLOWER_FIGHT_TYPERtype"?
+PRT_FLOWER_SELF_RACE_RESP.
+state (2.ENUM_FLOWER_FIGHT_STATERstate3
+prelimeRace (2.PRT_PRELIME_RACERprelimeRace,
+	top64Race (2.PRT_TOPN_RACER	top64Race*
+breakOut (2.PRT_TOPN_RACERbreakOut"
+top8 (2.PRT_TOPN_RACERtop8$
+stateOverTime (RstateOverTime+
+type (2.ENUM_FLOWER_FIGHT_TYPERtype9
+selfMaxType (2.ENUM_FLOWER_FIGHT_TYPERselfMaxType8
+
+serverType	 (2.ENUM_FLOWER_SERVER_TYPER
+serverType
+history
+ (Rhistory 
+lastHistory (RlastHistory 
+firstHeroId (RfirstHeroId
+stage (Rstage&
+stageBaseScore (RstageBaseScore+
+scores (2.PRT_RACE_WIN_SCORERscoresA
+selfRealMaxType (2.ENUM_FLOWER_FIGHT_TYPERselfRealMaxType"F
+PRT_FLOWER_BOX_AWARD_REQ
+stage (Rstage
+wheel (Rwheel"1
+PRT_FLOWER_BOX_AWARD_RESP
+wheel (Rwheel"?
+PRT_RACE_HERO
+pos (Rpos
+heroId (RheroId
+
+fightValue (R
+fightValue
+heroDid (RheroDid$
+heroLockLevel (RheroLockLevel$
+heroRankLevel (RheroRankLevel&
+heroFirstValue (RheroFirstValue
+win (Rwin
+wheel	 (Rwheel"?
+PRT_FLOWER_FORMATION_VIEW_REQ
+stage (Rstage,
+formationPlayerId (RformationPlayerId2
+raceType (2.ENUM_FLOWER_RACE_TYPERraceType"
+isLastReview (RisLastReview"?
+PRT_FLOWER_FORMATION_VIEW_RESP
+serverId (RserverId
+name (	Rname
+level (Rlevel
+online (Ronline
+winCount (RwinCount
+	loseCount (R	loseCount6
+formationHeros (2.PRT_RACE_HERORformationHeros2
+raceType (2.ENUM_FLOWER_RACE_TYPERraceType.
+nextWheelBeginTime	 (RnextWheelBeginTime"?
+PRT_FLOWER_FORMATION_MODIFY_REQ
+stage (Rstage
+heroIds (RheroIds2
+raceType (2.ENUM_FLOWER_RACE_TYPERraceType"p
+ PRT_FLOWER_FORMATION_MODIFY_RESP
+heroIds (RheroIds2
+raceType (2.ENUM_FLOWER_RACE_TYPERraceType"p
+PRT_FLOWER_WATCH_FIGHT_REQ
+stage (Rstage
+fightId (RfightId"
+isLastReview (RisLastReview"h
+PRT_FLOWER_WATCH_FIGHT_RESP
+fightId (RfightId/
+
+battleInfo (2.PRT_FIGHT_PLAYR
+battleInfo"?
+ PRT_FLOWER_WIN_COUNT_RANK_PLAYER
+playerId (RplayerId
+serverId (RserverId
+name (	Rname
+head (Rhead
+	headFrame (R	headFrame
+level (Rlevel
+	guildName (	R	guildName
+guildId (RguildId
+rankNo	 (RrankNo
+winCount
+ (RwinCount
+	loseCount (R	loseCount
+
+fightPoint (R
+fightPoint
+
+fightValue (R
+fightValue"?
+PRT_FLOWER_LAST_CHAMPION_PLAYER
+playerId (RplayerId
+serverId (RserverId
+name (	Rname
+rankNo (RrankNo
+profile (Rprofile"?
+PRT_FLOWER_MAIN_RACE_SIGN7
+ranks (2!.PRT_FLOWER_WIN_COUNT_RANK_PLAYERRranks=
+selfRank (2!.PRT_FLOWER_WIN_COUNT_RANK_PLAYERRselfRankF
+lastChampions (2 .PRT_FLOWER_LAST_CHAMPION_PLAYERRlastChampionsA
+
+crossRanks (2!.PRT_FLOWER_WIN_COUNT_RANK_PLAYERR
+crossRanksG
+selfCrossRank (2!.PRT_FLOWER_WIN_COUNT_RANK_PLAYERRselfCrossRank"?
+ PRT_FLOWER_PRELIME_FIGHT_RECORED 
+attServerId (RattServerId 
+defServerId (RdefServerId
+attName (	RattName
+defName (	RdefName
+
+fightPoint (R
+fightPoint
+score (Rscore
+attWin (RattWin"
+winHpPercent (RwinHpPercent"?
+PRT_FLOWER_MAIN_RACE_PRELIME7
+ranks (2!.PRT_FLOWER_WIN_COUNT_RANK_PLAYERRranks=
+selfRank (2!.PRT_FLOWER_WIN_COUNT_RANK_PLAYERRselfRank;
+records (2!.PRT_FLOWER_PRELIME_FIGHT_RECOREDRrecordsF
+lastChampions (2 .PRT_FLOWER_LAST_CHAMPION_PLAYERRlastChampions
+wheel (Rwheel$
+wheelOverTime (RwheelOverTime 
+recordWheel (RrecordWheelA
+
+crossRanks (2!.PRT_FLOWER_WIN_COUNT_RANK_PLAYERR
+crossRanksG
+selfCrossRank	 (2!.PRT_FLOWER_WIN_COUNT_RANK_PLAYERRselfCrossRank"0
+PRT_FLOWER_MAIN_RACE_REQ
+stage (Rstage"?
+PRT_FLOWER_MAIN_RACE_RESP
+stage (Rstage.
+state (2.ENUM_FLOWER_FIGHT_STATERstate.
+sign (2.PRT_FLOWER_MAIN_RACE_SIGNRsign7
+prelime (2.PRT_FLOWER_MAIN_RACE_PRELIMERprelime,
+	topNRaces (2.PRT_TOPN_RACER	topNRaces$
+stateOverTime (RstateOverTime8
+
+serverType (2.ENUM_FLOWER_SERVER_TYPER
+serverType
+history (Rhistory 
+lastHistory	 (RlastHistory">
+&PRT_FLOWER_MAIN_RACE_PRELIME_WHEEL_REQ
+stage (Rstage"{
+'PRT_FLOWER_MAIN_RACE_PRELIME_WHEEL_RESP
+stage (Rstage
+wheel (Rwheel$
+wheelOverTime (RwheelOverTime"
+PRT_FLOWER_LAST_REVIEW_REQ"I
+PRT_FLOWER_LAST_REVIEW_RESP*
+topNRace (2.PRT_TOPN_RACERtopNRace"
+PRT_FLOWER_FINAL_REVIEW_REQ"J
+PRT_FLOWER_FINAL_REVIEW_RESP*
+topNRace (2.PRT_TOPN_RACERtopNRace"5
+PRT_FLOWER_WIN_COUNT_RANK_REQ
+stage (Rstage"?
+PRT_FLOWER_WIN_COUNT_RANK_RESP
+stage (Rstage7
+ranks (2!.PRT_FLOWER_WIN_COUNT_RANK_PLAYERRranks=
+selfRank (2!.PRT_FLOWER_WIN_COUNT_RANK_PLAYERRselfRankA
+
+crossRanks (2!.PRT_FLOWER_WIN_COUNT_RANK_PLAYERR
+crossRanksG
+selfCrossRank (2!.PRT_FLOWER_WIN_COUNT_RANK_PLAYERRselfCrossRank"?
+PRT_FLOWER_STAR_SEASON_PLAYER
+season (Rseason
+serverId (RserverId
+name (	Rname
+
+fightValue (R
+fightValue
+heroDids (RheroDids"
+PRT_FLOWER_STAR_REQ"P
+PRT_FLOWER_STAR_RESP8
+players (2.PRT_FLOWER_STAR_SEASON_PLAYERRplayers"!
+PRT_FLOWER_RANK_SCORE_LOCAL_REQ"?
+ PRT_FLOWER_RANK_SCORE_LOCAL_RESP7
+ranks (2!.PRT_FLOWER_WIN_COUNT_RANK_PLAYERRranks=
+selfRank (2!.PRT_FLOWER_WIN_COUNT_RANK_PLAYERRselfRank""
+ PRT_FLOWER_RANK_SCORE_SERVER_REQ"?
+!PRT_FLOWER_RANK_SCORE_SERVER_RESP7
+ranks (2!.PRT_FLOWER_WIN_COUNT_RANK_PLAYERRranks=
+selfRank (2!.PRT_FLOWER_WIN_COUNT_RANK_PLAYERRselfRank"!
+PRT_FLOWER_RANK_SCORE_GROUP_REQ"?
+ PRT_FLOWER_RANK_SCORE_GROUP_RESP7
+ranks (2!.PRT_FLOWER_WIN_COUNT_RANK_PLAYERRranks=
+selfRank (2!.PRT_FLOWER_WIN_COUNT_RANK_PLAYERRselfRank"(
+&PRT_FLOWER_RANK_SCORE_TOTAL_SERVER_REQ"?
+'PRT_FLOWER_RANK_SCORE_TOTAL_SERVER_RESP7
+ranks (2!.PRT_FLOWER_WIN_COUNT_RANK_PLAYERRranks=
+selfRank (2!.PRT_FLOWER_WIN_COUNT_RANK_PLAYERRselfRank"'
+%PRT_FLOWER_RANK_SCORE_TOTAL_GROUP_REQ"?
+&PRT_FLOWER_RANK_SCORE_TOTAL_GROUP_RESP7
+ranks (2!.PRT_FLOWER_WIN_COUNT_RANK_PLAYERRranks=
+selfRank (2!.PRT_FLOWER_WIN_COUNT_RANK_PLAYERRselfRank""
+ PRT_FLOWER_QUALIFICAION_TIPS_REQ"?
+!PRT_FLOWER_QUALIFICAION_TIPS_RESP4
+prelimeRedayTimestamp (RprelimeRedayTimestamp4
+tipState (2.ENUM_FLOWER_FIGHT_STATERtipState
+wheel (Rwheel8
+
+serverType (2.ENUM_FLOWER_SERVER_TYPER
+serverType*
+hasQualification (RhasQualification
+stage (Rstage
+normal (Rnormal2
+abnormalEndTimestamp (RabnormalEndTimestamp
+	stateOver	 (R	stateOver"7
+PRT_FLOWER_HERO_SNAP
+heros (2	.PRT_HERORheros"u
+PRT_CS_FLOWER_SCORE_ADD_REQ
+playerId (RplayerId
+addScore (RaddScore
+
+showSecond (R
+showSecond":
+PRT_CS_FLOWER_SCORE_ADD_RESP
+playerId (RplayerId"<
+PRT_FLOWER_SERVER_OPENTIME_SYN
+openTime (RopenTime"K
+!PRT_FLOWER_CS_SEASON_OPENTIME_SYN&
+seasonOpenTime (RseasonOpenTime"9
+PRT_CS_FLOWER_RED_POINT_REQ
+playerId (RplayerId"?
+PRT_CS_FLOWER_RED_POINT_RESP
+playerId (RplayerId3
+redPointIds (2.ENUM_REDPOINT_IDRredPointIds2
+isSendToOnlinePlayer (RisSendToOnlinePlayer"u
+PRT_FLOWER_CS_FETCH_SIGN_HERO
+playerId (RplayerId
+heroIds (	RheroIds
+
+fightValue (R
+fightValue"w
+#PRT_FLOWER_CS_FETCH_SIGN_HERO_FETCH
+	fetchType (R	fetchType
+batch (Rbatch
+	playerIds (R	playerIds"?
+$PRT_FLOWER_CS_FETCH_SIGN_HERO_RETURN
+	fetchType (R	fetchType
+batch (Rbatch@
+playerHeros (2.PRT_FLOWER_CS_FETCH_SIGN_HERORplayerHeros"?
+PRT_FLOWER_FETCH_HERO_SNAP
+playerId (RplayerId
+heros (2	.PRT_HERORheros0
+
+playerInfo (2.PRT_PLAYER_INFOR
+playerInfo"P
+PRT_FLOWER_FETCH_HERO_ID
+playerId (RplayerId
+heroIds (RheroIds"?
+#PRT_FLOWER_CS_FETCH_HERO_SNAP_FETCH
+	fetchType (R	fetchType
+batch (Rbatch3
+players (2.PRT_FLOWER_FETCH_HERO_IDRplayers"?
+$PRT_FLOWER_CS_FETCH_HERO_SNAP_RETURN
+	fetchType (R	fetchType
+batch (Rbatch=
+playerHeros (2.PRT_FLOWER_FETCH_HERO_SNAPRplayerHeros"R
+PRT_FLOWER_CS_SIGN_REQ
+	heroIdStr (	R	heroIdStr
+autoSign (RautoSign"W
+!PRT_FLOWER_CS_PLAYER_ADD_HERO_SYN
+playerId (RplayerId
+heroId (RheroId*]
+ENUM_FLOWER_SERVER_TYPE
+SERVER_TYPE_NONE 
+SERVER_TYPE_LOCAL
+SERVER_TYPE_CROSS*?
+ENUM_FLOWER_FIGHT_TYPE
+FLOWER_FIGHT_TYPE_NONE 
+FLOWER_FIGHT_TYPE_PRELINE
+FLOWER_FIGHT_TYPE_TOP64
+FLOWER_FIGHT_TYPE_BREAK_OUT
+FLOWER_FIGHT_TYPE_FINAL*?
+ENUM_FLOWER_FIGHT_STATE
+FLOWER_FIGHT_STAGE_NONE 
+FLOWER_FIGHT_STAGE_UPGRADE
+FLOWER_FIGHT_STAGE_SIGNe 
+FLOWER_FIGHT_STAGE_SIGN_OVERf$
+ FLOWER_FIGHT_STAGE_PRELIME_READYg$
+ FLOWER_FIGHT_STAGE_PRELIME_FIGHTh#
+FLOWER_FIGHT_STAGE_PRELIME_OVERi#
+FLOWER_FIGHT_STAGE_TOP64_READY?#
+FLOWER_FIGHT_STAGE_TOP64_FIGHT?"
+FLOWER_FIGHT_STAGE_TOP64_OVER?'
+"FLOWER_FIGHT_STAGE_BREAK_OUT_READY?'
+"FLOWER_FIGHT_STAGE_BREAK_OUT_FIGHT?&
+!FLOWER_FIGHT_STAGE_BREAK_OUT_OVER?#
+FLOWER_FIGHT_STAGE_FINAL_READY?#
+FLOWER_FIGHT_STAGE_FINAL_FIGHT?"
+FLOWER_FIGHT_STAGE_FINAL_OVER?'
+"FLOWER_FIGHT_STAGE_FINAL_OVER_STOP?*?
+ENUM_FLOWER_FIGHT_STATUS
+FLOWER_FIGHT_STATUS_NONE 
+FLOWER_FIGHT_STATUS_ADJUST
+FLOWER_FIGHT_STATUS_WAIT
+FLOWER_FIGHT_STATUS_OVER*?
+ENUM_FLOWER_RACE_TYPE
+FLOWER_RACE_TYPE_NONE 
+FLOWER_RACE_TYPE_PRELIME
+FLOWER_RACE_TYPE_64
+FLOWER_RACE_TYPE_BREAK
+FLOWER_RACE_TYPE_FINAL
+FLOWER_RACE_TYPE_LASTB
+com.next1b.nextsvr.protobproto3

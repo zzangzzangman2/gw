@@ -1,0 +1,11 @@
+activityname_124.png
+size:128,64
+filter:Linear,Linear
+a2
+bounds:74,30,24,31
+a3
+bounds:74,10,14,19
+a4
+bounds:74,10,14,19
+a5
+bounds:0,0,73,61

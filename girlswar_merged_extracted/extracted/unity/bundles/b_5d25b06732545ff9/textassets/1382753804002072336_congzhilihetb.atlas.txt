@@ -1,0 +1,8 @@
+congzhilihetb_2.png
+size:256,256
+filter:Linear,Linear
+111
+bounds:0,117,169,126
+congzhilihetb
+bounds:171,163,80,72
+rotate:90

@@ -1,0 +1,8 @@
+local e=
+{
+ByIdx={
+{1,50,20,314159265,314159265,"{HEROID*100+2}","{HEROURTYPE}"}
+},
+Len=1
+}
+return e 

@@ -1,0 +1,20 @@
+local e={id=0,itemId={}}
+e.__index=e
+function e.New(a,o)
+local t={}
+setmetatable(t,e)
+t.id=a
+t.itemId=o
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.itemId=a[2]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/activity/DTActivityTreasureSaleDefineEntityTableData')
+end
+return e 

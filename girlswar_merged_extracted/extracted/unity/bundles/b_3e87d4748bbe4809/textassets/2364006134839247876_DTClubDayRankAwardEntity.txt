@@ -1,0 +1,26 @@
+local e={id=0,rankmin=0,rankmax=0,reward={{},{}},rankshow={{},{}}}
+e.__index=e
+function e.New(o,n,a,s,i)
+local t={}
+setmetatable(t,e)
+t.id=o
+t.rankmin=n
+t.rankmax=a
+t.reward=s
+t.rankshow=i
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.rankmin=a[2]
+t.rankmax=a[3]
+t.reward=a[4]
+t.rankshow=a[5]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/activity/DTClubDayRankAwardEntityTableData')
+end
+return e 

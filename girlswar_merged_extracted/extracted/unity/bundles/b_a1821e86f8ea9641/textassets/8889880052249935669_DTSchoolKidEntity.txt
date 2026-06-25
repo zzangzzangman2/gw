@@ -1,0 +1,42 @@
+local a={id=0,quality=0,sex=0,prefabId=0,heroImg="",heroIcon="",herohead="",graduate=0,transForm=0,workaholic=0,twins=0,marriagesReward={{},{}},weights=0}
+a.__index=a
+function a.New(s,d,h,t,l,c,m,f,u,r,i,o,n)
+local e={}
+setmetatable(e,a)
+e.id=s
+e.quality=d
+e.sex=h
+e.prefabId=t
+e.heroImg=l
+e.heroIcon=c
+e.herohead=m
+e.graduate=f
+e.transForm=u
+e.workaholic=r
+e.twins=i
+e.marriagesReward=o
+e.weights=n
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.quality=t[2]
+e.sex=t[3]
+e.prefabId=t[4]
+e.heroImg=t[5]
+e.heroIcon=t[6]
+e.herohead=t[7]
+e.graduate=t[8]
+e.transForm=t[9]
+e.workaholic=t[10]
+e.twins=t[11]
+e.marriagesReward=t[12]
+e.weights=t[13]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/school/DTSchoolKidEntityTableData')
+end
+return a 

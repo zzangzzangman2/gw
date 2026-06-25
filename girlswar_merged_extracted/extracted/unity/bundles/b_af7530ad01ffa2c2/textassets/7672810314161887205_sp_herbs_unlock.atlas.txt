@@ -1,0 +1,5 @@
+sp_herbs_unlock.png
+size:64,64
+filter:Linear,Linear
+wenzi
+bounds:0,0,52,62

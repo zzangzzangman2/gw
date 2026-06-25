@@ -1,0 +1,10 @@
+local e={}
+function e:OnHandle(e)
+local e=assert(GlobalPB.decode("PRT_CHAT_RESP",e));
+if(GameInit.GetDebugLogProto())then
+;
+;
+end
+ChatMgr:addChatMsg(e)
+end
+return e 

@@ -1,0 +1,10 @@
+local e={}
+function e:OnHandle(e)
+local e=assert(GlobalPB.decode("PRT_MAZE_FORMATION_MODIFY_RESP",e));
+if(GameInit.GetDebugLogProto())then
+;
+;
+end
+ModulesInit.MazeMgr:synMazeFormationModify(e)
+end
+return e 

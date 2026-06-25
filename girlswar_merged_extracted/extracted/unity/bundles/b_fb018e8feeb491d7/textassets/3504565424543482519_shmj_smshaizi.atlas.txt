@@ -1,0 +1,15 @@
+shmj_smshaizi.png
+size:256,256
+filter:Linear,Linear
+a7
+bounds:1,69,140,128
+offsets:3,1,144,130
+a7a
+bounds:142,135,52,62
+offsets:35,41,144,130
+a8
+bounds:1,32,152,36
+offsets:2,2,155,39
+a9
+bounds:1,1,150,30
+offsets:3,2,154,33

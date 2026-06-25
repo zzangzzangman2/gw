@@ -1,0 +1,17 @@
+
+?
+ActGeneralGift.protoCommons.proto"
+PRT_GENERAL_GIFT_INFO_REQ"?
+PRT_GENERAL_GIFT_INFO_RESP 
+gifts (2
+.PRT_GOODSRgifts
+freeCD (RfreeCD.
+historyGifts (2
+.PRT_GOODSRhistoryGifts"J
+PRT_GENERAL_GIFT_BUY_REQ
+giftDid (RgiftDid
+count (Rcount";
+PRT_GENERAL_GIFT_BUY_RESP
+gift (2
+.PRT_GOODSRgiftB
+com.next1b.nextsvr.protobproto3

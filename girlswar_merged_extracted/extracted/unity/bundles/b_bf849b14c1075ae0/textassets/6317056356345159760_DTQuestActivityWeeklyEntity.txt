@@ -1,0 +1,24 @@
+local e={id=0,activePoint=0,awards={{},{}},awardsNew={{},{}}}
+e.__index=e
+function e.New(o,a,n,i)
+local t={}
+setmetatable(t,e)
+t.id=o
+t.activePoint=a
+t.awards=n
+t.awardsNew=i
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.activePoint=a[2]
+t.awards=a[3]
+t.awardsNew=a[4]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/quest/DTQuestActivityWeeklyEntityTableData')
+end
+return e 

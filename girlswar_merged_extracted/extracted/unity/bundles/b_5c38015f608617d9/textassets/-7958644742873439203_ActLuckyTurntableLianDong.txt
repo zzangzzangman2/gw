@@ -1,0 +1,18 @@
+
+?
+ActLuckyTurntableLianDong.protoCommons.proto"?
+"PRT_LUCKY_TURNTABLE_LIAN_DONG_DRAW
+drawDid (RdrawDid
+freeCD (RfreeCD,
+alreadyDrawNumber (RalreadyDrawNumber"(
+&PRT_LUCKY_TURNTABLE_LIAN_DONG_INFO_REQ"?
+'PRT_LUCKY_TURNTABLE_LIAN_DONG_INFO_RESP
+leftTime (RleftTime9
+draws (2#.PRT_LUCKY_TURNTABLE_LIAN_DONG_DRAWRdraws"g
+&PRT_LUCKY_TURNTABLE_LIAN_DONG_DRAW_REQ#
+type (2.ENUM_DRAW_TYPERtype
+drawDid (RdrawDid"?
+'PRT_LUCKY_TURNTABLE_LIAN_DONG_DRAW_RESP7
+draw (2#.PRT_LUCKY_TURNTABLE_LIAN_DONG_DRAWRdraw 
+awardIndexs (RawardIndexsB
+com.next1b.nextsvr.protobproto3

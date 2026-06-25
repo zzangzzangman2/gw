@@ -1,0 +1,31 @@
+local e=
+{
+ByIdx={
+{"HitArea_GameCoinL",1},
+{"HitArea_GameCoinR",2},
+{"HitArea_GameTrigone",3},
+{"HitArea_GameLegR",4},
+{"HitArea_GameLegL",5},
+{"HitArea_HandR3",6},
+{"HitArea_HandR",7},
+{"HitArea_HandL3",8},
+{"HitArea_HandL",9},
+{"HitArea_Head",10},
+{"HitArea_PantsL",11},
+{"HitArea_PantsR",12},
+{"HitArea_Trigone",13},
+{"HitArea_KneeBandAid",14},
+{"HitArea_LegBandAid",15},
+{"HitArea_BreastL",16},
+{"HitArea_BreastR",17},
+{"HitArea_Skirt2",18},
+{"HitArea_Skirt1",19},
+{"HitArea_LegR",20},
+{"HitArea_LegL",21},
+{"HitArea_Table",22},
+{"HitArea_Tennis",23},
+{"HitArea_Bottle",24}
+},
+Len=24
+}
+return e 

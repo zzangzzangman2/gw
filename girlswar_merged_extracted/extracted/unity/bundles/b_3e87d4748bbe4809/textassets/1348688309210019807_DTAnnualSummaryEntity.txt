@@ -1,0 +1,30 @@
+local t={id=0,type=0,icon="",text="",text2="",keyWords="",evaluate={}}
+t.__index=t
+function t.New(o,h,a,s,r,n,i)
+local e={}
+setmetatable(e,t)
+e.id=o
+e.type=h
+e.icon=a
+e.text=s
+e.text2=r
+e.keyWords=n
+e.evaluate=i
+return e
+end
+function t.NewFromArrItem(a)
+local e={}
+setmetatable(e,t)
+e.id=a[1]
+e.type=a[2]
+e.icon=a[3]
+e.text=a[4]
+e.text2=a[5]
+e.keyWords=a[6]
+e.evaluate=a[7]
+return e
+end
+function t.GetArr()
+return require('DataNode/DataTable/Create/activity/DTAnnualSummaryEntityTableData')
+end
+return t 

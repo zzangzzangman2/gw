@@ -1,0 +1,54 @@
+local a={id=0,prefabId=0,voicePath="",voiceType="",voiceTime="",voiceNameLock="",voiceNameUnlock="",voiceLine="",targetDesc="",targetPosition=0,neverUnlock=0,exciting=0,eventId=0,position={},animName="",specialEffects=0,incline=0,person="",prepose={}}
+a.__index=a
+function a.New(d,c,l,t,f,m,y,v,p,b,g,w,u,n,i,o,s,r,h)
+local e={}
+setmetatable(e,a)
+e.id=d
+e.prefabId=c
+e.voicePath=l
+e.voiceType=t
+e.voiceTime=f
+e.voiceNameLock=m
+e.voiceNameUnlock=y
+e.voiceLine=v
+e.targetDesc=p
+e.targetPosition=b
+e.neverUnlock=g
+e.exciting=w
+e.eventId=u
+e.position=n
+e.animName=i
+e.specialEffects=o
+e.incline=s
+e.person=r
+e.prepose=h
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.prefabId=t[2]
+e.voicePath=t[3]
+e.voiceType=t[4]
+e.voiceTime=t[5]
+e.voiceNameLock=t[6]
+e.voiceNameUnlock=t[7]
+e.voiceLine=t[8]
+e.targetDesc=t[9]
+e.targetPosition=t[10]
+e.neverUnlock=t[11]
+e.exciting=t[12]
+e.eventId=t[13]
+e.position=t[14]
+e.animName=t[15]
+e.specialEffects=t[16]
+e.incline=t[17]
+e.person=t[18]
+e.prepose=t[19]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/worldMap/DTInspirationLiveEntityTableData')
+end
+return a 

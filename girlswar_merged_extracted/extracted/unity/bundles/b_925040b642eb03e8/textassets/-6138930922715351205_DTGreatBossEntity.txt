@@ -1,0 +1,60 @@
+local a={id=0,funOpen=0,initDataTime="",readyTime="",startTime="",endTime="",openGuildNum=0,locGuildMax=0,startDay1="",startDay2="",moveTime=0,moveCd=0,startTroops=0,atkTroops=0,loseTroops=0,reviveTime=0,atkPoint=0,firstPoint=0,atkBossCd=0,atkPlayerCd=0,floorAward={{},{}},mapDisplayMax=0}
+a.__index=a
+function a.New(l,f,c,t,p,y,w,b,k,g,q,j,v,m,s,n,i,o,h,d,r,u)
+local e={}
+setmetatable(e,a)
+e.id=l
+e.funOpen=f
+e.initDataTime=c
+e.readyTime=t
+e.startTime=p
+e.endTime=y
+e.openGuildNum=w
+e.locGuildMax=b
+e.startDay1=k
+e.startDay2=g
+e.moveTime=q
+e.moveCd=j
+e.startTroops=v
+e.atkTroops=m
+e.loseTroops=s
+e.reviveTime=n
+e.atkPoint=i
+e.firstPoint=o
+e.atkBossCd=h
+e.atkPlayerCd=d
+e.floorAward=r
+e.mapDisplayMax=u
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.funOpen=t[2]
+e.initDataTime=t[3]
+e.readyTime=t[4]
+e.startTime=t[5]
+e.endTime=t[6]
+e.openGuildNum=t[7]
+e.locGuildMax=t[8]
+e.startDay1=t[9]
+e.startDay2=t[10]
+e.moveTime=t[11]
+e.moveCd=t[12]
+e.startTroops=t[13]
+e.atkTroops=t[14]
+e.loseTroops=t[15]
+e.reviveTime=t[16]
+e.atkPoint=t[17]
+e.firstPoint=t[18]
+e.atkBossCd=t[19]
+e.atkPlayerCd=t[20]
+e.floorAward=t[21]
+e.mapDisplayMax=t[22]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/guild/DTGreatBossEntityTableData')
+end
+return a 

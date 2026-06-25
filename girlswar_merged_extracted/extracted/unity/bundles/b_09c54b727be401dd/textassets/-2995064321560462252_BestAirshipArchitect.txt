@@ -1,0 +1,29 @@
+
+?
+BestAirshipArchitect.protoCommons.proto"?
+PRT_BEST_AIRSHIP_ARCHITECT_TASK
+taskDid (RtaskDid+
+status (2.ENUM_REWARD_STATUSRstatus
+progress (Rprogress"%
+#PRT_BEST_AIRSHIP_ARCHITECT_INFO_REQ"?
+$PRT_BEST_AIRSHIP_ARCHITECT_INFO_RESP
+	startTime (R	startTime
+endTime (RendTime9
+totalSelfRank (2.PRT_CS_COMMON_RANKRtotalSelfRank6
+tasks (2 .PRT_BEST_AIRSHIP_ARCHITECT_TASKRtasks"@
+$PRT_BEST_AIRSHIP_ARCHITECT_AWARD_REQ
+taskDid (RtaskDid"]
+%PRT_BEST_AIRSHIP_ARCHITECT_AWARD_RESP4
+task (2 .PRT_BEST_AIRSHIP_ARCHITECT_TASKRtask"+
+)PRT_BEST_AIRSHIP_ARCHITECT_RANK_LOCAL_REQ"?
+*PRT_BEST_AIRSHIP_ARCHITECT_RANK_LOCAL_RESP8
+totalRankDatas (2.PRT_COMMON_RANKRtotalRankDatas6
+totalSelfRank (2.PRT_COMMON_RANKRtotalSelfRank"?
+3PRT_CS_BEST_AIRSHIP_ARCHITECT_RANK_SCORE_UPDATE_SYN
+playerId (RplayerId
+score (Rscore
+changeMS (RchangeMS"?
+'PRT_CS_BEST_AIRSHIP_ARCHITECT_INFO_RESP
+playerId (RplayerId9
+totalSelfRank (2.PRT_CS_COMMON_RANKRtotalSelfRankB
+com.next1b.nextsvr.protobproto3

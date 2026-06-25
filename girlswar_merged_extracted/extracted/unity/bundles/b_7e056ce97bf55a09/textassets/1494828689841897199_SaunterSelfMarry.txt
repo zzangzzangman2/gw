@@ -1,0 +1,47 @@
+
+?	
+SaunterSelfMarry.protoCommons.proto"
+PRT_SAUNTER_DRAW_INFO_REQ"t
+PRT_SAUNTER_DRAW_INFO_RESP
+leftTime (RleftTime
+
+drawNumber (R
+drawNumber
+multiple (Rmultiple"c
+PRT_SAUNTER_DRAW_REQ#
+type (2.ENUM_DRAW_TYPERtype&
+isCostCurrency (RisCostCurrency"?
+PRT_SAUNTER_DRAW_RESP#
+type (2.ENUM_DRAW_TYPERtype
+
+drawNumber (R
+drawNumber
+multiple (Rmultiple'
+awards (2.PRT_ONCE_AWARDRawards"
+PRT_SAUNTER_SHOP_REQ"f
+PRT_SAUNTER_SHOP_RESP-
+itemInfo (2.PRT_SAUNTER_ITEMRitemInfo
+
+isFirstDay (R
+isFirstDay";
+PRT_SAUNTER_FREE_GIFT_AWARD_REQ
+giftDid (RgiftDid"W
+ PRT_SAUNTER_FREE_GIFT_AWARD_RESP3
+giftBuyInfo (2.PRT_SAUNTER_ITEMRgiftBuyInfo"f
+PRT_SAUNTER_ITEM
+giftDid (RgiftDid
+buyTimes (RbuyTimes
+	resetTime (R	resetTime"
+PRT_SAUNTER_BELIEF_INFO_REQ"R
+PRT_SAUNTER_BELIEF_INFO_RESP
+ringDid (RringDid
+targets (Rtargets"5
+PRT_SAUNTER_BELIEF_DRAW_REQ
+target (Rtarget"6
+PRT_SAUNTER_BELIEF_DRAW_RESP
+target (Rtarget"
+PRT_SAUNTER_ANIMGROUPS_SYN"
+PRT_SAUNTER_CHANCEL_REQ"4
+PRT_SAUNTER_CHANCEL_RESP
+roundId (RroundIdB
+com.next1b.nextsvr.protobproto3

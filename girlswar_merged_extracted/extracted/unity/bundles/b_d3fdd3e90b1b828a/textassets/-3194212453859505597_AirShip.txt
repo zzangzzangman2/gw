@@ -1,0 +1,50 @@
+
+?	
+AirShip.protoCommons.proto"O
+PRT_AIRSHIP
+comStage (RcomStage$
+selAirshipDid (RselAirshipDid"A
+PRT_AIRSHIP_COMPONENT
+type (Rtype
+level (Rlevel"R
+PRT_AIRSHIP_CORE
+type (Rtype
+stage (Rstage
+level (Rlevel"
+PRT_AIRSHIP_INFO_REQ"?
+PRT_AIRSHIP_INFO_RESP&
+airship (2.PRT_AIRSHIPRairship*
+coms (2.PRT_AIRSHIP_COMPONENTRcoms'
+cores (2.PRT_AIRSHIP_CORERcores 
+airshipDids (RairshipDids"5
+PRT_AIRSHIP_COMPONENT_LEVEL_REQ
+type (Rtype"L
+ PRT_AIRSHIP_COMPONENT_LEVEL_RESP(
+com (2.PRT_AIRSHIP_COMPONENTRcom"!
+PRT_AIRSHIP_COMPONENT_STAGE_REQ"v
+ PRT_AIRSHIP_COMPONENT_STAGE_RESP&
+airship (2.PRT_AIRSHIPRairship*
+coms (2.PRT_AIRSHIP_COMPONENTRcoms"0
+PRT_AIRSHIP_CORE_LEVEL_REQ
+type (Rtype"D
+PRT_AIRSHIP_CORE_LEVEL_RESP%
+core (2.PRT_AIRSHIP_CORERcore"0
+PRT_AIRSHIP_CORE_STAGE_REQ
+type (Rtype"f
+PRT_AIRSHIP_CORE_STAGE_RESP%
+core (2.PRT_AIRSHIP_CORERcore 
+thing (2
+.PRT_THINGRthing"8
+PRT_AIRSHIP_CHANGE_REQ
+
+airshipDid (R
+airshipDid"9
+PRT_AIRSHIP_CHANGE_RESP
+
+airshipDid (R
+airshipDid"8
+PRT_AIRSHIP_ACTIVE_SYN
+
+airshipDid (R
+airshipDidB
+com.next1b.nextsvr.protobproto3

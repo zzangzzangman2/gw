@@ -1,0 +1,17 @@
+local e=
+{
+ByIdx={
+{1,1,3,10104,3,"zhuzhen_huijuan","zhuzhen_huijuan2","UI_HeroWallMainView"},
+{2,1,9,10019,9,"zhuzhen_tujian","zhuzhen_tujian2","UI_HeroAtlas"},
+{3,1,6,10072,6,"zhuzhen_guanzhi","zhuzhen_guanzhi2","UI_OfficerMainView"},
+{4,1,2,10074,2,"zhuzhen_huajia","zhuzhen_huajia2","UI_MarryResidence"},
+{5,1,5,10029,5,"zhuzhen_haogan","zhuzhen_haogan2","UI_Favorability"},
+{6,1,8,10018,8,"zhuzhen_wuyu","zhuzhen_wuyu2","UI_Tale"},
+{7,1,7,10114,7,"zhuzhen_shenxiang","zhuzhen_shenxiang2","UI_DeityStatue_Main"},
+{8,1,4,10088,4,"zhuzhen_zhicheng","zhuzhen_zhicheng2","UI_SubCityList"},
+{9,1,10,0,10,"dhzrk","dhz_dhzrkz","UI_ActGroupPhoto_TuJian"},
+{10,1,1,10140,1,"zhuzhen_zhucheng","zhuzhen_zhucheng","UI_PlayerCity_Root"}
+},
+Len=10
+}
+return e 

@@ -1,0 +1,21 @@
+local e=
+{
+ByIdx={
+{1,0,10,"UI.ActCutTreeRewardPriview01",42962115},
+{2,1,3,"UI.ActCutTreeRewardPriview02",42962114},
+{3,1,4,"UI.ActCutTreeRewardPriview02",42962114},
+{4,1,5,"UI.ActCutTreeRewardPriview02",42962114},
+{5,1,6,"UI.ActCutTreeRewardPriview02",42962114},
+{6,1,7,"UI.ActCutTreeRewardPriview02",42962114},
+{7,1,8,"UI.ActCutTreeRewardPriview02",42962114},
+{8,1,9,"UI.ActCutTreeRewardPriview02",42962114},
+{9,1,10,"UI.ActCutTreeRewardPriview02",42962114},
+{10,1,11,"UI.ActCutTreeRewardPriview02",42962114},
+{11,1,12,"UI.ActCutTreeRewardPriview02",42962114},
+{12,1,13,"UI.ActCutTreeRewardPriview02",42962114},
+{13,1,14,"UI.ActCutTreeRewardPriview02",42962114},
+{14,1,15,"UI.ActCutTreeRewardPriview02",42962114}
+},
+Len=14
+}
+return e 

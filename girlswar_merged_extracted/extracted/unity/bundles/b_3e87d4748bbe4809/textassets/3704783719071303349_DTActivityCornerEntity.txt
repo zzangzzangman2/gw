@@ -1,0 +1,22 @@
+local e={id=0,display=0,spineRateName=""}
+e.__index=e
+function e.New(o,a,i)
+local t={}
+setmetatable(t,e)
+t.id=o
+t.display=a
+t.spineRateName=i
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.display=a[2]
+t.spineRateName=a[3]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/activity/DTActivityCornerEntityTableData')
+end
+return e 

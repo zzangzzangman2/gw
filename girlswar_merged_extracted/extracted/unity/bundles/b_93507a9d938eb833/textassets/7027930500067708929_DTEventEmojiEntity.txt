@@ -1,0 +1,26 @@
+local e={id=0,anim="",unlockType=0,unlockPara={},mainMsg=""}
+e.__index=e
+function e.New(o,n,a,s,i)
+local t={}
+setmetatable(t,e)
+t.id=o
+t.anim=n
+t.unlockType=a
+t.unlockPara=s
+t.mainMsg=i
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.anim=a[2]
+t.unlockType=a[3]
+t.unlockPara=a[4]
+t.mainMsg=a[5]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/player/DTEventEmojiEntityTableData')
+end
+return e 

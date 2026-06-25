@@ -1,0 +1,26 @@
+local e=
+{
+ByIdx={
+{1201,"itemname_1201","itemdesc_1201","itemicon_1201",{0}},
+{1202,"itemname_1202","itemdesc_1202","itemicon_1202",{0}},
+{1203,"itemname_1203","itemdesc_1203","itemicon_1203",{0}},
+{1204,"itemname_1204","itemdesc_1204","itemicon_1201",{0}},
+{1205,"itemname_1205","itemdesc_1205","itemicon_1205",{0}},
+{1206,"itemname_1206","itemdesc_1206","itemicon_1206",{0}},
+{1207,"itemname_1207","itemdesc_1207","itemicon_1207",{0}},
+{1208,"itemname_1208","itemdesc_1208","itemicon_1208",{0}},
+{1209,"itemname_1209","itemdesc_1209","itemicon_1209",{0}},
+{1210,"itemname_1210","itemdesc_1210","itemicon_1210",{0}},
+{1211,"itemname_1211","itemdesc_1211","itemicon_1211",{0}},
+{1212,"itemname_1212","itemdesc_1212","itemicon_1212",{0}},
+{1215,"itemname_1215","itemdesc_1215","itemicon_1215",{0}},
+{1216,"itemname_1216","itemdesc_1216","itemicon_1216",{0}},
+{1217,"itemname_1217","itemdesc_1217","itemicon_1217",{0}},
+{1218,"itemname_1218","itemdesc_1218","itemicon_1218",{0}},
+{1219,"itemname_1219","itemdesc_1219","itemicon_1219",{0}},
+{1221,"itemname_1221","itemdesc_1221","itemicon_1221",{0}},
+{1222,"itemname_1222","itemdesc_1222","itemicon_1222",{0}}
+},
+Len=19
+}
+return e 

@@ -1,0 +1,36 @@
+local a={id=0,welfareicon={},recruiticon={},chargeicon={},activityicon={},rallyicon={},activityBanner={},faceicon={},signicon={},limitedTimeEvents={}}
+a.__index=a
+function a.New(n,r,s,t,l,u,d,h,o,i)
+local e={}
+setmetatable(e,a)
+e.id=n
+e.welfareicon=r
+e.recruiticon=s
+e.chargeicon=t
+e.activityicon=l
+e.rallyicon=u
+e.activityBanner=d
+e.faceicon=h
+e.signicon=o
+e.limitedTimeEvents=i
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.welfareicon=t[2]
+e.recruiticon=t[3]
+e.chargeicon=t[4]
+e.activityicon=t[5]
+e.rallyicon=t[6]
+e.activityBanner=t[7]
+e.faceicon=t[8]
+e.signicon=t[9]
+e.limitedTimeEvents=t[10]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/activity/DTActivityNum_NewEntityTableData')
+end
+return a 

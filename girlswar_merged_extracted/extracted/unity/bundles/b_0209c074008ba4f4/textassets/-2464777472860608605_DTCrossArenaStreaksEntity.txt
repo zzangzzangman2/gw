@@ -1,0 +1,22 @@
+local e={id=0,streaksMax=0,extraPoint=0}
+e.__index=e
+function e.New(o,a,i)
+local t={}
+setmetatable(t,e)
+t.id=o
+t.streaksMax=a
+t.extraPoint=i
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.streaksMax=a[2]
+t.extraPoint=a[3]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/arena/DTCrossArenaStreaksEntityTableData')
+end
+return e 

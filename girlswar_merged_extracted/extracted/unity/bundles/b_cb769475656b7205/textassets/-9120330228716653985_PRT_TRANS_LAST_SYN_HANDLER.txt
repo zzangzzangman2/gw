@@ -1,0 +1,11 @@
+local t={}
+function t:OnHandle(e)
+local e=assert(GlobalPB.decode("PRT_TRANS_LAST_SYN",e));
+if(GameInit.GetDebugLogProto())then
+;
+;
+end
+NetManager.transInfo.last=e.last
+return e
+end
+return t 

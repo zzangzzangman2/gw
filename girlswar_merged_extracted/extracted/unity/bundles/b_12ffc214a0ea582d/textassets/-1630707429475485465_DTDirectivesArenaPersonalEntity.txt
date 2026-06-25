@@ -1,0 +1,44 @@
+local a={id=0,day=0,taskCategory=0,unlockType=0,unlockParam=0,name="",desc="",taskdesc="",taskType=0,taskParam=0,targetCount=0,jumpId=0,taskDay=0,award={{},{}}}
+a.__index=a
+function a.New(s,l,r,t,u,m,f,w,c,d,i,o,n,h)
+local e={}
+setmetatable(e,a)
+e.id=s
+e.day=l
+e.taskCategory=r
+e.unlockType=t
+e.unlockParam=u
+e.name=m
+e.desc=f
+e.taskdesc=w
+e.taskType=c
+e.taskParam=d
+e.targetCount=i
+e.jumpId=o
+e.taskDay=n
+e.award=h
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.day=t[2]
+e.taskCategory=t[3]
+e.unlockType=t[4]
+e.unlockParam=t[5]
+e.name=t[6]
+e.desc=t[7]
+e.taskdesc=t[8]
+e.taskType=t[9]
+e.taskParam=t[10]
+e.targetCount=t[11]
+e.jumpId=t[12]
+e.taskDay=t[13]
+e.award=t[14]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/directives/DTDirectivesArenaPersonalEntityTableData')
+end
+return a 

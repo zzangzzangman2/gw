@@ -1,0 +1,28 @@
+local e={id=0,skillType=0,skillArg=0,needIntimacy=0,maxLevel=0,attr={{},{}}}
+e.__index=e
+function e.New(a,i,o,h,s,n)
+local t={}
+setmetatable(t,e)
+t.id=a
+t.skillType=i
+t.skillArg=o
+t.needIntimacy=h
+t.maxLevel=s
+t.attr=n
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.skillType=a[2]
+t.skillArg=a[3]
+t.needIntimacy=a[4]
+t.maxLevel=a[5]
+t.attr=a[6]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/marry/DTMarrySkillPasEntityTableData')
+end
+return e 

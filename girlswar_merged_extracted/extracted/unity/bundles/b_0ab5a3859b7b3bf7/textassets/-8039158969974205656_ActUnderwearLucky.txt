@@ -1,0 +1,15 @@
+
+?
+ActUnderwearLucky.protoActivity.proto"
+PRT_UNDERWEAR_LUCKY_REQ"R
+PRT_UNDERWEAR_LUCKY_RESP
+freeDraw (RfreeDraw
+leftTime (RleftTime"?
+PRT_UNDERWEAR_LUCKY_DRAW_REQ+
+poolType (2.ENUM_POOL_TYPERpoolType
+	isTenDraw (R	isTenDraw&
+isCostCurrency (RisCostCurrency"W
+PRT_UNDERWEAR_LUCKY_DRAW_RESP
+freeDraw (RfreeDraw
+awardStr (	RawardStrB
+com.next1b.nextsvr.protobproto3

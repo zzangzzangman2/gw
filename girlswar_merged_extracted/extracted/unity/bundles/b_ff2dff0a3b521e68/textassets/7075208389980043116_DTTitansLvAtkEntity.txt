@@ -1,0 +1,26 @@
+local e={id=0,atkCent=0,skillDesc="",skillIcon="",rare=0}
+e.__index=e
+function e.New(o,n,a,s,i)
+local t={}
+setmetatable(t,e)
+t.id=o
+t.atkCent=n
+t.skillDesc=a
+t.skillIcon=s
+t.rare=i
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.atkCent=a[2]
+t.skillDesc=a[3]
+t.skillIcon=a[4]
+t.rare=a[5]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/titans/DTTitansLvAtkEntityTableData')
+end
+return e 

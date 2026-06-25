@@ -1,0 +1,20 @@
+local e=
+{
+ByIdx={
+{751,"activityname_751","rankcycle_pack_751","rankcycle_pack_bot","Assets/Download/UI/UIPrefabAndRes/ActRankCycle_Ext_1/congbang_banner751.png","Assets/Download/UI/UIPrefabAndRes/ActRankCycle_Ext_2/congbang_lbbanner.png","rankcycle_score_name_751","UICommonOther/multilang_IC_zhandouli",100,48,1,6,1},
+{752,"activityname_752","rankcycle_pack_752","rankcycle_pack_bot","Assets/Download/UI/UIPrefabAndRes/ActRankCycle_Ext_1/congbang_banner752.png","Assets/Download/UI/UIPrefabAndRes/ActRankCycle_Ext_3/congbang_lbbanner.png","rankcycle_score_name_751","UICommonOther/multilang_IC_zhandouli",100,48,1,46,1},
+{753,"activityname_753","rankcycle_pack_753","rankcycle_pack_bot","Assets/Download/UI/UIPrefabAndRes/ActRankCycle_Ext_1/congbang_banner753.png","Assets/Download/UI/UIPrefabAndRes/ActRankCycle_Ext_4/congbang_lbbanner.png","rankcycle_score_name_751","UICommonOther/multilang_IC_zhandouli",100,48,1,47,1},
+{754,"activityname_754","rankcycle_pack_754","rankcycle_pack_bot","Assets/Download/UI/UIPrefabAndRes/ActRankCycle_Ext_1/congbang_banner754.png","Assets/Download/UI/UIPrefabAndRes/ActRankCycle_Ext_5/congbang_lbbanner.png","rankcycle_score_name_751","UICommonOther/multilang_IC_zhandouli",100,48,1,121,1},
+{756,"activityname_756","rankcycle_pack_756","rankcycle_pack_bot","Assets/Download/UI/UIPrefabAndRes/ActRankCycle_Ext_1/congbang_banner756.png","Assets/Download/UI/UIPrefabAndRes/ActRankCycle_Ext_5/congbang_lbbanner.png","rankcycle_score_name_751","UICommonOther/multilang_IC_zhandouli",100,48,1,142,1},
+{757,"activityname_757","rankcycle_pack_757","rankcycle_pack_bot","Assets/Download/UI/UIPrefabAndRes/ActRankCycle_Ext_1/congbang_banner757.png","Assets/Download/UI/UIPrefabAndRes/ActRankCycle_Ext_2/congbang_lbbanner.png","rankcycle_score_name_751","UICommonOther/multilang_IC_zhandouli",100,48,1,58,1},
+{758,"activityname_758","rankcycle_pack_758","rankcycle_pack_bot","Assets/Download/UI/UIPrefabAndRes/ActRankCycle_Ext_1/congbang_banner758.png","Assets/Download/UI/UIPrefabAndRes/ActRankCycle_Ext_3/congbang_lbbanner.png","rankcycle_score_name_751","UICommonOther/multilang_IC_zhandouli",100,48,1,35,0},
+{759,"activityname_759","rankcycle_pack_759","rankcycle_pack_bot","Assets/Download/UI/UIPrefabAndRes/ActRankCycle_Ext_1/congbang_banner759.png","Assets/Download/UI/UIPrefabAndRes/ActRankCycle_Ext_4/congbang_lbbanner.png","rankcycle_score_name_751","UICommonOther/multilang_IC_zhandouli",100,48,1,7,1},
+{760,"activityname_760","rankcycle_pack_760","rankcycle_pack_bot","Assets/Download/UI/UIPrefabAndRes/ActRankCycle_Ext_1/congbang_banner760.png","Assets/Download/UI/UIPrefabAndRes/ActRankCycle_Ext_5/congbang_lbbanner.png","rankcycle_score_name_751","UICommonOther/multilang_IC_zhandouli",100,48,1,414,1},
+{761,"activityname_761","rankcycle_pack_761","rankcycle_pack_bot","Assets/Download/UI/UIPrefabAndRes/ActRankCycle_Ext_1/congbang_banner761.png","Assets/Download/UI/UIPrefabAndRes/ActRankCycle_Ext_5/congbang_lbbanner.png","rankcycle_score_name_751","UICommonOther/multilang_IC_zhandouli",100,48,1,415,1},
+{762,"activityname_762","rankcycle_pack_762","rankcycle_pack_bot","Assets/Download/UI/UIPrefabAndRes/ActRankCycle_Ext_1/congbang_banner762.png","Assets/Download/UI/UIPrefabAndRes/ActRankCycle_Ext_4/congbang_lbbanner.png","rankcycle_score_name_751","UICommonOther/multilang_IC_zhandouli",100,48,1,407,0},
+{763,"activityname_763","rankcycle_pack_763","rankcycle_pack_bot","Assets/Download/UI/UIPrefabAndRes/ActRankCycle_Ext_1/congbang_banner763.png","Assets/Download/UI/UIPrefabAndRes/ActRankCycle_Ext_5/congbang_lbbanner.png","rankcycle_score_name_763","UICommonOther/multilang_IC_zhandouli",100,48,1,52,1},
+{764,"activityname_764","rankcycle_pack_764","rankcycle_pack_bot","Assets/Download/UI/UIPrefabAndRes/ActRankCycle_Ext_1/congbang_banner764.png","Assets/Download/UI/UIPrefabAndRes/ActRankCycle_Ext_5/congbang_lbbanner.png","rankcycle_score_name_751","UICommonOther/multilang_IC_zhandouli",100,48,1,301,0}
+},
+Len=13
+}
+return e 

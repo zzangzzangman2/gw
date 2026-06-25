@@ -1,0 +1,26 @@
+
+?
+ActHeroResetNew.protoCommons.proto"
+PRT_HERO_RESET_INFO_NEW_REQ"z
+PRT_HERO_RESET_INFO_NEW_RESP
+heroId (RheroId"
+things (2
+.PRT_THINGRthings
+
+resetCount (R
+resetCount"7
+PRT_HERO_RESET_CHOOSE_NEW_REQ
+heroId (RheroId"\
+PRT_HERO_RESET_CHOOSE_NEW_RESP
+heroId (RheroId"
+things (2
+.PRT_THINGRthings"6
+PRT_HERO_RESET_RESET_NEW_REQ
+heroId (RheroId"c
+PRT_HERO_RESET_RESET_NEW_RESP"
+awards (2
+.PRT_THINGRawards
+
+resetCount (R
+resetCountB
+com.next1b.nextsvr.protobproto3

@@ -1,0 +1,28 @@
+local e={id=0,goodsId=0,diamonds={},selectRewards={},giftName="",giftIcon=""}
+e.__index=e
+function e.New(a,i,o,h,s,n)
+local t={}
+setmetatable(t,e)
+t.id=a
+t.goodsId=i
+t.diamonds=o
+t.selectRewards=h
+t.giftName=s
+t.giftIcon=n
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.goodsId=a[2]
+t.diamonds=a[3]
+t.selectRewards=a[4]
+t.giftName=a[5]
+t.giftIcon=a[6]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/activity/DTActivityTeamGiftConfigEntityTableData')
+end
+return e 

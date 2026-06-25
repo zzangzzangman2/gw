@@ -1,0 +1,26 @@
+local e={id=0,consumption={},diamondCost={},diamondLimit=0,ExplorePerTap=0}
+e.__index=e
+function e.New(o,n,a,s,i)
+local t={}
+setmetatable(t,e)
+t.id=o
+t.consumption=n
+t.diamondCost=a
+t.diamondLimit=s
+t.ExplorePerTap=i
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.consumption=a[2]
+t.diamondCost=a[3]
+t.diamondLimit=a[4]
+t.ExplorePerTap=a[5]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/activity/DTActivityFingerEntityTableData')
+end
+return e 

@@ -1,0 +1,68 @@
+local a={id=0,previewId=0,desc="",operType=0,actionDuration=0,heroDid=0,isFlip=0,spineAnim="",talkContent="",audioId=0,sceneCut=0,talkBg="",attackStation=0,skillId=0,leftStation1={{},{}},leftStation2={{},{}},leftStation3={{},{}},leftStation4={{},{}},leftStation5={{},{}},leftStation6={{},{}},rightStation1={{},{}},rightStation2={{},{}},rightStation3={{},{}},rightStation4={{},{}},rightStation5={{},{}},rightStation6={{},{}}}
+a.__index=a
+function a.New(l,y,f,t,g,b,p,v,q,x,j,_,z,E,k,w,h,s,n,o,i,r,u,d,m,c)
+local e={}
+setmetatable(e,a)
+e.id=l
+e.previewId=y
+e.desc=f
+e.operType=t
+e.actionDuration=g
+e.heroDid=b
+e.isFlip=p
+e.spineAnim=v
+e.talkContent=q
+e.audioId=x
+e.sceneCut=j
+e.talkBg=_
+e.attackStation=z
+e.skillId=E
+e.leftStation1=k
+e.leftStation2=w
+e.leftStation3=h
+e.leftStation4=s
+e.leftStation5=n
+e.leftStation6=o
+e.rightStation1=i
+e.rightStation2=r
+e.rightStation3=u
+e.rightStation4=d
+e.rightStation5=m
+e.rightStation6=c
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.previewId=t[2]
+e.desc=t[3]
+e.operType=t[4]
+e.actionDuration=t[5]
+e.heroDid=t[6]
+e.isFlip=t[7]
+e.spineAnim=t[8]
+e.talkContent=t[9]
+e.audioId=t[10]
+e.sceneCut=t[11]
+e.talkBg=t[12]
+e.attackStation=t[13]
+e.skillId=t[14]
+e.leftStation1=t[15]
+e.leftStation2=t[16]
+e.leftStation3=t[17]
+e.leftStation4=t[18]
+e.leftStation5=t[19]
+e.leftStation6=t[20]
+e.rightStation1=t[21]
+e.rightStation2=t[22]
+e.rightStation3=t[23]
+e.rightStation4=t[24]
+e.rightStation5=t[25]
+e.rightStation6=t[26]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/skillAct/DTBattlePreviewDetailEntityTableData')
+end
+return a 

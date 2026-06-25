@@ -1,0 +1,28 @@
+
+?
+ActGameBBQ.protoCommons.proto"
+PRT_GAME_BBQ_INFO_REQ"p
+PRT_GAME_BBQ_INFO_RESP
+isAward (RisAward
+nowDay (RnowDay$
+todayMaxScore (RtodayMaxScore"F
+PRT_GAME_BBQ_END_REQ
+gameDay (RgameDay
+score (Rscore"?
+PRT_GAME_BBQ_END_RESP
+isAward (RisAward
+gameDay (RgameDay
+nowDay (RnowDay
+maxScore (RmaxScore"
+awards (2
+.PRT_THINGRawards"
+PRT_GAME_BBQ_RANK_REQ"?
+PRT_GAME_BBQ_RANK_RESP1
+	rankDatas (2.PRT_CS_COMMON_RANKR	rankDatas/
+selfRank (2.PRT_CS_COMMON_RANKRselfRank
+playerId (RplayerId"u
+%PRT_CS_GAME_BBQ_RANK_SCORE_UPDATE_SYN
+playerId (RplayerId
+score (Rscore
+changeMS (RchangeMSB
+com.next1b.nextsvr.protobproto3

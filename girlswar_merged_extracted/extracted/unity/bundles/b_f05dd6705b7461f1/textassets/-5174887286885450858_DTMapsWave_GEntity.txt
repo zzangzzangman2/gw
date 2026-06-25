@@ -1,0 +1,36 @@
+local a={id=0,mapId=0,wave=0,isBoss=0,monsterLists={},newMonsterLists={},Icon="",Name="",level=0,monsterEffect={}}
+a.__index=a
+function a.New(n,r,s,t,l,u,d,h,o,i)
+local e={}
+setmetatable(e,a)
+e.id=n
+e.mapId=r
+e.wave=s
+e.isBoss=t
+e.monsterLists=l
+e.newMonsterLists=u
+e.Icon=d
+e.Name=h
+e.level=o
+e.monsterEffect=i
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.mapId=t[2]
+e.wave=t[3]
+e.isBoss=t[4]
+e.monsterLists=t[5]
+e.newMonsterLists=t[6]
+e.Icon=t[7]
+e.Name=t[8]
+e.level=t[9]
+e.monsterEffect=t[10]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/maps/DTMapsWave_GEntityTableData')
+end
+return a 

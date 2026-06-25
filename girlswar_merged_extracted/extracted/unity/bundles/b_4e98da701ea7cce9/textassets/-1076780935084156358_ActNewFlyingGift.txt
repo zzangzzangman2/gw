@@ -1,0 +1,12 @@
+
+?
+ActNewFlyingGift.proto"
+PRT_NEW_FLYING_GIFT_GIFT_REQ"t
+PRT_NEW_FLYING_GIFT_GIFT_RESP5
+itemInfo (2.PRT_NEW_FLYING_GIFT_ITEMRitemInfo
+	endSecond (R	endSecond"n
+PRT_NEW_FLYING_GIFT_ITEM
+giftDid (RgiftDid
+buyTimes (RbuyTimes
+	resetTime (R	resetTimeB
+com.next1b.nextsvr.protobproto3

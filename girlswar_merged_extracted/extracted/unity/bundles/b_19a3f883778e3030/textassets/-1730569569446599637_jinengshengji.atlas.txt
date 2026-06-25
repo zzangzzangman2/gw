@@ -1,0 +1,13 @@
+jinengshengji.png
+size:512,128
+filter:Linear,Linear
+xing4
+bounds:290,17,52,62
+zi2
+bounds:83,2,78,77
+zi3
+bounds:2,2,79,77
+zi4
+bounds:163,6,63,73
+zi5
+bounds:228,6,60,73

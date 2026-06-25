@@ -1,0 +1,15 @@
+
+?
+ActJourney.protoCommons.proto"Y
+PRT_JOURNEY_TASK
+taskDid (RtaskDid+
+status (2.ENUM_REWARD_STATUSRstatus"
+PRT_JOURNEY_INFO_REQ"\
+PRT_JOURNEY_INFO_RESP
+leftTime (RleftTime'
+tasks (2.PRT_JOURNEY_TASKRtasks"1
+PRT_JOURNEY_AWARD_REQ
+taskDid (RtaskDid"?
+PRT_JOURNEY_AWARD_RESP%
+task (2.PRT_JOURNEY_TASKRtaskB
+com.next1b.nextsvr.protobproto3

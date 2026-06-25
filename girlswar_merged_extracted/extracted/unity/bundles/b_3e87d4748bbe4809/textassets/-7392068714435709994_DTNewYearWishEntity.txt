@@ -1,0 +1,36 @@
+local a={id=0,goodsStageOne=0,goodsStageTwo=0,goodsStageThree=0,freeAward={},awardStageOne={{},{}},awardStageTwo={{},{}},awardStageThree={{},{}},giftName="",giftPngName=""}
+a.__index=a
+function a.New(n,r,s,t,l,u,d,h,o,i)
+local e={}
+setmetatable(e,a)
+e.id=n
+e.goodsStageOne=r
+e.goodsStageTwo=s
+e.goodsStageThree=t
+e.freeAward=l
+e.awardStageOne=u
+e.awardStageTwo=d
+e.awardStageThree=h
+e.giftName=o
+e.giftPngName=i
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.goodsStageOne=t[2]
+e.goodsStageTwo=t[3]
+e.goodsStageThree=t[4]
+e.freeAward=t[5]
+e.awardStageOne=t[6]
+e.awardStageTwo=t[7]
+e.awardStageThree=t[8]
+e.giftName=t[9]
+e.giftPngName=t[10]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/activity/DTNewYearWishEntityTableData')
+end
+return a 

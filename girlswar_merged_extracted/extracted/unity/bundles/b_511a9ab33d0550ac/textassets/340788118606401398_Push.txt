@@ -1,0 +1,46 @@
+
+?
+
+Push.proto"d
+COMMON_PUSH_STRUCT
+pushId (RpushId 
+triggerTime (RtriggerTime
+param (	Rparam"?
+PRT_PLAYER_NOTICE_PUSH
+token (	Rtoken
+account (	Raccount
+platform (	Rplatform/
+pushList (2.COMMON_PUSH_STRUCTRpushList
+
+appVersion (	R
+appVersion
+serverId (RserverId
+playerId (RplayerId"?
+PRT_PLAYER_NOTICE_CLEAR
+token (	Rtoken
+account (	Raccount
+platform (	Rplatform
+
+appVersion (	R
+appVersion
+serverId (RserverId"a
+PRT_SERVER_PUSH_SYN
+serverId (RserverId
+pushId (RpushId
+params (	Rparams"y
+PRT_TOKEN_PUSH_INFO
+acc (	Racc
+token (	Rtoken
+
+appVersion (	R
+appVersion
+platform (	Rplatform"r
+PRT_TOKEN_PUSH_SYN
+pushId (RpushId
+params (	Rparams,
+tokens (2.PRT_TOKEN_PUSH_INFORtokens"e
+PRT_TOKEN_PUSH_CS_SYN
+pushId (RpushId
+	playerIds (R	playerIds
+params (	RparamsB
+com.next1b.nextsvr.protobproto3

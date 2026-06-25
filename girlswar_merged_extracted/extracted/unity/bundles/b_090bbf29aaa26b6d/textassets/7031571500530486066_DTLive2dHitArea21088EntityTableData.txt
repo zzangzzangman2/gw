@@ -1,0 +1,36 @@
+local e=
+{
+ByIdx={
+{"HitArea_Hit",2,0},
+{"HitArea_Star",3,0},
+{"HitArea_HandR",4,0},
+{"HitArea_Belly",5,0},
+{"HitArea_Trigone1",6,0},
+{"HitArea_Trigone2",7,0},
+{"HitArea_Head",8,0},
+{"HitArea_HandL",9,0},
+{"HitArea_BreastL",10,0},
+{"HitArea_BreastR",11,0},
+{"HitArea_LegRD1",12,0},
+{"HitArea_LegRD2",13,0},
+{"HitArea_LegRD3",14,0},
+{"HitArea_LegRD4",15,0},
+{"HitArea_LegLD1",16,0},
+{"HitArea_LegLD2",17,0},
+{"HitArea_LegLD3",18,0},
+{"HitArea_Foot",19,0},
+{"HitArea_LegR1",20,0},
+{"HitArea_LegR2",21,1},
+{"HitArea_LegR3",22,1},
+{"HitArea_LegR4",23,0},
+{"HitArea_LegR5",24,0},
+{"HitArea_LegR6",25,0},
+{"HitArea_LegL1",26,0},
+{"HitArea_LegL2",27,1},
+{"HitArea_Cup1",28,0},
+{"HitArea_Cup2",29,0},
+{"HitArea_Rod",30,0}
+},
+Len=29
+}
+return e 

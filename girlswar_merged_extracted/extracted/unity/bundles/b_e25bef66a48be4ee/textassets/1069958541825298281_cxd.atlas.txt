@@ -1,0 +1,10 @@
+cxd.png
+size:512,256
+filter:Linear,Linear
+2
+bounds:0,27,472,228
+cxd3
+bounds:0,0,127,25
+cxd4
+bounds:474,102,153,38
+rotate:90

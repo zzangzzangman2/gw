@@ -1,0 +1,17 @@
+local t={}
+function t:OnHandle(e)
+local e=assert(GlobalPB.decode("PRT_GREAT_BOSS_RALLY_SYN",e));
+if(GameInit.GetDebugLogProto())then
+;
+;
+end
+if ModulesInit.GreatBossMgr.isEnterStatus then
+if e.isSend then
+ModulesInit.GreatBossDataMgr:SetRally(e.rally.mapDid,e.rally.pos)
+else
+ModulesInit.GreatBossDataMgr:SetRally(0,0)
+end
+end
+return e
+end
+return t 

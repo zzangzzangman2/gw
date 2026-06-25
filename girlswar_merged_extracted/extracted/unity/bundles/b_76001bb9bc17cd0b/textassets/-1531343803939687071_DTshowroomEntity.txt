@@ -1,0 +1,28 @@
+local e={id=0,number=0,name="",icon="",collectiblesId={},taskId=0}
+e.__index=e
+function e.New(a,i,o,h,s,n)
+local t={}
+setmetatable(t,e)
+t.id=a
+t.number=i
+t.name=o
+t.icon=h
+t.collectiblesId=s
+t.taskId=n
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.number=a[2]
+t.name=a[3]
+t.icon=a[4]
+t.collectiblesId=a[5]
+t.taskId=a[6]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/collectibles/DTshowroomEntityTableData')
+end
+return e 

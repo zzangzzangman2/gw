@@ -1,0 +1,24 @@
+local e={id=0,stageID=0,plan=0,award={{},{}}}
+e.__index=e
+function e.New(o,a,n,i)
+local t={}
+setmetatable(t,e)
+t.id=o
+t.stageID=a
+t.plan=n
+t.award=i
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.stageID=a[2]
+t.plan=a[3]
+t.award=a[4]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/activity/DTActCellSurvivorStageAwardEntityTableData')
+end
+return e 

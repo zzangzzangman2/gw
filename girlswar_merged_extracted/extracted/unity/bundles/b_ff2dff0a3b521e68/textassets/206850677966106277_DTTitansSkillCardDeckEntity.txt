@@ -1,0 +1,28 @@
+local e={id=0,deckType=0,deckCode=0,name="",desc="",cards={}}
+e.__index=e
+function e.New(a,i,o,h,s,n)
+local t={}
+setmetatable(t,e)
+t.id=a
+t.deckType=i
+t.deckCode=o
+t.name=h
+t.desc=s
+t.cards=n
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.deckType=a[2]
+t.deckCode=a[3]
+t.name=a[4]
+t.desc=a[5]
+t.cards=a[6]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/titans/DTTitansSkillCardDeckEntityTableData')
+end
+return e 

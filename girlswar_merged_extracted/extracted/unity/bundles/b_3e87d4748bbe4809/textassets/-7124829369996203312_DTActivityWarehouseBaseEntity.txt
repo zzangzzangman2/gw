@@ -1,0 +1,32 @@
+local a={id=0,multiplierItem={},multiplier=0,extraItem={},mail=0,retain=0,depict1="",depict2=""}
+a.__index=a
+function a.New(i,h,n,t,d,r,s,o)
+local e={}
+setmetatable(e,a)
+e.id=i
+e.multiplierItem=h
+e.multiplier=n
+e.extraItem=t
+e.mail=d
+e.retain=r
+e.depict1=s
+e.depict2=o
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.multiplierItem=t[2]
+e.multiplier=t[3]
+e.extraItem=t[4]
+e.mail=t[5]
+e.retain=t[6]
+e.depict1=t[7]
+e.depict2=t[8]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/activity/DTActivityWarehouseBaseEntityTableData')
+end
+return a 

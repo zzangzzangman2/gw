@@ -1,0 +1,5 @@
+camp_compose.png
+size:128,32
+filter:Linear,Linear
+a
+bounds:0,0,66,31

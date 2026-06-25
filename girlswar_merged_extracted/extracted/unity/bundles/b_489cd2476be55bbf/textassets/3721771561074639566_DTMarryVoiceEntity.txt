@@ -1,0 +1,42 @@
+local a={id=0,heroId=0,voicePath="",voiceType="",voiceTime="",voiceNameLock="",voiceNameUnlock="",voiceLine="",neverUnlock=0,numberSets=0,levelUnlock=0,showInList=0,oneVoice=0}
+a.__index=a
+function a.New(s,d,h,t,l,c,m,f,u,r,i,o,n)
+local e={}
+setmetatable(e,a)
+e.id=s
+e.heroId=d
+e.voicePath=h
+e.voiceType=t
+e.voiceTime=l
+e.voiceNameLock=c
+e.voiceNameUnlock=m
+e.voiceLine=f
+e.neverUnlock=u
+e.numberSets=r
+e.levelUnlock=i
+e.showInList=o
+e.oneVoice=n
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.heroId=t[2]
+e.voicePath=t[3]
+e.voiceType=t[4]
+e.voiceTime=t[5]
+e.voiceNameLock=t[6]
+e.voiceNameUnlock=t[7]
+e.voiceLine=t[8]
+e.neverUnlock=t[9]
+e.numberSets=t[10]
+e.levelUnlock=t[11]
+e.showInList=t[12]
+e.oneVoice=t[13]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/marry/DTMarryVoiceEntityTableData')
+end
+return a 

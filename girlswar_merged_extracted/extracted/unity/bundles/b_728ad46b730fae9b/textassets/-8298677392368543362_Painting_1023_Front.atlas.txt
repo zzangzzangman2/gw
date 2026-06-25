@@ -1,0 +1,8 @@
+Painting_1023_Front.png
+size:2048,2048
+filter:Linear,Linear
+bgb15
+bounds:2,706,1508,1069
+offsets:497,0,2005,1440
+bgb16
+bounds:2,2,1293,720

@@ -1,0 +1,30 @@
+local t={id=0,successAward=0,icon="",name="",desc="",desc1="",entryLine=""}
+t.__index=t
+function t.New(o,h,a,s,r,n,i)
+local e={}
+setmetatable(e,t)
+e.id=o
+e.successAward=h
+e.icon=a
+e.name=s
+e.desc=r
+e.desc1=n
+e.entryLine=i
+return e
+end
+function t.NewFromArrItem(a)
+local e={}
+setmetatable(e,t)
+e.id=a[1]
+e.successAward=a[2]
+e.icon=a[3]
+e.name=a[4]
+e.desc=a[5]
+e.desc1=a[6]
+e.entryLine=a[7]
+return e
+end
+function t.GetArr()
+return require('DataNode/DataTable/Create/urgrassland/DTUrGrasslandDescriptionEntityTableData')
+end
+return t 

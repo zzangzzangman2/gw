@@ -1,0 +1,51 @@
+
+?
+ActGirlChallenge.protoCommons.protoFight.protoFormation.protoSnapshot.proto"
+PRT_GIRL_CHALLENGE_INFO_REQ"?
+PRT_GIRL_CHALLENGE_INFO_RESP
+stage (Rstage
+day (Rday2
+nextDayChallengeTime (RnextDayChallengeTime6
+nextStageChallengeTime (RnextStageChallengeTime"
+challengeNum (RchallengeNum$
+todayMaxScore (RtodayMaxScore?
+todayTopRankList (2.PRT_CS_COMMON_RANKRtodayTopRankList9
+todaySelfRank	 (2.PRT_CS_COMMON_RANKRtodaySelfRank?
+totalTopRankList
+ (2.PRT_CS_COMMON_RANKRtotalTopRankList9
+totalSelfRank (2.PRT_CS_COMMON_RANKRtotalSelfRank
+playerId (RplayerId"r
+PRT_SHOW_HERO_INFO
+heroDid (RheroDid
+star (Rstar
+	lockLevel (R	lockLevel
+pos (Rpos"M
+PRT_SHOW_HERO_LIST7
+heroInfoList (2.PRT_SHOW_HERO_INFORheroInfoList"y
+PRT_RANK_INFO/
+rankInfo (2.PRT_CS_COMMON_RANKRrankInfo7
+heroInfoList (2.PRT_SHOW_HERO_INFORheroInfoList"9
+%PRT_GIRL_CHALLENGE_RANK_LIST_INFO_REQ
+day (Rday"?
+&PRT_GIRL_CHALLENGE_RANK_LIST_INFO_RESP
+day (Rday
+playerId (RplayerId*
+rankList (2.PRT_RANK_INFORrankList*
+selfRank (2.PRT_RANK_INFORselfRank"?
+#PRT_GIRL_CHALLENGE_BATTLE_FIGHT_REQ5
+	positions (2.PRT_FORMATION_POSITIONR	positions0
+snapshot (2.PRT_PLAYER_SNAPSHOTRsnapshot"?
+$PRT_GIRL_CHALLENGE_BATTLE_FIGHT_RESP/
+
+battleInfo (2.PRT_FIGHT_PLAYR
+battleInfo
+score (Rscore
+rank (Rrank
+oldRank (RoldRank$
+todayMaxScore (RtodayMaxScore
+	hurtScore (R	hurtScore
+defScore (RdefScore"
+challengeNum	 (RchallengeNum
+playerId
+ (RplayerIdB
+com.next1b.nextsvr.protobproto3

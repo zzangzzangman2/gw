@@ -1,0 +1,30 @@
+local t={id=0,next=0,type=0,needCount=0,award={{},{}},name="",desc=""}
+t.__index=t
+function t.New(o,h,a,s,r,n,i)
+local e={}
+setmetatable(e,t)
+e.id=o
+e.next=h
+e.type=a
+e.needCount=s
+e.award=r
+e.name=n
+e.desc=i
+return e
+end
+function t.NewFromArrItem(a)
+local e={}
+setmetatable(e,t)
+e.id=a[1]
+e.next=a[2]
+e.type=a[3]
+e.needCount=a[4]
+e.award=a[5]
+e.name=a[6]
+e.desc=a[7]
+return e
+end
+function t.GetArr()
+return require('DataNode/DataTable/Create/magicOrchard/DTMagicOrchardTaskEntityTableData')
+end
+return t 

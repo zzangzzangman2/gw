@@ -1,0 +1,30 @@
+local t={id=0,restore=0,goods=0,times=0,award={{},{}},likability=0,skinId=0}
+t.__index=t
+function t.New(o,h,a,s,r,n,i)
+local e={}
+setmetatable(e,t)
+e.id=o
+e.restore=h
+e.goods=a
+e.times=s
+e.award=r
+e.likability=n
+e.skinId=i
+return e
+end
+function t.NewFromArrItem(a)
+local e={}
+setmetatable(e,t)
+e.id=a[1]
+e.restore=a[2]
+e.goods=a[3]
+e.times=a[4]
+e.award=a[5]
+e.likability=a[6]
+e.skinId=a[7]
+return e
+end
+function t.GetArr()
+return require('DataNode/DataTable/Create/activity/DTBulunConfessionEntityTableData')
+end
+return t 

@@ -1,0 +1,5 @@
+newworld_zhangjieyitongguo.png
+size:128,128
+filter:Linear,Linear
+xtx_tongguantb
+bounds:2,2,97,101

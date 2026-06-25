@@ -1,0 +1,12 @@
+activityname_63.png
+size:128,128
+filter:Linear,Linear
+scale:0.35
+a05
+bounds:65,42,60,43
+a06
+bounds:0,43,64,42
+a07
+bounds:0,0,58,42
+fx_StarRight
+bounds:59,24,14,17

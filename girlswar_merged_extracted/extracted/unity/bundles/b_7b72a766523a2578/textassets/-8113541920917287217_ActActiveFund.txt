@@ -1,0 +1,20 @@
+
+?
+ActActiveFund.proto"?
+PRT_ACTIVE_FUND_INFO&
+curActiveCount (RcurActiveCount,
+chargeAwardUnlock (RchargeAwardUnlock,
+receivedAwardDids (RreceivedAwardDids8
+receivedChargeAwardDids (RreceivedChargeAwardDids"
+PRT_ACTIVE_FUND_INFO_REQ"F
+PRT_ACTIVE_FUND_INFO_RESP)
+info (2.PRT_ACTIVE_FUND_INFORinfo"W
+!PRT_ACTIVE_FUND_RECEIVE_AWARD_REQ
+did (Rdid 
+chargeAward (RchargeAward"O
+"PRT_ACTIVE_FUND_RECEIVE_AWARD_RESP)
+info (2.PRT_ACTIVE_FUND_INFORinfo"'
+%PRT_ACTIVE_FUND_RECEIVE_AWARD_ALL_REQ"S
+&PRT_ACTIVE_FUND_RECEIVE_AWARD_ALL_RESP)
+info (2.PRT_ACTIVE_FUND_INFORinfoB
+com.next1b.nextsvr.protobproto3

@@ -1,0 +1,36 @@
+local a={id=0,bossProfile=0,bossSkillId=0,skillName="",useType=0,usePara={},rate=0,effectType=0,effectPara={},line=""}
+a.__index=a
+function a.New(n,r,s,t,l,u,d,h,o,i)
+local e={}
+setmetatable(e,a)
+e.id=n
+e.bossProfile=r
+e.bossSkillId=s
+e.skillName=t
+e.useType=l
+e.usePara=u
+e.rate=d
+e.effectType=h
+e.effectPara=o
+e.line=i
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.bossProfile=t[2]
+e.bossSkillId=t[3]
+e.skillName=t[4]
+e.useType=t[5]
+e.usePara=t[6]
+e.rate=t[7]
+e.effectType=t[8]
+e.effectPara=t[9]
+e.line=t[10]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/titans/DTTitansBossSkillEntityTableData')
+end
+return a 

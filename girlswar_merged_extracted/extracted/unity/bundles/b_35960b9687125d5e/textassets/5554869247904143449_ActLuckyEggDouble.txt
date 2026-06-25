@@ -1,0 +1,16 @@
+
+?
+ActLuckyEggDouble.protoCommons.proto"
+PRT_LUCKY_EGG_DOUBLE_INFO_REQ"|
+PRT_LUCKY_EGG_DOUBLE_INFO_RESP
+leftTime (RleftTime
+luckyDid (RluckyDid"
+things (2
+.PRT_THINGRthings"
+PRT_LUCKY_EGG_DOUBLE_DRAW_REQ"|
+PRT_LUCKY_EGG_DOUBLE_DRAW_RESP
+leftTime (RleftTime
+luckyDid (RluckyDid"
+things (2
+.PRT_THINGRthingsB
+com.next1b.nextsvr.protobproto3

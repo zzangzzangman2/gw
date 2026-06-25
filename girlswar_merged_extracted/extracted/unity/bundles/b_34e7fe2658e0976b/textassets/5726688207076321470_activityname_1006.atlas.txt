@@ -1,0 +1,5 @@
+activityname_1006.png
+size:64,64
+filter:Linear,Linear
+zhuye_fuli
+bounds:0,0,53,59

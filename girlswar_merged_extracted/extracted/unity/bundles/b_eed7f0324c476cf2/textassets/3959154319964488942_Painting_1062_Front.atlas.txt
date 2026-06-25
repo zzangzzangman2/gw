@@ -1,0 +1,12 @@
+Painting_1062_Front.png
+size:1024,1024
+filter:Linear,Linear
+effect/effect_2
+bounds:558,201,397,391
+rotate:90
+effect/lili
+bounds:0,82,557,516
+t2
+bounds:773,119,83,81
+t3
+bounds:558,0,214,200

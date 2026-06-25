@@ -1,0 +1,30 @@
+local t={id=0,openDay=0,condition=0,requireNum=0,awardNum={},desc="",funcJump=0}
+t.__index=t
+function t.New(o,h,a,s,r,n,i)
+local e={}
+setmetatable(e,t)
+e.id=o
+e.openDay=h
+e.condition=a
+e.requireNum=s
+e.awardNum=r
+e.desc=n
+e.funcJump=i
+return e
+end
+function t.NewFromArrItem(a)
+local e={}
+setmetatable(e,t)
+e.id=a[1]
+e.openDay=a[2]
+e.condition=a[3]
+e.requireNum=a[4]
+e.awardNum=a[5]
+e.desc=a[6]
+e.funcJump=a[7]
+return e
+end
+function t.GetArr()
+return require('DataNode/DataTable/Create/activity/DTLuckyPrayTaskEntityTableData')
+end
+return t 

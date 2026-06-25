@@ -1,0 +1,12 @@
+local t={}
+function t:OnHandle(e)
+local e=assert(GlobalPB.decode("PRT_SELF_MARKET_LR_DRAW_RESP",e));
+if(GameInit.GetDebugLogProto())then
+;
+;
+end
+ModulesInit.ActSelfMarketMgr:SyncDraw(e)
+
+return e
+end
+return t 

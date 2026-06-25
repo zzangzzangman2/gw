@@ -1,0 +1,26 @@
+local e={id=0,day=0,targetPoint=0,levelTime=0,award={{},{}}}
+e.__index=e
+function e.New(o,n,a,s,i)
+local t={}
+setmetatable(t,e)
+t.id=o
+t.day=n
+t.targetPoint=a
+t.levelTime=s
+t.award=i
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.day=a[2]
+t.targetPoint=a[3]
+t.levelTime=a[4]
+t.award=a[5]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/activity/DTGameBBQMapEntityTableData')
+end
+return e 

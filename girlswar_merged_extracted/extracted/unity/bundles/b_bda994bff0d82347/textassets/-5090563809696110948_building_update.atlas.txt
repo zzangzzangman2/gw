@@ -1,0 +1,92 @@
+building_update.png
+size:1024,512
+filter:Linear,Linear
+scale:0.5
+XX3333
+bounds:572,412,91,83
+rotate:90
+chui
+bounds:0,132,371,350
+rotate:90
+effect_1/hero dragon smokeDecal_1
+bounds:0,22,144,108
+effect_1/hero dragon smokeDecal_2
+bounds:146,22,144,108
+effect_1/hero dragon smokeDecal_3
+bounds:292,22,144,108
+effect_1/hero dragon smokeDecal_4
+bounds:352,359,144,108
+rotate:90
+effect_1/hero dragon smokeDecal_5
+bounds:352,213,144,108
+rotate:90
+effect_1/hero dragon smokeDecal_6
+bounds:462,214,143,108
+rotate:90
+effect_1/hero dragon smokeDecal_7
+bounds:438,1,144,108
+rotate:90
+effect_1/hero dragon smokeDecal_8
+bounds:548,3,143,108
+rotate:90
+effect_1/hero dragon smokeDecal_9
+bounds:462,359,144,108
+rotate:90
+star1
+bounds:755,402,50,50
+yan/tyxly1_01
+bounds:352,147,64,64
+yan/tyxly1_02
+bounds:418,147,64,64
+yan/tyxly1_03
+bounds:484,148,64,64
+yan/tyxly1_04
+bounds:550,148,64,64
+yan/tyxly1_05
+bounds:572,346,64,64
+yan/tyxly1_06
+bounds:572,280,64,64
+yan/tyxly1_07
+bounds:572,214,64,64
+yan/tyxly1_08
+bounds:616,148,64,64
+yan/tyxly1_09
+bounds:658,82,64,64
+yan/tyxly1_10
+bounds:658,16,64,64
+yan/tyxly1_11
+bounds:638,346,64,64
+yan/tyxly1_12
+bounds:657,439,64,64
+yan/tyxly1_13
+bounds:638,280,64,64
+yan/tyxly1_14
+bounds:638,214,64,64
+yan/tyxly1_15
+bounds:682,148,64,64
+yan/tyxly1_16
+bounds:724,82,64,64
+yan2/yanbd1_01
+bounds:724,0,80,49
+rotate:90
+yan2/yanbd1_02
+bounds:775,0,80,49
+rotate:90
+yan2/yanbd1_03
+bounds:704,357,80,49
+rotate:90
+yan2/yanbd1_04
+bounds:723,454,80,49
+yan2/yanbd1_05
+bounds:704,275,80,49
+rotate:90
+yan2/yanbd1_06
+bounds:704,224,80,49
+yan2/yanbd1_07
+bounds:748,173,80,49
+yan2/yanbd1_08
+bounds:790,91,80,49
+rotate:90
+yan2/yanbd1_09
+bounds:826,9,80,49
+rotate:90

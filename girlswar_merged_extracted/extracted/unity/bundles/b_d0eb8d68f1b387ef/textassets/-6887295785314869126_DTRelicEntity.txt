@@ -1,0 +1,36 @@
+local a={id=0,name="",scriptId=0,attr={},color=0,rare=0,buyCost={},funcPara=0,desc="",icon=""}
+a.__index=a
+function a.New(n,r,s,t,l,u,d,h,o,i)
+local e={}
+setmetatable(e,a)
+e.id=n
+e.name=r
+e.scriptId=s
+e.attr=t
+e.color=l
+e.rare=u
+e.buyCost=d
+e.funcPara=h
+e.desc=o
+e.icon=i
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.name=t[2]
+e.scriptId=t[3]
+e.attr=t[4]
+e.color=t[5]
+e.rare=t[6]
+e.buyCost=t[7]
+e.funcPara=t[8]
+e.desc=t[9]
+e.icon=t[10]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/maze/DTRelicEntityTableData')
+end
+return a 

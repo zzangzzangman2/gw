@@ -1,0 +1,9 @@
+SP_heroname_1035.png
+size:256,512
+filter:Linear,Linear
+1035name
+bounds:0,80,220,69
+ssr
+bounds:0,0,153,79
+t3
+bounds:0,150,214,200

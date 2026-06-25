@@ -1,0 +1,28 @@
+local e={id=0,cost={},tenCost={},award={{},{}},floorTime=0,floorPool=0}
+e.__index=e
+function e.New(a,i,o,h,s,n)
+local t={}
+setmetatable(t,e)
+t.id=a
+t.cost=i
+t.tenCost=o
+t.award=h
+t.floorTime=s
+t.floorPool=n
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.cost=a[2]
+t.tenCost=a[3]
+t.award=a[4]
+t.floorTime=a[5]
+t.floorPool=a[6]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/activity/DTLuckyTurntableEntityTableData')
+end
+return e 

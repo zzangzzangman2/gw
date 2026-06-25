@@ -1,0 +1,46 @@
+local a={id=0,perfectArea={},perfectPoint=0,goodArea={},goodPoint=0,missArea={},missPoint=0,rankCount=0,endlessHP=0,endlessBGM=0,ping_BPM=0,endless_deductHP={},syllable={},beat1=0,beat2=0}
+a.__index=a
+function a.New(s,l,r,t,u,m,w,f,y,c,d,i,o,n,h)
+local e={}
+setmetatable(e,a)
+e.id=s
+e.perfectArea=l
+e.perfectPoint=r
+e.goodArea=t
+e.goodPoint=u
+e.missArea=m
+e.missPoint=w
+e.rankCount=f
+e.endlessHP=y
+e.endlessBGM=c
+e.ping_BPM=d
+e.endless_deductHP=i
+e.syllable=o
+e.beat1=n
+e.beat2=h
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.perfectArea=t[2]
+e.perfectPoint=t[3]
+e.goodArea=t[4]
+e.goodPoint=t[5]
+e.missArea=t[6]
+e.missPoint=t[7]
+e.rankCount=t[8]
+e.endlessHP=t[9]
+e.endlessBGM=t[10]
+e.ping_BPM=t[11]
+e.endless_deductHP=t[12]
+e.syllable=t[13]
+e.beat1=t[14]
+e.beat2=t[15]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/activity/DTGameHammerBaseEntityTableData')
+end
+return a 

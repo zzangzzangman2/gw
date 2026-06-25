@@ -1,0 +1,9 @@
+SP_Dock_3.png
+size:128,128
+filter:Linear,Linear
+CK1
+bounds:1,1,61,50
+offsets:8,2,69,52
+CK2
+bounds:1,36,83,88
+offsets:15,0,98,88

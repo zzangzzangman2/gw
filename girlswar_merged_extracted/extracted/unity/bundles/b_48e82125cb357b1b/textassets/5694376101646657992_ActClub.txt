@@ -1,0 +1,135 @@
+
+?
+ActClub.protoCommons.proto"=
+PRT_CLUB_TASK
+did (Rdid
+progress (Rprogress"?
+PRT_CLUB_PLAYER
+playerId (RplayerId
+level (Rlevel
+name (	Rname
+head (Rhead
+	headFrame (R	headFrame
+sex (Rsex
+charm (Rcharm
+serverId (RserverId"?
+PRT_CLUB_RECORD
+
+currencyId (R
+currencyId
+count (Rcount
+time (Rtime
+playerId (RplayerId
+serverId (RserverId
+name (	Rname"
+PRT_CLUB_TASK_INFO_REQ"?
+PRT_CLUB_TASK_INFO_RESP.
+
+dailyTasks (2.PRT_CLUB_TASKR
+dailyTasks4
+receivedDailyTaskDids (RreceivedDailyTaskDids0
+periodTasks (2.PRT_CLUB_TASKRperiodTasks6
+receivedPeriodTaskDids (RreceivedPeriodTaskDids"I
+PRT_CLUB_TASK_RECEIVE_REQ
+type (Rtype
+taskDid (RtaskDid"\
+PRT_CLUB_TASK_RECEIVE_RESP
+type (Rtype*
+receivedTaskDids (RreceivedTaskDids"
+PRT_CLUB_PRESENT_INFO_REQ"?
+PRT_CLUB_PRESENT_INFO_RESP
+charge (Rcharge
+score (Rscore.
+receivedBPFreeDids (RreceivedBPFreeDids&
+receivedBPDids (RreceivedBPDids*
+friends (2.PRT_CLUB_PLAYERRfriends4
+guildMembers (2.PRT_CLUB_PLAYERRguildMembers6
+battleMembers (2.PRT_CLUB_PLAYERRbattleMembers"?
+PRT_CLUB_PRESENT_GIVE_REQ
+
+toPlayerId (R
+toPlayerId
+
+currencyId (R
+currencyId
+count (Rcount
+name (	Rname"?
+PRT_CLUB_PRESENT_GIVE_RESP
+score (Rscore
+
+toPlayerId (R
+toPlayerId
+
+currencyId (R
+currencyId
+count (Rcount""
+ PRT_CLUB_PRESENT_RECORD_GIVE_REQ"Q
+!PRT_CLUB_PRESENT_RECORD_GIVE_RESP,
+presents (2.PRT_CLUB_RECORDRpresents"%
+#PRT_CLUB_PRESENT_RECORD_RECEIVE_REQ"T
+$PRT_CLUB_PRESENT_RECORD_RECEIVE_RESP,
+receives (2.PRT_CLUB_RECORDRreceives"
+PRT_CLUB_PRESENT_RANK_REQ"?
+PRT_CLUB_PRESENT_RANK_RESP1
+	rankDatas (2.PRT_CS_COMMON_RANKR	rankDatas/
+selfRank (2.PRT_CS_COMMON_RANKRselfRank"K
+PRT_CLUB_PRESENT_SEARCH_REQ
+type (Rtype
+keyword (Rkeyword"J
+PRT_CLUB_PRESENT_SEARCH_RESP*
+players (2.PRT_CLUB_PLAYERRplayers"
+PRT_CLUB_PRESENT_REFRESH_REQ"W
+PRT_CLUB_PRESENT_REFRESH_RESP6
+battleMembers (2.PRT_CLUB_PLAYERRbattleMembers"
+PRT_CLUB_PRESENT_BP_INFO_REQ"?
+PRT_CLUB_PRESENT_BP_INFO_RESP
+charge (Rcharge.
+receivedBPFreeDids (RreceivedBPFreeDids&
+receivedBPDids (RreceivedBPDids
+score (Rscore"U
+PRT_CLUB_PRESENT_BP_RECEIVE_REQ
+awardDid (RawardDid
+charge (Rcharge"V
+ PRT_CLUB_PRESENT_BP_RECEIVE_RESP
+awardDid (RawardDid
+charge (Rcharge"
+PRT_CLUB_GIFT_INFO_REQ"q
+PRT_CLUB_GIFT_INFO_RESP
+	unlockDid (R	unlockDid
+buys (Rbuys$
+bigGiftStatus (RbigGiftStatus"
+PRT_CLUB_GIFT_RECEIVE_REQ"B
+PRT_CLUB_GIFT_RECEIVE_RESP$
+bigGiftStatus (RbigGiftStatus"W
+PRT_CS_CLUB_UPDATE_RANK_REQ
+playerId (RplayerId
+	rankScore (R	rankScore"t
+PRT_CS_CLUB_UPDATE_RANK_RESP
+playerId (RplayerId
+	rankScore (R	rankScore
+selfRank (RselfRank"2
+PRT_CS_CLUB_RANK_REQ
+playerId (RplayerId"j
+PRT_CS_CLUB_RANK_RESP
+playerId (RplayerId5
+rankRes (2.PRT_CLUB_PRESENT_RANK_RESPRrankRes"N
+PRT_CS_CLUB_PLAYER_REQ
+playerId (RplayerId
+guildId (RguildId"n
+PRT_CS_CLUB_PLAYER_RESP
+playerId (RplayerId7
+toClient (2.PRT_CLUB_PRESENT_INFO_RESPRtoClient"?
+PRT_CS_CLUB_PRESENT_GIVE_RESP,
+req (2.PRT_CLUB_PRESENT_GIVE_REQRreq
+senderId (RsenderId
+
+senderName (	R
+senderName"
+receiverName (	RreceiverName"v
+ PRT_CS_CLUB_PRESENT_REFRESH_RESP
+playerId (RplayerId6
+battleMembers (2.PRT_CLUB_PLAYERRbattleMembers"i
+PRT_CS_CLUB_PRESENT_SEARCH_RESP
+playerId (RplayerId*
+players (2.PRT_CLUB_PLAYERRplayersB
+com.next1b.nextsvr.protobproto3

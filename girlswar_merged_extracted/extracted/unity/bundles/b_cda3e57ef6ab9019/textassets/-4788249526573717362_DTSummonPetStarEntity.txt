@@ -1,0 +1,38 @@
+local a={id=0,starLevel=0,petId=0,consumNum=0,immControlGrow=0,defFactorGrow=0,atkFactorGrow=0,blessAttrs={{},{}},starAttrs={{},{}},spawnTime={},eggList={{},{}}}
+a.__index=a
+function a.New(n,r,s,t,l,u,c,d,h,o,i)
+local e={}
+setmetatable(e,a)
+e.id=n
+e.starLevel=r
+e.petId=s
+e.consumNum=t
+e.immControlGrow=l
+e.defFactorGrow=u
+e.atkFactorGrow=c
+e.blessAttrs=d
+e.starAttrs=h
+e.spawnTime=o
+e.eggList=i
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.starLevel=t[2]
+e.petId=t[3]
+e.consumNum=t[4]
+e.immControlGrow=t[5]
+e.defFactorGrow=t[6]
+e.atkFactorGrow=t[7]
+e.blessAttrs=t[8]
+e.starAttrs=t[9]
+e.spawnTime=t[10]
+e.eggList=t[11]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/summonPet/DTSummonPetStarEntityTableData')
+end
+return a 

@@ -1,0 +1,16 @@
+local e=
+{
+ByIdx={
+{"ParamStocking","ParamStocking",0,{{2,0}},"HitArea_LegL1,HitArea_LegL2,HitArea_LegL3",0,0,5,10,0,3,"","","1:rodStocking1","rodStocking1","rodStocking1:1",0.5,10,0},
+{"ParamSkirt","ParamSkirt",0,{{3,0}},"HitArea_Skirt",0,0,5,10,0,3,"","","1:rodSkirt1","rodSkirt1","rodSkirt1:2",1,10,0},
+{"ParamTrigoneDown","ParamTrigoneDown",2,{{4,0}},"HitArea_Trigone",0,0,10,10,0,3,"","","1:rodTrigoneDown3","rodTrigoneDown3","rodTrigoneDown3:2",1,10,0},
+{"ParamTrigoneUp","ParamTrigoneUp",2,{{3,0}},"HitArea_Trigone",0,0,10,10,0,3,"","","1:rodTrigoneUp3","rodTrigoneUp3","rodTrigoneUp3:2",1,10,0},
+{"ParamBreast","ParamBreast",0,{{4,0}},"HitArea_Breast",0,0,7,10,0,3,"","","1:rodBreast1","rodBreast1","rodBreast1:2",1,10,0},
+{"ParamBreast2","ParamBreast",1,{{4,0}},"HitArea_Breast",0,0,7,10,0,3,"","","1:rodBreast2","rodBreast2","rodBreast2:2",1,10,0},
+{"ParamWet1","ParamWet",0,{},"",0,0,0,10,0,3,"","","","tapHolyWater1","tapHolyWater1:1",1,10,0},
+{"ParamWet2","ParamWet",1,{},"",0,0,0,10,0,3,"","","","tapHolyWater2","tapHolyWater2:1",1,10,0},
+{"ParamWet3","ParamWet",2,{},"",0,0,0,10,0,3,"","","","tapHolyWater3","tapHolyWater3:1",1,10,0}
+},
+Len=9
+}
+return e 

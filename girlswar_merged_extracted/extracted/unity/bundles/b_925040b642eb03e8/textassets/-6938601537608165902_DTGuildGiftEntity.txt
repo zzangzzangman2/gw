@@ -1,0 +1,36 @@
+local a={id=0,type=0,giftTitle="",giftIcon="",color=0,giftIcon1="",openType=0,treasureKey={},treasureExp={},awards={{},{}}}
+a.__index=a
+function a.New(n,r,s,t,l,u,d,h,o,i)
+local e={}
+setmetatable(e,a)
+e.id=n
+e.type=r
+e.giftTitle=s
+e.giftIcon=t
+e.color=l
+e.giftIcon1=u
+e.openType=d
+e.treasureKey=h
+e.treasureExp=o
+e.awards=i
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.type=t[2]
+e.giftTitle=t[3]
+e.giftIcon=t[4]
+e.color=t[5]
+e.giftIcon1=t[6]
+e.openType=t[7]
+e.treasureKey=t[8]
+e.treasureExp=t[9]
+e.awards=t[10]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/guild/DTGuildGiftEntityTableData')
+end
+return a 

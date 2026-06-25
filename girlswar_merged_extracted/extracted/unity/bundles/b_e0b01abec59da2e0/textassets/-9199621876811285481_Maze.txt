@@ -1,0 +1,287 @@
+
+?C
+
+Maze.proto
+Enum.protoCommons.protoFight.proto"S
+PRT_MAZE_FORMATION_POSITION
+position (Rposition
+heroDid (RheroDid"?
+PRT_MAZE_HERO
+heroId (RheroId
+heroDid (RheroDid
+	rankLevel (R	rankLevel
+curHp (RcurHp
+curMp (RcurMp"?
+PRT_MAZE_BUILD
+buildDid (RbuildDid.
+position (2.PRT_MAZE_POSITIONRposition/
+status (2.ENUM_MAZE_BUILD_STATUSRstatus
+useCount (RuseCount
+args (Rargs 
+unlockCount (RunlockCount 
+isPoisonFog (RisPoisonFog
+isShow (RisShow'
+	attribute	 (2	.PRT_ATTRR	attribute*
+awardMazeItemDid
+ (RawardMazeItemDid"/
+PRT_MAZE_POSITION
+x (Rx
+y (Ry"?
+PRT_MAZE_EVENT_OPTION
+	optionDid (R	optionDid$
+battleNumber1 (RbattleNumber1$
+battleNumber2 (RbattleNumber2$
+battleNumber3 (RbattleNumber3"m
+PRT_MAZE_FAST_BUILD
+buildDid (RbuildDid
+itemDid (RitemDid 
+mazeItemDid (RmazeItemDid"L
+PRT_MAZE_FAST_HERO
+heroDid (RheroDid
+	leftCount (R	leftCount"3
+PRT_MAZE_FAST_RELIC
+	relicDids (R	relicDids"T
+PRT_MAZE_FAST_RELIC_COLOR!
+color (2.ENUM_COLORRcolor
+count (Rcount"?
+PRT_MAZE_FAST_PRODUCT+
+type (2.ENUM_MAZE_PRODUCT_TYPERtype
+isRed (RisRed
+isDone (RisDone
+	leftCount (R	leftCount"?
+PRT_MAZE_FAST
+mapLayer (RmapLayer,
+builds (2.PRT_MAZE_FAST_BUILDRbuilds"
+awards (2
+.PRT_THINGRawards2
+products (2.PRT_MAZE_FAST_PRODUCTRproducts"
+PRT_MAZE_INFO_REQ"?
+PRT_MAZE_INFO_RESP)
+status (2.ENUM_MAZE_STATUSRstatus
+leftTime (RleftTime
+stage (Rstage
+mapDid (RmapDid
+	mapBeginX (R	mapBeginX
+mapLayer (RmapLayer 
+mapLayerMax (RmapLayerMax'
+builds (2.PRT_MAZE_BUILDRbuilds$
+heros	 (2.PRT_MAZE_HERORheros'
+relics
+ (2.PRT_MAZE_RELICRrelics
+itemDids (RitemDids0
+options (2.PRT_MAZE_EVENT_OPTIONRoptions$
+waitRelicDids (RwaitRelicDids
+
+resetCount (R
+resetCount6
+
+fastStatus (2.ENUM_MAZE_FAST_STATUSR
+fastStatus"
+fast (2.PRT_MAZE_FASTRfast"H
+PRT_MAZE_OPEN_GRID_REQ.
+position (2.PRT_MAZE_POSITIONRposition"I
+PRT_MAZE_OPEN_GRID_RESP.
+position (2.PRT_MAZE_POSITIONRposition"a
+PRT_MAZE_BUY_HERO_REQ.
+position (2.PRT_MAZE_POSITIONRposition
+heroDid (RheroDid"l
+PRT_MAZE_BUY_HERO_RESP.
+position (2.PRT_MAZE_POSITIONRposition"
+hero (2.PRT_MAZE_HERORhero"a
+PRT_MAZE_BUY_ITEM_REQ.
+position (2.PRT_MAZE_POSITIONRposition
+itemDid (RitemDid"~
+PRT_MAZE_BUY_ITEM_RESP.
+position (2.PRT_MAZE_POSITIONRposition
+itemDid (RitemDid
+itemDids (RitemDids"7
+PRT_MAZE_SELECT_RELIC_REQ
+relicDid (RrelicDid"8
+PRT_MAZE_SELECT_RELIC_RESP
+relicDid (RrelicDid"D
+PRT_MAZE_AWARD_REQ.
+position (2.PRT_MAZE_POSITIONRposition"?
+PRT_MAZE_AWARD_RESP.
+position (2.PRT_MAZE_POSITIONRposition"
+mazeItemDids (RmazeItemDids!
+award (2.PRT_REWARDRaward"b
+PRT_MAZE_HERO_RANK_REQ.
+position (2.PRT_MAZE_POSITIONRposition
+heroDid (RheroDid"m
+PRT_MAZE_HERO_RANK_RESP.
+position (2.PRT_MAZE_POSITIONRposition"
+hero (2.PRT_MAZE_HERORhero"e
+PRT_MAZE_HERO_REBIRTH_REQ.
+position (2.PRT_MAZE_POSITIONRposition
+heroDid (RheroDid"p
+PRT_MAZE_HERO_REBIRTH_RESP.
+position (2.PRT_MAZE_POSITIONRposition"
+hero (2.PRT_MAZE_HERORhero"J
+PRT_MAZE_HERO_RESUME_REQ.
+position (2.PRT_MAZE_POSITIONRposition"q
+PRT_MAZE_HERO_RESUME_RESP.
+position (2.PRT_MAZE_POSITIONRposition$
+heros (2.PRT_MAZE_HERORheros"?
+PRT_MAZE_EVENT_REQ.
+position (2.PRT_MAZE_POSITIONRposition(
+selectOptionDid (RselectOptionDid
+args (Rargs"?
+PRT_MAZE_EVENT_RESP.
+position (2.PRT_MAZE_POSITIONRposition(
+selectOptionDid (RselectOptionDid
+isValid1 (RisValid1
+isValid2 (RisValid2
+isValid3 (RisValid3
+resArgs1 (RresArgs1
+resArgs2 (RresArgs2
+resArgs3 (RresArgs3"
+PRT_MAZE_NEXT_MAP_REQ"u
+PRT_MAZE_NEXT_MAP_RESP
+mapDid (RmapDid
+mapLayer (RmapLayer'
+builds (2.PRT_MAZE_BUILDRbuilds"
+PRT_MAZE_FORMATION_REQ"?
+PRT_MAZE_FORMATION_RESPL
+formationPositions (2.PRT_MAZE_FORMATION_POSITIONRformationPositions"
+dicePosition (RdicePosition"m
+PRT_MAZE_FORMATION_MODIFY_REQL
+formationPositions (2.PRT_MAZE_FORMATION_POSITIONRformationPositions"n
+PRT_MAZE_FORMATION_MODIFY_RESPL
+formationPositions (2.PRT_MAZE_FORMATION_POSITIONRformationPositions"?
+PRT_MAZE_FIGHT_BEFORE_REQ.
+position (2.PRT_MAZE_POSITIONRposition 
+npcGroupDid (RnpcGroupDidL
+formationPositions (2.PRT_MAZE_FORMATION_POSITIONRformationPositions(
+selectOptionDid (RselectOptionDid"M
+PRT_MAZE_FIGHT_BEFORE_RESP/
+
+beforeInfo (2.PRT_FIGHT_PLAYR
+beforeInfo"?
+PRT_MAZE_FIGHT_REQ.
+position (2.PRT_MAZE_POSITIONRposition 
+npcGroupDid (RnpcGroupDidL
+formationPositions (2.PRT_MAZE_FORMATION_POSITIONRformationPositions/
+
+battleInfo (2.PRT_FIGHT_PLAYR
+battleInfo(
+selectOptionDid (RselectOptionDid"?
+PRT_MAZE_FIGHT_RESP.
+position (2.PRT_MAZE_POSITIONRposition
+invalid (Rinvalid!
+award (2.PRT_REWARDRaward
+	relicDids (R	relicDids0
+options (2.PRT_MAZE_EVENT_OPTIONRoptions*
+event (2.PRT_MAZE_EVENT_RESPRevent"y
+PRT_MAZE_ITEM_USE_REQ
+	itemIndex (R	itemIndex
+args (Rargs.
+position (2.PRT_MAZE_POSITIONRposition"?
+PRT_MAZE_ITEM_USE_RESP
+itemDid (RitemDid
+args (Rargs.
+position (2.PRT_MAZE_POSITIONRposition
+itemDids (RitemDids"8
+PRT_MAZE_ITEM_DELETE_REQ
+	itemIndex (R	itemIndex"7
+PRT_MAZE_ITEM_DELETE_RESP
+itemDids (RitemDids"L
+PRT_MAZE_BUILD_DESTROY_REQ.
+position (2.PRT_MAZE_POSITIONRposition"M
+PRT_MAZE_BUILD_DESTROY_RESP.
+position (2.PRT_MAZE_POSITIONRposition"
+PRT_MAZE_RESET_REQ">
+PRT_MAZE_RESET_RESP'
+info (2.PRT_MAZE_INFO_RESPRinfo"<
+PRT_MAZE_MONSTER_WIN_REQ 
+npcGroupDid (RnpcGroupDid"1
+PRT_MAZE_MONSTER_WIN_RESP
+isWin (RisWin"M
+PRT_MAZE_FAST_PRODUCT_DONE_REQ+
+type (2.ENUM_MAZE_PRODUCT_TYPERtype"N
+PRT_MAZE_FAST_PRODUCT_DONE_RESP+
+type (2.ENUM_MAZE_PRODUCT_TYPERtype"
+PRT_MAZE_FAST_ITEM_REQ"5
+PRT_MAZE_FAST_ITEM_RESP
+itemDids (RitemDids";
+PRT_MAZE_FAST_ITEM_SELECT_REQ
+itemDids (RitemDids"<
+PRT_MAZE_FAST_ITEM_SELECT_RESP
+itemDids (RitemDids"
+PRT_MAZE_FAST_HERO_REQ"D
+PRT_MAZE_FAST_HERO_RESP)
+heros (2.PRT_MAZE_FAST_HERORheros"6
+PRT_MAZE_FAST_BUY_HERO_REQ
+heroDid (RheroDid"v
+PRT_MAZE_FAST_BUY_HERO_RESP$
+heros (2.PRT_MAZE_HERORheros1
+	fastHeros (2.PRT_MAZE_FAST_HEROR	fastHeros"d
+PRT_MAZE_FAST_HERO_RANK_REQ+
+type (2.ENUM_MAZE_PRODUCT_TYPERtype
+heroDid (RheroDid"?
+PRT_MAZE_FAST_HERO_RANK_RESP+
+type (2.ENUM_MAZE_PRODUCT_TYPERtype$
+heros (2.PRT_MAZE_HERORheros1
+	fastHeros (2.PRT_MAZE_FAST_HEROR	fastHeros"
+PRT_MAZE_FAST_RELIC_REQ"z
+PRT_MAZE_FAST_RELIC_RESP2
+colors (2.PRT_MAZE_FAST_RELIC_COLORRcolors*
+relic (2.PRT_MAZE_FAST_RELICRrelic"<
+PRT_MAZE_FAST_RELIC_SELECT_REQ
+relicDid (RrelicDid"?
+PRT_MAZE_FAST_RELIC_SELECT_RESP
+relicDid (RrelicDid'
+relics (2.PRT_MAZE_RELICRrelics2
+colors (2.PRT_MAZE_FAST_RELIC_COLORRcolors*
+relic (2.PRT_MAZE_FAST_RELICRrelic"
+PRT_MAZE_FAST_ENTER_MAP_REQ"
+PRT_MAZE_FAST_ENTER_MAP_RESP"
+PRT_MAZE_FAST_ENTER_REQ"
+PRT_MAZE_FAST_ENTER_RESP"9
+PRT_MAZE_HERO_SYN$
+heros (2.PRT_MAZE_HERORheros"=
+PRT_MAZE_BUILD_SYN'
+builds (2.PRT_MAZE_BUILDRbuilds"/
+PRT_MAZE_ITEM_SYN
+itemDids (RitemDids"=
+PRT_MAZE_RELIC_SYN'
+relics (2.PRT_MAZE_RELICRrelics"O
+PRT_MAZE_FAST_PRODUCT_SYN2
+products (2.PRT_MAZE_FAST_PRODUCTRproducts*|
+ENUM_MAZE_FAST_STATUS
+MS_FAST_STATUS_CLOSE 
+MS_FAST_STATUS_OPEN
+MS_FAST_STATUS_ENTER
+MS_FAST_STATUS_MAP*;
+ENUM_MAZE_STATUS
+MS_STATUS_CLOSE 
+MS_STATUS_OPEN*?
+ENUM_MAZE_BUILD_ID
+	MBI_SPACE 
+MBI_NPC_NORMAL
+MBI_NPC_ELITE
+MBI_NPC_BOSS
+
+MBI_TAVERN
+	MBI_ALTAR
+
+MBI_TEMPLE
+MBI_SHOP	
+	MBI_EVENT
+
+MBI_CAMP
+MBI_GATE
+MBI_SAKURA1
+MBI_SAKURA2
+	MBI_TOWER
+MBI_ITEM
+	MBI_AWARD*A
+ENUM_MAZE_BUILD_STATUS
+MBS_HIDE 
+MBS_OPEN
+MBS_END*?
+ENUM_MAZE_PRODUCT_TYPE
+MS_RPODUCT_TYPE_ITEM 
+MS_RPODUCT_TYPE_TAVERN
+MS_RPODUCT_TYPE_TEMPLE
+MS_RPODUCT_TYPE_RELICB
+com.next1b.nextsvr.protobproto3

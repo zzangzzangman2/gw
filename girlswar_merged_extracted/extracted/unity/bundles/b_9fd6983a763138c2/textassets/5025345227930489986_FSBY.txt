@@ -1,0 +1,430 @@
+
+?`
+
+FSBY.proto
+Hero.protoSnapshot.protoSummonPet.proto"?
+PRT_FSBY_GUILD
+guildId (RguildId
+serverId (RserverId
+name (	Rname
+level (Rlevel
+bg (Rbg
+fg (Rfg
+rank (Rrank
+fight (Rfight
+value1	 (Rvalue1
+value2
+ (Rvalue2
+rise (Rrise"
+PRT_FSBY_STATUS_REQ"?
+PRT_FSBY_STATUS_RESP&
+stage (2.ENUM_FSBY_STAGERstage)
+status (2.ENUM_FSBY_STATUSRstatus&
+statusOverTime (RstatusOverTime"?
+PRT_FSBY_STAGE_TIMESTAMP&
+stage (2.ENUM_FSBY_STAGERstage
+	timestamp (R	timestamp0
+teamType (2.ENUM_FSBY_TEAM_TYPERteamType"q
+PRT_FSBY_TEAM0
+teamType (2.ENUM_FSBY_TEAM_TYPERteamType
+map1Id (Rmap1Id
+map2Id (Rmap2Id"
+PRT_FSBY_INFO_REQ"?
+PRT_FSBY_INFO_RESP&
+stage (2.ENUM_FSBY_STAGERstage)
+status (2.ENUM_FSBY_STATUSRstatus&
+statusOverTime (RstatusOverTime*
+guildMemberCount (RguildMemberCount(
+guildTotalFight (RguildTotalFight(
+guildTotalLogin (RguildTotalLogin
+sign (Rsign 
+isGuildJoin (RisGuildJoin
+mapIdx	 (RmapIdx
+mapId
+ (RmapId8
+selfTeamType (2.ENUM_FSBY_TEAM_TYPERselfTeamTypeC
+stageTimeStamps (2.PRT_FSBY_STAGE_TIMESTAMPRstageTimeStamps$
+teams (2.PRT_FSBY_TEAMRteams'
+guilds (2.PRT_FSBY_GUILDRguilds6
+guildMaxstage (2.ENUM_FSBY_STAGERguildMaxstage
+	guildRank (R	guildRank
+	guildRise (R	guildRise
+watch (Rwatch
+
+csPlayerId (R
+csPlayerId"3
+PRT_FSBY_MAP_GUILD_RANK_REQ
+mapId (RmapId"G
+PRT_FSBY_MAP_GUILD_RANK_RESP'
+guilds (2.PRT_FSBY_GUILDRguilds"
+PRT_FSBY_SIGN_REQ"(
+PRT_FSBY_SIGN_RESP
+sign (Rsign"A
+PRT_FSBY_STAGE_RANK_REQ&
+stage (2.ENUM_FSBY_STAGERstage"?
+PRT_FSBY_STAGE_RANK_RESP&
+stage (2.ENUM_FSBY_STAGERstage'
+guilds (2.PRT_FSBY_GUILDRguilds-
+	selfGuild (2.PRT_FSBY_GUILDR	selfGuild"x
+PRT_FSBY_TEAM_GUILD_RANK_REQ&
+stage (2.ENUM_FSBY_STAGERstage0
+teamType (2.ENUM_FSBY_TEAM_TYPERteamType"H
+PRT_FSBY_TEAM_GUILD_RANK_RESP'
+guilds (2.PRT_FSBY_GUILDRguilds"#
+!PRT_FSBY_SELF_TEAM_GUILD_RANK_REQ"?
+"PRT_FSBY_SELF_TEAM_GUILD_RANK_RESP&
+stage (2.ENUM_FSBY_STAGERstage0
+teamType (2.ENUM_FSBY_TEAM_TYPERteamType'
+guilds (2.PRT_FSBY_GUILDRguilds"x
+PRT_FSBY_TEAM_RISE_GUILD_REQ&
+stage (2.ENUM_FSBY_STAGERstage0
+teamType (2.ENUM_FSBY_TEAM_TYPERteamType"H
+PRT_FSBY_TEAM_RISE_GUILD_RESP'
+guilds (2.PRT_FSBY_GUILDRguilds"?
+PRT_FSBY_PLAYER_HERO_STRUCT
+heroDid (RheroDid
+maxHp (RmaxHp
+hp (Rhp
+fight (Rfight
+	rankLevel (R	rankLevel
+
+firstValue (R
+firstValue"?
+PRT_FSBY_MAP_PLAYER_STRUCT
+playerId (RplayerId
+name (	Rname
+head (Rhead
+	headFrame (R	headFrame0
+status (2.ENUM_FSBY_PLAYER_STATUSRstatus
+energy (Renergy
+
+fromCityId (R
+fromCityId$
+currentCityId (RcurrentCityId(
+statusStartTime	 (RstatusStartTime&
+statusOverTime
+ (RstatusOverTime2
+heros (2.PRT_FSBY_PLAYER_HERO_STRUCTRheros2
+leftFreeRebirthTimes (RleftFreeRebirthTimes
+score (Rscore$
+fightTargetId (RfightTargetId
+guildId (RguildId
+serverId (RserverId
+	guildName (	R	guildName
+attOrDef (RattOrDef
+fightExt (RfightExt$
+firstValueExt (RfirstValueExt0
+fightProtectEndTime (RfightProtectEndTime"?
+PRT_FSBY_MAP_CITY_STRUCT
+cityId (RcityId
+cityDid (RcityDid
+
+ownGuildId (R
+ownGuildId
+	guildName (	R	guildName
+serverId (RserverId
+curHp (RcurHp
+headType (RheadType
+headList (	RheadList
+
+isFighting	 (R
+isFighting"T
+PRT_FSBY_GUILD_HOME_CITY
+guildId (RguildId
+
+homeCityId (R
+homeCityId"
+PRT_FSBY_MAP_REQ"?
+PRT_FSBY_MAP_RESP
+mapId (RmapId1
+cities (2.PRT_FSBY_MAP_CITY_STRUCTRcities5
+players (2.PRT_FSBY_MAP_PLAYER_STRUCTRplayers(
+protectOverTime (RprotectOverTime(
+elimateServerId (RelimateServerId*
+elimateGuildName (	RelimateGuildNameC
+guildHomeCities (2.PRT_FSBY_GUILD_HOME_CITYRguildHomeCities
+autoAtt (RautoAtt"p
+#PRT_FSBY_MAP_PLAYER_MOVE_CHANGE_SYN3
+player (2.PRT_FSBY_MAP_PLAYER_STRUCTRplayer
+mapId (RmapId"?
+PRT_FSBY_MAP_SELF_CHANGE_SYN3
+player (2.PRT_FSBY_MAP_PLAYER_STRUCTRplayer(
+elimateServerId (RelimateServerId*
+elimateGuildName (	RelimateGuildName"?
+$PRT_FSBY_MAP_PLAYER_DEATH_CHANGE_SYN3
+player (2.PRT_FSBY_MAP_PLAYER_STRUCTRplayer
+mapId (RmapId
+cityId (RcityId"?
+PRT_FSBY_MAP_CITY_CHANGE_SYN
+mapId (RmapId-
+city (2.PRT_FSBY_MAP_CITY_STRUCTRcity3
+player (2.PRT_FSBY_MAP_PLAYER_STRUCTRplayer"
+PRT_FSBY_MAP_HEROES_REQ"?
+PRT_FSBY_MAP_HEROES_RESP!
+heroes (2	.PRT_HERORheroes
+heroIds (RheroIds/
+
+summonPets (2.PRT_SUMMON_PETR
+summonPetsI
+summonPetFormation (2.PRT_SUMMON_PET_FORMATIONRsummonPetFormation"Z
+PRT_FSBY_MAP_FORMATION_REQ
+heroIds (RheroIds"
+summonPetIds (RsummonPetIds"R
+PRT_FSBY_MAP_FORMATION_RESP3
+player (2.PRT_FSBY_MAP_PLAYER_STRUCTRplayer";
+PRT_FSBY_MAP_MOVE_REQ"
+targetCityId (RtargetCityId"
+PRT_FSBY_MAP_MOVE_RESP"
+PRT_FSBY_MAP_MOVE_QUICK_REQ"
+PRT_FSBY_MAP_MOVE_QUICK_RESP"/
+PRT_FSBY_MAP_CITY_REQ
+cityId (RcityId"~
+PRT_FSBY_MAP_CITY_RESP-
+city (2.PRT_FSBY_MAP_CITY_STRUCTRcity5
+players (2.PRT_FSBY_MAP_PLAYER_STRUCTRplayers"
+PRT_FSBY_PLAYER_REBIRTH_REQ"
+PRT_FSBY_PLAYER_REBIRTH_RESP"
+PRT_FSBY_PLAYER_REBORN_REQ"
+PRT_FSBY_PLAYER_REBORN_RESP"R
+PRT_FSBY_MAP_CITY_ATTACK_REQ
+cityId (RcityId
+playerId (RplayerId"S
+PRT_FSBY_MAP_CITY_ATTACK_RESP
+cityId (RcityId
+playerId (RplayerId"?
+PRT_FSBY_PLAYER_TIP_STRUCT
+playerId (RplayerId
+serverId (RserverId
+name (	Rname
+head (Rhead
+	headFrame (R	headFrame"{
+ PRT_FSBY_MAP_CITY_ATTACK_TIP_SYN7
+attacker (2.PRT_FSBY_PLAYER_TIP_STRUCTRattacker
+
+csPlayerId (R
+csPlayerId"?
+ PRT_FSBY_MAP_ATTACK_OVER_TIP_SYN
+
+attackType (R
+attackType
+cityId (RcityId3
+target (2.PRT_FSBY_PLAYER_TIP_STRUCTRtarget
+
+csPlayerId (R
+csPlayerId"
+PRT_FSBY_GUILD_RANK_REQ"h
+PRT_FSBY_GUILD_RANK_RESP'
+guilds (2.PRT_FSBY_GUILDRguilds#
+self (2.PRT_FSBY_GUILDRself"?
+PRT_FSBY_PLAYER_RANK_STRUCT
+playerId (RplayerId
+serverId (RserverId
+name (	Rname
+head (Rhead
+	headFrame (R	headFrame
+score (Rscore
+rank (Rrank
+	guildName (	R	guildName"
+PRT_FSBY_PLAYER_RANK_REQ"?
+PRT_FSBY_PLAYER_RANK_RESP6
+players (2.PRT_FSBY_PLAYER_RANK_STRUCTRplayers0
+self (2.PRT_FSBY_PLAYER_RANK_STRUCTRself"
+PRT_FSBY_OVER_GUILD_RANK_REQ"?
+PRT_FSBY_OVER_GUILD_RANK_RESP'
+guilds (2.PRT_FSBY_GUILDRguilds#
+self (2.PRT_FSBY_GUILDRself
+
+playerRank (R
+playerRank"
+PRT_FSBY_OVER_PLAYER_RANK_REQ"?
+PRT_FSBY_OVER_PLAYER_RANK_RESP6
+players (2.PRT_FSBY_PLAYER_RANK_STRUCTRplayers0
+self (2.PRT_FSBY_PLAYER_RANK_STRUCTRself"5
+PRT_FSBY_GUILD_SNAP_FETCH
+guildId (RguildId"b
+PRT_FSBY_GUILD_SNAP_RETURN
+guildId (RguildId*
+snaps (2.PRT_PLAYER_SNAPSHOTRsnaps"
+PRT_FSBY_FIGHT_INFO_FETCH"?
+PRT_FSBY_FIGHT_INFO_RETURN&
+fightStartTime (RfightStartTime"
+fightEndTime (RfightEndTime
+guildIds (RguildIds"4
+PRT_FSBY_RED_POINT_REQ
+playerId (RplayerId"?
+PRT_FSBY_RED_POINT_RESP
+playerId (RplayerId
+guildId (RguildId
+sign (Rsign
+fight (Rfight=
+quest_answer_process_reward (RquestAnswerProcessReward(
+quest_can_choose (RquestCanChoose"r
+PRT_FSBY_AUTO_ATTACK_REQ
+autoAtt (RautoAtt
+
+csPlayerId (R
+csPlayerId
+	csGuildId (R	csGuildId"U
+PRT_FSBY_AUTO_ATTACK_RESP
+autoAtt (RautoAtt
+
+csPlayerId (R
+csPlayerId"?
+PRT_FSBY_LOGIN_SHOW_SYN
+show (Rshow&
+stage (2.ENUM_FSBY_STAGERstage0
+teamType (2.ENUM_FSBY_TEAM_TYPERteamType
+maxIdx (RmaxIdx"?
+PRT_FSBY_STAGE_GUILD
+guildId (RguildId
+	timestamp (R	timestamp0
+teamType (2.ENUM_FSBY_TEAM_TYPERteamType
+maxIdx (RmaxIdx"I
+PRT_FSBY_STAGE_GUILD_SYN-
+guilds (2.PRT_FSBY_STAGE_GUILDRguilds"G
+PRT_FSBY_GIFT
+giftDid (RgiftDid
+	giftCount (R	giftCount"
+PRT_FSBY_GIFT_INFO_REQ"Y
+PRT_FSBY_GIFT_INFO_RESP$
+gifts (2.PRT_FSBY_GIFTRgifts
+endTime (RendTime"m
+PRT_FSBY_STAGE_STAUS_SYN&
+stage (2.ENUM_FSBY_STAGERstage)
+status (2.ENUM_FSBY_STATUSRstatus"H
+PRT_FSBY_QUEST
+questDid (RquestDid
+progress (Rprogress"
+PRT_FSBY_QUEST_INFO_REQ"?
+PRT_FSBY_QUEST_INFO_RESP-
+	questList (2.PRT_FSBY_QUESTR	questList"
+receivedDids (RreceivedDids
+	bigReward (R	bigReward"6
+PRT_FSBY_QUEST_AWARD_REQ
+questDid (RquestDid"7
+PRT_FSBY_QUEST_AWARD_RESP
+questDid (RquestDid"
+PRT_FSBY_QUEST_BIG_AWARD_REQ"
+PRT_FSBY_QUEST_BIG_AWARD_RESP"?
+PRT_FSBY_HEAD_FRAME_AWSRD_SYN
+playerId (RplayerId
+itemDid (RitemDid
+season (Rseason
+guildId (RguildId
+endTime (RendTime"?
+PRT_FSBY_QUEST_INFO2
+	questType (2.PRT_FSBY_QUEST_TYPER	questType-
+	questList (2.PRT_FSBY_QUESTR	questList"
+receivedDids (RreceivedDids
+	bigReward (R	bigReward"
+PRT_FSBY_QUEST_INFO_NEW_REQ"L
+PRT_FSBY_QUEST_INFO_NEW_RESP,
+quests (2.PRT_FSBY_QUEST_INFORquests"n
+PRT_FSBY_QUEST_AWARD_NEW_REQ2
+	questType (2.PRT_FSBY_QUEST_TYPER	questType
+questDid (RquestDid"o
+PRT_FSBY_QUEST_AWARD_NEW_RESP2
+	questType (2.PRT_FSBY_QUEST_TYPER	questType
+questDid (RquestDid""
+ PRT_FSBY_QUEST_BIG_AWARD_NEW_REQ"#
+!PRT_FSBY_QUEST_BIG_AWARD_NEW_RESP"?
+PRT_FSBY_HINT_TO_GMAE_SYN
+	beginTime (R	beginTime
+endTime (RendTime+
+rankList (2.PRT_FSBY_GUILDRrankList"?
+PRT_FSBY_FINAL_LOGIN_SHOW_SYN+
+rankList (2.PRT_FSBY_GUILDRrankList
+	beginTime (R	beginTime
+endTime (RendTime"?
+PRT_FSBY_QUEST_TEMPLATE_DATA
+questDid (RquestDid
+
+chooseList (	R
+chooseList
+
+trueAnswer (R
+trueAnswer,
+playerChooseIndex (RplayerChooseIndex
+starTime (RstarTime
+	closeTime (R	closeTime
+
+settleTime (R
+settleTime"
+PRT_FSBY_QUEST_INFO_LIST_REQ"?
+PRT_FSBY_QUEST_INFO_LIST_RESP3
+datas (2.PRT_FSBY_QUEST_TEMPLATE_DATARdatas
+
+totalScore (R
+totalScore,
+rewardProcessList (RrewardProcessList"Y
+PRT_FSBY_QUEST_CHOOSE_REQ
+questDid (RquestDid 
+chooseIndex (RchooseIndex"Z
+PRT_FSBY_QUEST_CHOOSE_RESP
+questDid (RquestDid 
+chooseIndex (RchooseIndex"S
+PRT_FSBY_QUEST_BATTLE_GROUP_REQ0
+teamType (2.ENUM_FSBY_TEAM_TYPERteamType"?
+ PRT_FSBY_QUEST_BATTLE_GROUP_RESP0
+teamType (2.ENUM_FSBY_TEAM_TYPERteamType5
+battleGroups1 (2.PRT_FSBY_GUILDRbattleGroups15
+battleGroups2 (2.PRT_FSBY_GUILDRbattleGroups2"A
+!PRT_FSBY_QUEST_REWARD_PROCESS_REQ
+	rewardDid (R	rewardDid"|
+"PRT_FSBY_QUEST_REWARD_PROCESS_RESP
+
+rewardDids (R
+rewardDids
+dropDids (RdropDids
+playerId (RplayerId"%
+#PRT_FSBY_FIND_ROBOT_TARGET_CITY_REQ"V
+$PRT_FSBY_FIND_ROBOT_TARGET_CITY_RESP
+cityId (RcityId
+status (Rstatus*?
+ENUM_FSBY_STAGE
+ENUM_FSBY_STAGE_NONE 
+ENUM_FSBY_STAGE_SIGN
+ENUM_FSBY_STAGE_1_1
+ENUM_FSBY_STAGE_1_2
+ENUM_FSBY_STAGE_2_1
+ENUM_FSBY_STAGE_2_2
+ENUM_FSBY_STAGE_3_1
+ENUM_FSBY_STAGE_3_2
+ENUM_FSBY_STAGE_4_1
+ENUM_FSBY_STAGE_4_2	
+ENUM_FSBY_STAGE_5_1
+
+ENUM_FSBY_STAGE_END*?
+ENUM_FSBY_STATUS
+FSBY_STATUS_NONE 
+FSBY_STATUS_RACE_WAIT
+FSBY_STATUS_RACE_REVIEW
+FSBY_STATUS_RACE_RUN
+FSBY_STATUS_RACE_END*?
+ENUM_FSBY_TEAM_TYPE
+FSBY_TEAM_TYPE_NONE 
+FSBY_TEAM_TYPE_A
+FSBY_TEAM_TYPE_B
+FSBY_TEAM_TYPE_C
+FSBY_TEAM_TYPE_D
+FSBY_TEAM_TYPE_E
+FSBY_TEAM_TYPE_F
+FSBY_TEAM_TYPE_G
+FSBY_TEAM_TYPE_H*?
+ENUM_FSBY_PLAYER_STATUS
+NONE 
+NOT_FORMATION
+
+DEFEND
+MOVE
+
+ATTACK
+FIGHTING
+DEAD
+	ELIMINATE
+NO_SNAP*g
+PRT_FSBY_QUEST_TYPE
+FSBY_QUEST_TYPE_NONE 
+FSBY_QUEST_TYPE_DAILY
+FSBY_QUEST_TYPE_MATCHESB
+com.next1b.nextsvr.protobproto3

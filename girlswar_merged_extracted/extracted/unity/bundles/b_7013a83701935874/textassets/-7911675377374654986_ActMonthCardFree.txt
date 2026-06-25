@@ -1,0 +1,12 @@
+
+?
+ActMonthCardFree.proto"q
+PRT_PRIME_FREE_STATUS_SYN
+active (Ractive"
+isTodayAward (RisTodayAward
+endTime (RendTime"
+PRT_PRIME_FREE_BEGIN_REQ"
+PRT_PRIME_FREE_BEGIN_RESP"
+PRT_PRIME_FREE_DAY_AWARD_REQ"
+PRT_PRIME_FREE_DAY_AWARD_RESPB
+com.next1b.nextsvr.protobproto3

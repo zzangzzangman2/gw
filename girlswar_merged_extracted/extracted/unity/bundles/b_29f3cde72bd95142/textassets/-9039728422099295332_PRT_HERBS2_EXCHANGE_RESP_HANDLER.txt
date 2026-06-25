@@ -1,0 +1,11 @@
+local t={}
+function t:OnHandle(e)
+local e=assert(GlobalPB.decode("PRT_HERBS2_EXCHANGE_RESP",e));
+if(GameInit.GetDebugLogProto())then
+;
+;
+end
+ModulesInit.ActHerbsMgr_Newbie871:SyncExchangeShopBuy(e)
+return e
+end
+return t 

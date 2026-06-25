@@ -1,0 +1,44 @@
+local a={id=0,shopName="",shopIcon="",shopCurrency={},subName="",limitType=0,limitPara=0,product={},discount=0,originalPrice={},price={},vipLimit=0,sortNum=0,round=0}
+a.__index=a
+function a.New(s,l,r,t,u,m,f,w,c,d,i,o,n,h)
+local e={}
+setmetatable(e,a)
+e.id=s
+e.shopName=l
+e.shopIcon=r
+e.shopCurrency=t
+e.subName=u
+e.limitType=m
+e.limitPara=f
+e.product=w
+e.discount=c
+e.originalPrice=d
+e.price=i
+e.vipLimit=o
+e.sortNum=n
+e.round=h
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.shopName=t[2]
+e.shopIcon=t[3]
+e.shopCurrency=t[4]
+e.subName=t[5]
+e.limitType=t[6]
+e.limitPara=t[7]
+e.product=t[8]
+e.discount=t[9]
+e.originalPrice=t[10]
+e.price=t[11]
+e.vipLimit=t[12]
+e.sortNum=t[13]
+e.round=t[14]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/calendar/DTVipShopEntityTableData')
+end
+return a 

@@ -1,0 +1,63 @@
+
+?
+ActMakeCake.protoCommons.proto"?
+PRT_MAKE_CAKE_BP_STRUCT
+lv (Rlv9
+rewardStatus1 (2.ENUM_REWARD_STATUSRrewardStatus19
+rewardStatus2 (2.ENUM_REWARD_STATUSRrewardStatus2"
+PRT_MAKE_CAKE_CAKE_INFO_REQ"?
+PRT_MAKE_CAKE_CAKE_INFO_RESP
+layer (Rlayer
+count (Rcount
+hasAward (RhasAward
+isSee (RisSee 
+rewardLayer (RrewardLayer"
+PRT_MAKE_CAKE_CAKE_ADD_REQ"e
+PRT_MAKE_CAKE_CAKE_ADD_RESP
+layer (Rlayer
+count (Rcount
+hasAward (RhasAward"
+PRT_MAKE_CAKE_CAKE_AWARD_REQ"]
+PRT_MAKE_CAKE_CAKE_AWARD_RESP
+hasAward (RhasAward 
+rewardLayer (RrewardLayer"
+PRT_MAKE_CAKE_GIFT_INFO_REQ"?
+PRT_MAKE_CAKE_GIFT_INFO_RESP
+days (Rdays+
+status (2.ENUM_REWARD_STATUSRstatus
+isSee (RisSee 
+createStamp (RcreateStamp"
+PRT_MAKE_CAKE_GIFT_AWARD_REQ"`
+PRT_MAKE_CAKE_GIFT_AWARD_RESP
+days (Rdays+
+status (2.ENUM_REWARD_STATUSRstatus"
+PRT_MAKE_CAKE_BP_INFO_REQ"x
+PRT_MAKE_CAKE_BP_INFO_RESP2
+bpDatas (2.PRT_MAKE_CAKE_BP_STRUCTRbpDatas
+isBuy (RisBuy
+lev (Rlev"J
+PRT_MAKE_CAKE_BP_AWARD_REQ
+bpLevel (RbpLevel
+type (Rtype"Q
+PRT_MAKE_CAKE_BP_AWARD_RESP2
+bpDatas (2.PRT_MAKE_CAKE_BP_STRUCTRbpDatas"
+PRT_MAKE_CAKE_BP_BUY_REQ"
+PRT_MAKE_CAKE_BP_BUY_RESP"L
+PRT_MAKE_CAKE_GOODS_STRUCT
+did (Rdid
+	boughtNum (R	boughtNum"
+PRT_MAKE_CAKE_SHOP_INFO_REQ"Q
+PRT_MAKE_CAKE_SHOP_INFO_RESP1
+goods (2.PRT_MAKE_CAKE_GOODS_STRUCTRgoods"E
+PRT_MAKE_CAKE_SHOP_EXCHANGE_REQ
+did (Rdid
+num (Rnum"U
+ PRT_MAKE_CAKE_SHOP_EXCHANGE_RESP1
+goods (2.PRT_MAKE_CAKE_GOODS_STRUCTRgoods"]
+NEW_MAKE_CAKE_TASK_STRUCT
+taskDid (RtaskDid&
+completeNumber (RcompleteNumber"
+PRT_MAKE_CAKE_CAKE_TASK_REQ"P
+PRT_MAKE_CAKE_CAKE_TASK_RESP0
+tasks (2.NEW_MAKE_CAKE_TASK_STRUCTRtasksB
+com.next1b.nextsvr.protobproto3

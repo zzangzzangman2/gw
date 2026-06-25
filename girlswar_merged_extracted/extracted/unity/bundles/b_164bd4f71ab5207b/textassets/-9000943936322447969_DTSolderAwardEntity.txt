@@ -1,0 +1,28 @@
+local e={id=0,solderId=0,needHero=0,solderItemAward={{},{}},solderAttrAward={{},{}},attrType=0}
+e.__index=e
+function e.New(a,i,o,h,s,n)
+local t={}
+setmetatable(t,e)
+t.id=a
+t.solderId=i
+t.needHero=o
+t.solderItemAward=h
+t.solderAttrAward=s
+t.attrType=n
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.solderId=a[2]
+t.needHero=a[3]
+t.solderItemAward=a[4]
+t.solderAttrAward=a[5]
+t.attrType=a[6]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/solder/DTSolderAwardEntityTableData')
+end
+return e 

@@ -1,0 +1,11 @@
+local t={}
+function t:OnHandle(e)
+local e=assert(GlobalPB.decode("PRT_CELL_SURVIROR_INFINITE_GAME_END_RESP",e));
+if(GameInit.GetDebugLogProto())then
+;
+;
+end
+ModulesInit.ActCellSuvivorGameMgr:OnRespCellSurvirorInfiniteGameEnd(e)
+return e
+end
+return t 

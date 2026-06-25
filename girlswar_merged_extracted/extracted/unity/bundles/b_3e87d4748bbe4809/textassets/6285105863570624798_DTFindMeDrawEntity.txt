@@ -1,0 +1,24 @@
+local e={id=0,awardRate={{},{}},bigAward={{},{}},norAward={{},{}}}
+e.__index=e
+function e.New(o,a,n,i)
+local t={}
+setmetatable(t,e)
+t.id=o
+t.awardRate=a
+t.bigAward=n
+t.norAward=i
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.awardRate=a[2]
+t.bigAward=a[3]
+t.norAward=a[4]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/activity/DTFindMeDrawEntityTableData')
+end
+return e 

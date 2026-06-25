@@ -1,0 +1,11 @@
+local e=
+{
+ByIdx={
+{1,"WorldTreeRankScoreRule_01",1},
+{2,"WorldTreeRankScoreRule_02",1500},
+{3,"WorldTreeRankScoreRule_03",8000},
+{4,"WorldTreeRankScoreRule_04",18000}
+},
+Len=4
+}
+return e 

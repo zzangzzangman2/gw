@@ -1,0 +1,30 @@
+local t={id=0,talentBigGroup=0,nextGroup=0,condition=0,groupName="",groupBg="",groupIcon=""}
+t.__index=t
+function t.New(o,h,a,s,r,n,i)
+local e={}
+setmetatable(e,t)
+e.id=o
+e.talentBigGroup=h
+e.nextGroup=a
+e.condition=s
+e.groupName=r
+e.groupBg=n
+e.groupIcon=i
+return e
+end
+function t.NewFromArrItem(a)
+local e={}
+setmetatable(e,t)
+e.id=a[1]
+e.talentBigGroup=a[2]
+e.nextGroup=a[3]
+e.condition=a[4]
+e.groupName=a[5]
+e.groupBg=a[6]
+e.groupIcon=a[7]
+return e
+end
+function t.GetArr()
+return require('DataNode/DataTable/Create/deityStatue/DTTalentPointsGroupEntityTableData')
+end
+return t 

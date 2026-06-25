@@ -1,0 +1,21 @@
+local e=
+{
+ByIdx={
+{130,1,"tabName1","UIActEggEnterStage2/dbz_shouchongbeilvchongzhi",9,0,0,"UIGoldweekHalloweenName_30"},
+{834,1,"tabName1","UIActEggEnterStage2/dbz_dancshen",0,1,0,"UIGoldweekHalloweenName_31"},
+{51,1,"tabName1","UIActEggEnterStage2/dbz_zixuanlibao",0,1,0,"UIGoldweekHalloweenName_32"},
+{313,2,"tabName2","UIActEggEnterStage2/dbz_zhoukafanbei",0,1,0,"UIGoldweekNewName_14"},
+{501,2,"tabName2","UIActEggEnterStage2/dbz_migong",0,1,0,"UIGoldweekNewName_15"},
+{80,2,"tabName2","UIActEggEnterStage2/dbz_longzhan",0,1,0,"UIGoldweekNewName_16"},
+{151,2,"tabName2","UIActEggEnterStage2/dbz_longzhou",0,1,0,"UIGoldweekNewName_17"},
+{152,2,"tabName2","UIActEggEnterStage2/dbz_wenquan",0,1,0,"UIGoldweekNewName_18"},
+{409,3,"tabName3","UIActEggEnterStage2/dbz_qiuqiuji",0,1,0,"UIGoldweekNewName_19"},
+{408,3,"tabName3","UIActEggEnterStage2/dbz_aolihagang",0,1,0,"UIGoldweekNewName_20"},
+{407,3,"tabName3","UIActEggEnterStage2/dbz_tianshengbaoqi",0,1,0,"UIGoldweekNewName_21"},
+{839,4,"tabName4","UIActEggEnterStage2/dbz_yinxiongchongzhi",0,1,0,"UIGoldweekHalloweenName_26"},
+{806,4,"tabName4","UIActEggEnterStage2/dbz_yinzhounian",0,1,0,"UIGoldweekHalloweenName_27"},
+{46,4,"tabName4","UIActEggEnterStage2/dbz_zhouka",0,1,0,"UIGoldweekHalloweenName_28"}
+},
+Len=14
+}
+return e 

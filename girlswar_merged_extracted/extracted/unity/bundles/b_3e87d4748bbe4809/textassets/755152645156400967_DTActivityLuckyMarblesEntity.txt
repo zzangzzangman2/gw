@@ -1,0 +1,28 @@
+local e={id=0,type=0,pos=0,weight=0,chargeRate=0,item={}}
+e.__index=e
+function e.New(a,i,o,h,s,n)
+local t={}
+setmetatable(t,e)
+t.id=a
+t.type=i
+t.pos=o
+t.weight=h
+t.chargeRate=s
+t.item=n
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.type=a[2]
+t.pos=a[3]
+t.weight=a[4]
+t.chargeRate=a[5]
+t.item=a[6]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/activity/DTActivityLuckyMarblesEntityTableData')
+end
+return e 

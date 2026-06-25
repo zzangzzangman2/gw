@@ -1,0 +1,791 @@
+
+Τ
+WorldTree.protoCommons.protoErrorCode.proto"?
+	PRT_GROUP
+id (Rid
+	groupName (	R	groupName
+
+totalFight (R
+totalFight+
+members (2.PRT_GROUP_MEMBERRmembers
+	joinFight (R	joinFight
+pwd (	Rpwd
+
+totalScore (R
+totalScore
+	groupRank (R	groupRank
+lock	 (Rlock$
+joinFightType
+ (RjoinFightType 
+joinGroupTs (RjoinGroupTs"y
+PRT_WORLDTREE_ACTINFO_REQ,
+resetKickedStatus (RresetKickedStatus.
+resetMapKickStatus (RresetMapKickStatus"?
+PRT_WORLDTREE_ACTINFO_RESP
+	startTime (R	startTime 
+prepareTime (RprepareTime
+playTime (RplayTime
+endTime (RendTime
+
+templateId (R
+templateId(
+status (2.ENUM_ACT_STATUSRstatus4
+groupStatus (2.ENUM_GROUP_STATUSRgroupStatus
+score	 (Rscore,
+storys
+ (2.PRT_WORLDTREE_STORYRstorys
+kickName (	RkickName"?
+ PRT_WORLDTREE_CLEAR_ACT_STAT_REQ,
+resetKickedStatus (RresetKickedStatus.
+resetMapKickStatus (RresetMapKickStatus"
+PRT_WORLDTREE_GROUPLIST_REQ"B
+PRT_WORLDTREE_GROUPLIST_RESP"
+groups (2
+.PRT_GROUPRgroups"?
+PRT_WORLDTREE_CREATE_GROUP_REQ
+	groupName (	R	groupName
+pwd (	Rpwd
+	joinFight (R	joinFight$
+joinFightType (RjoinFightType"C
+PRT_WORLDTREE_CREATE_GROUP_RESP 
+group (2
+.PRT_GROUPRgroup"@
+PRT_WORLDTREE_JOIN_GROUP_REQ
+id (Rid
+pwd (	Rpwd"A
+PRT_WORLDTREE_JOIN_GROUP_RESP 
+group (2
+.PRT_GROUPRgroup"$
+"PRT_WORLDTREE_QUICK_JOIN_GROUP_REQ"G
+#PRT_WORLDTREE_QUICK_JOIN_GROUP_RESP 
+group (2
+.PRT_GROUPRgroup"]
+#PRT_WORLDTREE_INVITE_JOIN_GROUP_REQ
+id (Rid&
+invitePlayerId (RinvitePlayerId"H
+$PRT_WORLDTREE_INVITE_JOIN_GROUP_RESP 
+group (2
+.PRT_GROUPRgroup"?
+PRT_WORLDTREE_GROUP_SET_REQ
+	groupName (	R	groupName
+pwd (	Rpwd
+	joinFight (R	joinFight$
+joinFightType (RjoinFightType"@
+PRT_WORLDTREE_GROUP_SET_RESP 
+group (2
+.PRT_GROUPRgroup"?
+PRT_GROUP_MEMBER
+id (Rid
+name (	Rname
+headImg (RheadImg
+	headFrame (R	headFrame
+level (Rlevel
+guildId (RguildId
+score (Rscore
+fight (Rfight
+role	 (Rrole
+profile
+ (Rprofile
+serverId (RserverId
+position (Rposition
+mapId (RmapId"
+PRT_WORLDTREE_GROUP_INFO_REQ"A
+PRT_WORLDTREE_GROUP_INFO_RESP 
+group (2
+.PRT_GROUPRgroup"T
+PRT_WORLDTREE_GROUP_INFO_SYN 
+group (2
+.PRT_GROUPRgroup
+type (Rtype"
+PRT_WORLDTREE_QUIT_GROUP_REQ"
+PRT_WORLDTREE_QUIT_GROUP_RESP"<
+PRT_WORLDTREE_KICK_REQ"
+kickPlayerId (RkickPlayerId";
+PRT_WORLDTREE_KICK_RESP 
+group (2
+.PRT_GROUPRgroup"9
+PRT_WORLDTREE_BOX
+id (Rid
+count (Rcount"
+PRT_WORLDTREE_BOX_INFO_REQ"G
+PRT_WORLDTREE_BOX_INFO_RESP(
+boxes (2.PRT_WORLDTREE_BOXRboxes"N
+PRT_WORLDTREE_BOX_EXCHANGE_REQ
+id (Rid
+	openCount (R	openCount"q
+PRT_WORLDTREE_BOX_EXCHANGE_RESP
+id (Rid 
+award (2
+.PRT_THINGRaward
+	openCount (R	openCount"
+PRT_WORLDTREE_SHOP_INFO_REQ"^
+PRT_WORLDTREE_SHOP_INFO_RESP 
+goods (2
+.PRT_GOODSRgoods
+	resetTime (R	resetTime"D
+PRT_WORLDTREE_SHOP_BUY_REQ
+did (Rdid
+count (Rcount"/
+PRT_WORLDTREE_SHOP_BUY_RESP
+did (Rdid"?
+PRT_GROUP_RANK
+rank (Rrank
+playerId (RplayerId
+name (	Rname
+head (Rhead
+	headFrame (R	headFrame
+	groupName (	R	groupName
+
+totalScore (R
+totalScore
+level (Rlevel
+profile	 (Rprofile
+serverId
+ (RserverId"
+PRT_WORLDTREE_RANK_REQ"?
+PRT_WORLDTREE_RANK_RESP&
+ranks (2.PRT_COMMON_RANKRranks,
+selfRank (2.PRT_COMMON_RANKRselfRank"
+personStatus (RpersonStatus/
+
+groupRanks (2.PRT_GROUP_RANKR
+groupRanks5
+selfGroupRank (2.PRT_GROUP_RANKRselfGroupRank 
+groupStatus (RgroupStatus"3
+PRT_WORLDTREE_RANK_REWARD_REQ
+type (Rtype"L
+PRT_WORLDTREE_RANK_REWARD_RESP
+type (Rtype
+status (Rstatus"
+PRT_WORLDTREE_SCORE_INFO_REQ"?
+PRT_WORLDTREE_SCORE_INFO_RESP
+
+recScoreId (R
+recScoreId"H
+"PRT_WORLDTREE_REC_SCORE_REWARD_REQ
+id (Rid
+type (Rtype"[
+#PRT_WORLDTREE_REC_SCORE_REWARD_RESP 
+award (2
+.PRT_THINGRaward
+type (Rtype"
+PRT_WORLDTREE_TASK_INFO_REQ"?
+PRT_WORLDTREE_TASK_INFO_RESP
+tasks (2	.PRT_TASKRtasks"8
+PRT_WORLDTREE_REC_TASK_REQ
+taskDids (RtaskDids"9
+PRT_WORLDTREE_REC_TASK_RESP
+taskDids (RtaskDids":
+PRT_WORLDTREE_BUFF
+id (Rid
+count (Rcount"=
+PRT_WORLDTREE_MAP
+id (Rid
+explore (Rexplore"?
+PRT_WORLDTREE_EVENT_PARAM
+pveHp (RpveHp*
+pveMaxFightValue (RpveMaxFightValue 
+pvpPlayerId (RpvpPlayerId*
+pvpMaxFightValue (RpvpMaxFightValue
+pvpHp (RpvpHp
+pvpName (	RpvpName 
+pvpServerId (RpvpServerId$
+pvpScoreBonus (RpvpScoreBonus"
+pvpTotalKill	 (RpvpTotalKill
+pvpTs
+ (RpvpTs
+pveTs (RpveTs
+
+pvpProfile (R
+pvpProfile
+
+pvpHeadImg (R
+pvpHeadImg"
+pvpHeadFrame (RpvpHeadFrame$
+executePvpPve (RexecutePvpPve"
+protectCount (RprotectCount
+pvpNpc (RpvpNpc"k
+PRT_WORLDTREE_HIDEMAP*
+hideExploreCount (RhideExploreCount&
+recKeyBigAward (RrecKeyBigAward"
+PRT_WORLDTREE_MAP_INFO_REQ"?
+PRT_WORLDTREE_MAP_INFO_RESP&
+maps (2.PRT_WORLDTREE_MAPRmaps
+physical (Rphysical)
+buffs (2.PRT_WORLDTREE_BUFFRbuffs
+mapId (RmapId
+eventId (ReventId(
+physicalCutdown (RphysicalCutdown
+
+scoreBonus	 (R
+scoreBonus
+	totalKill
+ (R	totalKill
+maxFight (RmaxFight
+hp (Rhp:
+
+eventParam (2.PRT_WORLDTREE_EVENT_PARAMR
+eventParam,
+totalExploreCount (RtotalExploreCount
+hideMap (RhideMap8
+hideMapData (2.PRT_WORLDTREE_HIDEMAPRhideMapData
+	bossCount (R	bossCount0
+totalKillMonsterNum (RtotalKillMonsterNum"?
+PRT_WORLDTREE_PVP_SYN
+
+scoreBonus (R
+scoreBonus
+	totalKill (R	totalKill
+maxFight (RmaxFight
+hp (Rhp"1
+PRT_WORLDTREE_EXPLORE_REQ
+mapId (RmapId"?
+PRT_WORLDTREE_EXPLORE_RESP
+mapId (RmapId
+eventId (ReventId
+physical (Rphysical:
+
+eventParam (2.PRT_WORLDTREE_EVENT_PARAMR
+eventParam,
+totalExploreCount (RtotalExploreCount"?
+PRT_WORLDTREE_EXECUTE_REQ
+mapId (RmapId
+eventId (ReventId
+	QTEResult (R	QTEResult
+
+mazeResult (R
+mazeResult"?
+PRT_WORLDTREE_EXECUTE_RESP
+mapId (RmapId
+eventId (ReventId
+score (Rscore 
+award (2
+.PRT_THINGRaward)
+buffs (2.PRT_WORLDTREE_BUFFRbuffs
+buffId (RbuffId
+hp (Rhp 
+challengeTs (RchallengeTs
+	nextMapId	 (R	nextMapId$
+triggerBuffId
+ (RtriggerBuffId&
+maps (2.PRT_WORLDTREE_MAPRmaps
+	totalKill (R	totalKill
+
+scoreBonus (R
+scoreBonus:
+
+eventParam (2.PRT_WORLDTREE_EVENT_PARAMR
+eventParam
+hideMap (RhideMap8
+hideMapData (2.PRT_WORLDTREE_HIDEMAPRhideMapData"
+curBossCount (RcurBossCount"?
+PRT_WORLDTREE_SUPPORT
+mapId (RmapId
+eventId (ReventId
+playerId (RplayerId,
+publishPlayerName (	RpublishPlayerName
+cd (Rcd
+hp (Rhp
+maxFight (RmaxFight
+
+playerName (	R
+playerName$
+playerHeadImg	 (RplayerHeadImg(
+playerHeadFrame
+ (RplayerHeadFrame
+serverId (RserverId$
+playerProfile (RplayerProfile" 
+PRT_WORLDTREE_SUPPORT_LIST_REQ"U
+PRT_WORLDTREE_SUPPORT_LIST_RESP2
+supports (2.PRT_WORLDTREE_SUPPORTRsupports"S
+!PRT_WORLDTREE_PUBLISH_SUPPORT_REQ
+mapId (RmapId
+eventId (ReventId"?
+"PRT_WORLDTREE_PUBLISH_SUPPORT_RESP
+mapId (RmapId
+eventId (ReventId0
+support (2.PRT_WORLDTREE_SUPPORTRsupport"J
+PRT_WORLDTREE_GIVEUP_REQ
+mapId (RmapId
+eventId (ReventId"
+PRT_WORLDTREE_GIVEUP_RESP"E
+PRT_WORLDTREE_SUPPORT_REQ(
+supportPlayerId (RsupportPlayerId"?
+PRT_WORLDTREE_SUPPORT_RESP
+result (Rresult 
+award (2
+.PRT_THINGRaward0
+support (2.PRT_WORLDTREE_SUPPORTRsupport(
+supportPlayerId (RsupportPlayerId
+score (Rscore$
+triggerBuffId (RtriggerBuffId)
+buffs (2.PRT_WORLDTREE_BUFFRbuffs
+	totalKill (R	totalKill
+
+scoreBonus	 (R
+scoreBonus&
+maps
+ (2.PRT_WORLDTREE_MAPRmaps"4
+PRT_WORLDTREE_SWITCH_MAP_REQ
+mapId (RmapId"
+PRT_WORLDTREE_SWITCH_MAP_RESP"?
+PRT_WORLDTREE_PVP_KICKED_RESP
+
+playerName (	R
+playerName"%
+#PRT_WORLDTREE_PVP_KICKED_STATUS_REQ"D
+$PRT_WORLDTREE_PVP_KICKED_STATUS_RESP
+	pvpKilled (R	pvpKilled"+
+)PRT_WORLDTREE_CLEAR_PVP_KICKED_STATUS_REQ"J
+*PRT_WORLDTREE_CLEAR_PVP_KICKED_STATUS_RESP
+	pvpKilled (R	pvpKilled"6
+PRT_WORLDTREE_BUY_PHYSICAL_REQ
+count (Rcount"S
+PRT_WORLDTREE_BUY_PHYSICAL_RESP
+physical (Rphysical
+count (Rcount"j
+"PRT_WORLDTREE_PHYSICAL_CHANGE_RESP
+physical (Rphysical(
+physicalCutdown (RphysicalCutdown"
+PRT_WORLDTREE_GIFT_INFO_REQ"X
+PRT_WORLDTREE_GIFT_INFO_RESP 
+giftCutdown (RgiftCutdown
+giftId (RgiftId"=
+PRT_WORLDTREE_STORY
+id (Rid
+status (Rstatus"
+PRT_WORLDTREE_STORY_INFO_REQ"c
+PRT_WORLDTREE_STORY_INFO_RESP,
+storys (2.PRT_WORLDTREE_STORYRstorys
+isRec (RisRec"-
+PRT_WORLDTREE_REC_STORY_REQ
+id (Rid".
+PRT_WORLDTREE_REC_STORY_RESP
+id (Rid"4
+"PRT_WORLDTREE_ACTIVATION_STORY_REQ
+id (Rid"5
+#PRT_WORLDTREE_ACTIVATION_STORY_RESP
+id (Rid"!
+PRT_WORLDTREE_REC_STORY_BIG_REQ""
+ PRT_WORLDTREE_REC_STORY_BIG_RESP"?
+PRT_WORLDTREE_REPORT
+id (Rid
+time (Rtime
+
+playerName (	R
+playerName
+mapId (RmapId
+eventId (ReventId
+score (Rscore
+hp (Rhp 
+player2Name	 (	Rplayer2Name"
+PRT_WORLDTREE_REPORT_REQ"?
+PRT_WORLDTREE_REPORT_RESP/
+reports (2.PRT_WORLDTREE_REPORTRreports9
+worldReports (2.PRT_WORLDTREE_REPORTRworldReports"
+PRT_WORLDTREE_STAGE_DATA_REQ"?
+PRT_WORLDTREE_STAGE_DATA_RESP
+	nextMapId (R	nextMapId(
+	passAward (2
+.PRT_THINGR	passAward
+score (Rscore
+	totalKill (R	totalKill
+
+scoreBonus (R
+scoreBonus
+explore (Rexplore
+mapId (RmapId"?
+PRT_WORLDTREE_PET_DRAW
+freeTs (RfreeTs,
+alreadyDrawNumber (RalreadyDrawNumber
+multiple (Rmultiple
+did (Rdid"?
+PRT_WORLDTREE_PET_DRAW_PICK
+freeTs (RfreeTs,
+alreadyDrawNumber (RalreadyDrawNumber
+multiple (Rmultiple
+did (Rdid
+
+pickPetDid (R
+pickPetDid"!
+PRT_WORLDTREE_PET_DRAW_INFO_REQ"?
+ PRT_WORLDTREE_PET_DRAW_INFO_RESP-
+draws (2.PRT_WORLDTREE_PET_DRAWRdraws:
+	pickDraws (2.PRT_WORLDTREE_PET_DRAW_PICKR	pickDraws"S
+PRT_WORLDTREE_PET_DRAW_REQ
+did (Rdid#
+type (2.ENUM_DRAW_TYPERtype"?
+PRT_WORLDTREE_PET_DRAW_RESP+
+draw (2.PRT_WORLDTREE_PET_DRAWRdraw'
+awards (2.PRT_ONCE_AWARDRawards
+petId (RpetId"N
+PRT_WORLDTREE_PET_PICK_REQ
+did (Rdid
+
+pickPetDid (R
+pickPetDid"O
+PRT_WORLDTREE_PET_PICK_RESP
+did (Rdid
+
+pickPetDid (R
+pickPetDid"?
+PRT_WORLDTREE_PET_DRAW_PICK_REQ
+did (Rdid#
+type (2.ENUM_DRAW_TYPERtype
+
+pickPetDid (R
+pickPetDid
+itemDid (RitemDid"?
+ PRT_WORLDTREE_PET_DRAW_PICK_RESP0
+draw (2.PRT_WORLDTREE_PET_DRAW_PICKRdraw'
+awards (2.PRT_ONCE_AWARDRawards
+petId (RpetId"?
+PRT_WORLDTREE_TREASURE_MAP
+
+treasureId (R
+treasureId
+cellIds (RcellIds
+lineIds (RlineIds 
+bigRewardId (RbigRewardId"%
+#PRT_WORLDTREE_TREASURE_MAP_INFO_REQ"W
+$PRT_WORLDTREE_TREASURE_MAP_INFO_RESP/
+info (2.PRT_WORLDTREE_TREASURE_MAPRinfo";
+%PRT_WORLDTREE_TREASURE_MAP_RANDOM_REQ
+type (Rtype"?
+&PRT_WORLDTREE_TREASURE_MAP_RANDOM_RESP
+type (Rtype
+count (Rcount/
+info (2.PRT_WORLDTREE_TREASURE_MAPRinfo 
+award (2
+.PRT_THINGRaward
+
+newCellIds (R
+newCellIds&
+repeateCellIds (RrepeateCellIds"W
+'PRT_WORLDTREE_TREASURE_MAP_ACCURATE_REQ
+cellIds (RcellIds
+type (Rtype"?
+(PRT_WORLDTREE_TREASURE_MAP_ACCURATE_RESP
+cellIds (RcellIds 
+award (2
+.PRT_THINGRaward/
+info (2.PRT_WORLDTREE_TREASURE_MAPRinfo
+type (Rtype"M
+PRT_TREASURE_MAP_RECORD
+
+treasureId (R
+treasureId
+time (Rtime"'
+%PRT_WORLDTREE_TREASURE_MAP_RECORD_REQ"\
+&PRT_WORLDTREE_TREASURE_MAP_RECORD_RESP2
+records (2.PRT_TREASURE_MAP_RECORDRrecords"*
+(PRT_WORLDTREE_TREASURE_MAP_REC_AWARD_REQ"~
+)PRT_WORLDTREE_TREASURE_MAP_REC_AWARD_RESP 
+award (2
+.PRT_THINGRaward/
+info (2.PRT_WORLDTREE_TREASURE_MAPRinfo"
+PRT_WORLDTREE_FUND_INFO_REQ"?
+PRT_WORLDTREE_FUND_INFO_RESP
+isCharge (RisCharge 
+recFreeDids (RrecFreeDids$
+recChargeDids (RrecChargeDids
+nowDay (RnowDay"V
+PRT_WORLDTREE_FUND_AWARD_REQ
+awardDid (RawardDid
+isCharge (RisCharge"W
+PRT_WORLDTREE_FUND_AWARD_RESP
+awardDid (RawardDid
+isCharge (RisCharge"[
+PRT_WORLDTREE_KEY
+itemDid (RitemDid
+count (Rcount
+status (Rstatus"
+PRT_WORLDTREE_KEY_LIST_REQ"E
+PRT_WORLDTREE_KEY_LIST_RESP&
+keys (2.PRT_WORLDTREE_KEYRkeys"7
+PRT_WORLDTREE_KEY_MERGE_REQ
+itemDid (RitemDid"8
+PRT_WORLDTREE_KEY_MERGE_RESP
+itemDid (RitemDid"1
+PRT_WORLDTREE_KEY_BOX_REQ
+boxId (RboxId"T
+PRT_WORLDTREE_KEY_BOX_RESP
+boxId (RboxId 
+award (2
+.PRT_THINGRaward"!
+PRT_WORLDTREE_KEY_BIG_AWARD_REQ"J
+ PRT_WORLDTREE_KEY_BIG_AWARD_RESP&
+bigAward (2
+.PRT_THINGRbigAward"H
+PRT_WORLD_TREE_DLC_LINK_STATUS
+id (Rid
+status (Rstatus"@
+"PRT_WORLD_TREE_DLC_LINK_STATUS_REQ
+playerId (RplayerId"?
+#PRT_WORLD_TREE_DLC_LINK_STATUS_RESP
+playerId (RplayerIdE
+dlcLinkStatus (2.PRT_WORLD_TREE_DLC_LINK_STATUSRdlcLinkStatus0
+totalKillMonsterNum (RtotalKillMonsterNum*
+totalKillBossNum (RtotalKillBossNum"b
+"PRT_WORLD_TREE_DLC_LINK_REWARD_REQ
+playerId (RplayerId 
+isRewardBig (RisRewardBig"?
+#PRT_WORLD_TREE_DLC_LINK_REWARD_RESP
+playerId (RplayerId
+id (Rid 
+drops (2
+.PRT_THINGRdrops*
+activeDlcLinkIds (RactiveDlcLinkIdsE
+dlcLinkStatus (2.PRT_WORLD_TREE_DLC_LINK_STATUSRdlcLinkStatus 
+isRewardBig (RisRewardBig"u
+PRT_CS_WORLDTREE_JOIN_GROUP_REQ
+playerId (RplayerId
+id (Rid
+pwd (	Rpwd
+fight (Rfight"?
+ PRT_CS_WORLDTREE_JOIN_GROUP_RESP
+playerId (RplayerId
+result (Rresult"
+errCode (2.ErrCodeRerrCode 
+group (2
+.PRT_GROUPRgroup"`
+ PRT_CS_WORLDTREE_GROUP_INFO_RESP
+playerId (RplayerId 
+group (2
+.PRT_GROUPRgroup"T
+PRT_CS_WORLDTREE_KICKED_RESP
+playerId (RplayerId
+groupId (RgroupId"s
+PRT_CS_WORLDTREE_GROUP_INFO_SYN 
+group (2
+.PRT_GROUPRgroup
+playerId (RplayerId
+type (Rtype"f
+PRT_CS_WORLDTREE_BOX_INFO_RESP(
+boxes (2.PRT_WORLDTREE_BOXRboxes
+playerId (RplayerId"m
+!PRT_CS_WORLDTREE_BOX_EXCHANGE_REQ
+playerId (RplayerId
+id (Rid
+	openCount (R	openCount"?
+"PRT_CS_WORLDTREE_BOX_EXCHANGE_RESP
+playerId (RplayerId
+result (Rresult"
+errCode (2.ErrCodeRerrCode
+id (Rid
+	openCount (R	openCount"g
+%PRT_CS_WORLDTREE_REC_SCORE_REWARD_REQ
+id (Rid
+type (Rtype
+playerId (RplayerId"?
+&PRT_CS_WORLDTREE_REC_SCORE_REWARD_RESP
+recId (RrecId
+id (Rid
+type (Rtype
+playerId (RplayerId
+result (Rresult"
+errCode (2.ErrCodeRerrCode"<
+PRT_CS_WORLDTREE_TASK_INFO_REQ
+playerId (RplayerId"v
+PRT_CS_WORLDTREE_TASK_INFO_RESP
+playerId (RplayerId
+result (Rresult
+tasks (2	.PRT_TASKRtasks"W
+PRT_CS_WORLDTREE_REC_TASK_REQ
+taskDids (RtaskDids
+playerId (RplayerId"?
+PRT_CS_WORLDTREE_REC_TASK_RESP
+playerId (RplayerId
+result (Rresult2
+successGroupTaskDids (RsuccessGroupTaskDids
+taskDids (RtaskDids"?
+PRT_CS_WORLDTREE_EXECUTE_REQ
+playerId (RplayerId
+mapId (RmapId
+eventId (ReventId
+	QTEResult (R	QTEResult
+
+mazeResult (R
+mazeResult"?
+PRT_CS_WORLDTREE_EXECUTE_RESP
+playerId (RplayerId
+result (Rresult"
+errCode (2.ErrCodeRerrCode
+mapId (RmapId
+eventId (ReventId
+score (Rscore
+award (	Raward)
+buffs (2.PRT_WORLDTREE_BUFFRbuffs
+buffId	 (RbuffId
+hp
+ (Rhp 
+challengeTs (RchallengeTs
+	nextMapId (R	nextMapId$
+triggerBuffId (RtriggerBuffId&
+maps (2.PRT_WORLDTREE_MAPRmaps
+	totalKill (R	totalKill
+
+scoreBonus (R
+scoreBonus:
+
+eventParam (2.PRT_WORLDTREE_EVENT_PARAMR
+eventParam
+hideMap (RhideMap8
+hideMapData (2.PRT_WORLDTREE_HIDEMAPRhideMapData
+
+extraAward (	R
+extraAward"
+curBossCount (RcurBossCount"U
+!PRT_CS_WORLDTREE_BUY_PHYSICAL_REQ
+playerId (RplayerId
+count (Rcount"?
+"PRT_CS_WORLDTREE_BUY_PHYSICAL_RESP
+playerId (RplayerId
+result (Rresult"
+errCode (2.ErrCodeRerrCode
+physical (Rphysical
+count (Rcount"d
+PRT_CS_WORLDTREE_SUPPORT_REQ
+playerId (RplayerId(
+supportPlayerId (RsupportPlayerId"?
+PRT_CS_WORLDTREE_SUPPORT_RESP
+result (Rresult
+playerId (RplayerId(
+supportPlayerId (RsupportPlayerId"
+errCode (2.ErrCodeRerrCode
+self (Rself
+award (	Raward0
+support (2.PRT_WORLDTREE_SUPPORTRsupport&
+supportSuccess (RsupportSuccess
+score	 (Rscore)
+buffs
+ (2.PRT_WORLDTREE_BUFFRbuffs$
+triggerBuffId (RtriggerBuffId
+	totalKill (R	totalKill
+
+scoreBonus (R
+scoreBonus&
+maps (2.PRT_WORLDTREE_MAPRmaps";
+PRT_CS_WORLDTREE_GIFT_BUY_REQ
+playerId (RplayerId"L
+PRT_CS_WORLDTREE_REC_STORY_REQ
+id (Rid
+playerId (RplayerId"?
+PRT_CS_WORLDTREE_REC_STORY_RESP
+id (Rid
+playerId (RplayerId
+result (Rresult"
+errCode (2.ErrCodeRerrCode"R
+ PRT_CS_WORLDTREE_RANK_REWARD_REQ
+playerId (RplayerId
+type (Rtype"?
+!PRT_CS_WORLDTREE_RANK_REWARD_RESP
+playerId (RplayerId
+result (Rresult"
+errCode (2.ErrCodeRerrCode
+type (Rtype
+status (Rstatus
+reward (	Rreward"=
+PRT_CS_WORLDTREE_STAGE_DATA_REQ
+playerId (RplayerId"?
+ PRT_CS_WORLDTREE_STAGE_DATA_RESP
+playerId (RplayerId
+result (Rresult"
+errCode (2.ErrCodeRerrCode
+	nextMapId (R	nextMapId
+	passAward (	R	passAward
+score (Rscore
+	totalKill (R	totalKill
+
+scoreBonus (R
+scoreBonus
+explore	 (Rexplore
+mapId
+ (RmapId"<
+PRT_CS_WORLDTREE_RED_POINT_REQ
+playerId (RplayerId"?
+PRT_CS_WORLDTREE_RED_POINT_RESP
+playerId (RplayerId3
+redPointIds (2.ENUM_REDPOINT_IDRredPointIds2
+isSendToOnlinePlayer (RisSendToOnlinePlayer"d
+&PRT_CS_WORLDTREE_UPDATE_ACTIVETIME_REQ
+playerId (RplayerId
+
+activeTime (R
+activeTime"e
+'PRT_CS_WORLDTREE_UPDATE_ACTIVETIME_RESP
+playerId (RplayerId
+
+activeTime (R
+activeTime"x
+(PRT_CS_WORLDTREE_TREASURE_MAP_RANDOM_REQ
+playerId (RplayerId
+type (Rtype
+	itemCount (R	itemCount"?
+)PRT_CS_WORLDTREE_TREASURE_MAP_RANDOM_RESP
+playerId (RplayerId
+result (Rresult"
+errCode (2.ErrCodeRerrCode
+type (Rtype
+count (Rcount/
+info (2.PRT_WORLDTREE_TREASURE_MAPRinfo
+lineIds (RlineIds
+
+newCellIds (R
+newCellIds&
+repeateCellIds	 (RrepeateCellIds"
+repeateCount
+ (RrepeateCount"v
+*PRT_CS_WORLDTREE_TREASURE_MAP_ACCURATE_REQ
+playerId (RplayerId
+cellIds (RcellIds
+type (Rtype"?
++PRT_CS_WORLDTREE_TREASURE_MAP_ACCURATE_RESP
+playerId (RplayerId
+result (Rresult"
+errCode (2.ErrCodeRerrCode
+cellIds (RcellIds/
+info (2.PRT_WORLDTREE_TREASURE_MAPRinfo
+lineIds (RlineIds
+type (Rtype"I
++PRT_CS_WORLDTREE_TREASURE_MAP_REC_AWARD_REQ
+playerId (RplayerId"?
+,PRT_CS_WORLDTREE_TREASURE_MAP_REC_AWARD_RESP
+playerId (RplayerId/
+info (2.PRT_WORLDTREE_TREASURE_MAPRinfo 
+bigRewardId (RbigRewardId"?
+#PRT_CS_WORLDTREE_TREASURE_TEST_RESP
+playerId (RplayerId 
+randomCount (RrandomCount
+cellIds (RcellIds"
+tunningCount (RtunningCount$
+repeatedCount (RrepeatedCount 
+bigRewardId (RbigRewardId"Q
+PRT_CS_WORLDTREE_KEY_BOX_RESP
+playerId (RplayerId
+boxId (RboxId"A
+#PRT_CS_WORLDTREE_KEY_BIG_AWARD_RESP
+playerId (RplayerId"A
+#PRT_CS_WORLDTREE_REC_STORY_BIG_RESP
+playerId (RplayerId"?
+,PRT_CS_CENTER_WORLD_TREE_GAME_SCORE_INFO_REQ
+playerId (RplayerId
+
+totalScore (R
+totalScore
+
+updateTime (R
+updateTime"/
+-PRT_CS_CENTER_WORLD_TREE_GAME_SCORE_INFO_RESP*Y
+ENUM_ACT_STATUS
+PREPARA_STATUS 
+PLAY_STATUS
+REWARD_STATUS
+
+END_STATUS*c
+ENUM_GROUP_STATUS
+GROUP_KICKED 
+GROUP_NO_GROUP
+GROUP_IN_GROUP
+GROUP_GROUP_LOCKB
+com.next1b.nextsvr.protobproto3

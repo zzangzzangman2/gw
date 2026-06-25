@@ -1,0 +1,86 @@
+local a={id=0,starMap=0,starLevel=0,starMapBg="",stagename="",starNum=0,profession=0,expert=0,star=0,starType=0,addType=0,consumItem=0,consumNum=0,consum={},icon="",atk=0,def=0,hp=0,critical=0,blockRes=0,block=0,blood=0,control=0,EXSkilllnjure=0,thom=0,attrs={},starHaloPas=0,color=0,pose=0,totalAtk=0,totalDef=0,totalHP=0,totalBigAtk=0,totalBigDef=0,totalBigHP=0}
+a.__index=a
+function a.New(m,g,v,t,z,_,x,k,q,j,T,N,A,H,R,S,O,I,D,E,b,d,h,r,s,o,i,n,l,f,u,y,p,w,c)
+local e={}
+setmetatable(e,a)
+e.id=m
+e.starMap=g
+e.starLevel=v
+e.starMapBg=t
+e.stagename=z
+e.starNum=_
+e.profession=x
+e.expert=k
+e.star=q
+e.starType=j
+e.addType=T
+e.consumItem=N
+e.consumNum=A
+e.consum=H
+e.icon=R
+e.atk=S
+e.def=O
+e.hp=I
+e.critical=D
+e.blockRes=E
+e.block=b
+e.blood=d
+e.control=h
+e.EXSkilllnjure=r
+e.thom=s
+e.attrs=o
+e.starHaloPas=i
+e.color=n
+e.pose=l
+e.totalAtk=f
+e.totalDef=u
+e.totalHP=y
+e.totalBigAtk=p
+e.totalBigDef=w
+e.totalBigHP=c
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.starMap=t[2]
+e.starLevel=t[3]
+e.starMapBg=t[4]
+e.stagename=t[5]
+e.starNum=t[6]
+e.profession=t[7]
+e.expert=t[8]
+e.star=t[9]
+e.starType=t[10]
+e.addType=t[11]
+e.consumItem=t[12]
+e.consumNum=t[13]
+e.consum=t[14]
+e.icon=t[15]
+e.atk=t[16]
+e.def=t[17]
+e.hp=t[18]
+e.critical=t[19]
+e.blockRes=t[20]
+e.block=t[21]
+e.blood=t[22]
+e.control=t[23]
+e.EXSkilllnjure=t[24]
+e.thom=t[25]
+e.attrs=t[26]
+e.starHaloPas=t[27]
+e.color=t[28]
+e.pose=t[29]
+e.totalAtk=t[30]
+e.totalDef=t[31]
+e.totalHP=t[32]
+e.totalBigAtk=t[33]
+e.totalBigDef=t[34]
+e.totalBigHP=t[35]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/hero/DTHeroStarEntityTableData')
+end
+return a 

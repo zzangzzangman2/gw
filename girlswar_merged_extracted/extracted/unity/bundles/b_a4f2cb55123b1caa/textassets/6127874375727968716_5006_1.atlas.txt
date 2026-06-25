@@ -1,0 +1,12 @@
+5006_1.png
+size:2048,2048
+filter:Linear,Linear
+images/1
+bounds:1,1,1616,1700
+images/2
+bounds:1515,635,588,503
+offsets:0,243,977,746
+rotate:90
+images/2_2
+bounds:1347,1014,599,687
+offsets:867,431,1466,1118

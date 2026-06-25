@@ -1,0 +1,38 @@
+
+?	
+ActHeavenTower.protoCommons.proto"V
+HEAVEN_TOWER_WINDOW_DATA
+poolDid (RpoolDid 
+award (2
+.PRT_THINGRaward"?
+HEAVEN_TOWER_LAYER_DATA
+layer (Rlayer
+
+isTopLayer (R
+isTopLayerA
+windowDataList (2.HEAVEN_TOWER_WINDOW_DATARwindowDataList"
+PRT_ACT_HEAVEN_TOWER_INFO_REQ"?
+PRT_ACT_HEAVEN_TOWER_INFO_RESP 
+windowCount (RwindowCount,
+rewardProcessList (RrewardProcessList>
+layerDataList (2.HEAVEN_TOWER_LAYER_DATARlayerDataList" 
+PRT_ACT_HEAVEN_TOWER_BUILD_REQ"?
+PRT_ACT_HEAVEN_TOWER_BUILD_RESP 
+windowCount (RwindowCount"
+awards (2
+.PRT_THINGRawards6
+	layerData (2.HEAVEN_TOWER_LAYER_DATAR	layerData@
+windowDataList (2.HEAVEN_TOWER_LAYER_DATARwindowDataList"S
+PRT_BIG_REWARD_DATA
+poolDid (RpoolDid"
+awards (2
+.PRT_THINGRawards"+
+)PRT_ACT_HEAVEN_TOWER_TOP_LAYER_REWARD_REQ"?
+*PRT_ACT_HEAVEN_TOWER_TOP_LAYER_REWARD_RESPB
+bigRewardDataList (2.PRT_BIG_REWARD_DATARbigRewardDataList"
+awards (2
+.PRT_THINGRawards")
+'PRT_ACT_HEAVEN_TOWER_REWARD_PROCESS_REQ"X
+(PRT_ACT_HEAVEN_TOWER_REWARD_PROCESS_RESP,
+rewardProcessList (RrewardProcessListB
+com.next1b.nextsvr.protobproto3

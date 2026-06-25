@@ -1,0 +1,16 @@
+
+?
+ActGeneralFund.proto"
+PRT_GENERAL_FUND_INFO_REQ"?
+PRT_GENERAL_FUND_INFO_RESP
+isCharge (RisCharge 
+recFreeDids (RrecFreeDids$
+recChargeDids (RrecChargeDids
+nowDay (RnowDay"T
+PRT_GENERAL_FUND_AWARD_REQ
+awardDid (RawardDid
+isCharge (RisCharge"U
+PRT_GENERAL_FUND_AWARD_RESP
+awardDid (RawardDid
+isCharge (RisChargeB
+com.next1b.nextsvr.protobproto3

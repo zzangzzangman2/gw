@@ -1,0 +1,36 @@
+local a={id=0,goods=0,award={{},{}},awardNew={{},{}},addAwardInfo={},timesLimit=0,limitType=0,originalPrice=0,listid=0,name=""}
+a.__index=a
+function a.New(n,r,s,t,l,u,d,h,o,i)
+local e={}
+setmetatable(e,a)
+e.id=n
+e.goods=r
+e.award=s
+e.awardNew=t
+e.addAwardInfo=l
+e.timesLimit=u
+e.limitType=d
+e.originalPrice=h
+e.listid=o
+e.name=i
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.goods=t[2]
+e.award=t[3]
+e.awardNew=t[4]
+e.addAwardInfo=t[5]
+e.timesLimit=t[6]
+e.limitType=t[7]
+e.originalPrice=t[8]
+e.listid=t[9]
+e.name=t[10]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/activity/DTNewHardDiscountPack0806EntityTableData')
+end
+return a 

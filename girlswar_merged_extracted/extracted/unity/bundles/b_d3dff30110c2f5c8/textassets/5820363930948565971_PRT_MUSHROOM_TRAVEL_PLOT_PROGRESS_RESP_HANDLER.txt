@@ -1,0 +1,11 @@
+local t={}
+function t:OnHandle(e)
+local e=assert(GlobalPB.decode("PRT_MUSHROOM_TRAVEL_PLOT_PROGRESS_RESP",e));
+if(GameInit.GetDebugLogProto())then
+;
+;
+end
+ModulesInit.ActMushroomMgr:SyncTravelPlotProgress(e)
+return e
+end
+return t 

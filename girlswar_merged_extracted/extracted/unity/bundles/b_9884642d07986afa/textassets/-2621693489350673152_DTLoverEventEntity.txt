@@ -1,0 +1,30 @@
+local t={id=0,eventName="",heroId=0,eventEnter=0,unlockType=0,unlockPara={},awards={}}
+t.__index=t
+function t.New(o,h,a,s,r,n,i)
+local e={}
+setmetatable(e,t)
+e.id=o
+e.eventName=h
+e.heroId=a
+e.eventEnter=s
+e.unlockType=r
+e.unlockPara=n
+e.awards=i
+return e
+end
+function t.NewFromArrItem(a)
+local e={}
+setmetatable(e,t)
+e.id=a[1]
+e.eventName=a[2]
+e.heroId=a[3]
+e.eventEnter=a[4]
+e.unlockType=a[5]
+e.unlockPara=a[6]
+e.awards=a[7]
+return e
+end
+function t.GetArr()
+return require('DataNode/DataTable/Create/harem/DTLoverEventEntityTableData')
+end
+return t 

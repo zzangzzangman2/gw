@@ -1,0 +1,12 @@
+local e=
+{
+ByIdx={
+{1,1,2,{5},{0},1,"UI_DeepSea/shmj_divination_1","deepsea_buff_Desc1"},
+{2,2,3,{0},{0},1,"UI_DeepSea/shmj_divination_2","deepsea_buff_Desc2"},
+{3,0,1,{0},{20002,20},1,"UI_DeepSea/shmj_divination_3","deepsea_buff_Desc3"},
+{4,3,5,{2},{0},1,"UI_DeepSea/shmj_divination_4","deepsea_buff_Desc4"},
+{5,4,10,{3},{0},1,"UI_DeepSea/shmj_divination_5","deepsea_buff_Desc5"}
+},
+Len=5
+}
+return e 

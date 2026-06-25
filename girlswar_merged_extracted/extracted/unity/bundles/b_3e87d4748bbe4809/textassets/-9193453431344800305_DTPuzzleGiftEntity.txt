@@ -1,0 +1,28 @@
+local e={id=0,goods=0,type=0,cost={{},{}},limitTime=0,award={{},{}}}
+e.__index=e
+function e.New(a,i,o,h,s,n)
+local t={}
+setmetatable(t,e)
+t.id=a
+t.goods=i
+t.type=o
+t.cost=h
+t.limitTime=s
+t.award=n
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.goods=a[2]
+t.type=a[3]
+t.cost=a[4]
+t.limitTime=a[5]
+t.award=a[6]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/activity/DTPuzzleGiftEntityTableData')
+end
+return e 

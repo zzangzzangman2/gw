@@ -1,0 +1,18 @@
+local t={}
+function t:OnHandle(e)
+local e=assert(GlobalPB.decode("PRT_FORMATION_MODIFY_RESP",e));
+if(GameInit.GetDebugLogProto())then
+;
+;
+end
+for t=1,#e.formations do
+ModulesInit.FormationManager:OnSendModifyFormationRequest(e.formations[t])
+end
+if e.formations and#e.formations>0 then
+if e.formations[1].formationNO==PROTO_ENUM.FormationNO.FN_DRAGON or e.formations[1].formationNO==PROTO_ENUM.FormationNO.FN_DRAGON_ALTER then
+EventSystem.SendEvent(CommonEventId.DragonFormationSyncChange)
+end
+end
+return e
+end
+return t 

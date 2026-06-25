@@ -1,0 +1,20 @@
+
+?
+ActSnackMania.protoCommons.proto"
+PRT_SNACK_MANIA_INFO_REQ"?
+PRT_SNACK_MANIA_INFO_RESP
+openDay (RopenDay
+mapId (RmapId
+	closeTime (R	closeTime
+maxScore (RmaxScore"e
+PRT_SNACK_MANIA_AWARD_REQ
+mapId (RmapId
+score (Rscore
+	isSuccess (R	isSuccess"?
+PRT_SNACK_MANIA_AWARD_RESP
+mapId (RmapId$
+rewards (2
+.PRT_THINGRrewards
+maxScore (RmaxScore
+	isSuccess (R	isSuccessB
+com.next1b.nextsvr.protobproto3

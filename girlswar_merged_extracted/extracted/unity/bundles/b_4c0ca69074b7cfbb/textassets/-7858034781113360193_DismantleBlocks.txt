@@ -1,0 +1,26 @@
+
+?
+DismantleBlocks.protoCommons.proto"
+PRT_DISMANTLE_BLOCKS_INFO_REQ"r
+PRT_DISMANTLE_BLOCKS_INFO_RESP
+	awardList (R	awardList
+curDay (RcurDay
+maxScore (RmaxScore"
+PRT_DISMANTLE_BLOCKS_RANK_REQ"?
+PRT_DISMANTLE_BLOCKS_RANK_RESP1
+	rankDatas (2.PRT_CS_COMMON_RANKR	rankDatas/
+selfRank (2.PRT_CS_COMMON_RANKRselfRank
+playerId (RplayerId"P
+PRT_DISMANTLE_BLOCKS_END_REQ
+playerId (RplayerId
+score (Rscore"{
+PRT_DISMANTLE_BLOCKS_END_RESP 
+award (2
+.PRT_THINGRaward
+maxScore (RmaxScore
+	awardList (R	awardList"}
+-PRT_CS_DISMANTLE_BLOCKS_RANK_SCORE_UPDATE_SYN
+playerId (RplayerId
+score (Rscore
+changeMS (RchangeMSB
+com.next1b.nextsvr.protobproto3

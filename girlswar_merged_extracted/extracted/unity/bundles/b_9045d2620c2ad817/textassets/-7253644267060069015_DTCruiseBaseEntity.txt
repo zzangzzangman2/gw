@@ -1,0 +1,28 @@
+local e={id=0,staminaTimes=0,unlockLevel=0,quickMaxTimes=0,powerItemDid=0,redPointTimes=0}
+e.__index=e
+function e.New(a,i,o,h,s,n)
+local t={}
+setmetatable(t,e)
+t.id=a
+t.staminaTimes=i
+t.unlockLevel=o
+t.quickMaxTimes=h
+t.powerItemDid=s
+t.redPointTimes=n
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.staminaTimes=a[2]
+t.unlockLevel=a[3]
+t.quickMaxTimes=a[4]
+t.powerItemDid=a[5]
+t.redPointTimes=a[6]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/cruise/DTCruiseBaseEntityTableData')
+end
+return e 

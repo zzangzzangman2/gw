@@ -1,0 +1,11 @@
+local t={}
+function t:OnHandle(e)
+local e=assert(GlobalPB.decode("PRT_CRUISE_TRADER_BUY_RESP",e));
+if(GameInit.GetDebugLogProto())then
+;
+;
+end
+ModulesInit.CruiseShipMgr:SyncPedlarBuy(e)
+return e
+end
+return t 

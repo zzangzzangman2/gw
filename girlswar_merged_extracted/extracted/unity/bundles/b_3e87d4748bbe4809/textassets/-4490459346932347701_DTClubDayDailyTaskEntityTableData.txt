@@ -1,0 +1,15 @@
+local e=
+{
+ByIdx={
+{101,"ValentineDailyTask_101",1,{{21368,2}},0},
+{102,"ValentineDailyTask_102",5,{{21368,2}},3},
+{103,"ValentineDailyTask_103",10,{{21368,2}},6},
+{104,"ValentineDailyTask_104",5,{{21368,2}},40},
+{105,"ValentineDailyTask_105",2,{{21368,2}},86},
+{106,"ValentineDailyTask_106",100,{{21368,2}},37},
+{107,"ValentineDailyTask_107",1,{{21368,2}},17},
+{108,"ValentineDailyTask_108",1,{{21368,2}},16}
+},
+Len=8
+}
+return e 

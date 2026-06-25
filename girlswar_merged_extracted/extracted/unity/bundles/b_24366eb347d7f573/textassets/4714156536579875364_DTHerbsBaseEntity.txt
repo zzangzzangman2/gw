@@ -1,0 +1,42 @@
+local a={id=0,exchangeItem=0,tea=0,medicine1=0,medicine2=0,highScoreRankCount=0,totalScoreRankCount=0,physical=0,deplete=0,speedyDeplete=0,rapidDeplete=0,exchangeStamina={},helpImageId=0}
+a.__index=a
+function a.New(s,d,h,t,l,c,m,f,u,r,i,o,n)
+local e={}
+setmetatable(e,a)
+e.id=s
+e.exchangeItem=d
+e.tea=h
+e.medicine1=t
+e.medicine2=l
+e.highScoreRankCount=c
+e.totalScoreRankCount=m
+e.physical=f
+e.deplete=u
+e.speedyDeplete=r
+e.rapidDeplete=i
+e.exchangeStamina=o
+e.helpImageId=n
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.exchangeItem=t[2]
+e.tea=t[3]
+e.medicine1=t[4]
+e.medicine2=t[5]
+e.highScoreRankCount=t[6]
+e.totalScoreRankCount=t[7]
+e.physical=t[8]
+e.deplete=t[9]
+e.speedyDeplete=t[10]
+e.rapidDeplete=t[11]
+e.exchangeStamina=t[12]
+e.helpImageId=t[13]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/herbs/DTHerbsBaseEntityTableData')
+end
+return a 

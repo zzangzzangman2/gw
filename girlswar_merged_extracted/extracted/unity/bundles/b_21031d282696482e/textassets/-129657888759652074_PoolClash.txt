@@ -1,0 +1,15 @@
+
+?
+PoolClash.protoCommons.proto"
+PRT_POOLCLASH_INFO_REQ"g
+PRT_POOLCLASH_INFO_RESP
+openDay (RopenDay
+mapId (RmapId
+	closeTime (R	closeTime"/
+PRT_POOLCLASH_AWARD_REQ
+mapId (RmapId"V
+PRT_POOLCLASH_AWARD_RESP
+mapId (RmapId$
+rewards (2
+.PRT_THINGRrewardsB
+com.next1b.nextsvr.protobproto3

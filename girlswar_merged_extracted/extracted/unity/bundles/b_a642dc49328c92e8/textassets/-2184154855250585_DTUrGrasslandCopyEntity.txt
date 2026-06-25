@@ -1,0 +1,54 @@
+local a={id=0,activityType=0,copyId=0,nextCopy=0,chapter=0,wujincopy=0,staminaCost=0,copyType=0,inevitablePos={{},{}},inevitableevent={{},{}},eventprobability={{},{}},inevitablePos2={{},{}},randomPos={{},{}},probabilityPos={{},{}},probabilityStore=0,quanbu={},copyPic="",copygrounds1="",storyId=0}
+a.__index=a
+function a.New(d,c,l,t,f,m,y,v,p,b,g,w,u,n,i,o,s,r,h)
+local e={}
+setmetatable(e,a)
+e.id=d
+e.activityType=c
+e.copyId=l
+e.nextCopy=t
+e.chapter=f
+e.wujincopy=m
+e.staminaCost=y
+e.copyType=v
+e.inevitablePos=p
+e.inevitableevent=b
+e.eventprobability=g
+e.inevitablePos2=w
+e.randomPos=u
+e.probabilityPos=n
+e.probabilityStore=i
+e.quanbu=o
+e.copyPic=s
+e.copygrounds1=r
+e.storyId=h
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.activityType=t[2]
+e.copyId=t[3]
+e.nextCopy=t[4]
+e.chapter=t[5]
+e.wujincopy=t[6]
+e.staminaCost=t[7]
+e.copyType=t[8]
+e.inevitablePos=t[9]
+e.inevitableevent=t[10]
+e.eventprobability=t[11]
+e.inevitablePos2=t[12]
+e.randomPos=t[13]
+e.probabilityPos=t[14]
+e.probabilityStore=t[15]
+e.quanbu=t[16]
+e.copyPic=t[17]
+e.copygrounds1=t[18]
+e.storyId=t[19]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/urgrassland/DTUrGrasslandCopyEntityTableData')
+end
+return a 

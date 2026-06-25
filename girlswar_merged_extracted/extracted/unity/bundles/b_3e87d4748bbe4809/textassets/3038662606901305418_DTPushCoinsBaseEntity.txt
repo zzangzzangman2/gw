@@ -1,0 +1,30 @@
+local t={id=0,times=0,randomGridNum=0,rowsNum=0,columnsNum=0,beginItem={},activityItem=0}
+t.__index=t
+function t.New(o,h,a,s,r,n,i)
+local e={}
+setmetatable(e,t)
+e.id=o
+e.times=h
+e.randomGridNum=a
+e.rowsNum=s
+e.columnsNum=r
+e.beginItem=n
+e.activityItem=i
+return e
+end
+function t.NewFromArrItem(a)
+local e={}
+setmetatable(e,t)
+e.id=a[1]
+e.times=a[2]
+e.randomGridNum=a[3]
+e.rowsNum=a[4]
+e.columnsNum=a[5]
+e.beginItem=a[6]
+e.activityItem=a[7]
+return e
+end
+function t.GetArr()
+return require('DataNode/DataTable/Create/activity/DTPushCoinsBaseEntityTableData')
+end
+return t 

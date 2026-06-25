@@ -1,0 +1,6 @@
+VIPlingqu.png
+size:128,64
+filter:Linear,Linear
+bg_vip 1
+bounds:2,2,44,62
+rotate:90

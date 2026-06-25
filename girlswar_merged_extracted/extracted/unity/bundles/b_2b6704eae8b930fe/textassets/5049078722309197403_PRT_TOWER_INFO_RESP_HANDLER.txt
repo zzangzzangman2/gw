@@ -1,0 +1,10 @@
+local e={}
+function e:OnHandle(e)
+local e=assert(GlobalPB.decode("PRT_TOWER_INFO_RESP",e));
+if(GameInit.GetDebugLogProto())then
+;
+;
+end
+TowerMgr:SetAllTowerInfo(e)
+end
+return e 

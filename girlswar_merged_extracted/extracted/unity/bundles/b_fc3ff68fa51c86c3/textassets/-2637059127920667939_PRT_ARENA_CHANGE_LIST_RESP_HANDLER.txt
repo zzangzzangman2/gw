@@ -1,0 +1,10 @@
+local e={}
+function e:OnHandle(e)
+local e=assert(GlobalPB.decode("PRT_ARENA_CHANGE_LIST_RESP",e));
+if(GameInit.GetDebugLogProto())then
+;
+;
+end
+ModulesInit.ArenaManager:OnUpdateArenaListResponse(e)
+end
+return e 

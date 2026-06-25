@@ -1,0 +1,26 @@
+local e={id=0,times=0,award="",award2="",jump=0}
+e.__index=e
+function e.New(o,n,a,s,i)
+local t={}
+setmetatable(t,e)
+t.id=o
+t.times=n
+t.award=a
+t.award2=s
+t.jump=i
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.times=a[2]
+t.award=a[3]
+t.award2=a[4]
+t.jump=a[5]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/marry/DTSaunteredMarryGachaTaskNewEntityTableData')
+end
+return e 

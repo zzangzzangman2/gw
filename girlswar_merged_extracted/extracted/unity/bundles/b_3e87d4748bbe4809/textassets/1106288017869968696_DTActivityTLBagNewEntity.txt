@@ -1,0 +1,40 @@
+local a={id=0,goods=0,award={{},{}},addAwardInfo={},award2=0,team=0,number=0,discountTime=0,dailyReward="",totalValue=0,chesticon="",timesLimit=0}
+a.__index=a
+function a.New(s,d,h,t,u,c,m,l,r,i,o,n)
+local e={}
+setmetatable(e,a)
+e.id=s
+e.goods=d
+e.award=h
+e.addAwardInfo=t
+e.award2=u
+e.team=c
+e.number=m
+e.discountTime=l
+e.dailyReward=r
+e.totalValue=i
+e.chesticon=o
+e.timesLimit=n
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.goods=t[2]
+e.award=t[3]
+e.addAwardInfo=t[4]
+e.award2=t[5]
+e.team=t[6]
+e.number=t[7]
+e.discountTime=t[8]
+e.dailyReward=t[9]
+e.totalValue=t[10]
+e.chesticon=t[11]
+e.timesLimit=t[12]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/activity/DTActivityTLBagNewEntityTableData')
+end
+return a 

@@ -1,0 +1,11 @@
+local t={}
+function t:OnHandle(e)
+local e=assert(GlobalPB.decode("PRT_SILVERY_PARK_CAKE_AUTO_MERGE_START_RESP",e));
+if(GameInit.GetDebugLogProto())then
+;
+;
+end
+ModulesInit.ActSilveryParkMgr:ParseCakeAutoStart(e)
+return e
+end
+return t 

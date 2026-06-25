@@ -1,0 +1,23 @@
+local a={}
+function a:OnHandle(e)
+local e=assert(GlobalPB.decode("PRT_UPGRADE_DISCOUNT_PACK_FREE_AWARD_RESP",e));
+if(GameInit.GetDebugLogProto())then
+;
+;
+end
+local a=require('DataNode/DataTable/Create/activity/DTUpgradeDiscountPackDBModel')
+local t=e.discountDid
+local t=a.GetEntity(t)
+if t then
+local e={}
+for a=1,#t.awardShow do
+local t=t.awardShow[a]
+table.add(e,{itemDid=t[1],count=t[2],itemId=0})
+end
+if#e>0 then
+GameEntry.UI:OpenUIForm(UIFormId.UI_RewardsShow,{infos=e})
+end
+end
+return e
+end
+return a 

@@ -1,0 +1,11 @@
+Painting_1062_Back.png
+size:2048,2048
+filter:Linear,Linear
+scale:0.5
+a90
+bounds:0,258,1844,1048
+offsets:0,42,1844,1090
+effect/effect_4
+bounds:280,158,107,100
+effect/lili
+bounds:0,0,279,258

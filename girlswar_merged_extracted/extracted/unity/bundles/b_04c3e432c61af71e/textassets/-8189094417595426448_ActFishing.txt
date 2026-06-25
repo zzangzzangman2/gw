@@ -1,0 +1,187 @@
+
+?)
+ActFishing.protoCommons.proto"?
+	FISH_INFO
+fishId (RfishId
+fishDid (RfishDid
+
+fishOutput (R
+fishOutput$
+curFishOutput (RcurFishOutput 
+fishQuality (RfishQuality
+satiety (Rsatiety4
+nextSatietyUpdateTime (RnextSatietyUpdateTime"?
+FISH_TANK_INFO.
+fishInfoList (2
+.FISH_INFORfishInfoList 
+fishTankDid (RfishTankDid(
+totalFishOutput (RtotalFishOutput"L
+FISH_HANDBOOK_INFO
+fishDid (RfishDid
+	firstTime (R	firstTime"?
+FISHING_PLAYER_INFO
+playerId (RplayerId
+name (	Rname
+head (Rhead
+	headFrame (R	headFrame
+serverId (RserverId
+level (Rlevel(
+totalFishOutput (RtotalFishOutput
+giftDId (RgiftDId$
+giveGiftCount	 (RgiveGiftCount"
+PRT_FISHING_INFO_REQ"?
+PRT_FISHING_INFO_RESP$
+topN (2.PRT_COMMON_RANKRtopN,
+selfRank (2.PRT_COMMON_RANKRselfRank3
+fishTankInfo (2.FISH_TANK_INFORfishTankInfo
+score (Rscore
+stageDid (RstageDid,
+lastGetRewardTime (RlastGetRewardTime
+	giftCount (R	giftCount$
+giveGiftCount (RgiveGiftCount"
+PRT_FISHING_TANK_INFO_REQ"Q
+PRT_FISHING_TANK_INFO_RESP3
+fishTankInfo (2.FISH_TANK_INFORfishTankInfo"?
+PRT_FISHING_TANK_UNLOCK_REQ 
+fishTankDid (RfishTankDid"\
+PRT_FISHING_TANK_UNLOCK_RESP 
+fishTankDid (RfishTankDid
+playerId (RplayerId"1
+PRT_FISHING_FEEDING_REQ
+fishId (RfishId"O
+PRT_FISHING_FEEDING_RESP3
+fishTankInfo (2.FISH_TANK_INFORfishTankInfo"
+PRT_FISHING_POND_REQ"?
+PRT_FISHING_POND_RESP$
+curFish (2
+.FISH_INFORcurFish
+isNew (RisNew4
+comFishInfoList (2
+.FISH_INFORcomFishInfoList4
+vipFishInfoList (2
+.FISH_INFORvipFishInfoList*
+lastFreeBaitTime (RlastFreeBaitTime"
+PRT_FISHING_FREE_BAIT_REQ"?
+PRT_FISHING_FREE_BAIT_RESP*
+lastFreeBaitTime (RlastFreeBaitTime"
+awards (2
+.PRT_THINGRawards
+playerId (RplayerId"O
+PRT_FISHING_CONSUME_REQ
+baitId (RbaitId
+	baitCount (R	baitCount"2
+PRT_FISHING_CONSUME_RESP
+isCost (RisCost"C
+PRT_FISHING_END_REQ
+fishId (RfishId
+isVip (RisVip"?
+PRT_FISHING_END_RESP.
+fishInfoList (2
+.FISH_INFORfishInfoList
+isNew (RisNew
+isCost (RisCost
+playerId (RplayerId
+isVip (RisVip"7
+PRT_FISHING_REPLACE_REQ
+	isReplace (R	isReplace"?
+PRT_FISHING_REPLACE_RESP3
+fishTankInfo (2.FISH_TANK_INFORfishTankInfo"
+awards (2
+.PRT_THINGRawards
+playerId (RplayerId,
+replaceFish (2
+.FISH_INFORreplaceFish""
+ PRT_FISHING_GET_STAGE_REWARD_REQ"?
+!PRT_FISHING_GET_STAGE_REWARD_RESP
+stageDid (RstageDid"
+awards (2
+.PRT_THINGRawards
+playerId (RplayerId
+	stageDids (R	stageDids"
+PRT_FISHING_PRODUCT_REQ"?
+PRT_FISHING_PRODUCT_RESP
+score (Rscore(
+totalFishOutput (RtotalFishOutput,
+lastGetRewardTime (RlastGetRewardTime"#
+!PRT_FISHING_GET_HANGUP_REWARD_REQ"?
+"PRT_FISHING_GET_HANGUP_REWARD_RESP"
+awards (2
+.PRT_THINGRawards
+score (Rscore(
+totalFishOutput (RtotalFishOutput,
+lastGetRewardTime (RlastGetRewardTime
+playerId (RplayerId
+
+hangUpDids (R
+hangUpDids"
+PRT_FISHING_HANDBOOK_REQ"\
+PRT_FISHING_HANDBOOK_RESP?
+fishHandBookList (2.FISH_HANDBOOK_INFORfishHandBookList"i
+!PRT_FISHING_VISIT_PLAYER_LIST_REQ
+	visitType (R	visitType&
+visitPlayerIds (RvisitPlayerIds"x
+"PRT_FISHING_VISIT_PLAYER_LIST_RESP
+	visitType (R	visitType4
+
+playerList (2.FISHING_PLAYER_INFOR
+playerList":
+PRT_FISHING_VISIT_PLAYER_REQ
+playerId (RplayerId"?
+PRT_FISHING_VISIT_PLAYER_RESP4
+
+playerInfo (2.FISHING_PLAYER_INFOR
+playerInfo3
+fishTankInfo (2.FISH_TANK_INFORfishTankInfo"%
+#PRT_FISHING_VISIT_RANDOM_PLAYER_REQ"?
+$PRT_FISHING_VISIT_RANDOM_PLAYER_RESP4
+
+playerInfo (2.FISHING_PLAYER_INFOR
+playerInfo3
+fishTankInfo (2.FISH_TANK_INFORfishTankInfo"R
+PRT_FISHING_VISIT_GIFT_REQ
+playerId (RplayerId
+giftDId (RgiftDId"?
+PRT_FISHING_VISIT_GIFT_RESP"
+awards (2
+.PRT_THINGRawards.
+remainingGiftCount (RremainingGiftCount4
+
+playerInfo (2.FISHING_PLAYER_INFOR
+playerInfo
+playerId (RplayerId"
+PRT_FISHING_RECEIVED_GIFT_REQ"`
+PRT_FISHING_RECEIVED_GIFT_RESP"
+awards (2
+.PRT_THINGRawards
+playerId (RplayerId"
+PRT_FISHING_SHOP_INFO_REQ"X
+PRT_FISHING_SHOP_INFO_RESP 
+items (2
+.PRT_GOODSRitems
+costNum (RcostNum"L
+PRT_FISHING_SHOP_BUY_REQ
+goodsDid (RgoodsDid
+count (Rcount"U
+PRT_FISHING_SHOP_BUY_RESP
+item (2
+.PRT_GOODSRitem
+costNum (RcostNum"
+PRT_FISHING_GIFT_INFO_REQ"P
+PRT_FISHING_GIFT_INFO_RESP
+endTime (RendTime
+giftDid (RgiftDid"
+PRT_FISHING_RANK_REQ"m
+PRT_FISHING_RANK_RESP&
+ranks (2.PRT_COMMON_RANKRranks,
+selfRank (2.PRT_COMMON_RANKRselfRank":
+PRT_CS_FISHING_RED_POINT_REQ
+playerId (RplayerId"?
+PRT_CS_FISHING_RED_POINT_RESP
+playerId (RplayerId3
+redPointIds (2.ENUM_REDPOINT_IDRredPointIds 
+fishTankDid (RfishTankDid"t
+$PRT_CS_FISHING_RANK_SCORE_UPDATE_SYN
+playerId (RplayerId
+score (Rscore
+changeMS (RchangeMSB
+com.next1b.nextsvr.protobproto3

@@ -1,0 +1,36 @@
+local a={id=0,openDay=0,duration=0,roundtime=0,fraction=0,characterId=0,npcCharacterId=0,lostCells=0,weight={{},{}},reward={{},{}}}
+a.__index=a
+function a.New(n,r,s,t,l,u,d,h,o,i)
+local e={}
+setmetatable(e,a)
+e.id=n
+e.openDay=r
+e.duration=s
+e.roundtime=t
+e.fraction=l
+e.characterId=u
+e.npcCharacterId=d
+e.lostCells=h
+e.weight=o
+e.reward=i
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.openDay=t[2]
+e.duration=t[3]
+e.roundtime=t[4]
+e.fraction=t[5]
+e.characterId=t[6]
+e.npcCharacterId=t[7]
+e.lostCells=t[8]
+e.weight=t[9]
+e.reward=t[10]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/activity/DTPoolClashEntityTableData')
+end
+return a 

@@ -1,0 +1,6 @@
+shmj_qipao.png
+size:256,256
+filter:Linear,Linear
+paopao 2
+bounds:0,0,158,158
+offsets:40,91,241,251

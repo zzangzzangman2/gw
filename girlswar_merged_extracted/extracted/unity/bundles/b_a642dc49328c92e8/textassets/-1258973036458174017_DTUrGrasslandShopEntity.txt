@@ -1,0 +1,40 @@
+local a={id=0,wheel=0,unLock=0,limitType=0,limit=0,award={},cost={},iconBig="",tabName="",activityType=0,iconquality="",effectquality=0}
+a.__index=a
+function a.New(s,d,h,t,u,c,m,l,r,i,o,n)
+local e={}
+setmetatable(e,a)
+e.id=s
+e.wheel=d
+e.unLock=h
+e.limitType=t
+e.limit=u
+e.award=c
+e.cost=m
+e.iconBig=l
+e.tabName=r
+e.activityType=i
+e.iconquality=o
+e.effectquality=n
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.wheel=t[2]
+e.unLock=t[3]
+e.limitType=t[4]
+e.limit=t[5]
+e.award=t[6]
+e.cost=t[7]
+e.iconBig=t[8]
+e.tabName=t[9]
+e.activityType=t[10]
+e.iconquality=t[11]
+e.effectquality=t[12]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/urgrassland/DTUrGrasslandShopEntityTableData')
+end
+return a 

@@ -1,0 +1,39 @@
+
+?
+ActSuitGachaNew.protoCommons.proto"?
+PRT_SUIT_GACHA_NEW_DATA
+did (Rdid
+	leftCount (R	leftCount
+	freeCount (R	freeCount
+freeTime (RfreeTime
+multi (Rmulti,
+alreadyDrawNumber (RalreadyDrawNumber"
+PRT_SUIT_GACHA_NEW_REQ"e
+PRT_SUIT_GACHA_NEW_RESP.
+datas (2.PRT_SUIT_GACHA_NEW_DATARdatas
+leftTime (RleftTime"|
+PRT_SUIT_GACHA_NEW_DRAW_REQ#
+type (2.ENUM_DRAW_TYPERtype
+did (Rdid&
+isCostCurrency (RisCostCurrency"?
+PRT_SUIT_GACHA_NEW_DRAW_RESP#
+type (2.ENUM_DRAW_TYPERtype
+did (Rdid"
+things (2
+.PRT_THINGRthings
+multis (Rmultis,
+data (2.PRT_SUIT_GACHA_NEW_DATARdata
+
+luckNumber (R
+luckNumber
+
+luckyColor (R
+luckyColor
+luckyId (RluckyId&
+leftShareCount	 (RleftShareCount"2
+PRT_SUIT_GACHA_NEW_COMPOSE_REQ
+did (Rdid"E
+PRT_SUIT_GACHA_NEW_COMPOSE_RESP"
+things (2
+.PRT_THINGRthingsB
+com.next1b.nextsvr.protobproto3

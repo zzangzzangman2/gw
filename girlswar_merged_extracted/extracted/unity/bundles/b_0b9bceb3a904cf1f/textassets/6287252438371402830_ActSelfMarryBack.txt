@@ -1,0 +1,49 @@
+
+?
+
+ActSelfMarryBack.protoCommons.protoFight.protoFormation.proto"m
+PRT_SELFMARRY_BACK_GIFT
+giftDid (RgiftDid
+buyTimes (RbuyTimes
+	resetTime (R	resetTime"
+PRT_SELFMARRY_BACK_INFO_REQ"?
+PRT_SELFMARRY_BACK_INFO_RESP
+
+drawNumber (R
+drawNumber
+multiple (Rmultiple
+	rankScore (R	rankScore$
+tops (2.PRT_COMMON_RANKRtops"j
+PRT_SELFMARRY_BACK_DRAW_REQ#
+type (2.ENUM_DRAW_TYPERtype&
+isCostCurrency (RisCostCurrency"?
+PRT_SELFMARRY_BACK_DRAW_RESP#
+type (2.ENUM_DRAW_TYPERtype
+
+drawNumber (R
+drawNumber
+multiple (Rmultiple'
+awards (2.PRT_ONCE_AWARDRawards"
+PRT_SELFMARRY_BACK_GIFT_REQ"N
+PRT_SELFMARRY_BACK_GIFT_RESP.
+gifts (2.PRT_SELFMARRY_BACK_GIFTRgifts"B
+&PRT_SELFMARRY_BACK_GIFT_FREE_AWARD_REQ
+giftDid (RgiftDid"W
+'PRT_SELFMARRY_BACK_GIFT_FREE_AWARD_RESP,
+gift (2.PRT_SELFMARRY_BACK_GIFTRgift"[
+PRT_SELFMARRY_BACK_FIGHT_REQ;
+formationPos (2.PRT_FORMATION_POSITIONRformationPos"?
+PRT_SELFMARRY_BACK_FIGHT_RESP/
+
+battleInfo (2.PRT_FIGHT_PLAYR
+battleInfo"
+awards (2
+.PRT_THINGRawards
+score (Rscore
+	nextScore (R	nextScore
+	rankScore (R	rankScore"
+PRT_SELFMARRY_BACK_RANK_REQ"|
+PRT_SELFMARRY_BACK_RANK_RESP.
+	rankDatas (2.PRT_COMMON_RANKR	rankDatas,
+selfRank (2.PRT_COMMON_RANKRselfRankB
+com.next1b.nextsvr.protobproto3

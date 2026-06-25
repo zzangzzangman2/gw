@@ -1,0 +1,34 @@
+
+?	
+ActNewJourney.protoCommons.proto"y
+PRT_NEW_JOURNEY_TASK
+taskDid (RtaskDid+
+status (2.ENUM_REWARD_STATUSRstatus
+progress (Rprogress"
+PRT_NEW_JOURNEY_INFO_REQ"?
+PRT_NEW_JOURNEY_INFO_RESP
+leftTime (RleftTime9
+localTopRanks (2.PRT_CS_COMMON_RANKRlocalTopRanks9
+localSelfRank (2.PRT_CS_COMMON_RANKRlocalSelfRank9
+crossTopRanks (2.PRT_CS_COMMON_RANKRcrossTopRanks9
+crossSelfRank (2.PRT_CS_COMMON_RANKRcrossSelfRank"
+PRT_NEW_JOURNEY_TASK_REQ"H
+PRT_NEW_JOURNEY_TASK_RESP+
+tasks (2.PRT_NEW_JOURNEY_TASKRtasks"5
+PRT_NEW_JOURNEY_AWARD_REQ
+taskDid (RtaskDid"G
+PRT_NEW_JOURNEY_AWARD_RESP)
+task (2.PRT_NEW_JOURNEY_TASKRtask" 
+PRT_NEW_JOURNEY_RANK_LOCAL_REQ"?
+PRT_NEW_JOURNEY_RANK_LOCAL_RESP1
+	rankDatas (2.PRT_CS_COMMON_RANKR	rankDatas/
+selfRank (2.PRT_CS_COMMON_RANKRselfRank" 
+PRT_NEW_JOURNEY_RANK_CROSS_REQ"?
+PRT_NEW_JOURNEY_RANK_CROSS_RESP1
+	rankDatas (2.PRT_CS_COMMON_RANKR	rankDatas/
+selfRank (2.PRT_CS_COMMON_RANKRselfRank"m
+PRT_CS_NEW_JOURNEY_UPDATE_SYN
+playerId (RplayerId
+score (Rscore
+changeMS (RchangeMSB
+com.next1b.nextsvr.protobproto3

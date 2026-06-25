@@ -1,0 +1,28 @@
+local e={id=0,lv=0,award={},price={},weight=0,discount=0}
+e.__index=e
+function e.New(a,i,o,h,s,n)
+local t={}
+setmetatable(t,e)
+t.id=a
+t.lv=i
+t.award=o
+t.price=h
+t.weight=s
+t.discount=n
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.lv=a[2]
+t.award=a[3]
+t.price=a[4]
+t.weight=a[5]
+t.discount=a[6]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/deepsea/DTDeepSeaMerchantEntityTableData')
+end
+return e 

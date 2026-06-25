@@ -1,0 +1,90 @@
+
+?
+ActLunarDisk.protoCommons.proto"?
+PRT_LUNAR_DISK_BUFF
+type (Rtype
+level (Rlevel"
+PRT_LUNAR_DISK_MAIN_INFO_REQ"?
+PRT_LUNAR_DISK_MAIN_INFO_RESP
+score (Rscore"
+onceMaxScore (RonceMaxScore
+	drawCount (R	drawCount
+	luckyNum1 (R	luckyNum1
+	luckyNum2 (R	luckyNum2*
+buffs (2.PRT_LUNAR_DISK_BUFFRbuffs"
+recDrawCount (RrecDrawCount""
+ PRT_LUNAR_DISK_LUCK_NUM_DRAW_REQ"_
+!PRT_LUNAR_DISK_LUCK_NUM_DRAW_RESP
+	luckyNum1 (R	luckyNum1
+	luckyNum2 (R	luckyNum2"5
+PRT_LUNAR_DISK_DRAW_REQ
+drawOdds (RdrawOdds"?
+PRT_LUNAR_DISK_DRAW_RESP
+	drawScore (R	drawScore
+drawPos (RdrawPos
+	drawCount (R	drawCount"
+luckyNumOdds (RluckyNumOdds
+score (Rscore"
+onceMaxScore (RonceMaxScore">
+ PRT_LUNAR_DISK_BUFF_LEVEL_UP_REQ
+buffType (RbuffType"M
+!PRT_LUNAR_DISK_BUFF_LEVEL_UP_RESP(
+buff (2.PRT_LUNAR_DISK_BUFFRbuff""
+ PRT_LUNAR_DISK_GET_SCORE_BOX_REQ"G
+!PRT_LUNAR_DISK_GET_SCORE_BOX_RESP"
+recDrawCount (RrecDrawCount"
+PRT_LUNAR_DISK_FUND_INFO_REQ"?
+PRT_LUNAR_DISK_FUND_INFO_RESP
+isCharge (RisCharge 
+recFreeDids (RrecFreeDids$
+recChargeDids (RrecChargeDids
+nowDay (RnowDay"W
+PRT_LUNAR_DISK_FUND_AWARD_REQ
+awardDid (RawardDid
+isCharge (RisCharge"X
+PRT_LUNAR_DISK_FUND_AWARD_RESP
+awardDid (RawardDid
+isCharge (RisCharge"
+PRT_LUNAR_DISK_GIFT_INFO_REQ"Y
+PRT_LUNAR_DISK_GIFT_INFO_RESP 
+gifts (2
+.PRT_GOODSRgifts
+freeCD (RfreeCD">
+"PRT_LUNAR_DISK_GIFT_FREE_AWARD_REQ
+giftDid (RgiftDid"E
+#PRT_LUNAR_DISK_GIFT_FREE_AWARD_RESP
+gift (2
+.PRT_GOODSRgift"
+PRT_LUNAR_DISK_TOTAL_RANK_REQ"n
+PRT_LUNAR_DISK_TOTAL_RANK_RESP&
+ranks (2.PRT_COMMON_RANKRranks$
+self (2.PRT_COMMON_RANKRself"
+PRT_LUNAR_DISK_MAX_RANK_REQ"l
+PRT_LUNAR_DISK_MAX_RANK_RESP&
+ranks (2.PRT_COMMON_RANKRranks$
+self (2.PRT_COMMON_RANKRself"
+PRT_LUNAR_DISK_SHOP_INFO_REQ"
+PRT_LUNAR_DISK_SHOP_INFO_RESP 
+gifts (2
+.PRT_GOODSRgifts
+
+totalScore (R
+totalScore
+	costScore (R	costScore"M
+PRT_LUNAR_DISK_SHOP_BUY_REQ
+giftDid (RgiftDid
+count (Rcount"|
+PRT_LUNAR_DISK_SHOP_BUY_RESP
+gift (2
+.PRT_GOODSRgift
+
+totalScore (R
+totalScore
+	costScore (R	costScore"?
+!PRT_CS_LUNAR_DISK_UPDATE_RANK_SYN
+playerId (RplayerId
+score (Rscore
+changeMS (RchangeMS"
+onceMaxScore (RonceMaxScore(
+onceMaxChangeMS (RonceMaxChangeMSB
+com.next1b.nextsvr.protobproto3

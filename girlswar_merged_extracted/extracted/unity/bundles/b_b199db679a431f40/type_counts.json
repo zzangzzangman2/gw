@@ -1,0 +1,21 @@
+{
+  "MonoBehaviour": 1153,
+  "GameObject": 1012,
+  "RectTransform": 1009,
+  "CanvasRenderer": 810,
+  "MonoScript": 35,
+  "ParticleSystemRenderer": 33,
+  "ParticleSystem": 33,
+  "CanvasGroup": 18,
+  "Animator": 15,
+  "Canvas": 14,
+  "Texture2D": 8,
+  "TextAsset": 6,
+  "Material": 5,
+  "AnimationClip": 5,
+  "Sprite": 4,
+  "AnimatorController": 3,
+  "Transform": 3,
+  "AssetBundle": 1,
+  "Shader": 1
+}

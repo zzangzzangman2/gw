@@ -1,0 +1,18 @@
+local e=
+{
+ByIdx={
+{"ParamSkirt","ParamSkirt",0,{{3,0}},"HitArea_Pants",0,0,10,10,0,2,"ParamCloth:2","","1:rodSkirt1","rodSkirt1","rodSkirt1:0",1,10,0},
+{"ParamCloth","ParamCloth",0,{{4,0}},"HitArea_Cloth",0,0,5,10,0,1,"","","1:rodCloth1","rodCloth1","rodCloth1:1",1,10,0},
+{"ParamBreast","ParamBreast",1,{{4,0},{2,0}},"HitArea_BreastL,HitArea_BreastR",0,0,5,10,3,0,"ParamBreast:1","","1:rodBreast2","rodBreast2,tapBreast2_banana","tapBreast2_banana:1",1,10,0},
+{"ParamPants1","ParamPants1",1,{},"",0,0,0,20,0,1,"","","","","",1,10,0},
+{"ParamPants2","ParamPants2",1,{{3,0}},"HitArea_Pants",0,0,5,10,0,1,"ParamPants1:1","","1:rodPants2","rodPants2","rodPants2:2",1,10,0},
+{"ParamBreast2","ParamBreast2",2,{},"",0,0,0,10,0,2,"","","","tapHandR3","tapHandR3:2",1,10,0},
+{"ParamBanana","ParamBanana",1,{{3,0}},"HitArea_HandR",0,0,5,11,0,1,"","","1:rodBanana2","rodBanana2","rodBanana2:2",1.2,10,0},
+{"ParamLegL0","ParamLegL2",0,{{3,0},{4,-1}},"HitArea_LegR1,HitArea_LegR2,HitArea_LegR3",-6,0,6,6,2,2,"","","","","",1,15,0},
+{"ParamLegL1","ParamLegL2",1,{{3,0},{4,-1}},"HitArea_LegR1,HitArea_LegR2,HitArea_LegR3",-6,0,6,6,0,1,"","","1:rodLeg2","rodLeg2","tapBell2_sp2_3:2",1,15,0},
+{"ParamCord","ParamCord",1,{{3,0}},"HitArea_Cord1,HitArea_Cord2",0,0,18,18,0,1,"","idle1_sp1","1:rodcord2_sp","rodcord2_sp,idle1_sp2,tapBell2_sp2_1,tapBell2_sp2_2,tapBell2_sp2_3,tapHead2_sp,tapBreast2_sp,tapLeg2_sp","tapBell2_sp2_3:2",1.5,20,0},
+{"tmp_banana_Belly","",1,{{3,0}},"HitArea_Belly",0,0,2,5,0,1,"","idle1_banana2","1:rodBelly2_1_banana","","rodBelly2_1_banana:2",1,10,0}
+},
+Len=11
+}
+return e 

@@ -1,0 +1,12 @@
+local e=
+{
+ByIdx={
+{983001,"CitySkin_name_983001","CitySkin_desc_983001","CitySkin_unlockdesc_983001",3,{},70983001,71983001,1},
+{984001,"CitySkin_name_984001","CitySkin_desc_984001","CitySkin_unlockdesc_984001",4,{{1701,100}},70984001,71984001,1},
+{984002,"CitySkin_name_984002","CitySkin_desc_984002","CitySkin_unlockdesc_984002",4,{{1703,100}},70984002,71984002,2},
+{984003,"CitySkin_name_984003","CitySkin_desc_984003","CitySkin_unlockdesc_984003",4,{{1702,100}},70984003,71984003,3},
+{985001,"CitySkin_name_985001","CitySkin_desc_985001","CitySkin_unlockdesc_985001",5,{{1702,300}},70985001,71985001,1}
+},
+Len=5
+}
+return e 

@@ -1,0 +1,11 @@
+local t={}
+function t:OnHandle(e)
+local e=assert(GlobalPB.decode("PRT_LUNAR_DISK_GET_SCORE_BOX_RESP",e));
+if(GameInit.GetDebugLogProto())then
+;
+;
+end
+ModulesInit.ActLunarDiskMgr:OnRespActlunarDiskGetScoreBox(e)
+return e
+end
+return t 

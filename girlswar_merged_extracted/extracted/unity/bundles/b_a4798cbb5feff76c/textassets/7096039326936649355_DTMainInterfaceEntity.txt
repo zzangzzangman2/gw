@@ -1,0 +1,26 @@
+local e={id=0,pointlink={{},{}},pointType="",list=0,newList=0}
+e.__index=e
+function e.New(o,n,a,s,i)
+local t={}
+setmetatable(t,e)
+t.id=o
+t.pointlink=n
+t.pointType=a
+t.list=s
+t.newList=i
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.pointlink=a[2]
+t.pointType=a[3]
+t.list=a[4]
+t.newList=a[5]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/worldMap/DTMainInterfaceEntityTableData')
+end
+return e 

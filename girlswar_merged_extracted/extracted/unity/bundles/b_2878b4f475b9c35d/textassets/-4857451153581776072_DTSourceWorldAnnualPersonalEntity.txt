@@ -1,0 +1,24 @@
+local e={id=0,race=0,ranking=0,rewards={{},{}}}
+e.__index=e
+function e.New(o,a,n,i)
+local t={}
+setmetatable(t,e)
+t.id=o
+t.race=a
+t.ranking=n
+t.rewards=i
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.race=a[2]
+t.ranking=a[3]
+t.rewards=a[4]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/sourceWorld/DTSourceWorldAnnualPersonalEntityTableData')
+end
+return e 

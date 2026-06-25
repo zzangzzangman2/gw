@@ -1,0 +1,134 @@
+
+?
+ActCandyLand.protoCommons.proto"l
+ PRT_CANDY_LAND_DICE_SPECIAL_ITEM
+gridDid (RgridDid
+itemDid (RitemDid
+count (Rcount"
+PRT_CANDY_LAND_INFO_REQ"H
+PRT_CANDY_LAND_INFO_RESP
+leftTime (RleftTime
+day (Rday"
+PRT_CANDY_LAND_TOUCH_INFO_REQ"?
+PRT_CANDY_LAND_TOUCH_INFO_RESP
+mapDid (RmapDid
+	isMapPass (R	isMapPass(
+mapUnlockSecond (RmapUnlockSecond"$
+"PRT_CANDY_LAND_TOUCH_MAP_AWARD_REQ"?
+#PRT_CANDY_LAND_TOUCH_MAP_AWARD_RESP
+mapDid (RmapDid
+	isMapPass (R	isMapPass"
+awards (2
+.PRT_THINGRawards(
+mapUnlockSecond (RmapUnlockSecond"
+PRT_CANDY_LAND_TASK_INFO_REQ"b
+PRT_CANDY_LAND_TASK_INFO_RESP
+tasks (2	.PRT_TASKRtasks 
+recGiftDids (RrecGiftDids"9
+PRT_CANDY_LAND_TASK_AWARD_REQ
+taskDid (RtaskDid":
+PRT_CANDY_LAND_TASK_AWARD_RESP
+taskDid (RtaskDid">
+"PRT_CANDY_LAND_TASK_GIFT_AWARD_REQ
+giftDid (RgiftDid"?
+#PRT_CANDY_LAND_TASK_GIFT_AWARD_RESP
+giftDid (RgiftDid"
+PRT_CANDY_LAND_DICE_INFO_REQ"?
+PRT_CANDY_LAND_DICE_INFO_RESP
+circle (Rcircle
+pos (Rpos.
+recCircleAwardDids (RrecCircleAwardDidsE
+specialItems (2!.PRT_CANDY_LAND_DICE_SPECIAL_ITEMRspecialItems"C
+PRT_CANDY_LAND_DICE_DRAW_REQ#
+type (2.ENUM_DRAW_TYPERtype"?
+PRT_CANDY_LAND_DICE_DRAW_RESP
+circle (Rcircle
+pos (Rpos"
+things (2
+.PRT_THINGRthingsE
+specialItems (2!.PRT_CANDY_LAND_DICE_SPECIAL_ITEMRspecialItems"
+walkCellNums (RwalkCellNums"B
+$PRT_CANDY_LAND_DICE_CIRCLE_AWARD_REQ
+awardDid (RawardDid"C
+%PRT_CANDY_LAND_DICE_CIRCLE_AWARD_RESP
+awardDid (RawardDid"
+PRT_CANDY_LAND_DICE_SHOP_REQ"A
+PRT_CANDY_LAND_DICE_SHOP_RESP 
+items (2
+.PRT_GOODSRitems"T
+ PRT_CANDY_LAND_DICE_SHOP_BUY_REQ
+goodsDid (RgoodsDid
+count (Rcount"C
+!PRT_CANDY_LAND_DICE_SHOP_BUY_RESP
+item (2
+.PRT_GOODSRitem"
+PRT_CANDY_LAND_SHOP_INFO_REQ"Y
+PRT_CANDY_LAND_SHOP_INFO_RESP 
+items (2
+.PRT_GOODSRitems
+freeCD (RfreeCD"O
+PRT_CANDY_LAND_SHOP_BUY_REQ
+goodsDid (RgoodsDid
+count (Rcount">
+PRT_CANDY_LAND_SHOP_BUY_RESP
+item (2
+.PRT_GOODSRitem"@
+"PRT_CANDY_LAND_SHOP_FREE_AWARD_REQ
+goodsDid (RgoodsDid"E
+#PRT_CANDY_LAND_SHOP_FREE_AWARD_RESP
+item (2
+.PRT_GOODSRitem"
+PRT_CANDY_LAND_FUND_INFO_REQ"?
+PRT_CANDY_LAND_FUND_INFO_RESP
+isCharge (RisCharge 
+recFreeDids (RrecFreeDids$
+recChargeDids (RrecChargeDids"W
+PRT_CANDY_LAND_FUND_AWARD_REQ
+awardDid (RawardDid
+isCharge (RisCharge"X
+PRT_CANDY_LAND_FUND_AWARD_RESP
+awardDid (RawardDid
+isCharge (RisCharge"
+PRT_CANDY_LAND_GIFT_INFO_REQ"Y
+PRT_CANDY_LAND_GIFT_INFO_RESP 
+gifts (2
+.PRT_GOODSRgifts
+freeCD (RfreeCD">
+"PRT_CANDY_LAND_GIFT_FREE_AWARD_REQ
+giftDid (RgiftDid"E
+#PRT_CANDY_LAND_GIFT_FREE_AWARD_RESP
+gift (2
+.PRT_GOODSRgift"
+PRT_CANDY_LAND_SHOOT_INFO_REQ"?
+PRT_CANDY_LAND_SHOOT_INFO_RESP
+mapDid (RmapDid
+	isMapPass (R	isMapPass(
+mapUnlockSecond (RmapUnlockSecond"$
+"PRT_CANDY_LAND_SHOOT_MAP_AWARD_REQ"?
+#PRT_CANDY_LAND_SHOOT_MAP_AWARD_RESP
+mapDid (RmapDid
+	isMapPass (R	isMapPass"
+awards (2
+.PRT_THINGRawards(
+mapUnlockSecond (RmapUnlockSecond"%
+#PRT_CANDY_LAND_NORMAL_SHOP_INFO_REQ"H
+$PRT_CANDY_LAND_NORMAL_SHOP_INFO_RESP 
+items (2
+.PRT_GOODSRitems"V
+"PRT_CANDY_LAND_NORMAL_SHOP_BUY_REQ
+goodsDid (RgoodsDid
+count (Rcount"E
+#PRT_CANDY_LAND_NORMAL_SHOP_BUY_RESP
+item (2
+.PRT_GOODSRitem"
+PRT_CANDY_LAND_RANK_REQ"p
+PRT_CANDY_LAND_RANK_RESP&
+ranks (2.PRT_COMMON_RANKRranks,
+selfRank (2.PRT_COMMON_RANKRselfRank"?
+'PRT_CS_CANDY_LAND_RANK_SCORE_UPDATE_SYN
+playerId (RplayerId
+
+totalScore (R
+totalScore
+changeMS (RchangeMSB
+com.next1b.nextsvr.protobproto3

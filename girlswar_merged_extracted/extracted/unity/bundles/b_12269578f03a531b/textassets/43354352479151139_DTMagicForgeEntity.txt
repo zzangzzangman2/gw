@@ -1,0 +1,28 @@
+local e={id=0,minLv=0,maxLv=0,nextLv=0,smeltCost=0,fameCost=0}
+e.__index=e
+function e.New(a,i,o,h,s,n)
+local t={}
+setmetatable(t,e)
+t.id=a
+t.minLv=i
+t.maxLv=o
+t.nextLv=h
+t.smeltCost=s
+t.fameCost=n
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.minLv=a[2]
+t.maxLv=a[3]
+t.nextLv=a[4]
+t.smeltCost=a[5]
+t.fameCost=a[6]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/equip/DTMagicForgeEntityTableData')
+end
+return e 

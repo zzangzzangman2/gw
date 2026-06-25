@@ -1,0 +1,28 @@
+local e={id=0,limitType=0,limitPara=0,product={},price={},sortNum=0}
+e.__index=e
+function e.New(a,i,o,h,s,n)
+local t={}
+setmetatable(t,e)
+t.id=a
+t.limitType=i
+t.limitPara=o
+t.product=h
+t.price=s
+t.sortNum=n
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.limitType=a[2]
+t.limitPara=a[3]
+t.product=a[4]
+t.price=a[5]
+t.sortNum=a[6]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/activity/DTGourmetFoodPearlsEntityTableData')
+end
+return e 

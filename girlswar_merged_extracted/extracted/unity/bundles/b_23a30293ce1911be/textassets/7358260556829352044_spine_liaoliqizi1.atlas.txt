@@ -1,0 +1,14 @@
+spine_liaoliqizi1.png
+size:1024,1024
+filter:Linear,Linear
+hgd_qzdi1
+bounds:2,26,402,500
+hgd_qzdi2
+bounds:752,12,514,55
+rotate:90
+hgd_qzdi3
+bounds:838,118,27,408
+hgd_qzdi4
+bounds:809,118,27,408
+hgd_qzdi6
+bounds:406,2,344,524

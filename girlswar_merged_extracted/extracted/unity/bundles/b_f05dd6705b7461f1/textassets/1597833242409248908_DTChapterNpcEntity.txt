@@ -1,0 +1,32 @@
+local a={id=0,name="",mapType=0,npcRescue=0,icon="",image=0,desc="",luckNpcDesc=""}
+a.__index=a
+function a.New(i,h,n,t,d,r,s,o)
+local e={}
+setmetatable(e,a)
+e.id=i
+e.name=h
+e.mapType=n
+e.npcRescue=t
+e.icon=d
+e.image=r
+e.desc=s
+e.luckNpcDesc=o
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.name=t[2]
+e.mapType=t[3]
+e.npcRescue=t[4]
+e.icon=t[5]
+e.image=t[6]
+e.desc=t[7]
+e.luckNpcDesc=t[8]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/maps/DTChapterNpcEntityTableData')
+end
+return a 

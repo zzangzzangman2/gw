@@ -1,0 +1,44 @@
+local a={id=0,drawCost={},shopCost={},speShopCost={},goods=0,fundAward={},actItem={},speEventDisplay="",randomEventDisplay="",taskGirl=0,shopGirl=0,chapterAward={},iconographyProve=0,atlasId=0}
+a.__index=a
+function a.New(s,l,r,t,u,m,f,w,c,d,i,o,n,h)
+local e={}
+setmetatable(e,a)
+e.id=s
+e.drawCost=l
+e.shopCost=r
+e.speShopCost=t
+e.goods=u
+e.fundAward=m
+e.actItem=f
+e.speEventDisplay=w
+e.randomEventDisplay=c
+e.taskGirl=d
+e.shopGirl=i
+e.chapterAward=o
+e.iconographyProve=n
+e.atlasId=h
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.drawCost=t[2]
+e.shopCost=t[3]
+e.speShopCost=t[4]
+e.goods=t[5]
+e.fundAward=t[6]
+e.actItem=t[7]
+e.speEventDisplay=t[8]
+e.randomEventDisplay=t[9]
+e.taskGirl=t[10]
+e.shopGirl=t[11]
+e.chapterAward=t[12]
+e.iconographyProve=t[13]
+e.atlasId=t[14]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/activity/DTChrismasParkEntityTableData')
+end
+return a 

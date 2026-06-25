@@ -1,0 +1,7 @@
+activityname_114.png
+size:128,64
+filter:Linear,Linear
+2
+bounds:0,0,70,57
+3
+bounds:72,30,24,27

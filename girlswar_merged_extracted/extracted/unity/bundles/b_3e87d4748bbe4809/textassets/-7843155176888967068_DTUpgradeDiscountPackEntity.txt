@@ -1,0 +1,56 @@
+local a={id=0,lattice=0,goods=0,goodsBlackFriday=0,cost={},award={{},{}},awardNew={{},{}},firstDayAward={{},{}},awardBlackFriday={{},{}},awardShow={{},{}},timesLimit=0,timesLimitBlackFriday=0,listid=0,name="",activityPoint=0,activityPointBlackFriday=0,isColour=0,isSuperValue=0,sellType=0,needActId=0}
+a.__index=a
+function a.New(l,m,u,t,w,f,p,b,v,g,k,y,c,s,n,i,o,h,d,r)
+local e={}
+setmetatable(e,a)
+e.id=l
+e.lattice=m
+e.goods=u
+e.goodsBlackFriday=t
+e.cost=w
+e.award=f
+e.awardNew=p
+e.firstDayAward=b
+e.awardBlackFriday=v
+e.awardShow=g
+e.timesLimit=k
+e.timesLimitBlackFriday=y
+e.listid=c
+e.name=s
+e.activityPoint=n
+e.activityPointBlackFriday=i
+e.isColour=o
+e.isSuperValue=h
+e.sellType=d
+e.needActId=r
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.lattice=t[2]
+e.goods=t[3]
+e.goodsBlackFriday=t[4]
+e.cost=t[5]
+e.award=t[6]
+e.awardNew=t[7]
+e.firstDayAward=t[8]
+e.awardBlackFriday=t[9]
+e.awardShow=t[10]
+e.timesLimit=t[11]
+e.timesLimitBlackFriday=t[12]
+e.listid=t[13]
+e.name=t[14]
+e.activityPoint=t[15]
+e.activityPointBlackFriday=t[16]
+e.isColour=t[17]
+e.isSuperValue=t[18]
+e.sellType=t[19]
+e.needActId=t[20]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/activity/DTUpgradeDiscountPackEntityTableData')
+end
+return a 

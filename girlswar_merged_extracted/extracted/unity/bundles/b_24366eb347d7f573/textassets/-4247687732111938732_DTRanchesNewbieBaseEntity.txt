@@ -1,0 +1,56 @@
+local a={id=0,tea=0,medicine1=0,medicine2=0,medicine3=0,totalScoreRankCount=0,physical=0,deplete="",boxGroup=0,treasureDag=0,dagGroup=0,dagEnsure=0,dagGenericEnsure=0,helpImageId=0,handCount=0,handTime=0,itemQuantity={{},{}},startTime=0,activityTime=0,rewardTime=0}
+a.__index=a
+function a.New(l,m,u,t,w,f,p,b,v,g,k,y,c,s,n,i,o,h,d,r)
+local e={}
+setmetatable(e,a)
+e.id=l
+e.tea=m
+e.medicine1=u
+e.medicine2=t
+e.medicine3=w
+e.totalScoreRankCount=f
+e.physical=p
+e.deplete=b
+e.boxGroup=v
+e.treasureDag=g
+e.dagGroup=k
+e.dagEnsure=y
+e.dagGenericEnsure=c
+e.helpImageId=s
+e.handCount=n
+e.handTime=i
+e.itemQuantity=o
+e.startTime=h
+e.activityTime=d
+e.rewardTime=r
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.tea=t[2]
+e.medicine1=t[3]
+e.medicine2=t[4]
+e.medicine3=t[5]
+e.totalScoreRankCount=t[6]
+e.physical=t[7]
+e.deplete=t[8]
+e.boxGroup=t[9]
+e.treasureDag=t[10]
+e.dagGroup=t[11]
+e.dagEnsure=t[12]
+e.dagGenericEnsure=t[13]
+e.helpImageId=t[14]
+e.handCount=t[15]
+e.handTime=t[16]
+e.itemQuantity=t[17]
+e.startTime=t[18]
+e.activityTime=t[19]
+e.rewardTime=t[20]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/herbs/DTRanchesNewbieBaseEntityTableData')
+end
+return a 

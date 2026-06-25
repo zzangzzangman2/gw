@@ -1,0 +1,11 @@
+local t={}
+function t:OnHandle(e)
+local e=assert(GlobalPB.decode("PRT_SUMMON_PET_LOGIN_SYN",e));
+if(GameInit.GetDebugLogProto())then
+;
+;
+end
+SummonPetMgr:SynSummonPetLoginInfo(e)
+return e
+end
+return t 

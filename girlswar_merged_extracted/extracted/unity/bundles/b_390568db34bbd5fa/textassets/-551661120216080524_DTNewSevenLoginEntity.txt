@@ -1,0 +1,24 @@
+local e={id=0,award={},addAward={{},{}},cureentDayOpen=0}
+e.__index=e
+function e.New(o,a,n,i)
+local t={}
+setmetatable(t,e)
+t.id=o
+t.award=a
+t.addAward=n
+t.cureentDayOpen=i
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.award=a[2]
+t.addAward=a[3]
+t.cureentDayOpen=a[4]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/calendar/DTNewSevenLoginEntityTableData')
+end
+return e 

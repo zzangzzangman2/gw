@@ -1,0 +1,14 @@
+Spine_jingyantiao.png
+size:1024,256
+filter:Linear,Linear
+TX/13
+bounds:210,140,369,68
+offsets:199,76,689,239
+asfawsfa
+bounds:210,120,348,18
+xingxing
+bounds:210,84,114,34
+offsets:78,25,276,96
+yuanguang
+bounds:2,2,206,206
+offsets:19,18,243,242

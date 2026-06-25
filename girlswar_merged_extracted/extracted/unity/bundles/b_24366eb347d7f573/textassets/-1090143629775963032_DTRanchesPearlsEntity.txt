@@ -1,0 +1,30 @@
+local t={id=0,limitType=0,limitPara=0,name="",product={{},{}},price={},sortNum=0}
+t.__index=t
+function t.New(o,h,a,s,r,n,i)
+local e={}
+setmetatable(e,t)
+e.id=o
+e.limitType=h
+e.limitPara=a
+e.name=s
+e.product=r
+e.price=n
+e.sortNum=i
+return e
+end
+function t.NewFromArrItem(a)
+local e={}
+setmetatable(e,t)
+e.id=a[1]
+e.limitType=a[2]
+e.limitPara=a[3]
+e.name=a[4]
+e.product=a[5]
+e.price=a[6]
+e.sortNum=a[7]
+return e
+end
+function t.GetArr()
+return require('DataNode/DataTable/Create/herbs/DTRanchesPearlsEntityTableData')
+end
+return t 

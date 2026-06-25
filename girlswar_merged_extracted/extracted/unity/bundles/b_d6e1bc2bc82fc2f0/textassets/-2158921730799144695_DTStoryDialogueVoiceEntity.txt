@@ -1,0 +1,26 @@
+local e={id="",default="",versionA="",versionE="",versionK=""}
+e.__index=e
+function e.New(o,n,a,s,i)
+local t={}
+setmetatable(t,e)
+t.id=o
+t.default=n
+t.versionA=a
+t.versionE=s
+t.versionK=i
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.default=a[2]
+t.versionA=a[3]
+t.versionE=a[4]
+t.versionK=a[5]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/story/DTStoryDialogueVoiceEntityTableData')
+end
+return e 

@@ -1,0 +1,50 @@
+
+?
+
+Tower.protoCommons.proto
+Hero.protoSnapshot.protoFormation.protoFight.proto"y
+PRT_TOWER_MAP
+mapDid (RmapDid
+starMax (RstarMax
+isPass (RisPass
+
+isNpcAward (R
+isNpcAward"?
+PRT_TOWER_RECORD(
+player (2.PRT_PLAYER_DESCRplayer$
+heros (2.PRT_HERO_DESCRheros
+fight (Rfight
+level (Rlevel
+recordId (RrecordId"
+PRT_TOWER_INFO_REQ"?
+PRT_TOWER_INFO_RESP"
+passMapCount (RpassMapCount&
+lastPassMapDid (RlastPassMapDid"
+maps (2.PRT_TOWER_MAPRmaps.
+idleAwardBeginTime (RidleAwardBeginTime"
+PRT_TOWER_AWARD_REQ"F
+PRT_TOWER_AWARD_RESP.
+idleAwardBeginTime (RidleAwardBeginTime"3
+PRT_TOWER_PASS_RECORD_REQ
+mapDid (RmapDid"I
+PRT_TOWER_PASS_RECORD_RESP+
+records (2.PRT_TOWER_RECORDRrecords"1
+PRT_TOWER_NPC_AWARD_REQ
+mapDid (RmapDid"U
+PRT_TOWER_NPC_AWARD_RESP
+mapDid (RmapDid!
+award (2.PRT_REWARDRaward"O
+PRT_TOWER_PUZZLE_MAP_PASS_REQ
+mapDid (RmapDid
+isPass (RisPass"P
+PRT_TOWER_PUZZLE_MAP_PASS_RESP
+mapDid (RmapDid
+isPass (RisPass"}
+PRT_TOWER_FIGHT_BEFORE_REQ
+mapDid (RmapDidG
+formationPositions (2.PRT_FORMATION_POSITIONRformationPositions"N
+PRT_TOWER_FIGHT_BEFORE_RESP/
+
+beforeInfo (2.PRT_FIGHT_PLAYR
+beforeInfoB
+com.next1b.nextsvr.protobproto3

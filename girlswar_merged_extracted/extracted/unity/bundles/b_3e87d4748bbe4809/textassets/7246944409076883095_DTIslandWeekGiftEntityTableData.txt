@@ -1,0 +1,8 @@
+local e=
+{
+ByIdx={
+{1,304,{{99840,10000}},{{99840,3000}},"ActMonthPurchase/ylb_beilv1700",7,"00:00:00",3}
+},
+Len=1
+}
+return e 

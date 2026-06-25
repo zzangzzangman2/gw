@@ -1,0 +1,66 @@
+local a={id=0,urMultipiRate=0,urMultipiResults={{},{}},urOneCost={},urTenCost={},urItemCost={},urCommPool=0,urFloorTime=0,urFloorPool=0,ssrFreeCd=0,ssrMultipiRate=0,ssrMultipiResults={{},{}},ssrOneCost={},ssrFiveCost={},ssrItemCost=0,ssrCommPool=0,ssrFloorTime=0,ssrFloorPool=0,urTrial=0,urDrawOpenType=0,urDrawOpenParam=0,urTrialCloseType=0,urTrialCloseParam=0,audioEventId=0,popDays=0}
+a.__index=a
+function a.New(u,w,m,t,b,v,y,p,k,j,q,z,x,_,g,f,h,s,n,o,i,r,l,d,c)
+local e={}
+setmetatable(e,a)
+e.id=u
+e.urMultipiRate=w
+e.urMultipiResults=m
+e.urOneCost=t
+e.urTenCost=b
+e.urItemCost=v
+e.urCommPool=y
+e.urFloorTime=p
+e.urFloorPool=k
+e.ssrFreeCd=j
+e.ssrMultipiRate=q
+e.ssrMultipiResults=z
+e.ssrOneCost=x
+e.ssrFiveCost=_
+e.ssrItemCost=g
+e.ssrCommPool=f
+e.ssrFloorTime=h
+e.ssrFloorPool=s
+e.urTrial=n
+e.urDrawOpenType=o
+e.urDrawOpenParam=i
+e.urTrialCloseType=r
+e.urTrialCloseParam=l
+e.audioEventId=d
+e.popDays=c
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.urMultipiRate=t[2]
+e.urMultipiResults=t[3]
+e.urOneCost=t[4]
+e.urTenCost=t[5]
+e.urItemCost=t[6]
+e.urCommPool=t[7]
+e.urFloorTime=t[8]
+e.urFloorPool=t[9]
+e.ssrFreeCd=t[10]
+e.ssrMultipiRate=t[11]
+e.ssrMultipiResults=t[12]
+e.ssrOneCost=t[13]
+e.ssrFiveCost=t[14]
+e.ssrItemCost=t[15]
+e.ssrCommPool=t[16]
+e.ssrFloorTime=t[17]
+e.ssrFloorPool=t[18]
+e.urTrial=t[19]
+e.urDrawOpenType=t[20]
+e.urDrawOpenParam=t[21]
+e.urTrialCloseType=t[22]
+e.urTrialCloseParam=t[23]
+e.audioEventId=t[24]
+e.popDays=t[25]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/activity/DTNewPlayerUREntityTableData')
+end
+return a 

@@ -1,0 +1,8 @@
+activityname_311.png
+size:256,128
+filter:Linear,Linear
+a1
+bounds:85,2,65,74
+offsets:0,2,66,76
+a2
+bounds:2,2,81,74

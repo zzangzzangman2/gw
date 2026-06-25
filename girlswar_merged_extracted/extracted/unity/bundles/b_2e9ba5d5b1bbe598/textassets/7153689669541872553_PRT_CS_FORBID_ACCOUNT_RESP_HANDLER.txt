@@ -1,0 +1,11 @@
+local e={}
+function e:OnHandle(e)
+local e=assert(GlobalPB.decode("PRT_CS_FORBID_ACCOUNT_RESP",e));
+if(GameInit.GetDebugLogProto())then
+;
+;
+end
+local t=1
+return e
+end
+return e 

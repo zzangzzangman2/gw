@@ -1,0 +1,11 @@
+local t={}
+function t:OnHandle(e)
+local e=assert(GlobalPB.decode("PRT_AIRSHIP_CORE_LEVEL_RESP",e));
+if(GameInit.GetDebugLogProto())then
+;
+;
+end
+AirShipMgr:OnResCoreLevel(e)
+return e
+end
+return t 

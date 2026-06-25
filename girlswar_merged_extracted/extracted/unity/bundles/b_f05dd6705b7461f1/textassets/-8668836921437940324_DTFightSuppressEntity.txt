@@ -1,0 +1,30 @@
+local t={id=0,battleType=0,playerBeginLevel=0,playerEndLevel=0,beginValue=0,endValue=0,attr={}}
+t.__index=t
+function t.New(o,h,a,s,r,n,i)
+local e={}
+setmetatable(e,t)
+e.id=o
+e.battleType=h
+e.playerBeginLevel=a
+e.playerEndLevel=s
+e.beginValue=r
+e.endValue=n
+e.attr=i
+return e
+end
+function t.NewFromArrItem(a)
+local e={}
+setmetatable(e,t)
+e.id=a[1]
+e.battleType=a[2]
+e.playerBeginLevel=a[3]
+e.playerEndLevel=a[4]
+e.beginValue=a[5]
+e.endValue=a[6]
+e.attr=a[7]
+return e
+end
+function t.GetArr()
+return require('DataNode/DataTable/Create/maps/DTFightSuppressEntityTableData')
+end
+return t 

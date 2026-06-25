@@ -1,0 +1,54 @@
+local a={id=0,characterId=0,chinese="",japanese="",chineseTraditional="",korean="",english="",branchId1=0,branchId2=0,branchName1chinese="",branchName1japanese="",branchName1korean="",branchName1chineseTrandition="",branchName1english="",branchName2chinese="",branchName2japanese="",branchName2korean="",branchName2chineseTrandition="",branchName2english=""}
+a.__index=a
+function a.New(d,c,l,t,f,m,y,v,p,b,g,w,u,n,i,o,s,r,h)
+local e={}
+setmetatable(e,a)
+e.id=d
+e.characterId=c
+e.chinese=l
+e.japanese=t
+e.chineseTraditional=f
+e.korean=m
+e.english=y
+e.branchId1=v
+e.branchId2=p
+e.branchName1chinese=b
+e.branchName1japanese=g
+e.branchName1korean=w
+e.branchName1chineseTrandition=u
+e.branchName1english=n
+e.branchName2chinese=i
+e.branchName2japanese=o
+e.branchName2korean=s
+e.branchName2chineseTrandition=r
+e.branchName2english=h
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.characterId=t[2]
+e.chinese=t[3]
+e.japanese=t[4]
+e.chineseTraditional=t[5]
+e.korean=t[6]
+e.english=t[7]
+e.branchId1=t[8]
+e.branchId2=t[9]
+e.branchName1chinese=t[10]
+e.branchName1japanese=t[11]
+e.branchName1korean=t[12]
+e.branchName1chineseTrandition=t[13]
+e.branchName1english=t[14]
+e.branchName2chinese=t[15]
+e.branchName2japanese=t[16]
+e.branchName2korean=t[17]
+e.branchName2chineseTrandition=t[18]
+e.branchName2english=t[19]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/story/DTSSDialouge_31115EntityTableData')
+end
+return a 

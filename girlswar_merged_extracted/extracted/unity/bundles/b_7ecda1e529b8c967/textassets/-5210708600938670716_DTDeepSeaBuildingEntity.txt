@@ -1,0 +1,42 @@
+local a={id=0,type=0,hasBuild=0,buildingName="",buildingDesc="",unlockLevel=0,landIcon="",landPrefabId=0,landEffectId=0,buildingIcon="",buildPrefabId=0,buildScale=0,buildOffset={}}
+a.__index=a
+function a.New(s,d,h,t,l,c,m,f,u,r,i,o,n)
+local e={}
+setmetatable(e,a)
+e.id=s
+e.type=d
+e.hasBuild=h
+e.buildingName=t
+e.buildingDesc=l
+e.unlockLevel=c
+e.landIcon=m
+e.landPrefabId=f
+e.landEffectId=u
+e.buildingIcon=r
+e.buildPrefabId=i
+e.buildScale=o
+e.buildOffset=n
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.type=t[2]
+e.hasBuild=t[3]
+e.buildingName=t[4]
+e.buildingDesc=t[5]
+e.unlockLevel=t[6]
+e.landIcon=t[7]
+e.landPrefabId=t[8]
+e.landEffectId=t[9]
+e.buildingIcon=t[10]
+e.buildPrefabId=t[11]
+e.buildScale=t[12]
+e.buildOffset=t[13]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/deepsea/DTDeepSeaBuildingEntityTableData')
+end
+return a 

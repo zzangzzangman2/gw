@@ -1,0 +1,18 @@
+
+?
+BulunConfession.protoCommons.proto"
+PRT_BULUNCONFESSION_INFO_REQ"?
+PRT_BULUNCONFESSION_INFO_RESP
+power (Rpower
+loverNum (RloverNum
+tasks (2	.PRT_TASKRtasks
+loveId (RloveId
+charge (Rcharge"4
+ PRT_BULUNCONFESSION_TASK_REC_REQ
+did (Rdid"5
+!PRT_BULUNCONFESSION_TASK_REC_RESP
+did (Rdid""
+ PRT_BULUNCONFESSION_LOVE_REC_REQ"5
+!PRT_BULUNCONFESSION_LOVE_REC_RESP
+did (RdidB
+com.next1b.nextsvr.protobproto3

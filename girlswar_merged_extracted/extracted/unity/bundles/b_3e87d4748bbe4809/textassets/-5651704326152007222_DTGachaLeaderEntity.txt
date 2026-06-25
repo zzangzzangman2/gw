@@ -1,0 +1,36 @@
+local a={id=0,bigOneCost=0,smallOneCost=0,showRankCount=0,bigOnePoint=0,smallOnePoint=0,heroId=0,heroVoiceId1=0,heroVoiceId2=0,dtsysPrefabAvg=0}
+a.__index=a
+function a.New(n,r,s,t,l,u,d,h,o,i)
+local e={}
+setmetatable(e,a)
+e.id=n
+e.bigOneCost=r
+e.smallOneCost=s
+e.showRankCount=t
+e.bigOnePoint=l
+e.smallOnePoint=u
+e.heroId=d
+e.heroVoiceId1=h
+e.heroVoiceId2=o
+e.dtsysPrefabAvg=i
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.bigOneCost=t[2]
+e.smallOneCost=t[3]
+e.showRankCount=t[4]
+e.bigOnePoint=t[5]
+e.smallOnePoint=t[6]
+e.heroId=t[7]
+e.heroVoiceId1=t[8]
+e.heroVoiceId2=t[9]
+e.dtsysPrefabAvg=t[10]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/activity/DTGachaLeaderEntityTableData')
+end
+return a 

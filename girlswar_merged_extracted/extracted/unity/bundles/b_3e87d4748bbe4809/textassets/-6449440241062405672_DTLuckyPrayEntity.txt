@@ -1,0 +1,38 @@
+local a={id=0,prayCoin1={},prayCoin2={},prayCoin3={},point={{},{}},amaterasiCoinPoint={},showRankCount=0,coin1FreeMaxTimes=0,coin2FreeMaxTimes=0,coin1FreeCd=0,coin2FreeCd=0}
+a.__index=a
+function a.New(n,r,s,t,l,u,c,d,h,o,i)
+local e={}
+setmetatable(e,a)
+e.id=n
+e.prayCoin1=r
+e.prayCoin2=s
+e.prayCoin3=t
+e.point=l
+e.amaterasiCoinPoint=u
+e.showRankCount=c
+e.coin1FreeMaxTimes=d
+e.coin2FreeMaxTimes=h
+e.coin1FreeCd=o
+e.coin2FreeCd=i
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.prayCoin1=t[2]
+e.prayCoin2=t[3]
+e.prayCoin3=t[4]
+e.point=t[5]
+e.amaterasiCoinPoint=t[6]
+e.showRankCount=t[7]
+e.coin1FreeMaxTimes=t[8]
+e.coin2FreeMaxTimes=t[9]
+e.coin1FreeCd=t[10]
+e.coin2FreeCd=t[11]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/activity/DTLuckyPrayEntityTableData')
+end
+return a 

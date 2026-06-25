@@ -1,0 +1,13 @@
+local e=
+{
+ByIdx={
+{1,1,2,101,"jumpicon_1","strongTips_1","strongDesc_1",{1,2,3},0,"0"},
+{2,1,3,102,"jumpicon_3","strongTips_2","strongDesc_2",{0},0,"0"},
+{3,2,1,201,"jumpicon_11","strongTips_3","strongDesc_3",{0},11,"0"},
+{4,3,1,301,"jumpicon_13","strongTips_4","strongDesc_4",{0},13,"0"},
+{5,4,1,401,"jumpicon_18","strongTips_5","strongDesc_5",{0},18,"0"},
+{6,4,1,402,"jumpicon_17","strongTips_6","strongDesc_6",{0},17,"0"}
+},
+Len=6
+}
+return e 

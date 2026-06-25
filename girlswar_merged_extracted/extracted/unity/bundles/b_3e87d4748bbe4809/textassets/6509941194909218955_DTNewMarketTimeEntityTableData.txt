@@ -1,0 +1,11 @@
+local e=
+{
+ByIdx={
+{550,0,7,"ui_new_main_tips550","ui_new_main_tips5500","newMarketName_1","UIMainInterface2/zhuye_xinshoujishi"},
+{551,0,7,"ui_new_main_tips550","ui_new_main_tips5500","newMarketName_3","UIMainInterface2/zhuye_xinshoujishi"},
+{552,0,7,"ui_new_main_tips550","ui_new_main_tips5500","newMarketName_2","UIMainInterface2/zhuye_xinshoujishi"},
+{553,0,7,"ui_new_main_tips550","ui_new_main_tips5500","newMarketName_4","UIMainInterface2/zhuye_xinshoujishi"}
+},
+Len=4
+}
+return e 

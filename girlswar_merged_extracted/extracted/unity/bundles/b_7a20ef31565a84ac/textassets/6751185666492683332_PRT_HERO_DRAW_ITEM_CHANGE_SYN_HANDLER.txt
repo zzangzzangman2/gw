@@ -1,0 +1,11 @@
+local t={}
+function t:OnHandle(e)
+local e=assert(GlobalPB.decode("PRT_HERO_DRAW_ITEM_CHANGE_SYN",e));
+if(GameInit.GetDebugLogProto())then
+;
+;
+end
+ModulesInit.ActHeroDrawMgr:syncActHeroDrawItemChange(e)
+return e
+end
+return t 

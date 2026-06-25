@@ -1,0 +1,36 @@
+local a={id=0,issueNum=0,displayTask=0,taskGroup=0,taskGroupNum=0,questType=0,needCount={},reward={{},{}},text="",jump=0}
+a.__index=a
+function a.New(n,r,s,t,l,u,d,h,o,i)
+local e={}
+setmetatable(e,a)
+e.id=n
+e.issueNum=r
+e.displayTask=s
+e.taskGroup=t
+e.taskGroupNum=l
+e.questType=u
+e.needCount=d
+e.reward=h
+e.text=o
+e.jump=i
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.issueNum=t[2]
+e.displayTask=t[3]
+e.taskGroup=t[4]
+e.taskGroupNum=t[5]
+e.questType=t[6]
+e.needCount=t[7]
+e.reward=t[8]
+e.text=t[9]
+e.jump=t[10]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/activity/DTBestAirshipArchitectTaskEntityTableData')
+end
+return a 

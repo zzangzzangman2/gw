@@ -1,0 +1,35 @@
+local e=
+{
+ByIdx={
+{1,1,"fish01_name","UIActActivityFishing/cjdy_fishname_1",210001,560000,"fish01_Desc",{26376,10}},
+{2,1,"fish02_name","UIActActivityFishing/cjdy_fishname_2",210002,280000,"fish02_Desc",{26376,10}},
+{3,1,"fish03_name","UIActActivityFishing/cjdy_fishname_3",210003,640000,"fish03_Desc",{26376,10}},
+{4,1,"fish04_name","UIActActivityFishing/cjdy_fishname_4",210004,240000,"fish04_Desc",{26376,10}},
+{5,1,"fish05_name","UIActActivityFishing/cjdy_fishname_5",210005,120000,"fish05_Desc",{26376,10}},
+{6,1,"fish06_name","UIActActivityFishing/cjdy_fishname_6",210006,140000,"fish06_Desc",{26376,10}},
+{7,1,"fish07_name","UIActActivityFishing/cjdy_fishname_7",210007,480000,"fish07_Desc",{26376,10}},
+{8,2,"fish08_name","UIActActivityFishing/cjdy_fishname_8",210008,320000,"fish08_Desc",{26376,25}},
+{9,2,"fish09_name","UIActActivityFishing/cjdy_fishname_9",210009,800000,"fish09_Desc",{26376,25}},
+{10,2,"fish10_name","UIActActivityFishing/cjdy_fishname_10",210010,360000,"fish10_Desc",{26376,25}},
+{11,2,"fish11_name","UIActActivityFishing/cjdy_fishname_11",210011,400000,"fish11_Desc",{26376,25}},
+{12,2,"fish12_name","UIActActivityFishing/cjdy_fishname_12",210012,160000,"fish12_Desc",{26376,25}},
+{13,2,"fish13_name","UIActActivityFishing/cjdy_fishname_13",210013,200000,"fish13_Desc",{26376,25}},
+{14,2,"fish14_name","UIActActivityFishing/cjdy_fishname_14",210014,600000,"fish14_Desc",{26376,25}},
+{15,3,"fish15_name","UIActActivityFishing/cjdy_fishname_15",210015,440000,"fish15_Desc",{26376,50}},
+{16,3,"fish16_name","UIActActivityFishing/cjdy_fishname_16",210016,960000,"fish16_Desc",{26376,50}},
+{17,3,"fish17_name","UIActActivityFishing/cjdy_fishname_17",210017,440000,"fish17_Desc",{26376,50}},
+{18,3,"fish18_name","UIActActivityFishing/cjdy_fishname_18",210018,560000,"fish18_Desc",{26376,50}},
+{19,3,"fish19_name","UIActActivityFishing/cjdy_fishname_19",210019,200000,"fish19_Desc",{26376,50}},
+{20,3,"fish20_name","UIActActivityFishing/cjdy_fishname_20",210020,220000,"fish20_Desc",{26376,50}},
+{21,3,"fish21_name","UIActActivityFishing/cjdy_fishname_21",210021,600000,"fish21_Desc",{26376,50}},
+{22,4,"fish22_name","UIActActivityFishing/cjdy_fishname_22",210022,880000,"fish22_Desc",{26376,100}},
+{23,4,"fish23_name","UIActActivityFishing/cjdy_fishname_23",210023,960000,"fish23_Desc",{26376,100}},
+{24,4,"fish24_name","UIActActivityFishing/cjdy_fishname_24",210024,640000,"fish24_Desc",{26376,100}},
+{25,4,"fish25_name","UIActActivityFishing/cjdy_fishname_25",210025,680000,"fish25_Desc",{26376,100}},
+{26,4,"fish26_name","UIActActivityFishing/cjdy_fishname_26",210026,280000,"fish26_Desc",{26376,100}},
+{27,4,"fish27_name","UIActActivityFishing/cjdy_fishname_27",210027,680000,"fish27_Desc",{26376,100}},
+{28,4,"fish28_name","UIActActivityFishing/cjdy_fishname_28",210028,720000,"fish28_Desc",{26376,100}}
+},
+Len=28
+}
+return e 

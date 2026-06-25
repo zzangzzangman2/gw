@@ -1,0 +1,52 @@
+local a={id=0,chapter=0,eventType1=0,eventParam1={},prefabId1=0,profileLevel1=0,dialogueGroup1={{},{}},eventType2=0,eventParam2={},prefabId2=0,profileLevel2=0,dialogueGroup2={{},{}},eventType3=0,eventParam3={},prefabId3=0,profileLevel3=0,dialogueGroup3={{},{}},isBoss=0}
+a.__index=a
+function a.New(d,c,l,t,f,m,y,v,p,b,w,u,n,i,o,s,r,h)
+local e={}
+setmetatable(e,a)
+e.id=d
+e.chapter=c
+e.eventType1=l
+e.eventParam1=t
+e.prefabId1=f
+e.profileLevel1=m
+e.dialogueGroup1=y
+e.eventType2=v
+e.eventParam2=p
+e.prefabId2=b
+e.profileLevel2=w
+e.dialogueGroup2=u
+e.eventType3=n
+e.eventParam3=i
+e.prefabId3=o
+e.profileLevel3=s
+e.dialogueGroup3=r
+e.isBoss=h
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.chapter=t[2]
+e.eventType1=t[3]
+e.eventParam1=t[4]
+e.prefabId1=t[5]
+e.profileLevel1=t[6]
+e.dialogueGroup1=t[7]
+e.eventType2=t[8]
+e.eventParam2=t[9]
+e.prefabId2=t[10]
+e.profileLevel2=t[11]
+e.dialogueGroup2=t[12]
+e.eventType3=t[13]
+e.eventParam3=t[14]
+e.prefabId3=t[15]
+e.profileLevel3=t[16]
+e.dialogueGroup3=t[17]
+e.isBoss=t[18]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/activity/DTFishJumpLevelEntityTableData')
+end
+return a 

@@ -1,0 +1,22 @@
+local e={id=0,award={},weight=0}
+e.__index=e
+function e.New(o,a,i)
+local t={}
+setmetatable(t,e)
+t.id=o
+t.award=a
+t.weight=i
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.award=a[2]
+t.weight=a[3]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/activity/DTGroupPhotoGachaEntityTableData')
+end
+return e 

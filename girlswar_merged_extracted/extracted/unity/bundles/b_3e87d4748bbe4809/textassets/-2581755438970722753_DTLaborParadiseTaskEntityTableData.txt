@@ -1,0 +1,23 @@
+local e=
+{
+ByIdx={
+{1,9,3,{{94551,2}},181,"LaborParadiseTask_1"},
+{2,2,4,{{94551,2}},0,"LaborParadiseTask_2"},
+{3,5,20,{{94551,2}},16,"LaborParadiseTask_3"},
+{4,3,30,{{94551,2}},40,"LaborParadiseTask_4"},
+{5,9,12,{{94551,2}},181,"LaborParadiseTask_5"},
+{6,2,3,{{94551,2}},0,"LaborParadiseTask_6"},
+{7,4,10,{{94551,2}},138,"LaborParadiseTask_7"},
+{8,5,5,{{94551,2}},16,"LaborParadiseTask_8"},
+{9,4,5,{{94551,2}},138,"LaborParadiseTask_9"},
+{10,4,15,{{94551,2}},138,"LaborParadiseTask_10"},
+{11,5,15,{{94551,2}},16,"LaborParadiseTask_11"},
+{12,3,60,{{94551,2}},40,"LaborParadiseTask_12"},
+{13,2,2,{{94551,2}},0,"LaborParadiseTask_13"},
+{14,1,60,{{94551,2}},534,"LaborParadiseTask_14"},
+{15,1,30,{{94551,2}},534,"LaborParadiseTask_15"},
+{16,6,900,{{94551,2}},532,"LaborParadiseTask_16"}
+},
+Len=16
+}
+return e 

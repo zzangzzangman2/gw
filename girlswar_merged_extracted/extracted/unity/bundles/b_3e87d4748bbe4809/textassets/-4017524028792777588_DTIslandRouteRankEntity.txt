@@ -1,0 +1,28 @@
+local e={id=0,activityStage=0,rankType=0,topNum=0,show=0,awards={{},{}}}
+e.__index=e
+function e.New(a,i,o,h,s,n)
+local t={}
+setmetatable(t,e)
+t.id=a
+t.activityStage=i
+t.rankType=o
+t.topNum=h
+t.show=s
+t.awards=n
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.activityStage=a[2]
+t.rankType=a[3]
+t.topNum=a[4]
+t.show=a[5]
+t.awards=a[6]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/activity/DTIslandRouteRankEntityTableData')
+end
+return e 

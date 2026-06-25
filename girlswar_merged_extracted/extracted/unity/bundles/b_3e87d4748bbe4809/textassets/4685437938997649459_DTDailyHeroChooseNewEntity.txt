@@ -1,0 +1,28 @@
+local e={id=0,addAward={{},{}},banner="",iconName="",chestName="",chestDetails=""}
+e.__index=e
+function e.New(a,i,o,h,s,n)
+local t={}
+setmetatable(t,e)
+t.id=a
+t.addAward=i
+t.banner=o
+t.iconName=h
+t.chestName=s
+t.chestDetails=n
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.addAward=a[2]
+t.banner=a[3]
+t.iconName=a[4]
+t.chestName=a[5]
+t.chestDetails=a[6]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/activity/DTDailyHeroChooseNewEntityTableData')
+end
+return e 

@@ -1,0 +1,14 @@
+local e=
+{
+ByIdx={
+{1,2,2,50,{1034,100},"cityWarGDQuestDesc_20001"},
+{2,3,2,100,{1034,100},"cityWarGDQuestDesc_20002"},
+{3,4,2,200,{1034,100},"cityWarGDQuestDesc_20003"},
+{4,5,2,300,{1034,100},"cityWarGDQuestDesc_20004"},
+{5,6,2,500,{1034,100},"cityWarGDQuestDesc_20005"},
+{6,7,2,800,{1034,100},"cityWarGDQuestDesc_20006"},
+{7,0,2,1000,{1034,200},"cityWarGDQuestDesc_20007"}
+},
+Len=7
+}
+return e 

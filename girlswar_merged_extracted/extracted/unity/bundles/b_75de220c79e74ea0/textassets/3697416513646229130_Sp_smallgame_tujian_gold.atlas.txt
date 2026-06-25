@@ -1,0 +1,7 @@
+Sp_smallgame_tujian_gold.png
+size:512,256
+filter:Linear,Linear
+youji_daojukuang_youxiu
+bounds:150,2,146,146
+youji_daojukuang_youxiu_bian
+bounds:2,2,146,146

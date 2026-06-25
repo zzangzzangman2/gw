@@ -1,0 +1,11 @@
+local e={}
+function e:OnHandle(e)
+local e=assert(GlobalPB.decode("PRT_DRAW_LUCKY_SHARE_RESP",e));
+if(GameInit.GetDebugLogProto())then
+;
+;
+end
+PlayerMgr.luckyShareNum=PlayerMgr.luckyShareNum-1
+return e
+end
+return e 

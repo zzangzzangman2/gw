@@ -1,0 +1,31 @@
+﻿bundle_role,relative_path,file_name,bytes,png_width,png_height,use_for_maininterface
+paintingprefabandres/1001,images/S/-4976496689336253212_noalphabg_PaintingBG_1001.png,-4976496689336253212_noalphabg_PaintingBG_1001.png,6217,1680,720,runtime UI_bg background
+paintingprefabandres/1001,images/S/-990156369049720585_noalphabg_Tujian_1001.png,-990156369049720585_noalphabg_Tujian_1001.png,3262,1154,577,reference
+paintingprefabandres/1001,images/T/-2604793125264324730_noalphabg_Tujian_1001.png,-2604793125264324730_noalphabg_Tujian_1001.png,1024119,1154,577,reference
+paintingprefabandres/1001,images/T/-5976701359861672659_Painting_1001_Front.png,-5976701359861672659_Painting_1001_Front.png,289373,2048,512,spine atlas page; do not use as whole image
+paintingprefabandres/1001,images/T/-7320570872213371390_Painting_1001.png,-7320570872213371390_Painting_1001.png,2313035,2048,2048,spine atlas page; do not use as whole image
+paintingprefabandres/1001,images/T/-817718915490956892_SP_heroname_1001.png,-817718915490956892_SP_heroname_1001.png,34202,512,512,spine hero name source
+paintingprefabandres/1001,images/T/4801844957134921333_Painting_1001_Back.png,4801844957134921333_Painting_1001_Back.png,1011406,2048,1024,spine atlas page; do not use as whole image
+paintingprefabandres/1001,images/T/5510351950449616726_noalphabg_PaintingBG_1001.png,5510351950449616726_noalphabg_PaintingBG_1001.png,1219720,1680,720,runtime UI_bg background
+paintingprefabandres/1001,textassets/-3577121971219907780_Painting_1001_Back.atlas.txt,-3577121971219907780_Painting_1001_Back.atlas.txt,213,,,runtime UI_heroSpine skeleton source
+paintingprefabandres/1001,textassets/-4661310201836416618_Painting_1001_Back.skel.txt,-4661310201836416618_Painting_1001_Back.skel.txt,22847,,,runtime UI_heroSpine skeleton source
+paintingprefabandres/1001,textassets/1337251017198691971_Painting_1001_Front.skel.txt,1337251017198691971_Painting_1001_Front.skel.txt,24512,,,runtime UI_heroSpine skeleton source
+paintingprefabandres/1001,textassets/3992961392396818130_SP_heroname_1001.atlas.txt,3992961392396818130_SP_heroname_1001.atlas.txt,166,,,spine hero name source
+paintingprefabandres/1001,textassets/4160177333152483287_SP_heroname_1001.skel.txt,4160177333152483287_SP_heroname_1001.skel.txt,5166,,,spine hero name source
+paintingprefabandres/1001,textassets/5035273895345354139_Painting_1001.atlas.txt,5035273895345354139_Painting_1001.atlas.txt,4668,,,runtime UI_heroSpine skeleton source
+paintingprefabandres/1001,textassets/5395353901128918248_Painting_1001_Front.atlas.txt,5395353901128918248_Painting_1001_Front.atlas.txt,213,,,runtime UI_heroSpine skeleton source
+paintingprefabandres/1001,textassets/8335459198305055043_Painting_1001.skel.txt,8335459198305055043_Painting_1001.skel.txt,598675,,,runtime UI_heroSpine skeleton source
+rolebigsetpainting/1001,images/S/-1126982462885430757_T_ditu_1001.png,-1126982462885430757_T_ditu_1001.png,884,335,153,static reference or non-home fallback; not UI_heroSpine runtime
+rolebigsetpainting/1001,images/S/-8793043604354149883_Storyreview_1001.png,-8793043604354149883_Storyreview_1001.png,477,188,118,static reference or non-home fallback; not UI_heroSpine runtime
+rolebigsetpainting/1001,images/S/1830113086179155219_starHeroName_1001.png,1830113086179155219_starHeroName_1001.png,799,80,124,static reference or non-home fallback; not UI_heroSpine runtime
+rolebigsetpainting/1001,images/T/-3542656280886178909_homepage_underwear_1001.png,-3542656280886178909_homepage_underwear_1001.png,223141,233,512,static reference or non-home fallback; not UI_heroSpine runtime
+rolebigsetpainting/1001,images/T/-6744964282954059628_1001_2.png,-6744964282954059628_1001_2.png,417235,512,495,static reference or non-home fallback; not UI_heroSpine runtime
+rolebigsetpainting/1001,images/T/-873344405432923401_starHeroName_1001.png,-873344405432923401_starHeroName_1001.png,5388,92,146,static reference or non-home fallback; not UI_heroSpine runtime
+rolebigsetpainting/1001,images/T/-8886651334896458765_T_ditu_1001.png,-8886651334896458765_T_ditu_1001.png,98720,335,153,static reference or non-home fallback; not UI_heroSpine runtime
+rolebigsetpainting/1001,images/T/17212483516509004_1001.png,17212483516509004_1001.png,230014,233,512,static reference or non-home fallback; not UI_heroSpine runtime
+rolebigsetpainting/1001,images/T/2737386206541763736_PHB_zhezhao_1001.png,2737386206541763736_PHB_zhezhao_1001.png,37013,512,512,static reference or non-home fallback; not UI_heroSpine runtime
+rolebigsetpainting/1001,images/T/5811693897159405824_JJC_zhezhao_1001.png,5811693897159405824_JJC_zhezhao_1001.png,147284,256,512,static reference or non-home fallback; not UI_heroSpine runtime
+rolebigsetpainting/1001,images/T/6429495507138912928_Storyreview_1001.png,6429495507138912928_Storyreview_1001.png,30050,188,118,static reference or non-home fallback; not UI_heroSpine runtime
+battleprefabandres/1001,images/T/-584683105162990561_1001.png,-584683105162990561_1001.png,371369,2048,256,battle skeleton; not MainInterface home default
+battleprefabandres/1001,textassets/-266615414835539183_1001.atlas.txt,-266615414835539183_1001.atlas.txt,3313,,,battle skeleton; not MainInterface home default
+battleprefabandres/1001,textassets/4058588034073678322_1001.skel.txt,4058588034073678322_1001.skel.txt,681766,,,battle skeleton; not MainInterface home default

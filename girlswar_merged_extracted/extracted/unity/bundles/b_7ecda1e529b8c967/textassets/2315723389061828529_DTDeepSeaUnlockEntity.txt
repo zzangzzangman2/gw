@@ -1,0 +1,28 @@
+local e={id=0,icon="",buildingDesc="",type="",levelupDesc="",levelupDescNum={}}
+e.__index=e
+function e.New(a,i,o,h,s,n)
+local t={}
+setmetatable(t,e)
+t.id=a
+t.icon=i
+t.buildingDesc=o
+t.type=h
+t.levelupDesc=s
+t.levelupDescNum=n
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.icon=a[2]
+t.buildingDesc=a[3]
+t.type=a[4]
+t.levelupDesc=a[5]
+t.levelupDescNum=a[6]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/deepsea/DTDeepSeaUnlockEntityTableData')
+end
+return e 

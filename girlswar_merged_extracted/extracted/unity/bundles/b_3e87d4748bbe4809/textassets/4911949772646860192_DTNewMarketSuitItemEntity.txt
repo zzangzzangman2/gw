@@ -1,0 +1,26 @@
+local e={id=0,count=0,title="",iconBig="",colorType=0}
+e.__index=e
+function e.New(o,n,a,s,i)
+local t={}
+setmetatable(t,e)
+t.id=o
+t.count=n
+t.title=a
+t.iconBig=s
+t.colorType=i
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.count=a[2]
+t.title=a[3]
+t.iconBig=a[4]
+t.colorType=a[5]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/activity/DTNewMarketSuitItemEntityTableData')
+end
+return e 

@@ -1,0 +1,28 @@
+local e={id=0,type=0,pointCost=0,award={},record=0,limitTimes=0}
+e.__index=e
+function e.New(a,i,o,h,s,n)
+local t={}
+setmetatable(t,e)
+t.id=a
+t.type=i
+t.pointCost=o
+t.award=h
+t.record=s
+t.limitTimes=n
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.type=a[2]
+t.pointCost=a[3]
+t.award=a[4]
+t.record=a[5]
+t.limitTimes=a[6]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/activity/DTActivityTarotShopEntityTableData')
+end
+return e 

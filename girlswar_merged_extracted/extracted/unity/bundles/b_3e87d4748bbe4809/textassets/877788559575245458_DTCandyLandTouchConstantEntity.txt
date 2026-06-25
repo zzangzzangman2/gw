@@ -1,0 +1,22 @@
+local e={id=0,offset=0,blockSize=0}
+e.__index=e
+function e.New(o,a,i)
+local t={}
+setmetatable(t,e)
+t.id=o
+t.offset=a
+t.blockSize=i
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.offset=a[2]
+t.blockSize=a[3]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/activity/DTCandyLandTouchConstantEntityTableData')
+end
+return e 

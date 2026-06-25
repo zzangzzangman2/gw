@@ -1,0 +1,26 @@
+local e={id=0,unlockLv=0,unlockType=0,pras="",hero={}}
+e.__index=e
+function e.New(o,n,a,s,i)
+local t={}
+setmetatable(t,e)
+t.id=o
+t.unlockLv=n
+t.unlockType=a
+t.pras=s
+t.hero=i
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.unlockLv=a[2]
+t.unlockType=a[3]
+t.pras=a[4]
+t.hero=a[5]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/harem/DTLoverShowEntityTableData')
+end
+return e 

@@ -1,0 +1,11 @@
+local t={}
+function t:OnHandle(e)
+local e=assert(GlobalPB.decode("PRT_CHRISTMAS2_MAIN_INFO_NEW_RESP",e));
+if(GameInit.GetDebugLogProto())then
+;
+;
+end
+ModulesInit.ActGoldWeekStage2Manager:OnGoldWeekMainInfoEnterResponse(e)
+return e
+end
+return t 

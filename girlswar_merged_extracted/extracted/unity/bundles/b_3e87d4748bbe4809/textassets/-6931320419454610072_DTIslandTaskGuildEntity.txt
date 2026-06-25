@@ -1,0 +1,32 @@
+local a={id=0,type=0,limitTime=0,awardPoint={{},{}},pointLimit=0,jump=0,name="",desc=""}
+a.__index=a
+function a.New(i,h,n,t,d,r,s,o)
+local e={}
+setmetatable(e,a)
+e.id=i
+e.type=h
+e.limitTime=n
+e.awardPoint=t
+e.pointLimit=d
+e.jump=r
+e.name=s
+e.desc=o
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.type=t[2]
+e.limitTime=t[3]
+e.awardPoint=t[4]
+e.pointLimit=t[5]
+e.jump=t[6]
+e.name=t[7]
+e.desc=t[8]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/activity/DTIslandTaskGuildEntityTableData')
+end
+return a 

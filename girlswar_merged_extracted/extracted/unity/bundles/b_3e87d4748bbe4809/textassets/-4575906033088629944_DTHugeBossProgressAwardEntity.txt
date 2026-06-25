@@ -1,0 +1,30 @@
+local t={id=0,percent=0,award={{},{}},fragmentShowNmuber=0,payAward={{},{}},doublePayAward={{},{}},spineRateName2=""}
+t.__index=t
+function t.New(o,h,a,s,r,n,i)
+local e={}
+setmetatable(e,t)
+e.id=o
+e.percent=h
+e.award=a
+e.fragmentShowNmuber=s
+e.payAward=r
+e.doublePayAward=n
+e.spineRateName2=i
+return e
+end
+function t.NewFromArrItem(a)
+local e={}
+setmetatable(e,t)
+e.id=a[1]
+e.percent=a[2]
+e.award=a[3]
+e.fragmentShowNmuber=a[4]
+e.payAward=a[5]
+e.doublePayAward=a[6]
+e.spineRateName2=a[7]
+return e
+end
+function t.GetArr()
+return require('DataNode/DataTable/Create/activity/DTHugeBossProgressAwardEntityTableData')
+end
+return t 

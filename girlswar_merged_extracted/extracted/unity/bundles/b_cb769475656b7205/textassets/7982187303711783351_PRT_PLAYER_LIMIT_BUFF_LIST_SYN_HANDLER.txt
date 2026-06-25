@@ -1,0 +1,11 @@
+local t={}
+function t:OnHandle(e)
+local e=assert(GlobalPB.decode("PRT_PLAYER_LIMIT_BUFF_LIST_SYN",e));
+if(GameInit.GetDebugLogProto())then
+;
+;
+end
+PlayerMgr:OnSynPlayerLimitBuffList(e)
+return e
+end
+return t 

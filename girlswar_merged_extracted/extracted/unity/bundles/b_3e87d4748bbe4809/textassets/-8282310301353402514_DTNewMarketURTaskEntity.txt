@@ -1,0 +1,28 @@
+local e={id=0,heroId=0,needCount=0,award={{},{}},text="",listNum=0}
+e.__index=e
+function e.New(a,i,o,h,s,n)
+local t={}
+setmetatable(t,e)
+t.id=a
+t.heroId=i
+t.needCount=o
+t.award=h
+t.text=s
+t.listNum=n
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.heroId=a[2]
+t.needCount=a[3]
+t.award=a[4]
+t.text=a[5]
+t.listNum=a[6]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/activity/DTNewMarketURTaskEntityTableData')
+end
+return e 

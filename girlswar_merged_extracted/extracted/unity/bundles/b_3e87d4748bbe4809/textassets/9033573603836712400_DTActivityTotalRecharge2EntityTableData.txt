@@ -1,0 +1,27 @@
+local e=
+{
+ByIdx={
+{1,0,1,{{20286,1}},2,"msz_ny1","chargerewardlevelup_1","itemicon_30501"},
+{2,500,1,{{20287,1}},2,"msz_ny1","chargerewardlevelup_2","itemicon_31001"},
+{3,1000,1,{{20288,1}},2,"msz_ny2","chargerewardlevelup_3","itemicon_30401"},
+{4,5000,1,{{20057,1}},1,"msz_ny3","chargerewardlevelup_4","itemicon_30701"},
+{5,10000,1,{{20289,1}},2,"msz_ny4","","itemicon_31101"},
+{6,0,2,{{20286,1}},2,"msz_ny1","chargerewardlevelup_1","itemicon_30501"},
+{7,500,2,{{20287,1}},2,"msz_ny1","chargerewardlevelup_2","itemicon_31001"},
+{8,1000,2,{{20288,1}},2,"msz_ny2","chargerewardlevelup_3","itemicon_30401"},
+{9,5000,2,{{20057,1}},1,"msz_ny3","chargerewardlevelup_4","itemicon_30701"},
+{10,10000,2,{{20289,1}},2,"msz_ny4","","itemicon_31101"},
+{11,0,3,{{20286,1}},2,"msz_ny1","chargerewardlevelup_1","itemicon_30501"},
+{12,500,3,{{20287,1}},2,"msz_ny1","chargerewardlevelup_2","itemicon_31001"},
+{13,1000,3,{{20288,1}},2,"msz_ny2","chargerewardlevelup_3","itemicon_30401"},
+{14,5000,3,{{20057,1}},1,"msz_ny3","chargerewardlevelup_4","itemicon_30701"},
+{15,10000,3,{{20289,1}},2,"msz_ny4","","itemicon_31101"},
+{16,0,4,{{20286,1}},2,"msz_ny1","chargerewardlevelup_1","itemicon_30501"},
+{17,500,4,{{20287,1}},2,"msz_ny1","chargerewardlevelup_2","itemicon_31001"},
+{18,1000,4,{{20288,1}},2,"msz_ny2","chargerewardlevelup_3","itemicon_30401"},
+{19,5000,4,{{20057,1}},1,"msz_ny3","chargerewardlevelup_4","itemicon_30701"},
+{20,10000,4,{{20289,1}},2,"msz_ny4","","itemicon_31101"}
+},
+Len=20
+}
+return e 

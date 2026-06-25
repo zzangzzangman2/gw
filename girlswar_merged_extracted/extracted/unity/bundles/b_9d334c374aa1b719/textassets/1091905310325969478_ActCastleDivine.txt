@@ -1,0 +1,67 @@
+
+?
+ActCastleDivine.protoCommons.proto"O
+PRT_CARD_DATA
+cardDid (RcardDid$
+inCombination (RinCombination"
+PRT_CASTLE_DIVINE_INFO_REQ"[
+PRT_CASTLE_DIVINE_INFO_RESP 
+ticketScore (RticketScore
+awardIds (RawardIds"d
+PRT_CASTLE_DIVINE_RESULT_REQ
+rate (Rrate0
+clientDebugCardType (RclientDebugCardType"?
+PRT_CASTLE_DIVINE_RESULT_RESP4
+initCardDatas (2.PRT_CARD_DATARinitCardDatas8
+resultCardDatas (2.PRT_CARD_DATARresultCardDatas<
+bigRewardDatas (2.PRT_BIG_REWARD_DATARbigRewardDatas"
+awards (2
+.PRT_THINGRawards"
+initCardType (RinitCardType&
+resultCardType (RresultCardType 
+ticketScore (RticketScore"c
+PRT_BIG_REWARD_DATA
+pos (Rpos"
+awards (2
+.PRT_THINGRawards
+addNum (RaddNum"#
+!PRT_CASTLE_DIVINE_STAGE_AWARD_REQ"d
+"PRT_CASTLE_DIVINE_STAGE_AWARD_RESP
+awardIds (RawardIds"
+awards (2
+.PRT_THINGRawards"
+PRT_CASTLE_DIVINE_RANK_REQ"?
+PRT_CASTLE_DIVINE_RANK_RESP.
+	rankDatas (2.PRT_COMMON_RANKR	rankDatas,
+selfRank (2.PRT_COMMON_RANKRselfRank
+playerId (RplayerId"z
+*PRT_CS_CASTLE_DIVINE_RANK_SCORE_UPDATE_SYN
+playerId (RplayerId
+score (Rscore
+changeMS (RchangeMS"!
+PRT_CASTLE_DIVINE_SHOP_INFO_REQ"^
+ PRT_CASTLE_DIVINE_SHOP_INFO_RESP 
+items (2
+.PRT_GOODSRitems
+costNum (RcostNum"R
+PRT_CASTLE_DIVINE_SHOP_BUY_REQ
+goodsDid (RgoodsDid
+count (Rcount"[
+PRT_CASTLE_DIVINE_SHOP_BUY_RESP
+item (2
+.PRT_GOODSRitem
+costNum (RcostNum"!
+PRT_CASTLE_DIVINE_GIFT_INFO_REQ"?
+ PRT_CASTLE_DIVINE_GIFT_INFO_RESP 
+gifts (2
+.PRT_GOODSRgifts
+freeCD (RfreeCD.
+historyGifts (2
+.PRT_GOODSRhistoryGifts"P
+PRT_CASTLE_DIVINE_GIFT_BUY_REQ
+giftDid (RgiftDid
+count (Rcount"A
+PRT_CASTLE_DIVINE_GIFT_BUY_RESP
+gift (2
+.PRT_GOODSRgiftB
+com.next1b.nextsvr.protobproto3

@@ -1,0 +1,30 @@
+local t={id=0,activityCfgId=0,reward={},unlockList={},sortId=0,linePos=0,lineAnim=0}
+t.__index=t
+function t.New(o,h,a,s,r,n,i)
+local e={}
+setmetatable(e,t)
+e.id=o
+e.activityCfgId=h
+e.reward=a
+e.unlockList=s
+e.sortId=r
+e.linePos=n
+e.lineAnim=i
+return e
+end
+function t.NewFromArrItem(a)
+local e={}
+setmetatable(e,t)
+e.id=a[1]
+e.activityCfgId=a[2]
+e.reward=a[3]
+e.unlockList=a[4]
+e.sortId=a[5]
+e.linePos=a[6]
+e.lineAnim=a[7]
+return e
+end
+function t.GetArr()
+return require('DataNode/DataTable/Create/worldTree/DTWorldTreeTreasureRewardEntityTableData')
+end
+return t 

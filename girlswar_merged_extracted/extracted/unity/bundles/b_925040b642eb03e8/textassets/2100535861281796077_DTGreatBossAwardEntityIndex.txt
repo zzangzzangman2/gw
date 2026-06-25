@@ -1,0 +1,75 @@
+local e={}
+e.__index=e
+function e.Init()
+e.indexData={}
+e.indexData['index_1']={}
+e.indexData['index_1']['1']={101,111,121}
+e.indexData['index_1']['10']={1001,1011,1021}
+e.indexData['index_1']['101']={10101,10111,10121}
+e.indexData['index_1']['102']={10201,10211,10221}
+e.indexData['index_1']['103']={10301,10311,10321}
+e.indexData['index_1']['104']={10401,10411,10421}
+e.indexData['index_1']['105']={10501,10511,10521}
+e.indexData['index_1']['106']={10601,10611,10621}
+e.indexData['index_1']['107']={10701,10711,10721}
+e.indexData['index_1']['108']={10801,10811,10821}
+e.indexData['index_1']['109']={10901,10911,10921}
+e.indexData['index_1']['11']={1101,1111,1121}
+e.indexData['index_1']['110']={11001,11011,11021}
+e.indexData['index_1']['111']={11101,11111,11121}
+e.indexData['index_1']['112']={11201,11211,11221}
+e.indexData['index_1']['12']={1201,1211,1221}
+e.indexData['index_1']['2']={201,211,221}
+e.indexData['index_1']['201']={20101,20111,20121}
+e.indexData['index_1']['202']={20201,20211,20221}
+e.indexData['index_1']['203']={20301,20311,20321}
+e.indexData['index_1']['204']={20401,20411,20421}
+e.indexData['index_1']['205']={20501,20511,20521}
+e.indexData['index_1']['206']={20601,20611,20621}
+e.indexData['index_1']['207']={20701,20711,20721}
+e.indexData['index_1']['208']={20801,20811,20821}
+e.indexData['index_1']['209']={20901,20911,20921}
+e.indexData['index_1']['210']={21001,21011,21021}
+e.indexData['index_1']['211']={21101,21111,21121}
+e.indexData['index_1']['212']={21201,21211,21221}
+e.indexData['index_1']['3']={301,311,321}
+e.indexData['index_1']['301']={30101,30111,30121}
+e.indexData['index_1']['302']={30201,30211,30221}
+e.indexData['index_1']['303']={30301,30311,30321}
+e.indexData['index_1']['304']={30401,30411,30421}
+e.indexData['index_1']['305']={30501,30511,30521}
+e.indexData['index_1']['306']={30601,30611,30621}
+e.indexData['index_1']['307']={30701,30711,30721}
+e.indexData['index_1']['308']={30801,30811,30821}
+e.indexData['index_1']['309']={30901,30911,30921}
+e.indexData['index_1']['310']={31001,31011,31021}
+e.indexData['index_1']['311']={31101,31111,31121}
+e.indexData['index_1']['312']={31201,31211,31221}
+e.indexData['index_1']['4']={401,411,421}
+e.indexData['index_1']['5']={501,511,521}
+e.indexData['index_1']['51']={5101,5111,5121}
+e.indexData['index_1']['52']={5201,5211,5221}
+e.indexData['index_1']['53']={5301,5311,5321}
+e.indexData['index_1']['54']={5401,5411,5421}
+e.indexData['index_1']['55']={5501,5511,5521}
+e.indexData['index_1']['56']={5601,5611,5621}
+e.indexData['index_1']['57']={5701,5711,5721}
+e.indexData['index_1']['58']={5801,5811,5821}
+e.indexData['index_1']['59']={5901,5911,5921}
+e.indexData['index_1']['6']={601,611,621}
+e.indexData['index_1']['60']={6001,6011,6021}
+e.indexData['index_1']['61']={6101,6111,6121}
+e.indexData['index_1']['62']={6201,6211,6221}
+e.indexData['index_1']['7']={701,711,721}
+e.indexData['index_1']['8']={801,811,821}
+e.indexData['index_1']['9']={901,911,921}
+end
+function e.GetByIndex(t,a)
+if e.indexData[t]and e.indexData[t][a]then
+return e.indexData[t][a]
+else
+return{}
+end
+end
+return e
+

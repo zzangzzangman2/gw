@@ -1,0 +1,86 @@
+local a={id=0,map=0,cityId=0,level=0,connectionIds={},dailyAwardPoints=0,declareNeedPoints=0,teamMixHero=0,teamMaxHero=0,teamMixHeroNew=0,teamMaxHeroNew=0,skyBattleBoxLv=0,skyBattleBoxAwardStar6={{},{}},skyBattleBoxAwardStar5={{},{}},skyBattleBoxAwardStar4={{},{}},skyBattleBoxAwardStar3={{},{}},skyBattleBoxAwardStarNewbie={{},{}},monsters={},skyCityName="",MapskyCityIcon="",UIskyCityIcon="",UIskyCityIcon2="",UIskyCitysmallIcon="",skyBattleBoxAwardStar6New={{},{}},skyBattleBoxAwardStar5New={{},{}},skyBattleBoxAwardStar4New={{},{}},skyBattleBoxAwardStar3New={{},{}},skyBattleBoxAwardStar6New2={{},{}},skyBattleBoxAwardStar5New2={{},{}},skyBattleBoxAwardStar4New2={{},{}},skyBattleBoxAwardStar3New2={{},{}},skyBattleBoxAwardStar6New3={{},{}},skyBattleBoxAwardStar5New3={{},{}},skyBattleBoxAwardStar4New3={{},{}},skyBattleBoxAwardStar3New3={{},{}}}
+a.__index=a
+function a.New(m,g,v,t,z,_,x,k,q,j,T,N,A,H,R,S,O,I,D,E,b,d,h,r,s,o,i,n,l,f,u,y,p,w,c)
+local e={}
+setmetatable(e,a)
+e.id=m
+e.map=g
+e.cityId=v
+e.level=t
+e.connectionIds=z
+e.dailyAwardPoints=_
+e.declareNeedPoints=x
+e.teamMixHero=k
+e.teamMaxHero=q
+e.teamMixHeroNew=j
+e.teamMaxHeroNew=T
+e.skyBattleBoxLv=N
+e.skyBattleBoxAwardStar6=A
+e.skyBattleBoxAwardStar5=H
+e.skyBattleBoxAwardStar4=R
+e.skyBattleBoxAwardStar3=S
+e.skyBattleBoxAwardStarNewbie=O
+e.monsters=I
+e.skyCityName=D
+e.MapskyCityIcon=E
+e.UIskyCityIcon=b
+e.UIskyCityIcon2=d
+e.UIskyCitysmallIcon=h
+e.skyBattleBoxAwardStar6New=r
+e.skyBattleBoxAwardStar5New=s
+e.skyBattleBoxAwardStar4New=o
+e.skyBattleBoxAwardStar3New=i
+e.skyBattleBoxAwardStar6New2=n
+e.skyBattleBoxAwardStar5New2=l
+e.skyBattleBoxAwardStar4New2=f
+e.skyBattleBoxAwardStar3New2=u
+e.skyBattleBoxAwardStar6New3=y
+e.skyBattleBoxAwardStar5New3=p
+e.skyBattleBoxAwardStar4New3=w
+e.skyBattleBoxAwardStar3New3=c
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.map=t[2]
+e.cityId=t[3]
+e.level=t[4]
+e.connectionIds=t[5]
+e.dailyAwardPoints=t[6]
+e.declareNeedPoints=t[7]
+e.teamMixHero=t[8]
+e.teamMaxHero=t[9]
+e.teamMixHeroNew=t[10]
+e.teamMaxHeroNew=t[11]
+e.skyBattleBoxLv=t[12]
+e.skyBattleBoxAwardStar6=t[13]
+e.skyBattleBoxAwardStar5=t[14]
+e.skyBattleBoxAwardStar4=t[15]
+e.skyBattleBoxAwardStar3=t[16]
+e.skyBattleBoxAwardStarNewbie=t[17]
+e.monsters=t[18]
+e.skyCityName=t[19]
+e.MapskyCityIcon=t[20]
+e.UIskyCityIcon=t[21]
+e.UIskyCityIcon2=t[22]
+e.UIskyCitysmallIcon=t[23]
+e.skyBattleBoxAwardStar6New=t[24]
+e.skyBattleBoxAwardStar5New=t[25]
+e.skyBattleBoxAwardStar4New=t[26]
+e.skyBattleBoxAwardStar3New=t[27]
+e.skyBattleBoxAwardStar6New2=t[28]
+e.skyBattleBoxAwardStar5New2=t[29]
+e.skyBattleBoxAwardStar4New2=t[30]
+e.skyBattleBoxAwardStar3New2=t[31]
+e.skyBattleBoxAwardStar6New3=t[32]
+e.skyBattleBoxAwardStar5New3=t[33]
+e.skyBattleBoxAwardStar4New3=t[34]
+e.skyBattleBoxAwardStar3New3=t[35]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/cityWar/DTCityWarEntityTableData')
+end
+return a 

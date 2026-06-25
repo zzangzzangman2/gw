@@ -1,0 +1,26 @@
+local e={id=0,group=0,photo="",depict="",headline=""}
+e.__index=e
+function e.New(o,n,a,s,i)
+local t={}
+setmetatable(t,e)
+t.id=o
+t.group=n
+t.photo=a
+t.depict=s
+t.headline=i
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.group=a[2]
+t.photo=a[3]
+t.depict=a[4]
+t.headline=a[5]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/activity/DTActivityWarehousePhotoEntityTableData')
+end
+return e 

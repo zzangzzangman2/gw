@@ -1,0 +1,7 @@
+spine_fly_qipao.png
+size:128,128
+filter:Linear,Linear
+ljzm_xiaoqipaokuang
+bounds:2,2,74,61
+ljzm_xiaoqipaokuang2
+bounds:78,51,11,12

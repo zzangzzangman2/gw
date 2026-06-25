@@ -1,0 +1,54 @@
+local a={id=0,eventType=0,animType=0,eventParam=0,eventAward={{},{}},eventAward102={{},{}},pointAward=0,eventShowPrefab=0,eventAwardPosFix={},explorePont=0,icon="",iconSmall="",name="",desc="",eventShowAward={{},{}},eventShowAward102={{},{}},winLine="",loseLine="",autoAwardLine=""}
+a.__index=a
+function a.New(d,c,l,t,f,m,y,v,p,b,g,w,u,n,i,o,s,r,h)
+local e={}
+setmetatable(e,a)
+e.id=d
+e.eventType=c
+e.animType=l
+e.eventParam=t
+e.eventAward=f
+e.eventAward102=m
+e.pointAward=y
+e.eventShowPrefab=v
+e.eventAwardPosFix=p
+e.explorePont=b
+e.icon=g
+e.iconSmall=w
+e.name=u
+e.desc=n
+e.eventShowAward=i
+e.eventShowAward102=o
+e.winLine=s
+e.loseLine=r
+e.autoAwardLine=h
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.eventType=t[2]
+e.animType=t[3]
+e.eventParam=t[4]
+e.eventAward=t[5]
+e.eventAward102=t[6]
+e.pointAward=t[7]
+e.eventShowPrefab=t[8]
+e.eventAwardPosFix=t[9]
+e.explorePont=t[10]
+e.icon=t[11]
+e.iconSmall=t[12]
+e.name=t[13]
+e.desc=t[14]
+e.eventShowAward=t[15]
+e.eventShowAward102=t[16]
+e.winLine=t[17]
+e.loseLine=t[18]
+e.autoAwardLine=t[19]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/worldTree/DTWorldTreeEventEntityTableData')
+end
+return a 

@@ -1,0 +1,36 @@
+local a={id=0,type=0,args=0,isFirstFree=0,cost={{},{}},icon="",name="",desc="",spAni="",displayInPve=0}
+a.__index=a
+function a.New(n,r,s,t,l,u,d,h,o,i)
+local e={}
+setmetatable(e,a)
+e.id=n
+e.type=r
+e.args=s
+e.isFirstFree=t
+e.cost=l
+e.icon=u
+e.name=d
+e.desc=h
+e.spAni=o
+e.displayInPve=i
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.type=t[2]
+e.args=t[3]
+e.isFirstFree=t[4]
+e.cost=t[5]
+e.icon=t[6]
+e.name=t[7]
+e.desc=t[8]
+e.spAni=t[9]
+e.displayInPve=t[10]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/mineBattle/DTMineBattleBuffEntityTableData')
+end
+return a 

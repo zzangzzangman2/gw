@@ -1,0 +1,11 @@
+local t={}
+function t:OnHandle(e)
+local e=assert(GlobalPB.decode("PRT_CRUISE_GIFT_INFO_RESP",e));
+if(GameInit.GetDebugLogProto())then
+;
+;
+end
+ModulesInit.CruiseShipGiftMgr:ResCruiseGiftInfo(e)
+return e
+end
+return t 

@@ -1,0 +1,36 @@
+local a={id=0,activityCfgId=0,taskTabType=0,taskType=0,targetCount=0,tastTeam=0,normalAward={{},{}},jumpId=0,desc="",dlcTask={}}
+a.__index=a
+function a.New(n,r,s,t,l,u,d,h,o,i)
+local e={}
+setmetatable(e,a)
+e.id=n
+e.activityCfgId=r
+e.taskTabType=s
+e.taskType=t
+e.targetCount=l
+e.tastTeam=u
+e.normalAward=d
+e.jumpId=h
+e.desc=o
+e.dlcTask=i
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.activityCfgId=t[2]
+e.taskTabType=t[3]
+e.taskType=t[4]
+e.targetCount=t[5]
+e.tastTeam=t[6]
+e.normalAward=t[7]
+e.jumpId=t[8]
+e.desc=t[9]
+e.dlcTask=t[10]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/worldTree/DTWorldTreeTaskEntityTableData')
+end
+return a 

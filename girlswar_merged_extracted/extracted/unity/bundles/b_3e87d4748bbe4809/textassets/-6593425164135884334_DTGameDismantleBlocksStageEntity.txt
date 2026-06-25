@@ -1,0 +1,24 @@
+local e={id=0,speed=0,integral=0,targetPoint=0}
+e.__index=e
+function e.New(o,a,n,i)
+local t={}
+setmetatable(t,e)
+t.id=o
+t.speed=a
+t.integral=n
+t.targetPoint=i
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.speed=a[2]
+t.integral=a[3]
+t.targetPoint=a[4]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/activity/DTGameDismantleBlocksStageEntityTableData')
+end
+return e 

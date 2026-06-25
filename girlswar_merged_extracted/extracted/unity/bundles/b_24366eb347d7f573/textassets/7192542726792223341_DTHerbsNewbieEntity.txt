@@ -1,0 +1,40 @@
+local a={id=0,nextSynthesis=0,points=0,speedyPoints=0,rapidPoints=0,award={},speedyAward={},rapidyAward={},herbsName="",herbsIcon="",herbsDesc="",levelIcon=""}
+a.__index=a
+function a.New(s,d,h,t,u,c,m,l,r,i,o,n)
+local e={}
+setmetatable(e,a)
+e.id=s
+e.nextSynthesis=d
+e.points=h
+e.speedyPoints=t
+e.rapidPoints=u
+e.award=c
+e.speedyAward=m
+e.rapidyAward=l
+e.herbsName=r
+e.herbsIcon=i
+e.herbsDesc=o
+e.levelIcon=n
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.nextSynthesis=t[2]
+e.points=t[3]
+e.speedyPoints=t[4]
+e.rapidPoints=t[5]
+e.award=t[6]
+e.speedyAward=t[7]
+e.rapidyAward=t[8]
+e.herbsName=t[9]
+e.herbsIcon=t[10]
+e.herbsDesc=t[11]
+e.levelIcon=t[12]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/herbs/DTHerbsNewbieEntityTableData')
+end
+return a 

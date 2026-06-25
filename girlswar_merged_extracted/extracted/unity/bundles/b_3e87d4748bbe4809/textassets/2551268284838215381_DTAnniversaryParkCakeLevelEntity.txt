@@ -1,0 +1,28 @@
+local e={id=0,icon="",bg="",point=0,randomRate=0,pool={{},{}}}
+e.__index=e
+function e.New(a,i,o,h,s,n)
+local t={}
+setmetatable(t,e)
+t.id=a
+t.icon=i
+t.bg=o
+t.point=h
+t.randomRate=s
+t.pool=n
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.icon=a[2]
+t.bg=a[3]
+t.point=a[4]
+t.randomRate=a[5]
+t.pool=a[6]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/activity/DTAnniversaryParkCakeLevelEntityTableData')
+end
+return e 

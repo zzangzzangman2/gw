@@ -1,0 +1,8 @@
+duizhangqizi.png
+size:128,128
+filter:Linear,Linear
+effect_1
+bounds:0,0,100,98
+icon_xdz
+bounds:101,61,37,27
+rotate:90

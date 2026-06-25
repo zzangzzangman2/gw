@@ -1,0 +1,6 @@
+qhqw_renzhi1.png
+size:128,256
+filter:Linear,Linear
+scale:0.55
+spkjs1
+bounds:0,0,115,167

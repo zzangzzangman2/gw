@@ -1,0 +1,26 @@
+local e={id=0,source=0,sourceNum=0,target=0,targetNum=0}
+e.__index=e
+function e.New(o,n,a,s,i)
+local t={}
+setmetatable(t,e)
+t.id=o
+t.source=n
+t.sourceNum=a
+t.target=s
+t.targetNum=i
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.source=a[2]
+t.sourceNum=a[3]
+t.target=a[4]
+t.targetNum=a[5]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/worldTree/DTWorldTreeItemComposeEntityTableData')
+end
+return e 

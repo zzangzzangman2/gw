@@ -1,0 +1,32 @@
+local a={id=0,type=0,limtTime=0,awardPoint={{},{}},name="",claimConsumption=0,likability=0,jump=0}
+a.__index=a
+function a.New(i,h,n,t,d,r,s,o)
+local e={}
+setmetatable(e,a)
+e.id=i
+e.type=h
+e.limtTime=n
+e.awardPoint=t
+e.name=d
+e.claimConsumption=r
+e.likability=s
+e.jump=o
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.type=t[2]
+e.limtTime=t[3]
+e.awardPoint=t[4]
+e.name=t[5]
+e.claimConsumption=t[6]
+e.likability=t[7]
+e.jump=t[8]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/activity/DTBulunConfessionTaskEntityTableData')
+end
+return a 

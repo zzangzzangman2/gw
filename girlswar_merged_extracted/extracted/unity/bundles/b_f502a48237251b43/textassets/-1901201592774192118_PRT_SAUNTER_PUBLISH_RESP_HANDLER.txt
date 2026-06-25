@@ -1,0 +1,11 @@
+local t={}
+function t:OnHandle(e)
+local e=assert(GlobalPB.decode("PRT_SAUNTER_PUBLISH_RESP",e));
+if(GameInit.GetDebugLogProto())then
+;
+;
+end
+ModulesInit.ActSaunteredMgr:respActSanuterPublish(e)
+return e
+end
+return t 

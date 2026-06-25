@@ -1,0 +1,48 @@
+local a={id=0,taskType=0,taskTypeNew=0,day=0,targetCount={},targetCountNew={},normalAward={},normalAwardNew={},livelyAward={},livelyAwardNew={},isClose=0,isCloseNew=0,jumpId=0,jumpIdNew=0,desc="",descNew=""}
+a.__index=a
+function a.New(h,u,d,t,c,f,y,w,p,m,l,n,i,o,s,r)
+local e={}
+setmetatable(e,a)
+e.id=h
+e.taskType=u
+e.taskTypeNew=d
+e.day=t
+e.targetCount=c
+e.targetCountNew=f
+e.normalAward=y
+e.normalAwardNew=w
+e.livelyAward=p
+e.livelyAwardNew=m
+e.isClose=l
+e.isCloseNew=n
+e.jumpId=i
+e.jumpIdNew=o
+e.desc=s
+e.descNew=r
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.taskType=t[2]
+e.taskTypeNew=t[3]
+e.day=t[4]
+e.targetCount=t[5]
+e.targetCountNew=t[6]
+e.normalAward=t[7]
+e.normalAwardNew=t[8]
+e.livelyAward=t[9]
+e.livelyAwardNew=t[10]
+e.isClose=t[11]
+e.isCloseNew=t[12]
+e.jumpId=t[13]
+e.jumpIdNew=t[14]
+e.desc=t[15]
+e.descNew=t[16]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/activity/DTNewestFourteenCarnivalTaskEntityTableData')
+end
+return a 

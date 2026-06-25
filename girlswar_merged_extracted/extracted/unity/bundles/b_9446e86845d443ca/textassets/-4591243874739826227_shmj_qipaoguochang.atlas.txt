@@ -1,0 +1,8 @@
+shmj_qipaoguochang.png
+size:512,512
+filter:Linear,Linear
+baiping
+bounds:2,2,168,72
+paopao_0001
+bounds:2,76,262,262
+offsets:146,67,550,400

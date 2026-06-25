@@ -1,0 +1,9 @@
+sp_magicOrchard_hole.png
+size:256,128
+filter:Linear,Linear
+mfgy_kuangdongtu
+bounds:0,2,128,84
+mfgy_kuangdongtu1
+bounds:130,0,86,50
+offsets:21,17,128,84
+rotate:90

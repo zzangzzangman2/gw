@@ -1,0 +1,11 @@
+local t={}
+function t:OnHandle(e)
+local e=assert(GlobalPB.decode("PRT_RANK_PLAYER_FIGHT_TOP_RESP",e));
+if(GameInit.GetDebugLogProto())then
+;
+;
+end
+ModulesInit.RankListManager:OnFightRankTopResponse(e)
+return e
+end
+return t 

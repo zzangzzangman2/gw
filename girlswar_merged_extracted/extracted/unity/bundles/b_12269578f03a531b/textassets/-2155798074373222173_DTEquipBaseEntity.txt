@@ -1,0 +1,40 @@
+local a={id=0,forgingScoreMax=0,recastingScore=0,recastingRate={{},{}},ssrExchangeURTimes=0,ssrExchangeCost={},ssrExchangeAward={},urEntryReturn={},urEntryExReMake={},urSWoldMakeEx={},swEquipeDelyTime=0,perfectResolveNum=0}
+a.__index=a
+function a.New(s,d,h,t,u,c,m,l,r,i,o,n)
+local e={}
+setmetatable(e,a)
+e.id=s
+e.forgingScoreMax=d
+e.recastingScore=h
+e.recastingRate=t
+e.ssrExchangeURTimes=u
+e.ssrExchangeCost=c
+e.ssrExchangeAward=m
+e.urEntryReturn=l
+e.urEntryExReMake=r
+e.urSWoldMakeEx=i
+e.swEquipeDelyTime=o
+e.perfectResolveNum=n
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.forgingScoreMax=t[2]
+e.recastingScore=t[3]
+e.recastingRate=t[4]
+e.ssrExchangeURTimes=t[5]
+e.ssrExchangeCost=t[6]
+e.ssrExchangeAward=t[7]
+e.urEntryReturn=t[8]
+e.urEntryExReMake=t[9]
+e.urSWoldMakeEx=t[10]
+e.swEquipeDelyTime=t[11]
+e.perfectResolveNum=t[12]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/equip/DTEquipBaseEntityTableData')
+end
+return a 

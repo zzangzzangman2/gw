@@ -1,0 +1,36 @@
+local a={id=0,name="",featuredGift={},ordinaryGift={},fixedReward={},fixedReward2={},exchangeItem={},goods=0,timesLimit=0,listid=0}
+a.__index=a
+function a.New(n,r,s,t,l,u,d,h,o,i)
+local e={}
+setmetatable(e,a)
+e.id=n
+e.name=r
+e.featuredGift=s
+e.ordinaryGift=t
+e.fixedReward=l
+e.fixedReward2=u
+e.exchangeItem=d
+e.goods=h
+e.timesLimit=o
+e.listid=i
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.name=t[2]
+e.featuredGift=t[3]
+e.ordinaryGift=t[4]
+e.fixedReward=t[5]
+e.fixedReward2=t[6]
+e.exchangeItem=t[7]
+e.goods=t[8]
+e.timesLimit=t[9]
+e.listid=t[10]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/activity/DTAnniversaryFestivalGiftEntityTableData')
+end
+return a 

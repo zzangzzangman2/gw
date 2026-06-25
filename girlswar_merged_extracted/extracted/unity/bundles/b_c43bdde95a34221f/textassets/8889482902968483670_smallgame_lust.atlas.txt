@@ -1,0 +1,9 @@
+smallgame_lust.png
+size:128,256
+filter:Linear,Linear
+tzrujt1
+bounds:54,23,30,30
+tzrujt2
+bounds:0,0,53,53
+xiezhen
+bounds:0,54,86,89

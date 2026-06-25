@@ -1,0 +1,26 @@
+
+?
+ActGoldBox.protoCommons.proto"O
+PRT_GOLD_BOX_TASK_TYPE_INFO
+taskType (RtaskType
+cycle (Rcycle"
+PRT_GOLD_BOX_INFO_REQ"4
+PRT_GOLD_BOX_INFO_RESP
+leftTime (RleftTime"<
+PRT_GOLD_BOX_DRAW_REQ#
+type (2.ENUM_DRAW_TYPERtype"f
+PRT_GOLD_BOX_DRAW_RESP#
+type (2.ENUM_DRAW_TYPERtype'
+things (2.PRT_ONCE_AWARDRthings"
+PRT_GOLD_BOX_TASK_REQ"?
+PRT_GOLD_BOX_TASK_RESP
+leftTime (RleftTime
+tasks (2	.PRT_TASKRtasks:
+	taskTypes (2.PRT_GOLD_BOX_TASK_TYPE_INFOR	taskTypes"S
+PRT_GOLD_BOX_TASK_AWARD_REQ
+taskDid (RtaskDid
+taskType (RtaskType"T
+PRT_GOLD_BOX_TASK_AWARD_RESP
+taskDid (RtaskDid
+taskType (RtaskTypeB
+com.next1b.nextsvr.protobproto3

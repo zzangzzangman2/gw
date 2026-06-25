@@ -1,0 +1,20 @@
+
+?
+ActSevenDayLoginLucky.protoCommons.proto"$
+"PRT_SEVEN_DAY_LOGIN_LUCKY_INFO_REQ"?
+#PRT_SEVEN_DAY_LOGIN_LUCKY_INFO_RESP
+endTime (RendTime
+	loginDays (R	loginDays"
+receivedDids (RreceivedDids&
+bpReceivedDids (RbpReceivedDids
+charge (Rcharge"Q
+%PRT_SEVEN_DAY_LOGIN_LUCKY_RECEIVE_REQ
+day (Rday
+charge (Rcharge"?
+&PRT_SEVEN_DAY_LOGIN_LUCKY_RECEIVE_RESP"
+receivedDids (RreceivedDids
+charge (Rcharge&
+bpReceivedDids (RbpReceivedDids$
+rewards (2
+.PRT_THINGRrewardsB
+com.next1b.nextsvr.protobproto3

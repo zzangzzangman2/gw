@@ -1,0 +1,235 @@
+local i=nil
+local t={isLoadFull=false,isLoadIO=false}
+local e=t
+local a={};
+local o={};
+local h='lkjaljaaasrte'
+local s='DTIslandSevenDayAward'
+function t.LoadList()
+if(GameInit.ServerLoadTable)then
+local t=e.DeserializeFromJson()
+e.InitRequire(t)
+e.isLoadIO=false
+else
+if GameTools.ClientIsSupportIOLoad()==false then
+e.isLoadIO=false
+return
+end
+if e.isLoadIO then
+e.InitIO()
+else
+end
+end
+end
+function t.InitIO()
+local t,a
+if CS.UnityEngine.Application.platform==CS.UnityEngine.RuntimePlatform.WindowsEditor or CS.UnityEngine.Application.platform==CS.UnityEngine.RuntimePlatform.OSXEditor then
+if CS.YouYou.MacroDefine.DISABLE_ASSETBUNDLE then
+local e=CS.UnityEngine.Application.dataPath
+t=e..'/Download/IO/activity/DTIslandSevenDayAwardEntityTableDataHeader.bigd'
+a=e..'/Download/IO/activity/DTIslandSevenDayAwardEntityTableData.bigd'
+else
+t=e.GetFilePath('/download/config/activity/DTIslandSevenDayAwardEntityTableDataHeader.bigd')
+a=e.GetFilePath('/download/config/activity/DTIslandSevenDayAwardEntityTableData.bigd')
+end
+else
+t=e.GetFilePath('/download/config/activity/DTIslandSevenDayAwardEntityTableDataHeader.bigd')
+a=e.GetFilePath('/download/config/activity/DTIslandSevenDayAwardEntityTableData.bigd')
+end
+e.headPath=t
+e.dataPath=a
+e.GetIOArr()
+end
+function t.GetFilePath(o)
+local e=CS.UnityEngine.Application.persistentDataPath
+local a=e..o
+local t=io.open(a,'r')
+if t then
+t:close()
+return a
+else
+return e..'/buildCfg'..o
+end
+end
+function t.GetIOArr()
+if e.DataTableHeader then
+return
+end
+e.DataTableHeader=require('Common/DataTableHeader'):New()
+e.DataTableHeader.encrypt=false
+e.DataTableHeader:LoadFile(e.headPath)
+end
+function t.InitRequire(n)
+a={}
+o={}
+i=require('DataNode/DataTable/Create/activity/DTIslandSevenDayAwardEntity')
+if n==nil then
+n=i.GetArr()
+end
+for e=1,n.Len do
+local e=n.ByIdx[e];
+local e=i.NewFromArrItem(e)
+local t=e.id
+e=GameTools:DTSetMetatableIndex(s,e)
+a[#a+1]=e
+o[t]=e
+end
+i=nil
+if GameInit.ServerLoadTable==false then
+t:RemoveRequiredByName('DataNode/DataTable/Create/activity/DTIslandSevenDayAwardEntityTableData')
+t:RemoveRequiredByName('DataNode/DataTable/Create/activity/DTIslandSevenDayAwardEntity')
+end
+e.isLoadFull=true
+end
+function t:RemoveRequiredByName(e)
+for t,a in pairs(package.preload)do
+if string.find(tostring(t),e)==1 then
+package.preload[t]=nil
+end
+end
+for t,a in pairs(package.loaded)do
+if string.find(tostring(t),e)==1 then
+package.loaded[t]=nil
+end
+end
+end
+function t.GetList()
+local t={}
+if not e.isLoadIO then
+if e.isLoadFull==false then
+e.InitRequire()
+end
+t=a
+else
+if e.isLoadFull then
+t=a
+else
+e.GetListByIO()
+e.isLoadFull=true
+
+t=a
+end
+end
+return GameTools:FilterCfgList(t)
+end
+function t.GetListByIO()
+a={}
+o={}
+local t=io.open(e.dataPath,'rb')
+local i={}
+for a,e in pairs(e.DataTableHeader.idsMap)do
+t:seek('set',e.begin)
+local e=t:read(e.len)
+table.insert(i,e)
+end
+t:close()
+local t
+local r,n
+if e.DataTableHeader.encrypt then
+t=CS.XXTEAUtil.DecryptGetArray(i,h)
+r=t.Length-1
+n=0
+else
+t=i
+r=#t
+n=1
+end
+for e=n,r do
+local e=JsonUtil.decode(t[e])
+local t=e.id
+e=GameTools:DTSetMetatableIndex(s,e)
+a[#a+1]=e
+o[t]=e
+end
+end
+function t.GetEntity(i)
+local n
+if e.isLoadIO then
+local t=o[i]
+if e.isLoadFull and t==nil then
+return nil
+end
+if t==nil then
+local r=e.DataTableHeader.idsMap[i]
+if r==nil then
+return nil
+end
+t=e.DataTableHeader:GetEntityByHeadData(e.dataPath,h,r)
+t=GameTools:DTSetMetatableIndex(s,t)
+a[#a+1]=t
+o[i]=t
+if#a==e.DataTableHeader.len then
+e.isLoadFull=true
+end
+n=t
+else
+n=t
+end
+else
+if e.isLoadFull==false then
+e.InitRequire()
+end
+n=o[i]
+end
+return GameTools:FilterCfg(n)
+end
+function t.Clear()
+e.isLoadFull=false
+a={}
+o={}
+end
+if GameInit==nil then
+e.index=require('DataNode/DataTable/Create/activity/DTIslandSevenDayAwardEntityIndex')
+e.index.Init()
+elseif GameInit.ServerLoadTable==false then
+e.index=require('DataNode/DataTable/Create/activity/DTIslandSevenDayAwardEntityIndex')
+e.index.Init()
+end
+function t.GetByIndex(t,i)
+local i=e.index.GetByIndex(t,tostring(i))
+if i==nil then
+return{}
+end
+if not e.isLoadIO then
+if e.isLoadFull==false then
+e.InitRequire()
+end
+end
+local t={}
+local n={}
+for s=1,#i do
+local a=o[tonumber(i[s])]
+if a then
+table.insert(t,a)
+else
+table.insert(n,e.DataTableHeader.idsMap[tonumber(i[s])])
+end
+end
+if#n>0 then
+local e=e.DataTableHeader:GetEntitiesByIds(e.dataPath,h,n)
+for i=1,#e do
+local e=e[i]
+e=GameTools:DTSetMetatableIndex(s,e)
+a[#a+1]=e
+o[e.id]=e
+table.insert(t,e)
+end
+table.sort(t,function(t,e)return t.id<e.id end)
+end
+return t
+end
+function t.Get_ActivityStage(e)
+local e=e
+return t.GetByIndex('index_1',e)
+end
+function t.SerializeToJson()
+i=require('DataNode/DataTable/Create/activity/DTIslandSevenDayAwardEntity')
+local e=i.GetArr()
+local e=JsonUtil.encode(e)
+GameInit.WriteFile("DTIslandSevenDayAwardEntityData.txt",e)
+end
+function t.DeserializeFromJson()
+local e=GameInit.ReadJsonData("DTIslandSevenDayAwardEntityData.txt")
+return e
+end
+return t 

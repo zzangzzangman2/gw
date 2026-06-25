@@ -1,0 +1,11 @@
+local e=
+{
+ByIdx={
+{1,1,2,1,{{26101,10}},"DTUrTask_1_Market",1},
+{2,1,3,2,{{0,1}},"DTUrTask_1_Market",2},
+{3,2,1,1,{{26101,10}},"DTLrTask_2_Market",3},
+{4,2,2,3,{{0,1}},"DTLrTask_2_Market",4}
+},
+Len=4
+}
+return e 

@@ -1,0 +1,5 @@
+xianshidazuzhan2.png
+size:1024,1024
+filter:Linear,Linear
+xsdzz_gx
+bounds:0,0,800,800

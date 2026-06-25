@@ -1,0 +1,8 @@
+
+?
+ActXiandanGift.proto"
+PRT_XIANDAN_GIFT_INFO_REQ"T
+PRT_XIANDAN_GIFT_INFO_RESP
+leftTime (RleftTime
+payCount (RpayCountB
+com.next1b.nextsvr.protobproto3

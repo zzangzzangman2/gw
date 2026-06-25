@@ -1,0 +1,10 @@
+local e=
+{
+ByIdx={
+{1,304,1,1,{{26178,10}},"UIActCandyLand/tangguolibao_2"},
+{2,308,1,1,{{26178,20}},"UIActCandyLand/tangguolibao_3"},
+{3,314,1,1,{{26178,40}},"UIActCandyLand/tangguolibao_4"}
+},
+Len=3
+}
+return e 

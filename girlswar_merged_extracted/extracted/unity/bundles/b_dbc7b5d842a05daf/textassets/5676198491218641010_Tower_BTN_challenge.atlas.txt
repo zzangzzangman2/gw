@@ -1,0 +1,13 @@
+Tower_BTN_challenge.png
+size:256,256
+filter:Linear,Linear
+A1
+bounds:129,129,90,43
+rotate:90
+A2
+bounds:94,2,90,82
+rotate:90
+A3
+bounds:2,9,90,83
+A4
+bounds:2,94,125,125

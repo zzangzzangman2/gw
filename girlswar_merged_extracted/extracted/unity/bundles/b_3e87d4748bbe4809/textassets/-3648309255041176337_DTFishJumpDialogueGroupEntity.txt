@@ -1,0 +1,22 @@
+local e={id=0,dialogue={},playMode=0}
+e.__index=e
+function e.New(o,a,i)
+local t={}
+setmetatable(t,e)
+t.id=o
+t.dialogue=a
+t.playMode=i
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.dialogue=a[2]
+t.playMode=a[3]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/activity/DTFishJumpDialogueGroupEntityTableData')
+end
+return e 

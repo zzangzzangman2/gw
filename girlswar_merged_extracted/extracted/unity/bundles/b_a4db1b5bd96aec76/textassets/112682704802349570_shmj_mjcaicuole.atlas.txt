@@ -1,0 +1,6 @@
+shmj_mjcaicuole.png
+size:512,128
+filter:Linear,Linear
+h
+bounds:2,2,356,101
+offsets:1,1,358,103

@@ -1,0 +1,53 @@
+
+?
+NewYearBless.protoCommons.protoErrorCode.proto" 
+PRT_NEWYEAR_BLESS_ACT_INFO_REQ"!
+PRT_NEWYEAR_BLESS_ACT_INFO_RESP"!
+PRT_NEWYEAR_BLESS_TASK_INFO_REQ"Y
+ PRT_NEWYEAR_BLESS_TASK_INFO_RESP
+curDay (RcurDay
+task (2	.PRT_TASKRtask"2
+PRT_NEWYEAR_BLESS_REC_TASK_REQ
+did (Rdid"b
+PRT_NEWYEAR_BLESS_REC_TASK_RESP 
+award (2
+.PRT_THINGRaward
+task (2	.PRT_TASKRtask"!
+PRT_NEWYEAR_BLESS_REC_AWARD_REQ"D
+ PRT_NEWYEAR_BLESS_REC_AWARD_RESP 
+award (2
+.PRT_THINGRaward"M
+PRT_NEWYEAR_BLESS_COUNT_SYN
+count (Rcount
+endTime (RendTime"
+PRT_NEWYEAR_BLESS_COUNT_REQ"z
+PRT_NEWYEAR_BLESS_COUNT_RESP
+count (Rcount
+status (Rstatus
+endTime (RendTime
+join (Rjoin"
+PRT_NEWYEAR_BLESS_STATUS_REQ"a
+PRT_NEWYEAR_BLESS_STATUS_RESP
+count (Rcount
+status (Rstatus
+join (Rjoin"?
+"PRT_CS_NEWYEAR_BLESS_REC_TASK_RESP
+playerId (RplayerId
+result (Rresult"
+errCode (2.ErrCodeRerrCode
+did (Rdid
+task (2	.PRT_TASKRtask"P
+PRT_CS_NEWYEAR_BLESS_COUNT_SYN
+count (Rcount
+endTime (RendTime"}
+#PRT_CS_NEWYEAR_BLESS_REC_AWARD_RESP
+playerId (RplayerId
+result (Rresult"
+errCode (2.ErrCodeRerrCode"@
+"PRT_CS_NEWYEAR_BLESS_RED_POINT_REQ
+playerId (RplayerId"?
+#PRT_CS_NEWYEAR_BLESS_RED_POINT_RESP
+playerId (RplayerId3
+redPointIds (2.ENUM_REDPOINT_IDRredPointIds2
+isSendToOnlinePlayer (RisSendToOnlinePlayerB
+com.next1b.nextsvr.protobproto3

@@ -1,0 +1,8 @@
+jtzbz.png
+size:128,256
+filter:Linear,Linear
+images/jtzbz_btntiaozhan1
+bounds:2,2,57,61
+rotate:90
+images/jtzbz_btntiaozhan2
+bounds:2,61,94,95

@@ -1,0 +1,30 @@
+local t={id=0,freeTimes=0,consume={{},{}},battleScoreRate=0,endTime=0,minRank=0,maxRank=0}
+t.__index=t
+function t.New(o,h,a,s,r,n,i)
+local e={}
+setmetatable(e,t)
+e.id=o
+e.freeTimes=h
+e.consume=a
+e.battleScoreRate=s
+e.endTime=r
+e.minRank=n
+e.maxRank=i
+return e
+end
+function t.NewFromArrItem(a)
+local e={}
+setmetatable(e,t)
+e.id=a[1]
+e.freeTimes=a[2]
+e.consume=a[3]
+e.battleScoreRate=a[4]
+e.endTime=a[5]
+e.minRank=a[6]
+e.maxRank=a[7]
+return e
+end
+function t.GetArr()
+return require('DataNode/DataTable/Create/girlChallenge/DTGirlChallengeBaseEntityTableData')
+end
+return t 

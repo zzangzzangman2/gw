@@ -1,0 +1,20 @@
+local e={id="",sortId=0}
+e.__index=e
+function e.New(a,o)
+local t={}
+setmetatable(t,e)
+t.id=a
+t.sortId=o
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.sortId=a[2]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/live2d/DTLive2dHitArea21084EntityTableData')
+end
+return e 

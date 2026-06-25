@@ -1,0 +1,13 @@
+shmj_zhenzhuguang.png
+size:256,256
+filter:Linear,Linear
+m2_00000
+bounds:0,0,101,100
+offsets:1,1,102,102
+rotate:90
+m9
+bounds:0,101,146,146
+offsets:4,4,154,154
+xing
+bounds:100,51,42,50
+offsets:2,2,46,55

@@ -1,0 +1,11 @@
+local t={}
+function t:OnHandle(e)
+local e=assert(GlobalPB.decode("PRT_SELF_UP_GIFT_INFO_RESP",e));
+if(GameInit.GetDebugLogProto())then
+;
+;
+end
+ModulesInit.ActSelfGiftMgr:syncActSelfGiftInfo(e)
+return e
+end
+return t 

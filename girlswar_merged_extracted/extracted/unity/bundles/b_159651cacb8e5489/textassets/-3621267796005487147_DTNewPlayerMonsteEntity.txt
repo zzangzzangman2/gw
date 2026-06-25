@@ -1,0 +1,56 @@
+local a={id=0,modelID=0,hideBar=0,hideShadow=0,monName="",monMode=0,profession=0,star=0,rankLevel=0,monType=0,monLevel=0,soulId=0,lockLevel=0,skillMode=0,monSkill1=0,monSkill2=0,monSkill3=0,monSkill4=0,monSkillPas={},monAttr={{},{}}}
+a.__index=a
+function a.New(l,m,u,t,w,f,p,b,v,g,k,y,c,s,n,i,o,h,d,r)
+local e={}
+setmetatable(e,a)
+e.id=l
+e.modelID=m
+e.hideBar=u
+e.hideShadow=t
+e.monName=w
+e.monMode=f
+e.profession=p
+e.star=b
+e.rankLevel=v
+e.monType=g
+e.monLevel=k
+e.soulId=y
+e.lockLevel=c
+e.skillMode=s
+e.monSkill1=n
+e.monSkill2=i
+e.monSkill3=o
+e.monSkill4=h
+e.monSkillPas=d
+e.monAttr=r
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.modelID=t[2]
+e.hideBar=t[3]
+e.hideShadow=t[4]
+e.monName=t[5]
+e.monMode=t[6]
+e.profession=t[7]
+e.star=t[8]
+e.rankLevel=t[9]
+e.monType=t[10]
+e.monLevel=t[11]
+e.soulId=t[12]
+e.lockLevel=t[13]
+e.skillMode=t[14]
+e.monSkill1=t[15]
+e.monSkill2=t[16]
+e.monSkill3=t[17]
+e.monSkill4=t[18]
+e.monSkillPas=t[19]
+e.monAttr=t[20]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/newPlayer/DTNewPlayerMonsteEntityTableData')
+end
+return a 

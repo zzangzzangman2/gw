@@ -1,0 +1,30 @@
+local t={id=0,functionId=0,icon="",showLevel={},showParam="",oldParam="",langCommonKey=""}
+t.__index=t
+function t.New(o,h,a,s,r,n,i)
+local e={}
+setmetatable(e,t)
+e.id=o
+e.functionId=h
+e.icon=a
+e.showLevel=s
+e.showParam=r
+e.oldParam=n
+e.langCommonKey=i
+return e
+end
+function t.NewFromArrItem(a)
+local e={}
+setmetatable(e,t)
+e.id=a[1]
+e.functionId=a[2]
+e.icon=a[3]
+e.showLevel=a[4]
+e.showParam=a[5]
+e.oldParam=a[6]
+e.langCommonKey=a[7]
+return e
+end
+function t.GetArr()
+return require('DataNode/DataTable/Create/function/DTLevelUpFunctionShowEntityTableData')
+end
+return t 

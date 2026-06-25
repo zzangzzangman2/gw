@@ -1,0 +1,26 @@
+local e={id=0,condition=0,award={{},{}},chestIcon="",chestOpenIcon=""}
+e.__index=e
+function e.New(o,n,a,s,i)
+local t={}
+setmetatable(t,e)
+t.id=o
+t.condition=n
+t.award=a
+t.chestIcon=s
+t.chestOpenIcon=i
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.condition=a[2]
+t.award=a[3]
+t.chestIcon=a[4]
+t.chestOpenIcon=a[5]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/worldTree/DTWorldTreeBoxRewardEntityTableData')
+end
+return e 

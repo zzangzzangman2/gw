@@ -1,0 +1,28 @@
+local e={id=0,mapId=0,score=0,award={{},{}},doubleAward={{},{}},spineRateName=""}
+e.__index=e
+function e.New(a,i,o,h,s,n)
+local t={}
+setmetatable(t,e)
+t.id=a
+t.mapId=i
+t.score=o
+t.award=h
+t.doubleAward=s
+t.spineRateName=n
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.mapId=a[2]
+t.score=a[3]
+t.award=a[4]
+t.doubleAward=a[5]
+t.spineRateName=a[6]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/activity/DTAnniversaryParkSnakeAwardEntityTableData')
+end
+return e 

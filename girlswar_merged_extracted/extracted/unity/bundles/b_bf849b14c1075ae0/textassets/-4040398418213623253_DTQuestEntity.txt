@@ -1,0 +1,60 @@
+local a={id=0,questSort=0,openLevel=0,listLv=0,questType=0,team=0,teamSeq=0,next=0,needCount=0,priority=0,isActiveCount=0,isClose=0,numType=0,reward={{},{}},name="",text="",icon="",jump=0,listNum=0,activePoint=0,isShow=0,isExp=0}
+a.__index=a
+function a.New(l,f,c,t,p,y,w,b,k,g,q,j,v,m,s,n,i,o,h,d,r,u)
+local e={}
+setmetatable(e,a)
+e.id=l
+e.questSort=f
+e.openLevel=c
+e.listLv=t
+e.questType=p
+e.team=y
+e.teamSeq=w
+e.next=b
+e.needCount=k
+e.priority=g
+e.isActiveCount=q
+e.isClose=j
+e.numType=v
+e.reward=m
+e.name=s
+e.text=n
+e.icon=i
+e.jump=o
+e.listNum=h
+e.activePoint=d
+e.isShow=r
+e.isExp=u
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.questSort=t[2]
+e.openLevel=t[3]
+e.listLv=t[4]
+e.questType=t[5]
+e.team=t[6]
+e.teamSeq=t[7]
+e.next=t[8]
+e.needCount=t[9]
+e.priority=t[10]
+e.isActiveCount=t[11]
+e.isClose=t[12]
+e.numType=t[13]
+e.reward=t[14]
+e.name=t[15]
+e.text=t[16]
+e.icon=t[17]
+e.jump=t[18]
+e.listNum=t[19]
+e.activePoint=t[20]
+e.isShow=t[21]
+e.isExp=t[22]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/quest/DTQuestEntityTableData')
+end
+return a 

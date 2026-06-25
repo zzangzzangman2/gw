@@ -1,0 +1,26 @@
+local e={id=0,turn=0,turnkey="",firstBattleDay="",secondBattleDay=""}
+e.__index=e
+function e.New(o,n,a,s,i)
+local t={}
+setmetatable(t,e)
+t.id=o
+t.turn=n
+t.turnkey=a
+t.firstBattleDay=s
+t.secondBattleDay=i
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.turn=a[2]
+t.turnkey=a[3]
+t.firstBattleDay=a[4]
+t.secondBattleDay=a[5]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/sourceWorld/DTSourceWorldDayShowEntityTableData')
+end
+return e 

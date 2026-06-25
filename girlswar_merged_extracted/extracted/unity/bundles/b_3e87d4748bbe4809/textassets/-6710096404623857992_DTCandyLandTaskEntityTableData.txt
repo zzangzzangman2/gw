@@ -1,0 +1,23 @@
+local e=
+{
+ByIdx={
+{1,1,3,{{21386,2}},181,"CandyLandTask_1"},
+{2,2,6,{{21386,2}},0,"CandyLandTask_2"},
+{3,5,20,{{21386,2}},16,"CandyLandTask_3"},
+{4,3,30,{{21386,2}},40,"CandyLandTask_4"},
+{5,1,12,{{21386,2}},181,"CandyLandTask_1"},
+{6,2,4,{{21386,2}},0,"CandyLandTask_6"},
+{7,4,10,{{21386,2}},138,"CandyLandTask_7"},
+{8,5,5,{{21386,2}},16,"CandyLandTask_8"},
+{9,4,5,{{21386,2}},138,"CandyLandTask_9"},
+{10,4,15,{{21386,2}},138,"CandyLandTask_10"},
+{11,5,15,{{21386,2}},16,"CandyLandTask_11"},
+{12,3,60,{{21386,2}},40,"CandyLandTask_12"},
+{13,2,2,{{21386,2}},0,"CandyLandTask_13"},
+{14,7,40,{{21386,2}},182,"CandyLandTask_14"},
+{15,7,20,{{21386,2}},182,"CandyLandTask_15"},
+{16,6,900,{{21386,2}},185,"CandyLandTask_16"}
+},
+Len=16
+}
+return e 

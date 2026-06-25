@@ -1,0 +1,10 @@
+sp_BondFestival_Expression.png
+size:128,64
+filter:Linear,Linear
+pma:true
+scale:0.17
+aixin
+bounds:73,26,31,29
+rotate:90
+qipao
+bounds:0,0,73,57

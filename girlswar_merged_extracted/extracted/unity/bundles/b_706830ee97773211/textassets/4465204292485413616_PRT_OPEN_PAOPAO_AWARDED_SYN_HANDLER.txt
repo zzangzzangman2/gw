@@ -1,0 +1,11 @@
+local t={}
+function t:OnHandle(e)
+local e=assert(GlobalPB.decode("PRT_OPEN_PAOPAO_AWARDED_SYN",e));
+if(GameInit.GetDebugLogProto())then
+;
+;
+end
+PlayerMgr.paopaoAwardedList=e.dids
+return e
+end
+return t 

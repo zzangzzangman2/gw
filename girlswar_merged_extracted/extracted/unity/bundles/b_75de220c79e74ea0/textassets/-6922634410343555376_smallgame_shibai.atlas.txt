@@ -1,0 +1,15 @@
+smallgame_shibai.png
+size:2048,256
+filter:Linear,Linear
+xx2
+bounds:217,46,62,61
+youji_bai
+bounds:109,0,107,107
+youji_changtiao2
+bounds:0,108,1269,129
+youji_guang2
+bounds:1270,22,427,215
+youji_shi
+bounds:0,0,108,107
+youji_yuanpan2
+bounds:1698,9,228,228

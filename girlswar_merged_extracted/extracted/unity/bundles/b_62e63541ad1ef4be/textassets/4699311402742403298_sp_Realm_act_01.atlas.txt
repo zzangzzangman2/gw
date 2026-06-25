@@ -1,0 +1,5 @@
+sp_Realm_act_01.png
+size:512,512
+filter:Linear,Linear
+ljzm_sdjs
+bounds:0,0,391,373

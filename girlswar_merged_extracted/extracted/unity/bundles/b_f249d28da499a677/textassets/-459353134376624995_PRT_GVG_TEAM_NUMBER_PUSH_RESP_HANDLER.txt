@@ -1,0 +1,11 @@
+local t={}
+function t:OnHandle(e)
+local e=assert(GlobalPB.decode("PRT_GVG_TEAM_NUMBER_PUSH_RESP",e));
+if(GameInit.GetDebugLogProto())then
+;
+;
+end
+ModulesInit.SkyCityMgr:TeamNumberPush(e)
+return e
+end
+return t 

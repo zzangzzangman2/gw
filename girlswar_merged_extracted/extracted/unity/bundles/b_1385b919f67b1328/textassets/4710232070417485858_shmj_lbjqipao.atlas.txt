@@ -1,0 +1,9 @@
+shmj_lbjqipao.png
+size:128,256
+filter:Linear,Linear
+a1
+bounds:1,37,95,101
+offsets:1,1,97,105
+a1a
+bounds:1,1,39,35
+offsets:1,2,41,40

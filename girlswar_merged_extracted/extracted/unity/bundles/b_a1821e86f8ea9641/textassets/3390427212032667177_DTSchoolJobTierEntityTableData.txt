@@ -1,0 +1,31 @@
+local e=
+{
+ByIdx={
+{101,1,100,"classname_100","UISchoolWork/qyzy_img01","classname_101","classdesc_101","UISchoolWork/classphoto_101"},
+{102,2,100,"classname_100","UISchoolWork/qyzy_img01","classname_102","classdesc_102","UISchoolWork/classphoto_102"},
+{103,3,100,"classname_100","UISchoolWork/qyzy_img01","classname_103","classdesc_103","UISchoolWork/classphoto_103"},
+{201,1,200,"classname_200","UISchoolWork/qyzy_img02","classname_201","classdesc_201","UISchoolWork/classphoto_201"},
+{202,2,200,"classname_200","UISchoolWork/qyzy_img02","classname_202","classdesc_202","UISchoolWork/classphoto_202"},
+{203,3,200,"classname_200","UISchoolWork/qyzy_img02","classname_203","classdesc_203","UISchoolWork/classphoto_203"},
+{301,1,300,"classname_300","UISchoolWork/qyzy_img03","classname_301","classdesc_301","UISchoolWork/classphoto_301"},
+{302,2,300,"classname_300","UISchoolWork/qyzy_img03","classname_302","classdesc_302","UISchoolWork/classphoto_302"},
+{303,3,300,"classname_300","UISchoolWork/qyzy_img03","classname_303","classdesc_303","UISchoolWork/classphoto_303"},
+{401,1,400,"classname_400","UISchoolWork/qyzy_img04","classname_401","classdesc_401","UISchoolWork/classphoto_401"},
+{402,2,400,"classname_400","UISchoolWork/qyzy_img04","classname_402","classdesc_402","UISchoolWork/classphoto_402"},
+{403,3,400,"classname_400","UISchoolWork/qyzy_img04","classname_403","classdesc_403","UISchoolWork/classphoto_403"},
+{501,1,500,"classname_500","UISchoolWork/qyzy_img05","classname_501","classdesc_501","UISchoolWork/classphoto_501"},
+{502,2,500,"classname_500","UISchoolWork/qyzy_img05","classname_502","classdesc_502","UISchoolWork/classphoto_502"},
+{503,3,500,"classname_500","UISchoolWork/qyzy_img05","classname_503","classdesc_503","UISchoolWork/classphoto_503"},
+{601,1,600,"classname_600","UISchoolWork/qyzy_img06","classname_601","classdesc_601","UISchoolWork/classphoto_601"},
+{602,2,600,"classname_600","UISchoolWork/qyzy_img06","classname_602","classdesc_602","UISchoolWork/classphoto_602"},
+{603,3,600,"classname_600","UISchoolWork/qyzy_img06","classname_603","classdesc_603","UISchoolWork/classphoto_603"},
+{701,1,700,"classname_700","UISchoolWork/qyzy_img07","classname_701","classdesc_701","UISchoolWork/classphoto_701"},
+{702,2,700,"classname_700","UISchoolWork/qyzy_img07","classname_702","classdesc_702","UISchoolWork/classphoto_702"},
+{703,3,700,"classname_700","UISchoolWork/qyzy_img07","classname_703","classdesc_703","UISchoolWork/classphoto_703"},
+{801,1,800,"classname_800","UISchoolWork/qyzy_img08","classname_801","classdesc_801","UISchoolWork/classphoto_801"},
+{802,2,800,"classname_800","UISchoolWork/qyzy_img08","classname_802","classdesc_802","UISchoolWork/classphoto_802"},
+{803,3,800,"classname_800","UISchoolWork/qyzy_img08","classname_803","classdesc_803","UISchoolWork/classphoto_803"}
+},
+Len=24
+}
+return e 

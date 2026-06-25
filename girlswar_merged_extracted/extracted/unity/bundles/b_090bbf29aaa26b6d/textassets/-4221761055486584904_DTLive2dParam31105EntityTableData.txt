@@ -1,0 +1,18 @@
+local e=
+{
+ByIdx={
+{"ParamBreast1","ParamBreast1",0,{{3,0}},"HitArea_BreastR,HitArea_BreastL",0,0,5,10,0,1,"","","1:rodBreast1","rodBreast1","rodBreast1:2",1,10,0},
+{"ParamPants1_1","ParamPants1_1",0,{{4,0}},"HitArea_Trigone",0,0,5,10,0,1,"","","1:rodPants1","rodPants1","rodPants1:2",1.5,10,0},
+{"ParamPants1_2","ParamPants1_2",0,{{4,0}},"HitArea_Trigone",0,0,3,5,0,1,"","","1:rodPants1_sp","rodPants1_sp","",0.3,4,0},
+{"ParamPants2_1","ParamPants2_1",1,{{4,-1}},"HitArea_Trigone",-10,0,5,10,0,1,"","idle1,idle1_sp1","","rodPants2,rodPants2_sp1","rodPants2:2,rodPants2_sp1:2",1,13,0},
+{"ParamPants2_2","ParamPants2_2",1,{{4,0}},"HitArea_Trigone",0,0,5,10,0,1,"","idle1_sp2","1:rodPants2_sp2","rodPants2_sp2,idle1_sp3","rodPants2_sp2:2",1,10,0},
+{"ParamTrigone2","ParamTrigone2",1,{{2,0}},"HitArea_Hand",0,0,5,10,0,1,"","idle1_sp2","1:rodTrigone2_sp2","rodTrigone2_sp2","rodTrigone2_sp2:2",1,10,0},
+{"ParamBreastL2","ParamBreastL2",1,{{2,0}},"HitArea_BreastL",0,0,5,10,0,1,"","idle1,idle1_sp1","","rodBreastL2,rodBreastL2_sp1","rodBreastL2:2,rodBreastL2_sp1:2",1,10,0},
+{"ParamBreastR2","ParamBreastR2",1,{{1,0}},"HitArea_BreastR",0,0,5,10,0,1,"","idle1,idle1_sp1","","rodBreastR2,rodBreastR2_sp1","rodBreastR2:2,rodBreastR2_sp1:2",1,10,0},
+{"ParamLegUp","ParamLegUp",1,{{3,0}},"",0,0,5,10,0,1,"","idle1_sp3","","rodLeg2_sp3","rodLeg2_sp3:2",1,10,0},
+{"ParamMask","ParamMask",1,{},"",0,0,10,10,0,1,"","","","tapHead2,tapHead2_sp1,rodLeg2_sp3","tapHead2:1,tapHead2_sp1:2,rodLeg2_sp3:2",0,0,0},
+{"ParamPants3","ParamPants3",2,{{4,0}},"HitArea_Trigone",0,0,3,7,0,1,"","","1:rodPants3","rodPants3,tapBelly3_sp2","rodPants3:1,tapBelly3_sp2:2",1,10,0}
+},
+Len=11
+}
+return e 

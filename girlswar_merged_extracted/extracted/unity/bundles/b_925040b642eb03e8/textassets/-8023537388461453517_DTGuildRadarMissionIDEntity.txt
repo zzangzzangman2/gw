@@ -1,0 +1,46 @@
+local a={id=0,battleType=0,taskType=0,taskEnumerate=0,award={{},{}},quality=0,exp=0,difficultyLevel=0,buildImg="",name="",prefab="",icon="",lang=0,tips="",headIcon=""}
+a.__index=a
+function a.New(s,l,r,t,u,m,w,f,y,c,d,i,o,n,h)
+local e={}
+setmetatable(e,a)
+e.id=s
+e.battleType=l
+e.taskType=r
+e.taskEnumerate=t
+e.award=u
+e.quality=m
+e.exp=w
+e.difficultyLevel=f
+e.buildImg=y
+e.name=c
+e.prefab=d
+e.icon=i
+e.lang=o
+e.tips=n
+e.headIcon=h
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.battleType=t[2]
+e.taskType=t[3]
+e.taskEnumerate=t[4]
+e.award=t[5]
+e.quality=t[6]
+e.exp=t[7]
+e.difficultyLevel=t[8]
+e.buildImg=t[9]
+e.name=t[10]
+e.prefab=t[11]
+e.icon=t[12]
+e.lang=t[13]
+e.tips=t[14]
+e.headIcon=t[15]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/guild/DTGuildRadarMissionIDEntityTableData')
+end
+return a 

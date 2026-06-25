@@ -1,0 +1,33 @@
+
+?
+Question.protoCommons.proto"h
+PRT_QUESTION_TOPIC
+groupId (RgroupId
+id (Rid
+score (Rscore
+text (	Rtext"
+PRT_QUESTION_INFO_REQ"w
+PRT_QUESTION_INFO_RESP+
+topics (2.PRT_QUESTION_TOPICRtopics 
+startAnswer (RstartAnswer
+id (Rid"
+PRT_QUESTION_START_REQ"
+PRT_QUESTION_START_RESP"D
+PRT_QUESTION_COMMIT_REQ)
+topic (2.PRT_QUESTION_TOPICRtopic"<
+PRT_QUESTION_COMMIT_RESP 
+award (2
+.PRT_THINGRaward"
+PRT_QUESTION_NEW_INFO_REQ"{
+PRT_QUESTION_NEW_INFO_RESP+
+topics (2.PRT_QUESTION_TOPICRtopics 
+startAnswer (RstartAnswer
+id (Rid"
+PRT_QUESTION_NEW_START_REQ"
+PRT_QUESTION_NEW_START_RESP"H
+PRT_QUESTION_NEW_COMMIT_REQ)
+topic (2.PRT_QUESTION_TOPICRtopic"@
+PRT_QUESTION_NEW_COMMIT_RESP 
+award (2
+.PRT_THINGRawardB
+com.next1b.nextsvr.protobproto3

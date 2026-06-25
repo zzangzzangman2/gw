@@ -1,0 +1,66 @@
+local a={id=0,listId=0,color=0,itemLv=0,star=0,type=0,isMaterial=0,limitLevel=0,price={},extParam={},contain={{},{}},openNow=0,passTime=0,gemType=0,gemPos={},gemAttr={},jump={},jumpParam={},itemName="",itemIcon="",itemDesc="",ItemIconSmall="",isHideCount=0,isExclamation=0,notShowBag=0}
+a.__index=a
+function a.New(u,w,m,t,b,v,y,p,k,j,q,z,x,_,g,f,h,s,n,o,i,r,l,d,c)
+local e={}
+setmetatable(e,a)
+e.id=u
+e.listId=w
+e.color=m
+e.itemLv=t
+e.star=b
+e.type=v
+e.isMaterial=y
+e.limitLevel=p
+e.price=k
+e.extParam=j
+e.contain=q
+e.openNow=z
+e.passTime=x
+e.gemType=_
+e.gemPos=g
+e.gemAttr=f
+e.jump=h
+e.jumpParam=s
+e.itemName=n
+e.itemIcon=o
+e.itemDesc=i
+e.ItemIconSmall=r
+e.isHideCount=l
+e.isExclamation=d
+e.notShowBag=c
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.listId=t[2]
+e.color=t[3]
+e.itemLv=t[4]
+e.star=t[5]
+e.type=t[6]
+e.isMaterial=t[7]
+e.limitLevel=t[8]
+e.price=t[9]
+e.extParam=t[10]
+e.contain=t[11]
+e.openNow=t[12]
+e.passTime=t[13]
+e.gemType=t[14]
+e.gemPos=t[15]
+e.gemAttr=t[16]
+e.jump=t[17]
+e.jumpParam=t[18]
+e.itemName=t[19]
+e.itemIcon=t[20]
+e.itemDesc=t[21]
+e.ItemIconSmall=t[22]
+e.isHideCount=t[23]
+e.isExclamation=t[24]
+e.notShowBag=t[25]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/item/DTItemEntityTableData')
+end
+return a 

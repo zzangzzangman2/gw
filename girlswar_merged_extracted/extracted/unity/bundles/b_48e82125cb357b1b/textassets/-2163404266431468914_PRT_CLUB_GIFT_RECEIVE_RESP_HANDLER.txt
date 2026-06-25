@@ -1,0 +1,11 @@
+local t={}
+function t:OnHandle(e)
+local e=assert(GlobalPB.decode("PRT_CLUB_GIFT_RECEIVE_RESP",e));
+if(GameInit.GetDebugLogProto())then
+;
+;
+end
+ModulesInit.ActClubDayMgr:synValentineGiftReceive(e)
+return e
+end
+return t 

@@ -1,0 +1,36 @@
+
+?	
+ActNewYearBless.protoCommons.proto"l
+PRT_NEW_YEAR_BLESS_CARD_SEND
+serverId (RserverId
+name (	Rname
+	sendCount (R	sendCount"
+PRT_NEW_YEAR_BLESS_INFO_REQ"|
+PRT_NEW_YEAR_BLESS_INFO_RESP
+leftTime (RleftTime
+	cardCount (R	cardCount"
+recAwardDids (RrecAwardDids"#
+!PRT_NEW_YEAR_BLESS_CARD_COUNT_REQ"?
+"PRT_NEW_YEAR_BLESS_CARD_COUNT_RESP
+	cardCount (R	cardCount?
+sendPlayers (2.PRT_NEW_YEAR_BLESS_CARD_SENDRsendPlayers";
+PRT_NEW_YEAR_BLESS_SEND_REQ
+	sendCount (R	sendCount"<
+PRT_NEW_YEAR_BLESS_SEND_RESP
+	cardCount (R	cardCount"
+PRT_NEW_YEAR_BLESS_AWARD_REQ"a
+PRT_NEW_YEAR_BLESS_AWARD_RESP
+	cardCount (R	cardCount"
+recAwardDids (RrecAwardDids"A
+#PRT_CS_NEW_YEAR_BLESS_RED_POINT_REQ
+playerId (RplayerId"?
+$PRT_CS_NEW_YEAR_BLESS_RED_POINT_RESP
+playerId (RplayerId3
+redPointIds (2.ENUM_REDPOINT_IDRredPointIds2
+isSendToOnlinePlayer (RisSendToOnlinePlayer"I
++PRT_CS_NEW_YEAR_BLESS_CHECK_DRAGON_BOAT_REQ
+playerId (RplayerId"d
+,PRT_CS_NEW_YEAR_BLESS_CHECK_DRAGON_BOAT_RESP
+playerId (RplayerId
+isBoard (RisBoardB
+com.next1b.nextsvr.protobproto3

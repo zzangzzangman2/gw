@@ -1,0 +1,5 @@
+maininterface_shop.png
+size:64,64
+filter:Linear,Linear
+zhuye_shop
+bounds:0,0,61,57

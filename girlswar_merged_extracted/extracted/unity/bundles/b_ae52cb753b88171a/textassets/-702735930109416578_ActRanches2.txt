@@ -1,0 +1,119 @@
+
+?
+ActRanches2.protoCommons.proto"m
+PRT_RANCHES2_REMOVEGRID%
+raws (2.PRT_RANCHES2_RAWRraws+
+special (2.PRT_RANCHES2_RAWRspecial"7
+PRT_RANCHES2_GRID
+did (Rdid
+pos (Rpos"<
+PRT_RANCHES2_RAW(
+grids (2.PRT_RANCHES2_GRIDRgrids"h
+PRT_RANCHES2_BOARD%
+raws (2.PRT_RANCHES2_RAWRraws+
+nextRaw (2.PRT_RANCHES2_RAWRnextRaw"^
+PRT_RANCHES2_SPLIT
+id (Rid
+splitId (RsplitId
+
+splitCount (R
+splitCount"
+PRT_RANCHES2_INFO_REQ"4
+PRT_RANCHES2_INFO_RESP
+actScore (RactScore"
+PRT_RANCHES2_GAME_INFO_REQ"?
+PRT_RANCHES2_GAME_INFO_RESP
+score (Rscore
+actScore (RactScore
+isCreate (RisCreate)
+board (2.PRT_RANCHES2_BOARDRboard
+boxList (RboxList
+dogList (RdogList"
+PRT_RANCHES2_GAME_NEW_REQ"P
+PRT_RANCHES2_GAME_NEW_RESP
+boxList (RboxList
+dogList (RdogList"?
+PRT_RANCHES2_GAME_INIT_REQ)
+board (2.PRT_RANCHES2_BOARDRboard
+useRaws (RuseRaws+
+addRaws (2.PRT_RANCHES2_RAWRaddRaws"Q
+PRT_RANCHES2_GAME_INIT_RESP
+boxList (RboxList
+dogList (RdogList"?
+PRT_RANCHES2_GAME_GRIDMOVE_REQ
+addScore (RaddScore
+combo (Rcombo)
+board (2.PRT_RANCHES2_BOARDRboard
+delGrids (RdelGrids
+useRaws (RuseRaws+
+addRaws (2.PRT_RANCHES2_RAWRaddRaws8
+
+removeGrid (2.PRT_RANCHES2_REMOVEGRIDR
+removeGrid"?
+PRT_RANCHES2_GAME_GRIDMOVE_RESP
+success (Rsuccess
+score (Rscore
+actScore (RactScore)
+board (2.PRT_RANCHES2_BOARDRboard
+boxList (RboxList
+dogList (RdogList"?
+PRT_RANCHES2_GAME_USEITEM_REQ
+itemDid (RitemDid
+addScore (RaddScore
+combo (Rcombo)
+board (2.PRT_RANCHES2_BOARDRboard
+delGrids (RdelGrids
+useRaws (RuseRaws+
+addRaws (2.PRT_RANCHES2_RAWRaddRaws3
+
+splitGrids (2.PRT_RANCHES2_SPLITR
+splitGrids8
+
+removeGrid	 (2.PRT_RANCHES2_REMOVEGRIDR
+removeGrid"?
+PRT_RANCHES2_GAME_USEITEM_RESP
+success (Rsuccess
+score (Rscore
+actScore (RactScore)
+board (2.PRT_RANCHES2_BOARDRboard
+boxList (RboxList
+dogList (RdogList"
+PRT_RANCHES2_GAME_END_REQ"
+PRT_RANCHES2_GAME_END_RESP"
+PRT_RANCHES2_DIAMOND_INFO_REQ"J
+PRT_RANCHES2_DIAMOND_INFO_RESP(
+	exchanges (2
+.PRT_GOODSR	exchanges"G
+!PRT_RANCHES2_DIAMOND_EXCHANGE_REQ
+did (Rdid
+num (Rnum"N
+"PRT_RANCHES2_DIAMOND_EXCHANGE_RESP(
+	exchanges (2
+.PRT_GOODSR	exchanges"
+PRT_RANCHES2_SHOP_INFO_REQ"a
+PRT_RANCHES2_SHOP_INFO_RESP(
+	exchanges (2
+.PRT_GOODSR	exchanges
+endTime (RendTime"
+PRT_RANCHES2_MAX_RANK_REQ"z
+PRT_RANCHES2_MAX_RANK_RESP.
+	rankDatas (2.PRT_COMMON_RANKR	rankDatas,
+selfRank (2.PRT_COMMON_RANKRselfRank"?
+&PRT_CS_RANCHES2_UPDATE_TOTAL_SCORE_SYN
+playerId (RplayerId
+
+totalScore (R
+totalScore
+changeMS (RchangeMS"
+PRT_RANCHES2_TOTAL_RANK_REQ"|
+PRT_RANCHES2_TOTAL_RANK_RESP.
+	rankDatas (2.PRT_COMMON_RANKR	rankDatas,
+selfRank (2.PRT_COMMON_RANKRselfRank"
+PRT_RANCHES2_TASK_INFO_REQ">
+PRT_RANCHES2_TASK_INFO_RESP
+tasks (2	.PRT_TASKRtasks"7
+PRT_RANCHES2_REC_TASK_REQ
+taskDids (RtaskDids"8
+PRT_RANCHES2_REC_TASK_RESP
+taskDids (RtaskDidsB
+com.next1b.nextsvr.protobproto3

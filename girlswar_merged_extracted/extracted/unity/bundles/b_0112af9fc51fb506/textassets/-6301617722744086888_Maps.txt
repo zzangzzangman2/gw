@@ -1,0 +1,121 @@
+
+?
+
+Maps.protoCommons.proto
+Hero.protoSnapshot.protoFormation.protoFight.protoSmallGame.protoInspiration.proto"A
+PRT_MAP
+mapDid (RmapDid
+
+isBossPass (R
+isBossPass"
+PRT_MAP_LIST_REQ"1
+PRT_MAP_LIST_RESP
+maps (2.PRT_MAPRmaps"4
+PRT_MAP_FAST_COUNT_BUY_REQ
+counts (Rcounts"[
+PRT_MAP_FAST_COUNT_BUY_RESP 
+remainCount (RremainCount
+buyCount (RbuyCount"4
+PRT_MAP_BOSS_COUNT_BUY_REQ
+counts (Rcounts"{
+PRT_MAP_BOSS_COUNT_BUY_RESP
+	freeCount (R	freeCount"
+remaindCount (RremaindCount
+buyCount (RbuyCount"?
+PRT_MAP_RECORD(
+player (2.PRT_PLAYER_DESCRplayer$
+heros (2.PRT_HERO_DESCRheros.
+
+heroAlters (2.PRT_HERO_DESCR
+heroAlters
+fight (Rfight
+level (Rlevel
+recordId (RrecordId"1
+PRT_MAP_PASS_RECORD_REQ
+mapDid (RmapDid"E
+PRT_MAP_PASS_RECORD_RESP)
+records (2.PRT_MAP_RECORDRrecords"
+PRT_MAP_IDLE_INFO_REQ"?
+PRT_MAP_IDLE_INFO_RESP
+mapDid (RmapDid&
+mapBeginSecond (RmapBeginSecond 
+beginSecond (RbeginSecond
+coin (Rcoin
+exp (Rexp"
+things (2
+.PRT_THINGRthings
+nowCoin (RnowCoin
+nowExp (RnowExp(
+	nowThings	 (2
+.PRT_THINGR	nowThings
+	isTimeMax
+ (R	isTimeMax"
+PRT_MAP_IDLE_AWARD_REQ"g
+PRT_MAP_IDLE_AWARD_RESP0
+	fightInfo (2.PRT_OFFLINE_FIGHTR	fightInfo
+idleTime (RidleTime"9
+PRT_MAP_RECEIVE_STORY_AWARD_REQ
+mapDid (RmapDid":
+ PRT_MAP_RECEIVE_STORY_AWARD_RESP
+mapDid (RmapDid"O
+PRT_MAP_STORY_SESSION
+
+sessionDid (R
+sessionDid
+isRead (RisRead"
+PRT_MAP_STORY_SESSION_REQ"N
+PRT_MAP_STORY_SESSION_RESP0
+session (2.PRT_MAP_STORY_SESSIONRsession" 
+PRT_MAP_STORY_SESSION_READ_REQ"S
+PRT_MAP_STORY_SESSION_READ_RESP0
+session (2.PRT_MAP_STORY_SESSIONRsession"?
+PRT_MAP_FIGHT_BEFORE_REQ
+mapDid (RmapDidG
+formationPositions (2.PRT_FORMATION_POSITIONRformationPositionsQ
+formationAlterPositions (2.PRT_FORMATION_POSITIONRformationAlterPositions"L
+PRT_MAP_FIGHT_BEFORE_RESP/
+
+beforeInfo (2.PRT_FIGHT_PLAYR
+beforeInfo"+
+PRT_MAP_STORY_REQ
+mapDid (RmapDid"7
+PRT_MAP_STORY_RESP!
+award (2.PRT_FAWARDRaward"
+PRT_MAP_ENTER_REQ"?
+PRT_MAP_ENTER_RESP
+	awardList (R	awardList:
+smallGameList (2.PRT_SMALL_GAME_ITEMRsmallGameList(
+nextRefreshTime (RnextRefreshTime*
+stageRefreshTime (RstageRefreshTime
+stageNum (RstageNum 
+stageReward (RstageReward
+idleTime (RidleTime4
+inspirations (2.PRT_INSPIRATIONRinspirations4
+dailyInspirationCount
+ (RdailyInspirationCountF
+nextCreateDailyInspirationTime (RnextCreateDailyInspirationTime"
+passMapCount (RpassMapCount"
+PRT_MAP_CLEARANCE_INFO_REQ";
+PRT_MAP_CLEARANCE_INFO_RESP
+	awardList (R	awardList"
+PRT_MAP_CLEARANCE_AWARD_REQ"<
+PRT_MAP_CLEARANCE_AWARD_RESP
+	awardList (R	awardList"3
+PRT_MAP_STORY_AWARD_SYN
+mapDids (RmapDids"?
+PRT_MAP_STATISTICS_SYN
+mapDid (RmapDid
+
+fightTimes (R
+fightTimes
+expRate (RexpRate
+expRatio (RexpRatio"
+idleExpRatio (RidleExpRatio
+goldRate (RgoldRate
+	goldRatio (R	goldRatio
+dropRate (RdropRate$
+idleGoldRatio	 (RidleGoldRatio"g
+PRT_MAP_FIGHT_CONDITION_SYN
+	curMapDid (R	curMapDid*
+conditionSatisfy (RconditionSatisfyB
+com.next1b.nextsvr.protobproto3

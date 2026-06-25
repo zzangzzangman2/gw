@@ -1,0 +1,100 @@
+local n={}
+function n:OnHandle(e)
+local t=assert(GlobalPB.decode("PRT_HERO_PUSH_RESP",e));
+if(GameInit.GetDebugLogProto())then
+;
+end
+if#HeroMgr.heros==0 then
+HeroMgr:AddHero(t)
+else
+local e=t.heros
+local a
+if e and#e==1 then
+a=e[1]
+elseif e and t.operateHeroId~=0 then
+for o,e in ipairs(e)do
+if e.heroId==t.operateHeroId then
+a=e
+break
+end
+end
+end
+if a then
+local e=a.heroId
+local e=HeroMgr:GetHeroDataByHeroId(e)
+if e~=nil then
+HeroMgr:handleAttrTip(e.attribute,a.attribute)
+end
+end
+for t,e in ipairs(e or{})do
+local e=HeroMgr:GetHeroDataByHeroId(e.heroId)
+if e==nil then
+EventSystem.SendEvent(CommonEventId.OnDiscardFightTip)
+break
+end
+end
+local a=HeroMgr:GetActiviedHeroData()
+HeroMgr:HeroPush(t)
+local o=HeroMgr:GetActiviedHeroData()
+local i={}
+for e=1,#a do
+local e=a[e]
+local e=HeroMgr:GetVirtualBaseHeroDid(e.heroDid)
+i[e]=true
+end
+local t={}
+for e=1,#o do
+local e=o[e]
+local a=HeroMgr:GetVirtualBaseHeroDid(e.heroDid)
+if not i[a]then
+table.insert(t,e.heroDid)
+end
+end
+if#t>0 then
+for t,e in pairs(t)do
+ModulesInit.HeroShowMgr.AddShowHero(e)
+end
+else
+local t={}
+for a,e in pairs(e)do
+if HeroMgr:checkHasHero(e.heroDid)then
+table.add(t,e)
+end
+end
+if#t>0 then
+for e=1,#t do
+local o=t[e]
+local t
+for e=1,#a do
+local e=a[e]
+if e.heroDid==o.heroDid then
+t=e
+break
+end
+end
+local e={}
+for i=1,6 do
+local a=o.skills[i]
+if t then
+local t=t.skills[i]
+if t.skillDid~=a.skillDid then
+table.insert(e,a.skillDid)
+end
+else
+table.insert(e,a.skillDid)
+end
+end
+if#e>0 then
+HeroMgr:AddSkillHeroNew(o,e)
+end
+end
+end
+end
+EventSystem.SendEvent(CommonEventId.OnAtlasAndExhibitionRefresh)
+local e=PlayerMgr and PlayerMgr.loginComplete
+if e then
+RedPointMgr:doCampNotify(0)
+end
+end
+end
+return n 

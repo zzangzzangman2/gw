@@ -1,0 +1,28 @@
+local e={id=0,baseCost={},shopCost=0,baseCostChange={},availableAttempts={},getSpecialPull=0}
+e.__index=e
+function e.New(a,i,o,h,s,n)
+local t={}
+setmetatable(t,e)
+t.id=a
+t.baseCost=i
+t.shopCost=o
+t.baseCostChange=h
+t.availableAttempts=s
+t.getSpecialPull=n
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.baseCost=a[2]
+t.shopCost=a[3]
+t.baseCostChange=a[4]
+t.availableAttempts=a[5]
+t.getSpecialPull=a[6]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/activity/DTActWishingHouseBaseEntityTableData')
+end
+return e 

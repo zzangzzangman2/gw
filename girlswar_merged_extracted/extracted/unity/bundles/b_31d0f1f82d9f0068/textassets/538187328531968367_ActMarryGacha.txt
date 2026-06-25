@@ -1,0 +1,22 @@
+
+?
+ActMarryGacha.protoCommons.proto"?
+PRT_MARRY_GACHA_DATA
+did (Rdid
+freeCD (RfreeCD,
+alreadyDrawNumber (RalreadyDrawNumber
+multiple (Rmultiple"
+PRT_MARRY_GACHA_INFO_REQ"d
+PRT_MARRY_GACHA_INFO_RESP
+leftTime (RleftTime+
+datas (2.PRT_MARRY_GACHA_DATARdatas"y
+PRT_MARRY_GACHA_DRAW_REQ#
+type (2.ENUM_DRAW_TYPERtype
+did (Rdid&
+isCostCurrency (RisCostCurrency"?
+PRT_MARRY_GACHA_DRAW_RESP#
+type (2.ENUM_DRAW_TYPERtype
+did (Rdid)
+data (2.PRT_MARRY_GACHA_DATARdata'
+awards (2.PRT_ONCE_AWARDRawardsB
+com.next1b.nextsvr.protobproto3

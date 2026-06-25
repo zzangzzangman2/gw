@@ -1,0 +1,28 @@
+local e={id=0,rewardType=0,spine=0,reward={{},{}},days={},uiformid=""}
+e.__index=e
+function e.New(a,i,o,h,s,n)
+local t={}
+setmetatable(t,e)
+t.id=a
+t.rewardType=i
+t.spine=o
+t.reward=h
+t.days=s
+t.uiformid=n
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.rewardType=a[2]
+t.spine=a[3]
+t.reward=a[4]
+t.days=a[5]
+t.uiformid=a[6]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/activity/DTActivityFoolsDollEntityTableData')
+end
+return e 

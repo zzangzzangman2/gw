@@ -1,0 +1,28 @@
+local a={}
+function a:OnHandle(e)
+local t=assert(GlobalPB.decode("PRT_PLAYER_KICK_RESP",e));
+if(GameInit.GetDebugLogProto())then
+;
+;
+end
+local e=""
+if t.reason==PROTO_ENUM.ENUM_KICK_REASON.KICK_SERVER_MAINTAIN then
+
+e=GameTools.GetLocalize("System.Tips1",LanguageCategory.LangCommon)
+elseif t.reason==PROTO_ENUM.ENUM_KICK_REASON.KICK_OTHER_LOGIN then
+
+e=GameTools.GetLocalize("System.Tips2",LanguageCategory.LangCommon)
+elseif t.reason==PROTO_ENUM.ENUM_KICK_REASON.KICK_FORBIDEN then
+
+e=GameTools.GetLocalize("System.Tips3",LanguageCategory.LangCommon)
+elseif t.reason==PROTO_ENUM.ENUM_KICK_REASON.KICK_GM then
+
+e=GameTools.GetLocalize("System.Tips4",LanguageCategory.LangCommon)
+elseif t.reason==PROTO_ENUM.ENUM_KICK_REASON.KICK_HOT_UPDATE then
+
+e=GameTools.GetLocalize("System.Tips5",LanguageCategory.LangCommon)
+end
+GameTools:connectTimeOut(e)
+NetManager.StopNet()
+end
+return a 

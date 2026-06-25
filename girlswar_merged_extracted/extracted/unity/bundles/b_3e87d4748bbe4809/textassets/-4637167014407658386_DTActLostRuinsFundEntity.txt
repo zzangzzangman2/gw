@@ -1,0 +1,28 @@
+local e={id=0,itemCostNum=0,award={},chargeAward={},chargeAwardShow={},goods=0}
+e.__index=e
+function e.New(a,i,o,h,s,n)
+local t={}
+setmetatable(t,e)
+t.id=a
+t.itemCostNum=i
+t.award=o
+t.chargeAward=h
+t.chargeAwardShow=s
+t.goods=n
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.itemCostNum=a[2]
+t.award=a[3]
+t.chargeAward=a[4]
+t.chargeAwardShow=a[5]
+t.goods=a[6]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/activity/DTActLostRuinsFundEntityTableData')
+end
+return e 

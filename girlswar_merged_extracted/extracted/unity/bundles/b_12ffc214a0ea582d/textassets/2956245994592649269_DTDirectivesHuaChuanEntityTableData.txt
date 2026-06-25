@@ -1,0 +1,8 @@
+local e=
+{
+ByIdx={
+{1,"directivesTaskName_3","directivesTaskTips_3","directivesTaskDesc_3",1200,201,{{20084,300}}}
+},
+Len=1
+}
+return e 

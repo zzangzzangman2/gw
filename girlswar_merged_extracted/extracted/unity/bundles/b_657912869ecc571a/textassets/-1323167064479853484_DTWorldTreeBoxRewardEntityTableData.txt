@@ -1,0 +1,16 @@
+local e=
+{
+ByIdx={
+{1,96121,{{20048,2},{20045,2},{20004,5},{20084,10}},"UIActWorldTree_Event/shijieshu_box1","UIActWorldTree_Event/shijieshu_boxdk1"},
+{2,96122,{{20048,2},{20045,2},{20004,5},{20084,10}},"UIActWorldTree_Event/shijieshu_box1","UIActWorldTree_Event/shijieshu_boxdk1"},
+{3,96123,{{20321,15},{20045,5},{20004,10},{20084,50}},"UIActWorldTree_Event/shijieshu_box2","UIActWorldTree_Event/shijieshu_boxdk2"},
+{4,96124,{{20048,5},{20045,5},{20004,20},{20084,100}},"UIActWorldTree_Event/shijieshu_box3","UIActWorldTree_Event/shijieshu_boxdk3"},
+{5,96125,{{20321,15},{20045,5},{20004,20},{20084,100}},"UIActWorldTree_Event/shijieshu_box3","UIActWorldTree_Event/shijieshu_boxdk3"},
+{6,96126,{{20048,5},{20045,5},{20004,20},{20084,100}},"UIActWorldTree_Event/shijieshu_box3","UIActWorldTree_Event/shijieshu_boxdk3"},
+{7,96127,{{20321,15},{20045,5},{20004,20},{20084,100}},"UIActWorldTree_Event/shijieshu_box3","UIActWorldTree_Event/shijieshu_boxdk3"},
+{8,96128,{{20048,5},{20045,5},{20004,20},{20084,100}},"UIActWorldTree_Event/shijieshu_box3","UIActWorldTree_Event/shijieshu_boxdk3"},
+{9,96129,{{20321,15},{20045,5},{20004,20},{20084,100}},"UIActWorldTree_Event/shijieshu_box3","UIActWorldTree_Event/shijieshu_boxdk3"}
+},
+Len=9
+}
+return e 

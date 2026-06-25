@@ -1,0 +1,28 @@
+local e={id=0,activityType=0,count=0,award={{},{}},isBigAward=0,picBigAward=""}
+e.__index=e
+function e.New(a,i,o,h,s,n)
+local t={}
+setmetatable(t,e)
+t.id=a
+t.activityType=i
+t.count=o
+t.award=h
+t.isBigAward=s
+t.picBigAward=n
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.activityType=a[2]
+t.count=a[3]
+t.award=a[4]
+t.isBigAward=a[5]
+t.picBigAward=a[6]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/urgrassland/DTUrGrasslandPointsRewardsEntityTableData')
+end
+return e 

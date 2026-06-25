@@ -1,0 +1,32 @@
+local a={id=0,money=0,day=0,award={{},{}},type=0,descImg="",des="",itemIcon=""}
+a.__index=a
+function a.New(i,h,n,t,d,r,s,o)
+local e={}
+setmetatable(e,a)
+e.id=i
+e.money=h
+e.day=n
+e.award=t
+e.type=d
+e.descImg=r
+e.des=s
+e.itemIcon=o
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.money=t[2]
+e.day=t[3]
+e.award=t[4]
+e.type=t[5]
+e.descImg=t[6]
+e.des=t[7]
+e.itemIcon=t[8]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/activity/DTActivityTotalRecharge2EntityTableData')
+end
+return a 

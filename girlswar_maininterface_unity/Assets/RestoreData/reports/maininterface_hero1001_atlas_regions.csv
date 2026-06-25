@@ -1,0 +1,6 @@
+﻿atlas_file,page,region_count,first_regions
+-3577121971219907780_Painting_1001_Back.atlas.txt,Painting_1001_Back.png,3,"bf_3, bgb, bgb2"
+3992961392396818130_SP_heroname_1001.atlas.txt,SP_heroname_1001.png,3,"images/1001, images/sr, images/t3"
+5035273895345354139_Painting_1001.atlas.txt,Painting_1001.png,117,"a00, a01, a0100, a0101, a0102, a0103, a0104, a0105, a0106, a0107, a0108, a0109"
+5395353901128918248_Painting_1001_Front.atlas.txt,Painting_1001_Front.png,4,"bf_2, bf_5, bf_6, bgb1"
+-266615414835539183_1001.atlas.txt,1001.png,90,"1, 2, 3, 4, 5, a11, a12, a13, a14, a15, a18, a19"

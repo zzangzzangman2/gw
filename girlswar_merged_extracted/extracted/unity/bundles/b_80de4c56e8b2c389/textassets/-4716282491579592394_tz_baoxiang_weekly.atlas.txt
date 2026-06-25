@@ -1,0 +1,9 @@
+tz_baoxiang_weekly.png
+size:256,256
+filter:Linear,Linear
+quest_guang
+bounds:2,52,130,131
+quest_huangjinbaoxiang
+bounds:63,2,59,48
+quest_zisebaoxiang
+bounds:2,2,59,48

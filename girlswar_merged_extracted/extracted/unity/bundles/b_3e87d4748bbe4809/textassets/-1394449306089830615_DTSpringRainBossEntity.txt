@@ -1,0 +1,26 @@
+local e={id=0,monsterId=0,bossDay=0,monsterLists={},beatReward={{},{}}}
+e.__index=e
+function e.New(o,n,a,s,i)
+local t={}
+setmetatable(t,e)
+t.id=o
+t.monsterId=n
+t.bossDay=a
+t.monsterLists=s
+t.beatReward=i
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.monsterId=a[2]
+t.bossDay=a[3]
+t.monsterLists=a[4]
+t.beatReward=a[5]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/activity/DTSpringRainBossEntityTableData')
+end
+return e 

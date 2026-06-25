@@ -1,0 +1,26 @@
+local e={id=0,scoreMin=0,scoreMax=0,showAwards={{},{}},cupColor=0}
+e.__index=e
+function e.New(o,n,a,s,i)
+local t={}
+setmetatable(t,e)
+t.id=o
+t.scoreMin=n
+t.scoreMax=a
+t.showAwards=s
+t.cupColor=i
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.scoreMin=a[2]
+t.scoreMax=a[3]
+t.showAwards=a[4]
+t.cupColor=a[5]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/activity/DTFootBallAwardEntityTableData')
+end
+return e 

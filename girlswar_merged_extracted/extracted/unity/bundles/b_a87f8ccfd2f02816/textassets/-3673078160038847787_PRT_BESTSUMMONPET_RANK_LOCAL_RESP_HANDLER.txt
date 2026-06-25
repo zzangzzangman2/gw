@@ -1,0 +1,11 @@
+local t={}
+function t:OnHandle(e)
+local e=assert(GlobalPB.decode("PRT_BESTSUMMONPET_RANK_LOCAL_RESP",e));
+if(GameInit.GetDebugLogProto())then
+;
+;
+end
+EventSystem.SendEvent(CommonEventId.OnRespBestCeoRankInfo,{actId=ModulesInit.ActBestCeoConfigMgr.EActId.actId_776,proto=e})
+return e
+end
+return t 

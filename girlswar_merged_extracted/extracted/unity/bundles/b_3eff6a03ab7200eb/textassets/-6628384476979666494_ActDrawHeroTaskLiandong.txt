@@ -1,0 +1,22 @@
+
+?
+ActDrawHeroTaskLiandong.proto"(
+&PRT_DRAW_HERO_TASK_LIANDONGA1_INFO_REQ"?
+'PRT_DRAW_HERO_TASK_LIANDONGA1_INFO_RESP
+leftTime (RleftTime
+score (Rscore,
+receivedAwardDids (RreceivedAwardDids"E
+'PRT_DRAW_HERO_TASK_LIANDONGA1_AWARD_REQ
+awardDid (RawardDid"X
+(PRT_DRAW_HERO_TASK_LIANDONGA1_AWARD_RESP,
+receivedAwardDids (RreceivedAwardDids"(
+&PRT_DRAW_HERO_TASK_LIANDONGA2_INFO_REQ"?
+'PRT_DRAW_HERO_TASK_LIANDONGA2_INFO_RESP
+leftTime (RleftTime
+score (Rscore,
+receivedAwardDids (RreceivedAwardDids"E
+'PRT_DRAW_HERO_TASK_LIANDONGA2_AWARD_REQ
+awardDid (RawardDid"X
+(PRT_DRAW_HERO_TASK_LIANDONGA2_AWARD_RESP,
+receivedAwardDids (RreceivedAwardDidsB
+com.next1b.nextsvr.protobproto3

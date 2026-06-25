@@ -1,0 +1,30 @@
+local t={id=0,type=0,requireNum=0,award={{},{}},desc="",funcJump=0,listNum=0}
+t.__index=t
+function t.New(o,h,a,s,r,n,i)
+local e={}
+setmetatable(e,t)
+e.id=o
+e.type=h
+e.requireNum=a
+e.award=s
+e.desc=r
+e.funcJump=n
+e.listNum=i
+return e
+end
+function t.NewFromArrItem(a)
+local e={}
+setmetatable(e,t)
+e.id=a[1]
+e.type=a[2]
+e.requireNum=a[3]
+e.award=a[4]
+e.desc=a[5]
+e.funcJump=a[6]
+e.listNum=a[7]
+return e
+end
+function t.GetArr()
+return require('DataNode/DataTable/Create/activity/DTActivityFingerTaskEntityTableData')
+end
+return t 

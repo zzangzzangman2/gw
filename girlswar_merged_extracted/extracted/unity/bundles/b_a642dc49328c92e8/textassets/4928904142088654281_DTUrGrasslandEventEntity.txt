@@ -1,0 +1,46 @@
+local a={id=0,eventType=0,eventParam1=0,eventParam2=0,eventAssociation=0,xianshitype=0,isDisplay=0,ishuchi=0,eventAward={{},{}},eventAward2={{},{}},eventAwardOldPlayer={{},{}},eventAward2OldPlayer={{},{}},cleanUpOrder=0,eventShowPrefab=0,avgId=0}
+a.__index=a
+function a.New(s,l,r,t,u,m,w,f,y,c,d,i,o,n,h)
+local e={}
+setmetatable(e,a)
+e.id=s
+e.eventType=l
+e.eventParam1=r
+e.eventParam2=t
+e.eventAssociation=u
+e.xianshitype=m
+e.isDisplay=w
+e.ishuchi=f
+e.eventAward=y
+e.eventAward2=c
+e.eventAwardOldPlayer=d
+e.eventAward2OldPlayer=i
+e.cleanUpOrder=o
+e.eventShowPrefab=n
+e.avgId=h
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.eventType=t[2]
+e.eventParam1=t[3]
+e.eventParam2=t[4]
+e.eventAssociation=t[5]
+e.xianshitype=t[6]
+e.isDisplay=t[7]
+e.ishuchi=t[8]
+e.eventAward=t[9]
+e.eventAward2=t[10]
+e.eventAwardOldPlayer=t[11]
+e.eventAward2OldPlayer=t[12]
+e.cleanUpOrder=t[13]
+e.eventShowPrefab=t[14]
+e.avgId=t[15]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/urgrassland/DTUrGrasslandEventEntityTableData')
+end
+return a 

@@ -1,0 +1,46 @@
+
+?
+ActAnnFestivalGift.proto"k
+PRT_ANN_FESTIVAL_GIFT_PET
+petDid (RpetDid
+	awardTime (R	awardTime
+awarded (Rawarded"`
+PRT_ANN_FESTIVAL_GIFT_ITEM
+itemDid (RitemDid
+count (Rcount
+slot (Rslot"?
+PRT_ANN_FESTIVAL_GIFT
+giftDid (RgiftDid1
+items (2.PRT_ANN_FESTIVAL_GIFT_ITEMRitems
+buyCount (RbuyCount" 
+PRT_ANN_FESTIVAL_GIFT_INFO_REQ"?
+PRT_ANN_FESTIVAL_GIFT_INFO_RESP
+endTime (RendTime"
+itemBuyCount (RitemBuyCount.
+pets (2.PRT_ANN_FESTIVAL_GIFT_PETRpets">
+$PRT_ANN_FESTIVAL_GIFT_PET_ACTIVE_REQ
+petDid (RpetDid"?
+%PRT_ANN_FESTIVAL_GIFT_PET_ACTIVE_RESP
+petDid (RpetDid"=
+#PRT_ANN_FESTIVAL_GIFT_PET_AWARD_REQ
+petDid (RpetDid">
+$PRT_ANN_FESTIVAL_GIFT_PET_AWARD_RESP
+petDid (RpetDid" 
+PRT_ANN_FESTIVAL_GIFT_LIST_REQ"U
+PRT_ANN_FESTIVAL_GIFT_LIST_RESP2
+giftList (2.PRT_ANN_FESTIVAL_GIFTRgiftList"o
+ PRT_ANN_FESTIVAL_GIFT_CHOICE_REQ
+giftDid (RgiftDid1
+items (2.PRT_ANN_FESTIVAL_GIFT_ITEMRitems"O
+!PRT_ANN_FESTIVAL_GIFT_CHOICE_RESP*
+gift (2.PRT_ANN_FESTIVAL_GIFTRgift"9
+PRT_ANN_FESTIVAL_GIFT_BUY_REQ
+giftDid (RgiftDid"f
+PRT_ANN_FESTIVAL_GIFT_BUY_RESP
+giftDid (RgiftDid*
+gift (2.PRT_ANN_FESTIVAL_GIFTRgift":
+"PRT_ANN_FESTIVAL_GIFT_ITEM_BUY_REQ
+count (Rcount";
+#PRT_ANN_FESTIVAL_GIFT_ITEM_BUY_RESP
+count (RcountB
+com.next1b.nextsvr.protobproto3

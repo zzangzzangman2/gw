@@ -1,0 +1,8 @@
+
+?
+ActBigNewGift.proto"
+PRT_BIG_NEW_GIFT_INFO_REQ"N
+PRT_BIG_NEW_GIFT_INFO_RESP
+leftTime (RleftTime
+isPay (RisPayB
+com.next1b.nextsvr.protobproto3

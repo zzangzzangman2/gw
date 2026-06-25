@@ -1,0 +1,32 @@
+local a={id=0,goods=0,type=0,limitTime=0,award={{},{}},doubleAward={{},{}},spineRateName="",icon=""}
+a.__index=a
+function a.New(i,h,n,t,d,r,s,o)
+local e={}
+setmetatable(e,a)
+e.id=i
+e.goods=h
+e.type=n
+e.limitTime=t
+e.award=d
+e.doubleAward=r
+e.spineRateName=s
+e.icon=o
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.goods=t[2]
+e.type=t[3]
+e.limitTime=t[4]
+e.award=t[5]
+e.doubleAward=t[6]
+e.spineRateName=t[7]
+e.icon=t[8]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/activity/DTAnniversaryParkGiftEntityTableData')
+end
+return a 

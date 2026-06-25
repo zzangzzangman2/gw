@@ -1,0 +1,48 @@
+local a={id=0,remove="",freeCd=0,oneCost={},tenCost={},multipiRate=0,multipiResults={{},{}},itemCost=0,commPool=0,floorTime=0,floorPool=0,hero=0,marryMissionOn=0,commPoolFORMULA="",floorPoolFORMULA="",heroFORMULA=""}
+a.__index=a
+function a.New(h,u,d,t,c,f,y,w,p,m,l,n,i,o,s,r)
+local e={}
+setmetatable(e,a)
+e.id=h
+e.remove=u
+e.freeCd=d
+e.oneCost=t
+e.tenCost=c
+e.multipiRate=f
+e.multipiResults=y
+e.itemCost=w
+e.commPool=p
+e.floorTime=m
+e.floorPool=l
+e.hero=n
+e.marryMissionOn=i
+e.commPoolFORMULA=o
+e.floorPoolFORMULA=s
+e.heroFORMULA=r
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.remove=t[2]
+e.freeCd=t[3]
+e.oneCost=t[4]
+e.tenCost=t[5]
+e.multipiRate=t[6]
+e.multipiResults=t[7]
+e.itemCost=t[8]
+e.commPool=t[9]
+e.floorTime=t[10]
+e.floorPool=t[11]
+e.hero=t[12]
+e.marryMissionOn=t[13]
+e.commPoolFORMULA=t[14]
+e.floorPoolFORMULA=t[15]
+e.heroFORMULA=t[16]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/activity/DTMarryGachaEntityTableData')
+end
+return a 

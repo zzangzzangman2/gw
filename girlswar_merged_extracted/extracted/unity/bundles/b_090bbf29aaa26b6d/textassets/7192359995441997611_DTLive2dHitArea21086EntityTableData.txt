@@ -1,0 +1,25 @@
+local e=
+{
+ByIdx={
+{"HitArea_HandR",1},
+{"HitArea_Pants",2},
+{"HitArea_Head",3},
+{"HitArea_HandL",4},
+{"HitArea_Cloth",5},
+{"HitArea_BreastR",6},
+{"HitArea_BreastL",7},
+{"HitArea_Belly",8},
+{"HitArea_Bell",9},
+{"HitArea_LegR1",10},
+{"HitArea_LegR2",11},
+{"HitArea_LegR3",12},
+{"HitArea_LegL1",13},
+{"HitArea_LegL2",14},
+{"HitArea_LegL3",15},
+{"HitArea_Cord1",16},
+{"HitArea_Cord2",17},
+{"HitArea_Cup",18}
+},
+Len=18
+}
+return e 

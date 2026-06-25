@@ -1,0 +1,26 @@
+local e={id=0,crossShowRankCount=0,rankItem={{},{}},playerProfileShow=0,playerProfileItemId=0}
+e.__index=e
+function e.New(o,n,a,s,i)
+local t={}
+setmetatable(t,e)
+t.id=o
+t.crossShowRankCount=n
+t.rankItem=a
+t.playerProfileShow=s
+t.playerProfileItemId=i
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.crossShowRankCount=a[2]
+t.rankItem=a[3]
+t.playerProfileShow=a[4]
+t.playerProfileItemId=a[5]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/activity/DTGeneralRankBaseEntityTableData')
+end
+return e 

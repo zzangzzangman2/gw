@@ -1,0 +1,28 @@
+local e={id=0,goods=0,reward={{},{}},firstDayAward={{},{}},maxNum=0,type=0}
+e.__index=e
+function e.New(a,i,o,h,s,n)
+local t={}
+setmetatable(t,e)
+t.id=a
+t.goods=i
+t.reward=o
+t.firstDayAward=h
+t.maxNum=s
+t.type=n
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.goods=a[2]
+t.reward=a[3]
+t.firstDayAward=a[4]
+t.maxNum=a[5]
+t.type=a[6]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/activity/DTManbaoGoodsGiftShopEntityTableData')
+end
+return e 

@@ -1,0 +1,10 @@
+local e={}
+function e:OnHandle(e)
+local e=assert(GlobalPB.decode("PRT_MAZE_HERO_SYN",e));
+if(GameInit.GetDebugLogProto())then
+;
+;
+end
+ModulesInit.MazeMgr:synMazeHeroData(e)
+end
+return e 

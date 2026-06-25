@@ -1,0 +1,50 @@
+local a={id=0,name="",chapterId=0,sessionIndex=0,session_banner="",sessionBg="",storyId=0,unlockType=0,unlockPara={},frontSession=0,nextSession=0,awards={{},{}},watchable=0,unlockType_new=0,unlockPara_new={},awards_new={{},{}},watchable_new=0}
+a.__index=a
+function a.New(h,u,d,t,m,c,w,p,y,v,f,l,n,i,o,s,r)
+local e={}
+setmetatable(e,a)
+e.id=h
+e.name=u
+e.chapterId=d
+e.sessionIndex=t
+e.session_banner=m
+e.sessionBg=c
+e.storyId=w
+e.unlockType=p
+e.unlockPara=y
+e.frontSession=v
+e.nextSession=f
+e.awards=l
+e.watchable=n
+e.unlockType_new=i
+e.unlockPara_new=o
+e.awards_new=s
+e.watchable_new=r
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.name=t[2]
+e.chapterId=t[3]
+e.sessionIndex=t[4]
+e.session_banner=t[5]
+e.sessionBg=t[6]
+e.storyId=t[7]
+e.unlockType=t[8]
+e.unlockPara=t[9]
+e.frontSession=t[10]
+e.nextSession=t[11]
+e.awards=t[12]
+e.watchable=t[13]
+e.unlockType_new=t[14]
+e.unlockPara_new=t[15]
+e.awards_new=t[16]
+e.watchable_new=t[17]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/maps/DTStorySessionEntityTableData')
+end
+return a 

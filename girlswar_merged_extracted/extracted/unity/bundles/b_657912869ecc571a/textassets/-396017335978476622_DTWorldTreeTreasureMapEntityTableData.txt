@@ -1,0 +1,16 @@
+local e=
+{
+ByIdx={
+{101,2,1,400022001,"worldTreeTreasureStory101","UIActWorldTree_Puzzle/xunbao_dttjtb1",12},
+{201,2,2,400022101,"worldTreeTreasureStory201","UIActWorldTree_Puzzle/xunbao_dttjtb3",19},
+{301,2,3,400022201,"worldTreeTreasureStory301","UIActWorldTree_Puzzle/xunbao_dttjtb2",8},
+{101101,101,1,400022001,"worldTreeTreasureStory101","UIActWorldTree_Puzzle/xunbao_dttjtb1",12},
+{101201,101,2,400022101,"worldTreeTreasureStory201","UIActWorldTree_Puzzle/xunbao_dttjtb3",19},
+{101301,101,3,400022201,"worldTreeTreasureStory301","UIActWorldTree_Puzzle/xunbao_dttjtb2",8},
+{102101,102,1,400022001,"worldTreeTreasureStory101","UIActWorldTree_Puzzle/xunbao_dttjtb1",12},
+{102201,102,2,400022101,"worldTreeTreasureStory201","UIActWorldTree_Puzzle/xunbao_dttjtb3",19},
+{102301,102,3,400022201,"worldTreeTreasureStory301","UIActWorldTree_Puzzle/xunbao_dttjtb2",8}
+},
+Len=9
+}
+return e 

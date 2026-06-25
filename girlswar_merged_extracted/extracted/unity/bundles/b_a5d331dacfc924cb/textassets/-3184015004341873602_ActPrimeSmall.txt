@@ -1,0 +1,19 @@
+
+?
+ActPrimeSmall.proto"?
+PRT_PRIME_SMALL_STATUS_RESP
+active (Ractive
+	isAutoSub (R	isAutoSub"
+isTodayAward (RisTodayAward
+awardId (RawardId
+
+firstAward (R
+firstAward
+leftDay (RleftDay"<
+ PRT_PRIME_SMALL_CHANGE_AWARD_REQ
+awardId (RawardId"=
+!PRT_PRIME_SMALL_CHANGE_AWARD_RESP
+awardId (RawardId"
+PRT_PRIME_SMALL_DAY_AWARD_REQ" 
+PRT_PRIME_SMALL_DAY_AWARD_RESPB
+com.next1b.nextsvr.protobproto3

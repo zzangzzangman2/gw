@@ -1,0 +1,11 @@
+local t={}
+function t:OnHandle(e)
+local e=assert(GlobalPB.decode("PRT_ACTUBPERSTAGE2_STAGEPAY_RECEIVE_RESP",e));
+if(GameInit.GetDebugLogProto())then
+;
+;
+end
+ModulesInit.ActRechargePlusMgr:RespGetReward(e)
+return e
+end
+return t 

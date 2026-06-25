@@ -1,0 +1,32 @@
+local a={id=0,questType=0,condition={},reward={{},{}},title="",text="",jump=0,listNum=0}
+a.__index=a
+function a.New(i,h,n,t,d,r,s,o)
+local e={}
+setmetatable(e,a)
+e.id=i
+e.questType=h
+e.condition=n
+e.reward=t
+e.title=d
+e.text=r
+e.jump=s
+e.listNum=o
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.questType=t[2]
+e.condition=t[3]
+e.reward=t[4]
+e.title=t[5]
+e.text=t[6]
+e.jump=t[7]
+e.listNum=t[8]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/activity/DTCrowsTheatreTaskEntityTableData')
+end
+return a 

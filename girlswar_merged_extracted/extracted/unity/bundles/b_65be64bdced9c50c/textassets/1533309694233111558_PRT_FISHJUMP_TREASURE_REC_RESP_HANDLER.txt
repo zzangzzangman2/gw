@@ -1,0 +1,11 @@
+local t={}
+function t:OnHandle(e)
+local e=assert(GlobalPB.decode("PRT_FISHJUMP_TREASURE_REC_RESP",e));
+if(GameInit.GetDebugLogProto())then
+;
+;
+end
+ModulesInit.ActFishJumpMgr:ParseLuckyMarblesReceive(e)
+return e
+end
+return t 

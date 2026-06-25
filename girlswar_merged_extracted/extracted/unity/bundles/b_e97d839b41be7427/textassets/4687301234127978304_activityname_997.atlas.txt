@@ -1,0 +1,13 @@
+activityname_997.png
+size:1024,256
+filter:Linear,Linear
+fx_StarRight
+bounds:159,11,27,35
+huihan
+bounds:1,48,204,189
+nyjd_di
+bounds:413,48,189,189
+nyjd_zcm
+bounds:207,56,204,181
+nyjd_zih
+bounds:1,1,156,45

@@ -1,0 +1,11 @@
+local t={}
+function t:OnHandle(e)
+local e=assert(GlobalPB.decode("PRT_NEW_PLAYER_UR841_TASK_RESP",e));
+if(GameInit.GetDebugLogProto())then
+;
+;
+end
+ModulesInit.ActNewPlayerURNewMgr:SyncTask(e)
+return e
+end
+return t 

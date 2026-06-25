@@ -1,0 +1,9 @@
+sp_BondFestival_Text.png
+size:512,512
+filter:Linear,Linear
+zjm1
+bounds:0,308,476,168
+zjm2
+bounds:256,200,132,106
+zjm3
+bounds:0,162,254,144

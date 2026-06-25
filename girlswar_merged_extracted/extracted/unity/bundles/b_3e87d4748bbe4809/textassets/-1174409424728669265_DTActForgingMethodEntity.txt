@@ -1,0 +1,30 @@
+local t={id=0,type=0,pointRangeCondition={},getPointRange={},pointRangeConditionAuto={},des="",animation=""}
+t.__index=t
+function t.New(o,h,a,s,r,n,i)
+local e={}
+setmetatable(e,t)
+e.id=o
+e.type=h
+e.pointRangeCondition=a
+e.getPointRange=s
+e.pointRangeConditionAuto=r
+e.des=n
+e.animation=i
+return e
+end
+function t.NewFromArrItem(a)
+local e={}
+setmetatable(e,t)
+e.id=a[1]
+e.type=a[2]
+e.pointRangeCondition=a[3]
+e.getPointRange=a[4]
+e.pointRangeConditionAuto=a[5]
+e.des=a[6]
+e.animation=a[7]
+return e
+end
+function t.GetArr()
+return require('DataNode/DataTable/Create/activity/DTActForgingMethodEntityTableData')
+end
+return t 

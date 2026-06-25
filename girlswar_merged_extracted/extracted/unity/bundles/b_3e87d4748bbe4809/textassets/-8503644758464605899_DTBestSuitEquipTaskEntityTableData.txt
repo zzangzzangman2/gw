@@ -1,0 +1,10 @@
+local e=
+{
+ByIdx={
+{2,206,{1,20048},{{20046,1},{1002,50000}},"bestsuitequiptaskdesc_1",5,2},
+{3,206,{5,20048},{{20048,1},{1002,50000}},"bestsuitequiptaskdesc_1",5,3},
+{4,206,{10,20048},{{20048,1},{1002,100000}},"bestsuitequiptaskdesc_1",5,4}
+},
+Len=3
+}
+return e 

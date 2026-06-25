@@ -1,0 +1,11 @@
+local t={}
+function t:OnHandle(e)
+local e=assert(GlobalPB.decode("PRT_LUCKY_TURNTABLE_LIAN_DONG_INFO_RESP",e));
+if(GameInit.GetDebugLogProto())then
+;
+;
+end
+EventSystem.SendEvent(CommonEventId.ActLuckTurntableLiandongRefresh,e)
+return e
+end
+return t 

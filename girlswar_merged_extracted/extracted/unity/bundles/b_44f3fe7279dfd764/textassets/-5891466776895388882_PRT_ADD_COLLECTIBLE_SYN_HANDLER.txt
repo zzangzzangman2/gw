@@ -1,0 +1,11 @@
+local t={}
+function t:OnHandle(e)
+local e=assert(GlobalPB.decode("PRT_ADD_COLLECTIBLE_SYN",e));
+if(GameInit.GetDebugLogProto())then
+;
+;
+end
+ModulesInit.CollectiblesDetailsMgr:SyncNewAddCollectiblesItem(e)
+return e
+end
+return t 

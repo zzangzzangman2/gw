@@ -1,0 +1,15 @@
+
+?
+ActNewHardGift.proto"
+PRT_NEW_HARD_GIFT_INFO_REQ"?
+PRT_NEW_HARD_GIFT_INFO_RESP
+leftTime (RleftTime
+nowDay (RnowDay
+isPayNor (RisPayNor
+isPayAdv (RisPayAdv*
+receivedGiftDids (RreceivedGiftDids"7
+PRT_NEW_HARD_GIFT_AWARD_REQ
+giftDid (RgiftDid"8
+PRT_NEW_HARD_GIFT_AWARD_RESP
+giftDid (RgiftDidB
+com.next1b.nextsvr.protobproto3

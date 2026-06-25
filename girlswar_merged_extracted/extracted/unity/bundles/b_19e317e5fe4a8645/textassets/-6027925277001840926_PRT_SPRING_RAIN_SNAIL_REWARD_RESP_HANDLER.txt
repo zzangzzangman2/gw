@@ -1,0 +1,11 @@
+local t={}
+function t:OnHandle(e)
+local e=assert(GlobalPB.decode("PRT_SPRING_RAIN_SNAIL_REWARD_RESP",e));
+if(GameInit.GetDebugLogProto())then
+;
+;
+end
+ModulesInit.ActSpringRainMgr:OnSnailRewardResponse(e)
+return e
+end
+return t 

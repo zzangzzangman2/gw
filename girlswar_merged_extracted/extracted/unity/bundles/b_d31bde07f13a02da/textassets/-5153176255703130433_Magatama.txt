@@ -1,0 +1,8 @@
+
+?
+Magatama.proto"7
+PRT_HERO_MAGATAMA_LEVELUP_REQ
+heroId (RheroId"8
+PRT_HERO_MAGATAMA_LEVELUP_RESP
+heroId (RheroIdB
+com.next1b.nextsvr.protobproto3

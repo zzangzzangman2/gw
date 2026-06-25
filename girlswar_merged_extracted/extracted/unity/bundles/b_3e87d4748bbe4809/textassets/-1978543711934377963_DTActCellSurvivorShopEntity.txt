@@ -1,0 +1,30 @@
+local t={id=0,group=0,limitType=0,limit=0,unlockConditions=0,award={},price={}}
+t.__index=t
+function t.New(o,h,a,s,r,n,i)
+local e={}
+setmetatable(e,t)
+e.id=o
+e.group=h
+e.limitType=a
+e.limit=s
+e.unlockConditions=r
+e.award=n
+e.price=i
+return e
+end
+function t.NewFromArrItem(a)
+local e={}
+setmetatable(e,t)
+e.id=a[1]
+e.group=a[2]
+e.limitType=a[3]
+e.limit=a[4]
+e.unlockConditions=a[5]
+e.award=a[6]
+e.price=a[7]
+return e
+end
+function t.GetArr()
+return require('DataNode/DataTable/Create/activity/DTActCellSurvivorShopEntityTableData')
+end
+return t 

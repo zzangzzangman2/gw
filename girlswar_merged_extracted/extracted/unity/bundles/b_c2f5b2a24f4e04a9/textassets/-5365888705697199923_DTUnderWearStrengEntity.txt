@@ -1,0 +1,30 @@
+local t={id=0,strengLevel=0,strengColor=0,strengStar=0,exp=0,gold=0,attrRate=0}
+t.__index=t
+function t.New(o,h,a,s,r,n,i)
+local e={}
+setmetatable(e,t)
+e.id=o
+e.strengLevel=h
+e.strengColor=a
+e.strengStar=s
+e.exp=r
+e.gold=n
+e.attrRate=i
+return e
+end
+function t.NewFromArrItem(a)
+local e={}
+setmetatable(e,t)
+e.id=a[1]
+e.strengLevel=a[2]
+e.strengColor=a[3]
+e.strengStar=a[4]
+e.exp=a[5]
+e.gold=a[6]
+e.attrRate=a[7]
+return e
+end
+function t.GetArr()
+return require('DataNode/DataTable/Create/underwear/DTUnderWearStrengEntityTableData')
+end
+return t 

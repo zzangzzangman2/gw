@@ -1,0 +1,26 @@
+local e={id=0,desc="",assetPath="",is3D=0,volume=0}
+e.__index=e
+function e.New(o,n,a,s,i)
+local t={}
+setmetatable(t,e)
+t.id=o
+t.desc=n
+t.assetPath=a
+t.is3D=s
+t.volume=i
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.desc=a[2]
+t.assetPath=a[3]
+t.is3D=a[4]
+t.volume=a[5]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/sys/DTSysAudioEntityTableData')
+end
+return e 

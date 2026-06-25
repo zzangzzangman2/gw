@@ -1,0 +1,30 @@
+local t={id=0,limtTime=0,condition=0,awardPoint={},jump=0,icon="",name=""}
+t.__index=t
+function t.New(o,h,a,s,r,n,i)
+local e={}
+setmetatable(e,t)
+e.id=o
+e.limtTime=h
+e.condition=a
+e.awardPoint=s
+e.jump=r
+e.icon=n
+e.name=i
+return e
+end
+function t.NewFromArrItem(a)
+local e={}
+setmetatable(e,t)
+e.id=a[1]
+e.limtTime=a[2]
+e.condition=a[3]
+e.awardPoint=a[4]
+e.jump=a[5]
+e.icon=a[6]
+e.name=a[7]
+return e
+end
+function t.GetArr()
+return require('DataNode/DataTable/Create/activity/DTActivityCakeTaskEntityTableData')
+end
+return t 

@@ -1,0 +1,26 @@
+local e={id=0,limit=0,award={},price={},activityType=0}
+e.__index=e
+function e.New(o,n,a,s,i)
+local t={}
+setmetatable(t,e)
+t.id=o
+t.limit=n
+t.award=a
+t.price=s
+t.activityType=i
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.limit=a[2]
+t.award=a[3]
+t.price=a[4]
+t.activityType=a[5]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/urgrassland/DTUrGrasslandNorShopEntityTableData')
+end
+return e 

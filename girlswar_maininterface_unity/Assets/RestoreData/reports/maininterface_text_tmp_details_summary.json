@@ -1,0 +1,39 @@
+{
+  "generated_at": "2026-06-25 14:56:43",
+  "source_bundle_export_dir": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\extracted\\unity\\bundles\\b_c3b1e8926fc41b4c",
+  "tmp_text_rows": 271,
+  "font_asset_path_ids": {
+    "2268522548353052838": 162,
+    "-724809986894116682": 98,
+    "454391846754054610": 11
+  },
+  "font_families": {
+    "DFMincho-SU": 162,
+    "EPSON ?????S?V?b?N???a": 98,
+    "Impact": 11
+  },
+  "shared_material_path_ids": {
+    "-6541690290105773087": 74,
+    "-6469808170336859405": 3,
+    "3932716197974622303": 65,
+    "5346313758352445069": 6,
+    "8649783434632076371": 12,
+    "4174273018840097604": 22,
+    "3398605064068647022": 3,
+    "6871398411308274113": 20,
+    "-5910174858419085933": 17,
+    "477919381716323141": 9,
+    "-2520251210141778353": 14,
+    "1733618647902657739": 4,
+    "5325321661327454409": 2,
+    "-3548449482811076398": 10,
+    "8263912359925383730": 5,
+    "5944328056072262551": 1,
+    "-4383744721098263825": 2,
+    "-1814576754943834585": 1,
+    "120833204736823593": 1
+  },
+  "matched_font_asset_rows": 271,
+  "unmatched_font_asset_rows": 0,
+  "details_csv": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_maininterface_unity\\Assets\\RestoreData\\maininterface_text_tmp_details.csv"
+}

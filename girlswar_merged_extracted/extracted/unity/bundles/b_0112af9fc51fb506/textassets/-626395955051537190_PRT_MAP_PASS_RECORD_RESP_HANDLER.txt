@@ -1,0 +1,10 @@
+local e={}
+function e:OnHandle(e)
+local e=assert(GlobalPB.decode("PRT_MAP_PASS_RECORD_RESP",e));
+if(GameInit.GetDebugLogProto())then
+;
+;
+end
+ModulesInit.ExpeditionManager:OnSendMapPassRecordRequest(e)
+end
+return e 

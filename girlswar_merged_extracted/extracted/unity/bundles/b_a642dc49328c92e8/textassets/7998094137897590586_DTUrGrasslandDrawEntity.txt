@@ -1,0 +1,30 @@
+local t={id=0,itemCost={},floorPool=0,floorTime=0,floorPool1=0,poolName="",poolIMG=""}
+t.__index=t
+function t.New(o,h,a,s,r,n,i)
+local e={}
+setmetatable(e,t)
+e.id=o
+e.itemCost=h
+e.floorPool=a
+e.floorTime=s
+e.floorPool1=r
+e.poolName=n
+e.poolIMG=i
+return e
+end
+function t.NewFromArrItem(a)
+local e={}
+setmetatable(e,t)
+e.id=a[1]
+e.itemCost=a[2]
+e.floorPool=a[3]
+e.floorTime=a[4]
+e.floorPool1=a[5]
+e.poolName=a[6]
+e.poolIMG=a[7]
+return e
+end
+function t.GetArr()
+return require('DataNode/DataTable/Create/urgrassland/DTUrGrasslandDrawEntityTableData')
+end
+return t 

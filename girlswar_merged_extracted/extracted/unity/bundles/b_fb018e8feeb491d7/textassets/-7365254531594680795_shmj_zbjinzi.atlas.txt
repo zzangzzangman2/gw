@@ -1,0 +1,6 @@
+shmj_zbjinzi.png
+size:64,128
+filter:Linear,Linear
+a13
+bounds:1,1,47,72
+offsets:1,1,49,74

@@ -1,0 +1,48 @@
+local a={id=0,vip=0,level={},condition=0,parameter=0,hero={},group=0,loopMax=0,title="",background="",mainIcon=0,award={},duration=0,conditionDes="",mainIconNew="",name=""}
+a.__index=a
+function a.New(h,u,d,t,c,f,y,w,p,m,l,n,i,o,s,r)
+local e={}
+setmetatable(e,a)
+e.id=h
+e.vip=u
+e.level=d
+e.condition=t
+e.parameter=c
+e.hero=f
+e.group=y
+e.loopMax=w
+e.title=p
+e.background=m
+e.mainIcon=l
+e.award=n
+e.duration=i
+e.conditionDes=o
+e.mainIconNew=s
+e.name=r
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.vip=t[2]
+e.level=t[3]
+e.condition=t[4]
+e.parameter=t[5]
+e.hero=t[6]
+e.group=t[7]
+e.loopMax=t[8]
+e.title=t[9]
+e.background=t[10]
+e.mainIcon=t[11]
+e.award=t[12]
+e.duration=t[13]
+e.conditionDes=t[14]
+e.mainIconNew=t[15]
+e.name=t[16]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/activity/DTFaceGiftEntityTableData')
+end
+return a 

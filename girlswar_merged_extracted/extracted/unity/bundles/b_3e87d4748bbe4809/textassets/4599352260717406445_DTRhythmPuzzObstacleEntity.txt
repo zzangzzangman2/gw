@@ -1,0 +1,26 @@
+local e={id=0,obstacleGroupID=0,round=0,obstacle={{},{}},earlyWarning={{},{}}}
+e.__index=e
+function e.New(o,n,a,s,i)
+local t={}
+setmetatable(t,e)
+t.id=o
+t.obstacleGroupID=n
+t.round=a
+t.obstacle=s
+t.earlyWarning=i
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.obstacleGroupID=a[2]
+t.round=a[3]
+t.obstacle=a[4]
+t.earlyWarning=a[5]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/activity/DTRhythmPuzzObstacleEntityTableData')
+end
+return e 

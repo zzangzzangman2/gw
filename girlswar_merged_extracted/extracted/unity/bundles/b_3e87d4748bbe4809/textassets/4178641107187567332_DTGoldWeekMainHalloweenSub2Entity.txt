@@ -1,0 +1,32 @@
+local a={id=0,tab=0,tabName=0,pngId="",jump=0,countDownShow=0,isForcedPrompt=0,actName=""}
+a.__index=a
+function a.New(i,h,n,t,d,r,s,o)
+local e={}
+setmetatable(e,a)
+e.id=i
+e.tab=h
+e.tabName=n
+e.pngId=t
+e.jump=d
+e.countDownShow=r
+e.isForcedPrompt=s
+e.actName=o
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.tab=t[2]
+e.tabName=t[3]
+e.pngId=t[4]
+e.jump=t[5]
+e.countDownShow=t[6]
+e.isForcedPrompt=t[7]
+e.actName=t[8]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/activity/DTGoldWeekMainHalloweenSub2EntityTableData')
+end
+return a 

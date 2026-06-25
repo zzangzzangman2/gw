@@ -1,0 +1,52 @@
+local a={id=0,cardType=0,weaponType=0,weaponUnlockLv=0,quality=0,name="",desc="",unlockDesc="",icon="",effectType=0,effectValue=0,modelType=0,effectType2=0,effectValue2=0,modelType2=0,type=0,maxNumber=0,weight=0}
+a.__index=a
+function a.New(d,c,l,t,f,m,y,v,p,b,w,u,n,i,o,s,r,h)
+local e={}
+setmetatable(e,a)
+e.id=d
+e.cardType=c
+e.weaponType=l
+e.weaponUnlockLv=t
+e.quality=f
+e.name=m
+e.desc=y
+e.unlockDesc=v
+e.icon=p
+e.effectType=b
+e.effectValue=w
+e.modelType=u
+e.effectType2=n
+e.effectValue2=i
+e.modelType2=o
+e.type=s
+e.maxNumber=r
+e.weight=h
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.cardType=t[2]
+e.weaponType=t[3]
+e.weaponUnlockLv=t[4]
+e.quality=t[5]
+e.name=t[6]
+e.desc=t[7]
+e.unlockDesc=t[8]
+e.icon=t[9]
+e.effectType=t[10]
+e.effectValue=t[11]
+e.modelType=t[12]
+e.effectType2=t[13]
+e.effectValue2=t[14]
+e.modelType2=t[15]
+e.type=t[16]
+e.maxNumber=t[17]
+e.weight=t[18]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/activity/DTActCellSurvivorWeaponCardEntityTableData')
+end
+return a 

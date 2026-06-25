@@ -1,0 +1,17 @@
+{
+  "GameObject": 25,
+  "Transform": 25,
+  "MeshRenderer": 18,
+  "MeshFilter": 18,
+  "BoxCollider": 18,
+  "Material": 3,
+  "Shader": 3,
+  "SpriteRenderer": 3,
+  "MonoBehaviour": 3,
+  "MonoScript": 2,
+  "PreloadData": 1,
+  "AssetBundle": 1,
+  "RenderSettings": 1,
+  "LightmapSettings": 1,
+  "NavMeshSettings": 1
+}

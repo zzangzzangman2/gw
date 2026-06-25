@@ -1,0 +1,7 @@
+biaoqing_qipao.png
+size:256,64
+filter:Linear,Linear
+qiyuqpk1
+bounds:70,0,68,56
+qiyuqpk2
+bounds:0,0,68,56

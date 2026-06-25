@@ -1,0 +1,16 @@
+
+?
+ActNewPlayerFightRank.protoCommons.proto
+Rank.proto"$
+"PRT_NEW_PLAYER_FIGHT_RANK_INFO_REQ"?
+#PRT_NEW_PLAYER_FIGHT_RANK_INFO_RESP#
+type (2.ENUM_RANK_TYPERtype
+leftTime (RleftTime.
+	rankDatas (2.PRT_COMMON_RANKR	rankDatas,
+selfRank (2.PRT_COMMON_RANKRselfRank,
+receivedAwardDids (RreceivedAwardDids"A
+#PRT_NEW_PLAYER_FIGHT_RANK_AWARD_REQ
+awardDid (RawardDid"B
+$PRT_NEW_PLAYER_FIGHT_RANK_AWARD_RESP
+awardDid (RawardDidB
+com.next1b.nextsvr.protobproto3

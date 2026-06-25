@@ -1,0 +1,6 @@
+maininterface_renwu.png
+size:128,64
+filter:Linear,Linear
+zhuye_renwu
+bounds:0,0,63,66
+rotate:90

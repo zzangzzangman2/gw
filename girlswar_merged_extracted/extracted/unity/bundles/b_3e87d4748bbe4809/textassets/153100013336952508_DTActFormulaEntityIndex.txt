@@ -1,0 +1,47 @@
+local e={}
+e.__index=e
+function e.Init()
+e.indexData={}
+e.indexData['index_1']={}
+e.indexData['index_1']['DTActivity']={33,34,35,36,37,38,39,40}
+e.indexData['index_1']['DTActivityHeroA']={8}
+e.indexData['index_1']['DTActivityHeroA2']={9}
+e.indexData['index_1']['DTActivityHeroA3']={10}
+e.indexData['index_1']['DTActivityHeroA4']={11}
+e.indexData['index_1']['DTActivityHeroA5']={16}
+e.indexData['index_1']['DTActivityHeroA6']={17}
+e.indexData['index_1']['DTActivityHeroA9']={18}
+e.indexData['index_1']['DTActivity_K']={41,42,43,44,45,46,47,48}
+e.indexData['index_1']['DTDrawNewHeroCardTask']={13}
+e.indexData['index_1']['DTFirstSaleUr']={26}
+e.indexData['index_1']['DTFirstSaleUrCfg']={27}
+e.indexData['index_1']['DTMarryGacha']={14}
+e.indexData['index_1']['DTMonster']={30,31,32}
+e.indexData['index_1']['DTNewHeroBuff']={12}
+e.indexData['index_1']['DTNewJourneyConfig']={1}
+e.indexData['index_1']['DTNewJourneyPoint']={2}
+e.indexData['index_1']['DTNewJourneyTask']={3}
+e.indexData['index_1']['DTNewMarryGachaTask']={15}
+e.indexData['index_1']['DTSelfMarryBackBoss']={23}
+e.indexData['index_1']['DTSelfMarryBackBossHurtRank']={24}
+e.indexData['index_1']['DTSelfMarryBackCfg']={22}
+e.indexData['index_1']['DTSelfMarryBackDraw']={25}
+e.indexData['index_1']['DTSelfMarryBoss']={5}
+e.indexData['index_1']['DTSelfMarryCfg']={4}
+e.indexData['index_1']['DTSelfMarryDraw']={7}
+e.indexData['index_1']['DTSelfMarryTarget']={6}
+e.indexData['index_1']['DTUrBackBossHurtRank']={21}
+e.indexData['index_1']['DTUrBackPool']={19}
+e.indexData['index_1']['DTUrBackPoolCfg']={20}
+e.indexData['index_1']['DTUrChallenge']={28}
+e.indexData['index_1']['DTUrTask']={29}
+end
+function e.GetByIndex(t,a)
+if e.indexData[t]and e.indexData[t][a]then
+return e.indexData[t][a]
+else
+return{}
+end
+end
+return e
+

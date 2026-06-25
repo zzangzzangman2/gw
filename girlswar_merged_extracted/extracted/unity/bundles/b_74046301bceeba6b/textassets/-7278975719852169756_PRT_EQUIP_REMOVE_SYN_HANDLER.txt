@@ -1,0 +1,10 @@
+local e={}
+function e:OnHandle(e)
+local e=assert(GlobalPB.decode("PRT_EQUIP_REMOVE_SYN",e));
+if(GameInit.GetDebugLogProto())then
+;
+;
+end
+EquipMgr:RemoveEquip(e)
+end
+return e 

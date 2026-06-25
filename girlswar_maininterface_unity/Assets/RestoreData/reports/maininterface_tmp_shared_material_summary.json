@@ -1,0 +1,86 @@
+{
+  "generated_at": "2026-06-25 15:50:50",
+  "referenced_shared_material_count": 19,
+  "found_shared_material_count": 19,
+  "missing_shared_material_count": 0,
+  "total_tmp_text_refs": 271,
+  "top_usage": [
+    {
+      "shared_material_path_id": "-6541690290105773087",
+      "usage_count": 74
+    },
+    {
+      "shared_material_path_id": "3932716197974622303",
+      "usage_count": 65
+    },
+    {
+      "shared_material_path_id": "4174273018840097604",
+      "usage_count": 22
+    },
+    {
+      "shared_material_path_id": "6871398411308274113",
+      "usage_count": 20
+    },
+    {
+      "shared_material_path_id": "-5910174858419085933",
+      "usage_count": 17
+    },
+    {
+      "shared_material_path_id": "-2520251210141778353",
+      "usage_count": 14
+    },
+    {
+      "shared_material_path_id": "8649783434632076371",
+      "usage_count": 12
+    },
+    {
+      "shared_material_path_id": "-3548449482811076398",
+      "usage_count": 10
+    },
+    {
+      "shared_material_path_id": "477919381716323141",
+      "usage_count": 9
+    },
+    {
+      "shared_material_path_id": "5346313758352445069",
+      "usage_count": 6
+    },
+    {
+      "shared_material_path_id": "8263912359925383730",
+      "usage_count": 5
+    },
+    {
+      "shared_material_path_id": "1733618647902657739",
+      "usage_count": 4
+    },
+    {
+      "shared_material_path_id": "-6469808170336859405",
+      "usage_count": 3
+    },
+    {
+      "shared_material_path_id": "3398605064068647022",
+      "usage_count": 3
+    },
+    {
+      "shared_material_path_id": "5325321661327454409",
+      "usage_count": 2
+    },
+    {
+      "shared_material_path_id": "-4383744721098263825",
+      "usage_count": 2
+    },
+    {
+      "shared_material_path_id": "5944328056072262551",
+      "usage_count": 1
+    },
+    {
+      "shared_material_path_id": "-1814576754943834585",
+      "usage_count": 1
+    },
+    {
+      "shared_material_path_id": "120833204736823593",
+      "usage_count": 1
+    }
+  ],
+  "verdict": "shared material presets are required; MainInterface currently cannot match TMP route text if it only uses base font materials"
+}

@@ -1,0 +1,35 @@
+local e=
+{
+ByIdx={
+{1,1,1,1,10,"liandongfundtaskname_1",0,0},
+{2,2,1,1,10,"liandongfundtaskname_2",17,0},
+{3,3,1,5,10,"liandongfundtaskname_3",3,0},
+{4,4,1,1,10,"liandongfundtaskname_4",16,0},
+{5,5,1,10,10,"liandongfundtaskname_5",6,0},
+{6,6,1,2,16,"liandongfundtaskname_26",131,0},
+{7,7,1,2,16,"liandongfundtaskname_28",134,0},
+{8,8,2,30,22,"liandongfundtaskname_6",132,0},
+{9,9,2,5,26,"liandongfundtaskname_7",132,0},
+{10,10,2,10,26,"liandongfundtaskname_8",129,0},
+{11,11,2,20,22,"liandongfundtaskname_9",20,0},
+{12,12,2,30,22,"liandongfundtaskname_10",17,0},
+{13,13,2,10,12,"liandongfundtaskname_11",10,0},
+{14,14,2,50,26,"liandongfundtaskname_12",24,0},
+{15,15,2,1,12,"liandongfundtaskname_13",35,0},
+{16,16,2,100,16,"liandongfundtaskname_14",3,0},
+{17,5,2,150,10,"liandongfundtaskname_15",6,0},
+{18,18,2,10,12,"liandongfundtaskname_17",4,0},
+{19,19,2,10,16,"liandongfundtaskname_18",4,0},
+{20,20,2,5,22,"liandongfundtaskname_19",24,0},
+{21,21,2,1,16,"liandongfundtaskname_20",19,0},
+{22,22,2,1000,12,"liandongfundtaskname_21",37,0},
+{23,23,2,10,16,"liandongfundtaskname_22",63,0},
+{24,24,2,30,16,"liandongfundtaskname_23",16,0},
+{25,25,2,10,10,"liandongfundtaskname_24",12,1},
+{26,26,2,10,10,"liandongfundtaskname_25",15,0},
+{27,27,2,10,16,"liandongfundtaskname_27",47,0},
+{28,28,2,10,10,"liandongfundtaskname_28",138,0}
+},
+Len=28
+}
+return e 

@@ -1,0 +1,11 @@
+local t={}
+function t:OnHandle(e)
+local e=assert(GlobalPB.decode("PRT_MAGIC_ORCHARD_FIELD_RECLAIM_RESP",e));
+if(GameInit.GetDebugLogProto())then
+;
+;
+end
+ModulesInit.MagicOrchardMgr:RespMagicOrchardFieldReclaim(e)
+return e
+end
+return t 

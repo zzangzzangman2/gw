@@ -1,0 +1,44 @@
+local a={id=0,fastBattleCost={},forgeRefreshCost={},mapBossCost={},bagEquipCost={},bagUnderwearCost={},arenaTimesCost={},crossArenaTimesCost={},shopRefreshCost={},powerCost={},carnivalPowerCost={},newCarnivalPowerCost={},footBallCost={},makeLoveCost={}}
+a.__index=a
+function a.New(s,l,r,t,u,m,f,w,c,d,i,o,n,h)
+local e={}
+setmetatable(e,a)
+e.id=s
+e.fastBattleCost=l
+e.forgeRefreshCost=r
+e.mapBossCost=t
+e.bagEquipCost=u
+e.bagUnderwearCost=m
+e.arenaTimesCost=f
+e.crossArenaTimesCost=w
+e.shopRefreshCost=c
+e.powerCost=d
+e.carnivalPowerCost=i
+e.newCarnivalPowerCost=o
+e.footBallCost=n
+e.makeLoveCost=h
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.fastBattleCost=t[2]
+e.forgeRefreshCost=t[3]
+e.mapBossCost=t[4]
+e.bagEquipCost=t[5]
+e.bagUnderwearCost=t[6]
+e.arenaTimesCost=t[7]
+e.crossArenaTimesCost=t[8]
+e.shopRefreshCost=t[9]
+e.powerCost=t[10]
+e.carnivalPowerCost=t[11]
+e.newCarnivalPowerCost=t[12]
+e.footBallCost=t[13]
+e.makeLoveCost=t[14]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/constant/DTBuyTimesEntityTableData')
+end
+return a 

@@ -1,0 +1,102 @@
+local a={id=0,unit=0,next={},heroImg="",talk="",name="",offX=0,frameId=0,focusNode="",isShowHand=0,isShowHalo=0,handOffX=0,handOffY=0,delayTimeShow="",bgFocusScale="",focusDelay="",isFocusStatus=0,isHideFocusBlack=0,isTouchOther=0,stopType=0,stopPara="",isFinish=0,extraOper=0,extraOperParam="",nextPara="",message="",messagePosType=0,messageOffX=0,messageOffY=0,award={},awardViewType=0,heroBubble="",heroBubbleSizeType=0,heroBubblePathType=0,heroBubbleOffX=0,heroBubbleOffY=0,heroBubbleNext=0,guiderMessage="",guiderClick=0,guiderAutoNext=0,guiderPathType=0,guiderPos={},guideSkipUnits={}}
+a.__index=a
+function a.New(y,x,q,t,N,O,I,A,z,_,E,T,H,C,R,Y,F,W,M,D,L,U,P,S,j,u,l,r,d,h,o,i,n,s,c,p,m,k,b,g,v,f,w)
+local e={}
+setmetatable(e,a)
+e.id=y
+e.unit=x
+e.next=q
+e.heroImg=t
+e.talk=N
+e.name=O
+e.offX=I
+e.frameId=A
+e.focusNode=z
+e.isShowHand=_
+e.isShowHalo=E
+e.handOffX=T
+e.handOffY=H
+e.delayTimeShow=C
+e.bgFocusScale=R
+e.focusDelay=Y
+e.isFocusStatus=F
+e.isHideFocusBlack=W
+e.isTouchOther=M
+e.stopType=D
+e.stopPara=L
+e.isFinish=U
+e.extraOper=P
+e.extraOperParam=S
+e.nextPara=j
+e.message=u
+e.messagePosType=l
+e.messageOffX=r
+e.messageOffY=d
+e.award=h
+e.awardViewType=o
+e.heroBubble=i
+e.heroBubbleSizeType=n
+e.heroBubblePathType=s
+e.heroBubbleOffX=c
+e.heroBubbleOffY=p
+e.heroBubbleNext=m
+e.guiderMessage=k
+e.guiderClick=b
+e.guiderAutoNext=g
+e.guiderPathType=v
+e.guiderPos=f
+e.guideSkipUnits=w
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.unit=t[2]
+e.next=t[3]
+e.heroImg=t[4]
+e.talk=t[5]
+e.name=t[6]
+e.offX=t[7]
+e.frameId=t[8]
+e.focusNode=t[9]
+e.isShowHand=t[10]
+e.isShowHalo=t[11]
+e.handOffX=t[12]
+e.handOffY=t[13]
+e.delayTimeShow=t[14]
+e.bgFocusScale=t[15]
+e.focusDelay=t[16]
+e.isFocusStatus=t[17]
+e.isHideFocusBlack=t[18]
+e.isTouchOther=t[19]
+e.stopType=t[20]
+e.stopPara=t[21]
+e.isFinish=t[22]
+e.extraOper=t[23]
+e.extraOperParam=t[24]
+e.nextPara=t[25]
+e.message=t[26]
+e.messagePosType=t[27]
+e.messageOffX=t[28]
+e.messageOffY=t[29]
+e.award=t[30]
+e.awardViewType=t[31]
+e.heroBubble=t[32]
+e.heroBubbleSizeType=t[33]
+e.heroBubblePathType=t[34]
+e.heroBubbleOffX=t[35]
+e.heroBubbleOffY=t[36]
+e.heroBubbleNext=t[37]
+e.guiderMessage=t[38]
+e.guiderClick=t[39]
+e.guiderAutoNext=t[40]
+e.guiderPathType=t[41]
+e.guiderPos=t[42]
+e.guideSkipUnits=t[43]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/guide_ab/DTGuideEntityTableData')
+end
+return a 

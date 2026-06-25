@@ -1,0 +1,19 @@
+local e=
+{
+ByIdx={
+{10001,1,2,99847,3,"AirshipArchitectPoint01"},
+{10101,1,2,99852,13,"AirshipArchitectPoint02"},
+{10102,1,2,99848,5,"AirshipArchitectPoint03"},
+{10103,1,2,99850,52,"AirshipArchitectPoint04"},
+{10104,1,2,99853,30,"AirshipArchitectPoint05"},
+{10105,1,2,99854,128,"AirshipArchitectPoint06"},
+{20001,2,2,99847,3,"AirshipArchitectPoint01"},
+{20101,2,2,99852,13,"AirshipArchitectPoint02"},
+{20102,2,2,99848,5,"AirshipArchitectPoint03"},
+{20103,2,2,99850,52,"AirshipArchitectPoint04"},
+{20104,2,2,99853,30,"AirshipArchitectPoint05"},
+{20105,2,2,99854,128,"AirshipArchitectPoint06"}
+},
+Len=12
+}
+return e 

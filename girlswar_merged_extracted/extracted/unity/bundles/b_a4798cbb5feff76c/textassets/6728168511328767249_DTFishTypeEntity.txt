@@ -1,0 +1,22 @@
+local e={id=0,animName="",manAnimName=""}
+e.__index=e
+function e.New(o,a,i)
+local t={}
+setmetatable(t,e)
+t.id=o
+t.animName=a
+t.manAnimName=i
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.animName=a[2]
+t.manAnimName=a[3]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/worldMap/DTFishTypeEntityTableData')
+end
+return e 

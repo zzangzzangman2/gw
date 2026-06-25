@@ -1,0 +1,7 @@
+
+?
+ActMapsGiftNew.protoActMapsGift.proto"
+PRT_MAPS_GIFT_NEW_INFO_REQ"A
+PRT_MAPS_GIFT_NEW_INFO_RESP"
+gift (2.PRT_MAPS_GIFTRgiftB
+com.next1b.nextsvr.protobproto3

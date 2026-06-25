@@ -1,0 +1,29 @@
+
+?
+ActCumPack.protoCommons.proto"?
+PRT_CUM_PACK&
+rewardPointIds (RrewardPointIds,
+buyGoodsMap (2
+.PRT_GOODSRbuyGoodsMap"
+curDayByWeek (RcurDayByWeek$
+curWeekByMoth (RcurWeekByMoth
+
+totalPoint (R
+totalPoint"
+PRT_CUM_PACK_INFO_REQ"?
+PRT_CUM_PACK_INFO_RESP
+leftTime (RleftTime!
+info (2.PRT_CUM_PACKRinfo 
+weekEndTime (RweekEndTime"
+dailyEndTime (RdailyEndTime 
+mothEndTime (RmothEndTime"-
+PRT_CUM_PACK_BUY_FREE_REQ
+did (Rdid"b
+PRT_CUM_PACK_BUY_FREE_RESP!
+info (2.PRT_CUM_PACKRinfo!
+drops (2.PRT_REWARDRdrops"
+PRT_REWARD_CUM_PACK_POINT_REQ"f
+PRT_REWARD_CUM_PACK_POINT_RESP!
+info (2.PRT_CUM_PACKRinfo!
+drops (2.PRT_REWARDRdropsB
+com.next1b.nextsvr.protobproto3

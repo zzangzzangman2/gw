@@ -1,0 +1,22 @@
+local e=
+{
+ByIdx={
+{1,1,1,"bossname1_skillname1",1,{5000},2500,1,{2500},"bossname1_skillname1_voice"},
+{2,1,2,"bossname1_skillname3",2,{10000,20000,30000,40000,50000,60000},2500,2,{1500,5000},"bossname1_skillname3_voice"},
+{3,1,3,"bossname1_skillname4",2,{5000,15000,30000,45000,60000,75000,90000,105000,120000,135000,150000,165000,180000,195000,210000,235000,250000,275000,290000,305000,320000,335000,350000},1500,3,{3000},"bossname1_skillname4_voice"},
+{4,1,4,"bossname1_skillname5",1,{1000},2500,3,{4000},"bossname1_skillname5_voice"},
+{5,1,5,"bossname1_skillname2",1,{1500},1000,1,{8500},"bossname1_skillname2_voice"},
+{6,2,1,"bossname2_skillname1",1,{5000},2500,1,{2500},"bossname2_skillname1_voice"},
+{7,2,2,"bossname2_skillname3",2,{10000,15000,20000,30000,60000,120000},2500,2,{1500,5000},"bossname2_skillname3_voice"},
+{8,2,3,"bossname2_skillname4",2,{5000,15000,30000,45000,60000,75000,90000,105000,120000,135000,150000,165000,180000,195000,210000,235000,250000,275000,290000,305000,320000,335000,350000},1500,3,{3000},"bossname2_skillname4_voice"},
+{9,2,4,"bossname2_skillname5",1,{1000},2500,3,{4000},"bossname2_skillname5_voice"},
+{10,2,5,"bossname2_skillname2",1,{1500},1000,1,{8500},"bossname2_skillname2_voice"},
+{11,3,1,"bossname3_skillname1",1,{5000},2500,1,{2500},"bossname3_skillname1_voice"},
+{12,3,2,"bossname3_skillname3",2,{10000,15000,20000,30000,60000,120000},2500,2,{1500,5000},"bossname3_skillname3_voice"},
+{13,3,3,"bossname3_skillname4",2,{5000,15000,30000,45000,60000,75000,90000,105000,120000,135000,150000,165000,180000,195000,210000,235000,250000,275000,290000,305000,320000,335000,350000},1500,3,{3000},"bossname3_skillname4_voice"},
+{14,3,4,"bossname3_skillname5",1,{1000},2500,3,{4000},"bossname3_skillname5_voice"},
+{15,3,5,"bossname3_skillname2",1,{1500},1000,1,{8500},"bossname3_skillname2_voice"}
+},
+Len=15
+}
+return e 

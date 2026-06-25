@@ -1,0 +1,12 @@
+spine_wujiangchongzhi1.png
+size:512,512
+filter:Linear,Linear
+000
+bounds:2,109,301,267
+ddd
+bounds:305,302,71,74
+offsets:1,1,73,75
+xingxing2
+bounds:305,261,39,38
+offsets:1,1,41,40
+rotate:90

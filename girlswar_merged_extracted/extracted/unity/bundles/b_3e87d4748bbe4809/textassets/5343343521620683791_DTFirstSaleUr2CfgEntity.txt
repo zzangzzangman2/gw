@@ -1,0 +1,30 @@
+local t={id=0,ShopShow=0,GiftShow=0,BossShow=0,ShopShowFORMULA="",GiftShowFORMULA="",BossShowFORMULA=""}
+t.__index=t
+function t.New(o,h,a,s,r,n,i)
+local e={}
+setmetatable(e,t)
+e.id=o
+e.ShopShow=h
+e.GiftShow=a
+e.BossShow=s
+e.ShopShowFORMULA=r
+e.GiftShowFORMULA=n
+e.BossShowFORMULA=i
+return e
+end
+function t.NewFromArrItem(a)
+local e={}
+setmetatable(e,t)
+e.id=a[1]
+e.ShopShow=a[2]
+e.GiftShow=a[3]
+e.BossShow=a[4]
+e.ShopShowFORMULA=a[5]
+e.GiftShowFORMULA=a[6]
+e.BossShowFORMULA=a[7]
+return e
+end
+function t.GetArr()
+return require('DataNode/DataTable/Create/activity/DTFirstSaleUr2CfgEntityTableData')
+end
+return t 

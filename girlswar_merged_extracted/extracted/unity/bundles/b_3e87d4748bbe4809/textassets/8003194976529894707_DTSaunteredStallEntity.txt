@@ -1,0 +1,44 @@
+local a={id=0,stallType=0,mapPosition=0,typeParam1={},typeParam2={{},{}},typeParam3={{},{}},unlockLevel=0,maxLevel=0,stallName="",stallDesc="",stallEffectDesc="",stallImage="",stallShow="",useType=0}
+a.__index=a
+function a.New(s,l,r,t,u,m,f,w,c,d,i,o,n,h)
+local e={}
+setmetatable(e,a)
+e.id=s
+e.stallType=l
+e.mapPosition=r
+e.typeParam1=t
+e.typeParam2=u
+e.typeParam3=m
+e.unlockLevel=f
+e.maxLevel=w
+e.stallName=c
+e.stallDesc=d
+e.stallEffectDesc=i
+e.stallImage=o
+e.stallShow=n
+e.useType=h
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.stallType=t[2]
+e.mapPosition=t[3]
+e.typeParam1=t[4]
+e.typeParam2=t[5]
+e.typeParam3=t[6]
+e.unlockLevel=t[7]
+e.maxLevel=t[8]
+e.stallName=t[9]
+e.stallDesc=t[10]
+e.stallEffectDesc=t[11]
+e.stallImage=t[12]
+e.stallShow=t[13]
+e.useType=t[14]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/activity/DTSaunteredStallEntityTableData')
+end
+return a 

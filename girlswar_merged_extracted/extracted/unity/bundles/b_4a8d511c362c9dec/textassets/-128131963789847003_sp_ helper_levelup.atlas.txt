@@ -1,0 +1,24 @@
+sp_ helper_levelup.png
+size:512,128
+filter:Linear,Linear
+a1
+bounds:2,5,51,51
+offsets:1,1,53,53
+a2
+bounds:2,5,51,51
+offsets:1,1,53,53
+a3
+bounds:437,2,55,55
+offsets:1,1,57,57
+a4
+bounds:437,2,55,55
+offsets:1,1,57,57
+a5
+bounds:437,2,55,55
+offsets:1,1,57,57
+a6
+bounds:437,59,62,62
+offsets:1,1,64,64
+a7
+bounds:2,58,433,63
+offsets:1,1,435,65

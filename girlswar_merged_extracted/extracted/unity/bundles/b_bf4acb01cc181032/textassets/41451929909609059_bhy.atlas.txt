@@ -1,0 +1,14 @@
+bhy.png
+size:751,254
+filter:Linear,Linear
+001
+bounds:0,32,18,9
+rotate:90
+006
+bounds:182,74,569,180
+007
+bounds:182,0,345,73
+008
+bounds:0,51,203,181
+offsets:0,0,211,181
+rotate:90

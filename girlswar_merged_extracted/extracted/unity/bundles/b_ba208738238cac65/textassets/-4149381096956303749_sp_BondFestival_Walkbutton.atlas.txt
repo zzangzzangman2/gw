@@ -1,0 +1,11 @@
+sp_BondFestival_Walkbutton.png
+size:256,256
+filter:Linear,Linear
+nyxyx_pao
+bounds:0,0,102,110
+rotate:90
+wenzi
+bounds:112,14,88,47
+rotate:90
+xg_chengann
+bounds:0,104,153,152

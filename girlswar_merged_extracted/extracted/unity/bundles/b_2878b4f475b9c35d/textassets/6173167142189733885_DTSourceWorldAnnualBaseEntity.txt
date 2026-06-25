@@ -1,0 +1,42 @@
+local a={id=0,startTime="",endTime="",quantity=0,signIn=0,battlePower=0,statistics=0,resurrectionConsumption={},guildNum=0,battlefield=0,activeDay=0,signReward={},rewardDisplay={{},{}}}
+a.__index=a
+function a.New(s,d,h,t,l,c,m,f,u,r,i,o,n)
+local e={}
+setmetatable(e,a)
+e.id=s
+e.startTime=d
+e.endTime=h
+e.quantity=t
+e.signIn=l
+e.battlePower=c
+e.statistics=m
+e.resurrectionConsumption=f
+e.guildNum=u
+e.battlefield=r
+e.activeDay=i
+e.signReward=o
+e.rewardDisplay=n
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.startTime=t[2]
+e.endTime=t[3]
+e.quantity=t[4]
+e.signIn=t[5]
+e.battlePower=t[6]
+e.statistics=t[7]
+e.resurrectionConsumption=t[8]
+e.guildNum=t[9]
+e.battlefield=t[10]
+e.activeDay=t[11]
+e.signReward=t[12]
+e.rewardDisplay=t[13]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/sourceWorld/DTSourceWorldAnnualBaseEntityTableData')
+end
+return a 

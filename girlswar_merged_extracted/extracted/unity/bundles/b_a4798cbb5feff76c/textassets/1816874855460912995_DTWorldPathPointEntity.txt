@@ -1,0 +1,24 @@
+local e={id=0,pointId1=0,pointId2=0,movePointIds={}}
+e.__index=e
+function e.New(o,a,n,i)
+local t={}
+setmetatable(t,e)
+t.id=o
+t.pointId1=a
+t.pointId2=n
+t.movePointIds=i
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.pointId1=a[2]
+t.pointId2=a[3]
+t.movePointIds=a[4]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/worldMap/DTWorldPathPointEntityTableData')
+end
+return e 

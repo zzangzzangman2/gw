@@ -1,0 +1,13 @@
+sp.png
+size:512,512
+filter:Linear,Linear
+sp1
+bounds:2,175,26,50
+sp2
+bounds:2,2,430,400
+sp3
+bounds:2,37,28,67
+sp4
+bounds:2,106,62,53
+sp5
+bounds:2,162,40,11

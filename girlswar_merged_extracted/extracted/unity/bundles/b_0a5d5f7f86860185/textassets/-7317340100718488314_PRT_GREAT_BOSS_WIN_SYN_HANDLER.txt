@@ -1,0 +1,13 @@
+local t={}
+function t:OnHandle(e)
+local e=assert(GlobalPB.decode("PRT_GREAT_BOSS_WIN_SYN",e));
+if(GameInit.GetDebugLogProto())then
+;
+;
+end
+if ModulesInit.GreatBossMgr.isEnterStatus then
+ModulesInit.GreatBossMgr:OnPlayerWinTip(e)
+end
+return e
+end
+return t 

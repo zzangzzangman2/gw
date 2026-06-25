@@ -1,0 +1,13 @@
+spine_shangchengbiaoti.png
+size:512,128
+filter:Linear,Linear
+a1
+bounds:227,47,190,62
+a2
+bounds:302,13,31,32
+a3
+bounds:266,12,34,33
+a4
+bounds:227,9,37,36
+a5
+bounds:2,2,223,107

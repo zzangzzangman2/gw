@@ -1,0 +1,10 @@
+local e={}
+function e:OnHandle(e)
+local e=assert(GlobalPB.decode("PRT_CHAT_LOGIN_SYN",e));
+if(GameInit.GetDebugLogProto())then
+;
+;
+end
+ChatMgr:initData(e)
+end
+return e 

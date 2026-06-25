@@ -1,0 +1,30 @@
+local t={id=0,noticeDays=0,drawDays=0,noticeTips="",noticeName="",noticeName2="",noticeIcon=""}
+t.__index=t
+function t.New(o,h,a,s,r,n,i)
+local e={}
+setmetatable(e,t)
+e.id=o
+e.noticeDays=h
+e.drawDays=a
+e.noticeTips=s
+e.noticeName=r
+e.noticeName2=n
+e.noticeIcon=i
+return e
+end
+function t.NewFromArrItem(a)
+local e={}
+setmetatable(e,t)
+e.id=a[1]
+e.noticeDays=a[2]
+e.drawDays=a[3]
+e.noticeTips=a[4]
+e.noticeName=a[5]
+e.noticeName2=a[6]
+e.noticeIcon=a[7]
+return e
+end
+function t.GetArr()
+return require('DataNode/DataTable/Create/activity/DTNewMarketTimeEntityTableData')
+end
+return t 

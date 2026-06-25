@@ -1,0 +1,68 @@
+
+?
+ActFinger.protoCommons.proto"i
+PRT_FINGER_DRAW
+position (Rposition
+awardDid (RawardDid
+
+isBigAward (R
+isBigAward"
+PRT_FINGER_INFO_REQ"?
+PRT_FINGER_INFO_RESP
+endTime (RendTime
+layer (Rlayer,
+bigAwardDidNormal (RbigAwardDidNormal.
+bigAwardDidSpecial (RbigAwardDidSpecial&
+draws (2.PRT_FINGER_DRAWRdraws.
+totalDiamondBuyNum (RtotalDiamondBuyNum"
+layerStarted (RlayerStarted?
+bigAwardReceivedNormal (2.PRT_KVRbigAwardReceivedNormalA
+bigAwardReceivedSpecial	 (2.PRT_KVRbigAwardReceivedSpecial 
+fingerCount
+ (RfingerCount&
+recMaxFingerId (RrecMaxFingerId"H
+PRT_FINGER_SELECT_BIGAWARD_REQ
+did (Rdid
+layer (Rlayer"I
+PRT_FINGER_SELECT_BIGAWARD_RESP
+did (Rdid
+layer (Rlayer".
+PRT_FINGER_DIAMOND_BUY_REQ
+num (Rnum"M
+PRT_FINGER_DIAMOND_BUY_RESP.
+totalDiamondBuyNum (RtotalDiamondBuyNum"
+PRT_FINGER_START_REQ";
+PRT_FINGER_START_RESP"
+layerStarted (RlayerStarted"1
+PRT_FINGER_DRAW_REQ
+position (Rposition"`
+PRT_FINGER_DRAW_RESP&
+award (2.PRT_FINGER_DRAWRaward 
+fingerCount (RfingerCount"
+PRT_FINGER_DRAW_AUTO_REQ"g
+PRT_FINGER_DRAW_AUTO_RESP(
+awards (2.PRT_FINGER_DRAWRawards 
+fingerCount (RfingerCount"
+PRT_FINGER_TASK_REQ"Q
+PRT_FINGER_TASK_RESP
+endTime (RendTime
+tasks (2	.PRT_TASKRtasks"5
+PRT_FINGER_TASK_AWARD_REQ
+taskDid (RtaskDid"6
+PRT_FINGER_TASK_AWARD_RESP
+taskDid (RtaskDid"
+PRT_FINGER_BP_INFO_REQ"?
+PRT_FINGER_BP_INFO_RESP
+charge (Rcharge.
+receivedBPFreeDids (RreceivedBPFreeDids&
+receivedBPDids (RreceivedBPDids"O
+PRT_FINGER_BP_RECEIVE_REQ
+awardDid (RawardDid
+charge (Rcharge"P
+PRT_FINGER_BP_RECEIVE_RESP
+awardDid (RawardDid
+charge (Rcharge"
+PRT_FINGER_REC_AWARD_REQ"C
+PRT_FINGER_REC_AWARD_RESP&
+recMaxFingerId (RrecMaxFingerIdB
+com.next1b.nextsvr.protobproto3

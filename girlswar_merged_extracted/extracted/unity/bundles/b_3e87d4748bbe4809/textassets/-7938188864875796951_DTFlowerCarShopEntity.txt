@@ -1,0 +1,28 @@
+local e={id=0,type=0,limit=0,award={},price={},discount=0}
+e.__index=e
+function e.New(a,i,o,h,s,n)
+local t={}
+setmetatable(t,e)
+t.id=a
+t.type=i
+t.limit=o
+t.award=h
+t.price=s
+t.discount=n
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.type=a[2]
+t.limit=a[3]
+t.award=a[4]
+t.price=a[5]
+t.discount=a[6]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/activity/DTFlowerCarShopEntityTableData')
+end
+return e 

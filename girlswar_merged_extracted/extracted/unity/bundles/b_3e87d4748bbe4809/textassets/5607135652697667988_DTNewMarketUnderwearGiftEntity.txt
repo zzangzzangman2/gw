@@ -1,0 +1,30 @@
+local t={id=0,goods=0,cost={},buyCount=0,chargeAward={{},{}},showValue=0,title=""}
+t.__index=t
+function t.New(o,h,a,s,r,n,i)
+local e={}
+setmetatable(e,t)
+e.id=o
+e.goods=h
+e.cost=a
+e.buyCount=s
+e.chargeAward=r
+e.showValue=n
+e.title=i
+return e
+end
+function t.NewFromArrItem(a)
+local e={}
+setmetatable(e,t)
+e.id=a[1]
+e.goods=a[2]
+e.cost=a[3]
+e.buyCount=a[4]
+e.chargeAward=a[5]
+e.showValue=a[6]
+e.title=a[7]
+return e
+end
+function t.GetArr()
+return require('DataNode/DataTable/Create/activity/DTNewMarketUnderwearGiftEntityTableData')
+end
+return t 

@@ -1,0 +1,11 @@
+local t={}
+function t:OnHandle(e)
+local e=assert(GlobalPB.decode("PRT_NEWYEAR_WISH_AWARDS_RESP",e));
+if(GameInit.GetDebugLogProto())then
+;
+;
+end
+ModulesInit.ActNewYearWishMgr:synWishAwardData(e)
+return e
+end
+return t 

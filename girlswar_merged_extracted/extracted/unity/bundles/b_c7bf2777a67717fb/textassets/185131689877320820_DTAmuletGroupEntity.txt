@@ -1,0 +1,26 @@
+local e={id=0,itemid=0,figure=0,name="",icon=""}
+e.__index=e
+function e.New(o,n,a,s,i)
+local t={}
+setmetatable(t,e)
+t.id=o
+t.itemid=n
+t.figure=a
+t.name=s
+t.icon=i
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.itemid=a[2]
+t.figure=a[3]
+t.name=a[4]
+t.icon=a[5]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/amulet/DTAmuletGroupEntityTableData')
+end
+return e 

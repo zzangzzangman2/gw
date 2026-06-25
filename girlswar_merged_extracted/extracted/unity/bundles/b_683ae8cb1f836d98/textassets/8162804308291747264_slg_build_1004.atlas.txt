@@ -1,0 +1,9 @@
+slg_build_1004.png
+size:512,256
+filter:Linear,Linear
+a1
+bounds:0,0,298,235
+offsets:7,4,312,240
+effect_4
+bounds:299,98,137,137
+offsets:31,32,214,200

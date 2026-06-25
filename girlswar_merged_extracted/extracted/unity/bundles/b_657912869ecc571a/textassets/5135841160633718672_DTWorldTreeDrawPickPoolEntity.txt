@@ -1,0 +1,28 @@
+local e={id=0,poolId=0,type=0,award={},rate=0,displayRate=0}
+e.__index=e
+function e.New(a,i,o,h,s,n)
+local t={}
+setmetatable(t,e)
+t.id=a
+t.poolId=i
+t.type=o
+t.award=h
+t.rate=s
+t.displayRate=n
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.poolId=a[2]
+t.type=a[3]
+t.award=a[4]
+t.rate=a[5]
+t.displayRate=a[6]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/worldTree/DTWorldTreeDrawPickPoolEntityTableData')
+end
+return e 

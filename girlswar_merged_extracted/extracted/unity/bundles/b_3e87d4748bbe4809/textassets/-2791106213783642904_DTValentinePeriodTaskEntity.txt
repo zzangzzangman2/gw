@@ -1,0 +1,28 @@
+local e={id=0,describe="",parameter=0,reward={{},{}},jump=0,isClose=0}
+e.__index=e
+function e.New(a,i,o,h,s,n)
+local t={}
+setmetatable(t,e)
+t.id=a
+t.describe=i
+t.parameter=o
+t.reward=h
+t.jump=s
+t.isClose=n
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.describe=a[2]
+t.parameter=a[3]
+t.reward=a[4]
+t.jump=a[5]
+t.isClose=a[6]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/activity/DTValentinePeriodTaskEntityTableData')
+end
+return e 

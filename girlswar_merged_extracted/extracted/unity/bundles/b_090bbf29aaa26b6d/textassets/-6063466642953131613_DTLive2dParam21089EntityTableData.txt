@@ -1,0 +1,22 @@
+local e=
+{
+ByIdx={
+{"ParamClothes1","ParamClothes1",0,{{3,0},{1,0}},"HitArea_Breast",0,0,5,7,0,1,"","","1:rodBreast1","rodBreast1","rodBreast1:1",1,10,0},
+{"ParamShoeL","ParamShoeL",0,{{2,0}},"HitArea_ShoeL",0,0,5,10,0,1,"","","","","",1,10,0},
+{"ParamShoeR","ParamShoeR",0,{{2,0}},"HitArea_ShoeR",0,0,5,10,0,1,"","","","","",1,10,0},
+{"ParamPants1","ParamPants1",0,{{3,0},{4,-1}},"HitArea_Butt",-10,0,5,10,0,2,"","","","rodPantsDown1,rodPantsUp1","rodPantsUp1:2,rodPantsDown1:1",2,10,0},
+{"ParamLegR","ParamLegR",1,{{2,0},{3,0}},"HitArea_LegL,HitArea_LegR",0,0,5,10,0,1,"","","1:rodLeg2","rodLeg2","rodLeg2:2",1,10,0},
+{"ParamBreast2","ParamBreast2",1,{{4,0}},"HitArea_Breast",0,0,5,10,0,1,"","","1:rodBreast2","rodBreast2","rodBreast2:2",2,15,0},
+{"ParamTail","ParamTail",2,{{4,0},{1,0}},"HitArea_Tail",0,0,5,10,0,1,"","","1:rodTail3","rodTail3","rodTail3:2",1,10,0},
+{"ParamPants2","ParamPants2",1,{{4,0}},"HitArea_Butt",0,0,5,10,0,1,"","","1:rodPants2","rodPants2,tapHead2_sp2","rodPants2:1",1,10,0},
+{"ParamSeal","ParamSeal",1,{},"",0,0,0,10,0,1,"","","","rodPants2,tapHead2_sp2","rodPants2:1",1,10,0},
+{"ParamTicket","ParamTicket",1,{},"",0,0,0,10,0,1,"","","","tapButt2,tapHead2_sp2","tapButt2:1",1,10,0},
+{"ParamOOXX","ParamOOXX",1,{},"",0,0,0,10,0,1,"","","","tapMarker2,tapHead2_sp2","tapMarker2:1",1,10,0},
+{"ParamOOXX2","ParamOOXX2",1,{},"",0,0,0,10,0,1,"","","","tapMarker2_sp1,tapHead2_sp2","tapMarker2_sp1:1",1,10,0},
+{"ParamPhoto1","ParamPhoto1",1,{},"",0,0,0,10,0,1,"","","","","",1,10,0},
+{"ParamPhoto2","ParamPhoto2",1,{},"",0,0,0,10,0,1,"","","","","",1,10,0},
+{"ParamPhoto3","ParamPhoto3",1,{},"",0,0,0,10,0,1,"","","","","",1,10,0}
+},
+Len=15
+}
+return e 

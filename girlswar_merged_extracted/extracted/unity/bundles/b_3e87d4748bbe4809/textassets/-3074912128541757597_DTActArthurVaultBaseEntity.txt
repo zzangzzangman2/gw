@@ -1,0 +1,28 @@
+local e={id=0,itemCost=0,Broadcast=0,NUMBroadcast=0,broadcastNum=0,avgID=0}
+e.__index=e
+function e.New(a,i,o,h,s,n)
+local t={}
+setmetatable(t,e)
+t.id=a
+t.itemCost=i
+t.Broadcast=o
+t.NUMBroadcast=h
+t.broadcastNum=s
+t.avgID=n
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.itemCost=a[2]
+t.Broadcast=a[3]
+t.NUMBroadcast=a[4]
+t.broadcastNum=a[5]
+t.avgID=a[6]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/activity/DTActArthurVaultBaseEntityTableData')
+end
+return e 

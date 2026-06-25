@@ -1,0 +1,5 @@
+Painting_1011_Front.png
+size:2048,1024
+filter:Linear,Linear
+cj9
+bounds:2,2,1600,720

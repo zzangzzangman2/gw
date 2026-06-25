@@ -1,0 +1,48 @@
+local a={id=0,initialDiceNum=0,diceBuyPrice={},diceExp=0,diceIntegral=0,astrolabeCost={},escapePrice={},itemId=0,astrolabeId=0,deepExpId=0,deepSeaMoney=0,stealthItemId=0,visitRoleId=0,shopRoleId=0,visitMapMax=0,autoOpen=0}
+a.__index=a
+function a.New(h,u,d,t,c,f,y,w,p,m,l,n,i,o,s,r)
+local e={}
+setmetatable(e,a)
+e.id=h
+e.initialDiceNum=u
+e.diceBuyPrice=d
+e.diceExp=t
+e.diceIntegral=c
+e.astrolabeCost=f
+e.escapePrice=y
+e.itemId=w
+e.astrolabeId=p
+e.deepExpId=m
+e.deepSeaMoney=l
+e.stealthItemId=n
+e.visitRoleId=i
+e.shopRoleId=o
+e.visitMapMax=s
+e.autoOpen=r
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.initialDiceNum=t[2]
+e.diceBuyPrice=t[3]
+e.diceExp=t[4]
+e.diceIntegral=t[5]
+e.astrolabeCost=t[6]
+e.escapePrice=t[7]
+e.itemId=t[8]
+e.astrolabeId=t[9]
+e.deepExpId=t[10]
+e.deepSeaMoney=t[11]
+e.stealthItemId=t[12]
+e.visitRoleId=t[13]
+e.shopRoleId=t[14]
+e.visitMapMax=t[15]
+e.autoOpen=t[16]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/deepsea/DTDeepSeaBaseEntityTableData')
+end
+return a 

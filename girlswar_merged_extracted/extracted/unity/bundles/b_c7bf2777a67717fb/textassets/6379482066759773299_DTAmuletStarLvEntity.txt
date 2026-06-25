@@ -1,0 +1,38 @@
+local a={id=0,group=0,starLv=0,breakCost={},hp=0,atk=0,def=0,attr={{},{}},lvCost={},talentAttr={{},{}},desc=""}
+a.__index=a
+function a.New(n,r,s,t,l,u,c,d,h,o,i)
+local e={}
+setmetatable(e,a)
+e.id=n
+e.group=r
+e.starLv=s
+e.breakCost=t
+e.hp=l
+e.atk=u
+e.def=c
+e.attr=d
+e.lvCost=h
+e.talentAttr=o
+e.desc=i
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.group=t[2]
+e.starLv=t[3]
+e.breakCost=t[4]
+e.hp=t[5]
+e.atk=t[6]
+e.def=t[7]
+e.attr=t[8]
+e.lvCost=t[9]
+e.talentAttr=t[10]
+e.desc=t[11]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/amulet/DTAmuletStarLvEntityTableData')
+end
+return a 

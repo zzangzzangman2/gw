@@ -1,0 +1,11 @@
+Spine_xiezi.png
+size:256,512
+filter:Linear,Linear
+scale:0.2
+xiezi_03
+bounds:5,2,199,187
+offsets:28,32,260,260
+rotate:90
+xiezi_04
+bounds:2,95,122,373
+offsets:147,16,410,410

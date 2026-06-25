@@ -1,0 +1,13 @@
+local t={}
+function t:OnHandle(e)
+local e=assert(GlobalPB.decode("PRT_ITEM_SELL_RESP",e));
+if(GameInit.GetDebugLogProto())then
+;
+;
+end
+EventSystem.SendEvent(CommonEventId.OnItemSell,e)
+local e=e.award.rewardThings[1]
+local t=e.sellCoins>0 and e.sellCoins or e.thingCount
+EventSystem.SendEvent(CommonEventId.PlayObtainEffect,e.thingDid,t,true)
+end
+return t 

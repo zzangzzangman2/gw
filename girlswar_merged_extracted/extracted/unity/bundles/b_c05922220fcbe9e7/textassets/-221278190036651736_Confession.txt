@@ -1,0 +1,15 @@
+
+?
+Confession.protoCommons.proto"
+PRT_CONFESSION_ACTINFO_REQ"e
+PRT_CONFESSION_ACTINFO_RESP
+cutdown (Rcutdown
+ids (Rids
+allowIds (RallowIds")
+PRT_CONFESSION_DRAW_REQ
+id (Rid"L
+PRT_CONFESSION_DRAW_RESP
+id (Rid 
+award (2
+.PRT_THINGRawardB
+com.next1b.nextsvr.protobproto3

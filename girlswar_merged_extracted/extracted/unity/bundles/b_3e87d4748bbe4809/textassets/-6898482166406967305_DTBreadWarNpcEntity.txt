@@ -1,0 +1,22 @@
+local e={id=0,headId=0,headFrameId=0}
+e.__index=e
+function e.New(o,a,i)
+local t={}
+setmetatable(t,e)
+t.id=o
+t.headId=a
+t.headFrameId=i
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.headId=a[2]
+t.headFrameId=a[3]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/activity/DTBreadWarNpcEntityTableData')
+end
+return e 

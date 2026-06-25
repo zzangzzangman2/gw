@@ -1,0 +1,10 @@
+{
+  "generated_at": "2026-06-25 15:56:22",
+  "route_tmp_text_rows": 39,
+  "active_route_tmp_text_rows": 21,
+  "suspicious_active_rows": 7,
+  "shared_material_missing_rows": 0,
+  "zero_height_active_rows": 2,
+  "font_larger_than_rect_active_rows": 5,
+  "verdict": "shared materials are now known; remaining visible route mismatch is concentrated in active-state, zero/tight rect height, font scale, and sibling/sorting"
+}

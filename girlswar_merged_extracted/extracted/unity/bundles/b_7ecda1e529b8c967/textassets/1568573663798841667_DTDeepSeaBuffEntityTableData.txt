@@ -1,0 +1,12 @@
+local e=
+{
+ByIdx={
+{1,"UI_DeepSeaMap/shmj_buff_1","deepsea_buff_Desc1"},
+{2,"UI_DeepSeaMap/shmj_buff_2","deepsea_buff_Desc2"},
+{3,"UI_DeepSeaMap/shmj_buff_4","deepsea_buff_Desc4"},
+{4,"UI_DeepSeaMap/shmj_buff_5","deepsea_buff_Desc5"},
+{5,"UI_DeepSeaMap/shmj_buff_3","deepsea_buff_Desc6"}
+},
+Len=5
+}
+return e 

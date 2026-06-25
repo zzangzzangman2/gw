@@ -1,0 +1,13 @@
+local e=
+{
+ByIdx={
+{1,1,1,"deepsea_buff_icon1","deepsea_buff_Desc1",23301,0,0,{0}},
+{2,2,2,"deepsea_buff_icon2","deepsea_buff_Desc2",23302,0,0,{0}},
+{3,2,2,"deepsea_buff_icon3","deepsea_buff_Desc3",23303,5,5,{0}},
+{4,2,2,"deepsea_buff_icon4","deepsea_buff_Desc4",23304,0,0,{0}},
+{5,2,2,"deepsea_buff_icon5","deepsea_buff_Desc5",23305,0,0,{0}},
+{6,3,1,"deepsea_buff_icon6","deepsea_buff_Desc6",23306,0,0,{0}}
+},
+Len=6
+}
+return e 

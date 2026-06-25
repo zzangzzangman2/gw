@@ -1,0 +1,58 @@
+local a={id=0,openLevel=0,openDay=0,crossfight=0,minSever=0,vipAuto=0,winAward={},loseAward={},heroCountSignLimit=0,signPlayerLimit=0,battlePosition=0,dauRate=0,rankShowMax=0,rankMax=0,crossShowRankMax=0,crossRankMax=0,weekShowRankMax=0,weekRankMax=0,signRankMax=0,worldRankClean={{},{}},corssPredictionDay=0}
+a.__index=a
+function a.New(l,m,u,t,y,w,f,v,g,b,k,q,p,c,s,n,i,o,h,d,r)
+local e={}
+setmetatable(e,a)
+e.id=l
+e.openLevel=m
+e.openDay=u
+e.crossfight=t
+e.minSever=y
+e.vipAuto=w
+e.winAward=f
+e.loseAward=v
+e.heroCountSignLimit=g
+e.signPlayerLimit=b
+e.battlePosition=k
+e.dauRate=q
+e.rankShowMax=p
+e.rankMax=c
+e.crossShowRankMax=s
+e.crossRankMax=n
+e.weekShowRankMax=i
+e.weekRankMax=o
+e.signRankMax=h
+e.worldRankClean=d
+e.corssPredictionDay=r
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.openLevel=t[2]
+e.openDay=t[3]
+e.crossfight=t[4]
+e.minSever=t[5]
+e.vipAuto=t[6]
+e.winAward=t[7]
+e.loseAward=t[8]
+e.heroCountSignLimit=t[9]
+e.signPlayerLimit=t[10]
+e.battlePosition=t[11]
+e.dauRate=t[12]
+e.rankShowMax=t[13]
+e.rankMax=t[14]
+e.crossShowRankMax=t[15]
+e.crossRankMax=t[16]
+e.weekShowRankMax=t[17]
+e.weekRankMax=t[18]
+e.signRankMax=t[19]
+e.worldRankClean=t[20]
+e.corssPredictionDay=t[21]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/flower/DTFlowerBaseEntityTableData')
+end
+return a 

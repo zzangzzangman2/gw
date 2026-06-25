@@ -1,0 +1,15 @@
+local e=
+{
+ByIdx={
+{"ParamCloth","ParamCloth",0,{{4,0},{2,0}},"HitArea_Cloth",0,0,5,10,0,1,"","","1:rodCloth1","rodCloth1","rodCloth1:1",0.2,10,0},
+{"ParamLeg_idle1","ParamLeg",1,{{2,0}},"HitArea_LegR1,HitArea_LegR2,HitArea_LegR3,HitArea_LegR4",0,0,7,10,0,1,"","","1:rodLeg2","rodLeg2","rodLeg2:2",0.5,15,0},
+{"ParamLeg_idle4_sp","ParamLeg",2,{{1,0}},"HitArea_LegR1,HitArea_LegR2,HitArea_LegR3,HitArea_LegR4",0,0,7,10,0,3,"","idle4_sp","1:rodLeg3_sp","rodLeg3_sp","rodLeg3_sp:2",0.5,20,0},
+{"ParamLeg_idle","ParamLeg",0,{{2,0}},"HitArea_LegR1,HitArea_LegR2,HitArea_LegR3,HitArea_LegR4",0,0,7,10,0,1,"ParamSocks:2","","1:rodLeg1","rodLeg1","rodLeg1:2",0.5,15,0},
+{"ParamSocks","ParamSocks",0,{{2,0}},"HitArea_LegR1,HitArea_LegR2,HitArea_LegR3,HitArea_LegR4",0,0,5,15,0,1,"","","","","",0.3,10,0},
+{"ParamRibbon","ParamRibbon",2,{{2,0}},"HitArea_rodRibbon",0,0,5,10,0,3,"","idle4,idle4_sp","","rodRibbon3,rodRibbon3_sp","",0.2,10,0},
+{"ParamExit_Idle1","ParamExit",3,{},"",0,0,10,10,0,1,"","idle1,idle1_Brush","","","",0.2,10,0},
+{"ParamExit_Idle4","ParamExit",4,{},"",0,0,10,10,0,1,"","idle4,idle4_Brush","","","",0.2,10,0}
+},
+Len=8
+}
+return e 

@@ -1,0 +1,11 @@
+local t={}
+function t:OnHandle(e)
+local e=assert(GlobalPB.decode("PRT_GEM_MINE_HOLE_RANK_RESP",e));
+if(GameInit.GetDebugLogProto())then
+;
+;
+end
+ModulesInit.ActGemMineHoleMgr:OnRespActGemMineHoleRank(e)
+return e
+end
+return t 

@@ -1,0 +1,32 @@
+local e=
+{
+ByIdx={
+{"HitArea_GameOX9",2,0},
+{"HitArea_GameOX8",3,0},
+{"HitArea_GameOX7",4,0},
+{"HitArea_GameOX6",5,0},
+{"HitArea_GameOX5",6,0},
+{"HitArea_GameOX4",7,0},
+{"HitArea_GameOX3",8,0},
+{"HitArea_GameOX2",9,0},
+{"HitArea_GameOX1",10,0},
+{"HitArea_GameWine",11,0},
+{"HitArea_ArmArmor",12,0},
+{"HitArea_ButtArmor",13,0},
+{"HitArea_Breast",14,0},
+{"HitArea_HandR",15,0},
+{"HitArea_Head",16,0},
+{"HitArea_Pants",17,0},
+{"HitArea_Belt",18,0},
+{"HitArea_Leg",19,0},
+{"HitArea_ButtL",20,0},
+{"HitArea_ButtR",21,0},
+{"HitArea_Wine",22,0},
+{"HitArea_Pen",23,0},
+{"HitArea_Weapon",24,0},
+{"HitArea_Potion",25,0},
+{"HitArea_BackgroundArmor",26,0}
+},
+Len=25
+}
+return e 

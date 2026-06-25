@@ -1,0 +1,55 @@
+
+?
+SpringRain.protoCommons.protoFormation.protoFight.proto"
+PRT_SPRING_RAIN_CHANCEL_REQ"z
+PRT_SPRING_RAIN_CHANCEL_RESP
+roundId (RroundId
+curDay (RcurDay(
+nextRefreshTime (RnextRefreshTime"
+PRT_SPRING_RAIN_SNAIL_REQ"?
+PRT_SPRING_RAIN_SNAIL_RESP
+	rewardNum (R	rewardNum 
+finishedNum (RfinishedNum0
+leafInfo (2.PRT_SPRING_RAIN_POSRleafInfo2
+	snailInfo (2.PRT_SPRING_RAIN_POSR	snailInfo"
+PRT_SPRING_RAIN_SHOP_REQ"n
+PRT_SPRING_RAIN_SHOP_RESP1
+itemInfo (2.PRT_SPRING_RAIN_ITEMRitemInfo
+
+isFirstDay (R
+isFirstDay"4
+PRT_SPRING_RAIN_DRAW_REQ
+drawOne (RdrawOne"?
+PRT_SPRING_RAIN_DRAW_RESP0
+leafInfo (2.PRT_SPRING_RAIN_POSRleafInfo2
+	snailInfo (2.PRT_SPRING_RAIN_POSR	snailInfo'
+things (2.PRT_ONCE_AWARDRthings""
+ PRT_SPRING_RAIN_SNAIL_REWARD_REQ"#
+!PRT_SPRING_RAIN_SNAIL_REWARD_RESP"?
+ PRT_SPRING_RAIN_FIGHT_BEFORE_REQ
+mapDid (RmapDidG
+formationPositions (2.PRT_FORMATION_POSITIONRformationPositionsQ
+formationAlterPositions (2.PRT_FORMATION_POSITIONRformationAlterPositions"T
+!PRT_SPRING_RAIN_FIGHT_BEFORE_RESP/
+
+beforeInfo (2.PRT_FIGHT_PLAYR
+beforeInfo"L
+PRT_SPRING_RAIN_FIGHT_REQ/
+
+battleInfo (2.PRT_FIGHT_PLAYR
+battleInfo"Y
+PRT_SPRING_RAIN_FIGHT_RESP
+invalid (Rinvalid!
+award (2.PRT_FAWARDRaward"?
+#PRT_SPRING_RAIN_FREE_GIFT_AWARD_REQ
+giftDid (RgiftDid"_
+$PRT_SPRING_RAIN_FREE_GIFT_AWARD_RESP7
+giftBuyInfo (2.PRT_SPRING_RAIN_ITEMRgiftBuyInfo"G
+PRT_SPRING_RAIN_POS
+index (Rindex
+rewarded (Rrewarded"j
+PRT_SPRING_RAIN_ITEM
+giftDid (RgiftDid
+buyTimes (RbuyTimes
+	resetTime (R	resetTimeB
+com.next1b.nextsvr.protobproto3

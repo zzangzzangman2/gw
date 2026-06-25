@@ -1,0 +1,26 @@
+local e={id=0,icon="",prefabId=0,rate=0,points=0}
+e.__index=e
+function e.New(o,n,a,s,i)
+local t={}
+setmetatable(t,e)
+t.id=o
+t.icon=n
+t.prefabId=a
+t.rate=s
+t.points=i
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.icon=a[2]
+t.prefabId=a[3]
+t.rate=a[4]
+t.points=a[5]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/activity/DTMushroomCollideEntityTableData')
+end
+return e 

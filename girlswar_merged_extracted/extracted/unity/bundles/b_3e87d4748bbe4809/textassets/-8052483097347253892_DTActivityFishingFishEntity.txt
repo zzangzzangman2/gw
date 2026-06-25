@@ -1,0 +1,32 @@
+local a={id=0,star=0,fishName="",fishImage="",fishPrefab=0,fishHighQuality=0,fishDesc="",fishSell={}}
+a.__index=a
+function a.New(i,h,n,t,d,r,s,o)
+local e={}
+setmetatable(e,a)
+e.id=i
+e.star=h
+e.fishName=n
+e.fishImage=t
+e.fishPrefab=d
+e.fishHighQuality=r
+e.fishDesc=s
+e.fishSell=o
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.star=t[2]
+e.fishName=t[3]
+e.fishImage=t[4]
+e.fishPrefab=t[5]
+e.fishHighQuality=t[6]
+e.fishDesc=t[7]
+e.fishSell=t[8]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/activity/DTActivityFishingFishEntityTableData')
+end
+return a 

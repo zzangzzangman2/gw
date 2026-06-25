@@ -1,0 +1,44 @@
+local a={id=0,shopCostID=0,dailyFreeEnergy=0,rivalNum=0,rivalRefreshCost={},rankShowCount=0,rankRefresh=0,logNum=0,sprintMultiplier="",sprintTime1="",sprintTime2="",endDay=0,endTime="",refreshCD=0}
+a.__index=a
+function a.New(s,l,r,t,u,m,f,w,c,d,i,o,n,h)
+local e={}
+setmetatable(e,a)
+e.id=s
+e.shopCostID=l
+e.dailyFreeEnergy=r
+e.rivalNum=t
+e.rivalRefreshCost=u
+e.rankShowCount=m
+e.rankRefresh=f
+e.logNum=w
+e.sprintMultiplier=c
+e.sprintTime1=d
+e.sprintTime2=i
+e.endDay=o
+e.endTime=n
+e.refreshCD=h
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.shopCostID=t[2]
+e.dailyFreeEnergy=t[3]
+e.rivalNum=t[4]
+e.rivalRefreshCost=t[5]
+e.rankShowCount=t[6]
+e.rankRefresh=t[7]
+e.logNum=t[8]
+e.sprintMultiplier=t[9]
+e.sprintTime1=t[10]
+e.sprintTime2=t[11]
+e.endDay=t[12]
+e.endTime=t[13]
+e.refreshCD=t[14]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/arena/DTWushuMasterBaseEntityTableData')
+end
+return a 

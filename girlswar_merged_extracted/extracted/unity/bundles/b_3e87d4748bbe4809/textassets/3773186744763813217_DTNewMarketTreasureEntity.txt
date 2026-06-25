@@ -1,0 +1,32 @@
+local a={id=0,dayRewards={{},{}},oneCost={},tenCost={},itemCost=0,poolId=0,onePoint=0,pointMax=0}
+a.__index=a
+function a.New(i,h,n,t,d,r,s,o)
+local e={}
+setmetatable(e,a)
+e.id=i
+e.dayRewards=h
+e.oneCost=n
+e.tenCost=t
+e.itemCost=d
+e.poolId=r
+e.onePoint=s
+e.pointMax=o
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.dayRewards=t[2]
+e.oneCost=t[3]
+e.tenCost=t[4]
+e.itemCost=t[5]
+e.poolId=t[6]
+e.onePoint=t[7]
+e.pointMax=t[8]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/activity/DTNewMarketTreasureEntityTableData')
+end
+return a 

@@ -1,0 +1,40 @@
+local a={id=0,icon="",soulClass=0,soulType=0,exp=0,startRage=0,roundRage=0,defRage=0,atkRage=0,deadRage=0,killRage=0,guideTextKey=""}
+a.__index=a
+function a.New(s,d,h,t,u,c,m,l,r,i,o,n)
+local e={}
+setmetatable(e,a)
+e.id=s
+e.icon=d
+e.soulClass=h
+e.soulType=t
+e.exp=u
+e.startRage=c
+e.roundRage=m
+e.defRage=l
+e.atkRage=r
+e.deadRage=i
+e.killRage=o
+e.guideTextKey=n
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.icon=t[2]
+e.soulClass=t[3]
+e.soulType=t[4]
+e.exp=t[5]
+e.startRage=t[6]
+e.roundRage=t[7]
+e.defRage=t[8]
+e.atkRage=t[9]
+e.deadRage=t[10]
+e.killRage=t[11]
+e.guideTextKey=t[12]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/soul/DTSoulEntityTableData')
+end
+return a 

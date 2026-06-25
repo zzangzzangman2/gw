@@ -1,0 +1,58 @@
+local a={id=0,drawCost={},shopCost={},shopCost2={},MushroomCost={},resetReward={{},{}},drawFloorTime=0,drawFloorPool={},drawTenTimes=0,goods=0,fundAward={},mail=0,Collidemail=0,Bpmail=0,Linemail=0,CollideTaskReinitializeType=0,Prologue=0,entrancePlot=0,refreshTimes=0,iconographyProve=0,atlasId=0}
+a.__index=a
+function a.New(l,m,u,t,y,w,f,v,g,b,k,q,p,c,s,n,i,o,h,d,r)
+local e={}
+setmetatable(e,a)
+e.id=l
+e.drawCost=m
+e.shopCost=u
+e.shopCost2=t
+e.MushroomCost=y
+e.resetReward=w
+e.drawFloorTime=f
+e.drawFloorPool=v
+e.drawTenTimes=g
+e.goods=b
+e.fundAward=k
+e.mail=q
+e.Collidemail=p
+e.Bpmail=c
+e.Linemail=s
+e.CollideTaskReinitializeType=n
+e.Prologue=i
+e.entrancePlot=o
+e.refreshTimes=h
+e.iconographyProve=d
+e.atlasId=r
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.drawCost=t[2]
+e.shopCost=t[3]
+e.shopCost2=t[4]
+e.MushroomCost=t[5]
+e.resetReward=t[6]
+e.drawFloorTime=t[7]
+e.drawFloorPool=t[8]
+e.drawTenTimes=t[9]
+e.goods=t[10]
+e.fundAward=t[11]
+e.mail=t[12]
+e.Collidemail=t[13]
+e.Bpmail=t[14]
+e.Linemail=t[15]
+e.CollideTaskReinitializeType=t[16]
+e.Prologue=t[17]
+e.entrancePlot=t[18]
+e.refreshTimes=t[19]
+e.iconographyProve=t[20]
+e.atlasId=t[21]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/activity/DTMushroomBaseEntityTableData')
+end
+return a 

@@ -1,0 +1,10 @@
+xianshidazuozhan1.png
+size:1024,128
+filter:Linear,Linear
+guang
+bounds:589,20,158,78
+xsdzz_bt_kr
+bounds:0,0,587,98
+xsdzz_xx
+bounds:749,51,47,46
+rotate:90

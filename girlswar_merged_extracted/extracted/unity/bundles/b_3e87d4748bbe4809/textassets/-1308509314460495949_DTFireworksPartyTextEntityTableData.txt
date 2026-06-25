@@ -1,0 +1,12 @@
+local e=
+{
+ByIdx={
+{1001,1,"FireworksPartyText1001"},
+{1002,1,"FireworksPartyText1002"},
+{1003,1,"FireworksPartyText1003"},
+{2001,2,"FireworksPartyText2001"},
+{2002,2,"FireworksPartyText2002"}
+},
+Len=5
+}
+return e 

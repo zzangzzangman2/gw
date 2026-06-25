@@ -1,0 +1,37 @@
+local e=
+{
+ByIdx={
+{1,"chessName1"},
+{2,"chessName2"},
+{3,"chessName3"},
+{4,"chessName4"},
+{5,"chessName5"},
+{6,"chessName6"},
+{7,"chessName7"},
+{8,"chessName8"},
+{9,"chessName9"},
+{10,"chessName10"},
+{11,"chessName11"},
+{12,"chessName12"},
+{13,"chessName13"},
+{14,"chessName14"},
+{15,"chessName15"},
+{16,"chessName16"},
+{17,"chessName17"},
+{18,"chessName18"},
+{19,"chessName19"},
+{20,"chessName20"},
+{21,"chessName21"},
+{22,"chessName22"},
+{23,"chessName23"},
+{24,"chessName24"},
+{25,"chessName25"},
+{26,"chessName26"},
+{27,"chessName27"},
+{28,"chessName28"},
+{29,"chessName29"},
+{30,"chessName30"}
+},
+Len=30
+}
+return e 

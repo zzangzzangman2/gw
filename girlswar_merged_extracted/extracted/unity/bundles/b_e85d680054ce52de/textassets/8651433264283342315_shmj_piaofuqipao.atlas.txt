@@ -1,0 +1,10 @@
+shmj_piaofuqipao.png
+size:256,256
+filter:Linear,Linear
+scale:0.8
+tytty
+bounds:181,107,68,22
+offsets:2,0,72,22
+rotate:90
+xyzf_qipaokuang
+bounds:2,2,177,173

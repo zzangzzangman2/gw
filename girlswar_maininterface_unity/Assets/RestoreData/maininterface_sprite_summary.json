@@ -1,0 +1,11 @@
+{
+  "image_components": 977,
+  "external_dependencies": 71,
+  "resolved_external_bundles": 45,
+  "copied_sprite_assignments": 707,
+  "unique_sprite_pngs": 212,
+  "statuses": {
+    "empty_sprite_ref": 270,
+    "ready": 707
+  }
+}

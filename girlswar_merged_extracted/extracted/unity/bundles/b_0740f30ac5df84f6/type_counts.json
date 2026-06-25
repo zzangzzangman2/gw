@@ -1,0 +1,11 @@
+{
+  "AnimationClip": 5,
+  "Material": 4,
+  "TextAsset": 4,
+  "MonoBehaviour": 4,
+  "AnimatorController": 3,
+  "MonoScript": 3,
+  "Texture2D": 3,
+  "AssetBundle": 1,
+  "Sprite": 1
+}

@@ -1,0 +1,10 @@
+local e=
+{
+ByIdx={
+{1,0,"strongJumpDesc_1",1},
+{2,0,"strongJumpDesc_2",2},
+{3,0,"strongJumpDesc_3",3}
+},
+Len=3
+}
+return e 

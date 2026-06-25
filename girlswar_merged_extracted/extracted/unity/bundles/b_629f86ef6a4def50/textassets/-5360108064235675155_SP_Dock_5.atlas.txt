@@ -1,0 +1,11 @@
+SP_Dock_5.png
+size:256,128
+filter:Linear,Linear
+MX1
+bounds:121,2,19,24
+rotate:90
+MX2
+bounds:121,22,93,87
+rotate:90
+xzg5
+bounds:0,0,120,115

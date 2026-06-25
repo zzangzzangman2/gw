@@ -1,0 +1,18 @@
+﻿{
+    "generatedAt": "2026-06-25 15:54:58",
+    "totalButtons": 77,
+    "activeButtons": 24,
+    "inactiveButtons": 53,
+    "interactableButtons": 77,
+    "targetGraphicReadyButtons": 77,
+    "raycastClickableButtons": 24,
+    "raycastBlockedButtons": 0,
+    "invokedClicks": 24,
+    "moduleAndTargetMatches": 39,
+    "candidateModuleAndTargetMatches": 21,
+    "targetNameOnlyMatches": 1,
+    "missingLuaMatches": 16,
+    "csv": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_maininterface_unity\\Assets\\RestoreData\\reports\\maininterface_click_validation.csv",
+    "json": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_maininterface_unity\\Assets\\RestoreData\\reports\\maininterface_click_validation_summary.json",
+    "markdown": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\maininterface\\MAININTERFACE_CLICK_VALIDATION.md"
+}

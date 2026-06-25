@@ -1,0 +1,224 @@
+local i=nil
+local t={isLoadFull=false,isLoadIO=true}
+local e=t
+local a={};
+local o={};
+local s='lkjaljaaasrte'
+function t.LoadList()
+if(GameInit.ServerLoadTable)then
+local t=e.DeserializeFromJson()
+e.InitRequire(t)
+e.isLoadIO=false
+else
+if GameTools.ClientIsSupportIOLoad()==false then
+e.isLoadIO=false
+return
+end
+if e.isLoadIO then
+e.InitIO()
+else
+end
+end
+end
+function t.InitIO()
+local a,t
+if CS.UnityEngine.Application.platform==CS.UnityEngine.RuntimePlatform.WindowsEditor or CS.UnityEngine.Application.platform==CS.UnityEngine.RuntimePlatform.OSXEditor then
+if CS.YouYou.MacroDefine.DISABLE_ASSETBUNDLE then
+local e=CS.UnityEngine.Application.dataPath
+a=e..'/Download/IO/hero/DTHeroAwakeEntityTableDataHeader.bigd'
+t=e..'/Download/IO/hero/DTHeroAwakeEntityTableData.bigd'
+else
+a=e.GetFilePath('/download/config/hero/DTHeroAwakeEntityTableDataHeader.bigd')
+t=e.GetFilePath('/download/config/hero/DTHeroAwakeEntityTableData.bigd')
+end
+else
+a=e.GetFilePath('/download/config/hero/DTHeroAwakeEntityTableDataHeader.bigd')
+t=e.GetFilePath('/download/config/hero/DTHeroAwakeEntityTableData.bigd')
+end
+e.headPath=a
+e.dataPath=t
+e.GetIOArr()
+end
+function t.GetFilePath(o)
+local t=CS.UnityEngine.Application.persistentDataPath
+local e=t..o
+local a=io.open(e,'r')
+if a then
+a:close()
+return e
+else
+return t..'/buildCfg'..o
+end
+end
+function t.GetIOArr()
+if e.DataTableHeader then
+return
+end
+e.DataTableHeader=require('Common/DataTableHeader'):New()
+e.DataTableHeader.encrypt=false
+e.DataTableHeader:LoadFile(e.headPath)
+end
+function t.InitRequire(n)
+a={}
+o={}
+i=require('DataNode/DataTable/Create/hero/DTHeroAwakeEntity')
+if n==nil then
+n=i.GetArr()
+end
+for e=1,n.Len do
+local e=n.ByIdx[e];
+local e=i.NewFromArrItem(e)
+a[#a+1]=e
+o[e.id]=e
+end
+i=nil
+if GameInit.ServerLoadTable==false then
+t:RemoveRequiredByName('DataNode/DataTable/Create/hero/DTHeroAwakeEntityTableData')
+t:RemoveRequiredByName('DataNode/DataTable/Create/hero/DTHeroAwakeEntity')
+end
+e.isLoadFull=true
+end
+function t:RemoveRequiredByName(e)
+for t,a in pairs(package.preload)do
+if string.find(tostring(t),e)==1 then
+package.preload[t]=nil
+end
+end
+for t,a in pairs(package.loaded)do
+if string.find(tostring(t),e)==1 then
+package.loaded[t]=nil
+end
+end
+end
+function t.GetList()
+if not e.isLoadIO then
+if e.isLoadFull==false then
+e.InitRequire()
+end
+return table.lightCopyList(a)
+else
+if e.isLoadFull then
+return a
+else
+e.GetListByIO()
+e.isLoadFull=true
+
+return a
+end
+end
+end
+function t.GetListByIO()
+a={}
+o={}
+local t=io.open(e.dataPath,'rb')
+local h={}
+for a,e in pairs(e.DataTableHeader.idsMap)do
+t:seek('set',e.begin)
+local e=t:read(e.len)
+table.insert(h,e)
+end
+t:close()
+local t
+local n,i
+if e.DataTableHeader.encrypt then
+t=CS.XXTEAUtil.DecryptGetArray(h,s)
+n=t.Length-1
+i=0
+else
+t=h
+n=#t
+i=1
+end
+for e=i,n do
+local e=JsonUtil.decode(t[e])
+a[#a+1]=e
+o[e.id]=e
+end
+end
+function t.GetEntity(i)
+if e.isLoadIO then
+local t=o[i]
+if e.isLoadFull and t==nil then
+return nil
+end
+if t==nil then
+local n=e.DataTableHeader.idsMap[i]
+if n==nil then
+return nil
+end
+t=e.DataTableHeader:GetEntityByHeadData(e.dataPath,s,n)
+a[#a+1]=t
+o[i]=t
+if#a==e.DataTableHeader.len then
+e.isLoadFull=true
+end
+return t
+else
+return t
+end
+else
+if e.isLoadFull==false then
+e.InitRequire()
+end
+return o[i]
+end
+end
+function t.Clear()
+e.isLoadFull=false
+a={}
+o={}
+end
+if GameInit==nil then
+e.index=require('DataNode/DataTable/Create/hero/DTHeroAwakeEntityIndex')
+e.index.Init()
+elseif GameInit.ServerLoadTable==false then
+e.index=require('DataNode/DataTable/Create/hero/DTHeroAwakeEntityIndex')
+e.index.Init()
+end
+function t.GetByIndex(i,t)
+local t=e.index.GetByIndex(i,tostring(t))
+if t==nil then
+return{}
+end
+if not e.isLoadIO then
+if e.isLoadFull==false then
+e.InitRequire()
+end
+end
+local i={}
+local n={}
+for s=1,#t do
+local a=o[tonumber(t[s])]
+if a then
+table.insert(i,a)
+else
+table.insert(n,e.DataTableHeader.idsMap[tonumber(t[s])])
+end
+end
+if#n>0 then
+local e=e.DataTableHeader:GetEntitiesByIds(e.dataPath,s,n)
+for t=1,#e do
+local e=e[t]
+a[#a+1]=e
+o[e.id]=e
+table.insert(i,e)
+end
+table.sort(i,function(e,t)return e.id<t.id end)
+end
+return i
+end
+function t.Get_StarProfessionRankLevel(o,a,e)
+local e=o..'&bigd&'..a..'&bigd&'..e
+return t.GetByIndex('index_1',e)
+end
+function t.SerializeToJson()
+i=require('DataNode/DataTable/Create/hero/DTHeroAwakeEntity')
+local e=i.GetArr()
+local e=JsonUtil.encode(e)
+GameInit.WriteFile("DTHeroAwakeEntityData.txt",e)
+end
+function t.DeserializeFromJson()
+local e=GameInit.ReadJsonData("DTHeroAwakeEntityData.txt")
+return e
+end
+return t 

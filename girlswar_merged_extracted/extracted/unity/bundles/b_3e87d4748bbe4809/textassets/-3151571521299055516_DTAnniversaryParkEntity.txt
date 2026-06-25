@@ -1,0 +1,48 @@
+local a={id=0,drawCost={},shopCost={},speShopCost={},cakeCost={},cakeMakeCd=0,cakeComboCd=0,cakePlayerRankNum=0,cakeGuildRankNum=0,drawFloorTime=0,drawComPool=0,drawFloorPool=0,goods=0,fundAward={},actItem={},taskShowModelId=0}
+a.__index=a
+function a.New(h,u,d,t,c,f,y,w,p,m,l,n,i,o,s,r)
+local e={}
+setmetatable(e,a)
+e.id=h
+e.drawCost=u
+e.shopCost=d
+e.speShopCost=t
+e.cakeCost=c
+e.cakeMakeCd=f
+e.cakeComboCd=y
+e.cakePlayerRankNum=w
+e.cakeGuildRankNum=p
+e.drawFloorTime=m
+e.drawComPool=l
+e.drawFloorPool=n
+e.goods=i
+e.fundAward=o
+e.actItem=s
+e.taskShowModelId=r
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.drawCost=t[2]
+e.shopCost=t[3]
+e.speShopCost=t[4]
+e.cakeCost=t[5]
+e.cakeMakeCd=t[6]
+e.cakeComboCd=t[7]
+e.cakePlayerRankNum=t[8]
+e.cakeGuildRankNum=t[9]
+e.drawFloorTime=t[10]
+e.drawComPool=t[11]
+e.drawFloorPool=t[12]
+e.goods=t[13]
+e.fundAward=t[14]
+e.actItem=t[15]
+e.taskShowModelId=t[16]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/activity/DTAnniversaryParkEntityTableData')
+end
+return a 

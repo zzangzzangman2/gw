@@ -1,0 +1,28 @@
+local e={id=0,round=0,awardType=0,point=0,reward={{},{}},rewardName=""}
+e.__index=e
+function e.New(a,i,o,h,s,n)
+local t={}
+setmetatable(t,e)
+t.id=a
+t.round=i
+t.awardType=o
+t.point=h
+t.reward=s
+t.rewardName=n
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.round=a[2]
+t.awardType=a[3]
+t.point=a[4]
+t.reward=a[5]
+t.rewardName=a[6]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/activity/DTClubFiveBoxRoundAwardEntityTableData')
+end
+return e 

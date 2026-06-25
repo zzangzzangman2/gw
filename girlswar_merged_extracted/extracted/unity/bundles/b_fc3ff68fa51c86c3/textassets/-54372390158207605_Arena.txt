@@ -1,0 +1,109 @@
+
+?
+Arena.protoFight.protoFormation.proto"?
+PRT_ARENA_INFO
+npcId (RnpcId
+playerId (RplayerId
+level (Rlevel
+name (	Rname
+head (Rhead
+rank (Rrank
+fight (Rfight
+profile (Rprofile
+sign	 (	Rsign
+guildId
+ (RguildId
+	guildName (	R	guildName
+	headFrame (R	headFrame
+
+npcGroupId (R
+npcGroupId
+officer (Rofficer"?
+PRT_ARENA_RECORD
+recordId (RrecordId
+oldRank (RoldRank
+newRank (RnewRank%
+enemy (2.PRT_ARENA_INFORenemy
+	fightType (R	fightType
+	fightTime (	R	fightTime
+isWin (RisWin
+isBack (RisBack*
+targetFirstValue	 (RtargetFirstValue"
+PRT_ARENA_INFO_REQ"?
+PRT_ARENA_INFO_RESP
+rank (Rrank
+rankBest (RrankBest(
+remainderNumber (RremainderNumber
+	buyNumber (R	buyNumber$
+awardLeftTime (RawardLeftTime
+points (Rpoints$
+recPointsDids (RrecPointsDids.
+recAchievementDids (RrecAchievementDids-
+	defenders	 (2.PRT_ARENA_INFOR	defenders+
+topRanks
+ (2.PRT_ARENA_INFORtopRanks"
+PRT_ARENA_CHANGE_LIST_REQ"x
+PRT_ARENA_CHANGE_LIST_RESP-
+	defenders (2.PRT_ARENA_INFOR	defenders+
+topRanks (2.PRT_ARENA_INFORtopRanks"2
+PRT_ARENA_BUY_NUMBER_REQ
+number (Rnumber"c
+PRT_ARENA_BUY_NUMBER_RESP(
+remainderNumber (RremainderNumber
+	buyNumber (R	buyNumber"
+PRT_ARENA_RANK_LIST_REQ"f
+PRT_ARENA_RANK_LIST_RESP#
+self (2.PRT_ARENA_INFORself%
+ranks (2.PRT_ARENA_INFORranks"?
+PRT_ARENA_FIGHT_REQ"
+defenderRank (RdefenderRank
+type (Rtype
+
+npcGroupId (R
+npcGroupId
+npcId (RnpcId*
+defenderPlayerId (RdefenderPlayerId5
+	positions (2.PRT_FORMATION_POSITIONR	positions?
+positionAlters (2.PRT_FORMATION_POSITIONRpositionAlters
+recordId (RrecordId"?
+PRT_ARENA_FIGHT_RESP"
+isRankChange (RisRankChange 
+fightResult (RfightResult#
+self (2.PRT_ARENA_INFORself-
+	defenders (2.PRT_ARENA_INFOR	defenders/
+
+battleInfo (2.PRT_FIGHT_PLAYR
+battleInfo
+	addPoints (R	addPoints
+points (Rpoints
+oldRank (RoldRank
+newRank	 (RnewRank 
+oldRankBest
+ (RoldRankBest
+rankBest (RrankBest">
+PRT_ARENA_FAST_FIGHT_REQ"
+defenderRank (RdefenderRank"q
+PRT_ARENA_FAST_FIGHT_RESP
+
+fightCount (R
+fightCount
+	addPoints (R	addPoints
+points (Rpoints"
+PRT_ARENA_FIGHT_RECORD_REQ"J
+PRT_ARENA_FIGHT_RECORD_RESP+
+records (2.PRT_ARENA_RECORDRrecords":
+PRT_ARENA_FIGHT_PLAYBACK_REQ
+recordId (RrecordId"?
+PRT_ARENA_FIGHT_PLAYBACK_RESP-
+	fightInfo (2.PRT_FIGHT_PLAYR	fightInfo 
+winPlayerId (RwinPlayerId&
+attackPlayerId (RattackPlayerId"I
+PRT_ARENA_ACHIEVEMENT_AWARD_REQ&
+achievementDid (RachievementDid"R
+ PRT_ARENA_ACHIEVEMENT_AWARD_RESP.
+recAchievementDids (RrecAchievementDids":
+PRT_ARENA_POINTS_AWARD_REQ
+	pointsDid (R	pointsDid"C
+PRT_ARENA_POINTS_AWARD_RESP$
+recPointsDids (RrecPointsDidsB
+com.next1b.nextsvr.protobproto3

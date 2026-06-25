@@ -1,0 +1,10 @@
+activityname_866.png
+size:128,128
+filter:Linear,Linear
+a3
+bounds:2,2,20,27
+offsets:2,2,24,31
+rotate:90
+a4
+bounds:2,24,62,74
+offsets:1,1,64,76

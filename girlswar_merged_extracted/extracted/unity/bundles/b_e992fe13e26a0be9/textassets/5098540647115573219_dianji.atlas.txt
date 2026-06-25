@@ -1,0 +1,9 @@
+dianji.png
+size:128,128
+filter:Linear,Linear
+djxg1
+bounds:2,45,76,76
+offsets:1,1,78,78
+djxg2
+bounds:2,2,41,41
+offsets:1,1,43,43

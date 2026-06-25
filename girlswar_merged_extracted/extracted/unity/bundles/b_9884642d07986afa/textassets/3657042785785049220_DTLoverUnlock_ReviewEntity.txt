@@ -1,0 +1,30 @@
+local t={id=0,heroId=0,loverGrade=0,unlock=0,unlockPara=0,newUnlock=0,newUnlockPara=0}
+t.__index=t
+function t.New(o,h,a,s,r,n,i)
+local e={}
+setmetatable(e,t)
+e.id=o
+e.heroId=h
+e.loverGrade=a
+e.unlock=s
+e.unlockPara=r
+e.newUnlock=n
+e.newUnlockPara=i
+return e
+end
+function t.NewFromArrItem(a)
+local e={}
+setmetatable(e,t)
+e.id=a[1]
+e.heroId=a[2]
+e.loverGrade=a[3]
+e.unlock=a[4]
+e.unlockPara=a[5]
+e.newUnlock=a[6]
+e.newUnlockPara=a[7]
+return e
+end
+function t.GetArr()
+return require('DataNode/DataTable/Create/harem/DTLoverUnlock_ReviewEntityTableData')
+end
+return t 

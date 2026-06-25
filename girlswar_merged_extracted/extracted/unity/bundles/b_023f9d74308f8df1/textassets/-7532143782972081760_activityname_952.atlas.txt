@@ -1,0 +1,17 @@
+activityname_952.png
+size:512,128
+filter:Linear,Linear
+chuizi
+bounds:218,3,92,67
+guang
+bounds:312,16,54,50
+rotate:90
+kuang1
+bounds:118,72,212,44
+tiejiang
+bounds:364,17,99,27
+rotate:90
+tiezhen
+bounds:118,6,98,64
+yuan
+bounds:2,2,114,114

@@ -1,0 +1,11 @@
+activityname_19.png
+size:64,256
+filter:Linear,Linear
+itemicon_20102
+bounds:2,2,38,39
+rotate:90
+itemicon_20138
+bounds:2,42,38,39
+rotate:90
+itemicon_20150
+bounds:2,82,49,50

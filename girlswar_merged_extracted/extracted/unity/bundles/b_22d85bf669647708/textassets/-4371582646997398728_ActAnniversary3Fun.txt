@@ -1,0 +1,32 @@
+
+?
+ActAnniversary3Fun.protoCommons.proto" 
+PRT_ANNIVERSARY_3_FUN_INFO_REQ"?
+PRT_ANNIVERSARY_3_FUN_INFO_RESP$
+freeRewradIds (RfreeRewradIds 
+buyFun1Flag (RbuyFun1Flag 
+buyFun2Flag (RbuyFun2Flag*
+buy1FunRewardIds (Rbuy1FunRewardIds*
+buy2FunRewardIds (Rbuy2FunRewardIds
+tasks (2	.PRT_TASKRtasks
+totalExp (RtotalExp"A
+PRT_ANNIVERSARY_3_FUN_AWARD_REQ
+
+rewardType (R
+rewardType"?
+ PRT_ANNIVERSARY_3_FUN_AWARD_RESP
+
+rewardType (R
+rewardType$
+freeRewradIds (RfreeRewradIds*
+buy1FunRewardIds (Rbuy1FunRewardIds*
+buy2FunRewardIds (Rbuy2FunRewardIds$
+rewards (2
+.PRT_THINGRrewards"?
+%PRT_ANNIVERSARY_3_FUN_TASK_REWARD_REQ
+taskId (RtaskId"}
+&PRT_ANNIVERSARY_3_FUN_TASK_REWARD_RESP
+taskId (RtaskId
+tasks (2	.PRT_TASKRtasks
+totalExp (RtotalExpB
+com.next1b.nextsvr.protobproto3

@@ -1,0 +1,20 @@
+
+?
+ActDrawHorse.proto
+Enum.protoCommons.proto"X
+PRT_DRAW_HORSE
+giftDid (RgiftDid,
+stage (2.ENUM_DRAW_HORSE_STAGERstage"
+PRT_DRAW_HORSE_INFO_REQ"?
+PRT_DRAW_HORSE_INFO_RESP
+leftTime (RleftTime'
+wishes (2.PRT_DRAW_HORSERwishes"
+timesOverMax (RtimesOverMax"5
+PRT_DRAW_HORSE_CHOOSE_REQ
+giftDid (RgiftDid"6
+PRT_DRAW_HORSE_CHOOSE_RESP
+giftDid (RgiftDid"d
+PRT_DRAW_HORSE_AWARDS_RESP#
+wish (2.PRT_DRAW_HORSERwish!
+award (2.PRT_REWARDRawardB
+com.next1b.nextsvr.protobproto3

@@ -1,0 +1,26 @@
+local e={id=0,itemAward={},pointAward=0,cost={{},{}},count=0}
+e.__index=e
+function e.New(o,n,a,s,i)
+local t={}
+setmetatable(t,e)
+t.id=o
+t.itemAward=n
+t.pointAward=a
+t.cost=s
+t.count=i
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.itemAward=a[2]
+t.pointAward=a[3]
+t.cost=a[4]
+t.count=a[5]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/activity/DTHorseRaceExchangeEntityTableData')
+end
+return e 

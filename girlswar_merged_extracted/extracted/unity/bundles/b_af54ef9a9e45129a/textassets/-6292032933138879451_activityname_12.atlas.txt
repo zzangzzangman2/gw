@@ -1,0 +1,12 @@
+activityname_12.png
+size:256,128
+filter:Linear,Linear
+battlepassicon1
+bounds:2,2,80,97
+battlepassicon2
+bounds:84,46,43,53
+offsets:2,5,47,58
+battlepassicon3
+bounds:84,3,48,39
+offsets:1,5,51,44
+rotate:270

@@ -1,0 +1,24 @@
+local e={id=0,poolid=0,weight=0,award={{},{}}}
+e.__index=e
+function e.New(o,a,n,i)
+local t={}
+setmetatable(t,e)
+t.id=o
+t.poolid=a
+t.weight=n
+t.award=i
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.poolid=a[2]
+t.weight=a[3]
+t.award=a[4]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/summonPet/DTSummonEggPoolEntityTableData')
+end
+return e 

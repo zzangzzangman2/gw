@@ -1,0 +1,26 @@
+local e={id=0,conditionTyep=0,condition=0,awrad={},keepHours=0}
+e.__index=e
+function e.New(o,n,a,s,i)
+local t={}
+setmetatable(t,e)
+t.id=o
+t.conditionTyep=n
+t.condition=a
+t.awrad=s
+t.keepHours=i
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.conditionTyep=a[2]
+t.condition=a[3]
+t.awrad=a[4]
+t.keepHours=a[5]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/activity/DTTimeLimitEntityTableData')
+end
+return e 

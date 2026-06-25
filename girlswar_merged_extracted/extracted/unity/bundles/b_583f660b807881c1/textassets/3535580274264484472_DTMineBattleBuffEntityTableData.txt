@@ -1,0 +1,11 @@
+local e=
+{
+ByIdx={
+{1,1,500,1,{{20957,2}},"Assets/Download/ArtSources/UISpriteRes/UIMineBattle/icon_wqbuff1.png","minebuffname_1","minebuffdesc_1","A",1},
+{2,2,20,1,{{20958,3}},"Assets/Download/ArtSources/UISpriteRes/UIMineBattle/icon_wqbuff2.png","minebuffname_2","minebuffdesc_2","B",0},
+{3,3,50,1,{{20958,3}},"Assets/Download/ArtSources/UISpriteRes/UIMineBattle/icon_wqbuff3.png","minebuffname_3","minebuffdesc_3","C",0},
+{4,4,180,1,{{20939,1}},"Assets/Download/ArtSources/UISpriteRes/UIMineBattle/icon_wqbuff4.png","minebuffname_4","minebuffdesc_4","D",0}
+},
+Len=4
+}
+return e 

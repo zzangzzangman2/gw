@@ -1,0 +1,24 @@
+local e={id=0,award={{},{}},jump=0,hero=0}
+e.__index=e
+function e.New(o,a,n,i)
+local t={}
+setmetatable(t,e)
+t.id=o
+t.award=a
+t.jump=n
+t.hero=i
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.award=a[2]
+t.jump=a[3]
+t.hero=a[4]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/activity/DTDrawNewHeroCardTaskLiandongA2EntityTableData')
+end
+return e 

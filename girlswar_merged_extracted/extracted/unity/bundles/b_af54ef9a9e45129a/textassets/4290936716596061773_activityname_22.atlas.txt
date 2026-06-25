@@ -1,0 +1,15 @@
+activityname_22.png
+size:128,128
+filter:Linear,Linear
+long
+bounds:2,55,83,68
+yun1
+bounds:2,30,42,23
+offsets:1,1,44,25
+yun2
+bounds:87,28,56,31
+offsets:1,1,58,33
+rotate:90
+zhu 2
+bounds:87,86,36,37
+offsets:1,1,38,39

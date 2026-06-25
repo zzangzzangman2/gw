@@ -1,0 +1,36 @@
+local a={id=0,feverScore=0,feverTime=0,rankCount=0,fireAdd=0,fireCost=0,foodDone={},clientInterval=0,clientTime=0,clientAngry=0}
+a.__index=a
+function a.New(n,r,s,t,l,u,d,h,o,i)
+local e={}
+setmetatable(e,a)
+e.id=n
+e.feverScore=r
+e.feverTime=s
+e.rankCount=t
+e.fireAdd=l
+e.fireCost=u
+e.foodDone=d
+e.clientInterval=h
+e.clientTime=o
+e.clientAngry=i
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.feverScore=t[2]
+e.feverTime=t[3]
+e.rankCount=t[4]
+e.fireAdd=t[5]
+e.fireCost=t[6]
+e.foodDone=t[7]
+e.clientInterval=t[8]
+e.clientTime=t[9]
+e.clientAngry=t[10]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/activity/DTGameBBQBaseEntityTableData')
+end
+return a 

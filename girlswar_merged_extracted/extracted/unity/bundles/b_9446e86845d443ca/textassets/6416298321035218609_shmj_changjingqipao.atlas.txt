@@ -1,0 +1,6 @@
+shmj_changjingqipao.png
+size:64,64
+filter:Linear,Linear
+a1a
+bounds:1,1,39,35
+offsets:1,2,41,40

@@ -1,0 +1,6 @@
+jibanlibao.png
+size:128,128
+filter:Linear,Linear
+item_jibanlibao
+bounds:2,2,74,85
+offsets:13,8,100,100

@@ -1,0 +1,7 @@
+door_top.png
+size:256,128
+filter:Linear,Linear
+3
+bounds:0,26,150,67
+4
+bounds:0,0,150,24

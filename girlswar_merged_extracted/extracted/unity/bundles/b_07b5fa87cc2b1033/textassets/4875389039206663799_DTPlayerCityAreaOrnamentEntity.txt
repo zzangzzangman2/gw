@@ -1,0 +1,32 @@
+local a={id=0,type=0,ornamentType=0,level=0,nextLevel=0,attr={{},{}},cost={{},{}},color=0}
+a.__index=a
+function a.New(i,h,n,t,d,r,s,o)
+local e={}
+setmetatable(e,a)
+e.id=i
+e.type=h
+e.ornamentType=n
+e.level=t
+e.nextLevel=d
+e.attr=r
+e.cost=s
+e.color=o
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.type=t[2]
+e.ornamentType=t[3]
+e.level=t[4]
+e.nextLevel=t[5]
+e.attr=t[6]
+e.cost=t[7]
+e.color=t[8]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/playerCity/DTPlayerCityAreaOrnamentEntityTableData')
+end
+return a 

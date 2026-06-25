@@ -1,0 +1,28 @@
+local e={}
+e.__index=e
+function e.Init()
+e.indexData={}
+e.indexData['index_1']={}
+e.indexData['index_1']['1036']={9}
+e.indexData['index_1']['117']={10}
+e.indexData['index_1']['120']={11}
+e.indexData['index_1']['121']={3}
+e.indexData['index_1']['125']={6}
+e.indexData['index_1']['133']={5}
+e.indexData['index_1']['137']={4}
+e.indexData['index_1']['219']={12}
+e.indexData['index_1']['249']={1}
+e.indexData['index_1']['250']={2}
+e.indexData['index_1']['953']={7}
+e.indexData['index_1']['955']={13}
+e.indexData['index_1']['999']={8}
+end
+function e.GetByIndex(t,a)
+if e.indexData[t]and e.indexData[t][a]then
+return e.indexData[t][a]
+else
+return{}
+end
+end
+return e
+

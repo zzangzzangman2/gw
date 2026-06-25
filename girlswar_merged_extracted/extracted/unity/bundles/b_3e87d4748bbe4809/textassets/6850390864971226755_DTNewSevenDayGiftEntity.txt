@@ -1,0 +1,28 @@
+local e={id=0,award={},newAward={},new2Award={},cost={},desc=""}
+e.__index=e
+function e.New(a,i,o,h,s,n)
+local t={}
+setmetatable(t,e)
+t.id=a
+t.award=i
+t.newAward=o
+t.new2Award=h
+t.cost=s
+t.desc=n
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.award=a[2]
+t.newAward=a[3]
+t.new2Award=a[4]
+t.cost=a[5]
+t.desc=a[6]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/activity/DTNewSevenDayGiftEntityTableData')
+end
+return e 

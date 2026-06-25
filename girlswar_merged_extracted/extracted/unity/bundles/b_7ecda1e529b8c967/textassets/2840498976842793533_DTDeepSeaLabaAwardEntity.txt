@@ -1,0 +1,28 @@
+local e={id=0,lv=0,shaftType=0,award={},multi=0,weight=0}
+e.__index=e
+function e.New(a,i,o,h,s,n)
+local t={}
+setmetatable(t,e)
+t.id=a
+t.lv=i
+t.shaftType=o
+t.award=h
+t.multi=s
+t.weight=n
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.lv=a[2]
+t.shaftType=a[3]
+t.award=a[4]
+t.multi=a[5]
+t.weight=a[6]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/deepsea/DTDeepSeaLabaAwardEntityTableData')
+end
+return e 

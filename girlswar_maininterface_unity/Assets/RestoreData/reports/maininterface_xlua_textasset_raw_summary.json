@@ -1,0 +1,16 @@
+{
+  "source_bundle": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\extracted\\unity\\clean_unityfs_slices\\download\\xlualogic\\modules\\maininterface.assetbundle",
+  "raw_dir": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\extracted\\unity\\raw_textassets\\download_xlualogic_modules_maininterface",
+  "textassets": 36,
+  "prefix_counts": {
+    "A-EV": 32,
+    "K7HT": 4
+  },
+  "surrogate_byte_total": 111815,
+  "nonlatin_codepoint_total": 3219,
+  "outputs": {
+    "csv": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_maininterface_unity\\Assets\\RestoreData\\reports\\maininterface_xlua_textasset_raw.csv",
+    "json": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_maininterface_unity\\Assets\\RestoreData\\reports\\maininterface_xlua_textasset_raw_summary.json",
+    "md": "C:\\Users\\godho\\Downloads\\girlswar\\MAININTERFACE_XLUA_RAW_TEXTASSETS.md"
+  }
+}

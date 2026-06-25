@@ -1,0 +1,80 @@
+local a={id=0,worldLevel=0,hardType=0,hardLevel=0,needLv=0,bg=0,bg2=0,stageType=0,name="",prefabId=0,HeroInitColor_R=0,HeroInitColor_G=0,HeroInitColor_B=0,bossId=0,bossIcon="",bossDesc="",firstAward={{},{}},commAward={{},{}},firstAwardFireworks={{},{}},commAwardFireworks={{},{}},firstAwardBoxWeek={{},{}},commAwardBoxWeek={{},{}},firstAwardLoveFiveBox={{},{}},commAwardLoveFiveBox={{},{}},firstAwardClubFiveBox={{},{}},commAwardClubFiveBox={{},{}},mvpAward={{},{}},score=0,keyAward={{},{}},openCost={{},{}},activityCommAward={{},{}},activitySupportAward={{},{}}}
+a.__index=a
+function a.New(c,b,p,t,j,x,q,g,k,_,A,E,I,N,O,T,S,z,v,d,h,r,s,o,i,n,l,m,u,w,y,f)
+local e={}
+setmetatable(e,a)
+e.id=c
+e.worldLevel=b
+e.hardType=p
+e.hardLevel=t
+e.needLv=j
+e.bg=x
+e.bg2=q
+e.stageType=g
+e.name=k
+e.prefabId=_
+e.HeroInitColor_R=A
+e.HeroInitColor_G=E
+e.HeroInitColor_B=I
+e.bossId=N
+e.bossIcon=O
+e.bossDesc=T
+e.firstAward=S
+e.commAward=z
+e.firstAwardFireworks=v
+e.commAwardFireworks=d
+e.firstAwardBoxWeek=h
+e.commAwardBoxWeek=r
+e.firstAwardLoveFiveBox=s
+e.commAwardLoveFiveBox=o
+e.firstAwardClubFiveBox=i
+e.commAwardClubFiveBox=n
+e.mvpAward=l
+e.score=m
+e.keyAward=u
+e.openCost=w
+e.activityCommAward=y
+e.activitySupportAward=f
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.worldLevel=t[2]
+e.hardType=t[3]
+e.hardLevel=t[4]
+e.needLv=t[5]
+e.bg=t[6]
+e.bg2=t[7]
+e.stageType=t[8]
+e.name=t[9]
+e.prefabId=t[10]
+e.HeroInitColor_R=t[11]
+e.HeroInitColor_G=t[12]
+e.HeroInitColor_B=t[13]
+e.bossId=t[14]
+e.bossIcon=t[15]
+e.bossDesc=t[16]
+e.firstAward=t[17]
+e.commAward=t[18]
+e.firstAwardFireworks=t[19]
+e.commAwardFireworks=t[20]
+e.firstAwardBoxWeek=t[21]
+e.commAwardBoxWeek=t[22]
+e.firstAwardLoveFiveBox=t[23]
+e.commAwardLoveFiveBox=t[24]
+e.firstAwardClubFiveBox=t[25]
+e.commAwardClubFiveBox=t[26]
+e.mvpAward=t[27]
+e.score=t[28]
+e.keyAward=t[29]
+e.openCost=t[30]
+e.activityCommAward=t[31]
+e.activitySupportAward=t[32]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/dragon/DTDragonStageEntityTableData')
+end
+return a 

@@ -1,0 +1,38 @@
+local a={id=0,shopType=0,unlockType=0,unlockLimit=0,type=0,limit=0,sellItem={},chargeId=0,price={},discount=0,iconBig=""}
+a.__index=a
+function a.New(n,r,s,t,l,u,c,d,h,o,i)
+local e={}
+setmetatable(e,a)
+e.id=n
+e.shopType=r
+e.unlockType=s
+e.unlockLimit=t
+e.type=l
+e.limit=u
+e.sellItem=c
+e.chargeId=d
+e.price=h
+e.discount=o
+e.iconBig=i
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.shopType=t[2]
+e.unlockType=t[3]
+e.unlockLimit=t[4]
+e.type=t[5]
+e.limit=t[6]
+e.sellItem=t[7]
+e.chargeId=t[8]
+e.price=t[9]
+e.discount=t[10]
+e.iconBig=t[11]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/activity/DTActivityTravelShopEntityTableData')
+end
+return a 

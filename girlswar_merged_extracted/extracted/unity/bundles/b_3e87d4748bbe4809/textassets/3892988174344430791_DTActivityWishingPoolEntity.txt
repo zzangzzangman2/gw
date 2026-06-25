@@ -1,0 +1,28 @@
+local e={id=0,oneCost={},tenCost={},commPool=0,pityTimes=0,pityPool={}}
+e.__index=e
+function e.New(a,i,o,h,s,n)
+local t={}
+setmetatable(t,e)
+t.id=a
+t.oneCost=i
+t.tenCost=o
+t.commPool=h
+t.pityTimes=s
+t.pityPool=n
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.oneCost=a[2]
+t.tenCost=a[3]
+t.commPool=a[4]
+t.pityTimes=a[5]
+t.pityPool=a[6]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/activity/DTActivityWishingPoolEntityTableData')
+end
+return e 

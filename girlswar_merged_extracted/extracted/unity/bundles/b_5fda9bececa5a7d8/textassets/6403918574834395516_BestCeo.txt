@@ -1,0 +1,53 @@
+
+?
+BestCeo.protoCommons.proto"u
+PRT_BESTCEO_TASK
+taskDid (RtaskDid+
+status (2.ENUM_REWARD_STATUSRstatus
+progress (Rprogress">
+PRT_BESTCEO_INFO
+day (Rday
+giftIds (RgiftIds"
+PRT_BESTCEO_INFO_REQ"?
+PRT_BESTCEO_INFO_RESP
+leftTime (RleftTime"
+todayEndTime (RtodayEndTime%
+info (2.PRT_BESTCEO_INFORinfo
+today (Rtoday;
+totalRankDatas (2.PRT_CS_COMMON_RANKRtotalRankDatas9
+totalSelfRank (2.PRT_CS_COMMON_RANKRtotalSelfRank"
+PRT_BESTCEO_TASK_REQ"V
+PRT_BESTCEO_TASK_RESP'
+tasks (2.PRT_BESTCEO_TASKRtasks
+today (Rtoday"1
+PRT_BESTCEO_AWARD_REQ
+taskDid (RtaskDid"?
+PRT_BESTCEO_AWARD_RESP%
+task (2.PRT_BESTCEO_TASKRtask"?
+PRT_BESTCEO_DAILY_RANK
+day (Rday1
+	rankDatas (2.PRT_CS_COMMON_RANKR	rankDatas/
+selfRank (2.PRT_CS_COMMON_RANKRselfRank"
+PRT_BESTCEO_RANK_LOCAL_REQ"?
+PRT_BESTCEO_RANK_LOCAL_RESP7
+
+dailyRanks (2.PRT_BESTCEO_DAILY_RANKR
+dailyRanks;
+totalRankDatas (2.PRT_CS_COMMON_RANKRtotalRankDatas9
+totalSelfRank (2.PRT_CS_COMMON_RANKRtotalSelfRank"?
+PRT_CS_BESTCEO_UPDATE_RANK_SYN
+playerId (RplayerId
+
+dailyScore (R
+dailyScore
+
+totalScore (R
+totalScore
+changeMS (RchangeMS
+day (Rday
+stage (Rstage"?
+PRT_CS_BESTCEO_INFO_RESP
+playerId (RplayerId;
+totalRankDatas (2.PRT_CS_COMMON_RANKRtotalRankDatas9
+totalSelfRank (2.PRT_CS_COMMON_RANKRtotalSelfRankB
+com.next1b.nextsvr.protobproto3

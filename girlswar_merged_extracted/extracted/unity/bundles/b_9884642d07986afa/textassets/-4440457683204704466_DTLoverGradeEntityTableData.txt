@@ -1,0 +1,17 @@
+local e=
+{
+ByIdx={
+{1,"gradename1"},
+{2,"gradename2"},
+{3,"gradename3"},
+{4,"gradename4"},
+{5,"gradename5"},
+{6,"gradename6"},
+{7,"gradename7"},
+{8,"gradename8"},
+{9,"gradename9"},
+{10,"gradename10"}
+},
+Len=10
+}
+return e 

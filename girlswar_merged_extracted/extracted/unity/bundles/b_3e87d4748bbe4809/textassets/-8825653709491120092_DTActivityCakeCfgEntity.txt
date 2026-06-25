@@ -1,0 +1,26 @@
+local e={id=0,itemGet={},buyLv={},endDay=0,itemCost={}}
+e.__index=e
+function e.New(o,n,a,s,i)
+local t={}
+setmetatable(t,e)
+t.id=o
+t.itemGet=n
+t.buyLv=a
+t.endDay=s
+t.itemCost=i
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.itemGet=a[2]
+t.buyLv=a[3]
+t.endDay=a[4]
+t.itemCost=a[5]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/activity/DTActivityCakeCfgEntityTableData')
+end
+return e 

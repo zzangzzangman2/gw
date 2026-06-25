@@ -1,0 +1,39 @@
+
+?
+
+BestTreasure.protoCommons.proto"z
+PRT_BESTTREASURE_TASK
+taskDid (RtaskDid+
+status (2.ENUM_REWARD_STATUSRstatus
+progress (Rprogress"C
+PRT_BESTTREASURE_INFO
+day (Rday
+giftIds (RgiftIds"
+PRT_BESTTREASURE_INFO_REQ"?
+PRT_BESTTREASURE_INFO_RESP
+leftTime (RleftTime"
+todayEndTime (RtodayEndTime*
+info (2.PRT_BESTTREASURE_INFORinfo
+today (Rtoday;
+totalRankDatas (2.PRT_CS_COMMON_RANKRtotalRankDatas9
+totalSelfRank (2.PRT_CS_COMMON_RANKRtotalSelfRank"
+PRT_BESTTREASURE_TASK_REQ"J
+PRT_BESTTREASURE_TASK_RESP,
+tasks (2.PRT_BESTTREASURE_TASKRtasks"6
+PRT_BESTTREASURE_AWARD_REQ
+taskDid (RtaskDid"I
+PRT_BESTTREASURE_AWARD_RESP*
+task (2.PRT_BESTTREASURE_TASKRtask"!
+PRT_BESTTREASURE_RANK_LOCAL_REQ"?
+ PRT_BESTTREASURE_RANK_LOCAL_RESP8
+totalRankDatas (2.PRT_COMMON_RANKRtotalRankDatas6
+totalSelfRank (2.PRT_COMMON_RANKRtotalSelfRank"z
+*PRT_CS_BEST_TREASURE_RANK_SCORE_UPDATE_SYN
+playerId (RplayerId
+score (Rscore
+changeMS (RchangeMS"?
+PRT_CS_BEST_TREASURE_INFO_RESP
+playerId (RplayerId;
+totalRankDatas (2.PRT_CS_COMMON_RANKRtotalRankDatas9
+totalSelfRank (2.PRT_CS_COMMON_RANKRtotalSelfRankB
+com.next1b.nextsvr.protobproto3

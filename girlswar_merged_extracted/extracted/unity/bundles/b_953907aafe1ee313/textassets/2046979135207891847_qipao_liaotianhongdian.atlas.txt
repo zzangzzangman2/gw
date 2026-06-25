@@ -1,0 +1,5 @@
+qipao_liaotianhongdian.png
+size:64,64
+filter:Linear,Linear
+liaotianhongdian
+bounds:2,2,54,40

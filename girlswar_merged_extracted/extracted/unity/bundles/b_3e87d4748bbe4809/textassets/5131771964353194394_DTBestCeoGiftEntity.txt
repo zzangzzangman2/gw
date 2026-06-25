@@ -1,0 +1,34 @@
+local a={id=0,dayNum=0,giftNum=0,minServerId=0,maxServerId=0,goods=0,award={{},{}},discountShow=0,giftBg=""}
+a.__index=a
+function a.New(i,h,n,t,d,l,r,s,o)
+local e={}
+setmetatable(e,a)
+e.id=i
+e.dayNum=h
+e.giftNum=n
+e.minServerId=t
+e.maxServerId=d
+e.goods=l
+e.award=r
+e.discountShow=s
+e.giftBg=o
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.dayNum=t[2]
+e.giftNum=t[3]
+e.minServerId=t[4]
+e.maxServerId=t[5]
+e.goods=t[6]
+e.award=t[7]
+e.discountShow=t[8]
+e.giftBg=t[9]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/activity/DTBestCeoGiftEntityTableData')
+end
+return a 

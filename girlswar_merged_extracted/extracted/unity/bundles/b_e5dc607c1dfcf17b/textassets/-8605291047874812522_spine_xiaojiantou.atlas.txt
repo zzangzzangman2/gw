@@ -1,0 +1,9 @@
+spine_xiaojiantou.png
+size:128,64
+filter:Linear,Linear
+2b399cf5-d7fe-4e8f-8653-e2047107d7b8
+bounds:59,20,29,37
+offsets:2,0,33,37
+4a9da556-9e56-4ad0-bf95-80d911cb19d3
+bounds:2,2,55,55
+offsets:1,0,57,55

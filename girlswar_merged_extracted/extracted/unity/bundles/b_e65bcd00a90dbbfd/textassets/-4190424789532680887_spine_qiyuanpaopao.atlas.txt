@@ -1,0 +1,17 @@
+spine_qiyuanpaopao.png
+size:1024,1024
+filter:Linear,Linear
+034
+bounds:0,145,600,588
+T_zhuangbeibg1
+bounds:601,18,312,305
+T_zhuangbeibg2
+bounds:955,273,40,50
+T_zhuangbeibg3
+bounds:914,273,40,50
+icon_yuekafudaibg2
+bounds:0,0,144,146
+rotate:90
+xiaoqipao
+bounds:601,324,409,403
+rotate:90

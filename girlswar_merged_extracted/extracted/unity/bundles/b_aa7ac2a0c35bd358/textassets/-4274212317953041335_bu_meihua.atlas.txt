@@ -1,0 +1,7 @@
+bu_meihua.png
+size:64,128
+filter:Linear,Linear
+ba0017fb-396b-4bc7-b8a0-0cb207139482
+bounds:2,26,45,47
+bu_meihua111
+bounds:2,2,42,22

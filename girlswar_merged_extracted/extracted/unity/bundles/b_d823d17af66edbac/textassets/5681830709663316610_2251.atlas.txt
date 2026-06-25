@@ -1,0 +1,11 @@
+2251.png
+size:1024,512
+filter:Linear,Linear
+scale:0.8
+05
+bounds:0,0,481,739
+rotate:90
+06
+bounds:0,353,44,62
+07
+bounds:0,416,58,65

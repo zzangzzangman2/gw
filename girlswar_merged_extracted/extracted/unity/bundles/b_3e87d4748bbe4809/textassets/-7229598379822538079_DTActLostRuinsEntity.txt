@@ -1,0 +1,32 @@
+local a={id=0,diceCost={},magnification=0,goods=0,fundAward={},boxDropWeight={{},{}},ItemPrice={},maxBuyTIMES=0}
+a.__index=a
+function a.New(i,h,n,t,d,r,s,o)
+local e={}
+setmetatable(e,a)
+e.id=i
+e.diceCost=h
+e.magnification=n
+e.goods=t
+e.fundAward=d
+e.boxDropWeight=r
+e.ItemPrice=s
+e.maxBuyTIMES=o
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.diceCost=t[2]
+e.magnification=t[3]
+e.goods=t[4]
+e.fundAward=t[5]
+e.boxDropWeight=t[6]
+e.ItemPrice=t[7]
+e.maxBuyTIMES=t[8]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/activity/DTActLostRuinsEntityTableData')
+end
+return a 

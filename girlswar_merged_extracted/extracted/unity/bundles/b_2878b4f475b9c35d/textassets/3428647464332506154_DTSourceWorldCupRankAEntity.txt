@@ -1,0 +1,26 @@
+local e={id=0,newbraverewards={{},{}},newtimelimited1={},newevilrewards={{},{}},newtimelimited2={}}
+e.__index=e
+function e.New(o,n,a,s,i)
+local t={}
+setmetatable(t,e)
+t.id=o
+t.newbraverewards=n
+t.newtimelimited1=a
+t.newevilrewards=s
+t.newtimelimited2=i
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.newbraverewards=a[2]
+t.newtimelimited1=a[3]
+t.newevilrewards=a[4]
+t.newtimelimited2=a[5]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/sourceWorld/DTSourceWorldCupRankAEntityTableData')
+end
+return e 

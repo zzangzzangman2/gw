@@ -1,0 +1,10 @@
+local e={}
+function e:OnHandle(e)
+local e=assert(GlobalPB.decode("PRT_GUILD_WAR_INSPIRE_RECORD_RESP",e));
+if(GameInit.GetDebugLogProto())then
+;
+;
+end
+ModulesInit.CSGuildWarManager:OnGuildWarBuffRecordResponse(e)
+end
+return e 

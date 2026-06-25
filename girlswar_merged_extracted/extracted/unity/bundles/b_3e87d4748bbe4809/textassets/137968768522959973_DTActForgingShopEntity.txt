@@ -1,0 +1,30 @@
+local t={id=0,unlock=0,wheel=0,nextcount=0,limit=0,award={},price={}}
+t.__index=t
+function t.New(o,h,a,s,r,n,i)
+local e={}
+setmetatable(e,t)
+e.id=o
+e.unlock=h
+e.wheel=a
+e.nextcount=s
+e.limit=r
+e.award=n
+e.price=i
+return e
+end
+function t.NewFromArrItem(a)
+local e={}
+setmetatable(e,t)
+e.id=a[1]
+e.unlock=a[2]
+e.wheel=a[3]
+e.nextcount=a[4]
+e.limit=a[5]
+e.award=a[6]
+e.price=a[7]
+return e
+end
+function t.GetArr()
+return require('DataNode/DataTable/Create/activity/DTActForgingShopEntityTableData')
+end
+return t 

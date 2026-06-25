@@ -1,0 +1,26 @@
+local e={id=0,fromHeroStar=0,toHeroStar=0,fromLevel=0,toLevel=0}
+e.__index=e
+function e.New(o,n,a,s,i)
+local t={}
+setmetatable(t,e)
+t.id=o
+t.fromHeroStar=n
+t.toHeroStar=a
+t.fromLevel=s
+t.toLevel=i
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.fromHeroStar=a[2]
+t.toHeroStar=a[3]
+t.fromLevel=a[4]
+t.toLevel=a[5]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/hero/DTHeroInheritLockEntityTableData')
+end
+return e 

@@ -1,0 +1,24 @@
+local e={id=0,rankMin=0,awards={{},{}},limitItem=0}
+e.__index=e
+function e.New(o,a,n,i)
+local t={}
+setmetatable(t,e)
+t.id=o
+t.rankMin=a
+t.awards=n
+t.limitItem=i
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.rankMin=a[2]
+t.awards=a[3]
+t.limitItem=a[4]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/arena/DTWushuMasterRankEntityTableData')
+end
+return e 

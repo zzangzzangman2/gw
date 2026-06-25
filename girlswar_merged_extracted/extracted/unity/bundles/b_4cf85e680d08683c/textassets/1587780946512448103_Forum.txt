@@ -1,0 +1,8 @@
+
+?
+Forum.proto"1
+PRT_FORUM_OPEN_LIST_SYN
+forums (	Rforums"4
+PRT_CS_FORUM_OPEN_LIST_SYN
+forums (	RforumsB
+com.next1b.nextsvr.protobproto3

@@ -1,0 +1,128 @@
+
+?
+ActGemMineHole.protoCommons.proto"n
+MINE_HOLE_DATA
+pos (Rpos
+did (Rdid
+
+finshTimer (R
+finshTimer
+isGuide (RisGuide"R
+MINE_HOLE_MINERAL_DATA
+did (Rdid
+num (Rnum
+price (Rprice"?
+MINE_HOLE_MINERAL_PLAYER_DATA
+playerId (RplayerId
+name (	Rname
+head (Rhead
+	headFrame (R	headFrame
+serverId (RserverId
+level (Rlevel9
+mineralData (2.MINE_HOLE_MINERAL_DATARmineralData"
+PRT_GEM_MINE_HOLE_INFO_REQ"L
+PRT_GEM_MINE_HOLE_INFO_RESP-
+	mineHoles (2.MINE_HOLE_DATAR	mineHoles"\
+PRT_GEM_MINE_HOLE_MINING_REQ
+pos (Rpos
+did (Rdid
+isGuide (RisGuide"L
+PRT_GEM_MINE_HOLE_MINING_RESP+
+mineHole (2.MINE_HOLE_DATARmineHole"9
+%PRT_GEM_MINE_HOLE_MINING_SPEED_UP_REQ
+pos (Rpos"U
+&PRT_GEM_MINE_HOLE_MINING_SPEED_UP_RESP+
+mineHole (2.MINE_HOLE_DATARmineHole":
+&PRT_GEM_MINE_HOLE_MINING_GET_AWARD_REQ
+pos (Rpos"X
+'PRT_GEM_MINE_HOLE_MINING_GET_AWARD_RESP-
+	mineHoles (2.MINE_HOLE_DATAR	mineHoles"$
+"PRT_GEM_MINE_HOLE_RECYCLE_INFO_REQ"?
+#PRT_GEM_MINE_HOLE_RECYCLE_INFO_RESP(
+nextRefreshTime (RnextRefreshTime;
+mineralDatas (2.MINE_HOLE_MINERAL_DATARmineralDatas"'
+%PRT_GEM_MINE_HOLE_RECYCLE_REFRESH_REQ"e
+&PRT_GEM_MINE_HOLE_RECYCLE_REFRESH_RESP;
+mineralDatas (2.MINE_HOLE_MINERAL_DATARmineralDatas"a
++PRT_GEM_MINE_HOLE_RECYCLE_MINERAL_PRICE_REQ
+did (Rdid 
+guidPidList (RguidPidList"?
+,PRT_GEM_MINE_HOLE_RECYCLE_MINERAL_PRICE_RESP=
+myMineralData (2.MINE_HOLE_MINERAL_DATARmyMineralDataJ
+otherPlayerDatas (2.MINE_HOLE_MINERAL_PLAYER_DATARotherPlayerDatas"?
+*PRT_GEM_MINE_HOLE_RECYCLE_MINERAL_SELL_REQ&
+targetPlayerId (RtargetPlayerId9
+mineralData (2.MINE_HOLE_MINERAL_DATARmineralData"?
++PRT_GEM_MINE_HOLE_RECYCLE_MINERAL_SELL_RESP
+	isSucceed (R	isSucceed9
+mineralData (2.MINE_HOLE_MINERAL_DATARmineralData"
+awards (2
+.PRT_THINGRawards
+playerId (RplayerId"e
+#PRT_NOTIFY_GEM_MINE_HOLE_REWARD_REQ
+playerId (RplayerId
+did (Rdid
+num (Rnum"&
+$PRT_NOTIFY_GEM_MINE_HOLE_REWARD_RESP"H
+*PRT_NOTIFY_GEM_MINE_HOLE_INIT_ACTIVITY_REQ
+playerId (RplayerId"-
++PRT_NOTIFY_GEM_MINE_HOLE_INIT_ACTIVITY_RESP")
+'PRT_GEM_MINE_HOLE_RECYCLE_WORK_INFO_REQ"R
+(PRT_GEM_MINE_HOLE_RECYCLE_WORK_INFO_RESP&
+decomposeTimes (RdecomposeTimes"^
+*PRT_GEM_MINE_HOLE_RECYCLE_WORK_COMPOSE_REQ
+id (Rid 
+synthesisId (RsynthesisId"Q
++PRT_GEM_MINE_HOLE_RECYCLE_WORK_COMPOSE_RESP"
+things (2
+.PRT_THINGRthings">
+,PRT_GEM_MINE_HOLE_RECYCLE_WORK_DECOMPOSE_REQ
+id (Rid"{
+-PRT_GEM_MINE_HOLE_RECYCLE_WORK_DECOMPOSE_RESP"
+things (2
+.PRT_THINGRthings&
+decomposeTimes (RdecomposeTimes"!
+PRT_GEM_MINE_HOLE_TASK_INFO_REQ"C
+ PRT_GEM_MINE_HOLE_TASK_INFO_RESP
+tasks (2	.PRT_TASKRtasks"<
+ PRT_GEM_MINE_HOLE_TASK_AWARD_REQ
+taskDid (RtaskDid"j
+!PRT_GEM_MINE_HOLE_TASK_AWARD_RESP
+tasks (2	.PRT_TASKRtasks$
+rewards (2
+.PRT_THINGRrewards"
+PRT_GEM_MINE_HOLE_RANK_REQ"?
+PRT_GEM_MINE_HOLE_RANK_RESP&
+ranks (2.PRT_COMMON_RANKRranks,
+selfRank (2.PRT_COMMON_RANKRselfRank
+playerId (RplayerId"z
+*PRT_CS_GEM_MINE_HOLE_RANK_SCORE_UPDATE_SYN
+playerId (RplayerId
+score (Rscore
+changeMS (RchangeMS"!
+PRT_GEM_MINE_HOLE_SHOP_INFO_REQ"^
+ PRT_GEM_MINE_HOLE_SHOP_INFO_RESP 
+items (2
+.PRT_GOODSRitems
+costNum (RcostNum"R
+PRT_GEM_MINE_HOLE_SHOP_BUY_REQ
+goodsDid (RgoodsDid
+count (Rcount"[
+PRT_GEM_MINE_HOLE_SHOP_BUY_RESP
+item (2
+.PRT_GOODSRitem
+costNum (RcostNum"!
+PRT_GEM_MINE_HOLE_GIFT_INFO_REQ"?
+ PRT_GEM_MINE_HOLE_GIFT_INFO_RESP 
+gifts (2
+.PRT_GOODSRgifts
+freeCD (RfreeCD.
+historyGifts (2
+.PRT_GOODSRhistoryGifts"P
+PRT_GEM_MINE_HOLE_GIFT_BUY_REQ
+giftDid (RgiftDid
+count (Rcount"A
+PRT_GEM_MINE_HOLE_GIFT_BUY_RESP
+gift (2
+.PRT_GOODSRgiftB
+com.next1b.nextsvr.protobproto3

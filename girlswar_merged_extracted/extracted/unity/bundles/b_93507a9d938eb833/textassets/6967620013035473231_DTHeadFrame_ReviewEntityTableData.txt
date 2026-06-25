@@ -1,0 +1,13 @@
+local e=
+{
+ByIdx={
+{1,"UIHeroHead/UIHeroHead_1/headframe_01","heroframename_01","heroframedesc_01",1,"UI.Unlock.Heroframe_01",{1},0,"0",1},
+{2,"UIHeroHead/UIHeroHead_1/headframe_02","heroframename_02","heroframedesc_02",2,"UI.Unlock.Heroframe_02",{11060},0,"0",1},
+{4,"UIHeroHead/UIHeroHead_1/headframe_04","heroframename_04","heroframedesc_04",13,"UI.Unlock.Heroframe_04",{1},0,"0",1},
+{5,"UIHeroHead/UIHeroHead_1/headframe_05","heroframename_05","heroframedesc_05",13,"UI.Unlock.Heroframe_05",{2},0,"0",1},
+{6,"UIHeroHead/UIHeroHead_1/headframe_06","heroframename_06","heroframedesc_06",13,"UI.Unlock.Heroframe_06",{3},0,"0",1},
+{7,"UIHeroHead/UIHeroHead_1/headframe_07","heroframename_07","heroframedesc_07",9,"UI.Unlock.Heroframe_07",{1},0,"0",1}
+},
+Len=6
+}
+return e 

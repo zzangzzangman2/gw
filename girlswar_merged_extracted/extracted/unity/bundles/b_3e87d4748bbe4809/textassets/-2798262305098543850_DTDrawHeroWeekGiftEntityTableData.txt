@@ -1,0 +1,13 @@
+local e=
+{
+ByIdx={
+{1,{{20291,2}},"DTDrawHeroWeekGiftText_1",0,1},
+{2,{{1001,650},{20021,3},{20291,2}},"DTDrawHeroWeekGiftText_2",304,5},
+{3,{{1001,1000},{20021,5},{20291,3}},"DTDrawHeroWeekGiftText_3",306,2},
+{4,{{1001,1800},{20021,8},{20291,4}},"DTDrawHeroWeekGiftText_4",310,2},
+{5,{{1001,6000},{20021,25},{20291,12}},"DTDrawHeroWeekGiftText_5",327,5},
+{6,{{1001,11800},{20021,50},{20291,25}},"DTDrawHeroWeekGiftText_6",329,10}
+},
+Len=6
+}
+return e 

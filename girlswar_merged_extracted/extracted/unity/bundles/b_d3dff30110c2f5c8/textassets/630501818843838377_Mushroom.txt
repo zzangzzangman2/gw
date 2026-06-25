@@ -1,0 +1,129 @@
+
+?
+Mushroom.protoCommons.protoErrorCode.proto"
+PRT_MUSHROOM_INDEX_INFO_REQ"
+PRT_MUSHROOM_INDEX_INFO_RESP"
+PRT_MUSHROOM_SHOP_INFO_REQ"G
+PRT_MUSHROOM_SHOP_INFO_RESP(
+	shopGoods (2
+.PRT_GOODSR	shopGoods"H
+PRT_MUSHROOM_SHOP_EXCHANGE_REQ
+did (Rdid
+count (Rcount"3
+PRT_MUSHROOM_SHOP_EXCHANGE_RESP
+did (Rdid"
+PRT_MUSHROOM_TASK_INFO_REQ"V
+PRT_MUSHROOM_TASK_INFO_RESP
+curDay (RcurDay
+tasks (2	.PRT_TASKRtasks"-
+PRT_MUSHROOM_TASK_REC_REQ
+did (Rdid".
+PRT_MUSHROOM_TASK_REC_RESP
+did (Rdid"p
+PRT_MUSHROOM_PASS_STATUS
+day (Rday
+
+freeStatus (R
+freeStatus"
+chargeStatus (RchargeStatus"
+PRT_MUSHROOM_PASS_INFO_REQ"p
+PRT_MUSHROOM_PASS_INFO_RESP
+curDay (RcurDay9
+
+passStatus (2.PRT_MUSHROOM_PASS_STATUSR
+passStatus"A
+PRT_MUSHROOM_PASS_REC_REQ
+day (Rday
+type (Rtype"B
+PRT_MUSHROOM_PASS_REC_RESP
+day (Rday
+type (Rtype"
+PRT_MUSHROOM_GIFT_INFO_REQ"?
+PRT_MUSHROOM_GIFT_INFO_RESP(
+	giftGoods (2
+.PRT_GOODSR	giftGoods(
+	shopGoods (2
+.PRT_GOODSR	shopGoods
+	resetTime (R	resetTime"C
+PRT_MUSHROOM_GIFT_BUY_REQ
+did (Rdid
+count (Rcount".
+PRT_MUSHROOM_GIFT_BUY_RESP
+did (Rdid"i
+PRT_MUSHROOM_BALL_POS
+did (Rdid
+posX (	RposX
+posY (	RposY
+eulerZ (	ReulerZ"
+PRT_MUSHROOM_MERGE_INFO_REQ"x
+PRT_MUSHROOM_MERGE_INFO_RESP
+did (Rdid0
+ballPos (2.PRT_MUSHROOM_BALL_POSRballPos
+score (Rscore"
+PRT_MUSHROOM_MERGE_TASK_REQ"?
+PRT_MUSHROOM_MERGE_TASK_RESP
+tasks (2	.PRT_TASKRtasks"?
+PRT_MUSHROOM_MERGE_UPDATE_REQ
+did (Rdid0
+ballPos (2.PRT_MUSHROOM_BALL_POSRballPos
+score (Rscore
+addScore (RaddScore
+	mergeDids (R	mergeDids$
+disappearDids (RdisappearDids
+addDids (RaddDids"?
+PRT_MUSHROOM_MERGE_UPDATE_RESP
+result (Rresult"
+errCode (2.ErrCodeRerrCode
+score (Rscore
+did (Rdid0
+ballPos (2.PRT_MUSHROOM_BALL_POSRballPos"0
+PRT_MUSHROOM_MERGE_BEGIN_REQ
+did (Rdid"7
+PRT_MUSHROOM_MERGE_BEGIN_RESP
+result (Rresult"v
+PRT_MUSHROOM_MERGE_END_REQ
+did (Rdid0
+ballPos (2.PRT_MUSHROOM_BALL_POSRballPos
+score (Rscore"5
+PRT_MUSHROOM_MERGE_END_RESP
+result (Rresult"3
+PRT_MUSHROOM_MERGE_TASK_TRC_REQ
+did (Rdid"4
+ PRT_MUSHROOM_MERGE_TASK_TRC_RESP
+did (Rdid"F
+PRT_MUSHROOM_TRAVEL_CELL_AWARD
+id (Rid
+award (	Raward"
+PRT_MUSHROOM_TRAVEL_INFO_REQ"?
+PRT_MUSHROOM_TRAVEL_INFO_RESP
+mapId (RmapId
+	plotCount (R	plotCount
+plotIds (RplotIds=
+	cellAward (2.PRT_MUSHROOM_TRAVEL_CELL_AWARDR	cellAward"?
+PRT_MUSHROOM_TRAVEL_LINE_AWARD
+lineId (RlineId 
+award (2
+.PRT_THINGRaward(
+	cellAward (2
+.PRT_THINGR	cellAward"N
+PRT_MUSHROOM_TRAVEL_DRAW_REQ
+type (Rtype
+beginIds (RbeginIds"?
+PRT_MUSHROOM_TRAVEL_DRAW_RESP=
+	lineAward (2.PRT_MUSHROOM_TRAVEL_LINE_AWARDR	lineAward
+	plotCount (R	plotCount=
+	cellAward (2.PRT_MUSHROOM_TRAVEL_CELL_AWARDR	cellAward"3
+PRT_MUSHROOM_TRAVEL_RESET_REQ
+type (Rtype"?
+PRT_MUSHROOM_TRAVEL_RESET_RESP
+mapId (RmapId
+type (Rtype
+count (Rcount=
+	cellAward (2.PRT_MUSHROOM_TRAVEL_CELL_AWARDR	cellAward"?
+%PRT_MUSHROOM_TRAVEL_PLOT_PROGRESS_REQ
+plotId (RplotId"b
+&PRT_MUSHROOM_TRAVEL_PLOT_PROGRESS_RESP
+plotId (RplotId 
+award (2
+.PRT_THINGRawardB
+com.next1b.nextsvr.protobproto3

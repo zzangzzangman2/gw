@@ -1,0 +1,18 @@
+local e=
+{
+ByIdx={
+{1020,"UICommonOther/skillicon_break_1020",1,1,968,300,0,0,0,0,0,"guideSoulsName_1"},
+{1120,"UICommonOther/skillicon_break_1120",1,2,1452,300,60,0,0,0,0,"guideSoulsName_1"},
+{1220,"UICommonOther/skillicon_break_1220",2,3,968,0,0,96,0,0,0,"guideSoulsName_2"},
+{1320,"UICommonOther/skillicon_break_1320",2,4,1452,0,0,176,0,0,0,"guideSoulsName_2"},
+{1420,"UICommonOther/skillicon_break_1420",3,5,968,0,0,0,192,0,0,"guideSoulsName_3"},
+{1520,"UICommonOther/skillicon_break_1520",3,6,1452,0,0,0,252,0,0,"guideSoulsName_3"},
+{1620,"UICommonOther/skillicon_break_1620",4,7,968,0,0,0,0,126,112,"guideSoulsName_4"},
+{1720,"UICommonOther/skillicon_break_1720",4,8,1452,0,0,0,0,175,155,"guideSoulsName_4"},
+{1820,"0",5,9,3497,0,0,0,0,0,0,""},
+{1920,"0",5,10,8712,0,0,0,0,0,0,""},
+{2020,"0",5,11,11616,0,0,0,0,0,0,""}
+},
+Len=11
+}
+return e 

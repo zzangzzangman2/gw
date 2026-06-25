@@ -1,0 +1,52 @@
+local t={}
+function t:OnHandle(e)
+local e=assert(GlobalPB.decode("PRT_PLAYER_INFO_RESP",e));
+if(GameInit.GetDebugLogProto())then
+;
+;
+end
+if e.vip==12 then
+LuaUtils.AdjustLogEvent("8j9rhv")
+elseif e.vip==11 then
+LuaUtils.AdjustLogEvent("vssa7b")
+elseif e.vip==10 then
+LuaUtils.AdjustLogEvent("hwd5wi")
+elseif e.vip==9 then
+LuaUtils.AdjustLogEvent("z2zpr2")
+elseif e.vip==8 then
+LuaUtils.AdjustLogEvent("9oqeqn")
+elseif e.vip==7 then
+LuaUtils.AdjustLogEvent("vdbum5")
+elseif e.vip==6 then
+LuaUtils.AdjustLogEvent("1zjqv2")
+elseif e.vip==5 then
+LuaUtils.AdjustLogEvent("1tes0v")
+elseif e.vip==4 then
+LuaUtils.AdjustLogEvent("unqgl7")
+elseif e.vip==3 then
+LuaUtils.AdjustLogEvent("3hro4c")
+elseif e.vip==2 then
+LuaUtils.AdjustLogEvent("oc8u7h")
+elseif e.vip==1 then
+LuaUtils.AdjustLogEvent("tdmv0g")
+elseif e.vip==0 then
+end
+PlayerMgr:PlayerInfoResp(e)
+if g_isNewCreate==false then
+local t="FIREBASE_KEY_CREATE_ID_"..e.uid
+local t=LuaUtils.GetPlayerPrefsBool(t,false)
+if t then
+local t="FIREBASE_KEY_LOGIN_ID_"..e.uid
+local a=LuaUtils.GetPlayerPrefsBool(t,false)
+if a==false then
+local e=e.createTime
+local e=PlayerMgr.loginTime-e
+if e/1000<5*3600 then
+GameTools.FirebaseEventById(2)
+end
+end
+LuaUtils.SetPlayerPrefsBool(t,true)
+end
+end
+end
+return t 

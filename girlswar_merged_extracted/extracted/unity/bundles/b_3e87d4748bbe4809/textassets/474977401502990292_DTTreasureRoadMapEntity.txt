@@ -1,0 +1,28 @@
+local e={id=0,type=0,parameter=0,probability={},isBig=0,cellBg=""}
+e.__index=e
+function e.New(a,i,o,h,s,n)
+local t={}
+setmetatable(t,e)
+t.id=a
+t.type=i
+t.parameter=o
+t.probability=h
+t.isBig=s
+t.cellBg=n
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.type=a[2]
+t.parameter=a[3]
+t.probability=a[4]
+t.isBig=a[5]
+t.cellBg=a[6]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/activity/DTTreasureRoadMapEntityTableData')
+end
+return e 

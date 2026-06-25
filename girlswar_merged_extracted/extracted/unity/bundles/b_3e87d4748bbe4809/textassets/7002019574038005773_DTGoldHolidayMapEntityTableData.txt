@@ -1,0 +1,32 @@
+local e=
+{
+ByIdx={
+{101,1,"假日祭1-1","mapgoldholidayname_101","mapgoldholidayname2_101",11005,255,255,255,3,"UILEliteAdventure/jyfb_fbk1","goldholiday_bdzs1",102,{{26803,1},{20018,10},{1002,50000}},2},
+{102,1,"假日祭1-2","mapgoldholidayname_102","mapgoldholidayname2_102",11005,255,255,255,4,"UILEliteAdventure/jyfb_fbk1","goldholiday_bdzs2",103,{{26803,1},{20018,10},{1002,50000}},2},
+{103,1,"假日祭1-3","mapgoldholidayname_103","mapgoldholidayname2_103",11005,255,255,255,5,"UILEliteAdventure/jyfb_fbk1","goldholiday_bdzs3",104,{{26803,1},{20018,10},{1002,50000}},2},
+{104,1,"假日祭1-4","mapgoldholidayname_104","mapgoldholidayname2_104",11005,255,255,255,6,"UILEliteAdventure/jyfb_fbk1","goldholiday_bdzs4",105,{{26803,1},{20018,10},{1002,50000}},2},
+{105,1,"假日祭1-5","mapgoldholidayname_105","mapgoldholidayname2_105",11004,255,255,255,7,"UILEliteAdventure/jyfb_fbk1","goldholiday_bdzs5",0,{{26803,5},{20018,50},{1002,100000}},2},
+{201,2,"假日祭2-1","mapgoldholidayname_201","mapgoldholidayname2_201",11005,255,255,255,3,"UILEliteAdventure/jyfb_fbk1","goldholiday_wzf1",202,{{26803,2},{20018,20},{1002,50000}},2},
+{202,2,"假日祭2-2","mapgoldholidayname_202","mapgoldholidayname2_202",11005,255,255,255,4,"UILEliteAdventure/jyfb_fbk1","goldholiday_wzf2",203,{{26803,2},{20018,20},{1002,50000}},2},
+{203,2,"假日祭2-3","mapgoldholidayname_203","mapgoldholidayname2_203",11005,255,255,255,5,"UILEliteAdventure/jyfb_fbk1","goldholiday_wzf3",204,{{26803,2},{20018,20},{1002,50000}},2},
+{204,2,"假日祭2-4","mapgoldholidayname_204","mapgoldholidayname2_204",11005,255,255,255,6,"UILEliteAdventure/jyfb_fbk1","goldholiday_wzf4",205,{{26803,2},{20018,20},{1002,50000}},2},
+{205,2,"假日祭2-5","mapgoldholidayname_205","mapgoldholidayname2_205",11004,255,255,255,7,"UILEliteAdventure/jyfb_fbk1","goldholiday_wzf5",0,{{26803,10},{20018,100},{1002,100000}},2},
+{301,3,"假日祭3-1","mapgoldholidayname_301","mapgoldholidayname2_301",11005,255,255,255,3,"UILEliteAdventure/jyfb_fbk1","goldholiday_ks1",302,{{26803,2},{20018,20},{1002,50000}},2},
+{302,3,"假日祭3-2","mapgoldholidayname_302","mapgoldholidayname2_302",11005,255,255,255,4,"UILEliteAdventure/jyfb_fbk1","goldholiday_ks2",303,{{26803,2},{20018,20},{1002,50000}},2},
+{303,3,"假日祭3-3","mapgoldholidayname_303","mapgoldholidayname2_303",11005,255,255,255,5,"UILEliteAdventure/jyfb_fbk1","goldholiday_ks3",304,{{26803,2},{20018,20},{1002,50000}},2},
+{304,3,"假日祭3-4","mapgoldholidayname_304","mapgoldholidayname2_304",11005,255,255,255,6,"UILEliteAdventure/jyfb_fbk1","goldholiday_ks4",305,{{26803,2},{20018,20},{1002,50000}},2},
+{305,3,"假日祭3-5","mapgoldholidayname_305","mapgoldholidayname2_305",11004,255,255,255,7,"UILEliteAdventure/jyfb_fbk1","goldholiday_ks5",0,{{26803,10},{20018,100},{1002,100000}},2},
+{401,4,"假日祭4-1","mapgoldholidayname_401","mapgoldholidayname2_401",11005,255,255,255,3,"UILEliteAdventure/jyfb_fbk1","goldholiday_zzl1",402,{{26803,3},{20019,10},{1002,50000}},2},
+{402,4,"假日祭4-2","mapgoldholidayname_402","mapgoldholidayname2_402",11005,255,255,255,4,"UILEliteAdventure/jyfb_fbk1","goldholiday_zzl2",403,{{26803,3},{20019,10},{1002,50000}},2},
+{403,4,"假日祭4-3","mapgoldholidayname_403","mapgoldholidayname2_403",11005,255,255,255,5,"UILEliteAdventure/jyfb_fbk1","goldholiday_zzl3",404,{{26803,3},{20019,10},{1002,50000}},2},
+{404,4,"假日祭4-4","mapgoldholidayname_404","mapgoldholidayname2_404",11005,255,255,255,6,"UILEliteAdventure/jyfb_fbk1","goldholiday_zzl4",405,{{26803,3},{20019,10},{1002,50000}},2},
+{405,4,"假日祭4-5","mapgoldholidayname_405","mapgoldholidayname2_405",11004,255,255,255,7,"UILEliteAdventure/jyfb_fbk1","goldholiday_zzl5",0,{{26803,15},{20019,30},{1002,100000}},2},
+{501,5,"假日祭5-1","mapgoldholidayname_501","mapgoldholidayname2_501",11005,255,255,255,3,"UILEliteAdventure/jyfb_fbk1","goldholiday_xzc1",502,{{26803,3},{20019,10},{1002,50000}},2},
+{502,5,"假日祭5-2","mapgoldholidayname_502","mapgoldholidayname2_502",11005,255,255,255,4,"UILEliteAdventure/jyfb_fbk1","goldholiday_xzc2",503,{{26803,3},{20019,10},{1002,50000}},2},
+{503,5,"假日祭5-3","mapgoldholidayname_503","mapgoldholidayname2_503",11005,255,255,255,5,"UILEliteAdventure/jyfb_fbk1","goldholiday_xzc3",504,{{26803,3},{20019,10},{1002,50000}},2},
+{504,5,"假日祭5-4","mapgoldholidayname_504","mapgoldholidayname2_504",11005,255,255,255,6,"UILEliteAdventure/jyfb_fbk1","goldholiday_xzc4",505,{{26803,3},{20019,10},{1002,50000}},2},
+{505,5,"假日祭5-5","mapgoldholidayname_505","mapgoldholidayname2_505",11004,255,255,255,7,"UILEliteAdventure/jyfb_fbk1","goldholiday_xzc5",0,{{26803,15},{20019,30},{1002,100000}},2}
+},
+Len=25
+}
+return e 

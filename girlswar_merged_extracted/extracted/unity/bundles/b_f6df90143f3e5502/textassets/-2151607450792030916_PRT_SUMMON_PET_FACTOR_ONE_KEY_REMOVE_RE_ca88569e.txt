@@ -1,0 +1,11 @@
+local t={}
+function t:OnHandle(e)
+local e=assert(GlobalPB.decode("PRT_SUMMON_PET_FACTOR_ONE_KEY_REMOVE_RESP",e));
+if(GameInit.GetDebugLogProto())then
+;
+;
+end
+SummonPetEquipMgr:OnRespSummonPetEquipFactorOneKeyRemove(e)
+return e
+end
+return t 

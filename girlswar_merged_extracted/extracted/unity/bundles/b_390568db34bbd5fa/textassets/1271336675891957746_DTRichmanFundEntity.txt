@@ -1,0 +1,26 @@
+local e={id=0,goods=0,award={},chargeAward={},chargeAwardShow={}}
+e.__index=e
+function e.New(o,n,a,s,i)
+local t={}
+setmetatable(t,e)
+t.id=o
+t.goods=n
+t.award=a
+t.chargeAward=s
+t.chargeAwardShow=i
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.goods=a[2]
+t.award=a[3]
+t.chargeAward=a[4]
+t.chargeAwardShow=a[5]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/calendar/DTRichmanFundEntityTableData')
+end
+return e 

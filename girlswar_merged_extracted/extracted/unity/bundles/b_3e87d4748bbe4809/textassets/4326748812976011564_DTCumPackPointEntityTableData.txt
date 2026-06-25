@@ -1,0 +1,12 @@
+local e=
+{
+ByIdx={
+{1,10,{{20004,6}},"UIActCumPackGift/czlb_tubiao1"},
+{2,20,{{1059,35}},"UIActCumPackGift/czlb_tubiao2"},
+{3,30,{{20321,45}},"UIActCumPackGift/czlb_tubiao3"},
+{4,45,{{10013,125}},"UIActCumPackGift/czlb_tubiao4"},
+{5,60,{{72000,11}},"UIActCumPackGift/czlb_tubiao5"}
+},
+Len=5
+}
+return e 

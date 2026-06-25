@@ -1,0 +1,28 @@
+local e={id=0,mapId=0,pos=0,posLink={},posName="",mapPrefab=0}
+e.__index=e
+function e.New(a,i,o,h,s,n)
+local t={}
+setmetatable(t,e)
+t.id=a
+t.mapId=i
+t.pos=o
+t.posLink=h
+t.posName=s
+t.mapPrefab=n
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.mapId=a[2]
+t.pos=a[3]
+t.posLink=a[4]
+t.posName=a[5]
+t.mapPrefab=a[6]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/guild/DTGreatBossMapEntityTableData')
+end
+return e 

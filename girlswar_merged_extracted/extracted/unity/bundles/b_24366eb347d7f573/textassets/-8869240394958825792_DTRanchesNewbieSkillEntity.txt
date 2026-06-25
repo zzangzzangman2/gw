@@ -1,0 +1,24 @@
+local e={id=0,skillStyle=0,effectStyle=0,effectLimit=0}
+e.__index=e
+function e.New(o,a,n,i)
+local t={}
+setmetatable(t,e)
+t.id=o
+t.skillStyle=a
+t.effectStyle=n
+t.effectLimit=i
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.skillStyle=a[2]
+t.effectStyle=a[3]
+t.effectLimit=a[4]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/herbs/DTRanchesNewbieSkillEntityTableData')
+end
+return e 

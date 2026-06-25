@@ -1,0 +1,26 @@
+
+?
+ActLuckyFood.protoActivity.proto"?
+PRT_LUCKY_FOOD_INFO$
+commFreeCount (RcommFreeCount*
+commNextFreeTime (RcommNextFreeTime"
+advFreeCount (RadvFreeCount(
+advNextFreeTime (RadvNextFreeTime"
+PRT_LUCKY_FOOD_REQ"[
+PRT_LUCKY_FOOD_RESP(
+info (2.PRT_LUCKY_FOOD_INFORinfo
+leftTime (RleftTime"?
+PRT_LUCKY_FOOD_DRAW_REQ+
+poolType (2.ENUM_POOL_TYPERpoolType
+	isTenDraw (R	isTenDraw&
+isCostCurrency (RisCostCurrency"`
+PRT_LUCKY_FOOD_DRAW_RESP
+awardStr (	RawardStr(
+info (2.PRT_LUCKY_FOOD_INFORinfo"L
+PRT_LUCKY_FOOD_COMPOSE_REQ
+cookDid (RcookDid
+count (Rcount"M
+PRT_LUCKY_FOOD_COMPOSE_RESP
+cookDid (RcookDid
+count (RcountB
+com.next1b.nextsvr.protobproto3

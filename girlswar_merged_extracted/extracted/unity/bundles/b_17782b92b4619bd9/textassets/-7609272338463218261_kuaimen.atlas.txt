@@ -1,0 +1,5 @@
+kuaimen.png
+size:128,128
+filter:Linear,Linear
+hei
+bounds:2,2,100,100

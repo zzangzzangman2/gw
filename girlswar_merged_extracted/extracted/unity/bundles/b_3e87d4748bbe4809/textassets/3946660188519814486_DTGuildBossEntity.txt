@@ -1,0 +1,34 @@
+local a={id=0,helpPoint=0,actPoint=0,helpRestor=0,actRestor=0,level1Unlock=0,level2Unlock=0,level3Unlock=0,level4Unlock=0}
+a.__index=a
+function a.New(i,h,n,t,d,l,r,s,o)
+local e={}
+setmetatable(e,a)
+e.id=i
+e.helpPoint=h
+e.actPoint=n
+e.helpRestor=t
+e.actRestor=d
+e.level1Unlock=l
+e.level2Unlock=r
+e.level3Unlock=s
+e.level4Unlock=o
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.helpPoint=t[2]
+e.actPoint=t[3]
+e.helpRestor=t[4]
+e.actRestor=t[5]
+e.level1Unlock=t[6]
+e.level2Unlock=t[7]
+e.level3Unlock=t[8]
+e.level4Unlock=t[9]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/activity/DTGuildBossEntityTableData')
+end
+return a 

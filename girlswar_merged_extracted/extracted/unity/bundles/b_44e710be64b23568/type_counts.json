@@ -1,0 +1,11 @@
+{
+  "Transform": 10,
+  "GameObject": 10,
+  "MonoBehaviour": 5,
+  "MonoScript": 4,
+  "Texture2D": 1,
+  "Material": 1,
+  "Sprite": 1,
+  "AssetBundle": 1,
+  "SpriteRenderer": 1
+}

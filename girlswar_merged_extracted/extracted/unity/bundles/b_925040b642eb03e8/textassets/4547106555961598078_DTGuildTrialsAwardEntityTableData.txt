@@ -1,0 +1,32 @@
+local e=
+{
+ByIdx={
+{1,"guildTrials_desc_22","guildTrials_desc_23",{{20766,10},{20765,40},{1031,5000}}},
+{2,"guildTrials_desc_22","guildTrials_desc_23",{{20766,10},{20765,60},{1031,7500}}},
+{3,"guildTrials_desc_22","guildTrials_desc_23",{{20766,15},{20765,80},{1031,10000}}},
+{4,"guildTrials_desc_22","guildTrials_desc_23",{{20766,15},{20765,100},{1031,12500}}},
+{5,"guildTrials_desc_22","guildTrials_desc_23",{{20766,20},{20765,120},{1031,15000}}},
+{6,"guildTrials_desc_22","guildTrials_desc_23",{{20766,20},{20765,140},{1031,17500}}},
+{7,"guildTrials_desc_22","guildTrials_desc_23",{{20766,25},{20765,160},{1031,20000}}},
+{8,"guildTrials_desc_22","guildTrials_desc_23",{{20766,25},{20765,180},{1031,22500}}},
+{9,"guildTrials_desc_22","guildTrials_desc_23",{{20766,30},{20765,200},{1031,25000}}},
+{10,"guildTrials_desc_22","guildTrials_desc_23",{{20766,30},{20765,220},{1031,27500}}},
+{11,"guildTrials_desc_22","guildTrials_desc_23",{{20766,35},{20765,240},{1031,30000}}},
+{12,"guildTrials_desc_22","guildTrials_desc_23",{{20766,35},{20765,260},{1031,32500}}},
+{13,"guildTrials_desc_22","guildTrials_desc_23",{{20766,40},{20765,280},{1031,35000}}},
+{14,"guildTrials_desc_22","guildTrials_desc_23",{{20766,40},{20765,300},{1031,37500}}},
+{15,"guildTrials_desc_22","guildTrials_desc_23",{{20766,50},{20765,320},{1031,40000}}},
+{16,"guildTrials_desc_22","guildTrials_desc_23",{{20766,50},{20765,340},{1031,42500}}},
+{17,"guildTrials_desc_22","guildTrials_desc_23",{{20766,50},{20765,360},{1031,45000}}},
+{18,"guildTrials_desc_22","guildTrials_desc_23",{{20766,50},{20765,380},{1031,47500}}},
+{19,"guildTrials_desc_22","guildTrials_desc_23",{{20766,50},{20765,400},{1031,50000}}},
+{20,"guildTrials_desc_22","guildTrials_desc_23",{{20766,50},{20765,420},{1031,52500}}},
+{21,"guildTrials_desc_22","guildTrials_desc_23",{{20766,50},{20765,440},{1031,55000}}},
+{22,"guildTrials_desc_22","guildTrials_desc_23",{{20766,50},{20765,460},{1031,57500}}},
+{23,"guildTrials_desc_22","guildTrials_desc_23",{{20766,50},{20765,480},{1031,60000}}},
+{24,"guildTrials_desc_22","guildTrials_desc_23",{{20766,50},{20765,500},{1031,62500}}},
+{25,"guildTrials_desc_22","guildTrials_desc_23",{{20766,50},{20765,520},{1031,65000}}}
+},
+Len=25
+}
+return e 

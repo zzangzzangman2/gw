@@ -1,0 +1,14 @@
+shmj_mjcaiduile.png
+size:1024,512
+filter:Linear,Linear
+a2
+bounds:2,2,356,93
+offsets:1,1,358,95
+dhw
+bounds:401,197,138,65
+offsets:1,1,140,67
+effect_1
+bounds:2,97,397,391
+zhuanguang
+bounds:401,264,216,224
+offsets:0,14,216,250

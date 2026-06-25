@@ -1,0 +1,37 @@
+
+?
+LostRuins.protoCommons.proto"
+PRT_LOSTRUINS_INFO_REQ"?
+PRT_LOSTRUINS_INFO_RESP 
+gifts (2
+.PRT_GOODSRgifts
+freeCD (RfreeCD
+isCharge (RisCharge 
+recFreeDids (RrecFreeDids$
+recChargeDids (RrecChargeDids$
+drawCostCount (RdrawCostCount*
+diamondDrawCount (RdiamondDrawCount",
+PRT_LOSTRUINS_DRAW_REQ
+type (Rtype"?
+PRT_LOSTRUINS_DRAW_RESP
+type (Rtype
+	boxDropId (R	boxDropId"
+boxDropCount (RboxDropCount"
+awards (2
+.PRT_THINGRawards$
+awards2 (2
+.PRT_THINGRawards2$
+drawCostCount (RdrawCostCount*
+diamondDrawCount (RdiamondDrawCount"R
+PRT_LOSTRUINS_FUND_AWARD_REQ
+fundId (RfundId
+isCharge (RisCharge"S
+PRT_LOSTRUINS_FUND_AWARD_RESP
+fundId (RfundId
+isCharge (RisCharge"=
+!PRT_LOSTRUINS_GIFT_FREE_AWARD_REQ
+giftDid (RgiftDid"D
+"PRT_LOSTRUINS_GIFT_FREE_AWARD_RESP
+gift (2
+.PRT_GOODSRgiftB
+com.next1b.nextsvr.protobproto3

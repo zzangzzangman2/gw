@@ -1,0 +1,8 @@
+activityname_1.png
+size:128,128
+filter:Linear,Linear
+a5
+bounds:2,2,25,25
+a6
+bounds:2,29,64,73
+offsets:1,0,65,73

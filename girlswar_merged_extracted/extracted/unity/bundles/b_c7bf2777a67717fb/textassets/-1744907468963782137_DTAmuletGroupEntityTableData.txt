@@ -1,0 +1,11 @@
+local e=
+{
+ByIdx={
+{1,20759,9007001,"amuletCamp_1","UIAmulet/hufu_xi_1"},
+{2,20760,9007002,"amuletCamp_2","UIAmulet/hufu_xi_2"},
+{3,20761,9007003,"amuletCamp_3","UIAmulet/hufu_xi_3"},
+{4,20762,9007004,"amuletCamp_4","UIAmulet/hufu_xi_4"}
+},
+Len=4
+}
+return e 

@@ -1,0 +1,92 @@
+
+?
+OverseasTradeShip.protoCommons.proto"?
+PRT_OVERSEAS_SHIP
+id (Rid&
+tradeStartTime (RtradeStartTime"
+tradeEndTime (RtradeEndTime
+position (Rposition
+award (RawardD
+
+awardChest (2$.PRT_OVERSEAS_TRADE_SHIP_AWARD_CHESTR
+awardChest"X
+PRT_OVERSEAS_PROCESS_TASK
+id (Rid+
+status (2.ENUM_REWARD_STATUSRstatus"G
+#PRT_OVERSEAS_TRADE_SHIP_AWARD_CHEST
+id (Rid
+num (Rnum""
+ PRT_OVERSEAS_TRADE_SHIP_INFO_REQ"?
+!PRT_OVERSEAS_TRADE_SHIP_INFO_RESP2
+
+tradeShips (2.PRT_OVERSEAS_SHIPR
+tradeShips
+
+tradeCount (R
+tradeCount
+taskIds (RtaskIdsF
+awardChests (2$.PRT_OVERSEAS_TRADE_SHIP_AWARD_CHESTRawardChests(
+unlockPositions (RunlockPositions"j
+$PRT_OVERSEAS_TRADE_SHIP_DISPATCH_REQ
+position (Rposition&
+oneKeyDispatch (RoneKeyDispatch"{
+%PRT_OVERSEAS_TRADE_SHIP_DISPATCH_RESP2
+
+tradeShips (2.PRT_OVERSEAS_SHIPR
+tradeShips
+
+tradeCount (R
+tradeCount"?
+#PRT_OVERSEAS_TRADE_SHIP_SPEEDUP_REQ
+position (Rposition$
+speedupItemId (RspeedupItemId&
+speedupItemNum (RspeedupItemNum"
+oneKeyFinish (RoneKeyFinish"?
+$PRT_OVERSEAS_TRADE_SHIP_SPEEDUP_RESP2
+
+tradeShips (2.PRT_OVERSEAS_SHIPR
+tradeShips&
+speedupItemNum (RspeedupItemNum"a
+!PRT_OVERSEAS_TRADE_SHIP_AWARD_REQ
+position (Rposition 
+oneKeyAward (RoneKeyAward"?
+"PRT_OVERSEAS_TRADE_SHIP_AWARD_RESP2
+
+tradeShips (2.PRT_OVERSEAS_SHIPR
+tradeShipsF
+awardChests (2$.PRT_OVERSEAS_TRADE_SHIP_AWARD_CHESTRawardChests"I
++PRT_OVERSEAS_TRADE_SHIP_UNLOCK_POSITION_REQ
+position (Rposition"X
+,PRT_OVERSEAS_TRADE_SHIP_UNLOCK_POSITION_RESP(
+unlockPositions (RunlockPositions"J
+&PRT_OVERSEAS_TRADE_SHIP_OPEN_CHEST_REQ
+id (Rid
+num (Rnum"?
+'PRT_OVERSEAS_TRADE_SHIP_OPEN_CHEST_RESP"
+awards (2
+.PRT_THINGRawardsF
+awardChests (2$.PRT_OVERSEAS_TRADE_SHIP_AWARD_CHESTRawardChests"M
+)PRT_OVERSEAS_TRADE_SHIP_COMPOSE_CHEST_REQ
+id (Rid
+num (Rnum"t
+*PRT_OVERSEAS_TRADE_SHIP_COMPOSE_CHEST_RESPF
+awardChests (2$.PRT_OVERSEAS_TRADE_SHIP_AWARD_CHESTRawardChests"+
+)PRT_OVERSEAS_TRADE_SHIP_PROCESS_AWARD_REQ"j
+*PRT_OVERSEAS_TRADE_SHIP_PROCESS_AWARD_RESP"
+awards (2
+.PRT_THINGRawards
+taskIds (RtaskIds"'
+%PRT_OVERSEAS_TRADE_SHIP_GIFT_INFO_REQ"?
+&PRT_OVERSEAS_TRADE_SHIP_GIFT_INFO_RESP 
+gifts (2
+.PRT_GOODSRgifts
+freeCD (RfreeCD.
+historyGifts (2
+.PRT_GOODSRhistoryGifts"V
+$PRT_OVERSEAS_TRADE_SHIP_GIFT_BUY_REQ
+giftDid (RgiftDid
+count (Rcount"G
+%PRT_OVERSEAS_TRADE_SHIP_GIFT_BUY_RESP
+gift (2
+.PRT_GOODSRgiftB
+com.next1b.nextsvr.protobproto3

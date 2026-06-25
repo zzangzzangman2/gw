@@ -1,0 +1,26 @@
+local e={id=0,award={},chargeAward={},chargeAwardShow={},goods=0}
+e.__index=e
+function e.New(o,n,a,s,i)
+local t={}
+setmetatable(t,e)
+t.id=o
+t.award=n
+t.chargeAward=a
+t.chargeAwardShow=s
+t.goods=i
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.award=a[2]
+t.chargeAward=a[3]
+t.chargeAwardShow=a[4]
+t.goods=a[5]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/activity/DTDiveExplorationFundEntityTableData')
+end
+return e 

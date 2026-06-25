@@ -1,0 +1,70 @@
+local a={id=0,hp=0,atk=0,def=0,critical=0,criticalRes=0,criticalStrength=0,block=0,blockRes=0,blockStrength=0,injure=0,injureRes=0,control=0,controlRes=0,blood=0,thorn=0,heal=0,ProfRes=0,ProfResed=0,eXSkillINjure=0,eXSkillINjureRes=0,skillTriggerRate=0,armor=0,fury=0,first=0,criticalStrengthRes=0,petDef=0}
+a.__index=a
+function a.New(l,y,f,t,g,b,p,v,q,z,j,E,_,x,T,k,w,h,s,n,o,i,r,u,d,m,c)
+local e={}
+setmetatable(e,a)
+e.id=l
+e.hp=y
+e.atk=f
+e.def=t
+e.critical=g
+e.criticalRes=b
+e.criticalStrength=p
+e.block=v
+e.blockRes=q
+e.blockStrength=z
+e.injure=j
+e.injureRes=E
+e.control=_
+e.controlRes=x
+e.blood=T
+e.thorn=k
+e.heal=w
+e.ProfRes=h
+e.ProfResed=s
+e.eXSkillINjure=n
+e.eXSkillINjureRes=o
+e.skillTriggerRate=i
+e.armor=r
+e.fury=u
+e.first=d
+e.criticalStrengthRes=m
+e.petDef=c
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.hp=t[2]
+e.atk=t[3]
+e.def=t[4]
+e.critical=t[5]
+e.criticalRes=t[6]
+e.criticalStrength=t[7]
+e.block=t[8]
+e.blockRes=t[9]
+e.blockStrength=t[10]
+e.injure=t[11]
+e.injureRes=t[12]
+e.control=t[13]
+e.controlRes=t[14]
+e.blood=t[15]
+e.thorn=t[16]
+e.heal=t[17]
+e.ProfRes=t[18]
+e.ProfResed=t[19]
+e.eXSkillINjure=t[20]
+e.eXSkillINjureRes=t[21]
+e.skillTriggerRate=t[22]
+e.armor=t[23]
+e.fury=t[24]
+e.first=t[25]
+e.criticalStrengthRes=t[26]
+e.petDef=t[27]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/monster/DTMonsterAttr_KEntityTableData')
+end
+return a 

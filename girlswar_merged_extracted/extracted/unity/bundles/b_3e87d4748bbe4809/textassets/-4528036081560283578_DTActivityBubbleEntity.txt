@@ -1,0 +1,26 @@
+local e={id=0,limit=0,chargeId=0,price={},item={{},{}}}
+e.__index=e
+function e.New(o,n,a,s,i)
+local t={}
+setmetatable(t,e)
+t.id=o
+t.limit=n
+t.chargeId=a
+t.price=s
+t.item=i
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.limit=a[2]
+t.chargeId=a[3]
+t.price=a[4]
+t.item=a[5]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/activity/DTActivityBubbleEntityTableData')
+end
+return e 

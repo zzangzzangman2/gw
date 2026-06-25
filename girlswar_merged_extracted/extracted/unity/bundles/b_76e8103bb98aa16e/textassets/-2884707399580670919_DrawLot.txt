@@ -1,0 +1,43 @@
+
+?	
+DrawLot.protoCommons.proto"?
+PRE_DRAWLOT_STAGE
+	startTime (R	startTime
+	closeTime (R	closeTime,
+openAwardSequence (RopenAwardSequence,
+selfAwardSequence (RselfAwardSequence
+recAward (RrecAward(
+matchAwardLevel (RmatchAwardLevel
+stage (Rstage 
+awardIsOpen (RawardIsOpen"d
+PRT_DRAWLOT_ACT_INFO
+curStage (RcurStage0
+	stageInfo (2.PRE_DRAWLOT_STAGER	stageInfo"
+PRT_DRAWLOT_ACT_INFO_REQ"F
+PRT_DRAWLOT_ACT_INFO_RESP)
+info (2.PRT_DRAWLOT_ACT_INFORinfo",
+PRT_DRAWLOT_DRAW_REQ
+stage (Rstage"[
+PRT_DRAWLOT_DRAW_RESP
+stage (Rstage,
+selfAwardSequence (RselfAwardSequence"1
+PRT_DRAWLOT_REC_AWARD_REQ
+stage (Rstage">
+PRT_DRAWLOT_REC_AWARD_RESP 
+award (2
+.PRT_THINGRaward"?
+PRT_DRAWLOT_BIG_AWARD
+playerId (RplayerId
+name (	Rname
+head (Rhead
+	headFrame (R	headFrame
+level (Rlevel
+serverId (RserverId"1
+PRT_DRAWLOT_BIG_AWARD_REQ
+stage (Rstage"X
+PRT_DRAWLOT_BIG_AWARD_RESP:
+bigAwardList (2.PRT_DRAWLOT_BIG_AWARDRbigAwardList"W
+#PRT_CS_DRAWLOT_UPDATE_BIG_AWARD_REQ
+stage (Rstage
+playerId (RplayerIdB
+com.next1b.nextsvr.protobproto3

@@ -1,0 +1,30 @@
+local t={id=0,urLockItem=0,ssrLockItem=0,srLockItem=0,freeTime=0,discount=0,heroIds={}}
+t.__index=t
+function t.New(o,h,a,s,r,n,i)
+local e={}
+setmetatable(e,t)
+e.id=o
+e.urLockItem=h
+e.ssrLockItem=a
+e.srLockItem=s
+e.freeTime=r
+e.discount=n
+e.heroIds=i
+return e
+end
+function t.NewFromArrItem(a)
+local e={}
+setmetatable(e,t)
+e.id=a[1]
+e.urLockItem=a[2]
+e.ssrLockItem=a[3]
+e.srLockItem=a[4]
+e.freeTime=a[5]
+e.discount=a[6]
+e.heroIds=a[7]
+return e
+end
+function t.GetArr()
+return require('DataNode/DataTable/Create/activity/DTHeroResetEntityTableData')
+end
+return t 

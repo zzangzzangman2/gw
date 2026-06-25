@@ -1,0 +1,24 @@
+local e={id=0,mapsId="",startStage={},endStage={}}
+e.__index=e
+function e.New(o,a,n,i)
+local t={}
+setmetatable(t,e)
+t.id=o
+t.mapsId=a
+t.startStage=n
+t.endStage=i
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.mapsId=a[2]
+t.startStage=a[3]
+t.endStage=a[4]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/maps/DTRealmMapsEntityTableData')
+end
+return e 

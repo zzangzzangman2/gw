@@ -1,0 +1,27 @@
+local e=
+{
+ByIdx={
+{"HitArea_GameSpider",1},
+{"HitArea_GameMosquito",2},
+{"HitArea_Spider",3},
+{"HitArea_Mosquito",4},
+{"HitArea_Breast",5},
+{"HitArea_Gun",6},
+{"HitArea_Trigone",7},
+{"HitArea_Hand3",8},
+{"HitArea_Hand",9},
+{"HitArea_Hat",10},
+{"HitArea_RabbitEar",11},
+{"HitArea_Head",12},
+{"HitArea_Butt",13},
+{"HitArea_Tail",14},
+{"HitArea_LegL",15},
+{"HitArea_LegR",16},
+{"HitArea_BackTie",17},
+{"HitArea_ButtTie",18},
+{"HitArea_Blower",19},
+{"HitArea_FileBox",20}
+},
+Len=20
+}
+return e 

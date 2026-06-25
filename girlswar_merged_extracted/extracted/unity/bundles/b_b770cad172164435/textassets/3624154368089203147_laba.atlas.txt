@@ -1,0 +1,10 @@
+laba.png
+size:64,32
+filter:Linear,Linear
+1
+bounds:0,2,24,36
+rotate:90
+2
+bounds:52,11,10,15
+3
+bounds:37,0,14,26

@@ -1,0 +1,30 @@
+local t={id=0,prefabId=0,profileLevel=0,sceneBgId=0,dialogueGroup=0,scaleSize=0,progressivePainting=""}
+t.__index=t
+function t.New(o,h,a,s,r,n,i)
+local e={}
+setmetatable(e,t)
+e.id=o
+e.prefabId=h
+e.profileLevel=a
+e.sceneBgId=s
+e.dialogueGroup=r
+e.scaleSize=n
+e.progressivePainting=i
+return e
+end
+function t.NewFromArrItem(a)
+local e={}
+setmetatable(e,t)
+e.id=a[1]
+e.prefabId=a[2]
+e.profileLevel=a[3]
+e.sceneBgId=a[4]
+e.dialogueGroup=a[5]
+e.scaleSize=a[6]
+e.progressivePainting=a[7]
+return e
+end
+function t.GetArr()
+return require('DataNode/DataTable/Create/activity/DTFishJumpChapterEntityTableData')
+end
+return t 

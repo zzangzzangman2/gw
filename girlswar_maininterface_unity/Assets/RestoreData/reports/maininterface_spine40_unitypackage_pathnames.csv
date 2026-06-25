@@ -1,0 +1,647 @@
+﻿package_entry,pathname,kind
+30918bcaadaaecc42bc215ff52f75b21/pathname,Assets/Spine,spine_runtime
+e6712a5a0c05f9f4092f9a3197925e99/pathname,Assets/Spine Examples,example
+fb68fe44ae68d834b8be5d854b2b402e/pathname,Assets/Spine Examples/Getting Started,example
+fff6e9ad77d93024a9a87f6f2c0a6b3e/pathname,Assets/Spine Examples/Getting Started/1 The Spine GameObject.unity,example
+5c66a9c1bbf922d4ab082694f19536c7/pathname,Assets/Spine Examples/Getting Started/2 Controlling Animation.unity,example
+8059cdefcf15d4d428dfdb3201149e2d/pathname,Assets/Spine Examples/Getting Started/3 Controlling Animation Continued.unity,example
+47344a855c1c167499dbb9bf28d1368b/pathname,Assets/Spine Examples/Getting Started/4 Object Oriented Sample.unity,example
+c0218f9f0a3cc144698dca06a3f59668/pathname,Assets/Spine Examples/Getting Started/5 Basic Platformer.unity,example
+fa77f7a2c74add54eb0eb29f88e080dc/pathname,Assets/Spine Examples/Getting Started/6 SkeletonGraphic.unity,example
+9c09abf60fa8f05459511e7962b1312c/pathname,Assets/Spine Examples/Images,example
+de1fb4dac677a6d45ae2ad12a49091c0/pathname,Assets/Spine Examples/Images/outline-shaders-heading.png,example
+d6add8776a2fe514e84cf5b4f2c0b548/pathname,Assets/Spine Examples/Other Examples,example
+173cd2c662ebd674f994bff2385cfbf6/pathname,Assets/Spine Examples/Other Examples/Animation Tester,example
+b804088948820194cbda76af39c08174/pathname,Assets/Spine Examples/Other Examples/Animation Tester/Animation Tester.unity,example
+b99b2d8e59226fa4db070f241259fd98/pathname,Assets/Spine Examples/Other Examples/Animation Tester/SpineAnimationTesterTool.cs,csharp
+63212ccaf5776bd489cba58fb67a2233/pathname,Assets/Spine Examples/Other Examples/AtlasRegionAttacher.unity,example
+0a9f938ebd96eda46b25875547a2c188/pathname,Assets/Spine Examples/Other Examples/BlendModes.unity,example
+261ab31a787f69142bbfb6027465aaea/pathname,Assets/Spine Examples/Other Examples/Drunkboy.unity,example
+48557e58ca94ae740bdbcf7cca4f1cb3/pathname,Assets/Spine Examples/Other Examples/FixedTimestepUpdates.unity,example
+abf5f8c4fc1d6ff429f00b34381c5b5a/pathname,Assets/Spine Examples/Other Examples/Freezeboy.unity,example
+e2d0070263bf7e143b12963d5c0de179/pathname,Assets/Spine Examples/Other Examples/Goblins.unity,example
+59dc5776e19e2f041b1cac961a86924f/pathname,Assets/Spine Examples/Other Examples/Instantiate from Script.unity,example
+cf0d5fcb47d4f4f4ba66cee37fa6b1ff/pathname,Assets/Spine Examples/Other Examples/Mix and Match Equip Assets,example
+29c2d64b97744934bb20199d1de50ced/pathname,Assets/Spine Examples/Other Examples/Mix and Match Equip Assets/Goggles Normal.asset,example
+518292925164b9849b22d3ab5c86de18/pathname,Assets/Spine Examples/Other Examples/Mix and Match Equip Assets/Goggles Tactical.asset,example
+6575c7c4145c1714f80c46f0652c5e71/pathname,Assets/Spine Examples/Other Examples/Mix and Match Equip Assets/Gun Freeze.asset,example
+2459ef647c5bf504fa6d15c3285b1687/pathname,Assets/Spine Examples/Other Examples/Mix and Match Equip Assets/Gun Normal.asset,example
+689b97bc3d1902b4aa860f704e2c6112/pathname,Assets/Spine Examples/Other Examples/Mix and Match Equip.unity,example
+af3bca1819847fb46b46f8196526c285/pathname,Assets/Spine Examples/Other Examples/Mix and Match Skins.unity,example
+9b55bcfc2181c68418e59ee61ef5afc9/pathname,Assets/Spine Examples/Other Examples/Mix and Match.unity,example
+1119a9b52a74de2469d4b8fa5feb4c83/pathname,Assets/Spine Examples/Other Examples/Outline Shaders.unity,example
+9b570698c6e11804e976b1fd16c8793f/pathname,Assets/Spine Examples/Other Examples/Per Instance Material Properties.unity,example
+28687d6c4c7e84e48a6907ea466198f9/pathname,Assets/Spine Examples/Other Examples/RenderTexture FadeOut Transparency.unity,example
+235842830be28644eb5bec81483907de/pathname,Assets/Spine Examples/Other Examples/SkeletonAnimationMulti.unity,example
+65ea82f2322d63247a1ee886ef3ba820/pathname,Assets/Spine Examples/Other Examples/SkeletonRenderSeparator.unity,example
+a0deee17ee93fb047a1b70bc302c4dd6/pathname,Assets/Spine Examples/Other Examples/SkeletonUtility Animated Physics.unity,example
+51036c61bd222d9469b4e94cc89cceae/pathname,Assets/Spine Examples/Other Examples/SkeletonUtility Eyes.unity,example
+c7f661c0d47f631438d4608f740c4922/pathname,Assets/Spine Examples/Other Examples/SkeletonUtility GroundConstraint.unity,example
+215ee35c3c4c6f24a918378a3eb209e2/pathname,Assets/Spine Examples/Other Examples/SkeletonUtility Platformer HingeChain Physics.unity,example
+031930e4cebf68345b71c664bfa622cf/pathname,Assets/Spine Examples/Other Examples/SkeletonUtility Ragdoll.unity,example
+b9ae310595c646944a1268f51fb389a4/pathname,Assets/Spine Examples/Other Examples/SpineGauge.unity,example
+0862248ab668ce749845b0d7de5c6355/pathname,Assets/Spine Examples/Other Examples/Sprite Shaders.unity,example
+67f5d13210e654b4f89385bb61a0c96b/pathname,Assets/Spine Examples/Other Examples/SpriteMask and RectMask2D.unity,example
+4766fcfd6167d2e46aad772ce3bc898c/pathname,Assets/Spine Examples/Other Examples/StateMachine SkeletonAnimation,example
+cec34498f2eb26b488452ec274c54439/pathname,Assets/Spine Examples/Other Examples/StateMachine SkeletonAnimation/Hero Logic StateMachine.controller,example
+1fba3cdaf99163b4cb14533eb6bd9b2a/pathname,Assets/Spine Examples/Other Examples/StateMachine SkeletonAnimation/Mecanim Logic SkeletonAnimation View.unity,example
+d2cf975fd2ba8ae4ba3eebbd9b5f6df4/pathname,Assets/Spine Examples/Other Examples/VertexEffect.unity,example
+faf8f756f527b6145aeb411ed90f6619/pathname,Assets/Spine Examples/Scripts,example
+7eab8e63d650dc74c80d142cd4b9fe4b/pathname,Assets/Spine Examples/Scripts/AttackSpineboy.cs,csharp
+ac0a69923492d1b4aa7ca656033ec6a3/pathname,Assets/Spine Examples/Scripts/DraggableTransform.cs,csharp
+3c826b50b0cfee343be3bdbbf59d0f7c/pathname,Assets/Spine Examples/Scripts/FootSoldierExample.cs,csharp
+a34eef132f2b4da45aa8023dbe5934e7/pathname,Assets/Spine Examples/Scripts/Getting Started Scripts,example
+27b3e3370f55c0a438ef0a10c2eba510/pathname,Assets/Spine Examples/Scripts/Getting Started Scripts/BasicPlatformerController.cs,csharp
+6df2d8b571e22504284108b691b4a3cd/pathname,Assets/Spine Examples/Scripts/Getting Started Scripts/ConstrainedCamera.cs,csharp
+8b0d38dc0b91fb443a41838d475ae49b/pathname,Assets/Spine Examples/Scripts/Getting Started Scripts/Raptor.cs,csharp
+a57fe3aaf2b1f964182d90c5546754d1/pathname,Assets/Spine Examples/Scripts/Getting Started Scripts/SpineBeginnerTwo.cs,csharp
+5a5ef44bf3e0d864794c0da71c84363d/pathname,Assets/Spine Examples/Scripts/Getting Started Scripts/SpineBlinkPlayer.cs,csharp
+8f685123e0610c347a7b2c03c8a19535/pathname,Assets/Spine Examples/Scripts/Getting Started Scripts/SpineboyBeginnerInput.cs,csharp
+f999dde27e9711a45b0ee1b0d25217ec/pathname,Assets/Spine Examples/Scripts/Getting Started Scripts/SpineboyBeginnerModel.cs,csharp
+b59f510ae90fd1a419f19ed805e6e229/pathname,Assets/Spine Examples/Scripts/Getting Started Scripts/SpineboyBeginnerView.cs,csharp
+af275876c7b01264b85161629a9bc217/pathname,Assets/Spine Examples/Scripts/Getting Started Scripts/SpineboyTargetController.cs,csharp
+69a52bf79b7e78e4cb1dfd2d2e698c2d/pathname,Assets/Spine Examples/Scripts/Getting Started Scripts/TransitionDictionaryExample.cs,csharp
+40a82af6554a7594f9ffa9ac8dde212f/pathname,Assets/Spine Examples/Scripts/Goblins.cs,csharp
+1d55a3bd6ac81af44b2f9a4447f2ae72/pathname,Assets/Spine Examples/Scripts/HandleEventWithAudioExample.cs,csharp
+8a0f8a82c5d8a334db6996478778b892/pathname,Assets/Spine Examples/Scripts/HeroEffectsHandlerExample.cs,csharp
+395f769061839bf488f157c37d23835d/pathname,Assets/Spine Examples/Scripts/HurtFlashEffect.cs,csharp
+0456e5bde0b34594782f280f40128902/pathname,Assets/Spine Examples/Scripts/MaterialPropertyBlockExample.cs,csharp
+62982591830b87b45a3f6efd3ee82630/pathname,Assets/Spine Examples/Scripts/MaterialReplacementExample.cs,csharp
+deef60f3c6fd9ae45b2c4dfcac0706f1/pathname,Assets/Spine Examples/Scripts/Mecanim as Logic,example
+782062825deffd64ba7e7e9f978788e5/pathname,Assets/Spine Examples/Scripts/Mecanim as Logic/DummyMecanimControllerExample.cs,csharp
+16f3a0143bc0dbc4793717b6d2ff94a2/pathname,Assets/Spine Examples/Scripts/Mecanim as Logic/MecanimToAnimationHandleExample.cs,csharp
+dd8d49de34fd0724ca8c1ae3c44afe59/pathname,Assets/Spine Examples/Scripts/Mecanim as Logic/SkeletonAnimationHandleExample.cs,csharp
+bdfae2bc4b385b84eb4f5f6855d0f991/pathname,Assets/Spine Examples/Scripts/MecanimAnimationMatchModifier,example
+df7d457928e0f4041a439f9847f72290/pathname,Assets/Spine Examples/Scripts/MecanimAnimationMatchModifier/AnimationMatchModifierAsset.cs,csharp
+b4436c0c78cc5ee469089ed864f4e1ea/pathname,Assets/Spine Examples/Scripts/MecanimAnimationMatchModifier/AnimationMatchModifierAsset.txt,example
+8623082208cae724e88314ec951691e1/pathname,Assets/Spine Examples/Scripts/MecanimAnimationMatchModifier/Default Match All Animations.asset,example
+39dcbd139c9316f46919f47f9706ca79/pathname,Assets/Spine Examples/Scripts/Mix and Match Character Customize,example
+dcf21dc1875a05044835c5a6c969bda4/pathname,Assets/Spine Examples/Scripts/Mix and Match Character Customize/EquipAssetExample.cs,csharp
+d818155d239e98d46bb41e307ba270d4/pathname,Assets/Spine Examples/Scripts/Mix and Match Character Customize/EquipButtonExample.cs,csharp
+5732385e4912c444dae078ddc7d04c89/pathname,Assets/Spine Examples/Scripts/Mix and Match Character Customize/EquipsVisualsComponentExample.cs,csharp
+6159005f7c3d5fd4ba33cff41eae5531/pathname,Assets/Spine Examples/Scripts/Mix and Match Character Customize/EquipSystemExample.cs,csharp
+c32a308f5ae4c534991805c82c575058/pathname,Assets/Spine Examples/Scripts/Mix and Match Character Customize/MixAndMatchSkinsButtonExample.cs,csharp
+b5a66492fdefc494b8399943a0f9b250/pathname,Assets/Spine Examples/Scripts/Mix and Match Character Customize/MixAndMatchSkinsExample.cs,csharp
+fdd7c8b428f700c438a6a14addca0346/pathname,Assets/Spine Examples/Scripts/MixAndMatch.cs,csharp
+8e24c5293ec0b444eba7a2680caa925f/pathname,Assets/Spine Examples/Scripts/MixAndMatchGraphic.cs,csharp
+849a7739a7df0754882fcb34c09df4c1/pathname,Assets/Spine Examples/Scripts/RaggedySpineboy.cs,csharp
+d655607dd16c7f644a73bd10fc7370b1/pathname,Assets/Spine Examples/Scripts/ReloadSceneOnKeyDown.cs,csharp
+a4cc2b5fcffcac846aacb02b6dad0440/pathname,Assets/Spine Examples/Scripts/RenderTextureFadeoutExample.cs,csharp
+12e291cb54756d04c9dd53ad6e00a126/pathname,Assets/Spine Examples/Scripts/Rotator.cs,csharp
+bb0837af7345d504db63d0c662fd12dc/pathname,Assets/Spine Examples/Scripts/RuntimeLoadFromExportsExample.cs,csharp
+037ce88b9252fd241bd99d71721d9205/pathname,Assets/Spine Examples/Scripts/Sample Components,example
+61e6f96a4b02648479575d8b9127f5ed/pathname,Assets/Spine Examples/Scripts/Sample Components/BoneLocalOverride.cs,csharp
+e864d2963143ec04eb4f905e6add115e/pathname,Assets/Spine Examples/Scripts/Sample Components/CombinedSkin.cs,csharp
+13193c9d213765f4c85f4c1faa615711/pathname,Assets/Spine Examples/Scripts/Sample Components/Ghost,example
+a0cee0de78cef7440ae0b5aac39ae971/pathname,Assets/Spine Examples/Scripts/Sample Components/Ghost/Shaders,example
+3873d4699ee8a4b4da8fa6b8c229b94d/pathname,Assets/Spine Examples/Scripts/Sample Components/Ghost/Shaders/Spine-Special-Skeleton-Ghost.shader,shader
+02f2fa991881c6d419500ccc40ad443f/pathname,Assets/Spine Examples/Scripts/Sample Components/Ghost/SkeletonGhost.cs,csharp
+58e3a9b80754b7545a1dff4d8475b51f/pathname,Assets/Spine Examples/Scripts/Sample Components/Ghost/SkeletonGhostRenderer.cs,csharp
+d8033179a12443e4eaef33b35fed074c/pathname,Assets/Spine Examples/Scripts/Sample Components/Legacy,example
+afde57cc4fd39bb4dbd61b73403ae6a8/pathname,Assets/Spine Examples/Scripts/Sample Components/Legacy/AtlasRegionAttacher.cs,csharp
+2ee7b5e36685e2445a0097de42940987/pathname,Assets/Spine Examples/Scripts/Sample Components/Legacy/SpriteAttacher.cs,csharp
+78ceaa27e3b3c27498dcdd7729ebad83/pathname,Assets/Spine Examples/Scripts/Sample Components/OutlineSkeletonGraphic.cs,csharp
+bbb58643468d3dc479e20aff7c8c611e/pathname,Assets/Spine Examples/Scripts/Sample Components/RenderExistingMesh.cs,csharp
+e47cc991328826946a8c4efdd1885bf2/pathname,Assets/Spine Examples/Scripts/Sample Components/RootMotionDeltaCompensation.cs,csharp
+a1a4a1f889c97e84db5e1ef512f77f3e/pathname,Assets/Spine Examples/Scripts/Sample Components/Sample VertexEffects,example
+8b9ca76eac8062f42b99bbf78e777ee1/pathname,Assets/Spine Examples/Scripts/Sample Components/Sample VertexEffects/JitterEffectExample.cs,csharp
+8afb2340fbd3fe14f9f4e07cba073e17/pathname,Assets/Spine Examples/Scripts/Sample Components/Sample VertexEffects/TwoByTwoTransformEffectExample.cs,csharp
+0710ab226a06cfa4689c784fbd9d1753/pathname,Assets/Spine Examples/Scripts/Sample Components/SetRigidbodySolverIterations.cs,csharp
+e1670ee04b19c794db301d734c71bdd6/pathname,Assets/Spine Examples/Scripts/Sample Components/SkeletonAnimationFixedTimestep.cs,csharp
+1258037ca4297c7428842419a266f7a4/pathname,Assets/Spine Examples/Scripts/Sample Components/SkeletonAnimationMulti,example
+a5ea35d82fb1b5d4583e89b4343976b6/pathname,Assets/Spine Examples/Scripts/Sample Components/SkeletonAnimationMulti/SkeletonAnimationMulti.cs,csharp
+7e3501002f468384b80d5853d04e19ca/pathname,Assets/Spine Examples/Scripts/Sample Components/SkeletonColorInitialize.cs,csharp
+dbeb0b9949e46754eb0e0b61021b4f1c/pathname,Assets/Spine Examples/Scripts/Sample Components/SkeletonGraphicMirror.cs,csharp
+243a062ac84ddf2468989143c0500a95/pathname,Assets/Spine Examples/Scripts/Sample Components/SkeletonGraphicPlayAnimationAtEvent.cs,csharp
+1b5dc12395d030642b857afc9dff2ae2/pathname,Assets/Spine Examples/Scripts/Sample Components/SkeletonRenderTexture,example
+4c507f887c6274a44a603d96e0eabf2a/pathname,Assets/Spine Examples/Scripts/Sample Components/SkeletonRenderTexture/RenderQuadMaterial.mat,material
+1e0cc951f440af74dacaf86ac4ae2602/pathname,Assets/Spine Examples/Scripts/Sample Components/SkeletonRenderTexture/RenderQuadShader.shader,shader
+25e6ceb271c9af848ae53f2af1073d0d/pathname,Assets/Spine Examples/Scripts/Sample Components/SkeletonRenderTexture/SkeletonRenderTexture.cs,csharp
+5fc94f89310427643babb41e000a8462/pathname,Assets/Spine Examples/Scripts/Sample Components/SkeletonRenderTexture/SkeletonRenderTextureFadeout.cs,csharp
+d81fbd54cb5cab844900eaa11c48a907/pathname,Assets/Spine Examples/Scripts/Sample Components/SkeletonUtility Modules,example
+c2b000c4fc21b39418c2b27dd66e237f/pathname,Assets/Spine Examples/Scripts/Sample Components/SkeletonUtility Modules/Editor,example
+b6dd0b99faf3aeb4d803eb9989cb369c/pathname,Assets/Spine Examples/Scripts/Sample Components/SkeletonUtility Modules/Editor/SkeletonRagdoll2DInspector.cs,csharp
+c95a670c56447c644a0f062e4cdd448e/pathname,Assets/Spine Examples/Scripts/Sample Components/SkeletonUtility Modules/Editor/SkeletonRagdollInspector.cs,csharp
+39599136c72c0b64b925d3ff2885aecb/pathname,Assets/Spine Examples/Scripts/Sample Components/SkeletonUtility Modules/Editor/spine-unity-examples-editor.asmdef,assembly_definition
+373527d2bf3351348b9fcc499ce9ea23/pathname,Assets/Spine Examples/Scripts/Sample Components/SkeletonUtility Modules/SkeletonRagdoll.cs,csharp
+e74a49a26242a214d9084fde00bfe3ab/pathname,Assets/Spine Examples/Scripts/Sample Components/SkeletonUtility Modules/SkeletonRagdoll2D.cs,csharp
+0d994c65b6daec64f80ae2ae04e9d999/pathname,Assets/Spine Examples/Scripts/Sample Components/SkeletonUtility Modules/SkeletonUtilityEyeConstraint.cs,csharp
+3662334b99de5fe4396ab24e30c4fd12/pathname,Assets/Spine Examples/Scripts/Sample Components/SkeletonUtility Modules/SkeletonUtilityGroundConstraint.cs,csharp
+cfeac06b8a6aa1645813700e3e4c0863/pathname,Assets/Spine Examples/Scripts/Sample Components/SkeletonUtility Modules/SkeletonUtilityKinematicShadow.cs,csharp
+49a62759c814e7a458b9026d504e0898/pathname,Assets/Spine Examples/Scripts/Sample Components/SlotTintBlackFollower.cs,csharp
+90293750f472d3340b452cec6fea2606/pathname,Assets/Spine Examples/Scripts/Sample Components/SpineEventUnityHandler.cs,csharp
+7193e2e00836b124191dcae19e6c9741/pathname,Assets/Spine Examples/Scripts/SpawnFromSkeletonDataExample.cs,csharp
+dd4ba29b300e5cc408471ea14fa3551a/pathname,Assets/Spine Examples/Scripts/SpawnSkeletonGraphicExample.cs,csharp
+f73aeaeed67fd5446ae964e07ef7e7e7/pathname,Assets/Spine Examples/Scripts/Spineboy.cs,csharp
+7e5835d0f54ec08459236279886bfa66/pathname,Assets/Spine Examples/Scripts/SpineboyBodyTilt.cs,csharp
+9d25b0011a425714fbf011e46794c140/pathname,Assets/Spine Examples/Scripts/SpineboyFacialExpression.cs,csharp
+890d2c67cc206cd4e8a426391c4ccbba/pathname,Assets/Spine Examples/Scripts/SpineboyFootplanter.cs,csharp
+87a868f5b5bdfef4e89c36f8368d7f39/pathname,Assets/Spine Examples/Scripts/SpineboyFreeze.cs,csharp
+66b573446c3300f45b950b243338b97c/pathname,Assets/Spine Examples/Scripts/SpineboyPole.cs,csharp
+d6bb29eb283767441a398ce2a7be27c3/pathname,Assets/Spine Examples/Scripts/SpineboyPoleGraphic.cs,csharp
+c888ce38da699d143a68153f26379a37/pathname,Assets/Spine Examples/Scripts/SpineGauge.cs,csharp
+ab51e7c76aeecdb4cab94e4cad31b50f/pathname,Assets/Spine Examples/Sound,example
+e885484e1bc99fb47a0ac3f6bfa586b1/pathname,Assets/Spine Examples/Sound/Footstep.ogg,example
+532e417ffa3f95747908419a00be3780/pathname,Assets/Spine Examples/Sound/Hardfall.ogg,example
+51f0c54706b53c14c9c24bbd63bb18a6/pathname,Assets/Spine Examples/Sound/Jump.ogg,example
+e986056f914f4974896a49527ca80041/pathname,Assets/Spine Examples/Sound/Spineboygun.ogg,example
+953a9308be1797d43b7a6863ba2242d8/pathname,Assets/Spine Examples/Spine Skeletons,example
+8bf38627132b0bc4c9a5824b876167f6/pathname,Assets/Spine Examples/Spine Skeletons/Dragon,example
+40ca8efa87a2fae4a9de6fa585dc6b4b/pathname,Assets/Spine Examples/Spine Skeletons/Dragon/dragon.atlas.txt,example
+95c98e245823e2243a1d8e7a1ef16c51/pathname,Assets/Spine Examples/Spine Skeletons/Dragon/dragon.json,example
+6bc52290ef03f2846ba38d67e2823598/pathname,Assets/Spine Examples/Spine Skeletons/Dragon/dragon.png,example
+12c126994123f12468cf4c5a2684078a/pathname,Assets/Spine Examples/Spine Skeletons/Dragon/dragon2.png,example
+6f86779b1deba7c4aaec1f5895510b57/pathname,Assets/Spine Examples/Spine Skeletons/Dragon/dragon_Atlas.asset,example
+3277fd5561d95724e83c6ca4a1dd28a4/pathname,Assets/Spine Examples/Spine Skeletons/Dragon/dragon_dragon.mat,material
+d58543c96f991934ca874395eb40222c/pathname,Assets/Spine Examples/Spine Skeletons/Dragon/dragon_dragon2.mat,material
+76506fa7fbeed084ab2dfb084648c628/pathname,Assets/Spine Examples/Spine Skeletons/Dragon/dragon_SkeletonData.asset,example
+da573df32ef2f02438ea15f92f44ac01/pathname,Assets/Spine Examples/Spine Skeletons/Dragon/license.txt,example
+d85018bfbaa1a484bb36432eb063bdb8/pathname,Assets/Spine Examples/Spine Skeletons/Eyes,example
+d2899150110e7384badaef80d9f784ee/pathname,Assets/Spine Examples/Spine Skeletons/Eyes/eyes.atlas.txt,example
+deb987fe02427834d9959416f01385fe/pathname,Assets/Spine Examples/Spine Skeletons/Eyes/eyes.json,example
+49441e5a1682e564694545bd9b509785/pathname,Assets/Spine Examples/Spine Skeletons/Eyes/eyes.png,example
+dcae7523c93690f4c80520308eced1e2/pathname,Assets/Spine Examples/Spine Skeletons/Eyes/eyes_Atlas.asset,example
+4f9d106a1e4d45b468b980311947a225/pathname,Assets/Spine Examples/Spine Skeletons/Eyes/eyes_Material.mat,material
+ef2f009a37ff7ff42bc2a2f407ca9483/pathname,Assets/Spine Examples/Spine Skeletons/Eyes/eyes_SkeletonData.asset,example
+7a709e690449c1b40b198bb86f707c41/pathname,Assets/Spine Examples/Spine Skeletons/FootSoldier,example
+e90f1603e5c99c745a28d42e61afe5b2/pathname,Assets/Spine Examples/Spine Skeletons/FootSoldier/Equipment,example
+4f0639ff8bc42314d8d62ee0f7ba541f/pathname,Assets/Spine Examples/Spine Skeletons/FootSoldier/Equipment/Equipment.atlas.txt,example
+ddb89f63d0296cf4f8572b0448bb6b30/pathname,Assets/Spine Examples/Spine Skeletons/FootSoldier/Equipment/Equipment.png,example
+c574489dd067c2b4cb4dc165a4c410cc/pathname,Assets/Spine Examples/Spine Skeletons/FootSoldier/Equipment/Equipment_Atlas.asset,example
+e6e388faa521c96449984cfa4b60d74e/pathname,Assets/Spine Examples/Spine Skeletons/FootSoldier/Equipment/Equipment_Material.mat,material
+b075ad1d14f5db64b941d266e53de57d/pathname,Assets/Spine Examples/Spine Skeletons/FootSoldier/FootSoldier.json,example
+e57cdb51287d3924ebb2ececf816733b/pathname,Assets/Spine Examples/Spine Skeletons/FootSoldier/FootSoldier_SkeletonData.asset,example
+5ca7c05342912804eb0a2fd5bbe85b58/pathname,Assets/Spine Examples/Spine Skeletons/FootSoldier/FS_White.atlas.txt,example
+57b57f94df266f94ea0981915a4472e1/pathname,Assets/Spine Examples/Spine Skeletons/FootSoldier/FS_White.png,example
+e3c7e74834cd8424f8735ba05e94a688/pathname,Assets/Spine Examples/Spine Skeletons/FootSoldier/FS_White_Atlas.asset,example
+5a3598dafa118754db95756064347da7/pathname,Assets/Spine Examples/Spine Skeletons/FootSoldier/FS_White_Material.mat,material
+6fe8b327d2ab4bd438a63ffec150a911/pathname,Assets/Spine Examples/Spine Skeletons/FootSoldier/license.txt,example
+850ff16a039121a48a7cf86e301ef1fa/pathname,Assets/Spine Examples/Spine Skeletons/Gauge,example
+6afa4952627478a44995c3cdf2e96a24/pathname,Assets/Spine Examples/Spine Skeletons/Gauge/Gauge.atlas.txt,example
+af5e86c10d52bad43b0b62542815f199/pathname,Assets/Spine Examples/Spine Skeletons/Gauge/Gauge.json,example
+a11301aad15ed6b4995485a02a81b132/pathname,Assets/Spine Examples/Spine Skeletons/Gauge/Gauge.png,example
+e888132736b335e4c88bc0a283b474c6/pathname,Assets/Spine Examples/Spine Skeletons/Gauge/Gauge_Atlas.asset,example
+9ab9bdbda020b3e46b5a3b0558ef591d/pathname,Assets/Spine Examples/Spine Skeletons/Gauge/Gauge_Material.mat,material
+22b19a38b21c15a48854f0db86b0b7d3/pathname,Assets/Spine Examples/Spine Skeletons/Gauge/Gauge_SkeletonData.asset,example
+32b45fca01f880942a0f95f63800b220/pathname,Assets/Spine Examples/Spine Skeletons/Gauge/ReferenceAssets,example
+416feb17a0d192844abb17619bf81153/pathname,Assets/Spine Examples/Spine Skeletons/Gauge/ReferenceAssets/Fill.asset,example
+cdf7c6b00467fad44915c02ea43fe3b5/pathname,Assets/Spine Examples/Spine Skeletons/Goblins,example
+2412d1d8498463f49ae6ebe3a66ffae9/pathname,Assets/Spine Examples/Spine Skeletons/Goblins/dagger.png,example
+179f09b47e5402545a1aa69bf5cb2cba/pathname,Assets/Spine Examples/Spine Skeletons/Goblins/goblins.atlas.txt,example
+c3921acb20cbc25418859f1b213d3d3f/pathname,Assets/Spine Examples/Spine Skeletons/Goblins/goblins.json,example
+5fb7efec30c79cb46a705e0d04debb04/pathname,Assets/Spine Examples/Spine Skeletons/Goblins/goblins.png,example
+bb54bdab69af2bb49b35577b80dcaad9/pathname,Assets/Spine Examples/Spine Skeletons/Goblins/goblins_Atlas.asset,example
+54091ef934c41eb4192f72bfd8e3bcc9/pathname,Assets/Spine Examples/Spine Skeletons/Goblins/goblins_Material.mat,material
+2e4e11d4dd87d844a876d18c4d76a612/pathname,Assets/Spine Examples/Spine Skeletons/Goblins/goblins_SkeletonData.asset,example
+2c9c8caf9ef4a2d44a6978ea8bdcb3f6/pathname,Assets/Spine Examples/Spine Skeletons/Hero,example
+d7e3bd7e6f971cb428513ebf424e0846/pathname,Assets/Spine Examples/Spine Skeletons/Hero/hero-pro.atlas.txt,example
+33cbc24302a26c1438b20d9253eee469/pathname,Assets/Spine Examples/Spine Skeletons/Hero/hero-pro.json,example
+25b07e861d1a62f4db687c871e4a3828/pathname,Assets/Spine Examples/Spine Skeletons/Hero/hero-pro.png,example
+8384ab388a4037649a1f64fb2e1a8e7f/pathname,Assets/Spine Examples/Spine Skeletons/Hero/hero-pro_Atlas.asset,example
+9aa2023c2c91b254f9cb0a4fba19af00/pathname,Assets/Spine Examples/Spine Skeletons/Hero/hero-pro_Material.mat,material
+fd9012d511e32e04c84b87ea9276448d/pathname,Assets/Spine Examples/Spine Skeletons/Hero/hero-pro_MaterialOutline.mat,material
+aadb1a26bea9b8d4381c38e65e64c192/pathname,Assets/Spine Examples/Spine Skeletons/Hero/hero-pro_MaterialOutlineOnly.mat,material
+2f899e95232e6144786de8fb99678a8d/pathname,Assets/Spine Examples/Spine Skeletons/Hero/hero-pro_SkeletonData.asset,example
+0d9db1748e0cf9f408129df308299463/pathname,Assets/Spine Examples/Spine Skeletons/Hero/license.txt,example
+4d8ca989b59d9c74f9b9d98e63993b0a/pathname,Assets/Spine Examples/Spine Skeletons/Hero/ReferenceAssets,example
+a7f08ab57415c7548a57933fe9332cf0/pathname,Assets/Spine Examples/Spine Skeletons/Hero/ReferenceAssets/attack.asset,example
+6c587772a6f7df94b934b353291c008c/pathname,Assets/Spine Examples/Spine Skeletons/Hero/ReferenceAssets/crouch-from fall.asset,example
+25961ff211f6f3947be85f8aab3f2630/pathname,Assets/Spine Examples/Spine Skeletons/Hero/ReferenceAssets/crouch.asset,example
+29c1381a00cfb2c4d996f2a02fcc4506/pathname,Assets/Spine Examples/Spine Skeletons/Hero/ReferenceAssets/fall.asset,example
+f6af3927c87714243a26ccb72d39d4fc/pathname,Assets/Spine Examples/Spine Skeletons/Hero/ReferenceAssets/head-turn.asset,example
+714e39dce7285c145bdf142c38ef9a9b/pathname,Assets/Spine Examples/Spine Skeletons/Hero/ReferenceAssets/idle-from fall.asset,example
+8e32f0310bb5c02488c5c002dd41e7cb/pathname,Assets/Spine Examples/Spine Skeletons/Hero/ReferenceAssets/idle.asset,example
+9fc9ad17b39175242a17dedc100251e5/pathname,Assets/Spine Examples/Spine Skeletons/Hero/ReferenceAssets/jump.asset,example
+fcca5e996ae24ba43baaaadef1fb6ad9/pathname,Assets/Spine Examples/Spine Skeletons/Hero/ReferenceAssets/run-from fall.asset,example
+cc83238c61de380499565292bef7ada4/pathname,Assets/Spine Examples/Spine Skeletons/Hero/ReferenceAssets/run.asset,example
+096b05b71bb32cb409c1c8fd233b7ac3/pathname,Assets/Spine Examples/Spine Skeletons/Hero/ReferenceAssets/walk.asset,example
+9fcbdd77f3a4ea14f94861be5e14cf53/pathname,Assets/Spine Examples/Spine Skeletons/mix-and-match,example
+9b5072c1342a08b429b2bbfa38e83bab/pathname,Assets/Spine Examples/Spine Skeletons/mix-and-match/mix-and-match-pma.atlas.txt,example
+a837e662e711d1a4ba0b4a9aeb141878/pathname,Assets/Spine Examples/Spine Skeletons/mix-and-match/mix-and-match-pma.png,example
+071eeff112dbeca4e961d78214f41c38/pathname,Assets/Spine Examples/Spine Skeletons/mix-and-match/mix-and-match-pma_Atlas.asset,example
+f68af5332bca5ef49a0bb6a25be1a8e5/pathname,Assets/Spine Examples/Spine Skeletons/mix-and-match/mix-and-match-pma_Material.mat,material
+05c17836f4f4fe748b11ad96e9436421/pathname,Assets/Spine Examples/Spine Skeletons/mix-and-match/mix-and-match-pro.json,example
+91a60be3ea058c245b89efb440a49a58/pathname,Assets/Spine Examples/Spine Skeletons/mix-and-match/mix-and-match-pro_SkeletonData.asset,example
+31a18437d3dfcde44a2e4b24361a3620/pathname,Assets/Spine Examples/Spine Skeletons/Raggedy Spineboy,example
+bdfc7a081d52b68499e44aa82689a73d/pathname,Assets/Spine Examples/Spine Skeletons/Raggedy Spineboy/Raggedy Spineboy.atlas.txt,example
+e6f1c85da28190c49a9aaa887894ab0d/pathname,Assets/Spine Examples/Spine Skeletons/Raggedy Spineboy/raggedy spineboy.json,example
+b29bbacbc2368c94a9c942d176ac6f59/pathname,Assets/Spine Examples/Spine Skeletons/Raggedy Spineboy/Raggedy Spineboy.png,example
+a9d85e8796d75384199c06f6fdbb0d73/pathname,Assets/Spine Examples/Spine Skeletons/Raggedy Spineboy/Raggedy Spineboy_Atlas.asset,example
+4ad4f7167d4983147ad870f93ebc9416/pathname,Assets/Spine Examples/Spine Skeletons/Raggedy Spineboy/Raggedy Spineboy_Material.mat,material
+57484171e9b9c7243aa3117bc663e7b9/pathname,Assets/Spine Examples/Spine Skeletons/Raggedy Spineboy/Raggedy Spineboy_SkeletonData.asset,example
+0d8935f4180c02a4ab97099ce30c55f3/pathname,Assets/Spine Examples/Spine Skeletons/Raptor,example
+1042fbf38cbac704db44b9251e33ec19/pathname,Assets/Spine Examples/Spine Skeletons/raptor-pro-and-mask,example
+237a4ac5be7ab634ea6b20fcab00aa97/pathname,Assets/Spine Examples/Spine Skeletons/raptor-pro-and-mask/raptor-pma.atlas.txt,example
+c1a5fbc2700be764fa3c6c44b2ed67a0/pathname,Assets/Spine Examples/Spine Skeletons/raptor-pro-and-mask/raptor-pma.png,example
+accb8bd06230af54b9b294a8ed032d3f/pathname,Assets/Spine Examples/Spine Skeletons/raptor-pro-and-mask/raptor-pma_Atlas.asset,example
+3d645292a7b9c7547bf7b14caa569410/pathname,Assets/Spine Examples/Spine Skeletons/raptor-pro-and-mask/raptor-pma_Material.mat,material
+11b8e87884357884a8d31758fca91bb7/pathname,Assets/Spine Examples/Spine Skeletons/raptor-pro-and-mask/raptor-pma_Material_InsideMask.mat,material
+4bbf1af7150ed574095b8679b9a72db3/pathname,Assets/Spine Examples/Spine Skeletons/raptor-pro-and-mask/raptor-pma_Material_OutsideMask.mat,material
+b4a994702bba90348beb1c28734bda8b/pathname,Assets/Spine Examples/Spine Skeletons/raptor-pro-and-mask/raptor-pma_MaterialOutline.mat,material
+c272ebc04370d3d4d81beb5917e6abca/pathname,Assets/Spine Examples/Spine Skeletons/raptor-pro-and-mask/raptor-pro.json,example
+784054e42b1ea374cb535eaf51bf4369/pathname,Assets/Spine Examples/Spine Skeletons/raptor-pro-and-mask/raptor-pro_SkeletonData.asset,example
+eb942ce288aa1654dbf5ed0cad424cdc/pathname,Assets/Spine Examples/Spine Skeletons/raptor-pro-and-mask/SpriteMask_Mask.png,example
+ddbc971619ecba3499f4bcd61c741053/pathname,Assets/Spine Examples/Spine Skeletons/Raptor/raptor.atlas.txt,example
+3ae635b4540c450408d30a8afb9f75a7/pathname,Assets/Spine Examples/Spine Skeletons/Raptor/raptor.json,example
+4261719a8f729a644b2dab6113d1b0ea/pathname,Assets/Spine Examples/Spine Skeletons/Raptor/raptor.png,example
+d5fc231712b346f459c8583fa224a669/pathname,Assets/Spine Examples/Spine Skeletons/Raptor/raptor_Atlas.asset,example
+4e2feebfcaa26a54ab19f1ff3e0eae35/pathname,Assets/Spine Examples/Spine Skeletons/Raptor/raptor_Material.mat,material
+22c4b5e5a0fd9484d83b1aa705b9a54c/pathname,Assets/Spine Examples/Spine Skeletons/Raptor/raptor_SkeletonData.asset,example
+677c9e69cddecaf4381e8c60e21dd45b/pathname,Assets/Spine Examples/Spine Skeletons/Raptor/ReferenceAssets,example
+f8a357da5599fa342beda596bc86bc35/pathname,Assets/Spine Examples/Spine Skeletons/Raptor/ReferenceAssets/gungrab.asset,example
+d1426f136e8d57343a64e6be7454418b/pathname,Assets/Spine Examples/Spine Skeletons/Raptor/ReferenceAssets/gunkeep.asset,example
+db621bd3fb32cbe46933b7a8fe1a929e/pathname,Assets/Spine Examples/Spine Skeletons/Raptor/ReferenceAssets/Jump.asset,example
+ac5036612c87200419da1450c17b1482/pathname,Assets/Spine Examples/Spine Skeletons/Raptor/ReferenceAssets/walk.asset,example
+365eb017d7ae7134d820c8b808eeb121/pathname,Assets/Spine Examples/Spine Skeletons/Runtime Template Material.mat,material
+91aa25fdfcac76c47a07fab9862f8c09/pathname,Assets/Spine Examples/Spine Skeletons/spineboy-pro,example
+48916516246bd8a4dbaa0cc88eb9b64e/pathname,Assets/Spine Examples/Spine Skeletons/spineboy-pro/ReferenceAssets,example
+64d274c85f55c6446a74f25d5c7a2a7b/pathname,Assets/Spine Examples/Spine Skeletons/spineboy-pro/ReferenceAssets/aim.asset,example
+2fc7c0a2c0179cc4395b7e3ffeb7e550/pathname,Assets/Spine Examples/Spine Skeletons/spineboy-pro/ReferenceAssets/death.asset,example
+910b84ab2bcf7cc428f4a27a81bbe44b/pathname,Assets/Spine Examples/Spine Skeletons/spineboy-pro/ReferenceAssets/footstep.asset,example
+ce9fe65c3c501f14780aaa35b779ef10/pathname,Assets/Spine Examples/Spine Skeletons/spineboy-pro/ReferenceAssets/hoverboard.asset,example
+8bad3b43d554cd142a8d5069b19164d8/pathname,Assets/Spine Examples/Spine Skeletons/spineboy-pro/ReferenceAssets/idle-turn.asset,example
+1002b1f05d1a2f94ab4ed89c14969f2f/pathname,Assets/Spine Examples/Spine Skeletons/spineboy-pro/ReferenceAssets/idle.asset,example
+8bb8b27ff0842d64da0838b636c45e6b/pathname,Assets/Spine Examples/Spine Skeletons/spineboy-pro/ReferenceAssets/jump.asset,example
+236a057973e35034caeab3af14ae807b/pathname,Assets/Spine Examples/Spine Skeletons/spineboy-pro/ReferenceAssets/portal.asset,example
+c47abd93ce75ae44193ebd8edd1b18c5/pathname,Assets/Spine Examples/Spine Skeletons/spineboy-pro/ReferenceAssets/run-to-idle.asset,example
+d1297f325bf69cc49a8bcea4220abfed/pathname,Assets/Spine Examples/Spine Skeletons/spineboy-pro/ReferenceAssets/run.asset,example
+29de7da3aa10f4047bb89d253e6cf3af/pathname,Assets/Spine Examples/Spine Skeletons/spineboy-pro/ReferenceAssets/shoot.asset,example
+39ecdbeedb5b3d84f8200d046b44a1e6/pathname,Assets/Spine Examples/Spine Skeletons/spineboy-pro/ReferenceAssets/walk.asset,example
+9b2378ddc54f1c94fb80411958000a8c/pathname,Assets/Spine Examples/Spine Skeletons/spineboy-pro/spineboy-pro.atlas.txt,example
+8160b67e4c41bd041b948b5e5a86e242/pathname,Assets/Spine Examples/Spine Skeletons/spineboy-pro/spineboy-pro.json,example
+4ea2c33e839afb34c98f66e892b3b2d2/pathname,Assets/Spine Examples/Spine Skeletons/spineboy-pro/spineboy-pro.png,example
+2bedc3c43dd49f346a4c9e8a87e2fed7/pathname,Assets/Spine Examples/Spine Skeletons/spineboy-pro/spineboy-pro_Atlas.asset,example
+f89bbf05902e77242a3ad20f3c927353/pathname,Assets/Spine Examples/Spine Skeletons/spineboy-pro/spineboy-pro_Material.mat,material
+af38a3de26ed9b84abc2fe7c7f3b209d/pathname,Assets/Spine Examples/Spine Skeletons/spineboy-pro/spineboy-pro_SkeletonData.asset,example
+131ccf184b7b24a4595a99c59aa00657/pathname,Assets/Spine Examples/Spine Skeletons/spineboy-pro/spineboy_spineboy.mat,material
+a0a97d96245608d43be03223ebfbc185/pathname,Assets/Spine Examples/Spine Skeletons/spineboy-unity,example
+af78e206cd688f74398294587ef5dd91/pathname,Assets/Spine Examples/Spine Skeletons/spineboy-unity/Equips,example
+32997c96a91b5904aa064f961fa62937/pathname,Assets/Spine Examples/Spine Skeletons/spineboy-unity/Equips/goggles-normal.png,example
+4f554405f8f06164db0773d689da243c/pathname,Assets/Spine Examples/Spine Skeletons/spineboy-unity/Equips/goggles-tactical.png,example
+02c4cbcce432ae74bb2d965060e64d29/pathname,Assets/Spine Examples/Spine Skeletons/spineboy-unity/Equips/gun-freeze.png,example
+602e098a046fa6e42a109d3e45c590f2/pathname,Assets/Spine Examples/Spine Skeletons/spineboy-unity/Equips/gun-normal.png,example
+071b278bb714596449eaf54d4ba2997e/pathname,Assets/Spine Examples/Spine Skeletons/spineboy-unity/ReferenceAssets,example
+790b48b79d40d4e4c995da2991932ade/pathname,Assets/Spine Examples/Spine Skeletons/spineboy-unity/ReferenceAssets/death.asset,example
+6b77ce13b7ea74949bdcaa43ed3eaa66/pathname,Assets/Spine Examples/Spine Skeletons/spineboy-unity/ReferenceAssets/diagonal.asset,example
+2657d9f265aa59446b055dc0c1018419/pathname,Assets/Spine Examples/Spine Skeletons/spineboy-unity/ReferenceAssets/footstep.asset,example
+9db45f1cea1a1d74f86992ad2f34f114/pathname,Assets/Spine Examples/Spine Skeletons/spineboy-unity/ReferenceAssets/frozen.asset,example
+7e027f92ba53df14da2f0814877d1069/pathname,Assets/Spine Examples/Spine Skeletons/spineboy-unity/ReferenceAssets/gun toss.asset,example
+b5b08f3750a5704428e54929cf119ece/pathname,Assets/Spine Examples/Spine Skeletons/spineboy-unity/ReferenceAssets/hit old.asset,example
+83e1b716474ea9141983c4d570adf4f9/pathname,Assets/Spine Examples/Spine Skeletons/spineboy-unity/ReferenceAssets/hit.asset,example
+8a71ad90c9e356d4fa476a420aeb259d/pathname,Assets/Spine Examples/Spine Skeletons/spineboy-unity/ReferenceAssets/idle.asset,example
+305a9a349ff5861408c923de95b10585/pathname,Assets/Spine Examples/Spine Skeletons/spineboy-unity/ReferenceAssets/idlebag.asset,example
+1d2c7dbbee0d2fd47997013804122e94/pathname,Assets/Spine Examples/Spine Skeletons/spineboy-unity/ReferenceAssets/jump old.asset,example
+bc123feee5c3f144d8f1fa7073f78de2/pathname,Assets/Spine Examples/Spine Skeletons/spineboy-unity/ReferenceAssets/jump rm.asset,example
+69a6ea3cadcdebb44a8c3b5fa43880e7/pathname,Assets/Spine Examples/Spine Skeletons/spineboy-unity/ReferenceAssets/jump.asset,example
+dff7c26e6e007e748b47240522cff0c8/pathname,Assets/Spine Examples/Spine Skeletons/spineboy-unity/ReferenceAssets/pole.asset,example
+be90eb47d25ae1149a1ffee2bb634498/pathname,Assets/Spine Examples/Spine Skeletons/spineboy-unity/ReferenceAssets/run rm.asset,example
+2d841d20c203ff24a859b8c73f9c3817/pathname,Assets/Spine Examples/Spine Skeletons/spineboy-unity/ReferenceAssets/run.asset,example
+6d4c548ed1818024bb6ed2ee16dbfc40/pathname,Assets/Spine Examples/Spine Skeletons/spineboy-unity/ReferenceAssets/shoot.asset,example
+7fb30b5771c5c0e4191999928e186e88/pathname,Assets/Spine Examples/Spine Skeletons/spineboy-unity/ReferenceAssets/walk rm.asset,example
+16e355cde32442f409a2b1a2362cf0e3/pathname,Assets/Spine Examples/Spine Skeletons/spineboy-unity/ReferenceAssets/walk.asset,example
+e3b64d7eaf0de4e45a00b7065166554d/pathname,Assets/Spine Examples/Spine Skeletons/spineboy-unity/spineboy-unity.json,example
+a467507a4ffb1d542a558739b2fede77/pathname,Assets/Spine Examples/Spine Skeletons/spineboy-unity/spineboy-unity_SkeletonData.asset,example
+5c0a5c36970a46e4d8378760ab4a4cfc/pathname,Assets/Spine Examples/Spine Skeletons/spineboy-unity/spineboy.atlas.txt,example
+49bb65eefe08e424bbf7a38bc98ec638/pathname,Assets/Spine Examples/Spine Skeletons/spineboy-unity/spineboy.png,example
+b4b8457d6cb8fec49a40be5b71d79e51/pathname,Assets/Spine Examples/Spine Skeletons/spineboy-unity/spineboy_Atlas.asset,example
+128e02fa6a4f5964fa898757a425b354/pathname,Assets/Spine Examples/Spine Skeletons/spineboy-unity/spineboy_Material Fill.mat,material
+99689194ebb5b66469537473d95c68c9/pathname,Assets/Spine Examples/Spine Skeletons/spineboy-unity/spineboy_Material Grayscale.mat,material
+1455e88fdb81ccc45bdeaedd657bad4d/pathname,Assets/Spine Examples/Spine Skeletons/spineboy-unity/spineboy_Material.mat,material
+e5043a979111803419245ca47932431d/pathname,Assets/Spine Examples/Spine Skeletons/Spineunitygirl,example
+a99a92edb8383b244b4fcf3babe8ebae/pathname,Assets/Spine Examples/Spine Skeletons/Spineunitygirl/Doi.atlas.txt,example
+ee66d4e095e47d44792cf450371372e3/pathname,Assets/Spine Examples/Spine Skeletons/Spineunitygirl/Doi.json,example
+33e128e17951b4a42b17608ff79ba5c5/pathname,Assets/Spine Examples/Spine Skeletons/Spineunitygirl/Doi.png,example
+80099c7f091da3d41b98d11b9c5622d8/pathname,Assets/Spine Examples/Spine Skeletons/Spineunitygirl/Doi_Atlas.asset,example
+2745674eb28031e499ac70ef825b153e/pathname,Assets/Spine Examples/Spine Skeletons/Spineunitygirl/Doi_Material.mat,material
+3c48535ae5679204c950a22a7caaa5a4/pathname,Assets/Spine Examples/Spine Skeletons/Spineunitygirl/Doi_SkeletonData.asset,example
+47fb096b0328f254ab494f224cec0651/pathname,Assets/Spine Examples/Spine Skeletons/Spineunitygirl/ReferenceAssets,example
+abea4790b61cd194eab5977fc16e095d/pathname,Assets/Spine Examples/Spine Skeletons/Spineunitygirl/ReferenceAssets/blink.asset,example
+fb9d8b4d108ca63488ba93add8c66cde/pathname,Assets/Spine Examples/Spine Skeletons/Spineunitygirl/ReferenceAssets/main.asset,example
+718074e4e56a5404e824bf8e6571ea7d/pathname,Assets/Spine Examples/Spine Skeletons/square32.png,example
+f49a222b0c830ed4684e8c08ed03a215/pathname,Assets/Spine Examples/Spine Skeletons/Stretchyman,example
+492ecfd45cd2de542bc20043b10ee4aa/pathname,Assets/Spine Examples/Spine Skeletons/Stretchyman/stretchyman-diffuse-pma.atlas.txt,example
+33f10ea7e20549d40a1c23a1adc3f760/pathname,Assets/Spine Examples/Spine Skeletons/Stretchyman/stretchyman-diffuse-pma.png,example
+19fcd9c1051e4304eb095fe0dd2ae4bf/pathname,Assets/Spine Examples/Spine Skeletons/Stretchyman/stretchyman-diffuse-pma_Atlas.asset,example
+824cfb62bcbe3db49a3ce6db7e3757d1/pathname,Assets/Spine Examples/Spine Skeletons/Stretchyman/stretchyman-diffuse-pma_Material.mat,material
+4cad8f072f658544a80ba2b271aec125/pathname,Assets/Spine Examples/Spine Skeletons/Stretchyman/stretchyman-emission.png,example
+d00f264cbe0cc4a49a54a221ee812855/pathname,Assets/Spine Examples/Spine Skeletons/Stretchyman/stretchyman-normals.png,example
+f1532150c1933c944b8fee0311da4401/pathname,Assets/Spine Examples/Spine Skeletons/Stretchyman/stretchyman.json,example
+162719d41016c854abf0355feb0e14e8/pathname,Assets/Spine Examples/Spine Skeletons/Stretchyman/stretchyman_SkeletonData.asset,example
+3d0a5267ad0c0de47a9ce7a147b1dc87/pathname,Assets/Spine Examples/Spine Skeletons/whirlyblendmodes,example
+188756a89517d7649a67fb53606220f5/pathname,Assets/Spine Examples/Spine Skeletons/whirlyblendmodes/whirlyblendmodes.atlas.txt,example
+1a6f51aad0fef5a40aeedfeec5c0b8b2/pathname,Assets/Spine Examples/Spine Skeletons/whirlyblendmodes/whirlyblendmodes.json,example
+dc1b9f9665c8aa74799404a1d2038e3d/pathname,Assets/Spine Examples/Spine Skeletons/whirlyblendmodes/whirlyblendmodes.png,example
+db7ac54cc9ef711408d53c53b765b9a3/pathname,Assets/Spine Examples/Spine Skeletons/whirlyblendmodes/whirlyblendmodes_Atlas.asset,example
+867b647cef55dcb43928a83908d96007/pathname,Assets/Spine Examples/Spine Skeletons/whirlyblendmodes/whirlyblendmodes_Material-Additive.mat,material
+aa8b3fb015cd7eb438453da5e475ad54/pathname,Assets/Spine Examples/Spine Skeletons/whirlyblendmodes/whirlyblendmodes_Material-Multiply.mat,material
+1489a5bef834c9743bab2d5bd43168f1/pathname,Assets/Spine Examples/Spine Skeletons/whirlyblendmodes/whirlyblendmodes_Material-Screen.mat,material
+e162c08da1abc294cb851248f51dfc40/pathname,Assets/Spine Examples/Spine Skeletons/whirlyblendmodes/whirlyblendmodes_Material.mat,material
+a515487a7cc6cca479d8c7c700c9145d/pathname,Assets/Spine Examples/Spine Skeletons/whirlyblendmodes/whirlyblendmodes_SkeletonData.asset,example
+8f5163e4753269348a069fd2fedcba29/pathname,Assets/Spine Examples/spine-unity-examples.asmdef,assembly_definition
+f29cb914700536143b702a59ad5f998f/pathname,Assets/Spine/CHANGELOG.md,spine_runtime
+ad14d5a4cd7a0444286d315541ee0495/pathname,Assets/Spine/Editor,spine_runtime
+83fbec88df35fe34bab43a5dde6788af/pathname,Assets/Spine/Editor/spine-unity,spine_runtime
+173464ddf4cdb6640a4dfa8a9281ad69/pathname,Assets/Spine/Editor/spine-unity-editor.asmdef,assembly_definition
+f0e95036e72b08544a9d295dd4366f40/pathname,Assets/Spine/Editor/spine-unity/Editor,spine_runtime
+eb646ac6e394e534b80d5cac61478488/pathname,Assets/Spine/Editor/spine-unity/Editor/Asset Types,spine_runtime
+9511532e80feed24881a5863f5485446/pathname,Assets/Spine/Editor/spine-unity/Editor/Asset Types/AnimationReferenceAssetEditor.cs,csharp
+01cbef8f24d105f4bafa9668d669e040/pathname,Assets/Spine/Editor/spine-unity/Editor/Asset Types/SkeletonDataAssetInspector.cs,csharp
+ca9b3ce36d70a05408e3bdd5e92c7f64/pathname,Assets/Spine/Editor/spine-unity/Editor/Asset Types/SpineAtlasAssetInspector.cs,csharp
+f063dc5ff6881db4a9ee2e059812cba2/pathname,Assets/Spine/Editor/spine-unity/Editor/Asset Types/SpineSpriteAtlasAssetInspector.cs,csharp
+0134640f881c8d24d812a6f9af9d0761/pathname,Assets/Spine/Editor/spine-unity/Editor/Components,spine_runtime
+da44a8561fd243c43a1f77bda36de0eb/pathname,Assets/Spine/Editor/spine-unity/Editor/Components/BoneFollowerGraphicInspector.cs,csharp
+c71ca35fd6241cb49a0b0756a664fcf7/pathname,Assets/Spine/Editor/spine-unity/Editor/Components/BoneFollowerInspector.cs,csharp
+7c4f5b276299bc048ad00f3cd2d1ea09/pathname,Assets/Spine/Editor/spine-unity/Editor/Components/BoundingBoxFollowerGraphicInspector.cs,csharp
+670a3cefa3853bd48b5da53a424fd542/pathname,Assets/Spine/Editor/spine-unity/Editor/Components/BoundingBoxFollowerInspector.cs,csharp
+7c7e838a8ec295a4e9c53602f690f42f/pathname,Assets/Spine/Editor/spine-unity/Editor/Components/PointFollowerInspector.cs,csharp
+39fbfef61034ca045b5aa80088e1e8a4/pathname,Assets/Spine/Editor/spine-unity/Editor/Components/SkeletonAnimationInspector.cs,csharp
+349bf125947e3aa4bb78690fec69ea17/pathname,Assets/Spine/Editor/spine-unity/Editor/Components/SkeletonGraphicCustomMaterialsInspector.cs,csharp
+0d81cc76b52fcdf499b2db252a317726/pathname,Assets/Spine/Editor/spine-unity/Editor/Components/SkeletonGraphicInspector.cs,csharp
+6a9ca5213a3a4614c9a9f2e60909bc33/pathname,Assets/Spine/Editor/spine-unity/Editor/Components/SkeletonMecanimInspector.cs,csharp
+4613924c50d66cf458f0db803776dd2f/pathname,Assets/Spine/Editor/spine-unity/Editor/Components/SkeletonMecanimRootMotionInspector.cs,csharp
+e70f7f2a241d6d34aafd6a4a52a368d0/pathname,Assets/Spine/Editor/spine-unity/Editor/Components/SkeletonRendererCustomMaterialsInspector.cs,csharp
+d0fc5db9788bce4418ad3252d43faa8a/pathname,Assets/Spine/Editor/spine-unity/Editor/Components/SkeletonRendererInspector.cs,csharp
+f2cba83baf6afdf44a996e40017c6325/pathname,Assets/Spine/Editor/spine-unity/Editor/Components/SkeletonRootMotionBaseInspector.cs,csharp
+e4836100aed984c4a9af11d39c63cb6b/pathname,Assets/Spine/Editor/spine-unity/Editor/Components/SkeletonRootMotionInspector.cs,csharp
+b3ae20b4bcc31f645afd6f5b64f82473/pathname,Assets/Spine/Editor/spine-unity/Editor/Components/SkeletonUtilityBoneInspector.cs,csharp
+a5b90df955eb8c2429ac67c8b2de6c5c/pathname,Assets/Spine/Editor/spine-unity/Editor/Components/SkeletonUtilityInspector.cs,csharp
+bfaea6b7e7f52bc46b8d1c3cb5e9eaa1/pathname,Assets/Spine/Editor/spine-unity/Editor/GUI,spine_runtime
+3fc714a0dc1cf6b4b959e073fff2844e/pathname,Assets/Spine/Editor/spine-unity/Editor/GUI/AtlasAsset Icon.png,spine_runtime
+52b12ec801461494185a4d3dc66f3d1d/pathname,Assets/Spine/Editor/spine-unity/Editor/GUI/icon-animation.png,spine_runtime
+3d1be4ea889f3a14b864352fe49a1bde/pathname,Assets/Spine/Editor/spine-unity/Editor/GUI/icon-animationRoot.png,spine_runtime
+04ae56b3698d3e844844cfcef2f009e7/pathname,Assets/Spine/Editor/spine-unity/Editor/GUI/icon-attachment.png,spine_runtime
+8322793223a533a4ca8be6f430256dfc/pathname,Assets/Spine/Editor/spine-unity/Editor/GUI/icon-bone.png,spine_runtime
+97a43f11e00735147a9dc3dff6d68191/pathname,Assets/Spine/Editor/spine-unity/Editor/GUI/icon-boneNib.png,spine_runtime
+955aed20030d0504b8a9c6934a5cb47a/pathname,Assets/Spine/Editor/spine-unity/Editor/GUI/icon-boundingBox.png,spine_runtime
+f5fff1b5caee03642ab77c9984b4bb6a/pathname,Assets/Spine/Editor/spine-unity/Editor/GUI/icon-clipping.png,spine_runtime
+02822eb69e09dd947b434ab81e3d938f/pathname,Assets/Spine/Editor/spine-unity/Editor/GUI/icon-constraintIK.png,spine_runtime
+de1a4f5ad4bdf1a4ea072c4d59ba87d8/pathname,Assets/Spine/Editor/spine-unity/Editor/GUI/icon-constraintNib.png,spine_runtime
+c1aae98dd56b14c4b8c25360000b7e9e/pathname,Assets/Spine/Editor/spine-unity/Editor/GUI/icon-constraintPath.png,spine_runtime
+ed0736a1eb519ef42b4892d1db2426b3/pathname,Assets/Spine/Editor/spine-unity/Editor/GUI/icon-constraints.png,spine_runtime
+4709175437c21f64bab9b061f98a49fc/pathname,Assets/Spine/Editor/spine-unity/Editor/GUI/icon-constraintTransform.png,spine_runtime
+d226a80acc775714aa78b85e16a00e9b/pathname,Assets/Spine/Editor/spine-unity/Editor/GUI/icon-event.png,spine_runtime
+2c2c6d283dcf3654baf40001c982891c/pathname,Assets/Spine/Editor/spine-unity/Editor/GUI/icon-hingeChain.png,spine_runtime
+2b3a6f35bbaa8414eb51a344743ee641/pathname,Assets/Spine/Editor/spine-unity/Editor/GUI/icon-image.png,spine_runtime
+a309a2e14638a204091b915126910f45/pathname,Assets/Spine/Editor/spine-unity/Editor/GUI/icon-mesh.png,spine_runtime
+d1de1604dfe4cb64c9d31246a8e43c78/pathname,Assets/Spine/Editor/spine-unity/Editor/GUI/icon-null.png,spine_runtime
+dbc817a6c9e9c5747b7f6261bf5d1d09/pathname,Assets/Spine/Editor/spine-unity/Editor/GUI/icon-path.png,spine_runtime
+d7a76922e4dd9fa429da15c018ff127f/pathname,Assets/Spine/Editor/spine-unity/Editor/GUI/icon-point.png,spine_runtime
+da6f6d414e43aac46a57cc5a87208db4/pathname,Assets/Spine/Editor/spine-unity/Editor/GUI/icon-poseBones.png,spine_runtime
+f2216037084d99d4481810cb521ed96f/pathname,Assets/Spine/Editor/spine-unity/Editor/GUI/icon-skeleton.png,spine_runtime
+5bb0631368b462047869d8788673cb48/pathname,Assets/Spine/Editor/spine-unity/Editor/GUI/icon-skeletonUtility.png,spine_runtime
+bfd9f3d2607e9e44c97384d7575a17dc/pathname,Assets/Spine/Editor/spine-unity/Editor/GUI/icon-skin.png,spine_runtime
+04c82a4acf7b5244e947f2709ec3a6cf/pathname,Assets/Spine/Editor/spine-unity/Editor/GUI/icon-skinPlaceholder.png,spine_runtime
+8bd14c7643597a74ba2edc10a5e4c4ed/pathname,Assets/Spine/Editor/spine-unity/Editor/GUI/icon-skinsRoot.png,spine_runtime
+0338faf3e7d93e2478fcbc022d13e081/pathname,Assets/Spine/Editor/spine-unity/Editor/GUI/icon-slot.png,spine_runtime
+4a1646cf39026224c85ecba92d7d6948/pathname,Assets/Spine/Editor/spine-unity/Editor/GUI/icon-slotRoot.png,spine_runtime
+4e7c964fa5e07024c8bf1debecc3b7c8/pathname,Assets/Spine/Editor/spine-unity/Editor/GUI/icon-spine.png,spine_runtime
+f31c0c0d608e8ba4f9a1afb032092287/pathname,Assets/Spine/Editor/spine-unity/Editor/GUI/icon-subMeshRenderer.png,spine_runtime
+754d724c1bd750048852e8cf3d4a05ee/pathname,Assets/Spine/Editor/spine-unity/Editor/GUI/icon-warning.png,spine_runtime
+0b1bcb09fa228d049ba3c9ea6a57e1ee/pathname,Assets/Spine/Editor/spine-unity/Editor/GUI/icon-weights.png,spine_runtime
+68defdbc95b30a74a9ad396bfc9a2277/pathname,Assets/Spine/Editor/spine-unity/Editor/GUI/SkeletonDataAsset Icon.png,spine_runtime
+a018d561e5df35848bcabbe2809c7549/pathname,Assets/Spine/Editor/spine-unity/Editor/ImporterPresets,spine_runtime
+77f055f38c1115f42a2df16b0428c4e6/pathname,Assets/Spine/Editor/spine-unity/Editor/ImporterPresets/PMAPresetTemplate.png,spine_runtime
+665f49f3e2dc7b645b6577f14455f445/pathname,Assets/Spine/Editor/spine-unity/Editor/ImporterPresets/PMATexturePreset.preset,spine_runtime
+b3fe5ce49a7c8c041a9d60e4f7f403de/pathname,Assets/Spine/Editor/spine-unity/Editor/ImporterPresets/StraightAlphaPreset.preset,spine_runtime
+ade885c25e49d7740b5c00d4e10a6197/pathname,Assets/Spine/Editor/spine-unity/Editor/ImporterPresets/StraightAlphaPresetTemplate.png,spine_runtime
+cf21125cbd8928844a85a3ad9002693b/pathname,Assets/Spine/Editor/spine-unity/Editor/Menus.cs,csharp
+24903fdac57ee784b9597fcb751ec22f/pathname,Assets/Spine/Editor/spine-unity/Editor/Resources,spine_runtime
+57281c00bdd90ad4392f811f2b9f0da1/pathname,Assets/Spine/Editor/spine-unity/Editor/Resources/SpineAssetDatabaseMarker.txt,spine_runtime
+10e0b626d7ae7394a934ee9f2fb81b5a/pathname,Assets/Spine/Editor/spine-unity/Editor/Shaders,spine_runtime
+efbbf90926e217c40831926fce374905/pathname,Assets/Spine/Editor/spine-unity/Editor/Shaders/SpineShaderWithOutlineGUI.cs,csharp
+aef90b4c481362e42891bb46de344c1c/pathname,Assets/Spine/Editor/spine-unity/Editor/Shaders/SpineSpriteShaderGUI.cs,csharp
+f2de282d583d4a641bf1c349f0a3eef9/pathname,Assets/Spine/Editor/spine-unity/Editor/SpineAttributeDrawers.cs,csharp
+33c080d1c093a2c45b6c72c17a557067/pathname,Assets/Spine/Editor/spine-unity/Editor/Utility,spine_runtime
+25086cd81e3158b439761b73d7366c47/pathname,Assets/Spine/Editor/spine-unity/Editor/Utility/AssetDatabaseAvailabilityDetector.cs,csharp
+49377c72c37e2c149b106c260a241f3c/pathname,Assets/Spine/Editor/spine-unity/Editor/Utility/AssetUtility.cs,csharp
+8094f8aedb33b7744b109c2c1294d37a/pathname,Assets/Spine/Editor/spine-unity/Editor/Utility/BlendModeMaterialsUtility.cs,csharp
+80767dcb23931c645ad70c88670ddeb6/pathname,Assets/Spine/Editor/spine-unity/Editor/Utility/BuildSettings.cs,csharp
+d8a1a76014a68634a8ede50af6db1cae/pathname,Assets/Spine/Editor/spine-unity/Editor/Utility/DataReloadHandler.cs,csharp
+8603301469b2a284db8eaa26dc60ada8/pathname,Assets/Spine/Editor/spine-unity/Editor/Utility/Icons.cs,csharp
+94ecc7f73dfc0484e848a0e6a1a11f2b/pathname,Assets/Spine/Editor/spine-unity/Editor/Utility/Instantiation.cs,csharp
+6d80c945a2e3436459a97b7a9a16ef46/pathname,Assets/Spine/Editor/spine-unity/Editor/Utility/Preferences.cs,csharp
+ca21cb19ac5068ee796e6cb09ff11e5d/pathname,Assets/Spine/Editor/spine-unity/Editor/Utility/SpineBuildProcessor.cs,csharp
+f834d5cd806ec4645915ac315edbdc60/pathname,Assets/Spine/Editor/spine-unity/Editor/Utility/SpineEditorUtilities.cs,csharp
+f4c97e41d3d90e24bbb40d634e6cc336/pathname,Assets/Spine/Editor/spine-unity/Editor/Utility/SpineHandles.cs,csharp
+663715b5714e2db499192c8d91ef1f86/pathname,Assets/Spine/Editor/spine-unity/Editor/Utility/SpineInspectorUtility.cs,csharp
+7c1b3a9ddacb550458bb86affdf77bf5/pathname,Assets/Spine/Editor/spine-unity/Editor/Utility/SpineMaskUtilities.cs,csharp
+b6badf2758b1ea44e8c5ec62ef338e22/pathname,Assets/Spine/Editor/spine-unity/Editor/Windows,spine_runtime
+687d9be457ea4eb44bf09c35c95ee5cd/pathname,Assets/Spine/Editor/spine-unity/Editor/Windows/SkeletonBaker.cs,csharp
+868b0caae5b3e65408ece1ab400c4a99/pathname,Assets/Spine/Editor/spine-unity/Editor/Windows/SkeletonBakingWindow.cs,csharp
+7093e73ff3cf6c543ac5865980070b49/pathname,Assets/Spine/Editor/spine-unity/Editor/Windows/SkeletonDebugWindow.cs,csharp
+b29e98153ec2fbd44b8f7da1b41194e8/pathname,Assets/Spine/Editor/spine-unity/Editor/Windows/SpinePreferences.cs,csharp
+a5b99b091defeef439a0cb8c99fd8a51/pathname,Assets/Spine/Editor/spine-unity/Editor/Windows/SpriteAtlasImportWindow.cs,csharp
+ef0ff8deb3a288646a1dd7243a918196/pathname,Assets/Spine/Editor/spine-unity/Modules,spine_runtime
+1bf8fd476d074f449bbae932a1c8a360/pathname,Assets/Spine/Editor/spine-unity/Modules/SkeletonRenderSeparator,spine_runtime
+211465c9f045fd142abe552a6ffdc799/pathname,Assets/Spine/Editor/spine-unity/Modules/SkeletonRenderSeparator/Editor,spine_runtime
+30e43037bf4433645ad70266f34c1c8b/pathname,Assets/Spine/Editor/spine-unity/Modules/SkeletonRenderSeparator/Editor/SkeletonPartsRendererInspector.cs,csharp
+d2a5062cfe5dd4344831cda4723128af/pathname,Assets/Spine/Editor/spine-unity/Modules/SkeletonRenderSeparator/Editor/SkeletonRenderSeparatorInspector.cs,csharp
+09478c42aa0375347898d942d287a819/pathname,Assets/Spine/package.json,spine_runtime
+ddb0e27aa2258854a8d171196f395b87/pathname,Assets/Spine/Runtime,spine_runtime
+a60dd41ef13d98647b9f963089feb7b0/pathname,Assets/Spine/Runtime/spine-csharp,spine_runtime
+fb7099b9c6ce91740b7041dabb0752c2/pathname,Assets/Spine/Runtime/spine-csharp/Animation.cs,csharp
+ec2f0e7143c8a174994595883f4b1e33/pathname,Assets/Spine/Runtime/spine-csharp/AnimationState.cs,csharp
+e03d60c517d9b974db35b9fd144a1d09/pathname,Assets/Spine/Runtime/spine-csharp/AnimationStateData.cs,csharp
+60626307629cc034bafd42c53a901fff/pathname,Assets/Spine/Runtime/spine-csharp/Atlas.cs,csharp
+2afe1c6b912aac54abb5925ca4ac52c2/pathname,Assets/Spine/Runtime/spine-csharp/Attachments,spine_runtime
+3e6ff30e27c28344bad3e67d308c94cd/pathname,Assets/Spine/Runtime/spine-csharp/Attachments/AtlasAttachmentLoader.cs,csharp
+05b56321b2ddd8145a888746bc6ab917/pathname,Assets/Spine/Runtime/spine-csharp/Attachments/Attachment.cs,csharp
+95466a4f5a30dca4aa69e8ee7df8ae85/pathname,Assets/Spine/Runtime/spine-csharp/Attachments/AttachmentLoader.cs,csharp
+d6b1941960a9f6f47be3e865554d8695/pathname,Assets/Spine/Runtime/spine-csharp/Attachments/AttachmentType.cs,csharp
+cd8ad8fc0f5bce448ba26d096ab32e85/pathname,Assets/Spine/Runtime/spine-csharp/Attachments/BoundingBoxAttachment.cs,csharp
+3380954b107f38b4c85a4cdfeceace42/pathname,Assets/Spine/Runtime/spine-csharp/Attachments/ClippingAttachment.cs,csharp
+b7f7514a003143844b6d01ecc93ed4d5/pathname,Assets/Spine/Runtime/spine-csharp/Attachments/MeshAttachment.cs,csharp
+c77d9bf384a1e9f41966464e7e3b4870/pathname,Assets/Spine/Runtime/spine-csharp/Attachments/PathAttachment.cs,csharp
+4fdde4cc4df0952468946f4f913dcb36/pathname,Assets/Spine/Runtime/spine-csharp/Attachments/PointAttachment.cs,csharp
+89cefdd024734a941952a05d2b5dff71/pathname,Assets/Spine/Runtime/spine-csharp/Attachments/RegionAttachment.cs,csharp
+8b40cfb462a8b774891e1604e5360d32/pathname,Assets/Spine/Runtime/spine-csharp/Attachments/VertexAttachment.cs,csharp
+b08ef68b8e39f40498ef24ef12cca281/pathname,Assets/Spine/Runtime/spine-csharp/BlendMode.cs,csharp
+ed00e3a4b386a964fb0f1c7ffd5544e5/pathname,Assets/Spine/Runtime/spine-csharp/Bone.cs,csharp
+2cf831005966832449a5de742752e578/pathname,Assets/Spine/Runtime/spine-csharp/BoneData.cs,csharp
+510354e70dba52c49b35b2c27cd8ed3c/pathname,Assets/Spine/Runtime/spine-csharp/ConstraintData.cs,csharp
+dec0d9d780605944eb4514125ab6350b/pathname,Assets/Spine/Runtime/spine-csharp/Event.cs,csharp
+37bbfb9fb268a644ba75052961a42b81/pathname,Assets/Spine/Runtime/spine-csharp/EventData.cs,csharp
+89690af94a880744989712505f2957b1/pathname,Assets/Spine/Runtime/spine-csharp/ExposedList.cs,csharp
+916f8e6534860cc40824adfc2916baa7/pathname,Assets/Spine/Runtime/spine-csharp/IkConstraint.cs,csharp
+94ad1e9256073264785f806086a000ba/pathname,Assets/Spine/Runtime/spine-csharp/IkConstraintData.cs,csharp
+44a51df5672fe4249b6763960587a017/pathname,Assets/Spine/Runtime/spine-csharp/IUpdatable.cs,csharp
+371f40ecc08b2eb4cbec49585d41e2c3/pathname,Assets/Spine/Runtime/spine-csharp/Json.cs,csharp
+03b653e54c5403b4191f5003d64c6e18/pathname,Assets/Spine/Runtime/spine-csharp/MathUtils.cs,csharp
+84ca0094807afe74295fdf4864a0ceca/pathname,Assets/Spine/Runtime/spine-csharp/package.json,spine_runtime
+731d05fbc2874c74984813ce4c5bb8df/pathname,Assets/Spine/Runtime/spine-csharp/PathConstraint.cs,csharp
+9d836858269be96428428fb6764dfc3a/pathname,Assets/Spine/Runtime/spine-csharp/PathConstraintData.cs,csharp
+12ac3c1c7546be24fb9625d3c850619d/pathname,Assets/Spine/Runtime/spine-csharp/Skeleton.cs,csharp
+40d8a8f15082f3844a5c9c8c3ef2047f/pathname,Assets/Spine/Runtime/spine-csharp/SkeletonBinary.cs,csharp
+087b328a58c93b149bb977eee3a17258/pathname,Assets/Spine/Runtime/spine-csharp/SkeletonBounds.cs,csharp
+7db809d277afd0e4a8e8c6b703002ee0/pathname,Assets/Spine/Runtime/spine-csharp/SkeletonClipping.cs,csharp
+2b813f63abbb6d94a80a5c050590a0be/pathname,Assets/Spine/Runtime/spine-csharp/SkeletonData.cs,csharp
+6c4ab7992894bdb44a480981b1953f76/pathname,Assets/Spine/Runtime/spine-csharp/SkeletonJson.cs,csharp
+f649a22108e1468478ef49db96e3b715/pathname,Assets/Spine/Runtime/spine-csharp/SkeletonLoader.cs,csharp
+7df8caa3a771f464e803316a6b18c909/pathname,Assets/Spine/Runtime/spine-csharp/Skin.cs,csharp
+6974c4b5c87687140a2417201ea43066/pathname,Assets/Spine/Runtime/spine-csharp/Slot.cs,csharp
+f28cb47bc1e8b434c85e6f69b2c9e15e/pathname,Assets/Spine/Runtime/spine-csharp/SlotData.cs,csharp
+72d1fea872bd7a449bf3818f2b0a6708/pathname,Assets/Spine/Runtime/spine-csharp/spine-csharp.asmdef,assembly_definition
+2e30316a9733f8a4b8b6c362c06dfa11/pathname,Assets/Spine/Runtime/spine-csharp/TransformConstraint.cs,csharp
+b7edeecc9bd7dd44faabf24f29b119a0/pathname,Assets/Spine/Runtime/spine-csharp/TransformConstraintData.cs,csharp
+90a8832a1f3c5f846b8773dc0e1c3238/pathname,Assets/Spine/Runtime/spine-csharp/Triangulator.cs,csharp
+29a3535756b284a428d35dcd4327185e/pathname,Assets/Spine/Runtime/spine-unity,spine_runtime
+68765d262e2128e4ab49c983f3411946/pathname,Assets/Spine/Runtime/spine-unity.asmdef,assembly_definition
+1dc4b7c23385e8c43ad19d01cbed78ce/pathname,Assets/Spine/Runtime/spine-unity/Asset Types,spine_runtime
+6e3e95a05e4c9774397eeeb7bdee8ccb/pathname,Assets/Spine/Runtime/spine-unity/Asset Types/AnimationReferenceAsset.cs,csharp
+787a36933c1c6e14db2104c01ed92dcb/pathname,Assets/Spine/Runtime/spine-unity/Asset Types/AtlasAssetBase.cs,csharp
+d03ca55657e89b949a4c07bc9207beac/pathname,Assets/Spine/Runtime/spine-unity/Asset Types/BlendModeMaterials.cs,csharp
+8e60be42c1473144db0fd3337c25b500/pathname,Assets/Spine/Runtime/spine-unity/Asset Types/EventDataReferenceAsset.cs,csharp
+15f0f78b87720c047a320c5e0e3f91b7/pathname,Assets/Spine/Runtime/spine-unity/Asset Types/RegionlessAttachmentLoader.cs,csharp
+f1b3b4b945939a54ea0b23d3396115fb/pathname,Assets/Spine/Runtime/spine-unity/Asset Types/SkeletonDataAsset.cs,csharp
+4224df6e20549f0449154531ae080201/pathname,Assets/Spine/Runtime/spine-unity/Asset Types/SkeletonDataCompatibility.cs,csharp
+79a44aba1f342f440965874280b4c318/pathname,Assets/Spine/Runtime/spine-unity/Asset Types/SkeletonDataModifierAsset.cs,csharp
+a6b194f808b1af6499c93410e504af42/pathname,Assets/Spine/Runtime/spine-unity/Asset Types/SpineAtlasAsset.cs,csharp
+ce59897dd7e6cbc4690a05ebaf975dff/pathname,Assets/Spine/Runtime/spine-unity/Asset Types/SpineSpriteAtlasAsset.cs,csharp
+954179821df28404683b8289f05d0c6f/pathname,Assets/Spine/Runtime/spine-unity/Components,spine_runtime
+b0fd98019ca00c74f929c6d1f7ee3544/pathname,Assets/Spine/Runtime/spine-unity/Components/Following,spine_runtime
+a1fd8daaed7b64148a34acb96ba14ce1/pathname,Assets/Spine/Runtime/spine-unity/Components/Following/BoneFollower.cs,csharp
+b42a195b47491d34b9bcbc40898bcb29/pathname,Assets/Spine/Runtime/spine-unity/Components/Following/BoneFollowerGraphic.cs,csharp
+0317ee9ba6e1b1e49a030268e026d372/pathname,Assets/Spine/Runtime/spine-unity/Components/Following/BoundingBoxFollower.cs,csharp
+1c0bf7b497af9f74280040d96cdf88da/pathname,Assets/Spine/Runtime/spine-unity/Components/Following/BoundingBoxFollowerGraphic.cs,csharp
+daf461e4341180341a648c07e1899528/pathname,Assets/Spine/Runtime/spine-unity/Components/Following/PointFollower.cs,csharp
+8459fe8c08b88a84484f2b7ba5f36517/pathname,Assets/Spine/Runtime/spine-unity/Components/Internal,spine_runtime
+deeb12332c062954093c24a3fab10b83/pathname,Assets/Spine/Runtime/spine-unity/Components/Internal/SkeletonSubmeshGraphic.cs,csharp
+2b957aa69dae9f948bacdeec549d28ea/pathname,Assets/Spine/Runtime/spine-unity/Components/RootMotion,spine_runtime
+95813afe390494344a6ce2cbc8bfb7d1/pathname,Assets/Spine/Runtime/spine-unity/Components/RootMotion/SkeletonMecanimRootMotion.cs,csharp
+f21c9538588898a45a3da22bf4779ab3/pathname,Assets/Spine/Runtime/spine-unity/Components/RootMotion/SkeletonRootMotion.cs,csharp
+fc23a4f220b20024ab0592719f92587d/pathname,Assets/Spine/Runtime/spine-unity/Components/RootMotion/SkeletonRootMotionBase.cs,csharp
+d247ba06193faa74d9335f5481b2b56c/pathname,Assets/Spine/Runtime/spine-unity/Components/SkeletonAnimation.cs,csharp
+d85b887af7e6c3f45a2e2d2920d641bc/pathname,Assets/Spine/Runtime/spine-unity/Components/SkeletonGraphic.cs,csharp
+f9db98c60740638449864eb028fbe7ad/pathname,Assets/Spine/Runtime/spine-unity/Components/SkeletonMecanim.cs,csharp
+e075b9a3e08e2f74fbd651c858ab16ed/pathname,Assets/Spine/Runtime/spine-unity/Components/SkeletonRenderer.cs,csharp
+a7236dbdc6a4e5a4989483dac97aee0b/pathname,Assets/Spine/Runtime/spine-unity/Components/SkeletonRendererCustomMaterials,spine_runtime
+6c8717e10b272bf42b05d363ac2679a6/pathname,Assets/Spine/Runtime/spine-unity/Components/SkeletonRendererCustomMaterials/SkeletonGraphicCustomMaterials.cs,csharp
+26947ae098a8447408d80c0c86e35b48/pathname,Assets/Spine/Runtime/spine-unity/Components/SkeletonRendererCustomMaterials/SkeletonRendererCustomMaterials.cs,csharp
+3a361f5ac799a5149b340f9e20da27d1/pathname,Assets/Spine/Runtime/spine-unity/Components/SkeletonRenderSeparator,spine_runtime
+1c0b968d1e7333b499e347acb644f1c1/pathname,Assets/Spine/Runtime/spine-unity/Components/SkeletonRenderSeparator/SkeletonPartsRenderer.cs,csharp
+5c70a5b35f6ff2541aed8e8346b7e4d5/pathname,Assets/Spine/Runtime/spine-unity/Components/SkeletonRenderSeparator/SkeletonRenderSeparator.cs,csharp
+f6e0caaafe294de48af468a6a9321473/pathname,Assets/Spine/Runtime/spine-unity/Components/SkeletonUtility,spine_runtime
+70ae96e4f2feb654681a2f16e4effeec/pathname,Assets/Spine/Runtime/spine-unity/Components/SkeletonUtility/ActivateBasedOnFlipDirection.cs,csharp
+9fc20d5e917562341a5007777a9d0db2/pathname,Assets/Spine/Runtime/spine-unity/Components/SkeletonUtility/FollowLocationRigidbody.cs,csharp
+02aae87c39b869548a9051fbdb1975e6/pathname,Assets/Spine/Runtime/spine-unity/Components/SkeletonUtility/FollowLocationRigidbody2D.cs,csharp
+456a736ebb92ebf4b959fa9c4b704427/pathname,Assets/Spine/Runtime/spine-unity/Components/SkeletonUtility/FollowSkeletonUtilityRootRotation.cs,csharp
+7f726fb798ad621458c431cb9966d91d/pathname,Assets/Spine/Runtime/spine-unity/Components/SkeletonUtility/SkeletonUtility.cs,csharp
+b238dfcde8209044b97d23f62bcaadf6/pathname,Assets/Spine/Runtime/spine-unity/Components/SkeletonUtility/SkeletonUtilityBone.cs,csharp
+522dbfcc6c916df4396f14f35048d185/pathname,Assets/Spine/Runtime/spine-unity/Components/SkeletonUtility/SkeletonUtilityConstraint.cs,csharp
+a7b480b941568134891f411137bfbf55/pathname,Assets/Spine/Runtime/spine-unity/ISkeletonAnimation.cs,csharp
+43897010c7e77c54897cb98c1ddf84f1/pathname,Assets/Spine/Runtime/spine-unity/Materials,spine_runtime
+2e8245019faeb8c43b75f9ca3ac8ee34/pathname,Assets/Spine/Runtime/spine-unity/Materials/SkeletonGraphicAdditive.mat,material
+b66cf7a186d13054989b33a5c90044e4/pathname,Assets/Spine/Runtime/spine-unity/Materials/SkeletonGraphicDefault.mat,material
+bfc4ecd22354c4d4fb43b85d82efacde/pathname,Assets/Spine/Runtime/spine-unity/Materials/SkeletonGraphicDefaultGrayscale.mat,material
+c4ee0f8f4be17434aa3df5774a03b366/pathname,Assets/Spine/Runtime/spine-unity/Materials/SkeletonGraphicDefaultOutline.mat,material
+e74a1f8978a7da348a721508d0d58834/pathname,Assets/Spine/Runtime/spine-unity/Materials/SkeletonGraphicMultiply.mat,material
+bab24c479f34eec45be6ea8595891569/pathname,Assets/Spine/Runtime/spine-unity/Materials/SkeletonGraphicScreen.mat,material
+cfcea0e11aa80bb4b8d05790b905fc31/pathname,Assets/Spine/Runtime/spine-unity/Materials/SkeletonGraphicTintBlack.mat,material
+94fe565c79b0aeb418cd05e4f1f8343c/pathname,Assets/Spine/Runtime/spine-unity/Materials/SkeletonGraphicTintBlackOutline.mat,material
+c5d065c4fe677ad4495a852580ec32fa/pathname,Assets/Spine/Runtime/spine-unity/Mesh Generation,spine_runtime
+08b76da7751523448a87e528c48a5399/pathname,Assets/Spine/Runtime/spine-unity/Mesh Generation/DoubleBuffered.cs,csharp
+311447d6e56727c4dad7611d5fa5afbf/pathname,Assets/Spine/Runtime/spine-unity/Mesh Generation/MeshGenerator.cs,csharp
+b1ab80744ac17724dbc0d15fdb6f4727/pathname,Assets/Spine/Runtime/spine-unity/Mesh Generation/MeshRendererBuffers.cs,csharp
+d07866ade25bd0b44a7bb1d59bacf4cb/pathname,Assets/Spine/Runtime/spine-unity/Mesh Generation/SkeletonRendererInstruction.cs,csharp
+f834c8746034db645a52a9506ff1de89/pathname,Assets/Spine/Runtime/spine-unity/Mesh Generation/SpineMesh.cs,csharp
+a7935399edad9a14bb5708cf59c94b67/pathname,Assets/Spine/Runtime/spine-unity/Modules,spine_runtime
+e70d3026a0242e5418232b2015be29f7/pathname,Assets/Spine/Runtime/spine-unity/Modules/TK2D,spine_runtime
+03238e4a73953c045a6cb289162532f3/pathname,Assets/Spine/Runtime/spine-unity/Modules/TK2D/SpriteCollectionAttachmentLoader.cs,csharp
+ef8189a68a74bec4eba582e65fb98dbd/pathname,Assets/Spine/Runtime/spine-unity/Shaders,spine_runtime
+baf1d09e18b500d41a714f6207ddda2d/pathname,Assets/Spine/Runtime/spine-unity/Shaders/BlendModes,spine_runtime
+53efa1d97f5d9f74285d4330cda14e36/pathname,Assets/Spine/Runtime/spine-unity/Shaders/BlendModes/Spine-Skeleton-PMA-Additive.shader,shader
+8bdcdc7ee298e594a9c20c61d25c33b6/pathname,Assets/Spine/Runtime/spine-unity/Shaders/BlendModes/Spine-Skeleton-PMA-Multiply.shader,shader
+4e8caa36c07aacf4ab270da00784e4d9/pathname,Assets/Spine/Runtime/spine-unity/Shaders/BlendModes/Spine-Skeleton-PMA-Screen.shader,shader
+511f90ee1fe01c146836d5ed23f2e70f/pathname,Assets/Spine/Runtime/spine-unity/Shaders/CGIncludes,spine_runtime
+f0c09e980440e7f4f8db4f9f146d320c/pathname,Assets/Spine/Runtime/spine-unity/Shaders/CGIncludes/Spine-Common.cginc,spine_runtime
+27351ce55d3beb643ae8d9385db21941/pathname,Assets/Spine/Runtime/spine-unity/Shaders/CGIncludes/Spine-DepthOnlyPass.cginc,spine_runtime
+a8d610b87be4e82409e18a63a930d335/pathname,Assets/Spine/Runtime/spine-unity/Shaders/CGIncludes/Spine-Outline-Common.cginc,spine_runtime
+c7297b25c81d2494e8e73b742e3c7345/pathname,Assets/Spine/Runtime/spine-unity/Shaders/CGIncludes/Spine-Skeleton-Lit-Common-Shadow.cginc,spine_runtime
+70c77c02aabd5e44f94aab48dd0be7b2/pathname,Assets/Spine/Runtime/spine-unity/Shaders/CGIncludes/Spine-Skeleton-Lit-Common.cginc,spine_runtime
+cc9439c8e75fb7e4c82ad725b649b047/pathname,Assets/Spine/Runtime/spine-unity/Shaders/CGIncludes/Spine-Skeleton-Tint-Common.cginc,spine_runtime
+e8c87a44b93daed4383ca2ca5dfb3c43/pathname,Assets/Spine/Runtime/spine-unity/Shaders/Outline,spine_runtime
+6a7bd28c2cf2e41499693d9f8f9e2e1a/pathname,Assets/Spine/Runtime/spine-unity/Shaders/Outline/BlendModes,spine_runtime
+0299ffae826705448b6c80ccc6a53b75/pathname,Assets/Spine/Runtime/spine-unity/Shaders/Outline/BlendModes/Spine-Skeleton-PMA-Additive-Outline.shader,shader
+4b3566a937643b8498d1ec6df5880b77/pathname,Assets/Spine/Runtime/spine-unity/Shaders/Outline/BlendModes/Spine-Skeleton-PMA-Multiply-Outline.shader,shader
+e61a8d94e453ff641a7e39c4b11cac95/pathname,Assets/Spine/Runtime/spine-unity/Shaders/Outline/BlendModes/Spine-Skeleton-PMA-Screen-Outline.shader,shader
+329bda94bce571446a1a149b53ccf45c/pathname,Assets/Spine/Runtime/spine-unity/Shaders/Outline/CGIncludes,spine_runtime
+2ec781e799f97504c8a418e168759f70/pathname,Assets/Spine/Runtime/spine-unity/Shaders/Outline/CGIncludes/Spine-Outline-Pass.cginc,spine_runtime
+6e8ed065898e65f4d9303492725fb912/pathname,Assets/Spine/Runtime/spine-unity/Shaders/Outline/SkeletonGraphic,spine_runtime
+8f5d14d2a7fedb84998c50eb96c8b748/pathname,Assets/Spine/Runtime/spine-unity/Shaders/Outline/SkeletonGraphic/Spine-SkeletonGraphic-Outline.shader,shader
+d55d64dd09c46af40a319933a62fa1b2/pathname,Assets/Spine/Runtime/spine-unity/Shaders/Outline/SkeletonGraphic/Spine-SkeletonGraphic-TintBlack-Outline.shader,shader
+e158cbe58baa093438feb3d691f3daba/pathname,Assets/Spine/Runtime/spine-unity/Shaders/Outline/Spine-Skeleton-Fill-Outline.shader,shader
+10fab3f69a099be4391fe8a1ad880c65/pathname,Assets/Spine/Runtime/spine-unity/Shaders/Outline/Spine-Skeleton-Lit-Outline.shader,shader
+756be4f2f738f6c4583bb1c90e16bf0b/pathname,Assets/Spine/Runtime/spine-unity/Shaders/Outline/Spine-Skeleton-Lit-ZWrite-Outline.shader,shader
+28b5cf4804845fe4b868531fd0bb81d5/pathname,Assets/Spine/Runtime/spine-unity/Shaders/Outline/Spine-Skeleton-Outline.shader,shader
+177da18c3d2e0aa4cb39990ea011973c/pathname,Assets/Spine/Runtime/spine-unity/Shaders/Outline/Spine-Skeleton-OutlineOnly-ZWrite.shader,shader
+4f1fdc166fed03649835949d3b79cba3/pathname,Assets/Spine/Runtime/spine-unity/Shaders/Outline/Spine-Skeleton-Tint-Outline.shader,shader
+49cf725a1e40e7742be92917f83946c3/pathname,Assets/Spine/Runtime/spine-unity/Shaders/Outline/Spine-Skeleton-TintBlack-Outline.shader,shader
+1d3e1518ae643a749b086bc7972893d2/pathname,Assets/Spine/Runtime/spine-unity/Shaders/Outline/Spine-Special-Skeleton-Grayscale-Outline.shader,shader
+615182d5e489bf3478299e5bbf15dc23/pathname,Assets/Spine/Runtime/spine-unity/Shaders/Outline/Sprite,spine_runtime
+a27d4b27c8ecd9840a03558ccc5ad8a3/pathname,Assets/Spine/Runtime/spine-unity/Shaders/Outline/Sprite/SpritesPixelLit-Outline.shader,shader
+276c07e3bdd5719458187a5823e9d96a/pathname,Assets/Spine/Runtime/spine-unity/Shaders/Outline/Sprite/SpritesUnlit-Outline.shader,shader
+30ef5dd318033004588a6481c092416a/pathname,Assets/Spine/Runtime/spine-unity/Shaders/Outline/Sprite/SpritesVertexLit-Outline.shader,shader
+7a42d52714848d64f8ff99dddb93500e/pathname,Assets/Spine/Runtime/spine-unity/Shaders/SkeletonGraphic,spine_runtime
+bd997792eb865a344a3271286a0d9341/pathname,Assets/Spine/Runtime/spine-unity/Shaders/SkeletonGraphic/CGIncludes,spine_runtime
+7f1f20f6ddb670f4998f78d0417912ee/pathname,Assets/Spine/Runtime/spine-unity/Shaders/SkeletonGraphic/CGIncludes/Spine-SkeletonGraphic-NormalPass.cginc,spine_runtime
+a1e4ab34b07f81e4e94f0d241c416669/pathname,Assets/Spine/Runtime/spine-unity/Shaders/SkeletonGraphic/Spine-SkeletonGraphic-Additive.shader,shader
+cfbf95ed0fe6c554c8c2ee6c8325937c/pathname,Assets/Spine/Runtime/spine-unity/Shaders/SkeletonGraphic/Spine-SkeletonGraphic-Multiply.shader,shader
+c61244023592f95479fddd71b5067683/pathname,Assets/Spine/Runtime/spine-unity/Shaders/SkeletonGraphic/Spine-SkeletonGraphic-Screen.shader,shader
+f64c7bc238bb2c246b8ca1912b2b6b9c/pathname,Assets/Spine/Runtime/spine-unity/Shaders/SkeletonGraphic/Spine-SkeletonGraphic-TintBlack.shader,shader
+fa95b0fb6983c0f40a152e6f9aa82bfb/pathname,Assets/Spine/Runtime/spine-unity/Shaders/SkeletonGraphic/Spine-SkeletonGraphic.shader,shader
+45495790b394f894a967dbf44489b57b/pathname,Assets/Spine/Runtime/spine-unity/Shaders/Spine-Skeleton-Fill.shader,shader
+fde05abf1f7be4b4da1caf8c8de1823a/pathname,Assets/Spine/Runtime/spine-unity/Shaders/Spine-Skeleton-Lit-ZWrite.shader,shader
+bd83c75f51f5e23498ae22ffcdfe92c3/pathname,Assets/Spine/Runtime/spine-unity/Shaders/Spine-Skeleton-Lit.shader,shader
+522f03282fd79be47b306e2ef4b593fd/pathname,Assets/Spine/Runtime/spine-unity/Shaders/Spine-Skeleton-Tint.shader,shader
+deee23ab4aa38564ead2ac05e112c169/pathname,Assets/Spine/Runtime/spine-unity/Shaders/Spine-Skeleton-TintBlack.shader,shader
+1e8a610c9e01c3648bac42585e5fc676/pathname,Assets/Spine/Runtime/spine-unity/Shaders/Spine-Skeleton.shader,shader
+ea7e7c05f36541b4bb280f98ebda8ba1/pathname,Assets/Spine/Runtime/spine-unity/Shaders/Spine-Special-Skeleton-Grayscale.shader,shader
+a831a8ed72a588a48b2fb892e7f37371/pathname,Assets/Spine/Runtime/spine-unity/Shaders/Sprite,spine_runtime
+4794ea6b2d07cc546ba97a809b5f9ada/pathname,Assets/Spine/Runtime/spine-unity/Shaders/Sprite/CameraDepthNormalsTexture.shader,shader
+f768a57e040cc48489ad8c7392a31154/pathname,Assets/Spine/Runtime/spine-unity/Shaders/Sprite/CameraDepthTexture.shader,shader
+537141eca02c6df4bb8b4f77567e9de2/pathname,Assets/Spine/Runtime/spine-unity/Shaders/Sprite/CameraNormalsTexture.shader,shader
+4b6fb48f295cd8248a7566315212a3c2/pathname,Assets/Spine/Runtime/spine-unity/Shaders/Sprite/CGIncludes,spine_runtime
+e1de23de2025abe4a84ff2edd3f24491/pathname,Assets/Spine/Runtime/spine-unity/Shaders/Sprite/CGIncludes/ShaderMaths.cginc,spine_runtime
+c18c5cab567666f4d8c5b2bd4e61390b/pathname,Assets/Spine/Runtime/spine-unity/Shaders/Sprite/CGIncludes/ShaderShared.cginc,spine_runtime
+0cfb891658099ca4bb0c9544c08e60f9/pathname,Assets/Spine/Runtime/spine-unity/Shaders/Sprite/CGIncludes/SpriteLighting.cginc,spine_runtime
+7ffc57e05c42ec748838bea0a3aff9f9/pathname,Assets/Spine/Runtime/spine-unity/Shaders/Sprite/CGIncludes/SpritePixelLighting.cginc,spine_runtime
+b7dbdfb1f55ee26459284220ad6d5bc4/pathname,Assets/Spine/Runtime/spine-unity/Shaders/Sprite/CGIncludes/SpriteShadows.cginc,spine_runtime
+f195336fc94457241a37a0aa85923681/pathname,Assets/Spine/Runtime/spine-unity/Shaders/Sprite/CGIncludes/SpriteSpecular.cginc,spine_runtime
+072e7b07ec7fb1346a9dcd3bcbbb7111/pathname,Assets/Spine/Runtime/spine-unity/Shaders/Sprite/CGIncludes/SpriteUnlit.cginc,spine_runtime
+c739dcf9dbcab944898d0b796e11afb9/pathname,Assets/Spine/Runtime/spine-unity/Shaders/Sprite/CGIncludes/SpriteVertexLighting.cginc,spine_runtime
+cecd0ea162097a94c89a97af6baf0a66/pathname,Assets/Spine/Runtime/spine-unity/Shaders/Sprite/README.md,spine_runtime
+abbda12fddbb0b048a842a3835470d30/pathname,Assets/Spine/Runtime/spine-unity/Shaders/Sprite/SpriteDepthNormalsTexture.shader,shader
+6f7a5a97a82637f478494bc40ea8c8a2/pathname,Assets/Spine/Runtime/spine-unity/Shaders/Sprite/SpritesPixelLit.shader,shader
+64005298b9a80bb4899eabd5140dc4a8/pathname,Assets/Spine/Runtime/spine-unity/Shaders/Sprite/SpritesUnlit.shader,shader
+2ce511398fb980f41b7d316c51534590/pathname,Assets/Spine/Runtime/spine-unity/Shaders/Sprite/SpritesVertexLit.shader,shader
+bc59776133d26dc469c8ba66bdc647e4/pathname,Assets/Spine/Runtime/spine-unity/Shaders/Utility,spine_runtime
+66988de88a15abd4e8846c6805485f57/pathname,Assets/Spine/Runtime/spine-unity/Shaders/Utility/Hidden-Spine-Bones.shader,shader
+43227e5adadc6f24bb4bf74b92a56fb4/pathname,Assets/Spine/Runtime/spine-unity/Shaders/Utility/HiddenPass.mat,material
+913475501bf19374c84390868a9d6d3d/pathname,Assets/Spine/Runtime/spine-unity/Shaders/Utility/HiddenPass.shader,shader
+5d7322e83d799d849bea71dbd6f1c24e/pathname,Assets/Spine/Runtime/spine-unity/SkeletonDataModifierAssets,spine_runtime
+16fbcfb5e341ff44bb99593fff04539d/pathname,Assets/Spine/Runtime/spine-unity/SkeletonDataModifierAssets/BlendModeMaterials,spine_runtime
+12b0b98acbcda44468a7ae4e35000abe/pathname,Assets/Spine/Runtime/spine-unity/SkeletonDataModifierAssets/BlendModeMaterials/BlendModeMaterialsAsset.cs,csharp
+22c0225612a65ee4fb15bad49f644762/pathname,Assets/Spine/Runtime/spine-unity/SkeletonDataModifierAssets/BlendModeMaterials/Default BlendModeMaterials.asset,spine_runtime
+4deba332d47209e4780b3c5fcf0e3745/pathname,Assets/Spine/Runtime/spine-unity/SkeletonDataModifierAssets/BlendModeMaterials/SkeletonPMAAdditive.mat,material
+53bf0ab317d032d418cf1252d68f51df/pathname,Assets/Spine/Runtime/spine-unity/SkeletonDataModifierAssets/BlendModeMaterials/SkeletonPMAMultiply.mat,material
+73f0f46d3177c614baf0fa48d646a9be/pathname,Assets/Spine/Runtime/spine-unity/SkeletonDataModifierAssets/BlendModeMaterials/SkeletonPMAScreen.mat,material
+517c2df5a5dc5d44a8b3820eca503d13/pathname,Assets/Spine/Runtime/spine-unity/SkeletonDataModifierAssets/BlendModeMaterials/SkeletonStraightAdditive.mat,material
+053fed1e18e65064ca564f05c4027e1e/pathname,Assets/Spine/Runtime/spine-unity/SkeletonDataModifierAssets/BlendModeMaterials/SkeletonStraightMultiply.mat,material
+1a66c2d7ee7642a459bd3831abeb30af/pathname,Assets/Spine/Runtime/spine-unity/SkeletonDataModifierAssets/BlendModeMaterials/SkeletonStraightScreen.mat,material
+ce216f51ebc1d3f40929f4e58d1c65e5/pathname,Assets/Spine/Runtime/spine-unity/SpineAttributes.cs,csharp
+52627c17e6dd4bf4dad4bdfc490ce823/pathname,Assets/Spine/Runtime/spine-unity/Utility,spine_runtime
+25ceef568a3dad448bf8a14fcc326964/pathname,Assets/Spine/Runtime/spine-unity/Utility/AtlasUtilities.cs,csharp
+3431ed563b2c62f4c8c974a99365ba52/pathname,Assets/Spine/Runtime/spine-unity/Utility/AttachmentCloneExtensions.cs,csharp
+7e7eac783deea004e9bc403eca68a7dc/pathname,Assets/Spine/Runtime/spine-unity/Utility/AttachmentRegionExtensions.cs,csharp
+a2f1169aaf0063f4da1c2b6033bbc13f/pathname,Assets/Spine/Runtime/spine-unity/Utility/BuildUtilities.cs,csharp
+e68fa8db689084946adce454b83e6d4a/pathname,Assets/Spine/Runtime/spine-unity/Utility/MaterialChecks.cs,csharp
+8f6692d1b45ac11459207a012cafeb03/pathname,Assets/Spine/Runtime/spine-unity/Utility/SettingsTriState.cs,csharp
+ea85c8f6a91a6ab45881b0dbdaabb7d0/pathname,Assets/Spine/Runtime/spine-unity/Utility/SkeletonExtensions.cs,csharp
+07807fefbff25484ba41b1d16911fb0e/pathname,Assets/Spine/Runtime/spine-unity/Utility/TimelineExtensions.cs,csharp
+15ac4befbee15d845ac289de3ab6d3d4/pathname,Assets/Spine/Runtime/spine-unity/Utility/YieldInstructions,spine_runtime
+d9be5adcaf0003849a1d181173c19635/pathname,Assets/Spine/Runtime/spine-unity/Utility/YieldInstructions/WaitForSpineAnimation.cs,csharp
+a807dd9fb79db3545b6c2859a2bbfc0b/pathname,Assets/Spine/Runtime/spine-unity/Utility/YieldInstructions/WaitForSpineAnimationComplete.cs,csharp
+3c5a5fe930d1ab24da154d76b24c2747/pathname,Assets/Spine/Runtime/spine-unity/Utility/YieldInstructions/WaitForSpineAnimationEnd.cs,csharp
+fc166d883db083e469872998172f2d38/pathname,Assets/Spine/Runtime/spine-unity/Utility/YieldInstructions/WaitForSpineEvent.cs,csharp
+8036c6c2897d2764db92f632d2aef568/pathname,Assets/Spine/Runtime/spine-unity/Utility/YieldInstructions/WaitForSpineTrackEntryEnd.cs,csharp
+80c06a67282e71043a4b1fad3e0c5654/pathname,Assets/Spine/version.txt,spine_runtime

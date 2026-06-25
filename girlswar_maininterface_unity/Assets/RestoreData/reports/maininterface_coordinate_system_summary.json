@@ -1,0 +1,115 @@
+{
+  "generated_at": "2026-06-25 13:20:40",
+  "rule_file": "C:\\Users\\godho\\Downloads\\apk_extracted_ui_restore_rules.txt",
+  "root_rect_id": "5568884429252053541",
+  "root_name": "UI_MainInterface",
+  "root_prefab_rect_is_zero_sized": true,
+  "direct_child_count": 14,
+  "runtime_design_width_candidate": 1680,
+  "runtime_design_height_candidate": 720,
+  "ui_bg_size_delta": {
+    "width": 1680.0,
+    "height": 720.0
+  },
+  "previous_1280_direction_status": "failed_visual_shape_check",
+  "current_coordinate_status": "1680x720_coordinate_basis_preferred_not_final_screen_complete",
+  "build": {
+    "scenePath": "Assets/Scenes/MainInterface_Wireframe.unity",
+    "rectTransformCount": 806,
+    "imageComponentCount": 977,
+    "spriteAppliedCount": 214,
+    "textComponentCount": 495,
+    "textAppliedCount": 138,
+    "scrollRectCount": 12,
+    "scrollRectAppliedCount": 3,
+    "buttonLogCount": 77,
+    "raycastProbeCount": 99,
+    "activeOverrideCount": 26,
+    "graphicRaycastOverrideCount": 3,
+    "restoreOverrideCount": 29,
+    "visualOverrideCount": 1,
+    "generatedAt": "2026-06-25 13:17:11"
+  },
+  "capture": {
+    "capturePath": "Assets/RestoreCaptures/maininterface_restored_1680x720.png",
+    "width": 1680,
+    "height": 720,
+    "visiblePixelCount": 1203057,
+    "generatedAt": "2026-06-25 13:18:19"
+  },
+  "click_validation": {
+    "generatedAt": "2026-06-25 13:18:41",
+    "totalButtons": 77,
+    "activeButtons": 24,
+    "inactiveButtons": 53,
+    "interactableButtons": 77,
+    "targetGraphicReadyButtons": 77,
+    "raycastClickableButtons": 24,
+    "raycastBlockedButtons": 0,
+    "invokedClicks": 24,
+    "moduleAndTargetMatches": 39,
+    "candidateModuleAndTargetMatches": 21,
+    "targetNameOnlyMatches": 1,
+    "missingLuaMatches": 16,
+    "csv": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_maininterface_unity\\Assets\\RestoreData\\reports\\maininterface_click_validation.csv",
+    "json": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_maininterface_unity\\Assets\\RestoreData\\reports\\maininterface_click_validation_summary.json",
+    "markdown": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\maininterface\\MAININTERFACE_CLICK_VALIDATION.md"
+  },
+  "click_blockers": {
+    "generated_at": "2026-06-25 13:18:58",
+    "total_buttons": 77,
+    "active_buttons": 24,
+    "inactive_buttons": 53,
+    "raycast_clickable_buttons": 24,
+    "active_blocked_buttons": 0,
+    "invoked_clicks": 24,
+    "category_counts": {},
+    "top_blocker_counts": {},
+    "lua_confidence_counts_for_active_blocked": {},
+    "buttons_by_category": {},
+    "outputs": {
+      "csv": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_maininterface_unity\\Assets\\RestoreData\\reports\\maininterface_click_blocker_analysis.csv",
+      "json": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_maininterface_unity\\Assets\\RestoreData\\reports\\maininterface_click_blocker_analysis_summary.json",
+      "md": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\maininterface\\MAININTERFACE_CLICK_BLOCKER_ANALYSIS.md"
+    }
+  },
+  "lua_screen_fit_evidence": [
+    {
+      "line": 3038,
+      "text": "local t=CS.UnityEngine.Screen.width*GameEntry.Instance.StandardHeight/CS.UnityEngine.Screen.height"
+    },
+    {
+      "line": 3039,
+      "text": "if(t<GameEntry.Instance.MinWidth)then"
+    },
+    {
+      "line": 3040,
+      "text": "t=GameEntry.Instance.MinWidth"
+    },
+    {
+      "line": 3041,
+      "text": "elseif(t>GameEntry.Instance.MaxWidth)then"
+    },
+    {
+      "line": 3042,
+      "text": "t=GameEntry.Instance.MaxWidth"
+    },
+    {
+      "line": 3043,
+      "text": "end"
+    },
+    {
+      "line": 3044,
+      "text": "local t=t"
+    },
+    {
+      "line": 3045,
+      "text": "local a=ScreenDesignHeight"
+    }
+  ],
+  "outputs": {
+    "root_children_csv": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_maininterface_unity\\Assets\\RestoreData\\reports\\maininterface_coordinate_root_children.csv",
+    "summary_json": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_maininterface_unity\\Assets\\RestoreData\\reports\\maininterface_coordinate_system_summary.json",
+    "markdown": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\maininterface\\MAININTERFACE_COORDINATE_SYSTEM_REBASE.md"
+  }
+}

@@ -1,0 +1,54 @@
+local a={id=0,questSort=0,openLevel=0,listLv=0,questType=0,team=0,teamSeq=0,next=0,needCount=0,priority=0,isActiveCount=0,isClose=0,numType=0,reward={{},{}},reward2={{},{}},text="",icon="",jump=0,listNum=0}
+a.__index=a
+function a.New(d,c,l,t,f,m,y,v,p,b,g,w,u,n,i,o,s,r,h)
+local e={}
+setmetatable(e,a)
+e.id=d
+e.questSort=c
+e.openLevel=l
+e.listLv=t
+e.questType=f
+e.team=m
+e.teamSeq=y
+e.next=v
+e.needCount=p
+e.priority=b
+e.isActiveCount=g
+e.isClose=w
+e.numType=u
+e.reward=n
+e.reward2=i
+e.text=o
+e.icon=s
+e.jump=r
+e.listNum=h
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.questSort=t[2]
+e.openLevel=t[3]
+e.listLv=t[4]
+e.questType=t[5]
+e.team=t[6]
+e.teamSeq=t[7]
+e.next=t[8]
+e.needCount=t[9]
+e.priority=t[10]
+e.isActiveCount=t[11]
+e.isClose=t[12]
+e.numType=t[13]
+e.reward=t[14]
+e.reward2=t[15]
+e.text=t[16]
+e.icon=t[17]
+e.jump=t[18]
+e.listNum=t[19]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/guild/DTGuildQuestEntityTableData')
+end
+return a 

@@ -1,0 +1,32 @@
+local a={id=0,describe="",parameter2=0,reward={{},{}},boxNum=0,jump=0,days=0,isClose=0}
+a.__index=a
+function a.New(i,h,n,t,d,r,s,o)
+local e={}
+setmetatable(e,a)
+e.id=i
+e.describe=h
+e.parameter2=n
+e.reward=t
+e.boxNum=d
+e.jump=r
+e.days=s
+e.isClose=o
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.describe=t[2]
+e.parameter2=t[3]
+e.reward=t[4]
+e.boxNum=t[5]
+e.jump=t[6]
+e.days=t[7]
+e.isClose=t[8]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/activity/DTNewYearFestivalTaskEntityTableData')
+end
+return a 

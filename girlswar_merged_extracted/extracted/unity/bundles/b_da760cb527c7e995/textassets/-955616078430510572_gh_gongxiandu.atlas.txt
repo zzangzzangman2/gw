@@ -1,0 +1,9 @@
+gh_gongxiandu.png
+size:128,64
+filter:Linear,Linear
+itemicon_1011
+bounds:60,4,46,54
+offsets:1,1,48,56
+itemicon_1011 A
+bounds:2,2,56,56
+offsets:1,1,59,58

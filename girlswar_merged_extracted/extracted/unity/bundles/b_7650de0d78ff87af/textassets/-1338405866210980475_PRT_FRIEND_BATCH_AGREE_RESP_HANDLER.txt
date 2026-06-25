@@ -1,0 +1,11 @@
+local t={}
+function t:OnHandle(e)
+local e=assert(GlobalPB.decode("PRT_FRIEND_BATCH_AGREE_RESP",e));
+if(GameInit.GetDebugLogProto())then
+;
+;
+end
+ModulesInit.FriendManage:OnFriendBatchAgreeResp(e)
+return e
+end
+return t 

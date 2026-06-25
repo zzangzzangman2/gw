@@ -1,0 +1,32 @@
+local a={id=0,taskGroup=0,taskGroupNum=0,questType=0,needCount={},reward={{},{}},text="",jump=0}
+a.__index=a
+function a.New(i,h,n,t,d,r,s,o)
+local e={}
+setmetatable(e,a)
+e.id=i
+e.taskGroup=h
+e.taskGroupNum=n
+e.questType=t
+e.needCount=d
+e.reward=r
+e.text=s
+e.jump=o
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.taskGroup=t[2]
+e.taskGroupNum=t[3]
+e.questType=t[4]
+e.needCount=t[5]
+e.reward=t[6]
+e.text=t[7]
+e.jump=t[8]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/activity/DTExhibitHallDesignerTaskEntityTableData')
+end
+return a 

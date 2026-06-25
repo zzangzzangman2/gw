@@ -1,0 +1,30 @@
+local t={id=0,level=0,heroId=0,consum={{},{}},attrs={{},{}},unlockSkill=0,weaponStar=0}
+t.__index=t
+function t.New(o,h,a,s,r,n,i)
+local e={}
+setmetatable(e,t)
+e.id=o
+e.level=h
+e.heroId=a
+e.consum=s
+e.attrs=r
+e.unlockSkill=n
+e.weaponStar=i
+return e
+end
+function t.NewFromArrItem(a)
+local e={}
+setmetatable(e,t)
+e.id=a[1]
+e.level=a[2]
+e.heroId=a[3]
+e.consum=a[4]
+e.attrs=a[5]
+e.unlockSkill=a[6]
+e.weaponStar=a[7]
+return e
+end
+function t.GetArr()
+return require('DataNode/DataTable/Create/hero/DTHeroExplosiveBeansEntityTableData')
+end
+return t 

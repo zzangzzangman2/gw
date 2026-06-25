@@ -1,0 +1,24 @@
+local e={id="",deskey="",hasReward=0,box=0}
+e.__index=e
+function e.New(o,a,n,i)
+local t={}
+setmetatable(t,e)
+t.id=o
+t.deskey=a
+t.hasReward=n
+t.box=i
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.deskey=a[2]
+t.hasReward=a[3]
+t.box=a[4]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/guild/DTGuildGiftinfoEntityTableData')
+end
+return e 

@@ -1,0 +1,11 @@
+local t={}
+function t:OnHandle(e)
+local e=assert(GlobalPB.decode("PRT_BURNING_RESET_RESP",e));
+if(GameInit.GetDebugLogProto())then
+;
+;
+end
+ModulesInit.ActBurningBuildMgr:SyncBurningBuildReset(e)
+return e
+end
+return t 

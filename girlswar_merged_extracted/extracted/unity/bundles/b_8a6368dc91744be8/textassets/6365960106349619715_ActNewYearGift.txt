@@ -1,0 +1,8 @@
+
+?
+ActNewYearGift.proto"
+PRT_NEW_YEAR_GIFT_INFO_REQ"S
+PRT_NEW_YEAR_GIFT_INFO_RESP
+leftTime (RleftTime
+giftDid (RgiftDidB
+com.next1b.nextsvr.protobproto3

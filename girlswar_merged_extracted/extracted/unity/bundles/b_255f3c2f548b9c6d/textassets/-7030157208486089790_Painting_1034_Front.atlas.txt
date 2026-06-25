@@ -1,0 +1,13 @@
+Painting_1034_Front.png
+size:2048,1024
+filter:Linear,Linear
+bgb2
+bounds:266,354,223,169
+bgb3
+bounds:1526,23,484,500
+bgb4
+bounds:801,109,724,414
+offsets:34,110,758,525
+bgb5
+bounds:2,2,808,521
+offsets:0,0,827,521

@@ -1,0 +1,28 @@
+local e=
+{
+ByIdx={
+{1,{920105,1},"UIActNewMarket_Treasure/xsjsbj_920105"},
+{2,{920205,1},"UIActNewMarket_Treasure/xsjsbj_920205"},
+{3,{920305,1},"UIActNewMarket_Treasure/xsjsbj_920305"},
+{4,{920405,1},"UIActNewMarket_Treasure/xsjsbj_920405"},
+{5,{920505,1},"UIActNewMarket_Treasure/xsjsbj_920505"},
+{6,{920605,1},"UIActNewMarket_Treasure/xsjsbj_920605"},
+{7,{920705,1},"UIActNewMarket_Treasure/xsjsbj_920705"},
+{8,{920805,1},"UIActNewMarket_Treasure/xsjsbj_920805"},
+{9,{920905,1},"UIActNewMarket_Treasure/xsjsbj_920905"},
+{10,{921005,1},"UIActNewMarket_Treasure/xsjsbj_921005"},
+{11,{921105,1},"UIActNewMarket_Treasure/xsjsbj_921105"},
+{12,{921205,1},"UIActNewMarket_Treasure/xsjsbj_921205"},
+{13,{921305,1},"UIActNewMarket_Treasure/xsjsbj_921305"},
+{14,{921405,1},"UIActNewMarket_Treasure/xsjsbj_921405"},
+{15,{921505,1},"UIActNewMarket_Treasure/xsjsbj_921505"},
+{16,{921605,1},"UIActNewMarket_Treasure/xsjsbj_921605"},
+{17,{921705,1},"UIActNewMarket_Treasure/xsjsbj_921705"},
+{18,{921805,1},"UIActNewMarket_Treasure/xsjsbj_921805"},
+{19,{921905,1},"UIActNewMarket_Treasure/xsjsbj_921905"},
+{20,{922005,1},"UIActNewMarket_Treasure/xsjsbj_922005"},
+{21,{922105,1},"UIActNewMarket_Treasure/xsjsbj_922105"}
+},
+Len=21
+}
+return e 

@@ -1,0 +1,27 @@
+local e=
+{
+ByIdx={
+{"HitArea_Exit",1},
+{"HitArea_PhotoWall",2},
+{"HitArea_Shoot",3},
+{"HitArea_Breast",4},
+{"HitArea_Foot3",5},
+{"HitArea_Wing",6},
+{"HitArea_ArmR",7},
+{"HitArea_HandL3",8},
+{"HitArea_Head",9},
+{"HitArea_Butt",10},
+{"HitArea_Tail",11},
+{"HitArea_LegL",12},
+{"HitArea_LegR",13},
+{"HitArea_ShoeL",14},
+{"HitArea_ShoeR",15},
+{"HitArea_Pants",16},
+{"HitArea_Camera",17},
+{"HitArea_Pen",18},
+{"HitArea_Gun",19},
+{"HitArea_Wine",20}
+},
+Len=20
+}
+return e 

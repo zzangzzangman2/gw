@@ -1,0 +1,152 @@
+{
+	"Version": 3,
+	"FileReferences": {
+		"Moc": "Live2d_1043.moc3",
+		"Textures": [
+			"Live2d_1043.2048/texture_00.png",
+			"Live2d_1043.2048/texture_01.png"
+		],
+		"Physics": "Live2d_1043.physics3.json",
+		"DisplayInfo": "Live2d_1043.cdi3.json",
+		"Expressions": [
+			{
+				"Name": "exp1",
+				"File": "expressions/exp1.exp3.json"
+			},
+			{
+				"Name": "exp2",
+				"File": "expressions/exp2.exp3.json"
+			}
+		],
+		"Motions": {
+			"": [
+				{
+					"File": "motions/bg.motion3.json"
+				},
+				{
+					"File": "motions/changeidle.motion3.json"
+				},
+				{
+					"File": "motions/idle.motion3.json"
+				},
+				{
+					"File": "motions/idle2.motion3.json"
+				},
+				{
+					"File": "motions/idle3.motion3.json"
+				},
+				{
+					"File": "motions/idle_01.motion3.json"
+				},
+				{
+					"File": "motions/idle_02.motion3.json"
+				},
+				{
+					"File": "motions/idle_03.motion3.json"
+				},
+				{
+					"File": "motions/in.motion3.json"
+				},
+				{
+					"File": "motions/rodMotou.motion3.json"
+				},
+				{
+					"File": "motions/rodNeiku.motion3.json"
+				},
+				{
+					"File": "motions/rodNeiyi.motion3.json"
+				},
+				{
+					"File": "motions/rodQunzi.motion3.json"
+				},
+				{
+					"File": "motions/rodSiwa.motion3.json"
+				},
+				{
+					"File": "motions/tapHand.motion3.json"
+				},
+				{
+					"File": "motions/tapHead1.motion3.json"
+				},
+				{
+					"File": "motions/tapHead2.motion3.json"
+				},
+				{
+					"File": "motions/tapLeg.motion3.json"
+				},
+				{
+					"File": "motions/tapLight.motion3.json"
+				},
+				{
+					"File": "motions/tapLight2.motion3.json"
+				},
+				{
+					"File": "motions/tapTail.motion3.json"
+				},
+				{
+					"File": "motions/tapWing.motion3.json"
+				},
+				{
+					"File": "motions/tapXiong1.motion3.json"
+				},
+				{
+					"File": "motions/tapXiong2.motion3.json"
+				}
+			]
+		}
+	},
+	"Groups": [
+		{
+			"Target": "Parameter",
+			"Name": "LipSync",
+			"Ids": []
+		},
+		{
+			"Target": "Parameter",
+			"Name": "EyeBlink",
+			"Ids": []
+		}
+	],
+	"HitAreas": [
+		{
+			"Id": "HitArea_Siwa",
+			"Name": ""
+		},
+		{
+			"Id": "HitAreaQunzi",
+			"Name": ""
+		},
+		{
+			"Id": "HitArea_Head",
+			"Name": ""
+		},
+		{
+			"Id": "HitArea_Chest",
+			"Name": ""
+		},
+		{
+			"Id": "HitArea_WingR",
+			"Name": ""
+		},
+		{
+			"Id": "HitArea_WingL",
+			"Name": ""
+		},
+		{
+			"Id": "HitArea_Light",
+			"Name": ""
+		},
+		{
+			"Id": "HitArea_Tail",
+			"Name": ""
+		},
+		{
+			"Id": "HitArea_Clothes",
+			"Name": ""
+		},
+		{
+			"Id": "HitArea_Hand",
+			"Name": ""
+		}
+	]
+}

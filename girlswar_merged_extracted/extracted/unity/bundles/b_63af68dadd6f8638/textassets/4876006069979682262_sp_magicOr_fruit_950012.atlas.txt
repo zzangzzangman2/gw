@@ -1,0 +1,16 @@
+sp_magicOr_fruit_950012.png
+size:256,256
+filter:Linear,Linear
+11
+bounds:168,28,60,52
+offsets:0,0,61,53
+A5
+bounds:138,81,60,67
+rotate:90
+B2
+bounds:138,142,88,104
+rotate:90
+C1
+bounds:0,0,167,77
+C4
+bounds:0,78,137,152

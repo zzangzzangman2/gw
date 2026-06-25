@@ -1,0 +1,30 @@
+local t={id=0,activityStage=0,level=0,nextLevel=0,goods=0,awards={{},{}},desc=""}
+t.__index=t
+function t.New(o,h,a,s,r,n,i)
+local e={}
+setmetatable(e,t)
+e.id=o
+e.activityStage=h
+e.level=a
+e.nextLevel=s
+e.goods=r
+e.awards=n
+e.desc=i
+return e
+end
+function t.NewFromArrItem(a)
+local e={}
+setmetatable(e,t)
+e.id=a[1]
+e.activityStage=a[2]
+e.level=a[3]
+e.nextLevel=a[4]
+e.goods=a[5]
+e.awards=a[6]
+e.desc=a[7]
+return e
+end
+function t.GetArr()
+return require('DataNode/DataTable/Create/activity/DTIslandAirshipGiftEntityTableData')
+end
+return t 

@@ -1,0 +1,32 @@
+local a={id=0,name="",color=0,buyCost={},fcuType=0,funcPara={},desc="",icon=""}
+a.__index=a
+function a.New(i,h,n,t,d,r,s,o)
+local e={}
+setmetatable(e,a)
+e.id=i
+e.name=h
+e.color=n
+e.buyCost=t
+e.fcuType=d
+e.funcPara=r
+e.desc=s
+e.icon=o
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.name=t[2]
+e.color=t[3]
+e.buyCost=t[4]
+e.fcuType=t[5]
+e.funcPara=t[6]
+e.desc=t[7]
+e.icon=t[8]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/maze/DTMazeItemEntityTableData')
+end
+return a 

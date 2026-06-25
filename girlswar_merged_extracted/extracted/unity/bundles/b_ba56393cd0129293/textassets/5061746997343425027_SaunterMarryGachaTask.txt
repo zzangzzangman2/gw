@@ -1,0 +1,19 @@
+
+?
+SaunterMarryGachaTask.proto"b
+PRT_SAUNTER_MARRY_GACHA_TASK
+score (Rscore,
+receivedAwardDids (RreceivedAwardDids"A
+%PRT_SAUNTER_MARRY_GACHA_TASK_INFO_REQ
+heroDid (RheroDid"?
+&PRT_SAUNTER_MARRY_GACHA_TASK_INFO_RESP
+leftTime (RleftTime
+heroDid (RheroDid9
+taskData (2.PRT_SAUNTER_MARRY_GACHA_TASKRtaskData"^
+&PRT_SAUNTER_MARRY_GACHA_TASK_AWARD_REQ
+heroDid (RheroDid
+awardDid (RawardDid"q
+'PRT_SAUNTER_MARRY_GACHA_TASK_AWARD_RESP
+heroDid (RheroDid,
+receivedAwardDids (RreceivedAwardDidsB
+com.next1b.nextsvr.protobproto3

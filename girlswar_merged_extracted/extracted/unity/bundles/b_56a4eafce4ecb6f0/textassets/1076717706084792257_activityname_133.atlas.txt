@@ -1,0 +1,5 @@
+activityname_133.png
+size:128,64
+filter:Linear,Linear
+2
+bounds:0,0,71,62

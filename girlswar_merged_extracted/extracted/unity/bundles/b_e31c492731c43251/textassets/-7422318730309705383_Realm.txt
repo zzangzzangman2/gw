@@ -1,0 +1,29 @@
+
+?
+Realm.proto"O
+PRT_REALM_GOODS
+did (Rdid
+count (Rcount
+total (Rtotal"
+PRT_REALM_INFO_REQ"?
+PRT_REALM_INFO_RESP.
+	exchanges (2.PRT_REALM_GOODSR	exchanges 
+refreshTime (RrefreshTime"
+drawLevelMax (RdrawLevelMax
+level (Rlevel
+exp (Rexp"A
+PRT_REALM_SHOP_EXCHANGE_REQ
+did (Rdid
+num (Rnum"N
+PRT_REALM_SHOP_EXCHANGE_RESP.
+	exchanges (2.PRT_REALM_GOODSR	exchanges"
+PRT_REALM_LEVEL_DRAW_REQ"?
+PRT_REALM_LEVEL_DRAW_RESP"
+drawLevelMax (RdrawLevelMax"?
+PRT_REALM_LEVEL_SYN
+levelB (RlevelB
+expB (RexpB
+level (Rlevel
+exp (Rexp
+addExp (RaddExpB
+com.next1b.nextsvr.protobproto3

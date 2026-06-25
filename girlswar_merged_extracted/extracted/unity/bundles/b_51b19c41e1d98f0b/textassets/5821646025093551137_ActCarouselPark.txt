@@ -1,0 +1,102 @@
+
+?
+ActCarouselPark.protoCommons.proto"a
+PRT_CAROUSEL_SKILL_DATA
+skillDid (RskillDid
+cd (Rcd
+skillPos (RskillPos"?
+PRT_CAROUSEL_PLAYER_DATA
+roleHp (RroleHp
+	roleMaxHp (R	roleMaxHp-
+buffs (2.PRT_CAROUSEL_BUFF_DATARbuffs
+curPos (RcurPos
+id (Rid
+isDead (RisDead"?
+PRT_CAROUSEL_MONSTER_DATA
+
+monsterDid (R
+monsterDid
+	monsterHp (R	monsterHp"
+monsterMaxHp (RmonsterMaxHp-
+buffs (2.PRT_CAROUSEL_BUFF_DATARbuffs0
+skill1 (2.PRT_CAROUSEL_SKILL_DATARskill10
+skill2 (2.PRT_CAROUSEL_SKILL_DATARskill2
+id (Rid"q
+PRT_CAROUSEL_GRID_DATA
+id (Rid-
+buffs (2.PRT_CAROUSEL_BUFF_DATARbuffs
+gridDid (RgridDid"?
+PRT_CAROUSEL_BUFF_DATA
+addFlag (RaddFlag
+buffDid (RbuffDid
+round (Rround
+times (Rtimes
+ownerId (RownerId"X
+PRT_CAROUSEL_HP_DATA
+targetId (RtargetId
+hp (Rhp
+maxHp (RmaxHp"?
+ PRT_CAROUSEL_GRID_TRIGGER_RECORD
+
+selfGridId (R
+selfGridIdD
+targetEventData (2.PRT_CAROUSEL_EVENT_RECORDRtargetEventData"?
+!PRT_CAROUSEL_SKILL_TRIGGER_RECORD
+skillDid (RskillDidD
+targetEventData (2.PRT_CAROUSEL_EVENT_RECORDRtargetEventData"?
+PRT_CAROUSEL_EVENT_RECORD
+param (Rparam-
+buffs (2.PRT_CAROUSEL_BUFF_DATARbuffs-
+grids (2.PRT_CAROUSEL_GRID_DATARgrids-
+hpData (2.PRT_CAROUSEL_HP_DATARhpData&
+rewardHpBoxIds (RrewardHpBoxIds 
+drops (2
+.PRT_THINGRdrops9
+
+playerData (2.PRT_CAROUSEL_PLAYER_DATAR
+playerData<
+monsterData (2.PRT_CAROUSEL_MONSTER_DATARmonsterData5
+	gridDatas	 (2.PRT_CAROUSEL_GRID_DATAR	gridDatas"?
+PRT_STAGE_DATA9
+
+playerData (2.PRT_CAROUSEL_PLAYER_DATAR
+playerData<
+monsterData (2.PRT_CAROUSEL_MONSTER_DATARmonsterData5
+	gridDatas (2.PRT_CAROUSEL_GRID_DATAR	gridDatas&
+rewardHpBoxIds (RrewardHpBoxIds"
+PRT_CAROUSEL_PARK_INFO_REQ"?
+PRT_CAROUSEL_PARK_INFO_RESP-
+	stageData (2.PRT_STAGE_DATAR	stageData,
+rewardProcessList (RrewardProcessList$
+diceRollCount (RdiceRollCount"n
+PRT_CAROUSEL_PARK_RANDOM_REQ
+type (Rtype
+	randomVal (R	randomVal
+	testParam (R	testParam"?
+PRT_CAROUSEL_PARK_RANDOM_RESP
+	randomVal (R	randomVal6
+beginAtk (2.PRT_CAROUSEL_EVENT_RECORDRbeginAtkE
+triggerGrids (2!.PRT_CAROUSEL_GRID_TRIGGER_RECORDRtriggerGrids>
+monsterBegins (2.PRT_CAROUSEL_SKILL_DATARmonsterBeginsH
+monsterSkills (2".PRT_CAROUSEL_SKILL_TRIGGER_RECORDRmonsterSkills3
+endBuffs (2.PRT_CAROUSEL_BUFF_DATARendBuffs9
+
+playerData (2.PRT_CAROUSEL_PLAYER_DATAR
+playerData<
+monsterData (2.PRT_CAROUSEL_MONSTER_DATARmonsterData$
+diceRollCount	 (RdiceRollCount"
+PRT_CAROUSEL_PARK_RELIVE_REQ"?
+PRT_CAROUSEL_PARK_RELIVE_RESP5
+
+roleHpData (2.PRT_CAROUSEL_HP_DATAR
+roleHpData 
+drops (2
+.PRT_THINGRdrops
+
+randomVals (R
+randomVals$
+diceRollCount (RdiceRollCount"&
+$PRT_CAROUSEL_PARK_REWARD_PROCESS_REQ"U
+%PRT_CAROUSEL_PARK_REWARD_PROCESS_RESP,
+rewardProcessList (RrewardProcessListB
+com.next1b.nextsvr.protobproto3

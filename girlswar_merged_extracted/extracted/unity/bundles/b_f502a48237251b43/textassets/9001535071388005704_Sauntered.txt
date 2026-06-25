@@ -1,0 +1,437 @@
+
+?c
+Sauntered.protoCommons.protoErrorCode.proto"
+PRT_SAUNTER_ACTINFO_REQ"?
+PRT_SAUNTER_ACTINFO_RESP
+	startTime (R	startTime
+endTime (RendTime
+	closeTime (R	closeTime
+stage (Rstage&
+danceStartTime (RdanceStartTime"
+danceEndTime (RdanceEndTime
+status (Rstatus
+belief
+ (Rbelief"
+dailyEndTime (RdailyEndTime
+
+stallCount (R
+stallCount.
+actItems (2.PRT_ACT_ITEM_INFORactItems
+heroDid (RheroDid
+recScore (RrecScore3
+	exchanges (2.PRT_SAUNTER_EXCHANGER	exchanges 
+fastSaunter (RfastSaunter
+drawOpen (RdrawOpen"Z
+PRT_SAUNTER_STALL_RESULT
+id (Rid.
+actItems (2.PRT_ACT_ITEM_INFORactItems"+
+PRT_SAUNTER_STALL_REQ
+type (Rtype"?
+PRT_SAUNTER_STALL_RESP=
+stallResults (2.PRT_SAUNTER_STALL_RESULTRstallResults
+
+stallCount (R
+stallCount&
+sacrificeCount (RsacrificeCount.
+actItems (2.PRT_ACT_ITEM_INFORactItems
+	chapCount (R	chapCount
+physical (Rphysical
+buff (Rbuff&
+physicalChange (RphysicalChange6
+unlockStalls
+ (2.PRT_SAUNTER_STALLRunlockStalls"
+PRT_SAUNTER_PHYSICAL_REQ"a
+PRT_SAUNTER_PHYSICAL_RESP
+physical (Rphysical(
+physicalCutdown (RphysicalCutdown"?
+PRT_SAUNTER_STALL_HERO
+heroDid (RheroDid
+time (Rtime
+recTime (RrecTime
+	chapCount (R	chapCount
+	fightSnap (R	fightSnap"?
+PRT_SAUNTER_STALL
+id (Rid
+level (Rlevel 
+isRecommend (RisRecommend7
+
+stallHeros (2.PRT_SAUNTER_STALL_HEROR
+stallHeros"?
+PRT_ACT_ITEM_INFO
+id (Rid
+count (Rcount
+collect (Rcollect
+firstGet (RfirstGet
+countAll (RcountAll"
+PRT_SAUNTER_STALL_INFO_REQ"?
+PRT_SAUNTER_STALL_INFO_RESP*
+stalls (2.PRT_SAUNTER_STALLRstalls&
+sacrificeCount (RsacrificeCount.
+actItems (2.PRT_ACT_ITEM_INFORactItems
+buff (Rbuff*
+
+danceAward (2
+.PRT_THINGR
+danceAward 
+beliefLevel (RbeliefLevel"
+recDanceFlag (RrecDanceFlag"+
+)PRT_SAUNTER_REC_YESTERDAY_DANCE_AWARD_REQ"X
+*PRT_SAUNTER_REC_YESTERDAY_DANCE_AWARD_RESP*
+
+danceAward (2
+.PRT_THINGR
+danceAward"$
+PRT_SAUNTER_UP_REQ
+id (Rid"?
+PRT_SAUNTER_UP_RESP(
+stall (2.PRT_SAUNTER_STALLRstall.
+actItems (2.PRT_ACT_ITEM_INFORactItems0
+newRecommendStallId (RnewRecommendStallId"D
+PRT_SAUNTER_DISPATCH_REQ
+id (Rid
+heroDid (RheroDid"E
+PRT_SAUNTER_DISPATCH_RESP(
+stall (2.PRT_SAUNTER_STALLRstall"
+PRT_SAUNTER_REC_PRODUCT_REQ"N
+PRT_SAUNTER_REC_PRODUCT_RESP.
+actItems (2.PRT_ACT_ITEM_INFORactItems"
+PRT_SAUNTER_PRODUCT_REQ"0
+PRT_SAUNTER_PRODUCT_RESP
+count (Rcount"@
+PRT_SAUNTER_EXCHANGE_REQ
+id (Rid
+count (Rcount"?
+PRT_SAUNTER_EXCHANGE_RESP
+id (Rid.
+actItems (2.PRT_ACT_ITEM_INFORactItems0
+	showItems (2.PRT_ACT_ITEM_INFOR	showItems"=
+PRT_SAUNTER_COLLECT_REQ
+id (Rid
+type (Rtype">
+PRT_SAUNTER_COLLECT_RESP
+id (Rid
+type (Rtype"=
+PRT_SAUNTER_MERGE_REQ
+count (Rcount
+id (Rid"^
+PRT_SAUNTER_MERGE_RESP.
+actItems (2.PRT_ACT_ITEM_INFORactItems
+count (Rcount"/
+PRT_SAUNTER_REC_FIRST_GET_REQ
+id (Rid"2
+PRT_SAUNTER_REC_FIRST_GET_RESP
+ids (Rids"?
+PRT_SAUNTER_EXCHANGE
+id (Rid
+count (Rcount
+
+targetItem (R
+targetItem
+costItem (RcostItem
+cutdown (Rcutdown
+status (Rstatus
+position (Rposition
+recCount	 (RrecCount
+playerId
+ (RplayerId
+head (Rhead
+	headFrame (R	headFrame
+name (	Rname"?
+PRT_SAUNTER_PUBLISH_REQ
+count (Rcount
+
+targetItem (R
+targetItem
+costItem (RcostItem
+position (Rposition"M
+PRT_SAUNTER_PUBLISH_RESP1
+exchange (2.PRT_SAUNTER_EXCHANGERexchange"
+PRT_SAUNTER_PUBLISH_LIST_REQ"T
+PRT_SAUNTER_PUBLISH_LIST_RESP3
+	exchanges (2.PRT_SAUNTER_EXCHANGER	exchanges"
+PRT_SAUNTER_HALL_REQ"L
+PRT_SAUNTER_HALL_RESP3
+	exchanges (2.PRT_SAUNTER_EXCHANGER	exchanges"{
+PRT_SAUNTER_EXCHANGE_FLOWER_REQ&
+targetPlayerId (RtargetPlayerId
+id (Rid 
+targetCount (RtargetCount"?
+ PRT_SAUNTER_EXCHANGE_FLOWER_RESP1
+exchange (2.PRT_SAUNTER_EXCHANGERexchange.
+actItems (2.PRT_ACT_ITEM_INFORactItems"0
+PRT_SAUNTER_REMOVE_PUBLISH_REQ
+id (Rid"1
+PRT_SAUNTER_REMOVE_PUBLISH_RESP
+id (Rid".
+PRT_SAUNTER_REC_EXCHANGE_REQ
+id (Rid"_
+PRT_SAUNTER_REC_EXCHANGE_RESP
+id (Rid.
+actItems (2.PRT_ACT_ITEM_INFORactItems"o
+PRT_SAUNTER_EXCHANGE_RECORD
+
+targetItem (R
+targetItem
+costItem (RcostItem
+count (Rcount"!
+PRT_SAUNTER_EXCHANGE_RECORD_REQ"Z
+ PRT_SAUNTER_EXCHANGE_RECORD_RESP6
+records (2.PRT_SAUNTER_EXCHANGE_RECORDRrecords"-
+PRT_SAUNTER_WORSHIP_REQ
+type (Rtype"?
+PRT_SAUNTER_WORSHIP_RESP
+belief (Rbelief
+	realCount (R	realCount.
+actItems (2.PRT_ACT_ITEM_INFORactItems 
+award (2
+.PRT_THINGRaward"
+PRT_SAUNTER_DANCE_INFO_REQ"W
+PRT_SAUNTER_DANCE_INFO_RESP 
+totalBelief (RtotalBelief
+belief (Rbelief"%
+#PRT_SAUNTER_TOMORROW_DANCE_INFO_REQ"r
+$PRT_SAUNTER_TOMORROW_DANCE_INFO_RESP&
+danceStartTime (RdanceStartTime"
+danceEndTime (RdanceEndTime"
+PRT_SAUNTER_REC_DANCE_REQ"
+PRT_SAUNTER_REC_DANCE_RESP"#
+!PRT_SAUNTER_QUERY_DANCE_AWARD_REQ"D
+"PRT_SAUNTER_QUERY_DANCE_AWARD_RESP
+
+danceAward (	R
+danceAward"
+PRT_SAUNTER_REC_PRESENT_REQ"F
+PRT_SAUNTER_REC_PRESENT_RESP&
+saunteredTimes (RsaunteredTimes"C
+PRT_SAUNTER_TASK_INFO_REQ&
+csHeroMarrayLv (RcsHeroMarrayLv"=
+PRT_SAUNTER_TASK_INFO_RESP
+tasks (2	.PRT_TASKRtasks"4
+PRT_SAUNTER_USE_PHYSICAL_REQ
+count (Rcount"Q
+PRT_SAUNTER_USE_PHYSICAL_RESP
+count (Rcount
+physical (Rphysical"4
+PRT_SAUNTER_REC_TASK_REQ
+taskDid (RtaskDid"5
+PRT_SAUNTER_REC_TASK_RESP
+taskDid (RtaskDid"
+PRT_SAUNTER_SHOP_INFO_REQ"\
+PRT_SAUNTER_SHOP_INFO_RESP 
+goods (2
+.PRT_GOODSRgoods
+	resetTime (R	resetTime"B
+PRT_SAUNTER_SHOP_BUY_REQ
+did (Rdid
+count (Rcount"-
+PRT_SAUNTER_SHOP_BUY_RESP
+did (Rdid"?
+PRT_SAUNTER_GUILD_RANK
+rank (Rrank
+guildId (RguildId
+	guildName (	R	guildName
+bg (Rbg
+fg (Rfg
+
+totalScore (R
+totalScore
+serverId (RserverId 
+captainName	 (	RcaptainName"
+PRT_SAUNTER_TOTAL_RANK_REQ"?
+PRT_SAUNTER_TOTAL_RANK_RESP&
+ranks (2.PRT_COMMON_RANKRranks,
+selfRank (2.PRT_COMMON_RANKRselfRankO
+guildTotalbBeliefRanks (2.PRT_SAUNTER_GUILD_RANKRguildTotalbBeliefRanksS
+selfGuildTotalBeliefRank (2.PRT_SAUNTER_GUILD_RANKRselfGuildTotalBeliefRank"?
+PRT_SAUNTER_PLAYER_BELIEF
+playerId (RplayerId
+head (Rhead
+	headFrame (R	headFrame
+name (	Rname
+belief (Rbelief"
+PRT_SAUNTER_PLAYER_BELIEF_REQ"?
+PRT_SAUNTER_PLAYER_BELIEF_RESP>
+playerBelief (2.PRT_SAUNTER_PLAYER_BELIEFRplayerBelief 
+totalBelief (RtotalBelief";
+PRT_SAUNTER_SELECT_HERO_NEW_REQ
+heroDid (RheroDid"<
+ PRT_SAUNTER_SELECT_HERO_NEW_RESP
+heroDid (RheroDid"
+PRT_SAUNTER_DRAW_INFO_NEW_REQ"x
+PRT_SAUNTER_DRAW_INFO_NEW_RESP
+leftTime (RleftTime
+
+drawNumber (R
+drawNumber
+multiple (Rmultiple"g
+PRT_SAUNTER_DRAW_NEW_REQ#
+type (2.ENUM_DRAW_TYPERtype&
+isCostCurrency (RisCostCurrency"?
+PRT_SAUNTER_DRAW_NEW_RESP#
+type (2.ENUM_DRAW_TYPERtype
+
+drawNumber (R
+drawNumber
+multiple (Rmultiple'
+awards (2.PRT_ONCE_AWARDRawards"
+PRT_SAUNTER_SHOP_NEW_REQ"n
+PRT_SAUNTER_SHOP_NEW_RESP1
+itemInfo (2.PRT_SAUNTER_ITEM_NEWRitemInfo
+
+isFirstDay (R
+isFirstDay"?
+#PRT_SAUNTER_FREE_GIFT_AWARD_NEW_REQ
+giftDid (RgiftDid"_
+$PRT_SAUNTER_FREE_GIFT_AWARD_NEW_RESP7
+giftBuyInfo (2.PRT_SAUNTER_ITEM_NEWRgiftBuyInfo"j
+PRT_SAUNTER_ITEM_NEW
+giftDid (RgiftDid
+buyTimes (RbuyTimes
+	resetTime (R	resetTime"!
+PRT_SAUNTER_BELIEF_INFO_NEW_REQ"V
+ PRT_SAUNTER_BELIEF_INFO_NEW_RESP
+ringDid (RringDid
+targets (Rtargets"9
+PRT_SAUNTER_BELIEF_DRAW_NEW_REQ
+target (Rtarget":
+ PRT_SAUNTER_BELIEF_DRAW_NEW_RESP
+target (Rtarget"f
+ PRT_SAUNTER_MARRY_GACHA_TASK_NEW
+score (Rscore,
+receivedAwardDids (RreceivedAwardDids"+
+)PRT_SAUNTER_MARRY_GACHA_TASK_INFO_NEW_REQ"?
+*PRT_SAUNTER_MARRY_GACHA_TASK_INFO_NEW_RESP
+leftTime (RleftTime
+heroDid (RheroDid=
+taskData (2!.PRT_SAUNTER_MARRY_GACHA_TASK_NEWRtaskData"H
+*PRT_SAUNTER_MARRY_GACHA_TASK_AWARD_NEW_REQ
+awardDid (RawardDid"u
++PRT_SAUNTER_MARRY_GACHA_TASK_AWARD_NEW_RESP
+heroDid (RheroDid,
+receivedAwardDids (RreceivedAwardDids"#
+!PRT_SAUNTER_SELECTED_HERO_NEW_REQ">
+"PRT_SAUNTER_SELECTED_HERO_NEW_RESP
+heroDid (RheroDid"?
+PRT_CS_SAUNTER_STALL_RESP
+playerId (RplayerId
+result (Rresult"
+errCode (2.ErrCodeRerrCode=
+stallResults (2.PRT_SAUNTER_STALL_RESULTRstallResults
+
+stallCount (R
+stallCount&
+sacrificeCount (RsacrificeCount.
+actItems (2.PRT_ACT_ITEM_INFORactItems
+	chapCount (R	chapCount
+physical	 (Rphysical
+buff
+ (Rbuff&
+physicalChange (RphysicalChange6
+unlockStalls (2.PRT_SAUNTER_STALLRunlockStalls"?
+PRT_CS_SAUNTER_REC_TASK_RESP
+playerId (RplayerId
+result (Rresult"
+errCode (2.ErrCodeRerrCode
+taskDid (RtaskDid"S
+PRT_SAUNTER_DISPATHC_HERO
+heroDid (RheroDid
+	fightSnap (R	fightSnap"{
+PRT_CS_SAUNTER_DISPATCH_REQ
+playerId (RplayerId
+id (Rid0
+heros (2.PRT_SAUNTER_DISPATHC_HERORheros"?
+PRT_CS_SAUNTER_EXCHANGE_RESP
+playerId (RplayerId
+id (Rid
+count (Rcount.
+actItems (2.PRT_ACT_ITEM_INFORactItems0
+	showItems (2.PRT_ACT_ITEM_INFOR	showItems"]
+PRT_CS_SAUNTER_HALL_REQ
+playerId (RplayerId&
+guildPlayerIds (RguildPlayerIds"k
+PRT_CS_SAUNTER_HALL_RESP
+playerId (RplayerId3
+	exchanges (2.PRT_SAUNTER_EXCHANGER	exchanges"?
+PRT_CS_SAUNTER_STALL_INFO_RESP
+playerId (RplayerId*
+stalls (2.PRT_SAUNTER_STALLRstalls&
+sacrificeCount (RsacrificeCount.
+actItems (2.PRT_ACT_ITEM_INFORactItems
+buff (Rbuff
+belief (Rbelief"
+recDanceFlag (RrecDanceFlag"?
+PRT_CS_SAUNTER_REC_PRESENT_REQ
+playerId (RplayerId 
+remainCount (RremainCount"
+notSplitChip (RnotSplitChip"?
+PRT_CS_SAUNTER_REC_PRESENT_RESP
+playerId (RplayerId
+ids (Rids&
+saunteredTimes (RsaunteredTimes
+stage (Rstage
+result (Rresult"
+errCode (2.ErrCodeRerrCode"?
+PRT_CS_SAUNTER_REC_DANCE_RESP
+playerId (RplayerId
+result (Rresult"
+errCode (2.ErrCodeRerrCode
+ids (Rids"S
+PRT_CS_SAUNTER_USE_PHYSICAL_REQ
+playerId (RplayerId
+count (Rcount"p
+ PRT_CS_SAUNTER_USE_PHYSICAL_RESP
+playerId (RplayerId
+count (Rcount
+physical (Rphysical"Q
+!PRT_CS_SAUNTER_REC_FIRST_GET_RESP
+playerId (RplayerId
+ids (Rids"b
+PRT_CS_SAUNTER_RED_POINT_REQ
+playerId (RplayerId&
+csHeroMarrayLv (RcsHeroMarrayLv"?
+PRT_CS_SAUNTER_RED_POINT_RESP
+playerId (RplayerId3
+redPointIds (2.ENUM_REDPOINT_IDRredPointIds2
+isSendToOnlinePlayer (RisSendToOnlinePlayer"?
+PRT_CS_SAUNTER_ACTINFO_RESP
+playerId (RplayerId
+	startTime (R	startTime
+endTime (RendTime
+	closeTime (R	closeTime
+stage (Rstage&
+danceStartTime (RdanceStartTime"
+danceEndTime (RdanceEndTime
+status (Rstatus
+belief (Rbelief"
+dailyEndTime	 (RdailyEndTime
+
+stallCount
+ (R
+stallCount.
+actItems (2.PRT_ACT_ITEM_INFORactItems
+recScore (RrecScore3
+	exchanges (2.PRT_SAUNTER_EXCHANGER	exchanges 
+fastSaunter (RfastSaunter"Z
+"PRT_CS_SAUNTER_SELECT_HERO_NEW_REQ
+playerId (RplayerId
+heroDid (RheroDid"?
+PRT_CS_SAUNTER_WORSHIP_RESP
+playerId (RplayerId
+result (Rresult"
+errCode (2.ErrCodeRerrCode
+belief (Rbelief
+	realCount (R	realCount.
+actItems (2.PRT_ACT_ITEM_INFORactItems
+	baseCfgId (R	baseCfgId"i
+'PRT_CS_SAUNTER_UPDATE_SAUNTER_STAGE_REQ
+playerId (RplayerId"
+saunterStage (RsaunterStage"j
+(PRT_CS_SAUNTER_UPDATE_SAUNTER_STAGE_RESP
+playerId (RplayerId"
+saunterStage (RsaunterStage"?
+-PRT_CS_SAUNTER_REC_YESTERDAY_DANCE_AWARD_RESP
+playerId (RplayerId
+result (Rresult"
+errCode (2.ErrCodeRerrCode
+belief (RbeliefB
+com.next1b.nextsvr.protobproto3

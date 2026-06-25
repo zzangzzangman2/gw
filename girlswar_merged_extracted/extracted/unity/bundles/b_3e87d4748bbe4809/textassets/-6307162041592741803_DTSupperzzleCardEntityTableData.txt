@@ -1,0 +1,22 @@
+local e=
+{
+ByIdx={
+{1,"CatEmoji_0"},
+{2,"CatEmoji_2"},
+{3,"CatEmoji_4"},
+{4,"CatEmoji_5"},
+{5,"CatEmoji_13"},
+{6,"CatEmoji_16"},
+{7,"CatEmoji_19"},
+{8,"CatEmoji_20"},
+{9,"CatEmoji_26"},
+{10,"CatEmoji_29"},
+{11,"CatEmoji_30"},
+{12,"CatEmoji_31"},
+{13,"CatEmoji_32"},
+{14,"CatEmoji_33"},
+{15,"CatEmoji_35"}
+},
+Len=15
+}
+return e 

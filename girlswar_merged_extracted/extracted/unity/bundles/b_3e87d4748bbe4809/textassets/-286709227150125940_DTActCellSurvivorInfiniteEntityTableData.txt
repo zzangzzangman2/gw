@@ -1,0 +1,8 @@
+local e=
+{
+ByIdx={
+{10001,1,5,"actCellSuvivor_desc3","Assets/Download/UI/UIPrefabAndRes/ActCellSuvivorGame_Ext_1/Item_CellSuvivor_StageMap1.prefab",{101,102,103},{201,202,203,204,205},20000}
+},
+Len=1
+}
+return e 

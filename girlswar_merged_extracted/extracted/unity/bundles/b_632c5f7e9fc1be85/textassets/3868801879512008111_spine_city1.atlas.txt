@@ -1,0 +1,148 @@
+spine_city1.png
+size:2048,1024
+filter:Linear,Linear
+c_1_f
+bounds:676,4,118,147
+offsets:47,0,166,148
+c_1_n
+bounds:796,4,118,147
+offsets:43,0,162,148
+c_1_t
+bounds:916,4,118,147
+offsets:43,0,162,148
+c_2_f
+bounds:539,21,135,130
+offsets:56,11,205,142
+c_2_n
+bounds:0,15,135,136
+offsets:32,0,168,137
+c_2_t
+bounds:137,15,135,136
+offsets:32,0,168,137
+c_3_n
+bounds:274,15,131,136
+offsets:51,0,182,136
+c_3_t
+bounds:407,15,130,136
+offsets:72,0,202,136
+effect/4/1205-1
+bounds:1465,18,84,106
+offsets:0,0,85,106
+effect/4/1205-10
+bounds:1474,247,101,109
+offsets:1,0,102,109
+effect/4/1205-11
+bounds:1637,53,79,94
+offsets:0,0,82,94
+effect/4/1205-12
+bounds:1718,78,45,93
+effect/4/1205-13
+bounds:0,6,8,7
+effect/4/1205-14
+bounds:10,7,5,6
+effect/4/1205-15
+bounds:7,0,3,4
+offsets:1,0,4,4
+effect/4/1205-16
+bounds:0,0,5,4
+offsets:0,0,5,5
+effect/4/1205-2
+bounds:1566,149,84,96
+effect/4/1205-3
+bounds:1363,358,118,109
+offsets:1,0,119,109
+effect/4/1205-4
+bounds:1036,25,125,126
+effect/4/1205-5
+bounds:1267,76,97,130
+effect/4/1205-6
+bounds:1163,42,102,131
+effect/4/1205-7
+bounds:1151,318,106,141
+effect/4/1205-8
+bounds:1373,242,99,114
+offsets:0,0,117,121
+effect/4/1205-9
+bounds:1278,469,112,118
+offsets:0,1,112,119
+effect/4_3/1205-1
+bounds:1551,18,84,106
+offsets:0,0,85,106
+effect/4_3/1205-10
+bounds:1483,367,101,109
+offsets:1,0,102,109
+effect/4_3/1205-11
+bounds:1652,173,79,94
+offsets:0,0,82,94
+effect/4_3/1205-12
+bounds:1432,930,45,93
+effect/4_3/1205-2
+bounds:1577,269,84,96
+effect/4_3/1205-3
+bounds:1392,478,118,109
+offsets:1,0,119,109
+effect/4_3/1205-4
+bounds:1151,461,125,126
+effect/4_3/1205-5
+bounds:1366,76,97,130
+effect/4_3/1205-6
+bounds:1259,328,102,131
+effect/4_3/1205-7
+bounds:1151,175,106,141
+effect/4_3/1205-8
+bounds:1465,126,99,114
+offsets:0,0,117,121
+effect/4_3/1205-9
+bounds:1259,208,112,118
+offsets:0,1,112,119
+effect_1/hero dragon smokeDecal_1
+bounds:290,371,287,216
+offsets:1,0,288,216
+effect_1/hero dragon smokeDecal_2
+bounds:0,807,288,216
+effect_1/hero dragon smokeDecal_3
+bounds:0,589,288,216
+effect_1/hero dragon smokeDecal_4
+bounds:0,371,288,216
+effect_1/hero dragon smokeDecal_5
+bounds:580,807,285,216
+offsets:0,0,288,216
+effect_1/hero dragon smokeDecal_6
+bounds:868,371,281,216
+offsets:0,0,286,216
+effect_1/hero dragon smokeDecal_7
+bounds:290,153,287,216
+offsets:0,0,288,216
+effect_1/hero dragon smokeDecal_8
+bounds:1151,807,279,216
+offsets:1,0,285,216
+effect_1/hero dragon smokeDecal_9
+bounds:867,807,282,216
+offsets:4,0,287,216
+effect_2/hero dragon smokeDecal_1
+bounds:579,371,287,216
+offsets:1,0,288,216
+effect_2/hero dragon smokeDecal_2
+bounds:0,153,288,216
+effect_2/hero dragon smokeDecal_3
+bounds:290,807,288,216
+effect_2/hero dragon smokeDecal_4
+bounds:290,589,288,216
+effect_2/hero dragon smokeDecal_5
+bounds:580,589,285,216
+offsets:0,0,288,216
+effect_2/hero dragon smokeDecal_6
+bounds:868,153,281,216
+offsets:0,0,286,216
+effect_2/hero dragon smokeDecal_7
+bounds:579,153,287,216
+offsets:0,0,288,216
+effect_2/hero dragon smokeDecal_8
+bounds:1151,589,279,216
+offsets:1,0,285,216
+effect_2/hero dragon smokeDecal_9
+bounds:867,589,282,216
+offsets:4,0,287,216
+shadow
+bounds:1267,7,152,67
+offsets:4,2,170,70

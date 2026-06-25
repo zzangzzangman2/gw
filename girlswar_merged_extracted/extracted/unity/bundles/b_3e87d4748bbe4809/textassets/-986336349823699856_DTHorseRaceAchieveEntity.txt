@@ -1,0 +1,28 @@
+local e={id=0,type=0,count=0,award={{},{}},jumpId=0,desc=""}
+e.__index=e
+function e.New(a,i,o,h,s,n)
+local t={}
+setmetatable(t,e)
+t.id=a
+t.type=i
+t.count=o
+t.award=h
+t.jumpId=s
+t.desc=n
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.type=a[2]
+t.count=a[3]
+t.award=a[4]
+t.jumpId=a[5]
+t.desc=a[6]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/activity/DTHorseRaceAchieveEntityTableData')
+end
+return e 

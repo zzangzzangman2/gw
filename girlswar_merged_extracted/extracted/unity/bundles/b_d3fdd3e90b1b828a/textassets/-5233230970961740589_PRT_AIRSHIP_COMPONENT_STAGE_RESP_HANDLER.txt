@@ -1,0 +1,11 @@
+local t={}
+function t:OnHandle(e)
+local e=assert(GlobalPB.decode("PRT_AIRSHIP_COMPONENT_STAGE_RESP",e));
+if(GameInit.GetDebugLogProto())then
+;
+;
+end
+AirShipMgr:OnResComponentStage(e)
+return e
+end
+return t 

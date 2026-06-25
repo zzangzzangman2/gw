@@ -1,0 +1,78 @@
+local a={id=0,x1={},x2={},x3={},x4={},x5={},x6={},x7={},x8={},x9={},x10={},x11={},x12={},x13={},x14={},x15={},x16={},x17={},x18={},x19={},x20={},x21={},x22={},x23={},x24={},x25={},x26={},x27={},x28={},x29={},x30={}}
+a.__index=a
+function a.New(u,v,y,t,q,j,k,b,g,z,T,_,O,I,A,E,N,x,p,r,s,h,n,o,i,d,c,l,f,w,m)
+local e={}
+setmetatable(e,a)
+e.id=u
+e.x1=v
+e.x2=y
+e.x3=t
+e.x4=q
+e.x5=j
+e.x6=k
+e.x7=b
+e.x8=g
+e.x9=z
+e.x10=T
+e.x11=_
+e.x12=O
+e.x13=I
+e.x14=A
+e.x15=E
+e.x16=N
+e.x17=x
+e.x18=p
+e.x19=r
+e.x20=s
+e.x21=h
+e.x22=n
+e.x23=o
+e.x24=i
+e.x25=d
+e.x26=c
+e.x27=l
+e.x28=f
+e.x29=w
+e.x30=m
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.x1=t[2]
+e.x2=t[3]
+e.x3=t[4]
+e.x4=t[5]
+e.x5=t[6]
+e.x6=t[7]
+e.x7=t[8]
+e.x8=t[9]
+e.x9=t[10]
+e.x10=t[11]
+e.x11=t[12]
+e.x12=t[13]
+e.x13=t[14]
+e.x14=t[15]
+e.x15=t[16]
+e.x16=t[17]
+e.x17=t[18]
+e.x18=t[19]
+e.x19=t[20]
+e.x20=t[21]
+e.x21=t[22]
+e.x22=t[23]
+e.x23=t[24]
+e.x24=t[25]
+e.x25=t[26]
+e.x26=t[27]
+e.x27=t[28]
+e.x28=t[29]
+e.x29=t[30]
+e.x30=t[31]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/maze/DTMazeMapEntityTableData')
+end
+return a 

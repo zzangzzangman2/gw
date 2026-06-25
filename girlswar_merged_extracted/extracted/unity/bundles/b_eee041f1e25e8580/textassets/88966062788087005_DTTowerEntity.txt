@@ -1,0 +1,86 @@
+local a={id=0,name="",mapName="",roomPrefabId=0,roomConnect={{},{}},battlePrefabId=0,mosterName="",Icon="",level=0,mapType=0,subType=0,isPuzzle=0,nextMap={},needLevel=0,heroNum=0,unlockType=0,unlockPara="",starConditions={{},{}},monsterLists={},score=0,suppress=0,enemy=0,npc=0,npcType=0,mine=0,npcDrop={{},{}},starDrop1={{},{}},starDrop2={{},{}},starDrop3={{},{}},idleGold=0,idleFame=0,idleTowerCoin=0,firstDropLoveFiveBox={{},{}},firstDropBoxWeek={{},{}},nextlevelPara={}}
+a.__index=a
+function a.New(m,g,v,t,z,_,x,k,q,j,T,N,A,H,R,S,O,I,D,E,b,d,h,r,s,o,i,n,l,f,u,y,p,w,c)
+local e={}
+setmetatable(e,a)
+e.id=m
+e.name=g
+e.mapName=v
+e.roomPrefabId=t
+e.roomConnect=z
+e.battlePrefabId=_
+e.mosterName=x
+e.Icon=k
+e.level=q
+e.mapType=j
+e.subType=T
+e.isPuzzle=N
+e.nextMap=A
+e.needLevel=H
+e.heroNum=R
+e.unlockType=S
+e.unlockPara=O
+e.starConditions=I
+e.monsterLists=D
+e.score=E
+e.suppress=b
+e.enemy=d
+e.npc=h
+e.npcType=r
+e.mine=s
+e.npcDrop=o
+e.starDrop1=i
+e.starDrop2=n
+e.starDrop3=l
+e.idleGold=f
+e.idleFame=u
+e.idleTowerCoin=y
+e.firstDropLoveFiveBox=p
+e.firstDropBoxWeek=w
+e.nextlevelPara=c
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.name=t[2]
+e.mapName=t[3]
+e.roomPrefabId=t[4]
+e.roomConnect=t[5]
+e.battlePrefabId=t[6]
+e.mosterName=t[7]
+e.Icon=t[8]
+e.level=t[9]
+e.mapType=t[10]
+e.subType=t[11]
+e.isPuzzle=t[12]
+e.nextMap=t[13]
+e.needLevel=t[14]
+e.heroNum=t[15]
+e.unlockType=t[16]
+e.unlockPara=t[17]
+e.starConditions=t[18]
+e.monsterLists=t[19]
+e.score=t[20]
+e.suppress=t[21]
+e.enemy=t[22]
+e.npc=t[23]
+e.npcType=t[24]
+e.mine=t[25]
+e.npcDrop=t[26]
+e.starDrop1=t[27]
+e.starDrop2=t[28]
+e.starDrop3=t[29]
+e.idleGold=t[30]
+e.idleFame=t[31]
+e.idleTowerCoin=t[32]
+e.firstDropLoveFiveBox=t[33]
+e.firstDropBoxWeek=t[34]
+e.nextlevelPara=t[35]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/mijing/DTTowerEntityTableData')
+end
+return a 

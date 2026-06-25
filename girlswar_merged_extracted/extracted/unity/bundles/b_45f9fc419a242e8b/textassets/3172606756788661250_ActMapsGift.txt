@@ -1,0 +1,10 @@
+
+?
+ActMapsGift.proto"G
+PRT_MAPS_GIFT
+giftDid (RgiftDid
+	endSecond (R	endSecond"
+PRT_MAPS_GIFT_INFO_REQ"=
+PRT_MAPS_GIFT_INFO_RESP"
+gift (2.PRT_MAPS_GIFTRgiftB
+com.next1b.nextsvr.protobproto3

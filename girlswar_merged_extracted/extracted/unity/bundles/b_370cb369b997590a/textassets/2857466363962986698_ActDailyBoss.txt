@@ -1,0 +1,34 @@
+
+?
+ActDailyBoss.protoCommons.protoFormation.protoFight.protoErrorCode.proto"
+PRT_DAILY_BOSS_INFO_REQ"?
+PRT_DAILY_BOSS_INFO_RESP 
+dayLeftTime (RdayLeftTime
+bossDid (RbossDid
+
+dmgSelfMax (R
+dmgSelfMax
+dmgMax (RdmgMax
+rank (Rrank"?
+PRT_DAILY_BOSS_FIGHT_BEFORE_REQG
+formationPositions (2.PRT_FORMATION_POSITIONRformationPositionsQ
+formationAlterPositions (2.PRT_FORMATION_POSITIONRformationAlterPositions"S
+ PRT_DAILY_BOSS_FIGHT_BEFORE_RESP/
+
+beforeInfo (2.PRT_FIGHT_PLAYR
+beforeInfo"K
+PRT_DAILY_BOSS_FIGHT_REQ/
+
+battleInfo (2.PRT_FIGHT_PLAYR
+battleInfo"?
+PRT_DAILY_BOSS_FIGHT_RESP"
+errCode (2.ErrCodeRerrCode
+invalid (Rinvalid!
+award (2.PRT_REWARDRaward
+dmg (Rdmg
+dmgNext (RdmgNext"
+PRT_DAILY_BOSS_RANK_REQ"x
+PRT_DAILY_BOSS_RANK_RESP.
+	rankDatas (2.PRT_COMMON_RANKR	rankDatas,
+selfRank (2.PRT_COMMON_RANKRselfRankB
+com.next1b.nextsvr.protobproto3

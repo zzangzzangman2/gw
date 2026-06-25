@@ -1,0 +1,13 @@
+activityname_18.png
+size:128,256
+filter:Linear,Linear
+chibang
+bounds:22,144,31,25
+shou
+bounds:0,150,20,19
+st
+bounds:0,95,46,47
+tou
+bounds:0,0,95,93
+yanjing
+bounds:55,138,38,31

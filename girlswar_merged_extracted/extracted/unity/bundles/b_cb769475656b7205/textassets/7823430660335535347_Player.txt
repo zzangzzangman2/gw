@@ -1,0 +1,381 @@
+
+?O
+Player.protoCommons.protoSnapshot.protoFriend.proto"L
+PRT_PLAYER_SETTING 
+id (2.ENUM_SETTING_IDRid
+value (Rvalue"?
+PRT_SHOW_HERO
+heroDid (RheroDid 
+isUnderwear (RisUnderwear
+isMarry (RisMarry 
+isSelfMarry (RisSelfMarry"?
+PRT_PLAYER_LOGIN_REQ
+acc (	Racc
+plat (	Rplat
+serverId (RserverId
+idfa (	Ridfa
+ext (	Rext
+	phoneInfo (	R	phoneInfo"
+phoneVersion (	RphoneVersion
+
+appVersion (	R
+appVersion
+
+resVersion	 (	R
+resVersion"?
+PRT_PLAYER_LOGIN_RESP
+ret (Rret
+uid (Ruid
+ts (Rts*
+serverLaunchTime (RserverLaunchTime
+stepId (RstepId"?
+PRT_PLAYER_CREATE_REQ
+acc (	Racc
+sex (Rsex
+name (	Rname
+plat (	Rplat
+serverId (RserverId
+idfa (	Ridfa
+ext (	Rext
+	phoneInfo (	R	phoneInfo"
+phoneVersion	 (	RphoneVersion
+
+appVersion
+ (	R
+appVersion
+
+resVersion (	R
+resVersion
+accType (	RaccType"x
+PRT_PLAYER_CREATE_RESP
+ret (Rret
+uid (Ruid
+ts (Rts*
+serverLaunchTime (RserverLaunchTime"?
+
+PRT_PLAYER_INFO_RESP
+acc (	Racc
+uid (Ruid
+name (	Rname
+sex (Rsex
+level (Rlevel
+sign (	Rsign
+vip (Rvip
+head (Rhead"
+bagSizeEquip	 (RbagSizeEquip*
+buyBagCountEquip
+ (RbuyBagCountEquip*
+bagSizeUnderwear (RbagSizeUnderwear2
+buyBagCountUnderwear (RbuyBagCountUnderwear
+maxMap (RmaxMap
+curMap (RcurMap"
+buyFastCount (RbuyFastCount0
+fastTicketUsedCount (RfastTicketUsedCount"
+buyBossCount (RbuyBossCount
+guildId (RguildId$
+showHeroIndex (RshowHeroIndex
+role (Rrole
+	headFrame (R	headFrame
+profile (Rprofile
+	guildName (	R	guildName
+
+createTime (R
+createTime
+
+loverLevel (R
+loverLevel
+loverExp (RloverExp
+guildPos (RguildPos"
+buyGoldCount (RbuyGoldCount$
+equipSellAuto (RequipSellAuto/
+settings (2.PRT_PLAYER_SETTINGRsettings
+
+firstValue (R
+firstValue0
+fastTicketUsedLimit  (RfastTicketUsedLimit(
+changeNameCount! (RchangeNameCount 
+maxTowerMap" (RmaxTowerMap$
+firstValueExt# (RfirstValueExt
+officer$ (Rofficer
+	chatFrame% (R	chatFrame,
+perfectResolveNum& (RperfectResolveNum 
+lordProfile' (RlordProfile.
+useLordProfileAttr( (RuseLordProfileAttr$
+activeProfile) (RactiveProfile"?
+PRT_PLAYER_INFO_EXT_RESP"
+joinGuildAgo (RjoinGuildAgo&
+hotUpdateAward (RhotUpdateAward0
+multiEliteLeftTimes (RmultiEliteLeftTimes 
+curMapElite (RcurMapElite 
+maxMapElite (RmaxMapElite(
+isNewSummonDoor (RisNewSummonDoor
+fightMax (RfightMax2
+isOpenMineBattleShop (RisOpenMineBattleShop
+fightExt	 (RfightExt*
+serverCreateTime
+ (RserverCreateTime&
+equipMakeCount (RequipMakeCount
+petAtk (RpetAtk2
+groupPhoto2BuffCount (RgroupPhoto2BuffCount(
+guildRadarLevel (RguildRadarLevel"?
+LIMIT_BUFF_INFO
+
+activityId (R
+activityId
+stage (Rstage
+time (Rtime
+buffDid (RbuffDid
+
+activeAttr (R
+activeAttr
+count (Rcount"N
+PRT_PLAYER_LIMIT_BUFF_LIST_SYN,
+buffList (2.LIMIT_BUFF_INFORbuffList"<
+PRT_PLAYER_CURRENCY_SYN!
+curs (2.PRT_CURRENCYRcurs"?
+PRT_PLAYER_COMPLETE_RESP
+serverId (RserverId
+groupCap (RgroupCap"
+mergeServers (	RmergeServers&
+originServerId (RoriginServerId"
+PRT_PLAYER_HEART_REQ"e
+PRT_PLAYER_HEART_RESP
+ver (	Rver
+
+serverTime (R
+serverTime
+timeZone (RtimeZone"A
+PRT_PLAYER_KICK_RESP)
+reason (2.ENUM_KICK_REASONRreason"0
+PRT_PLAYER_CHANGE_NAME_REQ
+name (	Rname"C
+PRT_PLAYER_CHANGE_NAME_RESP
+ret (Rret
+name (	Rname"0
+PRT_PLAYER_CHANGE_SIGN_REQ
+sign (	Rsign"1
+PRT_PLAYER_CHANGE_SIGN_RESP
+sign (	Rsign"L
+PRT_PLAYER_LEVEL_UP_RESP
+level (Rlevel
+oldLevel (RoldLevel"|
+PRT_PLAYER_VIP_LEVEL_UP_RESP
+level (Rlevel
+oldVip (RoldVip.
+rewardThings (2
+.PRT_THINGRrewardThings"
+PRT_PLAYER_AVAILABLE_REQ"?
+PRT_PLAYER_AVAILABLE_RESP
+heads (Rheads
+
+headFrames (R
+headFrames
+profiles (Rprofiles
+emojis (Remojis'
+frames (2.PRT_HEAD_FRAMERframes
+
+chatFrames (R
+chatFrames,
+groupPhotoBookIds (RgroupPhotoBookIds"
+lordProfiles (RlordProfiles"D
+PRT_HEAD_FRAME
+	headFrame (R	headFrame
+param (	Rparam"0
+PRT_PLAYER_CHANGE_HEAD_REQ
+head (Rhead"1
+PRT_PLAYER_CHANGE_HEAD_RESP
+head (Rhead"@
+ PRT_PLAYER_CHANGE_HEAD_FRAME_REQ
+	headFrame (R	headFrame"A
+!PRT_PLAYER_CHANGE_HEAD_FRAME_RESP
+	headFrame (R	headFrame"i
+PRT_PLAYER_CHANGE_PROFILE_REQ
+profile (Rprofile.
+useLordProfileAttr (RuseLordProfileAttr"j
+PRT_PLAYER_CHANGE_PROFILE_RESP
+profile (Rprofile.
+useLordProfileAttr (RuseLordProfileAttr">
+ PRT_PLAYER_CHANGE_CHAT_FRAME_REQ
+frameDid (RframeDid"?
+!PRT_PLAYER_CHANGE_CHAT_FRAME_RESP
+frameDid (RframeDid":
+PRT_PLAYER_FUNC_OPEN_SET_REQ
+funcList (	RfuncList"=
+PRT_PLAYER_FUNC_OPEN_LOGIN_RESP
+funcList (	RfuncList"G
+PRT_PLAYER_BUY_BAG_SIZE_REQ
+type (Rtype
+count (Rcount"L
+PRT_PLAYER_BUY_BAG_SIZE_RESP
+type (Rtype
+newSize (RnewSize"M
+PRT_PLAYER_VIEW_REQ
+playerId (RplayerId
+serverId (RserverId"?
+PRT_PLAYER_VIEW_RESP0
+
+playerInfo (2.PRT_PLAYER_INFOR
+playerInfo4
+friendState (2.ENUM_FRIEND_STATERfriendState
+isBan (RisBan
+serverId (RserverId"
+selfPlayerId (RselfPlayerId"P
+PRT_PLAYER_CHANGE_SETTING_REQ/
+settings (2.PRT_PLAYER_SETTINGRsettings"Q
+PRT_PLAYER_CHANGE_SETTING_RESP/
+settings (2.PRT_PLAYER_SETTINGRsettings"F
+PRT_PLAYER_EQUIP_SELL_AUTO_REQ$
+equipSellAuto (RequipSellAuto"G
+PRT_PLAYER_EQUIP_SELL_AUTO_RESP$
+equipSellAuto (RequipSellAuto"r
+$PRT_PLAYER_MODIFY_SHOW_HERO_LIST_REQ$
+showHeroIndex (RshowHeroIndex$
+heros (2.PRT_SHOW_HERORheros"'
+%PRT_PLAYER_MODIFY_SHOW_HERO_LIST_RESP"M
+%PRT_PLAYER_MODIFY_SHOW_HERO_INDEX_REQ$
+showHeroIndex (RshowHeroIndex"(
+&PRT_PLAYER_MODIFY_SHOW_HERO_INDEX_RESP"@
+PRT_PLAYER_SHOW_HERO_SYN$
+heros (2.PRT_SHOW_HERORheros"F
+PRT_PLAYER_MAIL_PASS_SET_REQ
+mail (	Rmail
+pass (	Rpass"G
+PRT_PLAYER_MAIL_PASS_SET_RESP
+mail (	Rmail
+pass (	Rpass"&
+PRT_CDK_CODE_REQ
+code (	Rcode"'
+PRT_CDK_CODE_RESP
+code (	Rcode"
+PRT_PLAYER_RECOMMEND_NAME_REQ"6
+PRT_PLAYER_RECOMMEND_NAME_RESP
+names (	Rnames"?
+PRT_SERVICE_SUBSCRIBE_INFOB
+subscribeType (2.ENUM_SERVICE_SUBSCRIBE_TYPERsubscribeType
+	subscribe (R	subscribe
+param1 (	Rparam1
+param2 (	Rparam2"?
+PRT_SERVICE_SUBSCRIBE_REQ;
+
+subscribes (2.PRT_SERVICE_SUBSCRIBE_INFOR
+subscribes*
+switchBackground (RswitchBackground"?
+PRT_SERVICE_SUBSCRIBE_RESP;
+
+subscribes (2.PRT_SERVICE_SUBSCRIBE_INFOR
+subscribes*
+switchBackground (RswitchBackground"3
+PRT_SERVER_OPEN_DAY_SYN
+openDay (RopenDay"?
+PRT_HEAD_FRAME_CONDITION_SYN"
+fightRankMax (RfightRankMax"
+arenaRankMax (RarenaRankMax&
+arenaCsRankMax (RarenaCsRankMax"
+titanRankMax (RtitanRankMax4
+townerRescueGirlCount (RtownerRescueGirlCount*
+gvgHornorRankMax (RgvgHornorRankMaxH
+gvgThreeCityOwnerSeasonCountMax (RgvgThreeCityOwnerSeasonCountMax(
+allCitiesAcitve (RallCitiesAcitve&
+allCitiesLvMax	 (RallCitiesLvMax"1
+PRT_PLAYER_PUSH_TOKEN_REQ
+token (	Rtoken"^
+PRT_PLAYER_GUIDE
+unit (Runit
+isFinish (RisFinish
+isReward (RisReward"?
+PRT_PLAYER_GUIDE_REQ'
+guide (2.PRT_PLAYER_GUIDERguide"1
+PRT_PLAYER_GUIDE_SKIP_REQ
+units (Runits"2
+PRT_PLAYER_GUIDE_SKIP_RESP
+units (Runits".
+PRT_PLAYER_GUIDE_AWARD_REQ
+did (Rdid"/
+PRT_PLAYER_GUIDE_AWARD_RESP
+did (Rdid"A
+PRT_PLAYER_GUIDE_SYN)
+guides (2.PRT_PLAYER_GUIDERguides"2
+PRT_PLAYER_FIRST_OPEN_UI_REQ
+uiId (RuiId"3
+PRT_PLAYER_FIRST_OPEN_UI_RESP
+uiId (RuiId"4
+PRT_PLAYER_FIRST_OPEN_UI_SYN
+uiIds (RuiIds"!
+PRT_PLAYER_HOT_UPDATE_AWARD_REQ"J
+ PRT_PLAYER_HOT_UPDATE_AWARD_RESP&
+hotUpdateAward (RhotUpdateAward"
+PRT_PLAYER_EVALUATE_CHECK_REQ"@
+PRT_PLAYER_EVALUATE_CHECK_RESP
+
+isCanAward (R
+isCanAward"
+PRT_PLAYER_EVALUATE_AWARD_REQ"C
+PRT_PLAYER_EVALUATE_AWARD_RESP!
+award (2.PRT_REWARDRaward"
+PRT_PLAYER_DELETE_REQ"
+PRT_PLAYER_DELETE_RESP"4
+PRT_PLAYER_STEP_UPDATE_REQ
+stepId (RstepId"5
+PRT_PLAYER_STEP_UPDATE_RESP
+stepId (RstepId"U
+PRT_PLAYER_FIGHT_CHANGE_SYN
+oldFight (RoldFight
+newFight (RnewFight"
+PRT_PLAYER_CROSS_DAY_SYN"
+PRT_PLAYER_LINE_BIND_SYN"c
+PRT_PACKAGE_REQ
+transId (RtransId
+protoId (RprotoId
+	protoData (R	protoData"E
+PRT_TRANS_LOGIN_SYN
+x (Rx
+y (Ry
+last (Rlast"(
+PRT_TRANS_LAST_SYN
+last (Rlast"X
+ PRT_CS_PLAYER_EVALUATE_CHECK_REQ
+playerId (RplayerId
+account (	Raccount"_
+!PRT_CS_PLAYER_EVALUATE_CHECK_RESP
+playerId (RplayerId
+
+isCanAward (R
+isCanAward"X
+ PRT_CS_PLAYER_EVALUATE_AWARD_REQ
+playerId (RplayerId
+account (	Raccount"_
+!PRT_CS_PLAYER_EVALUATE_AWARD_RESP
+playerId (RplayerId
+
+isCanAward (R
+isCanAward"b
+*PRT_CS_PLAYER_FIRST_PLAYER_CREATE_TIME_REQ4
+firstPlayerCreateTime (RfirstPlayerCreateTime"
+PRT_PLAYER_MAIN_PAGE_REQ"
+PRT_PLAYER_MAIN_PAGE_RESP*?
+ENUM_SETTING_ID
+SID_NONE 
+	SID_MUSICd
+SID_SFXe
+SID_PUSH_CHATf
+SID_PUSH_GUILD_MAILg
+SID_COST_HC_TIPSh"
+SID_CLOSE_GUILD_GIFT_SHOW_NAMEi*?
+ENUM_KICK_REASON
+	KICK_NONE 
+KICK_SERVER_MAINTAIN
+KICK_OTHER_LOGIN
+KICK_FORBIDEN
+KICK_GM
+KICK_HOT_UPDATE*?
+ENUM_SERVICE_SUBSCRIBE_TYPE
+SERVICE_NONE 
+SERVICE_GVG
+SERVICE_GUILD_THIEF
+SERVICE_VIP_SHOP#
+SERVICE_GUILD_WAR_BATTLE_GROUND
+
+SERVICE_MW
+SERVICE_FSB
+SERVICE_FSBYB
+com.next1b.nextsvr.protobproto3

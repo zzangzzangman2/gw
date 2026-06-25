@@ -1,0 +1,10 @@
+local e={}
+function e:OnHandle(e)
+local e=assert(GlobalPB.decode("PRT_MAP_BOSS_COUNT_BUY_RESP",e));
+if(GameInit.GetDebugLogProto())then
+;
+;
+end
+ModulesInit.ExpeditionManager:OnSendBuyTicketRequest(e)
+end
+return e 

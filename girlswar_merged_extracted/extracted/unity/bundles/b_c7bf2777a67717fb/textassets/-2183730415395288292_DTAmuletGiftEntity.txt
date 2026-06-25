@@ -1,0 +1,38 @@
+local a={id=0,name="",desc="",icon="",stage=0,color=0,group=0,priceBasic={},priceAppraisal={},score=0,amuletRandom={{},{}}}
+a.__index=a
+function a.New(n,r,s,t,l,u,c,d,h,o,i)
+local e={}
+setmetatable(e,a)
+e.id=n
+e.name=r
+e.desc=s
+e.icon=t
+e.stage=l
+e.color=u
+e.group=c
+e.priceBasic=d
+e.priceAppraisal=h
+e.score=o
+e.amuletRandom=i
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.name=t[2]
+e.desc=t[3]
+e.icon=t[4]
+e.stage=t[5]
+e.color=t[6]
+e.group=t[7]
+e.priceBasic=t[8]
+e.priceAppraisal=t[9]
+e.score=t[10]
+e.amuletRandom=t[11]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/amulet/DTAmuletGiftEntityTableData')
+end
+return a 

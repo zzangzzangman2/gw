@@ -1,0 +1,62 @@
+{
+  "generated_at": "2026-06-25 15:17:56",
+  "font_count": 3,
+  "fonts": [
+    {
+      "font_asset_name": "riyu",
+      "source_bundle": "riyu_1.assetbundle",
+      "source_font_object": "riyu_1",
+      "font_asset_path_id": "2268522548353052838",
+      "tmp_bundle": "download/ui/uifont/japanese/tmp/riyu.assetbundle",
+      "source_bundle_path": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\merged_content\\AssetBundles\\download\\ui\\uifont\\japanese\\font\\riyu_1.assetbundle",
+      "object_path_id": "-2509704119635544324",
+      "object_name": "riyu_1",
+      "font_names": [
+        "tway_sky",
+        "DFPMincho-SU"
+      ],
+      "bytes": 870140,
+      "magic": "00010000000f0080",
+      "extension": ".ttf",
+      "unity_asset_path": "Assets/RestoreData/TMP/original_fonts/riyu_source.ttf",
+      "output_path": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_maininterface_unity\\Assets\\RestoreData\\TMP\\original_fonts\\riyu_source.ttf"
+    },
+    {
+      "font_asset_name": "EPM",
+      "source_bundle": "epm.assetbundle",
+      "source_font_object": "EPM",
+      "font_asset_path_id": "-724809986894116682",
+      "tmp_bundle": "download/ui/uifont/japanese/tmp/epm.assetbundle",
+      "source_bundle_path": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\merged_content\\AssetBundles\\download\\ui\\uifont\\japanese\\font\\epm.assetbundle",
+      "object_path_id": "-3173510695005885490",
+      "object_name": "EPM",
+      "font_names": [
+        "NanumGothic",
+        "EPSON ?????S?V?b?N???a"
+      ],
+      "bytes": 1963916,
+      "magic": "0001000000120100",
+      "extension": ".ttf",
+      "unity_asset_path": "Assets/RestoreData/TMP/original_fonts/EPM_source.ttf",
+      "output_path": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_maininterface_unity\\Assets\\RestoreData\\TMP\\original_fonts\\EPM_source.ttf"
+    },
+    {
+      "font_asset_name": "num",
+      "source_bundle": "num.assetbundle",
+      "source_font_object": "num",
+      "font_asset_path_id": "454391846754054610",
+      "tmp_bundle": "download/ui/uifont/japanese/tmp/num.assetbundle",
+      "source_bundle_path": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\merged_content\\AssetBundles\\download\\ui\\uifont\\japanese\\font\\num.assetbundle",
+      "object_path_id": "-7723333128638960184",
+      "object_name": "num",
+      "font_names": [
+        "Impact"
+      ],
+      "bytes": 111140,
+      "magic": "0001000000130100",
+      "extension": ".ttf",
+      "unity_asset_path": "Assets/RestoreData/TMP/original_fonts/num_source.ttf",
+      "output_path": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_maininterface_unity\\Assets\\RestoreData\\TMP\\original_fonts\\num_source.ttf"
+    }
+  ]
+}

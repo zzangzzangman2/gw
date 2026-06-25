@@ -1,0 +1,164 @@
+
+?!
+ActHorseRace.protoCommons.protoSnapshot.proto"G
+PRT_HORSE_RACE_PLAYER
+serverId (RserverId
+name (	Rname"
+PRT_HORSE_RACE_EXCHANGE_REQ"D
+PRT_HORSE_RACE_EXCHANGE_RESP$
+goodses (2
+.PRT_GOODSRgoodses"S
+PRT_HORSE_RACE_EXCHANGE_BUY_REQ
+goodsDid (RgoodsDid
+count (Rcount"?
+ PRT_HORSE_RACE_EXCHANGE_BUY_RESP
+	playScore (R	playScore
+addScore (RaddScore"
+awards (2
+.PRT_THINGRawards 
+goods (2
+.PRT_GOODSRgoods"
+PRT_HORSE_RACE_ACHIEVE_REQ"E
+PRT_HORSE_RACE_ACHIEVE_RESP&
+recAchieveDids (RrecAchieveDids">
+ PRT_HORSE_RACE_ACHIEVE_AWARD_REQ
+awardDid (RawardDid"?
+!PRT_HORSE_RACE_ACHIEVE_AWARD_RESP
+awardDid (RawardDid"
+PRT_HORSE_RACE_RACE_REQ"f
+PRT_HORSE_RACE_RACE_RESP
+
+freeSecond (R
+freeSecond*
+players (2.PRT_PLAYER_DESCRplayers"
+PRT_HORSE_RACE_RACE_DRAW_REQ"?
+PRT_HORSE_RACE_RACE_DRAW_RESP
+	raceScore (R	raceScore"
+addRaceScore (RaddRaceScore
+rank (Rrank"
+awards (2
+.PRT_THINGRawards
+
+freeSecond (R
+freeSecond"
+PRT_HORSE_RACE_DRAW_INFO_REQ"]
+PRT_HORSE_RACE_DRAW_INFO_RESP
+
+drawNumber (R
+drawNumber
+	rankScore (R	rankScore"3
+PRT_HORSE_RACE_DRAW_REQ
+isBatch (RisBatch"?
+PRT_HORSE_RACE_DRAW_RESP
+isBatch (RisBatch
+
+drawNumber (R
+drawNumber
+	rankScore (R	rankScore'
+awards (2.PRT_ONCE_AWARDRawards(
+	extAwards (2
+.PRT_THINGR	extAwards"
+addRankScore (RaddRankScore"
+PRT_HORSE_RACE_RANK_REQ"?
+PRT_HORSE_RACE_RANK_RESP 
+totalSecond (RtotalSecond.
+	rankDatas (2.PRT_COMMON_RANKR	rankDatas,
+selfRank (2.PRT_COMMON_RANKRselfRank$
+top1LikeCount (Rtop1LikeCount
+
+freeSecond (R
+freeSecond":
+PRT_HORSE_RACE_RANK_LIKE_REQ
+playerId (RplayerId"?
+PRT_HORSE_RACE_RANK_LIKE_RESP
+
+freeSecond (R
+freeSecond"
+PRT_HORSE_RACE_INFO_REQ"?
+PRT_HORSE_RACE_INFO_RESP
+actDays (RactDays(
+freeHorseSecond (RfreeHorseSecond
+	playScore (R	playScore
+	raceScore (R	raceScore6
+
+top1Player (2.PRT_HORSE_RACE_PLAYERR
+top1Player"
+PRT_HORSE_RACE_GIFT_INFO_REQ"_
+PRT_HORSE_RACE_GIFT_INFO_RESP 
+goods (2
+.PRT_GOODSRgoods
+	resetTime (R	resetTime"E
+PRT_HORSE_RACE_BUY_GIFT_REQ
+did (Rdid
+count (Rcount"@
+PRT_HORSE_RACE_BUY_GIFT_RESP 
+goods (2
+.PRT_GOODSRgoods"I
+PRT_HORSE_RACE_BUY_FREEGIFT_REQ
+did (Rdid
+count (Rcount"D
+ PRT_HORSE_RACE_BUY_FREEGIFT_RESP 
+goods (2
+.PRT_GOODSRgoods"?
+PRT_HORSE_RACE_TREASURE
+id (Rid
+count (Rcount""
+ PRT_HORSE_RACE_TREASURE_INFO_REQ"w
+!PRT_HORSE_RACE_TREASURE_INFO_RESP
+	lockLayer (R	lockLayer4
+treasure (2.PRT_HORSE_RACE_TREASURERtreasure"G
+PRT_HORSE_RACE_TREASURE_BUY_REQ
+id (Rid
+count (Rcount"v
+ PRT_HORSE_RACE_TREASURE_BUY_RESP4
+treasure (2.PRT_HORSE_RACE_TREASURERtreasure
+	lockLayer (R	lockLayer"F
+PRT_HORSE_RACE_TASK
+day (Rday
+task (2	.PRT_TASKRtask"
+PRT_HORSE_RACE_TASK_INFO_REQ"i
+PRT_HORSE_RACE_TASK_INFO_RESP
+curDay (RcurDay0
+taskInfo (2.PRT_HORSE_RACE_TASKRtaskInfo"/
+PRT_HORSE_RACE_TASK_REC_REQ
+did (Rdid"0
+PRT_HORSE_RACE_TASK_REC_RESP
+did (Rdid"O
+PRT_HORSE_RACE_ITEM
+idx (Ridx
+did (Rdid
+count (Rcount"2
+PRT_HORSE_RACE_PLAY_INFO_REQ
+type (Rtype"s
+PRT_HORSE_RACE_PLAY_INFO_RESP(
+freeHorseSecond (RfreeHorseSecond(
+item (2.PRT_HORSE_RACE_ITEMRitem"7
+PRT_HORSE_RACE_PLAY_REQ
+	playCount (R	playCount"n
+PRT_HORSE_RACE_PLAY_RESP(
+freeHorseSecond (RfreeHorseSecond(
+item (2.PRT_HORSE_RACE_ITEMRitem":
+"PRT_HORSE_RACE_PLAY_RET_REPORT_REQ
+idxes (Ridxes";
+#PRT_HORSE_RACE_PLAY_RET_REPORT_RESP
+idxes (Ridxes"8
+PRT_CS_HORSE_RACE_INFO_REQ
+playerId (RplayerId"k
+PRT_CS_HORSE_RACE_INFO_RESP
+playerId (RplayerId0
+
+top1Player (2.PRT_COMMON_RANKR
+top1Player"=
+PRT_CS_HORSE_RACE_RED_POINT_REQ
+playerId (RplayerId"?
+ PRT_CS_HORSE_RACE_RED_POINT_RESP
+playerId (RplayerId3
+redPointIds (2.ENUM_REDPOINT_IDRredPointIds2
+isSendToOnlinePlayer (RisSendToOnlinePlayer"x
+ PRT_CS_HORSE_RACE_RANK_SCORE_SYN
+playerId (RplayerId
+
+totalScore (R
+totalScore
+totalMS (RtotalMSB
+com.next1b.nextsvr.protobproto3

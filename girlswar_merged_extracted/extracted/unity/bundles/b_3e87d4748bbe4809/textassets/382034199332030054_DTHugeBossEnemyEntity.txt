@@ -1,0 +1,26 @@
+local e={id=0,playerLevel=0,star4enemyID={},star5enemyID={},star6enemyID={}}
+e.__index=e
+function e.New(o,n,a,s,i)
+local t={}
+setmetatable(t,e)
+t.id=o
+t.playerLevel=n
+t.star4enemyID=a
+t.star5enemyID=s
+t.star6enemyID=i
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.playerLevel=a[2]
+t.star4enemyID=a[3]
+t.star5enemyID=a[4]
+t.star6enemyID=a[5]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/activity/DTHugeBossEnemyEntityTableData')
+end
+return e 

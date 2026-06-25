@@ -1,0 +1,36 @@
+local a={id=0,cardMax=0,oneCost={},goldUseItem=0,goldUseItemAddProgress=0,shopCost={},goods=0,fundAward={},iconographyProve=0,atlasId=0}
+a.__index=a
+function a.New(n,r,s,t,l,u,d,h,o,i)
+local e={}
+setmetatable(e,a)
+e.id=n
+e.cardMax=r
+e.oneCost=s
+e.goldUseItem=t
+e.goldUseItemAddProgress=l
+e.shopCost=u
+e.goods=d
+e.fundAward=h
+e.iconographyProve=o
+e.atlasId=i
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.cardMax=t[2]
+e.oneCost=t[3]
+e.goldUseItem=t[4]
+e.goldUseItemAddProgress=t[5]
+e.shopCost=t[6]
+e.goods=t[7]
+e.fundAward=t[8]
+e.iconographyProve=t[9]
+e.atlasId=t[10]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/activity/DTGroupPhotoCfgEntityTableData')
+end
+return a 

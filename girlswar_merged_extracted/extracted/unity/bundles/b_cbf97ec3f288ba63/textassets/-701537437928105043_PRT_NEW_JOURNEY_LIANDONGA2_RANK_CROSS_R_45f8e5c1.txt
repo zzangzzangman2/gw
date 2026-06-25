@@ -1,0 +1,11 @@
+local t={}
+function t:OnHandle(e)
+local e=assert(GlobalPB.decode("PRT_NEW_JOURNEY_LIANDONGA2_RANK_CROSS_RESP",e));
+if(GameInit.GetDebugLogProto())then
+;
+;
+end
+ModulesInit.ActNewJourneyLiandongMgr2:syncJourneyCrossRankData(e)
+return e
+end
+return t 

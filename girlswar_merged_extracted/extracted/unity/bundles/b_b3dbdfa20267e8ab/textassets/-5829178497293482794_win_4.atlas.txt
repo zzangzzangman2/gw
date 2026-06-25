@@ -1,0 +1,16 @@
+win_4.png
+size:2048,2048
+filter:Linear,Linear
+mvp_1
+bounds:1604,1820,308,92
+mvp_2
+bounds:2,1755,239,107
+mvp_3
+bounds:600,1434,481,428
+mvp_4
+bounds:243,1577,355,285
+up
+bounds:2,1864,1600,48
+win_n_12
+bounds:2,918,1414,514
+offsets:1,0,1416,514

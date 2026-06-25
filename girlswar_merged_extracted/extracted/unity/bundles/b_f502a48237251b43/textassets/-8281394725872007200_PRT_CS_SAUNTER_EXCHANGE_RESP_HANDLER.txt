@@ -1,0 +1,10 @@
+local e={}
+function e:OnHandle(e)
+local e=assert(GlobalPB.decode("PRT_CS_SAUNTER_EXCHANGE_RESP",e));
+if(GameInit.GetDebugLogProto())then
+;
+;
+end
+return e
+end
+return e 

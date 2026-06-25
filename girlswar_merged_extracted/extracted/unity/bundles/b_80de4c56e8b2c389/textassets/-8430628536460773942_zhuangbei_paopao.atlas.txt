@@ -1,0 +1,7 @@
+zhuangbei_paopao.png
+size:512,512
+filter:Linear,Linear
+T_zhuangbeibg1
+bounds:2,2,312,305
+T_zhuangbeibg2
+bounds:316,257,40,50

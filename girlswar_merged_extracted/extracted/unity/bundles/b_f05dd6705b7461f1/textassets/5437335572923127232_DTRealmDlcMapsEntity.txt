@@ -1,0 +1,24 @@
+local e={id=0,mapsId="",mapsImage_1="",mapsImage_2=""}
+e.__index=e
+function e.New(o,a,n,i)
+local t={}
+setmetatable(t,e)
+t.id=o
+t.mapsId=a
+t.mapsImage_1=n
+t.mapsImage_2=i
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.mapsId=a[2]
+t.mapsImage_1=a[3]
+t.mapsImage_2=a[4]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/maps/DTRealmDlcMapsEntityTableData')
+end
+return e 

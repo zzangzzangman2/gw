@@ -1,0 +1,134 @@
+local t=require('DataNode/DataTable/Create/mail/DTMarqueeDBModel')
+local n=require("DataNode/DataTable/Create/hero/DTHeroDBModel")
+local h=table.unpack
+local s={}
+function s:OnHandle(e)
+local e=assert(GlobalPB.decode("PRT_CHAT_MARQUEE_SYN",e));
+if(GameInit.GetDebugLogProto())then
+;
+;
+end
+local i=t.GetEntity(e.marqueeId)
+local a=e.params
+local t={}
+for o,a in ipairs(a or{})do
+if o==2 and(e.marqueeId==1 or e.marqueeId==2 or e.marqueeId==22 or e.marqueeId==23 or e.marqueeId==50)then
+local e=n.GetEntity(tonumber(a))
+table.insert(t,GameTools.GetLocalize(e.heroName,LanguageCategory.LangBattle))
+elseif o==2 and(e.marqueeId==29 or e.marqueeId==41)then
+local e=ModulesInit.BagManager:GetBaseInfo(tonumber(a),true)
+if e then
+table.insert(t,e.name)
+end
+elseif o==2 and(e.marqueeId==31 or e.marqueeId==40)then
+local e={"tips.commonA_143","tips.commonB_143","tips.commonC_144","tips.commonD_144","tips.commonZ_142"}
+table.insert(t,GameTools.GetLocalize(e[tonumber(a)],LanguageCategory.LangCommon))
+elseif o==1 and(e.marqueeId==998 or e.marqueeId==999)then
+table.insert(t,GameTools.GetLocalize(a,LanguageCategory.LangBattle))
+elseif o==2 and e.marqueeId==42 then
+local e=ModulesInit.BagManager:GetBaseInfo(tonumber(a))
+table.insert(t,GameTools.GetLocalize(e.name,LanguageCategory.LangItem))
+elseif o==2 and e.marqueeId==199 then
+local o={
+[3]="R",
+[4]="SR",
+[5]="SSR",
+[6]="UR",
+}
+local e=""
+if o[tonumber(a)]then
+e=o[tonumber(a)]
+end
+table.insert(t,e)
+elseif o==3 and e.marqueeId==199 then
+local e=n.GetEntity(tonumber(a))
+table.insert(t,GameTools.GetLocalize(e.heroName,LanguageCategory.LangBattle))
+elseif o==3 and((e.marqueeId>=43 and e.marqueeId<=46)or e.marqueeId==52)then
+local e=ModulesInit.BagManager:GetBaseInfo(tonumber(a),true)
+table.insert(t,e.name)
+else
+table.insert(t,GameTools.GetLocalize(a,LanguageCategory.LangCommon))
+end
+end
+if e.marqueeId==20 or e.marqueeId==21 or e.marqueeId==28 then
+if GameEntry.UI:IsExists(UIFormId.UI_TitanMainView)then
+local n={}
+t=ModulesInit.TitanMgr:GetMarqueeParamInfo(e)
+local o
+if i.key==""then
+o=t[1]
+else
+o=GameTools.GetLocalize(i.key,LanguageCategory.LangCommon,h(t))
+end
+if e.marqueeId==20 then
+n={
+msgId=2,
+marqueeId=e.marqueeId,
+params=a,
+profileDid=tonumber(a[1]),
+content=o,
+}
+else
+n={
+msgId=1,
+marqueeId=e.marqueeId,
+params=a,
+profileDid=tonumber(a[2]),
+content=o,
+}
+end
+EventSystem.SendEvent(CommonEventId.OnSynTitanDefeatBossMsg,{msg=n})
+return
+else
+t=ModulesInit.TitanMgr:GetMarqueeParamInfo(e)
+end
+elseif e.marqueeId==200 then
+t={}
+for e=1,#a do
+if e==2 then
+local e=ModulesInit.BagManager:GetBaseInfo(tonumber(a[e]))
+table.insert(t,GameTools.GetLocalize(e.name,LanguageCategory.LangItem))
+else
+table.insert(t,a[e])
+end
+end
+elseif e.marqueeId==203 then
+t={}
+for e=1,#a do
+if e==2 then
+local e=ModulesInit.BagManager:GetBaseInfo(tonumber(a[e]))
+table.insert(t,GameTools.GetLocalize(e.name,LanguageCategory.LangItem))
+else
+table.insert(t,a[e])
+end
+end
+elseif e.marqueeId==300 or e.marqueeId==301 or e.marqueeId==302 then
+t={}
+for o,e in ipairs(a)do
+if o==#a then
+local e=ModulesInit.FullServerBattleMgr:getCellCfg(tonumber(e))
+table.insert(t,GameTools.GetLocalize(e.locationName))
+else
+table.insert(t,GameTools.GetLocalize(e))
+end
+end
+elseif e.marqueeId==303 or e.marqueeId==304 or e.marqueeId==305 then
+t={}
+for o,e in ipairs(a)do
+if o==#a then
+local e=ModulesInit.FullServerBattleMgr:getCellCfg(tonumber(e))
+table.insert(t,GameTools.GetLocalize(e.locationName))
+else
+table.insert(t,GameTools.GetLocalize(e))
+end
+end
+end
+local e
+if i.key==""then
+e=t[1]
+else
+e=GameTools.GetLocalize(i.key,LanguageCategory.LangCommon,h(t))
+end
+EventSystem.SendEvent(CommonEventId.DrawMarqueeMsgNotify,e)
+end
+return s 

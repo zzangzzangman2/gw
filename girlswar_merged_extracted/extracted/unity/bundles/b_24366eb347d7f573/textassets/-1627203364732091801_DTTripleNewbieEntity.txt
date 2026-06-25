@@ -1,0 +1,38 @@
+local a={id=0,type=0,points=0,exchangeItem1={},tripleIcon1="",speedyPoints=0,exchangeItem2={},tripleIcon2="",rapidPoints=0,exchangeItem3={},tripleIcon3=""}
+a.__index=a
+function a.New(n,r,s,t,l,u,c,d,h,o,i)
+local e={}
+setmetatable(e,a)
+e.id=n
+e.type=r
+e.points=s
+e.exchangeItem1=t
+e.tripleIcon1=l
+e.speedyPoints=u
+e.exchangeItem2=c
+e.tripleIcon2=d
+e.rapidPoints=h
+e.exchangeItem3=o
+e.tripleIcon3=i
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.type=t[2]
+e.points=t[3]
+e.exchangeItem1=t[4]
+e.tripleIcon1=t[5]
+e.speedyPoints=t[6]
+e.exchangeItem2=t[7]
+e.tripleIcon2=t[8]
+e.rapidPoints=t[9]
+e.exchangeItem3=t[10]
+e.tripleIcon3=t[11]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/herbs/DTTripleNewbieEntityTableData')
+end
+return a 

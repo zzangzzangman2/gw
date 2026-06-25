@@ -1,0 +1,26 @@
+local e={id=0,Type=0,rank=0,show=0,awards={{},{}}}
+e.__index=e
+function e.New(o,n,a,s,i)
+local t={}
+setmetatable(t,e)
+t.id=o
+t.Type=n
+t.rank=a
+t.show=s
+t.awards=i
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.Type=a[2]
+t.rank=a[3]
+t.show=a[4]
+t.awards=a[5]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/girlChallenge/DTGirlChallengeRechargeEntityTableData')
+end
+return e 

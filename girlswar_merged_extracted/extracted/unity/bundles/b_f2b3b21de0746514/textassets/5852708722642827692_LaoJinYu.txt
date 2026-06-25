@@ -1,0 +1,15 @@
+
+?
+LaoJinYu.protoCommons.proto"
+PRT_LAO_JIN_YU_INFO_REQ"j
+PRT_LAO_JIN_YU_INFO_RESP
+openDay (RopenDay
+mapIds (RmapIds
+	closeTime (R	closeTime"0
+PRT_LAO_JIN_YU_AWARD_REQ
+mapId (RmapId"Y
+PRT_LAO_JIN_YU_AWARD_RESP
+mapIds (RmapIds$
+rewards (2
+.PRT_THINGRrewardsB
+com.next1b.nextsvr.protobproto3

@@ -1,0 +1,51 @@
+
+?
+SummonPetFactor.protoCommons.proto"?
+PRT_SUMMON_PET_FACTOR
+factorId (RfactorId
+	factorDid (R	factorDid
+	equipType (R	equipType
+gridId (RgridId"?
+PRT_SUMMON_PET_FACTOR_GRID
+gridId (RgridId&
+temperingLevel (RtemperingLevel(
+strengthenLevel (RstrengthenLevel
+factorId (RfactorId
+gridExp (RgridExp"n
+PRT_SUMMON_PET_FACTOR_EQUIP
+	equipType (R	equipType1
+grids (2.PRT_SUMMON_PET_FACTOR_GRIDRgrids"M
+PRT_SUMMON_PET_FACTOR_SYN0
+factors (2.PRT_SUMMON_PET_FACTORRfactors"@
+ PRT_SUMMON_PET_FACTOR_REMOVE_SYN
+	factorIds (R	factorIds" 
+PRT_SUMMON_PET_FACTOR_INFO_REQ"Y
+PRT_SUMMON_PET_FACTOR_INFO_RESP6
+factors (2.PRT_SUMMON_PET_FACTOR_EQUIPRfactors"s
+PRT_SUMMON_PET_EQUIP_FACTOR_REQ
+	equipType (R	equipType
+gridId (RgridId
+factorId (RfactorId"q
+ PRT_SUMMON_PET_EQUIP_FACTOR_RESP
+	equipType (R	equipType/
+grid (2.PRT_SUMMON_PET_FACTOR_GRIDRgrid"|
+.PRT_SUMMON_PET_FACTOR_GRID_TEMPERING_LEVEL_REQ
+	equipType (R	equipType
+gridId (RgridId
+count (Rcount"?
+/PRT_SUMMON_PET_FACTOR_GRID_TEMPERING_LEVEL_RESP
+	equipType (R	equipType/
+grid (2.PRT_SUMMON_PET_FACTOR_GRIDRgrid"?
+-PRT_SUMMON_PET_FACTOR_GRID_STRENGTH_LEVEL_REQ
+	equipType (R	equipType
+gridId (RgridId0
+consumePetFactorIds (RconsumePetFactorIds5
+consumeItems (2.PRT_CONSUME_ITEMRconsumeItems"
+.PRT_SUMMON_PET_FACTOR_GRID_STRENGTH_LEVEL_RESP
+	equipType (R	equipType/
+grid (2.PRT_SUMMON_PET_FACTOR_GRIDRgrid"H
+(PRT_SUMMON_PET_FACTOR_ONE_KEY_REMOVE_REQ
+	equipType (R	equipType"k
+)PRT_SUMMON_PET_FACTOR_ONE_KEY_REMOVE_RESP>
+factorEquip (2.PRT_SUMMON_PET_FACTOR_EQUIPRfactorEquipB
+com.next1b.nextsvr.protobproto3

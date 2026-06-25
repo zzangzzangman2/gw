@@ -1,0 +1,32 @@
+local a={id=0,speed=0,fishArea=0,completeUpSpeed=0,completeDownSpeed=0,statusTime_Out={},statusTime_In={},changeTime={}}
+a.__index=a
+function a.New(i,h,n,t,d,r,s,o)
+local e={}
+setmetatable(e,a)
+e.id=i
+e.speed=h
+e.fishArea=n
+e.completeUpSpeed=t
+e.completeDownSpeed=d
+e.statusTime_Out=r
+e.statusTime_In=s
+e.changeTime=o
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.speed=t[2]
+e.fishArea=t[3]
+e.completeUpSpeed=t[4]
+e.completeDownSpeed=t[5]
+e.statusTime_Out=t[6]
+e.statusTime_In=t[7]
+e.changeTime=t[8]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/activity/DTActivitySeaFishingTypeEntityTableData')
+end
+return a 

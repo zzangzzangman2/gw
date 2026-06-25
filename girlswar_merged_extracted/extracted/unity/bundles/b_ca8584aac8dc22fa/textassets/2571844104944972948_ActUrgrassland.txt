@@ -1,0 +1,215 @@
+
+?/
+ActUrgrassland.protoCommons.proto"K
+PRT_URGRASSLAND_AWARD
+pos (Rpos 
+award (2
+.PRT_THINGRaward"?
+PRT_URGRASSLAND_INFO
+copyId (RcopyId
+
+copyStatus (R
+copyStatus
+hp (Rhp
+damage (Rdamage
+hpLv (RhpLv
+damageLv (RdamageLv6
+copyInfo (2.PRT_URGRASSLAND_COPY_INFORcopyInfo
+stoneNum (RstoneNum
+gameMode	 (RgameMode)
+
+powerTasks
+ (2	.PRT_TASKR
+powerTasks'
+	copyTasks (2	.PRT_TASKR	copyTasks.
+book (2.PRT_URGRASSLAND_BOOK_INFORbook$
+maxFightValue (RmaxFightValue&
+powerUsedTotal (RpowerUsedTotal"
+playerStatus (RplayerStatus
+hpMax (RhpMax 
+stoneAttack (RstoneAttack$
+historyCopyId (RhistoryCopyId
+power (Rpower
+poolIds (RpoolIds$
+poolDrawTimes (RpoolDrawTimes"]
+PRT_URGRASSLAND_COPY_INFO
+id (Rid0
+cells (2.PRT_URGRASSLAND_CELL_INFORcells"?
+PRT_URGRASSLAND_CELL_INFO
+pos (Rpos
+
+cellStatus (R
+cellStatus
+eventId (ReventId 
+eventStatus (ReventStatus
+	monsterHp (R	monsterHp"
+monsterHpMax (RmonsterHpMax0
+boxMonsterFeedTimes (RboxMonsterFeedTimes0
+remoteMonsterRounds (RremoteMonsterRounds2
+snowmanMonsterRounds	 (RsnowmanMonsterRounds
+eventIdB
+ (ReventIdB
+iconNum (RiconNum0
+remoteMonsterAttack (RremoteMonsterAttack"C
+PRT_URGRASSLAND_BOOK_INFO
+id (Rid
+status (Rstatus"?
+PRT_URGRASSLAND_ACT_STATUS
+status (Rstatus
+stage (Rstage
+	startTime (R	startTime"
+activityTime (RactivityTime
+
+rewardTime (R
+rewardTime"
+PRT_URGRASSLAND_INFO_REQ"F
+PRT_URGRASSLAND_INFO_RESP)
+info (2.PRT_URGRASSLAND_INFORinfo"1
+PRT_URGRASSLAND_OPEN_CELL_REQ
+pos (Rpos"?
+PRT_URGRASSLAND_OPEN_CELL_RESP
+pos (Rpos)
+info (2.PRT_URGRASSLAND_INFORinfo.
+awards (2.PRT_URGRASSLAND_AWARDRawards"T
+PRT_URGRASSLAND_EVENT_OP_REQ
+pos (Rpos"
+specialParam (RspecialParam"?
+PRT_URGRASSLAND_EVENT_OP_RESP
+pos (Rpos)
+info (2.PRT_URGRASSLAND_INFORinfo.
+awards (2.PRT_URGRASSLAND_AWARDRawards"
+specialParam (RspecialParam"!
+PRT_URGRASSLAND_SWITCH_MODE_REQ">
+ PRT_URGRASSLAND_SWITCH_MODE_RESP
+gameMode (RgameMode"1
+PRT_URGRASSLAND_ONE_KEY_REQ
+mode (Rmode"?
+PRT_URGRASSLAND_ONE_KEY_RESP)
+info (2.PRT_URGRASSLAND_INFORinfo.
+awards (2.PRT_URGRASSLAND_AWARDRawards
+hpAdd (RhpAdd
+hpSub (RhpSub
+	canOneKey (R	canOneKey
+mode (Rmode"
+PRT_URGRASSLAND_ENTER_REQ"G
+PRT_URGRASSLAND_ENTER_RESP)
+info (2.PRT_URGRASSLAND_INFORinfo"J
+"PRT_URGRASSLAND_REC_TASK_POWER_REQ
+did (Rdid
+auto (Rauto"b
+#PRT_URGRASSLAND_REC_TASK_POWER_RESP)
+
+powerTasks (2	.PRT_TASKR
+powerTasks
+did (Rdid"I
+!PRT_URGRASSLAND_REC_TASK_COPY_REQ
+did (Rdid
+auto (Rauto"_
+"PRT_URGRASSLAND_REC_TASK_COPY_RESP'
+	copyTasks (2	.PRT_TASKR	copyTasks
+did (Rdid";
+PRT_URGRASSLAND_SWEEP_REQ
+
+sweepTimes (R
+sweepTimes"<
+PRT_URGRASSLAND_SWEEP_RESP
+
+sweepTimes (R
+sweepTimes"1
+PRT_URGRASSLAND_ATTR_LV_REQ
+type (Rtype"v
+PRT_URGRASSLAND_ATTR_LV_RESP
+hp (Rhp
+damage (Rdamage
+hpLv (RhpLv
+damageLv (RdamageLv"H
+PRT_URGRASSLAND_CARD_REQ
+times (Rtimes
+poolId (RpoolId"u
+PRT_URGRASSLAND_CARD_RESP
+poolId (RpoolId
+
+totalTimes (R
+totalTimes 
+award (2
+.PRT_THINGRaward"
+PRT_URGRASSLAND_BOOK_REQ"K
+PRT_URGRASSLAND_BOOK_RESP.
+book (2.PRT_URGRASSLAND_BOOK_INFORbook" 
+PRT_URGRASSLAND_POWER_INFO_REQ"k
+PRT_URGRASSLAND_POWER_INFO_RESP
+power (Rpower2
+nextPowerRecoverTime (RnextPowerRecoverTime":
+"PRT_URGRASSLAND_USE_POWER_ITEM_REQ
+count (Rcount"o
+#PRT_URGRASSLAND_USE_POWER_ITEM_RESP
+power (Rpower2
+nextPowerRecoverTime (RnextPowerRecoverTime"D
+PRT_URGRASSLAND_POWER_RANK_REQ"
+playerStatus (RplayerStatus"
+PRT_URGRASSLAND_POWER_RANK_RESP.
+	rankDatas (2.PRT_COMMON_RANKR	rankDatas,
+selfRank (2.PRT_COMMON_RANKRselfRank"C
+PRT_URGRASSLAND_COPY_RANK_REQ"
+playerStatus (RplayerStatus"~
+PRT_URGRASSLAND_COPY_RANK_RESP.
+	rankDatas (2.PRT_COMMON_RANKR	rankDatas,
+selfRank (2.PRT_COMMON_RANKRselfRank"?
+(PRT_CS_URGRASSLAND_UPDATE_POWER_RANK_SYN
+playerId (RplayerId
+
+totalPower (R
+totalPower
+changeMS (RchangeMS9
+	actStatus (2.PRT_URGRASSLAND_ACT_STATUSR	actStatus"?
+'PRT_CS_URGRASSLAND_UPDATE_COPY_RANK_SYN
+playerId (RplayerId
+	curCopyId (R	curCopyId
+changeMS (RchangeMS9
+	actStatus (2.PRT_URGRASSLAND_ACT_STATUSR	actStatus"
+PRT_URGRASSLAND_SHOP_INFO_REQ"`
+PRT_URGRASSLAND_SHOP_INFO_RESP 
+goods (2
+.PRT_GOODSRgoods
+	resetTime (R	resetTime"F
+PRT_URGRASSLAND_SHOP_BUY_REQ
+did (Rdid
+count (Rcount"S
+PRT_URGRASSLAND_SHOP_BUY_RESP
+did (Rdid 
+goods (2
+.PRT_GOODSRgoods"&
+$PRT_URGRASSLAND_CHARGE_SHOP_INFO_REQ"g
+%PRT_URGRASSLAND_CHARGE_SHOP_INFO_RESP 
+goods (2
+.PRT_GOODSRgoods
+	resetTime (R	resetTime"*
+(PRT_URGRASSLAND_CANDY_LAND_SHOP_INFO_REQ"e
+)PRT_URGRASSLAND_CANDY_LAND_SHOP_INFO_RESP 
+items (2
+.PRT_GOODSRitems
+freeCD (RfreeCD"[
+'PRT_URGRASSLAND_CANDY_LAND_SHOP_BUY_REQ
+goodsDid (RgoodsDid
+count (Rcount"J
+(PRT_URGRASSLAND_CANDY_LAND_SHOP_BUY_RESP
+item (2
+.PRT_GOODSRitem"L
+.PRT_URGRASSLAND_CANDY_LAND_SHOP_FREE_AWARD_REQ
+goodsDid (RgoodsDid"Q
+/PRT_URGRASSLAND_CANDY_LAND_SHOP_FREE_AWARD_RESP
+item (2
+.PRT_GOODSRitem"1
+/PRT_URGRASSLAND_CANDY_LAND_NORMAL_SHOP_INFO_REQ"T
+0PRT_URGRASSLAND_CANDY_LAND_NORMAL_SHOP_INFO_RESP 
+items (2
+.PRT_GOODSRitems"b
+.PRT_URGRASSLAND_CANDY_LAND_NORMAL_SHOP_BUY_REQ
+goodsDid (RgoodsDid
+count (Rcount"Q
+/PRT_URGRASSLAND_CANDY_LAND_NORMAL_SHOP_BUY_RESP
+item (2
+.PRT_GOODSRitem"(
+&PRT_URGRASSLAND_CLIENT_SHOW_REDDOT_REQ")
+'PRT_URGRASSLAND_CLIENT_SHOW_REDDOT_RESPB
+com.next1b.nextsvr.protobproto3

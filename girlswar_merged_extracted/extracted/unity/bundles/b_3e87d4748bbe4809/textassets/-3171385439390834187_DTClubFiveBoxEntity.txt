@@ -1,0 +1,30 @@
+local t={id=0,item={},boxPoint={{},{}},arena={},eliteMapsDrop={},mapsIdleDrop={},towerIdleDrop={}}
+t.__index=t
+function t.New(o,h,a,s,r,n,i)
+local e={}
+setmetatable(e,t)
+e.id=o
+e.item=h
+e.boxPoint=a
+e.arena=s
+e.eliteMapsDrop=r
+e.mapsIdleDrop=n
+e.towerIdleDrop=i
+return e
+end
+function t.NewFromArrItem(a)
+local e={}
+setmetatable(e,t)
+e.id=a[1]
+e.item=a[2]
+e.boxPoint=a[3]
+e.arena=a[4]
+e.eliteMapsDrop=a[5]
+e.mapsIdleDrop=a[6]
+e.towerIdleDrop=a[7]
+return e
+end
+function t.GetArr()
+return require('DataNode/DataTable/Create/activity/DTClubFiveBoxEntityTableData')
+end
+return t 

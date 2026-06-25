@@ -1,0 +1,32 @@
+local a={id=0,unlockType=0,openLevel=0,closeType=0,closeLevel=0,animName="",helpId="",openAward={{},{}}}
+a.__index=a
+function a.New(i,h,n,t,d,r,s,o)
+local e={}
+setmetatable(e,a)
+e.id=i
+e.unlockType=h
+e.openLevel=n
+e.closeType=t
+e.closeLevel=d
+e.animName=r
+e.helpId=s
+e.openAward=o
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.unlockType=t[2]
+e.openLevel=t[3]
+e.closeType=t[4]
+e.closeLevel=t[5]
+e.animName=t[6]
+e.helpId=t[7]
+e.openAward=t[8]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/guide/DTOpenPaoPaoNewEntityTableData')
+end
+return a 

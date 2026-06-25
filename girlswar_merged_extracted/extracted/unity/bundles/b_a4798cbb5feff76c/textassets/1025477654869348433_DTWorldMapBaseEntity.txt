@@ -1,0 +1,32 @@
+local a={id=0,worldMapHeroSpine=0,goFishingTimes=0,smallGameNumber=0,smallGameRefreshTime=0,smallGameStageRefreshTime={{},{}},smallGameStageRewardTime=0,initialPoint=0}
+a.__index=a
+function a.New(i,h,n,t,d,r,s,o)
+local e={}
+setmetatable(e,a)
+e.id=i
+e.worldMapHeroSpine=h
+e.goFishingTimes=n
+e.smallGameNumber=t
+e.smallGameRefreshTime=d
+e.smallGameStageRefreshTime=r
+e.smallGameStageRewardTime=s
+e.initialPoint=o
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.worldMapHeroSpine=t[2]
+e.goFishingTimes=t[3]
+e.smallGameNumber=t[4]
+e.smallGameRefreshTime=t[5]
+e.smallGameStageRefreshTime=t[6]
+e.smallGameStageRewardTime=t[7]
+e.initialPoint=t[8]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/worldMap/DTWorldMapBaseEntityTableData')
+end
+return a 

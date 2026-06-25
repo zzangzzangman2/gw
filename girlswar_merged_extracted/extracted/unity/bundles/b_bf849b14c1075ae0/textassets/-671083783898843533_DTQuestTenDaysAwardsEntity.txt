@@ -1,0 +1,24 @@
+local e={id=0,questId=0,day=0,award={}}
+e.__index=e
+function e.New(o,a,n,i)
+local t={}
+setmetatable(t,e)
+t.id=o
+t.questId=a
+t.day=n
+t.award=i
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.questId=a[2]
+t.day=a[3]
+t.award=a[4]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/quest/DTQuestTenDaysAwardsEntityTableData')
+end
+return e 

@@ -1,0 +1,12 @@
+local t={}
+function t:OnHandle(e)
+local e=assert(GlobalPB.decode("PRT_FOOLSDOLL_FIND_RESP",e));
+if(GameInit.GetDebugLogProto())then
+;
+;
+end
+ModulesInit.ActFoolsDollMgr:GetFoolAwards(e)
+ModulesInit.ActFoolsDollMgr:respActFoolsDollFindGetAward(e)
+return e
+end
+return t 

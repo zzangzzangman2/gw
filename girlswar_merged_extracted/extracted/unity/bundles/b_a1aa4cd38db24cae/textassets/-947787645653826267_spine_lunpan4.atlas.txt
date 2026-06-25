@@ -1,0 +1,9 @@
+spine_lunpan4.png
+size:1024,256
+filter:Linear,Linear
+lunpan_zi
+bounds:2,2,499,158
+offsets:1,0,500,159
+t3
+bounds:503,23,137,137
+offsets:31,32,214,200

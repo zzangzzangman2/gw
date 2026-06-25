@@ -1,0 +1,11 @@
+local e={}
+function e:OnHandle(e)
+local e=assert(GlobalPB.decode("PRT_FSB_PLAYER_REBIRTH_RESP",e));
+if(GameInit.GetDebugLogProto())then
+;
+;
+end
+GameTools:PlayAudioLua(10009)
+return e
+end
+return e 

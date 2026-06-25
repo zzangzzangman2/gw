@@ -1,0 +1,18 @@
+local e=
+{
+ByIdx={
+{1,"UIActMushroom/hecheng_y1",13810001,2000,0},
+{2,"UIActMushroom/hecheng_y2",13810002,2000,1},
+{3,"UIActMushroom/hecheng_y3",13810003,2000,2},
+{4,"UIActMushroom/hecheng_y4",13810004,2000,4},
+{5,"UIActMushroom/hecheng_y5",13810005,2000,8},
+{6,"UIActMushroom/hecheng_y6",13810006,0,16},
+{7,"UIActMushroom/hecheng_y7",13810007,0,32},
+{8,"UIActMushroom/hecheng_y8",13810008,0,64},
+{9,"UIActMushroom/hecheng_y9",13810009,0,128},
+{10,"UIActMushroom/hecheng_y10",13810010,0,256},
+{11,"UIActMushroom/hecheng_y11",13810011,0,512}
+},
+Len=11
+}
+return e 

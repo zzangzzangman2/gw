@@ -1,0 +1,15 @@
+local e=
+{
+ByIdx={
+{1001,21012,"FireworksPartyNPCwish1001"},
+{1002,21015,"FireworksPartyNPCwish1002"},
+{1003,21025,"FireworksPartyNPCwish1003"},
+{1004,21029,"FireworksPartyNPCwish1004"},
+{1005,21039,"FireworksPartyNPCwish1005"},
+{1006,21041,"FireworksPartyNPCwish1006"},
+{1007,21043,"FireworksPartyNPCwish1007"},
+{1008,21044,"FireworksPartyNPCwish1008"}
+},
+Len=8
+}
+return e 

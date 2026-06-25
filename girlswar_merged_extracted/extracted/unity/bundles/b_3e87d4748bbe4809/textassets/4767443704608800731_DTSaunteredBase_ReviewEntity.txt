@@ -1,0 +1,90 @@
+local a={id=0,sPointSpeed=0,sPointMax=0,sPointPerTime=0,sPointGetUse=0,changeItem=0,directorSauntered={{},{}},expPerTime=0,maxSaunteredTime=0,danceStartTime=0,danceEndTime=0,dancePool=0,maxApplyNum=0,maxApplyTime=0,unlockFastSauntered=0,newSaunteredTime=0,delayTime=0,newDurationMain=0,newDurationRank=0,danceHelpNew=0,durationAmaterasu=0,DanceUse=0,drunkennessLv=0,danceUsePerTime=0,danceMaxTime=0,myStallMax=0,activityId={},maxApplyGet=0,maxApplyDisp=0,walkNpcRange={},standNpcRange={},npcRoute={},param1=0,param2=0,heroId=0,showAudio="",useType=0}
+a.__index=a
+function a.New(f,k,b,t,T,_,E,z,q,j,x,O,H,I,D,L,R,N,S,U,A,g,l,d,h,r,s,o,i,n,u,w,c,p,v,y,m)
+local e={}
+setmetatable(e,a)
+e.id=f
+e.sPointSpeed=k
+e.sPointMax=b
+e.sPointPerTime=t
+e.sPointGetUse=T
+e.changeItem=_
+e.directorSauntered=E
+e.expPerTime=z
+e.maxSaunteredTime=q
+e.danceStartTime=j
+e.danceEndTime=x
+e.dancePool=O
+e.maxApplyNum=H
+e.maxApplyTime=I
+e.unlockFastSauntered=D
+e.newSaunteredTime=L
+e.delayTime=R
+e.newDurationMain=N
+e.newDurationRank=S
+e.danceHelpNew=U
+e.durationAmaterasu=A
+e.DanceUse=g
+e.drunkennessLv=l
+e.danceUsePerTime=d
+e.danceMaxTime=h
+e.myStallMax=r
+e.activityId=s
+e.maxApplyGet=o
+e.maxApplyDisp=i
+e.walkNpcRange=n
+e.standNpcRange=u
+e.npcRoute=w
+e.param1=c
+e.param2=p
+e.heroId=v
+e.showAudio=y
+e.useType=m
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.sPointSpeed=t[2]
+e.sPointMax=t[3]
+e.sPointPerTime=t[4]
+e.sPointGetUse=t[5]
+e.changeItem=t[6]
+e.directorSauntered=t[7]
+e.expPerTime=t[8]
+e.maxSaunteredTime=t[9]
+e.danceStartTime=t[10]
+e.danceEndTime=t[11]
+e.dancePool=t[12]
+e.maxApplyNum=t[13]
+e.maxApplyTime=t[14]
+e.unlockFastSauntered=t[15]
+e.newSaunteredTime=t[16]
+e.delayTime=t[17]
+e.newDurationMain=t[18]
+e.newDurationRank=t[19]
+e.danceHelpNew=t[20]
+e.durationAmaterasu=t[21]
+e.DanceUse=t[22]
+e.drunkennessLv=t[23]
+e.danceUsePerTime=t[24]
+e.danceMaxTime=t[25]
+e.myStallMax=t[26]
+e.activityId=t[27]
+e.maxApplyGet=t[28]
+e.maxApplyDisp=t[29]
+e.walkNpcRange=t[30]
+e.standNpcRange=t[31]
+e.npcRoute=t[32]
+e.param1=t[33]
+e.param2=t[34]
+e.heroId=t[35]
+e.showAudio=t[36]
+e.useType=t[37]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/activity/DTSaunteredBase_ReviewEntityTableData')
+end
+return a 

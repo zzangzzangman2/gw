@@ -1,0 +1,26 @@
+local a={}
+function a:OnHandle(e)
+local e=assert(GlobalPB.decode("PRT_XIANDAN_ITEM_USE_RESP",e));
+if(GameInit.GetDebugLogProto())then
+;
+;
+end
+local t=false
+if PlayerMgr.drawBuffInfo.multis then
+for o,a in pairs(PlayerMgr.drawBuffInfo.multis)do
+if a.did==e.multi.did then
+a.count=e.multi.count
+t=true
+end
+end
+end
+if not t then
+if not PlayerMgr.drawBuffInfo.multis then
+PlayerMgr.drawBuffInfo.multis={}
+end
+table.add(PlayerMgr.drawBuffInfo.multis,e.multi)
+end
+EventSystem.SendEvent(CommonEventId.DrawBuffUpdate)
+return e
+end
+return a 

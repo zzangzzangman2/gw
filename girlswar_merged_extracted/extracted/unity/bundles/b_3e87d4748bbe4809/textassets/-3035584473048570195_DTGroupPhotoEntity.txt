@@ -1,0 +1,30 @@
+local t={id=0,horizontal=0,vertical=0,targetColour1=0,targetColour2=0,targetColour3=0,needNum=0}
+t.__index=t
+function t.New(o,h,a,s,r,n,i)
+local e={}
+setmetatable(e,t)
+e.id=o
+e.horizontal=h
+e.vertical=a
+e.targetColour1=s
+e.targetColour2=r
+e.targetColour3=n
+e.needNum=i
+return e
+end
+function t.NewFromArrItem(a)
+local e={}
+setmetatable(e,t)
+e.id=a[1]
+e.horizontal=a[2]
+e.vertical=a[3]
+e.targetColour1=a[4]
+e.targetColour2=a[5]
+e.targetColour3=a[6]
+e.needNum=a[7]
+return e
+end
+function t.GetArr()
+return require('DataNode/DataTable/Create/activity/DTGroupPhotoEntityTableData')
+end
+return t 

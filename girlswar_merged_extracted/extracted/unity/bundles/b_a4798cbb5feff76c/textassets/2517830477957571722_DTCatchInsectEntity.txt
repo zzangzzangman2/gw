@@ -1,0 +1,28 @@
+local e={id=0,bgImage="",bigBgImage="",roleImage="",desc="",blockTypeData={{},{}}}
+e.__index=e
+function e.New(a,i,o,h,s,n)
+local t={}
+setmetatable(t,e)
+t.id=a
+t.bgImage=i
+t.bigBgImage=o
+t.roleImage=h
+t.desc=s
+t.blockTypeData=n
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.bgImage=a[2]
+t.bigBgImage=a[3]
+t.roleImage=a[4]
+t.desc=a[5]
+t.blockTypeData=a[6]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/worldMap/DTCatchInsectEntityTableData')
+end
+return e 

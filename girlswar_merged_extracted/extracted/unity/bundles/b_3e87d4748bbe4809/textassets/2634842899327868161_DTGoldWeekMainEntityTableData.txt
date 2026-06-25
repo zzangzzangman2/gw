@@ -1,0 +1,18 @@
+local e=
+{
+ByIdx={
+{16,1,100160000,0,1,1,16,"UIGoldweek_icon/bzn_zyrk1","UIGoldweekname_1"},
+{183,2,100160000,0,2,1,183,"UIGoldweek_icon/bzn_zyrk2","UIGoldweekname_2"},
+{64,3,100160000,0,3,1,64,"UIGoldweek_icon/bzn_zyrk3","UIGoldweekname_3"},
+{17,4,100160000,0,4,1,17,"UIGoldweek_icon/bzn_zyrk4","UIGoldweekname_4"},
+{151,5,100160000,0,5,1,151,"UIGoldweek_icon/bzn_zyrk5","UIGoldweekname_5"},
+{80,6,100160000,0,6,1,80,"UIGoldweek_icon/bzn_zyrk6","UIGoldweekname_6"},
+{63,7,100160000,0,7,1,63,"UIGoldweek_icon/bzn_zyrk7","UIGoldweekname_7"},
+{408,8,100160000,0,8,1,408,"UIGoldweek_icon/bzn_zyrk8","UIGoldweekname_8"},
+{407,9,100160000,0,9,1,407,"UIGoldweek_icon/bzn_zyrk9","UIGoldweekname_9"},
+{501,10,100160000,0,10,1,501,"UIGoldweek_icon/bzn_zyrk10","UIGoldweekname_10"},
+{152,11,100160000,0,11,1,152,"UIGoldweek_icon/bzn_zyrk11","UIGoldweekname_11"}
+},
+Len=11
+}
+return e 

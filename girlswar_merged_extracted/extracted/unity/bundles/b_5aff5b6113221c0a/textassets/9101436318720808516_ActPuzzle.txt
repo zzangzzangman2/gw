@@ -1,0 +1,71 @@
+
+?
+ActPuzzle.protoCommons.protoSnapshot.proto"P
+PRT_PUZZLE_CHIP_SEND
+playerId (RplayerId
+	sendCount (R	sendCount"?
+PRT_PUZZLE_CHIP_RECEIVED
+
+receivedId (R
+receivedId(
+player (2.PRT_PLAYER_DESCRplayer
+chipDid (RchipDid
+sendTime (RsendTime"
+PRT_PUZZLE_INFO_REQ"V
+PRT_PUZZLE_INFO_RESP
+leftTime (RleftTime"
+composeCount (RcomposeCount"
+PRT_PUZZLE_COMPOSE_REQ"`
+PRT_PUZZLE_COMPOSE_RESP"
+composeCount (RcomposeCount!
+award (2.PRT_REWARDRaward"
+PRT_PUZZLE_TASK_REQ"7
+PRT_PUZZLE_TASK_RESP
+tasks (2	.PRT_TASKRtasks"5
+PRT_PUZZLE_TASK_AWARD_REQ
+taskDid (RtaskDid"6
+PRT_PUZZLE_TASK_AWARD_RESP
+taskDid (RtaskDid"
+PRT_PUZZLE_CHIP_SEND_LIST_REQ"Q
+PRT_PUZZLE_CHIP_SEND_LIST_RESP/
+players (2.PRT_PUZZLE_CHIP_SENDRplayers"?
+PRT_PUZZLE_CHIP_SEND_REQ 
+recPlayerId (RrecPlayerId 
+recServerId (RrecServerId
+type (Rtype
+chipDid (RchipDid(
+player (2.PRT_PLAYER_DESCRplayer"?
+PRT_PUZZLE_CHIP_SEND_RESP 
+recPlayerId (RrecPlayerId 
+recServerId (RrecServerId
+type (Rtype
+chipDid (RchipDid(
+player (2.PRT_PLAYER_DESCRplayer"#
+!PRT_PUZZLE_CHIP_RECEIVED_LIST_REQ"U
+"PRT_PUZZLE_CHIP_RECEIVED_LIST_RESP/
+chips (2.PRT_PUZZLE_CHIP_RECEIVEDRchips"=
+PRT_PUZZLE_CHIP_RECEIVE_REQ
+
+receivedId (R
+receivedId">
+PRT_PUZZLE_CHIP_RECEIVE_RESP
+
+receivedId (R
+receivedId"
+PRT_PUZZLE_GIFT_INFO_REQ"[
+PRT_PUZZLE_GIFT_INFO_RESP 
+goods (2
+.PRT_GOODSRgoods
+	resetTime (R	resetTime"4
+PRT_PUZZLE_GIFT_FREE_REQ
+giftDid (RgiftDid"=
+PRT_PUZZLE_GIFT_FREE_RESP 
+goods (2
+.PRT_GOODSRgoods"I
+PRT_PUZZLE_GIFT_BUY_REQ
+giftDid (RgiftDid
+count (Rcount"<
+PRT_PUZZLE_GIFT_BUY_RESP 
+goods (2
+.PRT_GOODSRgoodsB
+com.next1b.nextsvr.protobproto3

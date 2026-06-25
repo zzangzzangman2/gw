@@ -1,0 +1,46 @@
+local a={id=0,mapId=0,leftFirstFormaiton={{},{}},leftSubstitute={{},{}},rightFirstFormaiton={{},{}},rightSubstitute={{},{}},leftName="",leftIcon="",rightName="",rightIcon="",mapPrefabId=0,needMirrorScaleX=0,previewId=0,monsterEffect={},audioBanks=""}
+a.__index=a
+function a.New(s,l,r,t,u,m,w,f,y,c,d,i,o,n,h)
+local e={}
+setmetatable(e,a)
+e.id=s
+e.mapId=l
+e.leftFirstFormaiton=r
+e.leftSubstitute=t
+e.rightFirstFormaiton=u
+e.rightSubstitute=m
+e.leftName=w
+e.leftIcon=f
+e.rightName=y
+e.rightIcon=c
+e.mapPrefabId=d
+e.needMirrorScaleX=i
+e.previewId=o
+e.monsterEffect=n
+e.audioBanks=h
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.mapId=t[2]
+e.leftFirstFormaiton=t[3]
+e.leftSubstitute=t[4]
+e.rightFirstFormaiton=t[5]
+e.rightSubstitute=t[6]
+e.leftName=t[7]
+e.leftIcon=t[8]
+e.rightName=t[9]
+e.rightIcon=t[10]
+e.mapPrefabId=t[11]
+e.needMirrorScaleX=t[12]
+e.previewId=t[13]
+e.monsterEffect=t[14]
+e.audioBanks=t[15]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/skillAct/DTBattlePreviewEntityTableData')
+end
+return a 

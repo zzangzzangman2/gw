@@ -1,0 +1,100 @@
+local a={id=0,openTime={},applicationTime={},deadline={},quantity=0,signIn=0,battlePower=0,statistics=0,serverGroupNum=0,battlefieldCap=0,battlefieldLowerLimit=0,cloneTime="",earlyEntry={},competitionOpen={},protectionEnds={},endingTime={},marchingTime=0,acceleratedConsumption={},freeResurrection=0,effortDrop=0,defendTimes=0,revivalTime=0,resurrectionConsumption={},combatCD=0,combatCD1=0,energeticCap=0,energyConsumption=0,energyConsumption1=0,victoryPoints=0,failurePoints=0,constructionCredits=0,posType1Guild={},posType2Guild={},selfColour={},activeDay=0,acceleratedQuickMinTime=0,battleTime=0,star5Num=0,demote5=0,star4Num=0,demote4=0,rewardDisplay={{},{}}}
+a.__index=a
+function a.New(y,x,q,t,N,O,I,A,z,_,E,T,H,U,R,W,M,F,C,D,L,Y,S,j,u,l,r,d,h,o,i,n,s,c,p,m,k,b,g,v,f,w)
+local e={}
+setmetatable(e,a)
+e.id=y
+e.openTime=x
+e.applicationTime=q
+e.deadline=t
+e.quantity=N
+e.signIn=O
+e.battlePower=I
+e.statistics=A
+e.serverGroupNum=z
+e.battlefieldCap=_
+e.battlefieldLowerLimit=E
+e.cloneTime=T
+e.earlyEntry=H
+e.competitionOpen=U
+e.protectionEnds=R
+e.endingTime=W
+e.marchingTime=M
+e.acceleratedConsumption=F
+e.freeResurrection=C
+e.effortDrop=D
+e.defendTimes=L
+e.revivalTime=Y
+e.resurrectionConsumption=S
+e.combatCD=j
+e.combatCD1=u
+e.energeticCap=l
+e.energyConsumption=r
+e.energyConsumption1=d
+e.victoryPoints=h
+e.failurePoints=o
+e.constructionCredits=i
+e.posType1Guild=n
+e.posType2Guild=s
+e.selfColour=c
+e.activeDay=p
+e.acceleratedQuickMinTime=m
+e.battleTime=k
+e.star5Num=b
+e.demote5=g
+e.star4Num=v
+e.demote4=f
+e.rewardDisplay=w
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.openTime=t[2]
+e.applicationTime=t[3]
+e.deadline=t[4]
+e.quantity=t[5]
+e.signIn=t[6]
+e.battlePower=t[7]
+e.statistics=t[8]
+e.serverGroupNum=t[9]
+e.battlefieldCap=t[10]
+e.battlefieldLowerLimit=t[11]
+e.cloneTime=t[12]
+e.earlyEntry=t[13]
+e.competitionOpen=t[14]
+e.protectionEnds=t[15]
+e.endingTime=t[16]
+e.marchingTime=t[17]
+e.acceleratedConsumption=t[18]
+e.freeResurrection=t[19]
+e.effortDrop=t[20]
+e.defendTimes=t[21]
+e.revivalTime=t[22]
+e.resurrectionConsumption=t[23]
+e.combatCD=t[24]
+e.combatCD1=t[25]
+e.energeticCap=t[26]
+e.energyConsumption=t[27]
+e.energyConsumption1=t[28]
+e.victoryPoints=t[29]
+e.failurePoints=t[30]
+e.constructionCredits=t[31]
+e.posType1Guild=t[32]
+e.posType2Guild=t[33]
+e.selfColour=t[34]
+e.activeDay=t[35]
+e.acceleratedQuickMinTime=t[36]
+e.battleTime=t[37]
+e.star5Num=t[38]
+e.demote5=t[39]
+e.star4Num=t[40]
+e.demote4=t[41]
+e.rewardDisplay=t[42]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/sourceWorld/DTSourceWorldEntityTableData')
+end
+return a 

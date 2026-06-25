@@ -1,0 +1,23 @@
+local e=
+{
+ByIdx={
+{1,9,1,{{26500,2}},196,"DTSilveryParkTaskTips_1"},
+{2,2,6,{{26500,2}},0,"DTSilveryParkTaskTips_2"},
+{3,5,20,{{26500,2}},16,"DTSilveryParkTaskTips_3"},
+{4,3,30,{{26500,2}},40,"DTSilveryParkTaskTips_4"},
+{5,9,6,{{26500,2}},196,"DTSilveryParkTaskTips_5"},
+{6,2,4,{{26500,2}},0,"DTSilveryParkTaskTips_6"},
+{7,4,10,{{26500,2}},138,"DTSilveryParkTaskTips_7"},
+{8,5,5,{{26500,2}},16,"DTSilveryParkTaskTips_8"},
+{9,4,5,{{26500,2}},138,"DTSilveryParkTaskTips_9"},
+{10,4,15,{{26500,2}},138,"DTSilveryParkTaskTips_10"},
+{11,5,15,{{26500,2}},16,"DTSilveryParkTaskTips_11"},
+{12,3,60,{{26500,2}},40,"DTSilveryParkTaskTips_12"},
+{13,2,2,{{26500,2}},0,"DTSilveryParkTaskTips_13"},
+{14,7,40,{{26500,2}},252,"DTSilveryParkTaskTips_14"},
+{15,7,20,{{26500,2}},252,"DTSilveryParkTaskTips_15"},
+{16,6,900,{{26500,2}},255,"DTSilveryParkTaskTips_16"}
+},
+Len=16
+}
+return e 

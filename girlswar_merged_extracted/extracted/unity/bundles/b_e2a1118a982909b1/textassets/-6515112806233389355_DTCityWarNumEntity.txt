@@ -1,0 +1,30 @@
+local t={id=0,battleZone=0,serverNum=0,star6={{},{}},star5={{},{}},star4={{},{}},star3={{},{}}}
+t.__index=t
+function t.New(o,h,a,s,r,n,i)
+local e={}
+setmetatable(e,t)
+e.id=o
+e.battleZone=h
+e.serverNum=a
+e.star6=s
+e.star5=r
+e.star4=n
+e.star3=i
+return e
+end
+function t.NewFromArrItem(a)
+local e={}
+setmetatable(e,t)
+e.id=a[1]
+e.battleZone=a[2]
+e.serverNum=a[3]
+e.star6=a[4]
+e.star5=a[5]
+e.star4=a[6]
+e.star3=a[7]
+return e
+end
+function t.GetArr()
+return require('DataNode/DataTable/Create/cityWar/DTCityWarNumEntityTableData')
+end
+return t 

@@ -1,0 +1,28 @@
+local e={id=0,type=0,pic="",tipsText="",typeNew=0,tipsTextNew=""}
+e.__index=e
+function e.New(a,i,o,h,s,n)
+local t={}
+setmetatable(t,e)
+t.id=a
+t.type=i
+t.pic=o
+t.tipsText=h
+t.typeNew=s
+t.tipsTextNew=n
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.type=a[2]
+t.pic=a[3]
+t.tipsText=a[4]
+t.typeNew=a[5]
+t.tipsTextNew=a[6]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/maze/DTMazeAwardShowEntityTableData')
+end
+return e 

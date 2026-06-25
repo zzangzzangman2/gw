@@ -1,0 +1,32 @@
+local a={id=0,level=0,profession=0,star=0,addAtk=0,addDef=0,addHp=0,addAttrs={{},{}}}
+a.__index=a
+function a.New(i,h,n,t,d,r,s,o)
+local e={}
+setmetatable(e,a)
+e.id=i
+e.level=h
+e.profession=n
+e.star=t
+e.addAtk=d
+e.addDef=r
+e.addHp=s
+e.addAttrs=o
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.level=t[2]
+e.profession=t[3]
+e.star=t[4]
+e.addAtk=t[5]
+e.addDef=t[6]
+e.addHp=t[7]
+e.addAttrs=t[8]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/hero/DTHeroLevelUpEntityTableData')
+end
+return a 

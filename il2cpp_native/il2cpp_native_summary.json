@@ -1,0 +1,18 @@
+[
+  {
+    "xapk": "C:\\Users\\godho\\Downloads\\girlswar\\girl1.xapk",
+    "apk": "com.girlwars.kr.apk",
+    "inner_path": "assets/bin/Data/Managed/Metadata/global-metadata.dat",
+    "output": "C:\\Users\\godho\\Downloads\\girlswar\\il2cpp_native\\global-metadata.dat",
+    "size": 9513836,
+    "sha256": "caaf94218f49a4ce296cede9d87ac43d7993ce2432d452537e405322cebe252b"
+  },
+  {
+    "xapk": "C:\\Users\\godho\\Downloads\\girlswar\\girl1.xapk",
+    "apk": "config.arm64_v8a.apk",
+    "inner_path": "lib/arm64-v8a/libil2cpp.so",
+    "output": "C:\\Users\\godho\\Downloads\\girlswar\\il2cpp_native\\libil2cpp.so",
+    "size": 52321120,
+    "sha256": "8bb3e249a9cf03d309170a4fdeb9af81e4649107d50a6f3d72b1321b8d5916f1"
+  }
+]

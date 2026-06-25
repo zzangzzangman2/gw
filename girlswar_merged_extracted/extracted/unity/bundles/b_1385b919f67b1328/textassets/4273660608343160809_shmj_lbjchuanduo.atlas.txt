@@ -1,0 +1,12 @@
+shmj_lbjchuanduo.png
+size:512,256
+filter:Linear,Linear
+a1
+bounds:214,58,39,57
+offsets:2,2,42,60
+a2
+bounds:214,116,97,98
+offsets:1,1,99,100
+a3
+bounds:1,1,212,213
+offsets:1,1,214,215

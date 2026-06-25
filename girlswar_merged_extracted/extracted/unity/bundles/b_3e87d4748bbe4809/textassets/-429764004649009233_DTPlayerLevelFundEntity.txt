@@ -1,0 +1,28 @@
+local e={id=0,stage=0,goods=0,award={},chargeAward={},chargeAwardShow={}}
+e.__index=e
+function e.New(a,i,o,h,s,n)
+local t={}
+setmetatable(t,e)
+t.id=a
+t.stage=i
+t.goods=o
+t.award=h
+t.chargeAward=s
+t.chargeAwardShow=n
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.stage=a[2]
+t.goods=a[3]
+t.award=a[4]
+t.chargeAward=a[5]
+t.chargeAwardShow=a[6]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/activity/DTPlayerLevelFundEntityTableData')
+end
+return e 

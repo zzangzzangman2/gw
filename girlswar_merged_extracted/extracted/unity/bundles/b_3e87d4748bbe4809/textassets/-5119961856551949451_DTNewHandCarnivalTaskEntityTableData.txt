@@ -1,0 +1,19 @@
+local e=
+{
+ByIdx={
+{1,1,1,{{1028,20}},"DTActivityNewCarnivalTask_1",0,1},
+{2,2,10,{{1028,20}},"DTActivityNewCarnivalTask_2",3,8},
+{3,3,10,{{1028,20}},"DTActivityNewCarnivalTask_3",6,4},
+{4,4,10,{{1028,20}},"DTActivityNewCarnivalTask_4",40,2},
+{5,5,1,{{1028,20}},"DTActivityNewCarnivalTask_5",4,3},
+{6,6,10,{{1028,20}},"DTActivityNewCarnivalTask_6",86,10},
+{7,7,100,{{1028,20}},"DTActivityNewCarnivalTask_7",37,13},
+{8,8,1,{{1028,20}},"DTActivityNewCarnivalTask_8",63,14},
+{9,9,2,{{1028,20}},"DTActivityNewCarnivalTask_9",20,16},
+{10,10,10,{{1028,20}},"DTActivityNewCarnivalTask_10",47,5},
+{11,11,1,{{1028,20}},"DTActivityNewCarnivalTask_11",1,7},
+{12,12,1,{{1028,20}},"DTActivityNewCarnivalTask_12",53,15}
+},
+Len=12
+}
+return e 

@@ -1,0 +1,8 @@
+local e=
+{
+ByIdx={
+{1001,70,0,100}
+},
+Len=1
+}
+return e 

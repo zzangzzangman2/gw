@@ -1,0 +1,18 @@
+{
+  "GameObject": 66,
+  "Transform": 61,
+  "ParticleSystemRenderer": 52,
+  "ParticleSystem": 52,
+  "Material": 30,
+  "Texture2D": 7,
+  "MonoBehaviour": 6,
+  "RectTransform": 5,
+  "CanvasRenderer": 4,
+  "Sprite": 3,
+  "MonoScript": 2,
+  "AnimationClip": 2,
+  "Canvas": 1,
+  "AnimatorController": 1,
+  "AssetBundle": 1,
+  "Shader": 1
+}

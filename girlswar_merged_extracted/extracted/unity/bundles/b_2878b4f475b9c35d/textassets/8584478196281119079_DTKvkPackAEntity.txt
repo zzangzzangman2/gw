@@ -1,0 +1,28 @@
+local e={id=0,goodsId=0,page=0,limit=0,award={{},{}},multi=0}
+e.__index=e
+function e.New(a,i,o,h,s,n)
+local t={}
+setmetatable(t,e)
+t.id=a
+t.goodsId=i
+t.page=o
+t.limit=h
+t.award=s
+t.multi=n
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.goodsId=a[2]
+t.page=a[3]
+t.limit=a[4]
+t.award=a[5]
+t.multi=a[6]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/sourceWorld/DTKvkPackAEntityTableData')
+end
+return e 

@@ -1,0 +1,11 @@
+local t={}
+function t:OnHandle(e)
+local e=assert(GlobalPB.decode("PRT_SUMMON_DOOR_SELECT_POOL_RESP",e));
+if(GameInit.GetDebugLogProto())then
+;
+;
+end
+EventSystem.SendEvent(CommonEventId.OnRespJieyuanSelectSrPool,{protoId=ProtoId.PRT_SUMMON_DOOR_SELECT_POOL_RESP,proto=e})
+return e
+end
+return t 

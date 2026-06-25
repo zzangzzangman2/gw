@@ -1,0 +1,27 @@
+local e=
+{
+ByIdx={
+{"Param253","Param253",0,{},"",0,0,5,10,0,1,"","","","rodStick1","rodStick1:1",1,10,0},
+{"Param254","Param254",0,{},"",0,0,1,1,0,1,"","","","rodStick1","rodStick1:1",1,10,0},
+{"Param001","Param001",0,{},"",0,0,11,2,0,1,"","","","","GameLose1_1:2,GameLose1_3:2,GameWin1_1:2,GameWin1_2:2,GameWin1_3:2",1,10,0},
+{"ParamGameWin1","ParamGameWin1",0,{},"",0,0,5,10,0,1,"","","","GameWin1_1","GameWin1_1:1,GameLose1_4:2",1,10,0},
+{"ParamGameWin2","ParamGameWin2",0,{},"",0,0,5,10,0,1,"","","","GameWin1_2","GameWin1_2:1,GameLose1_4:2",1,10,0},
+{"ParamGameWin3","ParamGameWin3",0,{},"",0,0,5,10,0,1,"","","","GameWin1_3","GameWin1_3:1,GameLose1_4:2",1,10,0},
+{"ParamBreast2","ParamBreast2",1,{{3,0},{2,0}},"HitArea_BreastR,HitArea_BreastL",0,0,5,10,0,1,"","","1:rodBreast2","rodBreast2,tapTrigone2_sp2","rodBreast2:2,tapTrigone2_sp2:2",1,10,0},
+{"ParamPants_idle1","ParamPants",1,{{3,0},{1,0}},"HitArea_Trigone1,HitArea_Trigone2",0,0,5,10,0,1,"","","1:rodPants2","rodPants2,rodPants2_sp,idle1_sp","rodPants2:2",1,10,0},
+{"ParamPants_idle1_sp1","ParamPants",1,{{3,-1},{1,-1}},"HitArea_Trigone1,HitArea_Trigone2",-8,0,5,8,0,1,"","idle1_sp","1:rodPants2_sp","rodPants2,rodPants2_sp","rodPants2_sp:2",1,10,0},
+{"Param108","Param108",1,{},"",0,0,30,30,0,1,"","","","tapTrigone2_sp","tapTrigone2_sp:1",1,10,0},
+{"ParamBreastR2","ParamBreastR2",1,{},"",0,0,5,10,0,1,"","idle1_sp2","","tapBreast2R_sp2","tapBreast2R_sp2:1",1,10,0},
+{"ParamBreastL2","ParamBreastL2",1,{},"",0,0,5,10,0,1,"","idle1_sp2","","tapBreast2L_sp2","tapBreast2L_sp2:1",1,10,0},
+{"ParamBelly2","ParamBelly2",1,{},"",0,0,5,10,0,1,"","idle1_sp2","","tapBelly2_sp2","tapBelly2_sp2:1",1,10,0},
+{"ParamLegR2","ParamLegR2",1,{},"",0,0,5,10,0,1,"","idle1_sp2","","tapLeg2_sp2","tapLeg2_sp2:1",1,10,0},
+{"ParamBreast3","ParamBreast3",2,{{1,0},{2,0}},"HitArea_BreastR,HitArea_BreastL",0,0,5,10,0,1,"","","1:rodBreast3","rodBreast3","rodBreast3:1",1,10,0},
+{"ParamSkirt3","ParamSkirt3",2,{{1,0},{3,0}},"HitArea_Leg1,HitArea_Leg2,HitArea_Leg3,HitArea_Leg4,HitArea_Leg5,HitArea_Leg6",0,0,5,10,0,1,"","","","","",1,10,0},
+{"ParamCup_0","ParamCup",2,{{4,0}},"HitArea_HandL",0,0,2,3,0,1,"ParamBreast3:1","","1:rodCup3_1","rodCup3_1,rodCup3_2","rodCup3_1:2,rodCup3_2:2",1,10,0},
+{"ParamCup_10","ParamCup",2,{{4,0}},"HitArea_HandL",0,0,2,3,0,1,"ParamBreast3:2,ParamCloth:1","","1:rodCup3_2","rodCup3_1,rodCup3_2","rodCup3_1:2,rodCup3_2:2",1,10,0},
+{"ParamCloth","ParamCloth",2,{},"",0,0,5,10,0,1,"","","","rodCup3_2","rodCup3_2:1",1,10,0},
+{"ParamFood","ParamFood",2,{},"",1,3,3,3,0,1,"","","","tapTentacle3_1","",1,10,0}
+},
+Len=20
+}
+return e 

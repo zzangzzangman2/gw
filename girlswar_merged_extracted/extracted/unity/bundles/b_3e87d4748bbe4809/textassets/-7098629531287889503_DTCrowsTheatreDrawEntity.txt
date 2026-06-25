@@ -1,0 +1,30 @@
+local t={id=0,poolId=0,rewardId=0,group=0,weight=0,days5reelWeight=0,bigReward=0}
+t.__index=t
+function t.New(o,h,a,s,r,n,i)
+local e={}
+setmetatable(e,t)
+e.id=o
+e.poolId=h
+e.rewardId=a
+e.group=s
+e.weight=r
+e.days5reelWeight=n
+e.bigReward=i
+return e
+end
+function t.NewFromArrItem(a)
+local e={}
+setmetatable(e,t)
+e.id=a[1]
+e.poolId=a[2]
+e.rewardId=a[3]
+e.group=a[4]
+e.weight=a[5]
+e.days5reelWeight=a[6]
+e.bigReward=a[7]
+return e
+end
+function t.GetArr()
+return require('DataNode/DataTable/Create/activity/DTCrowsTheatreDrawEntityTableData')
+end
+return t 

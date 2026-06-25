@@ -1,0 +1,26 @@
+
+?
+ActBlackFriday.protoCommons.proto"
+PRT_BLACK_FRIDAY_INFO_REQ"?
+PRT_BLACK_FRIDAY_INFO_RESP
+leftTime (RleftTime
+charged (Rcharged
+	fundScore (R	fundScore2
+fundReceivedFreeDids (RfundReceivedFreeDids6
+fundReceivedChargeDids (RfundReceivedChargeDids"U
+PRT_BLACK_FRIDAY_FUND_AWARD_REQ
+awardDid (RawardDid
+charge (Rcharge"V
+ PRT_BLACK_FRIDAY_FUND_AWARD_RESP
+awardDid (RawardDid
+charge (Rcharge"
+PRT_BLACK_FRIDAY_TASK_REQ"=
+PRT_BLACK_FRIDAY_TASK_RESP
+tasks (2	.PRT_TASKRtasks";
+PRT_BLACK_FRIDAY_TASK_AWARD_REQ
+taskDid (RtaskDid"v
+ PRT_BLACK_FRIDAY_TASK_AWARD_RESP
+taskDid (RtaskDid
+addScore (RaddScore
+	fundScore (R	fundScoreB
+com.next1b.nextsvr.protobproto3

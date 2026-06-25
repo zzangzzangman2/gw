@@ -1,0 +1,42 @@
+local a={id=0,awardTimes=0,startingNum=0,matchingNum=0,serverMatchingTime=0,clientMatchingTime=0,openTime="",closeTime="",round=0,mapGift={},oneRoundTime=0,participationAward={{},{}},liandongNpcId=0}
+a.__index=a
+function a.New(s,d,h,t,l,c,m,f,u,r,i,o,n)
+local e={}
+setmetatable(e,a)
+e.id=s
+e.awardTimes=d
+e.startingNum=h
+e.matchingNum=t
+e.serverMatchingTime=l
+e.clientMatchingTime=c
+e.openTime=m
+e.closeTime=f
+e.round=u
+e.mapGift=r
+e.oneRoundTime=i
+e.participationAward=o
+e.liandongNpcId=n
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.awardTimes=t[2]
+e.startingNum=t[3]
+e.matchingNum=t[4]
+e.serverMatchingTime=t[5]
+e.clientMatchingTime=t[6]
+e.openTime=t[7]
+e.closeTime=t[8]
+e.round=t[9]
+e.mapGift=t[10]
+e.oneRoundTime=t[11]
+e.participationAward=t[12]
+e.liandongNpcId=t[13]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/activity/DTBreadWarEntityTableData')
+end
+return a 

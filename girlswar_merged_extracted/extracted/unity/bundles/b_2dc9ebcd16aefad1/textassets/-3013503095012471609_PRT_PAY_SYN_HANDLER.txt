@@ -1,0 +1,29 @@
+local o={}
+function o:OnHandle(e)
+local t=assert(GlobalPB.decode("PRT_PAY_SYN",e));
+if(GameInit.GetDebugLogProto())then
+;
+;
+end
+local o=0
+local a={}
+for t,e in ipairs(t.payInfos or{})do
+o=o+e.addHC
+if e.status==PROTO_ENUM.ENUM_PAY_STATUS.PAY_SUCCESS or e.status==PROTO_ENUM.ENUM_PAY_STATUS.AWARD_SEND then
+table.insert(a,e.platformOrder)
+BuildPatchMgr:FirebaseEvent("ce_server_pay_complete")
+elseif e.status==PROTO_ENUM.ENUM_PAY_STATUS.AGAIN then
+PayMgr:Log("RemoveOldTrans")
+CS.YouYou.PayManager.RemoveOldTrans()
+end
+end
+if#a>0 then
+local e=table.concat(a,",")
+PayMgr.Log("Pay FinishOrders orderStr"..tostring(e))
+CS.YouYou.PayManager.FinishOrders(e)
+end
+CS.YouYou.PayManager.ColseHUD()
+PayMgr:HandleCommonChargeInfo(t.payInfos)
+return t
+end
+return o 

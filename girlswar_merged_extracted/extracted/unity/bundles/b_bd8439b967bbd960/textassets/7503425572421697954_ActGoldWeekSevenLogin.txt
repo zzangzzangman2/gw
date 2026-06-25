@@ -1,0 +1,17 @@
+
+?
+ActGoldWeekSevenLogin.proto"$
+"PRT_GOLD_WEEK_SEVEN_LOGIN_INFO_REQ"?
+#PRT_GOLD_WEEK_SEVEN_LOGIN_INFO_RESP
+endTime (RendTime
+	loginDays (R	loginDays"
+receivedDids (RreceivedDids&
+bpReceivedDids (RbpReceivedDids
+charge (Rcharge"Q
+%PRT_GOLD_WEEK_SEVEN_LOGIN_RECEIVE_REQ
+day (Rday
+charge (Rcharge"d
+&PRT_GOLD_WEEK_SEVEN_LOGIN_RECEIVE_RESP"
+receivedDids (RreceivedDids
+charge (RchargeB
+com.next1b.nextsvr.protobproto3

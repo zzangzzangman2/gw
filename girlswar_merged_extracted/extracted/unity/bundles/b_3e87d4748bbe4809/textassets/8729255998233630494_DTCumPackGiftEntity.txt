@@ -1,0 +1,36 @@
+local a={id=0,goods=0,type=0,weekday={},week={},Limit=0,discount=0,award={{},{}},point=0,desc=""}
+a.__index=a
+function a.New(n,r,s,t,l,u,d,h,o,i)
+local e={}
+setmetatable(e,a)
+e.id=n
+e.goods=r
+e.type=s
+e.weekday=t
+e.week=l
+e.Limit=u
+e.discount=d
+e.award=h
+e.point=o
+e.desc=i
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.goods=t[2]
+e.type=t[3]
+e.weekday=t[4]
+e.week=t[5]
+e.Limit=t[6]
+e.discount=t[7]
+e.award=t[8]
+e.point=t[9]
+e.desc=t[10]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/activity/DTCumPackGiftEntityTableData')
+end
+return a 

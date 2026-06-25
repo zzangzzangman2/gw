@@ -1,0 +1,9 @@
+b.png
+size:512,512
+filter:Linear,Linear
+images/b
+bounds:2,204,237,276
+images/effect/effect_4
+bounds:2,2,214,200
+images/effect/guangll2
+bounds:218,138,64,64

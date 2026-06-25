@@ -1,0 +1,22 @@
+local e={id=0,itemId=0,dropItem={{},{}}}
+e.__index=e
+function e.New(o,a,i)
+local t={}
+setmetatable(t,e)
+t.id=o
+t.itemId=a
+t.dropItem=i
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.itemId=a[2]
+t.dropItem=a[3]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/item/DTDropEntityTableData')
+end
+return e 

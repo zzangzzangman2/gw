@@ -1,0 +1,26 @@
+local e={id=0,num=0,lunarType=0,numRangeType=0,numType=0}
+e.__index=e
+function e.New(o,n,a,s,i)
+local t={}
+setmetatable(t,e)
+t.id=o
+t.num=n
+t.lunarType=a
+t.numRangeType=s
+t.numType=i
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.num=a[2]
+t.lunarType=a[3]
+t.numRangeType=a[4]
+t.numType=a[5]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/activity/DTLunarDiskNumEntityTableData')
+end
+return e 

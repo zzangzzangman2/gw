@@ -1,0 +1,19 @@
+
+?
+ActHeroChip.proto"B
+PRT_HERO_CHIP_DATA
+did (Rdid
+received (Rreceived"
+PRT_HERO_CHIP_INFO_REQ"d
+PRT_HERO_CHIP_INFO_RESP
+
+curHeroDid (R
+curHeroDid)
+datas (2.PRT_HERO_CHIP_DATARdatas"
+PRT_HERO_CHIP_FREE_AWARD_REQ"
+PRT_HERO_CHIP_FREE_AWARD_RESP"9
+PRT_HERO_CHIP_SWITCH_HERO_REQ
+heroDid (RheroDid":
+PRT_HERO_CHIP_SWITCH_HERO_RESP
+heroDid (RheroDidB
+com.next1b.nextsvr.protobproto3

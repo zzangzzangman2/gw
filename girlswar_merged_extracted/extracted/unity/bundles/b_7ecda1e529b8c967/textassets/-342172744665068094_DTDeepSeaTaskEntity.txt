@@ -1,0 +1,40 @@
+local a={id=0,listLv=0,questType=0,teamSeq=0,next=0,needCount=0,priority=0,numType=0,reward={{},{}},name="",text="",listNum=0}
+a.__index=a
+function a.New(s,d,h,t,u,c,m,l,r,i,o,n)
+local e={}
+setmetatable(e,a)
+e.id=s
+e.listLv=d
+e.questType=h
+e.teamSeq=t
+e.next=u
+e.needCount=c
+e.priority=m
+e.numType=l
+e.reward=r
+e.name=i
+e.text=o
+e.listNum=n
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.listLv=t[2]
+e.questType=t[3]
+e.teamSeq=t[4]
+e.next=t[5]
+e.needCount=t[6]
+e.priority=t[7]
+e.numType=t[8]
+e.reward=t[9]
+e.name=t[10]
+e.text=t[11]
+e.listNum=t[12]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/deepsea/DTDeepSeaTaskEntityTableData')
+end
+return a 

@@ -1,0 +1,14 @@
+local e=
+{
+ByIdx={
+{1,1,7300000,2,{{20004,3}},0,"CrowsTheatrePlotTitle01","CrowsTheatrePlotDesc01",""},
+{2,1,7310000,5,{{20045,5}},0,"CrowsTheatrePlotTitle02","CrowsTheatrePlotDesc02",""},
+{3,1,7320000,10,{{20048,1}},0,"CrowsTheatrePlotTitle03","CrowsTheatrePlotDesc03",""},
+{4,1,7330000,15,{{99903,50}},0,"CrowsTheatrePlotTitle04","CrowsTheatrePlotDesc04",""},
+{5,1,7340000,20,{{20048,2}},0,"CrowsTheatrePlotTitle05","CrowsTheatrePlotDesc05",""},
+{6,1,7350000,25,{{1060,100000}},0,"CrowsTheatrePlotTitle06","CrowsTheatrePlotDesc06",""},
+{7,1,7360000,35,{{99903,50}},1,"CrowsTheatrePlotTitle07","CrowsTheatrePlotDesc07","Assets/Download/ArtSources/UISpriteRes/ActMushRoom/actCommon_sliced_speStoryFrame.png"}
+},
+Len=7
+}
+return e 

@@ -1,0 +1,28 @@
+local e={id=0,list=0,param=0,awardPoint={{},{}},name="",taskIcon=""}
+e.__index=e
+function e.New(a,i,o,h,s,n)
+local t={}
+setmetatable(t,e)
+t.id=a
+t.list=i
+t.param=o
+t.awardPoint=h
+t.name=s
+t.taskIcon=n
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.list=a[2]
+t.param=a[3]
+t.awardPoint=a[4]
+t.name=a[5]
+t.taskIcon=a[6]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/activity/DTMushroomCollideTaskEntityTableData')
+end
+return e 

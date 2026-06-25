@@ -1,0 +1,15 @@
+Symphony_Card.png
+size:1024,1024
+filter:Linear,Linear
+aaa
+bounds:0,192,256,135
+bg4
+bounds:630,389,295,536
+biankuang1
+bounds:330,380,300,545
+renwu3
+bounds:0,327,330,598
+t5
+bounds:330,30,436,350
+xx3
+bounds:0,34,165,158

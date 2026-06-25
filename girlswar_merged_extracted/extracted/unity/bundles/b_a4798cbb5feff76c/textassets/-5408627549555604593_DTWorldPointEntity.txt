@@ -1,0 +1,30 @@
+local t={id=0,stageParam1={},stageParam2={},pointlink={},pointType=0,pointName="",pointModel=0}
+t.__index=t
+function t.New(o,h,a,s,r,n,i)
+local e={}
+setmetatable(e,t)
+e.id=o
+e.stageParam1=h
+e.stageParam2=a
+e.pointlink=s
+e.pointType=r
+e.pointName=n
+e.pointModel=i
+return e
+end
+function t.NewFromArrItem(a)
+local e={}
+setmetatable(e,t)
+e.id=a[1]
+e.stageParam1=a[2]
+e.stageParam2=a[3]
+e.pointlink=a[4]
+e.pointType=a[5]
+e.pointName=a[6]
+e.pointModel=a[7]
+return e
+end
+function t.GetArr()
+return require('DataNode/DataTable/Create/worldMap/DTWorldPointEntityTableData')
+end
+return t 

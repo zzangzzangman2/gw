@@ -1,0 +1,83 @@
+
+?
+ActCrow.protoCommons.protoSnapshot.proto"g
+PRT_CROW_DRAW_RECORD
+
+drawSecond (R
+drawSecond/
+cells (2.PRT_CROW_DRAW_AWARD_CELLRcells"?
+PRT_CROW_DRAW_SERVER_RECORD(
+player (2.PRT_PLAYER_DESCRplayer
+
+drawSecond (R
+drawSecond/
+cells (2.PRT_CROW_DRAW_AWARD_CELLRcells"?
+PRT_CROW_THEME
+	plotCount (R	plotCount
+plotDids (RplotDids
+score (Rscore
+	scoreDids (R	scoreDids$
+itemDrawCount (RitemDrawCount"d
+PRT_CROW_DRAW_AWARD/
+cells (2.PRT_CROW_DRAW_AWARD_CELLRcells
+	reelCount (R	reelCount"?
+PRT_CROW_DRAW_AWARD_CELL
+type (Rtype 
+award (2
+.PRT_THINGRaward
+bingo (	Rbingo
+plot (Rplot
+score (Rscore"o
+PRT_CROW_PLOT_AWARD
+plotDid (RplotDid
+scoreDid (RscoreDid"
+awards (2
+.PRT_THINGRawards"
+PRT_CROW_INFO_REQ"?
+PRT_CROW_INFO_RESP%
+theme (2.PRT_CROW_THEMERtheme*
+dayGoldDrawCount (RdayGoldDrawCount
+bingos (	Rbingos&
+bingoEndSceond (RbingoEndSceond"P
+PRT_CROW_DRAW_REQ#
+type (2.ENUM_DRAW_TYPERtype
+isGold (RisGold"?
+PRT_CROW_DRAW_RESP
+	plotCount (R	plotCount
+score (Rscore*
+dayGoldDrawCount (RdayGoldDrawCount,
+awards (2.PRT_CROW_DRAW_AWARDRawards
+bingos (	Rbingos&
+bingoEndSceond (RbingoEndSceond4
+
+plotAwards (2.PRT_CROW_PLOT_AWARDR
+plotAwards"
+active (2
+.PRT_THINGRactive"
+PRT_CROW_RECORD_REQ"G
+PRT_CROW_RECORD_RESP/
+records (2.PRT_CROW_DRAW_RECORDRrecords"
+PRT_CROW_SERVER_RECORD_REQ"U
+PRT_CROW_SERVER_RECORD_RESP6
+records (2.PRT_CROW_DRAW_SERVER_RECORDRrecords"
+PRT_CROW_TASK_INFO_REQ":
+PRT_CROW_TASK_INFO_RESP
+tasks (2	.PRT_TASKRtasks")
+PRT_CROW_TASK_REC_REQ
+did (Rdid"9
+PRT_CROW_TASK_REC_RESP
+tasks (2	.PRT_TASKRtasks"
+PRT_CROW_GIFT_INFO_REQ"?
+PRT_CROW_GIFT_INFO_RESP 
+gifts (2
+.PRT_GOODSRgifts
+freeCD (RfreeCD.
+historyGifts (2
+.PRT_GOODSRhistoryGifts"G
+PRT_CROW_GIFT_BUY_REQ
+giftDid (RgiftDid
+count (Rcount"8
+PRT_CROW_GIFT_BUY_RESP
+gift (2
+.PRT_GOODSRgiftB
+com.next1b.nextsvr.protobproto3

@@ -1,0 +1,30 @@
+local t={id=0,monsterId=0,monsterLists={},beatReward={{},{}},beatRewardNew={{},{}},showDifficulty=0,taskTxt=""}
+t.__index=t
+function t.New(o,h,a,s,r,n,i)
+local e={}
+setmetatable(e,t)
+e.id=o
+e.monsterId=h
+e.monsterLists=a
+e.beatReward=s
+e.beatRewardNew=r
+e.showDifficulty=n
+e.taskTxt=i
+return e
+end
+function t.NewFromArrItem(a)
+local e={}
+setmetatable(e,t)
+e.id=a[1]
+e.monsterId=a[2]
+e.monsterLists=a[3]
+e.beatReward=a[4]
+e.beatRewardNew=a[5]
+e.showDifficulty=a[6]
+e.taskTxt=a[7]
+return e
+end
+function t.GetArr()
+return require('DataNode/DataTable/Create/activity/DTUr2ChallengeEntityTableData')
+end
+return t 

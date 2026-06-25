@@ -1,0 +1,11 @@
+local t={}
+function t:OnHandle(e)
+local e=assert(GlobalPB.decode("PRT_SEVEN_DAY_CHARGE_LOGIN_INFO_RESP",e));
+if(GameInit.GetDebugLogProto())then
+;
+;
+end
+ModulesInit.ActSevenDayRechargeGiftMgr:OnRespActSevenDayRechargeGiftInfo(e)
+return e
+end
+return t 

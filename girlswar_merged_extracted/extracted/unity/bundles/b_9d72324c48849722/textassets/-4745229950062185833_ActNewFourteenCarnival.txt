@@ -1,0 +1,42 @@
+
+?
+
+ActNewFourteenCarnival.protoCommons.proto"?
+PRT_NEW_FOURTEEN_CARNIVAL_DAY
+day (Rday%
+dayTasks (2	.PRT_TASKRdayTasks'
+	growTasks (2	.PRT_TASKR	growTasks"
+giftBuyCount (RgiftBuyCount"$
+"PRT_NEW_FOURTEEN_CARNIVAL_INFO_REQ"?
+#PRT_NEW_FOURTEEN_CARNIVAL_INFO_RESP
+leftTime (RleftTime$
+todayLeftTime (RtodayLeftTime
+day (Rday
+boxScore (RboxScore
+
+recBoxDids (R
+recBoxDids:
+dayInfos (2.PRT_NEW_FOURTEEN_CARNIVAL_DAYRdayInfos
+isNew (RisNew"5
+!PRT_NEW_FOURTEEN_CARNIVAL_BUY_REQ
+day (Rday"Z
+"PRT_NEW_FOURTEEN_CARNIVAL_BUY_RESP
+day (Rday"
+giftBuyCount (RgiftBuyCount"J
+,PRT_NEW_FOURTEEN_CARNIVAL_DAY_TASK_AWARD_REQ
+awardDid (RawardDid"K
+-PRT_NEW_FOURTEEN_CARNIVAL_DAY_TASK_AWARD_RESP
+awardDid (RawardDid"K
+-PRT_NEW_FOURTEEN_CARNIVAL_GROW_TASK_AWARD_REQ
+awardDid (RawardDid"h
+.PRT_NEW_FOURTEEN_CARNIVAL_GROW_TASK_AWARD_RESP
+awardDid (RawardDid
+boxScore (RboxScore"A
+'PRT_NEW_FOURTEEN_CARNIVAL_BOX_AWARD_REQ
+boxDid (RboxDid"B
+(PRT_NEW_FOURTEEN_CARNIVAL_BOX_AWARD_RESP
+boxDid (RboxDid".
+,PRT_NEW_FOURTEEN_CARNIVAL_EXCHANGE_SCORE_REQ"K
+-PRT_NEW_FOURTEEN_CARNIVAL_EXCHANGE_SCORE_RESP
+boxScore (RboxScoreB
+com.next1b.nextsvr.protobproto3

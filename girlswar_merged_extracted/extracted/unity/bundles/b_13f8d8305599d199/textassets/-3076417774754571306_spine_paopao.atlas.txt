@@ -1,0 +1,6 @@
+spine_paopao.png
+size:64,64
+filter:Linear,Linear
+00
+bounds:0,0,53,53
+offsets:4,3,61,58

@@ -1,0 +1,76 @@
+local a={id=0,worldLevel=0,hardType=0,hardLevel=0,needLv=0,bg=0,bg2=0,stageType=0,name="",prefabId=0,HeroInitColor_R=0,HeroInitColor_G=0,HeroInitColor_B=0,bossId=0,bossIcon="",bossDesc="",firstAward={{},{}},commAward={{},{}},firstAwardFireworks={{},{}},commAwardFireworks={{},{}},firstAwardBoxWeek={{},{}},commAwardBoxWeek={{},{}},firstAwardLoveFiveBox={{},{}},commAwardLoveFiveBox={{},{}},firstAwardClubFiveBox={{},{}},commAwardClubFiveBox={{},{}},mvpAward={{},{}},score=0,keyAward={{},{}},openCost={{},{}}}
+a.__index=a
+function a.New(u,v,y,t,q,j,k,b,g,z,T,_,O,A,E,I,x,p,r,s,h,n,o,i,d,c,l,f,w,m)
+local e={}
+setmetatable(e,a)
+e.id=u
+e.worldLevel=v
+e.hardType=y
+e.hardLevel=t
+e.needLv=q
+e.bg=j
+e.bg2=k
+e.stageType=b
+e.name=g
+e.prefabId=z
+e.HeroInitColor_R=T
+e.HeroInitColor_G=_
+e.HeroInitColor_B=O
+e.bossId=A
+e.bossIcon=E
+e.bossDesc=I
+e.firstAward=x
+e.commAward=p
+e.firstAwardFireworks=r
+e.commAwardFireworks=s
+e.firstAwardBoxWeek=h
+e.commAwardBoxWeek=n
+e.firstAwardLoveFiveBox=o
+e.commAwardLoveFiveBox=i
+e.firstAwardClubFiveBox=d
+e.commAwardClubFiveBox=c
+e.mvpAward=l
+e.score=f
+e.keyAward=w
+e.openCost=m
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.worldLevel=t[2]
+e.hardType=t[3]
+e.hardLevel=t[4]
+e.needLv=t[5]
+e.bg=t[6]
+e.bg2=t[7]
+e.stageType=t[8]
+e.name=t[9]
+e.prefabId=t[10]
+e.HeroInitColor_R=t[11]
+e.HeroInitColor_G=t[12]
+e.HeroInitColor_B=t[13]
+e.bossId=t[14]
+e.bossIcon=t[15]
+e.bossDesc=t[16]
+e.firstAward=t[17]
+e.commAward=t[18]
+e.firstAwardFireworks=t[19]
+e.commAwardFireworks=t[20]
+e.firstAwardBoxWeek=t[21]
+e.commAwardBoxWeek=t[22]
+e.firstAwardLoveFiveBox=t[23]
+e.commAwardLoveFiveBox=t[24]
+e.firstAwardClubFiveBox=t[25]
+e.commAwardClubFiveBox=t[26]
+e.mvpAward=t[27]
+e.score=t[28]
+e.keyAward=t[29]
+e.openCost=t[30]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/activity/DTDragonStageEntityTableData')
+end
+return a 

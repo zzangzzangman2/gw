@@ -1,0 +1,5 @@
+spine_dajiantou.png
+size:128,64
+filter:Linear,Linear
+UI_zhuangbei_darenbanjiantou
+bounds:0,0,71,58

@@ -1,0 +1,40 @@
+local a={id=0,purchaseLimit=0,purchaseCost={},ownedChallenge=0,turnedChallenge="",numAssist=0,maxPlayerAssist=0,maxuseAssist=0,fightCount=0,token=0,revive=0,power=0}
+a.__index=a
+function a.New(s,d,h,t,u,c,m,l,r,i,o,n)
+local e={}
+setmetatable(e,a)
+e.id=s
+e.purchaseLimit=d
+e.purchaseCost=h
+e.ownedChallenge=t
+e.turnedChallenge=u
+e.numAssist=c
+e.maxPlayerAssist=m
+e.maxuseAssist=l
+e.fightCount=r
+e.token=i
+e.revive=o
+e.power=n
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.purchaseLimit=t[2]
+e.purchaseCost=t[3]
+e.ownedChallenge=t[4]
+e.turnedChallenge=t[5]
+e.numAssist=t[6]
+e.maxPlayerAssist=t[7]
+e.maxuseAssist=t[8]
+e.fightCount=t[9]
+e.token=t[10]
+e.revive=t[11]
+e.power=t[12]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/burning/DTBurningBaseEntityTableData')
+end
+return a 

@@ -1,0 +1,22 @@
+local e={id=0,colour={},posType=0}
+e.__index=e
+function e.New(o,a,i)
+local t={}
+setmetatable(t,e)
+t.id=o
+t.colour=a
+t.posType=i
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.colour=a[2]
+t.posType=a[3]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/sourceWorld/DTFullGvgColourEntityTableData')
+end
+return e 

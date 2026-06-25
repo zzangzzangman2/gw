@@ -1,0 +1,9 @@
+local e={}
+function e:OnHandle(e)
+local e=assert(GlobalPB.decode("PRT_CS_MAZE_PASS_MILLIS_MAX_SYN",e));
+if(GameInit.GetDebugLogProto())then
+;
+;
+end
+end
+return e 

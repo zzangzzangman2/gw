@@ -1,0 +1,38 @@
+local a={id=0,uiKey="",highermenu=0,showType=0,showLever={},showStage={},newShowType=0,newShowLevel={},newShowStage={},icon="",info=""}
+a.__index=a
+function a.New(n,r,s,t,l,u,c,d,h,o,i)
+local e={}
+setmetatable(e,a)
+e.id=n
+e.uiKey=r
+e.highermenu=s
+e.showType=t
+e.showLever=l
+e.showStage=u
+e.newShowType=c
+e.newShowLevel=d
+e.newShowStage=h
+e.icon=o
+e.info=i
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.uiKey=t[2]
+e.highermenu=t[3]
+e.showType=t[4]
+e.showLever=t[5]
+e.showStage=t[6]
+e.newShowType=t[7]
+e.newShowLevel=t[8]
+e.newShowStage=t[9]
+e.icon=t[10]
+e.info=t[11]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/function/DTLoseJumpEntityTableData')
+end
+return a 

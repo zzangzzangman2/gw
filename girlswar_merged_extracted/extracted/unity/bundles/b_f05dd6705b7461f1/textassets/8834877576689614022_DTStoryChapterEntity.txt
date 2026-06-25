@@ -1,0 +1,38 @@
+local a={id=0,name="",icon="",chapter_review="",chapter_banner="",unlockType=0,unlockPara={},watchable=0,unlockType_new=0,unlockPara_new={},watchable_new=0}
+a.__index=a
+function a.New(n,r,s,t,l,u,c,d,h,o,i)
+local e={}
+setmetatable(e,a)
+e.id=n
+e.name=r
+e.icon=s
+e.chapter_review=t
+e.chapter_banner=l
+e.unlockType=u
+e.unlockPara=c
+e.watchable=d
+e.unlockType_new=h
+e.unlockPara_new=o
+e.watchable_new=i
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.name=t[2]
+e.icon=t[3]
+e.chapter_review=t[4]
+e.chapter_banner=t[5]
+e.unlockType=t[6]
+e.unlockPara=t[7]
+e.watchable=t[8]
+e.unlockType_new=t[9]
+e.unlockPara_new=t[10]
+e.watchable_new=t[11]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/maps/DTStoryChapterEntityTableData')
+end
+return a 

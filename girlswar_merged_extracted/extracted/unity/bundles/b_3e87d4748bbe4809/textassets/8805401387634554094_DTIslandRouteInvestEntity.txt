@@ -1,0 +1,22 @@
+local e={id=0,name="",iconName=""}
+e.__index=e
+function e.New(o,a,i)
+local t={}
+setmetatable(t,e)
+t.id=o
+t.name=a
+t.iconName=i
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.name=a[2]
+t.iconName=a[3]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/activity/DTIslandRouteInvestEntityTableData')
+end
+return e 

@@ -1,0 +1,22 @@
+local e={id="",data="",dataType=""}
+e.__index=e
+function e.New(o,a,i)
+local t={}
+setmetatable(t,e)
+t.id=o
+t.data=a
+t.dataType=i
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.data=a[2]
+t.dataType=a[3]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/constant/DTConstantEntityTableData')
+end
+return e 

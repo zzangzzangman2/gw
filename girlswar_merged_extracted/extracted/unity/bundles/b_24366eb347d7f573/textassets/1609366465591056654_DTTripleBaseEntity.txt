@@ -1,0 +1,40 @@
+local a={id=0,exchangeItem=0,tea=0,totalScoreRankCount=0,physical=0,deplete=0,speedyDeplete=0,rapidDeplete=0,exchangeStamina={},landmine=0,rockets=0,helpImageId=0}
+a.__index=a
+function a.New(s,d,h,t,u,c,m,l,r,i,o,n)
+local e={}
+setmetatable(e,a)
+e.id=s
+e.exchangeItem=d
+e.tea=h
+e.totalScoreRankCount=t
+e.physical=u
+e.deplete=c
+e.speedyDeplete=m
+e.rapidDeplete=l
+e.exchangeStamina=r
+e.landmine=i
+e.rockets=o
+e.helpImageId=n
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.exchangeItem=t[2]
+e.tea=t[3]
+e.totalScoreRankCount=t[4]
+e.physical=t[5]
+e.deplete=t[6]
+e.speedyDeplete=t[7]
+e.rapidDeplete=t[8]
+e.exchangeStamina=t[9]
+e.landmine=t[10]
+e.rockets=t[11]
+e.helpImageId=t[12]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/herbs/DTTripleBaseEntityTableData')
+end
+return a 

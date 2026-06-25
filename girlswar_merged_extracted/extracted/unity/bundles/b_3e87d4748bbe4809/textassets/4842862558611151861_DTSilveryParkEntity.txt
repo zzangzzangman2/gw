@@ -1,0 +1,52 @@
+local a={id=0,drawCost={},shopCost={},speShopCost={},cakeCost={},cakeMakeCd=0,cakeComboCd=0,cakePlayerRankNum=0,cakeGuildRankNum=0,drawFloorTime=0,drawComPool=0,drawFloorPool=0,goods=0,fundAward={},actItem={},taskShowModelId=0,iconographyProve=0,atlasId=0}
+a.__index=a
+function a.New(d,c,l,t,f,m,y,v,p,b,w,u,n,i,o,s,r,h)
+local e={}
+setmetatable(e,a)
+e.id=d
+e.drawCost=c
+e.shopCost=l
+e.speShopCost=t
+e.cakeCost=f
+e.cakeMakeCd=m
+e.cakeComboCd=y
+e.cakePlayerRankNum=v
+e.cakeGuildRankNum=p
+e.drawFloorTime=b
+e.drawComPool=w
+e.drawFloorPool=u
+e.goods=n
+e.fundAward=i
+e.actItem=o
+e.taskShowModelId=s
+e.iconographyProve=r
+e.atlasId=h
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.drawCost=t[2]
+e.shopCost=t[3]
+e.speShopCost=t[4]
+e.cakeCost=t[5]
+e.cakeMakeCd=t[6]
+e.cakeComboCd=t[7]
+e.cakePlayerRankNum=t[8]
+e.cakeGuildRankNum=t[9]
+e.drawFloorTime=t[10]
+e.drawComPool=t[11]
+e.drawFloorPool=t[12]
+e.goods=t[13]
+e.fundAward=t[14]
+e.actItem=t[15]
+e.taskShowModelId=t[16]
+e.iconographyProve=t[17]
+e.atlasId=t[18]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/activity/DTSilveryParkEntityTableData')
+end
+return a 

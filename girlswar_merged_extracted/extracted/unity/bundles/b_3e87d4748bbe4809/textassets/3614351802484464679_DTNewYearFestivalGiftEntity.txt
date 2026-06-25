@@ -1,0 +1,28 @@
+local e={id=0,reward={{},{}},goods=0,cornerScale="",showPrice=0,showPrice1=0}
+e.__index=e
+function e.New(a,i,o,h,s,n)
+local t={}
+setmetatable(t,e)
+t.id=a
+t.reward=i
+t.goods=o
+t.cornerScale=h
+t.showPrice=s
+t.showPrice1=n
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.reward=a[2]
+t.goods=a[3]
+t.cornerScale=a[4]
+t.showPrice=a[5]
+t.showPrice1=a[6]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/activity/DTNewYearFestivalGiftEntityTableData')
+end
+return e 

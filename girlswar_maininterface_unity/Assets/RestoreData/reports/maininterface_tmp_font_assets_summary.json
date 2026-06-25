@@ -1,0 +1,44 @@
+{
+  "generated_at": "2026-06-25 14:53:19",
+  "target_bundle_count": 105,
+  "bundle_classes": {
+    "tmp_shaders": 1,
+    "source_font": 4,
+    "font_material_preset": 44,
+    "font_view_prefabs": 2,
+    "tmp_font_asset": 54
+  },
+  "aggregate_type_counts": {
+    "Shader": 13,
+    "ShaderVariantCollection": 1,
+    "AssetBundle": 105,
+    "Texture2D": 81,
+    "Font": 8,
+    "Material": 107,
+    "MonoBehaviour": 240,
+    "RectTransform": 98,
+    "GameObject": 98,
+    "CanvasRenderer": 88,
+    "MonoScript": 66,
+    "CanvasGroup": 2,
+    "Canvas": 2
+  },
+  "tmp_font_asset_rows": 54,
+  "source_font_type_count": 8,
+  "source_font_structured_rows": 0,
+  "material_type_count": 107,
+  "material_structured_rows": 0,
+  "texture2d_type_count": 81,
+  "texture2d_structured_rows": 0,
+  "extracted_png_images": 73,
+  "font_families": [
+    "Arial Unicode MS",
+    "DFMincho-SU",
+    "DFPMincho-SU",
+    "EPSON ?????S?V?b?N???a",
+    "Impact",
+    "KswKashin",
+    "tway_sky"
+  ],
+  "verdict": "original TMP font assets are present in uifont/tmp bundles and should drive TMP TextMeshProUGUI restoration"
+}

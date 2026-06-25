@@ -1,0 +1,7 @@
+Painting_1058.png
+size:2048,1024
+filter:Linear,Linear
+scale:0.9
+Painting_1058
+bounds:0,0,2034,950
+offsets:40,230,2137,1180

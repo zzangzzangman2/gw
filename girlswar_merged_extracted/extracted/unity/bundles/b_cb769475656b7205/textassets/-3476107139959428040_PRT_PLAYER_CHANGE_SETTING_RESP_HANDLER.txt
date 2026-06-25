@@ -1,0 +1,12 @@
+local e={}
+function e:OnHandle(e)
+local e=assert(GlobalPB.decode("PRT_PLAYER_CHANGE_SETTING_RESP",e));
+if(GameInit.GetDebugLogProto())then
+;
+;
+end
+for t,e in ipairs(e.settings or{})do
+PlayerMgr:SetPlayerSetValue(e.id,e.value)
+end
+end
+return e 

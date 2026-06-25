@@ -1,0 +1,26 @@
+local e={id=0,type1LevelMax=0,type2LevelMax=0,type3LevelMax=0,type4LevelMax=0}
+e.__index=e
+function e.New(o,n,a,s,i)
+local t={}
+setmetatable(t,e)
+t.id=o
+t.type1LevelMax=n
+t.type2LevelMax=a
+t.type3LevelMax=s
+t.type4LevelMax=i
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.type1LevelMax=a[2]
+t.type2LevelMax=a[3]
+t.type3LevelMax=a[4]
+t.type4LevelMax=a[5]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/hero/DTHeroSpaStageEntityTableData')
+end
+return e 

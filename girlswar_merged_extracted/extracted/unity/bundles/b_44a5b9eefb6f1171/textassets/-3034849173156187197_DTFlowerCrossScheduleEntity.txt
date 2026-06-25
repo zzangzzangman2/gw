@@ -1,0 +1,48 @@
+local a={id=0,signStart={},signEnd={},qualifiersReady={},qualifiersStart={},qualifiersEnd={},sixFourtReady={},sixFourtStart={},sixFourtEnd={},sixFourtCrossReady={},sixFourtCrossStart={},sixFourtCrossEnd={},finalReady={},finalStart={},finalEnd={},gameOver={}}
+a.__index=a
+function a.New(h,u,d,t,c,f,y,w,p,m,l,n,i,o,s,r)
+local e={}
+setmetatable(e,a)
+e.id=h
+e.signStart=u
+e.signEnd=d
+e.qualifiersReady=t
+e.qualifiersStart=c
+e.qualifiersEnd=f
+e.sixFourtReady=y
+e.sixFourtStart=w
+e.sixFourtEnd=p
+e.sixFourtCrossReady=m
+e.sixFourtCrossStart=l
+e.sixFourtCrossEnd=n
+e.finalReady=i
+e.finalStart=o
+e.finalEnd=s
+e.gameOver=r
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.signStart=t[2]
+e.signEnd=t[3]
+e.qualifiersReady=t[4]
+e.qualifiersStart=t[5]
+e.qualifiersEnd=t[6]
+e.sixFourtReady=t[7]
+e.sixFourtStart=t[8]
+e.sixFourtEnd=t[9]
+e.sixFourtCrossReady=t[10]
+e.sixFourtCrossStart=t[11]
+e.sixFourtCrossEnd=t[12]
+e.finalReady=t[13]
+e.finalStart=t[14]
+e.finalEnd=t[15]
+e.gameOver=t[16]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/flower/DTFlowerCrossScheduleEntityTableData')
+end
+return a 

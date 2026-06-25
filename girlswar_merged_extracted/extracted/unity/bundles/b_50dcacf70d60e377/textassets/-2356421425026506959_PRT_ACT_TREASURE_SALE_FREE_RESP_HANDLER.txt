@@ -1,0 +1,11 @@
+local t={}
+function t:OnHandle(e)
+local e=assert(GlobalPB.decode("PRT_ACT_TREASURE_SALE_FREE_RESP",e));
+if(GameInit.GetDebugLogProto())then
+;
+;
+end
+ModulesInit.ActTreasureSaleMgr:ParseFreeInfo(e)
+return e
+end
+return t 

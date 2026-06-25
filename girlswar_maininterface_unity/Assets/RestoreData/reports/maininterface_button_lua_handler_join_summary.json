@@ -1,0 +1,18 @@
+{
+  "button_rows": 77,
+  "decoded_ui_handler_rows": 206,
+  "confidence_counts": {
+    "candidate_module_and_target": 21,
+    "missing": 16,
+    "module_and_target": 39,
+    "target_name_only": 1
+  },
+  "module_and_target_matches": 39,
+  "target_name_only_matches": 1,
+  "missing_matches": 16,
+  "outputs": {
+    "csv": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_maininterface_unity\\Assets\\RestoreData\\reports\\maininterface_button_lua_handler_join.csv",
+    "json": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_maininterface_unity\\Assets\\RestoreData\\reports\\maininterface_button_lua_handler_join_summary.json",
+    "md": "C:\\Users\\godho\\Downloads\\girlswar\\MAININTERFACE_BUTTON_LUA_HANDLER_JOIN.md"
+  }
+}

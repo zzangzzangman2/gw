@@ -1,0 +1,26 @@
+local e={id=0,cardrate=0,points=0,spendpoints=0,award={{},{}}}
+e.__index=e
+function e.New(o,n,a,s,i)
+local t={}
+setmetatable(t,e)
+t.id=o
+t.cardrate=n
+t.points=a
+t.spendpoints=s
+t.award=i
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.cardrate=a[2]
+t.points=a[3]
+t.spendpoints=a[4]
+t.award=a[5]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/activity/DTActivityHeroDivinationEntityTableData')
+end
+return e 

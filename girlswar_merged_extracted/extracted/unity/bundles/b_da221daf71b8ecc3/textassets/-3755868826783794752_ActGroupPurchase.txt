@@ -1,0 +1,43 @@
+
+?
+ActGroupPurchase.proto"N
+PRT_GROUP_PURCHASE_TAB
+tab (Rtab"
+purchaseDids (RpurchaseDids"D
+PRT_GROUP_PURCHASE_INFO_REQ%
+cs_serverPoint (RcsServerPoint"?
+PRT_GROUP_PURCHASE_INFO_RESP
+
+totalPoint (R
+totalPoint;
+purchaseTabs (2.PRT_GROUP_PURCHASE_TABRpurchaseTabs
+endTime (RendTime
+cs_playerId (R
+csPlayerId"Z
+PRT_GROUP_PURCHASE_EXCHANGE_REQ
+did (Rdid%
+cs_serverPoint (RcsServerPoint"?
+ PRT_GROUP_PURCHASE_EXCHANGE_RESP
+did (Rdid
+tab (Rtab"
+purchaseDids (RpurchaseDids
+
+totalPoint (R
+totalPoint
+cs_playerId (R
+csPlayerId"k
+!PRT_GROUP_PURCHASE_PAY_CENTER_SYN%
+cs_serverPoint (RcsServerPoint
+cs_playerId (R
+csPlayerId"d
+!PRT_GROUP_PURCHASE_PAY_SERVER_SYN
+
+totalPoint (R
+totalPoint
+cs_playerId (R
+csPlayerId"E
+#PRT_GROUP_PURCHASE_POINT_SERVER_SYN
+
+totalPoint (R
+totalPointB
+com.next1b.nextsvr.protobproto3

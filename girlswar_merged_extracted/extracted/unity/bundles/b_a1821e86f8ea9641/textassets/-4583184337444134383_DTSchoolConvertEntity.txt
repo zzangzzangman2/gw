@@ -1,0 +1,26 @@
+local e={id=0,autoUnlockType=0,autoUnlockPara={},rewardPoints=0,schoolFees={{},{}}}
+e.__index=e
+function e.New(o,n,a,s,i)
+local t={}
+setmetatable(t,e)
+t.id=o
+t.autoUnlockType=n
+t.autoUnlockPara=a
+t.rewardPoints=s
+t.schoolFees=i
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.autoUnlockType=a[2]
+t.autoUnlockPara=a[3]
+t.rewardPoints=a[4]
+t.schoolFees=a[5]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/school/DTSchoolConvertEntityTableData')
+end
+return e 

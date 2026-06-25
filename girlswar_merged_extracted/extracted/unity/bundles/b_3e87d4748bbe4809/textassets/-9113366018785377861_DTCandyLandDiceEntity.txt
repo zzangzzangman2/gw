@@ -1,0 +1,26 @@
+local e={id=0,itemCost={},itemSpecial={},time=0,ensureTime=0}
+e.__index=e
+function e.New(o,n,a,s,i)
+local t={}
+setmetatable(t,e)
+t.id=o
+t.itemCost=n
+t.itemSpecial=a
+t.time=s
+t.ensureTime=i
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.itemCost=a[2]
+t.itemSpecial=a[3]
+t.time=a[4]
+t.ensureTime=a[5]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/activity/DTCandyLandDiceEntityTableData')
+end
+return e 

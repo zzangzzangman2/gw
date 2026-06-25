@@ -1,0 +1,18 @@
+local e=
+{
+ByIdx={
+{"ParamCloth","ParamCloth",0,{{4,0}},"HitArea_Cloth",0,0,5,10,0,3,"","","1:rodCloth1","rodCloth1","rodCloth1:2",1,10,0},
+{"ParamPants","ParamPants",2,{{4,0}},"HitArea_Pants",0,0,5,10,0,3,"","","1:rodPants3","rodPants3","rodPants3:2",1,10,0},
+{"ParamSkirt","ParamSkirt",0,{{3,0}},"HitArea_Skirt",0,0,5,10,0,3,"","","1:rodSkirt1","rodSkirt1","rodSkirt1:2",1,10,0},
+{"ParamHit","ParamHit",1,{},"HitArea_Hit",0,0,0,10,0,0,"","","","","",1,10,0},
+{"ParamLift","ParamLift",1,{},"HitArea_Lift",0,0,0,10,0,0,"","","","","",1,10,0},
+{"ParamIcecream","ParamIcecream",1,{},"HitArea_Icecream",0,0,0,10,0,0,"","","","","",1,10,0},
+{"ParamDoor","ParamDoor",0,{{1,0}},"HitArea_Door",0,0,5,10,0,3,"","","1:tapDoor1_1","tapDoor1_1","tapDoor1_1:2",1,10,0},
+{"ParamDoor2","ParamDoor",1,{{1,0}},"HitArea_Door",0,0,5,10,0,3,"","","1:tapDoor2","tapDoor2","tapDoor2:2",1,10,0},
+{"ParamBreastL","ParamBreastL",2,{{4,0}},"HitArea_BreastL",0,0,5,10,0,3,"","","1:rodBreastL3","rodBreastL3","rodBreastL3:2",1,10,0},
+{"ParamBreastR","ParamBreastR",2,{{4,0}},"HitArea_BreastR",0,0,5,10,0,3,"","","1:rodBreastR3","rodBreastR3","rodBreastR3:2",1,10,0},
+{"DragEmptyLeg","",1,{{4,0}},"HitArea_LegR,HitArea_LegL",0,0,0,10,0,2,"","","1:rodLeg2","","rodLeg2:2",1,10,0}
+},
+Len=11
+}
+return e 

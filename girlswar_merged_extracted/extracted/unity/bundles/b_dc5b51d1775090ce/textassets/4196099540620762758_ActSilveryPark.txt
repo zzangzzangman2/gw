@@ -1,0 +1,157 @@
+
+?%
+ActSilveryPark.protoCommons.proto"P
+PRT_SILVERY_PARK_SNAKE_MAP
+mapDid (RmapDid
+scoreMax (RscoreMax"G
+PRT_SILVERY_PARK_CAKE_MAP_POS
+pos (Rpos
+level (Rlevel"m
+PRT_SILVERY_PARK_CAKE_MAP
+mapDid (RmapDid8
+posList (2.PRT_SILVERY_PARK_CAKE_MAP_POSRposList"q
+PRT_SILVERY_PARK_CAKE_MERGE
+mapDid (RmapDid:
+posList (2 .PRT_SILVERY_PARK_CAKE_MERGE_POSRposList"k
+PRT_SILVERY_PARK_CAKE_MERGE_POS
+toLevel (RtoLevel
+fromPos (RfromPos
+toPos (RtoPos"
+PRT_SILVERY_PARK_INFO_REQ"J
+PRT_SILVERY_PARK_INFO_RESP
+leftTime (RleftTime
+day (Rday"!
+PRT_SILVERY_PARK_SNAKE_INFO_REQ"q
+ PRT_SILVERY_PARK_SNAKE_INFO_RESP
+	curMapDid (R	curMapDid/
+maps (2.PRT_SILVERY_PARK_SNAKE_MAPRmaps"?
+%PRT_SILVERY_PARK_SNAKE_SELECT_MAP_REQ
+mapDid (RmapDid"@
+&PRT_SILVERY_PARK_SNAKE_SELECT_MAP_RESP
+mapDid (RmapDid"P
+ PRT_SILVERY_PARK_SNAKE_AWARD_REQ
+mapDid (RmapDid
+score (Rscore"v
+!PRT_SILVERY_PARK_SNAKE_AWARD_RESP-
+map (2.PRT_SILVERY_PARK_SNAKE_MAPRmap"
+awards (2
+.PRT_THINGRawards" 
+PRT_SILVERY_PARK_TASK_INFO_REQ"d
+PRT_SILVERY_PARK_TASK_INFO_RESP
+tasks (2	.PRT_TASKRtasks 
+recGiftDids (RrecGiftDids";
+PRT_SILVERY_PARK_TASK_AWARD_REQ
+taskDid (RtaskDid"<
+ PRT_SILVERY_PARK_TASK_AWARD_RESP
+taskDid (RtaskDid"@
+$PRT_SILVERY_PARK_TASK_GIFT_AWARD_REQ
+giftDid (RgiftDid"A
+%PRT_SILVERY_PARK_TASK_GIFT_AWARD_RESP
+giftDid (RgiftDid" 
+PRT_SILVERY_PARK_DRAW_INFO_REQ"O
+PRT_SILVERY_PARK_DRAW_INFO_RESP,
+alreadyDrawNumber (RalreadyDrawNumber"E
+PRT_SILVERY_PARK_DRAW_DRAW_REQ#
+type (2.ENUM_DRAW_TYPERtype"x
+PRT_SILVERY_PARK_DRAW_DRAW_RESP,
+alreadyDrawNumber (RalreadyDrawNumber'
+awards (2.PRT_ONCE_AWARDRawards" 
+PRT_SILVERY_PARK_SHOP_INFO_REQ"C
+PRT_SILVERY_PARK_SHOP_INFO_RESP 
+items (2
+.PRT_GOODSRitems"Q
+PRT_SILVERY_PARK_SHOP_BUY_REQ
+goodsDid (RgoodsDid
+count (Rcount"@
+PRT_SILVERY_PARK_SHOP_BUY_RESP
+item (2
+.PRT_GOODSRitem"$
+"PRT_SILVERY_PARK_SPE_SHOP_INFO_REQ"G
+#PRT_SILVERY_PARK_SPE_SHOP_INFO_RESP 
+items (2
+.PRT_GOODSRitems"U
+!PRT_SILVERY_PARK_SPE_SHOP_BUY_REQ
+goodsDid (RgoodsDid
+count (Rcount"D
+"PRT_SILVERY_PARK_SPE_SHOP_BUY_RESP
+item (2
+.PRT_GOODSRitem" 
+PRT_SILVERY_PARK_FUND_INFO_REQ"?
+PRT_SILVERY_PARK_FUND_INFO_RESP
+isCharge (RisCharge 
+recFreeDids (RrecFreeDids$
+recChargeDids (RrecChargeDids"Y
+PRT_SILVERY_PARK_FUND_AWARD_REQ
+awardDid (RawardDid
+isCharge (RisCharge"Z
+ PRT_SILVERY_PARK_FUND_AWARD_RESP
+awardDid (RawardDid
+isCharge (RisCharge" 
+PRT_SILVERY_PARK_GIFT_INFO_REQ"[
+PRT_SILVERY_PARK_GIFT_INFO_RESP 
+gifts (2
+.PRT_GOODSRgifts
+freeCD (RfreeCD"@
+$PRT_SILVERY_PARK_GIFT_FREE_AWARD_REQ
+giftDid (RgiftDid"G
+%PRT_SILVERY_PARK_GIFT_FREE_AWARD_RESP
+gift (2
+.PRT_GOODSRgift" 
+PRT_SILVERY_PARK_CAKE_INFO_REQ"?
+PRT_SILVERY_PARK_CAKE_INFO_RESP,
+map (2.PRT_SILVERY_PARK_CAKE_MAPRmap
+actPoint (RactPoint
+score (Rscore
+isAuto (RisAuto" 
+PRT_SILVERY_PARK_CAKE_EXIT_REQ"!
+PRT_SILVERY_PARK_CAKE_EXIT_RESP"6
+"PRT_SILVERY_PARK_CAKE_MAKE_POS_REQ
+pos (Rpos"S
+#PRT_SILVERY_PARK_CAKE_MAKE_POS_RESP
+pos (Rpos
+actPoint (RactPoint"Q
+PRT_SILVERY_PARK_CAKE_MERGE_REQ
+fromPos (RfromPos
+toPos (RtoPos"?
+ PRT_SILVERY_PARK_CAKE_MERGE_RESP
+fromPos (RfromPos
+toPos (RtoPos
+toLevel (RtoLevel
+mapDid (RmapDid
+score (Rscore*
+isMapTargetAward (RisMapTargetAward",
+*PRT_SILVERY_PARK_CAKE_AUTO_MERGE_START_REQ"-
++PRT_SILVERY_PARK_CAKE_AUTO_MERGE_START_RESP"+
+)PRT_SILVERY_PARK_CAKE_AUTO_MERGE_STOP_REQ",
+*PRT_SILVERY_PARK_CAKE_AUTO_MERGE_STOP_RESP"?
+PRT_SILVERY_PARK_CAKE_MERGE_SYN,
+map (2.PRT_SILVERY_PARK_CAKE_MAPRmap2
+merge (2.PRT_SILVERY_PARK_CAKE_MERGERmerge
+actPoint (RactPoint
+score (Rscore*
+isMapTargetAward (RisMapTargetAward" 
+PRT_SILVERY_PARK_CAKE_SHOP_REQ"C
+PRT_SILVERY_PARK_CAKE_SHOP_RESP 
+items (2
+.PRT_GOODSRitems"V
+"PRT_SILVERY_PARK_CAKE_SHOP_BUY_REQ
+goodsDid (RgoodsDid
+count (Rcount"E
+#PRT_SILVERY_PARK_CAKE_SHOP_BUY_RESP
+item (2
+.PRT_GOODSRitem" 
+PRT_SILVERY_PARK_CAKE_RANK_REQ"w
+PRT_SILVERY_PARK_CAKE_RANK_RESP&
+ranks (2.PRT_COMMON_RANKRranks,
+selfRank (2.PRT_COMMON_RANKRselfRank"&
+$PRT_SILVERY_PARK_CAKE_GUILD_RANK_REQ"?
+%PRT_SILVERY_PARK_CAKE_GUILD_RANK_RESP,
+ranks (2.PRT_COMMON_GUILD_RANKRranks2
+selfRank (2.PRT_COMMON_GUILD_RANKRselfRank"?
+)PRT_CS_SILVERY_PARK_CAKE_UPDATE_SCORE_REQ
+playerId (RplayerId
+guildId (RguildId
+addScore (RaddScore
+score (Rscore
+changeMS (RchangeMSB
+com.next1b.nextsvr.protobproto3

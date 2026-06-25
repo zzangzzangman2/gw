@@ -1,0 +1,10 @@
+painting_1014_Back.png
+size:2048,2048
+filter:Linear,Linear
+bgb
+bounds:2,424,1680,557
+offsets:0,163,1680,720
+bgbb
+bounds:2,970,1680,720
+yy
+bounds:2,2,1972,421

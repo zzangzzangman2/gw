@@ -1,0 +1,36 @@
+local a={id=0,goodsId=0,goodsIdLow=0,freeAward={},award={{},{}},awardLow={{},{}},giftName="",giftTips=0,giftTipsLow=0,giftTime=0}
+a.__index=a
+function a.New(n,r,s,t,l,u,d,h,o,i)
+local e={}
+setmetatable(e,a)
+e.id=n
+e.goodsId=r
+e.goodsIdLow=s
+e.freeAward=t
+e.award=l
+e.awardLow=u
+e.giftName=d
+e.giftTips=h
+e.giftTipsLow=o
+e.giftTime=i
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.goodsId=t[2]
+e.goodsIdLow=t[3]
+e.freeAward=t[4]
+e.award=t[5]
+e.awardLow=t[6]
+e.giftName=t[7]
+e.giftTips=t[8]
+e.giftTipsLow=t[9]
+e.giftTime=t[10]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/activity/DTEighteenGiftEntityTableData')
+end
+return a 

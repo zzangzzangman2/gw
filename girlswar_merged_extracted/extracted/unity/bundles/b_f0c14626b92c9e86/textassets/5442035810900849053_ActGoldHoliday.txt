@@ -1,0 +1,109 @@
+
+?
+ActGoldHoliday.protoCommons.protoFormation.protoFight.proto"
+PRT_GOLD_HOLIDAY_INFO_REQ"6
+PRT_GOLD_HOLIDAY_INFO_RESP
+endTime (RendTime" 
+PRT_GOLD_HOLIDAY_TASK_INFO_REQ"?
+PRT_GOLD_HOLIDAY_TASK_INFO_RESP
+endTime (RendTime2
+taskList (2.PRT_GOLD_HOLIDAY_TASKRtaskList$
+activityPoint (RactivityPoint 
+taskEndTime (RtaskEndTime"5
+!PRT_GOLD_HOLIDAY_TASK_RECEIVE_REQ
+did (Rdid"?
+"PRT_GOLD_HOLIDAY_TASK_RECEIVE_RESP*
+task (2.PRT_GOLD_HOLIDAY_TASKRtask 
+rewardPoint (RrewardPoint"
+reward (2
+.PRT_THINGRreward$
+activityPoint (RactivityPoint"!
+PRT_GOLD_HOLIDAY_ROUND_INFO_REQ"?
+ PRT_GOLD_HOLIDAY_ROUND_INFO_RESPH
+battleWheelList (2.PRT_GOLD_HOLIDAY_BATTLE_WHEELRbattleWheelList"
+activityTime (RactivityTime
+endTime (RendTime"
+roundEndTime (RroundEndTime"?
+!PRT_GOLD_HOLIDAY_FIGHT_BEFORE_REQ
+mapDid (RmapDidG
+formationPositions (2.PRT_FORMATION_POSITIONRformationPositionsQ
+formationAlterPositions (2.PRT_FORMATION_POSITIONRformationAlterPositions"U
+"PRT_GOLD_HOLIDAY_FIGHT_BEFORE_RESP/
+
+beforeInfo (2.PRT_FIGHT_PLAYR
+beforeInfo"M
+PRT_GOLD_HOLIDAY_FIGHT_REQ/
+
+battleInfo (2.PRT_FIGHT_PLAYR
+battleInfo"Z
+PRT_GOLD_HOLIDAY_FIGHT_RESP
+invalid (Rinvalid!
+award (2.PRT_FAWARDRaward" 
+PRT_GOLD_HOLIDAY_DRAW_INFO_REQ"?
+PRT_GOLD_HOLIDAY_DRAW_INFO_RESP
+drawNum (RdrawNum 
+giftDrawNum (RgiftDrawNum
+endTime (RendTime"
+giftRedPoint (RgiftRedPoint$
+exchangePoint (RexchangePoint"5
+PRT_GOLD_HOLIDAY_DRAW_REQ
+drawOne (RdrawOne"?
+PRT_GOLD_HOLIDAY_DRAW_RESP/
+
+drawReward (2.PRT_ONCE_AWARDR
+drawReward
+drawNum (RdrawNum 
+giftDrawNum (RgiftDrawNum
+drawOne (RdrawOne"
+giftRedPoint (RgiftRedPoint$
+exchangePoint (RexchangePoint"
+PRT_GOLD_HOLIDAY_TREASURE_REQ"?
+PRT_GOLD_HOLIDAY_TREASURE_RESP5
+	layerList (2.PRT_GOLD_HOLIDAY_LAYERR	layerList
+layer (Rlayer
+endTime (RendTime"1
+PRT_GOLD_HOLIDAY_EXCHANGE_REQ
+did (Rdid"v
+PRT_GOLD_HOLIDAY_EXCHANGE_RESP>
+exchangeInfo (2.PRT_GOLD_HOLIDAY_EXCHANGERexchangeInfo
+layer (Rlayer" 
+PRT_GOLD_HOLIDAY_GIFT_INFO_REQ"r
+PRT_GOLD_HOLIDAY_GIFT_INFO_RESP5
+	wheelList (2.PRT_GOLD_HOLIDAY_WHEELR	wheelList
+endTime (RendTime"5
+!PRT_GOLD_HOLIDAY_GIFT_RECEIVE_REQ
+did (Rdid"?
+"PRT_GOLD_HOLIDAY_GIFT_RECEIVE_RESP2
+taskInfo (2.PRT_GOLD_HOLIDAY_TASKRtaskInfo 
+rewardPoint (RrewardPoint"
+reward (2
+.PRT_THINGRreward$
+activityPoint (RactivityPoint";
+'PRT_GOLD_HOLIDAY_GIFT_WHEEL_RECEIVE_REQ
+did (Rdid"a
+(PRT_GOLD_HOLIDAY_GIFT_WHEEL_RECEIVE_RESP5
+	wheelInfo (2.PRT_GOLD_HOLIDAY_WHEELR	wheelInfo"e
+PRT_GOLD_HOLIDAY_TASK
+did (Rdid
+progress (Rprogress
+
+taskStatus (R
+taskStatus"{
+PRT_GOLD_HOLIDAY_BATTLE_WHEEL
+did (Rdid
+roundId (RroundId
+pass (Rpass
+redPoint (RredPoint"~
+PRT_GOLD_HOLIDAY_WHEEL
+did (Rdid2
+taskList (2.PRT_GOLD_HOLIDAY_TASKRtaskList
+
+taskStatus (R
+taskStatus"n
+PRT_GOLD_HOLIDAY_LAYER
+layer (Rlayer>
+exchangeList (2.PRT_GOLD_HOLIDAY_EXCHANGERexchangeList"?
+PRT_GOLD_HOLIDAY_EXCHANGE
+did (Rdid
+num (RnumB
+com.next1b.nextsvr.protobproto3

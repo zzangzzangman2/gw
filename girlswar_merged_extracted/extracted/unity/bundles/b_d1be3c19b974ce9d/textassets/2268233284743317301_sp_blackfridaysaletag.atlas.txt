@@ -1,0 +1,5 @@
+sp_blackfridaysaletag.png
+size:64,64
+filter:Linear,Linear
+b
+bounds:0,0,64,64

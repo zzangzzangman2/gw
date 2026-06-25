@@ -1,0 +1,10 @@
+Painting_21015_Front.png
+size:2048,1024
+filter:Linear,Linear
+scale:0.5
+a60
+bounds:0,0,1411,822
+effect/effect_1
+bounds:1201,626,199,196
+t4
+bounds:1253,11,142,126

@@ -1,0 +1,14 @@
+local e={}
+function e:OnHandle(e)
+local e=assert(GlobalPB.decode("PRT_PLAYER_HEART_RESP",e));
+TimeUtil.synServerTimeZone(e.timeZone)
+TimeUtil.SynTimestamp(e.serverTime)
+if not ModulesInit.ActGoldWeekManager.isInitTime then
+ModulesInit.ActGoldWeekManager.InitTime()
+end
+if not ModulesInit.ActGoldWeekStage2Manager.isInitTime then
+ModulesInit.ActGoldWeekStage2Manager.InitTime()
+end
+NetManager.OnReceiveHearBeat()
+end
+return e 

@@ -1,0 +1,21 @@
+local e=
+{
+ByIdx={
+{9101501,1015,"event:/DUMVOICE/DUMVOICE_1015_IN","in","1","voicename_1"},
+{9101502,1015,"event:/DUMVOICE/DUMVOICE_1015_FOLLOW","follow","1","voicename_2"},
+{9101503,1015,"event:/DUMVOICE/DUMVOICE_1015_PULLLEG","pullleg","1","voicename_3"},
+{9101504,1015,"event:/DUMVOICE/DUMVOICE_1015_SILKSTOCKINGS","silkstockings","1","voicename_4"},
+{9101505,1015,"event:/DUMVOICE/DUMVOICE_1015_STRIPOFF1","stripoff1","1","voicename_5"},
+{9101506,1015,"event:/DUMVOICE/DUMVOICE_1015_STRIPOFF2","stripoff2","1","voicename_6"},
+{9101507,1015,"event:/DUMVOICE/DUMVOICE_1015_STRIPOFF3","stripoff3","1","voicename_7"},
+{9101508,1015,"event:/DUMVOICE/DUMVOICE_1015_NAKED_TOUCHBREAST","naked_touchbreast","1","voicename_8"},
+{9101509,1015,"event:/DUMVOICE/DUMVOICE_1015_NAKED_TOUCHBREAST5","naked_touchbreast5","1","voicename_9"},
+{9101510,1015,"event:/DUMVOICE/DUMVOICE_1015_COMMONTOUCH","commontouch","1","voicename_10"},
+{9101511,1015,"event:/DUMVOICE/DUMVOICE_1015_DRESS_TOUCHBREAST","dress_touchbreast","1","voicename_11"},
+{9101512,1015,"event:/DUMVOICE/DUMVOICE_1015_NO_SILKSTOCKINGS_PULLLEG","no_silkstockings_pullleg","1","voicename_12"},
+{9101513,1015,"event:/DUMVOICE/DUMVOICE_1015_GET_MARRYCARD","get_marrycard","1","voicename_13"},
+{9101514,1015,"event:/DUMVOICE/DUMVOICE_1015_FOLLOW","nomarry","1","0"}
+},
+Len=14
+}
+return e 

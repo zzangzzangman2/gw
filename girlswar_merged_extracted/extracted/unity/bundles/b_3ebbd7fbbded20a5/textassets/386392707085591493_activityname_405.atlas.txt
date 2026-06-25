@@ -1,0 +1,12 @@
+activityname_405.png
+size:256,64
+filter:Linear,Linear
+a1
+bounds:122,3,33,20
+a2
+bounds:122,25,32,31
+rotate:90
+a3
+bounds:62,2,58,55
+a3——1
+bounds:2,2,58,55

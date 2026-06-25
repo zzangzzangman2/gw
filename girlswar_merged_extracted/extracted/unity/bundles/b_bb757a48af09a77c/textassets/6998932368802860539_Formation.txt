@@ -1,0 +1,110 @@
+
+?
+Formation.proto
+Enum.proto
+Hero.protoEquip.protoUnderwear.protoMagicOrchard.protoSummonPet.proto"?
+PRT_FORMATION.
+formationNO (2.FormationNORformationNO
+isUsed (RisUsed5
+	positions (2.PRT_FORMATION_POSITIONR	positions
+
+fightTotal (R
+fightTotal
+
+firstTotal (R
+firstTotal"?
+PRT_FORMATION_POSITION 
+formationId (RformationId
+position (Rposition
+heroId (RheroId
+heroDid (RheroDid
+
+firstValue (R
+firstValue 
+isTrialHero (RisTrialHero"?
+PRT_FORMATION_DETAIL,
+	formation (2.PRT_FORMATIONR	formation6
+formationAlter (2.PRT_FORMATIONRformationAlter$
+firstValueExt (RfirstValueExt
+heros (2	.PRT_HERORheros
+fightExt (RfightExt"
+PRT_FORMATION_REQ"D
+PRT_FORMATION_RESP.
+
+formations (2.PRT_FORMATIONR
+formations"?
+PRT_FORMATION_MODIFY_REQ.
+formationNO (2.FormationNORformationNO5
+	positions (2.PRT_FORMATION_POSITIONR	positions
+	isSaveToC (R	isSaveToC?
+positionAlters (2.PRT_FORMATION_POSITIONRpositionAlters"?
+PRT_FORMATION_MODIFY_RESP.
+formationNO (2.FormationNORformationNO.
+
+formations (2.PRT_FORMATIONR
+formations
+isLast (RisLast"H
+PRT_FORMATION_USED_REQ.
+formationNO (2.FormationNORformationNO"I
+PRT_FORMATION_USED_RESP.
+formationNO (2.FormationNORformationNO"?
+ PRT_FORMATION_PUSH_POSITION_RESP.
+formationNO (2.FormationNORformationNO3
+position (2.PRT_FORMATION_POSITIONRposition
+
+fightTotal (R
+fightTotal"?
+PRT_FORMATION_FIND_REQ
+playerId (RplayerId.
+formationNO (2.FormationNORformationNO
+serverId (RserverId"?
+PRT_FORMATION_FIND_RESP,
+	formation (2.PRT_FORMATIONR	formation6
+formationAlter (2.PRT_FORMATIONRformationAlter$
+firstValueExt (RfirstValueExt
+heros (2	.PRT_HERORheros"
+equips (2
+.PRT_EQUIPRequips.
+
+underwears (2.PRT_UNDERWEARR
+underwears
+fightExt (RfightExtX
+orchardEquipSuitAttrs (2".PRT_MAGIC_ORCHARD_EQUIP_SUIT_ATTRRorchardEquipSuitAttrs/
+
+summonPets	 (2.PRT_SUMMON_PETR
+summonPetsI
+summonPetFormation
+ (2.PRT_SUMMON_PET_FORMATIONRsummonPetFormation"?
+PRT_CS_FORMATION_FIND_REQ
+playerId (RplayerId
+serverId (RserverId&
+targetPlayerId (RtargetPlayerId&
+targetServerId (RtargetServerId.
+formationNO (2.FormationNORformationNO"?
+PRT_CS_FORMATION_FIND_RESP
+playerId (RplayerId
+serverId (RserverId&
+targetPlayerId (RtargetPlayerId&
+targetServerId (RtargetServerId,
+	formation (2.PRT_FORMATIONR	formation6
+formationAlter (2.PRT_FORMATIONRformationAlter$
+firstValueExt (RfirstValueExt
+heros (2	.PRT_HERORheros"
+equips	 (2
+.PRT_EQUIPRequips.
+
+underwears
+ (2.PRT_UNDERWEARR
+underwears
+fightExt (RfightExtX
+orchardEquipSuitAttrs (2".PRT_MAGIC_ORCHARD_EQUIP_SUIT_ATTRRorchardEquipSuitAttrs#
+pets (2.PRT_SUMMON_PETRpets=
+petFormation (2.PRT_SUMMON_PET_FORMATIONRpetFormation"?
+%PRT_WUSHU_MASTER_SUMMON_PET_FORMATION.
+formationNO (2.FormationNORformationNOI
+summonPetFormation (2.PRT_SUMMON_PET_FORMATIONRsummonPetFormation"x
+.PRT_WUSHU_MASTER_SUMMON_PET_FORMATION_SNAPSHOTF
+
+formations (2&.PRT_WUSHU_MASTER_SUMMON_PET_FORMATIONR
+formationsB
+com.next1b.nextsvr.protobproto3

@@ -1,0 +1,12 @@
+
+?
+ActHeroChipNew.proto"F
+PRT_HERO_CHIP_NEW_DATA
+did (Rdid
+received (Rreceived"
+PRT_HERO_CHIP_NEW_INFO_REQ"L
+PRT_HERO_CHIP_NEW_INFO_RESP-
+datas (2.PRT_HERO_CHIP_NEW_DATARdatas""
+ PRT_HERO_CHIP_NEW_FREE_AWARD_REQ"#
+!PRT_HERO_CHIP_NEW_FREE_AWARD_RESPB
+com.next1b.nextsvr.protobproto3

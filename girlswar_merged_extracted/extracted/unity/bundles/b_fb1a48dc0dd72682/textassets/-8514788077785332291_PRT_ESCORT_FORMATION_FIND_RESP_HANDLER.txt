@@ -1,0 +1,11 @@
+local t={}
+function t:OnHandle(e)
+local e=assert(GlobalPB.decode("PRT_ESCORT_FORMATION_FIND_RESP",e));
+if(GameInit.GetDebugLogProto())then
+;
+;
+end
+ModulesInit.ActIslandRouteMgr:OnQueryPlayerFormationResponse(e)
+return e
+end
+return t 

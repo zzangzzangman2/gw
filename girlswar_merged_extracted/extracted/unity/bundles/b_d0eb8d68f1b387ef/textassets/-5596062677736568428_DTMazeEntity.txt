@@ -1,0 +1,42 @@
+local a={id=0,maxFloor=0,type=0,nextMaze={},tavernNum=0,monNum=0,eliteNum=0,buildingNum=0,mineNum=0,ornamentNum=0,boss={{},{}},startQuickPass=0,firstMazeFloorLimit=0}
+a.__index=a
+function a.New(s,d,h,t,l,c,m,f,u,r,i,o,n)
+local e={}
+setmetatable(e,a)
+e.id=s
+e.maxFloor=d
+e.type=h
+e.nextMaze=t
+e.tavernNum=l
+e.monNum=c
+e.eliteNum=m
+e.buildingNum=f
+e.mineNum=u
+e.ornamentNum=r
+e.boss=i
+e.startQuickPass=o
+e.firstMazeFloorLimit=n
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.maxFloor=t[2]
+e.type=t[3]
+e.nextMaze=t[4]
+e.tavernNum=t[5]
+e.monNum=t[6]
+e.eliteNum=t[7]
+e.buildingNum=t[8]
+e.mineNum=t[9]
+e.ornamentNum=t[10]
+e.boss=t[11]
+e.startQuickPass=t[12]
+e.firstMazeFloorLimit=t[13]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/maze/DTMazeEntityTableData')
+end
+return a 

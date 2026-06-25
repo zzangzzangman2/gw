@@ -1,0 +1,30 @@
+local t={id=0,order={{},{}},pace=0,weights=0,award1={},award2={},award3={}}
+t.__index=t
+function t.New(o,h,a,s,r,n,i)
+local e={}
+setmetatable(e,t)
+e.id=o
+e.order=h
+e.pace=a
+e.weights=s
+e.award1=r
+e.award2=n
+e.award3=i
+return e
+end
+function t.NewFromArrItem(a)
+local e={}
+setmetatable(e,t)
+e.id=a[1]
+e.order=a[2]
+e.pace=a[3]
+e.weights=a[4]
+e.award1=a[5]
+e.award2=a[6]
+e.award3=a[7]
+return e
+end
+function t.GetArr()
+return require('DataNode/DataTable/Create/herbs/DTTripleOrderEntityTableData')
+end
+return t 

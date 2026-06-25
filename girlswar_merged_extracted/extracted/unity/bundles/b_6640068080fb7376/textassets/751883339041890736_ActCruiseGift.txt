@@ -1,0 +1,15 @@
+
+?
+ActCruiseGift.proto"
+PRT_CRUISE_GIFT_TRIGGER_REQ"f
+PRT_CRUISE_GIFT_TRIGGER_RESP
+success (Rsuccess,
+actGiftHasTrigger (RactGiftHasTrigger"M
+PRT_CRUISE_GIFT
+giftDid (RgiftDid 
+chargeCount (RchargeCount"
+PRT_CRUISE_GIFT_INFO_REQ"c
+PRT_CRUISE_GIFT_INFO_RESP
+leftTime (RleftTime*
+charges (2.PRT_CRUISE_GIFTRchargesB
+com.next1b.nextsvr.protobproto3

@@ -1,0 +1,11 @@
+local t={}
+function t:OnHandle(e)
+local e=assert(GlobalPB.decode("PRT_NEWYEAR_BLESS_STATUS_RESP",e));
+if(GameInit.GetDebugLogProto())then
+;
+;
+end
+ChatMgr:OnRespNewYearsDayWishesCountStatusInfo(e)
+return e
+end
+return t 

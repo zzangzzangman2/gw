@@ -1,0 +1,16 @@
+texun_dajiang.png
+size:1116,478
+filter:Linear,Linear
+dajiang1
+bounds:473,90,341,386
+offsets:73,0,474,470
+dajiang2
+bounds:2,4,472,469
+offsets:1,0,474,470
+rotate:90
+huangguang03
+bounds:816,178,298,298
+offsets:17,18,335,334
+yinying
+bounds:816,2,174,174
+offsets:75,87,335,334

@@ -1,0 +1,24 @@
+local e={id=0,getReward={{},{}},tradingTime=0,shipPrefab=0}
+e.__index=e
+function e.New(o,a,n,i)
+local t={}
+setmetatable(t,e)
+t.id=o
+t.getReward=a
+t.tradingTime=n
+t.shipPrefab=i
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.getReward=a[2]
+t.tradingTime=a[3]
+t.shipPrefab=a[4]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/activity/DTOverseasTradeShipEntityTableData')
+end
+return e 

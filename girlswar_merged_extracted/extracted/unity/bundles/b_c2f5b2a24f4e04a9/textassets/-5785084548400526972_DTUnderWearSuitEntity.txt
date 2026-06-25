@@ -1,0 +1,68 @@
+local a={id=0,suitNum=0,color=0,suitType=0,liberateType=0,liberateDesc0="",liberateDesc1="",liberateDesc2="",liberateDesc3="",attr0={{},{}},attr1={{},{}},attr2={{},{}},attr3={{},{}},buff=0,args0={},args1={},args2={},args3={},passBuff=0,passArgs0={},passArgs1={},passArgs2={},passArgs3={},prefabIds={},explosive_prefabId=0,explosive_buff=0}
+a.__index=a
+function a.New(l,y,f,t,g,b,p,v,q,x,j,_,z,E,k,w,h,s,n,o,i,r,u,d,m,c)
+local e={}
+setmetatable(e,a)
+e.id=l
+e.suitNum=y
+e.color=f
+e.suitType=t
+e.liberateType=g
+e.liberateDesc0=b
+e.liberateDesc1=p
+e.liberateDesc2=v
+e.liberateDesc3=q
+e.attr0=x
+e.attr1=j
+e.attr2=_
+e.attr3=z
+e.buff=E
+e.args0=k
+e.args1=w
+e.args2=h
+e.args3=s
+e.passBuff=n
+e.passArgs0=o
+e.passArgs1=i
+e.passArgs2=r
+e.passArgs3=u
+e.prefabIds=d
+e.explosive_prefabId=m
+e.explosive_buff=c
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.suitNum=t[2]
+e.color=t[3]
+e.suitType=t[4]
+e.liberateType=t[5]
+e.liberateDesc0=t[6]
+e.liberateDesc1=t[7]
+e.liberateDesc2=t[8]
+e.liberateDesc3=t[9]
+e.attr0=t[10]
+e.attr1=t[11]
+e.attr2=t[12]
+e.attr3=t[13]
+e.buff=t[14]
+e.args0=t[15]
+e.args1=t[16]
+e.args2=t[17]
+e.args3=t[18]
+e.passBuff=t[19]
+e.passArgs0=t[20]
+e.passArgs1=t[21]
+e.passArgs2=t[22]
+e.passArgs3=t[23]
+e.prefabIds=t[24]
+e.explosive_prefabId=t[25]
+e.explosive_buff=t[26]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/underwear/DTUnderWearSuitEntityTableData')
+end
+return a 

@@ -1,0 +1,10 @@
+local e={}
+function e:OnHandle(e)
+local e=assert(GlobalPB.decode("PRT_HERO_LIST_RESP",e));
+if(GameInit.GetDebugLogProto())then
+;
+;
+end
+HeroMgr:AddHero(e)
+end
+return e 

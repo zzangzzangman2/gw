@@ -1,0 +1,28 @@
+local e={id=0,chinese="",chineseTraditional="",english="",korean="",japanese=""}
+e.__index=e
+function e.New(a,i,o,h,s,n)
+local t={}
+setmetatable(t,e)
+t.id=a
+t.chinese=i
+t.chineseTraditional=o
+t.english=h
+t.korean=s
+t.japanese=n
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.chinese=a[2]
+t.chineseTraditional=a[3]
+t.english=a[4]
+t.korean=a[5]
+t.japanese=a[6]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/story/DTStoryCharacterEntityTableData')
+end
+return e 

@@ -1,0 +1,11 @@
+activityname_955.png
+size:512,128
+filter:Linear,Linear
+10xiang
+bounds:118,44,188,27
+kuang2
+bounds:118,73,253,43
+mianbao
+bounds:308,26,78,45
+yuan
+bounds:2,2,114,114

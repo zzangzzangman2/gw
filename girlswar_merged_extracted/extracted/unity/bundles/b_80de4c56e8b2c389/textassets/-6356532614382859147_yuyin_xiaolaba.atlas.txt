@@ -1,0 +1,14 @@
+yuyin_xiaolaba.png
+size:64,128
+filter:Linear,Linear
+3333cb38-792c-4c71-9f97-1241dfde2871
+bounds:2,47,19,23
+rotate:90
+3eaa34ff-f335-45b1-8b80-570ed9cc0a2a
+bounds:2,2,43,43
+daa9347a-4147-4aab-a578-b7a5587134bb
+bounds:2,70,10,15
+rotate:90
+ef388d84-f8a4-4af2-a147-200313eb62e8
+bounds:19,68,12,23
+rotate:90

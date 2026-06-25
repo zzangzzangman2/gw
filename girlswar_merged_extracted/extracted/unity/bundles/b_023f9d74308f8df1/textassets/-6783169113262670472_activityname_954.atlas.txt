@@ -1,0 +1,13 @@
+activityname_954.png
+size:512,128
+filter:Linear,Linear
+3
+bounds:257,42,133,28
+4
+bounds:2,3,137,113
+aixin
+bounds:392,21,51,49
+kuang1
+bounds:257,72,212,44
+yuan
+bounds:141,2,114,114

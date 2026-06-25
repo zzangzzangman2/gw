@@ -1,0 +1,11 @@
+local t={}
+function t:OnHandle(e)
+local e=assert(GlobalPB.decode("PRT_MW_MINE_BUFF_RESP",e));
+if(GameInit.GetDebugLogProto())then
+;
+;
+end
+EventSystem.SendEvent(ModulesInit.MineMgr.BUFF_INFO_CHANGE,{buffInfo=e})
+return e
+end
+return t 

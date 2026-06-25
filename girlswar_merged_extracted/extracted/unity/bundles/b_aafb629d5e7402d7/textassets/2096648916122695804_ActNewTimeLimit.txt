@@ -1,0 +1,9 @@
+
+?
+ActNewTimeLimit.proto"
+PRT_NEW_TIME_LIMIT_INFO_REQ"8
+PRT_NEW_TIME_LIMIT_INFO_RESP
+endTime (RendTime"
+PRT_NEW_TIME_LIMIT_AWARD_REQ"
+PRT_NEW_TIME_LIMIT_AWARD_RESPB
+com.next1b.nextsvr.protobproto3

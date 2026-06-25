@@ -1,0 +1,24 @@
+local e={id=0,dropItem={{},{}},rewardShow={{},{}},boxIcon=""}
+e.__index=e
+function e.New(o,a,n,i)
+local t={}
+setmetatable(t,e)
+t.id=o
+t.dropItem=a
+t.rewardShow=n
+t.boxIcon=i
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.dropItem=a[2]
+t.rewardShow=a[3]
+t.boxIcon=a[4]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/activity/DTActLostRuinsRewardEntityTableData')
+end
+return e 

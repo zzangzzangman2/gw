@@ -1,0 +1,9 @@
+sp_favorability.png
+size:128,128
+filter:Linear,Linear
+1
+bounds:37,0,28,34
+2
+bounds:0,7,36,27
+3
+bounds:0,35,63,64

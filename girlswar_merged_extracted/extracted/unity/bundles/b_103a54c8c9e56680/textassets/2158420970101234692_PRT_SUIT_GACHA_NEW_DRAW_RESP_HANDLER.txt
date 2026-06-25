@@ -1,0 +1,12 @@
+local t={}
+function t:OnHandle(e)
+local e=assert(GlobalPB.decode("PRT_SUIT_GACHA_NEW_DRAW_RESP",e));
+if(GameInit.GetDebugLogProto())then
+;
+;
+end
+PlayerMgr.luckyShareNum=e.leftShareCount
+EventSystem.SendEvent(CommonEventId.ActNewSuitGachaDrawSuc,e)
+return e
+end
+return t 

@@ -1,0 +1,158 @@
+
+?(
+ActAnniversaryPark.protoCommons.proto"T
+PRT_ANNIVERSARY_PARK_SNAKE_MAP
+mapDid (RmapDid
+scoreMax (RscoreMax"K
+!PRT_ANNIVERSARY_PARK_CAKE_MAP_POS
+pos (Rpos
+level (Rlevel"u
+PRT_ANNIVERSARY_PARK_CAKE_MAP
+mapDid (RmapDid<
+posList (2".PRT_ANNIVERSARY_PARK_CAKE_MAP_POSRposList"y
+PRT_ANNIVERSARY_PARK_CAKE_MERGE
+mapDid (RmapDid>
+posList (2$.PRT_ANNIVERSARY_PARK_CAKE_MERGE_POSRposList"o
+#PRT_ANNIVERSARY_PARK_CAKE_MERGE_POS
+toLevel (RtoLevel
+fromPos (RfromPos
+toPos (RtoPos"
+PRT_ANNIVERSARY_PARK_INFO_REQ"N
+PRT_ANNIVERSARY_PARK_INFO_RESP
+leftTime (RleftTime
+day (Rday"%
+#PRT_ANNIVERSARY_PARK_SNAKE_INFO_REQ"?
+$PRT_ANNIVERSARY_PARK_SNAKE_INFO_RESP
+	curMapDid (R	curMapDid3
+maps (2.PRT_ANNIVERSARY_PARK_SNAKE_MAPRmaps
+day (Rday"C
+)PRT_ANNIVERSARY_PARK_SNAKE_SELECT_MAP_REQ
+mapDid (RmapDid"D
+*PRT_ANNIVERSARY_PARK_SNAKE_SELECT_MAP_RESP
+mapDid (RmapDid"T
+$PRT_ANNIVERSARY_PARK_SNAKE_AWARD_REQ
+mapDid (RmapDid
+score (Rscore"~
+%PRT_ANNIVERSARY_PARK_SNAKE_AWARD_RESP1
+map (2.PRT_ANNIVERSARY_PARK_SNAKE_MAPRmap"
+awards (2
+.PRT_THINGRawards"$
+"PRT_ANNIVERSARY_PARK_TASK_INFO_REQ"h
+#PRT_ANNIVERSARY_PARK_TASK_INFO_RESP
+tasks (2	.PRT_TASKRtasks 
+recGiftDids (RrecGiftDids"?
+#PRT_ANNIVERSARY_PARK_TASK_AWARD_REQ
+taskDid (RtaskDid"@
+$PRT_ANNIVERSARY_PARK_TASK_AWARD_RESP
+taskDid (RtaskDid"D
+(PRT_ANNIVERSARY_PARK_TASK_GIFT_AWARD_REQ
+giftDid (RgiftDid"E
+)PRT_ANNIVERSARY_PARK_TASK_GIFT_AWARD_RESP
+giftDid (RgiftDid"$
+"PRT_ANNIVERSARY_PARK_DRAW_INFO_REQ"S
+#PRT_ANNIVERSARY_PARK_DRAW_INFO_RESP,
+alreadyDrawNumber (RalreadyDrawNumber"I
+"PRT_ANNIVERSARY_PARK_DRAW_DRAW_REQ#
+type (2.ENUM_DRAW_TYPERtype"|
+#PRT_ANNIVERSARY_PARK_DRAW_DRAW_RESP,
+alreadyDrawNumber (RalreadyDrawNumber'
+awards (2.PRT_ONCE_AWARDRawards"$
+"PRT_ANNIVERSARY_PARK_SHOP_INFO_REQ"G
+#PRT_ANNIVERSARY_PARK_SHOP_INFO_RESP 
+items (2
+.PRT_GOODSRitems"U
+!PRT_ANNIVERSARY_PARK_SHOP_BUY_REQ
+goodsDid (RgoodsDid
+count (Rcount"D
+"PRT_ANNIVERSARY_PARK_SHOP_BUY_RESP
+item (2
+.PRT_GOODSRitem"(
+&PRT_ANNIVERSARY_PARK_SPE_SHOP_INFO_REQ"K
+'PRT_ANNIVERSARY_PARK_SPE_SHOP_INFO_RESP 
+items (2
+.PRT_GOODSRitems"Y
+%PRT_ANNIVERSARY_PARK_SPE_SHOP_BUY_REQ
+goodsDid (RgoodsDid
+count (Rcount"H
+&PRT_ANNIVERSARY_PARK_SPE_SHOP_BUY_RESP
+item (2
+.PRT_GOODSRitem"$
+"PRT_ANNIVERSARY_PARK_FUND_INFO_REQ"?
+#PRT_ANNIVERSARY_PARK_FUND_INFO_RESP
+isCharge (RisCharge 
+recFreeDids (RrecFreeDids$
+recChargeDids (RrecChargeDids"]
+#PRT_ANNIVERSARY_PARK_FUND_AWARD_REQ
+awardDid (RawardDid
+isCharge (RisCharge"^
+$PRT_ANNIVERSARY_PARK_FUND_AWARD_RESP
+awardDid (RawardDid
+isCharge (RisCharge"$
+"PRT_ANNIVERSARY_PARK_GIFT_INFO_REQ"_
+#PRT_ANNIVERSARY_PARK_GIFT_INFO_RESP 
+gifts (2
+.PRT_GOODSRgifts
+freeCD (RfreeCD"D
+(PRT_ANNIVERSARY_PARK_GIFT_FREE_AWARD_REQ
+giftDid (RgiftDid"K
+)PRT_ANNIVERSARY_PARK_GIFT_FREE_AWARD_RESP
+gift (2
+.PRT_GOODSRgift"$
+"PRT_ANNIVERSARY_PARK_CAKE_INFO_REQ"?
+#PRT_ANNIVERSARY_PARK_CAKE_INFO_RESP0
+map (2.PRT_ANNIVERSARY_PARK_CAKE_MAPRmap
+actPoint (RactPoint
+score (Rscore
+isAuto (RisAuto"$
+"PRT_ANNIVERSARY_PARK_CAKE_EXIT_REQ"%
+#PRT_ANNIVERSARY_PARK_CAKE_EXIT_RESP":
+&PRT_ANNIVERSARY_PARK_CAKE_MAKE_POS_REQ
+pos (Rpos"W
+'PRT_ANNIVERSARY_PARK_CAKE_MAKE_POS_RESP
+pos (Rpos
+actPoint (RactPoint"U
+#PRT_ANNIVERSARY_PARK_CAKE_MERGE_REQ
+fromPos (RfromPos
+toPos (RtoPos"?
+$PRT_ANNIVERSARY_PARK_CAKE_MERGE_RESP
+fromPos (RfromPos
+toPos (RtoPos
+toLevel (RtoLevel
+mapDid (RmapDid
+score (Rscore*
+isMapTargetAward (RisMapTargetAward"0
+.PRT_ANNIVERSARY_PARK_CAKE_AUTO_MERGE_START_REQ"1
+/PRT_ANNIVERSARY_PARK_CAKE_AUTO_MERGE_START_RESP"/
+-PRT_ANNIVERSARY_PARK_CAKE_AUTO_MERGE_STOP_REQ"0
+.PRT_ANNIVERSARY_PARK_CAKE_AUTO_MERGE_STOP_RESP"?
+#PRT_ANNIVERSARY_PARK_CAKE_MERGE_SYN0
+map (2.PRT_ANNIVERSARY_PARK_CAKE_MAPRmap6
+merge (2 .PRT_ANNIVERSARY_PARK_CAKE_MERGERmerge
+actPoint (RactPoint
+score (Rscore*
+isMapTargetAward (RisMapTargetAward"$
+"PRT_ANNIVERSARY_PARK_CAKE_SHOP_REQ"G
+#PRT_ANNIVERSARY_PARK_CAKE_SHOP_RESP 
+items (2
+.PRT_GOODSRitems"Z
+&PRT_ANNIVERSARY_PARK_CAKE_SHOP_BUY_REQ
+goodsDid (RgoodsDid
+count (Rcount"I
+'PRT_ANNIVERSARY_PARK_CAKE_SHOP_BUY_RESP
+item (2
+.PRT_GOODSRitem"$
+"PRT_ANNIVERSARY_PARK_CAKE_RANK_REQ"{
+#PRT_ANNIVERSARY_PARK_CAKE_RANK_RESP&
+ranks (2.PRT_COMMON_RANKRranks,
+selfRank (2.PRT_COMMON_RANKRselfRank"*
+(PRT_ANNIVERSARY_PARK_CAKE_GUILD_RANK_REQ"?
+)PRT_ANNIVERSARY_PARK_CAKE_GUILD_RANK_RESP,
+ranks (2.PRT_COMMON_GUILD_RANKRranks2
+selfRank (2.PRT_COMMON_GUILD_RANKRselfRank"?
+-PRT_CS_ANNIVERSARY_PARK_CAKE_UPDATE_SCORE_REQ
+playerId (RplayerId
+guildId (RguildId
+addScore (RaddScore
+score (Rscore
+changeMS (RchangeMSB
+com.next1b.nextsvr.protobproto3

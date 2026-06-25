@@ -1,0 +1,15 @@
+
+?
+ActNewHardDiscountPack.proto"T
+PRT_NEW_HARD_DISCOUNT_PACK 
+discountDid (RdiscountDid
+count (Rcount"%
+#PRT_NEW_HARD_DISCOUNT_PACK_INFO_REQ"u
+$PRT_NEW_HARD_DISCOUNT_PACK_INFO_RESP
+leftTime (RleftTime1
+packs (2.PRT_NEW_HARD_DISCOUNT_PACKRpacks"M
+)PRT_NEW_HARD_DISCOUNT_PACK_FREE_AWARD_REQ 
+discountDid (RdiscountDid"N
+*PRT_NEW_HARD_DISCOUNT_PACK_FREE_AWARD_RESP 
+discountDid (RdiscountDidB
+com.next1b.nextsvr.protobproto3

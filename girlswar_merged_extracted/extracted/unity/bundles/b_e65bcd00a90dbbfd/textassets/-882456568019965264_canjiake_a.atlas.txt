@@ -1,0 +1,8 @@
+canjiake_a.png
+size:128,128
+filter:Linear,Linear
+cjk
+bounds:2,2,63,35
+lv
+bounds:2,39,73,41
+offsets:0,0,73,43

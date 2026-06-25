@@ -1,0 +1,10 @@
+local e={}
+function e:OnHandle(e)
+local e=assert(GlobalPB.decode("PRT_HERO_STAR_ACTIVATE_RESP",e));
+if(GameInit.GetDebugLogProto())then
+;
+;
+end
+HeroMgr:OnSendHeroStarActuvatetRequest(e)
+end
+return e 

@@ -1,0 +1,40 @@
+local a={id=0,freeCd=0,itemCost=0,multipiRate=0,multipiResults={{},{}},commPool=0,floorTime=0,floorPool=0,petIds={},drawIcon="",petPosFix={},drawType=0}
+a.__index=a
+function a.New(s,d,h,t,u,c,m,l,r,i,o,n)
+local e={}
+setmetatable(e,a)
+e.id=s
+e.freeCd=d
+e.itemCost=h
+e.multipiRate=t
+e.multipiResults=u
+e.commPool=c
+e.floorTime=m
+e.floorPool=l
+e.petIds=r
+e.drawIcon=i
+e.petPosFix=o
+e.drawType=n
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.freeCd=t[2]
+e.itemCost=t[3]
+e.multipiRate=t[4]
+e.multipiResults=t[5]
+e.commPool=t[6]
+e.floorTime=t[7]
+e.floorPool=t[8]
+e.petIds=t[9]
+e.drawIcon=t[10]
+e.petPosFix=t[11]
+e.drawType=t[12]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/worldTree/DTWorldTreeDrawEntityTableData')
+end
+return a 

@@ -1,0 +1,9 @@
+spine_duizhang.png
+size:256,32
+filter:Linear,Linear
+1
+bounds:92,2,43,24
+1a
+bounds:47,2,43,24
+1b
+bounds:2,2,43,24

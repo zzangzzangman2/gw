@@ -1,0 +1,24 @@
+local e={id=0,timesLimit=0,expend={},award={}}
+e.__index=e
+function e.New(o,a,n,i)
+local t={}
+setmetatable(t,e)
+t.id=o
+t.timesLimit=a
+t.expend=n
+t.award=i
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.timesLimit=a[2]
+t.expend=a[3]
+t.award=a[4]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/activity/DTAnniversaryFestivalItemEntityTableData')
+end
+return e 

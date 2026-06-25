@@ -1,0 +1,18 @@
+local e=
+{
+ByIdx={
+{2,4,10,50,90,{0},{0},{0},"herbsName_2","herbsId_2","herbsId_2","cygf_jbicon1"},
+{4,8,20,60,100,{1046,1},{1046,2},{1046,3},"herbsName_4","herbsId_4","herbsId_4","cygf_jbicon2"},
+{8,16,80,120,160,{1046,2},{1046,3},{1046,4},"herbsName_8","herbsId_8","herbsId_8","cygf_jbicon3"},
+{16,32,120,160,200,{1046,3},{1046,4},{1046,5},"herbsName_16","herbsId_16","herbsId_16","cygf_jbicon4"},
+{32,64,160,200,240,{1046,4},{1046,5},{1046,6},"herbsName_32","herbsId_32","herbsId_32","cygf_jbicon5"},
+{64,128,300,340,380,{1046,5},{1046,6},{1046,7},"herbsName_64","herbsId_64","herbsId_64","cygf_jbicon6"},
+{128,256,500,540,580,{1046,6},{1046,7},{1046,8},"herbsName_128","herbsId_128","herbsId_128","cygf_jbicon7"},
+{256,512,800,840,880,{1046,7},{1046,8},{1046,9},"herbsName_256","herbsId_256","herbsId_256","cygf_jbicon8"},
+{512,1024,1200,1240,1280,{1046,8},{1046,9},{1046,10},"herbsName_512","herbsId_512","herbsId_512","cygf_jbicon9"},
+{1024,2048,1600,1640,1680,{1046,9},{1046,10},{1046,11},"herbsName_1024","herbsId_1024","herbsId_1024","cygf_jbicon10"},
+{2048,0,3000,3040,3080,{1046,20},{1046,21},{1046,22},"herbsName_2048","herbsId_2048","herbsId_2048","cygf_jbicon11"}
+},
+Len=11
+}
+return e 

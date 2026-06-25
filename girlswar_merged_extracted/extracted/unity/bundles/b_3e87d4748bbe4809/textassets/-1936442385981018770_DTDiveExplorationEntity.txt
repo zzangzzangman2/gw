@@ -1,0 +1,40 @@
+local a={id=0,goods=0,beginItem={},fundAward={},shopGril=0,depth=0,gridNum={},shopCost={},iconographyProve=0,atlasId=0,crossShowRankCount=0,rankItem={{},{}}}
+a.__index=a
+function a.New(s,d,h,t,u,c,m,l,r,i,o,n)
+local e={}
+setmetatable(e,a)
+e.id=s
+e.goods=d
+e.beginItem=h
+e.fundAward=t
+e.shopGril=u
+e.depth=c
+e.gridNum=m
+e.shopCost=l
+e.iconographyProve=r
+e.atlasId=i
+e.crossShowRankCount=o
+e.rankItem=n
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.goods=t[2]
+e.beginItem=t[3]
+e.fundAward=t[4]
+e.shopGril=t[5]
+e.depth=t[6]
+e.gridNum=t[7]
+e.shopCost=t[8]
+e.iconographyProve=t[9]
+e.atlasId=t[10]
+e.crossShowRankCount=t[11]
+e.rankItem=t[12]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/activity/DTDiveExplorationEntityTableData')
+end
+return a 

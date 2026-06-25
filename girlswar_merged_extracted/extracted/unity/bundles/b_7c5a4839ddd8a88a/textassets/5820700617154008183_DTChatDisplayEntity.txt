@@ -1,0 +1,20 @@
+local e={id=0,chat_position={}}
+e.__index=e
+function e.New(a,o)
+local t={}
+setmetatable(t,e)
+t.id=a
+t.chat_position=o
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.chat_position=a[2]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/maskword/DTChatDisplayEntityTableData')
+end
+return e 

@@ -1,0 +1,6 @@
+shmj_xingxingshangsheng.png
+size:128,128
+filter:Linear,Linear
+t6
+bounds:2,2,97,80
+offsets:7,5,109,88

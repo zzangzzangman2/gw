@@ -1,0 +1,8 @@
+juntuanzhan_baoxiang.png
+size:256,128
+filter:Linear,Linear
+btn_jtbxjl
+bounds:110,17,90,83
+rotate:90
+btn_jtbxjlbg
+bounds:2,2,106,105

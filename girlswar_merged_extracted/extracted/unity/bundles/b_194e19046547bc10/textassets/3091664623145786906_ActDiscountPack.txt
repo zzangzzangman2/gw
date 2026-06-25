@@ -1,0 +1,15 @@
+
+?
+ActDiscountPack.proto"K
+PRT_DISCOUNT_PACK 
+discountDid (RdiscountDid
+count (Rcount"
+PRT_DISCOUNT_PACK_INFO_REQ"c
+PRT_DISCOUNT_PACK_INFO_RESP
+leftTime (RleftTime(
+packs (2.PRT_DISCOUNT_PACKRpacks"D
+ PRT_DISCOUNT_PACK_FREE_AWARD_REQ 
+discountDid (RdiscountDid"E
+!PRT_DISCOUNT_PACK_FREE_AWARD_RESP 
+discountDid (RdiscountDidB
+com.next1b.nextsvr.protobproto3

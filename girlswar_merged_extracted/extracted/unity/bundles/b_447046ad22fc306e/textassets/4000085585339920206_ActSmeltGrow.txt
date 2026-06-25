@@ -1,0 +1,28 @@
+
+?
+ActSmeltGrow.proto"
+PRT_SMELT_GROW_INFO_REQ"?
+PRT_SMELT_GROW_INFO_RESP
+leftTime (RleftTime
+charged (Rcharged
+
+equipCount (R
+equipCount*
+receivedFreeDids (RreceivedFreeDids.
+receivedChargeDids (RreceivedChargeDids"N
+PRT_SMELT_GROW_AWARD_REQ
+awardDid (RawardDid
+charge (Rcharge"O
+PRT_SMELT_GROW_AWARD_RESP
+awardDid (RawardDid
+charge (Rcharge"
+PRT_SMELT_GROW_AWARD_ALL_REQ"?
+PRT_SMELT_GROW_AWARD_ALL_RESP
+leftTime (RleftTime
+charged (Rcharged
+
+equipCount (R
+equipCount*
+receivedFreeDids (RreceivedFreeDids.
+receivedChargeDids (RreceivedChargeDidsB
+com.next1b.nextsvr.protobproto3

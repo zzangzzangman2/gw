@@ -1,0 +1,28 @@
+local e=
+{
+ByIdx={
+{"ParamSugar","ParamSugar",0,{{1,0},{3,0}},"HitArea_Sugar",0,0,5,10,0,1,"","","1:rodSugar1","rodSugar1","rodSugar1:2",1.2,10,0},
+{"ParamChocolate","ParamChocolate",0,{{1,0},{3,0}},"HitArea_Chocolate",0,0,5,10,0,1,"","","1:rodChocolate1","rodChocolate1","rodChocolate1:2",1.2,10,0},
+{"ParamMilk","ParamMilk",0,{{1,0},{3,0}},"HitArea_Milk",0,0,5,10,0,1,"","","1:rodMilk1","rodMilk1","rodMilk1:2",1,10,0},
+{"ParamLegL_idle","ParamLegL",0,{{2,0}},"HitArea_LegL",0,0,11,10,0,1,"","","","","",0.4,15,0},
+{"ParamLegR_idle","ParamLegR",0,{{1,0}},"HitArea_LegR",0,0,11,10,0,1,"","","","","",0.4,15,0},
+{"ParamButt1","ParamButt1",0,{{3,0},{2,0}},"HitArea_Butt",0,0,5,10,0,1,"","","1:rodButt1","rodButt1","rodButt1:2",1.2,10,0},
+{"ParamList1","ParamList1",0,{},"",0,2,5,3,0,1,"","","","","",1,10,0},
+{"ParamList2","ParamList2",0,{},"",0,1,5,3,0,1,"","","","","",1,10,0},
+{"ParamList3","ParamList3",0,{},"",0,3,5,3,0,1,"","","","","",1,10,0},
+{"ParamBalloon","ParamBalloon",1,{{4,0}},"HitArea_Balloon",0,0,5,10,0,1,"","","1:rodBalloon2","rodBalloon2","rodBalloon2:2",0.7,10,0},
+{"ParamBow","ParamBow",1,{{1,0},{2,0}},"HitArea_Bow",0,0,5,10,0,1,"","","","","",1,10,0},
+{"ParamLegL_idle1","ParamLegL",1,{{2,0}},"HitArea_LegL",0,0,11,10,0,1,"","","","","",0.4,15,0},
+{"ParamLegR_idle1","ParamLegR",1,{{1,0}},"HitArea_LegR",0,0,11,10,0,1,"","","","","",0.4,15,0},
+{"ParamPants","ParamPants",1,{{1,0},{3,0}},"HitArea_Bow",0,0,5,9,0,1,"ParamBow:2","","1:rodPants2","rodPants2","rodPants2:2",1,10,0},
+{"ParamBreastBeltL","ParamBreastBeltL",1,{{4,0},{1,0}},"HitArea_BreastBeltL",0,0,5,10,0,1,"","idle1_sp2","1:rodBreastBeltL2_sp2","rodBreastBeltL2_sp2","rodBreastBeltL2_sp2:2",0.8,10,0},
+{"ParamBreastBeltR","ParamBreastBeltR",1,{{4,0},{1,0}},"HitArea_BreastBeltR",0,0,5,10,0,1,"","idle1_sp2","1:rodBreastBeltR2_sp2","rodBreastBeltR2_sp2","rodBreastBeltR2_sp2:2",0.8,10,0},
+{"ParamButt2","ParamButt2",1,{{3,0},{2,0}},"HitArea_Butt",0,0,5,10,0,1,"","","1:rodButt2","rodButt2","rodButt2:2",1,10,0},
+{"ParamList1_idle1","ParamList1",1,{},"",0,0,5,3,0,1,"","","","","",1,10,0},
+{"ParamList2_idle1","ParamList2",1,{},"",0,0,5,3,0,1,"","","","","",1,10,0},
+{"ParamList3_idle1","ParamList3",1,{},"",0,0,5,3,0,1,"","","","","",1,10,0},
+{"ParamBalloon3","ParamBalloon3",2,{{4,0}},"HitArea_Balloon3",0,0,5,10,0,1,"","","1:rodBalloon3","rodBalloon3","rodBalloon3:2",1,10,0}
+},
+Len=21
+}
+return e 

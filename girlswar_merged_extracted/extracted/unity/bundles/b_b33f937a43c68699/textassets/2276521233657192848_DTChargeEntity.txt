@@ -1,0 +1,48 @@
+local a={id=0,type=0,platformId="",chargeMoney=0,chargeMoneyDollar="",chargeDiamond=0,awardDiamond=0,firstChargeAwardDiamond=0,vipExp=0,iconLink="",vipTitleShow="",vipLv={},vipTitleShowNew="",vipLvNew={},isGuildGift=0,webPayMoney={}}
+a.__index=a
+function a.New(h,u,d,t,c,f,y,w,p,m,l,n,i,o,s,r)
+local e={}
+setmetatable(e,a)
+e.id=h
+e.type=u
+e.platformId=d
+e.chargeMoney=t
+e.chargeMoneyDollar=c
+e.chargeDiamond=f
+e.awardDiamond=y
+e.firstChargeAwardDiamond=w
+e.vipExp=p
+e.iconLink=m
+e.vipTitleShow=l
+e.vipLv=n
+e.vipTitleShowNew=i
+e.vipLvNew=o
+e.isGuildGift=s
+e.webPayMoney=r
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.type=t[2]
+e.platformId=t[3]
+e.chargeMoney=t[4]
+e.chargeMoneyDollar=t[5]
+e.chargeDiamond=t[6]
+e.awardDiamond=t[7]
+e.firstChargeAwardDiamond=t[8]
+e.vipExp=t[9]
+e.iconLink=t[10]
+e.vipTitleShow=t[11]
+e.vipLv=t[12]
+e.vipTitleShowNew=t[13]
+e.vipLvNew=t[14]
+e.isGuildGift=t[15]
+e.webPayMoney=t[16]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/charge/DTChargeEntityTableData')
+end
+return a 

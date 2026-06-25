@@ -1,0 +1,24 @@
+local e={id=0,temperingType=0,temperingLevel=0,addAttr=0}
+e.__index=e
+function e.New(o,a,n,i)
+local t={}
+setmetatable(t,e)
+t.id=o
+t.temperingType=a
+t.temperingLevel=n
+t.addAttr=i
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.temperingType=a[2]
+t.temperingLevel=a[3]
+t.addAttr=a[4]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/summonPet/DTSummonPetEquipTemperingAttrEntityTableData')
+end
+return e 

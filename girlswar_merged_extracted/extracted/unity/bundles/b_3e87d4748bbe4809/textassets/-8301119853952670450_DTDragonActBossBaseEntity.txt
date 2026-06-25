@@ -1,0 +1,30 @@
+local t={id=0,dailyTransaction=0,maxAttraction=0,giftAttraction={{},{}},giftItemID={},activityItemID=0,luxuryCoinsIncrease={}}
+t.__index=t
+function t.New(o,h,a,s,r,n,i)
+local e={}
+setmetatable(e,t)
+e.id=o
+e.dailyTransaction=h
+e.maxAttraction=a
+e.giftAttraction=s
+e.giftItemID=r
+e.activityItemID=n
+e.luxuryCoinsIncrease=i
+return e
+end
+function t.NewFromArrItem(a)
+local e={}
+setmetatable(e,t)
+e.id=a[1]
+e.dailyTransaction=a[2]
+e.maxAttraction=a[3]
+e.giftAttraction=a[4]
+e.giftItemID=a[5]
+e.activityItemID=a[6]
+e.luxuryCoinsIncrease=a[7]
+return e
+end
+function t.GetArr()
+return require('DataNode/DataTable/Create/activity/DTDragonActBossBaseEntityTableData')
+end
+return t 

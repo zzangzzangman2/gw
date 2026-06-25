@@ -1,0 +1,40 @@
+local a={id=0,type=0,questkey="",score={},starTime="",closeTime="",settleTime="",showtype=0,autoset=0,choose={{},{}},choosekey="",helpkey=""}
+a.__index=a
+function a.New(s,d,h,t,u,c,m,l,r,i,o,n)
+local e={}
+setmetatable(e,a)
+e.id=s
+e.type=d
+e.questkey=h
+e.score=t
+e.starTime=u
+e.closeTime=c
+e.settleTime=m
+e.showtype=l
+e.autoset=r
+e.choose=i
+e.choosekey=o
+e.helpkey=n
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.type=t[2]
+e.questkey=t[3]
+e.score=t[4]
+e.starTime=t[5]
+e.closeTime=t[6]
+e.settleTime=t[7]
+e.showtype=t[8]
+e.autoset=t[9]
+e.choose=t[10]
+e.choosekey=t[11]
+e.helpkey=t[12]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/sourceWorld/DTSourceWorldJingcaiChooseEntityTableData')
+end
+return a 

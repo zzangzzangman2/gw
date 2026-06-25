@@ -1,0 +1,10 @@
+local e={}
+function e:OnHandle(e)
+local e=assert(GlobalPB.decode("PRT_PLAYER_CURRENCY_SYN",e));
+if(GameInit.GetDebugLogProto())then
+;
+;
+end
+PlayerMgr:syncCurrency(e)
+end
+return e 

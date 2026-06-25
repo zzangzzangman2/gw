@@ -1,0 +1,7 @@
+2253.png
+size:1024,1024
+filter:Linear,Linear
+scale:0.8
+03
+bounds:0,0,540,794
+offsets:169,17,819,819

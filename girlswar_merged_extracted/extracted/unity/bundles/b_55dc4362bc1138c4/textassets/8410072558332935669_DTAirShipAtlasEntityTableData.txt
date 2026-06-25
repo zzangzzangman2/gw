@@ -1,0 +1,25 @@
+local e=
+{
+ByIdx={
+{971001,"AirShip_name_971001","AirShip_desc_971001","AirShip_unlockdesc_971001",3,0,0,70971001,71971001,1,72971001,{{0}}},
+{972001,"AirShip_name_972001","AirShip_desc_972001","AirShip_unlockdesc_972001",3,0,0,70972001,71972001,2,72972001,{{0}}},
+{973001,"AirShip_name_973001","AirShip_desc_973001","AirShip_unlockdesc_973001",3,0,0,70973001,71973001,3,72973001,{{0}}},
+{974001,"AirShip_name_974001","AirShip_desc_974001","AirShip_unlockdesc_974001",4,0,0,70974001,71974001,4,72974001,{{0}}},
+{975001,"AirShip_name_975001","AirShip_desc_975001","AirShip_unlockdesc_975001",5,0,0,70975001,71975001,5,72975001,{{0}}},
+{976001,"AirShip_name_976001","AirShip_desc_976001","AirShip_unlockdesc_976001",6,0,0,70976001,71976001,6,72976001,{{0}}},
+{977001,"AirShip_name_977001","AirShip_desc_977001","AirShip_unlockdesc_977001",6,900,0,70977001,71977001,7,72977001,{{0}}},
+{977003,"AirShip_name_977003","AirShip_desc_977003","AirShip_unlockdesc_977003",6,1200,0,70977003,71977003,8,72977003,{{0}}},
+{977004,"AirShip_name_977004","AirShip_desc_977004","AirShip_unlockdesc_977004",6,1200,0,70977004,71977004,12,72977004,{{0}}},
+{977005,"AirShip_name_977005","AirShip_desc_977005","AirShip_unlockdesc_977005",6,900,0,70977005,71977005,13,72977005,{{0}}},
+{977006,"AirShip_name_977006","AirShip_desc_977006","AirShip_unlockdesc_977006",6,900,0,70977006,71977006,14,72977006,{{0}}},
+{977007,"AirShip_name_977007","AirShip_desc_977007","AirShip_unlockdesc_977007",6,900,0,70977007,71977007,15,72977007,{{0}}},
+{977008,"AirShip_name_977008","AirShip_desc_977008","AirShip_unlockdesc_977008",6,900,0,70977008,71977008,16,72977008,{{0}}},
+{977009,"AirShip_name_977009","AirShip_desc_977009","AirShip_unlockdesc_977009",6,900,0,70977009,71977009,17,72977009,{{0}}},
+{978001,"AirShip_name_978001","AirShip_desc_978001","AirShip_unlockdesc_978001",6,900,0,70978001,71978001,9,72978001,{{0}}},
+{979001,"AirShip_name_979001","AirShip_desc_979001","AirShip_unlockdesc_978001",6,900,0,70979001,71979001,10,72979001,{{0}}},
+{977002,"AirShip_name_977002","AirShip_desc_977002","AirShip_unlockdesc_978001",6,900,0,70977002,71977002,11,72977002,{{0}}},
+{979002,"AirShip_name_979002","AirShip_desc_979002","AirShip_unlockdesc_979002",6,0,0,70979002,71979002,72979002,18,{{1701,300}}}
+},
+Len=18
+}
+return e 

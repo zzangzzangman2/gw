@@ -1,0 +1,14 @@
+
+?
+ ActUpgradeDiscountPackGift.proto")
+'PRT_UPGRADE_DISCOUNT_PACK_GIFT_INFO_REQ"?
+(PRT_UPGRADE_DISCOUNT_PACK_GIFT_INFO_RESP
+leftTime (RleftTime
+score (Rscore
+giftDids (RgiftDids
+round (Rround"D
+(PRT_UPGRADE_DISCOUNT_PACK_GIFT_AWARD_REQ
+giftDid (RgiftDid"E
+)PRT_UPGRADE_DISCOUNT_PACK_GIFT_AWARD_RESP
+giftDid (RgiftDidB
+com.next1b.nextsvr.protobproto3

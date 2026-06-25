@@ -1,0 +1,38 @@
+local a={id=0,name="",unlockType=0,unlockPara={},image="",type=0,attrProf={},trainProf=0,trainMulti=0,miniImage="",cost={}}
+a.__index=a
+function a.New(n,r,s,t,l,u,c,d,h,o,i)
+local e={}
+setmetatable(e,a)
+e.id=n
+e.name=r
+e.unlockType=s
+e.unlockPara=t
+e.image=l
+e.type=u
+e.attrProf=c
+e.trainProf=d
+e.trainMulti=h
+e.miniImage=o
+e.cost=i
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.name=t[2]
+e.unlockType=t[3]
+e.unlockPara=t[4]
+e.image=t[5]
+e.type=t[6]
+e.attrProf=t[7]
+e.trainProf=t[8]
+e.trainMulti=t[9]
+e.miniImage=t[10]
+e.cost=t[11]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/shouhu/DTSubCityEntityTableData')
+end
+return a 

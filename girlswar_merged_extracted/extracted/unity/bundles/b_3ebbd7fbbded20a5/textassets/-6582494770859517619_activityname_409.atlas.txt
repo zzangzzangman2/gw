@@ -1,0 +1,7 @@
+activityname_409.png
+size:128,256
+filter:Linear,Linear
+c1
+bounds:2,2,86,56
+t2
+bounds:2,60,83,81

@@ -1,0 +1,11 @@
+local e=
+{
+ByIdx={
+{1,1,10000,3,"UIActWorldTree_Event/sjwj_buffIcon_1","worldTree_buffDesc_1"},
+{2,2,10000,3,"UIActWorldTree_Event/sjwj_buffIcon_2","worldTree_buffDesc_2"},
+{3,3,5000,2,"UIActWorldTree_Event/sjwj_buffIcon_3","worldTree_buffDesc_3"},
+{4,4,10000,2,"UIActWorldTree_Event/sjwj_buffIcon_4","worldTree_buffDesc_4"}
+},
+Len=4
+}
+return e 

@@ -1,0 +1,108 @@
+local a={id=0,needBuyDiamond=0,heroId=0,heroIdServer=0,heroIdNew=0,video="",videoServer="",videoNew="",visibleLevel=0,visibleLevelNew=0,fastBattleExpRate=0,fastBattleGoldRate=0,fastBattleFreetimes=0,fastBattleBuytimes=0,goldBuyTimes=0,fastBattleItemtimes=0,bossBuyTimes=0,commShopItemNum=0,moonResignTimes=0,idleSecondMax=0,buildingRate1=0,buildingRate3=0,buildingRate6=0,buildingRate2=0,buildingRate4=0,buildingRate5=0,powerBuyTimes=0,carnivalPowerBuyTimes=0,cityRandomMax=0,vipDailyAward={{},{}},goods=0,goodsServer=0,noBoughtPackAward={{},{}},noBoughtPackAwardNew={{},{}},boughtPackAward={{},{}},noBoughtPackAwardServer={{},{}},boughtPackAwardServer={{},{}},attack=0,defence=0,hp=0,first=0,firstExt=0,info="",infoNew="",infoNoBought="",infoBought=""}
+a.__index=a
+function a.New(p,_,x,t,H,R,N,S,I,E,T,A,O,L,W,U,B,P,V,Y,C,M,F,G,D,z,c,l,u,r,d,h,o,i,n,s,m,v,f,q,j,g,k,b,w,y)
+local e={}
+setmetatable(e,a)
+e.id=p
+e.needBuyDiamond=_
+e.heroId=x
+e.heroIdServer=t
+e.heroIdNew=H
+e.video=R
+e.videoServer=N
+e.videoNew=S
+e.visibleLevel=I
+e.visibleLevelNew=E
+e.fastBattleExpRate=T
+e.fastBattleGoldRate=A
+e.fastBattleFreetimes=O
+e.fastBattleBuytimes=L
+e.goldBuyTimes=W
+e.fastBattleItemtimes=U
+e.bossBuyTimes=B
+e.commShopItemNum=P
+e.moonResignTimes=V
+e.idleSecondMax=Y
+e.buildingRate1=C
+e.buildingRate3=M
+e.buildingRate6=F
+e.buildingRate2=G
+e.buildingRate4=D
+e.buildingRate5=z
+e.powerBuyTimes=c
+e.carnivalPowerBuyTimes=l
+e.cityRandomMax=u
+e.vipDailyAward=r
+e.goods=d
+e.goodsServer=h
+e.noBoughtPackAward=o
+e.noBoughtPackAwardNew=i
+e.boughtPackAward=n
+e.noBoughtPackAwardServer=s
+e.boughtPackAwardServer=m
+e.attack=v
+e.defence=f
+e.hp=q
+e.first=j
+e.firstExt=g
+e.info=k
+e.infoNew=b
+e.infoNoBought=w
+e.infoBought=y
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.needBuyDiamond=t[2]
+e.heroId=t[3]
+e.heroIdServer=t[4]
+e.heroIdNew=t[5]
+e.video=t[6]
+e.videoServer=t[7]
+e.videoNew=t[8]
+e.visibleLevel=t[9]
+e.visibleLevelNew=t[10]
+e.fastBattleExpRate=t[11]
+e.fastBattleGoldRate=t[12]
+e.fastBattleFreetimes=t[13]
+e.fastBattleBuytimes=t[14]
+e.goldBuyTimes=t[15]
+e.fastBattleItemtimes=t[16]
+e.bossBuyTimes=t[17]
+e.commShopItemNum=t[18]
+e.moonResignTimes=t[19]
+e.idleSecondMax=t[20]
+e.buildingRate1=t[21]
+e.buildingRate3=t[22]
+e.buildingRate6=t[23]
+e.buildingRate2=t[24]
+e.buildingRate4=t[25]
+e.buildingRate5=t[26]
+e.powerBuyTimes=t[27]
+e.carnivalPowerBuyTimes=t[28]
+e.cityRandomMax=t[29]
+e.vipDailyAward=t[30]
+e.goods=t[31]
+e.goodsServer=t[32]
+e.noBoughtPackAward=t[33]
+e.noBoughtPackAwardNew=t[34]
+e.boughtPackAward=t[35]
+e.noBoughtPackAwardServer=t[36]
+e.boughtPackAwardServer=t[37]
+e.attack=t[38]
+e.defence=t[39]
+e.hp=t[40]
+e.first=t[41]
+e.firstExt=t[42]
+e.info=t[43]
+e.infoNew=t[44]
+e.infoNoBought=t[45]
+e.infoBought=t[46]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/vip/DTVipEntityTableData')
+end
+return a 

@@ -1,0 +1,44 @@
+sp_magicOrchard_iconmove.png
+size:2048,128
+filter:Linear,Linear
+mfgy_cth
+bounds:1401,53,56,54
+rotate:90
+mfgy_jzh01
+bounds:1336,44,65,63
+rotate:90
+mfgy_jzh02
+bounds:1271,44,65,63
+rotate:90
+mfgy_shh
+bounds:1205,31,78,64
+rotate:90
+mfgy_shhs
+bounds:1205,18,17,11
+smoke/hero dragon smokeDecal_1
+bounds:819,5,129,104
+offsets:8,1,144,108
+smoke/hero dragon smokeDecal_2
+bounds:280,3,136,106
+offsets:4,1,144,108
+smoke/hero dragon smokeDecal_3
+bounds:2,2,137,107
+offsets:3,1,144,108
+smoke/hero dragon smokeDecal_4
+bounds:141,3,137,106
+offsets:1,1,144,108
+smoke/hero dragon smokeDecal_5
+bounds:552,6,133,103
+offsets:2,1,144,108
+smoke/hero dragon smokeDecal_6
+bounds:687,5,130,104
+offsets:3,1,144,108
+smoke/hero dragon smokeDecal_7
+bounds:418,4,132,105
+offsets:4,1,144,108
+smoke/hero dragon smokeDecal_8
+bounds:950,2,125,107
+offsets:8,1,144,108
+smoke/hero dragon smokeDecal_9
+bounds:1077,3,126,106
+offsets:10,1,144,108

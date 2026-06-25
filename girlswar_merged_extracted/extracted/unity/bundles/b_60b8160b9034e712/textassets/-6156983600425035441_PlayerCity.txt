@@ -1,0 +1,63 @@
+
+?
+PlayerCity.protoCommons.proto"o
+PRT_PLAYER_CITY_INNER_COM
+	innerType (R	innerType4
+coms (2 .PRT_PLAYER_CITY_INNER_COMPONENTRcoms"[
+PRT_PLAYER_CITY_INNER_COMPONENT"
+ornamentType (RornamentType
+level (Rlevel"_
+PRT_PLAYER_CITY_TECHNOLOGY_TREE
+layer (Rlayer
+pos (Rpos
+level (Rlevel"
+PRT_PLAYER_CITY_INFO_REQ"?
+PRT_PLAYER_CITY_INFO_RESP
+
+mainCityId (R
+mainCityId8
+	innerComs (2.PRT_PLAYER_CITY_INNER_COMR	innerComs>
+	techTrees (2 .PRT_PLAYER_CITY_TECHNOLOGY_TREER	techTrees
+skinIds (RskinIds
+skinId (RskinId"
+PRT_PLAYER_CITY_LEVEL_REQ"^
+PRT_PLAYER_CITY_LEVEL_RESP
+
+mainCityId (R
+mainCityId 
+drops (2
+.PRT_THINGRdrops"Z
+ PRT_PLAYER_CITY_INNER_UNLOCK_REQ
+	innerType (R	innerType
+comType (RcomType"[
+!PRT_PLAYER_CITY_INNER_UNLOCK_RESP6
+innerCom (2.PRT_PLAYER_CITY_INNER_COMRinnerCom"c
+)PRT_PLAYER_CITY_INNER_COMPONENT_LEVEL_REQ
+	innerType (R	innerType
+comType (RcomType"~
+*PRT_PLAYER_CITY_INNER_COMPONENT_LEVEL_RESP
+	innerType (R	innerType2
+com (2 .PRT_PLAYER_CITY_INNER_COMPONENTRcom"S
+)PRT_PLAYER_CITY_TECHNOLOGY_TREE_LEVEL_REQ
+layer (Rlayer
+pos (Rpos"j
+*PRT_PLAYER_CITY_TECHNOLOGY_TREE_LEVEL_RESP<
+techTree (2 .PRT_PLAYER_CITY_TECHNOLOGY_TREERtechTree"9
+PRT_PLAYER_CITY_SKIN_UNLOCK_SYN
+skinId (RskinId"9
+PRT_PLAYER_CITY_SKIN_CHANGE_REQ
+skinId (RskinId":
+ PRT_PLAYER_CITY_SKIN_CHANGE_RESP
+skinId (RskinId"m
+PRT_PLAYER_CITY_GIFT_ITEM
+giftId (RgiftId
+buyTimes (RbuyTimes
+	resetTime (R	resetTime"
+PRT_PLAYER_CITY_GIFT_INFO_REQ"R
+PRT_PLAYER_CITY_GIFT_INFO_RESP0
+items (2.PRT_PLAYER_CITY_GIFT_ITEMRitems";
+!PRT_PLAYER_CITY_GIFT_FREE_BUY_REQ
+giftId (RgiftId"V
+"PRT_PLAYER_CITY_GIFT_FREE_BUY_RESP0
+items (2.PRT_PLAYER_CITY_GIFT_ITEMRitemsB
+com.next1b.nextsvr.protobproto3

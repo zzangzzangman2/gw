@@ -1,0 +1,44 @@
+local a={id=0,name="",attrType=0,percentageShow=0,isShow=0,showType=0,attrName="",attrIcon="",desc="",score=0,ratio=0,ratio2=0,min=0,max=0}
+a.__index=a
+function a.New(s,l,r,t,u,m,f,w,c,d,i,o,n,h)
+local e={}
+setmetatable(e,a)
+e.id=s
+e.name=l
+e.attrType=r
+e.percentageShow=t
+e.isShow=u
+e.showType=m
+e.attrName=f
+e.attrIcon=w
+e.desc=c
+e.score=d
+e.ratio=i
+e.ratio2=o
+e.min=n
+e.max=h
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.name=t[2]
+e.attrType=t[3]
+e.percentageShow=t[4]
+e.isShow=t[5]
+e.showType=t[6]
+e.attrName=t[7]
+e.attrIcon=t[8]
+e.desc=t[9]
+e.score=t[10]
+e.ratio=t[11]
+e.ratio2=t[12]
+e.min=t[13]
+e.max=t[14]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/constant/DTBattleAttrEntityTableData')
+end
+return a 

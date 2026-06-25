@@ -1,0 +1,499 @@
+
+?d
+Fight.protoFormation.protoCommons.proto"?
+PRT_CHARACTER
+heroId (RheroId
+heroDid (RheroDid
+pos (Rpos
+level (Rlevel
+name (	Rname
+hp (Rhp
+mp (Rmp
+state (Rstate
+playerId	 (RplayerId
+flag
+ (Rflag
+currHp (RcurrHp
+currMp (RcurrMp(
+battleOrSupport (RbattleOrSupport
+wxArmor (RwxArmor
+
+curWxArmor (R
+curWxArmor$
+originHeroDid (RoriginHeroDid
+
+fightValue (R
+fightValue"?
+PRT_STATISTIC
+heroId (RheroId
+curHp (RcurHp
+curMp (RcurMp
+	outputDmg (R	outputDmg
+dmg (Rdmg
+healHp (RhealHp
+hpRate (RhpRate"
+controllRate (RcontrollRate
+	isOurHero	 (R	isOurHero
+playerId
+ (RplayerId
+heroDid (RheroDid
+	rankLevel (R	rankLevel
+	lockLevel (R	lockLevel
+pos (Rpos
+curArmor (RcurArmor
+checkHp (RcheckHp"?
+PRT_NEW_BUFF
+pos (Rpos
+buffId (RbuffId
+	buffRound (R	buffRound 
+buffOverlap (RbuffOverlap*
+state (2.ENUM_NEW_BUFF_STATERstate$
+changeModelId (RchangeModelId"?
+PRT_BUFF_STATE_CHANGE
+pos (Rpos
+buffId (RbuffId
+	buffRound (R	buffRound 
+buffOverlap (RbuffOverlap(
+isRecoverChange (RisRecoverChange"?
+PRT_ROLE_DEAD
+pos (Rpos
+	rebirthHp (R	rebirthHp
+	rebirthMp (R	rebirthMp+
+state (2.ENUM_ROLE_DEAD_STATERstateB
+buffStateChanges (2.PRT_BUFF_STATE_CHANGERbuffStateChanges)
+newBuffs (2.PRT_NEW_BUFFRnewBuffs"?
+PRT_BUFF_CHANGE_HP
+pos (Rpos
+buffId (RbuffId
+deltaHP (RdeltaHP
+hp (Rhp*
+roleDead (2.PRT_ROLE_DEADRroleDead+
+state (2.ENUM_HP_CHANGE_STATERstate
+absorb (Rabsorb"?
+PRT_ROUND_RESUME
+pos (Rpos
+hpAdd (RhpAdd
+hp (Rhp/
+hpState (2.ENUM_HP_CHANGE_STATERhpState
+mpAdd (RmpAdd
+mp (Rmp/
+mpState (2.ENUM_MP_CHANGE_STATERmpState"o
+PRT_NEW_BUFF_WITH_STEP
+step (Rstep'
+newBuff (2.PRT_NEW_BUFFRnewBuff
+groupID (RgroupID"?
+PRT_BUFF_STATE_CHANGE_WITH_STEP
+step (Rstep@
+buffStateChange (2.PRT_BUFF_STATE_CHANGERbuffStateChange
+groupID (RgroupID"y
+PRT_SUCK/
+hpState (2.ENUM_HP_CHANGE_STATERhpState
+	suckValue (R	suckValue
+
+suckBuffId (R
+suckBuffId"?
+PRT_REFLECT/
+hpState (2.ENUM_HP_CHANGE_STATERhpState"
+reflectValue (RreflectValue$
+reflectBuffId (RreflectBuffId
+absorb (Rabsorb"?
+PRT_SKILL_RESPONSE
+sucks (2	.PRT_SUCKRsucks(
+reflects (2.PRT_REFLECTRreflects
+hp (Rhp*
+roleDead (2.PRT_ROLE_DEADRroleDead)
+newBuffs (2.PRT_NEW_BUFFRnewBuffs"?
+PRT_DAMAGE_OR_HEAL
+pos (Rpos
+hpDelta (RhpDelta
+hp (Rhp
+mpDelta (RmpDelta
+mp (Rmp*
+roleDead (2.PRT_ROLE_DEADRroleDead
+buffId (RbuffId0
+state (2.ENUM_DAMAGE_OR_HEAL_STATERstate
+absorb	 (Rabsorb
+groupID
+ (RgroupID
+armor (Rarmor
+
+armorDelta (R
+armorDelta"J
+MSG_GROUP_TARGET
+groupID (RgroupID
+	targetPos (R	targetPos"?
+PRT_ROLE_DO_SKILL
+pos (Rpos
+skillId (RskillId
+costMp (RcostMp
+mp (RmpC
+newBuffsWithStep (2.PRT_NEW_BUFF_WITH_STEPRnewBuffsWithStep\
+buffStateChangesWithStep (2 .PRT_BUFF_STATE_CHANGE_WITH_STEPRbuffStateChangesWithStep9
+damageOrHeals (2.PRT_DAMAGE_OR_HEALRdamageOrHeals9
+skillResponse (2.PRT_SKILL_RESPONSERskillResponse
+	targetPos	 (R	targetPos 
+subScriptId
+ (RsubScriptId5
+groupTargets (2.MSG_GROUP_TARGETRgroupTargets
+	originPos (R	originPos"{
+PRT_ROLE_ALTERNATE
+pos (Rpos
+	alternate (R	alternate5
+alternateBuffs (2.PRT_NEW_BUFFRalternateBuffs"?
+PRT_ROLE_ACTION5
+roundResumes (2.PRT_ROUND_RESUMERroundResumes9
+buffChangeHps (2.PRT_BUFF_CHANGE_HPRbuffChangeHpsX
+buffStateChangesBeforeSkill (2.PRT_BUFF_STATE_CHANGERbuffStateChangesBeforeSkill=
+newBuffBeforeSkill (2.PRT_NEW_BUFFRnewBuffBeforeSkill6
+
+skillState (2.ENUM_ROLE_SKILL_STATER
+skillState4
+roleDoSkill (2.PRT_ROLE_DO_SKILLRroleDoSkillV
+buffStateChangesAfterSkill (2.PRT_BUFF_STATE_CHANGERbuffStateChangesAfterSkill;
+newBuffAfterSkill (2.PRT_NEW_BUFFRnewBuffAfterSkill1
+	alternate	 (2.PRT_ROLE_ALTERNATER	alternate"?
+PRT_BATTLE_ROUND_CHANGE9
+buffChangeHps (2.PRT_BUFF_CHANGE_HPRbuffChangeHpsB
+buffStateChanges (2.PRT_BUFF_STATE_CHANGERbuffStateChanges5
+roundResumes (2.PRT_ROUND_RESUMERroundResumes)
+newBuffs (2.PRT_NEW_BUFFRnewBuffs"?
+PRT_BATTLE_ROUND
+round (Rround>
+attRoundBegin (2.PRT_BATTLE_ROUND_CHANGERattRoundBegin>
+defRoundBegin (2.PRT_BATTLE_ROUND_CHANGERdefRoundBegin4
+rolesActions (2.PRT_ROLE_ACTIONRrolesActions;
+newBuffAfterRound (2.PRT_NEW_BUFFRnewBuffAfterRound:
+attRoundEnd (2.PRT_BATTLE_ROUND_CHANGERattRoundEnd:
+defRoundEnd (2.PRT_BATTLE_ROUND_CHANGERdefRoundEnd"=
+PRT_BATTLE_BEGIN)
+newBuffs (2.PRT_NEW_BUFFRnewBuffs"?
+PRT_BATTLE_PROCESS3
+battleBegin (2.PRT_BATTLE_BEGINRbattleBegin5
+battleRounds (2.PRT_BATTLE_ROUNDRbattleRounds"?
+
+PRT_COMBAT,
+	character (2.PRT_CHARACTERR	character9
+battleProcess (2.PRT_BATTLE_PROCESSRbattleProcess.
+
+statistics (2.PRT_STATISTICR
+statistics"?
+PRT_FIGHT_INFO
+
+battleType (R
+battleType 
+battleRound (RbattleRound
+	fightTime (R	fightTime
+waitTime (RwaitTime+
+
+battleData (2.PRT_COMBATR
+battleData 
+fightResult (RfightResult!
+award (2.PRT_FAWARDRaward
+mapDid (RmapDid
+
+firstFalse	 (R
+firstFalse
+mapWave
+ (RmapWave"?
+PRT_FIGHT_REQ
+
+battleType (R
+battleType
+
+battleArgs (R
+battleArgs5
+	positions (2.PRT_FORMATION_POSITIONR	positions"
+PRT_FIGHT_RESP"T
+PRT_FAST_FIGHT_REQ
+
+battleType (R
+battleType
+
+battleArgs (R
+battleArgs"I
+PRT_FAST_FIGHT_RESP2
+
+fightInfos (2.PRT_OFFLINE_FIGHTR
+fightInfos"K
+PRT_PUSH_FIGHT_INFO_RESP/
+
+battleInfo (2.PRT_FIGHT_PLAYR
+battleInfo"4
+PRT_FIGHT_PLAYBACK_REQ
+recordId (RrecordId"?
+PRT_FIGHT_PLAYBACK_RESP-
+	fightInfo (2.PRT_FIGHT_PLAYR	fightInfo 
+winPlayerId (RwinPlayerId&
+attackPlayerId (RattackPlayerId
+star (Rstar"G
+PRT_FIGHT_MANUAL_REQ/
+
+battleInfo (2.PRT_FIGHT_PLAYR
+battleInfo"T
+PRT_FIGHT_MANUAL_RESP
+invalid (Rinvalid!
+award (2.PRT_FAWARDRaward"f
+PRT_BUFF
+buffId (RbuffId
+round (Rround
+overlap (Roverlap
+args (Rargs"?
+PRT_FIGHT_HERO
+heroId (RheroId
+heroDid (RheroDid
+status (Rstatus'
+	attribute (2	.PRT_ATTRR	attribute"
+skills (2
+.PRT_SKILLRskills1
+underwearSuits (2	.PRT_SUITRunderwearSuits
+curHp (RcurHp
+curMp (RcurMp
+playerId	 (RplayerId
+	rankLevel
+ (R	rankLevel
+	lockLevel (R	lockLevel
+pos (Rpos
+	skillMode (R	skillMode
+teamNO (RteamNO)
+
+enterBuffs (2	.PRT_BUFFR
+enterBuffs
+soulDid (RsoulDid
+	heroLevel (R	heroLevel
+curArmor (RcurArmor0
+	treasures (2.PRT_HERO_TREASURER	treasures
+heroPet (RheroPet 
+symphonyDid (RsymphonyDid
+fight (Rfight"?
+PRT_FIGHT_SUMMON_PET
+heroId (RheroId
+heroDid (RheroDid"
+skills (2
+.PRT_SKILLRskills
+playerId (RplayerId
+	heroLevel (R	heroLevel
+	rankLevel (R	rankLevel
+pos (Rpos
+	skillMode (R	skillMode)
+
+enterBuffs	 (2	.PRT_BUFFR
+enterBuffs"?
+PRT_FIGHT_PLAY_EXT'
+relics (2.PRT_MAZE_RELICRrelics"
+dicePosition (RdicePosition'
+	attribute (2	.PRT_ATTRR	attribute$
+suppressRatio (RsuppressRatio 
+playerLevel (RplayerLevel
+officer (Rofficer
+accType (	RaccType
+
+isSuppress (R
+isSuppress">
+PRT_FIGHT_PLAY_PARAM
+key (Rkey
+value (Rvalue"?
+PRT_FIGHT_PLAY
+
+battleType (R
+battleType
+mapId (RmapId
+
+randomSeed (R
+randomSeedC
+ourTeamFormation (2.PRT_FORMATION_POSITIONRourTeamFormationM
+ourTeamFormationAlter (2.PRT_FORMATION_POSITIONRourTeamFormationAlter+
+ourHeros (2.PRT_FIGHT_HERORourHeros+
+waveData (2.PRT_FIGHT_WAVERwaveData 
+ourPlayerId (RourPlayerId$
+ourFirstValue	 (RourFirstValue+
+ourExt
+ (2.PRT_FIGHT_PLAY_EXTRourExt$
+enemyPlayerId (RenemyPlayerId(
+enemyFirstValue (RenemyFirstValue/
+enemyExt (2.PRT_FIGHT_PLAY_EXTRenemyExt 
+fightResult (RfightResult!
+award (2.PRT_FAWARDRaward
+
+mvpHeroDid (R
+mvpHeroDid
+transId (RtransId$
+randomNumbers (RrandomNumbers
+heroDids (RheroDids/
+ourPets (2.PRT_FIGHT_SUMMON_PETRourPets3
+ourPetHeroAttrs (2	.PRT_ATTRRourPetHeroAttrs+
+ourPetAttrs (2	.PRT_ATTRRourPetAttrs
+	stakeType (R	stakeType7
+stakeParams (2.PRT_FIGHT_PLAY_PARAMRstakeParams"J
+PRT_FIGHT_SUPPLEMENT
+position (Rposition
+heroId (RheroId"?
+PRT_FIGHT_WAVE
+waveNo (RwaveNoG
+enemyTeamFormation (2.PRT_FORMATION_POSITIONRenemyTeamFormationQ
+enemyTeamFormationAlter (2.PRT_FORMATION_POSITIONRenemyTeamFormationAlter/
+
+enemyHeros (2.PRT_FIGHT_HEROR
+enemyHeros7
+bigRoundData (2.PRT_FIGHT_BIGROUNDRbigRoundData6
+heroStatistics (2.PRT_STATISTICRheroStatistics3
+	enemyPets (2.PRT_FIGHT_SUMMON_PETR	enemyPets7
+enemyPetHeroAttrs (2	.PRT_ATTRRenemyPetHeroAttrs/
+enemyPetAttrs	 (2	.PRT_ATTRRenemyPetAttrs"s
+PRT_FIGHT_BIGROUND
+
+bigRoundNo (R
+bigRoundNo=
+smallRoundData (2.PRT_FIGHT_SMALLROUNDRsmallRoundData"?
+PRT_FIGHT_SMALLROUND"
+smallRoundNo (RsmallRoundNo1
+
+actionData (2.PRT_FIGHT_ACTIONR
+actionData=
+supplementData (2.PRT_FIGHT_SUPPLEMENTRsupplementData"j
+PRT_FIGHT_ACTION
+heroId (RheroId
+
+fireHeroId (R
+fireHeroId
+
+actionType (R
+actionType*<
+ENUM_FIGHT_TEAM
+	TEAM_NONE 
+TEAM_ATT
+TEAM_DEF*?
+ENUM_FIGHT_TYPE
+PVE_NONE 
+PVE_MAP_FIGHT
+PVE_TOWER_FIGHT
+PVP_ARENA_FIGHT
+PVP_GUILD_FIGHT
+
+PVP_FLOWER
+PVE_MAZE
+PVP_GVG_FIGHT
+PVE_MULTI_ELITE
+PVP_CSARENA_FIGHT
+
+PVE_IDLE_FIGHT
+PVE_GUILD_THIEF
+PVE_SKILL_VIEW
+	PVE_GUIDE
+PVE_MAP_ELITE
+PVE_HUGE_BOSS
+PVE_CARNIVAL
+PVE_WATERMELON
+PVE_CARNIVAL_NEW
+PVP_RICH_MAN
+PVP_FRIEND_DUEL
+PVE_GUILD_BOSS_PLAYER
+PVE_GUILD_BOSS_GUILD
+PVE_GUILD_TRIAL
+PVE_SPRING_RAIN
+PVE_GOLD_HOLIDAY
+PVP_MINE_WAR
+PVE_SELFMARRY_BOSS
+PVE_INSPIRATION
+PVP_GREAT_BOSS
+PVE_UR_BOSS#
+PVE_UR_TEST$
+PVE_URBACK_BOSS%
+PVP_FSB&
+PVE_SELFMARRY_BACK'
+PVP_BURNING(
+PVP_FSBY)
+PVE_UR2_BOSS-
+PVE_UR2_TEST.
+PVE_GIRL_CHALLENGE/
+PVP_ISLAND_ESCORT_PLUNDER0
+PVP_WU_SHU_MASTER1
+PVE_GUILD_RADAR2*?
+ENUM_ACTION_TYPE
+ACTION_NONE 
+ACTION_RECOVERMP
+ACTION_RECOVERHP
+ACTION_SKILL
+ACTION_BUFF_SKIP
+ACTION_BUFF_REDUCE_HP
+ACTION_REVERSE_DAMAGE
+ACTION_AVOID_BUFF
+ACTION_RAGE_DAMAGE
+ACTION_DISPEL	
+ACTION_ZERO
+
+ACTION_FRENZY
+ACTION_SUPPORT
+ACTION_REBIRTH*E
+ENUM_ACTOR_STATE
+ACTOR_FIGHT 
+ACTOR_ESCAPE
+
+ACTOR_DEAD*?
+ENUM_EFFECT_TYPE
+EFFECT_DAMAGE 
+EFFECT_CRIT
+EFFECT_MISS
+EFFECT_HEAL
+EFFECT_RECOVERMP
+EFFECT_RECOVERHP
+EFFECT_ABSORB_MP
+EFFECT_HEAL_CRIT*c
+ENUM_ATTACK_TYPE
+ATTACK_NONE 
+ATTACK_PHYSICS
+ATTACK_MAGIC
+ATTACK_PHYSICS_MAGIC*Y
+ENUM_ATTACK_EFFECT_TYPE
+
+APPLY_NONE 
+	APPLY_HIT
+
+APPLY_CRIT
+APPLY_BLOCK*?
+ENUM_NEW_BUFF_STATE
+NEW_BUFF_STATE_NONE 
+NEW_BUFF_STATE_CFG_NULL
+NEW_BUFF_STATE_ON
+NEW_BUFF_STATE_RESIST
+NEW_BUFF_STATE_IMMUNE
+NEW_BUFF_STATE_REBOUND*F
+ENUM_ROLE_DEAD_STATE
+	ROLE_NONE 
+	ROLE_DEAD
+ROLE_REBIRTH*?
+ENUM_HP_CHANGE_STATE
+HP_CHANGE_STATE_NONE 
+HP_CHANGE_STATE_RESUME
+HP_CHANGE_STATE_BAN_RESUME
+HP_CHANGE_STATE_LOSE
+HP_CHANGE_STATE_INVINCIBLE*?
+ENUM_MP_CHANGE_STATE
+MP_CHANGE_STATE_NONE 
+MP_CHANGE_STATE_RESUME
+MP_CHANGE_STATE_BAN_RESUME
+MP_CHANGE_STATE_LOSE*]
+ENUM_REST_RAIN_STATE
+RESTRAIN_STATE_NO 
+RESTRAIN_STATE_ATT
+RESTRAIN_STATE_DEF*?
+ENUM_DAMAGE_OR_HEAL_STATE
+DAMAGE_STATE_NONE 
+DAMAGE_STATE_MISS
+DAMAGE_STATE_NORMAL
+DAMAGE_STATE_STRONG
+DAMAGE_STATE_WEAK
+DAMAGE_STATE_CRIT
+DAMAGE_STATE_CRIT_STRONG
+DAMAGE_STATE_CRIT_WEAK
+DAMAGE_STATE_INVINCIBLE
+HEAL_NORMAL	
+HEAL_BAN
+
+SEC_KILL
+DAMAGE_STATE_SPLASH
+	HEAL_CRIT*W
+ENUM_ROLE_SKILL_STATE
+SKILL_STATE_NONE 
+SKILL_STATE_ON
+SKILL_STATE_SKIPB
+com.next1b.nextsvr.protobproto3

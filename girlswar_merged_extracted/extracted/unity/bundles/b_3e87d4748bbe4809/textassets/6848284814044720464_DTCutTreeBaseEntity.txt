@@ -1,0 +1,46 @@
+local a={id=0,itemCost={},shopCostID=0,score=0,luckyATK=0,luckyATKWeight={{},{}},rankShowCount=0,rankRefresh=0,firstTree=0,lowTreeDraw={{},{}},highTreeDraw={{},{}},dailyMissionNum=0,dailyMissionReward={{},{}},broadcastNum=0,rewardLogNum=0}
+a.__index=a
+function a.New(s,l,r,t,u,m,w,f,y,c,d,i,o,n,h)
+local e={}
+setmetatable(e,a)
+e.id=s
+e.itemCost=l
+e.shopCostID=r
+e.score=t
+e.luckyATK=u
+e.luckyATKWeight=m
+e.rankShowCount=w
+e.rankRefresh=f
+e.firstTree=y
+e.lowTreeDraw=c
+e.highTreeDraw=d
+e.dailyMissionNum=i
+e.dailyMissionReward=o
+e.broadcastNum=n
+e.rewardLogNum=h
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.itemCost=t[2]
+e.shopCostID=t[3]
+e.score=t[4]
+e.luckyATK=t[5]
+e.luckyATKWeight=t[6]
+e.rankShowCount=t[7]
+e.rankRefresh=t[8]
+e.firstTree=t[9]
+e.lowTreeDraw=t[10]
+e.highTreeDraw=t[11]
+e.dailyMissionNum=t[12]
+e.dailyMissionReward=t[13]
+e.broadcastNum=t[14]
+e.rewardLogNum=t[15]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/activity/DTCutTreeBaseEntityTableData')
+end
+return a 

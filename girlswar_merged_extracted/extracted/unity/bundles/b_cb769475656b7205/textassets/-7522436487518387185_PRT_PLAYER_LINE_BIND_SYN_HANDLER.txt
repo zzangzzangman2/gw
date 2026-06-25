@@ -1,0 +1,12 @@
+local e={}
+function e:OnHandle(e)
+local e=assert(GlobalPB.decode("PRT_PLAYER_LINE_BIND_SYN",e));
+if(GameInit.GetDebugLogProto())then
+;
+;
+end
+UserAccountInfo.isLineBind=true
+EventSystem.SendEvent(CommonEventId.RedPointInfoChange)
+return e
+end
+return e 

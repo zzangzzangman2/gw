@@ -1,0 +1,24 @@
+
+?
+ActNewYearTask.protoCommons.proto"
+PRT_NEW_YEAR_TASK_INFO_REQ"?
+PRT_NEW_YEAR_TASK_INFO_RESP
+leftTime (RleftTime"
+taskLeftTime (RtaskLeftTime
+nowDay (RnowDay$
+totalBoxCount (RtotalBoxCount
+tasks (2	.PRT_TASKRtasks
+
+isBoxAward (R
+isBoxAward"7
+PRT_NEW_YEAR_TASK_AWARD_REQ
+taskDid (RtaskDid"]
+PRT_NEW_YEAR_TASK_AWARD_RESP
+boxCount (RboxCount!
+award (2.PRT_REWARDRaward"!
+PRT_NEW_YEAR_TASK_BOX_AWARD_REQ"B
+ PRT_NEW_YEAR_TASK_BOX_AWARD_RESP
+
+isBoxAward (R
+isBoxAwardB
+com.next1b.nextsvr.protobproto3

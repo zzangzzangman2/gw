@@ -1,0 +1,11 @@
+local t={}
+function t:OnHandle(e)
+local e=assert(GlobalPB.decode("PRT_TURKEY_RUN_FREE_GIFT_AWARD_RESP",e));
+if(GameInit.GetDebugLogProto())then
+;
+;
+end
+ModulesInit.ActTurkeyRunMgr:ParseFreeGiftAward(e)
+return e
+end
+return t 

@@ -1,0 +1,28 @@
+local e={id=0,stage=0,openDay=0,countdown=0,poolId=0,needGiftNum=0}
+e.__index=e
+function e.New(a,i,o,h,s,n)
+local t={}
+setmetatable(t,e)
+t.id=a
+t.stage=i
+t.openDay=o
+t.countdown=h
+t.poolId=s
+t.needGiftNum=n
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.stage=a[2]
+t.openDay=a[3]
+t.countdown=a[4]
+t.poolId=a[5]
+t.needGiftNum=a[6]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/activity/DTRedEnvelopeEntityTableData')
+end
+return e 

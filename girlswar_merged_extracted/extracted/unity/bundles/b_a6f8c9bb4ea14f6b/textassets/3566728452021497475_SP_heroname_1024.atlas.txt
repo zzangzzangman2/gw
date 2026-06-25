@@ -1,0 +1,11 @@
+SP_heroname_1024.png
+size:326,209
+filter:Linear,Linear
+images/1024
+bounds:2,141,322,66
+offsets:1,2,327,70
+images/ssr
+bounds:141,60,153,79
+images/t3
+bounds:2,2,137,137
+offsets:31,32,214,200

@@ -1,0 +1,62 @@
+
+?
+ActSelfMarry.protoCommons.protoFight.protoFormation.proto"
+PRT_SELFMARRY_DRAW_INFO_REQ"v
+PRT_SELFMARRY_DRAW_INFO_RESP
+leftTime (RleftTime
+
+drawNumber (R
+drawNumber
+multiple (Rmultiple"e
+PRT_SELFMARRY_DRAW_REQ#
+type (2.ENUM_DRAW_TYPERtype&
+isCostCurrency (RisCostCurrency"?
+PRT_SELFMARRY_DRAW_RESP#
+type (2.ENUM_DRAW_TYPERtype
+
+drawNumber (R
+drawNumber
+multiple (Rmultiple'
+awards (2.PRT_ONCE_AWARDRawards"
+PRT_SELFMARRY_SHOP_REQ"j
+PRT_SELFMARRY_SHOP_RESP/
+itemInfo (2.PRT_SELFMARRY_ITEMRitemInfo
+
+isFirstDay (R
+isFirstDay"=
+!PRT_SELFMARRY_FREE_GIFT_AWARD_REQ
+giftDid (RgiftDid"[
+"PRT_SELFMARRY_FREE_GIFT_AWARD_RESP5
+giftBuyInfo (2.PRT_SELFMARRY_ITEMRgiftBuyInfo"h
+PRT_SELFMARRY_ITEM
+giftDid (RgiftDid
+buyTimes (RbuyTimes
+	resetTime (R	resetTime"
+PRT_SELFMARRY_BELIEF_INFO_REQ"T
+PRT_SELFMARRY_BELIEF_INFO_RESP
+ringDid (RringDid
+targets (Rtargets"7
+PRT_SELFMARRY_BELIEF_DRAW_REQ
+target (Rtarget"8
+PRT_SELFMARRY_BELIEF_DRAW_RESP
+target (Rtarget"
+PRT_SELFMARRY_ANIMGROUPS_SYN"
+PRT_SELFMARRY_CHANCEL_REQ"6
+PRT_SELFMARRY_CHANCEL_RESP
+roundId (RroundId"?
+PRT_SELFMARRY_FIGHT_BEFORE_REQ
+mapDid (RmapDidG
+formationPositions (2.PRT_FORMATION_POSITIONRformationPositionsQ
+formationAlterPositions (2.PRT_FORMATION_POSITIONRformationAlterPositions"R
+PRT_SELFMARRY_FIGHT_BEFORE_RESP/
+
+beforeInfo (2.PRT_FIGHT_PLAYR
+beforeInfo"J
+PRT_SELFMARRY_FIGHT_REQ/
+
+battleInfo (2.PRT_FIGHT_PLAYR
+battleInfo"W
+PRT_SELFMARRY_FIGHT_RESP
+invalid (Rinvalid!
+award (2.PRT_FAWARDRawardB
+com.next1b.nextsvr.protobproto3

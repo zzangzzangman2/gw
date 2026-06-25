@@ -1,0 +1,7 @@
+t.png
+size:512,512
+filter:Linear,Linear
+images/effect/effect_4
+bounds:2,2,214,200
+images/t_2
+bounds:2,204,496,275

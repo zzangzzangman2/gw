@@ -1,0 +1,27 @@
+local e=
+{
+ByIdx={
+{1,2,"fastBattleExpRate","PrivilegesDesc_1",1},
+{2,2,"fastBattleGoldRate","PrivilegesDesc_2",2},
+{3,1,"fastBattleFreetimes","PrivilegesDesc_3",3},
+{4,1,"fastBattleBuytimes","PrivilegesDesc_4",4},
+{5,1,"goldBuyTimes","PrivilegesDesc_5",6},
+{6,1,"bossBuyTimes","PrivilegesDesc_6",7},
+{7,1,"moonResignTimes","PrivilegesDesc_7",8},
+{8,3,"idleSecondMax","PrivilegesDesc_8",9},
+{9,2,"buildingRate1","PrivilegesDesc_9",10},
+{10,2,"buildingRate3","PrivilegesDesc_10",11},
+{11,2,"buildingRate6","PrivilegesDesc_11",12},
+{12,2,"buildingRate2","PrivilegesDesc_12",13},
+{13,2,"buildingRate4","PrivilegesDesc_13",14},
+{14,2,"buildingRate5","PrivilegesDesc_14",15},
+{15,1,"cityRandomMax","PrivilegesDesc_15",16},
+{16,2,"attack","PrivilegesDesc_16",17},
+{17,2,"defence","PrivilegesDesc_17",18},
+{18,2,"hp","PrivilegesDesc_18",19},
+{19,2,"first","PrivilegesDesc_19",20},
+{20,1,"commShopItemNum","PrivilegesDesc_20",5}
+},
+Len=20
+}
+return e 

@@ -1,0 +1,7 @@
+
+?
+ActEliteDrop.proto"
+PRT_ELITE_DROP_INFO_REQ"6
+PRT_ELITE_DROP_INFO_RESP
+leftTime (RleftTimeB
+com.next1b.nextsvr.protobproto3

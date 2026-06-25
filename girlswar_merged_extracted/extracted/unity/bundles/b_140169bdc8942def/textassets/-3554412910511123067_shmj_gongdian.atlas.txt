@@ -1,0 +1,13 @@
+shmj_gongdian.png
+size:512,512
+filter:Linear,Linear
+scale:0.7
+c1
+bounds:2,2,273,258
+c2
+bounds:277,26,17,23
+offsets:0,0,18,24
+c3
+bounds:277,51,209,174
+offsets:4,6,216,185
+rotate:90

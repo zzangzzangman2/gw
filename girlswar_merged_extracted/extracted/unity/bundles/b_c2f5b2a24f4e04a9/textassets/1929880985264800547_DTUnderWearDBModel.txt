@@ -1,0 +1,224 @@
+local i=nil
+local t={isLoadFull=false,isLoadIO=false}
+local e=t
+local a={};
+local o={};
+local h='lkjaljaaasrte'
+function t.LoadList()
+if(GameInit.ServerLoadTable)then
+local t=e.DeserializeFromJson()
+e.InitRequire(t)
+e.isLoadIO=false
+else
+if GameTools.ClientIsSupportIOLoad()==false then
+e.isLoadIO=false
+return
+end
+if e.isLoadIO then
+e.InitIO()
+else
+end
+end
+end
+function t.InitIO()
+local a,t
+if CS.UnityEngine.Application.platform==CS.UnityEngine.RuntimePlatform.WindowsEditor or CS.UnityEngine.Application.platform==CS.UnityEngine.RuntimePlatform.OSXEditor then
+if CS.YouYou.MacroDefine.DISABLE_ASSETBUNDLE then
+local e=CS.UnityEngine.Application.dataPath
+a=e..'/Download/IO/underwear/DTUnderWearEntityTableDataHeader.bigd'
+t=e..'/Download/IO/underwear/DTUnderWearEntityTableData.bigd'
+else
+a=e.GetFilePath('/download/config/underwear/DTUnderWearEntityTableDataHeader.bigd')
+t=e.GetFilePath('/download/config/underwear/DTUnderWearEntityTableData.bigd')
+end
+else
+a=e.GetFilePath('/download/config/underwear/DTUnderWearEntityTableDataHeader.bigd')
+t=e.GetFilePath('/download/config/underwear/DTUnderWearEntityTableData.bigd')
+end
+e.headPath=a
+e.dataPath=t
+e.GetIOArr()
+end
+function t.GetFilePath(t)
+local o=CS.UnityEngine.Application.persistentDataPath
+local e=o..t
+local a=io.open(e,'r')
+if a then
+a:close()
+return e
+else
+return o..'/buildCfg'..t
+end
+end
+function t.GetIOArr()
+if e.DataTableHeader then
+return
+end
+e.DataTableHeader=require('Common/DataTableHeader'):New()
+e.DataTableHeader.encrypt=false
+e.DataTableHeader:LoadFile(e.headPath)
+end
+function t.InitRequire(n)
+a={}
+o={}
+i=require('DataNode/DataTable/Create/underwear/DTUnderWearEntity')
+if n==nil then
+n=i.GetArr()
+end
+for e=1,n.Len do
+local e=n.ByIdx[e];
+local e=i.NewFromArrItem(e)
+a[#a+1]=e
+o[e.id]=e
+end
+i=nil
+if GameInit.ServerLoadTable==false then
+t:RemoveRequiredByName('DataNode/DataTable/Create/underwear/DTUnderWearEntityTableData')
+t:RemoveRequiredByName('DataNode/DataTable/Create/underwear/DTUnderWearEntity')
+end
+e.isLoadFull=true
+end
+function t:RemoveRequiredByName(e)
+for t,a in pairs(package.preload)do
+if string.find(tostring(t),e)==1 then
+package.preload[t]=nil
+end
+end
+for t,a in pairs(package.loaded)do
+if string.find(tostring(t),e)==1 then
+package.loaded[t]=nil
+end
+end
+end
+function t.GetList()
+if not e.isLoadIO then
+if e.isLoadFull==false then
+e.InitRequire()
+end
+return table.lightCopyList(a)
+else
+if e.isLoadFull then
+return a
+else
+e.GetListByIO()
+e.isLoadFull=true
+
+return a
+end
+end
+end
+function t.GetListByIO()
+a={}
+o={}
+local t=io.open(e.dataPath,'rb')
+local s={}
+for a,e in pairs(e.DataTableHeader.idsMap)do
+t:seek('set',e.begin)
+local e=t:read(e.len)
+table.insert(s,e)
+end
+t:close()
+local t
+local i,n
+if e.DataTableHeader.encrypt then
+t=CS.XXTEAUtil.DecryptGetArray(s,h)
+i=t.Length-1
+n=0
+else
+t=s
+i=#t
+n=1
+end
+for e=n,i do
+local e=JsonUtil.decode(t[e])
+a[#a+1]=e
+o[e.id]=e
+end
+end
+function t.GetEntity(i)
+if e.isLoadIO then
+local t=o[i]
+if e.isLoadFull and t==nil then
+return nil
+end
+if t==nil then
+local n=e.DataTableHeader.idsMap[i]
+if n==nil then
+return nil
+end
+t=e.DataTableHeader:GetEntityByHeadData(e.dataPath,h,n)
+a[#a+1]=t
+o[i]=t
+if#a==e.DataTableHeader.len then
+e.isLoadFull=true
+end
+return t
+else
+return t
+end
+else
+if e.isLoadFull==false then
+e.InitRequire()
+end
+return o[i]
+end
+end
+function t.Clear()
+e.isLoadFull=false
+a={}
+o={}
+end
+if GameInit==nil then
+e.index=require('DataNode/DataTable/Create/underwear/DTUnderWearEntityIndex')
+e.index.Init()
+elseif GameInit.ServerLoadTable==false then
+e.index=require('DataNode/DataTable/Create/underwear/DTUnderWearEntityIndex')
+e.index.Init()
+end
+function t.GetByIndex(t,i)
+local t=e.index.GetByIndex(t,tostring(i))
+if t==nil then
+return{}
+end
+if not e.isLoadIO then
+if e.isLoadFull==false then
+e.InitRequire()
+end
+end
+local i={}
+local n={}
+for s=1,#t do
+local a=o[tonumber(t[s])]
+if a then
+table.insert(i,a)
+else
+table.insert(n,e.DataTableHeader.idsMap[tonumber(t[s])])
+end
+end
+if#n>0 then
+local e=e.DataTableHeader:GetEntitiesByIds(e.dataPath,h,n)
+for t=1,#e do
+local e=e[t]
+a[#a+1]=e
+o[e.id]=e
+table.insert(i,e)
+end
+table.sort(i,function(t,e)return t.id<e.id end)
+end
+return i
+end
+function t.Get_ColorStarPosSuitType(a,i,o,e)
+local e=a..'&bigd&'..i..'&bigd&'..o..'&bigd&'..e
+return t.GetByIndex('index_1',e)
+end
+function t.SerializeToJson()
+i=require('DataNode/DataTable/Create/underwear/DTUnderWearEntity')
+local e=i.GetArr()
+local e=JsonUtil.encode(e)
+GameInit.WriteFile("DTUnderWearEntityData.txt",e)
+end
+function t.DeserializeFromJson()
+local e=GameInit.ReadJsonData("DTUnderWearEntityData.txt")
+return e
+end
+return t 

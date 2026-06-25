@@ -1,0 +1,28 @@
+local e={id=0,goods=0,cost={{},{}},type=0,buyCount=0,chargeAward={{},{}}}
+e.__index=e
+function e.New(a,i,o,h,s,n)
+local t={}
+setmetatable(t,e)
+t.id=a
+t.goods=i
+t.cost=o
+t.type=h
+t.buyCount=s
+t.chargeAward=n
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.goods=a[2]
+t.cost=a[3]
+t.type=a[4]
+t.buyCount=a[5]
+t.chargeAward=a[6]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/activity/DTUReggGiftEntityTableData')
+end
+return e 

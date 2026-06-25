@@ -1,0 +1,102 @@
+local a={id=0,name="",mapName="",mapFullName="",firstStage=0,bigStage=0,smallStage=0,prefabId=0,HeroInitColor_R=0,HeroInitColor_G=0,HeroInitColor_B=0,mapDifficulty=0,mapBasepImage="",heroHead=0,monsterInfo1=0,recLevel=0,chapterId=0,mapType=0,subType=0,nextMap=0,unlockType=0,unlockPara="",new2unlockType=0,new2unlockPara="",new2unlockTypeNew=0,new2unlockParaNew="",proposalLv=0,suppress=0,firstDrop={{},{}},drop={{},{}},new1Drop={{},{}},dropFireworks={{},{}},dropWeightAct={{},{}},fastFightCount=0,fightCost={},dropPercent=0,storyAward={{},{}},newStoryAward={{},{}},new2StoryAward={{},{}},new3StoryAward={{},{}},checkFight=0,replay=0,bossSign=0}
+a.__index=a
+function a.New(y,x,q,t,N,O,I,A,z,_,E,T,H,C,R,Y,F,W,M,D,L,U,P,S,j,u,l,r,d,h,o,i,n,s,c,p,m,k,b,g,v,f,w)
+local e={}
+setmetatable(e,a)
+e.id=y
+e.name=x
+e.mapName=q
+e.mapFullName=t
+e.firstStage=N
+e.bigStage=O
+e.smallStage=I
+e.prefabId=A
+e.HeroInitColor_R=z
+e.HeroInitColor_G=_
+e.HeroInitColor_B=E
+e.mapDifficulty=T
+e.mapBasepImage=H
+e.heroHead=C
+e.monsterInfo1=R
+e.recLevel=Y
+e.chapterId=F
+e.mapType=W
+e.subType=M
+e.nextMap=D
+e.unlockType=L
+e.unlockPara=U
+e.new2unlockType=P
+e.new2unlockPara=S
+e.new2unlockTypeNew=j
+e.new2unlockParaNew=u
+e.proposalLv=l
+e.suppress=r
+e.firstDrop=d
+e.drop=h
+e.new1Drop=o
+e.dropFireworks=i
+e.dropWeightAct=n
+e.fastFightCount=s
+e.fightCost=c
+e.dropPercent=p
+e.storyAward=m
+e.newStoryAward=k
+e.new2StoryAward=b
+e.new3StoryAward=g
+e.checkFight=v
+e.replay=f
+e.bossSign=w
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.name=t[2]
+e.mapName=t[3]
+e.mapFullName=t[4]
+e.firstStage=t[5]
+e.bigStage=t[6]
+e.smallStage=t[7]
+e.prefabId=t[8]
+e.HeroInitColor_R=t[9]
+e.HeroInitColor_G=t[10]
+e.HeroInitColor_B=t[11]
+e.mapDifficulty=t[12]
+e.mapBasepImage=t[13]
+e.heroHead=t[14]
+e.monsterInfo1=t[15]
+e.recLevel=t[16]
+e.chapterId=t[17]
+e.mapType=t[18]
+e.subType=t[19]
+e.nextMap=t[20]
+e.unlockType=t[21]
+e.unlockPara=t[22]
+e.new2unlockType=t[23]
+e.new2unlockPara=t[24]
+e.new2unlockTypeNew=t[25]
+e.new2unlockParaNew=t[26]
+e.proposalLv=t[27]
+e.suppress=t[28]
+e.firstDrop=t[29]
+e.drop=t[30]
+e.new1Drop=t[31]
+e.dropFireworks=t[32]
+e.dropWeightAct=t[33]
+e.fastFightCount=t[34]
+e.fightCost=t[35]
+e.dropPercent=t[36]
+e.storyAward=t[37]
+e.newStoryAward=t[38]
+e.new2StoryAward=t[39]
+e.new3StoryAward=t[40]
+e.checkFight=t[41]
+e.replay=t[42]
+e.bossSign=t[43]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/maps/DTEliteMapsEntityTableData')
+end
+return a 

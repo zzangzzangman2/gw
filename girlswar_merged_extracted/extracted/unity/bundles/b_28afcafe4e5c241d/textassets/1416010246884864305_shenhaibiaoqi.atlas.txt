@@ -1,0 +1,9 @@
+shenhaibiaoqi.png
+size:1024,1024
+filter:Linear,Linear
+hw
+bounds:2,2,731,351
+offsets:4,4,739,356
+shenhai1
+bounds:2,355,788,390
+offsets:28,30,840,439

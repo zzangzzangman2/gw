@@ -1,0 +1,10 @@
+activityname_14.png
+size:256,256
+filter:Linear,Linear
+000
+bounds:2,88,128,128
+zytb_01
+bounds:2,2,85,84
+offsets:0,0,89,85
+zytb_02
+bounds:88,14,42,42

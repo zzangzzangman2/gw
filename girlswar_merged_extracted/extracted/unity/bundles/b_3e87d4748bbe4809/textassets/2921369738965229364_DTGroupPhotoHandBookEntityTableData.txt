@@ -1,0 +1,13 @@
+local e=
+{
+ByIdx={
+{501,"UIGroupPhoto8","Assets/Download/UI/UIPrefabAndRes/ActGroupPhoto_Ext_2/dhz_dhzzpt.png",1,"UI_ActGroupPhoto_Complete","Assets/Download/UI/UIPrefabAndRes/ActGroupPhoto_Ext_1/CompletePhotoTw2Year_Normal/bgyx_img{0}",4},
+{502,"UIFireworksParty1","Assets/Download/UI/UIPrefabAndRes/ActGroupPhoto_Ext_2/dhz_yhdh.png",1,"UI_ActGroupPhoto_FireWorks","Assets/Download/UI/UIPrefabAndRes/ActGroupPhoto_Ext_1/CompletePhotoFireWorks/yhdh_banner3",1},
+{507,"UIGroupPhoto15","Assets/Download/UI/UIPrefabAndRes/ActGroupPhoto_Ext_2/dhz_dhzzpt05.png",1,"UI_ActGroupPhoto_Complete","Assets/Download/UI/UIPrefabAndRes/ActGroupPhoto_Ext_9/CompletePhotoKR3Year/bgyx_img{0}",5},
+{508,"UIGroupPhoto16","Assets/Download/UI/UIPrefabAndRes/ActGroupPhoto_Ext_2/dhz_dhzzpt06.png",1,"UI_ActGroupPhoto_Complete","Assets/Download/UI/UIPrefabAndRes/ActGroupPhoto_Ext_9/CompletePhotoKR3Year/bgyx_img{0}_gold",5},
+{513,"UIGroupPhoto17","Assets/Download/UI/UIPrefabAndRes/ActGroupPhoto_Ext_2/dhz_dhzzpt13.png",1,"UI_ActGroupPhoto_Complete","Assets/Download/UI/UIPrefabAndRes/ActGroupPhoto_Ext_13/CompletePhoto3.5Year/bgyx_img{0}",5},
+{514,"UIGroupPhoto18","Assets/Download/UI/UIPrefabAndRes/ActGroupPhoto_Ext_2/dhz_dhzzpt14.png",1,"UI_ActGroupPhoto_Complete","Assets/Download/UI/UIPrefabAndRes/ActGroupPhoto_Ext_13/CompletePhoto3.5Year/bgyx_img{0}_gold",5}
+},
+Len=6
+}
+return e 

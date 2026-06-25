@@ -1,0 +1,28 @@
+local e={id=0,needCount=0,reward={{},{}},text="",jump=0,listNum=0}
+e.__index=e
+function e.New(a,i,o,h,s,n)
+local t={}
+setmetatable(t,e)
+t.id=a
+t.needCount=i
+t.reward=o
+t.text=h
+t.jump=s
+t.listNum=n
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.needCount=a[2]
+t.reward=a[3]
+t.text=a[4]
+t.jump=a[5]
+t.listNum=a[6]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/activity/DTUrTaskEntityTableData')
+end
+return e 

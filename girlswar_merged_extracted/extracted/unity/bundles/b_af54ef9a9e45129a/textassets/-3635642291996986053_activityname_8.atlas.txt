@@ -1,0 +1,10 @@
+activityname_8.png
+size:128,128
+filter:Linear,Linear
+b1
+bounds:2,34,77,90
+offsets:0,0,78,90
+b2
+bounds:2,2,30,45
+offsets:1,3,33,48
+rotate:90

@@ -1,0 +1,23 @@
+
+?
+ActDrawHeroWeek.protoCommons.proto"Q
+PRT_DRAW_HERO_WEEK_GIFT
+giftDid (RgiftDid
+	giftCount (R	giftCount"
+PRT_DRAW_HERO_WEEK_INFO_REQ"q
+PRT_DRAW_HERO_WEEK_INFO_RESP
+leftTime (RleftTime
+tasks (2	.PRT_TASKRtasks
+cycle (Rcycle"=
+!PRT_DRAW_HERO_WEEK_TASK_AWARD_REQ
+taskDid (RtaskDid">
+"PRT_DRAW_HERO_WEEK_TASK_AWARD_RESP
+taskDid (RtaskDid"
+PRT_DRAW_HERO_WEEK_GIFT_REQ"N
+PRT_DRAW_HERO_WEEK_GIFT_RESP.
+gifts (2.PRT_DRAW_HERO_WEEK_GIFTRgifts"=
+!PRT_DRAW_HERO_WEEK_GIFT_AWARD_REQ
+giftDid (RgiftDid"R
+"PRT_DRAW_HERO_WEEK_GIFT_AWARD_RESP,
+gift (2.PRT_DRAW_HERO_WEEK_GIFTRgiftB
+com.next1b.nextsvr.protobproto3

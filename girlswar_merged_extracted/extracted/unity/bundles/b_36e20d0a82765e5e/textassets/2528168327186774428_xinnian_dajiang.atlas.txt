@@ -1,0 +1,16 @@
+xinnian_dajiang.png
+size:256,256
+filter:Linear,Linear
+dajiang
+bounds:2,28,73,75
+huangguang03
+bounds:2,105,149,149
+offsets:9,9,168,167
+huangsexing
+bounds:2,2,24,25
+offsets:1,0,25,25
+rotate:90
+x2
+bounds:77,30,73,58
+offsets:1,1,75,60
+rotate:90

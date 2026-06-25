@@ -1,0 +1,38 @@
+local a=require('DataNode/DataTable/Create/activity/DTGoldBoxTaskpoolEntity')
+local e={}
+local i=e
+local t={};
+local o={};
+function e.LoadList()
+local e
+if(GameInit.ServerLoadTable)then
+e=i.DeserializeFromJson()
+else
+e=a.GetArr()
+end
+for i=1,e.Len do
+local e=e.ByIdx[i];
+local e=a.NewFromArrItem(e)
+if GameInit.DebugLog then
+e=table.readonly(e)
+end
+t[#t+1]=e
+o[e.id]=e
+end
+end
+function e.GetList()
+return t
+end
+function e.GetEntity(e)
+return o[e]
+end
+function e.SerializeToJson()
+local e=a.GetArr()
+local e=JsonUtil.encode(e)
+GameInit.WriteFile("DTGoldBoxTaskpoolEntityData.txt",e)
+end
+function e.DeserializeFromJson()
+local e=GameInit.ReadJsonData("DTGoldBoxTaskpoolEntityData.txt")
+return e
+end
+return e 

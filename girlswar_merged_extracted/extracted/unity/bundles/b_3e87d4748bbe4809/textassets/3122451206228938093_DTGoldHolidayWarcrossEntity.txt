@@ -1,0 +1,26 @@
+local e={id=0,nextcount=0,prefabId=0,heroId=0,homeVoice=0}
+e.__index=e
+function e.New(o,n,a,s,i)
+local t={}
+setmetatable(t,e)
+t.id=o
+t.nextcount=n
+t.prefabId=a
+t.heroId=s
+t.homeVoice=i
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.nextcount=a[2]
+t.prefabId=a[3]
+t.heroId=a[4]
+t.homeVoice=a[5]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/activity/DTGoldHolidayWarcrossEntityTableData')
+end
+return e 

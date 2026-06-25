@@ -1,0 +1,14 @@
+activityicon_303.png
+size:128,128
+filter:Linear,Linear
+1
+bounds:69,36,47,27
+offsets:1,1,49,29
+rotate:90
+2
+bounds:2,6,72,77
+offsets:1,0,73,77
+3
+bounds:75,2,32,18
+offsets:1,1,34,20
+rotate:90

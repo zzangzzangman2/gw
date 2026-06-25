@@ -1,0 +1,21 @@
+
+?
+ActHuaHuo.proto"
+PRT_HUA_HUO_INFO_REQ"^
+PRT_HUA_HUO_INFO_RESP-
+heroList (2.PRT_HUA_HUO_HERORheroList
+number (Rnumber"`
+PRT_HUA_HUO_EXCHANGE_REQ"
+fireFlowerId (RfireFlowerId 
+exchangeNum (RexchangeNum"Z
+PRT_HUA_HUO_EXCHANGE_RESP%
+hero (2.PRT_HUA_HUO_HERORhero
+number (Rnumber"?
+PRT_HUA_HUO_HERO"
+fireFlowerId (RfireFlowerId
+heroDid (RheroDid
+	rankLevel (R	rankLevel
+prof (Rprof 
+maxExchange (RmaxExchange
+status (RstatusB
+com.next1b.nextsvr.protobproto3

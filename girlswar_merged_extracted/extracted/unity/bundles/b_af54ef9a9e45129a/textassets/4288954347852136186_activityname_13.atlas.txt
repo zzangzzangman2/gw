@@ -1,0 +1,11 @@
+activityname_13.png
+size:512,512
+filter:Linear,Linear
+000
+bounds:2,97,214,200
+zytb_03
+bounds:218,209,88,79
+offsets:5,0,93,85
+rotate:90
+zytb_04
+bounds:218,177,23,31

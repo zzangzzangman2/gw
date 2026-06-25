@@ -1,0 +1,48 @@
+local a={id=0,transportTime=0,lootTime=0,orderNum=0,fireNum=0,orderLogNum=0,playerLogNum=0,matchOrder=0,freeRefresh=0,refreshCost={},refreshMinTime=0,tipsColor=0,orderBuffMinTime=0,bossAtkTimes=0,bossIsOpen=0,matchOrderWhenBoss=0}
+a.__index=a
+function a.New(h,u,d,t,c,f,y,w,p,m,l,n,i,o,s,r)
+local e={}
+setmetatable(e,a)
+e.id=h
+e.transportTime=u
+e.lootTime=d
+e.orderNum=t
+e.fireNum=c
+e.orderLogNum=f
+e.playerLogNum=y
+e.matchOrder=w
+e.freeRefresh=p
+e.refreshCost=m
+e.refreshMinTime=l
+e.tipsColor=n
+e.orderBuffMinTime=i
+e.bossAtkTimes=o
+e.bossIsOpen=s
+e.matchOrderWhenBoss=r
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.transportTime=t[2]
+e.lootTime=t[3]
+e.orderNum=t[4]
+e.fireNum=t[5]
+e.orderLogNum=t[6]
+e.playerLogNum=t[7]
+e.matchOrder=t[8]
+e.freeRefresh=t[9]
+e.refreshCost=t[10]
+e.refreshMinTime=t[11]
+e.tipsColor=t[12]
+e.orderBuffMinTime=t[13]
+e.bossAtkTimes=t[14]
+e.bossIsOpen=t[15]
+e.matchOrderWhenBoss=t[16]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/activity/DTIslandEscortBaseEntityTableData')
+end
+return a 

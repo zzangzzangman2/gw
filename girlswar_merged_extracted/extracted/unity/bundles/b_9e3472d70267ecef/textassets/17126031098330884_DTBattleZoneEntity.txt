@@ -1,0 +1,50 @@
+local a={id=0,playGroup_1=0,playGroup_2=0,playGroup_3=0,playGroup_4=0,playGroup_9=0,playGroup_10=0,playGroup_13=0,playGroup_14=0,playGroup_15=0,playGroup_16=0,playGroup_17=0,playGroup_18=0,playGroup_19=0,playGroup_20=0,playGroup_21=0,playGroup_22=0}
+a.__index=a
+function a.New(h,u,d,t,m,c,w,p,y,v,f,l,n,i,o,s,r)
+local e={}
+setmetatable(e,a)
+e.id=h
+e.playGroup_1=u
+e.playGroup_2=d
+e.playGroup_3=t
+e.playGroup_4=m
+e.playGroup_9=c
+e.playGroup_10=w
+e.playGroup_13=p
+e.playGroup_14=y
+e.playGroup_15=v
+e.playGroup_16=f
+e.playGroup_17=l
+e.playGroup_18=n
+e.playGroup_19=i
+e.playGroup_20=o
+e.playGroup_21=s
+e.playGroup_22=r
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.playGroup_1=t[2]
+e.playGroup_2=t[3]
+e.playGroup_3=t[4]
+e.playGroup_4=t[5]
+e.playGroup_9=t[6]
+e.playGroup_10=t[7]
+e.playGroup_13=t[8]
+e.playGroup_14=t[9]
+e.playGroup_15=t[10]
+e.playGroup_16=t[11]
+e.playGroup_17=t[12]
+e.playGroup_18=t[13]
+e.playGroup_19=t[14]
+e.playGroup_20=t[15]
+e.playGroup_21=t[16]
+e.playGroup_22=t[17]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/constant/DTBattleZoneEntityTableData')
+end
+return a 

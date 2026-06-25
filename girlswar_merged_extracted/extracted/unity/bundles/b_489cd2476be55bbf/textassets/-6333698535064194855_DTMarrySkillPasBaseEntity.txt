@@ -1,0 +1,22 @@
+local e={id=0,costItem=0,zeroLevel={{},{}}}
+e.__index=e
+function e.New(o,a,i)
+local t={}
+setmetatable(t,e)
+t.id=o
+t.costItem=a
+t.zeroLevel=i
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.costItem=a[2]
+t.zeroLevel=a[3]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/marry/DTMarrySkillPasBaseEntityTableData')
+end
+return e 

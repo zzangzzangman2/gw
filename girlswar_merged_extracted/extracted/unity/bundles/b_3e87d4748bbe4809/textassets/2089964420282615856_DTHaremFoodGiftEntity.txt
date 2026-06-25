@@ -1,0 +1,36 @@
+local a={id=0,goods=0,type=0,firstGift=0,nextGift=0,originalPrice=0,award={{},{}},stock=0,icon="",name=""}
+a.__index=a
+function a.New(n,r,s,t,l,u,d,h,o,i)
+local e={}
+setmetatable(e,a)
+e.id=n
+e.goods=r
+e.type=s
+e.firstGift=t
+e.nextGift=l
+e.originalPrice=u
+e.award=d
+e.stock=h
+e.icon=o
+e.name=i
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.goods=t[2]
+e.type=t[3]
+e.firstGift=t[4]
+e.nextGift=t[5]
+e.originalPrice=t[6]
+e.award=t[7]
+e.stock=t[8]
+e.icon=t[9]
+e.name=t[10]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/activity/DTHaremFoodGiftEntityTableData')
+end
+return a 

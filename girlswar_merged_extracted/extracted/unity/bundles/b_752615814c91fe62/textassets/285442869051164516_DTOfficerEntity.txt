@@ -1,0 +1,44 @@
+local a={id=0,next=0,previous=0,officerDesc="",officerName="",capIcon="",needLevel=0,needFight=0,needItem={},attrs={{},{}},addFirstValue=0,headFrameId=0,smallLevelShow=0,officerLevelShow=0}
+a.__index=a
+function a.New(s,l,r,t,u,m,f,w,c,d,i,o,n,h)
+local e={}
+setmetatable(e,a)
+e.id=s
+e.next=l
+e.previous=r
+e.officerDesc=t
+e.officerName=u
+e.capIcon=m
+e.needLevel=f
+e.needFight=w
+e.needItem=c
+e.attrs=d
+e.addFirstValue=i
+e.headFrameId=o
+e.smallLevelShow=n
+e.officerLevelShow=h
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.next=t[2]
+e.previous=t[3]
+e.officerDesc=t[4]
+e.officerName=t[5]
+e.capIcon=t[6]
+e.needLevel=t[7]
+e.needFight=t[8]
+e.needItem=t[9]
+e.attrs=t[10]
+e.addFirstValue=t[11]
+e.headFrameId=t[12]
+e.smallLevelShow=t[13]
+e.officerLevelShow=t[14]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/officer/DTOfficerEntityTableData')
+end
+return a 

@@ -1,0 +1,15 @@
+painting_1056_Back.png
+size:2048,1024
+filter:Linear,Linear
+bgb1
+bounds:500,129,357,151
+offsets:0,40,357,191
+bgb2
+bounds:0,280,1360,631
+offsets:0,97,1360,728
+bgb3
+bounds:0,13,499,267
+bgb4
+bounds:1361,0,911,531
+offsets:80,0,991,531
+rotate:90

@@ -1,0 +1,7 @@
+activityname_49.png
+size:128,64
+filter:Linear,Linear
+xin3
+bounds:62,35,23,24
+xinlihe
+bounds:2,2,58,57

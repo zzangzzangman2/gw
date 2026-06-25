@@ -1,0 +1,5 @@
+spine_fengling3.png
+size:256,256
+filter:Linear,Linear
+spkjs2
+bounds:2,2,173,189

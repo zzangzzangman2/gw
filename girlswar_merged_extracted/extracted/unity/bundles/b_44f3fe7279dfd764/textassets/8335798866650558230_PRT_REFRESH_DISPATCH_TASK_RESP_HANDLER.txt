@@ -1,0 +1,11 @@
+local t={}
+function t:OnHandle(e)
+local e=assert(GlobalPB.decode("PRT_REFRESH_DISPATCH_TASK_RESP",e));
+if(GameInit.GetDebugLogProto())then
+;
+;
+end
+ModulesInit.CollectiblesMgr:SynRefreshDispatchTask(e)
+return e
+end
+return t 

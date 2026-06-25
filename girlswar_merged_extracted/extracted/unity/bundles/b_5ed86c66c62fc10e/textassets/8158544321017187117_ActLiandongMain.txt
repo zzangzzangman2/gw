@@ -1,0 +1,13 @@
+
+?
+ActLiandongMain.proto"t
+PRT_LIANDONG_MAIN_ACTIVITY
+
+activityId (R
+activityId
+	startTime (R	startTime
+endTime (RendTime"
+PRT_LIANDONG_MAIN_INFO_REQ"N
+PRT_LIANDONG_MAIN_INFO_RESP/
+acts (2.PRT_LIANDONG_MAIN_ACTIVITYRactsB
+com.next1b.nextsvr.protobproto3

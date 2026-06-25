@@ -1,0 +1,28 @@
+local e={id=0,bigAward={},pointsAward={{},{}},quality=0,color=0,sortOrder=0}
+e.__index=e
+function e.New(a,i,o,h,s,n)
+local t={}
+setmetatable(t,e)
+t.id=a
+t.bigAward=i
+t.pointsAward=o
+t.quality=h
+t.color=s
+t.sortOrder=n
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.bigAward=a[2]
+t.pointsAward=a[3]
+t.quality=a[4]
+t.color=a[5]
+t.sortOrder=a[6]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/activity/DTActivityTarotAwardEntityTableData')
+end
+return e 

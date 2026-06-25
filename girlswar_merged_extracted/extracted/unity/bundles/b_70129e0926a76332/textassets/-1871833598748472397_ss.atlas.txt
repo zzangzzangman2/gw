@@ -1,0 +1,12 @@
+ss.png
+size:1024,512
+filter:Linear,Linear
+ss1
+bounds:2,138,14,43
+ss2
+bounds:2,41,608,394
+ss3
+bounds:2,183,15,43
+ss4
+bounds:611,2,433,193
+rotate:90

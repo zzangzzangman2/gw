@@ -1,0 +1,27 @@
+local e=
+{
+ByIdx={
+{1,"dailyIns_concern1","dailyIns_concern1_right","Assets/Download/UI/UIPrefabAndRes/Inspiration_Ext_5/qydt_img0101.png",{{20039,2}},"dailyIns_concern1_wrong","Assets/Download/UI/UIPrefabAndRes/Inspiration_Ext_5/qydt_img0102.png",{{20039,1}}},
+{2,"dailyIns_concern2","dailyIns_concern2_right","Assets/Download/UI/UIPrefabAndRes/Inspiration_Ext_5/qydt_img0201.png",{{20039,2}},"dailyIns_concern2_wrong","Assets/Download/UI/UIPrefabAndRes/Inspiration_Ext_5/qydt_img0202.png",{{20039,1}}},
+{3,"dailyIns_concern3","dailyIns_concern3_right","Assets/Download/UI/UIPrefabAndRes/Inspiration_Ext_5/qydt_img0301.png",{{20039,2}},"dailyIns_concern3_wrong","Assets/Download/UI/UIPrefabAndRes/Inspiration_Ext_5/qydt_img0302.png",{{20039,1}}},
+{4,"dailyIns_concern4","dailyIns_concern4_right","Assets/Download/UI/UIPrefabAndRes/Inspiration_Ext_5/qydt_img04.png",{{20039,2}},"dailyIns_concern4_wrong","Assets/Download/UI/UIPrefabAndRes/Inspiration_Ext_5/qydt_img05.png",{{20039,1}}},
+{5,"dailyIns_concern5","dailyIns_concern5_right","Assets/Download/UI/UIPrefabAndRes/Inspiration_Ext_5/qydt_img06.png",{{20039,2}},"dailyIns_concern5_wrong","Assets/Download/UI/UIPrefabAndRes/Inspiration_Ext_5/qydt_img04.png",{{20039,1}}},
+{6,"dailyIns_concern6","dailyIns_concern6_right","Assets/Download/UI/UIPrefabAndRes/Inspiration_Ext_5/qydt_img05.png",{{20010,2}},"dailyIns_concern6_wrong","Assets/Download/UI/UIPrefabAndRes/Inspiration_Ext_5/qydt_img06.png",{{20010,1}}},
+{7,"dailyIns_concern7","dailyIns_concern7_right","Assets/Download/UI/UIPrefabAndRes/Inspiration_Ext_5/qydt_img0701.png",{{20010,2}},"dailyIns_concern7_wrong","Assets/Download/UI/UIPrefabAndRes/Inspiration_Ext_5/qydt_img0702.png",{{20010,1}}},
+{8,"dailyIns_concern8","dailyIns_concern8_right","Assets/Download/UI/UIPrefabAndRes/Inspiration_Ext_5/qydt_img0801.png",{{20010,2}},"dailyIns_concern8_wrong","Assets/Download/UI/UIPrefabAndRes/Inspiration_Ext_5/qydt_img0802.png",{{20010,1}}},
+{9,"dailyIns_concern9","dailyIns_concern9_right","Assets/Download/UI/UIPrefabAndRes/Inspiration_Ext_5/qydt_img0901.png",{{20010,2}},"dailyIns_concern9_wrong","Assets/Download/UI/UIPrefabAndRes/Inspiration_Ext_5/qydt_img0902.png",{{20010,1}}},
+{10,"dailyIns_concern10","dailyIns_concern10_right","Assets/Download/UI/UIPrefabAndRes/Inspiration_Ext_5/qydt_img1001.png",{{20010,2}},"dailyIns_concern10_wrong","Assets/Download/UI/UIPrefabAndRes/Inspiration_Ext_5/qydt_img1002.png",{{20010,1}}},
+{11,"dailyIns_concern11","dailyIns_concern11_right","Assets/Download/UI/UIPrefabAndRes/Inspiration_Ext_5/qydt_img1101.png",{{10014,2}},"dailyIns_concern11_wrong","Assets/Download/UI/UIPrefabAndRes/Inspiration_Ext_5/qydt_img1102.png",{{10014,1}}},
+{12,"dailyIns_concern12","dailyIns_concern12_right","Assets/Download/UI/UIPrefabAndRes/Inspiration_Ext_5/qydt_img1201.png",{{10014,2}},"dailyIns_concern12_wrong","Assets/Download/UI/UIPrefabAndRes/Inspiration_Ext_5/qydt_img1202.png",{{10014,1}}},
+{13,"dailyIns_concern13","dailyIns_concern13_right","Assets/Download/UI/UIPrefabAndRes/Inspiration_Ext_5/qydt_img1301.png",{{10014,2}},"dailyIns_concern13_wrong","Assets/Download/UI/UIPrefabAndRes/Inspiration_Ext_5/qydt_img1302.png",{{10014,1}}},
+{14,"dailyIns_concern14","dailyIns_concern14_right","Assets/Download/UI/UIPrefabAndRes/Inspiration_Ext_5/qydt_img1401.png",{{10014,2}},"dailyIns_concern14_wrong","Assets/Download/UI/UIPrefabAndRes/Inspiration_Ext_5/qydt_img1402.png",{{10014,1}}},
+{15,"dailyIns_concern15","dailyIns_concern15_right","Assets/Download/UI/UIPrefabAndRes/Inspiration_Ext_5/qydt_img16.png",{{10014,2}},"dailyIns_concern15_wrong","Assets/Download/UI/UIPrefabAndRes/Inspiration_Ext_5/qydt_img15.png",{{10014,1}}},
+{16,"dailyIns_concern16","dailyIns_concern16_right","Assets/Download/UI/UIPrefabAndRes/Inspiration_Ext_5/qydt_img15.png",{{20002,6}},"dailyIns_concern16_wrong","Assets/Download/UI/UIPrefabAndRes/Inspiration_Ext_5/qydt_img16.png",{{20002,3}}},
+{17,"dailyIns_concern17","dailyIns_concern17_right","Assets/Download/UI/UIPrefabAndRes/Inspiration_Ext_5/qydt_img17.png",{{20002,6}},"dailyIns_concern17_wrong","Assets/Download/UI/UIPrefabAndRes/Inspiration_Ext_5/qydt_img18.png",{{20002,3}}},
+{18,"dailyIns_concern18","dailyIns_concern18_right","Assets/Download/UI/UIPrefabAndRes/Inspiration_Ext_5/qydt_img18.png",{{20002,6}},"dailyIns_concern18_wrong","Assets/Download/UI/UIPrefabAndRes/Inspiration_Ext_5/qydt_img19.png",{{20002,3}}},
+{19,"dailyIns_concern19","dailyIns_concern19_right","Assets/Download/UI/UIPrefabAndRes/Inspiration_Ext_5/qydt_img19.png",{{20002,6}},"dailyIns_concern19_wrong","Assets/Download/UI/UIPrefabAndRes/Inspiration_Ext_5/qydt_img17.png",{{20002,3}}},
+{20,"dailyIns_concern20","dailyIns_concern20_right","Assets/Download/UI/UIPrefabAndRes/Inspiration_Ext_5/qydt_img2001.png",{{20002,6}},"dailyIns_concern20_wrong","Assets/Download/UI/UIPrefabAndRes/Inspiration_Ext_5/qydt_img2002.png",{{20002,3}}}
+},
+Len=20
+}
+return e 

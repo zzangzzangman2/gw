@@ -1,0 +1,13 @@
+shmj_mojingxuanwo.png
+size:512,512
+filter:Linear,Linear
+scale:0.75
+1
+bounds:2,334,151,145
+offsets:30,59,208,287
+a2
+bounds:2,2,312,292
+offsets:0,0,312,293
+t6(1)
+bounds:155,296,222,183
+offsets:12,9,246,197

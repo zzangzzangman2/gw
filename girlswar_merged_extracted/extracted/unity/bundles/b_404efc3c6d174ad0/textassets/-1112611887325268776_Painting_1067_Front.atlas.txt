@@ -1,0 +1,15 @@
+Painting_1067_Front.png
+size:1024,1024
+filter:Linear,Linear
+effect/effect_2
+bounds:0,0,397,391
+effect/effect_4
+bounds:706,84,214,200
+rotate:90
+effect/hds_c_2
+bounds:513,549,355,329
+rotate:90
+effect/lizi__00003
+bounds:0,392,512,512
+effect/m1_00000
+bounds:398,84,307,307

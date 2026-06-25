@@ -1,0 +1,15 @@
+shmj_shangdianbiaoti.png
+size:512,256
+filter:Linear,Linear
+n
+bounds:0,76,274,75
+offsets:11,0,300,76
+n1
+bounds:0,0,127,75
+offsets:11,0,300,76
+n2
+bounds:275,76,202,75
+offsets:63,0,300,76
+n3
+bounds:128,0,126,75
+offsets:159,0,300,76

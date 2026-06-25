@@ -1,0 +1,26 @@
+local e={id=0,cycleTimes=0,item={},boxPoint={{},{}},arena={}}
+e.__index=e
+function e.New(o,n,a,s,i)
+local t={}
+setmetatable(t,e)
+t.id=o
+t.cycleTimes=n
+t.item=a
+t.boxPoint=s
+t.arena=i
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.cycleTimes=a[2]
+t.item=a[3]
+t.boxPoint=a[4]
+t.arena=a[5]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/activity/DTBoxWeekEntityTableData')
+end
+return e 

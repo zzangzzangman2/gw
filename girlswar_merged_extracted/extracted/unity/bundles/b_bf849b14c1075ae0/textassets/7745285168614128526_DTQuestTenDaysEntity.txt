@@ -1,0 +1,24 @@
+local e={id=0,heroId={},activePoint=0,days=0}
+e.__index=e
+function e.New(o,a,n,i)
+local t={}
+setmetatable(t,e)
+t.id=o
+t.heroId=a
+t.activePoint=n
+t.days=i
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.heroId=a[2]
+t.activePoint=a[3]
+t.days=a[4]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/quest/DTQuestTenDaysEntityTableData')
+end
+return e 

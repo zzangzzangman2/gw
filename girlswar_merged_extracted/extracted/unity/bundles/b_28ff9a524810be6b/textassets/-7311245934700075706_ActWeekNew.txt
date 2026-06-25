@@ -1,0 +1,19 @@
+
+?
+ActWeekNew.proto"?
+PRT_WEEK_NEW_CARD
+cardDid (RcardDid
+lastDay (RlastDay
+canBuy (RcanBuy&
+canRewardDaily (RcanRewardDaily"
+PRT_WEEK_NEW_CARD_LIST_REQ"s
+PRT_WEEK_NEW_CARD_LIST_RESP.
+cardList (2.PRT_WEEK_NEW_CARDRcardList$
+canRewardFree (RcanRewardFree":
+PRT_REWARD_WEEK_CARD_DAILY_REQ
+cardDid (RcardDid";
+PRT_REWARD_WEEK_CARD_DAILY_RESP
+cardDid (RcardDid"%
+#PRT_REWARD_FREE_WEEK_CARD_DAILY_REQ"&
+$PRT_REWARD_FREE_WEEK_CARD_DAILY_RESPB
+com.next1b.nextsvr.protobproto3

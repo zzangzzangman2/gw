@@ -1,0 +1,96 @@
+
+?
+FindMe.protoCommons.proto"
+PRT_FINDME_SPE_SHOP_INFO_REQ"A
+PRT_FINDME_SPE_SHOP_INFO_RESP 
+items (2
+.PRT_GOODSRitems"O
+PRT_FINDME_SPE_SHOP_BUY_REQ
+goodsDid (RgoodsDid
+count (Rcount">
+PRT_FINDME_SPE_SHOP_BUY_RESP
+item (2
+.PRT_GOODSRitem"
+PRT_FINDME_FUND_INFO_REQ"?
+PRT_FINDME_FUND_INFO_RESP
+isCharge (RisCharge 
+recFreeDids (RrecFreeDids$
+recChargeDids (RrecChargeDids
+nowDay (RnowDay"S
+PRT_FINDME_FUND_AWARD_REQ
+awardDid (RawardDid
+isCharge (RisCharge"T
+PRT_FINDME_FUND_AWARD_RESP
+awardDid (RawardDid
+isCharge (RisCharge"
+PRT_FINDME_GIFT_INFO_REQ"U
+PRT_FINDME_GIFT_INFO_RESP 
+gifts (2
+.PRT_GOODSRgifts
+freeCD (RfreeCD":
+PRT_FINDME_GIFT_FREE_AWARD_REQ
+giftDid (RgiftDid"A
+PRT_FINDME_GIFT_FREE_AWARD_RESP
+gift (2
+.PRT_GOODSRgift"
+PRT_FINDME_SHOP_INFO_REQ"=
+PRT_FINDME_SHOP_INFO_RESP 
+items (2
+.PRT_GOODSRitems"K
+PRT_FINDME_SHOP_BUY_REQ
+goodsDid (RgoodsDid
+count (Rcount":
+PRT_FINDME_SHOP_BUY_RESP
+item (2
+.PRT_GOODSRitem"<
+PRT_FINDME_CARD_GRID
+num (Rnum
+open (Ropen"?
+PRT_FINDME_CARD_LINE
+lineId (RlineId
+bigAward (RbigAward)
+grid (2.PRT_FINDME_CARD_GRIDRgrid
+multiple (Rmultiple
+gridIdx (RgridIdx
+open (Ropen"
+specGridOpen (RspecGridOpen 
+award (2
+.PRT_THINGRaward(
+	realAward	 (2
+.PRT_THINGR	realAward"?
+PRT_CARD
+luckNum (RluckNum"
+quickExplora (RquickExplora+
+lines (2.PRT_FINDME_CARD_LINERlines 
+openLuckNum (RopenLuckNum"
+useItemCount (RuseItemCount"
+PRT_FINDME_CARD_ACTINFO_REQ"=
+PRT_FINDME_CARD_ACTINFO_RESP
+card (2	.PRT_CARDRcard"c
+PRT_FINDME_CARD_ROW
+lineId (RlineId
+gridIdx (RgridIdx
+specGrid (RspecGrid"k
+PRT_FINDME_CARD_EXPLORA_REQ"
+quickExplora (RquickExplora(
+rows (2.PRT_FINDME_CARD_ROWRrows"?
+PRT_FINDME_CARD_EXPLORA_RESP+
+lines (2.PRT_FINDME_CARD_LINERlines
+	nextRound (R	nextRound
+card (2	.PRT_CARDRcard 
+award (2
+.PRT_THINGRaward"
+PRT_FINDME_CARD_OPEN_REQ"W
+PRT_FINDME_CARD_OPEN_RESP
+luckNum (RluckNum 
+scratchCard (RscratchCard"
+PRT_FINDME_CARD_RANK_REQ"?
+PRT_FINDME_CARD_RANK_RESP1
+	rankDatas (2.PRT_CS_COMMON_RANKR	rankDatas/
+selfRank (2.PRT_CS_COMMON_RANKRselfRank
+playerId (RplayerId"x
+(PRT_CS_FINDME_CARD_RANK_SCORE_UPDATE_SYN
+playerId (RplayerId
+score (Rscore
+changeMS (RchangeMSB
+com.next1b.nextsvr.protobproto3

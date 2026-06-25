@@ -1,0 +1,359 @@
+
+?M
+	FSB.proto
+Hero.protoSnapshot.protoSummonPet.proto"?
+PRT_FSB_GUILD_RANK_STRUCT
+guildId (RguildId
+serverId (RserverId
+name (	Rname
+level (Rlevel
+bg (Rbg
+fg (Rfg
+rank (Rrank
+fight (Rfight
+value1	 (Rvalue1
+value2
+ (Rvalue2"?
+PRT_FSB_STATE_TIMESTAMP
+	bigSeason (R	bigSeason
+cupType (RcupType
+raceNum (RraceNum
+	timestamp (R	timestamp
+season (Rseason"
+PRT_FSB_INFO_REQ"?
+PRT_FSB_INFO_RESP
+season (Rseason(
+status (2.ENUM_FSB_STATUSRstatus&
+statusOverTime (RstatusOverTime*
+guildMemberCount (RguildMemberCount(
+guildTotalFight (RguildTotalFight(
+guildTotalLogin (RguildTotalLogin
+sign (Rsign
+mapId (RmapId
+mapIdx	 (RmapIdxB
+stageTimeStamps
+ (2.PRT_FSB_STATE_TIMESTAMPRstageTimeStamps 
+isGuildJoin (RisGuildJoin:
+
+joinGuilds (2.PRT_FSB_GUILD_RANK_STRUCTR
+joinGuilds
+watch (Rwatch(
+serverEnterTime (RserverEnterTime(
+isGuildJoinYear (RisGuildJoinYear
+
+csPlayerId (R
+csPlayerId"
+PRT_FSB_SIGN_REQ"'
+PRT_FSB_SIGN_RESP
+sign (Rsign"0
+PRT_FSB_STAGE_RANK_REQ
+season (Rseason"?
+PRT_FSB_STAGE_RANK_RESP
+season (Rseason2
+guilds (2.PRT_FSB_GUILD_RANK_STRUCTRguilds8
+	selfGuild (2.PRT_FSB_GUILD_RANK_STRUCTR	selfGuild"?
+PRT_FSB_PLAYER_HERO_STRUCT
+heroDid (RheroDid
+maxHp (RmaxHp
+hp (Rhp
+fight (Rfight
+	rankLevel (R	rankLevel
+
+firstValue (R
+firstValue"?
+PRT_FSB_MAP_PLAYER_STRUCT
+playerId (RplayerId
+name (	Rname
+head (Rhead
+	headFrame (R	headFrame/
+status (2.ENUM_FSB_PLAYER_STATUSRstatus
+energy (Renergy
+
+fromCityId (R
+fromCityId$
+currentCityId (RcurrentCityId(
+statusStartTime	 (RstatusStartTime&
+statusOverTime
+ (RstatusOverTime1
+heros (2.PRT_FSB_PLAYER_HERO_STRUCTRheros2
+leftFreeRebirthTimes (RleftFreeRebirthTimes
+score (Rscore$
+fightTargetId (RfightTargetId
+guildId (RguildId
+serverId (RserverId
+	guildName (	R	guildName
+attOrDef (RattOrDef
+fightExt (RfightExt$
+firstValueExt (RfirstValueExt0
+fightProtectEndTime (RfightProtectEndTime"?
+PRT_FSB_MAP_CITY_STRUCT
+cityId (RcityId
+cityDid (RcityDid
+
+ownGuildId (R
+ownGuildId
+	guildName (	R	guildName
+serverId (RserverId
+curHp (RcurHp
+headType (RheadType
+headList (	RheadList
+
+isFighting	 (R
+isFighting"S
+PRT_FSB_GUILD_HOME_CITY
+guildId (RguildId
+
+homeCityId (R
+homeCityId"
+PRT_FSB_MAP_REQ"?
+PRT_FSB_MAP_RESP
+mapId (RmapId0
+cities (2.PRT_FSB_MAP_CITY_STRUCTRcities4
+players (2.PRT_FSB_MAP_PLAYER_STRUCTRplayers(
+protectOverTime (RprotectOverTime(
+elimateServerId (RelimateServerId*
+elimateGuildName (	RelimateGuildNameB
+guildHomeCities (2.PRT_FSB_GUILD_HOME_CITYRguildHomeCities
+autoAtt (RautoAtt"n
+"PRT_FSB_MAP_PLAYER_MOVE_CHANGE_SYN2
+player (2.PRT_FSB_MAP_PLAYER_STRUCTRplayer
+mapId (RmapId"?
+PRT_FSB_MAP_SELF_CHANGE_SYN2
+player (2.PRT_FSB_MAP_PLAYER_STRUCTRplayer(
+elimateServerId (RelimateServerId*
+elimateGuildName (	RelimateGuildName"?
+#PRT_FSB_MAP_PLAYER_DEATH_CHANGE_SYN2
+player (2.PRT_FSB_MAP_PLAYER_STRUCTRplayer
+mapId (RmapId
+cityId (RcityId"?
+PRT_FSB_MAP_CITY_CHANGE_SYN
+mapId (RmapId,
+city (2.PRT_FSB_MAP_CITY_STRUCTRcity2
+player (2.PRT_FSB_MAP_PLAYER_STRUCTRplayer"
+PRT_FSB_MAP_HEROES_REQ"?
+PRT_FSB_MAP_HEROES_RESP!
+heroes (2	.PRT_HERORheroes
+heroIds (RheroIds/
+
+summonPets (2.PRT_SUMMON_PETR
+summonPetsI
+summonPetFormation (2.PRT_SUMMON_PET_FORMATIONRsummonPetFormation"Y
+PRT_FSB_MAP_FORMATION_REQ
+heroIds (RheroIds"
+summonPetIds (RsummonPetIds"P
+PRT_FSB_MAP_FORMATION_RESP2
+player (2.PRT_FSB_MAP_PLAYER_STRUCTRplayer":
+PRT_FSB_MAP_MOVE_REQ"
+targetCityId (RtargetCityId"
+PRT_FSB_MAP_MOVE_RESP"
+PRT_FSB_MAP_MOVE_QUICK_REQ"
+PRT_FSB_MAP_MOVE_QUICK_RESP".
+PRT_FSB_MAP_CITY_REQ
+cityId (RcityId"{
+PRT_FSB_MAP_CITY_RESP,
+city (2.PRT_FSB_MAP_CITY_STRUCTRcity4
+players (2.PRT_FSB_MAP_PLAYER_STRUCTRplayers"
+PRT_FSB_PLAYER_REBIRTH_REQ"
+PRT_FSB_PLAYER_REBIRTH_RESP"
+PRT_FSB_PLAYER_REBORN_REQ"
+PRT_FSB_PLAYER_REBORN_RESP"Q
+PRT_FSB_MAP_CITY_ATTACK_REQ
+cityId (RcityId
+playerId (RplayerId"R
+PRT_FSB_MAP_CITY_ATTACK_RESP
+cityId (RcityId
+playerId (RplayerId"?
+PRT_FSB_PLAYER_TIP_STRUCT
+playerId (RplayerId
+serverId (RserverId
+name (	Rname
+head (Rhead
+	headFrame (R	headFrame"y
+PRT_FSB_MAP_CITY_ATTACK_TIP_SYN6
+attacker (2.PRT_FSB_PLAYER_TIP_STRUCTRattacker
+
+csPlayerId (R
+csPlayerId"?
+PRT_FSB_MAP_ATTACK_OVER_TIP_SYN
+
+attackType (R
+attackType
+cityId (RcityId2
+target (2.PRT_FSB_PLAYER_TIP_STRUCTRtarget
+
+csPlayerId (R
+csPlayerId"
+PRT_FSB_GUILD_RANK_REQ"}
+PRT_FSB_GUILD_RANK_RESP2
+guilds (2.PRT_FSB_GUILD_RANK_STRUCTRguilds.
+self (2.PRT_FSB_GUILD_RANK_STRUCTRself"?
+PRT_FSB_PLAYER_RANK_STRUCT
+playerId (RplayerId
+serverId (RserverId
+name (	Rname
+head (Rhead
+	headFrame (R	headFrame
+score (Rscore
+rank (Rrank
+	guildName (	R	guildName"
+PRT_FSB_PLAYER_RANK_REQ"?
+PRT_FSB_PLAYER_RANK_RESP5
+players (2.PRT_FSB_PLAYER_RANK_STRUCTRplayers/
+self (2.PRT_FSB_PLAYER_RANK_STRUCTRself"
+PRT_FSB_OVER_GUILD_RANK_REQ"?
+PRT_FSB_OVER_GUILD_RANK_RESP2
+guilds (2.PRT_FSB_GUILD_RANK_STRUCTRguilds.
+self (2.PRT_FSB_GUILD_RANK_STRUCTRself
+
+playerRank (R
+playerRank"
+PRT_FSB_OVER_PLAYER_RANK_REQ"?
+PRT_FSB_OVER_PLAYER_RANK_RESP5
+players (2.PRT_FSB_PLAYER_RANK_STRUCTRplayers/
+self (2.PRT_FSB_PLAYER_RANK_STRUCTRself"4
+PRT_FSB_GUILD_SNAP_FETCH
+guildId (RguildId"a
+PRT_FSB_GUILD_SNAP_RETURN
+guildId (RguildId*
+snaps (2.PRT_PLAYER_SNAPSHOTRsnaps"
+PRT_FSB_FIGHT_INFO_FETCH"?
+PRT_FSB_FIGHT_INFO_RETURN&
+fightStartTime (RfightStartTime"
+fightEndTime (RfightEndTime
+guildIds (RguildIds"3
+PRT_FSB_RED_POINT_REQ
+playerId (RplayerId"x
+PRT_FSB_RED_POINT_RESP
+playerId (RplayerId
+guildId (RguildId
+sign (Rsign
+fight (Rfight"q
+PRT_FSB_AUTO_ATTACK_REQ
+autoAtt (RautoAtt
+
+csPlayerId (R
+csPlayerId
+	csGuildId (R	csGuildId"T
+PRT_FSB_AUTO_ATTACK_RESP
+autoAtt (RautoAtt
+
+csPlayerId (R
+csPlayerId"?
+PRT_FSB_LOGIN_SHOW_SYN
+show (Rshow,
+mapStar (2.ENUM_FSB_MAP_STARRmapStar
+	bigSeason (R	bigSeason
+cupType (RcupType
+raceNum (RraceNum
+
+suitSeason (R
+suitSeason"z
+PRT_FSB_GUILD_SIGN
+guildId (RguildId
+	timestamp (R	timestamp,
+mapStar (2.ENUM_FSB_MAP_STARRmapStar"w
+PRT_FSB_GUILD_SIGN_SYN3
+
+guildSigns (2.PRT_FSB_GUILD_SIGNR
+guildSigns(
+status (2.ENUM_FSB_STATUSRstatus"F
+PRT_FSB_GIFT
+giftDid (RgiftDid
+	giftCount (R	giftCount"
+PRT_FSB_GIFT_INFO_REQ"W
+PRT_FSB_GIFT_INFO_RESP#
+gifts (2.PRT_FSB_GIFTRgifts
+endTime (RendTime",
+PRT_FSB_SEASON_SYN
+season (Rseason"G
+PRT_FSB_QUEST
+questDid (RquestDid
+progress (Rprogress"
+PRT_FSB_QUEST_INFO_REQ"?
+PRT_FSB_QUEST_INFO_RESP,
+	questList (2.PRT_FSB_QUESTR	questList"
+receivedDids (RreceivedDids
+	bigReward (R	bigReward"5
+PRT_FSB_QUEST_AWARD_REQ
+questDid (RquestDid"6
+PRT_FSB_QUEST_AWARD_RESP
+questDid (RquestDid"
+PRT_FSB_QUEST_BIG_AWARD_REQ"
+PRT_FSB_QUEST_BIG_AWARD_RESP"
+PRT_FSB_CUP_RANK_REQ"?
+PRT_FSB_CUP_RANK_RESP
+	bigSeason (R	bigSeason
+cupType (RcupType6
+rankList (2.PRT_FSB_GUILD_RANK_STRUCTRrankList.
+self (2.PRT_FSB_GUILD_RANK_STRUCTRself"?
+PRT_FSB_CUP_LOGIN_SHOW_SYN
+	bigSeason (R	bigSeason
+cupType (RcupType6
+rankList (2.PRT_FSB_GUILD_RANK_STRUCTRrankList
+	beginTime (R	beginTime
+endTime (RendTime"?
+PRT_FSB_KING_HINT_TO_GMAE_SYN
+	beginTime (R	beginTime
+endTime (RendTime
+	bigSeason (R	bigSeason
+cupType (RcupType6
+rankList (2.PRT_FSB_GUILD_RANK_STRUCTRrankList"
+hintGuildIds (RhintGuildIds"?
+PRT_FSB_HEAD_FRAME_AWSRD_SYN
+playerId (RplayerId
+itemDid (RitemDid
+season (Rseason
+guildId (RguildId
+endTime (RendTime"?
+PRT_FSB_QUEST_INFO1
+	questType (2.PRT_FSB_QUEST_TYPER	questType,
+	questList (2.PRT_FSB_QUESTR	questList"
+receivedDids (RreceivedDids
+	bigReward (R	bigReward"
+PRT_FSB_QUEST_INFO_NEW_REQ"J
+PRT_FSB_QUEST_INFO_NEW_RESP+
+quests (2.PRT_FSB_QUEST_INFORquests"l
+PRT_FSB_QUEST_AWARD_NEW_REQ1
+	questType (2.PRT_FSB_QUEST_TYPER	questType
+questDid (RquestDid"m
+PRT_FSB_QUEST_AWARD_NEW_RESP1
+	questType (2.PRT_FSB_QUEST_TYPER	questType
+questDid (RquestDid"T
+PRT_FSB_QUEST_BIG_AWARD_NEW_REQ1
+	questType (2.PRT_FSB_QUEST_TYPER	questType"U
+ PRT_FSB_QUEST_BIG_AWARD_NEW_RESP1
+	questType (2.PRT_FSB_QUEST_TYPER	questType"
+PRT_FSB_STATUS_REQ"?
+PRT_FSB_STATUS_RESP(
+status (2.ENUM_FSB_STATUSRstatus*r
+ENUM_FSB_MAP_STAR
+FSB_MAP_STAR_NONE 
+FSB_MAP_STAR_KING
+FSB_MAP_STAR_DIAMOND
+FSB_MAP_STAR_GOLD*?
+ENUM_FSB_STATUS
+FSB_NOT_OPEN 
+FSB_SIGN
+FSB_NORMAL_WAIT
+FSB_NORMAL_REVIEW
+FSB_NORMAL_RUNNING
+FSB_NORMAL_END
+FSB_REST*?
+ENUM_FSB_PLAYER_STATUS
+NONE 
+NOT_FORMATION
+
+DEFEND
+MOVE
+
+ATTACK
+FIGHTING
+DEAD
+	ELIMINATE
+NO_SNAP*{
+PRT_FSB_QUEST_TYPE
+FSB_QUEST_TYPE_NONE 
+FSB_QUEST_TYPE_NEW
+FSB_QUEST_TYPE_DAILY
+FSB_QUEST_TYPE_MATCHESB
+com.next1b.nextsvr.protobproto3

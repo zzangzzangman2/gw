@@ -1,0 +1,6 @@
+man.png
+size:64,64
+filter:Linear,Linear
+IC_beibao_beibaomanqipao
+bounds:0,0,47,33
+offsets:2,29,64,64

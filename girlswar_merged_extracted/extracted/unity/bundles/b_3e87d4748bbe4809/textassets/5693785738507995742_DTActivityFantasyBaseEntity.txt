@@ -1,0 +1,42 @@
+local a={id=0,activityId=0,goods=0,skinId=0,reward={{},{}},daysRemainning=0,gradePrice={{},{}},magnification=0,types=0,order={},backShow=0,redDotCD=0,giftMax=0}
+a.__index=a
+function a.New(s,d,h,t,l,c,m,f,u,r,i,o,n)
+local e={}
+setmetatable(e,a)
+e.id=s
+e.activityId=d
+e.goods=h
+e.skinId=t
+e.reward=l
+e.daysRemainning=c
+e.gradePrice=m
+e.magnification=f
+e.types=u
+e.order=r
+e.backShow=i
+e.redDotCD=o
+e.giftMax=n
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.activityId=t[2]
+e.goods=t[3]
+e.skinId=t[4]
+e.reward=t[5]
+e.daysRemainning=t[6]
+e.gradePrice=t[7]
+e.magnification=t[8]
+e.types=t[9]
+e.order=t[10]
+e.backShow=t[11]
+e.redDotCD=t[12]
+e.giftMax=t[13]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/activity/DTActivityFantasyBaseEntityTableData')
+end
+return a 

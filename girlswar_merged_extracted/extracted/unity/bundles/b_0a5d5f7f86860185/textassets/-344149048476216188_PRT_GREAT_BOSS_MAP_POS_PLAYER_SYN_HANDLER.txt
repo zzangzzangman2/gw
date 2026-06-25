@@ -1,0 +1,15 @@
+local t={}
+function t:OnHandle(e)
+local e=assert(GlobalPB.decode("PRT_GREAT_BOSS_MAP_POS_PLAYER_SYN",e));
+if(GameInit.GetDebugLogProto())then
+;
+;
+end
+if ModulesInit.GreatBossMgr.isEnterStatus then
+for t=1,#e.players do
+ModulesInit.GreatBossDataMgr:ChangePosPlayer(e.players[t])
+end
+end
+return e
+end
+return t 

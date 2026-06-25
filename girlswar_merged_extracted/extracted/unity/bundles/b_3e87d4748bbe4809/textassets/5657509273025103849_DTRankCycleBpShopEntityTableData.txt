@@ -1,0 +1,15 @@
+local e=
+{
+ByIdx={
+{1,"rankcycle_pack_763_title","rankcycle_pack_name201",0,0,{1001,288},2,1,1,{{20003,5},{20002,10}}},
+{2,"rankcycle_pack_763_title","rankcycle_pack_name202",0,0,{1001,988},2,1,1,{{20004,5},{20003,10}}},
+{3,"rankcycle_pack_763_title","rankcycle_pack_name301",0,0,{0},1,1,1,{{20003,1},{20002,5}}},
+{4,"rankcycle_pack_763_title","rankcycle_pack_name101",0,304,{0},1,1,1,{{1001,330},{20004,5},{20003,20}}},
+{5,"rankcycle_pack_763_title","rankcycle_pack_name102",0,310,{0},1,1,1,{{1001,980},{20004,15},{20003,60}}},
+{6,"rankcycle_pack_763_title","rankcycle_pack_name103",0,324,{0},1,1,2,{{1001,1980},{20004,30},{20003,120}}},
+{7,"rankcycle_pack_763_title","rankcycle_pack_name104",0,327,{0},1,1,3,{{1001,3400},{20004,50},{20003,200}}},
+{8,"rankcycle_pack_763_title","rankcycle_pack_name105",0,329,{0},1,1,5,{{1001,6900},{20004,100},{20003,400}}}
+},
+Len=8
+}
+return e 

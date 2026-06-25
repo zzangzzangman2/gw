@@ -1,0 +1,12 @@
+
+?
+BirthCard.proto"$
+PRT_BIRTH_INFO
+open (Ropen"
+PRT_BIRTH_CARD_INFO_REQ"?
+PRT_BIRTH_CARD_INFO_RESP#
+info (2.PRT_BIRTH_INFORinfo"
+PRT_BIRTH_CARD_OPEN_REQ"?
+PRT_BIRTH_CARD_OPEN_RESP#
+info (2.PRT_BIRTH_INFORinfoB
+com.next1b.nextsvr.protobproto3

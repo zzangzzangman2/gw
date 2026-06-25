@@ -1,0 +1,8 @@
+local e=
+{
+ByIdx={
+{1,{21422,1},"turkeyRunRandomTips_1;turkeyRunRandomTips_2;turkeyRunRandomTips_3"}
+},
+Len=1
+}
+return e 

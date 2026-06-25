@@ -1,0 +1,26 @@
+local e={id=0,getShip={{},{}},speedUpItem=0,speedUpTime=0,audioId=0}
+e.__index=e
+function e.New(o,n,a,s,i)
+local t={}
+setmetatable(t,e)
+t.id=o
+t.getShip=n
+t.speedUpItem=a
+t.speedUpTime=s
+t.audioId=i
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.getShip=a[2]
+t.speedUpItem=a[3]
+t.speedUpTime=a[4]
+t.audioId=a[5]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/activity/DTOverseasTradeBaseEntityTableData')
+end
+return e 

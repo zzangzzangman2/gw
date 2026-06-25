@@ -1,0 +1,9 @@
+local e={}
+function e:OnHandle(e)
+local e=assert(GlobalPB.decode("PRT_CS_CHAT_PRIVATE_RESP",e));
+if(GameInit.GetDebugLogProto())then
+;
+;
+end
+end
+return e 

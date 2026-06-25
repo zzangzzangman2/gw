@@ -1,0 +1,26 @@
+local e={id=0,boss=0,parameter=0,bigAward={{},{}},award={{},{}}}
+e.__index=e
+function e.New(o,n,a,s,i)
+local t={}
+setmetatable(t,e)
+t.id=o
+t.boss=n
+t.parameter=a
+t.bigAward=s
+t.award=i
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.boss=a[2]
+t.parameter=a[3]
+t.bigAward=a[4]
+t.award=a[5]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/guild/DTGreatBossAwardEntityTableData')
+end
+return e 

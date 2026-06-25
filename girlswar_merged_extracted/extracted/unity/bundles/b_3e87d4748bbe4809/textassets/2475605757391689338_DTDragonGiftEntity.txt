@@ -1,0 +1,30 @@
+local t={id=0,goodsId=0,freeAward={{},{}},award={{},{}},leftTime=0,openDragonLevel=0,offDesc=""}
+t.__index=t
+function t.New(o,h,a,s,r,n,i)
+local e={}
+setmetatable(e,t)
+e.id=o
+e.goodsId=h
+e.freeAward=a
+e.award=s
+e.leftTime=r
+e.openDragonLevel=n
+e.offDesc=i
+return e
+end
+function t.NewFromArrItem(a)
+local e={}
+setmetatable(e,t)
+e.id=a[1]
+e.goodsId=a[2]
+e.freeAward=a[3]
+e.award=a[4]
+e.leftTime=a[5]
+e.openDragonLevel=a[6]
+e.offDesc=a[7]
+return e
+end
+function t.GetArr()
+return require('DataNode/DataTable/Create/activity/DTDragonGiftEntityTableData')
+end
+return t 

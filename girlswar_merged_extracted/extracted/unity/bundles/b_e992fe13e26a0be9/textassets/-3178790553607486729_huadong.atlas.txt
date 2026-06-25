@@ -1,0 +1,15 @@
+huadong.png
+size:128,64
+filter:Linear,Linear
+djxg2
+bounds:80,16,41,41
+offsets:1,1,43,43
+hdxg2
+bounds:2,2,36,28
+offsets:0,2,37,32
+hdxg3
+bounds:40,3,34,27
+offsets:0,2,34,31
+hdxg4
+bounds:2,32,76,25
+offsets:16,3,92,30

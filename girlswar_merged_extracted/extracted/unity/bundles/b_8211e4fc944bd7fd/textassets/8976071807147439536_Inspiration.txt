@@ -1,0 +1,76 @@
+
+?
+Inspiration.protoCommons.protoFormation.protoFight.proto"?
+PRT_INSPIRATION
+did (Rdid
+eventDid (ReventDid
+isFinish (RisFinish 
+eventParams (ReventParams"
+bindingPoint (RbindingPoint
+type (Rtype
+score (Rscore
+answer (Ranswer"
+PRT_INSPIRATION_INFO_REQ"?
+PRT_INSPIRATION_INFO_RESP4
+inspirations (2.PRT_INSPIRATIONRinspirations4
+dailyInspirationCount (RdailyInspirationCountF
+nextCreateDailyInspirationTime (RnextCreateDailyInspirationTime"0
+
+PRT_RESIST
+id (Rid
+auto (Rauto"
+PRT_INSPIRATION_RESIST_REQ"D
+PRT_INSPIRATION_RESIST_RESP%
+resists (2.PRT_RESISTRresists"T
+ PRT_INSPIRATION_EVENT_FINISH_REQ
+eventDid (ReventDid
+isBuy (RisBuy"?
+!PRT_INSPIRATION_EVENT_FINISH_RESP
+eventDid (ReventDid2
+inspiration (2.PRT_INSPIRATIONRinspiration 
+award (2
+.PRT_THINGRaward"@
+"PRT_INSPIRATION_EVENT_ADDSCORE_REQ
+eventDid (ReventDid"?
+#PRT_INSPIRATION_EVENT_ADDSCORE_RESP
+eventDid (ReventDid2
+inspiration (2.PRT_INSPIRATIONRinspiration 
+award (2
+.PRT_THINGRaward"K
+-PRT_INSPIRATION_EVENT_ADDSCORE_AUTOHELPER_REQ
+eventDid (ReventDid"?
+.PRT_INSPIRATION_EVENT_ADDSCORE_AUTOHELPER_RESP
+eventDid (ReventDid2
+inspiration (2.PRT_INSPIRATIONRinspiration 
+award (2
+.PRT_THINGRaward"]
+'PRT_INSPIRATION_EVENT_ANSWER_FINISH_REQ
+eventDid (ReventDid
+answer (Ranswer"?
+(PRT_INSPIRATION_EVENT_ANSWER_FINISH_RESP
+eventDid (ReventDid
+isRight (RisRight2
+inspiration (2.PRT_INSPIRATIONRinspiration"
+awards (2
+.PRT_THINGRawards"?
+&PRT_INSPIRATION_EVENT_FIGHT_BEFORE_REQ
+eventDid (ReventDidG
+formationPositions (2.PRT_FORMATION_POSITIONRformationPositionsQ
+formationAlterPositions (2.PRT_FORMATION_POSITIONRformationAlterPositions"Z
+'PRT_INSPIRATION_EVENT_FIGHT_BEFORE_RESP/
+
+beforeInfo (2.PRT_FIGHT_PLAYR
+beforeInfo"R
+PRT_INSPIRATION_EVENT_FIGHT_REQ/
+
+battleInfo (2.PRT_FIGHT_PLAYR
+battleInfo"?
+ PRT_INSPIRATION_EVENT_FIGHT_RESP
+invalid (Rinvalid!
+award (2.PRT_FAWARDRaward2
+inspiration (2.PRT_INSPIRATIONRinspiration"G
+'PRT_INSPIRATION_EVENT_UNLOCK_LIVE2D_REQ
+	live2dDid (R	live2dDid"H
+(PRT_INSPIRATION_EVENT_UNLOCK_LIVE2D_RESP
+	live2dDid (R	live2dDidB
+com.next1b.nextsvr.protobproto3

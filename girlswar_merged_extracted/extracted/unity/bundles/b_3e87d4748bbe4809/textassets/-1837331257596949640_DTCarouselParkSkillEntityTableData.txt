@@ -1,0 +1,17 @@
+local e=
+{
+ByIdx={
+{101,1,1,{5,2},{0},2,"ParkSkillName_101","ParkSkillDesc_101","hzzz_jineng01","attack",667},
+{102,1,1,{5,6},{0},6,"ParkSkillName_102","ParkSkillDesc_102","hzzz_jineng02","skill1",1333},
+{201,2,2,{6},{0},6,"ParkSkillName_201","ParkSkillDesc_201","hzzz_jineng04","skill2",1333},
+{301,3,3,{1,2,3},{1,9401},6,"ParkSkillName_301","ParkSkillDesc_301","hzzz_jineng03","skill3",1333},
+{401,4,1,{9201},{0},0,"ParkSkillName_401","ParkSkillDesc_401","ParkSkillIcon_401","",0},
+{402,4,2,{9301},{0},0,"ParkSkillName_402","ParkSkillDesc_402","ParkSkillIcon_402","",0},
+{501,5,3,{10501,10502,10503,10601,10602,10603},{1},0,"ParkSkillName_501","ParkSkillDesc_501","ParkSkillIcon_501","",0},
+{502,5,3,{10101,10102,10103,10201,10202,10203,10301,10302,10303,10401,10402,10403},{1},0,"ParkSkillName_502","ParkSkillDesc_502","ParkSkillIcon_502","",0},
+{503,5,3,{20101,20102,20103,20201,20202,20203,20301,20302,20303,20401,20402,20403},{1},0,"ParkSkillName_503","ParkSkillDesc_503","ParkSkillIcon_503","",0},
+{601,6,1,{999},{0},0,"ParkSkillName_601","ParkSkillDesc_601","ParkSkillIcon_601","",0}
+},
+Len=10
+}
+return e 

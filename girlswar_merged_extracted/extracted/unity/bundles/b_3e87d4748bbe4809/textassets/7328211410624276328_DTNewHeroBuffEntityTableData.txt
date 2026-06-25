@@ -1,0 +1,8 @@
+local e=
+{
+ByIdx={
+{1,1200,1200,1200,1200,1200,1200,1,"event_god_girl",1200,314159265,"{HEROID}"}
+},
+Len=1
+}
+return e 

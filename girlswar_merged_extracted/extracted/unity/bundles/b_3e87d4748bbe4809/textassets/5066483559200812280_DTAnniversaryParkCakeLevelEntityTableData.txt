@@ -1,0 +1,20 @@
+local e=
+{
+ByIdx={
+{1,"UIActAnniversaryPark/dangao_1","UIActAnniversaryPark/gf2_pan1",0,0,{}},
+{2,"UIActAnniversaryPark/dangao_2","UIActAnniversaryPark/gf2_pan1",0,0,{}},
+{3,"UIActAnniversaryPark/dangao_3","UIActAnniversaryPark/gf2_pan1",0,0,{}},
+{4,"UIActAnniversaryPark/dangao_4","UIActAnniversaryPark/gf2_pan1",0,0,{}},
+{5,"UIActAnniversaryPark/dangao_5","UIActAnniversaryPark/gf2_pan1",1,1000,{{26463,1,10000}}},
+{6,"UIActAnniversaryPark/dangao_6","UIActAnniversaryPark/gf2_pan1",2,1050,{{26464,1,10000}}},
+{7,"UIActAnniversaryPark/dangao_7","UIActAnniversaryPark/gf2_pan1",4,1400,{{26465,1,10000}}},
+{8,"UIActAnniversaryPark/dangao_8","UIActAnniversaryPark/gf2_pan1",8,2100,{{26466,1,10000}}},
+{9,"UIActAnniversaryPark/dangao_9","UIActAnniversaryPark/gf2_pan1",16,3400,{{26467,1,10000}}},
+{10,"UIActAnniversaryPark/dangao_10","UIActAnniversaryPark/gf2_pan1",32,5600,{{26468,1,10000}}},
+{11,"UIActAnniversaryPark/dangao_11","UIActAnniversaryPark/gf2_pan1",64,8500,{{26469,1,10000}}},
+{12,"UIActAnniversaryPark/dangao_12","UIActAnniversaryPark/gf2_pan1",128,10000,{{26470,1,10000}}},
+{13,"UIActAnniversaryPark/dangao_13","UIActAnniversaryPark/gf2_pan1",256,10000,{{26471,1,10000}}}
+},
+Len=13
+}
+return e 

@@ -1,0 +1,38 @@
+local a={id=0,prop={{},{}},exchangeItem=0,rankShowCount=0,guildRankShowCount=0,rankShowCountMain=0,unlockType=0,unlockPara=0,Activity414Banner="",selfRankShowCount=0,selfGuildRankShowCount=0}
+a.__index=a
+function a.New(n,r,s,t,l,u,c,d,h,o,i)
+local e={}
+setmetatable(e,a)
+e.id=n
+e.prop=r
+e.exchangeItem=s
+e.rankShowCount=t
+e.guildRankShowCount=l
+e.rankShowCountMain=u
+e.unlockType=c
+e.unlockPara=d
+e.Activity414Banner=h
+e.selfRankShowCount=o
+e.selfGuildRankShowCount=i
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.prop=t[2]
+e.exchangeItem=t[3]
+e.rankShowCount=t[4]
+e.guildRankShowCount=t[5]
+e.rankShowCountMain=t[6]
+e.unlockType=t[7]
+e.unlockPara=t[8]
+e.Activity414Banner=t[9]
+e.selfRankShowCount=t[10]
+e.selfGuildRankShowCount=t[11]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/activity/DTKendoBaseEntityTableData')
+end
+return a 

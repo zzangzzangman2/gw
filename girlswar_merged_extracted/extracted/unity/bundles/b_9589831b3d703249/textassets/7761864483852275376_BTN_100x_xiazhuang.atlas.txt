@@ -1,0 +1,12 @@
+BTN_100x_xiazhuang.png
+size:256,256
+filter:Linear,Linear
+a1
+bounds:40,4,37,49
+a2
+bounds:2,55,61,77
+a3
+bounds:2,2,36,51
+a4
+bounds:2,134,99,101
+offsets:1,1,101,103

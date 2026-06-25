@@ -1,0 +1,23 @@
+local e=
+{
+ByIdx={
+{1,10,100,{{99362,10}},318,"GroupPhotoTask_1"},
+{2,2,6,{{99362,10}},0,"GroupPhotoTask_2"},
+{3,5,20,{{99362,10}},16,"GroupPhotoTask_3"},
+{4,3,30,{{99362,10}},40,"GroupPhotoTask_4"},
+{5,10,300,{{99362,10}},318,"GroupPhotoTask_5"},
+{6,2,4,{{99362,10}},0,"GroupPhotoTask_6"},
+{7,4,10,{{99362,10}},138,"GroupPhotoTask_7"},
+{8,5,5,{{99362,10}},16,"GroupPhotoTask_8"},
+{9,4,5,{{99362,10}},138,"GroupPhotoTask_9"},
+{10,4,15,{{99362,10}},138,"GroupPhotoTask_10"},
+{11,5,15,{{99362,10}},16,"GroupPhotoTask_11"},
+{12,3,60,{{99362,10}},40,"GroupPhotoTask_12"},
+{13,2,2,{{99362,10}},0,"GroupPhotoTask_13"},
+{14,11,10000,{{99362,10}},550,"GroupPhotoTask_14"},
+{15,11,5000,{{99362,10}},550,"GroupPhotoTask_15"},
+{16,6,900,{{99362,10}},551,"GroupPhotoTask_16"}
+},
+Len=16
+}
+return e 

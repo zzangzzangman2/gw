@@ -1,0 +1,16 @@
+
+?
+FunctionHandBook.proto"S
+PRT_FUNCTION_HAND_BOOK_TASK
+taskDid (RtaskDid
+progress (Rprogress"!
+PRT_FUNCTION_HAND_BOOK_INFO_REQ"?
+ PRT_FUNCTION_HAND_BOOK_INFO_RESP4
+quests (2.PRT_FUNCTION_HAND_BOOK_TASKRquests2
+receivedFunctionDids (RreceivedFunctionDids"D
+ PRT_FUNCTION_HAND_BOOK_AWARD_REQ 
+functionDid (RfunctionDid"y
+!PRT_FUNCTION_HAND_BOOK_AWARD_RESP 
+functionDid (RfunctionDid2
+receivedFunctionDids (RreceivedFunctionDidsB
+com.next1b.nextsvr.protobproto3

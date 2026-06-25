@@ -1,0 +1,58 @@
+local t={}
+function t:OnHandle(e)
+local e=assert(GlobalPB.decode("PRT_PLAYER_LEVEL_UP_RESP",e));
+if(GameInit.GetDebugLogProto())then
+;
+;
+end
+PlayerMgr.PlayerInfo.level=e.level
+if e.level>=110 then
+LuaUtils.AdjustLogEvent("a5gxbv")
+elseif e.level>=100 then
+LuaUtils.AdjustLogEvent("sx1pyj")
+elseif e.level>=90 then
+LuaUtils.AdjustLogEvent("sci847")
+elseif e.level>=80 then
+LuaUtils.AdjustLogEvent("cl1jwh")
+elseif e.level>=70 then
+LuaUtils.AdjustLogEvent("ql1b4x")
+elseif e.level>=60 then
+LuaUtils.AdjustLogEvent("gbuti4")
+elseif e.level>=50 then
+LuaUtils.AdjustLogEvent("cdq5u8")
+elseif e.level>=40 then
+LuaUtils.AdjustLogEvent("jtwbm4")
+elseif e.level>=30 then
+LuaUtils.AdjustLogEvent("ookxnl")
+elseif e.level>=20 then
+LuaUtils.AdjustLogEvent("b7spz1")
+elseif e.level>=10 then
+LuaUtils.AdjustLogEvent("ipxb20")
+end
+EventSystem.SendEvent(CommonEventId.PlayerLevelUp,e)
+PlayerMgr:AddFuncOpenTips()
+if GameEntry.UI:IsExists(UIFormId.UI_EarthRoot)and ModulesInit.ExpeditionManager.isLookStory then
+PlayerMgr:AddMasterUpgrade(e)
+return
+end
+if GameEntry.Procedure.CurrProcedureState==CS.YouYou.ProcedureState.NormalBattle and ModulesInit.ProcedureNormalBattle.BattleType==BattleType.campaign then
+PlayerMgr:AddMasterUpgrade(e)
+return
+end
+if GameEntry.Procedure.CurrProcedureState==CS.YouYou.ProcedureState.NormalBattle and ModulesInit.ProcedureNormalBattle.BattleType==BattleType.idle then
+PlayerMgr:AddMasterUpgrade(e)
+return
+end
+if not ModulesInit.GuideMgr:GetIsGuide()then
+local e=e
+e.closeCallback=function()
+PlayerMgr:OnOpenFuncTips(true,true)
+end
+GameEntry.UI:OpenUIForm(UIFormId.UI_MasterUpgrade,e)
+else
+GameFunction:SetLevelUpMaxMapId(PlayerMgr:GetCampionMaxMap())
+end
+PlayerMgr:RemoveMasterUpgrade()
+RedPointMgr:CheckFormationRed(e)
+end
+return t 

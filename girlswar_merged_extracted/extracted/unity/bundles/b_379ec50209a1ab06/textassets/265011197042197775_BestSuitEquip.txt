@@ -1,0 +1,39 @@
+
+?
+
+BestSuitEquip.protoCommons.proto"{
+PRT_BESTSUITEQUIP_TASK
+taskDid (RtaskDid+
+status (2.ENUM_REWARD_STATUSRstatus
+progress (Rprogress"D
+PRT_BESTSUITEQUIP_INFO
+day (Rday
+giftIds (RgiftIds"
+PRT_BESTSUITEQUIP_INFO_REQ"?
+PRT_BESTSUITEQUIP_INFO_RESP
+leftTime (RleftTime"
+todayEndTime (RtodayEndTime+
+info (2.PRT_BESTSUITEQUIP_INFORinfo
+today (Rtoday;
+totalRankDatas (2.PRT_CS_COMMON_RANKRtotalRankDatas9
+totalSelfRank (2.PRT_CS_COMMON_RANKRtotalSelfRank"
+PRT_BESTSUITEQUIP_TASK_REQ"L
+PRT_BESTSUITEQUIP_TASK_RESP-
+tasks (2.PRT_BESTSUITEQUIP_TASKRtasks"7
+PRT_BESTSUITEQUIP_AWARD_REQ
+taskDid (RtaskDid"K
+PRT_BESTSUITEQUIP_AWARD_RESP+
+task (2.PRT_BESTSUITEQUIP_TASKRtask""
+ PRT_BESTSUITEQUIP_RANK_LOCAL_REQ"?
+!PRT_BESTSUITEQUIP_RANK_LOCAL_RESP8
+totalRankDatas (2.PRT_COMMON_RANKRtotalRankDatas6
+totalSelfRank (2.PRT_COMMON_RANKRtotalSelfRank"|
+,PRT_CS_BEST_SUIT_EQUIP_RANK_SCORE_UPDATE_SYN
+playerId (RplayerId
+score (Rscore
+changeMS (RchangeMS"?
+ PRT_CS_BEST_SUIT_EQUIP_INFO_RESP
+playerId (RplayerId;
+totalRankDatas (2.PRT_CS_COMMON_RANKRtotalRankDatas9
+totalSelfRank (2.PRT_CS_COMMON_RANKRtotalSelfRankB
+com.next1b.nextsvr.protobproto3

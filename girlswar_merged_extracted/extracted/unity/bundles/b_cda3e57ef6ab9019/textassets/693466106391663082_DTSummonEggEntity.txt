@@ -1,0 +1,36 @@
+local a={id=0,type=0,nestImage="",nestType=0,time={},eggpool=0,point=0,from=0,rewardPreview={{},{}},eggPrefab={}}
+a.__index=a
+function a.New(n,r,s,t,l,u,d,h,o,i)
+local e={}
+setmetatable(e,a)
+e.id=n
+e.type=r
+e.nestImage=s
+e.nestType=t
+e.time=l
+e.eggpool=u
+e.point=d
+e.from=h
+e.rewardPreview=o
+e.eggPrefab=i
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.type=t[2]
+e.nestImage=t[3]
+e.nestType=t[4]
+e.time=t[5]
+e.eggpool=t[6]
+e.point=t[7]
+e.from=t[8]
+e.rewardPreview=t[9]
+e.eggPrefab=t[10]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/summonPet/DTSummonEggEntityTableData')
+end
+return a 

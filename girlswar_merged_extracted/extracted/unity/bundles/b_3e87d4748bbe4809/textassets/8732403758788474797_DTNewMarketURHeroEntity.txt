@@ -1,0 +1,26 @@
+local e={id=0,sortId=0,unlockData4=0,unlockData4Copy=0,unlockData4_2=0}
+e.__index=e
+function e.New(o,n,a,s,i)
+local t={}
+setmetatable(t,e)
+t.id=o
+t.sortId=n
+t.unlockData4=a
+t.unlockData4Copy=s
+t.unlockData4_2=i
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.sortId=a[2]
+t.unlockData4=a[3]
+t.unlockData4Copy=a[4]
+t.unlockData4_2=a[5]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/activity/DTNewMarketURHeroEntityTableData')
+end
+return e 

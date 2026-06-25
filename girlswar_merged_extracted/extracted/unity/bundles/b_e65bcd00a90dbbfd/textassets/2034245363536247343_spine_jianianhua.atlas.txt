@@ -1,0 +1,11 @@
+spine_jianianhua.png
+size:512,256
+filter:Linear,Linear
+22
+bounds:262,24,41,40
+tygybj
+bounds:262,66,64,64
+zg11
+bounds:132,2,128,128
+zg2
+bounds:2,2,128,128

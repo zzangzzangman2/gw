@@ -1,0 +1,36 @@
+local a={id=0,time=0,quickCount=0,maxTime=0,quickTime=0,quickCost={{},{}},rankCount=0,rankMax=0,quickAwardOpen=0,taskOpen=0}
+a.__index=a
+function a.New(n,r,s,t,l,u,d,h,o,i)
+local e={}
+setmetatable(e,a)
+e.id=n
+e.time=r
+e.quickCount=s
+e.maxTime=t
+e.quickTime=l
+e.quickCost=u
+e.rankCount=d
+e.rankMax=h
+e.quickAwardOpen=o
+e.taskOpen=i
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.time=t[2]
+e.quickCount=t[3]
+e.maxTime=t[4]
+e.quickTime=t[5]
+e.quickCost=t[6]
+e.rankCount=t[7]
+e.rankMax=t[8]
+e.quickAwardOpen=t[9]
+e.taskOpen=t[10]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/mijing/DTMijingBaseEntityTableData')
+end
+return a 

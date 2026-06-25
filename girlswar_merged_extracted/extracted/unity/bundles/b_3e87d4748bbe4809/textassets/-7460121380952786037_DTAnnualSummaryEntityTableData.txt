@@ -1,0 +1,18 @@
+local e=
+{
+ByIdx={
+{1,1,"Assets/Download/UI/UIPrefabAndRes/ActAnnualSummary_Ext_1/ndzj01.png","Annualsummary_00","","0",{0}},
+{2,1,"Assets/Download/UI/UIPrefabAndRes/ActAnnualSummary_Ext_1/ndzj02.png","Annualsummary_01","","0",{0}},
+{3,1,"Assets/Download/UI/UIPrefabAndRes/ActAnnualSummary_Ext_1/ndzj03.png","Annualsummary_02","","0",{0}},
+{4,1,"Assets/Download/UI/UIPrefabAndRes/ActAnnualSummary_Ext_1/ndzj04.png","Annualsummary_03","Annualsummary_12","0",{0}},
+{5,1,"Assets/Download/UI/UIPrefabAndRes/ActAnnualSummary_Ext_1/ndzj05.png","Annualsummary_04","","0",{0}},
+{6,1,"Assets/Download/UI/UIPrefabAndRes/ActAnnualSummary_Ext_1/ndzj06.png","Annualsummary_05","Annualsummary_13","0",{0}},
+{7,2,"Assets/Download/UI/UIPrefabAndRes/ActAnnualSummary_Ext_1/ndzj07.png","Annualsummary_06","","0",{0}},
+{8,2,"Assets/Download/UI/UIPrefabAndRes/ActAnnualSummary_Ext_1/ndzj08.png","Annualsummary_07","","keywords_01,keywords_02,keywords_03",{0,4000,8000}},
+{9,2,"Assets/Download/UI/UIPrefabAndRes/ActAnnualSummary_Ext_1/ndzj09.png","Annualsummary_08","","keywords_04,keywords_05,keywords_06",{0,40,79}},
+{10,2,"Assets/Download/UI/UIPrefabAndRes/ActAnnualSummary_Ext_1/ndzj10.png","Annualsummary_09","","keywords_07,keywords_08,keywords_09",{0,9,19}},
+{11,2,"Assets/Download/UI/UIPrefabAndRes/ActAnnualSummary_Ext_1/ndzj11.png","Annualsummary_10","","keywords_10,keywords_11",{99999,100000}}
+},
+Len=11
+}
+return e 

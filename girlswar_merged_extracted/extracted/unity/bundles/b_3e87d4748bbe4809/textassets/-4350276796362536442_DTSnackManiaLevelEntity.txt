@@ -1,0 +1,28 @@
+local e={id=0,day=0,award={{},{}},wave={},targetPoint=0,countdown=0}
+e.__index=e
+function e.New(a,i,o,h,s,n)
+local t={}
+setmetatable(t,e)
+t.id=a
+t.day=i
+t.award=o
+t.wave=h
+t.targetPoint=s
+t.countdown=n
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.day=a[2]
+t.award=a[3]
+t.wave=a[4]
+t.targetPoint=a[5]
+t.countdown=a[6]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/activity/DTSnackManiaLevelEntityTableData')
+end
+return e 

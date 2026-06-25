@@ -1,0 +1,13 @@
+win_1.png
+size:2048,1024
+filter:Linear,Linear
+blue1
+bounds:950,76,953,261
+offsets:0,2,953,263
+red1
+bounds:2,52,946,285
+up
+bounds:2,2,1600,48
+win_n_12
+bounds:2,339,1414,514
+offsets:1,0,1416,514

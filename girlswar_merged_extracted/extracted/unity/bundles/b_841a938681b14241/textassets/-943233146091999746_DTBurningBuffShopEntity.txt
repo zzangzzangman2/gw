@@ -1,0 +1,26 @@
+local e={id=0,cost={},limitType=0,limitPara=0,payGoods={}}
+e.__index=e
+function e.New(o,n,a,s,i)
+local t={}
+setmetatable(t,e)
+t.id=o
+t.cost=n
+t.limitType=a
+t.limitPara=s
+t.payGoods=i
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.cost=a[2]
+t.limitType=a[3]
+t.limitPara=a[4]
+t.payGoods=a[5]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/burning/DTBurningBuffShopEntityTableData')
+end
+return e 

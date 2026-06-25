@@ -1,0 +1,24 @@
+
+?
+ActTurkeyEatCornTask.protoCommons.proto"#
+!PRT_TURKEY_EAT_CORN_TASK_INFO_REQ"?
+"PRT_TURKEY_EAT_CORN_TASK_INFO_RESP
+leftTime (RleftTime"
+taskLeftTime (RtaskLeftTime
+nowDay (RnowDay$
+totalBoxCount (RtotalBoxCount
+tasks (2	.PRT_TASKRtasks
+
+isBoxAward (R
+isBoxAward">
+"PRT_TURKEY_EAT_CORN_TASK_AWARD_REQ
+taskDid (RtaskDid"d
+#PRT_TURKEY_EAT_CORN_TASK_AWARD_RESP
+boxCount (RboxCount!
+award (2.PRT_REWARDRaward"(
+&PRT_TURKEY_EAT_CORN_TASK_BOX_AWARD_REQ"I
+'PRT_TURKEY_EAT_CORN_TASK_BOX_AWARD_RESP
+
+isBoxAward (R
+isBoxAwardB
+com.next1b.nextsvr.protobproto3

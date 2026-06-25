@@ -1,0 +1,12 @@
+SP_Dock_7.png
+size:256,128
+filter:Linear,Linear
+C1
+bounds:1,35,86,92
+offsets:1,1,88,94
+C2
+bounds:1,1,110,33
+C3
+bounds:88,48,79,42
+offsets:1,1,81,44
+rotate:90

@@ -1,0 +1,36 @@
+local a={id=0,treasureId=0,breakLevel=0,level=0,exp=0,attr={{},{}},skillPara=0,campAttr={{},{}},gold=0,attrType=0}
+a.__index=a
+function a.New(n,r,s,t,l,u,d,h,o,i)
+local e={}
+setmetatable(e,a)
+e.id=n
+e.treasureId=r
+e.breakLevel=s
+e.level=t
+e.exp=l
+e.attr=u
+e.skillPara=d
+e.campAttr=h
+e.gold=o
+e.attrType=i
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.treasureId=t[2]
+e.breakLevel=t[3]
+e.level=t[4]
+e.exp=t[5]
+e.attr=t[6]
+e.skillPara=t[7]
+e.campAttr=t[8]
+e.gold=t[9]
+e.attrType=t[10]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/treasure/DTTreasureStrengEntityTableData')
+end
+return a 

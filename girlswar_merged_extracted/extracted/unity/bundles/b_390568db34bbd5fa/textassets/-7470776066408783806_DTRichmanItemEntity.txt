@@ -1,0 +1,26 @@
+local e={id=0,name="",desc="",pic="",itemId=0}
+e.__index=e
+function e.New(o,n,a,s,i)
+local t={}
+setmetatable(t,e)
+t.id=o
+t.name=n
+t.desc=a
+t.pic=s
+t.itemId=i
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.name=a[2]
+t.desc=a[3]
+t.pic=a[4]
+t.itemId=a[5]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/calendar/DTRichmanItemEntityTableData')
+end
+return e 

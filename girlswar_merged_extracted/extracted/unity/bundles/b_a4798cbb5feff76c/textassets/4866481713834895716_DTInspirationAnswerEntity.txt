@@ -1,0 +1,32 @@
+local a={id=0,descriptive="",rightKey="",rightGraphics="",rightAward={{},{}},wrongKey="",wrongGraphics="",wrongAward={{},{}}}
+a.__index=a
+function a.New(i,h,n,t,d,r,s,o)
+local e={}
+setmetatable(e,a)
+e.id=i
+e.descriptive=h
+e.rightKey=n
+e.rightGraphics=t
+e.rightAward=d
+e.wrongKey=r
+e.wrongGraphics=s
+e.wrongAward=o
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.descriptive=t[2]
+e.rightKey=t[3]
+e.rightGraphics=t[4]
+e.rightAward=t[5]
+e.wrongKey=t[6]
+e.wrongGraphics=t[7]
+e.wrongAward=t[8]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/worldMap/DTInspirationAnswerEntityTableData')
+end
+return a 

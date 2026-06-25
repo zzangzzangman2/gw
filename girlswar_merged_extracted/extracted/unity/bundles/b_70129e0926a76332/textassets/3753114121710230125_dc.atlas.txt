@@ -1,0 +1,16 @@
+dc.png
+size:1024,512
+filter:Linear,Linear
+dc1
+bounds:2,9,36,82
+dc2
+bounds:2,9,36,82
+dc3
+bounds:430,2,172,116
+rotate:90
+dc4
+bounds:2,93,40,110
+dc5
+bounds:2,93,40,110
+dc6
+bounds:2,22,510,310

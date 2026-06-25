@@ -1,0 +1,16 @@
+local e=
+{
+ByIdx={
+{922,1,"tabName1","UIActEggEnter/dbz_danli",0,1,"UIGoldweekHalloweenName_33"},
+{913,1,"tabName1","UIActEggEnter/dbz_mibao",0,1,"UIGoldweekHalloweenName_34"},
+{501,2,"tabName2","UIActEggEnter/dbz_migong",0,1,"UIGoldweekNewName_15"},
+{80,2,"tabName2","UIActEggEnter/dbz_longzhan",0,1,"UIGoldweekNewName_16"},
+{151,2,"tabName2","UIActEggEnter/dbz_longzhou",0,1,"UIGoldweekNewName_17"},
+{152,2,"tabName2","UIActEggEnter/dbz_wenquan",0,1,"UIGoldweekNewName_18"},
+{409,3,"tabName3","UIActEggEnter/dbz_qiuqiuji",0,1,"UIGoldweekNewName_19"},
+{408,3,"tabName3","UIActEggEnter/dbz_aolihagang",0,1,"UIGoldweekNewName_20"},
+{407,3,"tabName3","UIActEggEnter/dbz_tianshengbaoqi",0,1,"UIGoldweekNewName_21"}
+},
+Len=9
+}
+return e 

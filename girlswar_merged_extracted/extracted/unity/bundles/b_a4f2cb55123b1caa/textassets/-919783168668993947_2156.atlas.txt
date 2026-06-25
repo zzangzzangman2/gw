@@ -1,0 +1,6 @@
+2156.png
+size:1024,512
+filter:Linear,Linear
+body
+bounds:2,2,437,683
+rotate:90

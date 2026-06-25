@@ -1,0 +1,32 @@
+local a={id=0,level=0,jade=0,star=0,openLevel=0,exp=0,attrs={{},{}},itemShow={}}
+a.__index=a
+function a.New(i,h,n,t,d,r,s,o)
+local e={}
+setmetatable(e,a)
+e.id=i
+e.level=h
+e.jade=n
+e.star=t
+e.openLevel=d
+e.exp=r
+e.attrs=s
+e.itemShow=o
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.level=t[2]
+e.jade=t[3]
+e.star=t[4]
+e.openLevel=t[5]
+e.exp=t[6]
+e.attrs=t[7]
+e.itemShow=t[8]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/hero/DTHeroLockEntityTableData')
+end
+return a 

@@ -1,0 +1,10 @@
+activityname_20.png
+size:128,128
+filter:Linear,Linear
+gy2
+bounds:30,3,14,19
+gy3
+bounds:0,0,22,29
+rotate:90
+gy4
+bounds:0,23,70,80

@@ -1,0 +1,26 @@
+local e={id=0,reward={{},{}},name="",goods=0,limtTimes=0}
+e.__index=e
+function e.New(o,n,a,s,i)
+local t={}
+setmetatable(t,e)
+t.id=o
+t.reward=n
+t.name=a
+t.goods=s
+t.limtTimes=i
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.reward=a[2]
+t.name=a[3]
+t.goods=a[4]
+t.limtTimes=a[5]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/activity/DTDrawHeroWeekGiftEntityTableData')
+end
+return e 

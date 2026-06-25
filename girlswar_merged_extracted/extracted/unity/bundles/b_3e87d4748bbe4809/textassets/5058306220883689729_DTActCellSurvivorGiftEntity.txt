@@ -1,0 +1,36 @@
+local a={id=0,group=0,giftType=0,goods=0,cost={},discount=0,type=0,buyCount=0,giftName="",chargeAward={{},{}}}
+a.__index=a
+function a.New(n,r,s,t,l,u,d,h,o,i)
+local e={}
+setmetatable(e,a)
+e.id=n
+e.group=r
+e.giftType=s
+e.goods=t
+e.cost=l
+e.discount=u
+e.type=d
+e.buyCount=h
+e.giftName=o
+e.chargeAward=i
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.group=t[2]
+e.giftType=t[3]
+e.goods=t[4]
+e.cost=t[5]
+e.discount=t[6]
+e.type=t[7]
+e.buyCount=t[8]
+e.giftName=t[9]
+e.chargeAward=t[10]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/activity/DTActCellSurvivorGiftEntityTableData')
+end
+return a 

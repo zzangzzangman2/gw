@@ -1,0 +1,9 @@
+spine_VS2.png
+size:2048,2048
+filter:Linear,Linear
+bg
+bounds:0,722,1680,720
+blue
+bounds:1003,0,943,720
+red
+bounds:0,0,1001,720

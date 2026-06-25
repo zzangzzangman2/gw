@@ -1,0 +1,13 @@
+
+?
+ActGeneralRank.protoCommons.proto"
+PRT_GENERAL_RANK_REQ"?
+PRT_GENERAL_RANK_RESP1
+	rankDatas (2.PRT_CS_COMMON_RANKR	rankDatas/
+selfRank (2.PRT_CS_COMMON_RANKRselfRank
+playerId (RplayerId"t
+$PRT_CS_GENERAL_RANK_SCORE_UPDATE_SYN
+playerId (RplayerId
+score (Rscore
+changeMS (RchangeMSB
+com.next1b.nextsvr.protobproto3

@@ -1,0 +1,28 @@
+local e={id=0,mosterGroupID=0,generationTime={},mosterID={{},{}},mosterNum=0,generateTimeInterval=0}
+e.__index=e
+function e.New(a,i,o,h,s,n)
+local t={}
+setmetatable(t,e)
+t.id=a
+t.mosterGroupID=i
+t.generationTime=o
+t.mosterID=h
+t.mosterNum=s
+t.generateTimeInterval=n
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.mosterGroupID=a[2]
+t.generationTime=a[3]
+t.mosterID=a[4]
+t.mosterNum=a[5]
+t.generateTimeInterval=a[6]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/activity/DTActWhackClownMosterGroupEntityTableData')
+end
+return e 

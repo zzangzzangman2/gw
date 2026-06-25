@@ -1,0 +1,25 @@
+
+?
+ActSeparateFund.protoCommons.proto" 
+PRT_ACT_SEPARATE_FUND_INFO_REQ"?
+PRT_ACT_SEPARATE_FUND_INFO_RESP$
+freeRewradIds (RfreeRewradIds 
+buyFun1Flag (RbuyFun1Flag 
+buyFun2Flag (RbuyFun2Flag*
+buy1FunRewardIds (Rbuy1FunRewardIds*
+buy2FunRewardIds (Rbuy2FunRewardIds
+nowDay (RnowDay"A
+PRT_ACT_SEPARATE_FUND_AWARD_REQ
+
+rewardType (R
+rewardType"?
+ PRT_ACT_SEPARATE_FUND_AWARD_RESP
+
+rewardType (R
+rewardType$
+freeRewradIds (RfreeRewradIds*
+buy1FunRewardIds (Rbuy1FunRewardIds*
+buy2FunRewardIds (Rbuy2FunRewardIds$
+rewards (2
+.PRT_THINGRrewardsB
+com.next1b.nextsvr.protobproto3

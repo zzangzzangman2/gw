@@ -1,0 +1,30 @@
+local t={id=0,position1={},position2={},position3={},position4={},position5={},position6={}}
+t.__index=t
+function t.New(o,h,a,s,r,n,i)
+local e={}
+setmetatable(e,t)
+e.id=o
+e.position1=h
+e.position2=a
+e.position3=s
+e.position4=r
+e.position5=n
+e.position6=i
+return e
+end
+function t.NewFromArrItem(a)
+local e={}
+setmetatable(e,t)
+e.id=a[1]
+e.position1=a[2]
+e.position2=a[3]
+e.position3=a[4]
+e.position4=a[5]
+e.position5=a[6]
+e.position6=a[7]
+return e
+end
+function t.GetArr()
+return require('DataNode/DataTable/Create/activity/DTDiveExplorationLevelEntityTableData')
+end
+return t 

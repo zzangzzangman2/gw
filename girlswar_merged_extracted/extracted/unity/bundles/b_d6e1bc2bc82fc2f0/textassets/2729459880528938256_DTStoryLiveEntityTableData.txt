@@ -1,0 +1,11 @@
+local e=
+{
+ByIdx={
+{1001,1043,"event:/DUMVOICE/DUMVOICE_1043_ONDRESS_SILKSTOCKINGS","ondress_silkstockings","","marrylockvoicename_104307","marryunlockvoicename_104307","voiceline_9104307","guideLive2DTarget_1001",2,0,20,400000001,{350,-140},2,0,3,"UIStory/story_live_kstd",1006},
+{1002,1043,"event:/DUMVOICE/DUMVOICE_1043_TOUCH_ITEM","touch_item","","marrylockvoicename_104316","marryunlockvoicename_104316","voiceline_9104316","guideLive2DTarget_1002",2,0,35,400000001,{548,217},1,0,0,"UIStory/story_live_kstd",1006},
+{1003,1043,"event:/DUMVOICE/DUMVOICE_1043_OFFDRESSPANTSPULL","offdresspantspull","","marrylockvoicename_104309","marryunlockvoicename_104309","voiceline_9104309","guideLive2DTarget_1003",1,0,20,400000001,{194,28},2,45,1,"UIStory/story_live_kstd",1006},
+{1004,1043,"event:/DUMVOICE/DUMVOICE_1043_DRESS_TOUCHBREAST1","dress_touchbreast1","","marrylockvoicename_104314","marryunlockvoicename_104314","voiceline_9104314","guideLive2DTarget_1004",1,0,25,400000001,{-139,-149},1,0,3,"UIStory/story_live_kstd",1006}
+},
+Len=4
+}
+return e 

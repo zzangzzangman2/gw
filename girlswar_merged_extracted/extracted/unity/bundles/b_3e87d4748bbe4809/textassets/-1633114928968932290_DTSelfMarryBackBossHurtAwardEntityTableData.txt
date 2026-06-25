@@ -1,0 +1,27 @@
+local e=
+{
+ByIdx={
+{1,1000000,{{20624,1},{20625,1},{1002,30000}},"DTSelfMarryBackBossPointDesc"},
+{2,2000000,{{20624,1},{20625,1},{1002,30000}},"DTSelfMarryBackBossPointDesc"},
+{3,4000000,{{20624,1},{20625,1},{1002,30000}},"DTSelfMarryBackBossPointDesc"},
+{4,6000000,{{20624,1},{20625,1},{1002,30000}},"DTSelfMarryBackBossPointDesc"},
+{5,8000000,{{20624,1},{20625,1},{1002,30000}},"DTSelfMarryBackBossPointDesc"},
+{6,10000000,{{20624,1},{20625,1},{1002,30000}},"DTSelfMarryBackBossPointDesc"},
+{7,20000000,{{20624,1},{20625,1},{1002,30000}},"DTSelfMarryBackBossPointDesc"},
+{8,40000000,{{20624,1},{20625,1},{1002,30000}},"DTSelfMarryBackBossPointDesc"},
+{9,60000000,{{20624,1},{20625,1},{1002,30000}},"DTSelfMarryBackBossPointDesc"},
+{10,80000000,{{20624,1},{20625,1},{1002,30000}},"DTSelfMarryBackBossPointDesc"},
+{11,100000000,{{20624,1},{20625,1},{1002,30000}},"DTSelfMarryBackBossPointDesc"},
+{12,120000000,{{20624,1},{20625,1},{1002,30000}},"DTSelfMarryBackBossPointDesc"},
+{13,140000000,{{20624,1},{20625,1},{1002,30000}},"DTSelfMarryBackBossPointDesc"},
+{14,160000000,{{20624,1},{20625,1},{1002,30000}},"DTSelfMarryBackBossPointDesc"},
+{15,180000000,{{20624,1},{20625,1},{1002,30000}},"DTSelfMarryBackBossPointDesc"},
+{16,200000000,{{20624,1},{20625,1},{1002,30000}},"DTSelfMarryBackBossPointDesc"},
+{17,400000000,{{20624,1},{20625,1},{1002,30000}},"DTSelfMarryBackBossPointDesc"},
+{18,600000000,{{20624,1},{20625,1},{1002,30000}},"DTSelfMarryBackBossPointDesc"},
+{19,800000000,{{20624,1},{20625,1},{1002,30000}},"DTSelfMarryBackBossPointDesc"},
+{20,1000000000,{{20624,1},{20625,1},{1002,30000}},"DTSelfMarryBackBossPointDesc"}
+},
+Len=20
+}
+return e 

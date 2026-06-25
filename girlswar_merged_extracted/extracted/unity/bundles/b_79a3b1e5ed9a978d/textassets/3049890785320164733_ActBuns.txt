@@ -1,0 +1,99 @@
+
+?
+ActBuns.protoCommons.proto"?
+PRT_BUNS_GRID
+grid (Rgrid
+x (Rx
+y (Ry"T
+PRT_BUNS_BOARD&
+boards (2.PRT_BUNS_GRIDRboards
+gameType (RgameType"X
+PRT_BUNS_ORDER_NUM
+grid (Rgrid
+curNum (RcurNum
+maxNum (RmaxNum"?
+PRT_BUNS_ORDER
+orderId (RorderId/
+orderNum (2.PRT_BUNS_ORDER_NUMRorderNum
+step (Rstep
+gameType (RgameType"
+PRT_BUNS_GAME_INFO_REQ"?
+PRT_BUNS_GAME_INFO_RESP
+
+totalScore (R
+totalScore%
+board (2.PRT_BUNS_BOARDRboard%
+order (2.PRT_BUNS_ORDERRorder
+power (Rpower2
+nextPowerRecoverTime (RnextPowerRecoverTime
+endTime (RendTime"?
+PRT_BUNS_GAME_INIT_REQ%
+board (2.PRT_BUNS_BOARDRboard"g
+PRT_BUNS_GAME_INIT_RESP%
+board (2.PRT_BUNS_BOARDRboard%
+order (2.PRT_BUNS_ORDERRorder"?
+PRT_BUNS_GAME_GRIDMOVE_REQ
+addScore (RaddScore
+combo (Rcombo%
+board (2.PRT_BUNS_BOARDRboard
+delGrids (RdelGrids
+addGrids (RaddGrids"?
+PRT_BUNS_GAME_GRIDMOVE_RESP
+success (Rsuccess
+
+totalScore (R
+totalScore%
+board (2.PRT_BUNS_BOARDRboard%
+order (2.PRT_BUNS_ORDERRorder2
+nextPowerRecoverTime (RnextPowerRecoverTime
+power (Rpower"@
+PRT_BUNS_GAME_RESET_REQ%
+board (2.PRT_BUNS_BOARDRboard"A
+PRT_BUNS_GAME_RESET_RESP%
+board (2.PRT_BUNS_BOARDRboard"
+PRT_BUNS_SHOP_INFO_REQ"]
+PRT_BUNS_SHOP_INFO_RESP(
+	exchanges (2
+.PRT_GOODSR	exchanges
+endTime (RendTime"@
+PRT_BUNS_SHOP_EXCHANGE_REQ
+did (Rdid
+num (Rnum"G
+PRT_BUNS_SHOP_EXCHANGE_RESP(
+	exchanges (2
+.PRT_GOODSR	exchanges" 
+PRT_BUNS_SHOP_DIAMOND_INFO_REQ"e
+PRT_BUNS_SHOP_DIAMOND_INFO_RESP(
+	exchanges (2
+.PRT_GOODSR	exchanges
+endTime (RendTime"H
+"PRT_BUNS_SHOP_DIAMOND_EXCHANGE_REQ
+did (Rdid
+num (Rnum"O
+#PRT_BUNS_SHOP_DIAMOND_EXCHANGE_RESP(
+	exchanges (2
+.PRT_GOODSR	exchanges"
+PRT_BUNS_SHOP_PAY_INFO_REQ"G
+PRT_BUNS_SHOP_PAY_INFO_RESP(
+	exchanges (2
+.PRT_GOODSR	exchanges"
+PRT_BUNS_POWER_INFO_REQ"d
+PRT_BUNS_POWER_INFO_RESP
+power (Rpower2
+nextPowerRecoverTime (RnextPowerRecoverTime"3
+PRT_BUNS_USE_POWER_ITEM_REQ
+count (Rcount"h
+PRT_BUNS_USE_POWER_ITEM_RESP
+power (Rpower2
+nextPowerRecoverTime (RnextPowerRecoverTime"
+PRT_BUNS_TOTAL_RANK_REQ"x
+PRT_BUNS_TOTAL_RANK_RESP.
+	rankDatas (2.PRT_COMMON_RANKR	rankDatas,
+selfRank (2.PRT_COMMON_RANKRselfRank"|
+"PRT_CS_BUNS_UPDATE_TOTAL_SCORE_SYN
+playerId (RplayerId
+
+totalScore (R
+totalScore
+changeMS (RchangeMSB
+com.next1b.nextsvr.protobproto3

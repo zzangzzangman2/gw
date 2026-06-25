@@ -1,0 +1,26 @@
+local e=
+{
+ByIdx={
+{101,1,10000,{{1001,25},{36002,25},{20084,6}},0,0,"IslandGTaskName_1","IslandGTaskDesc_1"},
+{102,1,100000,{{1001,50},{36003,10},{20085,2}},0,0,"IslandGTaskName_1","IslandGTaskDesc_1"},
+{103,1,200000,{{1001,75},{36002,25},{20084,9}},0,0,"IslandGTaskName_1","IslandGTaskDesc_1"},
+{104,1,500000,{{1001,100},{36003,20},{20085,3}},0,0,"IslandGTaskName_1","IslandGTaskDesc_1"},
+{105,1,1000000,{{1001,125},{36002,50},{20084,6}},0,0,"IslandGTaskName_1","IslandGTaskDesc_1"},
+{106,1,2000000,{{1001,125},{36003,30},{20085,2}},0,0,"IslandGTaskName_1","IslandGTaskDesc_1"},
+{107,1,3000000,{{1001,150},{20085,3},{20084,9}},30000,0,"IslandGTaskName_1","IslandGTaskDesc_1"},
+{108,1,4000000,{{1001,150},{20085,3},{20084,9}},30000,0,"IslandGTaskName_1","IslandGTaskDesc_1"},
+{109,1,6000000,{{1001,175},{20085,3},{20084,9}},30000,0,"IslandGTaskName_1","IslandGTaskDesc_1"},
+{110,1,8000000,{{1001,200},{20085,10},{20084,30}},50000,0,"IslandGTaskName_1","IslandGTaskDesc_1"},
+{201,2,10,{{1001,50},{20085,1},{20084,3}},0,24,"IslandGTaskName_2","IslandGTaskDesc_2"},
+{202,2,20,{{1001,50},{20085,2},{20084,6}},50000,24,"IslandGTaskName_2","IslandGTaskDesc_2"},
+{203,2,30,{{1001,50},{20085,3},{20084,9}},80000,24,"IslandGTaskName_2","IslandGTaskDesc_2"},
+{301,3,5,{{1001,50},{20085,1},{20084,3}},0,402,"IslandGTaskName_3","IslandGTaskDesc_3"},
+{302,3,10,{{1001,50},{20085,2},{20084,6}},50000,402,"IslandGTaskName_3","IslandGTaskDesc_3"},
+{303,3,15,{{1001,50},{20085,3},{20084,9}},80000,402,"IslandGTaskName_3","IslandGTaskDesc_3"},
+{401,4,10,{{1001,50},{20085,1},{20084,3}},0,211,"IslandGTaskName_4","IslandGTaskDesc_4"},
+{402,4,20,{{1001,50},{20085,2},{20084,6}},50000,211,"IslandGTaskName_4","IslandGTaskDesc_4"},
+{403,4,30,{{1001,50},{20085,3},{20084,9}},80000,211,"IslandGTaskName_4","IslandGTaskDesc_4"}
+},
+Len=19
+}
+return e 

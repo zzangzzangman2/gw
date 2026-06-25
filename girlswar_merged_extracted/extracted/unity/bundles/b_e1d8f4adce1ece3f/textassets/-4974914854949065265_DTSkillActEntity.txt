@@ -1,0 +1,68 @@
+local a={id=0,skillName="",skillText="",heroId=0,scriptId=0,skilltype=0,args={},argsPvp={},monsterArgs={},monsterType={},atkType=0,type=0,skillRate=0,coolDown=0,costMp=0,prefabId=0,fastPrefabId=0,prefabId2=0,fastPrefabId2=0,symphonyPrefabIds={{},{}},symphonyFastPrefabIds={{},{}},symphonyPrefabIds2={{},{}},symphonyFastPrefabIds2={{},{}},segment={{},{}},skillIcon="",argsPreview={}}
+a.__index=a
+function a.New(l,y,f,t,g,b,p,v,q,x,j,_,z,E,k,w,h,s,n,o,i,r,u,d,m,c)
+local e={}
+setmetatable(e,a)
+e.id=l
+e.skillName=y
+e.skillText=f
+e.heroId=t
+e.scriptId=g
+e.skilltype=b
+e.args=p
+e.argsPvp=v
+e.monsterArgs=q
+e.monsterType=x
+e.atkType=j
+e.type=_
+e.skillRate=z
+e.coolDown=E
+e.costMp=k
+e.prefabId=w
+e.fastPrefabId=h
+e.prefabId2=s
+e.fastPrefabId2=n
+e.symphonyPrefabIds=o
+e.symphonyFastPrefabIds=i
+e.symphonyPrefabIds2=r
+e.symphonyFastPrefabIds2=u
+e.segment=d
+e.skillIcon=m
+e.argsPreview=c
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.skillName=t[2]
+e.skillText=t[3]
+e.heroId=t[4]
+e.scriptId=t[5]
+e.skilltype=t[6]
+e.args=t[7]
+e.argsPvp=t[8]
+e.monsterArgs=t[9]
+e.monsterType=t[10]
+e.atkType=t[11]
+e.type=t[12]
+e.skillRate=t[13]
+e.coolDown=t[14]
+e.costMp=t[15]
+e.prefabId=t[16]
+e.fastPrefabId=t[17]
+e.prefabId2=t[18]
+e.fastPrefabId2=t[19]
+e.symphonyPrefabIds=t[20]
+e.symphonyFastPrefabIds=t[21]
+e.symphonyPrefabIds2=t[22]
+e.symphonyFastPrefabIds2=t[23]
+e.segment=t[24]
+e.skillIcon=t[25]
+e.argsPreview=t[26]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/skillAct/DTSkillActEntityTableData')
+end
+return a 

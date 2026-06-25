@@ -1,0 +1,12 @@
+local t={}
+function t:OnHandle(e)
+local e=assert(GlobalPB.decode("PRT_SSR_A2_DRAW_RESP",e));
+if(GameInit.GetDebugLogProto())then
+;
+;
+end
+PlayerMgr.luckyShareNum=e.leftShareCount
+EventSystem.SendEvent(CommonEventId.OnRespSSRADraw,{protoId=ProtoId.PRT_SSR_A2_DRAW_RESP,proto=e})
+return e
+end
+return t 

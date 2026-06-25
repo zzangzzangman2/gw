@@ -1,0 +1,30 @@
+local t={id=0,heroId=0,headId=0,unlockAnimGroup=0,showAudio="",heroIdFORMULA="",headIdFORMULA=""}
+t.__index=t
+function t.New(o,h,a,s,r,n,i)
+local e={}
+setmetatable(e,t)
+e.id=o
+e.heroId=h
+e.headId=a
+e.unlockAnimGroup=s
+e.showAudio=r
+e.heroIdFORMULA=n
+e.headIdFORMULA=i
+return e
+end
+function t.NewFromArrItem(a)
+local e={}
+setmetatable(e,t)
+e.id=a[1]
+e.heroId=a[2]
+e.headId=a[3]
+e.unlockAnimGroup=a[4]
+e.showAudio=a[5]
+e.heroIdFORMULA=a[6]
+e.headIdFORMULA=a[7]
+return e
+end
+function t.GetArr()
+return require('DataNode/DataTable/Create/activity/DTSelfMarryCfgEntityTableData')
+end
+return t 

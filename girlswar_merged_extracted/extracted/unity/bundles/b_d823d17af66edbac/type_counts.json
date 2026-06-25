@@ -1,0 +1,12 @@
+{
+  "GameObject": 384,
+  "RectTransform": 384,
+  "MonoBehaviour": 366,
+  "CanvasRenderer": 94,
+  "Animator": 46,
+  "TextAsset": 28,
+  "Material": 14,
+  "Texture2D": 14,
+  "MonoScript": 7,
+  "AssetBundle": 1
+}

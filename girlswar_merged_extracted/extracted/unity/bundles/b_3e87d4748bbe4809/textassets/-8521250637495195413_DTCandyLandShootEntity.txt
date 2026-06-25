@@ -1,0 +1,32 @@
+local a={id=0,desc="",prefabId=0,shootCount=0,hitCount=0,speed=0,dayLimit=0,award={{},{}}}
+a.__index=a
+function a.New(i,h,n,t,d,r,s,o)
+local e={}
+setmetatable(e,a)
+e.id=i
+e.desc=h
+e.prefabId=n
+e.shootCount=t
+e.hitCount=d
+e.speed=r
+e.dayLimit=s
+e.award=o
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.desc=t[2]
+e.prefabId=t[3]
+e.shootCount=t[4]
+e.hitCount=t[5]
+e.speed=t[6]
+e.dayLimit=t[7]
+e.award=t[8]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/activity/DTCandyLandShootEntityTableData')
+end
+return a 

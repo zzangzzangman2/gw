@@ -1,0 +1,24 @@
+local e={id=0,petId=0,attrs={{},{}},unlock=0}
+e.__index=e
+function e.New(o,a,n,i)
+local t={}
+setmetatable(t,e)
+t.id=o
+t.petId=a
+t.attrs=n
+t.unlock=i
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.petId=a[2]
+t.attrs=a[3]
+t.unlock=a[4]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/summonPet/DTSummonPetTalentEntityTableData')
+end
+return e 

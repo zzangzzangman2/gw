@@ -1,0 +1,40 @@
+
+?
+GroupPhoto.protoCommons.protoErrorCode.proto"1
+	PRT_COLOR
+id (Rid
+value (Rvalue"<
+PRT_GRID
+id (Rid 
+color (2
+.PRT_COLORRcolor"
+PRT_GROUPPHOTO_ACTINFO_REQ"`
+PRT_GROUPPHOTO_ACTINFO_RESP
+grids (2	.PRT_GRIDRgrids 
+recAwardIds (RrecAwardIds"9
+PRT_GROUPPHOTO_COLOR_REQ
+grid (2	.PRT_GRIDRgrid"=
+PRT_GROUPPHOTO_COLOR_RESP 
+award (2
+.PRT_THINGRaward"+
+PRT_GROUPPHOTO_REWARD_REQ
+id (Rid"N
+PRT_GROUPPHOTO_REWARD_RESP
+id (Rid 
+award (2
+.PRT_THINGRaward"Y
+PRT_CS_GROUPPHOTO_COLOR_RESP
+playerId (RplayerId
+grid (2	.PRT_GRIDRgrid"?
+PRT_CS_GROUPPHOTO_REWARD_RESP
+playerId (RplayerId
+id (Rid
+result (Rresult"
+errCode (2.ErrCodeRerrCode"<
+PRT_CS_GROUPPHOTO_REDPOINT_REQ
+playerId (RplayerId"?
+PRT_CS_GROUPPHOTO_REDPOINT_RESP
+playerId (RplayerId3
+redPointIds (2.ENUM_REDPOINT_IDRredPointIds2
+isSendToOnlinePlayer (RisSendToOnlinePlayerB
+com.next1b.nextsvr.protobproto3

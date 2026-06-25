@@ -1,0 +1,13 @@
+
+?
+ActHCConsumeNew.proto"
+PRT_HC_CONSUME_NEW_INFO_REQ"?
+PRT_HC_CONSUME_NEW_INFO_RESP
+leftTime (RleftTime*
+totalHolyCrystal (RtotalHolyCrystal,
+receviedAwardDids (RreceviedAwardDids":
+PRT_HC_CONSUME_NEW_AWARD_REQ
+awardDid (RawardDid";
+PRT_HC_CONSUME_NEW_AWARD_RESP
+awardDid (RawardDidB
+com.next1b.nextsvr.protobproto3

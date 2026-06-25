@@ -1,0 +1,14 @@
+local t={}
+function t:OnHandle(e)
+local e=assert(GlobalPB.decode("PRT_CARNIVAL_FIGHT_RESP",e));
+if(GameInit.GetDebugLogProto())then
+;
+;
+end
+ModulesInit.ProcedureNormalBattle.IsRespBattleSuc=true
+if e.award then
+GameEntry.UI:OpenUIForm(UIFormId.UI_EliteBattleVictory,{award=e.award,isCarnival=true,mapId=ModulesInit.ProcedureNormalBattle.MapId})
+end
+return e
+end
+return t 

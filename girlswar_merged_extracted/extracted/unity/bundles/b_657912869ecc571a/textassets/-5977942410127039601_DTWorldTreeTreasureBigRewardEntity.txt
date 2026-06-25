@@ -1,0 +1,20 @@
+local e={id=0,reward={}}
+e.__index=e
+function e.New(a,o)
+local t={}
+setmetatable(t,e)
+t.id=a
+t.reward=o
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.reward=a[2]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/worldTree/DTWorldTreeTreasureBigRewardEntityTableData')
+end
+return e 

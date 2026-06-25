@@ -1,0 +1,13 @@
+{
+  "root_button_instances": 77,
+  "unique_button_names": 56,
+  "root_luacom_type4_entries": 47,
+  "button_instances_with_luacom_exact_match": 47,
+  "unique_button_names_with_luacom_exact_match": 46,
+  "buttons_with_direct_text_hits": 13,
+  "buttons_with_guide_or_event_evidence": 6,
+  "xlua_modules": 36,
+  "encrypted_xlua_modules": 36,
+  "candidate_csv": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_maininterface_unity\\Assets\\RestoreData\\reports\\maininterface_button_handler_candidates.csv",
+  "xlua_module_csv": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_maininterface_unity\\Assets\\RestoreData\\reports\\maininterface_xlua_modules.csv"
+}

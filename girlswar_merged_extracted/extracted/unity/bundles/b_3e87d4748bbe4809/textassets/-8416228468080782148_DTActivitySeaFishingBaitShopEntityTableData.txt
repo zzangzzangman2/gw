@@ -1,0 +1,9 @@
+local e=
+{
+ByIdx={
+{1,{1001,50},"actSeaFishing_buyName_1","actSeaFishing_buyDesc_1"},
+{2,{1001,100},"actSeaFishing_buyName_2","actSeaFishing_buyDesc_2"}
+},
+Len=2
+}
+return e 

@@ -1,0 +1,30 @@
+local t={id=0,activityCfgId=0,mapResorceId=0,avgId=0,desc="",avgIcon="",markPos=0}
+t.__index=t
+function t.New(o,h,a,s,r,n,i)
+local e={}
+setmetatable(e,t)
+e.id=o
+e.activityCfgId=h
+e.mapResorceId=a
+e.avgId=s
+e.desc=r
+e.avgIcon=n
+e.markPos=i
+return e
+end
+function t.NewFromArrItem(a)
+local e={}
+setmetatable(e,t)
+e.id=a[1]
+e.activityCfgId=a[2]
+e.mapResorceId=a[3]
+e.avgId=a[4]
+e.desc=a[5]
+e.avgIcon=a[6]
+e.markPos=a[7]
+return e
+end
+function t.GetArr()
+return require('DataNode/DataTable/Create/worldTree/DTWorldTreeTreasureMapEntityTableData')
+end
+return t 

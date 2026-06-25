@@ -1,0 +1,7 @@
+activityname_601.png
+size:256,64
+filter:Linear,Linear
+chuizi
+bounds:74,2,65,48
+tiezhan
+bounds:2,5,70,45

@@ -1,0 +1,32 @@
+local a={id=0,type=0,level=0,stage=0,attr={{},{}},cost={{},{}},image="",back=""}
+a.__index=a
+function a.New(i,h,n,t,d,r,s,o)
+local e={}
+setmetatable(e,a)
+e.id=i
+e.type=h
+e.level=n
+e.stage=t
+e.attr=d
+e.cost=r
+e.image=s
+e.back=o
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.type=t[2]
+e.level=t[3]
+e.stage=t[4]
+e.attr=t[5]
+e.cost=t[6]
+e.image=t[7]
+e.back=t[8]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/airship/DTAirShipComponentEntityTableData')
+end
+return a 

@@ -1,0 +1,30 @@
+local t={id=0,faceGiftID=0,goods=0,award={{},{}},desDiamonds=0,desDiscount="",showText=""}
+t.__index=t
+function t.New(o,h,a,s,r,n,i)
+local e={}
+setmetatable(e,t)
+e.id=o
+e.faceGiftID=h
+e.goods=a
+e.award=s
+e.desDiamonds=r
+e.desDiscount=n
+e.showText=i
+return e
+end
+function t.NewFromArrItem(a)
+local e={}
+setmetatable(e,t)
+e.id=a[1]
+e.faceGiftID=a[2]
+e.goods=a[3]
+e.award=a[4]
+e.desDiamonds=a[5]
+e.desDiscount=a[6]
+e.showText=a[7]
+return e
+end
+function t.GetArr()
+return require('DataNode/DataTable/Create/activity/DTFaceGiftAwardEntityTableData')
+end
+return t 

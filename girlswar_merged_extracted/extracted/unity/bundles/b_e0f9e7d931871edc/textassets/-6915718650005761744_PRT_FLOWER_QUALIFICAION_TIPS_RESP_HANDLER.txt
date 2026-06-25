@@ -1,0 +1,12 @@
+local t={}
+function t:OnHandle(e)
+local e=assert(GlobalPB.decode("PRT_FLOWER_QUALIFICAION_TIPS_RESP",e));
+if(GameInit.GetDebugLogProto())then
+;
+;
+end
+ModulesInit.FlowerFightMgr:synQualificationResp(e)
+EventSystem.SendEvent(CommonEventId.OnRespFlowerQualification,e)
+return e
+end
+return t 

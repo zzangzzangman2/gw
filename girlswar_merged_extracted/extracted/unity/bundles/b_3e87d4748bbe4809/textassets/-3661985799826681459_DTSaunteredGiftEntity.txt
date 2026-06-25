@@ -1,0 +1,38 @@
+local a={id=0,giftShop=0,goods=0,index=0,cost={},type=0,buyCount=0,showValue=0,giftName="",award={{},{}},useType=0}
+a.__index=a
+function a.New(n,r,s,t,l,u,c,d,h,o,i)
+local e={}
+setmetatable(e,a)
+e.id=n
+e.giftShop=r
+e.goods=s
+e.index=t
+e.cost=l
+e.type=u
+e.buyCount=c
+e.showValue=d
+e.giftName=h
+e.award=o
+e.useType=i
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.giftShop=t[2]
+e.goods=t[3]
+e.index=t[4]
+e.cost=t[5]
+e.type=t[6]
+e.buyCount=t[7]
+e.showValue=t[8]
+e.giftName=t[9]
+e.award=t[10]
+e.useType=t[11]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/activity/DTSaunteredGiftEntityTableData')
+end
+return a 

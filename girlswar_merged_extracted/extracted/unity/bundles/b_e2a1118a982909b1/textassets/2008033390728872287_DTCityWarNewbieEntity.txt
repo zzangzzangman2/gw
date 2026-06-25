@@ -1,0 +1,58 @@
+local a={id=0,level=0,mapType=0,connectionIds={},dailyAwardPoints=0,declareNeedPoints=0,teamMixHero=0,teamMaxHero=0,teamMixHeroNew=0,teamMaxHeroNew=0,skyBattleBoxLv=0,skyBattleBoxAwardStarNewbie={{},{}},monsters={},skyCityName="",MapskyCityIcon="",UIskyCityIcon="",UIskyCityIcon2="",UIskyCitysmallIcon="",skyBattleBoxAwardStarNewbieNew={{},{}},skyBattleBoxAwardStarNewbieNew2={{},{}},skyBattleBoxAwardStarNewbieNew3={{},{}}}
+a.__index=a
+function a.New(l,m,u,t,y,w,f,v,g,b,k,q,p,c,s,n,i,o,h,d,r)
+local e={}
+setmetatable(e,a)
+e.id=l
+e.level=m
+e.mapType=u
+e.connectionIds=t
+e.dailyAwardPoints=y
+e.declareNeedPoints=w
+e.teamMixHero=f
+e.teamMaxHero=v
+e.teamMixHeroNew=g
+e.teamMaxHeroNew=b
+e.skyBattleBoxLv=k
+e.skyBattleBoxAwardStarNewbie=q
+e.monsters=p
+e.skyCityName=c
+e.MapskyCityIcon=s
+e.UIskyCityIcon=n
+e.UIskyCityIcon2=i
+e.UIskyCitysmallIcon=o
+e.skyBattleBoxAwardStarNewbieNew=h
+e.skyBattleBoxAwardStarNewbieNew2=d
+e.skyBattleBoxAwardStarNewbieNew3=r
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.level=t[2]
+e.mapType=t[3]
+e.connectionIds=t[4]
+e.dailyAwardPoints=t[5]
+e.declareNeedPoints=t[6]
+e.teamMixHero=t[7]
+e.teamMaxHero=t[8]
+e.teamMixHeroNew=t[9]
+e.teamMaxHeroNew=t[10]
+e.skyBattleBoxLv=t[11]
+e.skyBattleBoxAwardStarNewbie=t[12]
+e.monsters=t[13]
+e.skyCityName=t[14]
+e.MapskyCityIcon=t[15]
+e.UIskyCityIcon=t[16]
+e.UIskyCityIcon2=t[17]
+e.UIskyCitysmallIcon=t[18]
+e.skyBattleBoxAwardStarNewbieNew=t[19]
+e.skyBattleBoxAwardStarNewbieNew2=t[20]
+e.skyBattleBoxAwardStarNewbieNew3=t[21]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/cityWar/DTCityWarNewbieEntityTableData')
+end
+return a 

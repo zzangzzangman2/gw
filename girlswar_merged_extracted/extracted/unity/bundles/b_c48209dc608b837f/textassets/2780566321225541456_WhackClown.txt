@@ -1,0 +1,23 @@
+
+?
+WhackClown.protoCommons.proto"=
+PRT_WHACK_CLOWN_LEVEL
+did (Rdid
+star (Rstar"
+PRT_WHACK_CLOWN_INFO_REQ"{
+PRT_WHACK_CLOWN_INFO_RESP
+stage (Rstage
+day (Rday6
+
+mouseTraps (2.PRT_WHACK_CLOWN_LEVELR
+mouseTraps"B
+PRT_WHACK_CLOWN_FINISH_REQ
+did (Rdid
+star (Rstar"?
+PRT_WHACK_CLOWN_FINISH_RESP
+stage (Rstage
+day (Rday8
+whackClowns (2.PRT_WHACK_CLOWN_LEVELRwhackClowns 
+award (2
+.PRT_THINGRawardB
+com.next1b.nextsvr.protobproto3

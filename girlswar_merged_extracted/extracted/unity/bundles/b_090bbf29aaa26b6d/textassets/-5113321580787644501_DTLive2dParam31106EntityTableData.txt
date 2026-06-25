@@ -1,0 +1,27 @@
+local e=
+{
+ByIdx={
+{"ParamSkirt1","ParamSkirt1",0,{{1,-1},{2,0}},"HitArea_ButtL,HitArea_ButtR",-10,0,5,10,1,2,"","","","rodSkirtL1,rodSkirtR1","rodSkirtL1:2,rodSkirtR1:2",1,10,0},
+{"ParamDragCross1","ParamDragCross1",0,{{4,0}},"HitArea_ButtCross",0,0,5,10,1,1,"","","1:rodCross1","rodCross1","rodCross1:1",1,10,0},
+{"ParamCrossOff","ParamCrossOff",0,{},"",0,0,5,10,0,1,"","","","rodCross1","rodCross1:1",1,10,0},
+{"ParamSofaCrossOn","ParamSofaCrossOn",0,{},"",0,0,5,10,0,1,"","","","rodCross1","rodCross1:1",1,10,0},
+{"ParamSofaCrossOn_2","ParamSofaCrossOn",1,{},"",0,10,5,10,1,1,"","","","","",1,10,0},
+{"ParamCrossChainOff","ParamCrossChainOff",0,{},"",0,0,5,10,0,1,"","","","rodCross1","rodCross1:1",1,10,0},
+{"ParamBlackSkirtOff","ParamBlackSkirtOff",0,{},"",0,0,5,10,0,1,"","","","tapTrigone1_sp1","tapTrigone1_sp1:1",1,10,0},
+{"ParamLegL_0","ParamLegL",0,{{1,0}},"HitArea_LegL",0,0,5,10,0,2,"","","1:rodLegL1","rodLegL1","rodLegL1:2",1,10,0},
+{"ParamLegL_1","ParamLegL",1,{{1,0}},"HitArea_LegL",0,0,5,10,0,2,"","","1:rodLegL2","rodLegL2","rodLegL2:2",1,10,0},
+{"ParamLegR_0","ParamLegR",0,{{2,0}},"HitArea_LegR",0,0,5,10,0,2,"","","1:rodLegR1","rodLegR1","rodLegR1:2",1,10,0},
+{"ParamLegR_1","ParamLegR",1,{{2,0}},"HitArea_LegR",0,0,5,10,0,2,"","","1:rodLegR2","rodLegR2","rodLegR2:2",1,10,0},
+{"ParamSkirt2","ParamSkirt2",1,{{3,0}},"HitArea_ButtL,HitArea_ButtR",0,0,5,10,0,2,"","","1:rodSkirt2","rodSkirt2","rodSkirt2:1",1,10,0},
+{"ParamButtL","ParamButtL",2,{{1,0}},"HitArea_ButtL",0,0,5,10,0,2,"","","1:rodButtL3","rodButtL3","rodButtL3:2",1,10,0},
+{"ParamButtR","ParamButtR",2,{{2,0}},"HitArea_ButtR",0,0,5,10,0,2,"","","1:rodButtR3","rodButtR3","rodButtR3:2",1,10,0},
+{"ParamShower","ParamShower",2,{{1,0}},"HitArea_Hand",0,0,5,10,0,1,"","","1:rodShower3","rodShower3","rodShower3:1,tapTrigone3_sp1:2",1,10,0},
+{"ParamBubbleBodyOn","ParamBubbleBodyOn",2,{},"",0,0,0,10,3,1,"","","","tapDuck3","tapDuck3:1,tapHead3_sp1:2,tapTrigone3_sp1:2",1,10,0},
+{"ParamBubbleBody","ParamBubbleBody",2,{},"",0,0,0,10,3,1,"","","","tapDuck3,tapHead3_sp1,tapTrigone3_sp1","tapDuck3:1,tapHead3_sp1:2,tapTrigone3_sp1:2",1,10,0},
+{"ParamBubbleLegOn","ParamBubbleLegOn",2,{},"",0,0,0,10,3,1,"","","","tapDuck3","tapDuck3:1,tapButt3_sp1:2,tapTrigone3_sp1:2",1,10,0},
+{"ParamBubbleL","ParamBubbleL",2,{},"",0,0,0,10,3,1,"","","","tapDuck3,tapButt3_sp1,tapTrigone3_sp1","tapDuck3:1,tapButt3_sp1:2,tapTrigone3_sp1:2",1,10,0},
+{"ParamBubbleR","ParamBubbleR",2,{},"",0,0,0,10,3,1,"","","","tapDuck3,tapButt3_sp1,tapTrigone3_sp1","tapDuck3:1,tapButt3_sp1:2,tapTrigone3_sp1:2",1,10,0}
+},
+Len=20
+}
+return e 

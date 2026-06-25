@@ -1,0 +1,26 @@
+local e={id=0,secondTime="",items={{},{}},headframe=0,jumpWeb=""}
+e.__index=e
+function e.New(o,n,a,s,i)
+local t={}
+setmetatable(t,e)
+t.id=o
+t.secondTime=n
+t.items=a
+t.headframe=s
+t.jumpWeb=i
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.secondTime=a[2]
+t.items=a[3]
+t.headframe=a[4]
+t.jumpWeb=a[5]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/charge/DTOfficialWebPayDisplayEntityTableData')
+end
+return e 

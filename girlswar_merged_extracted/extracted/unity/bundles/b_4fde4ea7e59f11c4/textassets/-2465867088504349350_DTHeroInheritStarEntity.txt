@@ -1,0 +1,28 @@
+local e={id=0,fromHeroStar=0,toHeroStar=0,starMapGroup=0,fromStarLevel=0,totStarLevel=0}
+e.__index=e
+function e.New(a,i,o,h,s,n)
+local t={}
+setmetatable(t,e)
+t.id=a
+t.fromHeroStar=i
+t.toHeroStar=o
+t.starMapGroup=h
+t.fromStarLevel=s
+t.totStarLevel=n
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.fromHeroStar=a[2]
+t.toHeroStar=a[3]
+t.starMapGroup=a[4]
+t.fromStarLevel=a[5]
+t.totStarLevel=a[6]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/hero/DTHeroInheritStarEntityTableData')
+end
+return e 

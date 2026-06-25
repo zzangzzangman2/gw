@@ -1,0 +1,18 @@
+
+?
+ActBeginnerFountain.proto" 
+PRT_BEGINNER_FOUNTAIN_INFO_REQ"?
+PRT_BEGINNER_FOUNTAIN_INFO_RESP
+leftTime (RleftTime 
+canGoodsDid (RcanGoodsDid
+totalHC (RtotalHC
+
+lastGainHC (R
+lastGainHC"@
+"PRT_BEGINNER_FOUNTAIN_EXCHANGE_REQ
+goodsDid (RgoodsDid"y
+#PRT_BEGINNER_FOUNTAIN_EXCHANGE_RESP
+gainHC (RgainHC 
+canGoodsDid (RcanGoodsDid
+totalHC (RtotalHCB
+com.next1b.nextsvr.protobproto3

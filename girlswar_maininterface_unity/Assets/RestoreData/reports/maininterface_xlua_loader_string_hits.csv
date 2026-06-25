@@ -1,0 +1,16 @@
+﻿term,stringliteral_index,value
+download/xlualogic,,/../../BIGD-CLIENT/Download/xLuaLogic
+download/xlualogic,,/Download/xLuaLogic/
+download/xlualogic,,Assets/Download/xLuaLogic/
+download/xlualogic,,Assets/Download/xLuaLogic/{0}.bytes
+DecryptByteArray,,DecryptByteArray
+DecryptGetString,,DecryptGetString
+LoadUIScript,,LoadUIScript
+OnCsEventCall,,OnCsEventCall
+SoketKey,,SoketKey
+LoadUIScript,,invalid arguments to YouYou.LuaManager.LoadUIScript!
+loading lua assetbundle exception,,loading lua assetbundle exception 
+LuaManager.GetLuaBuff,,lua load Error|LuaManager.GetLuaBuff|
+require 'Init/Login',,require 'Init/Login'
+download/xlualogic,,{0}/../../BIGD-CLIENT/Download/xLuaLogic/{1}.bytes
+download/xlualogic,,{0}/download/xLuaLogic/{1}.bytes

@@ -1,0 +1,24 @@
+local e={id=0,limtTime=0,awards={},name=""}
+e.__index=e
+function e.New(o,a,n,i)
+local t={}
+setmetatable(t,e)
+t.id=o
+t.limtTime=a
+t.awards=n
+t.name=i
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.limtTime=a[2]
+t.awards=a[3]
+t.name=a[4]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/sourceWorld/DTSourceWorldAnnuMatchesRewardsEntityTableData')
+end
+return e 

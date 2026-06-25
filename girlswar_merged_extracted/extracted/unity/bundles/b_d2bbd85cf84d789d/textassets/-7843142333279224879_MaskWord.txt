@@ -1,0 +1,7 @@
+
+?
+MaskWord.proto"
+PRT_CS_MASK_WORD_REQ"5
+PRT_CS_MASK_WORD_RESP
+	maskWords (	R	maskWordsB
+com.next1b.nextsvr.protobproto3

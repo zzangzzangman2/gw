@@ -1,0 +1,33 @@
+
+?
+ActFantasyBP.proto"?
+PRT_FANTASY_GROW_INFO
+level (Rlevel
+curCount (RcurCount,
+chargeAwardUnlock (RchargeAwardUnlock,
+receivedAwardDids (RreceivedAwardDids8
+receivedChargeAwardDids (RreceivedChargeAwardDids
+
+giftCharge (R
+giftCharge
+	rateValue (R	rateValue
+
+isBuyLevel (R
+isBuyLevel&
+chargeGiftDids	 (RchargeGiftDids"
+PRT_FANTASY_GROW_INFO_REQ"H
+PRT_FANTASY_GROW_INFO_RESP*
+info (2.PRT_FANTASY_GROW_INFORinfo"X
+"PRT_FANTASY_GROW_RECEIVE_AWARD_REQ
+did (Rdid 
+chargeAward (RchargeAward"Q
+#PRT_FANTASY_GROW_RECEIVE_AWARD_RESP*
+info (2.PRT_FANTASY_GROW_INFORinfo"(
+&PRT_FANTASY_GROW_RECEIVE_AWARD_ALL_REQ"U
+'PRT_FANTASY_GROW_RECEIVE_AWARD_ALL_RESP*
+info (2.PRT_FANTASY_GROW_INFORinfo"<
+PRT_FANTASY_GROW_BUY_LEVEL_REQ
+buyLevel (RbuyLevel"M
+PRT_FANTASY_GROW_BUY_LEVEL_RESP*
+info (2.PRT_FANTASY_GROW_INFORinfoB
+com.next1b.nextsvr.protobproto3

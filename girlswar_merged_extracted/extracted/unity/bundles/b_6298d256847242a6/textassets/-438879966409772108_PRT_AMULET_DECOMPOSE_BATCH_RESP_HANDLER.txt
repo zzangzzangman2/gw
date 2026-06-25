@@ -1,0 +1,11 @@
+local t={}
+function t:OnHandle(e)
+local e=assert(GlobalPB.decode("PRT_AMULET_DECOMPOSE_BATCH_RESP",e));
+if(GameInit.GetDebugLogProto())then
+;
+;
+end
+AmuletMgr:SynAmuletDecomposeBatchData(e)
+return e
+end
+return t 

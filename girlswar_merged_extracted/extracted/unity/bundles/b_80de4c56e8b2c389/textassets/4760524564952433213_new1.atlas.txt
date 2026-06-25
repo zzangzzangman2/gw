@@ -1,0 +1,7 @@
+new1.png
+size:256,64
+filter:Linear,Linear
+new1
+bounds:76,2,72,42
+xin
+bounds:2,2,72,42

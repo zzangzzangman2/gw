@@ -1,0 +1,26 @@
+local e={id=0,cost={{},{}},poolNum={{},{}},firstTurnFloopA=0,addAward={{},{}}}
+e.__index=e
+function e.New(o,n,a,s,i)
+local t={}
+setmetatable(t,e)
+t.id=o
+t.cost=n
+t.poolNum=a
+t.firstTurnFloopA=s
+t.addAward=i
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.cost=a[2]
+t.poolNum=a[3]
+t.firstTurnFloopA=a[4]
+t.addAward=a[5]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/calendar/DTSelectGacha2EntityTableData')
+end
+return e 

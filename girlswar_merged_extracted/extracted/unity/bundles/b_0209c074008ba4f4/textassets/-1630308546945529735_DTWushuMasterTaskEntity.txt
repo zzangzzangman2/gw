@@ -1,0 +1,28 @@
+local e={id=0,type=0,limitTime=0,awardPoint={{},{}},name="",desc=""}
+e.__index=e
+function e.New(a,i,o,h,s,n)
+local t={}
+setmetatable(t,e)
+t.id=a
+t.type=i
+t.limitTime=o
+t.awardPoint=h
+t.name=s
+t.desc=n
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.type=a[2]
+t.limitTime=a[3]
+t.awardPoint=a[4]
+t.name=a[5]
+t.desc=a[6]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/arena/DTWushuMasterTaskEntityTableData')
+end
+return e 

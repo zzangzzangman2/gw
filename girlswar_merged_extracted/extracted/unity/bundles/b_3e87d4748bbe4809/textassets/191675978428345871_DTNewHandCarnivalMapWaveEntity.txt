@@ -1,0 +1,32 @@
+local a={id=0,mapId=0,wave=0,isBoss=0,monsterLists={},Icon="",Name="",level=0}
+a.__index=a
+function a.New(i,h,n,t,d,r,s,o)
+local e={}
+setmetatable(e,a)
+e.id=i
+e.mapId=h
+e.wave=n
+e.isBoss=t
+e.monsterLists=d
+e.Icon=r
+e.Name=s
+e.level=o
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.mapId=t[2]
+e.wave=t[3]
+e.isBoss=t[4]
+e.monsterLists=t[5]
+e.Icon=t[6]
+e.Name=t[7]
+e.level=t[8]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/activity/DTNewHandCarnivalMapWaveEntityTableData')
+end
+return a 

@@ -1,0 +1,17 @@
+local e={}
+e.__index=e
+function e.Init()
+e.indexData={}
+e.indexData['index_1']={}
+e.indexData['index_1']['1']={10001,10002,10003,10101,10102,10103,10201,10202,10203,10301,10302,10303,10304,10305,10306,10307,10308,11001,11002,11101,11102,11201,11202}
+e.indexData['index_1']['2']={20001,20002,20003,20101,20102,20103,20201,20202,20203,20301,20302,20303,20304,20305,20306,20307,20308,21001,21002,21101,21102,21201,21202}
+end
+function e.GetByIndex(t,a)
+if e.indexData[t]and e.indexData[t][a]then
+return e.indexData[t][a]
+else
+return{}
+end
+end
+return e
+

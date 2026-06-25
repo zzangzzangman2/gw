@@ -1,0 +1,10 @@
+SP_Dock_2.png
+size:126,146
+filter:Linear,Linear
+SP_Dock_3
+bounds:82,99,44,47
+aZY1
+bounds:0,63,83,80
+rotate:90
+aZY2
+bounds:0,0,105,61

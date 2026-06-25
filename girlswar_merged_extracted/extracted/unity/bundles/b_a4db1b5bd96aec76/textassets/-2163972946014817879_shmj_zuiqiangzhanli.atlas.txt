@@ -1,0 +1,8 @@
+shmj_zuiqiangzhanli.png
+size:256,256
+filter:Linear,Linear
+hw
+bounds:2,2,198,41
+offsets:1,1,200,43
+m9
+bounds:2,45,154,154

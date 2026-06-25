@@ -1,0 +1,42 @@
+local a={id=0,skinUnlockDesc="",attrs={{},{}},heroId=0,sortId=0,modelID=0,bgOffset=0,bgOffsetY=0,heroOffset=0,heroOffsetY=0,heroScaleBack=0,heroOffsetBack=0,heroOffsetYBack=0}
+a.__index=a
+function a.New(s,d,h,t,l,c,m,f,u,r,i,o,n)
+local e={}
+setmetatable(e,a)
+e.id=s
+e.skinUnlockDesc=d
+e.attrs=h
+e.heroId=t
+e.sortId=l
+e.modelID=c
+e.bgOffset=m
+e.bgOffsetY=f
+e.heroOffset=u
+e.heroOffsetY=r
+e.heroScaleBack=i
+e.heroOffsetBack=o
+e.heroOffsetYBack=n
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.skinUnlockDesc=t[2]
+e.attrs=t[3]
+e.heroId=t[4]
+e.sortId=t[5]
+e.modelID=t[6]
+e.bgOffset=t[7]
+e.bgOffsetY=t[8]
+e.heroOffset=t[9]
+e.heroOffsetY=t[10]
+e.heroScaleBack=t[11]
+e.heroOffsetBack=t[12]
+e.heroOffsetYBack=t[13]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/symphony/DTSymphonyEntityTableData')
+end
+return a 

@@ -1,0 +1,11 @@
+local t={}
+function t:OnHandle(e)
+local e=assert(GlobalPB.decode("PRT_DIRECTIVES4_PLAYER_AWARD_RESP",e));
+if(GameInit.GetDebugLogProto())then
+;
+;
+end
+ModulesInit.ActDirectivesSourceWorldMgr:RespDirectivesPlayerAward(e)
+return e
+end
+return t 

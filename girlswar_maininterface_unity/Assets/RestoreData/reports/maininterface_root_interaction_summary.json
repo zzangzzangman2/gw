@@ -1,0 +1,15 @@
+{
+  "root_rect_id": "5568884429252053541",
+  "root_recttransforms": 806,
+  "root_game_objects": 806,
+  "root_images": 300,
+  "root_ready_sprites": 214,
+  "root_texts": 138,
+  "root_buttons": 77,
+  "root_scrollrects": 3,
+  "raycast_targets": 154,
+  "transparent_raycast_candidates": 27,
+  "large_nonbutton_raycast": 0,
+  "invisible_raycast_candidates": 0,
+  "reports_dir": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_maininterface_unity\\Assets\\RestoreData\\reports"
+}

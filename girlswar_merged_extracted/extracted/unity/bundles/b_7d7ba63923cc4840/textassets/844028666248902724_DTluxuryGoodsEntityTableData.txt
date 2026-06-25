@@ -1,0 +1,34 @@
+local e=
+{
+ByIdx={
+{951401,10,"luxuryname_951401","UILuxuryIC/luxuryicon_951401",1,4,0,{0},1},
+{951501,100,"luxuryname_951501","UILuxuryIC/luxuryicon_951501",1,5,0,{0},1},
+{951601,1000,"luxuryname_951601","UILuxuryIC/luxuryicon_951601",1,6,1,{0},1},
+{952401,10,"luxuryname_952401","UILuxuryIC/luxuryicon_952401",2,4,0,{0},1},
+{952501,100,"luxuryname_952501","UILuxuryIC/luxuryicon_952501",2,5,0,{0},1},
+{952601,1000,"luxuryname_952601","UILuxuryIC/luxuryicon_952601",2,6,1,{0},1},
+{953401,10,"luxuryname_953401","UILuxuryIC/luxuryicon_953401",3,4,0,{0},1},
+{953501,100,"luxuryname_953501","UILuxuryIC/luxuryicon_953501",3,5,0,{0},1},
+{953601,1000,"luxuryname_953601","UILuxuryIC/luxuryicon_953601",3,6,1,{0},1},
+{951402,11,"luxuryname_951402","UILuxuryIC/luxuryicon_951402",1,4,0,{0},2},
+{951502,101,"luxuryname_951502","UILuxuryIC/luxuryicon_951502",1,5,0,{0},2},
+{951602,1001,"luxuryname_951602","UILuxuryIC/luxuryicon_951602",1,6,1,{0},2},
+{952402,11,"luxuryname_952402","UILuxuryIC/luxuryicon_952402",2,4,0,{0},2},
+{952502,101,"luxuryname_952502","UILuxuryIC/luxuryicon_952502",2,5,0,{0},2},
+{952602,1001,"luxuryname_952602","UILuxuryIC/luxuryicon_952602",2,6,1,{0},2},
+{953402,11,"luxuryname_953402","UILuxuryIC/luxuryicon_953402",3,4,0,{0},2},
+{953502,101,"luxuryname_953502","UILuxuryIC/luxuryicon_953502",3,5,0,{0},2},
+{953602,1001,"luxuryname_953602","UILuxuryIC/luxuryicon_953602",3,6,1,{0},2},
+{951403,11,"luxuryname_951403","UILuxuryIC/luxuryicon_951403",1,4,0,{0},3},
+{951503,101,"luxuryname_951503","UILuxuryIC/luxuryicon_951503",1,5,0,{0},3},
+{951603,1001,"luxuryname_951603","UILuxuryIC/luxuryicon_951603",1,6,1,{0},3},
+{952403,11,"luxuryname_952403","UILuxuryIC/luxuryicon_952403",2,4,0,{0},3},
+{952503,101,"luxuryname_952503","UILuxuryIC/luxuryicon_952503",2,5,0,{0},3},
+{952603,1001,"luxuryname_952603","UILuxuryIC/luxuryicon_952603",2,6,1,{0},3},
+{953403,11,"luxuryname_953403","UILuxuryIC/luxuryicon_953403",3,4,0,{0},3},
+{953503,101,"luxuryname_953503","UILuxuryIC/luxuryicon_953503",3,5,0,{0},3},
+{953603,1001,"luxuryname_953603","UILuxuryIC/luxuryicon_953603",3,6,1,{0},3}
+},
+Len=27
+}
+return e 

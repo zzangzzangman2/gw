@@ -1,0 +1,46 @@
+local a={id=0,rewardGroupA={{},{}},getNumA=0,weightA=0,rewardGroupB={{},{}},getNumB=0,weightB=0,rewardGroupC={{},{}},getNumC=0,weightC=0,rewardGroupD={{},{}},getNumD=0,weightD=0,rememberItem={{},{}},broadCastItem={{},{}}}
+a.__index=a
+function a.New(s,l,r,t,u,m,w,f,y,c,d,i,o,n,h)
+local e={}
+setmetatable(e,a)
+e.id=s
+e.rewardGroupA=l
+e.getNumA=r
+e.weightA=t
+e.rewardGroupB=u
+e.getNumB=m
+e.weightB=w
+e.rewardGroupC=f
+e.getNumC=y
+e.weightC=c
+e.rewardGroupD=d
+e.getNumD=i
+e.weightD=o
+e.rememberItem=n
+e.broadCastItem=h
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.rewardGroupA=t[2]
+e.getNumA=t[3]
+e.weightA=t[4]
+e.rewardGroupB=t[5]
+e.getNumB=t[6]
+e.weightB=t[7]
+e.rewardGroupC=t[8]
+e.getNumC=t[9]
+e.weightC=t[10]
+e.rewardGroupD=t[11]
+e.getNumD=t[12]
+e.weightD=t[13]
+e.rememberItem=t[14]
+e.broadCastItem=t[15]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/activity/DTManbaoGoodsRawardGroupEntityTableData')
+end
+return a 

@@ -1,0 +1,13 @@
+{
+  "decoded_dir": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\decoded\\xlua",
+  "lua_files": 36,
+  "handler_rows": 332,
+  "ui_listener_rows": 206,
+  "event_system_rows": 126,
+  "unique_ui_targets": 131,
+  "outputs": {
+    "csv": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_maininterface_unity\\Assets\\RestoreData\\reports\\maininterface_decoded_lua_handlers.csv",
+    "json": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_maininterface_unity\\Assets\\RestoreData\\reports\\maininterface_decoded_lua_handler_summary.json",
+    "md": "C:\\Users\\godho\\Downloads\\girlswar\\MAININTERFACE_LUA_HANDLER_SCAN.md"
+  }
+}

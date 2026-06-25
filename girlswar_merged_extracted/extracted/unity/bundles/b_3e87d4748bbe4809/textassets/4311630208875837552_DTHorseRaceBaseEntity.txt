@@ -1,0 +1,52 @@
+local a={id=0,drawCost={},raceCost={},trainCost={},pieceCost={},worshipDrop={{},{}},unlockFloor={},rankShowMax=0,raceShowMax=0,drawRedPointNum=0,drawPointRate={{},{}},turnSpine={},raceItemPoint=0,trainItemPoint=0,quickTrainTimes=0,additionalAward={},iconographyProve=0,atlasId=0}
+a.__index=a
+function a.New(d,c,l,t,f,m,y,v,p,b,w,u,n,i,o,s,r,h)
+local e={}
+setmetatable(e,a)
+e.id=d
+e.drawCost=c
+e.raceCost=l
+e.trainCost=t
+e.pieceCost=f
+e.worshipDrop=m
+e.unlockFloor=y
+e.rankShowMax=v
+e.raceShowMax=p
+e.drawRedPointNum=b
+e.drawPointRate=w
+e.turnSpine=u
+e.raceItemPoint=n
+e.trainItemPoint=i
+e.quickTrainTimes=o
+e.additionalAward=s
+e.iconographyProve=r
+e.atlasId=h
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.drawCost=t[2]
+e.raceCost=t[3]
+e.trainCost=t[4]
+e.pieceCost=t[5]
+e.worshipDrop=t[6]
+e.unlockFloor=t[7]
+e.rankShowMax=t[8]
+e.raceShowMax=t[9]
+e.drawRedPointNum=t[10]
+e.drawPointRate=t[11]
+e.turnSpine=t[12]
+e.raceItemPoint=t[13]
+e.trainItemPoint=t[14]
+e.quickTrainTimes=t[15]
+e.additionalAward=t[16]
+e.iconographyProve=t[17]
+e.atlasId=t[18]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/activity/DTHorseRaceBaseEntityTableData')
+end
+return a 

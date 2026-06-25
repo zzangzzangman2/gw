@@ -1,0 +1,75 @@
+
+?
+ActTravel.proto"
+PRT_TRAVEL_INFO_REQ"?
+PRT_TRAVEL_INFO_RESP
+
+dayStamina (R
+dayStamina
+
+curStamina (R
+curStamina"
+curTravelExp (RcurTravelExp
+
+actEndTime (R
+actEndTime
+
+expRewards (R
+expRewards"
+actStartTime (RactStartTime
+	firstShow (R	firstShow"E
+PRT_SHOP_INFO
+itemDid (RitemDid
+buyCount (RbuyCount"6
+PRT_TRAVEL_SHOP_INFO_REQ
+shopType (RshopType"A
+PRT_TRAVEL_SHOP_INFO_RESP$
+shops (2.PRT_SHOP_INFORshops"a
+PRT_TRAVEL_SHOP_BUY_REQ
+shopType (RshopType
+itemDid (RitemDid
+num (Rnum"4
+PRT_TRAVEL_SHOP_BUY_RESP
+coinNum (RcoinNum"^
+PRT_TRAVEL_HISTORY
+	branchDid (R	branchDid
+time (Rtime
+choose (Rchoose"9
+PRT_TRAVEL_EXPLORE_INFO_REQ
+eventDid (ReventDid"?
+PRT_TRAVEL_EXPLORE_INFO_RESP
+eventDid (ReventDid
+	branchDid (R	branchDid/
+historys (2.PRT_TRAVEL_HISTORYRhistorys"q
+PRT_TRAVEL_EXPLORE_CHOOSE_REQ
+eventDid (ReventDid
+	branchDid (R	branchDid
+choose (Rchoose"?
+PRT_TRAVEL_EXPLORE_CHOOSE_RESP
+eventDid (ReventDid-
+history (2.PRT_TRAVEL_HISTORYRhistory"
+newBranchDid (RnewBranchDid
+
+curStamina (R
+curStamina"
+curTravelExp (RcurTravelExp"=
+PRT_TRAVEL_EXP_REWARD_REQ 
+expAwardDid (RexpAwardDid"<
+PRT_TRAVEL_EXP_REWARD_RESP
+
+expRewards (R
+expRewards"_
+PRT_TRAVEL_TASK
+did (Rdid
+progress (Rprogress
+
+taskStatus (R
+taskStatus"
+PRT_TRAVEL_TASK_INFO_REQ"I
+PRT_TRAVEL_TASK_INFO_RESP,
+taskList (2.PRT_TRAVEL_TASKRtaskList"/
+PRT_TRAVEL_TASK_RECEIVE_REQ
+did (Rdid"D
+PRT_TRAVEL_TASK_RECEIVE_RESP$
+task (2.PRT_TRAVEL_TASKRtaskB
+com.next1b.nextsvr.protobproto3

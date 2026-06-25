@@ -1,0 +1,10 @@
+shmj_chuanduo.png
+size:1024,1024
+filter:Linear,Linear
+a1
+bounds:0,47,508,514
+offsets:1,1,510,516
+a2
+bounds:510,0,561,463
+offsets:6,8,573,479
+rotate:90

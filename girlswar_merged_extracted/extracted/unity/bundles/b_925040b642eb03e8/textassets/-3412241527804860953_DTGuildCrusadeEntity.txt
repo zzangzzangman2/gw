@@ -1,0 +1,22 @@
+local e={id=0,needLv=0,extract={{},{}}}
+e.__index=e
+function e.New(o,a,i)
+local t={}
+setmetatable(t,e)
+t.id=o
+t.needLv=a
+t.extract=i
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.needLv=a[2]
+t.extract=a[3]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/guild/DTGuildCrusadeEntityTableData')
+end
+return e 

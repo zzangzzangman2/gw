@@ -1,0 +1,11 @@
+local t={}
+function t:OnHandle(e)
+local e=assert(GlobalPB.decode("PRT_SUMMON_PET_CORRAL_UNLOCK_POS_RESP",e));
+if(GameInit.GetDebugLogProto())then
+;
+;
+end
+SummonPetEggMgr:OnRespSummonPetCorralOpenPos(e)
+return e
+end
+return t 

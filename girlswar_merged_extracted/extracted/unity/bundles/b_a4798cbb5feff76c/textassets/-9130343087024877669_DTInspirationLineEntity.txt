@@ -1,0 +1,44 @@
+local a={id=0,dialogueTableName="",heroVoice=0,roleName="",Verticaldrawing=0,pictureleft=0,expressionleft="",pictureright=0,expressionright="",dialogue=0,select1="",followup1=0,select2="",followup2=0}
+a.__index=a
+function a.New(s,l,r,t,u,m,f,w,c,d,i,o,n,h)
+local e={}
+setmetatable(e,a)
+e.id=s
+e.dialogueTableName=l
+e.heroVoice=r
+e.roleName=t
+e.Verticaldrawing=u
+e.pictureleft=m
+e.expressionleft=f
+e.pictureright=w
+e.expressionright=c
+e.dialogue=d
+e.select1=i
+e.followup1=o
+e.select2=n
+e.followup2=h
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.dialogueTableName=t[2]
+e.heroVoice=t[3]
+e.roleName=t[4]
+e.Verticaldrawing=t[5]
+e.pictureleft=t[6]
+e.expressionleft=t[7]
+e.pictureright=t[8]
+e.expressionright=t[9]
+e.dialogue=t[10]
+e.select1=t[11]
+e.followup1=t[12]
+e.select2=t[13]
+e.followup2=t[14]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/worldMap/DTInspirationLineEntityTableData')
+end
+return a 

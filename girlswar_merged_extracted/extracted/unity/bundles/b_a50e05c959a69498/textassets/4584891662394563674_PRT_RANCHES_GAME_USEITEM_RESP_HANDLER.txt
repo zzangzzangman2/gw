@@ -1,0 +1,11 @@
+local t={}
+function t:OnHandle(e)
+local e=assert(GlobalPB.decode("PRT_RANCHES_GAME_USEITEM_RESP",e));
+if(GameInit.GetDebugLogProto())then
+;
+;
+end
+ModulesInit.ActRanchesChessMgr:ParseUseItem(e)
+return e
+end
+return t 

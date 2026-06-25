@@ -1,0 +1,46 @@
+local a={id=0,show=0,areaIndex=0,preArea=0,staminaCost=0,maxExplorePoint=0,eventPool={{},{}},explorePointEvent=0,mapPrefabId=0,showEventId={},name="",titleName="",desc="",bannerPath="",mapPosRoot=0}
+a.__index=a
+function a.New(s,l,r,t,u,m,w,f,y,c,d,i,o,n,h)
+local e={}
+setmetatable(e,a)
+e.id=s
+e.show=l
+e.areaIndex=r
+e.preArea=t
+e.staminaCost=u
+e.maxExplorePoint=m
+e.eventPool=w
+e.explorePointEvent=f
+e.mapPrefabId=y
+e.showEventId=c
+e.name=d
+e.titleName=i
+e.desc=o
+e.bannerPath=n
+e.mapPosRoot=h
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.show=t[2]
+e.areaIndex=t[3]
+e.preArea=t[4]
+e.staminaCost=t[5]
+e.maxExplorePoint=t[6]
+e.eventPool=t[7]
+e.explorePointEvent=t[8]
+e.mapPrefabId=t[9]
+e.showEventId=t[10]
+e.name=t[11]
+e.titleName=t[12]
+e.desc=t[13]
+e.bannerPath=t[14]
+e.mapPosRoot=t[15]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/worldTree/DTWorldTreeMapEntityTableData')
+end
+return a 

@@ -1,0 +1,15 @@
+local e=
+{
+ByIdx={
+{1,40003200,2,{{0}},"MushroomPlotHeadline_1","MushroomPlotDepiction_1",""},
+{2,40003300,7,{{0}},"MushroomPlotHeadline_2","MushroomPlotDepiction_2",""},
+{3,40003400,12,{{0}},"MushroomPlotHeadline_3","MushroomPlotDepiction_3",""},
+{4,40003500,17,{{0}},"MushroomPlotHeadline_4","MushroomPlotDepiction_4",""},
+{5,40003600,22,{{0}},"MushroomPlotHeadline_5","MushroomPlotDepiction_5",""},
+{6,40003700,27,{{0}},"MushroomPlotHeadline_6","MushroomPlotDepiction_6",""},
+{7,40003800,32,{{0}},"MushroomPlotHeadline_7","MushroomPlotDepiction_7",""},
+{8,40003900,37,{{99602,10}},"MushroomPlotHeadline_8","MushroomPlotDepiction_8","UIActRanches/mhmc_baitu2"}
+},
+Len=8
+}
+return e 

@@ -1,0 +1,15 @@
+haohuatiankongzhijing.png
+size:512,512
+filter:Linear,Linear
+7
+bounds:470,364,34,40
+bp_zys6
+bounds:0,0,469,80
+fx1
+bounds:0,81,469,80
+fx2
+bounds:0,162,469,80
+fx3
+bounds:0,243,469,80
+fx4
+bounds:0,324,469,80

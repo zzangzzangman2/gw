@@ -1,0 +1,23 @@
+local e=
+{
+ByIdx={
+{1,1,"UICruiseShip/itemicon_js1",1,{15023,1},{0},"CuriseDesc_1"},
+{2,1,"UICruiseShip/itemicon_js2",2,{15023,2},{1001,200},"CuriseDesc_2"},
+{3,1,"UICruiseShip/itemicon_js3",3,{15023,3},{1001,450},"CuriseDesc_3"},
+{4,1,"UICruiseShip/itemicon_js4",4,{15023,4},{1001,600},"CuriseDesc_4"},
+{5,2,"UICruiseShip/itemicon_js1",1,{15044,1},{0},"CuriseDesc_1"},
+{6,2,"UICruiseShip/itemicon_js2",2,{15044,2},{1001,200},"CuriseDesc_2"},
+{7,2,"UICruiseShip/itemicon_js3",3,{15044,3},{1001,450},"CuriseDesc_3"},
+{8,2,"UICruiseShip/itemicon_js4",4,{15044,4},{1001,600},"CuriseDesc_4"},
+{9,3,"UICruiseShip/itemicon_js1",1,{15041,1},{0},"CuriseDesc_1"},
+{10,3,"UICruiseShip/itemicon_js2",2,{15041,2},{1001,200},"CuriseDesc_2"},
+{11,3,"UICruiseShip/itemicon_js3",3,{15041,3},{1001,450},"CuriseDesc_3"},
+{12,3,"UICruiseShip/itemicon_js4",4,{15041,4},{1001,600},"CuriseDesc_4"},
+{13,4,"UICruiseShip/itemicon_js1",1,{15043,1},{0},"CuriseDesc_1"},
+{14,4,"UICruiseShip/itemicon_js2",2,{15043,2},{1001,200},"CuriseDesc_2"},
+{15,4,"UICruiseShip/itemicon_js3",3,{15043,3},{1001,450},"CuriseDesc_3"},
+{16,4,"UICruiseShip/itemicon_js4",4,{15043,4},{1001,600},"CuriseDesc_4"}
+},
+Len=16
+}
+return e 

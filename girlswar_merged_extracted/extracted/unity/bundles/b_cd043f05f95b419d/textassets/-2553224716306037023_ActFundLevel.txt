@@ -1,0 +1,17 @@
+
+?
+ActFundLevel.proto"
+PRT_LEVEL_FUND_INFO_REQ"?
+PRT_LEVEL_FUND_INFO_RESP
+leftTime (RleftTime
+charged (Rcharged
+level (Rlevel*
+receivedFreeDids (RreceivedFreeDids.
+receivedChargeDids (RreceivedChargeDids"N
+PRT_LEVEL_FUND_AWARD_REQ
+awardDid (RawardDid
+charge (Rcharge"O
+PRT_LEVEL_FUND_AWARD_RESP
+awardDid (RawardDid
+charge (RchargeB
+com.next1b.nextsvr.protobproto3

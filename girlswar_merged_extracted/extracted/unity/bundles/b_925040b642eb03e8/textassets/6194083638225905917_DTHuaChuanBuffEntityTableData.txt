@@ -1,0 +1,14 @@
+local e=
+{
+ByIdx={
+{1,1,{5,5,8},"Assets/Download/ArtSources/UISpriteRes/UIHuaChuan/icon_lzbuff1.png","huachuanbuffname_1","huachuanbuffdesc_1"},
+{2,2,{10,1},"Assets/Download/ArtSources/UISpriteRes/UIHuaChuan/icon_lzbuff2.png","huachuanbuffname_2","huachuanbuffdesc_2"},
+{3,3,{10,25},"Assets/Download/ArtSources/UISpriteRes/UIHuaChuan/icon_lzbuff3.png","huachuanbuffname_3","huachuanbuffdesc_3"},
+{4,4,{10},"Assets/Download/ArtSources/UISpriteRes/UIHuaChuan/icon_lzbuff4.png","huachuanbuffname_4","huachuanbuffdesc_4"},
+{5,5,{30,50,15},"","",""},
+{6,6,{50},"","",""},
+{7,6,{100},"","",""}
+},
+Len=7
+}
+return e 

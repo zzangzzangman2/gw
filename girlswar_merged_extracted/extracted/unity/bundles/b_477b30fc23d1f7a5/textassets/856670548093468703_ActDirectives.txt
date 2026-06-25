@@ -1,0 +1,204 @@
+
+?6
+ActDirectives.protoCommons.proto"?
+PRT_DIRECTIVES
+taskDid (RtaskDid
+count (Rcount
+	endSecond (R	endSecond
+cdSecond (RcdSecond
+
+isRecAward (R
+isRecAward"
+PRT_DIRECTIVES1_INFO_REQ"?
+PRT_DIRECTIVES1_INFO_RESP$
+isJoinMainDir (RisJoinMainDir)
+mainDir (2.PRT_DIRECTIVESRmainDir-
+	playerDir (2.PRT_DIRECTIVESR	playerDir
+	serverIds (R	serverIds"
+PRT_DIRECTIVES1_MAIN_REQ"F
+PRT_DIRECTIVES1_MAIN_RESP)
+mainDir (2.PRT_DIRECTIVESRmainDir" 
+PRT_DIRECTIVES1_MAIN_AWARD_REQ"D
+PRT_DIRECTIVES1_MAIN_AWARD_RESP!
+dir (2.PRT_DIRECTIVESRdir""
+ PRT_DIRECTIVES1_PLAYER_AWARD_REQ"F
+!PRT_DIRECTIVES1_PLAYER_AWARD_RESP!
+dir (2.PRT_DIRECTIVESRdir"9
+PRT_CS_DIRECTIVES1_INFO_REQ
+playerId (RplayerId"?
+PRT_CS_DIRECTIVES1_INFO_RESP
+playerId (RplayerId$
+isJoinMainDir (RisJoinMainDir)
+mainDir (2.PRT_DIRECTIVESRmainDir
+	serverIds (R	serverIds">
+ PRT_CS_DIRECTIVES1_RED_POINT_REQ
+playerId (RplayerId"?
+!PRT_CS_DIRECTIVES1_RED_POINT_RESP
+playerId (RplayerId3
+redPointIds (2.ENUM_REDPOINT_IDRredPointIds2
+isSendToOnlinePlayer (RisSendToOnlinePlayer"|
+*PRT_CS_DIRECTIVES1_MAIN_TASK_ADD_COUNT_REQ
+playerId (RplayerId
+addCount (RaddCount
+isJoin (RisJoin"
+PRT_DIRECTIVES2_INFO_REQ"?
+PRT_DIRECTIVES2_INFO_RESP$
+isJoinMainDir (RisJoinMainDir)
+mainDir (2.PRT_DIRECTIVESRmainDir-
+	playerDir (2.PRT_DIRECTIVESR	playerDir
+	serverIds (R	serverIds"
+PRT_DIRECTIVES2_MAIN_REQ"F
+PRT_DIRECTIVES2_MAIN_RESP)
+mainDir (2.PRT_DIRECTIVESRmainDir" 
+PRT_DIRECTIVES2_MAIN_AWARD_REQ"D
+PRT_DIRECTIVES2_MAIN_AWARD_RESP!
+dir (2.PRT_DIRECTIVESRdir""
+ PRT_DIRECTIVES2_PLAYER_AWARD_REQ"F
+!PRT_DIRECTIVES2_PLAYER_AWARD_RESP!
+dir (2.PRT_DIRECTIVESRdir"9
+PRT_CS_DIRECTIVES2_INFO_REQ
+playerId (RplayerId"?
+PRT_CS_DIRECTIVES2_INFO_RESP
+playerId (RplayerId$
+isJoinMainDir (RisJoinMainDir)
+mainDir (2.PRT_DIRECTIVESRmainDir
+	serverIds (R	serverIds">
+ PRT_CS_DIRECTIVES2_RED_POINT_REQ
+playerId (RplayerId"?
+!PRT_CS_DIRECTIVES2_RED_POINT_RESP
+playerId (RplayerId3
+redPointIds (2.ENUM_REDPOINT_IDRredPointIds2
+isSendToOnlinePlayer (RisSendToOnlinePlayer"|
+*PRT_CS_DIRECTIVES2_MAIN_TASK_ADD_COUNT_REQ
+playerId (RplayerId
+addCount (RaddCount
+isJoin (RisJoin"
+PRT_DIRECTIVES3_INFO_REQ"?
+PRT_DIRECTIVES3_INFO_RESP$
+isJoinMainDir (RisJoinMainDir)
+mainDir (2.PRT_DIRECTIVESRmainDir-
+	playerDir (2.PRT_DIRECTIVESR	playerDir
+	serverIds (R	serverIds"
+PRT_DIRECTIVES3_MAIN_REQ"F
+PRT_DIRECTIVES3_MAIN_RESP)
+mainDir (2.PRT_DIRECTIVESRmainDir" 
+PRT_DIRECTIVES3_MAIN_AWARD_REQ"D
+PRT_DIRECTIVES3_MAIN_AWARD_RESP!
+dir (2.PRT_DIRECTIVESRdir""
+ PRT_DIRECTIVES3_PLAYER_AWARD_REQ"F
+!PRT_DIRECTIVES3_PLAYER_AWARD_RESP!
+dir (2.PRT_DIRECTIVESRdir"9
+PRT_CS_DIRECTIVES3_INFO_REQ
+playerId (RplayerId"?
+PRT_CS_DIRECTIVES3_INFO_RESP
+playerId (RplayerId$
+isJoinMainDir (RisJoinMainDir)
+mainDir (2.PRT_DIRECTIVESRmainDir
+	serverIds (R	serverIds">
+ PRT_CS_DIRECTIVES3_RED_POINT_REQ
+playerId (RplayerId"?
+!PRT_CS_DIRECTIVES3_RED_POINT_RESP
+playerId (RplayerId3
+redPointIds (2.ENUM_REDPOINT_IDRredPointIds2
+isSendToOnlinePlayer (RisSendToOnlinePlayer"|
+*PRT_CS_DIRECTIVES3_MAIN_TASK_ADD_COUNT_REQ
+playerId (RplayerId
+addCount (RaddCount
+isJoin (RisJoin"
+PRT_DIRECTIVES4_INFO_REQ"?
+PRT_DIRECTIVES4_INFO_RESP$
+isJoinMainDir (RisJoinMainDir)
+mainDir (2.PRT_DIRECTIVESRmainDir-
+	playerDir (2.PRT_DIRECTIVESR	playerDir
+	serverIds (R	serverIds"
+PRT_DIRECTIVES4_MAIN_REQ"F
+PRT_DIRECTIVES4_MAIN_RESP)
+mainDir (2.PRT_DIRECTIVESRmainDir" 
+PRT_DIRECTIVES4_MAIN_AWARD_REQ"D
+PRT_DIRECTIVES4_MAIN_AWARD_RESP!
+dir (2.PRT_DIRECTIVESRdir""
+ PRT_DIRECTIVES4_PLAYER_AWARD_REQ"F
+!PRT_DIRECTIVES4_PLAYER_AWARD_RESP!
+dir (2.PRT_DIRECTIVESRdir"9
+PRT_CS_DIRECTIVES4_INFO_REQ
+playerId (RplayerId"?
+PRT_CS_DIRECTIVES4_INFO_RESP
+playerId (RplayerId$
+isJoinMainDir (RisJoinMainDir)
+mainDir (2.PRT_DIRECTIVESRmainDir
+	serverIds (R	serverIds">
+ PRT_CS_DIRECTIVES4_RED_POINT_REQ
+playerId (RplayerId"?
+!PRT_CS_DIRECTIVES4_RED_POINT_RESP
+playerId (RplayerId3
+redPointIds (2.ENUM_REDPOINT_IDRredPointIds2
+isSendToOnlinePlayer (RisSendToOnlinePlayer"|
+*PRT_CS_DIRECTIVES4_MAIN_TASK_ADD_COUNT_REQ
+playerId (RplayerId
+addCount (RaddCount
+isJoin (RisJoin"
+PRT_DIRECTIVES5_INFO_REQ"?
+PRT_DIRECTIVES5_INFO_RESP$
+isJoinMainDir (RisJoinMainDir)
+mainDir (2.PRT_DIRECTIVESRmainDir-
+	playerDir (2.PRT_DIRECTIVESR	playerDir
+	serverIds (R	serverIds"
+PRT_DIRECTIVES5_MAIN_REQ"F
+PRT_DIRECTIVES5_MAIN_RESP)
+mainDir (2.PRT_DIRECTIVESRmainDir" 
+PRT_DIRECTIVES5_MAIN_AWARD_REQ"D
+PRT_DIRECTIVES5_MAIN_AWARD_RESP!
+dir (2.PRT_DIRECTIVESRdir""
+ PRT_DIRECTIVES5_PLAYER_AWARD_REQ"F
+!PRT_DIRECTIVES5_PLAYER_AWARD_RESP!
+dir (2.PRT_DIRECTIVESRdir"9
+PRT_CS_DIRECTIVES5_INFO_REQ
+playerId (RplayerId"?
+PRT_CS_DIRECTIVES5_INFO_RESP
+playerId (RplayerId$
+isJoinMainDir (RisJoinMainDir)
+mainDir (2.PRT_DIRECTIVESRmainDir
+	serverIds (R	serverIds">
+ PRT_CS_DIRECTIVES5_RED_POINT_REQ
+playerId (RplayerId"?
+!PRT_CS_DIRECTIVES5_RED_POINT_RESP
+playerId (RplayerId3
+redPointIds (2.ENUM_REDPOINT_IDRredPointIds2
+isSendToOnlinePlayer (RisSendToOnlinePlayer"|
+*PRT_CS_DIRECTIVES5_MAIN_TASK_ADD_COUNT_REQ
+playerId (RplayerId
+addCount (RaddCount
+isJoin (RisJoin"
+PRT_DIRECTIVES6_INFO_REQ"?
+PRT_DIRECTIVES6_INFO_RESP$
+isJoinMainDir (RisJoinMainDir)
+mainDir (2.PRT_DIRECTIVESRmainDir-
+	playerDir (2.PRT_DIRECTIVESR	playerDir
+	serverIds (R	serverIds"
+PRT_DIRECTIVES6_MAIN_REQ"F
+PRT_DIRECTIVES6_MAIN_RESP)
+mainDir (2.PRT_DIRECTIVESRmainDir" 
+PRT_DIRECTIVES6_MAIN_AWARD_REQ"D
+PRT_DIRECTIVES6_MAIN_AWARD_RESP!
+dir (2.PRT_DIRECTIVESRdir""
+ PRT_DIRECTIVES6_PLAYER_AWARD_REQ"F
+!PRT_DIRECTIVES6_PLAYER_AWARD_RESP!
+dir (2.PRT_DIRECTIVESRdir"9
+PRT_CS_DIRECTIVES6_INFO_REQ
+playerId (RplayerId"?
+PRT_CS_DIRECTIVES6_INFO_RESP
+playerId (RplayerId$
+isJoinMainDir (RisJoinMainDir)
+mainDir (2.PRT_DIRECTIVESRmainDir
+	serverIds (R	serverIds">
+ PRT_CS_DIRECTIVES6_RED_POINT_REQ
+playerId (RplayerId"?
+!PRT_CS_DIRECTIVES6_RED_POINT_RESP
+playerId (RplayerId3
+redPointIds (2.ENUM_REDPOINT_IDRredPointIds2
+isSendToOnlinePlayer (RisSendToOnlinePlayer"|
+*PRT_CS_DIRECTIVES6_MAIN_TASK_ADD_COUNT_REQ
+playerId (RplayerId
+addCount (RaddCount
+isJoin (RisJoinB
+com.next1b.nextsvr.protobproto3

@@ -1,0 +1,24 @@
+local e={id=0,listId=0,isUI=0,ParamList={}}
+e.__index=e
+function e.New(o,a,n,i)
+local t={}
+setmetatable(t,e)
+t.id=o
+t.listId=a
+t.isUI=n
+t.ParamList=i
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.listId=a[2]
+t.isUI=a[3]
+t.ParamList=a[4]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/activity/DTActivityAutoPopEntityTableData')
+end
+return e 

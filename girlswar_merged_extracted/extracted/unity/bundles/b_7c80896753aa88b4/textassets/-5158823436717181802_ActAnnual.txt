@@ -1,0 +1,23 @@
+
+?
+ActAnnual.protoCommons.proto"
+PRT_ANNUAL_INFO_REQ"?
+PRT_ANNUAL_INFO_RESP
+
+createTime (R
+createTime
+	loginDays (R	loginDays 
+friendCount (RfriendCount
+	heroCount (R	heroCount
+
+diamondAdd (R
+diamondAdd$
+diamondRemove (RdiamondRemove&
+openServerTime (RopenServerTime
+isAward (RisAward"
+PRT_ANNUAL_REC_REQ"S
+PRT_ANNUAL_REC_RESP"
+things (2
+.PRT_THINGRthings
+isAward (RisAwardB
+com.next1b.nextsvr.protobproto3

@@ -1,0 +1,23 @@
+local e=
+{
+ByIdx={
+{1,6,1,{{27643,2}},475,"ActWishingHouseTask_6"},
+{2,1,5,{{27643,2}},0,"ActWishingHouseTask_1"},
+{3,4,20,{{27643,2}},16,"ActWishingHouseTask_4"},
+{4,2,30,{{27643,2}},40,"ActWishingHouseTask_2"},
+{5,6,4,{{27643,2}},475,"ActWishingHouseTask_6"},
+{6,1,4,{{27643,2}},0,"ActWishingHouseTask_1"},
+{7,3,10,{{27643,2}},138,"ActWishingHouseTask_3"},
+{8,4,5,{{27643,2}},16,"ActWishingHouseTask_4"},
+{9,3,5,{{27643,2}},138,"ActWishingHouseTask_3"},
+{10,3,15,{{27643,2}},138,"ActWishingHouseTask_3"},
+{11,4,15,{{27643,2}},16,"ActWishingHouseTask_4"},
+{12,2,60,{{27643,2}},40,"ActWishingHouseTask_2"},
+{13,1,2,{{27643,2}},0,"ActWishingHouseTask_1"},
+{14,7,40,{{27643,2}},633,"ActWishingHouseTask_7"},
+{15,7,20,{{27643,2}},633,"ActWishingHouseTask_7"},
+{16,5,900,{{27643,2}},617,"ActWishingHouseTask_5"}
+},
+Len=16
+}
+return e 

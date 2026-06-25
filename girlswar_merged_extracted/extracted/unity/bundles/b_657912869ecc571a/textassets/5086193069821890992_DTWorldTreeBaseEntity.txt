@@ -1,0 +1,110 @@
+local a={id=0,preTime=0,activityTime=0,rewardTime=0,chestNormal=0,chestRare=0,artResourseType=0,worldTreeDraw={},worldTreeSelectDraw={},rankShowMax=0,poirtAward={},teamQuitCD=0,maxStamina=0,staminaRecover=0,staminaItem=0,staminaItemParam=0,challengeCD=0,pvpPointBuff=0,pvpPointBuffMax=0,pvpNPCId=0,pvpNPCProfile=0,GuideEventID1=0,GuideEventID2=0,autoUnlock=0,isNew=0,pvpShield=0,poirtAwardPet1=0,poirtAwardPet2=0,poirtAwardHero1=0,taskShowModelId=0,randomSearchCost={},repeatedReward={},exactSearchCost={},treasureBigReward={},autoSearchMaxTimes=0,dlcEvent=0,dlcEventFORMULA="",dlcMap=0,dlcMapFORMULA="",dlcAutoUnlock=0,goods=0,fundAward={},diceCost={},remainingStage=0,boxBigReward={{},{}},storyBigReward={{},{}},fundId=0}
+a.__index=a
+function a.New(p,_,x,t,H,R,N,S,I,E,T,A,O,L,W,U,B,G,P,V,Y,C,M,F,K,D,z,c,l,u,r,d,h,o,i,n,s,m,v,f,q,j,g,k,b,w,y)
+local e={}
+setmetatable(e,a)
+e.id=p
+e.preTime=_
+e.activityTime=x
+e.rewardTime=t
+e.chestNormal=H
+e.chestRare=R
+e.artResourseType=N
+e.worldTreeDraw=S
+e.worldTreeSelectDraw=I
+e.rankShowMax=E
+e.poirtAward=T
+e.teamQuitCD=A
+e.maxStamina=O
+e.staminaRecover=L
+e.staminaItem=W
+e.staminaItemParam=U
+e.challengeCD=B
+e.pvpPointBuff=G
+e.pvpPointBuffMax=P
+e.pvpNPCId=V
+e.pvpNPCProfile=Y
+e.GuideEventID1=C
+e.GuideEventID2=M
+e.autoUnlock=F
+e.isNew=K
+e.pvpShield=D
+e.poirtAwardPet1=z
+e.poirtAwardPet2=c
+e.poirtAwardHero1=l
+e.taskShowModelId=u
+e.randomSearchCost=r
+e.repeatedReward=d
+e.exactSearchCost=h
+e.treasureBigReward=o
+e.autoSearchMaxTimes=i
+e.dlcEvent=n
+e.dlcEventFORMULA=s
+e.dlcMap=m
+e.dlcMapFORMULA=v
+e.dlcAutoUnlock=f
+e.goods=q
+e.fundAward=j
+e.diceCost=g
+e.remainingStage=k
+e.boxBigReward=b
+e.storyBigReward=w
+e.fundId=y
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.preTime=t[2]
+e.activityTime=t[3]
+e.rewardTime=t[4]
+e.chestNormal=t[5]
+e.chestRare=t[6]
+e.artResourseType=t[7]
+e.worldTreeDraw=t[8]
+e.worldTreeSelectDraw=t[9]
+e.rankShowMax=t[10]
+e.poirtAward=t[11]
+e.teamQuitCD=t[12]
+e.maxStamina=t[13]
+e.staminaRecover=t[14]
+e.staminaItem=t[15]
+e.staminaItemParam=t[16]
+e.challengeCD=t[17]
+e.pvpPointBuff=t[18]
+e.pvpPointBuffMax=t[19]
+e.pvpNPCId=t[20]
+e.pvpNPCProfile=t[21]
+e.GuideEventID1=t[22]
+e.GuideEventID2=t[23]
+e.autoUnlock=t[24]
+e.isNew=t[25]
+e.pvpShield=t[26]
+e.poirtAwardPet1=t[27]
+e.poirtAwardPet2=t[28]
+e.poirtAwardHero1=t[29]
+e.taskShowModelId=t[30]
+e.randomSearchCost=t[31]
+e.repeatedReward=t[32]
+e.exactSearchCost=t[33]
+e.treasureBigReward=t[34]
+e.autoSearchMaxTimes=t[35]
+e.dlcEvent=t[36]
+e.dlcEventFORMULA=t[37]
+e.dlcMap=t[38]
+e.dlcMapFORMULA=t[39]
+e.dlcAutoUnlock=t[40]
+e.goods=t[41]
+e.fundAward=t[42]
+e.diceCost=t[43]
+e.remainingStage=t[44]
+e.boxBigReward=t[45]
+e.storyBigReward=t[46]
+e.fundId=t[47]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/worldTree/DTWorldTreeBaseEntityTableData')
+end
+return a 

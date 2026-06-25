@@ -1,0 +1,11 @@
+local t={}
+function t:OnHandle(e)
+local e=assert(GlobalPB.decode("PRT_FIVE_DAY_CHARGE_GIFT_BUY_AWARD_SYNC",e));
+if(GameInit.GetDebugLogProto())then
+;
+;
+end
+ModulesInit.ActFiveDayChargeGiftMgr:OnRespActFiveDayChargeGiftBuy(e)
+return e
+end
+return t 

@@ -1,0 +1,11 @@
+
+?
+ActPrimeFree.protoCommons.proto"
+PRT_PRIME_FREE_INFO_REQ"c
+PRT_PRIME_FREE_INFO_RESP
+leftTime (RleftTime+
+status (2.ENUM_REWARD_STATUSRstatus"
+PRT_PRIME_FREE_AWARD_REQ"H
+PRT_PRIME_FREE_AWARD_RESP+
+status (2.ENUM_REWARD_STATUSRstatusB
+com.next1b.nextsvr.protobproto3

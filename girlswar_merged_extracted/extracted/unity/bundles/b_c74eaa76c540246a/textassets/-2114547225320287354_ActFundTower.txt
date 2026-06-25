@@ -1,0 +1,25 @@
+
+?
+ActFundTower.proto"
+PRT_TOWER_FUND_INFO_REQ"?
+PRT_TOWER_FUND_INFO_RESP
+leftTime (RleftTime
+charged (Rcharged
+layer (Rlayer*
+receivedFreeDids (RreceivedFreeDids.
+receivedChargeDids (RreceivedChargeDids"N
+PRT_TOWER_FUND_AWARD_REQ
+awardDid (RawardDid
+charge (Rcharge"O
+PRT_TOWER_FUND_AWARD_RESP
+awardDid (RawardDid
+charge (Rcharge"4
+PRT_TOWER_FUND_AWARD_ALL_REQ
+stage (Rstage"?
+PRT_TOWER_FUND_AWARD_ALL_RESP
+leftTime (RleftTime
+charged (Rcharged
+layer (Rlayer*
+receivedFreeDids (RreceivedFreeDids.
+receivedChargeDids (RreceivedChargeDidsB
+com.next1b.nextsvr.protobproto3

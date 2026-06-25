@@ -1,0 +1,67 @@
+
+?
+ActLabor.protoCommons.proto"
+PRT_LABOR_INFO_REQ"C
+PRT_LABOR_INFO_RESP
+leftTime (RleftTime
+day (Rday"
+PRT_LABOR_TASK_INFO_REQ"]
+PRT_LABOR_TASK_INFO_RESP
+tasks (2	.PRT_TASKRtasks 
+recGiftDids (RrecGiftDids"4
+PRT_LABOR_TASK_AWARD_REQ
+taskDid (RtaskDid"5
+PRT_LABOR_TASK_AWARD_RESP
+taskDid (RtaskDid"9
+PRT_LABOR_TASK_GIFT_AWARD_REQ
+giftDid (RgiftDid":
+PRT_LABOR_TASK_GIFT_AWARD_RESP
+giftDid (RgiftDid"
+PRT_LABOR_SHOP_INFO_REQ"T
+PRT_LABOR_SHOP_INFO_RESP 
+items (2
+.PRT_GOODSRitems
+freeCD (RfreeCD"J
+PRT_LABOR_SHOP_BUY_REQ
+goodsDid (RgoodsDid
+count (Rcount"9
+PRT_LABOR_SHOP_BUY_RESP
+item (2
+.PRT_GOODSRitem";
+PRT_LABOR_SHOP_FREE_AWARD_REQ
+goodsDid (RgoodsDid"@
+PRT_LABOR_SHOP_FREE_AWARD_RESP
+item (2
+.PRT_GOODSRitem"
+PRT_LABOR_FUND_INFO_REQ"~
+PRT_LABOR_FUND_INFO_RESP
+isCharge (RisCharge 
+recFreeDids (RrecFreeDids$
+recChargeDids (RrecChargeDids"R
+PRT_LABOR_FUND_AWARD_REQ
+awardDid (RawardDid
+isCharge (RisCharge"S
+PRT_LABOR_FUND_AWARD_RESP
+awardDid (RawardDid
+isCharge (RisCharge"
+PRT_LABOR_GIFT_INFO_REQ"T
+PRT_LABOR_GIFT_INFO_RESP 
+gifts (2
+.PRT_GOODSRgifts
+freeCD (RfreeCD"9
+PRT_LABOR_GIFT_FREE_AWARD_REQ
+giftDid (RgiftDid"@
+PRT_LABOR_GIFT_FREE_AWARD_RESP
+gift (2
+.PRT_GOODSRgift" 
+PRT_LABOR_NORMAL_SHOP_INFO_REQ"C
+PRT_LABOR_NORMAL_SHOP_INFO_RESP 
+items (2
+.PRT_GOODSRitems"Q
+PRT_LABOR_NORMAL_SHOP_BUY_REQ
+goodsDid (RgoodsDid
+count (Rcount"@
+PRT_LABOR_NORMAL_SHOP_BUY_RESP
+item (2
+.PRT_GOODSRitemB
+com.next1b.nextsvr.protobproto3

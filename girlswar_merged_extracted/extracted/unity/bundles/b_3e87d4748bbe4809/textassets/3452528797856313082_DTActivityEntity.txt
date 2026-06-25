@@ -1,0 +1,76 @@
+local a={id=0,title="",tabName="",desc="",icon="",unlockType=0,openLevel=0,new2unlockType=0,new2openLevel=0,new3unlockType=0,new3openLevel=0,new4unlockType=0,new4openLevel=0,createDay=0,newCreateDay=0,Framelevel=0,displayLevel=0,redPointLevel=0,heroId=0,heroIdFORMULA="",loop=0,include={},minServerId=0,maxServerId=0,hide=0,banner="",closeServer="",filterOrder=0,actType=0,actRallyImg=0}
+a.__index=a
+function a.New(u,v,y,t,q,j,k,b,g,z,T,_,O,A,E,I,x,p,r,s,h,n,o,i,d,c,l,f,w,m)
+local e={}
+setmetatable(e,a)
+e.id=u
+e.title=v
+e.tabName=y
+e.desc=t
+e.icon=q
+e.unlockType=j
+e.openLevel=k
+e.new2unlockType=b
+e.new2openLevel=g
+e.new3unlockType=z
+e.new3openLevel=T
+e.new4unlockType=_
+e.new4openLevel=O
+e.createDay=A
+e.newCreateDay=E
+e.Framelevel=I
+e.displayLevel=x
+e.redPointLevel=p
+e.heroId=r
+e.heroIdFORMULA=s
+e.loop=h
+e.include=n
+e.minServerId=o
+e.maxServerId=i
+e.hide=d
+e.banner=c
+e.closeServer=l
+e.filterOrder=f
+e.actType=w
+e.actRallyImg=m
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.title=t[2]
+e.tabName=t[3]
+e.desc=t[4]
+e.icon=t[5]
+e.unlockType=t[6]
+e.openLevel=t[7]
+e.new2unlockType=t[8]
+e.new2openLevel=t[9]
+e.new3unlockType=t[10]
+e.new3openLevel=t[11]
+e.new4unlockType=t[12]
+e.new4openLevel=t[13]
+e.createDay=t[14]
+e.newCreateDay=t[15]
+e.Framelevel=t[16]
+e.displayLevel=t[17]
+e.redPointLevel=t[18]
+e.heroId=t[19]
+e.heroIdFORMULA=t[20]
+e.loop=t[21]
+e.include=t[22]
+e.minServerId=t[23]
+e.maxServerId=t[24]
+e.hide=t[25]
+e.banner=t[26]
+e.closeServer=t[27]
+e.filterOrder=t[28]
+e.actType=t[29]
+e.actRallyImg=t[30]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/activity/DTActivityEntityTableData')
+end
+return a 

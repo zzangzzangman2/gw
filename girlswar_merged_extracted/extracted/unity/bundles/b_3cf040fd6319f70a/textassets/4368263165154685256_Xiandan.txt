@@ -1,0 +1,15 @@
+
+?
+Xiandan.proto";
+PRT_XIANDAN_MULTI
+did (Rdid
+count (Rcount"
+PRT_XIANDAN_INFO_REQ"C
+PRT_XIANDAN_INFO_RESP*
+multis (2.PRT_XIANDAN_MULTIRmultis"B
+PRT_XIANDAN_ITEM_USE_REQ
+did (Rdid
+count (Rcount"E
+PRT_XIANDAN_ITEM_USE_RESP(
+multi (2.PRT_XIANDAN_MULTIRmultiB
+com.next1b.nextsvr.protobproto3

@@ -1,0 +1,28 @@
+local e={id=0,level=0,fesLvExp=0,stallProbability={{},{}},fesLvReward={},useType=0}
+e.__index=e
+function e.New(a,i,o,h,s,n)
+local t={}
+setmetatable(t,e)
+t.id=a
+t.level=i
+t.fesLvExp=o
+t.stallProbability=h
+t.fesLvReward=s
+t.useType=n
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.level=a[2]
+t.fesLvExp=a[3]
+t.stallProbability=a[4]
+t.fesLvReward=a[5]
+t.useType=a[6]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/activity/DTSaunteredLevelsEntityTableData')
+end
+return e 

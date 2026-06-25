@@ -1,0 +1,28 @@
+local e={id=0,recharge=0,exchangeTimes=0,wishes=0,groupId=0,goods=0}
+e.__index=e
+function e.New(a,i,o,h,s,n)
+local t={}
+setmetatable(t,e)
+t.id=a
+t.recharge=i
+t.exchangeTimes=o
+t.wishes=h
+t.groupId=s
+t.goods=n
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.recharge=a[2]
+t.exchangeTimes=a[3]
+t.wishes=a[4]
+t.groupId=a[5]
+t.goods=a[6]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/activity/DTDailyWishEntityTableData')
+end
+return e 

@@ -1,0 +1,6 @@
+1043_1.png
+size:1024,1024
+filter:Linear,Linear
+scale:0.3
+aaa
+bounds:0,0,769,666

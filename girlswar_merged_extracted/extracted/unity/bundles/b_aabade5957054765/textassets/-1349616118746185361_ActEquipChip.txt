@@ -1,0 +1,12 @@
+
+?
+ActEquipChip.proto"C
+PRT_EQUIP_CHIP_DATA
+did (Rdid
+received (Rreceived"
+PRT_EQUIP_CHIP_INFO_REQ"F
+PRT_EQUIP_CHIP_INFO_RESP*
+datas (2.PRT_EQUIP_CHIP_DATARdatas"
+PRT_EQUIP_CHIP_FREE_AWARD_REQ" 
+PRT_EQUIP_CHIP_FREE_AWARD_RESPB
+com.next1b.nextsvr.protobproto3

@@ -1,0 +1,24 @@
+local e={id=0,heroType=0,rankLevel=0,attrsCamp=0}
+e.__index=e
+function e.New(o,a,n,i)
+local t={}
+setmetatable(t,e)
+t.id=o
+t.heroType=a
+t.rankLevel=n
+t.attrsCamp=i
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.heroType=a[2]
+t.rankLevel=a[3]
+t.attrsCamp=a[4]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/shouhu/DTSubCityHeroBuffEntityTableData')
+end
+return e 

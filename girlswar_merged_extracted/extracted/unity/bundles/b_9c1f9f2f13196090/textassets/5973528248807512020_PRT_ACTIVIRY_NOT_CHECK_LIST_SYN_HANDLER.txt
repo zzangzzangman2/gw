@@ -1,0 +1,11 @@
+local t={}
+function t:OnHandle(e)
+local e=assert(GlobalPB.decode("PRT_ACTIVIRY_NOT_CHECK_LIST_SYN",e));
+if(GameInit.GetDebugLogProto())then
+;
+;
+end
+ActMgr:ParseNoCheckList(e)
+return e
+end
+return t 

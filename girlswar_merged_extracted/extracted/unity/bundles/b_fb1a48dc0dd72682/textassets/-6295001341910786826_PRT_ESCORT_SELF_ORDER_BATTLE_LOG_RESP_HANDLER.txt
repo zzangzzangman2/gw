@@ -1,0 +1,11 @@
+local t={}
+function t:OnHandle(e)
+local e=assert(GlobalPB.decode("PRT_ESCORT_SELF_ORDER_BATTLE_LOG_RESP",e));
+if(GameInit.GetDebugLogProto())then
+;
+;
+end
+ModulesInit.ActIslandRouteMgr:SynIslandEscortOrderMyBattleLog(e)
+return e
+end
+return t 

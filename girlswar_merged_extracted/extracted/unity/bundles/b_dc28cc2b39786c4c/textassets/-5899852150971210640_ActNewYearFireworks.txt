@@ -1,0 +1,56 @@
+
+?
+ActNewYearFireworks.protoCommons.protoActFootballTrain.proto" 
+PRT_NEWYEAR_FIREWORKS_INFO_REQ"?
+PRT_NEWYEAR_FIREWORKS_INFO_RESP
+score (Rscore$
+scoreLevelDid (RscoreLevelDid
+endTime (RendTime
+round (Rround.
+draws (2.PRT_FOOTBALL_TRAIN_DRAWRdraws"
+dailyAwarded (RdailyAwarded
+dayDid (RdayDid"&
+$PRT_NEWYEAR_FIREWORKS_DAILYAWARD_REQ"?
+%PRT_NEWYEAR_FIREWORKS_DAILYAWARD_RESP!
+award (2.PRT_REWARDRaward"
+dailyAwarded (RdailyAwarded
+dayDid (RdayDid"'
+%PRT_NEWYEAR_FIREWORKS_SCORE_AWARD_REQ"q
+&PRT_NEWYEAR_FIREWORKS_SCORE_AWARD_RESP!
+award (2.PRT_REWARDRaward$
+scoreLevelDid (RscoreLevelDid"<
+PRT_NEWYEAR_FIREWORKS_DRAW_REQ
+position (Rposition"?
+PRT_NEWYEAR_FIREWORKS_DRAW_RESP0
+awards (2.PRT_FOOTBALL_TRAIN_DRAWRawards
+score (Rscore"
+drawPosition (RdrawPosition"=
+PRT_NEWYEAR_FIREWORKS_CLAIM_REQ
+position (Rposition"x
+ PRT_NEWYEAR_FIREWORKS_CLAIM_RESP.
+draws (2.PRT_FOOTBALL_TRAIN_DRAWRdraws$
+claimPosition (RclaimPosition" 
+PRT_NEWYEAR_FIREWORKS_SHOP_REQ"G
+PRT_NEWYEAR_FIREWORKS_SHOP_RESP$
+goodses (2
+.PRT_GOODSRgoodses"L
+"PRT_NEWYEAR_FIREWORKS_SHOP_BUY_REQ
+did (Rdid
+count (Rcount"W
+#PRT_NEWYEAR_FIREWORKS_SHOP_BUY_RESP
+did (Rdid
+
+finalCount (R
+finalCount" 
+PRT_NEWYEAR_FIREWORKS_GIFT_REQ"Z
+PRT_NEWYEAR_FIREWORKS_GIFT_RESP7
+itemInfo (2.PRT_NEWYEAR_FIREWORKS_ITEMRitemInfo"@
+$PRT_NEWYEAR_FIREWORKS_GIFT_AWARD_REQ
+giftDid (RgiftDid"f
+%PRT_NEWYEAR_FIREWORKS_GIFT_AWARD_RESP=
+giftBuyInfo (2.PRT_NEWYEAR_FIREWORKS_ITEMRgiftBuyInfo"p
+PRT_NEWYEAR_FIREWORKS_ITEM
+giftDid (RgiftDid
+buyTimes (RbuyTimes
+	resetTime (R	resetTimeB
+com.next1b.nextsvr.protobproto3

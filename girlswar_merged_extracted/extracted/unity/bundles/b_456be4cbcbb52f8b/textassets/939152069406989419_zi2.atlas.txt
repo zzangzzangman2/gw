@@ -1,0 +1,8 @@
+zi2.png
+size:512,512
+filter:Linear,Linear
+effect/effect_1
+bounds:0,49,397,391
+zi_2
+bounds:0,0,386,47
+offsets:0,1,387,48

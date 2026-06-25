@@ -1,0 +1,36 @@
+local a={id=0,mapPrefabId=0,showroomId=0,maxSite=0,nextMapId=0,mapName="",maxProgress=0,mapIconSmall="",mapSite=0,refresh={{},{}}}
+a.__index=a
+function a.New(n,r,s,t,l,u,d,h,o,i)
+local e={}
+setmetatable(e,a)
+e.id=n
+e.mapPrefabId=r
+e.showroomId=s
+e.maxSite=t
+e.nextMapId=l
+e.mapName=u
+e.maxProgress=d
+e.mapIconSmall=h
+e.mapSite=o
+e.refresh=i
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.mapPrefabId=t[2]
+e.showroomId=t[3]
+e.maxSite=t[4]
+e.nextMapId=t[5]
+e.mapName=t[6]
+e.maxProgress=t[7]
+e.mapIconSmall=t[8]
+e.mapSite=t[9]
+e.refresh=t[10]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/collectibles/DTCollectiblesMapEntityTableData')
+end
+return a 

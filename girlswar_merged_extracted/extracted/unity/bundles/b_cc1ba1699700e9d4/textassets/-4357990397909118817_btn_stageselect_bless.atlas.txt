@@ -1,0 +1,15 @@
+btn_stageselect_bless.png
+size:512,256
+filter:Linear,Linear
+1
+bounds:226,54,182,152
+rotate:90
+4
+bounds:380,146,90,67
+rotate:90
+a2
+bounds:380,54,69,83
+b
+bounds:2,2,222,234
+muling
+bounds:226,18,132,34

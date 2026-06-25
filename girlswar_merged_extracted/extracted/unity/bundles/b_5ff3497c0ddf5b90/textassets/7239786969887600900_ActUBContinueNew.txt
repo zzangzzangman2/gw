@@ -1,0 +1,19 @@
+
+?
+ActUBContinueNew.protoCommons.proto"k
+*PRT_ACCUMULATE_DAYS_RECHARGE_NEW_ITEM_INFO
+did (Rdid+
+status (2.ENUM_REWARD_STATUSRstatus"+
+)PRT_ACCUMULATE_DAYS_RECHARGE_NEW_INFO_REQ"?
+*PRT_ACCUMULATE_DAYS_RECHARGE_NEW_INFO_RESP
+	startTime (R	startTime
+endTime (RendTime
+
+currentDay (R
+currentDayI
+	itemInfos (2+.PRT_ACCUMULATE_DAYS_RECHARGE_NEW_ITEM_INFOR	itemInfos"E
+)PRT_ACCUMULATE_DAYS_RECHARGE_NEW_TAKE_REQ
+tookDid (RtookDid"F
+*PRT_ACCUMULATE_DAYS_RECHARGE_NEW_TAKE_RESP
+tookDid (RtookDidB
+com.next1b.nextsvr.protobproto3

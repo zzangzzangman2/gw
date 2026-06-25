@@ -1,0 +1,11 @@
+local t={}
+function t:OnHandle(e)
+local e=assert(GlobalPB.decode("PRT_FLOWER_CAR_DRAW_RESP",e));
+if(GameInit.GetDebugLogProto())then
+;
+;
+end
+ModulesInit.ActFlowerCarMgr:syncActFlowerCarDrawData(e)
+return e
+end
+return t 

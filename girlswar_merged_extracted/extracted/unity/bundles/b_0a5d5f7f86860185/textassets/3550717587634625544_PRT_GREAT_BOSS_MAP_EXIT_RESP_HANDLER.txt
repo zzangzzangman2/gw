@@ -1,0 +1,11 @@
+local t={}
+function t:OnHandle(e)
+local e=assert(GlobalPB.decode("PRT_GREAT_BOSS_MAP_EXIT_RESP",e));
+if(GameInit.GetDebugLogProto())then
+;
+;
+end
+ModulesInit.GreatBossMgr:ParseMapExit(e)
+return e
+end
+return t 

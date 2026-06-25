@@ -1,0 +1,4 @@
+﻿font_key,bundle,font_path_id,name,family_name,style_name,point_size,line_height,ascent_line,descent_line,material_path_id,material_name,material_shader_path_id,atlas_width,atlas_height,atlas_padding,atlas_render_mode,atlas_texture_path_ids,glyph_count,character_count,fallback_count
+riyu,download/ui/uifont/japanese/tmp/riyu.assetbundle,2268522548353052838,riyu,DFMincho-SU,Regular,40,40.0,34.375,-5.625,254871510493496748,riyu Atlas Material,3039605131867672570,2048,2048,9,4165,-1980486418211286436,383,384,0
+EPM,download/ui/uifont/japanese/tmp/epm.assetbundle,-724809986894116682,EPM,EPSON ?????S?V?b?N???a,Regular,40,40.0,34.375,-5.625,-161800820888374377,EPM Atlas Material,3039605131867672570,1024,2048,9,4165,5218067429375919017,442,444,1
+num,download/ui/uifont/japanese/tmp/num.assetbundle,454391846754054610,num,Impact,Regular,40,48.7890625,40.3515625,-8.4375,7258057046760579642,num Atlas Material,3039605131867672570,256,256,9,4165,-3487941317702978074,24,24,1

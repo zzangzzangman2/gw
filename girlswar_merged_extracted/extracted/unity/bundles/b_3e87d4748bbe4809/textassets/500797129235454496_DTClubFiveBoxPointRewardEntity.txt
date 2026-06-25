@@ -1,0 +1,24 @@
+local e={id=0,point=0,reward={},nextId=0}
+e.__index=e
+function e.New(o,a,n,i)
+local t={}
+setmetatable(t,e)
+t.id=o
+t.point=a
+t.reward=n
+t.nextId=i
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.point=a[2]
+t.reward=a[3]
+t.nextId=a[4]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/activity/DTClubFiveBoxPointRewardEntityTableData')
+end
+return e 

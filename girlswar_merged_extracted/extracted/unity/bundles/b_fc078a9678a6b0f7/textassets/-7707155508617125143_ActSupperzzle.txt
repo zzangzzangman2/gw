@@ -1,0 +1,52 @@
+
+?
+ActSupperzzle.proto"C
+PRT_SUPPERZZLE_POSITION
+pos (Rpos
+status (Rstatus"N
+PRT_SUPPERZZLE_QUEST
+questDid (RquestDid
+progress (Rprogress"
+PRT_SUPPERZZLE_INFO_REQ"?
+PRT_SUPPERZZLE_INFO_RESP
+	leftCount (R	leftCount&
+totalTurnCount (RtotalTurnCount0
+firstPosAtOneChance (RfirstPosAtOneChance.
+poses (2.PRT_SUPPERZZLE_POSITIONRposes
+endTime (RendTime
+	resetTime (R	resetTime*
+costDiamondCount (RcostDiamondCount"+
+PRT_SUPPERZZLE_TURN_REQ
+pos (Rpos"?
+PRT_SUPPERZZLE_TURN_RESP
+	leftCount (R	leftCount&
+totalTurnCount (RtotalTurnCount0
+firstPosAtOneChance (RfirstPosAtOneChance
+success (Rsuccess2
+showPos (2.PRT_SUPPERZZLE_POSITIONRshowPos6
+	resultPos (2.PRT_SUPPERZZLE_POSITIONR	resultPos
+	trunAward (	R	trunAward"
+extAwardDids (RextAwardDids*
+costDiamondCount	 (RcostDiamondCount"
+PRT_SUPPERZZLE_QUEST_INFO_REQ"}
+PRT_SUPPERZZLE_QUEST_INFO_RESP-
+quests (2.PRT_SUPPERZZLE_QUESTRquests,
+receivedQuestDids (RreceivedQuestDids"<
+PRT_SUPPERZZLE_QUEST_AWARD_REQ
+questDid (RquestDid"m
+PRT_SUPPERZZLE_QUEST_AWARD_RESP,
+receivedQuestDids (RreceivedQuestDids
+	leftCount (R	leftCount"
+PRT_SUPPERZZLE_FUND_INFO_REQ"?
+PRT_SUPPERZZLE_FUND_INFO_RESP
+charged (Rcharged&
+totalTurnCount (RtotalTurnCount*
+receivedFreeDids (RreceivedFreeDids.
+receivedChargeDids (RreceivedChargeDids"S
+PRT_SUPPERZZLE_FUND_AWARD_REQ
+awardDid (RawardDid
+charge (Rcharge"T
+PRT_SUPPERZZLE_FUND_AWARD_RESP
+awardDid (RawardDid
+charge (RchargeB
+com.next1b.nextsvr.protobproto3

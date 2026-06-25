@@ -1,0 +1,11 @@
+qiangdaozhong.png
+size:128,256
+filter:Linear,Linear
+images/bg_qdz
+bounds:0,81,98,60
+images/msz_qdz
+bounds:71,0,81,31
+offsets:2,3,86,37
+rotate:90
+images/tb_qdz1
+bounds:0,20,71,61

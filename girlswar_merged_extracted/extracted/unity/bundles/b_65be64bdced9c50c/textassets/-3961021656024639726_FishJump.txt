@@ -1,0 +1,92 @@
+
+?
+FishJump.protoCommons.proto" 
+PRT_FISHJUMP_SPE_SHOP_INFO_REQ"C
+PRT_FISHJUMP_SPE_SHOP_INFO_RESP 
+items (2
+.PRT_GOODSRitems"Q
+PRT_FISHJUMP_SPE_SHOP_BUY_REQ
+goodsDid (RgoodsDid
+count (Rcount"@
+PRT_FISHJUMP_SPE_SHOP_BUY_RESP
+item (2
+.PRT_GOODSRitem"
+PRT_FISHJUMP_FUND_INFO_REQ"?
+PRT_FISHJUMP_FUND_INFO_RESP
+isCharge (RisCharge 
+recFreeDids (RrecFreeDids$
+recChargeDids (RrecChargeDids
+nowDay (RnowDay"U
+PRT_FISHJUMP_FUND_AWARD_REQ
+awardDid (RawardDid
+isCharge (RisCharge"V
+PRT_FISHJUMP_FUND_AWARD_RESP
+awardDid (RawardDid
+isCharge (RisCharge"
+PRT_FISHJUMP_GIFT_INFO_REQ"W
+PRT_FISHJUMP_GIFT_INFO_RESP 
+gifts (2
+.PRT_GOODSRgifts
+freeCD (RfreeCD"<
+ PRT_FISHJUMP_GIFT_FREE_AWARD_REQ
+giftDid (RgiftDid"C
+!PRT_FISHJUMP_GIFT_FREE_AWARD_RESP
+gift (2
+.PRT_GOODSRgift"
+PRT_FISHJUMP_SHOP_INFO_REQ"?
+PRT_FISHJUMP_SHOP_INFO_RESP 
+items (2
+.PRT_GOODSRitems"M
+PRT_FISHJUMP_SHOP_BUY_REQ
+goodsDid (RgoodsDid
+count (Rcount"<
+PRT_FISHJUMP_SHOP_BUY_RESP
+item (2
+.PRT_GOODSRitem"5
+PRT_FISHJUMP_BUFF
+id (Rid
+num (Rnum" 
+PRT_FISHJUMP_TREASURE_INFO_REQ"?
+PRT_FISHJUMP_TREASURE_INFO_RESP
+star (Rstar
+	drawCount (R	drawCount
+canRec (RcanRec.
+allBuffs (2.PRT_FISHJUMP_BUFFRallBuffs"?
+PRT_FISHJUMP_TREASURE_BOX
+id (Rid
+star (Rstar"6
+PRT_FISHJUMP_TREASURE_DRAW_REQ
+count (Rcount"?
+PRT_FISHJUMP_TREASURE_DRAW_RESP
+	drawCount (R	drawCount 
+award (2
+.PRT_THINGRaward.
+boxs (2.PRT_FISHJUMP_TREASURE_BOXRboxs
+star (Rstar
+	realCount (R	realCount"
+PRT_FISHJUMP_TREASURE_REC_REQ"?
+PRT_FISHJUMP_TREASURE_REC_RESP(
+buffs (2.PRT_FISHJUMP_BUFFRbuffs
+expLevel (RexpLevel
+power (Rpower
+exp (Rexp"J
+PRT_FISHJUMP_FISH_RECORD
+levelId (RlevelId
+index (Rindex"
+PRT_FISHJUMP_FISH_INFO_REQ"?
+PRT_FISHJUMP_FISH_INFO_RESP
+levelId (RlevelId3
+records (2.PRT_FISHJUMP_FISH_RECORDRrecords
+power (Rpower
+exp (Rexp
+expLevel (RexpLevel"L
+PRT_FISHJUMP_FISH_PASS_REQ
+levelId (RlevelId
+index (Rindex"?
+PRT_FISHJUMP_FISH_PASS_RESP
+levelId (RlevelId
+index (Rindex
+power (Rpower
+exp (Rexp
+expLevel (RexpLevelB
+com.next1b.nextsvr.protobproto3

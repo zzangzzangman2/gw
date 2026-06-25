@@ -1,0 +1,9 @@
+sp_BondFestival_Startbutton.png
+size:256,256
+filter:Linear,Linear
+nyxyx_pao
+bounds:142,99,102,110
+wenzi
+bounds:0,0,126,71
+xg_chengann
+bounds:0,73,140,136

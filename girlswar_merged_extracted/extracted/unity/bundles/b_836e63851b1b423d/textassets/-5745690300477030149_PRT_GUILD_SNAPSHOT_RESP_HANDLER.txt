@@ -1,0 +1,10 @@
+local e={}
+function e:OnHandle(e)
+local e=assert(GlobalPB.decode("PRT_GUILD_SNAPSHOT_RESP",e));
+if(GameInit.GetDebugLogProto())then
+;
+;
+end
+GameEntry.UI:OpenUIForm(UIFormId.UI_GuildDetailView,e)
+end
+return e 

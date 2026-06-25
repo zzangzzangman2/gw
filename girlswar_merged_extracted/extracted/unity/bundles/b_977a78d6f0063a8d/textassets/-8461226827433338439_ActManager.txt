@@ -1,0 +1,18 @@
+
+?
+ActManager.proto"?
+PRT_ACTMANAGER_RECORD
+playerId (RplayerId
+
+activityId (R
+activityId
+	startTime (R	startTime
+endTime (RendTime
+	closeTime (R	closeTime"s
+#PRT_CS_ACTMANAGER_UPDATE_RECORD_REQ0
+records (2.PRT_ACTMANAGER_RECORDRrecords
+playerId (RplayerId"_
+%PRT_CS_ACTMANAGER_UPDATE_GAMETIME_REQ
+playerId (RplayerId
+gameTime (RgameTimeB
+com.next1b.nextsvr.protobproto3

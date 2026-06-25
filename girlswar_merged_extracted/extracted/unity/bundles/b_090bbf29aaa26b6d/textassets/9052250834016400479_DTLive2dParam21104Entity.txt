@@ -1,0 +1,54 @@
+local a={id="",paramName="",expType=0,direction={{},{}},dragAreaList="",minValue=0,defualtValue=0,maxingValue=0,maxValue=0,dragEndReturnType=0,returnType=0,paramState="",playIdleAnimatorName="",triggerAnimationName="",controlAnimationName="",changeParamStateAnimatorName="",offSpeed=0,turnSpeed=0,isReturnOnChange=0}
+a.__index=a
+function a.New(d,c,l,t,f,m,y,v,p,b,g,w,u,n,i,o,s,r,h)
+local e={}
+setmetatable(e,a)
+e.id=d
+e.paramName=c
+e.expType=l
+e.direction=t
+e.dragAreaList=f
+e.minValue=m
+e.defualtValue=y
+e.maxingValue=v
+e.maxValue=p
+e.dragEndReturnType=b
+e.returnType=g
+e.paramState=w
+e.playIdleAnimatorName=u
+e.triggerAnimationName=n
+e.controlAnimationName=i
+e.changeParamStateAnimatorName=o
+e.offSpeed=s
+e.turnSpeed=r
+e.isReturnOnChange=h
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.paramName=t[2]
+e.expType=t[3]
+e.direction=t[4]
+e.dragAreaList=t[5]
+e.minValue=t[6]
+e.defualtValue=t[7]
+e.maxingValue=t[8]
+e.maxValue=t[9]
+e.dragEndReturnType=t[10]
+e.returnType=t[11]
+e.paramState=t[12]
+e.playIdleAnimatorName=t[13]
+e.triggerAnimationName=t[14]
+e.controlAnimationName=t[15]
+e.changeParamStateAnimatorName=t[16]
+e.offSpeed=t[17]
+e.turnSpeed=t[18]
+e.isReturnOnChange=t[19]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/live2d/DTLive2dParam21104EntityTableData')
+end
+return a 

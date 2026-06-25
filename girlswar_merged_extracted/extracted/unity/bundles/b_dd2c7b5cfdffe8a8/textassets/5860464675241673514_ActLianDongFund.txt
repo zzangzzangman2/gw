@@ -1,0 +1,29 @@
+
+?
+ActLianDongFund.proto"
+PRT_LIANDONG_FUND_INFO_REQ"?
+PRT_LIANDONG_FUND_INFO_RESP$
+loveBookCount (RloveBookCount
+charge (Rcharge"
+endTimestamp (RendTimestamp(
+receiveCommDids (RreceiveCommDids,
+receiveChargeDids (RreceiveChargeDids"I
+PRT_LIANDONG_FUND_RECEIVE_REQ
+did (Rdid
+charge (Rcharge"J
+PRT_LIANDONG_FUND_RECEIVE_RESP
+did (Rdid
+charge (Rcharge"h
+PRT_LIANDONG_FUND_TASK
+taskDid (RtaskDid
+progress (Rprogress
+awarded (Rawarded"
+PRT_LIANDONG_FUND_TASK_REQ"N
+PRT_LIANDONG_FUND_TASK_RESP/
+quests (2.PRT_LIANDONG_FUND_TASKRquests">
+"PRT_LIANDONG_FUND_TASK_RECEIVE_REQ
+taskDid (RtaskDid"n
+#PRT_LIANDONG_FUND_TASK_RECEIVE_RESP
+taskDid (RtaskDid-
+quest (2.PRT_LIANDONG_FUND_TASKRquestB
+com.next1b.nextsvr.protobproto3

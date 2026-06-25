@@ -1,0 +1,22 @@
+local e={id=0,solderName="",solderHeros={}}
+e.__index=e
+function e.New(o,a,i)
+local t={}
+setmetatable(t,e)
+t.id=o
+t.solderName=a
+t.solderHeros=i
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.solderName=a[2]
+t.solderHeros=a[3]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/solder/DTSolderEntityTableData')
+end
+return e 

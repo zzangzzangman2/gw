@@ -1,0 +1,28 @@
+local e={id=0,condition=0,requireNum=0,awardNum=0,desc="",funcJump=0}
+e.__index=e
+function e.New(a,i,o,h,s,n)
+local t={}
+setmetatable(t,e)
+t.id=a
+t.condition=i
+t.requireNum=o
+t.awardNum=h
+t.desc=s
+t.funcJump=n
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.condition=a[2]
+t.requireNum=a[3]
+t.awardNum=a[4]
+t.desc=a[5]
+t.funcJump=a[6]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/activity/DTGachaLeaderTaskEntityTableData')
+end
+return e 

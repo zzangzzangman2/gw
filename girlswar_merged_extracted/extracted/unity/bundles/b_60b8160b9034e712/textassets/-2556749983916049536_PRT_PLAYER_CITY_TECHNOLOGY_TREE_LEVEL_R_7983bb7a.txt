@@ -1,0 +1,11 @@
+local t={}
+function t:OnHandle(e)
+local e=assert(GlobalPB.decode("PRT_PLAYER_CITY_TECHNOLOGY_TREE_LEVEL_RESP",e));
+if(GameInit.GetDebugLogProto())then
+;
+;
+end
+PlayerCityMgr:OnResTechTreeLevel(e)
+return e
+end
+return t 

@@ -1,0 +1,26 @@
+local e={id=0,dlc=0,type=0,unlock={},reward={{},{}}}
+e.__index=e
+function e.New(o,n,a,s,i)
+local t={}
+setmetatable(t,e)
+t.id=o
+t.dlc=n
+t.type=a
+t.unlock=s
+t.reward=i
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.dlc=a[2]
+t.type=a[3]
+t.unlock=a[4]
+t.reward=a[5]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/worldTree/DTWorldTreeDLCLinkEntityTableData')
+end
+return e 

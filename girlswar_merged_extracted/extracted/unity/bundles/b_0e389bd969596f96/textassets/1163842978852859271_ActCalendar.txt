@@ -1,0 +1,17 @@
+
+?
+ActCalendar.protoActivity.proto"
+PRT_CALENDAR_INFO_REQ"J
+PRT_CALENDAR_INFO_RESP0
+	activitys (2.PRT_ACTIVITY_INFOR	activitys"W
+PRT_CS_CALENDAR_ADD_SYN
+
+activityId (R
+activityId
+	startDate (	R	startDate"Z
+PRT_CS_CALENDAR_DELETE_SYN
+
+activityId (R
+activityId
+	startDate (	R	startDateB
+com.next1b.nextsvr.protobproto3

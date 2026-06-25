@@ -1,0 +1,6 @@
+2095.png
+size:512,512
+filter:Linear,Linear
+1
+bounds:0,0,398,482
+offsets:0,0,398,563

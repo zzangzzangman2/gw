@@ -1,0 +1,11 @@
+sp_xingongneng2.png
+size:2048,1024
+filter:Linear,Linear
+b1
+bounds:295,47,265,246
+b2
+bounds:2,2,291,291
+b3
+bounds:1557,153,399,432
+b4
+bounds:2,295,1553,290

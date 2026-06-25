@@ -1,0 +1,16 @@
+
+?
+ActUnderwearSaleNew.proto"!
+PRT_UNDERWEAR_SALE_NEW_INFO_REQ"?
+ PRT_UNDERWEAR_SALE_NEW_INFO_RESP
+leftTime (RleftTime
+nowDay (RnowDay 
+freeSaleDid (RfreeSaleDid
+
+paySaleDid (R
+paySaleDid
+star (Rstar""
+ PRT_UNDERWEAR_SALE_NEW_AWARD_REQ"E
+!PRT_UNDERWEAR_SALE_NEW_AWARD_RESP 
+freeSaleDid (RfreeSaleDidB
+com.next1b.nextsvr.protobproto3

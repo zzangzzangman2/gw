@@ -1,0 +1,10 @@
+local e=
+{
+ByIdx={
+{1,"bossname1",9910401,334,{908,909,910,911,912},{906,907},{904,905},"bossname1_born:bossname1_born2"},
+{2,"bossname2",9910402,333,{917,918,919,920,921},{915,916},{913,914},"bossname2_born:bossname2_born2"},
+{3,"bossname3",9910403,333,{926,927,928,929,930},{924,925},{922,923},"bossname3_born:bossname3_born2"}
+},
+Len=3
+}
+return e 

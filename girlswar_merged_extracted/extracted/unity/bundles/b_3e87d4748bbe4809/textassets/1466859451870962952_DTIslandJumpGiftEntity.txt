@@ -1,0 +1,32 @@
+local a={id=0,goods=0,type=0,name="",desc="",award={{},{}},discount="",duration=0}
+a.__index=a
+function a.New(i,h,n,t,d,r,s,o)
+local e={}
+setmetatable(e,a)
+e.id=i
+e.goods=h
+e.type=n
+e.name=t
+e.desc=d
+e.award=r
+e.discount=s
+e.duration=o
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.goods=t[2]
+e.type=t[3]
+e.name=t[4]
+e.desc=t[5]
+e.award=t[6]
+e.discount=t[7]
+e.duration=t[8]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/activity/DTIslandJumpGiftEntityTableData')
+end
+return a 

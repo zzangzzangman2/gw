@@ -1,0 +1,11 @@
+local t={}
+function t:OnHandle(e)
+local e=assert(GlobalPB.decode("PRT_ANN_FESTIVAL_GIFT_PET_AWARD_RESP",e));
+if(GameInit.GetDebugLogProto())then
+;
+;
+end
+ModulesInit.ActAnnFestivalGiftMgr:OnGiftPetAwardResp(e)
+return e
+end
+return t 

@@ -1,0 +1,11 @@
+tower_afk_reward.png
+size:256,512
+filter:Linear,Linear
+a1
+bounds:114,4,100,79
+rotate:90
+a2
+bounds:1,1,112,103
+a3
+bounds:1,105,184,178
+offsets:3,7,190,188

@@ -1,0 +1,7 @@
+Painting_1052.png
+size:2048,1024
+filter:Linear,Linear
+scale:0.2
+Painting_1052
+bounds:0,0,1991,907
+offsets:0,100,1991,1118

@@ -1,0 +1,17 @@
+
+?
+ActDragonGrow.proto"
+PRT_DRAGON_GROW_INFO_REQ"?
+PRT_DRAGON_GROW_INFO_RESP
+leftTime (RleftTime
+charged (Rcharged 
+battleCount (RbattleCount*
+receivedFreeDids (RreceivedFreeDids.
+receivedChargeDids (RreceivedChargeDids"O
+PRT_DRAGON_GROW_AWARD_REQ
+awardDid (RawardDid
+charge (Rcharge"P
+PRT_DRAGON_GROW_AWARD_RESP
+awardDid (RawardDid
+charge (RchargeB
+com.next1b.nextsvr.protobproto3

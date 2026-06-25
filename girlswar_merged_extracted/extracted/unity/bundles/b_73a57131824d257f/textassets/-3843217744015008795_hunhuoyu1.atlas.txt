@@ -1,0 +1,9 @@
+hunhuoyu1.png
+size:256,256
+filter:Linear,Linear
+effect_4
+bounds:0,43,137,137
+offsets:31,32,214,200
+urs_baodoutb
+bounds:0,0,41,41
+offsets:0,1,41,42

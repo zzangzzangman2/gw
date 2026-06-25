@@ -1,0 +1,30 @@
+local t={id=0,poolType=0,dailyFreeTime=0,itemCost={},cost={},tenRealCost={},commPool={{},{}}}
+t.__index=t
+function t.New(o,h,a,s,r,n,i)
+local e={}
+setmetatable(e,t)
+e.id=o
+e.poolType=h
+e.dailyFreeTime=a
+e.itemCost=s
+e.cost=r
+e.tenRealCost=n
+e.commPool=i
+return e
+end
+function t.NewFromArrItem(a)
+local e={}
+setmetatable(e,t)
+e.id=a[1]
+e.poolType=a[2]
+e.dailyFreeTime=a[3]
+e.itemCost=a[4]
+e.cost=a[5]
+e.tenRealCost=a[6]
+e.commPool=a[7]
+return e
+end
+function t.GetArr()
+return require('DataNode/DataTable/Create/activity/DTUnderwearLuckyEntityTableData')
+end
+return t 

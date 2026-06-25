@@ -1,0 +1,28 @@
+local e=
+{
+ByIdx={
+{"ParamLegR","ParamLegR",0,{{1,-1},{2,0}},"HitArea_LegR1,HitArea_LegR2",-10,0,7,10,0,1,"","idle","1:rodLegR1","rodLegR1","rodLegR1:2",1,10,0},
+{"ParamZipper1","ParamZipper1",0,{{4,0},{2,0}},"HitArea_Belly",0,0,7,10,0,1,"","idle","1:game1_1","game1_1","game1_1:2",1,30,0},
+{"ParamZipper1SP","ParamZipper1SP",0,{{4,0},{2,0}},"HitArea_Belly",0,0,5,10,0,1,"","game1_2","","game1_3,game1_4","game1_3:2,game1_4:2",1,30,0},
+{"ParamRemovePants1","ParamRemovePants1",0,{{4,0},{2,0}},"HitArea_Trigone",0,0,5,10,0,1,"","game1_3","","game1_4","game1_4:2",1,10,0},
+{"ParamShoeL","ParamShoeL",0,{{3,0},{2,0}},"HitArea_ShoeL",0,0,5,10,0,1,"","","","","",1,10,0},
+{"ParamShoeR","ParamShoeR",0,{{3,0},{2,0}},"HitArea_ShoeR",0,0,5,10,0,1,"","","","","",1,10,0},
+{"ParamSocksL1","ParamSocksL1",0,{{2,0}},"HitArea_SocksL",0,0,5,10,0,1,"ParamShoeL:2","","","","",1,10,0},
+{"ParamSocksR1","ParamSocksR1",0,{{4,0},{2,0}},"HitArea_SocksR",0,0,5,10,0,1,"ParamShoeR:2","","","","",1,10,0},
+{"ParamPants1","ParamPants1",0,{{2,0}},"HitArea_Trigone",0,0,11,10,0,1,"","","","","",1,30,0},
+{"ParamPants2","ParamPants2",1,{{4,0}},"HitArea_Trigone",0,0,7,10,0,1,"","idle1","1:rodTrigone2","rodTrigone2","rodTrigone2:2",1,10,0},
+{"ParamRemovePants2","ParamRemovePants2",1,{{4,0},{2,0}},"HitArea_Trigone",0,0,3,5,0,1,"","tapBasketball2_win","","rodTrigone2_sp1,rodBelly2_sp2_2","",1,10,0},
+{"ParamTrigone","ParamTrigone",1,{{3,0}},"HitArea_Trigone",0,0,5,10,0,1,"","rodLegL2","","rodTrigone2_win","rodTrigone2_win:2",1,10,0},
+{"ParamBelly","ParamBelly",1,{{4,0}},"HitArea_Belly",0,0,5,10,0,1,"","idle1_sp2","","rodBelly2_sp2_1,rodBelly2_sp2_2","rodBelly2_sp2_1:2,rodBelly2_sp2_2:2",1,10,0},
+{"ParamLegL_idle1","ParamLegL",1,{{1,-1},{2,0}},"HitArea_LegL",-10,0,5,10,0,1,"","idle1","1:rodLegL2","rodLegL2","rodLegL2:2",1,10,0},
+{"ParamLegL_idle1_sp1","ParamLegL",1,{{1,-1},{2,0}},"HitArea_LegL",-10,0,5,10,0,1,"","idle1_sp1","1:rodLegL2_sp1","rodLegL2_sp1","rodLegL2_sp1:2",1,10,0},
+{"ParamLegL_idle4","ParamLegL",2,{{1,-1},{2,0}},"HitArea_LegL",-10,0,5,10,0,1,"","","1:rodLegL3","rodLegL3","rodLegL3:2",1,10,0},
+{"ParamSocksL3","ParamSocksL3",2,{{3,0},{4,0}},"HitArea_SocksL",0,0,10,10,3,1,"","","","","",1,10,0},
+{"ParamSocksR3","ParamSocksR3",2,{{3,0},{4,0}},"HitArea_SocksR",0,0,10,10,3,1,"","","","","",1,10,0},
+{"ParamZipper3_idle4","ParamZipper3",2,{{4,0}},"HitArea_Trigone",0,0,5,10,0,1,"","","1:rodTrigone3","rodTrigone3,rodTrigone3_win","rodTrigone3:2",1,10,0},
+{"ParamZipper3_rodLegL3","ParamZipper3",2,{{4,0}},"HitArea_Trigone",0,0,5,10,0,1,"","rodLegL3","","rodTrigone3,rodTrigone3_win","rodTrigone3_win:2",1,10,0},
+{"ParamGolfAngle","ParamGolfAngle",2,{{1,-1},{2,0}},"HitArea_Pointer",0,45,91,90,4,1,"","idle4_sp1","","","game3_2:2,game3_3:2,game3_4:2,game3_5:2",1.5,40,0}
+},
+Len=21
+}
+return e 

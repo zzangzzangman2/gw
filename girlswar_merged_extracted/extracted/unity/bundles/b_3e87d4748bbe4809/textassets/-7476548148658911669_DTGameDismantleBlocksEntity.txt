@@ -1,0 +1,26 @@
+local e={id=0,defaultBlocksNum=0,rankCount=0,antiCheating=0,upspeed=0}
+e.__index=e
+function e.New(o,n,a,s,i)
+local t={}
+setmetatable(t,e)
+t.id=o
+t.defaultBlocksNum=n
+t.rankCount=a
+t.antiCheating=s
+t.upspeed=i
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.defaultBlocksNum=a[2]
+t.rankCount=a[3]
+t.antiCheating=a[4]
+t.upspeed=a[5]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/activity/DTGameDismantleBlocksEntityTableData')
+end
+return e 

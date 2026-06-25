@@ -1,0 +1,10 @@
+local e={}
+function e:OnHandle(e)
+local e=assert(GlobalPB.decode("PRT_ARENA_CROSS_STATUS_RESP",e));
+if(GameInit.GetDebugLogProto())then
+;
+;
+end
+ModulesInit.CrossArenaManager:OnCrossArenaStatusResponse(e)
+end
+return e 

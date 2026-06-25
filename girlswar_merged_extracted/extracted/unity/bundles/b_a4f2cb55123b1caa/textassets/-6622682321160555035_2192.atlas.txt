@@ -1,0 +1,5 @@
+2192.png
+size:1024,1024
+filter:Linear,Linear
+body2
+bounds:2,2,900,727

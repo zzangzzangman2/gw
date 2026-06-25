@@ -1,0 +1,32 @@
+local e=
+{
+ByIdx={
+{"ParamZ2_1","ParamZ2",0,{{1,-1},{4,-1}},"HitArea_LegRD1,HitArea_LegRD2,HitArea_LegRD3,HitArea_LegRD4",-30,0,15,30,0,1,"","","","tapTrigone1,tapTrigone2,tapTrigone2_sp2,tapBelly2_sp2,rodPants2_1_sp4,idle2,GameWin2_sp2","tapTrigone1:2",5,40,0},
+{"ParamZ2_2","ParamZ2",1,{{1,-1},{4,-1}},"HitArea_LegRD1,HitArea_LegRD2,HitArea_LegRD3,HitArea_LegRD4",-30,0,15,30,0,1,"","idle1,idle1_sp2","","tapTrigone1,tapTrigone2,tapTrigone2_sp2,tapBelly2_sp2,rodPants2_1_sp4,idle2,GameWin2_sp2,tapTrigone2_2_sp4,idle1_sp3,idle1_sp4,tapBreast2_sp3,tapHead2_sp3,tapTrigone2_2_lose_sp4,tapTrigone2_2_win_sp4","tapTrigone2:2,tapTrigone2_sp2:2,tapTrigone2_2_win_sp4:2",5,40,0},
+{"ParamZ2_2sp3","ParamZ2",1,{{1,-1},{4,-1},{2,0},{3,0}},"HitArea_LegRD1,HitArea_LegRD2,HitArea_LegRD3,HitArea_LegRD4",-30,0,31,30,3,1,"","idle1_sp3","","tapTrigone1,tapTrigone2,tapTrigone2_sp2,tapBelly2_sp2,rodPants2_1_sp4,idle2,GameWin2_sp2,tapTrigone2_2_sp4","tapTrigone2:2,tapTrigone2_sp2:2,tapTrigone2_2_win_sp4:2",5,40,0},
+{"ParamZ1","ParamZ1",1,{{1,-1},{4,-1}},"HitArea_LegLD1,HitArea_LegLD2,HitArea_LegLD3",-30,0,0,30,3,1,"","idle1_sp3","","","",5,40,0},
+{"ParamUI1","ParamUI1",1,{},"",0,0,0,10,0,1,"","","","","tapHead2_2_sp1:1,GameWin2_sp2:2",0,0,0},
+{"ParamUI2","ParamUI2",1,{},"",0,0,0,10,0,2,"","","","","",0,0,0},
+{"ParamBreastLLight1","ParamBreastLLight1",1,{},"",0,0,0,10,0,1,"","","","tapBreastL2_sp1","tapBreastL2_sp1:1",1,10,0},
+{"ParamBreastRLight1","ParamBreastRLight1",1,{},"",0,0,0,10,0,1,"","","","tapBreastR2_sp1","tapBreastR2_sp1:1",1,10,0},
+{"ParamBellyLight1","ParamBellyLight1",1,{},"",0,0,0,10,0,1,"","","","tapBelly2_sp1","tapBelly2_sp1:1",1,10,0},
+{"ParamLegRLight1","ParamLegRLight1",1,{},"",0,0,0,10,0,1,"","","","tapLegR2_sp1","tapLegR2_sp1:1",1,10,0},
+{"ParamLegLLight1","ParamLegLLight1",1,{},"",0,0,0,10,0,1,"","","","tapLegL2_sp1","tapLegL2_sp1:1",1,10,0},
+{"ParamPants3","ParamPants3",2,{{3,0},{1,0}},"HitArea_Trigone1",0,0,5,5,0,1,"","idle4_sp","1:rodPants3_sp","rodPants3_sp","rodPants3_sp:2",1,10,0},
+{"ParamPants2","ParamPants2",1,{{2,0},{3,0}},"HitArea_Trigone1,HitArea_Trigone2",0,0,5,10,0,1,"ParamZ2_2sp3:2,ParamZ1:2","idle1_sp3","","rodPants2_1_sp4","tapTrigone2_2_win_sp4:2",1,10,0},
+{"ParamBelly2","ParamBelly2",2,{},"",0,0,0,10,0,1,"","","","tapHandR3_2","tapHandR3_2:1",1,10,0},
+{"ParamBreast2","ParamBreast2",2,{},"",0,0,0,10,0,1,"","","","tapHandR3_2","tapHandR3_2:1",1,10,0},
+{"ParamLeg2","ParamLeg2",2,{},"",0,0,0,10,0,1,"","","","tapHandR3_3","tapHandR3_3:1",1,10,0},
+{"ParamSocksR","ParamSocksR",2,{{2,0}},"HitArea_LegR4,HitArea_LegR5,HitArea_LegR6",0,0,5,10,0,1,"","","","","",1,10,0},
+{"ParamSocksL","ParamSocksL",2,{{2,0}},"HitArea_LegL1,HitArea_LegL2",0,0,5,10,0,1,"","","","","",1,10,0},
+{"ParamStar_1","ParamStar",0,{{4,0}},"HitArea_Star",0,0,5,10,0,1,"","","1:rodStar1","rodStar1","rodStar1:2",1,10,0},
+{"ParamStar_2","ParamStar",1,{{4,0}},"HitArea_Star",0,0,5,10,0,1,"","","1:rodStar2","rodStar2","rodStar2:2",1,10,0},
+{"ParamStar_3","ParamStar",2,{{4,0}},"HitArea_Star",0,0,5,10,0,1,"","idle4_sp","1:rodStar3_sp","rodStar3_sp","rodStar3_sp:2",1,10,0},
+{"ParamBreast","ParamBreast",2,{{3,0}},"HitArea_BreastR,HitArea_BreastL",0,0,5,10,0,1,"","idle4_sp","1:rodBreast3_sp","rodBreast3_sp","rodBreast3_sp:1",1,10,0},
+{"ParamCup","ParamCup",2,{},"",0,0,0,10,0,1,"","","","tapHandR3_1,rodStar3_sp","tapHandR3_1:1,rodStar3_sp:2",1,10,0},
+{"ParamEmptyRod","",2,{{1,0},{2,0},{3,0},{4,0}},"HitArea_Rod",0,0,5,10,0,1,"","","","","",10,10,0},
+{"ParamEmptyTrigone","",1,{{1,0},{2,0},{3,0},{4,0}},"HitArea_Trigone1",0,0,5,10,0,1,"","idle1_sp4","1:tapTrigone2_2_sp4","","tapTrigone2_2_sp4:2",10,10,0}
+},
+Len=25
+}
+return e 

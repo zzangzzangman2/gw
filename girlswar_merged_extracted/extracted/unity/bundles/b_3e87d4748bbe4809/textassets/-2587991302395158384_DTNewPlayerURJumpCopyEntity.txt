@@ -1,0 +1,32 @@
+local a={id=0,item=0,itemNum=0,jump=0,finishParam=0,text="",line="",icon=""}
+a.__index=a
+function a.New(i,h,n,t,d,r,s,o)
+local e={}
+setmetatable(e,a)
+e.id=i
+e.item=h
+e.itemNum=n
+e.jump=t
+e.finishParam=d
+e.text=r
+e.line=s
+e.icon=o
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.item=t[2]
+e.itemNum=t[3]
+e.jump=t[4]
+e.finishParam=t[5]
+e.text=t[6]
+e.line=t[7]
+e.icon=t[8]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/activity/DTNewPlayerURJumpCopyEntityTableData')
+end
+return a 

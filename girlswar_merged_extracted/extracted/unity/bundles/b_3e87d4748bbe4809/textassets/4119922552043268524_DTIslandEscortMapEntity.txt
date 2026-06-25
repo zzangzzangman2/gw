@@ -1,0 +1,26 @@
+local e={id=0,startPos=0,endPos=0,activityStage=0,bossPoint=0}
+e.__index=e
+function e.New(o,n,a,s,i)
+local t={}
+setmetatable(t,e)
+t.id=o
+t.startPos=n
+t.endPos=a
+t.activityStage=s
+t.bossPoint=i
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.startPos=a[2]
+t.endPos=a[3]
+t.activityStage=a[4]
+t.bossPoint=a[5]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/activity/DTIslandEscortMapEntityTableData')
+end
+return e 

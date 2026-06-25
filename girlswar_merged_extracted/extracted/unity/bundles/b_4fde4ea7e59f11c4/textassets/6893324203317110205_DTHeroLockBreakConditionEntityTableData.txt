@@ -1,0 +1,8 @@
+local e=
+{
+ByIdx={
+{1,2,{3,1},"HeroLockBreakCondition_1"}
+},
+Len=1
+}
+return e 

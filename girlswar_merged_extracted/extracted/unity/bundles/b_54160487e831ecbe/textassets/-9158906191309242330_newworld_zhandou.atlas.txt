@@ -1,0 +1,12 @@
+newworld_zhandou.png
+size:128,256
+filter:Linear,Linear
+a7
+bounds:0,0,16,64
+rotate:90
+tztb
+bounds:43,21,37,38
+xsdzz_gx1
+bounds:0,17,42,42
+xtx_zhandoutbh
+bounds:0,60,98,80

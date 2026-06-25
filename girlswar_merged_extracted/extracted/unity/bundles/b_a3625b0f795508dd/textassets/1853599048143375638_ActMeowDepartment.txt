@@ -1,0 +1,18 @@
+
+?
+ActMeowDepartment.protoCommons.proto""
+ PRT_ACT_MEOW_DEPARTMENT_INFO_REQ"]
+!PRT_ACT_MEOW_DEPARTMENT_INFO_RESP
+giftType (RgiftType
+	awardDids (R	awardDids"F
+(PRT_ACT_MEOW_DEPARTMENT_REFRESH_GIFT_REQ
+giftType (RgiftType"G
+)PRT_ACT_MEOW_DEPARTMENT_REFRESH_GIFT_RESP
+giftType (RgiftType"@
+$PRT_ACT_MEOW_DEPARTMENT_GIFT_BUY_REQ
+giftDid (RgiftDid"k
+%PRT_ACT_MEOW_DEPARTMENT_GIFT_BUY_RESP
+	awardDids (R	awardDids$
+rewards (2
+.PRT_THINGRrewardsB
+com.next1b.nextsvr.protobproto3

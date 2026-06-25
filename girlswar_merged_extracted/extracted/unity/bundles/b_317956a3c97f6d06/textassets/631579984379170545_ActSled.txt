@@ -1,0 +1,94 @@
+
+?
+ActSled.protoCommons.proto"
+PRT_SLED_INFO_REQ"v
+PRT_SLED_INFO_RESP
+leftTime (RleftTime
+score (Rscore.
+	rankDatas (2.PRT_COMMON_RANKR	rankDatas"
+PRT_SLED_FUND_REQ"?
+PRT_SLED_FUND_RESP
+charged (Rcharged*
+receivedFreeDids (RreceivedFreeDids.
+receivedChargeDids (RreceivedChargeDids"M
+PRT_SLED_FUND_AWARD_REQ
+awardDid (RawardDid
+charge (Rcharge"N
+PRT_SLED_FUND_AWARD_RESP
+awardDid (RawardDid
+charge (Rcharge"
+PRT_SLED_GIFT_REQ"T
+PRT_SLED_GIFT_RESP 
+gifts (2
+.PRT_GOODSRgifts
+	resetTime (R	resetTime"0
+PRT_SLED_GIFT_FREE_AWARD_REQ
+did (Rdid"O
+PRT_SLED_GIFT_FREE_AWARD_RESP
+did (Rdid
+	resetTime (R	resetTime"
+PRT_SLED_SHOP_REQ"X
+PRT_SLED_SHOP_RESP$
+goodses (2
+.PRT_GOODSRgoodses
+	resetTime (R	resetTime"0
+PRT_SLED_SHOP_FREE_AWARD_REQ
+did (Rdid"O
+PRT_SLED_SHOP_FREE_AWARD_RESP
+did (Rdid
+	resetTime (R	resetTime"?
+PRT_SLED_SHOP_BUY_REQ
+did (Rdid
+count (Rcount"J
+PRT_SLED_SHOP_BUY_RESP
+did (Rdid
+
+finalCount (R
+finalCount"
+PRT_SLED_TASK_REQ"5
+PRT_SLED_TASK_RESP
+tasks (2	.PRT_TASKRtasks"3
+PRT_SLED_TASK_AWARD_REQ
+taskDid (RtaskDid"4
+PRT_SLED_TASK_AWARD_RESP
+taskDid (RtaskDid"
+PRT_SLED_RANK_REQ"r
+PRT_SLED_RANK_RESP.
+	rankDatas (2.PRT_COMMON_RANKR	rankDatas,
+selfRank (2.PRT_COMMON_RANKRselfRank"
+PRT_SLED_GUILD_RANK_REQ"?
+PRT_SLED_GUILD_RANK_RESP4
+	rankDatas (2.PRT_COMMON_GUILD_RANKR	rankDatas2
+selfRank (2.PRT_COMMON_GUILD_RANKRselfRank")
+PRT_SLED_DRAW_REQ
+count (Rcount"?
+PRT_SLED_DRAW_RESP"
+awards (2
+.PRT_THINGRawards
+addScore (RaddScore
+score (Rscore.
+	rankDatas (2.PRT_COMMON_RANKR	rankDatas"9
+PRT_CS_SLED_RANK_AROUND_REQ
+playerId (RplayerId"j
+PRT_CS_SLED_RANK_AROUND_RESP
+playerId (RplayerId.
+	rankDatas (2.PRT_COMMON_RANKR	rankDatas"?
+PRT_CS_SLED_DRAW_UPDATE_REQ
+playerId (RplayerId
+guildId (RguildId"
+awards (2
+.PRT_THINGRawards
+addScore (RaddScore
+score (Rscore
+changeMS (RchangeMS"?
+PRT_CS_SLED_DRAW_UPDATE_RESP
+playerId (RplayerId"
+awards (2
+.PRT_THINGRawards
+addScore (RaddScore.
+	rankDatas (2.PRT_COMMON_RANKR	rankDatas"l
+PRT_CS_SLED_UPDATE_SCORE_SYN
+playerId (RplayerId
+score (Rscore
+changeMS (RchangeMSB
+com.next1b.nextsvr.protobproto3

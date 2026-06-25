@@ -1,0 +1,12 @@
+local e={}
+function e:OnHandle(e)
+local e=assert(GlobalPB.decode("PRT_SHOP_BUY_GOLD_RESP",e));
+if(GameInit.GetDebugLogProto())then
+;
+;
+end
+local e=e.award.rewardThings[1]
+EventSystem.SendEvent(CommonEventId.PlayObtainEffect,e.thingDid,e.thingCount)
+GameTools:PlayAudioLua(301)
+end
+return e 

@@ -1,0 +1,28 @@
+local e={id=0,goods=0,award={{},{}},displayPrice=0,salePic="",bomBgPic=""}
+e.__index=e
+function e.New(a,i,o,h,s,n)
+local t={}
+setmetatable(t,e)
+t.id=a
+t.goods=i
+t.award=o
+t.displayPrice=h
+t.salePic=s
+t.bomBgPic=n
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.goods=a[2]
+t.award=a[3]
+t.displayPrice=a[4]
+t.salePic=a[5]
+t.bomBgPic=a[6]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/activity/DTSecondRechargeNewEntityTableData')
+end
+return e 

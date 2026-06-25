@@ -1,0 +1,5 @@
+Painting_1021_Front.png
+size:1024,256
+filter:Linear,Linear
+images/effect/moon
+bounds:2,2,658,206

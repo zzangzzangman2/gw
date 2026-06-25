@@ -1,0 +1,140 @@
+﻿bundle,component_path_id,game_object_id,game_object_name,script_id,text,font_size,alignment,raycast_target,color_r,color_g,color_b,color_a
+download/ui/uiprefabandres/maininterface.assetbundle,-9075025307981695997,-6005187361460479994,text,-5755350681981302373,수령 ,20.0,1,0,1.0,1.0,1.0,1.0
+download/ui/uiprefabandres/maininterface.assetbundle,-8842570151588361151,-7349131133143407055,text_youjian,-5755350681981302373,      d,20.0,1,0,1.0,1.0,1.0,1.0
+download/ui/uiprefabandres/maininterface.assetbundle,-8832976236568273424,-7295124886294054497,txt_act_name,-5755350681981302373,,20.0,2,0,1.0,1.0,1.0,1.0
+download/ui/uiprefabandres/maininterface.assetbundle,-8785529312977370068,-6388828218037548926,text_off,-5755350681981302373,마을,22.0,2,0,1.0,1.0,1.0,1.0
+download/ui/uiprefabandres/maininterface.assetbundle,-8686722307351452481,8323713141565151266,text_name,-7978266203517415465,시스템 ,18,4,0,1.0,1.0,1.0,1.0
+download/ui/uiprefabandres/maininterface.assetbundle,-8548314998860509617,4149620439162436217,text_fight_num,-5755350681981302373,"844,651,695",26.0,1,0,1.0,1.0,1.0,1.0
+download/ui/uiprefabandres/maininterface.assetbundle,-8358797115357997715,4512528125967927824,text_youjian,-5755350681981302373,      dadfadsfadsf,20.0,1,0,1.0,1.0,1.0,1.0
+download/ui/uiprefabandres/maininterface.assetbundle,-8318630676036174251,2553992600669226189,text_wanfaTips,-5755350681981302373,000,18.0,2,0,1.0,1.0,1.0,1.0
+download/ui/uiprefabandres/maininterface.assetbundle,-8010001099342242387,-2002401583210569359,text_num,-7978266203517415465,6,20,4,0,1.0,1.0,1.0,1.0
+download/ui/uiprefabandres/maininterface.assetbundle,-7855073822951797152,-6041248253756072020,text_level_num,-5755350681981302373,12,22.0,2,0,1.0,1.0,1.0,1.0
+download/ui/uiprefabandres/maininterface.assetbundle,-7548399963800416050,-7982451266254442775,lab_shangdian_text,-5755350681981302373,상점 ,18.0,2,0,1.0,1.0,1.0,1.0
+download/ui/uiprefabandres/maininterface.assetbundle,-7344444113943444083,-7741460210314033726,text_num,-7978266203517415465,,20,4,1,1.0,1.0,1.0,1.0
+download/ui/uiprefabandres/maininterface.assetbundle,-7001099708774699602,5716084942009330476,text_tmp_message (1),-5755350681981302373,천하 쟁패 열렬히 진행 중!,20.0,2,0,1.0,1.0,1.0,1.0
+download/ui/uiprefabandres/maininterface.assetbundle,-6963228740554706761,6235884102698714236,text_wanfaTips,-5755350681981302373,000,18.0,2,0,1.0,1.0,1.0,1.0
+download/ui/uiprefabandres/maininterface.assetbundle,-6925197596620428308,7161233510276806440,txt_face_name,-5755350681981302373,옷장 속 약속,20.0,2,0,1.0,1.0,1.0,1.0
+download/ui/uiprefabandres/maininterface.assetbundle,-6872768666126068714,-5038400558281525007,text_wanfaTips,-5755350681981302373,,18.0,2,0,1.0,1.0,1.0,1.0
+download/ui/uiprefabandres/maininterface.assetbundle,-6818907815447891745,-7961927376928750478,text_youjian,-5755350681981302373,      d,20.0,1,0,1.0,1.0,1.0,1.0
+download/ui/uiprefabandres/maininterface.assetbundle,-6539234352139627902,-2568686707463358350,text_wanfaTips,-5755350681981302373,,18.0,2,0,1.0,1.0,1.0,1.0
+download/ui/uiprefabandres/maininterface.assetbundle,-6376659564963010681,6989945350092074715,text_name,-7978266203517415465,시스템 ,18,4,0,1.0,1.0,1.0,1.0
+download/ui/uiprefabandres/maininterface.assetbundle,-6171576233270972405,-1883118041253902306,text_num,-7978266203517415465,,20,4,1,1.0,1.0,1.0,1.0
+download/ui/uiprefabandres/maininterface.assetbundle,-6020606819238375932,-5955704976088786855,text_num,-7978266203517415465,6,20,4,0,1.0,1.0,1.0,1.0
+download/ui/uiprefabandres/maininterface.assetbundle,-5626267715295998269,-8375142999910234370,tmp_bubble_pro,-5755350681981302373,0%,18.0,2,0,1.0,1.0,1.0,1.0
+download/ui/uiprefabandres/maininterface.assetbundle,-5331064463774840777,-6583767661166205574,text_wanfaTips,-5755350681981302373,,18.0,2,0,1.0,1.0,1.0,1.0
+download/ui/uiprefabandres/maininterface.assetbundle,-5252942855402382320,-6372320186030668855,text_youjian,-5755350681981302373,,20.0,1,0,1.0,1.0,1.0,1.0
+download/ui/uiprefabandres/maininterface.assetbundle,-5221493122430570029,-1315993129005937158,text_num,-7978266203517415465,6,20,4,0,1.0,1.0,1.0,1.0
+download/ui/uiprefabandres/maininterface.assetbundle,-4747315768451741140,-642145601148978621,text_num,-7978266203517415465,6,20,4,0,1.0,1.0,1.0,1.0
+download/ui/uiprefabandres/maininterface.assetbundle,-4719942701293263070,-8795012448601939192,txt_act_name,-5755350681981302373,옷장과의 약속,18.0,2,0,1.0,1.0,1.0,1.0
+download/ui/uiprefabandres/maininterface.assetbundle,-4698591989917927995,-5639841623893862463,text_name,-7978266203517415465,시스템 ,18,4,0,1.0,1.0,1.0,1.0
+download/ui/uiprefabandres/maininterface.assetbundle,-4679910941068541077,-3208386341019603539,text_num,-7978266203517415465,,20,4,1,1.0,1.0,1.0,1.0
+download/ui/uiprefabandres/maininterface.assetbundle,-4657193011517220830,6399032237056098636,text_num,-7978266203517415465,,20,4,1,1.0,1.0,1.0,1.0
+download/ui/uiprefabandres/maininterface.assetbundle,-4616237029522372465,-6585112581559350160,text_message,-7978266203517415465,동맹에 가입하면 400홍옥을 획득할 수 있습니다,20,4,0,0.27843138575553894,0.24313725531101227,0.2078431397676468,1.0
+download/ui/uiprefabandres/maininterface.assetbundle,-4562632481229212548,-63333470463546325,txt_face_time,-5755350681981302373,10:10,18.0,2,0,1.0,1.0,1.0,1.0
+download/ui/uiprefabandres/maininterface.assetbundle,-4557561921863122656,-2141157803510213047,text_num,-7978266203517415465,6,20,4,0,1.0,1.0,1.0,1.0
+download/ui/uiprefabandres/maininterface.assetbundle,-4536177973001128485,-8785160916621469625,txt_act_name,-5755350681981302373,옷장의 약속,18.0,2,0,1.0,1.0,1.0,1.0
+download/ui/uiprefabandres/maininterface.assetbundle,-4266749706999477775,6957178394920827744,text_temporary_buff,-5755350681981302373,보너스 발동 중,20.0,2,0,1.0,1.0,1.0,1.0
+download/ui/uiprefabandres/maininterface.assetbundle,-4153891689386772735,4337440627242472922,text_wanfaTips,-5755350681981302373,개최 중,18.0,2,0,1.0,1.0,1.0,1.0
+download/ui/uiprefabandres/maininterface.assetbundle,-4026675507575082113,-3899332699982458604,txt_act_name,-5755350681981302373,옷장의 약속,18.0,2,0,1.0,1.0,1.0,1.0
+download/ui/uiprefabandres/maininterface.assetbundle,-3994136810415134093,-5030543243302824793,text_num,-7978266203517415465,6,20,4,0,1.0,1.0,1.0,1.0
+download/ui/uiprefabandres/maininterface.assetbundle,-3858624121484597821,-7355809044290086139,txt_act_name,-5755350681981302373,옷장과의 약속,18.0,2,0,1.0,1.0,1.0,1.0
+download/ui/uiprefabandres/maininterface.assetbundle,-3600855773427548556,-926212944341804861,txt_act_leftTime,-5755350681981302373,10:10:10,18.0,2,0,1.0,1.0,1.0,1.0
+download/ui/uiprefabandres/maininterface.assetbundle,-3439184744174724072,8339887719812294043,txt_act_name,-5755350681981302373,옷장과의 약속,18.0,2,0,1.0,1.0,1.0,1.0
+download/ui/uiprefabandres/maininterface.assetbundle,-3293142939939209297,-7326818543664987603,text_name,-5755350681981302373,모험,28.0,2,0,1.0,1.0,1.0,1.0
+download/ui/uiprefabandres/maininterface.assetbundle,-3143585305720165528,-6385402897518220814,text_actBanner_nun,-7978266203517415465,10,18,4,0,1.0,1.0,1.0,1.0
+download/ui/uiprefabandres/maininterface.assetbundle,-2957374496632782462,1432122010037201562,lab_renwu_text,-5755350681981302373,세 ,18.0,2,0,1.0,1.0,1.0,1.0
+download/ui/uiprefabandres/maininterface.assetbundle,-2839090340222616229,-819521724186643816,text,-5755350681981302373,임무 설명,18.0,1,0,1.0,1.0,1.0,1.0
+download/ui/uiprefabandres/maininterface.assetbundle,-2551577209855462847,-2419639228354464084,txt_act_name,-5755350681981302373,옷장의 약속,18.0,2,0,1.0,1.0,1.0,1.0
+download/ui/uiprefabandres/maininterface.assetbundle,-2476915510914892419,8653809507658379881,text_num,-7978266203517415465,,20,4,1,1.0,1.0,1.0,1.0
+download/ui/uiprefabandres/maininterface.assetbundle,-2369142647594526233,3949935945273723311,text_num,-7978266203517415465,6,20,4,0,1.0,1.0,1.0,1.0
+download/ui/uiprefabandres/maininterface.assetbundle,-2312606369372106433,-3356654974546260300,txt_taskName,-5755350681981302373,123456789하하하하（ ）,20.0,2,0,1.0,1.0,1.0,1.0
+download/ui/uiprefabandres/maininterface.assetbundle,-2225395521712408118,178585903253559835,text,-5755350681981302373,수령 ,20.0,1,0,1.0,1.0,1.0,1.0
+download/ui/uiprefabandres/maininterface.assetbundle,-2028628353578089832,-4683327800261080248,text_vip_num,-5755350681981302373,10,18.0,2,0,1.0,1.0,1.0,1.0
+download/ui/uiprefabandres/maininterface.assetbundle,-2005166804734993153,-4473345024729134793,text_notice_desc,-5755350681981302373,임무 설명,18.0,1,0,1.0,1.0,1.0,1.0
+download/ui/uiprefabandres/maininterface.assetbundle,-1989298952755557513,4265595133686228730,text_num,-7978266203517415465,6,20,4,0,1.0,1.0,1.0,1.0
+download/ui/uiprefabandres/maininterface.assetbundle,-1961083730743611690,-1832995482963497425,text_off,-5755350681981302373,소환수,22.0,2,0,1.0,1.0,1.0,1.0
+download/ui/uiprefabandres/maininterface.assetbundle,-1506753302403519926,1671632182902861406,text_num,-7978266203517415465,,20,4,1,1.0,1.0,1.0,1.0
+download/ui/uiprefabandres/maininterface.assetbundle,-1321490898155011159,4668531496860081711,text_num,-7978266203517415465,6,20,4,0,1.0,1.0,1.0,1.0
+download/ui/uiprefabandres/maininterface.assetbundle,-960054914133671743,-2420845226721817554,text_youjian,-5755350681981302373,      dadfadsfadsf,20.0,1,0,1.0,1.0,1.0,1.0
+download/ui/uiprefabandres/maininterface.assetbundle,-860432529618070325,-4167614338200313322,text_message,-7978266203517415465,4시간의 방치 보상을 누적했습니다. 수령하세요!,20,4,0,1.0,1.0,1.0,1.0
+download/ui/uiprefabandres/maininterface.assetbundle,-726239598754600751,-4697279176345789174,text_name,-7978266203517415465,시스템 ,18,4,0,1.0,1.0,1.0,1.0
+download/ui/uiprefabandres/maininterface.assetbundle,-195327781128212116,7253345514939460615,text_wanfaTips,-5755350681981302373,,18.0,2,0,1.0,1.0,1.0,1.0
+download/ui/uiprefabandres/maininterface.assetbundle,-34403014449559604,-7510942591569796354,text_tmp_message,-5755350681981302373,동맹에 가입하면 400홍옥을 획득할 수 있습니다,20.0,2,0,1.0,1.0,1.0,1.0
+download/ui/uiprefabandres/maininterface.assetbundle,175876469509601740,-4052542709859237450,text_num,-7978266203517415465,,20,4,1,1.0,1.0,1.0,1.0
+download/ui/uiprefabandres/maininterface.assetbundle,229600274348744413,499501329863490137,text_num,-7978266203517415465,,20,4,1,1.0,1.0,1.0,1.0
+download/ui/uiprefabandres/maininterface.assetbundle,257126282613464397,-4402067903995416693,text_wanfaTips,-5755350681981302373,,18.0,2,0,1.0,1.0,1.0,1.0
+download/ui/uiprefabandres/maininterface.assetbundle,319362272665425900,-4617369723046342989,text_off,-5755350681981302373,수호  ,22.0,2,0,1.0,1.0,1.0,1.0
+download/ui/uiprefabandres/maininterface.assetbundle,327129994856517961,-8556551994401714767,txt_taskRedNum,-5755350681981302373,（ 999/999 ）,18.0,2,0,1.0,1.0,1.0,1.0
+download/ui/uiprefabandres/maininterface.assetbundle,417184322548217603,-8221637171712529452,text_wanfaTips,-5755350681981302373,,18.0,2,0,1.0,1.0,1.0,1.0
+download/ui/uiprefabandres/maininterface.assetbundle,722436400546327096,-6404015471484609493,txt_act_leftTime,-5755350681981302373,10:10:10,18.0,2,0,1.0,1.0,1.0,1.0
+download/ui/uiprefabandres/maininterface.assetbundle,1081424751859742640,4392692548550227206,text_num,-7978266203517415465,+99,28,3,1,1.0,1.0,1.0,1.0
+download/ui/uiprefabandres/maininterface.assetbundle,1102235407617583013,5572519946260618904,txt_act_name,-5755350681981302373,옷장의 약속,18.0,2,0,1.0,1.0,1.0,1.0
+download/ui/uiprefabandres/maininterface.assetbundle,1150260131987345861,-2261659972829547729,text_name,-7978266203517415465,시스템 ,18,4,0,1.0,1.0,1.0,1.0
+download/ui/uiprefabandres/maininterface.assetbundle,1390875581758410000,3357089780402293380,text_num,-7978266203517415465,,20,4,1,1.0,1.0,1.0,1.0
+download/ui/uiprefabandres/maininterface.assetbundle,1410564674237950582,-9142860793671649322,text_name,-5755350681981302373,모험,28.0,2,0,1.0,1.0,1.0,1.0
+download/ui/uiprefabandres/maininterface.assetbundle,1423139765395603904,-7336271198868114901,text_num,-7978266203517415465,6,20,4,0,1.0,1.0,1.0,1.0
+download/ui/uiprefabandres/maininterface.assetbundle,1494296624665947677,5870002579785325674,txt_act_name,-5755350681981302373,옷장과의 약속,18.0,2,0,1.0,1.0,1.0,1.0
+download/ui/uiprefabandres/maininterface.assetbundle,1622689069955777750,412640609316537146,text_notice_desc,-5755350681981302373,임무 설명,18.0,1,0,1.0,1.0,1.0,1.0
+download/ui/uiprefabandres/maininterface.assetbundle,1689208777998807911,4582872863978395745,text_youjian,-5755350681981302373,,20.0,1,0,1.0,1.0,1.0,1.0
+download/ui/uiprefabandres/maininterface.assetbundle,1708541173605532676,5089301840846303053,text_num,-7978266203517415465,6,20,4,0,1.0,1.0,1.0,1.0
+download/ui/uiprefabandres/maininterface.assetbundle,1809488825805341128,-8900963993445214466,text_off,-5755350681981302373,무장 ,22.0,2,0,1.0,1.0,1.0,1.0
+download/ui/uiprefabandres/maininterface.assetbundle,1918916168854199662,5827211316784777166,txt_act_leftTime,-5755350681981302373,10:10:10,18.0,2,0,1.0,1.0,1.0,1.0
+download/ui/uiprefabandres/maininterface.assetbundle,1955026695596329008,-841665030076573394,text_num,-7978266203517415465,6,20,4,0,1.0,1.0,1.0,1.0
+download/ui/uiprefabandres/maininterface.assetbundle,1997644957418693845,-3709368170983147032,text_actTime,-5755350681981302373,,24.0,2,0,1.0,1.0,1.0,1.0
+download/ui/uiprefabandres/maininterface.assetbundle,2010396889390554488,8686619616004789762,text_num,-7978266203517415465,6,20,4,0,1.0,1.0,1.0,1.0
+download/ui/uiprefabandres/maininterface.assetbundle,2014339370955641866,-7119749123123539974,text_off,-5755350681981302373,동맹 ,22.0,2,0,1.0,1.0,1.0,1.0
+download/ui/uiprefabandres/maininterface.assetbundle,2103812768715243612,3625863876679466853,txt_act_name,-5755350681981302373,옷장과의 약속,18.0,2,0,1.0,1.0,1.0,1.0
+download/ui/uiprefabandres/maininterface.assetbundle,2129893367027402585,-5447781863096329278,text,-7978266203517415465,탭하여 계속,22,4,0,1.0,1.0,1.0,1.0
+download/ui/uiprefabandres/maininterface.assetbundle,2200519986729847946,-739774170553967288,text_num,-7978266203517415465,,20,4,1,1.0,1.0,1.0,1.0
+download/ui/uiprefabandres/maininterface.assetbundle,2274607719334317502,-8847232525691174279,text_num,-7978266203517415465,6,20,4,0,1.0,1.0,1.0,1.0
+download/ui/uiprefabandres/maininterface.assetbundle,2653871209655485179,-5494057412932805412,text,-5755350681981302373,확인,20.0,1,0,1.0,1.0,1.0,1.0
+download/ui/uiprefabandres/maininterface.assetbundle,2760010110110243400,4231705735427583372,text_num,-7978266203517415465,+99,28,3,1,1.0,1.0,1.0,1.0
+download/ui/uiprefabandres/maininterface.assetbundle,2865253671476055292,5788610858786603854,text_num,-7978266203517415465,6,20,4,0,1.0,1.0,1.0,1.0
+download/ui/uiprefabandres/maininterface.assetbundle,2939825908815517174,7305323444230931808,text_tmp_message (1),-5755350681981302373,천하 쟁패 열렬히 진행 중!,20.0,2,0,1.0,1.0,1.0,1.0
+download/ui/uiprefabandres/maininterface.assetbundle,2974615074378459401,2521803014107167352,text_num,-7978266203517415465,,20,4,1,1.0,1.0,1.0,1.0
+download/ui/uiprefabandres/maininterface.assetbundle,3013961471886434007,-5550206479805750103,text_tmp_message,-5755350681981302373,<color=#599F50>{0}시간</color>의 방치 보상을 누적했습니다. 수령하세요!,20.0,1,0,1.0,1.0,1.0,1.0
+download/ui/uiprefabandres/maininterface.assetbundle,3129338827919232922,-2466256942621471669,txt_act_name,-5755350681981302373,옷장과의 약속,18.0,2,0,1.0,1.0,1.0,1.0
+download/ui/uiprefabandres/maininterface.assetbundle,3152975774092550836,-4071579860983673736,text_unLockTips,-5755350681981302373,2wwwww,20.0,2,0,1.0,1.0,1.0,1.0
+download/ui/uiprefabandres/maininterface.assetbundle,3459481493570343176,-7903275700430146629,text_wanfaTips,-5755350681981302373,,18.0,2,0,1.0,1.0,1.0,1.0
+download/ui/uiprefabandres/maininterface.assetbundle,3537703021038719903,-5877247234605751547,text_num,-7978266203517415465,,20,4,1,1.0,1.0,1.0,1.0
+download/ui/uiprefabandres/maininterface.assetbundle,3573826417293429615,-4250581376721635161,text_guan_num,-5755350681981302373,2,28.0,2,0,1.0,1.0,1.0,1.0
+download/ui/uiprefabandres/maininterface.assetbundle,3680839984282145261,5261157128720721713,text_num,-7978266203517415465,+99,28,3,1,1.0,1.0,1.0,1.0
+download/ui/uiprefabandres/maininterface.assetbundle,3691299046859798585,8092235672866061430,txt_act_name,-5755350681981302373,옷장의 약속,18.0,2,0,1.0,1.0,1.0,1.0
+download/ui/uiprefabandres/maininterface.assetbundle,4036057916051507927,3269679188853907257,text_small,-5755350681981302373,국,42.0,1,0,1.0,1.0,1.0,1.0
+download/ui/uiprefabandres/maininterface.assetbundle,4047271992946697897,-635418476074080082,txt_act_leftTime,-5755350681981302373,10:10:10,18.0,2,0,1.0,1.0,1.0,1.0
+download/ui/uiprefabandres/maininterface.assetbundle,4263962541710713983,-3024126261802321382,txt_act_name,-5755350681981302373,옷장과의 약속,18.0,2,0,1.0,1.0,1.0,1.0
+download/ui/uiprefabandres/maininterface.assetbundle,4353992223491964989,-1401897514360478770,txt_act_leftTime,-5755350681981302373,10:10:10,18.0,2,0,1.0,1.0,1.0,1.0
+download/ui/uiprefabandres/maininterface.assetbundle,4599784209678870789,-3622256103402489428,text_big,-5755350681981302373,전,48.0,4,0,1.0,1.0,1.0,1.0
+download/ui/uiprefabandres/maininterface.assetbundle,4821314536758496802,-6175129878799362794,text_name,-5755350681981302373,모험,28.0,2,0,1.0,1.0,1.0,1.0
+download/ui/uiprefabandres/maininterface.assetbundle,5005216041756256702,-5305890895038409809,text_name,-7978266203517415465,시스템,18,4,0,1.0,1.0,1.0,1.0
+download/ui/uiprefabandres/maininterface.assetbundle,5282519860984731819,-8854196726050555180,text_name,-5755350681981302373,모험,28.0,2,0,1.0,1.0,1.0,1.0
+download/ui/uiprefabandres/maininterface.assetbundle,5354244687440816369,5144518541600342099,txt_act_name,-5755350681981302373,옷장의 약속,18.0,2,0,1.0,1.0,1.0,1.0
+download/ui/uiprefabandres/maininterface.assetbundle,5767144020104502383,4017601424443547587,text_num,-7978266203517415465,1,20,3,0,1.0,1.0,1.0,1.0
+download/ui/uiprefabandres/maininterface.assetbundle,5838876319235362301,-8374239129144630016,text_num,-7978266203517415465,+99,28,3,1,1.0,1.0,1.0,1.0
+download/ui/uiprefabandres/maininterface.assetbundle,5860693552761195248,7417499991823863260,txt_act_leftTime,-5755350681981302373,10:10:10,18.0,2,0,1.0,1.0,1.0,1.0
+download/ui/uiprefabandres/maininterface.assetbundle,5974763630117980081,-2529104306956994839,text_num,-7978266203517415465,+99,28,3,1,1.0,1.0,1.0,1.0
+download/ui/uiprefabandres/maininterface.assetbundle,6102501445377543947,7425589153441513280,text,-7978266203517415465,New Text,18,4,0,0.19607843458652496,0.19607843458652496,0.19607843458652496,1.0
+download/ui/uiprefabandres/maininterface.assetbundle,6140769153042574221,-189526805836538566,text,-5755350681981302373,확인,20.0,1,0,1.0,1.0,1.0,1.0
+download/ui/uiprefabandres/maininterface.assetbundle,6146466143187303252,6435572421204311039,text,-5755350681981302373,임무 설명,18.0,1,0,1.0,1.0,1.0,1.0
+download/ui/uiprefabandres/maininterface.assetbundle,6281437685538382712,5983221704899991947,text_youjian,-5755350681981302373,      dadfadsfadsf,20.0,1,0,1.0,1.0,1.0,1.0
+download/ui/uiprefabandres/maininterface.assetbundle,6451561412797640242,-168378924471343848,txt_act_name,-5755350681981302373,옷장 속 약속,18.0,2,0,1.0,1.0,1.0,1.0
+download/ui/uiprefabandres/maininterface.assetbundle,6606949116774976383,6273024761296430784,text_num,-7978266203517415465,,20,4,1,1.0,1.0,1.0,1.0
+download/ui/uiprefabandres/maininterface.assetbundle,6698590838802698220,4358766163448529707,text_time,-7978266203517415465,기간:,16,0,0,1.0,1.0,1.0,1.0
+download/ui/uiprefabandres/maininterface.assetbundle,6757477781003812798,-2664795204961004959,p_chat_private_name,-7978266203517415465,아아아아 ,20,3,0,0.27843138575553894,0.24313725531101227,0.2078431397676468,1.0
+download/ui/uiprefabandres/maininterface.assetbundle,6781715143459593817,3866379780511732004,text_num,-7978266203517415465,6,20,4,0,1.0,1.0,1.0,1.0
+download/ui/uiprefabandres/maininterface.assetbundle,7027396332943009467,-5924753826158497233,text_num,-7978266203517415465,,20,4,1,1.0,1.0,1.0,1.0
+download/ui/uiprefabandres/maininterface.assetbundle,7169664062991865874,-3767891808747950243,text_wanfaTips,-5755350681981302373,,18.0,2,0,1.0,1.0,1.0,1.0
+download/ui/uiprefabandres/maininterface.assetbundle,7285294230046218058,7850506122048201432,txt_act_name,-5755350681981302373,옷장의 약속,18.0,2,0,1.0,1.0,1.0,1.0
+download/ui/uiprefabandres/maininterface.assetbundle,7394630791653342251,9124936205022313351,text_name,-5755350681981302373,안나 ,20.0,1,0,1.0,1.0,1.0,1.0
+download/ui/uiprefabandres/maininterface.assetbundle,7403574300332015325,-2219652695543342022,text_tmp_message (1),-5755350681981302373,보물 상자 소녀 포획이 뜨겁게 진행 중!,20.0,2,0,1.0,1.0,1.0,1.0
+download/ui/uiprefabandres/maininterface.assetbundle,7490148270530628374,-5247421378083060640,text_off,-5755350681981302373,창고,22.0,2,0,1.0,1.0,1.0,1.0
+download/ui/uiprefabandres/maininterface.assetbundle,7594275942114094148,6098515086917437577,txt_act_leftTime,-5755350681981302373,10:10:10,18.0,2,0,1.0,1.0,1.0,1.0
+download/ui/uiprefabandres/maininterface.assetbundle,7646951693848176828,-2501870962174975777,text_name,-7978266203517415465,시스템 ,18,4,0,1.0,1.0,1.0,1.0
+download/ui/uiprefabandres/maininterface.assetbundle,7727487722921026611,5149598096271686710,txt_taskGreenNum,-5755350681981302373,999/999,18.0,2,0,1.0,1.0,1.0,1.0
+download/ui/uiprefabandres/maininterface.assetbundle,7829498764022433051,1791525650340838480,text_num,-7978266203517415465,,20,4,1,1.0,1.0,1.0,1.0
+download/ui/uiprefabandres/maininterface.assetbundle,8073948470005584573,6358563347593162612,text_off,-5755350681981302373,수호부,22.0,2,0,1.0,1.0,1.0,1.0
+download/ui/uiprefabandres/maininterface.assetbundle,8418036365610519499,8466860003617424560,text_num,-7978266203517415465,2021.6.1-7.1,16,0,0,1.0,1.0,1.0,1.0
+download/ui/uiprefabandres/maininterface.assetbundle,8601308495330952284,5665082111309376883,text_num,-7978266203517415465,+99,28,3,1,1.0,1.0,1.0,1.0
+download/ui/uiprefabandres/maininterface.assetbundle,8643545019570768259,5705769611268762917,txt_act_name,-5755350681981302373,,20.0,2,0,1.0,1.0,1.0,1.0
+download/ui/uiprefabandres/maininterface.assetbundle,9186101186045350520,-7197450785939764689,Text,-7978266203517415465,"성주님 계정은 환불 관련 이상 행위로 홍옥이 차감됩니다. 서포트 메일로 연락주시면 확인 도움드리겠습니다.
+",14,0,0,0.19607843458652496,0.19607843458652496,0.19607843458652496,1.0

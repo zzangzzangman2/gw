@@ -1,0 +1,16 @@
+BG_battle_prepare_02.png
+size:1024,512
+filter:Linear,Linear
+a2
+bounds:107,2,290,117
+offsets:0,0,290,146
+rotate:180
+c1
+bounds:326,51,334,324
+rotate:270
+c4
+bounds:638,67,318,163
+rotate:270
+c5
+bounds:2,45,362,340
+offsets:0,69,364,447

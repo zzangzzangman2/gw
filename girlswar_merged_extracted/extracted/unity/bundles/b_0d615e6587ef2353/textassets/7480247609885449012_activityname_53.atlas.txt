@@ -1,0 +1,14 @@
+activityname_53.png
+size:256,256
+filter:Linear,Linear
+a2
+bounds:160,59,9,12
+a3
+bounds:160,49,11,9
+a4
+bounds:160,72,13,13
+a5
+bounds:160,86,70,50
+rotate:90
+effect_2
+bounds:0,0,159,156

@@ -1,0 +1,8 @@
+
+?
+Beans.proto"4
+PRT_HERO_BEANS_LEVELUP_REQ
+heroId (RheroId"5
+PRT_HERO_BEANS_LEVELUP_RESP
+heroId (RheroIdB
+com.next1b.nextsvr.protobproto3

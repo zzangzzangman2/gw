@@ -1,0 +1,10 @@
+local e={}
+function e:OnHandle(e)
+local e=assert(GlobalPB.decode("PRT_UNDERWEAR_SYN",e));
+if(GameInit.GetDebugLogProto())then
+;
+;
+end
+UnderwearMgr:SyncUnderwear(e)
+end
+return e 

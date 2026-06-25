@@ -1,0 +1,13 @@
+smallgame_renwuwancheng.png
+size:512,256
+filter:Linear,Linear
+a3
+bounds:0,3,250,61
+offsets:1,1,252,63
+guangll3
+bounds:250,0,64,64
+title_bg_jscg
+bounds:0,64,424,138
+xx1
+bounds:314,10,53,54
+offsets:3,4,62,61

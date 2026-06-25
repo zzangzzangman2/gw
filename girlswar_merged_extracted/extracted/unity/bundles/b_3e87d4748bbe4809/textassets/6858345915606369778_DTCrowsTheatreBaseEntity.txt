@@ -1,0 +1,46 @@
+local a={id=0,drawCost={},goldDrawMax=0,goldDrawCost={},drawTenTimes=0,feverTimes=0,multiplier={{},{}},recordCount=0,goldPool=0,itemPool=0,unlockPlotCost=0,plotCost=0,prologue=0,iconographyProve=0,atlasId=0}
+a.__index=a
+function a.New(s,l,r,t,u,m,w,f,y,c,d,i,o,n,h)
+local e={}
+setmetatable(e,a)
+e.id=s
+e.drawCost=l
+e.goldDrawMax=r
+e.goldDrawCost=t
+e.drawTenTimes=u
+e.feverTimes=m
+e.multiplier=w
+e.recordCount=f
+e.goldPool=y
+e.itemPool=c
+e.unlockPlotCost=d
+e.plotCost=i
+e.prologue=o
+e.iconographyProve=n
+e.atlasId=h
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.drawCost=t[2]
+e.goldDrawMax=t[3]
+e.goldDrawCost=t[4]
+e.drawTenTimes=t[5]
+e.feverTimes=t[6]
+e.multiplier=t[7]
+e.recordCount=t[8]
+e.goldPool=t[9]
+e.itemPool=t[10]
+e.unlockPlotCost=t[11]
+e.plotCost=t[12]
+e.prologue=t[13]
+e.iconographyProve=t[14]
+e.atlasId=t[15]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/activity/DTCrowsTheatreBaseEntityTableData')
+end
+return a 

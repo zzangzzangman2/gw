@@ -1,0 +1,11 @@
+local t={}
+function t:OnHandle(e)
+local e=assert(GlobalPB.decode("PRT_SERVER_OPEN_DAY_SYN",e));
+if(GameInit.GetDebugLogProto())then
+;
+;
+end
+PlayerMgr.openServerDay=e.openDay
+return e
+end
+return t 

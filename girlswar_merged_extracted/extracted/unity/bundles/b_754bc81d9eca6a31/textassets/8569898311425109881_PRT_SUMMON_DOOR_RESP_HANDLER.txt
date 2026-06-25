@@ -1,0 +1,12 @@
+local e=require("Modules/Act/ActLoveShrine/ActLoveShrineMgr")
+local t={}
+function t:OnHandle(e)
+local e=assert(GlobalPB.decode("PRT_SUMMON_DOOR_RESP",e));
+if(GameInit.GetDebugLogProto())then
+;
+;
+end
+EventSystem.SendEvent(CommonEventId.OnRespJieyuanSrInfo,{protoId=ProtoId.PRT_SUMMON_DOOR_RESP,proto=e})
+return e
+end
+return t 

@@ -1,0 +1,34 @@
+local a={id=0,name="",desc="",unlockDesc="",color=0,attr={{},{}},smallPrefab=0,bigPrefab=0,sort=0}
+a.__index=a
+function a.New(i,h,n,t,d,l,r,s,o)
+local e={}
+setmetatable(e,a)
+e.id=i
+e.name=h
+e.desc=n
+e.unlockDesc=t
+e.color=d
+e.attr=l
+e.smallPrefab=r
+e.bigPrefab=s
+e.sort=o
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.name=t[2]
+e.desc=t[3]
+e.unlockDesc=t[4]
+e.color=t[5]
+e.attr=t[6]
+e.smallPrefab=t[7]
+e.bigPrefab=t[8]
+e.sort=t[9]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/playerCity/DTPlayerCityAtlasEntityTableData')
+end
+return a 

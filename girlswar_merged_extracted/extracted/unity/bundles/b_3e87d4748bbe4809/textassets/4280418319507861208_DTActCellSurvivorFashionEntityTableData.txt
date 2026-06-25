@@ -1,0 +1,14 @@
+local e=
+{
+ByIdx={
+{1101,1,1,"Assets/Download/UI/UIPrefabAndRes/ActCellSuvivorGame_Ext_3/Item_CellSuvivor_Weapon_Bullet_UI_skin_1.prefab","Assets/Download/UI/UIPrefabAndRes/ActCellSuvivorGame_Ext_3/Item_CellSuvivor_Weapon_Bullet_skin_1.prefab",201115,"actCellSuvivor_skinName1101","actCellSuvivor_skinDesc1101","actCellSuvivor_skinUnlock1101"},
+{1201,2,2,"Assets/Download/UI/UIPrefabAndRes/ActCellSuvivorGame_Ext_3/Item_CellSuvivor_Weapon_MassageStick_UI_Skin_1.prefab","Assets/Download/UI/UIPrefabAndRes/ActCellSuvivorGame_Ext_3/Item_CellSuvivor_Weapon_MassageStick_Skin_1.prefab",201116,"actCellSuvivor_skinName1201","actCellSuvivor_skinDesc1201","actCellSuvivor_skinUnlock1201"},
+{1301,3,3,"Assets/Download/UI/UIPrefabAndRes/ActCellSuvivorGame_Ext_3/Item_CellSuvivor_Weapon_Broom_UI_Skin_1.prefab","Assets/Download/UI/UIPrefabAndRes/ActCellSuvivorGame_Ext_3/Item_CellSuvivor_Weapon_Broom_Skin_1.prefab",0,"name3","desc3","desc13"},
+{1701,7,7,"Assets/Download/UI/UIPrefabAndRes/ActCellSuvivorGame_Ext_3/Item_CellSuvivor_Weapon_HolyArray_UI_Skin_1.prefab","Assets/Download/UI/UIPrefabAndRes/ActCellSuvivorGame_Ext_3/Item_CellSuvivor_Weapon_HolyArray_Skin_1.prefab",0,"name4","desc4","desc14"},
+{1501,5,5,"Assets/Download/UI/UIPrefabAndRes/ActCellSuvivorGame_Ext_3/Item_CellSuvivor_Weapon_BoneSpur_UI_Skin_1.prefab","Assets/Download/UI/UIPrefabAndRes/ActCellSuvivorGame_Ext_3/Item_CellSuvivor_Weapon_BoneSpur_Skin_1.prefab",0,"name5","desc5","desc15"},
+{21011,101,0,"Assets/Download/UI/UIPrefabAndRes/ActCellSuvivorGame_Ext_3/Item_CellSuvivor_HeroSp_UI_Skin_1.prefab","Assets/Download/UI/UIPrefabAndRes/ActCellSuvivorGame_Ext_3/Item_CellSuvivor_HeroSp_Skin_1.prefab",201117,"actCellSuvivor_skinName21011","actCellSuvivor_skinDesc21011","actCellSuvivor_skinUnlock21011"},
+{21021,102,0,"Assets/Download/UI/UIPrefabAndRes/ActCellSuvivorGame_Ext_3/Item_CellSuvivor_HeroSp_UI_FireSkin_1.prefab","Assets/Download/UI/UIPrefabAndRes/ActCellSuvivorGame_Ext_3/Item_CellSuvivor_HeroSp_FireSkin_1.prefab",201118,"actCellSuvivor_skinName21021","actCellSuvivor_skinDesc21021","actCellSuvivor_skinUnlock21021"}
+},
+Len=7
+}
+return e 

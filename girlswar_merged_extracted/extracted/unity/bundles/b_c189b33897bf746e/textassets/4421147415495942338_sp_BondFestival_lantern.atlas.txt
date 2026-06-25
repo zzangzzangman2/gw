@@ -1,0 +1,10 @@
+sp_BondFestival_lantern.png
+size:128,64
+filter:Linear,Linear
+scale:0.95
+dl_0
+bounds:2,2,59,59
+offsets:10,9,78,77
+dl_1
+bounds:63,19,19,42
+offsets:0,1,19,44

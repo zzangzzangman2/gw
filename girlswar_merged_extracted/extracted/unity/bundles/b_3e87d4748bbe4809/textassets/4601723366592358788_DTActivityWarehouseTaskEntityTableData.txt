@@ -1,0 +1,13 @@
+local e=
+{
+ByIdx={
+{1,1,{1,2},1,1,1,"Warehouse_20","Warehouse_24"},
+{2,1,{1,2},2,2,2,"Warehouse_20","Warehouse_24"},
+{3,2,{3,4},0,100,1,"Warehouse_21","Warehouse_25"},
+{4,2,{3,4},5,50,2,"Warehouse_21","Warehouse_25"},
+{5,3,{5},5,0,1,"Warehouse_22","Warehouse_26"},
+{6,3,{5},10,0,2,"Warehouse_22","Warehouse_26"}
+},
+Len=6
+}
+return e 

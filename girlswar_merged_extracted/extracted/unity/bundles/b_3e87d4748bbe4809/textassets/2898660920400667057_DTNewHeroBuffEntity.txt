@@ -1,0 +1,40 @@
+local a={id=0,idleAtkBuff=0,towerAtkBuff=0,dragonAtkBuff=0,titanAtkBuff=0,crusadeAtkBuff=0,guildTrialsAtkBuff=0,eject=0,heroBuffInfo="",eliteBuff=0,heroId=0,heroIdFORMULA=""}
+a.__index=a
+function a.New(s,d,h,t,u,c,m,l,r,i,o,n)
+local e={}
+setmetatable(e,a)
+e.id=s
+e.idleAtkBuff=d
+e.towerAtkBuff=h
+e.dragonAtkBuff=t
+e.titanAtkBuff=u
+e.crusadeAtkBuff=c
+e.guildTrialsAtkBuff=m
+e.eject=l
+e.heroBuffInfo=r
+e.eliteBuff=i
+e.heroId=o
+e.heroIdFORMULA=n
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.idleAtkBuff=t[2]
+e.towerAtkBuff=t[3]
+e.dragonAtkBuff=t[4]
+e.titanAtkBuff=t[5]
+e.crusadeAtkBuff=t[6]
+e.guildTrialsAtkBuff=t[7]
+e.eject=t[8]
+e.heroBuffInfo=t[9]
+e.eliteBuff=t[10]
+e.heroId=t[11]
+e.heroIdFORMULA=t[12]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/activity/DTNewHeroBuffEntityTableData')
+end
+return a 

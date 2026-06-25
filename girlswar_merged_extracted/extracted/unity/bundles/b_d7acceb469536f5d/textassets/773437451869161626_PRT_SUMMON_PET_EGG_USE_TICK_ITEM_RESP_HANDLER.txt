@@ -1,0 +1,11 @@
+local t={}
+function t:OnHandle(e)
+local e=assert(GlobalPB.decode("PRT_SUMMON_PET_EGG_USE_TICK_ITEM_RESP",e));
+if(GameInit.GetDebugLogProto())then
+;
+;
+end
+SummonPetEggMgr:OnRespSummonPetUseTickItem(e)
+return e
+end
+return t 

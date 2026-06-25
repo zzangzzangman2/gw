@@ -1,0 +1,5 @@
+2205.png
+size:1024,1024
+filter:Linear,Linear
+2205
+bounds:0,0,617,796

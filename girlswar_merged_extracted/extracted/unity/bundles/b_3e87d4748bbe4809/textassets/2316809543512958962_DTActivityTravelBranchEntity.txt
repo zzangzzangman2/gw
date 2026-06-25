@@ -1,0 +1,48 @@
+local a={id=0,lead=0,bub_lead="",role=0,bub_role="",head="",name="",dialogue="",branch1="",result1="",logText1="",branch2="",result2="",logText2="",award1={{},{}},award2={{},{}}}
+a.__index=a
+function a.New(h,u,d,t,c,f,y,w,p,m,l,n,i,o,s,r)
+local e={}
+setmetatable(e,a)
+e.id=h
+e.lead=u
+e.bub_lead=d
+e.role=t
+e.bub_role=c
+e.head=f
+e.name=y
+e.dialogue=w
+e.branch1=p
+e.result1=m
+e.logText1=l
+e.branch2=n
+e.result2=i
+e.logText2=o
+e.award1=s
+e.award2=r
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.lead=t[2]
+e.bub_lead=t[3]
+e.role=t[4]
+e.bub_role=t[5]
+e.head=t[6]
+e.name=t[7]
+e.dialogue=t[8]
+e.branch1=t[9]
+e.result1=t[10]
+e.logText1=t[11]
+e.branch2=t[12]
+e.result2=t[13]
+e.logText2=t[14]
+e.award1=t[15]
+e.award2=t[16]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/activity/DTActivityTravelBranchEntityTableData')
+end
+return a 

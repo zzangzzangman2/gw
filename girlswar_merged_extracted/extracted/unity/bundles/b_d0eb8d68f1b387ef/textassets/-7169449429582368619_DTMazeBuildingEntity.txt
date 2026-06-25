@@ -1,0 +1,46 @@
+local a={id=0,buildingType=0,func=0,isHistory=0,width=0,scale=0,skewX=0,skewY=0,pic="",openCondition=0,useTimes=0,param={{},{}},awardItem={},prefabId=0,weight=0}
+a.__index=a
+function a.New(s,l,r,t,u,m,w,f,y,c,d,i,o,n,h)
+local e={}
+setmetatable(e,a)
+e.id=s
+e.buildingType=l
+e.func=r
+e.isHistory=t
+e.width=u
+e.scale=m
+e.skewX=w
+e.skewY=f
+e.pic=y
+e.openCondition=c
+e.useTimes=d
+e.param=i
+e.awardItem=o
+e.prefabId=n
+e.weight=h
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.buildingType=t[2]
+e.func=t[3]
+e.isHistory=t[4]
+e.width=t[5]
+e.scale=t[6]
+e.skewX=t[7]
+e.skewY=t[8]
+e.pic=t[9]
+e.openCondition=t[10]
+e.useTimes=t[11]
+e.param=t[12]
+e.awardItem=t[13]
+e.prefabId=t[14]
+e.weight=t[15]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/maze/DTMazeBuildingEntityTableData')
+end
+return a 

@@ -1,0 +1,11 @@
+{
+  "Texture2D": 78,
+  "Shader": 2,
+  "Material": 1,
+  "MeshRenderer": 1,
+  "Mesh": 1,
+  "AssetBundle": 1,
+  "Transform": 1,
+  "GameObject": 1,
+  "MeshFilter": 1
+}

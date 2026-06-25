@@ -1,0 +1,11 @@
+local t={}
+function t:OnHandle(e)
+local e=assert(GlobalPB.decode("PRT_EQUIP_DECOMPOSE_RESP",e));
+if(GameInit.GetDebugLogProto())then
+;
+;
+end
+ModulesInit.UREquipMgr:SyncAlreadyPerfectResolveCount(e.perfectResolveNum)
+EventSystem.SendEvent(CommonEventId.OnEquipDecompose,e)
+end
+return t 

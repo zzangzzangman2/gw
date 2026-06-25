@@ -1,0 +1,19 @@
+
+?
+ActMarryGachaTask.proto"Z
+PRT_MARRY_GACHA_TASK
+score (Rscore,
+receivedAwardDids (RreceivedAwardDids"9
+PRT_MARRY_GACHA_TASK_INFO_REQ
+heroDid (RheroDid"?
+PRT_MARRY_GACHA_TASK_INFO_RESP
+leftTime (RleftTime
+heroDid (RheroDid1
+taskData (2.PRT_MARRY_GACHA_TASKRtaskData"V
+PRT_MARRY_GACHA_TASK_AWARD_REQ
+heroDid (RheroDid
+awardDid (RawardDid"i
+PRT_MARRY_GACHA_TASK_AWARD_RESP
+heroDid (RheroDid,
+receivedAwardDids (RreceivedAwardDidsB
+com.next1b.nextsvr.protobproto3

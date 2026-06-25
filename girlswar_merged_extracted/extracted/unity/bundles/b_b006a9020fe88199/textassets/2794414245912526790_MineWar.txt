@@ -1,0 +1,357 @@
+
+?O
+MineWar.protoCommons.protoFight.proto
+Hero.protoSummonPet.proto"?
+PRT_MW_MINE_STRUCT
+did (Rdid
+	ownerName (	R	ownerName
+
+ownerFight (R
+ownerFight
+ownerId (RownerId4
+upOutputBuffStartTime (RupOutputBuffStartTime"
+ownStartTime (RownStartTime
+mineDbId (RmineDbId
+mapDbId (RmapDbId4
+mianZhanBuffStartTime	 (RmianZhanBuffStartTime2
+occupyProtectEndTime
+ (RoccupyProtectEndTime
+pve (Rpve
+page (Rpage"`
+PRT_MW_ENTER_REQ,
+snaps (2.PRT_MW_HERO_SNAP_INFORsnaps
+
+updateSnap (R
+updateSnap"?
+PRT_MW_ENTER_RESP'
+status (2.ENUM_MW_STATUSRstatus
+endTime (RendTime/
+
+nextStatus (2.ENUM_MW_STATUSR
+nextStatus
+mapId (RmapId
+cs_playerId (R
+csPlayerId
+
+updateSnap (R
+updateSnap 
+lastMapStar (RlastMapStar
+seeRank (RseeRank
+mapStar	 (RmapStar&
+functionStatus
+ (RfunctionStatus
+pve (Rpve&
+playerOpenTime (RplayerOpenTime$
+playerPVPTime (RplayerPVPTime
+	newServer (R	newServer"G
+PRT_MW_OCCUPY_COUNT
+playerId (RplayerId
+count (Rcount"
+PRT_MW_INFO_REQ"?
+PRT_MW_INFO_RESP'
+status (2.ENUM_MW_STATUSRstatus
+endTime (RendTime/
+
+nextStatus (2.ENUM_MW_STATUSR
+nextStatus)
+mines (2.PRT_MW_MINE_STRUCTRmines
+mapStar (RmapStar
+mapId (RmapId$
+stageOverTime (RstageOverTime*
+enemies (2.MW_ENEMY_STRUCTRenemies
+type	 (Rtype
+pve
+ (Rpve$
+canSwitchTime (RcanSwitchTime(
+occupyCDEndTime (RoccupyCDEndTime$
+selfMineCount (RselfMineCount8
+occupyCounts (2.PRT_MW_OCCUPY_COUNTRoccupyCounts"
+firstReqInfo (RfirstReqInfo(
+firstReqPvpInfo (RfirstReqPvpInfo"D
+PRT_MW_MINE_COUNT_CHANGE_SYN$
+selfMineCount (RselfMineCount"
+PRT_MW_PVP_OPEN_REQ",
+PRT_MW_PVP_OPEN_RESP
+mapId (RmapId"
+PRT_MW_PVP_CLOSE_REQ"-
+PRT_MW_PVP_CLOSE_RESP
+mapId (RmapId"0
+PRT_MW_CHANGE_PAGE_REQ
+toPage (RtoPage"?
+PRT_MW_CHANGE_PAGE_RESP
+toPage (RtoPage'
+status (2.ENUM_MW_STATUSRstatus
+endTime (RendTime)
+mines (2.PRT_MW_MINE_STRUCTRmines"?
+PRT_MW_HERO_STRUCT
+heroDid (RheroDid,
+status (2.ENUM_MW_HERO_STATUSRstatus
+hp (Rhp
+maxHp (RmaxHp
+	movePoint (R	movePoint
+fight (Rfight
+heroId (RheroId
+
+firstValue (R
+firstValue
+	lockLevel	 (R	lockLevel
+	rankLevel
+ (R	rankLevel
+prof (Rprof 
+skinHeroDid (RskinHeroDid
+heroPet (RheroPet"
+heroFightPet (RheroFightPet 
+symphonyDid (RsymphonyDid"2
+PRT_MW_MINE_TEAM_REQ
+mineDbId (RmineDbId"?
+PRT_MW_MINE_TEAM_RESP
+mineDbId (RmineDbId
+	teamFight (R	teamFight
+	teamFirst (R	teamFirst)
+heros (2.PRT_MW_HERO_STRUCTRheros/
+
+summonPets (2.PRT_SUMMON_PETR
+summonPetsI
+summonPetFormation (2.PRT_SUMMON_PET_FORMATIONRsummonPetFormation"?
+PRT_MW_SUMMON_PET_STRUCT
+petId (RpetId
+petDid (RpetDid
+level (Rlevel
+exp (Rexp
+star (Rstar
+fight (Rfight
+	movePoint (R	movePoint,
+status (2.ENUM_MW_HERO_STATUSRstatus"
+PRT_MW_HEROS_REQ"?
+PRT_MW_HEROS_RESP)
+heros (2.PRT_MW_HERO_STRUCTRheros"
+myOtherFight (RmyOtherFight"
+myFirstValue (RmyFirstValue
+	myOfficer (R	myOfficer=
+mySummonPets (2.PRT_MW_SUMMON_PET_STRUCTRmySummonPetsM
+mySummonPetFormation (2.PRT_SUMMON_PET_FORMATIONRmySummonPetFormation"6
+PRT_MW_MINE_EMBATTLE_REQ
+mineDbId (RmineDbId"?
+PRT_MW_MINE_EMBATTLE_RESP-
+myHeros (2.PRT_MW_HERO_STRUCTRmyHeros"
+myOtherFight (RmyOtherFight"
+myFirstValue (RmyFirstValue
+	myOfficer (R	myOfficer
+mineDbId (RmineDbId
+	teamFight (R	teamFight
+	teamFirst (R	teamFirst3
+
+enemyHeros (2.PRT_MW_HERO_STRUCTR
+enemyHeros 
+teamOfficer	 (RteamOfficer=
+mySummonPets
+ (2.PRT_MW_SUMMON_PET_STRUCTRmySummonPetsM
+mySummonPetFormation (2.PRT_SUMMON_PET_FORMATIONRmySummonPetFormation9
+enemySummonPets (2.PRT_SUMMON_PETRenemySummonPetsS
+enemySummonPetFormation (2.PRT_SUMMON_PET_FORMATIONRenemySummonPetFormation"r
+MW_FIGHT_PLAYER_STRUCT
+playerId (RplayerId
+name (	Rname
+head (Rhead
+fight (Rfight"?
+PRT_MW_MINE_OCCUPY_REQ
+mineDbId (RmineDbId
+ownerId (RownerId
+heroIds (RheroIds"
+summonPetIds (RsummonPetIds"?
+PRT_MW_MINE_OCCUPY_RESP
+mineDbId (RmineDbId
+mineDid (RmineDid"
+ownerChanged (RownerChanged-
+	fightInfo (2.PRT_FIGHT_PLAYR	fightInfo
+	occupyNum (R	occupyNum7
+
+leftPlayer (2.MW_FIGHT_PLAYER_STRUCTR
+leftPlayer9
+rightPlayer (2.MW_FIGHT_PLAYER_STRUCTRrightPlayer
+
+occupyTime (R
+occupyTime$
+canSwitchTime	 (RcanSwitchTime(
+occupyCDEndTime
+ (RoccupyCDEndTime$
+selfMineCount (RselfMineCount6
+occupyCount (2.PRT_MW_OCCUPY_COUNTRoccupyCount"d
+PRT_MW_MINE_CHANGE_SYN)
+mines (2.PRT_MW_MINE_STRUCTRmines
+cs_playerId (R
+csPlayerId"Y
+PRT_MW_MINE_BUFF_STRUCT
+buffId (RbuffId
+free (Rfree
+have (Rhave"2
+PRT_MW_MINE_BUFF_REQ
+mineDbId (RmineDbId"?
+PRT_MW_MINE_BUFF_RESP
+mineDbId (RmineDbId.
+buffs (2.PRT_MW_MINE_BUFF_STRUCTRbuffs
+cs_playerId (R
+csPlayerId*
+buffCollectCount (RbuffCollectCount"
+buffDefCount (RbuffDefCount"
+buffDmgCount (RbuffDmgCount,
+buffMianZhanCount (RbuffMianZhanCount"N
+PRT_MW_MINE_ADD_BUFF_REQ
+mineDbId (RmineDbId
+buffId (RbuffId"?
+PRT_MW_MINE_ADD_BUFF_RESP
+mineDbId (RmineDbId.
+buffs (2.PRT_MW_MINE_BUFF_STRUCTRbuffs*
+buffCollectCount (RbuffCollectCount"
+buffDefCount (RbuffDefCount"
+buffDmgCount (RbuffDmgCount"
+ownerChanged (RownerChanged,
+buffMianZhanCount (RbuffMianZhanCount"4
+PRT_MW_MINE_SEARCH_REQ
+searchId (RsearchId"D
+PRT_MW_MINE_SEARCH_RESP)
+mines (2.PRT_MW_MINE_STRUCTRmines"?
+MW_FIGHT_HISTORY_STRUCT
+fightId (RfightId
+	fightTime (R	fightTime
+mineDid (RmineDid*
+attackerPlayerId (RattackerPlayerId 
+attackerWin (RattackerWin
+enemyId (RenemyId
+	enemyName (	R	enemyName
+	enemyHead (R	enemyHead
+	occupyNum	 (R	occupyNum&
+enemyHeadFrame
+ (RenemyHeadFrame"?
+MW_ENEMY_STRUCT
+enemyId (RenemyId
+	enemyName (	R	enemyName
+	enemyHead (R	enemyHead
+	beatTimes (R	beatTimes,
+lastBeatTimestamp (RlastBeatTimestamp&
+enemyHeadFrame (RenemyHeadFrame"
+PRT_MW_MINE_FIGHT_HISTORY_REQ"?
+PRT_MW_MINE_FIGHT_HISTORY_RESPB
+defenderHistory (2.MW_FIGHT_HISTORY_STRUCTRdefenderHistoryB
+attackerHistory (2.MW_FIGHT_HISTORY_STRUCTRattackerHistory*
+enemies (2.MW_ENEMY_STRUCTRenemies"V
+PRT_MW_MINE_ENEMY_REMOVE_REQ
+enemyId (RenemyId
+	enemyName (	R	enemyName"?
+PRT_MW_MINE_ENEMY_REMOVE_RESP
+enemyId (RenemyId*
+enemies (2.MW_ENEMY_STRUCTRenemies
+	enemyName (	R	enemyName"Z
+PRT_MW_ENEMY_SYN
+playerId (RplayerId*
+enemies (2.MW_ENEMY_STRUCTRenemies"W
+PRT_MW_FIGHT_BACK_VIEW_REQ
+fightId (RfightId
+cs_playerId (R
+csPlayerId"?
+PRT_MW_FIGHT_BACK_VIEW_RESP-
+	fightInfo (2.PRT_FIGHT_PLAYR	fightInfo7
+
+leftPlayer (2.MW_FIGHT_PLAYER_STRUCTR
+leftPlayer9
+rightPlayer (2.MW_FIGHT_PLAYER_STRUCTRrightPlayer"?
+PRT_MW_BATTLE_PASS_LV_STRUCT
+lv (Rlv9
+rewardStatus1 (2.ENUM_REWARD_STATUSRrewardStatus19
+rewardStatus2 (2.ENUM_REWARD_STATUSRrewardStatus2"P
+PRT_MW_BATTLE_PASS_TASK_STRUCT
+taskDid (RtaskDid
+times (Rtimes"
+PRT_MW_BATTLE_PASS_REQ"?
+PRT_MW_BATTLE_PASS_RESP
+lev (Rlev
+exp (Rexp
+
+boughtCard (R
+boughtCard
+diamond (Rdiamond-
+lv (2.PRT_MW_BATTLE_PASS_LV_STRUCTRlv3
+task (2.PRT_MW_BATTLE_PASS_TASK_STRUCTRtask"
+PRT_MW_BATTLE_PASS_AWARD_REQ"N
+PRT_MW_BATTLE_PASS_AWARD_RESP-
+lv (2.PRT_MW_BATTLE_PASS_LV_STRUCTRlv" 
+PRT_MW_BATTLE_PASS_BUY_EXP_REQ"?
+PRT_MW_BATTLE_PASS_BUY_EXP_RESP
+lev (Rlev
+exp (Rexp-
+lv (2.PRT_MW_BATTLE_PASS_LV_STRUCTRlv
+diamond (Rdiamond"
+PRT_MW_RANK_REQ"`
+PRT_MW_RANK_RESP$
+self (2.PRT_COMMON_RANKRself&
+ranks (2.PRT_COMMON_RANKRranks"K
+PRT_PRIVATE_MINE_STRUCT
+type (Rtype
+	startTime (R	startTime"
+PRT_MW_PRIVATE_MINE_REQ"x
+PRT_MW_PRIVATE_MINE_RESP<
+privateMines (2.PRT_PRIVATE_MINE_STRUCTRprivateMines
+
+boughtCard (R
+boughtCard"3
+PRT_MW_PRIVATE_MINE_AWARD_REQ
+type (Rtype"^
+PRT_MW_PRIVATE_MINE_AWARD_RESP<
+privateMines (2.PRT_PRIVATE_MINE_STRUCTRprivateMines"D
+PRT_MW_SHOP_STRUCT
+did (Rdid
+	boughtNum (R	boughtNum"
+PRT_MW_SHOP_REQ"m
+PRT_MW_SHOP_RESP
+leftTime (RleftTime'
+shop (2.PRT_MW_SHOP_STRUCTRshop
+stage (Rstage"O
+PRT_MW_SHOP_BUY_REQ
+did (Rdid
+stage (Rstage
+num (Rnum"U
+PRT_MW_SHOP_BUY_RESP'
+shop (2.PRT_MW_SHOP_STRUCTRshop
+stage (Rstage"?
+PRT_MW_HERO_SNAP_INFO
+playerId (RplayerId
+heros (2	.PRT_HERORheros.
+petSnap (2.PRT_SUMMON_PET_SNAPRpetSnap"N
+PRT_MW_PLAYER_SNAP_FETCH
+	playerIds (R	playerIds
+batch (Rbatch"_
+PRT_MW_PLAYER_SNAP_RETURN,
+snaps (2.PRT_MW_HERO_SNAP_INFORsnaps
+batch (Rbatch"9
+PRT_MW_PLAYER_RED_POINT_REQ
+playerId (RplayerId"\
+PRT_MW_PLAYER_RED_POINT_RESP
+playerId (RplayerId 
+fightRecord (RfightRecord"k
+PRT_MW_SERVER_OPEN_TIME_SYN
+stage (Rstage
+	startTime (R	startTime
+endTime (RendTime"N
+PRT_MW_PLAYER_MAP_STAR
+playerId (RplayerId
+mapStar (RmapStar":
+PRT_MW_PLAYER_MAP_STAR_REQ
+	playerIds (R	playerIds"X
+PRT_MW_PLAYER_MAP_STAR_RESP9
+playerStars (2.PRT_MW_PLAYER_MAP_STARRplayerStars*k
+ENUM_MW_STATUS
+MW_STOP 
+
+MW_FIGHT_1
+
+MW_FIGHT_2
+MW_SLEEP
+
+MW_PREPARE
+
+MW_UPGRADE*M
+ENUM_MW_HERO_STATUS
+MW_HERO_NONE 
+MW_HERO_NORMAL
+MW_HERO_TEAMB
+com.next1b.nextsvr.protobproto3

@@ -1,0 +1,10 @@
+local e={}
+function e:OnHandle(e)
+local e=assert(GlobalPB.decode("PRT_ACTIVITY_OPENLIST_LOGIN_SYN",e));
+if(GameInit.GetDebugLogProto())then
+;
+;
+end
+ActMgr:SynOpenActData(e)
+end
+return e 

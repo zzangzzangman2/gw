@@ -1,0 +1,62 @@
+local a={id=0,level=0,type=0,name="",Icon="",modelID=0,addAwardInfo={},award={{},{}},awardFireworks={{},{}},loveFiveBoxAward={{},{}},boxWeekAward={{},{}},showAward={{},{}},showAwardFireworks={{},{}},scenes=0,monsters={},monstersHP=0,hpReduce=0,score=0,line1="",line2="",line3="",model="",headcolor=0}
+a.__index=a
+function a.New(l,f,c,t,p,y,w,b,k,g,j,q,x,v,m,s,n,i,o,h,d,r,u)
+local e={}
+setmetatable(e,a)
+e.id=l
+e.level=f
+e.type=c
+e.name=t
+e.Icon=p
+e.modelID=y
+e.addAwardInfo=w
+e.award=b
+e.awardFireworks=k
+e.loveFiveBoxAward=g
+e.boxWeekAward=j
+e.showAward=q
+e.showAwardFireworks=x
+e.scenes=v
+e.monsters=m
+e.monstersHP=s
+e.hpReduce=n
+e.score=i
+e.line1=o
+e.line2=h
+e.line3=d
+e.model=r
+e.headcolor=u
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.level=t[2]
+e.type=t[3]
+e.name=t[4]
+e.Icon=t[5]
+e.modelID=t[6]
+e.addAwardInfo=t[7]
+e.award=t[8]
+e.awardFireworks=t[9]
+e.loveFiveBoxAward=t[10]
+e.boxWeekAward=t[11]
+e.showAward=t[12]
+e.showAwardFireworks=t[13]
+e.scenes=t[14]
+e.monsters=t[15]
+e.monstersHP=t[16]
+e.hpReduce=t[17]
+e.score=t[18]
+e.line1=t[19]
+e.line2=t[20]
+e.line3=t[21]
+e.model=t[22]
+e.headcolor=t[23]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/guild/DTGuildCrusadeBanditEntityTableData')
+end
+return a 

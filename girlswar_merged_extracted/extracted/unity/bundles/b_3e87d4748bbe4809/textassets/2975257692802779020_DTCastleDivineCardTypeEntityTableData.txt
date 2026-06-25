@@ -1,0 +1,13 @@
+local e=
+{
+ByIdx={
+{1,1000,0,{{0}},0,"CardTypeTitle_01","CardTypeDesc_01",0},
+{2,3000,0,{{20004,2},{20003,10}},350,"CardTypeTitle_02","CardTypeDesc_02",1},
+{3,3500,0,{{20084,15},{20010,3}},350,"CardTypeTitle_03","CardTypeDesc_03",1},
+{4,1300,5000,{{99847,300},{99852,50}},0,"CardTypeTitle_04","CardTypeDesc_04",1},
+{5,800,5000,{{99848,300},{99850,30}},350,"CardTypeTitle_05","CardTypeDesc_05",1},
+{6,400,5000,{{20955,2},{20045,2}},0,"CardTypeTitle_06","CardTypeDesc_06",1}
+},
+Len=6
+}
+return e 

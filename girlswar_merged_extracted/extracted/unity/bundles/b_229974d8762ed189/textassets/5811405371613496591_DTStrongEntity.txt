@@ -1,0 +1,36 @@
+local a={id=0,group=0,type=0,sort=0,icon="",name="",desc="",list={},jumpId=0,tips=""}
+a.__index=a
+function a.New(n,r,s,t,l,u,d,h,o,i)
+local e={}
+setmetatable(e,a)
+e.id=n
+e.group=r
+e.type=s
+e.sort=t
+e.icon=l
+e.name=u
+e.desc=d
+e.list=h
+e.jumpId=o
+e.tips=i
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.group=t[2]
+e.type=t[3]
+e.sort=t[4]
+e.icon=t[5]
+e.name=t[6]
+e.desc=t[7]
+e.list=t[8]
+e.jumpId=t[9]
+e.tips=t[10]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/help/DTStrongEntityTableData')
+end
+return a 

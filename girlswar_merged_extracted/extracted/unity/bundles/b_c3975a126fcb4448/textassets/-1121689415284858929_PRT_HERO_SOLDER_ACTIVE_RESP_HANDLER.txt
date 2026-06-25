@@ -1,0 +1,22 @@
+local a={}
+function a:OnHandle(e)
+local e=assert(GlobalPB.decode("PRT_HERO_SOLDER_ACTIVE_RESP",e));
+if(GameInit.GetDebugLogProto())then
+;
+;
+end
+local t=false
+for o,a in ipairs(HeroMgr.solderInfo.solders)do
+if a.solderDid==e.solderDid then
+a.heroCount=e.heroCount
+t=true
+break
+end
+end
+if not t then
+table.add(HeroMgr.solderInfo.solders,e)
+end
+EventSystem.SendEvent(CommonEventId.HeroSolderActive,e)
+return e
+end
+return a 

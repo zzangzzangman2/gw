@@ -1,0 +1,28 @@
+local e={id=0,award={{},{}},chargeAward={{},{}},grade=0,recommend=0,progRess=0}
+e.__index=e
+function e.New(a,i,o,h,s,n)
+local t={}
+setmetatable(t,e)
+t.id=a
+t.award=i
+t.chargeAward=o
+t.grade=h
+t.recommend=s
+t.progRess=n
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.award=a[2]
+t.chargeAward=a[3]
+t.grade=a[4]
+t.recommend=a[5]
+t.progRess=a[6]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/activity/DTIslandFundEntityTableData')
+end
+return e 

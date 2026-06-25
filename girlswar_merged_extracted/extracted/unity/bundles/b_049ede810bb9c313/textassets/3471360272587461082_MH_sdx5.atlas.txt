@@ -1,0 +1,6 @@
+MH_sdx5.png
+size:1024,1024
+filter:Linear,Linear
+sudu50001
+bounds:2,2,975,757
+offsets:0,3,1600,760

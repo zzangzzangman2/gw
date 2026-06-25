@@ -1,0 +1,12 @@
+local t={}
+function t:OnHandle(e)
+local e=assert(GlobalPB.decode("PRT_ANNIVERSARY_3_FUN_INFO_RESP",e));
+if(GameInit.GetDebugLogProto())then
+;
+;
+end
+ModulesInit.Act3AnniversaryTaskMgr:SyncTaskInfo(e)
+ModulesInit.Act3AnniversaryConfigMgr:OnRespAct3AnniversaryFundMainInfo({actId=ModulesInit.Act3AnniversaryConfigMgr.EActId.actId_904,proto=e})
+return e
+end
+return t 

@@ -1,0 +1,74 @@
+local a={id=0,lowBaitCost=0,highBaitCost=0,baitCostNum=0,failCost=0,autoFailWeight=0,autoLimit=0,shopLimit=0,lowShopCostID=0,lowShopOthersCostID=0,fishWaiting={},fishFalseHitWeight={{},{}},poolNum={},abandonFish=0,afkReward=0,satietyMax=0,satiety={{},{}},giveLikeLimit=0,getLikeLimit=0,visitorNum=0,fishFoodNum={},satietyRecover=0,baitOutput=0,baitOutputLimit=0,baitOutputID=0,shopAvgPrefabId=0,fishingTimeout=0,afkLimit=0,fishTankCost=0}
+a.__index=a
+function a.New(u,p,w,t,k,q,g,v,b,x,E,z,A,T,_,O,j,y,r,s,h,n,o,i,d,c,l,f,m)
+local e={}
+setmetatable(e,a)
+e.id=u
+e.lowBaitCost=p
+e.highBaitCost=w
+e.baitCostNum=t
+e.failCost=k
+e.autoFailWeight=q
+e.autoLimit=g
+e.shopLimit=v
+e.lowShopCostID=b
+e.lowShopOthersCostID=x
+e.fishWaiting=E
+e.fishFalseHitWeight=z
+e.poolNum=A
+e.abandonFish=T
+e.afkReward=_
+e.satietyMax=O
+e.satiety=j
+e.giveLikeLimit=y
+e.getLikeLimit=r
+e.visitorNum=s
+e.fishFoodNum=h
+e.satietyRecover=n
+e.baitOutput=o
+e.baitOutputLimit=i
+e.baitOutputID=d
+e.shopAvgPrefabId=c
+e.fishingTimeout=l
+e.afkLimit=f
+e.fishTankCost=m
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.lowBaitCost=t[2]
+e.highBaitCost=t[3]
+e.baitCostNum=t[4]
+e.failCost=t[5]
+e.autoFailWeight=t[6]
+e.autoLimit=t[7]
+e.shopLimit=t[8]
+e.lowShopCostID=t[9]
+e.lowShopOthersCostID=t[10]
+e.fishWaiting=t[11]
+e.fishFalseHitWeight=t[12]
+e.poolNum=t[13]
+e.abandonFish=t[14]
+e.afkReward=t[15]
+e.satietyMax=t[16]
+e.satiety=t[17]
+e.giveLikeLimit=t[18]
+e.getLikeLimit=t[19]
+e.visitorNum=t[20]
+e.fishFoodNum=t[21]
+e.satietyRecover=t[22]
+e.baitOutput=t[23]
+e.baitOutputLimit=t[24]
+e.baitOutputID=t[25]
+e.shopAvgPrefabId=t[26]
+e.fishingTimeout=t[27]
+e.afkLimit=t[28]
+e.fishTankCost=t[29]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/activity/DTActivityFishingBaseEntityTableData')
+end
+return a 

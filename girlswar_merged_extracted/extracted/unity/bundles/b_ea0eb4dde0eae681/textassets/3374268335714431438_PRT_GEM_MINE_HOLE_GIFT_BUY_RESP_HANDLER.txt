@@ -1,0 +1,11 @@
+local t={}
+function t:OnHandle(e)
+local e=assert(GlobalPB.decode("PRT_GEM_MINE_HOLE_GIFT_BUY_RESP",e));
+if(GameInit.GetDebugLogProto())then
+;
+;
+end
+ModulesInit.ActGemMineHoleMgr:RespTreasureRoadGiftBuy(e)
+return e
+end
+return t 

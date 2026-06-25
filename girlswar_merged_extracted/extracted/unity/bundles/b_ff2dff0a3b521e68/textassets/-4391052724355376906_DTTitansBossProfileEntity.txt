@@ -1,0 +1,32 @@
+local a={id=0,bossName="",profile=0,weight=0,voice={},killedvoice={},borndvoice={},borntext=""}
+a.__index=a
+function a.New(i,h,n,t,d,r,s,o)
+local e={}
+setmetatable(e,a)
+e.id=i
+e.bossName=h
+e.profile=n
+e.weight=t
+e.voice=d
+e.killedvoice=r
+e.borndvoice=s
+e.borntext=o
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.bossName=t[2]
+e.profile=t[3]
+e.weight=t[4]
+e.voice=t[5]
+e.killedvoice=t[6]
+e.borndvoice=t[7]
+e.borntext=t[8]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/titans/DTTitansBossProfileEntityTableData')
+end
+return a 

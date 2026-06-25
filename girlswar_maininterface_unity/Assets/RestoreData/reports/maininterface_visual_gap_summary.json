@@ -1,0 +1,42 @@
+{
+  "generated_at": "2026-06-25 13:07:06",
+  "default_hero_id": "1001",
+  "prefab_root_ui_bg_component": "6259596902678607660",
+  "prefab_root_ui_bg_color_a": "0.0",
+  "prefab_root_ui_bg_sprite": "noalphabg_BG_changjing_2",
+  "prefab_root_ui_bg_sprite_export": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\extracted\\unity\\bundles\\b_ac0e1c5f2f781b02\\images\\S\\4648636570285078741_noalphabg_BG_changjing_2.png",
+  "prefab_root_ui_bg_sprite_export_size": [
+    1680,
+    720
+  ],
+  "runtime_bg_bundle": "download/roleprefabsandres/paintingprefabandres/1001.assetbundle",
+  "runtime_bg_source": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\extracted\\unity\\bundles\\b_4b5f2d65cb02985b\\images\\T\\5510351950449616726_noalphabg_PaintingBG_1001.png",
+  "runtime_bg_source_size": [
+    1680,
+    720
+  ],
+  "runtime_bg_unity_asset_path": "Assets/RestoredSprites/maininterface/runtime_dynamic/runtime_UI_bg_noalphabg_PaintingBG_1001.png",
+  "visual_override_rows": 1,
+  "active_ui_bg_evidence_rows": 1,
+  "runtime_candidate_bundle_count": 176,
+  "runtime_candidate_image_count": 2506,
+  "lua_keyword_counts": {
+    "UI_touchSpine": 5,
+    "UI_heroSpine": 10,
+    "p_changeBgHero": 3,
+    "showHeroIndex": 3,
+    "mainShowHeroList": 21,
+    "GetPlayerUnderwearSpine": 1,
+    "GetPlayerBigSpineAll": 1,
+    "GetPaintingBg": 1,
+    "UI_bg": 2
+  },
+  "evidence_counts": {
+    "prefab_node": 298,
+    "lua_runtime": 47
+  },
+  "csv": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_maininterface_unity\\Assets\\RestoreData\\reports\\maininterface_visual_gap_evidence.csv",
+  "json": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_maininterface_unity\\Assets\\RestoreData\\reports\\maininterface_visual_gap_summary.json",
+  "markdown": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\maininterface\\MAININTERFACE_VISUAL_GAP_ANALYSIS.md",
+  "visual_overrides": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_maininterface_unity\\Assets\\RestoreData\\maininterface_visual_overrides.csv"
+}

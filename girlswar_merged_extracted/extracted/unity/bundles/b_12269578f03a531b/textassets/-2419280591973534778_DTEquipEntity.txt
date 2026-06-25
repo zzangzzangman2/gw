@@ -1,0 +1,78 @@
+local a={id=0,name="",icon="",icon2="",pic="",level=0,color=0,star=0,suitStar=0,pos=0,hp=0,atk=0,def=0,attr={{},{}},talentAttr={{},{}},price=0,smelt=0,make={},evolve=0,evolveConsum={{},{}},resolve={{},{}},perfectResolve={{},{}},heroId=0,weaponStar=0,weaponConsum={},score=0,makeConsume={{},{}},recastingConsume={{},{}},makeExclusiveRandom=0,swBuff={{},{}},suitId={}}
+a.__index=a
+function a.New(u,v,y,t,q,j,k,b,g,z,T,_,O,I,A,E,N,x,p,r,s,h,n,o,i,d,c,l,f,w,m)
+local e={}
+setmetatable(e,a)
+e.id=u
+e.name=v
+e.icon=y
+e.icon2=t
+e.pic=q
+e.level=j
+e.color=k
+e.star=b
+e.suitStar=g
+e.pos=z
+e.hp=T
+e.atk=_
+e.def=O
+e.attr=I
+e.talentAttr=A
+e.price=E
+e.smelt=N
+e.make=x
+e.evolve=p
+e.evolveConsum=r
+e.resolve=s
+e.perfectResolve=h
+e.heroId=n
+e.weaponStar=o
+e.weaponConsum=i
+e.score=d
+e.makeConsume=c
+e.recastingConsume=l
+e.makeExclusiveRandom=f
+e.swBuff=w
+e.suitId=m
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.name=t[2]
+e.icon=t[3]
+e.icon2=t[4]
+e.pic=t[5]
+e.level=t[6]
+e.color=t[7]
+e.star=t[8]
+e.suitStar=t[9]
+e.pos=t[10]
+e.hp=t[11]
+e.atk=t[12]
+e.def=t[13]
+e.attr=t[14]
+e.talentAttr=t[15]
+e.price=t[16]
+e.smelt=t[17]
+e.make=t[18]
+e.evolve=t[19]
+e.evolveConsum=t[20]
+e.resolve=t[21]
+e.perfectResolve=t[22]
+e.heroId=t[23]
+e.weaponStar=t[24]
+e.weaponConsum=t[25]
+e.score=t[26]
+e.makeConsume=t[27]
+e.recastingConsume=t[28]
+e.makeExclusiveRandom=t[29]
+e.swBuff=t[30]
+e.suitId=t[31]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/equip/DTEquipEntityTableData')
+end
+return a 

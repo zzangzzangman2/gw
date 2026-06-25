@@ -1,0 +1,15 @@
+local e=
+{
+ByIdx={
+{1,"skillcatname1","tt_skillacticon_1","skillcatdesc1",10,0,60000,{30000},{30}},
+{2,"skillcatname2","tt_skillacticon_2","skillcatdesc2",20,0,60000,{5000,2000,30000},{50,30,20,30}},
+{3,"skillcatname3","tt_skillacticon_3","skillcatdesc3",30,0,60000,{15000,30000},{150,30}},
+{4,"skillcatname4","tt_skillacticon_4","skillcatdesc4",40,0,60000,{200,5000,30000},{2,50,30}},
+{5,"skillcatname5","tt_skillacticon_5","skillcatdesc5",50,0,60000,{60000},{20,60}},
+{6,"UI.TT.JNKMC.11","tt_cardskillicon_11","UI.TT.JNKMS.11",0,1,0,{2000},{0}},
+{7,"UI.TT.JNKMC.02","tt_cardskillicon_2","UI.TT.JNKMS.02",0,1,1000,{2000},{300,2}},
+{8,"UI.TT.JNKMC.09","tt_cardskillicon_9","UI.TT.JNKMS.09",0,1,0,{30000},{300}}
+},
+Len=8
+}
+return e 

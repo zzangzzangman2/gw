@@ -1,0 +1,25 @@
+
+?
+ActGeneralShop.protoCommons.proto"
+PRT_GENERAL_SHOP_INFO_REQ">
+PRT_GENERAL_SHOP_INFO_RESP 
+items (2
+.PRT_GOODSRitems"L
+PRT_GENERAL_SHOP_BUY_REQ
+goodsDid (RgoodsDid
+count (Rcount";
+PRT_GENERAL_SHOP_BUY_RESP
+item (2
+.PRT_GOODSRitem"
+PRT_GENERAL_SPE_SHOP_INFO_REQ"Z
+PRT_GENERAL_SPE_SHOP_INFO_RESP 
+items (2
+.PRT_GOODSRitems
+freeCD (RfreeCD"P
+PRT_GENERAL_SPE_SHOP_BUY_REQ
+goodsDid (RgoodsDid
+count (Rcount"?
+PRT_GENERAL_SPE_SHOP_BUY_RESP
+item (2
+.PRT_GOODSRitemB
+com.next1b.nextsvr.protobproto3

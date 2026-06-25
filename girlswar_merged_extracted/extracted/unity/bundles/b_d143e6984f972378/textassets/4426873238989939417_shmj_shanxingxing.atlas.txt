@@ -1,0 +1,6 @@
+shmj_shanxingxing.png
+size:32,32
+filter:Linear,Linear
+shmj_sdbg4
+bounds:2,2,21,25
+offsets:1,2,23,28

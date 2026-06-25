@@ -1,0 +1,46 @@
+local a={id=0,crossNum=0,name="",mapName="",mapFullName="",prefabId=0,HeroInitColor_R=0,HeroInitColor_G=0,HeroInitColor_B=0,mapDifficulty=0,mapBasepImage="",heroHead="",nextMap=0,firstDrop={{},{}},bossSign=0}
+a.__index=a
+function a.New(s,l,r,t,u,m,w,f,y,c,d,i,o,n,h)
+local e={}
+setmetatable(e,a)
+e.id=s
+e.crossNum=l
+e.name=r
+e.mapName=t
+e.mapFullName=u
+e.prefabId=m
+e.HeroInitColor_R=w
+e.HeroInitColor_G=f
+e.HeroInitColor_B=y
+e.mapDifficulty=c
+e.mapBasepImage=d
+e.heroHead=i
+e.nextMap=o
+e.firstDrop=n
+e.bossSign=h
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.crossNum=t[2]
+e.name=t[3]
+e.mapName=t[4]
+e.mapFullName=t[5]
+e.prefabId=t[6]
+e.HeroInitColor_R=t[7]
+e.HeroInitColor_G=t[8]
+e.HeroInitColor_B=t[9]
+e.mapDifficulty=t[10]
+e.mapBasepImage=t[11]
+e.heroHead=t[12]
+e.nextMap=t[13]
+e.firstDrop=t[14]
+e.bossSign=t[15]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/activity/DTGoldHolidayMapEntityTableData')
+end
+return a 

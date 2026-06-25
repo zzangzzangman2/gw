@@ -1,0 +1,6 @@
+Spine_hunchichouka_zheng.png
+size:256,512
+filter:Linear,Linear
+saoguang
+bounds:2,2,149,377
+offsets:111,351,371,1063

@@ -1,0 +1,306 @@
+
+?G
+CSGuildWar.protoFight.protoCommons.protoSnapshot.protoFormation.protoSummonPet.proto"?
+PRT_PLAYER_HERO_HP
+heroDid (RheroDid
+totalHp (RtotalHp
+curHp (RcurHp
+	lockLevel (R	lockLevel
+	rankLevel (R	rankLevel
+curAnger (RcurAnger
+
+totalAnger (R
+totalAnger
+heroId (RheroId
+heroPet	 (RheroPet"
+heroFightPet
+ (RheroFightPet 
+symphonyDid (RsymphonyDid"?
+PRT_GUILD_WAR_PLAYER_INFO
+playerId (RplayerId
+serverId (RserverId
+name (	Rname
+head (Rhead
+	headFrame (R	headFrame
+level (Rlevel
+fight (Rfight
+totalHp (RtotalHp
+curHp	 (RcurHp
+	leftGrade
+ (R	leftGrade
+	gainGrade (R	gainGrade
+rankNo (RrankNo(
+rebornStampTime (RrebornStampTime 
+lastDefTime (RlastDefTime"
+leftAttCount (RleftAttCount
+online (Ronline)
+heros (2.PRT_PLAYER_HERO_HPRheros
+	guildName (	R	guildName"
+ownHeroCount (RownHeroCount$
+defFightValue (RdefFightValue(
+totalFirstValue (RtotalFirstValue 
+leftHpGrade (RleftHpGrade
+guildPos (RguildPos3
+
+alterHeros (2.PRT_PLAYER_HERO_HPR
+alterHeros
+
+heroOrders (R
+heroOrders
+officer (Rofficer:
+defMainFormation (2.PRT_FORMATIONRdefMainFormation<
+defAlterFormation (2.PRT_FORMATIONRdefAlterFormation/
+
+summonPets (2.PRT_SUMMON_PETR
+summonPetsI
+summonPetFormation (2.PRT_SUMMON_PET_FORMATIONRsummonPetFormation"?
+PRT_GUILD_WAR_GUILD_INFO
+guildId (RguildId
+name (	Rname
+bg (Rbg
+fg (Rfg
+level (Rlevel
+grade (Rgrade 
+reviveCount (RreviveCount
+serverId (RserverId
+
+fightValue	 (R
+fightValue 
+memMaxCount
+ (RmemMaxCount"
+memJoinCount (RmemJoinCount
+
+leaderName (	R
+leaderName"
+leftDefCount (RleftDefCount&
+leaderPlayerId (RleaderPlayerId"?
+'PRT_GUILD_WAR_BATTLE_GROUND_DETAIL_INFO7
+	guildInfo (2.PRT_GUILD_WAR_GUILD_INFOR	guildInfo4
+players (2.PRT_GUILD_WAR_PLAYER_INFORplayers"?
+ PRT_GUILD_WAR_BATTLE_RECORD_INFO:
+
+playerInfo (2.PRT_GUILD_WAR_PLAYER_INFOR
+playerInfo
+win (Rwin
+battleId (RbattleId
+	fightTime (R	fightTime
+	killCount (R	killCount"5
+PRT_HERO_HP
+heroId (RheroId
+hp (Rhp"?
+PRT_GUILD_WAR_QUEST_INFO
+questDid (RquestDid4
+status (2.ENUM_GUILD_WAR_QUEST_STATUSRstatus
+progress (Rprogress"?
+PRT_GUILD_WAR_FIGHT_INFO%
+fight (2.PRT_FIGHT_PLAYRfight
+grade (Rgrade$
+leftGuildName (	RleftGuildName&
+rightGuildName (	RrightGuildName&
+leftPlayerName (	RleftPlayerName(
+rightPlayerName (	RrightPlayerName"
+leftServerId (RleftServerId$
+rightServerId (RrightServerId"?
+PRT_GUILD_WAR_FIGHT_RECORD
+battleId (RbattleId
+
+attGuildId (R
+attGuildId8
+	attPlayer (2.PRT_GUILD_WAR_PLAYER_INFOR	attPlayer8
+	defPlayer (2.PRT_GUILD_WAR_PLAYER_INFOR	defPlayer
+score (Rscore
+	killCount (R	killCount"
+attTimestamp (RattTimestamp
+attWin (RattWin
+attOrDef	 (RattOrDef"J
+PRT_GUILD_WAR_STATUS_SYN.
+status (2.ENUM_GUILD_WAR_STATUSRstatus"
+PRT_GUILD_WAR_STATUS_REQ"?
+PRT_GUILD_WAR_STATUS_RESP.
+warType (2.ENUM_GUILD_WAR_TYPERwarType.
+status (2.ENUM_GUILD_WAR_STATUSRstatus
+stage (Rstage"
+matchEndTime (RmatchEndTime&
+statusOverTime (RstatusOverTime&
+curActiveCount (RcurActiveCount$
+lastStageJoin (RlastStageJoin,
+curGuildStageJoin (RcurGuildStageJoin*
+curSelfStageJoin	 (RcurSelfStageJoin
+
+wheelSpace
+ (R
+wheelSpace&
+battleGroundId (RbattleGroundId:
+wheelSpaceByGuildDisband (RwheelSpaceByGuildDisband&
+guildFirstJoin (RguildFirstJoin&
+firstJoinAward (RfirstJoinAward,
+guildInspireCount (RguildInspireCount*
+selfInspireCount (RselfInspireCount$
+nextMatchTime (RnextMatchTime
+	startTime (R	startTime
+endTime (RendTime
+curScore (RcurScore
+
+curMyScore (R
+curMyScore1
+myBoxes (2.PRT_GUILD_WAR_BOX_INFORmyBoxes.
+nextGuildStageJoin (RnextGuildStageJoin
+
+csPlayerId (R
+csPlayerId"%
+#PRT_GUILD_WAR_FIRST_GUILD_COUNT_REQ"P
+$PRT_GUILD_WAR_FIRST_GUILD_COUNT_RESP(
+firstGuildCount (RfirstGuildCount"F
+PRT_GUILD_WAR_BOX_INFO
+myScore (RmyScore
+time (Rtime"
+PRT_GUILD_WAR_BOX_REQ"?
+PRT_GUILD_WAR_BOX_RESP
+curScore (RcurScore
+
+curMyScore (R
+curMyScore1
+myBoxes (2.PRT_GUILD_WAR_BOX_INFORmyBoxes
+
+csPlayerId (R
+csPlayerId"
+PRT_GUILD_WAR_BOX_AWARD_REQ"
+PRT_GUILD_WAR_BOX_AWARD_RESP"?
+PRT_GUILD_WAR_ACTIVE_PLAYER_REQ
+	curSeason (R	curSeason"?
+ PRT_GUILD_WAR_ACTIVE_PLAYER_RESP
+	curSeason (R	curSeason@
+activePlayers (2.PRT_GUILD_WAR_PLAYER_INFORactivePlayersD
+unactivePlayers (2.PRT_GUILD_WAR_PLAYER_INFORunactivePlayers
+
+csPlayerId (R
+csPlayerId$
+nextMatchTime (RnextMatchTime"N
+$PRT_GUILD_WAR_BATTLE_GROUND_INFO_REQ&
+battleGroundId (RbattleGroundId"?
+%PRT_GUILD_WAR_BATTLE_GROUND_INFO_RESPA
+ownerGuildInfo (2.PRT_GUILD_WAR_GUILD_INFORownerGuildInfoC
+targetGuildInfo (2.PRT_GUILD_WAR_GUILD_INFORtargetGuildInfo&
+battleGroundId (RbattleGroundId
+curStage (RcurStage
+attCount (RattCount
+
+csPlayerId (R
+csPlayerId"O
+%PRT_GUILD_WAR_BATTLE_GROUND_ENTER_REQ&
+battleGroundId (RbattleGroundId"?
+&PRT_GUILD_WAR_BATTLE_GROUND_ENTER_RESP&
+battleGroundId (RbattleGroundIdF
+	ownerInfo (2(.PRT_GUILD_WAR_BATTLE_GROUND_DETAIL_INFOR	ownerInfoH
+
+targetInfo (2(.PRT_GUILD_WAR_BATTLE_GROUND_DETAIL_INFOR
+targetInfo
+
+attHeroIds (R
+attHeroIds
+attCount (RattCount$
+nextMatchTime (RnextMatchTime5
+records (2.PRT_GUILD_WAR_FIGHT_RECORDRrecords
+
+csPlayerId (R
+csPlayerId"?
+PRT_GUILD_WAR_FIGHT_REQ&
+battleGroundId (RbattleGroundId5
+	positions (2.PRT_FORMATION_POSITIONR	positions?
+alterPositions (2.PRT_FORMATION_POSITIONRalterPositions&
+targetPlayerId (RtargetPlayerId(
+snap (2.PRT_PLAYER_SNAPSHOTRsnap"?
+PRT_GUILD_WAR_FIGHT_RESP5
+	positions (2.PRT_FORMATION_POSITIONR	positions7
+	fightInfo (2.PRT_GUILD_WAR_FIGHT_INFOR	fightInfo 
+cs_player_id (R
+csPlayerId"l
+&PRT_GUILD_WAR_PLAYER_BATTLE_RECORD_REQ&
+battleGroundId (RbattleGroundId
+playerId (RplayerId"?
+'PRT_GUILD_WAR_PLAYER_BATTLE_RECORD_RESP&
+battleGroundId (RbattleGroundId
+playerId (RplayerId;
+records (2!.PRT_GUILD_WAR_BATTLE_RECORD_INFORrecords 
+cs_player_id (R
+csPlayerId"I
+PRT_GUILD_WAR_BATTLE_RECORD_REQ&
+battleGroundId (RbattleGroundId"Y
+ PRT_GUILD_WAR_BATTLE_RECORD_RESP5
+records (2.PRT_GUILD_WAR_FIGHT_RECORDRrecords"<
+PRT_GUILD_WAR_BATTLE_WATCH_REQ
+battleId (RbattleId"|
+PRT_GUILD_WAR_BATTLE_WATCH_RESP7
+	fightInfo (2.PRT_GUILD_WAR_FIGHT_INFOR	fightInfo 
+cs_player_id (R
+csPlayerId" 
+PRT_GUILD_WAR_PLAYER_QUEST_REQ"Z
+PRT_GUILD_WAR_PLAYER_QUEST_RESP7
+	questList (2.PRT_GUILD_WAR_QUEST_INFOR	questList"B
+$PRT_GUILD_WAR_PLAYER_QUEST_AWARD_REQ
+questDid (RquestDid"Z
+%PRT_GUILD_WAR_PLAYER_QUEST_AWARD_RESP1
+quests (2.PRT_GUILD_WAR_QUEST_INFORquests"F
+PRT_GUILD_WAR_GRADE_RANK_REQ&
+battleGroundId (RbattleGroundId"?
+PRT_GUILD_WAR_GRADE_RANK_RESP2
+upRank (2.PRT_GUILD_WAR_PLAYER_INFORupRank6
+downRank (2.PRT_GUILD_WAR_PLAYER_INFORdownRank4
+allRank (2.PRT_GUILD_WAR_PLAYER_INFORallRank<
+allRankSelf (2.PRT_GUILD_WAR_PLAYER_INFORallRankSelf"$
+"PRT_GUILD_WAR_FIRST_JOIN_AWARD_REQ"%
+#PRT_GUILD_WAR_FIRST_JOIN_AWARD_RESP"
+PRT_GUILD_WAR_INSPIRE_REQ"
+PRT_GUILD_WAR_INSPIRE_RESP""
+ PRT_GUILD_WAR_INSPIRE_RECORD_REQ"7
+!PRT_GUILD_WAR_INSPIRE_RECORD_RESP
+name (	Rname"?
+PRT_GUILD_ACTIVE
+guildId (RguildId 
+activeFight (RactiveFight 
+activeCount (RactiveCount
+	activeIds (	R	activeIds
+invalid (Rinvalid"Q
+)PRT_GUILD_WAR_CS_FETCH_GUILD_ACTIVE_FETCH$
+nextMatchTime (RnextMatchTime"U
+(PRT_GUILD_WAR_CS_FETCH_GUILD_ACTIVE_BACK)
+guilds (2.PRT_GUILD_ACTIVERguilds"Y
+PRT_GUILD_WAR_RED_POINT_INFO'
+redId (2.ENUM_REDPOINT_IDRredId
+red (Rred"
+PRT_GUILD_WAR_RED_POINT_REQ"?
+PRT_GUILD_WAR_RED_POINT_RESP 
+cs_player_id (R
+csPlayerId1
+reds (2.PRT_GUILD_WAR_RED_POINT_INFORreds
+
+attHeroIds (R
+attHeroIds.
+status (2.ENUM_GUILD_WAR_STATUSRstatus0
+guildBattleGroundId (RguildBattleGroundId"d
+PRT_GUILD_WAR_CS_COLLECT_FETCH
+guildId (RguildId(
+activePlayerIds (RactivePlayerIds"}
+PRT_GUILD_WAR_CS_COLLECT_BACK
+guildId (RguildId
+invalid (Rinvalid(
+snap (2.PRT_PLAYER_SNAPSHOTRsnap"m
+)PRT_GUILD_WAR_CS_BATTLE_GROUND_CHANGE_SYN
+guildId (RguildId&
+battleGroundId (RbattleGroundId*;
+ENUM_GUILD_WAR_TYPE
+WAR_GS_SERVER 
+WAR_CS_SERVER*h
+ENUM_GUILD_WAR_STATUS
+NOT_OPEN 
+STOP
+MATCHING
+PREPARE
+
+COLLECTION
+FIGHTING*X
+ENUM_GUILD_WAR_QUEST_STATUS
+QUEST_NOT_ACTIVE 
+QUEST_ACTIVE
+QUEST_AWARDEDB
+com.next1b.nextsvr.protobproto3

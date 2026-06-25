@@ -1,0 +1,26 @@
+local e={id=0,describe="",parameter2=0,reward={{},{}},jump=0}
+e.__index=e
+function e.New(o,n,a,s,i)
+local t={}
+setmetatable(t,e)
+t.id=o
+t.describe=n
+t.parameter2=a
+t.reward=s
+t.jump=i
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.describe=a[2]
+t.parameter2=a[3]
+t.reward=a[4]
+t.jump=a[5]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/activity/DTDrawHeroWeekTaskEntityTableData')
+end
+return e 

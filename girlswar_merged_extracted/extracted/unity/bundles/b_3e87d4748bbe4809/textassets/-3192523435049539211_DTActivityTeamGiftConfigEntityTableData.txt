@@ -1,0 +1,11 @@
+local e=
+{
+ByIdx={
+{1,304,{1001,310},{1,2,3},"teamgift_title_1","UIActTeamGift/qylb_yeqian01"},
+{2,308,{1001,660},{4,5,6},"teamgift_title_2","UIActTeamGift/qylb_yeqian02"},
+{3,314,{1001,1300},{7,8,9,10},"teamgift_title_3","UIActTeamGift/qylb_yeqian03"},
+{4,327,{1001,3400},{11,12,13,14},"teamgift_title_4","UIActTeamGift/qylb_yeqian04"}
+},
+Len=4
+}
+return e 

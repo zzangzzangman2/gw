@@ -1,0 +1,30 @@
+local t={id=0,headFrame="",sprite=0,unlockType=0,unlockPara={},newUnlockPara={},unlockText=""}
+t.__index=t
+function t.New(o,h,a,s,r,n,i)
+local e={}
+setmetatable(e,t)
+e.id=o
+e.headFrame=h
+e.sprite=a
+e.unlockType=s
+e.unlockPara=r
+e.newUnlockPara=n
+e.unlockText=i
+return e
+end
+function t.NewFromArrItem(a)
+local e={}
+setmetatable(e,t)
+e.id=a[1]
+e.headFrame=a[2]
+e.sprite=a[3]
+e.unlockType=a[4]
+e.unlockPara=a[5]
+e.newUnlockPara=a[6]
+e.unlockText=a[7]
+return e
+end
+function t.GetArr()
+return require('DataNode/DataTable/Create/player/DTAvgEmojiEntityTableData')
+end
+return t 

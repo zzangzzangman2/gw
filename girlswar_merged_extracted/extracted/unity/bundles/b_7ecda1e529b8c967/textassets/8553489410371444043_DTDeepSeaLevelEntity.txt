@@ -1,0 +1,52 @@
+local a={id=0,exp=0,diceMaxNum=0,diceDailyNum=0,diceDailyBuyNum=0,startAward={{},{}},integralAward={{},{}},palaceAward={{},{}},atlantisAward={{},{}},mirrorAward={{},{}},unlockPic={},driftAwardNum={},awardItem={{},{}},surpriseItem={{},{}},unlockType=0,unlockParam={},mapId=0,mapPrefabId=0}
+a.__index=a
+function a.New(d,c,l,t,f,m,y,v,p,b,w,u,n,i,o,s,r,h)
+local e={}
+setmetatable(e,a)
+e.id=d
+e.exp=c
+e.diceMaxNum=l
+e.diceDailyNum=t
+e.diceDailyBuyNum=f
+e.startAward=m
+e.integralAward=y
+e.palaceAward=v
+e.atlantisAward=p
+e.mirrorAward=b
+e.unlockPic=w
+e.driftAwardNum=u
+e.awardItem=n
+e.surpriseItem=i
+e.unlockType=o
+e.unlockParam=s
+e.mapId=r
+e.mapPrefabId=h
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.exp=t[2]
+e.diceMaxNum=t[3]
+e.diceDailyNum=t[4]
+e.diceDailyBuyNum=t[5]
+e.startAward=t[6]
+e.integralAward=t[7]
+e.palaceAward=t[8]
+e.atlantisAward=t[9]
+e.mirrorAward=t[10]
+e.unlockPic=t[11]
+e.driftAwardNum=t[12]
+e.awardItem=t[13]
+e.surpriseItem=t[14]
+e.unlockType=t[15]
+e.unlockParam=t[16]
+e.mapId=t[17]
+e.mapPrefabId=t[18]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/deepsea/DTDeepSeaLevelEntityTableData')
+end
+return a 

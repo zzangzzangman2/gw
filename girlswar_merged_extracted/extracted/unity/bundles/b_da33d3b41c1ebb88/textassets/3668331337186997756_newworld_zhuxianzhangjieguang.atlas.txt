@@ -1,0 +1,9 @@
+newworld_zhuxianzhangjieguang.png
+size:1024,1024
+filter:Linear,Linear
+guang
+bounds:0,330,1022,483
+hds_c_2
+bounds:0,0,355,329
+xsdzz_gx1
+bounds:356,161,168,168

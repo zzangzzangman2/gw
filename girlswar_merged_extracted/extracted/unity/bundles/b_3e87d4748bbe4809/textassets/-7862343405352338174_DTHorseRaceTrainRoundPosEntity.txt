@@ -1,0 +1,30 @@
+local t={id=0,posIds1=0,posIds2=0,posIds3=0,posIds4=0,posIds5=0,posIds6=0}
+t.__index=t
+function t.New(o,h,a,s,r,n,i)
+local e={}
+setmetatable(e,t)
+e.id=o
+e.posIds1=h
+e.posIds2=a
+e.posIds3=s
+e.posIds4=r
+e.posIds5=n
+e.posIds6=i
+return e
+end
+function t.NewFromArrItem(a)
+local e={}
+setmetatable(e,t)
+e.id=a[1]
+e.posIds1=a[2]
+e.posIds2=a[3]
+e.posIds3=a[4]
+e.posIds4=a[5]
+e.posIds5=a[6]
+e.posIds6=a[7]
+return e
+end
+function t.GetArr()
+return require('DataNode/DataTable/Create/activity/DTHorseRaceTrainRoundPosEntityTableData')
+end
+return t 

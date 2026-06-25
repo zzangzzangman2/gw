@@ -1,0 +1,40 @@
+local a={id=0,monsterLists={},bossId=0,monName="",armorTime=0,bloodTime=0,openTime=0,mobArmerRecoverTime=0,mobArmerRecover=0,award={{},{}},advAward={{},{}},modelId=0}
+a.__index=a
+function a.New(s,d,h,t,u,c,m,l,r,i,o,n)
+local e={}
+setmetatable(e,a)
+e.id=s
+e.monsterLists=d
+e.bossId=h
+e.monName=t
+e.armorTime=u
+e.bloodTime=c
+e.openTime=m
+e.mobArmerRecoverTime=l
+e.mobArmerRecover=r
+e.award=i
+e.advAward=o
+e.modelId=n
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.monsterLists=t[2]
+e.bossId=t[3]
+e.monName=t[4]
+e.armorTime=t[5]
+e.bloodTime=t[6]
+e.openTime=t[7]
+e.mobArmerRecoverTime=t[8]
+e.mobArmerRecover=t[9]
+e.award=t[10]
+e.advAward=t[11]
+e.modelId=t[12]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/activity/DTWatermelonBossEntityTableData')
+end
+return a 

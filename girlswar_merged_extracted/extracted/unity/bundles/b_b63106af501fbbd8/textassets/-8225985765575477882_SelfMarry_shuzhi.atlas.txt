@@ -1,0 +1,14 @@
+SelfMarry_shuzhi.png
+size:512,512
+filter:Linear,Linear
+scale:0.77
+bgym1
+bounds:267,0,136,61
+bgym2
+bounds:267,63,193,221
+bgym3
+bounds:387,316,103,193
+bgym4
+bounds:0,286,385,223
+bgym5
+bounds:0,48,265,236

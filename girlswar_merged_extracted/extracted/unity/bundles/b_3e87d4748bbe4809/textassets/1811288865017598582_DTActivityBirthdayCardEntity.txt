@@ -1,0 +1,24 @@
+local e={id=0,desc="",reward={},activitySound=0}
+e.__index=e
+function e.New(o,a,n,i)
+local t={}
+setmetatable(t,e)
+t.id=o
+t.desc=a
+t.reward=n
+t.activitySound=i
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.desc=a[2]
+t.reward=a[3]
+t.activitySound=a[4]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/activity/DTActivityBirthdayCardEntityTableData')
+end
+return e 

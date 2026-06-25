@@ -1,0 +1,32 @@
+local a={id=0,type=0,profession=0,camp=0,para="",desc="",buffId=0,prefabIds={}}
+a.__index=a
+function a.New(i,h,n,t,d,r,s,o)
+local e={}
+setmetatable(e,a)
+e.id=i
+e.type=h
+e.profession=n
+e.camp=t
+e.para=d
+e.desc=r
+e.buffId=s
+e.prefabIds=o
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.type=t[2]
+e.profession=t[3]
+e.camp=t[4]
+e.para=t[5]
+e.desc=t[6]
+e.buffId=t[7]
+e.prefabIds=t[8]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/treasure/DTTreasureSkillEntityTableData')
+end
+return a 

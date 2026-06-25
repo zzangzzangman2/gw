@@ -1,0 +1,11 @@
+spine_lunpanbeilv.png
+size:128,128
+filter:Linear,Linear
+lunpan_zhuanpasntb1
+bounds:2,2,76,81
+rotate:90
+lunpan_zhuanpasntb2
+bounds:33,80,39,55
+rotate:90
+sahnguang
+bounds:2,91,29,28

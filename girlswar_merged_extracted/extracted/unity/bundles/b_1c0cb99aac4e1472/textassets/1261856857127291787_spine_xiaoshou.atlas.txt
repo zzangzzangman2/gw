@@ -1,0 +1,23 @@
+spine_xiaoshou.png
+size:256,256
+filter:Linear,Linear
+1xiaojiantou2
+bounds:165,2,20,64
+2xiaojiantou2
+bounds:142,91,7,41
+offsets:7,19,20,64
+3xiaojiantou2
+bounds:170,134,20,64
+aoyi
+bounds:89,91,51,29
+dianji 1
+bounds:89,134,79,80
+dianji2
+bounds:84,9,79,80
+tuodong
+bounds:2,10,79,80
+rotate:90
+xiaojiantou1
+bounds:2,91,85,123
+xiaojiantou2
+bounds:165,68,20,64

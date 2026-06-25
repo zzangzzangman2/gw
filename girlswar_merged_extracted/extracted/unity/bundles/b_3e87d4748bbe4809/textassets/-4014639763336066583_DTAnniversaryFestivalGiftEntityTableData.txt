@@ -1,0 +1,11 @@
+local e=
+{
+ByIdx={
+{1,"AnniversaryFestivalGift_1",{0},{1},{0},{3},{21060,20},0,999,1},
+{2,"AnniversaryFestivalGift_2",{4},{1,1},{10},{0},{21060,98},0,999,2},
+{3,"AnniversaryFestivalGift_3",{4,4},{6,6},{5,11},{0},{0},324,3,3},
+{4,"AnniversaryFestivalGift_4",{13,8,8},{9},{7,12},{0},{0},329,3,4}
+},
+Len=4
+}
+return e 

@@ -1,0 +1,32 @@
+local a={id=0,nextId=0,flowId=0,award={{},{}},achieveId=0,eventType=0,quickCuriseImage="",quickCuriseDesc=""}
+a.__index=a
+function a.New(i,h,n,t,d,r,s,o)
+local e={}
+setmetatable(e,a)
+e.id=i
+e.nextId=h
+e.flowId=n
+e.award=t
+e.achieveId=d
+e.eventType=r
+e.quickCuriseImage=s
+e.quickCuriseDesc=o
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.nextId=t[2]
+e.flowId=t[3]
+e.award=t[4]
+e.achieveId=t[5]
+e.eventType=t[6]
+e.quickCuriseImage=t[7]
+e.quickCuriseDesc=t[8]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/cruise/DTCruiseAchieveEventEntityTableData')
+end
+return a 

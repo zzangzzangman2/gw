@@ -1,0 +1,48 @@
+
+?
+Forbid.proto"u
+PRT_CS_FORBID_ACCOUNT_SYN
+account (	Raccount
+
+forbidDate (R
+forbidDate
+
+silentDate (R
+silentDate"<
+ PRT_CS_FORBID_DELETE_ACCOUNT_SYN
+account (	Raccount"&
+PRT_CS_FORBID_IP_SYN
+ip (	Rip"-
+PRT_CS_FORBID_DELETE_IP_SYN
+ip (	Rip"?
+PRT_CS_FORBID_ACCOUNT_REQ
+playerId (RplayerId
+account (	Raccount
+
+forbidDate (R
+forbidDate
+
+silentDate (R
+silentDate"?
+PRT_CS_FORBID_ACCOUNT_RESP
+playerId (RplayerId
+account (	Raccount
+
+forbidDate (R
+forbidDate
+
+silentDate (R
+silentDate"?
+!PRT_CS_FORBID_ACCOUNT_WHIT_IP_SYN
+account (	Raccount
+ip (	Rip
+
+forbidDate (R
+forbidDate
+
+silentDate (R
+silentDate"T
+(PRT_CS_FORBID_DELETE_ACCOUNT_WHIT_IP_SYN
+account (	Raccount
+ip (	RipB
+com.next1b.nextsvr.protobproto3

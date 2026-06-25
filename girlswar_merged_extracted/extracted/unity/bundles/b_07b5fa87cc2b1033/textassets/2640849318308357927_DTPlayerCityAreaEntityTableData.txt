@@ -1,0 +1,11 @@
+local e=
+{
+ByIdx={
+{1001,1,{{99922,100}},"CityArea_Name_1001","","ornament_1_1","ornament_1_2","ornament_1_3","ornament_1_4","Ornament_Name_1001_1","Ornament_Name_1001_2","Ornament_Name_1001_3","Ornament_Name_1001_4","CityArea_Title_Name_1001"},
+{2001,2,{{99923,100}},"CityArea_Name_2001","","ornament_2_1","ornament_2_2","ornament_2_3","ornament_2_4","Ornament_Name_2001_1","Ornament_Name_2001_2","Ornament_Name_2001_3","Ornament_Name_2001_4","CityArea_Title_Name_2001"},
+{3001,3,{{99924,100}},"CityArea_Name_3001","","ornament_3_1","ornament_3_2","ornament_3_3","ornament_3_4","Ornament_Name_3001_1","Ornament_Name_3001_2","Ornament_Name_3001_3","Ornament_Name_3001_4","CityArea_Title_Name_3001"},
+{4001,4,{{99925,100}},"CityArea_Name_4001","","ornament_4_1","ornament_4_2","ornament_4_3","ornament_4_4","Ornament_Name_4001_1","Ornament_Name_4001_2","Ornament_Name_4001_3","Ornament_Name_4001_4","CityArea_Title_Name_4001"}
+},
+Len=4
+}
+return e 

@@ -1,0 +1,18 @@
+local t={}
+function t:OnHandle(e)
+local e=assert(GlobalPB.decode("PRT_PLAYER_CHANGE_NAME_RESP",e));
+if(GameInit.GetDebugLogProto())then
+;
+;
+end
+if e.ret==0 then
+PlayerMgr.PlayerInfo.name=e.name
+PlayerMgr.PlayerInfo.changeNameCount=PlayerMgr.PlayerInfo.changeNameCount+1
+EventSystem.SendEvent(CommonEventId.OnPlayerChangeName,e)
+elseif e.ret==1 then
+UIUtil.ShowCommonTips(GameTools.GetLocalize("UI.Setting.Profile.22",LanguageCategory.LangCommon))
+elseif e.ret==2 then
+UIUtil.ShowCommonTips(GameTools.GetLocalize("UI.Setting.Profile.23",LanguageCategory.LangCommon))
+end
+end
+return t 

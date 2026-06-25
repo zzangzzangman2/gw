@@ -1,0 +1,30 @@
+local t={id=0,goods=0,award={{},{}},addAwardInfo={},timesLimit=0,listid=0,name=""}
+t.__index=t
+function t.New(o,h,a,s,r,n,i)
+local e={}
+setmetatable(e,t)
+e.id=o
+e.goods=h
+e.award=a
+e.addAwardInfo=s
+e.timesLimit=r
+e.listid=n
+e.name=i
+return e
+end
+function t.NewFromArrItem(a)
+local e={}
+setmetatable(e,t)
+e.id=a[1]
+e.goods=a[2]
+e.award=a[3]
+e.addAwardInfo=a[4]
+e.timesLimit=a[5]
+e.listid=a[6]
+e.name=a[7]
+return e
+end
+function t.GetArr()
+return require('DataNode/DataTable/Create/activity/DTXiandanGiftEntityTableData')
+end
+return t 

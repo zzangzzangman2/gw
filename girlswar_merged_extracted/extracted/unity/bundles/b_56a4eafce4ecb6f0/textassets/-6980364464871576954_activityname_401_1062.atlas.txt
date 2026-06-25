@@ -1,0 +1,5 @@
+activityname_401_1062.png
+size:128,128
+filter:Linear,Linear
+bawf1
+bounds:0,0,95,77

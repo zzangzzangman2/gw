@@ -1,0 +1,10 @@
+local e={}
+function e:OnHandle(e)
+local e=assert(GlobalPB.decode("PRT_CS_ISLAND_TASK_POINT_PLAYER_SCORE_UPDATE_SYN",e));
+if(GameInit.GetDebugLogProto())then
+;
+;
+end
+return e
+end
+return e 

@@ -1,0 +1,14 @@
+spine_lunpan3.png
+size:1024,1024
+filter:Linear,Linear
+44
+bounds:2,801,128,128
+lunpan_zhuanpan1
+bounds:428,171,501,500
+lunpan_zhuanpan2
+bounds:2,272,424,424
+lunpan_zhuanpan3
+bounds:132,698,231,333
+rotate:90
+xuanzhuan
+bounds:467,673,256,256

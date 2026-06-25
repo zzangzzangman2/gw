@@ -1,0 +1,98 @@
+local a={id=0,chestNormal=0,initialStaminaItem=0,maxStamina=0,staminaRecover=0,staminaItem=0,staminaItemParam=0,openYingdi=0,autoUnlock=0,touchCopy=0,touchUseCopy=0,supplyConvert={},consumeRankingEmail=0,highestRankingEmail=0,DrawEmail=0,storeEmail=0,eagleEmail=0,currencyShow1=0,currencyShow2=0,currencyShow3=0,foundationHp=0,foundationHurt=0,maxDraw=0,UrGrasslandBanner="",UrGrasslandPop="",newUrGrasslandTime=0,delayTime=0,newDurationMain=0,newDurationRank=0,shitouattack="",story="",firstDraw=0,unlockDraw=0,shop=0,itemCleanUp="",falseItem=0,redPointshow=0,automaticLimitation=0,showItem={},iconographyProve=0,drawPool={}}
+a.__index=a
+function a.New(w,j,k,t,I,A,O,T,x,z,_,E,S,L,H,F,C,M,U,R,D,W,N,q,u,l,r,d,h,o,i,n,s,c,y,m,g,v,b,p,f)
+local e={}
+setmetatable(e,a)
+e.id=w
+e.chestNormal=j
+e.initialStaminaItem=k
+e.maxStamina=t
+e.staminaRecover=I
+e.staminaItem=A
+e.staminaItemParam=O
+e.openYingdi=T
+e.autoUnlock=x
+e.touchCopy=z
+e.touchUseCopy=_
+e.supplyConvert=E
+e.consumeRankingEmail=S
+e.highestRankingEmail=L
+e.DrawEmail=H
+e.storeEmail=F
+e.eagleEmail=C
+e.currencyShow1=M
+e.currencyShow2=U
+e.currencyShow3=R
+e.foundationHp=D
+e.foundationHurt=W
+e.maxDraw=N
+e.UrGrasslandBanner=q
+e.UrGrasslandPop=u
+e.newUrGrasslandTime=l
+e.delayTime=r
+e.newDurationMain=d
+e.newDurationRank=h
+e.shitouattack=o
+e.story=i
+e.firstDraw=n
+e.unlockDraw=s
+e.shop=c
+e.itemCleanUp=y
+e.falseItem=m
+e.redPointshow=g
+e.automaticLimitation=v
+e.showItem=b
+e.iconographyProve=p
+e.drawPool=f
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.chestNormal=t[2]
+e.initialStaminaItem=t[3]
+e.maxStamina=t[4]
+e.staminaRecover=t[5]
+e.staminaItem=t[6]
+e.staminaItemParam=t[7]
+e.openYingdi=t[8]
+e.autoUnlock=t[9]
+e.touchCopy=t[10]
+e.touchUseCopy=t[11]
+e.supplyConvert=t[12]
+e.consumeRankingEmail=t[13]
+e.highestRankingEmail=t[14]
+e.DrawEmail=t[15]
+e.storeEmail=t[16]
+e.eagleEmail=t[17]
+e.currencyShow1=t[18]
+e.currencyShow2=t[19]
+e.currencyShow3=t[20]
+e.foundationHp=t[21]
+e.foundationHurt=t[22]
+e.maxDraw=t[23]
+e.UrGrasslandBanner=t[24]
+e.UrGrasslandPop=t[25]
+e.newUrGrasslandTime=t[26]
+e.delayTime=t[27]
+e.newDurationMain=t[28]
+e.newDurationRank=t[29]
+e.shitouattack=t[30]
+e.story=t[31]
+e.firstDraw=t[32]
+e.unlockDraw=t[33]
+e.shop=t[34]
+e.itemCleanUp=t[35]
+e.falseItem=t[36]
+e.redPointshow=t[37]
+e.automaticLimitation=t[38]
+e.showItem=t[39]
+e.iconographyProve=t[40]
+e.drawPool=t[41]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/urgrassland/DTUrGrasslandEntityTableData')
+end
+return a 

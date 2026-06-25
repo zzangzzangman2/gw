@@ -1,0 +1,21 @@
+# Unity generated folders
+girlswar_maininterface_unity/Library/
+girlswar_maininterface_unity/Temp/
+girlswar_maininterface_unity/Obj/
+girlswar_maininterface_unity/Build/
+girlswar_maininterface_unity/Builds/
+girlswar_maininterface_unity/Logs/
+girlswar_maininterface_unity/UserSettings/
+girlswar_maininterface_unity/*.csproj
+girlswar_maininterface_unity/*.sln
+
+# Local probe/build scratch work. Scripts, reports, logs, templates, and vendor files stay tracked.
+_restore_tools/work/
+_restore_tools/logs/github_push_main.log
+
+# OS/editor noise
+Thumbs.db
+Desktop.ini
+.DS_Store
+*.tmp
+*.bak

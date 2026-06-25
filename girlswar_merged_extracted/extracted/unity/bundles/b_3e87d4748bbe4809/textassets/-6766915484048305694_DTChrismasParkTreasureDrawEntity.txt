@@ -1,0 +1,40 @@
+local a={id=0,chapter=0,minLevel=0,maxlevel=0,aEvent={{},{}},bEvent={{},{}},cEvent={{},{}},dEvent={{},{}},norPool={{},{}},exchItemPool={{},{}},spePool={{},{}},randomPool={{},{}}}
+a.__index=a
+function a.New(s,d,h,t,u,c,m,l,r,i,o,n)
+local e={}
+setmetatable(e,a)
+e.id=s
+e.chapter=d
+e.minLevel=h
+e.maxlevel=t
+e.aEvent=u
+e.bEvent=c
+e.cEvent=m
+e.dEvent=l
+e.norPool=r
+e.exchItemPool=i
+e.spePool=o
+e.randomPool=n
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.chapter=t[2]
+e.minLevel=t[3]
+e.maxlevel=t[4]
+e.aEvent=t[5]
+e.bEvent=t[6]
+e.cEvent=t[7]
+e.dEvent=t[8]
+e.norPool=t[9]
+e.exchItemPool=t[10]
+e.spePool=t[11]
+e.randomPool=t[12]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/activity/DTChrismasParkTreasureDrawEntityTableData')
+end
+return a 

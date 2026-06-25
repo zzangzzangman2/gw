@@ -1,0 +1,56 @@
+local a={id=0,firstLineShow={},firstLinePriority={},secondLineShow={},secondLinePriority={},righticon={},lefticon={},normalicon={},trendsicon2={},makingseq={},limitedTimeEvents={},weeklyCycle={},festivalTimeEvents={},trendsicon={},activityseq={},trendsicon3={},activityseq3={},activityBanner={},fundGroup={},activitylist602={}}
+a.__index=a
+function a.New(l,m,u,t,w,f,p,b,v,g,k,y,c,s,n,i,o,h,d,r)
+local e={}
+setmetatable(e,a)
+e.id=l
+e.firstLineShow=m
+e.firstLinePriority=u
+e.secondLineShow=t
+e.secondLinePriority=w
+e.righticon=f
+e.lefticon=p
+e.normalicon=b
+e.trendsicon2=v
+e.makingseq=g
+e.limitedTimeEvents=k
+e.weeklyCycle=y
+e.festivalTimeEvents=c
+e.trendsicon=s
+e.activityseq=n
+e.trendsicon3=i
+e.activityseq3=o
+e.activityBanner=h
+e.fundGroup=d
+e.activitylist602=r
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.firstLineShow=t[2]
+e.firstLinePriority=t[3]
+e.secondLineShow=t[4]
+e.secondLinePriority=t[5]
+e.righticon=t[6]
+e.lefticon=t[7]
+e.normalicon=t[8]
+e.trendsicon2=t[9]
+e.makingseq=t[10]
+e.limitedTimeEvents=t[11]
+e.weeklyCycle=t[12]
+e.festivalTimeEvents=t[13]
+e.trendsicon=t[14]
+e.activityseq=t[15]
+e.trendsicon3=t[16]
+e.activityseq3=t[17]
+e.activityBanner=t[18]
+e.fundGroup=t[19]
+e.activitylist602=t[20]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/activity/DTActivityNumEntityTableData')
+end
+return a 

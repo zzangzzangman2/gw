@@ -1,0 +1,12 @@
+local e=
+{
+ByIdx={
+{5,{{27635,1}},"candyLandDiceTask_1"},
+{10,{{27636,1}},"candyLandDiceTask_2"},
+{20,{{27637,1}},"candyLandDiceTask_3"},
+{30,{{27638,1}},"candyLandDiceTask_4"},
+{50,{{27639,1}},"candyLandDiceTask_5"}
+},
+Len=5
+}
+return e 

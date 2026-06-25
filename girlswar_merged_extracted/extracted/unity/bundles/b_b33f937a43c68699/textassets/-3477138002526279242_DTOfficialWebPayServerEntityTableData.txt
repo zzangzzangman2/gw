@@ -1,0 +1,15 @@
+local e=
+{
+ByIdx={
+{2,"mailDesc_9999_2"},
+{3,"mailDesc_9999_3"},
+{4,"mailDesc_9999_4"},
+{5,"mailDesc_9999_5"},
+{6,"mailDesc_9999_6"},
+{7,"mailDesc_9999_7"},
+{8,"mailDesc_9999_8"},
+{9,"mailDesc_9999_9"}
+},
+Len=8
+}
+return e 

@@ -1,0 +1,8 @@
+
+?
+ActHbattleGift.proto"
+PRT_HBATTLE_GIFT_INFO_REQ"R
+PRT_HBATTLE_GIFT_INFO_RESP
+leftTime (RleftTime
+giftDid (RgiftDidB
+com.next1b.nextsvr.protobproto3

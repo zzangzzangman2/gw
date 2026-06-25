@@ -1,0 +1,30 @@
+local t={id=0,name="",desc="",icon="",iconSmall="",jump={},color=0}
+t.__index=t
+function t.New(o,h,a,s,r,n,i)
+local e={}
+setmetatable(e,t)
+e.id=o
+e.name=h
+e.desc=a
+e.icon=s
+e.iconSmall=r
+e.jump=n
+e.color=i
+return e
+end
+function t.NewFromArrItem(a)
+local e={}
+setmetatable(e,t)
+e.id=a[1]
+e.name=a[2]
+e.desc=a[3]
+e.icon=a[4]
+e.iconSmall=a[5]
+e.jump=a[6]
+e.color=a[7]
+return e
+end
+function t.GetArr()
+return require('DataNode/DataTable/Create/constant/DTCurrencyEntityTableData')
+end
+return t 

@@ -1,0 +1,5 @@
+DailyDealSpineMaoli.png
+size:512,512
+filter:Linear,Linear
+mllb_banner_1018
+bounds:2,2,280,261

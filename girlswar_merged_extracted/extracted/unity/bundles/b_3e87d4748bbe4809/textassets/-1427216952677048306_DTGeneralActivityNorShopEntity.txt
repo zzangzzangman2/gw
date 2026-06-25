@@ -1,0 +1,24 @@
+local e={id=0,limit=0,award={},price={}}
+e.__index=e
+function e.New(o,a,n,i)
+local t={}
+setmetatable(t,e)
+t.id=o
+t.limit=a
+t.award=n
+t.price=i
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.limit=a[2]
+t.award=a[3]
+t.price=a[4]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/activity/DTGeneralActivityNorShopEntityTableData')
+end
+return e 

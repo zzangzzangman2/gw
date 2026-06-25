@@ -1,0 +1,70 @@
+local a={id=0,dayRewards={{},{}},lrMultipiRate=0,lrMultipiResults={{},{}},lrOneCost={},lrTenCost={},lrItemCost=0,lrCommPool=0,lrFloorTime=0,lrFloorPool=0,urMultipiRate=0,urMultipiResults={{},{}},urOneCost={},urTenCost={},urItemCost=0,urCommPool=0,urFloorTime=0,urFloorPool=0,ssrFreeCd=0,ssrMultipiRate=0,ssrMultipiResults={{},{}},ssrOneCost={},ssrFiveCost={},ssrItemCost=0,ssrCommPool=0,ssrFloorTime=0,ssrFloorPool=0}
+a.__index=a
+function a.New(l,y,f,t,g,b,p,v,q,z,j,E,_,x,T,k,w,h,s,n,o,i,r,u,d,m,c)
+local e={}
+setmetatable(e,a)
+e.id=l
+e.dayRewards=y
+e.lrMultipiRate=f
+e.lrMultipiResults=t
+e.lrOneCost=g
+e.lrTenCost=b
+e.lrItemCost=p
+e.lrCommPool=v
+e.lrFloorTime=q
+e.lrFloorPool=z
+e.urMultipiRate=j
+e.urMultipiResults=E
+e.urOneCost=_
+e.urTenCost=x
+e.urItemCost=T
+e.urCommPool=k
+e.urFloorTime=w
+e.urFloorPool=h
+e.ssrFreeCd=s
+e.ssrMultipiRate=n
+e.ssrMultipiResults=o
+e.ssrOneCost=i
+e.ssrFiveCost=r
+e.ssrItemCost=u
+e.ssrCommPool=d
+e.ssrFloorTime=m
+e.ssrFloorPool=c
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.dayRewards=t[2]
+e.lrMultipiRate=t[3]
+e.lrMultipiResults=t[4]
+e.lrOneCost=t[5]
+e.lrTenCost=t[6]
+e.lrItemCost=t[7]
+e.lrCommPool=t[8]
+e.lrFloorTime=t[9]
+e.lrFloorPool=t[10]
+e.urMultipiRate=t[11]
+e.urMultipiResults=t[12]
+e.urOneCost=t[13]
+e.urTenCost=t[14]
+e.urItemCost=t[15]
+e.urCommPool=t[16]
+e.urFloorTime=t[17]
+e.urFloorPool=t[18]
+e.ssrFreeCd=t[19]
+e.ssrMultipiRate=t[20]
+e.ssrMultipiResults=t[21]
+e.ssrOneCost=t[22]
+e.ssrFiveCost=t[23]
+e.ssrItemCost=t[24]
+e.ssrCommPool=t[25]
+e.ssrFloorTime=t[26]
+e.ssrFloorPool=t[27]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/activity/DTNewMarketUREntityTableData')
+end
+return a 

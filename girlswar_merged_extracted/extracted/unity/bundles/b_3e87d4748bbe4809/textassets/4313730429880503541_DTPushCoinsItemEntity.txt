@@ -1,0 +1,26 @@
+local e={id=0,itemType=0,reward={},upItemIds=0,needSpecialShow=0}
+e.__index=e
+function e.New(o,n,a,s,i)
+local t={}
+setmetatable(t,e)
+t.id=o
+t.itemType=n
+t.reward=a
+t.upItemIds=s
+t.needSpecialShow=i
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.itemType=a[2]
+t.reward=a[3]
+t.upItemIds=a[4]
+t.needSpecialShow=a[5]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/activity/DTPushCoinsItemEntityTableData')
+end
+return e 

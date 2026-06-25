@@ -1,0 +1,89 @@
+
+?
+ActTarot.protoCommons.proto
+Item.proto"i
+PRT_TAROT_GIFT_INFO
+giftDid (RgiftDid
+buyTimes (RbuyTimes
+	resetTime (R	resetTime"?
+PRT_TAROT_DATA
+position (Rposition
+	isDrawded (R	isDrawded
+scoreNum (RscoreNum
+awardDid (RawardDid"?
+PRT_TAROT_RECORD_DATA
+playerId (RplayerId
+serverId (RserverId
+name (	Rname
+score (Rscore
+itemDid (RitemDid
+	itemCount (R	itemCount"
+PRT_TAROT_INFO_REQ"?
+PRT_TAROT_INFO_RESP
+score (Rscore
+endTime (RendTime'
+tarots (2.PRT_TAROT_DATARtarots.
+totalDiamondBuyNum (RtotalDiamondBuyNum8
+giftBuyInfos (2.PRT_TAROT_GIFT_INFORgiftBuyInfos
+
+isFirstDay (R
+isFirstDay
+progress (Rprogress$
+progressLevel (RprogressLevel"
+PRT_TAROT_REFRESH_REQ"A
+PRT_TAROT_REFRESH_RESP'
+tarots (2.PRT_TAROT_DATARtarots"0
+PRT_TAROT_DRAW_REQ
+position (Rposition"P
+PRT_TAROT_DRAW_RESP#
+draw (2.PRT_TAROT_DATARdraw
+score (Rscore"%
+PRT_TAROT_BUY_REQ
+num (Rnum"D
+PRT_TAROT_BUY_RESP.
+totalDiamondBuyNum (RtotalDiamondBuyNum"
+PRT_TAROT_DRAW_RECORD_REQ"N
+PRT_TAROT_DRAW_RECORD_RESP0
+records (2.PRT_TAROT_RECORD_DATARrecords"9
+PRT_TAROT_FREE_GIFT_AWARD_REQ
+giftDid (RgiftDid"X
+PRT_TAROT_FREE_GIFT_AWARD_RESP6
+giftBuyInfo (2.PRT_TAROT_GIFT_INFORgiftBuyInfo"
+PRT_TAROT_SCORE_INFO_REQ"|
+PRT_TAROT_SCORE_INFO_RESP0
+records (2.PRT_TAROT_RECORD_DATARrecords-
+shopExchanges (2.PRT_KVRshopExchanges"8
+PRT_TAROT_SCORE_EXCHANGE_REQ
+shopDid (RshopDid"b
+PRT_TAROT_SCORE_EXCHANGE_RESP+
+shopExchange (2.PRT_KVRshopExchange
+score (Rscore"
+PRT_TAROT_BAG_REQ"5
+PRT_TAROT_BAG_RESP
+items (2	.PRT_ITEMRitems"
+PRT_TAROT_BAG_TIDY_REQ":
+PRT_TAROT_BAG_TIDY_RESP
+items (2	.PRT_ITEMRitems"
+PRT_TAROT_BAG_CLAIM_REQ"
+PRT_TAROT_BAG_CLAIM_RESP"
+PRT_TAROT_PROGRESS_AWARD_REQ"E
+PRT_TAROT_PROGRESS_AWARD_RESP$
+progressLevel (RprogressLevel"V
+PRT_CS_TAROT_RECORDE_REQ
+playerId (RplayerId
+
+recordType (R
+recordType"?
+PRT_CS_TAROT_RECORDE_RESP
+playerId (RplayerId0
+records (2.PRT_TAROT_RECORD_DATARrecords
+
+recordType (R
+recordType"?
+PRT_CS_TAROT_RECORD_UPDATE_REQ
+playerId (RplayerId.
+record (2.PRT_TAROT_RECORD_DATARrecord
+
+recordType (R
+recordTypeB
+com.next1b.nextsvr.protobproto3

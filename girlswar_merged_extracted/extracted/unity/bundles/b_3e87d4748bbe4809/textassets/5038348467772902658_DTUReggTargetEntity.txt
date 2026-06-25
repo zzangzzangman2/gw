@@ -1,0 +1,22 @@
+local e={id=0,targetPoint=0,taskAward={{},{}}}
+e.__index=e
+function e.New(o,a,i)
+local t={}
+setmetatable(t,e)
+t.id=o
+t.targetPoint=a
+t.taskAward=i
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.targetPoint=a[2]
+t.taskAward=a[3]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/activity/DTUReggTargetEntityTableData')
+end
+return e 

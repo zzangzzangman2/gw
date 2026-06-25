@@ -1,0 +1,30 @@
+local t={id=0,commSmallCost={},commBigCost={},commUp={{},{}},advSmallCost={},advBigCost={},advUp={{},{}}}
+t.__index=t
+function t.New(o,h,a,s,r,n,i)
+local e={}
+setmetatable(e,t)
+e.id=o
+e.commSmallCost=h
+e.commBigCost=a
+e.commUp=s
+e.advSmallCost=r
+e.advBigCost=n
+e.advUp=i
+return e
+end
+function t.NewFromArrItem(a)
+local e={}
+setmetatable(e,t)
+e.id=a[1]
+e.commSmallCost=a[2]
+e.commBigCost=a[3]
+e.commUp=a[4]
+e.advSmallCost=a[5]
+e.advBigCost=a[6]
+e.advUp=a[7]
+return e
+end
+function t.GetArr()
+return require('DataNode/DataTable/Create/marry/DTMarrySkillLevelEntityTableData')
+end
+return t 

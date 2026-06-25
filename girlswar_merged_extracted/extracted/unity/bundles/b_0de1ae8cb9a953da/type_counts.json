@@ -1,0 +1,12 @@
+{
+  "GameObject": 7,
+  "Transform": 7,
+  "Material": 5,
+  "MeshRenderer": 4,
+  "MeshFilter": 4,
+  "ParticleSystemRenderer": 2,
+  "ParticleSystem": 2,
+  "Shader": 2,
+  "Mesh": 1,
+  "AssetBundle": 1
+}

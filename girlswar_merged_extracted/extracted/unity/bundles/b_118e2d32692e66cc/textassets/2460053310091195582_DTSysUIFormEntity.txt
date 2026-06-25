@@ -1,0 +1,56 @@
+local a={id=0,desc="",name="",uiGroupId=0,disableUILayer=0,isLock=0,assetPath_Chinese="",assetPath_English="",assetPath_Japanese="",AssetPath_Korean="",canMulit=0,showMode=0,bgBlur=0,isFull=0,freezeMode=0,bgMusic=0,dependentName="",dependentAudioBanks="",dependentPacks="",preloadAssets=""}
+a.__index=a
+function a.New(l,m,u,t,w,f,p,b,v,g,k,y,c,s,n,i,o,h,d,r)
+local e={}
+setmetatable(e,a)
+e.id=l
+e.desc=m
+e.name=u
+e.uiGroupId=t
+e.disableUILayer=w
+e.isLock=f
+e.assetPath_Chinese=p
+e.assetPath_English=b
+e.assetPath_Japanese=v
+e.AssetPath_Korean=g
+e.canMulit=k
+e.showMode=y
+e.bgBlur=c
+e.isFull=s
+e.freezeMode=n
+e.bgMusic=i
+e.dependentName=o
+e.dependentAudioBanks=h
+e.dependentPacks=d
+e.preloadAssets=r
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.desc=t[2]
+e.name=t[3]
+e.uiGroupId=t[4]
+e.disableUILayer=t[5]
+e.isLock=t[6]
+e.assetPath_Chinese=t[7]
+e.assetPath_English=t[8]
+e.assetPath_Japanese=t[9]
+e.AssetPath_Korean=t[10]
+e.canMulit=t[11]
+e.showMode=t[12]
+e.bgBlur=t[13]
+e.isFull=t[14]
+e.freezeMode=t[15]
+e.bgMusic=t[16]
+e.dependentName=t[17]
+e.dependentAudioBanks=t[18]
+e.dependentPacks=t[19]
+e.preloadAssets=t[20]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/sys/DTSysUIFormEntityTableData')
+end
+return a 

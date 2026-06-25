@@ -1,0 +1,79 @@
+-- 局内 Item LuaUnit 绑定（Game/Monster/WeaponSys Item 共用）
+CellSuvivor_ItemLuaUnitBind = CellSuvivor_ItemLuaUnitBind or {}
+
+local WEAPON_LOGIC_MODULE = {
+    [1] = "Modules/Act/ActCellSuvivorGame/WeaponSys/Item_CellSuvivor_Weapon_Bullet",
+    [2] = "Modules/Act/ActCellSuvivorGame/WeaponSys/Item_CellSuvivor_Weapon_MassageStick",
+    [3] = "Modules/Act/ActCellSuvivorGame/WeaponSys/Item_CellSuvivor_Weapon_Needle",
+    [4] = "Modules/Act/ActCellSuvivorGame/WeaponSys/Item_CellSuvivor_Weapon_Broom",
+    [5] = "Modules/Act/ActCellSuvivorGame/WeaponSys/Item_CellSuvivor_Weapon_BoneSpur",
+    [6] = "Modules/Act/ActCellSuvivorGame/WeaponSys/Item_CellSuvivor_Weapon_DisinfectBubble",
+    [7] = "Modules/Act/ActCellSuvivorGame/WeaponSys/Item_CellSuvivor_Weapon_HolyArray",
+    [8] = "Modules/Act/ActCellSuvivorGame/WeaponSys/Item_CellSuvivor_Weapon_BandageDragon",
+}
+
+local function ColonProxy(scriptEnv, api)
+    return setmetatable({ scriptEnv = scriptEnv, luaUnitCom = api and api.luaUnitCom or nil }, {
+        __index = function(t, k)
+            local v = rawget(t, k)
+            if v ~= nil then
+                return v
+            end
+            if k == "OnDestroy" and scriptEnv.OnClose then
+                return function(_, ...)
+                    return scriptEnv.OnClose(...)
+                end
+            end
+            v = scriptEnv[k]
+            if v == nil and scriptEnv.M and scriptEnv.M[k] ~= nil then
+                v = scriptEnv.M[k]
+            end
+            if v == nil and _G[k] ~= nil then
+                v = _G[k]
+            end
+            if type(v) == "function" then
+                return function(_, ...)
+                    return v(...)
+                end
+            end
+            return v
+        end,
+        __newindex = function(t, k, v)
+            if scriptEnv.M then
+                scriptEnv.M[k] = v
+            else
+                scriptEnv[k] = v
+            end
+        end,
+    })
+end
+
+function CellSuvivor_ItemLuaUnitBind.BindColon(gameObject, parentScriptEnv, openData)
+    local luaUnitCom = gameObject:GetComponent(typeof(CS.YouYou.LuaUnit))
+    if luaUnitCom == nil then
+        GameInit.Log("[CellSuvivor] LuaUnit component missing on " .. tostring(gameObject and gameObject.name))
+        return nil
+    end
+    luaUnitCom:Init()
+    local scriptEnv = luaUnitCom.scriptEnv
+    if scriptEnv.OnInit then
+        scriptEnv.OnInit(gameObject.transform, { parentScriptEnv = parentScriptEnv })
+    end
+    if openData and scriptEnv.OnOpen then
+        scriptEnv.OnOpen(openData)
+    end
+    return ColonProxy(scriptEnv, { luaUnitCom = luaUnitCom })
+end
+
+-- 逻辑武器（无场景 LuaUnit 组件）
+function CellSuvivor_ItemLuaUnitBind.CreateWeaponColon(parentScriptEnv, openData, logicType)
+    local modulePath = WEAPON_LOGIC_MODULE[logicType] or WEAPON_LOGIC_MODULE[1]
+    local api = require(modulePath)
+    if api.OnInit then
+        api.OnInit(nil, { parentScriptEnv = parentScriptEnv })
+    end
+    if openData and api.OnOpen then
+        api.OnOpen(openData)
+    end
+    return ColonProxy(api)
+end

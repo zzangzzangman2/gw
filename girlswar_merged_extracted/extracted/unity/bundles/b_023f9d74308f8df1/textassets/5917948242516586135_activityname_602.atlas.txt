@@ -1,0 +1,10 @@
+activityname_602.png
+size:256,128
+filter:Linear,Linear
+equipicon_1
+bounds:142,11,67,54
+rotate:90
+equipicon_3
+bounds:77,2,63,76
+quan
+bounds:2,4,73,74

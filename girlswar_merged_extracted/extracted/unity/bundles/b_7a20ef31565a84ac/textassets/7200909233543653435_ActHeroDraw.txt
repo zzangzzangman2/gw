@@ -1,0 +1,36 @@
+
+?
+ActHeroDraw.protoCommons.proto"X
+PRT_HERO_DRAW_WISH
+pos (Rpos
+heroDid (RheroDid
+isDraw (RisDraw"
+PRT_HERO_DRAW_INFO_REQ"?
+PRT_HERO_DRAW_INFO_RESP
+freeCD (RfreeCD,
+alreadyDrawNumber (RalreadyDrawNumber
+boxDid (RboxDid$
+boxDrawNumber (RboxDrawNumber)
+wishs (2.PRT_HERO_DRAW_WISHRwishs
+
+isNewStage (R
+isNewStage"?
+PRT_HERO_DRAW_DRAW_REQ#
+type (2.ENUM_DRAW_TYPERtype&
+isCostCurrency (RisCostCurrency(
+isOldDrawTicket (RisOldDrawTicket"?
+PRT_HERO_DRAW_DRAW_RESP
+freeCD (RfreeCD,
+alreadyDrawNumber (RalreadyDrawNumber
+boxDid (RboxDid$
+boxDrawNumber (RboxDrawNumber)
+wishs (2.PRT_HERO_DRAW_WISHRwishs'
+awards (2.PRT_ONCE_AWARDRawards&
+activeHeroDids (RactiveHeroDids(
+	boxAwards (2
+.PRT_THINGR	boxAwards"J
+PRT_HERO_DRAW_MODIFY_WISH_REQ)
+wishs (2.PRT_HERO_DRAW_WISHRwishs"K
+PRT_HERO_DRAW_MODIFY_WISH_RESP)
+wishs (2.PRT_HERO_DRAW_WISHRwishsB
+com.next1b.nextsvr.protobproto3

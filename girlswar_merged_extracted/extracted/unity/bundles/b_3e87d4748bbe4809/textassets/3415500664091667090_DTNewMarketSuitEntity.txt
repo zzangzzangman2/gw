@@ -1,0 +1,38 @@
+local a={id=0,dayRewards={{},{}},multipiRate=0,multipiResults={{},{}},oneCost={},tenCost={},itemCost=0,poolId=0,onePoint=0,pointMax=0,chipId=0}
+a.__index=a
+function a.New(n,r,s,t,l,u,c,d,h,o,i)
+local e={}
+setmetatable(e,a)
+e.id=n
+e.dayRewards=r
+e.multipiRate=s
+e.multipiResults=t
+e.oneCost=l
+e.tenCost=u
+e.itemCost=c
+e.poolId=d
+e.onePoint=h
+e.pointMax=o
+e.chipId=i
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.dayRewards=t[2]
+e.multipiRate=t[3]
+e.multipiResults=t[4]
+e.oneCost=t[5]
+e.tenCost=t[6]
+e.itemCost=t[7]
+e.poolId=t[8]
+e.onePoint=t[9]
+e.pointMax=t[10]
+e.chipId=t[11]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/activity/DTNewMarketSuitEntityTableData')
+end
+return a 

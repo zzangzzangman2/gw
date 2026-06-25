@@ -1,0 +1,26 @@
+local e={id=0,award={},chargeAward={},goods=0,fristBuyGet={}}
+e.__index=e
+function e.New(o,n,a,s,i)
+local t={}
+setmetatable(t,e)
+t.id=o
+t.award=n
+t.chargeAward=a
+t.goods=s
+t.fristBuyGet=i
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.award=a[2]
+t.chargeAward=a[3]
+t.goods=a[4]
+t.fristBuyGet=a[5]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/activity/DTActivityFingerFundEntityTableData')
+end
+return e 

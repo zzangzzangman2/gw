@@ -1,0 +1,11 @@
+activityname_765.png
+size:256,128
+filter:Linear,Linear
+1
+bounds:85,13,68,58
+rotate:90
+2
+bounds:145,21,60,51
+rotate:90
+effect_3
+bounds:0,0,83,81

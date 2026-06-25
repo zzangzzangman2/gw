@@ -1,0 +1,30 @@
+local t={id=0,exp=0,allHp=0,allAtk=0,allDef=0,allFirst=0,allAttr={{},{}}}
+t.__index=t
+function t.New(o,h,a,s,r,n,i)
+local e={}
+setmetatable(e,t)
+e.id=o
+e.exp=h
+e.allHp=a
+e.allAtk=s
+e.allDef=r
+e.allFirst=n
+e.allAttr=i
+return e
+end
+function t.NewFromArrItem(a)
+local e={}
+setmetatable(e,t)
+e.id=a[1]
+e.exp=a[2]
+e.allHp=a[3]
+e.allAtk=a[4]
+e.allDef=a[5]
+e.allFirst=a[6]
+e.allAttr=a[7]
+return e
+end
+function t.GetArr()
+return require('DataNode/DataTable/Create/harem/DTHaremEntityTableData')
+end
+return t 

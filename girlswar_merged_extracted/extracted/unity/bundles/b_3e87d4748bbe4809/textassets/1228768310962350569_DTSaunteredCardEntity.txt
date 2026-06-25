@@ -1,0 +1,30 @@
+local t={id=0,rarity=0,firstReward={{},{}},synthesisNum=0,cardName="",cardDesc="",cardImage=""}
+t.__index=t
+function t.New(o,h,a,s,r,n,i)
+local e={}
+setmetatable(e,t)
+e.id=o
+e.rarity=h
+e.firstReward=a
+e.synthesisNum=s
+e.cardName=r
+e.cardDesc=n
+e.cardImage=i
+return e
+end
+function t.NewFromArrItem(a)
+local e={}
+setmetatable(e,t)
+e.id=a[1]
+e.rarity=a[2]
+e.firstReward=a[3]
+e.synthesisNum=a[4]
+e.cardName=a[5]
+e.cardDesc=a[6]
+e.cardImage=a[7]
+return e
+end
+function t.GetArr()
+return require('DataNode/DataTable/Create/activity/DTSaunteredCardEntityTableData')
+end
+return t 

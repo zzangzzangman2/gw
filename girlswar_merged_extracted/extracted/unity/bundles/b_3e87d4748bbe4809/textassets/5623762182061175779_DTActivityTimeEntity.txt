@@ -1,0 +1,24 @@
+local e={id=0,data="",data2="",data3=""}
+e.__index=e
+function e.New(o,a,n,i)
+local t={}
+setmetatable(t,e)
+t.id=o
+t.data=a
+t.data2=n
+t.data3=i
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.data=a[2]
+t.data2=a[3]
+t.data3=a[4]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/activity/DTActivityTimeEntityTableData')
+end
+return e 

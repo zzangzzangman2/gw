@@ -1,0 +1,10 @@
+local e={}
+function e:OnHandle(e)
+local e=assert(GlobalPB.decode("PRT_RED_POINT_SHOW_SYN",e));
+if(GameInit.GetDebugLogProto())then
+;
+;
+end
+RedPointMgr:synSingleData(e)
+end
+return e 

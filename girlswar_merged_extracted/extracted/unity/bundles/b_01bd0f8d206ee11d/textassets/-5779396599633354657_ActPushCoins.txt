@@ -1,0 +1,33 @@
+
+?
+ActPushCoins.protoCommons.proto"v
+PRT_PUSHCOINS_GRID
+gridId (RgridId
+itemDid (RitemDid
+multiple (Rmultiple
+isup (Risup"
+PRT_PUSHCOINS_INFO_REQ"?
+PRT_PUSHCOINS_INFO_RESP
+times (Rtimes)
+grids (2.PRT_PUSHCOINS_GRIDRgrids
+score (Rscore
+boxId (RboxId
+leftTime (RleftTime"
+PRT_PUSHCOINS_DRAW_REQ"?
+PRT_PUSHCOINS_DRAW_RESP,
+dismissItemIdList (RdismissItemIdList7
+upItemIdList (2.PRT_PUSHCOINS_GRIDRupItemIdList
+score (Rscore$
+rewards (2
+.PRT_THINGRrewards"6
+PRT_PUSHCOINS_SELECT_REQ
+itemDids (RitemDids"F
+PRT_PUSHCOINS_SELECT_RESP)
+grids (2.PRT_PUSHCOINS_GRIDRgrids"
+PRT_PUSHCOINS_BOX_REWARD_REQ"5
+PRT_PUSHCOINS_BOX_REWARD_RESP
+boxId (RboxId"
+PRT_PUSHCOINS_RESET_REQ"E
+PRT_PUSHCOINS_RESET_RESP)
+grids (2.PRT_PUSHCOINS_GRIDRgridsB
+com.next1b.nextsvr.protobproto3

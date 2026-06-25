@@ -1,0 +1,32 @@
+local a={id=0,classTier=0,classId=0,className="",classImage="",classTierName="",classTierDesc="",classTierImage=""}
+a.__index=a
+function a.New(i,h,n,t,d,r,s,o)
+local e={}
+setmetatable(e,a)
+e.id=i
+e.classTier=h
+e.classId=n
+e.className=t
+e.classImage=d
+e.classTierName=r
+e.classTierDesc=s
+e.classTierImage=o
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.classTier=t[2]
+e.classId=t[3]
+e.className=t[4]
+e.classImage=t[5]
+e.classTierName=t[6]
+e.classTierDesc=t[7]
+e.classTierImage=t[8]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/school/DTSchoolJobTierEntityTableData')
+end
+return a 

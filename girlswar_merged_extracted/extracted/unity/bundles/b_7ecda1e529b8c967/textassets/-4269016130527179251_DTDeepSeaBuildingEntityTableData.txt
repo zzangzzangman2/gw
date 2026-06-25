@@ -1,0 +1,18 @@
+local e=
+{
+ByIdx={
+{1,1,1,"deepsea_start_name","deepsea_start_describe",1,"UI_DeepSeaMap/shmj_land_1",0,0,"UI_DeepSeaMap/shmj_build_1",23207,1,{0,18}},
+{2,2,1,"deepsea_palace_name","deepsea_palace_describe",1,"UI_DeepSeaMap/shmj_land_2",0,0,"UI_DeepSeaMap/shmj_build_2",23208,1,{0,18}},
+{3,3,1,"deepsea_divine_name","deepsea_divine_describe",1,"UI_DeepSeaMap/shmj_land_3",0,0,"UI_DeepSeaMap/shmj_build_3",23203,1,{0,18}},
+{4,4,1,"deepsea_trial_name","deepsea_trial_describe",1,"UI_DeepSeaMap/shmj_land_4",23104,0,"UI_DeepSeaMap/shmj_build_4",23209,1,{0,18}},
+{5,5,1,"deepsea_mirror_name","deepsea_mirror_describe",3,"UI_DeepSeaMap/shmj_land_5",0,0,"UI_DeepSeaMap/shmj_build_5",23205,1,{0,18}},
+{6,6,1,"deepsea_laba_name","deepsea_laba_describe",1,"UI_DeepSeaMap/shmj_land_6",0,0,"UI_DeepSeaMap/shmj_build_6",23210,1,{0,18}},
+{7,7,1,"deepsea_treasure_name","deepsea_treasure_describe",1,"UI_DeepSeaMap/shmj_land_7",0,0,"UI_DeepSeaMap/shmj_build_7",23206,1,{0,18}},
+{8,8,0,"deepsea_whitevortex_name","deepsea_whitevortex_describe",1,"UI_DeepSeaMap/shmj_land_8",23108,1,"",1,1,{0,18}},
+{9,8,0,"deepsea_blackvortex_name","deepsea_blackvortex_describe",1,"UI_DeepSeaMap/shmj_land_8",23109,2,"",2,1,{0,18}},
+{10,0,0,"deepsea_general_name","deepsea_general_describe",1,"UI_DeepSeaMap/shmj_land_10",0,0,"",3,1,{0,18}},
+{11,0,0,"deepsea_general_name","deepsea_general_describe",1,"UI_DeepSeaMap/shmj_land_9",0,0,"",0,1,{0,18}}
+},
+Len=11
+}
+return e 

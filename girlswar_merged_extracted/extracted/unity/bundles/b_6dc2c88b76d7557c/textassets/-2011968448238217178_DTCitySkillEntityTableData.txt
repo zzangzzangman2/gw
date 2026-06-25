@@ -1,0 +1,25 @@
+local e=
+{
+ByIdx={
+{1,"lifeSkillName1","lifeSkillDesc1",1,500},
+{2,"lifeSkillName2","lifeSkillDesc2",2,500},
+{3,"lifeSkillName3","lifeSkillDesc3",4,500},
+{4,"lifeSkillName4","lifeSkillDesc4",5,500},
+{5,"lifeSkillName5","lifeSkillDesc5",6,500},
+{6,"lifeSkillName6","lifeSkillDesc6",3,500},
+{7,"lifeSkillName7","lifeSkillDesc1",1,1000},
+{8,"lifeSkillName8","lifeSkillDesc2",2,1000},
+{9,"lifeSkillName9","lifeSkillDesc3",4,1000},
+{10,"lifeSkillName10","lifeSkillDesc4",5,1000},
+{11,"lifeSkillName11","lifeSkillDesc5",6,1000},
+{12,"lifeSkillName12","lifeSkillDesc6",3,1000},
+{13,"lifeSkillName13","lifeSkillDesc1",1,2000},
+{14,"lifeSkillName14","lifeSkillDesc2",2,2000},
+{15,"lifeSkillName15","lifeSkillDesc3",4,2000},
+{16,"lifeSkillName16","lifeSkillDesc4",5,2000},
+{17,"lifeSkillName17","lifeSkillDesc5",6,2000},
+{18,"lifeSkillName18","lifeSkillDesc6",3,2000}
+},
+Len=18
+}
+return e 

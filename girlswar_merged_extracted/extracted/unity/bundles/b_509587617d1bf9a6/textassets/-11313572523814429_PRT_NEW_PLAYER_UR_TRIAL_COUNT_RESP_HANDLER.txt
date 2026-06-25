@@ -1,0 +1,11 @@
+local t={}
+function t:OnHandle(e)
+local e=assert(GlobalPB.decode("PRT_NEW_PLAYER_UR_TRIAL_COUNT_RESP",e));
+if(GameInit.GetDebugLogProto())then
+;
+;
+end
+ModulesInit.ActNewPlayerURMgr:SyncTrialCount(e)
+return e
+end
+return t 

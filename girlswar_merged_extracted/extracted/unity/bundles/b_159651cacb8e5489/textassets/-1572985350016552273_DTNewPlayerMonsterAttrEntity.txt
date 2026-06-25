@@ -1,0 +1,62 @@
+local a={id=0,hp=0,atk=0,def=0,critical=0,criticalRes=0,criticalStrength=0,block=0,blockRes=0,blockStrength=0,injure=0,injureRes=0,control=0,controlRes=0,blood=0,thorn=0,heal=0,ProfRes=0,ProfResed=0,eXSkillINjure=0,eXSkillINjureRes=0,fury=0,first=0}
+a.__index=a
+function a.New(l,f,c,t,p,y,w,b,k,g,j,q,x,v,m,s,n,i,o,h,d,r,u)
+local e={}
+setmetatable(e,a)
+e.id=l
+e.hp=f
+e.atk=c
+e.def=t
+e.critical=p
+e.criticalRes=y
+e.criticalStrength=w
+e.block=b
+e.blockRes=k
+e.blockStrength=g
+e.injure=j
+e.injureRes=q
+e.control=x
+e.controlRes=v
+e.blood=m
+e.thorn=s
+e.heal=n
+e.ProfRes=i
+e.ProfResed=o
+e.eXSkillINjure=h
+e.eXSkillINjureRes=d
+e.fury=r
+e.first=u
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.hp=t[2]
+e.atk=t[3]
+e.def=t[4]
+e.critical=t[5]
+e.criticalRes=t[6]
+e.criticalStrength=t[7]
+e.block=t[8]
+e.blockRes=t[9]
+e.blockStrength=t[10]
+e.injure=t[11]
+e.injureRes=t[12]
+e.control=t[13]
+e.controlRes=t[14]
+e.blood=t[15]
+e.thorn=t[16]
+e.heal=t[17]
+e.ProfRes=t[18]
+e.ProfResed=t[19]
+e.eXSkillINjure=t[20]
+e.eXSkillINjureRes=t[21]
+e.fury=t[22]
+e.first=t[23]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/newPlayer/DTNewPlayerMonsterAttrEntityTableData')
+end
+return a 

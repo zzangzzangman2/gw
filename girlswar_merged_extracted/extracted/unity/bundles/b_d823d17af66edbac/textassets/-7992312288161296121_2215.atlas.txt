@@ -1,0 +1,14 @@
+2215.png
+size:1024,512
+filter:Linear,Linear
+l1
+bounds:0,0,390,592
+rotate:90
+l2
+bounds:691,40,116,87
+rotate:90
+l4
+bounds:593,40,116,97
+rotate:90
+l5
+bounds:593,157,115,233

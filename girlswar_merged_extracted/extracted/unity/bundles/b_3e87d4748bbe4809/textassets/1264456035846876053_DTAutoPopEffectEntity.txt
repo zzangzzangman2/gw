@@ -1,0 +1,28 @@
+local e={id=0,LRShow=0,URBack=0,Marry=0,MarryBack=0,Fantasy=0}
+e.__index=e
+function e.New(a,i,o,h,s,n)
+local t={}
+setmetatable(t,e)
+t.id=a
+t.LRShow=i
+t.URBack=o
+t.Marry=h
+t.MarryBack=s
+t.Fantasy=n
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.LRShow=a[2]
+t.URBack=a[3]
+t.Marry=a[4]
+t.MarryBack=a[5]
+t.Fantasy=a[6]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/activity/DTAutoPopEffectEntityTableData')
+end
+return e 

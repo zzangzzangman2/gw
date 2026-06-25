@@ -1,0 +1,15 @@
+sp_ helper_qipao.png
+size:512,256
+filter:Linear,Linear
+xzs_piaofutb
+bounds:170,13,158,158
+xzs_piaofutb2
+bounds:0,0,169,171
+offsets:2,2,173,173
+xzs_piaofutb3
+bounds:329,43,118,128
+offsets:0,1,118,129
+xzs_piaofutb3byj
+bounds:391,17,59,25
+xzs_piaofutb3yj
+bounds:329,16,61,26

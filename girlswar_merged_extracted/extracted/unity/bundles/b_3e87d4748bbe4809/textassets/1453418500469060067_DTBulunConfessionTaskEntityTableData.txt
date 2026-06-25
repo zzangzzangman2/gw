@@ -1,0 +1,20 @@
+local e=
+{
+ByIdx={
+{1,2,1,{{20084,10}},"BulunConfessionTask_1",50,5,0},
+{2,6,10,{{20021,1}},"BulunConfessionTask_2",50,5,46},
+{3,7,10,{{20780,1}},"BulunConfessionTask_3",50,5,121},
+{4,3,30,{{26900,1}},"BulunConfessionTask_4",50,5,40},
+{5,2,3,{{20084,20}},"BulunConfessionTask_5",50,5,0},
+{6,6,20,{{20021,2}},"BulunConfessionTask_6",50,5,46},
+{7,7,20,{{20780,2}},"BulunConfessionTask_7",50,5,121},
+{8,3,60,{{26900,2}},"BulunConfessionTask_8",50,5,40},
+{9,2,5,{{20084,30}},"BulunConfessionTask_9",50,5,0},
+{10,6,30,{{20021,3}},"BulunConfessionTask_10",50,5,46},
+{11,7,30,{{20780,3}},"BulunConfessionTask_11",50,5,121},
+{12,3,90,{{26900,3}},"BulunConfessionTask_12",50,5,40},
+{13,8,900,{{20308,20}},"BulunConfessionTask_13",50,20,255}
+},
+Len=13
+}
+return e 

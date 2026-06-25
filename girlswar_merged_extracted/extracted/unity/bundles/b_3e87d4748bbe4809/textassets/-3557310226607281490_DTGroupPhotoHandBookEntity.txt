@@ -1,0 +1,30 @@
+local t={id=0,name="",pngUrl="",isShow=0,Uiname="",resPath="",resCount=0}
+t.__index=t
+function t.New(o,h,a,s,r,n,i)
+local e={}
+setmetatable(e,t)
+e.id=o
+e.name=h
+e.pngUrl=a
+e.isShow=s
+e.Uiname=r
+e.resPath=n
+e.resCount=i
+return e
+end
+function t.NewFromArrItem(a)
+local e={}
+setmetatable(e,t)
+e.id=a[1]
+e.name=a[2]
+e.pngUrl=a[3]
+e.isShow=a[4]
+e.Uiname=a[5]
+e.resPath=a[6]
+e.resCount=a[7]
+return e
+end
+function t.GetArr()
+return require('DataNode/DataTable/Create/activity/DTGroupPhotoHandBookEntityTableData')
+end
+return t 

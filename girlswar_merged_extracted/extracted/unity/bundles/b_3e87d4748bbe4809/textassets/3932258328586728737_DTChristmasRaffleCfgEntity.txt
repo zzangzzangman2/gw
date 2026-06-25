@@ -1,0 +1,28 @@
+local e={id=0,consumption={},outside=0,middle=0,inside=0,sound=0}
+e.__index=e
+function e.New(a,i,o,h,s,n)
+local t={}
+setmetatable(t,e)
+t.id=a
+t.consumption=i
+t.outside=o
+t.middle=h
+t.inside=s
+t.sound=n
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.consumption=a[2]
+t.outside=a[3]
+t.middle=a[4]
+t.inside=a[5]
+t.sound=a[6]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/activity/DTChristmasRaffleCfgEntityTableData')
+end
+return e 

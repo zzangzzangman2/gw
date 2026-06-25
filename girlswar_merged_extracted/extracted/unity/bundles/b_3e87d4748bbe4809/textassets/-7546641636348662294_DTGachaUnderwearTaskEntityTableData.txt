@@ -1,0 +1,13 @@
+local e=
+{
+ByIdx={
+{1,1,1,10,"GachaUnderweartaskname_1",0},
+{2,2,60,20,"GachaUnderweartaskname_2",18},
+{3,3,200,30,"GachaUnderweartaskname_3",0},
+{4,3,500,40,"GachaUnderweartaskname_3",0},
+{5,3,1000,50,"GachaUnderweartaskname_3",0},
+{6,4,500,200,"GachaUnderweartaskname_4",9}
+},
+Len=6
+}
+return e 

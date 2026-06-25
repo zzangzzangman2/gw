@@ -1,0 +1,38 @@
+{
+  "lua_binding_script_id": "8347263561838679580",
+  "lua_binding_components": 20,
+  "lua_bindings_in_main_root": 1,
+  "lua_com_entries": 590,
+  "lua_com_entries_in_main_root": 152,
+  "root_button_type4_lua_com_entries": 47,
+  "lua_com_type_counts": {
+    "0": 1,
+    "11": 9,
+    "14": 1,
+    "16": 2,
+    "17": 4,
+    "19": 8,
+    "2": 12,
+    "20": 12,
+    "21": 33,
+    "22": 2,
+    "24": 44,
+    "25": 14,
+    "3": 83,
+    "4": 196,
+    "5": 109,
+    "6": 34,
+    "7": 21,
+    "8": 5
+  },
+  "xlua_textassets": 36,
+  "encrypted_or_packed_like": 36,
+  "prefix_counts": {
+    "A-EV": 32,
+    "K7HT": 4
+  },
+  "method_evidence_rows": 12,
+  "string_evidence_rows": 15,
+  "reports_dir": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_maininterface_unity\\Assets\\RestoreData\\reports",
+  "markdown": "C:\\Users\\godho\\Downloads\\girlswar\\MAININTERFACE_XLUA_LOADER_ANALYSIS.md"
+}

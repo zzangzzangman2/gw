@@ -1,0 +1,11 @@
+
+?
+ActHaremFoodGift.proto"K
+PRT_HAREM_FOOD_GIFT
+giftDid (RgiftDid
+buyCount (RbuyCount"
+PRT_HAREM_FOOD_GIFT_INFO_REQ"g
+PRT_HAREM_FOOD_GIFT_INFO_RESP
+leftTime (RleftTime*
+gifts (2.PRT_HAREM_FOOD_GIFTRgiftsB
+com.next1b.nextsvr.protobproto3

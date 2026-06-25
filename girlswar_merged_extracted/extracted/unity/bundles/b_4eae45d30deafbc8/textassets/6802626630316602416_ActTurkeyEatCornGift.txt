@@ -1,0 +1,8 @@
+
+?
+ActTurkeyEatCornGift.proto"#
+!PRT_TURKEY_EAT_CORN_GIFT_INFO_REQ"Z
+"PRT_TURKEY_EAT_CORN_GIFT_INFO_RESP
+leftTime (RleftTime
+giftDid (RgiftDidB
+com.next1b.nextsvr.protobproto3

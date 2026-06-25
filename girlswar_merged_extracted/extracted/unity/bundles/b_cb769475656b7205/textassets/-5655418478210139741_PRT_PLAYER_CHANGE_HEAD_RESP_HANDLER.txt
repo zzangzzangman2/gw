@@ -1,0 +1,11 @@
+local e={}
+function e:OnHandle(e)
+local e=assert(GlobalPB.decode("PRT_PLAYER_CHANGE_HEAD_RESP",e));
+if(GameInit.GetDebugLogProto())then
+;
+;
+end
+PlayerMgr.PlayerInfo.head=e.head
+EventSystem.SendEvent(CommonEventId.OnPlayInfoChange)
+end
+return e 

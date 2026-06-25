@@ -1,0 +1,16 @@
+Painting_1052_Back.png
+size:2048,1024
+filter:Linear,Linear
+scale:0.2
+book1
+bounds:0,0,770,240
+book2
+bounds:0,494,887,406
+book3
+bounds:0,241,842,252
+book4
+bounds:1086,84,816,178
+rotate:90
+book5
+bounds:887,130,770,198
+rotate:90

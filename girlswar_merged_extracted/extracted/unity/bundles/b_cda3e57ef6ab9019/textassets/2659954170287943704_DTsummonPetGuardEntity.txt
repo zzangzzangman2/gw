@@ -1,0 +1,28 @@
+local e={id=0,color=0,star=0,guardGrow=0,guardGrowSSR=0,unlockStar=0}
+e.__index=e
+function e.New(a,i,o,h,s,n)
+local t={}
+setmetatable(t,e)
+t.id=a
+t.color=i
+t.star=o
+t.guardGrow=h
+t.guardGrowSSR=s
+t.unlockStar=n
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.color=a[2]
+t.star=a[3]
+t.guardGrow=a[4]
+t.guardGrowSSR=a[5]
+t.unlockStar=a[6]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/summonPet/DTsummonPetGuardEntityTableData')
+end
+return e 

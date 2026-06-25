@@ -1,0 +1,10 @@
+activityname_401_1033.png
+size:256,256
+filter:Linear,Linear
+a1
+bounds:2,83,83,83
+offsets:0,0,84,83
+a2
+bounds:2,2,79,80
+offsets:1,1,81,82
+rotate:90

@@ -1,0 +1,24 @@
+local e={id=0,day=0,danceExpLowest=0,useType=0}
+e.__index=e
+function e.New(o,a,n,i)
+local t={}
+setmetatable(t,e)
+t.id=o
+t.day=a
+t.danceExpLowest=n
+t.useType=i
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.day=a[2]
+t.danceExpLowest=a[3]
+t.useType=a[4]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/activity/DTSaunteredDanceHelpEntityTableData')
+end
+return e 

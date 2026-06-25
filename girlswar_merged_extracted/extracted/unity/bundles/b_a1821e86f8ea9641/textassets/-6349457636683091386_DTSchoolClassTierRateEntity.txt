@@ -1,0 +1,26 @@
+local e={id=0,kidQuality=0,lowClassTierRate=0,midClassTierRate=0,highClassTierRate=0}
+e.__index=e
+function e.New(o,n,a,s,i)
+local t={}
+setmetatable(t,e)
+t.id=o
+t.kidQuality=n
+t.lowClassTierRate=a
+t.midClassTierRate=s
+t.highClassTierRate=i
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.kidQuality=a[2]
+t.lowClassTierRate=a[3]
+t.midClassTierRate=a[4]
+t.highClassTierRate=a[5]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/school/DTSchoolClassTierRateEntityTableData')
+end
+return e 

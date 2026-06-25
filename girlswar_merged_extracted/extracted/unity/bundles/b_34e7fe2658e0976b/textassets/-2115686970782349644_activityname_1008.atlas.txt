@@ -1,0 +1,5 @@
+activityname_1008.png
+size:128,64
+filter:Linear,Linear
+zhuye_jihe
+bounds:0,0,75,63

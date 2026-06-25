@@ -1,0 +1,42 @@
+local a={id=0,speakId=0,operType=0,avgIndex=0,avgMove=0,avgRole=0,avgFace="",talkContent="",audioId=0,heroDid=0,spineAnim="",isFlip=0,actionDuration=0}
+a.__index=a
+function a.New(s,d,h,t,l,c,m,f,u,r,i,o,n)
+local e={}
+setmetatable(e,a)
+e.id=s
+e.speakId=d
+e.operType=h
+e.avgIndex=t
+e.avgMove=l
+e.avgRole=c
+e.avgFace=m
+e.talkContent=f
+e.audioId=u
+e.heroDid=r
+e.spineAnim=i
+e.isFlip=o
+e.actionDuration=n
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.speakId=t[2]
+e.operType=t[3]
+e.avgIndex=t[4]
+e.avgMove=t[5]
+e.avgRole=t[6]
+e.avgFace=t[7]
+e.talkContent=t[8]
+e.audioId=t[9]
+e.heroDid=t[10]
+e.spineAnim=t[11]
+e.isFlip=t[12]
+e.actionDuration=t[13]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/guide/DTCommonPreviewDetailEntityTableData')
+end
+return a 

@@ -1,0 +1,13 @@
+local e=
+{
+ByIdx={
+{1,"greatBossMsg_1"},
+{2,"greatBossMsg_2"},
+{3,"greatBossMsg_3"},
+{4,"greatBossMsg_4"},
+{5,"greatBossMsg_5"},
+{6,"greatBossMsg_6"}
+},
+Len=6
+}
+return e 

@@ -1,0 +1,26 @@
+local e={id=0,level=0,star=0,unLockLevel=0,lockBreakFight=0}
+e.__index=e
+function e.New(o,n,a,s,i)
+local t={}
+setmetatable(t,e)
+t.id=o
+t.level=n
+t.star=a
+t.unLockLevel=s
+t.lockBreakFight=i
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.level=a[2]
+t.star=a[3]
+t.unLockLevel=a[4]
+t.lockBreakFight=a[5]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/hero/DTHeroLockBreakLevelEntityTableData')
+end
+return e 

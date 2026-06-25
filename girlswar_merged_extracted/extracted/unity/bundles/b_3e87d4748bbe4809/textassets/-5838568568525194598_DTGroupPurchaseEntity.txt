@@ -1,0 +1,32 @@
+local a={id=0,tab=0,buyType=0,goodsId={},award={},unLock=0,offImage=0,unlockOffGear=0}
+a.__index=a
+function a.New(i,h,n,t,d,r,s,o)
+local e={}
+setmetatable(e,a)
+e.id=i
+e.tab=h
+e.buyType=n
+e.goodsId=t
+e.award=d
+e.unLock=r
+e.offImage=s
+e.unlockOffGear=o
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.tab=t[2]
+e.buyType=t[3]
+e.goodsId=t[4]
+e.award=t[5]
+e.unLock=t[6]
+e.offImage=t[7]
+e.unlockOffGear=t[8]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/activity/DTGroupPurchaseEntityTableData')
+end
+return a 

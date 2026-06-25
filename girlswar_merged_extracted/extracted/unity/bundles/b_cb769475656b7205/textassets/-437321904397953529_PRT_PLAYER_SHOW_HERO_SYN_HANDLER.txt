@@ -1,0 +1,10 @@
+local e={}
+function e:OnHandle(e)
+local e=assert(GlobalPB.decode("PRT_PLAYER_SHOW_HERO_SYN",e));
+if(GameInit.GetDebugLogProto())then
+;
+;
+end
+PlayerMgr:MainPageHeroInfoSyn(e)
+end
+return e 

@@ -1,0 +1,11 @@
+local t={}
+function t:OnHandle(e)
+local e=assert(GlobalPB.decode("PRT_WARE_HOUSE_OPEN_REWARD_POS_RESP",e));
+if(GameInit.GetDebugLogProto())then
+;
+;
+end
+ModulesInit.ActWarehouseMgr:SyncReSignInfo(e)
+return e
+end
+return t 

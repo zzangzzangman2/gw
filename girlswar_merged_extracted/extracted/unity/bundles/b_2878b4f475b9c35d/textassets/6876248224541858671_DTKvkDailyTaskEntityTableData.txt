@@ -1,0 +1,13 @@
+local e=
+{
+ByIdx={
+{1,1,0,1,1,{{1041,100},{92015,1}},"fsb_duty_picture1","jumpicon_80802"},
+{2,2,6,1,2,{{1041,100},{92015,1}},"fsb_duty_picture2","jumpicon_80807"},
+{3,3,5,1,3,{{1041,100},{92015,1}},"fsb_duty_picture3","jumpicon_80803"},
+{4,4,4,1,4,{{1041,100},{92015,1}},"fsb_duty_picture4","jumpicon_80801"},
+{5,5,0,1,5,{{1041,100},{92015,1}},"fsb_duty_picture5","jumpicon_80809"},
+{6,6,0,1,6,{{1041,100},{92015,1}},"fsb_duty_picture6","jumpicon_80805"}
+},
+Len=6
+}
+return e 

@@ -1,0 +1,11 @@
+local e=
+{
+ByIdx={
+{1,1,"footBallCheerRollGet_1",1,1,1,{{20430,1}},0},
+{2,2,"footBallCheerRollGet_2",100,2,1,{{20430,5}},18},
+{3,0,"footBallCheerRollGet_3",500,4,0,{{0}},78},
+{4,3,"footBallCheerRollGet_4",1,3,1,{{20430,10}},9}
+},
+Len=4
+}
+return e 

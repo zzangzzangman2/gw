@@ -1,0 +1,9 @@
+spine_lock.png
+size:256,64
+filter:Linear,Linear
+image/IC_weijiesuo1
+bounds:2,2,52,62
+rotate:90
+image/IC_weijiesuo2
+bounds:66,2,52,62
+rotate:90

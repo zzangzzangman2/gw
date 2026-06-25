@@ -1,0 +1,13 @@
+newworld_zhuxian.png
+size:211,56
+filter:Linear,Linear
+ksd
+bounds:0,28,99,28
+ksdjiantou
+bounds:157,14,42,54
+rotate:90
+zx
+bounds:0,0,73,26
+zxjiantou
+bounds:101,14,42,54
+rotate:90

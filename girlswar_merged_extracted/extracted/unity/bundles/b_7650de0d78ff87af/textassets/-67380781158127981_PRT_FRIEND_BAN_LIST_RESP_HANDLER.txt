@@ -1,0 +1,10 @@
+local e={}
+function e:OnHandle(e)
+local e=assert(GlobalPB.decode("PRT_FRIEND_BAN_LIST_RESP",e));
+if(GameInit.GetDebugLogProto())then
+;
+;
+end
+ModulesInit.FriendManage:OnBlackFriendsListResp(e.banFriends)
+end
+return e 

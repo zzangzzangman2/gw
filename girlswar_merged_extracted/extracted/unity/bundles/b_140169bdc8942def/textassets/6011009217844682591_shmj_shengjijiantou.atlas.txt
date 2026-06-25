@@ -1,0 +1,10 @@
+shmj_shengjijiantou.png
+size:64,128
+filter:Linear,Linear
+a1
+bounds:1,1,29,43
+offsets:1,1,31,45
+rotate:90
+a2
+bounds:1,31,57,61
+offsets:1,1,59,63

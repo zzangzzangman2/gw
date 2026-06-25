@@ -1,0 +1,32 @@
+local a={id=0,stage=0,color=0,attr={},weight=0,score=0,station=0,combat=0}
+a.__index=a
+function a.New(i,h,n,t,d,r,s,o)
+local e={}
+setmetatable(e,a)
+e.id=i
+e.stage=h
+e.color=n
+e.attr=t
+e.weight=d
+e.score=r
+e.station=s
+e.combat=o
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.stage=t[2]
+e.color=t[3]
+e.attr=t[4]
+e.weight=t[5]
+e.score=t[6]
+e.station=t[7]
+e.combat=t[8]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/amulet/DTAmuletAttrEntityTableData')
+end
+return a 

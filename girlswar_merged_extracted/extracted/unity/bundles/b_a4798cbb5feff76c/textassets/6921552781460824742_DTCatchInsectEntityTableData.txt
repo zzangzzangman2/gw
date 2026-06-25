@@ -1,0 +1,37 @@
+local e=
+{
+ByIdx={
+{1,"xianshilao_bg4","Assets/Download/UI/UIPrefabAndRes/SmallGame_Ext_13/xianshilao_dabg4.png","SmallGame/youji_juesetu","smallgame_catchInsect_desc01",{{66,2},{65,2},{34,1}}},
+{2,"xianshilao_bg5","Assets/Download/UI/UIPrefabAndRes/SmallGame_Ext_14/xianshilao_dabg5.png","SmallGame/youji_juesetu","smallgame_catchInsect_desc01",{{64,2},{63,1},{33,2}}},
+{3,"xianshilao_bg6","Assets/Download/UI/UIPrefabAndRes/SmallGame_Ext_14/xianshilao_dabg6.png","SmallGame/youji_juesetu","smallgame_catchInsect_desc01",{{62,1},{61,2},{32,2}}},
+{4,"xianshilao_bg7","Assets/Download/UI/UIPrefabAndRes/SmallGame_Ext_14/xianshilao_dabg7.png","SmallGame/youji_juesetu","smallgame_catchInsect_desc01",{{60,1},{59,2},{31,2}}},
+{5,"xianshilao_bg9","Assets/Download/UI/UIPrefabAndRes/SmallGame_Ext_15/xianshilao_dabg9.png","SmallGame/youji_juesetu","smallgame_catchInsect_desc01",{{58,2},{57,2},{30,1}}},
+{6,"xianshilao_bg11","Assets/Download/UI/UIPrefabAndRes/SmallGame_Ext_15/xianshilao_dabg11.png","SmallGame/youji_juesetu","smallgame_catchInsect_desc01",{{56,1},{55,2},{29,2}}},
+{7,"xianshilao_bg4","Assets/Download/UI/UIPrefabAndRes/SmallGame_Ext_13/xianshilao_dabg4.png","SmallGame/youji_juesetu","smallgame_catchInsect_desc02",{{54,2},{53,2},{52,2}}},
+{8,"xianshilao_bg5","Assets/Download/UI/UIPrefabAndRes/SmallGame_Ext_14/xianshilao_dabg5.png","SmallGame/youji_juesetu","smallgame_catchInsect_desc02",{{51,4},{50,4},{49,4},{28,3}}},
+{9,"xianshilao_bg6","Assets/Download/UI/UIPrefabAndRes/SmallGame_Ext_14/xianshilao_dabg6.png","SmallGame/youji_juesetu","smallgame_catchInsect_desc02",{{48,3},{47,3},{46,4},{45,3},{44,2}}},
+{10,"xianshilao_bg7","Assets/Download/UI/UIPrefabAndRes/SmallGame_Ext_14/xianshilao_dabg7.png","SmallGame/youji_juesetu","smallgame_catchInsect_desc02",{{43,3},{42,3},{41,3},{40,3}}},
+{11,"xianshilao_bg9","Assets/Download/UI/UIPrefabAndRes/SmallGame_Ext_15/xianshilao_dabg9.png","SmallGame/youji_juesetu","smallgame_catchInsect_desc02",{{38,3},{39,4},{36,1},{37,3},{35,3},{34,3}}},
+{12,"xianshilao_bg11","Assets/Download/UI/UIPrefabAndRes/SmallGame_Ext_15/xianshilao_dabg11.png","SmallGame/youji_juesetu","smallgame_catchInsect_desc02",{{66,1},{65,2},{64,3},{63,2},{61,2},{27,2}}},
+{13,"xianshilao_bg4","Assets/Download/UI/UIPrefabAndRes/SmallGame_Ext_13/xianshilao_dabg4.png","SmallGame/youji_juesetu","smallgame_catchInsect_desc03",{{62,2},{60,3},{59,3},{58,2},{26,2}}},
+{14,"xianshilao_bg5","Assets/Download/UI/UIPrefabAndRes/SmallGame_Ext_14/xianshilao_dabg5.png","SmallGame/youji_juesetu","smallgame_catchInsect_desc03",{{57,3},{56,1},{55,1},{25,2},{54,2}}},
+{15,"xianshilao_bg6","Assets/Download/UI/UIPrefabAndRes/SmallGame_Ext_14/xianshilao_dabg6.png","SmallGame/youji_juesetu","smallgame_catchInsect_desc03",{{53,3},{52,2},{51,2},{24,2}}},
+{16,"xianshilao_bg7","Assets/Download/UI/UIPrefabAndRes/SmallGame_Ext_14/xianshilao_dabg7.png","SmallGame/youji_juesetu","smallgame_catchInsect_desc03",{{50,3},{49,3},{48,3},{23,3},{47,3}}},
+{17,"xianshilao_bg9","Assets/Download/UI/UIPrefabAndRes/SmallGame_Ext_15/xianshilao_dabg9.png","SmallGame/youji_juesetu","smallgame_catchInsect_desc03",{{46,1},{45,2},{44,2},{43,2},{42,2},{22,2},{41,1}}},
+{18,"xianshilao_bg11","Assets/Download/UI/UIPrefabAndRes/SmallGame_Ext_15/xianshilao_dabg11.png","SmallGame/youji_juesetu","smallgame_catchInsect_desc03",{{40,2},{39,2},{38,2},{37,3},{36,3},{35,3},{21,2}}},
+{19,"xianshilao_bg1","Assets/Download/UI/UIPrefabAndRes/SmallGame_Ext_13/xianshilao_dabg1.png","SmallGame/youji_juesetu","smallgame_catchInsect_desc04",{{66,3},{65,3},{64,3},{63,1},{62,1},{61,2},{20,2}}},
+{20,"xianshilao_bg2","Assets/Download/UI/UIPrefabAndRes/SmallGame_Ext_13/xianshilao_dabg2.png","SmallGame/youji_juesetu","smallgame_catchInsect_desc04",{{60,1},{59,1},{58,1},{57,1},{56,2},{55,2},{19,2},{9,2}}},
+{21,"xianshilao_bg3","Assets/Download/UI/UIPrefabAndRes/SmallGame_Ext_13/xianshilao_dabg3.png","SmallGame/youji_juesetu","smallgame_catchInsect_desc04",{{54,2},{53,1},{52,1},{51,2},{50,2},{49,1},{48,3},{18,2},{8,3}}},
+{22,"xianshilao_bg8","Assets/Download/UI/UIPrefabAndRes/SmallGame_Ext_14/xianshilao_dabg8.png","SmallGame/youji_juesetu","smallgame_catchInsect_desc04",{{47,2},{46,2},{45,2},{44,2},{43,3},{42,2},{41,3},{17,3},{7,3}}},
+{23,"xianshilao_bg10","Assets/Download/UI/UIPrefabAndRes/SmallGame_Ext_15/xianshilao_dabg10.png","SmallGame/youji_juesetu","smallgame_catchInsect_desc04",{{40,3},{39,3},{38,2},{37,1},{36,1},{35,1},{16,2},{46,2}}},
+{24,"xianshilao_bg1","Assets/Download/UI/UIPrefabAndRes/SmallGame_Ext_13/xianshilao_dabg1.png","SmallGame/youji_juesetu","smallgame_catchInsect_desc04",{{18,1},{25,1},{24,1},{23,3},{22,3},{19,1},{14,1},{15,1}}},
+{25,"xianshilao_bg2","Assets/Download/UI/UIPrefabAndRes/SmallGame_Ext_13/xianshilao_dabg2.png","SmallGame/youji_juesetu","smallgame_catchInsect_desc04",{{64,3},{63,3},{62,3},{61,2},{60,3},{6,3}}},
+{26,"xianshilao_bg3","Assets/Download/UI/UIPrefabAndRes/SmallGame_Ext_13/xianshilao_dabg3.png","SmallGame/youji_juesetu","smallgame_catchInsect_desc05",{{56,5},{55,6},{54,5},{15,3},{5,3}}},
+{27,"xianshilao_bg8","Assets/Download/UI/UIPrefabAndRes/SmallGame_Ext_14/xianshilao_dabg8.png","SmallGame/youji_juesetu","smallgame_catchInsect_desc06",{{49,4},{48,6},{47,5},{14,6},{4,6}}},
+{28,"xianshilao_bg10","Assets/Download/UI/UIPrefabAndRes/SmallGame_Ext_15/xianshilao_dabg10.png","SmallGame/youji_juesetu","smallgame_catchInsect_desc07",{{41,6},{40,6},{39,6},{38,7},{13,4},{3,3}}},
+{29,"xianshilao_bg1","Assets/Download/UI/UIPrefabAndRes/SmallGame_Ext_13/xianshilao_dabg1.png","SmallGame/youji_juesetu","smallgame_catchInsect_desc08",{{33,7},{32,7},{31,7},{30,5},{12,5},{2,4}}},
+{30,"xianshilao_bg9","Assets/Download/UI/UIPrefabAndRes/SmallGame_Ext_15/xianshilao_dabg9.png","SmallGame/youji_juesetu","smallgame_catchInsect_desc09",{{31,7},{30,7},{29,6},{28,6},{27,6},{11,3},{1,3},{10,2}}}
+},
+Len=30
+}
+return e 

@@ -1,0 +1,23 @@
+local e=
+{
+ByIdx={
+{1,8,1,{{26460,2}},{},"",246,"AnniversaryParkTaskTips_1"},
+{2,2,6,{{26460,2}},{},"",0,"AnniversaryParkTaskTips_2"},
+{3,5,20,{{26460,2}},{},"",16,"AnniversaryParkTaskTips_3"},
+{4,3,30,{{26460,2}},{},"",40,"AnniversaryParkTaskTips_4"},
+{5,8,1,{{26460,2}},{},"",246,"AnniversaryParkTaskTips_5"},
+{6,2,4,{{26460,2}},{},"",0,"AnniversaryParkTaskTips_6"},
+{7,4,10,{{26460,2}},{},"",138,"AnniversaryParkTaskTips_7"},
+{8,5,5,{{26460,2}},{},"",16,"AnniversaryParkTaskTips_8"},
+{9,4,5,{{26460,2}},{},"",138,"AnniversaryParkTaskTips_9"},
+{10,4,15,{{26460,2}},{},"",138,"AnniversaryParkTaskTips_10"},
+{11,5,15,{{26460,2}},{},"",16,"AnniversaryParkTaskTips_11"},
+{12,3,60,{{26460,2}},{},"",40,"AnniversaryParkTaskTips_12"},
+{13,2,2,{{26460,2}},{},"",0,"AnniversaryParkTaskTips_13"},
+{14,7,40,{{26460,2}},{},"",242,"AnniversaryParkTaskTips_14"},
+{15,7,20,{{26460,2}},{},"",242,"AnniversaryParkTaskTips_15"},
+{16,6,900,{{26460,2}},{},"",245,"AnniversaryParkTaskTips_16"}
+},
+Len=16
+}
+return e 

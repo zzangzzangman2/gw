@@ -1,0 +1,11 @@
+Painting_21073_Front.png
+size:1024,512
+filter:Linear,Linear
+effect/m1_00000
+bounds:450,103,307,307
+effect/m9
+bounds:757,0,154,154
+effect/nn
+bounds:757,154,256,256
+sun2
+bounds:0,35,450,375

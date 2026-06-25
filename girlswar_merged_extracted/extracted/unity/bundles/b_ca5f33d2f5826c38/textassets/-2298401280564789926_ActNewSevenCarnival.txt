@@ -1,0 +1,41 @@
+
+?	
+ActNewSevenCarnival.protoCommons.proto"?
+PRT_NEW_SEVEN_CARNIVAL_DAY
+day (Rday%
+dayTasks (2	.PRT_TASKRdayTasks'
+	growTasks (2	.PRT_TASKR	growTasks"
+giftBuyCount (RgiftBuyCount"!
+PRT_NEW_SEVEN_CARNIVAL_INFO_REQ"?
+ PRT_NEW_SEVEN_CARNIVAL_INFO_RESP
+leftTime (RleftTime$
+todayLeftTime (RtodayLeftTime
+day (Rday
+boxScore (RboxScore
+
+recBoxDids (R
+recBoxDids7
+dayInfos (2.PRT_NEW_SEVEN_CARNIVAL_DAYRdayInfos
+isNew (RisNew"2
+PRT_NEW_SEVEN_CARNIVAL_BUY_REQ
+day (Rday"W
+PRT_NEW_SEVEN_CARNIVAL_BUY_RESP
+day (Rday"
+giftBuyCount (RgiftBuyCount"G
+)PRT_NEW_SEVEN_CARNIVAL_DAY_TASK_AWARD_REQ
+awardDid (RawardDid"H
+*PRT_NEW_SEVEN_CARNIVAL_DAY_TASK_AWARD_RESP
+awardDid (RawardDid"H
+*PRT_NEW_SEVEN_CARNIVAL_GROW_TASK_AWARD_REQ
+awardDid (RawardDid"e
++PRT_NEW_SEVEN_CARNIVAL_GROW_TASK_AWARD_RESP
+awardDid (RawardDid
+boxScore (RboxScore">
+$PRT_NEW_SEVEN_CARNIVAL_BOX_AWARD_REQ
+boxDid (RboxDid"?
+%PRT_NEW_SEVEN_CARNIVAL_BOX_AWARD_RESP
+boxDid (RboxDid"+
+)PRT_NEW_SEVEN_CARNIVAL_EXCHANGE_SCORE_REQ"H
+*PRT_NEW_SEVEN_CARNIVAL_EXCHANGE_SCORE_RESP
+boxScore (RboxScoreB
+com.next1b.nextsvr.protobproto3

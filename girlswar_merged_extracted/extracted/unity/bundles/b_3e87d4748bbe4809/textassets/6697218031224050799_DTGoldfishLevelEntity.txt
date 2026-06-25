@@ -1,0 +1,30 @@
+local t={id=0,openDay=0,duration=0,fraction=0,fishNum={{},{}},recoveryTime=0,reward={{},{}}}
+t.__index=t
+function t.New(o,h,a,s,r,n,i)
+local e={}
+setmetatable(e,t)
+e.id=o
+e.openDay=h
+e.duration=a
+e.fraction=s
+e.fishNum=r
+e.recoveryTime=n
+e.reward=i
+return e
+end
+function t.NewFromArrItem(a)
+local e={}
+setmetatable(e,t)
+e.id=a[1]
+e.openDay=a[2]
+e.duration=a[3]
+e.fraction=a[4]
+e.fishNum=a[5]
+e.recoveryTime=a[6]
+e.reward=a[7]
+return e
+end
+function t.GetArr()
+return require('DataNode/DataTable/Create/activity/DTGoldfishLevelEntityTableData')
+end
+return t 

@@ -1,0 +1,36 @@
+local a={id=0,type=0,describe="",parameter2=0,reward={{},{}},boxNum=0,jump=0,days=0,isClose=0,jumpDay=0}
+a.__index=a
+function a.New(n,r,s,t,l,u,d,h,o,i)
+local e={}
+setmetatable(e,a)
+e.id=n
+e.type=r
+e.describe=s
+e.parameter2=t
+e.reward=l
+e.boxNum=u
+e.jump=d
+e.days=h
+e.isClose=o
+e.jumpDay=i
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.type=t[2]
+e.describe=t[3]
+e.parameter2=t[4]
+e.reward=t[5]
+e.boxNum=t[6]
+e.jump=t[7]
+e.days=t[8]
+e.isClose=t[9]
+e.jumpDay=t[10]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/activity/DTTurkeyEatsCornTaskEntityTableData')
+end
+return a 

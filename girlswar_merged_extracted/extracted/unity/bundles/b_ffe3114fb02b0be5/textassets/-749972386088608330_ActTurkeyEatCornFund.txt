@@ -1,0 +1,23 @@
+
+?
+ActTurkeyEatCornFund.proto"#
+!PRT_TURKEY_EAT_CORN_FUND_INFO_REQ"?
+"PRT_TURKEY_EAT_CORN_FUND_INFO_RESP
+leftTime (RleftTime
+level (Rlevel
+exp (Rexp
+isBuyAdv (RisBuyAdv,
+receivedAwardDids (RreceivedAwardDids2
+receivedAdvAwardDids (RreceivedAdvAwardDids"$
+"PRT_TURKEY_EAT_CORN_FUND_AWARD_REQ"%
+#PRT_TURKEY_EAT_CORN_FUND_AWARD_RESP"<
+$PRT_TURKEY_EAT_CORN_FUND_LEVE_UP_REQ
+count (Rcount"e
+%PRT_TURKEY_EAT_CORN_FUND_LEVE_UP_RESP
+count (Rcount
+level (Rlevel
+exp (Rexp"&
+$PRT_TURKEY_EAT_CORN_FUND_BUY_ADV_REQ"C
+%PRT_TURKEY_EAT_CORN_FUND_BUY_ADV_RESP
+isBuyAdv (RisBuyAdvB
+com.next1b.nextsvr.protobproto3

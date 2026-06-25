@@ -1,0 +1,9 @@
+spine_mianxujiezhuan.png
+size:408,54
+filter:Linear,Linear
+D1
+bounds:0,0,364,54
+offsets:1,1,366,56
+xing
+bounds:366,4,42,50
+offsets:2,2,46,55

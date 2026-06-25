@@ -1,0 +1,10 @@
+local e={}
+function e:OnHandle(e)
+local e=assert(GlobalPB.decode("PRT_GUILD_WAR_BATTLE_WATCH_RESP",e));
+if(GameInit.GetDebugLogProto())then
+;
+;
+end
+ModulesInit.CSGuildWarManager:OnSeeBattleInfoResponse(e)
+end
+return e 

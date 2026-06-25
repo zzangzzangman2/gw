@@ -1,0 +1,6 @@
+Painting_1056.png
+size:2048,1024
+filter:Linear,Linear
+105604
+bounds:0,0,1846,791
+offsets:301,1126,2735,2694

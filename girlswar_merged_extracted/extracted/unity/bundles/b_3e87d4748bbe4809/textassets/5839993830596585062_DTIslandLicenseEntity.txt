@@ -1,0 +1,28 @@
+local e={id=0,goods=0,activityStage=0,award={{},{}},pointsObtain={{},{}},increase={{},{}}}
+e.__index=e
+function e.New(a,i,o,h,s,n)
+local t={}
+setmetatable(t,e)
+t.id=a
+t.goods=i
+t.activityStage=o
+t.award=h
+t.pointsObtain=s
+t.increase=n
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.goods=a[2]
+t.activityStage=a[3]
+t.award=a[4]
+t.pointsObtain=a[5]
+t.increase=a[6]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/activity/DTIslandLicenseEntityTableData')
+end
+return e 

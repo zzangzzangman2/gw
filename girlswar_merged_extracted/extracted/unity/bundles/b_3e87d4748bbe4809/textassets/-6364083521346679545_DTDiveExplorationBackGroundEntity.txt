@@ -1,0 +1,26 @@
+local e={id=0,clickCount=0,itemChange3=0,spreadPerspective=0,picture=""}
+e.__index=e
+function e.New(o,n,a,s,i)
+local t={}
+setmetatable(t,e)
+t.id=o
+t.clickCount=n
+t.itemChange3=a
+t.spreadPerspective=s
+t.picture=i
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.clickCount=a[2]
+t.itemChange3=a[3]
+t.spreadPerspective=a[4]
+t.picture=a[5]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/activity/DTDiveExplorationBackGroundEntityTableData')
+end
+return e 

@@ -1,0 +1,38 @@
+local a={id=0,activityType=0,goods=0,tab=0,cost={},discount=0,type=0,buyCount=0,giftName="",chargeAward={{},{}},keyItemColor=0}
+a.__index=a
+function a.New(n,r,s,t,l,u,c,d,h,o,i)
+local e={}
+setmetatable(e,a)
+e.id=n
+e.activityType=r
+e.goods=s
+e.tab=t
+e.cost=l
+e.discount=u
+e.type=c
+e.buyCount=d
+e.giftName=h
+e.chargeAward=o
+e.keyItemColor=i
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.activityType=t[2]
+e.goods=t[3]
+e.tab=t[4]
+e.cost=t[5]
+e.discount=t[6]
+e.type=t[7]
+e.buyCount=t[8]
+e.giftName=t[9]
+e.chargeAward=t[10]
+e.keyItemColor=t[11]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/urgrassland/DTUrGrasslandGiftEntityTableData')
+end
+return a 

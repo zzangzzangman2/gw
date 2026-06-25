@@ -1,0 +1,92 @@
+local a={id=0,heroDid=0,isBoss=0,heroIdx=0,monsterLists1={},award1={{},{}},progressAward1=0,progressAward1New=0,passFight1=0,monsterLists2={},award2={{},{}},progressAward2=0,progressAward2New=0,passFight2=0,monsterLists3={},award3={{},{}},progressAward3=0,progressAward3New=0,passFight3=0,icon="",name="",progress=0,rewardGroupA={{},{}},getNumA=0,rewardGroupB={{},{}},getNumB=0,rewardGroupC={{},{}},getNumC=0,rewardGroupD={{},{}},getNumD=0,new1rewardGroupA={{},{}},new1getNumA=0,new1rewardGroupB={{},{}},new1getNumB=0,new1rewardGroupC={{},{}},new1getNumC=0,new1rewardGroupD={{},{}},new1getNumD=0}
+a.__index=a
+function a.New(f,q,g,t,A,E,T,_,j,x,z,I,R,N,L,U,D,S,H,C,O,k,l,d,h,r,s,o,i,n,u,w,c,b,p,v,y,m)
+local e={}
+setmetatable(e,a)
+e.id=f
+e.heroDid=q
+e.isBoss=g
+e.heroIdx=t
+e.monsterLists1=A
+e.award1=E
+e.progressAward1=T
+e.progressAward1New=_
+e.passFight1=j
+e.monsterLists2=x
+e.award2=z
+e.progressAward2=I
+e.progressAward2New=R
+e.passFight2=N
+e.monsterLists3=L
+e.award3=U
+e.progressAward3=D
+e.progressAward3New=S
+e.passFight3=H
+e.icon=C
+e.name=O
+e.progress=k
+e.rewardGroupA=l
+e.getNumA=d
+e.rewardGroupB=h
+e.getNumB=r
+e.rewardGroupC=s
+e.getNumC=o
+e.rewardGroupD=i
+e.getNumD=n
+e.new1rewardGroupA=u
+e.new1getNumA=w
+e.new1rewardGroupB=c
+e.new1getNumB=b
+e.new1rewardGroupC=p
+e.new1getNumC=v
+e.new1rewardGroupD=y
+e.new1getNumD=m
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.heroDid=t[2]
+e.isBoss=t[3]
+e.heroIdx=t[4]
+e.monsterLists1=t[5]
+e.award1=t[6]
+e.progressAward1=t[7]
+e.progressAward1New=t[8]
+e.passFight1=t[9]
+e.monsterLists2=t[10]
+e.award2=t[11]
+e.progressAward2=t[12]
+e.progressAward2New=t[13]
+e.passFight2=t[14]
+e.monsterLists3=t[15]
+e.award3=t[16]
+e.progressAward3=t[17]
+e.progressAward3New=t[18]
+e.passFight3=t[19]
+e.icon=t[20]
+e.name=t[21]
+e.progress=t[22]
+e.rewardGroupA=t[23]
+e.getNumA=t[24]
+e.rewardGroupB=t[25]
+e.getNumB=t[26]
+e.rewardGroupC=t[27]
+e.getNumC=t[28]
+e.rewardGroupD=t[29]
+e.getNumD=t[30]
+e.new1rewardGroupA=t[31]
+e.new1getNumA=t[32]
+e.new1rewardGroupB=t[33]
+e.new1getNumB=t[34]
+e.new1rewardGroupC=t[35]
+e.new1getNumC=t[36]
+e.new1rewardGroupD=t[37]
+e.new1getNumD=t[38]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/guild/DTGuildTrialsMapsEntityTableData')
+end
+return a 

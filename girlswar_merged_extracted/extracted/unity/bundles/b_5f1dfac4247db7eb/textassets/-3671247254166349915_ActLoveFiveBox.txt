@@ -1,0 +1,70 @@
+
+?
+ActLoveFiveBox.proto"J
+PRT_LOVE_FIVE_GIFT
+giftDid (RgiftDid
+buyCount (RbuyCount"
+PRT_LOVE_FIVE_BOX_INFO_REQ"?
+PRT_LOVE_FIVE_BOX_INFO_RESP
+overTime (RoverTime
+pointDid (RpointDid
+
+pointScore (R
+pointScore
+
+totalScore (R
+totalScore,
+receivedRoundDids (RreceivedRoundDids"L
+PRT_LOVE_FIVE_BOX_DRAW_REQ
+itemDid (RitemDid
+count (Rcount"?
+PRT_LOVE_FIVE_BOX_DRAW_RESP
+itemDid (RitemDid
+count (Rcount
+
+totalScore (R
+totalScore
+
+pointScore (R
+pointScore"#
+!PRT_LOVE_FIVE_BOX_POINT_AWARD_REQ"`
+"PRT_LOVE_FIVE_BOX_POINT_AWARD_RESP
+pointDid (RpointDid
+
+pointScore (R
+pointScore"?
+!PRT_LOVE_FIVE_BOX_ROUND_AWARD_REQ
+roundDid (RroundDid"n
+"PRT_LOVE_FIVE_BOX_ROUND_AWARD_RESP
+roundDid (RroundDid,
+receivedRoundDids (RreceivedRoundDids"!
+PRT_LOVE_FIVE_BOX_GIFT_INFO_REQ"M
+ PRT_LOVE_FIVE_BOX_GIFT_INFO_RESP)
+gifts (2.PRT_LOVE_FIVE_GIFTRgifts";
+PRT_LOVE_FIVE_BOX_GIFT_FREE_REQ
+giftDid (RgiftDid"g
+ PRT_LOVE_FIVE_BOX_GIFT_FREE_RESP
+giftDid (RgiftDid)
+gifts (2.PRT_LOVE_FIVE_GIFTRgifts"P
+PRT_LOVE_FIVE_BOX_GIFT_BUY_REQ
+giftDid (RgiftDid
+count (Rcount"|
+PRT_LOVE_FIVE_BOX_GIFT_BUY_RESP
+giftDid (RgiftDid
+count (Rcount)
+gifts (2.PRT_LOVE_FIVE_GIFTRgifts"!
+PRT_LOVE_FIVE_BOX_FUND_INFO_REQ"?
+ PRT_LOVE_FIVE_BOX_FUND_INFO_RESP
+charged (Rcharged
+
+totalScore (R
+totalScore*
+receivedFreeDids (RreceivedFreeDids.
+receivedChargeDids (RreceivedChargeDids"V
+ PRT_LOVE_FIVE_BOX_FUND_AWARD_REQ
+awardDid (RawardDid
+charge (Rcharge"W
+!PRT_LOVE_FIVE_BOX_FUND_AWARD_RESP
+awardDid (RawardDid
+charge (RchargeB
+com.next1b.nextsvr.protobproto3

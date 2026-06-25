@@ -1,0 +1,9 @@
+sp_herbs_cilck.png
+size:512,256
+filter:Linear,Linear
+djxg1
+bounds:2,2,196,196
+offsets:1,1,198,198
+ycdt_zxjiantou
+bounds:200,77,63,121
+offsets:1,1,66,123

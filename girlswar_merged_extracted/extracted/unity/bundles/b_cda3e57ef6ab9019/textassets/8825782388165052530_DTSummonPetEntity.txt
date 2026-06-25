@@ -1,0 +1,54 @@
+local a={id=0,petName="",modelID=0,color=0,mainPetSwitch=0,attrs={{},{}},mainSkill={},subSkill={},guardSkill=0,star=0,needChip=0,chipItem=0,petShow=0,petSort=0,petHead="",petBagQuality="",petBagHead="",getSoundId={},showStage=0}
+a.__index=a
+function a.New(d,c,l,t,f,m,y,v,p,b,g,w,u,n,i,o,s,r,h)
+local e={}
+setmetatable(e,a)
+e.id=d
+e.petName=c
+e.modelID=l
+e.color=t
+e.mainPetSwitch=f
+e.attrs=m
+e.mainSkill=y
+e.subSkill=v
+e.guardSkill=p
+e.star=b
+e.needChip=g
+e.chipItem=w
+e.petShow=u
+e.petSort=n
+e.petHead=i
+e.petBagQuality=o
+e.petBagHead=s
+e.getSoundId=r
+e.showStage=h
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.petName=t[2]
+e.modelID=t[3]
+e.color=t[4]
+e.mainPetSwitch=t[5]
+e.attrs=t[6]
+e.mainSkill=t[7]
+e.subSkill=t[8]
+e.guardSkill=t[9]
+e.star=t[10]
+e.needChip=t[11]
+e.chipItem=t[12]
+e.petShow=t[13]
+e.petSort=t[14]
+e.petHead=t[15]
+e.petBagQuality=t[16]
+e.petBagHead=t[17]
+e.getSoundId=t[18]
+e.showStage=t[19]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/summonPet/DTSummonPetEntityTableData')
+end
+return a 

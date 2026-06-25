@@ -1,0 +1,76 @@
+local a={id=0,modelID=0,modelIDFORMULA="",hideBar=0,hideShadow=0,monName="",monMode=0,profession=0,star=0,professionFORMULA="",starFORMULA="",monOfficer=0,rankLevel=0,monType=0,monLevel=0,soulId=0,lockLevel=0,skillMode=0,monSkill1=0,monSkill2=0,monSkill3=0,monSkill1FORMULA="",monSkill2FORMULA="",monSkill3FORMULA="",monSkill4=0,monSkillPas={},monAttr={{},{}},monValue=0,treasureId=0,treasureLevel=0}
+a.__index=a
+function a.New(u,v,y,t,q,j,k,b,g,z,T,_,O,A,E,I,x,p,r,s,h,n,o,i,d,c,l,f,w,m)
+local e={}
+setmetatable(e,a)
+e.id=u
+e.modelID=v
+e.modelIDFORMULA=y
+e.hideBar=t
+e.hideShadow=q
+e.monName=j
+e.monMode=k
+e.profession=b
+e.star=g
+e.professionFORMULA=z
+e.starFORMULA=T
+e.monOfficer=_
+e.rankLevel=O
+e.monType=A
+e.monLevel=E
+e.soulId=I
+e.lockLevel=x
+e.skillMode=p
+e.monSkill1=r
+e.monSkill2=s
+e.monSkill3=h
+e.monSkill1FORMULA=n
+e.monSkill2FORMULA=o
+e.monSkill3FORMULA=i
+e.monSkill4=d
+e.monSkillPas=c
+e.monAttr=l
+e.monValue=f
+e.treasureId=w
+e.treasureLevel=m
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.modelID=t[2]
+e.modelIDFORMULA=t[3]
+e.hideBar=t[4]
+e.hideShadow=t[5]
+e.monName=t[6]
+e.monMode=t[7]
+e.profession=t[8]
+e.star=t[9]
+e.professionFORMULA=t[10]
+e.starFORMULA=t[11]
+e.monOfficer=t[12]
+e.rankLevel=t[13]
+e.monType=t[14]
+e.monLevel=t[15]
+e.soulId=t[16]
+e.lockLevel=t[17]
+e.skillMode=t[18]
+e.monSkill1=t[19]
+e.monSkill2=t[20]
+e.monSkill3=t[21]
+e.monSkill1FORMULA=t[22]
+e.monSkill2FORMULA=t[23]
+e.monSkill3FORMULA=t[24]
+e.monSkill4=t[25]
+e.monSkillPas=t[26]
+e.monAttr=t[27]
+e.monValue=t[28]
+e.treasureId=t[29]
+e.treasureLevel=t[30]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/monster/DTMonsterEntityTableData')
+end
+return a 

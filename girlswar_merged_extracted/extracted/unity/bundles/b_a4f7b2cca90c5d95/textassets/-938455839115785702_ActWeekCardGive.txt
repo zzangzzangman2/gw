@@ -1,0 +1,13 @@
+
+?
+ActWeekCardGive.proto"
+PRT_WEEK_CARD_GIVE_INFO_REQ"r
+PRT_WEEK_CARD_GIVE_INFO_RESP
+leftTime (RleftTime
+	isReceive (R	isReceive
+cardDid (RcardDid"
+PRT_WEEK_CARD_GIVE_AWARD_REQ"W
+PRT_WEEK_CARD_GIVE_AWARD_RESP
+	isReceive (R	isReceive
+cardDid (RcardDidB
+com.next1b.nextsvr.protobproto3

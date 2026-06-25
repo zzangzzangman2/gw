@@ -1,0 +1,20 @@
+local e=
+{
+ByIdx={
+{1,1,260,10000,"bestloverpointDesc_1"},
+{2,1,275,70000,"bestloverpointDesc_2"},
+{3,2,75002,2000,"bestloverpointDesc_3"},
+{4,2,20003,900,"bestloverpointDesc_4"},
+{5,2,20004,5560,"bestloverpointDesc_5"},
+{6,2,20084,1000,"bestloverpointDesc_6"},
+{7,2,20085,4000,"bestloverpointDesc_7"},
+{8,2,20086,8000,"bestloverpointDesc_8"},
+{9,1,10,2600,"bestloverpointDesc_9"},
+{10,2,20954,7640,"bestloverpointDesc_10"},
+{11,2,20955,20400,"bestloverpointDesc_11"},
+{12,2,20956,170000,"bestloverpointDesc_12"},
+{13,2,20010,2600,"bestloverpointDesc_13"}
+},
+Len=13
+}
+return e 

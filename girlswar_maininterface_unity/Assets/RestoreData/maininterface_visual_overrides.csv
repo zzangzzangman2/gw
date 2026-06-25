@@ -1,0 +1,2 @@
+﻿target_kind,component_path_id,game_object_id,game_object_name,sprite_asset_path,color_r,color_g,color_b,color_a,preserve_aspect,image_type,raycast_target,reason
+Image,6259596902678607660,-1457103517121630268,UI_bg,Assets/RestoredSprites/maininterface/runtime_dynamic/runtime_UI_bg_noalphabg_PaintingBG_1001.png,1,1,1,1,0,0,,UI_MainPage refreshMiddle line 1559-1560 loads UI_bg from UIUtil.GetPaintingBg(heroId); default config hero id 1001

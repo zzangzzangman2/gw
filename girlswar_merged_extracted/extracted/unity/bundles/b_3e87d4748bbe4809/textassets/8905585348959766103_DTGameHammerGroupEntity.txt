@@ -1,0 +1,22 @@
+local e={id=0,groupType=0,groupList={}}
+e.__index=e
+function e.New(o,a,i)
+local t={}
+setmetatable(t,e)
+t.id=o
+t.groupType=a
+t.groupList=i
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.groupType=a[2]
+t.groupList=a[3]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/activity/DTGameHammerGroupEntityTableData')
+end
+return e 

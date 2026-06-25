@@ -1,0 +1,32 @@
+local a={id=0,questType=0,team=0,teamSeq=0,next=0,needCount={},reward={{},{}},text=""}
+a.__index=a
+function a.New(i,h,n,t,d,r,s,o)
+local e={}
+setmetatable(e,a)
+e.id=i
+e.questType=h
+e.team=n
+e.teamSeq=t
+e.next=d
+e.needCount=r
+e.reward=s
+e.text=o
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.questType=t[2]
+e.team=t[3]
+e.teamSeq=t[4]
+e.next=t[5]
+e.needCount=t[6]
+e.reward=t[7]
+e.text=t[8]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/collectibles/DTshowroomTaskEntityTableData')
+end
+return a 

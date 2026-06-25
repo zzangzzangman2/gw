@@ -1,0 +1,56 @@
+local a={id=0,shopType=0,shopName="",shopIcon="",shopCurrency={},subType=0,subName="",limitType=0,limitPara=0,limitTypeNew=0,limitParaNew=0,minLv=0,maxLv=0,weight=0,product={},price={{},{}},vipLimit=0,sortNum=0,minServerId=0,maxServerId=0}
+a.__index=a
+function a.New(l,m,u,t,w,f,p,b,v,g,k,y,c,s,n,i,o,h,d,r)
+local e={}
+setmetatable(e,a)
+e.id=l
+e.shopType=m
+e.shopName=u
+e.shopIcon=t
+e.shopCurrency=w
+e.subType=f
+e.subName=p
+e.limitType=b
+e.limitPara=v
+e.limitTypeNew=g
+e.limitParaNew=k
+e.minLv=y
+e.maxLv=c
+e.weight=s
+e.product=n
+e.price=i
+e.vipLimit=o
+e.sortNum=h
+e.minServerId=d
+e.maxServerId=r
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.shopType=t[2]
+e.shopName=t[3]
+e.shopIcon=t[4]
+e.shopCurrency=t[5]
+e.subType=t[6]
+e.subName=t[7]
+e.limitType=t[8]
+e.limitPara=t[9]
+e.limitTypeNew=t[10]
+e.limitParaNew=t[11]
+e.minLv=t[12]
+e.maxLv=t[13]
+e.weight=t[14]
+e.product=t[15]
+e.price=t[16]
+e.vipLimit=t[17]
+e.sortNum=t[18]
+e.minServerId=t[19]
+e.maxServerId=t[20]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/shop/DTShop_ReviewEntityTableData')
+end
+return a 

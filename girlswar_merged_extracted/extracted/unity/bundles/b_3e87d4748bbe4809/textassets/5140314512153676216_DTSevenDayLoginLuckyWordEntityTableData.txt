@@ -1,0 +1,12 @@
+local e=
+{
+ByIdx={
+{1,"qrqd_guaxiang01","seven_login_word_1"},
+{2,"qrqd_guaxiang02","seven_login_word_2"},
+{3,"qrqd_guaxiang05","seven_login_word_3"},
+{4,"qrqd_guaxiang03","seven_login_word_4"},
+{5,"qrqd_guaxiang04","seven_login_word_5"}
+},
+Len=5
+}
+return e 

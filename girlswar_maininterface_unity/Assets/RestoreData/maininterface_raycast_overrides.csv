@@ -1,0 +1,30 @@
+target_kind,component_path_id,game_object_id,game_object_name,active,raycast_target,button_interactable,reason
+GameObject,,-7965213352486447679,btn_act_1,0,,,inactive duplicate right activity list item
+GameObject,,3316646708478895597,btn_act_2,0,,,inactive duplicate right activity list item
+GameObject,,7843091743582124696,btn_act_3,0,,,inactive duplicate right activity list item
+GameObject,,-4015285089649928529,btn_act_4,0,,,inactive duplicate right activity list item
+GameObject,,5053744515273185251,btn_face_item_1,0,,,inactive duplicate face activity list item
+GameObject,,1697658323951284178,btn_face_item_2,0,,,inactive duplicate face activity list item
+GameObject,,-1228096404112018396,btn_face_item_3,0,,,inactive duplicate face activity list item
+GameObject,,-4995903592545360324,btn_face_item_4,0,,,inactive duplicate face activity list item
+GameObject,,-5632014357650248557,btn_face_item_5,0,,,inactive duplicate face activity list item
+GameObject,,580826136177762432,btn_face_item_6,0,,,inactive duplicate face activity list item
+GameObject,,7550232596220133711,im_haoyou_bg,0,,,same slot top menu inactive state
+GameObject,,-4798860633271772303,im_vip_bg,0,,,same slot top menu inactive state
+GameObject,,4049514948649316261,im_youjian_bg,0,,,same slot top menu inactive state
+GameObject,,-4782680335575213940,im_paihangbang_bg,0,,,same slot top menu inactive state
+GameObject,,8809385207040108122,toggle1,0,,,same slot bottom toggle inactive state
+GameObject,,9222794144104395667,toggle2,0,,,same slot bottom toggle inactive state
+GameObject,,-1867978044522838470,toggle3,0,,,same slot bottom toggle inactive state
+GameObject,,1476849714871346806,toggle4,0,,,same slot bottom toggle inactive state
+GameObject,,8347384690259056976,toggle6,0,,,same slot bottom toggle inactive state
+GameObject,,3734756950388160760,toggle7,0,,,same slot bottom toggle inactive state
+Graphic,4330133310956327842,-6684923199371973794,Image,,0,,decorative child image blocks top button stack
+Graphic,5349096810287139907,-1874286104444283317,UI_touchSpine,,0,,transparent touch layer blocks background button evidence
+Graphic,-5671083051537636857,6569245046781814939,UI_heroSpine,,0,,empty runtime hero mount image blocks background button after full-screen root restore
+GameObject,,-1344885700461243728,btn_renwu,0,,,same slot hidden by current activity button
+GameObject,,5140802342601422660,btn_shangdian,0,,,same slot hidden by current activity button
+GameObject,,1846121534783890253,btn_beijing,0,,,same slot top button inactive state hidden by btn_watch
+GameObject,,-7993040032844102897,btn_qinmi,0,,,same slot top button inactive state hidden by btn_watch
+GameObject,,2201742138246383560,btn_marry,0,,,same slot top button inactive state hidden by btn_watch
+GameObject,,2915813541880018923,btn_yincang,0,,,same slot top button inactive state hidden by btn_watch

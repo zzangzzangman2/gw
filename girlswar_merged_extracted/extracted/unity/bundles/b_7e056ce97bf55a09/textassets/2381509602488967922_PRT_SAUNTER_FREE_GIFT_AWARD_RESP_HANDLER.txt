@@ -1,0 +1,11 @@
+local t={}
+function t:OnHandle(e)
+local e=assert(GlobalPB.decode("PRT_SAUNTER_FREE_GIFT_AWARD_RESP",e));
+if(GameInit.GetDebugLogProto())then
+;
+;
+end
+ModulesInit.ActSauntered_ActSelfMarryMgr:ParseFreeGiftAward(e)
+return e
+end
+return t 

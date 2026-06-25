@@ -1,0 +1,19 @@
+
+?
+GuildQuest.proto"5
+PRT_GUILD_QUEST_AWARD_REQ
+questId (RquestId"6
+PRT_GUILD_QUEST_AWARD_RESP
+questId (RquestId"
+PRT_GUILD_QUEST_INFO_REQ"?
+PRT_GUILD_QUEST_INFO_RESP(
+finishedQuestId (RfinishedQuestId$
+rewardQuestId (RrewardQuestId,
+weekTaskTimestamp (RweekTaskTimestamp*
+weekContribution (RweekContribution
+round (Rround":
+PRT_GUILD_WEEK_QUEST_AWARD_REQ
+questId (RquestId";
+PRT_GUILD_WEEK_QUEST_AWARD_RESP
+questId (RquestIdB
+com.next1b.nextsvr.protobproto3

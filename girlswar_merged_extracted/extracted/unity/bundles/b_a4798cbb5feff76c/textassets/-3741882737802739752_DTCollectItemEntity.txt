@@ -1,0 +1,30 @@
+local t={id=0,type=0,color=0,icon="",name="",desc="",listId=0}
+t.__index=t
+function t.New(o,h,a,s,r,n,i)
+local e={}
+setmetatable(e,t)
+e.id=o
+e.type=h
+e.color=a
+e.icon=s
+e.name=r
+e.desc=n
+e.listId=i
+return e
+end
+function t.NewFromArrItem(a)
+local e={}
+setmetatable(e,t)
+e.id=a[1]
+e.type=a[2]
+e.color=a[3]
+e.icon=a[4]
+e.name=a[5]
+e.desc=a[6]
+e.listId=a[7]
+return e
+end
+function t.GetArr()
+return require('DataNode/DataTable/Create/worldMap/DTCollectItemEntityTableData')
+end
+return t 

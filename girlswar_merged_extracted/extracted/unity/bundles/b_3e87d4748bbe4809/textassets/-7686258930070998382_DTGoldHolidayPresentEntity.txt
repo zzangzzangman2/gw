@@ -1,0 +1,26 @@
+local e={id=0,nextcount=0,describe="",taskID={{},{}},reward={{},{}}}
+e.__index=e
+function e.New(o,n,a,s,i)
+local t={}
+setmetatable(t,e)
+t.id=o
+t.nextcount=n
+t.describe=a
+t.taskID=s
+t.reward=i
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.nextcount=a[2]
+t.describe=a[3]
+t.taskID=a[4]
+t.reward=a[5]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/activity/DTGoldHolidayPresentEntityTableData')
+end
+return e 

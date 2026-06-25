@@ -1,0 +1,14 @@
+
+?
+ActSelfUpGift.proto"
+PRT_SELF_UP_GIFT_INFO_REQ"^
+PRT_SELF_UP_GIFT_INFO_RESP 
+chargeCount (RchargeCount
+
+actEndTime (R
+actEndTime"7
+PRT_SELF_UP_GIFT_SELECT_REQ
+giftIds (RgiftIds"8
+PRT_SELF_UP_GIFT_SELECT_RESP
+giftIds (RgiftIdsB
+com.next1b.nextsvr.protobproto3

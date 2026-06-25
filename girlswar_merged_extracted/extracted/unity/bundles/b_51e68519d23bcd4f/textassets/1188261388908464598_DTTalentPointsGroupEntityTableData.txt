@@ -1,0 +1,16 @@
+local e=
+{
+ByIdx={
+{101,1,201,0,"groupName1","Assets/Download/UI/UIPrefabAndRes/DeityStatue_Ext_2/hhsd_xtbg.png","hhsd_xtbtn1"},
+{201,2,301,300,"groupName2","Assets/Download/UI/UIPrefabAndRes/DeityStatue_Ext_2/hhsd_xtbg.png","hhsd_xtbtn2"},
+{301,3,401,800,"groupName3","Assets/Download/UI/UIPrefabAndRes/DeityStatue_Ext_2/hhsd_xtbg.png","hhsd_xtbtn3"},
+{401,4,501,1500,"groupName4","Assets/Download/UI/UIPrefabAndRes/DeityStatue_Ext_2/hhsd_xtbg.png","hhsd_xtbtn4"},
+{501,5,601,2500,"groupName5","Assets/Download/UI/UIPrefabAndRes/DeityStatue_Ext_2/hhsd_xtbg.png","hhsd_xtbtn5"},
+{601,6,701,3600,"groupName6","Assets/Download/UI/UIPrefabAndRes/DeityStatue_Ext_2/hhsd_xtbg.png","hhsd_xtbtn6"},
+{701,7,801,5000,"groupName7","Assets/Download/UI/UIPrefabAndRes/DeityStatue_Ext_2/hhsd_xtbg.png","hhsd_xtbtn7"},
+{801,8,901,7100,"groupName8","Assets/Download/UI/UIPrefabAndRes/DeityStatue_Ext_2/hhsd_xtbg.png","hhsd_xtbtn8"},
+{901,9,0,9400,"groupName9","Assets/Download/UI/UIPrefabAndRes/DeityStatue_Ext_2/hhsd_xtbg.png","hhsd_xtbtn9"}
+},
+Len=9
+}
+return e 

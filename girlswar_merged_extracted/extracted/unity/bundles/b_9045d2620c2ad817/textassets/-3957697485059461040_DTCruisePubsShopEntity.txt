@@ -1,0 +1,30 @@
+local t={id=0,pubsId=0,pictures="",score=0,award={},cost={},name=""}
+t.__index=t
+function t.New(o,h,a,s,r,n,i)
+local e={}
+setmetatable(e,t)
+e.id=o
+e.pubsId=h
+e.pictures=a
+e.score=s
+e.award=r
+e.cost=n
+e.name=i
+return e
+end
+function t.NewFromArrItem(a)
+local e={}
+setmetatable(e,t)
+e.id=a[1]
+e.pubsId=a[2]
+e.pictures=a[3]
+e.score=a[4]
+e.award=a[5]
+e.cost=a[6]
+e.name=a[7]
+return e
+end
+function t.GetArr()
+return require('DataNode/DataTable/Create/cruise/DTCruisePubsShopEntityTableData')
+end
+return t 

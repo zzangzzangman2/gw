@@ -1,0 +1,967 @@
+[Licensing::Module] Trying to connect to existing licensing client channel...
+Built from '6000.4/staging' branch; Version is '6000.4.9f1 (f7258d6eebbe) revision 16197005'; Using compiler version '194234433'; Build Type 'Release'
+[Licensing::IpcConnector] Channel LicenseClient-godho doesn't exist
+OS: 'Windows 11  (10.0.26200) Professional' Language: 'ko' Physical Memory: 32022 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1
+System  architecture: x64
+Process architecture: x64
+Date: 2026-06-25T04:50:23Z
+[Licensing::Module] Successfully launched the LicensingClient (PId: 19904)
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\6000.4.9f1\Editor\Unity.exe
+-batchmode
+-nographics
+-quit
+-accept-apiupdate
+-projectPath
+C:\Users\godho\Downloads\girlswar\_restore_tools\work\spine40_unity6000_probe_20260625_134314
+-executeMethod
+GirlsWarRestore.SpineProbeHeroImporter.ImportHero1001
+-logFile
+C:\Users\godho\Downloads\girlswar\reports\maininterface\spine40_hero1001_import_latest.log
+Successfully changed project path to: C:\Users\godho\Downloads\girlswar\_restore_tools\work\spine40_unity6000_probe_20260625_134314
+C:/Users/godho/Downloads/girlswar/_restore_tools/work/spine40_unity6000_probe_20260625_134314
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gfx=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+Player connection [28712]  Target information:
+
+Player connection [28712]  * "[IP] 10.10.1.159 [Port] 55504 [Flags] 2 [Guid] 905169566 [EditorId] 905169566 [Version] 1048832 [Id] WindowsEditor(7,sjpark) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [28712]  * "[IP] 172.26.64.1 [Port] 55504 [Flags] 2 [Guid] 905169566 [EditorId] 905169566 [Version] 1048832 [Id] WindowsEditor(7,sjpark) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [28712]  * "[IP] 100.66.239.97 [Port] 55504 [Flags] 2 [Guid] 905169566 [EditorId] 905169566 [Version] 1048832 [Id] WindowsEditor(7,sjpark) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [28712] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [28712] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Input System module state changed to: Initialized.
+[Physics::Module] Initialized fallback backend.
+[Physics::Module] Id: 0xdecafbad
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-godho" at "2026-06-25T04:50:24.0162051Z"
+[Package Manager] Connected to IPC stream "Upm-32004" after 0.2 seconds.
+[Licensing::Module] Licensing is not yet initialized.
+[Licensing::Client] Code 10 while verifying Licensing Client signature (process Id: 19904, path: "C:/Program Files/Unity/Hub/Editor/6000.4.9f1/Editor/Data/Resources/Licensing/Client/Unity.Licensing.Client.exe")
+[Licensing::Module] LicensingClient has failed validation; ignoring
+[Licensing::Client] Handshaking with LicensingClient:
+  Version:                 1.18.1+9fbee8e
+  Session Id:              d9737510232d4f719bc9ff479bd5e0c4
+  Correlation Id:          56806bee782c6a74f9fb40fbc768ea03
+  External correlation Id: 51611159631328934
+  Machine Id:              nETCb6mCOTg3uD4qHH44hI9aRsg=
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-godho" (connect: 0.37s, validation: 0.06s, handshake: 0.05s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-godho-notifications" at "2026-06-25T04:50:24.1288355Z"
+[Licensing::Module] Connected to LicensingClient (PId: 19904, launch time: 0.00, total connection time: 0.49s)
+[Licensing::Module] Error: Access token is unavailable; failed to update
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] License group:
+  Id: 14569760011564-UnityPersXXXX
+  Product: Unity Personal
+  Type: Assigned
+  Expiration: Unlimited
+[Licensing::Client] Successfully updated license, isAsync: True, time: 0.01
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] Licensing Background thread has ended after 0.52s
+[Licensing::Module] Licensing is initialized (took 0.11s).
+[Licensing::Client] Successfully resolved entitlement details
+Library Redirect Path: Library/
+[Physics::Module] Selected backend.
+[Physics::Module] Name: PhysX
+[Physics::Module] Id: 0xf2b8ea05
+[Physics::Module] SDK Version: 4.1.2
+[Physics::Module] Integration Version: 1.0.0
+[Physics::Module] Threading Mode: Multi-Threaded
+Initialize engine version: 6000.4.9f1 (f7258d6eebbe)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/6000.4.9f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/godho/Downloads/girlswar/_restore_tools/work/spine40_unity6000_probe_20260625_134314/Assets
+Forcing GfxDevice: Null
+GfxDevice: creating device client; kGfxThreadingModeNonThreaded
+NullGfxDevice:
+    Version:  NULL 1.0 [1.0]
+    Renderer: Null Device
+    Vendor:   Unity Technologies
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.4.9f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.4.9f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.4.9f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56004
+CodeReloadManager initialized
+Using cacheserver namespaces - metadata:defaultmetadata, artifacts:defaultartifacts
+Using cacheserver namespaces - metadata:defaultmetadata, artifacts:defaultartifacts
+ImportWorker Server TCP listen port: 0
+AcceleratorClientConnectionCallback - disconnected - :0
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.4.9f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.4.9f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.002652 seconds.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Package Manager log level set to [2]
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:False
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.255 seconds
+Domain Reload Profiling: 598ms
+	BeginReloadAssembly (121ms)
+		CreateAndSetChildDomain (6ms)
+	RebuildCommonClasses (28ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (48ms)
+	LoadAllAssembliesAndSetupDomain (137ms)
+		LoadAssemblies (113ms)
+		AnalyzeDomain (130ms)
+			TypeCache.Refresh (128ms)
+				TypeCache.ScanAssembly (117ms)
+	FinalizeReload (256ms)
+		SetupLoadedEditorAssemblies (0ms)
+			InitializePlatformSupportModulesInManaged (30ms)
+			BeforeProcessingInitializeOnLoad (52ms)
+			ProcessInitializeOnLoadAttributes (66ms)
+			ProcessInitializeOnLoadMethodAttributes (68ms)
+[Licensing::Client] Successfully resolved entitlement details
+Application.AssetDatabase Initial Refresh Start
+[Package Manager] Restoring resolved packages state from cache
+[Licensing::Client] Successfully resolved entitlement details
+[Package Manager] Registered 38 packages:
+  Built-in packages:
+    com.unity.multiplayer.center@1.0.1 (location: C:\Users\godho\Downloads\girlswar\_restore_tools\work\spine40_unity6000_probe_20260625_134314\Library\PackageCache\com.unity.multiplayer.center@f01f4ba8d00a)
+    com.unity.modules.accessibility@1.0.0 (location: C:\Users\godho\Downloads\girlswar\_restore_tools\work\spine40_unity6000_probe_20260625_134314\Library\PackageCache\com.unity.modules.accessibility)
+    com.unity.modules.adaptiveperformance@1.0.0 (location: C:\Users\godho\Downloads\girlswar\_restore_tools\work\spine40_unity6000_probe_20260625_134314\Library\PackageCache\com.unity.modules.adaptiveperformance)
+    com.unity.modules.ai@1.0.0 (location: C:\Users\godho\Downloads\girlswar\_restore_tools\work\spine40_unity6000_probe_20260625_134314\Library\PackageCache\com.unity.modules.ai)
+    com.unity.modules.androidjni@1.0.0 (location: C:\Users\godho\Downloads\girlswar\_restore_tools\work\spine40_unity6000_probe_20260625_134314\Library\PackageCache\com.unity.modules.androidjni)
+    com.unity.modules.animation@1.0.0 (location: C:\Users\godho\Downloads\girlswar\_restore_tools\work\spine40_unity6000_probe_20260625_134314\Library\PackageCache\com.unity.modules.animation)
+    com.unity.modules.assetbundle@1.0.0 (location: C:\Users\godho\Downloads\girlswar\_restore_tools\work\spine40_unity6000_probe_20260625_134314\Library\PackageCache\com.unity.modules.assetbundle)
+    com.unity.modules.audio@1.0.0 (location: C:\Users\godho\Downloads\girlswar\_restore_tools\work\spine40_unity6000_probe_20260625_134314\Library\PackageCache\com.unity.modules.audio)
+    com.unity.modules.cloth@1.0.0 (location: C:\Users\godho\Downloads\girlswar\_restore_tools\work\spine40_unity6000_probe_20260625_134314\Library\PackageCache\com.unity.modules.cloth)
+    com.unity.modules.director@1.0.0 (location: C:\Users\godho\Downloads\girlswar\_restore_tools\work\spine40_unity6000_probe_20260625_134314\Library\PackageCache\com.unity.modules.director)
+    com.unity.modules.imageconversion@1.0.0 (location: C:\Users\godho\Downloads\girlswar\_restore_tools\work\spine40_unity6000_probe_20260625_134314\Library\PackageCache\com.unity.modules.imageconversion)
+    com.unity.modules.imgui@1.0.0 (location: C:\Users\godho\Downloads\girlswar\_restore_tools\work\spine40_unity6000_probe_20260625_134314\Library\PackageCache\com.unity.modules.imgui)
+    com.unity.modules.jsonserialize@1.0.0 (location: C:\Users\godho\Downloads\girlswar\_restore_tools\work\spine40_unity6000_probe_20260625_134314\Library\PackageCache\com.unity.modules.jsonserialize)
+    com.unity.modules.particlesystem@1.0.0 (location: C:\Users\godho\Downloads\girlswar\_restore_tools\work\spine40_unity6000_probe_20260625_134314\Library\PackageCache\com.unity.modules.particlesystem)
+    com.unity.modules.physics@1.0.0 (location: C:\Users\godho\Downloads\girlswar\_restore_tools\work\spine40_unity6000_probe_20260625_134314\Library\PackageCache\com.unity.modules.physics)
+    com.unity.modules.physics2d@1.0.0 (location: C:\Users\godho\Downloads\girlswar\_restore_tools\work\spine40_unity6000_probe_20260625_134314\Library\PackageCache\com.unity.modules.physics2d)
+    com.unity.modules.screencapture@1.0.0 (location: C:\Users\godho\Downloads\girlswar\_restore_tools\work\spine40_unity6000_probe_20260625_134314\Library\PackageCache\com.unity.modules.screencapture)
+    com.unity.modules.terrain@1.0.0 (location: C:\Users\godho\Downloads\girlswar\_restore_tools\work\spine40_unity6000_probe_20260625_134314\Library\PackageCache\com.unity.modules.terrain)
+    com.unity.modules.terrainphysics@1.0.0 (location: C:\Users\godho\Downloads\girlswar\_restore_tools\work\spine40_unity6000_probe_20260625_134314\Library\PackageCache\com.unity.modules.terrainphysics)
+    com.unity.modules.tilemap@1.0.0 (location: C:\Users\godho\Downloads\girlswar\_restore_tools\work\spine40_unity6000_probe_20260625_134314\Library\PackageCache\com.unity.modules.tilemap)
+    com.unity.modules.ui@1.0.0 (location: C:\Users\godho\Downloads\girlswar\_restore_tools\work\spine40_unity6000_probe_20260625_134314\Library\PackageCache\com.unity.modules.ui)
+    com.unity.modules.uielements@1.0.0 (location: C:\Users\godho\Downloads\girlswar\_restore_tools\work\spine40_unity6000_probe_20260625_134314\Library\PackageCache\com.unity.modules.uielements)
+    com.unity.modules.umbra@1.0.0 (location: C:\Users\godho\Downloads\girlswar\_restore_tools\work\spine40_unity6000_probe_20260625_134314\Library\PackageCache\com.unity.modules.umbra)
+    com.unity.modules.unityanalytics@1.0.0 (location: C:\Users\godho\Downloads\girlswar\_restore_tools\work\spine40_unity6000_probe_20260625_134314\Library\PackageCache\com.unity.modules.unityanalytics)
+    com.unity.modules.unitywebrequest@1.0.0 (location: C:\Users\godho\Downloads\girlswar\_restore_tools\work\spine40_unity6000_probe_20260625_134314\Library\PackageCache\com.unity.modules.unitywebrequest)
+    com.unity.modules.unitywebrequestassetbundle@1.0.0 (location: C:\Users\godho\Downloads\girlswar\_restore_tools\work\spine40_unity6000_probe_20260625_134314\Library\PackageCache\com.unity.modules.unitywebrequestassetbundle)
+    com.unity.modules.unitywebrequestaudio@1.0.0 (location: C:\Users\godho\Downloads\girlswar\_restore_tools\work\spine40_unity6000_probe_20260625_134314\Library\PackageCache\com.unity.modules.unitywebrequestaudio)
+    com.unity.modules.unitywebrequesttexture@1.0.0 (location: C:\Users\godho\Downloads\girlswar\_restore_tools\work\spine40_unity6000_probe_20260625_134314\Library\PackageCache\com.unity.modules.unitywebrequesttexture)
+    com.unity.modules.unitywebrequestwww@1.0.0 (location: C:\Users\godho\Downloads\girlswar\_restore_tools\work\spine40_unity6000_probe_20260625_134314\Library\PackageCache\com.unity.modules.unitywebrequestwww)
+    com.unity.modules.vectorgraphics@1.0.0 (location: C:\Users\godho\Downloads\girlswar\_restore_tools\work\spine40_unity6000_probe_20260625_134314\Library\PackageCache\com.unity.modules.vectorgraphics)
+    com.unity.modules.vehicles@1.0.0 (location: C:\Users\godho\Downloads\girlswar\_restore_tools\work\spine40_unity6000_probe_20260625_134314\Library\PackageCache\com.unity.modules.vehicles)
+    com.unity.modules.video@1.0.0 (location: C:\Users\godho\Downloads\girlswar\_restore_tools\work\spine40_unity6000_probe_20260625_134314\Library\PackageCache\com.unity.modules.video)
+    com.unity.modules.vr@1.0.0 (location: C:\Users\godho\Downloads\girlswar\_restore_tools\work\spine40_unity6000_probe_20260625_134314\Library\PackageCache\com.unity.modules.vr)
+    com.unity.modules.wind@1.0.0 (location: C:\Users\godho\Downloads\girlswar\_restore_tools\work\spine40_unity6000_probe_20260625_134314\Library\PackageCache\com.unity.modules.wind)
+    com.unity.modules.xr@1.0.0 (location: C:\Users\godho\Downloads\girlswar\_restore_tools\work\spine40_unity6000_probe_20260625_134314\Library\PackageCache\com.unity.modules.xr)
+    com.unity.ugui@2.0.0 (location: C:\Users\godho\Downloads\girlswar\_restore_tools\work\spine40_unity6000_probe_20260625_134314\Library\PackageCache\com.unity.ugui@1f2d1ab0d950)
+    com.unity.modules.subsystems@1.0.0 (location: C:\Users\godho\Downloads\girlswar\_restore_tools\work\spine40_unity6000_probe_20260625_134314\Library\PackageCache\com.unity.modules.subsystems)
+    com.unity.modules.hierarchycore@1.0.0 (location: C:\Users\godho\Downloads\girlswar\_restore_tools\work\spine40_unity6000_probe_20260625_134314\Library\PackageCache\com.unity.modules.hierarchycore)
+[Subsystems] No new subsystems found in resolved package list.
+[Package Manager] Done registering packages in 0.01 seconds
+[ScriptCompilation] Requested script compilation because: AssetDatabase observed changes in script compilation related files
+Starting: C:\Program Files\Unity\Hub\Editor\6000.4.9f1\Editor\Data\Tools\BuildPipeline\bee_backend.exe --ipc --defer-dag-verification --dagfile="Library/Bee/1900b0aE.dag" --continue-on-failure --profile="Library/Bee/backend1.traceevents" ScriptAssemblies
+WorkingDir: C:/Users/godho/Downloads/girlswar/_restore_tools/work/spine40_unity6000_probe_20260625_134314
+DisplayProgressbar: Compiling Scripts
+ExitCode: 0 Duration: 0s509ms
+[268/271    0s] Csc Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp-Editor.dll (+2 others)
+Assets\Editor\MainInterfaceSceneBuilder.cs(240,17): warning CS0162: Unreachable code detected
+
+Assets\Editor\MainInterfaceSceneBuilder.cs(282,26): warning CS0618: 'Object.FindFirstObjectByType<T>()' is obsolete: 'FindFirstObjectByType has been deprecated because it relies on instance ID ordering. Use FindAnyObjectByType instead, which does not depend on ordering.'
+[269/271    0s] CopyFiles Library/ScriptAssemblies/Assembly-CSharp-Editor.pdb
+[270/271    0s] CopyFiles Library/ScriptAssemblies/Assembly-CSharp-Editor.dll
+*** Tundra build success (0.48 seconds), 3 items updated, 271 evaluated
+Assets\Editor\MainInterfaceSceneBuilder.cs(240,17): warning CS0162: Unreachable code detected
+Assets\Editor\MainInterfaceSceneBuilder.cs(282,26): warning CS0618: 'Object.FindFirstObjectByType<T>()' is obsolete: 'FindFirstObjectByType has been deprecated because it relies on instance ID ordering. Use FindAnyObjectByType instead, which does not depend on ordering.'
+AssetDatabase: script compilation time: 0.828287s
+Begin MonoManager ReloadAssembly
+Assembly Assembly-CSharp-Editor-firstpass.dll at Library/ScriptAssemblies/Assembly-CSharp-Editor-firstpass.dll not valid. Loading of assembly skipped.
+Assembly Assembly-CSharp-firstpass.dll at Library/ScriptAssemblies/Assembly-CSharp-firstpass.dll not valid. Loading of assembly skipped.
+Assembly Unity.Multiplayer.Center.Editor.Tests.dll at Library/ScriptAssemblies/Unity.Multiplayer.Center.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Multiplayer.Center.Tests.dll at Library/ScriptAssemblies/Unity.Multiplayer.Center.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.TextMeshPro.Editor.Tests.dll at Library/ScriptAssemblies/Unity.TextMeshPro.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.TextMeshPro.Tests.dll at Library/ScriptAssemblies/Unity.TextMeshPro.Tests.dll not valid. Loading of assembly skipped.
+Assembly UnityEditor.UI.Common.Tests.dll at Library/ScriptAssemblies/UnityEditor.UI.Common.Tests.dll not valid. Loading of assembly skipped.
+Assembly UnityEditor.UI.EditorTests.dll at Library/ScriptAssemblies/UnityEditor.UI.EditorTests.dll not valid. Loading of assembly skipped.
+Assembly UnityEngine.UI.Tests.dll at Library/ScriptAssemblies/UnityEngine.UI.Tests.dll not valid. Loading of assembly skipped.
+Start importing Assets/RestoreData/hero1001_spine_source_raw using Guid(a49c36d1d6ac99d42944ec1d6010a94f) (DefaultImporter) -> (Import Result ID: '1653d2c0bd4eaf36b24e499bb9c10314') in 0.0103161 seconds [static dependencies only]. Details - ImportResultOutputID=51e02c6f230697adf9fc3c72eda3d17b DependenciesID=a1227838e1f7998ca966ec1154b659e6 StaticDependenciesID=b64ef56c8907b96e229c521eef7687e5 
+Start importing Assets/RestoreData/hero1001_spine_source_raw/paintingprefabandres_1001 using Guid(fdb8bbf3edb0b9d4db1fdcb2b58e78be) (DefaultImporter) -> (Import Result ID: '6e8850d131c33419fc66bdfa3ce9f934') in 0.001605 seconds [static dependencies only]. Details - ImportResultOutputID=7b7490eda677cae194c2785b25d5145b DependenciesID=d81fa2b2dcf614201b83d8039a21305e StaticDependenciesID=dbb7caf6b8947c058d329d435ba2bd92 
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+ScheduleIndexationOnStartup MainProcess:True IndexOnStartup:True
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.279 seconds
+Domain Reload Profiling: 654ms
+	BeginReloadAssembly (277ms)
+		DisableScriptedObjects (17ms)
+		CreateAndSetChildDomain (140ms)
+	RebuildCommonClasses (25ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (36ms)
+	LoadAllAssembliesAndSetupDomain (28ms)
+		LoadAssemblies (97ms)
+		AnalyzeDomain (18ms)
+			TypeCache.Refresh (11ms)
+				TypeCache.ScanAssembly (6ms)
+			BuildScriptInfoCaches (4ms)
+	FinalizeReload (280ms)
+		SetupLoadedEditorAssemblies (0ms)
+			InitializePlatformSupportModulesInManaged (18ms)
+			BeforeProcessingInitializeOnLoad (75ms)
+			ProcessInitializeOnLoadAttributes (51ms)
+			ProcessInitializeOnLoadMethodAttributes (28ms)
+			AfterProcessingInitializeOnLoad (6ms)
+		AwakeInstancesAfterBackupRestoration (19ms)
+Start importing Assets/RestoreData/hero1001_spine_source_raw/paintingprefabandres_1001/SP_heroname_1001.png using Guid(c5d226d78a398e342afa19fcc4e30546) (TextureImporter) -> (Import Result ID: 'de3bf32f60c9f9fa045c1299f847c8fe') in 0.0166442 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=68b39dc20e2ded435f053187666faaa7 DependenciesID=343bdbcdfa20439675c7757d1b33a481 StaticDependenciesID=75c9e546239fdd410c9e09e1d54e1952 
+Start importing Assets/RestoreData/hero1001_spine_source_raw/paintingprefabandres_1001/Painting_1001_Back.png using Guid(973daf7d060426d45b870d4143e0162c) (TextureImporter) -> (Import Result ID: '283076e2b2b1aae8ef07999ab423f100') in 0.0389619 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=cf6bbd33ef31f181c636cbdbc49dbd6a DependenciesID=70e5450f098dd23940d2bc2963e970c0 StaticDependenciesID=d8dcd703833aec447096a742c055cfc7 
+Start importing Assets/RestoreData/hero1001_spine_source_raw/paintingprefabandres_1001/Painting_1001.png using Guid(e8afaf955274b104b93ea31906051a88) (TextureImporter) -> (Import Result ID: 'a23629a7fbac94c6b2960c71d9354ac4') in 0.0836156 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=a3e98796149d0f96645d9d6fa51663aa DependenciesID=af2db5a847b3da84ba962d474911883c StaticDependenciesID=f19ddf48c0efa3a41d131bd96c12c912 
+Start importing Assets/RestoreData/hero1001_spine_source_raw/paintingprefabandres_1001/noalphabg_PaintingBG_1001.png using Guid(cab326ff32c15444382082fccae3121d) (TextureImporter) -> (Import Result ID: 'ee91b810dc9226c1e71cb90ace54a450') in 0.0332686 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=2d67627ea6742c996818bc80b399bcfc DependenciesID=60084a8bc03f3d502e4c440c4c51d39b StaticDependenciesID=6d6a50395d265dc6493d5fffdf4e0f7f 
+Start importing Assets/RestoreData/hero1001_spine_source_raw/paintingprefabandres_1001/noalphabg_Tujian_1001.png using Guid(df99b6c6a992b7c4b8268f0a5e200d0f) (TextureImporter) -> (Import Result ID: '3ba3e1445b61afa2033551bd80b63597') in 0.0205105 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=d354018b3d9e78c890a0e3044d44747b DependenciesID=ac8d6bb5f41416d915726701fb6a92a5 StaticDependenciesID=87969f1f0965bec167c78ce14e3129c9 
+Start importing Assets/RestoreData/hero1001_spine_source_raw/paintingprefabandres_1001/Painting_1001_Front.png using Guid(ffdd9d73034eb404982310bc51b439d2) (TextureImporter) -> (Import Result ID: '2b90e4a9ee555c751f8258d77da9de3a') in 0.0169225 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=f74813ab0f071f065c77cdb029461b5d DependenciesID=65ac6e914696d2e4dda39dc201f541c7 StaticDependenciesID=746f45bec6cf6a2c651ae253f96129f2 
+Start importing Assets/RestoreData/hero1001_spine_source_raw/paintingprefabandres_1001/Painting_1001.skel.bytes using Guid(911cda69ea8244c4da1d14b80686bbbc) (TextScriptImporter) -> (Import Result ID: '29f755cf74aba1a9647bc959cb8cd46d') in 0.0028303 seconds [static dependencies only]. Details - ImportResultOutputID=510c740976c1135836a1e9039368788b DependenciesID=16e542d8b46d617056fc8ea03e893013 StaticDependenciesID=c92344ecfc2adfcecfd17d66de736de1 
+Start importing Assets/RestoreData/hero1001_spine_source_raw/paintingprefabandres_1001/Painting_1001_Back.atlas.txt using Guid(f311538b6a2ce704fa671793b420bd08) (TextScriptImporter) -> (Import Result ID: '9919f7552fd472b521c53b5253ec1c1c') in 0.0030442 seconds [static dependencies only]. Details - ImportResultOutputID=49f63b5b8e9978b570d7ba5c146bc76a DependenciesID=01c59c308f80a00c644af4a1ccc5bca3 StaticDependenciesID=106fef39c204c75775499ada37fea898 
+Start importing Assets/RestoreData/hero1001_spine_source_raw/paintingprefabandres_1001/Painting_1001.atlas.txt using Guid(f469837903c2f0d4eb7e9c3ba253974a) (TextScriptImporter) -> (Import Result ID: 'faccdc26a9b5f47d0abdd66688e53d67') in 0.0022207 seconds [static dependencies only]. Details - ImportResultOutputID=3e5706f49b4887575d67a40b10b4cefa DependenciesID=46951d8b98239aca88617aac4c0b8471 StaticDependenciesID=f0695063c3c34a03d4180e66e68876fc 
+Start importing Assets/RestoreData/hero1001_spine_source_raw/README.md using Guid(35f75111f412cac4ba52d5952cce75f6) (TextScriptImporter) -> (Import Result ID: '14675bd4647393c278f62b78cbeb9928') in 0.0021682 seconds [static dependencies only]. Details - ImportResultOutputID=2db491c11cb50b76bab326d876a73c96 DependenciesID=cae33f9c019d675a9053762e04319416 StaticDependenciesID=0bcbb422e5e58cf484221d0f1c288e71 
+Start importing Assets/RestoreData/hero1001_spine_source_raw/paintingprefabandres_1001/Painting_1001_Front.skel.bytes using Guid(d779e4345cb90a6458ad52879e2a7157) (TextScriptImporter) -> (Import Result ID: 'c724bbd3a0031d394e758f89ec6fa3d5') in 0.0020298 seconds [static dependencies only]. Details - ImportResultOutputID=26d438ba7415956c0eec0cfd2d011b24 DependenciesID=d3950352c9f5bf16c4533cd5aa979c53 StaticDependenciesID=c04483ff98ff612f0bf135d866bdcbcf 
+Start importing Assets/RestoreData/hero1001_spine_source_raw/paintingprefabandres_1001/Painting_1001_Back.skel.bytes using Guid(c80dee5727a4e9d459b1583d95401083) (TextScriptImporter) -> (Import Result ID: '0f08ff3e96054c657b7b23304c9c3d85') in 0.0019235 seconds [static dependencies only]. Details - ImportResultOutputID=2d59436eb5eb88d7aa317bd6d3d6d0f4 DependenciesID=abce2aa0776d9631b2e46af3024aab53 StaticDependenciesID=79553885ed855fe0448f08344b292381 
+Start importing Assets/RestoreData/hero1001_spine_source_raw/paintingprefabandres_1001/SP_heroname_1001.atlas.txt using Guid(f9bc9aca2c5b416458217a3119fc926b) (TextScriptImporter) -> (Import Result ID: '5d71d12eb00dbd9a3e020c6b659f91aa') in 0.0018223 seconds [static dependencies only]. Details - ImportResultOutputID=c911ef3822ec049f87fcc84faf447951 DependenciesID=a3baef3acd55943cb6237ddf30f57b11 StaticDependenciesID=d615850ebe0bf52ef57a4d77943c6a1e 
+Start importing Assets/RestoreData/hero1001_spine_source_raw/paintingprefabandres_1001/Painting_1001_Front.atlas.txt using Guid(ecdbffae7f22c8644a2c017f4bb4a4b3) (TextScriptImporter) -> (Import Result ID: '694e8f8acd6105cf1b65cd07b740997b') in 0.0020454 seconds [static dependencies only]. Details - ImportResultOutputID=64c2f5e157a7c0a40f5c16d18f6b15a5 DependenciesID=0da24bb051bb72ec3f9c15032ea125b3 StaticDependenciesID=47790d372fc7deab0943d50e5da30411 
+Start importing Assets/RestoreData/hero1001_spine_source_raw/paintingprefabandres_1001/SP_heroname_1001.skel.bytes using Guid(6f3ecae842eea384da748d9af30dbb1a) (TextScriptImporter) -> (Import Result ID: 'c79ce13a9ea10ca7cd6b4e84c90f2da3') in 0.0021118 seconds [static dependencies only]. Details - ImportResultOutputID=18fa323d196ab9cb2da4c758694e4cb2 DependenciesID=86e373d28651d0f6adb1334ccce7c73e StaticDependenciesID=88c22f5e7dfaf73e957d2ccb83bff157 
+Start importing Assets/RestoreData/hero1001_spine_source_raw/paintingprefabandres_1001/Painting_1001_Back.png using Guid(973daf7d060426d45b870d4143e0162c) (TextureImporter) -> (Import Result ID: '643a31c29d52b6833dd55bc7ba5a9ddf') in 0.0333113 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=d94a04bf56611558948363d5cbbcf126 DependenciesID=d33036262b5ff69f7d01ecc004b2105b StaticDependenciesID=ae2ef470b34b13828ef5da077cdcf4f6 
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.01 seconds
+Start importing Assets/RestoreData/hero1001_spine_source_raw/paintingprefabandres_1001/Painting_1001_Back_Material.mat using Guid(7d3334ea120459f4199da645e2b8fa1c) (NativeFormatImporter) -> (Import Result ID: 'c313e96939b428129c5bff3fdc31ecf7') in 0.0014155 seconds [static dependencies only]. Details - ImportResultOutputID=60dde2126f7ffe2b37831cd5e0971b8c DependenciesID=bb8d60282966b3271f47d1519bf9d5a8 StaticDependenciesID=131dc9f5867f2dd0712fbe26cc7e93bf 
+Start importing Assets/RestoreData/hero1001_spine_source_raw/paintingprefabandres_1001/Painting_1001_Back_Atlas.asset using Guid(b16674c321431cc49a4caa4c42f5cfda) (NativeFormatImporter) -> (Import Result ID: 'c3d28a75a6fe9efc126465552aaa6da6') in 0.001369 seconds [static dependencies only]. Details - ImportResultOutputID=9bb7b63dc4382e0719b2e2fd9b85365b DependenciesID=19a02f2a80739663738ad026b7ebfb32 StaticDependenciesID=c28259df299ec213e89876716d12326b 
+Start importing Assets/RestoreData/hero1001_spine_source_raw/paintingprefabandres_1001/Painting_1001_Back_Material.mat using Guid(7d3334ea120459f4199da645e2b8fa1c) (NativeFormatImporter) -> (Import Result ID: 'c313e96939b428129c5bff3fdc31ecf7') in 0.0013582 seconds [static dependencies only]. Details - ImportResultOutputID=60dde2126f7ffe2b37831cd5e0971b8c DependenciesID=bb8d60282966b3271f47d1519bf9d5a8 StaticDependenciesID=131dc9f5867f2dd0712fbe26cc7e93bf 
+Start importing Assets/RestoreData/hero1001_spine_source_raw/paintingprefabandres_1001/Painting_1001_Back_Atlas.asset using Guid(b16674c321431cc49a4caa4c42f5cfda) (NativeFormatImporter) -> (Import Result ID: 'c3d28a75a6fe9efc126465552aaa6da6') in 0.0013844 seconds [static dependencies only]. Details - ImportResultOutputID=9bb7b63dc4382e0719b2e2fd9b85365b DependenciesID=19a02f2a80739663738ad026b7ebfb32 StaticDependenciesID=c28259df299ec213e89876716d12326b 
+Painting_1001_Back_Atlas :: Imported with 1 material
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object,UnityEngine.Object)
+UnityEngine.Debug:Log (object,UnityEngine.Object)
+Spine.Unity.Editor.AssetUtility:IngestSpineAtlas (UnityEngine.TextAsset,System.Collections.Generic.List`1<string>) (at Assets/Spine/Editor/spine-unity/Editor/Utility/AssetUtility.cs:618)
+Spine.Unity.Editor.AssetUtility:ImportSpineContent (string[],System.Collections.Generic.List`1<string>,bool) (at Assets/Spine/Editor/spine-unity/Editor/Utility/AssetUtility.cs:329)
+Spine.Unity.Editor.AssetUtility:HandleOnPostprocessAllAssets (string[],System.Collections.Generic.List`1<string>) (at Assets/Spine/Editor/spine-unity/Editor/Utility/AssetUtility.cs:113)
+Spine.Unity.Editor.SpineEditorUtilities:OnPostprocessAllAssets (string[],string[],string[],string[]) (at Assets/Spine/Editor/spine-unity/Editor/Utility/SpineEditorUtilities.cs:98)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.AssetPostprocessingInternal:InvokeMethod (System.Reflection.MethodInfo,object[])
+UnityEditor.AssetPostprocessingInternal:PostprocessAllAssets (string[],string[],string[],string[],string[],bool)
+
+(Filename: Assets/Spine/Editor/spine-unity/Editor/Utility/AssetUtility.cs Line: 618)
+
+Start importing Assets/RestoreData/hero1001_spine_source_raw/paintingprefabandres_1001/Painting_1001_Front.png using Guid(ffdd9d73034eb404982310bc51b439d2) (TextureImporter) -> (Import Result ID: '5745d41cccb84cc6f47dae7cf938a204') in 0.0150412 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=2fe77c2bed623345c929ac2df569bb93 DependenciesID=e1ad8cf809fdad27821cdf2eb3fa5530 StaticDependenciesID=e61246f9eaa875fb82f7eb68c4f112e8 
+Start importing Assets/RestoreData/hero1001_spine_source_raw/paintingprefabandres_1001/Painting_1001_Front_Material.mat using Guid(7e343e9cd6f32f8409acc14d9ce3aa6c) (NativeFormatImporter) -> (Import Result ID: '50f17c07cb6e012d1ff0f2159af5d09b') in 0.0015754 seconds [static dependencies only]. Details - ImportResultOutputID=edb2e928ef9525882ceb3d05576eeca8 DependenciesID=d3e23489b59620309f5063200fa2eaad StaticDependenciesID=42effbba27bc2766518c3821065270f9 
+Start importing Assets/RestoreData/hero1001_spine_source_raw/paintingprefabandres_1001/Painting_1001_Front_Atlas.asset using Guid(c3704504965994e4dad8309180903351) (NativeFormatImporter) -> (Import Result ID: 'dd5dc7a30153ff50288a5dfe5dabd2b8') in 0.0013472 seconds [static dependencies only]. Details - ImportResultOutputID=679366ccfa365f818860ae818ab5b90e DependenciesID=53681a3c2d92c8458f18637c2c24d4c3 StaticDependenciesID=d6e09dcf82340c3df23b05dbde5e971b 
+Start importing Assets/RestoreData/hero1001_spine_source_raw/paintingprefabandres_1001/Painting_1001_Front_Material.mat using Guid(7e343e9cd6f32f8409acc14d9ce3aa6c) (NativeFormatImporter) -> (Import Result ID: '50f17c07cb6e012d1ff0f2159af5d09b') in 0.001457 seconds [static dependencies only]. Details - ImportResultOutputID=edb2e928ef9525882ceb3d05576eeca8 DependenciesID=d3e23489b59620309f5063200fa2eaad StaticDependenciesID=42effbba27bc2766518c3821065270f9 
+Start importing Assets/RestoreData/hero1001_spine_source_raw/paintingprefabandres_1001/Painting_1001_Front_Atlas.asset using Guid(c3704504965994e4dad8309180903351) (NativeFormatImporter) -> (Import Result ID: 'dd5dc7a30153ff50288a5dfe5dabd2b8') in 0.0011837 seconds [static dependencies only]. Details - ImportResultOutputID=679366ccfa365f818860ae818ab5b90e DependenciesID=53681a3c2d92c8458f18637c2c24d4c3 StaticDependenciesID=d6e09dcf82340c3df23b05dbde5e971b 
+Painting_1001_Front_Atlas :: Imported with 1 material
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object,UnityEngine.Object)
+UnityEngine.Debug:Log (object,UnityEngine.Object)
+Spine.Unity.Editor.AssetUtility:IngestSpineAtlas (UnityEngine.TextAsset,System.Collections.Generic.List`1<string>) (at Assets/Spine/Editor/spine-unity/Editor/Utility/AssetUtility.cs:618)
+Spine.Unity.Editor.AssetUtility:ImportSpineContent (string[],System.Collections.Generic.List`1<string>,bool) (at Assets/Spine/Editor/spine-unity/Editor/Utility/AssetUtility.cs:329)
+Spine.Unity.Editor.AssetUtility:HandleOnPostprocessAllAssets (string[],System.Collections.Generic.List`1<string>) (at Assets/Spine/Editor/spine-unity/Editor/Utility/AssetUtility.cs:113)
+Spine.Unity.Editor.SpineEditorUtilities:OnPostprocessAllAssets (string[],string[],string[],string[]) (at Assets/Spine/Editor/spine-unity/Editor/Utility/SpineEditorUtilities.cs:98)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.AssetPostprocessingInternal:InvokeMethod (System.Reflection.MethodInfo,object[])
+UnityEditor.AssetPostprocessingInternal:PostprocessAllAssets (string[],string[],string[],string[],string[],bool)
+
+(Filename: Assets/Spine/Editor/spine-unity/Editor/Utility/AssetUtility.cs Line: 618)
+
+Start importing Assets/RestoreData/hero1001_spine_source_raw/paintingprefabandres_1001/Painting_1001.png using Guid(e8afaf955274b104b93ea31906051a88) (TextureImporter) -> (Import Result ID: 'cdb71ac375aaced55be683ced177b9c7') in 0.0740882 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=7e7a90b25497ac7d2dc745b6ea1c366c DependenciesID=a8bb3e76723503ade4dc8d7c14f0ac72 StaticDependenciesID=b7d298f94e62936953599e84d6fffd75 
+Start importing Assets/RestoreData/hero1001_spine_source_raw/paintingprefabandres_1001/Painting_1001_Material.mat using Guid(0b331b05045febd419cb2e0a10ebb8b9) (NativeFormatImporter) -> (Import Result ID: 'a5e9cdfaaff3a7a1269b21c0c7b2d41b') in 0.0017769 seconds [static dependencies only]. Details - ImportResultOutputID=c1f9456ff1891ba4b848d16babc3db69 DependenciesID=9bc05a08b20b3d59fde2cdf3d4c6147a StaticDependenciesID=e9dfabe50eb8d22d678b939afd8f5b50 
+Start importing Assets/RestoreData/hero1001_spine_source_raw/paintingprefabandres_1001/Painting_1001_Atlas.asset using Guid(b4254f6596c3641468b9ea240d6dcd15) (NativeFormatImporter) -> (Import Result ID: '2168a7d79706292fff516891f9181ebe') in 0.0016362 seconds [static dependencies only]. Details - ImportResultOutputID=e457c5817e786575da7a5b7be7717edc DependenciesID=1dd18954a494a54e5916058872ae253c StaticDependenciesID=0323852d2c4c14a13576656136b42c4f 
+Start importing Assets/RestoreData/hero1001_spine_source_raw/paintingprefabandres_1001/Painting_1001_Material.mat using Guid(0b331b05045febd419cb2e0a10ebb8b9) (NativeFormatImporter) -> (Import Result ID: 'a5e9cdfaaff3a7a1269b21c0c7b2d41b') in 0.0014592 seconds [static dependencies only]. Details - ImportResultOutputID=c1f9456ff1891ba4b848d16babc3db69 DependenciesID=9bc05a08b20b3d59fde2cdf3d4c6147a StaticDependenciesID=e9dfabe50eb8d22d678b939afd8f5b50 
+Start importing Assets/RestoreData/hero1001_spine_source_raw/paintingprefabandres_1001/Painting_1001_Atlas.asset using Guid(b4254f6596c3641468b9ea240d6dcd15) (NativeFormatImporter) -> (Import Result ID: '2168a7d79706292fff516891f9181ebe') in 0.0012835 seconds [static dependencies only]. Details - ImportResultOutputID=e457c5817e786575da7a5b7be7717edc DependenciesID=1dd18954a494a54e5916058872ae253c StaticDependenciesID=0323852d2c4c14a13576656136b42c4f 
+Painting_1001_Atlas :: Imported with 1 material
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object,UnityEngine.Object)
+UnityEngine.Debug:Log (object,UnityEngine.Object)
+Spine.Unity.Editor.AssetUtility:IngestSpineAtlas (UnityEngine.TextAsset,System.Collections.Generic.List`1<string>) (at Assets/Spine/Editor/spine-unity/Editor/Utility/AssetUtility.cs:618)
+Spine.Unity.Editor.AssetUtility:ImportSpineContent (string[],System.Collections.Generic.List`1<string>,bool) (at Assets/Spine/Editor/spine-unity/Editor/Utility/AssetUtility.cs:329)
+Spine.Unity.Editor.AssetUtility:HandleOnPostprocessAllAssets (string[],System.Collections.Generic.List`1<string>) (at Assets/Spine/Editor/spine-unity/Editor/Utility/AssetUtility.cs:113)
+Spine.Unity.Editor.SpineEditorUtilities:OnPostprocessAllAssets (string[],string[],string[],string[]) (at Assets/Spine/Editor/spine-unity/Editor/Utility/SpineEditorUtilities.cs:98)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.AssetPostprocessingInternal:InvokeMethod (System.Reflection.MethodInfo,object[])
+UnityEditor.AssetPostprocessingInternal:PostprocessAllAssets (string[],string[],string[],string[],string[],bool)
+
+(Filename: Assets/Spine/Editor/spine-unity/Editor/Utility/AssetUtility.cs Line: 618)
+
+Start importing Assets/RestoreData/hero1001_spine_source_raw/paintingprefabandres_1001/SP_heroname_1001.png using Guid(c5d226d78a398e342afa19fcc4e30546) (TextureImporter) -> (Import Result ID: '2ccb3a7fc9372af9e6127b23263ec5be') in 0.0044134 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=5f49c2eb2b518e154e274c81f5151f9b DependenciesID=06b27f97deb979a52014830efd78fbc4 StaticDependenciesID=e9eccbef22d656732e0081235eb78799 
+Start importing Assets/RestoreData/hero1001_spine_source_raw/paintingprefabandres_1001/SP_heroname_1001_Material.mat using Guid(c622d86d8b5546d48aed5ed56a848e12) (NativeFormatImporter) -> (Import Result ID: '88cf5101632d8741feaedfb86201ae29') in 0.001448 seconds [static dependencies only]. Details - ImportResultOutputID=0a10827a242690684ca8c96b03c1ac15 DependenciesID=80a7387af7e3403691b2cfd5b3683267 StaticDependenciesID=d6d85166922c77ed61ab35fd58c535d0 
+Start importing Assets/RestoreData/hero1001_spine_source_raw/paintingprefabandres_1001/SP_heroname_1001_Atlas.asset using Guid(c739a4d8693234e4cafaebe357e01fae) (NativeFormatImporter) -> (Import Result ID: 'ef34aa67ed9dd6c7bcb335e0327ca78d') in 0.001593 seconds [static dependencies only]. Details - ImportResultOutputID=24deb2c82e01782283327717b054270d DependenciesID=a139421cbe061c53b4a7ee9c3600f01e StaticDependenciesID=d056317eba80dbe62060042c08f81c65 
+Start importing Assets/RestoreData/hero1001_spine_source_raw/paintingprefabandres_1001/SP_heroname_1001_Material.mat using Guid(c622d86d8b5546d48aed5ed56a848e12) (NativeFormatImporter) -> (Import Result ID: '88cf5101632d8741feaedfb86201ae29') in 0.0014483 seconds [static dependencies only]. Details - ImportResultOutputID=0a10827a242690684ca8c96b03c1ac15 DependenciesID=80a7387af7e3403691b2cfd5b3683267 StaticDependenciesID=d6d85166922c77ed61ab35fd58c535d0 
+Start importing Assets/RestoreData/hero1001_spine_source_raw/paintingprefabandres_1001/SP_heroname_1001_Atlas.asset using Guid(c739a4d8693234e4cafaebe357e01fae) (NativeFormatImporter) -> (Import Result ID: 'ef34aa67ed9dd6c7bcb335e0327ca78d') in 0.0013366 seconds [static dependencies only]. Details - ImportResultOutputID=24deb2c82e01782283327717b054270d DependenciesID=a139421cbe061c53b4a7ee9c3600f01e StaticDependenciesID=d056317eba80dbe62060042c08f81c65 
+SP_heroname_1001_Atlas :: Imported with 1 material
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object,UnityEngine.Object)
+UnityEngine.Debug:Log (object,UnityEngine.Object)
+Spine.Unity.Editor.AssetUtility:IngestSpineAtlas (UnityEngine.TextAsset,System.Collections.Generic.List`1<string>) (at Assets/Spine/Editor/spine-unity/Editor/Utility/AssetUtility.cs:618)
+Spine.Unity.Editor.AssetUtility:ImportSpineContent (string[],System.Collections.Generic.List`1<string>,bool) (at Assets/Spine/Editor/spine-unity/Editor/Utility/AssetUtility.cs:329)
+Spine.Unity.Editor.AssetUtility:HandleOnPostprocessAllAssets (string[],System.Collections.Generic.List`1<string>) (at Assets/Spine/Editor/spine-unity/Editor/Utility/AssetUtility.cs:113)
+Spine.Unity.Editor.SpineEditorUtilities:OnPostprocessAllAssets (string[],string[],string[],string[]) (at Assets/Spine/Editor/spine-unity/Editor/Utility/SpineEditorUtilities.cs:98)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.AssetPostprocessingInternal:InvokeMethod (System.Reflection.MethodInfo,object[])
+UnityEditor.AssetPostprocessingInternal:PostprocessAllAssets (string[],string[],string[],string[],string[],bool)
+
+(Filename: Assets/Spine/Editor/spine-unity/Editor/Utility/AssetUtility.cs Line: 618)
+
+Start importing Assets/RestoreData/hero1001_spine_source_raw/paintingprefabandres_1001/SP_heroname_1001_SkeletonData.asset using Guid(2b2b16d1db6dcb048bc90723aa51e656) (NativeFormatImporter) -> (Import Result ID: 'f3f819d25d432b74fbe6e483a73dc8f8') in 0.0015435 seconds [static dependencies only]. Details - ImportResultOutputID=61e50607eaf57d6ce4e7b94ec5392df9 DependenciesID=570580ad37893a8656301c119723b4d8 StaticDependenciesID=bcccc1ec90100dcb1c9af255ea2ae39d 
+Start importing Assets/RestoreData/hero1001_spine_source_raw/paintingprefabandres_1001/SP_heroname_1001_Material-Additive.mat using Guid(d6fc8c61734872f499476dac024068a0) (NativeFormatImporter) -> (Import Result ID: '5205bf8520333891d76098e8d35312e1') in 0.0017263 seconds [static dependencies only]. Details - ImportResultOutputID=253593d307ca88bc74e7fb0de56809c7 DependenciesID=550d50dc449a71157dab00ba1ecfa76b StaticDependenciesID=461a6730970c620e78976d7fd5693add 
+Created blend mode Material 'SP_heroname_1001_Material-Additive' for SkeletonData asset 'SP_heroname_1001_SkeletonData (Spine.Unity.SkeletonDataAsset)'.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object,UnityEngine.Object)
+UnityEngine.Debug:Log (object,UnityEngine.Object)
+Spine.Unity.Editor.BlendModeMaterialsUtility:CreateAndAssignMaterials (Spine.Unity.SkeletonDataAsset,Spine.Unity.Editor.BlendModeMaterialsUtility/TemplateMaterials,bool&) (at Assets/Spine/Editor/spine-unity/Editor/Utility/BlendModeMaterialsUtility.cs:215)
+Spine.Unity.Editor.BlendModeMaterialsUtility:UpdateBlendModeMaterials (Spine.Unity.SkeletonDataAsset,Spine.SkeletonData&,bool) (at Assets/Spine/Editor/spine-unity/Editor/Utility/BlendModeMaterialsUtility.cs:92)
+Spine.Unity.Editor.AssetUtility:IngestSpineProject (UnityEngine.TextAsset,Spine.Unity.AtlasAssetBase[]) (at Assets/Spine/Editor/spine-unity/Editor/Utility/AssetUtility.cs:960)
+Spine.Unity.Editor.AssetUtility:ImportSpineContent (string[],System.Collections.Generic.List`1<string>,bool) (at Assets/Spine/Editor/spine-unity/Editor/Utility/AssetUtility.cs:389)
+Spine.Unity.Editor.AssetUtility:HandleOnPostprocessAllAssets (string[],System.Collections.Generic.List`1<string>) (at Assets/Spine/Editor/spine-unity/Editor/Utility/AssetUtility.cs:113)
+Spine.Unity.Editor.SpineEditorUtilities:OnPostprocessAllAssets (string[],string[],string[],string[]) (at Assets/Spine/Editor/spine-unity/Editor/Utility/SpineEditorUtilities.cs:98)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.AssetPostprocessingInternal:InvokeMethod (System.Reflection.MethodInfo,object[])
+UnityEditor.AssetPostprocessingInternal:PostprocessAllAssets (string[],string[],string[],string[],string[],bool)
+
+(Filename: Assets/Spine/Editor/spine-unity/Editor/Utility/BlendModeMaterialsUtility.cs Line: 215)
+
+Start importing Assets/RestoreData/hero1001_spine_source_raw/paintingprefabandres_1001/SP_heroname_1001_Material-Additive.mat using Guid(d6fc8c61734872f499476dac024068a0) (NativeFormatImporter) -> (Import Result ID: '5205bf8520333891d76098e8d35312e1') in 0.0015881 seconds [static dependencies only]. Details - ImportResultOutputID=253593d307ca88bc74e7fb0de56809c7 DependenciesID=550d50dc449a71157dab00ba1ecfa76b StaticDependenciesID=461a6730970c620e78976d7fd5693add 
+Start importing Assets/RestoreData/hero1001_spine_source_raw/paintingprefabandres_1001/SP_heroname_1001_SkeletonData.asset using Guid(2b2b16d1db6dcb048bc90723aa51e656) (NativeFormatImporter) -> (Import Result ID: '9dd335cd8c179a060353df84a72758a2') in 0.0012393 seconds [static dependencies only]. Details - ImportResultOutputID=61e50607eaf57d6ce4e7b94ec5392df9 DependenciesID=ee9ad402bc2ae0c89cd4b3989e2a2a88 StaticDependenciesID=dcaef4b1a64dc8c4c439da7c2d38f37e 
+Start importing Assets/RestoreData/hero1001_spine_source_raw/paintingprefabandres_1001/Painting_1001_Back_SkeletonData.asset using Guid(fc236e160737f364193d3d8ddaed9643) (NativeFormatImporter) -> (Import Result ID: '8ee038577bcd9a0252ecbd71f6a3d40d') in 0.0013475 seconds [static dependencies only]. Details - ImportResultOutputID=2cc8ee3a1cea28c00725ccfc0960c9f7 DependenciesID=e78c52d1cf81b7e130bd177e38f48079 StaticDependenciesID=884979e320ce09ded44ee57c0156d4b0 
+Start importing Assets/RestoreData/hero1001_spine_source_raw/paintingprefabandres_1001/Painting_1001_Back_Material-Screen.mat using Guid(24e1cdbc652e1af4c85e2bcd82c2120a) (NativeFormatImporter) -> (Import Result ID: '5d6a047a96f3f9f59941716f4f78c3dd') in 0.0017422 seconds [static dependencies only]. Details - ImportResultOutputID=53433ff9c575fa5169bb135f1b3dc37f DependenciesID=9496a021115628602e9ac18a3afb4283 StaticDependenciesID=3d22dcceac80b627c18570c1c11b41d5 
+Created blend mode Material 'Painting_1001_Back_Material-Screen' for SkeletonData asset 'Painting_1001_Back_SkeletonData (Spine.Unity.SkeletonDataAsset)'.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object,UnityEngine.Object)
+UnityEngine.Debug:Log (object,UnityEngine.Object)
+Spine.Unity.Editor.BlendModeMaterialsUtility:CreateAndAssignMaterials (Spine.Unity.SkeletonDataAsset,Spine.Unity.Editor.BlendModeMaterialsUtility/TemplateMaterials,bool&) (at Assets/Spine/Editor/spine-unity/Editor/Utility/BlendModeMaterialsUtility.cs:215)
+Spine.Unity.Editor.BlendModeMaterialsUtility:UpdateBlendModeMaterials (Spine.Unity.SkeletonDataAsset,Spine.SkeletonData&,bool) (at Assets/Spine/Editor/spine-unity/Editor/Utility/BlendModeMaterialsUtility.cs:92)
+Spine.Unity.Editor.AssetUtility:IngestSpineProject (UnityEngine.TextAsset,Spine.Unity.AtlasAssetBase[]) (at Assets/Spine/Editor/spine-unity/Editor/Utility/AssetUtility.cs:960)
+Spine.Unity.Editor.AssetUtility:ImportSpineContent (string[],System.Collections.Generic.List`1<string>,bool) (at Assets/Spine/Editor/spine-unity/Editor/Utility/AssetUtility.cs:389)
+Spine.Unity.Editor.AssetUtility:HandleOnPostprocessAllAssets (string[],System.Collections.Generic.List`1<string>) (at Assets/Spine/Editor/spine-unity/Editor/Utility/AssetUtility.cs:113)
+Spine.Unity.Editor.SpineEditorUtilities:OnPostprocessAllAssets (string[],string[],string[],string[]) (at Assets/Spine/Editor/spine-unity/Editor/Utility/SpineEditorUtilities.cs:98)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.AssetPostprocessingInternal:InvokeMethod (System.Reflection.MethodInfo,object[])
+UnityEditor.AssetPostprocessingInternal:PostprocessAllAssets (string[],string[],string[],string[],string[],bool)
+
+(Filename: Assets/Spine/Editor/spine-unity/Editor/Utility/BlendModeMaterialsUtility.cs Line: 215)
+
+Start importing Assets/RestoreData/hero1001_spine_source_raw/paintingprefabandres_1001/Painting_1001_Back_Material-Screen.mat using Guid(24e1cdbc652e1af4c85e2bcd82c2120a) (NativeFormatImporter) -> (Import Result ID: '5d6a047a96f3f9f59941716f4f78c3dd') in 0.0013748 seconds [static dependencies only]. Details - ImportResultOutputID=53433ff9c575fa5169bb135f1b3dc37f DependenciesID=9496a021115628602e9ac18a3afb4283 StaticDependenciesID=3d22dcceac80b627c18570c1c11b41d5 
+Start importing Assets/RestoreData/hero1001_spine_source_raw/paintingprefabandres_1001/Painting_1001_Back_SkeletonData.asset using Guid(fc236e160737f364193d3d8ddaed9643) (NativeFormatImporter) -> (Import Result ID: 'c760699e16505ac7de7eb3c0306010e1') in 0.0012739 seconds [static dependencies only]. Details - ImportResultOutputID=2cc8ee3a1cea28c00725ccfc0960c9f7 DependenciesID=f964b604dccf7e56682e2a92cbe22071 StaticDependenciesID=d94b40e004728d446dadeb999a361885 
+Start importing Assets/RestoreData/hero1001_spine_source_raw/paintingprefabandres_1001/Painting_1001_SkeletonData.asset using Guid(5417802c0f63f87499ead8a7f3fd3b99) (NativeFormatImporter) -> (Import Result ID: '43adfba2d5e38efb17b9a9148fa69993') in 0.0016782 seconds [static dependencies only]. Details - ImportResultOutputID=8ddf88920c0729a73af370d60c159e7f DependenciesID=91c6442380fb17b3b160852f1e7549d5 StaticDependenciesID=607bd4087326e5700fb0de75e7535987 
+Start importing Assets/RestoreData/hero1001_spine_source_raw/paintingprefabandres_1001/Painting_1001_Material-Additive.mat using Guid(122bb19bbf2790d42aa7c6e5458c80e2) (NativeFormatImporter) -> (Import Result ID: '4f118cf8492158023d1863244587fc36') in 0.0015906 seconds [static dependencies only]. Details - ImportResultOutputID=8e22ccbe723eda1cfa9b1506db7043e9 DependenciesID=02c6bbf03f1109bb74b4aabe6a9bfeb4 StaticDependenciesID=c3903e6d19856bb2c52ec612f7a0b148 
+Created blend mode Material 'Painting_1001_Material-Additive' for SkeletonData asset 'Painting_1001_SkeletonData (Spine.Unity.SkeletonDataAsset)'.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object,UnityEngine.Object)
+UnityEngine.Debug:Log (object,UnityEngine.Object)
+Spine.Unity.Editor.BlendModeMaterialsUtility:CreateAndAssignMaterials (Spine.Unity.SkeletonDataAsset,Spine.Unity.Editor.BlendModeMaterialsUtility/TemplateMaterials,bool&) (at Assets/Spine/Editor/spine-unity/Editor/Utility/BlendModeMaterialsUtility.cs:215)
+Spine.Unity.Editor.BlendModeMaterialsUtility:UpdateBlendModeMaterials (Spine.Unity.SkeletonDataAsset,Spine.SkeletonData&,bool) (at Assets/Spine/Editor/spine-unity/Editor/Utility/BlendModeMaterialsUtility.cs:92)
+Spine.Unity.Editor.AssetUtility:IngestSpineProject (UnityEngine.TextAsset,Spine.Unity.AtlasAssetBase[]) (at Assets/Spine/Editor/spine-unity/Editor/Utility/AssetUtility.cs:960)
+Spine.Unity.Editor.AssetUtility:ImportSpineContent (string[],System.Collections.Generic.List`1<string>,bool) (at Assets/Spine/Editor/spine-unity/Editor/Utility/AssetUtility.cs:389)
+Spine.Unity.Editor.AssetUtility:HandleOnPostprocessAllAssets (string[],System.Collections.Generic.List`1<string>) (at Assets/Spine/Editor/spine-unity/Editor/Utility/AssetUtility.cs:113)
+Spine.Unity.Editor.SpineEditorUtilities:OnPostprocessAllAssets (string[],string[],string[],string[]) (at Assets/Spine/Editor/spine-unity/Editor/Utility/SpineEditorUtilities.cs:98)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.AssetPostprocessingInternal:InvokeMethod (System.Reflection.MethodInfo,object[])
+UnityEditor.AssetPostprocessingInternal:PostprocessAllAssets (string[],string[],string[],string[],string[],bool)
+
+(Filename: Assets/Spine/Editor/spine-unity/Editor/Utility/BlendModeMaterialsUtility.cs Line: 215)
+
+Start importing Assets/RestoreData/hero1001_spine_source_raw/paintingprefabandres_1001/Painting_1001_Material-Screen.mat using Guid(dbab46f502a8db1438b17c909440dc3f) (NativeFormatImporter) -> (Import Result ID: '2752b6263e3155d2e5509ded96444bdf') in 0.0015743 seconds [static dependencies only]. Details - ImportResultOutputID=b821388385a13c0f7a653b32562d3337 DependenciesID=73ae0233ab26c67f57c8d922fc4d7494 StaticDependenciesID=06b03424dfd3fc518f7b9eea0137d6db 
+Created blend mode Material 'Painting_1001_Material-Screen' for SkeletonData asset 'Painting_1001_SkeletonData (Spine.Unity.SkeletonDataAsset)'.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object,UnityEngine.Object)
+UnityEngine.Debug:Log (object,UnityEngine.Object)
+Spine.Unity.Editor.BlendModeMaterialsUtility:CreateAndAssignMaterials (Spine.Unity.SkeletonDataAsset,Spine.Unity.Editor.BlendModeMaterialsUtility/TemplateMaterials,bool&) (at Assets/Spine/Editor/spine-unity/Editor/Utility/BlendModeMaterialsUtility.cs:215)
+Spine.Unity.Editor.BlendModeMaterialsUtility:UpdateBlendModeMaterials (Spine.Unity.SkeletonDataAsset,Spine.SkeletonData&,bool) (at Assets/Spine/Editor/spine-unity/Editor/Utility/BlendModeMaterialsUtility.cs:92)
+Spine.Unity.Editor.AssetUtility:IngestSpineProject (UnityEngine.TextAsset,Spine.Unity.AtlasAssetBase[]) (at Assets/Spine/Editor/spine-unity/Editor/Utility/AssetUtility.cs:960)
+Spine.Unity.Editor.AssetUtility:ImportSpineContent (string[],System.Collections.Generic.List`1<string>,bool) (at Assets/Spine/Editor/spine-unity/Editor/Utility/AssetUtility.cs:389)
+Spine.Unity.Editor.AssetUtility:HandleOnPostprocessAllAssets (string[],System.Collections.Generic.List`1<string>) (at Assets/Spine/Editor/spine-unity/Editor/Utility/AssetUtility.cs:113)
+Spine.Unity.Editor.SpineEditorUtilities:OnPostprocessAllAssets (string[],string[],string[],string[]) (at Assets/Spine/Editor/spine-unity/Editor/Utility/SpineEditorUtilities.cs:98)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.AssetPostprocessingInternal:InvokeMethod (System.Reflection.MethodInfo,object[])
+UnityEditor.AssetPostprocessingInternal:PostprocessAllAssets (string[],string[],string[],string[],string[],bool)
+
+(Filename: Assets/Spine/Editor/spine-unity/Editor/Utility/BlendModeMaterialsUtility.cs Line: 215)
+
+Start importing Assets/RestoreData/hero1001_spine_source_raw/paintingprefabandres_1001/Painting_1001_Material-Additive.mat using Guid(122bb19bbf2790d42aa7c6e5458c80e2) (NativeFormatImporter) -> (Import Result ID: '4f118cf8492158023d1863244587fc36') in 0.0014816 seconds [static dependencies only]. Details - ImportResultOutputID=8e22ccbe723eda1cfa9b1506db7043e9 DependenciesID=02c6bbf03f1109bb74b4aabe6a9bfeb4 StaticDependenciesID=c3903e6d19856bb2c52ec612f7a0b148 
+Start importing Assets/RestoreData/hero1001_spine_source_raw/paintingprefabandres_1001/Painting_1001_Material-Screen.mat using Guid(dbab46f502a8db1438b17c909440dc3f) (NativeFormatImporter) -> (Import Result ID: '2752b6263e3155d2e5509ded96444bdf') in 0.0011838 seconds [static dependencies only]. Details - ImportResultOutputID=b821388385a13c0f7a653b32562d3337 DependenciesID=73ae0233ab26c67f57c8d922fc4d7494 StaticDependenciesID=06b03424dfd3fc518f7b9eea0137d6db 
+Start importing Assets/RestoreData/hero1001_spine_source_raw/paintingprefabandres_1001/Painting_1001_SkeletonData.asset using Guid(5417802c0f63f87499ead8a7f3fd3b99) (NativeFormatImporter) -> (Import Result ID: 'fc2cd2984e69f6f90d62b06650411e11') in 0.0013457 seconds [static dependencies only]. Details - ImportResultOutputID=8ddf88920c0729a73af370d60c159e7f DependenciesID=4b7233ddf44332373b295a86aa4b7e5e StaticDependenciesID=942509764b510fcb6868fb9139756b68 
+Start importing Assets/RestoreData/hero1001_spine_source_raw/paintingprefabandres_1001/Painting_1001_Front_SkeletonData.asset using Guid(11f1c40b2fbc28045a4325dbc2248893) (NativeFormatImporter) -> (Import Result ID: 'd7fadebc15c0bf04edc915fae631dcac') in 0.0017816 seconds [static dependencies only]. Details - ImportResultOutputID=1836a852ed3866670cb83cdc9a002f43 DependenciesID=b33d76a30cec22ad330e7ff0899a19c1 StaticDependenciesID=b205ae0767f58151a1025eec1c447319 
+Start importing Assets/RestoreData/hero1001_spine_source_raw/paintingprefabandres_1001/Painting_1001_Front_Material-Additive.mat using Guid(f60933b704fc4384f82474fee98607cb) (NativeFormatImporter) -> (Import Result ID: '0473d392a7c035fd4153d2661bf1099c') in 0.0015161 seconds [static dependencies only]. Details - ImportResultOutputID=92df1c6da739008baba313c2584565b6 DependenciesID=2264937f925cfc75be94ebacada299a1 StaticDependenciesID=7caa37be490da9a375e92991e45fb206 
+Created blend mode Material 'Painting_1001_Front_Material-Additive' for SkeletonData asset 'Painting_1001_Front_SkeletonData (Spine.Unity.SkeletonDataAsset)'.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object,UnityEngine.Object)
+UnityEngine.Debug:Log (object,UnityEngine.Object)
+Spine.Unity.Editor.BlendModeMaterialsUtility:CreateAndAssignMaterials (Spine.Unity.SkeletonDataAsset,Spine.Unity.Editor.BlendModeMaterialsUtility/TemplateMaterials,bool&) (at Assets/Spine/Editor/spine-unity/Editor/Utility/BlendModeMaterialsUtility.cs:215)
+Spine.Unity.Editor.BlendModeMaterialsUtility:UpdateBlendModeMaterials (Spine.Unity.SkeletonDataAsset,Spine.SkeletonData&,bool) (at Assets/Spine/Editor/spine-unity/Editor/Utility/BlendModeMaterialsUtility.cs:92)
+Spine.Unity.Editor.AssetUtility:IngestSpineProject (UnityEngine.TextAsset,Spine.Unity.AtlasAssetBase[]) (at Assets/Spine/Editor/spine-unity/Editor/Utility/AssetUtility.cs:960)
+Spine.Unity.Editor.AssetUtility:ImportSpineContent (string[],System.Collections.Generic.List`1<string>,bool) (at Assets/Spine/Editor/spine-unity/Editor/Utility/AssetUtility.cs:389)
+Spine.Unity.Editor.AssetUtility:HandleOnPostprocessAllAssets (string[],System.Collections.Generic.List`1<string>) (at Assets/Spine/Editor/spine-unity/Editor/Utility/AssetUtility.cs:113)
+Spine.Unity.Editor.SpineEditorUtilities:OnPostprocessAllAssets (string[],string[],string[],string[]) (at Assets/Spine/Editor/spine-unity/Editor/Utility/SpineEditorUtilities.cs:98)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.AssetPostprocessingInternal:InvokeMethod (System.Reflection.MethodInfo,object[])
+UnityEditor.AssetPostprocessingInternal:PostprocessAllAssets (string[],string[],string[],string[],string[],bool)
+
+(Filename: Assets/Spine/Editor/spine-unity/Editor/Utility/BlendModeMaterialsUtility.cs Line: 215)
+
+Start importing Assets/RestoreData/hero1001_spine_source_raw/paintingprefabandres_1001/Painting_1001_Front_Material-Additive.mat using Guid(f60933b704fc4384f82474fee98607cb) (NativeFormatImporter) -> (Import Result ID: '0473d392a7c035fd4153d2661bf1099c') in 0.0013845 seconds [static dependencies only]. Details - ImportResultOutputID=92df1c6da739008baba313c2584565b6 DependenciesID=2264937f925cfc75be94ebacada299a1 StaticDependenciesID=7caa37be490da9a375e92991e45fb206 
+Start importing Assets/RestoreData/hero1001_spine_source_raw/paintingprefabandres_1001/Painting_1001_Front_SkeletonData.asset using Guid(11f1c40b2fbc28045a4325dbc2248893) (NativeFormatImporter) -> (Import Result ID: '5a9b040d009aeeb7c13ddc881cb73b52') in 0.0013561 seconds [static dependencies only]. Details - ImportResultOutputID=1836a852ed3866670cb83cdc9a002f43 DependenciesID=6391ef0fde6116948f1be88900f6a0f7 StaticDependenciesID=8e2e60ef5f2526d8b485ae868fae342b 
+(Values over 0.050ms)
+Asset Pipeline Refresh (id=4e0025d0f83bda9408126077204141c4): Total: 2.676 seconds - Initiated by InitialRefreshV2(ForceSynchronousImport)
+	Summary:
+		Imports: total=55 (actual=55, local cache=0, cache server=0)
+		Asset DB Process Time: managed=6 ms, native=1115 ms
+		Asset DB Callback time: managed=316 ms, native=15 ms
+		Scripting: domain reloads=1, domain reload time=379 ms, compile time=830 ms, other=12 ms
+		Project Asset Count: scripts=333, non-scripts=804
+		Asset File Changes: new=34, changed=43, moved=0, deleted=0
+		Scan Filter Count: 6
+	InvokePackagesCallback: 14.494ms
+	ApplyChangesToAssetFolders: 2.159ms
+	Scan: 258.765ms
+	OnSourceAssetsModified: 2.218ms
+	CategorizeScriptCompilationAssets: 1.367ms
+	ProcessAssetsWithTransientArtifactChanges: 7.505ms
+	CategorizeAssets: 17.550ms
+	CompileScripts: 829.594ms
+	ImportOutOfDateAssets: 749.526ms (285.499ms without children)
+		ImportManagerImport: 449.810ms (8.822ms without children)
+			UpdateCategorizedAssets: 0.382ms
+		ReloadNativeAssets: 0.847ms
+		UnloadImportedAssets: 6.561ms
+		ReloadImportedAssets: 8.666ms
+		EnsureUptoDateAssetsAreRegisteredWithGuidPM: 2.195ms
+		InitializingProgressBar: 0.165ms
+		OnDemandSchedulerStart: 4.418ms
+	PostProcessAllAssets: 765.611ms
+		VersionControlSettings.HiddenFilePostprocess 0.881ms
+		PostProcessCallbackCreateDeferredMaterials 0.055ms
+		MonoPostProcessAllAssets: 762.960ms
+			AssetPostprocessor.OnPostprocessAllAssets 0.888ms
+			AssetChangedListener.OnPostprocessAllAssets 0.067ms
+			SpineEditorUtilities.OnPostprocessAllAssets 0.055ms
+	PostAssetChangesProfiler: 0.628ms
+	GatherAllCurrentPrimaryImportResultRevisions: 1.125ms
+	UnloadStreamsBegin: 1.590ms
+	PersistCurrentRevisions: 2.027ms
+	UnloadStreamsEnd: 0.412ms
+	GenerateScriptTypeHashes: 0.162ms
+	GenerateScriptTypeSerializationHashes: 0.357ms
+	Untracked: 442.529ms
+
+Application.AssetDatabase Initial Refresh End
+Scanning for USB devices : 2.055ms
+Initializing Unity extensions:
+[MODES] ModeService[none].Initialize
+[MODES] ModeService[none].LoadModes
+[MODES] Loading mode Default (0) for mode-current-id-girlswar_maininterface_unity
+Unloading 40 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 802 unused Assets / (10.8 MB). Loaded Objects now: 1293.
+Memory consumption went from 146.4 MB to 135.6 MB.
+Total: 5.302700 ms (FindLiveObjects: 0.085400 ms CreateObjectMapping: 0.024100 ms MarkObjects: 2.968900 ms  DeleteObjects: 2.222800 ms)
+
+[GirlsWarRestore][SpineProbe] ImportHero1001 start
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GirlsWarRestore.SpineProbeHeroImporter:ImportHero1001 () (at Assets/Editor/GirlsWarSpineProbeHeroImporter.cs:35)
+
+(Filename: Assets/Editor/GirlsWarSpineProbeHeroImporter.cs Line: 35)
+
+Start importing Assets/RestoreData/hero1001_spine_source_raw/paintingprefabandres_1001/Painting_1001.png using Guid(e8afaf955274b104b93ea31906051a88) (TextureImporter) -> (Import Result ID: 'cdb71ac375aaced55be683ced177b9c7') in 0.0719275 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=7e7a90b25497ac7d2dc745b6ea1c366c DependenciesID=a8bb3e76723503ade4dc8d7c14f0ac72 StaticDependenciesID=b7d298f94e62936953599e84d6fffd75 
+Asset Pipeline Refresh (id=c5db2ec2fbda3b94ebbb395c2e960d71): Total: 0.088 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/RestoreData/hero1001_spine_source_raw/paintingprefabandres_1001/Painting_1001.atlas.txt using Guid(f469837903c2f0d4eb7e9c3ba253974a) (TextScriptImporter) -> (Import Result ID: 'faccdc26a9b5f47d0abdd66688e53d67') in 0.0018088 seconds [static dependencies only]. Details - ImportResultOutputID=3e5706f49b4887575d67a40b10b4cefa DependenciesID=46951d8b98239aca88617aac4c0b8471 StaticDependenciesID=f0695063c3c34a03d4180e66e68876fc 
+Start importing Assets/RestoreData/hero1001_spine_source_raw/paintingprefabandres_1001/Painting_1001_Material.mat using Guid(0b331b05045febd419cb2e0a10ebb8b9) (NativeFormatImporter) -> (Import Result ID: 'a5e9cdfaaff3a7a1269b21c0c7b2d41b') in 0.0014307 seconds [static dependencies only]. Details - ImportResultOutputID=c1f9456ff1891ba4b848d16babc3db69 DependenciesID=9bc05a08b20b3d59fde2cdf3d4c6147a StaticDependenciesID=e9dfabe50eb8d22d678b939afd8f5b50 
+Start importing Assets/RestoreData/hero1001_spine_source_raw/paintingprefabandres_1001/Painting_1001_Atlas.asset using Guid(b4254f6596c3641468b9ea240d6dcd15) (NativeFormatImporter) -> (Import Result ID: '2168a7d79706292fff516891f9181ebe') in 0.0013919 seconds [static dependencies only]. Details - ImportResultOutputID=e457c5817e786575da7a5b7be7717edc DependenciesID=1dd18954a494a54e5916058872ae253c StaticDependenciesID=0323852d2c4c14a13576656136b42c4f 
+Painting_1001_Atlas :: Imported with 1 material
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object,UnityEngine.Object)
+UnityEngine.Debug:Log (object,UnityEngine.Object)
+Spine.Unity.Editor.AssetUtility:IngestSpineAtlas (UnityEngine.TextAsset,System.Collections.Generic.List`1<string>) (at Assets/Spine/Editor/spine-unity/Editor/Utility/AssetUtility.cs:618)
+Spine.Unity.Editor.AssetUtility:ImportSpineContent (string[],System.Collections.Generic.List`1<string>,bool) (at Assets/Spine/Editor/spine-unity/Editor/Utility/AssetUtility.cs:329)
+Spine.Unity.Editor.AssetUtility:HandleOnPostprocessAllAssets (string[],System.Collections.Generic.List`1<string>) (at Assets/Spine/Editor/spine-unity/Editor/Utility/AssetUtility.cs:113)
+Spine.Unity.Editor.SpineEditorUtilities:OnPostprocessAllAssets (string[],string[],string[],string[]) (at Assets/Spine/Editor/spine-unity/Editor/Utility/SpineEditorUtilities.cs:98)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.AssetPostprocessingInternal:InvokeMethod (System.Reflection.MethodInfo,object[])
+UnityEditor.AssetPostprocessingInternal:PostprocessAllAssets (string[],string[],string[],string[],string[],bool)
+UnityEditor.AssetDatabase:ImportAsset (string,UnityEditor.ImportAssetOptions)
+GirlsWarRestore.SpineProbeHeroImporter:ImportHero1001 () (at Assets/Editor/GirlsWarSpineProbeHeroImporter.cs:41)
+
+(Filename: Assets/Spine/Editor/spine-unity/Editor/Utility/AssetUtility.cs Line: 618)
+
+Changes to 'Assets/RestoreData/hero1001_spine_source_raw/paintingprefabandres_1001/Painting_1001.skel.bytes' or atlas detected. Clearing SkeletonDataAsset: Assets/RestoreData/hero1001_spine_source_raw/paintingprefabandres_1001/Painting_1001_SkeletonData.asset
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:LogFormat (UnityEngine.LogType,string,object[])
+UnityEngine.Debug:LogFormat (string,object[])
+Spine.Unity.Editor.AssetUtility:ReloadSkeletonData (string,Spine.Unity.SkeletonDataCompatibility/CompatibilityProblemInfo) (at Assets/Spine/Editor/spine-unity/Editor/Utility/AssetUtility.cs:464)
+Spine.Unity.Editor.AssetUtility:ImportSpineContent (string[],System.Collections.Generic.List`1<string>,bool) (at Assets/Spine/Editor/spine-unity/Editor/Utility/AssetUtility.cs:345)
+Spine.Unity.Editor.AssetUtility:HandleOnPostprocessAllAssets (string[],System.Collections.Generic.List`1<string>) (at Assets/Spine/Editor/spine-unity/Editor/Utility/AssetUtility.cs:113)
+Spine.Unity.Editor.SpineEditorUtilities:OnPostprocessAllAssets (string[],string[],string[],string[]) (at Assets/Spine/Editor/spine-unity/Editor/Utility/SpineEditorUtilities.cs:98)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.AssetPostprocessingInternal:InvokeMethod (System.Reflection.MethodInfo,object[])
+UnityEditor.AssetPostprocessingInternal:PostprocessAllAssets (string[],string[],string[],string[],string[],bool)
+UnityEditor.AssetDatabase:ImportAsset (string,UnityEditor.ImportAssetOptions)
+GirlsWarRestore.SpineProbeHeroImporter:ImportHero1001 () (at Assets/Editor/GirlsWarSpineProbeHeroImporter.cs:41)
+
+(Filename: Assets/Spine/Editor/spine-unity/Editor/Utility/AssetUtility.cs Line: 464)
+
+Start importing Assets/RestoreData/hero1001_spine_source_raw/paintingprefabandres_1001/Painting_1001_SkeletonData.asset using Guid(5417802c0f63f87499ead8a7f3fd3b99) (NativeFormatImporter) -> (Import Result ID: 'fc2cd2984e69f6f90d62b06650411e11') in 0.0013855 seconds [static dependencies only]. Details - ImportResultOutputID=8ddf88920c0729a73af370d60c159e7f DependenciesID=4b7233ddf44332373b295a86aa4b7e5e StaticDependenciesID=942509764b510fcb6868fb9139756b68 
+Asset Pipeline Refresh (id=b9f941a2018afbb489ff21dec8dda5a1): Total: 0.099 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/RestoreData/hero1001_spine_source_raw/paintingprefabandres_1001/Painting_1001.skel.bytes using Guid(911cda69ea8244c4da1d14b80686bbbc) (TextScriptImporter) -> (Import Result ID: '29f755cf74aba1a9647bc959cb8cd46d') in 0.001908 seconds [static dependencies only]. Details - ImportResultOutputID=510c740976c1135836a1e9039368788b DependenciesID=16e542d8b46d617056fc8ea03e893013 StaticDependenciesID=c92344ecfc2adfcecfd17d66de736de1 
+Changes to 'Assets/RestoreData/hero1001_spine_source_raw/paintingprefabandres_1001/Painting_1001.skel.bytes' or atlas detected. Clearing SkeletonDataAsset: Assets/RestoreData/hero1001_spine_source_raw/paintingprefabandres_1001/Painting_1001_SkeletonData.asset
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:LogFormat (UnityEngine.LogType,string,object[])
+UnityEngine.Debug:LogFormat (string,object[])
+Spine.Unity.Editor.AssetUtility:ReloadSkeletonData (string,Spine.Unity.SkeletonDataCompatibility/CompatibilityProblemInfo) (at Assets/Spine/Editor/spine-unity/Editor/Utility/AssetUtility.cs:464)
+Spine.Unity.Editor.AssetUtility:ImportSpineContent (string[],System.Collections.Generic.List`1<string>,bool) (at Assets/Spine/Editor/spine-unity/Editor/Utility/AssetUtility.cs:345)
+Spine.Unity.Editor.AssetUtility:HandleOnPostprocessAllAssets (string[],System.Collections.Generic.List`1<string>) (at Assets/Spine/Editor/spine-unity/Editor/Utility/AssetUtility.cs:113)
+Spine.Unity.Editor.SpineEditorUtilities:OnPostprocessAllAssets (string[],string[],string[],string[]) (at Assets/Spine/Editor/spine-unity/Editor/Utility/SpineEditorUtilities.cs:98)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.AssetPostprocessingInternal:InvokeMethod (System.Reflection.MethodInfo,object[])
+UnityEditor.AssetPostprocessingInternal:PostprocessAllAssets (string[],string[],string[],string[],string[],bool)
+UnityEditor.AssetDatabase:ImportAsset (string,UnityEditor.ImportAssetOptions)
+GirlsWarRestore.SpineProbeHeroImporter:ImportHero1001 () (at Assets/Editor/GirlsWarSpineProbeHeroImporter.cs:41)
+
+(Filename: Assets/Spine/Editor/spine-unity/Editor/Utility/AssetUtility.cs Line: 464)
+
+Start importing Assets/RestoreData/hero1001_spine_source_raw/paintingprefabandres_1001/Painting_1001_SkeletonData.asset using Guid(5417802c0f63f87499ead8a7f3fd3b99) (NativeFormatImporter) -> (Import Result ID: 'fc2cd2984e69f6f90d62b06650411e11') in 0.0012874 seconds [static dependencies only]. Details - ImportResultOutputID=8ddf88920c0729a73af370d60c159e7f DependenciesID=4b7233ddf44332373b295a86aa4b7e5e StaticDependenciesID=942509764b510fcb6868fb9139756b68 
+Asset Pipeline Refresh (id=7175b2d7cc9634945b19203ef820767b): Total: 0.058 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/RestoreData/hero1001_spine_source_raw/paintingprefabandres_1001/Painting_1001_Front.png using Guid(ffdd9d73034eb404982310bc51b439d2) (TextureImporter) -> (Import Result ID: '5745d41cccb84cc6f47dae7cf938a204') in 0.0146488 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=2fe77c2bed623345c929ac2df569bb93 DependenciesID=e1ad8cf809fdad27821cdf2eb3fa5530 StaticDependenciesID=e61246f9eaa875fb82f7eb68c4f112e8 
+Asset Pipeline Refresh (id=1f5a6047dfc694e49a99ca48a419c9ab): Total: 0.023 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/RestoreData/hero1001_spine_source_raw/paintingprefabandres_1001/Painting_1001_Front.atlas.txt using Guid(ecdbffae7f22c8644a2c017f4bb4a4b3) (TextScriptImporter) -> (Import Result ID: '694e8f8acd6105cf1b65cd07b740997b') in 0.0014267 seconds [static dependencies only]. Details - ImportResultOutputID=64c2f5e157a7c0a40f5c16d18f6b15a5 DependenciesID=0da24bb051bb72ec3f9c15032ea125b3 StaticDependenciesID=47790d372fc7deab0943d50e5da30411 
+Start importing Assets/RestoreData/hero1001_spine_source_raw/paintingprefabandres_1001/Painting_1001_Front_Material.mat using Guid(7e343e9cd6f32f8409acc14d9ce3aa6c) (NativeFormatImporter) -> (Import Result ID: '50f17c07cb6e012d1ff0f2159af5d09b') in 0.001267 seconds [static dependencies only]. Details - ImportResultOutputID=edb2e928ef9525882ceb3d05576eeca8 DependenciesID=d3e23489b59620309f5063200fa2eaad StaticDependenciesID=42effbba27bc2766518c3821065270f9 
+Start importing Assets/RestoreData/hero1001_spine_source_raw/paintingprefabandres_1001/Painting_1001_Front_Atlas.asset using Guid(c3704504965994e4dad8309180903351) (NativeFormatImporter) -> (Import Result ID: 'dd5dc7a30153ff50288a5dfe5dabd2b8') in 0.0011432 seconds [static dependencies only]. Details - ImportResultOutputID=679366ccfa365f818860ae818ab5b90e DependenciesID=53681a3c2d92c8458f18637c2c24d4c3 StaticDependenciesID=d6e09dcf82340c3df23b05dbde5e971b 
+Painting_1001_Front_Atlas :: Imported with 1 material
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object,UnityEngine.Object)
+UnityEngine.Debug:Log (object,UnityEngine.Object)
+Spine.Unity.Editor.AssetUtility:IngestSpineAtlas (UnityEngine.TextAsset,System.Collections.Generic.List`1<string>) (at Assets/Spine/Editor/spine-unity/Editor/Utility/AssetUtility.cs:618)
+Spine.Unity.Editor.AssetUtility:ImportSpineContent (string[],System.Collections.Generic.List`1<string>,bool) (at Assets/Spine/Editor/spine-unity/Editor/Utility/AssetUtility.cs:329)
+Spine.Unity.Editor.AssetUtility:HandleOnPostprocessAllAssets (string[],System.Collections.Generic.List`1<string>) (at Assets/Spine/Editor/spine-unity/Editor/Utility/AssetUtility.cs:113)
+Spine.Unity.Editor.SpineEditorUtilities:OnPostprocessAllAssets (string[],string[],string[],string[]) (at Assets/Spine/Editor/spine-unity/Editor/Utility/SpineEditorUtilities.cs:98)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.AssetPostprocessingInternal:InvokeMethod (System.Reflection.MethodInfo,object[])
+UnityEditor.AssetPostprocessingInternal:PostprocessAllAssets (string[],string[],string[],string[],string[],bool)
+UnityEditor.AssetDatabase:ImportAsset (string,UnityEditor.ImportAssetOptions)
+GirlsWarRestore.SpineProbeHeroImporter:ImportHero1001 () (at Assets/Editor/GirlsWarSpineProbeHeroImporter.cs:41)
+
+(Filename: Assets/Spine/Editor/spine-unity/Editor/Utility/AssetUtility.cs Line: 618)
+
+Changes to 'Assets/RestoreData/hero1001_spine_source_raw/paintingprefabandres_1001/Painting_1001_Front.skel.bytes' or atlas detected. Clearing SkeletonDataAsset: Assets/RestoreData/hero1001_spine_source_raw/paintingprefabandres_1001/Painting_1001_Front_SkeletonData.asset
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:LogFormat (UnityEngine.LogType,string,object[])
+UnityEngine.Debug:LogFormat (string,object[])
+Spine.Unity.Editor.AssetUtility:ReloadSkeletonData (string,Spine.Unity.SkeletonDataCompatibility/CompatibilityProblemInfo) (at Assets/Spine/Editor/spine-unity/Editor/Utility/AssetUtility.cs:464)
+Spine.Unity.Editor.AssetUtility:ImportSpineContent (string[],System.Collections.Generic.List`1<string>,bool) (at Assets/Spine/Editor/spine-unity/Editor/Utility/AssetUtility.cs:345)
+Spine.Unity.Editor.AssetUtility:HandleOnPostprocessAllAssets (string[],System.Collections.Generic.List`1<string>) (at Assets/Spine/Editor/spine-unity/Editor/Utility/AssetUtility.cs:113)
+Spine.Unity.Editor.SpineEditorUtilities:OnPostprocessAllAssets (string[],string[],string[],string[]) (at Assets/Spine/Editor/spine-unity/Editor/Utility/SpineEditorUtilities.cs:98)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.AssetPostprocessingInternal:InvokeMethod (System.Reflection.MethodInfo,object[])
+UnityEditor.AssetPostprocessingInternal:PostprocessAllAssets (string[],string[],string[],string[],string[],bool)
+UnityEditor.AssetDatabase:ImportAsset (string,UnityEditor.ImportAssetOptions)
+GirlsWarRestore.SpineProbeHeroImporter:ImportHero1001 () (at Assets/Editor/GirlsWarSpineProbeHeroImporter.cs:41)
+
+(Filename: Assets/Spine/Editor/spine-unity/Editor/Utility/AssetUtility.cs Line: 464)
+
+Start importing Assets/RestoreData/hero1001_spine_source_raw/paintingprefabandres_1001/Painting_1001_Front_SkeletonData.asset using Guid(11f1c40b2fbc28045a4325dbc2248893) (NativeFormatImporter) -> (Import Result ID: '5a9b040d009aeeb7c13ddc881cb73b52') in 0.0013533 seconds [static dependencies only]. Details - ImportResultOutputID=1836a852ed3866670cb83cdc9a002f43 DependenciesID=6391ef0fde6116948f1be88900f6a0f7 StaticDependenciesID=8e2e60ef5f2526d8b485ae868fae342b 
+Asset Pipeline Refresh (id=d265e0cd112e2844ab77c54eecd00963): Total: 0.048 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/RestoreData/hero1001_spine_source_raw/paintingprefabandres_1001/Painting_1001_Front.skel.bytes using Guid(d779e4345cb90a6458ad52879e2a7157) (TextScriptImporter) -> (Import Result ID: 'c724bbd3a0031d394e758f89ec6fa3d5') in 0.0014962 seconds [static dependencies only]. Details - ImportResultOutputID=26d438ba7415956c0eec0cfd2d011b24 DependenciesID=d3950352c9f5bf16c4533cd5aa979c53 StaticDependenciesID=c04483ff98ff612f0bf135d866bdcbcf 
+Changes to 'Assets/RestoreData/hero1001_spine_source_raw/paintingprefabandres_1001/Painting_1001_Front.skel.bytes' or atlas detected. Clearing SkeletonDataAsset: Assets/RestoreData/hero1001_spine_source_raw/paintingprefabandres_1001/Painting_1001_Front_SkeletonData.asset
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:LogFormat (UnityEngine.LogType,string,object[])
+UnityEngine.Debug:LogFormat (string,object[])
+Spine.Unity.Editor.AssetUtility:ReloadSkeletonData (string,Spine.Unity.SkeletonDataCompatibility/CompatibilityProblemInfo) (at Assets/Spine/Editor/spine-unity/Editor/Utility/AssetUtility.cs:464)
+Spine.Unity.Editor.AssetUtility:ImportSpineContent (string[],System.Collections.Generic.List`1<string>,bool) (at Assets/Spine/Editor/spine-unity/Editor/Utility/AssetUtility.cs:345)
+Spine.Unity.Editor.AssetUtility:HandleOnPostprocessAllAssets (string[],System.Collections.Generic.List`1<string>) (at Assets/Spine/Editor/spine-unity/Editor/Utility/AssetUtility.cs:113)
+Spine.Unity.Editor.SpineEditorUtilities:OnPostprocessAllAssets (string[],string[],string[],string[]) (at Assets/Spine/Editor/spine-unity/Editor/Utility/SpineEditorUtilities.cs:98)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.AssetPostprocessingInternal:InvokeMethod (System.Reflection.MethodInfo,object[])
+UnityEditor.AssetPostprocessingInternal:PostprocessAllAssets (string[],string[],string[],string[],string[],bool)
+UnityEditor.AssetDatabase:ImportAsset (string,UnityEditor.ImportAssetOptions)
+GirlsWarRestore.SpineProbeHeroImporter:ImportHero1001 () (at Assets/Editor/GirlsWarSpineProbeHeroImporter.cs:41)
+
+(Filename: Assets/Spine/Editor/spine-unity/Editor/Utility/AssetUtility.cs Line: 464)
+
+Start importing Assets/RestoreData/hero1001_spine_source_raw/paintingprefabandres_1001/Painting_1001_Front_SkeletonData.asset using Guid(11f1c40b2fbc28045a4325dbc2248893) (NativeFormatImporter) -> (Import Result ID: '5a9b040d009aeeb7c13ddc881cb73b52') in 0.0014711 seconds [static dependencies only]. Details - ImportResultOutputID=1836a852ed3866670cb83cdc9a002f43 DependenciesID=6391ef0fde6116948f1be88900f6a0f7 StaticDependenciesID=8e2e60ef5f2526d8b485ae868fae342b 
+Asset Pipeline Refresh (id=5714552d881787846a4ad22a043a71de): Total: 0.033 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/RestoreData/hero1001_spine_source_raw/paintingprefabandres_1001/Painting_1001_Back.png using Guid(973daf7d060426d45b870d4143e0162c) (TextureImporter) -> (Import Result ID: '643a31c29d52b6833dd55bc7ba5a9ddf') in 0.0323303 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=d94a04bf56611558948363d5cbbcf126 DependenciesID=d33036262b5ff69f7d01ecc004b2105b StaticDependenciesID=ae2ef470b34b13828ef5da077cdcf4f6 
+Asset Pipeline Refresh (id=8d58153348720bd40a8f3ede4bac75e3): Total: 0.042 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/RestoreData/hero1001_spine_source_raw/paintingprefabandres_1001/Painting_1001_Back.atlas.txt using Guid(f311538b6a2ce704fa671793b420bd08) (TextScriptImporter) -> (Import Result ID: '9919f7552fd472b521c53b5253ec1c1c') in 0.0014758 seconds [static dependencies only]. Details - ImportResultOutputID=49f63b5b8e9978b570d7ba5c146bc76a DependenciesID=01c59c308f80a00c644af4a1ccc5bca3 StaticDependenciesID=106fef39c204c75775499ada37fea898 
+Start importing Assets/RestoreData/hero1001_spine_source_raw/paintingprefabandres_1001/Painting_1001_Back_Material.mat using Guid(7d3334ea120459f4199da645e2b8fa1c) (NativeFormatImporter) -> (Import Result ID: 'c313e96939b428129c5bff3fdc31ecf7') in 0.0018603 seconds [static dependencies only]. Details - ImportResultOutputID=60dde2126f7ffe2b37831cd5e0971b8c DependenciesID=bb8d60282966b3271f47d1519bf9d5a8 StaticDependenciesID=131dc9f5867f2dd0712fbe26cc7e93bf 
+Start importing Assets/RestoreData/hero1001_spine_source_raw/paintingprefabandres_1001/Painting_1001_Back_Atlas.asset using Guid(b16674c321431cc49a4caa4c42f5cfda) (NativeFormatImporter) -> (Import Result ID: 'c3d28a75a6fe9efc126465552aaa6da6') in 0.0012652 seconds [static dependencies only]. Details - ImportResultOutputID=9bb7b63dc4382e0719b2e2fd9b85365b DependenciesID=19a02f2a80739663738ad026b7ebfb32 StaticDependenciesID=c28259df299ec213e89876716d12326b 
+Painting_1001_Back_Atlas :: Imported with 1 material
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object,UnityEngine.Object)
+UnityEngine.Debug:Log (object,UnityEngine.Object)
+Spine.Unity.Editor.AssetUtility:IngestSpineAtlas (UnityEngine.TextAsset,System.Collections.Generic.List`1<string>) (at Assets/Spine/Editor/spine-unity/Editor/Utility/AssetUtility.cs:618)
+Spine.Unity.Editor.AssetUtility:ImportSpineContent (string[],System.Collections.Generic.List`1<string>,bool) (at Assets/Spine/Editor/spine-unity/Editor/Utility/AssetUtility.cs:329)
+Spine.Unity.Editor.AssetUtility:HandleOnPostprocessAllAssets (string[],System.Collections.Generic.List`1<string>) (at Assets/Spine/Editor/spine-unity/Editor/Utility/AssetUtility.cs:113)
+Spine.Unity.Editor.SpineEditorUtilities:OnPostprocessAllAssets (string[],string[],string[],string[]) (at Assets/Spine/Editor/spine-unity/Editor/Utility/SpineEditorUtilities.cs:98)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.AssetPostprocessingInternal:InvokeMethod (System.Reflection.MethodInfo,object[])
+UnityEditor.AssetPostprocessingInternal:PostprocessAllAssets (string[],string[],string[],string[],string[],bool)
+UnityEditor.AssetDatabase:ImportAsset (string,UnityEditor.ImportAssetOptions)
+GirlsWarRestore.SpineProbeHeroImporter:ImportHero1001 () (at Assets/Editor/GirlsWarSpineProbeHeroImporter.cs:41)
+
+(Filename: Assets/Spine/Editor/spine-unity/Editor/Utility/AssetUtility.cs Line: 618)
+
+Changes to 'Assets/RestoreData/hero1001_spine_source_raw/paintingprefabandres_1001/Painting_1001_Back.skel.bytes' or atlas detected. Clearing SkeletonDataAsset: Assets/RestoreData/hero1001_spine_source_raw/paintingprefabandres_1001/Painting_1001_Back_SkeletonData.asset
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:LogFormat (UnityEngine.LogType,string,object[])
+UnityEngine.Debug:LogFormat (string,object[])
+Spine.Unity.Editor.AssetUtility:ReloadSkeletonData (string,Spine.Unity.SkeletonDataCompatibility/CompatibilityProblemInfo) (at Assets/Spine/Editor/spine-unity/Editor/Utility/AssetUtility.cs:464)
+Spine.Unity.Editor.AssetUtility:ImportSpineContent (string[],System.Collections.Generic.List`1<string>,bool) (at Assets/Spine/Editor/spine-unity/Editor/Utility/AssetUtility.cs:345)
+Spine.Unity.Editor.AssetUtility:HandleOnPostprocessAllAssets (string[],System.Collections.Generic.List`1<string>) (at Assets/Spine/Editor/spine-unity/Editor/Utility/AssetUtility.cs:113)
+Spine.Unity.Editor.SpineEditorUtilities:OnPostprocessAllAssets (string[],string[],string[],string[]) (at Assets/Spine/Editor/spine-unity/Editor/Utility/SpineEditorUtilities.cs:98)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.AssetPostprocessingInternal:InvokeMethod (System.Reflection.MethodInfo,object[])
+UnityEditor.AssetPostprocessingInternal:PostprocessAllAssets (string[],string[],string[],string[],string[],bool)
+UnityEditor.AssetDatabase:ImportAsset (string,UnityEditor.ImportAssetOptions)
+GirlsWarRestore.SpineProbeHeroImporter:ImportHero1001 () (at Assets/Editor/GirlsWarSpineProbeHeroImporter.cs:41)
+
+(Filename: Assets/Spine/Editor/spine-unity/Editor/Utility/AssetUtility.cs Line: 464)
+
+Start importing Assets/RestoreData/hero1001_spine_source_raw/paintingprefabandres_1001/Painting_1001_Back_SkeletonData.asset using Guid(fc236e160737f364193d3d8ddaed9643) (NativeFormatImporter) -> (Import Result ID: 'c760699e16505ac7de7eb3c0306010e1') in 0.0014885 seconds [static dependencies only]. Details - ImportResultOutputID=2cc8ee3a1cea28c00725ccfc0960c9f7 DependenciesID=f964b604dccf7e56682e2a92cbe22071 StaticDependenciesID=d94b40e004728d446dadeb999a361885 
+Asset Pipeline Refresh (id=e42c1aa04adae8143a786b4f148d37e3): Total: 0.052 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/RestoreData/hero1001_spine_source_raw/paintingprefabandres_1001/Painting_1001_Back.skel.bytes using Guid(c80dee5727a4e9d459b1583d95401083) (TextScriptImporter) -> (Import Result ID: '0f08ff3e96054c657b7b23304c9c3d85') in 0.0013557 seconds [static dependencies only]. Details - ImportResultOutputID=2d59436eb5eb88d7aa317bd6d3d6d0f4 DependenciesID=abce2aa0776d9631b2e46af3024aab53 StaticDependenciesID=79553885ed855fe0448f08344b292381 
+Changes to 'Assets/RestoreData/hero1001_spine_source_raw/paintingprefabandres_1001/Painting_1001_Back.skel.bytes' or atlas detected. Clearing SkeletonDataAsset: Assets/RestoreData/hero1001_spine_source_raw/paintingprefabandres_1001/Painting_1001_Back_SkeletonData.asset
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:LogFormat (UnityEngine.LogType,string,object[])
+UnityEngine.Debug:LogFormat (string,object[])
+Spine.Unity.Editor.AssetUtility:ReloadSkeletonData (string,Spine.Unity.SkeletonDataCompatibility/CompatibilityProblemInfo) (at Assets/Spine/Editor/spine-unity/Editor/Utility/AssetUtility.cs:464)
+Spine.Unity.Editor.AssetUtility:ImportSpineContent (string[],System.Collections.Generic.List`1<string>,bool) (at Assets/Spine/Editor/spine-unity/Editor/Utility/AssetUtility.cs:345)
+Spine.Unity.Editor.AssetUtility:HandleOnPostprocessAllAssets (string[],System.Collections.Generic.List`1<string>) (at Assets/Spine/Editor/spine-unity/Editor/Utility/AssetUtility.cs:113)
+Spine.Unity.Editor.SpineEditorUtilities:OnPostprocessAllAssets (string[],string[],string[],string[]) (at Assets/Spine/Editor/spine-unity/Editor/Utility/SpineEditorUtilities.cs:98)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.AssetPostprocessingInternal:InvokeMethod (System.Reflection.MethodInfo,object[])
+UnityEditor.AssetPostprocessingInternal:PostprocessAllAssets (string[],string[],string[],string[],string[],bool)
+UnityEditor.AssetDatabase:ImportAsset (string,UnityEditor.ImportAssetOptions)
+GirlsWarRestore.SpineProbeHeroImporter:ImportHero1001 () (at Assets/Editor/GirlsWarSpineProbeHeroImporter.cs:41)
+
+(Filename: Assets/Spine/Editor/spine-unity/Editor/Utility/AssetUtility.cs Line: 464)
+
+Start importing Assets/RestoreData/hero1001_spine_source_raw/paintingprefabandres_1001/Painting_1001_Back_SkeletonData.asset using Guid(fc236e160737f364193d3d8ddaed9643) (NativeFormatImporter) -> (Import Result ID: 'c760699e16505ac7de7eb3c0306010e1') in 0.0014391 seconds [static dependencies only]. Details - ImportResultOutputID=2cc8ee3a1cea28c00725ccfc0960c9f7 DependenciesID=f964b604dccf7e56682e2a92cbe22071 StaticDependenciesID=d94b40e004728d446dadeb999a361885 
+Asset Pipeline Refresh (id=1f9691ccae3302c43a9c4325d1ee313c): Total: 0.032 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/RestoreData/hero1001_spine_source_raw/paintingprefabandres_1001/SP_heroname_1001.png using Guid(c5d226d78a398e342afa19fcc4e30546) (TextureImporter) -> (Import Result ID: '2ccb3a7fc9372af9e6127b23263ec5be') in 0.0043138 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=5f49c2eb2b518e154e274c81f5151f9b DependenciesID=06b27f97deb979a52014830efd78fbc4 StaticDependenciesID=e9eccbef22d656732e0081235eb78799 
+Asset Pipeline Refresh (id=3b1b9fd0042a4234c99f8048cbbbcbda): Total: 0.014 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/RestoreData/hero1001_spine_source_raw/paintingprefabandres_1001/SP_heroname_1001.atlas.txt using Guid(f9bc9aca2c5b416458217a3119fc926b) (TextScriptImporter) -> (Import Result ID: '5d71d12eb00dbd9a3e020c6b659f91aa') in 0.0015061 seconds [static dependencies only]. Details - ImportResultOutputID=c911ef3822ec049f87fcc84faf447951 DependenciesID=a3baef3acd55943cb6237ddf30f57b11 StaticDependenciesID=d615850ebe0bf52ef57a4d77943c6a1e 
+Start importing Assets/RestoreData/hero1001_spine_source_raw/paintingprefabandres_1001/SP_heroname_1001_Material.mat using Guid(c622d86d8b5546d48aed5ed56a848e12) (NativeFormatImporter) -> (Import Result ID: '88cf5101632d8741feaedfb86201ae29') in 0.0014379 seconds [static dependencies only]. Details - ImportResultOutputID=0a10827a242690684ca8c96b03c1ac15 DependenciesID=80a7387af7e3403691b2cfd5b3683267 StaticDependenciesID=d6d85166922c77ed61ab35fd58c535d0 
+Start importing Assets/RestoreData/hero1001_spine_source_raw/paintingprefabandres_1001/SP_heroname_1001_Atlas.asset using Guid(c739a4d8693234e4cafaebe357e01fae) (NativeFormatImporter) -> (Import Result ID: 'ef34aa67ed9dd6c7bcb335e0327ca78d') in 0.001275 seconds [static dependencies only]. Details - ImportResultOutputID=24deb2c82e01782283327717b054270d DependenciesID=a139421cbe061c53b4a7ee9c3600f01e StaticDependenciesID=d056317eba80dbe62060042c08f81c65 
+SP_heroname_1001_Atlas :: Imported with 1 material
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object,UnityEngine.Object)
+UnityEngine.Debug:Log (object,UnityEngine.Object)
+Spine.Unity.Editor.AssetUtility:IngestSpineAtlas (UnityEngine.TextAsset,System.Collections.Generic.List`1<string>) (at Assets/Spine/Editor/spine-unity/Editor/Utility/AssetUtility.cs:618)
+Spine.Unity.Editor.AssetUtility:ImportSpineContent (string[],System.Collections.Generic.List`1<string>,bool) (at Assets/Spine/Editor/spine-unity/Editor/Utility/AssetUtility.cs:329)
+Spine.Unity.Editor.AssetUtility:HandleOnPostprocessAllAssets (string[],System.Collections.Generic.List`1<string>) (at Assets/Spine/Editor/spine-unity/Editor/Utility/AssetUtility.cs:113)
+Spine.Unity.Editor.SpineEditorUtilities:OnPostprocessAllAssets (string[],string[],string[],string[]) (at Assets/Spine/Editor/spine-unity/Editor/Utility/SpineEditorUtilities.cs:98)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.AssetPostprocessingInternal:InvokeMethod (System.Reflection.MethodInfo,object[])
+UnityEditor.AssetPostprocessingInternal:PostprocessAllAssets (string[],string[],string[],string[],string[],bool)
+UnityEditor.AssetDatabase:ImportAsset (string,UnityEditor.ImportAssetOptions)
+GirlsWarRestore.SpineProbeHeroImporter:ImportHero1001 () (at Assets/Editor/GirlsWarSpineProbeHeroImporter.cs:41)
+
+(Filename: Assets/Spine/Editor/spine-unity/Editor/Utility/AssetUtility.cs Line: 618)
+
+Changes to 'Assets/RestoreData/hero1001_spine_source_raw/paintingprefabandres_1001/SP_heroname_1001.skel.bytes' or atlas detected. Clearing SkeletonDataAsset: Assets/RestoreData/hero1001_spine_source_raw/paintingprefabandres_1001/SP_heroname_1001_SkeletonData.asset
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:LogFormat (UnityEngine.LogType,string,object[])
+UnityEngine.Debug:LogFormat (string,object[])
+Spine.Unity.Editor.AssetUtility:ReloadSkeletonData (string,Spine.Unity.SkeletonDataCompatibility/CompatibilityProblemInfo) (at Assets/Spine/Editor/spine-unity/Editor/Utility/AssetUtility.cs:464)
+Spine.Unity.Editor.AssetUtility:ImportSpineContent (string[],System.Collections.Generic.List`1<string>,bool) (at Assets/Spine/Editor/spine-unity/Editor/Utility/AssetUtility.cs:345)
+Spine.Unity.Editor.AssetUtility:HandleOnPostprocessAllAssets (string[],System.Collections.Generic.List`1<string>) (at Assets/Spine/Editor/spine-unity/Editor/Utility/AssetUtility.cs:113)
+Spine.Unity.Editor.SpineEditorUtilities:OnPostprocessAllAssets (string[],string[],string[],string[]) (at Assets/Spine/Editor/spine-unity/Editor/Utility/SpineEditorUtilities.cs:98)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.AssetPostprocessingInternal:InvokeMethod (System.Reflection.MethodInfo,object[])
+UnityEditor.AssetPostprocessingInternal:PostprocessAllAssets (string[],string[],string[],string[],string[],bool)
+UnityEditor.AssetDatabase:ImportAsset (string,UnityEditor.ImportAssetOptions)
+GirlsWarRestore.SpineProbeHeroImporter:ImportHero1001 () (at Assets/Editor/GirlsWarSpineProbeHeroImporter.cs:41)
+
+(Filename: Assets/Spine/Editor/spine-unity/Editor/Utility/AssetUtility.cs Line: 464)
+
+Start importing Assets/RestoreData/hero1001_spine_source_raw/paintingprefabandres_1001/SP_heroname_1001_SkeletonData.asset using Guid(2b2b16d1db6dcb048bc90723aa51e656) (NativeFormatImporter) -> (Import Result ID: '9dd335cd8c179a060353df84a72758a2') in 0.0013697 seconds [static dependencies only]. Details - ImportResultOutputID=61e50607eaf57d6ce4e7b94ec5392df9 DependenciesID=ee9ad402bc2ae0c89cd4b3989e2a2a88 StaticDependenciesID=dcaef4b1a64dc8c4c439da7c2d38f37e 
+Asset Pipeline Refresh (id=fbbe777ede128f347aaab0292ac6a4a6): Total: 0.047 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/RestoreData/hero1001_spine_source_raw/paintingprefabandres_1001/SP_heroname_1001.skel.bytes using Guid(6f3ecae842eea384da748d9af30dbb1a) (TextScriptImporter) -> (Import Result ID: 'c79ce13a9ea10ca7cd6b4e84c90f2da3') in 0.0014445 seconds [static dependencies only]. Details - ImportResultOutputID=18fa323d196ab9cb2da4c758694e4cb2 DependenciesID=86e373d28651d0f6adb1334ccce7c73e StaticDependenciesID=88c22f5e7dfaf73e957d2ccb83bff157 
+Changes to 'Assets/RestoreData/hero1001_spine_source_raw/paintingprefabandres_1001/SP_heroname_1001.skel.bytes' or atlas detected. Clearing SkeletonDataAsset: Assets/RestoreData/hero1001_spine_source_raw/paintingprefabandres_1001/SP_heroname_1001_SkeletonData.asset
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:LogFormat (UnityEngine.LogType,string,object[])
+UnityEngine.Debug:LogFormat (string,object[])
+Spine.Unity.Editor.AssetUtility:ReloadSkeletonData (string,Spine.Unity.SkeletonDataCompatibility/CompatibilityProblemInfo) (at Assets/Spine/Editor/spine-unity/Editor/Utility/AssetUtility.cs:464)
+Spine.Unity.Editor.AssetUtility:ImportSpineContent (string[],System.Collections.Generic.List`1<string>,bool) (at Assets/Spine/Editor/spine-unity/Editor/Utility/AssetUtility.cs:345)
+Spine.Unity.Editor.AssetUtility:HandleOnPostprocessAllAssets (string[],System.Collections.Generic.List`1<string>) (at Assets/Spine/Editor/spine-unity/Editor/Utility/AssetUtility.cs:113)
+Spine.Unity.Editor.SpineEditorUtilities:OnPostprocessAllAssets (string[],string[],string[],string[]) (at Assets/Spine/Editor/spine-unity/Editor/Utility/SpineEditorUtilities.cs:98)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.AssetPostprocessingInternal:InvokeMethod (System.Reflection.MethodInfo,object[])
+UnityEditor.AssetPostprocessingInternal:PostprocessAllAssets (string[],string[],string[],string[],string[],bool)
+UnityEditor.AssetDatabase:ImportAsset (string,UnityEditor.ImportAssetOptions)
+GirlsWarRestore.SpineProbeHeroImporter:ImportHero1001 () (at Assets/Editor/GirlsWarSpineProbeHeroImporter.cs:41)
+
+(Filename: Assets/Spine/Editor/spine-unity/Editor/Utility/AssetUtility.cs Line: 464)
+
+Start importing Assets/RestoreData/hero1001_spine_source_raw/paintingprefabandres_1001/SP_heroname_1001_SkeletonData.asset using Guid(2b2b16d1db6dcb048bc90723aa51e656) (NativeFormatImporter) -> (Import Result ID: '9dd335cd8c179a060353df84a72758a2') in 0.0014628 seconds [static dependencies only]. Details - ImportResultOutputID=61e50607eaf57d6ce4e7b94ec5392df9 DependenciesID=ee9ad402bc2ae0c89cd4b3989e2a2a88 StaticDependenciesID=dcaef4b1a64dc8c4c439da7c2d38f37e 
+Asset Pipeline Refresh (id=056ec86bec28932459808fe33af25673): Total: 0.029 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/RestoreData/hero1001_spine_source_raw/paintingprefabandres_1001/Painting_1001_Material.mat using Guid(0b331b05045febd419cb2e0a10ebb8b9) (NativeFormatImporter) -> (Import Result ID: 'a5e9cdfaaff3a7a1269b21c0c7b2d41b') in 0.0014115 seconds [static dependencies only]. Details - ImportResultOutputID=c1f9456ff1891ba4b848d16babc3db69 DependenciesID=9bc05a08b20b3d59fde2cdf3d4c6147a StaticDependenciesID=e9dfabe50eb8d22d678b939afd8f5b50 
+Start importing Assets/RestoreData/hero1001_spine_source_raw/paintingprefabandres_1001/Painting_1001_Atlas.asset using Guid(b4254f6596c3641468b9ea240d6dcd15) (NativeFormatImporter) -> (Import Result ID: '2168a7d79706292fff516891f9181ebe') in 0.0012233 seconds [static dependencies only]. Details - ImportResultOutputID=e457c5817e786575da7a5b7be7717edc DependenciesID=1dd18954a494a54e5916058872ae253c StaticDependenciesID=0323852d2c4c14a13576656136b42c4f 
+Asset Pipeline Refresh (id=11ae5a091f4702748b4604d3ce44ed5a): Total: 0.010 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Painting_1001_Atlas :: Imported with 1 material
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object,UnityEngine.Object)
+UnityEngine.Debug:Log (object,UnityEngine.Object)
+Spine.Unity.Editor.AssetUtility:IngestSpineAtlas (UnityEngine.TextAsset,System.Collections.Generic.List`1<string>) (at Assets/Spine/Editor/spine-unity/Editor/Utility/AssetUtility.cs:618)
+Spine.Unity.Editor.AssetUtility:ImportSpineContent (string[],System.Collections.Generic.List`1<string>,bool) (at Assets/Spine/Editor/spine-unity/Editor/Utility/AssetUtility.cs:329)
+GirlsWarRestore.SpineProbeHeroImporter:ImportHero1001 () (at Assets/Editor/GirlsWarSpineProbeHeroImporter.cs:44)
+
+(Filename: Assets/Spine/Editor/spine-unity/Editor/Utility/AssetUtility.cs Line: 618)
+
+Start importing Assets/RestoreData/hero1001_spine_source_raw/paintingprefabandres_1001/Painting_1001_Front_Material.mat using Guid(7e343e9cd6f32f8409acc14d9ce3aa6c) (NativeFormatImporter) -> (Import Result ID: '50f17c07cb6e012d1ff0f2159af5d09b') in 0.0015519 seconds [static dependencies only]. Details - ImportResultOutputID=edb2e928ef9525882ceb3d05576eeca8 DependenciesID=d3e23489b59620309f5063200fa2eaad StaticDependenciesID=42effbba27bc2766518c3821065270f9 
+Start importing Assets/RestoreData/hero1001_spine_source_raw/paintingprefabandres_1001/Painting_1001_Front_Atlas.asset using Guid(c3704504965994e4dad8309180903351) (NativeFormatImporter) -> (Import Result ID: 'dd5dc7a30153ff50288a5dfe5dabd2b8') in 0.0012787 seconds [static dependencies only]. Details - ImportResultOutputID=679366ccfa365f818860ae818ab5b90e DependenciesID=53681a3c2d92c8458f18637c2c24d4c3 StaticDependenciesID=d6e09dcf82340c3df23b05dbde5e971b 
+Asset Pipeline Refresh (id=4ebff20f05744084b9f177ccab7e1022): Total: 0.012 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Painting_1001_Front_Atlas :: Imported with 1 material
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object,UnityEngine.Object)
+UnityEngine.Debug:Log (object,UnityEngine.Object)
+Spine.Unity.Editor.AssetUtility:IngestSpineAtlas (UnityEngine.TextAsset,System.Collections.Generic.List`1<string>) (at Assets/Spine/Editor/spine-unity/Editor/Utility/AssetUtility.cs:618)
+Spine.Unity.Editor.AssetUtility:ImportSpineContent (string[],System.Collections.Generic.List`1<string>,bool) (at Assets/Spine/Editor/spine-unity/Editor/Utility/AssetUtility.cs:329)
+GirlsWarRestore.SpineProbeHeroImporter:ImportHero1001 () (at Assets/Editor/GirlsWarSpineProbeHeroImporter.cs:44)
+
+(Filename: Assets/Spine/Editor/spine-unity/Editor/Utility/AssetUtility.cs Line: 618)
+
+Start importing Assets/RestoreData/hero1001_spine_source_raw/paintingprefabandres_1001/Painting_1001_Back_Material.mat using Guid(7d3334ea120459f4199da645e2b8fa1c) (NativeFormatImporter) -> (Import Result ID: 'c313e96939b428129c5bff3fdc31ecf7') in 0.004312 seconds [static dependencies only]. Details - ImportResultOutputID=60dde2126f7ffe2b37831cd5e0971b8c DependenciesID=bb8d60282966b3271f47d1519bf9d5a8 StaticDependenciesID=131dc9f5867f2dd0712fbe26cc7e93bf 
+Start importing Assets/RestoreData/hero1001_spine_source_raw/paintingprefabandres_1001/Painting_1001_Back_Atlas.asset using Guid(b16674c321431cc49a4caa4c42f5cfda) (NativeFormatImporter) -> (Import Result ID: 'c3d28a75a6fe9efc126465552aaa6da6') in 0.0012716 seconds [static dependencies only]. Details - ImportResultOutputID=9bb7b63dc4382e0719b2e2fd9b85365b DependenciesID=19a02f2a80739663738ad026b7ebfb32 StaticDependenciesID=c28259df299ec213e89876716d12326b 
+Asset Pipeline Refresh (id=96169a4072d95e344a65d7cd81e81480): Total: 0.013 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Painting_1001_Back_Atlas :: Imported with 1 material
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object,UnityEngine.Object)
+UnityEngine.Debug:Log (object,UnityEngine.Object)
+Spine.Unity.Editor.AssetUtility:IngestSpineAtlas (UnityEngine.TextAsset,System.Collections.Generic.List`1<string>) (at Assets/Spine/Editor/spine-unity/Editor/Utility/AssetUtility.cs:618)
+Spine.Unity.Editor.AssetUtility:ImportSpineContent (string[],System.Collections.Generic.List`1<string>,bool) (at Assets/Spine/Editor/spine-unity/Editor/Utility/AssetUtility.cs:329)
+GirlsWarRestore.SpineProbeHeroImporter:ImportHero1001 () (at Assets/Editor/GirlsWarSpineProbeHeroImporter.cs:44)
+
+(Filename: Assets/Spine/Editor/spine-unity/Editor/Utility/AssetUtility.cs Line: 618)
+
+Start importing Assets/RestoreData/hero1001_spine_source_raw/paintingprefabandres_1001/SP_heroname_1001_Material.mat using Guid(c622d86d8b5546d48aed5ed56a848e12) (NativeFormatImporter) -> (Import Result ID: '88cf5101632d8741feaedfb86201ae29') in 0.0013055 seconds [static dependencies only]. Details - ImportResultOutputID=0a10827a242690684ca8c96b03c1ac15 DependenciesID=80a7387af7e3403691b2cfd5b3683267 StaticDependenciesID=d6d85166922c77ed61ab35fd58c535d0 
+Start importing Assets/RestoreData/hero1001_spine_source_raw/paintingprefabandres_1001/SP_heroname_1001_Atlas.asset using Guid(c739a4d8693234e4cafaebe357e01fae) (NativeFormatImporter) -> (Import Result ID: 'ef34aa67ed9dd6c7bcb335e0327ca78d') in 0.0010942 seconds [static dependencies only]. Details - ImportResultOutputID=24deb2c82e01782283327717b054270d DependenciesID=a139421cbe061c53b4a7ee9c3600f01e StaticDependenciesID=d056317eba80dbe62060042c08f81c65 
+Asset Pipeline Refresh (id=da945eec856ab0b4e8f693ecdc7a2e4d): Total: 0.010 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+SP_heroname_1001_Atlas :: Imported with 1 material
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object,UnityEngine.Object)
+UnityEngine.Debug:Log (object,UnityEngine.Object)
+Spine.Unity.Editor.AssetUtility:IngestSpineAtlas (UnityEngine.TextAsset,System.Collections.Generic.List`1<string>) (at Assets/Spine/Editor/spine-unity/Editor/Utility/AssetUtility.cs:618)
+Spine.Unity.Editor.AssetUtility:ImportSpineContent (string[],System.Collections.Generic.List`1<string>,bool) (at Assets/Spine/Editor/spine-unity/Editor/Utility/AssetUtility.cs:329)
+GirlsWarRestore.SpineProbeHeroImporter:ImportHero1001 () (at Assets/Editor/GirlsWarSpineProbeHeroImporter.cs:44)
+
+(Filename: Assets/Spine/Editor/spine-unity/Editor/Utility/AssetUtility.cs Line: 618)
+
+Start importing Assets/RestoreData/hero1001_spine_source_raw/paintingprefabandres_1001/Painting_1001_SkeletonData.asset using Guid(5417802c0f63f87499ead8a7f3fd3b99) (NativeFormatImporter) -> (Import Result ID: 'fc2cd2984e69f6f90d62b06650411e11') in 0.0015713 seconds [static dependencies only]. Details - ImportResultOutputID=8ddf88920c0729a73af370d60c159e7f DependenciesID=4b7233ddf44332373b295a86aa4b7e5e StaticDependenciesID=942509764b510fcb6868fb9139756b68 
+Asset Pipeline Refresh (id=660548db9b275114a952c9a4b5a98ff7): Total: 0.010 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/RestoreData/hero1001_spine_source_raw/paintingprefabandres_1001/Painting_1001_Front_SkeletonData.asset using Guid(11f1c40b2fbc28045a4325dbc2248893) (NativeFormatImporter) -> (Import Result ID: '5a9b040d009aeeb7c13ddc881cb73b52') in 0.0015042 seconds [static dependencies only]. Details - ImportResultOutputID=1836a852ed3866670cb83cdc9a002f43 DependenciesID=6391ef0fde6116948f1be88900f6a0f7 StaticDependenciesID=8e2e60ef5f2526d8b485ae868fae342b 
+Asset Pipeline Refresh (id=f6e6a0aab9552c94b9ebe13d4313715c): Total: 0.011 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/RestoreData/hero1001_spine_source_raw/paintingprefabandres_1001/Painting_1001_Back_SkeletonData.asset using Guid(fc236e160737f364193d3d8ddaed9643) (NativeFormatImporter) -> (Import Result ID: 'c760699e16505ac7de7eb3c0306010e1') in 0.0015878 seconds [static dependencies only]. Details - ImportResultOutputID=2cc8ee3a1cea28c00725ccfc0960c9f7 DependenciesID=f964b604dccf7e56682e2a92cbe22071 StaticDependenciesID=d94b40e004728d446dadeb999a361885 
+Asset Pipeline Refresh (id=56d7afc8fd5b21b498c1de80c10b8f11): Total: 0.010 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/RestoreData/hero1001_spine_source_raw/paintingprefabandres_1001/SP_heroname_1001_SkeletonData.asset using Guid(2b2b16d1db6dcb048bc90723aa51e656) (NativeFormatImporter) -> (Import Result ID: '9dd335cd8c179a060353df84a72758a2') in 0.0017701 seconds [static dependencies only]. Details - ImportResultOutputID=61e50607eaf57d6ce4e7b94ec5392df9 DependenciesID=ee9ad402bc2ae0c89cd4b3989e2a2a88 StaticDependenciesID=dcaef4b1a64dc8c4c439da7c2d38f37e 
+Asset Pipeline Refresh (id=3a8411655da275046b5e1dfa6f9937c8): Total: 0.010 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Asset Pipeline Refresh (id=c5d05c7a5d078f84a8dad0ca12715ee9): Total: 0.009 seconds - Initiated by RefreshV2(NoUpdateAssetOptions)
+[GirlsWarRestore][SpineProbe] SkeletonData OK path=Assets/RestoreData/hero1001_spine_source_raw/paintingprefabandres_1001/Painting_1001_SkeletonData.asset bones=326 slots=146 skins=1 animations=4
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GirlsWarRestore.SpineProbeHeroImporter:ValidateSkeletonDataAsset (string) (at Assets/Editor/GirlsWarSpineProbeHeroImporter.cs:66)
+GirlsWarRestore.SpineProbeHeroImporter:ImportHero1001 () (at Assets/Editor/GirlsWarSpineProbeHeroImporter.cs:49)
+
+(Filename: Assets/Editor/GirlsWarSpineProbeHeroImporter.cs Line: 66)
+
+[GirlsWarRestore][SpineProbe] SkeletonData OK path=Assets/RestoreData/hero1001_spine_source_raw/paintingprefabandres_1001/Painting_1001_Front_SkeletonData.asset bones=39 slots=4 skins=1 animations=4
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GirlsWarRestore.SpineProbeHeroImporter:ValidateSkeletonDataAsset (string) (at Assets/Editor/GirlsWarSpineProbeHeroImporter.cs:66)
+GirlsWarRestore.SpineProbeHeroImporter:ImportHero1001 () (at Assets/Editor/GirlsWarSpineProbeHeroImporter.cs:49)
+
+(Filename: Assets/Editor/GirlsWarSpineProbeHeroImporter.cs Line: 66)
+
+[GirlsWarRestore][SpineProbe] SkeletonData OK path=Assets/RestoreData/hero1001_spine_source_raw/paintingprefabandres_1001/Painting_1001_Back_SkeletonData.asset bones=32 slots=3 skins=1 animations=4
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GirlsWarRestore.SpineProbeHeroImporter:ValidateSkeletonDataAsset (string) (at Assets/Editor/GirlsWarSpineProbeHeroImporter.cs:66)
+GirlsWarRestore.SpineProbeHeroImporter:ImportHero1001 () (at Assets/Editor/GirlsWarSpineProbeHeroImporter.cs:49)
+
+(Filename: Assets/Editor/GirlsWarSpineProbeHeroImporter.cs Line: 66)
+
+[GirlsWarRestore][SpineProbe] SkeletonData OK path=Assets/RestoreData/hero1001_spine_source_raw/paintingprefabandres_1001/SP_heroname_1001_SkeletonData.asset bones=5 slots=6 skins=1 animations=2
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GirlsWarRestore.SpineProbeHeroImporter:ValidateSkeletonDataAsset (string) (at Assets/Editor/GirlsWarSpineProbeHeroImporter.cs:66)
+GirlsWarRestore.SpineProbeHeroImporter:ImportHero1001 () (at Assets/Editor/GirlsWarSpineProbeHeroImporter.cs:49)
+
+(Filename: Assets/Editor/GirlsWarSpineProbeHeroImporter.cs Line: 66)
+
+[GirlsWarRestore][SpineProbe] ImportHero1001 complete
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GirlsWarRestore.SpineProbeHeroImporter:ImportHero1001 () (at Assets/Editor/GirlsWarSpineProbeHeroImporter.cs:52)
+
+(Filename: Assets/Editor/GirlsWarSpineProbeHeroImporter.cs Line: 52)
+
+Batchmode quit successfully invoked - shutting down!
+[Physics::Module] Cleanup current backend.
+[Physics::Module] Id: 0xf2b8ea05
+Input System module state changed to: ShutdownInProgress.
+Input Polling Thread exited.
+Input System module state changed to: Shutdown.
+[Licensing::IpcConnector] LicenseClient-godho-notifications channel disconnected successfully.
+[Licensing::IpcConnector] LicenseClient-godho channel disconnected successfully.
+AcceleratorClientConnectionCallback - disconnected - :0
+Cleanup mono
+CodeReloadManager destroyed
+Exiting batchmode successfully now!
+Exiting without the bug reporter. Application will terminate with return code 0

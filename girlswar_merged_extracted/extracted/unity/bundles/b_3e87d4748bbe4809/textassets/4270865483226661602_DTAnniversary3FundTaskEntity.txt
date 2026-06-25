@@ -1,0 +1,30 @@
+local t={id=0,type=0,limtTime_1={},awardexp=0,jump=0,name="",stage=0}
+t.__index=t
+function t.New(o,h,a,s,r,n,i)
+local e={}
+setmetatable(e,t)
+e.id=o
+e.type=h
+e.limtTime_1=a
+e.awardexp=s
+e.jump=r
+e.name=n
+e.stage=i
+return e
+end
+function t.NewFromArrItem(a)
+local e={}
+setmetatable(e,t)
+e.id=a[1]
+e.type=a[2]
+e.limtTime_1=a[3]
+e.awardexp=a[4]
+e.jump=a[5]
+e.name=a[6]
+e.stage=a[7]
+return e
+end
+function t.GetArr()
+return require('DataNode/DataTable/Create/activity/DTAnniversary3FundTaskEntityTableData')
+end
+return t 

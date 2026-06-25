@@ -1,0 +1,10 @@
+
+?
+ActZiLong.proto"
+PRT_ACT_ZILONG_INFO_REQ"2
+PRT_ACT_ZILONG_INFO_RESP
+isDraw (RisDraw"
+PRT_ACT_ZILONG_AWARD_REQ"3
+PRT_ACT_ZILONG_AWARD_RESP
+isDraw (RisDrawB
+com.next1b.nextsvr.protobproto3

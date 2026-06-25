@@ -1,0 +1,6 @@
+1063_1.png
+size:1024,1024
+filter:Linear,Linear
+scale:0.25
+静御前
+bounds:0,0,755,908

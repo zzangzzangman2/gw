@@ -1,0 +1,14 @@
+local e=
+{
+ByIdx={
+{1,{0,8501102,0,0,0,0},8501102,"Assets/Download/UI/UIPrefabAndRes/ActDailyBoss_Ext_1/actDailyBossBg_1035.png","Assets/Download/UI/UIPrefabAndRes/ActDailyBoss_Ext_1/actDailyBossTitle_1035.png"},
+{2,{0,8501202,0,0,0,0},8501102,"Assets/Download/UI/UIPrefabAndRes/ActDailyBoss_Ext_1/actDailyBossBg_1035.png","Assets/Download/UI/UIPrefabAndRes/ActDailyBoss_Ext_1/actDailyBossTitle_1035.png"},
+{3,{0,8501302,0,0,0,0},8501102,"Assets/Download/UI/UIPrefabAndRes/ActDailyBoss_Ext_1/actDailyBossBg_1035.png","Assets/Download/UI/UIPrefabAndRes/ActDailyBoss_Ext_1/actDailyBossTitle_1035.png"},
+{4,{0,8501402,0,0,0,0},8501102,"Assets/Download/UI/UIPrefabAndRes/ActDailyBoss_Ext_1/actDailyBossBg_1035.png","Assets/Download/UI/UIPrefabAndRes/ActDailyBoss_Ext_1/actDailyBossTitle_1035.png"},
+{5,{0,8501502,0,0,0,0},8501102,"Assets/Download/UI/UIPrefabAndRes/ActDailyBoss_Ext_1/actDailyBossBg_1035.png","Assets/Download/UI/UIPrefabAndRes/ActDailyBoss_Ext_1/actDailyBossTitle_1035.png"},
+{6,{0,8501602,0,0,0,0},8501102,"Assets/Download/UI/UIPrefabAndRes/ActDailyBoss_Ext_1/actDailyBossBg_1035.png","Assets/Download/UI/UIPrefabAndRes/ActDailyBoss_Ext_1/actDailyBossTitle_1035.png"},
+{7,{0,8501702,0,0,0,0},8501102,"Assets/Download/UI/UIPrefabAndRes/ActDailyBoss_Ext_1/actDailyBossBg_1035.png","Assets/Download/UI/UIPrefabAndRes/ActDailyBoss_Ext_1/actDailyBossTitle_1035.png"}
+},
+Len=7
+}
+return e 

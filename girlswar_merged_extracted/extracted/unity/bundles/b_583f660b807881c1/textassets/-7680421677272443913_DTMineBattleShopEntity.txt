@@ -1,0 +1,30 @@
+local t={id=0,weekLimit=0,sellItem={},price={},weekLimitNew=0,sellItemNew={},priceNew={}}
+t.__index=t
+function t.New(o,h,a,s,r,n,i)
+local e={}
+setmetatable(e,t)
+e.id=o
+e.weekLimit=h
+e.sellItem=a
+e.price=s
+e.weekLimitNew=r
+e.sellItemNew=n
+e.priceNew=i
+return e
+end
+function t.NewFromArrItem(a)
+local e={}
+setmetatable(e,t)
+e.id=a[1]
+e.weekLimit=a[2]
+e.sellItem=a[3]
+e.price=a[4]
+e.weekLimitNew=a[5]
+e.sellItemNew=a[6]
+e.priceNew=a[7]
+return e
+end
+function t.GetArr()
+return require('DataNode/DataTable/Create/mineBattle/DTMineBattleShopEntityTableData')
+end
+return t 

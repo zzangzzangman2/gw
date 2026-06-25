@@ -1,0 +1,11 @@
+local t={}
+function t:OnHandle(e)
+local e=assert(GlobalPB.decode("PRT_PLAYR_REAL_LOGIN_COUNT_SYN",e));
+if(GameInit.GetDebugLogProto())then
+;
+;
+end
+PlayerMgr:OnSynPlayerRealLoginCount(e)
+return e
+end
+return t 

@@ -1,0 +1,8 @@
+spine_snake_guang.png
+size:1024,512
+filter:Linear,Linear
+dangao_guangxiao
+bounds:2,2,289,289
+dangao_guangxiao2
+bounds:293,2,237,230
+rotate:90

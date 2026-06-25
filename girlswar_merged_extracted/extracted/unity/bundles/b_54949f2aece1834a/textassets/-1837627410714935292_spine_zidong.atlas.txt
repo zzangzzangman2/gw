@@ -1,0 +1,11 @@
+spine_zidong.png
+size:128,64
+filter:Linear,Linear
+msz_sdzd1
+bounds:96,2,25,30
+msz_sdzd2
+bounds:65,3,29,29
+msz_sdzd3
+bounds:2,2,30,30
+msz_sdzd4
+bounds:34,3,29,29

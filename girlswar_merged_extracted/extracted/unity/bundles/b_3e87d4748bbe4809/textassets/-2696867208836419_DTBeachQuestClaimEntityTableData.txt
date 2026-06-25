@@ -1,0 +1,12 @@
+local e=
+{
+ByIdx={
+{101,3,"UIActBeachQuest/stdtm_daoju01",""},
+{201,3,"UIActBeachQuest/stdtm_daoju02","UIActBeachQuest/stdtm_daoju02hui"},
+{202,3,"UIActBeachQuest/stdtm_daoju03","UIActBeachQuest/stdtm_daoju03hui"},
+{203,3,"UIActBeachQuest/stdtm_daoju04","UIActBeachQuest/stdtm_daoju04hui"},
+{204,3,"UIActBeachQuest/stdtm_daoju05","UIActBeachQuest/stdtm_daoju05hui"}
+},
+Len=5
+}
+return e 

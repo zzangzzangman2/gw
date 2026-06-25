@@ -1,0 +1,21 @@
+local e=
+{
+ByIdx={
+{180,1,"ActEggBoard/bzn_dzhj",0,0,1,180,2,"activityname_180"},
+{150,2,"ActEggBoard/bzn_xunbao",0,0,1,150,2,"activityname_150"},
+{836,3,"ActEggBoard/bzn_xianguang",0,0,1,836,2,"activityname_836"},
+{850,4,"ActEggBoard/bzn_guaguale",0,0,1,850,2,"activityname_850"},
+{105,5,"ActEggBoard/bzn_dianshichengjin",0,0,1,105,2,"activityname_105"},
+{881,6,"ActEggBoard/bzn_leichong",0,0,1,881,2,"activityname_881"},
+{313,7,"ActEggBoard/bzn_zhouka",0,0,1,313,1,"UIGoldweekNewName_14"},
+{501,8,"ActEggBoard/bzn_migong",0,0,1,501,1,"UIGoldweekNewName_15"},
+{80,9,"ActEggBoard/bzn_longzhan",0,0,1,80,1,"UIGoldweekNewName_16"},
+{151,10,"ActEggBoard/bzn_longzhou",0,0,1,151,1,"UIGoldweekNewName_17"},
+{152,11,"ActEggBoard/bzn_wenquan",0,0,1,152,1,"UIGoldweekNewName_18"},
+{409,12,"ActEggBoard/bzn_qiuqiu",0,0,1,409,1,"UIGoldweekNewName_19"},
+{408,13,"ActEggBoard/bzn_csgf",0,0,1,408,1,"UIGoldweekNewName_20"},
+{420,14,"ActEggBoard/bzn_tsbq",0,0,1,420,1,"UIGoldweekNewName_21"}
+},
+Len=14
+}
+return e 

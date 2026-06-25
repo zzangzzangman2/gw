@@ -1,0 +1,94 @@
+
+?
+ActCutTree.protoCommons.proto
+Chat.proto"U
+PRT_TREE_DATA
+treeDid (RtreeDid
+maxHp (RmaxHp
+curHp (RcurHp"Y
+PRT_TREE_HISTORY_DROPS_DATA 
+drops (2
+.PRT_THINGRdrops
+treeDid (RtreeDid"
+PRT_CUT_TREE_INFO_REQ"?
+PRT_CUT_TREE_INFO_RESP,
+	treeDatas (2.PRT_TREE_DATAR	treeDatas,
+selfRank (2.PRT_COMMON_RANKRselfRank
+
+todayScore (R
+todayScore*
+freeRewardStatus (RfreeRewardStatus>
+dropHistory (2.PRT_TREE_HISTORY_DROPS_DATARdropHistory
+playerId (RplayerId$
+maxFreeCutNum (RmaxFreeCutNum
+
+freeHitNum (R
+freeHitNum"%
+#PRT_CUT_TREE_HISTORY_DROPS_LIST_REQ"f
+$PRT_CUT_TREE_HISTORY_DROPS_LIST_RESP>
+dropHistory (2.PRT_TREE_HISTORY_DROPS_DATARdropHistory"=
+PRT_CUT_TREE_BROADCAST_LIST_REQ
+playerId (RplayerId"{
+ PRT_CUT_TREE_BROADCAST_LIST_RESP;
+broadcastList (2.PRT_CHAT_MARQUEE_SYNRbroadcastList
+playerId (RplayerId"
+PRT_CUT_TREE_ACK_REQ"?
+PRT_CUT_TREE_ACK_RESP
+score (Rscore 
+drops (2
+.PRT_THINGRdrops 
+isLargeDrop (RisLargeDrop$
+maxFreeCutNum (RmaxFreeCutNum
+
+freeHitNum (R
+freeHitNum2
+nextTreeData (2.PRT_TREE_DATARnextTreeData
+
+todayScore (R
+todayScore*
+freeRewardStatus (RfreeRewardStatus"
+PRT_CUT_TREE_RANK_REQ"n
+PRT_CUT_TREE_RANK_RESP&
+ranks (2.PRT_COMMON_RANKRranks,
+selfRank (2.PRT_COMMON_RANKRselfRank"&
+$PRT_CUT_TREE_RECEIVE_FREE_REWARD_REQ"L
+%PRT_CUT_TREE_RECEIVE_FREE_REWARD_RESP#
+reward (2.PRT_REWARDRreward"?
+)PRT_NOTIFY_CENTER_CUT_TREE_SCORE_INFO_REQ
+playerId (RplayerId
+
+totalScore (R
+totalScore
+
+updateTime (R
+updateTime 
+isBigReward (RisBigReward 
+drops (2
+.PRT_THINGRdrops",
+*PRT_NOTIFY_CENTER_CUT_TREE_SCORE_INFO_RESP"
+PRT_CUT_TREE_SHOP_INFO_REQ"Y
+PRT_CUT_TREE_SHOP_INFO_RESP 
+items (2
+.PRT_GOODSRitems
+costNum (RcostNum"M
+PRT_CUT_TREE_SHOP_BUY_REQ
+goodsDid (RgoodsDid
+count (Rcount"V
+PRT_CUT_TREE_SHOP_BUY_RESP
+item (2
+.PRT_GOODSRitem
+costNum (RcostNum"
+PRT_CUT_TREE_GIFT_INFO_REQ"?
+PRT_CUT_TREE_GIFT_INFO_RESP 
+gifts (2
+.PRT_GOODSRgifts
+freeCD (RfreeCD.
+historyGifts (2
+.PRT_GOODSRhistoryGifts"K
+PRT_CUT_TREE_GIFT_BUY_REQ
+giftDid (RgiftDid
+count (Rcount"<
+PRT_CUT_TREE_GIFT_BUY_RESP
+gift (2
+.PRT_GOODSRgiftB
+com.next1b.nextsvr.protobproto3

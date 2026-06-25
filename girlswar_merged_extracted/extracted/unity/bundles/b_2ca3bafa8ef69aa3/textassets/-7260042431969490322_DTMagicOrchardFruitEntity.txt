@@ -1,0 +1,36 @@
+local a={id=0,next=0,sort=0,prefabId=0,name="",desc="",icon="",color=0,unlock={},suitStar=0}
+a.__index=a
+function a.New(n,r,s,t,l,u,d,h,o,i)
+local e={}
+setmetatable(e,a)
+e.id=n
+e.next=r
+e.sort=s
+e.prefabId=t
+e.name=l
+e.desc=u
+e.icon=d
+e.color=h
+e.unlock=o
+e.suitStar=i
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.next=t[2]
+e.sort=t[3]
+e.prefabId=t[4]
+e.name=t[5]
+e.desc=t[6]
+e.icon=t[7]
+e.color=t[8]
+e.unlock=t[9]
+e.suitStar=t[10]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/magicOrchard/DTMagicOrchardFruitEntityTableData')
+end
+return a 

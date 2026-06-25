@@ -1,0 +1,40 @@
+local a={id=0,color=0,rewardNum=0,time=0,rewardPool={{},{}},canLootNum=0,lootPercent={},canLootTime=0,namePool=0,rewardNum2=0,canLootNum2=0,lootPercent2=0}
+a.__index=a
+function a.New(s,d,h,t,u,c,m,l,r,i,o,n)
+local e={}
+setmetatable(e,a)
+e.id=s
+e.color=d
+e.rewardNum=h
+e.time=t
+e.rewardPool=u
+e.canLootNum=c
+e.lootPercent=m
+e.canLootTime=l
+e.namePool=r
+e.rewardNum2=i
+e.canLootNum2=o
+e.lootPercent2=n
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.color=t[2]
+e.rewardNum=t[3]
+e.time=t[4]
+e.rewardPool=t[5]
+e.canLootNum=t[6]
+e.lootPercent=t[7]
+e.canLootTime=t[8]
+e.namePool=t[9]
+e.rewardNum2=t[10]
+e.canLootNum2=t[11]
+e.lootPercent2=t[12]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/activity/DTIslandEscortOrderEntityTableData')
+end
+return a 

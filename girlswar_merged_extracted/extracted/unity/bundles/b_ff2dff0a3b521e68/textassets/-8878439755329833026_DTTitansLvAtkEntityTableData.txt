@@ -1,0 +1,19 @@
+local e=
+{
+ByIdx={
+{25,200,"UI.TT.LVATK.01","tt_lv1atk",3},
+{30,400,"UI.TT.LVATK.02","tt_lv1atk",3},
+{40,600,"UI.TT.LVATK.03","tt_lv2atk",3},
+{45,800,"UI.TT.LVATK.04","tt_lv2atk",3},
+{50,1000,"UI.TT.LVATK.05","tt_lv3atk",4},
+{60,1200,"UI.TT.LVATK.06","tt_lv3atk",4},
+{70,1400,"UI.TT.LVATK.07","tt_lv4atk",4},
+{80,1600,"UI.TT.LVATK.08","tt_lv4atk",4},
+{100,1800,"UI.TT.LVATK.09","tt_lv5atk",5},
+{120,2000,"UI.TT.LVATK.10","tt_lv5atk",5},
+{150,2500,"UI.TT.LVATK.11","tt_lv5atk",5},
+{180,3000,"UI.TT.LVATK.12","tt_lv5atk",5}
+},
+Len=12
+}
+return e 

@@ -1,0 +1,10 @@
+local e={}
+function e:OnHandle(e)
+local e=assert(GlobalPB.decode("PRT_TURKEY_RUN_SCORE_AWARD_RESP",e));
+if(GameInit.GetDebugLogProto())then
+;
+;
+end
+return e
+end
+return e 

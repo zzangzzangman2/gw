@@ -1,0 +1,52 @@
+local a={id=0,actCoin=0,resetItem=0,weaponId=0,doubleItem=0,allItem=0,superItem=0,superResetNumber={},tea=0,physical=0,deplete=0,exchangeStamina={},sweepProgress=0,helpImageId=0,rankNumber=0,avgId=0,speed2=0,quickBattleUnlock=0}
+a.__index=a
+function a.New(d,c,l,t,f,m,y,v,p,b,w,u,n,i,o,s,r,h)
+local e={}
+setmetatable(e,a)
+e.id=d
+e.actCoin=c
+e.resetItem=l
+e.weaponId=t
+e.doubleItem=f
+e.allItem=m
+e.superItem=y
+e.superResetNumber=v
+e.tea=p
+e.physical=b
+e.deplete=w
+e.exchangeStamina=u
+e.sweepProgress=n
+e.helpImageId=i
+e.rankNumber=o
+e.avgId=s
+e.speed2=r
+e.quickBattleUnlock=h
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.actCoin=t[2]
+e.resetItem=t[3]
+e.weaponId=t[4]
+e.doubleItem=t[5]
+e.allItem=t[6]
+e.superItem=t[7]
+e.superResetNumber=t[8]
+e.tea=t[9]
+e.physical=t[10]
+e.deplete=t[11]
+e.exchangeStamina=t[12]
+e.sweepProgress=t[13]
+e.helpImageId=t[14]
+e.rankNumber=t[15]
+e.avgId=t[16]
+e.speed2=t[17]
+e.quickBattleUnlock=t[18]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/activity/DTActCellSurvivorBaseEntityTableData')
+end
+return a 

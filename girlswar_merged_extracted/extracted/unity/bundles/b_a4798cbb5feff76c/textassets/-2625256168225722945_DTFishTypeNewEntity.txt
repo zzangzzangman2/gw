@@ -1,0 +1,36 @@
+local a={id=0,fishId=0,speed=0,fishArea=0,completeUpSpeed=0,completeDownSpeed=0,statusTime_Out={},statusTime_In={},changeTime={},manAnimName=""}
+a.__index=a
+function a.New(n,r,s,t,l,u,d,h,o,i)
+local e={}
+setmetatable(e,a)
+e.id=n
+e.fishId=r
+e.speed=s
+e.fishArea=t
+e.completeUpSpeed=l
+e.completeDownSpeed=u
+e.statusTime_Out=d
+e.statusTime_In=h
+e.changeTime=o
+e.manAnimName=i
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.fishId=t[2]
+e.speed=t[3]
+e.fishArea=t[4]
+e.completeUpSpeed=t[5]
+e.completeDownSpeed=t[6]
+e.statusTime_Out=t[7]
+e.statusTime_In=t[8]
+e.changeTime=t[9]
+e.manAnimName=t[10]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/worldMap/DTFishTypeNewEntityTableData')
+end
+return a 

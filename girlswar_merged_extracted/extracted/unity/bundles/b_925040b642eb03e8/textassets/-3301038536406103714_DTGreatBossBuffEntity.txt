@@ -1,0 +1,24 @@
+local e={id=0,winCount=0,buffDmg=0,buffTime=0}
+e.__index=e
+function e.New(o,a,n,i)
+local t={}
+setmetatable(t,e)
+t.id=o
+t.winCount=a
+t.buffDmg=n
+t.buffTime=i
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.winCount=a[2]
+t.buffDmg=a[3]
+t.buffTime=a[4]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/guild/DTGreatBossBuffEntityTableData')
+end
+return e 

@@ -1,0 +1,43 @@
+
+?	
+ActSummonDoorSelect.protoCommons.proto"?
+PRT_SUMMON_DOOR_SELECT_DATA
+poolDid (RpoolDid
+freeCD (RfreeCD
+multiple (Rmultiple,
+alreadyDrawNumber (RalreadyDrawNumber"
+PRT_SUMMON_DOOR_SELECT_REQ"?
+PRT_SUMMON_DOOR_SELECT_RESP0
+data (2.PRT_SUMMON_DOOR_SELECT_DATARdata
+leftTime (RleftTime"
+giftBuyCount (RgiftBuyCount$
+freeItemCount (RfreeItemCount
+
+freeItemCD (R
+freeItemCD
+	isTimeout (R	isTimeout"n
+PRT_SUMMON_DOOR_SELECT_DRAW_REQ#
+type (2.ENUM_DRAW_TYPERtype&
+isCostCurrency (RisCostCurrency"?
+ PRT_SUMMON_DOOR_SELECT_DRAW_RESP#
+type (2.ENUM_DRAW_TYPERtype0
+data (2.PRT_SUMMON_DOOR_SELECT_DATARdata'
+awards (2.PRT_ONCE_AWARDRawards&
+activeHeroDids (RactiveHeroDids
+
+luckNumber (R
+luckNumber
+	luckColor (R	luckColor
+luckyId (RluckyId"'
+%PRT_SUMMON_DOOR_SELECT_ITEM_AWARD_REQ"?
+&PRT_SUMMON_DOOR_SELECT_ITEM_AWARD_RESP$
+freeItemCount (RfreeItemCount
+
+freeItemCD (R
+freeItemCD
+	isTimeout (R	isTimeout";
+PRT_SUMMON_DOOR_SELECT_POOL_REQ
+poolDid (RpoolDid"<
+ PRT_SUMMON_DOOR_SELECT_POOL_RESP
+poolDid (RpoolDidB
+com.next1b.nextsvr.protobproto3

@@ -1,0 +1,38 @@
+local a={id=0,goodsSubscrip={},goodsBuy=0,costSubscrip=0,costBuy=0,expRate=0,cityUp=0,freeday=0,firstAward={{},{}},dayAward={{},{}},imageLink=""}
+a.__index=a
+function a.New(n,r,s,t,l,u,c,d,h,o,i)
+local e={}
+setmetatable(e,a)
+e.id=n
+e.goodsSubscrip=r
+e.goodsBuy=s
+e.costSubscrip=t
+e.costBuy=l
+e.expRate=u
+e.cityUp=c
+e.freeday=d
+e.firstAward=h
+e.dayAward=o
+e.imageLink=i
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.goodsSubscrip=t[2]
+e.goodsBuy=t[3]
+e.costSubscrip=t[4]
+e.costBuy=t[5]
+e.expRate=t[6]
+e.cityUp=t[7]
+e.freeday=t[8]
+e.firstAward=t[9]
+e.dayAward=t[10]
+e.imageLink=t[11]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/activity/DTActivityPrimeSpecEntityTableData')
+end
+return a 

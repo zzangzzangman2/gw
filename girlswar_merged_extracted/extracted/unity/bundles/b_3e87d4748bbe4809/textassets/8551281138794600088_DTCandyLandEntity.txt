@@ -1,0 +1,58 @@
+local a={id=0,diceCost={},shopCost={},floorTime=0,goods=0,fundAward={},offset=0,blockSize=0,specialItem={},actItem={},touchGirl=0,exchangeGirl=0,taskGirl=0,shopGril=0,iconographyProve=0,atlasId=0,shootGril=0,touchItem=0,shootItem=0,crossShowRankCount=0,rankItem={{},{}}}
+a.__index=a
+function a.New(l,m,u,t,y,w,f,v,g,b,k,q,p,c,s,n,i,o,h,d,r)
+local e={}
+setmetatable(e,a)
+e.id=l
+e.diceCost=m
+e.shopCost=u
+e.floorTime=t
+e.goods=y
+e.fundAward=w
+e.offset=f
+e.blockSize=v
+e.specialItem=g
+e.actItem=b
+e.touchGirl=k
+e.exchangeGirl=q
+e.taskGirl=p
+e.shopGril=c
+e.iconographyProve=s
+e.atlasId=n
+e.shootGril=i
+e.touchItem=o
+e.shootItem=h
+e.crossShowRankCount=d
+e.rankItem=r
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.diceCost=t[2]
+e.shopCost=t[3]
+e.floorTime=t[4]
+e.goods=t[5]
+e.fundAward=t[6]
+e.offset=t[7]
+e.blockSize=t[8]
+e.specialItem=t[9]
+e.actItem=t[10]
+e.touchGirl=t[11]
+e.exchangeGirl=t[12]
+e.taskGirl=t[13]
+e.shopGril=t[14]
+e.iconographyProve=t[15]
+e.atlasId=t[16]
+e.shootGril=t[17]
+e.touchItem=t[18]
+e.shootItem=t[19]
+e.crossShowRankCount=t[20]
+e.rankItem=t[21]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/activity/DTCandyLandEntityTableData')
+end
+return a 

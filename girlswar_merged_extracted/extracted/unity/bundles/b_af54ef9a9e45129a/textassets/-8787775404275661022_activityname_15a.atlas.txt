@@ -1,0 +1,7 @@
+activityname_15a.png
+size:256,128
+filter:Linear,Linear
+fd1png
+bounds:130,19,101,109
+fd2
+bounds:0,0,128,128

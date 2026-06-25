@@ -1,0 +1,9 @@
+dailyquest_point.png
+size:64,128
+filter:Linear,Linear
+a
+bounds:2,2,47,47
+offsets:1,1,50,49
+v
+bounds:2,51,49,52
+offsets:1,1,51,54

@@ -1,0 +1,28 @@
+local e={id=0,hp=0,dmgRes=0,playerAward={},guildAward={},firstAward={}}
+e.__index=e
+function e.New(a,i,o,h,s,n)
+local t={}
+setmetatable(t,e)
+t.id=a
+t.hp=i
+t.dmgRes=o
+t.playerAward=h
+t.guildAward=s
+t.firstAward=n
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.hp=a[2]
+t.dmgRes=a[3]
+t.playerAward=a[4]
+t.guildAward=a[5]
+t.firstAward=a[6]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/titans/DTTitansBoss2EntityTableData')
+end
+return e 

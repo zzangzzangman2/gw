@@ -1,0 +1,36 @@
+local a={id=0,feverComboTime=0,defaultCandyNum=0,feverStage={},feverTime=0,rankPoint={},rankCount=0,errorCd=0,activityStage=0,activityStageFORMULA=""}
+a.__index=a
+function a.New(n,r,s,t,l,u,d,h,o,i)
+local e={}
+setmetatable(e,a)
+e.id=n
+e.feverComboTime=r
+e.defaultCandyNum=s
+e.feverStage=t
+e.feverTime=l
+e.rankPoint=u
+e.rankCount=d
+e.errorCd=h
+e.activityStage=o
+e.activityStageFORMULA=i
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.feverComboTime=t[2]
+e.defaultCandyNum=t[3]
+e.feverStage=t[4]
+e.feverTime=t[5]
+e.rankPoint=t[6]
+e.rankCount=t[7]
+e.errorCd=t[8]
+e.activityStage=t[9]
+e.activityStageFORMULA=t[10]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/activity/DTGameCandyBeatBaseEntityTableData')
+end
+return a 

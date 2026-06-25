@@ -1,0 +1,5 @@
+spine_jiantou.png
+size:64,64
+filter:Linear,Linear
+a1
+bounds:2,2,41,47

@@ -1,0 +1,21 @@
+﻿{
+    "scenePath": "Assets/Scenes/MainInterface_Wireframe.unity",
+    "rectTransformCount": 806,
+    "imageComponentCount": 977,
+    "spriteAppliedCount": 214,
+    "textComponentCount": 495,
+    "textAppliedCount": 138,
+    "uguiTextAppliedCount": 54,
+    "tmpTextDetailCount": 271,
+    "tmpTextAppliedCount": 84,
+    "scrollRectCount": 12,
+    "scrollRectAppliedCount": 3,
+    "buttonLogCount": 77,
+    "raycastProbeCount": 99,
+    "activeOverrideCount": 26,
+    "graphicRaycastOverrideCount": 3,
+    "restoreOverrideCount": 29,
+    "rectOverrideCount": 2,
+    "visualOverrideCount": 1,
+    "generatedAt": "2026-06-25 16:03:41"
+}

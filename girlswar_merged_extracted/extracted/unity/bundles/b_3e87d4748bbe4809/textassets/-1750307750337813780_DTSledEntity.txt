@@ -1,0 +1,34 @@
+local a={id=0,itemCost={},score=0,goods=0,fundAward={},rankShowCount=0,guildRankShowCount=0,guildSumCount=0,spineIndex=0}
+a.__index=a
+function a.New(i,h,n,t,d,l,r,s,o)
+local e={}
+setmetatable(e,a)
+e.id=i
+e.itemCost=h
+e.score=n
+e.goods=t
+e.fundAward=d
+e.rankShowCount=l
+e.guildRankShowCount=r
+e.guildSumCount=s
+e.spineIndex=o
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.itemCost=t[2]
+e.score=t[3]
+e.goods=t[4]
+e.fundAward=t[5]
+e.rankShowCount=t[6]
+e.guildRankShowCount=t[7]
+e.guildSumCount=t[8]
+e.spineIndex=t[9]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/activity/DTSledEntityTableData')
+end
+return a 

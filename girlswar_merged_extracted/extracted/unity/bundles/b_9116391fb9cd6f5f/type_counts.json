@@ -1,0 +1,14 @@
+{
+  "GameObject": 31,
+  "Transform": 27,
+  "ParticleSystemRenderer": 25,
+  "ParticleSystem": 25,
+  "Material": 12,
+  "CanvasRenderer": 4,
+  "RectTransform": 4,
+  "MonoBehaviour": 4,
+  "Texture2D": 4,
+  "MonoScript": 1,
+  "AssetBundle": 1,
+  "TrailRenderer": 1
+}

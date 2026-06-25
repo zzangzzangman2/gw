@@ -1,0 +1,10 @@
+local e={}
+function e:OnHandle(e)
+local e=assert(GlobalPB.decode("PRT_HERO_RANK_RESP",e));
+if(GameInit.GetDebugLogProto())then
+;
+;
+end
+HeroMgr:OnHeroUpgradeStarResponse(e)
+end
+return e 

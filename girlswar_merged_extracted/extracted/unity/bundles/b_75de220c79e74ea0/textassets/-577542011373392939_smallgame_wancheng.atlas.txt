@@ -1,0 +1,16 @@
+smallgame_wancheng.png
+size:2048,256
+filter:Linear,Linear
+xx1
+bounds:199,45,53,54
+offsets:3,4,62,61
+youji_changtiao
+bounds:0,99,1269,129
+youji_cheng
+bounds:98,15,101,84
+youji_guang
+bounds:1269,13,427,215
+youji_wan
+bounds:0,7,98,92
+youji_yuanpan
+bounds:1696,0,228,228

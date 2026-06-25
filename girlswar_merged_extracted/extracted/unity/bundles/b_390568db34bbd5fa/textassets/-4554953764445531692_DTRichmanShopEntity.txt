@@ -1,0 +1,28 @@
+local e={id=0,items={},richmanItemId={},cost={},limitType=0,limitTime=0}
+e.__index=e
+function e.New(a,i,o,h,s,n)
+local t={}
+setmetatable(t,e)
+t.id=a
+t.items=i
+t.richmanItemId=o
+t.cost=h
+t.limitType=s
+t.limitTime=n
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.items=a[2]
+t.richmanItemId=a[3]
+t.cost=a[4]
+t.limitType=a[5]
+t.limitTime=a[6]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/calendar/DTRichmanShopEntityTableData')
+end
+return e 

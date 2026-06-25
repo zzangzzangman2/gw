@@ -1,0 +1,21 @@
+
+?
+ActUpgradeDiscountPack.protoCommons.proto"q
+PRT_UPGRADE_DISCOUNT_PACK 
+discountDid (RdiscountDid
+count (Rcount
+	resetTime (R	resetTime"$
+"PRT_UPGRADE_DISCOUNT_PACK_INFO_REQ"?
+#PRT_UPGRADE_DISCOUNT_PACK_INFO_RESP
+leftTime (RleftTime0
+packs (2.PRT_UPGRADE_DISCOUNT_PACKRpacks-
+firstDayMarks (2.PRT_KVRfirstDayMarks"L
+(PRT_UPGRADE_DISCOUNT_PACK_FREE_AWARD_REQ 
+discountDid (RdiscountDid"M
+)PRT_UPGRADE_DISCOUNT_PACK_FREE_AWARD_RESP 
+discountDid (RdiscountDid"K
+'PRT_UPGRADE_DISCOUNT_PACK_BUY_AWARD_REQ 
+discountDid (RdiscountDid"L
+(PRT_UPGRADE_DISCOUNT_PACK_BUY_AWARD_RESP 
+discountDid (RdiscountDidB
+com.next1b.nextsvr.protobproto3

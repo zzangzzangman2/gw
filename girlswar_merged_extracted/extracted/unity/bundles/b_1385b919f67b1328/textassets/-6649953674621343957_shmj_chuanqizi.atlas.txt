@@ -1,0 +1,12 @@
+shmj_chuanqizi.png
+size:128,256
+filter:Linear,Linear
+1
+bounds:1,61,77,67
+2
+bounds:1,1,64,59
+3
+bounds:66,2,58,57
+rotate:90
+4
+bounds:79,71,46,57

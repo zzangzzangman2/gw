@@ -1,0 +1,26 @@
+local e={id=0,group=0,ranking=0,rankShow=0,awards={{},{}}}
+e.__index=e
+function e.New(o,n,a,s,i)
+local t={}
+setmetatable(t,e)
+t.id=o
+t.group=n
+t.ranking=a
+t.rankShow=s
+t.awards=i
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.group=a[2]
+t.ranking=a[3]
+t.rankShow=a[4]
+t.awards=a[5]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/activity/DTActCellSurvivorTotalScoreRankEntityTableData')
+end
+return e 

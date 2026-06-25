@@ -1,0 +1,44 @@
+local a={id=0,footballNum=0,heroNum=0,powerInit=0,powerMax=0,powerBuy=0,powerRecover=0,powerConsume=0,exp=0,maxLevel=0,rankShowNum=0,oneTime=0,payPowerLimit=0,redPoint=0}
+a.__index=a
+function a.New(s,l,r,t,u,m,f,w,c,d,i,o,n,h)
+local e={}
+setmetatable(e,a)
+e.id=s
+e.footballNum=l
+e.heroNum=r
+e.powerInit=t
+e.powerMax=u
+e.powerBuy=m
+e.powerRecover=f
+e.powerConsume=w
+e.exp=c
+e.maxLevel=d
+e.rankShowNum=i
+e.oneTime=o
+e.payPowerLimit=n
+e.redPoint=h
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.footballNum=t[2]
+e.heroNum=t[3]
+e.powerInit=t[4]
+e.powerMax=t[5]
+e.powerBuy=t[6]
+e.powerRecover=t[7]
+e.powerConsume=t[8]
+e.exp=t[9]
+e.maxLevel=t[10]
+e.rankShowNum=t[11]
+e.oneTime=t[12]
+e.payPowerLimit=t[13]
+e.redPoint=t[14]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/activity/DTFootBallCfgEntityTableData')
+end
+return a 

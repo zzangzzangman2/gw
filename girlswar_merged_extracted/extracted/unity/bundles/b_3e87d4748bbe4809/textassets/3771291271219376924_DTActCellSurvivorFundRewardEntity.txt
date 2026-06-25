@@ -1,0 +1,30 @@
+local t={id=0,group=0,needCount=0,freeReward={},smallchargeReward={},bigchargeReward={{},{}},sort=0}
+t.__index=t
+function t.New(o,h,a,s,r,n,i)
+local e={}
+setmetatable(e,t)
+e.id=o
+e.group=h
+e.needCount=a
+e.freeReward=s
+e.smallchargeReward=r
+e.bigchargeReward=n
+e.sort=i
+return e
+end
+function t.NewFromArrItem(a)
+local e={}
+setmetatable(e,t)
+e.id=a[1]
+e.group=a[2]
+e.needCount=a[3]
+e.freeReward=a[4]
+e.smallchargeReward=a[5]
+e.bigchargeReward=a[6]
+e.sort=a[7]
+return e
+end
+function t.GetArr()
+return require('DataNode/DataTable/Create/activity/DTActCellSurvivorFundRewardEntityTableData')
+end
+return t 

@@ -1,0 +1,28 @@
+local e={id=0,eventA=0,eventB=0,eventC=0,avgAward={},itemAward={{},{}}}
+e.__index=e
+function e.New(a,i,o,h,s,n)
+local t={}
+setmetatable(t,e)
+t.id=a
+t.eventA=i
+t.eventB=o
+t.eventC=h
+t.avgAward=s
+t.itemAward=n
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.eventA=a[2]
+t.eventB=a[3]
+t.eventC=a[4]
+t.avgAward=a[5]
+t.itemAward=a[6]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/activity/DTActivityLinkageEmojiEntityTableData')
+end
+return e 

@@ -1,0 +1,13 @@
+jiazaizhong.png
+size:512,128
+filter:Linear,Linear
+1hc_jz4
+bounds:121,16,103,103
+hc_jz1
+bounds:226,31,111,24
+hc_jz2
+bounds:309,77,19,42
+hc_jz3
+bounds:226,57,81,62
+hc_jz5
+bounds:0,0,119,119

@@ -1,0 +1,36 @@
+local a={id=0,headFrame="",frameName="",line="",unlockType=0,unlockText="",unlockPara={},showType=0,timeText="",isShow=0}
+a.__index=a
+function a.New(n,r,s,t,l,u,d,h,o,i)
+local e={}
+setmetatable(e,a)
+e.id=n
+e.headFrame=r
+e.frameName=s
+e.line=t
+e.unlockType=l
+e.unlockText=u
+e.unlockPara=d
+e.showType=h
+e.timeText=o
+e.isShow=i
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.headFrame=t[2]
+e.frameName=t[3]
+e.line=t[4]
+e.unlockType=t[5]
+e.unlockText=t[6]
+e.unlockPara=t[7]
+e.showType=t[8]
+e.timeText=t[9]
+e.isShow=t[10]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/player/DTHeadFrame_ReviewEntityTableData')
+end
+return a 

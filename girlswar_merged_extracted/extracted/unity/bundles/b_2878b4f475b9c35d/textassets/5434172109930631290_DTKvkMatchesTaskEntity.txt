@@ -1,0 +1,34 @@
+local a={id=0,list=0,buildType=0,rewardsTime=0,limtTime=0,condition=0,awardPoint={{},{}},name="",taskIcon=""}
+a.__index=a
+function a.New(i,h,n,t,d,l,r,s,o)
+local e={}
+setmetatable(e,a)
+e.id=i
+e.list=h
+e.buildType=n
+e.rewardsTime=t
+e.limtTime=d
+e.condition=l
+e.awardPoint=r
+e.name=s
+e.taskIcon=o
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.list=t[2]
+e.buildType=t[3]
+e.rewardsTime=t[4]
+e.limtTime=t[5]
+e.condition=t[6]
+e.awardPoint=t[7]
+e.name=t[8]
+e.taskIcon=t[9]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/sourceWorld/DTKvkMatchesTaskEntityTableData')
+end
+return a 

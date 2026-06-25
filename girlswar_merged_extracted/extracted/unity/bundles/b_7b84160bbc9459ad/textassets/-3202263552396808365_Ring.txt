@@ -1,0 +1,113 @@
+
+?
+
+Ring.protoCommons.protoSchool.proto"?
+PRT_RING_MARRY
+heroDid (RheroDid
+ringDid (RringDid(
+haremLoverLevel (RharemLoverLevel$
+haremLoverExp (RharemLoverExp
+
+animGroups (R
+animGroups"
+PRT_RING_MARRY_LIST_REQ"C
+PRT_RING_MARRY_LIST_RESP'
+marrys (2.PRT_RING_MARRYRmarrys"
+PRT_RING_LIST_REQ"b
+PRT_RING_LIST_RESP
+ringDids (RringDids0
+composePlayHeroDids (RcomposePlayHeroDids"0
+PRT_RING_COMPOSE_REQ
+ringDid (RringDid"1
+PRT_RING_COMPOSE_RESP
+ringDid (RringDid"5
+PRT_RING_COMPOSE_PLAY_REQ
+heroDid (RheroDid"6
+PRT_RING_COMPOSE_PLAY_RESP
+heroDid (RheroDid"0
+PRT_RING_UPGRAGE_REQ
+ringDid (RringDid"Q
+PRT_RING_UPGRAGE_RESP
+ringDid (RringDid
+
+newRingDid (R
+newRingDid"
+PRT_RING_VOICE_LIST_REQ"8
+PRT_RING_VOICE_LIST_RESP
+	voiceDids (R	voiceDids"5
+PRT_RING_VOICE_PLAY_REQ
+voiceDid (RvoiceDid"6
+PRT_RING_VOICE_PLAY_RESP
+voiceDid (RvoiceDid"
+PRT_RING_HAREM_INFO_REQ"r
+PRT_RING_HAREM_INFO_RESP
+power (Rpower"
+powerBeginMS (RpowerBeginMS
+	doteCount (R	doteCount"#
+!PRT_RING_HAREM_EXCHANGE_POWER_REQ"^
+"PRT_RING_HAREM_EXCHANGE_POWER_RESP
+power (Rpower"
+powerBeginMS (RpowerBeginMS"3
+PRT_RING_HAREM_DOTE_REQ
+heroDid (RheroDid"?
+PRT_RING_HAREM_DOTE_RESP
+heroDid (RheroDid!
+award (2.PRT_REWARDRaward
+	doteCount (R	doteCount
+kids (2.PRT_KIDRkids"T
+PRT_RING_HAREM_DOTE_RANDOM_REQ
+isBatch (RisBatch
+heroDid (RheroDid"?
+PRT_RING_HAREM_DOTE_RANDOM_RESP
+heroDid (RheroDid
+power (Rpower"
+powerBeginMS (RpowerBeginMS!
+award (2.PRT_REWARDRaward
+kids (2.PRT_KIDRkids"o
+PRT_RING_HAREM_LOVER_UP_REQ
+heroDid (RheroDid
+itemDid (RitemDid
+	itemCount (R	itemCount"?
+PRT_RING_HAREM_LOVER_UP_RESP
+heroDid (RheroDid$
+addExp (2.PRT_EXP_ADDRaddExp
+level (Rlevel
+exp (Rexp"6
+PRT_RING_SKILL
+id (Rid
+level (Rlevel"3
+PRT_RING_SKILL_INFO_REQ
+heroDid (RheroDid"K
+PRT_RING_SKILL_INFO_RESP/
+
+ringSkills (2.PRT_RING_SKILLR
+ringSkills"M
+PRT_RING_GOLD_TRAIN_REQ
+heroDid (RheroDid
+skillId (RskillId"a
+PRT_RING_GOLD_TRAIN_RESP-
+	ringSKill (2.PRT_RING_SKILLR	ringSKill
+result (Rresult"M
+PRT_RING_ITEM_TRAIN_REQ
+heroDid (RheroDid
+skillId (RskillId"?
+PRT_RING_ITEM_TRAIN_RESP-
+	ringSKill (2.PRT_RING_SKILLR	ringSKill
+result (Rresult 
+successType (RsuccessType"?
+PRT_RING_AUTO_TRAIN_REQ
+heroDid (RheroDid
+skillId (RskillId
+type (Rtype
+maxCost (RmaxCost 
+targetLevel (RtargetLevel"?
+PRT_RING_AUTO_TRAIN_RESP
+level (Rlevel
+	totalCost (R	totalCost
+
+trainCount (R
+trainCount"
+successCount (RsuccessCount(
+bigSuccessCount (RbigSuccessCount-
+	ringSkill (2.PRT_RING_SKILLR	ringSkillB
+com.next1b.nextsvr.protobproto3

@@ -1,0 +1,28 @@
+local e={id=0,keyItem=0,award={{},{}},prefabId=0,activityPointId=0,awardEffectItemId={}}
+e.__index=e
+function e.New(a,i,o,h,s,n)
+local t={}
+setmetatable(t,e)
+t.id=a
+t.keyItem=i
+t.award=o
+t.prefabId=h
+t.activityPointId=s
+t.awardEffectItemId=n
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.keyItem=a[2]
+t.award=a[3]
+t.prefabId=a[4]
+t.activityPointId=a[5]
+t.awardEffectItemId=a[6]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/worldTree/DTWorldTreeChestEntityTableData')
+end
+return e 

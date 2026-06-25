@@ -1,0 +1,40 @@
+local a={id=0,day=0,type=0,unlockType=0,unlockTypeParameter=0,limitTimes=0,goods=0,discountRate=0,basePrice=0,award={{},{}},jumpId={},description=""}
+a.__index=a
+function a.New(s,d,h,t,u,c,m,l,r,i,o,n)
+local e={}
+setmetatable(e,a)
+e.id=s
+e.day=d
+e.type=h
+e.unlockType=t
+e.unlockTypeParameter=u
+e.limitTimes=c
+e.goods=m
+e.discountRate=l
+e.basePrice=r
+e.award=i
+e.jumpId=o
+e.description=n
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.day=t[2]
+e.type=t[3]
+e.unlockType=t[4]
+e.unlockTypeParameter=t[5]
+e.limitTimes=t[6]
+e.goods=t[7]
+e.discountRate=t[8]
+e.basePrice=t[9]
+e.award=t[10]
+e.jumpId=t[11]
+e.description=t[12]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/activity/DTBeachCumRechargeGiftEntityTableData')
+end
+return a 

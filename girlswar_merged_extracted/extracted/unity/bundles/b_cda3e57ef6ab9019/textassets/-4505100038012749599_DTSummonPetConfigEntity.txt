@@ -1,0 +1,42 @@
+local a={id=0,uRSkillNum=0,ssRSkillNum=0,sRSkillNum=0,freePetDid=0,freePet={{},{}},openTime="",mainPetColor=0,guardPetColor=0,focusTime=0,currencyShow=0,skipTimeConfig={},shopCostID=0}
+a.__index=a
+function a.New(s,d,h,t,l,c,m,f,u,r,i,o,n)
+local e={}
+setmetatable(e,a)
+e.id=s
+e.uRSkillNum=d
+e.ssRSkillNum=h
+e.sRSkillNum=t
+e.freePetDid=l
+e.freePet=c
+e.openTime=m
+e.mainPetColor=f
+e.guardPetColor=u
+e.focusTime=r
+e.currencyShow=i
+e.skipTimeConfig=o
+e.shopCostID=n
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.uRSkillNum=t[2]
+e.ssRSkillNum=t[3]
+e.sRSkillNum=t[4]
+e.freePetDid=t[5]
+e.freePet=t[6]
+e.openTime=t[7]
+e.mainPetColor=t[8]
+e.guardPetColor=t[9]
+e.focusTime=t[10]
+e.currencyShow=t[11]
+e.skipTimeConfig=t[12]
+e.shopCostID=t[13]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/summonPet/DTSummonPetConfigEntityTableData')
+end
+return a 

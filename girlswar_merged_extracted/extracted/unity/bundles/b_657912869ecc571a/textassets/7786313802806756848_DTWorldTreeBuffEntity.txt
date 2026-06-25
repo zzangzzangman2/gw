@@ -1,0 +1,28 @@
+local e={id=0,type=0,param=0,times=0,icon="",desc=""}
+e.__index=e
+function e.New(a,i,o,h,s,n)
+local t={}
+setmetatable(t,e)
+t.id=a
+t.type=i
+t.param=o
+t.times=h
+t.icon=s
+t.desc=n
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.type=a[2]
+t.param=a[3]
+t.times=a[4]
+t.icon=a[5]
+t.desc=a[6]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/worldTree/DTWorldTreeBuffEntityTableData')
+end
+return e 

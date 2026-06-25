@@ -1,0 +1,30 @@
+local t={id=0,needCount=0,type=0,name="",offIcon="",onIcon="",award={{},{}}}
+t.__index=t
+function t.New(o,h,a,s,r,n,i)
+local e={}
+setmetatable(e,t)
+e.id=o
+e.needCount=h
+e.type=a
+e.name=s
+e.offIcon=r
+e.onIcon=n
+e.award=i
+return e
+end
+function t.NewFromArrItem(a)
+local e={}
+setmetatable(e,t)
+e.id=a[1]
+e.needCount=a[2]
+e.type=a[3]
+e.name=a[4]
+e.offIcon=a[5]
+e.onIcon=a[6]
+e.award=a[7]
+return e
+end
+function t.GetArr()
+return require('DataNode/DataTable/Create/activity/DTActCellSurvivorCollectionTypeEntityTableData')
+end
+return t 

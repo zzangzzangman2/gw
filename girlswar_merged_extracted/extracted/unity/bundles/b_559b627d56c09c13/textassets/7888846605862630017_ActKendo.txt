@@ -1,0 +1,55 @@
+
+?
+
+ActKendo.protoCommons.proto"
+PRT_KENDO_INFO_REQ"a
+PRT_KENDO_INFO_RESP
+step (Rstep
+score (Rscore 
+playEndTime (RplayEndTime"Z
+PRT_KENDO_REQ#
+type (2.ENUM_DRAW_TYPERtype$
+selectedSuppy (RselectedSuppy"t
+PRT_KENDO_RESP#
+type (2.ENUM_DRAW_TYPERtype
+score (Rscore'
+awards (2.PRT_ONCE_AWARDRawards"
+PRT_KENDO_EXCHANGESHOP_REQ"M
+PRT_KENDO_EXCHANGESHOP_RESP.
+exchangeShop (2
+.PRT_GOODSRexchangeShop"
+PRT_KENDO_SUPPYSHOP_REQ"b
+PRT_KENDO_SUPPYSHOP_RESP(
+	suppyShop (2
+.PRT_GOODSR	suppyShop
+	resetTime (R	resetTime"?
+PRT_KENDO_BUY_SUPPY_REQ
+id (Rid
+count (Rcount"<
+PRT_KENDO_BUY_SUPPY_RESP 
+goods (2
+.PRT_GOODSRgoods"B
+PRT_KENDO_BUY_EXCHANGE_REQ
+id (Rid
+count (Rcount"?
+PRT_KENDO_BUY_EXCHANGE_RESP 
+goods (2
+.PRT_GOODSRgoods"
+PRT_KENDO_RANK_REQ"?
+PRT_KENDO_RANK_RESP&
+ranks (2.PRT_COMMON_RANKRranks,
+selfRank (2.PRT_COMMON_RANKRselfRank6
+
+guildRanks (2.PRT_COMMON_GUILD_RANKR
+guildRanks<
+selfGuildRank (2.PRT_COMMON_GUILD_RANKRselfGuildRank"?
+PRT_CS_KENDO_UPDATE_SCORE_REQ
+playerId (RplayerId
+guildId (RguildId
+addScore (RaddScore
+score (Rscore
+changeMS (RchangeMS
+
+activityId (R
+activityIdB
+com.next1b.nextsvr.protobproto3

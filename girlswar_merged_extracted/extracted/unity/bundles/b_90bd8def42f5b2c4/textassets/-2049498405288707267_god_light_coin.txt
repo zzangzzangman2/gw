@@ -1,0 +1,30 @@
+{"frames": [
+
+{
+	"filename": "god_light_coin1.png",
+	"frame": {"x":1,"y":1,"w":37,"h":42},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":37,"h":42},
+	"sourceSize": {"w":37,"h":42},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "god_light_coin2.png",
+	"frame": {"x":1,"y":45,"w":37,"h":42},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":37,"h":42},
+	"sourceSize": {"w":37,"h":42},
+	"pivot": {"x":0.5,"y":0.5}
+}],
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "god_light_coin.png",
+	"format": "RGBA8888",
+	"size": {"w":128,"h":128},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:bc73d0e6479d25030c655d63c0fd7d9d:4fc41b5383e9cc2a32aa2c70cdb9915f:1e5a83eac70259041eafa29b20fa0488$"
+}
+}

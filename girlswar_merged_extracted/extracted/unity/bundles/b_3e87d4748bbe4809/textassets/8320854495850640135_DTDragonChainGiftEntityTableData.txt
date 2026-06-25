@@ -1,0 +1,12 @@
+local e=
+{
+ByIdx={
+{1,304,{{27648,2},{75006,3}},{},"","ActMonthPurchase/ylb_beilv2400",330,1700,"UIActDragonChainGift/dllb_npc"},
+{2,310,{{27648,3},{75006,9}},{},"","ActMonthPurchase/ylb_beilv2400",980,3900,"UIActDragonChainGift/dllb_npc"},
+{3,324,{{27648,6},{75006,18}},{},"","ActMonthPurchase/ylb_beilv2400",1980,7800,"UIActDragonChainGift/dllb_npc"},
+{4,327,{{27648,10},{75006,30}},{},"","ActMonthPurchase/ylb_beilv2400",3400,13000,"UIActDragonChainGift/dllb_npc"},
+{5,329,{{27648,20},{75006,60}},{},"","ActMonthPurchase/ylb_beilv2400",6900,26000,"UIActDragonChainGift/dllb_npc"}
+},
+Len=5
+}
+return e 

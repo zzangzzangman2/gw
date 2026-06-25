@@ -1,0 +1,15 @@
+activityname_950.png
+size:256,256
+filter:Linear,Linear
+10xiangjia
+bounds:2,24,99,27
+5
+bounds:2,99,130,137
+aixin
+bounds:103,2,51,49
+kuang1
+bounds:2,53,212,44
+pintu
+bounds:216,82,34,38
+yuan
+bounds:134,122,114,114

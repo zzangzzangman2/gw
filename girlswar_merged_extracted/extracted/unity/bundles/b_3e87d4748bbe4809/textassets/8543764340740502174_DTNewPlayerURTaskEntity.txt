@@ -1,0 +1,26 @@
+local e={id=0,needCount=0,award={{},{}},text="",listNum=0}
+e.__index=e
+function e.New(o,n,a,s,i)
+local t={}
+setmetatable(t,e)
+t.id=o
+t.needCount=n
+t.award=a
+t.text=s
+t.listNum=i
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.needCount=a[2]
+t.award=a[3]
+t.text=a[4]
+t.listNum=a[5]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/activity/DTNewPlayerURTaskEntityTableData')
+end
+return e 

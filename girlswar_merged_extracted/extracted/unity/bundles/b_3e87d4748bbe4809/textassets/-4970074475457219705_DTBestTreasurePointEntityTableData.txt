@@ -1,0 +1,15 @@
+local e=
+{
+ByIdx={
+{1,3,18000000,"besttreasurepointDesc_1"},
+{2,3,6000000,"besttreasurepointDesc_2"},
+{3,3,18000000,"besttreasurepointDesc_3"},
+{4,3,6000000,"besttreasurepointDesc_4"},
+{11,1,3600000,"besttreasurepointDesc_11"},
+{12,1,1200000,"besttreasurepointDesc_12"},
+{13,1,200000,"besttreasurepointDesc_13"},
+{21,2,300,"besttreasurepointDesc_21"}
+},
+Len=8
+}
+return e 

@@ -1,0 +1,11 @@
+local t={}
+function t:OnHandle(e)
+local e=assert(GlobalPB.decode("PRT_EQUIP_MAKE_RANDOM_EXCLUSIVE_RESP",e));
+if(GameInit.GetDebugLogProto())then
+;
+;
+end
+EventSystem.SendEvent(CommonEventId.OnMakeRandomExclusive,e)
+return e
+end
+return t 

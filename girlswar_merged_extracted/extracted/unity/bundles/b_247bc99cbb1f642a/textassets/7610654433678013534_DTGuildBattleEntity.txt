@@ -1,0 +1,92 @@
+local a={id=0,openDay=0,newTime=0,lv=0,actDays=0,member=0,matchTime={},readyTime={},battleStartTime={},nextDayEndTime={},totalTime=0,attackTime=0,reviveTime=0,reviveAddTime=0,hideScore=0,winHideScore=0,drawHideScore=0,loseHideScore=0,winPoint=0,drawPoint=0,losePoint=0,firstAward={{},{}},boxPoint=0,maxBox=0,boxAward={{},{}},showAward={{},{}},winAward={{},{}},drawAward={{},{}},loseAward={{},{}},loveFiveBoxAward={{},{}},boxWeekAward={{},{}},guildInspire=0,Inspire=0,inspireCost={},inspireAward={{},{}},inspireBuff=0,inspireAtkAdd=0,inspireHpAdd=0}
+a.__index=a
+function a.New(f,q,g,t,A,E,T,_,j,x,z,I,R,N,L,U,D,S,H,C,O,k,l,d,h,r,s,o,i,n,u,w,c,b,p,v,y,m)
+local e={}
+setmetatable(e,a)
+e.id=f
+e.openDay=q
+e.newTime=g
+e.lv=t
+e.actDays=A
+e.member=E
+e.matchTime=T
+e.readyTime=_
+e.battleStartTime=j
+e.nextDayEndTime=x
+e.totalTime=z
+e.attackTime=I
+e.reviveTime=R
+e.reviveAddTime=N
+e.hideScore=L
+e.winHideScore=U
+e.drawHideScore=D
+e.loseHideScore=S
+e.winPoint=H
+e.drawPoint=C
+e.losePoint=O
+e.firstAward=k
+e.boxPoint=l
+e.maxBox=d
+e.boxAward=h
+e.showAward=r
+e.winAward=s
+e.drawAward=o
+e.loseAward=i
+e.loveFiveBoxAward=n
+e.boxWeekAward=u
+e.guildInspire=w
+e.Inspire=c
+e.inspireCost=b
+e.inspireAward=p
+e.inspireBuff=v
+e.inspireAtkAdd=y
+e.inspireHpAdd=m
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.openDay=t[2]
+e.newTime=t[3]
+e.lv=t[4]
+e.actDays=t[5]
+e.member=t[6]
+e.matchTime=t[7]
+e.readyTime=t[8]
+e.battleStartTime=t[9]
+e.nextDayEndTime=t[10]
+e.totalTime=t[11]
+e.attackTime=t[12]
+e.reviveTime=t[13]
+e.reviveAddTime=t[14]
+e.hideScore=t[15]
+e.winHideScore=t[16]
+e.drawHideScore=t[17]
+e.loseHideScore=t[18]
+e.winPoint=t[19]
+e.drawPoint=t[20]
+e.losePoint=t[21]
+e.firstAward=t[22]
+e.boxPoint=t[23]
+e.maxBox=t[24]
+e.boxAward=t[25]
+e.showAward=t[26]
+e.winAward=t[27]
+e.drawAward=t[28]
+e.loseAward=t[29]
+e.loveFiveBoxAward=t[30]
+e.boxWeekAward=t[31]
+e.guildInspire=t[32]
+e.Inspire=t[33]
+e.inspireCost=t[34]
+e.inspireAward=t[35]
+e.inspireBuff=t[36]
+e.inspireAtkAdd=t[37]
+e.inspireHpAdd=t[38]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/guildBattle/DTGuildBattleEntityTableData')
+end
+return a 

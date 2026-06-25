@@ -1,0 +1,16 @@
+cloud.png
+size:2048,256
+filter:Linear,Linear
+images/effect/yun/Map_11005_7_2_1
+bounds:625,35,441,153
+images/effect/yun/Map_11005_7_2_2
+bounds:1918,45,143,98
+rotate:90
+images/effect/yun/Map_11005_7_2_3
+bounds:1068,40,451,148
+images/effect/yun/Map_11005_7_2_4
+bounds:2,42,621,146
+images/effect/yun/Map_11005_7_2_5
+bounds:1521,40,395,148
+images/effect/yun/Map_11005_7_2_8
+bounds:1918,2,118,41

@@ -1,0 +1,28 @@
+local e={id=0,award={{},{}},awardNew={{},{}},awardNew2={{},{}},isWeaponClip=0,heroIdData4=0}
+e.__index=e
+function e.New(a,i,o,h,s,n)
+local t={}
+setmetatable(t,e)
+t.id=a
+t.award=i
+t.awardNew=o
+t.awardNew2=h
+t.isWeaponClip=s
+t.heroIdData4=n
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.award=a[2]
+t.awardNew=a[3]
+t.awardNew2=a[4]
+t.isWeaponClip=a[5]
+t.heroIdData4=a[6]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/activity/DTFirstRechargeNew2EntityTableData')
+end
+return e 

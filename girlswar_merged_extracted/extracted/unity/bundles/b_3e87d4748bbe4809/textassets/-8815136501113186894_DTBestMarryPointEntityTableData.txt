@@ -1,0 +1,17 @@
+local e=
+{
+ByIdx={
+{1,1,60,100,"bestmarrypointDesc_1"},
+{1001,2,20620,10,"bestmarrypointDesc_1001"},
+{1002,2,20621,10,"bestmarrypointDesc_1002"},
+{1003,2,20622,20,"bestmarrypointDesc_1003"},
+{1004,2,20623,20,"bestmarrypointDesc_1004"},
+{1005,2,20624,40,"bestmarrypointDesc_1005"},
+{1006,2,20625,40,"bestmarrypointDesc_1006"},
+{1007,2,20626,80,"bestmarrypointDesc_1007"},
+{1008,2,20627,80,"bestmarrypointDesc_1008"},
+{1009,2,10014,80,"bestmarrypointDesc_1009"}
+},
+Len=10
+}
+return e 

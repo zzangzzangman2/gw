@@ -1,0 +1,16 @@
+local e={}
+e.__index=e
+function e.New()
+local t={}
+setmetatable(t,e)
+return t
+end
+function e.NewFromArrItem(t)
+local t={}
+setmetatable(t,e)
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/maze/DTMazeItemShopEntityTableData')
+end
+return e 

@@ -1,0 +1,10 @@
+local e=
+{
+ByIdx={
+{1,2,"ui_luxurygoods_posname_1"},
+{2,3,"ui_luxurygoods_posname_2"},
+{3,4,"ui_luxurygoods_posname_3"}
+},
+Len=3
+}
+return e 

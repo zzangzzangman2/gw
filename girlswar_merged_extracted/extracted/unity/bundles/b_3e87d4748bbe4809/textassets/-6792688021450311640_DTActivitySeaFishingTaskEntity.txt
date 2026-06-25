@@ -1,0 +1,28 @@
+local e={id=0,taskType=0,taskParam=0,awardPoint={{},{}},name="",jump=0}
+e.__index=e
+function e.New(a,i,o,h,s,n)
+local t={}
+setmetatable(t,e)
+t.id=a
+t.taskType=i
+t.taskParam=o
+t.awardPoint=h
+t.name=s
+t.jump=n
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.taskType=a[2]
+t.taskParam=a[3]
+t.awardPoint=a[4]
+t.name=a[5]
+t.jump=a[6]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/activity/DTActivitySeaFishingTaskEntityTableData')
+end
+return e 

@@ -1,0 +1,26 @@
+local e={id=0,class=0,btnTips="",awardTitleName="",wishLevel=""}
+e.__index=e
+function e.New(o,n,a,s,i)
+local t={}
+setmetatable(t,e)
+t.id=o
+t.class=n
+t.btnTips=a
+t.awardTitleName=s
+t.wishLevel=i
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.class=a[2]
+t.btnTips=a[3]
+t.awardTitleName=a[4]
+t.wishLevel=a[5]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/activity/DTNewYearWishShowEntityTableData')
+end
+return e 

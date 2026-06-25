@@ -1,0 +1,5 @@
+spine_kaipaikuang.png
+size:128,128
+filter:Linear,Linear
+a1
+bounds:2,2,66,67

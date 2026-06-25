@@ -1,0 +1,89 @@
+
+?
+ActGeneral2.protoCommons.proto"
+PRT_GENERAL2_FUND_INFO_REQ"?
+PRT_GENERAL2_FUND_INFO_RESP
+isCharge (RisCharge 
+recFreeDids (RrecFreeDids$
+recChargeDids (RrecChargeDids
+nowDay (RnowDay"U
+PRT_GENERAL2_FUND_AWARD_REQ
+awardDid (RawardDid
+isCharge (RisCharge"V
+PRT_GENERAL2_FUND_AWARD_RESP
+awardDid (RawardDid
+isCharge (RisCharge"
+PRT_GENERAL2_RANK_REQ"?
+PRT_GENERAL2_RANK_RESP1
+	rankDatas (2.PRT_CS_COMMON_RANKR	rankDatas/
+selfRank (2.PRT_CS_COMMON_RANKRselfRank
+playerId (RplayerId"u
+%PRT_CS_GENERAL2_RANK_SCORE_UPDATE_SYN
+playerId (RplayerId
+score (Rscore
+changeMS (RchangeMS"?
+,PRT_CS_GENERAL2_RANK_CENTER_SCORE_UPDATE_SYN
+playerId (RplayerId 
+centerScore (RcenterScore
+changeMS (RchangeMS"?
+PRT_CHRISTMAS2_MAIN_ACTIVITY
+
+activityId (R
+activityId
+	startTime (R	startTime
+endTime (RendTime
+stage (Rstage""
+ PRT_CHRISTMAS2_MAIN_INFO_NEW_REQ"V
+!PRT_CHRISTMAS2_MAIN_INFO_NEW_RESP1
+acts (2.PRT_CHRISTMAS2_MAIN_ACTIVITYRacts"%
+#PRT_SEVEN_DAY_LOGIN_LUCKY2_INFO_REQ"?
+$PRT_SEVEN_DAY_LOGIN_LUCKY2_INFO_RESP
+endTime (RendTime
+	loginDays (R	loginDays"
+receivedDids (RreceivedDids&
+bpReceivedDids (RbpReceivedDids
+charge (Rcharge"R
+&PRT_SEVEN_DAY_LOGIN_LUCKY2_RECEIVE_REQ
+day (Rday
+charge (Rcharge"?
+'PRT_SEVEN_DAY_LOGIN_LUCKY2_RECEIVE_RESP"
+receivedDids (RreceivedDids
+charge (Rcharge&
+bpReceivedDids (RbpReceivedDids$
+rewards (2
+.PRT_THINGRrewards"
+PRT_GENERAL2_SHOP_INFO_REQ"?
+PRT_GENERAL2_SHOP_INFO_RESP 
+items (2
+.PRT_GOODSRitems"M
+PRT_GENERAL2_SHOP_BUY_REQ
+goodsDid (RgoodsDid
+count (Rcount"<
+PRT_GENERAL2_SHOP_BUY_RESP
+item (2
+.PRT_GOODSRitem" 
+PRT_GENERAL2_SPE_SHOP_INFO_REQ"[
+PRT_GENERAL2_SPE_SHOP_INFO_RESP 
+items (2
+.PRT_GOODSRitems
+freeCD (RfreeCD"Q
+PRT_GENERAL2_SPE_SHOP_BUY_REQ
+goodsDid (RgoodsDid
+count (Rcount"@
+PRT_GENERAL2_SPE_SHOP_BUY_RESP
+item (2
+.PRT_GOODSRitem"
+PRT_GENERAL2_GIFT_INFO_REQ"?
+PRT_GENERAL2_GIFT_INFO_RESP 
+gifts (2
+.PRT_GOODSRgifts
+freeCD (RfreeCD.
+historyGifts (2
+.PRT_GOODSRhistoryGifts"K
+PRT_GENERAL2_GIFT_BUY_REQ
+giftDid (RgiftDid
+count (Rcount"<
+PRT_GENERAL2_GIFT_BUY_RESP
+gift (2
+.PRT_GOODSRgiftB
+com.next1b.nextsvr.protobproto3

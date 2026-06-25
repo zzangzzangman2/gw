@@ -1,0 +1,77 @@
+local e={}
+e.__index=e
+function e.Init()
+e.indexData={}
+e.indexData['index_1']={}
+e.indexData['index_1']['1&bigd&0']={1}
+e.indexData['index_1']['1&bigd&1']={2}
+e.indexData['index_1']['1&bigd&2']={3}
+e.indexData['index_1']['1&bigd&3']={4}
+e.indexData['index_1']['1&bigd&4']={5}
+e.indexData['index_1']['1&bigd&5']={6}
+e.indexData['index_1']['1&bigd&6']={101}
+e.indexData['index_1']['1&bigd&7']={102}
+e.indexData['index_1']['1&bigd&8']={103}
+e.indexData['index_1']['11&bigd&0']={41}
+e.indexData['index_1']['12&bigd&0']={42}
+e.indexData['index_1']['14&bigd&0']={44}
+e.indexData['index_1']['15&bigd&0']={45}
+e.indexData['index_1']['16&bigd&0']={46}
+e.indexData['index_1']['2&bigd&0']={7}
+e.indexData['index_1']['2&bigd&1']={8}
+e.indexData['index_1']['2&bigd&2']={9}
+e.indexData['index_1']['2&bigd&3']={10}
+e.indexData['index_1']['2&bigd&4']={11}
+e.indexData['index_1']['2&bigd&5']={12}
+e.indexData['index_1']['2&bigd&6']={107}
+e.indexData['index_1']['2&bigd&7']={108}
+e.indexData['index_1']['2&bigd&8']={109}
+e.indexData['index_1']['3&bigd&0']={13}
+e.indexData['index_1']['3&bigd&1']={14}
+e.indexData['index_1']['3&bigd&2']={15}
+e.indexData['index_1']['3&bigd&3']={16}
+e.indexData['index_1']['3&bigd&4']={17}
+e.indexData['index_1']['3&bigd&5']={18}
+e.indexData['index_1']['3&bigd&6']={113}
+e.indexData['index_1']['3&bigd&7']={114}
+e.indexData['index_1']['3&bigd&8']={115}
+e.indexData['index_1']['4&bigd&0']={19}
+e.indexData['index_1']['4&bigd&1']={20}
+e.indexData['index_1']['4&bigd&2']={21}
+e.indexData['index_1']['4&bigd&3']={22}
+e.indexData['index_1']['4&bigd&4']={23}
+e.indexData['index_1']['4&bigd&5']={24}
+e.indexData['index_1']['4&bigd&6']={119}
+e.indexData['index_1']['4&bigd&7']={120}
+e.indexData['index_1']['4&bigd&8']={121}
+e.indexData['index_1']['5&bigd&0']={25}
+e.indexData['index_1']['5&bigd&1']={26}
+e.indexData['index_1']['5&bigd&2']={27}
+e.indexData['index_1']['5&bigd&3']={28}
+e.indexData['index_1']['5&bigd&4']={29}
+e.indexData['index_1']['5&bigd&5']={30}
+e.indexData['index_1']['5&bigd&6']={125}
+e.indexData['index_1']['5&bigd&7']={126}
+e.indexData['index_1']['5&bigd&8']={127}
+e.indexData['index_1']['6&bigd&0']={31}
+e.indexData['index_1']['6&bigd&1']={32}
+e.indexData['index_1']['6&bigd&2']={33}
+e.indexData['index_1']['6&bigd&3']={34}
+e.indexData['index_1']['6&bigd&4']={35}
+e.indexData['index_1']['6&bigd&5']={36}
+e.indexData['index_1']['6&bigd&6']={131}
+e.indexData['index_1']['6&bigd&7']={132}
+e.indexData['index_1']['6&bigd&8']={133}
+e.indexData['index_1']['7&bigd&0']={37}
+e.indexData['index_1']['8&bigd&0']={38}
+e.indexData['index_1']['9&bigd&0']={39}
+end
+function e.GetByIndex(t,a)
+if e.indexData[t]and e.indexData[t][a]then
+return e.indexData[t][a]
+else
+return{}
+end
+end
+return e
+

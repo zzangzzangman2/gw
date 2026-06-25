@@ -1,0 +1,78 @@
+local a={id=0,dayRewards={{},{}},lrMultipiRate=0,lrMultipiResults={{},{}},lrOneCostItem=0,lrTenCostItem=0,lrOneCost={},lrTenCost={},lrItemCost={},lrCommPool=0,lrFloorTime=0,lrFloorPool=0,urMultipiRate=0,urMultipiResults={{},{}},urOneCostItem=0,urTenCostItem=0,urOneCost={},urTenCost={},urItemCost={},urCommPool=0,urFloorTime=0,urFloorPool=0,ssrFreeCd=0,ssrMultipiRate=0,ssrMultipiResults={{},{}},ssrOneCost={},ssrFiveCost={},ssrItemCost=0,ssrCommPool=0,ssrFloorTime=0,ssrFloorPool=0}
+a.__index=a
+function a.New(u,v,y,t,q,j,k,b,g,z,T,_,O,I,A,E,N,x,p,r,s,h,n,o,i,d,c,l,f,w,m)
+local e={}
+setmetatable(e,a)
+e.id=u
+e.dayRewards=v
+e.lrMultipiRate=y
+e.lrMultipiResults=t
+e.lrOneCostItem=q
+e.lrTenCostItem=j
+e.lrOneCost=k
+e.lrTenCost=b
+e.lrItemCost=g
+e.lrCommPool=z
+e.lrFloorTime=T
+e.lrFloorPool=_
+e.urMultipiRate=O
+e.urMultipiResults=I
+e.urOneCostItem=A
+e.urTenCostItem=E
+e.urOneCost=N
+e.urTenCost=x
+e.urItemCost=p
+e.urCommPool=r
+e.urFloorTime=s
+e.urFloorPool=h
+e.ssrFreeCd=n
+e.ssrMultipiRate=o
+e.ssrMultipiResults=i
+e.ssrOneCost=d
+e.ssrFiveCost=c
+e.ssrItemCost=l
+e.ssrCommPool=f
+e.ssrFloorTime=w
+e.ssrFloorPool=m
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.dayRewards=t[2]
+e.lrMultipiRate=t[3]
+e.lrMultipiResults=t[4]
+e.lrOneCostItem=t[5]
+e.lrTenCostItem=t[6]
+e.lrOneCost=t[7]
+e.lrTenCost=t[8]
+e.lrItemCost=t[9]
+e.lrCommPool=t[10]
+e.lrFloorTime=t[11]
+e.lrFloorPool=t[12]
+e.urMultipiRate=t[13]
+e.urMultipiResults=t[14]
+e.urOneCostItem=t[15]
+e.urTenCostItem=t[16]
+e.urOneCost=t[17]
+e.urTenCost=t[18]
+e.urItemCost=t[19]
+e.urCommPool=t[20]
+e.urFloorTime=t[21]
+e.urFloorPool=t[22]
+e.ssrFreeCd=t[23]
+e.ssrMultipiRate=t[24]
+e.ssrMultipiResults=t[25]
+e.ssrOneCost=t[26]
+e.ssrFiveCost=t[27]
+e.ssrItemCost=t[28]
+e.ssrCommPool=t[29]
+e.ssrFloorTime=t[30]
+e.ssrFloorPool=t[31]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/activity/DTSelfMarketLREntityTableData')
+end
+return a 

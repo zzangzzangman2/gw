@@ -1,0 +1,11 @@
+local t={}
+function t:OnHandle(e)
+local e=assert(GlobalPB.decode("PRT_WAR_OF_ATTRITION_ATTACK_ROUND_SYN",e));
+if(GameInit.GetDebugLogProto())then
+;
+;
+end
+ModulesInit.WarOfAttritionMgr:RespFightInfo(e)
+return e
+end
+return t 

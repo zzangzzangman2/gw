@@ -1,0 +1,5 @@
+sp_magicOrchard_arrow.png
+size:64,64
+filter:Linear,Linear
+ycdt_zxjiantou
+bounds:0,0,60,54

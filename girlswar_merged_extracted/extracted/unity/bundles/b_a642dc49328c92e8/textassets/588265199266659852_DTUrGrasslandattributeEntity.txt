@@ -1,0 +1,28 @@
+local e={id=0,activityType=0,type=0,level=0,attributeBonus=0,consume={}}
+e.__index=e
+function e.New(a,i,o,h,s,n)
+local t={}
+setmetatable(t,e)
+t.id=a
+t.activityType=i
+t.type=o
+t.level=h
+t.attributeBonus=s
+t.consume=n
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.activityType=a[2]
+t.type=a[3]
+t.level=a[4]
+t.attributeBonus=a[5]
+t.consume=a[6]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/urgrassland/DTUrGrasslandattributeEntityTableData')
+end
+return e 

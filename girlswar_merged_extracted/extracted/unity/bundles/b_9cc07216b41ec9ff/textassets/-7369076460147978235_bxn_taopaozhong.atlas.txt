@@ -1,0 +1,8 @@
+bxn_taopaozhong.png
+size:256,64
+filter:Linear,Linear
+djtt_mszbt2
+bounds:2,2,214,40
+offsets:0,2,214,51
+djtt_mszbt5
+bounds:218,23,17,19

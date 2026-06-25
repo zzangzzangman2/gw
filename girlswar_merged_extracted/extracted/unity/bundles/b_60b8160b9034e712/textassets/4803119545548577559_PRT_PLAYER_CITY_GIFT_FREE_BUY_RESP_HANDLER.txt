@@ -1,0 +1,11 @@
+local t={}
+function t:OnHandle(e)
+local e=assert(GlobalPB.decode("PRT_PLAYER_CITY_GIFT_FREE_BUY_RESP",e));
+if(GameInit.GetDebugLogProto())then
+;
+;
+end
+PlayerCityMgr:ParseGiftShopBuyFreeInfo(e)
+return e
+end
+return t 

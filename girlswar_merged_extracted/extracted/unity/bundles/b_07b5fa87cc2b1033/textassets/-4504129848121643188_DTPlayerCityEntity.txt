@@ -1,0 +1,26 @@
+local e={id=0,attr={{},{}},cost={{},{}},imageStage=0,award={}}
+e.__index=e
+function e.New(o,n,a,s,i)
+local t={}
+setmetatable(t,e)
+t.id=o
+t.attr=n
+t.cost=a
+t.imageStage=s
+t.award=i
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.attr=a[2]
+t.cost=a[3]
+t.imageStage=a[4]
+t.award=a[5]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/playerCity/DTPlayerCityEntityTableData')
+end
+return e 

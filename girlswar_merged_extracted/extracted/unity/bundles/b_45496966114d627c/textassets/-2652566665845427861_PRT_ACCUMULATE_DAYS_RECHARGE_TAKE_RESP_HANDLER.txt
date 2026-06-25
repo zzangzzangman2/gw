@@ -1,0 +1,11 @@
+local t={}
+function t:OnHandle(e)
+local e=assert(GlobalPB.decode("PRT_ACCUMULATE_DAYS_RECHARGE_TAKE_RESP",e));
+if(GameInit.GetDebugLogProto())then
+;
+;
+end
+EventSystem.SendEvent(CommonEventId.OnRebateRefresh,413,e.tookDid)
+return e
+end
+return t 

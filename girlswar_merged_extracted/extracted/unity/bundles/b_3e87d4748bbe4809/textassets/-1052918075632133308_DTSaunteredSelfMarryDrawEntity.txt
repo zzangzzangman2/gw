@@ -1,0 +1,36 @@
+local a={id=0,minNum=0,maxNum=0,marryPool=0,oneCost={},tenCost={},itemCost=0,multipiRate=0,multipiResults={{},{}},marryPoolFORMULA=""}
+a.__index=a
+function a.New(n,r,s,t,l,u,d,h,o,i)
+local e={}
+setmetatable(e,a)
+e.id=n
+e.minNum=r
+e.maxNum=s
+e.marryPool=t
+e.oneCost=l
+e.tenCost=u
+e.itemCost=d
+e.multipiRate=h
+e.multipiResults=o
+e.marryPoolFORMULA=i
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.minNum=t[2]
+e.maxNum=t[3]
+e.marryPool=t[4]
+e.oneCost=t[5]
+e.tenCost=t[6]
+e.itemCost=t[7]
+e.multipiRate=t[8]
+e.multipiResults=t[9]
+e.marryPoolFORMULA=t[10]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/activity/DTSaunteredSelfMarryDrawEntityTableData')
+end
+return a 

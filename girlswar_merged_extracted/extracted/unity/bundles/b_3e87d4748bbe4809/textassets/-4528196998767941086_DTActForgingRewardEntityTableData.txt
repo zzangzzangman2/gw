@@ -1,0 +1,12 @@
+local e=
+{
+ByIdx={
+{1,{0,84},1,0,0,0,""},
+{2,{85,89},2,1,1,1,"ui_ActForging_type1"},
+{3,{90,94},2,2,1,2,"ui_ActForging_type2"},
+{4,{95,100},3,3,1,3,"ui_ActForging_type3"},
+{5,{101,999999},4,101,1,4,"ui_ActForging_type4"}
+},
+Len=5
+}
+return e 

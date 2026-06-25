@@ -1,0 +1,16 @@
+
+?
+ActTreasure.proto" 
+PRT_ACT_TREASURE_SALE_INFO_REQ"?
+PRT_ACT_TREASURE_SALE_INFO_RESP
+	countdown (R	countdown*
+buys (2.PRT_ACT_TREASURE_SALERbuys
+endTime (RendTime
+free (Rfree"E
+PRT_ACT_TREASURE_SALE
+buyId (RbuyId
+buyNum (RbuyNum" 
+PRT_ACT_TREASURE_SALE_FREE_REQ"5
+PRT_ACT_TREASURE_SALE_FREE_RESP
+free (RfreeB
+com.next1b.nextsvr.protobproto3

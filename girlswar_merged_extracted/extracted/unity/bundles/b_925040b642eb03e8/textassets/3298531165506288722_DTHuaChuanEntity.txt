@@ -1,0 +1,50 @@
+local a={id=0,firstOpenTime="",startTime="",readyTime=0,baseSpeed=0,map=0,boss={},time=0,fristTidal=0,secondTidal=0,startItem={{},{}},cheerCost={},cheerMax=0,cheerSpeed=0,cheerAward={},fallWaterTime=0,maxRankShow=0}
+a.__index=a
+function a.New(h,u,d,t,m,c,w,p,y,v,f,l,n,i,o,s,r)
+local e={}
+setmetatable(e,a)
+e.id=h
+e.firstOpenTime=u
+e.startTime=d
+e.readyTime=t
+e.baseSpeed=m
+e.map=c
+e.boss=w
+e.time=p
+e.fristTidal=y
+e.secondTidal=v
+e.startItem=f
+e.cheerCost=l
+e.cheerMax=n
+e.cheerSpeed=i
+e.cheerAward=o
+e.fallWaterTime=s
+e.maxRankShow=r
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.firstOpenTime=t[2]
+e.startTime=t[3]
+e.readyTime=t[4]
+e.baseSpeed=t[5]
+e.map=t[6]
+e.boss=t[7]
+e.time=t[8]
+e.fristTidal=t[9]
+e.secondTidal=t[10]
+e.startItem=t[11]
+e.cheerCost=t[12]
+e.cheerMax=t[13]
+e.cheerSpeed=t[14]
+e.cheerAward=t[15]
+e.fallWaterTime=t[16]
+e.maxRankShow=t[17]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/guild/DTHuaChuanEntityTableData')
+end
+return a 

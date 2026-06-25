@@ -1,0 +1,88 @@
+
+?
+ActTeamGift.protoCommons.protoErrorCode.proto"Q
+TEAM_GIFT_ITEM_POS_DATA
+gridIdx (RgridIdx
+	rewardIdx (R	rewardIdx"?
+GIFT_FRIEND_DATA
+playerId (RplayerId
+level (Rlevel
+name (	Rname
+head (Rhead
+	headFrame (R	headFrame
+profile (Rprofile
+
+fightValue (R
+fightValue
+serverId (RserverId"?
+TEAM_GIFT_DATA
+giftDid (RgiftDid6
+	awardData (2.TEAM_GIFT_ITEM_POS_DATAR	awardData1
+
+friendData (2.GIFT_FRIEND_DATAR
+friendData
+isSend (RisSend
+isBuy (RisBuy"x
+TEAM_GIFT_BIND_FRIEND_SEND_DATA1
+
+friendInfo (2.GIFT_FRIEND_DATAR
+friendInfo"
+isInvitation (RisInvitation"
+PRT_TEAM_GIFT_INFO_REQ"N
+PRT_TEAM_GIFT_INFO_RESP3
+teamGiftList (2.TEAM_GIFT_DATARteamGiftList"h
+PRT_TEAM_GIFT_SELECT_THING_REQ
+giftDid (RgiftDid,
+list (2.TEAM_GIFT_ITEM_POS_DATARlist"j
+PRT_TEAM_GIFT_SELECT_THING_RESP+
+teamGift (2.TEAM_GIFT_DATARteamGift
+playerId (RplayerId"C
+'PRT_TEAM_GIFT_BIND_FRIEND_SEND_LIST_REQ
+giftDid (RgiftDid"p
+(PRT_TEAM_GIFT_BIND_FRIEND_SEND_LIST_RESPD
+sendBindList (2 .TEAM_GIFT_BIND_FRIEND_SEND_DATARsendBindList"G
++PRT_TEAM_GIFT_BIND_FRIEND_RECEIVED_LIST_REQ
+giftDid (RgiftDid"t
+,PRT_TEAM_GIFT_BIND_FRIEND_RECEIVED_LIST_RESPD
+receivedList (2 .TEAM_GIFT_BIND_FRIEND_SEND_DATARreceivedList"]
+PRT_TEAM_GIFT_BIND_FRIEND_REQ
+giftDid (RgiftDid"
+bindPlayerId (RbindPlayerId"f
+PRT_TEAM_GIFT_BIND_FRIEND_RESPD
+sendBindData (2 .TEAM_GIFT_BIND_FRIEND_SEND_DATARsendBindData"}
+#PRT_TEAM_GIFT_BIND_FRIEND_AGREE_REQ
+isAgree (RisAgree
+giftDid (RgiftDid"
+bindPlayerId (RbindPlayerId"?
+$PRT_TEAM_GIFT_BIND_FRIEND_AGREE_RESP
+isAgree (RisAgree 
+result (2.ErrCodeRresultD
+receivedList (2 .TEAM_GIFT_BIND_FRIEND_SEND_DATARreceivedList3
+teamGiftData (2.TEAM_GIFT_DATARteamGiftData"v
+#PRT_TEAM_GIFT_BIND_FRIEND_AGREE_SYN3
+teamGiftData (2.TEAM_GIFT_DATARteamGiftData
+playerId (RplayerId"2
+PRT_TEAM_GIFT_GIVE_REQ
+giftDid (RgiftDid"N
+PRT_TEAM_GIFT_GIVE_RESP3
+teamGiftData (2.TEAM_GIFT_DATARteamGiftData"5
+PRT_TEAM_GIFT_RECEIVE_REQ
+giftDid (RgiftDid"?
+PRT_TEAM_GIFT_RECEIVE_RESP3
+teamGiftList (2.TEAM_GIFT_DATARteamGiftList"
+awards (2
+.PRT_THINGRawards
+playerId (RplayerId" 
+PRT_TEAM_GIFT_RECEIVE_LIST_REQ"V
+PRT_TEAM_GIFT_RECEIVE_LIST_RESP3
+teamGiftList (2.TEAM_GIFT_DATARteamGiftList"<
+PRT_CS_TEAM_GIFT_RED_POINT_REQ
+playerId (RplayerId"?
+PRT_CS_TEAM_GIFT_RED_POINT_RESP
+playerId (RplayerId3
+redPointIds (2.ENUM_REDPOINT_IDRredPointIds
+giftDid (RgiftDid"P
+PRT_CS_TEAM_GIFT_PAY_SYN
+giftDid (RgiftDid
+playerId (RplayerIdB
+com.next1b.nextsvr.protobproto3

@@ -1,0 +1,11 @@
+local e={}
+function e:OnHandle(e)
+local e=assert(GlobalPB.decode("PRT_PLAYER_CHANGE_HEAD_FRAME_RESP",e));
+if(GameInit.GetDebugLogProto())then
+;
+;
+end
+PlayerMgr.PlayerInfo.headFrame=e.headFrame
+EventSystem.SendEvent(CommonEventId.OnPlayInfoChange)
+end
+return e 

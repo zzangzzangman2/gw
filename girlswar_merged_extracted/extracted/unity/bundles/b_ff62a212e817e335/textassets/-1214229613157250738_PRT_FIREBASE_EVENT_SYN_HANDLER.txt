@@ -1,0 +1,11 @@
+local t={}
+function t:OnHandle(e)
+local e=assert(GlobalPB.decode("PRT_FIREBASE_EVENT_SYN",e));
+if(GameInit.GetDebugLogProto())then
+;
+;
+end
+GameTools.FirebaseEventById(e.type)
+return e
+end
+return t 

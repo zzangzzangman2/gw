@@ -1,0 +1,9 @@
+texun_star1.png
+size:353,302
+filter:Linear,Linear
+huangguang000
+bounds:2,2,298,298
+offsets:17,18,335,334
+huangsexing
+bounds:302,251,49,49
+offsets:1,0,50,49

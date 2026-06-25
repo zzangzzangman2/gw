@@ -1,0 +1,7 @@
+caideng.png
+size:1024,1024
+filter:Linear,Linear
+1
+bounds:437,0,581,930
+1_1
+bounds:0,0,581,930

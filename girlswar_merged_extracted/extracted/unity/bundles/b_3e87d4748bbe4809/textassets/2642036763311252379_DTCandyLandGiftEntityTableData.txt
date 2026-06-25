@@ -1,0 +1,13 @@
+local e=
+{
+ByIdx={
+{1,0,1,1,{{21386,1}},"UIActCandyLand/tangguolibao_1"},
+{2,304,2,2,{{21386,4}},"UIActCandyLand/tangguolibao_2"},
+{3,310,2,2,{{21386,12}},"UIActCandyLand/tangguolibao_3"},
+{4,324,2,2,{{21386,24}},"UIActCandyLand/tangguolibao_4"},
+{5,327,2,10,{{21386,40}},"UIActCandyLand/tangguolibao_5"},
+{6,329,2,50,{{21386,80}},"UIActCandyLand/tangguolibao_6"}
+},
+Len=6
+}
+return e 

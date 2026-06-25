@@ -1,0 +1,10 @@
+activityname_136.png
+size:128,128
+filter:Linear,Linear
+2
+bounds:0,0,34,62
+rotate:90
+3
+bounds:55,39,42,70
+4
+bounds:0,36,53,73

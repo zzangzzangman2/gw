@@ -1,0 +1,28 @@
+local e={id=0,attrRate=0,petCount=0,unlock=0,name="",icon=""}
+e.__index=e
+function e.New(a,i,o,h,s,n)
+local t={}
+setmetatable(t,e)
+t.id=a
+t.attrRate=i
+t.petCount=o
+t.unlock=h
+t.name=s
+t.icon=n
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.attrRate=a[2]
+t.petCount=a[3]
+t.unlock=a[4]
+t.name=a[5]
+t.icon=a[6]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/summonPet/DTSummonPetBlessEntityTableData')
+end
+return e 

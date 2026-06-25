@@ -1,0 +1,15 @@
+local t={}
+function t:OnHandle(e)
+local e=assert(GlobalPB.decode("PRT_GUILD_TRIAL_FIGHT_RESP",e));
+if(GameInit.GetDebugLogProto())then
+;
+;
+end
+if ModulesInit.AutoHelperMgr.isAuto then
+EventSystem.SendEvent(CommonEventId.OnPRT_GUILD_TRIAL_FIGHT_RESP,e)
+return e
+end
+ModulesInit.GuildTrialsMgr:syncGuildTrialsFight(e)
+return e
+end
+return t 

@@ -1,0 +1,14 @@
+activityname_401_1020.png
+size:128,128
+filter:Linear,Linear
+a72
+bounds:30,2,21,24
+offsets:2,1,25,26
+rotate:90
+a73
+bounds:2,3,20,26
+offsets:1,1,22,28
+rotate:90
+a75
+bounds:2,25,66,77
+offsets:1,1,69,79

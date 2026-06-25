@@ -1,0 +1,38 @@
+local a={id=0,remove="",questType=0,hero=0,heroFORMULA="",needCount={},reward={{},{}},text="",jump=0,listNum=0,type=0}
+a.__index=a
+function a.New(n,r,s,t,l,u,c,d,h,o,i)
+local e={}
+setmetatable(e,a)
+e.id=n
+e.remove=r
+e.questType=s
+e.hero=t
+e.heroFORMULA=l
+e.needCount=u
+e.reward=c
+e.text=d
+e.jump=h
+e.listNum=o
+e.type=i
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.remove=t[2]
+e.questType=t[3]
+e.hero=t[4]
+e.heroFORMULA=t[5]
+e.needCount=t[6]
+e.reward=t[7]
+e.text=t[8]
+e.jump=t[9]
+e.listNum=t[10]
+e.type=t[11]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/activity/DTNewJourneyTaskEntityTableData')
+end
+return a 

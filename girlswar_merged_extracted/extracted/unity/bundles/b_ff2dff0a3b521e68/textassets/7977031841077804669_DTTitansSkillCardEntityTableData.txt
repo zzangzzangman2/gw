@@ -1,0 +1,23 @@
+local e=
+{
+ByIdx={
+{1,"UI.TT.JNKMC.01","tt_cardskillicon_1",1,"UIBaoxiangniang/tt_zdjmc1",3,1000,"UI.TT.JNKMS.01",{2000},{200}},
+{2,"UI.TT.JNKMC.02","tt_cardskillicon_2",1,"UIBaoxiangniang/tt_zdjmc1",4,1000,"UI.TT.JNKMS.02",{30000},{300,2}},
+{3,"UI.TT.JNKMC.03","tt_cardskillicon_3",1,"UIBaoxiangniang/tt_zdjmc1",5,1000,"UI.TT.JNKMS.03",{2000,3,30000},{20,3,30}},
+{4,"UI.TT.JNKMC.04","tt_cardskillicon_4",2,"UIBaoxiangniang/tt_zdjmc2",3,1000,"UI.TT.JNKMS.04",{2000},{20}},
+{6,"UI.TT.JNKMC.06","tt_cardskillicon_6",2,"UIBaoxiangniang/tt_zdjmc2",5,1000,"UI.TT.JNKMS.06",{3000,500,2000},{3000,500,2000}},
+{7,"UI.TT.JNKMC.07","tt_cardskillicon_7",3,"UIBaoxiangniang/tt_zdjmc3",3,1000,"UI.TT.JNKMS.07",{2000},{20}},
+{8,"UI.TT.JNKMC.08","tt_cardskillicon_8",3,"UIBaoxiangniang/tt_zdjmc3",4,1000,"UI.TT.JNKMS.08",{5000,60000},{50,60}},
+{9,"UI.TT.JNKMC.09","tt_cardskillicon_9",3,"UIBaoxiangniang/tt_zdjmc3",5,1000,"UI.TT.JNKMS.09",{5},{5,20}},
+{10,"UI.TT.JNKMC.10","tt_cardskillicon_10",5,"UIBaoxiangniang/tt_zdjmc5",3,1000,"UI.TT.JNKMS.10",{2000},{20}},
+{11,"UI.TT.JNKMC.11","tt_cardskillicon_11",5,"UIBaoxiangniang/tt_zdjmc5",4,1000,"UI.TT.JNKMS.11",{0},{0}},
+{12,"UI.TT.JNKMC.12","tt_cardskillicon_12",5,"UIBaoxiangniang/tt_zdjmc5",5,1000,"UI.TT.JNKMS.12",{2000},{20}},
+{13,"UI.TT.JNKMC.13","tt_cardskillicon_13",4,"UIBaoxiangniang/tt_zdjmc4",3,1000,"UI.TT.JNKMS.13",{100},{1}},
+{14,"UI.TT.JNKMC.14","tt_cardskillicon_14",4,"UIBaoxiangniang/tt_zdjmc4",4,1000,"UI.TT.JNKMS.14",{5000,10000},{50,10}},
+{15,"UI.TT.JNKMC.15","tt_cardskillicon_15",4,"UIBaoxiangniang/tt_zdjmc4",5,1000,"UI.TT.JNKMS.15",{2,10000},{2,10}},
+{17,"UI.TT.JNKMC.17","tt_cardskillicon_17",0,"UIBaoxiangniang/tt_zdjmc6",5,1000,"UI.TT.JNKMS.17",{5000},{50}},
+{19,"UI.TT.JNKMC.19","tt_cardskillicon_19",0,"UIBaoxiangniang/tt_zdjmc6",5,1000,"UI.TT.JNKMS.19",{3000,60000},{30,60}}
+},
+Len=16
+}
+return e 

@@ -1,0 +1,10 @@
+local e={}
+function e:OnHandle(e)
+local e=assert(GlobalPB.decode("PRT_NEW_YEAR_FUND_LEVE_UP_RESP",e));
+if(GameInit.GetDebugLogProto())then
+;
+;
+end
+return e
+end
+return e 

@@ -1,0 +1,83 @@
+
+?
+ActNewYearPuzzle.protoCommons.protoSnapshot.proto"q
+!PRT_NEW_YEAR_PUZZLE_FIREWORK_SEND
+serverId (RserverId
+name (	Rname
+	sendCount (R	sendCount"Y
+PRT_NEW_YEAR_PUZZLE_CHIP_SEND
+playerId (RplayerId
+	sendCount (R	sendCount"?
+!PRT_NEW_YEAR_PUZZLE_CHIP_RECEIVED
+
+receivedId (R
+receivedId(
+player (2.PRT_PLAYER_DESCRplayer
+chipDid (RchipDid
+sendTime (RsendTime"
+PRT_NEW_YEAR_PUZZLE_INFO_REQ"_
+PRT_NEW_YEAR_PUZZLE_INFO_RESP
+leftTime (RleftTime"
+composeCount (RcomposeCount"!
+PRT_NEW_YEAR_PUZZLE_COMPOSE_REQ"i
+ PRT_NEW_YEAR_PUZZLE_COMPOSE_RESP"
+composeCount (RcomposeCount!
+award (2.PRT_REWARDRaward"
+PRT_NEW_YEAR_PUZZLE_TASK_REQ"@
+PRT_NEW_YEAR_PUZZLE_TASK_RESP
+tasks (2	.PRT_TASKRtasks">
+"PRT_NEW_YEAR_PUZZLE_TASK_AWARD_REQ
+taskDid (RtaskDid"?
+#PRT_NEW_YEAR_PUZZLE_TASK_AWARD_RESP
+taskDid (RtaskDid"(
+&PRT_NEW_YEAR_PUZZLE_CHIP_SEND_LIST_REQ"c
+'PRT_NEW_YEAR_PUZZLE_CHIP_SEND_LIST_RESP8
+players (2.PRT_NEW_YEAR_PUZZLE_CHIP_SENDRplayers"?
+!PRT_NEW_YEAR_PUZZLE_CHIP_SEND_REQ 
+recPlayerId (RrecPlayerId 
+recServerId (RrecServerId
+type (Rtype
+chipDid (RchipDid(
+player (2.PRT_PLAYER_DESCRplayer"?
+"PRT_NEW_YEAR_PUZZLE_CHIP_SEND_RESP 
+recPlayerId (RrecPlayerId 
+recServerId (RrecServerId
+type (Rtype
+chipDid (RchipDid(
+player (2.PRT_PLAYER_DESCRplayer",
+*PRT_NEW_YEAR_PUZZLE_CHIP_RECEIVED_LIST_REQ"g
++PRT_NEW_YEAR_PUZZLE_CHIP_RECEIVED_LIST_RESP8
+chips (2".PRT_NEW_YEAR_PUZZLE_CHIP_RECEIVEDRchips"F
+$PRT_NEW_YEAR_PUZZLE_CHIP_RECEIVE_REQ
+
+receivedId (R
+receivedId"G
+%PRT_NEW_YEAR_PUZZLE_CHIP_RECEIVE_RESP
+
+receivedId (R
+receivedId"'
+%PRT_NEW_YEAR_PUZZLE_FIREWORK_INFO_REQ"?
+&PRT_NEW_YEAR_PUZZLE_FIREWORK_INFO_RESP*
+players (2.PRT_PLAYER_DESCRplayersD
+sendPlayers (2".PRT_NEW_YEAR_PUZZLE_FIREWORK_SENDRsendPlayers",
+*PRT_NEW_YEAR_PUZZLE_FIREWORK_SEND_INFO_REQ"s
++PRT_NEW_YEAR_PUZZLE_FIREWORK_SEND_INFO_RESPD
+sendPlayers (2".PRT_NEW_YEAR_PUZZLE_FIREWORK_SENDRsendPlayers"=
+%PRT_NEW_YEAR_PUZZLE_FIREWORK_SEND_REQ
+count (Rcount"b
+&PRT_NEW_YEAR_PUZZLE_FIREWORK_SEND_RESP
+count (Rcount"
+things (2
+.PRT_THINGRthings"r
+(PRT_CS_NEW_YEAR_PUZZLE_FIREWORK_INFO_REQ
+playerId (RplayerId*
+guildMemberCount (RguildMemberCount"?
+)PRT_CS_NEW_YEAR_PUZZLE_FIREWORK_INFO_RESP
+playerId (RplayerId6
+friendPlayers (2.PRT_PLAYER_DESCRfriendPlayersD
+sendPlayers (2".PRT_NEW_YEAR_PUZZLE_FIREWORK_SENDRsendPlayers"x
+(PRT_CS_NEW_YEAR_PUZZLE_FIREWORK_SEND_SYN
+playerId (RplayerId
+name (	Rname
+	sendCount (R	sendCountB
+com.next1b.nextsvr.protobproto3

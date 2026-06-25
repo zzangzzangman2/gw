@@ -1,0 +1,16 @@
+shmj_changjingyu.png
+size:512,128
+filter:Linear,Linear
+scale:0.7
+collectItem_19
+bounds:2,2,122,113
+offsets:4,4,126,126
+rotate:90
+collectItem_21
+bounds:117,4,120,89
+offsets:3,17,126,126
+rotate:90
+collectItem_23
+bounds:208,3,121,67
+offsets:3,30,126,126
+rotate:90

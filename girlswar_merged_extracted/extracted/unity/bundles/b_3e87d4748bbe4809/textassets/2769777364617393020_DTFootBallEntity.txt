@@ -1,0 +1,30 @@
+local t={id=0,arrowRotationSpeed=0,enemySpeed=0,enemyCount=0,onwerSpeed=0,onwerCount=0,isDoor=0}
+t.__index=t
+function t.New(o,h,a,s,r,n,i)
+local e={}
+setmetatable(e,t)
+e.id=o
+e.arrowRotationSpeed=h
+e.enemySpeed=a
+e.enemyCount=s
+e.onwerSpeed=r
+e.onwerCount=n
+e.isDoor=i
+return e
+end
+function t.NewFromArrItem(a)
+local e={}
+setmetatable(e,t)
+e.id=a[1]
+e.arrowRotationSpeed=a[2]
+e.enemySpeed=a[3]
+e.enemyCount=a[4]
+e.onwerSpeed=a[5]
+e.onwerCount=a[6]
+e.isDoor=a[7]
+return e
+end
+function t.GetArr()
+return require('DataNode/DataTable/Create/activity/DTFootBallEntityTableData')
+end
+return t 

@@ -1,0 +1,13 @@
+ww.png
+size:1024,512
+filter:Linear,Linear
+effect/effect_1
+bounds:2,2,397,391
+effect/guangll3
+bounds:401,123,64,64
+ww1
+bounds:401,43,55,78
+ww2
+bounds:426,7,50,70
+ww3
+bounds:401,17,463,376

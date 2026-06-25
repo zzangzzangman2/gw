@@ -1,0 +1,30 @@
+local t={id=0,heroId=0,type=0,level=0,attr={{},{}},receiveTalentPoints=0,sortId=0}
+t.__index=t
+function t.New(o,h,a,s,r,n,i)
+local e={}
+setmetatable(e,t)
+e.id=o
+e.heroId=h
+e.type=a
+e.level=s
+e.attr=r
+e.receiveTalentPoints=n
+e.sortId=i
+return e
+end
+function t.NewFromArrItem(a)
+local e={}
+setmetatable(e,t)
+e.id=a[1]
+e.heroId=a[2]
+e.type=a[3]
+e.level=a[4]
+e.attr=a[5]
+e.receiveTalentPoints=a[6]
+e.sortId=a[7]
+return e
+end
+function t.GetArr()
+return require('DataNode/DataTable/Create/deityStatue/DTDeityStatueEntityTableData')
+end
+return t 

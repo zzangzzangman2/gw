@@ -1,0 +1,54 @@
+local a={id=0,pCloud={},tower={{},{}},monster={{},{}},upStar={},tavern={},altar={},eventHut={},treasure={{},{}},items={{},{}},treasureBig={},award={{},{}},awardNew={{},{}},campsite={},mazeShop={},gate={},awardAltar={},ornament={{},{}},awardType=0}
+a.__index=a
+function a.New(d,c,l,t,f,m,y,v,p,b,g,w,u,n,i,o,s,r,h)
+local e={}
+setmetatable(e,a)
+e.id=d
+e.pCloud=c
+e.tower=l
+e.monster=t
+e.upStar=f
+e.tavern=m
+e.altar=y
+e.eventHut=v
+e.treasure=p
+e.items=b
+e.treasureBig=g
+e.award=w
+e.awardNew=u
+e.campsite=n
+e.mazeShop=i
+e.gate=o
+e.awardAltar=s
+e.ornament=r
+e.awardType=h
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.pCloud=t[2]
+e.tower=t[3]
+e.monster=t[4]
+e.upStar=t[5]
+e.tavern=t[6]
+e.altar=t[7]
+e.eventHut=t[8]
+e.treasure=t[9]
+e.items=t[10]
+e.treasureBig=t[11]
+e.award=t[12]
+e.awardNew=t[13]
+e.campsite=t[14]
+e.mazeShop=t[15]
+e.gate=t[16]
+e.awardAltar=t[17]
+e.ornament=t[18]
+e.awardType=t[19]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/maze/DTMazeRandomEntityTableData')
+end
+return a 

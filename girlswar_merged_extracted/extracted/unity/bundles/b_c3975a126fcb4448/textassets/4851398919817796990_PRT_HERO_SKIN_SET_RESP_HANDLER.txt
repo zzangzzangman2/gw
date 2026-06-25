@@ -1,0 +1,11 @@
+local t={}
+function t:OnHandle(e)
+local e=assert(GlobalPB.decode("PRT_HERO_SKIN_SET_RESP",e));
+if(GameInit.GetDebugLogProto())then
+;
+;
+end
+HeroMgr:OnRespSetHeroSkin(e)
+return e
+end
+return t 

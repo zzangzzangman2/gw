@@ -1,0 +1,7 @@
+feiting.png
+size:512,256
+filter:Linear,Linear
+feichuan
+bounds:0,0,264,199
+tizi1
+bounds:266,98,23,101

@@ -1,0 +1,20 @@
+local e={id=0,giftItemId={}}
+e.__index=e
+function e.New(a,o)
+local t={}
+setmetatable(t,e)
+t.id=a
+t.giftItemId=o
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.giftItemId=a[2]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/marry/DTMarryHaremLoveGiftEntityTableData')
+end
+return e 

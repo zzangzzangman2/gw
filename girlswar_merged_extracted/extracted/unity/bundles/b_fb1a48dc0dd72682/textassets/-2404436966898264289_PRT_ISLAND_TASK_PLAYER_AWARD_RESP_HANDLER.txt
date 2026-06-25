@@ -1,0 +1,11 @@
+local t={}
+function t:OnHandle(e)
+local e=assert(GlobalPB.decode("PRT_ISLAND_TASK_PLAYER_AWARD_RESP",e));
+if(GameInit.GetDebugLogProto())then
+;
+;
+end
+ModulesInit.ActIslandMgr:respActIslandTaskPersonReward(e)
+return e
+end
+return t 

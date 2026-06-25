@@ -1,0 +1,11 @@
+
+?
+Statics.proto"6
+PRT_PLAYR_REAL_LOGIN_COUNT_SYN
+count (Rcount"
+PRT_PLAYR_REAL_LOGIN_REQ"1
+PRT_PLAYR_REAL_LOGIN_RESP
+count (Rcount"
+PRT_PLAYR_GC_REQ"
+PRT_PLAYR_GC_RESPB
+com.next1b.nextsvr.protobproto3

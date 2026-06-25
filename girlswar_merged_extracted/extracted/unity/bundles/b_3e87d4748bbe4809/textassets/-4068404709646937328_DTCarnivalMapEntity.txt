@@ -1,0 +1,54 @@
+local a={id=0,name="",mapName="",mapFullName="",prefabId=0,HeroInitColor_R=0,HeroInitColor_G=0,HeroInitColor_B=0,mapDifficulty=0,mapBasepImage="",heroHead="",nextMap=0,firstDrop={{},{}},drop={{},{}},dropAward={{},{}},fastFightCount=0,fightCost={},dropPercent=0,bossSign=0}
+a.__index=a
+function a.New(d,c,l,t,f,m,y,v,p,b,g,w,u,n,i,o,s,r,h)
+local e={}
+setmetatable(e,a)
+e.id=d
+e.name=c
+e.mapName=l
+e.mapFullName=t
+e.prefabId=f
+e.HeroInitColor_R=m
+e.HeroInitColor_G=y
+e.HeroInitColor_B=v
+e.mapDifficulty=p
+e.mapBasepImage=b
+e.heroHead=g
+e.nextMap=w
+e.firstDrop=u
+e.drop=n
+e.dropAward=i
+e.fastFightCount=o
+e.fightCost=s
+e.dropPercent=r
+e.bossSign=h
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.name=t[2]
+e.mapName=t[3]
+e.mapFullName=t[4]
+e.prefabId=t[5]
+e.HeroInitColor_R=t[6]
+e.HeroInitColor_G=t[7]
+e.HeroInitColor_B=t[8]
+e.mapDifficulty=t[9]
+e.mapBasepImage=t[10]
+e.heroHead=t[11]
+e.nextMap=t[12]
+e.firstDrop=t[13]
+e.drop=t[14]
+e.dropAward=t[15]
+e.fastFightCount=t[16]
+e.fightCost=t[17]
+e.dropPercent=t[18]
+e.bossSign=t[19]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/activity/DTCarnivalMapEntityTableData')
+end
+return a 

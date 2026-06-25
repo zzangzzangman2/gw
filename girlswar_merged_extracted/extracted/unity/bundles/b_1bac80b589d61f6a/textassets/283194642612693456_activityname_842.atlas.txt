@@ -1,0 +1,12 @@
+activityname_842.png
+size:128,64
+filter:Linear,Linear
+a3
+bounds:105,23,20,27
+offsets:2,2,24,31
+a4
+bounds:64,5,40,45
+offsets:1,1,42,47
+a5
+bounds:0,0,63,50
+offsets:1,2,65,53

@@ -1,0 +1,14 @@
+MTWY_spine_kaishianniu3.png
+size:1024,256
+filter:Linear,Linear
+jz_btn1
+bounds:603,109,96,51
+offsets:4,4,104,60
+rotate:90
+jz_btn2
+bounds:201,0,201,205
+jz_btn21
+bounds:0,0,201,205
+jz_btn211
+bounds:402,3,201,202
+offsets:0,0,201,205

@@ -1,0 +1,48 @@
+local a={id=0,exchangeItem=0,tea=0,medicine1=0,medicine2=0,highScoreRankCount=0,totalScoreRankCount=0,physical=0,deplete=0,speedyDeplete=0,rapidDeplete=0,exchangeStamina={},helpImageId=0,startTime=0,activityTime=0,rewardTime=0}
+a.__index=a
+function a.New(h,u,d,t,c,f,y,w,p,m,l,n,i,o,s,r)
+local e={}
+setmetatable(e,a)
+e.id=h
+e.exchangeItem=u
+e.tea=d
+e.medicine1=t
+e.medicine2=c
+e.highScoreRankCount=f
+e.totalScoreRankCount=y
+e.physical=w
+e.deplete=p
+e.speedyDeplete=m
+e.rapidDeplete=l
+e.exchangeStamina=n
+e.helpImageId=i
+e.startTime=o
+e.activityTime=s
+e.rewardTime=r
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.exchangeItem=t[2]
+e.tea=t[3]
+e.medicine1=t[4]
+e.medicine2=t[5]
+e.highScoreRankCount=t[6]
+e.totalScoreRankCount=t[7]
+e.physical=t[8]
+e.deplete=t[9]
+e.speedyDeplete=t[10]
+e.rapidDeplete=t[11]
+e.exchangeStamina=t[12]
+e.helpImageId=t[13]
+e.startTime=t[14]
+e.activityTime=t[15]
+e.rewardTime=t[16]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/herbs/DTHerbsNewbieBaseEntityTableData')
+end
+return a 

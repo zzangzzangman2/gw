@@ -1,0 +1,28 @@
+local e={id=0,weight=0,reward={{},{}},position=0,specialPool=0,specialPoolWeight=0}
+e.__index=e
+function e.New(a,i,o,h,s,n)
+local t={}
+setmetatable(t,e)
+t.id=a
+t.weight=i
+t.reward=o
+t.position=h
+t.specialPool=s
+t.specialPoolWeight=n
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.weight=a[2]
+t.reward=a[3]
+t.position=a[4]
+t.specialPool=a[5]
+t.specialPoolWeight=a[6]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/activity/DTActWishingHousePoolEntityTableData')
+end
+return e 

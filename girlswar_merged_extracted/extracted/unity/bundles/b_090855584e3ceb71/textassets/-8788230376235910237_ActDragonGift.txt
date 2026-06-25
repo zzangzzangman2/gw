@@ -1,0 +1,17 @@
+
+?
+ActDragonGift.proto"}
+PRT_DRAGON_GIFT
+did (Rdid
+leftTime (RleftTime&
+isFreeReceived (RisFreeReceived
+isPay (RisPay"
+PRT_DRAGON_GIFT_INFO_REQ"_
+PRT_DRAGON_GIFT_INFO_RESP
+leftTime (RleftTime&
+gifts (2.PRT_DRAGON_GIFTRgifts"2
+PRT_DRAGON_GIFT_FREE_AWARD_REQ
+did (Rdid"3
+PRT_DRAGON_GIFT_FREE_AWARD_RESP
+did (RdidB
+com.next1b.nextsvr.protobproto3

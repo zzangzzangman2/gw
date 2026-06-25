@@ -1,0 +1,22 @@
+local e={id=0,vipDiamondShow=0,randomAwardShow={{},{}}}
+e.__index=e
+function e.New(o,a,i)
+local t={}
+setmetatable(t,e)
+t.id=o
+t.vipDiamondShow=a
+t.randomAwardShow=i
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.vipDiamondShow=a[2]
+t.randomAwardShow=a[3]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/activity/DTActivityVipRewardEntityTableData')
+end
+return e 

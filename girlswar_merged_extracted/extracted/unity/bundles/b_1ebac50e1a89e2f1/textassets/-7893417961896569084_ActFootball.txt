@@ -1,0 +1,65 @@
+
+?
+ActFootball.protoCommons.proto"?
+PRT_FOOTBALL_INFO
+power (Rpower"
+powerBeginMS (RpowerBeginMS
+score (Rscore
+level (Rlevel
+	bestScore (R	bestScore
+heroId (RheroId"
+PRT_FOOTBALL_INFO_REQ"\
+PRT_FOOTBALL_INFO_RESP&
+info (2.PRT_FOOTBALL_INFORinfo
+buyTimes (RbuyTimes"
+PRT_FOOTBALL_RANK_REQ"?
+PRT_FOOTBALL_RANK_RESP1
+	rankDatas (2.PRT_CS_COMMON_RANKR	rankDatas/
+selfRank (2.PRT_CS_COMMON_RANKRselfRank
+leftTime (RleftTime"
+PRT_FOOTBALL_GOAL_START_REQ":
+PRT_FOOTBALL_GOAL_START_RESP
+curPower (RcurPower"u
+PRT_FOOTBALL_GOAL_END_REQ
+heroId (RheroId
+win (Rwin
+useTime (RuseTime
+round (Rround"?
+PRT_FOOTBALL_GOAL_END_RESP&
+info (2.PRT_FOOTBALL_INFORinfo%
+award (2.PRT_ONCE_AWARDRaward"
+caidianScore (RcaidianScore 
+fanweiScore (RfanweiScore
+	gameScore (R	gameScore"
+PRT_FOOTBALL_GOAL_FAST_REQ"
+PRT_FOOTBALL_ADDPOWER_REQ"N
+PRT_FOOTBALL_ADDPOWER_RESP
+power (Rpower
+buyTimes (RbuyTimes""
+ PRT_FOOTBALL_BATTLEPASS_INFO_REQ"?
+!PRT_FOOTBALL_BATTLEPASS_INFO_RESP
+score (Rscore
+level (Rlevel
+charge (Rcharge$
+freeAwardDids (RfreeAwardDids
+	awardDids (R	awardDids
+buyDids (RbuyDids"L
+PRT_FOOTBALL_AWARD_REQ
+awardDid (RawardDid
+charge (Rcharge"M
+PRT_FOOTBALL_AWARD_RESP
+awardDid (RawardDid
+charge (Rcharge"[
+PRT_CS_FOOTBALL_UPDATE_RANK_REQ
+playerId (RplayerId
+	rankScore (R	rankScore"x
+ PRT_CS_FOOTBALL_UPDATE_RANK_RESP
+playerId (RplayerId
+	rankScore (R	rankScore
+selfRank (RselfRank"6
+PRT_CS_FOOTBALL_RANK_REQ
+playerId (RplayerId"j
+PRT_CS_FOOTBALL_RANK_RESP
+playerId (RplayerId1
+rankRes (2.PRT_FOOTBALL_RANK_RESPRrankResB
+com.next1b.nextsvr.protobproto3

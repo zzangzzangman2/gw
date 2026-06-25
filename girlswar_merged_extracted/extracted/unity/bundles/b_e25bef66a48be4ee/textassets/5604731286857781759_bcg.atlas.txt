@@ -1,0 +1,16 @@
+bcg.png
+size:512,512
+filter:Linear,Linear
+bcg1
+bounds:191,2,77,136
+bcg2
+bounds:2,51,87,114
+rotate:90
+bcg3
+bounds:2,140,290,330
+bcg4
+bounds:2,37,26,27
+bcg5
+bounds:252,91,12,42
+effect/effect_3
+bounds:118,57,83,81

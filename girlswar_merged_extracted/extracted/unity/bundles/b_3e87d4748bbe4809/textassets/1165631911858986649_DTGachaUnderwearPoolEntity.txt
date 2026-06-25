@@ -1,0 +1,26 @@
+local e={id=0,type=0,quality=0,award=0,number=0}
+e.__index=e
+function e.New(o,n,a,s,i)
+local t={}
+setmetatable(t,e)
+t.id=o
+t.type=n
+t.quality=a
+t.award=s
+t.number=i
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.type=a[2]
+t.quality=a[3]
+t.award=a[4]
+t.number=a[5]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/activity/DTGachaUnderwearPoolEntityTableData')
+end
+return e 

@@ -1,0 +1,37 @@
+{
+  "xapk_version_name": "1.0.37",
+  "xapk_version_code": "41",
+  "app_version": "1.0.37",
+  "resource_version": "1.0.787",
+  "split_apks": [
+    "manifest.json",
+    "com.girlwars.kr.apk",
+    "config.arm64_v8a.apk",
+    "abassets.apk"
+  ],
+  "restore_file_count": 6154,
+  "restore_total_size": 2565300703,
+  "candidate_count": 7814,
+  "winner_count": 5757,
+  "conflict_path_count": 1712,
+  "conflict_record_count": 3769,
+  "xxtea_magic_count": 0,
+  "versionfile_counts": {
+    "VersionFile.bytes": 2090,
+    "CDNVersionFile.bytes": 5945
+  },
+  "decoded_gzip_count": 2,
+  "config_zip_count": 27,
+  "config_zip_ok": 27,
+  "assetbundle_count": 1996,
+  "unity_parsed": 1904,
+  "unity_failed": 0,
+  "unity_skipped_audio": 92,
+  "unity_object_count": 719459,
+  "recttransform_count": 129147,
+  "ui_text_count": 68261,
+  "image_export_count": 28836,
+  "textasset_export_count": 20182,
+  "il2cpp_copied": true,
+  "il2cpp_file_count": 98
+}

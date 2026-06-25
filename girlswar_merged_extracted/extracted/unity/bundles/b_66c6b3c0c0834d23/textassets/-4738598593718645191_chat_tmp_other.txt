@@ -1,0 +1,20 @@
+{"frames": {
+
+"IC_ghfangda.png":
+{
+	"frame": {"x":0,"y":0,"w":41,"h":45},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":41,"h":45},
+	"sourceSize": {"w":41,"h":45}
+}},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "chat_tmp_other.png",
+	"format": "RGBA8888",
+	"size": {"w":41,"h":45},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:4aa4ae6a6851d44cd21402b21a2e6a60:ccbb41313e3439c0690dcee6119b0948:d5475fafdd7828640192b36ef9681e88$"
+}
+}

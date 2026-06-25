@@ -1,0 +1,38 @@
+local a={id=0,dayRewards={{},{}},oneCost={},tenCost={},itemCost=0,poolId=0,luckyRate={{},{}},onePoint=0,pointMax=0,star3PointMax=0,star3Award={}}
+a.__index=a
+function a.New(n,r,s,t,l,u,c,d,h,o,i)
+local e={}
+setmetatable(e,a)
+e.id=n
+e.dayRewards=r
+e.oneCost=s
+e.tenCost=t
+e.itemCost=l
+e.poolId=u
+e.luckyRate=c
+e.onePoint=d
+e.pointMax=h
+e.star3PointMax=o
+e.star3Award=i
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.dayRewards=t[2]
+e.oneCost=t[3]
+e.tenCost=t[4]
+e.itemCost=t[5]
+e.poolId=t[6]
+e.luckyRate=t[7]
+e.onePoint=t[8]
+e.pointMax=t[9]
+e.star3PointMax=t[10]
+e.star3Award=t[11]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/activity/DTNewMarketUnderwearEntityTableData')
+end
+return a 

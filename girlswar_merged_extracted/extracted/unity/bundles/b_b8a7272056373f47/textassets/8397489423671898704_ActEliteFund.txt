@@ -1,0 +1,19 @@
+
+?
+ActEliteFund.proto"
+PRT_ELITE_FUND_INFO_REQ"?
+PRT_ELITE_FUND_INFO_RESP
+leftTime (RleftTime
+charged (Rcharged
+
+powerCount (R
+powerCount*
+receivedFreeDids (RreceivedFreeDids.
+receivedChargeDids (RreceivedChargeDids"N
+PRT_ELITE_FUND_AWARD_REQ
+awardDid (RawardDid
+charge (Rcharge"O
+PRT_ELITE_FUND_AWARD_RESP
+awardDid (RawardDid
+charge (RchargeB
+com.next1b.nextsvr.protobproto3

@@ -1,0 +1,186 @@
+beginner_battle_alert.png
+size:2048,2048
+filter:Linear,Linear
+pma:true
+scale:0.51
+1
+bounds:2,1136,858,79
+offsets:0,1,858,81
+10/6_00000
+bounds:926,689,306,174
+offsets:0,28,306,230
+10/6_00001
+bounds:618,689,306,174
+offsets:0,28,306,230
+10/6_00002
+bounds:310,689,306,174
+offsets:0,28,306,230
+10/6_00003
+bounds:2,784,306,174
+offsets:0,28,306,230
+10/6_00004
+bounds:926,865,306,174
+offsets:0,28,306,230
+10/6_00005
+bounds:1214,1657,306,173
+offsets:0,28,306,230
+10/6_00006
+bounds:618,865,306,174
+offsets:0,28,306,230
+10/6_00007
+bounds:310,960,306,174
+offsets:0,28,306,230
+10/6_00008
+bounds:2,960,306,174
+offsets:0,28,306,230
+10/6_00009
+bounds:862,1041,306,174
+offsets:0,28,306,230
+10/6_00010
+bounds:1234,689,306,173
+offsets:0,29,306,230
+rotate:90
+10/6_00011
+bounds:1038,1217,306,174
+offsets:0,28,306,230
+rotate:90
+10/6_00012
+bounds:1038,1525,306,174
+offsets:0,28,306,230
+rotate:90
+10/6_00013
+bounds:1214,1349,306,173
+offsets:0,29,306,230
+rotate:90
+10/6_00014
+bounds:1213,1041,306,173
+offsets:0,29,306,230
+rotate:90
+10/6_00015
+bounds:625,10,306,160
+offsets:0,42,306,230
+10/6_00016
+bounds:317,17,306,160
+offsets:0,42,306,230
+10/6_00017
+bounds:862,1525,306,174
+offsets:0,28,306,230
+rotate:90
+10/6_00018
+bounds:862,1217,306,174
+offsets:0,28,306,230
+rotate:90
+11_00000
+bounds:981,1841,117,114
+offsets:46,63,228,228
+22_00000
+bounds:1207,1855,105,100
+offsets:46,63,228,228
+3
+bounds:1176,33,287,137
+offsets:1,1,289,139
+33_00000
+bounds:755,1047,88,87
+offsets:70,64,228,228
+4
+bounds:2,1217,858,368
+44_00000
+bounds:310,866,135,92
+offsets:47,63,228,228
+5
+bounds:2,1587,858,368
+Fire 033 Impact Explosion Radial/huo_00000
+bounds:537,868,40,90
+offsets:0,39,313,168
+Fire 033 Impact Explosion Radial/huo_00001
+bounds:1559,1458,104,167
+offsets:0,0,313,168
+Fire 033 Impact Explosion Radial/huo_00002
+bounds:933,2,241,168
+offsets:0,0,313,168
+Fire 033 Impact Explosion Radial/huo_00003
+bounds:2,9,313,168
+Fire 033 Impact Explosion Radial/huo_00004
+bounds:1862,1642,313,168
+rotate:90
+Fire 033 Impact Explosion Radial/huo_00005
+bounds:1862,1312,313,168
+rotate:90
+Fire 033 Impact Explosion Radial/huo_00006
+bounds:1577,172,313,168
+Fire 033 Impact Explosion Radial/huo_00007
+bounds:1262,172,313,168
+Fire 033 Impact Explosion Radial/huo_00008
+bounds:947,172,313,168
+Fire 033 Impact Explosion Radial/huo_00009
+bounds:632,172,313,168
+Fire 033 Impact Explosion Radial/huo_00010
+bounds:317,179,313,168
+Fire 033 Impact Explosion Radial/huo_00011
+bounds:2,179,313,168
+Fire 033 Impact Explosion Radial/huo_00012
+bounds:1577,342,313,168
+Fire 033 Impact Explosion Radial/huo_00013
+bounds:1262,342,313,168
+Fire 033 Impact Explosion Radial/huo_00014
+bounds:947,342,313,168
+Fire 033 Impact Explosion Radial/huo_00015
+bounds:632,349,313,168
+Fire 033 Impact Explosion Radial/huo_00016
+bounds:317,349,313,168
+Fire 033 Impact Explosion Radial/huo_00017
+bounds:2,349,313,168
+Fire 033 Impact Explosion Radial/huo_00018
+bounds:1577,512,313,168
+Fire 033 Impact Explosion Radial/huo_00019
+bounds:1262,512,313,168
+Fire 033 Impact Explosion Radial/huo_00020
+bounds:947,519,313,168
+Fire 033 Impact Explosion Radial/huo_00021
+bounds:632,519,313,168
+Fire 033 Impact Explosion Radial/huo_00022
+bounds:317,519,313,168
+Fire 033 Impact Explosion Radial/huo_00023
+bounds:2,519,313,168
+Fire 033 Impact Explosion Radial/huo_00024
+bounds:1749,682,313,168
+rotate:90
+Fire 033 Impact Explosion Radial/huo_00025
+bounds:1749,997,313,168
+rotate:90
+Fire 033 Impact Explosion Radial/huo_00026
+bounds:1692,1627,313,168
+rotate:90
+Fire 033 Impact Explosion Radial/huo_00027
+bounds:1692,1312,313,168
+rotate:90
+Fire 033 Impact Explosion Radial/huo_00028
+bounds:1579,682,313,168
+rotate:90
+Fire 033 Impact Explosion Radial/huo_00029
+bounds:1558,997,313,168
+rotate:90
+Fire 033 Impact Explosion Radial/huo_00030
+bounds:1522,1627,313,168
+rotate:90
+Fire 033 Impact Explosion Radial/huo_00031
+bounds:1409,682,313,168
+rotate:90
+Fire 033 Impact Explosion Radial/huo_00032
+bounds:1389,1312,313,168
+rotate:90
+Fire 033 Impact Explosion Radial/huo_00034
+bounds:1388,997,313,168
+rotate:90
+z1
+bounds:862,1841,117,114
+offsets:46,63,228,228
+z2
+bounds:1100,1855,105,100
+offsets:46,63,228,228
+z3
+bounds:447,871,88,87
+offsets:70,64,228,228
+z4
+bounds:618,1042,135,92
+offsets:47,63,228,228

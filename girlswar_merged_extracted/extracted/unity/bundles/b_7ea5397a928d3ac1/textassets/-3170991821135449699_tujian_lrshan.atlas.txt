@@ -1,0 +1,15 @@
+tujian_lrshan.png
+size:256,128
+filter:Linear,Linear
+urstb
+bounds:2,45,145,41
+offsets:1,7,146,54
+urstba
+bounds:149,45,91,41
+offsets:1,7,146,54
+urstbb
+bounds:2,2,135,41
+offsets:10,7,146,54
+urstbc
+bounds:139,2,84,41
+offsets:62,7,146,54

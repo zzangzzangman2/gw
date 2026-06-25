@@ -1,0 +1,56 @@
+local a={id=0,freeCd=0,oneCost={},tenCost={},multipiRate=0,multipiResults={{},{}},multipiLuckyScore={{},{}},commPool=0,floorTime=0,floorPool=0,hero=0,itemCost={},heroItemCost=0,actId=0,actURBackPopAudio=0,showRankCount=0,commPoolFORMULA="",floorPoolFORMULA="",heroFORMULA="",actIdFORMULA=""}
+a.__index=a
+function a.New(l,m,u,t,w,f,p,b,v,g,k,y,c,s,n,i,o,h,d,r)
+local e={}
+setmetatable(e,a)
+e.id=l
+e.freeCd=m
+e.oneCost=u
+e.tenCost=t
+e.multipiRate=w
+e.multipiResults=f
+e.multipiLuckyScore=p
+e.commPool=b
+e.floorTime=v
+e.floorPool=g
+e.hero=k
+e.itemCost=y
+e.heroItemCost=c
+e.actId=s
+e.actURBackPopAudio=n
+e.showRankCount=i
+e.commPoolFORMULA=o
+e.floorPoolFORMULA=h
+e.heroFORMULA=d
+e.actIdFORMULA=r
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.freeCd=t[2]
+e.oneCost=t[3]
+e.tenCost=t[4]
+e.multipiRate=t[5]
+e.multipiResults=t[6]
+e.multipiLuckyScore=t[7]
+e.commPool=t[8]
+e.floorTime=t[9]
+e.floorPool=t[10]
+e.hero=t[11]
+e.itemCost=t[12]
+e.heroItemCost=t[13]
+e.actId=t[14]
+e.actURBackPopAudio=t[15]
+e.showRankCount=t[16]
+e.commPoolFORMULA=t[17]
+e.floorPoolFORMULA=t[18]
+e.heroFORMULA=t[19]
+e.actIdFORMULA=t[20]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/activity/DTUrBackPoolEntityTableData')
+end
+return a 

@@ -1,0 +1,13 @@
+local e=
+{
+ByIdx={
+{1,"invest_name_1","island_invest_1"},
+{2,"invest_name_2","island_invest_2"},
+{3,"invest_name_3","island_invest_3"},
+{4,"invest_name_4","island_invest_4"},
+{5,"invest_name_5","island_invest_5"},
+{6,"invest_name_6","island_invest_6"}
+},
+Len=6
+}
+return e 

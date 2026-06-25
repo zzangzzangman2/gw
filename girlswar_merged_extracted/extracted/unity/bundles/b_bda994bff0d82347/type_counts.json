@@ -1,0 +1,15 @@
+{
+  "Material": 11,
+  "AnimationClip": 6,
+  "TextAsset": 6,
+  "MonoBehaviour": 6,
+  "Transform": 5,
+  "GameObject": 5,
+  "Texture2D": 4,
+  "ParticleSystem": 4,
+  "ParticleSystemRenderer": 4,
+  "AnimatorController": 4,
+  "MonoScript": 2,
+  "AssetBundle": 1,
+  "Shader": 1
+}

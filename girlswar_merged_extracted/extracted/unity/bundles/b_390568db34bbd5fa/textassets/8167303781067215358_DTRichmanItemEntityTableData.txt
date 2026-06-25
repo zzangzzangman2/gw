@@ -1,0 +1,11 @@
+local e=
+{
+ByIdx={
+{1,"richmanItemName1","richmanItemDesc1","Assets/Download/ArtSources/UISpriteRes/UIRichman/richmanItemPic1.png",20989},
+{2,"richmanItemName2","richmanItemDesc2","Assets/Download/ArtSources/UISpriteRes/UIRichman/richmanItemPic2.png",20990},
+{3,"richmanItemName3","richmanItemDesc3","Assets/Download/ArtSources/UISpriteRes/UIRichman/richmanItemPic3.png",20991},
+{4,"richmanItemName4","richmanItemDesc4","Assets/Download/ArtSources/UISpriteRes/UIRichman/richmanItemPic4.png",20992}
+},
+Len=4
+}
+return e 

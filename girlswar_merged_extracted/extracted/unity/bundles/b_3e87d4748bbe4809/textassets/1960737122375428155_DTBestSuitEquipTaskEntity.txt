@@ -1,0 +1,30 @@
+local t={id=0,questType=0,needCount={},reward={{},{}},text="",jump=0,listNum=0}
+t.__index=t
+function t.New(o,h,a,s,r,n,i)
+local e={}
+setmetatable(e,t)
+e.id=o
+e.questType=h
+e.needCount=a
+e.reward=s
+e.text=r
+e.jump=n
+e.listNum=i
+return e
+end
+function t.NewFromArrItem(a)
+local e={}
+setmetatable(e,t)
+e.id=a[1]
+e.questType=a[2]
+e.needCount=a[3]
+e.reward=a[4]
+e.text=a[5]
+e.jump=a[6]
+e.listNum=a[7]
+return e
+end
+function t.GetArr()
+return require('DataNode/DataTable/Create/activity/DTBestSuitEquipTaskEntityTableData')
+end
+return t 

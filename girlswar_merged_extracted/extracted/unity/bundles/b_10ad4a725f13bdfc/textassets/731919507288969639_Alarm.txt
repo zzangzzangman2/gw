@@ -1,0 +1,20 @@
+
+?
+Alarm.proto"Q
+	PRT_ALARM
+thingKey (	RthingKey
+count (Rcount
+type (Rtype"
+PRT_ALARM_TO_GAME_REQ"<
+PRT_ALARM_TO_GAME_RESP"
+alarms (2
+.PRT_ALARMRalarms"?
+PRT_ALARM_EXCEED_TO_CENTER_SYN
+thingDid (RthingDid
+count (Rcount
+playerId (RplayerId
+type (Rtype
+thingKey (	RthingKey"6
+PRT_ALARM_SWITCH_TO_GAME_SYN
+switch (RswitchB
+com.next1b.nextsvr.protobproto3

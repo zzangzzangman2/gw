@@ -1,0 +1,28 @@
+local e={id=0,goods=0,day=0,award={{},{}},descImg="",itemIcon=""}
+e.__index=e
+function e.New(a,i,o,h,s,n)
+local t={}
+setmetatable(t,e)
+t.id=a
+t.goods=i
+t.day=o
+t.award=h
+t.descImg=s
+t.itemIcon=n
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.goods=a[2]
+t.day=a[3]
+t.award=a[4]
+t.descImg=a[5]
+t.itemIcon=a[6]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/activity/DTUnderwearSaleEntityTableData')
+end
+return e 

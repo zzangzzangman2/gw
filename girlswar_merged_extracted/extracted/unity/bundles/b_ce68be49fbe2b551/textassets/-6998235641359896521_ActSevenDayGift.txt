@@ -1,0 +1,18 @@
+
+?
+ActSevenDayGift.proto"
+PRT_SEVEN_DAY_GIFT_INFO_REQ"?
+PRT_SEVEN_DAY_GIFT_INFO_RESP
+endTime (RendTime
+totalDay (RtotalDay 
+receiveDays (RreceiveDays
+	loginDays (R	loginDays"0
+PRT_SEVEN_DAY_GIFT_AWARD_REQ
+day (Rday"1
+PRT_SEVEN_DAY_GIFT_AWARD_RESP
+day (Rday"0
+PRT_SEVEN_DAY_GIFT_PATCH_REQ
+day (Rday"1
+PRT_SEVEN_DAY_GIFT_PATCH_RESP
+day (RdayB
+com.next1b.nextsvr.protobproto3

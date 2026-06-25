@@ -1,0 +1,44 @@
+local a={id=0,disk={},color=0,name="",itemDesc="",icon="",iconBg="",classLimit=0,eleLimit=0,getExp=0,strengtype=0,temperingType=0,listId=0,jump={}}
+a.__index=a
+function a.New(s,l,r,t,u,m,f,w,c,d,i,o,n,h)
+local e={}
+setmetatable(e,a)
+e.id=s
+e.disk=l
+e.color=r
+e.name=t
+e.itemDesc=u
+e.icon=m
+e.iconBg=f
+e.classLimit=w
+e.eleLimit=c
+e.getExp=d
+e.strengtype=i
+e.temperingType=o
+e.listId=n
+e.jump=h
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.disk=t[2]
+e.color=t[3]
+e.name=t[4]
+e.itemDesc=t[5]
+e.icon=t[6]
+e.iconBg=t[7]
+e.classLimit=t[8]
+e.eleLimit=t[9]
+e.getExp=t[10]
+e.strengtype=t[11]
+e.temperingType=t[12]
+e.listId=t[13]
+e.jump=t[14]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/summonPet/DTSummonPetEquipEntityTableData')
+end
+return a 

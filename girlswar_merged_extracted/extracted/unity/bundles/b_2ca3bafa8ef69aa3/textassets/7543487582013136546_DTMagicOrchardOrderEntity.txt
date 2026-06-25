@@ -1,0 +1,32 @@
+local a={id=0,sort=0,type=0,star=0,price={{},{}},award={{},{}},head="",talk=""}
+a.__index=a
+function a.New(i,h,n,t,d,r,s,o)
+local e={}
+setmetatable(e,a)
+e.id=i
+e.sort=h
+e.type=n
+e.star=t
+e.price=d
+e.award=r
+e.head=s
+e.talk=o
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.sort=t[2]
+e.type=t[3]
+e.star=t[4]
+e.price=t[5]
+e.award=t[6]
+e.head=t[7]
+e.talk=t[8]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/magicOrchard/DTMagicOrchardOrderEntityTableData')
+end
+return a 

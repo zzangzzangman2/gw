@@ -1,0 +1,40 @@
+local a={id=0,stage=0,day=0,arrange=0,time=0,conditionalType=0,conditionalParameter=0,additionalType1=0,additionalParameter1=0,additionalType2=0,additionalParameter2=0,mosterGroupID=0}
+a.__index=a
+function a.New(s,d,h,t,u,c,m,l,r,i,o,n)
+local e={}
+setmetatable(e,a)
+e.id=s
+e.stage=d
+e.day=h
+e.arrange=t
+e.time=u
+e.conditionalType=c
+e.conditionalParameter=m
+e.additionalType1=l
+e.additionalParameter1=r
+e.additionalType2=i
+e.additionalParameter2=o
+e.mosterGroupID=n
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.stage=t[2]
+e.day=t[3]
+e.arrange=t[4]
+e.time=t[5]
+e.conditionalType=t[6]
+e.conditionalParameter=t[7]
+e.additionalType1=t[8]
+e.additionalParameter1=t[9]
+e.additionalType2=t[10]
+e.additionalParameter2=t[11]
+e.mosterGroupID=t[12]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/activity/DTActWhackClownLevelEntityTableData')
+end
+return a 

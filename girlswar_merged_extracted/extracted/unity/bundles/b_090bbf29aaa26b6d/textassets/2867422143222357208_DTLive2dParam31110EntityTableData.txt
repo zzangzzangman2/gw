@@ -1,0 +1,18 @@
+local e=
+{
+ByIdx={
+{"ParamBreastL1","ParamBreastL1",0,{{4,0},{2,0}},"HitArea_BreastL",0,0,5,10,0,2,"","","1:rodBreastL1","rodBreastL1","rodBreastL1:2",1,10,0},
+{"ParamBreastR1","ParamBreastR1",0,{{4,0},{1,0}},"HitArea_BreastR",0,0,5,10,0,2,"","","1:rodBreastR1","rodBreastR1","rodBreastR1:2",1,10,0},
+{"ParamBreastL3","ParamBreastL1",2,{{4,0}},"HitArea_BreastL",0,0,5,10,0,2,"","","1:rodBreast3","rodBreast3","rodBreast3:2",0.5,10,0},
+{"ParamPants1","ParamPants1",1,{{2,0}},"HitArea_Butt",0,0,5,10,0,2,"","","1:rodPants2","rodPants2","rodPants2:2",1,10,0},
+{"ParamPants3","ParamPants3",2,{{4,0}},"HitArea_Butt",0,0,5,10,0,1,"","","1:rodPants3","tapButt3_sp1","rodPants3:1,tapButt3_sp1:2",1,10,0},
+{"ParamLeg_1","ParamLeg",1,{{2,0},{1,-1}},"HitArea_Leg",-10,0,5,10,0,2,"","","1:rodLeg2,2:rodLeg2","rodLeg2","rodLeg2:2",1,10,0},
+{"ParamLeg_2","ParamLeg",2,{{2,0},{1,-1}},"HitArea_Leg",-10,0,5,10,0,2,"","","1:rodLeg3,2:rodLeg3","rodLeg3","rodLeg3:2",1,10,0},
+{"ParamRopeBed","ParamRopeBed",2,{{4,0}},"HitArea_RopeBed",0,0,5,10,0,2,"","","1:rodRopeBed3","rodRopeBed3","rodRopeBed3:2",1,10,0},
+{"ParamButton","ParamButton",1,{},"",0,0,5,10,0,1,"","","","game2_4_win,tapExit2_sp1","game2_4_win:1,tapExit2_sp1:2",1,10,0},
+{"ParamCream","ParamCream",1,{},"",0,0,5,10,0,1,"","","","game2_4_win,tapExit2_sp1","game2_4_win:1,tapExit2_sp1:2",1,10,0},
+{"ParamIcecream","ParamIcecream",1,{},"",0,0,5,10,0,1,"","","","game2_4_win,tapExit2_sp1","game2_4_win:2,tapExit2_sp1:2",1,10,0}
+},
+Len=11
+}
+return e 

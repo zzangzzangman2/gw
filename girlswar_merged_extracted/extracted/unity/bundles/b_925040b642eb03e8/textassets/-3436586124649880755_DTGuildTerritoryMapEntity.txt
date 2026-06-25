@@ -1,0 +1,22 @@
+local e={id=0,forbidCity=0,pos={}}
+e.__index=e
+function e.New(o,a,i)
+local t={}
+setmetatable(t,e)
+t.id=o
+t.forbidCity=a
+t.pos=i
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.forbidCity=a[2]
+t.pos=a[3]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/guild/DTGuildTerritoryMapEntityTableData')
+end
+return e 

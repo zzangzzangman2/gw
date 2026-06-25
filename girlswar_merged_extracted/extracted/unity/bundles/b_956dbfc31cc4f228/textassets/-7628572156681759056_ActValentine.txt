@@ -1,0 +1,135 @@
+
+?
+ActValentine.protoCommons.proto"B
+PRT_VALENTINE_TASK
+did (Rdid
+progress (Rprogress"?
+PRT_VALENTINE_PLAYER
+playerId (RplayerId
+level (Rlevel
+name (	Rname
+head (Rhead
+	headFrame (R	headFrame
+sex (Rsex
+charm (Rcharm
+serverId (RserverId"?
+PRT_VALENTINE_RECORD
+
+currencyId (R
+currencyId
+count (Rcount
+time (Rtime
+playerId (RplayerId
+serverId (RserverId
+name (	Rname"
+PRT_VALENTINE_TASK_INFO_REQ"?
+PRT_VALENTINE_TASK_INFO_RESP3
+
+dailyTasks (2.PRT_VALENTINE_TASKR
+dailyTasks4
+receivedDailyTaskDids (RreceivedDailyTaskDids5
+periodTasks (2.PRT_VALENTINE_TASKRperiodTasks6
+receivedPeriodTaskDids (RreceivedPeriodTaskDids"N
+PRT_VALENTINE_TASK_RECEIVE_REQ
+type (Rtype
+taskDid (RtaskDid"a
+PRT_VALENTINE_TASK_RECEIVE_RESP
+type (Rtype*
+receivedTaskDids (RreceivedTaskDids" 
+PRT_VALENTINE_PRESENT_INFO_REQ"?
+PRT_VALENTINE_PRESENT_INFO_RESP
+charge (Rcharge
+score (Rscore.
+receivedBPFreeDids (RreceivedBPFreeDids&
+receivedBPDids (RreceivedBPDids/
+friends (2.PRT_VALENTINE_PLAYERRfriends9
+guildMembers (2.PRT_VALENTINE_PLAYERRguildMembers;
+battleMembers (2.PRT_VALENTINE_PLAYERRbattleMembers"?
+PRT_VALENTINE_PRESENT_GIVE_REQ
+
+toPlayerId (R
+toPlayerId
+
+currencyId (R
+currencyId
+count (Rcount
+name (	Rname"?
+PRT_VALENTINE_PRESENT_GIVE_RESP
+score (Rscore
+
+toPlayerId (R
+toPlayerId
+
+currencyId (R
+currencyId
+count (Rcount"'
+%PRT_VALENTINE_PRESENT_RECORD_GIVE_REQ"[
+&PRT_VALENTINE_PRESENT_RECORD_GIVE_RESP1
+presents (2.PRT_VALENTINE_RECORDRpresents"*
+(PRT_VALENTINE_PRESENT_RECORD_RECEIVE_REQ"^
+)PRT_VALENTINE_PRESENT_RECORD_RECEIVE_RESP1
+receives (2.PRT_VALENTINE_RECORDRreceives" 
+PRT_VALENTINE_PRESENT_RANK_REQ"?
+PRT_VALENTINE_PRESENT_RANK_RESP1
+	rankDatas (2.PRT_CS_COMMON_RANKR	rankDatas/
+selfRank (2.PRT_CS_COMMON_RANKRselfRank"P
+ PRT_VALENTINE_PRESENT_SEARCH_REQ
+type (Rtype
+keyword (Rkeyword"T
+!PRT_VALENTINE_PRESENT_SEARCH_RESP/
+players (2.PRT_VALENTINE_PLAYERRplayers"#
+!PRT_VALENTINE_PRESENT_REFRESH_REQ"a
+"PRT_VALENTINE_PRESENT_REFRESH_RESP;
+battleMembers (2.PRT_VALENTINE_PLAYERRbattleMembers"#
+!PRT_VALENTINE_PRESENT_BP_INFO_REQ"?
+"PRT_VALENTINE_PRESENT_BP_INFO_RESP
+charge (Rcharge.
+receivedBPFreeDids (RreceivedBPFreeDids&
+receivedBPDids (RreceivedBPDids
+score (Rscore"Z
+$PRT_VALENTINE_PRESENT_BP_RECEIVE_REQ
+awardDid (RawardDid
+charge (Rcharge"[
+%PRT_VALENTINE_PRESENT_BP_RECEIVE_RESP
+awardDid (RawardDid
+charge (Rcharge"
+PRT_VALENTINE_GIFT_INFO_REQ"v
+PRT_VALENTINE_GIFT_INFO_RESP
+	unlockDid (R	unlockDid
+buys (Rbuys$
+bigGiftStatus (RbigGiftStatus" 
+PRT_VALENTINE_GIFT_RECEIVE_REQ"G
+PRT_VALENTINE_GIFT_RECEIVE_RESP$
+bigGiftStatus (RbigGiftStatus"\
+ PRT_CS_VALENTINE_UPDATE_RANK_REQ
+playerId (RplayerId
+	rankScore (R	rankScore"y
+!PRT_CS_VALENTINE_UPDATE_RANK_RESP
+playerId (RplayerId
+	rankScore (R	rankScore
+selfRank (RselfRank"7
+PRT_CS_VALENTINE_RANK_REQ
+playerId (RplayerId"t
+PRT_CS_VALENTINE_RANK_RESP
+playerId (RplayerId:
+rankRes (2 .PRT_VALENTINE_PRESENT_RANK_RESPRrankRes"S
+PRT_CS_VALENTINE_PLAYER_REQ
+playerId (RplayerId
+guildId (RguildId"x
+PRT_CS_VALENTINE_PLAYER_RESP
+playerId (RplayerId<
+toClient (2 .PRT_VALENTINE_PRESENT_INFO_RESPRtoClient"?
+"PRT_CS_VALENTINE_PRESENT_GIVE_RESP1
+req (2.PRT_VALENTINE_PRESENT_GIVE_REQRreq
+senderId (RsenderId
+
+senderName (	R
+senderName"
+receiverName (	RreceiverName"?
+%PRT_CS_VALENTINE_PRESENT_REFRESH_RESP
+playerId (RplayerId;
+battleMembers (2.PRT_VALENTINE_PLAYERRbattleMembers"s
+$PRT_CS_VALENTINE_PRESENT_SEARCH_RESP
+playerId (RplayerId/
+players (2.PRT_VALENTINE_PLAYERRplayersB
+com.next1b.nextsvr.protobproto3

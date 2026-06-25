@@ -1,0 +1,52 @@
+local a={id=0,freeCd=0,oneCost={},tenCost={},multipiRate=0,multipiResults={{},{}},multipiLuckyScore={{},{}},commPool=0,floorTime=0,floorPool=0,hero=0,itemCost={},isLeader=0,heroItemCost=0,commPoolFORMULA="",floorPoolFORMULA="",heroFORMULA="",heroItemCostFORMULA=""}
+a.__index=a
+function a.New(d,c,l,t,f,m,y,v,p,b,w,u,n,i,o,s,r,h)
+local e={}
+setmetatable(e,a)
+e.id=d
+e.freeCd=c
+e.oneCost=l
+e.tenCost=t
+e.multipiRate=f
+e.multipiResults=m
+e.multipiLuckyScore=y
+e.commPool=v
+e.floorTime=p
+e.floorPool=b
+e.hero=w
+e.itemCost=u
+e.isLeader=n
+e.heroItemCost=i
+e.commPoolFORMULA=o
+e.floorPoolFORMULA=s
+e.heroFORMULA=r
+e.heroItemCostFORMULA=h
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.freeCd=t[2]
+e.oneCost=t[3]
+e.tenCost=t[4]
+e.multipiRate=t[5]
+e.multipiResults=t[6]
+e.multipiLuckyScore=t[7]
+e.commPool=t[8]
+e.floorTime=t[9]
+e.floorPool=t[10]
+e.hero=t[11]
+e.itemCost=t[12]
+e.isLeader=t[13]
+e.heroItemCost=t[14]
+e.commPoolFORMULA=t[15]
+e.floorPoolFORMULA=t[16]
+e.heroFORMULA=t[17]
+e.heroItemCostFORMULA=t[18]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/activity/DTActivityHeroA10EntityTableData')
+end
+return a 

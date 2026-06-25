@@ -1,0 +1,6 @@
+guanqia_baoxiang.png
+size:64,64
+filter:Linear,Linear
+UI_shilian_buxingxiangzi
+bounds:2,2,56,44
+offsets:0,1,56,45

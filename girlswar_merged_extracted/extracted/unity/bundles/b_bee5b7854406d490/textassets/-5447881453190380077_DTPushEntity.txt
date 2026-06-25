@@ -1,0 +1,22 @@
+local e={id=0,pushDesc1="",pushDesc2=""}
+e.__index=e
+function e.New(o,a,i)
+local t={}
+setmetatable(t,e)
+t.id=o
+t.pushDesc1=a
+t.pushDesc2=i
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.pushDesc1=a[2]
+t.pushDesc2=a[3]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/push/DTPushEntityTableData')
+end
+return e 

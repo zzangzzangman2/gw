@@ -1,0 +1,17 @@
+
+?
+ActVipShop.proto"K
+PRT_VIP_SHOP_ITEM
+goodsDid (RgoodsDid
+buyCount (RbuyCount"
+PRT_VIP_SHOP_LIST_REQ"t
+PRT_VIP_SHOP_LIST_RESP(
+items (2.PRT_VIP_SHOP_ITEMRitems0
+nextRefreshLeftTime (RnextRefreshLeftTime"H
+PRT_VIP_SHOP_BUY_REQ
+goodsDid (RgoodsDid
+count (Rcount"O
+PRT_VIP_SHOP_BUY_RESP
+goodsDid (RgoodsDid
+buyCount (RbuyCountB
+com.next1b.nextsvr.protobproto3

@@ -1,0 +1,42 @@
+{
+  "libil2cpp": "C:\\Users\\godho\\Downloads\\girlswar\\il2cpp_native\\libil2cpp.so",
+  "global_metadata": "C:\\Users\\godho\\Downloads\\girlswar\\il2cpp_native\\global-metadata.dat",
+  "decrypt_bytearray_magic_hex": "0C 07 08 0D 0B 09",
+  "fields": [
+    {
+      "static_field": "SoketKey",
+      "il2cpp_static_field_offset": "0x0",
+      "array_length": 8,
+      "cctor_slot_va": "0x303A278",
+      "metadata_usage_table_va": "0x3103F30",
+      "runtime_field_handle_expected": "0x8000000B",
+      "runtime_field_handle_from_table": "0x8000000B",
+      "private_impl_field": "<PrivateImplementationDetails>.51BC53F57A91F0EA5E505C3FA50DBF7A4643F1D998AD328C11BFD334FEA3FDA7",
+      "metadata_offset": "0x582889",
+      "bytes_hex": "66 78 16 18 58 06 77 58",
+      "ascii_preview": "fx..X.wX",
+      "dump_note": "internal static readonly long ... = 6374570772997240934",
+      "handle_matches": true
+    },
+    {
+      "static_field": "ass",
+      "il2cpp_static_field_offset": "0x8",
+      "array_length": 64,
+      "cctor_slot_va": "0x2FE9CB0",
+      "metadata_usage_table_va": "0x3103F80",
+      "runtime_field_handle_expected": "0x8000001F",
+      "runtime_field_handle_from_table": "0x8000001F",
+      "private_impl_field": "<PrivateImplementationDetails>.FE21119749EA1152146E5E80F04AFFC8FE4D1161C7D8EDE6C6F74A864B7C2FCE",
+      "metadata_offset": "0x582B67",
+      "bytes_hex": "24 FA 49 9B 10 8D 62 59 29 26 81 67 4B F7 91 EB 36 1F 78 07 49 CA 35 A2 37 D7 B0 A6 49 D3 31 D5 9A 5B 46 86 14 FF 21 CB BC 63 BA 1C 49 FC 94 2F F8 35 D9 46 1F 15 2B 2F 37 54 9D CC 44 D9 77 C4",
+      "ascii_preview": "$.I...bY)&.gK...6.x.I.5.7...I.1..[F...!..c..I../.5.F..+/7T..D.w.",
+      "dump_note": "internal static readonly __StaticArrayInitTypeSize=64",
+      "handle_matches": true
+    }
+  ],
+  "outputs": {
+    "csv": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_maininterface_unity\\Assets\\RestoreData\\reports\\maininterface_xxtea_static_arrays.csv",
+    "json": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_maininterface_unity\\Assets\\RestoreData\\reports\\maininterface_xxtea_static_arrays_summary.json",
+    "md": "C:\\Users\\godho\\Downloads\\girlswar\\MAININTERFACE_XXTEA_STATIC_ARRAYS.md"
+  }
+}

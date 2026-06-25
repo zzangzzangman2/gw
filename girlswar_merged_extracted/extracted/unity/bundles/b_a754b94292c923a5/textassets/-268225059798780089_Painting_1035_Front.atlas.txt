@@ -1,0 +1,6 @@
+Painting_1035_Front.png
+size:1024,256
+filter:Linear,Linear
+scale:0.9
+moon
+bounds:0,0,592,185

@@ -1,0 +1,20 @@
+local e={id=0,avgId=0}
+e.__index=e
+function e.New(a,o)
+local t={}
+setmetatable(t,e)
+t.id=a
+t.avgId=o
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.avgId=a[2]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/activity/DTGoldWeekMainHalloweenBase2EntityTableData')
+end
+return e 

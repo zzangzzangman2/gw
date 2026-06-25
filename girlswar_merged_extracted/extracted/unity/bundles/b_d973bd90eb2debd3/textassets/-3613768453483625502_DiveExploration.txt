@@ -1,0 +1,98 @@
+
+?
+DiveExploration.protoCommons.proto"(
+&PRT_DIVE_EXPLORATION_SPE_SHOP_INFO_REQ"K
+'PRT_DIVE_EXPLORATION_SPE_SHOP_INFO_RESP 
+items (2
+.PRT_GOODSRitems"Y
+%PRT_DIVE_EXPLORATION_SPE_SHOP_BUY_REQ
+goodsDid (RgoodsDid
+count (Rcount"H
+&PRT_DIVE_EXPLORATION_SPE_SHOP_BUY_RESP
+item (2
+.PRT_GOODSRitem"$
+"PRT_DIVE_EXPLORATION_FUND_INFO_REQ"?
+#PRT_DIVE_EXPLORATION_FUND_INFO_RESP
+isCharge (RisCharge 
+recFreeDids (RrecFreeDids$
+recChargeDids (RrecChargeDids
+nowDay (RnowDay"]
+#PRT_DIVE_EXPLORATION_FUND_AWARD_REQ
+awardDid (RawardDid
+isCharge (RisCharge"^
+$PRT_DIVE_EXPLORATION_FUND_AWARD_RESP
+awardDid (RawardDid
+isCharge (RisCharge"$
+"PRT_DIVE_EXPLORATION_GIFT_INFO_REQ"_
+#PRT_DIVE_EXPLORATION_GIFT_INFO_RESP 
+gifts (2
+.PRT_GOODSRgifts
+freeCD (RfreeCD"D
+(PRT_DIVE_EXPLORATION_GIFT_FREE_AWARD_REQ
+giftDid (RgiftDid"K
+)PRT_DIVE_EXPLORATION_GIFT_FREE_AWARD_RESP
+gift (2
+.PRT_GOODSRgift"$
+"PRT_DIVE_EXPLORATION_SHOP_INFO_REQ"G
+#PRT_DIVE_EXPLORATION_SHOP_INFO_RESP 
+items (2
+.PRT_GOODSRitems"U
+!PRT_DIVE_EXPLORATION_SHOP_BUY_REQ
+goodsDid (RgoodsDid
+count (Rcount"D
+"PRT_DIVE_EXPLORATION_SHOP_BUY_RESP
+item (2
+.PRT_GOODSRitem"
+PRT_DIVE_EXPLORATION_RANK_REQ"?
+PRT_DIVE_EXPLORATION_RANK_RESP1
+	rankDatas (2.PRT_CS_COMMON_RANKR	rankDatas/
+selfRank (2.PRT_CS_COMMON_RANKRselfRank
+playerId (RplayerId"}
+-PRT_CS_DIVE_EXPLORATION_RANK_SCORE_UPDATE_SYN
+playerId (RplayerId
+score (Rscore
+changeMS (RchangeMS"?
+PRT_CELL
+isShow (RisShow
+col (Rcol
+row (Rrow
+bgId (RbgId
+itemId (RitemId
+
+leftUseNum (R
+leftUseNum"U
+PRT_CELL_DROP
+col (Rcol
+row (Rrow 
+drops (2
+.PRT_THINGRdrops"@
+	PRT_BOARD
+line (Rline
+cells (2	.PRT_CELLRcells"
+PRT_DIVE_EXPLORATION_INFO_REQ"p
+PRT_DIVE_EXPLORATION_INFO_RESP 
+board (2
+.PRT_BOARDRboard,
+rewardProcessDIds (RrewardProcessDIds"h
+ PRT_DIVE_EXPLORATION_OPERATE_REQ
+col (Rcol
+row (Rrow 
+operateType (RoperateType"?
+!PRT_DIVE_EXPLORATION_OPERATE_RESP
+col (Rcol
+row (Rrow 
+operateType (RoperateType 
+board (2
+.PRT_BOARDRboard.
+
+boardDrops (2.PRT_CELL_DROPR
+boardDrops"N
+,PRT_REWARD_DIVE_EXPLORATION_LINE_PROCESS_REQ
+
+rewardDids (R
+rewardDids"?
+-PRT_REWARD_DIVE_EXPLORATION_LINE_PROCESS_RESP,
+rewardProcessDIds (RrewardProcessDIds$
+rewards (2
+.PRT_THINGRrewardsB
+com.next1b.nextsvr.protobproto3

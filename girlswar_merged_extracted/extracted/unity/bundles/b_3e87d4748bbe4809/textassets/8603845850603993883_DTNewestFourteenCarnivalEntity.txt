@@ -1,0 +1,30 @@
+local t={id=0,heroId=0,eventId=0,days=0,currency1={},points={},progressitem=0}
+t.__index=t
+function t.New(o,h,a,s,r,n,i)
+local e={}
+setmetatable(e,t)
+e.id=o
+e.heroId=h
+e.eventId=a
+e.days=s
+e.currency1=r
+e.points=n
+e.progressitem=i
+return e
+end
+function t.NewFromArrItem(a)
+local e={}
+setmetatable(e,t)
+e.id=a[1]
+e.heroId=a[2]
+e.eventId=a[3]
+e.days=a[4]
+e.currency1=a[5]
+e.points=a[6]
+e.progressitem=a[7]
+return e
+end
+function t.GetArr()
+return require('DataNode/DataTable/Create/activity/DTNewestFourteenCarnivalEntityTableData')
+end
+return t 

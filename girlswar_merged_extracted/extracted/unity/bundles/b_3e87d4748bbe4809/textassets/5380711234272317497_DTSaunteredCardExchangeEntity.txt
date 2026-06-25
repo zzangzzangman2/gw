@@ -1,0 +1,28 @@
+local e={id=0,needCard={{},{}},rarity=0,exchangeReward={{},{}},useType=0,redDot=0}
+e.__index=e
+function e.New(a,i,o,h,s,n)
+local t={}
+setmetatable(t,e)
+t.id=a
+t.needCard=i
+t.rarity=o
+t.exchangeReward=h
+t.useType=s
+t.redDot=n
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.needCard=a[2]
+t.rarity=a[3]
+t.exchangeReward=a[4]
+t.useType=a[5]
+t.redDot=a[6]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/activity/DTSaunteredCardExchangeEntityTableData')
+end
+return e 

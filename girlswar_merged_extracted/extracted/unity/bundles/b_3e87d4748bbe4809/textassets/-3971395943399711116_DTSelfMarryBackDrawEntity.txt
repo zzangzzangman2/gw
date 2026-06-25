@@ -1,0 +1,26 @@
+local e={id=0,minNum=0,maxNum=0,marryPool=0,marryPoolFORMULA=""}
+e.__index=e
+function e.New(o,n,a,s,i)
+local t={}
+setmetatable(t,e)
+t.id=o
+t.minNum=n
+t.maxNum=a
+t.marryPool=s
+t.marryPoolFORMULA=i
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.minNum=a[2]
+t.maxNum=a[3]
+t.marryPool=a[4]
+t.marryPoolFORMULA=a[5]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/activity/DTSelfMarryBackDrawEntityTableData')
+end
+return e 

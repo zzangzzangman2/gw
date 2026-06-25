@@ -1,0 +1,524 @@
+
+?j
+GuildCity.protoFight.proto
+Hero.protoSnapshot.protoCommons.protoSummonPet.proto"z
+PRT_GUILD_INFO
+guildId (RguildId
+name (	Rname
+serverId (RserverId
+bg (Rbg
+fg (Rfg"u
+PRT_CITY_NOTE
+guildId (RguildId0
+noteType (2.ENUM_CITY_NOTE_TYPERnoteType
+noteMsg (	RnoteMsg"?
+PRT_CITY_INFO
+cityId (RcityId)
+status (2.ENUM_CITY_STATUSRstatus+
+defGuild (2.PRT_GUILD_INFORdefGuild+
+atkGuild (2.PRT_GUILD_INFORatkGuild
+
+defTeamNum (R
+defTeamNum
+
+attTeamNum (R
+attTeamNum&
+protectEndTime (RprotectEndTime
+cityDbId (RcityDbId
+
+isFighting	 (R
+isFighting$
+notes
+ (2.PRT_CITY_NOTERnotes"?
+PRT_CITY_BATTLE_RECORD
+cityId (RcityId
+atkName (	RatkName
+defName (	RdefName
+isAtkWin (RisAtkWin
+isReAtk (RisReAtk$
+battleEndTime (RbattleEndTime
+isBully (RisBully"?
+PRT_GUILD_POINT
+guildId (RguildId
+point (Rpoint
+fight (Rfight
+	guildName (	R	guildName
+serverId (RserverId"r
+PRT_GVG_STATE_INFO_REQ
+
+needCities (R
+needCities"
+type (2.ENUM_GVG_TYPERtype
+mapId (RmapId"?
+
+PRT_GVG_STATE_INFO_RESP(
+status (2.ENUM_GVG_STATUSRstatus
+	bigSeason (R	bigSeason 
+giveUpCount (RgiveUpCount
+	startTime (R	startTime4
+selfLeftDeclareChance (RselfLeftDeclareChance2
+selfLeftDeclarePoint (RselfLeftDeclarePoint
+season (Rseason$
+seasonEndTime (RseasonEndTime
+isJoin	 (RisJoin"
+type
+ (2.ENUM_GVG_TYPERtype(
+mapStar (2.ENUM_MAP_STARRmapStar0
+selfMapStar (2.ENUM_MAP_STARRselfMapStar(
+csStartLeftTime (RcsStartLeftTime&
+isServerJoinCs (RisServerJoinCs$
+joinCsServers (RjoinCsServers
+cs_playerId (R
+csPlayerId
+mapId (RmapId
+	selfMapId (R	selfMapId
+
+giveUpDids (R
+giveUpDids$
+citys (2.PRT_CITY_INFORcitys1
+records (2.PRT_CITY_BATTLE_RECORDRrecords(
+points (2.PRT_GUILD_POINTRpoints
+map (Rmap
+
+guildCount (R
+guildCount(
+bullyCDOverTime (RbullyCDOverTime
+mapType (RmapType 
+isGuildJoin (RisGuildJoin
+
+isNewAward (R
+isNewAward&
+isNewEvolution (RisNewEvolution"
+isGuildQuest (RisGuildQuest,
+upgradeOverSecond (RupgradeOverSecond2
+isGroupHasSixStarMap  (RisGroupHasSixStarMap.
+isNewAwardTreasure! (RisNewAwardTreasure&
+joinGuildCount" (RjoinGuildCount"?
+PRT_GVG_VITALITY_RANK_INFO
+rank (Rrank
+id (Rid
+level (Rlevel
+name (	Rname
+value (Rvalue
+
+masterName (	R
+masterName
+currMem (RcurrMem
+maxMem (RmaxMem
+bg	 (Rbg
+fg
+ (Rfg
+value2 (Rvalue2
+
+fightValue (R
+fightValue
+serverId (RserverId"A
+PRT_GVG_GUILD_RANK_LIST_REQ"
+type (2.ENUM_GVG_TYPERtype"?
+PRT_GVG_GUILD_RANK_LIST_RESP"
+type (2.ENUM_GVG_TYPERtype;
+
+ranksToday (2.PRT_GVG_VITALITY_RANK_INFOR
+ranksTodayC
+ranksYesterday (2.PRT_GVG_VITALITY_RANK_INFORranksYesterday"Q
+!PRT_GVG_GUILD_POINT_RANK_LIST_REQ
+season (Rseason
+mapId (RmapId"y
+"PRT_GVG_GUILD_POINT_RANK_LIST_RESP
+season (Rseason;
+
+pointRanks (2.PRT_GVG_VITALITY_RANK_INFOR
+pointRanks"?
+PRT_TEAM_INFO
+teamId (RteamId
+playerId (RplayerId
+
+playerName (	R
+playerName 
+playerLevel (RplayerLevel#
+type (2.ENUM_TEAM_TYPERtype
+fightNum (RfightNum
+cityId (RcityId 
+roleItemIds (RroleItemIds
+
+firstValue	 (R
+firstValue$
+summonPetDids
+ (RsummonPetDids"
+PRT_GVG_SELF_TEAMS_INFO_REQ"D
+PRT_GVG_SELF_TEAMS_INFO_RESP$
+teams (2.PRT_TEAM_INFORteams"o
+PRT_GVG_CITY_TEAM_LIST_REQ
+cityId (RcityId
+mapId (RmapId#
+type (2.ENUM_TEAM_TYPERtype"[
+PRT_GVG_CITY_TEAM_LIST_RESP
+cityId (RcityId$
+teams (2.PRT_TEAM_INFORteams"f
+PRT_GVG_MANAGE_DEFENDERS_REQ
+cityId (RcityId
+mapId (RmapId
+teamIds (RteamIds"E
+PRT_GVG_MANAGE_DEFENDERS_RESP$
+teams (2.PRT_TEAM_INFORteams"?
+PRT_GVG_ROLE_INFO
+roleId (RroleId
+itemId (RitemId)
+status (2.ENUM_ROLE_STATUSRstatus
+energy (Renergy
+fightNum (RfightNum
+
+firstValue (R
+firstValue
+	rankLevel (R	rankLevel"?
+PRT_GVG_SUMMON_PET_INFO
+petId (RpetId
+petDid (RpetDid
+level (Rlevel
+exp (Rexp
+star (Rstar
+fight (Rfight
+energy (Renergy)
+status (2.ENUM_ROLE_STATUSRstatus"
+PRT_GVG_SELF_ROLE_INFO_REQ"?
+PRT_GVG_SELF_ROLE_INFO_RESP(
+roles (2.PRT_GVG_ROLE_INFORroles8
+
+summonPets (2.PRT_GVG_SUMMON_PET_INFOR
+summonPets"?
+PRT_GVG_TEAM_GO_REQ
+cityId (RcityId
+mapId (RmapId
+roleIds (RroleIds+
+teamType (2.ENUM_TEAM_TYPERteamType"
+summonPetIds (RsummonPetIds"l
+PRT_GVG_TEAM_GO_RESP
+result (Rresult
+roleIds (RroleIds"
+summonPetIds (RsummonPetIds"M
+PRT_GVG_DELIVER_CHALLENGE_REQ
+cityId (RcityId
+mapId (RmapId"?
+PRT_GVG_DELIVER_CHALLENGE_RESP"
+city (2.PRT_CITY_INFORcity4
+selfLeftDeclareChance (RselfLeftDeclareChance2
+selfLeftDeclarePoint (RselfLeftDeclarePoint"S
+#PRT_GVG_DELIVER_CHALLENGE_BULLY_REQ
+cityId (RcityId
+mapId (RmapId"?
+$PRT_GVG_DELIVER_CHALLENGE_BULLY_RESP"
+city (2.PRT_CITY_INFORcity4
+selfLeftDeclareChance (RselfLeftDeclareChance2
+selfLeftDeclarePoint (RselfLeftDeclarePoint(
+bullyCDOverTime (RbullyCDOverTime"?
+PRT_GVG_STATUS_CHANGE_SYN(
+status (2.ENUM_GVG_STATUSRstatus"
+type (2.ENUM_GVG_TYPERtype
+leftTime (RleftTime"U
+PRT_MVP0
+
+playerInfo (2.PRT_PLAYER_INFOR
+playerInfo
+killNum (RkillNum"\
+PRT_HERO_BATTLE_INFO
+heroDid (RheroDid
+alive (Ralive
+level (Rlevel"?
+PRT_TEAM_BATTLE_INFO
+playerId (RplayerId
+
+playerName (	R
+playerName
+head (Rhead
+	headFrame (R	headFrame
+
+fightValue (R
+fightValue
+killNum (RkillNum+
+heros (2.PRT_HERO_BATTLE_INFORheros 
+playerLevel (RplayerLevel
+
+firstValue	 (R
+firstValue"?
+PRT_TEAM_BATTLE/
+attTeam (2.PRT_TEAM_BATTLE_INFORattTeam/
+defTeam (2.PRT_TEAM_BATTLE_INFORdefTeam
+
+battleTime (R
+battleTime
+battleId (RbattleId
+isAtkWin (RisAtkWin"F
+PRT_GVG_ENTER_CITY_REQ
+cityId (RcityId
+mapId (RmapId"?
+PRT_GVG_ENTER_CITY_RESP
+cityId (RcityId(
+attAllianceName (	RattAllianceName(
+defAllianceName (	RdefAllianceName
+
+battleTime (R
+battleTime 
+currentTime (RcurrentTime
+battleId (RbattleId0
+
+battleLogs (2.PRT_TEAM_BATTLER
+battleLogs"G
+PRT_GVG_CITY_RECORD_REQ
+cityId (RcityId
+mapId (RmapId"?
+PRT_GVG_CITY_RECORD_RESP
+cityId (RcityId(
+attAllianceName (	RattAllianceName(
+defAllianceName (	RdefAllianceName
+
+battleTime (R
+battleTime 
+currentTime (RcurrentTime 
+attMvp (2.PRT_MVPRattMvp 
+defMvp (2.PRT_MVPRdefMvp0
+
+battleLogs (2.PRT_TEAM_BATTLER
+battleLogs"L
+PRT_GVG_TEAM_NUMBER_PUSH_REQ
+mapId (RmapId
+cityId (RcityId"?
+PRT_TEAM_NUMBER_PUSH
+cityId (RcityId
+
+atkNumbers (R
+atkNumbers
+
+defNumbers (R
+defNumbers 
+currentTime (RcurrentTime
+
+isFighting (R
+isFighting
+cityDbId (RcityDbId"L
+PRT_GVG_TEAM_NUMBER_PUSH_RESP+
+teams (2.PRT_TEAM_NUMBER_PUSHRteams"1
+PRT_GVG_CITY_REWARD_REQ
+cityId (RcityId"M
+PRT_GVG_CITY_REWARD
+cityId (RcityId
+
+isReceived (R
+isReceived"?
+PRT_GVG_CITY_REWARD_RESP6
+rewardInfos (2.PRT_GVG_CITY_REWARDRrewardInfos"
+star (2.ENUM_MAP_STARRstar
+canAward (RcanAward"Z
+PRT_GVG_CITY_STATE_CHANGE_RESP"
+city (2.PRT_CITY_INFORcity
+mapId (RmapId"w
+PRT_HERO_SNAPSHOT
+hero (2	.PRT_HERORhero
+actPower (RactPower'
+state (2.ENUM_ROLE_STATUSRstate"r
+PRT_HERO_SNAPSHOT_LIST(
+heros (2.PRT_HERO_SNAPSHOTRheros.
+petSnap (2.PRT_SUMMON_PET_SNAPRpetSnap"d
+PRT_GVG_WATCH_BATTLE_REQ
+cityId (RcityId
+mapId (RmapId
+battleId (RbattleId"D
+PRT_GVG_WATCH_BATTLE_RESP'
+battle (2.PRT_FIGHT_PLAYRbattle"?
+MSG_MAP_GROUP_INFO"
+star (2.ENUM_MAP_STARRstar'
+guilds (2.PRT_GUILD_INFORguilds
+mapId (RmapId
+map (Rmap"
+PRT_GVG_MAP_GROUP_REQ"E
+PRT_GVG_MAP_GROUP_RESP+
+groups (2.MSG_MAP_GROUP_INFORgroups"G
+PRT_GVG_CITY_GIVEUP_REQ
+cityId (RcityId
+mapId (RmapId"j
+PRT_GVG_CITY_GIVEUP_RESP
+cityId (RcityId
+mapId (RmapId 
+giveUpCount (RgiveUpCount"
+PRT_GVG_HONOR_RANK_REQ"?
+PRT_GVG_HONOR_RANK_RESP1
+owner (2.PRT_GVG_VITALITY_RANK_INFORowner7
+rankList (2.PRT_GVG_VITALITY_RANK_INFORrankList"&
+$PRT_GVG_GUILD_HISTORY_HONOR_INFO_REQ"`
+PRT_HONOR_INFO
+	bigSeason (R	bigSeason
+rank (Rrank
+	timestamp (R	timestamp"P
+%PRT_GVG_GUILD_HISTORY_HONOR_INFO_RESP'
+honors (2.PRT_HONOR_INFORhonors"
+PRT_GVG_QUEST_REQ"`
+PRT_GVG_QUEST_DATA
+questDid (RquestDid.
+status (2.ENUM_GVG_QUEST_STATUSRstatus"?
+PRT_GVG_QUEST_TYPE_DATA(
+type (2.ENUM_GVG_QUEST_TYPERtype)
+datas (2.PRT_GVG_QUEST_DATARdatas
+progress (Rprogress"?
+PRT_GVG_QUEST_RESP0
+quests (2.PRT_GVG_QUEST_TYPE_DATARquests
+
+mondayDate (	R
+mondayDate
+
+sundayDate (	R
+sundayDate$
+selfPointRank (RselfPointRank$
+selfHonorRank (RselfHonorRank"_
+PRT_GVG_QUEST_AWARD_REQ(
+type (2.ENUM_GVG_QUEST_TYPERtype
+questDid (RquestDid"`
+PRT_GVG_QUEST_AWARD_RESP(
+type (2.ENUM_GVG_QUEST_TYPERtype
+questDid (RquestDid"c
+PRT_CITY_BATTLE_RECORD_SYN
+mapId (RmapId/
+record (2.PRT_CITY_BATTLE_RECORDRrecord"E
+PRT_GVG_OPEN_STATUS_SYN
+open (Ropen
+openCS (RopenCS"{
+PRT_GVG_CITY_NOTE_REQ
+cityId (RcityId0
+noteType (2.ENUM_CITY_NOTE_TYPERnoteType
+noteMsg (	RnoteMsg"|
+PRT_GVG_CITY_NOTE_RESP
+cityId (RcityId0
+noteType (2.ENUM_CITY_NOTE_TYPERnoteType
+noteMsg (	RnoteMsg"}
+PRT_GVG_GUILD_QUEST
+questDid (RquestDid.
+status (2.ENUM_GVG_QUEST_STATUSRstatus
+progress (Rprogress"
+PRT_GVG_GUILD_QUEST_REQ"h
+PRT_GVG_GUILD_QUEST_RESP*
+quest (2.PRT_GVG_GUILD_QUESTRquest 
+refreshTime (RrefreshTime"
+PRT_GVG_GUILD_QUEST_AWARD_REQ"L
+PRT_GVG_GUILD_QUEST_AWARD_RESP*
+quest (2.PRT_GVG_GUILD_QUESTRquest"?
+PRT_CS_GVG_PLAYER_AWARD_RESP
+playerId (RplayerId
+hint (Rhint
+source (	Rsource
+	rewardStr (	R	rewardStr"P
+PRT_CS_GVG_RED_POINT_REQ
+playerId (RplayerId
+guildId (RguildId"?
+PRT_CS_GVG_RED_POINT_RESP
+playerId (RplayerId
+red (Rred
+questRed (RquestRed
+
+declareRed (R
+declareRed/
+	enterReds (2.ENUM_REDPOINT_IDR	enterReds"m
+PRT_CS_GVG_BROADCAST_RESP
+guildIds (RguildIds
+	marqueeId (R	marqueeId
+params (	Rparams"x
+PRT_CS_GVG_SERVER_INFO
+serverId (RserverId
+gvgType (RgvgType(
+seasonBeginTime (RseasonBeginTime"j
+PRT_CS_GVG_SERVER_DATA_RESP
+groupId (RgroupId1
+gvgInfo (2.PRT_CS_GVG_SERVER_INFORgvgInfo"P
+ PRT_CS_GVG_GUILD_ROLE_SNAP_FETCH
+guildId (RguildId
+type (Rtype"?
+MSG_CSGVG_ROLE_SNAP_INFO
+playerId (RplayerId
+
+playerName (	R
+playerName
+playerLv (RplayerLv
+guildId (RguildId8
+mercenaryInfo (2.PRT_HERO_SNAPSHOTRmercenaryInfo0
+
+playerInfo (2.PRT_PLAYER_INFOR
+playerInfo.
+petSnap (2.PRT_SUMMON_PET_SNAPRpetSnap"?
+PRT_CS_GVG_GUILD_ROLE_SNAP_RESP
+guildId (RguildId/
+snaps (2.MSG_CSGVG_ROLE_SNAP_INFORsnaps
+type (Rtype"E
+PRT_CS_GVG_HAS_SERVER_JOIN_RESP"
+isServerJoin (RisServerJoin"L
+PRT_CS_GVG_KILL_RESP
+playerId (RplayerId
+killNum (RkillNum"Q
+PRT_CS_GVG_OCCUPY_CITY_RESP
+guildId (RguildId
+cityDid (RcityDid"l
+$PRT_CS_GVG_SERVER_SEASON_BEGION_TIME
+serverId (RserverId(
+seasonBeginTime (RseasonBeginTime""
+ PRT_CS_GVG_SEASON_BEGIN_TIME_REQ"d
+!PRT_CS_GVG_SEASON_BEGIN_TIME_RESP?
+servers (2%.PRT_CS_GVG_SERVER_SEASON_BEGION_TIMERservers"2
+PRT_CS_GVG_ENTER_MAP
+playerId (RplayerId*C
+ENUM_GVG_TYPE
+GVG_NONE 
+
+GVG_SERVER
+GVG_CROSS_SERVER*?
+ENUM_MAP_STAR
+MAP_STAR_NONE 
+MAP_STAR_TEST
+MAP_STAR_THREE
+MAP_STAR_FOUR
+MAP_STAR_FIVE
+MAP_STAR_SIX*?
+ENUM_GVG_STATUS
+GVG_STATUS_NONE 
+GVG_STATUS_NOT_OPEN
+GVG_STATUS_WAITING
+GVG_STATUS_PREPARE
+GVG_STATUS_FIGHTING
+GVG_STATUS_ENDING
+GVG_STATUS_UPGRADE
+GVG_STATUS_FETCH_DATA
+GVG_STATUS_GIVEUP
+GVG_STATUS_STOP	
+GVG_STATUS_BULLY_FIGHTING
+*?
+ENUM_CITY_STATUS
+CITY_STATUS_NONE 
+CITY_STATUS_NORMAL
+CITY_STATUS_DECLARED
+CITY_STATUS_FIGHTING
+CITY_STATUS_BULLY_DECLARED
+CITY_STATUS_BULLY_FIGHTING*j
+ENUM_ROLE_STATUS
+ROLE_STATUS_NONE 
+ROLE_STATUS_NORMAL
+ROLE_STATUS_ATT
+ROLE_STATUS_DEF*J
+ENUM_TEAM_TYPE
+TEAM_TYPE_NONE 
+TEAM_TYPE_ATT
+TEAM_TYPE_DEF*f
+ENUM_CITY_NOTE_TYPE
+	NOTE_NONE 
+NOTE_ATT
+NOTE_DEF
+NOTE_ATTENTION
+NOTE_GIVE_UP*?
+ENUM_GVG_QUEST_TYPE
+GVG_QUEST_NONE 
+GVG_QUEST_ENTER
+GVG_QUEST_DIDPATCH
+GVG_QUEST_KILL
+QUEST_TYPE_OCCUPY_CITY_1
+QUEST_TYPE_OCCUPY_CITY_2
+QUEST_TYPE_OCCUPY_CITY_3*?
+ENUM_GVG_QUEST_STATUS
+GVG_QUEST_STATUS_NONE 
+GVG_QUEST_STATUS_NOT_OPEN
+GVG_QUEST_STATUS_OPEN
+GVG_QUEST_STATUS_COMPLETEB
+com.next1b.nextsvr.protobproto3

@@ -1,0 +1,12 @@
+Painting_1060_Back.png
+size:2048,512
+filter:Linear,Linear
+scale:0.6
+bgb1
+bounds:0,24,1008,449
+bgb2
+bounds:1341,18,455,329
+rotate:90
+bgb3
+bounds:1000,0,473,340
+rotate:90

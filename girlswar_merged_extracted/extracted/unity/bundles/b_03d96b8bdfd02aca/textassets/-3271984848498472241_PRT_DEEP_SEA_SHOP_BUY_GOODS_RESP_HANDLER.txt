@@ -1,0 +1,11 @@
+local t={}
+function t:OnHandle(e)
+local e=assert(GlobalPB.decode("PRT_DEEP_SEA_SHOP_BUY_GOODS_RESP",e));
+if(GameInit.GetDebugLogProto())then
+;
+;
+end
+ModulesInit.DeepSeaMgr:ParseShopBuy(e)
+return e
+end
+return t 

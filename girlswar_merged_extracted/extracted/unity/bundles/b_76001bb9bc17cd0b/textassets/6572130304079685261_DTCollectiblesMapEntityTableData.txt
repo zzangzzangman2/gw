@@ -1,0 +1,12 @@
+local e=
+{
+ByIdx={
+{1,13300001,1,15,2,"ui_Collectibles_5",20,"UICollectibles/scp_icon_ditudi01",1,{{1001,50},{1001,150},{1001,250},{1001,350}}},
+{2,13300002,2,15,3,"ui_Collectibles_6",40,"UICollectibles/scp_icon_ditudi02",2,{{1001,50},{1001,150},{1001,250},{1001,350}}},
+{3,13300003,3,15,4,"ui_Collectibles_7",60,"UICollectibles/scp_icon_ditudi03",3,{{1001,50},{1001,150},{1001,250},{1001,350}}},
+{4,13300004,4,15,5,"ui_Collectibles_8",80,"UICollectibles/scp_icon_ditudi04",4,{{1001,50},{1001,150},{1001,250},{1001,350}}},
+{5,13300005,5,15,0,"ui_Collectibles_9",9999,"UICollectibles/scp_icon_ditudi05",5,{{1001,50},{1001,150},{1001,250},{1001,350}}}
+},
+Len=5
+}
+return e 

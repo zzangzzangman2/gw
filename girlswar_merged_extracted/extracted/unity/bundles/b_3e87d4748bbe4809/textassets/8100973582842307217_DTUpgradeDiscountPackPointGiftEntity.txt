@@ -1,0 +1,24 @@
+local e={id=0,pointNumber=0,reward={{},{}},round=0}
+e.__index=e
+function e.New(o,a,n,i)
+local t={}
+setmetatable(t,e)
+t.id=o
+t.pointNumber=a
+t.reward=n
+t.round=i
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.pointNumber=a[2]
+t.reward=a[3]
+t.round=a[4]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/activity/DTUpgradeDiscountPackPointGiftEntityTableData')
+end
+return e 

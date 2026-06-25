@@ -1,0 +1,15 @@
+haohuabanshu.png
+size:512,512
+filter:Linear,Linear
+7
+bounds:377,244,34,40
+bp_zys5
+bounds:0,0,376,56
+fx1
+bounds:0,57,376,56
+fx2
+bounds:0,114,376,56
+fx3
+bounds:0,171,376,56
+fx4
+bounds:0,228,376,56

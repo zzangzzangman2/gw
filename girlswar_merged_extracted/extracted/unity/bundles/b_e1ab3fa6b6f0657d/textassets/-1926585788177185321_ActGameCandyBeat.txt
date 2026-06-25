@@ -1,0 +1,44 @@
+
+?
+ActGameCandyBeat.protoCommons.proto"
+PRT_GAME_CANDY_BEAT_INFO_REQ"G
+PRT_GAME_CANDY_BEAT_INFO_RESP&
+info (2.GameCandyBeatInfoRinfo"|
+GameCandyBeatInfo1
+	rankDatas (2.PRT_CS_COMMON_RANKR	rankDatas
+isAward (RisAward
+maxScore (RmaxScore"
+PRT_GAME_CANDY_BEAT_BEGIN_REQ" 
+PRT_GAME_CANDY_BEAT_BEGIN_RESP"3
+PRT_GAME_CANDY_BEAT_END_REQ
+score (Rscore"j
+PRT_GAME_CANDY_BEAT_END_RESP"
+awards (2
+.PRT_THINGRawards&
+info (2.GameCandyBeatInfoRinfo"
+PRT_GAME_CANDY_BEAT_RANK_REQ"?
+PRT_GAME_CANDY_BEAT_RANK_RESP1
+	rankDatas (2.PRT_CS_COMMON_RANKR	rankDatas/
+selfRank (2.PRT_CS_COMMON_RANKRselfRank
+playerId (RplayerId"|
+,PRT_CS_GAME_CANDY_BEAT_RANK_SCORE_UPDATE_SYN
+playerId (RplayerId
+score (Rscore
+changeMS (RchangeMS"D
+$PRT_CS_GAME_CANDY_BEAT_RANK_FIVE_REQ
+	showCount (R	showCount"?
+%PRT_CS_GAME_CANDY_BEAT_RANK_FIVE_RESP1
+	rankDatas (2.PRT_CS_COMMON_RANKR	rankDatas/
+selfRank (2.PRT_CS_COMMON_RANKRselfRank
+playerId (RplayerId"l
+(PRT_CS_GAME_CANDY_BEAT_END_RANK_INFO_REQ
+	showCount (R	showCount"
+awards (2
+.PRT_THINGRawards"?
+)PRT_CS_GAME_CANDY_BEAT_END_RANK_INFO_RESP1
+	rankDatas (2.PRT_CS_COMMON_RANKR	rankDatas/
+selfRank (2.PRT_CS_COMMON_RANKRselfRank
+playerId (RplayerId"
+awards (2
+.PRT_THINGRawardsB
+com.next1b.nextsvr.protobproto3

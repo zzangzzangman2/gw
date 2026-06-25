@@ -1,0 +1,79 @@
+
+?
+GhostNight.protoCommons.proto"(
+&PRT_GHOST_NIGHT_EXCHANGE_SHOP_INFO_REQ"K
+'PRT_GHOST_NIGHT_EXCHANGE_SHOP_INFO_RESP 
+items (2
+.PRT_GOODSRitems"Y
+%PRT_GHOST_NIGHT_EXCHANGE_SHOP_BUY_REQ
+goodsDid (RgoodsDid
+count (Rcount"H
+&PRT_GHOST_NIGHT_EXCHANGE_SHOP_BUY_RESP
+item (2
+.PRT_GOODSRitem"#
+!PRT_GHOST_NIGHT_SPE_SHOP_INFO_REQ"^
+"PRT_GHOST_NIGHT_SPE_SHOP_INFO_RESP 
+items (2
+.PRT_GOODSRitems
+freeCD (RfreeCD"T
+ PRT_GHOST_NIGHT_SPE_SHOP_BUY_REQ
+goodsDid (RgoodsDid
+count (Rcount"C
+!PRT_GHOST_NIGHT_SPE_SHOP_BUY_RESP
+item (2
+.PRT_GOODSRitem"E
+'PRT_GHOST_NIGHT_SPE_SHOP_FREE_AWARD_REQ
+goodsDid (RgoodsDid"J
+(PRT_GHOST_NIGHT_SPE_SHOP_FREE_AWARD_RESP
+item (2
+.PRT_GOODSRitem"
+PRT_GHOST_NIGHT_GIFT_INFO_REQ"Z
+PRT_GHOST_NIGHT_GIFT_INFO_RESP 
+gifts (2
+.PRT_GOODSRgifts
+freeCD (RfreeCD"?
+#PRT_GHOST_NIGHT_GIFT_FREE_AWARD_REQ
+giftDid (RgiftDid"F
+$PRT_GHOST_NIGHT_GIFT_FREE_AWARD_RESP
+gift (2
+.PRT_GOODSRgift"'
+%PRT_GHOST_NIGHT_GOLD_PLATING_INFO_REQ"h
+&PRT_GHOST_NIGHT_GOLD_PLATING_INFO_RESP
+	rewardIds (R	rewardIds 
+finishRadio (RfinishRadio"E
+'PRT_GHOST_NIGHT_GOLD_PLATING_REWARD_REQ
+rewardId (RrewardId"?
+(PRT_GHOST_NIGHT_GOLD_PLATING_REWARD_RESP
+	rewardIds (R	rewardIds 
+drops (2
+.PRT_THINGRdrops
+rewardId (RrewardId">
+ PRT_GHOST_NIGHT_GOLD_PLATING_REQ
+useCount (RuseCount"E
+!PRT_GHOST_NIGHT_GOLD_PLATING_RESP 
+finishRadio (RfinishRadio"
+PRT_GHOST_NIGHT_FUND_INFO_REQ"?
+PRT_GHOST_NIGHT_FUND_INFO_RESP
+isCharge (RisCharge 
+recFreeDids (RrecFreeDids$
+recChargeDids (RrecChargeDids
+nowDay (RnowDay"X
+PRT_GHOST_NIGHT_FUND_AWARD_REQ
+awardDid (RawardDid
+isCharge (RisCharge"Y
+PRT_GHOST_NIGHT_FUND_AWARD_RESP
+awardDid (RawardDid
+isCharge (RisCharge"
+PRT_GHOST_NIGHT_TASK_INFO_REQ"c
+PRT_GHOST_NIGHT_TASK_INFO_RESP
+tasks (2	.PRT_TASKRtasks 
+recGiftDids (RrecGiftDids":
+PRT_GHOST_NIGHT_TASK_AWARD_REQ
+taskDid (RtaskDid";
+PRT_GHOST_NIGHT_TASK_AWARD_RESP
+taskDid (RtaskDid"?
+#PRT_GHOST_NIGHT_TASK_GIFT_AWARD_REQ
+giftDid (RgiftDid"@
+$PRT_GHOST_NIGHT_TASK_GIFT_AWARD_RESP
+giftDid (RgiftDidB
+com.next1b.nextsvr.protobproto3

@@ -1,0 +1,11 @@
+local e={}
+function e:OnHandle(e)
+local e=assert(GlobalPB.decode("PRT_GUILD_KICK_RESP",e));
+if(GameInit.GetDebugLogProto())then
+;
+;
+end
+UIUtil.ShowCommonTips(GameTools.GetLocalize("UI.guild.Tips.16",LanguageCategory.LangCommon))
+EventSystem.SendEvent(CommonEventId.OnGuildLeave,{exitType=PROTO_ENUM.ENUM_MANAGE_ACTION.KICK})
+end
+return e 

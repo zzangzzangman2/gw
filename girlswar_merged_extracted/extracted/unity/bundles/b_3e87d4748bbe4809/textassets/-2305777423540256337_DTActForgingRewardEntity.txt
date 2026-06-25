@@ -1,0 +1,30 @@
+local t={id=0,pointRange={},rewardType=0,poolId=0,poolGetNum=0,quality=0,desc=""}
+t.__index=t
+function t.New(o,h,a,s,r,n,i)
+local e={}
+setmetatable(e,t)
+e.id=o
+e.pointRange=h
+e.rewardType=a
+e.poolId=s
+e.poolGetNum=r
+e.quality=n
+e.desc=i
+return e
+end
+function t.NewFromArrItem(a)
+local e={}
+setmetatable(e,t)
+e.id=a[1]
+e.pointRange=a[2]
+e.rewardType=a[3]
+e.poolId=a[4]
+e.poolGetNum=a[5]
+e.quality=a[6]
+e.desc=a[7]
+return e
+end
+function t.GetArr()
+return require('DataNode/DataTable/Create/activity/DTActForgingRewardEntityTableData')
+end
+return t 

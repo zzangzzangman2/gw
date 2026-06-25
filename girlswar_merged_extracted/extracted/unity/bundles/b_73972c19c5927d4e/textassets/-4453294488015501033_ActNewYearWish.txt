@@ -1,0 +1,20 @@
+
+?
+ActNewYearWish.proto
+Enum.protoCommons.proto"\
+PRT_NEWYEAR_WISH
+giftDid (RgiftDid.
+stage (2.ENUM_NEWYEAR_WISH_STAGERstage"
+PRT_NEWYEAR_WISH_INFO_REQ"?
+PRT_NEWYEAR_WISH_INFO_RESP
+leftTime (RleftTime)
+wishes (2.PRT_NEWYEAR_WISHRwishes"
+timesOverMax (RtimesOverMax"7
+PRT_NEWYEAR_WISH_CHOOSE_REQ
+giftDid (RgiftDid"8
+PRT_NEWYEAR_WISH_CHOOSE_RESP
+giftDid (RgiftDid"h
+PRT_NEWYEAR_WISH_AWARDS_RESP%
+wish (2.PRT_NEWYEAR_WISHRwish!
+award (2.PRT_REWARDRawardB
+com.next1b.nextsvr.protobproto3

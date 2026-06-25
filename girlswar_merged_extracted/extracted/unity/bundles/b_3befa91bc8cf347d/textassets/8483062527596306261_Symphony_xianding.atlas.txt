@@ -1,0 +1,17 @@
+Symphony_xianding.png
+size:256,128
+filter:Linear,Linear
+zi
+bounds:187,0,65,36
+rotate:90
+zi1
+bounds:151,0,65,36
+rotate:90
+zi2
+bounds:115,0,65,36
+rotate:90
+zi3
+bounds:79,0,65,36
+rotate:90
+zidi
+bounds:0,5,79,60

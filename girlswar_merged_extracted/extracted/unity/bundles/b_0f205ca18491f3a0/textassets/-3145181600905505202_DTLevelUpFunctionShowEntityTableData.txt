@@ -1,0 +1,12 @@
+local e=
+{
+ByIdx={
+{1,10006,"shengjitb_1",{1,200},"","","LevelUpFunctionDesc1"},
+{2,10006,"shengjitb_2",{1,200},"","","LevelUpFunctionDesc2"},
+{3,10045,"shengjitb_3",{0},"DTHeroStarOpenLevel.newOpenLevel","DTHeroStarOpenLevel.OpenLevel","LevelUpFunctionDesc3"},
+{4,10037,"shengjitb_4",{0},"DTHeroLockBreakLevel.unLockLevel","1","LevelUpFunctionDesc4"},
+{5,10044,"shengjitb_5",{23,55},"","","LevelUpFunctionDesc5"}
+},
+Len=5
+}
+return e 

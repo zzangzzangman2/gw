@@ -1,0 +1,5 @@
+activityname_1005.png
+size:128,64
+filter:Linear,Linear
+zhuye_zhaomu
+bounds:0,0,70,58

@@ -1,0 +1,24 @@
+local e={id=0,vitality=0,pointsIncrease=0,buildname=""}
+e.__index=e
+function e.New(o,a,n,i)
+local t={}
+setmetatable(t,e)
+t.id=o
+t.vitality=a
+t.pointsIncrease=n
+t.buildname=i
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.vitality=a[2]
+t.pointsIncrease=a[3]
+t.buildname=a[4]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/sourceWorld/DTArchitectureEntityTableData')
+end
+return e 

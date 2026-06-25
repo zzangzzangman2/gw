@@ -1,0 +1,30 @@
+local t={id=0,starMap=0,starLevel=0,openLevel=0,newOpenLevel=0,prefabId=0,starMapGroup=0}
+t.__index=t
+function t.New(o,h,a,s,r,n,i)
+local e={}
+setmetatable(e,t)
+e.id=o
+e.starMap=h
+e.starLevel=a
+e.openLevel=s
+e.newOpenLevel=r
+e.prefabId=n
+e.starMapGroup=i
+return e
+end
+function t.NewFromArrItem(a)
+local e={}
+setmetatable(e,t)
+e.id=a[1]
+e.starMap=a[2]
+e.starLevel=a[3]
+e.openLevel=a[4]
+e.newOpenLevel=a[5]
+e.prefabId=a[6]
+e.starMapGroup=a[7]
+return e
+end
+function t.GetArr()
+return require('DataNode/DataTable/Create/hero/DTHeroStarOpenLevelEntityTableData')
+end
+return t 

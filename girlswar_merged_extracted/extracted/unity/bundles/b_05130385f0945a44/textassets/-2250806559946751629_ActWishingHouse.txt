@@ -1,0 +1,41 @@
+
+?	
+ActWishingHouse.protoCommons.proto"4
+PRT_ACT_WISH_RST
+id (Rid
+num (Rnum" 
+PRT_ACT_WISHING_HOUSE_INFO_REQ"?
+PRT_ACT_WISHING_HOUSE_INFO_RESP
+	awardList (R	awardList"
+totalWishNum (RtotalWishNum"
+roundWishNum (RroundWishNum&
+specialWishNum (RspecialWishNum"V
+PRT_ACT_WISHING_HOUSE_DRAW_REQ
+wishNum (RwishNum
+wishType (RwishType"?
+PRT_ACT_WISHING_HOUSE_DRAW_RESP+
+results (2.PRT_ACT_WISH_RSTRresults"
+awards (2
+.PRT_THINGRawards"
+totalWishNum (RtotalWishNum"
+roundWishNum (RroundWishNum&
+specialWishNum (RspecialWishNum
+wishType (RwishType")
+'PRT_ACT_WISHING_HOUSE_PROCESS_AWARD_REQ"l
+(PRT_ACT_WISHING_HOUSE_PROCESS_AWARD_RESP"
+awards (2
+.PRT_THINGRawards
+	awardList (R	awardList"%
+#PRT_ACT_WISHING_HOUSE_TASK_INFO_REQ"i
+$PRT_ACT_WISHING_HOUSE_TASK_INFO_RESP
+tasks (2	.PRT_TASKRtasks 
+recGiftDids (RrecGiftDids"@
+$PRT_ACT_WISHING_HOUSE_TASK_AWARD_REQ
+taskDid (RtaskDid"A
+%PRT_ACT_WISHING_HOUSE_TASK_AWARD_RESP
+taskDid (RtaskDid"E
+)PRT_ACT_WISHING_HOUSE_TASK_GIFT_AWARD_REQ
+giftDid (RgiftDid"F
+*PRT_ACT_WISHING_HOUSE_TASK_GIFT_AWARD_RESP
+giftDid (RgiftDidB
+com.next1b.nextsvr.protobproto3

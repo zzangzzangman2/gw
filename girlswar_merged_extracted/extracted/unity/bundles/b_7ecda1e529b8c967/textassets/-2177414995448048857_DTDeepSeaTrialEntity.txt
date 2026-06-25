@@ -1,0 +1,26 @@
+local e={id=0,stopNum=0,judgeNum=0,passTrialNum=0,stopTrialNum=0}
+e.__index=e
+function e.New(o,n,a,s,i)
+local t={}
+setmetatable(t,e)
+t.id=o
+t.stopNum=n
+t.judgeNum=a
+t.passTrialNum=s
+t.stopTrialNum=i
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.stopNum=a[2]
+t.judgeNum=a[3]
+t.passTrialNum=a[4]
+t.stopTrialNum=a[5]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/deepsea/DTDeepSeaTrialEntityTableData')
+end
+return e 

@@ -1,0 +1,5 @@
+maininterface_tujian.png
+size:128,128
+filter:Linear,Linear
+a2
+bounds:2,2,83,78

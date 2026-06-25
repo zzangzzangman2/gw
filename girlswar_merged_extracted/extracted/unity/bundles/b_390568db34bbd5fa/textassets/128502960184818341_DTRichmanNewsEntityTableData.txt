@@ -1,0 +1,14 @@
+local e=
+{
+ByIdx={
+{1,"richmantoSelf1","richmantoNews1"},
+{2,"richmantoSelf2","richmantoNews2"},
+{3,"richmantoSelf3","richmantoNews3"},
+{4,"richmantoSelf4","richmantoNews4"},
+{5,"richmantoSelf5","richmantoNews5"},
+{6,"richmantoSelf6","richmantoNews6"},
+{7,"richmantoSelf7","richmantoNews7"}
+},
+Len=7
+}
+return e 

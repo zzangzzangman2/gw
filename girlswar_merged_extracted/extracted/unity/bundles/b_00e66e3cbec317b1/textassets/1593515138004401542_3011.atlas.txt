@@ -1,0 +1,9 @@
+3011.png
+size:512,256
+filter:Linear,Linear
+pma:true
+1(7)
+bounds:349,148,68,68
+2(2)
+bounds:0,0,349,216
+offsets:294,505,1000,1000

@@ -1,0 +1,36 @@
+local a={id=0,itemCost={},shopCostID=0,cardNum=0,multiple={},prizeInitialDrawNum=0,prizeAddDrawNum=0,prizeAddDrawMaxNum=0,score=0,rankShowCount=0}
+a.__index=a
+function a.New(n,r,s,t,l,u,d,h,o,i)
+local e={}
+setmetatable(e,a)
+e.id=n
+e.itemCost=r
+e.shopCostID=s
+e.cardNum=t
+e.multiple=l
+e.prizeInitialDrawNum=u
+e.prizeAddDrawNum=d
+e.prizeAddDrawMaxNum=h
+e.score=o
+e.rankShowCount=i
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.itemCost=t[2]
+e.shopCostID=t[3]
+e.cardNum=t[4]
+e.multiple=t[5]
+e.prizeInitialDrawNum=t[6]
+e.prizeAddDrawNum=t[7]
+e.prizeAddDrawMaxNum=t[8]
+e.score=t[9]
+e.rankShowCount=t[10]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/activity/DTCastleDivineBaseEntityTableData')
+end
+return a 

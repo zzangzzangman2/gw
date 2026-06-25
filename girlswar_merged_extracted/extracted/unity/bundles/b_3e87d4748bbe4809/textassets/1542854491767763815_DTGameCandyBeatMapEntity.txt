@@ -1,0 +1,28 @@
+local e={id=0,day=0,stage=0,targetPoint=0,levelTime=0,award={{},{}}}
+e.__index=e
+function e.New(a,i,o,h,s,n)
+local t={}
+setmetatable(t,e)
+t.id=a
+t.day=i
+t.stage=o
+t.targetPoint=h
+t.levelTime=s
+t.award=n
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.day=a[2]
+t.stage=a[3]
+t.targetPoint=a[4]
+t.levelTime=a[5]
+t.award=a[6]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/activity/DTGameCandyBeatMapEntityTableData')
+end
+return e 

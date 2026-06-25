@@ -1,0 +1,13 @@
+local e=
+{
+ByIdx={
+{1,2,99001,2,400,"bestsummonpetpointDesc_1"},
+{2,2,99002,3,800,"bestsummonpetpointDesc_2"},
+{3,2,99003,4,2000,"bestsummonpetpointDesc_3"},
+{4,2,99004,5,4000,"bestsummonpetpointDesc_4"},
+{101,6,280,5,48000,"bestsummonpetpointDesc_101"},
+{102,6,280,6,170000,"bestsummonpetpointDesc_102"}
+},
+Len=6
+}
+return e 

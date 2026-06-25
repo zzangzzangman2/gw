@@ -1,0 +1,22 @@
+local e={id=0,openDays=0,newPlayerOpenTime=""}
+e.__index=e
+function e.New(o,a,i)
+local t={}
+setmetatable(t,e)
+t.id=o
+t.openDays=a
+t.newPlayerOpenTime=i
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.openDays=a[2]
+t.newPlayerOpenTime=a[3]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/activity/DTDragonGiftConfigEntityTableData')
+end
+return e 

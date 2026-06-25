@@ -1,0 +1,6 @@
+tujian_xingguang.png
+size:64,64
+filter:Linear,Linear
+星光
+bounds:0,0,48,57
+offsets:2,3,52,63

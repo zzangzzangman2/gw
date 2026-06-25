@@ -1,0 +1,28 @@
+local e={id=0,taskDesc="",openDay=0,reward={{},{}},bonusDisplay={},needCount=0}
+e.__index=e
+function e.New(a,i,o,h,s,n)
+local t={}
+setmetatable(t,e)
+t.id=a
+t.taskDesc=i
+t.openDay=o
+t.reward=h
+t.bonusDisplay=s
+t.needCount=n
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.taskDesc=a[2]
+t.openDay=a[3]
+t.reward=a[4]
+t.bonusDisplay=a[5]
+t.needCount=a[6]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/activity/DTYuanDanWishesTaskEntityTableData')
+end
+return e 

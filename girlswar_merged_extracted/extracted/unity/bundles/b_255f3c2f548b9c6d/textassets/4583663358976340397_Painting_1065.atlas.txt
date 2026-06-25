@@ -1,0 +1,7 @@
+Painting_1065.png
+size:2048,1024
+filter:Linear,Linear
+scale:0.45
+Painting_1065
+bounds:0,0,2020,931
+offsets:0,100,2020,1155

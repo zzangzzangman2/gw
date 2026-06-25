@@ -1,0 +1,24 @@
+local e={id=0,totalRankCount=0,prefab=0,help=""}
+e.__index=e
+function e.New(o,a,n,i)
+local t={}
+setmetatable(t,e)
+t.id=o
+t.totalRankCount=a
+t.prefab=n
+t.help=i
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.totalRankCount=a[2]
+t.prefab=a[3]
+t.help=a[4]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/activity/DTBestTreasureConfigEntityTableData')
+end
+return e 

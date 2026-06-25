@@ -1,0 +1,17 @@
+
+?
+ActDailyWishComm.proto"R
+PRT_DAILY_WISH_COMM_RECORD
+wishDid (RwishDid
+wishSecs (RwishSecs"
+PRT_DAILY_WISH_COMM_INFO_REQ"?
+PRT_DAILY_WISH_COMM_INFO_RESP
+endTime (RendTime
+money (Rmoney
+	wishCount (R	wishCount5
+records (2.PRT_DAILY_WISH_COMM_RECORDRrecords"
+PRT_DAILY_WISH_COMM_REQ"s
+PRT_DAILY_WISH_COMM_RESP
+	wishCount (R	wishCount9
+	newRecord (2.PRT_DAILY_WISH_COMM_RECORDR	newRecordB
+com.next1b.nextsvr.protobproto3

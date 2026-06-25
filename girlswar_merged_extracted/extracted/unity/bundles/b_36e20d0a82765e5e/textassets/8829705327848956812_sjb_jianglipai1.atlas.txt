@@ -1,0 +1,5 @@
+sjb_jianglipai1.png
+size:256,128
+filter:Linear,Linear
+texun_jifenban2
+bounds:0,0,202,69

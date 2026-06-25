@@ -1,0 +1,44 @@
+local a={id=0,type=0,platformId="",chargeMoney=0,chargeMoneyDollar="",chargeDiamond=0,awardDiamond=0,firstChargeAwardDiamond=0,vipExp=0,iconLink="",vipTitleShow="",vipLv={},isGuildGift=0,webPayMoney={}}
+a.__index=a
+function a.New(s,l,r,t,u,m,f,w,c,d,i,o,n,h)
+local e={}
+setmetatable(e,a)
+e.id=s
+e.type=l
+e.platformId=r
+e.chargeMoney=t
+e.chargeMoneyDollar=u
+e.chargeDiamond=m
+e.awardDiamond=f
+e.firstChargeAwardDiamond=w
+e.vipExp=c
+e.iconLink=d
+e.vipTitleShow=i
+e.vipLv=o
+e.isGuildGift=n
+e.webPayMoney=h
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.type=t[2]
+e.platformId=t[3]
+e.chargeMoney=t[4]
+e.chargeMoneyDollar=t[5]
+e.chargeDiamond=t[6]
+e.awardDiamond=t[7]
+e.firstChargeAwardDiamond=t[8]
+e.vipExp=t[9]
+e.iconLink=t[10]
+e.vipTitleShow=t[11]
+e.vipLv=t[12]
+e.isGuildGift=t[13]
+e.webPayMoney=t[14]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/charge/DTCharge_ReviewEntityTableData')
+end
+return a 

@@ -1,0 +1,18 @@
+local e=
+{
+ByIdx={
+{1,100,30,25,0,"","","",""},
+{2,40,15,10,0,"Assets/Download/ArtSources/UISpriteRes/UIRichman/richmanBnpcPic_1.png","","richmanTips_7","richmanTips_8"},
+{3,90,45,10,0,"Assets/Download/ArtSources/UISpriteRes/UIRichman/richmanBnpcPic_5.png","","richmanTips_7","richmanTips_8"},
+{4,70,25,10,0,"Assets/Download/ArtSources/UISpriteRes/UIRichman/richmanBnpcPic_3.png","","richmanTips_7","richmanTips_8"},
+{5,70,25,10,0,"Assets/Download/ArtSources/UISpriteRes/UIRichman/richmanBnpcPic_6.png","","richmanTips_7","richmanTips_8"},
+{6,90,45,10,0,"Assets/Download/ArtSources/UISpriteRes/UIRichman/richmanBnpcPic_4.png","","richmanTips_7","richmanTips_8"},
+{7,60,60,10,0,"Assets/Download/ArtSources/UISpriteRes/UIRichman/richmanBnpcPic_7.png","","richmanTips_7","richmanTips_8"},
+{8,40,15,10,0,"Assets/Download/ArtSources/UISpriteRes/UIRichman/richmanBnpcPic_2.png","","richmanTips_7","richmanTips_8"},
+{9,80,30,10,0,"Assets/Download/ArtSources/UISpriteRes/UIRichman/richmanBnpcPic_3.png","","richmanTips_7","richmanTips_8"},
+{10,50,25,10,1,"Assets/Download/ArtSources/UISpriteRes/UIRichman/richmanBnpcPic_8.png","richmanTips_6","",""},
+{11,80,30,10,0,"Assets/Download/ArtSources/UISpriteRes/UIRichman/richmanBnpcPic_5.png","","richmanTips_7","richmanTips_8"}
+},
+Len=11
+}
+return e 

@@ -1,0 +1,28 @@
+local e={id=0,name="",prefabId=0,summary="",dialogueTableName="",timelineTableName=""}
+e.__index=e
+function e.New(a,i,o,h,s,n)
+local t={}
+setmetatable(t,e)
+t.id=a
+t.name=i
+t.prefabId=o
+t.summary=h
+t.dialogueTableName=s
+t.timelineTableName=n
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.name=a[2]
+t.prefabId=a[3]
+t.summary=a[4]
+t.dialogueTableName=a[5]
+t.timelineTableName=a[6]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/story_k/DTStoryEntityTableData')
+end
+return e 

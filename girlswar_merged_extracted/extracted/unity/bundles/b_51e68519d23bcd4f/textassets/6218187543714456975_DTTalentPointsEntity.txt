@@ -1,0 +1,36 @@
+local a={id=0,talentBigGroup=0,type=0,talenValue=0,cost=0,extracost={},attr={{},{}},attrPet={{},{}},prevTalentId=0,pos={}}
+a.__index=a
+function a.New(n,r,s,t,l,u,d,h,o,i)
+local e={}
+setmetatable(e,a)
+e.id=n
+e.talentBigGroup=r
+e.type=s
+e.talenValue=t
+e.cost=l
+e.extracost=u
+e.attr=d
+e.attrPet=h
+e.prevTalentId=o
+e.pos=i
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.talentBigGroup=t[2]
+e.type=t[3]
+e.talenValue=t[4]
+e.cost=t[5]
+e.extracost=t[6]
+e.attr=t[7]
+e.attrPet=t[8]
+e.prevTalentId=t[9]
+e.pos=t[10]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/deityStatue/DTTalentPointsEntityTableData')
+end
+return a 

@@ -1,0 +1,74 @@
+
+?
+SummonPetEgg.protoCommons.proto"$
+"PRT_SUMMON_PET_CORRAL_EGG_INFO_REQ"?
+#PRT_SUMMON_PET_CORRAL_EGG_INFO_RESP/
+pets (2.PRT_SUMMON_CORRAL_PET_INFORpets,
+eggs (2.PRT_SUMMON_PET_EGG_INFOReggs
+corralId (RcorralId
+	eggNestId (R	eggNestId 
+petStopTime (RpetStopTime"?
+PRT_SUMMON_CORRAL_PET_INFO
+petId (RpetId
+endTime (RendTime
+eggId (ReggId
+
+remainTime (R
+remainTime"?
+PRT_SUMMON_PET_EGG_INFO
+eggId (ReggId
+eggDid (ReggDid
+prefabId (RprefabId
+endTime (RendTime
+	fromPetId (R	fromPetId"=
+#PRT_SUMMON_PET_CORRAL_LIST_EDIT_REQ
+petIds (RpetIds"?
+$PRT_SUMMON_PET_CORRAL_LIST_EDIT_RESP/
+pets (2.PRT_SUMMON_CORRAL_PET_INFORpets,
+eggs (2.PRT_SUMMON_PET_EGG_INFOReggs"8
+$PRT_SUMMON_PET_CORRAL_UNLOCK_POS_REQ
+did (Rdid"9
+%PRT_SUMMON_PET_CORRAL_UNLOCK_POS_RESP
+did (Rdid":
+&PRT_SUMMON_PET_EGG_NEST_UNLOCK_POS_REQ
+did (Rdid"?
+'PRT_SUMMON_PET_EGG_NEST_UNLOCK_POS_RESP
+did (Rdid 
+petStopTime (RpetStopTime/
+pets (2.PRT_SUMMON_CORRAL_PET_INFORpets,
+eggs (2.PRT_SUMMON_PET_EGG_INFOReggs"Z
+$PRT_SUMMON_PET_EGG_USE_TICK_ITEM_REQ
+	itemCount (R	itemCount
+eggId (ReggId"y
+%PRT_SUMMON_PET_EGG_USE_TICK_ITEM_RESP2
+eggInfo (2.PRT_SUMMON_PET_EGG_INFOReggInfo
+	itemCount (R	itemCount"J
+PRT_SUMMON_PET_EGG_AWARD_REQ
+eggId (ReggId
+isAll (RisAll"?
+PRT_SUMMON_PET_EGG_AWARD_RESP#
+awards (2.PRT_REWARDRawards/
+pets (2.PRT_SUMMON_CORRAL_PET_INFORpets,
+eggs (2.PRT_SUMMON_PET_EGG_INFOReggs 
+petStopTime (RpetStopTime""
+ PRT_SUMMON_PET_EGG_GIFT_INFO_REQ"u
+!PRT_SUMMON_PET_EGG_GIFT_INFO_RESP 
+gifts (2
+.PRT_GOODSRgifts.
+historyGifts (2
+.PRT_GOODSRhistoryGifts")
+'PRT_SUMMON_PET_CORRAL_EGG_SHOP_INFO_REQ"f
+(PRT_SUMMON_PET_CORRAL_EGG_SHOP_INFO_RESP 
+items (2
+.PRT_GOODSRitems
+costNum (RcostNum"Z
+&PRT_SUMMON_PET_CORRAL_EGG_SHOP_BUY_REQ
+goodsDid (RgoodsDid
+count (Rcount"?
+'PRT_SUMMON_PET_CORRAL_EGG_SHOP_BUY_RESP
+item (2
+.PRT_GOODSRitem
+costNum (RcostNum 
+drops (2
+.PRT_THINGRdropsB
+com.next1b.nextsvr.protobproto3

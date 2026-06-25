@@ -1,0 +1,14 @@
+Painting_1001_Front.png
+size:2048,512
+filter:Linear,Linear
+scale:0.8
+bf_2
+bounds:671,163,319,266
+rotate:90
+bf_5
+bounds:0,257,526,246
+bf_6
+bounds:936,254,320,249
+bgb1
+bounds:193,0,1226,423
+rotate:180

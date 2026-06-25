@@ -1,0 +1,27 @@
+
+?
+ExhibitHallDesigner.protoCommons.proto"?
+PRT_EXHIBIT_HALL_DESIGNER_TASK
+taskDid (RtaskDid+
+status (2.ENUM_REWARD_STATUSRstatus
+progress (Rprogress"$
+"PRT_EXHIBIT_HALL_DESIGNER_INFO_REQ"?
+#PRT_EXHIBIT_HALL_DESIGNER_INFO_RESP9
+totalSelfRank (2.PRT_CS_COMMON_RANKRtotalSelfRank5
+tasks (2.PRT_EXHIBIT_HALL_DESIGNER_TASKRtasks"?
+#PRT_EXHIBIT_HALL_DESIGNER_AWARD_REQ
+taskDid (RtaskDid"[
+$PRT_EXHIBIT_HALL_DESIGNER_AWARD_RESP3
+task (2.PRT_EXHIBIT_HALL_DESIGNER_TASKRtask"*
+(PRT_EXHIBIT_HALL_DESIGNER_RANK_LOCAL_REQ"?
+)PRT_EXHIBIT_HALL_DESIGNER_RANK_LOCAL_RESP8
+totalRankDatas (2.PRT_COMMON_RANKRtotalRankDatas6
+totalSelfRank (2.PRT_COMMON_RANKRtotalSelfRank"?
+2PRT_CS_EXHIBIT_HALL_DESIGNER_RANK_SCORE_UPDATE_SYN
+playerId (RplayerId
+score (Rscore
+changeMS (RchangeMS"
+&PRT_CS_EXHIBIT_HALL_DESIGNER_INFO_RESP
+playerId (RplayerId9
+totalSelfRank (2.PRT_CS_COMMON_RANKRtotalSelfRankB
+com.next1b.nextsvr.protobproto3

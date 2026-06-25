@@ -1,0 +1,11 @@
+local t={}
+function t:OnHandle(e)
+local e=assert(GlobalPB.decode("PRT_DRAW_HORSE_AWARDS_RESP",e));
+if(GameInit.GetDebugLogProto())then
+;
+;
+end
+ModulesInit.ActDrawHorseMgr:synWishAwardData(e)
+return e
+end
+return t 

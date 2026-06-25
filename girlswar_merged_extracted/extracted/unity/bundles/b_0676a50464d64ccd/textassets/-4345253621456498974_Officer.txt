@@ -1,0 +1,7 @@
+
+?
+Officer.proto"
+PRT_OFFICER_UPGRADE_REQ"4
+PRT_OFFICER_UPGRADE_RESP
+officer (RofficerB
+com.next1b.nextsvr.protobproto3

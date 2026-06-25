@@ -1,0 +1,30 @@
+local t={id=0,mapId=0,sortId=0,nodeCount=0,hp=0,boxId=0,integral=0}
+t.__index=t
+function t.New(o,h,a,s,r,n,i)
+local e={}
+setmetatable(e,t)
+e.id=o
+e.mapId=h
+e.sortId=a
+e.nodeCount=s
+e.hp=r
+e.boxId=n
+e.integral=i
+return e
+end
+function t.NewFromArrItem(a)
+local e={}
+setmetatable(e,t)
+e.id=a[1]
+e.mapId=a[2]
+e.sortId=a[3]
+e.nodeCount=a[4]
+e.hp=a[5]
+e.boxId=a[6]
+e.integral=a[7]
+return e
+end
+function t.GetArr()
+return require('DataNode/DataTable/Create/activity/DTActCellSurvivorMonsterBodyEntityTableData')
+end
+return t 

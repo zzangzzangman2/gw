@@ -1,0 +1,5 @@
+spine_bolang.png
+size:128,128
+filter:Linear,Linear
+1
+bounds:0,0,100,100

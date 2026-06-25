@@ -1,0 +1,26 @@
+local e={id=0,profession=0,camp=0,attrRate=0,buffArgsRate={{},{}}}
+e.__index=e
+function e.New(o,n,a,s,i)
+local t={}
+setmetatable(t,e)
+t.id=o
+t.profession=n
+t.camp=a
+t.attrRate=s
+t.buffArgsRate=i
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.profession=a[2]
+t.camp=a[3]
+t.attrRate=a[4]
+t.buffArgsRate=a[5]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/equip/DTExclusiveEntityTableData')
+end
+return e 

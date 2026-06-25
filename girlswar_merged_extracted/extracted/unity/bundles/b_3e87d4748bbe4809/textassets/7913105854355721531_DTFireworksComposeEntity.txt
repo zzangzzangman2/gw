@@ -1,0 +1,28 @@
+local e={id=0,source={{},{}},consume={},reward={},limit=0,animName=""}
+e.__index=e
+function e.New(a,i,o,h,s,n)
+local t={}
+setmetatable(t,e)
+t.id=a
+t.source=i
+t.consume=o
+t.reward=h
+t.limit=s
+t.animName=n
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.source=a[2]
+t.consume=a[3]
+t.reward=a[4]
+t.limit=a[5]
+t.animName=a[6]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/activity/DTFireworksComposeEntityTableData')
+end
+return e 

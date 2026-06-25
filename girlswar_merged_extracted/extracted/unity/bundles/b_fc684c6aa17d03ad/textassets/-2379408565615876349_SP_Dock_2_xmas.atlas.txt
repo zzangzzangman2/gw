@@ -1,0 +1,10 @@
+SP_Dock_2_xmas.png
+size:256,128
+filter:Linear,Linear
+aZY1
+bounds:0,6,83,80
+aZY2
+bounds:81,25,105,61
+shengdan1
+bounds:187,0,86,48
+rotate:90

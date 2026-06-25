@@ -1,0 +1,30 @@
+local t={id=0,comboTime=0,comboInterval=0,countdown=0,dizzinessDuration=0,multiple=0,multipleDuration=0}
+t.__index=t
+function t.New(o,h,a,s,r,n,i)
+local e={}
+setmetatable(e,t)
+e.id=o
+e.comboTime=h
+e.comboInterval=a
+e.countdown=s
+e.dizzinessDuration=r
+e.multiple=n
+e.multipleDuration=i
+return e
+end
+function t.NewFromArrItem(a)
+local e={}
+setmetatable(e,t)
+e.id=a[1]
+e.comboTime=a[2]
+e.comboInterval=a[3]
+e.countdown=a[4]
+e.dizzinessDuration=a[5]
+e.multiple=a[6]
+e.multipleDuration=a[7]
+return e
+end
+function t.GetArr()
+return require('DataNode/DataTable/Create/activity/DTSnackManiaBaseEntityTableData')
+end
+return t 

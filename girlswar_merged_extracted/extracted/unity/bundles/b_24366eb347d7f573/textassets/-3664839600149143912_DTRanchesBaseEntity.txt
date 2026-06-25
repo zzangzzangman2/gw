@@ -1,0 +1,50 @@
+local a={id=0,tea=0,medicine1=0,medicine2=0,medicine3=0,totalScoreRankCount=0,physical=0,deplete="",boxGroup=0,treasureDag=0,dagGroup=0,dagEnsure=0,dagGenericEnsure=0,helpImageId=0,handCount=0,handTime=0,itemQuantity={{},{}}}
+a.__index=a
+function a.New(h,u,d,t,m,c,w,p,y,v,f,l,n,i,o,s,r)
+local e={}
+setmetatable(e,a)
+e.id=h
+e.tea=u
+e.medicine1=d
+e.medicine2=t
+e.medicine3=m
+e.totalScoreRankCount=c
+e.physical=w
+e.deplete=p
+e.boxGroup=y
+e.treasureDag=v
+e.dagGroup=f
+e.dagEnsure=l
+e.dagGenericEnsure=n
+e.helpImageId=i
+e.handCount=o
+e.handTime=s
+e.itemQuantity=r
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.tea=t[2]
+e.medicine1=t[3]
+e.medicine2=t[4]
+e.medicine3=t[5]
+e.totalScoreRankCount=t[6]
+e.physical=t[7]
+e.deplete=t[8]
+e.boxGroup=t[9]
+e.treasureDag=t[10]
+e.dagGroup=t[11]
+e.dagEnsure=t[12]
+e.dagGenericEnsure=t[13]
+e.helpImageId=t[14]
+e.handCount=t[15]
+e.handTime=t[16]
+e.itemQuantity=t[17]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/herbs/DTRanchesBaseEntityTableData')
+end
+return a 

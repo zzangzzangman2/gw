@@ -1,0 +1,17 @@
+
+?
+ActRebateGift.protoCommons.proto"n
+REBATE_GIFT_DATA
+giftDid (RgiftDid$
+rechargeCount (RrechargeCount
+isReward (RisReward"
+PRT_REBATE_GIFT_INFO_REQ"^
+PRT_REBATE_GIFT_INFO_RESPA
+rebateGiftDataList (2.REBATE_GIFT_DATARrebateGiftDataList"-
+PRT_REBATE_GIFT_AWARD_REQ
+did (Rdid"g
+PRT_REBATE_GIFT_AWARD_RESP%
+data (2.REBATE_GIFT_DATARdata"
+awards (2
+.PRT_THINGRawardsB
+com.next1b.nextsvr.protobproto3

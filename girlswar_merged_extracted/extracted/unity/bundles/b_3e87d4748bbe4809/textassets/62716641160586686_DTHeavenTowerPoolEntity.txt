@@ -1,0 +1,30 @@
+local t={id=0,poolId=0,weight=0,reward={},serialNumber=0,baseplate="",quality=0}
+t.__index=t
+function t.New(o,h,a,s,r,n,i)
+local e={}
+setmetatable(e,t)
+e.id=o
+e.poolId=h
+e.weight=a
+e.reward=s
+e.serialNumber=r
+e.baseplate=n
+e.quality=i
+return e
+end
+function t.NewFromArrItem(a)
+local e={}
+setmetatable(e,t)
+e.id=a[1]
+e.poolId=a[2]
+e.weight=a[3]
+e.reward=a[4]
+e.serialNumber=a[5]
+e.baseplate=a[6]
+e.quality=a[7]
+return e
+end
+function t.GetArr()
+return require('DataNode/DataTable/Create/activity/DTHeavenTowerPoolEntityTableData')
+end
+return t 

@@ -1,0 +1,26 @@
+local e={id=0,star=0,ranking=0,rewards={{},{}},newrewards={{},{}}}
+e.__index=e
+function e.New(o,n,a,s,i)
+local t={}
+setmetatable(t,e)
+t.id=o
+t.star=n
+t.ranking=a
+t.rewards=s
+t.newrewards=i
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.star=a[2]
+t.ranking=a[3]
+t.rewards=a[4]
+t.newrewards=a[5]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/sourceWorld/DTTrialMatchPersonalEntityTableData')
+end
+return e 

@@ -1,0 +1,76 @@
+
+?
+ActWatermelon.protoCommons.protoFormation.protoFight.proto"N
+WATERMELON_HERO_USED
+heroDid (RheroDid
+	usedCount (R	usedCount"?
+WATERMELON_SITE_INFO
+siteDid (RsiteDid+
+status (2.ENUM_COMMON_STATUSRstatus
+hp (Rhp
+	hpPercent (R	hpPercent
+armor (Rarmor"
+armorPercent (RarmorPercent2
+leftArmorRecoverTime (RleftArmorRecoverTime0
+leftArmorRecoverNum (RleftArmorRecoverNum
+boosType	 (RboosType*
+suppressHeroType
+ (RsuppressHeroTypeC
+normalRewardStatus (2.ENUM_REWARD_STATUSRnormalRewardStatusA
+medalRewardStatus (2.ENUM_REWARD_STATUSRmedalRewardStatus*
+siteOpenLeftTime (RsiteOpenLeftTime"?
+WATERMELON_SITE_REWARD_INFO
+siteDid (RsiteDid+
+status (2.ENUM_COMMON_STATUSRstatusC
+normalRewardStatus (2.ENUM_REWARD_STATUSRnormalRewardStatusA
+medalRewardStatus (2.ENUM_REWARD_STATUSRmedalRewardStatus"
+PRT_WATERMELON_INFO_REQ"?
+PRT_WATERMELON_INFO_RESP
+leftTime (RleftTime+
+sites (2.WATERMELON_SITE_INFORsites$
+receiveNotice (RreceiveNotice 
+boughtMedal (RboughtMedal1
+heroUsed (2.WATERMELON_HERO_USEDRheroUsed&
+isTaskRedPoint (RisTaskRedPoint"E
+PRT_WATERMELON_NOTICE_SET_REQ$
+receiveNotice (RreceiveNotice"F
+PRT_WATERMELON_NOTICE_SET_RESP$
+receiveNotice (RreceiveNotice"%
+#PRT_WATERMELON_SITE_REWARD_INFO_REQ"?
+$PRT_WATERMELON_SITE_REWARD_INFO_RESP 
+boughtMedal (RboughtMedal@
+rewardStatus (2.WATERMELON_SITE_REWARD_INFORrewardStatus"T
+PRT_WATERMELON_SITE_REWARD_REQ
+siteDid (RsiteDid
+isMedal (RisMedal"?
+PRT_WATERMELON_SITE_REWARD_RESP 
+boughtMedal (RboughtMedal@
+rewardStatus (2.WATERMELON_SITE_REWARD_INFORrewardStatus"l
+PRT_WATERMELON_BATTLE_REQ
+siteDid (RsiteDid5
+	positions (2.PRT_FORMATION_POSITIONR	positions"?
+PRT_WATERMELON_BATTLE_RESP/
+
+battleInfo (2.PRT_FIGHT_PLAYR
+battleInfo
+armorDmg (RarmorDmg
+hpDmg (RhpDmg"
+attHeroCount (RattHeroCount"
+PRT_WATERMELON_TASK_REQ"h
+PRT_WATERMELON_TASK_RESP&
+tasks (2.PRT_COMMON_TASKRtasks
+hp (Rhp
+armor (Rarmor":
+PRT_WATERMELON_TASK_REWARD_REQ
+taskDid (RtaskDid"o
+PRT_WATERMELON_TASK_REWARD_RESP&
+tasks (2.PRT_COMMON_TASKRtasks
+hp (Rhp
+armor (Rarmor"
+PRT_WATERMELON_RANK_REQ"?
+PRT_WATERMELON_RANK_RESP8
+selfBreakArmor (2.PRT_COMMON_RANKRselfBreakArmor*
+selfDmg (2.PRT_COMMON_RANKRselfDmg8
+breakArmorRank (2.PRT_COMMON_RANKRbreakArmorRank*
+dmgRank (2.PRT_COMMON_RANKRdmgRankB
+com.next1b.nextsvr.protobproto3

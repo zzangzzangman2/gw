@@ -1,0 +1,13 @@
+local t={}
+function t:OnHandle(e)
+local e=assert(GlobalPB.decode("PRT_FISHJUMP_FUND_AWARD_RESP",e));
+if(GameInit.GetDebugLogProto())then
+;
+;
+end
+if e then
+ModulesInit.ActFishJumpMgr:ParseFundAward(e)
+end
+return e
+end
+return t 

@@ -1,0 +1,44 @@
+local a={id=0,level=0,atk=0,Def=0,hp=0,attackReward={{},{}},winReward={{},{}},prefabId=0,scale=0,icon="",name="",stage=0,bossType=0,giftid=0}
+a.__index=a
+function a.New(s,l,r,t,u,m,f,w,c,d,i,o,n,h)
+local e={}
+setmetatable(e,a)
+e.id=s
+e.level=l
+e.atk=r
+e.Def=t
+e.hp=u
+e.attackReward=m
+e.winReward=f
+e.prefabId=w
+e.scale=c
+e.icon=d
+e.name=i
+e.stage=o
+e.bossType=n
+e.giftid=h
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.level=t[2]
+e.atk=t[3]
+e.Def=t[4]
+e.hp=t[5]
+e.attackReward=t[6]
+e.winReward=t[7]
+e.prefabId=t[8]
+e.scale=t[9]
+e.icon=t[10]
+e.name=t[11]
+e.stage=t[12]
+e.bossType=t[13]
+e.giftid=t[14]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/activity/DTIslandEscortBossEntityTableData')
+end
+return a 

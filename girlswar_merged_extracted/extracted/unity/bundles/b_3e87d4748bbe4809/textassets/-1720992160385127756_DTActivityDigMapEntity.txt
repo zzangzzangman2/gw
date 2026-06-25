@@ -1,0 +1,28 @@
+local e={id=0,level=0,cell=0,type=0,param={},mapRes=0}
+e.__index=e
+function e.New(a,i,o,h,s,n)
+local t={}
+setmetatable(t,e)
+t.id=a
+t.level=i
+t.cell=o
+t.type=h
+t.param=s
+t.mapRes=n
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.level=a[2]
+t.cell=a[3]
+t.type=a[4]
+t.param=a[5]
+t.mapRes=a[6]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/activity/DTActivityDigMapEntityTableData')
+end
+return e 

@@ -1,0 +1,10 @@
+activityname_97.png
+size:128,64
+filter:Linear,Linear
+zyicon_hb
+bounds:96,18,14,12
+zyicon_sz
+bounds:2,2,92,60
+zyicon_xx
+bounds:96,32,26,30
+offsets:2,2,29,34

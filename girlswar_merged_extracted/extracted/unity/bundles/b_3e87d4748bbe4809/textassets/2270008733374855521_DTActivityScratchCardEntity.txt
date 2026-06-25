@@ -1,0 +1,32 @@
+local a={id=0,consumption={},guaranteed=0,guarantee=0,reinitializeNum=0,reinitializeConsume={},reinitializeType=0,mail=0}
+a.__index=a
+function a.New(i,h,n,t,d,r,s,o)
+local e={}
+setmetatable(e,a)
+e.id=i
+e.consumption=h
+e.guaranteed=n
+e.guarantee=t
+e.reinitializeNum=d
+e.reinitializeConsume=r
+e.reinitializeType=s
+e.mail=o
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.consumption=t[2]
+e.guaranteed=t[3]
+e.guarantee=t[4]
+e.reinitializeNum=t[5]
+e.reinitializeConsume=t[6]
+e.reinitializeType=t[7]
+e.mail=t[8]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/activity/DTActivityScratchCardEntityTableData')
+end
+return a 

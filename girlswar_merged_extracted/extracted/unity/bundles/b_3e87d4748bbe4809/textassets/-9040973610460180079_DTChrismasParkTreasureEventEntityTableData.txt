@@ -1,0 +1,10 @@
+local e=
+{
+ByIdx={
+{1,"randEventName_1","randEventDesc_1","UIActChrismasPark/itemicon_fb_buff01"},
+{2,"randEventName_2","randEventDesc_2","Assets/Download/ArtSources/UISpriteRes/UIItems/Item_53/itemicon_26365.png"},
+{3,"randEventName_3","randEventDesc_3","UIActChrismasPark/itemicon_fb_buff02"}
+},
+Len=3
+}
+return e 

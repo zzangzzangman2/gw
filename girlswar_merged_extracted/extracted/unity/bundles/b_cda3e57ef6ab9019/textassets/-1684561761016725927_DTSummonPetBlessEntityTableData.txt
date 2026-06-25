@@ -1,0 +1,9 @@
+local e=
+{
+ByIdx={
+{1,10000,6,1,"petBlessPageName_1","UISummonPet/zhs_icon1"},
+{2,8000,6,7,"petBlessPageName_2","UISummonPet/zhs_icon2"}
+},
+Len=2
+}
+return e 

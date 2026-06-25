@@ -1,0 +1,14 @@
+
+?
+ActAnniversarySign.protoCommons.proto"
+PRT_ANNIVERSARY_SIGN_INFO_REQ"P
+PRT_ANNIVERSARY_SIGN_INFO_RESP
+day (Rday
+	rewardDay (R	rewardDay" 
+PRT_ANNIVERSARY_SIGN_AWARD_REQ"w
+PRT_ANNIVERSARY_SIGN_AWARD_RESP
+day (Rday
+	rewardDay (R	rewardDay$
+rewards (2
+.PRT_THINGRrewardsB
+com.next1b.nextsvr.protobproto3

@@ -1,0 +1,19 @@
+local e=
+{
+ByIdx={
+{1,1,1,2,108003,"directivesDragonTaskName_7","directivesDragonTaskTips_7","directivesDragonTaskDesc_7",4,0,3,400,1,{{70001,10}}},
+{2,2,1,2,11040,"directivesDragonTaskName_8","directivesDragonTaskTips_8","directivesDragonTaskDesc_8",11,0,10,121,1,{{20601,1}}},
+{3,3,1,1,1,"0","0","0",0,0,0,0,1,{{0}}},
+{4,4,1,2,11016,"directivesDragonTaskName_9","directivesDragonTaskTips_9","directivesDragonTaskDesc_9",10,0,500,46,1,{{20041,5}}},
+{5,5,1,1,1,"0","0","0",0,0,0,0,1,{{0}}},
+{6,6,1,2,11001,"directivesDragonTaskName_12","directivesDragonTaskTips_12","directivesDragonTaskDesc_12",15,0,20,201,2,{{20084,30}}},
+{7,1,2,1,1,"directivesDragonTaskName_7","directivesDragonTaskTips_7","directivesDragonTaskDesc_7",4,0,3,400,1,{{70001,10}}},
+{8,2,2,1,1,"directivesDragonTaskName_9","directivesDragonTaskTips_9","directivesDragonTaskDesc_9",10,0,200,46,1,{{20601,1}}},
+{9,3,2,1,1,"0","0","0",0,0,0,0,1,{{0}}},
+{10,4,2,1,1,"directivesDragonTaskName_9","directivesDragonTaskTips_9","directivesDragonTaskDesc_9",10,0,500,46,1,{{20041,5}}},
+{11,5,2,1,1,"0","0","0",0,0,0,0,1,{{0}}},
+{12,6,2,1,1,"directivesDragonTaskName_12","directivesDragonTaskTips_12","directivesDragonTaskDesc_12",15,0,20,201,2,{{20084,30}}}
+},
+Len=12
+}
+return e 

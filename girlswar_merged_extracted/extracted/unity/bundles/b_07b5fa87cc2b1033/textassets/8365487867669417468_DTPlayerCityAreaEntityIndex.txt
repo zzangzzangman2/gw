@@ -1,0 +1,19 @@
+local e={}
+e.__index=e
+function e.Init()
+e.indexData={}
+e.indexData['type']={}
+e.indexData['type']['1']={1001}
+e.indexData['type']['2']={2001}
+e.indexData['type']['3']={3001}
+e.indexData['type']['4']={4001}
+end
+function e.GetByIndex(t,a)
+if e.indexData[t]and e.indexData[t][a]then
+return e.indexData[t][a]
+else
+return{}
+end
+end
+return e
+

@@ -1,0 +1,28 @@
+local e={id=0,list=0,limtTime=0,awardPoint={},jump=0,name=""}
+e.__index=e
+function e.New(a,i,o,h,s,n)
+local t={}
+setmetatable(t,e)
+t.id=a
+t.list=i
+t.limtTime=o
+t.awardPoint=h
+t.jump=s
+t.name=n
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.list=a[2]
+t.limtTime=a[3]
+t.awardPoint=a[4]
+t.jump=a[5]
+t.name=a[6]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/activity/DTFlowerCarTaskEntityTableData')
+end
+return e 

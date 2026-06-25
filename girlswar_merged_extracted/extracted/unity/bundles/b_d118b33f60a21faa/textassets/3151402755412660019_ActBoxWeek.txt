@@ -1,0 +1,41 @@
+
+?
+ActBoxWeek.protoCommons.proto"K
+PRT_BOX_WEEK_GIFT
+giftDid (RgiftDid
+	giftCount (R	giftCount"
+PRT_BOX_WEEK_INFO_REQ"?
+PRT_BOX_WEEK_INFO_RESP
+leftTime (RleftTime
+tasks (2	.PRT_TASKRtasks
+cycle (Rcycle
+score (Rscore$
+scoreAwardDid (RscoreAwardDid"7
+PRT_BOX_WEEK_TASK_AWARD_REQ
+taskDid (RtaskDid"8
+PRT_BOX_WEEK_TASK_AWARD_RESP
+taskDid (RtaskDid"
+PRT_BOX_WEEK_GIFT_REQ"B
+PRT_BOX_WEEK_GIFT_RESP(
+gifts (2.PRT_BOX_WEEK_GIFTRgifts"7
+PRT_BOX_WEEK_GIFT_AWARD_REQ
+giftDid (RgiftDid"F
+PRT_BOX_WEEK_GIFT_AWARD_RESP&
+gift (2.PRT_BOX_WEEK_GIFTRgift"
+PRT_BOX_WEEK_SCORE_AWARD_REQ"[
+PRT_BOX_WEEK_SCORE_AWARD_RESP
+score (Rscore$
+scoreAwardDid (RscoreAwardDid"R
+PRT_BOX_WEEK_BOX_AWARD_REQ
+
+boxItemDid (R
+boxItemDid
+count (Rcount"?
+PRT_BOX_WEEK_BOX_AWARD_RESP
+
+boxItemDid (R
+boxItemDid
+count (Rcount
+addScore (RaddScore
+score (RscoreB
+com.next1b.nextsvr.protobproto3

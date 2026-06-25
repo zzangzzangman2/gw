@@ -1,0 +1,22 @@
+
+?
+ActRhythmPuzzle.protoCommons.proto"
+PRT_RHYTHMPUZZLE_INFO_REQ"?
+PRT_RHYTHMPUZZLE_INFO_RESP
+
+maxLevelId (R
+maxLevelId
+curDay (RcurDay*
+nextDayStartTime (RnextDayStartTime";
+PRT_RHYTHMPUZZLE_PASS_REQ
+
+maxLevelId (R
+maxLevelId"z
+PRT_RHYTHMPUZZLE_PASS_RESP
+
+maxLevelId (R
+maxLevelId
+curDay (RcurDay$
+rewards (2
+.PRT_THINGRrewardsB
+com.next1b.nextsvr.protobproto3

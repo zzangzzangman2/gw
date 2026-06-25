@@ -1,0 +1,17 @@
+local a={}
+function a:OnHandle(e)
+local e=assert(GlobalPB.decode("PRT_PAY_BUY_RESP",e));
+if(GameInit.GetDebugLogProto())then
+;
+;
+end
+local t=e.payInfo
+if t.status==PROTO_ENUM.ENUM_PAY_STATUS.PAY_SUCCESS or t.status==PROTO_ENUM.ENUM_PAY_STATUS.AWARD_SEND then
+BuildPatchMgr:FirebaseEvent("ce_server_pay_complete")
+elseif t.status==PROTO_ENUM.ENUM_PAY_STATUS.AGAIN then
+end
+local t={e.payInfo}
+PayMgr:HandleCommonChargeInfo(t)
+return e
+end
+return a 

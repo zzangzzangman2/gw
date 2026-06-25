@@ -1,0 +1,17 @@
+local e=
+{
+ByIdx={
+{1,1,{1},"UIActGameCandyBeat/tmkxq_tanguopan04"},
+{2,1,{1},"UIActGameCandyBeat/tmkxq_tanguopan05"},
+{3,1,{1},"UIActGameCandyBeat/tmkxq_tanguopan06"},
+{4,1,{2},"UIActGameCandyBeat/tmkxq_tanguopan01"},
+{5,1,{2},"UIActGameCandyBeat/tmkxq_tanguopan02"},
+{6,1,{2},"UIActGameCandyBeat/tmkxq_tanguopan03"},
+{7,2,{7},"UIActGameCandyBeat/tmkxq_tanguopan07"},
+{8,3,{1,4},""},
+{9,3,{2,5},""},
+{10,3,{3,6},""}
+},
+Len=10
+}
+return e 

@@ -1,0 +1,13 @@
+smallgame_youjijiesuo.png
+size:512,256
+filter:Linear,Linear
+a4
+bounds:0,1,313,63
+offsets:1,1,315,65
+guangll3
+bounds:313,0,64,64
+title_bg_jscg
+bounds:0,64,424,138
+xx1
+bounds:377,10,53,54
+offsets:3,4,62,61

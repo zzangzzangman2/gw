@@ -1,0 +1,28 @@
+local e={id=0,activityId=0,startTime="",endTime="",multi=0,isHelpShow=0}
+e.__index=e
+function e.New(a,i,o,h,s,n)
+local t={}
+setmetatable(t,e)
+t.id=a
+t.activityId=i
+t.startTime=o
+t.endTime=h
+t.multi=s
+t.isHelpShow=n
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.activityId=a[2]
+t.startTime=a[3]
+t.endTime=a[4]
+t.multi=a[5]
+t.isHelpShow=a[6]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/activity/DTAwardMultiEntityTableData')
+end
+return e 

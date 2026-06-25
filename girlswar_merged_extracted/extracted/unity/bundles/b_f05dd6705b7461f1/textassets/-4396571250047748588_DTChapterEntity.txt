@@ -1,0 +1,32 @@
+local a={id=0,name="",icon="",banner="",bannerTxt="",worldPointImage="",npc={},reward={}}
+a.__index=a
+function a.New(i,h,n,t,d,r,s,o)
+local e={}
+setmetatable(e,a)
+e.id=i
+e.name=h
+e.icon=n
+e.banner=t
+e.bannerTxt=d
+e.worldPointImage=r
+e.npc=s
+e.reward=o
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.name=t[2]
+e.icon=t[3]
+e.banner=t[4]
+e.bannerTxt=t[5]
+e.worldPointImage=t[6]
+e.npc=t[7]
+e.reward=t[8]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/maps/DTChapterEntityTableData')
+end
+return a 

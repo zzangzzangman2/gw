@@ -1,0 +1,11 @@
+{
+  "MonoBehaviour": 10,
+  "TextAsset": 6,
+  "Material": 5,
+  "MonoScript": 4,
+  "Texture2D": 3,
+  "CanvasRenderer": 2,
+  "GameObject": 2,
+  "RectTransform": 2,
+  "AssetBundle": 1
+}

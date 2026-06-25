@@ -1,0 +1,42 @@
+local a={id=0,signStart={},signEnd={},qualifiersReady={},qualifiersStart={},qualifiersEnd={},sixFourtReady={},sixFourtStart={},sixFourtEnd={},finalReady={},finalStart={},finalEnd={},gameOver={}}
+a.__index=a
+function a.New(s,d,h,t,l,c,m,f,u,r,i,o,n)
+local e={}
+setmetatable(e,a)
+e.id=s
+e.signStart=d
+e.signEnd=h
+e.qualifiersReady=t
+e.qualifiersStart=l
+e.qualifiersEnd=c
+e.sixFourtReady=m
+e.sixFourtStart=f
+e.sixFourtEnd=u
+e.finalReady=r
+e.finalStart=i
+e.finalEnd=o
+e.gameOver=n
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.signStart=t[2]
+e.signEnd=t[3]
+e.qualifiersReady=t[4]
+e.qualifiersStart=t[5]
+e.qualifiersEnd=t[6]
+e.sixFourtReady=t[7]
+e.sixFourtStart=t[8]
+e.sixFourtEnd=t[9]
+e.finalReady=t[10]
+e.finalStart=t[11]
+e.finalEnd=t[12]
+e.gameOver=t[13]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/flower/DTFlowerScheduleEntityTableData')
+end
+return a 

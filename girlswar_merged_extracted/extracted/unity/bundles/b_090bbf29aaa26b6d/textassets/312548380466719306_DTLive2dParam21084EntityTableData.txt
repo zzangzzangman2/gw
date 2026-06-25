@@ -1,0 +1,32 @@
+local e=
+{
+ByIdx={
+{"ParamSkirt1","ParamSkirt1",0,{{3,0}},"HitArea_Skirt",0,0,5,10,0,1,"","","1:rodSkirt1","rodSkirt1","",0.8,10,0},
+{"ParamSkirt1_Free","ParamSkirt1",0,{{3,0},{4,-1}},"HitArea_Skirt",0,0,11,10,3,1,"","","","","",0.8,10,0},
+{"ParamSocksR_1","ParamSocksR_1",0,{{4,0}},"HitArea_SocksR1",0,0,5,10,0,1,"","","","","",0.3,8,0},
+{"ParamSocksL_1","ParamSocksL_1",0,{{4,0}},"HitArea_SocksL1",0,0,5,10,0,1,"","","","","",0.3,8,0},
+{"ParamSocksR_2","ParamSocksR_2",1,{{4,0}},"HitArea_LegR1,HitArea_LegR2,HitArea_LegR3",0,0,5,10,0,1,"","","","","",0.3,7,0},
+{"ParamSocksL_2","ParamSocksL_2",1,{{4,0}},"HitArea_LegL1,HitArea_LegL2,HitArea_LegL3",0,0,5,10,0,1,"","","","","",0.3,7,0},
+{"ParamCloth","ParamCloth",1,{{3,0}},"HitArea_BreastL,HitArea_BreastR",0,0,5,10,0,1,"","","1:rodCloth2","rodCloth2","rodCloth2:2",1,10,0},
+{"Param47_idle","Param47",0,{},"",0,30,30,30,0,1,"","","","tapCup1","",1,10,0},
+{"Param47_idle1","Param47",1,{},"",0,0,30,30,0,1,"","","","tapBreast2_sp","tapBreast2_sp:1",1,10,0},
+{"Param47_idle4","Param47",2,{},"",0,30,30,30,0,1,"","","","","",1,10,0},
+{"Param64_idle","Param64",0,{},"",0,0,1,1,0,1,"","","","tapCup1","tapCup1:1",1,10,0},
+{"Param64_idle1","Param64",1,{},"",0,1,1,1,0,1,"","idle1_sp","","tapBreast2_sp","",1,10,0},
+{"Param64_idle4","Param64",2,{},"",0,0,1,1,0,1,"","","","","",1,10,0},
+{"Param135","Param135",1,{},"",0,0,30,30,0,1,"","","","tapLeg2_sp","tapLeg2_sp:1",1,10,0},
+{"Param135_Lock","Param135",1,{},"",0,0,30,30,0,1,"","","","","tapLeg2_sp:1",1,10,0},
+{"Param129","Param129",1,{},"",0,0,10,10,0,1,"","","","rodLeg2_sp","rodLeg2_sp:1",1,10,0},
+{"ParamSkirt2","ParamSkirt2",2,{{1,0},{2,0},{4,0}},"HitArea_Skirt2",0,0,5,10,0,1,"","","","","",0.5,10,0},
+{"ParamClothSpical","ParamClothSpical",2,{},"",0,0,4,4,0,1,"","","","","",1,5,0},
+{"Param122","Param122",2,{},"",0,0,30,30,0,1,"","","","","",1,10,0},
+{"ParamLegR_idle","ParamLegR",0,{{3,0},{4,-1}},"HitArea_LegR1,HitArea_LegR2,HitArea_LegR3",-30,0,31,30,4,2,"","","","tapCup1","",1.5,45,0},
+{"ParamLegR_idle1","ParamLegR",1,{{3,0},{4,-1}},"HitArea_LegR1,HitArea_LegR2,HitArea_LegR3",-30,0,31,30,4,2,"ParamSocksL_2:2,ParamSocksR_2:2","","1:rodLeg2","","rodLeg2:2",1.5,45,0},
+{"ParamLegR_idle4","ParamLegR",2,{{3,0},{4,-1}},"HitArea_LegR1,HitArea_LegR2,HitArea_LegR3",-30,0,31,30,4,2,"ParamSkirt2:2","","1:rodLeg3_1","","rodLeg3_1:2",1.5,45,0},
+{"ParamrodLeg2_sp","",1,{{2,0},{1,0}},"HitArea_Leg1,HitArea_Leg2",0,0,5,10,0,1,"","idle1_sp","1:rodLeg2_sp","","",1.2,10,0},
+{"Param150L","Param150",2,{{3,-1},{4,0}},"HitArea_BreastL",-30,0,31,30,3,1,"","","1:rodBreast3","","",1.5,45,0},
+{"Param150R","Param150",2,{{3,0},{4,-1}},"HitArea_BreastR",-30,0,31,30,3,1,"","","","","",1.5,45,0}
+},
+Len=25
+}
+return e 

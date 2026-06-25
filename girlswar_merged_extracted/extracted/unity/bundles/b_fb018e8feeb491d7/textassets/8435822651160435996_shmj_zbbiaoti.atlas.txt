@@ -1,0 +1,6 @@
+shmj_zbbiaoti.png
+size:128,64
+filter:Linear,Linear
+hw
+bounds:2,2,115,37
+offsets:1,1,117,39

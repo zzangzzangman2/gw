@@ -1,0 +1,18 @@
+
+?
+ActDrawMeeting2Pay.proto"D
+PRT_DRAW_MEETING2_PAY_DATA
+did (Rdid
+count (Rcount" 
+PRT_DRAW_MEETING2_PAY_INFO_REQ"T
+PRT_DRAW_MEETING2_PAY_INFO_RESP1
+datas (2.PRT_DRAW_MEETING2_PAY_DATARdatas"8
+$PRT_DRAW_MEETING2_PAY_FREE_AWARD_REQ
+did (Rdid"9
+%PRT_DRAW_MEETING2_PAY_FREE_AWARD_RESP
+did (Rdid"1
+PRT_DRAW_MEETING2_PAY_BUY_REQ
+did (Rdid"2
+PRT_DRAW_MEETING2_PAY_BUY_RESP
+did (RdidB
+com.next1b.nextsvr.protobproto3

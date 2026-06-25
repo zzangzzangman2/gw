@@ -1,0 +1,7 @@
+door_R.png
+size:128,256
+filter:Linear,Linear
+1
+bounds:77,1,17,149
+2
+bounds:0,0,75,150

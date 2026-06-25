@@ -1,0 +1,98 @@
+local a={id=0,scriptId=0,controlPose="",controlFly=0,isControl=0,triggleLevel=0,controlRepose=0,controlGrade=0,isGran=0,speciality=0,healResLevel=0,ignoreImmune=0,canDispel=0,canResist=0,canSteal=0,canOverlap=0,layerLimit=0,isFollowHero=0,buffName="",canShow=0,canPoisonousAddBlood=0,relativeAttr=0,effective=0,settleAction=0,transferPrefabId=0,prefabId=0,symphonyPrefabIds={{},{}},effectType=0,mirror=0,buffPosition=0,buffOffsetX=0,buffOffsetY=0,isAnimation=0,keepType=0,keepTime=0,checkTime=0,buffIcon="",buffWeight={},buffIfFury=0,controlText="",battleWord={{},{}}}
+a.__index=a
+function a.New(w,j,k,t,I,A,O,T,x,z,_,E,S,L,H,F,C,M,U,R,D,W,N,q,u,l,r,d,h,o,i,n,s,c,y,m,g,v,b,p,f)
+local e={}
+setmetatable(e,a)
+e.id=w
+e.scriptId=j
+e.controlPose=k
+e.controlFly=t
+e.isControl=I
+e.triggleLevel=A
+e.controlRepose=O
+e.controlGrade=T
+e.isGran=x
+e.speciality=z
+e.healResLevel=_
+e.ignoreImmune=E
+e.canDispel=S
+e.canResist=L
+e.canSteal=H
+e.canOverlap=F
+e.layerLimit=C
+e.isFollowHero=M
+e.buffName=U
+e.canShow=R
+e.canPoisonousAddBlood=D
+e.relativeAttr=W
+e.effective=N
+e.settleAction=q
+e.transferPrefabId=u
+e.prefabId=l
+e.symphonyPrefabIds=r
+e.effectType=d
+e.mirror=h
+e.buffPosition=o
+e.buffOffsetX=i
+e.buffOffsetY=n
+e.isAnimation=s
+e.keepType=c
+e.keepTime=y
+e.checkTime=m
+e.buffIcon=g
+e.buffWeight=v
+e.buffIfFury=b
+e.controlText=p
+e.battleWord=f
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.scriptId=t[2]
+e.controlPose=t[3]
+e.controlFly=t[4]
+e.isControl=t[5]
+e.triggleLevel=t[6]
+e.controlRepose=t[7]
+e.controlGrade=t[8]
+e.isGran=t[9]
+e.speciality=t[10]
+e.healResLevel=t[11]
+e.ignoreImmune=t[12]
+e.canDispel=t[13]
+e.canResist=t[14]
+e.canSteal=t[15]
+e.canOverlap=t[16]
+e.layerLimit=t[17]
+e.isFollowHero=t[18]
+e.buffName=t[19]
+e.canShow=t[20]
+e.canPoisonousAddBlood=t[21]
+e.relativeAttr=t[22]
+e.effective=t[23]
+e.settleAction=t[24]
+e.transferPrefabId=t[25]
+e.prefabId=t[26]
+e.symphonyPrefabIds=t[27]
+e.effectType=t[28]
+e.mirror=t[29]
+e.buffPosition=t[30]
+e.buffOffsetX=t[31]
+e.buffOffsetY=t[32]
+e.isAnimation=t[33]
+e.keepType=t[34]
+e.keepTime=t[35]
+e.checkTime=t[36]
+e.buffIcon=t[37]
+e.buffWeight=t[38]
+e.buffIfFury=t[39]
+e.controlText=t[40]
+e.battleWord=t[41]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/skillAct/DTBuffEntityTableData')
+end
+return a 

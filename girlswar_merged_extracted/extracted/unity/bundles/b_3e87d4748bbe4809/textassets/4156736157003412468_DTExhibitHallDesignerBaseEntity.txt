@@ -1,0 +1,26 @@
+local e={id=0,dailyRankCount=0,totalRankCount=0,help="",rankRefresh=0}
+e.__index=e
+function e.New(o,n,a,s,i)
+local t={}
+setmetatable(t,e)
+t.id=o
+t.dailyRankCount=n
+t.totalRankCount=a
+t.help=s
+t.rankRefresh=i
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.dailyRankCount=a[2]
+t.totalRankCount=a[3]
+t.help=a[4]
+t.rankRefresh=a[5]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/activity/DTExhibitHallDesignerBaseEntityTableData')
+end
+return e 

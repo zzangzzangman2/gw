@@ -1,0 +1,25 @@
+local e=
+{
+ByIdx={
+{1,"","changgui"},
+{2,"baoji_crt","baoji"},
+{3,"gedang_Block","gedang"},
+{4,"kezhi_weak","kezhi"},
+{5,"kezhi_crt","kezhi"},
+{6,"kezhi_block","kezhi"},
+{7,"beikezhi_Res","beikezhi"},
+{8,"beikezhi_crt","beikezhi"},
+{9,"beikezhi_block","beikezhi"},
+{10,"","shengming"},
+{11,"shengming_crt","shengming"},
+{12,"","hurtTips"},
+{13,"xiguahujia_Armor","xiguahujia"},
+{14,"","healforbid"},
+{15,"healthorns_thorns","healthorns"},
+{16,"","resistfatal"},
+{17,"","evade"},
+{18,"healabsorpt","healabsorpt"}
+},
+Len=18
+}
+return e 

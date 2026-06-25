@@ -1,0 +1,7 @@
+tz_baoxiang.png
+size:256,64
+filter:Linear,Linear
+IC_baoxiang_1
+bounds:70,2,66,54
+IC_baoxiang_2
+bounds:2,2,66,54

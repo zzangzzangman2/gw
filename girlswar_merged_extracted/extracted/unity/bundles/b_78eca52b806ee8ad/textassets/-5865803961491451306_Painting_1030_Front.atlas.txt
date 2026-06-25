@@ -1,0 +1,10 @@
+Painting_1030_Front.png
+size:1024,512
+filter:Linear,Linear
+0a
+bounds:643,403,80,68
+rotate:90
+0b
+bounds:643,354,47,48
+beijing_15
+bounds:0,0,642,483

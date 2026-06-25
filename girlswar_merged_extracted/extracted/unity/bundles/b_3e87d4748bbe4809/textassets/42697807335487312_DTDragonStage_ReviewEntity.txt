@@ -1,0 +1,64 @@
+local a={id=0,worldLevel=0,hardType=0,hardLevel=0,needLv=0,bg=0,bg2=0,stageType=0,name="",prefabId=0,HeroInitColor_R=0,HeroInitColor_G=0,HeroInitColor_B=0,bossId=0,bossIcon="",bossDesc="",firstAward={{},{}},commAward={{},{}},firstAwardFireworks={{},{}},commAwardFireworks={{},{}},firstAwardBoxWeek={},commAwardBoxWeek={},mvpAward={{},{}},score=0}
+a.__index=a
+function a.New(u,w,m,t,v,p,y,g,q,k,x,j,z,b,f,h,s,n,o,i,r,l,d,c)
+local e={}
+setmetatable(e,a)
+e.id=u
+e.worldLevel=w
+e.hardType=m
+e.hardLevel=t
+e.needLv=v
+e.bg=p
+e.bg2=y
+e.stageType=g
+e.name=q
+e.prefabId=k
+e.HeroInitColor_R=x
+e.HeroInitColor_G=j
+e.HeroInitColor_B=z
+e.bossId=b
+e.bossIcon=f
+e.bossDesc=h
+e.firstAward=s
+e.commAward=n
+e.firstAwardFireworks=o
+e.commAwardFireworks=i
+e.firstAwardBoxWeek=r
+e.commAwardBoxWeek=l
+e.mvpAward=d
+e.score=c
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.worldLevel=t[2]
+e.hardType=t[3]
+e.hardLevel=t[4]
+e.needLv=t[5]
+e.bg=t[6]
+e.bg2=t[7]
+e.stageType=t[8]
+e.name=t[9]
+e.prefabId=t[10]
+e.HeroInitColor_R=t[11]
+e.HeroInitColor_G=t[12]
+e.HeroInitColor_B=t[13]
+e.bossId=t[14]
+e.bossIcon=t[15]
+e.bossDesc=t[16]
+e.firstAward=t[17]
+e.commAward=t[18]
+e.firstAwardFireworks=t[19]
+e.commAwardFireworks=t[20]
+e.firstAwardBoxWeek=t[21]
+e.commAwardBoxWeek=t[22]
+e.mvpAward=t[23]
+e.score=t[24]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/activity/DTDragonStage_ReviewEntityTableData')
+end
+return a 

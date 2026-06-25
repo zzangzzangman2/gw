@@ -1,0 +1,11 @@
+local e={}
+function e:OnHandle(e)
+local e=assert(GlobalPB.decode("PRT_GUILD_ENTER_RESP",e));
+if(GameInit.GetDebugLogProto())then
+;
+;
+end
+LuaUtils.AdjustLogEvent("75pkko")
+ModulesInit.GuildMgr:synData(e)
+end
+return e 

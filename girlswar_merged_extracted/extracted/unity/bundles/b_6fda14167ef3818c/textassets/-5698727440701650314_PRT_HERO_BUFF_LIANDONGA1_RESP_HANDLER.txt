@@ -1,0 +1,11 @@
+local t={}
+function t:OnHandle(e)
+local e=assert(GlobalPB.decode("PRT_HERO_BUFF_LIANDONGA1_RESP",e));
+if(GameInit.GetDebugLogProto())then
+;
+;
+end
+EventSystem.SendEvent(CommonEventId.ActHeroBuffLiandongRefresh,{proto=e,actId=429})
+return e
+end
+return t 

@@ -1,0 +1,25 @@
+
+?
+ActSavingPot.proto"
+PRT_SAVINGPOT_INFO_REQ"B
+PRT_SAVINGPOT_INFO_RESP'
+info (2.ACT_SAVINGPOT_INFORinfo"?
+ACT_SAVINGPOT_INFO
+nowDay (RnowDay
+drawDays (RdrawDays
+
+todayCount (R
+todayCount
+
+totalCount (R
+totalCount
+status (Rstatus
+isCharge (RisCharge&
+openStatusTime (RopenStatusTime"
+PRT_SAVINGPOT_PRAY_REQ"B
+PRT_SAVINGPOT_PRAY_RESP'
+info (2.ACT_SAVINGPOT_INFORinfo"
+PRT_SAVINGPOT_OPEN_REQ"B
+PRT_SAVINGPOT_OPEN_RESP'
+info (2.ACT_SAVINGPOT_INFORinfoB
+com.next1b.nextsvr.protobproto3

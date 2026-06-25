@@ -1,0 +1,40 @@
+
+?
+ActGameHammer.protoCommons.proto"
+PRT_GAME_HAMMER_INFO_REQ"?
+PRT_GAME_HAMMER_INFO_RESP2
+topFiveList (2.PRT_COMMON_RANKRtopFiveList
+maxDid (RmaxDid
+state (Rstate
+day (Rday
+playerId (RplayerId(
+endLessMaxScore (RendLessMaxScore"V
+PRT_GAME_HAMMER_PASS_REQ
+did (Rdid
+score (Rscore
+type (Rtype"?
+PRT_GAME_HAMMER_PASS_RESP
+nextDid (RnextDid
+state (Rstate(
+endLessMaxScore (RendLessMaxScore
+score (Rscore
+type (Rtype
+myRank (RmyRank"
+awards (2
+.PRT_THINGRawards"
+PRT_GAME_HAMMER_RANK_REQ"q
+PRT_GAME_HAMMER_RANK_RESP&
+ranks (2.PRT_COMMON_RANKRranks,
+selfRank (2.PRT_COMMON_RANKRselfRank"?
+,PRT_NOTIFY_CENTER_GAME_HAMMER_SCORE_INFO_REQ
+playerId (RplayerId
+
+totalScore (R
+totalScore
+
+updateTime (R
+updateTime"_
+-PRT_NOTIFY_CENTER_GAME_HAMMER_SCORE_INFO_RESP
+playerId (RplayerId
+rank (RrankB
+com.next1b.nextsvr.protobproto3

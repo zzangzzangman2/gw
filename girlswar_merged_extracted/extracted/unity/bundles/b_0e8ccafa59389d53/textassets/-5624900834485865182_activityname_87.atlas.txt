@@ -1,0 +1,17 @@
+activityname_87.png
+size:1024,256
+filter:Linear,Linear
+aaaa
+bounds:2,2,191,194
+offsets:1,1,192,196
+d1
+bounds:510,3,124,50
+offsets:0,1,124,52
+d2
+bounds:524,93,100,103
+offsets:1,1,102,105
+d3
+bounds:387,35,135,161
+d4
+bounds:195,6,190,190
+offsets:1,1,192,192

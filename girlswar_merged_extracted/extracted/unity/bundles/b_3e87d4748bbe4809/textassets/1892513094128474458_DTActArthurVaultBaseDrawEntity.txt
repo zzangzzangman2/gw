@@ -1,0 +1,26 @@
+local e={id=0,firstTurnPrizeProbability=0,prizeProbability=0,drawCost={},refreshCost={}}
+e.__index=e
+function e.New(o,n,a,s,i)
+local t={}
+setmetatable(t,e)
+t.id=o
+t.firstTurnPrizeProbability=n
+t.prizeProbability=a
+t.drawCost=s
+t.refreshCost=i
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.firstTurnPrizeProbability=a[2]
+t.prizeProbability=a[3]
+t.drawCost=a[4]
+t.refreshCost=a[5]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/activity/DTActArthurVaultBaseDrawEntityTableData')
+end
+return e 

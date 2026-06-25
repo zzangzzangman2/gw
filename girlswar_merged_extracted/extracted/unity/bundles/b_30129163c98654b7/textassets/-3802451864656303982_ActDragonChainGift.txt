@@ -1,0 +1,8 @@
+
+?
+ActDragonChainGift.proto" 
+PRT_DRAGON_CHAIN_GIFT_INFO_REQ"U
+PRT_DRAGON_CHAIN_GIFT_INFO_RESP
+endTime (RendTime
+giftDid (RgiftDidB
+com.next1b.nextsvr.protobproto3

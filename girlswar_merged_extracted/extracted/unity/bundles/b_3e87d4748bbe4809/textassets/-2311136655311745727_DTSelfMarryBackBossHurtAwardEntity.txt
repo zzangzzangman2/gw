@@ -1,0 +1,24 @@
+local e={id=0,hurtNum=0,award={{},{}},desc=""}
+e.__index=e
+function e.New(o,a,n,i)
+local t={}
+setmetatable(t,e)
+t.id=o
+t.hurtNum=a
+t.award=n
+t.desc=i
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.hurtNum=a[2]
+t.award=a[3]
+t.desc=a[4]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/activity/DTSelfMarryBackBossHurtAwardEntityTableData')
+end
+return e 

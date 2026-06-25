@@ -1,0 +1,12 @@
+{
+  "source_root": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted",
+  "project_root": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_maininterface_unity",
+  "unity_exe": "C:\\Program Files\\Unity\\Hub\\Editor\\6000.4.9f1\\Editor\\Unity.exe",
+  "main_bundle": "download/ui/uiprefabandres/maininterface.assetbundle",
+  "rect_rows": 2404,
+  "text_rows": 426,
+  "related_bundle_rows": 163,
+  "related_image_rows": 2753,
+  "related_export_map_rows": 163,
+  "next_step": "Run tools/run_build_maininterface_scene.ps1 or Unity menu GirlsWar > Build MainInterface Wireframe"
+}

@@ -1,0 +1,44 @@
+local a={id=0,inspirationId=0,sort=0,auto=0,bindingPoint=0,bindingPointSpine=0,delay=0,eventType=0,eventLink=0,live2dType=0,heroDid=0,cost={{},{}},award={{},{}},mapId=0}
+a.__index=a
+function a.New(s,l,r,t,u,m,f,w,c,d,i,o,n,h)
+local e={}
+setmetatable(e,a)
+e.id=s
+e.inspirationId=l
+e.sort=r
+e.auto=t
+e.bindingPoint=u
+e.bindingPointSpine=m
+e.delay=f
+e.eventType=w
+e.eventLink=c
+e.live2dType=d
+e.heroDid=i
+e.cost=o
+e.award=n
+e.mapId=h
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.inspirationId=t[2]
+e.sort=t[3]
+e.auto=t[4]
+e.bindingPoint=t[5]
+e.bindingPointSpine=t[6]
+e.delay=t[7]
+e.eventType=t[8]
+e.eventLink=t[9]
+e.live2dType=t[10]
+e.heroDid=t[11]
+e.cost=t[12]
+e.award=t[13]
+e.mapId=t[14]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/worldMap/DTInspirationEventEntityTableData')
+end
+return a 

@@ -1,0 +1,30 @@
+local t={id=0,triggerType=0,triggerTypeParameter=0,buffParameter=0,multipleImg="",pic="",numPath=""}
+t.__index=t
+function t.New(o,h,a,s,r,n,i)
+local e={}
+setmetatable(e,t)
+e.id=o
+e.triggerType=h
+e.triggerTypeParameter=a
+e.buffParameter=s
+e.multipleImg=r
+e.pic=n
+e.numPath=i
+return e
+end
+function t.NewFromArrItem(a)
+local e={}
+setmetatable(e,t)
+e.id=a[1]
+e.triggerType=a[2]
+e.triggerTypeParameter=a[3]
+e.buffParameter=a[4]
+e.multipleImg=a[5]
+e.pic=a[6]
+e.numPath=a[7]
+return e
+end
+function t.GetArr()
+return require('DataNode/DataTable/Create/activity/DTActWhackClownBuffEntityTableData')
+end
+return t 

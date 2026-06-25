@@ -1,0 +1,15 @@
+
+?
+ActLuckyTurntable.protoCommons.proto"
+PRT_LUCKY_TURNTABLE_INFO_REQ"?
+PRT_LUCKY_TURNTABLE_INFO_RESP
+leftTime (RleftTime
+freeCD (RfreeCD,
+alreadyDrawNumber (RalreadyDrawNumber"C
+PRT_LUCKY_TURNTABLE_DRAW_REQ#
+type (2.ENUM_DRAW_TYPERtype"?
+PRT_LUCKY_TURNTABLE_DRAW_RESP
+freeCD (RfreeCD,
+alreadyDrawNumber (RalreadyDrawNumber 
+awardIndexs (RawardIndexsB
+com.next1b.nextsvr.protobproto3

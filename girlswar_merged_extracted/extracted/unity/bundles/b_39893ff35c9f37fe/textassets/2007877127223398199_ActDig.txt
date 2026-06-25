@@ -1,0 +1,57 @@
+
+?
+
+ActDig.proto"<
+PRT_DIG_TASK
+did (Rdid
+progress (Rprogress"
+PRT_DIG_INFO_REQ"?
+PRT_DIG_INFO_RESP
+endTime (RendTime
+tntCount (RtntCount
+	curMapDid (R	curMapDid(
+receivedMapDids (RreceivedMapDids"
+openDoorDids (RopenDoorDids",
+PRT_DIG_WALK_REQ
+mapDids (RmapDids"q
+PRT_DIG_WALK_RESP
+	curMapDid (R	curMapDid(
+receivedMapDids (RreceivedMapDids
+award (	Raward"7
+PRT_DIG_OPEN_DOOR_REQ
+
+doorMapDid (R
+doorMapDid"x
+PRT_DIG_OPEN_DOOR_RESP
+
+doorMapDid (R
+doorMapDid
+tntCount (RtntCount"
+openDoorDids (RopenDoorDids".
+PRT_DIG_SWITCH_MAP_REQ
+level (Rlevel"M
+PRT_DIG_SWITCH_MAP_RESP
+level (Rlevel
+	curMapDid (R	curMapDid"
+PRT_DIG_TASK_INFO_REQ"i
+PRT_DIG_TASK_INFO_RESP#
+tasks (2.PRT_DIG_TASKRtasks*
+receivedTaskDids (RreceivedTaskDids"4
+PRT_DIG_TASK_RECEIVE_REQ
+taskDid (RtaskDid"c
+PRT_DIG_TASK_RECEIVE_RESP
+tntCount (RtntCount*
+receivedTaskDids (RreceivedTaskDids"
+PRT_DIG_BP_INFO_REQ"?
+PRT_DIG_BP_INFO_RESP
+charge (Rcharge.
+receivedBPFreeDids (RreceivedBPFreeDids&
+receivedBPDids (RreceivedBPDids
+tntCount (RtntCount"B
+PRT_DIG_BP_RECEIVE_REQ
+did (Rdid
+charge (Rcharge"M
+PRT_DIG_BP_RECEIVE_RESP
+awardDid (RawardDid
+charge (RchargeB
+com.next1b.nextsvr.protobproto3

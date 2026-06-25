@@ -1,0 +1,5 @@
+activityname_1004.png
+size:64,64
+filter:Linear,Linear
+zhuye_chongzhi
+bounds:0,0,61,58

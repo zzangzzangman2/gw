@@ -1,0 +1,59 @@
+
+?
+ActNewJourneyLiandong.protoCommons.proto"f
+PRT_NEW_JOURNEY_LIANDONG_TASK
+taskDid (RtaskDid+
+status (2.ENUM_REWARD_STATUSRstatus"%
+#PRT_NEW_JOURNEY_LIANDONGA1_INFO_REQ"?
+$PRT_NEW_JOURNEY_LIANDONGA1_INFO_RESP
+leftTime (RleftTime9
+localTopRanks (2.PRT_CS_COMMON_RANKRlocalTopRanks9
+localSelfRank (2.PRT_CS_COMMON_RANKRlocalSelfRank9
+crossTopRanks (2.PRT_CS_COMMON_RANKRcrossTopRanks9
+crossSelfRank (2.PRT_CS_COMMON_RANKRcrossSelfRank"%
+#PRT_NEW_JOURNEY_LIANDONGA1_TASK_REQ"\
+$PRT_NEW_JOURNEY_LIANDONGA1_TASK_RESP4
+tasks (2.PRT_NEW_JOURNEY_LIANDONG_TASKRtasks"@
+$PRT_NEW_JOURNEY_LIANDONGA1_AWARD_REQ
+taskDid (RtaskDid"[
+%PRT_NEW_JOURNEY_LIANDONGA1_AWARD_RESP2
+task (2.PRT_NEW_JOURNEY_LIANDONG_TASKRtask"+
+)PRT_NEW_JOURNEY_LIANDONGA1_RANK_LOCAL_REQ"?
+*PRT_NEW_JOURNEY_LIANDONGA1_RANK_LOCAL_RESP1
+	rankDatas (2.PRT_CS_COMMON_RANKR	rankDatas/
+selfRank (2.PRT_CS_COMMON_RANKRselfRank"+
+)PRT_NEW_JOURNEY_LIANDONGA1_RANK_CROSS_REQ"?
+*PRT_NEW_JOURNEY_LIANDONGA1_RANK_CROSS_RESP1
+	rankDatas (2.PRT_CS_COMMON_RANKR	rankDatas/
+selfRank (2.PRT_CS_COMMON_RANKRselfRank"%
+#PRT_NEW_JOURNEY_LIANDONGA2_INFO_REQ"?
+$PRT_NEW_JOURNEY_LIANDONGA2_INFO_RESP
+leftTime (RleftTime9
+localTopRanks (2.PRT_CS_COMMON_RANKRlocalTopRanks9
+localSelfRank (2.PRT_CS_COMMON_RANKRlocalSelfRank9
+crossTopRanks (2.PRT_CS_COMMON_RANKRcrossTopRanks9
+crossSelfRank (2.PRT_CS_COMMON_RANKRcrossSelfRank"%
+#PRT_NEW_JOURNEY_LIANDONGA2_TASK_REQ"\
+$PRT_NEW_JOURNEY_LIANDONGA2_TASK_RESP4
+tasks (2.PRT_NEW_JOURNEY_LIANDONG_TASKRtasks"@
+$PRT_NEW_JOURNEY_LIANDONGA2_AWARD_REQ
+taskDid (RtaskDid"[
+%PRT_NEW_JOURNEY_LIANDONGA2_AWARD_RESP2
+task (2.PRT_NEW_JOURNEY_LIANDONG_TASKRtask"+
+)PRT_NEW_JOURNEY_LIANDONGA2_RANK_LOCAL_REQ"?
+*PRT_NEW_JOURNEY_LIANDONGA2_RANK_LOCAL_RESP1
+	rankDatas (2.PRT_CS_COMMON_RANKR	rankDatas/
+selfRank (2.PRT_CS_COMMON_RANKRselfRank"+
+)PRT_NEW_JOURNEY_LIANDONGA2_RANK_CROSS_REQ"?
+*PRT_NEW_JOURNEY_LIANDONGA2_RANK_CROSS_RESP1
+	rankDatas (2.PRT_CS_COMMON_RANKR	rankDatas/
+selfRank (2.PRT_CS_COMMON_RANKRselfRank"x
+(PRT_CS_NEW_JOURNEY_LIANDONGA1_UPDATE_SYN
+playerId (RplayerId
+score (Rscore
+changeMS (RchangeMS"x
+(PRT_CS_NEW_JOURNEY_LIANDONGA2_UPDATE_SYN
+playerId (RplayerId
+score (Rscore
+changeMS (RchangeMSB
+com.next1b.nextsvr.protobproto3

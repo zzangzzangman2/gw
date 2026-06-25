@@ -1,0 +1,68 @@
+local a={id=0,nameKey="",unlockType=0,unlockPara={},newUnlockType=0,newUnlockPara={},new2UnlockType=0,new2newUnlockPara={},new3UnlockType=0,new3newUnlockPara={},new4UnlockType=0,new4newUnlockPara={},new5UnlockType=0,new5newUnlockPara={},createDay=0,uiFormId={},unlockIcon="",unlockDesc="",isOpen=0,levelUpShow=0,order=0,isPopup=0,popupIcon="",isShowCondition=0,showType=0,showPara=0}
+a.__index=a
+function a.New(l,y,f,t,g,b,p,v,q,x,j,_,z,E,k,w,h,s,n,o,i,r,u,d,m,c)
+local e={}
+setmetatable(e,a)
+e.id=l
+e.nameKey=y
+e.unlockType=f
+e.unlockPara=t
+e.newUnlockType=g
+e.newUnlockPara=b
+e.new2UnlockType=p
+e.new2newUnlockPara=v
+e.new3UnlockType=q
+e.new3newUnlockPara=x
+e.new4UnlockType=j
+e.new4newUnlockPara=_
+e.new5UnlockType=z
+e.new5newUnlockPara=E
+e.createDay=k
+e.uiFormId=w
+e.unlockIcon=h
+e.unlockDesc=s
+e.isOpen=n
+e.levelUpShow=o
+e.order=i
+e.isPopup=r
+e.popupIcon=u
+e.isShowCondition=d
+e.showType=m
+e.showPara=c
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.nameKey=t[2]
+e.unlockType=t[3]
+e.unlockPara=t[4]
+e.newUnlockType=t[5]
+e.newUnlockPara=t[6]
+e.new2UnlockType=t[7]
+e.new2newUnlockPara=t[8]
+e.new3UnlockType=t[9]
+e.new3newUnlockPara=t[10]
+e.new4UnlockType=t[11]
+e.new4newUnlockPara=t[12]
+e.new5UnlockType=t[13]
+e.new5newUnlockPara=t[14]
+e.createDay=t[15]
+e.uiFormId=t[16]
+e.unlockIcon=t[17]
+e.unlockDesc=t[18]
+e.isOpen=t[19]
+e.levelUpShow=t[20]
+e.order=t[21]
+e.isPopup=t[22]
+e.popupIcon=t[23]
+e.isShowCondition=t[24]
+e.showType=t[25]
+e.showPara=t[26]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/function/DTFunction_ReviewEntityTableData')
+end
+return a 

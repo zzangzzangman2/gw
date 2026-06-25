@@ -1,0 +1,28 @@
+local e={id=0,name="",boothNum=0,partTypeIcon1="",partTypeIcon2="",partTypeIcon3=""}
+e.__index=e
+function e.New(a,i,o,h,s,n)
+local t={}
+setmetatable(t,e)
+t.id=a
+t.name=i
+t.boothNum=o
+t.partTypeIcon1=h
+t.partTypeIcon2=s
+t.partTypeIcon3=n
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.name=a[2]
+t.boothNum=a[3]
+t.partTypeIcon1=a[4]
+t.partTypeIcon2=a[5]
+t.partTypeIcon3=a[6]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/collectibles/DTCollectiblesPavilionEntityTableData')
+end
+return e 

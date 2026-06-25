@@ -1,0 +1,12 @@
+local e=
+{
+ByIdx={
+{1,"DTNewYearWishesTask01",1,{{94551,3}},{94551,3},5},
+{2,"DTNewYearWishesTask01",2,{{94551,3}},{94551,3},5},
+{3,"DTNewYearWishesTask01",3,{{94551,3}},{94551,3},5},
+{4,"DTNewYearWishesTask01",4,{{94551,3}},{94551,3},5},
+{5,"DTNewYearWishesTask01",5,{{94551,3}},{94551,3},5}
+},
+Len=5
+}
+return e 

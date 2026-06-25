@@ -1,0 +1,30 @@
+local t={id=0,maximum=0,dailyMaximum=0,timeLag=0,dailyDayMaximum=0,waypoints=0,closeId={}}
+t.__index=t
+function t.New(o,h,a,s,r,n,i)
+local e={}
+setmetatable(e,t)
+e.id=o
+e.maximum=h
+e.dailyMaximum=a
+e.timeLag=s
+e.dailyDayMaximum=r
+e.waypoints=n
+e.closeId=i
+return e
+end
+function t.NewFromArrItem(a)
+local e={}
+setmetatable(e,t)
+e.id=a[1]
+e.maximum=a[2]
+e.dailyMaximum=a[3]
+e.timeLag=a[4]
+e.dailyDayMaximum=a[5]
+e.waypoints=a[6]
+e.closeId=a[7]
+return e
+end
+function t.GetArr()
+return require('DataNode/DataTable/Create/worldMap/DTInspirationBaseEntityTableData')
+end
+return t 

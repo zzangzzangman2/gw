@@ -1,0 +1,149 @@
+
+?!
+ActHerbs2.protoCommons.proto"b
+PRT_HERBS2_CELL_STRUCT
+position (Rposition
+did (Rdid
+haveGift (RhaveGift"
+PRT_HERBS2_INFO_REQ"?
+PRT_HERBS2_INFO_RESP
+power (Rpower
+score (Rscore(
+historyMaxScore (RhistoryMaxScore
+
+totalScore (R
+totalScore3
+gameData (2.PRT_HERBS2_CELL_STRUCTRgameData2
+nextPowerRecoverTime (RnextPowerRecoverTime
+isCreate (RisCreate
+endTime (RendTime
+haveGift	 (RhaveGift
+isLogin
+ (RisLogin&
+needCreateCell (RneedCreateCell"?
+PRT_HERBS2_MOVE_REQ
+speed (Rspeed5
+	mergeData (2.PRT_HERBS2_CELL_STRUCTR	mergeData3
+gameData (2.PRT_HERBS2_CELL_STRUCTRgameData"?
+PRT_HERBS2_MOVE_RESP
+power (Rpower
+score (Rscore(
+historyMaxScore (RhistoryMaxScore
+
+totalScore (R
+totalScore3
+gameData (2.PRT_HERBS2_CELL_STRUCTRgameData2
+nextPowerRecoverTime (RnextPowerRecoverTime
+isCreate (RisCreate"
+awards (2
+.PRT_THINGRawards&
+needCreateCell	 (RneedCreateCell"?
+PRT_HERBS2_CELL_CREATE_REQ1
+genData (2.PRT_HERBS2_CELL_STRUCTRgenData3
+gameData (2.PRT_HERBS2_CELL_STRUCTRgameData"?
+PRT_HERBS2_CELL_CREATE_RESP3
+gameData (2.PRT_HERBS2_CELL_STRUCTRgameData
+isCreate (RisCreate
+haveGift (RhaveGift&
+needCreateCell (RneedCreateCell"~
+PRT_HERBS2_CLEAR_REQ1
+genData (2.PRT_HERBS2_CELL_STRUCTRgenData3
+gameData (2.PRT_HERBS2_CELL_STRUCTRgameData"?
+PRT_HERBS2_CLEAR_RESP3
+gameData (2.PRT_HERBS2_CELL_STRUCTRgameData
+score (Rscore(
+historyMaxScore (RhistoryMaxScore
+
+totalScore (R
+totalScore"
+awards (2
+.PRT_THINGRawards"K
+PRT_HERBS2_RESET_REQ3
+gameData (2.PRT_HERBS2_CELL_STRUCTRgameData"L
+PRT_HERBS2_RESET_RESP3
+gameData (2.PRT_HERBS2_CELL_STRUCTRgameData"5
+PRT_HERBS2_USE_POWER_ITEM_REQ
+count (Rcount"j
+PRT_HERBS2_USE_POWER_ITEM_RESP
+power (Rpower2
+nextPowerRecoverTime (RnextPowerRecoverTime"
+PRT_HERBS2_SHOP_INFO_REQ"_
+PRT_HERBS2_SHOP_INFO_RESP(
+	exchanges (2
+.PRT_GOODSR	exchanges
+endTime (RendTime"=
+PRT_HERBS2_EXCHANGE_REQ
+did (Rdid
+num (Rnum"D
+PRT_HERBS2_EXCHANGE_RESP(
+	exchanges (2
+.PRT_GOODSR	exchanges"
+PRT_HERBS2_DIAMOND_INFO_REQ"g
+!PRT_HERBS2_DIAMOND_SHOP_INFO_RESP(
+	exchanges (2
+.PRT_GOODSR	exchanges
+endTime (RendTime"E
+PRT_HERBS2_DIAMOND_EXCHANGE_REQ
+did (Rdid
+num (Rnum"L
+ PRT_HERBS2_DIAMOND_EXCHANGE_RESP(
+	exchanges (2
+.PRT_GOODSR	exchanges"
+PRT_HERBS2_POWER_INFO_REQ"f
+PRT_HERBS2_POWER_INFO_RESP
+power (Rpower2
+nextPowerRecoverTime (RnextPowerRecoverTime"
+PRT_HERBS2_GAME_OVER_REQ"1
+PRT_HERBS2_GAME_OVER_RESP
+score (Rscore"
+PRT_HERBS2_MAX_RANK_REQ"x
+PRT_HERBS2_MAX_RANK_RESP.
+	rankDatas (2.PRT_COMMON_RANKR	rankDatas,
+selfRank (2.PRT_COMMON_RANKRselfRank"
+PRT_HERBS2_TOTAL_RANK_REQ"z
+PRT_HERBS2_TOTAL_RANK_RESP.
+	rankDatas (2.PRT_COMMON_RANKR	rankDatas,
+selfRank (2.PRT_COMMON_RANKRselfRank"q
+PRT_CS_HERBS2_MAX_SCORE_REQ
+playerId (RplayerId
+maxScore (RmaxScore
+changeMS (RchangeMS"j
+PRT_CS_HERBS2_MAX_SCORE_RESP
+playerId (RplayerId.
+	rankDatas (2.PRT_COMMON_RANKR	rankDatas"w
+PRT_CS_HERBS2_TOTAL_SCORE_REQ
+playerId (RplayerId
+
+totalScore (R
+totalScore
+changeMS (RchangeMS"l
+PRT_CS_HERBS2_TOTAL_SCORE_RESP
+playerId (RplayerId.
+	rankDatas (2.PRT_COMMON_RANKR	rankDatas"r
+"PRT_CS_HERBS2_UPDATE_MAX_SCORE_SYN
+playerId (RplayerId
+score (Rscore
+changeMS (RchangeMS"t
+$PRT_CS_HERBS2_UPDATE_TOTAL_SCORE_SYN
+playerId (RplayerId
+score (Rscore
+changeMS (RchangeMS"
+PRT_HERBS2_PAY_SHOP_INFO_REQ"I
+PRT_HERBS2_PAY_SHOP_INFO_RESP(
+	exchanges (2
+.PRT_GOODSR	exchanges"W
+PRT_HERBS2_SCORE_TIPS_REQ
+
+totalScore (R
+totalScore
+maxScore (RmaxScore"?
+PRT_HERBS2_SCORE_TIPS_RESP
+
+totalScore (R
+totalScore
+	totalRank (R	totalRank&
+totalNeedScore (RtotalNeedScore
+maxScore (RmaxScore
+maxRank (RmaxRank"
+maxNeedScore (RmaxNeedScoreB
+com.next1b.nextsvr.protobproto3

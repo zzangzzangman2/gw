@@ -1,0 +1,28 @@
+local e={id=0,heroID=0,videoname="",videocover="",videofilm="",videorank=0}
+e.__index=e
+function e.New(a,i,o,h,s,n)
+local t={}
+setmetatable(t,e)
+t.id=a
+t.heroID=i
+t.videoname=o
+t.videocover=h
+t.videofilm=s
+t.videorank=n
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.heroID=a[2]
+t.videoname=a[3]
+t.videocover=a[4]
+t.videofilm=a[5]
+t.videorank=a[6]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/hero/DTTujianVedioEntityTableData')
+end
+return e 

@@ -1,0 +1,8 @@
+
+?
+ActMonthlyPurchase.proto"
+PRT_MONTHLY_PURCHASE_INFO_REQ"T
+PRT_MONTHLY_PURCHASE_INFO_RESP
+endTime (RendTime
+giftDid (RgiftDidB
+com.next1b.nextsvr.protobproto3

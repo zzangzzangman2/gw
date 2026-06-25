@@ -1,0 +1,30 @@
+local t={id=0,collectiblesId=0,level=0,attrType=0,attr={{},{}},consume={{},{}},attrDesc={}}
+t.__index=t
+function t.New(o,h,a,s,r,n,i)
+local e={}
+setmetatable(e,t)
+e.id=o
+e.collectiblesId=h
+e.level=a
+e.attrType=s
+e.attr=r
+e.consume=n
+e.attrDesc=i
+return e
+end
+function t.NewFromArrItem(a)
+local e={}
+setmetatable(e,t)
+e.id=a[1]
+e.collectiblesId=a[2]
+e.level=a[3]
+e.attrType=a[4]
+e.attr=a[5]
+e.consume=a[6]
+e.attrDesc=a[7]
+return e
+end
+function t.GetArr()
+return require('DataNode/DataTable/Create/collectibles/DTcollectiblesStrengEntityTableData')
+end
+return t 

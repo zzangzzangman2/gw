@@ -1,0 +1,19 @@
+
+?
+FoolsDoll.protoCommons.proto"
+PRT_FOOLSDOLL_INFO_REQ"l
+PRT_FOOLSDOLL_INFO_RESP
+curDay (RcurDay
+tasks (2	.PRT_TASKRtasks
+dollIds (RdollIds"0
+PRT_FOOLSDOLL_FIND_REQ
+dollId (RdollId"S
+PRT_FOOLSDOLL_FIND_RESP
+dollId (RdollId 
+award (2
+.PRT_THINGRaward".
+PRT_FOOLSDOLL_REC_TASK_REQ
+did (Rdid"/
+PRT_FOOLSDOLL_REC_TASK_RESP
+did (RdidB
+com.next1b.nextsvr.protobproto3

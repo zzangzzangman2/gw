@@ -1,0 +1,32 @@
+local a={id=0,type=0,needCount=0,needPara=0,award={{},{}},speAward={},title="",desc=""}
+a.__index=a
+function a.New(i,h,n,t,d,r,s,o)
+local e={}
+setmetatable(e,a)
+e.id=i
+e.type=h
+e.needCount=n
+e.needPara=t
+e.award=d
+e.speAward=r
+e.title=s
+e.desc=o
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.type=t[2]
+e.needCount=t[3]
+e.needPara=t[4]
+e.award=t[5]
+e.speAward=t[6]
+e.title=t[7]
+e.desc=t[8]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/magicOrchard/DTMagicOrchardSpeEventEntityTableData')
+end
+return a 

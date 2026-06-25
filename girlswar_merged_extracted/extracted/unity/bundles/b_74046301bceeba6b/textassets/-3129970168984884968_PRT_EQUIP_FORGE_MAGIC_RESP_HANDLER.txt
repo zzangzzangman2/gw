@@ -1,0 +1,9 @@
+local e={}
+function e:OnHandle(e)
+local e=assert(GlobalPB.decode("PRT_EQUIP_FORGE_MAGIC_RESP",e));
+if(GameInit.GetDebugLogProto())then
+;
+;
+end
+end
+return e 

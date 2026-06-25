@@ -1,0 +1,26 @@
+local e={id=0,singleRecharge=0,award={{},{}},goods=0,day=0}
+e.__index=e
+function e.New(o,n,a,s,i)
+local t={}
+setmetatable(t,e)
+t.id=o
+t.singleRecharge=n
+t.award=a
+t.goods=s
+t.day=i
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.singleRecharge=a[2]
+t.award=a[3]
+t.goods=a[4]
+t.day=a[5]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/activity/DTActivitySingleChargeEntityTableData')
+end
+return e 

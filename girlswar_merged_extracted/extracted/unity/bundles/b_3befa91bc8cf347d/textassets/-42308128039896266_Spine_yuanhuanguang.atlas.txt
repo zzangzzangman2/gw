@@ -1,0 +1,7 @@
+Spine_yuanhuanguang.png
+size:512,256
+filter:Linear,Linear
+yuanhuan
+bounds:2,2,207,369
+offsets:193,2,400,400
+rotate:90

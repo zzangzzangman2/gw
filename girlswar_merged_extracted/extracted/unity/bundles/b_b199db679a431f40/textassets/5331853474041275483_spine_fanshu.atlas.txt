@@ -1,0 +1,5 @@
+spine_fanshu.png
+size:2048,1024
+filter:Linear,Linear
+79269221-41b3-4cbb-ae01-9907f207d435
+bounds:0,0,1109,577

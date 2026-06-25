@@ -1,0 +1,26 @@
+local e={id=0,teamType=0,title="",underlay="",key=""}
+e.__index=e
+function e.New(o,n,a,s,i)
+local t={}
+setmetatable(t,e)
+t.id=o
+t.teamType=n
+t.title=a
+t.underlay=s
+t.key=i
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.teamType=a[2]
+t.title=a[3]
+t.underlay=a[4]
+t.key=a[5]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/maskword/DTChatTemplateEntityTableData')
+end
+return e 

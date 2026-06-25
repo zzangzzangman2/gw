@@ -1,0 +1,40 @@
+local a={id=0,place1=0,place2=0,place3=0,place4=0,place5=0,place6=0,place7=0,place8=0,place9=0,rate=0,reward={{},{}}}
+a.__index=a
+function a.New(s,d,h,t,u,c,m,l,r,i,o,n)
+local e={}
+setmetatable(e,a)
+e.id=s
+e.place1=d
+e.place2=h
+e.place3=t
+e.place4=u
+e.place5=c
+e.place6=m
+e.place7=l
+e.place8=r
+e.place9=i
+e.rate=o
+e.reward=n
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.place1=t[2]
+e.place2=t[3]
+e.place3=t[4]
+e.place4=t[5]
+e.place5=t[6]
+e.place6=t[7]
+e.place7=t[8]
+e.place8=t[9]
+e.place9=t[10]
+e.rate=t[11]
+e.reward=t[12]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/activity/DTActivityScratchCardAwardTickeEntityTableData')
+end
+return a 

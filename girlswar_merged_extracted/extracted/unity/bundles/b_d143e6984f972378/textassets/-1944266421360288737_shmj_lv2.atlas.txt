@@ -1,0 +1,6 @@
+shmj_lv2.png
+size:256,128
+filter:Linear,Linear
+shmj_sdbg3
+bounds:2,2,247,97
+offsets:4,1,252,100

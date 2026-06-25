@@ -1,0 +1,11 @@
+local t={}
+function t:OnHandle(e)
+local e=assert(GlobalPB.decode("PRT_WORLD_TREE_DLC_LINK_STATUS_RESP",e));
+if(GameInit.GetDebugLogProto())then
+;
+;
+end
+ModulesInit.ActWorldTreeCollectMgr:ReceiveInfoDlc2(e)
+return e
+end
+return t 

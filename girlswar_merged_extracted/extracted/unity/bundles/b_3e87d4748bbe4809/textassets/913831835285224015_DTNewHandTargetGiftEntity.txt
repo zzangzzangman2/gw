@@ -1,0 +1,36 @@
+local a={id=0,day=0,type=0,reward={{},{}},rewardServer={{},{}},rewardText="",cost={},originalPrice={},rewardShow="",rewardShowServer=""}
+a.__index=a
+function a.New(n,r,s,t,l,u,d,h,o,i)
+local e={}
+setmetatable(e,a)
+e.id=n
+e.day=r
+e.type=s
+e.reward=t
+e.rewardServer=l
+e.rewardText=u
+e.cost=d
+e.originalPrice=h
+e.rewardShow=o
+e.rewardShowServer=i
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.day=t[2]
+e.type=t[3]
+e.reward=t[4]
+e.rewardServer=t[5]
+e.rewardText=t[6]
+e.cost=t[7]
+e.originalPrice=t[8]
+e.rewardShow=t[9]
+e.rewardShowServer=t[10]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/activity/DTNewHandTargetGiftEntityTableData')
+end
+return a 

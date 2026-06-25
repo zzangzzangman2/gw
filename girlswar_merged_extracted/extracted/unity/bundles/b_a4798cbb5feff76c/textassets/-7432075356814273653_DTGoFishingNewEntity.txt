@@ -1,0 +1,40 @@
+local a={id=0,speed=0,powerMax_1=0,fishAward_1={{},{}},powerMax_2=0,fishAward_2={{},{}},powerMax_3=0,fishAward_3={{},{}},powerMax_4=0,fishAward_4={{},{}},powerMax_5=0,fishAward_5={{},{}}}
+a.__index=a
+function a.New(s,d,h,t,u,c,m,l,r,i,o,n)
+local e={}
+setmetatable(e,a)
+e.id=s
+e.speed=d
+e.powerMax_1=h
+e.fishAward_1=t
+e.powerMax_2=u
+e.fishAward_2=c
+e.powerMax_3=m
+e.fishAward_3=l
+e.powerMax_4=r
+e.fishAward_4=i
+e.powerMax_5=o
+e.fishAward_5=n
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.speed=t[2]
+e.powerMax_1=t[3]
+e.fishAward_1=t[4]
+e.powerMax_2=t[5]
+e.fishAward_2=t[6]
+e.powerMax_3=t[7]
+e.fishAward_3=t[8]
+e.powerMax_4=t[9]
+e.fishAward_4=t[10]
+e.powerMax_5=t[11]
+e.fishAward_5=t[12]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/worldMap/DTGoFishingNewEntityTableData')
+end
+return a 

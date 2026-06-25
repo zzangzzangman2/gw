@@ -1,0 +1,10 @@
+local e=
+{
+ByIdx={
+{1,5,"ui_treasure_desc_23","UITreasureIC/treasureicon_9215"},
+{2,10,"ui_treasure_desc_23","UITreasureIC/treasureicon_9215"},
+{3,20,"ui_treasure_desc_23","UITreasureIC/treasureicon_9215"}
+},
+Len=3
+}
+return e 

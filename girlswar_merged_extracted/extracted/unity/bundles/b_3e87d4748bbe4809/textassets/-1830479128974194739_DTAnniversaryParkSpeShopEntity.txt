@@ -1,0 +1,36 @@
+local a={id=0,wheel=0,unLock=0,limit=0,award={},doubleAward={{},{}},spineRateName="",cost={},iconBig="",tabName=""}
+a.__index=a
+function a.New(n,r,s,t,l,u,d,h,o,i)
+local e={}
+setmetatable(e,a)
+e.id=n
+e.wheel=r
+e.unLock=s
+e.limit=t
+e.award=l
+e.doubleAward=u
+e.spineRateName=d
+e.cost=h
+e.iconBig=o
+e.tabName=i
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.wheel=t[2]
+e.unLock=t[3]
+e.limit=t[4]
+e.award=t[5]
+e.doubleAward=t[6]
+e.spineRateName=t[7]
+e.cost=t[8]
+e.iconBig=t[9]
+e.tabName=t[10]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/activity/DTAnniversaryParkSpeShopEntityTableData')
+end
+return a 

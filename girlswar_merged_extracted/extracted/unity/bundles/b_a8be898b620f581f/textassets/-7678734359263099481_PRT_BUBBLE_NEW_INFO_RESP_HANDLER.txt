@@ -1,0 +1,12 @@
+local t={}
+function t:OnHandle(e)
+local e=assert(GlobalPB.decode("PRT_BUBBLE_NEW_INFO_RESP",e));
+if(GameInit.GetDebugLogProto())then
+;
+;
+end
+ModulesInit.ActBubbleNewMgr:ParseInfo(e)
+EventSystem.SendEvent(CommonEventId.OnActBubbleNewInfoRefreshed)
+return e
+end
+return t 

@@ -1,0 +1,37 @@
+local e=
+{
+ByIdx={
+{"HitArea_Button1",1,"tmpHit"},
+{"HitArea_Button2",2,"tmpHit"},
+{"HitArea_Button3",3,"tmpHit"},
+{"HitArea_Button4",4,"tmpHit"},
+{"HitArea_Rod1",5,""},
+{"HitArea_Rod2",6,""},
+{"HitArea_Rotate",7,""},
+{"HitArea_Light2",8,""},
+{"HitArea_Bar",9,""},
+{"HitArea_BreastL",10,""},
+{"HitArea_BreastR",11,""},
+{"HitArea_Hand",12,""},
+{"HitArea_Head",13,""},
+{"HitArea_Skirt",14,""},
+{"HitArea_Trigone",15,""},
+{"HitArea_Pants",16,""},
+{"HitArea_rodLeg",17,""},
+{"HitArea_LegR",18,""},
+{"HitArea_LegL",19,""},
+{"HitArea_Hand_sp",20,""},
+{"HitArea_Trigone_sp",21,""},
+{"HitArea_LegR_sp",22,""},
+{"HitArea_LegL_sp",23,""},
+{"HitArea_cord",24,""},
+{"HitArea_Toilet",25,""},
+{"HitArea_Faucet",26,""},
+{"HitArea_Tea",27,""},
+{"HitArea_Light",28,""},
+{"HitArea_Game",13,""},
+{"HitArea_Pants2",30,""}
+},
+Len=30
+}
+return e 

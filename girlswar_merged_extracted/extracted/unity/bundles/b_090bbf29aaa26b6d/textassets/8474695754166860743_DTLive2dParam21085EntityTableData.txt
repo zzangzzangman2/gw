@@ -1,0 +1,20 @@
+local e=
+{
+ByIdx={
+{"ParamKneeBandAid","ParamKneeBandAid",0,{{2,0}},"HitArea_KneeBandAid",0,0,5,7,0,1,"","","1:rodKneeBandAid1","rodKneeBandAid1","",1,10,0},
+{"ParamLegBandAid","ParamLegBandAid",0,{{3,0}},"HitArea_LegBandAid",0,0,5,7,0,1,"","","1:rodLegBandAid1","rodLegBandAid1","",1,10,0},
+{"ParamBreast1","ParamBreast1",0,{{4,0}},"HitArea_BreastL,HitArea_BreastR",0,0,5,10,0,3,"","","1:rodBreast1","rodBreast1","rodBreast1:2",1,10,0},
+{"ParamSkirt_Idle","ParamSkirt",0,{{3,0}},"HitArea_Skirt1",0,0,7,10,0,3,"","","1:rodSkirt1","rodSkirt1","rodSkirt1:2",1,10,0},
+{"ParamPants2","ParamPants2",1,{{4,0}},"HitArea_Trigone",0,0,7,10,0,3,"","","1:rodPants2","rodPants2","rodPants2:2",1,10,0},
+{"ParamGamePants","ParamGamePants",1,{{4,0},{2,0}},"HitArea_GameTrigone",0,0,7,10,0,1,"","idle1_sp","1:game4_win","game4_win","game5_win:2,game5_fail:2,game4_win:2",1,10,0},
+{"ParamCoinL","ParamCoinL",1,{{4,0},{1,0}},"HitArea_GameCoinL",0,0,7,10,0,1,"","game2","","game3,game2_win,game3_win,game4_win,game5_win,game5_fail","game5_win:2,game5_fail:2,game2_win:2",1,10,0},
+{"ParamCoinR","ParamCoinR",1,{{4,0},{2,0}},"HitArea_GameCoinR",0,0,7,10,0,1,"","game3","","game2,game2_win,game3_win,game4_win,game5_win,game5_fail","game5_win:2,game5_fail:2,game3_win:2",1,10,0},
+{"ParamBreastR3","ParamBreastR3",2,{{3,0},{2,0}},"HitArea_BreastR",0,0,10,10,4,1,"","","","","",0.4,30,0},
+{"ParamBreastL3","ParamBreastL3",2,{{3,0},{1,0}},"HitArea_BreastL",0,0,10,10,4,1,"","","","","",0.3,30,0},
+{"ParamSkirt_Idle4","ParamSkirt",2,{{3,0}},"HitArea_Skirt2",0,0,7,10,0,3,"","","1:rodSkirt3","rodSkirt3","rodSkirt3:2",1,10,0},
+{"ParamPantsL3","ParamPantsL3",2,{{3,0},{1,0}},"HitArea_PantsR",0,0,10,10,4,1,"","","","","",0.5,40,0},
+{"ParamPantsR3","ParamPantsR3",2,{{3,0},{2,0}},"HitArea_PantsL",0,0,10,10,4,1,"","","","","",0.5,40,0}
+},
+Len=13
+}
+return e 

@@ -1,0 +1,23 @@
+local e=
+{
+ByIdx={
+{1,1,3,{{26365,2}},204,"ChrismasParkTask_1"},
+{2,2,4,{{26365,2}},0,"ChrismasParkTask_2"},
+{3,5,20,{{26365,2}},16,"ChrismasParkTask_3"},
+{4,3,30,{{26365,2}},40,"ChrismasParkTask_4"},
+{5,1,12,{{26365,2}},204,"ChrismasParkTask_5"},
+{6,2,3,{{26365,2}},0,"ChrismasParkTask_6"},
+{7,4,10,{{26365,2}},138,"ChrismasParkTask_7"},
+{8,5,5,{{26365,2}},16,"ChrismasParkTask_8"},
+{9,4,5,{{26365,2}},138,"ChrismasParkTask_9"},
+{10,4,15,{{26365,2}},138,"ChrismasParkTask_10"},
+{11,5,15,{{26365,2}},16,"ChrismasParkTask_11"},
+{12,3,60,{{26365,2}},40,"ChrismasParkTask_12"},
+{13,2,2,{{26365,2}},0,"ChrismasParkTask_13"},
+{14,7,40,{{26365,2}},203,"ChrismasParkTask_14"},
+{15,7,20,{{26365,2}},203,"ChrismasParkTask_15"},
+{16,6,900,{{26365,2}},206,"ChrismasParkTask_16"}
+},
+Len=16
+}
+return e 

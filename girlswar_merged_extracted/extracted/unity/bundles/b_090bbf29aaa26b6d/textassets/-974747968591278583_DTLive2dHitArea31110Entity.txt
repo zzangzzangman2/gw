@@ -1,0 +1,22 @@
+local e={id="",sortId=0,isHideEffShow=0}
+e.__index=e
+function e.New(o,a,i)
+local t={}
+setmetatable(t,e)
+t.id=o
+t.sortId=a
+t.isHideEffShow=i
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.sortId=a[2]
+t.isHideEffShow=a[3]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/live2d/DTLive2dHitArea31110EntityTableData')
+end
+return e 

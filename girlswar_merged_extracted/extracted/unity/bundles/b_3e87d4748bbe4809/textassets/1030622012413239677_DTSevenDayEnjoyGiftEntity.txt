@@ -1,0 +1,30 @@
+local t={id=0,day=0,type=0,reward={{},{}},rewardText="",cost={},originalPrice={}}
+t.__index=t
+function t.New(o,h,a,s,r,n,i)
+local e={}
+setmetatable(e,t)
+e.id=o
+e.day=h
+e.type=a
+e.reward=s
+e.rewardText=r
+e.cost=n
+e.originalPrice=i
+return e
+end
+function t.NewFromArrItem(a)
+local e={}
+setmetatable(e,t)
+e.id=a[1]
+e.day=a[2]
+e.type=a[3]
+e.reward=a[4]
+e.rewardText=a[5]
+e.cost=a[6]
+e.originalPrice=a[7]
+return e
+end
+function t.GetArr()
+return require('DataNode/DataTable/Create/activity/DTSevenDayEnjoyGiftEntityTableData')
+end
+return t 

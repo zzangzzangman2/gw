@@ -1,0 +1,120 @@
+
+?
+Snapshot.protoCommons.proto
+Hero.protoEquip.protoFormation.protoUnderwear.protoErrorCode.protoAmulet.protoTreasure.protoMagicOrchard.protoSummonPet.protoLuxury.protoCollectibles.proto"?
+PRT_PLAYER_INFO
+playerId (RplayerId
+name (	Rname
+sex (Rsex
+level (Rlevel
+sign (	Rsign
+vip (Rvip
+head (Rhead
+arenaNo (RarenaNo
+
+fightValue	 (R
+fightValue
+
+logoutTime
+ (R
+logoutTime
+guildId (RguildId$
+maxFightValue (RmaxFightValue"
+contribution (Rcontribution
+	guildName (	R	guildName
+guildPos (RguildPos
+	headFrame (R	headFrame
+role (Rrole
+prime (Rprime
+profile (Rprofile
+maxMap (RmaxMap0
+towerLastPassMapDid (RtowerLastPassMapDid
+guildLv (RguildLv
+	loginTime (R	loginTime
+	heroCount (R	heroCount
+
+firstValue (R
+firstValue$
+firstValueExt (RfirstValueExt
+officer (Rofficer5
+amuletGroups (2.PRT_AMULET_GROUPRamuletGroups%
+amulets (2.PRT_AMULETRamulets*
+maxFightValueTop (RmaxFightValueTop1
+grBuffs (2.PRT_GROUP_PHOTO2_BUFFSRgrBuffs9
+extBuffList  (2.PRT_GROUP_PHOTO2_BUFFSRextBuffList&
+oldHeroProfile! (RoldHeroProfile"p
+PRT_GROUP_PHOTO2_BUFFS
+
+activityId (R
+activityId 
+activeStage (RactiveStage
+buffs (Rbuffs"?
+PRT_PLAYER_SIMPLE
+playerId (RplayerId
+name (	Rname
+level (Rlevel
+profile (Rprofile
+serverId (RserverId"?
+PRT_PLAYER_DESC
+playerId (RplayerId
+name (	Rname
+sex (Rsex
+level (Rlevel
+head (Rhead
+
+fightValue (R
+fightValue
+guildId (RguildId
+	guildName (	R	guildName
+	headFrame	 (R	headFrame
+profile
+ (Rprofile
+serverId (RserverId
+
+logoutTime (R
+logoutTime"?
+PRT_PLAYER_FORMATION0
+
+playerInfo (2.PRT_PLAYER_INFOR
+playerInfo
+heros (2	.PRT_HERORheros,
+	formation (2.PRT_FORMATIONR	formation6
+formationAlter (2.PRT_FORMATIONRformationAlter.
+petSnap (2.PRT_SUMMON_PET_SNAPRpetSnap"?
+PRT_PLAYER_SNAPSHOT0
+
+playerInfo (2.PRT_PLAYER_INFOR
+playerInfo
+heros (2	.PRT_HERORheros"
+equips (2
+.PRT_EQUIPRequips.
+
+formations (2.PRT_FORMATIONR
+formations-
+
+currencies (2.PRT_CURRENCYR
+currencies.
+
+underwears (2.PRT_UNDERWEARR
+underwears+
+	treasures (2.PRT_TREASURER	treasuresX
+orchardEquipSuitAttrs (2".PRT_MAGIC_ORCHARD_EQUIP_SUIT_ATTRRorchardEquipSuitAttrs.
+petSnap	 (2.PRT_SUMMON_PET_SNAPRpetSnap%
+luxurys
+ (2.PRT_LUXURYRluxurys4
+collectibles (2.PRT_COLLECTIBLERcollectiblesw
+wushuMasterSummonPetFormations (2/.PRT_WUSHU_MASTER_SUMMON_PET_FORMATION_SNAPSHOTRwushuMasterSummonPetFormations"^
+PRT_CS_PLAYER_SNAPSHOT_REQ$
+transactionId (RtransactionId
+playerId (RplayerId"?
+PRT_CS_PLAYER_SNAPSHOT_RESP$
+transactionId (RtransactionId
+playerId (RplayerId0
+snapshot (2.PRT_PLAYER_SNAPSHOTRsnapshot"
+errCode (2.ErrCodeRerrCode"@
+ PRT_CS_PLAYER_SNAPSHOT_BATCH_REQ
+	playerIds (R	playerIds"s
+!PRT_CS_PLAYER_SNAPSHOT_BATCH_RESP2
+	snapshots (2.PRT_PLAYER_SNAPSHOTR	snapshots
+serverId (RserverIdB
+com.next1b.nextsvr.protobproto3

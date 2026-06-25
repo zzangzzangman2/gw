@@ -1,0 +1,7 @@
+Painting_1060.png
+size:2048,1024
+filter:Linear,Linear
+scale:0.48
+caocao
+bounds:0,0,2010,866
+offsets:86,284,2183,1248

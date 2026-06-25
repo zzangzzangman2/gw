@@ -1,0 +1,7 @@
+activityname_418.png
+size:256,128
+filter:Linear,Linear
+qf16
+bounds:26,0,105,93
+qf19
+bounds:0,69,24,24

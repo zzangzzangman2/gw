@@ -1,0 +1,6 @@
+xuexiao.png
+size:512,512
+filter:Linear,Linear
+xuexiao
+bounds:0,0,467,346
+offsets:1,0,468,346

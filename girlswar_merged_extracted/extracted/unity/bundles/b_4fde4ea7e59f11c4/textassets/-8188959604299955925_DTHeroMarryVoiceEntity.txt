@@ -1,0 +1,28 @@
+local e={id=0,heroDid=0,voicePath="",voiceType="",voiceTime="",voiceName=""}
+e.__index=e
+function e.New(a,i,o,h,s,n)
+local t={}
+setmetatable(t,e)
+t.id=a
+t.heroDid=i
+t.voicePath=o
+t.voiceType=h
+t.voiceTime=s
+t.voiceName=n
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.heroDid=a[2]
+t.voicePath=a[3]
+t.voiceType=a[4]
+t.voiceTime=a[5]
+t.voiceName=a[6]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/hero/DTHeroMarryVoiceEntityTableData')
+end
+return e 

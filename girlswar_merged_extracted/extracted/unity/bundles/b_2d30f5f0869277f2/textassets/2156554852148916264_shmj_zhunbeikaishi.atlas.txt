@@ -1,0 +1,15 @@
+shmj_zhunbeikaishi.png
+size:256,128
+filter:Linear,Linear
+h1
+bounds:2,2,62,61
+offsets:1,1,64,63
+h2
+bounds:66,2,59,61
+offsets:1,1,61,63
+h3
+bounds:127,2,60,61
+offsets:1,1,62,63
+h4
+bounds:189,2,59,61
+offsets:1,1,61,63

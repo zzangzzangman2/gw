@@ -1,0 +1,32 @@
+local a={id=0,condition=0,type=0,requireNum=0,award=0,desc="",funcJump=0,isClose=0}
+a.__index=a
+function a.New(i,h,n,t,d,r,s,o)
+local e={}
+setmetatable(e,a)
+e.id=i
+e.condition=h
+e.type=n
+e.requireNum=t
+e.award=d
+e.desc=r
+e.funcJump=s
+e.isClose=o
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.condition=t[2]
+e.type=t[3]
+e.requireNum=t[4]
+e.award=t[5]
+e.desc=t[6]
+e.funcJump=t[7]
+e.isClose=t[8]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/activity/DTActivityDigTaskEntityTableData')
+end
+return a 

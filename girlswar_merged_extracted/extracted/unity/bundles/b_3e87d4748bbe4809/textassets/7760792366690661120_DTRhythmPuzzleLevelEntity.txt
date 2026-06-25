@@ -1,0 +1,38 @@
+local a={id=0,openDay=0,duration=0,obstacleGroup=0,music=0,roundDuration="",startPosition=0,health=0,lessNum=0,unlockType={{},{}},cd=""}
+a.__index=a
+function a.New(n,r,s,t,l,u,c,d,h,o,i)
+local e={}
+setmetatable(e,a)
+e.id=n
+e.openDay=r
+e.duration=s
+e.obstacleGroup=t
+e.music=l
+e.roundDuration=u
+e.startPosition=c
+e.health=d
+e.lessNum=h
+e.unlockType=o
+e.cd=i
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.openDay=t[2]
+e.duration=t[3]
+e.obstacleGroup=t[4]
+e.music=t[5]
+e.roundDuration=t[6]
+e.startPosition=t[7]
+e.health=t[8]
+e.lessNum=t[9]
+e.unlockType=t[10]
+e.cd=t[11]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/activity/DTRhythmPuzzleLevelEntityTableData')
+end
+return a 

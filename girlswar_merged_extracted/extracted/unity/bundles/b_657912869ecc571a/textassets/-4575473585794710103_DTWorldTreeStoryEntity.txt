@@ -1,0 +1,38 @@
+local a={id=0,activityCfgId=0,unlockType=0,unlockCount=0,desc="",award={{},{}},storyId=0,icon="",storyType=0,sort=0,onShow=0}
+a.__index=a
+function a.New(n,r,s,t,l,u,c,d,h,o,i)
+local e={}
+setmetatable(e,a)
+e.id=n
+e.activityCfgId=r
+e.unlockType=s
+e.unlockCount=t
+e.desc=l
+e.award=u
+e.storyId=c
+e.icon=d
+e.storyType=h
+e.sort=o
+e.onShow=i
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.activityCfgId=t[2]
+e.unlockType=t[3]
+e.unlockCount=t[4]
+e.desc=t[5]
+e.award=t[6]
+e.storyId=t[7]
+e.icon=t[8]
+e.storyType=t[9]
+e.sort=t[10]
+e.onShow=t[11]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/worldTree/DTWorldTreeStoryEntityTableData')
+end
+return a 

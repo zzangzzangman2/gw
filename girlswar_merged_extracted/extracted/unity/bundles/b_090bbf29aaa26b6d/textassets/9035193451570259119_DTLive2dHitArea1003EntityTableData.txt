@@ -1,0 +1,30 @@
+local e=
+{
+ByIdx={
+{"HitArea_wound1",1},
+{"HitArea_wound2",2},
+{"HitArea_wound3",3},
+{"HitArea_wound4",4},
+{"HitArea_Kit",5},
+{"HitArea_Head",6},
+{"HitArea_HandL",7},
+{"HitArea_HandR",8},
+{"HitArea_BreastR",9},
+{"HitArea_BreastL",10},
+{"HitArea_Trigone",11},
+{"HitArea_Skirt",12},
+{"HitArea_Pants1",13},
+{"HitArea_Pants2",14},
+{"HitArea_Pants3",15},
+{"HitArea_PantsL",16},
+{"HitArea_PantsR",17},
+{"HitArea_LegL1",18},
+{"HitArea_LegL2",19},
+{"HitArea_LegL3",20},
+{"HitArea_LegR",21},
+{"HitArea_Belly",22},
+{"HitArea_Enemy",23}
+},
+Len=23
+}
+return e 

@@ -1,0 +1,22 @@
+local e=
+{
+ByIdx={
+{101,1,2,99921,10,"GrandCitiesPoint_1"},
+{102,1,2,99926,75,"GrandCitiesPoint_1"},
+{103,1,2,99927,750,"GrandCitiesPoint_1"},
+{201,2,2,99921,10,"GrandCitiesPoint_1"},
+{202,2,2,99926,75,"GrandCitiesPoint_1"},
+{203,2,2,99927,750,"GrandCitiesPoint_1"},
+{301,3,2,99921,10,"GrandCitiesPoint_1"},
+{302,3,2,99926,75,"GrandCitiesPoint_1"},
+{303,3,2,99927,750,"GrandCitiesPoint_1"},
+{401,4,2,99921,10,"GrandCitiesPoint_1"},
+{402,4,2,99926,75,"GrandCitiesPoint_1"},
+{403,4,2,99927,750,"GrandCitiesPoint_1"},
+{501,5,2,99921,10,"GrandCitiesPoint_1"},
+{502,5,2,99926,75,"GrandCitiesPoint_1"},
+{503,5,2,99927,750,"GrandCitiesPoint_1"}
+},
+Len=15
+}
+return e 

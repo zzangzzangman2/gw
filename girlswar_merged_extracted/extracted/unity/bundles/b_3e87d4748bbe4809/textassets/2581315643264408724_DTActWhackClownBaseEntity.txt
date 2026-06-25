@@ -1,0 +1,22 @@
+local e={id=0,mosterDeductsHP=0,basicScore=0}
+e.__index=e
+function e.New(o,a,i)
+local t={}
+setmetatable(t,e)
+t.id=o
+t.mosterDeductsHP=a
+t.basicScore=i
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.mosterDeductsHP=a[2]
+t.basicScore=a[3]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/activity/DTActWhackClownBaseEntityTableData')
+end
+return e 

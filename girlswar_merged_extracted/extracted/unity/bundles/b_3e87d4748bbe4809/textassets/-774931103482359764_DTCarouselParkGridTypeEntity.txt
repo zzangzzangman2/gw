@@ -1,0 +1,36 @@
+local a={id=0,type=0,attr={{},{}},level=0,nextLvGrid=0,upList={},icon="",skillName="",skillDesc="",bgIcon=""}
+a.__index=a
+function a.New(n,r,s,t,l,u,d,h,o,i)
+local e={}
+setmetatable(e,a)
+e.id=n
+e.type=r
+e.attr=s
+e.level=t
+e.nextLvGrid=l
+e.upList=u
+e.icon=d
+e.skillName=h
+e.skillDesc=o
+e.bgIcon=i
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.type=t[2]
+e.attr=t[3]
+e.level=t[4]
+e.nextLvGrid=t[5]
+e.upList=t[6]
+e.icon=t[7]
+e.skillName=t[8]
+e.skillDesc=t[9]
+e.bgIcon=t[10]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/activity/DTCarouselParkGridTypeEntityTableData')
+end
+return a 

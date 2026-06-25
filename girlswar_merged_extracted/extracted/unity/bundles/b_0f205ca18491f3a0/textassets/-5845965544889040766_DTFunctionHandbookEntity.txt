@@ -1,0 +1,36 @@
+local a={id=0,sortId=0,sortIdNew=0,functionName="",functionDesc="",functionImage="",reward={{},{}},functionIcon="",unlockType=0,unlockDesc=""}
+a.__index=a
+function a.New(n,r,s,t,l,u,d,h,o,i)
+local e={}
+setmetatable(e,a)
+e.id=n
+e.sortId=r
+e.sortIdNew=s
+e.functionName=t
+e.functionDesc=l
+e.functionImage=u
+e.reward=d
+e.functionIcon=h
+e.unlockType=o
+e.unlockDesc=i
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.sortId=t[2]
+e.sortIdNew=t[3]
+e.functionName=t[4]
+e.functionDesc=t[5]
+e.functionImage=t[6]
+e.reward=t[7]
+e.functionIcon=t[8]
+e.unlockType=t[9]
+e.unlockDesc=t[10]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/function/DTFunctionHandbookEntityTableData')
+end
+return a 

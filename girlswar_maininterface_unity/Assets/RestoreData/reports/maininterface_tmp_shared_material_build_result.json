@@ -1,0 +1,159 @@
+﻿{
+  "generatedAt": "2026-06-25 15:53:22",
+  "materialCount": 19,
+  "successCount": 19,
+  "results": [
+    {
+      "sharedMaterialPathId": "-6541690290105773087",
+      "fontKey": "riyu",
+      "materialName": "riyu_baibian_0.2_0.2_1",
+      "assetPath": "Assets/RestoreData/TMP/static_probe/shared_materials/TMPSharedMaterial_m6541690290105773087.mat",
+      "success": true,
+      "message": "saved"
+    },
+    {
+      "sharedMaterialPathId": "3932716197974622303",
+      "fontKey": "EPM",
+      "materialName": "EPM_bai_0.2_0.2",
+      "assetPath": "Assets/RestoreData/TMP/static_probe/shared_materials/TMPSharedMaterial_3932716197974622303.mat",
+      "success": true,
+      "message": "saved"
+    },
+    {
+      "sharedMaterialPathId": "4174273018840097604",
+      "fontKey": "riyu",
+      "materialName": "riyu_shenzong_0.2_0.2",
+      "assetPath": "Assets/RestoreData/TMP/static_probe/shared_materials/TMPSharedMaterial_4174273018840097604.mat",
+      "success": true,
+      "message": "saved"
+    },
+    {
+      "sharedMaterialPathId": "6871398411308274113",
+      "fontKey": "riyu",
+      "materialName": "riyu_cheng_254_178_18",
+      "assetPath": "Assets/RestoreData/TMP/static_probe/shared_materials/TMPSharedMaterial_6871398411308274113.mat",
+      "success": true,
+      "message": "saved"
+    },
+    {
+      "sharedMaterialPathId": "-5910174858419085933",
+      "fontKey": "riyu",
+      "materialName": "riyu_lan_0.1_0.1",
+      "assetPath": "Assets/RestoreData/TMP/static_probe/shared_materials/TMPSharedMaterial_m5910174858419085933.mat",
+      "success": true,
+      "message": "saved"
+    },
+    {
+      "sharedMaterialPathId": "-2520251210141778353",
+      "fontKey": "riyu",
+      "materialName": "riyu_222_130_2_shenzong_touying",
+      "assetPath": "Assets/RestoreData/TMP/static_probe/shared_materials/TMPSharedMaterial_m2520251210141778353.mat",
+      "success": true,
+      "message": "saved"
+    },
+    {
+      "sharedMaterialPathId": "8649783434632076371",
+      "fontKey": "EPM",
+      "materialName": "EPM_shenzong_0.2_0.2",
+      "assetPath": "Assets/RestoreData/TMP/static_probe/shared_materials/TMPSharedMaterial_8649783434632076371.mat",
+      "success": true,
+      "message": "saved"
+    },
+    {
+      "sharedMaterialPathId": "-3548449482811076398",
+      "fontKey": "EPM",
+      "materialName": "EPM_hei_0.1_0.1",
+      "assetPath": "Assets/RestoreData/TMP/static_probe/shared_materials/TMPSharedMaterial_m3548449482811076398.mat",
+      "success": true,
+      "message": "saved"
+    },
+    {
+      "sharedMaterialPathId": "477919381716323141",
+      "fontKey": "EPM",
+      "materialName": "EPM_wuxiaoguo_dongtai",
+      "assetPath": "Assets/RestoreData/TMP/static_probe/shared_materials/TMPSharedMaterial_477919381716323141.mat",
+      "success": true,
+      "message": "saved"
+    },
+    {
+      "sharedMaterialPathId": "5346313758352445069",
+      "fontKey": "num",
+      "materialName": "num_bai_0.2_0.2",
+      "assetPath": "Assets/RestoreData/TMP/static_probe/shared_materials/TMPSharedMaterial_5346313758352445069.mat",
+      "success": true,
+      "message": "saved"
+    },
+    {
+      "sharedMaterialPathId": "8263912359925383730",
+      "fontKey": "riyu",
+      "materialName": "riyu_wubain",
+      "assetPath": "Assets/RestoreData/TMP/static_probe/shared_materials/TMPSharedMaterial_8263912359925383730.mat",
+      "success": true,
+      "message": "saved"
+    },
+    {
+      "sharedMaterialPathId": "1733618647902657739",
+      "fontKey": "riyu",
+      "materialName": "riyu_zong_xi",
+      "assetPath": "Assets/RestoreData/TMP/static_probe/shared_materials/TMPSharedMaterial_1733618647902657739.mat",
+      "success": true,
+      "message": "saved"
+    },
+    {
+      "sharedMaterialPathId": "-6469808170336859405",
+      "fontKey": "riyu",
+      "materialName": "riyu_pink_shadow",
+      "assetPath": "Assets/RestoreData/TMP/static_probe/shared_materials/TMPSharedMaterial_m6469808170336859405.mat",
+      "success": true,
+      "message": "saved"
+    },
+    {
+      "sharedMaterialPathId": "3398605064068647022",
+      "fontKey": "num",
+      "materialName": "num_shenzong",
+      "assetPath": "Assets/RestoreData/TMP/static_probe/shared_materials/TMPSharedMaterial_3398605064068647022.mat",
+      "success": true,
+      "message": "saved"
+    },
+    {
+      "sharedMaterialPathId": "-4383744721098263825",
+      "fontKey": "riyu",
+      "materialName": "riyu_touying_209_133_17",
+      "assetPath": "Assets/RestoreData/TMP/static_probe/shared_materials/TMPSharedMaterial_m4383744721098263825.mat",
+      "success": true,
+      "message": "saved"
+    },
+    {
+      "sharedMaterialPathId": "5325321661327454409",
+      "fontKey": "EPM",
+      "materialName": "EPM_hei_0.2_0.2",
+      "assetPath": "Assets/RestoreData/TMP/static_probe/shared_materials/TMPSharedMaterial_5325321661327454409.mat",
+      "success": true,
+      "message": "saved"
+    },
+    {
+      "sharedMaterialPathId": "-1814576754943834585",
+      "fontKey": "num",
+      "materialName": "num_cheng_242_180_66_0.2_0.2",
+      "assetPath": "Assets/RestoreData/TMP/static_probe/shared_materials/TMPSharedMaterial_m1814576754943834585.mat",
+      "success": true,
+      "message": "saved"
+    },
+    {
+      "sharedMaterialPathId": "120833204736823593",
+      "fontKey": "num",
+      "materialName": "num_zong_127_66_11_0.4_0.4",
+      "assetPath": "Assets/RestoreData/TMP/static_probe/shared_materials/TMPSharedMaterial_120833204736823593.mat",
+      "success": true,
+      "message": "saved"
+    },
+    {
+      "sharedMaterialPathId": "5944328056072262551",
+      "fontKey": "riyu",
+      "materialName": "riyu_lu_5_167_16_0.2_0.2",
+      "assetPath": "Assets/RestoreData/TMP/static_probe/shared_materials/TMPSharedMaterial_5944328056072262551.mat",
+      "success": true,
+      "message": "saved"
+    }
+  ]
+}

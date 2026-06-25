@@ -1,0 +1,11 @@
+local t={}
+function t:OnHandle(e)
+local e=assert(GlobalPB.decode("PRT_CHRISTMAS_BAG_GIFT_RESP",e));
+if(GameInit.GetDebugLogProto())then
+;
+;
+end
+ModulesInit.ActChristmasbagMgr:ParseShopInfo(e)
+return e
+end
+return t 

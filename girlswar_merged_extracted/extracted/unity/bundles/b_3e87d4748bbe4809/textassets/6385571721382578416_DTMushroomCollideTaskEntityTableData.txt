@@ -1,0 +1,10 @@
+local e=
+{
+ByIdx={
+{1,1,500,{{26500,1}},"DTMushroomTask_8","UIActMushroom/hecheng_y5"},
+{2,2,800,{{26500,1}},"DTMushroomTask_8","UIActMushroom/hecheng_y4"},
+{3,3,1500,{{26500,1}},"DTMushroomTask_8","UIActMushroom/hecheng_y3"}
+},
+Len=3
+}
+return e 

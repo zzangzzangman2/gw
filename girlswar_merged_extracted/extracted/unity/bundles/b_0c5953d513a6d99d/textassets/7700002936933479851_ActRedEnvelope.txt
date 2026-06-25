@@ -1,0 +1,25 @@
+
+?
+ActRedEnvelope.protoCommons.proto"?
+RED_ENVELOPE_DATA*
+redEnvelopeStage (RredEnvelopeStage
+	startTime (R	startTime
+endTime (RendTime"
+awards (2
+.PRT_THINGRawards
+isAward (RisAward
+isFinish (RisFinish"
+PRT_RED_ENVELOPE_INFO_REQ"L
+PRT_RED_ENVELOPE_INFO_RESP.
+dataList (2.RED_ENVELOPE_DATARdataList"0
+PRT_RED_ENVELOPE_END_REQ
+stage (Rstage"C
+PRT_RED_ENVELOPE_END_RESP&
+data (2.RED_ENVELOPE_DATARdata"2
+PRT_RED_ENVELOPE_AWARD_REQ
+stage (Rstage"i
+PRT_RED_ENVELOPE_AWARD_RESP&
+data (2.RED_ENVELOPE_DATARdata"
+awards (2
+.PRT_THINGRawardsB
+com.next1b.nextsvr.protobproto3

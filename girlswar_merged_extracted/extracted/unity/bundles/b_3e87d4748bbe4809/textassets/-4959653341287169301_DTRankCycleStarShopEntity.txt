@@ -1,0 +1,36 @@
+local a={id=0,title="",name="",discount=0,goods=0,cost={},page=0,type=0,buyCount=0,chargeAward={{},{}}}
+a.__index=a
+function a.New(n,r,s,t,l,u,d,h,o,i)
+local e={}
+setmetatable(e,a)
+e.id=n
+e.title=r
+e.name=s
+e.discount=t
+e.goods=l
+e.cost=u
+e.page=d
+e.type=h
+e.buyCount=o
+e.chargeAward=i
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.title=t[2]
+e.name=t[3]
+e.discount=t[4]
+e.goods=t[5]
+e.cost=t[6]
+e.page=t[7]
+e.type=t[8]
+e.buyCount=t[9]
+e.chargeAward=t[10]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/activity/DTRankCycleStarShopEntityTableData')
+end
+return a 

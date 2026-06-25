@@ -1,0 +1,204 @@
+
+?2
+WarOfAttrition.protoCommons.protoFormation.protoSnapshot.proto
+Hero.protoSummonPet.protoEquip.protoUnderwear.protoMagicOrchard.proto
+Enum.proto"?
+PRT_BATTLE_PLAYER_INFO
+npcId (RnpcId
+officer (Rofficer
+playerId (RplayerId
+serverId (RserverId
+level (Rlevel
+name (	Rname
+head (Rhead
+rank (Rrank
+
+fightValue	 (R
+fightValue
+profile
+ (Rprofile
+sign (	Rsign
+guildId (RguildId
+	guildName (	R	guildName
+	headFrame (R	headFrame
+
+totalScore (R
+totalScore"?
+PRT_FORMATION_GET_DETAIL,
+	formation (2.PRT_FORMATIONR	formation6
+formationAlter (2.PRT_FORMATIONRformationAlter$
+firstValueExt (RfirstValueExt
+heros (2	.PRT_HERORheros"
+equips (2
+.PRT_EQUIPRequips.
+
+underwears (2.PRT_UNDERWEARR
+underwears
+fightExt (RfightExtX
+orchardEquipSuitAttrs (2".PRT_MAGIC_ORCHARD_EQUIP_SUIT_ATTRRorchardEquipSuitAttrs/
+
+summonPets	 (2.PRT_SUMMON_PETR
+summonPetsI
+summonPetFormation
+ (2.PRT_SUMMON_PET_FORMATIONRsummonPetFormation"?
+PRT_FORMATION_SET_DETAIL,
+	formation (2.PRT_FORMATIONR	formationI
+summonPetFormation (2.PRT_SUMMON_PET_FORMATIONRsummonPetFormation"R
+PRT_WAR_OF_ATTRITION_ENTER_REQ0
+snapshot (2.PRT_PLAYER_SNAPSHOTRsnapshot"?
+PRT_WAR_OF_ATTRITION_ENTER_RESP 
+battleTimes (RbattleTimes
+buyTimes (RbuyTimes?
+atkFormations (2.PRT_FORMATION_GET_DETAILRatkFormations?
+defFormations (2.PRT_FORMATION_GET_DETAILRdefFormations&
+ranks (2.PRT_COMMON_RANKRranks,
+selfRank (2.PRT_COMMON_RANKRselfRank
+endTime (RendTime
+teamNum (RteamNum
+season	 (Rseason
+
+isInBattle
+ (R
+isInBattle"
+lastBattleId (RlastBattleId
+playerId (RplayerId"'
+%PRT_WAR_OF_ATTRITION_BATTLE_STATE_REQ"?
+&PRT_WAR_OF_ATTRITION_BATTLE_STATE_RESP 
+battleTimes (RbattleTimes
+
+isInBattle (R
+isInBattle"
+lastBattleId (RlastBattleId
+playerId (RplayerId".
+,PRT_WAR_OF_ATTRITION_BATTLE_RESULT_CLEAR_REQ"/
+-PRT_WAR_OF_ATTRITION_BATTLE_RESULT_CLEAR_RESP"@
+"PRT_WAR_OF_ATTRITION_TIMES_BUY_REQ
+buyTimes (RbuyTimes"c
+#PRT_WAR_OF_ATTRITION_TIMES_BUY_RESP 
+battleTimes (RbattleTimes
+buyTimes (RbuyTimes":
+$PRT_WAR_OF_ATTRITION_REFRESHLIST_REQ
+type (Rtype"`
+%PRT_WAR_OF_ATTRITION_REFRESHLIST_RESP7
+
+playerInfo (2.PRT_BATTLE_PLAYER_INFOR
+playerInfo"=
+PRT_WAR_OF_ATTRITION_DETAIL_REQ
+playerId (RplayerId"c
+ PRT_WAR_OF_ATTRITION_DETAIL_RESP?
+defFormations (2.PRT_FORMATION_GET_DETAILRdefFormations"z
+#PRT_WAR_OF_ATTRITION_DEF_LINEUP_REQ?
+defFormations (2.PRT_FORMATION_SET_DETAILRdefFormations
+type (Rtype"{
+$PRT_WAR_OF_ATTRITION_DEF_LINEUP_RESP?
+defFormations (2.PRT_FORMATION_GET_DETAILRdefFormations
+type (Rtype"J
+"PRT_WAR_OF_ATTRITION_RANK_LIST_REQ$
+rankShowCount (RrankShowCount"{
+#PRT_WAR_OF_ATTRITION_RANK_LIST_RESP,
+selfRank (2.PRT_COMMON_RANKRselfRank&
+ranks (2.PRT_COMMON_RANKRranks"o
+PRT_ATTR_HERO_INFO
+heroId (RheroId
+heroDid (RheroDid'
+	attribute (2	.PRT_ATTRR	attribute"?
+FIGHT_ROUND_INFO
+round (Rround
+isWin (RisWin(
+atkBeginTotalHp (RatkBeginTotalHp$
+atkEndTotalHp (RatkEndTotalHp(
+defBeginTotalHp (RdefBeginTotalHp$
+defEndTotalHp (RdefEndTotalHp4
+atkFormationNO (2.FormationNORatkFormationNO4
+defFormationNO (2.FormationNORdefFormationNO
+battleId	 (RbattleId"?
+PRT_ATTACK_RESULT
+isWin (RisWin 
+drops (2
+.PRT_THINGRdrops
+addScore (RaddScore
+rank (Rrank 
+defAddScore (RdefAddScore
+defRank (RdefRank
+
+totalScore (R
+totalScore
+
+atkOldRank (R
+atkOldRank
+
+defOldRank	 (R
+defOldRank"?
+$PRT_WAR_OF_ATTRITION_ATTACK_INFO_REQ?
+atkFormations (2.PRT_FORMATION_SET_DETAILRatkFormations
+playerId (RplayerId0
+snapshot (2.PRT_PLAYER_SNAPSHOTRsnapshot"?
+%PRT_WAR_OF_ATTRITION_ATTACK_INFO_RESP?
+atkFormations (2.PRT_FORMATION_GET_DETAILRatkFormations?
+defFormations (2.PRT_FORMATION_GET_DETAILRdefFormations
+	nextRound (R	nextRound4
+atkFormationNO (2.FormationNORatkFormationNO4
+defFormationNO (2.FormationNORdefFormationNO
+atkAllHp (RatkAllHp
+defAllHp (RdefAllHp=
+defPlayerInfo (2.PRT_BATTLE_PLAYER_INFORdefPlayerInfo
+battleId	 (RbattleId"?
+%PRT_WAR_OF_ATTRITION_ATTACK_ROUND_SYN/
+	fightInfo (2.FIGHT_ROUND_INFOR	fightInfo
+isValid (RisValid6
+attackResult (2.PRT_ATTACK_RESULTRattackResult
+	nextRound (R	nextRound4
+atkFormationNO (2.FormationNORatkFormationNO4
+defFormationNO (2.FormationNORdefFormationNO
+playerId (RplayerId&
+targetPlayerId (RtargetPlayerId"(
+&PRT_WAR_OF_ATTRITION_ATTACK_REPEAT_REQ"?
+'PRT_WAR_OF_ATTRITION_ATTACK_REPEAT_RESP/
+	fightInfo (2.FIGHT_ROUND_INFOR	fightInfo?
+atkFormations (2.PRT_FORMATION_GET_DETAILRatkFormations?
+defFormations (2.PRT_FORMATION_GET_DETAILRdefFormations=
+defPlayerInfo (2.PRT_BATTLE_PLAYER_INFORdefPlayerInfo
+atkAllHp (RatkAllHp
+defAllHp (RdefAllHp
+	nextRound (R	nextRound4
+atkFormationNO (2.FormationNORatkFormationNO4
+defFormationNO	 (2.FormationNORdefFormationNO
+isValid
+ (RisValid6
+attackResult (2.PRT_ATTACK_RESULTRattackResult
+battleId (RbattleId"$
+"PRT_WAR_OF_ATTRITION_TASK_INFO_REQ"F
+#PRT_WAR_OF_ATTRITION_TASK_INFO_RESP
+tasks (2	.PRT_TASKRtasks">
+$PRT_WAR_OF_ATTRITION_TASK_REWARD_REQ
+taskId (RtaskId"l
+%PRT_WAR_OF_ATTRITION_TASK_REWARD_RESP
+tasks (2	.PRT_TASKRtasks"
+things (2
+.PRT_THINGRthings"?
+PRT_WAR_OF_ATTRITION_RECORD
+isWin (RisWin
+
+battleTime (R
+battleTime7
+
+playerInfo (2.PRT_BATTLE_PLAYER_INFOR
+playerInfo
+	fightType (R	fightType
+rank (Rrank
+oldRank (RoldRank
+score (Rscore"!
+PRT_WAR_OF_ATTRITION_RECORD_REQ"Z
+ PRT_WAR_OF_ATTRITION_RECORD_RESP6
+records (2.PRT_WAR_OF_ATTRITION_RECORDRrecords"@
+"PRT_WAR_OF_ATTRITION_BASE_INFO_REQ
+serverId (RserverId"W
+#PRT_WAR_OF_ATTRITION_BASE_INFO_RESP
+season (Rseason
+groupId (RgroupId"?
+'PRT_WAR_OF_ATTRITION_ADD_HEAD_FRAME_REQ
+playerId (RplayerId 
+headFrameId (RheadFrameId"
+effectSeason (ReffectSeason"*
+(PRT_WAR_OF_ATTRITION_ADD_HEAD_FRAME_RESPB
+com.next1b.nextsvr.protobproto3

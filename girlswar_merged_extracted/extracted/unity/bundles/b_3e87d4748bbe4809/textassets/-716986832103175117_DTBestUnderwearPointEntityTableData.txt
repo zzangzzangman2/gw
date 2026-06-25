@@ -1,0 +1,15 @@
+local e=
+{
+ByIdx={
+{11,1,18000000,"bestunderwearpointDesc_11"},
+{12,1,1200000,"bestunderwearpointDesc_12"},
+{13,1,600000,"bestunderwearpointDesc_13"},
+{14,1,180000,"bestunderwearpointDesc_14"},
+{22,1,120000,"bestunderwearpointDesc_22"},
+{23,1,100000,"bestunderwearpointDesc_23"},
+{24,1,80000,"bestunderwearpointDesc_24"},
+{51,2,20,"bestunderwearpointDesc_51"}
+},
+Len=8
+}
+return e 

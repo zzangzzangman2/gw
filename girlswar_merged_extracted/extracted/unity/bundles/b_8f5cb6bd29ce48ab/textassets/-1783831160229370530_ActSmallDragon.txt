@@ -1,0 +1,18 @@
+
+?
+ActSmallDragon.proto"Y
+PRT_SMALL_DRAGON_CHARGE
+	chargeDid (R	chargeDid 
+chargeCount (RchargeCount"
+PRT_SMALL_DRAGON_REQ"?
+PRT_SMALL_DRAGON_RESP2
+charges (2.PRT_SMALL_DRAGON_CHARGERcharges*
+totalChargeCount (RtotalChargeCount8
+receivedChargeCountDids (RreceivedChargeCountDids"=
+)PRT_SMALL_DRAGON_CHARGE_COUNT_RECEIVE_REQ
+did (Rdid"?
+*PRT_SMALL_DRAGON_CHARGE_COUNT_RECEIVE_RESP
+did (Rdid*
+totalChargeCount (RtotalChargeCount8
+receivedChargeCountDids (RreceivedChargeCountDidsB
+com.next1b.nextsvr.protobproto3

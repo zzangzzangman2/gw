@@ -1,0 +1,30 @@
+local t={id=0,weaponType=0,level=0,cost={},interval=0,hurt=0,pow=0}
+t.__index=t
+function t.New(o,h,a,s,r,n,i)
+local e={}
+setmetatable(e,t)
+e.id=o
+e.weaponType=h
+e.level=a
+e.cost=s
+e.interval=r
+e.hurt=n
+e.pow=i
+return e
+end
+function t.NewFromArrItem(a)
+local e={}
+setmetatable(e,t)
+e.id=a[1]
+e.weaponType=a[2]
+e.level=a[3]
+e.cost=a[4]
+e.interval=a[5]
+e.hurt=a[6]
+e.pow=a[7]
+return e
+end
+function t.GetArr()
+return require('DataNode/DataTable/Create/activity/DTActCellSurvivorWeaponLevelEntityTableData')
+end
+return t 

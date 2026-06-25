@@ -1,0 +1,24 @@
+
+?
+ActCalendarTask.protoCommons.proto"r
+CALENDAR_TASK
+taskDid (RtaskDid
+progress (Rprogress+
+status (2.ENUM_REWARD_STATUSRstatus"7
+PRT_CALENDAR_TASK_REQ
+
+activityId (R
+activityId"Z
+PRT_CALENDAR_TASK_RESP
+leftTime (RleftTime$
+tasks (2.CALENDAR_TASKRtasks"W
+PRT_CALENDAR_TASK_AWARD_REQ
+
+activityId (R
+activityId
+taskDid (RtaskDid"\
+PRT_CALENDAR_TASK_AWARD_RESP
+taskDid (RtaskDid"
+things (2
+.PRT_THINGRthingsB
+com.next1b.nextsvr.protobproto3

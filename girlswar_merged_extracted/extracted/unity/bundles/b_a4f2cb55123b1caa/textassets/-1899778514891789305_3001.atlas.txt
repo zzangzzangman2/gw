@@ -1,0 +1,14 @@
+3001.png
+size:1024,1024
+filter:Linear,Linear
+body
+bounds:2,2,540,524
+face_angry
+bounds:544,10,147,111
+face_cry
+bounds:544,236,147,118
+face_happy
+bounds:544,356,170,151
+rotate:90
+face_nomal
+bounds:544,123,147,111

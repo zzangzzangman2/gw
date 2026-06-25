@@ -1,0 +1,32 @@
+local a={id=0,suitId=0,suitLevel=0,suitName="",suitNum=0,suitStar=0,suitAttr={},suitDesc=""}
+a.__index=a
+function a.New(i,h,n,t,d,r,s,o)
+local e={}
+setmetatable(e,a)
+e.id=i
+e.suitId=h
+e.suitLevel=n
+e.suitName=t
+e.suitNum=d
+e.suitStar=r
+e.suitAttr=s
+e.suitDesc=o
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.suitId=t[2]
+e.suitLevel=t[3]
+e.suitName=t[4]
+e.suitNum=t[5]
+e.suitStar=t[6]
+e.suitAttr=t[7]
+e.suitDesc=t[8]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/equip/DTSuitEntityTableData')
+end
+return a 

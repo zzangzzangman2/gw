@@ -1,0 +1,36 @@
+local a={id=0,sort=0,boxType=0,craftingTarget={{},{}},craftingCost=0,dropGroupId=0,dropGroupType=0,randomNum=0,boxName="",boxIcon=""}
+a.__index=a
+function a.New(n,r,s,t,l,u,d,h,o,i)
+local e={}
+setmetatable(e,a)
+e.id=n
+e.sort=r
+e.boxType=s
+e.craftingTarget=t
+e.craftingCost=l
+e.dropGroupId=u
+e.dropGroupType=d
+e.randomNum=h
+e.boxName=o
+e.boxIcon=i
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.sort=t[2]
+e.boxType=t[3]
+e.craftingTarget=t[4]
+e.craftingCost=t[5]
+e.dropGroupId=t[6]
+e.dropGroupType=t[7]
+e.randomNum=t[8]
+e.boxName=t[9]
+e.boxIcon=t[10]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/activity/DTOverseasTradeBoxEntityTableData')
+end
+return a 

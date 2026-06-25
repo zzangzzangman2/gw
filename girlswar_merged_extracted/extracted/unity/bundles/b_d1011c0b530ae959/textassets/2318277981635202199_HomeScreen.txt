@@ -1,0 +1,22 @@
+
+?
+HomeScreen.proto"G
+PRT_HOME_SCREEN_LOGIN_SYN
+reward (Rreward
+time (Rtime"#
+!PRT_HOME_CREATE_PLAYER_REWARD_REQ"$
+"PRT_HOME_CREATE_PLAYER_REWARD_RESP"=
+PRT_HOME_LOVER_SYN'
+lovers (2.PRT_HOME_LOVERRlovers"/
+PRT_HOME_TRAINING_REQ
+heroId (RheroId"G
+PRT_HOME_TRAINING_RESP-
+	loverInfo (2.PRT_HOME_LOVERR	loverInfo",
+PRT_HOME_CHEST_REQ
+heroId (RheroId"D
+PRT_HOME_CHEST_RESP-
+	loverInfo (2.PRT_HOME_LOVERR	loverInfo"F
+PRT_HOME_LOVER
+heroId (RheroId
+	leftCount (R	leftCountB
+com.next1b.nextsvr.protobproto3

@@ -1,0 +1,28 @@
+local e={id=0,profession=0,type=0,para=0,showRate=0,attrs={{},{}}}
+e.__index=e
+function e.New(a,i,o,h,s,n)
+local t={}
+setmetatable(t,e)
+t.id=a
+t.profession=i
+t.type=o
+t.para=h
+t.showRate=s
+t.attrs=n
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.profession=a[2]
+t.type=a[3]
+t.para=a[4]
+t.showRate=a[5]
+t.attrs=a[6]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/hero/DTCollectionEntityTableData')
+end
+return e 

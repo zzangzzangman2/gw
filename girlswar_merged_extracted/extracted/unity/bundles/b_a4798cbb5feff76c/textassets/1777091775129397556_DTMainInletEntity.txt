@@ -1,0 +1,32 @@
+local a={id=0,mainType=0,list=0,functionId=0,lockList=0,functionImage="",functionNameImage="",formName=""}
+a.__index=a
+function a.New(i,h,n,t,d,r,s,o)
+local e={}
+setmetatable(e,a)
+e.id=i
+e.mainType=h
+e.list=n
+e.functionId=t
+e.lockList=d
+e.functionImage=r
+e.functionNameImage=s
+e.formName=o
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.mainType=t[2]
+e.list=t[3]
+e.functionId=t[4]
+e.lockList=t[5]
+e.functionImage=t[6]
+e.functionNameImage=t[7]
+e.formName=t[8]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/worldMap/DTMainInletEntityTableData')
+end
+return a 

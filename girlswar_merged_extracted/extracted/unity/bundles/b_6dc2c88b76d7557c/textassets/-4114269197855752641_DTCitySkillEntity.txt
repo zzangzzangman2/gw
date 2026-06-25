@@ -1,0 +1,26 @@
+local e={id=0,skillName="",skillDesc="",buildType=0,rate=0}
+e.__index=e
+function e.New(o,n,a,s,i)
+local t={}
+setmetatable(t,e)
+t.id=o
+t.skillName=n
+t.skillDesc=a
+t.buildType=s
+t.rate=i
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.skillName=a[2]
+t.skillDesc=a[3]
+t.buildType=a[4]
+t.rate=a[5]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/city/DTCitySkillEntityTableData')
+end
+return e 

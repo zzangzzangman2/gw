@@ -1,0 +1,30 @@
+local t={id=0,color=0,icon="",integral=0,name="",desc="",AIActCD=0}
+t.__index=t
+function t.New(o,h,a,s,r,n,i)
+local e={}
+setmetatable(e,t)
+e.id=o
+e.color=h
+e.icon=a
+e.integral=s
+e.name=r
+e.desc=n
+e.AIActCD=i
+return e
+end
+function t.NewFromArrItem(a)
+local e={}
+setmetatable(e,t)
+e.id=a[1]
+e.color=a[2]
+e.icon=a[3]
+e.integral=a[4]
+e.name=a[5]
+e.desc=a[6]
+e.AIActCD=a[7]
+return e
+end
+function t.GetArr()
+return require('DataNode/DataTable/Create/activity/DTActivitySeaFishingFishEntityTableData')
+end
+return t 

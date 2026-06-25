@@ -1,0 +1,26 @@
+local e={id=0,rank=0,show=0,activityCfgId=0,awards={{},{}}}
+e.__index=e
+function e.New(o,n,a,s,i)
+local t={}
+setmetatable(t,e)
+t.id=o
+t.rank=n
+t.show=a
+t.activityCfgId=s
+t.awards=i
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.rank=a[2]
+t.show=a[3]
+t.activityCfgId=a[4]
+t.awards=a[5]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/worldTree/DTWorldTreeTeamRankEntityTableData')
+end
+return e 

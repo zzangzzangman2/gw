@@ -1,0 +1,10 @@
+{
+  "GameObject": 18,
+  "Transform": 18,
+  "ParticleSystemRenderer": 14,
+  "ParticleSystem": 14,
+  "Material": 10,
+  "Texture2D": 5,
+  "AssetBundle": 1,
+  "Shader": 1
+}

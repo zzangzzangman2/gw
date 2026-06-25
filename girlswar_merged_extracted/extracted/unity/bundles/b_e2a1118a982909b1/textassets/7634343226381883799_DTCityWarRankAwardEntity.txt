@@ -1,0 +1,32 @@
+local a={id=0,award={{},{}},awardNew={{},{}},star6award={{},{}},awardNewTreasure={{},{}},star6awardTreasure={{},{}},awardNew3Treasure={{},{}},star6awardNew3Treasure={{},{}}}
+a.__index=a
+function a.New(i,h,n,t,d,r,s,o)
+local e={}
+setmetatable(e,a)
+e.id=i
+e.award=h
+e.awardNew=n
+e.star6award=t
+e.awardNewTreasure=d
+e.star6awardTreasure=r
+e.awardNew3Treasure=s
+e.star6awardNew3Treasure=o
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.award=t[2]
+e.awardNew=t[3]
+e.star6award=t[4]
+e.awardNewTreasure=t[5]
+e.star6awardTreasure=t[6]
+e.awardNew3Treasure=t[7]
+e.star6awardNew3Treasure=t[8]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/cityWar/DTCityWarRankAwardEntityTableData')
+end
+return a 

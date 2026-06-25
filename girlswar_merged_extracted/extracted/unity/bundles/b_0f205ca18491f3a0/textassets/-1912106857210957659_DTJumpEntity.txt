@@ -1,0 +1,30 @@
+local t={id=0,jumpIcon="",jumpName="",jumpDesc="",jumpId=0,jumpFunction="",buttonType=0}
+t.__index=t
+function t.New(o,h,a,s,r,n,i)
+local e={}
+setmetatable(e,t)
+e.id=o
+e.jumpIcon=h
+e.jumpName=a
+e.jumpDesc=s
+e.jumpId=r
+e.jumpFunction=n
+e.buttonType=i
+return e
+end
+function t.NewFromArrItem(a)
+local e={}
+setmetatable(e,t)
+e.id=a[1]
+e.jumpIcon=a[2]
+e.jumpName=a[3]
+e.jumpDesc=a[4]
+e.jumpId=a[5]
+e.jumpFunction=a[6]
+e.buttonType=a[7]
+return e
+end
+function t.GetArr()
+return require('DataNode/DataTable/Create/function/DTJumpEntityTableData')
+end
+return t 

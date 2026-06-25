@@ -1,0 +1,66 @@
+local a={id=0,activityHeroStart=0,activityHeroEnd=0,activityHeroMT=0,activityGachaStart=0,activityGachaEnd=0,activityGachaMT=0,suitGachaRStart=0,suitGachaREnd=0,suitGachaRMT=0,suitGachaSRStart=0,suitGachaSREnd=0,suitGachaSRMT=0,suitGachaSSRStart=0,suitGachaSSREnd=0,suitGachaSSRMT=0,newSuitGachaSSRStart=0,newSuitGachaSSREnd=0,newSuitGachaSSRMT=0,activityHeroUrStart=0,activityHeroUrEnd=0,activityHeroUrMT=0,activityHeroUr2Start=0,activityHeroUr2End=0,activityHeroUr2MT=0}
+a.__index=a
+function a.New(u,w,m,t,b,v,y,p,k,j,q,z,x,_,g,f,h,s,n,o,i,r,l,d,c)
+local e={}
+setmetatable(e,a)
+e.id=u
+e.activityHeroStart=w
+e.activityHeroEnd=m
+e.activityHeroMT=t
+e.activityGachaStart=b
+e.activityGachaEnd=v
+e.activityGachaMT=y
+e.suitGachaRStart=p
+e.suitGachaREnd=k
+e.suitGachaRMT=j
+e.suitGachaSRStart=q
+e.suitGachaSREnd=z
+e.suitGachaSRMT=x
+e.suitGachaSSRStart=_
+e.suitGachaSSREnd=g
+e.suitGachaSSRMT=f
+e.newSuitGachaSSRStart=h
+e.newSuitGachaSSREnd=s
+e.newSuitGachaSSRMT=n
+e.activityHeroUrStart=o
+e.activityHeroUrEnd=i
+e.activityHeroUrMT=r
+e.activityHeroUr2Start=l
+e.activityHeroUr2End=d
+e.activityHeroUr2MT=c
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.activityHeroStart=t[2]
+e.activityHeroEnd=t[3]
+e.activityHeroMT=t[4]
+e.activityGachaStart=t[5]
+e.activityGachaEnd=t[6]
+e.activityGachaMT=t[7]
+e.suitGachaRStart=t[8]
+e.suitGachaREnd=t[9]
+e.suitGachaRMT=t[10]
+e.suitGachaSRStart=t[11]
+e.suitGachaSREnd=t[12]
+e.suitGachaSRMT=t[13]
+e.suitGachaSSRStart=t[14]
+e.suitGachaSSREnd=t[15]
+e.suitGachaSSRMT=t[16]
+e.newSuitGachaSSRStart=t[17]
+e.newSuitGachaSSREnd=t[18]
+e.newSuitGachaSSRMT=t[19]
+e.activityHeroUrStart=t[20]
+e.activityHeroUrEnd=t[21]
+e.activityHeroUrMT=t[22]
+e.activityHeroUr2Start=t[23]
+e.activityHeroUr2End=t[24]
+e.activityHeroUr2MT=t[25]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/activity/DTLuckyScoreEntityTableData')
+end
+return a 

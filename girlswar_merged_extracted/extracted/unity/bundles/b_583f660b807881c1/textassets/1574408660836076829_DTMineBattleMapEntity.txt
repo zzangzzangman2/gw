@@ -1,0 +1,38 @@
+local a={id=0,map=0,page=0,pic="",num=0,output=0,lv=0,needHeroNum=0,mobossId=0,mobs={},power=0}
+a.__index=a
+function a.New(n,r,s,t,l,u,c,d,h,o,i)
+local e={}
+setmetatable(e,a)
+e.id=n
+e.map=r
+e.page=s
+e.pic=t
+e.num=l
+e.output=u
+e.lv=c
+e.needHeroNum=d
+e.mobossId=h
+e.mobs=o
+e.power=i
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.map=t[2]
+e.page=t[3]
+e.pic=t[4]
+e.num=t[5]
+e.output=t[6]
+e.lv=t[7]
+e.needHeroNum=t[8]
+e.mobossId=t[9]
+e.mobs=t[10]
+e.power=t[11]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/mineBattle/DTMineBattleMapEntityTableData')
+end
+return a 

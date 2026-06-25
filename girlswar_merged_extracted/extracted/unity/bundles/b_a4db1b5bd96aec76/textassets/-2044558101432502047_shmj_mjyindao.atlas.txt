@@ -1,0 +1,12 @@
+shmj_mjyindao.png
+size:512,512
+filter:Linear,Linear
+1
+bounds:291,185,209,220
+offsets:0,0,210,221
+2
+bounds:291,1,214,183
+offsets:0,0,215,183
+a4
+bounds:1,116,289,289
+offsets:2,2,293,293

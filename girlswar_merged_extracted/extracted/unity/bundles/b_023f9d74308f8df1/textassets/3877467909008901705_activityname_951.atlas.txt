@@ -1,0 +1,15 @@
+activityname_951.png
+size:512,128
+filter:Linear,Linear
+3jia
+bounds:257,43,97,27
+8
+bounds:2,2,137,114
+aixin
+bounds:356,21,51,49
+kuang1
+bounds:257,72,212,44
+pintu
+bounds:257,3,34,38
+yuan
+bounds:141,2,114,114

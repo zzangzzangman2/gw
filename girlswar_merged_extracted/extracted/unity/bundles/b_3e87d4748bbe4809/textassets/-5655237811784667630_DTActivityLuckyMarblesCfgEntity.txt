@@ -1,0 +1,22 @@
+local e={id=0,dailyTimeComm=0,costAdv={}}
+e.__index=e
+function e.New(o,a,i)
+local t={}
+setmetatable(t,e)
+t.id=o
+t.dailyTimeComm=a
+t.costAdv=i
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.dailyTimeComm=a[2]
+t.costAdv=a[3]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/activity/DTActivityLuckyMarblesCfgEntityTableData')
+end
+return e 

@@ -1,0 +1,28 @@
+local e={id=0,shopCostID=0,goods_1=0,unlockItem={},unlockItemRecycleItemId=0,unlockItemRecycleItemIdNum={}}
+e.__index=e
+function e.New(a,i,o,h,s,n)
+local t={}
+setmetatable(t,e)
+t.id=a
+t.shopCostID=i
+t.goods_1=o
+t.unlockItem=h
+t.unlockItemRecycleItemId=s
+t.unlockItemRecycleItemIdNum=n
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.shopCostID=a[2]
+t.goods_1=a[3]
+t.unlockItem=a[4]
+t.unlockItemRecycleItemId=a[5]
+t.unlockItemRecycleItemIdNum=a[6]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/activity/DTBeachCumRechargeBaseEntityTableData')
+end
+return e 

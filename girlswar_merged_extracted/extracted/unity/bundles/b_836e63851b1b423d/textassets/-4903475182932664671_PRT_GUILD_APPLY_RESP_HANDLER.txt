@@ -1,0 +1,13 @@
+local t={}
+function t:OnHandle(e)
+local e=assert(GlobalPB.decode("PRT_GUILD_APPLY_RESP",e));
+if(GameInit.GetDebugLogProto())then
+;
+;
+end
+if e.state==PROTO_ENUM.ENUM_APPLY_STATE.GUILD_APPLY_WAIT_APPROVE then
+UIUtil.ShowCommonTips(GameTools.GetLocalize("UI.guild.Join.17",LanguageCategory.LangCommon))
+end
+EventSystem.SendEvent(CommonEventId.OnRespGuildApply,e)
+end
+return t 

@@ -1,0 +1,10 @@
+SP_heroname_21015.png
+size:256,512
+filter:Linear,Linear
+21015
+bounds:0,0,310,70
+rotate:90
+t3
+bounds:0,312,214,200
+urtbda
+bounds:72,0,127,85

@@ -1,0 +1,50 @@
+
+?
+ActHeroDivination.proto"U
+PRT_HERO_DIVINATION_CARD_INFO4
+items (2.PRT_HERO_DIVINATION_CARD_ITEMRitems"W
+PRT_HERO_DIVINATION_CARD_ITEM
+idx (Ridx$
+divinationDid (RdivinationDid"S
+PRT_HERO_DIVINATION_BOX_INFO3
+items (2.PRT_HERO_DIVINATION_BOX_ITEMRitems"V
+PRT_HERO_DIVINATION_BOX_ITEM
+idx (Ridx$
+divinationDid (RdivinationDid"
+PRT_HERO_DIVINATION_INFO_REQ"?
+PRT_HERO_DIVINATION_INFO_RESP:
+cardInfo (2.PRT_HERO_DIVINATION_CARD_INFORcardInfo7
+boxInfo (2.PRT_HERO_DIVINATION_BOX_INFORboxInfo
+cardLv (RcardLv
+cardExp (RcardExp
+wishList (RwishList
+score (Rscore
+setWish (RsetWish 
+buyBoxCount	 (RbuyBoxCount"
+PRT_HERO_DIVINATION_REF_REQ"?
+PRT_HERO_DIVINATION_REF_RESP:
+cardInfo (2.PRT_HERO_DIVINATION_CARD_INFORcardInfo
+cardLv (RcardLv
+cardExp (RcardExp
+score (Rscore"8
+PRT_HERO_DIVINATION_PICK_REQ
+cardIdx (RcardIdx"?
+PRT_HERO_DIVINATION_PICK_RESP7
+boxInfo (2.PRT_HERO_DIVINATION_BOX_INFORboxInfo
+score (Rscore0
+deleteDivinationDid (RdeleteDivinationDid"8
+PRT_HERO_DIVINATION_RETURN_REQ
+boxIdx (RboxIdx"p
+PRT_HERO_DIVINATION_RETURN_RESP7
+boxInfo (2.PRT_HERO_DIVINATION_BOX_INFORboxInfo
+score (Rscore"F
+PRT_HERO_DIVINATION_WISH_REQ&
+divinationDids (RdivinationDids"]
+PRT_HERO_DIVINATION_WISH_RESP&
+divinationDids (RdivinationDids
+score (Rscore"!
+PRT_HERO_DIVINATION_BUY_BOX_REQ"Z
+ PRT_HERO_DIVINATION_BUY_BOX_RESP 
+buyBoxCount (RbuyBoxCount
+score (RscoreB
+com.next1b.nextsvr.protobproto3

@@ -1,0 +1,8 @@
+local e=
+{
+ByIdx={
+{1,{26365,1},{26366,1},{26366,1},310,{27371,20},{26365,26366,26367,26368,26369,26370},"UIActChrismasPark/itemicon_20986","UIActChrismasPark/itemicon_wenhao",3111702,3111702,{0},1,6}
+},
+Len=1
+}
+return e 

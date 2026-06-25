@@ -1,0 +1,22 @@
+local e={id=0,smallmandisplaypoint=0,attackpoint=0}
+e.__index=e
+function e.New(o,a,i)
+local t={}
+setmetatable(t,e)
+t.id=o
+t.smallmandisplaypoint=a
+t.attackpoint=i
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.smallmandisplaypoint=a[2]
+t.attackpoint=a[3]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/activity/DTHugeBossAttackPointEntityTableData')
+end
+return e 

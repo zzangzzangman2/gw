@@ -1,0 +1,8 @@
+
+?
+ActCommonPay.proto"
+PRT_COMMON_PAY_INFO_REQ"h
+PRT_COMMON_PAY_INFO_RESP
+goodsIds (RgoodsIds0
+chargeWheelGoodsIds (RchargeWheelGoodsIdsB
+com.next1b.nextsvr.protobproto3

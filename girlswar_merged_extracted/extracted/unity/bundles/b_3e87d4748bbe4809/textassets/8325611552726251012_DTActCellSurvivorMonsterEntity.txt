@@ -1,0 +1,42 @@
+local a={id=0,name="",linePointsName="",headPrefabId="",bodyImg="",bodyMapId=0,speed=0,backSpeed=0,rageStatus={{},{}},rageSpeed=0,endSlowDistance=0,endSlowRate=0,weaponDamageW=0}
+a.__index=a
+function a.New(s,d,h,t,l,c,m,f,u,r,i,o,n)
+local e={}
+setmetatable(e,a)
+e.id=s
+e.name=d
+e.linePointsName=h
+e.headPrefabId=t
+e.bodyImg=l
+e.bodyMapId=c
+e.speed=m
+e.backSpeed=f
+e.rageStatus=u
+e.rageSpeed=r
+e.endSlowDistance=i
+e.endSlowRate=o
+e.weaponDamageW=n
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.name=t[2]
+e.linePointsName=t[3]
+e.headPrefabId=t[4]
+e.bodyImg=t[5]
+e.bodyMapId=t[6]
+e.speed=t[7]
+e.backSpeed=t[8]
+e.rageStatus=t[9]
+e.rageSpeed=t[10]
+e.endSlowDistance=t[11]
+e.endSlowRate=t[12]
+e.weaponDamageW=t[13]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/activity/DTActCellSurvivorMonsterEntityTableData')
+end
+return a 

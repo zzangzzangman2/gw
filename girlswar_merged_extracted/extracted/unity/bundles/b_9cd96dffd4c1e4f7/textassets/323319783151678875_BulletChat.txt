@@ -1,0 +1,23 @@
+
+?
+BulletChat.proto"C
+PRT_BULLET_CHAT
+chat (	Rchat
+	videoTime (R	videoTime"P
+PRT_BULLET_CHAT_SEND
+videoDid (RvideoDid
+	sendCount (R	sendCount"
+PRT_BULLET_CHAT_INFO_REQ"H
+PRT_BULLET_CHAT_INFO_RESP+
+sends (2.PRT_BULLET_CHAT_SENDRsends"h
+PRT_BULLET_CHAT_SEND_REQ
+videoDid (RvideoDid
+chat (	Rchat
+	videoTime (R	videoTime"9
+PRT_BULLET_CHAT_SEND_RESP
+	isInvalid (R	isInvalid"6
+PRT_BULLET_CHAT_LIST_REQ
+videoDid (RvideoDid"C
+PRT_BULLET_CHAT_LIST_RESP&
+chats (2.PRT_BULLET_CHATRchatsB
+com.next1b.nextsvr.protobproto3

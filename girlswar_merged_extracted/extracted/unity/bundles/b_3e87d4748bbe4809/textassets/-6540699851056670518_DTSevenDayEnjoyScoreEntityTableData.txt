@@ -1,0 +1,12 @@
+local e=
+{
+ByIdx={
+{1,60,{{11005,36}},"questReward_1"},
+{2,120,{{11005,60}},"questReward_2"},
+{3,240,{{41005,40}},"questReward_3"},
+{4,360,{{41005,80}},"questReward_4"},
+{5,420,{{11005,180}},"questReward_5"}
+},
+Len=5
+}
+return e 

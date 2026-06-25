@@ -1,0 +1,11 @@
+local t={}
+function t:OnHandle(e)
+local e=assert(GlobalPB.decode("PRT_TREASURE_REMOVE_SYN",e));
+if(GameInit.GetDebugLogProto())then
+;
+;
+end
+TreasureMgr:RemoveTreasure(e)
+return e
+end
+return t 

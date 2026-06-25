@@ -1,0 +1,14 @@
+{
+  "Texture2D": 10,
+  "Sprite": 9,
+  "MonoBehaviour": 3,
+  "MonoScript": 3,
+  "Material": 2,
+  "TextAsset": 2,
+  "AssetBundle": 1,
+  "Mesh": 1,
+  "GameObject": 1,
+  "MeshFilter": 1,
+  "Transform": 1,
+  "MeshRenderer": 1
+}

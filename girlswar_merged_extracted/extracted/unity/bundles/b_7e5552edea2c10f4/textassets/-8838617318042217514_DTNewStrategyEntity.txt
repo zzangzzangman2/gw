@@ -1,0 +1,30 @@
+local t={id=0,index=0,name="",type=0,title="",info="",images=""}
+t.__index=t
+function t.New(o,h,a,s,r,n,i)
+local e={}
+setmetatable(e,t)
+e.id=o
+e.index=h
+e.name=a
+e.type=s
+e.title=r
+e.info=n
+e.images=i
+return e
+end
+function t.NewFromArrItem(a)
+local e={}
+setmetatable(e,t)
+e.id=a[1]
+e.index=a[2]
+e.name=a[3]
+e.type=a[4]
+e.title=a[5]
+e.info=a[6]
+e.images=a[7]
+return e
+end
+function t.GetArr()
+return require('DataNode/DataTable/Create/sysLocalization/DTNewStrategyEntityTableData')
+end
+return t 

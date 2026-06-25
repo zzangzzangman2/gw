@@ -1,0 +1,26 @@
+local e={id=0,poolId=0,award={},heroId=0,rate=0}
+e.__index=e
+function e.New(o,n,a,s,i)
+local t={}
+setmetatable(t,e)
+t.id=o
+t.poolId=n
+t.award=a
+t.heroId=s
+t.rate=i
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.poolId=a[2]
+t.award=a[3]
+t.heroId=a[4]
+t.rate=a[5]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/activity/DTHeroDrawPoolData4_2EntityTableData')
+end
+return e 

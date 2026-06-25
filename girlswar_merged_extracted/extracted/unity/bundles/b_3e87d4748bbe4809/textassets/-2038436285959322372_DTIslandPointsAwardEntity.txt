@@ -1,0 +1,24 @@
+local e={id=0,points=0,pointsAward={{},{}},activityStage=0}
+e.__index=e
+function e.New(o,a,n,i)
+local t={}
+setmetatable(t,e)
+t.id=o
+t.points=a
+t.pointsAward=n
+t.activityStage=i
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.points=a[2]
+t.pointsAward=a[3]
+t.activityStage=a[4]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/activity/DTIslandPointsAwardEntityTableData')
+end
+return e 

@@ -1,0 +1,11 @@
+local t={}
+function t:OnHandle(e)
+local e=assert(GlobalPB.decode("PRT_WORLDTREE_TREASURE_MAP_RECORD_RESP",e));
+if(GameInit.GetDebugLogProto())then
+;
+;
+end
+ModulesInit.ActWorldTreeMgr:ParsePuzzleRecordInfo(e)
+return e
+end
+return t 

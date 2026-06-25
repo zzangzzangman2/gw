@@ -1,0 +1,46 @@
+local a={id=0,achieveType=0,nextId=0,heroDid=0,award={},eventId=0,score=0,sortId=0,avatar="",name="",buildId=0,endAvg=0,completeTip="",achieveRewardTip="",completeImage=""}
+a.__index=a
+function a.New(s,l,r,t,u,m,w,f,y,c,d,i,o,n,h)
+local e={}
+setmetatable(e,a)
+e.id=s
+e.achieveType=l
+e.nextId=r
+e.heroDid=t
+e.award=u
+e.eventId=m
+e.score=w
+e.sortId=f
+e.avatar=y
+e.name=c
+e.buildId=d
+e.endAvg=i
+e.completeTip=o
+e.achieveRewardTip=n
+e.completeImage=h
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.achieveType=t[2]
+e.nextId=t[3]
+e.heroDid=t[4]
+e.award=t[5]
+e.eventId=t[6]
+e.score=t[7]
+e.sortId=t[8]
+e.avatar=t[9]
+e.name=t[10]
+e.buildId=t[11]
+e.endAvg=t[12]
+e.completeTip=t[13]
+e.achieveRewardTip=t[14]
+e.completeImage=t[15]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/cruise/DTCruiseAchieveEntityTableData')
+end
+return a 

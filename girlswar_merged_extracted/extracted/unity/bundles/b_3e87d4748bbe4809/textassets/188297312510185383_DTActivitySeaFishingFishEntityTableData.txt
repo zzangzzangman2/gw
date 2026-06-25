@@ -1,0 +1,12 @@
+local e=
+{
+ByIdx={
+{1,2,"UIActSeaFishing/fishIcon/qmdy_fishicon_1",40,"seaFishing_fishName1","seaFishing_fishDesc1",10000},
+{2,3,"UIActSeaFishing/fishIcon/qmdy_fishicon_2",60,"seaFishing_fishName2","seaFishing_fishDesc2",15000},
+{3,4,"UIActSeaFishing/fishIcon/qmdy_fishicon_3",80,"seaFishing_fishName3","seaFishing_fishDesc3",20000},
+{4,5,"UIActSeaFishing/fishIcon/qmdy_fishicon_4",100,"seaFishing_fishName4","seaFishing_fishDesc4",30000},
+{1001,6,"UIActSeaFishing/fishIcon/qmdy_fishicon_1001",1,"actseaFishing_fishname_1","actseaFishing_fishdesc_1",300}
+},
+Len=5
+}
+return e 

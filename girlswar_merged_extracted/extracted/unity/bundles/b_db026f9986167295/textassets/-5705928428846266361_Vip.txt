@@ -1,0 +1,21 @@
+
+?
+	Vip.proto"
+PRT_VIP_INFO_REQ"?
+PRT_VIP_INFO_RESP(
+isCanDailyAward (RisCanDailyAward&
+alreadyBuyDids (RalreadyBuyDids"
+continueDays (RcontinueDays&
+isCanReceiveHC (RisCanReceiveHC
+leftTime (RleftTime2
+beforeAlreadyBuyDids (RbeforeAlreadyBuyDids"!
+PRT_VIP_DAILY_AWARD_RECEIVE_REQ""
+ PRT_VIP_DAILY_AWARD_RECEIVE_RESP".
+PRT_VIP_GIFT_BUY_REQ
+vipDid (RvipDid"/
+PRT_VIP_GIFT_BUY_RESP
+vipDid (RvipDid"
+PRT_VIP_LOGIN_RECEIVE_REQ"@
+PRT_VIP_LOGIN_RECEIVE_RESP"
+continueDays (RcontinueDaysB
+com.next1b.nextsvr.protobproto3

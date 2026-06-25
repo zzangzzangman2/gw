@@ -1,0 +1,36 @@
+local a={id=0,eventId=0,wave=0,isBoss=0,monsterLists={},icon="",name="",level=0,monsterEffect={},bossId=0}
+a.__index=a
+function a.New(n,r,s,t,l,u,d,h,o,i)
+local e={}
+setmetatable(e,a)
+e.id=n
+e.eventId=r
+e.wave=s
+e.isBoss=t
+e.monsterLists=l
+e.icon=u
+e.name=d
+e.level=h
+e.monsterEffect=o
+e.bossId=i
+return e
+end
+function a.NewFromArrItem(t)
+local e={}
+setmetatable(e,a)
+e.id=t[1]
+e.eventId=t[2]
+e.wave=t[3]
+e.isBoss=t[4]
+e.monsterLists=t[5]
+e.icon=t[6]
+e.name=t[7]
+e.level=t[8]
+e.monsterEffect=t[9]
+e.bossId=t[10]
+return e
+end
+function a.GetArr()
+return require('DataNode/DataTable/Create/worldMap/DTInspirationWaveEntityTableData')
+end
+return a 

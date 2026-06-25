@@ -1,0 +1,47 @@
+
+?
+
+GrandCities.protoCommons.proto"y
+PRT_GRANDCITIES_TASK
+taskDid (RtaskDid+
+status (2.ENUM_REWARD_STATUSRstatus
+progress (Rprogress"B
+PRT_GRANDCITIES_INFO
+day (Rday
+giftIds (RgiftIds"
+PRT_GRANDCITIES_INFO_REQ"?
+PRT_GRANDCITIES_INFO_RESP
+leftTime (RleftTime"
+todayEndTime (RtodayEndTime)
+info (2.PRT_GRANDCITIES_INFORinfo
+today (Rtoday;
+totalRankDatas (2.PRT_CS_COMMON_RANKRtotalRankDatas9
+totalSelfRank (2.PRT_CS_COMMON_RANKRtotalSelfRank"
+PRT_GRANDCITIES_TASK_REQ"^
+PRT_GRANDCITIES_TASK_RESP+
+tasks (2.PRT_GRANDCITIES_TASKRtasks
+today (Rtoday"5
+PRT_GRANDCITIES_AWARD_REQ
+taskDid (RtaskDid"G
+PRT_GRANDCITIES_AWARD_RESP)
+task (2.PRT_GRANDCITIES_TASKRtask" 
+PRT_GRANDCITIES_RANK_LOCAL_REQ"?
+PRT_GRANDCITIES_RANK_LOCAL_RESP;
+totalRankDatas (2.PRT_CS_COMMON_RANKRtotalRankDatas9
+totalSelfRank (2.PRT_CS_COMMON_RANKRtotalSelfRank"?
+"PRT_CS_GRANDCITIES_UPDATE_RANK_SYN
+playerId (RplayerId
+
+dailyScore (R
+dailyScore
+
+totalScore (R
+totalScore
+changeMS (RchangeMS
+day (Rday
+stage (Rstage"?
+PRT_CS_GRANDCITIES_INFO_RESP
+playerId (RplayerId;
+totalRankDatas (2.PRT_CS_COMMON_RANKRtotalRankDatas9
+totalSelfRank (2.PRT_CS_COMMON_RANKRtotalSelfRankB
+com.next1b.nextsvr.protobproto3

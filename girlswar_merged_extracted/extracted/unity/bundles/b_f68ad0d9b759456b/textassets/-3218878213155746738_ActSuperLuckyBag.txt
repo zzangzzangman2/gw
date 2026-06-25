@@ -1,0 +1,16 @@
+
+?
+ActSuperLuckyBag.proto"
+PRT_SUPER_LUCKY_BAG_INFO_REQ"
+PRT_SUPER_LUCKY_BAG_INFO_RESP
+leftTime (RleftTime"
+buyGoodsDids (RbuyGoodsDids
+
+isGiftTook (R
+isGiftTook"#
+!PRT_SUPER_LUCKY_BAG_TAKE_GIFT_REQ"D
+"PRT_SUPER_LUCKY_BAG_TAKE_GIFT_RESP
+
+isGiftTook (R
+isGiftTookB
+com.next1b.nextsvr.protobproto3

@@ -1,0 +1,30 @@
+local t={id=0,baseCost={},turntableCost={},shopCost=0,accelerationFactor=0,maxWindowsNum=0,pointerSpeedScope={}}
+t.__index=t
+function t.New(o,h,a,s,r,n,i)
+local e={}
+setmetatable(e,t)
+e.id=o
+e.baseCost=h
+e.turntableCost=a
+e.shopCost=s
+e.accelerationFactor=r
+e.maxWindowsNum=n
+e.pointerSpeedScope=i
+return e
+end
+function t.NewFromArrItem(a)
+local e={}
+setmetatable(e,t)
+e.id=a[1]
+e.baseCost=a[2]
+e.turntableCost=a[3]
+e.shopCost=a[4]
+e.accelerationFactor=a[5]
+e.maxWindowsNum=a[6]
+e.pointerSpeedScope=a[7]
+return e
+end
+function t.GetArr()
+return require('DataNode/DataTable/Create/activity/DTHeavenTowerBaseEntityTableData')
+end
+return t 

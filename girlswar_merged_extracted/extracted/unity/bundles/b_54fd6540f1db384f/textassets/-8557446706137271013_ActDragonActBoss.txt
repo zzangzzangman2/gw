@@ -1,0 +1,76 @@
+
+?
+ActDragonActBoss.protoCommons.proto"
+PRT_DRAGON_ACT_BOSS_INFO_REQ"?
+PRT_DRAGON_ACT_BOSS_INFO_RESP
+
+processVal (R
+processVal,
+rewardProcessList (RrewardProcessList
+loverVal (RloverVal&
+selectLuxuryId (RselectLuxuryId*
+rewardTaskIdList (RrewardTaskIdList
+taskVal (RtaskVal
+sellNum (RsellNum"?
+!PRT_DRAGON_ACT_BOSS_SEND_GIFT_REQ
+luxuryId (RluxuryId"\
+"PRT_DRAGON_ACT_BOSS_SEND_GIFT_RESP
+luxuryId (RluxuryId
+loverVal (RloverVal"A
+#PRT_DRAGON_ACT_BOSS_SELECT_GIFT_REQ
+luxuryId (RluxuryId"^
+$PRT_DRAGON_ACT_BOSS_SELECT_GIFT_RESP
+luxuryId (RluxuryId
+loverVal (RloverVal"A
+#PRT_DRAGON_ACT_BOSS_SELL_LUXURY_REQ
+luxuryId (RluxuryId"?
+$PRT_DRAGON_ACT_BOSS_SELL_LUXURY_RESP
+luxuryId (RluxuryId
+loverVal (RloverVal 
+drops (2
+.PRT_THINGRdrops
+
+processVal (R
+processVal
+sellNum (RsellNum"=
+#PRT_DRAGON_ACT_BOSS_TASK_REWARD_REQ
+taskId (RtaskId"?
+$PRT_DRAGON_ACT_BOSS_TASK_REWARD_RESP 
+drops (2
+.PRT_THINGRdrops*
+rewardTaskIdList (RrewardTaskIdList
+taskId (RtaskId"(
+&PRT_DRAGON_ACT_BOSS_PROCESS_REWARD_REQ"?
+'PRT_DRAGON_ACT_BOSS_PROCESS_REWARD_RESP 
+drops (2
+.PRT_THINGRdrops
+
+processVal (R
+processVal,
+rewardProcessList (RrewardProcessList"#
+!PRT_DRAGON_ACT_BOSS_SHOP_INFO_REQ"`
+"PRT_DRAGON_ACT_BOSS_SHOP_INFO_RESP 
+items (2
+.PRT_GOODSRitems
+costNum (RcostNum"T
+ PRT_DRAGON_ACT_BOSS_SHOP_BUY_REQ
+goodsDid (RgoodsDid
+count (Rcount"]
+!PRT_DRAGON_ACT_BOSS_SHOP_BUY_RESP
+item (2
+.PRT_GOODSRitem
+costNum (RcostNum"#
+!PRT_DRAGON_ACT_BOSS_GIFT_INFO_REQ"?
+"PRT_DRAGON_ACT_BOSS_GIFT_INFO_RESP 
+gifts (2
+.PRT_GOODSRgifts
+freeCD (RfreeCD.
+historyGifts (2
+.PRT_GOODSRhistoryGifts"R
+ PRT_DRAGON_ACT_BOSS_GIFT_BUY_REQ
+giftDid (RgiftDid
+count (Rcount"C
+!PRT_DRAGON_ACT_BOSS_GIFT_BUY_RESP
+gift (2
+.PRT_GOODSRgiftB
+com.next1b.nextsvr.protobproto3

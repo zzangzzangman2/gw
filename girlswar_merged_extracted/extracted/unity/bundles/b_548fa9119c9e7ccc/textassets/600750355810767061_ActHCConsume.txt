@@ -1,0 +1,21 @@
+
+?
+ActHCConsume.protoCommons.proto"
+PRT_HC_CONSUME_INFO_REQ"?
+PRT_HC_CONSUME_INFO_RESP
+leftTime (RleftTime*
+totalHolyCrystal (RtotalHolyCrystal,
+receviedAwardDids (RreceviedAwardDids"6
+PRT_HC_CONSUME_AWARD_REQ
+awardDid (RawardDid"7
+PRT_HC_CONSUME_AWARD_RESP
+awardDid (RawardDid"
+PRT_HC_CONSUME_RANK_INFO_REQ"{
+PRT_HC_CONSUME_RANK_INFO_RESP,
+selfRank (2.PRT_COMMON_RANKRselfRank,
+topRanks (2.PRT_COMMON_RANKRtopRanks"
+PRT_HC_CONSUME_RANK_REQ"p
+PRT_HC_CONSUME_RANK_RESP&
+ranks (2.PRT_COMMON_RANKRranks,
+selfRank (2.PRT_COMMON_RANKRselfRankB
+com.next1b.nextsvr.protobproto3

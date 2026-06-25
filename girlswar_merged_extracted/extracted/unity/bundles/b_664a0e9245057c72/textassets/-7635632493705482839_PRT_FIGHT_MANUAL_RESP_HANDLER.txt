@@ -1,0 +1,32 @@
+local t={}
+function t:OnHandle(e)
+local e=assert(GlobalPB.decode("PRT_FIGHT_MANUAL_RESP",e))
+if(GameInit.GetDebugLogProto())then
+
+
+end
+ModulesInit.ProcedureNormalBattle.IsRespBattleSuc=true
+if(ModulesInit.ProcedureNormalBattle.BattleType==BattleType.campaign)then
+local e=ModulesInit.ExpeditionManager.FightClearState
+if e==false then
+local e=ModulesInit.ExpeditionManager.FightClearInfo
+GameEntry.UI:OpenUIForm(UIFormId.UI_BattleFail,e)
+end
+elseif(ModulesInit.ProcedureNormalBattle.BattleType==BattleType.trial)then
+if ModulesInit.AutoHelperMgr.isAuto then
+EventSystem.SendEvent(CommonEventId.OnBack_FIGHT_MANUAL_RESP,e)
+return
+end
+local a=ModulesInit.ExpeditionManager.FightClearState
+local t=ModulesInit.ExpeditionManager.FightClearInfo
+if a and e.award then
+TowerMgr:UnlockNextLevel(ModulesInit.ProcedureNormalBattle.MapId)
+TowerMgr:SetTowerInfo(ModulesInit.ProcedureNormalBattle.MapId,e.award.star)
+GameEntry.UI:OpenUIForm(UIFormId.UI_TowerVictory,{uiData=t,mapId=ModulesInit.ProcedureNormalBattle.MapId,star=e.award.star,starTypes=e.award.starTypes})
+else
+GameEntry.UI:OpenUIForm(UIFormId.UI_BattleFail,t)
+end
+end
+end
+return t
+

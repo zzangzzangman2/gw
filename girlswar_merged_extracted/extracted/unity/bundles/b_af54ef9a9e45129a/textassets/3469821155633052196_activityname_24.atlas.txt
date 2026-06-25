@@ -1,0 +1,16 @@
+activityname_24.png
+size:256,128
+filter:Linear,Linear
+hua
+bounds:156,8,57,74
+offsets:1,0,59,74
+shanzi
+bounds:85,5,77,71
+rotate:90
+yun
+bounds:206,4,44,25
+zf3
+bounds:0,0,84,82
+zi
+bounds:213,30,52,41
+rotate:90

@@ -1,0 +1,30 @@
+local t={id=0,crossShowRankCount=0,localShowRankCount=0,dtsysPrefabAvg=0,isType=0,dtsysPrefabAvgFORMULA="",isTypeFORMULA=""}
+t.__index=t
+function t.New(o,h,a,s,r,n,i)
+local e={}
+setmetatable(e,t)
+e.id=o
+e.crossShowRankCount=h
+e.localShowRankCount=a
+e.dtsysPrefabAvg=s
+e.isType=r
+e.dtsysPrefabAvgFORMULA=n
+e.isTypeFORMULA=i
+return e
+end
+function t.NewFromArrItem(a)
+local e={}
+setmetatable(e,t)
+e.id=a[1]
+e.crossShowRankCount=a[2]
+e.localShowRankCount=a[3]
+e.dtsysPrefabAvg=a[4]
+e.isType=a[5]
+e.dtsysPrefabAvgFORMULA=a[6]
+e.isTypeFORMULA=a[7]
+return e
+end
+function t.GetArr()
+return require('DataNode/DataTable/Create/activity/DTNewJourneyConfigEntityTableData')
+end
+return t 

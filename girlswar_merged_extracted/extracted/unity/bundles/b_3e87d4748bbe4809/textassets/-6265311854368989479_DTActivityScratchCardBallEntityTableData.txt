@@ -1,0 +1,10 @@
+local e=
+{
+ByIdx={
+{1,"UIActScratchCard/guaka_cq1"},
+{2,"UIActScratchCard/guaka_cq2"},
+{3,"UIActScratchCard/guaka_cq3"}
+},
+Len=3
+}
+return e 

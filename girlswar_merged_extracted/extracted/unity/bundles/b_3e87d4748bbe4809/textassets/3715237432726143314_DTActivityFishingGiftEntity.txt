@@ -1,0 +1,24 @@
+local e={id=0,goods=0,award={{},{}},tagNum=0}
+e.__index=e
+function e.New(o,a,n,i)
+local t={}
+setmetatable(t,e)
+t.id=o
+t.goods=a
+t.award=n
+t.tagNum=i
+return t
+end
+function e.NewFromArrItem(a)
+local t={}
+setmetatable(t,e)
+t.id=a[1]
+t.goods=a[2]
+t.award=a[3]
+t.tagNum=a[4]
+return t
+end
+function e.GetArr()
+return require('DataNode/DataTable/Create/activity/DTActivityFishingGiftEntityTableData')
+end
+return e 
