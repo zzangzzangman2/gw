@@ -582,3 +582,62 @@
   - click validation: `24 / 24 / 0 / 24`
 - Next UI blocker:
   - `MAININTERFACE_111_ROUTE_LABEL_RECT_OVERRIDE_REVALIDATION`
+
+## Update 2026-06-25 20:52 KST
+
+### Root Command Policy
+
+- Root folder was verified clean after latest work.
+- Root CMD count: `1`.
+- Only root launcher: `00_COMMAND_CENTER.cmd`.
+- Active executable tools are under `_restore_tools\`.
+- Archived old root shortcuts: `_restore_tools\root_cmd_archive\`.
+- `00_COMMAND_CENTER.cmd` now directly exposes:
+  - latest MainInterface UI validation: `_restore_tools\111_REVALIDATE_MAININTERFACE_ROUTE_LABEL_RECT_OVERRIDES.cmd`
+  - latest battle validation: `_restore_tools\BATTLE_31_ATTACH_LOADABLE_ACTOR_SPINE_ANIMATION_RUNTIME_PROBE.cmd`
+
+### MainInterface UI 111 Result
+
+- UI 111 did not claim the MainInterface capture is final or normal.
+- Visual status by manual capture review: still not a normal/original MainInterface; right route cluster remains visibly wrong.
+- Evidence-backed rect decision:
+  - removed two weak `text_name` size overrides for `UI_Main_wanfa_item_3/4`.
+  - original `text_name` size is preserved as `200x0`.
+  - kept two `Entry` zero-scale overrides because original `localScale=0,0,0` evidence is explicit.
+- Verification:
+  - active tool: `_restore_tools\111_REVALIDATE_MAININTERFACE_ROUTE_LABEL_RECT_OVERRIDES.cmd`
+  - report: `reports\maininterface\MAININTERFACE_ROUTE_LABEL_RECT_OVERRIDE_REVALIDATION_RESULT.md`
+  - JSON: `girlswar_maininterface_unity\Assets\RestoreData\maininterface_route_label_rect_override_revalidation.json`
+  - CSV: `girlswar_maininterface_unity\Assets\RestoreData\reports\maininterface_route_label_rect_override_revalidation.csv`
+  - capture: `girlswar_maininterface_unity\Assets\RestoreCaptures\maininterface_restored_1680x720.png`
+  - click validation: `24 / 24 / 0 / 24`
+- Next UI blocker:
+  - `MAININTERFACE_112_ROUTE_NON_IMAGE_RENDERER_EFFECT_RUNTIME_STATE_TRACE`
+
+### Battle BATTLE_31 Result
+
+- BATTLE_31 used `C:\Users\godho\Downloads\플레이.mp4` clip05 `485.0-487.0s` as the video motion gate.
+- Verdict: `failed_missing_spine_animation_runtime_class`.
+- This is not a final restored battle screen.
+- Runtime probe:
+  - bundle load success: `3`
+  - prefab instantiate success: `3`
+  - missing scripts: `3`
+  - skeleton-like assets: `12`
+  - animation candidate assets: `0`
+  - timeline candidate assets: `0`
+  - actor motion replayed: `False`
+- Manual capture review:
+  - static probe capture shows magenta actor meshes/silhouettes.
+  - this is shader/runtime class failure evidence, not an acceptable visual match.
+- Outputs:
+  - active tool: `_restore_tools\BATTLE_31_ATTACH_LOADABLE_ACTOR_SPINE_ANIMATION_RUNTIME_PROBE.cmd`
+  - report: `reports\battle\BATTLE_31_ACTOR_SPINE_ANIMATION_RUNTIME_PROBE_RESULT.md`
+  - JSON: `reports\battle\BATTLE_31_ACTOR_SPINE_ANIMATION_RUNTIME_PROBE_RESULT.json`
+  - Unity data: `girlswar_battle_unity\Assets\RestoreData\battle\BATTLE_31_ACTOR_SPINE_ANIMATION_RUNTIME_PROBE.json`
+  - component CSV: `girlswar_battle_unity\Assets\RestoreData\battle\BATTLE_31_ACTOR_SPINE_ANIMATION_RUNTIME_PROBE_COMPONENTS.csv`
+  - probe scene: `girlswar_battle_unity\Assets\Scenes\Battle31ActorSpineAnimationRuntimeProbe.unity`
+  - static capture: `girlswar_battle_unity\Assets\RestoreCaptures\battle_actor\Battle31ActorSpineAnimationRuntimeProbe_1920x1080.png`
+  - contact sheet: `reports\battle\BATTLE_31_ACTOR_SPINE_ANIMATION_RUNTIME_PROBE_CONTACT_SHEET.jpg`
+- Next battle blocker:
+  - `BATTLE_32_RESOLVE_BATTLE_ACTOR_SPINE_RUNTIME_CLASS_AND_IDLE_MOTION_REPLAY`

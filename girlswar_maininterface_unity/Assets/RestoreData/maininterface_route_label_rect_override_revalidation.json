@@ -1,0 +1,17 @@
+﻿{
+  "generatedAt": "2026-06-25 20:46:59",
+  "visualVerdict": "not_normal_after_revalidation",
+  "rowCount": 160,
+  "routeLabelRows": 6,
+  "removedTextSizeOverrides": 2,
+  "keptEntryScaleOverrides": 2,
+  "clickValidationExpected": "24 / 24 / 0 / 24",
+  "decisions": {
+    "keep_entry_zero_scale_override_original_evidence": 2,
+    "preserve_original_route_owner_transform": 5,
+    "preserve_original_tmp_rect": 5,
+    "remove_text_size_override_preserve_original_zero_height": 2,
+    "trace_only": 146
+  },
+  "csv": "Assets/RestoreData/reports/maininterface_route_label_rect_override_revalidation.csv"
+}

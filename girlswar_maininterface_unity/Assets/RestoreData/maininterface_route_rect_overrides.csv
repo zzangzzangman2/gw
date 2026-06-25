@@ -1,5 +1,3 @@
 rect_path_id,game_object_id,game_object_name,set_anchored_position,anchored_pos_x,anchored_pos_y,set_size_delta,size_delta_x,size_delta_y,set_local_scale,local_scale_x,local_scale_y,local_scale_z,reason
--3578904844754949875,-7326818543664987603,text_name,0,0.0,-35.19500732421875,1,200.0,35.0,0,1.0,1.0,1.0,route text_name active zero-height; sibling UI_Main_wanfa_item_1/2 text_name uses 35 height
--6275118336609310875,-9142860793671649322,text_name,0,0.0,-35.19500732421875,1,200.0,35.0,0,1.0,1.0,1.0,route text_name active zero-height; sibling UI_Main_wanfa_item_1/2 text_name uses 35 height
 -2663983105510939953,3838706915907260770,Entry,0,0.0,0.0,0,100.0,100.0,1,0.0,0.0,0.0,original route card Entry under UI_Main_wanfa_item_4 has localScale zero; preserve hidden runtime entry state instead of builder zero-scale fallback
 -249494615586118723,-6776336349606776388,Entry,0,0.0,0.0,0,100.0,100.0,1,0.0,0.0,0.0,original route card Entry under UI_Main_wanfa_item_3 has localScale zero; preserve hidden runtime entry state instead of builder zero-scale fallback
