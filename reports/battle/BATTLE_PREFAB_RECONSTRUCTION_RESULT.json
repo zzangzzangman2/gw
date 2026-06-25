@@ -1,0 +1,16 @@
+{
+  "unityBatchmodeSuccess": true,
+  "runtimeScene": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_battle_unity\\Assets\\Scenes\\BattleRuntimeStreamingReconstruction.unity",
+  "sceneExists": true,
+  "sceneBytes": 96081,
+  "manifest": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_battle_unity\\Assets\\RestoreData\\battle\\BATTLE_RUNTIME_STREAMING_MANIFEST.json",
+  "hierarchyJson": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_battle_unity\\Assets\\RestoreData\\battle\\BATTLE_PREFAB_HIERARCHY_DUMP.json",
+  "hierarchyCsv": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_battle_unity\\Assets\\RestoreData\\battle\\BATTLE_PREFAB_HIERARCHY_DUMP.csv",
+  "instantiatedPrefabCount": 3,
+  "missingPlaceholderCount": 9,
+  "hierarchyObjectCount": 3,
+  "componentCount": 12,
+  "rendererCount": 3,
+  "skeletonEvidenceCount": 9,
+  "nextBattle12Recommendation": "Connect battle Lua/IL2CPP flow to the runtime loader before skills/effects: actor and map streaming are now proven, so wiring ProcedureNormalBattle payload into the loader unlocks a playable battle shell faster."
+}

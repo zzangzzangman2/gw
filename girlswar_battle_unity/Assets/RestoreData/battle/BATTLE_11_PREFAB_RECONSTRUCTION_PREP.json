@@ -1,0 +1,16 @@
+{
+  "status": "ready",
+  "missing": [],
+  "inputs": [
+    "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_battle_unity\\Assets\\RestoreData\\battle\\BATTLE_ASSETBUNDLE_STREAMING_PROBE.json",
+    "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_battle_unity\\Assets\\RestoreData\\battle\\BATTLE_ASSETBUNDLE_LOAD_MAP.json",
+    "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_battle_unity\\Assets\\RestoreData\\battle\\BATTLE_ASSET_BACKED_PREVIEW_VISUALS.json"
+  ],
+  "outputs": {
+    "manifest": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_battle_unity\\Assets\\RestoreData\\battle\\BATTLE_RUNTIME_STREAMING_MANIFEST.json",
+    "hierarchyJson": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_battle_unity\\Assets\\RestoreData\\battle\\BATTLE_PREFAB_HIERARCHY_DUMP.json",
+    "hierarchyCsv": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_battle_unity\\Assets\\RestoreData\\battle\\BATTLE_PREFAB_HIERARCHY_DUMP.csv",
+    "scene": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_battle_unity\\Assets\\Scenes\\BattleRuntimeStreamingReconstruction.unity",
+    "report": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_PREFAB_RECONSTRUCTION_RESULT.md"
+  }
+}

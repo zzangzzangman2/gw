@@ -1,0 +1,46 @@
+{
+  "reference_video_used": true,
+  "visual_status": "failed_missing_runtime_binding",
+  "matches_clip05_static_hud_layout": false,
+  "debug_overlay_visible": false,
+  "black_or_blank_capture": false,
+  "default_white_ui_blocks_visible": true,
+  "large_white_bands_visible": true,
+  "placeholder_block_visible": true,
+  "camera_visible_hud": true,
+  "camera_visible_original_hud": false,
+  "topHudZonePresent": true,
+  "bottomHudZonePresent": true,
+  "rightHudZonePresent": true,
+  "topBottomRightZoneFalsePositive": true,
+  "activeGraphicCount": 268,
+  "resolvedSpriteCountFromB19": 223,
+  "visibleOriginalSpriteCount": 0,
+  "nextBlocker": "BATTLE_21_BATTLE_HUD_RUNTIME_BINDING_AND_SPRITE_PPTR_VISUAL_TRACE",
+  "captureStats": {
+    "exists": true,
+    "mean": 177.219,
+    "nonBlackRatio": 0.90401,
+    "nearWhiteRatio": 0.65896,
+    "size": [
+      1680,
+      720
+    ]
+  },
+  "unityBatchmodeSuccess": true,
+  "referenceContactSheet": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_20_PLAY_VIDEO_NORMAL_BATTLE_REFERENCE_486S.jpg",
+  "capture": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_battle_unity\\Assets\\RestoreCaptures\\battle_hud\\BattleHudVisualSanity_1680x720.png",
+  "contactSheet": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_20_HUD_VISUAL_SANITY_CONTACT_SHEET.jpg",
+  "unityResult": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_battle_unity\\Assets\\RestoreData\\battle\\BATTLE_HUD_VISUAL_SANITY_REBASE_TO_PLAY_VIDEO_RESULT.json",
+  "scene": "C:/Users/godho/Downloads/girlswar/girlswar_battle_unity/Assets\\..\\Assets/Scenes/BattleHudVisualSanity.unity",
+  "hudRootFound": true,
+  "activeHudRoots": 2,
+  "canvasCount": 12,
+  "hudCanvasCount": 12,
+  "captureVisualizationFixApplied": true,
+  "b19Reclassified": {
+    "debugTextCapture": "failed_debug_overlay",
+    "blackAfterSuppression": "failed_black_capture",
+    "previousCaptureVisualStatus": "debug_overlay_suppressed_hud_not_camera_visible_yet"
+  }
+}

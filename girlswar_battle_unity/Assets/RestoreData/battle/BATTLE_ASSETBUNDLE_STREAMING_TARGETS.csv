@@ -1,0 +1,5 @@
+﻿kind,id,label,bundle,absolutePath,fileExists,size,indexStatus,indexObjectCount
+actor,1002,our:1002,download/roleprefabsandres/battleprefabandres/1002.assetbundle,C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\extracted\unity\clean_unityfs_slices\download\roleprefabsandres\battleprefabandres\1002.assetbundle,True,639953,ok,22
+actor,1034,our:1034,download/roleprefabsandres/battleprefabandres/1034.assetbundle,C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\extracted\unity\clean_unityfs_slices\download\roleprefabsandres\battleprefabandres\1034.assetbundle,True,863994,ok,22
+actor,1100111,enemy:1100111,download/roleprefabsandres/battleprefabandres/3001.assetbundle,C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\extracted\unity\clean_unityfs_slices\download\roleprefabsandres\battleprefabandres\3001.assetbundle,True,193954,ok,21
+map,11001,mapId:11001,download/artsources/map/battlemap/map_11001/map_11001_1.assetbundle,C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\extracted\unity\clean_unityfs_slices\download\artsources\map\battlemap\map_11001\map_11001_1.assetbundle,True,912982,ok,12

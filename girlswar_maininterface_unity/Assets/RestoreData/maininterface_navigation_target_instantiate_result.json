@@ -1,0 +1,79 @@
+{
+    "generatedAt": "2026-06-25 17:48:40",
+    "scenePath": "Assets/Scenes/MainInterface_NavigationPrototype.unity",
+    "sourceScenePath": "Assets/Scenes/MainInterface_Wireframe.unity",
+    "activeClickableRows": 24,
+    "targetPrefabResolvedButtonRows": 6,
+    "uniqueTargetCandidates": 5,
+    "loadableTargetCount": 5,
+    "successCount": 5,
+    "failCount": 0,
+    "logOnlyOrUnknownButtonRows": 18,
+    "targets": [
+        {
+            "targetKey": "jump.OnGameJumpUIAdventure",
+            "targetUiForm": "UI_AdventureInterface",
+            "prefabBundle": "download/ui/uiprefabandres/adventure_ext_prefabs.assetbundle",
+            "prefabRootName": "UI_AdventureInterface",
+            "selectedBundlePath": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\extracted\\unity\\clean_unityfs_slices\\download\\ui\\uiprefabandres\\adventure_ext_prefabs.assetbundle",
+            "selectedAssetName": "assets/download/ui/uiprefabandres/adventure_ext_prefabs/ui_adventureinterface.prefab",
+            "success": true,
+            "instantiatedName": "UI_AdventureInterface_NavigationPrototype",
+            "targetRootChildCount": 1,
+            "instantiatedObjectCount": 239,
+            "reason": ""
+        },
+        {
+            "targetKey": "jump.OnGameJumpUIGuild",
+            "targetUiForm": "UI_GuildMainView",
+            "prefabBundle": "download/ui/uiprefabandres/guild_ext_prefabs.assetbundle",
+            "prefabRootName": "UI_GuildMain",
+            "selectedBundlePath": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\extracted\\unity\\clean_unityfs_slices\\download\\ui\\uiprefabandres\\guild_ext_prefabs.assetbundle",
+            "selectedAssetName": "assets/download/ui/uiprefabandres/guild_ext_prefabs/prefabs/ui_guildmain.prefab",
+            "success": true,
+            "instantiatedName": "UI_GuildMain_NavigationPrototype",
+            "targetRootChildCount": 1,
+            "instantiatedObjectCount": 2481,
+            "reason": ""
+        },
+        {
+            "targetKey": "jump.OnGameJumpUIJingjiRoot",
+            "targetUiForm": "UI_JingjiFrame_View",
+            "prefabBundle": "download/ui/uiprefabandres/jingjiframe_ext_prefabs.assetbundle",
+            "prefabRootName": "UI_JingjiFrame",
+            "selectedBundlePath": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\extracted\\unity\\clean_unityfs_slices\\download\\ui\\uiprefabandres\\jingjiframe_ext_prefabs.assetbundle",
+            "selectedAssetName": "assets/download/ui/uiprefabandres/jingjiframe_ext_prefabs/ui_jingjiframe.prefab",
+            "success": true,
+            "instantiatedName": "UI_JingjiFrame_NavigationPrototype",
+            "targetRootChildCount": 1,
+            "instantiatedObjectCount": 96,
+            "reason": ""
+        },
+        {
+            "targetKey": "ui.UI_SystemSet",
+            "targetUiForm": "UI_SystemSet",
+            "prefabBundle": "download/ui/uiprefabandres/maininterface.assetbundle",
+            "prefabRootName": "UI_SystemSettings",
+            "selectedBundlePath": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\extracted\\unity\\clean_unityfs_slices\\download\\ui\\uiprefabandres\\maininterface.assetbundle",
+            "selectedAssetName": "assets/download/ui/uiprefabandres/maininterface/prefabs/ui_systemsettings.prefab",
+            "success": true,
+            "instantiatedName": "UI_SystemSettings_NavigationPrototype",
+            "targetRootChildCount": 1,
+            "instantiatedObjectCount": 91,
+            "reason": ""
+        },
+        {
+            "targetKey": "event.CommonEventId.OnShowBgDownload",
+            "targetUiForm": "UI_PlayBgDownload",
+            "prefabBundle": "download/ui/uiprefabandres/playdownload.assetbundle",
+            "prefabRootName": "UI_PlayBgDownload",
+            "selectedBundlePath": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\extracted\\unity\\clean_unityfs_slices\\download\\ui\\uiprefabandres\\playdownload.assetbundle",
+            "selectedAssetName": "assets/download/ui/uiprefabandres/playdownload/prefabs/ui_playbgdownload.prefab",
+            "success": true,
+            "instantiatedName": "UI_PlayBgDownload_NavigationPrototype",
+            "targetRootChildCount": 1,
+            "instantiatedObjectCount": 32,
+            "reason": ""
+        }
+    ]
+}

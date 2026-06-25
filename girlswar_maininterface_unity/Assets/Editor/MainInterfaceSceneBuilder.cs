@@ -19,6 +19,7 @@ namespace GirlsWarRestore
         private const string RectCsv = "Assets/RestoreData/maininterface_rects.csv";
         private const string ButtonCsv = "Assets/RestoreData/maininterface_buttons.csv";
         private const string HandlerCsv = "Assets/RestoreData/reports/maininterface_button_lua_handler_join.csv";
+        private const string NavigationMapCsv = "Assets/RestoreData/reports/maininterface_button_navigation_map.csv";
         private const string SpriteCsv = "Assets/RestoreData/maininterface_sprite_map.csv";
         private const string TextCsv = "Assets/RestoreData/maininterface_text_components.csv";
         private const string TmpTextDetailsCsv = "Assets/RestoreData/maininterface_text_tmp_details.csv";
@@ -70,6 +71,17 @@ namespace GirlsWarRestore
             public string handler;
             public string confidence;
             public string eventName;
+        }
+
+        private sealed class ButtonNavigationRow
+        {
+            public string componentPathId;
+            public string handler;
+            public string kind;
+            public string targetKey;
+            public string targetUiForm;
+            public string targetPrefabBundle;
+            public string confidence;
         }
 
         private sealed class SpriteRow
@@ -190,6 +202,8 @@ namespace GirlsWarRestore
             public string targetKind;
             public string componentPathId;
             public string gameObjectId;
+            public string parentGameObjectId;
+            public string createChildName;
             public string name;
             public string spriteAssetPath;
             public bool hasColor;
@@ -200,6 +214,12 @@ namespace GirlsWarRestore
             public int imageType;
             public bool hasRaycastTarget;
             public bool raycastTarget;
+            public bool hasAnchoredPosition;
+            public Vector2 anchoredPosition;
+            public bool hasSizeDelta;
+            public Vector2 sizeDelta;
+            public bool hasLocalScale;
+            public Vector3 localScale;
             public string reason;
         }
 
@@ -309,7 +329,8 @@ namespace GirlsWarRestore
                 AddLabels(rows, byRectId);
             var buttons = LoadButtons(ButtonCsv);
             var buttonHandlers = LoadButtonHandlers(HandlerCsv);
-            var appliedButtons = AddButtonLoggers(buttons, buttonHandlers, byGameObjectId, overrides);
+            var buttonNavigation = LoadButtonNavigation(NavigationMapCsv);
+            var appliedButtons = AddButtonLoggers(buttons, buttonHandlers, buttonNavigation, byGameObjectId, overrides);
             var graphicRaycastOverrides = ApplyGraphicRaycastOverrides(sprites, byGameObjectId, overrides);
             var appliedRaycastProbes = AddRaycastProbeLoggers(sprites, buttons, byGameObjectId);
 
@@ -634,10 +655,32 @@ namespace GirlsWarRestore
             var applied = 0;
             foreach (var row in rows)
             {
-                if (string.IsNullOrWhiteSpace(row.gameObjectId))
+                RectTransform rt = null;
+                if (!string.IsNullOrWhiteSpace(row.gameObjectId))
+                    byGameObjectId.TryGetValue(row.gameObjectId, out rt);
+                if (rt == null && !string.IsNullOrWhiteSpace(row.parentGameObjectId) && !string.IsNullOrWhiteSpace(row.createChildName))
+                {
+                    if (!byGameObjectId.TryGetValue(row.parentGameObjectId, out var parent))
+                        continue;
+                    var child = new GameObject(SafeName(row.createChildName), typeof(RectTransform), typeof(Image));
+                    rt = child.GetComponent<RectTransform>();
+                    rt.SetParent(parent, false);
+                    rt.anchorMin = new Vector2(0.5f, 0.5f);
+                    rt.anchorMax = new Vector2(0.5f, 0.5f);
+                    rt.pivot = new Vector2(0.5f, 0.5f);
+                    rt.anchoredPosition = Vector2.zero;
+                    rt.sizeDelta = parent.sizeDelta;
+                    rt.localScale = Vector3.one;
+                }
+                if (rt == null)
                     continue;
-                if (!byGameObjectId.TryGetValue(row.gameObjectId, out var rt))
-                    continue;
+
+                if (row.hasAnchoredPosition)
+                    rt.anchoredPosition = row.anchoredPosition;
+                if (row.hasSizeDelta)
+                    rt.sizeDelta = row.sizeDelta;
+                if (row.hasLocalScale)
+                    rt.localScale = row.localScale;
 
                 var image = rt.GetComponent<Image>();
                 if (image == null)
@@ -1287,6 +1330,7 @@ namespace GirlsWarRestore
         private static int AddButtonLoggers(
             List<ButtonRow> buttons,
             Dictionary<string, ButtonHandlerRow> buttonHandlers,
+            Dictionary<string, ButtonNavigationRow> buttonNavigation,
             Dictionary<string, RectTransform> byGameObjectId,
             OverrideSet overrides)
         {
@@ -1357,6 +1401,26 @@ namespace GirlsWarRestore
                     logger.luaHandler = "";
                     logger.luaHandlerConfidence = "missing_report_row";
                     logger.luaHandlerEvent = "";
+                }
+                if (buttonNavigation.TryGetValue(row.componentPathId, out var navigationRow))
+                {
+                    logger.navigationKind = navigationRow.kind;
+                    logger.navigationTargetKey = navigationRow.targetKey;
+                    logger.navigationTargetUiForm = navigationRow.targetUiForm;
+                    logger.navigationTargetPrefabBundle = navigationRow.targetPrefabBundle;
+                    logger.navigationConfidence = navigationRow.confidence;
+                    logger.navigationHarnessConnected = true;
+                    if (!string.IsNullOrWhiteSpace(navigationRow.handler))
+                        logger.luaHandler = navigationRow.handler;
+                }
+                else
+                {
+                    logger.navigationKind = "";
+                    logger.navigationTargetKey = "";
+                    logger.navigationTargetUiForm = "";
+                    logger.navigationTargetPrefabBundle = "";
+                    logger.navigationConfidence = "missing_navigation_map";
+                    logger.navigationHarnessConnected = false;
                 }
                 logger.logPointerClicks = false;
 
@@ -1531,6 +1595,32 @@ namespace GirlsWarRestore
                     handler = Get(record, "handler"),
                     confidence = Get(record, "handler_confidence"),
                     eventName = Get(record, "handler_event")
+                };
+            }
+            return result;
+        }
+
+        private static Dictionary<string, ButtonNavigationRow> LoadButtonNavigation(string path)
+        {
+            var result = new Dictionary<string, ButtonNavigationRow>();
+            if (!File.Exists(path))
+                return result;
+            var text = File.ReadAllText(path, Encoding.UTF8);
+            var table = ParseCsv(text);
+            foreach (var record in table)
+            {
+                var componentPathId = Get(record, "component_path_id");
+                if (string.IsNullOrWhiteSpace(componentPathId))
+                    continue;
+                result[componentPathId] = new ButtonNavigationRow
+                {
+                    componentPathId = componentPathId,
+                    handler = Get(record, "lua_handler_resolved"),
+                    kind = Get(record, "navigation_kind"),
+                    targetKey = Get(record, "target_key"),
+                    targetUiForm = Get(record, "target_ui_form"),
+                    targetPrefabBundle = Get(record, "target_prefab_bundle"),
+                    confidence = Get(record, "resolved_confidence")
                 };
             }
             return result;
@@ -1736,6 +1826,8 @@ namespace GirlsWarRestore
                     targetKind = Get(record, "target_kind"),
                     componentPathId = Get(record, "component_path_id"),
                     gameObjectId = Get(record, "game_object_id"),
+                    parentGameObjectId = Get(record, "parent_game_object_id"),
+                    createChildName = Get(record, "create_child_name"),
                     name = Get(record, "game_object_name"),
                     spriteAssetPath = Get(record, "sprite_asset_path"),
                     hasColor = hasColor,
@@ -1750,6 +1842,19 @@ namespace GirlsWarRestore
                     imageType = string.IsNullOrWhiteSpace(imageType) ? 0 : (int)F(imageType),
                     hasRaycastTarget = !string.IsNullOrWhiteSpace(raycastTarget),
                     raycastTarget = B(raycastTarget),
+                    hasAnchoredPosition = !string.IsNullOrWhiteSpace(Get(record, "anchored_pos_x"))
+                        || !string.IsNullOrWhiteSpace(Get(record, "anchored_pos_y")),
+                    anchoredPosition = new Vector2(F(Get(record, "anchored_pos_x")), F(Get(record, "anchored_pos_y"))),
+                    hasSizeDelta = !string.IsNullOrWhiteSpace(Get(record, "size_delta_x"))
+                        || !string.IsNullOrWhiteSpace(Get(record, "size_delta_y")),
+                    sizeDelta = new Vector2(F(Get(record, "size_delta_x")), F(Get(record, "size_delta_y"))),
+                    hasLocalScale = !string.IsNullOrWhiteSpace(Get(record, "local_scale_x"))
+                        || !string.IsNullOrWhiteSpace(Get(record, "local_scale_y"))
+                        || !string.IsNullOrWhiteSpace(Get(record, "local_scale_z")),
+                    localScale = new Vector3(
+                        string.IsNullOrWhiteSpace(Get(record, "local_scale_x")) ? 1f : F(Get(record, "local_scale_x")),
+                        string.IsNullOrWhiteSpace(Get(record, "local_scale_y")) ? 1f : F(Get(record, "local_scale_y")),
+                        string.IsNullOrWhiteSpace(Get(record, "local_scale_z")) ? 1f : F(Get(record, "local_scale_z"))),
                     reason = Get(record, "reason")
                 });
             }

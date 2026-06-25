@@ -1,0 +1,228 @@
+{
+  "status": "battle_hud_sprite_region_font_join_manifest_ready",
+  "sourceTypeResult": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_battle_unity\\Assets\\RestoreData\\battle\\BATTLE_UI_COMPONENT_TYPE_RECONSTRUCTION_RESULT.json",
+  "attachments": [
+    {
+      "id": "hud_attach_01",
+      "order": 1,
+      "role": "battle_root_hud",
+      "attachMode": "active_evidence_root",
+      "reason": "primary normal battle HUD root candidate",
+      "bundle": "download/ui/uiprefabandres/battle_ext_prefabs.assetbundle",
+      "absolutePath": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\extracted\\unity\\clean_unityfs_slices\\download\\ui\\uiprefabandres\\battle_ext_prefabs.assetbundle",
+      "prefabAsset": "assets/download/ui/uiprefabandres/battle_ext_prefabs/prefabs/ui_normalbattle.prefab",
+      "sourceKind": "battle_hud_prefab_ext",
+      "bundlePrefabRootCount": 11,
+      "bundleRectTransformCount": 842,
+      "bundleCanvasCount": 17,
+      "bundleMissingScriptCount": 894
+    },
+    {
+      "id": "hud_attach_02",
+      "order": 2,
+      "role": "battle_3d_overlay_hud",
+      "attachMode": "active_evidence_root",
+      "reason": "ProcedureNormalBattle references mBattleUI3D / battle UI 3D flow",
+      "bundle": "download/ui/uiprefabandres/battle_ext_prefabs.assetbundle",
+      "absolutePath": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\extracted\\unity\\clean_unityfs_slices\\download\\ui\\uiprefabandres\\battle_ext_prefabs.assetbundle",
+      "prefabAsset": "assets/download/ui/uiprefabandres/battle_ext_prefabs/prefabs/ui_battle3dui.prefab",
+      "sourceKind": "battle_hud_prefab_ext",
+      "bundlePrefabRootCount": 11,
+      "bundleRectTransformCount": 842,
+      "bundleCanvasCount": 17,
+      "bundleMissingScriptCount": 894
+    },
+    {
+      "id": "hud_attach_03",
+      "order": 3,
+      "role": "actor_heroitem_template",
+      "attachMode": "template_inactive",
+      "reason": "actor HP/name/slot template candidate; inactive to avoid fake repeated HUD",
+      "bundle": "download/ui/uiprefabandres/battle_ext_prefabs.assetbundle",
+      "absolutePath": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\extracted\\unity\\clean_unityfs_slices\\download\\ui\\uiprefabandres\\battle_ext_prefabs.assetbundle",
+      "prefabAsset": "assets/download/ui/uiprefabandres/battle_ext_prefabs/prefabs/ui_normalbattle_heroitem.prefab",
+      "sourceKind": "battle_hud_prefab_ext",
+      "bundlePrefabRootCount": 11,
+      "bundleRectTransformCount": 842,
+      "bundleCanvasCount": 17,
+      "bundleMissingScriptCount": 894
+    },
+    {
+      "id": "hud_attach_04",
+      "order": 4,
+      "role": "buff_icon_left_template",
+      "attachMode": "template_inactive",
+      "reason": "buff/debuff icon template candidate",
+      "bundle": "download/ui/uiprefabandres/battle_ext_prefabs.assetbundle",
+      "absolutePath": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\extracted\\unity\\clean_unityfs_slices\\download\\ui\\uiprefabandres\\battle_ext_prefabs.assetbundle",
+      "prefabAsset": "assets/download/ui/uiprefabandres/battle_ext_prefabs/prefabs/item_buff_left.prefab",
+      "sourceKind": "battle_hud_prefab_ext",
+      "bundlePrefabRootCount": 11,
+      "bundleRectTransformCount": 842,
+      "bundleCanvasCount": 17,
+      "bundleMissingScriptCount": 894
+    },
+    {
+      "id": "hud_attach_05",
+      "order": 5,
+      "role": "buff_icon_right_template",
+      "attachMode": "template_inactive",
+      "reason": "buff/debuff icon template candidate",
+      "bundle": "download/ui/uiprefabandres/battle_ext_prefabs.assetbundle",
+      "absolutePath": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\extracted\\unity\\clean_unityfs_slices\\download\\ui\\uiprefabandres\\battle_ext_prefabs.assetbundle",
+      "prefabAsset": "assets/download/ui/uiprefabandres/battle_ext_prefabs/prefabs/item_buff_right.prefab",
+      "sourceKind": "battle_hud_prefab_ext",
+      "bundlePrefabRootCount": 11,
+      "bundleRectTransformCount": 842,
+      "bundleCanvasCount": 17,
+      "bundleMissingScriptCount": 894
+    },
+    {
+      "id": "hud_attach_06",
+      "order": 6,
+      "role": "pause_panel_entry",
+      "attachMode": "entry_inactive",
+      "reason": "pause/settings entry root; not final overlay",
+      "bundle": "download/ui/uiprefabandres/battle_ext_prefabs.assetbundle",
+      "absolutePath": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\extracted\\unity\\clean_unityfs_slices\\download\\ui\\uiprefabandres\\battle_ext_prefabs.assetbundle",
+      "prefabAsset": "assets/download/ui/uiprefabandres/battle_ext_prefabs/prefabs/ui_normalbattle_pause.prefab",
+      "sourceKind": "battle_hud_prefab_ext",
+      "bundlePrefabRootCount": 11,
+      "bundleRectTransformCount": 842,
+      "bundleCanvasCount": 17,
+      "bundleMissingScriptCount": 894
+    },
+    {
+      "id": "hud_attach_07",
+      "order": 7,
+      "role": "skip_panel_entry",
+      "attachMode": "entry_inactive",
+      "reason": "skip entry root; not final overlay",
+      "bundle": "download/ui/uiprefabandres/battle_ext_prefabs.assetbundle",
+      "absolutePath": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\extracted\\unity\\clean_unityfs_slices\\download\\ui\\uiprefabandres\\battle_ext_prefabs.assetbundle",
+      "prefabAsset": "assets/download/ui/uiprefabandres/battle_ext_prefabs/prefabs/ui_normalbattle_skipview.prefab",
+      "sourceKind": "battle_hud_prefab_ext",
+      "bundlePrefabRootCount": 11,
+      "bundleRectTransformCount": 842,
+      "bundleCanvasCount": 17,
+      "bundleMissingScriptCount": 894
+    },
+    {
+      "id": "hud_attach_08",
+      "order": 8,
+      "role": "test_battle_ui_entry",
+      "attachMode": "entry_inactive",
+      "reason": "OpenTestBattleUI evidence; kept inactive/non-final",
+      "bundle": "download/ui/uiprefabandres/battle_ext_prefabs.assetbundle",
+      "absolutePath": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\extracted\\unity\\clean_unityfs_slices\\download\\ui\\uiprefabandres\\battle_ext_prefabs.assetbundle",
+      "prefabAsset": "assets/download/ui/uiprefabandres/battle_ext_prefabs/prefabs/ui_testbattle.prefab",
+      "sourceKind": "battle_hud_prefab_ext",
+      "bundlePrefabRootCount": 11,
+      "bundleRectTransformCount": 842,
+      "bundleCanvasCount": 17,
+      "bundleMissingScriptCount": 894
+    },
+    {
+      "id": "hud_attach_09",
+      "order": 9,
+      "role": "winlose_entry_victory_spine_base",
+      "attachMode": "entry_inactive",
+      "reason": "win/lose result entry-point marker only",
+      "bundle": "download/ui/uiprefabandres/winlose_ext_prefabs.assetbundle",
+      "absolutePath": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\extracted\\unity\\clean_unityfs_slices\\download\\ui\\uiprefabandres\\winlose_ext_prefabs.assetbundle",
+      "prefabAsset": "assets/download/ui/uiprefabandres/winlose_ext_prefabs/victory_spine_base.prefab",
+      "sourceKind": "battle_result_prefab_ext",
+      "bundlePrefabRootCount": 2,
+      "bundleRectTransformCount": 78,
+      "bundleCanvasCount": 0,
+      "bundleMissingScriptCount": 85
+    },
+    {
+      "id": "hud_attach_10",
+      "order": 10,
+      "role": "winlose_entry_victory_spine_base2",
+      "attachMode": "entry_inactive",
+      "reason": "win/lose result entry-point marker only",
+      "bundle": "download/ui/uiprefabandres/winlose_ext_prefabs.assetbundle",
+      "absolutePath": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\extracted\\unity\\clean_unityfs_slices\\download\\ui\\uiprefabandres\\winlose_ext_prefabs.assetbundle",
+      "prefabAsset": "assets/download/ui/uiprefabandres/winlose_ext_prefabs/victory_spine_base2.prefab",
+      "sourceKind": "battle_result_prefab_ext",
+      "bundlePrefabRootCount": 2,
+      "bundleRectTransformCount": 78,
+      "bundleCanvasCount": 0,
+      "bundleMissingScriptCount": 85
+    }
+  ],
+  "spriteBundles": [
+    {
+      "bundle": "download/artsources/uispriteres/uibattle.assetbundle",
+      "absolutePath": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\extracted\\unity\\clean_unityfs_slices\\download\\artsources\\uispriteres\\uibattle.assetbundle",
+      "exists": true
+    },
+    {
+      "bundle": "download/artsources/uispriteres/uibufficon.assetbundle",
+      "absolutePath": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\extracted\\unity\\clean_unityfs_slices\\download\\artsources\\uispriteres\\uibufficon.assetbundle",
+      "exists": true
+    },
+    {
+      "bundle": "download/artsources/uispriteres/uihurtnum.assetbundle",
+      "absolutePath": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\extracted\\unity\\clean_unityfs_slices\\download\\artsources\\uispriteres\\uihurtnum.assetbundle",
+      "exists": true
+    },
+    {
+      "bundle": "download/artsources/uispriteres/uiheroheadbattle.assetbundle",
+      "absolutePath": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\extracted\\unity\\clean_unityfs_slices\\download\\artsources\\uispriteres\\uiheroheadbattle.assetbundle",
+      "exists": true
+    },
+    {
+      "bundle": "download/artsources/uispriteres/uiminebattle.assetbundle",
+      "absolutePath": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\extracted\\unity\\clean_unityfs_slices\\download\\artsources\\uispriteres\\uiminebattle.assetbundle",
+      "exists": true
+    },
+    {
+      "bundle": "download/artsources/uispriteres/autohelper.assetbundle",
+      "absolutePath": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\extracted\\unity\\clean_unityfs_slices\\download\\artsources\\uispriteres\\autohelper.assetbundle",
+      "exists": true
+    },
+    {
+      "bundle": "download/ui/uiprefabandres/battle.assetbundle",
+      "absolutePath": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\extracted\\unity\\clean_unityfs_slices\\download\\ui\\uiprefabandres\\battle.assetbundle",
+      "exists": true
+    },
+    {
+      "bundle": "download/ui/uiprefabandres/battle_ext_prefabs.assetbundle",
+      "absolutePath": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\extracted\\unity\\clean_unityfs_slices\\download\\ui\\uiprefabandres\\battle_ext_prefabs.assetbundle",
+      "exists": true
+    },
+    {
+      "bundle": "download/ui/uiprefabandres/autohelper_ext_3.assetbundle",
+      "absolutePath": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\extracted\\unity\\clean_unityfs_slices\\download\\ui\\uiprefabandres\\autohelper_ext_3.assetbundle",
+      "exists": true
+    }
+  ],
+  "scene": "Assets/Scenes/BattleRuntimeFlowWithHudSpriteFontJoin.unity",
+  "capture": "Assets/RestoreCaptures/battle_hud/BattleRuntimeFlowWithHudSpriteFontJoin_1680x720.png",
+  "videoReference": {
+    "motionReport": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\video_reference\\PLAY_REFERENCE_VIDEO_MOTION_ANALYSIS.md",
+    "restoreNotes": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\video_reference\\PLAY_REFERENCE_RESTORE_NOTES.md",
+    "topCenterOverlayPolicy": "recording_touch_artifact_not_final_hud"
+  },
+  "typeProbeBefore": {
+    "attachedRootCount": 10,
+    "beforeMissingScriptCount": 889,
+    "afterMissingScriptCount": 16,
+    "missingScriptReduction": 873,
+    "canvasCount": 12,
+    "rectTransformCount": 814,
+    "imageCount": 411,
+    "textCount": 68,
+    "buttonCount": 26,
+    "officialUiResolvedCount": 510,
+    "proxyResolvedCount": 370,
+    "buttonValidationCount": 26,
+    "buttonInteractableCount": 26,
+    "raycastReadyButtonCount": 25,
+    "buttonWithoutTargetGraphicCount": 0,
+    "clickValidation": "validated:component_only_raycast_ready_25_of_26"
+  }
+}

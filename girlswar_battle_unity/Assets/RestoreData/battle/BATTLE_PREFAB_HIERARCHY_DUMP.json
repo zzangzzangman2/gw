@@ -1,0 +1,21 @@
+﻿{
+  "status": "hierarchy_dump",
+  "objectCount": 3,
+  "componentCount": 12,
+  "skeletonEvidence": [
+    "assets/download/roleprefabsandres/battleprefabandres/1002/1002.atlas.txt",
+    "assets/download/roleprefabsandres/battleprefabandres/1002/1002.skel.bytes",
+    "assets/download/roleprefabsandres/battleprefabandres/1002/1002_skeletondata.asset",
+    "assets/download/roleprefabsandres/battleprefabandres/1034/1034.atlas.txt",
+    "assets/download/roleprefabsandres/battleprefabandres/1034/1034.skel.bytes",
+    "assets/download/roleprefabsandres/battleprefabandres/1034/1034_skeletondata.asset",
+    "assets/download/roleprefabsandres/battleprefabandres/3001/3001.atlas.txt",
+    "assets/download/roleprefabsandres/battleprefabandres/3001/3001.skel.bytes",
+    "assets/download/roleprefabsandres/battleprefabandres/3001/3001_skeletondata.asset"
+  ],
+  "objects": [
+    {"bundleId":"1002","assetName":"assets/download/roleprefabsandres/battleprefabandres/1002/hero_1002.prefab","hierarchyPath":"Reconstructed_our_1002","componentCount":4,"componentTypes":"Transform;MeshFilter;MeshRenderer;MissingScript","rendererType":"MeshRenderer","materialNames":"1002_Material","textureNames":"1002"},
+    {"bundleId":"1034","assetName":"assets/download/roleprefabsandres/battleprefabandres/1034/hero_1034.prefab","hierarchyPath":"Reconstructed_our_1034","componentCount":4,"componentTypes":"Transform;MeshFilter;MeshRenderer;MissingScript","rendererType":"MeshRenderer","materialNames":"1034_Material;1034_Material-Screen","textureNames":"1034;1034"},
+    {"bundleId":"1100111","assetName":"assets/download/roleprefabsandres/battleprefabandres/3001/hero_3001.prefab","hierarchyPath":"Reconstructed_enemy_1100111","componentCount":4,"componentTypes":"Transform;MeshFilter;MeshRenderer;MissingScript","rendererType":"MeshRenderer","materialNames":"3001_Material","textureNames":"3001"}
+  ]
+}

@@ -1,0 +1,112 @@
+{
+  "stubProxyActions": [
+    {
+      "assemblyName": "spine-unity.dll",
+      "fullName": "Spine.Unity.SkeletonSubmeshGraphic",
+      "likelyRole": "effect/animation",
+      "refCount": 151
+    },
+    {
+      "assemblyName": "Assembly-CSharp.dll",
+      "fullName": "YouYou.YouYouImage",
+      "likelyRole": "visual image/raycast",
+      "refCount": 147
+    },
+    {
+      "assemblyName": "Assembly-CSharp.dll",
+      "fullName": "LuaComponentBinder.LuaComBinder",
+      "likelyRole": "lua binder/controller",
+      "refCount": 34
+    },
+    {
+      "assemblyName": "Assembly-CSharp.dll",
+      "fullName": "YouYou.YouYouCanvasHelper",
+      "likelyRole": "unknown/controller",
+      "refCount": 18
+    },
+    {
+      "assemblyName": "spine-unity.dll",
+      "fullName": "Spine.Unity.SkeletonGraphic",
+      "likelyRole": "effect/animation",
+      "refCount": 17
+    },
+    {
+      "assemblyName": "Assembly-CSharp.dll",
+      "fullName": "YouYou.UISpineCtr",
+      "likelyRole": "effect/animation",
+      "refCount": 15
+    },
+    {
+      "assemblyName": "Assembly-CSharp.dll",
+      "fullName": "YouYou.FullscreenCenter",
+      "likelyRole": "unknown/controller",
+      "refCount": 9
+    },
+    {
+      "assemblyName": "Assembly-CSharp.dll",
+      "fullName": "UnityEngine.UI.Empty4Raycast",
+      "likelyRole": "visual image/raycast",
+      "refCount": 7
+    },
+    {
+      "assemblyName": "Coffee.UIParticle.dll",
+      "fullName": "Coffee.UIExtensions.UIParticle",
+      "likelyRole": "effect/animation",
+      "refCount": 7
+    },
+    {
+      "assemblyName": "Assembly-CSharp.dll",
+      "fullName": "YouYou.LuaForm",
+      "likelyRole": "lua binder/controller",
+      "refCount": 5
+    },
+    {
+      "assemblyName": "Assembly-CSharp.dll",
+      "fullName": "YouYou.LuaUnit",
+      "likelyRole": "lua binder/controller",
+      "refCount": 5
+    },
+    {
+      "assemblyName": "Assembly-CSharp-firstpass.dll",
+      "fullName": "DG.Tweening.DOTweenAnimation",
+      "likelyRole": "effect/animation",
+      "refCount": 4
+    },
+    {
+      "assemblyName": "Assembly-CSharp.dll",
+      "fullName": "YouYou.EffectScale",
+      "likelyRole": "unknown/controller",
+      "refCount": 2
+    },
+    {
+      "assemblyName": "Assembly-CSharp.dll",
+      "fullName": "YouYou.LookRotation",
+      "likelyRole": "unknown/controller",
+      "refCount": 2
+    },
+    {
+      "assemblyName": "Assembly-CSharp.dll",
+      "fullName": "YouYou.UIEventListener",
+      "likelyRole": "button/click",
+      "refCount": 2
+    },
+    {
+      "assemblyName": "Assembly-CSharp.dll",
+      "fullName": "SuperScrollView.LoopListView2",
+      "likelyRole": "unknown/controller",
+      "refCount": 1
+    },
+    {
+      "assemblyName": "Assembly-CSharp.dll",
+      "fullName": "YouYou.ClickBase",
+      "likelyRole": "button/click",
+      "refCount": 1
+    },
+    {
+      "assemblyName": "Assembly-CSharp.dll",
+      "fullName": "YouYou.GuideNode",
+      "likelyRole": "unknown/controller",
+      "refCount": 1
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "skillIdsCount": 20,
+  "bundleCandidateCount": 7,
+  "loadSuccess": 4,
+  "loadFail": 3,
+  "prefabCandidateCount": 68,
+  "timelineCandidateCount": 16,
+  "instantiatedMarkerCount": 4,
+  "scene": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_battle_unity\\Assets\\Scenes\\BattleSkillEffectStreamingProbe.unity",
+  "sceneExists": true,
+  "unityBatchmodeSuccess": true,
+  "json": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_battle_unity\\Assets\\RestoreData\\battle\\BATTLE_SKILL_EFFECT_STREAMING_PROBE.json",
+  "report": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_SKILL_EFFECT_STREAMING_PROBE_RESULT.md",
+  "nextBattle14Recommendation": "loadable skill effect를 flow scene에 attach"
+}

@@ -1,0 +1,33 @@
+﻿assemblyName,namespace,className,fullName,likelyRole,monoBehaviourRefCount,scriptPathIds,bundles,il2cppEvidenceCount,luaEvidenceCount
+UnityEngine.UI.dll,UnityEngine.UI,Image,UnityEngine.UI.Image,visual image/raycast,306,-7030229213176759517;-7030229213176759517,download/ui/uiprefabandres/battle_ext_prefabs.assetbundle;download/ui/uiprefabandres/winlose_ext_prefabs.assetbundle,2,2
+spine-unity.dll,Spine.Unity,SkeletonSubmeshGraphic,Spine.Unity.SkeletonSubmeshGraphic,effect/animation,151,5804373309048859138;5804373309048859138,download/ui/uiprefabandres/battle_ext_prefabs.assetbundle;download/ui/uiprefabandres/winlose_ext_prefabs.assetbundle,0,0
+Assembly-CSharp.dll,YouYou,YouYouImage,YouYou.YouYouImage,visual image/raycast,147,1242602534869556086;1242602534869556086,download/ui/uiprefabandres/battle_ext_prefabs.assetbundle;download/ui/uiprefabandres/winlose_ext_prefabs.assetbundle,1,2
+Unity.TextMeshPro.dll,TMPro,TextMeshProUGUI,TMPro.TextMeshProUGUI,text/font,69,-5755350681981302373,download/ui/uiprefabandres/battle_ext_prefabs.assetbundle,0,2
+UnityEngine.UI.dll,UnityEngine.UI,ContentSizeFitter,UnityEngine.UI.ContentSizeFitter,layout/mask,45,-5392852106782294089,download/ui/uiprefabandres/battle_ext_prefabs.assetbundle,1,2
+Assembly-CSharp.dll,LuaComponentBinder,LuaComBinder,LuaComponentBinder.LuaComBinder,lua binder/controller,34,1924290018182821150,download/ui/uiprefabandres/battle_ext_prefabs.assetbundle,1,2
+UnityEngine.UI.dll,UnityEngine.UI,Button,UnityEngine.UI.Button,button/click,33,-787143586316466668,download/ui/uiprefabandres/battle_ext_prefabs.assetbundle,0,2
+Assembly-CSharp.dll,YouYou,YouYouCanvasHelper,YouYou.YouYouCanvasHelper,unknown/controller,18,2150366434557054024,download/ui/uiprefabandres/battle_ext_prefabs.assetbundle,0,0
+spine-unity.dll,Spine.Unity,SkeletonGraphic,Spine.Unity.SkeletonGraphic,effect/animation,17,-6938409698251234290;-6938409698251234290,download/ui/uiprefabandres/battle_ext_prefabs.assetbundle;download/ui/uiprefabandres/winlose_ext_prefabs.assetbundle,0,0
+Assembly-CSharp.dll,YouYou,UISpineCtr,YouYou.UISpineCtr,effect/animation,15,-8877758280253173385;-8877758280253173385,download/ui/uiprefabandres/battle_ext_prefabs.assetbundle;download/ui/uiprefabandres/winlose_ext_prefabs.assetbundle,2,2
+UnityEngine.UI.dll,UnityEngine.UI,HorizontalLayoutGroup,UnityEngine.UI.HorizontalLayoutGroup,layout/mask,15,-8091456346061954500,download/ui/uiprefabandres/battle_ext_prefabs.assetbundle,1,2
+UnityEngine.UI.dll,UnityEngine.UI,ScrollRect,UnityEngine.UI.ScrollRect,layout/mask,15,-8826248144273319766,download/ui/uiprefabandres/battle_ext_prefabs.assetbundle,1,2
+UnityEngine.UI.dll,UnityEngine.UI,GraphicRaycaster,UnityEngine.UI.GraphicRaycaster,canvas/raycast,14,8390977652835490180,download/ui/uiprefabandres/battle_ext_prefabs.assetbundle,0,0
+UnityEngine.UI.dll,UnityEngine.UI,GridLayoutGroup,UnityEngine.UI.GridLayoutGroup,layout/mask,14,6236441469479178695,download/ui/uiprefabandres/battle_ext_prefabs.assetbundle,1,1
+UnityEngine.UI.dll,UnityEngine.UI,RectMask2D,UnityEngine.UI.RectMask2D,layout/mask,14,4452942400327435936,download/ui/uiprefabandres/battle_ext_prefabs.assetbundle,0,0
+UnityEngine.UI.dll,UnityEngine.UI,Text,UnityEngine.UI.Text,text/font,10,-7978266203517415465,download/ui/uiprefabandres/battle_ext_prefabs.assetbundle,2,2
+Assembly-CSharp.dll,YouYou,FullscreenCenter,YouYou.FullscreenCenter,unknown/controller,9,9044316936709120141;9044316936709120141,download/ui/uiprefabandres/battle_ext_prefabs.assetbundle;download/ui/uiprefabandres/winlose_ext_prefabs.assetbundle,1,0
+UnityEngine.UI.dll,UnityEngine.UI,Mask,UnityEngine.UI.Mask,layout/mask,8,-7784299604066853536,download/ui/uiprefabandres/battle_ext_prefabs.assetbundle,0,2
+Assembly-CSharp.dll,UnityEngine.UI,Empty4Raycast,UnityEngine.UI.Empty4Raycast,visual image/raycast,7,-2324043793906593294,download/ui/uiprefabandres/battle_ext_prefabs.assetbundle,1,0
+Coffee.UIParticle.dll,Coffee.UIExtensions,UIParticle,Coffee.UIExtensions.UIParticle,effect/animation,7,-7396295067816475631,download/ui/uiprefabandres/battle_ext_prefabs.assetbundle,1,0
+Assembly-CSharp.dll,YouYou,LuaForm,YouYou.LuaForm,lua binder/controller,5,8347263561838679580,download/ui/uiprefabandres/battle_ext_prefabs.assetbundle,0,0
+Assembly-CSharp.dll,YouYou,LuaUnit,YouYou.LuaUnit,lua binder/controller,5,3319520142972745523,download/ui/uiprefabandres/battle_ext_prefabs.assetbundle,0,2
+Assembly-CSharp-firstpass.dll,DG.Tweening,DOTweenAnimation,DG.Tweening.DOTweenAnimation,effect/animation,4,-6380373314413769357,download/ui/uiprefabandres/battle_ext_prefabs.assetbundle,0,2
+UnityEngine.UI.dll,UnityEngine.UI,CanvasScaler,UnityEngine.UI.CanvasScaler,canvas/raycast,4,-8797238614672040712,download/ui/uiprefabandres/battle_ext_prefabs.assetbundle,1,0
+UnityEngine.UI.dll,UnityEngine.UI,VerticalLayoutGroup,UnityEngine.UI.VerticalLayoutGroup,layout/mask,3,348253180598357110,download/ui/uiprefabandres/battle_ext_prefabs.assetbundle,2,0
+Assembly-CSharp.dll,YouYou,EffectScale,YouYou.EffectScale,unknown/controller,2,75834405554630602,download/ui/uiprefabandres/battle_ext_prefabs.assetbundle,1,2
+Assembly-CSharp.dll,YouYou,LookRotation,YouYou.LookRotation,unknown/controller,2,-8195562288947707843,download/ui/uiprefabandres/battle_ext_prefabs.assetbundle,0,0
+Assembly-CSharp.dll,YouYou,UIEventListener,YouYou.UIEventListener,button/click,2,-6333827617915679503,download/ui/uiprefabandres/battle_ext_prefabs.assetbundle,0,0
+Assembly-CSharp.dll,SuperScrollView,LoopListView2,SuperScrollView.LoopListView2,unknown/controller,1,-3254468290337994374,download/ui/uiprefabandres/battle_ext_prefabs.assetbundle,0,0
+Assembly-CSharp.dll,YouYou,ClickBase,YouYou.ClickBase,button/click,1,-3777390710674351328,download/ui/uiprefabandres/battle_ext_prefabs.assetbundle,2,0
+Assembly-CSharp.dll,YouYou,GuideNode,YouYou.GuideNode,unknown/controller,1,2349074181781781832,download/ui/uiprefabandres/battle_ext_prefabs.assetbundle,1,0
+UnityEngine.UI.dll,UnityEngine.UI,RawImage,UnityEngine.UI.RawImage,visual image/raycast,1,-8471220842657547617,download/ui/uiprefabandres/battle_ext_prefabs.assetbundle,0,0

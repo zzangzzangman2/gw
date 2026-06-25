@@ -1,0 +1,370 @@
+{
+  "status": "common_effect_dependency_closure_complete",
+  "sourceEvidence": {
+    "skillProbe": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_battle_unity\\Assets\\RestoreData\\battle\\BATTLE_SKILL_EFFECT_STREAMING_PROBE.json",
+    "attachManifest": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_battle_unity\\Assets\\RestoreData\\battle\\BATTLE_FLOW_SKILL_EFFECT_ATTACH_MANIFEST.json",
+    "prototypeSkills": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_PROTOTYPE_SKILLS.csv",
+    "resourceIndex": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_battle_unity\\Assets\\RestoreData\\battle\\resource_index.csv"
+  },
+  "unresolvedSkillClassifications": [
+    {
+      "skillId": 1001401,
+      "category": "passive/no-effect skill",
+      "detail": "skillType=2 with no timeline or prefab bundle candidate in prototype skill table",
+      "skillTypes": [
+        "2"
+      ],
+      "skillFound": false,
+      "timelineFound": false,
+      "luaEvidenceCount": 0,
+      "owners": [
+        {
+          "side": "enemy",
+          "heroDid": "1100131",
+          "heroId": -1,
+          "wave": 3,
+          "slot": 1
+        },
+        {
+          "side": "enemy",
+          "heroDid": "1100132",
+          "heroId": -2,
+          "wave": 3,
+          "slot": 2
+        },
+        {
+          "side": "enemy",
+          "heroDid": "1100133",
+          "heroId": -3,
+          "wave": 3,
+          "slot": 3
+        }
+      ],
+      "previousReason": "bundle_candidates_missing_or_path_normalize_unresolved"
+    },
+    {
+      "skillId": 1001403,
+      "category": "passive/no-effect skill",
+      "detail": "skillType=2 with no timeline or prefab bundle candidate in prototype skill table",
+      "skillTypes": [
+        "2"
+      ],
+      "skillFound": false,
+      "timelineFound": false,
+      "luaEvidenceCount": 0,
+      "owners": [
+        {
+          "side": "enemy",
+          "heroDid": "1100131",
+          "heroId": -1,
+          "wave": 3,
+          "slot": 1
+        },
+        {
+          "side": "enemy",
+          "heroDid": "1100132",
+          "heroId": -2,
+          "wave": 3,
+          "slot": 2
+        },
+        {
+          "side": "enemy",
+          "heroDid": "1100133",
+          "heroId": -3,
+          "wave": 3,
+          "slot": 3
+        }
+      ],
+      "previousReason": "bundle_candidates_missing_or_path_normalize_unresolved"
+    },
+    {
+      "skillId": 1012401,
+      "category": "passive/no-effect skill",
+      "detail": "skillType=2 with no timeline or prefab bundle candidate in prototype skill table",
+      "skillTypes": [
+        "2"
+      ],
+      "skillFound": false,
+      "timelineFound": false,
+      "luaEvidenceCount": 0,
+      "owners": [
+        {
+          "side": "enemy",
+          "heroDid": "1100111",
+          "heroId": -1,
+          "wave": 1,
+          "slot": 1
+        },
+        {
+          "side": "enemy",
+          "heroDid": "1100112",
+          "heroId": -2,
+          "wave": 1,
+          "slot": 2
+        },
+        {
+          "side": "enemy",
+          "heroDid": "1100113",
+          "heroId": -3,
+          "wave": 1,
+          "slot": 3
+        },
+        {
+          "side": "enemy",
+          "heroDid": "1100121",
+          "heroId": -1,
+          "wave": 2,
+          "slot": 1
+        },
+        {
+          "side": "enemy",
+          "heroDid": "1100122",
+          "heroId": -2,
+          "wave": 2,
+          "slot": 2
+        },
+        {
+          "side": "enemy",
+          "heroDid": "1100123",
+          "heroId": -3,
+          "wave": 2,
+          "slot": 3
+        }
+      ],
+      "previousReason": "bundle_candidates_missing_or_path_normalize_unresolved"
+    },
+    {
+      "skillId": 1012403,
+      "category": "passive/no-effect skill",
+      "detail": "skillType=2 with no timeline or prefab bundle candidate in prototype skill table",
+      "skillTypes": [
+        "2"
+      ],
+      "skillFound": false,
+      "timelineFound": false,
+      "luaEvidenceCount": 0,
+      "owners": [
+        {
+          "side": "enemy",
+          "heroDid": "1100111",
+          "heroId": -1,
+          "wave": 1,
+          "slot": 1
+        },
+        {
+          "side": "enemy",
+          "heroDid": "1100112",
+          "heroId": -2,
+          "wave": 1,
+          "slot": 2
+        },
+        {
+          "side": "enemy",
+          "heroDid": "1100113",
+          "heroId": -3,
+          "wave": 1,
+          "slot": 3
+        },
+        {
+          "side": "enemy",
+          "heroDid": "1100121",
+          "heroId": -1,
+          "wave": 2,
+          "slot": 1
+        },
+        {
+          "side": "enemy",
+          "heroDid": "1100122",
+          "heroId": -2,
+          "wave": 2,
+          "slot": 2
+        },
+        {
+          "side": "enemy",
+          "heroDid": "1100123",
+          "heroId": -3,
+          "wave": 2,
+          "slot": 3
+        }
+      ],
+      "previousReason": "bundle_candidates_missing_or_path_normalize_unresolved"
+    },
+    {
+      "skillId": 1034401,
+      "category": "passive/no-effect skill",
+      "detail": "skillType=2 with no timeline or prefab bundle candidate in prototype skill table",
+      "skillTypes": [
+        "2"
+      ],
+      "skillFound": false,
+      "timelineFound": false,
+      "luaEvidenceCount": 0,
+      "owners": [
+        {
+          "side": "our",
+          "heroDid": "1034",
+          "heroId": 50874,
+          "wave": 0,
+          "slot": 3
+        }
+      ],
+      "previousReason": "bundle_candidates_missing_or_path_normalize_unresolved"
+    },
+    {
+      "skillId": 1034402,
+      "category": "passive/no-effect skill",
+      "detail": "skillType=2 with no timeline or prefab bundle candidate in prototype skill table",
+      "skillTypes": [
+        "2"
+      ],
+      "skillFound": false,
+      "timelineFound": false,
+      "luaEvidenceCount": 2,
+      "owners": [
+        {
+          "side": "our",
+          "heroDid": "1034",
+          "heroId": 50874,
+          "wave": 0,
+          "slot": 3
+        }
+      ],
+      "previousReason": "bundle_candidates_missing_or_path_normalize_unresolved"
+    },
+    {
+      "skillId": 1036401,
+      "category": "passive/no-effect skill",
+      "detail": "skillType=2 with no timeline or prefab bundle candidate in prototype skill table",
+      "skillTypes": [
+        "2"
+      ],
+      "skillFound": false,
+      "timelineFound": false,
+      "luaEvidenceCount": 0,
+      "owners": [
+        {
+          "side": "our",
+          "heroDid": "1036",
+          "heroId": 51469,
+          "wave": 0,
+          "slot": 1
+        }
+      ],
+      "previousReason": "bundle_candidates_missing_or_path_normalize_unresolved"
+    },
+    {
+      "skillId": 1036402,
+      "category": "passive/no-effect skill",
+      "detail": "skillType=2 with no timeline or prefab bundle candidate in prototype skill table",
+      "skillTypes": [
+        "2"
+      ],
+      "skillFound": false,
+      "timelineFound": false,
+      "luaEvidenceCount": 2,
+      "owners": [
+        {
+          "side": "our",
+          "heroDid": "1036",
+          "heroId": 51469,
+          "wave": 0,
+          "slot": 1
+        }
+      ],
+      "previousReason": "bundle_candidates_missing_or_path_normalize_unresolved"
+    }
+  ],
+  "commonDependencyTargets": [
+    {
+      "dependencyName": "pinkspeedline",
+      "failedBundle": "download/commonprefabsandres/skilleffect/commonskillprefabsandres1/pinkspeedline.assetbundle",
+      "failedReason": "file_not_found",
+      "aggregateBundle": "download/commonprefabsandres/skilleffect/commonskillprefabsandres1.assetbundle",
+      "absolutePath": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\extracted\\unity\\clean_unityfs_slices\\download\\commonprefabsandres\\skilleffect\\commonskillprefabsandres1.assetbundle",
+      "aggregateExists": true,
+      "aggregateHeader": "UnityFS\u0000\u0000\u0000\u0000\u00075.x.",
+      "resourceIndexHits": 1,
+      "unityProbe": {
+        "dependencyName": "pinkspeedline",
+        "failedBundle": "download/commonprefabsandres/skilleffect/commonskillprefabsandres1/pinkspeedline.assetbundle",
+        "aggregateBundle": "download/commonprefabsandres/skilleffect/commonskillprefabsandres1.assetbundle",
+        "absolutePath": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\extracted\\unity\\clean_unityfs_slices\\download\\commonprefabsandres\\skilleffect\\commonskillprefabsandres1.assetbundle",
+        "loadSuccess": true,
+        "assetNameCount": 38,
+        "matchingAssetCount": 1,
+        "matchingPrefabCount": 1,
+        "instantiateSuccess": true,
+        "markerAttached": false,
+        "instantiatedAsset": "assets/download/commonprefabsandres/skilleffect/commonskillprefabsandres1/pinkspeedline/pinkspeedline.prefab",
+        "failReason": ""
+      }
+    },
+    {
+      "dependencyName": "redspeedline",
+      "failedBundle": "download/commonprefabsandres/skilleffect/commonskillprefabsandres1/redspeedline.assetbundle",
+      "failedReason": "file_not_found",
+      "aggregateBundle": "download/commonprefabsandres/skilleffect/commonskillprefabsandres1.assetbundle",
+      "absolutePath": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\extracted\\unity\\clean_unityfs_slices\\download\\commonprefabsandres\\skilleffect\\commonskillprefabsandres1.assetbundle",
+      "aggregateExists": true,
+      "aggregateHeader": "UnityFS\u0000\u0000\u0000\u0000\u00075.x.",
+      "resourceIndexHits": 1,
+      "unityProbe": {
+        "dependencyName": "redspeedline",
+        "failedBundle": "download/commonprefabsandres/skilleffect/commonskillprefabsandres1/redspeedline.assetbundle",
+        "aggregateBundle": "download/commonprefabsandres/skilleffect/commonskillprefabsandres1.assetbundle",
+        "absolutePath": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\extracted\\unity\\clean_unityfs_slices\\download\\commonprefabsandres\\skilleffect\\commonskillprefabsandres1.assetbundle",
+        "loadSuccess": true,
+        "assetNameCount": 38,
+        "matchingAssetCount": 6,
+        "matchingPrefabCount": 6,
+        "instantiateSuccess": true,
+        "markerAttached": false,
+        "instantiatedAsset": "assets/download/commonprefabsandres/skilleffect/commonskillprefabsandres1/redspeedline/bluespeedlines03.prefab",
+        "failReason": ""
+      }
+    },
+    {
+      "dependencyName": "yellospeedline",
+      "failedBundle": "download/commonprefabsandres/skilleffect/commonskillprefabsandres1/yellospeedline.assetbundle",
+      "failedReason": "file_not_found",
+      "aggregateBundle": "download/commonprefabsandres/skilleffect/commonskillprefabsandres1.assetbundle",
+      "absolutePath": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\extracted\\unity\\clean_unityfs_slices\\download\\commonprefabsandres\\skilleffect\\commonskillprefabsandres1.assetbundle",
+      "aggregateExists": true,
+      "aggregateHeader": "UnityFS\u0000\u0000\u0000\u0000\u00075.x.",
+      "resourceIndexHits": 1,
+      "unityProbe": {
+        "dependencyName": "yellospeedline",
+        "failedBundle": "download/commonprefabsandres/skilleffect/commonskillprefabsandres1/yellospeedline.assetbundle",
+        "aggregateBundle": "download/commonprefabsandres/skilleffect/commonskillprefabsandres1.assetbundle",
+        "absolutePath": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\extracted\\unity\\clean_unityfs_slices\\download\\commonprefabsandres\\skilleffect\\commonskillprefabsandres1.assetbundle",
+        "loadSuccess": true,
+        "assetNameCount": 38,
+        "matchingAssetCount": 3,
+        "matchingPrefabCount": 3,
+        "instantiateSuccess": true,
+        "markerAttached": false,
+        "instantiatedAsset": "assets/download/commonprefabsandres/skilleffect/commonskillprefabsandres1/yellospeedline/yellospeedline.prefab",
+        "failReason": ""
+      }
+    }
+  ],
+  "counts": {
+    "unresolvedSkills": 8,
+    "passiveNoEffectSkills": 8,
+    "commonDependencyTargets": 3,
+    "commonAggregateFound": 3,
+    "playableMarkersPlanned": 12
+  },
+  "unityResult": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_battle_unity\\Assets\\RestoreData\\battle\\BATTLE_COMMON_EFFECT_DEPENDENCY_CLOSURE_UNITY_RESULT.json",
+  "scene": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_battle_unity\\Assets\\Scenes\\BattleRuntimeFlowSkillEffectPlayableMarkers.unity",
+  "summary": {
+    "unresolvedSkills": 8,
+    "classificationCounts": {
+      "passive/no-effect skill": 8
+    },
+    "commonDependencyTargets": 3,
+    "commonLoadSuccess": 3,
+    "commonLoadFail": 0,
+    "commonMarkersAttached": 3
+  }
+}

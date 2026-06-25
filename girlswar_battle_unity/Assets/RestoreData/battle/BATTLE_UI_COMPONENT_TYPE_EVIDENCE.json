@@ -1,0 +1,951 @@
+{
+  "status": "battle_ui_component_type_evidence_ready",
+  "sourceManifest": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_battle_unity\\Assets\\RestoreData\\battle\\BATTLE_FLOW_WITH_HUD_ATTACH_MANIFEST.json",
+  "sourceAttachResult": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_battle_unity\\Assets\\RestoreData\\battle\\BATTLE_FLOW_WITH_HUD_ATTACH_RESULT.json",
+  "beforeCounts": {
+    "attachmentCount": 10,
+    "attachedRootCount": 10,
+    "canvasCount": 12,
+    "rectTransformCount": 814,
+    "imageCount": 0,
+    "textCount": 0,
+    "buttonCount": 0,
+    "missingScriptCount": 889,
+    "spriteMaterialFontDependencyUnresolvedCount": 889,
+    "clickValidation": "deferred:no_resolved_Button_component"
+  },
+  "bundleCount": 2,
+  "identifiedTypeCount": 32,
+  "officialPackageTypeCount": 14,
+  "stubProxyTypeCount": 18,
+  "identifiedTypes": [
+    {
+      "assemblyName": "UnityEngine.UI.dll",
+      "namespace": "UnityEngine.UI",
+      "className": "Image",
+      "fullName": "UnityEngine.UI.Image",
+      "likelyRole": "visual image/raycast",
+      "scriptPathIds": [
+        -7030229213176759517,
+        -7030229213176759517
+      ],
+      "bundles": [
+        "download/ui/uiprefabandres/battle_ext_prefabs.assetbundle",
+        "download/ui/uiprefabandres/winlose_ext_prefabs.assetbundle"
+      ],
+      "monoBehaviourRefCount": 306,
+      "il2cppEvidence": [
+        {
+          "path": "1",
+          "line": "// Image 0",
+          "snippet": "mscorlib.dll - 0"
+        },
+        {
+          "path": "2",
+          "line": "// Image 1",
+          "snippet": "System.Configuration.dll - 1510"
+        }
+      ],
+      "luaEvidence": [
+        {
+          "path": "C",
+          "line": "\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battlepreview\\8361315881198412209_UI_BattlePreviewTalk_security_xor_raw.lua",
+          "snippet": "102:LuaUtils.SetBlurToImage(blurImage)"
+        },
+        {
+          "path": "C",
+          "line": "\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battlepreview\\8361315881198412209_UI_BattlePreviewTalk_security_xor_raw.lua",
+          "snippet": "117:SetImageColorByType(im_load,a)"
+        }
+      ]
+    },
+    {
+      "assemblyName": "spine-unity.dll",
+      "namespace": "Spine.Unity",
+      "className": "SkeletonSubmeshGraphic",
+      "fullName": "Spine.Unity.SkeletonSubmeshGraphic",
+      "likelyRole": "effect/animation",
+      "scriptPathIds": [
+        5804373309048859138,
+        5804373309048859138
+      ],
+      "bundles": [
+        "download/ui/uiprefabandres/battle_ext_prefabs.assetbundle",
+        "download/ui/uiprefabandres/winlose_ext_prefabs.assetbundle"
+      ],
+      "monoBehaviourRefCount": 151,
+      "il2cppEvidence": [],
+      "luaEvidence": []
+    },
+    {
+      "assemblyName": "Assembly-CSharp.dll",
+      "namespace": "YouYou",
+      "className": "YouYouImage",
+      "fullName": "YouYou.YouYouImage",
+      "likelyRole": "visual image/raycast",
+      "scriptPathIds": [
+        1242602534869556086,
+        1242602534869556086
+      ],
+      "bundles": [
+        "download/ui/uiprefabandres/battle_ext_prefabs.assetbundle",
+        "download/ui/uiprefabandres/winlose_ext_prefabs.assetbundle"
+      ],
+      "monoBehaviourRefCount": 147,
+      "il2cppEvidence": [
+        {
+          "path": "475333",
+          "line": "public class YouYouYouYouImageWrap // TypeDefIndex",
+          "snippet": "8930"
+        }
+      ],
+      "luaEvidence": [
+        {
+          "path": "C",
+          "line": "\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\decoded\\xlua\\-256044868408587883_UI_Adventure_Item_New_security_xor_raw.lua",
+          "snippet": "47:self.bg=e:GetComponent(typeof(CS.YouYou.YouYouImage))"
+        },
+        {
+          "path": "C",
+          "line": "\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\decoded\\xlua\\-6351603197391775840_UI_MainPage_security_xor_raw.lua",
+          "snippet": "1166:local e=bg_guanzhi.transform:GetComponent(typeof(CS.YouYou.YouYouImage))"
+        }
+      ]
+    },
+    {
+      "assemblyName": "Unity.TextMeshPro.dll",
+      "namespace": "TMPro",
+      "className": "TextMeshProUGUI",
+      "fullName": "TMPro.TextMeshProUGUI",
+      "likelyRole": "text/font",
+      "scriptPathIds": [
+        -5755350681981302373
+      ],
+      "bundles": [
+        "download/ui/uiprefabandres/battle_ext_prefabs.assetbundle"
+      ],
+      "monoBehaviourRefCount": 69,
+      "il2cppEvidence": [],
+      "luaEvidence": [
+        {
+          "path": "C",
+          "line": "\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\decoded\\xlua\\-256044868408587883_UI_Adventure_Item_New_security_xor_raw.lua",
+          "snippet": "52:self.condition_trans=self.node_lock:Find(\"text_weijiesuo\"):GetComponent(typeof(CS.TMPro.TextMeshProUGUI))"
+        },
+        {
+          "path": "C",
+          "line": "\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\decoded\\xlua\\-256044868408587883_UI_Adventure_Item_New_security_xor_raw.lua",
+          "snippet": "57:self.rewardTips_trans=e:Find(\"text_rewardTips\"):GetComponent(typeof(CS.TMPro.TextMeshProUGUI))"
+        }
+      ]
+    },
+    {
+      "assemblyName": "UnityEngine.UI.dll",
+      "namespace": "UnityEngine.UI",
+      "className": "ContentSizeFitter",
+      "fullName": "UnityEngine.UI.ContentSizeFitter",
+      "likelyRole": "layout/mask",
+      "scriptPathIds": [
+        -5392852106782294089
+      ],
+      "bundles": [
+        "download/ui/uiprefabandres/battle_ext_prefabs.assetbundle"
+      ],
+      "monoBehaviourRefCount": 45,
+      "il2cppEvidence": [
+        {
+          "path": "267859",
+          "line": "public enum ContentSizeFitter.FitMode // TypeDefIndex",
+          "snippet": "3960"
+        }
+      ],
+      "luaEvidence": [
+        {
+          "path": "C",
+          "line": "\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\decoded\\xlua\\-6351603197391775840_UI_MainPage_security_xor_raw.lua",
+          "snippet": "483:local a=toogles.transform:GetComponent(typeof(CS.UnityEngine.UI.ContentSizeFitter))"
+        },
+        {
+          "path": "C",
+          "line": "\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\decoded\\xlua\\-6351603197391775840_UI_MainPage_security_xor_raw.lua",
+          "snippet": "2498:local e=t[\"text_youjian\"].gameObject:GetComponent(typeof(CS.UnityEngine.UI.ContentSizeFitter))"
+        }
+      ]
+    },
+    {
+      "assemblyName": "Assembly-CSharp.dll",
+      "namespace": "LuaComponentBinder",
+      "className": "LuaComBinder",
+      "fullName": "LuaComponentBinder.LuaComBinder",
+      "likelyRole": "lua binder/controller",
+      "scriptPathIds": [
+        1924290018182821150
+      ],
+      "bundles": [
+        "download/ui/uiprefabandres/battle_ext_prefabs.assetbundle"
+      ],
+      "monoBehaviourRefCount": 34,
+      "il2cppEvidence": [
+        {
+          "path": "444585",
+          "line": "public class LuaComBinder ",
+          "snippet": "MonoBehaviour, ILocator // TypeDefIndex: 8388"
+        }
+      ],
+      "luaEvidence": [
+        {
+          "path": "C",
+          "line": "\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\decoded\\xlua\\-7919191389644174794_UI_MainPageFaceActItem_security_xor_raw.lua",
+          "snippet": "23:local e=LuaUtils.GetLuaComBinder(self._trans.transform)"
+        },
+        {
+          "path": "C",
+          "line": "\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\decoded\\xlua\\-8694572285188909557_UI_MainPageActItem_security_xor_raw.lua",
+          "snippet": "22:local e=LuaUtils.GetLuaComBinder(self._trans.transform)"
+        }
+      ]
+    },
+    {
+      "assemblyName": "UnityEngine.UI.dll",
+      "namespace": "UnityEngine.UI",
+      "className": "Button",
+      "fullName": "UnityEngine.UI.Button",
+      "likelyRole": "button/click",
+      "scriptPathIds": [
+        -787143586316466668
+      ],
+      "bundles": [
+        "download/ui/uiprefabandres/battle_ext_prefabs.assetbundle"
+      ],
+      "monoBehaviourRefCount": 33,
+      "il2cppEvidence": [],
+      "luaEvidence": [
+        {
+          "path": "C",
+          "line": "\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\decoded\\xlua\\-1733260267463332757_UI_BgSet_security_xor_raw.lua",
+          "snippet": "323:buttons=MessageBoxButtons.OKCancel,"
+        },
+        {
+          "path": "C",
+          "line": "\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\decoded\\xlua\\-1733260267463332757_UI_BgSet_security_xor_raw.lua",
+          "snippet": "457:LuaUtils.SetImageSprite(btn_voselect.transform,\"UIButton/BTN_main_underwear\")"
+        }
+      ]
+    },
+    {
+      "assemblyName": "Assembly-CSharp.dll",
+      "namespace": "YouYou",
+      "className": "YouYouCanvasHelper",
+      "fullName": "YouYou.YouYouCanvasHelper",
+      "likelyRole": "unknown/controller",
+      "scriptPathIds": [
+        2150366434557054024
+      ],
+      "bundles": [
+        "download/ui/uiprefabandres/battle_ext_prefabs.assetbundle"
+      ],
+      "monoBehaviourRefCount": 18,
+      "il2cppEvidence": [],
+      "luaEvidence": []
+    },
+    {
+      "assemblyName": "spine-unity.dll",
+      "namespace": "Spine.Unity",
+      "className": "SkeletonGraphic",
+      "fullName": "Spine.Unity.SkeletonGraphic",
+      "likelyRole": "effect/animation",
+      "scriptPathIds": [
+        -6938409698251234290,
+        -6938409698251234290
+      ],
+      "bundles": [
+        "download/ui/uiprefabandres/battle_ext_prefabs.assetbundle",
+        "download/ui/uiprefabandres/winlose_ext_prefabs.assetbundle"
+      ],
+      "monoBehaviourRefCount": 17,
+      "il2cppEvidence": [],
+      "luaEvidence": []
+    },
+    {
+      "assemblyName": "Assembly-CSharp.dll",
+      "namespace": "YouYou",
+      "className": "UISpineCtr",
+      "fullName": "YouYou.UISpineCtr",
+      "likelyRole": "effect/animation",
+      "scriptPathIds": [
+        -8877758280253173385,
+        -8877758280253173385
+      ],
+      "bundles": [
+        "download/ui/uiprefabandres/battle_ext_prefabs.assetbundle",
+        "download/ui/uiprefabandres/winlose_ext_prefabs.assetbundle"
+      ],
+      "monoBehaviourRefCount": 15,
+      "il2cppEvidence": [
+        {
+          "path": "474769",
+          "line": "public class YouYouUISpineCtrWrap // TypeDefIndex",
+          "snippet": "8922"
+        },
+        {
+          "path": "515207",
+          "line": "private sealed class UISpineCtr.<>c__DisplayClass16_0 // TypeDefIndex",
+          "snippet": "9967"
+        }
+      ],
+      "luaEvidence": [
+        {
+          "path": "C",
+          "line": "\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battlepreview\\8361315881198412209_UI_BattlePreviewTalk_security_xor_raw.lua",
+          "snippet": "413:local o=t.skinTransform:GetComponent(typeof(CS.YouYou.UISpineCtr))"
+        },
+        {
+          "path": "C",
+          "line": "\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\decoded\\xlua\\-256044868408587883_UI_Adventure_Item_New_security_xor_raw.lua",
+          "snippet": "110:local t=self.node_battle:Find(\"spine_battle\"):GetComponent(typeof(CS.YouYou.UISpineCtr))"
+        }
+      ]
+    },
+    {
+      "assemblyName": "UnityEngine.UI.dll",
+      "namespace": "UnityEngine.UI",
+      "className": "HorizontalLayoutGroup",
+      "fullName": "UnityEngine.UI.HorizontalLayoutGroup",
+      "likelyRole": "layout/mask",
+      "scriptPathIds": [
+        -8091456346061954500
+      ],
+      "bundles": [
+        "download/ui/uiprefabandres/battle_ext_prefabs.assetbundle"
+      ],
+      "monoBehaviourRefCount": 15,
+      "il2cppEvidence": [
+        {
+          "path": "268044",
+          "line": "public class HorizontalLayoutGroup ",
+          "snippet": "HorizontalOrVerticalLayoutGroup // TypeDefIndex: 3966"
+        }
+      ],
+      "luaEvidence": [
+        {
+          "path": "C",
+          "line": "\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\decoded\\xlua\\-5664616251800369604_UI_Adventure_RootView_security_xor_raw.lua",
+          "snippet": "175:local e=Content.transform:GetComponent(typeof(CS.UnityEngine.UI.HorizontalLayoutGroup))"
+        },
+        {
+          "path": "C",
+          "line": "\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\decoded\\xlua\\-5664616251800369604_UI_Adventure_RootView_security_xor_raw.lua",
+          "snippet": "501:local o=Content.transform:GetComponent(typeof(CS.UnityEngine.UI.HorizontalLayoutGroup))"
+        }
+      ]
+    },
+    {
+      "assemblyName": "UnityEngine.UI.dll",
+      "namespace": "UnityEngine.UI",
+      "className": "ScrollRect",
+      "fullName": "UnityEngine.UI.ScrollRect",
+      "likelyRole": "layout/mask",
+      "scriptPathIds": [
+        -8826248144273319766
+      ],
+      "bundles": [
+        "download/ui/uiprefabandres/battle_ext_prefabs.assetbundle"
+      ],
+      "monoBehaviourRefCount": 15,
+      "il2cppEvidence": [
+        {
+          "path": "269230",
+          "line": "public enum ScrollRect.MovementType // TypeDefIndex",
+          "snippet": "3992"
+        }
+      ],
+      "luaEvidence": [
+        {
+          "path": "C",
+          "line": "\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\decoded\\xlua\\-6351603197391775840_UI_MainPage_security_xor_raw.lua",
+          "snippet": "1262:local e=llv_activity_pageview:GetComponent(typeof(CS.UnityEngine.UI.ScrollRect))"
+        },
+        {
+          "path": "C",
+          "line": "\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\decoded\\xlua\\-6351603197391775840_UI_MainPage_security_xor_raw.lua",
+          "snippet": "2327:local t=llv_activity_pageview:GetComponent(typeof(CS.UnityEngine.UI.ScrollRect))"
+        }
+      ]
+    },
+    {
+      "assemblyName": "UnityEngine.UI.dll",
+      "namespace": "UnityEngine.UI",
+      "className": "GraphicRaycaster",
+      "fullName": "UnityEngine.UI.GraphicRaycaster",
+      "likelyRole": "canvas/raycast",
+      "scriptPathIds": [
+        8390977652835490180
+      ],
+      "bundles": [
+        "download/ui/uiprefabandres/battle_ext_prefabs.assetbundle"
+      ],
+      "monoBehaviourRefCount": 14,
+      "il2cppEvidence": [],
+      "luaEvidence": []
+    },
+    {
+      "assemblyName": "UnityEngine.UI.dll",
+      "namespace": "UnityEngine.UI",
+      "className": "GridLayoutGroup",
+      "fullName": "UnityEngine.UI.GridLayoutGroup",
+      "likelyRole": "layout/mask",
+      "scriptPathIds": [
+        6236441469479178695
+      ],
+      "bundles": [
+        "download/ui/uiprefabandres/battle_ext_prefabs.assetbundle"
+      ],
+      "monoBehaviourRefCount": 14,
+      "il2cppEvidence": [
+        {
+          "path": "267930",
+          "line": "public enum GridLayoutGroup.Corner // TypeDefIndex",
+          "snippet": "3962"
+        }
+      ],
+      "luaEvidence": [
+        {
+          "path": "C",
+          "line": "\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\decoded\\xlua\\-6351603197391775840_UI_MainPage_security_xor_raw.lua",
+          "snippet": "484:local e=node_act_btn.transform:GetComponent(typeof(CS.UnityEngine.UI.GridLayoutGroup))"
+        }
+      ]
+    },
+    {
+      "assemblyName": "UnityEngine.UI.dll",
+      "namespace": "UnityEngine.UI",
+      "className": "RectMask2D",
+      "fullName": "UnityEngine.UI.RectMask2D",
+      "likelyRole": "layout/mask",
+      "scriptPathIds": [
+        4452942400327435936
+      ],
+      "bundles": [
+        "download/ui/uiprefabandres/battle_ext_prefabs.assetbundle"
+      ],
+      "monoBehaviourRefCount": 14,
+      "il2cppEvidence": [],
+      "luaEvidence": []
+    },
+    {
+      "assemblyName": "UnityEngine.UI.dll",
+      "namespace": "UnityEngine.UI",
+      "className": "Text",
+      "fullName": "UnityEngine.UI.Text",
+      "likelyRole": "text/font",
+      "scriptPathIds": [
+        -7978266203517415465
+      ],
+      "bundles": [
+        "download/ui/uiprefabandres/battle_ext_prefabs.assetbundle"
+      ],
+      "monoBehaviourRefCount": 10,
+      "il2cppEvidence": [
+        {
+          "path": "11",
+          "line": "// Image 10",
+          "snippet": "UnityEngine.TextRenderingModule.dll - 3510"
+        },
+        {
+          "path": "30",
+          "line": "// Image 29",
+          "snippet": "UnityEngine.TextCoreModule.dll - 3783"
+        }
+      ],
+      "luaEvidence": [
+        {
+          "path": "C",
+          "line": "\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_procedure\\-3424355311143813575_ProcedureNormalBattle_security_xor_raw.lua",
+          "snippet": "593:local e=LuaUtils.GetFileText(e)"
+        },
+        {
+          "path": "C",
+          "line": "\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_procedure\\-3424355311143813575_ProcedureNormalBattle_security_xor_raw.lua",
+          "snippet": "602:local e=LuaUtils.GetFileText(e)"
+        }
+      ]
+    },
+    {
+      "assemblyName": "Assembly-CSharp.dll",
+      "namespace": "YouYou",
+      "className": "FullscreenCenter",
+      "fullName": "YouYou.FullscreenCenter",
+      "likelyRole": "unknown/controller",
+      "scriptPathIds": [
+        9044316936709120141,
+        9044316936709120141
+      ],
+      "bundles": [
+        "download/ui/uiprefabandres/battle_ext_prefabs.assetbundle",
+        "download/ui/uiprefabandres/winlose_ext_prefabs.assetbundle"
+      ],
+      "monoBehaviourRefCount": 9,
+      "il2cppEvidence": [
+        {
+          "path": "494875",
+          "line": "public class FullscreenCenter ",
+          "snippet": "MonoBehaviour // TypeDefIndex: 9462"
+        }
+      ],
+      "luaEvidence": []
+    },
+    {
+      "assemblyName": "UnityEngine.UI.dll",
+      "namespace": "UnityEngine.UI",
+      "className": "Mask",
+      "fullName": "UnityEngine.UI.Mask",
+      "likelyRole": "layout/mask",
+      "scriptPathIds": [
+        -7784299604066853536
+      ],
+      "bundles": [
+        "download/ui/uiprefabandres/battle_ext_prefabs.assetbundle"
+      ],
+      "monoBehaviourRefCount": 8,
+      "il2cppEvidence": [],
+      "luaEvidence": [
+        {
+          "path": "C",
+          "line": "\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_procedure\\-3424355311143813575_ProcedureNormalBattle_security_xor_raw.lua",
+          "snippet": "2169:e.OurTeam:HideAllEffectStatusAndShowMask()"
+        },
+        {
+          "path": "C",
+          "line": "\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_procedure\\-3424355311143813575_ProcedureNormalBattle_security_xor_raw.lua",
+          "snippet": "3750:e.OurTeam:HideHeadMask()"
+        }
+      ]
+    },
+    {
+      "assemblyName": "Assembly-CSharp.dll",
+      "namespace": "UnityEngine.UI",
+      "className": "Empty4Raycast",
+      "fullName": "UnityEngine.UI.Empty4Raycast",
+      "likelyRole": "visual image/raycast",
+      "scriptPathIds": [
+        -2324043793906593294
+      ],
+      "bundles": [
+        "download/ui/uiprefabandres/battle_ext_prefabs.assetbundle"
+      ],
+      "monoBehaviourRefCount": 7,
+      "il2cppEvidence": [
+        {
+          "path": "444622",
+          "line": "public class Empty4Raycast ",
+          "snippet": "MaskableGraphic // TypeDefIndex: 8389"
+        }
+      ],
+      "luaEvidence": []
+    },
+    {
+      "assemblyName": "Coffee.UIParticle.dll",
+      "namespace": "Coffee.UIExtensions",
+      "className": "UIParticle",
+      "fullName": "Coffee.UIExtensions.UIParticle",
+      "likelyRole": "effect/animation",
+      "scriptPathIds": [
+        -7396295067816475631
+      ],
+      "bundles": [
+        "download/ui/uiprefabandres/battle_ext_prefabs.assetbundle"
+      ],
+      "monoBehaviourRefCount": 7,
+      "il2cppEvidence": [
+        {
+          "path": "60",
+          "line": "// Image 59",
+          "snippet": "Coffee.UIParticle.dll - 5407"
+        }
+      ],
+      "luaEvidence": []
+    },
+    {
+      "assemblyName": "Assembly-CSharp.dll",
+      "namespace": "YouYou",
+      "className": "LuaForm",
+      "fullName": "YouYou.LuaForm",
+      "likelyRole": "lua binder/controller",
+      "scriptPathIds": [
+        8347263561838679580
+      ],
+      "bundles": [
+        "download/ui/uiprefabandres/battle_ext_prefabs.assetbundle"
+      ],
+      "monoBehaviourRefCount": 5,
+      "il2cppEvidence": [],
+      "luaEvidence": []
+    },
+    {
+      "assemblyName": "Assembly-CSharp.dll",
+      "namespace": "YouYou",
+      "className": "LuaUnit",
+      "fullName": "YouYou.LuaUnit",
+      "likelyRole": "lua binder/controller",
+      "scriptPathIds": [
+        3319520142972745523
+      ],
+      "bundles": [
+        "download/ui/uiprefabandres/battle_ext_prefabs.assetbundle"
+      ],
+      "monoBehaviourRefCount": 5,
+      "il2cppEvidence": [],
+      "luaEvidence": [
+        {
+          "path": "C",
+          "line": "\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_procedure\\-3424355311143813575_ProcedureNormalBattle_security_xor_raw.lua",
+          "snippet": "1176:local e=e.mBattleUI3D:GetComponent(typeof(CS.YouYou.LuaUnit))"
+        },
+        {
+          "path": "C",
+          "line": "\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_procedure\\-3424355311143813575_ProcedureNormalBattle_security_xor_raw.lua",
+          "snippet": "1186:local t=e.mBattleUI3D:GetComponent(typeof(CS.YouYou.LuaUnit))"
+        }
+      ]
+    },
+    {
+      "assemblyName": "Assembly-CSharp-firstpass.dll",
+      "namespace": "DG.Tweening",
+      "className": "DOTweenAnimation",
+      "fullName": "DG.Tweening.DOTweenAnimation",
+      "likelyRole": "effect/animation",
+      "scriptPathIds": [
+        -6380373314413769357
+      ],
+      "bundles": [
+        "download/ui/uiprefabandres/battle_ext_prefabs.assetbundle"
+      ],
+      "monoBehaviourRefCount": 4,
+      "il2cppEvidence": [],
+      "luaEvidence": [
+        {
+          "path": "C",
+          "line": "\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\decoded\\xlua\\-3029001242551076572_UI_Flower_Complete_Tips_security_xor_raw.lua",
+          "snippet": "186:local e=offset:GetComponent(typeof(CS.DG.Tweening.DOTweenAnimation))"
+        },
+        {
+          "path": "C",
+          "line": "\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\decoded\\xlua\\-3029001242551076572_UI_Flower_Complete_Tips_security_xor_raw.lua",
+          "snippet": "204:local e=offset:GetComponent(typeof(CS.DG.Tweening.DOTweenAnimation))"
+        }
+      ]
+    },
+    {
+      "assemblyName": "UnityEngine.UI.dll",
+      "namespace": "UnityEngine.UI",
+      "className": "CanvasScaler",
+      "fullName": "UnityEngine.UI.CanvasScaler",
+      "likelyRole": "canvas/raycast",
+      "scriptPathIds": [
+        -8797238614672040712
+      ],
+      "bundles": [
+        "download/ui/uiprefabandres/battle_ext_prefabs.assetbundle"
+      ],
+      "monoBehaviourRefCount": 4,
+      "il2cppEvidence": [
+        {
+          "path": "267673",
+          "line": "public enum CanvasScaler.ScaleMode // TypeDefIndex",
+          "snippet": "3956"
+        }
+      ],
+      "luaEvidence": []
+    },
+    {
+      "assemblyName": "UnityEngine.UI.dll",
+      "namespace": "UnityEngine.UI",
+      "className": "VerticalLayoutGroup",
+      "fullName": "UnityEngine.UI.VerticalLayoutGroup",
+      "likelyRole": "layout/mask",
+      "scriptPathIds": [
+        348253180598357110
+      ],
+      "bundles": [
+        "download/ui/uiprefabandres/battle_ext_prefabs.assetbundle"
+      ],
+      "monoBehaviourRefCount": 3,
+      "il2cppEvidence": [
+        {
+          "path": "268044",
+          "line": "public class HorizontalLayoutGroup ",
+          "snippet": "HorizontalOrVerticalLayoutGroup // TypeDefIndex: 3966"
+        },
+        {
+          "path": "268066",
+          "line": "public abstract class HorizontalOrVerticalLayoutGroup ",
+          "snippet": "LayoutGroup // TypeDefIndex: 3967"
+        }
+      ],
+      "luaEvidence": []
+    },
+    {
+      "assemblyName": "Assembly-CSharp.dll",
+      "namespace": "YouYou",
+      "className": "EffectScale",
+      "fullName": "YouYou.EffectScale",
+      "likelyRole": "unknown/controller",
+      "scriptPathIds": [
+        75834405554630602
+      ],
+      "bundles": [
+        "download/ui/uiprefabandres/battle_ext_prefabs.assetbundle"
+      ],
+      "monoBehaviourRefCount": 2,
+      "il2cppEvidence": [
+        {
+          "path": "494860",
+          "line": "public class EffectScale ",
+          "snippet": "MonoBehaviour // TypeDefIndex: 9461"
+        }
+      ],
+      "luaEvidence": [
+        {
+          "path": "C",
+          "line": "\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+          "snippet": "1075:scale=self:GetDeathEffectScale(),"
+        },
+        {
+          "path": "C",
+          "line": "\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+          "snippet": "1118:function HeroCtrl:GetDeathEffectScale()"
+        }
+      ]
+    },
+    {
+      "assemblyName": "Assembly-CSharp.dll",
+      "namespace": "YouYou",
+      "className": "LookRotation",
+      "fullName": "YouYou.LookRotation",
+      "likelyRole": "unknown/controller",
+      "scriptPathIds": [
+        -8195562288947707843
+      ],
+      "bundles": [
+        "download/ui/uiprefabandres/battle_ext_prefabs.assetbundle"
+      ],
+      "monoBehaviourRefCount": 2,
+      "il2cppEvidence": [],
+      "luaEvidence": []
+    },
+    {
+      "assemblyName": "Assembly-CSharp.dll",
+      "namespace": "YouYou",
+      "className": "UIEventListener",
+      "fullName": "YouYou.UIEventListener",
+      "likelyRole": "button/click",
+      "scriptPathIds": [
+        -6333827617915679503
+      ],
+      "bundles": [
+        "download/ui/uiprefabandres/battle_ext_prefabs.assetbundle"
+      ],
+      "monoBehaviourRefCount": 2,
+      "il2cppEvidence": [],
+      "luaEvidence": []
+    },
+    {
+      "assemblyName": "Assembly-CSharp.dll",
+      "namespace": "SuperScrollView",
+      "className": "LoopListView2",
+      "fullName": "SuperScrollView.LoopListView2",
+      "likelyRole": "unknown/controller",
+      "scriptPathIds": [
+        -3254468290337994374
+      ],
+      "bundles": [
+        "download/ui/uiprefabandres/battle_ext_prefabs.assetbundle"
+      ],
+      "monoBehaviourRefCount": 1,
+      "il2cppEvidence": [],
+      "luaEvidence": []
+    },
+    {
+      "assemblyName": "Assembly-CSharp.dll",
+      "namespace": "YouYou",
+      "className": "ClickBase",
+      "fullName": "YouYou.ClickBase",
+      "likelyRole": "button/click",
+      "scriptPathIds": [
+        -3777390710674351328
+      ],
+      "bundles": [
+        "download/ui/uiprefabandres/battle_ext_prefabs.assetbundle"
+      ],
+      "monoBehaviourRefCount": 1,
+      "il2cppEvidence": [
+        {
+          "path": "469029",
+          "line": "public class YouYouClickBaseWrap // TypeDefIndex",
+          "snippet": "8855"
+        },
+        {
+          "path": "510965",
+          "line": "public class ClickBase ",
+          "snippet": "MonoBehaviour, IPointerDownHandler, IEventSystemHandler, IPointerUpHandler // TypeDefIndex: 9832"
+        }
+      ],
+      "luaEvidence": []
+    },
+    {
+      "assemblyName": "Assembly-CSharp.dll",
+      "namespace": "YouYou",
+      "className": "GuideNode",
+      "fullName": "YouYou.GuideNode",
+      "likelyRole": "unknown/controller",
+      "scriptPathIds": [
+        2349074181781781832
+      ],
+      "bundles": [
+        "download/ui/uiprefabandres/battle_ext_prefabs.assetbundle"
+      ],
+      "monoBehaviourRefCount": 1,
+      "il2cppEvidence": [
+        {
+          "path": "494890",
+          "line": "public class GuideNode ",
+          "snippet": "MonoBehaviour // TypeDefIndex: 9463"
+        }
+      ],
+      "luaEvidence": []
+    },
+    {
+      "assemblyName": "UnityEngine.UI.dll",
+      "namespace": "UnityEngine.UI",
+      "className": "RawImage",
+      "fullName": "UnityEngine.UI.RawImage",
+      "likelyRole": "visual image/raycast",
+      "scriptPathIds": [
+        -8471220842657547617
+      ],
+      "bundles": [
+        "download/ui/uiprefabandres/battle_ext_prefabs.assetbundle"
+      ],
+      "monoBehaviourRefCount": 1,
+      "il2cppEvidence": [],
+      "luaEvidence": []
+    }
+  ],
+  "officialPackageActions": [
+    {
+      "package": "com.unity.ugui",
+      "version": "2.0.0",
+      "reason": "resolves UnityEngine.UI.dll and Unity.TextMeshPro.dll script references"
+    }
+  ],
+  "stubProxyActions": [
+    {
+      "assemblyName": "spine-unity.dll",
+      "fullName": "Spine.Unity.SkeletonSubmeshGraphic",
+      "likelyRole": "effect/animation",
+      "refCount": 151
+    },
+    {
+      "assemblyName": "Assembly-CSharp.dll",
+      "fullName": "YouYou.YouYouImage",
+      "likelyRole": "visual image/raycast",
+      "refCount": 147
+    },
+    {
+      "assemblyName": "Assembly-CSharp.dll",
+      "fullName": "LuaComponentBinder.LuaComBinder",
+      "likelyRole": "lua binder/controller",
+      "refCount": 34
+    },
+    {
+      "assemblyName": "Assembly-CSharp.dll",
+      "fullName": "YouYou.YouYouCanvasHelper",
+      "likelyRole": "unknown/controller",
+      "refCount": 18
+    },
+    {
+      "assemblyName": "spine-unity.dll",
+      "fullName": "Spine.Unity.SkeletonGraphic",
+      "likelyRole": "effect/animation",
+      "refCount": 17
+    },
+    {
+      "assemblyName": "Assembly-CSharp.dll",
+      "fullName": "YouYou.UISpineCtr",
+      "likelyRole": "effect/animation",
+      "refCount": 15
+    },
+    {
+      "assemblyName": "Assembly-CSharp.dll",
+      "fullName": "YouYou.FullscreenCenter",
+      "likelyRole": "unknown/controller",
+      "refCount": 9
+    },
+    {
+      "assemblyName": "Assembly-CSharp.dll",
+      "fullName": "UnityEngine.UI.Empty4Raycast",
+      "likelyRole": "visual image/raycast",
+      "refCount": 7
+    },
+    {
+      "assemblyName": "Coffee.UIParticle.dll",
+      "fullName": "Coffee.UIExtensions.UIParticle",
+      "likelyRole": "effect/animation",
+      "refCount": 7
+    },
+    {
+      "assemblyName": "Assembly-CSharp.dll",
+      "fullName": "YouYou.LuaForm",
+      "likelyRole": "lua binder/controller",
+      "refCount": 5
+    },
+    {
+      "assemblyName": "Assembly-CSharp.dll",
+      "fullName": "YouYou.LuaUnit",
+      "likelyRole": "lua binder/controller",
+      "refCount": 5
+    },
+    {
+      "assemblyName": "Assembly-CSharp-firstpass.dll",
+      "fullName": "DG.Tweening.DOTweenAnimation",
+      "likelyRole": "effect/animation",
+      "refCount": 4
+    },
+    {
+      "assemblyName": "Assembly-CSharp.dll",
+      "fullName": "YouYou.EffectScale",
+      "likelyRole": "unknown/controller",
+      "refCount": 2
+    },
+    {
+      "assemblyName": "Assembly-CSharp.dll",
+      "fullName": "YouYou.LookRotation",
+      "likelyRole": "unknown/controller",
+      "refCount": 2
+    },
+    {
+      "assemblyName": "Assembly-CSharp.dll",
+      "fullName": "YouYou.UIEventListener",
+      "likelyRole": "button/click",
+      "refCount": 2
+    },
+    {
+      "assemblyName": "Assembly-CSharp.dll",
+      "fullName": "SuperScrollView.LoopListView2",
+      "likelyRole": "unknown/controller",
+      "refCount": 1
+    },
+    {
+      "assemblyName": "Assembly-CSharp.dll",
+      "fullName": "YouYou.ClickBase",
+      "likelyRole": "button/click",
+      "refCount": 1
+    },
+    {
+      "assemblyName": "Assembly-CSharp.dll",
+      "fullName": "YouYou.GuideNode",
+      "likelyRole": "unknown/controller",
+      "refCount": 1
+    }
+  ]
+}

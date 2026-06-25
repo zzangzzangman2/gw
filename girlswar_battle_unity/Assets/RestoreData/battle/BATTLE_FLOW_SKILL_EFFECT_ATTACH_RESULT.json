@@ -1,0 +1,24 @@
+﻿{
+  "status": "skill_effect_attach_complete",
+  "scene": "Assets/Scenes/BattleRuntimeFlowSkillEffectAttach.unity",
+  "summary": {
+    "attachments": 12,
+    "instantiateSuccess": 12,
+    "instantiateFail": 0,
+    "loadedBundles": 4
+  },
+  "attachments": [
+    {"skillId":"1002101","side":"our","heroDid":"1002","bundle":"download/skillprefabsandres/1002.assetbundle","prefabAsset":"assets/download/skillprefabsandres/1002/1002101.prefab","instantiateSuccess":true,"instantiatedName":"AttachedSkillEffect_our_1002_1002101","failReason":""},
+    {"skillId":"1002201","side":"our","heroDid":"1002","bundle":"download/skillprefabsandres/1002.assetbundle","prefabAsset":"assets/download/skillprefabsandres/1002/1002201.prefab","instantiateSuccess":true,"instantiatedName":"AttachedSkillEffect_our_1002_1002201","failReason":""},
+    {"skillId":"1002301","side":"our","heroDid":"1002","bundle":"download/skillprefabsandres/1002.assetbundle","prefabAsset":"assets/download/skillprefabsandres/1002/1002301.prefab","instantiateSuccess":true,"instantiatedName":"AttachedSkillEffect_our_1002_1002301","failReason":""},
+    {"skillId":"1012101","side":"enemy","heroDid":"1100111","bundle":"download/skillprefabsandres/1012.assetbundle","prefabAsset":"assets/download/skillprefabsandres/1012/1012101.prefab","instantiateSuccess":true,"instantiatedName":"AttachedSkillEffect_enemy_1100111_1012101","failReason":""},
+    {"skillId":"1012201","side":"enemy","heroDid":"1100111","bundle":"download/skillprefabsandres/1012.assetbundle","prefabAsset":"assets/download/skillprefabsandres/1012/1012201.prefab","instantiateSuccess":true,"instantiatedName":"AttachedSkillEffect_enemy_1100111_1012201","failReason":""},
+    {"skillId":"1012301","side":"enemy","heroDid":"1100111","bundle":"download/skillprefabsandres/1012.assetbundle","prefabAsset":"assets/download/skillprefabsandres/1012/1012301.prefab","instantiateSuccess":true,"instantiatedName":"AttachedSkillEffect_enemy_1100111_1012301","failReason":""},
+    {"skillId":"1034101","side":"our","heroDid":"1034","bundle":"download/skillprefabsandres/1034.assetbundle","prefabAsset":"assets/download/skillprefabsandres/1034/1034101.prefab","instantiateSuccess":true,"instantiatedName":"AttachedSkillEffect_our_1034_1034101","failReason":""},
+    {"skillId":"1034201","side":"our","heroDid":"1034","bundle":"download/skillprefabsandres/1034.assetbundle","prefabAsset":"assets/download/skillprefabsandres/1034/1034201.prefab","instantiateSuccess":true,"instantiatedName":"AttachedSkillEffect_our_1034_1034201","failReason":""},
+    {"skillId":"1034301","side":"our","heroDid":"1034","bundle":"download/skillprefabsandres/1034.assetbundle","prefabAsset":"assets/download/skillprefabsandres/1034/1034301.prefab","instantiateSuccess":true,"instantiatedName":"AttachedSkillEffect_our_1034_1034301","failReason":""},
+    {"skillId":"1036101","side":"our","heroDid":"1036","bundle":"download/skillprefabsandres/1036.assetbundle","prefabAsset":"assets/download/skillprefabsandres/1036/1036101.prefab","instantiateSuccess":true,"instantiatedName":"AttachedSkillEffect_our_1036_1036101","failReason":""},
+    {"skillId":"1036201","side":"our","heroDid":"1036","bundle":"download/skillprefabsandres/1036.assetbundle","prefabAsset":"assets/download/skillprefabsandres/1036/1036201.prefab","instantiateSuccess":true,"instantiatedName":"AttachedSkillEffect_our_1036_1036201","failReason":""},
+    {"skillId":"1036301","side":"our","heroDid":"1036","bundle":"download/skillprefabsandres/1036.assetbundle","prefabAsset":"assets/download/skillprefabsandres/1036/1036301.prefab","instantiateSuccess":true,"instantiatedName":"AttachedSkillEffect_our_1036_1036301","failReason":""}
+  ]
+}

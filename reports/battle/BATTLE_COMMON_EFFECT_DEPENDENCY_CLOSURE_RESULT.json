@@ -1,0 +1,20 @@
+{
+  "closureJson": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_battle_unity\\Assets\\RestoreData\\battle\\BATTLE_COMMON_EFFECT_DEPENDENCY_CLOSURE.json",
+  "playableMarkerManifest": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_battle_unity\\Assets\\RestoreData\\battle\\BATTLE_SKILL_EFFECT_PLAYABLE_MARKER_MANIFEST.json",
+  "unityResult": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_battle_unity\\Assets\\RestoreData\\battle\\BATTLE_COMMON_EFFECT_DEPENDENCY_CLOSURE_UNITY_RESULT.json",
+  "scene": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_battle_unity\\Assets\\Scenes\\BattleRuntimeFlowSkillEffectPlayableMarkers.unity",
+  "sceneExists": true,
+  "unityBatchmodeSuccess": true,
+  "unresolvedSkills": 8,
+  "classificationCounts": {
+    "passive/no-effect skill": 8
+  },
+  "commonDependencyFound": 3,
+  "commonDependencyLoadSuccess": 3,
+  "commonDependencyLoadFail": 0,
+  "commonMarkersAttached": 3,
+  "playableMarkerCount": 12,
+  "playableFound": 12,
+  "playableMissing": 0,
+  "nextBattle16Recommendation": "BATTLE_UI_HUD_RESTORE_AND_ALIGNMENT"
+}

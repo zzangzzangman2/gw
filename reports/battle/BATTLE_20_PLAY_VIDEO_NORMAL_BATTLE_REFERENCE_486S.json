@@ -1,0 +1,152 @@
+{
+  "reference_video_used": true,
+  "sourceVideo": "C:\\Users\\godho\\Downloads\\플레이.mp4",
+  "clip05": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\video_reference\\clips\\battle_motion_clip_05_0486s.mp4",
+  "clip05Exists": true,
+  "frameSampleSeconds": [
+    486.0,
+    486.5,
+    487.0,
+    487.5,
+    488.0,
+    488.5
+  ],
+  "framesExtracted": 6,
+  "fps": 55.344,
+  "referenceContactSheet": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_20_PLAY_VIDEO_NORMAL_BATTLE_REFERENCE_486S.jpg",
+  "referenceContactSheetExists": true,
+  "normalBattleHudPersistenceWindow": "486.0s-488.5s",
+  "expectedHudZonesFromClip05": {
+    "top": "HP/VS area should persist",
+    "bottom": "actor/skill card area should persist",
+    "right": "vertical controls should persist"
+  },
+  "perFrameZoneStats": [
+    {
+      "second": 486.0,
+      "size": [
+        1920,
+        896
+      ],
+      "zones": {
+        "top": {
+          "mean": 118.01,
+          "nonDarkRatio": 0.95982
+        },
+        "bottom": {
+          "mean": 86.182,
+          "nonDarkRatio": 0.89445
+        },
+        "right": {
+          "mean": 103.59,
+          "nonDarkRatio": 0.92679
+        }
+      }
+    },
+    {
+      "second": 486.5,
+      "size": [
+        1920,
+        896
+      ],
+      "zones": {
+        "top": {
+          "mean": 117.796,
+          "nonDarkRatio": 0.95981
+        },
+        "bottom": {
+          "mean": 93.785,
+          "nonDarkRatio": 0.8957
+        },
+        "right": {
+          "mean": 101.393,
+          "nonDarkRatio": 0.92549
+        }
+      }
+    },
+    {
+      "second": 487.0,
+      "size": [
+        1920,
+        896
+      ],
+      "zones": {
+        "top": {
+          "mean": 117.441,
+          "nonDarkRatio": 0.95966
+        },
+        "bottom": {
+          "mean": 94.853,
+          "nonDarkRatio": 0.89716
+        },
+        "right": {
+          "mean": 100.072,
+          "nonDarkRatio": 0.92192
+        }
+      }
+    },
+    {
+      "second": 487.5,
+      "size": [
+        1920,
+        896
+      ],
+      "zones": {
+        "top": {
+          "mean": 118.089,
+          "nonDarkRatio": 0.96033
+        },
+        "bottom": {
+          "mean": 92.396,
+          "nonDarkRatio": 0.89468
+        },
+        "right": {
+          "mean": 98.752,
+          "nonDarkRatio": 0.9191
+        }
+      }
+    },
+    {
+      "second": 488.0,
+      "size": [
+        1920,
+        896
+      ],
+      "zones": {
+        "top": {
+          "mean": 167.958,
+          "nonDarkRatio": 0.99208
+        },
+        "bottom": {
+          "mean": 201.835,
+          "nonDarkRatio": 0.99382
+        },
+        "right": {
+          "mean": 152.077,
+          "nonDarkRatio": 1.0
+        }
+      }
+    },
+    {
+      "second": 488.5,
+      "size": [
+        1920,
+        896
+      ],
+      "zones": {
+        "top": {
+          "mean": 223.906,
+          "nonDarkRatio": 0.99863
+        },
+        "bottom": {
+          "mean": 188.371,
+          "nonDarkRatio": 1.0
+        },
+        "right": {
+          "mean": 213.306,
+          "nonDarkRatio": 1.0
+        }
+      }
+    }
+  ]
+}

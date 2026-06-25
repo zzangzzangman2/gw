@@ -1,0 +1,45 @@
+{
+  "video": "C:\\Users\\godho\\Downloads\\플레이.mp4",
+  "motionReport": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\video_reference\\PLAY_REFERENCE_VIDEO_MOTION_ANALYSIS.md",
+  "restoreNotes": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\video_reference\\PLAY_REFERENCE_RESTORE_NOTES.md",
+  "topCenterOverlayPolicy": "recording_touch_artifact_not_final_hud",
+  "prototypeCapture": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_battle_unity\\Assets\\RestoreCaptures\\battle_hud\\BattleRuntimeFlowWithHudSpriteFontJoin_1680x720.png",
+  "clips": [
+    {
+      "clip": "battle_motion_clip_01_0088s.mp4",
+      "validation": "projectile_hit_floating_damage",
+      "currentStatus": "pending_motion_reconstruction",
+      "mismatchClass": "floating_damage_timing_and_effect_motion_not_reconstructed_yet",
+      "path": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\video_reference\\clips\\battle_motion_clip_01_0088s.mp4"
+    },
+    {
+      "clip": "battle_motion_clip_02_0146s.mp4",
+      "validation": "bright_cut_in_flash_with_hud_camera_behavior",
+      "currentStatus": "pending_motion_reconstruction",
+      "mismatchClass": "cutin_flash_sorting_and_camera_timing_not_reconstructed_yet",
+      "path": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\video_reference\\clips\\battle_motion_clip_02_0146s.mp4"
+    },
+    {
+      "clip": "battle_motion_clip_03_0380s.mp4",
+      "validation": "red_black_special_skill_stage_cutin",
+      "currentStatus": "pending_motion_reconstruction",
+      "mismatchClass": "special_skill_stage_overlay_not_reconstructed_yet",
+      "path": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\video_reference\\clips\\battle_motion_clip_03_0380s.mp4"
+    },
+    {
+      "clip": "battle_motion_clip_05_0486s.mp4",
+      "validation": "normal_battle_hud_persistence_top_bottom_right",
+      "currentStatus": "partially_ready_after_sprite_font_join",
+      "mismatchClass": "canvas_sorting_camera_and_runtime_data_binding_still_pending",
+      "path": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\video_reference\\clips\\battle_motion_clip_05_0486s.mp4"
+    },
+    {
+      "clip": "battle_motion_clip_06_0500s.mp4",
+      "validation": "full_width_beam_flash_hit",
+      "currentStatus": "pending_motion_reconstruction",
+      "mismatchClass": "beam_flash_effect_motion_not_reconstructed_yet",
+      "path": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\video_reference\\clips\\battle_motion_clip_06_0500s.mp4"
+    }
+  ],
+  "note": "BATTLE_19 validates static HUD sprite/font readiness against motion reference requirements. Actual floating damage/cutin/beam motion reconstruction is deferred to BATTLE_20."
+}

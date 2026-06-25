@@ -2,7 +2,7 @@
 
 ## Summary
 
-- Generated at: `2026-06-25 17:11:50`
+- Generated at: `2026-06-25 18:28:23`
 - Total Button loggers: `77`
 - Active buttons: `24`
 - Interactable buttons: `77`
@@ -92,7 +92,7 @@
 | `btn_qinmi2` | `UI_MainPage` | `onBtnFavorability` | `no` |
 | `btn_twitter` | `UI_MainPage` | `inline_function` | `no` |
 | `btnToggle1` | `UI_MainPage` | `onBtnCamp` | `no` |
-| `autoHelper_Root` | `UI_MainPage` | `onClickDownAutoHelper|onClickUpAutoHelper|OnBeginDragAutoHelper|onDragingAutoHelper|OnEndDragAutoHelper` | `yes` |
+| `autoHelper_Root` | `UI_MainPage` | `autoHelper_Root_touch` | `yes` |
 | `worldwanfaBtn` | `UI_MainPage` | `onBtnWorld` | `yes` |
 | `btn_taskNotice` | `UI_MainPage` | `OnClickTaskNoticeBtn` | `no` |
 | `btn_watch` | `UI_MainPage` | `onBtnWatch` | `yes` |
@@ -112,7 +112,7 @@
 | `btn_discord` | `UI_MainPage` | `inline_function` | `no` |
 | `btn_yincang` | `UI_MainPage` | `onBtnHideUI` | `no` |
 | `funhandbook_Btn` | `UI_MainPage` | `onBtnFunHandBook` | `yes` |
-| `faceGiftNode` | `UI_MainPage` | `inline_function` | `yes` |
+| `faceGiftNode` | `UI_MainPage` | `inline_faceGiftNode` | `yes` |
 | `btnToggle2` | `UI_MainPage` | `onBtnBag` | `no` |
 | `paihangbang_Btn` | `UI_MainPage` | `onBtnRank` | `no` |
 

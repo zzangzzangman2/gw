@@ -1,0 +1,4 @@
+﻿bundleId,assetName,hierarchyPath,componentCount,componentTypes,rendererType,materialNames,textureNames
+"1002","assets/download/roleprefabsandres/battleprefabandres/1002/hero_1002.prefab","Reconstructed_our_1002","4","Transform;MeshFilter;MeshRenderer;MissingScript","MeshRenderer","1002_Material","1002"
+"1034","assets/download/roleprefabsandres/battleprefabandres/1034/hero_1034.prefab","Reconstructed_our_1034","4","Transform;MeshFilter;MeshRenderer;MissingScript","MeshRenderer","1034_Material;1034_Material-Screen","1034;1034"
+"1100111","assets/download/roleprefabsandres/battleprefabandres/3001/hero_3001.prefab","Reconstructed_enemy_1100111","4","Transform;MeshFilter;MeshRenderer;MissingScript","MeshRenderer","3001_Material","3001"

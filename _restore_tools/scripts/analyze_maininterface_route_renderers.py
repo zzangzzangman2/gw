@@ -195,51 +195,93 @@ def ensure_region_png(src: Path, dst: Path, bounds: list[int]) -> bool:
     return True
 
 
-def update_visual_override(sprite_asset_path: str) -> bool:
+FALLBACK_VISUAL_FIELDS = [
+    "target_kind",
+    "component_path_id",
+    "game_object_id",
+    "parent_game_object_id",
+    "create_child_name",
+    "game_object_name",
+    "sprite_asset_path",
+    "color_r",
+    "color_g",
+    "color_b",
+    "color_a",
+    "preserve_aspect",
+    "image_type",
+    "raycast_target",
+    "anchored_pos_x",
+    "anchored_pos_y",
+    "size_delta_x",
+    "size_delta_y",
+    "local_scale_x",
+    "local_scale_y",
+    "local_scale_z",
+    "reason",
+]
+
+
+def update_visual_override_layers(region_assets: dict[str, str]) -> list[dict[str, str]]:
     rows = read_csv(VISUAL_OVERRIDES)
-    fieldnames = [
-        "target_kind",
-        "component_path_id",
-        "game_object_id",
-        "game_object_name",
-        "sprite_asset_path",
-        "color_r",
-        "color_g",
-        "color_b",
-        "color_a",
-        "preserve_aspect",
-        "image_type",
-        "raycast_target",
-        "reason",
+    rows = [row for row in rows if not row.get("target_kind", "").startswith("RouteRendererFallback")]
+
+    layer_specs = [
+        (
+            "zhuye_di1",
+            "route_fallback_zhuye_di1",
+            "253",
+            "253",
+            "original worldwanfaBtn RectTransform is 253x253; Spine_shijieanniu atlas region zhuye_di1 is 253x253 and is the matching base disk/frame layer",
+        ),
+        (
+            "diqiu",
+            "route_fallback_diqiu",
+            "253",
+            "253",
+            "original active child spine_diqiu is a SkeletonGraphic under worldwanfaBtn; atlas region diqiu is the globe attachment, normalized into the 253x253 worldwanfaBtn rect until Spine runtime transforms are restored",
+        ),
+        (
+            "zhuye_bian",
+            "route_fallback_zhuye_bian",
+            "238",
+            "238",
+            "Spine_shijieanniu atlas region zhuye_bian is the 238x238 border/rim layer from the same world button skeleton; centered under worldwanfaBtn so route text siblings remain above it",
+        ),
     ]
-    if not rows:
-        rows = []
-    key = ("RouteRendererFallback", WORLD_GO, sprite_asset_path)
-    new_row = {
-        "target_kind": key[0],
-        "component_path_id": "",
-        "game_object_id": key[1],
-        "game_object_name": "worldwanfaBtn",
-        "sprite_asset_path": key[2],
-        "color_r": "1",
-        "color_g": "1",
-        "color_b": "1",
-        "color_a": "1",
-        "preserve_aspect": "1",
-        "image_type": "0",
-        "raycast_target": "0",
-        "reason": "route renderer fallback: original worldwanfaBtn child spine_diqiu references Spine_shijieanniu_SkeletonData; diqiu atlas region is the globe bitmap used by that SkeletonGraphic",
-    }
-    replaced = False
-    for index, row in enumerate(rows):
-        if row.get("target_kind") == key[0] and row.get("game_object_id") == key[1]:
-            rows[index] = new_row
-            replaced = True
-            break
-    if not replaced:
-        rows.append(new_row)
-    write_csv(VISUAL_OVERRIDES, rows, fieldnames)
-    return True
+    applied_rows: list[dict[str, str]] = []
+    for region, child_name, width, height, reason in layer_specs:
+        sprite_asset_path = region_assets.get(region)
+        if not sprite_asset_path:
+            continue
+        row = {
+            "target_kind": "RouteRendererFallbackLayer",
+            "component_path_id": "",
+            "game_object_id": "",
+            "parent_game_object_id": WORLD_GO,
+            "create_child_name": child_name,
+            "game_object_name": f"worldwanfaBtn/{child_name}",
+            "sprite_asset_path": sprite_asset_path,
+            "color_r": "1",
+            "color_g": "1",
+            "color_b": "1",
+            "color_a": "1",
+            "preserve_aspect": "1",
+            "image_type": "0",
+            "raycast_target": "0",
+            "anchored_pos_x": "0",
+            "anchored_pos_y": "0",
+            "size_delta_x": width,
+            "size_delta_y": height,
+            "local_scale_x": "1",
+            "local_scale_y": "1",
+            "local_scale_z": "1",
+            "reason": "route renderer multi-layer fallback: " + reason,
+        }
+        rows.append(row)
+        applied_rows.append(row)
+
+    write_csv(VISUAL_OVERRIDES, rows, FALLBACK_VISUAL_FIELDS)
+    return applied_rows
 
 
 def main() -> None:
@@ -434,18 +476,33 @@ def main() -> None:
 
     shijie_atlas = ROOT / "girlswar_merged_extracted" / "extracted" / "unity" / "bundles" / "b_35f69f1e4224c83e" / "textassets" / "4125696125331628132_Spine_shijieanniu.atlas.txt"
     shijie_png = ROOT / "girlswar_merged_extracted" / "extracted" / "unity" / "bundles" / "b_35f69f1e4224c83e" / "images" / "T" / "-1569618029946744867_Spine_shijieanniu.png"
-    fallback_asset = "Assets/RestoreData/route_renderer_fallbacks/Spine_shijieanniu_diqiu.png"
-    fallback_dst = UNITY / fallback_asset
+    fallback_regions = ["zhuye_di1", "diqiu", "zhuye_bian", "yun", "yun2"]
+    fallback_assets: dict[str, str] = {}
+    fallback_bounds: dict[str, list[int]] = {}
+    fallback_crop_paths: dict[str, str] = {}
+    applied_layer_rows: list[dict[str, str]] = []
     fallback_applied = False
     fallback_note = "not applied"
     if shijie_atlas.exists() and shijie_png.exists():
         page, regions = parse_spine_atlas(shijie_atlas)
-        bounds = regions.get("diqiu", {}).get("bounds")
-        if isinstance(bounds, list) and len(bounds) == 4:
-            fallback_applied = ensure_region_png(shijie_png, fallback_dst, bounds)
-            if fallback_applied:
-                update_visual_override(fallback_asset)
-                fallback_note = f"cropped diqiu {bounds} from {file_rel(shijie_png)} and applied to worldwanfaBtn"
+        for region_name in fallback_regions:
+            bounds = regions.get(region_name, {}).get("bounds")
+            if isinstance(bounds, list) and len(bounds) == 4:
+                asset_path = f"Assets/RestoreData/route_renderer_fallbacks/Spine_shijieanniu_{region_name}.png"
+                dst = UNITY / asset_path
+                if ensure_region_png(shijie_png, dst, bounds):
+                    fallback_assets[region_name] = asset_path
+                    fallback_bounds[region_name] = bounds
+                    fallback_crop_paths[region_name] = str(dst)
+        applied_layer_rows = update_visual_override_layers(fallback_assets)
+        fallback_applied = len(applied_layer_rows) > 0
+        if fallback_applied:
+            applied_names = ", ".join(row["create_child_name"] for row in applied_layer_rows)
+            fallback_note = (
+                f"cropped {len(fallback_assets)} Spine_shijieanniu regions from {file_rel(shijie_png)}; "
+                f"applied evidence-safe worldwanfaBtn child layers: {applied_names}; "
+                "yun/yun2 are cropped but not displayed because exact Spine slot transforms are not available"
+            )
 
     trace_fields = [
         "game_object_name", "game_object_id", "hierarchy_path", "game_object_active",
@@ -471,7 +528,9 @@ def main() -> None:
         "displayable_texture_count": len(unique_displayable),
         "displayable_textures": unique_displayable,
         "fallback_applied": fallback_applied,
-        "fallback_asset": fallback_asset if fallback_applied else "",
+        "fallback_assets": fallback_assets,
+        "fallback_bounds": fallback_bounds,
+        "applied_fallback_layers": applied_layer_rows,
         "fallback_note": fallback_note,
         "main_skeletons": [
             {
@@ -495,7 +554,7 @@ def main() -> None:
     md.append("Generated: 2026-06-25 KST\n")
     md.append("## Verdict\n")
     md.append("`wanfaWorldNode`의 누락 비주얼은 원본 `SkeletonGraphic`/particle-style renderer 계층이다. `spine_diqiu`는 `maininterface_ext_8.assetbundle`의 `Spine_shijieanniu_SkeletonData`, `spine_xiaoren`은 `npcprefabandres/8007.assetbundle`의 `8007_SkeletonData`를 참조한다.\n")
-    md.append("1차 fallback은 실제 Spine runtime 재생이 아니라, 원본 atlas region `diqiu`를 추출해 `worldwanfaBtn`에 비차단 Image로 붙이는 최소 표시 복원이다. route owner active/sibling/anchor는 바꾸지 않았다.\n")
+    md.append("Fallback은 실제 Spine runtime 재생이 아니라 원본 atlas region을 개별 crop해 `worldwanfaBtn` 아래 비차단 child Image layer로 붙이는 복원이다. route owner active/sibling/anchor와 button raycast는 바꾸지 않는다.\n")
     md.append("## Skeleton References\n")
     md.append("| Node | SkeletonData ref | Bundle | Atlas/TextAsset | Texture | Animation | CanvasRenderers |\n")
     md.append("| --- | --- | --- | --- | --- | --- | ---: |\n")
@@ -510,13 +569,22 @@ def main() -> None:
         md.append(f"- `{path}`\n")
     md.append("\n## Fallback\n")
     md.append(f"- Applied: `{fallback_applied}`\n")
-    md.append(f"- Asset: `{fallback_asset if fallback_applied else ''}`\n")
+    md.append("- Applied layers:\n")
+    for row in applied_layer_rows:
+        md.append(f"  - `{row['create_child_name']}` -> `{row['sprite_asset_path']}`, size `{row['size_delta_x']}x{row['size_delta_y']}`, raycast `{row['raycast_target']}`\n")
+    md.append("- Cropped regions:\n")
+    for region_name in fallback_regions:
+        if region_name in fallback_assets:
+            md.append(f"  - `{region_name}` bounds `{fallback_bounds.get(region_name, [])}` -> `{fallback_assets[region_name]}`\n")
     md.append(f"- Note: {fallback_note}\n")
+    md.append("- Deferred display: `yun`, `yun2`, and `spine_xiaoren`/`8007` need original Spine bone/slot transforms before they can be placed without coordinate guessing.\n")
     md.append("\n## Particle / Effect Evidence\n")
     md.append(f"- Particle-style owner rows: `{len(particle_rows)}`\n")
     md.append("- `un_MainInterface_fire` and `Entry` use script id `-7396295067816475631`; these are not forced visible without original active-chain and localScale evidence.\n")
     md.append("\n## Generated Files\n")
-    for path in [TRACE_JSON, TRACE_CSV, RESOURCE_CSV, PARTICLE_CSV, fallback_dst if fallback_applied else None]:
+    generated_paths = [TRACE_JSON, TRACE_CSV, RESOURCE_CSV, PARTICLE_CSV]
+    generated_paths.extend(Path(path) for path in fallback_crop_paths.values())
+    for path in generated_paths:
         if path:
             md.append(f"- `{path}`\n")
     md.append("\n## Latest Verification\n")

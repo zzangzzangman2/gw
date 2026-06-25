@@ -1,0 +1,15 @@
+{
+  "attachManifest": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_battle_unity\\Assets\\RestoreData\\battle\\BATTLE_FLOW_SKILL_EFFECT_ATTACH_MANIFEST.json",
+  "unityResult": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_battle_unity\\Assets\\RestoreData\\battle\\BATTLE_FLOW_SKILL_EFFECT_ATTACH_RESULT.json",
+  "scene": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_battle_unity\\Assets\\Scenes\\BattleRuntimeFlowSkillEffectAttach.unity",
+  "sceneExists": true,
+  "unityBatchmodeSuccess": true,
+  "knownSkillIds": 20,
+  "loadableAttachments": 12,
+  "unresolvedSkills": 8,
+  "uniqueBundles": 4,
+  "instantiateSuccess": 12,
+  "instantiateFail": 0,
+  "loadedBundles": 4,
+  "next": "BATTLE_15_CLOSE_COMMON_EFFECT_DEPENDENCIES_OR_ATTACH_PLAYABLE_MARKERS"
+}

@@ -1,0 +1,2 @@
+@echo off
+call "%~dp0_restore_tools\107_TRACE_GUILDMAIN_WHITE_PANEL_MATERIAL_SHADER_RUNTIME.cmd"

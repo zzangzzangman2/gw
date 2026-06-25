@@ -14,6 +14,12 @@ namespace GirlsWarRestore
         public string luaHandler;
         public string luaHandlerConfidence;
         public string luaHandlerEvent;
+        public string navigationKind;
+        public string navigationTargetKey;
+        public string navigationTargetUiForm;
+        public string navigationTargetPrefabBundle;
+        public string navigationConfidence;
+        public bool navigationHarnessConnected;
         public bool logPointerClicks;
 
         public void LogClick()
@@ -26,7 +32,13 @@ namespace GirlsWarRestore
                 + " luaModule=" + luaModule
                 + " luaHandler=" + luaHandler
                 + " luaConfidence=" + luaHandlerConfidence
-                + " luaEvent=" + luaHandlerEvent);
+                + " luaEvent=" + luaHandlerEvent
+                + " navKind=" + navigationKind
+                + " navTarget=" + navigationTargetKey
+                + " navUiForm=" + navigationTargetUiForm
+                + " navConfidence=" + navigationConfidence);
+            if (navigationHarnessConnected)
+                RestoreNavigationRouter.Route(this);
         }
 
         public void OnPointerClick(PointerEventData eventData)

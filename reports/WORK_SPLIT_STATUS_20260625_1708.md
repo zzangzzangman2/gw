@@ -1,4 +1,4 @@
-# GirlsWar Work Split Status - 2026-06-25 17:17 KST
+# GirlsWar Work Split Status - 2026-06-25 17:48 KST
 
 ## Coordinator
 
@@ -7,11 +7,72 @@
 - Remote: `https://github.com/zzangzzangman2/gw.git`
 - Originals/evidence are still preserved. Do not delete `girl1.xapk`, `com.girlwars.kr`, OBB, or extracted evidence until coverage and usage are documented.
 
+## Latest Correction - 2026-06-25 18:40 KST
+
+- User visual review was correct: recent UI/Battle captures must not be treated as restored just because component/sprite counts improved.
+- UI `MAININTERFACE_107_GUILDMAIN_WHITE_PANEL_MATERIAL_SHADER_RUNTIME_TRACE` completed:
+  - Verdict: `UI_GuildMain` is still **not normal**.
+  - whiteish visible ratio stayed `0.8171147704`.
+  - large white visible Images: `19`.
+  - white no-sprite / missing Image sprite / missing script objects: `78 / 152 / 881`.
+  - click validation stayed healthy: `24 / 24 / 0 / 24`.
+  - no material/shader/color/type fix was applied because evidence was not strong enough.
+  - Main blocker: `target runtime Lua/XLua initialization trace`.
+  - Root shortcut added: `107_TRACE_GUILDMAIN_WHITE_PANEL_MATERIAL_SHADER_RUNTIME.cmd`.
+- Battle `BATTLE_20_BATTLE_HUD_VISUAL_SANITY_REBASE_TO_PLAY_VIDEO_NORMAL_BATTLE` completed/reclassified:
+  - It now uses live AssetBundle instantiate instead of trusting a saved scene whose UI scripts can fall to `m_Script: 0`.
+  - `activeGraphicCount` recovered to `268`, and top/bottom/right screen zones are camera-visible.
+  - Visual verdict is still **failed**, not acceptable: `visual_status=failed_missing_runtime_binding`.
+  - `matches_clip05_static_hud_layout=false`.
+  - `default_white_ui_blocks_visible=true`, `nearWhiteRatio=0.65896`.
+  - The top/bottom/right zone hit was a false positive from placeholder/white UI blocks, not original HP/VS, actor/skill cards, or right controls from `플레이.mp4`.
+  - Next blocker: `BATTLE_21_BATTLE_HUD_RUNTIME_BINDING_AND_SPRITE_PPTR_VISUAL_TRACE`.
+- Current rule going forward:
+  - A capture only passes when it visually matches the reference layout, not merely when Unity `Graphic` or screen-zone counts are nonzero.
+  - Debug/evidence overlays, white/default placeholder panels, whole atlas images, and coordinate-only fixes remain invalid.
+
+## Latest Update - 2026-06-25 18:10 KST
+
+- New play reference video received: `C:\Users\godho\Downloads\플레이.mp4`.
+- Video metadata: `600.82s`, `1920x896`, about `55.344 fps`.
+- Video motion analysis tool:
+  - `VIDEO_01_ANALYZE_PLAY_REFERENCE_MOTION.cmd`
+  - `_restore_tools\VIDEO_01_ANALYZE_PLAY_REFERENCE_MOTION.cmd`
+  - `_restore_tools\scripts\analyze_play_reference_video_motion.py`
+- Video reference outputs:
+  - `reports\video_reference\PLAY_REFERENCE_VIDEO_MOTION_ANALYSIS.md`
+  - `reports\video_reference\PLAY_REFERENCE_VIDEO_MOTION_ANALYSIS.json`
+  - `reports\video_reference\PLAY_REFERENCE_RESTORE_NOTES.md`
+  - `reports\video_reference\play_motion_metrics_0p5s.csv`
+  - `reports\video_reference\play_overview_10s_contact.jpg`
+  - `reports\video_reference\clips\battle_motion_clip_*.mp4`
+- Video restore rule:
+  - Use motion clips for battle HUD/effect/cut-in validation, not still screenshots only.
+  - Treat the top-center circular overlay as recording/touch artifact unless the user confirms it is in-game UI.
+  - Do not reproduce recorder/debug overlays in final restored UI.
+- UI current task:
+  - `MAININTERFACE_NAVIGATION_TARGET_MISSING_SCRIPT_AND_SPRITE_REFERENCE_TRACE` is active.
+  - Recent completed outputs include navigation target load/instantiate/capture and dependency preload passes.
+  - `MAININTERFACE_NAVIGATION_TARGET_PREFAB_DEPENDENCY_FIXES` resolved only `2` missing sprites/white no-sprite Images; remaining blocker is missing script/type or deeper sprite reference/runtime binding, especially `UI_GuildMain`.
+  - Video reference has been sent to the UI thread as priority/transition validation guidance.
+- Battle current task:
+  - `BATTLE_18_RECONSTRUCT_BATTLE_UI_COMPONENT_TYPES` is active.
+  - `BATTLE_17_ATTACH_LOADABLE_BATTLE_HUD_PREFABS_TO_FLOW_SCENE` completed.
+  - Attached HUD roots: `10`.
+  - Battle HUD counts after attach: Canvas/RectTransform/Image/Text+TMP/Button = `12 / 814 / 0 / 0 / 0`.
+  - Missing script/component count: `889`.
+  - Next blocker: original UI component type reconstruction before sprite/region/font join.
+  - Video reference has been sent to the battle thread for motion validation after type reconstruction.
+- Git status:
+  - Local work contains many new useful reports/tools/scenes plus Unity-generated cache churn.
+  - `.gitignore` has battle Unity cache rules, but previously tracked `girlswar_battle_unity\Library`, `Logs`, and `UserSettings` still need `git rm --cached` after active Unity tasks settle.
+  - Do not push until current UI/Battle background tasks pause.
+
 ## UI Thread
 
 - Thread: `GirlsWar UI 복원 전용`
 - Current status: active
-- Current task: MainInterface right route cluster multi-layer fallback refinement from original atlas/renderer evidence.
+- Current task: `MAININTERFACE_BUTTON_NAVIGATION_TRACE`.
 - New tools created:
   - `ANALYZE_MAININTERFACE_ROUTE_RENDERERS.cmd`
   - `_restore_tools\99_ANALYZE_MAININTERFACE_ROUTE_RENDERERS.cmd`
@@ -24,18 +85,32 @@
   - `reports\maininterface\MAININTERFACE_ROUTE_RENDERER_ASSET_TRACE.md`
   - Evidence-based bitmap fallback was generated for `Spine_shijieanniu_diqiu`.
   - Unity build/capture/click validation passed with active clickable `24/24`, blocked `0`, invoked `24`.
-- Prompt sent at about 17:16 KST:
-  - Inspect latest capture and evaluate whether single `diqiu` fallback is visually correct.
-  - Split `Spine_shijieanniu.atlas` regions `diqiu`, `zhuye_di1`, `zhuye_bian`, `yun`, `yun2` into evidence-based multi-layer fallback candidates.
-  - Apply to `wanfaWorldNode` only when original hierarchy/region/rect evidence supports it.
-  - Try `8007` fallback for `spine_xiaoren` only if rect/scale evidence is solid.
-  - Rebuild, graphics capture, click validation, then write `reports\maininterface\MAININTERFACE_ROUTE_RENDERER_FALLBACK_RESULT.md`.
+- Route renderer fallback refinement completed:
+  - Report: `reports\maininterface\MAININTERFACE_ROUTE_RENDERER_FALLBACK_RESULT.md`
+  - Trace updated: `reports\maininterface\MAININTERFACE_ROUTE_RENDERER_ASSET_TRACE.md`
+  - Applied `Spine_shijieanniu.atlas` layers: `zhuye_di1`, `diqiu`, `zhuye_bian`
+  - Cropped but not displayed yet: `yun`, `yun2`
+  - Still held back because of weak slot/bone evidence: `spine_xiaoren/8007`, particle-style renderer
+  - Build success: visual overrides `4/4`
+  - Click validation stayed healthy: active `24`, raycast-clickable `24/24`, blocked `0`, invoked `24`
+- New UI prompt sent at about 17:31 KST:
+  - Build `reports\maininterface\MAININTERFACE_BUTTON_NAVIGATION_TRACE.md`.
+  - Generate `girlswar_maininterface_unity\Assets\RestoreData\maininterface_button_navigation_map.json`.
+  - Trace all active clickable `24` buttons to original hierarchy, Button component/pathID, Lua/xLua handler, IL2CPP/string clues, and target prefab/bundle evidence.
+  - Add a non-overlay navigation harness: only evidence-backed targets should be connected; unknown buttons stay unknown with reasons.
+  - Rebuild, capture, and keep click validation at `24/24`, blocked `0`.
+- Current UI progress at about 17:47 KST:
+  - `maininterface_button_navigation_map.json`, navigation CSV, and `MAININTERFACE_BUTTON_NAVIGATION_TRACE.md` have been generated in draft form.
+  - Active buttons: `24`.
+  - Initial evidence-resolved count: `22/24`.
+  - Initial target prefab resolved count was low (`2`) and is being improved with evidence aliases such as `UI_JingjiFrame_View -> UI_JingjiFrame`, `UI_GuildMainView -> UI_GuildMain`, `UI_SystemSet -> UI_SystemSettings`.
+  - Important correction: the four active `wanfaBtn` objects share a name but must be resolved by hierarchy path, not by button name. Their handlers differ by parent item: Adventure, Jinji, Limit, ActJump.
 
 ## Battle Thread
 
 - Thread: `GirlsWar 전투 구현 전용`
 - Current status: active
-- Current task: `BATTLE_10` AssetBundle streaming/load probe.
+- Current task: `BATTLE_13` skill/effect bundle streaming trace and preview.
 - Current progress:
   - `BATTLE_07` minimal scene is generated and verified.
   - Scene: `girlswar_battle_unity\Assets\Scenes\BattlePrototype.unity`
@@ -61,20 +136,71 @@
   - Map layers: `3`
   - Actor texture fallback: `3` (`1002`, `1034`, `1100111/3001`)
   - Missing actor placeholders: `9`
-- BATTLE_10 prompt sent at about 17:17 KST:
-  - Add `_restore_tools\BATTLE_10_PROBE_ASSETBUNDLE_STREAMING.cmd`.
-  - Probe loadable actor bundles `1002`, `1034`, `3001` plus representative map 11001 bundles using Unity `AssetBundle.LoadFromFile`.
-  - Record load success/fail, asset names, asset type counts, prefab instantiate status, dependency issues.
-  - Optional scene: `girlswar_battle_unity\Assets\Scenes\BattleAssetBundleStreamingProbe.unity`.
-  - Output JSON: `girlswar_battle_unity\Assets\RestoreData\battle\BATTLE_ASSETBUNDLE_STREAMING_PROBE.json`.
-  - Report: `reports\battle\BATTLE_ASSETBUNDLE_STREAMING_PROBE_RESULT.md`.
+- BATTLE_10 completed:
+  - Report: `reports\battle\BATTLE_ASSETBUNDLE_STREAMING_PROBE_RESULT.md`
+  - JSON: `girlswar_battle_unity\Assets\RestoreData\battle\BATTLE_ASSETBUNDLE_STREAMING_PROBE.json`
+  - Scene: `girlswar_battle_unity\Assets\Scenes\BattleAssetBundleStreamingProbe.unity`
+  - Probe success: `4`
+  - Fail: `0`
+  - Prefab instantiate: `3` (`Hero_1002`, `Hero_1034`, `Hero_3001`)
+  - BATTLE_09 extracted texture fallback assets remain available: `3`
+- BATTLE_11 completed:
+  - Runtime scene: `girlswar_battle_unity\Assets\Scenes\BattleRuntimeStreamingReconstruction.unity`
+  - Runtime manifest: `girlswar_battle_unity\Assets\RestoreData\battle\BATTLE_RUNTIME_STREAMING_MANIFEST.json`
+  - Hierarchy dump: `girlswar_battle_unity\Assets\RestoreData\battle\BATTLE_PREFAB_HIERARCHY_DUMP.json/.csv`
+  - Report: `reports\battle\BATTLE_PREFAB_RECONSTRUCTION_RESULT.md`
+  - Instantiated prefab: `3` (`Hero_1002`, `Hero_1034`, `Hero_3001`)
+  - Missing placeholder: `9`
+  - Hierarchy objects dumped: `3`
+  - Components dumped: `12`
+  - Renderers: `3`
+  - Skeleton evidence assets: `9`
+  - Unity batchmode: `True`
+- BATTLE_12 completed:
+  - Flow manifest: `girlswar_battle_unity\Assets\RestoreData\battle\BATTLE_RUNTIME_FLOW_MANIFEST.json`
+  - Scene: `girlswar_battle_unity\Assets\Scenes\BattleRuntimeFlowPrototype.unity`
+  - Report: `reports\battle\BATTLE_RUNTIME_FLOW_LINK_RESULT.md`
+  - Actor slots: `12`
+  - Loadable / missing: `3 / 9`
+  - Procedure evidence: decoded `ProcedureNormalBattle`, evidence `11`
+  - Skill ids: `20`
+  - Unity batchmode: `True`
+  - Scene generated: `True`
+  - `mapId=11001`, `battleType=1`, `randomSeed=445106`
+- BATTLE_13 prompt sent at about 17:48 KST:
+  - Add `_restore_tools\BATTLE_13_PROBE_SKILL_EFFECT_STREAMING.cmd`.
+  - Probe skill/effect bundle candidates for the `20` skill ids in `BATTLE_RUNTIME_FLOW_MANIFEST.json`.
+  - Use decoded skill Lua, resource trace, timeline/effect/prefab/material/texture/TextAsset candidates.
+  - Unity `AssetBundle.LoadFromFile` probe for candidate skill/effect bundles.
+  - Optional scene: `girlswar_battle_unity\Assets\Scenes\BattleSkillEffectStreamingProbe.unity`.
+  - Outputs: `girlswar_battle_unity\Assets\RestoreData\battle\BATTLE_SKILL_EFFECT_STREAMING_PROBE.json` and `reports\battle\BATTLE_SKILL_EFFECT_STREAMING_PROBE_RESULT.md`.
 
 ## GitHub Push
 
 - First push started: 2026-06-25 16:23:46 KST
-- Current status at 17:16:09 KST:
-  - `git-lfs.exe` is still running in pre-push.
-  - `remote refs/heads/main` is not created yet.
-  - Follow-up push watcher is waiting for the existing `git-lfs.exe`.
+- First push completed: 2026-06-25 17:18:34 KST
+- Remote `main` now exists:
+  - `3f505aa7457d0a2f917b68a846979857f145a1b1 refs/heads/main`
+- Current status at about 17:18:50 KST:
+  - Initial LFS upload completed: `33399/33399`, about `7.9 GB`.
+  - GitHub warning: push referenced at least `20000` LFS objects, GitHub sampled `10000`; this is a validation warning, not a failed push.
+  - Follow-up push watcher is now running and adding newer UI/Battle/generated files.
+  - Follow-up log is currently dominated by LF/CRLF working-copy warnings for decoded Lua files; no follow-up failure observed yet.
+- Current status at about 17:22 KST:
+  - Local branch shows `ahead 1`; the follow-up commit was created locally.
+  - Follow-up `git push -u origin main` is still running in `git-lfs pre-push`.
+  - Newer post-follow-up work is not included yet: BATTLE_10/BATTLE_11, the UI multi-layer fallback changes, and this status update.
+- Follow-up push completed at 17:23:41 KST:
+  - Remote `main`: `ad31b7636e0006973fbef77646da3232b23824ed`
+  - LFS upload completed: `2658/2658`, about `9.0 MB`
+  - Pushed commit range: `3f505aa74..ad31b7636`
+- Current local-only work after that push:
+  - BATTLE_10 AssetBundle streaming probe
+  - BATTLE_11 runtime prefab reconstruction
+  - BATTLE_12 runtime flow connection
+  - BATTLE_13 skill/effect streaming probe in progress
+  - UI route renderer multi-layer fallback result
+  - UI button navigation trace in progress
+  - This status update
 - Do not kill the upload unless explicitly requested.
-- After first push exits, the follow-up watcher should commit and push the newer UI/Battle files.
+- Next Git action should happen after the currently active UI/Battle tasks finish: commit and push only the latest useful outputs, while avoiding unnecessary Unity cache churn where practical.

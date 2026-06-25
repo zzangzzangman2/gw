@@ -1,0 +1,411 @@
+{
+  "status": "skill_effect_attach_manifest",
+  "flowManifest": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_battle_unity\\Assets\\RestoreData\\battle\\BATTLE_RUNTIME_FLOW_MANIFEST.json",
+  "skillProbe": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_battle_unity\\Assets\\RestoreData\\battle\\BATTLE_SKILL_EFFECT_STREAMING_PROBE.json",
+  "scene": "Assets/Scenes/BattleRuntimeFlowSkillEffectAttach.unity",
+  "attachments": [
+    {
+      "skillId": 1002101,
+      "side": "our",
+      "heroDid": "1002",
+      "heroId": 50870,
+      "wave": 0,
+      "slot": 2,
+      "bundle": "download/skillprefabsandres/1002.assetbundle",
+      "absolutePath": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\extracted\\unity\\clean_unityfs_slices\\download\\skillprefabsandres\\1002.assetbundle",
+      "prefabAsset": "assets/download/skillprefabsandres/1002/1002101.prefab",
+      "source": "BATTLE_13_LOADABLE_TIMELINE_PREFAB",
+      "x": -2.2,
+      "y": -1.2,
+      "scale": 0.32,
+      "luaEvidenceCount": 2
+    },
+    {
+      "skillId": 1002201,
+      "side": "our",
+      "heroDid": "1002",
+      "heroId": 50870,
+      "wave": 0,
+      "slot": 2,
+      "bundle": "download/skillprefabsandres/1002.assetbundle",
+      "absolutePath": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\extracted\\unity\\clean_unityfs_slices\\download\\skillprefabsandres\\1002.assetbundle",
+      "prefabAsset": "assets/download/skillprefabsandres/1002/1002201.prefab",
+      "source": "BATTLE_13_LOADABLE_TIMELINE_PREFAB",
+      "x": -1.65,
+      "y": -1.2,
+      "scale": 0.32,
+      "luaEvidenceCount": 2
+    },
+    {
+      "skillId": 1002301,
+      "side": "our",
+      "heroDid": "1002",
+      "heroId": 50870,
+      "wave": 0,
+      "slot": 2,
+      "bundle": "download/skillprefabsandres/1002.assetbundle",
+      "absolutePath": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\extracted\\unity\\clean_unityfs_slices\\download\\skillprefabsandres\\1002.assetbundle",
+      "prefabAsset": "assets/download/skillprefabsandres/1002/1002301.prefab",
+      "source": "BATTLE_13_LOADABLE_TIMELINE_PREFAB",
+      "x": -1.1,
+      "y": -1.2,
+      "scale": 0.32,
+      "luaEvidenceCount": 2
+    },
+    {
+      "skillId": 1012101,
+      "side": "enemy",
+      "heroDid": "1100111",
+      "heroId": -1,
+      "wave": 1,
+      "slot": 1,
+      "bundle": "download/skillprefabsandres/1012.assetbundle",
+      "absolutePath": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\extracted\\unity\\clean_unityfs_slices\\download\\skillprefabsandres\\1012.assetbundle",
+      "prefabAsset": "assets/download/skillprefabsandres/1012/1012101.prefab",
+      "source": "BATTLE_13_LOADABLE_TIMELINE_PREFAB",
+      "x": 0.5,
+      "y": 1.4,
+      "scale": 0.32,
+      "luaEvidenceCount": 2
+    },
+    {
+      "skillId": 1012201,
+      "side": "enemy",
+      "heroDid": "1100111",
+      "heroId": -1,
+      "wave": 1,
+      "slot": 1,
+      "bundle": "download/skillprefabsandres/1012.assetbundle",
+      "absolutePath": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\extracted\\unity\\clean_unityfs_slices\\download\\skillprefabsandres\\1012.assetbundle",
+      "prefabAsset": "assets/download/skillprefabsandres/1012/1012201.prefab",
+      "source": "BATTLE_13_LOADABLE_TIMELINE_PREFAB",
+      "x": 1.05,
+      "y": 1.4,
+      "scale": 0.32,
+      "luaEvidenceCount": 2
+    },
+    {
+      "skillId": 1012301,
+      "side": "enemy",
+      "heroDid": "1100111",
+      "heroId": -1,
+      "wave": 1,
+      "slot": 1,
+      "bundle": "download/skillprefabsandres/1012.assetbundle",
+      "absolutePath": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\extracted\\unity\\clean_unityfs_slices\\download\\skillprefabsandres\\1012.assetbundle",
+      "prefabAsset": "assets/download/skillprefabsandres/1012/1012301.prefab",
+      "source": "BATTLE_13_LOADABLE_TIMELINE_PREFAB",
+      "x": 1.6,
+      "y": 1.4,
+      "scale": 0.32,
+      "luaEvidenceCount": 2
+    },
+    {
+      "skillId": 1034101,
+      "side": "our",
+      "heroDid": "1034",
+      "heroId": 50874,
+      "wave": 0,
+      "slot": 3,
+      "bundle": "download/skillprefabsandres/1034.assetbundle",
+      "absolutePath": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\extracted\\unity\\clean_unityfs_slices\\download\\skillprefabsandres\\1034.assetbundle",
+      "prefabAsset": "assets/download/skillprefabsandres/1034/1034101.prefab",
+      "source": "BATTLE_13_LOADABLE_TIMELINE_PREFAB",
+      "x": -0.55,
+      "y": -1.2,
+      "scale": 0.32,
+      "luaEvidenceCount": 2
+    },
+    {
+      "skillId": 1034201,
+      "side": "our",
+      "heroDid": "1034",
+      "heroId": 50874,
+      "wave": 0,
+      "slot": 3,
+      "bundle": "download/skillprefabsandres/1034.assetbundle",
+      "absolutePath": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\extracted\\unity\\clean_unityfs_slices\\download\\skillprefabsandres\\1034.assetbundle",
+      "prefabAsset": "assets/download/skillprefabsandres/1034/1034201.prefab",
+      "source": "BATTLE_13_LOADABLE_TIMELINE_PREFAB",
+      "x": 0.0,
+      "y": -1.2,
+      "scale": 0.32,
+      "luaEvidenceCount": 2
+    },
+    {
+      "skillId": 1034301,
+      "side": "our",
+      "heroDid": "1034",
+      "heroId": 50874,
+      "wave": 0,
+      "slot": 3,
+      "bundle": "download/skillprefabsandres/1034.assetbundle",
+      "absolutePath": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\extracted\\unity\\clean_unityfs_slices\\download\\skillprefabsandres\\1034.assetbundle",
+      "prefabAsset": "assets/download/skillprefabsandres/1034/1034301.prefab",
+      "source": "BATTLE_13_LOADABLE_TIMELINE_PREFAB",
+      "x": 0.55,
+      "y": -1.2,
+      "scale": 0.32,
+      "luaEvidenceCount": 2
+    },
+    {
+      "skillId": 1036101,
+      "side": "our",
+      "heroDid": "1036",
+      "heroId": 51469,
+      "wave": 0,
+      "slot": 1,
+      "bundle": "download/skillprefabsandres/1036.assetbundle",
+      "absolutePath": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\extracted\\unity\\clean_unityfs_slices\\download\\skillprefabsandres\\1036.assetbundle",
+      "prefabAsset": "assets/download/skillprefabsandres/1036/1036101.prefab",
+      "source": "BATTLE_13_LOADABLE_TIMELINE_PREFAB",
+      "x": -3.85,
+      "y": -1.2,
+      "scale": 0.32,
+      "luaEvidenceCount": 2
+    },
+    {
+      "skillId": 1036201,
+      "side": "our",
+      "heroDid": "1036",
+      "heroId": 51469,
+      "wave": 0,
+      "slot": 1,
+      "bundle": "download/skillprefabsandres/1036.assetbundle",
+      "absolutePath": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\extracted\\unity\\clean_unityfs_slices\\download\\skillprefabsandres\\1036.assetbundle",
+      "prefabAsset": "assets/download/skillprefabsandres/1036/1036201.prefab",
+      "source": "BATTLE_13_LOADABLE_TIMELINE_PREFAB",
+      "x": -3.3,
+      "y": -1.2,
+      "scale": 0.32,
+      "luaEvidenceCount": 2
+    },
+    {
+      "skillId": 1036301,
+      "side": "our",
+      "heroDid": "1036",
+      "heroId": 51469,
+      "wave": 0,
+      "slot": 1,
+      "bundle": "download/skillprefabsandres/1036.assetbundle",
+      "absolutePath": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\extracted\\unity\\clean_unityfs_slices\\download\\skillprefabsandres\\1036.assetbundle",
+      "prefabAsset": "assets/download/skillprefabsandres/1036/1036301.prefab",
+      "source": "BATTLE_13_LOADABLE_TIMELINE_PREFAB",
+      "x": -2.75,
+      "y": -1.2,
+      "scale": 0.32,
+      "luaEvidenceCount": 2
+    }
+  ],
+  "unresolvedSkills": [
+    {
+      "skillId": 1001401,
+      "reason": "bundle_candidates_missing_or_path_normalize_unresolved",
+      "owners": [
+        {
+          "side": "enemy",
+          "heroDid": "1100131",
+          "heroId": -1,
+          "wave": 3,
+          "slot": 1
+        },
+        {
+          "side": "enemy",
+          "heroDid": "1100132",
+          "heroId": -2,
+          "wave": 3,
+          "slot": 2
+        },
+        {
+          "side": "enemy",
+          "heroDid": "1100133",
+          "heroId": -3,
+          "wave": 3,
+          "slot": 3
+        }
+      ]
+    },
+    {
+      "skillId": 1001403,
+      "reason": "bundle_candidates_missing_or_path_normalize_unresolved",
+      "owners": [
+        {
+          "side": "enemy",
+          "heroDid": "1100131",
+          "heroId": -1,
+          "wave": 3,
+          "slot": 1
+        },
+        {
+          "side": "enemy",
+          "heroDid": "1100132",
+          "heroId": -2,
+          "wave": 3,
+          "slot": 2
+        },
+        {
+          "side": "enemy",
+          "heroDid": "1100133",
+          "heroId": -3,
+          "wave": 3,
+          "slot": 3
+        }
+      ]
+    },
+    {
+      "skillId": 1012401,
+      "reason": "bundle_candidates_missing_or_path_normalize_unresolved",
+      "owners": [
+        {
+          "side": "enemy",
+          "heroDid": "1100111",
+          "heroId": -1,
+          "wave": 1,
+          "slot": 1
+        },
+        {
+          "side": "enemy",
+          "heroDid": "1100112",
+          "heroId": -2,
+          "wave": 1,
+          "slot": 2
+        },
+        {
+          "side": "enemy",
+          "heroDid": "1100113",
+          "heroId": -3,
+          "wave": 1,
+          "slot": 3
+        },
+        {
+          "side": "enemy",
+          "heroDid": "1100121",
+          "heroId": -1,
+          "wave": 2,
+          "slot": 1
+        },
+        {
+          "side": "enemy",
+          "heroDid": "1100122",
+          "heroId": -2,
+          "wave": 2,
+          "slot": 2
+        },
+        {
+          "side": "enemy",
+          "heroDid": "1100123",
+          "heroId": -3,
+          "wave": 2,
+          "slot": 3
+        }
+      ]
+    },
+    {
+      "skillId": 1012403,
+      "reason": "bundle_candidates_missing_or_path_normalize_unresolved",
+      "owners": [
+        {
+          "side": "enemy",
+          "heroDid": "1100111",
+          "heroId": -1,
+          "wave": 1,
+          "slot": 1
+        },
+        {
+          "side": "enemy",
+          "heroDid": "1100112",
+          "heroId": -2,
+          "wave": 1,
+          "slot": 2
+        },
+        {
+          "side": "enemy",
+          "heroDid": "1100113",
+          "heroId": -3,
+          "wave": 1,
+          "slot": 3
+        },
+        {
+          "side": "enemy",
+          "heroDid": "1100121",
+          "heroId": -1,
+          "wave": 2,
+          "slot": 1
+        },
+        {
+          "side": "enemy",
+          "heroDid": "1100122",
+          "heroId": -2,
+          "wave": 2,
+          "slot": 2
+        },
+        {
+          "side": "enemy",
+          "heroDid": "1100123",
+          "heroId": -3,
+          "wave": 2,
+          "slot": 3
+        }
+      ]
+    },
+    {
+      "skillId": 1034401,
+      "reason": "bundle_candidates_missing_or_path_normalize_unresolved",
+      "owners": [
+        {
+          "side": "our",
+          "heroDid": "1034",
+          "heroId": 50874,
+          "wave": 0,
+          "slot": 3
+        }
+      ]
+    },
+    {
+      "skillId": 1034402,
+      "reason": "bundle_candidates_missing_or_path_normalize_unresolved",
+      "owners": [
+        {
+          "side": "our",
+          "heroDid": "1034",
+          "heroId": 50874,
+          "wave": 0,
+          "slot": 3
+        }
+      ]
+    },
+    {
+      "skillId": 1036401,
+      "reason": "bundle_candidates_missing_or_path_normalize_unresolved",
+      "owners": [
+        {
+          "side": "our",
+          "heroDid": "1036",
+          "heroId": 51469,
+          "wave": 0,
+          "slot": 1
+        }
+      ]
+    },
+    {
+      "skillId": 1036402,
+      "reason": "bundle_candidates_missing_or_path_normalize_unresolved",
+      "owners": [
+        {
+          "side": "our",
+          "heroDid": "1036",
+          "heroId": 51469,
+          "wave": 0,
+          "slot": 1
+        }
+      ]
+    }
+  ],
+  "counts": {
+    "knownSkillIds": 20,
+    "loadableAttachments": 12,
+    "unresolvedSkills": 8,
+    "uniqueBundles": 4
+  },
+  "next": "BATTLE_14_ATTACH_LOADABLE_SKILL_EFFECT_TO_FLOW_SCENE"
+}

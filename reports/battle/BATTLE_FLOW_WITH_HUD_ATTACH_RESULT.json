@@ -1,0 +1,30 @@
+{
+  "attachedHudRootCount": 10,
+  "attachedPrefabNames": [
+    "ui_normalbattle.prefab",
+    "ui_battle3dui.prefab",
+    "ui_normalbattle_heroitem.prefab",
+    "item_buff_left.prefab",
+    "item_buff_right.prefab",
+    "ui_normalbattle_pause.prefab",
+    "ui_normalbattle_skipview.prefab",
+    "ui_testbattle.prefab",
+    "victory_spine_base.prefab",
+    "victory_spine_base2.prefab"
+  ],
+  "canvasCount": 12,
+  "rectTransformCount": 814,
+  "imageCount": 0,
+  "textCount": 0,
+  "buttonCount": 0,
+  "missingScriptCount": 889,
+  "spriteMaterialFontDependencyUnresolvedCount": 889,
+  "scene": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_battle_unity\\Assets\\Scenes\\BattleRuntimeFlowWithHudPrototype.unity",
+  "sceneExists": true,
+  "capture": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_battle_unity\\Assets\\RestoreCaptures\\battle_hud\\BattleRuntimeFlowWithHudPrototype_1680x720.png",
+  "captureExists": true,
+  "captureVisualAssessment": "capture_exists_but_not_original_hud_like_due_unresolved_ui_widget_components_and_sprite_region_dependencies",
+  "clickValidation": "deferred:no_resolved_Button_component",
+  "unityBatchmodeSuccess": true,
+  "nextBattle18Recommendation": "BATTLE_18_RECONSTRUCT_BATTLE_UI_COMPONENT_TYPES"
+}

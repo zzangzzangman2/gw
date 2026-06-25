@@ -1,0 +1,7 @@
+{
+  "name": "Coffee.UIParticle",
+  "references": [
+    "UnityEngine.UI"
+  ],
+  "autoReferenced": true
+}

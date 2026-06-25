@@ -1,0 +1,2 @@
+@echo off
+call "%~dp0_restore_tools\BATTLE_20_BATTLE_HUD_VISUAL_SANITY_REBASE_TO_PLAY_VIDEO_NORMAL_BATTLE.cmd"

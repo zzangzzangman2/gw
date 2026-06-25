@@ -1,0 +1,18 @@
+{
+  "flowManifest": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_battle_unity\\Assets\\RestoreData\\battle\\BATTLE_RUNTIME_FLOW_MANIFEST.json",
+  "flowManifestExists": true,
+  "scene": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_battle_unity\\Assets\\Scenes\\BattleRuntimeFlowPrototype.unity",
+  "sceneExists": true,
+  "sceneBytes": 110695,
+  "unityBatchmodeSuccess": true,
+  "mapId": 11001,
+  "battleType": 1,
+  "randomSeed": 445106,
+  "actorSlots": 12,
+  "loadableActors": 3,
+  "missingActors": 9,
+  "procedureEvidencePath": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_procedure\\-3424355311143813575_ProcedureNormalBattle_security_xor_raw.lua",
+  "procedureEvidenceCount": 11,
+  "knownSkillIdsCount": 20,
+  "nextBattle13Recommendation": "skills/effects bundle streaming"
+}

@@ -9,8 +9,120 @@
     "extracted/unity/bundles/b_df52239564024098/images/T/1969165562093376026_8007.png"
   ],
   "fallback_applied": true,
-  "fallback_asset": "Assets/RestoreData/route_renderer_fallbacks/Spine_shijieanniu_diqiu.png",
-  "fallback_note": "cropped diqiu [2, 257, 704, 706] from girlswar_merged_extracted\\extracted\\unity\\bundles\\b_35f69f1e4224c83e\\images\\T\\-1569618029946744867_Spine_shijieanniu.png and applied to worldwanfaBtn",
+  "fallback_assets": {
+    "zhuye_di1": "Assets/RestoreData/route_renderer_fallbacks/Spine_shijieanniu_zhuye_di1.png",
+    "diqiu": "Assets/RestoreData/route_renderer_fallbacks/Spine_shijieanniu_diqiu.png",
+    "zhuye_bian": "Assets/RestoreData/route_renderer_fallbacks/Spine_shijieanniu_zhuye_bian.png",
+    "yun": "Assets/RestoreData/route_renderer_fallbacks/Spine_shijieanniu_yun.png",
+    "yun2": "Assets/RestoreData/route_renderer_fallbacks/Spine_shijieanniu_yun2.png"
+  },
+  "fallback_bounds": {
+    "zhuye_di1": [
+      2,
+      2,
+      253,
+      253
+    ],
+    "diqiu": [
+      2,
+      257,
+      704,
+      706
+    ],
+    "zhuye_bian": [
+      257,
+      17,
+      238,
+      238
+    ],
+    "yun": [
+      497,
+      152,
+      83,
+      36
+    ],
+    "yun2": [
+      497,
+      190,
+      108,
+      65
+    ]
+  },
+  "applied_fallback_layers": [
+    {
+      "target_kind": "RouteRendererFallbackLayer",
+      "component_path_id": "",
+      "game_object_id": "",
+      "parent_game_object_id": "2331390164297400090",
+      "create_child_name": "route_fallback_zhuye_di1",
+      "game_object_name": "worldwanfaBtn/route_fallback_zhuye_di1",
+      "sprite_asset_path": "Assets/RestoreData/route_renderer_fallbacks/Spine_shijieanniu_zhuye_di1.png",
+      "color_r": "1",
+      "color_g": "1",
+      "color_b": "1",
+      "color_a": "1",
+      "preserve_aspect": "1",
+      "image_type": "0",
+      "raycast_target": "0",
+      "anchored_pos_x": "0",
+      "anchored_pos_y": "0",
+      "size_delta_x": "253",
+      "size_delta_y": "253",
+      "local_scale_x": "1",
+      "local_scale_y": "1",
+      "local_scale_z": "1",
+      "reason": "route renderer multi-layer fallback: original worldwanfaBtn RectTransform is 253x253; Spine_shijieanniu atlas region zhuye_di1 is 253x253 and is the matching base disk/frame layer"
+    },
+    {
+      "target_kind": "RouteRendererFallbackLayer",
+      "component_path_id": "",
+      "game_object_id": "",
+      "parent_game_object_id": "2331390164297400090",
+      "create_child_name": "route_fallback_diqiu",
+      "game_object_name": "worldwanfaBtn/route_fallback_diqiu",
+      "sprite_asset_path": "Assets/RestoreData/route_renderer_fallbacks/Spine_shijieanniu_diqiu.png",
+      "color_r": "1",
+      "color_g": "1",
+      "color_b": "1",
+      "color_a": "1",
+      "preserve_aspect": "1",
+      "image_type": "0",
+      "raycast_target": "0",
+      "anchored_pos_x": "0",
+      "anchored_pos_y": "0",
+      "size_delta_x": "253",
+      "size_delta_y": "253",
+      "local_scale_x": "1",
+      "local_scale_y": "1",
+      "local_scale_z": "1",
+      "reason": "route renderer multi-layer fallback: original active child spine_diqiu is a SkeletonGraphic under worldwanfaBtn; atlas region diqiu is the globe attachment, normalized into the 253x253 worldwanfaBtn rect until Spine runtime transforms are restored"
+    },
+    {
+      "target_kind": "RouteRendererFallbackLayer",
+      "component_path_id": "",
+      "game_object_id": "",
+      "parent_game_object_id": "2331390164297400090",
+      "create_child_name": "route_fallback_zhuye_bian",
+      "game_object_name": "worldwanfaBtn/route_fallback_zhuye_bian",
+      "sprite_asset_path": "Assets/RestoreData/route_renderer_fallbacks/Spine_shijieanniu_zhuye_bian.png",
+      "color_r": "1",
+      "color_g": "1",
+      "color_b": "1",
+      "color_a": "1",
+      "preserve_aspect": "1",
+      "image_type": "0",
+      "raycast_target": "0",
+      "anchored_pos_x": "0",
+      "anchored_pos_y": "0",
+      "size_delta_x": "238",
+      "size_delta_y": "238",
+      "local_scale_x": "1",
+      "local_scale_y": "1",
+      "local_scale_z": "1",
+      "reason": "route renderer multi-layer fallback: Spine_shijieanniu atlas region zhuye_bian is the 238x238 border/rim layer from the same world button skeleton; centered under worldwanfaBtn so route text siblings remain above it"
+    }
+  ],
+  "fallback_note": "cropped 5 Spine_shijieanniu regions from girlswar_merged_extracted\\extracted\\unity\\bundles\\b_35f69f1e4224c83e\\images\\T\\-1569618029946744867_Spine_shijieanniu.png; applied evidence-safe worldwanfaBtn child layers: route_fallback_zhuye_di1, route_fallback_diqiu, route_fallback_zhuye_bian; yun/yun2 are cropped but not displayed because exact Spine slot transforms are not available",
   "main_skeletons": [
     {
       "node": "spine_diqiu",

@@ -1,0 +1,54 @@
+{
+  "summary": {
+    "targetCount": 4,
+    "existingFiles": 4,
+    "visualManifest": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_battle_unity\\Assets\\RestoreData\\battle\\BATTLE_ASSET_BACKED_PREVIEW_VISUALS.json",
+    "visualAssetCopiedCount": 12
+  },
+  "targets": [
+    {
+      "kind": "actor",
+      "id": "1002",
+      "label": "our:1002",
+      "bundle": "download/roleprefabsandres/battleprefabandres/1002.assetbundle",
+      "absolutePath": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\extracted\\unity\\clean_unityfs_slices\\download\\roleprefabsandres\\battleprefabandres\\1002.assetbundle",
+      "fileExists": true,
+      "size": 639953,
+      "indexStatus": "ok",
+      "indexObjectCount": "22"
+    },
+    {
+      "kind": "actor",
+      "id": "1034",
+      "label": "our:1034",
+      "bundle": "download/roleprefabsandres/battleprefabandres/1034.assetbundle",
+      "absolutePath": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\extracted\\unity\\clean_unityfs_slices\\download\\roleprefabsandres\\battleprefabandres\\1034.assetbundle",
+      "fileExists": true,
+      "size": 863994,
+      "indexStatus": "ok",
+      "indexObjectCount": "22"
+    },
+    {
+      "kind": "actor",
+      "id": "1100111",
+      "label": "enemy:1100111",
+      "bundle": "download/roleprefabsandres/battleprefabandres/3001.assetbundle",
+      "absolutePath": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\extracted\\unity\\clean_unityfs_slices\\download\\roleprefabsandres\\battleprefabandres\\3001.assetbundle",
+      "fileExists": true,
+      "size": 193954,
+      "indexStatus": "ok",
+      "indexObjectCount": "21"
+    },
+    {
+      "kind": "map",
+      "id": "11001",
+      "label": "mapId:11001",
+      "bundle": "download/artsources/map/battlemap/map_11001/map_11001_1.assetbundle",
+      "absolutePath": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\extracted\\unity\\clean_unityfs_slices\\download\\artsources\\map\\battlemap\\map_11001\\map_11001_1.assetbundle",
+      "fileExists": true,
+      "size": 912982,
+      "indexStatus": "ok",
+      "indexObjectCount": "12"
+    }
+  ]
+}

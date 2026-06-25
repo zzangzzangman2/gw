@@ -1,0 +1,444 @@
+{
+  "video": "C:\\Users\\godho\\Downloads\\플레이.mp4",
+  "generatedAt": "",
+  "metadata": {
+    "width": 1920,
+    "height": 896,
+    "fps": 55.344,
+    "frameCount": 33252,
+    "durationSeconds": 600.824,
+    "sampleStrideFrames": 28,
+    "sampleIntervalSeconds": 0.506,
+    "sampleCount": 1188
+  },
+  "thresholds": {
+    "motionP85": 0.273953,
+    "motionP95": 0.398245,
+    "centerMotionP90": 0.329057,
+    "flashP95": 0.319865
+  },
+  "highMotionSegments": [
+    {
+      "start": 89.55,
+      "end": 91.57,
+      "duration": 2.02,
+      "sampleCount": 5,
+      "meanMotion": 0.48959,
+      "maxMotion": 0.87481,
+      "meanCenterMotion": 0.48256,
+      "maxFlashRatio": 0.74163
+    },
+    {
+      "start": 147.73,
+      "end": 151.27,
+      "duration": 3.54,
+      "sampleCount": 7,
+      "meanMotion": 0.41117,
+      "maxMotion": 0.68211,
+      "meanCenterMotion": 0.38514,
+      "maxFlashRatio": 0.95173
+    },
+    {
+      "start": 381.97,
+      "end": 382.99,
+      "duration": 1.02,
+      "sampleCount": 3,
+      "meanMotion": 0.46318,
+      "maxMotion": 0.64623,
+      "meanCenterMotion": 0.48073,
+      "maxFlashRatio": 0.40837
+    },
+    {
+      "start": 421.94,
+      "end": 422.95,
+      "duration": 1.01,
+      "sampleCount": 2,
+      "meanMotion": 0.42136,
+      "maxMotion": 0.5917,
+      "meanCenterMotion": 0.43447,
+      "maxFlashRatio": 0.03271
+    },
+    {
+      "start": 487.71,
+      "end": 488.73,
+      "duration": 1.02,
+      "sampleCount": 2,
+      "meanMotion": 0.44238,
+      "maxMotion": 0.57457,
+      "meanCenterMotion": 0.4182,
+      "maxFlashRatio": 0.08215
+    },
+    {
+      "start": 501.88,
+      "end": 503.4,
+      "duration": 1.52,
+      "sampleCount": 4,
+      "meanMotion": 0.48171,
+      "maxMotion": 0.56681,
+      "meanCenterMotion": 0.44522,
+      "maxFlashRatio": 0.96669
+    },
+    {
+      "start": 494.8,
+      "end": 496.31,
+      "duration": 1.51,
+      "sampleCount": 4,
+      "meanMotion": 0.38597,
+      "maxMotion": 0.55605,
+      "meanCenterMotion": 0.41428,
+      "maxFlashRatio": 0.57295
+    },
+    {
+      "start": 38.96,
+      "end": 39.97,
+      "duration": 1.01,
+      "sampleCount": 2,
+      "meanMotion": 0.54048,
+      "maxMotion": 0.54759,
+      "meanCenterMotion": 0.61406,
+      "maxFlashRatio": 0.07798
+    },
+    {
+      "start": 402.21,
+      "end": 404.24,
+      "duration": 2.03,
+      "sampleCount": 4,
+      "meanMotion": 0.45318,
+      "maxMotion": 0.5456,
+      "meanCenterMotion": 0.40595,
+      "maxFlashRatio": 0.73165
+    },
+    {
+      "start": 244.36,
+      "end": 245.37,
+      "duration": 1.01,
+      "sampleCount": 2,
+      "meanMotion": 0.41498,
+      "maxMotion": 0.54127,
+      "meanCenterMotion": 0.38314,
+      "maxFlashRatio": 0.00053
+    },
+    {
+      "start": 282.31,
+      "end": 283.32,
+      "duration": 1.01,
+      "sampleCount": 2,
+      "meanMotion": 0.50466,
+      "maxMotion": 0.53658,
+      "meanCenterMotion": 0.50429,
+      "maxFlashRatio": 0.00057
+    },
+    {
+      "start": 8.09,
+      "end": 12.65,
+      "duration": 4.56,
+      "sampleCount": 8,
+      "meanMotion": 0.38646,
+      "maxMotion": 0.52588,
+      "meanCenterMotion": 0.38337,
+      "maxFlashRatio": 0.40818
+    },
+    {
+      "start": 551.97,
+      "end": 552.98,
+      "duration": 1.01,
+      "sampleCount": 2,
+      "meanMotion": 0.38666,
+      "maxMotion": 0.49053,
+      "meanCenterMotion": 0.44134,
+      "maxFlashRatio": 0.26852
+    },
+    {
+      "start": 528.69,
+      "end": 529.71,
+      "duration": 1.02,
+      "sampleCount": 2,
+      "meanMotion": 0.38338,
+      "maxMotion": 0.48403,
+      "meanCenterMotion": 0.35333,
+      "maxFlashRatio": 0.09806
+    },
+    {
+      "start": 93.09,
+      "end": 94.1,
+      "duration": 1.01,
+      "sampleCount": 2,
+      "meanMotion": 0.35122,
+      "maxMotion": 0.38421,
+      "meanCenterMotion": 0.37083,
+      "maxFlashRatio": 0.41997
+    },
+    {
+      "start": 389.56,
+      "end": 391.08,
+      "duration": 1.52,
+      "sampleCount": 3,
+      "meanMotion": 0.32215,
+      "maxMotion": 0.37434,
+      "meanCenterMotion": 0.34658,
+      "maxFlashRatio": 0.00103
+    },
+    {
+      "start": 285.85,
+      "end": 286.86,
+      "duration": 1.01,
+      "sampleCount": 3,
+      "meanMotion": 0.34237,
+      "maxMotion": 0.37022,
+      "meanCenterMotion": 0.37445,
+      "maxFlashRatio": 0.16408
+    },
+    {
+      "start": 498.34,
+      "end": 499.86,
+      "duration": 1.52,
+      "sampleCount": 4,
+      "meanMotion": 0.30736,
+      "maxMotion": 0.33262,
+      "meanCenterMotion": 0.32855,
+      "maxFlashRatio": 0.12187
+    },
+    {
+      "start": 28.33,
+      "end": 29.34,
+      "duration": 1.01,
+      "sampleCount": 2,
+      "meanMotion": 0.29062,
+      "maxMotion": 0.29136,
+      "meanCenterMotion": 0.3655,
+      "maxFlashRatio": 0.01834
+    }
+  ],
+  "flashSegments": [
+    {
+      "start": 33.9,
+      "end": 36.93,
+      "duration": 3.03,
+      "sampleCount": 7,
+      "meanMotion": 0.10753,
+      "maxMotion": 0.51663,
+      "meanCenterMotion": 0.10882,
+      "maxFlashRatio": 0.98193
+    },
+    {
+      "start": 502.39,
+      "end": 502.89,
+      "duration": 0.5,
+      "sampleCount": 2,
+      "meanMotion": 0.47601,
+      "maxMotion": 0.55522,
+      "meanCenterMotion": 0.44497,
+      "maxFlashRatio": 0.96669
+    },
+    {
+      "start": 238.29,
+      "end": 243.35,
+      "duration": 5.06,
+      "sampleCount": 10,
+      "meanMotion": 0.18966,
+      "maxMotion": 0.69097,
+      "meanCenterMotion": 0.25757,
+      "maxFlashRatio": 0.94485
+    },
+    {
+      "start": 198.32,
+      "end": 201.36,
+      "duration": 3.04,
+      "sampleCount": 7,
+      "meanMotion": 0.15729,
+      "maxMotion": 0.41247,
+      "meanCenterMotion": 0.15943,
+      "maxFlashRatio": 0.9146
+    },
+    {
+      "start": 90.05,
+      "end": 90.56,
+      "duration": 0.51,
+      "sampleCount": 2,
+      "meanMotion": 0.5776,
+      "maxMotion": 0.87481,
+      "meanCenterMotion": 0.57595,
+      "maxFlashRatio": 0.74163
+    },
+    {
+      "start": 402.72,
+      "end": 403.22,
+      "duration": 0.5,
+      "sampleCount": 2,
+      "meanMotion": 0.40051,
+      "maxMotion": 0.5456,
+      "meanCenterMotion": 0.31604,
+      "maxFlashRatio": 0.73165
+    },
+    {
+      "start": 289.9,
+      "end": 291.41,
+      "duration": 1.51,
+      "sampleCount": 4,
+      "meanMotion": 0.15153,
+      "maxMotion": 0.38274,
+      "meanCenterMotion": 0.18272,
+      "maxFlashRatio": 0.61464
+    },
+    {
+      "start": 407.27,
+      "end": 408.28,
+      "duration": 1.01,
+      "sampleCount": 3,
+      "meanMotion": 0.16551,
+      "maxMotion": 0.39876,
+      "meanCenterMotion": 0.21374,
+      "maxFlashRatio": 0.55112
+    },
+    {
+      "start": 94.1,
+      "end": 95.62,
+      "duration": 1.52,
+      "sampleCount": 4,
+      "meanMotion": 0.13273,
+      "maxMotion": 0.38421,
+      "meanCenterMotion": 0.16496,
+      "maxFlashRatio": 0.50836
+    },
+    {
+      "start": 14.67,
+      "end": 15.68,
+      "duration": 1.01,
+      "sampleCount": 3,
+      "meanMotion": 0.14871,
+      "maxMotion": 0.37193,
+      "meanCenterMotion": 0.18393,
+      "maxFlashRatio": 0.476
+    },
+    {
+      "start": 191.75,
+      "end": 192.76,
+      "duration": 1.01,
+      "sampleCount": 3,
+      "meanMotion": 0.16239,
+      "maxMotion": 0.41592,
+      "meanCenterMotion": 0.1856,
+      "maxFlashRatio": 0.47188
+    },
+    {
+      "start": 509.97,
+      "end": 510.99,
+      "duration": 1.02,
+      "sampleCount": 3,
+      "meanMotion": 0.19299,
+      "maxMotion": 0.4333,
+      "meanCenterMotion": 0.22935,
+      "maxFlashRatio": 0.46644
+    },
+    {
+      "start": 10.12,
+      "end": 11.13,
+      "duration": 1.01,
+      "sampleCount": 2,
+      "meanMotion": 0.30358,
+      "maxMotion": 0.3411,
+      "meanCenterMotion": 0.32552,
+      "maxFlashRatio": 0.43031
+    }
+  ],
+  "clipOutputs": [
+    {
+      "rank": 1,
+      "segment": {
+        "start": 89.55,
+        "end": 91.57,
+        "duration": 2.02,
+        "sampleCount": 5,
+        "meanMotion": 0.48959,
+        "maxMotion": 0.87481,
+        "meanCenterMotion": 0.48256,
+        "maxFlashRatio": 0.74163
+      },
+      "clip": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\video_reference\\clips\\battle_motion_clip_01_0088s.mp4",
+      "frame": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\video_reference\\frames\\battle_motion_frame_01_0089s.jpg"
+    },
+    {
+      "rank": 2,
+      "segment": {
+        "start": 147.73,
+        "end": 151.27,
+        "duration": 3.54,
+        "sampleCount": 7,
+        "meanMotion": 0.41117,
+        "maxMotion": 0.68211,
+        "meanCenterMotion": 0.38514,
+        "maxFlashRatio": 0.95173
+      },
+      "clip": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\video_reference\\clips\\battle_motion_clip_02_0146s.mp4",
+      "frame": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\video_reference\\frames\\battle_motion_frame_02_0147s.jpg"
+    },
+    {
+      "rank": 3,
+      "segment": {
+        "start": 381.97,
+        "end": 382.99,
+        "duration": 1.02,
+        "sampleCount": 3,
+        "meanMotion": 0.46318,
+        "maxMotion": 0.64623,
+        "meanCenterMotion": 0.48073,
+        "maxFlashRatio": 0.40837
+      },
+      "clip": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\video_reference\\clips\\battle_motion_clip_03_0380s.mp4",
+      "frame": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\video_reference\\frames\\battle_motion_frame_03_0381s.jpg"
+    },
+    {
+      "rank": 4,
+      "segment": {
+        "start": 421.94,
+        "end": 422.95,
+        "duration": 1.01,
+        "sampleCount": 2,
+        "meanMotion": 0.42136,
+        "maxMotion": 0.5917,
+        "meanCenterMotion": 0.43447,
+        "maxFlashRatio": 0.03271
+      },
+      "clip": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\video_reference\\clips\\battle_motion_clip_04_0420s.mp4",
+      "frame": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\video_reference\\frames\\battle_motion_frame_04_0421s.jpg"
+    },
+    {
+      "rank": 5,
+      "segment": {
+        "start": 487.71,
+        "end": 488.73,
+        "duration": 1.02,
+        "sampleCount": 2,
+        "meanMotion": 0.44238,
+        "maxMotion": 0.57457,
+        "meanCenterMotion": 0.4182,
+        "maxFlashRatio": 0.08215
+      },
+      "clip": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\video_reference\\clips\\battle_motion_clip_05_0486s.mp4",
+      "frame": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\video_reference\\frames\\battle_motion_frame_05_0487s.jpg"
+    },
+    {
+      "rank": 6,
+      "segment": {
+        "start": 501.88,
+        "end": 503.4,
+        "duration": 1.52,
+        "sampleCount": 4,
+        "meanMotion": 0.48171,
+        "maxMotion": 0.56681,
+        "meanCenterMotion": 0.44522,
+        "maxFlashRatio": 0.96669
+      },
+      "clip": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\video_reference\\clips\\battle_motion_clip_06_0500s.mp4",
+      "frame": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\video_reference\\frames\\battle_motion_frame_06_0501s.jpg"
+    }
+  ],
+  "notes": [
+    "Top-center circular overlay appears across UI and battle; treat as recording/touch artifact unless user confirms it is in-game UI.",
+    "Use video clips for battle timing, camera shake, cut-in timing, hit flash, damage/floating text movement, and HUD active/inactive transitions. Contact sheets alone are insufficient."
+  ],
+  "outputs": {
+    "metricsCsv": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\video_reference\\play_motion_metrics_0p5s.csv",
+    "overviewContactSheet": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\video_reference\\play_overview_10s_contact.jpg"
+  }
+}

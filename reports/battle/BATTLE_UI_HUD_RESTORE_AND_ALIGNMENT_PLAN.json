@@ -1,0 +1,17 @@
+{
+  "candidateCount": 24,
+  "probeResultCount": 24,
+  "loadableBundleCount": 24,
+  "loadablePrefabBundleCount": 8,
+  "prefabRootCount": 170,
+  "canvasCount": 19,
+  "rectTransformCount": 985,
+  "imageCount": 0,
+  "textCount": 0,
+  "buttonCount": 0,
+  "spriteCount": 1407,
+  "scene": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_battle_unity\\Assets\\Scenes\\BattleUIHudEvidenceProbe.unity",
+  "sceneExists": true,
+  "unityBatchmodeSuccess": true,
+  "nextBattle17Recommendation": "BATTLE_17_ATTACH_LOADABLE_BATTLE_HUD_PREFABS_TO_FLOW_SCENE"
+}

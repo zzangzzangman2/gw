@@ -1,0 +1,650 @@
+{
+  "status": "runtime_flow_manifest",
+  "mapId": 11001,
+  "battleType": 1,
+  "randomSeed": 445106,
+  "waveCount": 3,
+  "procedureEvidence": [
+    {
+      "label": "BeginFightPlayWithServer",
+      "path": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_procedure\\-3424355311143813575_ProcedureNormalBattle_security_xor_raw.lua",
+      "line": 425,
+      "snippet": "function t.BeginFightPlayWithServer(t)"
+    },
+    {
+      "label": "LoadPlayerHeros call",
+      "path": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_procedure\\-3424355311143813575_ProcedureNormalBattle_security_xor_raw.lua",
+      "line": 434,
+      "snippet": "e.LoadPlayerHeros(e.FightPlayData.ourTeamFormation,e.FightPlayData.ourTeamFormationAlter,e.FightPlayData.ourHeros,e.FightPlayData.ourPets)"
+    },
+    {
+      "label": "LoadEnemyPlayerHeros call",
+      "path": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_procedure\\-3424355311143813575_ProcedureNormalBattle_security_xor_raw.lua",
+      "line": 435,
+      "snippet": "e.LoadEnemyPlayerHeros(e.FightPlay_CurrWave.enemyTeamFormation,e.FightPlay_CurrWave.enemyTeamFormationAlter,e.FightPlay_CurrWave.enemyHeros,e.FightPlay_CurrWave.enemyPets)"
+    },
+    {
+      "label": "BeginBattleWithServer",
+      "path": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_procedure\\-3424355311143813575_ProcedureNormalBattle_security_xor_raw.lua",
+      "line": 437,
+      "snippet": "function t.BeginBattleWithServer(t)"
+    },
+    {
+      "label": "ResortTeamFormation call",
+      "path": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_procedure\\-3424355311143813575_ProcedureNormalBattle_security_xor_raw.lua",
+      "line": 450,
+      "snippet": "e.ResortTeamFormation(t)"
+    },
+    {
+      "label": "MapId assignment",
+      "path": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_procedure\\-3424355311143813575_ProcedureNormalBattle_security_xor_raw.lua",
+      "line": 452,
+      "snippet": "e.MapId=t.mapId"
+    },
+    {
+      "label": "Random seed assignment",
+      "path": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_procedure\\-3424355311143813575_ProcedureNormalBattle_security_xor_raw.lua",
+      "line": 461,
+      "snippet": "RandomMgr.seed=t.randomSeed"
+    },
+    {
+      "label": "ResortTeamFormation function",
+      "path": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_procedure\\-3424355311143813575_ProcedureNormalBattle_security_xor_raw.lua",
+      "line": 505,
+      "snippet": "function t.ResortTeamFormation(e)"
+    },
+    {
+      "label": "BeginBattleWithServer_FightPlay",
+      "path": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_procedure\\-3424355311143813575_ProcedureNormalBattle_security_xor_raw.lua",
+      "line": 588,
+      "snippet": "function t.BeginBattleWithServer_FightPlay()"
+    },
+    {
+      "label": "FightPlay begin dispatch",
+      "path": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_procedure\\-3424355311143813575_ProcedureNormalBattle_security_xor_raw.lua",
+      "line": 676,
+      "snippet": "ModulesInit.ProcedureNormalBattle.BeginBattleWithServer(table.deepCopy(o))"
+    },
+    {
+      "label": "FightPlay load dispatch",
+      "path": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_procedure\\-3424355311143813575_ProcedureNormalBattle_security_xor_raw.lua",
+      "line": 696,
+      "snippet": "ModulesInit.ProcedureNormalBattle.BeginFightPlayWithServer(table.deepCopy(a))"
+    }
+  ],
+  "sourceEvidence": {
+    "testPayload": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_TEST_PAYLOAD.json",
+    "prototypeManifest": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_PROTOTYPE_MANIFEST.json",
+    "assetBundleLoadMap": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_battle_unity\\Assets\\RestoreData\\battle\\BATTLE_ASSETBUNDLE_LOAD_MAP.json",
+    "runtimeStreamingManifest": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_battle_unity\\Assets\\RestoreData\\battle\\BATTLE_RUNTIME_STREAMING_MANIFEST.json"
+  },
+  "mapEvidence": {
+    "mapId": 11001,
+    "candidateCount": 10,
+    "candidates": [
+      {
+        "mapId": 11001,
+        "bundle": "download/artsources/map/battlemap/map_11001/map_11001_1.assetbundle",
+        "exists": true,
+        "assetType": "Sprite",
+        "name": "Map_11001_3",
+        "width": "1920",
+        "height": "304",
+        "output": "extracted/unity/bundles/b_0155ef2a953f53b0/images/S/-8432961922530428540_Map_11001_3.png",
+        "spriteCount": 9,
+        "textureCount": 1,
+        "gameObjectCount": 0
+      },
+      {
+        "mapId": 11001,
+        "bundle": "download/artsources/map/battlemap/map_11001/map_11001_1.assetbundle",
+        "exists": true,
+        "assetType": "Sprite",
+        "name": "Map_11001_1_4",
+        "width": "259",
+        "height": "150",
+        "output": "extracted/unity/bundles/b_0155ef2a953f53b0/images/S/-7882005510638080185_Map_11001_1_4.png",
+        "spriteCount": 9,
+        "textureCount": 1,
+        "gameObjectCount": 0
+      },
+      {
+        "mapId": 11001,
+        "bundle": "download/artsources/map/battlemap/map_11001/map_11001_1.assetbundle",
+        "exists": true,
+        "assetType": "Sprite",
+        "name": "Map_11001_1_1",
+        "width": "468",
+        "height": "95",
+        "output": "extracted/unity/bundles/b_0155ef2a953f53b0/images/S/-7352335555518323793_Map_11001_1_1.png",
+        "spriteCount": 9,
+        "textureCount": 1,
+        "gameObjectCount": 0
+      },
+      {
+        "mapId": 11001,
+        "bundle": "download/artsources/map/battlemap/map_11001/map_11001_1.assetbundle",
+        "exists": true,
+        "assetType": "Sprite",
+        "name": "Map_11001_5_1",
+        "width": "495",
+        "height": "439",
+        "output": "extracted/unity/bundles/b_0155ef2a953f53b0/images/S/-4891563928384609105_Map_11001_5_1.png",
+        "spriteCount": 9,
+        "textureCount": 1,
+        "gameObjectCount": 0
+      },
+      {
+        "mapId": 11001,
+        "bundle": "download/artsources/map/battlemap/map_11001/map_11001_1.assetbundle",
+        "exists": true,
+        "assetType": "Texture2D",
+        "name": "sactx-0-2048x2048-ETC2-Map_11001_1-2ccb5b85",
+        "width": "2048",
+        "height": "2048",
+        "output": "extracted/unity/bundles/b_0155ef2a953f53b0/images/T/-3924175387751401445_sactx-0-2048x2048-ETC2-Map_11001_1-2ccb5b85.png",
+        "spriteCount": 9,
+        "textureCount": 1,
+        "gameObjectCount": 0
+      },
+      {
+        "mapId": 11001,
+        "bundle": "download/artsources/map/battlemap/map_11001/map_11001_1.assetbundle",
+        "exists": true,
+        "assetType": "Sprite",
+        "name": "Map_11001_4",
+        "width": "702",
+        "height": "350",
+        "output": "extracted/unity/bundles/b_0155ef2a953f53b0/images/S/-3259072823952439402_Map_11001_4.png",
+        "spriteCount": 9,
+        "textureCount": 1,
+        "gameObjectCount": 0
+      },
+      {
+        "mapId": 11001,
+        "bundle": "download/artsources/map/battlemap/map_11001/map_11001_1.assetbundle",
+        "exists": true,
+        "assetType": "Sprite",
+        "name": "Map_11001_2",
+        "width": "1920",
+        "height": "669",
+        "output": "extracted/unity/bundles/b_0155ef2a953f53b0/images/S/-2857215938594995045_Map_11001_2.png",
+        "spriteCount": 9,
+        "textureCount": 1,
+        "gameObjectCount": 0
+      },
+      {
+        "mapId": 11001,
+        "bundle": "download/artsources/map/battlemap/map_11001/map_11001_1.assetbundle",
+        "exists": true,
+        "assetType": "Sprite",
+        "name": "Map_11001_5_2",
+        "width": "121",
+        "height": "240",
+        "output": "extracted/unity/bundles/b_0155ef2a953f53b0/images/S/5490800349379579821_Map_11001_5_2.png",
+        "spriteCount": 9,
+        "textureCount": 1,
+        "gameObjectCount": 0
+      },
+      {
+        "mapId": 11001,
+        "bundle": "download/artsources/map/battlemap/map_11001/map_11001_1.assetbundle",
+        "exists": true,
+        "assetType": "Sprite",
+        "name": "Map_11001_1_2",
+        "width": "351",
+        "height": "135",
+        "output": "extracted/unity/bundles/b_0155ef2a953f53b0/images/S/6425347890655533317_Map_11001_1_2.png",
+        "spriteCount": 9,
+        "textureCount": 1,
+        "gameObjectCount": 0
+      },
+      {
+        "mapId": 11001,
+        "bundle": "download/artsources/map/battlemap/map_11001/map_11001_1.assetbundle",
+        "exists": true,
+        "assetType": "Sprite",
+        "name": "Map_11001_1_3",
+        "width": "486",
+        "height": "152",
+        "output": "extracted/unity/bundles/b_0155ef2a953f53b0/images/S/6810977601385818246_Map_11001_1_3.png",
+        "spriteCount": 9,
+        "textureCount": 1,
+        "gameObjectCount": 0
+      }
+    ]
+  },
+  "actorSlots": [
+    {
+      "side": "our",
+      "wave": 0,
+      "slot": 1,
+      "index": 0,
+      "heroDid": "1036",
+      "heroId": 51469,
+      "modelId": "1036",
+      "prefab": "1036",
+      "bundle": "download/roleprefabsandres/battleprefabandres/1036.assetbundle",
+      "absolutePath": "",
+      "prefabAsset": "",
+      "loadStatus": "placeholder",
+      "missingReason": "listed_in_cdn_versionfile_not_extracted",
+      "skillIds": [
+        1036101,
+        1036201,
+        1036301,
+        1036401,
+        1036402
+      ],
+      "x": -3.3,
+      "y": -2.35,
+      "scale": 0.7
+    },
+    {
+      "side": "our",
+      "wave": 0,
+      "slot": 2,
+      "index": 1,
+      "heroDid": "1002",
+      "heroId": 50870,
+      "modelId": "1002",
+      "prefab": "1002",
+      "bundle": "download/roleprefabsandres/battleprefabandres/1002.assetbundle",
+      "absolutePath": "C:\\\\Users\\\\godho\\\\Downloads\\\\girlswar\\\\girlswar_merged_extracted\\\\extracted\\\\unity\\\\clean_unityfs_slices\\\\download\\\\roleprefabsandres\\\\battleprefabandres\\\\1002.assetbundle",
+      "prefabAsset": "assets/download/roleprefabsandres/battleprefabandres/1002/hero_1002.prefab",
+      "loadStatus": "runtime_prefab",
+      "missingReason": "",
+      "skillIds": [
+        1002101,
+        1002201,
+        1002301
+      ],
+      "x": -1.65,
+      "y": -2.35,
+      "scale": 0.7
+    },
+    {
+      "side": "our",
+      "wave": 0,
+      "slot": 3,
+      "index": 2,
+      "heroDid": "1034",
+      "heroId": 50874,
+      "modelId": "1034",
+      "prefab": "1034",
+      "bundle": "download/roleprefabsandres/battleprefabandres/1034.assetbundle",
+      "absolutePath": "C:\\\\Users\\\\godho\\\\Downloads\\\\girlswar\\\\girlswar_merged_extracted\\\\extracted\\\\unity\\\\clean_unityfs_slices\\\\download\\\\roleprefabsandres\\\\battleprefabandres\\\\1034.assetbundle",
+      "prefabAsset": "assets/download/roleprefabsandres/battleprefabandres/1034/hero_1034.prefab",
+      "loadStatus": "runtime_prefab",
+      "missingReason": "",
+      "skillIds": [
+        1034101,
+        1034201,
+        1034301,
+        1034401,
+        1034402
+      ],
+      "x": 0,
+      "y": -2.35,
+      "scale": 0.7
+    },
+    {
+      "side": "enemy",
+      "wave": 1,
+      "slot": 1,
+      "index": 0,
+      "heroDid": "1100111",
+      "heroId": -1,
+      "modelId": "3001",
+      "prefab": "3001",
+      "bundle": "download/roleprefabsandres/battleprefabandres/3001.assetbundle",
+      "absolutePath": "C:\\\\Users\\\\godho\\\\Downloads\\\\girlswar\\\\girlswar_merged_extracted\\\\extracted\\\\unity\\\\clean_unityfs_slices\\\\download\\\\roleprefabsandres\\\\battleprefabandres\\\\3001.assetbundle",
+      "prefabAsset": "assets/download/roleprefabsandres/battleprefabandres/3001/hero_3001.prefab",
+      "loadStatus": "runtime_prefab",
+      "missingReason": "",
+      "skillIds": [
+        1012101,
+        1012201,
+        1012301,
+        1012401,
+        1012403
+      ],
+      "x": 1.05,
+      "y": 2.35,
+      "scale": 0.62
+    },
+    {
+      "side": "enemy",
+      "wave": 1,
+      "slot": 2,
+      "index": 1,
+      "heroDid": "1100112",
+      "heroId": -2,
+      "modelId": "1100112",
+      "prefab": "",
+      "bundle": "",
+      "absolutePath": "",
+      "prefabAsset": "",
+      "loadStatus": "placeholder",
+      "missingReason": "not_loadable_yet",
+      "skillIds": [
+        1012101,
+        1012201,
+        1012301,
+        1012401,
+        1012403
+      ],
+      "x": 2.5,
+      "y": 2.35,
+      "scale": 0.62
+    },
+    {
+      "side": "enemy",
+      "wave": 1,
+      "slot": 3,
+      "index": 2,
+      "heroDid": "1100113",
+      "heroId": -3,
+      "modelId": "1100113",
+      "prefab": "",
+      "bundle": "",
+      "absolutePath": "",
+      "prefabAsset": "",
+      "loadStatus": "placeholder",
+      "missingReason": "not_loadable_yet",
+      "skillIds": [
+        1012101,
+        1012201,
+        1012301,
+        1012401,
+        1012403
+      ],
+      "x": 3.95,
+      "y": 2.35,
+      "scale": 0.62
+    },
+    {
+      "side": "enemy",
+      "wave": 2,
+      "slot": 1,
+      "index": 3,
+      "heroDid": "1100121",
+      "heroId": -1,
+      "modelId": "1100121",
+      "prefab": "",
+      "bundle": "",
+      "absolutePath": "",
+      "prefabAsset": "",
+      "loadStatus": "placeholder",
+      "missingReason": "not_loadable_yet",
+      "skillIds": [
+        1012101,
+        1012201,
+        1012301,
+        1012401,
+        1012403
+      ],
+      "x": 1.05,
+      "y": 1.2,
+      "scale": 0.62
+    },
+    {
+      "side": "enemy",
+      "wave": 2,
+      "slot": 2,
+      "index": 4,
+      "heroDid": "1100122",
+      "heroId": -2,
+      "modelId": "1100122",
+      "prefab": "",
+      "bundle": "",
+      "absolutePath": "",
+      "prefabAsset": "",
+      "loadStatus": "placeholder",
+      "missingReason": "not_loadable_yet",
+      "skillIds": [
+        1012101,
+        1012201,
+        1012301,
+        1012401,
+        1012403
+      ],
+      "x": 2.5,
+      "y": 1.2,
+      "scale": 0.62
+    },
+    {
+      "side": "enemy",
+      "wave": 2,
+      "slot": 3,
+      "index": 5,
+      "heroDid": "1100123",
+      "heroId": -3,
+      "modelId": "1100123",
+      "prefab": "",
+      "bundle": "",
+      "absolutePath": "",
+      "prefabAsset": "",
+      "loadStatus": "placeholder",
+      "missingReason": "not_loadable_yet",
+      "skillIds": [
+        1012101,
+        1012201,
+        1012301,
+        1012401,
+        1012403
+      ],
+      "x": 3.95,
+      "y": 1.2,
+      "scale": 0.62
+    },
+    {
+      "side": "enemy",
+      "wave": 3,
+      "slot": 1,
+      "index": 6,
+      "heroDid": "1100131",
+      "heroId": -1,
+      "modelId": "1100131",
+      "prefab": "",
+      "bundle": "",
+      "absolutePath": "",
+      "prefabAsset": "",
+      "loadStatus": "placeholder",
+      "missingReason": "not_loadable_yet",
+      "skillIds": [
+        1012101,
+        1012101,
+        1001401,
+        1001403
+      ],
+      "x": 1.05,
+      "y": 0.04999995,
+      "scale": 0.62
+    },
+    {
+      "side": "enemy",
+      "wave": 3,
+      "slot": 2,
+      "index": 7,
+      "heroDid": "1100132",
+      "heroId": -2,
+      "modelId": "1100132",
+      "prefab": "",
+      "bundle": "",
+      "absolutePath": "",
+      "prefabAsset": "",
+      "loadStatus": "placeholder",
+      "missingReason": "not_loadable_yet",
+      "skillIds": [
+        1012101,
+        1012101,
+        1001401,
+        1001403
+      ],
+      "x": 2.5,
+      "y": 0.04999995,
+      "scale": 0.62
+    },
+    {
+      "side": "enemy",
+      "wave": 3,
+      "slot": 3,
+      "index": 8,
+      "heroDid": "1100133",
+      "heroId": -3,
+      "modelId": "1100133",
+      "prefab": "",
+      "bundle": "",
+      "absolutePath": "",
+      "prefabAsset": "",
+      "loadStatus": "placeholder",
+      "missingReason": "not_loadable_yet",
+      "skillIds": [
+        1012101,
+        1012101,
+        1001401,
+        1001403
+      ],
+      "x": 3.95,
+      "y": 0.04999995,
+      "scale": 0.62
+    }
+  ],
+  "knownSkillIds": [
+    1001401,
+    1001403,
+    1002101,
+    1002201,
+    1002301,
+    1012101,
+    1012201,
+    1012301,
+    1012401,
+    1012403,
+    1034101,
+    1034201,
+    1034301,
+    1034401,
+    1034402,
+    1036101,
+    1036201,
+    1036301,
+    1036401,
+    1036402
+  ],
+  "loadableActorPrefabRefs": [
+    {
+      "side": "our",
+      "heroDid": "1002",
+      "modelId": "1002",
+      "bundle": "download/roleprefabsandres/battleprefabandres/1002.assetbundle",
+      "absolutePath": "C:\\\\Users\\\\godho\\\\Downloads\\\\girlswar\\\\girlswar_merged_extracted\\\\extracted\\\\unity\\\\clean_unityfs_slices\\\\download\\\\roleprefabsandres\\\\battleprefabandres\\\\1002.assetbundle",
+      "prefabAsset": "assets/download/roleprefabsandres/battleprefabandres/1002/hero_1002.prefab"
+    },
+    {
+      "side": "our",
+      "heroDid": "1034",
+      "modelId": "1034",
+      "bundle": "download/roleprefabsandres/battleprefabandres/1034.assetbundle",
+      "absolutePath": "C:\\\\Users\\\\godho\\\\Downloads\\\\girlswar\\\\girlswar_merged_extracted\\\\extracted\\\\unity\\\\clean_unityfs_slices\\\\download\\\\roleprefabsandres\\\\battleprefabandres\\\\1034.assetbundle",
+      "prefabAsset": "assets/download/roleprefabsandres/battleprefabandres/1034/hero_1034.prefab"
+    },
+    {
+      "side": "enemy",
+      "heroDid": "1100111",
+      "modelId": "3001",
+      "bundle": "download/roleprefabsandres/battleprefabandres/3001.assetbundle",
+      "absolutePath": "C:\\\\Users\\\\godho\\\\Downloads\\\\girlswar\\\\girlswar_merged_extracted\\\\extracted\\\\unity\\\\clean_unityfs_slices\\\\download\\\\roleprefabsandres\\\\battleprefabandres\\\\3001.assetbundle",
+      "prefabAsset": "assets/download/roleprefabsandres/battleprefabandres/3001/hero_3001.prefab"
+    }
+  ],
+  "missingActorPlaceholders": [
+    {
+      "side": "our",
+      "wave": 0,
+      "slot": 1,
+      "heroDid": "1036",
+      "modelId": "1036",
+      "missingReason": "listed_in_cdn_versionfile_not_extracted"
+    },
+    {
+      "side": "enemy",
+      "wave": 1,
+      "slot": 2,
+      "heroDid": "1100112",
+      "modelId": "1100112",
+      "missingReason": "not_loadable_yet"
+    },
+    {
+      "side": "enemy",
+      "wave": 1,
+      "slot": 3,
+      "heroDid": "1100113",
+      "modelId": "1100113",
+      "missingReason": "not_loadable_yet"
+    },
+    {
+      "side": "enemy",
+      "wave": 2,
+      "slot": 1,
+      "heroDid": "1100121",
+      "modelId": "1100121",
+      "missingReason": "not_loadable_yet"
+    },
+    {
+      "side": "enemy",
+      "wave": 2,
+      "slot": 2,
+      "heroDid": "1100122",
+      "modelId": "1100122",
+      "missingReason": "not_loadable_yet"
+    },
+    {
+      "side": "enemy",
+      "wave": 2,
+      "slot": 3,
+      "heroDid": "1100123",
+      "modelId": "1100123",
+      "missingReason": "not_loadable_yet"
+    },
+    {
+      "side": "enemy",
+      "wave": 3,
+      "slot": 1,
+      "heroDid": "1100131",
+      "modelId": "1100131",
+      "missingReason": "not_loadable_yet"
+    },
+    {
+      "side": "enemy",
+      "wave": 3,
+      "slot": 2,
+      "heroDid": "1100132",
+      "modelId": "1100132",
+      "missingReason": "not_loadable_yet"
+    },
+    {
+      "side": "enemy",
+      "wave": 3,
+      "slot": 3,
+      "heroDid": "1100133",
+      "modelId": "1100133",
+      "missingReason": "not_loadable_yet"
+    }
+  ],
+  "nextUnresolvedJoins": [
+    "our 1036 bundle is listed in CDN version metadata but is not present in extracted evidence",
+    "enemy wave 1 slots 2-3 and waves 2-3 still need monsterId/model datatable joins",
+    "skill/effect bundle links are indexed but not yet streamed into the runtime flow shell"
+  ],
+  "counts": {
+    "actorSlots": 12,
+    "loadableActors": 3,
+    "missingActors": 9,
+    "knownSkillIds": 20,
+    "procedureEvidence": 11,
+    "prototypeManifestActors": 12
+  },
+  "next": "BATTLE_13_STREAM_SKILLS_EFFECTS_BUNDLES"
+}

@@ -1,0 +1,738 @@
+{
+  "status": "prepared_battle_ui_hud_candidates",
+  "rulesEvidence": "C:\\Users\\godho\\Downloads\\apk_extracted_ui_restore_rules.txt",
+  "keywordSet": [
+    "battleui",
+    "battle_ui",
+    "fightui",
+    "fight_ui",
+    "combat",
+    "battlepanel",
+    "fightpanel",
+    "blood",
+    "hp",
+    "energy",
+    "rage",
+    "buff",
+    "debuff",
+    "damage",
+    "hurt",
+    "auto",
+    "speed",
+    "pause",
+    "skip",
+    "round",
+    "wave",
+    "result",
+    "win",
+    "lose",
+    "settlement"
+  ],
+  "candidates": [
+    {
+      "id": "hud_000",
+      "kind": "battle_hud_prefab",
+      "bundle": "download/ui/uiprefabandres/battle.assetbundle",
+      "absolutePath": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\extracted\\unity\\clean_unityfs_slices\\download\\ui\\uiprefabandres\\battle.assetbundle",
+      "exists": true,
+      "size": 781979,
+      "unityFsHeader": "UnityFS\u0000\u0000\u0000\u0000\u00075.x.",
+      "priority": 100,
+      "note": "battle root HUD prefab candidate",
+      "hudScopes": [
+        "HP/MP bars",
+        "auto/speed/pause/skip",
+        "root canvas/camera/scaler",
+        "skill indicators",
+        "wave/round/timer"
+      ],
+      "restoreRule": "probe prefab hierarchy, RectTransform anchors/pivots/scale/sibling order, sprite regions; do not use whole atlas or fake controls"
+    },
+    {
+      "id": "hud_001",
+      "kind": "battle_hud_prefab_ext",
+      "bundle": "download/ui/uiprefabandres/battle_ext_prefabs.assetbundle",
+      "absolutePath": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\extracted\\unity\\clean_unityfs_slices\\download\\ui\\uiprefabandres\\battle_ext_prefabs.assetbundle",
+      "exists": true,
+      "size": 270936,
+      "unityFsHeader": "UnityFS\u0000\u0000\u0000\u0000\u00075.x.",
+      "priority": 95,
+      "note": "battle ext prefab roots",
+      "hudScopes": [
+        "HP/MP bars",
+        "auto/speed/pause/skip",
+        "root canvas/camera/scaler",
+        "skill indicators",
+        "wave/round/timer"
+      ],
+      "restoreRule": "probe prefab hierarchy, RectTransform anchors/pivots/scale/sibling order, sprite regions; do not use whole atlas or fake controls"
+    },
+    {
+      "id": "hud_002",
+      "kind": "battle_result_prefab",
+      "bundle": "download/ui/uiprefabandres/winlose.assetbundle",
+      "absolutePath": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\extracted\\unity\\clean_unityfs_slices\\download\\ui\\uiprefabandres\\winlose.assetbundle",
+      "exists": true,
+      "size": 275070,
+      "unityFsHeader": "UnityFS\u0000\u0000\u0000\u0000\u00075.x.",
+      "priority": 94,
+      "note": "win/lose/result entry prefab",
+      "hudScopes": [
+        "settlement",
+        "win/lose/result panel entry points"
+      ],
+      "restoreRule": "probe prefab hierarchy, RectTransform anchors/pivots/scale/sibling order, sprite regions; do not use whole atlas or fake controls"
+    },
+    {
+      "id": "hud_003",
+      "kind": "battle_result_prefab_ext",
+      "bundle": "download/ui/uiprefabandres/winlose_ext_prefabs.assetbundle",
+      "absolutePath": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\extracted\\unity\\clean_unityfs_slices\\download\\ui\\uiprefabandres\\winlose_ext_prefabs.assetbundle",
+      "exists": true,
+      "size": 14378,
+      "unityFsHeader": "UnityFS\u0000\u0000\u0000\u0000\u00075.x.",
+      "priority": 90,
+      "note": "win/lose ext prefab roots",
+      "hudScopes": [
+        "settlement",
+        "win/lose/result panel entry points"
+      ],
+      "restoreRule": "probe prefab hierarchy, RectTransform anchors/pivots/scale/sibling order, sprite regions; do not use whole atlas or fake controls"
+    },
+    {
+      "id": "hud_004",
+      "kind": "battle_sprite_atlas",
+      "bundle": "download/artsources/uispriteres/uibattle.assetbundle",
+      "absolutePath": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\extracted\\unity\\clean_unityfs_slices\\download\\artsources\\uispriteres\\uibattle.assetbundle",
+      "exists": true,
+      "size": 397404,
+      "unityFsHeader": "UnityFS\u0000\u0000\u0000\u0000\u00075.x.",
+      "priority": 88,
+      "note": "battle HUD sprite regions",
+      "hudScopes": [
+        "bars",
+        "battle HUD sprite slices",
+        "buttons"
+      ],
+      "restoreRule": "probe prefab hierarchy, RectTransform anchors/pivots/scale/sibling order, sprite regions; do not use whole atlas or fake controls"
+    },
+    {
+      "id": "hud_005",
+      "kind": "buff_icon_atlas",
+      "bundle": "download/artsources/uispriteres/uibufficon.assetbundle",
+      "absolutePath": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\extracted\\unity\\clean_unityfs_slices\\download\\artsources\\uispriteres\\uibufficon.assetbundle",
+      "exists": true,
+      "size": 991797,
+      "unityFsHeader": "UnityFS\u0000\u0000\u0000\u0000\u00075.x.",
+      "priority": 86,
+      "note": "buff/debuff icon sprite regions",
+      "hudScopes": [
+        "shield/buff/debuff icons"
+      ],
+      "restoreRule": "probe prefab hierarchy, RectTransform anchors/pivots/scale/sibling order, sprite regions; do not use whole atlas or fake controls"
+    },
+    {
+      "id": "hud_006",
+      "kind": "hurt_number_atlas",
+      "bundle": "download/artsources/uispriteres/uihurtnum.assetbundle",
+      "absolutePath": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\extracted\\unity\\clean_unityfs_slices\\download\\artsources\\uispriteres\\uihurtnum.assetbundle",
+      "exists": true,
+      "size": 209683,
+      "unityFsHeader": "UnityFS\u0000\u0000\u0000\u0000\u00075.x.",
+      "priority": 86,
+      "note": "damage/heal/critical floating number sprites",
+      "hudScopes": [
+        "damage/heal/critical/floating text sprites"
+      ],
+      "restoreRule": "probe prefab hierarchy, RectTransform anchors/pivots/scale/sibling order, sprite regions; do not use whole atlas or fake controls"
+    },
+    {
+      "id": "hud_007",
+      "kind": "actor_head_atlas",
+      "bundle": "download/artsources/uispriteres/uiheroheadbattle.assetbundle",
+      "absolutePath": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\extracted\\unity\\clean_unityfs_slices\\download\\artsources\\uispriteres\\uiheroheadbattle.assetbundle",
+      "exists": true,
+      "size": 2355107,
+      "unityFsHeader": "UnityFS\u0000\u0000\u0000\u0000\u00075.x.",
+      "priority": 82,
+      "note": "battle actor head/name/slot UI sprites",
+      "hudScopes": [
+        "actor head icons",
+        "actor name/level/side/slot labels"
+      ],
+      "restoreRule": "probe prefab hierarchy, RectTransform anchors/pivots/scale/sibling order, sprite regions; do not use whole atlas or fake controls"
+    },
+    {
+      "id": "hud_008",
+      "kind": "battle_hud_prefab_ext",
+      "bundle": "download/ui/uiprefabandres/battle_ext_1.assetbundle",
+      "absolutePath": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\extracted\\unity\\clean_unityfs_slices\\download\\ui\\uiprefabandres\\battle_ext_1.assetbundle",
+      "exists": true,
+      "size": 1534984,
+      "unityFsHeader": "UnityFS\u0000\u0000\u0000\u0000\u00075.x.",
+      "priority": 82,
+      "note": "battle ext sprites/prefabs 1",
+      "hudScopes": [
+        "HP/MP bars",
+        "auto/speed/pause/skip",
+        "root canvas/camera/scaler",
+        "skill indicators",
+        "wave/round/timer"
+      ],
+      "restoreRule": "probe prefab hierarchy, RectTransform anchors/pivots/scale/sibling order, sprite regions; do not use whole atlas or fake controls"
+    },
+    {
+      "id": "hud_009",
+      "kind": "battle_hud_prefab_ext",
+      "bundle": "download/ui/uiprefabandres/battle_ext_2.assetbundle",
+      "absolutePath": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\extracted\\unity\\clean_unityfs_slices\\download\\ui\\uiprefabandres\\battle_ext_2.assetbundle",
+      "exists": true,
+      "size": 9724,
+      "unityFsHeader": "UnityFS\u0000\u0000\u0000\u0000\u00075.x.",
+      "priority": 78,
+      "note": "battle ext sprites/prefabs 2",
+      "hudScopes": [
+        "HP/MP bars",
+        "auto/speed/pause/skip",
+        "root canvas/camera/scaler",
+        "skill indicators",
+        "wave/round/timer"
+      ],
+      "restoreRule": "probe prefab hierarchy, RectTransform anchors/pivots/scale/sibling order, sprite regions; do not use whole atlas or fake controls"
+    },
+    {
+      "id": "hud_010",
+      "kind": "battle_hud_prefab_ext",
+      "bundle": "download/ui/uiprefabandres/battle_ext_3.assetbundle",
+      "absolutePath": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\extracted\\unity\\clean_unityfs_slices\\download\\ui\\uiprefabandres\\battle_ext_3.assetbundle",
+      "exists": true,
+      "size": 186920,
+      "unityFsHeader": "UnityFS\u0000\u0000\u0000\u0000\u00075.x.",
+      "priority": 78,
+      "note": "battle ext sprites/prefabs 3",
+      "hudScopes": [
+        "HP/MP bars",
+        "auto/speed/pause/skip",
+        "root canvas/camera/scaler",
+        "skill indicators",
+        "wave/round/timer"
+      ],
+      "restoreRule": "probe prefab hierarchy, RectTransform anchors/pivots/scale/sibling order, sprite regions; do not use whole atlas or fake controls"
+    },
+    {
+      "id": "hud_011",
+      "kind": "battle_hud_prefab_ext",
+      "bundle": "download/ui/uiprefabandres/battle_ext_4.assetbundle",
+      "absolutePath": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\extracted\\unity\\clean_unityfs_slices\\download\\ui\\uiprefabandres\\battle_ext_4.assetbundle",
+      "exists": true,
+      "size": 206832,
+      "unityFsHeader": "UnityFS\u0000\u0000\u0000\u0000\u00075.x.",
+      "priority": 78,
+      "note": "battle ext sprites/prefabs 4",
+      "hudScopes": [
+        "HP/MP bars",
+        "auto/speed/pause/skip",
+        "root canvas/camera/scaler",
+        "skill indicators",
+        "wave/round/timer"
+      ],
+      "restoreRule": "probe prefab hierarchy, RectTransform anchors/pivots/scale/sibling order, sprite regions; do not use whole atlas or fake controls"
+    },
+    {
+      "id": "hud_012",
+      "kind": "battle_result_prefab_ext",
+      "bundle": "download/ui/uiprefabandres/winlose_ext_1.assetbundle",
+      "absolutePath": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\extracted\\unity\\clean_unityfs_slices\\download\\ui\\uiprefabandres\\winlose_ext_1.assetbundle",
+      "exists": true,
+      "size": 1543509,
+      "unityFsHeader": "UnityFS\u0000\u0000\u0000\u0000\u00075.x.",
+      "priority": 76,
+      "note": "win/lose ext sprites/prefabs 1",
+      "hudScopes": [
+        "settlement",
+        "win/lose/result panel entry points"
+      ],
+      "restoreRule": "probe prefab hierarchy, RectTransform anchors/pivots/scale/sibling order, sprite regions; do not use whole atlas or fake controls"
+    },
+    {
+      "id": "hud_013",
+      "kind": "battle_result_prefab_ext",
+      "bundle": "download/ui/uiprefabandres/winlose_ext_2.assetbundle",
+      "absolutePath": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\extracted\\unity\\clean_unityfs_slices\\download\\ui\\uiprefabandres\\winlose_ext_2.assetbundle",
+      "exists": true,
+      "size": 1706121,
+      "unityFsHeader": "UnityFS\u0000\u0000\u0000\u0000\u00075.x.",
+      "priority": 76,
+      "note": "win/lose ext sprites/prefabs 2",
+      "hudScopes": [
+        "settlement",
+        "win/lose/result panel entry points"
+      ],
+      "restoreRule": "probe prefab hierarchy, RectTransform anchors/pivots/scale/sibling order, sprite regions; do not use whole atlas or fake controls"
+    },
+    {
+      "id": "hud_014",
+      "kind": "battle_result_prefab_ext",
+      "bundle": "download/ui/uiprefabandres/winlose_ext_3.assetbundle",
+      "absolutePath": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\extracted\\unity\\clean_unityfs_slices\\download\\ui\\uiprefabandres\\winlose_ext_3.assetbundle",
+      "exists": true,
+      "size": 191625,
+      "unityFsHeader": "UnityFS\u0000\u0000\u0000\u0000\u00075.x.",
+      "priority": 76,
+      "note": "win/lose ext sprites/prefabs 3",
+      "hudScopes": [
+        "settlement",
+        "win/lose/result panel entry points"
+      ],
+      "restoreRule": "probe prefab hierarchy, RectTransform anchors/pivots/scale/sibling order, sprite regions; do not use whole atlas or fake controls"
+    },
+    {
+      "id": "hud_015",
+      "kind": "battle_result_prefab_ext",
+      "bundle": "download/ui/uiprefabandres/winlose_ext_4.assetbundle",
+      "absolutePath": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\extracted\\unity\\clean_unityfs_slices\\download\\ui\\uiprefabandres\\winlose_ext_4.assetbundle",
+      "exists": true,
+      "size": 216229,
+      "unityFsHeader": "UnityFS\u0000\u0000\u0000\u0000\u00075.x.",
+      "priority": 76,
+      "note": "win/lose ext sprites/prefabs 4",
+      "hudScopes": [
+        "settlement",
+        "win/lose/result panel entry points"
+      ],
+      "restoreRule": "probe prefab hierarchy, RectTransform anchors/pivots/scale/sibling order, sprite regions; do not use whole atlas or fake controls"
+    },
+    {
+      "id": "hud_016",
+      "kind": "battle_scene",
+      "bundle": "download/scenes/normalscene/gamescene_normalbattle.assetbundle",
+      "absolutePath": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\extracted\\unity\\clean_unityfs_slices\\download\\scenes\\normalscene\\gamescene_normalbattle.assetbundle",
+      "exists": true,
+      "size": 25382,
+      "unityFsHeader": "UnityFS\u0000\u0000\u0000\u0000\u00075.x.",
+      "priority": 70,
+      "note": "normal battle scene UI/camera evidence",
+      "hudScopes": [
+        "battle camera",
+        "scene root",
+        "sorting layer"
+      ],
+      "restoreRule": "probe prefab hierarchy, RectTransform anchors/pivots/scale/sibling order, sprite regions; do not use whole atlas or fake controls"
+    },
+    {
+      "id": "hud_017",
+      "kind": "ui_prefab_keyword_candidate",
+      "bundle": "download/ui/uiprefabandres/autohelper_ext_3.assetbundle",
+      "absolutePath": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\extracted\\unity\\clean_unityfs_slices\\download\\ui\\uiprefabandres\\autohelper_ext_3.assetbundle",
+      "exists": true,
+      "size": 807479,
+      "unityFsHeader": "UnityFS\u0000\u0000\u0000\u0000\u00075.x.",
+      "priority": 68,
+      "note": "keyword path match",
+      "hudScopes": [
+        "unknown HUD evidence"
+      ],
+      "restoreRule": "probe prefab hierarchy, RectTransform anchors/pivots/scale/sibling order, sprite regions; do not use whole atlas or fake controls"
+    },
+    {
+      "id": "hud_018",
+      "kind": "mine_battle_ui",
+      "bundle": "download/artsources/uispriteres/uiminebattle.assetbundle",
+      "absolutePath": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\extracted\\unity\\clean_unityfs_slices\\download\\artsources\\uispriteres\\uiminebattle.assetbundle",
+      "exists": true,
+      "size": 1068051,
+      "unityFsHeader": "UnityFS\u0000\u0000\u0000\u0000\u00075.x.",
+      "priority": 65,
+      "note": "alternate battle UI sprites",
+      "hudScopes": [
+        "unknown HUD evidence"
+      ],
+      "restoreRule": "probe prefab hierarchy, RectTransform anchors/pivots/scale/sibling order, sprite regions; do not use whole atlas or fake controls"
+    },
+    {
+      "id": "hud_019",
+      "kind": "battle_common_prefab",
+      "bundle": "download/commonprefabsandres/battle.assetbundle",
+      "absolutePath": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\extracted\\unity\\clean_unityfs_slices\\download\\commonprefabsandres\\battle.assetbundle",
+      "exists": true,
+      "size": 5538,
+      "unityFsHeader": "UnityFS\u0000\u0000\u0000\u0000\u00075.x.",
+      "priority": 60,
+      "note": "battle common prefab evidence",
+      "hudScopes": [
+        "unknown HUD evidence"
+      ],
+      "restoreRule": "probe prefab hierarchy, RectTransform anchors/pivots/scale/sibling order, sprite regions; do not use whole atlas or fake controls"
+    },
+    {
+      "id": "hud_020",
+      "kind": "auto_helper_ui",
+      "bundle": "download/artsources/uispriteres/autohelper.assetbundle",
+      "absolutePath": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\extracted\\unity\\clean_unityfs_slices\\download\\artsources\\uispriteres\\autohelper.assetbundle",
+      "exists": true,
+      "size": 119641,
+      "unityFsHeader": "UnityFS\u0000\u0000\u0000\u0000\u00075.x.",
+      "priority": 55,
+      "note": "auto helper UI sprite evidence",
+      "hudScopes": [
+        "unknown HUD evidence"
+      ],
+      "restoreRule": "probe prefab hierarchy, RectTransform anchors/pivots/scale/sibling order, sprite regions; do not use whole atlas or fake controls"
+    },
+    {
+      "id": "hud_021",
+      "kind": "battle_scene",
+      "bundle": "download/scenes/normalscene/gamescene_testbattle.assetbundle",
+      "absolutePath": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\extracted\\unity\\clean_unityfs_slices\\download\\scenes\\normalscene\\gamescene_testbattle.assetbundle",
+      "exists": true,
+      "size": 44433,
+      "unityFsHeader": "UnityFS\u0000\u0000\u0000\u0000\u00075.x.",
+      "priority": 55,
+      "note": "test battle scene UI/camera evidence",
+      "hudScopes": [
+        "battle camera",
+        "scene root",
+        "sorting layer"
+      ],
+      "restoreRule": "probe prefab hierarchy, RectTransform anchors/pivots/scale/sibling order, sprite regions; do not use whole atlas or fake controls"
+    },
+    {
+      "id": "hud_022",
+      "kind": "keyword_hud_candidate",
+      "bundle": "download/commonprefabsandres/buffeffect/buffeffect_1.assetbundle",
+      "absolutePath": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\extracted\\unity\\clean_unityfs_slices\\download\\commonprefabsandres\\buffeffect\\buffeffect_1.assetbundle",
+      "exists": true,
+      "size": 6338755,
+      "unityFsHeader": "UnityFS\u0000\u0000\u0000\u0000\u00075.x.",
+      "priority": 45,
+      "note": "keyword path match",
+      "hudScopes": [
+        "unknown HUD evidence"
+      ],
+      "restoreRule": "probe prefab hierarchy, RectTransform anchors/pivots/scale/sibling order, sprite regions; do not use whole atlas or fake controls"
+    },
+    {
+      "id": "hud_023",
+      "kind": "keyword_hud_candidate",
+      "bundle": "download/commonprefabsandres/buffeffect/buffeffect_2.assetbundle",
+      "absolutePath": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\extracted\\unity\\clean_unityfs_slices\\download\\commonprefabsandres\\buffeffect\\buffeffect_2.assetbundle",
+      "exists": true,
+      "size": 958709,
+      "unityFsHeader": "UnityFS\u0000\u0000\u0000\u0000\u00075.x.",
+      "priority": 45,
+      "note": "keyword path match",
+      "hudScopes": [
+        "unknown HUD evidence"
+      ],
+      "restoreRule": "probe prefab hierarchy, RectTransform anchors/pivots/scale/sibling order, sprite regions; do not use whole atlas or fake controls"
+    }
+  ],
+  "luaEvidence": [
+    {
+      "pattern": "IsSkipBattle",
+      "path": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-17427396491214324_BattleAttackTaskMgr_security_xor_raw.lua",
+      "line": 184,
+      "snippet": "if(not ModulesInit.ProcedureNormalBattle.IsSkipBattle and r)then"
+    },
+    {
+      "pattern": "BattleInputMgr",
+      "path": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-3683694185079020577_BattleManager_security_xor_raw.lua",
+      "line": 4,
+      "snippet": "local o=require(\"Modules/Battle/BattleInputMgr\")"
+    },
+    {
+      "pattern": "IsSkipBattle",
+      "path": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-7877228141847976083_GlobalBattleEffectMgr_security_xor_raw.lua",
+      "line": 17,
+      "snippet": "if(ModulesInit.ProcedureNormalBattle.IsSkipBattle==true)then"
+    },
+    {
+      "pattern": "IsSkipBattle",
+      "path": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-7877228141847976083_GlobalBattleEffectMgr_security_xor_raw.lua",
+      "line": 47,
+      "snippet": "if(ModulesInit.ProcedureNormalBattle.IsSkipBattle==true)then"
+    },
+    {
+      "pattern": "IsSkipBattle",
+      "path": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-7877228141847976083_GlobalBattleEffectMgr_security_xor_raw.lua",
+      "line": 102,
+      "snippet": "if(ModulesInit.ProcedureNormalBattle.IsSkipBattle==true)then"
+    },
+    {
+      "pattern": "IsSkipBattle",
+      "path": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-7877228141847976083_GlobalBattleEffectMgr_security_xor_raw.lua",
+      "line": 138,
+      "snippet": "if(ModulesInit.ProcedureNormalBattle.IsSkipBattle==true)then"
+    },
+    {
+      "pattern": "IsSkipBattle",
+      "path": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\191332877364712173_BattleUtil_security_xor_raw.lua",
+      "line": 1628,
+      "snippet": "if(ModulesInit.ProcedureNormalBattle.IsSkipBattle==false)then"
+    },
+    {
+      "pattern": "IsSkipBattle",
+      "path": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\191332877364712173_BattleUtil_security_xor_raw.lua",
+      "line": 1658,
+      "snippet": "if(ModulesInit.ProcedureNormalBattle.IsSkipBattle==false)then"
+    },
+    {
+      "pattern": "IsSkipBattle",
+      "path": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\191332877364712173_BattleUtil_security_xor_raw.lua",
+      "line": 1696,
+      "snippet": "if(ModulesInit.ProcedureNormalBattle.IsSkipBattle==false)then"
+    },
+    {
+      "pattern": "IsSkipBattle",
+      "path": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\2347635220185957824_BattleTeam_security_xor_raw.lua",
+      "line": 1113,
+      "snippet": "if(not ModulesInit.ProcedureNormalBattle.IsSkipBattle)then"
+    },
+    {
+      "pattern": "IsSkipBattle",
+      "path": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\2347635220185957824_BattleTeam_security_xor_raw.lua",
+      "line": 1120,
+      "snippet": "if(not ModulesInit.ProcedureNormalBattle.IsSkipBattle)then"
+    },
+    {
+      "pattern": "IsSkipBattle",
+      "path": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\2347635220185957824_BattleTeam_security_xor_raw.lua",
+      "line": 1129,
+      "snippet": "if(not ModulesInit.ProcedureNormalBattle.IsSkipBattle)then"
+    },
+    {
+      "pattern": "IsSkipBattle",
+      "path": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\2347635220185957824_BattleTeam_security_xor_raw.lua",
+      "line": 1138,
+      "snippet": "if(not ModulesInit.ProcedureNormalBattle.IsSkipBattle)then"
+    },
+    {
+      "pattern": "IsSkipBattle",
+      "path": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\2347635220185957824_BattleTeam_security_xor_raw.lua",
+      "line": 1196,
+      "snippet": "if(not ModulesInit.ProcedureNormalBattle.IsSkipBattle)then"
+    },
+    {
+      "pattern": "IsSkipBattle",
+      "path": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\2347635220185957824_BattleTeam_security_xor_raw.lua",
+      "line": 1206,
+      "snippet": "if(not ModulesInit.ProcedureNormalBattle.IsSkipBattle)then"
+    },
+    {
+      "pattern": "IsSkipBattle",
+      "path": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\2347635220185957824_BattleTeam_security_xor_raw.lua",
+      "line": 1218,
+      "snippet": "if(not ModulesInit.ProcedureNormalBattle.IsSkipBattle)then"
+    },
+    {
+      "pattern": "IsSkipBattle",
+      "path": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\2347635220185957824_BattleTeam_security_xor_raw.lua",
+      "line": 1230,
+      "snippet": "if(not ModulesInit.ProcedureNormalBattle.IsSkipBattle)then"
+    },
+    {
+      "pattern": "IsSkipBattle",
+      "path": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\2347635220185957824_BattleTeam_security_xor_raw.lua",
+      "line": 1241,
+      "snippet": "if(ModulesInit.ProcedureNormalBattle.IsSkipBattle==false)then"
+    },
+    {
+      "pattern": "IsAutoMode",
+      "path": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\2347635220185957824_BattleTeam_security_xor_raw.lua",
+      "line": 1408,
+      "snippet": "if(ModulesInit.ProcedureNormalBattle.IsAutoMode)then"
+    },
+    {
+      "pattern": "IsSkipBattle",
+      "path": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\2347635220185957824_BattleTeam_security_xor_raw.lua",
+      "line": 1506,
+      "snippet": "if(ModulesInit.ProcedureNormalBattle.IsSkipBattle==true)then"
+    },
+    {
+      "pattern": "IsSkipBattle",
+      "path": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\2347635220185957824_BattleTeam_security_xor_raw.lua",
+      "line": 1518,
+      "snippet": "if(ModulesInit.ProcedureNormalBattle.IsSkipBattle==true)then"
+    },
+    {
+      "pattern": "IsSkipBattle",
+      "path": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\2347635220185957824_BattleTeam_security_xor_raw.lua",
+      "line": 1530,
+      "snippet": "if(ModulesInit.ProcedureNormalBattle.IsSkipBattle==true)then"
+    },
+    {
+      "pattern": "IsSkipBattle",
+      "path": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\2347635220185957824_BattleTeam_security_xor_raw.lua",
+      "line": 1540,
+      "snippet": "if(ModulesInit.ProcedureNormalBattle.IsSkipBattle==true)then"
+    },
+    {
+      "pattern": "IsAutoMode",
+      "path": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\2347635220185957824_BattleTeam_security_xor_raw.lua",
+      "line": 1565,
+      "snippet": "if(ModulesInit.ProcedureNormalBattle.IsAutoMode)then"
+    },
+    {
+      "pattern": "IsSkipBattle",
+      "path": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\2347635220185957824_BattleTeam_security_xor_raw.lua",
+      "line": 1653,
+      "snippet": "if(not ModulesInit.ProcedureNormalBattle.IsSkipBattle)then"
+    },
+    {
+      "pattern": "IsSkipBattle",
+      "path": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\2347635220185957824_BattleTeam_security_xor_raw.lua",
+      "line": 1662,
+      "snippet": "if(not ModulesInit.ProcedureNormalBattle.IsSkipBattle)then"
+    },
+    {
+      "pattern": "IsSkipBattle",
+      "path": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\2347635220185957824_BattleTeam_security_xor_raw.lua",
+      "line": 1699,
+      "snippet": "if(not ModulesInit.ProcedureNormalBattle.IsSkipBattle)then"
+    },
+    {
+      "pattern": "IsSkipBattle",
+      "path": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\2347635220185957824_BattleTeam_security_xor_raw.lua",
+      "line": 1720,
+      "snippet": "if ModulesInit.ProcedureNormalBattle.IsSkipBattle==false then"
+    },
+    {
+      "pattern": "IsSkipBattle",
+      "path": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\2347635220185957824_BattleTeam_security_xor_raw.lua",
+      "line": 1734,
+      "snippet": "if(not ModulesInit.ProcedureNormalBattle.IsSkipBattle)then"
+    },
+    {
+      "pattern": "IsSkipBattle",
+      "path": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\2347635220185957824_BattleTeam_security_xor_raw.lua",
+      "line": 1739,
+      "snippet": "if(not ModulesInit.ProcedureNormalBattle.IsSkipBattle)then"
+    },
+    {
+      "pattern": "IsSkipBattle",
+      "path": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\2347635220185957824_BattleTeam_security_xor_raw.lua",
+      "line": 2593,
+      "snippet": "if(not ModulesInit.ProcedureNormalBattle.IsSkipBattle)then"
+    },
+    {
+      "pattern": "IsSkipBattle",
+      "path": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\2347635220185957824_BattleTeam_security_xor_raw.lua",
+      "line": 2599,
+      "snippet": "if(not ModulesInit.ProcedureNormalBattle.IsSkipBattle)then"
+    },
+    {
+      "pattern": "IsSkipBattle",
+      "path": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\2347635220185957824_BattleTeam_security_xor_raw.lua",
+      "line": 2605,
+      "snippet": "if(not ModulesInit.ProcedureNormalBattle.IsSkipBattle)then"
+    },
+    {
+      "pattern": "IsSkipBattle",
+      "path": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\2347635220185957824_BattleTeam_security_xor_raw.lua",
+      "line": 2804,
+      "snippet": "if(not ModulesInit.ProcedureNormalBattle.IsSkipBattle)then"
+    },
+    {
+      "pattern": "IsSkipBattle",
+      "path": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\2347635220185957824_BattleTeam_security_xor_raw.lua",
+      "line": 2842,
+      "snippet": "if(not ModulesInit.ProcedureNormalBattle.IsSkipBattle)then"
+    },
+    {
+      "pattern": "IsSkipBattle",
+      "path": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\2347635220185957824_BattleTeam_security_xor_raw.lua",
+      "line": 2876,
+      "snippet": "if(not ModulesInit.ProcedureNormalBattle.IsSkipBattle)then"
+    },
+    {
+      "pattern": "IsSkipBattle",
+      "path": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\2347635220185957824_BattleTeam_security_xor_raw.lua",
+      "line": 2888,
+      "snippet": "if(not ModulesInit.ProcedureNormalBattle.IsSkipBattle)then"
+    },
+    {
+      "pattern": "IsSkipBattle",
+      "path": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\2347635220185957824_BattleTeam_security_xor_raw.lua",
+      "line": 2894,
+      "snippet": "if ModulesInit.ProcedureNormalBattle.IsSkipBattle then"
+    },
+    {
+      "pattern": "IsSkipBattle",
+      "path": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\2347635220185957824_BattleTeam_security_xor_raw.lua",
+      "line": 3710,
+      "snippet": "if(ModulesInit.ProcedureNormalBattle.IsSkipBattle==true)then"
+    },
+    {
+      "pattern": "Skill_BattleUI_Reset",
+      "path": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\2347635220185957824_BattleTeam_security_xor_raw.lua",
+      "line": 3785,
+      "snippet": "EventSystem.SendEvent(CommonEventId.Skill_BattleUI_Reset)"
+    },
+    {
+      "pattern": "IsSkipBattle",
+      "path": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\2347635220185957824_BattleTeam_security_xor_raw.lua",
+      "line": 3813,
+      "snippet": "if(ModulesInit.ProcedureNormalBattle.IsSkipBattle==true)then"
+    },
+    {
+      "pattern": "IsSkipBattle",
+      "path": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\3926926455956704213_BattleBgEffectMgr_security_xor_raw.lua",
+      "line": 42,
+      "snippet": "if(ModulesInit.ProcedureNormalBattle.IsSkipBattle==true)then"
+    },
+    {
+      "pattern": "IsSkipBattle",
+      "path": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\3926926455956704213_BattleBgEffectMgr_security_xor_raw.lua",
+      "line": 59,
+      "snippet": "if(ModulesInit.ProcedureNormalBattle.IsSkipBattle==true)then"
+    },
+    {
+      "pattern": "IsSkipBattle",
+      "path": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\3926926455956704213_BattleBgEffectMgr_security_xor_raw.lua",
+      "line": 166,
+      "snippet": "if(ModulesInit.ProcedureNormalBattle.IsSkipBattle==true)then"
+    },
+    {
+      "pattern": "IsSkipBattle",
+      "path": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\3926926455956704213_BattleBgEffectMgr_security_xor_raw.lua",
+      "line": 261,
+      "snippet": "if(ModulesInit.ProcedureNormalBattle.IsSkipBattle==true)then"
+    },
+    {
+      "pattern": "IsSkipBattle",
+      "path": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\3926926455956704213_BattleBgEffectMgr_security_xor_raw.lua",
+      "line": 271,
+      "snippet": "if(ModulesInit.ProcedureNormalBattle.IsSkipBattle==true)then"
+    },
+    {
+      "pattern": "IsSkipBattle",
+      "path": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\3926926455956704213_BattleBgEffectMgr_security_xor_raw.lua",
+      "line": 278,
+      "snippet": "if(ModulesInit.ProcedureNormalBattle.IsSkipBattle==true)then"
+    },
+    {
+      "pattern": "IsSkipBattle",
+      "path": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\3926926455956704213_BattleBgEffectMgr_security_xor_raw.lua",
+      "line": 296,
+      "snippet": "if(ModulesInit.ProcedureNormalBattle.IsSkipBattle==true)then"
+    }
+  ],
+  "targetsCsv": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_battle_unity\\Assets\\RestoreData\\battle\\BATTLE_UI_HUD_BUNDLE_TARGETS.csv",
+  "requiredHudScope": [
+    "battle root canvas / camera / canvas scaler / sorting layer",
+    "HP/MP/energy/rage bars, shield/buff/debuff icons",
+    "actor name/level/side/slot labels",
+    "damage/heal/critical/floating text fonts/materials/positions",
+    "skill button/timeline/cooldown/trigger indicators if present",
+    "auto/speed/pause/setting/skip controls",
+    "wave/round/timer/turn indicators",
+    "win/lose/result panel entry points",
+    "debug/log-only elements excluded from final overlay"
+  ],
+  "counts": {
+    "candidateCount": 24,
+    "existingCandidates": 24,
+    "unityFsCandidates": 24,
+    "luaEvidenceCount": 48
+  }
+}

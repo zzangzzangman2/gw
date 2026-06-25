@@ -1,0 +1,7 @@
+{
+  "name": "spine-unity",
+  "references": [
+    "UnityEngine.UI"
+  ],
+  "autoReferenced": true
+}

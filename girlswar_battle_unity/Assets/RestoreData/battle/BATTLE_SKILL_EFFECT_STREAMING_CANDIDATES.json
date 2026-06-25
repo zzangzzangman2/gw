@@ -1,0 +1,1110 @@
+{
+  "status": "prepared",
+  "summary": {
+    "skillIdsCount": 20,
+    "skillRecords": 20,
+    "bundleCandidateCount": 7,
+    "bundleCandidatesExistingAtPrep": 4,
+    "flowManifest": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_battle_unity\\Assets\\RestoreData\\battle\\BATTLE_RUNTIME_FLOW_MANIFEST.json",
+    "loadMap": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_battle_unity\\Assets\\RestoreData\\battle\\BATTLE_ASSETBUNDLE_LOAD_MAP.json",
+    "resourceTrace": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_RESOURCE_TRACE.csv"
+  },
+  "sourceEvidence": {
+    "flowManifest": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_battle_unity\\Assets\\RestoreData\\battle\\BATTLE_RUNTIME_FLOW_MANIFEST.json",
+    "loadMap": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_battle_unity\\Assets\\RestoreData\\battle\\BATTLE_ASSETBUNDLE_LOAD_MAP.json",
+    "resourceTrace": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_RESOURCE_TRACE.csv",
+    "prototypeSkills": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_PROTOTYPE_SKILLS.csv",
+    "battle08SkillCandidates": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_08_SKILL_BUNDLE_CANDIDATES.csv"
+  },
+  "skills": [
+    {
+      "skillId": 1001401,
+      "owners": [
+        {
+          "side": "enemy",
+          "heroDid": "1100131",
+          "heroId": -1,
+          "wave": 3,
+          "slot": 1
+        },
+        {
+          "side": "enemy",
+          "heroDid": "1100132",
+          "heroId": -2,
+          "wave": 3,
+          "slot": 2
+        },
+        {
+          "side": "enemy",
+          "heroDid": "1100133",
+          "heroId": -3,
+          "wave": 3,
+          "slot": 3
+        }
+      ],
+      "decodedLuaEvidence": [],
+      "skillFound": false,
+      "timelineFound": false,
+      "prefabIds": [],
+      "timelineAssetPaths": [],
+      "prefabDependencyCount": 0,
+      "audioDependencyCount": 0,
+      "videoDependencyCount": 0,
+      "bundleCandidates": [],
+      "unresolvedReason": "bundle_candidates_missing_or_path_normalize_unresolved"
+    },
+    {
+      "skillId": 1001403,
+      "owners": [
+        {
+          "side": "enemy",
+          "heroDid": "1100131",
+          "heroId": -1,
+          "wave": 3,
+          "slot": 1
+        },
+        {
+          "side": "enemy",
+          "heroDid": "1100132",
+          "heroId": -2,
+          "wave": 3,
+          "slot": 2
+        },
+        {
+          "side": "enemy",
+          "heroDid": "1100133",
+          "heroId": -3,
+          "wave": 3,
+          "slot": 3
+        }
+      ],
+      "decodedLuaEvidence": [],
+      "skillFound": false,
+      "timelineFound": false,
+      "prefabIds": [],
+      "timelineAssetPaths": [],
+      "prefabDependencyCount": 0,
+      "audioDependencyCount": 0,
+      "videoDependencyCount": 0,
+      "bundleCandidates": [],
+      "unresolvedReason": "bundle_candidates_missing_or_path_normalize_unresolved"
+    },
+    {
+      "skillId": 1002101,
+      "owners": [
+        {
+          "side": "our",
+          "heroDid": "1002",
+          "heroId": 50870,
+          "wave": 0,
+          "slot": 2
+        }
+      ],
+      "decodedLuaEvidence": [
+        {
+          "path": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battleskillscript\\-1799584423651642372_Skill1002101_security_xor_raw.lua",
+          "line": 1,
+          "snippet": "local e={"
+        },
+        {
+          "path": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battleskillscript\\-4182017775406981280_BattleSkillData1_security_xor_raw.lua",
+          "line": 15,
+          "snippet": "e.BattleSkills[1002101]=require(\"Modules/BattleSkillScript/1002/Skill1002101\")"
+        }
+      ],
+      "skillFound": true,
+      "timelineFound": true,
+      "prefabIds": [
+        "1002101"
+      ],
+      "timelineAssetPaths": [
+        "Assets/Download/SkillPrefabsAndRes/1002/1002101.prefab"
+      ],
+      "prefabDependencyCount": 2,
+      "audioDependencyCount": 4,
+      "videoDependencyCount": 0,
+      "bundleCandidates": [
+        {
+          "skillId": 1002101,
+          "bundle": "download/skillprefabsandres/1002.assetbundle",
+          "absolutePath": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\extracted\\unity\\clean_unityfs_slices\\download\\skillprefabsandres\\1002.assetbundle",
+          "exists": true,
+          "size": 231502,
+          "normalizeNote": "as_normalized_lower_path",
+          "source": "timeline_prefab_dep"
+        }
+      ],
+      "unresolvedReason": ""
+    },
+    {
+      "skillId": 1002201,
+      "owners": [
+        {
+          "side": "our",
+          "heroDid": "1002",
+          "heroId": 50870,
+          "wave": 0,
+          "slot": 2
+        }
+      ],
+      "decodedLuaEvidence": [
+        {
+          "path": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battleskillscript\\-4182017775406981280_BattleSkillData1_security_xor_raw.lua",
+          "line": 16,
+          "snippet": "e.BattleSkills[1002201]=require(\"Modules/BattleSkillScript/1002/Skill1002201\")"
+        },
+        {
+          "path": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battleskillscript\\-7241611550435140016_Skill1002201_security_xor_raw.lua",
+          "line": 1,
+          "snippet": "local e={}"
+        }
+      ],
+      "skillFound": true,
+      "timelineFound": true,
+      "prefabIds": [
+        "1002201"
+      ],
+      "timelineAssetPaths": [
+        "Assets/Download/SkillPrefabsAndRes/1002/1002201.prefab"
+      ],
+      "prefabDependencyCount": 2,
+      "audioDependencyCount": 4,
+      "videoDependencyCount": 0,
+      "bundleCandidates": [
+        {
+          "skillId": 1002201,
+          "bundle": "download/commonprefabsandres/skilleffect/commonskillprefabsandres1/pinkspeedline.assetbundle",
+          "absolutePath": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\extracted\\unity\\clean_unityfs_slices\\download\\commonprefabsandres\\skilleffect\\commonskillprefabsandres1\\pinkspeedline.assetbundle",
+          "exists": false,
+          "size": 0,
+          "normalizeNote": "as_normalized_lower_path",
+          "source": "timeline_prefab_dep"
+        },
+        {
+          "skillId": 1002201,
+          "bundle": "download/skillprefabsandres/1002.assetbundle",
+          "absolutePath": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\extracted\\unity\\clean_unityfs_slices\\download\\skillprefabsandres\\1002.assetbundle",
+          "exists": true,
+          "size": 231502,
+          "normalizeNote": "as_normalized_lower_path",
+          "source": "timeline_prefab_dep"
+        }
+      ],
+      "unresolvedReason": ""
+    },
+    {
+      "skillId": 1002301,
+      "owners": [
+        {
+          "side": "our",
+          "heroDid": "1002",
+          "heroId": 50870,
+          "wave": 0,
+          "slot": 2
+        }
+      ],
+      "decodedLuaEvidence": [
+        {
+          "path": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battleskillscript\\-4182017775406981280_BattleSkillData1_security_xor_raw.lua",
+          "line": 18,
+          "snippet": "e.BattleSkills[1002301]=require(\"Modules/BattleSkillScript/1002/Skill1002301\")"
+        },
+        {
+          "path": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battleskillscript\\-7681840881478945743_Skill1002301_security_xor_raw.lua",
+          "line": 1,
+          "snippet": "local e={}"
+        }
+      ],
+      "skillFound": true,
+      "timelineFound": true,
+      "prefabIds": [
+        "1002301",
+        "1002351"
+      ],
+      "timelineAssetPaths": [
+        "Assets/Download/SkillPrefabsAndRes/1002/1002301.prefab",
+        "Assets/Download/SkillPrefabsAndRes/1002/1002351.prefab"
+      ],
+      "prefabDependencyCount": 5,
+      "audioDependencyCount": 4,
+      "videoDependencyCount": 1,
+      "bundleCandidates": [
+        {
+          "skillId": 1002301,
+          "bundle": "download/commonprefabsandres/skilleffect/commonskillprefabsandres1/pinkspeedline.assetbundle",
+          "absolutePath": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\extracted\\unity\\clean_unityfs_slices\\download\\commonprefabsandres\\skilleffect\\commonskillprefabsandres1\\pinkspeedline.assetbundle",
+          "exists": false,
+          "size": 0,
+          "normalizeNote": "as_normalized_lower_path",
+          "source": "timeline_prefab_dep"
+        },
+        {
+          "skillId": 1002301,
+          "bundle": "download/skillprefabsandres/1002.assetbundle",
+          "absolutePath": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\extracted\\unity\\clean_unityfs_slices\\download\\skillprefabsandres\\1002.assetbundle",
+          "exists": true,
+          "size": 231502,
+          "normalizeNote": "as_normalized_lower_path",
+          "source": "timeline_prefab_dep"
+        }
+      ],
+      "unresolvedReason": ""
+    },
+    {
+      "skillId": 1012101,
+      "owners": [
+        {
+          "side": "enemy",
+          "heroDid": "1100111",
+          "heroId": -1,
+          "wave": 1,
+          "slot": 1
+        },
+        {
+          "side": "enemy",
+          "heroDid": "1100112",
+          "heroId": -2,
+          "wave": 1,
+          "slot": 2
+        },
+        {
+          "side": "enemy",
+          "heroDid": "1100113",
+          "heroId": -3,
+          "wave": 1,
+          "slot": 3
+        },
+        {
+          "side": "enemy",
+          "heroDid": "1100121",
+          "heroId": -1,
+          "wave": 2,
+          "slot": 1
+        },
+        {
+          "side": "enemy",
+          "heroDid": "1100122",
+          "heroId": -2,
+          "wave": 2,
+          "slot": 2
+        },
+        {
+          "side": "enemy",
+          "heroDid": "1100123",
+          "heroId": -3,
+          "wave": 2,
+          "slot": 3
+        },
+        {
+          "side": "enemy",
+          "heroDid": "1100131",
+          "heroId": -1,
+          "wave": 3,
+          "slot": 1
+        },
+        {
+          "side": "enemy",
+          "heroDid": "1100131",
+          "heroId": -1,
+          "wave": 3,
+          "slot": 1
+        },
+        {
+          "side": "enemy",
+          "heroDid": "1100132",
+          "heroId": -2,
+          "wave": 3,
+          "slot": 2
+        },
+        {
+          "side": "enemy",
+          "heroDid": "1100132",
+          "heroId": -2,
+          "wave": 3,
+          "slot": 2
+        },
+        {
+          "side": "enemy",
+          "heroDid": "1100133",
+          "heroId": -3,
+          "wave": 3,
+          "slot": 3
+        },
+        {
+          "side": "enemy",
+          "heroDid": "1100133",
+          "heroId": -3,
+          "wave": 3,
+          "slot": 3
+        }
+      ],
+      "decodedLuaEvidence": [
+        {
+          "path": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battleskillscript\\-4182017775406981280_BattleSkillData1_security_xor_raw.lua",
+          "line": 97,
+          "snippet": "e.BattleSkills[1012101]=require(\"Modules/BattleSkillScript/1012/Skill1012101\")"
+        },
+        {
+          "path": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battleskillscript\\-6344118534423925074_Skill1012101_security_xor_raw.lua",
+          "line": 1,
+          "snippet": "local e={"
+        }
+      ],
+      "skillFound": true,
+      "timelineFound": true,
+      "prefabIds": [
+        "1012101"
+      ],
+      "timelineAssetPaths": [
+        "Assets/Download/SkillPrefabsAndRes/1012/1012101.prefab"
+      ],
+      "prefabDependencyCount": 1,
+      "audioDependencyCount": 4,
+      "videoDependencyCount": 0,
+      "bundleCandidates": [
+        {
+          "skillId": 1012101,
+          "bundle": "download/skillprefabsandres/1012.assetbundle",
+          "absolutePath": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\extracted\\unity\\clean_unityfs_slices\\download\\skillprefabsandres\\1012.assetbundle",
+          "exists": true,
+          "size": 2038093,
+          "normalizeNote": "as_normalized_lower_path",
+          "source": "timeline_prefab_dep"
+        }
+      ],
+      "unresolvedReason": ""
+    },
+    {
+      "skillId": 1012201,
+      "owners": [
+        {
+          "side": "enemy",
+          "heroDid": "1100111",
+          "heroId": -1,
+          "wave": 1,
+          "slot": 1
+        },
+        {
+          "side": "enemy",
+          "heroDid": "1100112",
+          "heroId": -2,
+          "wave": 1,
+          "slot": 2
+        },
+        {
+          "side": "enemy",
+          "heroDid": "1100113",
+          "heroId": -3,
+          "wave": 1,
+          "slot": 3
+        },
+        {
+          "side": "enemy",
+          "heroDid": "1100121",
+          "heroId": -1,
+          "wave": 2,
+          "slot": 1
+        },
+        {
+          "side": "enemy",
+          "heroDid": "1100122",
+          "heroId": -2,
+          "wave": 2,
+          "slot": 2
+        },
+        {
+          "side": "enemy",
+          "heroDid": "1100123",
+          "heroId": -3,
+          "wave": 2,
+          "slot": 3
+        }
+      ],
+      "decodedLuaEvidence": [
+        {
+          "path": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battleskillscript\\-4182017775406981280_BattleSkillData1_security_xor_raw.lua",
+          "line": 98,
+          "snippet": "e.BattleSkills[1012201]=require(\"Modules/BattleSkillScript/1012/Skill1012201\")"
+        },
+        {
+          "path": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battleskillscript\\9079681824268326792_Skill1012201_security_xor_raw.lua",
+          "line": 1,
+          "snippet": "local e={"
+        }
+      ],
+      "skillFound": true,
+      "timelineFound": true,
+      "prefabIds": [
+        "1012201"
+      ],
+      "timelineAssetPaths": [
+        "Assets/Download/SkillPrefabsAndRes/1012/1012201.prefab"
+      ],
+      "prefabDependencyCount": 5,
+      "audioDependencyCount": 4,
+      "videoDependencyCount": 0,
+      "bundleCandidates": [
+        {
+          "skillId": 1012201,
+          "bundle": "download/commonprefabsandres/skilleffect/commonskillprefabsandres1/redspeedline.assetbundle",
+          "absolutePath": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\extracted\\unity\\clean_unityfs_slices\\download\\commonprefabsandres\\skilleffect\\commonskillprefabsandres1\\redspeedline.assetbundle",
+          "exists": false,
+          "size": 0,
+          "normalizeNote": "as_normalized_lower_path",
+          "source": "timeline_prefab_dep"
+        },
+        {
+          "skillId": 1012201,
+          "bundle": "download/skillprefabsandres/1012.assetbundle",
+          "absolutePath": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\extracted\\unity\\clean_unityfs_slices\\download\\skillprefabsandres\\1012.assetbundle",
+          "exists": true,
+          "size": 2038093,
+          "normalizeNote": "as_normalized_lower_path",
+          "source": "timeline_prefab_dep"
+        }
+      ],
+      "unresolvedReason": ""
+    },
+    {
+      "skillId": 1012301,
+      "owners": [
+        {
+          "side": "enemy",
+          "heroDid": "1100111",
+          "heroId": -1,
+          "wave": 1,
+          "slot": 1
+        },
+        {
+          "side": "enemy",
+          "heroDid": "1100112",
+          "heroId": -2,
+          "wave": 1,
+          "slot": 2
+        },
+        {
+          "side": "enemy",
+          "heroDid": "1100113",
+          "heroId": -3,
+          "wave": 1,
+          "slot": 3
+        },
+        {
+          "side": "enemy",
+          "heroDid": "1100121",
+          "heroId": -1,
+          "wave": 2,
+          "slot": 1
+        },
+        {
+          "side": "enemy",
+          "heroDid": "1100122",
+          "heroId": -2,
+          "wave": 2,
+          "slot": 2
+        },
+        {
+          "side": "enemy",
+          "heroDid": "1100123",
+          "heroId": -3,
+          "wave": 2,
+          "slot": 3
+        }
+      ],
+      "decodedLuaEvidence": [
+        {
+          "path": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battleskillscript\\-4182017775406981280_BattleSkillData1_security_xor_raw.lua",
+          "line": 100,
+          "snippet": "e.BattleSkills[1012301]=require(\"Modules/BattleSkillScript/1012/Skill1012301\")"
+        },
+        {
+          "path": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battleskillscript\\2069387073071549280_Skill1012301_security_xor_raw.lua",
+          "line": 1,
+          "snippet": "local e={"
+        }
+      ],
+      "skillFound": true,
+      "timelineFound": true,
+      "prefabIds": [
+        "1012301",
+        "1012351"
+      ],
+      "timelineAssetPaths": [
+        "Assets/Download/SkillPrefabsAndRes/1012/1012301.prefab",
+        "Assets/Download/SkillPrefabsAndRes/1012/1012351.prefab"
+      ],
+      "prefabDependencyCount": 3,
+      "audioDependencyCount": 4,
+      "videoDependencyCount": 1,
+      "bundleCandidates": [
+        {
+          "skillId": 1012301,
+          "bundle": "download/commonprefabsandres/skilleffect/commonskillprefabsandres1/redspeedline.assetbundle",
+          "absolutePath": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\extracted\\unity\\clean_unityfs_slices\\download\\commonprefabsandres\\skilleffect\\commonskillprefabsandres1\\redspeedline.assetbundle",
+          "exists": false,
+          "size": 0,
+          "normalizeNote": "as_normalized_lower_path",
+          "source": "timeline_prefab_dep"
+        },
+        {
+          "skillId": 1012301,
+          "bundle": "download/skillprefabsandres/1012.assetbundle",
+          "absolutePath": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\extracted\\unity\\clean_unityfs_slices\\download\\skillprefabsandres\\1012.assetbundle",
+          "exists": true,
+          "size": 2038093,
+          "normalizeNote": "as_normalized_lower_path",
+          "source": "timeline_prefab_dep"
+        }
+      ],
+      "unresolvedReason": ""
+    },
+    {
+      "skillId": 1012401,
+      "owners": [
+        {
+          "side": "enemy",
+          "heroDid": "1100111",
+          "heroId": -1,
+          "wave": 1,
+          "slot": 1
+        },
+        {
+          "side": "enemy",
+          "heroDid": "1100112",
+          "heroId": -2,
+          "wave": 1,
+          "slot": 2
+        },
+        {
+          "side": "enemy",
+          "heroDid": "1100113",
+          "heroId": -3,
+          "wave": 1,
+          "slot": 3
+        },
+        {
+          "side": "enemy",
+          "heroDid": "1100121",
+          "heroId": -1,
+          "wave": 2,
+          "slot": 1
+        },
+        {
+          "side": "enemy",
+          "heroDid": "1100122",
+          "heroId": -2,
+          "wave": 2,
+          "slot": 2
+        },
+        {
+          "side": "enemy",
+          "heroDid": "1100123",
+          "heroId": -3,
+          "wave": 2,
+          "slot": 3
+        }
+      ],
+      "decodedLuaEvidence": [],
+      "skillFound": false,
+      "timelineFound": false,
+      "prefabIds": [],
+      "timelineAssetPaths": [],
+      "prefabDependencyCount": 0,
+      "audioDependencyCount": 0,
+      "videoDependencyCount": 0,
+      "bundleCandidates": [],
+      "unresolvedReason": "bundle_candidates_missing_or_path_normalize_unresolved"
+    },
+    {
+      "skillId": 1012403,
+      "owners": [
+        {
+          "side": "enemy",
+          "heroDid": "1100111",
+          "heroId": -1,
+          "wave": 1,
+          "slot": 1
+        },
+        {
+          "side": "enemy",
+          "heroDid": "1100112",
+          "heroId": -2,
+          "wave": 1,
+          "slot": 2
+        },
+        {
+          "side": "enemy",
+          "heroDid": "1100113",
+          "heroId": -3,
+          "wave": 1,
+          "slot": 3
+        },
+        {
+          "side": "enemy",
+          "heroDid": "1100121",
+          "heroId": -1,
+          "wave": 2,
+          "slot": 1
+        },
+        {
+          "side": "enemy",
+          "heroDid": "1100122",
+          "heroId": -2,
+          "wave": 2,
+          "slot": 2
+        },
+        {
+          "side": "enemy",
+          "heroDid": "1100123",
+          "heroId": -3,
+          "wave": 2,
+          "slot": 3
+        }
+      ],
+      "decodedLuaEvidence": [],
+      "skillFound": false,
+      "timelineFound": false,
+      "prefabIds": [],
+      "timelineAssetPaths": [],
+      "prefabDependencyCount": 0,
+      "audioDependencyCount": 0,
+      "videoDependencyCount": 0,
+      "bundleCandidates": [],
+      "unresolvedReason": "bundle_candidates_missing_or_path_normalize_unresolved"
+    },
+    {
+      "skillId": 1034101,
+      "owners": [
+        {
+          "side": "our",
+          "heroDid": "1034",
+          "heroId": 50874,
+          "wave": 0,
+          "slot": 3
+        }
+      ],
+      "decodedLuaEvidence": [
+        {
+          "path": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battleskillscript\\-4182017775406981280_BattleSkillData1_security_xor_raw.lua",
+          "line": 284,
+          "snippet": "e.BattleSkills[1034101]=require(\"Modules/BattleSkillScript/1034/Skill1034101\")"
+        },
+        {
+          "path": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battleskillscript\\4413950015009019958_Skill1034101_security_xor_raw.lua",
+          "line": 1,
+          "snippet": "local e={"
+        }
+      ],
+      "skillFound": true,
+      "timelineFound": true,
+      "prefabIds": [
+        "1034101"
+      ],
+      "timelineAssetPaths": [
+        "Assets/Download/SkillPrefabsAndRes/1034/1034101.prefab"
+      ],
+      "prefabDependencyCount": 1,
+      "audioDependencyCount": 3,
+      "videoDependencyCount": 0,
+      "bundleCandidates": [
+        {
+          "skillId": 1034101,
+          "bundle": "download/skillprefabsandres/1034.assetbundle",
+          "absolutePath": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\extracted\\unity\\clean_unityfs_slices\\download\\skillprefabsandres\\1034.assetbundle",
+          "exists": true,
+          "size": 118083,
+          "normalizeNote": "as_normalized_lower_path",
+          "source": "timeline_prefab_dep"
+        }
+      ],
+      "unresolvedReason": ""
+    },
+    {
+      "skillId": 1034201,
+      "owners": [
+        {
+          "side": "our",
+          "heroDid": "1034",
+          "heroId": 50874,
+          "wave": 0,
+          "slot": 3
+        }
+      ],
+      "decodedLuaEvidence": [
+        {
+          "path": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battleskillscript\\-4182017775406981280_BattleSkillData1_security_xor_raw.lua",
+          "line": 285,
+          "snippet": "e.BattleSkills[1034201]=require(\"Modules/BattleSkillScript/1034/Skill1034201\")"
+        },
+        {
+          "path": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battleskillscript\\3187705242097501591_Skill1034201_security_xor_raw.lua",
+          "line": 1,
+          "snippet": "local e={}"
+        }
+      ],
+      "skillFound": true,
+      "timelineFound": true,
+      "prefabIds": [
+        "1034201"
+      ],
+      "timelineAssetPaths": [
+        "Assets/Download/SkillPrefabsAndRes/1034/1034201.prefab"
+      ],
+      "prefabDependencyCount": 4,
+      "audioDependencyCount": 2,
+      "videoDependencyCount": 0,
+      "bundleCandidates": [
+        {
+          "skillId": 1034201,
+          "bundle": "download/commonprefabsandres/skilleffect/commonskillprefabsandres1/yellospeedline.assetbundle",
+          "absolutePath": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\extracted\\unity\\clean_unityfs_slices\\download\\commonprefabsandres\\skilleffect\\commonskillprefabsandres1\\yellospeedline.assetbundle",
+          "exists": false,
+          "size": 0,
+          "normalizeNote": "as_normalized_lower_path",
+          "source": "timeline_prefab_dep"
+        },
+        {
+          "skillId": 1034201,
+          "bundle": "download/skillprefabsandres/1034.assetbundle",
+          "absolutePath": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\extracted\\unity\\clean_unityfs_slices\\download\\skillprefabsandres\\1034.assetbundle",
+          "exists": true,
+          "size": 118083,
+          "normalizeNote": "as_normalized_lower_path",
+          "source": "timeline_prefab_dep"
+        }
+      ],
+      "unresolvedReason": ""
+    },
+    {
+      "skillId": 1034301,
+      "owners": [
+        {
+          "side": "our",
+          "heroDid": "1034",
+          "heroId": 50874,
+          "wave": 0,
+          "slot": 3
+        }
+      ],
+      "decodedLuaEvidence": [
+        {
+          "path": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battleskillscript\\-30940257409791937_Skill1034301_security_xor_raw.lua",
+          "line": 1,
+          "snippet": "local e={}"
+        },
+        {
+          "path": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battleskillscript\\-4182017775406981280_BattleSkillData1_security_xor_raw.lua",
+          "line": 287,
+          "snippet": "e.BattleSkills[1034301]=require(\"Modules/BattleSkillScript/1034/Skill1034301\")"
+        }
+      ],
+      "skillFound": true,
+      "timelineFound": true,
+      "prefabIds": [
+        "1034301",
+        "1034351"
+      ],
+      "timelineAssetPaths": [
+        "Assets/Download/SkillPrefabsAndRes/1034/1034301.prefab",
+        "Assets/Download/SkillPrefabsAndRes/1034/1034351.prefab"
+      ],
+      "prefabDependencyCount": 4,
+      "audioDependencyCount": 3,
+      "videoDependencyCount": 1,
+      "bundleCandidates": [
+        {
+          "skillId": 1034301,
+          "bundle": "download/commonprefabsandres/skilleffect/commonskillprefabsandres1/yellospeedline.assetbundle",
+          "absolutePath": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\extracted\\unity\\clean_unityfs_slices\\download\\commonprefabsandres\\skilleffect\\commonskillprefabsandres1\\yellospeedline.assetbundle",
+          "exists": false,
+          "size": 0,
+          "normalizeNote": "as_normalized_lower_path",
+          "source": "timeline_prefab_dep"
+        },
+        {
+          "skillId": 1034301,
+          "bundle": "download/skillprefabsandres/1034.assetbundle",
+          "absolutePath": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\extracted\\unity\\clean_unityfs_slices\\download\\skillprefabsandres\\1034.assetbundle",
+          "exists": true,
+          "size": 118083,
+          "normalizeNote": "as_normalized_lower_path",
+          "source": "timeline_prefab_dep"
+        }
+      ],
+      "unresolvedReason": ""
+    },
+    {
+      "skillId": 1034401,
+      "owners": [
+        {
+          "side": "our",
+          "heroDid": "1034",
+          "heroId": 50874,
+          "wave": 0,
+          "slot": 3
+        }
+      ],
+      "decodedLuaEvidence": [],
+      "skillFound": false,
+      "timelineFound": false,
+      "prefabIds": [],
+      "timelineAssetPaths": [],
+      "prefabDependencyCount": 0,
+      "audioDependencyCount": 0,
+      "videoDependencyCount": 0,
+      "bundleCandidates": [],
+      "unresolvedReason": "bundle_candidates_missing_or_path_normalize_unresolved"
+    },
+    {
+      "skillId": 1034402,
+      "owners": [
+        {
+          "side": "our",
+          "heroDid": "1034",
+          "heroId": 50874,
+          "wave": 0,
+          "slot": 3
+        }
+      ],
+      "decodedLuaEvidence": [
+        {
+          "path": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battleskillscript\\-4182017775406981280_BattleSkillData1_security_xor_raw.lua",
+          "line": 290,
+          "snippet": "e.BattleSkills[1034402]=require(\"Modules/BattleSkillScript/1034/Skill1034402\")"
+        },
+        {
+          "path": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battleskillscript\\6674525615122087157_Skill1034402_security_xor_raw.lua",
+          "line": 1,
+          "snippet": "local e={}"
+        }
+      ],
+      "skillFound": false,
+      "timelineFound": false,
+      "prefabIds": [],
+      "timelineAssetPaths": [],
+      "prefabDependencyCount": 0,
+      "audioDependencyCount": 0,
+      "videoDependencyCount": 0,
+      "bundleCandidates": [],
+      "unresolvedReason": "bundle_candidates_missing_or_path_normalize_unresolved"
+    },
+    {
+      "skillId": 1036101,
+      "owners": [
+        {
+          "side": "our",
+          "heroDid": "1036",
+          "heroId": 51469,
+          "wave": 0,
+          "slot": 1
+        }
+      ],
+      "decodedLuaEvidence": [
+        {
+          "path": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battleskillscript\\-4182017775406981280_BattleSkillData1_security_xor_raw.lua",
+          "line": 300,
+          "snippet": "e.BattleSkills[1036101]=require(\"Modules/BattleSkillScript/1036/Skill1036101\")"
+        },
+        {
+          "path": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battleskillscript\\-8426036463205233546_Skill1036101_security_xor_raw.lua",
+          "line": 1,
+          "snippet": "local e={"
+        }
+      ],
+      "skillFound": true,
+      "timelineFound": true,
+      "prefabIds": [
+        "1036101"
+      ],
+      "timelineAssetPaths": [
+        "Assets/Download/SkillPrefabsAndRes/1036/1036101.prefab"
+      ],
+      "prefabDependencyCount": 2,
+      "audioDependencyCount": 4,
+      "videoDependencyCount": 0,
+      "bundleCandidates": [
+        {
+          "skillId": 1036101,
+          "bundle": "download/skillprefabsandres/1036.assetbundle",
+          "absolutePath": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\extracted\\unity\\clean_unityfs_slices\\download\\skillprefabsandres\\1036.assetbundle",
+          "exists": true,
+          "size": 341520,
+          "normalizeNote": "as_normalized_lower_path",
+          "source": "timeline_prefab_dep"
+        }
+      ],
+      "unresolvedReason": ""
+    },
+    {
+      "skillId": 1036201,
+      "owners": [
+        {
+          "side": "our",
+          "heroDid": "1036",
+          "heroId": 51469,
+          "wave": 0,
+          "slot": 1
+        }
+      ],
+      "decodedLuaEvidence": [
+        {
+          "path": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battleskillscript\\-4182017775406981280_BattleSkillData1_security_xor_raw.lua",
+          "line": 301,
+          "snippet": "e.BattleSkills[1036201]=require(\"Modules/BattleSkillScript/1036/Skill1036201\")"
+        },
+        {
+          "path": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battleskillscript\\-7265355789415058781_Skill1036201_security_xor_raw.lua",
+          "line": 1,
+          "snippet": "local e={}"
+        }
+      ],
+      "skillFound": true,
+      "timelineFound": true,
+      "prefabIds": [
+        "1036201"
+      ],
+      "timelineAssetPaths": [
+        "Assets/Download/SkillPrefabsAndRes/1036/1036201.prefab"
+      ],
+      "prefabDependencyCount": 2,
+      "audioDependencyCount": 2,
+      "videoDependencyCount": 0,
+      "bundleCandidates": [
+        {
+          "skillId": 1036201,
+          "bundle": "download/commonprefabsandres/skilleffect/commonskillprefabsandres1/redspeedline.assetbundle",
+          "absolutePath": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\extracted\\unity\\clean_unityfs_slices\\download\\commonprefabsandres\\skilleffect\\commonskillprefabsandres1\\redspeedline.assetbundle",
+          "exists": false,
+          "size": 0,
+          "normalizeNote": "as_normalized_lower_path",
+          "source": "timeline_prefab_dep"
+        },
+        {
+          "skillId": 1036201,
+          "bundle": "download/skillprefabsandres/1036.assetbundle",
+          "absolutePath": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\extracted\\unity\\clean_unityfs_slices\\download\\skillprefabsandres\\1036.assetbundle",
+          "exists": true,
+          "size": 341520,
+          "normalizeNote": "as_normalized_lower_path",
+          "source": "timeline_prefab_dep"
+        }
+      ],
+      "unresolvedReason": ""
+    },
+    {
+      "skillId": 1036301,
+      "owners": [
+        {
+          "side": "our",
+          "heroDid": "1036",
+          "heroId": 51469,
+          "wave": 0,
+          "slot": 1
+        }
+      ],
+      "decodedLuaEvidence": [
+        {
+          "path": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battleskillscript\\-4182017775406981280_BattleSkillData1_security_xor_raw.lua",
+          "line": 303,
+          "snippet": "e.BattleSkills[1036301]=require(\"Modules/BattleSkillScript/1036/Skill1036301\")"
+        },
+        {
+          "path": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battleskillscript\\5319582540156146224_Skill1036301_security_xor_raw.lua",
+          "line": 1,
+          "snippet": "local e={}"
+        }
+      ],
+      "skillFound": true,
+      "timelineFound": true,
+      "prefabIds": [
+        "1036301",
+        "1036351"
+      ],
+      "timelineAssetPaths": [
+        "Assets/Download/SkillPrefabsAndRes/1036/1036301.prefab",
+        "Assets/Download/SkillPrefabsAndRes/1036/1036351.prefab"
+      ],
+      "prefabDependencyCount": 5,
+      "audioDependencyCount": 3,
+      "videoDependencyCount": 1,
+      "bundleCandidates": [
+        {
+          "skillId": 1036301,
+          "bundle": "download/commonprefabsandres/skilleffect/commonskillprefabsandres1/yellospeedline.assetbundle",
+          "absolutePath": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\extracted\\unity\\clean_unityfs_slices\\download\\commonprefabsandres\\skilleffect\\commonskillprefabsandres1\\yellospeedline.assetbundle",
+          "exists": false,
+          "size": 0,
+          "normalizeNote": "as_normalized_lower_path",
+          "source": "timeline_prefab_dep"
+        },
+        {
+          "skillId": 1036301,
+          "bundle": "download/skillprefabsandres/1036.assetbundle",
+          "absolutePath": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\extracted\\unity\\clean_unityfs_slices\\download\\skillprefabsandres\\1036.assetbundle",
+          "exists": true,
+          "size": 341520,
+          "normalizeNote": "as_normalized_lower_path",
+          "source": "timeline_prefab_dep"
+        }
+      ],
+      "unresolvedReason": ""
+    },
+    {
+      "skillId": 1036401,
+      "owners": [
+        {
+          "side": "our",
+          "heroDid": "1036",
+          "heroId": 51469,
+          "wave": 0,
+          "slot": 1
+        }
+      ],
+      "decodedLuaEvidence": [],
+      "skillFound": false,
+      "timelineFound": false,
+      "prefabIds": [],
+      "timelineAssetPaths": [],
+      "prefabDependencyCount": 0,
+      "audioDependencyCount": 0,
+      "videoDependencyCount": 0,
+      "bundleCandidates": [],
+      "unresolvedReason": "bundle_candidates_missing_or_path_normalize_unresolved"
+    },
+    {
+      "skillId": 1036402,
+      "owners": [
+        {
+          "side": "our",
+          "heroDid": "1036",
+          "heroId": 51469,
+          "wave": 0,
+          "slot": 1
+        }
+      ],
+      "decodedLuaEvidence": [
+        {
+          "path": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battleskillscript\\-4182017775406981280_BattleSkillData1_security_xor_raw.lua",
+          "line": 307,
+          "snippet": "e.BattleSkills[1036402]=require(\"Modules/BattleSkillScript/1036/Skill1036402\")"
+        },
+        {
+          "path": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battleskillscript\\483905434925393749_Skill1036402_security_xor_raw.lua",
+          "line": 1,
+          "snippet": "local e={}"
+        }
+      ],
+      "skillFound": false,
+      "timelineFound": false,
+      "prefabIds": [],
+      "timelineAssetPaths": [],
+      "prefabDependencyCount": 0,
+      "audioDependencyCount": 0,
+      "videoDependencyCount": 0,
+      "bundleCandidates": [],
+      "unresolvedReason": "bundle_candidates_missing_or_path_normalize_unresolved"
+    }
+  ],
+  "targetsCsv": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_battle_unity\\Assets\\RestoreData\\battle\\BATTLE_SKILL_EFFECT_STREAMING_TARGETS.csv",
+  "unityProbeJson": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_battle_unity\\Assets\\RestoreData\\battle\\BATTLE_SKILL_EFFECT_STREAMING_UNITY_BUNDLE_PROBE.json"
+}

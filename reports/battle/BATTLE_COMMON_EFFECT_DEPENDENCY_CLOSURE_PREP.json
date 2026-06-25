@@ -1,0 +1,13 @@
+{
+  "closure": {
+    "unresolvedSkills": 8,
+    "passiveNoEffectSkills": 8,
+    "commonDependencyTargets": 3,
+    "commonAggregateFound": 3,
+    "playableMarkersPlanned": 12
+  },
+  "playable": {
+    "markers": 12,
+    "uniqueBundles": 4
+  }
+}

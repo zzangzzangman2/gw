@@ -9,6 +9,16 @@ girlswar_maininterface_unity/UserSettings/
 girlswar_maininterface_unity/*.csproj
 girlswar_maininterface_unity/*.sln
 
+girlswar_battle_unity/Library/
+girlswar_battle_unity/Temp/
+girlswar_battle_unity/Obj/
+girlswar_battle_unity/Build/
+girlswar_battle_unity/Builds/
+girlswar_battle_unity/Logs/
+girlswar_battle_unity/UserSettings/
+girlswar_battle_unity/*.csproj
+girlswar_battle_unity/*.sln
+
 # Local probe/build scratch work. Scripts, reports, logs, templates, and vendor files stay tracked.
 _restore_tools/work/
 _restore_tools/logs/github_push_main.log
@@ -18,5 +28,7 @@ _restore_tools/logs/github_push_followup_main.log
 Thumbs.db
 Desktop.ini
 .DS_Store
+__pycache__/
+*.pyc
 *.tmp
 *.bak
