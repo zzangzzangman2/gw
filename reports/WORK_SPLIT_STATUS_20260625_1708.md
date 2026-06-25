@@ -764,3 +764,37 @@
   - `Spine_shijieanniu` continues toward slot/bone pose trace
   - `8007` should be recorded as `blocked_8007_skeletonbinary_decode_failed` unless a stronger decode path is found
 - No UI113 final report has been accepted yet.
+
+## Update 2026-06-25 21:25 KST
+
+### UI MAININTERFACE_113 Result
+
+- Visual verdict: MainInterface is still not a normal/restored UI.
+- UI113 is trace-only and applied no visual fix to the MainInterface scene.
+- Rule gate preserved:
+  - no coordinate-only placement
+  - no whole atlas placement
+  - no guessed `yun/yun2` cloud placement
+  - no guessed `spine_xiaoren/8007` person placement
+  - no debug/path/evidence overlay added to final capture
+- Runtime Spine probe result:
+  - probe status: `spine_runtime_transform_evidence_collected_partial`
+  - visual fixes applied: `0`
+  - total attachment rows: `0`
+  - target route attachment rows: `0`
+  - cloud rows (`yun/yun2`): `0`
+  - `8007` run pose rows: `0`
+- Skeleton classifications:
+  - `Spine_shijieanniu` / node `spine_diqiu` / animation `A`: `blocked_empty_or_unreadable_runtime_skeleton_data`
+  - `8007` / node `spine_xiaoren` / animation `run`: `blocked_8007_skeletonbinary_decode_failed`
+- Verification:
+  - graphics capture: `girlswar_maininterface_unity\Assets\RestoreCaptures\maininterface_restored_1680x720.png`
+  - click validation: `24 / 24 / 0 / 24`, generated `2026-06-25 21:25:07`
+- Outputs:
+  - active tool: `_restore_tools\113_RESTORE_MAININTERFACE_ROUTE_SPINE_SLOT_BONE_ANIMATION_TRANSFORM.cmd`
+  - report: `reports\maininterface\MAININTERFACE_ROUTE_SPINE_SLOT_BONE_ANIMATION_TRANSFORM_RESULT.md`
+  - JSON: `girlswar_maininterface_unity\Assets\RestoreData\maininterface_route_spine_slot_bone_animation_transform.json`
+  - CSV: `girlswar_maininterface_unity\Assets\RestoreData\reports\maininterface_route_spine_slot_bone_animation_transform.csv`
+  - probe log: `reports\maininterface\unity_113_spine_route_cluster_transform_probe.log`
+- Next UI blocker:
+  - `route SpineGraphic runtime replay / raw skeleton decode recovery`

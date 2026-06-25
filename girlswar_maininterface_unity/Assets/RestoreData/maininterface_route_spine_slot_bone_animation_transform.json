@@ -1,0 +1,48 @@
+﻿{
+    "generatedAt": "2026-06-25 21:24:25",
+    "status": "spine_runtime_transform_evidence_collected_partial",
+    "visualFixApplied": 0,
+    "applicationVerdict": "trace_only_no_main_scene_visual_change",
+    "blocker": "Main scene has no route Spine runtime replay yet; bitmap placement for yun/yun2 or 8007 remains blocked until skeleton-space to UI-space mapping is applied through real SkeletonGraphic or a proven mesh replay.",
+    "summaries": [
+        {
+            "key": "Spine_shijieanniu",
+            "originalNode": "spine_diqiu",
+            "sourceBundle": "download/ui/uiprefabandres/maininterface_ext_8.assetbundle",
+            "skeletonDataAsset": "Assets/RestoreData/route_spine_source/maininterface_ext_8/Spine_shijieanniu_SkeletonData.asset",
+            "animation": "A",
+            "animationFound": false,
+            "animationDuration": 0.0,
+            "originalLocalScale": 1.0,
+            "boneCount": 0,
+            "slotCount": 0,
+            "skinCount": 0,
+            "animationCount": 0,
+            "animationNames": "",
+            "targetAttachmentCount": 0,
+            "visibleAttachmentRows": 0,
+            "decision": "blocked_empty_or_unreadable_runtime_skeleton_data",
+            "blocker": "SkeletonDataAsset exists but runtime SkeletonData has no usable bones/slots."
+        },
+        {
+            "key": "8007",
+            "originalNode": "spine_xiaoren",
+            "sourceBundle": "download/roleprefabsandres/npcprefabandres/8007.assetbundle",
+            "skeletonDataAsset": "Assets/RestoreData/route_spine_source/npcprefabandres_8007/8007_SkeletonData.asset",
+            "animation": "run",
+            "animationFound": false,
+            "animationDuration": 0.0,
+            "originalLocalScale": 0.5,
+            "boneCount": 0,
+            "slotCount": 0,
+            "skinCount": 0,
+            "animationCount": 0,
+            "animationNames": "",
+            "targetAttachmentCount": 0,
+            "visibleAttachmentRows": 0,
+            "decision": "blocked_8007_skeletonbinary_decode_failed",
+            "blocker": "IndexOutOfRangeException: Index was outside the bounds of the array."
+        }
+    ],
+    "rows": []
+}

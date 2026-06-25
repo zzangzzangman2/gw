@@ -7,6 +7,7 @@ set "TOOLS=%ROOT%_restore_tools"
 set "CURRENT=%TOOLS%\current"
 set "ARCHIVE=%TOOLS%\root_cmd_archive"
 set "STATUS=%ROOT%reports\WORK_SPLIT_STATUS_20260625_1708.md"
+set "UI113=%TOOLS%\113_RESTORE_MAININTERFACE_ROUTE_SPINE_SLOT_BONE_ANIMATION_TRANSFORM.cmd"
 set "UI112=%TOOLS%\112_TRACE_MAININTERFACE_ROUTE_NON_IMAGE_RENDERER_EFFECT_RUNTIME_STATE.cmd"
 set "UI111=%TOOLS%\111_REVALIDATE_MAININTERFACE_ROUTE_LABEL_RECT_OVERRIDES.cmd"
 set "UI110=%TOOLS%\110_FIX_MAININTERFACE_ROUTE_TMP_VARIANT_MATERIAL_TEXTURE_PTRS.cmd"
@@ -63,7 +64,9 @@ if errorlevel 4 (
   goto menu
 )
 if errorlevel 3 (
-  if exist "%UI112%" (
+  if exist "%UI113%" (
+    call "%UI113%"
+  ) else if exist "%UI112%" (
     call "%UI112%"
   ) else if exist "%UI111%" (
     call "%UI111%"
