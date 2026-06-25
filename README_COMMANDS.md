@@ -17,8 +17,11 @@ Current quick actions in `00_COMMAND_CENTER.cmd`:
 - git status and push helper
 
 Current latest validation targets:
-- MainInterface: `_restore_tools\cmd_archive\116_IMPORT_REAL_SPINE4_RUNTIME_BRIDGE_FOR_ROUTE_SKELETONGRAPHIC_REPLAY.cmd`
-- Battle: `_restore_tools\cmd_archive\BATTLE_36_TRACE_REAL_SPINE_INITIALIZE_SKELETONDATA_MATERIAL_SHADER_BINDING.cmd`
+- MainInterface: `_restore_tools\cmd_archive\117_VALIDATE_AND_FIX_ROUTE_SKELETONGRAPHIC_LAYOUT_AGAINST_ORIGINAL_EVIDENCE.cmd`
+- Battle: `_restore_tools\cmd_archive\BATTLE_37_BIND_ORIGINAL_SPINE_SHADER_VARIANTS_AND_MATERIAL_PASSES.cmd`
+
+Home handoff:
+- `reports\NEXT_RESTORE_HANDOFF.md`
 
 Archived old root shortcuts:
 - `_restore_tools\root_cmd_archive\`

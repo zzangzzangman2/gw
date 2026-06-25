@@ -1018,3 +1018,59 @@
   - contact sheet: `reports\battle\BATTLE_36_TRACE_REAL_SPINE_INITIALIZE_SKELETONDATA_MATERIAL_SHADER_BINDING_CONTACT_SHEET.jpg`
 - Next battle blocker:
   - `BATTLE_37_BIND_ORIGINAL_SPINE_SHADER_VARIANTS_AND_MATERIAL_PASSES`
+
+## Update 2026-06-25 22:18 KST
+
+### Delegated Next Work
+
+- UI thread `019efdb6-503d-7373-be2b-6dcd1a247b1a` was assigned:
+  - `MAININTERFACE_117_VALIDATE_AND_FIX_ROUTE_SKELETONGRAPHIC_LAYOUT_AGAINST_ORIGINAL_EVIDENCE`
+  - target blocker: `route SkeletonGraphic visual/layout validation against original/video evidence`
+- Battle thread `019efdb6-9db2-7e52-bbef-c959eb4d619e` was assigned:
+  - `BATTLE_37_BIND_ORIGINAL_SPINE_SHADER_VARIANTS_AND_MATERIAL_PASSES`
+  - target blocker: `unsupported original Spine shader/material/pass binding`
+- Main thread remains responsible for:
+  - root command layout
+  - `_restore_tools\current` wrapper updates
+  - final commit/push to `origin/main`
+  - sanity-checking that UI/Battle reports do not claim success unless captures and validation prove it
+
+### Command Policy Snapshot
+
+- Root CMD count: `1`
+- Only root launcher: `00_COMMAND_CENTER.cmd`
+- `_restore_tools` direct `.cmd` count: `0`
+
+## Update 2026-06-25 22:30 KST
+
+### Home Handoff
+
+- Stable handoff document:
+  - `reports\NEXT_RESTORE_HANDOFF.md`
+- Latest command wrappers now point at:
+  - MainInterface: `_restore_tools\cmd_archive\117_VALIDATE_AND_FIX_ROUTE_SKELETONGRAPHIC_LAYOUT_AGAINST_ORIGINAL_EVIDENCE.cmd`
+  - Battle: `_restore_tools\cmd_archive\BATTLE_37_BIND_ORIGINAL_SPINE_SHADER_VARIANTS_AND_MATERIAL_PASSES.cmd`
+
+### UI MAININTERFACE_117 Result
+
+- Visual verdict: MainInterface is still not a normal/restored UI.
+- UI117 suppressed only the interim bitmap fallback layers after real `SkeletonGraphic` evidence existed.
+- Validated capture still shows a large white route diamond/panel around the route cluster.
+- Verification:
+  - click validation: `2026-06-25 22:25:37`, `24 / 24 / 0 / 24`
+  - interim fallback suppressed: `3`
+  - route TMP variant rows OK: `6 / 6`
+- Next UI blocker:
+  - `MAININTERFACE_118_BIND_ROUTE_SKELETONGRAPHIC_UI_MATERIAL_SHADER_PASS_FROM_ORIGINAL_FIELDS`
+
+### Battle BATTLE_37 Result
+
+- Visual verdict: original clip05 actor motion is still not reproduced.
+- BATTLE37 reduced the shader/material magenta blocker:
+  - unsupported shader/material before/after: `5 -> 0`
+  - evidence-backed same-name Spine shader rebinds: `5`
+  - magenta ratio: `0.071884 -> 0.000387`
+  - mesh hash changed actors: `3 / 3`
+- This is still not a final battle screen because actor scale/camera/timing/context does not match the video.
+- Next battle blocker:
+  - `BATTLE_38_MATCH_ACTOR_SCALE_CAMERA_TIMING_AND_BATTLE_SCENE_CONTEXT_TO_CLIP05`

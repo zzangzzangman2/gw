@@ -1,0 +1,4 @@
+side,heroDid,modelId,hierarchyPath,activeInHierarchy,rendererType,rendererEnabled,materialNames,shaderNames,shaderSupported,textureNames,meshVertexCount,meshTriangleIndexCount
+"our","1002","1002","BATTLE37_LoadableActor_our_1002_model_1002",true,"MeshRenderer",true,"1002_Material","Spine/Skeleton Tint","Spine/Skeleton Tint=true/pass2","1002(1024x512)",736,2028
+"our","1034","1034","BATTLE37_LoadableActor_our_1034_model_1034",true,"MeshRenderer",true,"1034_Material;1034_Material-Screen","Spine/Skeleton Tint;Spine/Blend Modes/Skeleton PMA Screen","Spine/Skeleton Tint=true/pass2;Spine/Blend Modes/Skeleton PMA Screen=true/pass2","1034(2048x1024);1034(2048x1024)",1283,3381
+"enemy","1100111","3001","BATTLE37_LoadableActor_enemy_1100111_model_3001",true,"MeshRenderer",true,"3001_Material","Spine/Skeleton Tint","Spine/Skeleton Tint=true/pass2","3001(512x512)",611,2097
