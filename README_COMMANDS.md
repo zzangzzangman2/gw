@@ -5,12 +5,15 @@ The root folder is intentionally kept clean.
 Start here:
 - `00_COMMAND_CENTER.cmd`
 
-Active tool CMDs:
-- `_restore_tools\`
+Current quick CMD wrappers:
+- `_restore_tools\current\`
+
+Archived tool CMDs:
+- `_restore_tools\cmd_archive\`
 
 Current quick actions in `00_COMMAND_CENTER.cmd`:
-- latest MainInterface UI validation: `_restore_tools\111_REVALIDATE_MAININTERFACE_ROUTE_LABEL_RECT_OVERRIDES.cmd`
-- latest battle validation: `_restore_tools\BATTLE_31_ATTACH_LOADABLE_ACTOR_SPINE_ANIMATION_RUNTIME_PROBE.cmd`
+- latest MainInterface UI validation: `_restore_tools\current\01_RUN_LATEST_MAININTERFACE_UI_VALIDATION.cmd`
+- latest battle validation: `_restore_tools\current\02_RUN_LATEST_BATTLE_VALIDATION.cmd`
 - git status and push helper
 
 Archived old root shortcuts:
@@ -23,5 +26,8 @@ Current thread split:
 
 Notes:
 - Nothing was deleted in this cleanup.
-- Keep the root folder to one launcher CMD only; put new executable helpers under `_restore_tools\`.
+- Keep the root folder to one launcher CMD only.
+- Do not place CMD files directly under `_restore_tools\`.
+- Put historical or numbered executable helpers under `_restore_tools\cmd_archive\`.
+- Put only small current entry wrappers under `_restore_tools\current\`.
 - Use the archive only when you need to inspect or rerun an older root shortcut exactly as it was.
