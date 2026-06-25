@@ -1,0 +1,1074 @@
+{
+  "status": "battle23_external_dependency_load_manifest_ready",
+  "sourceBaseManifest": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_battle_unity\\Assets\\RestoreData\\battle\\BATTLE_HUD_SPRITE_REGION_FONT_JOIN_UNITY_MANIFEST.json",
+  "sourceBattle22Csv": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_battle_unity\\Assets\\RestoreData\\battle\\BATTLE_HUD_SPRITE_PPTR_DEEP_TRACE_RUNTIME_LUA_BINDING_COMPONENTS.csv",
+  "sourceBattle22Json": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_battle_unity\\Assets\\RestoreData\\battle\\BATTLE_HUD_SPRITE_PPTR_DEEP_TRACE_RUNTIME_LUA_BINDING.json",
+  "rules": {
+    "noFakeHud": true,
+    "noWholeAtlasImage": true,
+    "preservePrefabHierarchy": true,
+    "finalCaptureDebugPathPlaceholderTextFails": true,
+    "clip05SequenceGateRequired": true
+  },
+  "dependencyBundles": [
+    {
+      "bundle": "download/artsources/uispriteres/uibattle.assetbundle",
+      "absolutePath": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\extracted\\unity\\clean_unityfs_slices\\download\\artsources\\uispriteres\\uibattle.assetbundle",
+      "exists": true,
+      "reason": "spriteExternalBundle:resolved_external_candidate_not_loaded_runtime;spriteExternalBundle:unknown",
+      "referenceCount": 187
+    },
+    {
+      "bundle": "download/artsources/uispriteres/uibufficon.assetbundle",
+      "absolutePath": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\extracted\\unity\\clean_unityfs_slices\\download\\artsources\\uispriteres\\uibufficon.assetbundle",
+      "exists": true,
+      "reason": "spriteExternalBundle:resolved_external_candidate_not_loaded_runtime",
+      "referenceCount": 2
+    },
+    {
+      "bundle": "download/artsources/uispriteres/uibutton.assetbundle",
+      "absolutePath": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\extracted\\unity\\clean_unityfs_slices\\download\\artsources\\uispriteres\\uibutton.assetbundle",
+      "exists": true,
+      "reason": "spriteExternalBundle:external_bundle_not_loaded",
+      "referenceCount": 1
+    },
+    {
+      "bundle": "download/artsources/uispriteres/uicommonother.assetbundle",
+      "absolutePath": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\extracted\\unity\\clean_unityfs_slices\\download\\artsources\\uispriteres\\uicommonother.assetbundle",
+      "exists": true,
+      "reason": "explicit_battle22_high_priority_im_bg_left_right;spriteExternalBundle:external_bundle_not_loaded",
+      "referenceCount": 69
+    },
+    {
+      "bundle": "download/artsources/uispriteres/uiherohead/uiherohead_1.assetbundle",
+      "absolutePath": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\extracted\\unity\\clean_unityfs_slices\\download\\artsources\\uispriteres\\uiherohead\\uiherohead_1.assetbundle",
+      "exists": true,
+      "reason": "spriteExternalBundle:external_bundle_not_loaded",
+      "referenceCount": 4
+    },
+    {
+      "bundle": "download/artsources/uispriteres/uiheroheadbattle.assetbundle",
+      "absolutePath": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\extracted\\unity\\clean_unityfs_slices\\download\\artsources\\uispriteres\\uiheroheadbattle.assetbundle",
+      "exists": true,
+      "reason": "spriteExternalBundle:resolved_external_candidate_not_loaded_runtime",
+      "referenceCount": 6
+    },
+    {
+      "bundle": "download/artsources/uispriteres/uilogin.assetbundle",
+      "absolutePath": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\extracted\\unity\\clean_unityfs_slices\\download\\artsources\\uispriteres\\uilogin.assetbundle",
+      "exists": true,
+      "reason": "spriteExternalBundle:external_bundle_not_loaded;spriteExternalBundle:unknown",
+      "referenceCount": 2
+    },
+    {
+      "bundle": "download/ui/uiprefabandres/guide.assetbundle",
+      "absolutePath": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\extracted\\unity\\clean_unityfs_slices\\download\\ui\\uiprefabandres\\guide.assetbundle",
+      "exists": true,
+      "reason": "spriteExternalBundle:external_bundle_not_loaded",
+      "referenceCount": 5
+    }
+  ],
+  "dependencyBundleCount": 8,
+  "dependencyBundleExistsCount": 8,
+  "attachments": [
+    {
+      "id": "hud_attach_01",
+      "order": 1,
+      "role": "battle_root_hud",
+      "attachMode": "active_evidence_root",
+      "reason": "primary normal battle HUD root candidate",
+      "bundle": "download/ui/uiprefabandres/battle_ext_prefabs.assetbundle",
+      "absolutePath": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\extracted\\unity\\clean_unityfs_slices\\download\\ui\\uiprefabandres\\battle_ext_prefabs.assetbundle",
+      "prefabAsset": "assets/download/ui/uiprefabandres/battle_ext_prefabs/prefabs/ui_normalbattle.prefab",
+      "sourceKind": "battle_hud_prefab_ext",
+      "bundlePrefabRootCount": 11,
+      "bundleRectTransformCount": 842,
+      "bundleCanvasCount": 17,
+      "bundleMissingScriptCount": 894
+    },
+    {
+      "id": "hud_attach_02",
+      "order": 2,
+      "role": "battle_3d_overlay_hud",
+      "attachMode": "active_evidence_root",
+      "reason": "ProcedureNormalBattle references mBattleUI3D / battle UI 3D flow",
+      "bundle": "download/ui/uiprefabandres/battle_ext_prefabs.assetbundle",
+      "absolutePath": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\extracted\\unity\\clean_unityfs_slices\\download\\ui\\uiprefabandres\\battle_ext_prefabs.assetbundle",
+      "prefabAsset": "assets/download/ui/uiprefabandres/battle_ext_prefabs/prefabs/ui_battle3dui.prefab",
+      "sourceKind": "battle_hud_prefab_ext",
+      "bundlePrefabRootCount": 11,
+      "bundleRectTransformCount": 842,
+      "bundleCanvasCount": 17,
+      "bundleMissingScriptCount": 894
+    },
+    {
+      "id": "hud_attach_03",
+      "order": 3,
+      "role": "actor_heroitem_template",
+      "attachMode": "template_inactive",
+      "reason": "actor HP/name/slot template candidate; inactive to avoid fake repeated HUD",
+      "bundle": "download/ui/uiprefabandres/battle_ext_prefabs.assetbundle",
+      "absolutePath": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\extracted\\unity\\clean_unityfs_slices\\download\\ui\\uiprefabandres\\battle_ext_prefabs.assetbundle",
+      "prefabAsset": "assets/download/ui/uiprefabandres/battle_ext_prefabs/prefabs/ui_normalbattle_heroitem.prefab",
+      "sourceKind": "battle_hud_prefab_ext",
+      "bundlePrefabRootCount": 11,
+      "bundleRectTransformCount": 842,
+      "bundleCanvasCount": 17,
+      "bundleMissingScriptCount": 894
+    },
+    {
+      "id": "hud_attach_04",
+      "order": 4,
+      "role": "buff_icon_left_template",
+      "attachMode": "template_inactive",
+      "reason": "buff/debuff icon template candidate",
+      "bundle": "download/ui/uiprefabandres/battle_ext_prefabs.assetbundle",
+      "absolutePath": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\extracted\\unity\\clean_unityfs_slices\\download\\ui\\uiprefabandres\\battle_ext_prefabs.assetbundle",
+      "prefabAsset": "assets/download/ui/uiprefabandres/battle_ext_prefabs/prefabs/item_buff_left.prefab",
+      "sourceKind": "battle_hud_prefab_ext",
+      "bundlePrefabRootCount": 11,
+      "bundleRectTransformCount": 842,
+      "bundleCanvasCount": 17,
+      "bundleMissingScriptCount": 894
+    },
+    {
+      "id": "hud_attach_05",
+      "order": 5,
+      "role": "buff_icon_right_template",
+      "attachMode": "template_inactive",
+      "reason": "buff/debuff icon template candidate",
+      "bundle": "download/ui/uiprefabandres/battle_ext_prefabs.assetbundle",
+      "absolutePath": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\extracted\\unity\\clean_unityfs_slices\\download\\ui\\uiprefabandres\\battle_ext_prefabs.assetbundle",
+      "prefabAsset": "assets/download/ui/uiprefabandres/battle_ext_prefabs/prefabs/item_buff_right.prefab",
+      "sourceKind": "battle_hud_prefab_ext",
+      "bundlePrefabRootCount": 11,
+      "bundleRectTransformCount": 842,
+      "bundleCanvasCount": 17,
+      "bundleMissingScriptCount": 894
+    },
+    {
+      "id": "hud_attach_06",
+      "order": 6,
+      "role": "pause_panel_entry",
+      "attachMode": "entry_inactive",
+      "reason": "pause/settings entry root; not final overlay",
+      "bundle": "download/ui/uiprefabandres/battle_ext_prefabs.assetbundle",
+      "absolutePath": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\extracted\\unity\\clean_unityfs_slices\\download\\ui\\uiprefabandres\\battle_ext_prefabs.assetbundle",
+      "prefabAsset": "assets/download/ui/uiprefabandres/battle_ext_prefabs/prefabs/ui_normalbattle_pause.prefab",
+      "sourceKind": "battle_hud_prefab_ext",
+      "bundlePrefabRootCount": 11,
+      "bundleRectTransformCount": 842,
+      "bundleCanvasCount": 17,
+      "bundleMissingScriptCount": 894
+    },
+    {
+      "id": "hud_attach_07",
+      "order": 7,
+      "role": "skip_panel_entry",
+      "attachMode": "entry_inactive",
+      "reason": "skip entry root; not final overlay",
+      "bundle": "download/ui/uiprefabandres/battle_ext_prefabs.assetbundle",
+      "absolutePath": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\extracted\\unity\\clean_unityfs_slices\\download\\ui\\uiprefabandres\\battle_ext_prefabs.assetbundle",
+      "prefabAsset": "assets/download/ui/uiprefabandres/battle_ext_prefabs/prefabs/ui_normalbattle_skipview.prefab",
+      "sourceKind": "battle_hud_prefab_ext",
+      "bundlePrefabRootCount": 11,
+      "bundleRectTransformCount": 842,
+      "bundleCanvasCount": 17,
+      "bundleMissingScriptCount": 894
+    },
+    {
+      "id": "hud_attach_08",
+      "order": 8,
+      "role": "test_battle_ui_entry",
+      "attachMode": "entry_inactive",
+      "reason": "OpenTestBattleUI evidence; kept inactive/non-final",
+      "bundle": "download/ui/uiprefabandres/battle_ext_prefabs.assetbundle",
+      "absolutePath": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\extracted\\unity\\clean_unityfs_slices\\download\\ui\\uiprefabandres\\battle_ext_prefabs.assetbundle",
+      "prefabAsset": "assets/download/ui/uiprefabandres/battle_ext_prefabs/prefabs/ui_testbattle.prefab",
+      "sourceKind": "battle_hud_prefab_ext",
+      "bundlePrefabRootCount": 11,
+      "bundleRectTransformCount": 842,
+      "bundleCanvasCount": 17,
+      "bundleMissingScriptCount": 894
+    },
+    {
+      "id": "hud_attach_09",
+      "order": 9,
+      "role": "winlose_entry_victory_spine_base",
+      "attachMode": "entry_inactive",
+      "reason": "win/lose result entry-point marker only",
+      "bundle": "download/ui/uiprefabandres/winlose_ext_prefabs.assetbundle",
+      "absolutePath": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\extracted\\unity\\clean_unityfs_slices\\download\\ui\\uiprefabandres\\winlose_ext_prefabs.assetbundle",
+      "prefabAsset": "assets/download/ui/uiprefabandres/winlose_ext_prefabs/victory_spine_base.prefab",
+      "sourceKind": "battle_result_prefab_ext",
+      "bundlePrefabRootCount": 2,
+      "bundleRectTransformCount": 78,
+      "bundleCanvasCount": 0,
+      "bundleMissingScriptCount": 85
+    },
+    {
+      "id": "hud_attach_10",
+      "order": 10,
+      "role": "winlose_entry_victory_spine_base2",
+      "attachMode": "entry_inactive",
+      "reason": "win/lose result entry-point marker only",
+      "bundle": "download/ui/uiprefabandres/winlose_ext_prefabs.assetbundle",
+      "absolutePath": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\extracted\\unity\\clean_unityfs_slices\\download\\ui\\uiprefabandres\\winlose_ext_prefabs.assetbundle",
+      "prefabAsset": "assets/download/ui/uiprefabandres/winlose_ext_prefabs/victory_spine_base2.prefab",
+      "sourceKind": "battle_result_prefab_ext",
+      "bundlePrefabRootCount": 2,
+      "bundleRectTransformCount": 78,
+      "bundleCanvasCount": 0,
+      "bundleMissingScriptCount": 85
+    }
+  ],
+  "spriteBundles": [
+    {
+      "bundle": "download/artsources/uispriteres/uibattle.assetbundle",
+      "absolutePath": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\extracted\\unity\\clean_unityfs_slices\\download\\artsources\\uispriteres\\uibattle.assetbundle",
+      "exists": true
+    },
+    {
+      "bundle": "download/artsources/uispriteres/uibufficon.assetbundle",
+      "absolutePath": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\extracted\\unity\\clean_unityfs_slices\\download\\artsources\\uispriteres\\uibufficon.assetbundle",
+      "exists": true
+    },
+    {
+      "bundle": "download/artsources/uispriteres/uihurtnum.assetbundle",
+      "absolutePath": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\extracted\\unity\\clean_unityfs_slices\\download\\artsources\\uispriteres\\uihurtnum.assetbundle",
+      "exists": true
+    },
+    {
+      "bundle": "download/artsources/uispriteres/uiheroheadbattle.assetbundle",
+      "absolutePath": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\extracted\\unity\\clean_unityfs_slices\\download\\artsources\\uispriteres\\uiheroheadbattle.assetbundle",
+      "exists": true
+    },
+    {
+      "bundle": "download/artsources/uispriteres/uiminebattle.assetbundle",
+      "absolutePath": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\extracted\\unity\\clean_unityfs_slices\\download\\artsources\\uispriteres\\uiminebattle.assetbundle",
+      "exists": true
+    },
+    {
+      "bundle": "download/artsources/uispriteres/autohelper.assetbundle",
+      "absolutePath": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\extracted\\unity\\clean_unityfs_slices\\download\\artsources\\uispriteres\\autohelper.assetbundle",
+      "exists": true
+    },
+    {
+      "bundle": "download/ui/uiprefabandres/battle.assetbundle",
+      "absolutePath": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\extracted\\unity\\clean_unityfs_slices\\download\\ui\\uiprefabandres\\battle.assetbundle",
+      "exists": true
+    },
+    {
+      "bundle": "download/ui/uiprefabandres/battle_ext_prefabs.assetbundle",
+      "absolutePath": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\extracted\\unity\\clean_unityfs_slices\\download\\ui\\uiprefabandres\\battle_ext_prefabs.assetbundle",
+      "exists": true
+    },
+    {
+      "bundle": "download/ui/uiprefabandres/autohelper_ext_3.assetbundle",
+      "absolutePath": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\extracted\\unity\\clean_unityfs_slices\\download\\ui\\uiprefabandres\\autohelper_ext_3.assetbundle",
+      "exists": true
+    }
+  ],
+  "priorityExternalRows": [
+    {
+      "hierarchyPath": "BattleHudRuntimeBindingTraceLiveHudRoot/RuntimeTraceHUD_01_ui_normalbattle/root_opra/root_buff/im_bg_left",
+      "role": "Image",
+      "componentType": "UnityEngine.UI.Image",
+      "externalColumn": "spriteExternalBundle",
+      "externalBundle": "download/artsources/uispriteres/uicommonother.assetbundle",
+      "reason": "external_bundle_not_loaded",
+      "originalSpritePPtr": "6:-8109585734443225392",
+      "spriteAssetName": "UI_buzhen_mingzidi"
+    },
+    {
+      "hierarchyPath": "BattleHudRuntimeBindingTraceLiveHudRoot/RuntimeTraceHUD_01_ui_normalbattle/root_opra/root_buff/im_bg_right",
+      "role": "Image",
+      "componentType": "UnityEngine.UI.Image",
+      "externalColumn": "spriteExternalBundle",
+      "externalBundle": "download/artsources/uispriteres/uicommonother.assetbundle",
+      "reason": "external_bundle_not_loaded",
+      "originalSpritePPtr": "6:-8109585734443225392",
+      "spriteAssetName": "UI_buzhen_mingzidi"
+    },
+    {
+      "hierarchyPath": "BattleHudRuntimeBindingTraceLiveHudRoot/RuntimeTraceHUD_01_ui_normalbattle/root_battle/root_top/TopCenter/PlayerInfo/imgMask",
+      "role": "Image",
+      "componentType": "UnityEngine.UI.Image",
+      "externalColumn": "spriteExternalBundle",
+      "externalBundle": "download/artsources/uispriteres/uicommonother.assetbundle",
+      "reason": "external_bundle_not_loaded",
+      "originalSpritePPtr": "6:9178922751791648479",
+      "spriteAssetName": "BG_touxiangkuang"
+    },
+    {
+      "hierarchyPath": "BattleHudRuntimeBindingTraceLiveHudRoot/RuntimeTraceHUD_01_ui_normalbattle/root_battle/root_top/TopCenter/PlayerInfo/im_toukuang",
+      "role": "Image",
+      "componentType": "YouYou.YouYouImage",
+      "externalColumn": "spriteExternalBundle",
+      "externalBundle": "download/artsources/uispriteres/uicommonother.assetbundle",
+      "reason": "external_bundle_not_loaded",
+      "originalSpritePPtr": "6:7219077478803846132",
+      "spriteAssetName": "T_touxiangkuang"
+    },
+    {
+      "hierarchyPath": "BattleHudRuntimeBindingTraceLiveHudRoot/RuntimeTraceHUD_01_ui_normalbattle/root_battle/root_top/TopCenter/PlayerInfo/imgPlayerHPBG",
+      "role": "Image",
+      "componentType": "UnityEngine.UI.Image",
+      "externalColumn": "spriteExternalBundle",
+      "externalBundle": "download/artsources/uispriteres/uicommonother.assetbundle",
+      "reason": "external_bundle_not_loaded",
+      "originalSpritePPtr": "6:6617065208850742552",
+      "spriteAssetName": "Image_blank"
+    },
+    {
+      "hierarchyPath": "BattleHudRuntimeBindingTraceLiveHudRoot/RuntimeTraceHUD_01_ui_normalbattle/root_battle/root_top/TopCenter/PlayerInfo/bg_guanzhi",
+      "role": "Image",
+      "componentType": "YouYou.YouYouImage",
+      "externalColumn": "spriteExternalBundle",
+      "externalBundle": "download/artsources/uispriteres/uicommonother.assetbundle",
+      "reason": "external_bundle_not_loaded",
+      "originalSpritePPtr": "6:4706490186155028499",
+      "spriteAssetName": "guanzhi_maozi1"
+    },
+    {
+      "hierarchyPath": "BattleHudRuntimeBindingTraceLiveHudRoot/RuntimeTraceHUD_01_ui_normalbattle/root_battle/root_top/TopCenter/PlayerInfo/img_yazhi",
+      "role": "Image",
+      "componentType": "YouYou.YouYouImage",
+      "externalColumn": "spriteExternalBundle",
+      "externalBundle": "download/artsources/uispriteres/uicommonother.assetbundle",
+      "reason": "external_bundle_not_loaded",
+      "originalSpritePPtr": "6:7623093264871504072",
+      "spriteAssetName": "UI_up"
+    },
+    {
+      "hierarchyPath": "BattleHudRuntimeBindingTraceLiveHudRoot/RuntimeTraceHUD_01_ui_normalbattle/root_battle/root_top/TopCenter/PlayerInfo/im_chengzhan_zhan",
+      "role": "Image",
+      "componentType": "UnityEngine.UI.Image",
+      "externalColumn": "spriteExternalBundle",
+      "externalBundle": "download/artsources/uispriteres/uicommonother.assetbundle",
+      "reason": "external_bundle_not_loaded",
+      "originalSpritePPtr": "6:-7872734851153188046",
+      "spriteAssetName": "btn_zj"
+    },
+    {
+      "hierarchyPath": "BattleHudRuntimeBindingTraceLiveHudRoot/RuntimeTraceHUD_01_ui_normalbattle/root_battle/root_top/TopCenter/EnemyInfo/imgMask",
+      "role": "Image",
+      "componentType": "UnityEngine.UI.Image",
+      "externalColumn": "spriteExternalBundle",
+      "externalBundle": "download/artsources/uispriteres/uicommonother.assetbundle",
+      "reason": "external_bundle_not_loaded",
+      "originalSpritePPtr": "6:9178922751791648479",
+      "spriteAssetName": "BG_touxiangkuang"
+    },
+    {
+      "hierarchyPath": "BattleHudRuntimeBindingTraceLiveHudRoot/RuntimeTraceHUD_01_ui_normalbattle/root_battle/root_top/TopCenter/EnemyInfo/im_toukuang",
+      "role": "Image",
+      "componentType": "YouYou.YouYouImage",
+      "externalColumn": "spriteExternalBundle",
+      "externalBundle": "download/artsources/uispriteres/uicommonother.assetbundle",
+      "reason": "external_bundle_not_loaded",
+      "originalSpritePPtr": "6:7219077478803846132",
+      "spriteAssetName": "T_touxiangkuang"
+    },
+    {
+      "hierarchyPath": "BattleHudRuntimeBindingTraceLiveHudRoot/RuntimeTraceHUD_01_ui_normalbattle/root_battle/root_top/TopCenter/EnemyInfo/imgPlayerHPBG",
+      "role": "Image",
+      "componentType": "UnityEngine.UI.Image",
+      "externalColumn": "spriteExternalBundle",
+      "externalBundle": "download/artsources/uispriteres/uicommonother.assetbundle",
+      "reason": "external_bundle_not_loaded",
+      "originalSpritePPtr": "6:6617065208850742552",
+      "spriteAssetName": "Image_blank"
+    },
+    {
+      "hierarchyPath": "BattleHudRuntimeBindingTraceLiveHudRoot/RuntimeTraceHUD_01_ui_normalbattle/root_battle/root_top/TopCenter/EnemyInfo/bg_guanzhi",
+      "role": "Image",
+      "componentType": "YouYou.YouYouImage",
+      "externalColumn": "spriteExternalBundle",
+      "externalBundle": "download/artsources/uispriteres/uicommonother.assetbundle",
+      "reason": "external_bundle_not_loaded",
+      "originalSpritePPtr": "6:4706490186155028499",
+      "spriteAssetName": "guanzhi_maozi1"
+    },
+    {
+      "hierarchyPath": "BattleHudRuntimeBindingTraceLiveHudRoot/RuntimeTraceHUD_01_ui_normalbattle/root_battle/root_top/TopCenter/EnemyInfo/im_chengzhan_zhan",
+      "role": "Image",
+      "componentType": "UnityEngine.UI.Image",
+      "externalColumn": "spriteExternalBundle",
+      "externalBundle": "download/artsources/uispriteres/uicommonother.assetbundle",
+      "reason": "external_bundle_not_loaded",
+      "originalSpritePPtr": "6:-7872734851153188046",
+      "spriteAssetName": "btn_zj"
+    },
+    {
+      "hierarchyPath": "BattleHudRuntimeBindingTraceLiveHudRoot/RuntimeTraceHUD_01_ui_normalbattle/root_battle/root_top/TopCenter/EnemyInfo/img_yazhi",
+      "role": "Image",
+      "componentType": "YouYou.YouYouImage",
+      "externalColumn": "spriteExternalBundle",
+      "externalBundle": "download/artsources/uispriteres/uicommonother.assetbundle",
+      "reason": "external_bundle_not_loaded",
+      "originalSpritePPtr": "6:7623093264871504072",
+      "spriteAssetName": "UI_up"
+    },
+    {
+      "hierarchyPath": "BattleHudRuntimeBindingTraceLiveHudRoot/RuntimeTraceHUD_01_ui_normalbattle/root_battle/root_top/TopCenter/bg_wave",
+      "role": "Image",
+      "componentType": "UnityEngine.UI.Image",
+      "externalColumn": "spriteExternalBundle",
+      "externalBundle": "download/artsources/uispriteres/uicommonother.assetbundle",
+      "reason": "external_bundle_not_loaded",
+      "originalSpritePPtr": "6:3767306702705834126",
+      "spriteAssetName": "BG_wave"
+    },
+    {
+      "hierarchyPath": "BattleHudRuntimeBindingTraceLiveHudRoot/RuntimeTraceHUD_01_ui_normalbattle/root_battle/longzhan/PlayerInfo2/imgPlayerHPBG",
+      "role": "Image",
+      "componentType": "UnityEngine.UI.Image",
+      "externalColumn": "spriteExternalBundle",
+      "externalBundle": "download/artsources/uispriteres/uicommonother.assetbundle",
+      "reason": "external_bundle_not_loaded",
+      "originalSpritePPtr": "6:6617065208850742552",
+      "spriteAssetName": "Image_blank"
+    },
+    {
+      "hierarchyPath": "BattleHudRuntimeBindingTraceLiveHudRoot/RuntimeTraceHUD_01_ui_normalbattle/root_battle/longzhan/PlayerInfo2/1p/im_1p",
+      "role": "Image",
+      "componentType": "UnityEngine.UI.Image",
+      "externalColumn": "spriteExternalBundle",
+      "externalBundle": "download/artsources/uispriteres/uicommonother.assetbundle",
+      "reason": "external_bundle_not_loaded",
+      "originalSpritePPtr": "6:-3080470995974346168",
+      "spriteAssetName": "UI_longzhan_juneiP1"
+    },
+    {
+      "hierarchyPath": "BattleHudRuntimeBindingTraceLiveHudRoot/RuntimeTraceHUD_01_ui_normalbattle/root_battle/longzhan/PlayerInfo2/2p/im_2p",
+      "role": "Image",
+      "componentType": "UnityEngine.UI.Image",
+      "externalColumn": "spriteExternalBundle",
+      "externalBundle": "download/artsources/uispriteres/uicommonother.assetbundle",
+      "reason": "external_bundle_not_loaded",
+      "originalSpritePPtr": "6:-2245594471237426907",
+      "spriteAssetName": "UI_longzhan_juneiP2"
+    },
+    {
+      "hierarchyPath": "BattleHudRuntimeBindingTraceLiveHudRoot/RuntimeTraceHUD_01_ui_normalbattle/root_battle/longzhan/PlayerInfo2/3p/im_3p",
+      "role": "Image",
+      "componentType": "UnityEngine.UI.Image",
+      "externalColumn": "spriteExternalBundle",
+      "externalBundle": "download/artsources/uispriteres/uicommonother.assetbundle",
+      "reason": "external_bundle_not_loaded",
+      "originalSpritePPtr": "6:-1173332062286848013",
+      "spriteAssetName": "UI_longzhan_juneiP3"
+    },
+    {
+      "hierarchyPath": "BattleHudRuntimeBindingTraceLiveHudRoot/RuntimeTraceHUD_01_ui_normalbattle/root_battle/longzhan/EnemyInfo2/imgPlayerHPBG",
+      "role": "Image",
+      "componentType": "UnityEngine.UI.Image",
+      "externalColumn": "spriteExternalBundle",
+      "externalBundle": "download/artsources/uispriteres/uicommonother.assetbundle",
+      "reason": "external_bundle_not_loaded",
+      "originalSpritePPtr": "6:6617065208850742552",
+      "spriteAssetName": "Image_blank"
+    },
+    {
+      "hierarchyPath": "BattleHudRuntimeBindingTraceLiveHudRoot/RuntimeTraceHUD_01_ui_normalbattle/root_battle/longzhan/EnemyInfo2/im_kuang",
+      "role": "Image",
+      "componentType": "YouYou.YouYouImage",
+      "externalColumn": "spriteExternalBundle",
+      "externalBundle": "download/artsources/uispriteres/uicommonother.assetbundle",
+      "reason": "external_bundle_not_loaded",
+      "originalSpritePPtr": "6:7219077478803846132",
+      "spriteAssetName": "T_touxiangkuang"
+    },
+    {
+      "hierarchyPath": "BattleHudRuntimeBindingTraceLiveHudRoot/RuntimeTraceHUD_01_ui_normalbattle/root_battle/node_buff/ScrollViewBuff/Viewport/Content/buff_icon/buff_icon",
+      "role": "Image",
+      "componentType": "YouYou.YouYouImage",
+      "externalColumn": "spriteExternalBundle",
+      "externalBundle": "download/artsources/uispriteres/uicommonother.assetbundle",
+      "reason": "external_bundle_not_loaded",
+      "originalSpritePPtr": "6:6617065208850742552",
+      "spriteAssetName": "Image_blank"
+    },
+    {
+      "hierarchyPath": "BattleHudRuntimeBindingTraceLiveHudRoot/RuntimeTraceHUD_01_ui_normalbattle/root_battle/btnhelp/im_help",
+      "role": "Image",
+      "componentType": "UnityEngine.UI.Image",
+      "externalColumn": "spriteExternalBundle",
+      "externalBundle": "download/artsources/uispriteres/uibutton.assetbundle",
+      "reason": "external_bundle_not_loaded",
+      "originalSpritePPtr": "31:-6917885059598229099",
+      "spriteAssetName": "BTN_graphic_help"
+    },
+    {
+      "hierarchyPath": "BattleHudRuntimeBindingTraceLiveHudRoot/RuntimeTraceHUD_01_ui_normalbattle/root_battle/cizhui_group/btn_arrow",
+      "role": "Image",
+      "componentType": "YouYou.YouYouImage",
+      "externalColumn": "spriteExternalBundle",
+      "externalBundle": "download/artsources/uispriteres/uilogin.assetbundle",
+      "reason": "external_bundle_not_loaded",
+      "originalSpritePPtr": "39:-3499988007078409687",
+      "spriteAssetName": "dl_ggjt"
+    },
+    {
+      "hierarchyPath": "BattleHudRuntimeBindingTraceLiveHudRoot/RuntimeTraceHUD_01_ui_normalbattle/root_battle/cizhui_group/bg",
+      "role": "Image",
+      "componentType": "UnityEngine.UI.Image",
+      "externalColumn": "spriteExternalBundle",
+      "externalBundle": "download/artsources/uispriteres/uicommonother.assetbundle",
+      "reason": "external_bundle_not_loaded",
+      "originalSpritePPtr": "6:7400808742010069207",
+      "spriteAssetName": "jyfb_bg7"
+    },
+    {
+      "hierarchyPath": "BattleHudRuntimeBindingTraceLiveHudRoot/RuntimeTraceHUD_01_ui_normalbattle/root_battle/cizhui_group/text_cizhui1/zhuangshi",
+      "role": "Image",
+      "componentType": "UnityEngine.UI.Image",
+      "externalColumn": "spriteExternalBundle",
+      "externalBundle": "download/artsources/uispriteres/uicommonother.assetbundle",
+      "reason": "external_bundle_not_loaded",
+      "originalSpritePPtr": "6:5830116963148767267",
+      "spriteAssetName": "jyfb_bg6"
+    },
+    {
+      "hierarchyPath": "BattleHudRuntimeBindingTraceLiveHudRoot/RuntimeTraceHUD_01_ui_normalbattle/root_battle/cizhui_group/cizhui_group/text_cizhui1/zhuangshi",
+      "role": "Image",
+      "componentType": "UnityEngine.UI.Image",
+      "externalColumn": "spriteExternalBundle",
+      "externalBundle": "download/artsources/uispriteres/uicommonother.assetbundle",
+      "reason": "external_bundle_not_loaded",
+      "originalSpritePPtr": "6:-2271749065223651739",
+      "spriteAssetName": "T_zhuangshi_1"
+    },
+    {
+      "hierarchyPath": "BattleHudRuntimeBindingTraceLiveHudRoot/RuntimeTraceHUD_01_ui_normalbattle/root_battle/cizhui_group/cizhui_group/text_cizhui2/zhuangshi",
+      "role": "Image",
+      "componentType": "UnityEngine.UI.Image",
+      "externalColumn": "spriteExternalBundle",
+      "externalBundle": "download/artsources/uispriteres/uicommonother.assetbundle",
+      "reason": "external_bundle_not_loaded",
+      "originalSpritePPtr": "6:-2271749065223651739",
+      "spriteAssetName": "T_zhuangshi_1"
+    },
+    {
+      "hierarchyPath": "BattleHudRuntimeBindingTraceLiveHudRoot/RuntimeTraceHUD_01_ui_normalbattle/root_battle/cizhui_group/cizhui_group/text_cizhui3/zhuangshi",
+      "role": "Image",
+      "componentType": "UnityEngine.UI.Image",
+      "externalColumn": "spriteExternalBundle",
+      "externalBundle": "download/artsources/uispriteres/uicommonother.assetbundle",
+      "reason": "external_bundle_not_loaded",
+      "originalSpritePPtr": "6:-2271749065223651739",
+      "spriteAssetName": "T_zhuangshi_1"
+    },
+    {
+      "hierarchyPath": "BattleHudRuntimeBindingTraceLiveHudRoot/RuntimeTraceHUD_01_ui_normalbattle/root_battle/cizhui_group/cizhui_group/text_cizhui4/zhuangshi",
+      "role": "Image",
+      "componentType": "UnityEngine.UI.Image",
+      "externalColumn": "spriteExternalBundle",
+      "externalBundle": "download/artsources/uispriteres/uicommonother.assetbundle",
+      "reason": "external_bundle_not_loaded",
+      "originalSpritePPtr": "6:-2271749065223651739",
+      "spriteAssetName": "T_zhuangshi_1"
+    },
+    {
+      "hierarchyPath": "BattleHudRuntimeBindingTraceLiveHudRoot/RuntimeTraceHUD_01_ui_normalbattle/root_battle/im_oper_focus/im_oper_bg2/Image",
+      "role": "Image",
+      "componentType": "UnityEngine.UI.Image",
+      "externalColumn": "spriteExternalBundle",
+      "externalBundle": "download/ui/uiprefabandres/guide.assetbundle",
+      "reason": "external_bundle_not_loaded",
+      "originalSpritePPtr": "9:1208830684025222487",
+      "spriteAssetName": "mask_003"
+    },
+    {
+      "hierarchyPath": "BattleHudRuntimeBindingTraceLiveHudRoot/RuntimeTraceHUD_01_ui_normalbattle/root_battle/im_oper_focus/im_oper_bg2/Image (1)",
+      "role": "Image",
+      "componentType": "UnityEngine.UI.Image",
+      "externalColumn": "spriteExternalBundle",
+      "externalBundle": "download/ui/uiprefabandres/guide.assetbundle",
+      "reason": "external_bundle_not_loaded",
+      "originalSpritePPtr": "9:-3275294251290311566",
+      "spriteAssetName": "mask_004"
+    },
+    {
+      "hierarchyPath": "BattleHudRuntimeBindingTraceLiveHudRoot/RuntimeTraceHUD_01_ui_normalbattle/root_battle/im_oper_focus/im_oper_bg2/Image (2)",
+      "role": "Image",
+      "componentType": "UnityEngine.UI.Image",
+      "externalColumn": "spriteExternalBundle",
+      "externalBundle": "download/ui/uiprefabandres/guide.assetbundle",
+      "reason": "external_bundle_not_loaded",
+      "originalSpritePPtr": "9:-3275294251290311566",
+      "spriteAssetName": "mask_004"
+    },
+    {
+      "hierarchyPath": "BattleHudRuntimeBindingTraceLiveHudRoot/RuntimeTraceHUD_01_ui_normalbattle/root_battle/im_oper_focus/im_oper_bg2/Image (3)",
+      "role": "Image",
+      "componentType": "UnityEngine.UI.Image",
+      "externalColumn": "spriteExternalBundle",
+      "externalBundle": "download/ui/uiprefabandres/guide.assetbundle",
+      "reason": "external_bundle_not_loaded",
+      "originalSpritePPtr": "9:-3275294251290311566",
+      "spriteAssetName": "mask_004"
+    },
+    {
+      "hierarchyPath": "BattleHudRuntimeBindingTraceLiveHudRoot/RuntimeTraceHUD_01_ui_normalbattle/root_battle/im_oper_focus/im_oper_bg2/Image (4)",
+      "role": "Image",
+      "componentType": "UnityEngine.UI.Image",
+      "externalColumn": "spriteExternalBundle",
+      "externalBundle": "download/ui/uiprefabandres/guide.assetbundle",
+      "reason": "external_bundle_not_loaded",
+      "originalSpritePPtr": "9:-3275294251290311566",
+      "spriteAssetName": "mask_004"
+    },
+    {
+      "hierarchyPath": "BattleHudRuntimeBindingTraceLiveHudRoot/RuntimeTraceHUD_01_ui_normalbattle/root_opra/root_buff/UI_Global_HeadBarItem_BuffIcon/buff_icon",
+      "role": "Image",
+      "componentType": "YouYou.YouYouImage",
+      "externalColumn": "spriteExternalBundle",
+      "externalBundle": "download/artsources/uispriteres/uicommonother.assetbundle",
+      "reason": "external_bundle_not_loaded",
+      "originalSpritePPtr": "6:6617065208850742552",
+      "spriteAssetName": "Image_blank"
+    },
+    {
+      "hierarchyPath": "BattleHudRuntimeBindingTraceLiveHudRoot/RuntimeTraceHUD_01_ui_normalbattle/root_opra/root_buff/root_buff_left/grid_all_buff_left/item_buff_left_1/UI_BattleHeroItem/im_bg",
+      "role": "Image",
+      "componentType": "YouYou.YouYouImage",
+      "externalColumn": "spriteExternalBundle",
+      "externalBundle": "download/artsources/uispriteres/uicommonother.assetbundle",
+      "reason": "external_bundle_not_loaded",
+      "originalSpritePPtr": "6:4043117267995258628",
+      "spriteAssetName": "BG_zhuangbeikuang_3"
+    },
+    {
+      "hierarchyPath": "BattleHudRuntimeBindingTraceLiveHudRoot/RuntimeTraceHUD_01_ui_normalbattle/root_opra/root_buff/root_buff_left/grid_all_buff_left/item_buff_left_5/UI_BattleHeroItem/im_bg",
+      "role": "Image",
+      "componentType": "YouYou.YouYouImage",
+      "externalColumn": "spriteExternalBundle",
+      "externalBundle": "download/artsources/uispriteres/uicommonother.assetbundle",
+      "reason": "external_bundle_not_loaded",
+      "originalSpritePPtr": "6:4043117267995258628",
+      "spriteAssetName": "BG_zhuangbeikuang_3"
+    },
+    {
+      "hierarchyPath": "BattleHudRuntimeBindingTraceLiveHudRoot/RuntimeTraceHUD_01_ui_normalbattle/root_opra/root_buff/root_buff_left/grid_all_buff_left/item_buff_left_6/UI_BattleHeroItem/im_bg",
+      "role": "Image",
+      "componentType": "YouYou.YouYouImage",
+      "externalColumn": "spriteExternalBundle",
+      "externalBundle": "download/artsources/uispriteres/uicommonother.assetbundle",
+      "reason": "external_bundle_not_loaded",
+      "originalSpritePPtr": "6:4043117267995258628",
+      "spriteAssetName": "BG_zhuangbeikuang_3"
+    },
+    {
+      "hierarchyPath": "BattleHudRuntimeBindingTraceLiveHudRoot/RuntimeTraceHUD_01_ui_normalbattle/root_opra/root_buff/root_buff_right/grid_all_buff_right/item_buff_right_1/UI_BattleHeroItem/im_bg",
+      "role": "Image",
+      "componentType": "YouYou.YouYouImage",
+      "externalColumn": "spriteExternalBundle",
+      "externalBundle": "download/artsources/uispriteres/uicommonother.assetbundle",
+      "reason": "external_bundle_not_loaded",
+      "originalSpritePPtr": "6:4043117267995258628",
+      "spriteAssetName": "BG_zhuangbeikuang_3"
+    },
+    {
+      "hierarchyPath": "BattleHudRuntimeBindingTraceLiveHudRoot/RuntimeTraceHUD_01_ui_normalbattle/root_opra/root_buff/root_buff_right/grid_all_buff_right/item_buff_right_5/UI_BattleHeroItem/im_bg",
+      "role": "Image",
+      "componentType": "YouYou.YouYouImage",
+      "externalColumn": "spriteExternalBundle",
+      "externalBundle": "download/artsources/uispriteres/uicommonother.assetbundle",
+      "reason": "external_bundle_not_loaded",
+      "originalSpritePPtr": "6:4043117267995258628",
+      "spriteAssetName": "BG_zhuangbeikuang_3"
+    },
+    {
+      "hierarchyPath": "BattleHudRuntimeBindingTraceLiveHudRoot/RuntimeTraceHUD_01_ui_normalbattle/root_opra/root_buff/root_buff_right/grid_all_buff_right/item_buff_right_6/UI_BattleHeroItem/im_bg",
+      "role": "Image",
+      "componentType": "YouYou.YouYouImage",
+      "externalColumn": "spriteExternalBundle",
+      "externalBundle": "download/artsources/uispriteres/uicommonother.assetbundle",
+      "reason": "external_bundle_not_loaded",
+      "originalSpritePPtr": "6:4043117267995258628",
+      "spriteAssetName": "BG_zhuangbeikuang_3"
+    },
+    {
+      "hierarchyPath": "BattleHudRuntimeBindingTraceLiveHudRoot/RuntimeTraceHUD_01_ui_normalbattle/root_opra/auto_bubble_tips/im_jiantou",
+      "role": "Image",
+      "componentType": "UnityEngine.UI.Image",
+      "externalColumn": "spriteExternalBundle",
+      "externalBundle": "download/artsources/uispriteres/uicommonother.assetbundle",
+      "reason": "external_bundle_not_loaded",
+      "originalSpritePPtr": "6:-3479245848778662506",
+      "spriteAssetName": "IC_jiantou"
+    },
+    {
+      "hierarchyPath": "BattleHudRuntimeBindingTraceLiveHudRoot/RuntimeTraceHUD_03_ui_normalbattle_heroitem/imgIconBG/tweener/im_quality",
+      "role": "Image",
+      "componentType": "YouYou.YouYouImage",
+      "externalColumn": "spriteExternalBundle",
+      "externalBundle": "download/artsources/uispriteres/uicommonother.assetbundle",
+      "reason": "external_bundle_not_loaded",
+      "originalSpritePPtr": "6:6617065208850742552",
+      "spriteAssetName": "Image_blank"
+    },
+    {
+      "hierarchyPath": "BattleHudRuntimeBindingTraceLiveHudRoot/RuntimeTraceHUD_01_ui_normalbattle/root_battle/UI_BattleItemFly/root_item/itemCell76/im_bg",
+      "role": "Image",
+      "componentType": "YouYou.YouYouImage",
+      "externalColumn": "spriteExternalBundle",
+      "externalBundle": "download/artsources/uispriteres/uicommonother.assetbundle",
+      "reason": "external_bundle_not_loaded",
+      "originalSpritePPtr": "6:6617065208850742552",
+      "spriteAssetName": "Image_blank"
+    },
+    {
+      "hierarchyPath": "BattleHudRuntimeBindingTraceLiveHudRoot/RuntimeTraceHUD_01_ui_normalbattle/root_battle/UI_BattleItemFly/root_item/itemCell76/im_xuanzhong",
+      "role": "Image",
+      "componentType": "UnityEngine.UI.Image",
+      "externalColumn": "spriteExternalBundle",
+      "externalBundle": "download/artsources/uispriteres/uicommonother.assetbundle",
+      "reason": "external_bundle_not_loaded",
+      "originalSpritePPtr": "6:6749817066985035250",
+      "spriteAssetName": "T_xuanzhong"
+    },
+    {
+      "hierarchyPath": "BattleHudRuntimeBindingTraceLiveHudRoot/RuntimeTraceHUD_01_ui_normalbattle/root_battle/UI_BattleItemFly/root_item/itemCell76/im_prop",
+      "role": "Image",
+      "componentType": "YouYou.YouYouImage",
+      "externalColumn": "spriteExternalBundle",
+      "externalBundle": "download/artsources/uispriteres/uicommonother.assetbundle",
+      "reason": "external_bundle_not_loaded",
+      "originalSpritePPtr": "6:6617065208850742552",
+      "spriteAssetName": "Image_blank"
+    },
+    {
+      "hierarchyPath": "BattleHudRuntimeBindingTraceLiveHudRoot/RuntimeTraceHUD_01_ui_normalbattle/root_battle/UI_BattleItemFly/root_item/itemCell76/im_quality_frame",
+      "role": "Image",
+      "componentType": "YouYou.YouYouImage",
+      "externalColumn": "spriteExternalBundle",
+      "externalBundle": "download/artsources/uispriteres/uicommonother.assetbundle",
+      "reason": "external_bundle_not_loaded",
+      "originalSpritePPtr": "6:6617065208850742552",
+      "spriteAssetName": "Image_blank"
+    },
+    {
+      "hierarchyPath": "BattleHudRuntimeBindingTraceLiveHudRoot/RuntimeTraceHUD_01_ui_normalbattle/root_battle/UI_BattleItemFly/root_item/itemCell76/im_quality",
+      "role": "Image",
+      "componentType": "YouYou.YouYouImage",
+      "externalColumn": "spriteExternalBundle",
+      "externalBundle": "download/artsources/uispriteres/uicommonother.assetbundle",
+      "reason": "external_bundle_not_loaded",
+      "originalSpritePPtr": "6:6617065208850742552",
+      "spriteAssetName": "Image_blank"
+    },
+    {
+      "hierarchyPath": "BattleHudRuntimeBindingTraceLiveHudRoot/RuntimeTraceHUD_01_ui_normalbattle/root_battle/UI_BattleItemFly/root_item/itemCell76/im_ExtAdd",
+      "role": "Image",
+      "componentType": "YouYou.YouYouImage",
+      "externalColumn": "spriteExternalBundle",
+      "externalBundle": "download/artsources/uispriteres/uicommonother.assetbundle",
+      "reason": "external_bundle_not_loaded",
+      "originalSpritePPtr": "6:2001397398608917718",
+      "spriteAssetName": "hdzl_ewaijiaobiao"
+    },
+    {
+      "hierarchyPath": "BattleHudRuntimeBindingTraceLiveHudRoot/RuntimeTraceHUD_01_ui_normalbattle/root_battle/UI_BattleItemFly/root_item/itemCell76/im_break_1",
+      "role": "Image",
+      "componentType": "YouYou.YouYouImage",
+      "externalColumn": "spriteExternalBundle",
+      "externalBundle": "download/artsources/uispriteres/uicommonother.assetbundle",
+      "reason": "external_bundle_not_loaded",
+      "originalSpritePPtr": "6:3093554307405626423",
+      "spriteAssetName": "BJ_xingxing"
+    },
+    {
+      "hierarchyPath": "BattleHudRuntimeBindingTraceLiveHudRoot/RuntimeTraceHUD_01_ui_normalbattle/root_battle/UI_BattleItemFly/root_item/itemCell76/im_break_2",
+      "role": "Image",
+      "componentType": "YouYou.YouYouImage",
+      "externalColumn": "spriteExternalBundle",
+      "externalBundle": "download/artsources/uispriteres/uicommonother.assetbundle",
+      "reason": "external_bundle_not_loaded",
+      "originalSpritePPtr": "6:3093554307405626423",
+      "spriteAssetName": "BJ_xingxing"
+    },
+    {
+      "hierarchyPath": "BattleHudRuntimeBindingTraceLiveHudRoot/RuntimeTraceHUD_01_ui_normalbattle/root_battle/UI_BattleItemFly/root_item/itemCell76/im_break_3",
+      "role": "Image",
+      "componentType": "YouYou.YouYouImage",
+      "externalColumn": "spriteExternalBundle",
+      "externalBundle": "download/artsources/uispriteres/uicommonother.assetbundle",
+      "reason": "external_bundle_not_loaded",
+      "originalSpritePPtr": "6:3093554307405626423",
+      "spriteAssetName": "BJ_xingxing"
+    },
+    {
+      "hierarchyPath": "BattleHudRuntimeBindingTraceLiveHudRoot/RuntimeTraceHUD_01_ui_normalbattle/root_battle/UI_BattleItemFly/root_item/itemCell76/im_zhuanwusuipian",
+      "role": "Image",
+      "componentType": "UnityEngine.UI.Image",
+      "externalColumn": "spriteExternalBundle",
+      "externalBundle": "download/artsources/uispriteres/uicommonother.assetbundle",
+      "reason": "external_bundle_not_loaded",
+      "originalSpritePPtr": "6:-83597755055259436",
+      "spriteAssetName": "ic_weapon_piece"
+    },
+    {
+      "hierarchyPath": "BattleHudRuntimeBindingTraceLiveHudRoot/RuntimeTraceHUD_01_ui_normalbattle/root_battle/UI_BattleItemFly/root_item/itemCell76/im_star_level",
+      "role": "Image",
+      "componentType": "UnityEngine.UI.Image",
+      "externalColumn": "spriteExternalBundle",
+      "externalBundle": "download/artsources/uispriteres/uicommonother.assetbundle",
+      "reason": "external_bundle_not_loaded",
+      "originalSpritePPtr": "6:3523498357517148489",
+      "spriteAssetName": "B_jianbianditiao1"
+    },
+    {
+      "hierarchyPath": "BattleHudRuntimeBindingTraceLiveHudRoot/RuntimeTraceHUD_01_ui_normalbattle/root_battle/UI_BattleItemFly/root_item/itemCell76/im_star_level/im_star",
+      "role": "Image",
+      "componentType": "UnityEngine.UI.Image",
+      "externalColumn": "spriteExternalBundle",
+      "externalBundle": "download/artsources/uispriteres/uicommonother.assetbundle",
+      "reason": "external_bundle_not_loaded",
+      "originalSpritePPtr": "6:-3991815054087902777",
+      "spriteAssetName": "IC_xingxing"
+    },
+    {
+      "hierarchyPath": "BattleHudRuntimeBindingTraceLiveHudRoot/RuntimeTraceHUD_01_ui_normalbattle/root_battle/UI_BattleItemFly/root_item/itemCell76/im_zhezhao",
+      "role": "Image",
+      "componentType": "UnityEngine.UI.Image",
+      "externalColumn": "spriteExternalBundle",
+      "externalBundle": "download/artsources/uispriteres/uicommonother.assetbundle",
+      "reason": "external_bundle_not_loaded",
+      "originalSpritePPtr": "6:-7085584244313671675",
+      "spriteAssetName": "IC_zhuangbeitubiaoban6"
+    },
+    {
+      "hierarchyPath": "BattleHudRuntimeBindingTraceLiveHudRoot/RuntimeTraceHUD_01_ui_normalbattle/root_battle/UI_BattleItemFly/root_item/itemCell76/im_goldTree",
+      "role": "Image",
+      "componentType": "UnityEngine.UI.Image",
+      "externalColumn": "spriteExternalBundle",
+      "externalBundle": "download/artsources/uispriteres/uicommonother.assetbundle",
+      "reason": "external_bundle_not_loaded",
+      "originalSpritePPtr": "6:-3477560518138282869",
+      "spriteAssetName": "mfgy_jbhjssjtb"
+    },
+    {
+      "hierarchyPath": "BattleHudRuntimeBindingTraceLiveHudRoot/RuntimeTraceHUD_01_ui_normalbattle/root_battle/UI_BattleItemFly/root_item/itemCell76/im_duigou",
+      "role": "Image",
+      "componentType": "UnityEngine.UI.Image",
+      "externalColumn": "spriteExternalBundle",
+      "externalBundle": "download/artsources/uispriteres/uicommonother.assetbundle",
+      "reason": "external_bundle_not_loaded",
+      "originalSpritePPtr": "6:-4466887312369507679",
+      "spriteAssetName": "IC_tick_beibao_zhuangbeixuanzhong"
+    },
+    {
+      "hierarchyPath": "BattleHudRuntimeBindingTraceLiveHudRoot/RuntimeTraceHUD_01_ui_normalbattle/root_battle/UI_BattleItemFly/root_item/itemCell76/im_redpoint/RedDot",
+      "role": "Image",
+      "componentType": "UnityEngine.UI.Image",
+      "externalColumn": "spriteExternalBundle",
+      "externalBundle": "download/artsources/uispriteres/uicommonother.assetbundle",
+      "reason": "external_bundle_not_loaded",
+      "originalSpritePPtr": "6:523894093744659759",
+      "spriteAssetName": "T_hongdian_1"
+    },
+    {
+      "hierarchyPath": "BattleHudRuntimeBindingTraceLiveHudRoot/RuntimeTraceHUD_01_ui_normalbattle/root_battle/UI_BattleItemFly/root_item/itemCell76/btn_jian/im_jian",
+      "role": "Image",
+      "componentType": "UnityEngine.UI.Image",
+      "externalColumn": "spriteExternalBundle",
+      "externalBundle": "download/artsources/uispriteres/uicommonother.assetbundle",
+      "reason": "external_bundle_not_loaded",
+      "originalSpritePPtr": "6:4737794439923319884",
+      "spriteAssetName": "BTN_zhuangbei_tianjia"
+    },
+    {
+      "hierarchyPath": "BattleHudRuntimeBindingTraceLiveHudRoot/RuntimeTraceHUD_01_ui_normalbattle/root_opra/root_buff/root_buff_left/grid_all_buff_left/item_buff_left_2/UI_BattleHeroItem/im_bg",
+      "role": "Image",
+      "componentType": "YouYou.YouYouImage",
+      "externalColumn": "spriteExternalBundle",
+      "externalBundle": "download/artsources/uispriteres/uicommonother.assetbundle",
+      "reason": "external_bundle_not_loaded",
+      "originalSpritePPtr": "6:4043117267995258628",
+      "spriteAssetName": "BG_zhuangbeikuang_3"
+    },
+    {
+      "hierarchyPath": "BattleHudRuntimeBindingTraceLiveHudRoot/RuntimeTraceHUD_01_ui_normalbattle/root_opra/root_buff/root_buff_left/grid_all_buff_left/item_buff_left_3/UI_BattleHeroItem/im_bg",
+      "role": "Image",
+      "componentType": "YouYou.YouYouImage",
+      "externalColumn": "spriteExternalBundle",
+      "externalBundle": "download/artsources/uispriteres/uicommonother.assetbundle",
+      "reason": "external_bundle_not_loaded",
+      "originalSpritePPtr": "6:4043117267995258628",
+      "spriteAssetName": "BG_zhuangbeikuang_3"
+    },
+    {
+      "hierarchyPath": "BattleHudRuntimeBindingTraceLiveHudRoot/RuntimeTraceHUD_01_ui_normalbattle/root_opra/root_buff/root_buff_left/grid_all_buff_left/item_buff_left_4/UI_BattleHeroItem/im_bg",
+      "role": "Image",
+      "componentType": "YouYou.YouYouImage",
+      "externalColumn": "spriteExternalBundle",
+      "externalBundle": "download/artsources/uispriteres/uicommonother.assetbundle",
+      "reason": "external_bundle_not_loaded",
+      "originalSpritePPtr": "6:4043117267995258628",
+      "spriteAssetName": "BG_zhuangbeikuang_3"
+    },
+    {
+      "hierarchyPath": "BattleHudRuntimeBindingTraceLiveHudRoot/RuntimeTraceHUD_01_ui_normalbattle/root_opra/root_buff/root_buff_right/grid_all_buff_right/item_buff_right_2/UI_BattleHeroItem/im_bg",
+      "role": "Image",
+      "componentType": "YouYou.YouYouImage",
+      "externalColumn": "spriteExternalBundle",
+      "externalBundle": "download/artsources/uispriteres/uicommonother.assetbundle",
+      "reason": "external_bundle_not_loaded",
+      "originalSpritePPtr": "6:4043117267995258628",
+      "spriteAssetName": "BG_zhuangbeikuang_3"
+    },
+    {
+      "hierarchyPath": "BattleHudRuntimeBindingTraceLiveHudRoot/RuntimeTraceHUD_01_ui_normalbattle/root_opra/root_buff/root_buff_right/grid_all_buff_right/item_buff_right_3/UI_BattleHeroItem/im_bg",
+      "role": "Image",
+      "componentType": "YouYou.YouYouImage",
+      "externalColumn": "spriteExternalBundle",
+      "externalBundle": "download/artsources/uispriteres/uicommonother.assetbundle",
+      "reason": "external_bundle_not_loaded",
+      "originalSpritePPtr": "6:4043117267995258628",
+      "spriteAssetName": "BG_zhuangbeikuang_3"
+    },
+    {
+      "hierarchyPath": "BattleHudRuntimeBindingTraceLiveHudRoot/RuntimeTraceHUD_01_ui_normalbattle/root_opra/root_buff/root_buff_right/grid_all_buff_right/item_buff_right_4/UI_BattleHeroItem/im_bg",
+      "role": "Image",
+      "componentType": "YouYou.YouYouImage",
+      "externalColumn": "spriteExternalBundle",
+      "externalBundle": "download/artsources/uispriteres/uicommonother.assetbundle",
+      "reason": "external_bundle_not_loaded",
+      "originalSpritePPtr": "6:4043117267995258628",
+      "spriteAssetName": "BG_zhuangbeikuang_3"
+    },
+    {
+      "hierarchyPath": "BattleHudRuntimeBindingTraceLiveHudRoot/RuntimeTraceHUD_01_ui_normalbattle/root_opra/auto_bubble_tips/bg_bubble",
+      "role": "Image",
+      "componentType": "UnityEngine.UI.Image",
+      "externalColumn": "spriteExternalBundle",
+      "externalBundle": "download/artsources/uispriteres/uicommonother.assetbundle",
+      "reason": "external_bundle_not_loaded",
+      "originalSpritePPtr": "6:-5405395493740883888",
+      "spriteAssetName": "BG_tongyong_8"
+    },
+    {
+      "hierarchyPath": "BattleHudRuntimeBindingTraceLiveHudRoot/RuntimeTraceHUD_08_ui_testbattle/root_battle/TopCenter/PlayerInfo/imgBG",
+      "role": "Image",
+      "componentType": "UnityEngine.UI.Image",
+      "externalColumn": "spriteExternalBundle",
+      "externalBundle": "download/artsources/uispriteres/uicommonother.assetbundle",
+      "reason": "external_bundle_not_loaded",
+      "originalSpritePPtr": "6:-8758928357025418144",
+      "spriteAssetName": "touxiang_diban"
+    },
+    {
+      "hierarchyPath": "BattleHudRuntimeBindingTraceLiveHudRoot/RuntimeTraceHUD_08_ui_testbattle/root_battle/TopCenter/PlayerInfo/imgPlayerHeadIcon",
+      "role": "Image",
+      "componentType": "UnityEngine.UI.Image",
+      "externalColumn": "spriteExternalBundle",
+      "externalBundle": "download/artsources/uispriteres/uiherohead/uiherohead_1.assetbundle",
+      "reason": "external_bundle_not_loaded",
+      "originalSpritePPtr": "12:-8812393343277448458",
+      "spriteAssetName": "head1001"
+    },
+    {
+      "hierarchyPath": "BattleHudRuntimeBindingTraceLiveHudRoot/RuntimeTraceHUD_08_ui_testbattle/root_battle/TopCenter/PlayerInfo/imgPlayerHeadIcon/imgMask",
+      "role": "Image",
+      "componentType": "UnityEngine.UI.Image",
+      "externalColumn": "spriteExternalBundle",
+      "externalBundle": "download/artsources/uispriteres/uicommonother.assetbundle",
+      "reason": "external_bundle_not_loaded",
+      "originalSpritePPtr": "6:6548437761232567680",
+      "spriteAssetName": "touxiang_kuang"
+    },
+    {
+      "hierarchyPath": "BattleHudRuntimeBindingTraceLiveHudRoot/RuntimeTraceHUD_08_ui_testbattle/root_battle/TopCenter/PlayerInfo/imgPlayerHPBG",
+      "role": "Image",
+      "componentType": "UnityEngine.UI.Image",
+      "externalColumn": "spriteExternalBundle",
+      "externalBundle": "download/artsources/uispriteres/uicommonother.assetbundle",
+      "reason": "external_bundle_not_loaded",
+      "originalSpritePPtr": "6:2988008763882415188",
+      "spriteAssetName": "touxiang_xuetiao_2"
+    },
+    {
+      "hierarchyPath": "BattleHudRuntimeBindingTraceLiveHudRoot/RuntimeTraceHUD_08_ui_testbattle/root_battle/TopCenter/EnemyInfo/imgBG",
+      "role": "Image",
+      "componentType": "UnityEngine.UI.Image",
+      "externalColumn": "spriteExternalBundle",
+      "externalBundle": "download/artsources/uispriteres/uicommonother.assetbundle",
+      "reason": "external_bundle_not_loaded",
+      "originalSpritePPtr": "6:-8758928357025418144",
+      "spriteAssetName": "touxiang_diban"
+    },
+    {
+      "hierarchyPath": "BattleHudRuntimeBindingTraceLiveHudRoot/RuntimeTraceHUD_08_ui_testbattle/root_battle/TopCenter/EnemyInfo/imgPlayerHeadIcon",
+      "role": "Image",
+      "componentType": "UnityEngine.UI.Image",
+      "externalColumn": "spriteExternalBundle",
+      "externalBundle": "download/artsources/uispriteres/uiherohead/uiherohead_1.assetbundle",
+      "reason": "external_bundle_not_loaded",
+      "originalSpritePPtr": "12:-8812393343277448458",
+      "spriteAssetName": "head1001"
+    },
+    {
+      "hierarchyPath": "BattleHudRuntimeBindingTraceLiveHudRoot/RuntimeTraceHUD_08_ui_testbattle/root_battle/TopCenter/EnemyInfo/imgPlayerHeadIcon/imgMask",
+      "role": "Image",
+      "componentType": "UnityEngine.UI.Image",
+      "externalColumn": "spriteExternalBundle",
+      "externalBundle": "download/artsources/uispriteres/uicommonother.assetbundle",
+      "reason": "external_bundle_not_loaded",
+      "originalSpritePPtr": "6:6548437761232567680",
+      "spriteAssetName": "touxiang_kuang"
+    },
+    {
+      "hierarchyPath": "BattleHudRuntimeBindingTraceLiveHudRoot/RuntimeTraceHUD_08_ui_testbattle/root_battle/TopCenter/EnemyInfo/imgPlayerHPBG",
+      "role": "Image",
+      "componentType": "UnityEngine.UI.Image",
+      "externalColumn": "spriteExternalBundle",
+      "externalBundle": "download/artsources/uispriteres/uicommonother.assetbundle",
+      "reason": "external_bundle_not_loaded",
+      "originalSpritePPtr": "6:2988008763882415188",
+      "spriteAssetName": "touxiang_xuetiao_2"
+    },
+    {
+      "hierarchyPath": "BattleHudRuntimeBindingTraceLiveHudRoot/RuntimeTraceHUD_08_ui_testbattle/root_battle/BottomCenter/HeroListContainer/UI_NormalBattle_HeroItem",
+      "role": "Image",
+      "componentType": "UnityEngine.UI.Image",
+      "externalColumn": "spriteExternalBundle",
+      "externalBundle": "download/artsources/uispriteres/uiherohead/uiherohead_1.assetbundle",
+      "reason": "external_bundle_not_loaded",
+      "originalSpritePPtr": "12:-8812393343277448458",
+      "spriteAssetName": "head1001"
+    },
+    {
+      "hierarchyPath": "BattleHudRuntimeBindingTraceLiveHudRoot/RuntimeTraceHUD_08_ui_testbattle/root_battle/BottomCenter/HeroListContainer/UI_NormalBattle_HeroItem/imgIconBG",
+      "role": "Image",
+      "componentType": "UnityEngine.UI.Image",
+      "externalColumn": "spriteExternalBundle",
+      "externalBundle": "download/artsources/uispriteres/uicommonother.assetbundle",
+      "reason": "external_bundle_not_loaded",
+      "originalSpritePPtr": "6:5378612097128486824",
+      "spriteAssetName": "BG_zhuangbeikuang_0"
+    },
+    {
+      "hierarchyPath": "BattleHudRuntimeBindingTraceLiveHudRoot/RuntimeTraceHUD_08_ui_testbattle/root_battle/BottomCenter/HeroListContainer/UI_NormalBattle_HeroItem/imgIconBG/imgHeadIcon",
+      "role": "Image",
+      "componentType": "YouYou.YouYouImage",
+      "externalColumn": "spriteExternalBundle",
+      "externalBundle": "download/artsources/uispriteres/uiherohead/uiherohead_1.assetbundle",
+      "reason": "external_bundle_not_loaded",
+      "originalSpritePPtr": "12:-8812393343277448458",
+      "spriteAssetName": "head1001"
+    },
+    {
+      "hierarchyPath": "BattleHudRuntimeBindingTraceLiveHudRoot/RuntimeTraceHUD_01_ui_normalbattle/root_battle/root_top/TopCenter/PlayerInfo/imgBG",
+      "role": "Image",
+      "componentType": "UnityEngine.UI.Image",
+      "externalColumn": "spriteExternalBundle",
+      "externalBundle": "download/artsources/uispriteres/uibattle.assetbundle",
+      "reason": "resolved_external_candidate_not_loaded_runtime",
+      "originalSpritePPtr": "2:-6513747630806363901",
+      "spriteAssetName": "ba_xuecao_bg"
+    }
+  ]
+}

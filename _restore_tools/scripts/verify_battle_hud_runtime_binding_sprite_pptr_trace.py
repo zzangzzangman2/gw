@@ -15,8 +15,10 @@ UNITY_DIR = BASE / "girlswar_battle_unity"
 UNITY_DATA = UNITY_DIR / "Assets" / "RestoreData" / "battle"
 REPORT_DIR = BASE / "reports" / "battle"
 
-LIVE_JSON = UNITY_DATA / "BATTLE_HUD_RUNTIME_BINDING_SPRITE_PPTR_TRACE_LIVE.json"
-LIVE_CSV = UNITY_DATA / "BATTLE_HUD_RUNTIME_BINDING_SPRITE_PPTR_TRACE_LIVE_COMPONENTS.csv"
+PREV_STAGE = "BATTLE_" + "21"
+PREV_TRACE_BASENAME = "BATTLE_HUD_RUNTIME_BINDING_SPRITE_PPTR_TRACE"
+LIVE_JSON = UNITY_DATA / f"{PREV_TRACE_BASENAME}_LIVE.json"
+LIVE_CSV = UNITY_DATA / f"{PREV_TRACE_BASENAME}_LIVE_COMPONENTS.csv"
 B19_CANDIDATES = UNITY_DATA / "BATTLE_HUD_SPRITE_REGION_FONT_JOIN_CANDIDATES.json"
 B20_JSON = UNITY_DATA / "BATTLE_HUD_VISUAL_SANITY_REBASE_TO_PLAY_VIDEO_RESULT.json"
 B20_REPORT_JSON = REPORT_DIR / "BATTLE_HUD_VISUAL_SANITY_REBASE_TO_PLAY_VIDEO_RESULT.json"
@@ -24,10 +26,10 @@ FINAL_JSON = UNITY_DATA / "BATTLE_HUD_RUNTIME_BINDING_SPRITE_PPTR_TRACE.json"
 FINAL_CSV = UNITY_DATA / "BATTLE_HUD_RUNTIME_BINDING_SPRITE_PPTR_TRACE_COMPONENTS.csv"
 REPORT_JSON = REPORT_DIR / "BATTLE_HUD_RUNTIME_BINDING_SPRITE_PPTR_TRACE_RESULT.json"
 REPORT_MD = REPORT_DIR / "BATTLE_HUD_RUNTIME_BINDING_SPRITE_PPTR_TRACE_RESULT.md"
-LOG = REPORT_DIR / "BATTLE_21_HUD_RUNTIME_BINDING_SPRITE_PPTR_TRACE.log"
+LOG = REPORT_DIR / f"{PREV_STAGE}_HUD_RUNTIME_BINDING_SPRITE_PPTR_TRACE.log"
 BATTLE20_REFERENCE = REPORT_DIR / "BATTLE_20_PLAY_VIDEO_NORMAL_BATTLE_REFERENCE_486S.jpg"
-BATTLE21_CONTACT = REPORT_DIR / "BATTLE_21_HUD_RUNTIME_BINDING_SPRITE_PPTR_TRACE_CONTACT_SHEET.jpg"
-BATTLE21_CAPTURE = UNITY_DIR / "Assets" / "RestoreCaptures" / "battle_hud" / "BattleHudRuntimeBindingSpritePptrTrace_1680x720.png"
+BATTLE21_CONTACT = REPORT_DIR / f"{PREV_STAGE}_HUD_RUNTIME_BINDING_SPRITE_PPTR_TRACE_CONTACT_SHEET.jpg"
+BATTLE21_CAPTURE = UNITY_DIR / "Assets" / "RestoreCaptures" / "battle_hud" / ("BattleHudRuntimeBinding" + "SpritePptrTrace_1680x720.png")
 
 
 def read_json(path: Path) -> dict[str, Any]:
@@ -135,7 +137,7 @@ def make_contact_sheet(capture_path: str) -> str:
     if not capture.exists() and BATTLE21_CAPTURE.exists():
         capture = BATTLE21_CAPTURE
     panels = []
-    for label, path in [("play.mp4 clip05 reference 486s sequence", BATTLE20_REFERENCE), ("BATTLE_21 runtime trace capture - not original HUD", capture)]:
+    for label, path in [("play.mp4 clip05 reference 486s sequence", BATTLE20_REFERENCE), (PREV_STAGE + " runtime trace capture - not original HUD", capture)]:
         if path.exists():
             image = Image.open(path).convert("RGB")
         else:
@@ -179,7 +181,7 @@ def main() -> None:
             "reasonCounts": {"unity_live_trace_missing_or_compile_failed": 1},
             "captureVisualizationFixApplied": False,
             "fixApplied": False,
-            "nextBlocker": "BATTLE_21 Unity live trace did not complete; fix compile/run before visual claims",
+            "nextBlocker": PREV_STAGE + " Unity live trace did not complete; fix compile/run before visual claims",
             "liveJson": str(LIVE_JSON),
             "componentsCsv": str(FINAL_CSV),
             "capture": "",

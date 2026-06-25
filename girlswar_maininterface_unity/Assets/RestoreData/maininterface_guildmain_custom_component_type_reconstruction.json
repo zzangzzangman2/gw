@@ -1,0 +1,1646 @@
+{
+    "generatedAt": "2026-06-25 18:56:22",
+    "verdict": "not_normal: custom type stubs reduce missing scripts but do not execute GuildMain Lua/runtime initialization",
+    "capturePath": "Assets/RestoreCaptures/guildmain_custom_component_type_reconstruction/UI_GuildMain_1680x720.png",
+    "whiteTraceJsonPath": "Assets/RestoreData/maininterface_guildmain_white_panel_material_shader_runtime_trace.json",
+    "stubProxyClassCount": 20,
+    "missingScriptObjectCountAfter": 170,
+    "missingScriptComponentCountAfter": 170,
+    "youYouImageComponentCountAfter": 640,
+    "luaComBinderComponentCountAfter": 58,
+    "loopListViewComponentCountAfter": 1,
+    "imageCountAfter": 1508,
+    "activeImageCountAfter": 103,
+    "noSpriteImageCountAfter": 518,
+    "whiteNoSpriteImageCountAfter": 444,
+    "componentTypeCounts": [
+        {
+            "typeName": "UnityEngine.UI.Image",
+            "count": 868
+        },
+        {
+            "typeName": "YouYou.YouYouImage",
+            "count": 640
+        },
+        {
+            "typeName": "TMPro.TextMeshProUGUI",
+            "count": 373
+        },
+        {
+            "typeName": "UnityEngine.UI.Button",
+            "count": 212
+        },
+        {
+            "typeName": "LuaComponentBinder.LuaComBinder",
+            "count": 58
+        },
+        {
+            "typeName": "UnityEngine.UI.ContentSizeFitter",
+            "count": 54
+        },
+        {
+            "typeName": "YouYou.UISpineCtr",
+            "count": 47
+        },
+        {
+            "typeName": "UnityEngine.UI.Text",
+            "count": 17
+        },
+        {
+            "typeName": "UnityEngine.UI.HorizontalLayoutGroup",
+            "count": 12
+        },
+        {
+            "typeName": "UnityEngine.UI.VerticalLayoutGroup",
+            "count": 7
+        },
+        {
+            "typeName": "YouYou.YouYouCanvasHelper",
+            "count": 7
+        },
+        {
+            "typeName": "UnityEngine.UI.Mask",
+            "count": 4
+        },
+        {
+            "typeName": "UnityEngine.UI.ScrollRect",
+            "count": 3
+        },
+        {
+            "typeName": "YouYou.UIEventListener",
+            "count": 2
+        },
+        {
+            "typeName": "SuperScrollView.LoopListView2",
+            "count": 1
+        },
+        {
+            "typeName": "UnityEngine.UI.Empty4Raycast",
+            "count": 1
+        },
+        {
+            "typeName": "UnityEngine.UI.GraphicRaycaster",
+            "count": 1
+        },
+        {
+            "typeName": "YouYou.FullscreenCenter",
+            "count": 1
+        },
+        {
+            "typeName": "YouYou.GuideNode",
+            "count": 1
+        },
+        {
+            "typeName": "YouYou.LuaForm",
+            "count": 1
+        },
+        {
+            "typeName": "YouYou.UIAniTrigger",
+            "count": 1
+        }
+    ],
+    "missingScriptRows": [
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/left/rd_shezhi/RedDot/SkeletonGraphic (hongdian01)",
+            "missingScriptCount": 1,
+            "existingMonoBehaviourTypes": "",
+            "nearbyComponents": "UnityEngine.CanvasRenderer;UnityEngine.RectTransform",
+            "isTopWhiteBlockerPath": false
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa1/im_new/NewShow",
+            "missingScriptCount": 1,
+            "existingMonoBehaviourTypes": "",
+            "nearbyComponents": "UnityEngine.CanvasRenderer;UnityEngine.RectTransform",
+            "isTopWhiteBlockerPath": false
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa1/p_curr_state/rd_wanfa/RedDot/SkeletonGraphic (hongdian01)",
+            "missingScriptCount": 1,
+            "existingMonoBehaviourTypes": "",
+            "nearbyComponents": "UnityEngine.CanvasRenderer;UnityEngine.RectTransform",
+            "isTopWhiteBlockerPath": false
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa10/guideRoot/im_new/NewShow",
+            "missingScriptCount": 1,
+            "existingMonoBehaviourTypes": "",
+            "nearbyComponents": "UnityEngine.CanvasRenderer;UnityEngine.RectTransform",
+            "isTopWhiteBlockerPath": false
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa10/guideRoot/lingtu_status/p_lingtu_red/RedDot/SkeletonGraphic (hongdian01)",
+            "missingScriptCount": 1,
+            "existingMonoBehaviourTypes": "",
+            "nearbyComponents": "UnityEngine.CanvasRenderer;UnityEngine.RectTransform",
+            "isTopWhiteBlockerPath": false
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa10/guideRoot/node_tips/item_group/award_trans_1/itemCell50_1/im_quality/sp_quality_7",
+            "missingScriptCount": 1,
+            "existingMonoBehaviourTypes": "YouYou.UISpineCtr",
+            "nearbyComponents": "UnityEngine.CanvasRenderer;UnityEngine.RectTransform;YouYou.UISpineCtr",
+            "isTopWhiteBlockerPath": false
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa10/guideRoot/node_tips/item_group/award_trans_1/itemCell50_1/im_quality/un_quality_7",
+            "missingScriptCount": 1,
+            "existingMonoBehaviourTypes": "",
+            "nearbyComponents": "UnityEngine.CanvasRenderer;UnityEngine.RectTransform",
+            "isTopWhiteBlockerPath": false
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa10/guideRoot/node_tips/item_group/award_trans_1/itemCell50_1/im_redpoint/RedDot/SkeletonGraphic (hongdian01)",
+            "missingScriptCount": 1,
+            "existingMonoBehaviourTypes": "",
+            "nearbyComponents": "UnityEngine.CanvasRenderer;UnityEngine.RectTransform",
+            "isTopWhiteBlockerPath": false
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa10/guideRoot/node_tips/item_group/award_trans_1/itemCell76/im_quality/sp_quality_7",
+            "missingScriptCount": 1,
+            "existingMonoBehaviourTypes": "YouYou.UISpineCtr",
+            "nearbyComponents": "UnityEngine.CanvasRenderer;UnityEngine.RectTransform;YouYou.UISpineCtr",
+            "isTopWhiteBlockerPath": false
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa10/guideRoot/node_tips/item_group/award_trans_1/itemCell76/im_quality/un_quality_7",
+            "missingScriptCount": 1,
+            "existingMonoBehaviourTypes": "",
+            "nearbyComponents": "UnityEngine.CanvasRenderer;UnityEngine.RectTransform",
+            "isTopWhiteBlockerPath": false
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa10/guideRoot/node_tips/item_group/award_trans_1/itemCell76/im_redpoint/RedDot/SkeletonGraphic (hongdian01)",
+            "missingScriptCount": 1,
+            "existingMonoBehaviourTypes": "",
+            "nearbyComponents": "UnityEngine.CanvasRenderer;UnityEngine.RectTransform",
+            "isTopWhiteBlockerPath": false
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa10/guideRoot/node_tips/item_group/award_trans_2/itemCell50_2/im_quality/sp_quality_7",
+            "missingScriptCount": 1,
+            "existingMonoBehaviourTypes": "YouYou.UISpineCtr",
+            "nearbyComponents": "UnityEngine.CanvasRenderer;UnityEngine.RectTransform;YouYou.UISpineCtr",
+            "isTopWhiteBlockerPath": false
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa10/guideRoot/node_tips/item_group/award_trans_2/itemCell50_2/im_quality/un_quality_7",
+            "missingScriptCount": 1,
+            "existingMonoBehaviourTypes": "",
+            "nearbyComponents": "UnityEngine.CanvasRenderer;UnityEngine.RectTransform",
+            "isTopWhiteBlockerPath": false
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa10/guideRoot/node_tips/item_group/award_trans_2/itemCell50_2/im_redpoint/RedDot/SkeletonGraphic (hongdian01)",
+            "missingScriptCount": 1,
+            "existingMonoBehaviourTypes": "",
+            "nearbyComponents": "UnityEngine.CanvasRenderer;UnityEngine.RectTransform",
+            "isTopWhiteBlockerPath": false
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa10/guideRoot/node_tips/item_group/award_trans_2/itemCell76/im_quality/sp_quality_7",
+            "missingScriptCount": 1,
+            "existingMonoBehaviourTypes": "YouYou.UISpineCtr",
+            "nearbyComponents": "UnityEngine.CanvasRenderer;UnityEngine.RectTransform;YouYou.UISpineCtr",
+            "isTopWhiteBlockerPath": false
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa10/guideRoot/node_tips/item_group/award_trans_2/itemCell76/im_quality/un_quality_7",
+            "missingScriptCount": 1,
+            "existingMonoBehaviourTypes": "",
+            "nearbyComponents": "UnityEngine.CanvasRenderer;UnityEngine.RectTransform",
+            "isTopWhiteBlockerPath": false
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa10/guideRoot/node_tips/item_group/award_trans_2/itemCell76/im_redpoint/RedDot/SkeletonGraphic (hongdian01)",
+            "missingScriptCount": 1,
+            "existingMonoBehaviourTypes": "",
+            "nearbyComponents": "UnityEngine.CanvasRenderer;UnityEngine.RectTransform",
+            "isTopWhiteBlockerPath": false
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa10/guideRoot/node_tips/item_group/award_trans_3/itemCell50_3/im_quality/sp_quality_7",
+            "missingScriptCount": 1,
+            "existingMonoBehaviourTypes": "YouYou.UISpineCtr",
+            "nearbyComponents": "UnityEngine.CanvasRenderer;UnityEngine.RectTransform;YouYou.UISpineCtr",
+            "isTopWhiteBlockerPath": false
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa10/guideRoot/node_tips/item_group/award_trans_3/itemCell50_3/im_quality/un_quality_7",
+            "missingScriptCount": 1,
+            "existingMonoBehaviourTypes": "",
+            "nearbyComponents": "UnityEngine.CanvasRenderer;UnityEngine.RectTransform",
+            "isTopWhiteBlockerPath": false
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa10/guideRoot/node_tips/item_group/award_trans_3/itemCell50_3/im_redpoint/RedDot/SkeletonGraphic (hongdian01)",
+            "missingScriptCount": 1,
+            "existingMonoBehaviourTypes": "",
+            "nearbyComponents": "UnityEngine.CanvasRenderer;UnityEngine.RectTransform",
+            "isTopWhiteBlockerPath": false
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa10/guideRoot/node_tips/item_group/award_trans_3/itemCell76/im_quality/sp_quality_7",
+            "missingScriptCount": 1,
+            "existingMonoBehaviourTypes": "YouYou.UISpineCtr",
+            "nearbyComponents": "UnityEngine.CanvasRenderer;UnityEngine.RectTransform;YouYou.UISpineCtr",
+            "isTopWhiteBlockerPath": false
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa10/guideRoot/node_tips/item_group/award_trans_3/itemCell76/im_quality/un_quality_7",
+            "missingScriptCount": 1,
+            "existingMonoBehaviourTypes": "",
+            "nearbyComponents": "UnityEngine.CanvasRenderer;UnityEngine.RectTransform",
+            "isTopWhiteBlockerPath": false
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa10/guideRoot/node_tips/item_group/award_trans_3/itemCell76/im_redpoint/RedDot/SkeletonGraphic (hongdian01)",
+            "missingScriptCount": 1,
+            "existingMonoBehaviourTypes": "",
+            "nearbyComponents": "UnityEngine.CanvasRenderer;UnityEngine.RectTransform",
+            "isTopWhiteBlockerPath": false
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa2/im_new/NewShow",
+            "missingScriptCount": 1,
+            "existingMonoBehaviourTypes": "",
+            "nearbyComponents": "UnityEngine.CanvasRenderer;UnityEngine.RectTransform",
+            "isTopWhiteBlockerPath": false
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa2/node_tips/item_group/award_trans_1/itemCell50_1/im_quality/sp_quality_7",
+            "missingScriptCount": 1,
+            "existingMonoBehaviourTypes": "YouYou.UISpineCtr",
+            "nearbyComponents": "UnityEngine.CanvasRenderer;UnityEngine.RectTransform;YouYou.UISpineCtr",
+            "isTopWhiteBlockerPath": false
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa2/node_tips/item_group/award_trans_1/itemCell50_1/im_quality/un_quality_7",
+            "missingScriptCount": 1,
+            "existingMonoBehaviourTypes": "",
+            "nearbyComponents": "UnityEngine.CanvasRenderer;UnityEngine.RectTransform",
+            "isTopWhiteBlockerPath": false
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa2/node_tips/item_group/award_trans_1/itemCell50_1/im_redpoint/RedDot/SkeletonGraphic (hongdian01)",
+            "missingScriptCount": 1,
+            "existingMonoBehaviourTypes": "",
+            "nearbyComponents": "UnityEngine.CanvasRenderer;UnityEngine.RectTransform",
+            "isTopWhiteBlockerPath": false
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa2/node_tips/item_group/award_trans_1/itemCell76/im_quality/sp_quality_7",
+            "missingScriptCount": 1,
+            "existingMonoBehaviourTypes": "YouYou.UISpineCtr",
+            "nearbyComponents": "UnityEngine.CanvasRenderer;UnityEngine.RectTransform;YouYou.UISpineCtr",
+            "isTopWhiteBlockerPath": false
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa2/node_tips/item_group/award_trans_1/itemCell76/im_quality/un_quality_7",
+            "missingScriptCount": 1,
+            "existingMonoBehaviourTypes": "",
+            "nearbyComponents": "UnityEngine.CanvasRenderer;UnityEngine.RectTransform",
+            "isTopWhiteBlockerPath": false
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa2/node_tips/item_group/award_trans_1/itemCell76/im_redpoint/RedDot/SkeletonGraphic (hongdian01)",
+            "missingScriptCount": 1,
+            "existingMonoBehaviourTypes": "",
+            "nearbyComponents": "UnityEngine.CanvasRenderer;UnityEngine.RectTransform",
+            "isTopWhiteBlockerPath": false
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa2/node_tips/item_group/award_trans_2/itemCell50_2/im_quality/sp_quality_7",
+            "missingScriptCount": 1,
+            "existingMonoBehaviourTypes": "YouYou.UISpineCtr",
+            "nearbyComponents": "UnityEngine.CanvasRenderer;UnityEngine.RectTransform;YouYou.UISpineCtr",
+            "isTopWhiteBlockerPath": false
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa2/node_tips/item_group/award_trans_2/itemCell50_2/im_quality/un_quality_7",
+            "missingScriptCount": 1,
+            "existingMonoBehaviourTypes": "",
+            "nearbyComponents": "UnityEngine.CanvasRenderer;UnityEngine.RectTransform",
+            "isTopWhiteBlockerPath": false
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa2/node_tips/item_group/award_trans_2/itemCell50_2/im_redpoint/RedDot/SkeletonGraphic (hongdian01)",
+            "missingScriptCount": 1,
+            "existingMonoBehaviourTypes": "",
+            "nearbyComponents": "UnityEngine.CanvasRenderer;UnityEngine.RectTransform",
+            "isTopWhiteBlockerPath": false
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa2/node_tips/item_group/award_trans_2/itemCell76/im_quality/sp_quality_7",
+            "missingScriptCount": 1,
+            "existingMonoBehaviourTypes": "YouYou.UISpineCtr",
+            "nearbyComponents": "UnityEngine.CanvasRenderer;UnityEngine.RectTransform;YouYou.UISpineCtr",
+            "isTopWhiteBlockerPath": false
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa2/node_tips/item_group/award_trans_2/itemCell76/im_quality/un_quality_7",
+            "missingScriptCount": 1,
+            "existingMonoBehaviourTypes": "",
+            "nearbyComponents": "UnityEngine.CanvasRenderer;UnityEngine.RectTransform",
+            "isTopWhiteBlockerPath": false
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa2/node_tips/item_group/award_trans_2/itemCell76/im_redpoint/RedDot/SkeletonGraphic (hongdian01)",
+            "missingScriptCount": 1,
+            "existingMonoBehaviourTypes": "",
+            "nearbyComponents": "UnityEngine.CanvasRenderer;UnityEngine.RectTransform",
+            "isTopWhiteBlockerPath": false
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa2/node_tips/item_group/award_trans_3/itemCell50_3/im_quality/sp_quality_7",
+            "missingScriptCount": 1,
+            "existingMonoBehaviourTypes": "YouYou.UISpineCtr",
+            "nearbyComponents": "UnityEngine.CanvasRenderer;UnityEngine.RectTransform;YouYou.UISpineCtr",
+            "isTopWhiteBlockerPath": false
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa2/node_tips/item_group/award_trans_3/itemCell50_3/im_quality/un_quality_7",
+            "missingScriptCount": 1,
+            "existingMonoBehaviourTypes": "",
+            "nearbyComponents": "UnityEngine.CanvasRenderer;UnityEngine.RectTransform",
+            "isTopWhiteBlockerPath": false
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa2/node_tips/item_group/award_trans_3/itemCell50_3/im_redpoint/RedDot/SkeletonGraphic (hongdian01)",
+            "missingScriptCount": 1,
+            "existingMonoBehaviourTypes": "",
+            "nearbyComponents": "UnityEngine.CanvasRenderer;UnityEngine.RectTransform",
+            "isTopWhiteBlockerPath": false
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa2/node_tips/item_group/award_trans_3/itemCell76/im_quality/sp_quality_7",
+            "missingScriptCount": 1,
+            "existingMonoBehaviourTypes": "YouYou.UISpineCtr",
+            "nearbyComponents": "UnityEngine.CanvasRenderer;UnityEngine.RectTransform;YouYou.UISpineCtr",
+            "isTopWhiteBlockerPath": false
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa2/node_tips/item_group/award_trans_3/itemCell76/im_quality/un_quality_7",
+            "missingScriptCount": 1,
+            "existingMonoBehaviourTypes": "",
+            "nearbyComponents": "UnityEngine.CanvasRenderer;UnityEngine.RectTransform",
+            "isTopWhiteBlockerPath": false
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa2/node_tips/item_group/award_trans_3/itemCell76/im_redpoint/RedDot/SkeletonGraphic (hongdian01)",
+            "missingScriptCount": 1,
+            "existingMonoBehaviourTypes": "",
+            "nearbyComponents": "UnityEngine.CanvasRenderer;UnityEngine.RectTransform",
+            "isTopWhiteBlockerPath": false
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa2/titan_status/rd_wanfa_2/RedDot/SkeletonGraphic (hongdian01)",
+            "missingScriptCount": 1,
+            "existingMonoBehaviourTypes": "",
+            "nearbyComponents": "UnityEngine.CanvasRenderer;UnityEngine.RectTransform",
+            "isTopWhiteBlockerPath": false
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa3/im_new/NewShow",
+            "missingScriptCount": 1,
+            "existingMonoBehaviourTypes": "",
+            "nearbyComponents": "UnityEngine.CanvasRenderer;UnityEngine.RectTransform",
+            "isTopWhiteBlockerPath": false
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa3/itemCell50/im_quality/sp_quality_7",
+            "missingScriptCount": 1,
+            "existingMonoBehaviourTypes": "YouYou.UISpineCtr",
+            "nearbyComponents": "UnityEngine.CanvasRenderer;UnityEngine.RectTransform;YouYou.UISpineCtr",
+            "isTopWhiteBlockerPath": false
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa3/itemCell50/im_quality/un_quality_7",
+            "missingScriptCount": 1,
+            "existingMonoBehaviourTypes": "",
+            "nearbyComponents": "UnityEngine.CanvasRenderer;UnityEngine.RectTransform",
+            "isTopWhiteBlockerPath": false
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa3/itemCell50/im_redpoint/RedDot/SkeletonGraphic (hongdian01)",
+            "missingScriptCount": 1,
+            "existingMonoBehaviourTypes": "",
+            "nearbyComponents": "UnityEngine.CanvasRenderer;UnityEngine.RectTransform",
+            "isTopWhiteBlockerPath": false
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa3/new_no_open/bg_msg/RedDot/SkeletonGraphic (hongdian01)",
+            "missingScriptCount": 1,
+            "existingMonoBehaviourTypes": "",
+            "nearbyComponents": "UnityEngine.CanvasRenderer;UnityEngine.RectTransform",
+            "isTopWhiteBlockerPath": false
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa3/node_tips/item_group/award_trans_1/itemCell50_1/im_quality/sp_quality_7",
+            "missingScriptCount": 1,
+            "existingMonoBehaviourTypes": "YouYou.UISpineCtr",
+            "nearbyComponents": "UnityEngine.CanvasRenderer;UnityEngine.RectTransform;YouYou.UISpineCtr",
+            "isTopWhiteBlockerPath": false
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa3/node_tips/item_group/award_trans_1/itemCell50_1/im_quality/un_quality_7",
+            "missingScriptCount": 1,
+            "existingMonoBehaviourTypes": "",
+            "nearbyComponents": "UnityEngine.CanvasRenderer;UnityEngine.RectTransform",
+            "isTopWhiteBlockerPath": false
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa3/node_tips/item_group/award_trans_1/itemCell50_1/im_redpoint/RedDot/SkeletonGraphic (hongdian01)",
+            "missingScriptCount": 1,
+            "existingMonoBehaviourTypes": "",
+            "nearbyComponents": "UnityEngine.CanvasRenderer;UnityEngine.RectTransform",
+            "isTopWhiteBlockerPath": false
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa3/node_tips/item_group/award_trans_1/itemCell76/im_quality/sp_quality_7",
+            "missingScriptCount": 1,
+            "existingMonoBehaviourTypes": "YouYou.UISpineCtr",
+            "nearbyComponents": "UnityEngine.CanvasRenderer;UnityEngine.RectTransform;YouYou.UISpineCtr",
+            "isTopWhiteBlockerPath": false
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa3/node_tips/item_group/award_trans_1/itemCell76/im_quality/un_quality_7",
+            "missingScriptCount": 1,
+            "existingMonoBehaviourTypes": "",
+            "nearbyComponents": "UnityEngine.CanvasRenderer;UnityEngine.RectTransform",
+            "isTopWhiteBlockerPath": false
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa3/node_tips/item_group/award_trans_1/itemCell76/im_redpoint/RedDot/SkeletonGraphic (hongdian01)",
+            "missingScriptCount": 1,
+            "existingMonoBehaviourTypes": "",
+            "nearbyComponents": "UnityEngine.CanvasRenderer;UnityEngine.RectTransform",
+            "isTopWhiteBlockerPath": false
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa3/node_tips/item_group/award_trans_2/itemCell50_2/im_quality/sp_quality_7",
+            "missingScriptCount": 1,
+            "existingMonoBehaviourTypes": "YouYou.UISpineCtr",
+            "nearbyComponents": "UnityEngine.CanvasRenderer;UnityEngine.RectTransform;YouYou.UISpineCtr",
+            "isTopWhiteBlockerPath": false
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa3/node_tips/item_group/award_trans_2/itemCell50_2/im_quality/un_quality_7",
+            "missingScriptCount": 1,
+            "existingMonoBehaviourTypes": "",
+            "nearbyComponents": "UnityEngine.CanvasRenderer;UnityEngine.RectTransform",
+            "isTopWhiteBlockerPath": false
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa3/node_tips/item_group/award_trans_2/itemCell50_2/im_redpoint/RedDot/SkeletonGraphic (hongdian01)",
+            "missingScriptCount": 1,
+            "existingMonoBehaviourTypes": "",
+            "nearbyComponents": "UnityEngine.CanvasRenderer;UnityEngine.RectTransform",
+            "isTopWhiteBlockerPath": false
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa3/node_tips/item_group/award_trans_2/itemCell76/im_quality/sp_quality_7",
+            "missingScriptCount": 1,
+            "existingMonoBehaviourTypes": "YouYou.UISpineCtr",
+            "nearbyComponents": "UnityEngine.CanvasRenderer;UnityEngine.RectTransform;YouYou.UISpineCtr",
+            "isTopWhiteBlockerPath": false
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa3/node_tips/item_group/award_trans_2/itemCell76/im_quality/un_quality_7",
+            "missingScriptCount": 1,
+            "existingMonoBehaviourTypes": "",
+            "nearbyComponents": "UnityEngine.CanvasRenderer;UnityEngine.RectTransform",
+            "isTopWhiteBlockerPath": false
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa3/node_tips/item_group/award_trans_2/itemCell76/im_redpoint/RedDot/SkeletonGraphic (hongdian01)",
+            "missingScriptCount": 1,
+            "existingMonoBehaviourTypes": "",
+            "nearbyComponents": "UnityEngine.CanvasRenderer;UnityEngine.RectTransform",
+            "isTopWhiteBlockerPath": false
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa3/node_tips/item_group/award_trans_3/itemCell50_3/im_quality/sp_quality_7",
+            "missingScriptCount": 1,
+            "existingMonoBehaviourTypes": "YouYou.UISpineCtr",
+            "nearbyComponents": "UnityEngine.CanvasRenderer;UnityEngine.RectTransform;YouYou.UISpineCtr",
+            "isTopWhiteBlockerPath": false
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa3/node_tips/item_group/award_trans_3/itemCell50_3/im_quality/un_quality_7",
+            "missingScriptCount": 1,
+            "existingMonoBehaviourTypes": "",
+            "nearbyComponents": "UnityEngine.CanvasRenderer;UnityEngine.RectTransform",
+            "isTopWhiteBlockerPath": false
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa3/node_tips/item_group/award_trans_3/itemCell50_3/im_redpoint/RedDot/SkeletonGraphic (hongdian01)",
+            "missingScriptCount": 1,
+            "existingMonoBehaviourTypes": "",
+            "nearbyComponents": "UnityEngine.CanvasRenderer;UnityEngine.RectTransform",
+            "isTopWhiteBlockerPath": false
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa3/node_tips/item_group/award_trans_3/itemCell76/im_quality/sp_quality_7",
+            "missingScriptCount": 1,
+            "existingMonoBehaviourTypes": "YouYou.UISpineCtr",
+            "nearbyComponents": "UnityEngine.CanvasRenderer;UnityEngine.RectTransform;YouYou.UISpineCtr",
+            "isTopWhiteBlockerPath": false
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa3/node_tips/item_group/award_trans_3/itemCell76/im_quality/un_quality_7",
+            "missingScriptCount": 1,
+            "existingMonoBehaviourTypes": "",
+            "nearbyComponents": "UnityEngine.CanvasRenderer;UnityEngine.RectTransform",
+            "isTopWhiteBlockerPath": false
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa3/node_tips/item_group/award_trans_3/itemCell76/im_redpoint/RedDot/SkeletonGraphic (hongdian01)",
+            "missingScriptCount": 1,
+            "existingMonoBehaviourTypes": "",
+            "nearbyComponents": "UnityEngine.CanvasRenderer;UnityEngine.RectTransform",
+            "isTopWhiteBlockerPath": false
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa3/rd_wanfa/RedDot/SkeletonGraphic (hongdian01)",
+            "missingScriptCount": 1,
+            "existingMonoBehaviourTypes": "",
+            "nearbyComponents": "UnityEngine.CanvasRenderer;UnityEngine.RectTransform",
+            "isTopWhiteBlockerPath": false
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa4/im_new/NewShow",
+            "missingScriptCount": 1,
+            "existingMonoBehaviourTypes": "",
+            "nearbyComponents": "UnityEngine.CanvasRenderer;UnityEngine.RectTransform",
+            "isTopWhiteBlockerPath": false
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa4/itemCell50/im_quality/sp_quality_7",
+            "missingScriptCount": 1,
+            "existingMonoBehaviourTypes": "YouYou.UISpineCtr",
+            "nearbyComponents": "UnityEngine.CanvasRenderer;UnityEngine.RectTransform;YouYou.UISpineCtr",
+            "isTopWhiteBlockerPath": false
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa4/itemCell50/im_quality/un_quality_7",
+            "missingScriptCount": 1,
+            "existingMonoBehaviourTypes": "",
+            "nearbyComponents": "UnityEngine.CanvasRenderer;UnityEngine.RectTransform",
+            "isTopWhiteBlockerPath": false
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa4/itemCell50/im_redpoint/RedDot/SkeletonGraphic (hongdian01)",
+            "missingScriptCount": 1,
+            "existingMonoBehaviourTypes": "",
+            "nearbyComponents": "UnityEngine.CanvasRenderer;UnityEngine.RectTransform",
+            "isTopWhiteBlockerPath": false
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa4/new_no_open/rd_wanfa_4/RedDot/SkeletonGraphic (hongdian01)",
+            "missingScriptCount": 1,
+            "existingMonoBehaviourTypes": "",
+            "nearbyComponents": "UnityEngine.CanvasRenderer;UnityEngine.RectTransform",
+            "isTopWhiteBlockerPath": false
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa4/node_tips/item_group/award_trans_1/itemCell50_1/im_quality/sp_quality_7",
+            "missingScriptCount": 1,
+            "existingMonoBehaviourTypes": "YouYou.UISpineCtr",
+            "nearbyComponents": "UnityEngine.CanvasRenderer;UnityEngine.RectTransform;YouYou.UISpineCtr",
+            "isTopWhiteBlockerPath": false
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa4/node_tips/item_group/award_trans_1/itemCell50_1/im_quality/un_quality_7",
+            "missingScriptCount": 1,
+            "existingMonoBehaviourTypes": "",
+            "nearbyComponents": "UnityEngine.CanvasRenderer;UnityEngine.RectTransform",
+            "isTopWhiteBlockerPath": false
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa4/node_tips/item_group/award_trans_1/itemCell50_1/im_redpoint/RedDot/SkeletonGraphic (hongdian01)",
+            "missingScriptCount": 1,
+            "existingMonoBehaviourTypes": "",
+            "nearbyComponents": "UnityEngine.CanvasRenderer;UnityEngine.RectTransform",
+            "isTopWhiteBlockerPath": false
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa4/node_tips/item_group/award_trans_1/itemCell76/im_quality/sp_quality_7",
+            "missingScriptCount": 1,
+            "existingMonoBehaviourTypes": "YouYou.UISpineCtr",
+            "nearbyComponents": "UnityEngine.CanvasRenderer;UnityEngine.RectTransform;YouYou.UISpineCtr",
+            "isTopWhiteBlockerPath": false
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa4/node_tips/item_group/award_trans_1/itemCell76/im_quality/un_quality_7",
+            "missingScriptCount": 1,
+            "existingMonoBehaviourTypes": "",
+            "nearbyComponents": "UnityEngine.CanvasRenderer;UnityEngine.RectTransform",
+            "isTopWhiteBlockerPath": false
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa4/node_tips/item_group/award_trans_1/itemCell76/im_redpoint/RedDot/SkeletonGraphic (hongdian01)",
+            "missingScriptCount": 1,
+            "existingMonoBehaviourTypes": "",
+            "nearbyComponents": "UnityEngine.CanvasRenderer;UnityEngine.RectTransform",
+            "isTopWhiteBlockerPath": false
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa4/node_tips/item_group/award_trans_2/itemCell50_2/im_quality/sp_quality_7",
+            "missingScriptCount": 1,
+            "existingMonoBehaviourTypes": "YouYou.UISpineCtr",
+            "nearbyComponents": "UnityEngine.CanvasRenderer;UnityEngine.RectTransform;YouYou.UISpineCtr",
+            "isTopWhiteBlockerPath": false
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa4/node_tips/item_group/award_trans_2/itemCell50_2/im_quality/un_quality_7",
+            "missingScriptCount": 1,
+            "existingMonoBehaviourTypes": "",
+            "nearbyComponents": "UnityEngine.CanvasRenderer;UnityEngine.RectTransform",
+            "isTopWhiteBlockerPath": false
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa4/node_tips/item_group/award_trans_2/itemCell50_2/im_redpoint/RedDot/SkeletonGraphic (hongdian01)",
+            "missingScriptCount": 1,
+            "existingMonoBehaviourTypes": "",
+            "nearbyComponents": "UnityEngine.CanvasRenderer;UnityEngine.RectTransform",
+            "isTopWhiteBlockerPath": false
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa4/node_tips/item_group/award_trans_2/itemCell76/im_quality/sp_quality_7",
+            "missingScriptCount": 1,
+            "existingMonoBehaviourTypes": "YouYou.UISpineCtr",
+            "nearbyComponents": "UnityEngine.CanvasRenderer;UnityEngine.RectTransform;YouYou.UISpineCtr",
+            "isTopWhiteBlockerPath": false
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa4/node_tips/item_group/award_trans_2/itemCell76/im_quality/un_quality_7",
+            "missingScriptCount": 1,
+            "existingMonoBehaviourTypes": "",
+            "nearbyComponents": "UnityEngine.CanvasRenderer;UnityEngine.RectTransform",
+            "isTopWhiteBlockerPath": false
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa4/node_tips/item_group/award_trans_2/itemCell76/im_redpoint/RedDot/SkeletonGraphic (hongdian01)",
+            "missingScriptCount": 1,
+            "existingMonoBehaviourTypes": "",
+            "nearbyComponents": "UnityEngine.CanvasRenderer;UnityEngine.RectTransform",
+            "isTopWhiteBlockerPath": false
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa4/node_tips/item_group/award_trans_3/itemCell50_3/im_quality/sp_quality_7",
+            "missingScriptCount": 1,
+            "existingMonoBehaviourTypes": "YouYou.UISpineCtr",
+            "nearbyComponents": "UnityEngine.CanvasRenderer;UnityEngine.RectTransform;YouYou.UISpineCtr",
+            "isTopWhiteBlockerPath": false
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa4/node_tips/item_group/award_trans_3/itemCell50_3/im_quality/un_quality_7",
+            "missingScriptCount": 1,
+            "existingMonoBehaviourTypes": "",
+            "nearbyComponents": "UnityEngine.CanvasRenderer;UnityEngine.RectTransform",
+            "isTopWhiteBlockerPath": false
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa4/node_tips/item_group/award_trans_3/itemCell50_3/im_redpoint/RedDot/SkeletonGraphic (hongdian01)",
+            "missingScriptCount": 1,
+            "existingMonoBehaviourTypes": "",
+            "nearbyComponents": "UnityEngine.CanvasRenderer;UnityEngine.RectTransform",
+            "isTopWhiteBlockerPath": false
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa4/node_tips/item_group/award_trans_3/itemCell76/im_quality/sp_quality_7",
+            "missingScriptCount": 1,
+            "existingMonoBehaviourTypes": "YouYou.UISpineCtr",
+            "nearbyComponents": "UnityEngine.CanvasRenderer;UnityEngine.RectTransform;YouYou.UISpineCtr",
+            "isTopWhiteBlockerPath": false
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa4/node_tips/item_group/award_trans_3/itemCell76/im_quality/un_quality_7",
+            "missingScriptCount": 1,
+            "existingMonoBehaviourTypes": "",
+            "nearbyComponents": "UnityEngine.CanvasRenderer;UnityEngine.RectTransform",
+            "isTopWhiteBlockerPath": false
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa4/node_tips/item_group/award_trans_3/itemCell76/im_redpoint/RedDot/SkeletonGraphic (hongdian01)",
+            "missingScriptCount": 1,
+            "existingMonoBehaviourTypes": "",
+            "nearbyComponents": "UnityEngine.CanvasRenderer;UnityEngine.RectTransform",
+            "isTopWhiteBlockerPath": false
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa5/im_new/NewShow",
+            "missingScriptCount": 1,
+            "existingMonoBehaviourTypes": "",
+            "nearbyComponents": "UnityEngine.CanvasRenderer;UnityEngine.RectTransform",
+            "isTopWhiteBlockerPath": false
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa5/itemCell50/im_quality/sp_quality_7",
+            "missingScriptCount": 1,
+            "existingMonoBehaviourTypes": "YouYou.UISpineCtr",
+            "nearbyComponents": "UnityEngine.CanvasRenderer;UnityEngine.RectTransform;YouYou.UISpineCtr",
+            "isTopWhiteBlockerPath": false
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa5/itemCell50/im_quality/un_quality_7",
+            "missingScriptCount": 1,
+            "existingMonoBehaviourTypes": "",
+            "nearbyComponents": "UnityEngine.CanvasRenderer;UnityEngine.RectTransform",
+            "isTopWhiteBlockerPath": false
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa5/itemCell50/im_redpoint/RedDot/SkeletonGraphic (hongdian01)",
+            "missingScriptCount": 1,
+            "existingMonoBehaviourTypes": "",
+            "nearbyComponents": "UnityEngine.CanvasRenderer;UnityEngine.RectTransform",
+            "isTopWhiteBlockerPath": false
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa5/new_no_open/rd_wanfa_5/RedDot/SkeletonGraphic (hongdian01)",
+            "missingScriptCount": 1,
+            "existingMonoBehaviourTypes": "",
+            "nearbyComponents": "UnityEngine.CanvasRenderer;UnityEngine.RectTransform",
+            "isTopWhiteBlockerPath": false
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa5/node_tips/item_group/award_trans_1/itemCell50_1/im_quality/sp_quality_7",
+            "missingScriptCount": 1,
+            "existingMonoBehaviourTypes": "YouYou.UISpineCtr",
+            "nearbyComponents": "UnityEngine.CanvasRenderer;UnityEngine.RectTransform;YouYou.UISpineCtr",
+            "isTopWhiteBlockerPath": false
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa5/node_tips/item_group/award_trans_1/itemCell50_1/im_quality/un_quality_7",
+            "missingScriptCount": 1,
+            "existingMonoBehaviourTypes": "",
+            "nearbyComponents": "UnityEngine.CanvasRenderer;UnityEngine.RectTransform",
+            "isTopWhiteBlockerPath": false
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa5/node_tips/item_group/award_trans_1/itemCell50_1/im_redpoint/RedDot/SkeletonGraphic (hongdian01)",
+            "missingScriptCount": 1,
+            "existingMonoBehaviourTypes": "",
+            "nearbyComponents": "UnityEngine.CanvasRenderer;UnityEngine.RectTransform",
+            "isTopWhiteBlockerPath": false
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa5/node_tips/item_group/award_trans_1/itemCell76/im_quality/sp_quality_7",
+            "missingScriptCount": 1,
+            "existingMonoBehaviourTypes": "YouYou.UISpineCtr",
+            "nearbyComponents": "UnityEngine.CanvasRenderer;UnityEngine.RectTransform;YouYou.UISpineCtr",
+            "isTopWhiteBlockerPath": false
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa5/node_tips/item_group/award_trans_1/itemCell76/im_quality/un_quality_7",
+            "missingScriptCount": 1,
+            "existingMonoBehaviourTypes": "",
+            "nearbyComponents": "UnityEngine.CanvasRenderer;UnityEngine.RectTransform",
+            "isTopWhiteBlockerPath": false
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa5/node_tips/item_group/award_trans_1/itemCell76/im_redpoint/RedDot/SkeletonGraphic (hongdian01)",
+            "missingScriptCount": 1,
+            "existingMonoBehaviourTypes": "",
+            "nearbyComponents": "UnityEngine.CanvasRenderer;UnityEngine.RectTransform",
+            "isTopWhiteBlockerPath": false
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa5/node_tips/item_group/award_trans_2/itemCell50_2/im_quality/sp_quality_7",
+            "missingScriptCount": 1,
+            "existingMonoBehaviourTypes": "YouYou.UISpineCtr",
+            "nearbyComponents": "UnityEngine.CanvasRenderer;UnityEngine.RectTransform;YouYou.UISpineCtr",
+            "isTopWhiteBlockerPath": false
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa5/node_tips/item_group/award_trans_2/itemCell50_2/im_quality/un_quality_7",
+            "missingScriptCount": 1,
+            "existingMonoBehaviourTypes": "",
+            "nearbyComponents": "UnityEngine.CanvasRenderer;UnityEngine.RectTransform",
+            "isTopWhiteBlockerPath": false
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa5/node_tips/item_group/award_trans_2/itemCell50_2/im_redpoint/RedDot/SkeletonGraphic (hongdian01)",
+            "missingScriptCount": 1,
+            "existingMonoBehaviourTypes": "",
+            "nearbyComponents": "UnityEngine.CanvasRenderer;UnityEngine.RectTransform",
+            "isTopWhiteBlockerPath": false
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa5/node_tips/item_group/award_trans_2/itemCell76/im_quality/sp_quality_7",
+            "missingScriptCount": 1,
+            "existingMonoBehaviourTypes": "YouYou.UISpineCtr",
+            "nearbyComponents": "UnityEngine.CanvasRenderer;UnityEngine.RectTransform;YouYou.UISpineCtr",
+            "isTopWhiteBlockerPath": false
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa5/node_tips/item_group/award_trans_2/itemCell76/im_quality/un_quality_7",
+            "missingScriptCount": 1,
+            "existingMonoBehaviourTypes": "",
+            "nearbyComponents": "UnityEngine.CanvasRenderer;UnityEngine.RectTransform",
+            "isTopWhiteBlockerPath": false
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa5/node_tips/item_group/award_trans_2/itemCell76/im_redpoint/RedDot/SkeletonGraphic (hongdian01)",
+            "missingScriptCount": 1,
+            "existingMonoBehaviourTypes": "",
+            "nearbyComponents": "UnityEngine.CanvasRenderer;UnityEngine.RectTransform",
+            "isTopWhiteBlockerPath": false
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa5/node_tips/item_group/award_trans_3/itemCell50_3/im_quality/sp_quality_7",
+            "missingScriptCount": 1,
+            "existingMonoBehaviourTypes": "YouYou.UISpineCtr",
+            "nearbyComponents": "UnityEngine.CanvasRenderer;UnityEngine.RectTransform;YouYou.UISpineCtr",
+            "isTopWhiteBlockerPath": false
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa5/node_tips/item_group/award_trans_3/itemCell50_3/im_quality/un_quality_7",
+            "missingScriptCount": 1,
+            "existingMonoBehaviourTypes": "",
+            "nearbyComponents": "UnityEngine.CanvasRenderer;UnityEngine.RectTransform",
+            "isTopWhiteBlockerPath": false
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa5/node_tips/item_group/award_trans_3/itemCell50_3/im_redpoint/RedDot/SkeletonGraphic (hongdian01)",
+            "missingScriptCount": 1,
+            "existingMonoBehaviourTypes": "",
+            "nearbyComponents": "UnityEngine.CanvasRenderer;UnityEngine.RectTransform",
+            "isTopWhiteBlockerPath": false
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa5/node_tips/item_group/award_trans_3/itemCell76/im_quality/sp_quality_7",
+            "missingScriptCount": 1,
+            "existingMonoBehaviourTypes": "YouYou.UISpineCtr",
+            "nearbyComponents": "UnityEngine.CanvasRenderer;UnityEngine.RectTransform;YouYou.UISpineCtr",
+            "isTopWhiteBlockerPath": false
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa5/node_tips/item_group/award_trans_3/itemCell76/im_quality/un_quality_7",
+            "missingScriptCount": 1,
+            "existingMonoBehaviourTypes": "",
+            "nearbyComponents": "UnityEngine.CanvasRenderer;UnityEngine.RectTransform",
+            "isTopWhiteBlockerPath": false
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa5/node_tips/item_group/award_trans_3/itemCell76/im_redpoint/RedDot/SkeletonGraphic (hongdian01)",
+            "missingScriptCount": 1,
+            "existingMonoBehaviourTypes": "",
+            "nearbyComponents": "UnityEngine.CanvasRenderer;UnityEngine.RectTransform",
+            "isTopWhiteBlockerPath": false
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa5/rd_wanfa/RedDot/SkeletonGraphic (hongdian01)",
+            "missingScriptCount": 1,
+            "existingMonoBehaviourTypes": "",
+            "nearbyComponents": "UnityEngine.CanvasRenderer;UnityEngine.RectTransform",
+            "isTopWhiteBlockerPath": false
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa6/im_new/NewShow",
+            "missingScriptCount": 1,
+            "existingMonoBehaviourTypes": "",
+            "nearbyComponents": "UnityEngine.CanvasRenderer;UnityEngine.RectTransform",
+            "isTopWhiteBlockerPath": false
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa6/itemCell50/im_quality/sp_quality_7",
+            "missingScriptCount": 1,
+            "existingMonoBehaviourTypes": "YouYou.UISpineCtr",
+            "nearbyComponents": "UnityEngine.CanvasRenderer;UnityEngine.RectTransform;YouYou.UISpineCtr",
+            "isTopWhiteBlockerPath": false
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa6/itemCell50/im_quality/un_quality_7",
+            "missingScriptCount": 1,
+            "existingMonoBehaviourTypes": "",
+            "nearbyComponents": "UnityEngine.CanvasRenderer;UnityEngine.RectTransform",
+            "isTopWhiteBlockerPath": false
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa6/itemCell50/im_redpoint/RedDot/SkeletonGraphic (hongdian01)",
+            "missingScriptCount": 1,
+            "existingMonoBehaviourTypes": "",
+            "nearbyComponents": "UnityEngine.CanvasRenderer;UnityEngine.RectTransform",
+            "isTopWhiteBlockerPath": false
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa6/new_no_open/rd_dragonBoat/RedDot/SkeletonGraphic (hongdian01)",
+            "missingScriptCount": 1,
+            "existingMonoBehaviourTypes": "",
+            "nearbyComponents": "UnityEngine.CanvasRenderer;UnityEngine.RectTransform",
+            "isTopWhiteBlockerPath": false
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa6/node_tips/item_group/award_trans_1/itemCell50_1/im_quality/sp_quality_7",
+            "missingScriptCount": 1,
+            "existingMonoBehaviourTypes": "YouYou.UISpineCtr",
+            "nearbyComponents": "UnityEngine.CanvasRenderer;UnityEngine.RectTransform;YouYou.UISpineCtr",
+            "isTopWhiteBlockerPath": false
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa6/node_tips/item_group/award_trans_1/itemCell50_1/im_quality/un_quality_7",
+            "missingScriptCount": 1,
+            "existingMonoBehaviourTypes": "",
+            "nearbyComponents": "UnityEngine.CanvasRenderer;UnityEngine.RectTransform",
+            "isTopWhiteBlockerPath": false
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa6/node_tips/item_group/award_trans_1/itemCell50_1/im_redpoint/RedDot/SkeletonGraphic (hongdian01)",
+            "missingScriptCount": 1,
+            "existingMonoBehaviourTypes": "",
+            "nearbyComponents": "UnityEngine.CanvasRenderer;UnityEngine.RectTransform",
+            "isTopWhiteBlockerPath": false
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa6/node_tips/item_group/award_trans_1/itemCell76/im_quality/sp_quality_7",
+            "missingScriptCount": 1,
+            "existingMonoBehaviourTypes": "YouYou.UISpineCtr",
+            "nearbyComponents": "UnityEngine.CanvasRenderer;UnityEngine.RectTransform;YouYou.UISpineCtr",
+            "isTopWhiteBlockerPath": false
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa6/node_tips/item_group/award_trans_1/itemCell76/im_quality/un_quality_7",
+            "missingScriptCount": 1,
+            "existingMonoBehaviourTypes": "",
+            "nearbyComponents": "UnityEngine.CanvasRenderer;UnityEngine.RectTransform",
+            "isTopWhiteBlockerPath": false
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa6/node_tips/item_group/award_trans_1/itemCell76/im_redpoint/RedDot/SkeletonGraphic (hongdian01)",
+            "missingScriptCount": 1,
+            "existingMonoBehaviourTypes": "",
+            "nearbyComponents": "UnityEngine.CanvasRenderer;UnityEngine.RectTransform",
+            "isTopWhiteBlockerPath": false
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa6/node_tips/item_group/award_trans_2/itemCell50_2/im_quality/sp_quality_7",
+            "missingScriptCount": 1,
+            "existingMonoBehaviourTypes": "YouYou.UISpineCtr",
+            "nearbyComponents": "UnityEngine.CanvasRenderer;UnityEngine.RectTransform;YouYou.UISpineCtr",
+            "isTopWhiteBlockerPath": false
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa6/node_tips/item_group/award_trans_2/itemCell50_2/im_quality/un_quality_7",
+            "missingScriptCount": 1,
+            "existingMonoBehaviourTypes": "",
+            "nearbyComponents": "UnityEngine.CanvasRenderer;UnityEngine.RectTransform",
+            "isTopWhiteBlockerPath": false
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa6/node_tips/item_group/award_trans_2/itemCell50_2/im_redpoint/RedDot/SkeletonGraphic (hongdian01)",
+            "missingScriptCount": 1,
+            "existingMonoBehaviourTypes": "",
+            "nearbyComponents": "UnityEngine.CanvasRenderer;UnityEngine.RectTransform",
+            "isTopWhiteBlockerPath": false
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa6/node_tips/item_group/award_trans_2/itemCell76/im_quality/sp_quality_7",
+            "missingScriptCount": 1,
+            "existingMonoBehaviourTypes": "YouYou.UISpineCtr",
+            "nearbyComponents": "UnityEngine.CanvasRenderer;UnityEngine.RectTransform;YouYou.UISpineCtr",
+            "isTopWhiteBlockerPath": false
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa6/node_tips/item_group/award_trans_2/itemCell76/im_quality/un_quality_7",
+            "missingScriptCount": 1,
+            "existingMonoBehaviourTypes": "",
+            "nearbyComponents": "UnityEngine.CanvasRenderer;UnityEngine.RectTransform",
+            "isTopWhiteBlockerPath": false
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa6/node_tips/item_group/award_trans_2/itemCell76/im_redpoint/RedDot/SkeletonGraphic (hongdian01)",
+            "missingScriptCount": 1,
+            "existingMonoBehaviourTypes": "",
+            "nearbyComponents": "UnityEngine.CanvasRenderer;UnityEngine.RectTransform",
+            "isTopWhiteBlockerPath": false
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa6/node_tips/item_group/award_trans_3/itemCell50_3/im_quality/sp_quality_7",
+            "missingScriptCount": 1,
+            "existingMonoBehaviourTypes": "YouYou.UISpineCtr",
+            "nearbyComponents": "UnityEngine.CanvasRenderer;UnityEngine.RectTransform;YouYou.UISpineCtr",
+            "isTopWhiteBlockerPath": false
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa6/node_tips/item_group/award_trans_3/itemCell50_3/im_quality/un_quality_7",
+            "missingScriptCount": 1,
+            "existingMonoBehaviourTypes": "",
+            "nearbyComponents": "UnityEngine.CanvasRenderer;UnityEngine.RectTransform",
+            "isTopWhiteBlockerPath": false
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa6/node_tips/item_group/award_trans_3/itemCell50_3/im_redpoint/RedDot/SkeletonGraphic (hongdian01)",
+            "missingScriptCount": 1,
+            "existingMonoBehaviourTypes": "",
+            "nearbyComponents": "UnityEngine.CanvasRenderer;UnityEngine.RectTransform",
+            "isTopWhiteBlockerPath": false
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa6/node_tips/item_group/award_trans_3/itemCell76/im_quality/sp_quality_7",
+            "missingScriptCount": 1,
+            "existingMonoBehaviourTypes": "YouYou.UISpineCtr",
+            "nearbyComponents": "UnityEngine.CanvasRenderer;UnityEngine.RectTransform;YouYou.UISpineCtr",
+            "isTopWhiteBlockerPath": false
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa6/node_tips/item_group/award_trans_3/itemCell76/im_quality/un_quality_7",
+            "missingScriptCount": 1,
+            "existingMonoBehaviourTypes": "",
+            "nearbyComponents": "UnityEngine.CanvasRenderer;UnityEngine.RectTransform",
+            "isTopWhiteBlockerPath": false
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa6/node_tips/item_group/award_trans_3/itemCell76/im_redpoint/RedDot/SkeletonGraphic (hongdian01)",
+            "missingScriptCount": 1,
+            "existingMonoBehaviourTypes": "",
+            "nearbyComponents": "UnityEngine.CanvasRenderer;UnityEngine.RectTransform",
+            "isTopWhiteBlockerPath": false
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa7/im_new/NewShow",
+            "missingScriptCount": 1,
+            "existingMonoBehaviourTypes": "",
+            "nearbyComponents": "UnityEngine.CanvasRenderer;UnityEngine.RectTransform",
+            "isTopWhiteBlockerPath": false
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa7/p_curr_state/p_fsb_red/RedDot/SkeletonGraphic (hongdian01)",
+            "missingScriptCount": 1,
+            "existingMonoBehaviourTypes": "",
+            "nearbyComponents": "UnityEngine.CanvasRenderer;UnityEngine.RectTransform",
+            "isTopWhiteBlockerPath": false
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa8/im_new/NewShow",
+            "missingScriptCount": 1,
+            "existingMonoBehaviourTypes": "",
+            "nearbyComponents": "UnityEngine.CanvasRenderer;UnityEngine.RectTransform",
+            "isTopWhiteBlockerPath": false
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa8/itemCell50/im_quality/sp_quality_7",
+            "missingScriptCount": 1,
+            "existingMonoBehaviourTypes": "YouYou.UISpineCtr",
+            "nearbyComponents": "UnityEngine.CanvasRenderer;UnityEngine.RectTransform;YouYou.UISpineCtr",
+            "isTopWhiteBlockerPath": false
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa8/itemCell50/im_quality/un_quality_7",
+            "missingScriptCount": 1,
+            "existingMonoBehaviourTypes": "",
+            "nearbyComponents": "UnityEngine.CanvasRenderer;UnityEngine.RectTransform",
+            "isTopWhiteBlockerPath": false
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa8/itemCell50/im_redpoint/RedDot/SkeletonGraphic (hongdian01)",
+            "missingScriptCount": 1,
+            "existingMonoBehaviourTypes": "",
+            "nearbyComponents": "UnityEngine.CanvasRenderer;UnityEngine.RectTransform",
+            "isTopWhiteBlockerPath": false
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa8/new_no_open/bg_msg/RedDot/SkeletonGraphic (hongdian01)",
+            "missingScriptCount": 1,
+            "existingMonoBehaviourTypes": "",
+            "nearbyComponents": "UnityEngine.CanvasRenderer;UnityEngine.RectTransform",
+            "isTopWhiteBlockerPath": false
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa8/node_tips/item_group/award_trans_1/itemCell50_1/im_quality/sp_quality_7",
+            "missingScriptCount": 1,
+            "existingMonoBehaviourTypes": "YouYou.UISpineCtr",
+            "nearbyComponents": "UnityEngine.CanvasRenderer;UnityEngine.RectTransform;YouYou.UISpineCtr",
+            "isTopWhiteBlockerPath": false
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa8/node_tips/item_group/award_trans_1/itemCell50_1/im_quality/un_quality_7",
+            "missingScriptCount": 1,
+            "existingMonoBehaviourTypes": "",
+            "nearbyComponents": "UnityEngine.CanvasRenderer;UnityEngine.RectTransform",
+            "isTopWhiteBlockerPath": false
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa8/node_tips/item_group/award_trans_1/itemCell50_1/im_redpoint/RedDot/SkeletonGraphic (hongdian01)",
+            "missingScriptCount": 1,
+            "existingMonoBehaviourTypes": "",
+            "nearbyComponents": "UnityEngine.CanvasRenderer;UnityEngine.RectTransform",
+            "isTopWhiteBlockerPath": false
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa8/node_tips/item_group/award_trans_1/itemCell76/im_quality/sp_quality_7",
+            "missingScriptCount": 1,
+            "existingMonoBehaviourTypes": "YouYou.UISpineCtr",
+            "nearbyComponents": "UnityEngine.CanvasRenderer;UnityEngine.RectTransform;YouYou.UISpineCtr",
+            "isTopWhiteBlockerPath": false
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa8/node_tips/item_group/award_trans_1/itemCell76/im_quality/un_quality_7",
+            "missingScriptCount": 1,
+            "existingMonoBehaviourTypes": "",
+            "nearbyComponents": "UnityEngine.CanvasRenderer;UnityEngine.RectTransform",
+            "isTopWhiteBlockerPath": false
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa8/node_tips/item_group/award_trans_1/itemCell76/im_redpoint/RedDot/SkeletonGraphic (hongdian01)",
+            "missingScriptCount": 1,
+            "existingMonoBehaviourTypes": "",
+            "nearbyComponents": "UnityEngine.CanvasRenderer;UnityEngine.RectTransform",
+            "isTopWhiteBlockerPath": false
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa8/node_tips/item_group/award_trans_2/itemCell50_2/im_quality/sp_quality_7",
+            "missingScriptCount": 1,
+            "existingMonoBehaviourTypes": "YouYou.UISpineCtr",
+            "nearbyComponents": "UnityEngine.CanvasRenderer;UnityEngine.RectTransform;YouYou.UISpineCtr",
+            "isTopWhiteBlockerPath": false
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa8/node_tips/item_group/award_trans_2/itemCell50_2/im_quality/un_quality_7",
+            "missingScriptCount": 1,
+            "existingMonoBehaviourTypes": "",
+            "nearbyComponents": "UnityEngine.CanvasRenderer;UnityEngine.RectTransform",
+            "isTopWhiteBlockerPath": false
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa8/node_tips/item_group/award_trans_2/itemCell50_2/im_redpoint/RedDot/SkeletonGraphic (hongdian01)",
+            "missingScriptCount": 1,
+            "existingMonoBehaviourTypes": "",
+            "nearbyComponents": "UnityEngine.CanvasRenderer;UnityEngine.RectTransform",
+            "isTopWhiteBlockerPath": false
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa8/node_tips/item_group/award_trans_2/itemCell76/im_quality/sp_quality_7",
+            "missingScriptCount": 1,
+            "existingMonoBehaviourTypes": "YouYou.UISpineCtr",
+            "nearbyComponents": "UnityEngine.CanvasRenderer;UnityEngine.RectTransform;YouYou.UISpineCtr",
+            "isTopWhiteBlockerPath": false
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa8/node_tips/item_group/award_trans_2/itemCell76/im_quality/un_quality_7",
+            "missingScriptCount": 1,
+            "existingMonoBehaviourTypes": "",
+            "nearbyComponents": "UnityEngine.CanvasRenderer;UnityEngine.RectTransform",
+            "isTopWhiteBlockerPath": false
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa8/node_tips/item_group/award_trans_2/itemCell76/im_redpoint/RedDot/SkeletonGraphic (hongdian01)",
+            "missingScriptCount": 1,
+            "existingMonoBehaviourTypes": "",
+            "nearbyComponents": "UnityEngine.CanvasRenderer;UnityEngine.RectTransform",
+            "isTopWhiteBlockerPath": false
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa8/node_tips/item_group/award_trans_3/itemCell50_3/im_quality/sp_quality_7",
+            "missingScriptCount": 1,
+            "existingMonoBehaviourTypes": "YouYou.UISpineCtr",
+            "nearbyComponents": "UnityEngine.CanvasRenderer;UnityEngine.RectTransform;YouYou.UISpineCtr",
+            "isTopWhiteBlockerPath": false
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa8/node_tips/item_group/award_trans_3/itemCell50_3/im_quality/un_quality_7",
+            "missingScriptCount": 1,
+            "existingMonoBehaviourTypes": "",
+            "nearbyComponents": "UnityEngine.CanvasRenderer;UnityEngine.RectTransform",
+            "isTopWhiteBlockerPath": false
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa8/node_tips/item_group/award_trans_3/itemCell50_3/im_redpoint/RedDot/SkeletonGraphic (hongdian01)",
+            "missingScriptCount": 1,
+            "existingMonoBehaviourTypes": "",
+            "nearbyComponents": "UnityEngine.CanvasRenderer;UnityEngine.RectTransform",
+            "isTopWhiteBlockerPath": false
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa8/node_tips/item_group/award_trans_3/itemCell76/im_quality/sp_quality_7",
+            "missingScriptCount": 1,
+            "existingMonoBehaviourTypes": "YouYou.UISpineCtr",
+            "nearbyComponents": "UnityEngine.CanvasRenderer;UnityEngine.RectTransform;YouYou.UISpineCtr",
+            "isTopWhiteBlockerPath": false
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa8/node_tips/item_group/award_trans_3/itemCell76/im_quality/un_quality_7",
+            "missingScriptCount": 1,
+            "existingMonoBehaviourTypes": "",
+            "nearbyComponents": "UnityEngine.CanvasRenderer;UnityEngine.RectTransform",
+            "isTopWhiteBlockerPath": false
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa8/node_tips/item_group/award_trans_3/itemCell76/im_redpoint/RedDot/SkeletonGraphic (hongdian01)",
+            "missingScriptCount": 1,
+            "existingMonoBehaviourTypes": "",
+            "nearbyComponents": "UnityEngine.CanvasRenderer;UnityEngine.RectTransform",
+            "isTopWhiteBlockerPath": false
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa8/rd_wanfa_7/RedDot/SkeletonGraphic (hongdian01)",
+            "missingScriptCount": 1,
+            "existingMonoBehaviourTypes": "",
+            "nearbyComponents": "UnityEngine.CanvasRenderer;UnityEngine.RectTransform",
+            "isTopWhiteBlockerPath": false
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa9/im_new/NewShow",
+            "missingScriptCount": 1,
+            "existingMonoBehaviourTypes": "",
+            "nearbyComponents": "UnityEngine.CanvasRenderer;UnityEngine.RectTransform",
+            "isTopWhiteBlockerPath": false
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa9/p_curr_state/p_fsby_red/RedDot/SkeletonGraphic (hongdian01)",
+            "missingScriptCount": 1,
+            "existingMonoBehaviourTypes": "",
+            "nearbyComponents": "UnityEngine.CanvasRenderer;UnityEngine.RectTransform",
+            "isTopWhiteBlockerPath": false
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/right/btn_1/RedDot/SkeletonGraphic (hongdian01)",
+            "missingScriptCount": 1,
+            "existingMonoBehaviourTypes": "",
+            "nearbyComponents": "UnityEngine.CanvasRenderer;UnityEngine.RectTransform",
+            "isTopWhiteBlockerPath": false
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/right/btn_4/p_skycity_award_red/SkeletonGraphic (hongdian01)",
+            "missingScriptCount": 1,
+            "existingMonoBehaviourTypes": "",
+            "nearbyComponents": "UnityEngine.CanvasRenderer;UnityEngine.RectTransform",
+            "isTopWhiteBlockerPath": false
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/right/btn_6/rd_shiwusuo/RedDot/SkeletonGraphic (hongdian01)",
+            "missingScriptCount": 1,
+            "existingMonoBehaviourTypes": "",
+            "nearbyComponents": "UnityEngine.CanvasRenderer;UnityEngine.RectTransform",
+            "isTopWhiteBlockerPath": false
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/right/node_friday/sp_saletag/SkeletonGraphic (sp_blackfridaysaletag)",
+            "missingScriptCount": 1,
+            "existingMonoBehaviourTypes": "",
+            "nearbyComponents": "UnityEngine.CanvasRenderer;UnityEngine.RectTransform",
+            "isTopWhiteBlockerPath": false
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/right/rd_gift_box/RedDot/SkeletonGraphic (hongdian01)",
+            "missingScriptCount": 1,
+            "existingMonoBehaviourTypes": "",
+            "nearbyComponents": "UnityEngine.CanvasRenderer;UnityEngine.RectTransform",
+            "isTopWhiteBlockerPath": false
+        }
+    ],
+    "topBlockerRows": [
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/bg_beijingtu",
+            "missingScriptCount": 0,
+            "imageType": "UnityEngine.UI.Image",
+            "spriteName": "noalphabg_BG_Guid",
+            "monoBehaviourTypes": "UnityEngine.UI.Image;YouYou.FullscreenCenter"
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/left/bg_ditu",
+            "missingScriptCount": 0,
+            "imageType": "UnityEngine.UI.Image",
+            "spriteName": "",
+            "monoBehaviourTypes": "UnityEngine.UI.Image"
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/left/btn_zhaomu",
+            "missingScriptCount": 0,
+            "imageType": "UnityEngine.UI.Image",
+            "spriteName": "icon_zm",
+            "monoBehaviourTypes": "UnityEngine.UI.Button;UnityEngine.UI.Image"
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/Image",
+            "missingScriptCount": 0,
+            "imageType": "UnityEngine.UI.Image",
+            "spriteName": "guild_tmqj",
+            "monoBehaviourTypes": "UnityEngine.UI.Image"
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/node_gonggao/gongao_bg",
+            "missingScriptCount": 0,
+            "imageType": "UnityEngine.UI.Image",
+            "spriteName": "T_Marquee_Bg_1",
+            "monoBehaviourTypes": "UnityEngine.UI.Image"
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/node_gonggao/gongao_bg/gonggaoMask",
+            "missingScriptCount": 0,
+            "imageType": "UnityEngine.UI.Image",
+            "spriteName": "",
+            "monoBehaviourTypes": "UnityEngine.UI.Image;UnityEngine.UI.Mask"
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport",
+            "missingScriptCount": 0,
+            "imageType": "UnityEngine.UI.Image",
+            "spriteName": "UIMask",
+            "monoBehaviourTypes": "UnityEngine.UI.Image;UnityEngine.UI.Mask"
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa1/Boxicon",
+            "missingScriptCount": 0,
+            "imageType": "UnityEngine.UI.Image",
+            "spriteName": "IC_baoxiang_6",
+            "monoBehaviourTypes": "UnityEngine.UI.Button;UnityEngine.UI.Image"
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa1/bg_ditu",
+            "missingScriptCount": 0,
+            "imageType": "UnityEngine.UI.Image",
+            "spriteName": "T_tianxiazhengba",
+            "monoBehaviourTypes": "UnityEngine.UI.Image"
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa1/bg_name",
+            "missingScriptCount": 0,
+            "imageType": "UnityEngine.UI.Image",
+            "spriteName": "T_biaoti_zhengba",
+            "monoBehaviourTypes": "UnityEngine.UI.Image"
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa1/p_curr_state/bg_msg",
+            "missingScriptCount": 0,
+            "imageType": "UnityEngine.UI.Image",
+            "spriteName": "BG_zidi_hong",
+            "monoBehaviourTypes": "UnityEngine.UI.Image"
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa1/p_open/llv_skycity_self_city/Viewport",
+            "missingScriptCount": 0,
+            "imageType": "UnityEngine.UI.Image",
+            "spriteName": "UIMask",
+            "monoBehaviourTypes": "UnityEngine.UI.Image;UnityEngine.UI.Mask"
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa1/p_open/llv_skycity_self_city/Viewport/Content/cityitem/im_city",
+            "missingScriptCount": 0,
+            "imageType": "YouYou.YouYouImage",
+            "spriteName": "btn_S1_city_3",
+            "monoBehaviourTypes": "YouYou.YouYouImage"
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa1/p_open/llv_skycity_self_city/Viewport/Content/cityitem/im_city_state",
+            "missingScriptCount": 0,
+            "imageType": "YouYou.YouYouImage",
+            "spriteName": "jtcz_xzjs9",
+            "monoBehaviourTypes": "YouYou.YouYouImage"
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa1/p_open/llv_skycity_self_city/node_battle/im_battle",
+            "missingScriptCount": 0,
+            "imageType": "YouYou.YouYouImage",
+            "spriteName": "",
+            "monoBehaviourTypes": "YouYou.YouYouImage"
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa1/starts/im_start2",
+            "missingScriptCount": 0,
+            "imageType": "UnityEngine.UI.Image",
+            "spriteName": "T_xingxing",
+            "monoBehaviourTypes": "UnityEngine.UI.Image"
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa1/starts/im_start4",
+            "missingScriptCount": 0,
+            "imageType": "UnityEngine.UI.Image",
+            "spriteName": "T_xingxing",
+            "monoBehaviourTypes": "UnityEngine.UI.Image"
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa2/bg_name/im_name",
+            "missingScriptCount": 0,
+            "imageType": "UnityEngine.UI.Image",
+            "spriteName": "T_biaoti_baoxiang",
+            "monoBehaviourTypes": "UnityEngine.UI.Image"
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa2/p_open/btn_titan_set",
+            "missingScriptCount": 0,
+            "imageType": "UnityEngine.UI.Image",
+            "spriteName": "",
+            "monoBehaviourTypes": "UnityEngine.UI.Button;UnityEngine.UI.Image"
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa2/titan_bg",
+            "missingScriptCount": 0,
+            "imageType": "UnityEngine.UI.Image",
+            "spriteName": "T_baoxiangniang",
+            "monoBehaviourTypes": "UnityEngine.UI.Button;UnityEngine.UI.ContentSizeFitter;UnityEngine.UI.Image"
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa2/titan_boxicon",
+            "missingScriptCount": 0,
+            "imageType": "UnityEngine.UI.Image",
+            "spriteName": "wjczbx3",
+            "monoBehaviourTypes": "UnityEngine.UI.Button;UnityEngine.UI.Image"
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa2/titan_status/bg_msg",
+            "missingScriptCount": 0,
+            "imageType": "UnityEngine.UI.Image",
+            "spriteName": "BG_zidi_lan",
+            "monoBehaviourTypes": "UnityEngine.UI.Image"
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa3/bg_ditu",
+            "missingScriptCount": 0,
+            "imageType": "UnityEngine.UI.Image",
+            "spriteName": "T_tongmenghezhan",
+            "monoBehaviourTypes": "UnityEngine.UI.Image"
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa3/bg_name/im_name",
+            "missingScriptCount": 0,
+            "imageType": "UnityEngine.UI.Image",
+            "spriteName": "T_biaoti_hezhan",
+            "monoBehaviourTypes": "UnityEngine.UI.Image"
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa3/box",
+            "missingScriptCount": 0,
+            "imageType": "UnityEngine.UI.Image",
+            "spriteName": "wjczbx3",
+            "monoBehaviourTypes": "UnityEngine.UI.Button;UnityEngine.UI.Image"
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa3/new_no_open/bg_msg",
+            "missingScriptCount": 0,
+            "imageType": "UnityEngine.UI.Image",
+            "spriteName": "BG_zidi_cheng",
+            "monoBehaviourTypes": "UnityEngine.UI.Image"
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa4/Boxicon",
+            "missingScriptCount": 0,
+            "imageType": "UnityEngine.UI.Image",
+            "spriteName": "wjczbx3",
+            "monoBehaviourTypes": "UnityEngine.UI.Button;UnityEngine.UI.Image"
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa4/bg_ditu",
+            "missingScriptCount": 0,
+            "imageType": "UnityEngine.UI.Image",
+            "spriteName": "T_juntuanshilian",
+            "monoBehaviourTypes": "UnityEngine.UI.Image"
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa4/bg_name/im_name",
+            "missingScriptCount": 0,
+            "imageType": "UnityEngine.UI.Image",
+            "spriteName": "T_biaotizi_tongmengshilian",
+            "monoBehaviourTypes": "UnityEngine.UI.Image"
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa6/Boxicon",
+            "missingScriptCount": 0,
+            "imageType": "UnityEngine.UI.Image",
+            "spriteName": "wjczbx3",
+            "monoBehaviourTypes": "UnityEngine.UI.Button;UnityEngine.UI.Image"
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa6/bg_ditu",
+            "missingScriptCount": 0,
+            "imageType": "UnityEngine.UI.Image",
+            "spriteName": "huachuanbisairukou",
+            "monoBehaviourTypes": "UnityEngine.UI.Image"
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa6/bg_name/im_name",
+            "missingScriptCount": 0,
+            "imageType": "UnityEngine.UI.Image",
+            "spriteName": "huachuanbisairukouii_mingzi",
+            "monoBehaviourTypes": "UnityEngine.UI.Image"
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa6/new_no_open/bg_msg",
+            "missingScriptCount": 0,
+            "imageType": "UnityEngine.UI.Image",
+            "spriteName": "BG_zidi_hong",
+            "monoBehaviourTypes": "UnityEngine.UI.Image"
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa7/btn_fsb_box",
+            "missingScriptCount": 0,
+            "imageType": "UnityEngine.UI.Image",
+            "spriteName": "IC_baoxiang_6",
+            "monoBehaviourTypes": "UnityEngine.UI.Button;UnityEngine.UI.Image"
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa7/img_award_cup",
+            "missingScriptCount": 0,
+            "imageType": "UnityEngine.UI.Image",
+            "spriteName": "T_yanchang1",
+            "monoBehaviourTypes": "UnityEngine.UI.Image"
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa7/img_award_cup2",
+            "missingScriptCount": 0,
+            "imageType": "UnityEngine.UI.Image",
+            "spriteName": "T_yanchang3",
+            "monoBehaviourTypes": "UnityEngine.UI.Image"
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa7/img_award_preheat",
+            "missingScriptCount": 0,
+            "imageType": "UnityEngine.UI.Image",
+            "spriteName": "T_yanchangx",
+            "monoBehaviourTypes": "UnityEngine.UI.Image"
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa7/p_curr_state/bg_msg",
+            "missingScriptCount": 0,
+            "imageType": "UnityEngine.UI.Image",
+            "spriteName": "BG_zidi_zi",
+            "monoBehaviourTypes": "UnityEngine.UI.Image"
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa7/starts/im_start2",
+            "missingScriptCount": 0,
+            "imageType": "UnityEngine.UI.Image",
+            "spriteName": "T_xingxing",
+            "monoBehaviourTypes": "UnityEngine.UI.Image"
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa7/starts/im_start4",
+            "missingScriptCount": 0,
+            "imageType": "UnityEngine.UI.Image",
+            "spriteName": "T_xingxing",
+            "monoBehaviourTypes": "UnityEngine.UI.Image"
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa8/bg_ditu",
+            "missingScriptCount": 0,
+            "imageType": "UnityEngine.UI.Image",
+            "spriteName": "lsmj_rukou",
+            "monoBehaviourTypes": "UnityEngine.UI.Image"
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa8/bg_name/im_name",
+            "missingScriptCount": 0,
+            "imageType": "UnityEngine.UI.Image",
+            "spriteName": "lsmj_rukou1",
+            "monoBehaviourTypes": "UnityEngine.UI.Image"
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa8/box",
+            "missingScriptCount": 0,
+            "imageType": "UnityEngine.UI.Image",
+            "spriteName": "wjczbx3",
+            "monoBehaviourTypes": "UnityEngine.UI.Button;UnityEngine.UI.Image"
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa8/im_battle",
+            "missingScriptCount": 0,
+            "imageType": "YouYou.YouYouImage",
+            "spriteName": "",
+            "monoBehaviourTypes": "YouYou.YouYouImage"
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/middle/root_wanfa/Viewport/ContentWanfa/btn_wanfa8/new_no_open/bg_msg",
+            "missingScriptCount": 0,
+            "imageType": "UnityEngine.UI.Image",
+            "spriteName": "BG_zidi_fen",
+            "monoBehaviourTypes": "UnityEngine.UI.Image"
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/right/btn_1",
+            "missingScriptCount": 0,
+            "imageType": "UnityEngine.UI.Image",
+            "spriteName": "",
+            "monoBehaviourTypes": "UnityEngine.UI.Button;UnityEngine.UI.Image"
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/right/btn_2",
+            "missingScriptCount": 0,
+            "imageType": "UnityEngine.UI.Image",
+            "spriteName": "",
+            "monoBehaviourTypes": "UnityEngine.UI.Button;UnityEngine.UI.Image"
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/right/btn_3",
+            "missingScriptCount": 0,
+            "imageType": "UnityEngine.UI.Image",
+            "spriteName": "",
+            "monoBehaviourTypes": "UnityEngine.UI.Button;UnityEngine.UI.Image"
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/right/btn_5",
+            "missingScriptCount": 0,
+            "imageType": "UnityEngine.UI.Image",
+            "spriteName": "",
+            "monoBehaviourTypes": "UnityEngine.UI.Button;UnityEngine.UI.Image"
+        },
+        {
+            "hierarchyPath": "UI_GuildMain_NavigationPrototype/right/btn_6",
+            "missingScriptCount": 0,
+            "imageType": "UnityEngine.UI.Image",
+            "spriteName": "",
+            "monoBehaviourTypes": "UnityEngine.UI.Button;UnityEngine.UI.Image"
+        }
+    ]
+}

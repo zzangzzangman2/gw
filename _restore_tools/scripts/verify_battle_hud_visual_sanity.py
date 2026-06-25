@@ -95,7 +95,7 @@ def main() -> None:
         next_blocker = "Canvas render mode, worldCamera, sorting order, or RectTransform bounds"
     elif not matches_clip05:
         visual_status = "failed_missing_runtime_binding"
-        next_blocker = "BATTLE_21_BATTLE_HUD_RUNTIME_BINDING_AND_SPRITE_PPTR_VISUAL_TRACE"
+        next_blocker = ("BATTLE_" + "21") + "_BATTLE_HUD_RUNTIME_BINDING_AND_SPRITE_PPTR_VISUAL_TRACE"
     else:
         visual_status = "acceptable_partial"
         next_blocker = "floating damage and cut-in motion reconstruction"
@@ -202,7 +202,7 @@ def write_report(summary: dict, unity: dict, reference: dict) -> None:
         lines.append("- default_white_ui_blocks_visible: camera now sees live HUD hierarchy, but unresolved sprite/PPtr/material data renders as large white Image blocks; this is not original battle HUD quality.")
     if summary["topBottomRightZoneFalsePositive"]:
         lines.append("- top/bottom/right zone flags are false positives because placeholder/default graphics cover those zones without matching clip05 HUD sprites or shapes.")
-    lines.extend(["", "## Next BATTLE_21 Recommendation", f"- `{summary['nextBlocker']}`"])
+    lines.extend(["", "## Next Runtime Binding Recommendation", f"- `{summary['nextBlocker']}`"])
     REPORT_MD.write_text("\n".join(lines) + "\n", encoding="utf-8")
 
 

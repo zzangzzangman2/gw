@@ -1,0 +1,1528 @@
+{
+  "verdict": "아직 원본 전투 HUD 아님",
+  "visual_status": "failed_sprite_texture_blank_canvas_scale_lua_runtime_binding_missing",
+  "reference_video_used": true,
+  "video_clip05_sequence_gate_checked": true,
+  "video_clip05_sequence_extracted": true,
+  "matches_clip05_motion_sequence": false,
+  "camera_visible_original_hud": false,
+  "final_capture_debug_text_visible": false,
+  "final_capture_has_large_white_blocks": true,
+  "capture": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_battle_unity\\Assets\\RestoreCaptures\\battle_hud\\BattleHudCanvasScalerSpriteTextureLuaStateClip05_1680x720.png",
+  "contactSheet": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_24_CANVAS_SCALER_SPRITE_TEXTURE_LUA_STATE_CLIP05_CONTACT_SHEET.jpg",
+  "visibleSpriteSheet": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_24_VISIBLE_HUD_SPRITE_TEXTURE_SHEET.jpg",
+  "referenceSequence": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_24_PLAY_VIDEO_NORMAL_BATTLE_REFERENCE_486S_SEQUENCE.jpg",
+  "unityJson": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_battle_unity\\Assets\\RestoreData\\battle\\BATTLE_HUD_CANVAS_SCALER_SPRITE_TEXTURE_LUA_ACTIVE_STATE_CLIP05.json",
+  "componentsCsv": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_battle_unity\\Assets\\RestoreData\\battle\\BATTLE_HUD_CANVAS_SCALER_SPRITE_TEXTURE_LUA_ACTIVE_STATE_CLIP05_COMPONENTS.csv",
+  "failureAxes": {
+    "canvas_or_render_scale_wrong": true,
+    "sprite_texture_or_atlas_blank": true,
+    "ui_normalbattle_lua_show_oper_menu_state_missing": true,
+    "runtime_left_right_head_skill_buff_assignment_missing": true
+  },
+  "summary": {
+    "activeVisibleCount": 83,
+    "activeVisibleSpriteNamedCount": 48,
+    "activeVisibleSpriteTextureBlankCount": 46,
+    "activeVisibleLargeBlankTextureCount": 6,
+    "canvasScaleSuspiciousCount": 83,
+    "blankTextureExamples": [
+      {
+        "hierarchyPath": "BattleHudCanvasScalerSpriteTextureLuaStateClip05Root/CanvasLuaStateHUD_01_ui_normalbattle/root_battle/root_top/TopCenter/PlayerInfo/imgBG",
+        "spriteName": "ba_xuecao_bg",
+        "areaRatio": "0.001067",
+        "canvasRootRectSize": "640/-140",
+        "canvasRenderMode": "ScreenSpaceCamera"
+      },
+      {
+        "hierarchyPath": "BattleHudCanvasScalerSpriteTextureLuaStateClip05Root/CanvasLuaStateHUD_01_ui_normalbattle/root_battle/root_top/TopCenter/PlayerInfo/im_mask",
+        "spriteName": "ba_xuecao_bg4",
+        "areaRatio": "0",
+        "canvasRootRectSize": "640/-140",
+        "canvasRenderMode": "ScreenSpaceCamera"
+      },
+      {
+        "hierarchyPath": "BattleHudCanvasScalerSpriteTextureLuaStateClip05Root/CanvasLuaStateHUD_01_ui_normalbattle/root_battle/root_top/TopCenter/PlayerInfo/im_mask/imgPlayerHeadIcon",
+        "spriteName": "battlehead1001",
+        "areaRatio": "0",
+        "canvasRootRectSize": "640/-140",
+        "canvasRenderMode": "ScreenSpaceCamera"
+      },
+      {
+        "hierarchyPath": "BattleHudCanvasScalerSpriteTextureLuaStateClip05Root/CanvasLuaStateHUD_01_ui_normalbattle/root_battle/root_top/TopCenter/PlayerInfo/imgPlayerHPBG",
+        "spriteName": "Image_blank",
+        "areaRatio": "0",
+        "canvasRootRectSize": "640/-140",
+        "canvasRenderMode": "ScreenSpaceCamera"
+      },
+      {
+        "hierarchyPath": "BattleHudCanvasScalerSpriteTextureLuaStateClip05Root/CanvasLuaStateHUD_01_ui_normalbattle/root_battle/root_top/TopCenter/PlayerInfo/imgPlayerHPBG/bg",
+        "spriteName": "ba_xuecao_bg1",
+        "areaRatio": "0",
+        "canvasRootRectSize": "640/-140",
+        "canvasRenderMode": "ScreenSpaceCamera"
+      },
+      {
+        "hierarchyPath": "BattleHudCanvasScalerSpriteTextureLuaStateClip05Root/CanvasLuaStateHUD_01_ui_normalbattle/root_battle/root_top/TopCenter/PlayerInfo/imgPlayerHPBG/imgPlayerHP_Red",
+        "spriteName": "ba_xuecao_bg5",
+        "areaRatio": "0",
+        "canvasRootRectSize": "640/-140",
+        "canvasRenderMode": "ScreenSpaceCamera"
+      },
+      {
+        "hierarchyPath": "BattleHudCanvasScalerSpriteTextureLuaStateClip05Root/CanvasLuaStateHUD_01_ui_normalbattle/root_battle/root_top/TopCenter/PlayerInfo/imgPlayerHPBG/imgPlayerHP",
+        "spriteName": "ba_xuecao_bg3",
+        "areaRatio": "0",
+        "canvasRootRectSize": "640/-140",
+        "canvasRenderMode": "ScreenSpaceCamera"
+      },
+      {
+        "hierarchyPath": "BattleHudCanvasScalerSpriteTextureLuaStateClip05Root/CanvasLuaStateHUD_01_ui_normalbattle/root_battle/root_top/TopCenter/PlayerInfo/bg_guanzhi",
+        "spriteName": "guanzhi_maozi1",
+        "areaRatio": "0",
+        "canvasRootRectSize": "640/-140",
+        "canvasRenderMode": "ScreenSpaceCamera"
+      },
+      {
+        "hierarchyPath": "BattleHudCanvasScalerSpriteTextureLuaStateClip05Root/CanvasLuaStateHUD_01_ui_normalbattle/root_battle/root_top/TopCenter/PlayerInfo/img_yazhi",
+        "spriteName": "UI_up",
+        "areaRatio": "0.000467",
+        "canvasRootRectSize": "640/-140",
+        "canvasRenderMode": "ScreenSpaceCamera"
+      },
+      {
+        "hierarchyPath": "BattleHudCanvasScalerSpriteTextureLuaStateClip05Root/CanvasLuaStateHUD_01_ui_normalbattle/root_battle/root_top/TopCenter/EnemyInfo/imgBG",
+        "spriteName": "ba_xuecao_bg",
+        "areaRatio": "0.000986",
+        "canvasRootRectSize": "640/-140",
+        "canvasRenderMode": "ScreenSpaceCamera"
+      },
+      {
+        "hierarchyPath": "BattleHudCanvasScalerSpriteTextureLuaStateClip05Root/CanvasLuaStateHUD_01_ui_normalbattle/root_battle/root_top/TopCenter/EnemyInfo/im_mask",
+        "spriteName": "ba_xuecao_bg4",
+        "areaRatio": "0",
+        "canvasRootRectSize": "640/-140",
+        "canvasRenderMode": "ScreenSpaceCamera"
+      },
+      {
+        "hierarchyPath": "BattleHudCanvasScalerSpriteTextureLuaStateClip05Root/CanvasLuaStateHUD_01_ui_normalbattle/root_battle/root_top/TopCenter/EnemyInfo/im_mask/imgPlayerHeadIcon",
+        "spriteName": "battlehead1002",
+        "areaRatio": "0",
+        "canvasRootRectSize": "640/-140",
+        "canvasRenderMode": "ScreenSpaceCamera"
+      },
+      {
+        "hierarchyPath": "BattleHudCanvasScalerSpriteTextureLuaStateClip05Root/CanvasLuaStateHUD_01_ui_normalbattle/root_battle/root_top/TopCenter/EnemyInfo/imgPlayerHPBG",
+        "spriteName": "Image_blank",
+        "areaRatio": "0",
+        "canvasRootRectSize": "640/-140",
+        "canvasRenderMode": "ScreenSpaceCamera"
+      },
+      {
+        "hierarchyPath": "BattleHudCanvasScalerSpriteTextureLuaStateClip05Root/CanvasLuaStateHUD_01_ui_normalbattle/root_battle/root_top/TopCenter/EnemyInfo/imgPlayerHPBG/bg",
+        "spriteName": "ba_xuecao_bg1",
+        "areaRatio": "0",
+        "canvasRootRectSize": "640/-140",
+        "canvasRenderMode": "ScreenSpaceCamera"
+      },
+      {
+        "hierarchyPath": "BattleHudCanvasScalerSpriteTextureLuaStateClip05Root/CanvasLuaStateHUD_01_ui_normalbattle/root_battle/root_top/TopCenter/EnemyInfo/imgPlayerHPBG/imgPlayerHP_Red",
+        "spriteName": "ba_xuecao_bg5",
+        "areaRatio": "0",
+        "canvasRootRectSize": "640/-140",
+        "canvasRenderMode": "ScreenSpaceCamera"
+      },
+      {
+        "hierarchyPath": "BattleHudCanvasScalerSpriteTextureLuaStateClip05Root/CanvasLuaStateHUD_01_ui_normalbattle/root_battle/root_top/TopCenter/EnemyInfo/imgPlayerHPBG/imgPlayerHP",
+        "spriteName": "ba_xuecao_bg2",
+        "areaRatio": "0",
+        "canvasRootRectSize": "640/-140",
+        "canvasRenderMode": "ScreenSpaceCamera"
+      },
+      {
+        "hierarchyPath": "BattleHudCanvasScalerSpriteTextureLuaStateClip05Root/CanvasLuaStateHUD_01_ui_normalbattle/root_battle/root_top/TopCenter/EnemyInfo/imgPlayerHPBG/imgPlayerShield",
+        "spriteName": "T_HPtiaolvse_2",
+        "areaRatio": "0",
+        "canvasRootRectSize": "640/-140",
+        "canvasRenderMode": "ScreenSpaceCamera"
+      },
+      {
+        "hierarchyPath": "BattleHudCanvasScalerSpriteTextureLuaStateClip05Root/CanvasLuaStateHUD_01_ui_normalbattle/root_battle/root_top/TopCenter/EnemyInfo/imgPlayerHPBG/imgPlayerShield/imgPlayerShield (1)",
+        "spriteName": "ba_xuecao_bg5_sheild",
+        "areaRatio": "0",
+        "canvasRootRectSize": "640/-140",
+        "canvasRenderMode": "ScreenSpaceCamera"
+      },
+      {
+        "hierarchyPath": "BattleHudCanvasScalerSpriteTextureLuaStateClip05Root/CanvasLuaStateHUD_01_ui_normalbattle/root_battle/root_top/TopCenter/EnemyInfo/imgPlayerHPBG/imgPlayerShield/effect",
+        "spriteName": "shield_effect_001",
+        "areaRatio": "0",
+        "canvasRootRectSize": "640/-140",
+        "canvasRenderMode": "ScreenSpaceCamera"
+      },
+      {
+        "hierarchyPath": "BattleHudCanvasScalerSpriteTextureLuaStateClip05Root/CanvasLuaStateHUD_01_ui_normalbattle/root_battle/root_top/TopCenter/EnemyInfo/bg_guanzhi",
+        "spriteName": "guanzhi_maozi1",
+        "areaRatio": "0",
+        "canvasRootRectSize": "640/-140",
+        "canvasRenderMode": "ScreenSpaceCamera"
+      },
+      {
+        "hierarchyPath": "BattleHudCanvasScalerSpriteTextureLuaStateClip05Root/CanvasLuaStateHUD_01_ui_normalbattle/root_battle/root_top/TopCenter/EnemyInfo/img_yazhi",
+        "spriteName": "UI_up",
+        "areaRatio": "0.000467",
+        "canvasRootRectSize": "640/-140",
+        "canvasRenderMode": "ScreenSpaceCamera"
+      },
+      {
+        "hierarchyPath": "BattleHudCanvasScalerSpriteTextureLuaStateClip05Root/CanvasLuaStateHUD_01_ui_normalbattle/root_battle/root_top/TopCenter/imgVS",
+        "spriteName": "multilang_T_duijue",
+        "areaRatio": "0",
+        "canvasRootRectSize": "640/-140",
+        "canvasRenderMode": "ScreenSpaceCamera"
+      },
+      {
+        "hierarchyPath": "BattleHudCanvasScalerSpriteTextureLuaStateClip05Root/CanvasLuaStateHUD_01_ui_normalbattle/root_battle/node_buff/ScrollViewBuff/Viewport/Content/buff_icon/buff_bg",
+        "spriteName": "bufficon_bg",
+        "areaRatio": "0",
+        "canvasRootRectSize": "640/-140",
+        "canvasRenderMode": "ScreenSpaceCamera"
+      },
+      {
+        "hierarchyPath": "BattleHudCanvasScalerSpriteTextureLuaStateClip05Root/CanvasLuaStateHUD_01_ui_normalbattle/root_battle/node_buff/ScrollViewBuff/Viewport/Content/buff_icon/buff_icon",
+        "spriteName": "Image_blank",
+        "areaRatio": "0",
+        "canvasRootRectSize": "640/-140",
+        "canvasRenderMode": "ScreenSpaceCamera"
+      },
+      {
+        "hierarchyPath": "BattleHudCanvasScalerSpriteTextureLuaStateClip05Root/CanvasLuaStateHUD_01_ui_normalbattle/root_battle/BottomCenter/HeroListContainer/bg_head_ditu",
+        "spriteName": "bg_head_ditu",
+        "areaRatio": "0",
+        "canvasRootRectSize": "640/-140",
+        "canvasRenderMode": "ScreenSpaceCamera"
+      }
+    ],
+    "largeBlankTextureExamples": [
+      {
+        "hierarchyPath": "BattleHudCanvasScalerSpriteTextureLuaStateClip05Root/CanvasLuaStateHUD_01_ui_normalbattle/root_battle/Center/imgAutoTip/bg_tishi",
+        "spriteName": "BG_tishi",
+        "areaRatio": "0.104167",
+        "alpha": "1"
+      },
+      {
+        "hierarchyPath": "BattleHudCanvasScalerSpriteTextureLuaStateClip05Root/CanvasLuaStateHUD_01_ui_normalbattle/root_opra/btnBuff/im_off",
+        "spriteName": "zd_buffan2",
+        "areaRatio": "0.017334",
+        "alpha": "1"
+      },
+      {
+        "hierarchyPath": "BattleHudCanvasScalerSpriteTextureLuaStateClip05Root/CanvasLuaStateHUD_01_ui_normalbattle/root_opra/btnAuto/im_off",
+        "spriteName": "btn_zidong_off",
+        "areaRatio": "0.018535",
+        "alpha": "1"
+      },
+      {
+        "hierarchyPath": "BattleHudCanvasScalerSpriteTextureLuaStateClip05Root/CanvasLuaStateHUD_01_ui_normalbattle/root_opra/btnSkip",
+        "spriteName": "btn_Skip",
+        "areaRatio": "0.018535",
+        "alpha": "1"
+      },
+      {
+        "hierarchyPath": "BattleHudCanvasScalerSpriteTextureLuaStateClip05Root/CanvasLuaStateHUD_01_ui_normalbattle/root_opra/btnTwoSpeed/im_off",
+        "spriteName": "btn_x1 1",
+        "areaRatio": "0.018535",
+        "alpha": "1"
+      },
+      {
+        "hierarchyPath": "BattleHudCanvasScalerSpriteTextureLuaStateClip05Root/CanvasLuaStateHUD_01_ui_normalbattle/root_opra/btnFastSkill/im_off",
+        "spriteName": "btn_Skipult_2",
+        "areaRatio": "0.018535",
+        "alpha": "1"
+      }
+    ],
+    "videoClip05SequenceExtracted": true,
+    "captureStats": {
+      "exists": true,
+      "width": 1680,
+      "height": 720,
+      "nearWhiteRatio": 0.1421164021164021,
+      "nearBlackRatio": 0.5926984126984127,
+      "meanRgb": [
+        46.279,
+        48.36,
+        49.903
+      ]
+    },
+    "unityLiveSummary": {
+      "verdict": "아직 원본 전투 HUD 아님",
+      "reference_video_used": true,
+      "video_clip05_sequence_gate_checked": true,
+      "video_clip05_sequence_extracted": true,
+      "visual_status": "failed_missing_runtime_binding",
+      "matches_clip05_static_hud_layout": false,
+      "camera_visible_original_hud": false,
+      "debug_or_path_label_visible": false,
+      "large_white_bands_visible": false,
+      "captureStats": {
+        "exists": true,
+        "width": 1680,
+        "height": 720,
+        "nearWhiteRatio": 0.1421164021164021,
+        "nearBlackRatio": 0.5926984126984127,
+        "meanRgb": [
+          46.279,
+          48.36,
+          49.903
+        ]
+      },
+      "componentRowCount": 505,
+      "activeVisibleRowCount": 86,
+      "activeVisibleImageRowCount": 53,
+      "spriteNameTextureBlankCount": 47,
+      "spriteNameTextureBlankExamples": [
+        {
+          "hierarchyPath": "BattleHudCanvasScalerSpriteTextureLuaStateClip05Root/CanvasLuaStateHUD_01_ui_normalbattle/root_battle/root_top/TopCenter/PlayerInfo/imgBG",
+          "spriteName": "ba_xuecao_bg",
+          "areaRatio": "0.001067"
+        },
+        {
+          "hierarchyPath": "BattleHudCanvasScalerSpriteTextureLuaStateClip05Root/CanvasLuaStateHUD_01_ui_normalbattle/root_battle/root_top/TopCenter/PlayerInfo/im_mask",
+          "spriteName": "ba_xuecao_bg4",
+          "areaRatio": "0"
+        },
+        {
+          "hierarchyPath": "BattleHudCanvasScalerSpriteTextureLuaStateClip05Root/CanvasLuaStateHUD_01_ui_normalbattle/root_battle/root_top/TopCenter/PlayerInfo/im_mask/imgPlayerHeadIcon",
+          "spriteName": "battlehead1001",
+          "areaRatio": "0"
+        },
+        {
+          "hierarchyPath": "BattleHudCanvasScalerSpriteTextureLuaStateClip05Root/CanvasLuaStateHUD_01_ui_normalbattle/root_battle/root_top/TopCenter/PlayerInfo/imgPlayerHPBG",
+          "spriteName": "Image_blank",
+          "areaRatio": "0"
+        },
+        {
+          "hierarchyPath": "BattleHudCanvasScalerSpriteTextureLuaStateClip05Root/CanvasLuaStateHUD_01_ui_normalbattle/root_battle/root_top/TopCenter/PlayerInfo/imgPlayerHPBG/bg",
+          "spriteName": "ba_xuecao_bg1",
+          "areaRatio": "0"
+        },
+        {
+          "hierarchyPath": "BattleHudCanvasScalerSpriteTextureLuaStateClip05Root/CanvasLuaStateHUD_01_ui_normalbattle/root_battle/root_top/TopCenter/PlayerInfo/imgPlayerHPBG/imgPlayerHP_Red",
+          "spriteName": "ba_xuecao_bg5",
+          "areaRatio": "0"
+        },
+        {
+          "hierarchyPath": "BattleHudCanvasScalerSpriteTextureLuaStateClip05Root/CanvasLuaStateHUD_01_ui_normalbattle/root_battle/root_top/TopCenter/PlayerInfo/imgPlayerHPBG/imgPlayerHP",
+          "spriteName": "ba_xuecao_bg3",
+          "areaRatio": "0"
+        },
+        {
+          "hierarchyPath": "BattleHudCanvasScalerSpriteTextureLuaStateClip05Root/CanvasLuaStateHUD_01_ui_normalbattle/root_battle/root_top/TopCenter/PlayerInfo/bg_guanzhi",
+          "spriteName": "guanzhi_maozi1",
+          "areaRatio": "0"
+        },
+        {
+          "hierarchyPath": "BattleHudCanvasScalerSpriteTextureLuaStateClip05Root/CanvasLuaStateHUD_01_ui_normalbattle/root_battle/root_top/TopCenter/PlayerInfo/img_yazhi",
+          "spriteName": "UI_up",
+          "areaRatio": "0.000467"
+        },
+        {
+          "hierarchyPath": "BattleHudCanvasScalerSpriteTextureLuaStateClip05Root/CanvasLuaStateHUD_01_ui_normalbattle/root_battle/root_top/TopCenter/EnemyInfo/imgBG",
+          "spriteName": "ba_xuecao_bg",
+          "areaRatio": "0.000986"
+        },
+        {
+          "hierarchyPath": "BattleHudCanvasScalerSpriteTextureLuaStateClip05Root/CanvasLuaStateHUD_01_ui_normalbattle/root_battle/root_top/TopCenter/EnemyInfo/im_mask",
+          "spriteName": "ba_xuecao_bg4",
+          "areaRatio": "0"
+        },
+        {
+          "hierarchyPath": "BattleHudCanvasScalerSpriteTextureLuaStateClip05Root/CanvasLuaStateHUD_01_ui_normalbattle/root_battle/root_top/TopCenter/EnemyInfo/im_mask/imgPlayerHeadIcon",
+          "spriteName": "battlehead1002",
+          "areaRatio": "0"
+        },
+        {
+          "hierarchyPath": "BattleHudCanvasScalerSpriteTextureLuaStateClip05Root/CanvasLuaStateHUD_01_ui_normalbattle/root_battle/root_top/TopCenter/EnemyInfo/imgPlayerHPBG",
+          "spriteName": "Image_blank",
+          "areaRatio": "0"
+        },
+        {
+          "hierarchyPath": "BattleHudCanvasScalerSpriteTextureLuaStateClip05Root/CanvasLuaStateHUD_01_ui_normalbattle/root_battle/root_top/TopCenter/EnemyInfo/imgPlayerHPBG/bg",
+          "spriteName": "ba_xuecao_bg1",
+          "areaRatio": "0"
+        },
+        {
+          "hierarchyPath": "BattleHudCanvasScalerSpriteTextureLuaStateClip05Root/CanvasLuaStateHUD_01_ui_normalbattle/root_battle/root_top/TopCenter/EnemyInfo/imgPlayerHPBG/imgPlayerHP_Red",
+          "spriteName": "ba_xuecao_bg5",
+          "areaRatio": "0"
+        },
+        {
+          "hierarchyPath": "BattleHudCanvasScalerSpriteTextureLuaStateClip05Root/CanvasLuaStateHUD_01_ui_normalbattle/root_battle/root_top/TopCenter/EnemyInfo/imgPlayerHPBG/imgPlayerHP",
+          "spriteName": "ba_xuecao_bg2",
+          "areaRatio": "0"
+        },
+        {
+          "hierarchyPath": "BattleHudCanvasScalerSpriteTextureLuaStateClip05Root/CanvasLuaStateHUD_01_ui_normalbattle/root_battle/root_top/TopCenter/EnemyInfo/imgPlayerHPBG/imgPlayerShield",
+          "spriteName": "T_HPtiaolvse_2",
+          "areaRatio": "0"
+        },
+        {
+          "hierarchyPath": "BattleHudCanvasScalerSpriteTextureLuaStateClip05Root/CanvasLuaStateHUD_01_ui_normalbattle/root_battle/root_top/TopCenter/EnemyInfo/imgPlayerHPBG/imgPlayerShield/imgPlayerShield (1)",
+          "spriteName": "ba_xuecao_bg5_sheild",
+          "areaRatio": "0"
+        },
+        {
+          "hierarchyPath": "BattleHudCanvasScalerSpriteTextureLuaStateClip05Root/CanvasLuaStateHUD_01_ui_normalbattle/root_battle/root_top/TopCenter/EnemyInfo/imgPlayerHPBG/imgPlayerShield/effect",
+          "spriteName": "shield_effect_001",
+          "areaRatio": "0"
+        },
+        {
+          "hierarchyPath": "BattleHudCanvasScalerSpriteTextureLuaStateClip05Root/CanvasLuaStateHUD_01_ui_normalbattle/root_battle/root_top/TopCenter/EnemyInfo/bg_guanzhi",
+          "spriteName": "guanzhi_maozi1",
+          "areaRatio": "0"
+        }
+      ],
+      "topVisibleOffenders": [
+        {
+          "hierarchyPath": "BattleHudCanvasScalerSpriteTextureLuaStateClip05Root/CanvasLuaStateHUD_01_ui_normalbattle/btn_preivew_touch",
+          "spriteName": "Image_blank",
+          "textureName": "",
+          "textureSize": "",
+          "areaRatio": "1",
+          "canvasRenderMode": "ScreenSpaceCamera",
+          "canvasRootRectSize": "640/480",
+          "canvasScalerReferenceResolution": ""
+        },
+        {
+          "hierarchyPath": "BattleHudCanvasScalerSpriteTextureLuaStateClip05Root/CanvasLuaStateHUD_01_ui_normalbattle/root_battle/Center/imgAutoTip/bg_tishi",
+          "spriteName": "BG_tishi",
+          "textureName": "",
+          "textureSize": "",
+          "areaRatio": "0.104167",
+          "canvasRenderMode": "ScreenSpaceCamera",
+          "canvasRootRectSize": "640/-140",
+          "canvasScalerReferenceResolution": ""
+        },
+        {
+          "hierarchyPath": "BattleHudCanvasScalerSpriteTextureLuaStateClip05Root/CanvasLuaStateHUD_01_ui_normalbattle/root_opra/btnAuto/im_off",
+          "spriteName": "btn_zidong_off",
+          "textureName": "",
+          "textureSize": "",
+          "areaRatio": "0.018535",
+          "canvasRenderMode": "ScreenSpaceCamera",
+          "canvasRootRectSize": "640/480",
+          "canvasScalerReferenceResolution": ""
+        },
+        {
+          "hierarchyPath": "BattleHudCanvasScalerSpriteTextureLuaStateClip05Root/CanvasLuaStateHUD_01_ui_normalbattle/root_opra/btnSkip",
+          "spriteName": "btn_Skip",
+          "textureName": "",
+          "textureSize": "",
+          "areaRatio": "0.018535",
+          "canvasRenderMode": "ScreenSpaceCamera",
+          "canvasRootRectSize": "640/480",
+          "canvasScalerReferenceResolution": ""
+        },
+        {
+          "hierarchyPath": "BattleHudCanvasScalerSpriteTextureLuaStateClip05Root/CanvasLuaStateHUD_01_ui_normalbattle/root_opra/btnTwoSpeed/im_off",
+          "spriteName": "btn_x1 1",
+          "textureName": "",
+          "textureSize": "",
+          "areaRatio": "0.018535",
+          "canvasRenderMode": "ScreenSpaceCamera",
+          "canvasRootRectSize": "640/480",
+          "canvasScalerReferenceResolution": ""
+        },
+        {
+          "hierarchyPath": "BattleHudCanvasScalerSpriteTextureLuaStateClip05Root/CanvasLuaStateHUD_01_ui_normalbattle/root_opra/btnFastSkill/im_off",
+          "spriteName": "btn_Skipult_2",
+          "textureName": "",
+          "textureSize": "",
+          "areaRatio": "0.018535",
+          "canvasRenderMode": "ScreenSpaceCamera",
+          "canvasRootRectSize": "640/480",
+          "canvasScalerReferenceResolution": ""
+        },
+        {
+          "hierarchyPath": "BattleHudCanvasScalerSpriteTextureLuaStateClip05Root/CanvasLuaStateHUD_01_ui_normalbattle/root_opra/btnBuff/im_off",
+          "spriteName": "zd_buffan2",
+          "textureName": "",
+          "textureSize": "",
+          "areaRatio": "0.017334",
+          "canvasRenderMode": "ScreenSpaceCamera",
+          "canvasRootRectSize": "640/480",
+          "canvasScalerReferenceResolution": ""
+        },
+        {
+          "hierarchyPath": "BattleHudCanvasScalerSpriteTextureLuaStateClip05Root/CanvasLuaStateHUD_01_ui_normalbattle/root_opra/btnSkip/boxcollider",
+          "spriteName": "",
+          "textureName": "",
+          "textureSize": "",
+          "areaRatio": "0.013997",
+          "canvasRenderMode": "ScreenSpaceCamera",
+          "canvasRootRectSize": "640/480",
+          "canvasScalerReferenceResolution": ""
+        },
+        {
+          "hierarchyPath": "BattleHudCanvasScalerSpriteTextureLuaStateClip05Root/CanvasLuaStateHUD_01_ui_normalbattle/root_opra/btnAuto/im_new_auto/im_new",
+          "spriteName": "msz_new",
+          "textureName": "",
+          "textureSize": "",
+          "areaRatio": "0.006977",
+          "canvasRenderMode": "ScreenSpaceCamera",
+          "canvasRootRectSize": "640/480",
+          "canvasScalerReferenceResolution": ""
+        },
+        {
+          "hierarchyPath": "BattleHudCanvasScalerSpriteTextureLuaStateClip05Root/CanvasLuaStateHUD_01_ui_normalbattle/root_opra/btnSkip/im_new_skip/im_new",
+          "spriteName": "msz_new",
+          "textureName": "",
+          "textureSize": "",
+          "areaRatio": "0.006977",
+          "canvasRenderMode": "ScreenSpaceCamera",
+          "canvasRootRectSize": "640/480",
+          "canvasScalerReferenceResolution": ""
+        },
+        {
+          "hierarchyPath": "BattleHudCanvasScalerSpriteTextureLuaStateClip05Root/CanvasLuaStateHUD_01_ui_normalbattle/root_battle/root_top/TopCenter/bg_wave",
+          "spriteName": "BG_wave",
+          "textureName": "",
+          "textureSize": "",
+          "areaRatio": "0.005742",
+          "canvasRenderMode": "ScreenSpaceCamera",
+          "canvasRootRectSize": "640/-140",
+          "canvasScalerReferenceResolution": ""
+        },
+        {
+          "hierarchyPath": "BattleHudCanvasScalerSpriteTextureLuaStateClip05Root/CanvasLuaStateHUD_01_ui_normalbattle/root_opra/btnAuto/im_new_auto",
+          "spriteName": "",
+          "textureName": "",
+          "textureSize": "",
+          "areaRatio": "0.001922",
+          "canvasRenderMode": "ScreenSpaceCamera",
+          "canvasRootRectSize": "640/480",
+          "canvasScalerReferenceResolution": ""
+        }
+      ],
+      "issueClassification": {
+        "canvas_render_scale_wrong_or_unverified": false,
+        "sprite_texture_atlas_blank": true,
+        "ui_normalbattle_lua_showopermenu_rootbuff_state_missing": false,
+        "runtime_left_right_head_skill_buff_image_assignment_missing": true
+      },
+      "canvasScalerSummary": [
+        {
+          "canvasPath": "BattleHudCanvasScalerSpriteTextureLuaStateClip05Root/CanvasLuaStateHUD_01_ui_normalbattle/root_battle",
+          "canvasRenderMode": "ScreenSpaceCamera",
+          "canvasWorldCameraName": "BattleHudCanvasScalerSpriteTextureLuaStateClip05Camera",
+          "canvasPlaneDistance": 4,
+          "canvasSortingOrder": 100,
+          "canvasScalerUiScaleMode": "",
+          "canvasScalerReferenceResolution": "",
+          "canvasScalerMatchWidthOrHeight": 0,
+          "canvasScalerScreenMatchMode": "",
+          "canvasRootRectSize": "640/-140"
+        },
+        {
+          "canvasPath": "BattleHudCanvasScalerSpriteTextureLuaStateClip05Root/CanvasLuaStateHUD_01_ui_normalbattle",
+          "canvasRenderMode": "ScreenSpaceCamera",
+          "canvasWorldCameraName": "BattleHudCanvasScalerSpriteTextureLuaStateClip05Camera",
+          "canvasPlaneDistance": 4,
+          "canvasSortingOrder": 100,
+          "canvasScalerUiScaleMode": "",
+          "canvasScalerReferenceResolution": "",
+          "canvasScalerMatchWidthOrHeight": 0,
+          "canvasScalerScreenMatchMode": "",
+          "canvasRootRectSize": "640/480"
+        },
+        {
+          "canvasPath": "BattleHudCanvasScalerSpriteTextureLuaStateClip05Root/CanvasLuaStateHUD_02_ui_battle3dui/root_battle/UI_BattleBoxPage/pop_Content/box_item",
+          "canvasRenderMode": "ScreenSpaceCamera",
+          "canvasWorldCameraName": "BattleHudCanvasScalerSpriteTextureLuaStateClip05Camera",
+          "canvasPlaneDistance": 4,
+          "canvasSortingOrder": 0,
+          "canvasScalerUiScaleMode": "",
+          "canvasScalerReferenceResolution": "",
+          "canvasScalerMatchWidthOrHeight": 0,
+          "canvasScalerScreenMatchMode": "",
+          "canvasRootRectSize": "80/80"
+        },
+        {
+          "canvasPath": "BattleHudCanvasScalerSpriteTextureLuaStateClip05Root/CanvasLuaStateHUD_03_ui_normalbattle_heroitem/HeadBar/imgHPBG",
+          "canvasRenderMode": "ScreenSpaceCamera",
+          "canvasWorldCameraName": "BattleHudCanvasScalerSpriteTextureLuaStateClip05Camera",
+          "canvasPlaneDistance": 4,
+          "canvasSortingOrder": 100,
+          "canvasScalerUiScaleMode": "",
+          "canvasScalerReferenceResolution": "",
+          "canvasScalerMatchWidthOrHeight": 0,
+          "canvasScalerScreenMatchMode": "",
+          "canvasRootRectSize": "79/12"
+        },
+        {
+          "canvasPath": "BattleHudCanvasScalerSpriteTextureLuaStateClip05Root/CanvasLuaStateHUD_03_ui_normalbattle_heroitem/imgMask",
+          "canvasRenderMode": "ScreenSpaceCamera",
+          "canvasWorldCameraName": "BattleHudCanvasScalerSpriteTextureLuaStateClip05Camera",
+          "canvasPlaneDistance": 4,
+          "canvasSortingOrder": 100,
+          "canvasScalerUiScaleMode": "",
+          "canvasScalerReferenceResolution": "",
+          "canvasScalerMatchWidthOrHeight": 0,
+          "canvasScalerScreenMatchMode": "",
+          "canvasRootRectSize": "127/119"
+        },
+        {
+          "canvasPath": "BattleHudCanvasScalerSpriteTextureLuaStateClip05Root/CanvasLuaStateHUD_06_ui_normalbattle_pause",
+          "canvasRenderMode": "ScreenSpaceCamera",
+          "canvasWorldCameraName": "BattleHudCanvasScalerSpriteTextureLuaStateClip05Camera",
+          "canvasPlaneDistance": 4,
+          "canvasSortingOrder": 100,
+          "canvasScalerUiScaleMode": "",
+          "canvasScalerReferenceResolution": "",
+          "canvasScalerMatchWidthOrHeight": 0,
+          "canvasScalerScreenMatchMode": "",
+          "canvasRootRectSize": "640/480"
+        },
+        {
+          "canvasPath": "BattleHudCanvasScalerSpriteTextureLuaStateClip05Root/CanvasLuaStateHUD_07_ui_normalbattle_skipview/bgBtn",
+          "canvasRenderMode": "ScreenSpaceCamera",
+          "canvasWorldCameraName": "BattleHudCanvasScalerSpriteTextureLuaStateClip05Camera",
+          "canvasPlaneDistance": 4,
+          "canvasSortingOrder": 100,
+          "canvasScalerUiScaleMode": "ConstantPixelSize",
+          "canvasScalerReferenceResolution": "800/600",
+          "canvasScalerMatchWidthOrHeight": 0,
+          "canvasScalerScreenMatchMode": "MatchWidthOrHeight",
+          "canvasRootRectSize": "640/480"
+        },
+        {
+          "canvasPath": "BattleHudCanvasScalerSpriteTextureLuaStateClip05Root/CanvasLuaStateHUD_07_ui_normalbattle_skipview",
+          "canvasRenderMode": "ScreenSpaceCamera",
+          "canvasWorldCameraName": "BattleHudCanvasScalerSpriteTextureLuaStateClip05Camera",
+          "canvasPlaneDistance": 4,
+          "canvasSortingOrder": 100,
+          "canvasScalerUiScaleMode": "ConstantPixelSize",
+          "canvasScalerReferenceResolution": "800/600",
+          "canvasScalerMatchWidthOrHeight": 0,
+          "canvasScalerScreenMatchMode": "MatchWidthOrHeight",
+          "canvasRootRectSize": "640/480"
+        },
+        {
+          "canvasPath": "BattleHudCanvasScalerSpriteTextureLuaStateClip05Root/CanvasLuaStateHUD_08_ui_testbattle",
+          "canvasRenderMode": "ScreenSpaceCamera",
+          "canvasWorldCameraName": "BattleHudCanvasScalerSpriteTextureLuaStateClip05Camera",
+          "canvasPlaneDistance": 4,
+          "canvasSortingOrder": 100,
+          "canvasScalerUiScaleMode": "",
+          "canvasScalerReferenceResolution": "",
+          "canvasScalerMatchWidthOrHeight": 0,
+          "canvasScalerScreenMatchMode": "",
+          "canvasRootRectSize": "640/480"
+        }
+      ],
+      "canvasFixes": [
+        {
+          "canvasPath": "BattleHudCanvasScalerSpriteTextureLuaStateClip05Root/CanvasLuaStateHUD_01_ui_normalbattle",
+          "beforeRenderMode": "ScreenSpaceOverlay",
+          "beforeWorldCameraName": "",
+          "beforePlaneDistance": 100,
+          "beforeSortingOrder": 0,
+          "afterRenderMode": "ScreenSpaceCamera",
+          "afterWorldCameraName": "BattleHudCanvasScalerSpriteTextureLuaStateClip05Camera",
+          "afterPlaneDistance": 4,
+          "afterSortingOrder": 100
+        },
+        {
+          "canvasPath": "BattleHudCanvasScalerSpriteTextureLuaStateClip05Root/CanvasLuaStateHUD_02_ui_battle3dui",
+          "beforeRenderMode": "WorldSpace",
+          "beforeWorldCameraName": "",
+          "beforePlaneDistance": 100,
+          "beforeSortingOrder": 0,
+          "afterRenderMode": "ScreenSpaceCamera",
+          "afterWorldCameraName": "BattleHudCanvasScalerSpriteTextureLuaStateClip05Camera",
+          "afterPlaneDistance": 4,
+          "afterSortingOrder": 100
+        },
+        {
+          "canvasPath": "BattleHudCanvasScalerSpriteTextureLuaStateClip05Root/CanvasLuaStateHUD_03_ui_normalbattle_heroitem/HeadBar/imgHPBG",
+          "beforeRenderMode": "WorldSpace",
+          "beforeWorldCameraName": "",
+          "beforePlaneDistance": 100,
+          "beforeSortingOrder": 0,
+          "afterRenderMode": "ScreenSpaceCamera",
+          "afterWorldCameraName": "BattleHudCanvasScalerSpriteTextureLuaStateClip05Camera",
+          "afterPlaneDistance": 4,
+          "afterSortingOrder": 100
+        },
+        {
+          "canvasPath": "BattleHudCanvasScalerSpriteTextureLuaStateClip05Root/CanvasLuaStateHUD_03_ui_normalbattle_heroitem/imgMask",
+          "beforeRenderMode": "WorldSpace",
+          "beforeWorldCameraName": "",
+          "beforePlaneDistance": 100,
+          "beforeSortingOrder": 0,
+          "afterRenderMode": "ScreenSpaceCamera",
+          "afterWorldCameraName": "BattleHudCanvasScalerSpriteTextureLuaStateClip05Camera",
+          "afterPlaneDistance": 4,
+          "afterSortingOrder": 100
+        },
+        {
+          "canvasPath": "BattleHudCanvasScalerSpriteTextureLuaStateClip05Root/CanvasLuaStateHUD_06_ui_normalbattle_pause",
+          "beforeRenderMode": "ScreenSpaceOverlay",
+          "beforeWorldCameraName": "",
+          "beforePlaneDistance": 100,
+          "beforeSortingOrder": 0,
+          "afterRenderMode": "ScreenSpaceCamera",
+          "afterWorldCameraName": "BattleHudCanvasScalerSpriteTextureLuaStateClip05Camera",
+          "afterPlaneDistance": 4,
+          "afterSortingOrder": 100
+        },
+        {
+          "canvasPath": "BattleHudCanvasScalerSpriteTextureLuaStateClip05Root/CanvasLuaStateHUD_07_ui_normalbattle_skipview",
+          "beforeRenderMode": "ScreenSpaceOverlay",
+          "beforeWorldCameraName": "",
+          "beforePlaneDistance": 100,
+          "beforeSortingOrder": 0,
+          "afterRenderMode": "ScreenSpaceCamera",
+          "afterWorldCameraName": "BattleHudCanvasScalerSpriteTextureLuaStateClip05Camera",
+          "afterPlaneDistance": 4,
+          "afterSortingOrder": 100
+        },
+        {
+          "canvasPath": "BattleHudCanvasScalerSpriteTextureLuaStateClip05Root/CanvasLuaStateHUD_07_ui_normalbattle_skipview/bgBtn",
+          "beforeRenderMode": "WorldSpace",
+          "beforeWorldCameraName": "",
+          "beforePlaneDistance": 100,
+          "beforeSortingOrder": 0,
+          "afterRenderMode": "ScreenSpaceCamera",
+          "afterWorldCameraName": "BattleHudCanvasScalerSpriteTextureLuaStateClip05Camera",
+          "afterPlaneDistance": 4,
+          "afterSortingOrder": 100
+        },
+        {
+          "canvasPath": "BattleHudCanvasScalerSpriteTextureLuaStateClip05Root/CanvasLuaStateHUD_08_ui_testbattle",
+          "beforeRenderMode": "ScreenSpaceOverlay",
+          "beforeWorldCameraName": "",
+          "beforePlaneDistance": 100,
+          "beforeSortingOrder": 0,
+          "afterRenderMode": "ScreenSpaceCamera",
+          "afterWorldCameraName": "BattleHudCanvasScalerSpriteTextureLuaStateClip05Camera",
+          "afterPlaneDistance": 4,
+          "afterSortingOrder": 100
+        }
+      ],
+      "clip05LuaActiveStateFixApplied": true,
+      "clip05LuaActiveStateFixCount": 246,
+      "uiNormalBattleLuaEvidence": [
+        {
+          "path": "girlswar_merged_extracted\\decoded\\xlua\\-1733260267463332757_UI_BgSet_security_xor_raw.lua",
+          "line": 120,
+          "text": "LuaUtils.SetImageSprite(btn_voselect.transform,\"UICommonOther/BTN_buzhen_01\")"
+        },
+        {
+          "path": "girlswar_merged_extracted\\decoded\\xlua\\-1733260267463332757_UI_BgSet_security_xor_raw.lua",
+          "line": 365,
+          "text": "i:LoadSpriteWithFullPath(e)"
+        },
+        {
+          "path": "girlswar_merged_extracted\\decoded\\xlua\\-1733260267463332757_UI_BgSet_security_xor_raw.lua",
+          "line": 368,
+          "text": "i:LoadSpriteWithFullPath(e)"
+        },
+        {
+          "path": "girlswar_merged_extracted\\decoded\\xlua\\-1733260267463332757_UI_BgSet_security_xor_raw.lua",
+          "line": 371,
+          "text": "i:LoadSpriteWithFullPath(e)"
+        },
+        {
+          "path": "girlswar_merged_extracted\\decoded\\xlua\\-1733260267463332757_UI_BgSet_security_xor_raw.lua",
+          "line": 374,
+          "text": "i:LoadSpriteWithFullPath(e)"
+        },
+        {
+          "path": "girlswar_merged_extracted\\decoded\\xlua\\-1733260267463332757_UI_BgSet_security_xor_raw.lua",
+          "line": 377,
+          "text": "i:LoadSpriteWithFullPath(e)"
+        },
+        {
+          "path": "girlswar_merged_extracted\\decoded\\xlua\\-1733260267463332757_UI_BgSet_security_xor_raw.lua",
+          "line": 408,
+          "text": "LuaUtils.SetImageSprite(e.BiComs[\"im_zhiye\"],UIUtil.GetProfessionIcon(a.profession),true)"
+        },
+        {
+          "path": "girlswar_merged_extracted\\decoded\\xlua\\-1733260267463332757_UI_BgSet_security_xor_raw.lua",
+          "line": 410,
+          "text": "LuaUtils.SetImageSprite(e.BiComs[\"im_pinzhi\"],t,true)"
+        },
+        {
+          "path": "girlswar_merged_extracted\\decoded\\xlua\\-1733260267463332757_UI_BgSet_security_xor_raw.lua",
+          "line": 418,
+          "text": "GameTools:SetImageSprite(e.BiComs[\"select_num_img\"],t,false)"
+        },
+        {
+          "path": "girlswar_merged_extracted\\decoded\\xlua\\-1733260267463332757_UI_BgSet_security_xor_raw.lua",
+          "line": 457,
+          "text": "LuaUtils.SetImageSprite(btn_voselect.transform,\"UIButton/BTN_main_underwear\")"
+        },
+        {
+          "path": "girlswar_merged_extracted\\decoded\\xlua\\-1733260267463332757_UI_BgSet_security_xor_raw.lua",
+          "line": 459,
+          "text": "LuaUtils.SetImageSprite(btn_voselect.transform,\"UIButton/BTN_main_normal\")"
+        },
+        {
+          "path": "girlswar_merged_extracted\\decoded\\xlua\\-1733260267463332757_UI_BgSet_security_xor_raw.lua",
+          "line": 461,
+          "text": "LuaUtils.SetImageSprite(btn_voselect.transform,\"UIButton/icon_hjjiez\")"
+        },
+        {
+          "path": "girlswar_merged_extracted\\decoded\\xlua\\-1733260267463332757_UI_BgSet_security_xor_raw.lua",
+          "line": 463,
+          "text": "LuaUtils.SetImageSprite(btn_voselect.transform,\"UIButton/icon_hjjiez2\")"
+        },
+        {
+          "path": "girlswar_merged_extracted\\decoded\\xlua\\-1733260267463332757_UI_BgSet_security_xor_raw.lua",
+          "line": 465,
+          "text": "LuaUtils.SetImageSprite(btn_voselect.transform,\"UIButton/BTN_main_chengzhu\")"
+        },
+        {
+          "path": "girlswar_merged_extracted\\decoded\\xlua\\-1733260267463332757_UI_BgSet_security_xor_raw.lua",
+          "line": 467,
+          "text": "GameTools:SetImageSprite(btn_voselect.transform,UIUtil.GetProfessionPath(n))"
+        },
+        {
+          "path": "girlswar_merged_extracted\\decoded\\xlua\\-1733260267463332757_UI_BgSet_security_xor_raw.lua",
+          "line": 470,
+          "text": "GameTools:SetImageSprite(btn_voselect.transform,\"UICommonOther/BTN_buzhen_04\")"
+        },
+        {
+          "path": "girlswar_merged_extracted\\decoded\\xlua\\-2389654533681329655_UI_GoldChange_security_xor_raw.lua",
+          "line": 41,
+          "text": "GameTools:SetImageSprite(im_vip,\"ActNormalFrame/T_shangdian\"..a)"
+        },
+        {
+          "path": "girlswar_merged_extracted\\decoded\\xlua\\-256044868408587883_UI_Adventure_Item_New_security_xor_raw.lua",
+          "line": 38,
+          "text": "GameTools:SetImageSprite(self.bg,e)"
+        },
+        {
+          "path": "girlswar_merged_extracted\\decoded\\xlua\\-256044868408587883_UI_Adventure_Item_New_security_xor_raw.lua",
+          "line": 120,
+          "text": "GameTools:SetImageSprite(e,t,true)"
+        },
+        {
+          "path": "girlswar_merged_extracted\\decoded\\xlua\\-5664616251800369604_UI_Adventure_RootView_security_xor_raw.lua",
+          "line": 221,
+          "text": "GameTools:SetImageSprite(i[\"im_zuanshi\"],e.icon,false)"
+        },
+        {
+          "path": "girlswar_merged_extracted\\decoded\\xlua\\-5664616251800369604_UI_Adventure_RootView_security_xor_raw.lua",
+          "line": 223,
+          "text": "GameTools:SetImageSprite(h[\"im_zuanshi\"],e.icon,false)"
+        },
+        {
+          "path": "girlswar_merged_extracted\\decoded\\xlua\\-6351603197391775840_UI_MainPage_security_xor_raw.lua",
+          "line": 873,
+          "text": "LuaUtils.SetImageSprite(a[\"img_icon\"],t.icon,false)"
+        },
+        {
+          "path": "girlswar_merged_extracted\\decoded\\xlua\\-6351603197391775840_UI_MainPage_security_xor_raw.lua",
+          "line": 1096,
+          "text": "LuaUtils.SetImageSprite(im_face_icon,string.format('UIMainInterface/%s',e.mainIconNew))"
+        },
+        {
+          "path": "girlswar_merged_extracted\\decoded\\xlua\\-6351603197391775840_UI_MainPage_security_xor_raw.lua",
+          "line": 1167,
+          "text": "GameTools:SetImageSprite(e,UIUtil.GetOfficerCapPath(PlayerMgr.PlayerInfo.officer))"
+        },
+        {
+          "path": "girlswar_merged_extracted\\decoded\\xlua\\-6351603197391775840_UI_MainPage_security_xor_raw.lua",
+          "line": 1316,
+          "text": "GameTools:SetImageSprite(im_icon_gold,e.icon,true)"
+        },
+        {
+          "path": "girlswar_merged_extracted\\decoded\\xlua\\-6351603197391775840_UI_MainPage_security_xor_raw.lua",
+          "line": 1320,
+          "text": "GameTools:SetImageSprite(im_icon_holy,t.icon,true)"
+        },
+        {
+          "path": "girlswar_merged_extracted\\decoded\\xlua\\-6351603197391775840_UI_MainPage_security_xor_raw.lua",
+          "line": 1329,
+          "text": "LuaUtils.SetImageSprite(e[\"wanfaBgImg\"],Y[1].bgImg)"
+        },
+        {
+          "path": "girlswar_merged_extracted\\decoded\\xlua\\-6351603197391775840_UI_MainPage_security_xor_raw.lua",
+          "line": 1332,
+          "text": "LuaUtils.SetImageSprite(e[\"wanfaBgImg\"],Y[2].bgImg)"
+        },
+        {
+          "path": "girlswar_merged_extracted\\decoded\\xlua\\-6351603197391775840_UI_MainPage_security_xor_raw.lua",
+          "line": 1357,
+          "text": "LuaUtils.SetImageSprite(e[\"wanfaBgImg\"],a)"
+        },
+        {
+          "path": "girlswar_merged_extracted\\decoded\\xlua\\-6351603197391775840_UI_MainPage_security_xor_raw.lua",
+          "line": 1380,
+          "text": "LuaUtils.SetImageSprite(t[\"wanfaBgImg\"],e.showIcon)"
+        },
+        {
+          "path": "girlswar_merged_extracted\\decoded\\xlua\\-6351603197391775840_UI_MainPage_security_xor_raw.lua",
+          "line": 1560,
+          "text": "GameTools:LoadSpriteWithFullPath(UI_bg,e,true)"
+        },
+        {
+          "path": "girlswar_merged_extracted\\decoded\\xlua\\-6351603197391775840_UI_MainPage_security_xor_raw.lua",
+          "line": 1591,
+          "text": "GameTools:SetImageSprite(im_lover,e,false)"
+        },
+        {
+          "path": "girlswar_merged_extracted\\decoded\\xlua\\-6351603197391775840_UI_MainPage_security_xor_raw.lua",
+          "line": 1592,
+          "text": "GameTools:SetImageSprite(im_lover2,e,false)"
+        },
+        {
+          "path": "girlswar_merged_extracted\\decoded\\xlua\\-6351603197391775840_UI_MainPage_security_xor_raw.lua",
+          "line": 2110,
+          "text": "GameTools:SetImageSprite(a[\"im_banner\"],h)"
+        },
+        {
+          "path": "girlswar_merged_extracted\\decoded\\xlua\\-6351603197391775840_UI_MainPage_security_xor_raw.lua",
+          "line": 2161,
+          "text": "GameTools:SetImageSprite(s,h)"
+        },
+        {
+          "path": "girlswar_merged_extracted\\decoded\\xlua\\-6351603197391775840_UI_MainPage_security_xor_raw.lua",
+          "line": 2310,
+          "text": "GameTools:SetImageSprite(t,e)"
+        },
+        {
+          "path": "girlswar_merged_extracted\\decoded\\xlua\\-6351603197391775840_UI_MainPage_security_xor_raw.lua",
+          "line": 2382,
+          "text": "GameTools:SetImageSprite(e,a,false)"
+        },
+        {
+          "path": "girlswar_merged_extracted\\decoded\\xlua\\-6351603197391775840_UI_MainPage_security_xor_raw.lua",
+          "line": 2385,
+          "text": "GameTools:SetImageSprite(p_chat_private_frame,e,false)"
+        },
+        {
+          "path": "girlswar_merged_extracted\\decoded\\xlua\\-6351603197391775840_UI_MainPage_security_xor_raw.lua",
+          "line": 2387,
+          "text": "GameTools:SetImageSprite(p_chat_private_frame,\"UIHeroHead/UIHeroHead_1/headframe_01\",false)"
+        },
+        {
+          "path": "girlswar_merged_extracted\\decoded\\xlua\\-6351603197391775840_UI_MainPage_security_xor_raw.lua",
+          "line": 2391,
+          "text": "GameTools:SetImageSprite(img_chat_type,\"UIMainInterface/chat_mainpage_title\"..e,true)"
+        },
+        {
+          "path": "girlswar_merged_extracted\\decoded\\xlua\\-6351603197391775840_UI_MainPage_security_xor_raw.lua",
+          "line": 2486,
+          "text": "LuaUtils.SetImageSprite(t[\"bg_name\"],h.bg,false)"
+        },
+        {
+          "path": "girlswar_merged_extracted\\decoded\\xlua\\-6351603197391775840_UI_MainPage_security_xor_raw.lua",
+          "line": 3111,
+          "text": "LuaUtils.SetImageSprite(im_temporary_buff_Icon,\"UIBuffIcon/buff_\"..tostring(e.heroBuffId),false)"
+        },
+        {
+          "path": "girlswar_merged_extracted\\decoded\\xlua\\-6351603197391775840_UI_MainPage_security_xor_raw.lua",
+          "line": 3112,
+          "text": "LuaUtils.SetImageSprite(im_temporary_buff_bg,\"UIMainInterface/bgyx_buffsmalldi_\"..tostring(e.heroBuffId),false)"
+        },
+        {
+          "path": "girlswar_merged_extracted\\decoded\\xlua\\-6814513053284016841_UI_Adventure_Item_security_xor_raw.lua",
+          "line": 37,
+          "text": "GameTools:SetImageSprite(self.icon,e)"
+        },
+        {
+          "path": "girlswar_merged_extracted\\decoded\\xlua\\-6814513053284016841_UI_Adventure_Item_security_xor_raw.lua",
+          "line": 141,
+          "text": "GameTools:SetImageSprite(e,t,true)"
+        },
+        {
+          "path": "girlswar_merged_extracted\\decoded\\xlua\\-6814513053284016841_UI_Adventure_Item_security_xor_raw.lua",
+          "line": 206,
+          "text": "GameTools:SetImageSprite(e,t,true)"
+        },
+        {
+          "path": "girlswar_merged_extracted\\decoded\\xlua\\-6814513053284016841_UI_Adventure_Item_security_xor_raw.lua",
+          "line": 217,
+          "text": "GameTools:SetImageSprite(e,a,true)"
+        },
+        {
+          "path": "girlswar_merged_extracted\\decoded\\xlua\\-6814513053284016841_UI_Adventure_Item_security_xor_raw.lua",
+          "line": 228,
+          "text": "GameTools:SetImageSprite(e,t,true)"
+        },
+        {
+          "path": "girlswar_merged_extracted\\decoded\\xlua\\2102292922432672894_UI_JingjiFrame_View_security_xor_raw.lua",
+          "line": 236,
+          "text": "GameTools:SetImageSprite(o,\"UIJingjiFrame/pvp_banner_zhengba\",false)"
+        },
+        {
+          "path": "girlswar_merged_extracted\\decoded\\xlua\\2102292922432672894_UI_JingjiFrame_View_security_xor_raw.lua",
+          "line": 237,
+          "text": "GameTools:SetImageSprite(i,\"UIJingjiFrame/pvp_banner_zhengba2\",true)"
+        },
+        {
+          "path": "girlswar_merged_extracted\\decoded\\xlua\\2102292922432672894_UI_JingjiFrame_View_security_xor_raw.lua",
+          "line": 246,
+          "text": "GameTools:SetImageSprite(o,\"UIJingjiFrame/pvp_banner_yanchang1\",false)"
+        },
+        {
+          "path": "girlswar_merged_extracted\\decoded\\xlua\\2102292922432672894_UI_JingjiFrame_View_security_xor_raw.lua",
+          "line": 249,
+          "text": "GameTools:SetImageSprite(o,\"UIJingjiFrame/pvp_banner_yanchang3\",false)"
+        },
+        {
+          "path": "girlswar_merged_extracted\\decoded\\xlua\\2102292922432672894_UI_JingjiFrame_View_security_xor_raw.lua",
+          "line": 253,
+          "text": "GameTools:SetImageSprite(i,\"UIJingjiFrame/pvp_banner_yanchang2\",true)"
+        },
+        {
+          "path": "girlswar_merged_extracted\\decoded\\xlua\\2102292922432672894_UI_JingjiFrame_View_security_xor_raw.lua",
+          "line": 345,
+          "text": "GameTools:SetImageSprite(r[\"im_zuanshi\"],e.icon,false)"
+        },
+        {
+          "path": "girlswar_merged_extracted\\decoded\\xlua\\2102292922432672894_UI_JingjiFrame_View_security_xor_raw.lua",
+          "line": 347,
+          "text": "GameTools:SetImageSprite(c[\"im_zuanshi\"],e.icon,false)"
+        },
+        {
+          "path": "girlswar_merged_extracted\\decoded\\xlua\\2308907811627836930_UI_HeadSet_security_xor_raw.lua",
+          "line": 202,
+          "text": "LuaUtils.SetImageSprite(img_lordCityJueSe,q..e.profile..\".png\")"
+        },
+        {
+          "path": "girlswar_merged_extracted\\decoded\\xlua\\2308907811627836930_UI_HeadSet_security_xor_raw.lua",
+          "line": 340,
+          "text": "GameTools:SetImageSprite(s,i,false)"
+        },
+        {
+          "path": "girlswar_merged_extracted\\decoded\\xlua\\2308907811627836930_UI_HeadSet_security_xor_raw.lua",
+          "line": 342,
+          "text": "GameTools:SetImageSprite(e.BiComs[\"im_kuang\"],i,false)"
+        },
+        {
+          "path": "girlswar_merged_extracted\\decoded\\xlua\\2308907811627836930_UI_HeadSet_security_xor_raw.lua",
+          "line": 372,
+          "text": "GameTools:SetImageSprite(e.BiComs[\"im_kuang\"],a,false)"
+        },
+        {
+          "path": "girlswar_merged_extracted\\decoded\\xlua\\2308907811627836930_UI_HeadSet_security_xor_raw.lua",
+          "line": 379,
+          "text": "GameTools:SetImageSprite(o,a,false)"
+        },
+        {
+          "path": "girlswar_merged_extracted\\decoded\\xlua\\2308907811627836930_UI_HeadSet_security_xor_raw.lua",
+          "line": 427,
+          "text": "LuaUtils.SetImageSprite(i,s,false)"
+        },
+        {
+          "path": "girlswar_merged_extracted\\decoded\\xlua\\2308907811627836930_UI_HeadSet_security_xor_raw.lua",
+          "line": 429,
+          "text": "GameTools:SetImageSprite(e.BiComs[\"im_kuang\"],i,false)"
+        },
+        {
+          "path": "girlswar_merged_extracted\\decoded\\xlua\\3368239574724641433_UI_GameFuncTipView_security_xor_raw.lua",
+          "line": 104,
+          "text": "GameTools:SetImageSprite(im_func,s,true)"
+        },
+        {
+          "path": "girlswar_merged_extracted\\decoded\\xlua\\412370137018619402_UI_SystemSet_security_xor_raw.lua",
+          "line": 131,
+          "text": "GameTools:SetImageSprite(im_vip_num,UIUtil.GetVipNumPath(PlayerMgr.PlayerInfo.vip))"
+        },
+        {
+          "path": "girlswar_merged_extracted\\decoded\\xlua\\412370137018619402_UI_SystemSet_security_xor_raw.lua",
+          "line": 160,
+          "text": "GameTools:SetImageSprite(e,UIUtil.GetOfficerCapPath(PlayerMgr.PlayerInfo.officer))"
+        },
+        {
+          "path": "girlswar_merged_extracted\\decoded\\xlua\\412370137018619402_UI_SystemSet_security_xor_raw.lua",
+          "line": 197,
+          "text": "GameTools:SetImageSprite(e,UIUtil.GetOfficerCapPath(PlayerMgr.PlayerInfo.officer))"
+        },
+        {
+          "path": "girlswar_merged_extracted\\decoded\\xlua\\9193796673221081139_UI_CostHCConfirm2_security_xor_raw.lua",
+          "line": 30,
+          "text": "GameTools:SetImageSprite(im_zuanshi,e.icon,false)"
+        },
+        {
+          "path": "girlswar_merged_extracted\\decoded\\xlua_guildmain_runtime_trace\\-1317774137068010965_UI_GuildTrials_BattleFail_View_security_xor_raw.lua",
+          "line": 106,
+          "text": "if GameEntry.UI:IsExists(UIFormId.UI_NormalBattleSkipView)then"
+        },
+        {
+          "path": "girlswar_merged_extracted\\decoded\\xlua_guildmain_runtime_trace\\-1317774137068010965_UI_GuildTrials_BattleFail_View_security_xor_raw.lua",
+          "line": 175,
+          "text": "LuaUtils.SetImageSprite(e.icon,string.format(\"UIJumpIcon/%s\",t[a].icon),true)"
+        },
+        {
+          "path": "girlswar_merged_extracted\\decoded\\xlua_guildmain_runtime_trace\\-1317774137068010965_UI_GuildTrials_BattleFail_View_security_xor_raw.lua",
+          "line": 202,
+          "text": "if GameEntry.UI:IsExists(UIFormId.UI_NormalBattleSkipView)then"
+        },
+        {
+          "path": "girlswar_merged_extracted\\decoded\\xlua_guildmain_runtime_trace\\-1317774137068010965_UI_GuildTrials_BattleFail_View_security_xor_raw.lua",
+          "line": 203,
+          "text": "GameTools.CloseUIForm(UIFormId.UI_NormalBattleSkipView)"
+        },
+        {
+          "path": "girlswar_merged_extracted\\decoded\\xlua_guildmain_runtime_trace\\-1425320301591923025_radar_task_tips_security_xor_raw.lua",
+          "line": 32,
+          "text": "LuaUtils.SetImageSprite(img_icon,e.buildImg)"
+        },
+        {
+          "path": "girlswar_merged_extracted\\decoded\\xlua_guildmain_runtime_trace\\-1922553641236455454_UI_GuildTrials_MonsDesc_View_security_xor_raw.lua",
+          "line": 145,
+          "text": "LuaUtils.SetImageSprite(monsDiImg,i[2][1],false)"
+        },
+        {
+          "path": "girlswar_merged_extracted\\decoded\\xlua_guildmain_runtime_trace\\-1922553641236455454_UI_GuildTrials_MonsDesc_View_security_xor_raw.lua",
+          "line": 146,
+          "text": "LuaUtils.SetImageSprite(monsTypeImg,i[2][2],false)"
+        },
+        {
+          "path": "girlswar_merged_extracted\\decoded\\xlua_guildmain_runtime_trace\\-1922553641236455454_UI_GuildTrials_MonsDesc_View_security_xor_raw.lua",
+          "line": 148,
+          "text": "LuaUtils.SetImageSprite(monsDiImg,i[1][1],false)"
+        },
+        {
+          "path": "girlswar_merged_extracted\\decoded\\xlua_guildmain_runtime_trace\\-1922553641236455454_UI_GuildTrials_MonsDesc_View_security_xor_raw.lua",
+          "line": 149,
+          "text": "LuaUtils.SetImageSprite(monsTypeImg,i[1][2],false)"
+        },
+        {
+          "path": "girlswar_merged_extracted\\decoded\\xlua_guildmain_runtime_trace\\-1922553641236455454_UI_GuildTrials_MonsDesc_View_security_xor_raw.lua",
+          "line": 241,
+          "text": "LuaUtils.SetImageSprite(selfEnv[\"itemImg\"..e],t.iconSmall,false)"
+        },
+        {
+          "path": "girlswar_merged_extracted\\decoded\\xlua_guildmain_runtime_trace\\-2010577951416258408_UI_GuildTrials_BattleSuc_View_security_xor_raw.lua",
+          "line": 71,
+          "text": "if GameEntry.UI:IsExists(UIFormId.UI_NormalBattleSkipView)then"
+        },
+        {
+          "path": "girlswar_merged_extracted\\decoded\\xlua_guildmain_runtime_trace\\-2010577951416258408_UI_GuildTrials_BattleSuc_View_security_xor_raw.lua",
+          "line": 113,
+          "text": "LuaUtils.SetImageSprite(t,e.starHeroName)"
+        },
+        {
+          "path": "girlswar_merged_extracted\\decoded\\xlua_guildmain_runtime_trace\\-3179589984429850782_UI_GuildInviteView_security_xor_raw.lua",
+          "line": 58,
+          "text": "GameTools:SetImageSprite(bg_huizhang,ModulesInit.GuildMgr:getGuildIconBg(e.bg),false)"
+        }
+      ],
+      "capture": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_battle_unity\\Assets\\RestoreCaptures\\battle_hud\\BattleHudCanvasScalerSpriteTextureLuaStateClip05_1680x720.png",
+      "contactSheet": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_24_CANVAS_SCALER_SPRITE_TEXTURE_LUA_STATE_CLIP05_CONTACT_SHEET.jpg",
+      "visibleSpriteTextureSheet": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_24_VISIBLE_HUD_SPRITE_TEXTURE_SHEET.jpg",
+      "componentsCsv": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_battle_unity\\Assets\\RestoreData\\battle\\BATTLE_HUD_CANVAS_SCALER_SPRITE_TEXTURE_LUA_ACTIVE_STATE_CLIP05_COMPONENTS.csv",
+      "unityJson": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_battle_unity\\Assets\\RestoreData\\battle\\BATTLE_HUD_CANVAS_SCALER_SPRITE_TEXTURE_LUA_ACTIVE_STATE_CLIP05.json",
+      "nextBlocker": "BATTLE_25_BATTLE_HUD_SPRITE_ATLAS_TEXTURE_RUNTIME_BINDING"
+    }
+  },
+  "luaEvidenceHits": [
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-6782040550434736853_BattleTreasureWord_security_xor_raw.lua",
+      "line": 27,
+      "text": "LuaUtils.SetImageSprite(t[\"img_icon\"],a.icon,true)"
+    },
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-6782040550434736853_BattleTreasureWord_security_xor_raw.lua",
+      "line": 28,
+      "text": "LuaUtils.SetImageSprite(t[\"img_icon_bg\"],i:GetTreasureBattleBg(a.color),true)"
+    },
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-6782040550434736853_BattleTreasureWord_security_xor_raw.lua",
+      "line": 29,
+      "text": "LuaUtils.SetImageSprite(t[\"img_name\"],a.battleName,true)"
+    },
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\1757236381232446780_BattleHitNum_security_xor_raw.lua",
+      "line": 56,
+      "text": "LuaUtils.SetImageSprite(e,o,true)"
+    },
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\191332877364712173_BattleUtil_security_xor_raw.lua",
+      "line": 1898,
+      "text": "LuaUtils.SetImageSprite(t[\"im_touxiang\"],\"UIHeroHead/\"..e.DTmodelRow.head,false)"
+    },
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\191332877364712173_BattleUtil_security_xor_raw.lua",
+      "line": 1900,
+      "text": "LuaUtils.SetImageSprite(t[\"im_quality\"],string.format(\"UICommonOther/%s\",CardQuailtyFont[e.DTMonsterRow.star]),true)"
+    },
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\191332877364712173_BattleUtil_security_xor_raw.lua",
+      "line": 1902,
+      "text": "LuaUtils.SetImageSprite(t[\"im_quality\"],string.format(\"UICommonOther/%s\",CardQuailtyFont[e.DTHeroRow.star]),true)"
+    },
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\191332877364712173_BattleUtil_security_xor_raw.lua",
+      "line": 1908,
+      "text": "LuaUtils.SetImageSprite(t[\"im_frame\"],string.format(\"UICommonOther/%s\",a),true)"
+    },
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\191332877364712173_BattleUtil_security_xor_raw.lua",
+      "line": 1909,
+      "text": "LuaUtils.SetImageSprite(t[\"im_occupation\"],string.format(\"UICommonOther/%s\",ProfessionIcons[e.profession]),true)"
+    },
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\191332877364712173_BattleUtil_security_xor_raw.lua",
+      "line": 1931,
+      "text": "LuaUtils.SetImageSprite(e[\"buff_icon\"],string.format(\"UIBuffIcon/%s\",a.buffIcon),false)"
+    },
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\191332877364712173_BattleUtil_security_xor_raw.lua",
+      "line": 1952,
+      "text": "LuaUtils.SetImageSprite(t[\"buff_icon\"],string.format(\"UIBuffIcon/%s\",a),false)"
+    },
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battlepreview\\8361315881198412209_UI_BattlePreviewTalk_security_xor_raw.lua",
+      "line": 146,
+      "text": "LuaUtils.SetImageSprite(talk_bg,e.talkBg)"
+    },
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battlepreview\\8361315881198412209_UI_BattlePreviewTalk_security_xor_raw.lua",
+      "line": 227,
+      "text": "LuaUtils.SetImageSprite(talk_bg,e.talkBg)"
+    },
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_procedure\\-3424355311143813575_ProcedureNormalBattle_security_xor_raw.lua",
+      "line": 149,
+      "text": "e.showOperMenu=true"
+    },
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_procedure\\-3424355311143813575_ProcedureNormalBattle_security_xor_raw.lua",
+      "line": 216,
+      "text": "e.showOperMenu=t"
+    },
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_procedure\\-3424355311143813575_ProcedureNormalBattle_security_xor_raw.lua",
+      "line": 1881,
+      "text": "GameEntry.UI:OpenUIForm(e.IsBattleTest and UIFormId.UI_TestBattle or UIFormId.UI_NormalBattle,{showOperMenu=e.showOperMenu})"
+    },
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_procedure\\-3424355311143813575_ProcedureNormalBattle_security_xor_raw.lua",
+      "line": 6516,
+      "text": "GameTools.CloseUIForm(e.IsBattleTest and UIFormId.UI_TestBattle or UIFormId.UI_NormalBattle)"
+    },
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_procedure\\-3424355311143813575_ProcedureNormalBattle_security_xor_raw.lua",
+      "line": 6519,
+      "text": "if GameEntry.UI:IsExists(UIFormId.UI_NormalBattleSkipView)and e.GetIsAutoCloseSkipView()then"
+    },
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_procedure\\-3424355311143813575_ProcedureNormalBattle_security_xor_raw.lua",
+      "line": 6520,
+      "text": "GameTools.CloseUIForm(UIFormId.UI_NormalBattleSkipView)"
+    },
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_procedure\\-3424355311143813575_ProcedureNormalBattle_security_xor_raw.lua",
+      "line": 6541,
+      "text": "GameTools.CloseUIForm(e.IsBattleTest and UIFormId.UI_TestBattle or UIFormId.UI_NormalBattle)"
+    },
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua\\-1733260267463332757_UI_BgSet_security_xor_raw.lua",
+      "line": 120,
+      "text": "LuaUtils.SetImageSprite(btn_voselect.transform,\"UICommonOther/BTN_buzhen_01\")"
+    },
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua\\-1733260267463332757_UI_BgSet_security_xor_raw.lua",
+      "line": 365,
+      "text": "i:LoadSpriteWithFullPath(e)"
+    },
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua\\-1733260267463332757_UI_BgSet_security_xor_raw.lua",
+      "line": 368,
+      "text": "i:LoadSpriteWithFullPath(e)"
+    },
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua\\-1733260267463332757_UI_BgSet_security_xor_raw.lua",
+      "line": 371,
+      "text": "i:LoadSpriteWithFullPath(e)"
+    },
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua\\-1733260267463332757_UI_BgSet_security_xor_raw.lua",
+      "line": 374,
+      "text": "i:LoadSpriteWithFullPath(e)"
+    },
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua\\-1733260267463332757_UI_BgSet_security_xor_raw.lua",
+      "line": 377,
+      "text": "i:LoadSpriteWithFullPath(e)"
+    },
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua\\-1733260267463332757_UI_BgSet_security_xor_raw.lua",
+      "line": 408,
+      "text": "LuaUtils.SetImageSprite(e.BiComs[\"im_zhiye\"],UIUtil.GetProfessionIcon(a.profession),true)"
+    },
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua\\-1733260267463332757_UI_BgSet_security_xor_raw.lua",
+      "line": 410,
+      "text": "LuaUtils.SetImageSprite(e.BiComs[\"im_pinzhi\"],t,true)"
+    },
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua\\-1733260267463332757_UI_BgSet_security_xor_raw.lua",
+      "line": 418,
+      "text": "GameTools:SetImageSprite(e.BiComs[\"select_num_img\"],t,false)"
+    },
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua\\-1733260267463332757_UI_BgSet_security_xor_raw.lua",
+      "line": 457,
+      "text": "LuaUtils.SetImageSprite(btn_voselect.transform,\"UIButton/BTN_main_underwear\")"
+    },
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua\\-1733260267463332757_UI_BgSet_security_xor_raw.lua",
+      "line": 459,
+      "text": "LuaUtils.SetImageSprite(btn_voselect.transform,\"UIButton/BTN_main_normal\")"
+    },
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua\\-1733260267463332757_UI_BgSet_security_xor_raw.lua",
+      "line": 461,
+      "text": "LuaUtils.SetImageSprite(btn_voselect.transform,\"UIButton/icon_hjjiez\")"
+    },
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua\\-1733260267463332757_UI_BgSet_security_xor_raw.lua",
+      "line": 463,
+      "text": "LuaUtils.SetImageSprite(btn_voselect.transform,\"UIButton/icon_hjjiez2\")"
+    },
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua\\-1733260267463332757_UI_BgSet_security_xor_raw.lua",
+      "line": 465,
+      "text": "LuaUtils.SetImageSprite(btn_voselect.transform,\"UIButton/BTN_main_chengzhu\")"
+    },
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua\\-1733260267463332757_UI_BgSet_security_xor_raw.lua",
+      "line": 467,
+      "text": "GameTools:SetImageSprite(btn_voselect.transform,UIUtil.GetProfessionPath(n))"
+    },
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua\\-1733260267463332757_UI_BgSet_security_xor_raw.lua",
+      "line": 470,
+      "text": "GameTools:SetImageSprite(btn_voselect.transform,\"UICommonOther/BTN_buzhen_04\")"
+    },
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua\\-2389654533681329655_UI_GoldChange_security_xor_raw.lua",
+      "line": 41,
+      "text": "GameTools:SetImageSprite(im_vip,\"ActNormalFrame/T_shangdian\"..a)"
+    },
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua\\-256044868408587883_UI_Adventure_Item_New_security_xor_raw.lua",
+      "line": 38,
+      "text": "GameTools:SetImageSprite(self.bg,e)"
+    },
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua\\-256044868408587883_UI_Adventure_Item_New_security_xor_raw.lua",
+      "line": 120,
+      "text": "GameTools:SetImageSprite(e,t,true)"
+    },
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua\\-5664616251800369604_UI_Adventure_RootView_security_xor_raw.lua",
+      "line": 221,
+      "text": "GameTools:SetImageSprite(i[\"im_zuanshi\"],e.icon,false)"
+    },
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua\\-5664616251800369604_UI_Adventure_RootView_security_xor_raw.lua",
+      "line": 223,
+      "text": "GameTools:SetImageSprite(h[\"im_zuanshi\"],e.icon,false)"
+    },
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua\\-6351603197391775840_UI_MainPage_security_xor_raw.lua",
+      "line": 873,
+      "text": "LuaUtils.SetImageSprite(a[\"img_icon\"],t.icon,false)"
+    },
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua\\-6351603197391775840_UI_MainPage_security_xor_raw.lua",
+      "line": 1096,
+      "text": "LuaUtils.SetImageSprite(im_face_icon,string.format('UIMainInterface/%s',e.mainIconNew))"
+    },
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua\\-6351603197391775840_UI_MainPage_security_xor_raw.lua",
+      "line": 1167,
+      "text": "GameTools:SetImageSprite(e,UIUtil.GetOfficerCapPath(PlayerMgr.PlayerInfo.officer))"
+    },
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua\\-6351603197391775840_UI_MainPage_security_xor_raw.lua",
+      "line": 1316,
+      "text": "GameTools:SetImageSprite(im_icon_gold,e.icon,true)"
+    },
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua\\-6351603197391775840_UI_MainPage_security_xor_raw.lua",
+      "line": 1320,
+      "text": "GameTools:SetImageSprite(im_icon_holy,t.icon,true)"
+    },
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua\\-6351603197391775840_UI_MainPage_security_xor_raw.lua",
+      "line": 1329,
+      "text": "LuaUtils.SetImageSprite(e[\"wanfaBgImg\"],Y[1].bgImg)"
+    },
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua\\-6351603197391775840_UI_MainPage_security_xor_raw.lua",
+      "line": 1332,
+      "text": "LuaUtils.SetImageSprite(e[\"wanfaBgImg\"],Y[2].bgImg)"
+    },
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua\\-6351603197391775840_UI_MainPage_security_xor_raw.lua",
+      "line": 1357,
+      "text": "LuaUtils.SetImageSprite(e[\"wanfaBgImg\"],a)"
+    },
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua\\-6351603197391775840_UI_MainPage_security_xor_raw.lua",
+      "line": 1380,
+      "text": "LuaUtils.SetImageSprite(t[\"wanfaBgImg\"],e.showIcon)"
+    },
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua\\-6351603197391775840_UI_MainPage_security_xor_raw.lua",
+      "line": 1560,
+      "text": "GameTools:LoadSpriteWithFullPath(UI_bg,e,true)"
+    },
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua\\-6351603197391775840_UI_MainPage_security_xor_raw.lua",
+      "line": 1591,
+      "text": "GameTools:SetImageSprite(im_lover,e,false)"
+    },
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua\\-6351603197391775840_UI_MainPage_security_xor_raw.lua",
+      "line": 1592,
+      "text": "GameTools:SetImageSprite(im_lover2,e,false)"
+    },
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua\\-6351603197391775840_UI_MainPage_security_xor_raw.lua",
+      "line": 2110,
+      "text": "GameTools:SetImageSprite(a[\"im_banner\"],h)"
+    },
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua\\-6351603197391775840_UI_MainPage_security_xor_raw.lua",
+      "line": 2161,
+      "text": "GameTools:SetImageSprite(s,h)"
+    },
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua\\-6351603197391775840_UI_MainPage_security_xor_raw.lua",
+      "line": 2310,
+      "text": "GameTools:SetImageSprite(t,e)"
+    },
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua\\-6351603197391775840_UI_MainPage_security_xor_raw.lua",
+      "line": 2382,
+      "text": "GameTools:SetImageSprite(e,a,false)"
+    },
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua\\-6351603197391775840_UI_MainPage_security_xor_raw.lua",
+      "line": 2385,
+      "text": "GameTools:SetImageSprite(p_chat_private_frame,e,false)"
+    },
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua\\-6351603197391775840_UI_MainPage_security_xor_raw.lua",
+      "line": 2387,
+      "text": "GameTools:SetImageSprite(p_chat_private_frame,\"UIHeroHead/UIHeroHead_1/headframe_01\",false)"
+    },
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua\\-6351603197391775840_UI_MainPage_security_xor_raw.lua",
+      "line": 2391,
+      "text": "GameTools:SetImageSprite(img_chat_type,\"UIMainInterface/chat_mainpage_title\"..e,true)"
+    },
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua\\-6351603197391775840_UI_MainPage_security_xor_raw.lua",
+      "line": 2486,
+      "text": "LuaUtils.SetImageSprite(t[\"bg_name\"],h.bg,false)"
+    },
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua\\-6351603197391775840_UI_MainPage_security_xor_raw.lua",
+      "line": 3111,
+      "text": "LuaUtils.SetImageSprite(im_temporary_buff_Icon,\"UIBuffIcon/buff_\"..tostring(e.heroBuffId),false)"
+    },
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua\\-6351603197391775840_UI_MainPage_security_xor_raw.lua",
+      "line": 3112,
+      "text": "LuaUtils.SetImageSprite(im_temporary_buff_bg,\"UIMainInterface/bgyx_buffsmalldi_\"..tostring(e.heroBuffId),false)"
+    },
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua\\-6814513053284016841_UI_Adventure_Item_security_xor_raw.lua",
+      "line": 37,
+      "text": "GameTools:SetImageSprite(self.icon,e)"
+    },
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua\\-6814513053284016841_UI_Adventure_Item_security_xor_raw.lua",
+      "line": 141,
+      "text": "GameTools:SetImageSprite(e,t,true)"
+    },
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua\\-6814513053284016841_UI_Adventure_Item_security_xor_raw.lua",
+      "line": 206,
+      "text": "GameTools:SetImageSprite(e,t,true)"
+    },
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua\\-6814513053284016841_UI_Adventure_Item_security_xor_raw.lua",
+      "line": 217,
+      "text": "GameTools:SetImageSprite(e,a,true)"
+    },
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua\\-6814513053284016841_UI_Adventure_Item_security_xor_raw.lua",
+      "line": 228,
+      "text": "GameTools:SetImageSprite(e,t,true)"
+    },
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua\\2102292922432672894_UI_JingjiFrame_View_security_xor_raw.lua",
+      "line": 236,
+      "text": "GameTools:SetImageSprite(o,\"UIJingjiFrame/pvp_banner_zhengba\",false)"
+    },
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua\\2102292922432672894_UI_JingjiFrame_View_security_xor_raw.lua",
+      "line": 237,
+      "text": "GameTools:SetImageSprite(i,\"UIJingjiFrame/pvp_banner_zhengba2\",true)"
+    },
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua\\2102292922432672894_UI_JingjiFrame_View_security_xor_raw.lua",
+      "line": 246,
+      "text": "GameTools:SetImageSprite(o,\"UIJingjiFrame/pvp_banner_yanchang1\",false)"
+    },
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua\\2102292922432672894_UI_JingjiFrame_View_security_xor_raw.lua",
+      "line": 249,
+      "text": "GameTools:SetImageSprite(o,\"UIJingjiFrame/pvp_banner_yanchang3\",false)"
+    },
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua\\2102292922432672894_UI_JingjiFrame_View_security_xor_raw.lua",
+      "line": 253,
+      "text": "GameTools:SetImageSprite(i,\"UIJingjiFrame/pvp_banner_yanchang2\",true)"
+    },
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua\\2102292922432672894_UI_JingjiFrame_View_security_xor_raw.lua",
+      "line": 345,
+      "text": "GameTools:SetImageSprite(r[\"im_zuanshi\"],e.icon,false)"
+    },
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua\\2102292922432672894_UI_JingjiFrame_View_security_xor_raw.lua",
+      "line": 347,
+      "text": "GameTools:SetImageSprite(c[\"im_zuanshi\"],e.icon,false)"
+    },
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua\\2308907811627836930_UI_HeadSet_security_xor_raw.lua",
+      "line": 202,
+      "text": "LuaUtils.SetImageSprite(img_lordCityJueSe,q..e.profile..\".png\")"
+    },
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua\\2308907811627836930_UI_HeadSet_security_xor_raw.lua",
+      "line": 340,
+      "text": "GameTools:SetImageSprite(s,i,false)"
+    },
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua\\2308907811627836930_UI_HeadSet_security_xor_raw.lua",
+      "line": 342,
+      "text": "GameTools:SetImageSprite(e.BiComs[\"im_kuang\"],i,false)"
+    },
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua\\2308907811627836930_UI_HeadSet_security_xor_raw.lua",
+      "line": 372,
+      "text": "GameTools:SetImageSprite(e.BiComs[\"im_kuang\"],a,false)"
+    },
+    {
+      "file": "girlswar_merged_extracted\\decoded\\xlua\\2308907811627836930_UI_HeadSet_security_xor_raw.lua",
+      "line": 379,
+      "text": "GameTools:SetImageSprite(o,a,false)"
+    }
+  ],
+  "nextBlocker": "BATTLE_25_RESOLVE_SPRITE_TEXTURE_ATLAS_AND_UI_NORMALBATTLE_RUNTIME_BINDING"
+}

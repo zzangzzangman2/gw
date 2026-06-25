@@ -271,3 +271,138 @@
   - Runtime API evidence exists for `YouYouImage`, `UIMask`, `LuaUtils.SetImageSprite`, `SetImageColor`, `SetCanvasAlpha`, `LoadSpriteWithFullPath`, and `LoadMaterialAsset`.
 - Next UI blocker:
   - `GuildMain custom component/type reconstruction for YouYouImage and missing MonoBehaviour bindings`.
+
+## Update 2026-06-25 19:15 KST
+
+### Battle Correction
+
+- User-visible battle HUD capture was rejected as invalid:
+  - it shows placeholder/debug/path-style text and large white/dark fallback blocks
+  - it does not match `C:\Users\godho\Downloads\플레이.mp4` normal battle sequence around 486s
+  - it is not the original HP/VS, bottom actor/skill-card, or right-control HUD
+- BATTLE_22 is trace-only and must not be treated as a visual success:
+  - report: `reports\battle\BATTLE_HUD_SPRITE_PPTR_DEEP_TRACE_RUNTIME_LUA_BINDING_RESULT.md`
+  - verdict: `아직 원본 전투 HUD 아님`
+  - `visual_status=failed_missing_runtime_binding`
+  - `matches_clip05_static_hud_layout=false`
+  - `camera_visible_original_hud=false`
+  - `placeholder_block_visible=true`
+  - `visible_original_sprite_count=0`
+  - `visible_placeholder_block_count=16`
+  - `fixApplied=false`
+- Main cause from BATTLE_22:
+  - `resolved_external_candidate_not_loaded_runtime=207`
+  - `external_bundle_not_loaded=79`
+  - `font_bundle_missing=62`
+  - `custom_youyouimage_binding=59`
+  - `runtime_lua_set_image_sprite=16`
+- High-priority missing external dependency:
+  - `im_bg_left` / `im_bg_right`
+  - PPtr `6:-8109585734443225392`
+  - external bundle `download/artsources/uispriteres/uicommonother.assetbundle`
+- BATTLE_23 was sent to the battle thread:
+  - `BATTLE_23_LOAD_MISSING_HUD_EXTERNAL_DEPENDENCIES_AND_VALIDATE_CLIP05_VISUAL`
+  - final capture must fail if any debug/evidence/path/placeholder label is visible
+  - video gate must use the play.mp4 486s normal battle sequence, not a single screenshot only
+
+### UI Latest
+
+- UI109 completed and was visually checked:
+  - report: `reports\maininterface\MAININTERFACE_GUILDMAIN_CUSTOM_COMPONENT_TYPE_RECONSTRUCTION_RESULT.md`
+  - capture: `girlswar_maininterface_unity\Assets\RestoreCaptures\guildmain_custom_component_type_reconstruction\UI_GuildMain_1680x720.png`
+  - tool: `_restore_tools\109_RECONSTRUCT_GUILDMAIN_CUSTOM_COMPONENT_TYPES_YOUYOUIMAGE_UIMASK.cmd`
+  - root shortcut: `109_RECONSTRUCT_GUILDMAIN_CUSTOM_COMPONENT_TYPES_YOUYOUIMAGE_UIMASK.cmd`
+- Verdict: not normal.
+- The capture still shows a very large white panel and Korean text fallback boxes.
+- Important numbers:
+  - missing script objects: `881 -> 170`
+  - missing script reduction: `711`
+  - `YouYou.YouYouImage` instantiated: `640`
+  - `LuaComponentBinder.LuaComBinder` instantiated: `58`
+  - whiteish visible ratio: `0.8171147704124451 -> 0.8221056461334229`
+  - large white visible Images: `19 -> 21`
+  - white no-sprite Images: `78 -> 444`
+  - missing Image sprites: `152 -> 518`
+  - click validation: `24 / 24 / 0 / 24`
+- Interpretation:
+  - custom component type names are now largely resolved
+  - top white blockers have `missing scripts=0`
+  - the remaining blocker is not simply missing C# type names
+  - next UI blocker is `GuildMain Lua runtime harness for UI_GuildMainView.OnOpen data/layout initialization`
+
+## Update 2026-06-25 19:05 KST
+
+### Battle BATTLE_23 Result
+
+- BATTLE_23 completed and was visually checked against `C:\Users\godho\Downloads\플레이.mp4` around 486s.
+- Verdict: `아직 원본 전투 HUD 아님`.
+- Outputs:
+  - report: `reports\battle\BATTLE_HUD_EXTERNAL_DEPENDENCY_LOAD_CLIP05_VISUAL_RESULT.md`
+  - JSON: `reports\battle\BATTLE_HUD_EXTERNAL_DEPENDENCY_LOAD_CLIP05_VISUAL_RESULT.json`
+  - capture: `girlswar_battle_unity\Assets\RestoreCaptures\battle_hud\BattleHudExternalDependencyLoadClip05_1680x720.png`
+  - contact sheet: `reports\battle\BATTLE_23_EXTERNAL_DEPENDENCY_LOAD_CLIP05_CONTACT_SHEET.jpg`
+  - reference sequence: `reports\battle\BATTLE_23_PLAY_VIDEO_NORMAL_BATTLE_REFERENCE_486S_SEQUENCE.jpg`
+- Important numbers:
+  - external dependency bundles loaded: `8 / 8`
+  - visible original sprite candidates: `174`
+  - visible placeholder block count: `0`
+  - active graphic count: `275`
+  - capture nearWhiteRatio: `0.6486904761904762`
+  - `matches_clip05_static_hud_layout=false`
+  - `camera_visible_original_hud=false`
+- Visual reason:
+  - the top reference sequence shows the real moving battle screen, background, characters, bottom skill cards, and right-side controls
+  - the BATTLE_23 capture still shows large white HUD blocks and a dark temporary-looking panel
+  - this is not a usable final battle HUD capture
+- Refined diagnosis:
+  - inactive/template roots are already being kept inactive by the BATTLE_23 Editor probe
+  - the large active offenders are inside `ui_normalbattle`, especially `root_opra/root_buff/im_bg_left`, `im_bg_right`, and `root_buff_left/right/im_bg`
+  - `btn_preivew_touch` is full-screen but alpha `0`, so it is not the white visual cause
+  - sprite names are resolving, but texture/atlas/canvas rendering is still not visually correct
+
+### Battle BATTLE_24 Sent
+
+- Next battle task sent to the battle thread:
+  - `BATTLE_24_RESTORE_BATTLE_HUD_CANVAS_SCALER_SPRITE_TEXTURE_AND_LUA_ACTIVE_STATE_CLIP05`
+- Required focus:
+  - original Canvas / CanvasScaler / render mode / resolution basis
+  - actual `Sprite.texture`, sprite rect, atlas texture, and visible sprite sheet
+  - `ProcedureNormalBattle.OnBattleUILoadComplete`, `SetLeftInfo`, `SetRightInfo`, `OnShowHeadBar` Lua active-state and runtime image assignment
+  - no debug/path/evidence/placeholder text in final capture
+- Required BATTLE_24 outputs:
+  - root CMD: `BATTLE_24_RESTORE_BATTLE_HUD_CANVAS_SCALER_SPRITE_TEXTURE_AND_LUA_ACTIVE_STATE_CLIP05.cmd`
+  - tool CMD: `_restore_tools\BATTLE_24_RESTORE_BATTLE_HUD_CANVAS_SCALER_SPRITE_TEXTURE_AND_LUA_ACTIVE_STATE_CLIP05.cmd`
+  - report: `reports\battle\BATTLE_HUD_CANVAS_SCALER_SPRITE_TEXTURE_LUA_ACTIVE_STATE_CLIP05_RESULT.md`
+  - capture: `girlswar_battle_unity\Assets\RestoreCaptures\battle_hud\BattleHudCanvasScalerSpriteTextureLuaStateClip05_1680x720.png`
+  - contact sheet: `reports\battle\BATTLE_24_CANVAS_SCALER_SPRITE_TEXTURE_LUA_STATE_CLIP05_CONTACT_SHEET.jpg`
+  - visible sprite sheet: `reports\battle\BATTLE_24_VISIBLE_HUD_SPRITE_TEXTURE_SHEET.jpg`
+
+## Update 2026-06-25 19:19 KST
+
+### Battle BATTLE_25 Result
+
+- User rejected the previous battle capture as invalid; confirmed: it was not a normal battle UI.
+- BATTLE_25 rebounded extracted original PNG sprite slices from `girlswar_merged_extracted\indexes\unity_images.csv` back onto matching HUD `Image.sprite` names.
+- Verdict: `아직 원본 전투 HUD 아님`.
+- Important improvement:
+  - extracted sprite texture bind count: `290`
+  - active visible extracted sprite bindings: `46`
+  - visible sprite texture blank count: `46 -> 0`
+  - large active blank-texture rows: `6 -> 0`
+  - nearWhiteRatio: `0.1421164021164021 -> 0.0002777777777777778`
+- Still failing against `C:\Users\godho\Downloads\플레이.mp4` clip05 around 486s:
+  - top/right HUD pieces are now partially original
+  - battle background is missing
+  - moving actors are missing
+  - bottom actor/skill-card UI is missing
+  - center dark grid/panel is not accepted as real battle gameplay
+- Outputs:
+  - root CMD: `BATTLE_25_REBIND_BATTLE_HUD_EXTRACTED_SPRITE_ATLAS_TEXTURES_AND_VALIDATE_CLIP05.cmd`
+  - tool CMD: `_restore_tools\BATTLE_25_REBIND_BATTLE_HUD_EXTRACTED_SPRITE_ATLAS_TEXTURES_AND_VALIDATE_CLIP05.cmd`
+  - report: `reports\battle\BATTLE_HUD_SPRITE_ATLAS_TEXTURE_RUNTIME_BINDING_CLIP05_RESULT.md`
+  - JSON: `reports\battle\BATTLE_HUD_SPRITE_ATLAS_TEXTURE_RUNTIME_BINDING_CLIP05_RESULT.json`
+  - capture: `girlswar_battle_unity\Assets\RestoreCaptures\battle_hud\BattleHudSpriteAtlasTextureRuntimeBindingClip05_1680x720.png`
+  - contact sheet: `reports\battle\BATTLE_25_SPRITE_ATLAS_TEXTURE_RUNTIME_BINDING_CLIP05_CONTACT_SHEET.jpg`
+  - visible sprite sheet: `reports\battle\BATTLE_25_VISIBLE_HUD_SPRITE_TEXTURE_SHEET.jpg`
+- Next battle blocker:
+  - `BATTLE_26_RESTORE_BATTLE_SCENE_ACTORS_SKILL_CARDS_AND_RUNTIME_CAMERA`

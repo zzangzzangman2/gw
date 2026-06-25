@@ -1,0 +1,2 @@
+@echo off
+call "%~dp0_restore_tools\BATTLE_22_BATTLE_HUD_SPRITE_PPTR_DEEP_TRACE_AND_RUNTIME_LUA_BINDING.cmd"

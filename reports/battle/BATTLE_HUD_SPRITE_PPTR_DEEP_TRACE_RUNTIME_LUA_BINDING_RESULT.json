@@ -1,0 +1,35 @@
+{
+  "userVisibleVerdict": "아직 원본 전투 HUD 아님",
+  "reference_video_used": true,
+  "videoReference": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_20_PLAY_VIDEO_NORMAL_BATTLE_REFERENCE_486S.jpg",
+  "contactSheet": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_21_HUD_RUNTIME_BINDING_SPRITE_PPTR_TRACE_CONTACT_SHEET.jpg",
+  "visual_status": "failed_missing_runtime_binding",
+  "matches_clip05_static_hud_layout": false,
+  "camera_visible_hud": true,
+  "camera_visible_original_hud": false,
+  "placeholder_block_visible": true,
+  "visible_original_sprite_count": 0,
+  "visible_placeholder_block_count": 16,
+  "prioritizedRowCount": 505,
+  "deepReasonCounts": {
+    "external_bundle_not_loaded": 79,
+    "runtime_lua_set_image_sprite": 16,
+    "sprite_pptr_unresolved": 9,
+    "unknown": 67,
+    "custom_youyouimage_binding": 59,
+    "resolved_external_candidate_not_loaded_runtime": 207,
+    "font_bundle_missing": 62,
+    "font_pptr_unresolved": 6
+  },
+  "evidenceCandidateCount": 286,
+  "fixApplied": false,
+  "runtimeBindingHintCount": 160,
+  "runtimeBindingGroups": {
+    "ui_open_load": 4,
+    "runtime_state_binding": 20,
+    "button_controls": 20,
+    "hide_show_motion": 0,
+    "sprite_setters": 11
+  },
+  "nextBlocker": "BATTLE_23_LOAD_MISSING_HUD_EXTERNAL_DEPENDENCIES_AND_VALIDATE_CLIP05_VISUAL"
+}

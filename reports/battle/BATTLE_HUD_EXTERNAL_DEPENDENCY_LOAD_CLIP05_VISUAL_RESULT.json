@@ -1,0 +1,126 @@
+{
+  "verdict": "아직 원본 전투 HUD 아님",
+  "reference_video_used": true,
+  "video_clip05_sequence_gate_checked": true,
+  "video_clip05_sequence_extracted": true,
+  "visual_status": "failed_missing_runtime_binding",
+  "matches_clip05_static_hud_layout": false,
+  "camera_visible_hud": false,
+  "camera_visible_original_hud": false,
+  "placeholder_block_visible": true,
+  "component_placeholder_block_visible": false,
+  "large_white_bands_visible": true,
+  "debug_or_path_label_visible": false,
+  "visible_original_sprite_count": 174,
+  "visible_placeholder_block_count": 0,
+  "component_visible_placeholder_block_count": 0,
+  "activeGraphicCount": 0,
+  "componentRowCount": 505,
+  "externalDependencyBundleCount": 8,
+  "externalDependencyLoadSuccessCount": 8,
+  "externalDependencyLoadFailCount": 0,
+  "captureStats": {
+    "exists": true,
+    "width": 1680,
+    "height": 720,
+    "nearWhiteRatio": 0.6486904761904762,
+    "nearBlackRatio": 0.09063492063492064,
+    "meanRgb": [
+      174.958,
+      177.039,
+      178.582
+    ]
+  },
+  "whiteBlackBlockGate": {
+    "nearWhiteRatio": 0.6486904761904762,
+    "nearBlackRatio": 0.09063492063492064,
+    "largeWhiteBandsSuspected": true,
+    "placeholderZoneFalsePositiveGuard": true
+  },
+  "capture": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_battle_unity\\Assets\\RestoreCaptures\\battle_hud\\BattleHudExternalDependencyLoadClip05_1680x720.png",
+  "contactSheet": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_23_EXTERNAL_DEPENDENCY_LOAD_CLIP05_CONTACT_SHEET.jpg",
+  "referenceSequence": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_23_PLAY_VIDEO_NORMAL_BATTLE_REFERENCE_486S_SEQUENCE.jpg",
+  "unityJson": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_battle_unity\\Assets\\RestoreData\\battle\\BATTLE_HUD_EXTERNAL_DEPENDENCY_LOAD_CLIP05_VISUAL.json",
+  "componentsCsv": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_battle_unity\\Assets\\RestoreData\\battle\\BATTLE_HUD_EXTERNAL_DEPENDENCY_LOAD_CLIP05_VISUAL_COMPONENTS.csv",
+  "nextBlocker": "BATTLE_24_CUSTOM_YOUYOUIMAGE_RUNTIME_LUA_BINDING_TRACE",
+  "notes": [
+    "Final capture is judged against play.mp4 clip05 486s sequence, not top/bottom/right zone counts.",
+    "Debug/evidence/path/placeholder text in final capture is a failure condition.",
+    "Whole-atlas placement and fake HUD replacement were not applied.",
+    "External bundles were loaded before HUD prefab instantiate; remaining mismatch means runtime binding or custom image reconstruction is still needed."
+  ],
+  "externalDependencyBundles": [
+    {
+      "bundle": "download/artsources/uispriteres/uibattle.assetbundle",
+      "absolutePath": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\extracted\\unity\\clean_unityfs_slices\\download\\artsources\\uispriteres\\uibattle.assetbundle",
+      "exists": true,
+      "loadSuccess": true,
+      "assetNameCount": 109,
+      "sample": "assets/download/artsources/uispriteres/uibattle/ba_xiaoxuecao.png|assets/download/artsources/uispriteres/uibattle/ba_xiaoxuecao1.png|assets/download/artsources/uispriteres/uibattle/ba_xiaoxuecao2.png|assets/download/artsources/uispriteres/uibattle/ba_xiaoxuecaobuff.png|assets/download/artsources/uis",
+      "failReason": ""
+    },
+    {
+      "bundle": "download/artsources/uispriteres/uibufficon.assetbundle",
+      "absolutePath": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\extracted\\unity\\clean_unityfs_slices\\download\\artsources\\uispriteres\\uibufficon.assetbundle",
+      "exists": true,
+      "loadSuccess": true,
+      "assetNameCount": 646,
+      "sample": "assets/download/artsources/uispriteres/uibufficon/buff_100000.png|assets/download/artsources/uispriteres/uibufficon/buff_1001.png|assets/download/artsources/uispriteres/uibufficon/buff_1002.png|assets/download/artsources/uispriteres/uibufficon/buff_1003.png|assets/download/artsources/uispriteres/uib",
+      "failReason": ""
+    },
+    {
+      "bundle": "download/artsources/uispriteres/uibutton.assetbundle",
+      "absolutePath": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\extracted\\unity\\clean_unityfs_slices\\download\\artsources\\uispriteres\\uibutton.assetbundle",
+      "exists": true,
+      "loadSuccess": true,
+      "assetNameCount": 186,
+      "sample": "assets/download/artsources/uispriteres/uibutton/bg_kaiguan.png|assets/download/artsources/uispriteres/uibutton/btn_100x_beibao.png|assets/download/artsources/uispriteres/uibutton/btn_100x_common.png|assets/download/artsources/uispriteres/uibutton/btn_100x_dragon_shop.png|assets/download/artsources/u",
+      "failReason": ""
+    },
+    {
+      "bundle": "download/artsources/uispriteres/uicommonother.assetbundle",
+      "absolutePath": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\extracted\\unity\\clean_unityfs_slices\\download\\artsources\\uispriteres\\uicommonother.assetbundle",
+      "exists": true,
+      "loadSuccess": true,
+      "assetNameCount": 546,
+      "sample": "assets/download/artsources/uispriteres/uicommonother/2beitb.png|assets/download/artsources/uispriteres/uicommonother/9gg_jtbfbg1.png|assets/download/artsources/uispriteres/uicommonother/9gg_jtbfbg2.png|assets/download/artsources/uispriteres/uicommonother/9gg_jtbfbg3.png|assets/download/artsources/ui",
+      "failReason": ""
+    },
+    {
+      "bundle": "download/artsources/uispriteres/uiherohead/uiherohead_1.assetbundle",
+      "absolutePath": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\extracted\\unity\\clean_unityfs_slices\\download\\artsources\\uispriteres\\uiherohead\\uiherohead_1.assetbundle",
+      "exists": true,
+      "loadSuccess": true,
+      "assetNameCount": 957,
+      "sample": "assets/download/artsources/uispriteres/uiherohead/uiherohead_1/head1001.png|assets/download/artsources/uispriteres/uiherohead/uiherohead_1/head1002.png|assets/download/artsources/uispriteres/uiherohead/uiherohead_1/head1003.png|assets/download/artsources/uispriteres/uiherohead/uiherohead_1/head1004.",
+      "failReason": ""
+    },
+    {
+      "bundle": "download/artsources/uispriteres/uiheroheadbattle.assetbundle",
+      "absolutePath": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\extracted\\unity\\clean_unityfs_slices\\download\\artsources\\uispriteres\\uiheroheadbattle.assetbundle",
+      "exists": true,
+      "loadSuccess": true,
+      "assetNameCount": 438,
+      "sample": "assets/download/artsources/uispriteres/uiheroheadbattle/battlehead1001.png|assets/download/artsources/uispriteres/uiheroheadbattle/battlehead1002.png|assets/download/artsources/uispriteres/uiheroheadbattle/battlehead1003.png|assets/download/artsources/uispriteres/uiheroheadbattle/battlehead1004.png|",
+      "failReason": ""
+    },
+    {
+      "bundle": "download/artsources/uispriteres/uilogin.assetbundle",
+      "absolutePath": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\extracted\\unity\\clean_unityfs_slices\\download\\artsources\\uispriteres\\uilogin.assetbundle",
+      "exists": true,
+      "loadSuccess": true,
+      "assetNameCount": 33,
+      "sample": "assets/download/artsources/uispriteres/uilogin/btn_apple.png|assets/download/artsources/uispriteres/uilogin/btn_google.png|assets/download/artsources/uispriteres/uilogin/btn_green.png|assets/download/artsources/uispriteres/uilogin/btn_red.png|assets/download/artsources/uispriteres/uilogin/classifyic",
+      "failReason": ""
+    },
+    {
+      "bundle": "download/ui/uiprefabandres/guide.assetbundle",
+      "absolutePath": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\extracted\\unity\\clean_unityfs_slices\\download\\ui\\uiprefabandres\\guide.assetbundle",
+      "exists": true,
+      "loadSuccess": true,
+      "assetNameCount": 42,
+      "sample": "assets/download/ui/uiprefabandres/guide/effect/dianjigq1.prefab|assets/download/ui/uiprefabandres/guide/effect/dianjixqq.prefab|assets/download/ui/uiprefabandres/guide/effect/djqq11.mat|assets/download/ui/uiprefabandres/guide/effect/djqq12.mat|assets/download/ui/uiprefabandres/guide/effect/gdug.mat|",
+      "failReason": ""
+    }
+  ]
+}
