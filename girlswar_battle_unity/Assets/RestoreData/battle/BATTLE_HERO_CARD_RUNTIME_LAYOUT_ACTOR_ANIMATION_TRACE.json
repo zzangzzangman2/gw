@@ -1,0 +1,680 @@
+{
+  "verdict": "battle30_layout_motion_trace_not_final",
+  "visual_status": "failed_actor_motion_runtime_replay_missing",
+  "isFinalRestoredBattleScreen": false,
+  "reference_video_used": true,
+  "videoTimeRangeSeconds": "485.0-487.0",
+  "referenceFrameCount": 6,
+  "battle29Capture": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_battle_unity\\Assets\\RestoreCaptures\\battle_hud\\BattleHeroListSkillCardBindClip05_1920x1080.png",
+  "contactSheet": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_30_HERO_CARD_RUNTIME_LAYOUT_ACTOR_ANIMATION_TRACE_CONTACT_SHEET.jpg",
+  "frameSequence": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_30_PLAY_VIDEO_CLIP05_485_487_SEQUENCE.jpg",
+  "referenceActorBoxCount": 145,
+  "referenceCardBoxCount": 13,
+  "captureActorBoxCount": 20,
+  "captureCardBoxCount": 20,
+  "actorGap": {
+    "hasReference": true,
+    "hasCapture": true,
+    "referenceUnionNorm": {
+      "x": 0.03958,
+      "y": 0.07366,
+      "w": 0.95781,
+      "h": 0.80357,
+      "cx": 0.51849,
+      "cy": 0.47545
+    },
+    "captureUnionNorm": {
+      "x": 0.08646,
+      "y": 0.17963,
+      "w": 0.8776,
+      "h": 0.31852,
+      "cx": 0.52526,
+      "cy": 0.33889
+    },
+    "centerDistanceNorm": 0.13673,
+    "scaleRatioArea": 0.36319
+  },
+  "cardGap": {
+    "hasReference": true,
+    "hasCapture": true,
+    "referenceUnionNorm": {
+      "x": 0.37917,
+      "y": 0.7154,
+      "w": 0.24583,
+      "h": 0.26674,
+      "cx": 0.50208,
+      "cy": 0.84877
+    },
+    "captureUnionNorm": {
+      "x": 0.26562,
+      "y": 0.57963,
+      "w": 0.54844,
+      "h": 0.37315,
+      "cx": 0.53984,
+      "cy": 0.7662
+    },
+    "centerDistanceNorm": 0.09079,
+    "scaleRatioArea": 3.12097
+  },
+  "battle29HeroCards": [
+    {
+      "slot": 1,
+      "heroDid": "1036",
+      "heroId": "51469",
+      "cloneName": "Battle29BoundHeroCard_1_1036",
+      "hierarchyPath": "HeroListContainer/Battle29BoundHeroCard_1_1036",
+      "anchoredPosition": "-190/0",
+      "sizeDelta": "269/200",
+      "headSprite": "head1036",
+      "headPngPath": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\extracted\\unity\\bundles\\b_6ca02dad4f8af848\\images\\S\\-1006758698391221614_head1036.png",
+      "headBindCount": 1,
+      "extractedSpriteBindCount": 19,
+      "hiddenUnresolvedWhiteDataIconCount": 3,
+      "activeFixCount": 0,
+      "imageCount": 22,
+      "visibleImageCount": 17,
+      "visibleWhiteLikeImageCount": 0,
+      "visibleWhiteLikeImagePaths": [],
+      "normalSkill": "1036101",
+      "smallSkill": "1036201",
+      "bigSkill": "1036301"
+    },
+    {
+      "slot": 2,
+      "heroDid": "1002",
+      "heroId": "50870",
+      "cloneName": "Battle29BoundHeroCard_2_1002",
+      "hierarchyPath": "HeroListContainer/Battle29BoundHeroCard_2_1002",
+      "anchoredPosition": "0/0",
+      "sizeDelta": "269/200",
+      "headSprite": "head1002",
+      "headPngPath": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\extracted\\unity\\bundles\\b_6ca02dad4f8af848\\images\\S\\-296058673418415307_head1002.png",
+      "headBindCount": 1,
+      "extractedSpriteBindCount": 19,
+      "hiddenUnresolvedWhiteDataIconCount": 3,
+      "activeFixCount": 0,
+      "imageCount": 22,
+      "visibleImageCount": 17,
+      "visibleWhiteLikeImageCount": 0,
+      "visibleWhiteLikeImagePaths": [],
+      "normalSkill": "1002101",
+      "smallSkill": "1002201",
+      "bigSkill": "1002301"
+    },
+    {
+      "slot": 3,
+      "heroDid": "1034",
+      "heroId": "50874",
+      "cloneName": "Battle29BoundHeroCard_3_1034",
+      "hierarchyPath": "HeroListContainer/Battle29BoundHeroCard_3_1034",
+      "anchoredPosition": "190/0",
+      "sizeDelta": "269/200",
+      "headSprite": "head1034",
+      "headPngPath": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\extracted\\unity\\bundles\\b_6ca02dad4f8af848\\images\\S\\401204702686331365_head1034.png",
+      "headBindCount": 1,
+      "extractedSpriteBindCount": 19,
+      "hiddenUnresolvedWhiteDataIconCount": 3,
+      "activeFixCount": 0,
+      "imageCount": 22,
+      "visibleImageCount": 17,
+      "visibleWhiteLikeImageCount": 0,
+      "visibleWhiteLikeImagePaths": [],
+      "normalSkill": "1034101",
+      "smallSkill": "1034201",
+      "bigSkill": "1034301"
+    }
+  ],
+  "battle29FailureAxes": {
+    "heroitem_template_runtime_clone_missing_before_battle29": true,
+    "battle29_positions_inferred_not_original_runtime_verified": true,
+    "actor_motion_not_replayed": true,
+    "skill_effect_runtime_not_attached_to_cards_or_motion": true
+  },
+  "animationEvidence": {
+    "runtimeActorSlotCount": 12,
+    "loadableActorPrefabCount": 3,
+    "missingActorSlotCount": 9,
+    "loadableActors": [
+      {
+        "side": "our",
+        "heroDid": "1002",
+        "model": "1002",
+        "bundle": "download/roleprefabsandres/battleprefabandres/1002.assetbundle",
+        "prefabAsset": "assets/download/roleprefabsandres/battleprefabandres/1002/hero_1002.prefab",
+        "loadStatus": "runtime_prefab"
+      },
+      {
+        "side": "our",
+        "heroDid": "1034",
+        "model": "1034",
+        "bundle": "download/roleprefabsandres/battleprefabandres/1034.assetbundle",
+        "prefabAsset": "assets/download/roleprefabsandres/battleprefabandres/1034/hero_1034.prefab",
+        "loadStatus": "runtime_prefab"
+      },
+      {
+        "side": "enemy",
+        "heroDid": "1100111",
+        "model": "3001",
+        "bundle": "download/roleprefabsandres/battleprefabandres/3001.assetbundle",
+        "prefabAsset": "assets/download/roleprefabsandres/battleprefabandres/3001/hero_3001.prefab",
+        "loadStatus": "runtime_prefab"
+      }
+    ],
+    "missingActors": [
+      {
+        "side": "our",
+        "heroDid": "1036",
+        "model": "1036",
+        "missingReason": "listed_in_cdn_versionfile_not_extracted"
+      },
+      {
+        "side": "enemy",
+        "heroDid": "1100112",
+        "model": "",
+        "missingReason": "not_loadable_yet"
+      },
+      {
+        "side": "enemy",
+        "heroDid": "1100113",
+        "model": "",
+        "missingReason": "not_loadable_yet"
+      },
+      {
+        "side": "enemy",
+        "heroDid": "1100121",
+        "model": "",
+        "missingReason": "not_loadable_yet"
+      },
+      {
+        "side": "enemy",
+        "heroDid": "1100122",
+        "model": "",
+        "missingReason": "not_loadable_yet"
+      },
+      {
+        "side": "enemy",
+        "heroDid": "1100123",
+        "model": "",
+        "missingReason": "not_loadable_yet"
+      },
+      {
+        "side": "enemy",
+        "heroDid": "1100131",
+        "model": "",
+        "missingReason": "not_loadable_yet"
+      },
+      {
+        "side": "enemy",
+        "heroDid": "1100132",
+        "model": "",
+        "missingReason": "not_loadable_yet"
+      },
+      {
+        "side": "enemy",
+        "heroDid": "1100133",
+        "model": "",
+        "missingReason": "not_loadable_yet"
+      }
+    ],
+    "streamingProbeSummary": {
+      "targetCount": 4,
+      "loadSuccess": 4,
+      "loadFail": 0,
+      "instantiateSuccess": 3,
+      "textureFallback": 0
+    },
+    "skeletonEvidence": [
+      "assets/download/roleprefabsandres/battleprefabandres/1002/1002.atlas.txt",
+      "assets/download/roleprefabsandres/battleprefabandres/1002/1002.skel.bytes",
+      "assets/download/roleprefabsandres/battleprefabandres/1002/1002_skeletondata.asset",
+      "assets/download/roleprefabsandres/battleprefabandres/1034/1034.atlas.txt",
+      "assets/download/roleprefabsandres/battleprefabandres/1034/1034.skel.bytes",
+      "assets/download/roleprefabsandres/battleprefabandres/1034/1034_skeletondata.asset",
+      "assets/download/roleprefabsandres/battleprefabandres/3001/3001.atlas.txt",
+      "assets/download/roleprefabsandres/battleprefabandres/3001/3001.skel.bytes",
+      "assets/download/roleprefabsandres/battleprefabandres/3001/3001_skeletondata.asset"
+    ],
+    "hierarchyObjects": [
+      {
+        "bundleId": "1002",
+        "assetName": "assets/download/roleprefabsandres/battleprefabandres/1002/hero_1002.prefab",
+        "hierarchyPath": "Reconstructed_our_1002",
+        "componentCount": 4,
+        "componentTypes": "Transform;MeshFilter;MeshRenderer;MissingScript",
+        "rendererType": "MeshRenderer",
+        "materialNames": "1002_Material",
+        "textureNames": "1002"
+      },
+      {
+        "bundleId": "1034",
+        "assetName": "assets/download/roleprefabsandres/battleprefabandres/1034/hero_1034.prefab",
+        "hierarchyPath": "Reconstructed_our_1034",
+        "componentCount": 4,
+        "componentTypes": "Transform;MeshFilter;MeshRenderer;MissingScript",
+        "rendererType": "MeshRenderer",
+        "materialNames": "1034_Material;1034_Material-Screen",
+        "textureNames": "1034;1034"
+      },
+      {
+        "bundleId": "1100111",
+        "assetName": "assets/download/roleprefabsandres/battleprefabandres/3001/hero_3001.prefab",
+        "hierarchyPath": "Reconstructed_enemy_1100111",
+        "componentCount": 4,
+        "componentTypes": "Transform;MeshFilter;MeshRenderer;MissingScript",
+        "rendererType": "MeshRenderer",
+        "materialNames": "3001_Material",
+        "textureNames": "3001"
+      }
+    ],
+    "luaAnimationEvidence": [
+      {
+        "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-17427396491214324_BattleAttackTaskMgr_security_xor_raw.lua",
+        "line": 31,
+        "text": "function e:ChangeState(e)"
+      },
+      {
+        "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-17427396491214324_BattleAttackTaskMgr_security_xor_raw.lua",
+        "line": 82,
+        "text": "self:ChangeState(a.Ready)"
+      },
+      {
+        "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-17427396491214324_BattleAttackTaskMgr_security_xor_raw.lua",
+        "line": 134,
+        "text": "self:ChangeState(a.Ready)"
+      },
+      {
+        "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-17427396491214324_BattleAttackTaskMgr_security_xor_raw.lua",
+        "line": 187,
+        "text": "self:ChangeState(a.WaitBigSkill)"
+      },
+      {
+        "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-17427396491214324_BattleAttackTaskMgr_security_xor_raw.lua",
+        "line": 197,
+        "text": "self:ChangeState(a.RunningBigSkill)"
+      },
+      {
+        "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-17427396491214324_BattleAttackTaskMgr_security_xor_raw.lua",
+        "line": 253,
+        "text": "self:ChangeState(a.RunningNormalSkill)"
+      },
+      {
+        "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-17427396491214324_BattleAttackTaskMgr_security_xor_raw.lua",
+        "line": 289,
+        "text": "self:ChangeState(a.RunningPetFightSkill)"
+      },
+      {
+        "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-17427396491214324_BattleAttackTaskMgr_security_xor_raw.lua",
+        "line": 319,
+        "text": "self:ChangeState(a.RunningTeamFightSkill)"
+      },
+      {
+        "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+        "line": 32,
+        "text": "HeroCtrl=Class(\"HeroCtrl\",{})"
+      },
+      {
+        "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+        "line": 33,
+        "text": "function HeroCtrl:Create()"
+      },
+      {
+        "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+        "line": 34,
+        "text": "local e=HeroCtrl:New()"
+      },
+      {
+        "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+        "line": 38,
+        "text": "function HeroCtrl:Init()"
+      },
+      {
+        "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+        "line": 43,
+        "text": "function HeroCtrl:ResetData()"
+      },
+      {
+        "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+        "line": 57,
+        "text": "self.spineboy=nil"
+      },
+      {
+        "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+        "line": 58,
+        "text": "self.spineboyTransform=nil"
+      },
+      {
+        "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+        "line": 85,
+        "text": "self.OnTimelineEffectPlayComplete=nil"
+      },
+      {
+        "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+        "line": 95,
+        "text": "self.NextBigSkillBeAttackHeroCtrls=nil"
+      },
+      {
+        "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+        "line": 112,
+        "text": "self.NextPetFightSkillBeAttackHeroCtrls=nil"
+      },
+      {
+        "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+        "line": 267,
+        "text": "self.mCurSpineAnim=\"\""
+      },
+      {
+        "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+        "line": 276,
+        "text": "self.effectBuffIdAfterTimeline=0"
+      },
+      {
+        "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+        "line": 281,
+        "text": "self.isShowHeroCtrl=true"
+      },
+      {
+        "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+        "line": 309,
+        "text": "self.spineboyScale=1"
+      },
+      {
+        "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+        "line": 317,
+        "text": "self.spinePet=nil"
+      },
+      {
+        "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+        "line": 401,
+        "text": "function HeroCtrl:InitViewWith(a,t,o,e,i,n)"
+      },
+      {
+        "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+        "line": 466,
+        "text": "function HeroCtrl:Dispose()"
+      },
+      {
+        "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+        "line": 481,
+        "text": "function HeroCtrl:ResetHeroDataWhenNextWave()"
+      },
+      {
+        "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+        "line": 485,
+        "text": "self.NextBigSkillBeAttackHeroCtrl=nil"
+      },
+      {
+        "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+        "line": 495,
+        "text": "function HeroCtrl:GetHeroId()"
+      },
+      {
+        "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+        "line": 498,
+        "text": "function HeroCtrl:GetHeroModelId()"
+      },
+      {
+        "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+        "line": 512,
+        "text": "function HeroCtrl:GetHeroRootDid()"
+      },
+      {
+        "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+        "line": 534,
+        "text": "function HeroCtrl:IsCampionLeader()"
+      },
+      {
+        "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+        "line": 537,
+        "text": "function HeroCtrl:GetHeroLeaderType()"
+      },
+      {
+        "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+        "line": 540,
+        "text": "function HeroCtrl:ReadHeroLeaderType()"
+      },
+      {
+        "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+        "line": 550,
+        "text": "function HeroCtrl:OnOpen()"
+      },
+      {
+        "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+        "line": 1034,
+        "text": "function HeroCtrl:OnClose(t)"
+      },
+      {
+        "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+        "line": 1097,
+        "text": "self.CurrBattleTeam:RemoveHeroCtrl(self.HeroId)"
+      },
+      {
+        "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+        "line": 1103,
+        "text": "function HeroCtrl:OnBeforeDestroy()"
+      },
+      {
+        "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+        "line": 1106,
+        "text": "function HeroCtrl:IsSuperArmor()"
+      },
+      {
+        "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+        "line": 1112,
+        "text": "function HeroCtrl:GetHeroModelId()"
+      },
+      {
+        "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+        "line": 1118,
+        "text": "function HeroCtrl:GetDeathEffectScale()"
+      },
+      {
+        "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+        "line": 1124,
+        "text": "function HeroCtrl:OnEnemyCenterPosReset()"
+      },
+      {
+        "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+        "line": 1129,
+        "text": "function HeroCtrl:ResetPos()"
+      },
+      {
+        "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+        "line": 1146,
+        "text": "function HeroCtrl:SetFlipRoot(o)"
+      },
+      {
+        "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+        "line": 1157,
+        "text": "function HeroCtrl:OnDragonWarSupplementRefreshUI()"
+      },
+      {
+        "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+        "line": 1165,
+        "text": "function HeroCtrl:SetDragonWarBigSkillId()"
+      },
+      {
+        "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+        "line": 1174,
+        "text": "function HeroCtrl:OnDoAction(t,e)"
+      },
+      {
+        "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+        "line": 1175,
+        "text": "if(t==\"SetTimelineEffect\")then"
+      },
+      {
+        "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+        "line": 1176,
+        "text": "ModulesInit.BattleSkillEffectManager.CurrTimelineEffect=e"
+      },
+      {
+        "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+        "line": 1177,
+        "text": "BuildPatchMgr:PlayTimeLine(ModulesInit.BattleSkillEffectManager.CurrTimelineEffect)"
+      },
+      {
+        "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+        "line": 1182,
+        "text": "ModulesInit.BattleSkillEffectManager.CurrTimelineEffect.OnStopped=function()"
+      },
+      {
+        "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+        "line": 1183,
+        "text": "if(ModulesInit.BattleSkillEffectManager.CurrTimelineEffect~=nil)then"
+      },
+      {
+        "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+        "line": 1184,
+        "text": "ModulesInit.BattleSkillEffectManager.CurrTimelineEffect=nil"
+      },
+      {
+        "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+        "line": 1185,
+        "text": "if(self.OnTimelineEffectPlayComplete~=nil)then"
+      },
+      {
+        "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+        "line": 1186,
+        "text": "self.OnTimelineEffectPlayComplete()"
+      },
+      {
+        "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+        "line": 1190,
+        "text": "elseif(t==\"SetTimelineEffect_onComplete\")then"
+      },
+      {
+        "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+        "line": 1191,
+        "text": "self.OnTimelineEffectPlayComplete=e"
+      },
+      {
+        "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+        "line": 1216,
+        "text": "function HeroCtrl:GetPos()"
+      },
+      {
+        "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+        "line": 1219,
+        "text": "function HeroCtrl:Despawn()"
+      },
+      {
+        "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+        "line": 1253,
+        "text": "function HeroCtrl:SetHeroPoseType(e)"
+      },
+      {
+        "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+        "line": 1259,
+        "text": "function HeroCtrl:UnLoadPet()"
+      },
+      {
+        "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+        "line": 1268,
+        "text": "self.spinePet=nil"
+      },
+      {
+        "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+        "line": 1277,
+        "text": "function HeroCtrl:LoadPet()"
+      },
+      {
+        "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+        "line": 1299,
+        "text": "self.spinePet=e:GetComponent(typeof(CS.Spine.Unity.SkeletonAnimation))"
+      },
+      {
+        "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+        "line": 1306,
+        "text": "self:RefreshSpinePetScale()"
+      },
+      {
+        "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+        "line": 1312,
+        "text": "function HeroCtrl:UnLoadSkin()"
+      },
+      {
+        "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+        "line": 1319,
+        "text": "if not IsNil(self.spineboyTransform)then"
+      },
+      {
+        "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+        "line": 1320,
+        "text": "self.spineboyTransform:DOKill()"
+      },
+      {
+        "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+        "line": 1322,
+        "text": "self:SetSpineInvisible(false)"
+      },
+      {
+        "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+        "line": 1327,
+        "text": "self.spineboy=nil"
+      },
+      {
+        "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+        "line": 1328,
+        "text": "self.spineboyTransform=nil"
+      },
+      {
+        "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+        "line": 1340,
+        "text": "function HeroCtrl:LoadSkin(e,a)"
+      },
+      {
+        "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+        "line": 1354,
+        "text": "self.spineboy=e:GetComponent(typeof(CS.Spine.Unity.SkeletonAnimation))"
+      },
+      {
+        "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+        "line": 1355,
+        "text": "self.spineboyTransform=self.spineboy.transform"
+      },
+      {
+        "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+        "line": 1356,
+        "text": "self.topBone=self.spineboy.skeleton:FindBone(\"top\")"
+      },
+      {
+        "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+        "line": 1357,
+        "text": "self.pointBone=self.spineboy.skeleton:FindBone(\"point\")"
+      },
+      {
+        "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+        "line": 1368,
+        "text": "self:RefreshSpineBoyScale()"
+      },
+      {
+        "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+        "line": 1372,
+        "text": "self:SetSpineInvisible(false)"
+      },
+      {
+        "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+        "line": 1381,
+        "text": "local e=self.spineboy.skeletonDataAsset:GetAnimationStateData().SkeletonData"
+      },
+      {
+        "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+        "line": 1420,
+        "text": "self:SetSpineAnimation(0,\"run\",true)"
+      },
+      {
+        "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+        "line": 1426,
+        "text": "self:ChangeStateUnCheckState(HeroState.Idle)"
+      }
+    ],
+    "motionReplayBlocker": "Spine/SkeletonData assets and actor prefabs exist for 3 actors, but prefab MissingScript/animation-state runtime class and Lua HeroCtrl timeline replay are not reconstructed; 9 actor slots still lack loadable prefabs."
+  },
+  "nextBlocker": "BATTLE_31_ATTACH_LOADABLE_ACTOR_SPINE_ANIMATION_RUNTIME_PROBE",
+  "notes": [
+    "This is not a final battle screen claim.",
+    "Video sequence motion boxes are used instead of a single screenshot.",
+    "BATTLE_29 card binding is improved but card positions are still inferred; actor animation/runtime replay is missing.",
+    "No debug text was added to final capture; labels only appear in the analysis contact sheet."
+  ]
+}

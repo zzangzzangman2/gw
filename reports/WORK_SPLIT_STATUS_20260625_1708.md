@@ -523,3 +523,38 @@
 - Active tool scripts remain under `_restore_tools\`; old root one-click launchers remain available in `_restore_tools\root_cmd_archive\` for checking.
 - Root guidance was added in `README_COMMANDS.md`.
 - This cleanup intentionally did not stage or change battle Unity scene/log modifications from the battle work area.
+
+## Update 2026-06-25 20:36 KST
+
+### Battle BATTLE_30 Result
+
+- BATTLE_30 used `C:\Users\godho\Downloads\플레이.mp4` clip05 `485.0-487.0s` as a frame sequence, not a single screenshot.
+- Verdict: `failed_actor_motion_runtime_replay_missing`.
+- This is not a final restored battle screen.
+- Layout gap summary:
+  - reference actor boxes: `145`
+  - capture actor boxes: `20`
+  - actor center gap norm: `0.13673`
+  - actor area scale ratio: `0.36319`
+  - reference card boxes: `13`
+  - capture card boxes: `20`
+  - card center gap norm: `0.09079`
+  - card area scale ratio: `3.12097`
+- Runtime evidence:
+  - runtime actor slots: `12`
+  - loadable actor prefabs: `3`
+  - missing actor slots: `9`
+  - skeleton evidence assets: `9`
+  - Lua animation/timeline evidence lines: `80`
+- Root-level BATTLE_30 shortcut was moved into `_restore_tools\root_cmd_archive\` to keep the root folder clean.
+- Outputs:
+  - tool CMD: `_restore_tools\BATTLE_30_VERIFY_HERO_CARD_RUNTIME_LAYOUT_AND_ATTACH_ACTOR_ANIMATION_TRACE.cmd`
+  - archived root CMD: `_restore_tools\root_cmd_archive\BATTLE_30_VERIFY_HERO_CARD_RUNTIME_LAYOUT_AND_ATTACH_ACTOR_ANIMATION_TRACE.cmd`
+  - report: `reports\battle\BATTLE_HERO_CARD_RUNTIME_LAYOUT_ACTOR_ANIMATION_TRACE_RESULT.md`
+  - JSON: `reports\battle\BATTLE_HERO_CARD_RUNTIME_LAYOUT_ACTOR_ANIMATION_TRACE_RESULT.json`
+  - Unity data: `girlswar_battle_unity\Assets\RestoreData\battle\BATTLE_HERO_CARD_RUNTIME_LAYOUT_ACTOR_ANIMATION_TRACE.json`
+  - gap CSV: `girlswar_battle_unity\Assets\RestoreData\battle\BATTLE_HERO_CARD_RUNTIME_LAYOUT_ACTOR_ANIMATION_TRACE_GAPS.csv`
+  - contact sheet: `reports\battle\BATTLE_30_HERO_CARD_RUNTIME_LAYOUT_ACTOR_ANIMATION_TRACE_CONTACT_SHEET.jpg`
+  - reference sequence: `reports\battle\BATTLE_30_PLAY_VIDEO_CLIP05_485_487_SEQUENCE.jpg`
+- Next battle blocker:
+  - `BATTLE_31_ATTACH_LOADABLE_ACTOR_SPINE_ANIMATION_RUNTIME_PROBE`
