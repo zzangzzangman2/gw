@@ -16,6 +16,10 @@ Current quick actions in `00_COMMAND_CENTER.cmd`:
 - latest battle validation: `_restore_tools\current\02_RUN_LATEST_BATTLE_VALIDATION.cmd`
 - git status and push helper
 
+Current latest validation targets:
+- MainInterface: `_restore_tools\cmd_archive\116_IMPORT_REAL_SPINE4_RUNTIME_BRIDGE_FOR_ROUTE_SKELETONGRAPHIC_REPLAY.cmd`
+- Battle: `_restore_tools\cmd_archive\BATTLE_36_TRACE_REAL_SPINE_INITIALIZE_SKELETONDATA_MATERIAL_SHADER_BINDING.cmd`
+
 Archived old root shortcuts:
 - `_restore_tools\root_cmd_archive\`
 

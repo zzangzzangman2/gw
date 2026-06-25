@@ -1,0 +1,1502 @@
+{
+  "verdict": "clip05 actor motion not reproduced",
+  "visual_status": "failed_mesh_updates_but_shader_material_render_still_magenta",
+  "isFinalRestoredBattleScreen": false,
+  "reference_video_used": true,
+  "videoTimeRangeSeconds": "485.0-487.0",
+  "referenceFrameCount": 6,
+  "referenceMotionPairs": [
+    {
+      "pair": "485.0-485.4",
+      "changedPixels": 153123
+    },
+    {
+      "pair": "485.4-485.8",
+      "changedPixels": 117061
+    },
+    {
+      "pair": "485.8-486.2",
+      "changedPixels": 108567
+    },
+    {
+      "pair": "486.2-486.6",
+      "changedPixels": 155760
+    },
+    {
+      "pair": "486.6-487.0",
+      "changedPixels": 143611
+    }
+  ],
+  "actorMotionReplayed": false,
+  "unityExitCode": 0,
+  "sceneExists": true,
+  "captureMetrics": {
+    "captureExists": true,
+    "width": 1920,
+    "height": 1080,
+    "magentaPixelRatio": 0.071884,
+    "nonBlackPixelRatio": 0.071884
+  },
+  "runtimeTypePresence": {
+    "SkeletonAnimation": true,
+    "SkeletonRenderer": true,
+    "SkeletonDataAsset": true,
+    "AtlasAsset": true,
+    "MeshGenerator": true,
+    "SkeletonBinary": true,
+    "AnimationState": true,
+    "AtlasAttachmentLoader": true,
+    "realRuntimePresent": true
+  },
+  "skeletonAnimationComponentCount": 3,
+  "initializeCalledCount": 3,
+  "afterInitializeValidCount": 3,
+  "animationStateSetSucceededCount": 3,
+  "updateFloatCalledCount": 3,
+  "skeletonDataNullCount": 0,
+  "meshGeneratorNonNullCount": 3,
+  "meshHashChangedActorCount": 3,
+  "unsupportedShaderMaterialCount": 17,
+  "actors": [
+    {
+      "side": "our",
+      "heroDid": "1002",
+      "modelId": "1002",
+      "expectedAnimation": "ult",
+      "animationCandidates": [
+        "ult",
+        "stand",
+        "skill1"
+      ],
+      "bundle": "download/roleprefabsandres/battleprefabandres/1002.assetbundle",
+      "prefabAsset": "assets/download/roleprefabsandres/battleprefabandres/1002/hero_1002.prefab",
+      "bundleLoaded": true,
+      "prefabInstantiated": true,
+      "missingScriptCount": 0,
+      "skeletonAnimationComponentCount": 1,
+      "skeletonAnimationAssembly": "spine-unity",
+      "serializedAnimationName": "ult",
+      "initialValid": true,
+      "initializeCalled": true,
+      "afterInitializeValid": true,
+      "skeletonDataAssetName": "1002_SkeletonData",
+      "skeletonDataAssetType": "Spine.Unity.SkeletonDataAsset",
+      "skeletonDataAssetIsLoaded": true,
+      "skeletonDataAssetScale": 0.01,
+      "skeletonJsonName": "1002.skel",
+      "skeletonDataNull": false,
+      "skeletonDataException": "",
+      "boneCount": 96,
+      "slotCount": 246,
+      "skinCount": 1,
+      "animationCount": 23,
+      "animationNames": [
+        "air",
+        "attack",
+        "change",
+        "death",
+        "fall",
+        "fall_lie",
+        "fight",
+        "frozen",
+        "gedang",
+        "getup",
+        "guidao",
+        "lie",
+        "run",
+        "skill1",
+        "stand",
+        "strike",
+        "strike_air",
+        "strike_fly",
+        "thunder",
+        "ult",
+        "ultx",
+        "vertigo",
+        "wait"
+      ],
+      "expectedAnimationInRuntime": true,
+      "skeletonRuntimeNonNull": true,
+      "animationStateNonNull": true,
+      "animationStateSetSucceeded": true,
+      "animationStateUsedName": "ult",
+      "animationFallbackUsed": false,
+      "updateFloatCalled": true,
+      "lateUpdateCalled": true,
+      "meshGeneratorNonNull": true,
+      "meshGeneratorType": "Spine.Unity.MeshGenerator",
+      "meshVertexCountBefore": 732,
+      "meshVertexCountAfter": 736,
+      "meshHashBefore": "efb98e59",
+      "meshHashAfter": "d41ec5c8",
+      "meshHashChangedFrameCount": 11,
+      "meshBoundsChangedFrameCount": 10,
+      "realMeshUpdated": true,
+      "unsupportedShaderMaterialCount": 5,
+      "internalErrorShaderMaterialCount": 0,
+      "motionReplayStatus": "mesh_changes_after_update_float_but_clip05_motion_not_verified",
+      "failReason": "",
+      "runtimeException": "",
+      "animationStateException": "",
+      "trackEntryException": "",
+      "atlasAssetNames": [
+        "1002_Atlas|Spine.Unity.SpineAtlasAsset"
+      ],
+      "atlasMaterialInfos": [
+        "1002_Material|shader=Spine/Skeleton Tint|supported=false|passCount=3|mainTex=1002(1024x512)|renderQueue=2000",
+        "1002_Material|shader=Spine/Skeleton Tint|supported=false|passCount=3|mainTex=1002(1024x512)|renderQueue=2000",
+        "1002_Material|shader=Spine/Skeleton Tint|supported=false|passCount=3|mainTex=1002(1024x512)|renderQueue=2000"
+      ],
+      "atlasTextureInfos": [
+        "1002(1024x512)",
+        "1002(1024x512)",
+        "1002(1024x512)"
+      ],
+      "textureNames": [
+        "1002(1024x512)"
+      ],
+      "bundleMaterialNames": [
+        "1002_Material-Screen|shader=Spine/Blend Modes/Skeleton PMA Screen|supported=false|passCount=3|mainTex=1002(1024x512)|renderQueue=2000",
+        "1002_Material|shader=Spine/Skeleton Tint|supported=false|passCount=3|mainTex=1002(1024x512)|renderQueue=2000"
+      ],
+      "rendererMaterialBefore": [
+        "1002_Material|shader=Spine/Skeleton Tint|supported=false|passCount=3|mainTex=1002(1024x512)|renderQueue=2000"
+      ],
+      "rendererMaterialAfter": [
+        "1002_Material|shader=Spine/Skeleton Tint|supported=false|passCount=3|mainTex=1002(1024x512)|renderQueue=2000"
+      ],
+      "skeletonLikeAssets": [
+        "assets/download/roleprefabsandres/battleprefabandres/1002/1002.atlas.txt",
+        "assets/download/roleprefabsandres/battleprefabandres/1002/1002.skel.bytes",
+        "assets/download/roleprefabsandres/battleprefabandres/1002/1002_atlas.asset",
+        "assets/download/roleprefabsandres/battleprefabandres/1002/1002_skeletondata.asset"
+      ],
+      "trackEntries": [
+        "0|ult|track=0.033|anim=0.033",
+        "1|ult|track=0.067|anim=0.067",
+        "2|ult|track=0.1|anim=0.1",
+        "3|ult|track=0.133|anim=0.133",
+        "4|ult|track=0.167|anim=0.167",
+        "5|ult|track=0.2|anim=0.2",
+        "6|ult|track=0.233|anim=0.233",
+        "7|ult|track=0.267|anim=0.267",
+        "8|ult|track=0.3|anim=0.3",
+        "9|ult|track=0.333|anim=0.333",
+        "10|ult|track=0.367|anim=0.367",
+        "11|ult|track=0.4|anim=0.4"
+      ],
+      "frameSnapshots": [
+        {
+          "frame": 0,
+          "meshVertexCount": 732,
+          "meshTriangleIndexCount": 2022,
+          "meshHash": "01b6e806",
+          "meshBoundsJoined": "BATTLE36_LoadableActor_our_1002_model_1002|0.229/0.799/0|1.466/1.711/0"
+        },
+        {
+          "frame": 1,
+          "meshVertexCount": 732,
+          "meshTriangleIndexCount": 2022,
+          "meshHash": "41a6188a",
+          "meshBoundsJoined": "BATTLE36_LoadableActor_our_1002_model_1002|0.152/0.833/0|1.34/1.778/0"
+        },
+        {
+          "frame": 2,
+          "meshVertexCount": 732,
+          "meshTriangleIndexCount": 2022,
+          "meshHash": "b0b9cfd0",
+          "meshBoundsJoined": "BATTLE36_LoadableActor_our_1002_model_1002|0.098/0.904/0|1.237/1.92/0"
+        },
+        {
+          "frame": 3,
+          "meshVertexCount": 732,
+          "meshTriangleIndexCount": 2022,
+          "meshHash": "c910175e",
+          "meshBoundsJoined": "BATTLE36_LoadableActor_our_1002_model_1002|0.048/0.94/0|1.119/1.993/0"
+        },
+        {
+          "frame": 4,
+          "meshVertexCount": 732,
+          "meshTriangleIndexCount": 2022,
+          "meshHash": "757ba435",
+          "meshBoundsJoined": "BATTLE36_LoadableActor_our_1002_model_1002|0.023/0.951/0|1.053/2.014/0"
+        },
+        {
+          "frame": 5,
+          "meshVertexCount": 732,
+          "meshTriangleIndexCount": 2022,
+          "meshHash": "6865ce63",
+          "meshBoundsJoined": "BATTLE36_LoadableActor_our_1002_model_1002|0.023/0.951/0|1.053/2.014/0"
+        },
+        {
+          "frame": 6,
+          "meshVertexCount": 736,
+          "meshTriangleIndexCount": 2028,
+          "meshHash": "81c28bc0",
+          "meshBoundsJoined": "BATTLE36_LoadableActor_our_1002_model_1002|0.472/1.384/0|1.468/2.88/0"
+        },
+        {
+          "frame": 7,
+          "meshVertexCount": 736,
+          "meshTriangleIndexCount": 2028,
+          "meshHash": "1b160427",
+          "meshBoundsJoined": "BATTLE36_LoadableActor_our_1002_model_1002|0.424/1.384/0|1.552/2.88/0"
+        },
+        {
+          "frame": 8,
+          "meshVertexCount": 736,
+          "meshTriangleIndexCount": 2028,
+          "meshHash": "1855c587",
+          "meshBoundsJoined": "BATTLE36_LoadableActor_our_1002_model_1002|0.399/1.384/0|1.59/2.88/0"
+        },
+        {
+          "frame": 9,
+          "meshVertexCount": 736,
+          "meshTriangleIndexCount": 2028,
+          "meshHash": "9631fdf6",
+          "meshBoundsJoined": "BATTLE36_LoadableActor_our_1002_model_1002|0.4/1.384/0|1.576/2.881/0"
+        },
+        {
+          "frame": 10,
+          "meshVertexCount": 736,
+          "meshTriangleIndexCount": 2028,
+          "meshHash": "e2203c38",
+          "meshBoundsJoined": "BATTLE36_LoadableActor_our_1002_model_1002|0.405/1.384/0|1.555/2.881/0"
+        },
+        {
+          "frame": 11,
+          "meshVertexCount": 736,
+          "meshTriangleIndexCount": 2028,
+          "meshHash": "d41ec5c8",
+          "meshBoundsJoined": "BATTLE36_LoadableActor_our_1002_model_1002|0.416/1.384/0|1.519/2.881/0"
+        }
+      ]
+    },
+    {
+      "side": "our",
+      "heroDid": "1034",
+      "modelId": "1034",
+      "expectedAnimation": "skill1",
+      "animationCandidates": [
+        "skill1",
+        "stand",
+        "ult"
+      ],
+      "bundle": "download/roleprefabsandres/battleprefabandres/1034.assetbundle",
+      "prefabAsset": "assets/download/roleprefabsandres/battleprefabandres/1034/hero_1034.prefab",
+      "bundleLoaded": true,
+      "prefabInstantiated": true,
+      "missingScriptCount": 0,
+      "skeletonAnimationComponentCount": 1,
+      "skeletonAnimationAssembly": "spine-unity",
+      "serializedAnimationName": "skill1",
+      "initialValid": true,
+      "initializeCalled": true,
+      "afterInitializeValid": true,
+      "skeletonDataAssetName": "1034_SkeletonData",
+      "skeletonDataAssetType": "Spine.Unity.SkeletonDataAsset",
+      "skeletonDataAssetIsLoaded": true,
+      "skeletonDataAssetScale": 0.01,
+      "skeletonJsonName": "1034.skel",
+      "skeletonDataNull": false,
+      "skeletonDataException": "",
+      "boneCount": 187,
+      "slotCount": 113,
+      "skinCount": 1,
+      "animationCount": 24,
+      "animationNames": [
+        "air",
+        "attack",
+        "change",
+        "death",
+        "fall",
+        "fall_lie",
+        "fight",
+        "frozen",
+        "gedang",
+        "getup",
+        "getup2",
+        "guidao",
+        "lie",
+        "run",
+        "skill1",
+        "stand",
+        "strike",
+        "strike_air",
+        "strike_fly",
+        "thunder",
+        "ult",
+        "ultx",
+        "vertigo",
+        "wait"
+      ],
+      "expectedAnimationInRuntime": true,
+      "skeletonRuntimeNonNull": true,
+      "animationStateNonNull": true,
+      "animationStateSetSucceeded": true,
+      "animationStateUsedName": "skill1",
+      "animationFallbackUsed": false,
+      "updateFloatCalled": true,
+      "lateUpdateCalled": true,
+      "meshGeneratorNonNull": true,
+      "meshGeneratorType": "Spine.Unity.MeshGenerator",
+      "meshVertexCountBefore": 1283,
+      "meshVertexCountAfter": 1283,
+      "meshHashBefore": "89f2e657",
+      "meshHashAfter": "4ff29069",
+      "meshHashChangedFrameCount": 11,
+      "meshBoundsChangedFrameCount": 11,
+      "realMeshUpdated": true,
+      "unsupportedShaderMaterialCount": 7,
+      "internalErrorShaderMaterialCount": 0,
+      "motionReplayStatus": "mesh_changes_after_update_float_but_clip05_motion_not_verified",
+      "failReason": "",
+      "runtimeException": "",
+      "animationStateException": "",
+      "trackEntryException": "",
+      "atlasAssetNames": [
+        "1034_Atlas|Spine.Unity.SpineAtlasAsset"
+      ],
+      "atlasMaterialInfos": [
+        "1034_Material|shader=Spine/Skeleton Tint|supported=false|passCount=3|mainTex=1034(2048x1024)|renderQueue=2000",
+        "1034_Material|shader=Spine/Skeleton Tint|supported=false|passCount=3|mainTex=1034(2048x1024)|renderQueue=2000",
+        "1034_Material|shader=Spine/Skeleton Tint|supported=false|passCount=3|mainTex=1034(2048x1024)|renderQueue=2000"
+      ],
+      "atlasTextureInfos": [
+        "1034(2048x1024)",
+        "1034(2048x1024)",
+        "1034(2048x1024)"
+      ],
+      "textureNames": [
+        "1034(2048x1024)"
+      ],
+      "bundleMaterialNames": [
+        "1034_Material-Screen|shader=Spine/Blend Modes/Skeleton PMA Screen|supported=false|passCount=3|mainTex=1034(2048x1024)|renderQueue=2000",
+        "1034_Material|shader=Spine/Skeleton Tint|supported=false|passCount=3|mainTex=1034(2048x1024)|renderQueue=2000"
+      ],
+      "rendererMaterialBefore": [
+        "1034_Material|shader=Spine/Skeleton Tint|supported=false|passCount=3|mainTex=1034(2048x1024)|renderQueue=2000",
+        "1034_Material-Screen|shader=Spine/Blend Modes/Skeleton PMA Screen|supported=false|passCount=3|mainTex=1034(2048x1024)|renderQueue=2000"
+      ],
+      "rendererMaterialAfter": [
+        "1034_Material|shader=Spine/Skeleton Tint|supported=false|passCount=3|mainTex=1034(2048x1024)|renderQueue=2000",
+        "1034_Material-Screen|shader=Spine/Blend Modes/Skeleton PMA Screen|supported=false|passCount=3|mainTex=1034(2048x1024)|renderQueue=2000"
+      ],
+      "skeletonLikeAssets": [
+        "assets/download/roleprefabsandres/battleprefabandres/1034/1034.atlas.txt",
+        "assets/download/roleprefabsandres/battleprefabandres/1034/1034.skel.bytes",
+        "assets/download/roleprefabsandres/battleprefabandres/1034/1034_atlas.asset",
+        "assets/download/roleprefabsandres/battleprefabandres/1034/1034_skeletondata.asset"
+      ],
+      "trackEntries": [
+        "0|skill1|track=0.033|anim=0.033",
+        "1|skill1|track=0.067|anim=0.067",
+        "2|skill1|track=0.1|anim=0.1",
+        "3|skill1|track=0.133|anim=0.133",
+        "4|skill1|track=0.167|anim=0.167",
+        "5|skill1|track=0.2|anim=0.2",
+        "6|skill1|track=0.233|anim=0.233",
+        "7|skill1|track=0.267|anim=0.267",
+        "8|skill1|track=0.3|anim=0.3",
+        "9|skill1|track=0.333|anim=0.333",
+        "10|skill1|track=0.367|anim=0.367",
+        "11|skill1|track=0.4|anim=0.4"
+      ],
+      "frameSnapshots": [
+        {
+          "frame": 0,
+          "meshVertexCount": 1283,
+          "meshTriangleIndexCount": 3381,
+          "meshHash": "51434dff",
+          "meshBoundsJoined": "BATTLE36_LoadableActor_our_1034_model_1034|0.258/1.29/0|4.947/2.883/0"
+        },
+        {
+          "frame": 1,
+          "meshVertexCount": 1283,
+          "meshTriangleIndexCount": 3381,
+          "meshHash": "45fb5345",
+          "meshBoundsJoined": "BATTLE36_LoadableActor_our_1034_model_1034|0.265/1.294/0|4.933/2.869/0"
+        },
+        {
+          "frame": 2,
+          "meshVertexCount": 1283,
+          "meshTriangleIndexCount": 3381,
+          "meshHash": "355c420f",
+          "meshBoundsJoined": "BATTLE36_LoadableActor_our_1034_model_1034|0.277/1.3/0|4.908/2.844/0"
+        },
+        {
+          "frame": 3,
+          "meshVertexCount": 1283,
+          "meshTriangleIndexCount": 3381,
+          "meshHash": "63d85cc3",
+          "meshBoundsJoined": "BATTLE36_LoadableActor_our_1034_model_1034|0.293/1.306/0|4.876/2.815/0"
+        },
+        {
+          "frame": 4,
+          "meshVertexCount": 1283,
+          "meshTriangleIndexCount": 3381,
+          "meshHash": "8731b259",
+          "meshBoundsJoined": "BATTLE36_LoadableActor_our_1034_model_1034|0.309/1.308/0|4.845/2.793/0"
+        },
+        {
+          "frame": 5,
+          "meshVertexCount": 1283,
+          "meshTriangleIndexCount": 3381,
+          "meshHash": "707a4924",
+          "meshBoundsJoined": "BATTLE36_LoadableActor_our_1034_model_1034|0.323/1.303/0|4.815/2.784/0"
+        },
+        {
+          "frame": 6,
+          "meshVertexCount": 1283,
+          "meshTriangleIndexCount": 3381,
+          "meshHash": "65008dbe",
+          "meshBoundsJoined": "BATTLE36_LoadableActor_our_1034_model_1034|0.335/1.299/0|4.791/2.776/0"
+        },
+        {
+          "frame": 7,
+          "meshVertexCount": 1283,
+          "meshTriangleIndexCount": 3381,
+          "meshHash": "3f913a37",
+          "meshBoundsJoined": "BATTLE36_LoadableActor_our_1034_model_1034|0.345/1.295/0|4.771/2.769/0"
+        },
+        {
+          "frame": 8,
+          "meshVertexCount": 1283,
+          "meshTriangleIndexCount": 3381,
+          "meshHash": "006588a2",
+          "meshBoundsJoined": "BATTLE36_LoadableActor_our_1034_model_1034|0.354/1.286/0|4.754/2.776/0"
+        },
+        {
+          "frame": 9,
+          "meshVertexCount": 1283,
+          "meshTriangleIndexCount": 3381,
+          "meshHash": "f0d07e1e",
+          "meshBoundsJoined": "BATTLE36_LoadableActor_our_1034_model_1034|0.36/1.276/0|4.741/2.786/0"
+        },
+        {
+          "frame": 10,
+          "meshVertexCount": 1283,
+          "meshTriangleIndexCount": 3381,
+          "meshHash": "3c994dfd",
+          "meshBoundsJoined": "BATTLE36_LoadableActor_our_1034_model_1034|0.365/1.27/0|4.732/2.792/0"
+        },
+        {
+          "frame": 11,
+          "meshVertexCount": 1283,
+          "meshTriangleIndexCount": 3381,
+          "meshHash": "4ff29069",
+          "meshBoundsJoined": "BATTLE36_LoadableActor_our_1034_model_1034|0.37/1.263/0|4.722/2.798/0"
+        }
+      ]
+    },
+    {
+      "side": "enemy",
+      "heroDid": "1100111",
+      "modelId": "3001",
+      "expectedAnimation": "attack",
+      "animationCandidates": [
+        "attack",
+        "attackR",
+        "stand",
+        "run1"
+      ],
+      "bundle": "download/roleprefabsandres/battleprefabandres/3001.assetbundle",
+      "prefabAsset": "assets/download/roleprefabsandres/battleprefabandres/3001/hero_3001.prefab",
+      "bundleLoaded": true,
+      "prefabInstantiated": true,
+      "missingScriptCount": 0,
+      "skeletonAnimationComponentCount": 1,
+      "skeletonAnimationAssembly": "spine-unity",
+      "serializedAnimationName": "attack",
+      "initialValid": true,
+      "initializeCalled": true,
+      "afterInitializeValid": true,
+      "skeletonDataAssetName": "3001_SkeletonData",
+      "skeletonDataAssetType": "Spine.Unity.SkeletonDataAsset",
+      "skeletonDataAssetIsLoaded": true,
+      "skeletonDataAssetScale": 0.01,
+      "skeletonJsonName": "3001.skel",
+      "skeletonDataNull": false,
+      "skeletonDataException": "",
+      "boneCount": 56,
+      "slotCount": 28,
+      "skinCount": 1,
+      "animationCount": 20,
+      "animationNames": [
+        "air",
+        "attack",
+        "change",
+        "death",
+        "fall",
+        "fall_lie",
+        "fight",
+        "frozen",
+        "getup",
+        "lie",
+        "run",
+        "run1",
+        "skill1",
+        "stand",
+        "strike",
+        "strike_air",
+        "strike_fly",
+        "thunder",
+        "vertigo",
+        "wait"
+      ],
+      "expectedAnimationInRuntime": true,
+      "skeletonRuntimeNonNull": true,
+      "animationStateNonNull": true,
+      "animationStateSetSucceeded": true,
+      "animationStateUsedName": "attack",
+      "animationFallbackUsed": false,
+      "updateFloatCalled": true,
+      "lateUpdateCalled": true,
+      "meshGeneratorNonNull": true,
+      "meshGeneratorType": "Spine.Unity.MeshGenerator",
+      "meshVertexCountBefore": 611,
+      "meshVertexCountAfter": 611,
+      "meshHashBefore": "a9289bda",
+      "meshHashAfter": "9188edc9",
+      "meshHashChangedFrameCount": 11,
+      "meshBoundsChangedFrameCount": 11,
+      "realMeshUpdated": true,
+      "unsupportedShaderMaterialCount": 5,
+      "internalErrorShaderMaterialCount": 0,
+      "motionReplayStatus": "mesh_changes_after_update_float_but_clip05_motion_not_verified",
+      "failReason": "",
+      "runtimeException": "",
+      "animationStateException": "",
+      "trackEntryException": "",
+      "atlasAssetNames": [
+        "3001_Atlas|Spine.Unity.SpineAtlasAsset"
+      ],
+      "atlasMaterialInfos": [
+        "3001_Material|shader=Spine/Skeleton Tint|supported=false|passCount=3|mainTex=3001(512x512)|renderQueue=2000",
+        "3001_Material|shader=Spine/Skeleton Tint|supported=false|passCount=3|mainTex=3001(512x512)|renderQueue=2000",
+        "3001_Material|shader=Spine/Skeleton Tint|supported=false|passCount=3|mainTex=3001(512x512)|renderQueue=2000"
+      ],
+      "atlasTextureInfos": [
+        "3001(512x512)",
+        "3001(512x512)",
+        "3001(512x512)"
+      ],
+      "textureNames": [
+        "3001(512x512)"
+      ],
+      "bundleMaterialNames": [
+        "3001_Material|shader=Spine/Skeleton Tint|supported=false|passCount=3|mainTex=3001(512x512)|renderQueue=2000"
+      ],
+      "rendererMaterialBefore": [
+        "3001_Material|shader=Spine/Skeleton Tint|supported=false|passCount=3|mainTex=3001(512x512)|renderQueue=2000"
+      ],
+      "rendererMaterialAfter": [
+        "3001_Material|shader=Spine/Skeleton Tint|supported=false|passCount=3|mainTex=3001(512x512)|renderQueue=2000"
+      ],
+      "skeletonLikeAssets": [
+        "assets/download/roleprefabsandres/battleprefabandres/3001/3001.atlas.txt",
+        "assets/download/roleprefabsandres/battleprefabandres/3001/3001.skel.bytes",
+        "assets/download/roleprefabsandres/battleprefabandres/3001/3001_atlas.asset",
+        "assets/download/roleprefabsandres/battleprefabandres/3001/3001_skeletondata.asset"
+      ],
+      "trackEntries": [
+        "0|attack|track=0.033|anim=0.033",
+        "1|attack|track=0.067|anim=0.067",
+        "2|attack|track=0.1|anim=0.1",
+        "3|attack|track=0.133|anim=0.133",
+        "4|attack|track=0.167|anim=0.167",
+        "5|attack|track=0.2|anim=0.2",
+        "6|attack|track=0.233|anim=0.233",
+        "7|attack|track=0.267|anim=0.267",
+        "8|attack|track=0.3|anim=0.3",
+        "9|attack|track=0.333|anim=0.333",
+        "10|attack|track=0.367|anim=0.367",
+        "11|attack|track=0.4|anim=0.4"
+      ],
+      "frameSnapshots": [
+        {
+          "frame": 0,
+          "meshVertexCount": 611,
+          "meshTriangleIndexCount": 2103,
+          "meshHash": "dc6f6652",
+          "meshBoundsJoined": "BATTLE36_LoadableActor_enemy_1100111_model_3001|0.166/0.747/0|2.634/1.736/0"
+        },
+        {
+          "frame": 1,
+          "meshVertexCount": 611,
+          "meshTriangleIndexCount": 2103,
+          "meshHash": "936000af",
+          "meshBoundsJoined": "BATTLE36_LoadableActor_enemy_1100111_model_3001|0.245/0.697/0|2.701/1.631/0"
+        },
+        {
+          "frame": 2,
+          "meshVertexCount": 611,
+          "meshTriangleIndexCount": 2097,
+          "meshHash": "ae0b64f2",
+          "meshBoundsJoined": "BATTLE36_LoadableActor_enemy_1100111_model_3001|0.445/0.882/0|2.636/1.721/0"
+        },
+        {
+          "frame": 3,
+          "meshVertexCount": 611,
+          "meshTriangleIndexCount": 2097,
+          "meshHash": "ea530d26",
+          "meshBoundsJoined": "BATTLE36_LoadableActor_enemy_1100111_model_3001|0.521/1.016/0|2.538/1.712/0"
+        },
+        {
+          "frame": 4,
+          "meshVertexCount": 611,
+          "meshTriangleIndexCount": 2097,
+          "meshHash": "1701728d",
+          "meshBoundsJoined": "BATTLE36_LoadableActor_enemy_1100111_model_3001|0.566/1.102/0|2.471/1.655/0"
+        },
+        {
+          "frame": 5,
+          "meshVertexCount": 611,
+          "meshTriangleIndexCount": 2097,
+          "meshHash": "9276f719",
+          "meshBoundsJoined": "BATTLE36_LoadableActor_enemy_1100111_model_3001|0.332/1.015/0|2.543/1.794/0"
+        },
+        {
+          "frame": 6,
+          "meshVertexCount": 611,
+          "meshTriangleIndexCount": 2097,
+          "meshHash": "fe5a49b0",
+          "meshBoundsJoined": "BATTLE36_LoadableActor_enemy_1100111_model_3001|0.094/0.999/0|2.602/1.77/0"
+        },
+        {
+          "frame": 7,
+          "meshVertexCount": 611,
+          "meshTriangleIndexCount": 2097,
+          "meshHash": "b23c550f",
+          "meshBoundsJoined": "BATTLE36_LoadableActor_enemy_1100111_model_3001|-0.15/0.934/0|2.647/1.825/0"
+        },
+        {
+          "frame": 8,
+          "meshVertexCount": 611,
+          "meshTriangleIndexCount": 2097,
+          "meshHash": "8a11a6f7",
+          "meshBoundsJoined": "BATTLE36_LoadableActor_enemy_1100111_model_3001|-0.399/0.969/0|2.678/1.682/0"
+        },
+        {
+          "frame": 9,
+          "meshVertexCount": 611,
+          "meshTriangleIndexCount": 2097,
+          "meshHash": "c262f7ef",
+          "meshBoundsJoined": "BATTLE36_LoadableActor_enemy_1100111_model_3001|-0.302/0.818/0|2.701/1.722/0"
+        },
+        {
+          "frame": 10,
+          "meshVertexCount": 611,
+          "meshTriangleIndexCount": 2097,
+          "meshHash": "cd1c9a0d",
+          "meshBoundsJoined": "BATTLE36_LoadableActor_enemy_1100111_model_3001|0.096/0.706/0|2.674/1.7/0"
+        },
+        {
+          "frame": 11,
+          "meshVertexCount": 611,
+          "meshTriangleIndexCount": 2097,
+          "meshHash": "9188edc9",
+          "meshBoundsJoined": "BATTLE36_LoadableActor_enemy_1100111_model_3001|0.478/0.636/0|2.601/1.558/0"
+        }
+      ]
+    }
+  ],
+  "unityProbe": {
+    "verdict": "battle36_trace_real_spine_initialize_skeletondata_material_shader_binding",
+    "visual_status": "failed_clip05_actor_motion_not_verified",
+    "isFinalRestoredBattleScreen": false,
+    "scene": "Assets/Scenes/Battle36TraceRealSpineInitializeSkeletonDataMaterialShaderBinding.unity",
+    "capture": "Assets/RestoreCaptures/battle_actor/Battle36TraceRealSpineInitializeSkeletonDataMaterialShaderBinding_1920x1080.png",
+    "runtimeTypePresence": {
+      "SkeletonAnimation": true,
+      "SkeletonRenderer": true,
+      "SkeletonDataAsset": true,
+      "AtlasAsset": true,
+      "MeshGenerator": true,
+      "SkeletonBinary": true,
+      "AnimationState": true,
+      "AtlasAttachmentLoader": true,
+      "realRuntimePresent": true
+    },
+    "summary": {
+      "targetActorCount": 3,
+      "componentRowCount": 3,
+      "bundleLoadSuccess": 3,
+      "prefabInstantiateSuccess": 3,
+      "skeletonAnimationComponentCount": 3,
+      "initializeCalledCount": 3,
+      "skeletonDataNullCount": 0,
+      "meshGeneratorNonNullCount": 3,
+      "animationStateSetSucceededCount": 3,
+      "updateFloatCalledCount": 3,
+      "realMeshUpdatedCount": 3,
+      "unsupportedShaderMaterialCount": 17,
+      "internalErrorShaderMaterialCount": 0
+    },
+    "shaderDependency": {
+      "bundle": "download/commonprefabsandres/spinematandshaders.assetbundle",
+      "absolutePath": "C:/Users/godho/Downloads/girlswar/girlswar_merged_extracted/extracted/unity/clean_unityfs_slices\\download\\commonprefabsandres\\spinematandshaders.assetbundle",
+      "fileExists": true,
+      "fileSize": 63614,
+      "loaded": true,
+      "status": "loaded",
+      "shaderNames": [
+        "Spine/Blend Modes/Skeleton PMA Additive|supported=false|passCount=3",
+        "Spine/Blend Modes/Skeleton PMA Multiply|supported=false|passCount=3",
+        "Spine/Blend Modes/Skeleton PMA Screen|supported=false|passCount=3",
+        "Spine/Outline/Blend Modes/Skeleton PMA Additive|supported=true|passCount=3",
+        "Spine/Outline/Blend Modes/Skeleton PMA Multiply|supported=true|passCount=3",
+        "Spine/Outline/Blend Modes/Skeleton PMA Screen|supported=true|passCount=3",
+        "Spine/Outline/SkeletonGraphic|supported=true|passCount=3",
+        "Spine/Outline/SkeletonGraphic Tint Black|supported=true|passCount=3",
+        "Spine/Outline/Skeleton Fill|supported=true|passCount=4",
+        "Spine/Outline/Skeleton Lit|supported=true|passCount=3",
+        "Spine/Outline/Skeleton Lit ZWrite|supported=true|passCount=3",
+        "Spine/Outline/Skeleton|supported=true|passCount=3",
+        "Spine/Outline/OutlineOnly-ZWrite|supported=true|passCount=3",
+        "Spine/Outline/Skeleton Tint|supported=true|passCount=3",
+        "Spine/Outline/Skeleton Tint Black|supported=true|passCount=4",
+        "Spine/Outline/Special/Skeleton Grayscale|supported=true|passCount=4",
+        "Spine/Outline/Sprite/Pixel Lit|supported=false|passCount=3",
+        "Spine/Outline/Sprite/Unlit|supported=false|passCount=3",
+        "Spine/Outline/Sprite/Vertex Lit|supported=false|passCount=3",
+        "Spine/SkeletonGraphic Additive|supported=false|passCount=3",
+        "Spine/SkeletonGraphic Multiply|supported=false|passCount=3",
+        "Spine/SkeletonGraphic Screen|supported=false|passCount=3",
+        "Spine/SkeletonGraphic Tint Black|supported=false|passCount=3",
+        "Spine/SkeletonGraphic|supported=false|passCount=3",
+        "Spine/Skeleton Fill|supported=true|passCount=4",
+        "Spine/Skeleton Lit ZWrite|supported=false|passCount=3",
+        "Spine/Skeleton Lit|supported=false|passCount=3",
+        "Spine/Skeleton Tint|supported=false|passCount=3",
+        "Spine/Skeleton Tint Black|supported=false|passCount=3",
+        "Spine/Skeleton|supported=false|passCount=3",
+        "Spine/Special/Skeleton Grayscale|supported=true|passCount=4"
+      ],
+      "materialNames": [
+        "SkeletonGraphicDefault|shader=Spine/SkeletonGraphic|supported=false|passCount=3|mainTex=|renderQueue=2000",
+        "SkeletonGraphicDefaultAlpha|shader=Spine/SkeletonGraphic|supported=false|passCount=3|mainTex=|renderQueue=2000",
+        "SkeletonGraphicDefaultGrayscale|shader=Spine/Special/Skeleton Grayscale|supported=true|passCount=4|mainTex=|renderQueue=2000",
+        "SkeletonGraphicAdditive|shader=Spine/SkeletonGraphic Additive|supported=false|passCount=3|mainTex=|renderQueue=2000",
+        "SkeletonGraphicDefault|shader=Spine/SkeletonGraphic|supported=false|passCount=3|mainTex=|renderQueue=2000",
+        "SkeletonGraphicDefaultGrayscale|shader=Spine/Special/Skeleton Grayscale|supported=true|passCount=4|mainTex=|renderQueue=2000",
+        "SkeletonGraphicDefaultOutline|shader=Spine/Outline/SkeletonGraphic|supported=true|passCount=3|mainTex=|renderQueue=2000",
+        "SkeletonGraphicMultiply|shader=Spine/SkeletonGraphic Multiply|supported=false|passCount=3|mainTex=|renderQueue=2000",
+        "SkeletonGraphicScreen|shader=Spine/SkeletonGraphic Screen|supported=false|passCount=3|mainTex=|renderQueue=2000",
+        "SkeletonGraphicTintBlack|shader=Spine/SkeletonGraphic Tint Black|supported=false|passCount=3|mainTex=|renderQueue=2000",
+        "SkeletonGraphicTintBlackOutline|shader=Spine/Outline/SkeletonGraphic Tint Black|supported=true|passCount=3|mainTex=|renderQueue=2000"
+      ],
+      "assetTypes": [
+        "assets/download/commonprefabsandres/spinematandshaders/skeletongraphicdefault.mat|UnityEngine.Material",
+        "assets/download/commonprefabsandres/spinematandshaders/skeletongraphicdefaultalpha.mat|UnityEngine.Material",
+        "assets/download/commonprefabsandres/spinematandshaders/skeletongraphicdefaultgrayscale.mat|UnityEngine.Material",
+        "assets/download/commonprefabsandres/spinematandshaders/spinematerials/skeletongraphicadditive.mat|UnityEngine.Material",
+        "assets/download/commonprefabsandres/spinematandshaders/spinematerials/skeletongraphicdefault.mat|UnityEngine.Material",
+        "assets/download/commonprefabsandres/spinematandshaders/spinematerials/skeletongraphicdefaultgrayscale.mat|UnityEngine.Material",
+        "assets/download/commonprefabsandres/spinematandshaders/spinematerials/skeletongraphicdefaultoutline.mat|UnityEngine.Material",
+        "assets/download/commonprefabsandres/spinematandshaders/spinematerials/skeletongraphicmultiply.mat|UnityEngine.Material",
+        "assets/download/commonprefabsandres/spinematandshaders/spinematerials/skeletongraphicscreen.mat|UnityEngine.Material",
+        "assets/download/commonprefabsandres/spinematandshaders/spinematerials/skeletongraphictintblack.mat|UnityEngine.Material",
+        "assets/download/commonprefabsandres/spinematandshaders/spinematerials/skeletongraphictintblackoutline.mat|UnityEngine.Material",
+        "assets/download/commonprefabsandres/spinematandshaders/spineshaders/blendmodes/spine-skeleton-pma-additive.shader|UnityEngine.Shader",
+        "assets/download/commonprefabsandres/spinematandshaders/spineshaders/blendmodes/spine-skeleton-pma-multiply.shader|UnityEngine.Shader",
+        "assets/download/commonprefabsandres/spinematandshaders/spineshaders/blendmodes/spine-skeleton-pma-screen.shader|UnityEngine.Shader",
+        "assets/download/commonprefabsandres/spinematandshaders/spineshaders/outline/blendmodes/spine-skeleton-pma-additive-outline.shader|UnityEngine.Shader",
+        "assets/download/commonprefabsandres/spinematandshaders/spineshaders/outline/blendmodes/spine-skeleton-pma-multiply-outline.shader|UnityEngine.Shader",
+        "assets/download/commonprefabsandres/spinematandshaders/spineshaders/outline/blendmodes/spine-skeleton-pma-screen-outline.shader|UnityEngine.Shader",
+        "assets/download/commonprefabsandres/spinematandshaders/spineshaders/outline/skeletongraphic/spine-skeletongraphic-outline.shader|UnityEngine.Shader",
+        "assets/download/commonprefabsandres/spinematandshaders/spineshaders/outline/skeletongraphic/spine-skeletongraphic-tintblack-outline.shader|UnityEngine.Shader",
+        "assets/download/commonprefabsandres/spinematandshaders/spineshaders/outline/spine-skeleton-fill-outline.shader|UnityEngine.Shader",
+        "assets/download/commonprefabsandres/spinematandshaders/spineshaders/outline/spine-skeleton-lit-outline.shader|UnityEngine.Shader",
+        "assets/download/commonprefabsandres/spinematandshaders/spineshaders/outline/spine-skeleton-lit-zwrite-outline.shader|UnityEngine.Shader",
+        "assets/download/commonprefabsandres/spinematandshaders/spineshaders/outline/spine-skeleton-outline.shader|UnityEngine.Shader",
+        "assets/download/commonprefabsandres/spinematandshaders/spineshaders/outline/spine-skeleton-outlineonly-zwrite.shader|UnityEngine.Shader",
+        "assets/download/commonprefabsandres/spinematandshaders/spineshaders/outline/spine-skeleton-tint-outline.shader|UnityEngine.Shader",
+        "assets/download/commonprefabsandres/spinematandshaders/spineshaders/outline/spine-skeleton-tintblack-outline.shader|UnityEngine.Shader",
+        "assets/download/commonprefabsandres/spinematandshaders/spineshaders/outline/spine-special-skeleton-grayscale-outline.shader|UnityEngine.Shader",
+        "assets/download/commonprefabsandres/spinematandshaders/spineshaders/outline/sprite/spritespixellit-outline.shader|UnityEngine.Shader",
+        "assets/download/commonprefabsandres/spinematandshaders/spineshaders/outline/sprite/spritesunlit-outline.shader|UnityEngine.Shader",
+        "assets/download/commonprefabsandres/spinematandshaders/spineshaders/outline/sprite/spritesvertexlit-outline.shader|UnityEngine.Shader",
+        "assets/download/commonprefabsandres/spinematandshaders/spineshaders/skeletongraphic/spine-skeletongraphic-additive.shader|UnityEngine.Shader",
+        "assets/download/commonprefabsandres/spinematandshaders/spineshaders/skeletongraphic/spine-skeletongraphic-multiply.shader|UnityEngine.Shader",
+        "assets/download/commonprefabsandres/spinematandshaders/spineshaders/skeletongraphic/spine-skeletongraphic-screen.shader|UnityEngine.Shader",
+        "assets/download/commonprefabsandres/spinematandshaders/spineshaders/skeletongraphic/spine-skeletongraphic-tintblack.shader|UnityEngine.Shader",
+        "assets/download/commonprefabsandres/spinematandshaders/spineshaders/skeletongraphic/spine-skeletongraphic.shader|UnityEngine.Shader",
+        "assets/download/commonprefabsandres/spinematandshaders/spineshaders/spine-skeleton-fill.shader|UnityEngine.Shader",
+        "assets/download/commonprefabsandres/spinematandshaders/spineshaders/spine-skeleton-lit-zwrite.shader|UnityEngine.Shader",
+        "assets/download/commonprefabsandres/spinematandshaders/spineshaders/spine-skeleton-lit.shader|UnityEngine.Shader",
+        "assets/download/commonprefabsandres/spinematandshaders/spineshaders/spine-skeleton-tint.shader|UnityEngine.Shader",
+        "assets/download/commonprefabsandres/spinematandshaders/spineshaders/spine-skeleton-tintblack.shader|UnityEngine.Shader",
+        "assets/download/commonprefabsandres/spinematandshaders/spineshaders/spine-skeleton.shader|UnityEngine.Shader",
+        "assets/download/commonprefabsandres/spinematandshaders/spineshaders/spine-special-skeleton-grayscale.shader|UnityEngine.Shader",
+        "assets/download/commonprefabsandres/spinematandshaders/spineshadersvariantcollection.shadervariants|UnityEngine.ShaderVariantCollection"
+      ],
+      "loadExceptions": []
+    },
+    "actors": [
+      {
+        "side": "our",
+        "heroDid": "1002",
+        "modelId": "1002",
+        "expectedAnimation": "ult",
+        "animationCandidates": [
+          "ult",
+          "stand",
+          "skill1"
+        ],
+        "bundle": "download/roleprefabsandres/battleprefabandres/1002.assetbundle",
+        "prefabAsset": "assets/download/roleprefabsandres/battleprefabandres/1002/hero_1002.prefab",
+        "bundleLoaded": true,
+        "prefabInstantiated": true,
+        "missingScriptCount": 0,
+        "skeletonAnimationComponentCount": 1,
+        "skeletonAnimationAssembly": "spine-unity",
+        "serializedAnimationName": "ult",
+        "initialValid": true,
+        "initializeCalled": true,
+        "afterInitializeValid": true,
+        "skeletonDataAssetName": "1002_SkeletonData",
+        "skeletonDataAssetType": "Spine.Unity.SkeletonDataAsset",
+        "skeletonDataAssetIsLoaded": true,
+        "skeletonDataAssetScale": 0.01,
+        "skeletonJsonName": "1002.skel",
+        "skeletonDataNull": false,
+        "skeletonDataException": "",
+        "boneCount": 96,
+        "slotCount": 246,
+        "skinCount": 1,
+        "animationCount": 23,
+        "animationNames": [
+          "air",
+          "attack",
+          "change",
+          "death",
+          "fall",
+          "fall_lie",
+          "fight",
+          "frozen",
+          "gedang",
+          "getup",
+          "guidao",
+          "lie",
+          "run",
+          "skill1",
+          "stand",
+          "strike",
+          "strike_air",
+          "strike_fly",
+          "thunder",
+          "ult",
+          "ultx",
+          "vertigo",
+          "wait"
+        ],
+        "expectedAnimationInRuntime": true,
+        "skeletonRuntimeNonNull": true,
+        "animationStateNonNull": true,
+        "animationStateSetSucceeded": true,
+        "animationStateUsedName": "ult",
+        "animationFallbackUsed": false,
+        "updateFloatCalled": true,
+        "lateUpdateCalled": true,
+        "meshGeneratorNonNull": true,
+        "meshGeneratorType": "Spine.Unity.MeshGenerator",
+        "meshVertexCountBefore": 732,
+        "meshVertexCountAfter": 736,
+        "meshHashBefore": "efb98e59",
+        "meshHashAfter": "d41ec5c8",
+        "meshHashChangedFrameCount": 11,
+        "meshBoundsChangedFrameCount": 10,
+        "realMeshUpdated": true,
+        "unsupportedShaderMaterialCount": 5,
+        "internalErrorShaderMaterialCount": 0,
+        "motionReplayStatus": "mesh_changes_after_update_float_but_clip05_motion_not_verified",
+        "failReason": "",
+        "runtimeException": "",
+        "animationStateException": "",
+        "trackEntryException": "",
+        "atlasAssetNames": [
+          "1002_Atlas|Spine.Unity.SpineAtlasAsset"
+        ],
+        "atlasMaterialInfos": [
+          "1002_Material|shader=Spine/Skeleton Tint|supported=false|passCount=3|mainTex=1002(1024x512)|renderQueue=2000",
+          "1002_Material|shader=Spine/Skeleton Tint|supported=false|passCount=3|mainTex=1002(1024x512)|renderQueue=2000",
+          "1002_Material|shader=Spine/Skeleton Tint|supported=false|passCount=3|mainTex=1002(1024x512)|renderQueue=2000"
+        ],
+        "atlasTextureInfos": [
+          "1002(1024x512)",
+          "1002(1024x512)",
+          "1002(1024x512)"
+        ],
+        "textureNames": [
+          "1002(1024x512)"
+        ],
+        "bundleMaterialNames": [
+          "1002_Material-Screen|shader=Spine/Blend Modes/Skeleton PMA Screen|supported=false|passCount=3|mainTex=1002(1024x512)|renderQueue=2000",
+          "1002_Material|shader=Spine/Skeleton Tint|supported=false|passCount=3|mainTex=1002(1024x512)|renderQueue=2000"
+        ],
+        "rendererMaterialBefore": [
+          "1002_Material|shader=Spine/Skeleton Tint|supported=false|passCount=3|mainTex=1002(1024x512)|renderQueue=2000"
+        ],
+        "rendererMaterialAfter": [
+          "1002_Material|shader=Spine/Skeleton Tint|supported=false|passCount=3|mainTex=1002(1024x512)|renderQueue=2000"
+        ],
+        "skeletonLikeAssets": [
+          "assets/download/roleprefabsandres/battleprefabandres/1002/1002.atlas.txt",
+          "assets/download/roleprefabsandres/battleprefabandres/1002/1002.skel.bytes",
+          "assets/download/roleprefabsandres/battleprefabandres/1002/1002_atlas.asset",
+          "assets/download/roleprefabsandres/battleprefabandres/1002/1002_skeletondata.asset"
+        ],
+        "trackEntries": [
+          "0|ult|track=0.033|anim=0.033",
+          "1|ult|track=0.067|anim=0.067",
+          "2|ult|track=0.1|anim=0.1",
+          "3|ult|track=0.133|anim=0.133",
+          "4|ult|track=0.167|anim=0.167",
+          "5|ult|track=0.2|anim=0.2",
+          "6|ult|track=0.233|anim=0.233",
+          "7|ult|track=0.267|anim=0.267",
+          "8|ult|track=0.3|anim=0.3",
+          "9|ult|track=0.333|anim=0.333",
+          "10|ult|track=0.367|anim=0.367",
+          "11|ult|track=0.4|anim=0.4"
+        ],
+        "frameSnapshots": [
+          {
+            "frame": 0,
+            "meshVertexCount": 732,
+            "meshTriangleIndexCount": 2022,
+            "meshHash": "01b6e806",
+            "meshBoundsJoined": "BATTLE36_LoadableActor_our_1002_model_1002|0.229/0.799/0|1.466/1.711/0"
+          },
+          {
+            "frame": 1,
+            "meshVertexCount": 732,
+            "meshTriangleIndexCount": 2022,
+            "meshHash": "41a6188a",
+            "meshBoundsJoined": "BATTLE36_LoadableActor_our_1002_model_1002|0.152/0.833/0|1.34/1.778/0"
+          },
+          {
+            "frame": 2,
+            "meshVertexCount": 732,
+            "meshTriangleIndexCount": 2022,
+            "meshHash": "b0b9cfd0",
+            "meshBoundsJoined": "BATTLE36_LoadableActor_our_1002_model_1002|0.098/0.904/0|1.237/1.92/0"
+          },
+          {
+            "frame": 3,
+            "meshVertexCount": 732,
+            "meshTriangleIndexCount": 2022,
+            "meshHash": "c910175e",
+            "meshBoundsJoined": "BATTLE36_LoadableActor_our_1002_model_1002|0.048/0.94/0|1.119/1.993/0"
+          },
+          {
+            "frame": 4,
+            "meshVertexCount": 732,
+            "meshTriangleIndexCount": 2022,
+            "meshHash": "757ba435",
+            "meshBoundsJoined": "BATTLE36_LoadableActor_our_1002_model_1002|0.023/0.951/0|1.053/2.014/0"
+          },
+          {
+            "frame": 5,
+            "meshVertexCount": 732,
+            "meshTriangleIndexCount": 2022,
+            "meshHash": "6865ce63",
+            "meshBoundsJoined": "BATTLE36_LoadableActor_our_1002_model_1002|0.023/0.951/0|1.053/2.014/0"
+          },
+          {
+            "frame": 6,
+            "meshVertexCount": 736,
+            "meshTriangleIndexCount": 2028,
+            "meshHash": "81c28bc0",
+            "meshBoundsJoined": "BATTLE36_LoadableActor_our_1002_model_1002|0.472/1.384/0|1.468/2.88/0"
+          },
+          {
+            "frame": 7,
+            "meshVertexCount": 736,
+            "meshTriangleIndexCount": 2028,
+            "meshHash": "1b160427",
+            "meshBoundsJoined": "BATTLE36_LoadableActor_our_1002_model_1002|0.424/1.384/0|1.552/2.88/0"
+          },
+          {
+            "frame": 8,
+            "meshVertexCount": 736,
+            "meshTriangleIndexCount": 2028,
+            "meshHash": "1855c587",
+            "meshBoundsJoined": "BATTLE36_LoadableActor_our_1002_model_1002|0.399/1.384/0|1.59/2.88/0"
+          },
+          {
+            "frame": 9,
+            "meshVertexCount": 736,
+            "meshTriangleIndexCount": 2028,
+            "meshHash": "9631fdf6",
+            "meshBoundsJoined": "BATTLE36_LoadableActor_our_1002_model_1002|0.4/1.384/0|1.576/2.881/0"
+          },
+          {
+            "frame": 10,
+            "meshVertexCount": 736,
+            "meshTriangleIndexCount": 2028,
+            "meshHash": "e2203c38",
+            "meshBoundsJoined": "BATTLE36_LoadableActor_our_1002_model_1002|0.405/1.384/0|1.555/2.881/0"
+          },
+          {
+            "frame": 11,
+            "meshVertexCount": 736,
+            "meshTriangleIndexCount": 2028,
+            "meshHash": "d41ec5c8",
+            "meshBoundsJoined": "BATTLE36_LoadableActor_our_1002_model_1002|0.416/1.384/0|1.519/2.881/0"
+          }
+        ]
+      },
+      {
+        "side": "our",
+        "heroDid": "1034",
+        "modelId": "1034",
+        "expectedAnimation": "skill1",
+        "animationCandidates": [
+          "skill1",
+          "stand",
+          "ult"
+        ],
+        "bundle": "download/roleprefabsandres/battleprefabandres/1034.assetbundle",
+        "prefabAsset": "assets/download/roleprefabsandres/battleprefabandres/1034/hero_1034.prefab",
+        "bundleLoaded": true,
+        "prefabInstantiated": true,
+        "missingScriptCount": 0,
+        "skeletonAnimationComponentCount": 1,
+        "skeletonAnimationAssembly": "spine-unity",
+        "serializedAnimationName": "skill1",
+        "initialValid": true,
+        "initializeCalled": true,
+        "afterInitializeValid": true,
+        "skeletonDataAssetName": "1034_SkeletonData",
+        "skeletonDataAssetType": "Spine.Unity.SkeletonDataAsset",
+        "skeletonDataAssetIsLoaded": true,
+        "skeletonDataAssetScale": 0.01,
+        "skeletonJsonName": "1034.skel",
+        "skeletonDataNull": false,
+        "skeletonDataException": "",
+        "boneCount": 187,
+        "slotCount": 113,
+        "skinCount": 1,
+        "animationCount": 24,
+        "animationNames": [
+          "air",
+          "attack",
+          "change",
+          "death",
+          "fall",
+          "fall_lie",
+          "fight",
+          "frozen",
+          "gedang",
+          "getup",
+          "getup2",
+          "guidao",
+          "lie",
+          "run",
+          "skill1",
+          "stand",
+          "strike",
+          "strike_air",
+          "strike_fly",
+          "thunder",
+          "ult",
+          "ultx",
+          "vertigo",
+          "wait"
+        ],
+        "expectedAnimationInRuntime": true,
+        "skeletonRuntimeNonNull": true,
+        "animationStateNonNull": true,
+        "animationStateSetSucceeded": true,
+        "animationStateUsedName": "skill1",
+        "animationFallbackUsed": false,
+        "updateFloatCalled": true,
+        "lateUpdateCalled": true,
+        "meshGeneratorNonNull": true,
+        "meshGeneratorType": "Spine.Unity.MeshGenerator",
+        "meshVertexCountBefore": 1283,
+        "meshVertexCountAfter": 1283,
+        "meshHashBefore": "89f2e657",
+        "meshHashAfter": "4ff29069",
+        "meshHashChangedFrameCount": 11,
+        "meshBoundsChangedFrameCount": 11,
+        "realMeshUpdated": true,
+        "unsupportedShaderMaterialCount": 7,
+        "internalErrorShaderMaterialCount": 0,
+        "motionReplayStatus": "mesh_changes_after_update_float_but_clip05_motion_not_verified",
+        "failReason": "",
+        "runtimeException": "",
+        "animationStateException": "",
+        "trackEntryException": "",
+        "atlasAssetNames": [
+          "1034_Atlas|Spine.Unity.SpineAtlasAsset"
+        ],
+        "atlasMaterialInfos": [
+          "1034_Material|shader=Spine/Skeleton Tint|supported=false|passCount=3|mainTex=1034(2048x1024)|renderQueue=2000",
+          "1034_Material|shader=Spine/Skeleton Tint|supported=false|passCount=3|mainTex=1034(2048x1024)|renderQueue=2000",
+          "1034_Material|shader=Spine/Skeleton Tint|supported=false|passCount=3|mainTex=1034(2048x1024)|renderQueue=2000"
+        ],
+        "atlasTextureInfos": [
+          "1034(2048x1024)",
+          "1034(2048x1024)",
+          "1034(2048x1024)"
+        ],
+        "textureNames": [
+          "1034(2048x1024)"
+        ],
+        "bundleMaterialNames": [
+          "1034_Material-Screen|shader=Spine/Blend Modes/Skeleton PMA Screen|supported=false|passCount=3|mainTex=1034(2048x1024)|renderQueue=2000",
+          "1034_Material|shader=Spine/Skeleton Tint|supported=false|passCount=3|mainTex=1034(2048x1024)|renderQueue=2000"
+        ],
+        "rendererMaterialBefore": [
+          "1034_Material|shader=Spine/Skeleton Tint|supported=false|passCount=3|mainTex=1034(2048x1024)|renderQueue=2000",
+          "1034_Material-Screen|shader=Spine/Blend Modes/Skeleton PMA Screen|supported=false|passCount=3|mainTex=1034(2048x1024)|renderQueue=2000"
+        ],
+        "rendererMaterialAfter": [
+          "1034_Material|shader=Spine/Skeleton Tint|supported=false|passCount=3|mainTex=1034(2048x1024)|renderQueue=2000",
+          "1034_Material-Screen|shader=Spine/Blend Modes/Skeleton PMA Screen|supported=false|passCount=3|mainTex=1034(2048x1024)|renderQueue=2000"
+        ],
+        "skeletonLikeAssets": [
+          "assets/download/roleprefabsandres/battleprefabandres/1034/1034.atlas.txt",
+          "assets/download/roleprefabsandres/battleprefabandres/1034/1034.skel.bytes",
+          "assets/download/roleprefabsandres/battleprefabandres/1034/1034_atlas.asset",
+          "assets/download/roleprefabsandres/battleprefabandres/1034/1034_skeletondata.asset"
+        ],
+        "trackEntries": [
+          "0|skill1|track=0.033|anim=0.033",
+          "1|skill1|track=0.067|anim=0.067",
+          "2|skill1|track=0.1|anim=0.1",
+          "3|skill1|track=0.133|anim=0.133",
+          "4|skill1|track=0.167|anim=0.167",
+          "5|skill1|track=0.2|anim=0.2",
+          "6|skill1|track=0.233|anim=0.233",
+          "7|skill1|track=0.267|anim=0.267",
+          "8|skill1|track=0.3|anim=0.3",
+          "9|skill1|track=0.333|anim=0.333",
+          "10|skill1|track=0.367|anim=0.367",
+          "11|skill1|track=0.4|anim=0.4"
+        ],
+        "frameSnapshots": [
+          {
+            "frame": 0,
+            "meshVertexCount": 1283,
+            "meshTriangleIndexCount": 3381,
+            "meshHash": "51434dff",
+            "meshBoundsJoined": "BATTLE36_LoadableActor_our_1034_model_1034|0.258/1.29/0|4.947/2.883/0"
+          },
+          {
+            "frame": 1,
+            "meshVertexCount": 1283,
+            "meshTriangleIndexCount": 3381,
+            "meshHash": "45fb5345",
+            "meshBoundsJoined": "BATTLE36_LoadableActor_our_1034_model_1034|0.265/1.294/0|4.933/2.869/0"
+          },
+          {
+            "frame": 2,
+            "meshVertexCount": 1283,
+            "meshTriangleIndexCount": 3381,
+            "meshHash": "355c420f",
+            "meshBoundsJoined": "BATTLE36_LoadableActor_our_1034_model_1034|0.277/1.3/0|4.908/2.844/0"
+          },
+          {
+            "frame": 3,
+            "meshVertexCount": 1283,
+            "meshTriangleIndexCount": 3381,
+            "meshHash": "63d85cc3",
+            "meshBoundsJoined": "BATTLE36_LoadableActor_our_1034_model_1034|0.293/1.306/0|4.876/2.815/0"
+          },
+          {
+            "frame": 4,
+            "meshVertexCount": 1283,
+            "meshTriangleIndexCount": 3381,
+            "meshHash": "8731b259",
+            "meshBoundsJoined": "BATTLE36_LoadableActor_our_1034_model_1034|0.309/1.308/0|4.845/2.793/0"
+          },
+          {
+            "frame": 5,
+            "meshVertexCount": 1283,
+            "meshTriangleIndexCount": 3381,
+            "meshHash": "707a4924",
+            "meshBoundsJoined": "BATTLE36_LoadableActor_our_1034_model_1034|0.323/1.303/0|4.815/2.784/0"
+          },
+          {
+            "frame": 6,
+            "meshVertexCount": 1283,
+            "meshTriangleIndexCount": 3381,
+            "meshHash": "65008dbe",
+            "meshBoundsJoined": "BATTLE36_LoadableActor_our_1034_model_1034|0.335/1.299/0|4.791/2.776/0"
+          },
+          {
+            "frame": 7,
+            "meshVertexCount": 1283,
+            "meshTriangleIndexCount": 3381,
+            "meshHash": "3f913a37",
+            "meshBoundsJoined": "BATTLE36_LoadableActor_our_1034_model_1034|0.345/1.295/0|4.771/2.769/0"
+          },
+          {
+            "frame": 8,
+            "meshVertexCount": 1283,
+            "meshTriangleIndexCount": 3381,
+            "meshHash": "006588a2",
+            "meshBoundsJoined": "BATTLE36_LoadableActor_our_1034_model_1034|0.354/1.286/0|4.754/2.776/0"
+          },
+          {
+            "frame": 9,
+            "meshVertexCount": 1283,
+            "meshTriangleIndexCount": 3381,
+            "meshHash": "f0d07e1e",
+            "meshBoundsJoined": "BATTLE36_LoadableActor_our_1034_model_1034|0.36/1.276/0|4.741/2.786/0"
+          },
+          {
+            "frame": 10,
+            "meshVertexCount": 1283,
+            "meshTriangleIndexCount": 3381,
+            "meshHash": "3c994dfd",
+            "meshBoundsJoined": "BATTLE36_LoadableActor_our_1034_model_1034|0.365/1.27/0|4.732/2.792/0"
+          },
+          {
+            "frame": 11,
+            "meshVertexCount": 1283,
+            "meshTriangleIndexCount": 3381,
+            "meshHash": "4ff29069",
+            "meshBoundsJoined": "BATTLE36_LoadableActor_our_1034_model_1034|0.37/1.263/0|4.722/2.798/0"
+          }
+        ]
+      },
+      {
+        "side": "enemy",
+        "heroDid": "1100111",
+        "modelId": "3001",
+        "expectedAnimation": "attack",
+        "animationCandidates": [
+          "attack",
+          "attackR",
+          "stand",
+          "run1"
+        ],
+        "bundle": "download/roleprefabsandres/battleprefabandres/3001.assetbundle",
+        "prefabAsset": "assets/download/roleprefabsandres/battleprefabandres/3001/hero_3001.prefab",
+        "bundleLoaded": true,
+        "prefabInstantiated": true,
+        "missingScriptCount": 0,
+        "skeletonAnimationComponentCount": 1,
+        "skeletonAnimationAssembly": "spine-unity",
+        "serializedAnimationName": "attack",
+        "initialValid": true,
+        "initializeCalled": true,
+        "afterInitializeValid": true,
+        "skeletonDataAssetName": "3001_SkeletonData",
+        "skeletonDataAssetType": "Spine.Unity.SkeletonDataAsset",
+        "skeletonDataAssetIsLoaded": true,
+        "skeletonDataAssetScale": 0.01,
+        "skeletonJsonName": "3001.skel",
+        "skeletonDataNull": false,
+        "skeletonDataException": "",
+        "boneCount": 56,
+        "slotCount": 28,
+        "skinCount": 1,
+        "animationCount": 20,
+        "animationNames": [
+          "air",
+          "attack",
+          "change",
+          "death",
+          "fall",
+          "fall_lie",
+          "fight",
+          "frozen",
+          "getup",
+          "lie",
+          "run",
+          "run1",
+          "skill1",
+          "stand",
+          "strike",
+          "strike_air",
+          "strike_fly",
+          "thunder",
+          "vertigo",
+          "wait"
+        ],
+        "expectedAnimationInRuntime": true,
+        "skeletonRuntimeNonNull": true,
+        "animationStateNonNull": true,
+        "animationStateSetSucceeded": true,
+        "animationStateUsedName": "attack",
+        "animationFallbackUsed": false,
+        "updateFloatCalled": true,
+        "lateUpdateCalled": true,
+        "meshGeneratorNonNull": true,
+        "meshGeneratorType": "Spine.Unity.MeshGenerator",
+        "meshVertexCountBefore": 611,
+        "meshVertexCountAfter": 611,
+        "meshHashBefore": "a9289bda",
+        "meshHashAfter": "9188edc9",
+        "meshHashChangedFrameCount": 11,
+        "meshBoundsChangedFrameCount": 11,
+        "realMeshUpdated": true,
+        "unsupportedShaderMaterialCount": 5,
+        "internalErrorShaderMaterialCount": 0,
+        "motionReplayStatus": "mesh_changes_after_update_float_but_clip05_motion_not_verified",
+        "failReason": "",
+        "runtimeException": "",
+        "animationStateException": "",
+        "trackEntryException": "",
+        "atlasAssetNames": [
+          "3001_Atlas|Spine.Unity.SpineAtlasAsset"
+        ],
+        "atlasMaterialInfos": [
+          "3001_Material|shader=Spine/Skeleton Tint|supported=false|passCount=3|mainTex=3001(512x512)|renderQueue=2000",
+          "3001_Material|shader=Spine/Skeleton Tint|supported=false|passCount=3|mainTex=3001(512x512)|renderQueue=2000",
+          "3001_Material|shader=Spine/Skeleton Tint|supported=false|passCount=3|mainTex=3001(512x512)|renderQueue=2000"
+        ],
+        "atlasTextureInfos": [
+          "3001(512x512)",
+          "3001(512x512)",
+          "3001(512x512)"
+        ],
+        "textureNames": [
+          "3001(512x512)"
+        ],
+        "bundleMaterialNames": [
+          "3001_Material|shader=Spine/Skeleton Tint|supported=false|passCount=3|mainTex=3001(512x512)|renderQueue=2000"
+        ],
+        "rendererMaterialBefore": [
+          "3001_Material|shader=Spine/Skeleton Tint|supported=false|passCount=3|mainTex=3001(512x512)|renderQueue=2000"
+        ],
+        "rendererMaterialAfter": [
+          "3001_Material|shader=Spine/Skeleton Tint|supported=false|passCount=3|mainTex=3001(512x512)|renderQueue=2000"
+        ],
+        "skeletonLikeAssets": [
+          "assets/download/roleprefabsandres/battleprefabandres/3001/3001.atlas.txt",
+          "assets/download/roleprefabsandres/battleprefabandres/3001/3001.skel.bytes",
+          "assets/download/roleprefabsandres/battleprefabandres/3001/3001_atlas.asset",
+          "assets/download/roleprefabsandres/battleprefabandres/3001/3001_skeletondata.asset"
+        ],
+        "trackEntries": [
+          "0|attack|track=0.033|anim=0.033",
+          "1|attack|track=0.067|anim=0.067",
+          "2|attack|track=0.1|anim=0.1",
+          "3|attack|track=0.133|anim=0.133",
+          "4|attack|track=0.167|anim=0.167",
+          "5|attack|track=0.2|anim=0.2",
+          "6|attack|track=0.233|anim=0.233",
+          "7|attack|track=0.267|anim=0.267",
+          "8|attack|track=0.3|anim=0.3",
+          "9|attack|track=0.333|anim=0.333",
+          "10|attack|track=0.367|anim=0.367",
+          "11|attack|track=0.4|anim=0.4"
+        ],
+        "frameSnapshots": [
+          {
+            "frame": 0,
+            "meshVertexCount": 611,
+            "meshTriangleIndexCount": 2103,
+            "meshHash": "dc6f6652",
+            "meshBoundsJoined": "BATTLE36_LoadableActor_enemy_1100111_model_3001|0.166/0.747/0|2.634/1.736/0"
+          },
+          {
+            "frame": 1,
+            "meshVertexCount": 611,
+            "meshTriangleIndexCount": 2103,
+            "meshHash": "936000af",
+            "meshBoundsJoined": "BATTLE36_LoadableActor_enemy_1100111_model_3001|0.245/0.697/0|2.701/1.631/0"
+          },
+          {
+            "frame": 2,
+            "meshVertexCount": 611,
+            "meshTriangleIndexCount": 2097,
+            "meshHash": "ae0b64f2",
+            "meshBoundsJoined": "BATTLE36_LoadableActor_enemy_1100111_model_3001|0.445/0.882/0|2.636/1.721/0"
+          },
+          {
+            "frame": 3,
+            "meshVertexCount": 611,
+            "meshTriangleIndexCount": 2097,
+            "meshHash": "ea530d26",
+            "meshBoundsJoined": "BATTLE36_LoadableActor_enemy_1100111_model_3001|0.521/1.016/0|2.538/1.712/0"
+          },
+          {
+            "frame": 4,
+            "meshVertexCount": 611,
+            "meshTriangleIndexCount": 2097,
+            "meshHash": "1701728d",
+            "meshBoundsJoined": "BATTLE36_LoadableActor_enemy_1100111_model_3001|0.566/1.102/0|2.471/1.655/0"
+          },
+          {
+            "frame": 5,
+            "meshVertexCount": 611,
+            "meshTriangleIndexCount": 2097,
+            "meshHash": "9276f719",
+            "meshBoundsJoined": "BATTLE36_LoadableActor_enemy_1100111_model_3001|0.332/1.015/0|2.543/1.794/0"
+          },
+          {
+            "frame": 6,
+            "meshVertexCount": 611,
+            "meshTriangleIndexCount": 2097,
+            "meshHash": "fe5a49b0",
+            "meshBoundsJoined": "BATTLE36_LoadableActor_enemy_1100111_model_3001|0.094/0.999/0|2.602/1.77/0"
+          },
+          {
+            "frame": 7,
+            "meshVertexCount": 611,
+            "meshTriangleIndexCount": 2097,
+            "meshHash": "b23c550f",
+            "meshBoundsJoined": "BATTLE36_LoadableActor_enemy_1100111_model_3001|-0.15/0.934/0|2.647/1.825/0"
+          },
+          {
+            "frame": 8,
+            "meshVertexCount": 611,
+            "meshTriangleIndexCount": 2097,
+            "meshHash": "8a11a6f7",
+            "meshBoundsJoined": "BATTLE36_LoadableActor_enemy_1100111_model_3001|-0.399/0.969/0|2.678/1.682/0"
+          },
+          {
+            "frame": 9,
+            "meshVertexCount": 611,
+            "meshTriangleIndexCount": 2097,
+            "meshHash": "c262f7ef",
+            "meshBoundsJoined": "BATTLE36_LoadableActor_enemy_1100111_model_3001|-0.302/0.818/0|2.701/1.722/0"
+          },
+          {
+            "frame": 10,
+            "meshVertexCount": 611,
+            "meshTriangleIndexCount": 2097,
+            "meshHash": "cd1c9a0d",
+            "meshBoundsJoined": "BATTLE36_LoadableActor_enemy_1100111_model_3001|0.096/0.706/0|2.674/1.7/0"
+          },
+          {
+            "frame": 11,
+            "meshVertexCount": 611,
+            "meshTriangleIndexCount": 2097,
+            "meshHash": "9188edc9",
+            "meshBoundsJoined": "BATTLE36_LoadableActor_enemy_1100111_model_3001|0.478/0.636/0|2.601/1.558/0"
+          }
+        ]
+      }
+    ]
+  },
+  "blocker": "Mesh changes are present, but the capture still contains magenta render evidence from shader/material binding.",
+  "nextBlocker": "BATTLE_37_BIND_ORIGINAL_SPINE_SHADER_VARIANTS_AND_MATERIAL_PASSES",
+  "rootCmdCount": 1,
+  "restoreToolsDirectCmdCount": 0,
+  "outputs": {
+    "report": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_36_TRACE_REAL_SPINE_INITIALIZE_SKELETONDATA_MATERIAL_SHADER_BINDING_RESULT.md",
+    "resultJson": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_36_TRACE_REAL_SPINE_INITIALIZE_SKELETONDATA_MATERIAL_SHADER_BINDING_RESULT.json",
+    "unityDataJson": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_battle_unity\\Assets\\RestoreData\\battle\\BATTLE_36_TRACE_REAL_SPINE_INITIALIZE_SKELETONDATA_MATERIAL_SHADER_BINDING.json",
+    "unityProbeJson": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_battle_unity\\Assets\\RestoreData\\battle\\BATTLE_36_TRACE_REAL_SPINE_INITIALIZE_SKELETONDATA_MATERIAL_SHADER_BINDING_UNITY.json",
+    "componentCsv": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_battle_unity\\Assets\\RestoreData\\battle\\BATTLE_36_TRACE_REAL_SPINE_INITIALIZE_SKELETONDATA_MATERIAL_SHADER_BINDING_COMPONENTS.csv",
+    "actorCsv": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_battle_unity\\Assets\\RestoreData\\battle\\BATTLE_36_TRACE_REAL_SPINE_INITIALIZE_SKELETONDATA_MATERIAL_SHADER_BINDING_ACTORS.csv",
+    "capture": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_battle_unity\\Assets\\RestoreCaptures\\battle_actor\\Battle36TraceRealSpineInitializeSkeletonDataMaterialShaderBinding_1920x1080.png",
+    "contactSheet": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_36_TRACE_REAL_SPINE_INITIALIZE_SKELETONDATA_MATERIAL_SHADER_BINDING_CONTACT_SHEET.jpg",
+    "videoSequence": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_36_PLAY_VIDEO_CLIP05_485_487_SEQUENCE.jpg",
+    "unityLog": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_36_TRACE_REAL_SPINE_INITIALIZE_SKELETONDATA_MATERIAL_SHADER_BINDING.log"
+  },
+  "notes": [
+    "No fake material, fake animation, or coordinate-only visual correction was applied.",
+    "Clip05 485.0-487.0s video sequence remains the gate; static/magenta capture is failure.",
+    "No root CMD or _restore_tools direct CMD was created for BATTLE_36."
+  ]
+}

@@ -1,0 +1,996 @@
+[Licensing::Module] Trying to connect to existing licensing client channel...
+Built from '6000.4/staging' branch; Version is '6000.4.9f1 (f7258d6eebbe) revision 16197005'; Using compiler version '194234433'; Build Type 'Release'
+[Licensing::IpcConnector] Channel LicenseClient-godho doesn't exist
+OS: 'Windows 11  (10.0.26200) Professional' Language: 'ko' Physical Memory: 32022 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1
+System  architecture: x64
+Process architecture: x64
+Date: 2026-06-25T13:05:33Z
+[Licensing::Module] Successfully launched the LicensingClient (PId: 18084)
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\6000.4.9f1\Editor\Unity.exe
+-batchmode
+-quit
+-projectPath
+C:\Users\godho\Downloads\girlswar\girlswar_maininterface_unity
+-executeMethod
+GirlsWarRestore.MainInterface116RouteSpineRuntimeBridgeReplay.BuildAndCapture
+-logFile
+C:\Users\godho\Downloads\girlswar\reports\maininterface\unity_116_import_real_spine4_runtime_bridge.log
+Successfully changed project path to: C:\Users\godho\Downloads\girlswar\girlswar_maininterface_unity
+C:/Users/godho/Downloads/girlswar/girlswar_maininterface_unity
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gfx=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+Player connection [2892]  Target information:
+
+Player connection [2892]  * "[IP] 10.10.1.159 [Port] 55504 [Flags] 2 [Guid] 4142935525 [EditorId] 4142935525 [Version] 1048832 [Id] WindowsEditor(7,sjpark) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor"
+
+Player connection [2892]  * "[IP] 172.26.64.1 [Port] 55504 [Flags] 2 [Guid] 4142935525 [EditorId] 4142935525 [Version] 1048832 [Id] WindowsEditor(7,sjpark) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor"
+
+Player connection [2892]  * "[IP] 100.66.239.97 [Port] 55504 [Flags] 2 [Guid] 4142935525 [EditorId] 4142935525 [Version] 1048832 [Id] WindowsEditor(7,sjpark) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor"
+
+Player connection [2892] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [2892] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Input System module state changed to: Initialized.
+[Physics::Module] Initialized fallback backend.
+[Physics::Module] Id: 0xdecafbad
+Starting IPC server.
+Waiting for clients to connect on \\.\pipe\Unity-LicenseClient-godho, press Ctrl-C to exit.
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-godho" at "2026-06-25T13:05:33.5231843Z"
+[Package Manager] Connected to IPC stream "Upm-36812" after 0.2 seconds.
+[Licensing::Module] Licensing is not yet initialized.
+[Licensing::Client] Code 10 while verifying Licensing Client signature (process Id: 18084, path: "C:/Program Files/Unity/Hub/Editor/6000.4.9f1/Editor/Data/Resources/Licensing/Client/Unity.Licensing.Client.exe")
+[Licensing::Module] LicensingClient has failed validation; ignoring
+[Licensing::Client] Handshaking with LicensingClient:
+  Version:                 1.18.1+9fbee8e
+  Session Id:              79d8d3e7fe794d6882b9f9e5112c974a
+  Correlation Id:          2ca78a3bca1365679b5ffe30d07e26d5
+  External correlation Id: 3123427109342662728
+  Machine Id:              nETCb6mCOTg3uD4qHH44hI9aRsg=
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-godho" (connect: 0.37s, validation: 0.04s, handshake: 0.04s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-godho-notifications" at "2026-06-25T13:05:33.6036348Z"
+[Licensing::Module] Connected to LicensingClient (PId: 18084, launch time: 0.00, total connection time: 0.45s)
+[Licensing::Module] Error: Access token is unavailable; failed to update
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] License group:
+  Id: 14569760011564-UnityPersXXXX
+  Product: Unity Personal
+  Type: Assigned
+  Expiration: Unlimited
+[Licensing::Client] Successfully updated license, isAsync: True, time: 0.01
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] Licensing Background thread has ended after 0.48s
+[Licensing::Module] Licensing is initialized (took 0.09s).
+[Licensing::Client] Successfully resolved entitlement details
+Library Redirect Path: Library/
+[Physics::Module] Selected backend.
+[Physics::Module] Name: PhysX
+[Physics::Module] Id: 0xf2b8ea05
+[Physics::Module] SDK Version: 4.1.2
+[Physics::Module] Integration Version: 1.0.0
+[Physics::Module] Threading Mode: Multi-Threaded
+Artifact Garbage Collection - Removed 1 unused hashed content files
+Initialize engine version: 6000.4.9f1 (f7258d6eebbe)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/6000.4.9f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/godho/Downloads/girlswar/girlswar_maininterface_unity/Assets
+GfxDevice: creating device client; kGfxThreadingModeNonThreaded
+d3d12: failed to query info queue interface (0x80004002).
+Direct3D:
+    Version:         Direct3D 12 [level 12.2]
+    Renderer:        Intel(R) Graphics (ID=0x7d67)
+    Vendor:          Intel
+    VRAM:            18252 MB
+    App VRAM Budget: 17484 MB
+    Driver:          32.0.101.8425
+    Unified Memory Architecture
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.4.9f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.4.9f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.4.9f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56812
+CodeReloadManager initialized
+Using cacheserver namespaces - metadata:defaultmetadata, artifacts:defaultartifacts
+Using cacheserver namespaces - metadata:defaultmetadata, artifacts:defaultartifacts
+ImportWorker Server TCP listen port: 0
+AcceleratorClientConnectionCallback - disconnected - :0
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.4.9f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.4.9f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.002666 seconds.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Package Manager log level set to [2]
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:False
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.260 seconds
+Domain Reload Profiling: 590ms
+	BeginReloadAssembly (106ms)
+		CreateAndSetChildDomain (11ms)
+	RebuildCommonClasses (25ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (46ms)
+	LoadAllAssembliesAndSetupDomain (144ms)
+		LoadAssemblies (92ms)
+		AnalyzeDomain (138ms)
+			TypeCache.Refresh (136ms)
+				TypeCache.ScanAssembly (125ms)
+	FinalizeReload (261ms)
+		SetupLoadedEditorAssemblies (0ms)
+			InitializePlatformSupportModulesInManaged (32ms)
+			BeforeProcessingInitializeOnLoad (53ms)
+			ProcessInitializeOnLoadAttributes (71ms)
+			ProcessInitializeOnLoadMethodAttributes (62ms)
+[Licensing::Client] Successfully resolved entitlement details
+Application.AssetDatabase Initial Refresh Start
+[Package Manager] Restoring resolved packages state from cache
+[Licensing::Client] Successfully resolved entitlement details
+[Package Manager] Registered 38 packages:
+  Built-in packages:
+    com.unity.multiplayer.center@1.0.1 (location: C:\Users\godho\Downloads\girlswar\girlswar_maininterface_unity\Library\PackageCache\com.unity.multiplayer.center@f01f4ba8d00a)
+    com.unity.modules.accessibility@1.0.0 (location: C:\Users\godho\Downloads\girlswar\girlswar_maininterface_unity\Library\PackageCache\com.unity.modules.accessibility)
+    com.unity.modules.adaptiveperformance@1.0.0 (location: C:\Users\godho\Downloads\girlswar\girlswar_maininterface_unity\Library\PackageCache\com.unity.modules.adaptiveperformance)
+    com.unity.modules.ai@1.0.0 (location: C:\Users\godho\Downloads\girlswar\girlswar_maininterface_unity\Library\PackageCache\com.unity.modules.ai)
+    com.unity.modules.androidjni@1.0.0 (location: C:\Users\godho\Downloads\girlswar\girlswar_maininterface_unity\Library\PackageCache\com.unity.modules.androidjni)
+    com.unity.modules.animation@1.0.0 (location: C:\Users\godho\Downloads\girlswar\girlswar_maininterface_unity\Library\PackageCache\com.unity.modules.animation)
+    com.unity.modules.assetbundle@1.0.0 (location: C:\Users\godho\Downloads\girlswar\girlswar_maininterface_unity\Library\PackageCache\com.unity.modules.assetbundle)
+    com.unity.modules.audio@1.0.0 (location: C:\Users\godho\Downloads\girlswar\girlswar_maininterface_unity\Library\PackageCache\com.unity.modules.audio)
+    com.unity.modules.cloth@1.0.0 (location: C:\Users\godho\Downloads\girlswar\girlswar_maininterface_unity\Library\PackageCache\com.unity.modules.cloth)
+    com.unity.modules.director@1.0.0 (location: C:\Users\godho\Downloads\girlswar\girlswar_maininterface_unity\Library\PackageCache\com.unity.modules.director)
+    com.unity.modules.imageconversion@1.0.0 (location: C:\Users\godho\Downloads\girlswar\girlswar_maininterface_unity\Library\PackageCache\com.unity.modules.imageconversion)
+    com.unity.modules.imgui@1.0.0 (location: C:\Users\godho\Downloads\girlswar\girlswar_maininterface_unity\Library\PackageCache\com.unity.modules.imgui)
+    com.unity.modules.jsonserialize@1.0.0 (location: C:\Users\godho\Downloads\girlswar\girlswar_maininterface_unity\Library\PackageCache\com.unity.modules.jsonserialize)
+    com.unity.modules.particlesystem@1.0.0 (location: C:\Users\godho\Downloads\girlswar\girlswar_maininterface_unity\Library\PackageCache\com.unity.modules.particlesystem)
+    com.unity.modules.physics@1.0.0 (location: C:\Users\godho\Downloads\girlswar\girlswar_maininterface_unity\Library\PackageCache\com.unity.modules.physics)
+    com.unity.modules.physics2d@1.0.0 (location: C:\Users\godho\Downloads\girlswar\girlswar_maininterface_unity\Library\PackageCache\com.unity.modules.physics2d)
+    com.unity.modules.screencapture@1.0.0 (location: C:\Users\godho\Downloads\girlswar\girlswar_maininterface_unity\Library\PackageCache\com.unity.modules.screencapture)
+    com.unity.modules.terrain@1.0.0 (location: C:\Users\godho\Downloads\girlswar\girlswar_maininterface_unity\Library\PackageCache\com.unity.modules.terrain)
+    com.unity.modules.terrainphysics@1.0.0 (location: C:\Users\godho\Downloads\girlswar\girlswar_maininterface_unity\Library\PackageCache\com.unity.modules.terrainphysics)
+    com.unity.modules.tilemap@1.0.0 (location: C:\Users\godho\Downloads\girlswar\girlswar_maininterface_unity\Library\PackageCache\com.unity.modules.tilemap)
+    com.unity.modules.ui@1.0.0 (location: C:\Users\godho\Downloads\girlswar\girlswar_maininterface_unity\Library\PackageCache\com.unity.modules.ui)
+    com.unity.modules.uielements@1.0.0 (location: C:\Users\godho\Downloads\girlswar\girlswar_maininterface_unity\Library\PackageCache\com.unity.modules.uielements)
+    com.unity.modules.umbra@1.0.0 (location: C:\Users\godho\Downloads\girlswar\girlswar_maininterface_unity\Library\PackageCache\com.unity.modules.umbra)
+    com.unity.modules.unityanalytics@1.0.0 (location: C:\Users\godho\Downloads\girlswar\girlswar_maininterface_unity\Library\PackageCache\com.unity.modules.unityanalytics)
+    com.unity.modules.unitywebrequest@1.0.0 (location: C:\Users\godho\Downloads\girlswar\girlswar_maininterface_unity\Library\PackageCache\com.unity.modules.unitywebrequest)
+    com.unity.modules.unitywebrequestassetbundle@1.0.0 (location: C:\Users\godho\Downloads\girlswar\girlswar_maininterface_unity\Library\PackageCache\com.unity.modules.unitywebrequestassetbundle)
+    com.unity.modules.unitywebrequestaudio@1.0.0 (location: C:\Users\godho\Downloads\girlswar\girlswar_maininterface_unity\Library\PackageCache\com.unity.modules.unitywebrequestaudio)
+    com.unity.modules.unitywebrequesttexture@1.0.0 (location: C:\Users\godho\Downloads\girlswar\girlswar_maininterface_unity\Library\PackageCache\com.unity.modules.unitywebrequesttexture)
+    com.unity.modules.unitywebrequestwww@1.0.0 (location: C:\Users\godho\Downloads\girlswar\girlswar_maininterface_unity\Library\PackageCache\com.unity.modules.unitywebrequestwww)
+    com.unity.modules.vectorgraphics@1.0.0 (location: C:\Users\godho\Downloads\girlswar\girlswar_maininterface_unity\Library\PackageCache\com.unity.modules.vectorgraphics)
+    com.unity.modules.vehicles@1.0.0 (location: C:\Users\godho\Downloads\girlswar\girlswar_maininterface_unity\Library\PackageCache\com.unity.modules.vehicles)
+    com.unity.modules.video@1.0.0 (location: C:\Users\godho\Downloads\girlswar\girlswar_maininterface_unity\Library\PackageCache\com.unity.modules.video)
+    com.unity.modules.vr@1.0.0 (location: C:\Users\godho\Downloads\girlswar\girlswar_maininterface_unity\Library\PackageCache\com.unity.modules.vr)
+    com.unity.modules.wind@1.0.0 (location: C:\Users\godho\Downloads\girlswar\girlswar_maininterface_unity\Library\PackageCache\com.unity.modules.wind)
+    com.unity.modules.xr@1.0.0 (location: C:\Users\godho\Downloads\girlswar\girlswar_maininterface_unity\Library\PackageCache\com.unity.modules.xr)
+    com.unity.ugui@2.0.0 (location: C:\Users\godho\Downloads\girlswar\girlswar_maininterface_unity\Library\PackageCache\com.unity.ugui@1f2d1ab0d950)
+    com.unity.modules.subsystems@1.0.0 (location: C:\Users\godho\Downloads\girlswar\girlswar_maininterface_unity\Library\PackageCache\com.unity.modules.subsystems)
+    com.unity.modules.hierarchycore@1.0.0 (location: C:\Users\godho\Downloads\girlswar\girlswar_maininterface_unity\Library\PackageCache\com.unity.modules.hierarchycore)
+[Subsystems] No new subsystems found in resolved package list.
+[Package Manager] Done registering packages in 0.01 seconds
+[ScriptCompilation] Requested script compilation because: Assembly Definition File(s) changed
+[ScriptCompilation] Requested script compilation because: AssetDatabase observed changes in script compilation related files
+info: Microsoft.Hosting.Lifetime[14]
+      Now listening on: http://localhost:80
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Production
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: C:\Users\godho\Downloads\girlswar\girlswar_maininterface_unity
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/Ping - application/grpc -
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'gRPC - /UnityILPP.PostProcessing/Ping'
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'gRPC - /UnityILPP.PostProcessing/Ping'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/Ping - 200 - application/grpc 21.1822ms
+Starting: C:\Program Files\Unity\Hub\Editor\6000.4.9f1\Editor\Data\Tools\BuildPipeline\bee_backend.exe --ipc --defer-dag-verification --dagfile="Library/Bee/1900b0aE.dag" --continue-on-failure --profile="Library/Bee/backend1.traceevents" ScriptAssemblies
+WorkingDir: C:/Users/godho/Downloads/girlswar/girlswar_maininterface_unity
+DisplayProgressbar: Compiling Scripts
+Starting: C:\Program Files\Unity\Hub\Editor\6000.4.9f1\Editor\Data\netcorerun\netcorerun.exe "C:\Program Files\Unity\Hub\Editor\6000.4.9f1\Editor\Data\Tools\BuildPipeline\ScriptCompilationBuildProgram.exe" "Library/Bee/1900b0aE.dag.json" "Library/Bee/1900b0aE-inputdata.json" "Library\Bee\buildprogram0.traceevents"
+WorkingDir: C:/Users/godho/Downloads/girlswar/girlswar_maininterface_unity
+ExitCode: 4 Duration: 0s68ms
+Rebuilding DAG because FileSignature timestamp changed: Library/Bee/1900b0aE-inputdata.json
+*** Tundra requires additional run (0.04 seconds), 0 items updated, 231 evaluated
+ExitCode: 0 Duration: 0s206ms
+Starting: C:\Program Files\Unity\Hub\Editor\6000.4.9f1\Editor\Data\Tools\BuildPipeline\bee_backend.exe --ipc --defer-dag-verification --dagfile="Library/Bee/1900b0aE.dag" --continue-on-failure --dagfilejson="Library\Bee\1900b0aE.dag.json" --profile="Library/Bee/backend2.traceevents" ScriptAssemblies
+WorkingDir: C:/Users/godho/Downloads/girlswar/girlswar_maininterface_unity
+ExitCode: 0 Duration: 2s851ms
+Finished compiling graph: 250 nodes, 2434 flattened edges (2284 ToBuild, 24 ToUse), maximum node priority 128
+[182/247    0s] WriteText Library/Bee/artifacts/1900b0aE.dag/spine-csharp.UnityAdditionalFile.txt
+[183/247    0s] WriteText Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp-Editor.rsp
+[184/247    0s] WriteText Library/Bee/artifacts/1900b0aE.dag/spine-csharp.dll.mvfrm.rsp
+[185/247    0s] WriteText Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp.rsp
+[186/247    0s] WriteText Library/Bee/artifacts/1900b0aE.dag/spine-unity.UnityAdditionalFile.txt
+[187/247    0s] WriteText Library/Bee/artifacts/1900b0aE.dag/spine-unity.rsp2
+[227/247    0s] WriteText Library/Bee/artifacts/1900b0aE.dag/spine-csharp.rsp
+[230/247    0s] WriteText Library/Bee/artifacts/1900b0aE.dag/spine-unity.dll.mvfrm.rsp
+[231/247    0s] WriteText Library/Bee/artifacts/1900b0aE.dag/spine-unity.rsp
+[232/247    0s] WriteText Library/Bee/artifacts/1900b0aE.dag/spine-csharp.rsp2
+[233/247    0s] MovedFromExtractor-Combine Library/Bee/artifacts/1900b0aE.dag/spine-unity.dll.mvfrm
+[234/247    0s] MovedFromExtractor-Combine Library/Bee/artifacts/1900b0aE.dag/spine-csharp.dll.mvfrm
+[235/247    1s] Csc Library/Bee/artifacts/1900b0aE.dag/spine-csharp.dll (+2 others)
+[236/247    0s] CopyFiles Library/ScriptAssemblies/spine-csharp.pdb
+[237/247    0s] CopyFiles Library/ScriptAssemblies/spine-csharp.dll
+[238/247    0s] Csc Library/Bee/artifacts/1900b0aE.dag/spine-unity.dll (+2 others)
+Assets\Spine\Runtime\spine-unity\Components\RootMotion\SkeletonRootMotionBase.cs(103,6): warning CS0618: 'Rigidbody2D.velocity' is obsolete: 'velocity has been deprecated. Please use linearVelocity. (UnityUpgradable) -> linearVelocity'
+
+Assets\Spine\Runtime\spine-unity\Components\RootMotion\SkeletonRootMotionBase.cs(105,7): warning CS0618: 'Rigidbody2D.velocity' is obsolete: 'velocity has been deprecated. Please use linearVelocity. (UnityUpgradable) -> linearVelocity'
+
+Assets\Spine\Runtime\spine-unity\Components\Following\BoundingBoxFollowerGraphic.cs(171,7): warning CS0618: 'Collider2D.usedByComposite' is obsolete: 'usedByComposite has been deprecated. Please use compositeOperation.'
+
+Assets\Spine\Runtime\spine-unity\Components\Following\BoundingBoxFollower.cs(167,7): warning CS0618: 'Collider2D.usedByComposite' is obsolete: 'usedByComposite has been deprecated. Please use compositeOperation.'
+
+Assets\Spine\Runtime\spine-unity\Components\SkeletonUtility\SkeletonUtility.cs(126,5): warning CS0618: 'Rigidbody2D.isKinematic' is obsolete: 'isKinematic has been deprecated. Please use bodyType.'
+
+Assets\Spine\Runtime\spine-unity\Components\SkeletonMecanim.cs(660,68): warning CS0618: 'Object.GetInstanceID()' is obsolete: 'GetInstanceID is deprecated. Use GetEntityId instead. This will be removed in a future version.'
+
+Assets\Spine\Runtime\spine-unity\Components\SkeletonMecanim.cs(660,89): warning CS0618: 'Object.GetInstanceID()' is obsolete: 'GetInstanceID is deprecated. Use GetEntityId instead. This will be removed in a future version.'
+
+Assets\Spine\Runtime\spine-unity\Components\SkeletonMecanim.cs(661,55): warning CS0618: 'Object.GetInstanceID()' is obsolete: 'GetInstanceID is deprecated. Use GetEntityId instead. This will be removed in a future version.'
+[239/247    0s] CopyFiles Library/ScriptAssemblies/spine-unity.pdb
+[240/247    0s] CopyFiles Library/ScriptAssemblies/spine-unity.dll
+[241/247    0s] Csc Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp.dll (+2 others)
+[242/247    0s] CopyFiles Library/ScriptAssemblies/Assembly-CSharp.pdb
+[243/247    0s] CopyFiles Library/ScriptAssemblies/Assembly-CSharp.dll
+[244/247    0s] Csc Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp-Editor.dll (+2 others)
+Assets\Editor\MainInterfaceSceneBuilder.cs(329,17): warning CS0162: Unreachable code detected
+
+Assets\Editor\MainInterfaceRouteTmpVariantMaterialAudit.cs(93,111): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+
+Assets\Editor\MainInterfaceRouteTmpVariantMaterialAudit.cs(93,28): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsInactive, FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+
+Assets\Editor\MainInterfaceRouteLabelRectOverrideRevalidation.cs(104,111): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+
+Assets\Editor\MainInterfaceRouteLabelRectOverrideRevalidation.cs(104,30): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsInactive, FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+
+Assets\Editor\MainInterfaceRouteLabelRectOverrideRevalidation.cs(154,53): warning CS0618: 'TMP_Text.enableWordWrapping' is obsolete: 'The enabledWordWrapping property is now obsolete. Please use the textWrappingMode property instead.'
+
+Assets\Editor\MainInterface116RouteSpineRuntimeBridgeReplay.cs(214,26): warning CS0618: 'Object.FindFirstObjectByType<T>()' is obsolete: 'FindFirstObjectByType has been deprecated because it relies on instance ID ordering. Use FindAnyObjectByType instead, which does not depend on ordering.'
+
+Assets\Editor\MainInterface116RouteSpineRuntimeBridgeReplay.cs(252,112): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+
+Assets\Editor\MainInterface116RouteSpineRuntimeBridgeReplay.cs(252,37): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsInactive, FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+
+Assets\Editor\MainInterface116RouteSpineRuntimeBridgeReplay.cs(298,104): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+
+Assets\Editor\MainInterface116RouteSpineRuntimeBridgeReplay.cs(298,23): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsInactive, FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+
+Assets\Editor\MainInterfaceSceneBuilder.cs(378,26): warning CS0618: 'Object.FindFirstObjectByType<T>()' is obsolete: 'FindFirstObjectByType has been deprecated because it relies on instance ID ordering. Use FindAnyObjectByType instead, which does not depend on ordering.'
+
+Assets\Editor\MainInterfaceRouteSkeletonGraphicReplayIntegration.cs(264,104): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+
+Assets\Editor\MainInterfaceRouteSkeletonGraphicReplayIntegration.cs(264,23): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsInactive, FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+
+Assets\Editor\MainInterfaceGuildMainWhitePanelTrace.cs(256,87): warning CS0618: 'Object.GetInstanceID()' is obsolete: 'GetInstanceID is deprecated. Use GetEntityId instead. This will be removed in a future version.'
+
+Assets\Editor\MainInterfaceGuildMainWhitePanelTrace.cs(256,50): warning CS0618: 'Unsupported.GetLocalIdentifierInFile(int)' is obsolete: 'GetLocalIdentifierInFile() is deprecated. Use GetLocalIdentifierInFileForPersistentObject() instead.'
+
+Assets\Editor\MainInterfaceGuildMainWhitePanelTrace.cs(265,91): warning CS0618: 'Object.GetInstanceID()' is obsolete: 'GetInstanceID is deprecated. Use GetEntityId instead. This will be removed in a future version.'
+
+Assets\Editor\MainInterfaceGuildMainWhitePanelTrace.cs(265,54): warning CS0618: 'Unsupported.GetLocalIdentifierInFile(int)' is obsolete: 'GetLocalIdentifierInFile() is deprecated. Use GetLocalIdentifierInFileForPersistentObject() instead.'
+
+Assets\Editor\MainInterfaceNavigationTargetReferenceTrace.cs(294,73): warning CS0618: 'Object.GetInstanceID()' is obsolete: 'GetInstanceID is deprecated. Use GetEntityId instead. This will be removed in a future version.'
+
+Assets\Editor\MainInterfaceNavigationTargetReferenceTrace.cs(294,36): warning CS0618: 'Unsupported.GetLocalIdentifierInFile(int)' is obsolete: 'GetLocalIdentifierInFile() is deprecated. Use GetLocalIdentifierInFileForPersistentObject() instead.'
+
+Assets\Editor\MainInterfaceNavigationTargetReferenceTrace.cs(305,67): warning CS0618: 'SerializedProperty.objectReferenceInstanceIDValue' is obsolete: 'objectReferenceInstanceIDValue is obsolete. Use objectReferenceEntityIdValue instead'
+
+Assets\Editor\MainInterfaceNavigationTargetReferenceTrace.cs(307,20): warning CS0618: 'SerializedProperty.objectReferenceInstanceIDValue' is obsolete: 'objectReferenceInstanceIDValue is obsolete. Use objectReferenceEntityIdValue instead'
+
+Assets\Editor\MainInterfaceNavigationTargetReferenceTrace.cs(308,32): warning CS0618: 'SerializedProperty.objectReferenceInstanceIDValue' is obsolete: 'objectReferenceInstanceIDValue is obsolete. Use objectReferenceEntityIdValue instead'
+
+Assets\Editor\MainInterfaceRouteNonImageRendererEffectRuntimeStateTrace.cs(336,113): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+
+Assets\Editor\MainInterfaceRouteNonImageRendererEffectRuntimeStateTrace.cs(336,32): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsInactive, FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+
+Assets\Editor\MainInterfaceSceneBuilder.cs(794,21): warning CS0618: 'TMP_Text.enableWordWrapping' is obsolete: 'The enabledWordWrapping property is now obsolete. Please use the textWrappingMode property instead.'
+
+Assets\Editor\MainInterfaceSceneBuilder.cs(797,21): warning CS0618: 'TMP_Text.enableKerning' is obsolete: 'The "enableKerning" property has been deprecated. Use the "fontFeatures" property to control what features are enabled on the text component.'
+[245/247    0s] CopyFiles Library/ScriptAssemblies/Assembly-CSharp-Editor.pdb
+[246/247    0s] CopyFiles Library/ScriptAssemblies/Assembly-CSharp-Editor.dll
+*** Tundra build success (2.83 seconds), 24 items updated, 247 evaluated
+[ApiUpdater] Total time: 1256ms, Parse response file: 36ms, Collect updater configs: 659ms, Update: 556ms, Save: 5ms Files: 1 modified / 1 visited / 56 total (Library/Bee/artifacts/1900b0aE.dag/spine-unity.dll).
+[API Updater] Updated Files:
+Skipping ScriptUpdater consent dialog. Consent declined based on command line parameters.
+Finished running ScriptUpdaters
+Assets\Spine\Runtime\spine-unity\Components\RootMotion\SkeletonRootMotionBase.cs(103,6): warning CS0618: 'Rigidbody2D.velocity' is obsolete: 'velocity has been deprecated. Please use linearVelocity. (UnityUpgradable) -> linearVelocity'
+Assets\Spine\Runtime\spine-unity\Components\RootMotion\SkeletonRootMotionBase.cs(105,7): warning CS0618: 'Rigidbody2D.velocity' is obsolete: 'velocity has been deprecated. Please use linearVelocity. (UnityUpgradable) -> linearVelocity'
+Assets\Spine\Runtime\spine-unity\Components\Following\BoundingBoxFollowerGraphic.cs(171,7): warning CS0618: 'Collider2D.usedByComposite' is obsolete: 'usedByComposite has been deprecated. Please use compositeOperation.'
+Assets\Spine\Runtime\spine-unity\Components\Following\BoundingBoxFollower.cs(167,7): warning CS0618: 'Collider2D.usedByComposite' is obsolete: 'usedByComposite has been deprecated. Please use compositeOperation.'
+Assets\Spine\Runtime\spine-unity\Components\SkeletonUtility\SkeletonUtility.cs(126,5): warning CS0618: 'Rigidbody2D.isKinematic' is obsolete: 'isKinematic has been deprecated. Please use bodyType.'
+Assets\Spine\Runtime\spine-unity\Components\SkeletonMecanim.cs(660,68): warning CS0618: 'Object.GetInstanceID()' is obsolete: 'GetInstanceID is deprecated. Use GetEntityId instead. This will be removed in a future version.'
+Assets\Spine\Runtime\spine-unity\Components\SkeletonMecanim.cs(660,89): warning CS0618: 'Object.GetInstanceID()' is obsolete: 'GetInstanceID is deprecated. Use GetEntityId instead. This will be removed in a future version.'
+Assets\Spine\Runtime\spine-unity\Components\SkeletonMecanim.cs(661,55): warning CS0618: 'Object.GetInstanceID()' is obsolete: 'GetInstanceID is deprecated. Use GetEntityId instead. This will be removed in a future version.'
+Assets\Editor\MainInterfaceSceneBuilder.cs(329,17): warning CS0162: Unreachable code detected
+Assets\Editor\MainInterfaceRouteTmpVariantMaterialAudit.cs(93,111): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+Assets\Editor\MainInterfaceRouteTmpVariantMaterialAudit.cs(93,28): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsInactive, FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+Assets\Editor\MainInterfaceRouteLabelRectOverrideRevalidation.cs(104,111): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+Assets\Editor\MainInterfaceRouteLabelRectOverrideRevalidation.cs(104,30): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsInactive, FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+Assets\Editor\MainInterfaceRouteLabelRectOverrideRevalidation.cs(154,53): warning CS0618: 'TMP_Text.enableWordWrapping' is obsolete: 'The enabledWordWrapping property is now obsolete. Please use the textWrappingMode property instead.'
+Assets\Editor\MainInterface116RouteSpineRuntimeBridgeReplay.cs(214,26): warning CS0618: 'Object.FindFirstObjectByType<T>()' is obsolete: 'FindFirstObjectByType has been deprecated because it relies on instance ID ordering. Use FindAnyObjectByType instead, which does not depend on ordering.'
+Assets\Editor\MainInterface116RouteSpineRuntimeBridgeReplay.cs(252,112): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+Assets\Editor\MainInterface116RouteSpineRuntimeBridgeReplay.cs(252,37): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsInactive, FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+Assets\Editor\MainInterface116RouteSpineRuntimeBridgeReplay.cs(298,104): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+Assets\Editor\MainInterface116RouteSpineRuntimeBridgeReplay.cs(298,23): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsInactive, FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+Assets\Editor\MainInterfaceSceneBuilder.cs(378,26): warning CS0618: 'Object.FindFirstObjectByType<T>()' is obsolete: 'FindFirstObjectByType has been deprecated because it relies on instance ID ordering. Use FindAnyObjectByType instead, which does not depend on ordering.'
+Assets\Editor\MainInterfaceRouteSkeletonGraphicReplayIntegration.cs(264,104): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+Assets\Editor\MainInterfaceRouteSkeletonGraphicReplayIntegration.cs(264,23): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsInactive, FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+Assets\Editor\MainInterfaceGuildMainWhitePanelTrace.cs(256,87): warning CS0618: 'Object.GetInstanceID()' is obsolete: 'GetInstanceID is deprecated. Use GetEntityId instead. This will be removed in a future version.'
+Assets\Editor\MainInterfaceGuildMainWhitePanelTrace.cs(256,50): warning CS0618: 'Unsupported.GetLocalIdentifierInFile(int)' is obsolete: 'GetLocalIdentifierInFile() is deprecated. Use GetLocalIdentifierInFileForPersistentObject() instead.'
+Assets\Editor\MainInterfaceGuildMainWhitePanelTrace.cs(265,91): warning CS0618: 'Object.GetInstanceID()' is obsolete: 'GetInstanceID is deprecated. Use GetEntityId instead. This will be removed in a future version.'
+Assets\Editor\MainInterfaceGuildMainWhitePanelTrace.cs(265,54): warning CS0618: 'Unsupported.GetLocalIdentifierInFile(int)' is obsolete: 'GetLocalIdentifierInFile() is deprecated. Use GetLocalIdentifierInFileForPersistentObject() instead.'
+Assets\Editor\MainInterfaceNavigationTargetReferenceTrace.cs(294,73): warning CS0618: 'Object.GetInstanceID()' is obsolete: 'GetInstanceID is deprecated. Use GetEntityId instead. This will be removed in a future version.'
+Assets\Editor\MainInterfaceNavigationTargetReferenceTrace.cs(294,36): warning CS0618: 'Unsupported.GetLocalIdentifierInFile(int)' is obsolete: 'GetLocalIdentifierInFile() is deprecated. Use GetLocalIdentifierInFileForPersistentObject() instead.'
+Assets\Editor\MainInterfaceNavigationTargetReferenceTrace.cs(305,67): warning CS0618: 'SerializedProperty.objectReferenceInstanceIDValue' is obsolete: 'objectReferenceInstanceIDValue is obsolete. Use objectReferenceEntityIdValue instead'
+Assets\Editor\MainInterfaceNavigationTargetReferenceTrace.cs(307,20): warning CS0618: 'SerializedProperty.objectReferenceInstanceIDValue' is obsolete: 'objectReferenceInstanceIDValue is obsolete. Use objectReferenceEntityIdValue instead'
+Assets\Editor\MainInterfaceNavigationTargetReferenceTrace.cs(308,32): warning CS0618: 'SerializedProperty.objectReferenceInstanceIDValue' is obsolete: 'objectReferenceInstanceIDValue is obsolete. Use objectReferenceEntityIdValue instead'
+Assets\Editor\MainInterfaceRouteNonImageRendererEffectRuntimeStateTrace.cs(336,113): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+Assets\Editor\MainInterfaceRouteNonImageRendererEffectRuntimeStateTrace.cs(336,32): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsInactive, FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+Assets\Editor\MainInterfaceSceneBuilder.cs(794,21): warning CS0618: 'TMP_Text.enableWordWrapping' is obsolete: 'The enabledWordWrapping property is now obsolete. Please use the textWrappingMode property instead.'
+Assets\Editor\MainInterfaceSceneBuilder.cs(797,21): warning CS0618: 'TMP_Text.enableKerning' is obsolete: 'The "enableKerning" property has been deprecated. Use the "fontFeatures" property to control what features are enabled on the text component.'
+AssetDatabase: script compilation time: 3.751111s
+Begin MonoManager ReloadAssembly
+Assembly Assembly-CSharp-Editor-firstpass.dll at Library/ScriptAssemblies/Assembly-CSharp-Editor-firstpass.dll not valid. Loading of assembly skipped.
+Assembly Assembly-CSharp-firstpass.dll at Library/ScriptAssemblies/Assembly-CSharp-firstpass.dll not valid. Loading of assembly skipped.
+Assembly Unity.Multiplayer.Center.Editor.Tests.dll at Library/ScriptAssemblies/Unity.Multiplayer.Center.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Multiplayer.Center.Tests.dll at Library/ScriptAssemblies/Unity.Multiplayer.Center.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.TextMeshPro.Editor.Tests.dll at Library/ScriptAssemblies/Unity.TextMeshPro.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.TextMeshPro.Tests.dll at Library/ScriptAssemblies/Unity.TextMeshPro.Tests.dll not valid. Loading of assembly skipped.
+Assembly UnityEditor.UI.Common.Tests.dll at Library/ScriptAssemblies/UnityEditor.UI.Common.Tests.dll not valid. Loading of assembly skipped.
+Assembly UnityEditor.UI.EditorTests.dll at Library/ScriptAssemblies/UnityEditor.UI.EditorTests.dll not valid. Loading of assembly skipped.
+Assembly UnityEngine.UI.Tests.dll at Library/ScriptAssemblies/UnityEngine.UI.Tests.dll not valid. Loading of assembly skipped.
+Start importing Assets/Spine using Guid(2016cd492ffe7154eb5cf057212eea55) (DefaultImporter) -> (Import Result ID: 'dcfc36f37e5338506c622779258604db') in 0.0112284 seconds [static dependencies only]. Details - ImportResultOutputID=96fd3147a9628ed11dd969264d8b558d DependenciesID=e4ac1da85e20c39c9d4442f4ab19ddf7 StaticDependenciesID=3a80466ef948ddf41106f83f7b9277ee
+Start importing Assets/RestoreData/route_spine_raw_decode_recovery using Guid(622bdecb7354d0a4488e0e7b21644c17) (DefaultImporter) -> (Import Result ID: '7659bc8f8c1f845c88ed180901e22535') in 0.0015689 seconds [static dependencies only]. Details - ImportResultOutputID=b21620edc632a8772b70938e009338f2 DependenciesID=b2f794dac10c201a9243e2c98fc9c7ed StaticDependenciesID=7d8ecb9b066bd47d4d8ad7f02732d6d6
+Start importing Assets/Spine/Runtime using Guid(043736e1efd6d64428fe5cbc23ba4f36) (DefaultImporter) -> (Import Result ID: '6600e969bbbc7ed70a50f96459f4afed') in 0.0014275 seconds [static dependencies only]. Details - ImportResultOutputID=8e7b2283f37d3fc80785dcba4720883e DependenciesID=3f6c3a72d9a58e537d5819ed85dfdb7c StaticDependenciesID=bd4754edac23ebe64d4466fb73ea3b7a
+Start importing Assets/RestoreData/route_spine_raw_decode_recovery/8007 using Guid(837fb0135eaefef419fe8d0914a60fc4) (DefaultImporter) -> (Import Result ID: '20d9037f49d1b3cf7aed376ede0179ab') in 0.0004526 seconds [static dependencies only]. Details - ImportResultOutputID=0c9bd72f385278585e60f1273ee99355 DependenciesID=631c75debbffed3ce71c2ea8e283e578 StaticDependenciesID=37cc681d95781f69a25e014a6709704d
+Start importing Assets/RestoreData/route_spine_raw_decode_recovery/Spine_shijieanniu using Guid(840b632595af1f04fa20c91417e51148) (DefaultImporter) -> (Import Result ID: '602ebee431e4af937e97ba0797e789d8') in 0.0004868 seconds [static dependencies only]. Details - ImportResultOutputID=e3e79eecca7c15e9839462c473d05e04 DependenciesID=e029660a07879bec214c5376dd63799a StaticDependenciesID=f0d6256f56e17340a90437532d08d7d2
+Start importing Assets/Spine/Runtime/spine-unity using Guid(e6f205633c7d62b49a66df0078ffa3da) (DefaultImporter) -> (Import Result ID: '7c377616cf7d7a7e9cf2fb5ddcb49bf4') in 0.0013584 seconds [static dependencies only]. Details - ImportResultOutputID=fc77b71be9494a8965f95d953149ec32 DependenciesID=61f0cd2c8c35ccab29d1ef6cf3023e95 StaticDependenciesID=2d7a2b92b103738b05307a66dd8bedf0
+Start importing Assets/Spine/Runtime/spine-csharp using Guid(a7ede6b4495451b448e8e57622558767) (DefaultImporter) -> (Import Result ID: 'c5cb2a45d4e8b88ec946c9ec529b4c0c') in 0.0011435 seconds [static dependencies only]. Details - ImportResultOutputID=189790e0c64847092b282cc39bc5f82f DependenciesID=3becd48cba8968e288b8b4841518ebba StaticDependenciesID=61b8c7caca5ce26cec951b023a2a4ed2
+Start importing Assets/Spine/Runtime/spine-csharp/Attachments using Guid(007fcba75b3733f4daaf7e64030aaadb) (DefaultImporter) -> (Import Result ID: '182bdeec239583465a8772d112983385') in 0.0013771 seconds [static dependencies only]. Details - ImportResultOutputID=75e7eecffc79826bb1187170a03e9cee DependenciesID=2a2fa59f6ccba850f17d3c3ac65026d8 StaticDependenciesID=a263748c10df808a7775f249372fdcc6
+Start importing Assets/Spine/Runtime/spine-unity/Asset Types using Guid(555b5c329925615458d76057a9833b35) (DefaultImporter) -> (Import Result ID: '20f3ab9ba265975476cd351d810124f0') in 0.0012609 seconds [static dependencies only]. Details - ImportResultOutputID=bbbaba7e65c6a37940f967261d3f4d37 DependenciesID=760b52696444d90af827528f0ebf4ac2 StaticDependenciesID=a2e58e0b43cd4095f6701ca8e979a38f
+Start importing Assets/Spine/Runtime/spine-unity/Shaders using Guid(b509e6525d21f384f8d45eea56b4aa53) (DefaultImporter) -> (Import Result ID: '254b7564c22c38d2097a553d70cf5806') in 0.0010534 seconds [static dependencies only]. Details - ImportResultOutputID=68088201812d12e179b004e2dc2da7ae DependenciesID=b27593a83e78e58c0a62891b7a4e10b0 StaticDependenciesID=19f9831a4b9f42dc454b234f8c0b47bd
+Start importing Assets/Spine/Runtime/spine-unity/Utility using Guid(19fb612b41270894f9169709298b6031) (DefaultImporter) -> (Import Result ID: '15ff96f33581d8257415c42034c2edfc') in 0.0011357 seconds [static dependencies only]. Details - ImportResultOutputID=294d5568ade19ec5b9b508b0fc5c344f DependenciesID=f30b445baad4356013a009ffcc57ef4d StaticDependenciesID=3739cbc7b5ae0ad0e458ad5bdabf505c
+Start importing Assets/Spine/Runtime/spine-unity/Modules using Guid(6a9a805951678224ea4494fa5f1069dc) (DefaultImporter) -> (Import Result ID: '143378f2c987ef9a1400fbb3822f1795') in 0.0012383 seconds [static dependencies only]. Details - ImportResultOutputID=03f786cc8047b76d2280cc33c82cd291 DependenciesID=73793d5ba14792ed1411322340d8df84 StaticDependenciesID=13eb620b695882c3b42feeced0f25cc5
+Start importing Assets/Spine/Runtime/spine-unity/Components using Guid(0b7b21aefae1d1341a765ccb5cc927a6) (DefaultImporter) -> (Import Result ID: '7a9a8e336f01db9b4b4d2af0f5c5e6d8') in 0.0011943 seconds [static dependencies only]. Details - ImportResultOutputID=bc35986f20cf5eee8485126c356d1b5d DependenciesID=3c28dd69e5d95c7ad8cbfafd9a2cda4e StaticDependenciesID=d3875aef58aad887794cee649dd46203
+Start importing Assets/Spine/Runtime/spine-unity/SkeletonDataModifierAssets using Guid(1de38a3664be7bc45be306a6b9003e06) (DefaultImporter) -> (Import Result ID: 'c461b6d6d3b4ddfb4f469795d5da54cf') in 0.0011935 seconds [static dependencies only]. Details - ImportResultOutputID=f38e06422e4eb95d724e1a0bac2a627e DependenciesID=5d54255ba30bbd3ebabc5d2f84a8b554 StaticDependenciesID=12ba1d5b37e5b458fea80c78ffddffb4
+Start importing Assets/Spine/Runtime/spine-unity/Mesh Generation using Guid(fec57ba5880579d4e9d471a5724cfd5c) (DefaultImporter) -> (Import Result ID: 'a49adc729ca5be0095b9981ee1c8fb1d') in 0.001179 seconds [static dependencies only]. Details - ImportResultOutputID=f85fd0a4525204c9bf64b243464a5ab9 DependenciesID=b4daf7c64a91e19dc3b564f24cc23f37 StaticDependenciesID=097bc2e064802214388e55c0798053ef
+Start importing Assets/Spine/Runtime/spine-unity/Materials using Guid(4f713ab0f9da0e346b5abe80eb99d468) (DefaultImporter) -> (Import Result ID: 'e2ba005bbeb00022e7e0976043082a7e') in 0.0011143 seconds [static dependencies only]. Details - ImportResultOutputID=2d3f19bd407316ea9967abebc2c020d1 DependenciesID=8da39686144493ec64a69a9e7a96eb32 StaticDependenciesID=b59762fb14dc398525df77bd9f872e31
+Start importing Assets/Spine/Runtime/spine-unity/Components/RootMotion using Guid(60a548f2a19f3fd41a053cafd01ac72f) (DefaultImporter) -> (Import Result ID: '3cbe0f6d33fbf2fbffa7f619b2383490') in 0.001358 seconds [static dependencies only]. Details - ImportResultOutputID=800e78c91cb7fe40c73eaddab5ff9596 DependenciesID=4e4725310aef2d0d883fa5365adb1a5a StaticDependenciesID=0b2ced6e38c7de8a9e20aa4d94a6f8b4
+Start importing Assets/Spine/Runtime/spine-unity/Components/SkeletonRendererCustomMaterials using Guid(707852829065ef64b8351c53da22104a) (DefaultImporter) -> (Import Result ID: 'c53a1ca0ed54f254b6b67d5bd019bd95') in 0.0013121 seconds [static dependencies only]. Details - ImportResultOutputID=fe8ec008b38e39ab635ea55978994f9f DependenciesID=cdd13403bb58ad6d626c4a6cb000c4bc StaticDependenciesID=f51de78ee8fb3a78012bb5776751f205
+Start importing Assets/Spine/Runtime/spine-unity/Shaders/Utility using Guid(036be7ebe0c53f140a7b8c3f020ff9bb) (DefaultImporter) -> (Import Result ID: '080a5f2f71dfc830417abc2b7f6544d6') in 0.0011997 seconds [static dependencies only]. Details - ImportResultOutputID=cd9c1c9fc3d7cc2d323db5d283f8fd99 DependenciesID=9c30a2573298591c2ad1a6c603cfea15 StaticDependenciesID=5a08391e2528bcfd222bcba89744d6ef
+Start importing Assets/Spine/Runtime/spine-unity/Shaders/Sprite using Guid(83db79231996ccb4a833384540954355) (DefaultImporter) -> (Import Result ID: '53fcd21a0e4ad4291bcf69b2a6674dab') in 0.0010672 seconds [static dependencies only]. Details - ImportResultOutputID=7cb25c02c86d1505e25b86066ab345c2 DependenciesID=92b190e2721fc59cbaae22b583d0ead8 StaticDependenciesID=349bffcb1ccb415b88b878ab4c04baf8
+Start importing Assets/Spine/Runtime/spine-unity/Modules/TK2D using Guid(84b245faf7504a84b958272cc4b0d466) (DefaultImporter) -> (Import Result ID: '6fe01e721c765e88dc086e78d9ba2e46') in 0.001327 seconds [static dependencies only]. Details - ImportResultOutputID=6d1bdca374bc88bc9386ce478a47bf7e DependenciesID=c7584d5c63613052661a2826b01ca893 StaticDependenciesID=95541a823b26d48e5ef7b55bff5951ab
+Start importing Assets/Spine/Runtime/spine-unity/Components/Following using Guid(b4a09ca9da600fb43bfddfc9016ac5b0) (DefaultImporter) -> (Import Result ID: '2b263133949cda242280f74b0181fe9f') in 0.0012191 seconds [static dependencies only]. Details - ImportResultOutputID=745daa6fd7b6e957d9ce8a1906d55ba4 DependenciesID=302aba214597ce08ededf57ec20d5b9f StaticDependenciesID=d86bf8ff85390463df6694ad4740f38f
+Start importing Assets/Spine/Runtime/spine-unity/Shaders/BlendModes using Guid(85ce156093628f040ab41a6defa314f3) (DefaultImporter) -> (Import Result ID: '64e9cf2c452e21db54127ee22c593259') in 0.0012062 seconds [static dependencies only]. Details - ImportResultOutputID=c59ac4651bf144905057f39e7bac460b DependenciesID=b95394ecd50ec7da69d18923619dbd0a StaticDependenciesID=5dbfb36cd248181281577b0bf2eea912
+Start importing Assets/Spine/Runtime/spine-unity/Shaders/SkeletonGraphic using Guid(e56bf3ab6590d414ab966b3e160706ac) (DefaultImporter) -> (Import Result ID: '5a51c0aaaf3f04413515406ade9ee002') in 0.0014416 seconds [static dependencies only]. Details - ImportResultOutputID=9dea124215b986fcfbf0c8bbdb55df9c DependenciesID=6a37258caecbf63ec2cdf89aad4c5b15 StaticDependenciesID=e573a029f3a56db86de97763a3ece6e8
+Start importing Assets/Spine/Runtime/spine-unity/Utility/YieldInstructions using Guid(a734b5dae50b073428b1edcb46a41d2d) (DefaultImporter) -> (Import Result ID: '742801f2d7ad9bcd98e603332cf5d096') in 0.0011836 seconds [static dependencies only]. Details - ImportResultOutputID=80128cf099339d6b4530096220096392 DependenciesID=19d17a54bc1f85b239ab2802a30b90b3 StaticDependenciesID=4494efadd78abb5e766db0c85aa19e16
+Start importing Assets/Spine/Runtime/spine-unity/Components/SkeletonUtility using Guid(0895dfa087f7fe148b23e79338fc4fda) (DefaultImporter) -> (Import Result ID: '8a7746ecc36d7041954e2cc0f95a9205') in 0.0011591 seconds [static dependencies only]. Details - ImportResultOutputID=02fb82a18d43c1bd8cf5d254cc42f499 DependenciesID=3f1f7a88bc89ef617e1015d1a8bc2047 StaticDependenciesID=ebb054c4a3656b251093c73cd96fe497
+Start importing Assets/Spine/Runtime/spine-unity/SkeletonDataModifierAssets/BlendModeMaterials using Guid(f9bed07250399a4408b3d6d24c9f5fa0) (DefaultImporter) -> (Import Result ID: '23ab4c0e7e9f62904a0dec4212c6770d') in 0.0012969 seconds [static dependencies only]. Details - ImportResultOutputID=0176fd3258fe2d59d0a9ee6071ae2368 DependenciesID=bac5de2eee144594f84bdfdb4d43ee35 StaticDependenciesID=650eff1699a23485ce208d88d1ecc298
+Start importing Assets/Spine/Runtime/spine-unity/Shaders/CGIncludes using Guid(ba8e2339c0fb5f543b5885dc64e87553) (DefaultImporter) -> (Import Result ID: '52235112c37dfe6ec649a4da49a22ed4') in 0.0011485 seconds [static dependencies only]. Details - ImportResultOutputID=977fdb07f8502c0e337867d9cd7554de DependenciesID=961ecbcd205e6ed2d02721c56a0b21ad StaticDependenciesID=203b882e1db3a993fdc4a409118ea2db
+Start importing Assets/Spine/Runtime/spine-unity/Components/Internal using Guid(ea58b8d5fb06eca48b5154917d966599) (DefaultImporter) -> (Import Result ID: '3641521311e6fb32f10fae89935013f7') in 0.0017156 seconds [static dependencies only]. Details - ImportResultOutputID=bb8a30583ac4cf2bb8c6d851ac6e03d9 DependenciesID=a0975064f36052e8d7669ef232ed5be5 StaticDependenciesID=e360aad8353a3fc8160850c2cd5f60fe
+Start importing Assets/Spine/Runtime/spine-unity/Components/SkeletonRenderSeparator using Guid(fdbf23488dc8f4d4f84f438d7bdba33d) (DefaultImporter) -> (Import Result ID: 'b8253f05907eec4065825a7779eec299') in 0.001716 seconds [static dependencies only]. Details - ImportResultOutputID=b30b333dd21fb0ec253cbc2479359c59 DependenciesID=76696a09900cab42ee558ca1fdf46911 StaticDependenciesID=b5bebcf0458a31540a0b4effa1428910
+Start importing Assets/Spine/Runtime/spine-unity/Shaders/Outline using Guid(df97e0dd0c437f941abcacbe433cead7) (DefaultImporter) -> (Import Result ID: '5501d943529a82ab63f82a1d80104fec') in 0.0014539 seconds [static dependencies only]. Details - ImportResultOutputID=f736fa7cf0f3554b2fe688b6881efb4b DependenciesID=aea2a243678f5cd896c45d7423662143 StaticDependenciesID=71d6c5b61764f4b614061458ec230c4e
+Start importing Assets/Spine/Runtime/spine-unity/Shaders/Outline/SkeletonGraphic using Guid(8065a7e076f972949be2752df5cb5730) (DefaultImporter) -> (Import Result ID: '409a43c736fe200f38b01784ad064f6c') in 0.0014152 seconds [static dependencies only]. Details - ImportResultOutputID=5448e5d656b9f77530593713214e6af2 DependenciesID=92847ac1b0a80416f3e67fe00d9b1f9c StaticDependenciesID=8d63fbce34e937ba837e6d49bd5ce6c5
+Start importing Assets/Spine/Runtime/spine-unity/Shaders/Outline/CGIncludes using Guid(a56b7e79f1418e948ab03636cc72b51d) (DefaultImporter) -> (Import Result ID: '1ceedaaf2f1ebde8c03042b31ddb82da') in 0.0013837 seconds [static dependencies only]. Details - ImportResultOutputID=ef767f881b51397b9b82363cbf7aa5f6 DependenciesID=95bc949485ffa4e538801128d5a57d65 StaticDependenciesID=3a64aa2fb52a69fd1651d64ad61b2b9f
+Start importing Assets/Spine/Runtime/spine-unity/Shaders/Outline/Sprite using Guid(77a688408517f43409e9e6adb28b4cb8) (DefaultImporter) -> (Import Result ID: 'a529b2296dc3dceb1f50f3eac8acabc0') in 0.0013453 seconds [static dependencies only]. Details - ImportResultOutputID=5ead60aeb1865aedbc6aaaf4c6cf013d DependenciesID=d011371680a563076bb29ce934f2d588 StaticDependenciesID=d0f45d7c419363207f7772a30efcdcaf
+Start importing Assets/Spine/Runtime/spine-unity/Shaders/Outline/BlendModes using Guid(8955f5a3221a5854080636ea70f5253a) (DefaultImporter) -> (Import Result ID: '7100de9568c1c810576aaabeb9bbb446') in 0.0012144 seconds [static dependencies only]. Details - ImportResultOutputID=9cbd43e4371fe494f05a7ebe23ce7a8e DependenciesID=861f48df1bf27b6ae94044556aa8bc0e StaticDependenciesID=4426ac71bf1f8e8e288601892fd3e3b4
+Start importing Assets/Spine/Runtime/spine-unity/Shaders/SkeletonGraphic/CGIncludes using Guid(6d433c430e5851f4d916dd595ca0f095) (DefaultImporter) -> (Import Result ID: '3b3cf85dd67e16475f9bbf0c554ee4bf') in 0.0013354 seconds [static dependencies only]. Details - ImportResultOutputID=e50fcf1909897276f4ab53df3b71fbe9 DependenciesID=ae22a8c94db98f31e5724a19032d7eab StaticDependenciesID=46e5ea911e55cf440c2a153bb512d827
+Start importing Assets/Spine/Runtime/spine-unity/Shaders/Sprite/CGIncludes using Guid(8d29f32df3ac3be4c812d7d23c3c8e36) (DefaultImporter) -> (Import Result ID: '54cae2b2e6c02d94bc1a053df01ed3ed') in 0.0013794 seconds [static dependencies only]. Details - ImportResultOutputID=8a523ef49bff3ab6b7478b7b818064e2 DependenciesID=40b6569252e87f826a0b5f5d1c1c2581 StaticDependenciesID=11f7f5fdd1795886b632ed199852a1c3
+Start importing Assets/Spine/Runtime/spine-csharp/spine-csharp.asmdef using Guid(72d1fea872bd7a449bf3818f2b0a6708) (AssemblyDefinitionImporter) -> (Import Result ID: '60ddc9036fc0b97298a002a5dbc9cd69') in 0.0015445 seconds [static dependencies only]. Details - ImportResultOutputID=7e13aabdd161030412e4243423f75b55 DependenciesID=1286e95ad474420ed92b04f72c73240c StaticDependenciesID=b70328d90d5c0052c92e6d66fcf9bdd2
+Start importing Assets/Spine/Runtime/spine-unity.asmdef using Guid(68765d262e2128e4ab49c983f3411946) (AssemblyDefinitionImporter) -> (Import Result ID: 'f0bc6b1c289f849b7cb872d7dd6f533d') in 0.0014651 seconds [static dependencies only]. Details - ImportResultOutputID=57e44ebb63d2cfedd991f59556db4a50 DependenciesID=efc778e82a2fae99cb309419e4429e1f StaticDependenciesID=9b04a90c65c55a4f22aa568399c5f68d
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+ScheduleIndexationOnStartup MainProcess:True IndexOnStartup:True
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.287 seconds
+Domain Reload Profiling: 643ms
+	BeginReloadAssembly (269ms)
+		DisableScriptedObjects (17ms)
+		CreateAndSetChildDomain (146ms)
+	RebuildCommonClasses (25ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (29ms)
+	LoadAllAssembliesAndSetupDomain (24ms)
+		LoadAssemblies (82ms)
+		AnalyzeDomain (16ms)
+			TypeCache.Refresh (9ms)
+				TypeCache.ScanAssembly (5ms)
+			BuildScriptInfoCaches (3ms)
+	FinalizeReload (288ms)
+		SetupLoadedEditorAssemblies (0ms)
+			InitializePlatformSupportModulesInManaged (17ms)
+			BeforeProcessingInitializeOnLoad (77ms)
+			ProcessInitializeOnLoadAttributes (56ms)
+			ProcessInitializeOnLoadMethodAttributes (30ms)
+			AfterProcessingInitializeOnLoad (7ms)
+		AwakeInstancesAfterBackupRestoration (19ms)
+Start importing Assets/RestoreData/route_spine_raw_decode_recovery/8007/8007.png using Guid(80de0fd87e261534aaec67fe76548779) (TextureImporter) -> (Import Result ID: '9afb5c89a3e190ea050574a86195252a') in 0.012282 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=b71919efcd0e30a870f13a01fc55a3ff DependenciesID=92806ced5a375c5405ec0112f3b9de3f StaticDependenciesID=e2ba7da3038251d6de91e5533cb24894
+Start importing Assets/RestoreData/route_spine_raw_decode_recovery/Spine_shijieanniu/Spine_shijieanniu.png using Guid(44f52b82cb1b081439b2d3b34d666692) (TextureImporter) -> (Import Result ID: 'f8c655ec37156a87668fd87bcd08951a') in 0.021437 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=d54543240f5c65cad41357171f615d62 DependenciesID=5608ff3015a5f57c2f930ba097cdc23d StaticDependenciesID=cc7a400a3158980b85a34a797f039f05
+Start importing Assets/Spine/Runtime/spine-unity/Shaders/CGIncludes/Spine-Skeleton-Lit-Common.cginc using Guid(70c77c02aabd5e44f94aab48dd0be7b2) (ShaderIncludeImporter) -> (Import Result ID: '052ed7cdc41fd66dd946e37eb47ee815') in 0.0016961 seconds [static dependencies only]. Details - ImportResultOutputID=a87b37bef4fe1964d52cd3da2eaf35fe DependenciesID=a1ca3fa75e3a01c6fa684520e4f2e383 StaticDependenciesID=38eda842408aabc43d3123ebd0649ec0
+Start importing Assets/Spine/Runtime/spine-unity/Shaders/CGIncludes/Spine-Common.cginc using Guid(f0c09e980440e7f4f8db4f9f146d320c) (ShaderIncludeImporter) -> (Import Result ID: '25203c8656e74ecee24154f8a133a2b4') in 0.001409 seconds [static dependencies only]. Details - ImportResultOutputID=3daa8db6b38a2b9a6b236bae5101d4f5 DependenciesID=9303b5271826c365840cd080cb334206 StaticDependenciesID=a4f6029407d4500275ea1408a8994dba
+Start importing Assets/Spine/Runtime/spine-unity/Shaders/Sprite/CGIncludes/ShaderShared.cginc using Guid(c18c5cab567666f4d8c5b2bd4e61390b) (ShaderIncludeImporter) -> (Import Result ID: '5804b94a5ad912d498fddf32ee27b76a') in 0.0013148 seconds [static dependencies only]. Details - ImportResultOutputID=2e04a838c0e679c729f98cce4eb3b921 DependenciesID=61375e87a0f32f27061f8ca75b810dc3 StaticDependenciesID=43215e382b29b1159aec627e28fbb93a
+Start importing Assets/Spine/Runtime/spine-unity/Shaders/Sprite/CGIncludes/ShaderMaths.cginc using Guid(e1de23de2025abe4a84ff2edd3f24491) (ShaderIncludeImporter) -> (Import Result ID: '12ab1b5f72ebbfe54d3a824fba284c27') in 0.0012642 seconds [static dependencies only]. Details - ImportResultOutputID=d62fd614799fa3269963720990394bb4 DependenciesID=dca7d4607f3fe4a7eae6f69a45f7f817 StaticDependenciesID=0e287a5b4c08a23bc6aa5cc6b89228df
+Start importing Assets/Spine/Runtime/spine-unity/Shaders/Sprite/CGIncludes/SpriteSpecular.cginc using Guid(f195336fc94457241a37a0aa85923681) (ShaderIncludeImporter) -> (Import Result ID: '45cecd1ae2dafea30bd3301ab18f6de2') in 0.0013498 seconds [static dependencies only]. Details - ImportResultOutputID=74ed00197090c8d2decde0cf4831a81c DependenciesID=39fcd56bd04ccc37197d8dc0b6779f85 StaticDependenciesID=dc906346757286afa478bb631943b6b3
+Start importing Assets/Spine/Runtime/spine-unity/Shaders/Sprite/CGIncludes/SpriteUnlit.cginc using Guid(072e7b07ec7fb1346a9dcd3bcbbb7111) (ShaderIncludeImporter) -> (Import Result ID: '8c7def4cbeb23f972b3e9ecd19455060') in 0.0012819 seconds [static dependencies only]. Details - ImportResultOutputID=86f51059479c4b9b5297dddc22ef8b9f DependenciesID=66bf4386a544eaf8498670e3a9b36d0e StaticDependenciesID=e9cff9cec61cb9f584e027082a2cd88b
+Start importing Assets/Spine/Runtime/spine-unity/Shaders/CGIncludes/Spine-DepthOnlyPass.cginc using Guid(27351ce55d3beb643ae8d9385db21941) (ShaderIncludeImporter) -> (Import Result ID: '05a7a7418558196efad7bfe881654e63') in 0.0012961 seconds [static dependencies only]. Details - ImportResultOutputID=184c1087ce323cfeb7d972c0ec8e6ecd DependenciesID=3bb40fa16506652faf9b338e9f3745b6 StaticDependenciesID=0518c08ed33ed64cee4d50bf23f7d6ff
+Start importing Assets/Spine/Runtime/spine-unity/Shaders/Sprite/CGIncludes/SpriteShadows.cginc using Guid(b7dbdfb1f55ee26459284220ad6d5bc4) (ShaderIncludeImporter) -> (Import Result ID: '723a2c5c0ab282f893fdad5085e562f4') in 0.0013242 seconds [static dependencies only]. Details - ImportResultOutputID=9d35311aef532596ea96f0d9e1ccf64a DependenciesID=c44f6ae58c21566ab96568168251ef02 StaticDependenciesID=3b62b4e8af6695cec21592bf3dfdb1a9
+Start importing Assets/Spine/Runtime/spine-unity/Shaders/CGIncludes/Spine-Skeleton-Lit-Common-Shadow.cginc using Guid(c7297b25c81d2494e8e73b742e3c7345) (ShaderIncludeImporter) -> (Import Result ID: 'a033df34eed815e3b432db820e9bc1e5') in 0.0012824 seconds [static dependencies only]. Details - ImportResultOutputID=773d2f01ef6e97020badb6fc10f2f358 DependenciesID=28ee8ffb5d8e67735a77ece7e4848b55 StaticDependenciesID=bfc779f0a3c12d8667b0599d6e94cccb
+Start importing Assets/Spine/Runtime/spine-unity/Shaders/Sprite/CGIncludes/SpriteVertexLighting.cginc using Guid(c739dcf9dbcab944898d0b796e11afb9) (ShaderIncludeImporter) -> (Import Result ID: 'cf5cff12aefd3de574e13fc0c13630d4') in 0.0013522 seconds [static dependencies only]. Details - ImportResultOutputID=559c8484e17d82250a6a55d5702a14c2 DependenciesID=e88600a23748a832452255a655939ef2 StaticDependenciesID=43a42e6e0ac7f665ca2b3732e4cd13e7
+Start importing Assets/Spine/Runtime/spine-unity/Shaders/CGIncludes/Spine-Outline-Common.cginc using Guid(a8d610b87be4e82409e18a63a930d335) (ShaderIncludeImporter) -> (Import Result ID: 'ff6d1a0fc3aacc388b24045946982029') in 0.0027714 seconds [static dependencies only]. Details - ImportResultOutputID=da1f366768336169b18dd4178417db34 DependenciesID=0aa536d6a9bcfda8f2c62f4763ff88ba StaticDependenciesID=5c33cb79c58a11142d7fc3e12aaa0f2c
+Start importing Assets/Spine/Runtime/spine-unity/Shaders/Sprite/CGIncludes/SpriteLighting.cginc using Guid(0cfb891658099ca4bb0c9544c08e60f9) (ShaderIncludeImporter) -> (Import Result ID: 'dd39411157a24267c773cacf5dfd933c') in 0.0014438 seconds [static dependencies only]. Details - ImportResultOutputID=c56678b8324d04ead0d891f25c806c30 DependenciesID=4be083741fb52d2ca3f9484eb7f1c6fa StaticDependenciesID=3d6d021329ad8a3521004ec8a9861943
+Start importing Assets/Spine/Runtime/spine-unity/Shaders/CGIncludes/Spine-Skeleton-Tint-Common.cginc using Guid(cc9439c8e75fb7e4c82ad725b649b047) (ShaderIncludeImporter) -> (Import Result ID: '8ac1a88a537ba2666d1c95aa75963438') in 0.0013467 seconds [static dependencies only]. Details - ImportResultOutputID=3d09d840e432d05c37a7c14e2548ad78 DependenciesID=3c5a164ecf9bb53ff43ef48f11197c37 StaticDependenciesID=d98aa4fc7107fc90ebad0d33c5e23553
+Start importing Assets/Spine/Runtime/spine-unity/Shaders/Outline/CGIncludes/Spine-Outline-Pass.cginc using Guid(2ec781e799f97504c8a418e168759f70) (ShaderIncludeImporter) -> (Import Result ID: 'c0cd3b4cb300e6e9cc742ab7b7360ac7') in 0.0012029 seconds [static dependencies only]. Details - ImportResultOutputID=ed347dbf1a5a53ed8a281429fa923dfd DependenciesID=6383b3480a306b10cadfd5a41e59c6c7 StaticDependenciesID=e0603955ee1cd684239d21fc705f5964
+Start importing Assets/Spine/Runtime/spine-unity/Shaders/Sprite/CGIncludes/SpritePixelLighting.cginc using Guid(7ffc57e05c42ec748838bea0a3aff9f9) (ShaderIncludeImporter) -> (Import Result ID: 'cca4f273014952fa999df0ae8e2a11b0') in 0.001548 seconds [static dependencies only]. Details - ImportResultOutputID=8dc2214af87b02898f1eaaf62a953a75 DependenciesID=45fc969f0f4080d46ef719e394180612 StaticDependenciesID=65e7d1f11dc3eaabeaf792e42f80e0e6
+Start importing Assets/Spine/Runtime/spine-unity/Shaders/SkeletonGraphic/CGIncludes/Spine-SkeletonGraphic-NormalPass.cginc using Guid(7f1f20f6ddb670f4998f78d0417912ee) (ShaderIncludeImporter) -> (Import Result ID: 'b3394d97bc5968f7f1c4c5a9cbfc2a79') in 0.0014791 seconds [static dependencies only]. Details - ImportResultOutputID=3394936780bc8814a940c13b06e02f1e DependenciesID=2590941f068294e1a77aa2558dad1a03 StaticDependenciesID=3e62b419c962955e1289733516543eb1
+Start importing Assets/Spine/Runtime/spine-unity/Shaders/Outline/Spine-Skeleton-Lit-Outline.shader using Guid(10fab3f69a099be4391fe8a1ad880c65) (ShaderImporter)Launched and connected shader compiler UnityShaderCompiler.exe after 0.01 seconds
+WARNING: Shader Unsupported: 'Spine/Outline/Skeleton Lit' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Spine/Outline/Skeleton Lit' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+ -> (Import Result ID: '3a25cb4e600532a1ca3e96ec70b5faf8') in 0.0242009 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=44875698747ce77b2f5f28c6a8d41cbc DependenciesID=7ebea977f57d7e7cb1400e67607f779b StaticDependenciesID=15c5dad2b9ef4552a9415e64863660ca
+Start importing Assets/Spine/Runtime/spine-unity/Shaders/Outline/Sprite/SpritesVertexLit-Outline.shader using Guid(30ef5dd318033004588a6481c092416a) (ShaderImporter)WARNING: Shader Unsupported: 'Spine/Outline/Sprite/Vertex Lit' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Spine/Outline/Sprite/Vertex Lit' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+ -> (Import Result ID: '9193adbbc8a88f0683743cde2ca9873d') in 0.002681 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=222384e7517331099f2bc879a5676eeb DependenciesID=1c504416273d4cb5af7823b6676b8e26 StaticDependenciesID=0b892f04da8554f26395c3f516a2a0bb
+Start importing Assets/Spine/Runtime/spine-unity/Shaders/Utility/HiddenPass.shader using Guid(913475501bf19374c84390868a9d6d3d) (ShaderImporter) -> (Import Result ID: '2b5f6eee1dd10e1148c0579e6b25e2a8') in 0.0024317 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=a6a0bf4903005d1e0e64d0d242c2f7d7 DependenciesID=201d8b09cff04e83bca95e46eb717cf4 StaticDependenciesID=b0346ea0cfb909a911c736dd4ee02b6b
+Start importing Assets/Spine/Runtime/spine-unity/Shaders/SkeletonGraphic/Spine-SkeletonGraphic-Additive.shader using Guid(a1e4ab34b07f81e4e94f0d241c416669) (ShaderImporter) -> (Import Result ID: '449f719cf47a6fc95e5cafa4d4f78e9b') in 0.0129753 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=f24691fc8d86c5e45fced20b24428de7 DependenciesID=245a991931201abb9097987ca0948f67 StaticDependenciesID=2ec4153a19e2dc6357decc04d9b8226e
+Start importing Assets/Spine/Runtime/spine-unity/Shaders/Outline/Spine-Skeleton-Fill-Outline.shader using Guid(e158cbe58baa093438feb3d691f3daba) (ShaderImporter)WARNING: Shader Unsupported: 'Spine/Outline/Skeleton Fill' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Spine/Outline/Skeleton Fill' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+ -> (Import Result ID: 'e739c70fa3b4322a41ae24b5f5baa6b5') in 0.0024359 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=2282d4b602b8a897a0b14deca82947f0 DependenciesID=1cbe3eae019e200bde46fba1861f7d25 StaticDependenciesID=9331695f69041b59c337067787bc93b4
+Start importing Assets/Spine/Runtime/spine-unity/Shaders/Outline/BlendModes/Spine-Skeleton-PMA-Additive-Outline.shader using Guid(0299ffae826705448b6c80ccc6a53b75) (ShaderImporter)WARNING: Shader Unsupported: 'Spine/Outline/Blend Modes/Skeleton PMA Additive' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Spine/Outline/Blend Modes/Skeleton PMA Additive' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+ -> (Import Result ID: '888a84e0eb97e26302fb3ce18e101bf5') in 0.0026813 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=6d3e57b3b0a09c260e2359cef9b69454 DependenciesID=9814c380ac9ad965983929c00630e498 StaticDependenciesID=27181d325c7d066c7488746884575b0f
+Start importing Assets/Spine/Runtime/spine-unity/Shaders/Spine-Skeleton-Tint.shader using Guid(522f03282fd79be47b306e2ef4b593fd) (ShaderImporter) -> (Import Result ID: '5b273f3ee16949f907f67ab0da72d663') in 0.004909 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=77574d7cb6520c6a042fe5635d543550 DependenciesID=6deae1afa077e98c314264a2e0b4f352 StaticDependenciesID=e58cdc1dd1c6f328a256c499d4d8defc
+Start importing Assets/Spine/Runtime/spine-unity/Shaders/Outline/Sprite/SpritesPixelLit-Outline.shader using Guid(a27d4b27c8ecd9840a03558ccc5ad8a3) (ShaderImporter)WARNING: Shader Unsupported: 'Spine/Outline/Sprite/Pixel Lit' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Spine/Outline/Sprite/Pixel Lit' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+ -> (Import Result ID: 'cd5bd12ee91633a3229ee2613b542abb') in 0.0023899 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=7759bf821fb22f7866c21eb59c4405b9 DependenciesID=13f16aa20f2d888aaca3fbf486400c87 StaticDependenciesID=811137aecdad529dd0eedfe6ad68f52b
+Start importing Assets/Spine/Runtime/spine-unity/Shaders/Sprite/CameraNormalsTexture.shader using Guid(537141eca02c6df4bb8b4f77567e9de2) (ShaderImporter) -> (Import Result ID: '5bf51818b32211326afc3a9ed06cdd78') in 0.0191888 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=0a927529b44433bb090d317a38ec55df DependenciesID=3c504cbbf56e7c54d1cce7d9a662c2aa StaticDependenciesID=f1327a8a3690e1fef6e37b6f7f28e0cd
+Start importing Assets/Spine/Runtime/spine-unity/Shaders/BlendModes/Spine-Skeleton-PMA-Additive.shader using Guid(53efa1d97f5d9f74285d4330cda14e36) (ShaderImporter) -> (Import Result ID: '659257bd3138ecf247c5a0b2eee92648') in 0.0037473 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=30ad6c17a00b5152f02905bd7e572589 DependenciesID=d60d94165a505a122a9b5756f7bdd9b6 StaticDependenciesID=e87620fca89172413df5a3deb513e8d6
+Start importing Assets/Spine/Runtime/spine-unity/Shaders/Sprite/SpritesUnlit.shader using Guid(64005298b9a80bb4899eabd5140dc4a8) (ShaderImporter) -> (Import Result ID: 'bc196b0cd15b864e37772f1e737b5af7') in 0.0058407 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=299dc20611a1357ecefe830a21b9d5f1 DependenciesID=5ea7a6de3531527409f02dc16bfa37e8 StaticDependenciesID=d071652277b72138705d1386b2018a29
+Start importing Assets/Spine/Runtime/spine-unity/Shaders/Spine-Skeleton-Fill.shader using Guid(45495790b394f894a967dbf44489b57b) (ShaderImporter) -> (Import Result ID: '10c81fbb28b0d0884c9f2b6478d15377') in 0.0035486 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=0e529a2c09b031b2ef1bb1b7ecc617ee DependenciesID=c9c3c20f2e86b5d71cf139210587102c StaticDependenciesID=b8a47cbd283aa2c274ce81efafb9ff06
+Start importing Assets/Spine/Runtime/spine-unity/Shaders/Outline/Spine-Skeleton-Lit-ZWrite-Outline.shader using Guid(756be4f2f738f6c4583bb1c90e16bf0b) (ShaderImporter)WARNING: Shader Unsupported: 'Spine/Outline/Skeleton Lit ZWrite' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Spine/Outline/Skeleton Lit ZWrite' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+ -> (Import Result ID: '4f6907e29bc54917a94c038b6d40a9bf') in 0.0021207 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=7c9efc9a2b6ec55cfcc1a12261844fd7 DependenciesID=0f7130f8a05a4746b7891f336a8923e5 StaticDependenciesID=212aa47e2bf06dc0e5ff7baeb1de6038
+Start importing Assets/Spine/Runtime/spine-unity/Shaders/Outline/SkeletonGraphic/Spine-SkeletonGraphic-TintBlack-Outline.shader using Guid(d55d64dd09c46af40a319933a62fa1b2) (ShaderImporter)WARNING: Shader Unsupported: 'Spine/Outline/SkeletonGraphic Tint Black' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Spine/Outline/SkeletonGraphic Tint Black' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+ -> (Import Result ID: '37d2544d48d4bbd3162244902f2dd9c6') in 0.0023552 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=b7bc98c4379bc7566f6ee1ca8a7103ed DependenciesID=23b61d398ef29b24fae8e9d1f745dd94 StaticDependenciesID=720a81a6a6fba8ac541fb7dc56afb900
+Start importing Assets/Spine/Runtime/spine-unity/Shaders/Utility/Hidden-Spine-Bones.shader using Guid(66988de88a15abd4e8846c6805485f57) (ShaderImporter) -> (Import Result ID: '56737143871ede869d1b4823b64de3eb') in 0.0029326 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=0a240d60507d7fbea896a75dc30a41a6 DependenciesID=aecd245ca83ffdbe693e0711f255a575 StaticDependenciesID=4d59d411d483b10aecbd040c8c835e3d
+Start importing Assets/Spine/Runtime/spine-unity/Shaders/SkeletonGraphic/Spine-SkeletonGraphic-Screen.shader using Guid(c61244023592f95479fddd71b5067683) (ShaderImporter) -> (Import Result ID: '045db23c65f106a266383f6d195e71cc') in 0.0034273 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=5ff72adf55b63027b68397447df06728 DependenciesID=fcc8037eaaf265a493182d5fbc7fa950 StaticDependenciesID=34ae74d2b1ee3e26a3a8f23ba1f49aaf
+Start importing Assets/Spine/Runtime/spine-unity/Shaders/Outline/BlendModes/Spine-Skeleton-PMA-Screen-Outline.shader using Guid(e61a8d94e453ff641a7e39c4b11cac95) (ShaderImporter)WARNING: Shader Unsupported: 'Spine/Outline/Blend Modes/Skeleton PMA Screen' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Spine/Outline/Blend Modes/Skeleton PMA Screen' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+ -> (Import Result ID: '141cd859043409b9aecbda1bc96188e6') in 0.0022574 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=4c166c34d0284e2cd3b1ade7e3783bd3 DependenciesID=7f9e87bb953d35fb097eb7d9aa96ff41 StaticDependenciesID=33a3373ed8287f6c4a6c0c4482321729
+Start importing Assets/Spine/Runtime/spine-unity/Shaders/SkeletonGraphic/Spine-SkeletonGraphic-TintBlack.shader using Guid(f64c7bc238bb2c246b8ca1912b2b6b9c) (ShaderImporter) -> (Import Result ID: 'a77ce3d4e573b8e525bbcc378b67b722') in 0.0031801 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=21df8b5cf2eb76f8ff97f33996500c9a DependenciesID=8cd2d20a604c2c5ac7a4918a61ffb042 StaticDependenciesID=eecf149f05f7e9ad2de0b11c0600e77d
+Start importing Assets/Spine/Runtime/spine-unity/Shaders/Outline/Spine-Skeleton-OutlineOnly-ZWrite.shader using Guid(177da18c3d2e0aa4cb39990ea011973c) (ShaderImporter) -> (Import Result ID: 'b0d73e726ff3dd281a9a19a5c8afd1e0') in 0.0063563 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=023f0acc0c4b550d53f8015ff35978ee DependenciesID=dedfbf00abf2c121c77a218397d04bca StaticDependenciesID=4c53198ae45c647ac392ade9caf39360
+Start importing Assets/Spine/Runtime/spine-unity/Shaders/Outline/Sprite/SpritesUnlit-Outline.shader using Guid(276c07e3bdd5719458187a5823e9d96a) (ShaderImporter)WARNING: Shader Unsupported: 'Spine/Outline/Sprite/Unlit' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Spine/Outline/Sprite/Unlit' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+ -> (Import Result ID: 'f5906ba5e36f178a93c091562c200f98') in 0.0026322 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=5f4c7eaa3dad27a38b5ad31a797cf478 DependenciesID=0913acb640b890c61b9a1f67c97ce5ab StaticDependenciesID=9bb56dae77ec9e30bb0749a43a50ce6a
+Start importing Assets/Spine/Runtime/spine-unity/Shaders/Sprite/CameraDepthNormalsTexture.shader using Guid(4794ea6b2d07cc546ba97a809b5f9ada) (ShaderImporter) -> (Import Result ID: 'b053ca831f9b11a6b9637cd102dfb9f1') in 0.0088845 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=e7b43c6a0a16271f48822931c447b60d DependenciesID=5c701833b97abc7db72fbe5ae92a11e0 StaticDependenciesID=39c51cd62d5fc33959c67c7b5e96afdc
+Start importing Assets/Spine/Runtime/spine-unity/Shaders/Sprite/CameraDepthTexture.shader using Guid(f768a57e040cc48489ad8c7392a31154) (ShaderImporter) -> (Import Result ID: 'a40dbe6e675287e6d66b9ab777d04f8c') in 0.0096864 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=428395c2fef73d3d884d6e4c18bdd6c4 DependenciesID=bde578fe708796a8e925e267ff4edeb8 StaticDependenciesID=0f513c529a343d824d5371ce5744a4de
+Start importing Assets/Spine/Runtime/spine-unity/Shaders/Outline/Spine-Skeleton-Outline.shader using Guid(28b5cf4804845fe4b868531fd0bb81d5) (ShaderImporter)WARNING: Shader Unsupported: 'Spine/Outline/Skeleton' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Spine/Outline/Skeleton' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+ -> (Import Result ID: '3d556e31801dba1a5880b5fcbe9761b1') in 0.0030623 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=c1c9a399717f52bf4b1bbe562be180ae DependenciesID=8c18efc13943dcd09d938b5bb54ebe6a StaticDependenciesID=644169752b90ba63b7d0238a16fb84f7
+Start importing Assets/Spine/Runtime/spine-unity/Shaders/Outline/Spine-Skeleton-TintBlack-Outline.shader using Guid(49cf725a1e40e7742be92917f83946c3) (ShaderImporter)WARNING: Shader Unsupported: 'Spine/Outline/Skeleton Tint Black' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Spine/Outline/Skeleton Tint Black' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+ -> (Import Result ID: 'c6842683057de747976d0feff1948a61') in 0.0022166 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=50a2a609bbfbf622db61877a6458ac9a DependenciesID=2180494f49d99ceb6880b5a2c571694d StaticDependenciesID=4c1fb464e677b1c88f259c8f21ede26c
+Start importing Assets/Spine/Runtime/spine-unity/Shaders/Spine-Special-Skeleton-Grayscale.shader using Guid(ea7e7c05f36541b4bb280f98ebda8ba1) (ShaderImporter) -> (Import Result ID: '11cb831aa3c944e9e10cc388a22a918c') in 0.0032474 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=cf05c2d44e42ee2f0eaf09ab6a6c19a6 DependenciesID=aaa2c087c277cd1261f7b0778f524d9b StaticDependenciesID=71c2cf954ccdea395c7a24115916b02e
+Start importing Assets/Spine/Runtime/spine-unity/Shaders/SkeletonGraphic/Spine-SkeletonGraphic.shader using Guid(fa95b0fb6983c0f40a152e6f9aa82bfb) (ShaderImporter) -> (Import Result ID: '33514534f3d42e1b7a165fc146c6424d') in 0.0030939 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=766302cb3d0e4484ee1ab7a6160ab72d DependenciesID=f9230a6eac63f796d8a9e43e4915eeb4 StaticDependenciesID=71874713cd596af6c1e50e980b7c599c
+Start importing Assets/Spine/Runtime/spine-unity/Shaders/Outline/BlendModes/Spine-Skeleton-PMA-Multiply-Outline.shader using Guid(4b3566a937643b8498d1ec6df5880b77) (ShaderImporter)WARNING: Shader Unsupported: 'Spine/Outline/Blend Modes/Skeleton PMA Multiply' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Spine/Outline/Blend Modes/Skeleton PMA Multiply' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+ -> (Import Result ID: '3e38749470e824e4609ba63863c7c7fd') in 0.0055312 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=c0cf27e76b9d78b1c1bd6d76d6e6d4c1 DependenciesID=454f981f5fb3c19740cce2ca9aa41bb3 StaticDependenciesID=179a506086139b4c76f27c43b1f66dd9
+Start importing Assets/Spine/Runtime/spine-unity/Shaders/BlendModes/Spine-Skeleton-PMA-Multiply.shader using Guid(8bdcdc7ee298e594a9c20c61d25c33b6) (ShaderImporter) -> (Import Result ID: 'ab09f3a2705ec5ad2f642400efda9749') in 0.0041602 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=750d737e8e3c4068293a22a063666581 DependenciesID=0868450337bc764e953b9645680d59ce StaticDependenciesID=c545306d6e76bb66ff4536649970fa12
+Start importing Assets/Spine/Runtime/spine-unity/Shaders/Sprite/SpriteDepthNormalsTexture.shader using Guid(abbda12fddbb0b048a842a3835470d30) (ShaderImporter) -> (Import Result ID: 'd95bc3112b20acee065302affbd4d232') in 0.0079379 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=748c2decd61bbe8fa17e1a14de9a7a16 DependenciesID=a612284484013c276f86d7cd1232edab StaticDependenciesID=b9e5e2d43cf18ae39e559b365b5ef0a7
+Start importing Assets/Spine/Runtime/spine-unity/Shaders/Sprite/SpritesVertexLit.shader using Guid(2ce511398fb980f41b7d316c51534590) (ShaderImporter) -> (Import Result ID: '84895a843e7cc9e6e7320489a8dd9d32') in 0.017225 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=38a0368830f2f7ddb7a5931aea71efba DependenciesID=f1642e04bed34777e3959207f74e7e54 StaticDependenciesID=b84d8c683e0c2121b002f40d83763a52
+Start importing Assets/Spine/Runtime/spine-unity/Shaders/Outline/Spine-Special-Skeleton-Grayscale-Outline.shader using Guid(1d3e1518ae643a749b086bc7972893d2) (ShaderImporter)WARNING: Shader Unsupported: 'Spine/Outline/Special/Skeleton Grayscale' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Spine/Outline/Special/Skeleton Grayscale' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+ -> (Import Result ID: '375eaead8aa1fee0b6cb061408a59340') in 0.002802 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=c015493310724669646cfc7e1ccc8258 DependenciesID=b768e871b41d5fefcede7cb8176975d0 StaticDependenciesID=ab96304527a479a24402ced69423e5fc
+Start importing Assets/Spine/Runtime/spine-unity/Shaders/Spine-Skeleton-Lit.shader using Guid(bd83c75f51f5e23498ae22ffcdfe92c3) (ShaderImporter) -> (Import Result ID: '20378fcb751e30ef65ec3ee35ab0abd3') in 0.0061934 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=d1398e15c29c17111b4aa3aa7250a80e DependenciesID=0361471a5cf7dad025003cfaee24328f StaticDependenciesID=eafa5f09b673431896e005b2582b53fb
+Start importing Assets/Spine/Runtime/spine-unity/Shaders/Spine-Skeleton-Lit-ZWrite.shader using Guid(fde05abf1f7be4b4da1caf8c8de1823a) (ShaderImporter) -> (Import Result ID: '04e07e24390d7d1303e569d57eeb9663') in 0.003693 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=c51addd52bcb920d3c145248c2e329b9 DependenciesID=b3b04d6b9612cf3b260705a063ee5ab4 StaticDependenciesID=8bff17f3c71d416ff0a6d0628ea81976
+Start importing Assets/Spine/Runtime/spine-unity/Shaders/Spine-Skeleton.shader using Guid(1e8a610c9e01c3648bac42585e5fc676) (ShaderImporter) -> (Import Result ID: '60c3c102a313e37b3a8420658968b5ad') in 0.0036296 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=1eebfd50458d1f8e6556d3939a50caa6 DependenciesID=460559c425987120b9bec3b15223eb33 StaticDependenciesID=5b08b82c31c9c17770d0d06b3bf74348
+Start importing Assets/Spine/Runtime/spine-unity/Shaders/BlendModes/Spine-Skeleton-PMA-Screen.shader using Guid(4e8caa36c07aacf4ab270da00784e4d9) (ShaderImporter) -> (Import Result ID: '200d2c1ec580c372e4322bd9fd87b5aa') in 0.0034808 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=d8b39b087c6ae0906bedbc33636ba149 DependenciesID=bbfe515cf05c6a6f77765db8e943b0ec StaticDependenciesID=b5bc95ab7452641fab503611c9d18a5c
+Start importing Assets/Spine/Runtime/spine-unity/Shaders/Spine-Skeleton-TintBlack.shader using Guid(deee23ab4aa38564ead2ac05e112c169) (ShaderImporter) -> (Import Result ID: '64b1dfdd0135c6873681841d198b7833') in 0.0033798 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=5a1b75aaea8da6bb53ac5e62f9d8f94a DependenciesID=ef3fa8caeddd525b4d62e38f3ef0c355 StaticDependenciesID=b3d475cafa090be9be27f45ba30a4646
+Start importing Assets/Spine/Runtime/spine-unity/Shaders/Outline/Spine-Skeleton-Tint-Outline.shader using Guid(4f1fdc166fed03649835949d3b79cba3) (ShaderImporter)WARNING: Shader Unsupported: 'Spine/Outline/Skeleton Tint' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Spine/Outline/Skeleton Tint' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+ -> (Import Result ID: 'b4608198b1a0295f9578507e360408bc') in 0.0021788 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=0584b52f77074f3149a93511e006d16b DependenciesID=c9b8e6552527025003c2213743ee0480 StaticDependenciesID=0013c30ef0f43bce1535ff7c904d7e45
+Start importing Assets/Spine/Runtime/spine-unity/Shaders/Sprite/SpritesPixelLit.shader using Guid(6f7a5a97a82637f478494bc40ea8c8a2) (ShaderImporter) -> (Import Result ID: '05948e92a03547e80aac7069832e1bdb') in 0.0088126 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=026935a952634174f5e71bc07975e82b DependenciesID=ad9d36c0f787730d9a86fc09ebaac77d StaticDependenciesID=32f647800e07ecbae091bc1b00a5cb4a
+Start importing Assets/Spine/Runtime/spine-unity/Shaders/Outline/SkeletonGraphic/Spine-SkeletonGraphic-Outline.shader using Guid(8f5d14d2a7fedb84998c50eb96c8b748) (ShaderImporter)WARNING: Shader Unsupported: 'Spine/Outline/SkeletonGraphic' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Spine/Outline/SkeletonGraphic' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+ -> (Import Result ID: '8d530ffa462d274ec54391d6e024aa34') in 0.0033568 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=1bfd5c757eafa8ca8c12182980037a56 DependenciesID=67c27e1d94dd70c3e62f22fdb5c3fbbc StaticDependenciesID=5b758f6110015eca609fd6d1f2854cc3
+Start importing Assets/Spine/Runtime/spine-unity/Shaders/SkeletonGraphic/Spine-SkeletonGraphic-Multiply.shader using Guid(cfbf95ed0fe6c554c8c2ee6c8325937c) (ShaderImporter) -> (Import Result ID: '205104da7dd5de0e203605f4522e4ae0') in 0.0028675 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=237ad02725c1daaed708efb27554d7f6 DependenciesID=44d0d470ee86d23725a812165b20b39a StaticDependenciesID=23a6a6ceff03bdb92f84377961da9cad
+Start importing Assets/Spine/Runtime/spine-unity/SkeletonDataModifierAssets/BlendModeMaterials/SkeletonStraightAdditive.mat using Guid(517c2df5a5dc5d44a8b3820eca503d13) (NativeFormatImporter) -> (Import Result ID: '796aacb2127d1ddcbb4a1158fb50f152') in 0.002567 seconds [static dependencies only]. Details - ImportResultOutputID=0ac2df0b02da74b5783290460f8f8482 DependenciesID=42b098a41e09a72ab2640f8bcf3a58f0 StaticDependenciesID=0c3f972910912b631f754fd20422bec7
+Start importing Assets/Spine/Runtime/spine-unity/Shaders/Utility/HiddenPass.mat using Guid(43227e5adadc6f24bb4bf74b92a56fb4) (NativeFormatImporter) -> (Import Result ID: '05286b90cd8465cee5ce5949f6e2f079') in 0.0016637 seconds [static dependencies only]. Details - ImportResultOutputID=7874bf215c5b936ec49df6801a8e3cb4 DependenciesID=293ffb2a23fa814b0327ad011f56c82e StaticDependenciesID=cff5d0459a34872c90478258ddfd79ef
+Start importing Assets/Spine/Runtime/spine-unity/SkeletonDataModifierAssets/BlendModeMaterials/SkeletonPMAMultiply.mat using Guid(53bf0ab317d032d418cf1252d68f51df) (NativeFormatImporter) -> (Import Result ID: 'ea9438edabefede6e295adc3b2a9a16b') in 0.0020908 seconds [static dependencies only]. Details - ImportResultOutputID=7deb2b7476a4b5bd8a4e4d4062eb5725 DependenciesID=c027d233916de70675ab2a1010276027 StaticDependenciesID=57a7301986e065d6f8cad254783f4e43
+Start importing Assets/Spine/Runtime/spine-unity/SkeletonDataModifierAssets/BlendModeMaterials/SkeletonPMAScreen.mat using Guid(73f0f46d3177c614baf0fa48d646a9be) (NativeFormatImporter) -> (Import Result ID: '14d0fc80cce3ce74670657bf63866f6a') in 0.0019141 seconds [static dependencies only]. Details - ImportResultOutputID=b5a757a8a94ec37eedd331b1392c7a20 DependenciesID=4640cf31bd925713e41a9a879495f668 StaticDependenciesID=aa62a5daa78e2c81a1a55b3269356b2a
+Start importing Assets/RestoreData/route_spine_raw_decode_recovery/Spine_shijieanniu/Spine_shijieanniu_Material.mat using Guid(832e5a6841b60274a984d40827fda3a7) (NativeFormatImporter) -> (Import Result ID: '072027fae173dfa5c00150853b402647') in 0.001602 seconds [static dependencies only]. Details - ImportResultOutputID=91103dca6a4163ef7dc9a8765e24c655 DependenciesID=9d29164cb54954a71244472c8b240eec StaticDependenciesID=2d754f7905eda0c9d2bcd78012196dad
+Start importing Assets/Spine/Runtime/spine-unity/Materials/SkeletonGraphicTintBlackOutline.mat using Guid(94fe565c79b0aeb418cd05e4f1f8343c) (NativeFormatImporter)WARNING: Shader Unsupported: 'Spine/Outline/SkeletonGraphic Tint Black' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+ -> (Import Result ID: 'a1c197dc9e44005e540edf2385d23c72') in 0.0017903 seconds [static dependencies only]. Details - ImportResultOutputID=f6620a58a259ff5e4e9f243f36d863b4 DependenciesID=fc9a64e6ce24b6155bd3ebe8e7edacfb StaticDependenciesID=e1c87430d3c0e293060add74d5a8b11d
+Start importing Assets/Spine/Runtime/spine-unity/Materials/SkeletonGraphicDefaultOutline.mat using Guid(c4ee0f8f4be17434aa3df5774a03b366) (NativeFormatImporter)WARNING: Shader Unsupported: 'Spine/Outline/SkeletonGraphic' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+ -> (Import Result ID: 'fec564ef83010870a0cf2471c1eb28b4') in 0.0016018 seconds [static dependencies only]. Details - ImportResultOutputID=433d16fe5bc2caf0451741096018dcd4 DependenciesID=f1d0573c77835f22bc2df4f125538fb0 StaticDependenciesID=e51633a039cb52642624f058bd6d8429
+Start importing Assets/Spine/Runtime/spine-unity/SkeletonDataModifierAssets/BlendModeMaterials/SkeletonStraightMultiply.mat using Guid(053fed1e18e65064ca564f05c4027e1e) (NativeFormatImporter) -> (Import Result ID: '2fc22a00ff7006d1709d6b1469ed29e4') in 0.0012108 seconds [static dependencies only]. Details - ImportResultOutputID=79b639738f413c63a0b05e5dd60b73e0 DependenciesID=aa6311c13cea8b84bc9711fa28a48702 StaticDependenciesID=bb6a854edb501970d68a97cd5f95c586
+Start importing Assets/Spine/Runtime/spine-unity/Materials/SkeletonGraphicDefault.mat using Guid(b66cf7a186d13054989b33a5c90044e4) (NativeFormatImporter) -> (Import Result ID: '21042afecdc718f69c918ee029f118f6') in 0.0015384 seconds [static dependencies only]. Details - ImportResultOutputID=d2ad20a139f6ccd91883ed2f5ce1f2c1 DependenciesID=aa99eb567dbbf063e9ddd00166883db4 StaticDependenciesID=e464a339a9715d76bb5942b9f80002b3
+Start importing Assets/Spine/Runtime/spine-unity/Materials/SkeletonGraphicMultiply.mat using Guid(e74a1f8978a7da348a721508d0d58834) (NativeFormatImporter) -> (Import Result ID: 'cf624bc44f26cbfca5f8ae641485a81c') in 0.0015896 seconds [static dependencies only]. Details - ImportResultOutputID=73c5321ff1d5bfddfcb9d144834f7919 DependenciesID=c3eb72e84468144f86bb3ce40e4e06d8 StaticDependenciesID=b275d0637aa8ce5afa40c3e6c53bb60a
+Start importing Assets/RestoreData/route_spine_raw_decode_recovery/8007/8007_Material.mat using Guid(49a1281d29e3c2c4cb057cf73ac1b405) (NativeFormatImporter) -> (Import Result ID: '9725832f88616166ce5f3ed063aa918a') in 0.001316 seconds [static dependencies only]. Details - ImportResultOutputID=0558dfc03531055b72151efcb1865901 DependenciesID=0ed0cfc811f395a1be2d47da066a133c StaticDependenciesID=8500aa9fc505236096e09e811685b4c7
+Start importing Assets/Spine/Runtime/spine-unity/SkeletonDataModifierAssets/BlendModeMaterials/SkeletonStraightScreen.mat using Guid(1a66c2d7ee7642a459bd3831abeb30af) (NativeFormatImporter) -> (Import Result ID: '14d99b1ab760f1559f51b88b17b316bd') in 0.0016479 seconds [static dependencies only]. Details - ImportResultOutputID=a057f6bcf9c5c4d192a9be7c85a9804a DependenciesID=048731f2f47888b402d74013c1fd8233 StaticDependenciesID=e3a338e78f644d57d6c65f5c9af5b90f
+Start importing Assets/Spine/Runtime/spine-unity/Materials/SkeletonGraphicScreen.mat using Guid(bab24c479f34eec45be6ea8595891569) (NativeFormatImporter) -> (Import Result ID: 'ca1b64dd318c90c76888b413f4b11cff') in 0.0016458 seconds [static dependencies only]. Details - ImportResultOutputID=e510d8de51cad1d72c26df64c4e0cc7b DependenciesID=28aacae862d32ea9b5a34594f30c0251 StaticDependenciesID=9e9da454f2d55afe20d61dadf37b3cb2
+Start importing Assets/Spine/Runtime/spine-unity/SkeletonDataModifierAssets/BlendModeMaterials/SkeletonPMAAdditive.mat using Guid(4deba332d47209e4780b3c5fcf0e3745) (NativeFormatImporter) -> (Import Result ID: '821ac27e6baf884a5cfde2317b5ea920') in 0.0011817 seconds [static dependencies only]. Details - ImportResultOutputID=6611a0809b83ecec9d5079a5becf579d DependenciesID=07d9bb8a6952aa9588d854b1ab38b531 StaticDependenciesID=37e707b29d5c29aa1379f4455af92ee2
+Start importing Assets/Spine/Runtime/spine-unity/Materials/SkeletonGraphicAdditive.mat using Guid(2e8245019faeb8c43b75f9ca3ac8ee34) (NativeFormatImporter) -> (Import Result ID: 'b2c4585dc842d72c26afba5eb71c44f6') in 0.0016081 seconds [static dependencies only]. Details - ImportResultOutputID=953694e9d6f43466b02cd32c473bbf1e DependenciesID=ccefb68c9e1a96d2b80131191a461c82 StaticDependenciesID=4a893466ac8ad41ffc1a9e7cfc65a46d
+Start importing Assets/Spine/Runtime/spine-unity/Materials/SkeletonGraphicDefaultGrayscale.mat using Guid(bfc4ecd22354c4d4fb43b85d82efacde) (NativeFormatImporter) -> (Import Result ID: '188d8b9a0170f02b8b1b03bcdfe0bc97') in 0.0012192 seconds [static dependencies only]. Details - ImportResultOutputID=a2860e173353dc6c21dda88a23561bf8 DependenciesID=09b73e35c36dc54580156b05de4f3ab2 StaticDependenciesID=7aab436fca141c89e3c5e7797b4693cd
+Start importing Assets/Spine/Runtime/spine-unity/Materials/SkeletonGraphicTintBlack.mat using Guid(cfcea0e11aa80bb4b8d05790b905fc31) (NativeFormatImporter) -> (Import Result ID: 'ceb48fbeafa7c08d58152a1b28d5ddee') in 0.0015979 seconds [static dependencies only]. Details - ImportResultOutputID=6a2f121a5dbfcdb5bdac8f015a0807a7 DependenciesID=730dd0e781bd1d9d063ea5a44effd091 StaticDependenciesID=a734a8ab5b8e4af76719293497d7cc35
+Start importing Assets/RestoreData/route_spine_raw_decode_recovery/8007/8007_SkeletonData.asset using Guid(605a2033ad3c72c419a6b15c4878c09d) (NativeFormatImporter) -> (Import Result ID: 'd6d4168c6aa47096082bbb7e08d5355f') in 0.0020908 seconds [static dependencies only]. Details - ImportResultOutputID=48543e044212af8d60f27d398524ab8d DependenciesID=8a47c500b64f24e4d066a26662df858c StaticDependenciesID=565b0c89d9611b9d685a80a7b9bdc1fd
+Start importing Assets/Spine/Runtime/spine-unity/SkeletonDataModifierAssets/BlendModeMaterials/Default BlendModeMaterials.asset using Guid(22c0225612a65ee4fb15bad49f644762) (NativeFormatImporter) -> (Import Result ID: '3e8c00c19319183d6366d17ad0ea4da9') in 0.0014277 seconds [static dependencies only]. Details - ImportResultOutputID=1cf7220a4be2cfaa3d87872920bfffa7 DependenciesID=4d03d4f17a59ca38a105f3b178605953 StaticDependenciesID=4e224e43350084717c033f999da89dcd
+Start importing Assets/RestoreData/route_spine_raw_decode_recovery/Spine_shijieanniu/Spine_shijieanniu_SkeletonData.asset using Guid(246f8f92626ad644cb323e00e23245d2) (NativeFormatImporter) -> (Import Result ID: 'a60f6823885abd9e1323057212b0ddab') in 0.0014365 seconds [static dependencies only]. Details - ImportResultOutputID=173475020556c403bc1e95671227e59f DependenciesID=de058e2df618927dcd6f2c65be4f6e23 StaticDependenciesID=7ef54cd58ea2752cc9047d9b83bf356e
+Start importing Assets/RestoreData/route_spine_raw_decode_recovery/Spine_shijieanniu/Spine_shijieanniu_Atlas.asset using Guid(0748f98e393492b4ab17baecafd16db5) (NativeFormatImporter) -> (Import Result ID: 'a2fb146a9b22e4a401a542aac9c0fe7e') in 0.0012749 seconds [static dependencies only]. Details - ImportResultOutputID=563c95b1e8b89f8f60eb266adcfd7733 DependenciesID=9cad257e6b742462836ca36e86f3cf70 StaticDependenciesID=5db83cf6cae08155649e2e0f91bff330
+Start importing Assets/RestoreData/route_spine_raw_decode_recovery/8007/8007_Atlas.asset using Guid(8f05fb4afef911044a71c93809e2c24f) (NativeFormatImporter) -> (Import Result ID: '5ecb8bd75aac7e22016eba3cd6f07442') in 0.0011261 seconds [static dependencies only]. Details - ImportResultOutputID=53329b65493e13e0ccc937d0f479ad1c DependenciesID=19ecedbd1b74b20c3a8ee7876dc4d7c2 StaticDependenciesID=8519275adb58136488039115bd0f86bf
+Start importing Assets/RestoreData/maininterface_116_spine_runtime_bridge_import_prep.json using Guid(43a99ec2cab167f4dbd810de1060df93) (TextScriptImporter) -> (Import Result ID: '0bd9f5ab89ae86151a494cde3a5cd20d') in 0.0077119 seconds [static dependencies only]. Details - ImportResultOutputID=b90f3649ee332ae11e7e52e71ee56c64 DependenciesID=d5cee955670a15aefdbb90b5197a5e2c StaticDependenciesID=fc11ce79661d130f9cdb81042ed86ebf
+Start importing Assets/Spine/Runtime/spine-csharp/package.json using Guid(84ca0094807afe74295fdf4864a0ceca) (TextScriptImporter) -> (Import Result ID: '5fbb6c58e98b72a6d9dc5c8604796194') in 0.0015486 seconds [static dependencies only]. Details - ImportResultOutputID=937cdb1f0cdc78ea89f2ef02fd08b100 DependenciesID=f22e8f8b13fd69a6ebb20e723e54f348 StaticDependenciesID=de250fed4a25cdb34e28b602b7be16ca
+Start importing Assets/RestoreData/route_spine_raw_decode_recovery/Spine_shijieanniu/Spine_shijieanniu.skel.bytes using Guid(16f4852aeebfdcf40a0ff3d8c4dfc326) (TextScriptImporter) -> (Import Result ID: 'cc9e0ed5d80797187c668248b4a56802') in 0.0013885 seconds [static dependencies only]. Details - ImportResultOutputID=6834cc41cfad33f591bf91570619043c DependenciesID=09cb37b23b472c8b24eb3a69d75aa8c8 StaticDependenciesID=9c09ac6abd97113f159f32ecad2f51bf
+Start importing Assets/RestoreData/route_spine_raw_decode_recovery/8007/8007.atlas.txt using Guid(487597f788510e247afa2d73c7a3ff08) (TextScriptImporter) -> (Import Result ID: '6b3d55e6fb5534bc880fdf3bde785c00') in 0.0013338 seconds [static dependencies only]. Details - ImportResultOutputID=02916a230c11eef42b7c492e872aa525 DependenciesID=801ab05452d9cd532cb58f8bf41a21e3 StaticDependenciesID=40e87bd9e2a1b312775112655c272fcb
+Start importing Assets/RestoreData/route_spine_raw_decode_recovery/Spine_shijieanniu/Spine_shijieanniu.atlas.txt using Guid(fbf49aef70fe8fb4d904fbd2948c1ab1) (TextScriptImporter) -> (Import Result ID: '09e1b56aea5e6137bb499de2696f3d55') in 0.0016083 seconds [static dependencies only]. Details - ImportResultOutputID=323d0062455481210ccc66cd08bfcbf4 DependenciesID=e894db305c42518c823e76ab7c25f7fe StaticDependenciesID=f5ae164dda1daf092084c14bc8fd0be5
+Start importing Assets/RestoreData/maininterface_route_skeletongraphic_replay_integration.json using Guid(9cd8e385cd1e5cb46b523913d4552cb0) (TextScriptImporter) -> (Import Result ID: 'cd4c4c390bd24c7e50fff9c46e577ccf') in 0.001406 seconds [static dependencies only]. Details - ImportResultOutputID=543fcf375b276193396ef88c087df04d DependenciesID=f150175ec45e5efa4dbf407225bfb26a StaticDependenciesID=43240b7718696a0b6bb919e8795cc31b
+Start importing Assets/Spine/Runtime/spine-unity/Shaders/Sprite/README.md using Guid(cecd0ea162097a94c89a97af6baf0a66) (TextScriptImporter) -> (Import Result ID: '1f8852d6cef53f2178d68d5e573d8456') in 0.0024294 seconds [static dependencies only]. Details - ImportResultOutputID=baf3c89c1ab11537b142b7a3b8740368 DependenciesID=49ccfff669618728abba674be4822ae5 StaticDependenciesID=fde44afb00e27ada6f51ae66dd7a3165
+Start importing Assets/RestoreData/reports/maininterface_route_skeletongraphic_replay_integration.csv using Guid(fe3f3d190f334b446a4c2d3e773a2e80) (TextScriptImporter) -> (Import Result ID: '1b9f6783a381a72150aada876c7c5ed2') in 0.0012816 seconds [static dependencies only]. Details - ImportResultOutputID=2d6e9facec0818f5c93ac265a3ffe7c0 DependenciesID=c7e3e49cf1d3375752325ef6e76d64f8 StaticDependenciesID=6a1970667cac0c020093e68681e0eb99
+Start importing Assets/RestoreData/route_spine_raw_decode_recovery/8007/8007.skel.bytes using Guid(cf5b2f8e2f48afe4ba1ca01f5c52b476) (TextScriptImporter) -> (Import Result ID: '30874345dd7915b141782b107b234b13') in 0.001701 seconds [static dependencies only]. Details - ImportResultOutputID=3b7c757d478f952c43d319e68b91d7a1 DependenciesID=eee71257b348733d4ef81d1d01b4a533 StaticDependenciesID=ab75964a24306c18a4c8ee1c14068b4f
+WARNING: Shader Unsupported: 'Spine/Outline/SkeletonGraphic' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Spine/Outline/Sprite/Vertex Lit' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Spine/Outline/SkeletonGraphic Tint Black' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Spine/Outline/Skeleton Fill' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Spine/Outline/Sprite/Pixel Lit' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Spine/Outline/Skeleton Tint Black' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Spine/Outline/Special/Skeleton Grayscale' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Spine/Outline/Skeleton Lit ZWrite' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Spine/Outline/Blend Modes/Skeleton PMA Additive' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Spine/Outline/Skeleton Lit' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Spine/Outline/Sprite/Unlit' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Spine/Outline/Skeleton Tint' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Spine/Outline/Skeleton' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Spine/Outline/Blend Modes/Skeleton PMA Screen' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Spine/Outline/Blend Modes/Skeleton PMA Multiply' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.01 seconds
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.01 seconds
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.01 seconds
+(Values over 0.050ms)
+Asset Pipeline Refresh (id=243fcb7080ed99b42bb8ff518d3c9aa1): Total: 5.184 seconds - Initiated by InitialRefreshV2(ForceSynchronousImport)
+	Summary:
+		Imports: total=128 (actual=128, local cache=0, cache server=0)
+		Asset DB Process Time: managed=6 ms, native=897 ms
+		Asset DB Callback time: managed=45 ms, native=113 ms
+		Scripting: domain reloads=1, domain reload time=357 ms, compile time=3753 ms, other=9 ms
+		Project Asset Count: scripts=294, non-scripts=727
+		Asset File Changes: new=225, changed=227, moved=0, deleted=0
+		Scan Filter Count: 0
+	InvokePackagesCallback: 17.028ms
+	ApplyChangesToAssetFolders: 0.515ms
+	Scan: 115.357ms
+	OnSourceAssetsModified: 11.938ms
+	CategorizeScriptCompilationAssets: 1.119ms
+	ProcessAssetsWithTransientArtifactChanges: 5.022ms
+	CategorizeAssets: 3.834ms
+	CompileScripts: 3752.607ms
+	ImportOutOfDateAssets: 720.097ms (291.018ms without children)
+		ImportManagerImport: 428.660ms (4.802ms without children)
+			UpdateCategorizedAssets: 0.519ms
+		UnloadImportedAssets: 0.152ms
+		EnsureUptoDateAssetsAreRegisteredWithGuidPM: 0.075ms
+		OnDemandSchedulerStart: 0.186ms
+	PostProcessAllAssets: 131.804ms
+		ShaderAssetModifiedCallback 74.269ms
+		VersionControlSettings.HiddenFilePostprocess 4.872ms
+		AssemblyValidation.PostprocessAllAssets 0.882ms
+		PostProcessCallbackCreateDeferredMaterials 0.265ms
+		ComputeShaderImportPostprocess 0.264ms
+		RaytracingShaderImportPostprocess 0.162ms
+		BlockShaderImporter.PostprocessAllAssets 0.113ms
+		LocalizationDatabase.AssetDatabasePostprocessCallback 0.100ms
+		SpeedTreeImporter.PostprocessAllAssets 0.100ms
+		MonoPostProcessAllAssets: 44.904ms
+			AssetPostprocessor.OnPostprocessAllAssets 14.241ms
+			StyleCatalogPostProcessor.OnPostprocessAllAssets 8.361ms
+			WindowAssetPostprocessingWatcher.OnPostprocessAllAssets 4.494ms
+			BuilderAssetPostprocessor.OnPostprocessAllAssets 3.856ms
+			TextAssetPostProcessor.OnPostprocessAllAssets 1.664ms
+			AssetChangedListener.OnPostprocessAllAssets 1.495ms
+			SyncVS.PostprocessSyncProject 0.993ms
+			RetainedModeAssetPostprocessor.OnPostprocessAllAssets 0.871ms
+			SpeedTree9Postprocessor.OnPostprocessAllAssets 0.629ms
+			ArtifactBrowserPostProcessor.OnPostprocessAllAssets 0.392ms
+			TMPro_TexturePostProcessor.OnPostprocessAllAssets 0.365ms
+			ReferencedClipsPostProcessor.OnPostprocessAllAssets 0.268ms
+			AssetEvents.OnPostprocessAllAssets 0.172ms
+			AudioMixerPostprocessor.OnPostprocessAllAssets 0.155ms
+			TerrainToolbarOverlayPostProcessor.OnPostprocessAllAssets 0.151ms
+			SpeedTreePostProcessor.OnPostprocessAllAssets 0.112ms
+			AssetDatabaseCallbacks.OnPostprocessAllAssets 0.102ms
+			RenderPipelineGlobalSettingsPostprocessor.OnPostprocessAllAssets 0.076ms
+			ConfigAssetsTracker.OnPostprocessAllAssets 0.075ms
+			ScenarioDriftAssetsTracker.OnPostprocessAllAssets 0.075ms
+	PostAssetChangesProfiler: 0.923ms
+	UnloadStreamsBegin: 1.066ms
+	PersistCurrentRevisions: 0.351ms
+	GenerateScriptTypeHashes: 0.174ms
+	GenerateScriptTypeSerializationHashes: 0.375ms
+	Untracked: 416.941ms
+
+Application.AssetDatabase Initial Refresh End
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.01 seconds
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.01 seconds
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.01 seconds
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.01 seconds
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.01 seconds
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.01 seconds
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.01 seconds
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.01 seconds
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.01 seconds
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.01 seconds
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.01 seconds
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.01 seconds
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.01 seconds
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.01 seconds
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.01 seconds
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.01 seconds
+Scanning for USB devices : 2.114ms
+Initializing Unity extensions:
+[MODES] ModeService[none].Initialize
+[MODES] ModeService[none].LoadModes
+[MODES] Loading mode Default (0) for mode-current-id-girlswar_maininterface_unity
+Unloading 58 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 581 unused Assets / (3.6 MB). Loaded Objects now: 1216.
+Memory consumption went from 122.5 MB to 118.9 MB.
+Total: 4.832600 ms (FindLiveObjects: 0.090200 ms CreateObjectMapping: 0.024400 ms MarkObjects: 3.222900 ms  DeleteObjects: 1.493500 ms)
+
+Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 0 unused Assets / (0 B). Loaded Objects now: 1216.
+Memory consumption went from 118.4 MB to 118.4 MB.
+Total: 3.069900 ms (FindLiveObjects: 0.048300 ms CreateObjectMapping: 0.009100 ms MarkObjects: 3.009000 ms  DeleteObjects: 0.002800 ms)
+
+[GirlsWarRestore] Applied route rect overrides: 2/2
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GirlsWarRestore.MainInterfaceSceneBuilder:ApplyRectOverrides (System.Collections.Generic.List`1<GirlsWarRestore.MainInterfaceSceneBuilder/RectOverrideRow>,System.Collections.Generic.Dictionary`2<string, UnityEngine.RectTransform>,System.Collections.Generic.Dictionary`2<string, UnityEngine.RectTransform>) (at Assets/Editor/MainInterfaceSceneBuilder.cs:738)
+GirlsWarRestore.MainInterfaceSceneBuilder:BuildMainInterfaceScene () (at Assets/Editor/MainInterfaceSceneBuilder.cs:316)
+GirlsWarRestore.MainInterface116RouteSpineRuntimeBridgeReplay:BuildAndCapture () (at Assets/Editor/MainInterface116RouteSpineRuntimeBridgeReplay.cs:64)
+
+(Filename: Assets/Editor/MainInterfaceSceneBuilder.cs Line: 738)
+
+Asset Pipeline Refresh (id=8fed4c5ddfe60f7458a3c22ade9c846e): Total: 0.019 seconds - Initiated by RefreshV2(NoUpdateAssetOptions)
+[GirlsWarRestore] Prepared sprite imports: 212 assets, changed 0
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GirlsWarRestore.MainInterfaceSceneBuilder:PrepareSpriteImports (System.Collections.Generic.List`1<GirlsWarRestore.MainInterfaceSceneBuilder/SpriteRow>) (at Assets/Editor/MainInterfaceSceneBuilder.cs:553)
+GirlsWarRestore.MainInterfaceSceneBuilder:BuildMainInterfaceScene () (at Assets/Editor/MainInterfaceSceneBuilder.cs:318)
+GirlsWarRestore.MainInterface116RouteSpineRuntimeBridgeReplay:BuildAndCapture () (at Assets/Editor/MainInterface116RouteSpineRuntimeBridgeReplay.cs:64)
+
+(Filename: Assets/Editor/MainInterfaceSceneBuilder.cs Line: 553)
+
+Asset Pipeline Refresh (id=d24d4b4c1449cb34e86ada95b58c0b81): Total: 0.004 seconds - Initiated by RefreshV2(NoUpdateAssetOptions)
+[GirlsWarRestore] Prepared visual override sprite imports: 4 rows, changed 0
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GirlsWarRestore.MainInterfaceSceneBuilder:PrepareVisualOverrideImports (System.Collections.Generic.List`1<GirlsWarRestore.MainInterfaceSceneBuilder/VisualOverrideRow>) (at Assets/Editor/MainInterfaceSceneBuilder.cs:589)
+GirlsWarRestore.MainInterfaceSceneBuilder:BuildMainInterfaceScene () (at Assets/Editor/MainInterfaceSceneBuilder.cs:319)
+GirlsWarRestore.MainInterface116RouteSpineRuntimeBridgeReplay:BuildAndCapture () (at Assets/Editor/MainInterface116RouteSpineRuntimeBridgeReplay.cs:64)
+
+(Filename: Assets/Editor/MainInterfaceSceneBuilder.cs Line: 589)
+
+[GirlsWarRestore] Applied active overrides: 26/29
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GirlsWarRestore.MainInterfaceSceneBuilder:ApplyActiveOverrides (GirlsWarRestore.MainInterfaceSceneBuilder/OverrideSet,System.Collections.Generic.Dictionary`2<string, UnityEngine.RectTransform>) (at Assets/Editor/MainInterfaceSceneBuilder.cs:604)
+GirlsWarRestore.MainInterfaceSceneBuilder:BuildMainInterfaceScene () (at Assets/Editor/MainInterfaceSceneBuilder.cs:320)
+GirlsWarRestore.MainInterface116RouteSpineRuntimeBridgeReplay:BuildAndCapture () (at Assets/Editor/MainInterface116RouteSpineRuntimeBridgeReplay.cs:64)
+
+(Filename: Assets/Editor/MainInterfaceSceneBuilder.cs Line: 604)
+
+[GirlsWarRestore] Applied sprites: 214/977
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GirlsWarRestore.MainInterfaceSceneBuilder:ApplyImagesAndSprites (System.Collections.Generic.List`1<GirlsWarRestore.MainInterfaceSceneBuilder/SpriteRow>,System.Collections.Generic.Dictionary`2<string, UnityEngine.RectTransform>,GirlsWarRestore.MainInterfaceSceneBuilder/OverrideSet) (at Assets/Editor/MainInterfaceSceneBuilder.cs:647)
+GirlsWarRestore.MainInterfaceSceneBuilder:BuildMainInterfaceScene () (at Assets/Editor/MainInterfaceSceneBuilder.cs:321)
+GirlsWarRestore.MainInterface116RouteSpineRuntimeBridgeReplay:BuildAndCapture () (at Assets/Editor/MainInterface116RouteSpineRuntimeBridgeReplay.cs:64)
+
+(Filename: Assets/Editor/MainInterfaceSceneBuilder.cs Line: 647)
+
+[GirlsWarRestore] Applied visual overrides: 4/4
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GirlsWarRestore.MainInterfaceSceneBuilder:ApplyVisualOverrides (System.Collections.Generic.List`1<GirlsWarRestore.MainInterfaceSceneBuilder/VisualOverrideRow>,System.Collections.Generic.Dictionary`2<string, UnityEngine.RectTransform>) (at Assets/Editor/MainInterfaceSceneBuilder.cs:710)
+GirlsWarRestore.MainInterfaceSceneBuilder:BuildMainInterfaceScene () (at Assets/Editor/MainInterfaceSceneBuilder.cs:322)
+GirlsWarRestore.MainInterface116RouteSpineRuntimeBridgeReplay:BuildAndCapture () (at Assets/Editor/MainInterface116RouteSpineRuntimeBridgeReplay.cs:64)
+
+(Filename: Assets/Editor/MainInterfaceSceneBuilder.cs Line: 710)
+
+[GirlsWarRestore] Applied texts: 138/495 (TMP 84/271, UGUI 54)
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GirlsWarRestore.MainInterfaceSceneBuilder:ApplyTexts (System.Collections.Generic.List`1<GirlsWarRestore.MainInterfaceSceneBuilder/TextRow>,System.Collections.Generic.Dictionary`2<string, UnityEngine.RectTransform>,System.Collections.Generic.Dictionary`2<string, GirlsWarRestore.MainInterfaceSceneBuilder/TmpTextDetailRow>) (at Assets/Editor/MainInterfaceSceneBuilder.cs:842)
+GirlsWarRestore.MainInterfaceSceneBuilder:BuildMainInterfaceScene () (at Assets/Editor/MainInterfaceSceneBuilder.cs:325)
+GirlsWarRestore.MainInterface116RouteSpineRuntimeBridgeReplay:BuildAndCapture () (at Assets/Editor/MainInterface116RouteSpineRuntimeBridgeReplay.cs:64)
+
+(Filename: Assets/Editor/MainInterfaceSceneBuilder.cs Line: 842)
+
+[GirlsWarRestore] Applied scroll rects: 3/12
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GirlsWarRestore.MainInterfaceSceneBuilder:ApplyScrollRects (System.Collections.Generic.List`1<GirlsWarRestore.MainInterfaceSceneBuilder/ScrollRow>,System.Collections.Generic.Dictionary`2<string, UnityEngine.RectTransform>,System.Collections.Generic.Dictionary`2<string, UnityEngine.RectTransform>) (at Assets/Editor/MainInterfaceSceneBuilder.cs:1326)
+GirlsWarRestore.MainInterfaceSceneBuilder:BuildMainInterfaceScene () (at Assets/Editor/MainInterfaceSceneBuilder.cs:327)
+GirlsWarRestore.MainInterface116RouteSpineRuntimeBridgeReplay:BuildAndCapture () (at Assets/Editor/MainInterface116RouteSpineRuntimeBridgeReplay.cs:64)
+
+(Filename: Assets/Editor/MainInterfaceSceneBuilder.cs Line: 1326)
+
+[GirlsWarRestore] Applied button click loggers: 77/261
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GirlsWarRestore.MainInterfaceSceneBuilder:AddButtonLoggers (System.Collections.Generic.List`1<GirlsWarRestore.MainInterfaceSceneBuilder/ButtonRow>,System.Collections.Generic.Dictionary`2<string, GirlsWarRestore.MainInterfaceSceneBuilder/ButtonHandlerRow>,System.Collections.Generic.Dictionary`2<string, GirlsWarRestore.MainInterfaceSceneBuilder/ButtonNavigationRow>,System.Collections.Generic.Dictionary`2<string, UnityEngine.RectTransform>,GirlsWarRestore.MainInterfaceSceneBuilder/OverrideSet) (at Assets/Editor/MainInterfaceSceneBuilder.cs:1430)
+GirlsWarRestore.MainInterfaceSceneBuilder:BuildMainInterfaceScene () (at Assets/Editor/MainInterfaceSceneBuilder.cs:333)
+GirlsWarRestore.MainInterface116RouteSpineRuntimeBridgeReplay:BuildAndCapture () (at Assets/Editor/MainInterface116RouteSpineRuntimeBridgeReplay.cs:64)
+
+(Filename: Assets/Editor/MainInterfaceSceneBuilder.cs Line: 1430)
+
+[GirlsWarRestore] Applied graphic raycast overrides: 3
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GirlsWarRestore.MainInterfaceSceneBuilder:ApplyGraphicRaycastOverrides (System.Collections.Generic.List`1<GirlsWarRestore.MainInterfaceSceneBuilder/SpriteRow>,System.Collections.Generic.Dictionary`2<string, UnityEngine.RectTransform>,GirlsWarRestore.MainInterfaceSceneBuilder/OverrideSet) (at Assets/Editor/MainInterfaceSceneBuilder.cs:1453)
+GirlsWarRestore.MainInterfaceSceneBuilder:BuildMainInterfaceScene () (at Assets/Editor/MainInterfaceSceneBuilder.cs:334)
+GirlsWarRestore.MainInterface116RouteSpineRuntimeBridgeReplay:BuildAndCapture () (at Assets/Editor/MainInterface116RouteSpineRuntimeBridgeReplay.cs:64)
+
+(Filename: Assets/Editor/MainInterfaceSceneBuilder.cs Line: 1453)
+
+[GirlsWarRestore] Applied raycast probes: 99
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GirlsWarRestore.MainInterfaceSceneBuilder:AddRaycastProbeLoggers (System.Collections.Generic.List`1<GirlsWarRestore.MainInterfaceSceneBuilder/SpriteRow>,System.Collections.Generic.List`1<GirlsWarRestore.MainInterfaceSceneBuilder/ButtonRow>,System.Collections.Generic.Dictionary`2<string, UnityEngine.RectTransform>) (at Assets/Editor/MainInterfaceSceneBuilder.cs:1490)
+GirlsWarRestore.MainInterfaceSceneBuilder:BuildMainInterfaceScene () (at Assets/Editor/MainInterfaceSceneBuilder.cs:335)
+GirlsWarRestore.MainInterface116RouteSpineRuntimeBridgeReplay:BuildAndCapture () (at Assets/Editor/MainInterface116RouteSpineRuntimeBridgeReplay.cs:64)
+
+(Filename: Assets/Editor/MainInterfaceSceneBuilder.cs Line: 1490)
+
+Start importing Assets/Scenes/MainInterface_Wireframe.unity using Guid(eb8b24cc809bed742b8bd84aa3cb817c) (DefaultImporter) -> (Import Result ID: 'c72fdd29563d13d30503380fb88148ec') in 0.0011836 seconds [static dependencies only]. Details - ImportResultOutputID=b99b9c6f6cd72acc35933c391b07b6f7 DependenciesID=5eccd9e8c54ed20f9b928d419c72c60f StaticDependenciesID=01ec427ddc8596d5548a183d3b8e8f20
+Asset Pipeline Refresh (id=cc79aa4e6a77cb147b5d60c97e2baf1c): Total: 0.013 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/RestoreData/maininterface_build_result.json using Guid(0c85ef2c20ca23f4eba0dd254b511b4e) (TextScriptImporter) -> (Import Result ID: '813146d1433bc471ee614e9b41769570') in 0.0019301 seconds [static dependencies only]. Details - ImportResultOutputID=c86ff4e8b3b572abd8fc9a5554fdca8a DependenciesID=11ed0ae59e66af04f20312b191c4dc5c StaticDependenciesID=9c96f210951aa9593141ec5bc08fe903
+Asset Pipeline Refresh (id=efb8096f031015a4b9082e17f3858a97): Total: 0.028 seconds - Initiated by RefreshV2(NoUpdateAssetOptions)
+[GirlsWarRestore] MainInterface restored scene generated: 806 RectTransforms, 214 sprites, 138 texts (84 TMP, 54 UGUI), 3 scroll rects, 99 raycast probes, 26 active overrides, 3 graphic raycast overrides, 2 rect overrides, 4 visual overrides -> Assets/Scenes/MainInterface_Wireframe.unity
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GirlsWarRestore.MainInterfaceSceneBuilder:BuildMainInterfaceScene () (at Assets/Editor/MainInterfaceSceneBuilder.cs:361)
+GirlsWarRestore.MainInterface116RouteSpineRuntimeBridgeReplay:BuildAndCapture () (at Assets/Editor/MainInterface116RouteSpineRuntimeBridgeReplay.cs:64)
+
+(Filename: Assets/Editor/MainInterfaceSceneBuilder.cs Line: 361)
+
+Opening scene 'Assets/Scenes/MainInterface_Wireframe.unity'
+Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
+Loaded scene 'Assets/Scenes/MainInterface_Wireframe.unity'
+	Deserialize:            31.117 ms
+	Integration:            8.848 ms
+	Integration of assets:  0.036 ms
+	Thread Wait Time:       0.017 ms
+	Total Operation Time:   40.018 ms
+Unloading 220 unused Assets / (73.3 KB). Loaded Objects now: 4283.
+Memory consumption went from 132.4 MB to 132.4 MB.
+Total: 3.456000 ms (FindLiveObjects: 0.162200 ms CreateObjectMapping: 0.036500 ms MarkObjects: 3.112400 ms  DeleteObjects: 0.144500 ms)
+
+Start importing Assets/Scenes/MainInterface_RouteSpineRuntimeReplay.unity using Guid(bdf77a616ee619a48bc01a72465cf20e) (DefaultImporter) -> (Import Result ID: '49e7987d22cab22f9731b109a2115f5f') in 0.0009124 seconds [static dependencies only]. Details - ImportResultOutputID=fac5fb60ddd791d070e13f38961bff6c DependenciesID=1cbf4237f2136e0ca9fef2c2509a948c StaticDependenciesID=82d7ed43e5c372c0e52c27a6472cef79
+Asset Pipeline Refresh (id=89b5e4ef29e9a534297731a1027b1d87): Total: 0.016 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Opening scene 'Assets/Scenes/MainInterface_RouteSpineRuntimeReplay.unity'
+Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
+Loaded scene 'Assets/Scenes/MainInterface_RouteSpineRuntimeReplay.unity'
+	Deserialize:            28.817 ms
+	Integration:            8.357 ms
+	Integration of assets:  0.035 ms
+	Thread Wait Time:       0.004 ms
+	Total Operation Time:   37.214 ms
+Unloading 3 unused Assets / (2.6 KB). Loaded Objects now: 4303.
+Memory consumption went from 132.5 MB to 132.5 MB.
+Total: 3.346500 ms (FindLiveObjects: 0.154900 ms CreateObjectMapping: 0.031400 ms MarkObjects: 3.138800 ms  DeleteObjects: 0.021100 ms)
+
+Start importing Assets/RestoreCaptures/maininterface_route_spine_runtime_bridge_1680x720.png using Guid(6febd1d2fdf43314eb9f0e8619dfaf1c) (TextureImporter) -> (Import Result ID: '3598ccd007e4c50fbb8d6559c49a1e51') in 0.0431916 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=f5b17866e636fa6c0ecc695f25cf637b DependenciesID=beb82123a7a206b2b52611fb88ab5006 StaticDependenciesID=eca4ff170dbc379bdb66403e23e36569
+Asset Pipeline Refresh (id=9d4743b3da71d3e4ca644c14c3b03238): Total: 0.105 seconds - Initiated by RefreshV2(NoUpdateAssetOptions)
+Start importing Assets/RestoreData/reports/maininterface_116_spine_runtime_bridge_unity_probe.csv using Guid(3cff1f188adba454bbb516178f04444f) (TextScriptImporter) -> (Import Result ID: 'fc81f72cffffcc7e13568734eb31860a') in 0.002786 seconds [static dependencies only]. Details - ImportResultOutputID=12c5944a73add543c5c9e1bf2fcee657 DependenciesID=3ea3b5a72ff4985f89cb2e4238357e27 StaticDependenciesID=b0e184a50d0f9c2a41b7819512ebb328
+Start importing Assets/RestoreData/maininterface_116_spine_runtime_bridge_unity_probe.json using Guid(ed629297abd5eb24eb20871111e5947b) (TextScriptImporter) -> (Import Result ID: '5c378b117ffb398e129d6c9ac05fca83') in 0.0031897 seconds [static dependencies only]. Details - ImportResultOutputID=5d8e2aca7b402d2e5492efaf0513d314 DependenciesID=36cc0a6d6eb92828120e653523fab919 StaticDependenciesID=7f87b57a6faaa04104ee8fafac4f2824
+Asset Pipeline Refresh (id=fbc9ae2070b971a4d91bf99135694781): Total: 0.049 seconds - Initiated by RefreshV2(NoUpdateAssetOptions)
+[GirlsWarRestore] UI116 route Spine runtime bridge probe complete: Assets/RestoreData/maininterface_116_spine_runtime_bridge_unity_probe.json
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GirlsWarRestore.MainInterface116RouteSpineRuntimeBridgeReplay:BuildAndCapture () (at Assets/Editor/MainInterface116RouteSpineRuntimeBridgeReplay.cs:113)
+
+(Filename: Assets/Editor/MainInterface116RouteSpineRuntimeBridgeReplay.cs Line: 113)
+
+Batchmode quit successfully invoked - shutting down!
+[Physics::Module] Cleanup current backend.
+[Physics::Module] Id: 0xf2b8ea05
+Input System module state changed to: ShutdownInProgress.
+Input Polling Thread exited.
+Input System module state changed to: Shutdown.
+[Licensing::IpcConnector] LicenseClient-godho-notifications channel disconnected successfully.
+[Licensing::IpcConnector] LicenseClient-godho channel disconnected successfully.
+AcceleratorClientConnectionCallback - disconnected - :0
+Shut down.
+Cleanup mono
+CodeReloadManager destroyed
+abort_threads: Failed aborting id: 00000000000078D4, mono_thread_manage will ignore it
+
+abort_threads: Failed aborting id: 0000000000007E9C, mono_thread_manage will ignore it
+
+abort_threads: Failed aborting id: 00000000000078D4, mono_thread_manage will ignore it
+
+abort_threads: Failed aborting id: 0000000000007E9C, mono_thread_manage will ignore it
+
+debugger-agent: Unable to listen on 3768
+Exiting batchmode successfully now!
+Exiting without the bug reporter. Application will terminate with return code 0

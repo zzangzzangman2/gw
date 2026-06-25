@@ -953,3 +953,68 @@
   - `_restore_tools` direct `.cmd` count is `0`
   - `_restore_tools\current\01_RUN_LATEST_MAININTERFACE_UI_VALIDATION.cmd` now calls UI115 from the archive
   - `_restore_tools\current\02_RUN_LATEST_BATTLE_VALIDATION.cmd` now calls BATTLE_35 from the archive
+
+## Update 2026-06-25 22:12 KST
+
+### Command Folder Cleanup
+
+- Root command policy is still preserved.
+- Root CMD count: `1`.
+- Only root launcher: `00_COMMAND_CENTER.cmd`.
+- `_restore_tools` direct `.cmd` count: `0`.
+- Latest current wrappers now point at the newest accepted probe tools:
+  - `_restore_tools\current\01_RUN_LATEST_MAININTERFACE_UI_VALIDATION.cmd` -> `_restore_tools\cmd_archive\116_IMPORT_REAL_SPINE4_RUNTIME_BRIDGE_FOR_ROUTE_SKELETONGRAPHIC_REPLAY.cmd`
+  - `_restore_tools\current\02_RUN_LATEST_BATTLE_VALIDATION.cmd` -> `_restore_tools\cmd_archive\BATTLE_36_TRACE_REAL_SPINE_INITIALIZE_SKELETONDATA_MATERIAL_SHADER_BINDING.cmd`
+
+### UI MAININTERFACE_116 Result
+
+- Visual verdict: MainInterface is still not a normal/restored UI.
+- UI116 imported real Spine 4 runtime into `girlswar_maininterface_unity` and generated a separate replay candidate scene, not a final visual fix.
+- Runtime bridge result:
+  - imported runtime package rows: `174`
+  - copied route raw assets: `26`
+  - main project Spine runtime ready: `True`
+  - `spine_diqiu / Spine_shijieanniu`: `SkeletonGraphic` attach/init success
+  - `spine_xiaoren / 8007`: `SkeletonGraphic` attach/init success
+  - visual fixes applied in replay candidate: `2`
+- Manual capture review:
+  - right route cluster now shows real Spine replay candidates
+  - layout/text/overlap/layering are still wrong enough that this must not be called normal UI
+- Verification:
+  - click validation: `24 / 24 / 0 / 24`, generated `2026-06-25 22:05:48`
+  - capture: `girlswar_maininterface_unity\Assets\RestoreCaptures\maininterface_route_spine_runtime_bridge_1680x720.png`
+- Outputs:
+  - active tool: `_restore_tools\cmd_archive\116_IMPORT_REAL_SPINE4_RUNTIME_BRIDGE_FOR_ROUTE_SKELETONGRAPHIC_REPLAY.cmd`
+  - report: `reports\maininterface\MAININTERFACE_116_IMPORT_REAL_SPINE4_RUNTIME_BRIDGE_FOR_ROUTE_SKELETONGRAPHIC_REPLAY_RESULT.md`
+  - JSON: `girlswar_maininterface_unity\Assets\RestoreData\maininterface_116_import_real_spine4_runtime_bridge_for_route_skeletongraphic_replay.json`
+  - replay scene: `girlswar_maininterface_unity\Assets\Scenes\MainInterface_RouteSpineRuntimeReplay.unity`
+- Next UI blocker:
+  - `route SkeletonGraphic visual/layout validation against original/video evidence`
+
+### Battle BATTLE_36 Result
+
+- Visual verdict: original clip05 actor motion is still not reproduced.
+- BATTLE_36 used `C:\Users\godho\Downloads\플레이.mp4` clip05 `485.0-487.0s` as the motion gate.
+- Verdict: `failed_mesh_updates_but_shader_material_render_still_magenta`.
+- This is not a final restored battle screen.
+- Runtime trace:
+  - `SkeletonAnimation`: `3 / 3`
+  - Initialize valid: `3 / 3`
+  - `AnimationState.SetAnimation`: `3 / 3`
+  - `Update(float)`: `3 / 3`
+  - `MeshGenerator` non-null: `3`
+  - mesh hash changed actors: `3 / 3`
+  - unsupported shader/material evidence: `17`
+  - capture magenta ratio: `0.071884`
+- Manual contact sheet review:
+  - reference video frames show normal moving battle actors
+  - current runtime capture is still magenta and not user-visible success
+  - no arbitrary material, fake animation, or debug overlay was accepted as final
+- Outputs:
+  - active tool: `_restore_tools\cmd_archive\BATTLE_36_TRACE_REAL_SPINE_INITIALIZE_SKELETONDATA_MATERIAL_SHADER_BINDING.cmd`
+  - report: `reports\battle\BATTLE_36_TRACE_REAL_SPINE_INITIALIZE_SKELETONDATA_MATERIAL_SHADER_BINDING_RESULT.md`
+  - JSON: `reports\battle\BATTLE_36_TRACE_REAL_SPINE_INITIALIZE_SKELETONDATA_MATERIAL_SHADER_BINDING_RESULT.json`
+  - Unity data: `girlswar_battle_unity\Assets\RestoreData\battle\BATTLE_36_TRACE_REAL_SPINE_INITIALIZE_SKELETONDATA_MATERIAL_SHADER_BINDING.json`
+  - contact sheet: `reports\battle\BATTLE_36_TRACE_REAL_SPINE_INITIALIZE_SKELETONDATA_MATERIAL_SHADER_BINDING_CONTACT_SHEET.jpg`
+- Next battle blocker:
+  - `BATTLE_37_BIND_ORIGINAL_SPINE_SHADER_VARIANTS_AND_MATERIAL_PASSES`

@@ -1,0 +1,743 @@
+{
+  "generatedAt": "2026-06-25 22:06:35",
+  "visual_status": "partial_runtime_replay_capture_generated_manual_review_required",
+  "verdict": "화면 기준으로 MainInterface는 아직 정상 UI라고 말할 수 없다. 다만 UI116에서 route SkeletonGraphic replay 후보 캡처를 생성했다.",
+  "unityExitCode": 0,
+  "runtimeReady": true,
+  "sceneGenerated": true,
+  "visualFixApplied": 2,
+  "attachedTargets": 2,
+  "initializedTargets": 2,
+  "capture": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_maininterface_unity\\Assets\\RestoreCaptures\\maininterface_route_spine_runtime_bridge_1680x720.png",
+  "captureExists": true,
+  "captureSize": 1509391,
+  "clickValidation": {
+    "generatedAt": "2026-06-25 22:05:48",
+    "active": 24,
+    "clickable": 24,
+    "blocked": 0,
+    "invoked": 24
+  },
+  "prep": {
+    "generatedAt": "",
+    "vendorPackage": "C:\\Users\\godho\\Downloads\\girlswar\\_restore_tools\\vendor\\spine-unity-4.0-2024-08-21.unitypackage",
+    "vendorPackageExists": true,
+    "vendorPackageSize": 6881350,
+    "optionCompare": {
+      "A_maininterfaceRuntimeBridge": {
+        "chosenForProbe": true,
+        "reason": "This is the only path that can attach replay to a MainInterface scene without bitmap placement.",
+        "risk": "Compilation/import risk from bringing Spine runtime into girlswar_maininterface_unity."
+      },
+      "B_probeProjectReplayScene": {
+        "chosenForProbe": false,
+        "reason": "Lower compile risk because the probe already has Spine runtime, but it would not prove replay inside the MainInterface Unity project.",
+        "risk": "Useful fallback if A fails; separate project capture would remain a diagnostic, not the final scene."
+      }
+    },
+    "runtimeRoot": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_maininterface_unity\\Assets\\Spine\\Runtime",
+    "runtimeBefore": {
+      "exists": false,
+      "fileCount": 0,
+      "bytes": 0
+    },
+    "runtimeAfter": {
+      "exists": true,
+      "fileCount": 348,
+      "bytes": 1359349
+    },
+    "runtimePackageAssetRows": 174,
+    "runtimePackageBytes": 1318977,
+    "runtimeChangedRows": 174,
+    "runtimeSample": [
+      {
+        "pathname": "Assets/Spine/Runtime/spine-unity/Shaders/Outline/BlendModes/Spine-Skeleton-PMA-Additive-Outline.shader",
+        "bytes": 1732,
+        "changed": true
+      },
+      {
+        "pathname": "Assets/Spine/Runtime/spine-unity/Components/SkeletonUtility/FollowLocationRigidbody2D.cs",
+        "bytes": 2627,
+        "changed": true
+      },
+      {
+        "pathname": "Assets/Spine/Runtime/spine-unity/Components/Following/BoundingBoxFollower.cs",
+        "bytes": 9742,
+        "changed": true
+      },
+      {
+        "pathname": "Assets/Spine/Runtime/spine-unity/Modules/TK2D/SpriteCollectionAttachmentLoader.cs",
+        "bytes": 6206,
+        "changed": true
+      },
+      {
+        "pathname": "Assets/Spine/Runtime/spine-csharp/MathUtils.cs",
+        "bytes": 6422,
+        "changed": true
+      },
+      {
+        "pathname": "Assets/Spine/Runtime/spine-unity/SkeletonDataModifierAssets/BlendModeMaterials/SkeletonStraightMultiply.mat",
+        "bytes": 1222,
+        "changed": true
+      },
+      {
+        "pathname": "Assets/Spine/Runtime/spine-csharp/Attachments/Attachment.cs",
+        "bytes": 2257,
+        "changed": true
+      },
+      {
+        "pathname": "Assets/Spine/Runtime/spine-unity/Shaders/Sprite/CGIncludes/SpriteUnlit.cginc",
+        "bytes": 1399,
+        "changed": true
+      },
+      {
+        "pathname": "Assets/Spine/Runtime/spine-unity/Utility/TimelineExtensions.cs",
+        "bytes": 4987,
+        "changed": true
+      },
+      {
+        "pathname": "Assets/Spine/Runtime/spine-csharp/SkeletonBounds.cs",
+        "bytes": 9726,
+        "changed": true
+      },
+      {
+        "pathname": "Assets/Spine/Runtime/spine-unity/Mesh Generation/DoubleBuffered.cs",
+        "bytes": 2030,
+        "changed": true
+      },
+      {
+        "pathname": "Assets/Spine/Runtime/spine-unity/Shaders/Sprite/CGIncludes/SpriteLighting.cginc",
+        "bytes": 6385,
+        "changed": true
+      },
+      {
+        "pathname": "Assets/Spine/Runtime/spine-unity/Shaders/Outline/Spine-Skeleton-Lit-Outline.shader",
+        "bytes": 1601,
+        "changed": true
+      },
+      {
+        "pathname": "Assets/Spine/Runtime/spine-csharp/Skeleton.cs",
+        "bytes": 25631,
+        "changed": true
+      },
+      {
+        "pathname": "Assets/Spine/Runtime/spine-unity/SkeletonDataModifierAssets/BlendModeMaterials/BlendModeMaterialsAsset.cs",
+        "bytes": 5447,
+        "changed": true
+      },
+      {
+        "pathname": "Assets/Spine/Runtime/spine-unity/Asset Types/RegionlessAttachmentLoader.cs",
+        "bytes": 3217,
+        "changed": true
+      },
+      {
+        "pathname": "Assets/Spine/Runtime/spine-unity/Shaders/Outline/Spine-Skeleton-OutlineOnly-ZWrite.shader",
+        "bytes": 1933,
+        "changed": true
+      },
+      {
+        "pathname": "Assets/Spine/Runtime/spine-unity/SkeletonDataModifierAssets/BlendModeMaterials/SkeletonStraightScreen.mat",
+        "bytes": 1220,
+        "changed": true
+      },
+      {
+        "pathname": "Assets/Spine/Runtime/spine-unity/Components/SkeletonRenderSeparator/SkeletonPartsRenderer.cs",
+        "bytes": 5622,
+        "changed": true
+      },
+      {
+        "pathname": "Assets/Spine/Runtime/spine-unity/Components/Following/BoundingBoxFollowerGraphic.cs",
+        "bytes": 10068,
+        "changed": true
+      },
+      {
+        "pathname": "Assets/Spine/Runtime/spine-unity/Shaders/Outline/Spine-Special-Skeleton-Grayscale-Outline.shader",
+        "bytes": 1696,
+        "changed": true
+      },
+      {
+        "pathname": "Assets/Spine/Runtime/spine-unity/Shaders/Spine-Skeleton.shader",
+        "bytes": 3173,
+        "changed": true
+      },
+      {
+        "pathname": "Assets/Spine/Runtime/spine-unity/SkeletonDataModifierAssets/BlendModeMaterials/Default BlendModeMaterials.asset",
+        "bytes": 701,
+        "changed": true
+      },
+      {
+        "pathname": "Assets/Spine/Runtime/spine-unity/Utility/AtlasUtilities.cs",
+        "bytes": 39382,
+        "changed": true
+      },
+      {
+        "pathname": "Assets/Spine/Runtime/spine-unity/Components/SkeletonRendererCustomMaterials/SkeletonRendererCustomMaterials.cs",
+        "bytes": 7679,
+        "changed": true
+      },
+      {
+        "pathname": "Assets/Spine/Runtime/spine-unity/Shaders/CGIncludes/Spine-DepthOnlyPass.cginc",
+        "bytes": 920,
+        "changed": true
+      },
+      {
+        "pathname": "Assets/Spine/Runtime/spine-unity/Shaders/Outline/Sprite/SpritesUnlit-Outline.shader",
+        "bytes": 2195,
+        "changed": true
+      },
+      {
+        "pathname": "Assets/Spine/Runtime/spine-unity/Shaders/Outline/Spine-Skeleton-Outline.shader",
+        "bytes": 1763,
+        "changed": true
+      },
+      {
+        "pathname": "Assets/Spine/Runtime/spine-csharp/SkeletonData.cs",
+        "bytes": 9307,
+        "changed": true
+      },
+      {
+        "pathname": "Assets/Spine/Runtime/spine-unity/Shaders/Sprite/SpritesVertexLit.shader",
+        "bytes": 4522,
+        "changed": true
+      },
+      {
+        "pathname": "Assets/Spine/Runtime/spine-csharp/BoneData.cs",
+        "bytes": 4459,
+        "changed": true
+      },
+      {
+        "pathname": "Assets/Spine/Runtime/spine-csharp/TransformConstraint.cs",
+        "bytes": 13107,
+        "changed": true
+      },
+      {
+        "pathname": "Assets/Spine/Runtime/spine-unity/Materials/SkeletonGraphicAdditive.mat",
+        "bytes": 2645,
+        "changed": true
+      },
+      {
+        "pathname": "Assets/Spine/Runtime/spine-unity/Shaders/Outline/CGIncludes/Spine-Outline-Pass.cginc",
+        "bytes": 1897,
+        "changed": true
+      },
+      {
+        "pathname": "Assets/Spine/Runtime/spine-unity/Shaders/Outline/Sprite/SpritesVertexLit-Outline.shader",
+        "bytes": 2846,
+        "changed": true
+      },
+      {
+        "pathname": "Assets/Spine/Runtime/spine-unity/Mesh Generation/MeshGenerator.cs",
+        "bytes": 54313,
+        "changed": true
+      },
+      {
+        "pathname": "Assets/Spine/Runtime/spine-csharp/Attachments/ClippingAttachment.cs",
+        "bytes": 2184,
+        "changed": true
+      },
+      {
+        "pathname": "Assets/Spine/Runtime/spine-unity/Utility/AttachmentCloneExtensions.cs",
+        "bytes": 6632,
+        "changed": true
+      },
+      {
+        "pathname": "Assets/Spine/Runtime/spine-csharp/Json.cs",
+        "bytes": 12405,
+        "changed": true
+      },
+      {
+        "pathname": "Assets/Spine/Runtime/spine-csharp/EventData.cs",
+        "bytes": 2487,
+        "changed": true
+      }
+    ],
+    "runtimeSkippedSample": [
+      {
+        "pathname": "Assets/Spine/Runtime/spine-unity/Utility/YieldInstructions",
+        "reason": "directory_or_no_asset"
+      },
+      {
+        "pathname": "Assets/Spine/Runtime/spine-unity/SkeletonDataModifierAssets/BlendModeMaterials",
+        "reason": "directory_or_no_asset"
+      },
+      {
+        "pathname": "Assets/Spine/Runtime/spine-unity/Asset Types",
+        "reason": "directory_or_no_asset"
+      },
+      {
+        "pathname": "Assets/Spine/Runtime/spine-unity",
+        "reason": "directory_or_no_asset"
+      },
+      {
+        "pathname": "Assets/Spine/Runtime/spine-csharp/Attachments",
+        "reason": "directory_or_no_asset"
+      },
+      {
+        "pathname": "Assets/Spine/Runtime/spine-unity/Components/RootMotion",
+        "reason": "directory_or_no_asset"
+      },
+      {
+        "pathname": "Assets/Spine/Runtime/spine-unity/Shaders/Outline/CGIncludes",
+        "reason": "directory_or_no_asset"
+      },
+      {
+        "pathname": "Assets/Spine/Runtime/spine-unity/Components/SkeletonRenderSeparator",
+        "reason": "directory_or_no_asset"
+      },
+      {
+        "pathname": "Assets/Spine/Runtime/spine-unity/Materials",
+        "reason": "directory_or_no_asset"
+      },
+      {
+        "pathname": "Assets/Spine/Runtime/spine-unity/Shaders/Sprite/CGIncludes",
+        "reason": "directory_or_no_asset"
+      },
+      {
+        "pathname": "Assets/Spine/Runtime/spine-unity/Shaders/CGIncludes",
+        "reason": "directory_or_no_asset"
+      },
+      {
+        "pathname": "Assets/Spine/Runtime/spine-unity/Utility",
+        "reason": "directory_or_no_asset"
+      },
+      {
+        "pathname": "Assets/Spine/Runtime/spine-unity/SkeletonDataModifierAssets",
+        "reason": "directory_or_no_asset"
+      },
+      {
+        "pathname": "Assets/Spine/Runtime/spine-unity/Shaders/Outline/Sprite",
+        "reason": "directory_or_no_asset"
+      },
+      {
+        "pathname": "Assets/Spine/Runtime/spine-unity/Shaders/Outline/BlendModes",
+        "reason": "directory_or_no_asset"
+      },
+      {
+        "pathname": "Assets/Spine/Runtime/spine-unity/Shaders/Outline/SkeletonGraphic",
+        "reason": "directory_or_no_asset"
+      },
+      {
+        "pathname": "Assets/Spine/Runtime/spine-unity/Shaders/SkeletonGraphic",
+        "reason": "directory_or_no_asset"
+      },
+      {
+        "pathname": "Assets/Spine/Runtime/spine-unity/Components/Internal",
+        "reason": "directory_or_no_asset"
+      },
+      {
+        "pathname": "Assets/Spine/Runtime/spine-unity/Components",
+        "reason": "directory_or_no_asset"
+      },
+      {
+        "pathname": "Assets/Spine/Runtime/spine-csharp",
+        "reason": "directory_or_no_asset"
+      }
+    ],
+    "routeAssetRoot": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_maininterface_unity\\Assets\\RestoreData\\route_spine_raw_decode_recovery",
+    "routeAssetBefore": {
+      "exists": false,
+      "fileCount": 0,
+      "bytes": 0
+    },
+    "routeAssetAfter": {
+      "exists": true,
+      "fileCount": 26,
+      "bytes": 1396619
+    },
+    "routeAssetCopy": {
+      "probeProject": "C:\\Users\\godho\\Downloads\\girlswar\\_restore_tools\\work\\spine40_unity6000_probe_20260625_134314",
+      "source": "C:\\Users\\godho\\Downloads\\girlswar\\_restore_tools\\work\\spine40_unity6000_probe_20260625_134314\\Assets\\RestoreData\\route_spine_raw_decode_recovery",
+      "destination": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_maininterface_unity\\Assets\\RestoreData\\route_spine_raw_decode_recovery",
+      "copied": [
+        {
+          "relative": "8007.meta",
+          "bytes": 172,
+          "changed": true
+        },
+        {
+          "relative": "Spine_shijieanniu.meta",
+          "bytes": 172,
+          "changed": true
+        },
+        {
+          "relative": "8007/8007.atlas.txt",
+          "bytes": 2062,
+          "changed": true
+        },
+        {
+          "relative": "8007/8007.atlas.txt.meta",
+          "bytes": 158,
+          "changed": true
+        },
+        {
+          "relative": "8007/8007.png",
+          "bytes": 146112,
+          "changed": true
+        },
+        {
+          "relative": "8007/8007.png.meta",
+          "bytes": 3007,
+          "changed": true
+        },
+        {
+          "relative": "8007/8007.skel.bytes",
+          "bytes": 488422,
+          "changed": true
+        },
+        {
+          "relative": "8007/8007.skel.bytes.meta",
+          "bytes": 158,
+          "changed": true
+        },
+        {
+          "relative": "8007/8007_Atlas.asset",
+          "bytes": 603,
+          "changed": true
+        },
+        {
+          "relative": "8007/8007_Atlas.asset.meta",
+          "bytes": 189,
+          "changed": true
+        },
+        {
+          "relative": "8007/8007_Material.mat",
+          "bytes": 1241,
+          "changed": true
+        },
+        {
+          "relative": "8007/8007_Material.mat.meta",
+          "bytes": 188,
+          "changed": true
+        },
+        {
+          "relative": "8007/8007_SkeletonData.asset",
+          "bytes": 953,
+          "changed": true
+        },
+        {
+          "relative": "8007/8007_SkeletonData.asset.meta",
+          "bytes": 189,
+          "changed": true
+        },
+        {
+          "relative": "Spine_shijieanniu/Spine_shijieanniu.atlas.txt",
+          "bytes": 276,
+          "changed": true
+        },
+        {
+          "relative": "Spine_shijieanniu/Spine_shijieanniu.atlas.txt.meta",
+          "bytes": 158,
+          "changed": true
+        },
+        {
+          "relative": "Spine_shijieanniu/Spine_shijieanniu.png",
+          "bytes": 744255,
+          "changed": true
+        },
+        {
+          "relative": "Spine_shijieanniu/Spine_shijieanniu.png.meta",
+          "bytes": 3007,
+          "changed": true
+        },
+        {
+          "relative": "Spine_shijieanniu/Spine_shijieanniu.skel.bytes",
+          "bytes": 1737,
+          "changed": true
+        },
+        {
+          "relative": "Spine_shijieanniu/Spine_shijieanniu.skel.bytes.meta",
+          "bytes": 158,
+          "changed": true
+        },
+        {
+          "relative": "Spine_shijieanniu/Spine_shijieanniu_Atlas.asset",
+          "bytes": 616,
+          "changed": true
+        },
+        {
+          "relative": "Spine_shijieanniu/Spine_shijieanniu_Atlas.asset.meta",
+          "bytes": 189,
+          "changed": true
+        },
+        {
+          "relative": "Spine_shijieanniu/Spine_shijieanniu_Material.mat",
+          "bytes": 1254,
+          "changed": true
+        },
+        {
+          "relative": "Spine_shijieanniu/Spine_shijieanniu_Material.mat.meta",
+          "bytes": 188,
+          "changed": true
+        },
+        {
+          "relative": "Spine_shijieanniu/Spine_shijieanniu_SkeletonData.asset",
+          "bytes": 966,
+          "changed": true
+        },
+        {
+          "relative": "Spine_shijieanniu/Spine_shijieanniu_SkeletonData.asset.meta",
+          "bytes": 189,
+          "changed": true
+        }
+      ],
+      "missing": [],
+      "copiedCount": 26,
+      "changedCount": 26,
+      "sample": [
+        {
+          "relative": "8007.meta",
+          "bytes": 172,
+          "changed": true
+        },
+        {
+          "relative": "Spine_shijieanniu.meta",
+          "bytes": 172,
+          "changed": true
+        },
+        {
+          "relative": "8007/8007.atlas.txt",
+          "bytes": 2062,
+          "changed": true
+        },
+        {
+          "relative": "8007/8007.atlas.txt.meta",
+          "bytes": 158,
+          "changed": true
+        },
+        {
+          "relative": "8007/8007.png",
+          "bytes": 146112,
+          "changed": true
+        },
+        {
+          "relative": "8007/8007.png.meta",
+          "bytes": 3007,
+          "changed": true
+        },
+        {
+          "relative": "8007/8007.skel.bytes",
+          "bytes": 488422,
+          "changed": true
+        },
+        {
+          "relative": "8007/8007.skel.bytes.meta",
+          "bytes": 158,
+          "changed": true
+        },
+        {
+          "relative": "8007/8007_Atlas.asset",
+          "bytes": 603,
+          "changed": true
+        },
+        {
+          "relative": "8007/8007_Atlas.asset.meta",
+          "bytes": 189,
+          "changed": true
+        },
+        {
+          "relative": "8007/8007_Material.mat",
+          "bytes": 1241,
+          "changed": true
+        },
+        {
+          "relative": "8007/8007_Material.mat.meta",
+          "bytes": 188,
+          "changed": true
+        },
+        {
+          "relative": "8007/8007_SkeletonData.asset",
+          "bytes": 953,
+          "changed": true
+        },
+        {
+          "relative": "8007/8007_SkeletonData.asset.meta",
+          "bytes": 189,
+          "changed": true
+        },
+        {
+          "relative": "Spine_shijieanniu/Spine_shijieanniu.atlas.txt",
+          "bytes": 276,
+          "changed": true
+        },
+        {
+          "relative": "Spine_shijieanniu/Spine_shijieanniu.atlas.txt.meta",
+          "bytes": 158,
+          "changed": true
+        },
+        {
+          "relative": "Spine_shijieanniu/Spine_shijieanniu.png",
+          "bytes": 744255,
+          "changed": true
+        },
+        {
+          "relative": "Spine_shijieanniu/Spine_shijieanniu.png.meta",
+          "bytes": 3007,
+          "changed": true
+        },
+        {
+          "relative": "Spine_shijieanniu/Spine_shijieanniu.skel.bytes",
+          "bytes": 1737,
+          "changed": true
+        },
+        {
+          "relative": "Spine_shijieanniu/Spine_shijieanniu.skel.bytes.meta",
+          "bytes": 158,
+          "changed": true
+        },
+        {
+          "relative": "Spine_shijieanniu/Spine_shijieanniu_Atlas.asset",
+          "bytes": 616,
+          "changed": true
+        },
+        {
+          "relative": "Spine_shijieanniu/Spine_shijieanniu_Atlas.asset.meta",
+          "bytes": 189,
+          "changed": true
+        },
+        {
+          "relative": "Spine_shijieanniu/Spine_shijieanniu_Material.mat",
+          "bytes": 1254,
+          "changed": true
+        },
+        {
+          "relative": "Spine_shijieanniu/Spine_shijieanniu_Material.mat.meta",
+          "bytes": 188,
+          "changed": true
+        },
+        {
+          "relative": "Spine_shijieanniu/Spine_shijieanniu_SkeletonData.asset",
+          "bytes": 966,
+          "changed": true
+        },
+        {
+          "relative": "Spine_shijieanniu/Spine_shijieanniu_SkeletonData.asset.meta",
+          "bytes": 189,
+          "changed": true
+        }
+      ]
+    }
+  },
+  "unityProbe": {
+    "generatedAt": "2026-06-25 22:05:40",
+    "status": "maininterface_116_spine_runtime_bridge_probe_complete",
+    "visualVerdict": "partial_runtime_replay_capture_generated_manual_review_required",
+    "skeletonGraphicTypeAvailable": true,
+    "skeletonDataAssetTypeAvailable": true,
+    "atlasAssetTypeAvailable": true,
+    "skeletonBinaryTypeAvailable": true,
+    "meshGeneratorTypeAvailable": true,
+    "mainProjectSpineRuntimeAvailable": true,
+    "visualFixApplied": 2,
+    "sceneGenerated": true,
+    "capturePath": "Assets/RestoreCaptures/maininterface_route_spine_runtime_bridge_1680x720.png",
+    "captureExists": true,
+    "captureSize": 1509391,
+    "visiblePixelCount": 1201680,
+    "magentaPixelCount": 222,
+    "blocker": "Replay scene was generated, but the route cluster still requires visual/layout validation against original evidence.",
+    "rows": [
+      {
+        "target": "Spine_shijieanniu",
+        "node": "spine_diqiu",
+        "animation": "A",
+        "loop": true,
+        "skeletonDataAssetPath": "Assets/RestoreData/route_spine_raw_decode_recovery/Spine_shijieanniu/Spine_shijieanniu_SkeletonData.asset",
+        "materialPath": "Assets/RestoreData/route_spine_raw_decode_recovery/Spine_shijieanniu/Spine_shijieanniu_Material.mat",
+        "skeletonGraphicTypeAvailable": true,
+        "sceneNodeFound": true,
+        "sceneObjectPath": "Canvas_MainInterface_1280x720/MainInterface_Root_From_RectTransform_CSV/UI_MainInterface__5568884429252053541/right__6922878451781464554/node_middle__9056630568254389742/wanfaWorldNode__-3820167396480157270/worldwanfaBtn__3512211464843089861/spine_diqiu__-1766545527926586392",
+        "parentPath": "Canvas_MainInterface_1280x720/MainInterface_Root_From_RectTransform_CSV/UI_MainInterface__5568884429252053541/right__6922878451781464554/node_middle__9056630568254389742/wanfaWorldNode__-3820167396480157270/worldwanfaBtn__3512211464843089861",
+        "siblingIndex": 0,
+        "anchoredPosition": "0,-1",
+        "sizeDelta": "100,100",
+        "localScale": "1,1,1",
+        "activeInHierarchy": true,
+        "skeletonDataAssetLoaded": true,
+        "materialLoaded": true,
+        "componentAttached": true,
+        "initialized": true,
+        "decision": "applied_runtime_skeletongraphic_replay_candidate",
+        "detail": "SkeletonGraphic attached to original node with project SkeletonDataAsset and original starting animation."
+      },
+      {
+        "target": "8007",
+        "node": "spine_xiaoren",
+        "animation": "run",
+        "loop": true,
+        "skeletonDataAssetPath": "Assets/RestoreData/route_spine_raw_decode_recovery/8007/8007_SkeletonData.asset",
+        "materialPath": "Assets/RestoreData/route_spine_raw_decode_recovery/8007/8007_Material.mat",
+        "skeletonGraphicTypeAvailable": true,
+        "sceneNodeFound": true,
+        "sceneObjectPath": "Canvas_MainInterface_1280x720/MainInterface_Root_From_RectTransform_CSV/UI_MainInterface__5568884429252053541/right__6922878451781464554/node_middle__9056630568254389742/wanfaWorldNode__-3820167396480157270/spine_xiaoren__3375689855543054311",
+        "parentPath": "Canvas_MainInterface_1280x720/MainInterface_Root_From_RectTransform_CSV/UI_MainInterface__5568884429252053541/right__6922878451781464554/node_middle__9056630568254389742/wanfaWorldNode__-3820167396480157270",
+        "siblingIndex": 1,
+        "anchoredPosition": "-77.9,-15.4",
+        "sizeDelta": "100,100",
+        "localScale": "0.5,0.5,0.5",
+        "activeInHierarchy": true,
+        "skeletonDataAssetLoaded": true,
+        "materialLoaded": true,
+        "componentAttached": true,
+        "initialized": true,
+        "decision": "applied_runtime_skeletongraphic_replay_candidate",
+        "detail": "SkeletonGraphic attached to original node with project SkeletonDataAsset and original starting animation."
+      }
+    ]
+  },
+  "rows": [
+    {
+      "target": "Spine_shijieanniu",
+      "node": "spine_diqiu",
+      "animation": "A",
+      "loop": true,
+      "skeletonDataAssetPath": "Assets/RestoreData/route_spine_raw_decode_recovery/Spine_shijieanniu/Spine_shijieanniu_SkeletonData.asset",
+      "materialPath": "Assets/RestoreData/route_spine_raw_decode_recovery/Spine_shijieanniu/Spine_shijieanniu_Material.mat",
+      "skeletonGraphicTypeAvailable": true,
+      "sceneNodeFound": true,
+      "sceneObjectPath": "Canvas_MainInterface_1280x720/MainInterface_Root_From_RectTransform_CSV/UI_MainInterface__5568884429252053541/right__6922878451781464554/node_middle__9056630568254389742/wanfaWorldNode__-3820167396480157270/worldwanfaBtn__3512211464843089861/spine_diqiu__-1766545527926586392",
+      "parentPath": "Canvas_MainInterface_1280x720/MainInterface_Root_From_RectTransform_CSV/UI_MainInterface__5568884429252053541/right__6922878451781464554/node_middle__9056630568254389742/wanfaWorldNode__-3820167396480157270/worldwanfaBtn__3512211464843089861",
+      "siblingIndex": 0,
+      "anchoredPosition": "0,-1",
+      "sizeDelta": "100,100",
+      "localScale": "1,1,1",
+      "activeInHierarchy": true,
+      "skeletonDataAssetLoaded": true,
+      "materialLoaded": true,
+      "componentAttached": true,
+      "initialized": true,
+      "decision": "applied_runtime_skeletongraphic_replay_candidate",
+      "detail": "SkeletonGraphic attached to original node with project SkeletonDataAsset and original starting animation."
+    },
+    {
+      "target": "8007",
+      "node": "spine_xiaoren",
+      "animation": "run",
+      "loop": true,
+      "skeletonDataAssetPath": "Assets/RestoreData/route_spine_raw_decode_recovery/8007/8007_SkeletonData.asset",
+      "materialPath": "Assets/RestoreData/route_spine_raw_decode_recovery/8007/8007_Material.mat",
+      "skeletonGraphicTypeAvailable": true,
+      "sceneNodeFound": true,
+      "sceneObjectPath": "Canvas_MainInterface_1280x720/MainInterface_Root_From_RectTransform_CSV/UI_MainInterface__5568884429252053541/right__6922878451781464554/node_middle__9056630568254389742/wanfaWorldNode__-3820167396480157270/spine_xiaoren__3375689855543054311",
+      "parentPath": "Canvas_MainInterface_1280x720/MainInterface_Root_From_RectTransform_CSV/UI_MainInterface__5568884429252053541/right__6922878451781464554/node_middle__9056630568254389742/wanfaWorldNode__-3820167396480157270",
+      "siblingIndex": 1,
+      "anchoredPosition": "-77.9,-15.4",
+      "sizeDelta": "100,100",
+      "localScale": "0.5,0.5,0.5",
+      "activeInHierarchy": true,
+      "skeletonDataAssetLoaded": true,
+      "materialLoaded": true,
+      "componentAttached": true,
+      "initialized": true,
+      "decision": "applied_runtime_skeletongraphic_replay_candidate",
+      "detail": "SkeletonGraphic attached to original node with project SkeletonDataAsset and original starting animation."
+    }
+  ],
+  "rootCmdCount": 1,
+  "rootCmds": [
+    "00_COMMAND_CENTER.cmd"
+  ],
+  "restoreToolsDirectCmdCount": 0,
+  "restoreToolsDirectCmds": [],
+  "tool": "C:\\Users\\godho\\Downloads\\girlswar\\_restore_tools\\cmd_archive\\116_IMPORT_REAL_SPINE4_RUNTIME_BRIDGE_FOR_ROUTE_SKELETONGRAPHIC_REPLAY.cmd",
+  "nextBlocker": "route SkeletonGraphic visual/layout validation against original/video evidence"
+}

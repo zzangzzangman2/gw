@@ -1,0 +1,4 @@
+﻿heroDid,modelId,expectedAnimation,animationStateUsedName,skeletonDataAssetName,boneCount,slotCount,animationCount,expectedAnimationInRuntime,meshGeneratorNonNull,meshVertexCountAfter,meshHashChangedFrameCount,meshBoundsChangedFrameCount,unsupportedShaderMaterialCount,motionReplayStatus,runtimeException
+1002,1002,ult,ult,1002_SkeletonData,96,246,23,True,True,736,11,10,5,mesh_changes_after_update_float_but_clip05_motion_not_verified,
+1034,1034,skill1,skill1,1034_SkeletonData,187,113,24,True,True,1283,11,11,7,mesh_changes_after_update_float_but_clip05_motion_not_verified,
+1100111,3001,attack,attack,3001_SkeletonData,56,28,20,True,True,611,11,11,5,mesh_changes_after_update_float_but_clip05_motion_not_verified,
