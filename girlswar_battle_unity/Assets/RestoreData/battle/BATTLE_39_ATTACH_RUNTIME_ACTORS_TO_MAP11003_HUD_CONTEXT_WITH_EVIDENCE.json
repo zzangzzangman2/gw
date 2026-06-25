@@ -1,0 +1,1298 @@
+{
+  "verdict": "clip05 actor motion/layout/timing + map/HUD context not reproduced",
+  "visual_status": "failed_hud_context_not_camera_visible_in_candidate_capture",
+  "isFinalRestoredBattleScreen": false,
+  "reference_video_used": true,
+  "videoTimeRangeSeconds": "485.0-487.0",
+  "referenceFrameCount": 6,
+  "runtimeFrameCount": 6,
+  "unityExitCode": 0,
+  "actorMotionLayoutTimingMapHudContextReplayed": false,
+  "placementOriginalRuntimeVerified": false,
+  "referenceActorBoxCount": 181,
+  "runtimeActorBoxCount": 18,
+  "actorLayoutGap": {
+    "hasReference": true,
+    "hasRuntime": true,
+    "referenceUnionNorm": {
+      "x": 0.030729,
+      "y": 0.061111,
+      "w": 0.969271,
+      "h": 0.666667,
+      "cx": 0.515365,
+      "cy": 0.394444
+    },
+    "runtimeUnionNorm": {
+      "x": 0.116146,
+      "y": 0.62037,
+      "w": 0.104167,
+      "h": 0.265741,
+      "cx": 0.168229,
+      "cy": 0.753241
+    },
+    "centerDistanceNorm": 0.499238,
+    "runtimeToReferenceAreaRatio": 0.042839
+  },
+  "runtimeContext": {
+    "hasBattleMap": true,
+    "hasBattleHud": true,
+    "hasHeroCards": true,
+    "cameraVisibleBattleHud": false,
+    "baseSceneOpened": true,
+    "disabledExistingBattle27ActorCount": 3,
+    "mapContextSource": "BATTLE29_map_11003_layers",
+    "hudContextSource": "BATTLE29_ui_normalbattle_and_hero_card_context",
+    "actorPlacementSource": "BATTLE_RUNTIME_FLOW_MANIFEST_coordinates; mapId_11001_payload_on_clip05_map11003_visual_context",
+    "actorPlacementEvidenceStatus": "candidate_not_original_runtime_verified"
+  },
+  "captureMetrics": {
+    "captureExists": true,
+    "width": 1920,
+    "height": 1080,
+    "magentaPixelRatio": 0.025204,
+    "nonBlackPixelRatio": 0.901606,
+    "topNonDarkRatio": 0.857576,
+    "bottomNonDarkRatio": 0.78466,
+    "rightNonDarkRatio": 0.771706
+  },
+  "hudVisibilityMetrics": {
+    "topHpVs": {
+      "meanAbsDiffVsBattle29HudReference": 0.032651,
+      "pixelCorrelationVsBattle29HudReference": 0.8989,
+      "zoneVisibleByReferenceSimilarity": true
+    },
+    "bottomCards": {
+      "meanAbsDiffVsBattle29HudReference": 0.105971,
+      "pixelCorrelationVsBattle29HudReference": 0.358567,
+      "zoneVisibleByReferenceSimilarity": false
+    },
+    "rightControls": {
+      "meanAbsDiffVsBattle29HudReference": 0.026358,
+      "pixelCorrelationVsBattle29HudReference": 0.734968,
+      "zoneVisibleByReferenceSimilarity": true
+    },
+    "cameraVisibleBattleHud": false,
+    "visibleHudZoneVoteCount": 2,
+    "reason": "BATTLE39 capture does not match BATTLE29/clip05 HUD/card visible regions; scene object presence is not camera-visible HUD."
+  },
+  "cameraVisibleBattleHud": false,
+  "meshHashChangedActorCount": 3,
+  "animationStateSetSucceededCount": 3,
+  "shaderRebindAppliedCount": 4,
+  "battle38Carryover": {
+    "visual_status": "failed_battle_scene_context_map_hud_missing",
+    "actorLayoutGap": {
+      "hasReference": true,
+      "hasRuntime": true,
+      "referenceUnionNorm": {
+        "x": 0.030729,
+        "y": 0.061111,
+        "w": 0.969271,
+        "h": 0.666667,
+        "cx": 0.515365,
+        "cy": 0.394444
+      },
+      "runtimeUnionNorm": {
+        "x": 0.275521,
+        "y": 0.264815,
+        "w": 0.498437,
+        "h": 0.29537,
+        "cx": 0.52474,
+        "cy": 0.4125
+      },
+      "centerDistanceNorm": 0.020345,
+      "runtimeToReferenceAreaRatio": 0.227836
+    },
+    "runtimeContext": {
+      "hasBattleMap": false,
+      "hasBattleHud": false,
+      "source": "BATTLE37_actor_only_runtime_probe"
+    }
+  },
+  "battle29Context": {
+    "capture": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_battle_unity\\Assets\\RestoreCaptures\\battle_hud\\BattleHeroListSkillCardBindClip05_1920x1080.png",
+    "originalBattlemapBundleLoaded": true,
+    "mapLayerCreatedCount": 10,
+    "boundHeroCardCount": 3,
+    "failureAxes": {
+      "heroitem_template_runtime_clone_missing_before_battle29": true,
+      "battle29_positions_inferred_not_original_runtime_verified": true,
+      "actor_motion_not_replayed": true,
+      "skill_effect_runtime_not_attached_to_cards_or_motion": true
+    }
+  },
+  "unityProbe": {
+    "verdict": "battle39_runtime_actors_attached_to_map11003_hud_context_candidate",
+    "isFinalRestoredBattleScreen": false,
+    "scene": "Assets/Scenes/Battle39RuntimeActorsMap11003HudContextCandidate.unity",
+    "baseScene": "Assets/Scenes/BattleHeroListSkillCardBindClip05.unity",
+    "capture": "Assets/RestoreCaptures/battle_actor/Battle39RuntimeActorsMap11003HudContext_1920x1080.png",
+    "sequenceDir": "Assets/RestoreCaptures/battle_actor/battle39_sequence",
+    "placementEvidenceStatus": "runtime_flow_manifest_positions_on_BATTLE29_map11003_context_candidate_not_original_runtime_verified",
+    "camera": {
+      "name": "BattleHudSpriteAtlasTextureRuntimeBindingClip05Camera",
+      "orthographic": true,
+      "orthographicSize": 5,
+      "position": "0/0/-10",
+      "background": "RGBA(0.000, 0.000, 0.000, 1.000)"
+    },
+    "context": {
+      "baseSceneOpened": true,
+      "baseSceneFailReason": "",
+      "hasBattleMap": true,
+      "hasBattleHud": true,
+      "hasHeroCards": true,
+      "cameraFound": true,
+      "disabledExistingBattle27ActorCount": 3,
+      "mapContextSource": "BATTLE29_map_11003_layers",
+      "hudContextSource": "BATTLE29_ui_normalbattle_and_hero_card_context",
+      "actorPlacementSource": "BATTLE_RUNTIME_FLOW_MANIFEST_coordinates; mapId_11001_payload_on_clip05_map11003_visual_context",
+      "evidenceWarning": "context attach is evidence-bearing but not final: formation/camera placement is not original runtime verified"
+    },
+    "shaderBundle": {
+      "status": "loaded",
+      "loaded": true,
+      "shaderNames": [
+        "Spine/Blend Modes/Skeleton PMA Additive|supported=false|passCount=3",
+        "Spine/Blend Modes/Skeleton PMA Multiply|supported=false|passCount=3",
+        "Spine/Blend Modes/Skeleton PMA Screen|supported=false|passCount=3",
+        "Spine/Outline/Blend Modes/Skeleton PMA Additive|supported=true|passCount=3",
+        "Spine/Outline/Blend Modes/Skeleton PMA Multiply|supported=true|passCount=3",
+        "Spine/Outline/Blend Modes/Skeleton PMA Screen|supported=true|passCount=3",
+        "Spine/Outline/SkeletonGraphic|supported=true|passCount=3",
+        "Spine/Outline/SkeletonGraphic Tint Black|supported=true|passCount=3",
+        "Spine/Outline/Skeleton Fill|supported=true|passCount=4",
+        "Spine/Outline/Skeleton Lit|supported=true|passCount=3",
+        "Spine/Outline/Skeleton Lit ZWrite|supported=true|passCount=3",
+        "Spine/Outline/Skeleton|supported=true|passCount=3",
+        "Spine/Outline/OutlineOnly-ZWrite|supported=true|passCount=3",
+        "Spine/Outline/Skeleton Tint|supported=true|passCount=3",
+        "Spine/Outline/Skeleton Tint Black|supported=true|passCount=4",
+        "Spine/Outline/Special/Skeleton Grayscale|supported=true|passCount=4",
+        "Spine/Outline/Sprite/Pixel Lit|supported=false|passCount=3",
+        "Spine/Outline/Sprite/Unlit|supported=false|passCount=3",
+        "Spine/Outline/Sprite/Vertex Lit|supported=false|passCount=3",
+        "Spine/SkeletonGraphic Additive|supported=false|passCount=3",
+        "Spine/SkeletonGraphic Multiply|supported=false|passCount=3",
+        "Spine/SkeletonGraphic Screen|supported=false|passCount=3",
+        "Spine/SkeletonGraphic Tint Black|supported=false|passCount=3",
+        "Spine/SkeletonGraphic|supported=false|passCount=3",
+        "Spine/Skeleton Fill|supported=true|passCount=4",
+        "Spine/Skeleton Lit ZWrite|supported=false|passCount=3",
+        "Spine/Skeleton Lit|supported=false|passCount=3",
+        "Spine/Skeleton Tint|supported=false|passCount=3",
+        "Spine/Skeleton Tint Black|supported=false|passCount=3",
+        "Spine/Skeleton|supported=false|passCount=3",
+        "Spine/Special/Skeleton Grayscale|supported=true|passCount=4"
+      ]
+    },
+    "summary": {
+      "actorCount": 3,
+      "boundsRowCount": 18,
+      "prefabInstantiateSuccess": 3,
+      "shaderRebindAppliedCount": 4,
+      "renderOrderAppliedCount": 3,
+      "animationStateSetSucceededCount": 3,
+      "meshHashChangedActorCount": 3
+    },
+    "actors": [
+      {
+        "side": "our",
+        "wave": 0,
+        "slot": 2,
+        "heroDid": "1002",
+        "modelId": "1002",
+        "expectedAnimation": "ult",
+        "animationStateUsedName": "ult",
+        "bundleLoaded": true,
+        "prefabInstantiated": true,
+        "afterInitializeValid": true,
+        "skeletonDataAssetName": "1002_SkeletonData",
+        "boneCount": 96,
+        "slotCount": 246,
+        "animationCount": 23,
+        "animationNames": [
+          "air",
+          "attack",
+          "change",
+          "death",
+          "fall",
+          "fall_lie",
+          "fight",
+          "frozen",
+          "gedang",
+          "getup",
+          "guidao",
+          "lie",
+          "run",
+          "skill1",
+          "stand",
+          "strike",
+          "strike_air",
+          "strike_fly",
+          "thunder",
+          "ult",
+          "ultx",
+          "vertigo",
+          "wait"
+        ],
+        "shaderRebindAppliedCount": 1,
+        "shaderRebindFailedCount": 0,
+        "renderOrderAppliedCount": 1,
+        "runtimeException": "",
+        "materialRows": [
+          "1002_Material|shader=Spine/Skeleton Tint|supported=false|passCount=3|mainTex=1002(1024x512)",
+          "after|1002_Material|shader=Spine/Skeleton Tint|supported=true|passCount=2|mainTex=1002(1024x512)"
+        ]
+      },
+      {
+        "side": "our",
+        "wave": 0,
+        "slot": 3,
+        "heroDid": "1034",
+        "modelId": "1034",
+        "expectedAnimation": "skill1",
+        "animationStateUsedName": "skill1",
+        "bundleLoaded": true,
+        "prefabInstantiated": true,
+        "afterInitializeValid": true,
+        "skeletonDataAssetName": "1034_SkeletonData",
+        "boneCount": 187,
+        "slotCount": 113,
+        "animationCount": 24,
+        "animationNames": [
+          "air",
+          "attack",
+          "change",
+          "death",
+          "fall",
+          "fall_lie",
+          "fight",
+          "frozen",
+          "gedang",
+          "getup",
+          "getup2",
+          "guidao",
+          "lie",
+          "run",
+          "skill1",
+          "stand",
+          "strike",
+          "strike_air",
+          "strike_fly",
+          "thunder",
+          "ult",
+          "ultx",
+          "vertigo",
+          "wait"
+        ],
+        "shaderRebindAppliedCount": 2,
+        "shaderRebindFailedCount": 0,
+        "renderOrderAppliedCount": 1,
+        "runtimeException": "",
+        "materialRows": [
+          "1034_Material|shader=Spine/Skeleton Tint|supported=false|passCount=3|mainTex=1034(2048x1024)",
+          "after|1034_Material|shader=Spine/Skeleton Tint|supported=true|passCount=2|mainTex=1034(2048x1024)",
+          "1034_Material-Screen|shader=Spine/Blend Modes/Skeleton PMA Screen|supported=false|passCount=3|mainTex=1034(2048x1024)",
+          "after|1034_Material-Screen|shader=Spine/Blend Modes/Skeleton PMA Screen|supported=true|passCount=2|mainTex=1034(2048x1024)"
+        ]
+      },
+      {
+        "side": "enemy",
+        "wave": 1,
+        "slot": 1,
+        "heroDid": "1100111",
+        "modelId": "3001",
+        "expectedAnimation": "attack",
+        "animationStateUsedName": "attack",
+        "bundleLoaded": true,
+        "prefabInstantiated": true,
+        "afterInitializeValid": true,
+        "skeletonDataAssetName": "3001_SkeletonData",
+        "boneCount": 56,
+        "slotCount": 28,
+        "animationCount": 20,
+        "animationNames": [
+          "air",
+          "attack",
+          "change",
+          "death",
+          "fall",
+          "fall_lie",
+          "fight",
+          "frozen",
+          "getup",
+          "lie",
+          "run",
+          "run1",
+          "skill1",
+          "stand",
+          "strike",
+          "strike_air",
+          "strike_fly",
+          "thunder",
+          "vertigo",
+          "wait"
+        ],
+        "shaderRebindAppliedCount": 1,
+        "shaderRebindFailedCount": 0,
+        "renderOrderAppliedCount": 1,
+        "runtimeException": "",
+        "materialRows": [
+          "3001_Material|shader=Spine/Skeleton Tint|supported=false|passCount=3|mainTex=3001(512x512)",
+          "after|3001_Material|shader=Spine/Skeleton Tint|supported=true|passCount=2|mainTex=3001(512x512)"
+        ]
+      }
+    ]
+  },
+  "actorBoundsRows": [
+    {
+      "frame": "0",
+      "side": "our",
+      "wave": "0",
+      "slot": "2",
+      "heroDid": "1002",
+      "modelId": "1002",
+      "animationName": "ult",
+      "localScale": "0.7/0.7/0.7",
+      "rootPosition": "-1.65/-2.35/-0.2",
+      "worldBounds": "-1.543/-1.767/-0.2|0.938/1.245/0",
+      "screenRect": "223.41/125.31/268.43/185.07",
+      "screenCenterNorm": "0.128083/0.856304",
+      "screenAreaRatio": "0.00129747",
+      "rendererCount": "1",
+      "shaderRebindAppliedCount": "1",
+      "meshHash": "83afe57f"
+    },
+    {
+      "frame": "0",
+      "side": "our",
+      "wave": "0",
+      "slot": "3",
+      "heroDid": "1034",
+      "modelId": "1034",
+      "animationName": "skill1",
+      "localScale": "0.7/0.7/0.7",
+      "rootPosition": "0/-2.35/-0.2",
+      "worldBounds": "0.185/-1.444/-0.2|3.453/2.008/0",
+      "screenRect": "246.03/122.49/411.76/218.88",
+      "screenCenterNorm": "0.171299/0.841957",
+      "screenAreaRatio": "0.0077038",
+      "rendererCount": "1",
+      "shaderRebindAppliedCount": "2",
+      "meshHash": "4238c70d"
+    },
+    {
+      "frame": "0",
+      "side": "enemy",
+      "wave": "1",
+      "slot": "1",
+      "heroDid": "1100111",
+      "modelId": "3001",
+      "animationName": "attack",
+      "localScale": "0.62/0.62/0.62",
+      "rootPosition": "1.05/2.35/-0.2",
+      "worldBounds": "1.202/2.782/-0.2|1.674/1.011/0",
+      "screenRect": "337.52/349.27/417.89/397.79",
+      "screenCenterNorm": "0.196721/0.654138",
+      "screenAreaRatio": "0.00188081",
+      "rendererCount": "1",
+      "shaderRebindAppliedCount": "1",
+      "meshHash": "b8324136"
+    },
+    {
+      "frame": "1",
+      "side": "our",
+      "wave": "0",
+      "slot": "2",
+      "heroDid": "1002",
+      "modelId": "1002",
+      "animationName": "ult",
+      "localScale": "0.7/0.7/0.7",
+      "rootPosition": "-1.65/-2.35/-0.2",
+      "worldBounds": "-1.616/-1.692/-0.2|0.784/1.395/0",
+      "screenRect": "223.6/125.31/261.22/192.28",
+      "screenCenterNorm": "0.126254/0.852966",
+      "screenAreaRatio": "0.00121474",
+      "rendererCount": "1",
+      "shaderRebindAppliedCount": "1",
+      "meshHash": "dd3421b5"
+    },
+    {
+      "frame": "1",
+      "side": "our",
+      "wave": "0",
+      "slot": "3",
+      "heroDid": "1034",
+      "modelId": "1034",
+      "animationName": "skill1",
+      "localScale": "0.7/0.7/0.7",
+      "rootPosition": "0/-2.35/-0.2",
+      "worldBounds": "0.205/-1.436/-0.2|3.413/1.971/0",
+      "screenRect": "247.92/123.8/411.76/218.39",
+      "screenCenterNorm": "0.171792/0.841579",
+      "screenAreaRatio": "0.00747363",
+      "rendererCount": "1",
+      "shaderRebindAppliedCount": "2",
+      "meshHash": "70c0d14b"
+    },
+    {
+      "frame": "1",
+      "side": "enemy",
+      "wave": "1",
+      "slot": "1",
+      "heroDid": "1100111",
+      "modelId": "3001",
+      "animationName": "attack",
+      "localScale": "0.62/0.62/0.62",
+      "rootPosition": "1.05/2.35/-0.2",
+      "worldBounds": "1.373/2.98/-0.2|1.574/1.061/0",
+      "screenRect": "348.14/357.58/423.67/408.53",
+      "screenCenterNorm": "0.200993/0.645324",
+      "screenAreaRatio": "0.00185602",
+      "rendererCount": "1",
+      "shaderRebindAppliedCount": "1",
+      "meshHash": "5399c07f"
+    },
+    {
+      "frame": "2",
+      "side": "our",
+      "wave": "0",
+      "slot": "2",
+      "heroDid": "1002",
+      "modelId": "1002",
+      "animationName": "ult",
+      "localScale": "0.7/0.7/0.7",
+      "rootPosition": "-1.65/-2.35/-0.2",
+      "worldBounds": "-1.32/-1.381/-0.2|1.028/2.016/0",
+      "screenRect": "231.98/125.31/281.32/222.07",
+      "screenCenterNorm": "0.133673/0.839175",
+      "screenAreaRatio": "0.00230211",
+      "rendererCount": "1",
+      "shaderRebindAppliedCount": "1",
+      "meshHash": "78b1557e"
+    },
+    {
+      "frame": "2",
+      "side": "our",
+      "wave": "0",
+      "slot": "3",
+      "heroDid": "1034",
+      "modelId": "1034",
+      "animationName": "skill1",
+      "localScale": "0.7/0.7/0.7",
+      "rootPosition": "0/-2.35/-0.2",
+      "worldBounds": "0.226/-1.438/-0.2|3.371/1.949/0",
+      "screenRect": "249.97/124.21/411.76/217.74",
+      "screenCenterNorm": "0.172326/0.841691",
+      "screenAreaRatio": "0.0072975",
+      "rendererCount": "1",
+      "shaderRebindAppliedCount": "2",
+      "meshHash": "c54ccc3c"
+    },
+    {
+      "frame": "2",
+      "side": "enemy",
+      "wave": "1",
+      "slot": "1",
+      "heroDid": "1100111",
+      "modelId": "3001",
+      "animationName": "attack",
+      "localScale": "0.62/0.62/0.62",
+      "rootPosition": "1.05/2.35/-0.2",
+      "worldBounds": "1.256/2.979/-0.2|1.577/1.112/0",
+      "screenRect": "342.44/356.32/418.11/409.7",
+      "screenCenterNorm": "0.198061/0.645362",
+      "screenAreaRatio": "0.00194832",
+      "rendererCount": "1",
+      "shaderRebindAppliedCount": "1",
+      "meshHash": "6b5df3a6"
+    },
+    {
+      "frame": "3",
+      "side": "our",
+      "wave": "0",
+      "slot": "2",
+      "heroDid": "1002",
+      "modelId": "1002",
+      "animationName": "ult",
+      "localScale": "0.7/0.7/0.7",
+      "rootPosition": "-1.65/-2.35/-0.2",
+      "worldBounds": "-1.353/-1.381/-0.2|1.087/2.016/0",
+      "screenRect": "228.96/125.31/281.12/222.08",
+      "screenCenterNorm": "0.132834/0.839169",
+      "screenAreaRatio": "0.00243422",
+      "rendererCount": "1",
+      "shaderRebindAppliedCount": "1",
+      "meshHash": "7f8f8018"
+    },
+    {
+      "frame": "3",
+      "side": "our",
+      "wave": "0",
+      "slot": "3",
+      "heroDid": "1034",
+      "modelId": "1034",
+      "animationName": "skill1",
+      "localScale": "0.7/0.7/0.7",
+      "rootPosition": "0/-2.35/-0.2",
+      "worldBounds": "0.242/-1.443/-0.2|3.34/1.938/0",
+      "screenRect": "251.45/124.21/411.76/217.24",
+      "screenCenterNorm": "0.172712/0.841924",
+      "screenAreaRatio": "0.00719174",
+      "rendererCount": "1",
+      "shaderRebindAppliedCount": "2",
+      "meshHash": "6639cf1f"
+    },
+    {
+      "frame": "3",
+      "side": "enemy",
+      "wave": "1",
+      "slot": "1",
+      "heroDid": "1100111",
+      "modelId": "3001",
+      "animationName": "attack",
+      "localScale": "0.62/0.62/0.62",
+      "rootPosition": "1.05/2.35/-0.2",
+      "worldBounds": "0.957/2.929/-0.2|1.641/1.132/0",
+      "screenRect": "326.56/353.43/405.32/407.76",
+      "screenCenterNorm": "0.190593/0.6476",
+      "screenAreaRatio": "0.00206356",
+      "rendererCount": "1",
+      "shaderRebindAppliedCount": "1",
+      "meshHash": "6497d0f4"
+    },
+    {
+      "frame": "4",
+      "side": "our",
+      "wave": "0",
+      "slot": "2",
+      "heroDid": "1002",
+      "modelId": "1002",
+      "animationName": "ult",
+      "localScale": "0.7/0.7/0.7",
+      "rootPosition": "-1.65/-2.35/-0.2",
+      "worldBounds": "-1.37/-1.381/-0.2|1.104/2.016/0",
+      "screenRect": "227.75/125.31/280.72/222.1",
+      "screenCenterNorm": "0.132416/0.839161",
+      "screenAreaRatio": "0.00247235",
+      "rendererCount": "1",
+      "shaderRebindAppliedCount": "1",
+      "meshHash": "1498cbe5"
+    },
+    {
+      "frame": "4",
+      "side": "our",
+      "wave": "0",
+      "slot": "3",
+      "heroDid": "1034",
+      "modelId": "1034",
+      "animationName": "skill1",
+      "localScale": "0.7/0.7/0.7",
+      "rootPosition": "0/-2.35/-0.2",
+      "worldBounds": "0.252/-1.457/-0.2|3.319/1.95/0",
+      "screenRect": "252.46/123.29/411.76/216.88",
+      "screenCenterNorm": "0.172974/0.842513",
+      "screenAreaRatio": "0.00719048",
+      "rendererCount": "1",
+      "shaderRebindAppliedCount": "2",
+      "meshHash": "2434cd36"
+    },
+    {
+      "frame": "4",
+      "side": "enemy",
+      "wave": "1",
+      "slot": "1",
+      "heroDid": "1100111",
+      "modelId": "3001",
+      "animationName": "attack",
+      "localScale": "0.62/0.62/0.62",
+      "rootPosition": "1.05/2.35/-0.2",
+      "worldBounds": "0.863/2.857/-0.2|1.674/1.068/0",
+      "screenRect": "321.22/351.52/401.59/402.77",
+      "screenCenterNorm": "0.188233/0.650791",
+      "screenAreaRatio": "0.00198626",
+      "rendererCount": "1",
+      "shaderRebindAppliedCount": "1",
+      "meshHash": "af9632fe"
+    },
+    {
+      "frame": "5",
+      "side": "our",
+      "wave": "0",
+      "slot": "2",
+      "heroDid": "1002",
+      "modelId": "1002",
+      "animationName": "ult",
+      "localScale": "0.7/0.7/0.7",
+      "rootPosition": "-1.65/-2.35/-0.2",
+      "worldBounds": "-1.358/-1.381/-0.2|1.064/2.017/0",
+      "screenRect": "229.27/125.31/280.32/222.11",
+      "screenCenterNorm": "0.132705/0.839155",
+      "screenAreaRatio": "0.00238324",
+      "rendererCount": "1",
+      "shaderRebindAppliedCount": "1",
+      "meshHash": "1359eeb7"
+    },
+    {
+      "frame": "5",
+      "side": "our",
+      "wave": "0",
+      "slot": "3",
+      "heroDid": "1034",
+      "modelId": "1034",
+      "animationName": "skill1",
+      "localScale": "0.7/0.7/0.7",
+      "rootPosition": "0/-2.35/-0.2",
+      "worldBounds": "0.259/-1.466/-0.2|3.306/1.959/0",
+      "screenRect": "253.09/122.63/411.76/216.66",
+      "screenCenterNorm": "0.17314/0.84292",
+      "screenAreaRatio": "0.00719471",
+      "rendererCount": "1",
+      "shaderRebindAppliedCount": "2",
+      "meshHash": "6ec9cfc1"
+    },
+    {
+      "frame": "5",
+      "side": "enemy",
+      "wave": "1",
+      "slot": "1",
+      "heroDid": "1100111",
+      "modelId": "3001",
+      "animationName": "attack",
+      "localScale": "0.62/0.62/0.62",
+      "rootPosition": "1.05/2.35/-0.2",
+      "worldBounds": "1.346/2.745/-0.2|1.613/0.966/0",
+      "screenRect": "345.92/348.56/423.32/394.92",
+      "screenCenterNorm": "0.200324/0.655796",
+      "screenAreaRatio": "0.00173067",
+      "rendererCount": "1",
+      "shaderRebindAppliedCount": "1",
+      "meshHash": "868e98b6"
+    }
+  ],
+  "luaFormationCameraTimingEvidence": [
+    {
+      "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-1524314767214581689_BattleClientMgr_security_xor_raw.lua",
+      "line": 19,
+      "text": "CameraMgr:SetSceneType(CameraMgr.ESceneType.NormalBattle)"
+    },
+    {
+      "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-17427396491214324_BattleAttackTaskMgr_security_xor_raw.lua",
+      "line": 43,
+      "text": "if(ModulesInit.ProcedureNormalBattle.isBattleEnd)then"
+    },
+    {
+      "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-17427396491214324_BattleAttackTaskMgr_security_xor_raw.lua",
+      "line": 65,
+      "text": "if ModulesInit.ProcedureNormalBattle.IsSkillAttackType(EBattleSkillAttackType.None)then"
+    },
+    {
+      "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-17427396491214324_BattleAttackTaskMgr_security_xor_raw.lua",
+      "line": 72,
+      "text": "if(ModulesInit.ProcedureNormalBattle.isBattleEnd)then"
+    },
+    {
+      "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-17427396491214324_BattleAttackTaskMgr_security_xor_raw.lua",
+      "line": 93,
+      "text": "local t=ModulesInit.ProcedureNormalBattle.HeroDic[e.heroId]"
+    },
+    {
+      "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-17427396491214324_BattleAttackTaskMgr_security_xor_raw.lua",
+      "line": 114,
+      "text": "local t=ModulesInit.ProcedureNormalBattle.GetTeamsByTeamId(e.teamId)"
+    },
+    {
+      "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-17427396491214324_BattleAttackTaskMgr_security_xor_raw.lua",
+      "line": 127,
+      "text": "ModulesInit.ProcedureNormalBattle.HandleAttackTaskComplete()"
+    },
+    {
+      "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-17427396491214324_BattleAttackTaskMgr_security_xor_raw.lua",
+      "line": 133,
+      "text": "ModulesInit.ProcedureNormalBattle.RefreshHeroHud()"
+    },
+    {
+      "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-17427396491214324_BattleAttackTaskMgr_security_xor_raw.lua",
+      "line": 136,
+      "text": "if(ModulesInit.ProcedureNormalBattle.CheckBattleEnd())then"
+    },
+    {
+      "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-17427396491214324_BattleAttackTaskMgr_security_xor_raw.lua",
+      "line": 137,
+      "text": "ModulesInit.ProcedureNormalBattle.BattleRoundEndCheckBuff()"
+    },
+    {
+      "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-17427396491214324_BattleAttackTaskMgr_security_xor_raw.lua",
+      "line": 168,
+      "text": "if(ModulesInit.ProcedureNormalBattle.FightPlayData==nil and e==true)then"
+    },
+    {
+      "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-17427396491214324_BattleAttackTaskMgr_security_xor_raw.lua",
+      "line": 169,
+      "text": "FightDataReportMgr:AddBattleAction(t.HeroId,ModulesInit.ProcedureNormalBattle.GetSelectFireHeroId(),1)"
+    },
+    {
+      "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-17427396491214324_BattleAttackTaskMgr_security_xor_raw.lua",
+      "line": 184,
+      "text": "if(not ModulesInit.ProcedureNormalBattle.IsSkipBattle and r)then"
+    },
+    {
+      "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-17427396491214324_BattleAttackTaskMgr_security_xor_raw.lua",
+      "line": 199,
+      "text": "ModulesInit.ProcedureNormalBattle.SetSelectFireHeroWithId(e.fireHeroId)"
+    },
+    {
+      "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-17427396491214324_BattleAttackTaskMgr_security_xor_raw.lua",
+      "line": 231,
+      "text": "if(ModulesInit.ProcedureNormalBattle.FightPlayData==nil and t==true)then"
+    },
+    {
+      "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-17427396491214324_BattleAttackTaskMgr_security_xor_raw.lua",
+      "line": 232,
+      "text": "FightDataReportMgr:AddBattleAction(e.HeroId,ModulesInit.ProcedureNormalBattle.GetSelectFireHeroId(),2)"
+    },
+    {
+      "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-17427396491214324_BattleAttackTaskMgr_security_xor_raw.lua",
+      "line": 255,
+      "text": "ModulesInit.ProcedureNormalBattle.SetSelectFireHeroWithId(e.fireHeroId)"
+    },
+    {
+      "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-17427396491214324_BattleAttackTaskMgr_security_xor_raw.lua",
+      "line": 291,
+      "text": "ModulesInit.ProcedureNormalBattle.SetSelectFireHeroWithId(e.fireHeroId)"
+    },
+    {
+      "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-17427396491214324_BattleAttackTaskMgr_security_xor_raw.lua",
+      "line": 321,
+      "text": "ModulesInit.ProcedureNormalBattle.SetSelectFireHeroWithId(e.fireHeroId)"
+    },
+    {
+      "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+      "line": 32,
+      "text": "HeroCtrl=Class(\"HeroCtrl\",{})"
+    },
+    {
+      "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+      "line": 33,
+      "text": "function HeroCtrl:Create()"
+    },
+    {
+      "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+      "line": 34,
+      "text": "local e=HeroCtrl:New()"
+    },
+    {
+      "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+      "line": 38,
+      "text": "function HeroCtrl:Init()"
+    },
+    {
+      "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+      "line": 43,
+      "text": "function HeroCtrl:ResetData()"
+    },
+    {
+      "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+      "line": 63,
+      "text": "self.CurrBattleTeam=nil"
+    },
+    {
+      "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+      "line": 95,
+      "text": "self.NextBigSkillBeAttackHeroCtrls=nil"
+    },
+    {
+      "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+      "line": 112,
+      "text": "self.NextPetFightSkillBeAttackHeroCtrls=nil"
+    },
+    {
+      "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+      "line": 189,
+      "text": "self.OnCameraCtrlMoveing=nil"
+    },
+    {
+      "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+      "line": 281,
+      "text": "self.isShowHeroCtrl=true"
+    },
+    {
+      "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+      "line": 309,
+      "text": "self.spineboyScale=1"
+    },
+    {
+      "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+      "line": 401,
+      "text": "function HeroCtrl:InitViewWith(a,t,o,e,i,n)"
+    },
+    {
+      "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+      "line": 407,
+      "text": "self.mIsPet=ModulesInit.ProcedureNormalBattle.IsPetByDid(self.heroDid)"
+    },
+    {
+      "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+      "line": 408,
+      "text": "if(ModulesInit.ProcedureNormalBattle.IsSkipBattle==false)then"
+    },
+    {
+      "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+      "line": 411,
+      "text": "if ModulesInit.ProcedureNormalBattle:GetMirrorScaleX()==-1 then"
+    },
+    {
+      "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+      "line": 461,
+      "text": "self.OnCameraCtrlMoveing=function(e)"
+    },
+    {
+      "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+      "line": 462,
+      "text": "CameraMgr:OnCameraMoveing(CameraMgr.ESceneType.NormalBattle)"
+    },
+    {
+      "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+      "line": 463,
+      "text": "self:OnCameraCtrlMoveingCallBack(e)"
+    },
+    {
+      "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+      "line": 466,
+      "text": "function HeroCtrl:Dispose()"
+    },
+    {
+      "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+      "line": 481,
+      "text": "function HeroCtrl:ResetHeroDataWhenNextWave()"
+    },
+    {
+      "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+      "line": 485,
+      "text": "self.NextBigSkillBeAttackHeroCtrl=nil"
+    },
+    {
+      "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+      "line": 495,
+      "text": "function HeroCtrl:GetHeroId()"
+    },
+    {
+      "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+      "line": 498,
+      "text": "function HeroCtrl:GetHeroModelId()"
+    },
+    {
+      "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+      "line": 500,
+      "text": "local e=ModulesInit.ProcedureNormalBattle.GetMonsterCfgData()"
+    },
+    {
+      "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+      "line": 512,
+      "text": "function HeroCtrl:GetHeroRootDid()"
+    },
+    {
+      "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+      "line": 515,
+      "text": "local t=ModulesInit.ProcedureNormalBattle.GetMonsterCfgData()"
+    },
+    {
+      "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+      "line": 534,
+      "text": "function HeroCtrl:IsCampionLeader()"
+    },
+    {
+      "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+      "line": 537,
+      "text": "function HeroCtrl:GetHeroLeaderType()"
+    },
+    {
+      "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+      "line": 540,
+      "text": "function HeroCtrl:ReadHeroLeaderType()"
+    },
+    {
+      "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+      "line": 550,
+      "text": "function HeroCtrl:OnOpen()"
+    },
+    {
+      "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+      "line": 559,
+      "text": "EventSystem.AddListener(CommonEventId.OnCameraCtrlMoveing,self.OnCameraCtrlMoveing)"
+    },
+    {
+      "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+      "line": 567,
+      "text": "local t=ModulesInit.ProcedureNormalBattle.GetMonsterCfgData()"
+    },
+    {
+      "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+      "line": 571,
+      "text": "self.appearBattleBigRound=math.max(1,ModulesInit.ProcedureNormalBattle.CurrBattleBigRound)"
+    },
+    {
+      "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+      "line": 572,
+      "text": "self.mIsFightPet=ModulesInit.ProcedureNormalBattle.IsFightPetByBattleStationIndex(self.battleStationIndex)"
+    },
+    {
+      "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+      "line": 575,
+      "text": "if(ModulesInit.ProcedureNormalBattle.IsBattleTest)then"
+    },
+    {
+      "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+      "line": 605,
+      "text": "local a=ModulesInit.ProcedureNormalBattle.GetMonsterAttrCfgData()"
+    },
+    {
+      "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+      "line": 612,
+      "text": "if ModulesInit.ProcedureNormalBattle.BattleType~=BattleType.idle then"
+    },
+    {
+      "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+      "line": 628,
+      "text": "local e=ModulesInit.ProcedureNormalBattle.GetMonsterAttrCfgData()"
+    },
+    {
+      "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+      "line": 633,
+      "text": "if ModulesInit.ProcedureNormalBattle.BattleType==BattleType.maze then"
+    },
+    {
+      "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+      "line": 634,
+      "text": "local e=ModulesInit.MazeMgr:GetMonsterServerData(ModulesInit.ProcedureNormalBattle.ServerMonsterData.npcArr,self.battleStationIndex+1)"
+    },
+    {
+      "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+      "line": 651,
+      "text": "if(ModulesInit.ProcedureNormalBattle.IsBattleTest==false)then"
+    },
+    {
+      "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+      "line": 652,
+      "text": "FightDataReportMgr:SetEnemyTeamFormationOnCurrWaveWithMonsterList(self.heroDid,self.HeroId,self.battleStationIndex+1)"
+    },
+    {
+      "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+      "line": 673,
+      "text": "if(ModulesInit.ProcedureNormalBattle.IsBattleTest==false)then"
+    },
+    {
+      "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+      "line": 674,
+      "text": "FightDataReportMgr:SetEnemyTeamFormationOnCurrWaveWithMonsterList(self.heroDid,self.HeroId,self.battleStationIndex+1)"
+    },
+    {
+      "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+      "line": 707,
+      "text": "if(ModulesInit.ProcedureNormalBattle.BattleType==BattleType.skillPreview)then"
+    },
+    {
+      "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+      "line": 716,
+      "text": "if(ModulesInit.ProcedureNormalBattle.FightPlayData)then"
+    },
+    {
+      "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+      "line": 719,
+      "text": "local e=HeroMgr:GetHeroServerDataWithHerosData(ModulesInit.ProcedureNormalBattle.FightPlayData.ourPets,self.HeroId)"
+    },
+    {
+      "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+      "line": 721,
+      "text": "i=ModulesInit.ProcedureNormalBattle.FightPlayData.ourPetAttrs"
+    },
+    {
+      "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+      "line": 723,
+      "text": "local e=HeroMgr:GetHeroServerDataWithHerosData(ModulesInit.ProcedureNormalBattle.FightPlayData.ourHeros,self.HeroId)"
+    },
+    {
+      "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+      "line": 725,
+      "text": "o=ModulesInit.ProcedureNormalBattle.FightPlayData.ourPetHeroAttrs"
+    },
+    {
+      "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+      "line": 729,
+      "text": "local e=HeroMgr:GetHeroServerDataWithHerosData(ModulesInit.ProcedureNormalBattle.FightPlay_CurrWave.enemyPets,self.HeroId)"
+    },
+    {
+      "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+      "line": 731,
+      "text": "i=ModulesInit.ProcedureNormalBattle.FightPlay_CurrWave.enemyPetAttrs"
+    },
+    {
+      "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+      "line": 733,
+      "text": "local e=HeroMgr:GetHeroServerDataWithHerosData(ModulesInit.ProcedureNormalBattle.FightPlay_CurrWave.enemyHeros,self.HeroId)"
+    },
+    {
+      "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+      "line": 735,
+      "text": "o=ModulesInit.ProcedureNormalBattle.FightPlay_CurrWave.enemyPetHeroAttrs"
+    },
+    {
+      "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+      "line": 737,
+      "text": "if ModulesInit.ProcedureNormalBattle.BattleType==BattleType.dragonWar then"
+    },
+    {
+      "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+      "line": 750,
+      "text": "if(ModulesInit.ProcedureNormalBattle.FightBeforeData==nil)then"
+    },
+    {
+      "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+      "line": 751,
+      "text": "if(ModulesInit.ProcedureNormalBattle.BattleType==BattleType.maze)then"
+    },
+    {
+      "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+      "line": 754,
+      "text": "elseif(ModulesInit.ProcedureNormalBattle.BattleType==BattleType.guide)then"
+    },
+    {
+      "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+      "line": 757,
+      "text": "elseif(ModulesInit.ProcedureNormalBattle.BattleType==BattleType.skillPreview)then"
+    },
+    {
+      "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+      "line": 783,
+      "text": "local e=HeroMgr:GetHeroServerDataWithHerosData(ModulesInit.ProcedureNormalBattle.FightBeforeData.ourPets,self.HeroId)"
+    },
+    {
+      "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+      "line": 785,
+      "text": "i=ModulesInit.ProcedureNormalBattle.FightBeforeData.ourPetAttrs"
+    },
+    {
+      "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+      "line": 787,
+      "text": "local e=HeroMgr:GetHeroServerDataWithHerosData(ModulesInit.ProcedureNormalBattle.FightBeforeData.ourHeros,self.HeroId)"
+    },
+    {
+      "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+      "line": 789,
+      "text": "o=ModulesInit.ProcedureNormalBattle.FightBeforeData.ourPetHeroAttrs"
+    },
+    {
+      "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+      "line": 797,
+      "text": "local e=HeroMgr:GetHeroServerDataWithHerosData(ModulesInit.ProcedureNormalBattle.FightBefore_CurrWave.enemyPets,self.HeroId)"
+    },
+    {
+      "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+      "line": 799,
+      "text": "i=ModulesInit.ProcedureNormalBattle.FightBefore_CurrWave.enemyPetAttrs"
+    },
+    {
+      "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+      "line": 801,
+      "text": "local e=HeroMgr:GetHeroServerDataWithHerosData(ModulesInit.ProcedureNormalBattle.FightBefore_CurrWave.enemyHeros,self.HeroId)"
+    },
+    {
+      "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+      "line": 803,
+      "text": "o=ModulesInit.ProcedureNormalBattle.FightBefore_CurrWave.enemyPetHeroAttrs"
+    },
+    {
+      "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+      "line": 816,
+      "text": "if(ModulesInit.ProcedureNormalBattle.FightBeforeData==nil"
+    },
+    {
+      "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+      "line": 817,
+      "text": "and ModulesInit.ProcedureNormalBattle.FightPlayData==nil)then"
+    },
+    {
+      "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+      "line": 852,
+      "text": "GameInit.LogError('战斗获取配置heroDid为空:'..tostring(ModulesInit.ProcedureNormalBattle.BattleType..'  '))"
+    },
+    {
+      "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+      "line": 880,
+      "text": "and ModulesInit.ProcedureNormalBattle.BattleType==BattleType.maze"
+    },
+    {
+      "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+      "line": 881,
+      "text": "and ModulesInit.ProcedureNormalBattle.FightPlayData==nil"
+    },
+    {
+      "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+      "line": 882,
+      "text": "and ModulesInit.ProcedureNormalBattle.FightBeforeData==nil)"
+    },
+    {
+      "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+      "line": 900,
+      "text": "elseif(GameInit.IsClient and ModulesInit.ProcedureNormalBattle.BattleType==BattleType.guide)then"
+    },
+    {
+      "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+      "line": 906,
+      "text": "elseif(GameInit.IsClient and ModulesInit.ProcedureNormalBattle.BattleType==BattleType.skillPreview)then"
+    },
+    {
+      "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+      "line": 938,
+      "text": "if(ModulesInit.ProcedureNormalBattle.BattleType==BattleType.skillPreview)then"
+    },
+    {
+      "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+      "line": 945,
+      "text": "if(ModulesInit.ProcedureNormalBattle.FightBeforeData==nil"
+    },
+    {
+      "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+      "line": 946,
+      "text": "and ModulesInit.ProcedureNormalBattle.FightPlayData==nil)then"
+    },
+    {
+      "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+      "line": 955,
+      "text": "if(ModulesInit.ProcedureNormalBattle.FightPlayData==nil and self.IsOurHero and self:IsPet()==false)then"
+    },
+    {
+      "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+      "line": 968,
+      "text": "if(ModulesInit.ProcedureNormalBattle.IsSkipBattle==false)then"
+    },
+    {
+      "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+      "line": 978,
+      "text": "if(ModulesInit.ProcedureNormalBattle.IsSkipBattle==false)then"
+    },
+    {
+      "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+      "line": 990,
+      "text": "local e=ModulesInit.ProcedureNormalBattle.GetPlayerIndexByPlayerId(self.PlayerId)"
+    },
+    {
+      "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+      "line": 996,
+      "text": "if ModulesInit.ProcedureNormalBattle.BattleType==BattleType.campaign and self.IsOurHero==false then"
+    },
+    {
+      "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+      "line": 997,
+      "text": "local e=a:GetKeyDarkType(ModulesInit.EarthMgr:GetCurRunningMapId(),self.heroDid)"
+    },
+    {
+      "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+      "line": 1000,
+      "text": "local e=ModulesInit.ProcedureNormalBattle.IsHeroShowDarkEffect(self.battleStationIndex,self.IsOurHero==false)"
+    },
+    {
+      "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+      "line": 1006,
+      "text": "if(ModulesInit.ProcedureNormalBattle.IsSkipBattle==false)then"
+    },
+    {
+      "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+      "line": 1022,
+      "text": "if ModulesInit.ProcedureNormalBattle.IsSkipBattle==true then"
+    },
+    {
+      "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+      "line": 1034,
+      "text": "function HeroCtrl:OnClose(t)"
+    },
+    {
+      "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+      "line": 1044,
+      "text": "EventSystem.RemoveListener(CommonEventId.OnCameraCtrlMoveing,self.OnCameraCtrlMoveing)"
+    },
+    {
+      "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+      "line": 1054,
+      "text": "and ModulesInit.ProcedureNormalBattle.isBattleEnd==false"
+    },
+    {
+      "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+      "line": 1055,
+      "text": "and ModulesInit.ProcedureNormalBattle.isAlreadyShowBattleEnd==false"
+    },
+    {
+      "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+      "line": 1057,
+      "text": "and ModulesInit.ProcedureNormalBattle.IsSkipBattle==false"
+    },
+    {
+      "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+      "line": 1087,
+      "text": "ModulesInit.ProcedureNormalBattle.AddDeadHero(t)"
+    },
+    {
+      "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+      "line": 1093,
+      "text": "if(self.CurrBattleTeam~=nil)then"
+    },
+    {
+      "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+      "line": 1095,
+      "text": "self.CurrBattleTeam:RemovePetCtrl(self.HeroId)"
+    },
+    {
+      "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+      "line": 1097,
+      "text": "self.CurrBattleTeam:RemoveHeroCtrl(self.HeroId)"
+    },
+    {
+      "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+      "line": 1103,
+      "text": "function HeroCtrl:OnBeforeDestroy()"
+    },
+    {
+      "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+      "line": 1106,
+      "text": "function HeroCtrl:IsSuperArmor()"
+    },
+    {
+      "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+      "line": 1112,
+      "text": "function HeroCtrl:GetHeroModelId()"
+    },
+    {
+      "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+      "line": 1118,
+      "text": "function HeroCtrl:GetDeathEffectScale()"
+    },
+    {
+      "path": "girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_battle\\-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+      "line": 1124,
+      "text": "function HeroCtrl:OnEnemyCenterPosReset()"
+    }
+  ],
+  "blocker": "BATTLE29 HUD/card objects exist in the candidate scene, but final BATTLE39 capture does not show the clip05/BATTLE29 top/bottom/right HUD/card regions; this is a scene-object/camera-render visibility false positive.",
+  "nextBlocker": "BATTLE_40_FIX_BATTLE_HUD_CAMERA_RENDER_BINDING_IN_RUNTIME_CONTEXT",
+  "rootCmdCount": 1,
+  "restoreToolsDirectCmdCount": 0,
+  "outputs": {
+    "report": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_39_ATTACH_RUNTIME_ACTORS_TO_MAP11003_HUD_CONTEXT_WITH_EVIDENCE_RESULT.md",
+    "resultJson": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_39_ATTACH_RUNTIME_ACTORS_TO_MAP11003_HUD_CONTEXT_WITH_EVIDENCE_RESULT.json",
+    "unityDataJson": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_battle_unity\\Assets\\RestoreData\\battle\\BATTLE_39_ATTACH_RUNTIME_ACTORS_TO_MAP11003_HUD_CONTEXT_WITH_EVIDENCE.json",
+    "unityProbeJson": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_battle_unity\\Assets\\RestoreData\\battle\\BATTLE_39_ATTACH_RUNTIME_ACTORS_TO_MAP11003_HUD_CONTEXT_WITH_EVIDENCE_UNITY.json",
+    "actorBoundsCsv": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_battle_unity\\Assets\\RestoreData\\battle\\BATTLE_39_ATTACH_RUNTIME_ACTORS_TO_MAP11003_HUD_CONTEXT_WITH_EVIDENCE_ACTOR_BOUNDS.csv",
+    "comparisonCsv": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_battle_unity\\Assets\\RestoreData\\battle\\BATTLE_39_ATTACH_RUNTIME_ACTORS_TO_MAP11003_HUD_CONTEXT_WITH_EVIDENCE_COMPARISON.csv",
+    "capture": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_battle_unity\\Assets\\RestoreCaptures\\battle_actor\\Battle39RuntimeActorsMap11003HudContext_1920x1080.png",
+    "contactSheet": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_39_ATTACH_RUNTIME_ACTORS_TO_MAP11003_HUD_CONTEXT_WITH_EVIDENCE_CONTACT_SHEET.jpg",
+    "videoSequence": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_39_PLAY_VIDEO_CLIP05_485_487_SEQUENCE.jpg",
+    "unityLog": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_39_ATTACH_RUNTIME_ACTORS_TO_MAP11003_HUD_CONTEXT_WITH_EVIDENCE.log"
+  },
+  "notes": [
+    "Final capture has no debug/path/evidence labels from BATTLE39.",
+    "Contact sheet contains analysis labels only.",
+    "BATTLE29 map/HUD/card context is evidence-bearing, but BATTLE29 card positions remain inferred and BATTLE39 actor placement is not original runtime verified.",
+    "No coordinate-only visual success claim is made."
+  ]
+}

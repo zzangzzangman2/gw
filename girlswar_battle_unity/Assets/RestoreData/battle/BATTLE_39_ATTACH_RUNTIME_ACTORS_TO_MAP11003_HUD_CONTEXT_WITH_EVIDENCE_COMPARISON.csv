@@ -1,0 +1,10 @@
+metric,value,note
+actor_center_gap_norm,0.499238,video union vs BATTLE39 runtime-context union
+actor_area_ratio_runtime_to_reference,0.042839,scale/layout gap
+runtime_has_battle_map,True,BATTLE29 context scene
+runtime_has_battle_hud,True,BATTLE29 context scene
+runtime_has_hero_cards,True,BATTLE29 bound cards
+camera_visible_battle_hud,False,"BATTLE29 HUD/card reference-region similarity, not object presence"
+mesh_hash_changed_actor_count,3,runtime motion evidence
+magenta_pixel_ratio,0.025204,shader/material visual blocker
+placement_original_runtime_verified,False,must be true for final pass

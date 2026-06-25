@@ -17,8 +17,8 @@ Current quick actions in `00_COMMAND_CENTER.cmd`:
 - git status and push helper
 
 Current latest validation targets:
-- MainInterface: `_restore_tools\cmd_archive\118_BIND_ROUTE_SKELETONGRAPHIC_UI_MATERIAL_SHADER_PASS_FROM_ORIGINAL_FIELDS.cmd`
-- Battle: `_restore_tools\cmd_archive\BATTLE_38_MATCH_ACTOR_SCALE_CAMERA_TIMING_AND_BATTLE_SCENE_CONTEXT_TO_CLIP05.cmd`
+- MainInterface: `_restore_tools\cmd_archive\119_VALIDATE_ROUTE_SKELETONGRAPHIC_MESH_BOUNDS_CANVASRENDERER_SUBMESH_MATERIAL.cmd`
+- Battle: `_restore_tools\cmd_archive\BATTLE_39_ATTACH_RUNTIME_ACTORS_TO_MAP11003_HUD_CONTEXT_WITH_EVIDENCE.cmd`
 
 Home handoff:
 - `reports\NEXT_RESTORE_HANDOFF.md`

@@ -1129,3 +1129,74 @@
   - video sequence: `reports\battle\BATTLE_38_PLAY_VIDEO_CLIP05_485_487_SEQUENCE.jpg`
 - Next battle blocker:
   - `BATTLE_39_ATTACH_RUNTIME_ACTORS_TO_MAP11003_HUD_CONTEXT_WITH_EVIDENCE`
+
+## Update 2026-06-25 23:03 KST
+
+### Home Handoff
+
+- Stable handoff document updated:
+  - `reports\NEXT_RESTORE_HANDOFF.md`
+- Dedicated home resume note added:
+  - `reports\HOME_RESUME_AFTER_UI119_BATTLE39_20260625_2303.md`
+- Latest current wrappers now point at:
+  - MainInterface: `_restore_tools\cmd_archive\119_VALIDATE_ROUTE_SKELETONGRAPHIC_MESH_BOUNDS_CANVASRENDERER_SUBMESH_MATERIAL.cmd`
+  - Battle: `_restore_tools\cmd_archive\BATTLE_39_ATTACH_RUNTIME_ACTORS_TO_MAP11003_HUD_CONTEXT_WITH_EVIDENCE.cmd`
+- Root command policy is preserved:
+  - root CMD count: `1`
+  - only root launcher: `00_COMMAND_CENTER.cmd`
+  - `_restore_tools` direct `.cmd` count: `0`
+
+### UI MAININTERFACE_119 Result
+
+- Visual verdict: MainInterface is still not a normal/restored UI.
+- UI119 was trace-only and applied no visual fix.
+- The remaining large white route diamond/panel was narrowed to original `Spine_shijieanniu` drawOrder attachment candidates:
+  - `zhuye_di1`
+  - `zhuye_bian`
+  - `diqiu`
+- Important interpretation:
+  - `zhuye_di1` likely belongs to the original route frame geometry.
+  - It must not be hidden or removed without original runtime mask/stencil/attachment visibility evidence.
+- Key values:
+  - visual fixes applied: `0`
+  - targets considered/traced: `2 / 2`
+  - drawOrder attachment rows: `46`
+  - high-white atlas regions: `0`
+  - large route shape candidates: `3`
+  - `Spine_shijieanniu` mesh: `63` vertices, bounds `0,0,0 / 253,253,0`
+  - `8007` mesh: `737` vertices, bounds `-14.039,79.9131,0 / 144.8493,162.6354,0`
+  - click validation: `2026-06-25 22:55:08`, `24 / 24 / 0 / 24`
+- Outputs:
+  - report: `reports\maininterface\MAININTERFACE_119_VALIDATE_ROUTE_SKELETONGRAPHIC_MESH_BOUNDS_CANVASRENDERER_SUBMESH_MATERIAL_RESULT.md`
+  - tool: `_restore_tools\cmd_archive\119_VALIDATE_ROUTE_SKELETONGRAPHIC_MESH_BOUNDS_CANVASRENDERER_SUBMESH_MATERIAL.cmd`
+  - JSON: `girlswar_maininterface_unity\Assets\RestoreData\maininterface_119_route_skeletongraphic_mesh_bounds_canvasrenderer_submesh_material.json`
+  - CSV: `girlswar_maininterface_unity\Assets\RestoreData\reports\maininterface_119_route_skeletongraphic_mesh_bounds_canvasrenderer_submesh_material.csv`
+- Next UI blocker:
+  - `MAININTERFACE_120_TRACE_ROUTE_SKELETONGRAPHIC_ORIGINAL_RUNTIME_MASK_STENCIL_ATTACHMENT_VISIBILITY`
+
+### Battle BATTLE_39 Result
+
+- Visual verdict: original clip05 actor motion/layout/timing + map/HUD context is still not reproduced.
+- BATTLE39 attached runtime actors to the BATTLE29 `map_11003` scene context, but the HUD/card context is not camera-visible like the clip05/BATTLE29 reference.
+- The report now separates object existence from visible HUD:
+  - map/HUD/cards object present: `True / True / True`
+  - camera-visible HUD/cards: `False`
+- Actor placement is still candidate-only and not original runtime verified.
+- Key values:
+  - visual status: `failed_hud_context_not_camera_visible_in_candidate_capture`
+  - reference video used: `True`, 485.0-487.0s, frames `6`
+  - reference/runtime actor boxes: `181 / 18`
+  - actor center gap norm: `0.499238`
+  - runtime/reference actor area ratio: `0.042839`
+  - mesh hash changed actors: `3 / 3`
+  - AnimationState SetAnimation success: `3 / 3`
+  - magenta pixel ratio: `0.025204`
+- Outputs:
+  - report: `reports\battle\BATTLE_39_ATTACH_RUNTIME_ACTORS_TO_MAP11003_HUD_CONTEXT_WITH_EVIDENCE_RESULT.md`
+  - JSON: `reports\battle\BATTLE_39_ATTACH_RUNTIME_ACTORS_TO_MAP11003_HUD_CONTEXT_WITH_EVIDENCE_RESULT.json`
+  - tool: `_restore_tools\cmd_archive\BATTLE_39_ATTACH_RUNTIME_ACTORS_TO_MAP11003_HUD_CONTEXT_WITH_EVIDENCE.cmd`
+  - scene: `girlswar_battle_unity\Assets\Scenes\Battle39RuntimeActorsMap11003HudContextCandidate.unity`
+  - capture: `girlswar_battle_unity\Assets\RestoreCaptures\battle_actor\Battle39RuntimeActorsMap11003HudContext_1920x1080.png`
+  - contact sheet: `reports\battle\BATTLE_39_ATTACH_RUNTIME_ACTORS_TO_MAP11003_HUD_CONTEXT_WITH_EVIDENCE_CONTACT_SHEET.jpg`
+- Next battle blocker:
+  - `BATTLE_40_FIX_BATTLE_HUD_CAMERA_RENDER_BINDING_IN_RUNTIME_CONTEXT`
