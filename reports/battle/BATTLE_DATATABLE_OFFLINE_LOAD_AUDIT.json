@@ -1,0 +1,3020 @@
+{
+  "name": "BATTLE_DATATABLE_OFFLINE_LOAD_AUDIT",
+  "generatedBy": "_restore_tools/scripts/audit_battle_datatable_offline_load.py",
+  "generatedAtUtc": "2026-06-26T16:25:45.513282+00:00",
+  "entry": "ProcedureNormalBattle",
+  "workspace": "C:\\Users\\godho\\Downloads\\girlswar",
+  "closure": {
+    "resolvedCount": 330,
+    "missingCount": 0,
+    "missing": []
+  },
+  "pass": true,
+  "recommendedHarnessFlags": {
+    "GameInit.ServerLoadTable": false,
+    "GameTools.ClientIsSupportIOLoad": false,
+    "reason": "False selects embedded decoded EntityTableData self-population; true selects .bigd IO files."
+  },
+  "dbModels": [
+    {
+      "module": "DTActivityDoubleDBModel",
+      "resolved": true,
+      "path": "girlswar_merged_extracted/decoded/xlua_all/datanode/datatable/create/activity/-6900315882027151337_DTActivityDoubleDBModel_security_xor_raw.lua",
+      "requirePaths": [
+        "DataNode/DataTable/Create/activity/DTActivityDoubleDBModel"
+      ],
+      "classification": "self_populates_when_client_io_disabled",
+      "recommendation": "Use GameInit.ServerLoadTable=false and GameTools.ClientIsSupportIOLoad()=false. That keeps GetList/GetEntity on InitRequire(), which loads embedded EntityTableData. Returning true switches to .bigd IO files; ServerLoadTable=true expects a JSON cache via GameInit.ReadJsonData.",
+      "usesServerLoadTable": true,
+      "usesClientIsSupportIOLoad": true,
+      "hasInitRequire": true,
+      "hasInitIO": true,
+      "hasGetListByIO": true,
+      "readJsonFiles": [
+        "DTActivityDoubleEntityData.txt"
+      ],
+      "writeJsonFiles": [
+        "DTActivityDoubleEntityData.txt"
+      ],
+      "ioFiles": [
+        "/Download/IO/activity/DTActivityDoubleEntityTableData.bigd",
+        "/Download/IO/activity/DTActivityDoubleEntityTableDataHeader.bigd",
+        "/download/config/activity/DTActivityDoubleEntityTableData.bigd",
+        "/download/config/activity/DTActivityDoubleEntityTableDataHeader.bigd"
+      ],
+      "entityRequires": [
+        "DataNode/DataTable/Create/activity/DTActivityDoubleEntity"
+      ]
+    },
+    {
+      "module": "DTActivityMonthLoginBoxDBModel",
+      "resolved": true,
+      "path": "girlswar_merged_extracted/decoded/xlua_all/datanode/datatable/create/activity/-111755728402246798_DTActivityMonthLoginBoxDBModel_security_xor_raw.lua",
+      "requirePaths": [
+        "DataNode/DataTable/Create/activity/DTActivityMonthLoginBoxDBModel"
+      ],
+      "classification": "self_populates_when_client_io_disabled",
+      "recommendation": "Use GameInit.ServerLoadTable=false and GameTools.ClientIsSupportIOLoad()=false. That keeps GetList/GetEntity on InitRequire(), which loads embedded EntityTableData. Returning true switches to .bigd IO files; ServerLoadTable=true expects a JSON cache via GameInit.ReadJsonData.",
+      "usesServerLoadTable": true,
+      "usesClientIsSupportIOLoad": true,
+      "hasInitRequire": true,
+      "hasInitIO": true,
+      "hasGetListByIO": true,
+      "readJsonFiles": [
+        "DTActivityMonthLoginBoxEntityData.txt"
+      ],
+      "writeJsonFiles": [
+        "DTActivityMonthLoginBoxEntityData.txt"
+      ],
+      "ioFiles": [
+        "/Download/IO/activity/DTActivityMonthLoginBoxEntityTableData.bigd",
+        "/Download/IO/activity/DTActivityMonthLoginBoxEntityTableDataHeader.bigd",
+        "/download/config/activity/DTActivityMonthLoginBoxEntityTableData.bigd",
+        "/download/config/activity/DTActivityMonthLoginBoxEntityTableDataHeader.bigd"
+      ],
+      "entityRequires": [
+        "DataNode/DataTable/Create/activity/DTActivityMonthLoginBoxEntity"
+      ]
+    },
+    {
+      "module": "DTActivityMonthLoginSpecDBModel",
+      "resolved": true,
+      "path": "girlswar_merged_extracted/decoded/xlua_all/datanode/datatable/create/activity/4900219206012614793_DTActivityMonthLoginSpecDBModel_security_xor_raw.lua",
+      "requirePaths": [
+        "DataNode/DataTable/Create/activity/DTActivityMonthLoginSpecDBModel"
+      ],
+      "classification": "self_populates_when_client_io_disabled",
+      "recommendation": "Use GameInit.ServerLoadTable=false and GameTools.ClientIsSupportIOLoad()=false. That keeps GetList/GetEntity on InitRequire(), which loads embedded EntityTableData. Returning true switches to .bigd IO files; ServerLoadTable=true expects a JSON cache via GameInit.ReadJsonData.",
+      "usesServerLoadTable": true,
+      "usesClientIsSupportIOLoad": true,
+      "hasInitRequire": true,
+      "hasInitIO": true,
+      "hasGetListByIO": true,
+      "readJsonFiles": [
+        "DTActivityMonthLoginSpecEntityData.txt"
+      ],
+      "writeJsonFiles": [
+        "DTActivityMonthLoginSpecEntityData.txt"
+      ],
+      "ioFiles": [
+        "/Download/IO/activity/DTActivityMonthLoginSpecEntityTableData.bigd",
+        "/Download/IO/activity/DTActivityMonthLoginSpecEntityTableDataHeader.bigd",
+        "/download/config/activity/DTActivityMonthLoginSpecEntityTableData.bigd",
+        "/download/config/activity/DTActivityMonthLoginSpecEntityTableDataHeader.bigd"
+      ],
+      "entityRequires": [
+        "DataNode/DataTable/Create/activity/DTActivityMonthLoginSpecEntity"
+      ]
+    },
+    {
+      "module": "DTActivityPoolDBModel",
+      "resolved": true,
+      "path": "girlswar_merged_extracted/decoded/xlua_all/datanode/datatable/create/activity/3202283503671511347_DTActivityPoolDBModel_security_xor_raw.lua",
+      "requirePaths": [
+        "DataNode/DataTable/Create/activity/DTActivityPoolDBModel"
+      ],
+      "classification": "self_populates_when_client_io_disabled",
+      "recommendation": "Use GameInit.ServerLoadTable=false and GameTools.ClientIsSupportIOLoad()=false. That keeps GetList/GetEntity on InitRequire(), which loads embedded EntityTableData. Returning true switches to .bigd IO files; ServerLoadTable=true expects a JSON cache via GameInit.ReadJsonData.",
+      "usesServerLoadTable": true,
+      "usesClientIsSupportIOLoad": true,
+      "hasInitRequire": true,
+      "hasInitIO": true,
+      "hasGetListByIO": true,
+      "readJsonFiles": [
+        "DTActivityPoolEntityData.txt"
+      ],
+      "writeJsonFiles": [
+        "DTActivityPoolEntityData.txt"
+      ],
+      "ioFiles": [
+        "/Download/IO/activity/DTActivityPoolEntityTableData.bigd",
+        "/Download/IO/activity/DTActivityPoolEntityTableDataHeader.bigd",
+        "/download/config/activity/DTActivityPoolEntityTableData.bigd",
+        "/download/config/activity/DTActivityPoolEntityTableDataHeader.bigd"
+      ],
+      "entityRequires": [
+        "DataNode/DataTable/Create/activity/DTActivityPoolEntity"
+      ]
+    },
+    {
+      "module": "DTActivityTotalRecharge2DBModel",
+      "resolved": true,
+      "path": "girlswar_merged_extracted/decoded/xlua_all/datanode/datatable/create/activity/-4520547791145258611_DTActivityTotalRecharge2DBModel_security_xor_raw.lua",
+      "requirePaths": [
+        "DataNode/DataTable/Create/activity/DTActivityTotalRecharge2DBModel"
+      ],
+      "classification": "self_populates_when_client_io_disabled",
+      "recommendation": "Use GameInit.ServerLoadTable=false and GameTools.ClientIsSupportIOLoad()=false. That keeps GetList/GetEntity on InitRequire(), which loads embedded EntityTableData. Returning true switches to .bigd IO files; ServerLoadTable=true expects a JSON cache via GameInit.ReadJsonData.",
+      "usesServerLoadTable": true,
+      "usesClientIsSupportIOLoad": true,
+      "hasInitRequire": true,
+      "hasInitIO": true,
+      "hasGetListByIO": true,
+      "readJsonFiles": [
+        "DTActivityTotalRecharge2EntityData.txt"
+      ],
+      "writeJsonFiles": [
+        "DTActivityTotalRecharge2EntityData.txt"
+      ],
+      "ioFiles": [
+        "/Download/IO/activity/DTActivityTotalRecharge2EntityTableData.bigd",
+        "/Download/IO/activity/DTActivityTotalRecharge2EntityTableDataHeader.bigd",
+        "/download/config/activity/DTActivityTotalRecharge2EntityTableData.bigd",
+        "/download/config/activity/DTActivityTotalRecharge2EntityTableDataHeader.bigd"
+      ],
+      "entityRequires": [
+        "DataNode/DataTable/Create/activity/DTActivityTotalRecharge2Entity"
+      ]
+    },
+    {
+      "module": "DTActivityTotalRechargeDBModel",
+      "resolved": true,
+      "path": "girlswar_merged_extracted/decoded/xlua_all/datanode/datatable/create/activity/-8532921844249312307_DTActivityTotalRechargeDBModel_security_xor_raw.lua",
+      "requirePaths": [
+        "DataNode/DataTable/Create/activity/DTActivityTotalRechargeDBModel"
+      ],
+      "classification": "self_populates_when_client_io_disabled",
+      "recommendation": "Use GameInit.ServerLoadTable=false and GameTools.ClientIsSupportIOLoad()=false. That keeps GetList/GetEntity on InitRequire(), which loads embedded EntityTableData. Returning true switches to .bigd IO files; ServerLoadTable=true expects a JSON cache via GameInit.ReadJsonData.",
+      "usesServerLoadTable": true,
+      "usesClientIsSupportIOLoad": true,
+      "hasInitRequire": true,
+      "hasInitIO": true,
+      "hasGetListByIO": true,
+      "readJsonFiles": [
+        "DTActivityTotalRechargeEntityData.txt"
+      ],
+      "writeJsonFiles": [
+        "DTActivityTotalRechargeEntityData.txt"
+      ],
+      "ioFiles": [
+        "/Download/IO/activity/DTActivityTotalRechargeEntityTableData.bigd",
+        "/Download/IO/activity/DTActivityTotalRechargeEntityTableDataHeader.bigd",
+        "/download/config/activity/DTActivityTotalRechargeEntityTableData.bigd",
+        "/download/config/activity/DTActivityTotalRechargeEntityTableDataHeader.bigd"
+      ],
+      "entityRequires": [
+        "DataNode/DataTable/Create/activity/DTActivityTotalRechargeEntity"
+      ]
+    },
+    {
+      "module": "DTArenaAwardsDBModel",
+      "resolved": true,
+      "path": "girlswar_merged_extracted/decoded/xlua_all/datanode/datatable/create/arena/5749226088623986070_DTArenaAwardsDBModel_security_xor_raw.lua",
+      "requirePaths": [
+        "DataNode/DataTable/Create/arena/DTArenaAwardsDBModel"
+      ],
+      "classification": "self_populates_when_client_io_disabled",
+      "recommendation": "Use GameInit.ServerLoadTable=false and GameTools.ClientIsSupportIOLoad()=false. That keeps GetList/GetEntity on InitRequire(), which loads embedded EntityTableData. Returning true switches to .bigd IO files; ServerLoadTable=true expects a JSON cache via GameInit.ReadJsonData.",
+      "usesServerLoadTable": true,
+      "usesClientIsSupportIOLoad": true,
+      "hasInitRequire": true,
+      "hasInitIO": true,
+      "hasGetListByIO": true,
+      "readJsonFiles": [
+        "DTArenaAwardsEntityData.txt"
+      ],
+      "writeJsonFiles": [
+        "DTArenaAwardsEntityData.txt"
+      ],
+      "ioFiles": [
+        "/Download/IO/arena/DTArenaAwardsEntityTableData.bigd",
+        "/Download/IO/arena/DTArenaAwardsEntityTableDataHeader.bigd",
+        "/download/config/arena/DTArenaAwardsEntityTableData.bigd",
+        "/download/config/arena/DTArenaAwardsEntityTableDataHeader.bigd"
+      ],
+      "entityRequires": [
+        "DataNode/DataTable/Create/arena/DTArenaAwardsEntity"
+      ]
+    },
+    {
+      "module": "DTArenaRobotsDBModel",
+      "resolved": true,
+      "path": "girlswar_merged_extracted/decoded/xlua_all/datanode/datatable/create/arena/1422152694783512426_DTArenaRobotsDBModel_security_xor_raw.lua",
+      "requirePaths": [
+        "DataNode/DataTable/Create/arena/DTArenaRobotsDBModel"
+      ],
+      "classification": "self_populates_when_client_io_disabled",
+      "recommendation": "Use GameInit.ServerLoadTable=false and GameTools.ClientIsSupportIOLoad()=false. That keeps GetList/GetEntity on InitRequire(), which loads embedded EntityTableData. Returning true switches to .bigd IO files; ServerLoadTable=true expects a JSON cache via GameInit.ReadJsonData.",
+      "usesServerLoadTable": true,
+      "usesClientIsSupportIOLoad": true,
+      "hasInitRequire": true,
+      "hasInitIO": true,
+      "hasGetListByIO": true,
+      "readJsonFiles": [
+        "DTArenaRobotsEntityData.txt"
+      ],
+      "writeJsonFiles": [
+        "DTArenaRobotsEntityData.txt"
+      ],
+      "ioFiles": [
+        "/Download/IO/arena/DTArenaRobotsEntityTableData.bigd",
+        "/Download/IO/arena/DTArenaRobotsEntityTableDataHeader.bigd",
+        "/download/config/arena/DTArenaRobotsEntityTableData.bigd",
+        "/download/config/arena/DTArenaRobotsEntityTableDataHeader.bigd"
+      ],
+      "entityRequires": [
+        "DataNode/DataTable/Create/arena/DTArenaRobotsEntity"
+      ]
+    },
+    {
+      "module": "DTBattleAttrDBModel",
+      "resolved": true,
+      "path": "girlswar_merged_extracted/decoded/xlua_all/datanode/datatable/create/constant/-1406674634840239990_DTBattleAttrDBModel_security_xor_raw.lua",
+      "requirePaths": [
+        "DataNode/DataTable/Create/constant/DTBattleAttrDBModel"
+      ],
+      "classification": "self_populates_when_client_io_disabled",
+      "recommendation": "Use GameInit.ServerLoadTable=false and GameTools.ClientIsSupportIOLoad()=false. That keeps GetList/GetEntity on InitRequire(), which loads embedded EntityTableData. Returning true switches to .bigd IO files; ServerLoadTable=true expects a JSON cache via GameInit.ReadJsonData.",
+      "usesServerLoadTable": true,
+      "usesClientIsSupportIOLoad": true,
+      "hasInitRequire": true,
+      "hasInitIO": true,
+      "hasGetListByIO": true,
+      "readJsonFiles": [
+        "DTBattleAttrEntityData.txt"
+      ],
+      "writeJsonFiles": [
+        "DTBattleAttrEntityData.txt"
+      ],
+      "ioFiles": [
+        "/Download/IO/constant/DTBattleAttrEntityTableData.bigd",
+        "/Download/IO/constant/DTBattleAttrEntityTableDataHeader.bigd",
+        "/download/config/constant/DTBattleAttrEntityTableData.bigd",
+        "/download/config/constant/DTBattleAttrEntityTableDataHeader.bigd"
+      ],
+      "entityRequires": [
+        "DataNode/DataTable/Create/constant/DTBattleAttrEntity"
+      ]
+    },
+    {
+      "module": "DTBattleDBModel",
+      "resolved": true,
+      "path": "girlswar_merged_extracted/decoded/xlua_all/datanode/datatable/create/constant/772107561332103917_DTBattleDBModel_security_xor_raw.lua",
+      "requirePaths": [
+        "DataNode/DataTable/Create/constant/DTBattleDBModel"
+      ],
+      "classification": "self_populates_when_client_io_disabled",
+      "recommendation": "Use GameInit.ServerLoadTable=false and GameTools.ClientIsSupportIOLoad()=false. That keeps GetList/GetEntity on InitRequire(), which loads embedded EntityTableData. Returning true switches to .bigd IO files; ServerLoadTable=true expects a JSON cache via GameInit.ReadJsonData.",
+      "usesServerLoadTable": true,
+      "usesClientIsSupportIOLoad": true,
+      "hasInitRequire": true,
+      "hasInitIO": true,
+      "hasGetListByIO": true,
+      "readJsonFiles": [
+        "DTBattleEntityData.txt"
+      ],
+      "writeJsonFiles": [
+        "DTBattleEntityData.txt"
+      ],
+      "ioFiles": [
+        "/Download/IO/constant/DTBattleEntityTableData.bigd",
+        "/Download/IO/constant/DTBattleEntityTableDataHeader.bigd",
+        "/download/config/constant/DTBattleEntityTableData.bigd",
+        "/download/config/constant/DTBattleEntityTableDataHeader.bigd"
+      ],
+      "entityRequires": [
+        "DataNode/DataTable/Create/constant/DTBattleEntity"
+      ]
+    },
+    {
+      "module": "DTBuffDBModel",
+      "resolved": true,
+      "path": "girlswar_merged_extracted/decoded/xlua_all/datanode/datatable/create/skillact/67276056342143004_DTBuffDBModel_security_xor_raw.lua",
+      "requirePaths": [
+        "DataNode/DataTable/Create/skillAct/DTBuffDBModel"
+      ],
+      "classification": "self_populates_when_client_io_disabled",
+      "recommendation": "Use GameInit.ServerLoadTable=false and GameTools.ClientIsSupportIOLoad()=false. That keeps GetList/GetEntity on InitRequire(), which loads embedded EntityTableData. Returning true switches to .bigd IO files; ServerLoadTable=true expects a JSON cache via GameInit.ReadJsonData.",
+      "usesServerLoadTable": true,
+      "usesClientIsSupportIOLoad": true,
+      "hasInitRequire": true,
+      "hasInitIO": true,
+      "hasGetListByIO": true,
+      "readJsonFiles": [
+        "DTBuffEntityData.txt"
+      ],
+      "writeJsonFiles": [
+        "DTBuffEntityData.txt"
+      ],
+      "ioFiles": [
+        "/Download/IO/skillact/DTBuffEntityTableData.bigd",
+        "/Download/IO/skillact/DTBuffEntityTableDataHeader.bigd",
+        "/download/config/skillact/DTBuffEntityTableData.bigd",
+        "/download/config/skillact/DTBuffEntityTableDataHeader.bigd"
+      ],
+      "entityRequires": [
+        "DataNode/DataTable/Create/skillAct/DTBuffEntity"
+      ]
+    },
+    {
+      "module": "DTBuyTimesDBModel",
+      "resolved": true,
+      "path": "girlswar_merged_extracted/decoded/xlua_all/datanode/datatable/create/constant/-3607057923553195324_DTBuyTimesDBModel_security_xor_raw.lua",
+      "requirePaths": [
+        "DataNode/DataTable/Create/constant/DTBuyTimesDBModel"
+      ],
+      "classification": "self_populates_when_client_io_disabled",
+      "recommendation": "Use GameInit.ServerLoadTable=false and GameTools.ClientIsSupportIOLoad()=false. That keeps GetList/GetEntity on InitRequire(), which loads embedded EntityTableData. Returning true switches to .bigd IO files; ServerLoadTable=true expects a JSON cache via GameInit.ReadJsonData.",
+      "usesServerLoadTable": true,
+      "usesClientIsSupportIOLoad": true,
+      "hasInitRequire": true,
+      "hasInitIO": true,
+      "hasGetListByIO": true,
+      "readJsonFiles": [
+        "DTBuyTimesEntityData.txt"
+      ],
+      "writeJsonFiles": [
+        "DTBuyTimesEntityData.txt"
+      ],
+      "ioFiles": [
+        "/Download/IO/constant/DTBuyTimesEntityTableData.bigd",
+        "/Download/IO/constant/DTBuyTimesEntityTableDataHeader.bigd",
+        "/download/config/constant/DTBuyTimesEntityTableData.bigd",
+        "/download/config/constant/DTBuyTimesEntityTableDataHeader.bigd"
+      ],
+      "entityRequires": [
+        "DataNode/DataTable/Create/constant/DTBuyTimesEntity"
+      ]
+    },
+    {
+      "module": "DTCarnivalMapDBModel",
+      "resolved": true,
+      "path": "girlswar_merged_extracted/decoded/xlua_all/datanode/datatable/create/activity/9158876178117977876_DTCarnivalMapDBModel_security_xor_raw.lua",
+      "requirePaths": [
+        "DataNode/DataTable/Create/activity/DTCarnivalMapDBModel"
+      ],
+      "classification": "self_populates_when_client_io_disabled",
+      "recommendation": "Use GameInit.ServerLoadTable=false and GameTools.ClientIsSupportIOLoad()=false. That keeps GetList/GetEntity on InitRequire(), which loads embedded EntityTableData. Returning true switches to .bigd IO files; ServerLoadTable=true expects a JSON cache via GameInit.ReadJsonData.",
+      "usesServerLoadTable": true,
+      "usesClientIsSupportIOLoad": true,
+      "hasInitRequire": true,
+      "hasInitIO": true,
+      "hasGetListByIO": true,
+      "readJsonFiles": [
+        "DTCarnivalMapEntityData.txt"
+      ],
+      "writeJsonFiles": [
+        "DTCarnivalMapEntityData.txt"
+      ],
+      "ioFiles": [
+        "/Download/IO/activity/DTCarnivalMapEntityTableData.bigd",
+        "/Download/IO/activity/DTCarnivalMapEntityTableDataHeader.bigd",
+        "/download/config/activity/DTCarnivalMapEntityTableData.bigd",
+        "/download/config/activity/DTCarnivalMapEntityTableDataHeader.bigd"
+      ],
+      "entityRequires": [
+        "DataNode/DataTable/Create/activity/DTCarnivalMapEntity"
+      ]
+    },
+    {
+      "module": "DTCarnivalMapWaveDBModel",
+      "resolved": true,
+      "path": "girlswar_merged_extracted/decoded/xlua_all/datanode/datatable/create/activity/-1967188424353917859_DTCarnivalMapWaveDBModel_security_xor_raw.lua",
+      "requirePaths": [
+        "DataNode/DataTable/Create/activity/DTCarnivalMapWaveDBModel"
+      ],
+      "classification": "self_populates_when_client_io_disabled",
+      "recommendation": "Use GameInit.ServerLoadTable=false and GameTools.ClientIsSupportIOLoad()=false. That keeps GetList/GetEntity on InitRequire(), which loads embedded EntityTableData. Returning true switches to .bigd IO files; ServerLoadTable=true expects a JSON cache via GameInit.ReadJsonData.",
+      "usesServerLoadTable": true,
+      "usesClientIsSupportIOLoad": true,
+      "hasInitRequire": true,
+      "hasInitIO": true,
+      "hasGetListByIO": true,
+      "readJsonFiles": [
+        "DTCarnivalMapWaveEntityData.txt"
+      ],
+      "writeJsonFiles": [
+        "DTCarnivalMapWaveEntityData.txt"
+      ],
+      "ioFiles": [
+        "/Download/IO/activity/DTCarnivalMapWaveEntityTableData.bigd",
+        "/Download/IO/activity/DTCarnivalMapWaveEntityTableDataHeader.bigd",
+        "/download/config/activity/DTCarnivalMapWaveEntityTableData.bigd",
+        "/download/config/activity/DTCarnivalMapWaveEntityTableDataHeader.bigd"
+      ],
+      "entityRequires": [
+        "DataNode/DataTable/Create/activity/DTCarnivalMapWaveEntity"
+      ]
+    },
+    {
+      "module": "DTChargeDBModel",
+      "resolved": true,
+      "path": "girlswar_merged_extracted/decoded/xlua_all/datanode/datatable/create/charge/-8099654728174943419_DTChargeDBModel_security_xor_raw.lua",
+      "requirePaths": [
+        "DataNode/DataTable/Create/charge/DTChargeDBModel"
+      ],
+      "classification": "self_populates_when_client_io_disabled",
+      "recommendation": "Use GameInit.ServerLoadTable=false and GameTools.ClientIsSupportIOLoad()=false. That keeps GetList/GetEntity on InitRequire(), which loads embedded EntityTableData. Returning true switches to .bigd IO files; ServerLoadTable=true expects a JSON cache via GameInit.ReadJsonData.",
+      "usesServerLoadTable": true,
+      "usesClientIsSupportIOLoad": true,
+      "hasInitRequire": true,
+      "hasInitIO": true,
+      "hasGetListByIO": true,
+      "readJsonFiles": [
+        "DTChargeEntityData.txt"
+      ],
+      "writeJsonFiles": [
+        "DTChargeEntityData.txt"
+      ],
+      "ioFiles": [
+        "/Download/IO/charge/DTChargeEntityTableData.bigd",
+        "/Download/IO/charge/DTChargeEntityTableDataHeader.bigd",
+        "/download/config/charge/DTChargeEntityTableData.bigd",
+        "/download/config/charge/DTChargeEntityTableDataHeader.bigd"
+      ],
+      "entityRequires": [
+        "DataNode/DataTable/Create/charge/DTChargeEntity"
+      ]
+    },
+    {
+      "module": "DTCityBuildingDBModel",
+      "resolved": true,
+      "path": "girlswar_merged_extracted/decoded/xlua_all/datanode/datatable/create/city/-3699164350361994494_DTCityBuildingDBModel_security_xor_raw.lua",
+      "requirePaths": [
+        "DataNode/DataTable/Create/city/DTCityBuildingDBModel"
+      ],
+      "classification": "self_populates_when_client_io_disabled",
+      "recommendation": "Use GameInit.ServerLoadTable=false and GameTools.ClientIsSupportIOLoad()=false. That keeps GetList/GetEntity on InitRequire(), which loads embedded EntityTableData. Returning true switches to .bigd IO files; ServerLoadTable=true expects a JSON cache via GameInit.ReadJsonData.",
+      "usesServerLoadTable": true,
+      "usesClientIsSupportIOLoad": true,
+      "hasInitRequire": true,
+      "hasInitIO": true,
+      "hasGetListByIO": true,
+      "readJsonFiles": [
+        "DTCityBuildingEntityData.txt"
+      ],
+      "writeJsonFiles": [
+        "DTCityBuildingEntityData.txt"
+      ],
+      "ioFiles": [
+        "/Download/IO/city/DTCityBuildingEntityTableData.bigd",
+        "/Download/IO/city/DTCityBuildingEntityTableDataHeader.bigd",
+        "/download/config/city/DTCityBuildingEntityTableData.bigd",
+        "/download/config/city/DTCityBuildingEntityTableDataHeader.bigd"
+      ],
+      "entityRequires": [
+        "DataNode/DataTable/Create/city/DTCityBuildingEntity"
+      ]
+    },
+    {
+      "module": "DTConstantDBModel",
+      "resolved": true,
+      "path": "girlswar_merged_extracted/decoded/xlua_all/datanode/datatable/create/constant/3760428282774012323_DTConstantDBModel_security_xor_raw.lua",
+      "requirePaths": [
+        "DataNode/DataTable/Create/constant/DTConstantDBModel"
+      ],
+      "classification": "self_populates_when_client_io_disabled",
+      "recommendation": "Use GameInit.ServerLoadTable=false and GameTools.ClientIsSupportIOLoad()=false. That keeps GetList/GetEntity on InitRequire(), which loads embedded EntityTableData. Returning true switches to .bigd IO files; ServerLoadTable=true expects a JSON cache via GameInit.ReadJsonData.",
+      "usesServerLoadTable": true,
+      "usesClientIsSupportIOLoad": true,
+      "hasInitRequire": true,
+      "hasInitIO": true,
+      "hasGetListByIO": true,
+      "readJsonFiles": [
+        "DTConstantEntityData.txt"
+      ],
+      "writeJsonFiles": [
+        "DTConstantEntityData.txt"
+      ],
+      "ioFiles": [
+        "/Download/IO/constant/DTConstantEntityTableData.bigd",
+        "/Download/IO/constant/DTConstantEntityTableDataHeader.bigd",
+        "/download/config/constant/DTConstantEntityTableData.bigd",
+        "/download/config/constant/DTConstantEntityTableDataHeader.bigd"
+      ],
+      "entityRequires": [
+        "DataNode/DataTable/Create/constant/DTConstantEntity"
+      ]
+    },
+    {
+      "module": "DTCookDBModel",
+      "resolved": true,
+      "path": "girlswar_merged_extracted/decoded/xlua_all/datanode/datatable/create/activity/-4047937963955509504_DTCookDBModel_security_xor_raw.lua",
+      "requirePaths": [
+        "DataNode/DataTable/Create/activity/DTCookDBModel"
+      ],
+      "classification": "self_populates_when_client_io_disabled",
+      "recommendation": "Use GameInit.ServerLoadTable=false and GameTools.ClientIsSupportIOLoad()=false. That keeps GetList/GetEntity on InitRequire(), which loads embedded EntityTableData. Returning true switches to .bigd IO files; ServerLoadTable=true expects a JSON cache via GameInit.ReadJsonData.",
+      "usesServerLoadTable": true,
+      "usesClientIsSupportIOLoad": true,
+      "hasInitRequire": true,
+      "hasInitIO": true,
+      "hasGetListByIO": true,
+      "readJsonFiles": [
+        "DTCookEntityData.txt"
+      ],
+      "writeJsonFiles": [
+        "DTCookEntityData.txt"
+      ],
+      "ioFiles": [
+        "/Download/IO/activity/DTCookEntityTableData.bigd",
+        "/Download/IO/activity/DTCookEntityTableDataHeader.bigd",
+        "/download/config/activity/DTCookEntityTableData.bigd",
+        "/download/config/activity/DTCookEntityTableDataHeader.bigd"
+      ],
+      "entityRequires": [
+        "DataNode/DataTable/Create/activity/DTCookEntity"
+      ]
+    },
+    {
+      "module": "DTEliteMapsDBModel",
+      "resolved": true,
+      "path": "girlswar_merged_extracted/decoded/xlua_all/datanode/datatable/create/maps/7118352979936642426_DTEliteMapsDBModel_security_xor_raw.lua",
+      "requirePaths": [
+        "DataNode/DataTable/Create/maps/DTEliteMapsDBModel"
+      ],
+      "classification": "self_populates_when_client_io_disabled",
+      "recommendation": "Use GameInit.ServerLoadTable=false and GameTools.ClientIsSupportIOLoad()=false. That keeps GetList/GetEntity on InitRequire(), which loads embedded EntityTableData. Returning true switches to .bigd IO files; ServerLoadTable=true expects a JSON cache via GameInit.ReadJsonData.",
+      "usesServerLoadTable": true,
+      "usesClientIsSupportIOLoad": true,
+      "hasInitRequire": true,
+      "hasInitIO": true,
+      "hasGetListByIO": true,
+      "readJsonFiles": [
+        "DTEliteMapsEntityData.txt"
+      ],
+      "writeJsonFiles": [
+        "DTEliteMapsEntityData.txt"
+      ],
+      "ioFiles": [
+        "/Download/IO/maps/DTEliteMapsEntityTableData.bigd",
+        "/Download/IO/maps/DTEliteMapsEntityTableDataHeader.bigd",
+        "/download/config/maps/DTEliteMapsEntityTableData.bigd",
+        "/download/config/maps/DTEliteMapsEntityTableDataHeader.bigd"
+      ],
+      "entityRequires": [
+        "DataNode/DataTable/Create/maps/DTEliteMapsEntity"
+      ]
+    },
+    {
+      "module": "DTEliteMapsWaveDBModel",
+      "resolved": true,
+      "path": "girlswar_merged_extracted/decoded/xlua_all/datanode/datatable/create/maps/627406110482223635_DTEliteMapsWaveDBModel_security_xor_raw.lua",
+      "requirePaths": [
+        "DataNode/DataTable/Create/maps/DTEliteMapsWaveDBModel"
+      ],
+      "classification": "self_populates_when_client_io_disabled",
+      "recommendation": "Use GameInit.ServerLoadTable=false and GameTools.ClientIsSupportIOLoad()=false. That keeps GetList/GetEntity on InitRequire(), which loads embedded EntityTableData. Returning true switches to .bigd IO files; ServerLoadTable=true expects a JSON cache via GameInit.ReadJsonData.",
+      "usesServerLoadTable": true,
+      "usesClientIsSupportIOLoad": true,
+      "hasInitRequire": true,
+      "hasInitIO": true,
+      "hasGetListByIO": true,
+      "readJsonFiles": [
+        "DTEliteMapsWaveEntityData.txt"
+      ],
+      "writeJsonFiles": [
+        "DTEliteMapsWaveEntityData.txt"
+      ],
+      "ioFiles": [
+        "/Download/IO/maps/DTEliteMapsWaveEntityTableData.bigd",
+        "/Download/IO/maps/DTEliteMapsWaveEntityTableDataHeader.bigd",
+        "/download/config/maps/DTEliteMapsWaveEntityTableData.bigd",
+        "/download/config/maps/DTEliteMapsWaveEntityTableDataHeader.bigd"
+      ],
+      "entityRequires": [
+        "DataNode/DataTable/Create/maps/DTEliteMapsWaveEntity"
+      ]
+    },
+    {
+      "module": "DTEquipDBModel",
+      "resolved": true,
+      "path": "girlswar_merged_extracted/decoded/xlua_all/datanode/datatable/create/equip/5773257436169014848_DTEquipDBModel_security_xor_raw.lua",
+      "requirePaths": [
+        "DataNode/DataTable/Create/equip/DTEquipDBModel"
+      ],
+      "classification": "self_populates_when_client_io_disabled",
+      "recommendation": "Use GameInit.ServerLoadTable=false and GameTools.ClientIsSupportIOLoad()=false. That keeps GetList/GetEntity on InitRequire(), which loads embedded EntityTableData. Returning true switches to .bigd IO files; ServerLoadTable=true expects a JSON cache via GameInit.ReadJsonData.",
+      "usesServerLoadTable": true,
+      "usesClientIsSupportIOLoad": true,
+      "hasInitRequire": true,
+      "hasInitIO": true,
+      "hasGetListByIO": true,
+      "readJsonFiles": [
+        "DTEquipEntityData.txt"
+      ],
+      "writeJsonFiles": [
+        "DTEquipEntityData.txt"
+      ],
+      "ioFiles": [
+        "/Download/IO/equip/DTEquipEntityTableData.bigd",
+        "/Download/IO/equip/DTEquipEntityTableDataHeader.bigd",
+        "/download/config/equip/DTEquipEntityTableData.bigd",
+        "/download/config/equip/DTEquipEntityTableDataHeader.bigd"
+      ],
+      "entityRequires": [
+        "DataNode/DataTable/Create/equip/DTEquipEntity"
+      ]
+    },
+    {
+      "module": "DTEquipStrengDBModel",
+      "resolved": true,
+      "path": "girlswar_merged_extracted/decoded/xlua_all/datanode/datatable/create/equip/-4545485621840553296_DTEquipStrengDBModel_security_xor_raw.lua",
+      "requirePaths": [
+        "DataNode/DataTable/Create/equip/DTEquipStrengDBModel"
+      ],
+      "classification": "self_populates_when_client_io_disabled",
+      "recommendation": "Use GameInit.ServerLoadTable=false and GameTools.ClientIsSupportIOLoad()=false. That keeps GetList/GetEntity on InitRequire(), which loads embedded EntityTableData. Returning true switches to .bigd IO files; ServerLoadTable=true expects a JSON cache via GameInit.ReadJsonData.",
+      "usesServerLoadTable": true,
+      "usesClientIsSupportIOLoad": true,
+      "hasInitRequire": true,
+      "hasInitIO": true,
+      "hasGetListByIO": true,
+      "readJsonFiles": [
+        "DTEquipStrengEntityData.txt"
+      ],
+      "writeJsonFiles": [
+        "DTEquipStrengEntityData.txt"
+      ],
+      "ioFiles": [
+        "/Download/IO/equip/DTEquipStrengEntityTableData.bigd",
+        "/Download/IO/equip/DTEquipStrengEntityTableDataHeader.bigd",
+        "/download/config/equip/DTEquipStrengEntityTableData.bigd",
+        "/download/config/equip/DTEquipStrengEntityTableDataHeader.bigd"
+      ],
+      "entityRequires": [
+        "DataNode/DataTable/Create/equip/DTEquipStrengEntity"
+      ]
+    },
+    {
+      "module": "DTExchangeGoldDBModel",
+      "resolved": true,
+      "path": "girlswar_merged_extracted/decoded/xlua_all/datanode/datatable/create/shop/-5125046837710076545_DTExchangeGoldDBModel_security_xor_raw.lua",
+      "requirePaths": [
+        "DataNode/DataTable/Create/shop/DTExchangeGoldDBModel"
+      ],
+      "classification": "self_populates_when_client_io_disabled",
+      "recommendation": "Use GameInit.ServerLoadTable=false and GameTools.ClientIsSupportIOLoad()=false. That keeps GetList/GetEntity on InitRequire(), which loads embedded EntityTableData. Returning true switches to .bigd IO files; ServerLoadTable=true expects a JSON cache via GameInit.ReadJsonData.",
+      "usesServerLoadTable": true,
+      "usesClientIsSupportIOLoad": true,
+      "hasInitRequire": true,
+      "hasInitIO": true,
+      "hasGetListByIO": true,
+      "readJsonFiles": [
+        "DTExchangeGoldEntityData.txt"
+      ],
+      "writeJsonFiles": [
+        "DTExchangeGoldEntityData.txt"
+      ],
+      "ioFiles": [
+        "/Download/IO/shop/DTExchangeGoldEntityTableData.bigd",
+        "/Download/IO/shop/DTExchangeGoldEntityTableDataHeader.bigd",
+        "/download/config/shop/DTExchangeGoldEntityTableData.bigd",
+        "/download/config/shop/DTExchangeGoldEntityTableDataHeader.bigd"
+      ],
+      "entityRequires": [
+        "DataNode/DataTable/Create/shop/DTExchangeGoldEntity"
+      ]
+    },
+    {
+      "module": "DTExchangeGoldRateDBModel",
+      "resolved": true,
+      "path": "girlswar_merged_extracted/decoded/xlua_all/datanode/datatable/create/shop/-253315580699149864_DTExchangeGoldRateDBModel_security_xor_raw.lua",
+      "requirePaths": [
+        "DataNode/DataTable/Create/shop/DTExchangeGoldRateDBModel"
+      ],
+      "classification": "self_populates_when_client_io_disabled",
+      "recommendation": "Use GameInit.ServerLoadTable=false and GameTools.ClientIsSupportIOLoad()=false. That keeps GetList/GetEntity on InitRequire(), which loads embedded EntityTableData. Returning true switches to .bigd IO files; ServerLoadTable=true expects a JSON cache via GameInit.ReadJsonData.",
+      "usesServerLoadTable": true,
+      "usesClientIsSupportIOLoad": true,
+      "hasInitRequire": true,
+      "hasInitIO": true,
+      "hasGetListByIO": true,
+      "readJsonFiles": [
+        "DTExchangeGoldRateEntityData.txt"
+      ],
+      "writeJsonFiles": [
+        "DTExchangeGoldRateEntityData.txt"
+      ],
+      "ioFiles": [
+        "/Download/IO/shop/DTExchangeGoldRateEntityTableData.bigd",
+        "/Download/IO/shop/DTExchangeGoldRateEntityTableDataHeader.bigd",
+        "/download/config/shop/DTExchangeGoldRateEntityTableData.bigd",
+        "/download/config/shop/DTExchangeGoldRateEntityTableDataHeader.bigd"
+      ],
+      "entityRequires": [
+        "DataNode/DataTable/Create/shop/DTExchangeGoldRateEntity"
+      ]
+    },
+    {
+      "module": "DTFightSuppressDBModel",
+      "resolved": true,
+      "path": "girlswar_merged_extracted/decoded/xlua_all/datanode/datatable/create/maps/-7038501192969750483_DTFightSuppressDBModel_security_xor_raw.lua",
+      "requirePaths": [
+        "DataNode/DataTable/Create/maps/DTFightSuppressDBModel"
+      ],
+      "classification": "self_populates_when_client_io_disabled",
+      "recommendation": "Use GameInit.ServerLoadTable=false and GameTools.ClientIsSupportIOLoad()=false. That keeps GetList/GetEntity on InitRequire(), which loads embedded EntityTableData. Returning true switches to .bigd IO files; ServerLoadTable=true expects a JSON cache via GameInit.ReadJsonData.",
+      "usesServerLoadTable": true,
+      "usesClientIsSupportIOLoad": true,
+      "hasInitRequire": true,
+      "hasInitIO": true,
+      "hasGetListByIO": true,
+      "readJsonFiles": [
+        "DTFightSuppressEntityData.txt"
+      ],
+      "writeJsonFiles": [
+        "DTFightSuppressEntityData.txt"
+      ],
+      "ioFiles": [
+        "/Download/IO/maps/DTFightSuppressEntityTableData.bigd",
+        "/Download/IO/maps/DTFightSuppressEntityTableDataHeader.bigd",
+        "/download/config/maps/DTFightSuppressEntityTableData.bigd",
+        "/download/config/maps/DTFightSuppressEntityTableDataHeader.bigd"
+      ],
+      "entityRequires": [
+        "DataNode/DataTable/Create/maps/DTFightSuppressEntity"
+      ]
+    },
+    {
+      "module": "DTGoldHolidayMapDBModel",
+      "resolved": true,
+      "path": "girlswar_merged_extracted/decoded/xlua_all/datanode/datatable/create/activity/-5983154539991536826_DTGoldHolidayMapDBModel_security_xor_raw.lua",
+      "requirePaths": [
+        "DataNode/DataTable/Create/activity/DTGoldHolidayMapDBModel"
+      ],
+      "classification": "self_populates_when_client_io_disabled",
+      "recommendation": "Use GameInit.ServerLoadTable=false and GameTools.ClientIsSupportIOLoad()=false. That keeps GetList/GetEntity on InitRequire(), which loads embedded EntityTableData. Returning true switches to .bigd IO files; ServerLoadTable=true expects a JSON cache via GameInit.ReadJsonData.",
+      "usesServerLoadTable": true,
+      "usesClientIsSupportIOLoad": true,
+      "hasInitRequire": true,
+      "hasInitIO": true,
+      "hasGetListByIO": true,
+      "readJsonFiles": [
+        "DTGoldHolidayMapEntityData.txt"
+      ],
+      "writeJsonFiles": [
+        "DTGoldHolidayMapEntityData.txt"
+      ],
+      "ioFiles": [
+        "/Download/IO/activity/DTGoldHolidayMapEntityTableData.bigd",
+        "/Download/IO/activity/DTGoldHolidayMapEntityTableDataHeader.bigd",
+        "/download/config/activity/DTGoldHolidayMapEntityTableData.bigd",
+        "/download/config/activity/DTGoldHolidayMapEntityTableDataHeader.bigd"
+      ],
+      "entityRequires": [
+        "DataNode/DataTable/Create/activity/DTGoldHolidayMapEntity"
+      ]
+    },
+    {
+      "module": "DTGoldHolidaylMapWaveDBModel",
+      "resolved": true,
+      "path": "girlswar_merged_extracted/decoded/xlua_all/datanode/datatable/create/activity/7650031023898246934_DTGoldHolidaylMapWaveDBModel_security_xor_raw.lua",
+      "requirePaths": [
+        "DataNode/DataTable/Create/activity/DTGoldHolidaylMapWaveDBModel"
+      ],
+      "classification": "self_populates_when_client_io_disabled",
+      "recommendation": "Use GameInit.ServerLoadTable=false and GameTools.ClientIsSupportIOLoad()=false. That keeps GetList/GetEntity on InitRequire(), which loads embedded EntityTableData. Returning true switches to .bigd IO files; ServerLoadTable=true expects a JSON cache via GameInit.ReadJsonData.",
+      "usesServerLoadTable": true,
+      "usesClientIsSupportIOLoad": true,
+      "hasInitRequire": true,
+      "hasInitIO": true,
+      "hasGetListByIO": true,
+      "readJsonFiles": [
+        "DTGoldHolidaylMapWaveEntityData.txt"
+      ],
+      "writeJsonFiles": [
+        "DTGoldHolidaylMapWaveEntityData.txt"
+      ],
+      "ioFiles": [
+        "/Download/IO/activity/DTGoldHolidaylMapWaveEntityTableData.bigd",
+        "/Download/IO/activity/DTGoldHolidaylMapWaveEntityTableDataHeader.bigd",
+        "/download/config/activity/DTGoldHolidaylMapWaveEntityTableData.bigd",
+        "/download/config/activity/DTGoldHolidaylMapWaveEntityTableDataHeader.bigd"
+      ],
+      "entityRequires": [
+        "DataNode/DataTable/Create/activity/DTGoldHolidaylMapWaveEntity"
+      ]
+    },
+    {
+      "module": "DTGrowFundDBModel",
+      "resolved": true,
+      "path": "girlswar_merged_extracted/decoded/xlua_all/datanode/datatable/create/activity/-2933567961565840336_DTGrowFundDBModel_security_xor_raw.lua",
+      "requirePaths": [
+        "DataNode/DataTable/Create/activity/DTGrowFundDBModel"
+      ],
+      "classification": "self_populates_when_client_io_disabled",
+      "recommendation": "Use GameInit.ServerLoadTable=false and GameTools.ClientIsSupportIOLoad()=false. That keeps GetList/GetEntity on InitRequire(), which loads embedded EntityTableData. Returning true switches to .bigd IO files; ServerLoadTable=true expects a JSON cache via GameInit.ReadJsonData.",
+      "usesServerLoadTable": true,
+      "usesClientIsSupportIOLoad": true,
+      "hasInitRequire": true,
+      "hasInitIO": true,
+      "hasGetListByIO": true,
+      "readJsonFiles": [
+        "DTGrowFundEntityData.txt"
+      ],
+      "writeJsonFiles": [
+        "DTGrowFundEntityData.txt"
+      ],
+      "ioFiles": [
+        "/Download/IO/activity/DTGrowFundEntityTableData.bigd",
+        "/Download/IO/activity/DTGrowFundEntityTableDataHeader.bigd",
+        "/download/config/activity/DTGrowFundEntityTableData.bigd",
+        "/download/config/activity/DTGrowFundEntityTableDataHeader.bigd"
+      ],
+      "entityRequires": [
+        "DataNode/DataTable/Create/activity/DTGrowFundEntity"
+      ]
+    },
+    {
+      "module": "DTGrowFundNew2DBModel",
+      "resolved": true,
+      "path": "girlswar_merged_extracted/decoded/xlua_all/datanode/datatable/create/activity/4879778264880349835_DTGrowFundNew2DBModel_security_xor_raw.lua",
+      "requirePaths": [
+        "DataNode/DataTable/Create/activity/DTGrowFundNew2DBModel"
+      ],
+      "classification": "self_populates_when_client_io_disabled",
+      "recommendation": "Use GameInit.ServerLoadTable=false and GameTools.ClientIsSupportIOLoad()=false. That keeps GetList/GetEntity on InitRequire(), which loads embedded EntityTableData. Returning true switches to .bigd IO files; ServerLoadTable=true expects a JSON cache via GameInit.ReadJsonData.",
+      "usesServerLoadTable": true,
+      "usesClientIsSupportIOLoad": true,
+      "hasInitRequire": true,
+      "hasInitIO": true,
+      "hasGetListByIO": true,
+      "readJsonFiles": [
+        "DTGrowFundNew2EntityData.txt"
+      ],
+      "writeJsonFiles": [
+        "DTGrowFundNew2EntityData.txt"
+      ],
+      "ioFiles": [
+        "/Download/IO/activity/DTGrowFundNew2EntityTableData.bigd",
+        "/Download/IO/activity/DTGrowFundNew2EntityTableDataHeader.bigd",
+        "/download/config/activity/DTGrowFundNew2EntityTableData.bigd",
+        "/download/config/activity/DTGrowFundNew2EntityTableDataHeader.bigd"
+      ],
+      "entityRequires": [
+        "DataNode/DataTable/Create/activity/DTGrowFundNew2Entity"
+      ]
+    },
+    {
+      "module": "DTGrowFundNewDBModel",
+      "resolved": true,
+      "path": "girlswar_merged_extracted/decoded/xlua_all/datanode/datatable/create/activity/-8742037287901701715_DTGrowFundNewDBModel_security_xor_raw.lua",
+      "requirePaths": [
+        "DataNode/DataTable/Create/activity/DTGrowFundNewDBModel"
+      ],
+      "classification": "self_populates_when_client_io_disabled",
+      "recommendation": "Use GameInit.ServerLoadTable=false and GameTools.ClientIsSupportIOLoad()=false. That keeps GetList/GetEntity on InitRequire(), which loads embedded EntityTableData. Returning true switches to .bigd IO files; ServerLoadTable=true expects a JSON cache via GameInit.ReadJsonData.",
+      "usesServerLoadTable": true,
+      "usesClientIsSupportIOLoad": true,
+      "hasInitRequire": true,
+      "hasInitIO": true,
+      "hasGetListByIO": true,
+      "readJsonFiles": [
+        "DTGrowFundNewEntityData.txt"
+      ],
+      "writeJsonFiles": [
+        "DTGrowFundNewEntityData.txt"
+      ],
+      "ioFiles": [
+        "/Download/IO/activity/DTGrowFundNewEntityTableData.bigd",
+        "/Download/IO/activity/DTGrowFundNewEntityTableDataHeader.bigd",
+        "/download/config/activity/DTGrowFundNewEntityTableData.bigd",
+        "/download/config/activity/DTGrowFundNewEntityTableDataHeader.bigd"
+      ],
+      "entityRequires": [
+        "DataNode/DataTable/Create/activity/DTGrowFundNewEntity"
+      ]
+    },
+    {
+      "module": "DTGuildBossGuildDBModel",
+      "resolved": true,
+      "path": "girlswar_merged_extracted/decoded/xlua_all/datanode/datatable/create/activity/-2549188171285701144_DTGuildBossGuildDBModel_security_xor_raw.lua",
+      "requirePaths": [
+        "DataNode/DataTable/Create/activity/DTGuildBossGuildDBModel"
+      ],
+      "classification": "self_populates_when_client_io_disabled",
+      "recommendation": "Use GameInit.ServerLoadTable=false and GameTools.ClientIsSupportIOLoad()=false. That keeps GetList/GetEntity on InitRequire(), which loads embedded EntityTableData. Returning true switches to .bigd IO files; ServerLoadTable=true expects a JSON cache via GameInit.ReadJsonData.",
+      "usesServerLoadTable": true,
+      "usesClientIsSupportIOLoad": true,
+      "hasInitRequire": true,
+      "hasInitIO": true,
+      "hasGetListByIO": true,
+      "readJsonFiles": [
+        "DTGuildBossGuildEntityData.txt"
+      ],
+      "writeJsonFiles": [
+        "DTGuildBossGuildEntityData.txt"
+      ],
+      "ioFiles": [
+        "/Download/IO/activity/DTGuildBossGuildEntityTableData.bigd",
+        "/Download/IO/activity/DTGuildBossGuildEntityTableDataHeader.bigd",
+        "/download/config/activity/DTGuildBossGuildEntityTableData.bigd",
+        "/download/config/activity/DTGuildBossGuildEntityTableDataHeader.bigd"
+      ],
+      "entityRequires": [
+        "DataNode/DataTable/Create/activity/DTGuildBossGuildEntity"
+      ]
+    },
+    {
+      "module": "DTGuildBossPersonalDBModel",
+      "resolved": true,
+      "path": "girlswar_merged_extracted/decoded/xlua_all/datanode/datatable/create/activity/-1851884018654224135_DTGuildBossPersonalDBModel_security_xor_raw.lua",
+      "requirePaths": [
+        "DataNode/DataTable/Create/activity/DTGuildBossPersonalDBModel"
+      ],
+      "classification": "self_populates_when_client_io_disabled",
+      "recommendation": "Use GameInit.ServerLoadTable=false and GameTools.ClientIsSupportIOLoad()=false. That keeps GetList/GetEntity on InitRequire(), which loads embedded EntityTableData. Returning true switches to .bigd IO files; ServerLoadTable=true expects a JSON cache via GameInit.ReadJsonData.",
+      "usesServerLoadTable": true,
+      "usesClientIsSupportIOLoad": true,
+      "hasInitRequire": true,
+      "hasInitIO": true,
+      "hasGetListByIO": true,
+      "readJsonFiles": [
+        "DTGuildBossPersonalEntityData.txt"
+      ],
+      "writeJsonFiles": [
+        "DTGuildBossPersonalEntityData.txt"
+      ],
+      "ioFiles": [
+        "/Download/IO/activity/DTGuildBossPersonalEntityTableData.bigd",
+        "/Download/IO/activity/DTGuildBossPersonalEntityTableDataHeader.bigd",
+        "/download/config/activity/DTGuildBossPersonalEntityTableData.bigd",
+        "/download/config/activity/DTGuildBossPersonalEntityTableDataHeader.bigd"
+      ],
+      "entityRequires": [
+        "DataNode/DataTable/Create/activity/DTGuildBossPersonalEntity"
+      ]
+    },
+    {
+      "module": "DTGuildCrusadeBanditDBModel",
+      "resolved": true,
+      "path": "girlswar_merged_extracted/decoded/xlua_all/datanode/datatable/create/guild/-7482007268102335805_DTGuildCrusadeBanditDBModel_security_xor_raw.lua",
+      "requirePaths": [
+        "DataNode/DataTable/Create/guild/DTGuildCrusadeBanditDBModel"
+      ],
+      "classification": "self_populates_when_client_io_disabled",
+      "recommendation": "Use GameInit.ServerLoadTable=false and GameTools.ClientIsSupportIOLoad()=false. That keeps GetList/GetEntity on InitRequire(), which loads embedded EntityTableData. Returning true switches to .bigd IO files; ServerLoadTable=true expects a JSON cache via GameInit.ReadJsonData.",
+      "usesServerLoadTable": true,
+      "usesClientIsSupportIOLoad": true,
+      "hasInitRequire": true,
+      "hasInitIO": true,
+      "hasGetListByIO": true,
+      "readJsonFiles": [
+        "DTGuildCrusadeBanditEntityData.txt"
+      ],
+      "writeJsonFiles": [
+        "DTGuildCrusadeBanditEntityData.txt"
+      ],
+      "ioFiles": [
+        "/Download/IO/guild/DTGuildCrusadeBanditEntityTableData.bigd",
+        "/Download/IO/guild/DTGuildCrusadeBanditEntityTableDataHeader.bigd",
+        "/download/config/guild/DTGuildCrusadeBanditEntityTableData.bigd",
+        "/download/config/guild/DTGuildCrusadeBanditEntityTableDataHeader.bigd"
+      ],
+      "entityRequires": [
+        "DataNode/DataTable/Create/guild/DTGuildCrusadeBanditEntity"
+      ]
+    },
+    {
+      "module": "DTHeroDBModel",
+      "resolved": true,
+      "path": "girlswar_merged_extracted/decoded/xlua_all/datanode/datatable/create/hero/388509723359881016_DTHeroDBModel_security_xor_raw.lua",
+      "requirePaths": [
+        "DataNode/DataTable/Create/hero/DTHeroDBModel"
+      ],
+      "classification": "self_populates_when_client_io_disabled",
+      "recommendation": "Use GameInit.ServerLoadTable=false and GameTools.ClientIsSupportIOLoad()=false. That keeps GetList/GetEntity on InitRequire(), which loads embedded EntityTableData. Returning true switches to .bigd IO files; ServerLoadTable=true expects a JSON cache via GameInit.ReadJsonData.",
+      "usesServerLoadTable": true,
+      "usesClientIsSupportIOLoad": true,
+      "hasInitRequire": true,
+      "hasInitIO": true,
+      "hasGetListByIO": true,
+      "readJsonFiles": [
+        "DTHeroEntityData.txt"
+      ],
+      "writeJsonFiles": [
+        "DTHeroEntityData.txt"
+      ],
+      "ioFiles": [
+        "/Download/IO/hero/DTHeroEntityTableData.bigd",
+        "/Download/IO/hero/DTHeroEntityTableDataHeader.bigd",
+        "/download/config/hero/DTHeroEntityTableData.bigd",
+        "/download/config/hero/DTHeroEntityTableDataHeader.bigd"
+      ],
+      "entityRequires": [
+        "DataNode/DataTable/Create/hero/DTHeroEntity"
+      ]
+    },
+    {
+      "module": "DTHeroLockBreakDBModel",
+      "resolved": true,
+      "path": "girlswar_merged_extracted/decoded/xlua_all/datanode/datatable/create/hero/-3535206712368243468_DTHeroLockBreakDBModel_security_xor_raw.lua",
+      "requirePaths": [
+        "DataNode/DataTable/Create/hero/DTHeroLockBreakDBModel"
+      ],
+      "classification": "self_populates_when_client_io_disabled",
+      "recommendation": "Use GameInit.ServerLoadTable=false and GameTools.ClientIsSupportIOLoad()=false. That keeps GetList/GetEntity on InitRequire(), which loads embedded EntityTableData. Returning true switches to .bigd IO files; ServerLoadTable=true expects a JSON cache via GameInit.ReadJsonData.",
+      "usesServerLoadTable": true,
+      "usesClientIsSupportIOLoad": true,
+      "hasInitRequire": true,
+      "hasInitIO": true,
+      "hasGetListByIO": true,
+      "readJsonFiles": [
+        "DTHeroLockBreakEntityData.txt"
+      ],
+      "writeJsonFiles": [
+        "DTHeroLockBreakEntityData.txt"
+      ],
+      "ioFiles": [
+        "/Download/IO/hero/DTHeroLockBreakEntityTableData.bigd",
+        "/Download/IO/hero/DTHeroLockBreakEntityTableDataHeader.bigd",
+        "/download/config/hero/DTHeroLockBreakEntityTableData.bigd",
+        "/download/config/hero/DTHeroLockBreakEntityTableDataHeader.bigd"
+      ],
+      "entityRequires": [
+        "DataNode/DataTable/Create/hero/DTHeroLockBreakEntity"
+      ]
+    },
+    {
+      "module": "DTItemComposeDBModel",
+      "resolved": true,
+      "path": "girlswar_merged_extracted/decoded/xlua_all/datanode/datatable/create/item/2601068105481734488_DTItemComposeDBModel_security_xor_raw.lua",
+      "requirePaths": [
+        "DataNode/DataTable/Create/item/DTItemComposeDBModel"
+      ],
+      "classification": "self_populates_when_client_io_disabled",
+      "recommendation": "Use GameInit.ServerLoadTable=false and GameTools.ClientIsSupportIOLoad()=false. That keeps GetList/GetEntity on InitRequire(), which loads embedded EntityTableData. Returning true switches to .bigd IO files; ServerLoadTable=true expects a JSON cache via GameInit.ReadJsonData.",
+      "usesServerLoadTable": true,
+      "usesClientIsSupportIOLoad": true,
+      "hasInitRequire": true,
+      "hasInitIO": true,
+      "hasGetListByIO": true,
+      "readJsonFiles": [
+        "DTItemComposeEntityData.txt"
+      ],
+      "writeJsonFiles": [
+        "DTItemComposeEntityData.txt"
+      ],
+      "ioFiles": [
+        "/Download/IO/item/DTItemComposeEntityTableData.bigd",
+        "/Download/IO/item/DTItemComposeEntityTableDataHeader.bigd",
+        "/download/config/item/DTItemComposeEntityTableData.bigd",
+        "/download/config/item/DTItemComposeEntityTableDataHeader.bigd"
+      ],
+      "entityRequires": [
+        "DataNode/DataTable/Create/item/DTItemComposeEntity"
+      ]
+    },
+    {
+      "module": "DTItemDBModel",
+      "resolved": true,
+      "path": "girlswar_merged_extracted/decoded/xlua_all/datanode/datatable/create/item/5181259421119625803_DTItemDBModel_security_xor_raw.lua",
+      "requirePaths": [
+        "DataNode/DataTable/Create/item/DTItemDBModel"
+      ],
+      "classification": "self_populates_when_client_io_disabled",
+      "recommendation": "Use GameInit.ServerLoadTable=false and GameTools.ClientIsSupportIOLoad()=false. That keeps GetList/GetEntity on InitRequire(), which loads embedded EntityTableData. Returning true switches to .bigd IO files; ServerLoadTable=true expects a JSON cache via GameInit.ReadJsonData.",
+      "usesServerLoadTable": true,
+      "usesClientIsSupportIOLoad": true,
+      "hasInitRequire": true,
+      "hasInitIO": true,
+      "hasGetListByIO": true,
+      "readJsonFiles": [
+        "DTItemEntityData.txt"
+      ],
+      "writeJsonFiles": [
+        "DTItemEntityData.txt"
+      ],
+      "ioFiles": [
+        "/Download/IO/item/DTItemEntityTableData.bigd",
+        "/Download/IO/item/DTItemEntityTableDataHeader.bigd",
+        "/download/config/item/DTItemEntityTableData.bigd",
+        "/download/config/item/DTItemEntityTableDataHeader.bigd"
+      ],
+      "entityRequires": [
+        "DataNode/DataTable/Create/item/DTItemEntity"
+      ]
+    },
+    {
+      "module": "DTLiandongHeroDBModel",
+      "resolved": true,
+      "path": "girlswar_merged_extracted/decoded/xlua_all/datanode/datatable/create/activity/2726170378014052759_DTLiandongHeroDBModel_security_xor_raw.lua",
+      "requirePaths": [
+        "DataNode/DataTable/Create/activity/DTLiandongHeroDBModel"
+      ],
+      "classification": "self_populates_when_client_io_disabled",
+      "recommendation": "Use GameInit.ServerLoadTable=false and GameTools.ClientIsSupportIOLoad()=false. That keeps GetList/GetEntity on InitRequire(), which loads embedded EntityTableData. Returning true switches to .bigd IO files; ServerLoadTable=true expects a JSON cache via GameInit.ReadJsonData.",
+      "usesServerLoadTable": true,
+      "usesClientIsSupportIOLoad": true,
+      "hasInitRequire": true,
+      "hasInitIO": true,
+      "hasGetListByIO": true,
+      "readJsonFiles": [
+        "DTLiandongHeroEntityData.txt"
+      ],
+      "writeJsonFiles": [
+        "DTLiandongHeroEntityData.txt"
+      ],
+      "ioFiles": [
+        "/Download/IO/activity/DTLiandongHeroEntityTableData.bigd",
+        "/Download/IO/activity/DTLiandongHeroEntityTableDataHeader.bigd",
+        "/download/config/activity/DTLiandongHeroEntityTableData.bigd",
+        "/download/config/activity/DTLiandongHeroEntityTableDataHeader.bigd"
+      ],
+      "entityRequires": [
+        "DataNode/DataTable/Create/activity/DTLiandongHeroEntity"
+      ]
+    },
+    {
+      "module": "DTLoverShowDBModel",
+      "resolved": true,
+      "path": "girlswar_merged_extracted/decoded/xlua_all/datanode/datatable/create/harem/6376941098289493062_DTLoverShowDBModel_security_xor_raw.lua",
+      "requirePaths": [
+        "DataNode/DataTable/Create/harem/DTLoverShowDBModel"
+      ],
+      "classification": "self_populates_when_client_io_disabled",
+      "recommendation": "Use GameInit.ServerLoadTable=false and GameTools.ClientIsSupportIOLoad()=false. That keeps GetList/GetEntity on InitRequire(), which loads embedded EntityTableData. Returning true switches to .bigd IO files; ServerLoadTable=true expects a JSON cache via GameInit.ReadJsonData.",
+      "usesServerLoadTable": true,
+      "usesClientIsSupportIOLoad": true,
+      "hasInitRequire": true,
+      "hasInitIO": true,
+      "hasGetListByIO": true,
+      "readJsonFiles": [
+        "DTLoverShowEntityData.txt"
+      ],
+      "writeJsonFiles": [
+        "DTLoverShowEntityData.txt"
+      ],
+      "ioFiles": [
+        "/Download/IO/harem/DTLoverShowEntityTableData.bigd",
+        "/Download/IO/harem/DTLoverShowEntityTableDataHeader.bigd",
+        "/download/config/harem/DTLoverShowEntityTableData.bigd",
+        "/download/config/harem/DTLoverShowEntityTableDataHeader.bigd"
+      ],
+      "entityRequires": [
+        "DataNode/DataTable/Create/harem/DTLoverShowEntity"
+      ]
+    },
+    {
+      "module": "DTLuckyPrayAwardDBModel",
+      "resolved": true,
+      "path": "girlswar_merged_extracted/decoded/xlua_all/datanode/datatable/create/activity/-1393487255712661604_DTLuckyPrayAwardDBModel_security_xor_raw.lua",
+      "requirePaths": [
+        "DataNode/DataTable/Create/activity/DTLuckyPrayAwardDBModel"
+      ],
+      "classification": "self_populates_when_client_io_disabled",
+      "recommendation": "Use GameInit.ServerLoadTable=false and GameTools.ClientIsSupportIOLoad()=false. That keeps GetList/GetEntity on InitRequire(), which loads embedded EntityTableData. Returning true switches to .bigd IO files; ServerLoadTable=true expects a JSON cache via GameInit.ReadJsonData.",
+      "usesServerLoadTable": true,
+      "usesClientIsSupportIOLoad": true,
+      "hasInitRequire": true,
+      "hasInitIO": true,
+      "hasGetListByIO": true,
+      "readJsonFiles": [
+        "DTLuckyPrayAwardEntityData.txt"
+      ],
+      "writeJsonFiles": [
+        "DTLuckyPrayAwardEntityData.txt"
+      ],
+      "ioFiles": [
+        "/Download/IO/activity/DTLuckyPrayAwardEntityTableData.bigd",
+        "/Download/IO/activity/DTLuckyPrayAwardEntityTableDataHeader.bigd",
+        "/download/config/activity/DTLuckyPrayAwardEntityTableData.bigd",
+        "/download/config/activity/DTLuckyPrayAwardEntityTableDataHeader.bigd"
+      ],
+      "entityRequires": [
+        "DataNode/DataTable/Create/activity/DTLuckyPrayAwardEntity"
+      ]
+    },
+    {
+      "module": "DTMagicDBModel",
+      "resolved": true,
+      "path": "girlswar_merged_extracted/decoded/xlua_all/datanode/datatable/create/equip/8692860176894792387_DTMagicDBModel_security_xor_raw.lua",
+      "requirePaths": [
+        "DataNode/DataTable/Create/equip/DTMagicDBModel"
+      ],
+      "classification": "self_populates_when_client_io_disabled",
+      "recommendation": "Use GameInit.ServerLoadTable=false and GameTools.ClientIsSupportIOLoad()=false. That keeps GetList/GetEntity on InitRequire(), which loads embedded EntityTableData. Returning true switches to .bigd IO files; ServerLoadTable=true expects a JSON cache via GameInit.ReadJsonData.",
+      "usesServerLoadTable": true,
+      "usesClientIsSupportIOLoad": true,
+      "hasInitRequire": true,
+      "hasInitIO": true,
+      "hasGetListByIO": true,
+      "readJsonFiles": [
+        "DTMagicEntityData.txt"
+      ],
+      "writeJsonFiles": [
+        "DTMagicEntityData.txt"
+      ],
+      "ioFiles": [
+        "/Download/IO/equip/DTMagicEntityTableData.bigd",
+        "/Download/IO/equip/DTMagicEntityTableDataHeader.bigd",
+        "/download/config/equip/DTMagicEntityTableData.bigd",
+        "/download/config/equip/DTMagicEntityTableDataHeader.bigd"
+      ],
+      "entityRequires": [
+        "DataNode/DataTable/Create/equip/DTMagicEntity"
+      ]
+    },
+    {
+      "module": "DTMapsDBModel",
+      "resolved": true,
+      "path": "girlswar_merged_extracted/decoded/xlua_all/datanode/datatable/create/maps/-5335877941095295008_DTMapsDBModel_security_xor_raw.lua",
+      "requirePaths": [
+        "DataNode/DataTable/Create/maps/DTMapsDBModel"
+      ],
+      "classification": "self_populates_when_client_io_disabled",
+      "recommendation": "Use GameInit.ServerLoadTable=false and GameTools.ClientIsSupportIOLoad()=false. That keeps GetList/GetEntity on InitRequire(), which loads embedded EntityTableData. Returning true switches to .bigd IO files; ServerLoadTable=true expects a JSON cache via GameInit.ReadJsonData.",
+      "usesServerLoadTable": true,
+      "usesClientIsSupportIOLoad": true,
+      "hasInitRequire": true,
+      "hasInitIO": true,
+      "hasGetListByIO": true,
+      "readJsonFiles": [
+        "DTMapsEntityData.txt"
+      ],
+      "writeJsonFiles": [
+        "DTMapsEntityData.txt"
+      ],
+      "ioFiles": [
+        "/Download/IO/maps/DTMapsEntityTableData.bigd",
+        "/Download/IO/maps/DTMapsEntityTableDataHeader.bigd",
+        "/download/config/maps/DTMapsEntityTableData.bigd",
+        "/download/config/maps/DTMapsEntityTableDataHeader.bigd"
+      ],
+      "entityRequires": [
+        "DataNode/DataTable/Create/maps/DTMapsEntity"
+      ]
+    },
+    {
+      "module": "DTMapsWaveDBModel",
+      "resolved": true,
+      "path": "girlswar_merged_extracted/decoded/xlua_all/datanode/datatable/create/maps/-4896967683996641353_DTMapsWaveDBModel_security_xor_raw.lua",
+      "requirePaths": [
+        "DataNode/DataTable/Create/maps/DTMapsWaveDBModel"
+      ],
+      "classification": "self_populates_when_client_io_disabled",
+      "recommendation": "Use GameInit.ServerLoadTable=false and GameTools.ClientIsSupportIOLoad()=false. That keeps GetList/GetEntity on InitRequire(), which loads embedded EntityTableData. Returning true switches to .bigd IO files; ServerLoadTable=true expects a JSON cache via GameInit.ReadJsonData.",
+      "usesServerLoadTable": true,
+      "usesClientIsSupportIOLoad": true,
+      "hasInitRequire": true,
+      "hasInitIO": true,
+      "hasGetListByIO": true,
+      "readJsonFiles": [
+        "DTMapsWaveEntityData.txt"
+      ],
+      "writeJsonFiles": [
+        "DTMapsWaveEntityData.txt"
+      ],
+      "ioFiles": [
+        "/Download/IO/maps/DTMapsWaveEntityTableData.bigd",
+        "/Download/IO/maps/DTMapsWaveEntityTableDataHeader.bigd",
+        "/download/config/maps/DTMapsWaveEntityTableData.bigd",
+        "/download/config/maps/DTMapsWaveEntityTableDataHeader.bigd"
+      ],
+      "entityRequires": [
+        "DataNode/DataTable/Create/maps/DTMapsWaveEntity"
+      ]
+    },
+    {
+      "module": "DTMapsWave_FDBModel",
+      "resolved": true,
+      "path": "girlswar_merged_extracted/decoded/xlua_all/datanode/datatable/create/maps/-1937715051783145348_DTMapsWave_FDBModel_security_xor_raw.lua",
+      "requirePaths": [
+        "DataNode/DataTable/Create/maps/DTMapsWave_FDBModel"
+      ],
+      "classification": "self_populates_when_client_io_disabled",
+      "recommendation": "Use GameInit.ServerLoadTable=false and GameTools.ClientIsSupportIOLoad()=false. That keeps GetList/GetEntity on InitRequire(), which loads embedded EntityTableData. Returning true switches to .bigd IO files; ServerLoadTable=true expects a JSON cache via GameInit.ReadJsonData.",
+      "usesServerLoadTable": true,
+      "usesClientIsSupportIOLoad": true,
+      "hasInitRequire": true,
+      "hasInitIO": true,
+      "hasGetListByIO": true,
+      "readJsonFiles": [
+        "DTMapsWave_FEntityData.txt"
+      ],
+      "writeJsonFiles": [
+        "DTMapsWave_FEntityData.txt"
+      ],
+      "ioFiles": [
+        "/Download/IO/maps/DTMapsWave_FEntityTableData.bigd",
+        "/Download/IO/maps/DTMapsWave_FEntityTableDataHeader.bigd",
+        "/download/config/maps/DTMapsWave_FEntityTableData.bigd",
+        "/download/config/maps/DTMapsWave_FEntityTableDataHeader.bigd"
+      ],
+      "entityRequires": [
+        "DataNode/DataTable/Create/maps/DTMapsWave_FEntity"
+      ]
+    },
+    {
+      "module": "DTMapsWave_GDBModel",
+      "resolved": true,
+      "path": "girlswar_merged_extracted/decoded/xlua_all/datanode/datatable/create/maps/7999431348150996032_DTMapsWave_GDBModel_security_xor_raw.lua",
+      "requirePaths": [
+        "DataNode/DataTable/Create/maps/DTMapsWave_GDBModel"
+      ],
+      "classification": "self_populates_when_client_io_disabled",
+      "recommendation": "Use GameInit.ServerLoadTable=false and GameTools.ClientIsSupportIOLoad()=false. That keeps GetList/GetEntity on InitRequire(), which loads embedded EntityTableData. Returning true switches to .bigd IO files; ServerLoadTable=true expects a JSON cache via GameInit.ReadJsonData.",
+      "usesServerLoadTable": true,
+      "usesClientIsSupportIOLoad": true,
+      "hasInitRequire": true,
+      "hasInitIO": true,
+      "hasGetListByIO": true,
+      "readJsonFiles": [
+        "DTMapsWave_GEntityData.txt"
+      ],
+      "writeJsonFiles": [
+        "DTMapsWave_GEntityData.txt"
+      ],
+      "ioFiles": [
+        "/Download/IO/maps/DTMapsWave_GEntityTableData.bigd",
+        "/Download/IO/maps/DTMapsWave_GEntityTableDataHeader.bigd",
+        "/download/config/maps/DTMapsWave_GEntityTableData.bigd",
+        "/download/config/maps/DTMapsWave_GEntityTableDataHeader.bigd"
+      ],
+      "entityRequires": [
+        "DataNode/DataTable/Create/maps/DTMapsWave_GEntity"
+      ]
+    },
+    {
+      "module": "DTMapsWave_HDBModel",
+      "resolved": true,
+      "path": "girlswar_merged_extracted/decoded/xlua_all/datanode/datatable/create/maps/-5996300400752713395_DTMapsWave_HDBModel_security_xor_raw.lua",
+      "requirePaths": [
+        "DataNode/DataTable/Create/maps/DTMapsWave_HDBModel"
+      ],
+      "classification": "self_populates_when_client_io_disabled",
+      "recommendation": "Use GameInit.ServerLoadTable=false and GameTools.ClientIsSupportIOLoad()=false. That keeps GetList/GetEntity on InitRequire(), which loads embedded EntityTableData. Returning true switches to .bigd IO files; ServerLoadTable=true expects a JSON cache via GameInit.ReadJsonData.",
+      "usesServerLoadTable": true,
+      "usesClientIsSupportIOLoad": true,
+      "hasInitRequire": true,
+      "hasInitIO": true,
+      "hasGetListByIO": true,
+      "readJsonFiles": [
+        "DTMapsWave_HEntityData.txt"
+      ],
+      "writeJsonFiles": [
+        "DTMapsWave_HEntityData.txt"
+      ],
+      "ioFiles": [
+        "/Download/IO/maps/DTMapsWave_HEntityTableData.bigd",
+        "/Download/IO/maps/DTMapsWave_HEntityTableDataHeader.bigd",
+        "/download/config/maps/DTMapsWave_HEntityTableData.bigd",
+        "/download/config/maps/DTMapsWave_HEntityTableDataHeader.bigd"
+      ],
+      "entityRequires": [
+        "DataNode/DataTable/Create/maps/DTMapsWave_HEntity"
+      ]
+    },
+    {
+      "module": "DTMapsWave_KDBModel",
+      "resolved": true,
+      "path": "girlswar_merged_extracted/decoded/xlua_all/datanode/datatable/create/maps/4169742200187540252_DTMapsWave_KDBModel_security_xor_raw.lua",
+      "requirePaths": [
+        "DataNode/DataTable/Create/maps/DTMapsWave_KDBModel"
+      ],
+      "classification": "self_populates_when_client_io_disabled",
+      "recommendation": "Use GameInit.ServerLoadTable=false and GameTools.ClientIsSupportIOLoad()=false. That keeps GetList/GetEntity on InitRequire(), which loads embedded EntityTableData. Returning true switches to .bigd IO files; ServerLoadTable=true expects a JSON cache via GameInit.ReadJsonData.",
+      "usesServerLoadTable": true,
+      "usesClientIsSupportIOLoad": true,
+      "hasInitRequire": true,
+      "hasInitIO": true,
+      "hasGetListByIO": true,
+      "readJsonFiles": [
+        "DTMapsWave_KEntityData.txt"
+      ],
+      "writeJsonFiles": [
+        "DTMapsWave_KEntityData.txt"
+      ],
+      "ioFiles": [
+        "/Download/IO/maps/DTMapsWave_KEntityTableData.bigd",
+        "/Download/IO/maps/DTMapsWave_KEntityTableDataHeader.bigd",
+        "/download/config/maps/DTMapsWave_KEntityTableData.bigd",
+        "/download/config/maps/DTMapsWave_KEntityTableDataHeader.bigd"
+      ],
+      "entityRequires": [
+        "DataNode/DataTable/Create/maps/DTMapsWave_KEntity"
+      ]
+    },
+    {
+      "module": "DTMarryRingDBModel",
+      "resolved": true,
+      "path": "girlswar_merged_extracted/decoded/xlua_all/datanode/datatable/create/marry/8084943533574817474_DTMarryRingDBModel_security_xor_raw.lua",
+      "requirePaths": [
+        "DataNode/DataTable/Create/marry/DTMarryRingDBModel"
+      ],
+      "classification": "self_populates_when_client_io_disabled",
+      "recommendation": "Use GameInit.ServerLoadTable=false and GameTools.ClientIsSupportIOLoad()=false. That keeps GetList/GetEntity on InitRequire(), which loads embedded EntityTableData. Returning true switches to .bigd IO files; ServerLoadTable=true expects a JSON cache via GameInit.ReadJsonData.",
+      "usesServerLoadTable": true,
+      "usesClientIsSupportIOLoad": true,
+      "hasInitRequire": true,
+      "hasInitIO": true,
+      "hasGetListByIO": true,
+      "readJsonFiles": [
+        "DTMarryRingEntityData.txt"
+      ],
+      "writeJsonFiles": [
+        "DTMarryRingEntityData.txt"
+      ],
+      "ioFiles": [
+        "/Download/IO/marry/DTMarryRingEntityTableData.bigd",
+        "/Download/IO/marry/DTMarryRingEntityTableDataHeader.bigd",
+        "/download/config/marry/DTMarryRingEntityTableData.bigd",
+        "/download/config/marry/DTMarryRingEntityTableDataHeader.bigd"
+      ],
+      "entityRequires": [
+        "DataNode/DataTable/Create/marry/DTMarryRingEntity"
+      ]
+    },
+    {
+      "module": "DTMarryRingNewDBModel",
+      "resolved": true,
+      "path": "girlswar_merged_extracted/decoded/xlua_all/datanode/datatable/create/marry/-7798540607961125127_DTMarryRingNewDBModel_security_xor_raw.lua",
+      "requirePaths": [
+        "DataNode/DataTable/Create/marry/DTMarryRingNewDBModel"
+      ],
+      "classification": "self_populates_when_client_io_disabled",
+      "recommendation": "Use GameInit.ServerLoadTable=false and GameTools.ClientIsSupportIOLoad()=false. That keeps GetList/GetEntity on InitRequire(), which loads embedded EntityTableData. Returning true switches to .bigd IO files; ServerLoadTable=true expects a JSON cache via GameInit.ReadJsonData.",
+      "usesServerLoadTable": true,
+      "usesClientIsSupportIOLoad": true,
+      "hasInitRequire": true,
+      "hasInitIO": true,
+      "hasGetListByIO": true,
+      "readJsonFiles": [
+        "DTMarryRingNewEntityData.txt"
+      ],
+      "writeJsonFiles": [
+        "DTMarryRingNewEntityData.txt"
+      ],
+      "ioFiles": [
+        "/Download/IO/marry/DTMarryRingNewEntityTableData.bigd",
+        "/Download/IO/marry/DTMarryRingNewEntityTableDataHeader.bigd",
+        "/download/config/marry/DTMarryRingNewEntityTableData.bigd",
+        "/download/config/marry/DTMarryRingNewEntityTableDataHeader.bigd"
+      ],
+      "entityRequires": [
+        "DataNode/DataTable/Create/marry/DTMarryRingNewEntity"
+      ]
+    },
+    {
+      "module": "DTMarryVoiceDBModel",
+      "resolved": true,
+      "path": "girlswar_merged_extracted/decoded/xlua_all/datanode/datatable/create/marry/-538921390856814917_DTMarryVoiceDBModel_security_xor_raw.lua",
+      "requirePaths": [
+        "DataNode/DataTable/Create/marry/DTMarryVoiceDBModel"
+      ],
+      "classification": "self_populates_when_client_io_disabled",
+      "recommendation": "Use GameInit.ServerLoadTable=false and GameTools.ClientIsSupportIOLoad()=false. That keeps GetList/GetEntity on InitRequire(), which loads embedded EntityTableData. Returning true switches to .bigd IO files; ServerLoadTable=true expects a JSON cache via GameInit.ReadJsonData.",
+      "usesServerLoadTable": true,
+      "usesClientIsSupportIOLoad": true,
+      "hasInitRequire": true,
+      "hasInitIO": true,
+      "hasGetListByIO": true,
+      "readJsonFiles": [
+        "DTMarryVoiceEntityData.txt"
+      ],
+      "writeJsonFiles": [
+        "DTMarryVoiceEntityData.txt"
+      ],
+      "ioFiles": [
+        "/Download/IO/marry/DTMarryVoiceEntityTableData.bigd",
+        "/Download/IO/marry/DTMarryVoiceEntityTableDataHeader.bigd",
+        "/download/config/marry/DTMarryVoiceEntityTableData.bigd",
+        "/download/config/marry/DTMarryVoiceEntityTableDataHeader.bigd"
+      ],
+      "entityRequires": [
+        "DataNode/DataTable/Create/marry/DTMarryVoiceEntity"
+      ]
+    },
+    {
+      "module": "DTMonsterAttrDBModel",
+      "resolved": true,
+      "path": "girlswar_merged_extracted/decoded/xlua_all/datanode/datatable/create/monster/3721537722328754285_DTMonsterAttrDBModel_security_xor_raw.lua",
+      "requirePaths": [
+        "DataNode/DataTable/Create/monster/DTMonsterAttrDBModel"
+      ],
+      "classification": "self_populates_when_client_io_disabled",
+      "recommendation": "Use GameInit.ServerLoadTable=false and GameTools.ClientIsSupportIOLoad()=false. That keeps GetList/GetEntity on InitRequire(), which loads embedded EntityTableData. Returning true switches to .bigd IO files; ServerLoadTable=true expects a JSON cache via GameInit.ReadJsonData.",
+      "usesServerLoadTable": true,
+      "usesClientIsSupportIOLoad": true,
+      "hasInitRequire": true,
+      "hasInitIO": true,
+      "hasGetListByIO": true,
+      "readJsonFiles": [
+        "DTMonsterAttrEntityData.txt"
+      ],
+      "writeJsonFiles": [
+        "DTMonsterAttrEntityData.txt"
+      ],
+      "ioFiles": [
+        "/Download/IO/monster/DTMonsterAttrEntityTableData.bigd",
+        "/Download/IO/monster/DTMonsterAttrEntityTableDataHeader.bigd",
+        "/download/config/monster/DTMonsterAttrEntityTableData.bigd",
+        "/download/config/monster/DTMonsterAttrEntityTableDataHeader.bigd"
+      ],
+      "entityRequires": [
+        "DataNode/DataTable/Create/monster/DTMonsterAttrEntity"
+      ]
+    },
+    {
+      "module": "DTMonsterAttr_FDBModel",
+      "resolved": true,
+      "path": "girlswar_merged_extracted/decoded/xlua_all/datanode/datatable/create/monster/-2768993995395997011_DTMonsterAttr_FDBModel_security_xor_raw.lua",
+      "requirePaths": [
+        "DataNode/DataTable/Create/monster/DTMonsterAttr_FDBModel"
+      ],
+      "classification": "self_populates_when_client_io_disabled",
+      "recommendation": "Use GameInit.ServerLoadTable=false and GameTools.ClientIsSupportIOLoad()=false. That keeps GetList/GetEntity on InitRequire(), which loads embedded EntityTableData. Returning true switches to .bigd IO files; ServerLoadTable=true expects a JSON cache via GameInit.ReadJsonData.",
+      "usesServerLoadTable": true,
+      "usesClientIsSupportIOLoad": true,
+      "hasInitRequire": true,
+      "hasInitIO": true,
+      "hasGetListByIO": true,
+      "readJsonFiles": [
+        "DTMonsterAttr_FEntityData.txt"
+      ],
+      "writeJsonFiles": [
+        "DTMonsterAttr_FEntityData.txt"
+      ],
+      "ioFiles": [
+        "/Download/IO/monster/DTMonsterAttr_FEntityTableData.bigd",
+        "/Download/IO/monster/DTMonsterAttr_FEntityTableDataHeader.bigd",
+        "/download/config/monster/DTMonsterAttr_FEntityTableData.bigd",
+        "/download/config/monster/DTMonsterAttr_FEntityTableDataHeader.bigd"
+      ],
+      "entityRequires": [
+        "DataNode/DataTable/Create/monster/DTMonsterAttr_FEntity"
+      ]
+    },
+    {
+      "module": "DTMonsterAttr_GDBModel",
+      "resolved": true,
+      "path": "girlswar_merged_extracted/decoded/xlua_all/datanode/datatable/create/monster/8011849101988205394_DTMonsterAttr_GDBModel_security_xor_raw.lua",
+      "requirePaths": [
+        "DataNode/DataTable/Create/monster/DTMonsterAttr_GDBModel"
+      ],
+      "classification": "self_populates_when_client_io_disabled",
+      "recommendation": "Use GameInit.ServerLoadTable=false and GameTools.ClientIsSupportIOLoad()=false. That keeps GetList/GetEntity on InitRequire(), which loads embedded EntityTableData. Returning true switches to .bigd IO files; ServerLoadTable=true expects a JSON cache via GameInit.ReadJsonData.",
+      "usesServerLoadTable": true,
+      "usesClientIsSupportIOLoad": true,
+      "hasInitRequire": true,
+      "hasInitIO": true,
+      "hasGetListByIO": true,
+      "readJsonFiles": [
+        "DTMonsterAttr_GEntityData.txt"
+      ],
+      "writeJsonFiles": [
+        "DTMonsterAttr_GEntityData.txt"
+      ],
+      "ioFiles": [
+        "/Download/IO/monster/DTMonsterAttr_GEntityTableData.bigd",
+        "/Download/IO/monster/DTMonsterAttr_GEntityTableDataHeader.bigd",
+        "/download/config/monster/DTMonsterAttr_GEntityTableData.bigd",
+        "/download/config/monster/DTMonsterAttr_GEntityTableDataHeader.bigd"
+      ],
+      "entityRequires": [
+        "DataNode/DataTable/Create/monster/DTMonsterAttr_GEntity"
+      ]
+    },
+    {
+      "module": "DTMonsterAttr_HDBModel",
+      "resolved": true,
+      "path": "girlswar_merged_extracted/decoded/xlua_all/datanode/datatable/create/monster/-6621647114809746446_DTMonsterAttr_HDBModel_security_xor_raw.lua",
+      "requirePaths": [
+        "DataNode/DataTable/Create/monster/DTMonsterAttr_HDBModel"
+      ],
+      "classification": "self_populates_when_client_io_disabled",
+      "recommendation": "Use GameInit.ServerLoadTable=false and GameTools.ClientIsSupportIOLoad()=false. That keeps GetList/GetEntity on InitRequire(), which loads embedded EntityTableData. Returning true switches to .bigd IO files; ServerLoadTable=true expects a JSON cache via GameInit.ReadJsonData.",
+      "usesServerLoadTable": true,
+      "usesClientIsSupportIOLoad": true,
+      "hasInitRequire": true,
+      "hasInitIO": true,
+      "hasGetListByIO": true,
+      "readJsonFiles": [
+        "DTMonsterAttr_HEntityData.txt"
+      ],
+      "writeJsonFiles": [
+        "DTMonsterAttr_HEntityData.txt"
+      ],
+      "ioFiles": [
+        "/Download/IO/monster/DTMonsterAttr_HEntityTableData.bigd",
+        "/Download/IO/monster/DTMonsterAttr_HEntityTableDataHeader.bigd",
+        "/download/config/monster/DTMonsterAttr_HEntityTableData.bigd",
+        "/download/config/monster/DTMonsterAttr_HEntityTableDataHeader.bigd"
+      ],
+      "entityRequires": [
+        "DataNode/DataTable/Create/monster/DTMonsterAttr_HEntity"
+      ]
+    },
+    {
+      "module": "DTMonsterAttr_KDBModel",
+      "resolved": true,
+      "path": "girlswar_merged_extracted/decoded/xlua_all/datanode/datatable/create/monster/4813650462631171296_DTMonsterAttr_KDBModel_security_xor_raw.lua",
+      "requirePaths": [
+        "DataNode/DataTable/Create/monster/DTMonsterAttr_KDBModel"
+      ],
+      "classification": "self_populates_when_client_io_disabled",
+      "recommendation": "Use GameInit.ServerLoadTable=false and GameTools.ClientIsSupportIOLoad()=false. That keeps GetList/GetEntity on InitRequire(), which loads embedded EntityTableData. Returning true switches to .bigd IO files; ServerLoadTable=true expects a JSON cache via GameInit.ReadJsonData.",
+      "usesServerLoadTable": true,
+      "usesClientIsSupportIOLoad": true,
+      "hasInitRequire": true,
+      "hasInitIO": true,
+      "hasGetListByIO": true,
+      "readJsonFiles": [
+        "DTMonsterAttr_KEntityData.txt"
+      ],
+      "writeJsonFiles": [
+        "DTMonsterAttr_KEntityData.txt"
+      ],
+      "ioFiles": [
+        "/Download/IO/monster/DTMonsterAttr_KEntityTableData.bigd",
+        "/Download/IO/monster/DTMonsterAttr_KEntityTableDataHeader.bigd",
+        "/download/config/monster/DTMonsterAttr_KEntityTableData.bigd",
+        "/download/config/monster/DTMonsterAttr_KEntityTableDataHeader.bigd"
+      ],
+      "entityRequires": [
+        "DataNode/DataTable/Create/monster/DTMonsterAttr_KEntity"
+      ]
+    },
+    {
+      "module": "DTMonsterAttr_ODBModel",
+      "resolved": true,
+      "path": "girlswar_merged_extracted/decoded/xlua_all/datanode/datatable/create/monster/2732065637659187616_DTMonsterAttr_ODBModel_security_xor_raw.lua",
+      "requirePaths": [
+        "DataNode/DataTable/Create/monster/DTMonsterAttr_ODBModel"
+      ],
+      "classification": "self_populates_when_client_io_disabled",
+      "recommendation": "Use GameInit.ServerLoadTable=false and GameTools.ClientIsSupportIOLoad()=false. That keeps GetList/GetEntity on InitRequire(), which loads embedded EntityTableData. Returning true switches to .bigd IO files; ServerLoadTable=true expects a JSON cache via GameInit.ReadJsonData.",
+      "usesServerLoadTable": true,
+      "usesClientIsSupportIOLoad": true,
+      "hasInitRequire": true,
+      "hasInitIO": true,
+      "hasGetListByIO": true,
+      "readJsonFiles": [
+        "DTMonsterAttr_OEntityData.txt"
+      ],
+      "writeJsonFiles": [
+        "DTMonsterAttr_OEntityData.txt"
+      ],
+      "ioFiles": [
+        "/Download/IO/monster/DTMonsterAttr_OEntityTableData.bigd",
+        "/Download/IO/monster/DTMonsterAttr_OEntityTableDataHeader.bigd",
+        "/download/config/monster/DTMonsterAttr_OEntityTableData.bigd",
+        "/download/config/monster/DTMonsterAttr_OEntityTableDataHeader.bigd"
+      ],
+      "entityRequires": [
+        "DataNode/DataTable/Create/monster/DTMonsterAttr_OEntity"
+      ]
+    },
+    {
+      "module": "DTMonsterDBModel",
+      "resolved": true,
+      "path": "girlswar_merged_extracted/decoded/xlua_all/datanode/datatable/create/monster/-6842044539080862095_DTMonsterDBModel_security_xor_raw.lua",
+      "requirePaths": [
+        "DataNode/DataTable/Create/monster/DTMonsterDBModel"
+      ],
+      "classification": "self_populates_when_client_io_disabled",
+      "recommendation": "Use GameInit.ServerLoadTable=false and GameTools.ClientIsSupportIOLoad()=false. That keeps GetList/GetEntity on InitRequire(), which loads embedded EntityTableData. Returning true switches to .bigd IO files; ServerLoadTable=true expects a JSON cache via GameInit.ReadJsonData.",
+      "usesServerLoadTable": true,
+      "usesClientIsSupportIOLoad": true,
+      "hasInitRequire": true,
+      "hasInitIO": true,
+      "hasGetListByIO": true,
+      "readJsonFiles": [
+        "DTMonsterEntityData.txt"
+      ],
+      "writeJsonFiles": [
+        "DTMonsterEntityData.txt"
+      ],
+      "ioFiles": [
+        "/Download/IO/monster/DTMonsterEntityTableData.bigd",
+        "/Download/IO/monster/DTMonsterEntityTableDataHeader.bigd",
+        "/download/config/monster/DTMonsterEntityTableData.bigd",
+        "/download/config/monster/DTMonsterEntityTableDataHeader.bigd"
+      ],
+      "entityRequires": [
+        "DataNode/DataTable/Create/monster/DTMonsterEntity"
+      ]
+    },
+    {
+      "module": "DTMonster_FDBModel",
+      "resolved": true,
+      "path": "girlswar_merged_extracted/decoded/xlua_all/datanode/datatable/create/monster/-4221672821576269312_DTMonster_FDBModel_security_xor_raw.lua",
+      "requirePaths": [
+        "DataNode/DataTable/Create/monster/DTMonster_FDBModel"
+      ],
+      "classification": "self_populates_when_client_io_disabled",
+      "recommendation": "Use GameInit.ServerLoadTable=false and GameTools.ClientIsSupportIOLoad()=false. That keeps GetList/GetEntity on InitRequire(), which loads embedded EntityTableData. Returning true switches to .bigd IO files; ServerLoadTable=true expects a JSON cache via GameInit.ReadJsonData.",
+      "usesServerLoadTable": true,
+      "usesClientIsSupportIOLoad": true,
+      "hasInitRequire": true,
+      "hasInitIO": true,
+      "hasGetListByIO": true,
+      "readJsonFiles": [
+        "DTMonster_FEntityData.txt"
+      ],
+      "writeJsonFiles": [
+        "DTMonster_FEntityData.txt"
+      ],
+      "ioFiles": [
+        "/Download/IO/monster/DTMonster_FEntityTableData.bigd",
+        "/Download/IO/monster/DTMonster_FEntityTableDataHeader.bigd",
+        "/download/config/monster/DTMonster_FEntityTableData.bigd",
+        "/download/config/monster/DTMonster_FEntityTableDataHeader.bigd"
+      ],
+      "entityRequires": [
+        "DataNode/DataTable/Create/monster/DTMonster_FEntity"
+      ]
+    },
+    {
+      "module": "DTMonster_GDBModel",
+      "resolved": true,
+      "path": "girlswar_merged_extracted/decoded/xlua_all/datanode/datatable/create/monster/3846502466903570000_DTMonster_GDBModel_security_xor_raw.lua",
+      "requirePaths": [
+        "DataNode/DataTable/Create/monster/DTMonster_GDBModel"
+      ],
+      "classification": "self_populates_when_client_io_disabled",
+      "recommendation": "Use GameInit.ServerLoadTable=false and GameTools.ClientIsSupportIOLoad()=false. That keeps GetList/GetEntity on InitRequire(), which loads embedded EntityTableData. Returning true switches to .bigd IO files; ServerLoadTable=true expects a JSON cache via GameInit.ReadJsonData.",
+      "usesServerLoadTable": true,
+      "usesClientIsSupportIOLoad": true,
+      "hasInitRequire": true,
+      "hasInitIO": true,
+      "hasGetListByIO": true,
+      "readJsonFiles": [
+        "DTMonster_GEntityData.txt"
+      ],
+      "writeJsonFiles": [
+        "DTMonster_GEntityData.txt"
+      ],
+      "ioFiles": [
+        "/Download/IO/monster/DTMonster_GEntityTableData.bigd",
+        "/Download/IO/monster/DTMonster_GEntityTableDataHeader.bigd",
+        "/download/config/monster/DTMonster_GEntityTableData.bigd",
+        "/download/config/monster/DTMonster_GEntityTableDataHeader.bigd"
+      ],
+      "entityRequires": [
+        "DataNode/DataTable/Create/monster/DTMonster_GEntity"
+      ]
+    },
+    {
+      "module": "DTMonster_HDBModel",
+      "resolved": true,
+      "path": "girlswar_merged_extracted/decoded/xlua_all/datanode/datatable/create/monster/2436698372625025345_DTMonster_HDBModel_security_xor_raw.lua",
+      "requirePaths": [
+        "DataNode/DataTable/Create/monster/DTMonster_HDBModel"
+      ],
+      "classification": "self_populates_when_client_io_disabled",
+      "recommendation": "Use GameInit.ServerLoadTable=false and GameTools.ClientIsSupportIOLoad()=false. That keeps GetList/GetEntity on InitRequire(), which loads embedded EntityTableData. Returning true switches to .bigd IO files; ServerLoadTable=true expects a JSON cache via GameInit.ReadJsonData.",
+      "usesServerLoadTable": true,
+      "usesClientIsSupportIOLoad": true,
+      "hasInitRequire": true,
+      "hasInitIO": true,
+      "hasGetListByIO": true,
+      "readJsonFiles": [
+        "DTMonster_HEntityData.txt"
+      ],
+      "writeJsonFiles": [
+        "DTMonster_HEntityData.txt"
+      ],
+      "ioFiles": [
+        "/Download/IO/monster/DTMonster_HEntityTableData.bigd",
+        "/Download/IO/monster/DTMonster_HEntityTableDataHeader.bigd",
+        "/download/config/monster/DTMonster_HEntityTableData.bigd",
+        "/download/config/monster/DTMonster_HEntityTableDataHeader.bigd"
+      ],
+      "entityRequires": [
+        "DataNode/DataTable/Create/monster/DTMonster_HEntity"
+      ]
+    },
+    {
+      "module": "DTMonster_KDBModel",
+      "resolved": true,
+      "path": "girlswar_merged_extracted/decoded/xlua_all/datanode/datatable/create/monster/5559523613932650422_DTMonster_KDBModel_security_xor_raw.lua",
+      "requirePaths": [
+        "DataNode/DataTable/Create/monster/DTMonster_KDBModel"
+      ],
+      "classification": "self_populates_when_client_io_disabled",
+      "recommendation": "Use GameInit.ServerLoadTable=false and GameTools.ClientIsSupportIOLoad()=false. That keeps GetList/GetEntity on InitRequire(), which loads embedded EntityTableData. Returning true switches to .bigd IO files; ServerLoadTable=true expects a JSON cache via GameInit.ReadJsonData.",
+      "usesServerLoadTable": true,
+      "usesClientIsSupportIOLoad": true,
+      "hasInitRequire": true,
+      "hasInitIO": true,
+      "hasGetListByIO": true,
+      "readJsonFiles": [
+        "DTMonster_KEntityData.txt"
+      ],
+      "writeJsonFiles": [
+        "DTMonster_KEntityData.txt"
+      ],
+      "ioFiles": [
+        "/Download/IO/monster/DTMonster_KEntityTableData.bigd",
+        "/Download/IO/monster/DTMonster_KEntityTableDataHeader.bigd",
+        "/download/config/monster/DTMonster_KEntityTableData.bigd",
+        "/download/config/monster/DTMonster_KEntityTableDataHeader.bigd"
+      ],
+      "entityRequires": [
+        "DataNode/DataTable/Create/monster/DTMonster_KEntity"
+      ]
+    },
+    {
+      "module": "DTMonster_ODBModel",
+      "resolved": true,
+      "path": "girlswar_merged_extracted/decoded/xlua_all/datanode/datatable/create/monster/1170850389422213859_DTMonster_ODBModel_security_xor_raw.lua",
+      "requirePaths": [
+        "DataNode/DataTable/Create/monster/DTMonster_ODBModel"
+      ],
+      "classification": "self_populates_when_client_io_disabled",
+      "recommendation": "Use GameInit.ServerLoadTable=false and GameTools.ClientIsSupportIOLoad()=false. That keeps GetList/GetEntity on InitRequire(), which loads embedded EntityTableData. Returning true switches to .bigd IO files; ServerLoadTable=true expects a JSON cache via GameInit.ReadJsonData.",
+      "usesServerLoadTable": true,
+      "usesClientIsSupportIOLoad": true,
+      "hasInitRequire": true,
+      "hasInitIO": true,
+      "hasGetListByIO": true,
+      "readJsonFiles": [
+        "DTMonster_OEntityData.txt"
+      ],
+      "writeJsonFiles": [
+        "DTMonster_OEntityData.txt"
+      ],
+      "ioFiles": [
+        "/Download/IO/monster/DTMonster_OEntityTableData.bigd",
+        "/Download/IO/monster/DTMonster_OEntityTableDataHeader.bigd",
+        "/download/config/monster/DTMonster_OEntityTableData.bigd",
+        "/download/config/monster/DTMonster_OEntityTableDataHeader.bigd"
+      ],
+      "entityRequires": [
+        "DataNode/DataTable/Create/monster/DTMonster_OEntity"
+      ]
+    },
+    {
+      "module": "DTNewHandCarnivalMapDBModel",
+      "resolved": true,
+      "path": "girlswar_merged_extracted/decoded/xlua_all/datanode/datatable/create/activity/5427407856853967876_DTNewHandCarnivalMapDBModel_security_xor_raw.lua",
+      "requirePaths": [
+        "DataNode/DataTable/Create/activity/DTNewHandCarnivalMapDBModel"
+      ],
+      "classification": "self_populates_when_client_io_disabled",
+      "recommendation": "Use GameInit.ServerLoadTable=false and GameTools.ClientIsSupportIOLoad()=false. That keeps GetList/GetEntity on InitRequire(), which loads embedded EntityTableData. Returning true switches to .bigd IO files; ServerLoadTable=true expects a JSON cache via GameInit.ReadJsonData.",
+      "usesServerLoadTable": true,
+      "usesClientIsSupportIOLoad": true,
+      "hasInitRequire": true,
+      "hasInitIO": true,
+      "hasGetListByIO": true,
+      "readJsonFiles": [
+        "DTNewHandCarnivalMapEntityData.txt"
+      ],
+      "writeJsonFiles": [
+        "DTNewHandCarnivalMapEntityData.txt"
+      ],
+      "ioFiles": [
+        "/Download/IO/activity/DTNewHandCarnivalMapEntityTableData.bigd",
+        "/Download/IO/activity/DTNewHandCarnivalMapEntityTableDataHeader.bigd",
+        "/download/config/activity/DTNewHandCarnivalMapEntityTableData.bigd",
+        "/download/config/activity/DTNewHandCarnivalMapEntityTableDataHeader.bigd"
+      ],
+      "entityRequires": [
+        "DataNode/DataTable/Create/activity/DTNewHandCarnivalMapEntity"
+      ]
+    },
+    {
+      "module": "DTNewHandCarnivalMapWaveDBModel",
+      "resolved": true,
+      "path": "girlswar_merged_extracted/decoded/xlua_all/datanode/datatable/create/activity/-9119795511784128608_DTNewHandCarnivalMapWaveDBModel_security_xor_raw.lua",
+      "requirePaths": [
+        "DataNode/DataTable/Create/activity/DTNewHandCarnivalMapWaveDBModel"
+      ],
+      "classification": "self_populates_when_client_io_disabled",
+      "recommendation": "Use GameInit.ServerLoadTable=false and GameTools.ClientIsSupportIOLoad()=false. That keeps GetList/GetEntity on InitRequire(), which loads embedded EntityTableData. Returning true switches to .bigd IO files; ServerLoadTable=true expects a JSON cache via GameInit.ReadJsonData.",
+      "usesServerLoadTable": true,
+      "usesClientIsSupportIOLoad": true,
+      "hasInitRequire": true,
+      "hasInitIO": true,
+      "hasGetListByIO": true,
+      "readJsonFiles": [
+        "DTNewHandCarnivalMapWaveEntityData.txt"
+      ],
+      "writeJsonFiles": [
+        "DTNewHandCarnivalMapWaveEntityData.txt"
+      ],
+      "ioFiles": [
+        "/Download/IO/activity/DTNewHandCarnivalMapWaveEntityTableData.bigd",
+        "/Download/IO/activity/DTNewHandCarnivalMapWaveEntityTableDataHeader.bigd",
+        "/download/config/activity/DTNewHandCarnivalMapWaveEntityTableData.bigd",
+        "/download/config/activity/DTNewHandCarnivalMapWaveEntityTableDataHeader.bigd"
+      ],
+      "entityRequires": [
+        "DataNode/DataTable/Create/activity/DTNewHandCarnivalMapWaveEntity"
+      ]
+    },
+    {
+      "module": "DTNewHeroBuffDBModel",
+      "resolved": true,
+      "path": "girlswar_merged_extracted/decoded/xlua_all/datanode/datatable/create/activity/-4428205399725587679_DTNewHeroBuffDBModel_security_xor_raw.lua",
+      "requirePaths": [
+        "DataNode/DataTable/Create/activity/DTNewHeroBuffDBModel"
+      ],
+      "classification": "self_populates_when_client_io_disabled",
+      "recommendation": "Use GameInit.ServerLoadTable=false and GameTools.ClientIsSupportIOLoad()=false. That keeps GetList/GetEntity on InitRequire(), which loads embedded EntityTableData. Returning true switches to .bigd IO files; ServerLoadTable=true expects a JSON cache via GameInit.ReadJsonData.",
+      "usesServerLoadTable": true,
+      "usesClientIsSupportIOLoad": true,
+      "hasInitRequire": true,
+      "hasInitIO": true,
+      "hasGetListByIO": true,
+      "readJsonFiles": [
+        "DTNewHeroBuffEntityData.txt"
+      ],
+      "writeJsonFiles": [
+        "DTNewHeroBuffEntityData.txt"
+      ],
+      "ioFiles": [
+        "/Download/IO/activity/DTNewHeroBuffEntityTableData.bigd",
+        "/Download/IO/activity/DTNewHeroBuffEntityTableDataHeader.bigd",
+        "/download/config/activity/DTNewHeroBuffEntityTableData.bigd",
+        "/download/config/activity/DTNewHeroBuffEntityTableDataHeader.bigd"
+      ],
+      "entityRequires": [
+        "DataNode/DataTable/Create/activity/DTNewHeroBuffEntity"
+      ]
+    },
+    {
+      "module": "DTOfficerDBModel",
+      "resolved": true,
+      "path": "girlswar_merged_extracted/decoded/xlua_all/datanode/datatable/create/officer/8052279496410311167_DTOfficerDBModel_security_xor_raw.lua",
+      "requirePaths": [
+        "DataNode/DataTable/Create/officer/DTOfficerDBModel"
+      ],
+      "classification": "self_populates_when_client_io_disabled",
+      "recommendation": "Use GameInit.ServerLoadTable=false and GameTools.ClientIsSupportIOLoad()=false. That keeps GetList/GetEntity on InitRequire(), which loads embedded EntityTableData. Returning true switches to .bigd IO files; ServerLoadTable=true expects a JSON cache via GameInit.ReadJsonData.",
+      "usesServerLoadTable": true,
+      "usesClientIsSupportIOLoad": true,
+      "hasInitRequire": true,
+      "hasInitIO": true,
+      "hasGetListByIO": true,
+      "readJsonFiles": [
+        "DTOfficerEntityData.txt"
+      ],
+      "writeJsonFiles": [
+        "DTOfficerEntityData.txt"
+      ],
+      "ioFiles": [
+        "/Download/IO/officer/DTOfficerEntityTableData.bigd",
+        "/Download/IO/officer/DTOfficerEntityTableDataHeader.bigd",
+        "/download/config/officer/DTOfficerEntityTableData.bigd",
+        "/download/config/officer/DTOfficerEntityTableDataHeader.bigd"
+      ],
+      "entityRequires": [
+        "DataNode/DataTable/Create/officer/DTOfficerEntity"
+      ]
+    },
+    {
+      "module": "DTProfResDBModel",
+      "resolved": true,
+      "path": "girlswar_merged_extracted/decoded/xlua_all/datanode/datatable/create/hero/1574820713142442159_DTProfResDBModel_security_xor_raw.lua",
+      "requirePaths": [
+        "DataNode/DataTable/Create/hero/DTProfResDBModel"
+      ],
+      "classification": "self_populates_when_client_io_disabled",
+      "recommendation": "Use GameInit.ServerLoadTable=false and GameTools.ClientIsSupportIOLoad()=false. That keeps GetList/GetEntity on InitRequire(), which loads embedded EntityTableData. Returning true switches to .bigd IO files; ServerLoadTable=true expects a JSON cache via GameInit.ReadJsonData.",
+      "usesServerLoadTable": true,
+      "usesClientIsSupportIOLoad": true,
+      "hasInitRequire": true,
+      "hasInitIO": true,
+      "hasGetListByIO": true,
+      "readJsonFiles": [
+        "DTProfResEntityData.txt"
+      ],
+      "writeJsonFiles": [
+        "DTProfResEntityData.txt"
+      ],
+      "ioFiles": [
+        "/Download/IO/hero/DTProfResEntityTableData.bigd",
+        "/Download/IO/hero/DTProfResEntityTableDataHeader.bigd",
+        "/download/config/hero/DTProfResEntityTableData.bigd",
+        "/download/config/hero/DTProfResEntityTableDataHeader.bigd"
+      ],
+      "entityRequires": [
+        "DataNode/DataTable/Create/hero/DTProfResEntity"
+      ]
+    },
+    {
+      "module": "DTQuestTenDaysAwardsDBModel",
+      "resolved": true,
+      "path": "girlswar_merged_extracted/decoded/xlua_all/datanode/datatable/create/quest/7271019195550716417_DTQuestTenDaysAwardsDBModel_security_xor_raw.lua",
+      "requirePaths": [
+        "DataNode/DataTable/Create/quest/DTQuestTenDaysAwardsDBModel"
+      ],
+      "classification": "self_populates_when_client_io_disabled",
+      "recommendation": "Use GameInit.ServerLoadTable=false and GameTools.ClientIsSupportIOLoad()=false. That keeps GetList/GetEntity on InitRequire(), which loads embedded EntityTableData. Returning true switches to .bigd IO files; ServerLoadTable=true expects a JSON cache via GameInit.ReadJsonData.",
+      "usesServerLoadTable": true,
+      "usesClientIsSupportIOLoad": true,
+      "hasInitRequire": true,
+      "hasInitIO": true,
+      "hasGetListByIO": true,
+      "readJsonFiles": [
+        "DTQuestTenDaysAwardsEntityData.txt"
+      ],
+      "writeJsonFiles": [
+        "DTQuestTenDaysAwardsEntityData.txt"
+      ],
+      "ioFiles": [
+        "/Download/IO/quest/DTQuestTenDaysAwardsEntityTableData.bigd",
+        "/Download/IO/quest/DTQuestTenDaysAwardsEntityTableDataHeader.bigd",
+        "/download/config/quest/DTQuestTenDaysAwardsEntityTableData.bigd",
+        "/download/config/quest/DTQuestTenDaysAwardsEntityTableDataHeader.bigd"
+      ],
+      "entityRequires": [
+        "DataNode/DataTable/Create/quest/DTQuestTenDaysAwardsEntity"
+      ]
+    },
+    {
+      "module": "DTRelicDBModel",
+      "resolved": true,
+      "path": "girlswar_merged_extracted/decoded/xlua_all/datanode/datatable/create/maze/2831795655459297172_DTRelicDBModel_security_xor_raw.lua",
+      "requirePaths": [
+        "DataNode/DataTable/Create/maze/DTRelicDBModel"
+      ],
+      "classification": "self_populates_when_client_io_disabled",
+      "recommendation": "Use GameInit.ServerLoadTable=false and GameTools.ClientIsSupportIOLoad()=false. That keeps GetList/GetEntity on InitRequire(), which loads embedded EntityTableData. Returning true switches to .bigd IO files; ServerLoadTable=true expects a JSON cache via GameInit.ReadJsonData.",
+      "usesServerLoadTable": true,
+      "usesClientIsSupportIOLoad": true,
+      "hasInitRequire": true,
+      "hasInitIO": true,
+      "hasGetListByIO": true,
+      "readJsonFiles": [
+        "DTRelicEntityData.txt"
+      ],
+      "writeJsonFiles": [
+        "DTRelicEntityData.txt"
+      ],
+      "ioFiles": [
+        "/Download/IO/maze/DTRelicEntityTableData.bigd",
+        "/Download/IO/maze/DTRelicEntityTableDataHeader.bigd",
+        "/download/config/maze/DTRelicEntityTableData.bigd",
+        "/download/config/maze/DTRelicEntityTableDataHeader.bigd"
+      ],
+      "entityRequires": [
+        "DataNode/DataTable/Create/maze/DTRelicEntity"
+      ]
+    },
+    {
+      "module": "DTSelectPool2DBModel",
+      "resolved": true,
+      "path": "girlswar_merged_extracted/decoded/xlua_all/datanode/datatable/create/calendar/7875449691623915074_DTSelectPool2DBModel_security_xor_raw.lua",
+      "requirePaths": [
+        "DataNode/DataTable/Create/calendar/DTSelectPool2DBModel"
+      ],
+      "classification": "self_populates_when_client_io_disabled",
+      "recommendation": "Use GameInit.ServerLoadTable=false and GameTools.ClientIsSupportIOLoad()=false. That keeps GetList/GetEntity on InitRequire(), which loads embedded EntityTableData. Returning true switches to .bigd IO files; ServerLoadTable=true expects a JSON cache via GameInit.ReadJsonData.",
+      "usesServerLoadTable": true,
+      "usesClientIsSupportIOLoad": true,
+      "hasInitRequire": true,
+      "hasInitIO": true,
+      "hasGetListByIO": true,
+      "readJsonFiles": [
+        "DTSelectPool2EntityData.txt"
+      ],
+      "writeJsonFiles": [
+        "DTSelectPool2EntityData.txt"
+      ],
+      "ioFiles": [
+        "/Download/IO/calendar/DTSelectPool2EntityTableData.bigd",
+        "/Download/IO/calendar/DTSelectPool2EntityTableDataHeader.bigd",
+        "/download/config/calendar/DTSelectPool2EntityTableData.bigd",
+        "/download/config/calendar/DTSelectPool2EntityTableDataHeader.bigd"
+      ],
+      "entityRequires": [
+        "DataNode/DataTable/Create/calendar/DTSelectPool2Entity"
+      ]
+    },
+    {
+      "module": "DTSelectPoolDBModel",
+      "resolved": true,
+      "path": "girlswar_merged_extracted/decoded/xlua_all/datanode/datatable/create/calendar/5455756974505365775_DTSelectPoolDBModel_security_xor_raw.lua",
+      "requirePaths": [
+        "DataNode/DataTable/Create/calendar/DTSelectPoolDBModel"
+      ],
+      "classification": "self_populates_when_client_io_disabled",
+      "recommendation": "Use GameInit.ServerLoadTable=false and GameTools.ClientIsSupportIOLoad()=false. That keeps GetList/GetEntity on InitRequire(), which loads embedded EntityTableData. Returning true switches to .bigd IO files; ServerLoadTable=true expects a JSON cache via GameInit.ReadJsonData.",
+      "usesServerLoadTable": true,
+      "usesClientIsSupportIOLoad": true,
+      "hasInitRequire": true,
+      "hasInitIO": true,
+      "hasGetListByIO": true,
+      "readJsonFiles": [
+        "DTSelectPoolEntityData.txt"
+      ],
+      "writeJsonFiles": [
+        "DTSelectPoolEntityData.txt"
+      ],
+      "ioFiles": [
+        "/Download/IO/calendar/DTSelectPoolEntityTableData.bigd",
+        "/Download/IO/calendar/DTSelectPoolEntityTableDataHeader.bigd",
+        "/download/config/calendar/DTSelectPoolEntityTableData.bigd",
+        "/download/config/calendar/DTSelectPoolEntityTableDataHeader.bigd"
+      ],
+      "entityRequires": [
+        "DataNode/DataTable/Create/calendar/DTSelectPoolEntity"
+      ]
+    },
+    {
+      "module": "DTSkillActDBModel",
+      "resolved": true,
+      "path": "girlswar_merged_extracted/decoded/xlua_all/datanode/datatable/create/skillact/-5677974714178506027_DTSkillActDBModel_security_xor_raw.lua",
+      "requirePaths": [
+        "DataNode/DataTable/Create/skillAct/DTSkillActDBModel"
+      ],
+      "classification": "self_populates_when_client_io_disabled",
+      "recommendation": "Use GameInit.ServerLoadTable=false and GameTools.ClientIsSupportIOLoad()=false. That keeps GetList/GetEntity on InitRequire(), which loads embedded EntityTableData. Returning true switches to .bigd IO files; ServerLoadTable=true expects a JSON cache via GameInit.ReadJsonData.",
+      "usesServerLoadTable": true,
+      "usesClientIsSupportIOLoad": true,
+      "hasInitRequire": true,
+      "hasInitIO": true,
+      "hasGetListByIO": true,
+      "readJsonFiles": [
+        "DTSkillActEntityData.txt"
+      ],
+      "writeJsonFiles": [
+        "DTSkillActEntityData.txt"
+      ],
+      "ioFiles": [
+        "/Download/IO/skillact/DTSkillActEntityTableData.bigd",
+        "/Download/IO/skillact/DTSkillActEntityTableDataHeader.bigd",
+        "/download/config/skillact/DTSkillActEntityTableData.bigd",
+        "/download/config/skillact/DTSkillActEntityTableDataHeader.bigd"
+      ],
+      "entityRequires": [
+        "DataNode/DataTable/Create/skillAct/DTSkillActEntity"
+      ]
+    },
+    {
+      "module": "DTSkillPasDBModel",
+      "resolved": true,
+      "path": "girlswar_merged_extracted/decoded/xlua_all/datanode/datatable/create/skillact/6958314557822657500_DTSkillPasDBModel_security_xor_raw.lua",
+      "requirePaths": [
+        "DataNode/DataTable/Create/skillAct/DTSkillPasDBModel"
+      ],
+      "classification": "self_populates_when_client_io_disabled",
+      "recommendation": "Use GameInit.ServerLoadTable=false and GameTools.ClientIsSupportIOLoad()=false. That keeps GetList/GetEntity on InitRequire(), which loads embedded EntityTableData. Returning true switches to .bigd IO files; ServerLoadTable=true expects a JSON cache via GameInit.ReadJsonData.",
+      "usesServerLoadTable": true,
+      "usesClientIsSupportIOLoad": true,
+      "hasInitRequire": true,
+      "hasInitIO": true,
+      "hasGetListByIO": true,
+      "readJsonFiles": [
+        "DTSkillPasEntityData.txt"
+      ],
+      "writeJsonFiles": [
+        "DTSkillPasEntityData.txt"
+      ],
+      "ioFiles": [
+        "/Download/IO/skillact/DTSkillPasEntityTableData.bigd",
+        "/Download/IO/skillact/DTSkillPasEntityTableDataHeader.bigd",
+        "/download/config/skillact/DTSkillPasEntityTableData.bigd",
+        "/download/config/skillact/DTSkillPasEntityTableDataHeader.bigd"
+      ],
+      "entityRequires": [
+        "DataNode/DataTable/Create/skillAct/DTSkillPasEntity"
+      ]
+    },
+    {
+      "module": "DTSolderAwardDBModel",
+      "resolved": true,
+      "path": "girlswar_merged_extracted/decoded/xlua_all/datanode/datatable/create/solder/-428798590485405528_DTSolderAwardDBModel_security_xor_raw.lua",
+      "requirePaths": [
+        "DataNode/DataTable/Create/solder/DTSolderAwardDBModel"
+      ],
+      "classification": "self_populates_when_client_io_disabled",
+      "recommendation": "Use GameInit.ServerLoadTable=false and GameTools.ClientIsSupportIOLoad()=false. That keeps GetList/GetEntity on InitRequire(), which loads embedded EntityTableData. Returning true switches to .bigd IO files; ServerLoadTable=true expects a JSON cache via GameInit.ReadJsonData.",
+      "usesServerLoadTable": true,
+      "usesClientIsSupportIOLoad": true,
+      "hasInitRequire": true,
+      "hasInitIO": true,
+      "hasGetListByIO": true,
+      "readJsonFiles": [
+        "DTSolderAwardEntityData.txt"
+      ],
+      "writeJsonFiles": [
+        "DTSolderAwardEntityData.txt"
+      ],
+      "ioFiles": [
+        "/Download/IO/solder/DTSolderAwardEntityTableData.bigd",
+        "/Download/IO/solder/DTSolderAwardEntityTableDataHeader.bigd",
+        "/download/config/solder/DTSolderAwardEntityTableData.bigd",
+        "/download/config/solder/DTSolderAwardEntityTableDataHeader.bigd"
+      ],
+      "entityRequires": [
+        "DataNode/DataTable/Create/solder/DTSolderAwardEntity"
+      ]
+    },
+    {
+      "module": "DTSolderDBModel",
+      "resolved": true,
+      "path": "girlswar_merged_extracted/decoded/xlua_all/datanode/datatable/create/solder/8056731782479142022_DTSolderDBModel_security_xor_raw.lua",
+      "requirePaths": [
+        "DataNode/DataTable/Create/solder/DTSolderDBModel"
+      ],
+      "classification": "self_populates_when_client_io_disabled",
+      "recommendation": "Use GameInit.ServerLoadTable=false and GameTools.ClientIsSupportIOLoad()=false. That keeps GetList/GetEntity on InitRequire(), which loads embedded EntityTableData. Returning true switches to .bigd IO files; ServerLoadTable=true expects a JSON cache via GameInit.ReadJsonData.",
+      "usesServerLoadTable": true,
+      "usesClientIsSupportIOLoad": true,
+      "hasInitRequire": true,
+      "hasInitIO": true,
+      "hasGetListByIO": true,
+      "readJsonFiles": [
+        "DTSolderEntityData.txt"
+      ],
+      "writeJsonFiles": [
+        "DTSolderEntityData.txt"
+      ],
+      "ioFiles": [
+        "/Download/IO/solder/DTSolderEntityTableData.bigd",
+        "/Download/IO/solder/DTSolderEntityTableDataHeader.bigd",
+        "/download/config/solder/DTSolderEntityTableData.bigd",
+        "/download/config/solder/DTSolderEntityTableDataHeader.bigd"
+      ],
+      "entityRequires": [
+        "DataNode/DataTable/Create/solder/DTSolderEntity"
+      ]
+    },
+    {
+      "module": "DTSoulDBModel",
+      "resolved": true,
+      "path": "girlswar_merged_extracted/decoded/xlua_all/datanode/datatable/create/soul/2853373232601794449_DTSoulDBModel_security_xor_raw.lua",
+      "requirePaths": [
+        "DataNode/DataTable/Create/soul/DTSoulDBModel"
+      ],
+      "classification": "self_populates_when_client_io_disabled",
+      "recommendation": "Use GameInit.ServerLoadTable=false and GameTools.ClientIsSupportIOLoad()=false. That keeps GetList/GetEntity on InitRequire(), which loads embedded EntityTableData. Returning true switches to .bigd IO files; ServerLoadTable=true expects a JSON cache via GameInit.ReadJsonData.",
+      "usesServerLoadTable": true,
+      "usesClientIsSupportIOLoad": true,
+      "hasInitRequire": true,
+      "hasInitIO": true,
+      "hasGetListByIO": true,
+      "readJsonFiles": [
+        "DTSoulEntityData.txt"
+      ],
+      "writeJsonFiles": [
+        "DTSoulEntityData.txt"
+      ],
+      "ioFiles": [
+        "/Download/IO/soul/DTSoulEntityTableData.bigd",
+        "/Download/IO/soul/DTSoulEntityTableDataHeader.bigd",
+        "/download/config/soul/DTSoulEntityTableData.bigd",
+        "/download/config/soul/DTSoulEntityTableDataHeader.bigd"
+      ],
+      "entityRequires": [
+        "DataNode/DataTable/Create/soul/DTSoulEntity"
+      ]
+    },
+    {
+      "module": "DTStoryChapterDBModel",
+      "resolved": true,
+      "path": "girlswar_merged_extracted/decoded/xlua_all/datanode/datatable/create/maps/-2989818044046047609_DTStoryChapterDBModel_security_xor_raw.lua",
+      "requirePaths": [
+        "DataNode/DataTable/Create/maps/DTStoryChapterDBModel"
+      ],
+      "classification": "self_populates_when_client_io_disabled",
+      "recommendation": "Use GameInit.ServerLoadTable=false and GameTools.ClientIsSupportIOLoad()=false. That keeps GetList/GetEntity on InitRequire(), which loads embedded EntityTableData. Returning true switches to .bigd IO files; ServerLoadTable=true expects a JSON cache via GameInit.ReadJsonData.",
+      "usesServerLoadTable": true,
+      "usesClientIsSupportIOLoad": true,
+      "hasInitRequire": true,
+      "hasInitIO": true,
+      "hasGetListByIO": true,
+      "readJsonFiles": [
+        "DTStoryChapterEntityData.txt"
+      ],
+      "writeJsonFiles": [
+        "DTStoryChapterEntityData.txt"
+      ],
+      "ioFiles": [
+        "/Download/IO/maps/DTStoryChapterEntityTableData.bigd",
+        "/Download/IO/maps/DTStoryChapterEntityTableDataHeader.bigd",
+        "/download/config/maps/DTStoryChapterEntityTableData.bigd",
+        "/download/config/maps/DTStoryChapterEntityTableDataHeader.bigd"
+      ],
+      "entityRequires": [
+        "DataNode/DataTable/Create/maps/DTStoryChapterEntity"
+      ]
+    },
+    {
+      "module": "DTStorySessionDBModel",
+      "resolved": true,
+      "path": "girlswar_merged_extracted/decoded/xlua_all/datanode/datatable/create/maps/6565192311674940112_DTStorySessionDBModel_security_xor_raw.lua",
+      "requirePaths": [
+        "DataNode/DataTable/Create/maps/DTStorySessionDBModel"
+      ],
+      "classification": "self_populates_when_client_io_disabled",
+      "recommendation": "Use GameInit.ServerLoadTable=false and GameTools.ClientIsSupportIOLoad()=false. That keeps GetList/GetEntity on InitRequire(), which loads embedded EntityTableData. Returning true switches to .bigd IO files; ServerLoadTable=true expects a JSON cache via GameInit.ReadJsonData.",
+      "usesServerLoadTable": true,
+      "usesClientIsSupportIOLoad": true,
+      "hasInitRequire": true,
+      "hasInitIO": true,
+      "hasGetListByIO": true,
+      "readJsonFiles": [
+        "DTStorySessionEntityData.txt"
+      ],
+      "writeJsonFiles": [
+        "DTStorySessionEntityData.txt"
+      ],
+      "ioFiles": [
+        "/Download/IO/maps/DTStorySessionEntityTableData.bigd",
+        "/Download/IO/maps/DTStorySessionEntityTableDataHeader.bigd",
+        "/download/config/maps/DTStorySessionEntityTableData.bigd",
+        "/download/config/maps/DTStorySessionEntityTableDataHeader.bigd"
+      ],
+      "entityRequires": [
+        "DataNode/DataTable/Create/maps/DTStorySessionEntity"
+      ]
+    },
+    {
+      "module": "DTSuitDBModel",
+      "resolved": true,
+      "path": "girlswar_merged_extracted/decoded/xlua_all/datanode/datatable/create/equip/6594761380891874669_DTSuitDBModel_security_xor_raw.lua",
+      "requirePaths": [
+        "DataNode/DataTable/Create/equip/DTSuitDBModel"
+      ],
+      "classification": "self_populates_when_client_io_disabled",
+      "recommendation": "Use GameInit.ServerLoadTable=false and GameTools.ClientIsSupportIOLoad()=false. That keeps GetList/GetEntity on InitRequire(), which loads embedded EntityTableData. Returning true switches to .bigd IO files; ServerLoadTable=true expects a JSON cache via GameInit.ReadJsonData.",
+      "usesServerLoadTable": true,
+      "usesClientIsSupportIOLoad": true,
+      "hasInitRequire": true,
+      "hasInitIO": true,
+      "hasGetListByIO": true,
+      "readJsonFiles": [
+        "DTSuitEntityData.txt"
+      ],
+      "writeJsonFiles": [
+        "DTSuitEntityData.txt"
+      ],
+      "ioFiles": [
+        "/Download/IO/equip/DTSuitEntityTableData.bigd",
+        "/Download/IO/equip/DTSuitEntityTableDataHeader.bigd",
+        "/download/config/equip/DTSuitEntityTableData.bigd",
+        "/download/config/equip/DTSuitEntityTableDataHeader.bigd"
+      ],
+      "entityRequires": [
+        "DataNode/DataTable/Create/equip/DTSuitEntity"
+      ]
+    },
+    {
+      "module": "DTSymphonyDBModel",
+      "resolved": true,
+      "path": "girlswar_merged_extracted/decoded/xlua_all/datanode/datatable/create/symphony/-5154917032124657559_DTSymphonyDBModel_security_xor_raw.lua",
+      "requirePaths": [
+        "DataNode/DataTable/Create/symphony/DTSymphonyDBModel"
+      ],
+      "classification": "self_populates_when_client_io_disabled",
+      "recommendation": "Use GameInit.ServerLoadTable=false and GameTools.ClientIsSupportIOLoad()=false. That keeps GetList/GetEntity on InitRequire(), which loads embedded EntityTableData. Returning true switches to .bigd IO files; ServerLoadTable=true expects a JSON cache via GameInit.ReadJsonData.",
+      "usesServerLoadTable": true,
+      "usesClientIsSupportIOLoad": true,
+      "hasInitRequire": true,
+      "hasInitIO": true,
+      "hasGetListByIO": true,
+      "readJsonFiles": [
+        "DTSymphonyEntityData.txt"
+      ],
+      "writeJsonFiles": [
+        "DTSymphonyEntityData.txt"
+      ],
+      "ioFiles": [
+        "/Download/IO/symphony/DTSymphonyEntityTableData.bigd",
+        "/Download/IO/symphony/DTSymphonyEntityTableDataHeader.bigd",
+        "/download/config/symphony/DTSymphonyEntityTableData.bigd",
+        "/download/config/symphony/DTSymphonyEntityTableDataHeader.bigd"
+      ],
+      "entityRequires": [
+        "DataNode/DataTable/Create/symphony/DTSymphonyEntity"
+      ]
+    },
+    {
+      "module": "DTTowerDBModel",
+      "resolved": true,
+      "path": "girlswar_merged_extracted/decoded/xlua_all/datanode/datatable/create/maps/-246034607377986004_DTTowerDBModel_security_xor_raw.lua",
+      "requirePaths": [
+        "DataNode/DataTable/Create/maps/DTTowerDBModel"
+      ],
+      "classification": "self_populates_when_client_io_disabled",
+      "recommendation": "Use GameInit.ServerLoadTable=false and GameTools.ClientIsSupportIOLoad()=false. That keeps GetList/GetEntity on InitRequire(), which loads embedded EntityTableData. Returning true switches to .bigd IO files; ServerLoadTable=true expects a JSON cache via GameInit.ReadJsonData.",
+      "usesServerLoadTable": true,
+      "usesClientIsSupportIOLoad": true,
+      "hasInitRequire": true,
+      "hasInitIO": true,
+      "hasGetListByIO": true,
+      "readJsonFiles": [
+        "DTTowerEntityData.txt"
+      ],
+      "writeJsonFiles": [
+        "DTTowerEntityData.txt"
+      ],
+      "ioFiles": [
+        "/Download/IO/maps/DTTowerEntityTableData.bigd",
+        "/Download/IO/maps/DTTowerEntityTableDataHeader.bigd",
+        "/download/config/maps/DTTowerEntityTableData.bigd",
+        "/download/config/maps/DTTowerEntityTableDataHeader.bigd"
+      ],
+      "entityRequires": [
+        "DataNode/DataTable/Create/maps/DTTowerEntity"
+      ]
+    },
+    {
+      "module": "DTTowerFundDBModel",
+      "resolved": true,
+      "path": "girlswar_merged_extracted/decoded/xlua_all/datanode/datatable/create/activity/3283878406497914355_DTTowerFundDBModel_security_xor_raw.lua",
+      "requirePaths": [
+        "DataNode/DataTable/Create/activity/DTTowerFundDBModel"
+      ],
+      "classification": "self_populates_when_client_io_disabled",
+      "recommendation": "Use GameInit.ServerLoadTable=false and GameTools.ClientIsSupportIOLoad()=false. That keeps GetList/GetEntity on InitRequire(), which loads embedded EntityTableData. Returning true switches to .bigd IO files; ServerLoadTable=true expects a JSON cache via GameInit.ReadJsonData.",
+      "usesServerLoadTable": true,
+      "usesClientIsSupportIOLoad": true,
+      "hasInitRequire": true,
+      "hasInitIO": true,
+      "hasGetListByIO": true,
+      "readJsonFiles": [
+        "DTTowerFundEntityData.txt"
+      ],
+      "writeJsonFiles": [
+        "DTTowerFundEntityData.txt"
+      ],
+      "ioFiles": [
+        "/Download/IO/activity/DTTowerFundEntityTableData.bigd",
+        "/Download/IO/activity/DTTowerFundEntityTableDataHeader.bigd",
+        "/download/config/activity/DTTowerFundEntityTableData.bigd",
+        "/download/config/activity/DTTowerFundEntityTableDataHeader.bigd"
+      ],
+      "entityRequires": [
+        "DataNode/DataTable/Create/activity/DTTowerFundEntity"
+      ]
+    },
+    {
+      "module": "DTTowerFundNew2DBModel",
+      "resolved": true,
+      "path": "girlswar_merged_extracted/decoded/xlua_all/datanode/datatable/create/activity/-1537981430859252229_DTTowerFundNew2DBModel_security_xor_raw.lua",
+      "requirePaths": [
+        "DataNode/DataTable/Create/activity/DTTowerFundNew2DBModel"
+      ],
+      "classification": "self_populates_when_client_io_disabled",
+      "recommendation": "Use GameInit.ServerLoadTable=false and GameTools.ClientIsSupportIOLoad()=false. That keeps GetList/GetEntity on InitRequire(), which loads embedded EntityTableData. Returning true switches to .bigd IO files; ServerLoadTable=true expects a JSON cache via GameInit.ReadJsonData.",
+      "usesServerLoadTable": true,
+      "usesClientIsSupportIOLoad": true,
+      "hasInitRequire": true,
+      "hasInitIO": true,
+      "hasGetListByIO": true,
+      "readJsonFiles": [
+        "DTTowerFundNew2EntityData.txt"
+      ],
+      "writeJsonFiles": [
+        "DTTowerFundNew2EntityData.txt"
+      ],
+      "ioFiles": [
+        "/Download/IO/activity/DTTowerFundNew2EntityTableData.bigd",
+        "/Download/IO/activity/DTTowerFundNew2EntityTableDataHeader.bigd",
+        "/download/config/activity/DTTowerFundNew2EntityTableData.bigd",
+        "/download/config/activity/DTTowerFundNew2EntityTableDataHeader.bigd"
+      ],
+      "entityRequires": [
+        "DataNode/DataTable/Create/activity/DTTowerFundNew2Entity"
+      ]
+    },
+    {
+      "module": "DTTowerFundNewDBModel",
+      "resolved": true,
+      "path": "girlswar_merged_extracted/decoded/xlua_all/datanode/datatable/create/activity/4919578326888511362_DTTowerFundNewDBModel_security_xor_raw.lua",
+      "requirePaths": [
+        "DataNode/DataTable/Create/activity/DTTowerFundNewDBModel"
+      ],
+      "classification": "self_populates_when_client_io_disabled",
+      "recommendation": "Use GameInit.ServerLoadTable=false and GameTools.ClientIsSupportIOLoad()=false. That keeps GetList/GetEntity on InitRequire(), which loads embedded EntityTableData. Returning true switches to .bigd IO files; ServerLoadTable=true expects a JSON cache via GameInit.ReadJsonData.",
+      "usesServerLoadTable": true,
+      "usesClientIsSupportIOLoad": true,
+      "hasInitRequire": true,
+      "hasInitIO": true,
+      "hasGetListByIO": true,
+      "readJsonFiles": [
+        "DTTowerFundNewEntityData.txt"
+      ],
+      "writeJsonFiles": [
+        "DTTowerFundNewEntityData.txt"
+      ],
+      "ioFiles": [
+        "/Download/IO/activity/DTTowerFundNewEntityTableData.bigd",
+        "/Download/IO/activity/DTTowerFundNewEntityTableDataHeader.bigd",
+        "/download/config/activity/DTTowerFundNewEntityTableData.bigd",
+        "/download/config/activity/DTTowerFundNewEntityTableDataHeader.bigd"
+      ],
+      "entityRequires": [
+        "DataNode/DataTable/Create/activity/DTTowerFundNewEntity"
+      ]
+    },
+    {
+      "module": "DTTreasureDBModel",
+      "resolved": true,
+      "path": "girlswar_merged_extracted/decoded/xlua_all/datanode/datatable/create/treasure/3953076141575635037_DTTreasureDBModel_security_xor_raw.lua",
+      "requirePaths": [
+        "DataNode/DataTable/Create/treasure/DTTreasureDBModel"
+      ],
+      "classification": "self_populates_when_client_io_disabled",
+      "recommendation": "Use GameInit.ServerLoadTable=false and GameTools.ClientIsSupportIOLoad()=false. That keeps GetList/GetEntity on InitRequire(), which loads embedded EntityTableData. Returning true switches to .bigd IO files; ServerLoadTable=true expects a JSON cache via GameInit.ReadJsonData.",
+      "usesServerLoadTable": true,
+      "usesClientIsSupportIOLoad": true,
+      "hasInitRequire": true,
+      "hasInitIO": true,
+      "hasGetListByIO": true,
+      "readJsonFiles": [
+        "DTTreasureEntityData.txt"
+      ],
+      "writeJsonFiles": [
+        "DTTreasureEntityData.txt"
+      ],
+      "ioFiles": [
+        "/Download/IO/treasure/DTTreasureEntityTableData.bigd",
+        "/Download/IO/treasure/DTTreasureEntityTableDataHeader.bigd",
+        "/download/config/treasure/DTTreasureEntityTableData.bigd",
+        "/download/config/treasure/DTTreasureEntityTableDataHeader.bigd"
+      ],
+      "entityRequires": [
+        "DataNode/DataTable/Create/treasure/DTTreasureEntity"
+      ]
+    },
+    {
+      "module": "DTTreasureSkillDBModel",
+      "resolved": true,
+      "path": "girlswar_merged_extracted/decoded/xlua_all/datanode/datatable/create/treasure/-4342356748431709437_DTTreasureSkillDBModel_security_xor_raw.lua",
+      "requirePaths": [
+        "DataNode/DataTable/Create/treasure/DTTreasureSkillDBModel"
+      ],
+      "classification": "self_populates_when_client_io_disabled",
+      "recommendation": "Use GameInit.ServerLoadTable=false and GameTools.ClientIsSupportIOLoad()=false. That keeps GetList/GetEntity on InitRequire(), which loads embedded EntityTableData. Returning true switches to .bigd IO files; ServerLoadTable=true expects a JSON cache via GameInit.ReadJsonData.",
+      "usesServerLoadTable": true,
+      "usesClientIsSupportIOLoad": true,
+      "hasInitRequire": true,
+      "hasInitIO": true,
+      "hasGetListByIO": true,
+      "readJsonFiles": [
+        "DTTreasureSkillEntityData.txt"
+      ],
+      "writeJsonFiles": [
+        "DTTreasureSkillEntityData.txt"
+      ],
+      "ioFiles": [
+        "/Download/IO/treasure/DTTreasureSkillEntityTableData.bigd",
+        "/Download/IO/treasure/DTTreasureSkillEntityTableDataHeader.bigd",
+        "/download/config/treasure/DTTreasureSkillEntityTableData.bigd",
+        "/download/config/treasure/DTTreasureSkillEntityTableDataHeader.bigd"
+      ],
+      "entityRequires": [
+        "DataNode/DataTable/Create/treasure/DTTreasureSkillEntity"
+      ]
+    },
+    {
+      "module": "DTTreasureStrengDBModel",
+      "resolved": true,
+      "path": "girlswar_merged_extracted/decoded/xlua_all/datanode/datatable/create/treasure/8276015802686515932_DTTreasureStrengDBModel_security_xor_raw.lua",
+      "requirePaths": [
+        "DataNode/DataTable/Create/treasure/DTTreasureStrengDBModel"
+      ],
+      "classification": "self_populates_when_client_io_disabled",
+      "recommendation": "Use GameInit.ServerLoadTable=false and GameTools.ClientIsSupportIOLoad()=false. That keeps GetList/GetEntity on InitRequire(), which loads embedded EntityTableData. Returning true switches to .bigd IO files; ServerLoadTable=true expects a JSON cache via GameInit.ReadJsonData.",
+      "usesServerLoadTable": true,
+      "usesClientIsSupportIOLoad": true,
+      "hasInitRequire": true,
+      "hasInitIO": true,
+      "hasGetListByIO": true,
+      "readJsonFiles": [
+        "DTTreasureStrengEntityData.txt"
+      ],
+      "writeJsonFiles": [
+        "DTTreasureStrengEntityData.txt"
+      ],
+      "ioFiles": [
+        "/Download/IO/treasure/DTTreasureStrengEntityTableData.bigd",
+        "/Download/IO/treasure/DTTreasureStrengEntityTableDataHeader.bigd",
+        "/download/config/treasure/DTTreasureStrengEntityTableData.bigd",
+        "/download/config/treasure/DTTreasureStrengEntityTableDataHeader.bigd"
+      ],
+      "entityRequires": [
+        "DataNode/DataTable/Create/treasure/DTTreasureStrengEntity"
+      ]
+    },
+    {
+      "module": "DTUnderWearDBModel",
+      "resolved": true,
+      "path": "girlswar_merged_extracted/decoded/xlua_all/datanode/datatable/create/underwear/1929880985264800547_DTUnderWearDBModel_security_xor_raw.lua",
+      "requirePaths": [
+        "DataNode/DataTable/Create/underwear/DTUnderWearDBModel"
+      ],
+      "classification": "self_populates_when_client_io_disabled",
+      "recommendation": "Use GameInit.ServerLoadTable=false and GameTools.ClientIsSupportIOLoad()=false. That keeps GetList/GetEntity on InitRequire(), which loads embedded EntityTableData. Returning true switches to .bigd IO files; ServerLoadTable=true expects a JSON cache via GameInit.ReadJsonData.",
+      "usesServerLoadTable": true,
+      "usesClientIsSupportIOLoad": true,
+      "hasInitRequire": true,
+      "hasInitIO": true,
+      "hasGetListByIO": true,
+      "readJsonFiles": [
+        "DTUnderWearEntityData.txt"
+      ],
+      "writeJsonFiles": [
+        "DTUnderWearEntityData.txt"
+      ],
+      "ioFiles": [
+        "/Download/IO/underwear/DTUnderWearEntityTableData.bigd",
+        "/Download/IO/underwear/DTUnderWearEntityTableDataHeader.bigd",
+        "/download/config/underwear/DTUnderWearEntityTableData.bigd",
+        "/download/config/underwear/DTUnderWearEntityTableDataHeader.bigd"
+      ],
+      "entityRequires": [
+        "DataNode/DataTable/Create/underwear/DTUnderWearEntity"
+      ]
+    },
+    {
+      "module": "DTUnderWearExpDBModel",
+      "resolved": true,
+      "path": "girlswar_merged_extracted/decoded/xlua_all/datanode/datatable/create/underwear/8498863243463629853_DTUnderWearExpDBModel_security_xor_raw.lua",
+      "requirePaths": [
+        "DataNode/DataTable/Create/underwear/DTUnderWearExpDBModel"
+      ],
+      "classification": "self_populates_when_client_io_disabled",
+      "recommendation": "Use GameInit.ServerLoadTable=false and GameTools.ClientIsSupportIOLoad()=false. That keeps GetList/GetEntity on InitRequire(), which loads embedded EntityTableData. Returning true switches to .bigd IO files; ServerLoadTable=true expects a JSON cache via GameInit.ReadJsonData.",
+      "usesServerLoadTable": true,
+      "usesClientIsSupportIOLoad": true,
+      "hasInitRequire": true,
+      "hasInitIO": true,
+      "hasGetListByIO": true,
+      "readJsonFiles": [
+        "DTUnderWearExpEntityData.txt"
+      ],
+      "writeJsonFiles": [
+        "DTUnderWearExpEntityData.txt"
+      ],
+      "ioFiles": [
+        "/Download/IO/underwear/DTUnderWearExpEntityTableData.bigd",
+        "/Download/IO/underwear/DTUnderWearExpEntityTableDataHeader.bigd",
+        "/download/config/underwear/DTUnderWearExpEntityTableData.bigd",
+        "/download/config/underwear/DTUnderWearExpEntityTableDataHeader.bigd"
+      ],
+      "entityRequires": [
+        "DataNode/DataTable/Create/underwear/DTUnderWearExpEntity"
+      ]
+    },
+    {
+      "module": "DTUnderWearStrengDBModel",
+      "resolved": true,
+      "path": "girlswar_merged_extracted/decoded/xlua_all/datanode/datatable/create/underwear/741140355659968295_DTUnderWearStrengDBModel_security_xor_raw.lua",
+      "requirePaths": [
+        "DataNode/DataTable/Create/underwear/DTUnderWearStrengDBModel"
+      ],
+      "classification": "self_populates_when_client_io_disabled",
+      "recommendation": "Use GameInit.ServerLoadTable=false and GameTools.ClientIsSupportIOLoad()=false. That keeps GetList/GetEntity on InitRequire(), which loads embedded EntityTableData. Returning true switches to .bigd IO files; ServerLoadTable=true expects a JSON cache via GameInit.ReadJsonData.",
+      "usesServerLoadTable": true,
+      "usesClientIsSupportIOLoad": true,
+      "hasInitRequire": true,
+      "hasInitIO": true,
+      "hasGetListByIO": true,
+      "readJsonFiles": [
+        "DTUnderWearStrengEntityData.txt"
+      ],
+      "writeJsonFiles": [
+        "DTUnderWearStrengEntityData.txt"
+      ],
+      "ioFiles": [
+        "/Download/IO/underwear/DTUnderWearStrengEntityTableData.bigd",
+        "/Download/IO/underwear/DTUnderWearStrengEntityTableDataHeader.bigd",
+        "/download/config/underwear/DTUnderWearStrengEntityTableData.bigd",
+        "/download/config/underwear/DTUnderWearStrengEntityTableDataHeader.bigd"
+      ],
+      "entityRequires": [
+        "DataNode/DataTable/Create/underwear/DTUnderWearStrengEntity"
+      ]
+    },
+    {
+      "module": "DTUnderWearSuitDBModel",
+      "resolved": true,
+      "path": "girlswar_merged_extracted/decoded/xlua_all/datanode/datatable/create/underwear/-6084048246628750124_DTUnderWearSuitDBModel_security_xor_raw.lua",
+      "requirePaths": [
+        "DataNode/DataTable/Create/underwear/DTUnderWearSuitDBModel"
+      ],
+      "classification": "self_populates_when_client_io_disabled",
+      "recommendation": "Use GameInit.ServerLoadTable=false and GameTools.ClientIsSupportIOLoad()=false. That keeps GetList/GetEntity on InitRequire(), which loads embedded EntityTableData. Returning true switches to .bigd IO files; ServerLoadTable=true expects a JSON cache via GameInit.ReadJsonData.",
+      "usesServerLoadTable": true,
+      "usesClientIsSupportIOLoad": true,
+      "hasInitRequire": true,
+      "hasInitIO": true,
+      "hasGetListByIO": true,
+      "readJsonFiles": [
+        "DTUnderWearSuitEntityData.txt"
+      ],
+      "writeJsonFiles": [
+        "DTUnderWearSuitEntityData.txt"
+      ],
+      "ioFiles": [
+        "/Download/IO/underwear/DTUnderWearSuitEntityTableData.bigd",
+        "/Download/IO/underwear/DTUnderWearSuitEntityTableDataHeader.bigd",
+        "/download/config/underwear/DTUnderWearSuitEntityTableData.bigd",
+        "/download/config/underwear/DTUnderWearSuitEntityTableDataHeader.bigd"
+      ],
+      "entityRequires": [
+        "DataNode/DataTable/Create/underwear/DTUnderWearSuitEntity"
+      ]
+    },
+    {
+      "module": "DTUnderWearSuitDefineDBModel",
+      "resolved": true,
+      "path": "girlswar_merged_extracted/decoded/xlua_all/datanode/datatable/create/underwear/3019775625911066492_DTUnderWearSuitDefineDBModel_security_xor_raw.lua",
+      "requirePaths": [
+        "DataNode/DataTable/Create/underwear/DTUnderWearSuitDefineDBModel"
+      ],
+      "classification": "self_populates_when_client_io_disabled",
+      "recommendation": "Use GameInit.ServerLoadTable=false and GameTools.ClientIsSupportIOLoad()=false. That keeps GetList/GetEntity on InitRequire(), which loads embedded EntityTableData. Returning true switches to .bigd IO files; ServerLoadTable=true expects a JSON cache via GameInit.ReadJsonData.",
+      "usesServerLoadTable": true,
+      "usesClientIsSupportIOLoad": true,
+      "hasInitRequire": true,
+      "hasInitIO": true,
+      "hasGetListByIO": true,
+      "readJsonFiles": [
+        "DTUnderWearSuitDefineEntityData.txt"
+      ],
+      "writeJsonFiles": [
+        "DTUnderWearSuitDefineEntityData.txt"
+      ],
+      "ioFiles": [
+        "/Download/IO/underwear/DTUnderWearSuitDefineEntityTableData.bigd",
+        "/Download/IO/underwear/DTUnderWearSuitDefineEntityTableDataHeader.bigd",
+        "/download/config/underwear/DTUnderWearSuitDefineEntityTableData.bigd",
+        "/download/config/underwear/DTUnderWearSuitDefineEntityTableDataHeader.bigd"
+      ],
+      "entityRequires": [
+        "DataNode/DataTable/Create/underwear/DTUnderWearSuitDefineEntity"
+      ]
+    },
+    {
+      "module": "DTUnderwearAtlasDBModel",
+      "resolved": true,
+      "path": "girlswar_merged_extracted/decoded/xlua_all/datanode/datatable/create/underwear/8691996653122973257_DTUnderwearAtlasDBModel_security_xor_raw.lua",
+      "requirePaths": [
+        "DataNode/DataTable/Create/underwear/DTUnderwearAtlasDBModel"
+      ],
+      "classification": "self_populates_when_client_io_disabled",
+      "recommendation": "Use GameInit.ServerLoadTable=false and GameTools.ClientIsSupportIOLoad()=false. That keeps GetList/GetEntity on InitRequire(), which loads embedded EntityTableData. Returning true switches to .bigd IO files; ServerLoadTable=true expects a JSON cache via GameInit.ReadJsonData.",
+      "usesServerLoadTable": true,
+      "usesClientIsSupportIOLoad": true,
+      "hasInitRequire": true,
+      "hasInitIO": true,
+      "hasGetListByIO": true,
+      "readJsonFiles": [
+        "DTUnderwearAtlasEntityData.txt"
+      ],
+      "writeJsonFiles": [
+        "DTUnderwearAtlasEntityData.txt"
+      ],
+      "ioFiles": [
+        "/Download/IO/underwear/DTUnderwearAtlasEntityTableData.bigd",
+        "/Download/IO/underwear/DTUnderwearAtlasEntityTableDataHeader.bigd",
+        "/download/config/underwear/DTUnderwearAtlasEntityTableData.bigd",
+        "/download/config/underwear/DTUnderwearAtlasEntityTableDataHeader.bigd"
+      ],
+      "entityRequires": [
+        "DataNode/DataTable/Create/underwear/DTUnderwearAtlasEntity"
+      ]
+    },
+    {
+      "module": "DTUnderwearSaleDBModel",
+      "resolved": true,
+      "path": "girlswar_merged_extracted/decoded/xlua_all/datanode/datatable/create/activity/-6927076104572250592_DTUnderwearSaleDBModel_security_xor_raw.lua",
+      "requirePaths": [
+        "DataNode/DataTable/Create/activity/DTUnderwearSaleDBModel"
+      ],
+      "classification": "self_populates_when_client_io_disabled",
+      "recommendation": "Use GameInit.ServerLoadTable=false and GameTools.ClientIsSupportIOLoad()=false. That keeps GetList/GetEntity on InitRequire(), which loads embedded EntityTableData. Returning true switches to .bigd IO files; ServerLoadTable=true expects a JSON cache via GameInit.ReadJsonData.",
+      "usesServerLoadTable": true,
+      "usesClientIsSupportIOLoad": true,
+      "hasInitRequire": true,
+      "hasInitIO": true,
+      "hasGetListByIO": true,
+      "readJsonFiles": [
+        "DTUnderwearSaleEntityData.txt"
+      ],
+      "writeJsonFiles": [
+        "DTUnderwearSaleEntityData.txt"
+      ],
+      "ioFiles": [
+        "/Download/IO/activity/DTUnderwearSaleEntityTableData.bigd",
+        "/Download/IO/activity/DTUnderwearSaleEntityTableDataHeader.bigd",
+        "/download/config/activity/DTUnderwearSaleEntityTableData.bigd",
+        "/download/config/activity/DTUnderwearSaleEntityTableDataHeader.bigd"
+      ],
+      "entityRequires": [
+        "DataNode/DataTable/Create/activity/DTUnderwearSaleEntity"
+      ]
+    },
+    {
+      "module": "DTUnderwearSaleNewDBModel",
+      "resolved": true,
+      "path": "girlswar_merged_extracted/decoded/xlua_all/datanode/datatable/create/activity/1309438216603513375_DTUnderwearSaleNewDBModel_security_xor_raw.lua",
+      "requirePaths": [
+        "DataNode/DataTable/Create/activity/DTUnderwearSaleNewDBModel"
+      ],
+      "classification": "self_populates_when_client_io_disabled",
+      "recommendation": "Use GameInit.ServerLoadTable=false and GameTools.ClientIsSupportIOLoad()=false. That keeps GetList/GetEntity on InitRequire(), which loads embedded EntityTableData. Returning true switches to .bigd IO files; ServerLoadTable=true expects a JSON cache via GameInit.ReadJsonData.",
+      "usesServerLoadTable": true,
+      "usesClientIsSupportIOLoad": true,
+      "hasInitRequire": true,
+      "hasInitIO": true,
+      "hasGetListByIO": true,
+      "readJsonFiles": [
+        "DTUnderwearSaleNewEntityData.txt"
+      ],
+      "writeJsonFiles": [
+        "DTUnderwearSaleNewEntityData.txt"
+      ],
+      "ioFiles": [
+        "/Download/IO/activity/DTUnderwearSaleNewEntityTableData.bigd",
+        "/Download/IO/activity/DTUnderwearSaleNewEntityTableDataHeader.bigd",
+        "/download/config/activity/DTUnderwearSaleNewEntityTableData.bigd",
+        "/download/config/activity/DTUnderwearSaleNewEntityTableDataHeader.bigd"
+      ],
+      "entityRequires": [
+        "DataNode/DataTable/Create/activity/DTUnderwearSaleNewEntity"
+      ]
+    },
+    {
+      "module": "DTWatermelonBossDBModel",
+      "resolved": true,
+      "path": "girlswar_merged_extracted/decoded/xlua_all/datanode/datatable/create/activity/-194252628843909794_DTWatermelonBossDBModel_security_xor_raw.lua",
+      "requirePaths": [
+        "DataNode/DataTable/Create/activity/DTWatermelonBossDBModel"
+      ],
+      "classification": "self_populates_when_client_io_disabled",
+      "recommendation": "Use GameInit.ServerLoadTable=false and GameTools.ClientIsSupportIOLoad()=false. That keeps GetList/GetEntity on InitRequire(), which loads embedded EntityTableData. Returning true switches to .bigd IO files; ServerLoadTable=true expects a JSON cache via GameInit.ReadJsonData.",
+      "usesServerLoadTable": true,
+      "usesClientIsSupportIOLoad": true,
+      "hasInitRequire": true,
+      "hasInitIO": true,
+      "hasGetListByIO": true,
+      "readJsonFiles": [
+        "DTWatermelonBossEntityData.txt"
+      ],
+      "writeJsonFiles": [
+        "DTWatermelonBossEntityData.txt"
+      ],
+      "ioFiles": [
+        "/Download/IO/activity/DTWatermelonBossEntityTableData.bigd",
+        "/Download/IO/activity/DTWatermelonBossEntityTableDataHeader.bigd",
+        "/download/config/activity/DTWatermelonBossEntityTableData.bigd",
+        "/download/config/activity/DTWatermelonBossEntityTableDataHeader.bigd"
+      ],
+      "entityRequires": [
+        "DataNode/DataTable/Create/activity/DTWatermelonBossEntity"
+      ]
+    },
+    {
+      "module": "DTWatermelonCfgDBModel",
+      "resolved": true,
+      "path": "girlswar_merged_extracted/decoded/xlua_all/datanode/datatable/create/activity/8958448016403630391_DTWatermelonCfgDBModel_security_xor_raw.lua",
+      "requirePaths": [
+        "DataNode/DataTable/Create/activity/DTWatermelonCfgDBModel"
+      ],
+      "classification": "self_populates_when_client_io_disabled",
+      "recommendation": "Use GameInit.ServerLoadTable=false and GameTools.ClientIsSupportIOLoad()=false. That keeps GetList/GetEntity on InitRequire(), which loads embedded EntityTableData. Returning true switches to .bigd IO files; ServerLoadTable=true expects a JSON cache via GameInit.ReadJsonData.",
+      "usesServerLoadTable": true,
+      "usesClientIsSupportIOLoad": true,
+      "hasInitRequire": true,
+      "hasInitIO": true,
+      "hasGetListByIO": true,
+      "readJsonFiles": [
+        "DTWatermelonCfgEntityData.txt"
+      ],
+      "writeJsonFiles": [
+        "DTWatermelonCfgEntityData.txt"
+      ],
+      "ioFiles": [
+        "/Download/IO/activity/DTWatermelonCfgEntityTableData.bigd",
+        "/Download/IO/activity/DTWatermelonCfgEntityTableDataHeader.bigd",
+        "/download/config/activity/DTWatermelonCfgEntityTableData.bigd",
+        "/download/config/activity/DTWatermelonCfgEntityTableDataHeader.bigd"
+      ],
+      "entityRequires": [
+        "DataNode/DataTable/Create/activity/DTWatermelonCfgEntity"
+      ]
+    },
+    {
+      "module": "DTWeaponTradeDBModel",
+      "resolved": true,
+      "path": "girlswar_merged_extracted/decoded/xlua_all/datanode/datatable/create/equip/7545718970497786812_DTWeaponTradeDBModel_security_xor_raw.lua",
+      "requirePaths": [
+        "DataNode/DataTable/Create/equip/DTWeaponTradeDBModel"
+      ],
+      "classification": "self_populates_when_client_io_disabled",
+      "recommendation": "Use GameInit.ServerLoadTable=false and GameTools.ClientIsSupportIOLoad()=false. That keeps GetList/GetEntity on InitRequire(), which loads embedded EntityTableData. Returning true switches to .bigd IO files; ServerLoadTable=true expects a JSON cache via GameInit.ReadJsonData.",
+      "usesServerLoadTable": true,
+      "usesClientIsSupportIOLoad": true,
+      "hasInitRequire": true,
+      "hasInitIO": true,
+      "hasGetListByIO": true,
+      "readJsonFiles": [
+        "DTWeaponTradeEntityData.txt"
+      ],
+      "writeJsonFiles": [
+        "DTWeaponTradeEntityData.txt"
+      ],
+      "ioFiles": [
+        "/Download/IO/equip/DTWeaponTradeEntityTableData.bigd",
+        "/Download/IO/equip/DTWeaponTradeEntityTableDataHeader.bigd",
+        "/download/config/equip/DTWeaponTradeEntityTableData.bigd",
+        "/download/config/equip/DTWeaponTradeEntityTableDataHeader.bigd"
+      ],
+      "entityRequires": [
+        "DataNode/DataTable/Create/equip/DTWeaponTradeEntity"
+      ]
+    },
+    {
+      "module": "DTXiandanDBModel",
+      "resolved": true,
+      "path": "girlswar_merged_extracted/decoded/xlua_all/datanode/datatable/create/xiandan/1901212366827395393_DTXiandanDBModel_security_xor_raw.lua",
+      "requirePaths": [
+        "DataNode/DataTable/Create/xiandan/DTXiandanDBModel"
+      ],
+      "classification": "self_populates_when_client_io_disabled",
+      "recommendation": "Use GameInit.ServerLoadTable=false and GameTools.ClientIsSupportIOLoad()=false. That keeps GetList/GetEntity on InitRequire(), which loads embedded EntityTableData. Returning true switches to .bigd IO files; ServerLoadTable=true expects a JSON cache via GameInit.ReadJsonData.",
+      "usesServerLoadTable": true,
+      "usesClientIsSupportIOLoad": true,
+      "hasInitRequire": true,
+      "hasInitIO": true,
+      "hasGetListByIO": true,
+      "readJsonFiles": [
+        "DTXiandanEntityData.txt"
+      ],
+      "writeJsonFiles": [
+        "DTXiandanEntityData.txt"
+      ],
+      "ioFiles": [
+        "/Download/IO/xiandan/DTXiandanEntityTableData.bigd",
+        "/Download/IO/xiandan/DTXiandanEntityTableDataHeader.bigd",
+        "/download/config/xiandan/DTXiandanEntityTableData.bigd",
+        "/download/config/xiandan/DTXiandanEntityTableDataHeader.bigd"
+      ],
+      "entityRequires": [
+        "DataNode/DataTable/Create/xiandan/DTXiandanEntity"
+      ]
+    },
+    {
+      "module": "DTmodelDBModel",
+      "resolved": true,
+      "path": "girlswar_merged_extracted/decoded/xlua_all/datanode/datatable/create/model/7724483992175364113_DTmodelDBModel_security_xor_raw.lua",
+      "requirePaths": [
+        "DataNode/DataTable/Create/model/DTmodelDBModel"
+      ],
+      "classification": "self_populates_when_client_io_disabled",
+      "recommendation": "Use GameInit.ServerLoadTable=false and GameTools.ClientIsSupportIOLoad()=false. That keeps GetList/GetEntity on InitRequire(), which loads embedded EntityTableData. Returning true switches to .bigd IO files; ServerLoadTable=true expects a JSON cache via GameInit.ReadJsonData.",
+      "usesServerLoadTable": true,
+      "usesClientIsSupportIOLoad": true,
+      "hasInitRequire": true,
+      "hasInitIO": true,
+      "hasGetListByIO": true,
+      "readJsonFiles": [
+        "DTmodelEntityData.txt"
+      ],
+      "writeJsonFiles": [
+        "DTmodelEntityData.txt"
+      ],
+      "ioFiles": [
+        "/Download/IO/model/DTmodelEntityTableData.bigd",
+        "/Download/IO/model/DTmodelEntityTableDataHeader.bigd",
+        "/download/config/model/DTmodelEntityTableData.bigd",
+        "/download/config/model/DTmodelEntityTableDataHeader.bigd"
+      ],
+      "entityRequires": [
+        "DataNode/DataTable/Create/model/DTmodelEntity"
+      ]
+    }
+  ]
+}

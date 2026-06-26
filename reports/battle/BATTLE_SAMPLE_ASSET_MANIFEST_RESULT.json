@@ -1,0 +1,72 @@
+{
+  "name": "BATTLE_SAMPLE_ASSET_MANIFEST_RESULT",
+  "generatedAtUtc": "2026-06-26T16:26:40.609846+00:00",
+  "pass": true,
+  "manifestPath": "girlswar_battle_unity/Assets/RestoreData/battle/BATTLE_SAMPLE_ASSET_MANIFEST.json",
+  "summary": {
+    "payloadOurHeroDids": [
+      1036,
+      1002,
+      1034
+    ],
+    "payloadEnemyHeroDids": [
+      1100111,
+      1100112,
+      1100113,
+      1100121,
+      1100122,
+      1100123,
+      1100131,
+      1100132,
+      1100133
+    ],
+    "handoffActorIds": [
+      1036,
+      1002,
+      1034,
+      1100111,
+      1100112,
+      1100113,
+      1100121,
+      1100122,
+      1100123,
+      1100131,
+      1100132,
+      1100133
+    ],
+    "actorCount": 12,
+    "statusCounts": {
+      "loadable": 3,
+      "not_fetchable_local": 1,
+      "unresolved_enemy_payload_instance": 8
+    },
+    "missingCounts": {
+      "actor_bundle_missing_from_assetbundle_index": 1,
+      "actor_bundle_unresolved": 8,
+      "spine_atlas_missing": 9,
+      "spine_skeleton_missing": 9,
+      "spine_texture_missing": 8
+    },
+    "loadableActorIds": [
+      1002,
+      1034,
+      1100111
+    ],
+    "knownMissingOrUnresolvedActorIds": [
+      1036,
+      1100112,
+      1100113,
+      1100121,
+      1100122,
+      1100123,
+      1100131,
+      1100132,
+      1100133
+    ]
+  },
+  "notableFindings": [
+    "1036 actor bundle remains missing locally, but its skill timeline rows resolve as data-only because owner actor is unavailable.",
+    "1002, 1034, and enemy 1100111/3001 have loadable actor bundles with skeleton, atlas, and texture evidence.",
+    "Enemy payload ids 1100112, 1100113, 1100121, 1100122, 1100123, 1100131, 1100132, and 1100133 remain unresolved actor instances in local source evidence."
+  ]
+}

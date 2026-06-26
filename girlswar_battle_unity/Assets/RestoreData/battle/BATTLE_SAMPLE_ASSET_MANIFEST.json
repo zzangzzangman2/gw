@@ -1,0 +1,1392 @@
+{
+  "name": "BATTLE_SAMPLE_ASSET_MANIFEST",
+  "generatedBy": "_restore_tools/scripts/build_battle_asset_manifest.py",
+  "generatedAtUtc": "2026-06-26T16:26:40.609846+00:00",
+  "workspace": "C:\\Users\\godho\\Downloads\\girlswar",
+  "sourceInputs": {
+    "payload": "girlswar_battle_unity/Assets/RestoreData/battle/BATTLE_TEST_PAYLOAD.json",
+    "characterCatalog": "reports/characters/GIRLSWAR_CHARACTER_CATALOG.json",
+    "localPlayableManifest": "reports/battle/BATTLE_LOCAL_PLAYABLE_PAYLOAD_MANIFEST_SPEEDLINE_RESOLVED.json",
+    "assetbundles": "girlswar_merged_extracted/indexes/assetbundles.csv",
+    "unityTextassets": "girlswar_merged_extracted/indexes/unity_textassets.csv",
+    "unityImages": "girlswar_merged_extracted/indexes/unity_images.csv"
+  },
+  "summary": {
+    "payloadOurHeroDids": [
+      1036,
+      1002,
+      1034
+    ],
+    "payloadEnemyHeroDids": [
+      1100111,
+      1100112,
+      1100113,
+      1100121,
+      1100122,
+      1100123,
+      1100131,
+      1100132,
+      1100133
+    ],
+    "handoffActorIds": [
+      1036,
+      1002,
+      1034,
+      1100111,
+      1100112,
+      1100113,
+      1100121,
+      1100122,
+      1100123,
+      1100131,
+      1100132,
+      1100133
+    ],
+    "actorCount": 12,
+    "statusCounts": {
+      "loadable": 3,
+      "not_fetchable_local": 1,
+      "unresolved_enemy_payload_instance": 8
+    },
+    "missingCounts": {
+      "actor_bundle_missing_from_assetbundle_index": 1,
+      "actor_bundle_unresolved": 8,
+      "spine_atlas_missing": 9,
+      "spine_skeleton_missing": 9,
+      "spine_texture_missing": 8
+    },
+    "loadableActorIds": [
+      1002,
+      1034,
+      1100111
+    ],
+    "knownMissingOrUnresolvedActorIds": [
+      1036,
+      1100112,
+      1100113,
+      1100121,
+      1100122,
+      1100123,
+      1100131,
+      1100132,
+      1100133
+    ]
+  },
+  "actors": {
+    "1036": {
+      "heroDid": 1036,
+      "side": "our",
+      "waveNo": "",
+      "slot": 1,
+      "payloadHeroId": 51469,
+      "nameKey": "heroname_1036",
+      "nameKo": "프리드리히",
+      "datatable": "DTHeroEntity",
+      "datatableFound": true,
+      "modelId": 1036,
+      "prefabId": 1036,
+      "actorBundle": "download/roleprefabsandres/battleprefabandres/1036.assetbundle",
+      "actorBundleExists": false,
+      "actorBundleIndexStatus": "",
+      "actorBundleCleanSlice": "",
+      "skeletonDataAsset": "",
+      "skeletonDataAssetExists": false,
+      "atlas": "",
+      "atlasExists": false,
+      "textures": [
+        "extracted/unity/bundles/b_2516176d6c2b7cc4/images/T/-8245074512591886459_1036.png"
+      ],
+      "textureExists": [
+        true
+      ],
+      "skillIds": [
+        1036101,
+        1036201,
+        1036301,
+        1036401,
+        1036402
+      ],
+      "skillTimelineAssets": [
+        {
+          "skillDid": 1036101,
+          "skillType": 1,
+          "prefabId": 1036101,
+          "skillBundle": "download/skillprefabsandres/1036.assetbundle",
+          "skillBundleExists": true,
+          "assetPathViaGetSysprefabData": "Assets/Download/SkillPrefabsAndRes/1036/1036101.prefab",
+          "timelineFound": true,
+          "localStatus": "data_only_missing_actor",
+          "missingDependencyBundles": [],
+          "reason": "timeline resolves, but owner actor is not_fetchable_local"
+        },
+        {
+          "skillDid": 1036201,
+          "skillType": 1,
+          "prefabId": 1036201,
+          "skillBundle": "download/skillprefabsandres/1036.assetbundle",
+          "skillBundleExists": true,
+          "assetPathViaGetSysprefabData": "Assets/Download/SkillPrefabsAndRes/1036/1036201.prefab",
+          "timelineFound": true,
+          "localStatus": "data_only_missing_actor",
+          "missingDependencyBundles": [
+            "download/commonprefabsandres/skilleffect/commonskillprefabsandres1/redspeedline.assetbundle"
+          ],
+          "reason": "timeline resolves, but owner actor is not_fetchable_local"
+        },
+        {
+          "skillDid": 1036301,
+          "skillType": 1,
+          "prefabId": 1036301,
+          "skillBundle": "download/skillprefabsandres/1036.assetbundle",
+          "skillBundleExists": true,
+          "assetPathViaGetSysprefabData": "Assets/Download/SkillPrefabsAndRes/1036/1036301.prefab",
+          "timelineFound": true,
+          "localStatus": "data_only_missing_actor",
+          "missingDependencyBundles": [
+            "download/commonprefabsandres/skilleffect/commonskillprefabsandres1/yellospeedline.assetbundle"
+          ],
+          "reason": "timeline resolves, but owner actor is not_fetchable_local"
+        },
+        {
+          "skillDid": 1036301,
+          "skillType": 1,
+          "prefabId": 1036351,
+          "skillBundle": "download/skillprefabsandres/1036.assetbundle",
+          "skillBundleExists": true,
+          "assetPathViaGetSysprefabData": "Assets/Download/SkillPrefabsAndRes/1036/1036351.prefab",
+          "timelineFound": true,
+          "localStatus": "data_only_missing_actor",
+          "missingDependencyBundles": [
+            "download/commonprefabsandres/skilleffect/commonskillprefabsandres1/yellospeedline.assetbundle"
+          ],
+          "reason": "timeline resolves, but owner actor is not_fetchable_local"
+        },
+        {
+          "skillDid": 1036401,
+          "skillType": 2,
+          "prefabId": "",
+          "skillBundle": "",
+          "skillBundleExists": false,
+          "assetPathViaGetSysprefabData": "",
+          "timelineFound": false,
+          "localStatus": "passive_no_timeline",
+          "missingDependencyBundles": [],
+          "reason": "passive-style skill row has no DTSkillAct prefab/timeline mapping"
+        },
+        {
+          "skillDid": 1036402,
+          "skillType": 2,
+          "prefabId": "",
+          "skillBundle": "",
+          "skillBundleExists": false,
+          "assetPathViaGetSysprefabData": "",
+          "timelineFound": false,
+          "localStatus": "passive_no_timeline",
+          "missingDependencyBundles": [],
+          "reason": "passive-style skill row has no DTSkillAct prefab/timeline mapping"
+        }
+      ],
+      "localStatus": "not_fetchable_local",
+      "loadStatus": "bundle_not_in_extracted_assetbundle_index",
+      "reason": "1036 actor bundle is present in CDNVersionFile but absent locally; CDN acquisition trace found no asset CDN build rule",
+      "missing": [
+        "actor_bundle_missing_from_assetbundle_index",
+        "spine_skeleton_missing",
+        "spine_atlas_missing"
+      ],
+      "source": [
+        "BATTLE_TEST_PAYLOAD.json",
+        "GIRLSWAR_CHARACTER_CATALOG.json",
+        "BATTLE_LOCAL_PLAYABLE_PAYLOAD_MANIFEST_SPEEDLINE_RESOLVED.json",
+        "assetbundles/unity_textassets/unity_images indexes"
+      ]
+    },
+    "1002": {
+      "heroDid": 1002,
+      "side": "our",
+      "waveNo": "",
+      "slot": 2,
+      "payloadHeroId": 50870,
+      "nameKey": "heroname_1002",
+      "nameKo": "차차",
+      "datatable": "DTHeroEntity",
+      "datatableFound": true,
+      "modelId": 1002,
+      "prefabId": 1002,
+      "actorBundle": "download/roleprefabsandres/battleprefabandres/1002.assetbundle",
+      "actorBundleExists": true,
+      "actorBundleIndexStatus": "ok",
+      "actorBundleCleanSlice": "extracted/unity/clean_unityfs_slices/download/roleprefabsandres/battleprefabandres/1002.assetbundle",
+      "skeletonDataAsset": "extracted/unity/bundles/b_a11e4439fd9a0a50/textassets/1665224429881118700_1002.skel.txt",
+      "skeletonDataAssetExists": true,
+      "atlas": "extracted/unity/bundles/b_a11e4439fd9a0a50/textassets/3373340142783789617_1002.atlas.txt",
+      "atlasExists": true,
+      "textures": [
+        "extracted/unity/bundles/b_a11e4439fd9a0a50/images/T/2058673591951818171_1002.png"
+      ],
+      "textureExists": [
+        true
+      ],
+      "skillIds": [
+        1002101,
+        1002201,
+        1002301
+      ],
+      "skillTimelineAssets": [
+        {
+          "skillDid": 1002101,
+          "skillType": 1,
+          "prefabId": 1002101,
+          "skillBundle": "download/skillprefabsandres/1002.assetbundle",
+          "skillBundleExists": true,
+          "assetPathViaGetSysprefabData": "Assets/Download/SkillPrefabsAndRes/1002/1002101.prefab",
+          "timelineFound": true,
+          "localStatus": "loadable",
+          "missingDependencyBundles": [],
+          "reason": "owner actor, skill bundle, timeline, and known prefab dependency bundles exist locally"
+        },
+        {
+          "skillDid": 1002201,
+          "skillType": 1,
+          "prefabId": 1002201,
+          "skillBundle": "download/skillprefabsandres/1002.assetbundle",
+          "skillBundleExists": true,
+          "assetPathViaGetSysprefabData": "Assets/Download/SkillPrefabsAndRes/1002/1002201.prefab",
+          "timelineFound": true,
+          "localStatus": "loadable",
+          "missingDependencyBundles": [],
+          "reason": "main skill timeline bundle exists, but known common dependency bundle(s) are unresolved"
+        },
+        {
+          "skillDid": 1002301,
+          "skillType": 1,
+          "prefabId": 1002301,
+          "skillBundle": "download/skillprefabsandres/1002.assetbundle",
+          "skillBundleExists": true,
+          "assetPathViaGetSysprefabData": "Assets/Download/SkillPrefabsAndRes/1002/1002301.prefab",
+          "timelineFound": true,
+          "localStatus": "loadable",
+          "missingDependencyBundles": [],
+          "reason": "main skill timeline bundle exists, but known common dependency bundle(s) are unresolved"
+        },
+        {
+          "skillDid": 1002301,
+          "skillType": 1,
+          "prefabId": 1002351,
+          "skillBundle": "download/skillprefabsandres/1002.assetbundle",
+          "skillBundleExists": true,
+          "assetPathViaGetSysprefabData": "Assets/Download/SkillPrefabsAndRes/1002/1002351.prefab",
+          "timelineFound": true,
+          "localStatus": "loadable",
+          "missingDependencyBundles": [],
+          "reason": "main skill timeline bundle exists, but known common dependency bundle(s) are unresolved"
+        }
+      ],
+      "localStatus": "loadable",
+      "loadStatus": "loadable_spine_bundle",
+      "reason": "actor bundle and spine evidence exist locally",
+      "missing": [],
+      "source": [
+        "BATTLE_TEST_PAYLOAD.json",
+        "GIRLSWAR_CHARACTER_CATALOG.json",
+        "BATTLE_LOCAL_PLAYABLE_PAYLOAD_MANIFEST_SPEEDLINE_RESOLVED.json",
+        "assetbundles/unity_textassets/unity_images indexes"
+      ]
+    },
+    "1034": {
+      "heroDid": 1034,
+      "side": "our",
+      "waveNo": "",
+      "slot": 3,
+      "payloadHeroId": 50874,
+      "nameKey": "heroname_1034",
+      "nameKo": "비스마르크",
+      "datatable": "DTHeroEntity",
+      "datatableFound": true,
+      "modelId": 1034,
+      "prefabId": 1034,
+      "actorBundle": "download/roleprefabsandres/battleprefabandres/1034.assetbundle",
+      "actorBundleExists": true,
+      "actorBundleIndexStatus": "ok",
+      "actorBundleCleanSlice": "extracted/unity/clean_unityfs_slices/download/roleprefabsandres/battleprefabandres/1034.assetbundle",
+      "skeletonDataAsset": "extracted/unity/bundles/b_da97dc9c8e06fcb3/textassets/-3260164475778644329_1034.skel.txt",
+      "skeletonDataAssetExists": true,
+      "atlas": "extracted/unity/bundles/b_da97dc9c8e06fcb3/textassets/9008888806324543472_1034.atlas.txt",
+      "atlasExists": true,
+      "textures": [
+        "extracted/unity/bundles/b_da97dc9c8e06fcb3/images/T/-8601115882506527001_1034.png"
+      ],
+      "textureExists": [
+        true
+      ],
+      "skillIds": [
+        1034101,
+        1034201,
+        1034301,
+        1034401,
+        1034402
+      ],
+      "skillTimelineAssets": [
+        {
+          "skillDid": 1034101,
+          "skillType": 1,
+          "prefabId": 1034101,
+          "skillBundle": "download/skillprefabsandres/1034.assetbundle",
+          "skillBundleExists": true,
+          "assetPathViaGetSysprefabData": "Assets/Download/SkillPrefabsAndRes/1034/1034101.prefab",
+          "timelineFound": true,
+          "localStatus": "loadable",
+          "missingDependencyBundles": [],
+          "reason": "owner actor, skill bundle, timeline, and known prefab dependency bundles exist locally"
+        },
+        {
+          "skillDid": 1034201,
+          "skillType": 1,
+          "prefabId": 1034201,
+          "skillBundle": "download/skillprefabsandres/1034.assetbundle",
+          "skillBundleExists": true,
+          "assetPathViaGetSysprefabData": "Assets/Download/SkillPrefabsAndRes/1034/1034201.prefab",
+          "timelineFound": true,
+          "localStatus": "loadable",
+          "missingDependencyBundles": [],
+          "reason": "main skill timeline bundle exists, but known common dependency bundle(s) are unresolved"
+        },
+        {
+          "skillDid": 1034301,
+          "skillType": 1,
+          "prefabId": 1034301,
+          "skillBundle": "download/skillprefabsandres/1034.assetbundle",
+          "skillBundleExists": true,
+          "assetPathViaGetSysprefabData": "Assets/Download/SkillPrefabsAndRes/1034/1034301.prefab",
+          "timelineFound": true,
+          "localStatus": "loadable",
+          "missingDependencyBundles": [],
+          "reason": "owner actor, skill bundle, timeline, and known prefab dependency bundles exist locally"
+        },
+        {
+          "skillDid": 1034301,
+          "skillType": 1,
+          "prefabId": 1034351,
+          "skillBundle": "download/skillprefabsandres/1034.assetbundle",
+          "skillBundleExists": true,
+          "assetPathViaGetSysprefabData": "Assets/Download/SkillPrefabsAndRes/1034/1034351.prefab",
+          "timelineFound": true,
+          "localStatus": "loadable",
+          "missingDependencyBundles": [],
+          "reason": "main skill timeline bundle exists, but known common dependency bundle(s) are unresolved"
+        },
+        {
+          "skillDid": 1034401,
+          "skillType": 2,
+          "prefabId": "",
+          "skillBundle": "",
+          "skillBundleExists": false,
+          "assetPathViaGetSysprefabData": "",
+          "timelineFound": false,
+          "localStatus": "passive_no_timeline",
+          "missingDependencyBundles": [],
+          "reason": "passive-style skill row has no DTSkillAct prefab/timeline mapping"
+        },
+        {
+          "skillDid": 1034402,
+          "skillType": 2,
+          "prefabId": "",
+          "skillBundle": "",
+          "skillBundleExists": false,
+          "assetPathViaGetSysprefabData": "",
+          "timelineFound": false,
+          "localStatus": "passive_no_timeline",
+          "missingDependencyBundles": [],
+          "reason": "passive-style skill row has no DTSkillAct prefab/timeline mapping"
+        }
+      ],
+      "localStatus": "loadable",
+      "loadStatus": "loadable_spine_bundle",
+      "reason": "actor bundle and spine evidence exist locally",
+      "missing": [],
+      "source": [
+        "BATTLE_TEST_PAYLOAD.json",
+        "GIRLSWAR_CHARACTER_CATALOG.json",
+        "BATTLE_LOCAL_PLAYABLE_PAYLOAD_MANIFEST_SPEEDLINE_RESOLVED.json",
+        "assetbundles/unity_textassets/unity_images indexes"
+      ]
+    },
+    "1100111": {
+      "heroDid": 1100111,
+      "side": "enemy",
+      "waveNo": 1,
+      "slot": 1,
+      "payloadHeroId": -1,
+      "nameKey": "monstername_3001",
+      "nameKo": "",
+      "datatable": "DTMonster_KEntity",
+      "datatableFound": true,
+      "modelId": 3001,
+      "prefabId": 3001,
+      "actorBundle": "download/roleprefabsandres/battleprefabandres/3001.assetbundle",
+      "actorBundleExists": true,
+      "actorBundleIndexStatus": "ok",
+      "actorBundleCleanSlice": "extracted/unity/clean_unityfs_slices/download/roleprefabsandres/battleprefabandres/3001.assetbundle",
+      "skeletonDataAsset": "extracted/unity/bundles/b_5a764c3b78a2386a/textassets/-756768513637643680_3001.skel.txt",
+      "skeletonDataAssetExists": true,
+      "atlas": "extracted/unity/bundles/b_5a764c3b78a2386a/textassets/-3102365806415234313_3001.atlas.txt",
+      "atlasExists": true,
+      "textures": [
+        "extracted/unity/bundles/b_5a764c3b78a2386a/images/T/-9168546056666942066_3001.png"
+      ],
+      "textureExists": [
+        true
+      ],
+      "skillIds": [
+        1012101,
+        1012201,
+        1012301,
+        1012401,
+        1012403
+      ],
+      "skillTimelineAssets": [
+        {
+          "skillDid": 1012101,
+          "skillType": 1,
+          "prefabId": 1012101,
+          "skillBundle": "download/skillprefabsandres/1012.assetbundle",
+          "skillBundleExists": true,
+          "assetPathViaGetSysprefabData": "Assets/Download/SkillPrefabsAndRes/1012/1012101.prefab",
+          "timelineFound": true,
+          "localStatus": "loadable",
+          "missingDependencyBundles": [],
+          "reason": "owner actor, skill bundle, timeline, and known prefab dependency bundles exist locally"
+        },
+        {
+          "skillDid": 1012201,
+          "skillType": 1,
+          "prefabId": 1012201,
+          "skillBundle": "download/skillprefabsandres/1012.assetbundle",
+          "skillBundleExists": true,
+          "assetPathViaGetSysprefabData": "Assets/Download/SkillPrefabsAndRes/1012/1012201.prefab",
+          "timelineFound": true,
+          "localStatus": "loadable",
+          "missingDependencyBundles": [],
+          "reason": "main skill timeline bundle exists, but known common dependency bundle(s) are unresolved"
+        },
+        {
+          "skillDid": 1012301,
+          "skillType": 1,
+          "prefabId": 1012301,
+          "skillBundle": "download/skillprefabsandres/1012.assetbundle",
+          "skillBundleExists": true,
+          "assetPathViaGetSysprefabData": "Assets/Download/SkillPrefabsAndRes/1012/1012301.prefab",
+          "timelineFound": true,
+          "localStatus": "loadable",
+          "missingDependencyBundles": [],
+          "reason": "main skill timeline bundle exists, but known common dependency bundle(s) are unresolved"
+        },
+        {
+          "skillDid": 1012301,
+          "skillType": 1,
+          "prefabId": 1012351,
+          "skillBundle": "download/skillprefabsandres/1012.assetbundle",
+          "skillBundleExists": true,
+          "assetPathViaGetSysprefabData": "Assets/Download/SkillPrefabsAndRes/1012/1012351.prefab",
+          "timelineFound": true,
+          "localStatus": "loadable",
+          "missingDependencyBundles": [],
+          "reason": "main skill timeline bundle exists, but known common dependency bundle(s) are unresolved"
+        },
+        {
+          "skillDid": 1012401,
+          "skillType": 2,
+          "prefabId": "",
+          "skillBundle": "",
+          "skillBundleExists": false,
+          "assetPathViaGetSysprefabData": "",
+          "timelineFound": false,
+          "localStatus": "passive_no_timeline",
+          "missingDependencyBundles": [],
+          "reason": "passive-style skill row has no DTSkillAct prefab/timeline mapping"
+        },
+        {
+          "skillDid": 1012403,
+          "skillType": 2,
+          "prefabId": "",
+          "skillBundle": "",
+          "skillBundleExists": false,
+          "assetPathViaGetSysprefabData": "",
+          "timelineFound": false,
+          "localStatus": "passive_no_timeline",
+          "missingDependencyBundles": [],
+          "reason": "passive-style skill row has no DTSkillAct prefab/timeline mapping"
+        }
+      ],
+      "localStatus": "loadable",
+      "loadStatus": "loadable_spine_bundle",
+      "reason": "actor bundle and spine evidence exist locally",
+      "missing": [],
+      "source": [
+        "BATTLE_TEST_PAYLOAD.json",
+        "BATTLE_LOCAL_PLAYABLE_PAYLOAD_MANIFEST_SPEEDLINE_RESOLVED.json",
+        "assetbundles/unity_textassets/unity_images indexes"
+      ]
+    },
+    "1100112": {
+      "heroDid": 1100112,
+      "side": "enemy",
+      "waveNo": 1,
+      "slot": 2,
+      "payloadHeroId": -2,
+      "nameKey": "",
+      "nameKo": "",
+      "datatable": "",
+      "datatableFound": false,
+      "modelId": "",
+      "prefabId": "",
+      "actorBundle": "",
+      "actorBundleExists": false,
+      "actorBundleIndexStatus": "",
+      "actorBundleCleanSlice": "",
+      "skeletonDataAsset": "",
+      "skeletonDataAssetExists": false,
+      "atlas": "",
+      "atlasExists": false,
+      "textures": [],
+      "textureExists": [],
+      "skillIds": [
+        1012101,
+        1012201,
+        1012301,
+        1012401,
+        1012403
+      ],
+      "skillTimelineAssets": [
+        {
+          "skillDid": 1012101,
+          "skillType": 1,
+          "prefabId": 1012101,
+          "skillBundle": "download/skillprefabsandres/1012.assetbundle",
+          "skillBundleExists": true,
+          "assetPathViaGetSysprefabData": "Assets/Download/SkillPrefabsAndRes/1012/1012101.prefab",
+          "timelineFound": true,
+          "localStatus": "data_only_missing_actor",
+          "missingDependencyBundles": [],
+          "reason": "timeline resolves, but owner actor is unresolved_enemy_payload_instance"
+        },
+        {
+          "skillDid": 1012201,
+          "skillType": 1,
+          "prefabId": 1012201,
+          "skillBundle": "download/skillprefabsandres/1012.assetbundle",
+          "skillBundleExists": true,
+          "assetPathViaGetSysprefabData": "Assets/Download/SkillPrefabsAndRes/1012/1012201.prefab",
+          "timelineFound": true,
+          "localStatus": "data_only_missing_actor",
+          "missingDependencyBundles": [
+            "download/commonprefabsandres/skilleffect/commonskillprefabsandres1/redspeedline.assetbundle"
+          ],
+          "reason": "timeline resolves, but owner actor is unresolved_enemy_payload_instance"
+        },
+        {
+          "skillDid": 1012301,
+          "skillType": 1,
+          "prefabId": 1012301,
+          "skillBundle": "download/skillprefabsandres/1012.assetbundle",
+          "skillBundleExists": true,
+          "assetPathViaGetSysprefabData": "Assets/Download/SkillPrefabsAndRes/1012/1012301.prefab",
+          "timelineFound": true,
+          "localStatus": "data_only_missing_actor",
+          "missingDependencyBundles": [
+            "download/commonprefabsandres/skilleffect/commonskillprefabsandres1/redspeedline.assetbundle"
+          ],
+          "reason": "timeline resolves, but owner actor is unresolved_enemy_payload_instance"
+        },
+        {
+          "skillDid": 1012301,
+          "skillType": 1,
+          "prefabId": 1012351,
+          "skillBundle": "download/skillprefabsandres/1012.assetbundle",
+          "skillBundleExists": true,
+          "assetPathViaGetSysprefabData": "Assets/Download/SkillPrefabsAndRes/1012/1012351.prefab",
+          "timelineFound": true,
+          "localStatus": "data_only_missing_actor",
+          "missingDependencyBundles": [
+            "download/commonprefabsandres/skilleffect/commonskillprefabsandres1/redspeedline.assetbundle"
+          ],
+          "reason": "timeline resolves, but owner actor is unresolved_enemy_payload_instance"
+        },
+        {
+          "skillDid": 1012401,
+          "skillType": 2,
+          "prefabId": "",
+          "skillBundle": "",
+          "skillBundleExists": false,
+          "assetPathViaGetSysprefabData": "",
+          "timelineFound": false,
+          "localStatus": "passive_no_timeline",
+          "missingDependencyBundles": [],
+          "reason": "passive-style skill row has no DTSkillAct prefab/timeline mapping"
+        },
+        {
+          "skillDid": 1012403,
+          "skillType": 2,
+          "prefabId": "",
+          "skillBundle": "",
+          "skillBundleExists": false,
+          "assetPathViaGetSysprefabData": "",
+          "timelineFound": false,
+          "localStatus": "passive_no_timeline",
+          "missingDependencyBundles": [],
+          "reason": "passive-style skill row has no DTSkillAct prefab/timeline mapping"
+        }
+      ],
+      "localStatus": "unresolved_enemy_payload_instance",
+      "loadStatus": "missing_model_or_prefab",
+      "reason": "payload enemy id has no authoritative DTMonster_* row or alias in local evidence",
+      "missing": [
+        "actor_bundle_unresolved",
+        "spine_skeleton_missing",
+        "spine_atlas_missing",
+        "spine_texture_missing"
+      ],
+      "source": [
+        "BATTLE_TEST_PAYLOAD.json",
+        "BATTLE_LOCAL_PLAYABLE_PAYLOAD_MANIFEST_SPEEDLINE_RESOLVED.json",
+        "assetbundles/unity_textassets/unity_images indexes"
+      ]
+    },
+    "1100113": {
+      "heroDid": 1100113,
+      "side": "enemy",
+      "waveNo": 1,
+      "slot": 3,
+      "payloadHeroId": -3,
+      "nameKey": "",
+      "nameKo": "",
+      "datatable": "",
+      "datatableFound": false,
+      "modelId": "",
+      "prefabId": "",
+      "actorBundle": "",
+      "actorBundleExists": false,
+      "actorBundleIndexStatus": "",
+      "actorBundleCleanSlice": "",
+      "skeletonDataAsset": "",
+      "skeletonDataAssetExists": false,
+      "atlas": "",
+      "atlasExists": false,
+      "textures": [],
+      "textureExists": [],
+      "skillIds": [
+        1012101,
+        1012201,
+        1012301,
+        1012401,
+        1012403
+      ],
+      "skillTimelineAssets": [
+        {
+          "skillDid": 1012101,
+          "skillType": 1,
+          "prefabId": 1012101,
+          "skillBundle": "download/skillprefabsandres/1012.assetbundle",
+          "skillBundleExists": true,
+          "assetPathViaGetSysprefabData": "Assets/Download/SkillPrefabsAndRes/1012/1012101.prefab",
+          "timelineFound": true,
+          "localStatus": "data_only_missing_actor",
+          "missingDependencyBundles": [],
+          "reason": "timeline resolves, but owner actor is unresolved_enemy_payload_instance"
+        },
+        {
+          "skillDid": 1012201,
+          "skillType": 1,
+          "prefabId": 1012201,
+          "skillBundle": "download/skillprefabsandres/1012.assetbundle",
+          "skillBundleExists": true,
+          "assetPathViaGetSysprefabData": "Assets/Download/SkillPrefabsAndRes/1012/1012201.prefab",
+          "timelineFound": true,
+          "localStatus": "data_only_missing_actor",
+          "missingDependencyBundles": [
+            "download/commonprefabsandres/skilleffect/commonskillprefabsandres1/redspeedline.assetbundle"
+          ],
+          "reason": "timeline resolves, but owner actor is unresolved_enemy_payload_instance"
+        },
+        {
+          "skillDid": 1012301,
+          "skillType": 1,
+          "prefabId": 1012301,
+          "skillBundle": "download/skillprefabsandres/1012.assetbundle",
+          "skillBundleExists": true,
+          "assetPathViaGetSysprefabData": "Assets/Download/SkillPrefabsAndRes/1012/1012301.prefab",
+          "timelineFound": true,
+          "localStatus": "data_only_missing_actor",
+          "missingDependencyBundles": [
+            "download/commonprefabsandres/skilleffect/commonskillprefabsandres1/redspeedline.assetbundle"
+          ],
+          "reason": "timeline resolves, but owner actor is unresolved_enemy_payload_instance"
+        },
+        {
+          "skillDid": 1012301,
+          "skillType": 1,
+          "prefabId": 1012351,
+          "skillBundle": "download/skillprefabsandres/1012.assetbundle",
+          "skillBundleExists": true,
+          "assetPathViaGetSysprefabData": "Assets/Download/SkillPrefabsAndRes/1012/1012351.prefab",
+          "timelineFound": true,
+          "localStatus": "data_only_missing_actor",
+          "missingDependencyBundles": [
+            "download/commonprefabsandres/skilleffect/commonskillprefabsandres1/redspeedline.assetbundle"
+          ],
+          "reason": "timeline resolves, but owner actor is unresolved_enemy_payload_instance"
+        },
+        {
+          "skillDid": 1012401,
+          "skillType": 2,
+          "prefabId": "",
+          "skillBundle": "",
+          "skillBundleExists": false,
+          "assetPathViaGetSysprefabData": "",
+          "timelineFound": false,
+          "localStatus": "passive_no_timeline",
+          "missingDependencyBundles": [],
+          "reason": "passive-style skill row has no DTSkillAct prefab/timeline mapping"
+        },
+        {
+          "skillDid": 1012403,
+          "skillType": 2,
+          "prefabId": "",
+          "skillBundle": "",
+          "skillBundleExists": false,
+          "assetPathViaGetSysprefabData": "",
+          "timelineFound": false,
+          "localStatus": "passive_no_timeline",
+          "missingDependencyBundles": [],
+          "reason": "passive-style skill row has no DTSkillAct prefab/timeline mapping"
+        }
+      ],
+      "localStatus": "unresolved_enemy_payload_instance",
+      "loadStatus": "missing_model_or_prefab",
+      "reason": "payload enemy id has no authoritative DTMonster_* row or alias in local evidence",
+      "missing": [
+        "actor_bundle_unresolved",
+        "spine_skeleton_missing",
+        "spine_atlas_missing",
+        "spine_texture_missing"
+      ],
+      "source": [
+        "BATTLE_TEST_PAYLOAD.json",
+        "BATTLE_LOCAL_PLAYABLE_PAYLOAD_MANIFEST_SPEEDLINE_RESOLVED.json",
+        "assetbundles/unity_textassets/unity_images indexes"
+      ]
+    },
+    "1100121": {
+      "heroDid": 1100121,
+      "side": "enemy",
+      "waveNo": 2,
+      "slot": 1,
+      "payloadHeroId": -1,
+      "nameKey": "",
+      "nameKo": "",
+      "datatable": "",
+      "datatableFound": false,
+      "modelId": "",
+      "prefabId": "",
+      "actorBundle": "",
+      "actorBundleExists": false,
+      "actorBundleIndexStatus": "",
+      "actorBundleCleanSlice": "",
+      "skeletonDataAsset": "",
+      "skeletonDataAssetExists": false,
+      "atlas": "",
+      "atlasExists": false,
+      "textures": [],
+      "textureExists": [],
+      "skillIds": [
+        1012101,
+        1012201,
+        1012301,
+        1012401,
+        1012403
+      ],
+      "skillTimelineAssets": [
+        {
+          "skillDid": 1012101,
+          "skillType": 1,
+          "prefabId": 1012101,
+          "skillBundle": "download/skillprefabsandres/1012.assetbundle",
+          "skillBundleExists": true,
+          "assetPathViaGetSysprefabData": "Assets/Download/SkillPrefabsAndRes/1012/1012101.prefab",
+          "timelineFound": true,
+          "localStatus": "data_only_missing_actor",
+          "missingDependencyBundles": [],
+          "reason": "timeline resolves, but owner actor is unresolved_enemy_payload_instance"
+        },
+        {
+          "skillDid": 1012201,
+          "skillType": 1,
+          "prefabId": 1012201,
+          "skillBundle": "download/skillprefabsandres/1012.assetbundle",
+          "skillBundleExists": true,
+          "assetPathViaGetSysprefabData": "Assets/Download/SkillPrefabsAndRes/1012/1012201.prefab",
+          "timelineFound": true,
+          "localStatus": "data_only_missing_actor",
+          "missingDependencyBundles": [
+            "download/commonprefabsandres/skilleffect/commonskillprefabsandres1/redspeedline.assetbundle"
+          ],
+          "reason": "timeline resolves, but owner actor is unresolved_enemy_payload_instance"
+        },
+        {
+          "skillDid": 1012301,
+          "skillType": 1,
+          "prefabId": 1012301,
+          "skillBundle": "download/skillprefabsandres/1012.assetbundle",
+          "skillBundleExists": true,
+          "assetPathViaGetSysprefabData": "Assets/Download/SkillPrefabsAndRes/1012/1012301.prefab",
+          "timelineFound": true,
+          "localStatus": "data_only_missing_actor",
+          "missingDependencyBundles": [
+            "download/commonprefabsandres/skilleffect/commonskillprefabsandres1/redspeedline.assetbundle"
+          ],
+          "reason": "timeline resolves, but owner actor is unresolved_enemy_payload_instance"
+        },
+        {
+          "skillDid": 1012301,
+          "skillType": 1,
+          "prefabId": 1012351,
+          "skillBundle": "download/skillprefabsandres/1012.assetbundle",
+          "skillBundleExists": true,
+          "assetPathViaGetSysprefabData": "Assets/Download/SkillPrefabsAndRes/1012/1012351.prefab",
+          "timelineFound": true,
+          "localStatus": "data_only_missing_actor",
+          "missingDependencyBundles": [
+            "download/commonprefabsandres/skilleffect/commonskillprefabsandres1/redspeedline.assetbundle"
+          ],
+          "reason": "timeline resolves, but owner actor is unresolved_enemy_payload_instance"
+        },
+        {
+          "skillDid": 1012401,
+          "skillType": 2,
+          "prefabId": "",
+          "skillBundle": "",
+          "skillBundleExists": false,
+          "assetPathViaGetSysprefabData": "",
+          "timelineFound": false,
+          "localStatus": "passive_no_timeline",
+          "missingDependencyBundles": [],
+          "reason": "passive-style skill row has no DTSkillAct prefab/timeline mapping"
+        },
+        {
+          "skillDid": 1012403,
+          "skillType": 2,
+          "prefabId": "",
+          "skillBundle": "",
+          "skillBundleExists": false,
+          "assetPathViaGetSysprefabData": "",
+          "timelineFound": false,
+          "localStatus": "passive_no_timeline",
+          "missingDependencyBundles": [],
+          "reason": "passive-style skill row has no DTSkillAct prefab/timeline mapping"
+        }
+      ],
+      "localStatus": "unresolved_enemy_payload_instance",
+      "loadStatus": "missing_model_or_prefab",
+      "reason": "payload enemy id has no authoritative DTMonster_* row or alias in local evidence",
+      "missing": [
+        "actor_bundle_unresolved",
+        "spine_skeleton_missing",
+        "spine_atlas_missing",
+        "spine_texture_missing"
+      ],
+      "source": [
+        "BATTLE_TEST_PAYLOAD.json",
+        "BATTLE_LOCAL_PLAYABLE_PAYLOAD_MANIFEST_SPEEDLINE_RESOLVED.json",
+        "assetbundles/unity_textassets/unity_images indexes"
+      ]
+    },
+    "1100122": {
+      "heroDid": 1100122,
+      "side": "enemy",
+      "waveNo": 2,
+      "slot": 2,
+      "payloadHeroId": -2,
+      "nameKey": "",
+      "nameKo": "",
+      "datatable": "",
+      "datatableFound": false,
+      "modelId": "",
+      "prefabId": "",
+      "actorBundle": "",
+      "actorBundleExists": false,
+      "actorBundleIndexStatus": "",
+      "actorBundleCleanSlice": "",
+      "skeletonDataAsset": "",
+      "skeletonDataAssetExists": false,
+      "atlas": "",
+      "atlasExists": false,
+      "textures": [],
+      "textureExists": [],
+      "skillIds": [
+        1012101,
+        1012201,
+        1012301,
+        1012401,
+        1012403
+      ],
+      "skillTimelineAssets": [
+        {
+          "skillDid": 1012101,
+          "skillType": 1,
+          "prefabId": 1012101,
+          "skillBundle": "download/skillprefabsandres/1012.assetbundle",
+          "skillBundleExists": true,
+          "assetPathViaGetSysprefabData": "Assets/Download/SkillPrefabsAndRes/1012/1012101.prefab",
+          "timelineFound": true,
+          "localStatus": "data_only_missing_actor",
+          "missingDependencyBundles": [],
+          "reason": "timeline resolves, but owner actor is unresolved_enemy_payload_instance"
+        },
+        {
+          "skillDid": 1012201,
+          "skillType": 1,
+          "prefabId": 1012201,
+          "skillBundle": "download/skillprefabsandres/1012.assetbundle",
+          "skillBundleExists": true,
+          "assetPathViaGetSysprefabData": "Assets/Download/SkillPrefabsAndRes/1012/1012201.prefab",
+          "timelineFound": true,
+          "localStatus": "data_only_missing_actor",
+          "missingDependencyBundles": [
+            "download/commonprefabsandres/skilleffect/commonskillprefabsandres1/redspeedline.assetbundle"
+          ],
+          "reason": "timeline resolves, but owner actor is unresolved_enemy_payload_instance"
+        },
+        {
+          "skillDid": 1012301,
+          "skillType": 1,
+          "prefabId": 1012301,
+          "skillBundle": "download/skillprefabsandres/1012.assetbundle",
+          "skillBundleExists": true,
+          "assetPathViaGetSysprefabData": "Assets/Download/SkillPrefabsAndRes/1012/1012301.prefab",
+          "timelineFound": true,
+          "localStatus": "data_only_missing_actor",
+          "missingDependencyBundles": [
+            "download/commonprefabsandres/skilleffect/commonskillprefabsandres1/redspeedline.assetbundle"
+          ],
+          "reason": "timeline resolves, but owner actor is unresolved_enemy_payload_instance"
+        },
+        {
+          "skillDid": 1012301,
+          "skillType": 1,
+          "prefabId": 1012351,
+          "skillBundle": "download/skillprefabsandres/1012.assetbundle",
+          "skillBundleExists": true,
+          "assetPathViaGetSysprefabData": "Assets/Download/SkillPrefabsAndRes/1012/1012351.prefab",
+          "timelineFound": true,
+          "localStatus": "data_only_missing_actor",
+          "missingDependencyBundles": [
+            "download/commonprefabsandres/skilleffect/commonskillprefabsandres1/redspeedline.assetbundle"
+          ],
+          "reason": "timeline resolves, but owner actor is unresolved_enemy_payload_instance"
+        },
+        {
+          "skillDid": 1012401,
+          "skillType": 2,
+          "prefabId": "",
+          "skillBundle": "",
+          "skillBundleExists": false,
+          "assetPathViaGetSysprefabData": "",
+          "timelineFound": false,
+          "localStatus": "passive_no_timeline",
+          "missingDependencyBundles": [],
+          "reason": "passive-style skill row has no DTSkillAct prefab/timeline mapping"
+        },
+        {
+          "skillDid": 1012403,
+          "skillType": 2,
+          "prefabId": "",
+          "skillBundle": "",
+          "skillBundleExists": false,
+          "assetPathViaGetSysprefabData": "",
+          "timelineFound": false,
+          "localStatus": "passive_no_timeline",
+          "missingDependencyBundles": [],
+          "reason": "passive-style skill row has no DTSkillAct prefab/timeline mapping"
+        }
+      ],
+      "localStatus": "unresolved_enemy_payload_instance",
+      "loadStatus": "missing_model_or_prefab",
+      "reason": "payload enemy id has no authoritative DTMonster_* row or alias in local evidence",
+      "missing": [
+        "actor_bundle_unresolved",
+        "spine_skeleton_missing",
+        "spine_atlas_missing",
+        "spine_texture_missing"
+      ],
+      "source": [
+        "BATTLE_TEST_PAYLOAD.json",
+        "BATTLE_LOCAL_PLAYABLE_PAYLOAD_MANIFEST_SPEEDLINE_RESOLVED.json",
+        "assetbundles/unity_textassets/unity_images indexes"
+      ]
+    },
+    "1100123": {
+      "heroDid": 1100123,
+      "side": "enemy",
+      "waveNo": 2,
+      "slot": 3,
+      "payloadHeroId": -3,
+      "nameKey": "",
+      "nameKo": "",
+      "datatable": "",
+      "datatableFound": false,
+      "modelId": "",
+      "prefabId": "",
+      "actorBundle": "",
+      "actorBundleExists": false,
+      "actorBundleIndexStatus": "",
+      "actorBundleCleanSlice": "",
+      "skeletonDataAsset": "",
+      "skeletonDataAssetExists": false,
+      "atlas": "",
+      "atlasExists": false,
+      "textures": [],
+      "textureExists": [],
+      "skillIds": [
+        1012101,
+        1012201,
+        1012301,
+        1012401,
+        1012403
+      ],
+      "skillTimelineAssets": [
+        {
+          "skillDid": 1012101,
+          "skillType": 1,
+          "prefabId": 1012101,
+          "skillBundle": "download/skillprefabsandres/1012.assetbundle",
+          "skillBundleExists": true,
+          "assetPathViaGetSysprefabData": "Assets/Download/SkillPrefabsAndRes/1012/1012101.prefab",
+          "timelineFound": true,
+          "localStatus": "data_only_missing_actor",
+          "missingDependencyBundles": [],
+          "reason": "timeline resolves, but owner actor is unresolved_enemy_payload_instance"
+        },
+        {
+          "skillDid": 1012201,
+          "skillType": 1,
+          "prefabId": 1012201,
+          "skillBundle": "download/skillprefabsandres/1012.assetbundle",
+          "skillBundleExists": true,
+          "assetPathViaGetSysprefabData": "Assets/Download/SkillPrefabsAndRes/1012/1012201.prefab",
+          "timelineFound": true,
+          "localStatus": "data_only_missing_actor",
+          "missingDependencyBundles": [
+            "download/commonprefabsandres/skilleffect/commonskillprefabsandres1/redspeedline.assetbundle"
+          ],
+          "reason": "timeline resolves, but owner actor is unresolved_enemy_payload_instance"
+        },
+        {
+          "skillDid": 1012301,
+          "skillType": 1,
+          "prefabId": 1012301,
+          "skillBundle": "download/skillprefabsandres/1012.assetbundle",
+          "skillBundleExists": true,
+          "assetPathViaGetSysprefabData": "Assets/Download/SkillPrefabsAndRes/1012/1012301.prefab",
+          "timelineFound": true,
+          "localStatus": "data_only_missing_actor",
+          "missingDependencyBundles": [
+            "download/commonprefabsandres/skilleffect/commonskillprefabsandres1/redspeedline.assetbundle"
+          ],
+          "reason": "timeline resolves, but owner actor is unresolved_enemy_payload_instance"
+        },
+        {
+          "skillDid": 1012301,
+          "skillType": 1,
+          "prefabId": 1012351,
+          "skillBundle": "download/skillprefabsandres/1012.assetbundle",
+          "skillBundleExists": true,
+          "assetPathViaGetSysprefabData": "Assets/Download/SkillPrefabsAndRes/1012/1012351.prefab",
+          "timelineFound": true,
+          "localStatus": "data_only_missing_actor",
+          "missingDependencyBundles": [
+            "download/commonprefabsandres/skilleffect/commonskillprefabsandres1/redspeedline.assetbundle"
+          ],
+          "reason": "timeline resolves, but owner actor is unresolved_enemy_payload_instance"
+        },
+        {
+          "skillDid": 1012401,
+          "skillType": 2,
+          "prefabId": "",
+          "skillBundle": "",
+          "skillBundleExists": false,
+          "assetPathViaGetSysprefabData": "",
+          "timelineFound": false,
+          "localStatus": "passive_no_timeline",
+          "missingDependencyBundles": [],
+          "reason": "passive-style skill row has no DTSkillAct prefab/timeline mapping"
+        },
+        {
+          "skillDid": 1012403,
+          "skillType": 2,
+          "prefabId": "",
+          "skillBundle": "",
+          "skillBundleExists": false,
+          "assetPathViaGetSysprefabData": "",
+          "timelineFound": false,
+          "localStatus": "passive_no_timeline",
+          "missingDependencyBundles": [],
+          "reason": "passive-style skill row has no DTSkillAct prefab/timeline mapping"
+        }
+      ],
+      "localStatus": "unresolved_enemy_payload_instance",
+      "loadStatus": "missing_model_or_prefab",
+      "reason": "payload enemy id has no authoritative DTMonster_* row or alias in local evidence",
+      "missing": [
+        "actor_bundle_unresolved",
+        "spine_skeleton_missing",
+        "spine_atlas_missing",
+        "spine_texture_missing"
+      ],
+      "source": [
+        "BATTLE_TEST_PAYLOAD.json",
+        "BATTLE_LOCAL_PLAYABLE_PAYLOAD_MANIFEST_SPEEDLINE_RESOLVED.json",
+        "assetbundles/unity_textassets/unity_images indexes"
+      ]
+    },
+    "1100131": {
+      "heroDid": 1100131,
+      "side": "enemy",
+      "waveNo": 3,
+      "slot": 1,
+      "payloadHeroId": -1,
+      "nameKey": "",
+      "nameKo": "",
+      "datatable": "",
+      "datatableFound": false,
+      "modelId": "",
+      "prefabId": "",
+      "actorBundle": "",
+      "actorBundleExists": false,
+      "actorBundleIndexStatus": "",
+      "actorBundleCleanSlice": "",
+      "skeletonDataAsset": "",
+      "skeletonDataAssetExists": false,
+      "atlas": "",
+      "atlasExists": false,
+      "textures": [],
+      "textureExists": [],
+      "skillIds": [
+        1012101,
+        1001401,
+        1001403
+      ],
+      "skillTimelineAssets": [
+        {
+          "skillDid": 1012101,
+          "skillType": 1,
+          "prefabId": 1012101,
+          "skillBundle": "download/skillprefabsandres/1012.assetbundle",
+          "skillBundleExists": true,
+          "assetPathViaGetSysprefabData": "Assets/Download/SkillPrefabsAndRes/1012/1012101.prefab",
+          "timelineFound": true,
+          "localStatus": "data_only_missing_actor",
+          "missingDependencyBundles": [],
+          "reason": "timeline resolves, but owner actor is unresolved_enemy_payload_instance"
+        },
+        {
+          "skillDid": 1001401,
+          "skillType": 2,
+          "prefabId": "",
+          "skillBundle": "",
+          "skillBundleExists": false,
+          "assetPathViaGetSysprefabData": "",
+          "timelineFound": false,
+          "localStatus": "passive_no_timeline",
+          "missingDependencyBundles": [],
+          "reason": "passive-style skill row has no DTSkillAct prefab/timeline mapping"
+        },
+        {
+          "skillDid": 1001403,
+          "skillType": 2,
+          "prefabId": "",
+          "skillBundle": "",
+          "skillBundleExists": false,
+          "assetPathViaGetSysprefabData": "",
+          "timelineFound": false,
+          "localStatus": "passive_no_timeline",
+          "missingDependencyBundles": [],
+          "reason": "passive-style skill row has no DTSkillAct prefab/timeline mapping"
+        }
+      ],
+      "localStatus": "unresolved_enemy_payload_instance",
+      "loadStatus": "missing_model_or_prefab",
+      "reason": "payload enemy id has no authoritative DTMonster_* row or alias in local evidence",
+      "missing": [
+        "actor_bundle_unresolved",
+        "spine_skeleton_missing",
+        "spine_atlas_missing",
+        "spine_texture_missing"
+      ],
+      "source": [
+        "BATTLE_TEST_PAYLOAD.json",
+        "BATTLE_LOCAL_PLAYABLE_PAYLOAD_MANIFEST_SPEEDLINE_RESOLVED.json",
+        "assetbundles/unity_textassets/unity_images indexes"
+      ]
+    },
+    "1100132": {
+      "heroDid": 1100132,
+      "side": "enemy",
+      "waveNo": 3,
+      "slot": 2,
+      "payloadHeroId": -2,
+      "nameKey": "",
+      "nameKo": "",
+      "datatable": "",
+      "datatableFound": false,
+      "modelId": "",
+      "prefabId": "",
+      "actorBundle": "",
+      "actorBundleExists": false,
+      "actorBundleIndexStatus": "",
+      "actorBundleCleanSlice": "",
+      "skeletonDataAsset": "",
+      "skeletonDataAssetExists": false,
+      "atlas": "",
+      "atlasExists": false,
+      "textures": [],
+      "textureExists": [],
+      "skillIds": [
+        1012101,
+        1001401,
+        1001403
+      ],
+      "skillTimelineAssets": [
+        {
+          "skillDid": 1012101,
+          "skillType": 1,
+          "prefabId": 1012101,
+          "skillBundle": "download/skillprefabsandres/1012.assetbundle",
+          "skillBundleExists": true,
+          "assetPathViaGetSysprefabData": "Assets/Download/SkillPrefabsAndRes/1012/1012101.prefab",
+          "timelineFound": true,
+          "localStatus": "data_only_missing_actor",
+          "missingDependencyBundles": [],
+          "reason": "timeline resolves, but owner actor is unresolved_enemy_payload_instance"
+        },
+        {
+          "skillDid": 1001401,
+          "skillType": 2,
+          "prefabId": "",
+          "skillBundle": "",
+          "skillBundleExists": false,
+          "assetPathViaGetSysprefabData": "",
+          "timelineFound": false,
+          "localStatus": "passive_no_timeline",
+          "missingDependencyBundles": [],
+          "reason": "passive-style skill row has no DTSkillAct prefab/timeline mapping"
+        },
+        {
+          "skillDid": 1001403,
+          "skillType": 2,
+          "prefabId": "",
+          "skillBundle": "",
+          "skillBundleExists": false,
+          "assetPathViaGetSysprefabData": "",
+          "timelineFound": false,
+          "localStatus": "passive_no_timeline",
+          "missingDependencyBundles": [],
+          "reason": "passive-style skill row has no DTSkillAct prefab/timeline mapping"
+        }
+      ],
+      "localStatus": "unresolved_enemy_payload_instance",
+      "loadStatus": "missing_model_or_prefab",
+      "reason": "payload enemy id has no authoritative DTMonster_* row or alias in local evidence",
+      "missing": [
+        "actor_bundle_unresolved",
+        "spine_skeleton_missing",
+        "spine_atlas_missing",
+        "spine_texture_missing"
+      ],
+      "source": [
+        "BATTLE_TEST_PAYLOAD.json",
+        "BATTLE_LOCAL_PLAYABLE_PAYLOAD_MANIFEST_SPEEDLINE_RESOLVED.json",
+        "assetbundles/unity_textassets/unity_images indexes"
+      ]
+    },
+    "1100133": {
+      "heroDid": 1100133,
+      "side": "enemy",
+      "waveNo": 3,
+      "slot": 3,
+      "payloadHeroId": -3,
+      "nameKey": "",
+      "nameKo": "",
+      "datatable": "",
+      "datatableFound": false,
+      "modelId": "",
+      "prefabId": "",
+      "actorBundle": "",
+      "actorBundleExists": false,
+      "actorBundleIndexStatus": "",
+      "actorBundleCleanSlice": "",
+      "skeletonDataAsset": "",
+      "skeletonDataAssetExists": false,
+      "atlas": "",
+      "atlasExists": false,
+      "textures": [],
+      "textureExists": [],
+      "skillIds": [
+        1012101,
+        1001401,
+        1001403
+      ],
+      "skillTimelineAssets": [
+        {
+          "skillDid": 1012101,
+          "skillType": 1,
+          "prefabId": 1012101,
+          "skillBundle": "download/skillprefabsandres/1012.assetbundle",
+          "skillBundleExists": true,
+          "assetPathViaGetSysprefabData": "Assets/Download/SkillPrefabsAndRes/1012/1012101.prefab",
+          "timelineFound": true,
+          "localStatus": "data_only_missing_actor",
+          "missingDependencyBundles": [],
+          "reason": "timeline resolves, but owner actor is unresolved_enemy_payload_instance"
+        },
+        {
+          "skillDid": 1001401,
+          "skillType": 2,
+          "prefabId": "",
+          "skillBundle": "",
+          "skillBundleExists": false,
+          "assetPathViaGetSysprefabData": "",
+          "timelineFound": false,
+          "localStatus": "passive_no_timeline",
+          "missingDependencyBundles": [],
+          "reason": "passive-style skill row has no DTSkillAct prefab/timeline mapping"
+        },
+        {
+          "skillDid": 1001403,
+          "skillType": 2,
+          "prefabId": "",
+          "skillBundle": "",
+          "skillBundleExists": false,
+          "assetPathViaGetSysprefabData": "",
+          "timelineFound": false,
+          "localStatus": "passive_no_timeline",
+          "missingDependencyBundles": [],
+          "reason": "passive-style skill row has no DTSkillAct prefab/timeline mapping"
+        }
+      ],
+      "localStatus": "unresolved_enemy_payload_instance",
+      "loadStatus": "missing_model_or_prefab",
+      "reason": "payload enemy id has no authoritative DTMonster_* row or alias in local evidence",
+      "missing": [
+        "actor_bundle_unresolved",
+        "spine_skeleton_missing",
+        "spine_atlas_missing",
+        "spine_texture_missing"
+      ],
+      "source": [
+        "BATTLE_TEST_PAYLOAD.json",
+        "BATTLE_LOCAL_PLAYABLE_PAYLOAD_MANIFEST_SPEEDLINE_RESOLVED.json",
+        "assetbundles/unity_textassets/unity_images indexes"
+      ]
+    }
+  }
+}

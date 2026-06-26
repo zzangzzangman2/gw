@@ -25,5 +25,19 @@ namespace YouYou
         {
             OpenCalled = true;
         }
+
+        public void Close()
+        {
+        }
+
+        public void Dispose()
+        {
+        }
+
+        public void Reset()
+        {
+            InitCalled = false;
+            OpenCalled = false;
+        }
     }
 }
