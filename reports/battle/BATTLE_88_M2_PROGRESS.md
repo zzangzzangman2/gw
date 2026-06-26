@@ -16,8 +16,25 @@ The harness drives the real game Lua this far, in batchmode:
 6. **`ProcedureNormalBattle_OnEnter(battleInfo)` executes into the real entry body**,
    past event registration, to **line ~828** (the BGM branch). ✅ (executing real logic)
 
-Current stop: `GameTools.SwitchBGMFadeOutLua` -> `CS.YouYou.GameEntry.Time:RemoveTimeActionByName`
-— a DIRECT `CS.YouYou.GameEntry` access with no C# type behind it yet.
+7. C# `YouYou.GameEntry` subsystem stub added (Time/UI/Pool/Audio/Procedure/Camera/Effect/
+   Resource/Instance/Video; object returns hand back the Lua NOOP). Direct
+   `CS.YouYou.GameEntry.*` accesses now resolve. ✅
+8. Generalized permissive `__index` fallback (chains class metatables) + audio/BGM path
+   skipped (headless). ✅
+9. **OnEnter -> `InitBattleInfo` (line ~832 -> 740): now processing the REAL battleInfo.** ✅
+
+Current stop (NEW KIND — data wiring, not framework): `InitBattleInfo:740`
+`i.GetEntity(e.BattleType)` returns nil -> error branch concatenates `e.BattleType`
+(also nil). Two real data issues:
+- `e.BattleType` is not wired from our payload (`battleType=1`) — OnEnter's data flow
+  (FightPlayData -> BattleType) needs to be set before InitBattleInfo.
+- `DTBattleDBModel.GetEntity(1)` needs the data table POPULATED offline (the IO-load path;
+  this is Codex handoff task T1).
+
+**Significance:** framework neutralization (the hard, generic part) is essentially done —
+execution runs deep into real battle logic. The remaining blockers are DATA WIRING
+(feed battleType/battleInfo correctly + ensure DT*DBModel self-populate offline), which is
+well-scoped and overlaps Codex's T1 data-table audit.
 
 ## Fixes landed to get here
 
@@ -30,7 +47,17 @@ Current stop: `GameTools.SwitchBGMFadeOutLua` -> `CS.YouYou.GameEntry.Time:Remov
 - `BuildPatchMgr` logic stub (route JSON to pure-lua; version compare = 0).
 - Permissive `__index` fallback on real framework modules (missing native methods -> NOOP).
 
-## Next step (the GameEntry C# stub)
+## Next step (DATA WIRING — framework stubbing is done)
+
+1. Wire `e.BattleType` (and the rest of FightPlayData) from the passed battleInfo in
+   OnEnter before InitBattleInfo runs. Trace how the original OnEnter stores `a` ->
+   FightPlayData -> BattleType (PNB ~line 785+, and InitBattleInfo ~700+).
+2. Ensure `DTBattleDBModel` (and the other DT*DBModel the battle reads) self-populate via
+   the offline IO-load path (Codex handoff T1: `GameInit` flags like ServerLoadTable=false /
+   ClientIsSupportIOLoad). `i.GetEntity(1)` must return the normal-battle row.
+3. Then iterate the wave/round replay to a BattleResult; flip `battleEntered=true`.
+
+## (done) GameEntry C# stub
 
 The battle uses `CS.YouYou.GameEntry.<Subsystem>:<Method>()` directly (and via real modules
 like GameTools). The global `GameEntry` is already a permissive NOOP, but the DIRECT

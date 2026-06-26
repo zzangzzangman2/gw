@@ -73,6 +73,9 @@ namespace GirlsWar
 
                 // permissive _G + logging globals (replaces the strict Common/Global guard)
                 env.DoString(SetupEnv);
+                // hand the Lua NOOP table to the C# GameEntry stub (object-returning members
+                // hand it back so form:GetXxx() chains stay no-crash headless)
+                LuaNoopHolder.Noop = env.Global.Get<LuaTable>("NOOP_STUB");
                 stages.Add("permissive-_G");
 
                 // Real Lua-defined framework globals (resolved by leaf via custom loader).
@@ -97,16 +100,39 @@ namespace GirlsWar
                 // methods stay (rawget), but methods that are actually native/defined-elsewhere
                 // resolve to NOOP instead of crashing (e.g. GameInit.CheckOpenCurBattleLog...).
                 Safe(env, @"
-                    for _,g in ipairs({'GameInit','EventSystem','ModulesInit','GameTools','PlayerMgr','CommonEventId'}) do
+                    local NOOP = NOOP_STUB
+                    for _,g in ipairs({'GameInit','EventSystem','ModulesInit','GameTools','PlayerMgr','CommonEventId','CameraMgr','FightLogMgr'}) do
                       local m = rawget(_G, g)
-                      if type(m)=='table' and getmetatable(m)==nil then
-                        setmetatable(m, { __index = function() return NOOP_STUB end })
+                      if type(m)=='table' then
+                        local mt = getmetatable(m)
+                        if mt == nil then
+                          setmetatable(m, { __index = function() return NOOP end })
+                        else
+                          local orig = rawget(mt, '__index')
+                          rawset(mt, '__index', function(t,k)
+                            local v
+                            if type(orig)=='function' then v = orig(t,k)
+                            elseif orig ~= nil then v = orig[k] end
+                            if v ~= nil then return v end
+                            return NOOP
+                          end)
+                        end
                       end
                     end", stages, ref failStage, ref err, optional: true);
 
                 // load the battle procedure
                 if (string.IsNullOrEmpty(failStage))
                     Safe(env, "PNB = require('ProcedureNormalBattle')", stages, ref failStage, ref err);
+
+                // headless: skip the audio/BGM path (irrelevant to battle logic, pulls in
+                // native audio internals). Disable music + give GameTools a no-op for the
+                // BGM helper so OnEnter's music block is inert.
+                Safe(env, @"
+                    if PNB then pcall(function() PNB.IsOpenPlayMusic = false end) end
+                    if GameTools then
+                      GameTools.SwitchBGMFadeOutLua = function() end
+                      GameTools.SwitchBGMFadeOut = function() end
+                    end", stages, ref failStage, ref err, optional: true);
 
                 // feed battleInfo and enter
                 if (string.IsNullOrEmpty(failStage))
