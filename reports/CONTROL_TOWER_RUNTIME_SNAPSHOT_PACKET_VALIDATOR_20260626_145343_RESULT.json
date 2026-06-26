@@ -1,0 +1,83 @@
+{
+  "packet": "CONTROL_TOWER_RUNTIME_SNAPSHOT_PACKET_VALIDATOR_20260626_145343",
+  "validatorOnly": true,
+  "restoredClaim": false,
+  "playableClaim": false,
+  "runtimeInstrumentationUsed": false,
+  "apkOrEmulatorExecuted": false,
+  "scenePatched": false,
+  "packageImported": false,
+  "externalXluaImported": false,
+  "fakeValuesGenerated": false,
+  "coordinateOnlyPatchAllowed": false,
+  "battleTemplatePath": "girlswar_battle_unity\\Assets\\RestoreData\\battle\\BATTLE_84_ORIGINAL_RUNTIME_SNAPSHOT_FILLED.json",
+  "uiTemplatePath": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\maininterface\\MAININTERFACE_148_RUNTIME_SNAPSHOT_APPROVAL_PACKET_AND_STATIC_FIELD_EXHAUSTION_NO_RUNTIME_NO_PATCH_approval_packet_template.json",
+  "uiFilledSnapshotPath": "",
+  "unifiedPacketPath": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\CONTROL_TOWER_UNIFIED_PRE_RUNTIME_APPROVAL_PACKET_20260626_093259.json",
+  "unifiedPacketStatus": "pre_approval_only",
+  "battle": {
+    "expectedFields": 7337,
+    "expectedFieldsFromResult": 7337,
+    "requiredFieldCountFromResult": 5133,
+    "hookCandidates": 12,
+    "hookCandidatesFromResult": 12,
+    "filledRuntimeValues": 427,
+    "missingRuntimeValues": 6910,
+    "placeholderRuntimeValues": 0,
+    "missingRuntimeValuePropertyRows": 0,
+    "duplicateObjectPathFieldNameKeys": 0,
+    "approvalEvidencePresent": false,
+    "templateMode": false,
+    "patchDecisionUnlocked": false,
+    "categoryCounts": {
+      "active_chain": 942,
+      "battle_payload_related_ui": 52,
+      "canvas_canvas_scaler_canvas_group": 16,
+      "component_rehydration": 132,
+      "graphic_image_button_raycast": 1780,
+      "handler_lua_lifecycle": 148,
+      "mask_rectmask_stencil_material": 411,
+      "other_runtime_state": 113,
+      "rect_transform": 2356,
+      "sibling_order": 390,
+      "tmp_autosize_font_material": 997
+    },
+    "blockingReason": "battle snapshot needs source/approval review before patch"
+  },
+  "maininterface": {
+    "expectedNullRuntimePaths": 203,
+    "groupCount": 10,
+    "groupFieldSum": 175,
+    "requiredRuntimeFieldsFromResult": 197,
+    "staticKnownFieldsFromResult": 8,
+    "filledRuntimeValues": 0,
+    "missingRuntimeValues": 203,
+    "placeholderRuntimeValues": 0,
+    "approvalEvidencePresent": false,
+    "templateMode": true,
+    "patchDecisionUnlocked": false,
+    "blockingReason": "maininterface runtime values are not filled"
+  },
+  "combined": {
+    "readyForPatchReview": false,
+    "approvalStillRequired": true,
+    "missingRuntimeValuesTotal": 7113,
+    "placeholderRuntimeValuesTotal": 0,
+    "recommendedNextAction": "FILL_UI148_AND_B75_RUNTIME_SNAPSHOT_VALUES_WITH_EXPLICIT_APPROVAL_EVIDENCE"
+  },
+  "outputs": {
+    "resultJson": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\CONTROL_TOWER_RUNTIME_SNAPSHOT_PACKET_VALIDATOR_20260626_145343_RESULT.json",
+    "resultMd": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\CONTROL_TOWER_RUNTIME_SNAPSHOT_PACKET_VALIDATOR_20260626_145343_RESULT.md",
+    "validationCsv": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\CONTROL_TOWER_RUNTIME_SNAPSHOT_PACKET_VALIDATOR_20260626_145343_VALIDATION_MATRIX.csv",
+    "fieldSampleCsv": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\CONTROL_TOWER_RUNTIME_SNAPSHOT_PACKET_VALIDATOR_20260626_145343_FIELD_SAMPLE.csv"
+  },
+  "commandPolicy": {
+    "rootCmdCount": 1,
+    "rootCmdFiles": [
+      "00_COMMAND_CENTER.cmd"
+    ],
+    "restoreToolsDirectCmdCount": 0,
+    "restoreToolsDirectCmdFiles": [],
+    "policyOk": true
+  }
+}
