@@ -15,6 +15,20 @@ namespace GirlsWar
         public static LuaTable Noop;
         public static object N => Noop;
     }
+
+    public static class StubUtil
+    {
+        // Invoke a Lua callback handed to a stubbed async API (Pool spawn, Scene load, ...).
+        // The real engine calls back with the spawned object/result; headless passes the
+        // permissive NOOP for up to 3 positional args (a no-arg callback just ignores them).
+        // We do NOT swallow errors: a throw inside the callback propagates up so the staged
+        // harness reports the real next blocker instead of hiding it.
+        public static void InvokeCallback(object c)
+        {
+            var f = c as LuaFunction;
+            if (f != null) f.Call(LuaNoopHolder.Noop, LuaNoopHolder.Noop, LuaNoopHolder.Noop);
+        }
+    }
 }
 
 namespace YouYou
@@ -33,6 +47,8 @@ namespace YouYou
         public static readonly GE_Effect Effect = new GE_Effect();
         public static readonly GE_CameraCtrl CameraCtrl = new GE_CameraCtrl();
         public static readonly GE_Resource Resource = new GE_Resource();
+        public static readonly GE_Scene Scene = new GE_Scene();
+        public static readonly GE_Lua Lua = new GE_Lua();
 
         public static string AppVer = "1.0.0";
         public static bool IsReview() { return false; }
@@ -88,10 +104,32 @@ namespace YouYou
 
     public class GE_Pool
     {
-        public object GameObjectSpawn(object a = null, object b = null) { return LuaNoopHolder.N; }
-        public object GameObjectSpawnWithPath(object a = null, object b = null) { return LuaNoopHolder.N; }
+        // Lua calls GameObjectSpawn(prefabId, parent_or_nil, callback). The real pool spawns
+        // async then invokes callback(transform,...). We must accept the 3-arg form, but we do
+        // NOT invoke the callback headless: those callbacks configure the spawned VIEW object
+        // via CS calls (e.g. LuaUtils.SetActive(transform,...)) that need a real GameObject, not
+        // the NOOP. View object setup is the M3 view lane; for M2 logic these spawns are inert.
+        public object GameObjectSpawn(object a = null, object b = null, object c = null)
+        { return LuaNoopHolder.N; }
+        public object GameObjectSpawnWithPath(object a = null, object b = null, object c = null)
+        { return LuaNoopHolder.N; }
         public void GameObjectDespawn(object a = null) { }
         public void ReleaseAndDestroyUnused() { }
+    }
+
+    // Scene loading is async in the real game (load -> callback). The OnEnter LoadScene
+    // callback drives REAL battle setup (curProcedureBattle:OnInit, LoadMaps, LoadAutoMode,
+    // LoadBattleUI3D...), so headless must invoke it synchronously to keep entering the battle.
+    public class GE_Scene
+    {
+        public void LoadScene(object sceneId = null, object addCanvas = null, object callback = null)
+        { StubUtil.InvokeCallback(callback); }
+        public void UnLoadScene(object a = null) { }
+    }
+
+    public class GE_Lua
+    {
+        public void PlayerOnClick(object a = null, object b = null, object c = null) { }
     }
 
     public class GE_Audio

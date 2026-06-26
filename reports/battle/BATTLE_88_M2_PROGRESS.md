@@ -3,6 +3,41 @@
 Generated: 2026-06-26 KST. Harness: `Assets/Editor/GirlsWarLuaBootstrapMilestone2.cs`.
 Result JSON: `reports/battle/BATTLE_88_M2_HEADLESS_BATTLE_RESULT.json`.
 
+## 2026-06-27 UPDATE — `battleEntered=true` ACHIEVED ✅
+
+The headless run now reports `battleEntered=true`, `failedStage=""`, `error=""`. The real
+`ProcedureNormalBattle_OnEnter` runs to completion offline (InitBattleInfo -> teams +
+data tables loaded -> LoadScene callback -> LoadMaps/LoadBattleUI3D/LoadAutoMode/
+LoadGameSpeed/LoadGameFastSkill), and the harness pumps 120 update ticks with no error.
+
+Fixes that closed the gap from the old `PNB:740` stop (this session):
+1. **Data wiring** — `OnEnter(a)` never stores its arg. Set `PNB.FightPlayData=info`
+   (+`IsFightPlay=true`) before OnEnter (PNB == module table `e/t`), mirroring the game's
+   `PlayFightClientReplay`. InitBattleInfo then takes the `InitDataWithFightPlayData` branch
+   -> `e.BattleType=info.battleType` (=1). Confirmed `DTBattleDBModel.GetEntity(1)`
+   self-populates offline (isLoadIO false -> InitRequire -> `DTBattleEntityTableData` row
+   id=1 `campaign`); the worried "2nd blocker" needed no flag.
+2. **stdlib extensions** — require `Common/StringUtil` then `Common/TableUtil` (install
+   `string.split`/`table.deepCopy`/... onto the std libs; battle code calls them).
+3. **GameEntry stub** — added `Scene` (LoadScene **invokes its callback** = the real battle
+   setup) and `Lua`; `Pool.GameObjectSpawn` now accepts the 3-arg `(id,parent,cb)` form but
+   does NOT invoke the cb (those configure VIEW objects via CS calls; M3 view lane).
+4. **SaveMgr stub** (pure-lua, returns caller defaults = no saved prefs) + **`PlayerMgr.
+   PlayerInfo.uid`** set to `ourPlayerId` so the prefs loaders' `string.format('%d_...',uid)`
+   works instead of choking on the NOOP.
+
+### NEXT — drive the wave/round replay to a BattleResult
+`battleEntered=true` means we ENTERED; the fight is not yet replayed. `PNB` has no
+`OnUpdate` (the harness pump hits the NOOP fallback), and `e.curProcedureBattle` is nil
+(we didn't call `PNB:DefaultBattle()`), so the round loop hasn't started. The real start is
+event-driven (`OnBattleUILoadComplete` -> begin), which never fires headless. To replay:
+- set `e.curProcedureBattle = PNB:DefaultBattle()` (as `PlayFightClientReplay` does),
+- find/drive the function that begins wave/bigRound/smallRound processing of `actionData`,
+- iterate run->blocker->fix until a BattleResult is produced and HP/rounds match the data.
+
+---
+(History below is the pre-2026-06-27 state, kept for reference.)
+
 ## How far it runs now (real, validator-style)
 
 The harness drives the real game Lua this far, in batchmode:

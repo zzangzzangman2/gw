@@ -54,6 +54,23 @@ namespace GirlsWar
               CheckCanUseRapidjson = function() return false end,  -- use pure-lua Common/json
               CompareVersion = function() return 0 end,
             })
+            -- SaveMgr: persisted UI prefs (auto-battle/game-speed/fast-skill keys). A fresh
+            -- offline run has NO saved prefs, so Has=false and getters return the caller's
+            -- default (legitimate, not fabricated). Calls are dot-style: GetXForKey(key, default).
+            -- Without this the absorbing NOOP returns truthy for Has* and a table for getters,
+            -- breaking guards and string.format (e.g. LoadAutoMode/LoadGameSpeed).
+            rawset(_G, 'SaveMgr', {
+              GetPlayerPrefsHasKey = function() return false end,
+              GetBoolForKey   = function(_, d) if d == nil then return false end return d end,
+              GetIntForKey    = function(_, d) if d == nil then return 0 end return d end,
+              GetFloatForKey  = function(_, d) if d == nil then return 0 end return d end,
+              GetStringForKey = function(_, d) if d == nil then return '' end return d end,
+              SetBoolForKey   = function() end,
+              SetIntForKey    = function() end,
+              SetFloatForKey  = function() end,
+              SetStringForKey = function() end,
+              DeleteKey       = function() end,
+            })
             -- permissive fallback: any undeclared global read -> the absorbing NOOP
             setmetatable(_G, { __index = function(_, k) return NOOP end })
         ";
@@ -77,6 +94,15 @@ namespace GirlsWar
                 // hand it back so form:GetXxx() chains stay no-crash headless)
                 LuaNoopHolder.Noop = env.Global.Get<LuaTable>("NOOP_STUB");
                 stages.Add("permissive-_G");
+
+                // stdlib extensions: the game installs pure-Lua helpers onto the standard
+                // `string`/`table` libraries (e.g. `table.deepCopy=...`, `string.split=...`) via
+                // these Common modules. The full game requires them during init; our minimal
+                // harness must too, or real battle code hits nil (e.g. InitDataWithFightPlayData
+                // calls table.deepCopy). StringUtil first: TableUtil captures string.split at load.
+                Safe(env, @"
+                    pcall(require, 'Common/StringUtil')
+                    pcall(require, 'Common/TableUtil')", stages, ref failStage, ref err, optional: true);
 
                 // Real Lua-defined framework globals (resolved by leaf via custom loader).
                 // rawset so they take precedence over the permissive __index fallback.
@@ -144,6 +170,27 @@ namespace GirlsWar
                     Safe(env,
                         @"local data = JsonUtil and JsonUtil.decode and JsonUtil.decode(BATTLE_TEST_JSON) or nil
                           local info = data and data.battleInfo or data
+                          assert(info, 'no battleInfo in payload')
+                          -- DATA WIRING (the real fix): OnEnter(a) NEVER stores its arg, so
+                          -- feeding battleInfo to OnEnter alone leaves e.FightPlayData=nil and
+                          -- InitBattleInfo falls to InitDataWithEmptyData -> e.BattleType=nil ->
+                          -- crash at PNB:740. The game's replay entry (PlayFightClientReplay)
+                          -- sets these on the procedure table BEFORE the state change. PNB is
+                          -- that table (file: 'local t={} local e=t ... return t'), so setting
+                          -- PNB.FightPlayData IS e.FightPlayData. Then InitBattleInfo takes the
+                          -- InitDataWithFightPlayData branch -> e.BattleType=info.battleType (=1)
+                          -- -> DTBattleDBModel.GetEntity(1) self-populates offline (isLoadIO
+                          -- false -> InitRequire -> DTBattleEntityTableData row id=1 'campaign').
+                          PNB.FightPlayData = info
+                          PNB.IsFightPlay = true
+                          -- Minimal real player identity: battle prefs/report code builds keys
+                          -- from PlayerMgr.PlayerInfo.uid (e.g. LoadAutoMode/LoadGameSpeed do
+                          -- string.format('%d_...', uid, ...)). Without a numeric uid the
+                          -- permissive NOOP yields a table and string.format throws. This battle
+                          -- belongs to ourPlayerId, so use it (not fabricated).
+                          if PlayerMgr and type(rawget(PlayerMgr,'PlayerInfo'))~='table' then
+                            rawset(PlayerMgr, 'PlayerInfo', { uid = info.ourPlayerId or 0 })
+                          end
                           local fn = PNB and (PNB.ProcedureNormalBattle_OnEnter or PNB.OnEnter)
                           assert(fn, 'no OnEnter on ProcedureNormalBattle')
                           fn(info)",
