@@ -1,0 +1,10 @@
+{
+  "milestone": "BATTLE_86_xlua_bootstrap_m1",
+  "decodedRoot": "C:/Users/godho/Downloads/girlswar/girlswar_merged_extracted/decoded",
+  "luaEnvCreated": true,
+  "loaderIndexed": true,
+  "loaderIndexCount": 17326,
+  "probeModule": "DataNode/DataTable/Create/constant/DTBattleDBModel",
+  "probeRequireOk": true,
+  "error": ""
+}
