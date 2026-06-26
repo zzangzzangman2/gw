@@ -5,9 +5,15 @@ Follows: `reports/STATIC_SNAPSHOT_RECOVERY_FINDING_20260626.md`, BATTLE_84 (fill
 
 ## What this pass did
 
-Built `_restore_tools/scripts/control_tower_static_snapshot_resolver.py` and ran it to
-fill `runtimeValue` in the B75 battle field checklist from the ORIGINAL extracted
-RectTransform index `girlswar_merged_extracted/indexes/ui_recttransforms.csv` only.
+Built `_restore_tools/scripts/control_tower_static_snapshot_resolver.py` (v2) and ran it
+to fill `runtimeValue` in the B75 battle field checklist from ORIGINAL extracted indexes.
+
+Lane-1 crosswalk (the key upgrade over v1): each B75 objectPath is matched to an original
+node by reconstructing every original node's full path via `father_id` chains, then taking
+the LONGEST trailing path-suffix of the B75 path that uniquely matches an original
+full-path suffix. This anchors reconstruction-specific parents on preserved original
+ancestors (`root_battle/BottomCenter/HeroListContainer/.../imgMask`). v1 (leaf-name only)
+resolved 58/390 rect nodes; v2 resolves 383/390.
 
 Output filled snapshot: `girlswar_battle_unity/Assets/RestoreData/battle/BATTLE_84_ORIGINAL_RUNTIME_SNAPSHOT_FILLED.json`
 Provenance: `reports/battle/BATTLE_85_STATIC_SNAPSHOT_RESOLVER_PROVENANCE.csv`
@@ -16,60 +22,48 @@ Provenance: `reports/battle/BATTLE_85_STATIC_SNAPSHOT_RESOLVER_PROVENANCE.csv`
 
 `control_tower_validate_runtime_snapshot_packets.py --battle-template <FILLED>`:
 
-| metric | before | after |
-| --- | ---: | ---: |
-| expectedFields | 7337 | 7337 |
-| filledRuntimeValues | 0 | **427** |
-| missingRuntimeValues | 7337 | **6910** |
-| placeholderRuntimeValues | 0 | **0** |
-| templateMode (empty template) | True | **False** |
-| blockingReason | "battle runtime values are not filled" | "battle snapshot needs source/approval review before patch" |
+| metric | before | v1 | v2 (this) |
+| --- | ---: | ---: | ---: |
+| expectedFields | 7337 | 7337 | 7337 |
+| filledRuntimeValues | 0 | 427 | **2681** |
+| missingRuntimeValues | 7337 | 6910 | **4656** |
+| placeholderRuntimeValues | 0 | 0 | **0** |
+| templateMode (empty template) | True | False | **False** |
 
-First time the battle packet holds source-backed runtime values. No fake/placeholder
-values were introduced (placeholderRuntimeValues = 0). The packet left the empty-template
-state and entered the source/review state.
+No fake/placeholder values introduced (placeholderRuntimeValues = 0). All filled values
+carry `staticSource` provenance (origin index + bundle + path_id + suffix-match length).
 
-## Filled categories (all CSV-provenanced)
+## Filled categories (all index-provenanced)
 
-- `rect_transform`: 366 (anchorMin/Max, anchoredPosition, sizeDelta, pivot, localScale)
-- `sibling_order`: 61 (siblingIndex derived from father child_ids order)
+- `rect_transform`: **2298 / 2356** (anchorMin/Max, anchoredPosition, sizeDelta, pivot, localScale)
+- `sibling_order`: **383 / 390** (siblingIndex from father child_ids order)
 
-## Guardrail discipline (why only 427, not the optimistic 80-90%)
+These two categories are essentially closed (97% / 98%).
 
-The finding doc estimated ~80-90% statically derivable. That estimate conflated
-"this category has a static source somewhere" with "this exact row can be auto-filled
-safely." Under the project's no-wrong-value rule, this pass only filled a row when the
-node's leaf name resolved to an UNAMBIGUOUS original geometry (exactly one original node
-with that name, or all same-named nodes sharing identical geometry). That is the correct,
-conservative line. The 6,910 residual breaks down as:
+## Lane 2 (text) deliberately NOT filled
 
-1. **Ambiguous geometry** — leaf name maps to multiple original nodes with different
-   geometry (cannot pick one without a hierarchy crosswalk). Recoverable later by mapping
-   the reconstruction node's ORIGINAL prefab path, not just its leaf name.
-2. **Not in the RectTransform index** — `tmp_autosize_font_material` (997),
-   `mask_rectmask_stencil_material` (411), `graphic_image_button_raycast` (1780),
-   `component_rehydration` (132). These ARE static but live in other extractions
-   (TMP/text fields, component/material tables, sprite atlas), not in ui_recttransforms.csv.
-3. **Genuinely runtime/handler** — `active_chain` (942), `handler_lua_lifecycle` (148),
-   `battle_payload_related_ui` (52). Active state depends on Lua SetActive logic; handler
-   binding needs the form Lua / GameEntry lifecycle.
+`ui_texts.csv` `m_text` mixes real display text with effect/material param strings
+(`EPM_wuxiaoguo_dongtai`, `riyu_zi_dazei`, ...) and has CJK encoding corruption.
+Filling `text` from it would violate the no-fake/no-garbage guardrail, so it is skipped.
+Real display text must come from the lane-3 component extraction (the node's actual TMP
+component), not this index.
 
-## Conclusion
+## Honest residual (4656) and how to close it
 
-Static recovery is real and now demonstrated end-to-end with a validator-confirmed,
-zero-fake flip — but the safe auto-fillable fraction from a single index is ~6%, not 80%.
-Reaching the rest is still static (no live runtime dump needed) but requires more
-extraction lanes, in priority order:
+The finding doc's ~80-90% conflated "category has a static source somewhere" with "this
+row is safely auto-fillable." v2 closes the two categories that the existing indexes fully
+support. The remaining 4656 need NEW static extractions (still no live runtime dump):
 
-1. **Original-prefab hierarchy crosswalk**: map each reconstruction node
-   (e.g. `Battle29BoundHeroCard_*/imgMask`) to its ORIGINAL prefab path so ambiguous
-   leaf names resolve uniquely. Unlocks most of bucket (1) in rect_transform/sibling.
-2. **TMP/text + font index**: extract text/fontSize/fontAsset/autosize from the original
-   UI prefab TextMeshPro components -> fills `tmp_autosize_font_material` (997).
-3. **Component/mask/material index**: extract Mask/RectMask2D/stencil/material/sprite from
-   the original prefab -> fills `mask_*` (411) and most of `graphic_*` (1780).
-4. **UI_NormalBattle form Lua decode** (noted gap): per-node active/refresh logic for
-   `active_chain` (942) and `handler_lua_lifecycle` (148).
+1. **Component/mask/material/sprite index (lane 3)** — `graphic_image_button_raycast`
+   (1780), `mask_rectmask_stencil_material` (411), `component_rehydration` (132),
+   `tmp_*` font metrics (~933). The existing `unity_objects.csv` has component type +
+   path_id but NO component->GameObject link, so a UnityPy re-parse of the raw bundles is
+   required to emit per-GameObject component lists, sprite/material refs, and mask flags.
+2. **UI_NormalBattle form Lua decode (lane 4)** — `active_chain` (942),
+   `handler_lua_lifecycle` (148). The form script was not in the decoded batch; decode it
+   with the same xor pipeline used for UI_Dock/UI_MainPage.
+3. **Genuinely runtime/account** — `battle_payload_related_ui` (52) and similar content
+   (chat, currency, redpoint). Not layout; does not block structural restore.
 
-Account/server content (chat, currency, redpoint, payload) remains genuinely runtime and
-does not block structural restore.
+Lane 3/4 tooling feasibility is being assessed separately (UnityPy availability + raw
+bundle presence + the existing decode script).

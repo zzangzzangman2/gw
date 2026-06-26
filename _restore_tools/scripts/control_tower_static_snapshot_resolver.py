@@ -1,24 +1,31 @@
-"""Static snapshot resolver (control tower).
+"""Static snapshot resolver (control tower) v2.
 
 Fills `runtimeValue` in the B75 battle approval-packet field checklist using ONLY
-original source-backed evidence: the extracted RectTransform index
-`girlswar_merged_extracted/indexes/ui_recttransforms.csv`.
+original source-backed evidence from the extracted indexes:
+- `girlswar_merged_extracted/indexes/ui_recttransforms.csv` (RectTransform geometry,
+  father_id hierarchy)  -> lane 1 (rect_transform, sibling_order)
+- `girlswar_merged_extracted/indexes/ui_texts.csv` (m_text / m_Text)  -> lane 2 (text)
+
+Crosswalk (the key to disambiguation): each B75 objectPath is matched to an ORIGINAL
+node by reconstructing every original node's full path via father_id chains, then taking
+the LONGEST trailing path-suffix of the B75 path that uniquely matches an original
+full-path suffix. This resolves reconstruction-specific parents (e.g. a hero-card
+instance node) by anchoring on the preserved original ancestors
+(root_battle/BottomCenter/.../imgMask).
 
 Guardrail (matches reports/RESTORE_RULES_APPLIED_CURRENT.md):
 - No coordinate-only guessing. Every filled value carries `staticSource` provenance
-  pointing at the original CSV row (bundle + path_id) it was derived from.
-- A value is filled ONLY when the node's leaf name resolves to an UNAMBIGUOUS
-  original geometry: either exactly one original node has that name, or all
-  same-named original nodes share identical geometry. Otherwise it stays null.
-- This resolver does NOT copy the candidate scene's own `sourceValue` into
-  `runtimeValue` (that would be circular self-reference). It re-derives from the
-  original extracted prefab index.
-- Only geometry/serialized-invariant categories are touched (rect_transform,
-  sibling_order). active/handler/tmp/mask/payload stay null as the true residual.
+  pointing at the original index row (bundle + path_id + suffix match) it came from.
+- A value is filled ONLY on a confident match: a unique suffix match, or, when several
+  original nodes share the suffix, only if their geometry is identical. Otherwise null.
+- Never copies the candidate scene's own `sourceValue` into `runtimeValue` (circular).
+- Only source-backed categories are touched (rect_transform, sibling_order, and `text`
+  from tmp). Font metrics / mask / component / active / handler stay null as the true
+  residual (those need lane 3 component index + lane 4 form-Lua decode).
 
 Output:
-- <packet>_FILLED.json                 (the filled snapshot B84 consumes)
-- <packet>_STATIC_RESOLVER_PROVENANCE.csv
+- BATTLE_84_ORIGINAL_RUNTIME_SNAPSHOT_FILLED.json   (the filled snapshot B84 consumes)
+- BATTLE_85_STATIC_SNAPSHOT_RESOLVER_PROVENANCE.csv
 - prints before/after missing counts.
 
 Run:
@@ -33,6 +40,7 @@ from pathlib import Path
 
 ROOT = Path(r"C:\Users\godho\Downloads\girlswar")
 CSV_PATH = ROOT / "girlswar_merged_extracted" / "indexes" / "ui_recttransforms.csv"
+TEXTS_PATH = ROOT / "girlswar_merged_extracted" / "indexes" / "ui_texts.csv"
 B75 = (
     ROOT / "reports" / "battle"
     / ("BATTLE_75_ORIGINAL_RUNTIME_SNAPSHOT_APPROVAL_PACKET_FOR_UI_NORMALBATTLE_"
@@ -50,15 +58,11 @@ GEOMETRY_FIELDS = {
     "pivot": ("pivot_x", "pivot_y"),
     "localScale": ("local_scale_x", "local_scale_y", "local_scale_z"),
 }
-# Categories we are willing to fill from the RectTransform index alone.
-FILLABLE_CATEGORIES = {"rect_transform", "sibling_order"}
-
-# Bundles whose nodes are legitimate sources for battle-HUD geometry. We prefer
-# matches inside these; a leaf that only exists outside them is treated as
-# ambiguous and left null.
-def is_battle_bundle(bundle: str) -> bool:
-    b = bundle.lower()
-    return ("battle" in b) or ("ui/uiprefabandres" in b) or ("_ext_prefab" in b)
+# Categories we fill, and which fieldNames within them.
+GEOMETRY_CATEGORY = "rect_transform"
+SIBLING_CATEGORY = "sibling_order"
+TEXT_CATEGORY = "tmp_autosize_font_material"
+SUFFIX_MAX = 4  # longest path-suffix length used for crosswalk
 
 
 def fmt_num(s: str) -> str:
@@ -73,19 +77,49 @@ def fmt_num(s: str) -> str:
 
 
 def load_csv():
-    """Return:
-    by_name: name -> list of row dicts
-    by_pathid: path_id -> row dict
-    """
-    by_name: dict[str, list[dict]] = defaultdict(list)
+    """Return by_pathid, and suffix_idx (path-suffix -> list of rows)."""
     by_pathid: dict[str, dict] = {}
+    rows_all: list[dict] = []
     with CSV_PATH.open("r", encoding="utf-8-sig", newline="") as f:
-        reader = csv.DictReader(f)
-        for row in reader:
-            name = row.get("game_object_name", "")
-            by_name[name].append(row)
+        for row in csv.DictReader(f):
             by_pathid[row.get("path_id", "")] = row
-    return by_name, by_pathid
+            rows_all.append(row)
+
+    def fullpath(r: dict) -> list[str]:
+        segs = [r.get("game_object_name", "")]
+        seen = {r.get("path_id")}
+        cur = r
+        for _ in range(64):
+            fid = cur.get("father_id", "")
+            if not fid or fid == "0" or fid in seen:
+                break
+            f = by_pathid.get(fid)
+            if not f:
+                break
+            segs.append(f.get("game_object_name", ""))
+            seen.add(fid)
+            cur = f
+        return list(reversed(segs))
+
+    suffix_idx: dict[str, list[dict]] = defaultdict(list)
+    for r in rows_all:
+        fp = fullpath(r)
+        for L in range(1, SUFFIX_MAX + 1):
+            if len(fp) >= L:
+                suffix_idx["/".join(fp[-L:])].append(r)
+    return by_pathid, suffix_idx
+
+
+def load_texts():
+    """game_object_id -> text value (m_text / m_Text)."""
+    by_goid: dict[str, str] = {}
+    with TEXTS_PATH.open("r", encoding="utf-8-sig", newline="") as f:
+        for row in csv.DictReader(f):
+            if row.get("field") in ("m_text", "m_Text"):
+                goid = row.get("game_object_id", "")
+                if goid and goid != "0" and goid not in by_goid:
+                    by_goid[goid] = row.get("text", "")
+    return by_goid
 
 
 def geometry_signature(row: dict) -> tuple:
@@ -95,19 +129,21 @@ def geometry_signature(row: dict) -> tuple:
     return tuple(fmt_num(row.get(c, "")) for c in cols)
 
 
-def resolve_node(leaf: str, by_name: dict) -> tuple[dict | None, str]:
-    """Return (chosen_row, reason). chosen_row is None when ambiguous/absent."""
-    rows = by_name.get(leaf, [])
-    if not rows:
-        return None, "no_original_node_with_this_name"
-    battle_rows = [r for r in rows if is_battle_bundle(r.get("bundle", ""))]
-    pool = battle_rows if battle_rows else rows
-    if len(pool) == 1:
-        return pool[0], "unique_match"
-    sigs = {geometry_signature(r) for r in pool}
-    if len(sigs) == 1:
-        return pool[0], "identical_geometry_across_%d_nodes" % len(pool)
-    return None, "ambiguous_%d_distinct_geometries" % len(sigs)
+def resolve_node(parts: list[str], suffix_idx: dict) -> tuple[dict | None, str]:
+    """Crosswalk a B75 objectPath (split into segments) to one original node via the
+    longest uniquely-matching path-suffix. Returns (row, reason) or (None, reason)."""
+    for L in range(SUFFIX_MAX, 0, -1):
+        if len(parts) < L:
+            continue
+        suf = "/".join(parts[-L:])
+        cand = suffix_idx.get(suf, [])
+        if len(cand) == 1:
+            return cand[0], "unique_suffix_%d" % L
+        if len(cand) > 1:
+            sigs = {geometry_signature(r) for r in cand}
+            if len(sigs) == 1:
+                return cand[0], "identical_geom_suffix_%d_n%d" % (L, len(cand))
+    return None, "ambiguous_or_absent"
 
 
 def sibling_index_from_csv(row: dict, by_pathid: dict) -> str | None:
@@ -126,7 +162,8 @@ def sibling_index_from_csv(row: dict, by_pathid: dict) -> str | None:
 
 
 def main() -> int:
-    by_name, by_pathid = load_csv()
+    by_pathid, suffix_idx = load_csv()
+    texts_by_goid = load_texts()
     packet = json.loads(B75.read_text(encoding="utf-8-sig"))
     fields = packet.get("fieldChecklist", [])
 
@@ -134,39 +171,54 @@ def main() -> int:
     filled = 0
     prov_rows = []
 
-    # cache node resolution per leaf to keep it deterministic and fast
+    # cache node resolution per objectPath
     resolve_cache: dict[str, tuple[dict | None, str]] = {}
 
     for row in fields:
         if row.get("runtimeValue") is not None:
             continue
         category = row.get("category")
-        if category not in FILLABLE_CATEGORIES:
-            continue
         field_name = row.get("fieldName")
         object_path = row.get("objectPath", "")
-        leaf = object_path.rsplit("/", 1)[-1]
 
-        if leaf not in resolve_cache:
-            resolve_cache[leaf] = resolve_node(leaf, by_name)
-        node, reason = resolve_cache[leaf]
+        # only categories/fields with a real static source
+        # NOTE: lane 2 (TEXT_CATEGORY "text") is intentionally NOT filled. ui_texts.csv
+        # m_text mixes effect/material param strings (EPM_*, riyu_*) with display text and
+        # has CJK encoding corruption, so it cannot be used without violating the
+        # no-fake/no-garbage guardrail. Display text needs the lane-3 component extraction
+        # (real TMP component on the node) instead.
+        want = (
+            (category == GEOMETRY_CATEGORY and field_name in GEOMETRY_FIELDS)
+            or (category == SIBLING_CATEGORY and field_name == "siblingIndex")
+        )
+        if not want:
+            continue
+
+        if object_path not in resolve_cache:
+            resolve_cache[object_path] = resolve_node(object_path.split("/"), suffix_idx)
+        node, reason = resolve_cache[object_path]
         if node is None:
             continue
 
         value = None
+        source_index = "ui_recttransforms.csv"
         if field_name in GEOMETRY_FIELDS:
             cols = GEOMETRY_FIELDS[field_name]
-            parts = [fmt_num(node.get(c, "")) for c in cols]
-            value = ",".join(parts)
+            value = ",".join(fmt_num(node.get(c, "")) for c in cols)
         elif field_name == "siblingIndex":
             value = sibling_index_from_csv(node, by_pathid)
+        elif field_name == "text":
+            goid = node.get("game_object_id", "")
+            if goid in texts_by_goid:
+                value = texts_by_goid[goid]
+                source_index = "ui_texts.csv"
 
         if value is None:
             continue
 
         row["runtimeValue"] = value
         row["staticSource"] = {
-            "from": "ui_recttransforms.csv",
+            "from": source_index,
             "bundle": node.get("bundle"),
             "path_id": node.get("path_id"),
             "game_object_name": node.get("game_object_name"),
@@ -178,6 +230,7 @@ def main() -> int:
             "fieldName": field_name,
             "category": category,
             "runtimeValue": value,
+            "sourceIndex": source_index,
             "sourceBundle": node.get("bundle"),
             "sourcePathId": node.get("path_id"),
             "match": reason,
@@ -192,7 +245,7 @@ def main() -> int:
     with OUT_PROV.open("w", encoding="utf-8-sig", newline="") as f:
         w = csv.DictWriter(f, fieldnames=[
             "objectPath", "fieldName", "category", "runtimeValue",
-            "sourceBundle", "sourcePathId", "match"])
+            "sourceIndex", "sourceBundle", "sourcePathId", "match"])
         w.writeheader()
         w.writerows(prov_rows)
 

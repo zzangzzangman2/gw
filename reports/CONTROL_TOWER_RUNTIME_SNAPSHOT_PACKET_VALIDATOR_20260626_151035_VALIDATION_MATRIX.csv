@@ -1,0 +1,3 @@
+﻿track,expectedFieldCount,filledRuntimeValues,missingRuntimeValues,placeholderRuntimeValues,approvalEvidencePresent,patchDecisionUnlocked,blockingReason
+battle,7337,2681,4656,0,False,False,battle snapshot needs source/approval review before patch
+maininterface,203,0,203,0,False,False,maininterface runtime values are not filled
