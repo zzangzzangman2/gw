@@ -1,0 +1,18 @@
+﻿{
+  "prefix": "BATTLE_56_TRACE_ACTOR_PREFAB_MESH_MATERIAL_SHADER_SOURCE_IMPORT_GAP_OR_SOURCE_BACKED_PATCH",
+  "scene": "Assets/Scenes/Battle51LuaBridgeRaycasterRegistrationCandidate.unity",
+  "sceneOpened": true,
+  "isFinalRestoredBattleScreen": false,
+  "patchDecision": "blocked_no_patch",
+  "prefabRows": 3,
+  "dependencyRows": 58,
+  "sceneRows": 3,
+  "livePrefabMeshReadyRows": 3,
+  "livePrefabSkeletonRows": 3,
+  "sceneMeshReadyRows": 0,
+  "sceneMaterialReadyRows": 0,
+  "importGapRows": 3,
+  "sourceBackedPatchAvailable": false,
+  "nextBlocker": "SOURCE_BACKED_ACTOR_PREFAB_IMPORT_PIPELINE_REQUIRED_OR_REUSE_BATTLE37_RUNTIME_IN_SCENE_BUILDER",
+  "failReason": ""
+}

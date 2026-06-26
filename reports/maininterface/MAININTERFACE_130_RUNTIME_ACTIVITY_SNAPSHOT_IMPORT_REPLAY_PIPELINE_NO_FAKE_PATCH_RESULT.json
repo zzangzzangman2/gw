@@ -1,0 +1,55 @@
+{
+  "generatedAt": "2026-06-26T02:22:15",
+  "restoredClaim": false,
+  "snapshotPath": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\maininterface\\MAININTERFACE_130_runtime_activity_snapshot_template.json",
+  "templatePath": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\maininterface\\MAININTERFACE_130_runtime_activity_snapshot_template.json",
+  "ui129SchemaPath": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\maininterface\\MAININTERFACE_129_required_snapshot_schema.json",
+  "replayableFieldsCsv": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\maininterface\\MAININTERFACE_130_replayable_fields.csv",
+  "replay": {
+    "status": "blocked_missing_runtime_snapshot_fields",
+    "missingFields": [
+      "activitys",
+      "faceActivitys",
+      "playerInfo.level",
+      "playerInfo.vip",
+      "redPointState.serverRedPointIds",
+      "reviewState.GameTools_IsReview",
+      "reviewState.GameEntry_IsReview",
+      "reviewState.GameEntry_IsCommittee",
+      "guideState.ModulesInit_GuideMgr_isGuide",
+      "timeState.serverTimeStep",
+      "timeState.serverMillTimeStamp",
+      "clientCallbackOutputs.showInMainFunc",
+      "clientCallbackOutputs.clientCheckIsOpen",
+      "clientCallbackOutputs.getActNewName",
+      "clientCallbackOutputs.mainPageTouchJumpId"
+    ],
+    "candidatePatchAllowed": false,
+    "mainSlots": [],
+    "faceSlots": [],
+    "reason": "Replayer refuses fake default activity state. Fill template fields from real runtime evidence first."
+  },
+  "staticEvidence": {
+    "actMgrSource": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\extracted\\unity\\clean_unityfs_slices\\download\\xlualogic\\datanode\\datamanager\\datamgr.assetbundle",
+    "actCfgDataSource": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\extracted\\unity\\clean_unityfs_slices\\download\\xlualogic\\datanode\\datamanager\\datamgr.assetbundle",
+    "localizationSource": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\extracted\\unity\\bundles\\b_7e5552edea2c10f4\\textassets\\-2670652165716608051_DTLangCommon.txt",
+    "tmpFontMaterialSource": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_maininterface_unity\\Assets\\RestoreData\\reports\\maininterface_tmp_shared_materials.csv"
+  },
+  "guardrails": {
+    "noScenePatchWithoutSnapshot": true,
+    "noFakeDefaultActivities": true,
+    "noActivitySlotArbitraryHide": true,
+    "noBtnDiscordReviewHide": true,
+    "noUiBgRaycastOff": true,
+    "noFakeIconTextSpine": true
+  },
+  "commandPolicy": {
+    "rootCmdCount": 1,
+    "rootCmdFiles": [
+      "C:\\Users\\godho\\Downloads\\girlswar\\00_COMMAND_CENTER.cmd"
+    ],
+    "restoreToolsDirectCmdCount": 0,
+    "restoreToolsDirectCmdFiles": []
+  },
+  "scriptPath": "C:\\Users\\godho\\Downloads\\girlswar\\_restore_tools\\scripts\\maininterface130_runtime_activity_snapshot_replay.py"
+}

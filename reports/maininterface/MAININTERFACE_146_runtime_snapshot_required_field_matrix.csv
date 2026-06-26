@@ -1,0 +1,206 @@
+section,fieldPath,requiredFor,sourceKnown,currentStaticValue,runtimeRequired,approvalLevel,forbiddenToGuess,notes
+formRuntime,forms.UI_Dock.formName,identify form,True,UI_Dock,False,no_execution_static_schema_only,False,Source-known static identity field.
+formRuntime,forms.UI_Dock.formId,identify form,True,248,False,no_execution_static_schema_only,False,Source-known static identity field.
+formRuntime,forms.UI_Dock.sourcePrefabPath,asset selection,True,UIPrefabAndRes/MainInterface/Prefabs/UI_Dock or UI_MainInterface,False,no_execution_static_schema_only,False,Source-known static identity field.
+formRuntime,forms.UI_Dock.disableUILayer,depth branch,True,true from DTSysUIForm,False,no_execution_static_schema_only,False,Source-known static identity field.
+formRuntime,forms.UI_Dock.activeSelf,final active state,False,,True,approved_original_runtime_dump_required,True,Required for exact form parent/depth decision.
+formRuntime,forms.UI_Dock.activeInHierarchy,final active state,False,,True,approved_original_runtime_dump_required,True,Required for exact form parent/depth decision.
+formRuntime,forms.UI_Dock.parentTransformFullPath,production parent/group path,False,,True,approved_original_runtime_dump_required,True,Required for exact form parent/depth decision.
+formRuntime,forms.UI_Dock.siblingIndex,production sibling/order,False,,True,approved_original_runtime_dump_required,True,Required for exact form parent/depth decision.
+formRuntime,forms.UI_Dock.localPosition,runtime transform verification,False,,True,approved_original_runtime_dump_required,True,Required for exact form parent/depth decision.
+formRuntime,forms.UI_Dock.anchoredPosition,runtime transform verification,False,,True,approved_original_runtime_dump_required,True,Required for exact form parent/depth decision.
+formRuntime,forms.UI_Dock.sizeDelta,runtime transform verification,False,,True,approved_original_runtime_dump_required,True,Required for exact form parent/depth decision.
+formRuntime,forms.UI_Dock.localScale,runtime transform verification,False,,True,approved_original_runtime_dump_required,True,Required for exact form parent/depth decision.
+formRuntime,forms.UI_Dock.uiGroup.groupId,effective UI group,True,1 static only,True,approved_original_runtime_dump_required,True,Required for exact form parent/depth decision.
+formRuntime,forms.UI_Dock.uiGroup.groupObjectPath,effective UI group,False,,True,approved_original_runtime_dump_required,True,Required for exact form parent/depth decision.
+formRuntime,forms.UI_Dock.uiGroup.layerObjectPath,effective UI layer,False,,True,approved_original_runtime_dump_required,True,Required for exact form parent/depth decision.
+formRuntime,forms.UI_Dock.uiGroup.baseOrder,effective UI layer,False,,True,approved_original_runtime_dump_required,True,Required for exact form parent/depth decision.
+formRuntime,forms.UI_Dock.uiGroup.sortingCursorBeforeOpen,depth formula,False,,True,approved_original_runtime_dump_required,True,Required for exact form parent/depth decision.
+formRuntime,forms.UI_Dock.uiGroup.sortingCursorAfterOpen,depth formula,False,,True,approved_original_runtime_dump_required,True,Required for exact form parent/depth decision.
+formRuntime,forms.UI_Dock.rootCanvas.sortingLayerID,render order,False,,True,approved_original_runtime_dump_required,True,Required for exact form parent/depth decision.
+formRuntime,forms.UI_Dock.rootCanvas.sortingOrder,render order,True,UI_Dock source=100; UI_MainInterface source=0,True,approved_original_runtime_dump_required,True,Required for exact form parent/depth decision.
+formRuntime,forms.UI_Dock.rootCanvas.overrideSorting,render order,True,false source,True,approved_original_runtime_dump_required,True,Required for exact form parent/depth decision.
+formRuntime,forms.UI_Dock.rootCanvas.renderMode,render order,True,ScreenSpaceCamera source,True,approved_original_runtime_dump_required,True,Required for exact form parent/depth decision.
+formRuntime,forms.UI_Dock.rootCanvas.worldCameraFullPath,render order,False,,True,approved_original_runtime_dump_required,True,Required for exact form parent/depth decision.
+formRuntime,forms.UI_Dock.rootCanvas.planeDistance,render order,True,100 source,True,approved_original_runtime_dump_required,True,Required for exact form parent/depth decision.
+formRuntime,forms.UI_Dock.rootCanvas.targetDisplay,render order,False,,True,approved_original_runtime_dump_required,True,Required for exact form parent/depth decision.
+formRuntime,forms.UI_Dock.uiFormBase.depth,UI140 formula,False,,True,approved_original_runtime_dump_required,True,Required for exact form parent/depth decision.
+formRuntime,forms.UI_Dock.uiFormBase.groupId,UI140 formula,False,,True,approved_original_runtime_dump_required,True,Required for exact form parent/depth decision.
+formRuntime,forms.UI_Dock.uiFormBase.currCanvasSortingOrder,UI140 formula,False,,True,approved_original_runtime_dump_required,True,Required for exact form parent/depth decision.
+formRuntime,forms.UI_Dock.canvasGroup.alpha,raycast/visibility,True,1 source,True,approved_original_runtime_dump_required,True,Required for exact form parent/depth decision.
+formRuntime,forms.UI_Dock.canvasGroup.interactable,raycast/visibility,True,true source,True,approved_original_runtime_dump_required,True,Required for exact form parent/depth decision.
+formRuntime,forms.UI_Dock.canvasGroup.blocksRaycasts,raycast/visibility,True,true source,True,approved_original_runtime_dump_required,True,Required for exact form parent/depth decision.
+formRuntime,forms.UI_MainPage.formName,identify form,True,UI_MainPage,False,no_execution_static_schema_only,False,Source-known static identity field.
+formRuntime,forms.UI_MainPage.formId,identify form,True,249,False,no_execution_static_schema_only,False,Source-known static identity field.
+formRuntime,forms.UI_MainPage.sourcePrefabPath,asset selection,True,UIPrefabAndRes/MainInterface/Prefabs/UI_Dock or UI_MainInterface,False,no_execution_static_schema_only,False,Source-known static identity field.
+formRuntime,forms.UI_MainPage.disableUILayer,depth branch,True,true from DTSysUIForm,False,no_execution_static_schema_only,False,Source-known static identity field.
+formRuntime,forms.UI_MainPage.activeSelf,final active state,False,,True,approved_original_runtime_dump_required,True,Required for exact form parent/depth decision.
+formRuntime,forms.UI_MainPage.activeInHierarchy,final active state,False,,True,approved_original_runtime_dump_required,True,Required for exact form parent/depth decision.
+formRuntime,forms.UI_MainPage.parentTransformFullPath,production parent/group path,False,,True,approved_original_runtime_dump_required,True,Required for exact form parent/depth decision.
+formRuntime,forms.UI_MainPage.siblingIndex,production sibling/order,False,,True,approved_original_runtime_dump_required,True,Required for exact form parent/depth decision.
+formRuntime,forms.UI_MainPage.localPosition,runtime transform verification,False,,True,approved_original_runtime_dump_required,True,Required for exact form parent/depth decision.
+formRuntime,forms.UI_MainPage.anchoredPosition,runtime transform verification,False,,True,approved_original_runtime_dump_required,True,Required for exact form parent/depth decision.
+formRuntime,forms.UI_MainPage.sizeDelta,runtime transform verification,False,,True,approved_original_runtime_dump_required,True,Required for exact form parent/depth decision.
+formRuntime,forms.UI_MainPage.localScale,runtime transform verification,False,,True,approved_original_runtime_dump_required,True,Required for exact form parent/depth decision.
+formRuntime,forms.UI_MainPage.uiGroup.groupId,effective UI group,True,1 static only,True,approved_original_runtime_dump_required,True,Required for exact form parent/depth decision.
+formRuntime,forms.UI_MainPage.uiGroup.groupObjectPath,effective UI group,False,,True,approved_original_runtime_dump_required,True,Required for exact form parent/depth decision.
+formRuntime,forms.UI_MainPage.uiGroup.layerObjectPath,effective UI layer,False,,True,approved_original_runtime_dump_required,True,Required for exact form parent/depth decision.
+formRuntime,forms.UI_MainPage.uiGroup.baseOrder,effective UI layer,False,,True,approved_original_runtime_dump_required,True,Required for exact form parent/depth decision.
+formRuntime,forms.UI_MainPage.uiGroup.sortingCursorBeforeOpen,depth formula,False,,True,approved_original_runtime_dump_required,True,Required for exact form parent/depth decision.
+formRuntime,forms.UI_MainPage.uiGroup.sortingCursorAfterOpen,depth formula,False,,True,approved_original_runtime_dump_required,True,Required for exact form parent/depth decision.
+formRuntime,forms.UI_MainPage.rootCanvas.sortingLayerID,render order,False,,True,approved_original_runtime_dump_required,True,Required for exact form parent/depth decision.
+formRuntime,forms.UI_MainPage.rootCanvas.sortingOrder,render order,True,UI_Dock source=100; UI_MainInterface source=0,True,approved_original_runtime_dump_required,True,Required for exact form parent/depth decision.
+formRuntime,forms.UI_MainPage.rootCanvas.overrideSorting,render order,True,false source,True,approved_original_runtime_dump_required,True,Required for exact form parent/depth decision.
+formRuntime,forms.UI_MainPage.rootCanvas.renderMode,render order,True,ScreenSpaceCamera source,True,approved_original_runtime_dump_required,True,Required for exact form parent/depth decision.
+formRuntime,forms.UI_MainPage.rootCanvas.worldCameraFullPath,render order,False,,True,approved_original_runtime_dump_required,True,Required for exact form parent/depth decision.
+formRuntime,forms.UI_MainPage.rootCanvas.planeDistance,render order,True,100 source,True,approved_original_runtime_dump_required,True,Required for exact form parent/depth decision.
+formRuntime,forms.UI_MainPage.rootCanvas.targetDisplay,render order,False,,True,approved_original_runtime_dump_required,True,Required for exact form parent/depth decision.
+formRuntime,forms.UI_MainPage.uiFormBase.depth,UI140 formula,False,,True,approved_original_runtime_dump_required,True,Required for exact form parent/depth decision.
+formRuntime,forms.UI_MainPage.uiFormBase.groupId,UI140 formula,False,,True,approved_original_runtime_dump_required,True,Required for exact form parent/depth decision.
+formRuntime,forms.UI_MainPage.uiFormBase.currCanvasSortingOrder,UI140 formula,False,,True,approved_original_runtime_dump_required,True,Required for exact form parent/depth decision.
+formRuntime,forms.UI_MainPage.canvasGroup.alpha,raycast/visibility,True,1 source,True,approved_original_runtime_dump_required,True,Required for exact form parent/depth decision.
+formRuntime,forms.UI_MainPage.canvasGroup.interactable,raycast/visibility,True,true source,True,approved_original_runtime_dump_required,True,Required for exact form parent/depth decision.
+formRuntime,forms.UI_MainPage.canvasGroup.blocksRaycasts,raycast/visibility,True,true source,True,approved_original_runtime_dump_required,True,Required for exact form parent/depth decision.
+canvasHelper,forms.UI_Dock.canvasHelpers[1].hierarchyPath,depth cascade,False,,True,approved_original_runtime_dump_required,True,Enumerate all helpers at runtime; template keeps placeholders only.
+canvasHelper,forms.UI_Dock.canvasHelpers[1].m_Depth,depth cascade,False,,True,approved_original_runtime_dump_required,True,Local helper depth after OnDepthChanged.
+canvasHelper,forms.UI_Dock.canvasHelpers[1].effectiveCanvasSortingOrder,depth cascade,False,,True,approved_original_runtime_dump_required,True,Combined parent depth plus local depth.
+canvasHelper,forms.UI_Dock.canvasHelpers[2].hierarchyPath,depth cascade,False,,True,approved_original_runtime_dump_required,True,Enumerate all helpers at runtime; template keeps placeholders only.
+canvasHelper,forms.UI_Dock.canvasHelpers[2].m_Depth,depth cascade,False,,True,approved_original_runtime_dump_required,True,Local helper depth after OnDepthChanged.
+canvasHelper,forms.UI_Dock.canvasHelpers[2].effectiveCanvasSortingOrder,depth cascade,False,,True,approved_original_runtime_dump_required,True,Combined parent depth plus local depth.
+canvasHelper,forms.UI_Dock.canvasHelpers[3].hierarchyPath,depth cascade,False,,True,approved_original_runtime_dump_required,True,Enumerate all helpers at runtime; template keeps placeholders only.
+canvasHelper,forms.UI_Dock.canvasHelpers[3].m_Depth,depth cascade,False,,True,approved_original_runtime_dump_required,True,Local helper depth after OnDepthChanged.
+canvasHelper,forms.UI_Dock.canvasHelpers[3].effectiveCanvasSortingOrder,depth cascade,False,,True,approved_original_runtime_dump_required,True,Combined parent depth plus local depth.
+canvasHelper,forms.UI_Dock.canvasHelpers[4].hierarchyPath,depth cascade,False,,True,approved_original_runtime_dump_required,True,Enumerate all helpers at runtime; template keeps placeholders only.
+canvasHelper,forms.UI_Dock.canvasHelpers[4].m_Depth,depth cascade,False,,True,approved_original_runtime_dump_required,True,Local helper depth after OnDepthChanged.
+canvasHelper,forms.UI_Dock.canvasHelpers[4].effectiveCanvasSortingOrder,depth cascade,False,,True,approved_original_runtime_dump_required,True,Combined parent depth plus local depth.
+canvasHelper,forms.UI_MainPage.canvasHelpers[1].hierarchyPath,depth cascade,False,,True,approved_original_runtime_dump_required,True,Enumerate all helpers at runtime; template keeps placeholders only.
+canvasHelper,forms.UI_MainPage.canvasHelpers[1].m_Depth,depth cascade,False,,True,approved_original_runtime_dump_required,True,Local helper depth after OnDepthChanged.
+canvasHelper,forms.UI_MainPage.canvasHelpers[1].effectiveCanvasSortingOrder,depth cascade,False,,True,approved_original_runtime_dump_required,True,Combined parent depth plus local depth.
+canvasHelper,forms.UI_MainPage.canvasHelpers[2].hierarchyPath,depth cascade,False,,True,approved_original_runtime_dump_required,True,Enumerate all helpers at runtime; template keeps placeholders only.
+canvasHelper,forms.UI_MainPage.canvasHelpers[2].m_Depth,depth cascade,False,,True,approved_original_runtime_dump_required,True,Local helper depth after OnDepthChanged.
+canvasHelper,forms.UI_MainPage.canvasHelpers[2].effectiveCanvasSortingOrder,depth cascade,False,,True,approved_original_runtime_dump_required,True,Combined parent depth plus local depth.
+canvasHelper,forms.UI_MainPage.canvasHelpers[3].hierarchyPath,depth cascade,False,,True,approved_original_runtime_dump_required,True,Enumerate all helpers at runtime; template keeps placeholders only.
+canvasHelper,forms.UI_MainPage.canvasHelpers[3].m_Depth,depth cascade,False,,True,approved_original_runtime_dump_required,True,Local helper depth after OnDepthChanged.
+canvasHelper,forms.UI_MainPage.canvasHelpers[3].effectiveCanvasSortingOrder,depth cascade,False,,True,approved_original_runtime_dump_required,True,Combined parent depth plus local depth.
+canvasHelper,forms.UI_MainPage.canvasHelpers[4].hierarchyPath,depth cascade,False,,True,approved_original_runtime_dump_required,True,Enumerate all helpers at runtime; template keeps placeholders only.
+canvasHelper,forms.UI_MainPage.canvasHelpers[4].m_Depth,depth cascade,False,,True,approved_original_runtime_dump_required,True,Local helper depth after OnDepthChanged.
+canvasHelper,forms.UI_MainPage.canvasHelpers[4].effectiveCanvasSortingOrder,depth cascade,False,,True,approved_original_runtime_dump_required,True,Combined parent depth plus local depth.
+guardedNodeState,guardedNodes.zhuye_di1.fullPath,guardrail active-state decision,False,,True,approved_original_runtime_dump_required,True,Needed before hiding/reparenting any guarded node.
+guardedNodeState,guardedNodes.zhuye_di1.activeSelf,guardrail active-state decision,False,,True,approved_original_runtime_dump_required,True,Forbidden to guess.
+guardedNodeState,guardedNodes.zhuye_di1.activeInHierarchy,guardrail active-state decision,False,,True,approved_original_runtime_dump_required,True,Forbidden to guess.
+guardedNodeState,guardedNodes.zhuye_di1.siblingIndex,order decision,False,,True,approved_original_runtime_dump_required,True,Forbidden to guess.
+guardedNodeState,guardedNodes.zhuye_bian.fullPath,guardrail active-state decision,False,,True,approved_original_runtime_dump_required,True,Needed before hiding/reparenting any guarded node.
+guardedNodeState,guardedNodes.zhuye_bian.activeSelf,guardrail active-state decision,False,,True,approved_original_runtime_dump_required,True,Forbidden to guess.
+guardedNodeState,guardedNodes.zhuye_bian.activeInHierarchy,guardrail active-state decision,False,,True,approved_original_runtime_dump_required,True,Forbidden to guess.
+guardedNodeState,guardedNodes.zhuye_bian.siblingIndex,order decision,False,,True,approved_original_runtime_dump_required,True,Forbidden to guess.
+guardedNodeState,guardedNodes.right/node_middle.fullPath,guardrail active-state decision,False,,True,approved_original_runtime_dump_required,True,Needed before hiding/reparenting any guarded node.
+guardedNodeState,guardedNodes.right/node_middle.activeSelf,guardrail active-state decision,False,,True,approved_original_runtime_dump_required,True,Forbidden to guess.
+guardedNodeState,guardedNodes.right/node_middle.activeInHierarchy,guardrail active-state decision,False,,True,approved_original_runtime_dump_required,True,Forbidden to guess.
+guardedNodeState,guardedNodes.right/node_middle.siblingIndex,order decision,False,,True,approved_original_runtime_dump_required,True,Forbidden to guess.
+guardedNodeState,guardedNodes.right/node_middle/wanfaWorldNode.fullPath,guardrail active-state decision,False,,True,approved_original_runtime_dump_required,True,Needed before hiding/reparenting any guarded node.
+guardedNodeState,guardedNodes.right/node_middle/wanfaWorldNode.activeSelf,guardrail active-state decision,False,,True,approved_original_runtime_dump_required,True,Forbidden to guess.
+guardedNodeState,guardedNodes.right/node_middle/wanfaWorldNode.activeInHierarchy,guardrail active-state decision,False,,True,approved_original_runtime_dump_required,True,Forbidden to guess.
+guardedNodeState,guardedNodes.right/node_middle/wanfaWorldNode.siblingIndex,order decision,False,,True,approved_original_runtime_dump_required,True,Forbidden to guess.
+guardedNodeState,guardedNodes.right/node_middle/wanfaWorldNode/worldwanfaBtn.fullPath,guardrail active-state decision,False,,True,approved_original_runtime_dump_required,True,Needed before hiding/reparenting any guarded node.
+guardedNodeState,guardedNodes.right/node_middle/wanfaWorldNode/worldwanfaBtn.activeSelf,guardrail active-state decision,False,,True,approved_original_runtime_dump_required,True,Forbidden to guess.
+guardedNodeState,guardedNodes.right/node_middle/wanfaWorldNode/worldwanfaBtn.activeInHierarchy,guardrail active-state decision,False,,True,approved_original_runtime_dump_required,True,Forbidden to guess.
+guardedNodeState,guardedNodes.right/node_middle/wanfaWorldNode/worldwanfaBtn.siblingIndex,order decision,False,,True,approved_original_runtime_dump_required,True,Forbidden to guess.
+guardedNodeState,guardedNodes.right/node_act_btn.fullPath,guardrail active-state decision,False,,True,approved_original_runtime_dump_required,True,Needed before hiding/reparenting any guarded node.
+guardedNodeState,guardedNodes.right/node_act_btn.activeSelf,guardrail active-state decision,False,,True,approved_original_runtime_dump_required,True,Forbidden to guess.
+guardedNodeState,guardedNodes.right/node_act_btn.activeInHierarchy,guardrail active-state decision,False,,True,approved_original_runtime_dump_required,True,Forbidden to guess.
+guardedNodeState,guardedNodes.right/node_act_btn.siblingIndex,order decision,False,,True,approved_original_runtime_dump_required,True,Forbidden to guess.
+guardedNodeState,guardedNodes.right/node_act_btn/btn_act_1.fullPath,guardrail active-state decision,False,,True,approved_original_runtime_dump_required,True,Needed before hiding/reparenting any guarded node.
+guardedNodeState,guardedNodes.right/node_act_btn/btn_act_1.activeSelf,guardrail active-state decision,False,,True,approved_original_runtime_dump_required,True,Forbidden to guess.
+guardedNodeState,guardedNodes.right/node_act_btn/btn_act_1.activeInHierarchy,guardrail active-state decision,False,,True,approved_original_runtime_dump_required,True,Forbidden to guess.
+guardedNodeState,guardedNodes.right/node_act_btn/btn_act_1.siblingIndex,order decision,False,,True,approved_original_runtime_dump_required,True,Forbidden to guess.
+guardedNodeState,guardedNodes.right/node_act_btn/btn_act_2.fullPath,guardrail active-state decision,False,,True,approved_original_runtime_dump_required,True,Needed before hiding/reparenting any guarded node.
+guardedNodeState,guardedNodes.right/node_act_btn/btn_act_2.activeSelf,guardrail active-state decision,False,,True,approved_original_runtime_dump_required,True,Forbidden to guess.
+guardedNodeState,guardedNodes.right/node_act_btn/btn_act_2.activeInHierarchy,guardrail active-state decision,False,,True,approved_original_runtime_dump_required,True,Forbidden to guess.
+guardedNodeState,guardedNodes.right/node_act_btn/btn_act_2.siblingIndex,order decision,False,,True,approved_original_runtime_dump_required,True,Forbidden to guess.
+guardedNodeState,guardedNodes.right/node_act_btn/btn_act_3.fullPath,guardrail active-state decision,False,,True,approved_original_runtime_dump_required,True,Needed before hiding/reparenting any guarded node.
+guardedNodeState,guardedNodes.right/node_act_btn/btn_act_3.activeSelf,guardrail active-state decision,False,,True,approved_original_runtime_dump_required,True,Forbidden to guess.
+guardedNodeState,guardedNodes.right/node_act_btn/btn_act_3.activeInHierarchy,guardrail active-state decision,False,,True,approved_original_runtime_dump_required,True,Forbidden to guess.
+guardedNodeState,guardedNodes.right/node_act_btn/btn_act_3.siblingIndex,order decision,False,,True,approved_original_runtime_dump_required,True,Forbidden to guess.
+guardedNodeState,guardedNodes.right/node_act_btn/btn_act_4.fullPath,guardrail active-state decision,False,,True,approved_original_runtime_dump_required,True,Needed before hiding/reparenting any guarded node.
+guardedNodeState,guardedNodes.right/node_act_btn/btn_act_4.activeSelf,guardrail active-state decision,False,,True,approved_original_runtime_dump_required,True,Forbidden to guess.
+guardedNodeState,guardedNodes.right/node_act_btn/btn_act_4.activeInHierarchy,guardrail active-state decision,False,,True,approved_original_runtime_dump_required,True,Forbidden to guess.
+guardedNodeState,guardedNodes.right/node_act_btn/btn_act_4.siblingIndex,order decision,False,,True,approved_original_runtime_dump_required,True,Forbidden to guess.
+guardedNodeState,guardedNodes.right/node_act_btn/btn_act_5.fullPath,guardrail active-state decision,False,,True,approved_original_runtime_dump_required,True,Needed before hiding/reparenting any guarded node.
+guardedNodeState,guardedNodes.right/node_act_btn/btn_act_5.activeSelf,guardrail active-state decision,False,,True,approved_original_runtime_dump_required,True,Forbidden to guess.
+guardedNodeState,guardedNodes.right/node_act_btn/btn_act_5.activeInHierarchy,guardrail active-state decision,False,,True,approved_original_runtime_dump_required,True,Forbidden to guess.
+guardedNodeState,guardedNodes.right/node_act_btn/btn_act_5.siblingIndex,order decision,False,,True,approved_original_runtime_dump_required,True,Forbidden to guess.
+guardedNodeState,guardedNodes.right/node_act_btn/btn_act_6.fullPath,guardrail active-state decision,False,,True,approved_original_runtime_dump_required,True,Needed before hiding/reparenting any guarded node.
+guardedNodeState,guardedNodes.right/node_act_btn/btn_act_6.activeSelf,guardrail active-state decision,False,,True,approved_original_runtime_dump_required,True,Forbidden to guess.
+guardedNodeState,guardedNodes.right/node_act_btn/btn_act_6.activeInHierarchy,guardrail active-state decision,False,,True,approved_original_runtime_dump_required,True,Forbidden to guess.
+guardedNodeState,guardedNodes.right/node_act_btn/btn_act_6.siblingIndex,order decision,False,,True,approved_original_runtime_dump_required,True,Forbidden to guess.
+guardedNodeState,guardedNodes.right/node_act_btn/btn_act_7.fullPath,guardrail active-state decision,False,,True,approved_original_runtime_dump_required,True,Needed before hiding/reparenting any guarded node.
+guardedNodeState,guardedNodes.right/node_act_btn/btn_act_7.activeSelf,guardrail active-state decision,False,,True,approved_original_runtime_dump_required,True,Forbidden to guess.
+guardedNodeState,guardedNodes.right/node_act_btn/btn_act_7.activeInHierarchy,guardrail active-state decision,False,,True,approved_original_runtime_dump_required,True,Forbidden to guess.
+guardedNodeState,guardedNodes.right/node_act_btn/btn_act_7.siblingIndex,order decision,False,,True,approved_original_runtime_dump_required,True,Forbidden to guess.
+guardedNodeState,guardedNodes.right/node_act_btn/btn_act_8.fullPath,guardrail active-state decision,False,,True,approved_original_runtime_dump_required,True,Needed before hiding/reparenting any guarded node.
+guardedNodeState,guardedNodes.right/node_act_btn/btn_act_8.activeSelf,guardrail active-state decision,False,,True,approved_original_runtime_dump_required,True,Forbidden to guess.
+guardedNodeState,guardedNodes.right/node_act_btn/btn_act_8.activeInHierarchy,guardrail active-state decision,False,,True,approved_original_runtime_dump_required,True,Forbidden to guess.
+guardedNodeState,guardedNodes.right/node_act_btn/btn_act_8.siblingIndex,order decision,False,,True,approved_original_runtime_dump_required,True,Forbidden to guess.
+guardedNodeState,guardedNodes.btn_discord.fullPath,guardrail active-state decision,False,,True,approved_original_runtime_dump_required,True,Needed before hiding/reparenting any guarded node.
+guardedNodeState,guardedNodes.btn_discord.activeSelf,guardrail active-state decision,False,,True,approved_original_runtime_dump_required,True,Forbidden to guess.
+guardedNodeState,guardedNodes.btn_discord.activeInHierarchy,guardrail active-state decision,False,,True,approved_original_runtime_dump_required,True,Forbidden to guess.
+guardedNodeState,guardedNodes.btn_discord.siblingIndex,order decision,False,,True,approved_original_runtime_dump_required,True,Forbidden to guess.
+guardedNodeState,guardedNodes.llvChat.fullPath,guardrail active-state decision,False,,True,approved_original_runtime_dump_required,True,Needed before hiding/reparenting any guarded node.
+guardedNodeState,guardedNodes.llvChat.activeSelf,guardrail active-state decision,False,,True,approved_original_runtime_dump_required,True,Forbidden to guess.
+guardedNodeState,guardedNodes.llvChat.activeInHierarchy,guardrail active-state decision,False,,True,approved_original_runtime_dump_required,True,Forbidden to guess.
+guardedNodeState,guardedNodes.llvChat.siblingIndex,order decision,False,,True,approved_original_runtime_dump_required,True,Forbidden to guess.
+guardedNodeState,guardedNodes.top/profile.fullPath,guardrail active-state decision,False,,True,approved_original_runtime_dump_required,True,Needed before hiding/reparenting any guarded node.
+guardedNodeState,guardedNodes.top/profile.activeSelf,guardrail active-state decision,False,,True,approved_original_runtime_dump_required,True,Forbidden to guess.
+guardedNodeState,guardedNodes.top/profile.activeInHierarchy,guardrail active-state decision,False,,True,approved_original_runtime_dump_required,True,Forbidden to guess.
+guardedNodeState,guardedNodes.top/profile.siblingIndex,order decision,False,,True,approved_original_runtime_dump_required,True,Forbidden to guess.
+guardedNodeState,guardedNodes.top/currency_gold.fullPath,guardrail active-state decision,False,,True,approved_original_runtime_dump_required,True,Needed before hiding/reparenting any guarded node.
+guardedNodeState,guardedNodes.top/currency_gold.activeSelf,guardrail active-state decision,False,,True,approved_original_runtime_dump_required,True,Forbidden to guess.
+guardedNodeState,guardedNodes.top/currency_gold.activeInHierarchy,guardrail active-state decision,False,,True,approved_original_runtime_dump_required,True,Forbidden to guess.
+guardedNodeState,guardedNodes.top/currency_gold.siblingIndex,order decision,False,,True,approved_original_runtime_dump_required,True,Forbidden to guess.
+guardedNodeState,guardedNodes.top/currency_holy.fullPath,guardrail active-state decision,False,,True,approved_original_runtime_dump_required,True,Needed before hiding/reparenting any guarded node.
+guardedNodeState,guardedNodes.top/currency_holy.activeSelf,guardrail active-state decision,False,,True,approved_original_runtime_dump_required,True,Forbidden to guess.
+guardedNodeState,guardedNodes.top/currency_holy.activeInHierarchy,guardrail active-state decision,False,,True,approved_original_runtime_dump_required,True,Forbidden to guess.
+guardedNodeState,guardedNodes.top/currency_holy.siblingIndex,order decision,False,,True,approved_original_runtime_dump_required,True,Forbidden to guess.
+guardedNodeState,guardedNodes.UI_bg.fullPath,guardrail active-state decision,False,,True,approved_original_runtime_dump_required,True,Needed before hiding/reparenting any guarded node.
+guardedNodeState,guardedNodes.UI_bg.activeSelf,guardrail active-state decision,False,,True,approved_original_runtime_dump_required,True,Forbidden to guess.
+guardedNodeState,guardedNodes.UI_bg.activeInHierarchy,guardrail active-state decision,False,,True,approved_original_runtime_dump_required,True,Forbidden to guess.
+guardedNodeState,guardedNodes.UI_bg.siblingIndex,order decision,False,,True,approved_original_runtime_dump_required,True,Forbidden to guess.
+uiBg,uiBg.image.raycastTarget,UI_bg guardrail,False,,True,approved_original_runtime_dump_required,True,Must preserve or source-back any change.
+uiBg,uiBg.button.interactable,UI_bg guardrail,False,,True,approved_original_runtime_dump_required,True,Must preserve or source-back any change.
+uiBg,uiBg.button.enabled,UI_bg guardrail,False,,True,approved_original_runtime_dump_required,True,Must preserve or source-back any change.
+uiBg,uiBg.topGraphicPath,UI_bg guardrail,False,,True,approved_original_runtime_dump_required,True,Must preserve or source-back any change.
+dynamicRuntime,dynamicRuntime.activitys,UI130 replay/activity account chat currency,False,,True,approved_original_runtime_dump_required or approved_manual_screenshot_plus_json_snapshot,True,UI130 refuses fake defaults.
+dynamicRuntime,dynamicRuntime.faceActivitys,UI130 replay/activity account chat currency,False,,True,approved_original_runtime_dump_required or approved_manual_screenshot_plus_json_snapshot,True,UI130 refuses fake defaults.
+dynamicRuntime,dynamicRuntime.playerInfo.level,UI130 replay/activity account chat currency,False,,True,approved_original_runtime_dump_required or approved_manual_screenshot_plus_json_snapshot,True,UI130 refuses fake defaults.
+dynamicRuntime,dynamicRuntime.playerInfo.vip,UI130 replay/activity account chat currency,False,,True,approved_original_runtime_dump_required or approved_manual_screenshot_plus_json_snapshot,True,UI130 refuses fake defaults.
+dynamicRuntime,dynamicRuntime.playerInfo.playerId,UI130 replay/activity account chat currency,False,,True,approved_original_runtime_dump_required or approved_manual_screenshot_plus_json_snapshot,True,UI130 refuses fake defaults.
+dynamicRuntime,dynamicRuntime.playerInfo.name,UI130 replay/activity account chat currency,False,,True,approved_original_runtime_dump_required or approved_manual_screenshot_plus_json_snapshot,True,UI130 refuses fake defaults.
+dynamicRuntime,dynamicRuntime.playerInfo.head,UI130 replay/activity account chat currency,False,,True,approved_original_runtime_dump_required or approved_manual_screenshot_plus_json_snapshot,True,UI130 refuses fake defaults.
+dynamicRuntime,dynamicRuntime.playerInfo.headFrame,UI130 replay/activity account chat currency,False,,True,approved_original_runtime_dump_required or approved_manual_screenshot_plus_json_snapshot,True,UI130 refuses fake defaults.
+dynamicRuntime,dynamicRuntime.playerInfo.guildId,UI130 replay/activity account chat currency,False,,True,approved_original_runtime_dump_required or approved_manual_screenshot_plus_json_snapshot,True,UI130 refuses fake defaults.
+dynamicRuntime,dynamicRuntime.redPointState.serverRedPointIds,UI130 replay/activity account chat currency,False,,True,approved_original_runtime_dump_required or approved_manual_screenshot_plus_json_snapshot,True,UI130 refuses fake defaults.
+dynamicRuntime,dynamicRuntime.redPointState.actSpecificRedPoints,UI130 replay/activity account chat currency,False,,True,approved_original_runtime_dump_required or approved_manual_screenshot_plus_json_snapshot,True,UI130 refuses fake defaults.
+dynamicRuntime,dynamicRuntime.reviewState.GameTools_IsReview,UI130 replay/activity account chat currency,False,,True,approved_original_runtime_dump_required or approved_manual_screenshot_plus_json_snapshot,True,UI130 refuses fake defaults.
+dynamicRuntime,dynamicRuntime.reviewState.GameEntry_IsReview,UI130 replay/activity account chat currency,False,,True,approved_original_runtime_dump_required or approved_manual_screenshot_plus_json_snapshot,True,UI130 refuses fake defaults.
+dynamicRuntime,dynamicRuntime.reviewState.GameEntry_IsCommittee,UI130 replay/activity account chat currency,False,,True,approved_original_runtime_dump_required or approved_manual_screenshot_plus_json_snapshot,True,UI130 refuses fake defaults.
+dynamicRuntime,dynamicRuntime.guideState.ModulesInit_GuideMgr_isGuide,UI130 replay/activity account chat currency,False,,True,approved_original_runtime_dump_required or approved_manual_screenshot_plus_json_snapshot,True,UI130 refuses fake defaults.
+dynamicRuntime,dynamicRuntime.guideState.CurrGuidEnterActId,UI130 replay/activity account chat currency,False,,True,approved_original_runtime_dump_required or approved_manual_screenshot_plus_json_snapshot,True,UI130 refuses fake defaults.
+dynamicRuntime,dynamicRuntime.timeState.serverTimeStep,UI130 replay/activity account chat currency,False,,True,approved_original_runtime_dump_required or approved_manual_screenshot_plus_json_snapshot,True,UI130 refuses fake defaults.
+dynamicRuntime,dynamicRuntime.timeState.serverMillTimeStamp,UI130 replay/activity account chat currency,False,,True,approved_original_runtime_dump_required or approved_manual_screenshot_plus_json_snapshot,True,UI130 refuses fake defaults.
+dynamicRuntime,dynamicRuntime.clientCallbackOutputs.showInMainFunc,UI130 replay/activity account chat currency,False,,True,approved_original_runtime_dump_required or approved_manual_screenshot_plus_json_snapshot,True,UI130 refuses fake defaults.
+dynamicRuntime,dynamicRuntime.clientCallbackOutputs.clientCheckIsOpen,UI130 replay/activity account chat currency,False,,True,approved_original_runtime_dump_required or approved_manual_screenshot_plus_json_snapshot,True,UI130 refuses fake defaults.
+dynamicRuntime,dynamicRuntime.clientCallbackOutputs.getActNewName,UI130 replay/activity account chat currency,False,,True,approved_original_runtime_dump_required or approved_manual_screenshot_plus_json_snapshot,True,UI130 refuses fake defaults.
+dynamicRuntime,dynamicRuntime.clientCallbackOutputs.mainPageTouchJumpId,UI130 replay/activity account chat currency,False,,True,approved_original_runtime_dump_required or approved_manual_screenshot_plus_json_snapshot,True,UI130 refuses fake defaults.
+dynamicRuntime,dynamicRuntime.localization.keys,UI130 replay/activity account chat currency,False,,True,approved_original_runtime_dump_required or approved_manual_screenshot_plus_json_snapshot,True,UI130 refuses fake defaults.
+dynamicRuntime,dynamicRuntime.resources.activitySpine,UI130 replay/activity account chat currency,False,,True,approved_original_runtime_dump_required or approved_manual_screenshot_plus_json_snapshot,True,UI130 refuses fake defaults.
+dynamicRuntime,dynamicRuntime.resources.tmpFontMaterial,UI130 replay/activity account chat currency,False,,True,approved_original_runtime_dump_required or approved_manual_screenshot_plus_json_snapshot,True,UI130 refuses fake defaults.
+dynamicRuntime,dynamicRuntime.chatState.lastChatType,UI130 replay/activity account chat currency,False,,True,approved_original_runtime_dump_required or approved_manual_screenshot_plus_json_snapshot,True,UI130 refuses fake defaults.
+dynamicRuntime,dynamicRuntime.chatState.visibleMessages,UI130 replay/activity account chat currency,False,,True,approved_original_runtime_dump_required or approved_manual_screenshot_plus_json_snapshot,True,UI130 refuses fake defaults.
+dynamicRuntime,dynamicRuntime.currencyState.gold,UI130 replay/activity account chat currency,False,,True,approved_original_runtime_dump_required or approved_manual_screenshot_plus_json_snapshot,True,UI130 refuses fake defaults.
+dynamicRuntime,dynamicRuntime.currencyState.holyCrystal,UI130 replay/activity account chat currency,False,,True,approved_original_runtime_dump_required or approved_manual_screenshot_plus_json_snapshot,True,UI130 refuses fake defaults.
+dynamicRuntime,dynamicRuntime.formationState.mainFightValue,UI130 replay/activity account chat currency,False,,True,approved_original_runtime_dump_required or approved_manual_screenshot_plus_json_snapshot,True,UI130 refuses fake defaults.
+maskStencilRuntime,runtimeMaskStencil.maskComponents,mask/stencil decision,False,,True,approved_original_runtime_dump_required,True,UI145 found no direct source Mask/RectMask2D under Dock; runtime still must prove active state if present.
+maskStencilRuntime,runtimeMaskStencil.rectMask2DComponents,mask/stencil decision,False,,True,approved_original_runtime_dump_required,True,UI145 found no direct source Mask/RectMask2D under Dock; runtime still must prove active state if present.
+maskStencilRuntime,runtimeMaskStencil.stencilMaterialStates,mask/stencil decision,False,,True,approved_original_runtime_dump_required,True,UI145 found no direct source Mask/RectMask2D under Dock; runtime still must prove active state if present.
+maskStencilRuntime,runtimeMaskStencil.canvasRendererMaterialCount,mask/stencil decision,False,,True,approved_original_runtime_dump_required,True,UI145 found no direct source Mask/RectMask2D under Dock; runtime still must prove active state if present.
+maskStencilRuntime,runtimeMaskStencil.skeletonGraphicCanvasRendererDepth,mask/stencil decision,False,,True,approved_original_runtime_dump_required,True,UI145 found no direct source Mask/RectMask2D under Dock; runtime still must prove active state if present.

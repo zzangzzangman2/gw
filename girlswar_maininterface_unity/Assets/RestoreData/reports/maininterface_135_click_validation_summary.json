@@ -1,0 +1,10 @@
+﻿{
+    "generatedAt": "2026-06-26 03:33:57",
+    "csv": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_maininterface_unity\\Assets\\RestoreData\\reports\\maininterface_135_click_validation.csv",
+    "json": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_maininterface_unity\\Assets\\RestoreData\\reports\\maininterface_135_click_validation_summary.json",
+    "totalButtons": 55,
+    "activeButtons": 45,
+    "activeInteractableButtons": 45,
+    "raycastClickableButtons": 43,
+    "raycastBlockedButtons": 2
+}

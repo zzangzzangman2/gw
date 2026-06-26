@@ -1,0 +1,39 @@
+{
+  "packet": "CONTROL_TOWER_POST_APPROVAL_WORKER_PROMPTS_20260626_094058",
+  "status": "draft_prompts_only_not_sent",
+  "createdFor": "existing_four_thread_control_tower_structure",
+  "runtimeExecutedByThisPacket": false,
+  "messagesSentByThisPacket": false,
+  "scenePatchedByThisPacket": false,
+  "packageImportedByThisPacket": false,
+  "fakeValuesAllowed": false,
+  "threads": {
+    "controlTower": {
+      "title": "폴더 파악하기",
+      "threadId": "019eff46-f67e-7dc1-9438-0969408f29ee"
+    },
+    "battle": {
+      "title": "GirlsWar 전투 복원 전용",
+      "threadId": "019eff6c-edb7-7ca1-b7b9-fff5378a6ff6"
+    },
+    "ui": {
+      "title": "GirlsWar UI 복원 전용",
+      "threadId": "019eff6c-a02a-7f73-9ffb-74456322d1ce"
+    },
+    "characters": {
+      "title": "GirlsWar 캐릭터 목록 전용",
+      "threadId": "019eff6d-307b-7532-8b1d-7105b18cd6b7"
+    }
+  },
+  "prerequisitesBeforeSendingAnyPrompt": [
+    "User explicitly approves original runtime snapshot/dump, or supplies filled UI148/B75 snapshot files.",
+    "Run control_tower_validate_runtime_snapshot_packets.py against the filled snapshots.",
+    "Proceed only if the validator reports readyForPatchReview=true, or route a correction request instead of patch work.",
+    "Do not send patch prompts based on null placeholders or inferred values."
+  ],
+  "battlePromptWhenValidatorPasses": "프로젝트: C:\\Users\\godho\\Downloads\\girlswar\n\n컨트롤타워에서 승인된 B75 runtime snapshot 값이 들어왔고, control_tower_validate_runtime_snapshot_packets.py 검증을 통과한 경우에만 진행하세요. 목표는 BATTLE_76_RUNTIME_SNAPSHOT_BACKED_UI_NORMALBATTLE_ROUTE_HUD_TMP_MASK_PATCH_REVIEW_NO_FAKE_PATCH 입니다.\n\n반드시 먼저 읽을 것:\n- reports\\CONTROL_TOWER_STATUS_20260626_093938.md\n- reports\\CONTROL_TOWER_RUNTIME_SNAPSHOT_PACKET_VALIDATOR_20260626_093911_RESULT.json 또는 최신 validator RESULT.json\n- reports\\battle\\BATTLE_75_ORIGINAL_RUNTIME_SNAPSHOT_APPROVAL_PACKET_FOR_UI_NORMALBATTLE_ROUTE_TMP_MASK_HANDLER_AFTER_B74_NO_EXECUTION_NO_PATCH_APPROVAL_PACKET_TEMPLATE.json\n- filled B75 runtime snapshot file provided/approved by the control tower\n- reports\\battle\\BATTLE_75...FIELD_TO_PATCH_UNBLOCK_MAPPING_MATRIX.csv\n- reports\\battle\\BATTLE_75...STATIC_KNOWN_VS_RUNTIME_REQUIRED_CLASSIFICATION_MATRIX.csv\n\nAllowed only after validator pass:\n1. Compare filled runtime values against B72/B73/B74 candidate/source rows.\n2. Produce a patch review matrix separating source-backed route/HUD/TMP/mask patch candidates from handler-only/runtime-only fields.\n3. If and only if source-backed fields are proven, create a candidate patch plan. Do not overwrite canonical scenes without separate control-tower approval.\n4. Validate captures against reference and 참고.mp4 only as auxiliary evidence.\n\nStill forbidden:\n- fake handlers/assets/cards/actors\n- external xLua import\n- package/manifest edit\n- coordinate-only patch\n- restored/playable claim before capture + interaction verification",
+  "uiPromptWhenValidatorPasses": "프로젝트: C:\\Users\\godho\\Downloads\\girlswar\n\n컨트롤타워에서 승인된 UI148 runtime snapshot 값이 들어왔고, control_tower_validate_runtime_snapshot_packets.py 검증을 통과한 경우에만 진행하세요. 목표는 MAININTERFACE_149_RUNTIME_SNAPSHOT_BACKED_PATCH_REVIEW_AND_CANDIDATE_NO_FAKE_PATCH 입니다.\n\n반드시 먼저 읽을 것:\n- reports\\CONTROL_TOWER_STATUS_20260626_093938.md\n- reports\\CONTROL_TOWER_RUNTIME_SNAPSHOT_PACKET_VALIDATOR_20260626_093911_RESULT.json 또는 최신 validator RESULT.json\n- reports\\maininterface\\MAININTERFACE_148_RUNTIME_SNAPSHOT_APPROVAL_PACKET_AND_STATIC_FIELD_EXHAUSTION_NO_RUNTIME_NO_PATCH_approval_packet_template.json\n- filled UI148 runtime snapshot file provided/approved by the control tower\n- reports\\maininterface\\MAININTERFACE_148...minimal_runtime_snapshot_field_checklist.csv\n- reports\\maininterface\\MAININTERFACE_148...mismatch_unblocked_by_field_risk_matrix.csv\n\nAllowed only after validator pass:\n1. Map filled runtime values to UI_Dock/UI_MainPage form stack, CanvasHelper depth, guarded active/sibling, UI_bg, mask/stencil, and dynamic activity/account/chat/currency decisions.\n2. Classify which candidate patches are source-backed and which remain runtime-only.\n3. If source-backed patch candidates exist, produce a candidate-only patch plan and capture validation plan.\n4. Do not hide guarded nodes or modify UI_bg raycast without direct runtime evidence.\n\nStill forbidden:\n- fake icon/text/spine/card values\n- screenshot/atlas paste\n- arbitrary route/world hiding\n- scene patch before source-backed candidate review\n- restored claim before reference capture validation",
+  "characterPromptWhenNewEvidenceArrives": "프로젝트: C:\\Users\\godho\\Downloads\\girlswar\n\n새 source-backed actor bundle, DTMonster/DTmodel chain, or explicit alias rule evidence가 제공된 경우에만 진행하세요. 목표는 CHARACTER_67_NEW_SOURCE_EVIDENCE_RECHECK_AND_PROPOSAL_ONLY_NO_IMPORT 입니다.\n\n반드시 먼저 읽을 것:\n- reports\\CONTROL_TOWER_THREAD_REGISTRY_20260626_093536.md\n- reports\\characters\\CHARACTER_66_UNRESOLVED_ENEMY_ID_SOURCE_ALIAS_TRACE_NO_NETWORK_NO_PROMOTION_RESULT.json\n- reports\\characters\\CHARACTER_65_FULL_BATTLE_PAYLOAD_ROSTER_AND_BUNDLE_GAP_MATRIX_NO_NETWORK_NO_IMPORT_RESULT.json\n- newly provided source evidence path(s)\n\nAllowed:\n1. Read-only verify the new evidence.\n2. Decide whether it proves exact 1036 battle actor bundle, unresolved enemy actor chains, or explicit aliases.\n3. Write proposal-only matrices. Do not copy/import/scene-modify.\n\nStill forbidden:\n- network download\n- file copy/import/move/delete\n- fake alias promotion\n- replacing enemies with 3001 without exact source rule",
+  "validatorCommandBeforePatchReview": "python _restore_tools\\scripts\\control_tower_validate_runtime_snapshot_packets.py --battle-template <filled-or-template-b75-json> --ui-filled-snapshot <filled-ui148-json>",
+  "currentBlocker": "UI148/B75 runtime values are still null; validator dry-run reports readyForPatchReview=false."
+}

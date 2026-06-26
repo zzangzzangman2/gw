@@ -1,0 +1,5 @@
+sourceKind,path,exists,width,height,aspect,nonDarkBBox,leftGutterPx,rightGutterPx,leftGutterNorm,rightGutterNorm,totalGutterRatio,detected
+true_capture,C:\Users\godho\Downloads\girlswar\girlswar_battle_unity\Assets\RestoreCaptures\battle_actor\Battle68TrueReferenceAspectNoSceneSave_1920x855.png,True,1920,855,2.245614,32/0/1894/846,200,27,0.104167,0.014063,0.118229,True
+reference_1,C:\Users\godho\Downloads\girlswar\work\reference_video\frames_5s\sample_004.jpg,True,1280,570,2.245614,3/0/1275/569,4,4,0.003125,0.003125,0.00625,False
+reference_2,C:\Users\godho\Downloads\girlswar\work\reference_video\frames_5s\sample_007.jpg,True,1280,570,2.245614,4/0/1275/569,4,4,0.003125,0.003125,0.00625,False
+reference_3,C:\Users\godho\Downloads\girlswar\work\reference_video\frames_5s\sample_012.jpg,True,1280,570,2.245614,3/0/1275/569,4,4,0.003125,0.003125,0.00625,False

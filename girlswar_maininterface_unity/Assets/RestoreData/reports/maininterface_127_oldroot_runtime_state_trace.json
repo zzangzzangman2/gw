@@ -1,0 +1,63 @@
+{
+  "generatedAt": "2026-06-26",
+  "restoredClaim": false,
+  "reference": "C:\\Users\\godho\\.codex\\attachments\\e607fc34-b674-4516-b051-8d396cd6df06\\image-1.png",
+  "ui126Capture": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_maininterface_unity\\Assets\\RestoreCaptures\\maininterface_ui126_oldroot_hero1005_candidate_1680x720.png",
+  "ui127Capture": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_maininterface_unity\\Assets\\RestoreCaptures\\maininterface_ui127_oldroot_bg1005_runtime_candidate_1680x720.png",
+  "contactSheet": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\maininterface\\MAININTERFACE_127_REFERENCE_DIFF_CONTACT.png",
+  "ui126ClickSummary": {
+    "generatedAt": "2026-06-26 01:43:07",
+    "scenePath": "Assets/Scenes/MainInterface_UI126_OldRootReferenceCandidate.unity",
+    "csv": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_maininterface_unity\\Assets\\RestoreData\\reports\\maininterface_126_oldroot_click_validation.csv",
+    "json": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_maininterface_unity\\Assets\\RestoreData\\reports\\maininterface_126_oldroot_click_validation_summary.json",
+    "totalButtons": 55,
+    "activeButtons": 44,
+    "activeInteractableButtons": 44,
+    "raycastClickableButtons": 43,
+    "raycastBlockedButtons": 1
+  },
+  "ui127ClickSummary": {
+    "generatedAt": "2026-06-26 01:49:37",
+    "scenePath": "Assets/Scenes/MainInterface_UI126_OldRootReferenceCandidate.unity",
+    "csv": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_maininterface_unity\\Assets\\RestoreData\\reports\\maininterface_127_oldroot_bg1005_click_validation.csv",
+    "json": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_maininterface_unity\\Assets\\RestoreData\\reports\\maininterface_127_oldroot_bg1005_click_validation_summary.json",
+    "totalButtons": 55,
+    "activeButtons": 45,
+    "activeInteractableButtons": 45,
+    "raycastClickableButtons": 43,
+    "raycastBlockedButtons": 2
+  },
+  "ui127BlockedClicks": [
+    {
+      "buttonName": "btn_discord__-4707263110286473242",
+      "hierarchyPath": "Canvas_MainInterface_1280x720/MainInterface_Root_From_RectTransform_CSV/UI_MainInterface_old__2475216337245998118/left__8354406432209300530/bg_juese__-2194597288458085354/btn_discord__-4707263110286473242",
+      "activeInHierarchy": "True",
+      "interactable": "True",
+      "targetGraphicReady": "True",
+      "screenX": "985.063",
+      "screenY": "713.087",
+      "raycastHitCount": "4",
+      "raycastTopDepth": "132",
+      "raycastTopWithinButton": "False",
+      "raycastClickable": "False",
+      "raycastTopObject": "Canvas_MainInterface_1280x720/MainInterface_Root_From_RectTransform_CSV/UI_MainInterface_old__2475216337245998118/right__-7547578691690053275/node_act_btn__-2702129779362243929/btn_act_12__2652907961449290088/btn_act__6358558666799476393"
+    },
+    {
+      "buttonName": "UI_bg__-3280973633984018659",
+      "hierarchyPath": "Canvas_MainInterface_1280x720/MainInterface_Root_From_RectTransform_CSV/UI_MainInterface_old__2475216337245998118/UI_bg__-3280973633984018659",
+      "activeInHierarchy": "True",
+      "interactable": "True",
+      "targetGraphicReady": "True",
+      "screenX": "1160",
+      "screenY": "600",
+      "raycastHitCount": "3",
+      "raycastTopDepth": "4",
+      "raycastTopWithinButton": "False",
+      "raycastClickable": "False",
+      "raycastTopObject": "Canvas_MainInterface_1280x720/MainInterface_Root_From_RectTransform_CSV/UI_MainInterface_old__2475216337245998118/UI_touchSpine__-318661959714136002"
+    }
+  ],
+  "evidenceCsv": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\maininterface\\MAININTERFACE_127_runtime_state_evidence.csv",
+  "diffCsv": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\maininterface\\MAININTERFACE_127_reference_diff_regions.csv",
+  "conclusion": "UI127 fixes the old-root black background in a source-backed candidate scene, but reference restoration remains false because activity/runtime placeholders, text/font state, and layer/click blockers remain unresolved."
+}

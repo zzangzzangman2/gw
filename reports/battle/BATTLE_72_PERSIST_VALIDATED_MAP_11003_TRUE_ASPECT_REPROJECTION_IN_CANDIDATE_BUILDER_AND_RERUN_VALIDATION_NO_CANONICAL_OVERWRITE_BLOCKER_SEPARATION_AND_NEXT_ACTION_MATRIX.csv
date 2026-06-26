@@ -1,0 +1,5 @@
+blockerCategory,status,evidence,nextAction,guardrail
+map_reprojection_persistence,persisted_map_reprojection_candidate_validated,B68=200/27; B71=0/0; B72=0/0,review persisted BATTLE72 scene/capture as candidate artifact; do not promote to canonical without control approval,canonicalSceneOverwritten=false
+route_hud_runtime_state,still_blocked,BATTLE72 did not patch HUD/right rail; BATTLE70 runtime/handler evidence requirement remains,requires original xLua/GameEntry/ModulesInit or serialized runtime state evidence,no fake handler or route hide/show
+bottom_card_and_actor_payload,still_blocked,BATTLE72 did not patch bottom cards or full actor payload,resolve payload chains separately,no fake card/icon/actor/mesh
+timeline_xlua_runtime,still_blocked,Timeline/xLua/runtime blockers remain outside map reprojection scope,requires approved/source-backed runtime/package path before true playability,no package import/download in BATTLE72

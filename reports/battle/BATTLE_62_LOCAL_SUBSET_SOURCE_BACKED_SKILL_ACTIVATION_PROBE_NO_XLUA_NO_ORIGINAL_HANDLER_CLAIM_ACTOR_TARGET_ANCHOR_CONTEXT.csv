@@ -1,0 +1,4 @@
+actorKey,actorObjectName,exists,activeInHierarchy,rendererCount,enabledRendererCount,boundsSize,anchorPosition,visibleForProbe,cameraName,cameraPixelRect
+1002,BATTLE57_SourceBackedActor_our_w0_s2_1002_model_1002,True,True,1,1,0/0/0,-1.65/-2.35/-0.2,True,BattleHudSpriteAtlasTextureRuntimeBindingClip05Camera,0/0/640/480
+1034,BATTLE57_SourceBackedActor_our_w0_s3_1034_model_1034,True,True,1,1,0/0/0,0/-2.35/-0.2,True,BattleHudSpriteAtlasTextureRuntimeBindingClip05Camera,0/0/640/480
+1100111,BATTLE57_SourceBackedActor_enemy_w1_s1_1100111_model_3001,True,True,1,1,0/0/0,1.05/2.35/-0.2,True,BattleHudSpriteAtlasTextureRuntimeBindingClip05Camera,0/0/640/480

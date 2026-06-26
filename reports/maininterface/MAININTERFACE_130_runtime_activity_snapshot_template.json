@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "source": "Fill from real server/account/cache/packet/playerprefs/replay evidence only. Do not insert guessed activities.",
+  "activitys": [],
+  "faceActivitys": [],
+  "playerInfo": {
+    "level": null,
+    "vip": null,
+    "playerId": null,
+    "name": null,
+    "head": null,
+    "headFrame": null
+  },
+  "redPointState": {
+    "serverRedPointIds": null,
+    "actSpecificRedPoints": null
+  },
+  "reviewState": {
+    "GameTools_IsReview": null,
+    "GameEntry_IsReview": null,
+    "GameEntry_IsCommittee": null
+  },
+  "guideState": {
+    "ModulesInit_GuideMgr_isGuide": null,
+    "CurrGuidEnterActId": null
+  },
+  "timeState": {
+    "serverTimeStep": null,
+    "serverMillTimeStamp": null
+  },
+  "clientCallbackOutputs": {
+    "showInMainFunc": null,
+    "clientCheckIsOpen": null,
+    "getActNewName": null,
+    "mainPageTouchJumpId": null
+  },
+  "localization": {
+    "language": "LangCommon Korean",
+    "keys": null
+  },
+  "resources": {
+    "activitySpine": null,
+    "tmpFontMaterial": null
+  }
+}

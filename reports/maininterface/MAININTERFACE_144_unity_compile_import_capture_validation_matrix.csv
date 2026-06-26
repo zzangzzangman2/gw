@@ -1,0 +1,7 @@
+check,status,detail
+unity_compile,passed,
+capture,produced,C:\Users\godho\Downloads\girlswar\girlswar_maininterface_unity\Assets\RestoreCaptures\maininterface_ui144_uidock_renderer_rootcanvas_candidate_1680x720.png
+ui_bg_raycast,preserved,baseline=True; final=True
+ui_bg_interactable,preserved,baseline=True; final=True
+source_root_canvas_sorting,applied,UI_MainInterface_old=0; UI_Dock=100
+uidock_renderer_dependencies,imported,attached=8/8

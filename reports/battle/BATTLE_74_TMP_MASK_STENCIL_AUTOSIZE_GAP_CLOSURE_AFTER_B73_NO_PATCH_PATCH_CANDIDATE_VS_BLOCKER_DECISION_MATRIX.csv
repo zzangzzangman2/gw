@@ -1,0 +1,6 @@
+decisionCategory,count,evidence,decision,nextAction
+source_backed_static_patch_candidate,0,"B54 serialized TMP/mask rows exist, but B73 candidate does not prove loaded component/script/runtime state parity",no_static_tmp_mask_patch_in_battle74,collect approved runtime snapshot and resolve component/script rehydration evidence first
+component_rehydration_required,81,B54 source rows map to B73 absent/missing-script TMP/Mask components or fall outside B73 focused component export,blocked_pending_tmp_mask_component_type_script_rehydration,trace original TMP/Mask script/component persistence and runtime loaded type state
+runtime_snapshot_required,81,"all B54 TMP/mask source rows still need active chain, sibling, material/stencil, autosize, and parent state from original runtime after component rehydration",blocked_pending_tmp_mask_runtime_snapshot,capture exact runtime field values after UI_NormalBattle.Open
+handler_or_xlua_required,34,TopCenter and operation button text/mask state is owned by UI_NormalBattle.lua / ModulesInit.ProcedureNormalBattle,blocked_pending_xlua_gameentry_modulesinit,recover approved original xLua/GameEntry runtime or provide original runtime snapshot
+forbidden_guess,1,Coordinate-only or visual-only TMP/mask/stencil patch would invent runtime state,do_not_patch_from_reference_image_only,keep no-patch guardrail

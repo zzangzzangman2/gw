@@ -1,0 +1,1185 @@
+[Licensing::Module] Trying to connect to existing licensing client channel...
+Built from '6000.4/staging' branch; Version is '6000.4.9f1 (f7258d6eebbe) revision 16197005'; Using compiler version '194234433'; Build Type 'Release'
+[Licensing::IpcConnector] Channel LicenseClient-godho doesn't exist
+OS: 'Windows 11  (10.0.26200) Professional' Language: 'ko' Physical Memory: 32022 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1
+System  architecture: x64
+Process architecture: x64
+Date: 2026-06-25T18:50:34Z
+[Licensing::Module] Successfully launched the LicensingClient (PId: 15900)
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\6000.4.9f1\Editor\Unity.exe
+-batchmode
+-quit
+-projectPath
+C:\Users\godho\Downloads\girlswar\girlswar_maininterface_unity
+-executeMethod
+GirlsWarRestore.MainInterface136UIDockOpenStackCandidate.BuildCaptureAndValidate
+-logFile
+C:\Users\godho\Downloads\girlswar\reports\maininterface\MAININTERFACE_136_unity_batch.log
+Successfully changed project path to: C:\Users\godho\Downloads\girlswar\girlswar_maininterface_unity
+C:/Users/godho/Downloads/girlswar/girlswar_maininterface_unity
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gfx=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+Player connection [15764]  Target information:
+
+Player connection [15764]  * "[IP] 10.10.1.159 [Port] 55504 [Flags] 2 [Guid] 1498123153 [EditorId] 1498123153 [Version] 1048832 [Id] WindowsEditor(7,sjpark) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [15764]  * "[IP] 172.26.64.1 [Port] 55504 [Flags] 2 [Guid] 1498123153 [EditorId] 1498123153 [Version] 1048832 [Id] WindowsEditor(7,sjpark) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [15764]  * "[IP] 100.66.239.97 [Port] 55504 [Flags] 2 [Guid] 1498123153 [EditorId] 1498123153 [Version] 1048832 [Id] WindowsEditor(7,sjpark) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [15764] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [15764] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Input System module state changed to: Initialized.
+[Physics::Module] Initialized fallback backend.
+[Physics::Module] Id: 0xdecafbad
+[Package Manager] Connected to IPC stream "Upm-24216" after 0.2 seconds.
+[Licensing::Module] Licensing is not yet initialized.
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-godho" at "2026-06-25T18:50:34.6635388Z"
+[Licensing::Client] Code 10 while verifying Licensing Client signature (process Id: 15900, path: "C:/Program Files/Unity/Hub/Editor/6000.4.9f1/Editor/Data/Resources/Licensing/Client/Unity.Licensing.Client.exe")
+[Licensing::Module] LicensingClient has failed validation; ignoring
+[Licensing::Client] Handshaking with LicensingClient:
+  Version:                 1.18.1+9fbee8e
+  Session Id:              6652a8ffd53e41c4ad7fc33f41994bfe
+  Correlation Id:          fec9bf55683a2373f4b55dbba713fd88
+  External correlation Id: 7946616014733835896
+  Machine Id:              nETCb6mCOTg3uD4qHH44hI9aRsg=
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-godho" (connect: 0.37s, validation: 0.03s, handshake: 0.04s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-godho-notifications" at "2026-06-25T18:50:34.7365296Z"
+[Licensing::Module] Connected to LicensingClient (PId: 15900, launch time: 0.00, total connection time: 0.45s)
+[Licensing::Module] Error: Access token is unavailable; failed to update
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] License group:
+  Id: 14569760011564-UnityPersXXXX
+  Product: Unity Personal
+  Type: Assigned
+  Expiration: Unlimited
+[Licensing::Client] Successfully updated license, isAsync: True, time: 0.01
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] Licensing Background thread has ended after 0.47s
+[Licensing::Module] Licensing is initialized (took 0.16s).
+[Licensing::Client] Successfully resolved entitlement details
+Library Redirect Path: Library/
+[Physics::Module] Selected backend.
+[Physics::Module] Name: PhysX
+[Physics::Module] Id: 0xf2b8ea05
+[Physics::Module] SDK Version: 4.1.2
+[Physics::Module] Integration Version: 1.0.0
+[Physics::Module] Threading Mode: Multi-Threaded
+Artifact Garbage Collection - Removed 6 unused hashed content files
+Initialize engine version: 6000.4.9f1 (f7258d6eebbe)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/6000.4.9f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/godho/Downloads/girlswar/girlswar_maininterface_unity/Assets
+GfxDevice: creating device client; kGfxThreadingModeNonThreaded
+d3d12: failed to query info queue interface (0x80004002).
+Direct3D:
+    Version:         Direct3D 12 [level 12.2]
+    Renderer:        Intel(R) Graphics (ID=0x7d67)
+    Vendor:          Intel
+    VRAM:            18252 MB
+    App VRAM Budget: 17484 MB
+    Driver:          32.0.101.8425
+    Unified Memory Architecture
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.4.9f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.4.9f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.4.9f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56216
+CodeReloadManager initialized
+Using cacheserver namespaces - metadata:defaultmetadata, artifacts:defaultartifacts
+Using cacheserver namespaces - metadata:defaultmetadata, artifacts:defaultartifacts
+ImportWorker Server TCP listen port: 0
+AcceleratorClientConnectionCallback - disconnected - :0
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.4.9f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.4.9f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.001727 seconds.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Package Manager log level set to [2]
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:False
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.242 seconds
+Domain Reload Profiling: 554ms
+	BeginReloadAssembly (110ms)
+		CreateAndSetChildDomain (13ms)
+	RebuildCommonClasses (24ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (43ms)
+	LoadAllAssembliesAndSetupDomain (127ms)
+		LoadAssemblies (94ms)
+		AnalyzeDomain (121ms)
+			TypeCache.Refresh (119ms)
+				TypeCache.ScanAssembly (109ms)
+	FinalizeReload (243ms)
+		SetupLoadedEditorAssemblies (0ms)
+			InitializePlatformSupportModulesInManaged (28ms)
+			BeforeProcessingInitializeOnLoad (51ms)
+			ProcessInitializeOnLoadAttributes (64ms)
+			ProcessInitializeOnLoadMethodAttributes (61ms)
+[Licensing::Client] Successfully resolved entitlement details
+Application.AssetDatabase Initial Refresh Start
+[Package Manager] Restoring resolved packages state from cache
+[Licensing::Client] Successfully resolved entitlement details
+[Package Manager] Registered 38 packages:
+  Built-in packages:
+    com.unity.multiplayer.center@1.0.1 (location: C:\Users\godho\Downloads\girlswar\girlswar_maininterface_unity\Library\PackageCache\com.unity.multiplayer.center@f01f4ba8d00a)
+    com.unity.modules.accessibility@1.0.0 (location: C:\Users\godho\Downloads\girlswar\girlswar_maininterface_unity\Library\PackageCache\com.unity.modules.accessibility)
+    com.unity.modules.adaptiveperformance@1.0.0 (location: C:\Users\godho\Downloads\girlswar\girlswar_maininterface_unity\Library\PackageCache\com.unity.modules.adaptiveperformance)
+    com.unity.modules.ai@1.0.0 (location: C:\Users\godho\Downloads\girlswar\girlswar_maininterface_unity\Library\PackageCache\com.unity.modules.ai)
+    com.unity.modules.androidjni@1.0.0 (location: C:\Users\godho\Downloads\girlswar\girlswar_maininterface_unity\Library\PackageCache\com.unity.modules.androidjni)
+    com.unity.modules.animation@1.0.0 (location: C:\Users\godho\Downloads\girlswar\girlswar_maininterface_unity\Library\PackageCache\com.unity.modules.animation)
+    com.unity.modules.assetbundle@1.0.0 (location: C:\Users\godho\Downloads\girlswar\girlswar_maininterface_unity\Library\PackageCache\com.unity.modules.assetbundle)
+    com.unity.modules.audio@1.0.0 (location: C:\Users\godho\Downloads\girlswar\girlswar_maininterface_unity\Library\PackageCache\com.unity.modules.audio)
+    com.unity.modules.cloth@1.0.0 (location: C:\Users\godho\Downloads\girlswar\girlswar_maininterface_unity\Library\PackageCache\com.unity.modules.cloth)
+    com.unity.modules.director@1.0.0 (location: C:\Users\godho\Downloads\girlswar\girlswar_maininterface_unity\Library\PackageCache\com.unity.modules.director)
+    com.unity.modules.imageconversion@1.0.0 (location: C:\Users\godho\Downloads\girlswar\girlswar_maininterface_unity\Library\PackageCache\com.unity.modules.imageconversion)
+    com.unity.modules.imgui@1.0.0 (location: C:\Users\godho\Downloads\girlswar\girlswar_maininterface_unity\Library\PackageCache\com.unity.modules.imgui)
+    com.unity.modules.jsonserialize@1.0.0 (location: C:\Users\godho\Downloads\girlswar\girlswar_maininterface_unity\Library\PackageCache\com.unity.modules.jsonserialize)
+    com.unity.modules.particlesystem@1.0.0 (location: C:\Users\godho\Downloads\girlswar\girlswar_maininterface_unity\Library\PackageCache\com.unity.modules.particlesystem)
+    com.unity.modules.physics@1.0.0 (location: C:\Users\godho\Downloads\girlswar\girlswar_maininterface_unity\Library\PackageCache\com.unity.modules.physics)
+    com.unity.modules.physics2d@1.0.0 (location: C:\Users\godho\Downloads\girlswar\girlswar_maininterface_unity\Library\PackageCache\com.unity.modules.physics2d)
+    com.unity.modules.screencapture@1.0.0 (location: C:\Users\godho\Downloads\girlswar\girlswar_maininterface_unity\Library\PackageCache\com.unity.modules.screencapture)
+    com.unity.modules.terrain@1.0.0 (location: C:\Users\godho\Downloads\girlswar\girlswar_maininterface_unity\Library\PackageCache\com.unity.modules.terrain)
+    com.unity.modules.terrainphysics@1.0.0 (location: C:\Users\godho\Downloads\girlswar\girlswar_maininterface_unity\Library\PackageCache\com.unity.modules.terrainphysics)
+    com.unity.modules.tilemap@1.0.0 (location: C:\Users\godho\Downloads\girlswar\girlswar_maininterface_unity\Library\PackageCache\com.unity.modules.tilemap)
+    com.unity.modules.ui@1.0.0 (location: C:\Users\godho\Downloads\girlswar\girlswar_maininterface_unity\Library\PackageCache\com.unity.modules.ui)
+    com.unity.modules.uielements@1.0.0 (location: C:\Users\godho\Downloads\girlswar\girlswar_maininterface_unity\Library\PackageCache\com.unity.modules.uielements)
+    com.unity.modules.umbra@1.0.0 (location: C:\Users\godho\Downloads\girlswar\girlswar_maininterface_unity\Library\PackageCache\com.unity.modules.umbra)
+    com.unity.modules.unityanalytics@1.0.0 (location: C:\Users\godho\Downloads\girlswar\girlswar_maininterface_unity\Library\PackageCache\com.unity.modules.unityanalytics)
+    com.unity.modules.unitywebrequest@1.0.0 (location: C:\Users\godho\Downloads\girlswar\girlswar_maininterface_unity\Library\PackageCache\com.unity.modules.unitywebrequest)
+    com.unity.modules.unitywebrequestassetbundle@1.0.0 (location: C:\Users\godho\Downloads\girlswar\girlswar_maininterface_unity\Library\PackageCache\com.unity.modules.unitywebrequestassetbundle)
+    com.unity.modules.unitywebrequestaudio@1.0.0 (location: C:\Users\godho\Downloads\girlswar\girlswar_maininterface_unity\Library\PackageCache\com.unity.modules.unitywebrequestaudio)
+    com.unity.modules.unitywebrequesttexture@1.0.0 (location: C:\Users\godho\Downloads\girlswar\girlswar_maininterface_unity\Library\PackageCache\com.unity.modules.unitywebrequesttexture)
+    com.unity.modules.unitywebrequestwww@1.0.0 (location: C:\Users\godho\Downloads\girlswar\girlswar_maininterface_unity\Library\PackageCache\com.unity.modules.unitywebrequestwww)
+    com.unity.modules.vectorgraphics@1.0.0 (location: C:\Users\godho\Downloads\girlswar\girlswar_maininterface_unity\Library\PackageCache\com.unity.modules.vectorgraphics)
+    com.unity.modules.vehicles@1.0.0 (location: C:\Users\godho\Downloads\girlswar\girlswar_maininterface_unity\Library\PackageCache\com.unity.modules.vehicles)
+    com.unity.modules.video@1.0.0 (location: C:\Users\godho\Downloads\girlswar\girlswar_maininterface_unity\Library\PackageCache\com.unity.modules.video)
+    com.unity.modules.vr@1.0.0 (location: C:\Users\godho\Downloads\girlswar\girlswar_maininterface_unity\Library\PackageCache\com.unity.modules.vr)
+    com.unity.modules.wind@1.0.0 (location: C:\Users\godho\Downloads\girlswar\girlswar_maininterface_unity\Library\PackageCache\com.unity.modules.wind)
+    com.unity.modules.xr@1.0.0 (location: C:\Users\godho\Downloads\girlswar\girlswar_maininterface_unity\Library\PackageCache\com.unity.modules.xr)
+    com.unity.ugui@2.0.0 (location: C:\Users\godho\Downloads\girlswar\girlswar_maininterface_unity\Library\PackageCache\com.unity.ugui@1f2d1ab0d950)
+    com.unity.modules.subsystems@1.0.0 (location: C:\Users\godho\Downloads\girlswar\girlswar_maininterface_unity\Library\PackageCache\com.unity.modules.subsystems)
+    com.unity.modules.hierarchycore@1.0.0 (location: C:\Users\godho\Downloads\girlswar\girlswar_maininterface_unity\Library\PackageCache\com.unity.modules.hierarchycore)
+[Subsystems] No new subsystems found in resolved package list.
+[Package Manager] Done registering packages in 0.01 seconds
+[ScriptCompilation] Requested script compilation because: AssetDatabase observed changes in script compilation related files
+Starting: C:\Program Files\Unity\Hub\Editor\6000.4.9f1\Editor\Data\Tools\BuildPipeline\bee_backend.exe --ipc --defer-dag-verification --dagfile="Library/Bee/1900b0aE.dag" --continue-on-failure --profile="Library/Bee/backend1.traceevents" ScriptAssemblies
+WorkingDir: C:/Users/godho/Downloads/girlswar/girlswar_maininterface_unity
+DisplayProgressbar: Compiling Scripts
+ExitCode: 0 Duration: 1s949ms
+[244/247    1s] Csc Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp-Editor.dll (+2 others)
+Assets\Editor\MainInterface126ReferenceScreenOpenStackTrace.cs(68,30): warning CS0618: 'Object.FindFirstObjectByType<T>()' is obsolete: 'FindFirstObjectByType has been deprecated because it relies on instance ID ordering. Use FindAnyObjectByType instead, which does not depend on ordering.'
+
+Assets\Editor\MainInterface124Hero1005HomeSpineMount.cs(67,30): warning CS0618: 'Object.FindFirstObjectByType<T>()' is obsolete: 'FindFirstObjectByType has been deprecated because it relies on instance ID ordering. Use FindAnyObjectByType instead, which does not depend on ordering.'
+
+Assets\Editor\MainInterface135Hero1005HomeParaBackFrontCandidate.cs(68,30): warning CS0618: 'Object.FindFirstObjectByType<T>()' is obsolete: 'FindFirstObjectByType has been deprecated because it relies on instance ID ordering. Use FindAnyObjectByType instead, which does not depend on ordering.'
+
+Assets\Editor\MainInterface136UIDockOpenStackCandidate.cs(84,30): warning CS0618: 'Object.FindFirstObjectByType<T>()' is obsolete: 'FindFirstObjectByType has been deprecated because it relies on instance ID ordering. Use FindAnyObjectByType instead, which does not depend on ordering.'
+
+Assets\Editor\MainInterface126ReferenceScreenOpenStackTrace.cs(124,30): warning CS0618: 'Object.FindFirstObjectByType<T>()' is obsolete: 'FindFirstObjectByType has been deprecated because it relies on instance ID ordering. Use FindAnyObjectByType instead, which does not depend on ordering.'
+
+Assets\Editor\MainInterface126ReferenceScreenOpenStackTrace.cs(181,30): warning CS0618: 'Object.FindFirstObjectByType<T>()' is obsolete: 'FindFirstObjectByType has been deprecated because it relies on instance ID ordering. Use FindAnyObjectByType instead, which does not depend on ordering.'
+
+Assets\Editor\MainInterface135Hero1005HomeParaBackFrontCandidate.cs(102,116): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+
+Assets\Editor\MainInterface135Hero1005HomeParaBackFrontCandidate.cs(102,39): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsInactive, FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+
+Assets\Editor\MainInterface124Hero1005HomeSpineMount.cs(365,112): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+
+Assets\Editor\MainInterface124Hero1005HomeSpineMount.cs(365,37): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsInactive, FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+
+Assets\Editor\MainInterface126ReferenceScreenOpenStackTrace.cs(336,101): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+
+Assets\Editor\MainInterface126ReferenceScreenOpenStackTrace.cs(336,27): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsInactive, FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+
+Assets\Editor\MainInterface126ReferenceScreenOpenStackTrace.cs(368,112): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+
+Assets\Editor\MainInterface126ReferenceScreenOpenStackTrace.cs(368,37): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsInactive, FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+
+Assets\Editor\MainInterface132StaticTmpFontMaterialAudit.cs(56,109): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+
+Assets\Editor\MainInterface132StaticTmpFontMaterialAudit.cs(56,33): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsInactive, FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+
+Assets\Editor\MainInterface132StaticTmpFontMaterialAudit.cs(58,106): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+
+Assets\Editor\MainInterface132StaticTmpFontMaterialAudit.cs(58,34): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsInactive, FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+
+Assets\Editor\MainInterface133HeroBgBottomNavLayoutProbe.cs(47,102): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+
+Assets\Editor\MainInterface133HeroBgBottomNavLayoutProbe.cs(47,28): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsInactive, FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+
+Assets\Editor\MainInterface133HeroBgBottomNavLayoutProbe.cs(48,110): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+
+Assets\Editor\MainInterface133HeroBgBottomNavLayoutProbe.cs(48,33): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsInactive, FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+
+Assets\Editor\MainInterface135Hero1005HomeParaBackFrontCandidate.cs(421,103): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+
+Assets\Editor\MainInterface135Hero1005HomeParaBackFrontCandidate.cs(421,28): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsInactive, FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+
+Assets\Editor\MainInterface135Hero1005HomeParaBackFrontCandidate.cs(425,110): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+
+Assets\Editor\MainInterface135Hero1005HomeParaBackFrontCandidate.cs(425,36): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsInactive, FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+
+Assets\Editor\MainInterface124Hero1005HomeSpineMount.cs(417,103): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+
+Assets\Editor\MainInterface124Hero1005HomeSpineMount.cs(417,28): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsInactive, FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+
+Assets\Editor\MainInterface124Hero1005HomeSpineMount.cs(420,110): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+
+Assets\Editor\MainInterface124Hero1005HomeSpineMount.cs(420,36): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsInactive, FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+
+Assets\Editor\MainInterface126ReferenceScreenOpenStackTrace.cs(518,121): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+
+Assets\Editor\MainInterface126ReferenceScreenOpenStackTrace.cs(518,38): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsInactive, FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+
+Assets\Editor\MainInterfaceGuildMainWhitePanelTrace.cs(256,87): warning CS0618: 'Object.GetInstanceID()' is obsolete: 'GetInstanceID is deprecated. Use GetEntityId instead. This will be removed in a future version.'
+
+Assets\Editor\MainInterfaceGuildMainWhitePanelTrace.cs(256,50): warning CS0618: 'Unsupported.GetLocalIdentifierInFile(int)' is obsolete: 'GetLocalIdentifierInFile() is deprecated. Use GetLocalIdentifierInFileForPersistentObject() instead.'
+
+Assets\Editor\MainInterfaceGuildMainWhitePanelTrace.cs(265,91): warning CS0618: 'Object.GetInstanceID()' is obsolete: 'GetInstanceID is deprecated. Use GetEntityId instead. This will be removed in a future version.'
+
+Assets\Editor\MainInterfaceGuildMainWhitePanelTrace.cs(265,54): warning CS0618: 'Unsupported.GetLocalIdentifierInFile(int)' is obsolete: 'GetLocalIdentifierInFile() is deprecated. Use GetLocalIdentifierInFileForPersistentObject() instead.'
+
+Assets\Editor\MainInterface126ReferenceScreenOpenStackTrace.cs(529,116): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+
+Assets\Editor\MainInterface126ReferenceScreenOpenStackTrace.cs(529,39): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsInactive, FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+
+Assets\Editor\MainInterface135Hero1005HomeParaBackFrontCandidate.cs(494,121): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+
+Assets\Editor\MainInterface135Hero1005HomeParaBackFrontCandidate.cs(494,38): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsInactive, FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+
+Assets\Editor\MainInterface116RouteSpineRuntimeBridgeReplay.cs(214,26): warning CS0618: 'Object.FindFirstObjectByType<T>()' is obsolete: 'FindFirstObjectByType has been deprecated because it relies on instance ID ordering. Use FindAnyObjectByType instead, which does not depend on ordering.'
+
+Assets\Editor\MainInterface116RouteSpineRuntimeBridgeReplay.cs(252,112): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+
+Assets\Editor\MainInterface116RouteSpineRuntimeBridgeReplay.cs(252,37): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsInactive, FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+
+Assets\Editor\MainInterface126ReferenceScreenOpenStackTrace.cs(539,116): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+
+Assets\Editor\MainInterface126ReferenceScreenOpenStackTrace.cs(539,39): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsInactive, FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+
+Assets\Editor\MainInterface135Hero1005HomeParaBackFrontCandidate.cs(506,116): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+
+Assets\Editor\MainInterface135Hero1005HomeParaBackFrontCandidate.cs(506,39): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsInactive, FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+
+Assets\Editor\MainInterface135Hero1005HomeParaBackFrontCandidate.cs(514,116): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+
+Assets\Editor\MainInterface135Hero1005HomeParaBackFrontCandidate.cs(514,39): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsInactive, FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+
+Assets\Editor\MainInterface117RouteSkeletonGraphicLayoutValidation.cs(233,116): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+
+Assets\Editor\MainInterface117RouteSkeletonGraphicLayoutValidation.cs(233,35): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsInactive, FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+
+Assets\Editor\MainInterface116RouteSpineRuntimeBridgeReplay.cs(298,104): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+
+Assets\Editor\MainInterface116RouteSpineRuntimeBridgeReplay.cs(298,23): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsInactive, FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+
+Assets\Editor\MainInterface117RouteSkeletonGraphicLayoutValidation.cs(276,97): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+
+Assets\Editor\MainInterface117RouteSkeletonGraphicLayoutValidation.cs(276,20): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsInactive, FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+
+Assets\Editor\MainInterface117RouteSkeletonGraphicLayoutValidation.cs(283,26): warning CS0618: 'Object.FindFirstObjectByType<T>()' is obsolete: 'FindFirstObjectByType has been deprecated because it relies on instance ID ordering. Use FindAnyObjectByType instead, which does not depend on ordering.'
+
+Assets\Editor\MainInterface117RouteSkeletonGraphicLayoutValidation.cs(321,112): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+
+Assets\Editor\MainInterface117RouteSkeletonGraphicLayoutValidation.cs(321,37): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsInactive, FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+
+Assets\Editor\MainInterface117RouteSkeletonGraphicLayoutValidation.cs(366,104): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+
+Assets\Editor\MainInterface117RouteSkeletonGraphicLayoutValidation.cs(366,23): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsInactive, FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+
+Assets\Editor\MainInterfaceNavigationTargetReferenceTrace.cs(294,73): warning CS0618: 'Object.GetInstanceID()' is obsolete: 'GetInstanceID is deprecated. Use GetEntityId instead. This will be removed in a future version.'
+
+Assets\Editor\MainInterfaceNavigationTargetReferenceTrace.cs(294,36): warning CS0618: 'Unsupported.GetLocalIdentifierInFile(int)' is obsolete: 'GetLocalIdentifierInFile() is deprecated. Use GetLocalIdentifierInFileForPersistentObject() instead.'
+
+Assets\Editor\MainInterfaceRouteLabelRectOverrideRevalidation.cs(104,111): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+
+Assets\Editor\MainInterfaceRouteLabelRectOverrideRevalidation.cs(104,30): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsInactive, FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+
+Assets\Editor\MainInterfaceRouteLabelRectOverrideRevalidation.cs(154,53): warning CS0618: 'TMP_Text.enableWordWrapping' is obsolete: 'The enabledWordWrapping property is now obsolete. Please use the textWrappingMode property instead.'
+
+Assets\Editor\MainInterfaceNavigationTargetReferenceTrace.cs(305,67): warning CS0618: 'SerializedProperty.objectReferenceInstanceIDValue' is obsolete: 'objectReferenceInstanceIDValue is obsolete. Use objectReferenceEntityIdValue instead'
+
+Assets\Editor\MainInterfaceNavigationTargetReferenceTrace.cs(307,20): warning CS0618: 'SerializedProperty.objectReferenceInstanceIDValue' is obsolete: 'objectReferenceInstanceIDValue is obsolete. Use objectReferenceEntityIdValue instead'
+
+Assets\Editor\MainInterfaceNavigationTargetReferenceTrace.cs(308,32): warning CS0618: 'SerializedProperty.objectReferenceInstanceIDValue' is obsolete: 'objectReferenceInstanceIDValue is obsolete. Use objectReferenceEntityIdValue instead'
+
+Assets\Editor\MainInterface120RouteSkeletonGraphicRuntimeMaskStencilVisibilityTrace.cs(406,104): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+
+Assets\Editor\MainInterface120RouteSkeletonGraphicRuntimeMaskStencilVisibilityTrace.cs(406,23): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsInactive, FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+
+Assets\Editor\MainInterfaceRouteTmpVariantMaterialAudit.cs(93,111): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+
+Assets\Editor\MainInterfaceRouteTmpVariantMaterialAudit.cs(93,28): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsInactive, FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+
+Assets\Editor\MainInterface124Hero1005HomeSpineMount.cs(623,120): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+
+Assets\Editor\MainInterface124Hero1005HomeSpineMount.cs(623,37): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsInactive, FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+
+Assets\Editor\MainInterface119RouteSkeletonGraphicMeshBoundsTrace.cs(381,104): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+
+Assets\Editor\MainInterface119RouteSkeletonGraphicMeshBoundsTrace.cs(381,23): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsInactive, FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+
+Assets\Editor\MainInterface124Hero1005HomeSpineMount.cs(642,113): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+
+Assets\Editor\MainInterface124Hero1005HomeSpineMount.cs(642,32): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsInactive, FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+
+Assets\Editor\MainInterface124Hero1005HomeSpineMount.cs(650,113): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+
+Assets\Editor\MainInterface124Hero1005HomeSpineMount.cs(650,32): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsInactive, FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+
+Assets\Editor\MainInterface118RouteSkeletonGraphicUIMaterialBinder.cs(278,26): warning CS0618: 'Object.FindFirstObjectByType<T>()' is obsolete: 'FindFirstObjectByType has been deprecated because it relies on instance ID ordering. Use FindAnyObjectByType instead, which does not depend on ordering.'
+
+Assets\Editor\MainInterface118RouteSkeletonGraphicUIMaterialBinder.cs(316,112): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+
+Assets\Editor\MainInterface118RouteSkeletonGraphicUIMaterialBinder.cs(316,37): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsInactive, FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+
+Assets\Editor\MainInterfaceRouteSkeletonGraphicReplayIntegration.cs(264,104): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+
+Assets\Editor\MainInterfaceRouteSkeletonGraphicReplayIntegration.cs(264,23): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsInactive, FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+
+Assets\Editor\MainInterface118RouteSkeletonGraphicUIMaterialBinder.cs(365,104): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+
+Assets\Editor\MainInterface118RouteSkeletonGraphicUIMaterialBinder.cs(365,23): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsInactive, FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+
+Assets\Editor\MainInterfaceSceneBuilder.cs(339,17): warning CS0162: Unreachable code detected
+
+Assets\Editor\MainInterfaceSceneBuilder.cs(392,26): warning CS0618: 'Object.FindFirstObjectByType<T>()' is obsolete: 'FindFirstObjectByType has been deprecated because it relies on instance ID ordering. Use FindAnyObjectByType instead, which does not depend on ordering.'
+
+Assets\Editor\MainInterface136UIDockOpenStackCandidate.cs(477,103): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+
+Assets\Editor\MainInterface136UIDockOpenStackCandidate.cs(477,28): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsInactive, FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+
+Assets\Editor\MainInterface136UIDockOpenStackCandidate.cs(481,110): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+
+Assets\Editor\MainInterface136UIDockOpenStackCandidate.cs(481,36): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsInactive, FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+
+Assets\Editor\MainInterface136UIDockOpenStackCandidate.cs(554,121): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+
+Assets\Editor\MainInterface136UIDockOpenStackCandidate.cs(554,38): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsInactive, FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+
+Assets\Editor\MainInterface136UIDockOpenStackCandidate.cs(566,116): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+
+Assets\Editor\MainInterface136UIDockOpenStackCandidate.cs(566,39): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsInactive, FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+
+Assets\Editor\MainInterface136UIDockOpenStackCandidate.cs(574,116): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+
+Assets\Editor\MainInterface136UIDockOpenStackCandidate.cs(574,39): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsInactive, FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+
+Assets\Editor\MainInterface121RouteSkeletonGraphicClippingTextureHandoffTrace.cs(425,104): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+
+Assets\Editor\MainInterface121RouteSkeletonGraphicClippingTextureHandoffTrace.cs(425,23): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsInactive, FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+
+Assets\Editor\MainInterfaceRouteNonImageRendererEffectRuntimeStateTrace.cs(336,113): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+
+Assets\Editor\MainInterfaceRouteNonImageRendererEffectRuntimeStateTrace.cs(336,32): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsInactive, FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+
+Assets\Editor\MainInterfaceSceneBuilder.cs(808,21): warning CS0618: 'TMP_Text.enableWordWrapping' is obsolete: 'The enabledWordWrapping property is now obsolete. Please use the textWrappingMode property instead.'
+
+Assets\Editor\MainInterfaceSceneBuilder.cs(811,21): warning CS0618: 'TMP_Text.enableKerning' is obsolete: 'The "enableKerning" property has been deprecated. Use the "fontFeatures" property to control what features are enabled on the text component.'
+[245/247    0s] CopyFiles Library/ScriptAssemblies/Assembly-CSharp-Editor.pdb
+[246/247    0s] CopyFiles Library/ScriptAssemblies/Assembly-CSharp-Editor.dll
+*** Tundra build success (1.92 seconds), 3 items updated, 247 evaluated
+Assets\Editor\MainInterface126ReferenceScreenOpenStackTrace.cs(68,30): warning CS0618: 'Object.FindFirstObjectByType<T>()' is obsolete: 'FindFirstObjectByType has been deprecated because it relies on instance ID ordering. Use FindAnyObjectByType instead, which does not depend on ordering.'
+Assets\Editor\MainInterface124Hero1005HomeSpineMount.cs(67,30): warning CS0618: 'Object.FindFirstObjectByType<T>()' is obsolete: 'FindFirstObjectByType has been deprecated because it relies on instance ID ordering. Use FindAnyObjectByType instead, which does not depend on ordering.'
+Assets\Editor\MainInterface135Hero1005HomeParaBackFrontCandidate.cs(68,30): warning CS0618: 'Object.FindFirstObjectByType<T>()' is obsolete: 'FindFirstObjectByType has been deprecated because it relies on instance ID ordering. Use FindAnyObjectByType instead, which does not depend on ordering.'
+Assets\Editor\MainInterface136UIDockOpenStackCandidate.cs(84,30): warning CS0618: 'Object.FindFirstObjectByType<T>()' is obsolete: 'FindFirstObjectByType has been deprecated because it relies on instance ID ordering. Use FindAnyObjectByType instead, which does not depend on ordering.'
+Assets\Editor\MainInterface126ReferenceScreenOpenStackTrace.cs(124,30): warning CS0618: 'Object.FindFirstObjectByType<T>()' is obsolete: 'FindFirstObjectByType has been deprecated because it relies on instance ID ordering. Use FindAnyObjectByType instead, which does not depend on ordering.'
+Assets\Editor\MainInterface126ReferenceScreenOpenStackTrace.cs(181,30): warning CS0618: 'Object.FindFirstObjectByType<T>()' is obsolete: 'FindFirstObjectByType has been deprecated because it relies on instance ID ordering. Use FindAnyObjectByType instead, which does not depend on ordering.'
+Assets\Editor\MainInterface135Hero1005HomeParaBackFrontCandidate.cs(102,116): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+Assets\Editor\MainInterface135Hero1005HomeParaBackFrontCandidate.cs(102,39): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsInactive, FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+Assets\Editor\MainInterface124Hero1005HomeSpineMount.cs(365,112): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+Assets\Editor\MainInterface124Hero1005HomeSpineMount.cs(365,37): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsInactive, FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+Assets\Editor\MainInterface126ReferenceScreenOpenStackTrace.cs(336,101): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+Assets\Editor\MainInterface126ReferenceScreenOpenStackTrace.cs(336,27): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsInactive, FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+Assets\Editor\MainInterface126ReferenceScreenOpenStackTrace.cs(368,112): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+Assets\Editor\MainInterface126ReferenceScreenOpenStackTrace.cs(368,37): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsInactive, FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+Assets\Editor\MainInterface132StaticTmpFontMaterialAudit.cs(56,109): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+Assets\Editor\MainInterface132StaticTmpFontMaterialAudit.cs(56,33): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsInactive, FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+Assets\Editor\MainInterface132StaticTmpFontMaterialAudit.cs(58,106): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+Assets\Editor\MainInterface132StaticTmpFontMaterialAudit.cs(58,34): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsInactive, FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+Assets\Editor\MainInterface133HeroBgBottomNavLayoutProbe.cs(47,102): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+Assets\Editor\MainInterface133HeroBgBottomNavLayoutProbe.cs(47,28): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsInactive, FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+Assets\Editor\MainInterface133HeroBgBottomNavLayoutProbe.cs(48,110): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+Assets\Editor\MainInterface133HeroBgBottomNavLayoutProbe.cs(48,33): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsInactive, FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+Assets\Editor\MainInterface135Hero1005HomeParaBackFrontCandidate.cs(421,103): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+Assets\Editor\MainInterface135Hero1005HomeParaBackFrontCandidate.cs(421,28): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsInactive, FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+Assets\Editor\MainInterface135Hero1005HomeParaBackFrontCandidate.cs(425,110): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+Assets\Editor\MainInterface135Hero1005HomeParaBackFrontCandidate.cs(425,36): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsInactive, FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+Assets\Editor\MainInterface124Hero1005HomeSpineMount.cs(417,103): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+Assets\Editor\MainInterface124Hero1005HomeSpineMount.cs(417,28): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsInactive, FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+Assets\Editor\MainInterface124Hero1005HomeSpineMount.cs(420,110): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+Assets\Editor\MainInterface124Hero1005HomeSpineMount.cs(420,36): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsInactive, FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+Assets\Editor\MainInterface126ReferenceScreenOpenStackTrace.cs(518,121): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+Assets\Editor\MainInterface126ReferenceScreenOpenStackTrace.cs(518,38): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsInactive, FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+Assets\Editor\MainInterfaceGuildMainWhitePanelTrace.cs(256,87): warning CS0618: 'Object.GetInstanceID()' is obsolete: 'GetInstanceID is deprecated. Use GetEntityId instead. This will be removed in a future version.'
+Assets\Editor\MainInterfaceGuildMainWhitePanelTrace.cs(256,50): warning CS0618: 'Unsupported.GetLocalIdentifierInFile(int)' is obsolete: 'GetLocalIdentifierInFile() is deprecated. Use GetLocalIdentifierInFileForPersistentObject() instead.'
+Assets\Editor\MainInterfaceGuildMainWhitePanelTrace.cs(265,91): warning CS0618: 'Object.GetInstanceID()' is obsolete: 'GetInstanceID is deprecated. Use GetEntityId instead. This will be removed in a future version.'
+Assets\Editor\MainInterfaceGuildMainWhitePanelTrace.cs(265,54): warning CS0618: 'Unsupported.GetLocalIdentifierInFile(int)' is obsolete: 'GetLocalIdentifierInFile() is deprecated. Use GetLocalIdentifierInFileForPersistentObject() instead.'
+Assets\Editor\MainInterface126ReferenceScreenOpenStackTrace.cs(529,116): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+Assets\Editor\MainInterface126ReferenceScreenOpenStackTrace.cs(529,39): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsInactive, FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+Assets\Editor\MainInterface135Hero1005HomeParaBackFrontCandidate.cs(494,121): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+Assets\Editor\MainInterface135Hero1005HomeParaBackFrontCandidate.cs(494,38): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsInactive, FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+Assets\Editor\MainInterface116RouteSpineRuntimeBridgeReplay.cs(214,26): warning CS0618: 'Object.FindFirstObjectByType<T>()' is obsolete: 'FindFirstObjectByType has been deprecated because it relies on instance ID ordering. Use FindAnyObjectByType instead, which does not depend on ordering.'
+Assets\Editor\MainInterface116RouteSpineRuntimeBridgeReplay.cs(252,112): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+Assets\Editor\MainInterface116RouteSpineRuntimeBridgeReplay.cs(252,37): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsInactive, FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+Assets\Editor\MainInterface126ReferenceScreenOpenStackTrace.cs(539,116): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+Assets\Editor\MainInterface126ReferenceScreenOpenStackTrace.cs(539,39): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsInactive, FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+Assets\Editor\MainInterface135Hero1005HomeParaBackFrontCandidate.cs(506,116): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+Assets\Editor\MainInterface135Hero1005HomeParaBackFrontCandidate.cs(506,39): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsInactive, FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+Assets\Editor\MainInterface135Hero1005HomeParaBackFrontCandidate.cs(514,116): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+Assets\Editor\MainInterface135Hero1005HomeParaBackFrontCandidate.cs(514,39): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsInactive, FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+Assets\Editor\MainInterface117RouteSkeletonGraphicLayoutValidation.cs(233,116): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+Assets\Editor\MainInterface117RouteSkeletonGraphicLayoutValidation.cs(233,35): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsInactive, FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+Assets\Editor\MainInterface116RouteSpineRuntimeBridgeReplay.cs(298,104): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+Assets\Editor\MainInterface116RouteSpineRuntimeBridgeReplay.cs(298,23): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsInactive, FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+Assets\Editor\MainInterface117RouteSkeletonGraphicLayoutValidation.cs(276,97): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+Assets\Editor\MainInterface117RouteSkeletonGraphicLayoutValidation.cs(276,20): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsInactive, FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+Assets\Editor\MainInterface117RouteSkeletonGraphicLayoutValidation.cs(283,26): warning CS0618: 'Object.FindFirstObjectByType<T>()' is obsolete: 'FindFirstObjectByType has been deprecated because it relies on instance ID ordering. Use FindAnyObjectByType instead, which does not depend on ordering.'
+Assets\Editor\MainInterface117RouteSkeletonGraphicLayoutValidation.cs(321,112): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+Assets\Editor\MainInterface117RouteSkeletonGraphicLayoutValidation.cs(321,37): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsInactive, FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+Assets\Editor\MainInterface117RouteSkeletonGraphicLayoutValidation.cs(366,104): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+Assets\Editor\MainInterface117RouteSkeletonGraphicLayoutValidation.cs(366,23): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsInactive, FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+Assets\Editor\MainInterfaceNavigationTargetReferenceTrace.cs(294,73): warning CS0618: 'Object.GetInstanceID()' is obsolete: 'GetInstanceID is deprecated. Use GetEntityId instead. This will be removed in a future version.'
+Assets\Editor\MainInterfaceNavigationTargetReferenceTrace.cs(294,36): warning CS0618: 'Unsupported.GetLocalIdentifierInFile(int)' is obsolete: 'GetLocalIdentifierInFile() is deprecated. Use GetLocalIdentifierInFileForPersistentObject() instead.'
+Assets\Editor\MainInterfaceRouteLabelRectOverrideRevalidation.cs(104,111): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+Assets\Editor\MainInterfaceRouteLabelRectOverrideRevalidation.cs(104,30): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsInactive, FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+Assets\Editor\MainInterfaceRouteLabelRectOverrideRevalidation.cs(154,53): warning CS0618: 'TMP_Text.enableWordWrapping' is obsolete: 'The enabledWordWrapping property is now obsolete. Please use the textWrappingMode property instead.'
+Assets\Editor\MainInterfaceNavigationTargetReferenceTrace.cs(305,67): warning CS0618: 'SerializedProperty.objectReferenceInstanceIDValue' is obsolete: 'objectReferenceInstanceIDValue is obsolete. Use objectReferenceEntityIdValue instead'
+Assets\Editor\MainInterfaceNavigationTargetReferenceTrace.cs(307,20): warning CS0618: 'SerializedProperty.objectReferenceInstanceIDValue' is obsolete: 'objectReferenceInstanceIDValue is obsolete. Use objectReferenceEntityIdValue instead'
+Assets\Editor\MainInterfaceNavigationTargetReferenceTrace.cs(308,32): warning CS0618: 'SerializedProperty.objectReferenceInstanceIDValue' is obsolete: 'objectReferenceInstanceIDValue is obsolete. Use objectReferenceEntityIdValue instead'
+Assets\Editor\MainInterface120RouteSkeletonGraphicRuntimeMaskStencilVisibilityTrace.cs(406,104): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+Assets\Editor\MainInterface120RouteSkeletonGraphicRuntimeMaskStencilVisibilityTrace.cs(406,23): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsInactive, FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+Assets\Editor\MainInterfaceRouteTmpVariantMaterialAudit.cs(93,111): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+Assets\Editor\MainInterfaceRouteTmpVariantMaterialAudit.cs(93,28): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsInactive, FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+Assets\Editor\MainInterface124Hero1005HomeSpineMount.cs(623,120): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+Assets\Editor\MainInterface124Hero1005HomeSpineMount.cs(623,37): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsInactive, FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+Assets\Editor\MainInterface119RouteSkeletonGraphicMeshBoundsTrace.cs(381,104): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+Assets\Editor\MainInterface119RouteSkeletonGraphicMeshBoundsTrace.cs(381,23): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsInactive, FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+Assets\Editor\MainInterface124Hero1005HomeSpineMount.cs(642,113): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+Assets\Editor\MainInterface124Hero1005HomeSpineMount.cs(642,32): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsInactive, FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+Assets\Editor\MainInterface124Hero1005HomeSpineMount.cs(650,113): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+Assets\Editor\MainInterface124Hero1005HomeSpineMount.cs(650,32): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsInactive, FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+Assets\Editor\MainInterface118RouteSkeletonGraphicUIMaterialBinder.cs(278,26): warning CS0618: 'Object.FindFirstObjectByType<T>()' is obsolete: 'FindFirstObjectByType has been deprecated because it relies on instance ID ordering. Use FindAnyObjectByType instead, which does not depend on ordering.'
+Assets\Editor\MainInterface118RouteSkeletonGraphicUIMaterialBinder.cs(316,112): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+Assets\Editor\MainInterface118RouteSkeletonGraphicUIMaterialBinder.cs(316,37): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsInactive, FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+Assets\Editor\MainInterfaceRouteSkeletonGraphicReplayIntegration.cs(264,104): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+Assets\Editor\MainInterfaceRouteSkeletonGraphicReplayIntegration.cs(264,23): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsInactive, FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+Assets\Editor\MainInterface118RouteSkeletonGraphicUIMaterialBinder.cs(365,104): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+Assets\Editor\MainInterface118RouteSkeletonGraphicUIMaterialBinder.cs(365,23): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsInactive, FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+Assets\Editor\MainInterfaceSceneBuilder.cs(339,17): warning CS0162: Unreachable code detected
+Assets\Editor\MainInterfaceSceneBuilder.cs(392,26): warning CS0618: 'Object.FindFirstObjectByType<T>()' is obsolete: 'FindFirstObjectByType has been deprecated because it relies on instance ID ordering. Use FindAnyObjectByType instead, which does not depend on ordering.'
+Assets\Editor\MainInterface136UIDockOpenStackCandidate.cs(477,103): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+Assets\Editor\MainInterface136UIDockOpenStackCandidate.cs(477,28): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsInactive, FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+Assets\Editor\MainInterface136UIDockOpenStackCandidate.cs(481,110): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+Assets\Editor\MainInterface136UIDockOpenStackCandidate.cs(481,36): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsInactive, FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+Assets\Editor\MainInterface136UIDockOpenStackCandidate.cs(554,121): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+Assets\Editor\MainInterface136UIDockOpenStackCandidate.cs(554,38): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsInactive, FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+Assets\Editor\MainInterface136UIDockOpenStackCandidate.cs(566,116): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+Assets\Editor\MainInterface136UIDockOpenStackCandidate.cs(566,39): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsInactive, FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+Assets\Editor\MainInterface136UIDockOpenStackCandidate.cs(574,116): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+Assets\Editor\MainInterface136UIDockOpenStackCandidate.cs(574,39): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsInactive, FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+Assets\Editor\MainInterface121RouteSkeletonGraphicClippingTextureHandoffTrace.cs(425,104): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+Assets\Editor\MainInterface121RouteSkeletonGraphicClippingTextureHandoffTrace.cs(425,23): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsInactive, FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+Assets\Editor\MainInterfaceRouteNonImageRendererEffectRuntimeStateTrace.cs(336,113): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+Assets\Editor\MainInterfaceRouteNonImageRendererEffectRuntimeStateTrace.cs(336,32): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsInactive, FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+Assets\Editor\MainInterfaceSceneBuilder.cs(808,21): warning CS0618: 'TMP_Text.enableWordWrapping' is obsolete: 'The enabledWordWrapping property is now obsolete. Please use the textWrappingMode property instead.'
+Assets\Editor\MainInterfaceSceneBuilder.cs(811,21): warning CS0618: 'TMP_Text.enableKerning' is obsolete: 'The "enableKerning" property has been deprecated. Use the "fontFeatures" property to control what features are enabled on the text component.'
+AssetDatabase: script compilation time: 2.250450s
+Begin MonoManager ReloadAssembly
+Assembly Assembly-CSharp-Editor-firstpass.dll at Library/ScriptAssemblies/Assembly-CSharp-Editor-firstpass.dll not valid. Loading of assembly skipped.
+Assembly Assembly-CSharp-firstpass.dll at Library/ScriptAssemblies/Assembly-CSharp-firstpass.dll not valid. Loading of assembly skipped.
+Assembly Unity.Multiplayer.Center.Editor.Tests.dll at Library/ScriptAssemblies/Unity.Multiplayer.Center.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Multiplayer.Center.Tests.dll at Library/ScriptAssemblies/Unity.Multiplayer.Center.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.TextMeshPro.Editor.Tests.dll at Library/ScriptAssemblies/Unity.TextMeshPro.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.TextMeshPro.Tests.dll at Library/ScriptAssemblies/Unity.TextMeshPro.Tests.dll not valid. Loading of assembly skipped.
+Assembly UnityEditor.UI.Common.Tests.dll at Library/ScriptAssemblies/UnityEditor.UI.Common.Tests.dll not valid. Loading of assembly skipped.
+Assembly UnityEditor.UI.EditorTests.dll at Library/ScriptAssemblies/UnityEditor.UI.EditorTests.dll not valid. Loading of assembly skipped.
+Assembly UnityEngine.UI.Tests.dll at Library/ScriptAssemblies/UnityEngine.UI.Tests.dll not valid. Loading of assembly skipped.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+ScheduleIndexationOnStartup MainProcess:True IndexOnStartup:True
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.276 seconds
+Domain Reload Profiling: 636ms
+	BeginReloadAssembly (273ms)
+		DisableScriptedObjects (17ms)
+		CreateAndSetChildDomain (150ms)
+	RebuildCommonClasses (24ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (29ms)
+	LoadAllAssembliesAndSetupDomain (25ms)
+		LoadAssemblies (82ms)
+		AnalyzeDomain (17ms)
+			TypeCache.Refresh (10ms)
+				TypeCache.ScanAssembly (6ms)
+			BuildScriptInfoCaches (3ms)
+	FinalizeReload (277ms)
+		SetupLoadedEditorAssemblies (0ms)
+			InitializePlatformSupportModulesInManaged (17ms)
+			BeforeProcessingInitializeOnLoad (71ms)
+			ProcessInitializeOnLoadAttributes (52ms)
+			ProcessInitializeOnLoadMethodAttributes (30ms)
+			AfterProcessingInitializeOnLoad (6ms)
+		AwakeInstancesAfterBackupRestoration (18ms)
+(Values over 0.050ms)
+Asset Pipeline Refresh (id=528f57319ebb8b44ab7a8f72b8261414): Total: 3.158 seconds - Initiated by InitialRefreshV2(ForceSynchronousImport)
+	Summary:
+		Imports: total=0 (actual=0, local cache=0, cache server=0)
+		Asset DB Process Time: managed=0 ms, native=388 ms
+		Asset DB Callback time: managed=41 ms, native=105 ms
+		Scripting: domain reloads=1, domain reload time=361 ms, compile time=2252 ms, other=8 ms
+		Project Asset Count: scripts=300, non-scripts=857
+		Asset File Changes: new=0, changed=1, moved=0, deleted=0
+		Scan Filter Count: 0
+	InvokePackagesCallback: 13.833ms
+	ApplyChangesToAssetFolders: 0.485ms
+	Scan: 40.547ms
+	OnSourceAssetsModified: 0.707ms
+	CategorizeScriptCompilationAssets: 0.998ms
+	ProcessAssetsWithTransientArtifactChanges: 5.302ms
+	CategorizeAssets: 4.369ms
+	CompileScripts: 2251.653ms
+	ImportOutOfDateAssets: 278.040ms (277.689ms without children)
+		UnloadImportedAssets: 0.081ms
+		EnsureUptoDateAssetsAreRegisteredWithGuidPM: 0.090ms
+		OnDemandSchedulerStart: 0.178ms
+	PostProcessAllAssets: 41.829ms
+		VCAutoAddAssetPostprocess 0.713ms
+		MonoPostProcessAllAssets: 40.780ms
+			AssetPostprocessor.OnPostprocessAllAssets 13.098ms
+			StyleCatalogPostProcessor.OnPostprocessAllAssets 7.705ms
+			WindowAssetPostprocessingWatcher.OnPostprocessAllAssets 4.364ms
+			BuilderAssetPostprocessor.OnPostprocessAllAssets 3.717ms
+			AssetChangedListener.OnPostprocessAllAssets 0.993ms
+			SyncVS.PostprocessSyncProject 0.898ms
+			RetainedModeAssetPostprocessor.OnPostprocessAllAssets 0.770ms
+			SpeedTree9Postprocessor.OnPostprocessAllAssets 0.538ms
+			TextAssetPostProcessor.OnPostprocessAllAssets 0.409ms
+			ArtifactBrowserPostProcessor.OnPostprocessAllAssets 0.350ms
+			TMPro_TexturePostProcessor.OnPostprocessAllAssets 0.286ms
+			ReferencedClipsPostProcessor.OnPostprocessAllAssets 0.213ms
+			AudioMixerPostprocessor.OnPostprocessAllAssets 0.155ms
+			TerrainToolbarOverlayPostProcessor.OnPostprocessAllAssets 0.144ms
+			AssetEvents.OnPostprocessAllAssets 0.142ms
+			AssetDatabaseCallbacks.OnPostprocessAllAssets 0.108ms
+			SpeedTreePostProcessor.OnPostprocessAllAssets 0.101ms
+			ConfigAssetsTracker.OnPostprocessAllAssets 0.082ms
+			ScenarioDriftAssetsTracker.OnPostprocessAllAssets 0.082ms
+			RenderPipelineGlobalSettingsPostprocessor.OnPostprocessAllAssets 0.061ms
+	PostAssetChangesProfiler: 92.078ms
+	UnloadStreamsBegin: 1.105ms
+	GenerateScriptTypeHashes: 0.184ms
+	GenerateScriptTypeSerializationHashes: 0.381ms
+	Untracked: 422.342ms
+
+Application.AssetDatabase Initial Refresh End
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.02 seconds
+Scanning for USB devices : 1.930ms
+Initializing Unity extensions:
+[MODES] ModeService[none].Initialize
+[MODES] ModeService[none].LoadModes
+[MODES] Loading mode Default (0) for mode-current-id-girlswar_maininterface_unity
+Unloading 58 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 618 unused Assets / (6.0 MB). Loaded Objects now: 1201.
+Memory consumption went from 119.7 MB to 113.7 MB.
+Total: 5.206600 ms (FindLiveObjects: 0.086100 ms CreateObjectMapping: 0.023900 ms MarkObjects: 2.923900 ms  DeleteObjects: 2.170700 ms)
+
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 0 unused Assets / (2.2 KB). Loaded Objects now: 1203.
+Memory consumption went from 98.6 MB to 98.6 MB.
+Total: 2.861600 ms (FindLiveObjects: 0.045700 ms CreateObjectMapping: 0.009000 ms MarkObjects: 2.803400 ms  DeleteObjects: 0.002900 ms)
+
+[GirlsWarRestore] Applied route rect overrides: 0/2
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GirlsWarRestore.MainInterfaceSceneBuilder:ApplyRectOverrides (System.Collections.Generic.List`1<GirlsWarRestore.MainInterfaceSceneBuilder/RectOverrideRow>,System.Collections.Generic.Dictionary`2<string, UnityEngine.RectTransform>,System.Collections.Generic.Dictionary`2<string, UnityEngine.RectTransform>) (at Assets/Editor/MainInterfaceSceneBuilder.cs:752)
+GirlsWarRestore.MainInterfaceSceneBuilder:BuildMainInterfaceSceneForRoot (string,string,string) (at Assets/Editor/MainInterfaceSceneBuilder.cs:326)
+GirlsWarRestore.MainInterface136UIDockOpenStackCandidate:BuildCaptureAndValidate () (at Assets/Editor/MainInterface136UIDockOpenStackCandidate.cs:61)
+
+(Filename: Assets/Editor/MainInterfaceSceneBuilder.cs Line: 752)
+
+Asset Pipeline Refresh (id=3a2d5299797f97f4db884bc821b88cc3): Total: 0.020 seconds - Initiated by RefreshV2(NoUpdateAssetOptions)
+[GirlsWarRestore] Prepared sprite imports: 212 assets, changed 0
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GirlsWarRestore.MainInterfaceSceneBuilder:PrepareSpriteImports (System.Collections.Generic.List`1<GirlsWarRestore.MainInterfaceSceneBuilder/SpriteRow>) (at Assets/Editor/MainInterfaceSceneBuilder.cs:567)
+GirlsWarRestore.MainInterfaceSceneBuilder:BuildMainInterfaceSceneForRoot (string,string,string) (at Assets/Editor/MainInterfaceSceneBuilder.cs:328)
+GirlsWarRestore.MainInterface136UIDockOpenStackCandidate:BuildCaptureAndValidate () (at Assets/Editor/MainInterface136UIDockOpenStackCandidate.cs:61)
+
+(Filename: Assets/Editor/MainInterfaceSceneBuilder.cs Line: 567)
+
+Asset Pipeline Refresh (id=c0739645dfa270742a6e8a283bb3169f): Total: 0.004 seconds - Initiated by RefreshV2(NoUpdateAssetOptions)
+[GirlsWarRestore] Prepared visual override sprite imports: 4 rows, changed 0
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GirlsWarRestore.MainInterfaceSceneBuilder:PrepareVisualOverrideImports (System.Collections.Generic.List`1<GirlsWarRestore.MainInterfaceSceneBuilder/VisualOverrideRow>) (at Assets/Editor/MainInterfaceSceneBuilder.cs:603)
+GirlsWarRestore.MainInterfaceSceneBuilder:BuildMainInterfaceSceneForRoot (string,string,string) (at Assets/Editor/MainInterfaceSceneBuilder.cs:329)
+GirlsWarRestore.MainInterface136UIDockOpenStackCandidate:BuildCaptureAndValidate () (at Assets/Editor/MainInterface136UIDockOpenStackCandidate.cs:61)
+
+(Filename: Assets/Editor/MainInterfaceSceneBuilder.cs Line: 603)
+
+[GirlsWarRestore] Applied active overrides: 0/29
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GirlsWarRestore.MainInterfaceSceneBuilder:ApplyActiveOverrides (GirlsWarRestore.MainInterfaceSceneBuilder/OverrideSet,System.Collections.Generic.Dictionary`2<string, UnityEngine.RectTransform>) (at Assets/Editor/MainInterfaceSceneBuilder.cs:618)
+GirlsWarRestore.MainInterfaceSceneBuilder:BuildMainInterfaceSceneForRoot (string,string,string) (at Assets/Editor/MainInterfaceSceneBuilder.cs:330)
+GirlsWarRestore.MainInterface136UIDockOpenStackCandidate:BuildCaptureAndValidate () (at Assets/Editor/MainInterface136UIDockOpenStackCandidate.cs:61)
+
+(Filename: Assets/Editor/MainInterfaceSceneBuilder.cs Line: 618)
+
+[GirlsWarRestore] Applied sprites: 123/977
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GirlsWarRestore.MainInterfaceSceneBuilder:ApplyImagesAndSprites (System.Collections.Generic.List`1<GirlsWarRestore.MainInterfaceSceneBuilder/SpriteRow>,System.Collections.Generic.Dictionary`2<string, UnityEngine.RectTransform>,GirlsWarRestore.MainInterfaceSceneBuilder/OverrideSet) (at Assets/Editor/MainInterfaceSceneBuilder.cs:661)
+GirlsWarRestore.MainInterfaceSceneBuilder:BuildMainInterfaceSceneForRoot (string,string,string) (at Assets/Editor/MainInterfaceSceneBuilder.cs:331)
+GirlsWarRestore.MainInterface136UIDockOpenStackCandidate:BuildCaptureAndValidate () (at Assets/Editor/MainInterface136UIDockOpenStackCandidate.cs:61)
+
+(Filename: Assets/Editor/MainInterfaceSceneBuilder.cs Line: 661)
+
+[GirlsWarRestore] Applied visual overrides: 0/4
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GirlsWarRestore.MainInterfaceSceneBuilder:ApplyVisualOverrides (System.Collections.Generic.List`1<GirlsWarRestore.MainInterfaceSceneBuilder/VisualOverrideRow>,System.Collections.Generic.Dictionary`2<string, UnityEngine.RectTransform>) (at Assets/Editor/MainInterfaceSceneBuilder.cs:724)
+GirlsWarRestore.MainInterfaceSceneBuilder:BuildMainInterfaceSceneForRoot (string,string,string) (at Assets/Editor/MainInterfaceSceneBuilder.cs:332)
+GirlsWarRestore.MainInterface136UIDockOpenStackCandidate:BuildCaptureAndValidate () (at Assets/Editor/MainInterface136UIDockOpenStackCandidate.cs:61)
+
+(Filename: Assets/Editor/MainInterfaceSceneBuilder.cs Line: 724)
+
+[GirlsWarRestore] Applied texts: 80/495 (TMP 45/271, UGUI 35)
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GirlsWarRestore.MainInterfaceSceneBuilder:ApplyTexts (System.Collections.Generic.List`1<GirlsWarRestore.MainInterfaceSceneBuilder/TextRow>,System.Collections.Generic.Dictionary`2<string, UnityEngine.RectTransform>,System.Collections.Generic.Dictionary`2<string, GirlsWarRestore.MainInterfaceSceneBuilder/TmpTextDetailRow>) (at Assets/Editor/MainInterfaceSceneBuilder.cs:856)
+GirlsWarRestore.MainInterfaceSceneBuilder:BuildMainInterfaceSceneForRoot (string,string,string) (at Assets/Editor/MainInterfaceSceneBuilder.cs:335)
+GirlsWarRestore.MainInterface136UIDockOpenStackCandidate:BuildCaptureAndValidate () (at Assets/Editor/MainInterface136UIDockOpenStackCandidate.cs:61)
+
+(Filename: Assets/Editor/MainInterfaceSceneBuilder.cs Line: 856)
+
+[GirlsWarRestore] Applied scroll rects: 2/12
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GirlsWarRestore.MainInterfaceSceneBuilder:ApplyScrollRects (System.Collections.Generic.List`1<GirlsWarRestore.MainInterfaceSceneBuilder/ScrollRow>,System.Collections.Generic.Dictionary`2<string, UnityEngine.RectTransform>,System.Collections.Generic.Dictionary`2<string, UnityEngine.RectTransform>) (at Assets/Editor/MainInterfaceSceneBuilder.cs:1340)
+GirlsWarRestore.MainInterfaceSceneBuilder:BuildMainInterfaceSceneForRoot (string,string,string) (at Assets/Editor/MainInterfaceSceneBuilder.cs:337)
+GirlsWarRestore.MainInterface136UIDockOpenStackCandidate:BuildCaptureAndValidate () (at Assets/Editor/MainInterface136UIDockOpenStackCandidate.cs:61)
+
+(Filename: Assets/Editor/MainInterfaceSceneBuilder.cs Line: 1340)
+
+[GirlsWarRestore] Applied button click loggers: 55/261
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GirlsWarRestore.MainInterfaceSceneBuilder:AddButtonLoggers (System.Collections.Generic.List`1<GirlsWarRestore.MainInterfaceSceneBuilder/ButtonRow>,System.Collections.Generic.Dictionary`2<string, GirlsWarRestore.MainInterfaceSceneBuilder/ButtonHandlerRow>,System.Collections.Generic.Dictionary`2<string, GirlsWarRestore.MainInterfaceSceneBuilder/ButtonNavigationRow>,System.Collections.Generic.Dictionary`2<string, UnityEngine.RectTransform>,GirlsWarRestore.MainInterfaceSceneBuilder/OverrideSet) (at Assets/Editor/MainInterfaceSceneBuilder.cs:1444)
+GirlsWarRestore.MainInterfaceSceneBuilder:BuildMainInterfaceSceneForRoot (string,string,string) (at Assets/Editor/MainInterfaceSceneBuilder.cs:343)
+GirlsWarRestore.MainInterface136UIDockOpenStackCandidate:BuildCaptureAndValidate () (at Assets/Editor/MainInterface136UIDockOpenStackCandidate.cs:61)
+
+(Filename: Assets/Editor/MainInterfaceSceneBuilder.cs Line: 1444)
+
+[GirlsWarRestore] Applied graphic raycast overrides: 0
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GirlsWarRestore.MainInterfaceSceneBuilder:ApplyGraphicRaycastOverrides (System.Collections.Generic.List`1<GirlsWarRestore.MainInterfaceSceneBuilder/SpriteRow>,System.Collections.Generic.Dictionary`2<string, UnityEngine.RectTransform>,GirlsWarRestore.MainInterfaceSceneBuilder/OverrideSet) (at Assets/Editor/MainInterfaceSceneBuilder.cs:1467)
+GirlsWarRestore.MainInterfaceSceneBuilder:BuildMainInterfaceSceneForRoot (string,string,string) (at Assets/Editor/MainInterfaceSceneBuilder.cs:344)
+GirlsWarRestore.MainInterface136UIDockOpenStackCandidate:BuildCaptureAndValidate () (at Assets/Editor/MainInterface136UIDockOpenStackCandidate.cs:61)
+
+(Filename: Assets/Editor/MainInterfaceSceneBuilder.cs Line: 1467)
+
+[GirlsWarRestore] Applied raycast probes: 34
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GirlsWarRestore.MainInterfaceSceneBuilder:AddRaycastProbeLoggers (System.Collections.Generic.List`1<GirlsWarRestore.MainInterfaceSceneBuilder/SpriteRow>,System.Collections.Generic.List`1<GirlsWarRestore.MainInterfaceSceneBuilder/ButtonRow>,System.Collections.Generic.Dictionary`2<string, UnityEngine.RectTransform>) (at Assets/Editor/MainInterfaceSceneBuilder.cs:1504)
+GirlsWarRestore.MainInterfaceSceneBuilder:BuildMainInterfaceSceneForRoot (string,string,string) (at Assets/Editor/MainInterfaceSceneBuilder.cs:345)
+GirlsWarRestore.MainInterface136UIDockOpenStackCandidate:BuildCaptureAndValidate () (at Assets/Editor/MainInterface136UIDockOpenStackCandidate.cs:61)
+
+(Filename: Assets/Editor/MainInterfaceSceneBuilder.cs Line: 1504)
+
+Start importing Assets/Scenes/MainInterface_UI136_UIDockOpenStackCandidate.unity using Guid(6a0baa878bc023e43ba4104d348ee301) (DefaultImporter) -> (Import Result ID: 'bd3ac56c7565dbad34dc4d43086f2f99') in 0.5163562 seconds [static dependencies only]. Details - ImportResultOutputID=be011040ad9227f610c680018dcf9993 DependenciesID=aaa2b801c2d5a753b88902e6727f9b2f StaticDependenciesID=5fae103782a65b01ad293104aecdbb81 
+(Values over 0.050ms)
+Asset Pipeline Refresh (id=5b3b8ee667276084c84b6bd373e80f9a): Total: 0.535 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+	Summary:
+		Imports: total=1 (actual=1, local cache=0, cache server=0)
+		Asset DB Process Time: managed=1 ms, native=529 ms
+		Asset DB Callback time: managed=2 ms, native=1 ms
+		Scripting: domain reloads=0, domain reload time=0 ms, compile time=0 ms, other=0 ms
+		Project Asset Count: scripts=300, non-scripts=857
+		Asset File Changes: new=0, changed=1, moved=0, deleted=0
+		Scan Filter Count: 3
+	ApplyChangesToAssetFolders: 0.058ms
+	Scan: 10.696ms
+	OnSourceAssetsModified: 0.663ms
+	CategorizeAssets: 0.536ms
+	ImportOutOfDateAssets: 517.782ms (0.083ms without children)
+		ImportManagerImport: 517.307ms (0.589ms without children)
+		UnloadImportedAssets: 0.126ms
+		EnsureUptoDateAssetsAreRegisteredWithGuidPM: 0.069ms
+		OnDemandSchedulerStart: 0.171ms
+	PostProcessAllAssets: 2.229ms
+		MonoPostProcessAllAssets: 2.082ms
+			AssetPostprocessor.OnPostprocessAllAssets 1.796ms
+			SyncVS.PostprocessSyncProject 0.052ms
+	PostAssetChangesProfiler: 1.329ms
+	UnloadStreamsBegin: 0.408ms
+	PersistCurrentRevisions: 0.079ms
+	Untracked: 0.901ms
+
+Start importing Assets/RestoreData/maininterface_build_result.json using Guid(0c85ef2c20ca23f4eba0dd254b511b4e) (TextScriptImporter) -> (Import Result ID: '18d1652aa57e12cd7690b709f5f7f6bf') in 0.0017022 seconds [static dependencies only]. Details - ImportResultOutputID=144f7e9c974c8f9bcbd39f8467d058e9 DependenciesID=7e021ae6af1763b2283fc5dfda8811b2 StaticDependenciesID=dfef36464f0b949693d07b53ee2683de 
+Asset Pipeline Refresh (id=32b599cd5b62a5e4c9da1051f7d63006): Total: 0.037 seconds - Initiated by RefreshV2(NoUpdateAssetOptions)
+[GirlsWarRestore] MainInterface restored scene generated: 419 RectTransforms, 123 sprites, 80 texts (45 TMP, 35 UGUI), 2 scroll rects, 34 raycast probes, 0 active overrides, 0 graphic raycast overrides, 0 rect overrides, 0 visual overrides -> Assets/Scenes/MainInterface_UI136_UIDockOpenStackCandidate.unity
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GirlsWarRestore.MainInterfaceSceneBuilder:BuildMainInterfaceSceneForRoot (string,string,string) (at Assets/Editor/MainInterfaceSceneBuilder.cs:371)
+GirlsWarRestore.MainInterface136UIDockOpenStackCandidate:BuildCaptureAndValidate () (at Assets/Editor/MainInterface136UIDockOpenStackCandidate.cs:61)
+
+(Filename: Assets/Editor/MainInterfaceSceneBuilder.cs Line: 371)
+
+Opening scene 'Assets/Scenes/MainInterface_UI136_UIDockOpenStackCandidate.unity'
+Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
+Loaded scene 'Assets/Scenes/MainInterface_UI136_UIDockOpenStackCandidate.unity'
+	Deserialize:            17.478 ms
+	Integration:            7.113 ms
+	Integration of assets:  0.293 ms
+	Thread Wait Time:       0.044 ms
+	Total Operation Time:   24.928 ms
+Unloading 218 unused Assets / (90.0 KB). Loaded Objects now: 2955.
+Memory consumption went from 123.3 MB to 123.2 MB.
+Total: 3.176600 ms (FindLiveObjects: 0.119400 ms CreateObjectMapping: 0.031100 ms MarkObjects: 2.896700 ms  DeleteObjects: 0.129100 ms)
+
+The character with Unicode value \uAD00 was not found in the [GirlsWarStaticProbe_EPM_TMP] font asset or any potential fallbacks. It was replaced by Unicode character \u25A1 in text object [text__1232844075836322441__font_EPM].
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object,UnityEngine.Object)
+UnityEngine.Debug:LogWarning (object,UnityEngine.Object)
+TMPro.TextMeshProUGUI:SetArraySizes (TMPro.TMP_Text/TextProcessingElement[]) (at ./Library/PackageCache/com.unity.ugui@1f2d1ab0d950/Runtime/TMP/TextMeshProUGUI.cs:2012)
+TMPro.TMP_Text:ParseInputText () (at ./Library/PackageCache/com.unity.ugui@1f2d1ab0d950/Runtime/TMP/TMP_Text.cs:2048)
+TMPro.TextMeshProUGUI:OnPreRenderCanvas () (at ./Library/PackageCache/com.unity.ugui@1f2d1ab0d950/Runtime/TMP/TextMeshProUGUI.cs:2496)
+TMPro.TextMeshProUGUI:Rebuild (UnityEngine.UI.CanvasUpdate) (at ./Library/PackageCache/com.unity.ugui@1f2d1ab0d950/Runtime/TMP/TextMeshProUGUI.cs:229)
+UnityEngine.UI.CanvasUpdateRegistry:PerformUpdate () (at ./Library/PackageCache/com.unity.ugui@1f2d1ab0d950/Runtime/UGUI/UI/Core/CanvasUpdateRegistry.cs:215)
+UnityEngine.Canvas:SendWillRenderCanvases ()
+UnityEngine.Canvas:ForceUpdateCanvases ()
+GirlsWarRestore.MainInterface136UIDockOpenStackCandidate:ForceSpineUpdate () (at Assets/Editor/MainInterface136UIDockOpenStackCandidate.cs:553)
+GirlsWarRestore.MainInterface136UIDockOpenStackCandidate:BuildCaptureAndValidate () (at Assets/Editor/MainInterface136UIDockOpenStackCandidate.cs:68)
+
+(Filename: ./Library/PackageCache/com.unity.ugui@1f2d1ab0d950/Runtime/TMP/TextMeshProUGUI.cs Line: 2012)
+
+The character with Unicode value \u7D04 was not found in the [GirlsWarStaticProbe_riyu_baibian_0_2_0_2_1_TMP] font asset or any potential fallbacks. It was replaced by Unicode character \u25A1 in text object [txt_act_name__6296942880544583239__font_riyu].
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object,UnityEngine.Object)
+UnityEngine.Debug:LogWarning (object,UnityEngine.Object)
+TMPro.TextMeshProUGUI:SetArraySizes (TMPro.TMP_Text/TextProcessingElement[]) (at ./Library/PackageCache/com.unity.ugui@1f2d1ab0d950/Runtime/TMP/TextMeshProUGUI.cs:2012)
+TMPro.TMP_Text:ParseInputText () (at ./Library/PackageCache/com.unity.ugui@1f2d1ab0d950/Runtime/TMP/TMP_Text.cs:2048)
+TMPro.TextMeshProUGUI:OnPreRenderCanvas () (at ./Library/PackageCache/com.unity.ugui@1f2d1ab0d950/Runtime/TMP/TextMeshProUGUI.cs:2496)
+TMPro.TextMeshProUGUI:Rebuild (UnityEngine.UI.CanvasUpdate) (at ./Library/PackageCache/com.unity.ugui@1f2d1ab0d950/Runtime/TMP/TextMeshProUGUI.cs:229)
+UnityEngine.UI.CanvasUpdateRegistry:PerformUpdate () (at ./Library/PackageCache/com.unity.ugui@1f2d1ab0d950/Runtime/UGUI/UI/Core/CanvasUpdateRegistry.cs:215)
+UnityEngine.Canvas:SendWillRenderCanvases ()
+UnityEngine.Canvas:ForceUpdateCanvases ()
+GirlsWarRestore.MainInterface136UIDockOpenStackCandidate:ForceSpineUpdate () (at Assets/Editor/MainInterface136UIDockOpenStackCandidate.cs:553)
+GirlsWarRestore.MainInterface136UIDockOpenStackCandidate:BuildCaptureAndValidate () (at Assets/Editor/MainInterface136UIDockOpenStackCandidate.cs:68)
+
+(Filename: ./Library/PackageCache/com.unity.ugui@1f2d1ab0d950/Runtime/TMP/TextMeshProUGUI.cs Line: 2012)
+
+The character with Unicode value \u675F was not found in the [GirlsWarStaticProbe_riyu_baibian_0_2_0_2_1_TMP] font asset or any potential fallbacks. It was replaced by Unicode character \u25A1 in text object [txt_act_name__6296942880544583239__font_riyu].
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object,UnityEngine.Object)
+UnityEngine.Debug:LogWarning (object,UnityEngine.Object)
+TMPro.TextMeshProUGUI:SetArraySizes (TMPro.TMP_Text/TextProcessingElement[]) (at ./Library/PackageCache/com.unity.ugui@1f2d1ab0d950/Runtime/TMP/TextMeshProUGUI.cs:2012)
+TMPro.TMP_Text:ParseInputText () (at ./Library/PackageCache/com.unity.ugui@1f2d1ab0d950/Runtime/TMP/TMP_Text.cs:2048)
+TMPro.TextMeshProUGUI:OnPreRenderCanvas () (at ./Library/PackageCache/com.unity.ugui@1f2d1ab0d950/Runtime/TMP/TextMeshProUGUI.cs:2496)
+TMPro.TextMeshProUGUI:Rebuild (UnityEngine.UI.CanvasUpdate) (at ./Library/PackageCache/com.unity.ugui@1f2d1ab0d950/Runtime/TMP/TextMeshProUGUI.cs:229)
+UnityEngine.UI.CanvasUpdateRegistry:PerformUpdate () (at ./Library/PackageCache/com.unity.ugui@1f2d1ab0d950/Runtime/UGUI/UI/Core/CanvasUpdateRegistry.cs:215)
+UnityEngine.Canvas:SendWillRenderCanvases ()
+UnityEngine.Canvas:ForceUpdateCanvases ()
+GirlsWarRestore.MainInterface136UIDockOpenStackCandidate:ForceSpineUpdate () (at Assets/Editor/MainInterface136UIDockOpenStackCandidate.cs:553)
+GirlsWarRestore.MainInterface136UIDockOpenStackCandidate:BuildCaptureAndValidate () (at Assets/Editor/MainInterface136UIDockOpenStackCandidate.cs:68)
+
+(Filename: ./Library/PackageCache/com.unity.ugui@1f2d1ab0d950/Runtime/TMP/TextMeshProUGUI.cs Line: 2012)
+
+Start importing Assets/Scenes/MainInterface_UI136_UIDockOpenStackCandidate.unity using Guid(6a0baa878bc023e43ba4104d348ee301) (DefaultImporter) -> (Import Result ID: 'a0cbb6fbc2ec2aeabf27f261c94a9965') in 0.001181 seconds [static dependencies only]. Details - ImportResultOutputID=be011040ad9227f610c680018dcf9993 DependenciesID=448d35ee695607ea1d0252ddf9806379 StaticDependenciesID=8803fe77d25502be20690812e04dfdf5 
+Asset Pipeline Refresh (id=000219ed97b175641b0c2888beb0f7d3): Total: 0.012 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 133 unused Assets / (231.3 KB). Loaded Objects now: 1239.
+Memory consumption went from 128.4 MB to 128.2 MB.
+Total: 3.946100 ms (FindLiveObjects: 0.060700 ms CreateObjectMapping: 0.013200 ms MarkObjects: 3.504200 ms  DeleteObjects: 0.367200 ms)
+
+[GirlsWarRestore] Applied route rect overrides: 0/2
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GirlsWarRestore.MainInterfaceSceneBuilder:ApplyRectOverrides (System.Collections.Generic.List`1<GirlsWarRestore.MainInterfaceSceneBuilder/RectOverrideRow>,System.Collections.Generic.Dictionary`2<string, UnityEngine.RectTransform>,System.Collections.Generic.Dictionary`2<string, UnityEngine.RectTransform>) (at Assets/Editor/MainInterfaceSceneBuilder.cs:752)
+GirlsWarRestore.MainInterfaceSceneBuilder:BuildMainInterfaceSceneForRoot (string,string,string) (at Assets/Editor/MainInterfaceSceneBuilder.cs:326)
+GirlsWarRestore.MainInterface136UIDockOpenStackCandidate:BuildCaptureAndValidate () (at Assets/Editor/MainInterface136UIDockOpenStackCandidate.cs:71)
+
+(Filename: Assets/Editor/MainInterfaceSceneBuilder.cs Line: 752)
+
+Asset Pipeline Refresh (id=2a141793d01091741bfe3f336dc6e87e): Total: 0.010 seconds - Initiated by RefreshV2(NoUpdateAssetOptions)
+[GirlsWarRestore] Prepared sprite imports: 212 assets, changed 0
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GirlsWarRestore.MainInterfaceSceneBuilder:PrepareSpriteImports (System.Collections.Generic.List`1<GirlsWarRestore.MainInterfaceSceneBuilder/SpriteRow>) (at Assets/Editor/MainInterfaceSceneBuilder.cs:567)
+GirlsWarRestore.MainInterfaceSceneBuilder:BuildMainInterfaceSceneForRoot (string,string,string) (at Assets/Editor/MainInterfaceSceneBuilder.cs:328)
+GirlsWarRestore.MainInterface136UIDockOpenStackCandidate:BuildCaptureAndValidate () (at Assets/Editor/MainInterface136UIDockOpenStackCandidate.cs:71)
+
+(Filename: Assets/Editor/MainInterfaceSceneBuilder.cs Line: 567)
+
+Asset Pipeline Refresh (id=6097c28a020b55d4d921fd4a6cc84b2b): Total: 0.003 seconds - Initiated by RefreshV2(NoUpdateAssetOptions)
+[GirlsWarRestore] Prepared visual override sprite imports: 4 rows, changed 0
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GirlsWarRestore.MainInterfaceSceneBuilder:PrepareVisualOverrideImports (System.Collections.Generic.List`1<GirlsWarRestore.MainInterfaceSceneBuilder/VisualOverrideRow>) (at Assets/Editor/MainInterfaceSceneBuilder.cs:603)
+GirlsWarRestore.MainInterfaceSceneBuilder:BuildMainInterfaceSceneForRoot (string,string,string) (at Assets/Editor/MainInterfaceSceneBuilder.cs:329)
+GirlsWarRestore.MainInterface136UIDockOpenStackCandidate:BuildCaptureAndValidate () (at Assets/Editor/MainInterface136UIDockOpenStackCandidate.cs:71)
+
+(Filename: Assets/Editor/MainInterfaceSceneBuilder.cs Line: 603)
+
+[GirlsWarRestore] Applied active overrides: 0/29
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GirlsWarRestore.MainInterfaceSceneBuilder:ApplyActiveOverrides (GirlsWarRestore.MainInterfaceSceneBuilder/OverrideSet,System.Collections.Generic.Dictionary`2<string, UnityEngine.RectTransform>) (at Assets/Editor/MainInterfaceSceneBuilder.cs:618)
+GirlsWarRestore.MainInterfaceSceneBuilder:BuildMainInterfaceSceneForRoot (string,string,string) (at Assets/Editor/MainInterfaceSceneBuilder.cs:330)
+GirlsWarRestore.MainInterface136UIDockOpenStackCandidate:BuildCaptureAndValidate () (at Assets/Editor/MainInterface136UIDockOpenStackCandidate.cs:71)
+
+(Filename: Assets/Editor/MainInterfaceSceneBuilder.cs Line: 618)
+
+[GirlsWarRestore] Applied sprites: 43/977
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GirlsWarRestore.MainInterfaceSceneBuilder:ApplyImagesAndSprites (System.Collections.Generic.List`1<GirlsWarRestore.MainInterfaceSceneBuilder/SpriteRow>,System.Collections.Generic.Dictionary`2<string, UnityEngine.RectTransform>,GirlsWarRestore.MainInterfaceSceneBuilder/OverrideSet) (at Assets/Editor/MainInterfaceSceneBuilder.cs:661)
+GirlsWarRestore.MainInterfaceSceneBuilder:BuildMainInterfaceSceneForRoot (string,string,string) (at Assets/Editor/MainInterfaceSceneBuilder.cs:331)
+GirlsWarRestore.MainInterface136UIDockOpenStackCandidate:BuildCaptureAndValidate () (at Assets/Editor/MainInterface136UIDockOpenStackCandidate.cs:71)
+
+(Filename: Assets/Editor/MainInterfaceSceneBuilder.cs Line: 661)
+
+[GirlsWarRestore] Applied visual overrides: 0/4
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GirlsWarRestore.MainInterfaceSceneBuilder:ApplyVisualOverrides (System.Collections.Generic.List`1<GirlsWarRestore.MainInterfaceSceneBuilder/VisualOverrideRow>,System.Collections.Generic.Dictionary`2<string, UnityEngine.RectTransform>) (at Assets/Editor/MainInterfaceSceneBuilder.cs:724)
+GirlsWarRestore.MainInterfaceSceneBuilder:BuildMainInterfaceSceneForRoot (string,string,string) (at Assets/Editor/MainInterfaceSceneBuilder.cs:332)
+GirlsWarRestore.MainInterface136UIDockOpenStackCandidate:BuildCaptureAndValidate () (at Assets/Editor/MainInterface136UIDockOpenStackCandidate.cs:71)
+
+(Filename: Assets/Editor/MainInterfaceSceneBuilder.cs Line: 724)
+
+[GirlsWarRestore] Applied texts: 42/495 (TMP 28/271, UGUI 14)
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GirlsWarRestore.MainInterfaceSceneBuilder:ApplyTexts (System.Collections.Generic.List`1<GirlsWarRestore.MainInterfaceSceneBuilder/TextRow>,System.Collections.Generic.Dictionary`2<string, UnityEngine.RectTransform>,System.Collections.Generic.Dictionary`2<string, GirlsWarRestore.MainInterfaceSceneBuilder/TmpTextDetailRow>) (at Assets/Editor/MainInterfaceSceneBuilder.cs:856)
+GirlsWarRestore.MainInterfaceSceneBuilder:BuildMainInterfaceSceneForRoot (string,string,string) (at Assets/Editor/MainInterfaceSceneBuilder.cs:335)
+GirlsWarRestore.MainInterface136UIDockOpenStackCandidate:BuildCaptureAndValidate () (at Assets/Editor/MainInterface136UIDockOpenStackCandidate.cs:71)
+
+(Filename: Assets/Editor/MainInterfaceSceneBuilder.cs Line: 856)
+
+[GirlsWarRestore] Applied scroll rects: 0/12
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GirlsWarRestore.MainInterfaceSceneBuilder:ApplyScrollRects (System.Collections.Generic.List`1<GirlsWarRestore.MainInterfaceSceneBuilder/ScrollRow>,System.Collections.Generic.Dictionary`2<string, UnityEngine.RectTransform>,System.Collections.Generic.Dictionary`2<string, UnityEngine.RectTransform>) (at Assets/Editor/MainInterfaceSceneBuilder.cs:1340)
+GirlsWarRestore.MainInterfaceSceneBuilder:BuildMainInterfaceSceneForRoot (string,string,string) (at Assets/Editor/MainInterfaceSceneBuilder.cs:337)
+GirlsWarRestore.MainInterface136UIDockOpenStackCandidate:BuildCaptureAndValidate () (at Assets/Editor/MainInterface136UIDockOpenStackCandidate.cs:71)
+
+(Filename: Assets/Editor/MainInterfaceSceneBuilder.cs Line: 1340)
+
+[GirlsWarRestore] Applied button click loggers: 14/261
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GirlsWarRestore.MainInterfaceSceneBuilder:AddButtonLoggers (System.Collections.Generic.List`1<GirlsWarRestore.MainInterfaceSceneBuilder/ButtonRow>,System.Collections.Generic.Dictionary`2<string, GirlsWarRestore.MainInterfaceSceneBuilder/ButtonHandlerRow>,System.Collections.Generic.Dictionary`2<string, GirlsWarRestore.MainInterfaceSceneBuilder/ButtonNavigationRow>,System.Collections.Generic.Dictionary`2<string, UnityEngine.RectTransform>,GirlsWarRestore.MainInterfaceSceneBuilder/OverrideSet) (at Assets/Editor/MainInterfaceSceneBuilder.cs:1444)
+GirlsWarRestore.MainInterfaceSceneBuilder:BuildMainInterfaceSceneForRoot (string,string,string) (at Assets/Editor/MainInterfaceSceneBuilder.cs:343)
+GirlsWarRestore.MainInterface136UIDockOpenStackCandidate:BuildCaptureAndValidate () (at Assets/Editor/MainInterface136UIDockOpenStackCandidate.cs:71)
+
+(Filename: Assets/Editor/MainInterfaceSceneBuilder.cs Line: 1444)
+
+[GirlsWarRestore] Applied graphic raycast overrides: 0
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GirlsWarRestore.MainInterfaceSceneBuilder:ApplyGraphicRaycastOverrides (System.Collections.Generic.List`1<GirlsWarRestore.MainInterfaceSceneBuilder/SpriteRow>,System.Collections.Generic.Dictionary`2<string, UnityEngine.RectTransform>,GirlsWarRestore.MainInterfaceSceneBuilder/OverrideSet) (at Assets/Editor/MainInterfaceSceneBuilder.cs:1467)
+GirlsWarRestore.MainInterfaceSceneBuilder:BuildMainInterfaceSceneForRoot (string,string,string) (at Assets/Editor/MainInterfaceSceneBuilder.cs:344)
+GirlsWarRestore.MainInterface136UIDockOpenStackCandidate:BuildCaptureAndValidate () (at Assets/Editor/MainInterface136UIDockOpenStackCandidate.cs:71)
+
+(Filename: Assets/Editor/MainInterfaceSceneBuilder.cs Line: 1467)
+
+[GirlsWarRestore] Applied raycast probes: 24
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GirlsWarRestore.MainInterfaceSceneBuilder:AddRaycastProbeLoggers (System.Collections.Generic.List`1<GirlsWarRestore.MainInterfaceSceneBuilder/SpriteRow>,System.Collections.Generic.List`1<GirlsWarRestore.MainInterfaceSceneBuilder/ButtonRow>,System.Collections.Generic.Dictionary`2<string, UnityEngine.RectTransform>) (at Assets/Editor/MainInterfaceSceneBuilder.cs:1504)
+GirlsWarRestore.MainInterfaceSceneBuilder:BuildMainInterfaceSceneForRoot (string,string,string) (at Assets/Editor/MainInterfaceSceneBuilder.cs:345)
+GirlsWarRestore.MainInterface136UIDockOpenStackCandidate:BuildCaptureAndValidate () (at Assets/Editor/MainInterface136UIDockOpenStackCandidate.cs:71)
+
+(Filename: Assets/Editor/MainInterfaceSceneBuilder.cs Line: 1504)
+
+Start importing Assets/Scenes/MainInterface_UI136_UIDockSourceOnly.unity using Guid(71927290552a1454aaab8c50811c743d) (DefaultImporter) -> (Import Result ID: 'd5e2c0b34cad6b706ce02f17c14645c0') in 0.0015989 seconds [static dependencies only]. Details - ImportResultOutputID=ad3a551f1627456f8027e55c748244db DependenciesID=4aadff1ca7e913dab2e618e1a854d548 StaticDependenciesID=e71332007072463ecb77217f94328caa 
+Asset Pipeline Refresh (id=af5ae0896aff47d4b9afb6e05ea381b4): Total: 0.009 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/RestoreData/maininterface_build_result.json using Guid(0c85ef2c20ca23f4eba0dd254b511b4e) (TextScriptImporter) -> (Import Result ID: '75315d6a397bd4578d9ea8472c83e239') in 0.0017148 seconds [static dependencies only]. Details - ImportResultOutputID=20b4f5c4877789ae74f83d0023246f85 DependenciesID=8e845d4e16728bfd60009558eab94543 StaticDependenciesID=7cddba24b3ed52c433ea7f35227c6d39 
+Asset Pipeline Refresh (id=76528f8c25b7fad4193e8ca7c23af70d): Total: 0.040 seconds - Initiated by RefreshV2(NoUpdateAssetOptions)
+[GirlsWarRestore] MainInterface restored scene generated: 216 RectTransforms, 43 sprites, 42 texts (28 TMP, 14 UGUI), 0 scroll rects, 24 raycast probes, 0 active overrides, 0 graphic raycast overrides, 0 rect overrides, 0 visual overrides -> Assets/Scenes/MainInterface_UI136_UIDockSourceOnly.unity
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GirlsWarRestore.MainInterfaceSceneBuilder:BuildMainInterfaceSceneForRoot (string,string,string) (at Assets/Editor/MainInterfaceSceneBuilder.cs:371)
+GirlsWarRestore.MainInterface136UIDockOpenStackCandidate:BuildCaptureAndValidate () (at Assets/Editor/MainInterface136UIDockOpenStackCandidate.cs:71)
+
+(Filename: Assets/Editor/MainInterfaceSceneBuilder.cs Line: 371)
+
+Opening scene 'Assets/Scenes/MainInterface_UI136_UIDockOpenStackCandidate.unity'
+Unloading 67 Unused Serialized files (Serialized files now loaded: 0)
+Loaded scene 'Assets/Scenes/MainInterface_UI136_UIDockOpenStackCandidate.unity'
+	Deserialize:            25.758 ms
+	Integration:            26.300 ms
+	Integration of assets:  0.919 ms
+	Thread Wait Time:       0.004 ms
+	Total Operation Time:   52.982 ms
+Unloading 260 unused Assets / (111.0 KB). Loaded Objects now: 2956.
+Memory consumption went from 134.4 MB to 134.3 MB.
+Total: 3.440200 ms (FindLiveObjects: 0.126400 ms CreateObjectMapping: 0.024900 ms MarkObjects: 3.079500 ms  DeleteObjects: 0.208600 ms)
+
+Opening scene 'Assets/Scenes/MainInterface_UI136_UIDockSourceOnly.unity additively'
+Loaded scene 'Assets/Scenes/MainInterface_UI136_UIDockSourceOnly.unity'
+	Deserialize:            9.833 ms
+	Integration:            4.335 ms
+	Integration of assets:  0.135 ms
+	Thread Wait Time:       0.034 ms
+	Total Operation Time:   14.337 ms
+The character with Unicode value \uAD00 was not found in the [GirlsWarStaticProbe_EPM_TMP] font asset or any potential fallbacks. It was replaced by Unicode character \u25A1 in text object [text__1232844075836322441__font_EPM].
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object,UnityEngine.Object)
+UnityEngine.Debug:LogWarning (object,UnityEngine.Object)
+TMPro.TextMeshProUGUI:SetArraySizes (TMPro.TMP_Text/TextProcessingElement[]) (at ./Library/PackageCache/com.unity.ugui@1f2d1ab0d950/Runtime/TMP/TextMeshProUGUI.cs:2012)
+TMPro.TMP_Text:ParseInputText () (at ./Library/PackageCache/com.unity.ugui@1f2d1ab0d950/Runtime/TMP/TMP_Text.cs:2048)
+TMPro.TextMeshProUGUI:OnPreRenderCanvas () (at ./Library/PackageCache/com.unity.ugui@1f2d1ab0d950/Runtime/TMP/TextMeshProUGUI.cs:2496)
+TMPro.TextMeshProUGUI:Rebuild (UnityEngine.UI.CanvasUpdate) (at ./Library/PackageCache/com.unity.ugui@1f2d1ab0d950/Runtime/TMP/TextMeshProUGUI.cs:229)
+UnityEngine.UI.CanvasUpdateRegistry:PerformUpdate () (at ./Library/PackageCache/com.unity.ugui@1f2d1ab0d950/Runtime/UGUI/UI/Core/CanvasUpdateRegistry.cs:215)
+UnityEngine.Canvas:SendWillRenderCanvases ()
+UnityEngine.Canvas:ForceUpdateCanvases ()
+GirlsWarRestore.MainInterface136UIDockOpenStackCandidate:ForceSpineUpdate () (at Assets/Editor/MainInterface136UIDockOpenStackCandidate.cs:553)
+GirlsWarRestore.MainInterface136UIDockOpenStackCandidate:BuildCaptureAndValidate () (at Assets/Editor/MainInterface136UIDockOpenStackCandidate.cs:79)
+
+(Filename: ./Library/PackageCache/com.unity.ugui@1f2d1ab0d950/Runtime/TMP/TextMeshProUGUI.cs Line: 2012)
+
+The character with Unicode value \u7D04 was not found in the [GirlsWarStaticProbe_riyu_baibian_0_2_0_2_1_TMP] font asset or any potential fallbacks. It was replaced by Unicode character \u25A1 in text object [txt_act_name__6296942880544583239__font_riyu].
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object,UnityEngine.Object)
+UnityEngine.Debug:LogWarning (object,UnityEngine.Object)
+TMPro.TextMeshProUGUI:SetArraySizes (TMPro.TMP_Text/TextProcessingElement[]) (at ./Library/PackageCache/com.unity.ugui@1f2d1ab0d950/Runtime/TMP/TextMeshProUGUI.cs:2012)
+TMPro.TMP_Text:ParseInputText () (at ./Library/PackageCache/com.unity.ugui@1f2d1ab0d950/Runtime/TMP/TMP_Text.cs:2048)
+TMPro.TextMeshProUGUI:OnPreRenderCanvas () (at ./Library/PackageCache/com.unity.ugui@1f2d1ab0d950/Runtime/TMP/TextMeshProUGUI.cs:2496)
+TMPro.TextMeshProUGUI:Rebuild (UnityEngine.UI.CanvasUpdate) (at ./Library/PackageCache/com.unity.ugui@1f2d1ab0d950/Runtime/TMP/TextMeshProUGUI.cs:229)
+UnityEngine.UI.CanvasUpdateRegistry:PerformUpdate () (at ./Library/PackageCache/com.unity.ugui@1f2d1ab0d950/Runtime/UGUI/UI/Core/CanvasUpdateRegistry.cs:215)
+UnityEngine.Canvas:SendWillRenderCanvases ()
+UnityEngine.Canvas:ForceUpdateCanvases ()
+GirlsWarRestore.MainInterface136UIDockOpenStackCandidate:ForceSpineUpdate () (at Assets/Editor/MainInterface136UIDockOpenStackCandidate.cs:553)
+GirlsWarRestore.MainInterface136UIDockOpenStackCandidate:BuildCaptureAndValidate () (at Assets/Editor/MainInterface136UIDockOpenStackCandidate.cs:79)
+
+(Filename: ./Library/PackageCache/com.unity.ugui@1f2d1ab0d950/Runtime/TMP/TextMeshProUGUI.cs Line: 2012)
+
+The character with Unicode value \u675F was not found in the [GirlsWarStaticProbe_riyu_baibian_0_2_0_2_1_TMP] font asset or any potential fallbacks. It was replaced by Unicode character \u25A1 in text object [txt_act_name__6296942880544583239__font_riyu].
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object,UnityEngine.Object)
+UnityEngine.Debug:LogWarning (object,UnityEngine.Object)
+TMPro.TextMeshProUGUI:SetArraySizes (TMPro.TMP_Text/TextProcessingElement[]) (at ./Library/PackageCache/com.unity.ugui@1f2d1ab0d950/Runtime/TMP/TextMeshProUGUI.cs:2012)
+TMPro.TMP_Text:ParseInputText () (at ./Library/PackageCache/com.unity.ugui@1f2d1ab0d950/Runtime/TMP/TMP_Text.cs:2048)
+TMPro.TextMeshProUGUI:OnPreRenderCanvas () (at ./Library/PackageCache/com.unity.ugui@1f2d1ab0d950/Runtime/TMP/TextMeshProUGUI.cs:2496)
+TMPro.TextMeshProUGUI:Rebuild (UnityEngine.UI.CanvasUpdate) (at ./Library/PackageCache/com.unity.ugui@1f2d1ab0d950/Runtime/TMP/TextMeshProUGUI.cs:229)
+UnityEngine.UI.CanvasUpdateRegistry:PerformUpdate () (at ./Library/PackageCache/com.unity.ugui@1f2d1ab0d950/Runtime/UGUI/UI/Core/CanvasUpdateRegistry.cs:215)
+UnityEngine.Canvas:SendWillRenderCanvases ()
+UnityEngine.Canvas:ForceUpdateCanvases ()
+GirlsWarRestore.MainInterface136UIDockOpenStackCandidate:ForceSpineUpdate () (at Assets/Editor/MainInterface136UIDockOpenStackCandidate.cs:553)
+GirlsWarRestore.MainInterface136UIDockOpenStackCandidate:BuildCaptureAndValidate () (at Assets/Editor/MainInterface136UIDockOpenStackCandidate.cs:79)
+
+(Filename: ./Library/PackageCache/com.unity.ugui@1f2d1ab0d950/Runtime/TMP/TextMeshProUGUI.cs Line: 2012)
+
+Start importing Assets/Scenes/MainInterface_UI136_UIDockOpenStackCandidate.unity using Guid(6a0baa878bc023e43ba4104d348ee301) (DefaultImporter) -> (Import Result ID: 'a0cbb6fbc2ec2aeabf27f261c94a9965') in 0.4988104 seconds [static dependencies only]. Details - ImportResultOutputID=be011040ad9227f610c680018dcf9993 DependenciesID=448d35ee695607ea1d0252ddf9806379 StaticDependenciesID=8803fe77d25502be20690812e04dfdf5 
+(Values over 0.050ms)
+Asset Pipeline Refresh (id=c9ae891c4f670ff4cbb516cb91814198): Total: 0.508 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+	Summary:
+		Imports: total=1 (actual=1, local cache=0, cache server=0)
+		Asset DB Process Time: managed=0 ms, native=505 ms
+		Asset DB Callback time: managed=0 ms, native=1 ms
+		Scripting: domain reloads=0, domain reload time=0 ms, compile time=0 ms, other=0 ms
+		Project Asset Count: scripts=300, non-scripts=857
+		Asset File Changes: new=0, changed=0, moved=0, deleted=0
+		Scan Filter Count: 3
+	ApplyChangesToAssetFolders: 0.057ms
+	Scan: 4.609ms
+	CategorizeAssets: 0.211ms
+	ImportOutOfDateAssets: 499.858ms (0.088ms without children)
+		ImportManagerImport: 499.279ms (0.096ms without children)
+		UnloadImportedAssets: 0.173ms
+		EnsureUptoDateAssetsAreRegisteredWithGuidPM: 0.099ms
+		OnDemandSchedulerStart: 0.179ms
+	PostProcessAllAssets: 0.434ms
+		MonoPostProcessAllAssets: 0.261ms
+			SyncVS.PostprocessSyncProject 0.051ms
+	PostAssetChangesProfiler: 1.174ms
+	UnloadStreamsBegin: 0.282ms
+	Untracked: 1.136ms
+
+Start importing Assets/RestoreCaptures/maininterface_ui136_uidock_openstack_candidate_1680x720.png using Guid(aeb309dce5653194788d9fb76b64e3bf) (TextureImporter) -> (Import Result ID: 'b7d9410ac2c7366ae5ccfbb78822ac4d') in 0.0408785 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=624ef168f1b7d0f1a636df8540c23465 DependenciesID=449e87283ae55d814f056c23862f2d7d StaticDependenciesID=9a4782c5cc2540782df5007c3bd8441f 
+Start importing Assets/RestoreData/reports/maininterface_136_uidock_click_validation_summary.json using Guid(6668b5d43c7ff344a94b22aea92bbe3e) (TextScriptImporter) -> (Import Result ID: 'd170108410b27cede6ba4c46041ce669') in 0.0022246 seconds [static dependencies only]. Details - ImportResultOutputID=b60fca44161095480037865dac1a7fe7 DependenciesID=b57a9836952e268e0e3dddb4783e53b9 StaticDependenciesID=cdff23585b7a30ffacd98fc0645f0c63 
+Start importing Assets/RestoreData/reports/maininterface_136_uidock_openstack_candidate_summary.json using Guid(193ad9cf632eb9443ab0c2a8e4b3b69e) (TextScriptImporter) -> (Import Result ID: '61f9e3399464b91ae46e04b2bb417db2') in 0.0020636 seconds [static dependencies only]. Details - ImportResultOutputID=600d650d766eec7d729a5307b617638c DependenciesID=54a98de8c4802b5b11816b7a4027e332 StaticDependenciesID=38879a459de4e993c1dc663bd44cb323 
+Start importing Assets/RestoreData/reports/maininterface_136_uidock_click_validation.csv using Guid(6c482bc32bb58894db83c5ba81d8d251) (TextScriptImporter) -> (Import Result ID: 'f78d4792bcf209176b327c5c253598be') in 0.0027816 seconds [static dependencies only]. Details - ImportResultOutputID=295a6eab934f677da1a42fb724076b5e DependenciesID=c8f0cf8a7509d4c1e08217038322bb19 StaticDependenciesID=8fa798035a754aa83bdd165090f75146 
+Asset Pipeline Refresh (id=85a52872346bff649904d1a0bceab2bf): Total: 0.090 seconds - Initiated by RefreshV2(NoUpdateAssetOptions)
+[GirlsWarRestore] UI136 UIDock candidate complete: Assets/RestoreCaptures/maininterface_ui136_uidock_openstack_candidate_1680x720.png
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GirlsWarRestore.MainInterface136UIDockOpenStackCandidate:BuildCaptureAndValidate () (at Assets/Editor/MainInterface136UIDockOpenStackCandidate.cs:105)
+
+(Filename: Assets/Editor/MainInterface136UIDockOpenStackCandidate.cs Line: 105)
+
+Batchmode quit successfully invoked - shutting down!
+[Physics::Module] Cleanup current backend.
+[Physics::Module] Id: 0xf2b8ea05
+Input System module state changed to: ShutdownInProgress.
+Input Polling Thread exited.
+Input System module state changed to: Shutdown.
+[Licensing::IpcConnector] LicenseClient-godho-notifications channel disconnected successfully.
+[Licensing::IpcConnector] LicenseClient-godho channel disconnected successfully.
+AcceleratorClientConnectionCallback - disconnected - :0
+Cleanup mono
+CodeReloadManager destroyed
+Exiting batchmode successfully now!
+Exiting without the bug reporter. Application will terminate with return code 0

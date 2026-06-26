@@ -1,0 +1,7 @@
+validationKind,status,evidence,requiredToUnblock,guardrail
+true_reference_aspect_capture,generated,"Capture generated at C:\Users\godho\Downloads\girlswar\girlswar_battle_unity\Assets\RestoreCaptures\battle_actor\Battle68TrueReferenceAspectNoSceneSave_1920x855.png; size={'width': 1920, 'height': 855, 'aspect': 2.245614}; unityExit=0; sceneSaved=False; sceneDirtyBefore=False; sceneDirtyAfter=False",Use true capture for next route/HUD/card/actor normalized validation; do not treat it as playable.,analysisOnlyCropUsedAsFinal=false
+existing_capture_outputs,16x9_only,current battle_actor capture directory contains BATTLE51/BATTLE57 and prior captures named 1920x1080.,"true runtime capture at reference aspect, not crop.",no coordinate-only success
+route_active_sibling,pending,"BATTLE67 focused route/card/TMP/mask rows are source evidence, but visual coordinate patch waits for true aspect capture.",aspect-correct capture plus source-backed RectTransform/sibling comparison.,no route patch yet
+card_icon_payload,pending,BATTLE66/BATTLE67 still show incomplete bottom card assembly and 1036 not_fetchable_local.,source-backed card/icon/actor payload resolution.,no fake card/icon/text
+full_actor_payload,pending,BATTLE57 source-backed actors are local subset only; full actor payload gaps remain.,source-backed 1036 and unresolved enemy payloads.,no dummy actor/fake mesh
+timeline_xlua,pending,Timeline package and xLua/GameEntry handler runtime remain separate blockers.,"approval/source runtime, not part of BATTLE68.","no package import, no xLua/handler patch"

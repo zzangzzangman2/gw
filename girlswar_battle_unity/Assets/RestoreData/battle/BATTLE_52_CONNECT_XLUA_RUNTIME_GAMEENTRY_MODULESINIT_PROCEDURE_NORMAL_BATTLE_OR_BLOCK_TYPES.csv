@@ -1,0 +1,10 @@
+typeName,available,evidence
+XLua.LuaEnv,false,current Unity project AppDomain/assets
+XLua.LuaTable,false,required by original LuaForm/LuaUnit/LuaManager dump
+XLua.LuaFunction,false,required by original LuaManager delegates
+YouYou.GameEntry,false,original dump exposes static GameEntry.Lua/UI/Procedure
+YouYou.LuaManager,false,original dump exposes LuaManager.LoadUIScript/MyLoader/GetLuaBuff
+YouYou.LuaForm,true,BATTLE51 source-backed bridge stub persists
+YouYou.LuaUnit,true,BATTLE51 source-backed bridge stub persists
+LuaComponentBinder.LuaComBinder,true,BATTLE51 source-backed bridge stub persists
+YouYou.UIEventListener,true,BATTLE51 source-backed bridge stub persists

@@ -1,0 +1,152 @@
+{
+  "generatedAt": "2026-06-26T06:11:10",
+  "restoredClaim": false,
+  "scenePatchApplied": false,
+  "runtimeInstrumentationExecuted": false,
+  "snapshotValuesInvented": false,
+  "referenceAspect": {
+    "attachedReferenceImage": 2.243346,
+    "referenceImageWidth": 1180,
+    "referenceImageHeight": 526,
+    "referenceMp4": 2.2456,
+    "referenceMp4Width": 1280,
+    "referenceMp4Height": 570
+  },
+  "candidateCaptureAspects": [
+    {
+      "label": "route_spine_runtime_ui_material_bound_1680x720",
+      "path": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_maininterface_unity\\Assets\\RestoreCaptures\\maininterface_route_spine_runtime_ui_material_bound_1680x720.png",
+      "width": 1680,
+      "height": 720,
+      "aspect": 2.333333,
+      "aspectDeltaPctVsReference": 4.011
+    },
+    {
+      "label": "restored_1680x720",
+      "path": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_maininterface_unity\\Assets\\RestoreCaptures\\maininterface_restored_1680x720.png",
+      "width": 1680,
+      "height": 720,
+      "aspect": 2.333333,
+      "aspectDeltaPctVsReference": 4.011
+    },
+    {
+      "label": "ui124_hero1005_spine_1680x720",
+      "path": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_maininterface_unity\\Assets\\RestoreCaptures\\maininterface_ui124_hero1005_spine_1680x720.png",
+      "width": 1680,
+      "height": 720,
+      "aspect": 2.333333,
+      "aspectDeltaPctVsReference": 4.011
+    },
+    {
+      "label": "ui126_oldroot_hero1005_candidate_1680x720",
+      "path": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_maininterface_unity\\Assets\\RestoreCaptures\\maininterface_ui126_oldroot_hero1005_candidate_1680x720.png",
+      "width": 1680,
+      "height": 720,
+      "aspect": 2.333333,
+      "aspectDeltaPctVsReference": 4.011
+    },
+    {
+      "label": "ui127_oldroot_bg1005_runtime_candidate_1680x720",
+      "path": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_maininterface_unity\\Assets\\RestoreCaptures\\maininterface_ui127_oldroot_bg1005_runtime_candidate_1680x720.png",
+      "width": 1680,
+      "height": 720,
+      "aspect": 2.333333,
+      "aspectDeltaPctVsReference": 4.011
+    },
+    {
+      "label": "ui128_oldroot_runtime_activity_text_tmp_click_candidate_1680x720",
+      "path": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_maininterface_unity\\Assets\\RestoreCaptures\\maininterface_ui128_oldroot_runtime_activity_text_tmp_click_candidate_1680x720.png",
+      "width": 1680,
+      "height": 720,
+      "aspect": 2.333333,
+      "aspectDeltaPctVsReference": 4.011
+    },
+    {
+      "label": "ui135_hero1005_homepara_backfront_candidate_1680x720",
+      "path": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_maininterface_unity\\Assets\\RestoreCaptures\\maininterface_ui135_hero1005_homepara_backfront_candidate_1680x720.png",
+      "width": 1680,
+      "height": 720,
+      "aspect": 2.333333,
+      "aspectDeltaPctVsReference": 4.011
+    },
+    {
+      "label": "ui136_uidock_openstack_candidate_1680x720",
+      "path": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_maininterface_unity\\Assets\\RestoreCaptures\\maininterface_ui136_uidock_openstack_candidate_1680x720.png",
+      "width": 1680,
+      "height": 720,
+      "aspect": 2.333333,
+      "aspectDeltaPctVsReference": 4.011
+    },
+    {
+      "label": "ui144_uidock_renderer_rootcanvas_candidate_1680x720",
+      "path": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_maininterface_unity\\Assets\\RestoreCaptures\\maininterface_ui144_uidock_renderer_rootcanvas_candidate_1680x720.png",
+      "width": 1680,
+      "height": 720,
+      "aspect": 2.333333,
+      "aspectDeltaPctVsReference": 4.011
+    },
+    {
+      "label": "restored_1280x720",
+      "path": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_maininterface_unity\\Assets\\RestoreCaptures\\maininterface_restored_1280x720.png",
+      "width": 1680,
+      "height": 720,
+      "aspect": 2.333333,
+      "aspectDeltaPctVsReference": 4.011
+    }
+  ],
+  "aspectMismatchContributor": "minor_to_moderate_coordinate_comparison_contributor_not_primary_root_cause",
+  "staticPatchPossibleWithoutRuntime": false,
+  "approvalRequiredForRuntimeDump": true,
+  "ui146RequiredRuntimeFieldsCount": 197,
+  "ui146StaticKnownFieldsCount": 8,
+  "bestKnownMetrics": {
+    "ui128": {
+      "fullCorrelation": 0.425589,
+      "meanAbsDiff": 0.208546,
+      "changedPixelRatio30": 0.69494
+    },
+    "ui136": {
+      "fullCorrelation": 0.211486,
+      "meanAbsDiff": 0.257141,
+      "changedPixelRatio30": 0.850656
+    },
+    "ui144": {
+      "fullCorrelation": 0.239859,
+      "meanAbsDiff": 0.255596,
+      "changedPixelRatio30": 0.852027
+    }
+  },
+  "rootCauseSplit": {
+    "aspect_or_capture_framing_contributor": "candidate captures are ~2.333:1 while reference/video are ~2.244:1; normalize before coordinate analysis",
+    "source_root_or_form_stack_required_runtime_snapshot": "UI_MainInterface_old is closer, but UI_Dock/UI_MainPage parent/group/depth remains runtime-gated",
+    "route_active_sibling_required_runtime_snapshot": "guarded route/world nodes cannot be hidden or reordered without runtime/source active-state proof",
+    "dynamic_activity_account_chat_currency_required_runtime_snapshot": "activity/chat/top state needs UI130-compatible server/account snapshot",
+    "tmp_mask_material_static_known_or_runtime_missing": "static TMP lane exhausted; runtime mask/stencil/material and dynamic text remain missing"
+  },
+  "outputs": {
+    "md": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\maininterface\\MAININTERFACE_147_REFERENCE_ASPECT_CAPTURE_ROOTCAUSE_CONSOLIDATION_NO_PATCH_RESULT.md",
+    "json": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\maininterface\\MAININTERFACE_147_REFERENCE_ASPECT_CAPTURE_ROOTCAUSE_CONSOLIDATION_NO_PATCH_RESULT.json",
+    "captureAspectCsv": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\maininterface\\MAININTERFACE_147_REFERENCE_ASPECT_CAPTURE_ROOTCAUSE_CONSOLIDATION_NO_PATCH_reference_vs_candidate_capture_aspect_matrix.csv",
+    "visibleMismatchCsv": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\maininterface\\MAININTERFACE_147_REFERENCE_ASPECT_CAPTURE_ROOTCAUSE_CONSOLIDATION_NO_PATCH_visible_mismatch_vs_runtime_snapshot_required_matrix.csv",
+    "rootCauseCsv": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\maininterface\\MAININTERFACE_147_REFERENCE_ASPECT_CAPTURE_ROOTCAUSE_CONSOLIDATION_NO_PATCH_root_cause_next_action_decision_matrix.csv"
+  },
+  "changedFiles": [
+    "C:\\Users\\godho\\Downloads\\girlswar\\reports\\maininterface\\MAININTERFACE_147_REFERENCE_ASPECT_CAPTURE_ROOTCAUSE_CONSOLIDATION_NO_PATCH_RESULT.md",
+    "C:\\Users\\godho\\Downloads\\girlswar\\reports\\maininterface\\MAININTERFACE_147_REFERENCE_ASPECT_CAPTURE_ROOTCAUSE_CONSOLIDATION_NO_PATCH_RESULT.json",
+    "C:\\Users\\godho\\Downloads\\girlswar\\reports\\maininterface\\MAININTERFACE_147_REFERENCE_ASPECT_CAPTURE_ROOTCAUSE_CONSOLIDATION_NO_PATCH_reference_vs_candidate_capture_aspect_matrix.csv",
+    "C:\\Users\\godho\\Downloads\\girlswar\\reports\\maininterface\\MAININTERFACE_147_REFERENCE_ASPECT_CAPTURE_ROOTCAUSE_CONSOLIDATION_NO_PATCH_visible_mismatch_vs_runtime_snapshot_required_matrix.csv",
+    "C:\\Users\\godho\\Downloads\\girlswar\\reports\\maininterface\\MAININTERFACE_147_REFERENCE_ASPECT_CAPTURE_ROOTCAUSE_CONSOLIDATION_NO_PATCH_root_cause_next_action_decision_matrix.csv",
+    "C:\\Users\\godho\\Downloads\\girlswar\\_restore_tools\\scripts\\maininterface147_reference_aspect_rootcause_consolidation.py"
+  ],
+  "nextBlocker": "Need approved real runtime snapshot/dump for UI_Dock/UI_MainPage form parent/group/depth/CanvasHelper cascade and UI130-compatible dynamic activity/account/chat/currency values; also normalize future visual comparisons to the ~2.24:1 reference view rect.",
+  "guardrailsTouched": [],
+  "commandPolicy": {
+    "rootCmdCount": 1,
+    "rootCmdFiles": [
+      "00_COMMAND_CENTER.cmd"
+    ],
+    "restoreToolsDirectCmdCount": 0,
+    "restoreToolsDirectCmdFiles": [],
+    "policySatisfied": true
+  }
+}

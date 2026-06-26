@@ -1,0 +1,192 @@
+{
+  "generatedAt": "2026-06-26T03:50:56",
+  "task": "MAININTERFACE_136_TRACE_UIDOCK_OPEN_STACK_BOTTOM_NAV_CANDIDATE_NO_BACK_LAYER_PROMOTION",
+  "restoredClaim": false,
+  "sceneSaved": true,
+  "candidatePatchApplied": true,
+  "dockCandidateApplied": true,
+  "dockDefaultStateApplied": true,
+  "matchedToggleCount": 7,
+  "onOffMismatchCount": 0,
+  "productionPatchApplied": false,
+  "patchDecision": "candidate_uidock_openstack_sibling_form_applied_no_back_layer_no_dock_coordinate_patch",
+  "unityStatus": "ui136_uidock_openstack_candidate_capture_generated",
+  "reference": "C:\\Users\\godho\\.codex\\attachments\\e607fc34-b674-4516-b051-8d396cd6df06\\image-1.png",
+  "baselineCapture": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_maininterface_unity\\Assets\\RestoreCaptures\\maininterface_ui128_oldroot_runtime_activity_text_tmp_click_candidate_1680x720.png",
+  "candidateCapture": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_maininterface_unity\\Assets\\RestoreCaptures\\maininterface_ui136_uidock_openstack_candidate_1680x720.png",
+  "contactPng": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\maininterface\\MAININTERFACE_136_REFERENCE_DIFF_CONTACT.png",
+  "sourceTraceCsv": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\maininterface\\MAININTERFACE_136_uidock_source_open_stack_trace.csv",
+  "evidenceMatrixCsv": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\maininterface\\MAININTERFACE_136_oldroot_bottom_nav_vs_uidock_evidence_matrix.csv",
+  "sceneProbeCsv": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\maininterface\\MAININTERFACE_136_uidock_candidate_scene_probe.csv",
+  "bottomNavMetricsCsv": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\maininterface\\MAININTERFACE_136_bottom_nav_region_metrics.csv",
+  "clickSummary": {
+    "totalButtons": 55,
+    "activeButtons": 45,
+    "activeInteractableButtons": 45,
+    "raycastClickableButtons": 43,
+    "raycastBlockedButtons": 2,
+    "csv": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_maininterface_unity\\Assets\\RestoreData\\reports\\maininterface_136_uidock_click_validation.csv",
+    "json": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_maininterface_unity\\Assets\\RestoreData\\reports\\maininterface_136_uidock_click_validation_summary.json"
+  },
+  "sourceTraceRows": 8,
+  "matrixRows": 6,
+  "ui134BottomEvidenceRows": 260,
+  "uidockSceneRows": 216,
+  "defaultStateRows": 7,
+  "uiBgGuardrail": {
+    "uiBgHadImage": true,
+    "baselineRaycastTarget": true,
+    "finalRaycastTarget": true,
+    "UI_bg_raycast_preserved": true,
+    "uiBgHadButton": true,
+    "baselineInteractable": true,
+    "finalInteractable": true,
+    "UI_bg_interactable_preserved": true,
+    "note": "Preserved existing UI_bg Image.raycastTarget from the rebuilt UI128-equivalent old-root baseline."
+  },
+  "bottomNavCorrelationDeltaUi136MinusUi128": -0.2749,
+  "metricResult": {
+    "available": true,
+    "metrics": {
+      "reference_vs_ui128:full": {
+        "box": "[0,0,1680,720]",
+        "meanAbsDiff": 0.209078,
+        "rmsDiff": 0.293563,
+        "changedPixelRatio30": 0.70151,
+        "pixelCorrelation": 0.424216
+      },
+      "reference_vs_ui128:bottom_nav": {
+        "box": "[0,575,1680,720]",
+        "meanAbsDiff": 0.190902,
+        "rmsDiff": 0.270251,
+        "changedPixelRatio30": 0.68305,
+        "pixelCorrelation": 0.395621
+      },
+      "reference_vs_ui128:bottom_dock_focus": {
+        "box": "[420,500,1260,720]",
+        "meanAbsDiff": 0.164535,
+        "rmsDiff": 0.247735,
+        "changedPixelRatio30": 0.592246,
+        "pixelCorrelation": 0.517247
+      },
+      "reference_vs_ui128:center_hero_background": {
+        "box": "[360,40,1180,690]",
+        "meanAbsDiff": 0.184641,
+        "rmsDiff": 0.27079,
+        "changedPixelRatio30": 0.61333,
+        "pixelCorrelation": 0.475187
+      },
+      "reference_vs_ui128:right_activity_stack": {
+        "box": "[900,95,1680,335]",
+        "meanAbsDiff": 0.247383,
+        "rmsDiff": 0.330944,
+        "changedPixelRatio30": 0.787842,
+        "pixelCorrelation": 0.17393
+      },
+      "reference_vs_ui128:click_blocker_btn_discord": {
+        "box": "[1180,95,1580,640]",
+        "meanAbsDiff": 0.208914,
+        "rmsDiff": 0.291903,
+        "changedPixelRatio30": 0.716693,
+        "pixelCorrelation": 0.493905
+      },
+      "reference_vs_ui136:full": {
+        "box": "[0,0,1680,720]",
+        "meanAbsDiff": 0.257656,
+        "rmsDiff": 0.333622,
+        "changedPixelRatio30": 0.855818,
+        "pixelCorrelation": 0.210779
+      },
+      "reference_vs_ui136:bottom_nav": {
+        "box": "[0,575,1680,720]",
+        "meanAbsDiff": 0.258382,
+        "rmsDiff": 0.326579,
+        "changedPixelRatio30": 0.888674,
+        "pixelCorrelation": 0.120721
+      },
+      "reference_vs_ui136:bottom_dock_focus": {
+        "box": "[420,500,1260,720]",
+        "meanAbsDiff": 0.263318,
+        "rmsDiff": 0.330613,
+        "changedPixelRatio30": 0.905271,
+        "pixelCorrelation": 0.083842
+      },
+      "reference_vs_ui136:center_hero_background": {
+        "box": "[360,40,1180,690]",
+        "meanAbsDiff": 0.266517,
+        "rmsDiff": 0.340305,
+        "changedPixelRatio30": 0.879456,
+        "pixelCorrelation": 0.120932
+      },
+      "reference_vs_ui136:right_activity_stack": {
+        "box": "[900,95,1680,335]",
+        "meanAbsDiff": 0.248302,
+        "rmsDiff": 0.330934,
+        "changedPixelRatio30": 0.797767,
+        "pixelCorrelation": 0.15747
+      },
+      "reference_vs_ui136:click_blocker_btn_discord": {
+        "box": "[1180,95,1580,640]",
+        "meanAbsDiff": 0.240522,
+        "rmsDiff": 0.318422,
+        "changedPixelRatio30": 0.798372,
+        "pixelCorrelation": 0.338459
+      },
+      "ui128_vs_ui136:full": {
+        "box": "[0,0,1680,720]",
+        "meanAbsDiff": 0.13393,
+        "rmsDiff": 0.244178,
+        "changedPixelRatio30": 0.427405,
+        "pixelCorrelation": 0.606893
+      },
+      "ui128_vs_ui136:bottom_nav": {
+        "box": "[0,575,1680,720]",
+        "meanAbsDiff": 0.203164,
+        "rmsDiff": 0.300884,
+        "changedPixelRatio30": 0.643838,
+        "pixelCorrelation": 0.277559
+      },
+      "ui128_vs_ui136:bottom_dock_focus": {
+        "box": "[420,500,1260,720]",
+        "meanAbsDiff": 0.246572,
+        "rmsDiff": 0.325106,
+        "changedPixelRatio30": 0.818739,
+        "pixelCorrelation": 0.143002
+      },
+      "ui128_vs_ui136:center_hero_background": {
+        "box": "[360,40,1180,690]",
+        "meanAbsDiff": 0.20537,
+        "rmsDiff": 0.301611,
+        "changedPixelRatio30": 0.669265,
+        "pixelCorrelation": 0.351569
+      },
+      "ui128_vs_ui136:right_activity_stack": {
+        "box": "[900,95,1680,335]",
+        "meanAbsDiff": 0.012263,
+        "rmsDiff": 0.066187,
+        "changedPixelRatio30": 0.05094,
+        "pixelCorrelation": 0.967435
+      },
+      "ui128_vs_ui136:click_blocker_btn_discord": {
+        "box": "[1180,95,1580,640]",
+        "meanAbsDiff": 0.074492,
+        "rmsDiff": 0.1844,
+        "changedPixelRatio30": 0.207748,
+        "pixelCorrelation": 0.80703
+      }
+    }
+  },
+  "ui135BackLayerGuardrail": {
+    "candidateMounted": true,
+    "referenceCorrelationDeltaFull": -0.271055,
+    "referenceCorrelationDeltaHero": -0.440511,
+    "decision": "do_not_promote_current_back_layer_mount_without_original_prefab_transform_order",
+    "reason": "The source-backed back layer exists and renders, but the current zero-offset SkeletonGraphic probe substantially worsens full and hero-region reference metrics, indicating overpaint/order/transform mismatch."
+  },
+  "commandPolicy": {
+    "rootCmdCount": 1,
+    "restoreToolsDirectCmdCount": 0,
+    "policyOk": true
+  },
+  "nextBlocker": "UI_Dock open-stack can be probed as source-built candidate, but activity/account snapshot and exact production UI layer ordering still block final restored claim."
+}

@@ -1,0 +1,8 @@
+BATTLE_59_AUDIT_LOCAL_SOURCE_BACKED_XLUA_RUNTIME_RECOVERY_FEASIBILITY_AND_BOOTSTRAP_REQUIREMENTS_NO_STUB_NO_EXTERNAL
+runtime_rows=32
+bootstrap_rows=37
+matrix_rows=5
+payload_rows=85
+importable_runtime_candidates=0
+patchDecision=blocked_no_patch
+sceneSaved=false

@@ -1,0 +1,5 @@
+BATTLE_53_RESTORE_OR_IMPORT_SOURCE_BACKED_XLUA_RUNTIME_AND_MODULESINIT_BOOTSTRAP_OR_ACCEPT_BLOCK
+candidate rows: 17
+schema rows: 22
+source_backed_importable_editor_runtime candidates: 0
+decision: accepted_block_no_source_backed_xlua_runtime_available_locally

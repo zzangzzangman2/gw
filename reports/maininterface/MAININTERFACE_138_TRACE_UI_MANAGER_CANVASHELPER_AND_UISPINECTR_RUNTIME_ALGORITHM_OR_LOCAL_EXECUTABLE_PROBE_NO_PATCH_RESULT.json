@@ -1,0 +1,120 @@
+{
+  "generatedAt": "2026-06-26T04:10:35",
+  "task": "MAININTERFACE_138_TRACE_UI_MANAGER_CANVASHELPER_AND_UISPINECTR_RUNTIME_ALGORITHM_OR_LOCAL_EXECUTABLE_PROBE_NO_PATCH",
+  "restoredClaim": false,
+  "scenePatchApplied": false,
+  "candidatePatchApplied": false,
+  "patchDecision": "trace_only_no_patch",
+  "runtimeEquivalentDepthRecovered": false,
+  "uiDockPromotionAllowed": false,
+  "uiSpineRendererRecovered": false,
+  "localRuntimeDumpFeasible": "conditionally_feasible_with_apk_or_native_probe_but_not_currently_configured",
+  "requiredNextEvidence": [
+    "YouYouUIManager/AbstractUIManager/UILayer/YouYouCanvasHelper native method bodies or live runtime dump for form group/baseOrder/depth/sorting formulas",
+    "runtime UI_Dock and UI_MainPage dump of parent group, Canvas sortingOrder, sibling order, mask/stencil, CanvasScaler mode, and active state",
+    "UI_Dock sp_* original SkeletonGraphic/SkeletonDataAsset/material bindings or original UISpineCtr execution dump",
+    "approved original APK/emulator instrumentation path or static native IL2CPP method-body recovery plan",
+    "real activity/account/chat snapshot through UI130 replay pipeline for dynamic labels/icons"
+  ],
+  "guardrailsTouched": {
+    "sceneOrCandidatePatched": false,
+    "uiBgRaycastInteractableAltered": false,
+    "btnDiscordReviewHideApplied": false,
+    "activitySlotsHiddenOrFaked": false,
+    "routeWorldZhuyeNodesHidden": false,
+    "painting1005BackPromoted": false,
+    "fakeHudIconTextSpineCreated": false
+  },
+  "inputContext": {
+    "ui137Decision": {
+      "generatedAt": "2026-06-26T04:00:44",
+      "task": "MAININTERFACE_137_TRACE_PRODUCTION_FORM_LAYER_ORDER_AND_ACTIVITY_ACCOUNT_CHAT_RUNTIME_STATE_NO_FAKE_PATCH",
+      "restoredClaim": false,
+      "scenePatchApplied": false,
+      "candidatePatchApplied": false,
+      "patchDecision": "trace_only_no_patch",
+      "uiDockSiblingPromotionAllowed": false,
+      "reasonNoPatch": "UI_Dock form/open-stack evidence is strong, but UI136 source-built sibling capture worsened reference metrics and still lacks runtime UIManager canvas depth, form group, animator, mask, and UISpineCtr renderer semantics.",
+      "ui136Metrics": {
+        "ui128FullCorr": 0.424216,
+        "ui136FullCorr": 0.210779,
+        "ui128BottomNavCorr": 0.395621,
+        "ui136BottomNavCorr": 0.120721
+      },
+      "csvs": {
+        "productionFormLayerOrderOpenStack": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\maininterface\\MAININTERFACE_137_production_form_layer_order_open_stack_evidence.csv",
+        "activityAccountChatRuntimeStateDecisionMatrix": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\maininterface\\MAININTERFACE_137_activity_account_chat_runtime_state_decision_matrix.csv",
+        "maskStencilCanvasSortingAnimatorEvidence": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\maininterface\\MAININTERFACE_137_mask_stencil_canvas_sorting_animator_evidence.csv"
+      },
+      "rowCounts": {
+        "formEvidence": 21,
+        "stateMatrix": 9,
+        "layerEvidence": 303
+      },
+      "requiredNextEvidence": [
+        "runtime UIManager/YouYouCanvasHelper form group/canvas depth dump for UI_Dock and UI_MainPage",
+        "runtime UISpineCtr/sp_* renderer reconstruction or original component execution path",
+        "real activity/account/chat snapshot accepted by UI130 replay pipeline"
+      ],
+      "guardrails": {
+        "uiBgRaycastInteractableChanged": false,
+        "btnDiscordReviewHideApplied": false,
+        "activitySlotsHiddenOrFaked": false,
+        "painting1005BackCarriedOver": false,
+        "routeWorldZhuyeNodesHidden": false
+      },
+      "commandPolicy": {
+        "rootCmdCount": 1,
+        "restoreToolsDirectCmdCount": 0,
+        "policyOk": true
+      }
+    },
+    "runtimeFiles": {
+      "apk": {
+        "path": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\split_apks\\com.girlwars.kr.apk",
+        "exists": true,
+        "size": 27753908
+      },
+      "libil2cpp_root": {
+        "path": "C:\\Users\\godho\\Downloads\\girlswar\\il2cpp_native\\libil2cpp.so",
+        "exists": true,
+        "size": 52321120
+      },
+      "metadata_root": {
+        "path": "C:\\Users\\godho\\Downloads\\girlswar\\il2cpp_native\\global-metadata.dat",
+        "exists": true,
+        "size": 9513836
+      },
+      "libil2cpp_probe": {
+        "path": "C:\\Users\\godho\\Downloads\\girlswar\\work\\apk_probe\\libil2cpp.so",
+        "exists": true,
+        "size": 83481987
+      },
+      "metadata_probe": {
+        "path": "C:\\Users\\godho\\Downloads\\girlswar\\work\\apk_probe\\global-metadata.dat",
+        "exists": true,
+        "size": 12888835
+      },
+      "unity_project": {
+        "path": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_maininterface_unity",
+        "exists": true,
+        "size": ""
+      }
+    }
+  },
+  "csvs": {
+    "uimanagerCanvasHelperMethodsFieldsCallsites": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\maininterface\\MAININTERFACE_138_uimanager_canvashelper_methods_fields_callsites.csv",
+    "uispineCtrSpRuntimeComponentTrace": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\maininterface\\MAININTERFACE_138_uispinectr_sp_runtime_component_trace.csv",
+    "localRuntimeDumpFeasibilityMatrix": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\maininterface\\MAININTERFACE_138_local_runtime_dump_feasibility_matrix.csv"
+  },
+  "rowCounts": {
+    "uimgr": 423,
+    "uispine": 84,
+    "runtime": 5
+  },
+  "commandPolicy": {
+    "rootCmdCount": 1,
+    "restoreToolsDirectCmdCount": 0,
+    "policyOk": true
+  }
+}

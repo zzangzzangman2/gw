@@ -1,0 +1,574 @@
+{
+  "schemaVersion": "MAININTERFACE_148_runtime_snapshot_approval_packet_v1",
+  "purpose": "Collect only the missing runtime evidence needed to decide MainInterface source-backed patching.",
+  "noFakeValues": true,
+  "noRuntimeExecutedByThisTask": true,
+  "approvalRequiredBeforeExecution": true,
+  "requiredApprovalText": "Approve original runtime snapshot/dump for UI_Dock/UI_MainPage form parent/group/depth/CanvasHelper cascade and UI130-compatible activity/account/chat/currency state. No scene patch or fake values are approved by this packet.",
+  "inputTemplate": "reports/maininterface/MAININTERFACE_146_runtime_snapshot_template.json",
+  "groups": [
+    {
+      "group": "UI_Dock/UI_MainPage parent/group/depth/form stack",
+      "fieldCount": 20,
+      "fields": [
+        "forms.UI_Dock.parentTransformFullPath",
+        "forms.UI_Dock.uiFormBase.currCanvasSortingOrder",
+        "forms.UI_Dock.uiFormBase.depth",
+        "forms.UI_Dock.uiFormBase.groupId",
+        "forms.UI_Dock.uiGroup.baseOrder",
+        "forms.UI_Dock.uiGroup.groupId",
+        "forms.UI_Dock.uiGroup.groupObjectPath",
+        "forms.UI_Dock.uiGroup.layerObjectPath",
+        "forms.UI_Dock.uiGroup.sortingCursorAfterOpen",
+        "forms.UI_Dock.uiGroup.sortingCursorBeforeOpen",
+        "forms.UI_MainPage.parentTransformFullPath",
+        "forms.UI_MainPage.uiFormBase.currCanvasSortingOrder",
+        "forms.UI_MainPage.uiFormBase.depth",
+        "forms.UI_MainPage.uiFormBase.groupId",
+        "forms.UI_MainPage.uiGroup.baseOrder",
+        "forms.UI_MainPage.uiGroup.groupId",
+        "forms.UI_MainPage.uiGroup.groupObjectPath",
+        "forms.UI_MainPage.uiGroup.layerObjectPath",
+        "forms.UI_MainPage.uiGroup.sortingCursorAfterOpen",
+        "forms.UI_MainPage.uiGroup.sortingCursorBeforeOpen"
+      ]
+    },
+    {
+      "group": "root Canvas/CanvasGroup effective render state",
+      "fieldCount": 20,
+      "fields": [
+        "forms.UI_Dock.canvasGroup.alpha",
+        "forms.UI_Dock.canvasGroup.blocksRaycasts",
+        "forms.UI_Dock.canvasGroup.interactable",
+        "forms.UI_Dock.rootCanvas.overrideSorting",
+        "forms.UI_Dock.rootCanvas.planeDistance",
+        "forms.UI_Dock.rootCanvas.renderMode",
+        "forms.UI_Dock.rootCanvas.sortingLayerID",
+        "forms.UI_Dock.rootCanvas.sortingOrder",
+        "forms.UI_Dock.rootCanvas.targetDisplay",
+        "forms.UI_Dock.rootCanvas.worldCameraFullPath",
+        "forms.UI_MainPage.canvasGroup.alpha",
+        "forms.UI_MainPage.canvasGroup.blocksRaycasts",
+        "forms.UI_MainPage.canvasGroup.interactable",
+        "forms.UI_MainPage.rootCanvas.overrideSorting",
+        "forms.UI_MainPage.rootCanvas.planeDistance",
+        "forms.UI_MainPage.rootCanvas.renderMode",
+        "forms.UI_MainPage.rootCanvas.sortingLayerID",
+        "forms.UI_MainPage.rootCanvas.sortingOrder",
+        "forms.UI_MainPage.rootCanvas.targetDisplay",
+        "forms.UI_MainPage.rootCanvas.worldCameraFullPath"
+      ]
+    },
+    {
+      "group": "YouYouCanvasHelper depth cascade",
+      "fieldCount": 24,
+      "fields": [
+        "forms.UI_Dock.canvasHelpers[1].effectiveCanvasSortingOrder",
+        "forms.UI_Dock.canvasHelpers[1].hierarchyPath",
+        "forms.UI_Dock.canvasHelpers[1].m_Depth",
+        "forms.UI_Dock.canvasHelpers[2].effectiveCanvasSortingOrder",
+        "forms.UI_Dock.canvasHelpers[2].hierarchyPath",
+        "forms.UI_Dock.canvasHelpers[2].m_Depth",
+        "forms.UI_Dock.canvasHelpers[3].effectiveCanvasSortingOrder",
+        "forms.UI_Dock.canvasHelpers[3].hierarchyPath",
+        "forms.UI_Dock.canvasHelpers[3].m_Depth",
+        "forms.UI_Dock.canvasHelpers[4].effectiveCanvasSortingOrder",
+        "forms.UI_Dock.canvasHelpers[4].hierarchyPath",
+        "forms.UI_Dock.canvasHelpers[4].m_Depth",
+        "forms.UI_MainPage.canvasHelpers[1].effectiveCanvasSortingOrder",
+        "forms.UI_MainPage.canvasHelpers[1].hierarchyPath",
+        "forms.UI_MainPage.canvasHelpers[1].m_Depth",
+        "forms.UI_MainPage.canvasHelpers[2].effectiveCanvasSortingOrder",
+        "forms.UI_MainPage.canvasHelpers[2].hierarchyPath",
+        "forms.UI_MainPage.canvasHelpers[2].m_Depth",
+        "forms.UI_MainPage.canvasHelpers[3].effectiveCanvasSortingOrder",
+        "forms.UI_MainPage.canvasHelpers[3].hierarchyPath",
+        "forms.UI_MainPage.canvasHelpers[3].m_Depth",
+        "forms.UI_MainPage.canvasHelpers[4].effectiveCanvasSortingOrder",
+        "forms.UI_MainPage.canvasHelpers[4].hierarchyPath",
+        "forms.UI_MainPage.canvasHelpers[4].m_Depth"
+      ]
+    },
+    {
+      "group": "route/world guarded active/sibling state",
+      "fieldCount": 12,
+      "fields": [
+        "guardedNodes.right/node_middle.activeInHierarchy",
+        "guardedNodes.right/node_middle.activeSelf",
+        "guardedNodes.right/node_middle.fullPath",
+        "guardedNodes.right/node_middle.siblingIndex",
+        "guardedNodes.right/node_middle/wanfaWorldNode.activeInHierarchy",
+        "guardedNodes.right/node_middle/wanfaWorldNode.activeSelf",
+        "guardedNodes.right/node_middle/wanfaWorldNode.fullPath",
+        "guardedNodes.right/node_middle/wanfaWorldNode.siblingIndex",
+        "guardedNodes.right/node_middle/wanfaWorldNode/worldwanfaBtn.activeInHierarchy",
+        "guardedNodes.right/node_middle/wanfaWorldNode/worldwanfaBtn.activeSelf",
+        "guardedNodes.right/node_middle/wanfaWorldNode/worldwanfaBtn.fullPath",
+        "guardedNodes.right/node_middle/wanfaWorldNode/worldwanfaBtn.siblingIndex"
+      ]
+    },
+    {
+      "group": "zhuye guarded active/sibling state",
+      "fieldCount": 8,
+      "fields": [
+        "guardedNodes.zhuye_bian.activeInHierarchy",
+        "guardedNodes.zhuye_bian.activeSelf",
+        "guardedNodes.zhuye_bian.fullPath",
+        "guardedNodes.zhuye_bian.siblingIndex",
+        "guardedNodes.zhuye_di1.activeInHierarchy",
+        "guardedNodes.zhuye_di1.activeSelf",
+        "guardedNodes.zhuye_di1.fullPath",
+        "guardedNodes.zhuye_di1.siblingIndex"
+      ]
+    },
+    {
+      "group": "activity slot guarded active/sibling state",
+      "fieldCount": 36,
+      "fields": [
+        "guardedNodes.right/node_act_btn.activeInHierarchy",
+        "guardedNodes.right/node_act_btn.activeSelf",
+        "guardedNodes.right/node_act_btn.fullPath",
+        "guardedNodes.right/node_act_btn.siblingIndex",
+        "guardedNodes.right/node_act_btn/btn_act_1.activeInHierarchy",
+        "guardedNodes.right/node_act_btn/btn_act_1.activeSelf",
+        "guardedNodes.right/node_act_btn/btn_act_1.fullPath",
+        "guardedNodes.right/node_act_btn/btn_act_1.siblingIndex",
+        "guardedNodes.right/node_act_btn/btn_act_2.activeInHierarchy",
+        "guardedNodes.right/node_act_btn/btn_act_2.activeSelf",
+        "guardedNodes.right/node_act_btn/btn_act_2.fullPath",
+        "guardedNodes.right/node_act_btn/btn_act_2.siblingIndex",
+        "guardedNodes.right/node_act_btn/btn_act_3.activeInHierarchy",
+        "guardedNodes.right/node_act_btn/btn_act_3.activeSelf",
+        "guardedNodes.right/node_act_btn/btn_act_3.fullPath",
+        "guardedNodes.right/node_act_btn/btn_act_3.siblingIndex",
+        "guardedNodes.right/node_act_btn/btn_act_4.activeInHierarchy",
+        "guardedNodes.right/node_act_btn/btn_act_4.activeSelf",
+        "guardedNodes.right/node_act_btn/btn_act_4.fullPath",
+        "guardedNodes.right/node_act_btn/btn_act_4.siblingIndex",
+        "guardedNodes.right/node_act_btn/btn_act_5.activeInHierarchy",
+        "guardedNodes.right/node_act_btn/btn_act_5.activeSelf",
+        "guardedNodes.right/node_act_btn/btn_act_5.fullPath",
+        "guardedNodes.right/node_act_btn/btn_act_5.siblingIndex",
+        "guardedNodes.right/node_act_btn/btn_act_6.activeInHierarchy",
+        "guardedNodes.right/node_act_btn/btn_act_6.activeSelf",
+        "guardedNodes.right/node_act_btn/btn_act_6.fullPath",
+        "guardedNodes.right/node_act_btn/btn_act_6.siblingIndex",
+        "guardedNodes.right/node_act_btn/btn_act_7.activeInHierarchy",
+        "guardedNodes.right/node_act_btn/btn_act_7.activeSelf",
+        "guardedNodes.right/node_act_btn/btn_act_7.fullPath",
+        "guardedNodes.right/node_act_btn/btn_act_7.siblingIndex",
+        "guardedNodes.right/node_act_btn/btn_act_8.activeInHierarchy",
+        "guardedNodes.right/node_act_btn/btn_act_8.activeSelf",
+        "guardedNodes.right/node_act_btn/btn_act_8.fullPath",
+        "guardedNodes.right/node_act_btn/btn_act_8.siblingIndex"
+      ]
+    },
+    {
+      "group": "chat/account/currency guarded node state",
+      "fieldCount": 16,
+      "fields": [
+        "guardedNodes.llvChat.activeInHierarchy",
+        "guardedNodes.llvChat.activeSelf",
+        "guardedNodes.llvChat.fullPath",
+        "guardedNodes.llvChat.siblingIndex",
+        "guardedNodes.top/currency_gold.activeInHierarchy",
+        "guardedNodes.top/currency_gold.activeSelf",
+        "guardedNodes.top/currency_gold.fullPath",
+        "guardedNodes.top/currency_gold.siblingIndex",
+        "guardedNodes.top/currency_holy.activeInHierarchy",
+        "guardedNodes.top/currency_holy.activeSelf",
+        "guardedNodes.top/currency_holy.fullPath",
+        "guardedNodes.top/currency_holy.siblingIndex",
+        "guardedNodes.top/profile.activeInHierarchy",
+        "guardedNodes.top/profile.activeSelf",
+        "guardedNodes.top/profile.fullPath",
+        "guardedNodes.top/profile.siblingIndex"
+      ]
+    },
+    {
+      "group": "UI_bg raycast/interactable verification",
+      "fieldCount": 4,
+      "fields": [
+        "uiBg.button.enabled",
+        "uiBg.button.interactable",
+        "uiBg.image.raycastTarget",
+        "uiBg.topGraphicPath"
+      ]
+    },
+    {
+      "group": "activity/account/chat/currency dynamic values",
+      "fieldCount": 30,
+      "fields": [
+        "dynamicRuntime.activitys",
+        "dynamicRuntime.chatState.lastChatType",
+        "dynamicRuntime.chatState.visibleMessages",
+        "dynamicRuntime.clientCallbackOutputs.clientCheckIsOpen",
+        "dynamicRuntime.clientCallbackOutputs.getActNewName",
+        "dynamicRuntime.clientCallbackOutputs.mainPageTouchJumpId",
+        "dynamicRuntime.clientCallbackOutputs.showInMainFunc",
+        "dynamicRuntime.currencyState.gold",
+        "dynamicRuntime.currencyState.holyCrystal",
+        "dynamicRuntime.faceActivitys",
+        "dynamicRuntime.formationState.mainFightValue",
+        "dynamicRuntime.guideState.CurrGuidEnterActId",
+        "dynamicRuntime.guideState.ModulesInit_GuideMgr_isGuide",
+        "dynamicRuntime.localization.keys",
+        "dynamicRuntime.playerInfo.guildId",
+        "dynamicRuntime.playerInfo.head",
+        "dynamicRuntime.playerInfo.headFrame",
+        "dynamicRuntime.playerInfo.level",
+        "dynamicRuntime.playerInfo.name",
+        "dynamicRuntime.playerInfo.playerId",
+        "dynamicRuntime.playerInfo.vip",
+        "dynamicRuntime.redPointState.actSpecificRedPoints",
+        "dynamicRuntime.redPointState.serverRedPointIds",
+        "dynamicRuntime.resources.activitySpine",
+        "dynamicRuntime.resources.tmpFontMaterial",
+        "dynamicRuntime.reviewState.GameEntry_IsCommittee",
+        "dynamicRuntime.reviewState.GameEntry_IsReview",
+        "dynamicRuntime.reviewState.GameTools_IsReview",
+        "dynamicRuntime.timeState.serverMillTimeStamp",
+        "dynamicRuntime.timeState.serverTimeStep"
+      ]
+    },
+    {
+      "group": "runtime TMP/material/mask/stencil renderer state",
+      "fieldCount": 5,
+      "fields": [
+        "runtimeMaskStencil.canvasRendererMaterialCount",
+        "runtimeMaskStencil.maskComponents",
+        "runtimeMaskStencil.rectMask2DComponents",
+        "runtimeMaskStencil.skeletonGraphicCanvasRendererDepth",
+        "runtimeMaskStencil.stencilMaterialStates"
+      ]
+    }
+  ],
+  "templateWithNullPlaceholders": {
+    "schemaVersion": "MAININTERFACE_146_runtime_snapshot_template_v1",
+    "snapshotSource": {
+      "captureMechanism": null,
+      "capturedAt": null,
+      "runtimeBuild": null,
+      "deviceOrEditor": null,
+      "approvedByUser": null
+    },
+    "openStack": {
+      "observedOpenOrder": [],
+      "currentTopForms": [],
+      "ViewMgr_clostEnableLayerView_called": null,
+      "UI_Dock_defaultTab": null
+    },
+    "forms": {
+      "UI_Dock": {
+        "formName": "UI_Dock",
+        "formId": 248,
+        "sourcePrefabPath": "UIPrefabAndRes/MainInterface/Prefabs/UI_Dock",
+        "disableUILayer": true,
+        "activeSelf": null,
+        "activeInHierarchy": null,
+        "parentTransformFullPath": null,
+        "siblingIndex": null,
+        "localPosition": null,
+        "anchoredPosition": null,
+        "sizeDelta": null,
+        "localScale": null,
+        "uiGroup": {
+          "groupId": null,
+          "groupObjectPath": null,
+          "layerObjectPath": null,
+          "baseOrder": null,
+          "sortingCursorBeforeOpen": null,
+          "sortingCursorAfterOpen": null
+        },
+        "rootCanvas": {
+          "sortingLayerID": null,
+          "sortingOrder": null,
+          "sourceSerializedSortingOrder": 100,
+          "overrideSorting": null,
+          "renderMode": null,
+          "worldCameraFullPath": null,
+          "planeDistance": null,
+          "targetDisplay": null
+        },
+        "uiFormBase": {
+          "depth": null,
+          "groupId": null,
+          "disableUILayer": null,
+          "currCanvasSortingOrder": null
+        },
+        "canvasGroup": {
+          "alpha": null,
+          "interactable": null,
+          "blocksRaycasts": null
+        },
+        "canvasHelpers": [],
+        "runtimeMaskStencil": {
+          "maskComponents": [],
+          "rectMask2DComponents": [],
+          "stencilMaterialStates": [],
+          "canvasRendererMaterialCount": null,
+          "skeletonGraphicCanvasRendererDepth": null
+        }
+      },
+      "UI_MainPage": {
+        "formName": "UI_MainPage",
+        "formId": 249,
+        "sourcePrefabPath": "UIPrefabAndRes/MainInterface/Prefabs/UI_MainInterface",
+        "disableUILayer": true,
+        "activeSelf": null,
+        "activeInHierarchy": null,
+        "parentTransformFullPath": null,
+        "siblingIndex": null,
+        "localPosition": null,
+        "anchoredPosition": null,
+        "sizeDelta": null,
+        "localScale": null,
+        "uiGroup": {
+          "groupId": null,
+          "groupObjectPath": null,
+          "layerObjectPath": null,
+          "baseOrder": null,
+          "sortingCursorBeforeOpen": null,
+          "sortingCursorAfterOpen": null
+        },
+        "rootCanvas": {
+          "sortingLayerID": null,
+          "sortingOrder": null,
+          "sourceSerializedSortingOrder": 0,
+          "overrideSorting": null,
+          "renderMode": null,
+          "worldCameraFullPath": null,
+          "planeDistance": null,
+          "targetDisplay": null
+        },
+        "uiFormBase": {
+          "depth": null,
+          "groupId": null,
+          "disableUILayer": null,
+          "currCanvasSortingOrder": null
+        },
+        "canvasGroup": {
+          "alpha": null,
+          "interactable": null,
+          "blocksRaycasts": null
+        },
+        "canvasHelpers": [],
+        "runtimeMaskStencil": {
+          "maskComponents": [],
+          "rectMask2DComponents": [],
+          "stencilMaterialStates": [],
+          "canvasRendererMaterialCount": null,
+          "skeletonGraphicCanvasRendererDepth": null
+        }
+      }
+    },
+    "guardedNodes": {
+      "zhuye_di1": {
+        "fullPath": null,
+        "activeSelf": null,
+        "activeInHierarchy": null,
+        "siblingIndex": null,
+        "canvasSortingOrder": null
+      },
+      "zhuye_bian": {
+        "fullPath": null,
+        "activeSelf": null,
+        "activeInHierarchy": null,
+        "siblingIndex": null,
+        "canvasSortingOrder": null
+      },
+      "right/node_middle": {
+        "fullPath": null,
+        "activeSelf": null,
+        "activeInHierarchy": null,
+        "siblingIndex": null,
+        "canvasSortingOrder": null
+      },
+      "right/node_middle/wanfaWorldNode": {
+        "fullPath": null,
+        "activeSelf": null,
+        "activeInHierarchy": null,
+        "siblingIndex": null,
+        "canvasSortingOrder": null
+      },
+      "right/node_middle/wanfaWorldNode/worldwanfaBtn": {
+        "fullPath": null,
+        "activeSelf": null,
+        "activeInHierarchy": null,
+        "siblingIndex": null,
+        "canvasSortingOrder": null
+      },
+      "right/node_act_btn": {
+        "fullPath": null,
+        "activeSelf": null,
+        "activeInHierarchy": null,
+        "siblingIndex": null,
+        "canvasSortingOrder": null
+      },
+      "right/node_act_btn/btn_act_1": {
+        "fullPath": null,
+        "activeSelf": null,
+        "activeInHierarchy": null,
+        "siblingIndex": null,
+        "canvasSortingOrder": null
+      },
+      "right/node_act_btn/btn_act_2": {
+        "fullPath": null,
+        "activeSelf": null,
+        "activeInHierarchy": null,
+        "siblingIndex": null,
+        "canvasSortingOrder": null
+      },
+      "right/node_act_btn/btn_act_3": {
+        "fullPath": null,
+        "activeSelf": null,
+        "activeInHierarchy": null,
+        "siblingIndex": null,
+        "canvasSortingOrder": null
+      },
+      "right/node_act_btn/btn_act_4": {
+        "fullPath": null,
+        "activeSelf": null,
+        "activeInHierarchy": null,
+        "siblingIndex": null,
+        "canvasSortingOrder": null
+      },
+      "right/node_act_btn/btn_act_5": {
+        "fullPath": null,
+        "activeSelf": null,
+        "activeInHierarchy": null,
+        "siblingIndex": null,
+        "canvasSortingOrder": null
+      },
+      "right/node_act_btn/btn_act_6": {
+        "fullPath": null,
+        "activeSelf": null,
+        "activeInHierarchy": null,
+        "siblingIndex": null,
+        "canvasSortingOrder": null
+      },
+      "right/node_act_btn/btn_act_7": {
+        "fullPath": null,
+        "activeSelf": null,
+        "activeInHierarchy": null,
+        "siblingIndex": null,
+        "canvasSortingOrder": null
+      },
+      "right/node_act_btn/btn_act_8": {
+        "fullPath": null,
+        "activeSelf": null,
+        "activeInHierarchy": null,
+        "siblingIndex": null,
+        "canvasSortingOrder": null
+      },
+      "btn_discord": {
+        "fullPath": null,
+        "activeSelf": null,
+        "activeInHierarchy": null,
+        "siblingIndex": null,
+        "canvasSortingOrder": null
+      },
+      "llvChat": {
+        "fullPath": null,
+        "activeSelf": null,
+        "activeInHierarchy": null,
+        "siblingIndex": null,
+        "canvasSortingOrder": null
+      },
+      "top/profile": {
+        "fullPath": null,
+        "activeSelf": null,
+        "activeInHierarchy": null,
+        "siblingIndex": null,
+        "canvasSortingOrder": null
+      },
+      "top/currency_gold": {
+        "fullPath": null,
+        "activeSelf": null,
+        "activeInHierarchy": null,
+        "siblingIndex": null,
+        "canvasSortingOrder": null
+      },
+      "top/currency_holy": {
+        "fullPath": null,
+        "activeSelf": null,
+        "activeInHierarchy": null,
+        "siblingIndex": null,
+        "canvasSortingOrder": null
+      },
+      "UI_bg": {
+        "fullPath": null,
+        "activeSelf": null,
+        "activeInHierarchy": null,
+        "siblingIndex": null,
+        "canvasSortingOrder": null
+      }
+    },
+    "uiBg": {
+      "image": {
+        "raycastTarget": null,
+        "enabled": null
+      },
+      "button": {
+        "interactable": null,
+        "enabled": null
+      },
+      "topGraphicPath": null
+    },
+    "dynamicRuntime": {
+      "activitys": null,
+      "faceActivitys": null,
+      "playerInfo": {
+        "level": null,
+        "vip": null,
+        "playerId": null,
+        "name": null,
+        "head": null,
+        "headFrame": null,
+        "guildId": null
+      },
+      "redPointState": {
+        "serverRedPointIds": null,
+        "actSpecificRedPoints": null
+      },
+      "reviewState": {
+        "GameTools_IsReview": null,
+        "GameEntry_IsReview": null,
+        "GameEntry_IsCommittee": null
+      },
+      "guideState": {
+        "ModulesInit_GuideMgr_isGuide": null,
+        "CurrGuidEnterActId": null
+      },
+      "timeState": {
+        "serverTimeStep": null,
+        "serverMillTimeStamp": null
+      },
+      "clientCallbackOutputs": {
+        "showInMainFunc": null,
+        "clientCheckIsOpen": null,
+        "getActNewName": null,
+        "mainPageTouchJumpId": null
+      },
+      "localization": {
+        "language": null,
+        "keys": null
+      },
+      "resources": {
+        "activitySpine": null,
+        "tmpFontMaterial": null
+      },
+      "chatState": {
+        "lastChatType": null,
+        "visibleMessages": null
+      },
+      "currencyState": {
+        "gold": null,
+        "holyCrystal": null
+      },
+      "formationState": {
+        "mainFightValue": null
+      }
+    }
+  }
+}

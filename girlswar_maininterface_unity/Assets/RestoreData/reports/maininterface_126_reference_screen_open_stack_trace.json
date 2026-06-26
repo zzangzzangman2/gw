@@ -1,0 +1,69 @@
+{
+  "generatedAt": "2026-06-26",
+  "restoredClaim": false,
+  "reference": "C:\\Users\\godho\\.codex\\attachments\\e607fc34-b674-4516-b051-8d396cd6df06\\image-1.png",
+  "ui124Capture": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_maininterface_unity\\Assets\\RestoreCaptures\\maininterface_ui124_hero1005_spine_1680x720.png",
+  "ui126OldRootCandidateCapture": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_maininterface_unity\\Assets\\RestoreCaptures\\maininterface_ui126_oldroot_hero1005_candidate_1680x720.png",
+  "contactSheet": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\maininterface\\MAININTERFACE_126_REFERENCE_DIFF_CONTACT.png",
+  "ui126OldRootClickSummary": {
+    "generatedAt": "2026-06-26 01:43:07",
+    "scenePath": "Assets/Scenes/MainInterface_UI126_OldRootReferenceCandidate.unity",
+    "csv": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_maininterface_unity\\Assets\\RestoreData\\reports\\maininterface_126_oldroot_click_validation.csv",
+    "json": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_maininterface_unity\\Assets\\RestoreData\\reports\\maininterface_126_oldroot_click_validation_summary.json",
+    "totalButtons": 55,
+    "activeButtons": 44,
+    "activeInteractableButtons": 44,
+    "raycastClickableButtons": 43,
+    "raycastBlockedButtons": 1
+  },
+  "ui126OldRootBlockedClicks": [
+    {
+      "buttonName": "btn_discord__-4707263110286473242",
+      "hierarchyPath": "Canvas_MainInterface_1280x720/MainInterface_Root_From_RectTransform_CSV/UI_MainInterface_old__2475216337245998118/left__8354406432209300530/bg_juese__-2194597288458085354/btn_discord__-4707263110286473242",
+      "activeInHierarchy": "True",
+      "interactable": "True",
+      "targetGraphicReady": "True",
+      "screenX": "985.063",
+      "screenY": "713.087",
+      "raycastHitCount": "3",
+      "raycastTopDepth": "131",
+      "raycastTopWithinButton": "False",
+      "raycastClickable": "False",
+      "raycastTopObject": "Canvas_MainInterface_1280x720/MainInterface_Root_From_RectTransform_CSV/UI_MainInterface_old__2475216337245998118/right__-7547578691690053275/node_act_btn__-2702129779362243929/btn_act_12__2652907961449290088/btn_act__6358558666799476393"
+    }
+  ],
+  "rootCandidates": [
+    {
+      "rootName": "UI_MainInterface",
+      "rootRectId": "5568884429252053541",
+      "nodeCount": 806,
+      "activeNodeCount": 540,
+      "hasLuaMainPageComponent": "yes",
+      "hasAnimatorUI_MainInterface": "yes",
+      "evidence": "UnityPy component trace: both roots contain UI_MainPage.bytes MonoBehaviour and UI_MainInterface Animator controller"
+    },
+    {
+      "rootName": "UI_MainInterface_old",
+      "rootRectId": "2475216337245998118",
+      "nodeCount": 419,
+      "activeNodeCount": 333,
+      "hasLuaMainPageComponent": "yes",
+      "hasAnimatorUI_MainInterface": "yes",
+      "evidence": "UnityPy component trace: both roots contain UI_MainPage.bytes MonoBehaviour and UI_MainInterface Animator controller"
+    }
+  ],
+  "conclusions": [
+    "Reference is unlikely to be the current UI124 new-root-only reconstruction because current root includes the route/world node_middle cluster absent from the reference.",
+    "The original prefab contains a second root UI_MainInterface_old with the same UI_MainPage Lua component and UI_MainInterface Animator controller.",
+    "UI_MainInterface_old has hierarchy matches for reference right chat/social stack, left story/task/banner stack, and bottom/navigation stack, and does not expose the new-root node_middle/wanfaWorldNode route cluster.",
+    "UI126 old-root candidate capture confirms the old-root layout family is closer structurally, but it is not restored: UI_bg remains inactive/black, activity placeholders and missing runtime data remain visible, and pixel diff is still high.",
+    "No source-backed patch is applied to hide zhuye_di1/zhuye_bian or the new-root route cluster in the production/restored scene."
+  ],
+  "nextBlockers": [
+    "Determine the original runtime selection rule between UI_MainInterface and UI_MainInterface_old roots. Both roots carry UI_MainPage.bytes and the same Animator controller.",
+    "Resolve old-root UI_bg active/runtime LoadSpriteWithFullPath behavior for PaintingBG_1005 without forcing a coordinate-only or fake background patch.",
+    "Trace ActMgr/UI_MainPageActItem runtime data for which right activity icons should be instantiated/active in the reference account state.",
+    "Map old-root bottom button sprites/text/handlers more completely before using it as the main restore root.",
+    "Resolve the UI126 old-root click/layer blocker: btn_discord center is topped by right/node_act_btn/btn_act_12 in the candidate scene."
+  ]
+}

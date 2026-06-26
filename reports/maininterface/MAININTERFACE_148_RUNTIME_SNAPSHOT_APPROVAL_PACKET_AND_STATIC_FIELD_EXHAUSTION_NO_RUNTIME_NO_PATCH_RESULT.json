@@ -1,0 +1,54 @@
+{
+  "generatedAt": "2026-06-26T06:24:11",
+  "restoredClaim": false,
+  "scenePatchApplied": false,
+  "runtimeInstrumentationExecuted": false,
+  "snapshotValuesInvented": false,
+  "staticPatchApplied": false,
+  "requiredRuntimeFieldsCount": 197,
+  "staticKnownFieldsCount": 8,
+  "staticallyInferableNewFieldsCount": 0,
+  "staticallyInferableRuntimeStillRequiredFieldsCount": 16,
+  "forbiddenGuessFieldsCount": 197,
+  "approvalRequiredForRuntimeDump": true,
+  "sourceExhaustionDecision": "no_new_static_patchable_fields_found; UI146 static identity and partial source fields are exhausted",
+  "approvalPacketWritten": true,
+  "approvalPacketPath": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\maininterface\\MAININTERFACE_148_RUNTIME_SNAPSHOT_APPROVAL_PACKET_AND_STATIC_FIELD_EXHAUSTION_NO_RUNTIME_NO_PATCH_approval_packet_template.json",
+  "referenceAspectContext": {
+    "attachedReferenceImage": 2.243346,
+    "referenceImageWidth": 1180,
+    "referenceImageHeight": 526,
+    "referenceMp4": 2.2456,
+    "referenceMp4Width": 1280,
+    "referenceMp4Height": 570
+  },
+  "aspectMismatchContributor": "minor_to_moderate_coordinate_comparison_contributor_not_primary_root_cause",
+  "nextBlocker": "Need approved real runtime snapshot/dump using the UI148 approval packet: UI_Dock/UI_MainPage parent/group/depth/CanvasHelper cascade, guarded node active/sibling state, UI_bg raycast state, runtime mask/stencil, and UI130-compatible activity/account/chat/currency values.",
+  "outputs": {
+    "md": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\maininterface\\MAININTERFACE_148_RUNTIME_SNAPSHOT_APPROVAL_PACKET_AND_STATIC_FIELD_EXHAUSTION_NO_RUNTIME_NO_PATCH_RESULT.md",
+    "json": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\maininterface\\MAININTERFACE_148_RUNTIME_SNAPSHOT_APPROVAL_PACKET_AND_STATIC_FIELD_EXHAUSTION_NO_RUNTIME_NO_PATCH_RESULT.json",
+    "minimalChecklistCsv": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\maininterface\\MAININTERFACE_148_RUNTIME_SNAPSHOT_APPROVAL_PACKET_AND_STATIC_FIELD_EXHAUSTION_NO_RUNTIME_NO_PATCH_minimal_runtime_snapshot_field_checklist.csv",
+    "classificationCsv": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\maininterface\\MAININTERFACE_148_RUNTIME_SNAPSHOT_APPROVAL_PACKET_AND_STATIC_FIELD_EXHAUSTION_NO_RUNTIME_NO_PATCH_static_known_vs_runtime_required_classification_matrix.csv",
+    "riskMatrixCsv": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\maininterface\\MAININTERFACE_148_RUNTIME_SNAPSHOT_APPROVAL_PACKET_AND_STATIC_FIELD_EXHAUSTION_NO_RUNTIME_NO_PATCH_mismatch_unblocked_by_field_risk_matrix.csv",
+    "approvalPacketJson": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\maininterface\\MAININTERFACE_148_RUNTIME_SNAPSHOT_APPROVAL_PACKET_AND_STATIC_FIELD_EXHAUSTION_NO_RUNTIME_NO_PATCH_approval_packet_template.json"
+  },
+  "changedFiles": [
+    "C:\\Users\\godho\\Downloads\\girlswar\\reports\\maininterface\\MAININTERFACE_148_RUNTIME_SNAPSHOT_APPROVAL_PACKET_AND_STATIC_FIELD_EXHAUSTION_NO_RUNTIME_NO_PATCH_RESULT.md",
+    "C:\\Users\\godho\\Downloads\\girlswar\\reports\\maininterface\\MAININTERFACE_148_RUNTIME_SNAPSHOT_APPROVAL_PACKET_AND_STATIC_FIELD_EXHAUSTION_NO_RUNTIME_NO_PATCH_RESULT.json",
+    "C:\\Users\\godho\\Downloads\\girlswar\\reports\\maininterface\\MAININTERFACE_148_RUNTIME_SNAPSHOT_APPROVAL_PACKET_AND_STATIC_FIELD_EXHAUSTION_NO_RUNTIME_NO_PATCH_minimal_runtime_snapshot_field_checklist.csv",
+    "C:\\Users\\godho\\Downloads\\girlswar\\reports\\maininterface\\MAININTERFACE_148_RUNTIME_SNAPSHOT_APPROVAL_PACKET_AND_STATIC_FIELD_EXHAUSTION_NO_RUNTIME_NO_PATCH_static_known_vs_runtime_required_classification_matrix.csv",
+    "C:\\Users\\godho\\Downloads\\girlswar\\reports\\maininterface\\MAININTERFACE_148_RUNTIME_SNAPSHOT_APPROVAL_PACKET_AND_STATIC_FIELD_EXHAUSTION_NO_RUNTIME_NO_PATCH_mismatch_unblocked_by_field_risk_matrix.csv",
+    "C:\\Users\\godho\\Downloads\\girlswar\\reports\\maininterface\\MAININTERFACE_148_RUNTIME_SNAPSHOT_APPROVAL_PACKET_AND_STATIC_FIELD_EXHAUSTION_NO_RUNTIME_NO_PATCH_approval_packet_template.json",
+    "C:\\Users\\godho\\Downloads\\girlswar\\_restore_tools\\scripts\\maininterface148_runtime_snapshot_approval_packet.py"
+  ],
+  "guardrailsTouched": [],
+  "commandPolicy": {
+    "rootCmdCount": 1,
+    "rootCmdFiles": [
+      "00_COMMAND_CENTER.cmd"
+    ],
+    "restoreToolsDirectCmdCount": 0,
+    "restoreToolsDirectCmdFiles": [],
+    "policySatisfied": true
+  }
+}

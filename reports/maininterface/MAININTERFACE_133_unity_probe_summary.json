@@ -1,0 +1,18 @@
+﻿{
+    "generatedAt": "2026-06-26 03:15:17",
+    "restoredClaim": false,
+    "scenePatchApplied": false,
+    "candidatePatchApplied": false,
+    "scenePath": "Assets/Scenes/MainInterface_UI126_OldRootReferenceCandidate.unity",
+    "heroBgProbeCsv": "C:/Users/godho/Downloads/girlswar/reports/maininterface/MAININTERFACE_133_hero_bg_probe.csv",
+    "bottomNavProbeCsv": "C:/Users/godho/Downloads/girlswar/reports/maininterface/MAININTERFACE_133_bottom_nav_probe.csv",
+    "heroBgRows": 422,
+    "bottomNavRows": 20,
+    "activeBottomNavRows": 20,
+    "activeBottomButtons": 3,
+    "uiBgRaycastTargets": 1,
+    "uiTouchSpineActiveRows": 1,
+    "heroSkeletonRows": 1,
+    "decision": "probe_only_no_coordinate_patch",
+    "noPatchReason": "UI133 found no new source-backed static transform/layout rule for Hero1005 homePara or bottom navigation. homePara=[1,0,0] and BG1005 loading are source-backed, but UIUtil.GetPlayerBigSpineAll transform semantics and bottom nav runtime/Animator layout state remain probe-only."
+}

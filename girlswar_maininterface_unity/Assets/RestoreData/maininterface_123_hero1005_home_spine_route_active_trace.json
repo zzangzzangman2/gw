@@ -1,0 +1,3952 @@
+{
+  "generatedAt": "2026-06-26T01:00:44",
+  "verdict": "not_restored_no_visual_patch_applied",
+  "reference": {
+    "path": "C:\\Users\\godho\\.codex\\attachments\\e607fc34-b674-4516-b051-8d396cd6df06\\image-1.png",
+    "exists": true,
+    "bytes": 1233287,
+    "size": [
+      1180,
+      526
+    ],
+    "meanRgb": [
+      150.71,
+      125.425,
+      137.716
+    ],
+    "meanAbsDiffVsReference": 0.0,
+    "classification": "possibly_close"
+  },
+  "capture": {
+    "path": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_maininterface_unity\\Assets\\RestoreCaptures\\maininterface_restored_1680x720.png",
+    "exists": true,
+    "bytes": 1333141,
+    "size": [
+      1680,
+      720
+    ],
+    "meanRgb": [
+      120.03,
+      116.238,
+      140.495
+    ],
+    "meanAbsDiffVsReference": 65.733,
+    "classification": "mismatch"
+  },
+  "rectState": [
+    {
+      "key": "UI_MainInterface",
+      "pathId": "5568884429252053541",
+      "name": "UI_MainInterface",
+      "gameObjectId": "-883079703027215962",
+      "active": "True",
+      "fatherId": "0",
+      "siblingIndex": null,
+      "anchoredPosition": [
+        "0.0",
+        "0.0"
+      ],
+      "sizeDelta": [
+        "0.0",
+        "0.0"
+      ],
+      "localScale": [
+        "0.0",
+        "0.0",
+        "0.0"
+      ],
+      "childCount": 15,
+      "missing": false
+    },
+    {
+      "key": "UI_bg",
+      "pathId": "-7723620072473078182",
+      "name": "UI_bg",
+      "gameObjectId": "-1457103517121630268",
+      "active": "True",
+      "fatherId": "5568884429252053541",
+      "siblingIndex": 0,
+      "anchoredPosition": [
+        "0.0",
+        "0.0"
+      ],
+      "sizeDelta": [
+        "1680.0",
+        "720.0"
+      ],
+      "localScale": [
+        "1.0",
+        "1.0",
+        "1.0"
+      ],
+      "childCount": 0,
+      "missing": false
+    },
+    {
+      "key": "UI_heroSpine",
+      "pathId": "-5284402592931468190",
+      "name": "UI_heroSpine",
+      "gameObjectId": "6569245046781814939",
+      "active": "True",
+      "fatherId": "5568884429252053541",
+      "siblingIndex": 1,
+      "anchoredPosition": [
+        "0.0",
+        "0.0"
+      ],
+      "sizeDelta": [
+        "0.0",
+        "0.0"
+      ],
+      "localScale": [
+        "1.0",
+        "1.0",
+        "1.0"
+      ],
+      "childCount": 0,
+      "missing": false
+    },
+    {
+      "key": "UI_touchSpine",
+      "pathId": "718716608411067892",
+      "name": "UI_touchSpine",
+      "gameObjectId": "-1874286104444283317",
+      "active": "True",
+      "fatherId": "5568884429252053541",
+      "siblingIndex": 2,
+      "anchoredPosition": [
+        "-61.0",
+        "-28.0"
+      ],
+      "sizeDelta": [
+        "650.0",
+        "400.0"
+      ],
+      "localScale": [
+        "1.0",
+        "1.0",
+        "1.0"
+      ],
+      "childCount": 0,
+      "missing": false
+    },
+    {
+      "key": "right",
+      "pathId": "6922878451781464554",
+      "name": "right",
+      "gameObjectId": "9014236583741273727",
+      "active": "True",
+      "fatherId": "5568884429252053541",
+      "siblingIndex": 4,
+      "anchoredPosition": [
+        "0.0",
+        "0.0"
+      ],
+      "sizeDelta": [
+        "0.0",
+        "0.0"
+      ],
+      "localScale": [
+        "1.0",
+        "1.0",
+        "1.0"
+      ],
+      "childCount": 7,
+      "missing": false
+    },
+    {
+      "key": "node_middle",
+      "pathId": "9056630568254389742",
+      "name": "node_middle",
+      "gameObjectId": "8814341121281567741",
+      "active": "True",
+      "fatherId": "6922878451781464554",
+      "siblingIndex": 4,
+      "anchoredPosition": [
+        "-135.0",
+        "-100.0"
+      ],
+      "sizeDelta": [
+        "0.0",
+        "0.0"
+      ],
+      "localScale": [
+        "1.0",
+        "1.0",
+        "1.0"
+      ],
+      "childCount": 5,
+      "missing": false
+    },
+    {
+      "key": "wanfaWorldNode",
+      "pathId": "-3820167396480157270",
+      "name": "wanfaWorldNode",
+      "gameObjectId": "-7125569857159217321",
+      "active": "True",
+      "fatherId": "9056630568254389742",
+      "siblingIndex": 0,
+      "anchoredPosition": [
+        "-12.0",
+        "87.0"
+      ],
+      "sizeDelta": [
+        "100.0",
+        "100.0"
+      ],
+      "localScale": [
+        "1.0",
+        "1.0",
+        "1.0"
+      ],
+      "childCount": 6,
+      "missing": false
+    },
+    {
+      "key": "worldwanfaBtn",
+      "pathId": "3512211464843089861",
+      "name": "worldwanfaBtn",
+      "gameObjectId": "2331390164297400090",
+      "active": "True",
+      "fatherId": "-3820167396480157270",
+      "siblingIndex": 0,
+      "anchoredPosition": [
+        "-101.0",
+        "1.0"
+      ],
+      "sizeDelta": [
+        "253.0",
+        "253.0"
+      ],
+      "localScale": [
+        "1.0",
+        "1.0",
+        "1.0"
+      ],
+      "childCount": 1,
+      "missing": false
+    },
+    {
+      "key": "mian_wanfa_item_1",
+      "pathId": "51920382737909704",
+      "name": "UI_Main_wanfa_item_1",
+      "gameObjectId": "2741717018572241449",
+      "active": "True",
+      "fatherId": "9056630568254389742",
+      "siblingIndex": 1,
+      "anchoredPosition": [
+        "-246.0",
+        "192.0"
+      ],
+      "sizeDelta": [
+        "100.0",
+        "100.0"
+      ],
+      "localScale": [
+        "1.0",
+        "1.0",
+        "1.0"
+      ],
+      "childCount": 9,
+      "missing": false
+    },
+    {
+      "key": "mian_wanfa_item_2",
+      "pathId": "-3930377403474185176",
+      "name": "UI_Main_wanfa_item_2",
+      "gameObjectId": "3652740288344327392",
+      "active": "True",
+      "fatherId": "9056630568254389742",
+      "siblingIndex": 2,
+      "anchoredPosition": [
+        "18.0",
+        "192.0"
+      ],
+      "sizeDelta": [
+        "100.0",
+        "100.0"
+      ],
+      "localScale": [
+        "1.0",
+        "1.0",
+        "1.0"
+      ],
+      "childCount": 9,
+      "missing": false
+    },
+    {
+      "key": "mian_wanfa_item_3",
+      "pathId": "1745568030950951925",
+      "name": "UI_Main_wanfa_item_3",
+      "gameObjectId": "-5284405456658630512",
+      "active": "True",
+      "fatherId": "9056630568254389742",
+      "siblingIndex": 3,
+      "anchoredPosition": [
+        "-246.0",
+        "-14.0"
+      ],
+      "sizeDelta": [
+        "100.0",
+        "100.0"
+      ],
+      "localScale": [
+        "1.0",
+        "1.0",
+        "1.0"
+      ],
+      "childCount": 9,
+      "missing": false
+    },
+    {
+      "key": "mian_wanfa_item_4",
+      "pathId": "7836085562230756963",
+      "name": "UI_Main_wanfa_item_4",
+      "gameObjectId": "7024431992645423050",
+      "active": "True",
+      "fatherId": "9056630568254389742",
+      "siblingIndex": 4,
+      "anchoredPosition": [
+        "18.0",
+        "-14.0"
+      ],
+      "sizeDelta": [
+        "100.0",
+        "100.0"
+      ],
+      "localScale": [
+        "1.0",
+        "1.0",
+        "1.0"
+      ],
+      "childCount": 9,
+      "missing": false
+    }
+  ],
+  "spriteState": [
+    {
+      "componentPathId": "-9119517270372078976",
+      "gameObjectId": "-739438087074354188",
+      "name": "UI_bg",
+      "status": "ready",
+      "assetPath": "Assets/RestoredSprites/maininterface/download_uicommonbg_uicommonbg2/fid9_4648636570285078741_noalphabg_BG_changjing_2.png",
+      "colorA": "1.0",
+      "raycastTarget": "1",
+      "preserveAspect": "0"
+    },
+    {
+      "componentPathId": "-6756223837567446444",
+      "gameObjectId": "2247224239628523787",
+      "name": "UI_heroSpine",
+      "status": "empty_sprite_ref",
+      "assetPath": "",
+      "colorA": "0.0",
+      "raycastTarget": "1",
+      "preserveAspect": "0"
+    },
+    {
+      "componentPathId": "-5671083051537636857",
+      "gameObjectId": "6569245046781814939",
+      "name": "UI_heroSpine",
+      "status": "empty_sprite_ref",
+      "assetPath": "",
+      "colorA": "0.0",
+      "raycastTarget": "1",
+      "preserveAspect": "0"
+    },
+    {
+      "componentPathId": "3767434549272607040",
+      "gameObjectId": "3101055438495186894",
+      "name": "UI_touchSpine",
+      "status": "empty_sprite_ref",
+      "assetPath": "",
+      "colorA": "0.0",
+      "raycastTarget": "1",
+      "preserveAspect": "0"
+    },
+    {
+      "componentPathId": "5349096810287139907",
+      "gameObjectId": "-1874286104444283317",
+      "name": "UI_touchSpine",
+      "status": "empty_sprite_ref",
+      "assetPath": "",
+      "colorA": "0.0",
+      "raycastTarget": "1",
+      "preserveAspect": "0"
+    },
+    {
+      "componentPathId": "6259596902678607660",
+      "gameObjectId": "-1457103517121630268",
+      "name": "UI_bg",
+      "status": "ready",
+      "assetPath": "Assets/RestoredSprites/maininterface/download_uicommonbg_uicommonbg2/fid9_4648636570285078741_noalphabg_BG_changjing_2.png",
+      "colorA": "0.0",
+      "raycastTarget": "1",
+      "preserveAspect": "0"
+    }
+  ],
+  "overrideHits": {
+    "visualOverrides": [
+      {
+        "target_kind": "Image",
+        "component_path_id": "6259596902678607660",
+        "game_object_id": "-1457103517121630268",
+        "parent_game_object_id": "",
+        "create_child_name": "",
+        "game_object_name": "UI_bg",
+        "sprite_asset_path": "Assets/RestoredSprites/maininterface/runtime_dynamic/runtime_UI_bg_noalphabg_PaintingBG_1005.png",
+        "color_r": "1",
+        "color_g": "1",
+        "color_b": "1",
+        "color_a": "1",
+        "preserve_aspect": "0",
+        "image_type": "0",
+        "raycast_target": "",
+        "anchored_pos_x": "",
+        "anchored_pos_y": "",
+        "size_delta_x": "",
+        "size_delta_y": "",
+        "local_scale_x": "",
+        "local_scale_y": "",
+        "local_scale_z": "",
+        "reason": "UI_MainPage refreshMiddle line 1559-1560 loads UI_bg from UIUtil.GetPaintingBg(heroId); reference main lobby matches hero/background id 1005"
+      },
+      {
+        "target_kind": "RouteRendererFallbackLayer",
+        "component_path_id": "",
+        "game_object_id": "",
+        "parent_game_object_id": "2331390164297400090",
+        "create_child_name": "route_fallback_zhuye_di1",
+        "game_object_name": "worldwanfaBtn/route_fallback_zhuye_di1",
+        "sprite_asset_path": "Assets/RestoreData/route_renderer_fallbacks/Spine_shijieanniu_zhuye_di1.png",
+        "color_r": "1",
+        "color_g": "1",
+        "color_b": "1",
+        "color_a": "1",
+        "preserve_aspect": "1",
+        "image_type": "0",
+        "raycast_target": "0",
+        "anchored_pos_x": "0",
+        "anchored_pos_y": "0",
+        "size_delta_x": "253",
+        "size_delta_y": "253",
+        "local_scale_x": "1",
+        "local_scale_y": "1",
+        "local_scale_z": "1",
+        "reason": "route renderer multi-layer fallback: original worldwanfaBtn RectTransform is 253x253; Spine_shijieanniu atlas region zhuye_di1 is 253x253 and is the matching base disk/frame layer"
+      },
+      {
+        "target_kind": "RouteRendererFallbackLayer",
+        "component_path_id": "",
+        "game_object_id": "",
+        "parent_game_object_id": "2331390164297400090",
+        "create_child_name": "route_fallback_diqiu",
+        "game_object_name": "worldwanfaBtn/route_fallback_diqiu",
+        "sprite_asset_path": "Assets/RestoreData/route_renderer_fallbacks/Spine_shijieanniu_diqiu.png",
+        "color_r": "1",
+        "color_g": "1",
+        "color_b": "1",
+        "color_a": "1",
+        "preserve_aspect": "1",
+        "image_type": "0",
+        "raycast_target": "0",
+        "anchored_pos_x": "0",
+        "anchored_pos_y": "0",
+        "size_delta_x": "253",
+        "size_delta_y": "253",
+        "local_scale_x": "1",
+        "local_scale_y": "1",
+        "local_scale_z": "1",
+        "reason": "route renderer multi-layer fallback: original active child spine_diqiu is a SkeletonGraphic under worldwanfaBtn; atlas region diqiu is the globe attachment, normalized into the 253x253 worldwanfaBtn rect until Spine runtime transforms are restored"
+      },
+      {
+        "target_kind": "RouteRendererFallbackLayer",
+        "component_path_id": "",
+        "game_object_id": "",
+        "parent_game_object_id": "2331390164297400090",
+        "create_child_name": "route_fallback_zhuye_bian",
+        "game_object_name": "worldwanfaBtn/route_fallback_zhuye_bian",
+        "sprite_asset_path": "Assets/RestoreData/route_renderer_fallbacks/Spine_shijieanniu_zhuye_bian.png",
+        "color_r": "1",
+        "color_g": "1",
+        "color_b": "1",
+        "color_a": "1",
+        "preserve_aspect": "1",
+        "image_type": "0",
+        "raycast_target": "0",
+        "anchored_pos_x": "0",
+        "anchored_pos_y": "0",
+        "size_delta_x": "238",
+        "size_delta_y": "238",
+        "local_scale_x": "1",
+        "local_scale_y": "1",
+        "local_scale_z": "1",
+        "reason": "route renderer multi-layer fallback: Spine_shijieanniu atlas region zhuye_bian is the 238x238 border/rim layer from the same world button skeleton; centered under worldwanfaBtn so route text siblings remain above it"
+      }
+    ],
+    "raycastOverrides": [
+      {
+        "target_kind": "GameObject",
+        "component_path_id": "",
+        "game_object_id": "-7965213352486447679",
+        "game_object_name": "btn_act_1",
+        "active": "0",
+        "raycast_target": "",
+        "button_interactable": "",
+        "reason": "inactive duplicate right activity list item"
+      },
+      {
+        "target_kind": "GameObject",
+        "component_path_id": "",
+        "game_object_id": "3316646708478895597",
+        "game_object_name": "btn_act_2",
+        "active": "0",
+        "raycast_target": "",
+        "button_interactable": "",
+        "reason": "inactive duplicate right activity list item"
+      },
+      {
+        "target_kind": "GameObject",
+        "component_path_id": "",
+        "game_object_id": "7843091743582124696",
+        "game_object_name": "btn_act_3",
+        "active": "0",
+        "raycast_target": "",
+        "button_interactable": "",
+        "reason": "inactive duplicate right activity list item"
+      },
+      {
+        "target_kind": "GameObject",
+        "component_path_id": "",
+        "game_object_id": "-4015285089649928529",
+        "game_object_name": "btn_act_4",
+        "active": "0",
+        "raycast_target": "",
+        "button_interactable": "",
+        "reason": "inactive duplicate right activity list item"
+      },
+      {
+        "target_kind": "Graphic",
+        "component_path_id": "5349096810287139907",
+        "game_object_id": "-1874286104444283317",
+        "game_object_name": "UI_touchSpine",
+        "active": "",
+        "raycast_target": "0",
+        "button_interactable": "",
+        "reason": "transparent touch layer blocks background button evidence"
+      },
+      {
+        "target_kind": "Graphic",
+        "component_path_id": "-5671083051537636857",
+        "game_object_id": "6569245046781814939",
+        "game_object_name": "UI_heroSpine",
+        "active": "",
+        "raycast_target": "0",
+        "button_interactable": "",
+        "reason": "empty runtime hero mount image blocks background button after full-screen root restore"
+      }
+    ],
+    "routeRectOverrides": []
+  },
+  "bundleAssets": [
+    {
+      "source": "assetbundle",
+      "bundle": "download/live2d/1005.assetbundle",
+      "pathId": "",
+      "type": "",
+      "name": "",
+      "size": "",
+      "status": "missing_from_index",
+      "output": ""
+    },
+    {
+      "source": "assetbundle",
+      "bundle": "download/live2d/1005_ext_prefab.assetbundle",
+      "pathId": "",
+      "type": "",
+      "name": "",
+      "size": "",
+      "status": "missing_from_index",
+      "output": ""
+    },
+    {
+      "source": "assetbundle",
+      "bundle": "download/live2d/1043.assetbundle",
+      "pathId": "",
+      "type": "",
+      "name": "",
+      "size": "8321689",
+      "status": "ok",
+      "output": ""
+    },
+    {
+      "source": "assetbundle",
+      "bundle": "download/live2d/1043_ext_prefab.assetbundle",
+      "pathId": "",
+      "type": "",
+      "name": "",
+      "size": "136494",
+      "status": "ok",
+      "output": ""
+    },
+    {
+      "source": "assetbundle",
+      "bundle": "download/roleprefabsandres/battleprefabandres/1005.assetbundle",
+      "pathId": "",
+      "type": "",
+      "name": "",
+      "size": "1512900",
+      "status": "ok",
+      "output": ""
+    },
+    {
+      "source": "assetbundle",
+      "bundle": "download/roleprefabsandres/paintingprefabandres/1005.assetbundle",
+      "pathId": "",
+      "type": "",
+      "name": "",
+      "size": "3976259",
+      "status": "ok",
+      "output": ""
+    },
+    {
+      "source": "assetbundle",
+      "bundle": "download/roleprefabsandres/paintingsleepprefabandres/1005.assetbundle",
+      "pathId": "",
+      "type": "",
+      "name": "",
+      "size": "3210999",
+      "status": "ok",
+      "output": ""
+    },
+    {
+      "source": "assetbundle",
+      "bundle": "download/roleprefabsandres/rolebigsetpainting/1005.assetbundle",
+      "pathId": "",
+      "type": "",
+      "name": "",
+      "size": "1769688",
+      "status": "ok",
+      "output": ""
+    },
+    {
+      "source": "assetbundle",
+      "bundle": "download/roleprefabsandres/storyprefabandres/1005_4.assetbundle",
+      "pathId": "",
+      "type": "",
+      "name": "",
+      "size": "190690",
+      "status": "ok",
+      "output": ""
+    },
+    {
+      "source": "assetbundle",
+      "bundle": "download/xlualogic/datanode/datatable/create/live2d.assetbundle",
+      "pathId": "",
+      "type": "",
+      "name": "",
+      "size": "60417",
+      "status": "ok",
+      "output": ""
+    },
+    {
+      "source": "assetbundle",
+      "bundle": "download/xlualogic/modules/herolive2d.assetbundle",
+      "pathId": "",
+      "type": "",
+      "name": "",
+      "size": "9176",
+      "status": "ok",
+      "output": ""
+    },
+    {
+      "source": "assetbundle",
+      "bundle": "download/xlualogic/modules/live2dpreload.assetbundle",
+      "pathId": "",
+      "type": "",
+      "name": "",
+      "size": "4367",
+      "status": "ok",
+      "output": ""
+    },
+    {
+      "source": "assetbundle",
+      "bundle": "download/xlualogic/modules/marry.assetbundle",
+      "pathId": "",
+      "type": "",
+      "name": "",
+      "size": "1360197",
+      "status": "ok",
+      "output": ""
+    },
+    {
+      "source": "versionfile_VersionFile_bytes",
+      "bundle": "download/live2d/1043.assetbundle",
+      "pathId": "258",
+      "type": "VersionFile",
+      "name": "1043.assetbundle",
+      "size": "8321689",
+      "status": "IsFirstData=True; IsEncrypt=False; Version=; ResOffset=0",
+      "output": "MD5=d69bb88debb15f2ce5af4e493f762439"
+    },
+    {
+      "source": "versionfile_VersionFile_bytes",
+      "bundle": "download/live2d/1043_ext_prefab.assetbundle",
+      "pathId": "259",
+      "type": "VersionFile",
+      "name": "1043_ext_prefab.assetbundle",
+      "size": "136494",
+      "status": "IsFirstData=True; IsEncrypt=False; Version=; ResOffset=0",
+      "output": "MD5=c3c7827e5048b7eb23ab59021f81401e"
+    },
+    {
+      "source": "versionfile_VersionFile_bytes",
+      "bundle": "download/roleprefabsandres/battleprefabandres/1005.assetbundle",
+      "pathId": "269",
+      "type": "VersionFile",
+      "name": "1005.assetbundle",
+      "size": "1512900",
+      "status": "IsFirstData=True; IsEncrypt=True; Version=; ResOffset=0",
+      "output": "MD5=2d883dfe4ca2fadf0f1c66bc6f694580"
+    },
+    {
+      "source": "versionfile_VersionFile_bytes",
+      "bundle": "download/roleprefabsandres/paintingsleepprefabandres/1005.assetbundle",
+      "pathId": "341",
+      "type": "VersionFile",
+      "name": "1005.assetbundle",
+      "size": "3210999",
+      "status": "IsFirstData=True; IsEncrypt=True; Version=; ResOffset=0",
+      "output": "MD5=96a6846659d6c2539cb1fa89d71b179a"
+    },
+    {
+      "source": "versionfile_VersionFile_bytes",
+      "bundle": "download/roleprefabsandres/rolebigsetpainting/1005.assetbundle",
+      "pathId": "349",
+      "type": "VersionFile",
+      "name": "1005.assetbundle",
+      "size": "1769688",
+      "status": "IsFirstData=True; IsEncrypt=True; Version=; ResOffset=0",
+      "output": "MD5=c3c7c84bc74c941840b945a45852ba48"
+    },
+    {
+      "source": "versionfile_VersionFile_bytes",
+      "bundle": "download/roleprefabsandres/storyprefabandres/1005_4.assetbundle",
+      "pathId": "466",
+      "type": "VersionFile",
+      "name": "1005_4.assetbundle",
+      "size": "190690",
+      "status": "IsFirstData=True; IsEncrypt=True; Version=; ResOffset=0",
+      "output": "MD5=ed59def3c62dea47ed9fe4ba09787a56"
+    },
+    {
+      "source": "versionfile_VersionFile_bytes",
+      "bundle": "download/xlualogic/datanode/datatable/create/live2d.assetbundle",
+      "pathId": "1209",
+      "type": "VersionFile",
+      "name": "live2d.assetbundle",
+      "size": "60417",
+      "status": "IsFirstData=True; IsEncrypt=True; Version=; ResOffset=0",
+      "output": "MD5=1555f8c2224b05c18d7fa4f2680844bf"
+    },
+    {
+      "source": "versionfile_VersionFile_bytes",
+      "bundle": "download/xlualogic/modules/herolive2d.assetbundle",
+      "pathId": "1653",
+      "type": "VersionFile",
+      "name": "herolive2d.assetbundle",
+      "size": "9176",
+      "status": "IsFirstData=True; IsEncrypt=True; Version=; ResOffset=0",
+      "output": "MD5=c4d89a0448cb8dbb94e3cb99e1fad5b5"
+    },
+    {
+      "source": "versionfile_VersionFile_bytes",
+      "bundle": "download/xlualogic/modules/live2dpreload.assetbundle",
+      "pathId": "1663",
+      "type": "VersionFile",
+      "name": "live2dpreload.assetbundle",
+      "size": "4367",
+      "status": "IsFirstData=True; IsEncrypt=True; Version=; ResOffset=0",
+      "output": "MD5=b0c5b92d395b77251308df17592107f9"
+    },
+    {
+      "source": "versionfile_VersionFile_bytes",
+      "bundle": "download/xlualogic/modules/marry.assetbundle",
+      "pathId": "1671",
+      "type": "VersionFile",
+      "name": "marry.assetbundle",
+      "size": "1360197",
+      "status": "IsFirstData=True; IsEncrypt=True; Version=; ResOffset=0",
+      "output": "MD5=a4b4c9b208c80c030a089d36e7961876"
+    },
+    {
+      "source": "versionfile_VersionFile_bytes",
+      "bundle": "download/roleprefabsandres/paintingprefabandres/1005.assetbundle",
+      "pathId": "1937",
+      "type": "VersionFile",
+      "name": "1005.assetbundle",
+      "size": "4212729",
+      "status": "IsFirstData=True; IsEncrypt=True; Version=; ResOffset=0",
+      "output": "MD5=68430385ff3f51d6195cc178d11d9e03"
+    },
+    {
+      "source": "versionfile_CDNVersionFile_bytes",
+      "bundle": "download/live2d/1005.assetbundle",
+      "pathId": "956",
+      "type": "VersionFile",
+      "name": "1005.assetbundle",
+      "size": "12015360",
+      "status": "IsFirstData=False; IsEncrypt=False; Version=1.0.536; ResOffset=165",
+      "output": "MD5=f81906997bb5a16db1f26c0818e728d5"
+    },
+    {
+      "source": "versionfile_CDNVersionFile_bytes",
+      "bundle": "download/live2d/1005_ext_prefab.assetbundle",
+      "pathId": "957",
+      "type": "VersionFile",
+      "name": "1005_ext_prefab.assetbundle",
+      "size": "219126",
+      "status": "IsFirstData=False; IsEncrypt=False; Version=1.0.277; ResOffset=341",
+      "output": "MD5=323c765629355d4afde1cacae409678b"
+    },
+    {
+      "source": "versionfile_CDNVersionFile_bytes",
+      "bundle": "download/live2d/1043.assetbundle",
+      "pathId": "1008",
+      "type": "VersionFile",
+      "name": "1043.assetbundle",
+      "size": "8321689",
+      "status": "IsFirstData=True; IsEncrypt=False; Version=1.0.458; ResOffset=280",
+      "output": "MD5=d69bb88debb15f2ce5af4e493f762439"
+    },
+    {
+      "source": "versionfile_CDNVersionFile_bytes",
+      "bundle": "download/live2d/1043_ext_prefab.assetbundle",
+      "pathId": "1009",
+      "type": "VersionFile",
+      "name": "1043_ext_prefab.assetbundle",
+      "size": "136494",
+      "status": "IsFirstData=True; IsEncrypt=False; Version=1.0.255; ResOffset=361",
+      "output": "MD5=c3c7827e5048b7eb23ab59021f81401e"
+    },
+    {
+      "source": "versionfile_CDNVersionFile_bytes",
+      "bundle": "download/roleprefabsandres/battleprefabandres/1005.assetbundle",
+      "pathId": "1127",
+      "type": "VersionFile",
+      "name": "1005.assetbundle",
+      "size": "1512900",
+      "status": "IsFirstData=True; IsEncrypt=True; Version=1.0.459; ResOffset=15",
+      "output": "MD5=2d883dfe4ca2fadf0f1c66bc6f694580"
+    },
+    {
+      "source": "versionfile_CDNVersionFile_bytes",
+      "bundle": "download/roleprefabsandres/paintingprefabandres/1005.assetbundle",
+      "pathId": "1367",
+      "type": "VersionFile",
+      "name": "1005.assetbundle",
+      "size": "4212729",
+      "status": "IsFirstData=True; IsEncrypt=True; Version=1.0.279; ResOffset=392",
+      "output": "MD5=68430385ff3f51d6195cc178d11d9e03"
+    },
+    {
+      "source": "versionfile_CDNVersionFile_bytes",
+      "bundle": "download/roleprefabsandres/paintingsleepprefabandres/1005.assetbundle",
+      "pathId": "1534",
+      "type": "VersionFile",
+      "name": "1005.assetbundle",
+      "size": "3210999",
+      "status": "IsFirstData=True; IsEncrypt=True; Version=1.0.459; ResOffset=144",
+      "output": "MD5=96a6846659d6c2539cb1fa89d71b179a"
+    },
+    {
+      "source": "versionfile_CDNVersionFile_bytes",
+      "bundle": "download/roleprefabsandres/rolebigsetpainting/1005.assetbundle",
+      "pathId": "1671",
+      "type": "VersionFile",
+      "name": "1005.assetbundle",
+      "size": "1769688",
+      "status": "IsFirstData=True; IsEncrypt=True; Version=1.0.463; ResOffset=299",
+      "output": "MD5=c3c7c84bc74c941840b945a45852ba48"
+    },
+    {
+      "source": "versionfile_CDNVersionFile_bytes",
+      "bundle": "download/roleprefabsandres/storyprefabandres/1005_4.assetbundle",
+      "pathId": "1902",
+      "type": "VersionFile",
+      "name": "1005_4.assetbundle",
+      "size": "190690",
+      "status": "IsFirstData=True; IsEncrypt=True; Version=1.0.469; ResOffset=285",
+      "output": "MD5=ed59def3c62dea47ed9fe4ba09787a56"
+    },
+    {
+      "source": "versionfile_CDNVersionFile_bytes",
+      "bundle": "download/xlualogic/datanode/datatable/create/live2d.assetbundle",
+      "pathId": "5393",
+      "type": "VersionFile",
+      "name": "live2d.assetbundle",
+      "size": "60417",
+      "status": "IsFirstData=True; IsEncrypt=True; Version=1.0.781; ResOffset=748",
+      "output": "MD5=1555f8c2224b05c18d7fa4f2680844bf"
+    },
+    {
+      "source": "versionfile_CDNVersionFile_bytes",
+      "bundle": "download/xlualogic/modules/herolive2d.assetbundle",
+      "pathId": "5884",
+      "type": "VersionFile",
+      "name": "herolive2d.assetbundle",
+      "size": "9176",
+      "status": "IsFirstData=True; IsEncrypt=True; Version=1.0.83; ResOffset=651",
+      "output": "MD5=c4d89a0448cb8dbb94e3cb99e1fad5b5"
+    },
+    {
+      "source": "versionfile_CDNVersionFile_bytes",
+      "bundle": "download/xlualogic/modules/live2dpreload.assetbundle",
+      "pathId": "5894",
+      "type": "VersionFile",
+      "name": "live2dpreload.assetbundle",
+      "size": "4367",
+      "status": "IsFirstData=True; IsEncrypt=True; Version=1.0.83; ResOffset=192",
+      "output": "MD5=b0c5b92d395b77251308df17592107f9"
+    },
+    {
+      "source": "versionfile_CDNVersionFile_bytes",
+      "bundle": "download/xlualogic/modules/marry.assetbundle",
+      "pathId": "5902",
+      "type": "VersionFile",
+      "name": "marry.assetbundle",
+      "size": "1360197",
+      "status": "IsFirstData=True; IsEncrypt=True; Version=1.0.781; ResOffset=616",
+      "output": "MD5=a4b4c9b208c80c030a089d36e7961876"
+    },
+    {
+      "source": "textasset",
+      "bundle": "download/live2d/1043.assetbundle",
+      "pathId": "-2273146679508954321",
+      "type": "TextAsset",
+      "name": "Live2d_1043.model3",
+      "size": "2478",
+      "status": "indexed",
+      "output": "extracted/unity/bundles/b_2618c58d7b326e63/textassets/-2273146679508954321_Live2d_1043.model3.txt"
+    },
+    {
+      "source": "textasset",
+      "bundle": "download/live2d/1043.assetbundle",
+      "pathId": "7598925105523137601",
+      "type": "TextAsset",
+      "name": "Live2d_1043.physics3",
+      "size": "4378",
+      "status": "indexed",
+      "output": "extracted/unity/bundles/b_2618c58d7b326e63/textassets/7598925105523137601_Live2d_1043.physics3.txt"
+    },
+    {
+      "source": "textasset",
+      "bundle": "download/live2d/1043.assetbundle",
+      "pathId": "8086648397649200835",
+      "type": "TextAsset",
+      "name": "Live2d_1043.cdi3",
+      "size": "17476",
+      "status": "indexed",
+      "output": "extracted/unity/bundles/b_2618c58d7b326e63/textassets/8086648397649200835_Live2d_1043.cdi3.txt"
+    },
+    {
+      "source": "textasset",
+      "bundle": "download/roleprefabsandres/battleprefabandres/1005.assetbundle",
+      "pathId": "-1895158817921135352",
+      "type": "TextAsset",
+      "name": "1005.skel",
+      "size": "1385810",
+      "status": "indexed",
+      "output": "extracted/unity/bundles/b_dbb6eb9e5987445e/textassets/-1895158817921135352_1005.skel.txt"
+    },
+    {
+      "source": "textasset",
+      "bundle": "download/roleprefabsandres/battleprefabandres/1005.assetbundle",
+      "pathId": "-1816495139156837413",
+      "type": "TextAsset",
+      "name": "1005.atlas",
+      "size": "13779",
+      "status": "indexed",
+      "output": "extracted/unity/bundles/b_dbb6eb9e5987445e/textassets/-1816495139156837413_1005.atlas.txt"
+    },
+    {
+      "source": "textasset",
+      "bundle": "download/roleprefabsandres/paintingprefabandres/1005.assetbundle",
+      "pathId": "-8857548251462254639",
+      "type": "TextAsset",
+      "name": "Painting_1005_back.skel",
+      "size": "100542",
+      "status": "indexed",
+      "output": "extracted/unity/bundles/b_a47980c73bab4250/textassets/-8857548251462254639_Painting_1005_back.skel.txt"
+    },
+    {
+      "source": "textasset",
+      "bundle": "download/roleprefabsandres/paintingprefabandres/1005.assetbundle",
+      "pathId": "-3076532181206688105",
+      "type": "TextAsset",
+      "name": "Painting_1005.atlas",
+      "size": "4700",
+      "status": "indexed",
+      "output": "extracted/unity/bundles/b_a47980c73bab4250/textassets/-3076532181206688105_Painting_1005.atlas.txt"
+    },
+    {
+      "source": "textasset",
+      "bundle": "download/roleprefabsandres/paintingprefabandres/1005.assetbundle",
+      "pathId": "1567254803433793860",
+      "type": "TextAsset",
+      "name": "Painting_1005.skel",
+      "size": "571209",
+      "status": "indexed",
+      "output": "extracted/unity/bundles/b_a47980c73bab4250/textassets/1567254803433793860_Painting_1005.skel.txt"
+    },
+    {
+      "source": "textasset",
+      "bundle": "download/roleprefabsandres/paintingprefabandres/1005.assetbundle",
+      "pathId": "5081366588584777480",
+      "type": "TextAsset",
+      "name": "SP_heroname_1005.atlas",
+      "size": "156",
+      "status": "indexed",
+      "output": "extracted/unity/bundles/b_a47980c73bab4250/textassets/5081366588584777480_SP_heroname_1005.atlas.txt"
+    },
+    {
+      "source": "textasset",
+      "bundle": "download/roleprefabsandres/paintingprefabandres/1005.assetbundle",
+      "pathId": "7884510430429545721",
+      "type": "TextAsset",
+      "name": "SP_heroname_1005.skel",
+      "size": "5074",
+      "status": "indexed",
+      "output": "extracted/unity/bundles/b_a47980c73bab4250/textassets/7884510430429545721_SP_heroname_1005.skel.txt"
+    },
+    {
+      "source": "textasset",
+      "bundle": "download/roleprefabsandres/paintingprefabandres/1005.assetbundle",
+      "pathId": "8883680961857034524",
+      "type": "TextAsset",
+      "name": "Painting_1005_back.atlas",
+      "size": "699",
+      "status": "indexed",
+      "output": "extracted/unity/bundles/b_a47980c73bab4250/textassets/8883680961857034524_Painting_1005_back.atlas.txt"
+    },
+    {
+      "source": "textasset",
+      "bundle": "download/roleprefabsandres/paintingsleepprefabandres/1005.assetbundle",
+      "pathId": "-6269753248752514378",
+      "type": "TextAsset",
+      "name": "100504.skel",
+      "size": "698026",
+      "status": "indexed",
+      "output": "extracted/unity/bundles/b_f4f75aa40ac20f09/textassets/-6269753248752514378_100504.skel.txt"
+    },
+    {
+      "source": "textasset",
+      "bundle": "download/roleprefabsandres/paintingsleepprefabandres/1005.assetbundle",
+      "pathId": "-25946661414418540",
+      "type": "TextAsset",
+      "name": "100504.atlas",
+      "size": "5464",
+      "status": "indexed",
+      "output": "extracted/unity/bundles/b_f4f75aa40ac20f09/textassets/-25946661414418540_100504.atlas.txt"
+    },
+    {
+      "source": "textasset",
+      "bundle": "download/roleprefabsandres/storyprefabandres/1005_4.assetbundle",
+      "pathId": "-4365011577166613592",
+      "type": "TextAsset",
+      "name": "1005_4.atlas",
+      "size": "351",
+      "status": "indexed",
+      "output": "extracted/unity/bundles/b_e3075c4798faeb04/textassets/-4365011577166613592_1005_4.atlas.txt"
+    },
+    {
+      "source": "textasset",
+      "bundle": "download/roleprefabsandres/storyprefabandres/1005_4.assetbundle",
+      "pathId": "1602041147694039678",
+      "type": "TextAsset",
+      "name": "1005_4.skel",
+      "size": "2337",
+      "status": "indexed",
+      "output": "extracted/unity/bundles/b_e3075c4798faeb04/textassets/1602041147694039678_1005_4.skel.txt"
+    },
+    {
+      "source": "textasset",
+      "bundle": "download/xlualogic/modules/marry.assetbundle",
+      "pathId": "-9180628089525324794",
+      "type": "TextAsset",
+      "name": "UI_heroLive2d_frameCommon21104",
+      "size": "32336",
+      "status": "indexed",
+      "output": "extracted/unity/bundles/b_a38dff04ab8594e2/textassets/-9180628089525324794_UI_heroLive2d_frameCommon21104.txt"
+    },
+    {
+      "source": "textasset",
+      "bundle": "download/xlualogic/modules/marry.assetbundle",
+      "pathId": "-9159762808935293555",
+      "type": "TextAsset",
+      "name": "UI_heroLive2d_1027",
+      "size": "26793",
+      "status": "indexed",
+      "output": "extracted/unity/bundles/b_a38dff04ab8594e2/textassets/-9159762808935293555_UI_heroLive2d_1027.txt"
+    },
+    {
+      "source": "textasset",
+      "bundle": "download/xlualogic/modules/marry.assetbundle",
+      "pathId": "-9128362854549728457",
+      "type": "TextAsset",
+      "name": "UI_heroLive2d_1057",
+      "size": "37713",
+      "status": "indexed",
+      "output": "extracted/unity/bundles/b_a38dff04ab8594e2/textassets/-9128362854549728457_UI_heroLive2d_1057.txt"
+    },
+    {
+      "source": "textasset",
+      "bundle": "download/xlualogic/modules/marry.assetbundle",
+      "pathId": "-9047824342310053238",
+      "type": "TextAsset",
+      "name": "UI_heroLive2d_1021",
+      "size": "26458",
+      "status": "indexed",
+      "output": "extracted/unity/bundles/b_a38dff04ab8594e2/textassets/-9047824342310053238_UI_heroLive2d_1021.txt"
+    },
+    {
+      "source": "textasset",
+      "bundle": "download/xlualogic/modules/marry.assetbundle",
+      "pathId": "-8808607728173926659",
+      "type": "TextAsset",
+      "name": "UI_heroLive2d_1039",
+      "size": "16385",
+      "status": "indexed",
+      "output": "extracted/unity/bundles/b_a38dff04ab8594e2/textassets/-8808607728173926659_UI_heroLive2d_1039.txt"
+    },
+    {
+      "source": "textasset",
+      "bundle": "download/xlualogic/modules/marry.assetbundle",
+      "pathId": "-8645003890969683182",
+      "type": "TextAsset",
+      "name": "UI_heroLive2d_21090",
+      "size": "3623",
+      "status": "indexed",
+      "output": "extracted/unity/bundles/b_a38dff04ab8594e2/textassets/-8645003890969683182_UI_heroLive2d_21090.txt"
+    },
+    {
+      "source": "textasset",
+      "bundle": "download/xlualogic/modules/marry.assetbundle",
+      "pathId": "-8573653818717862464",
+      "type": "TextAsset",
+      "name": "UI_heroLive2d_21083",
+      "size": "25056",
+      "status": "indexed",
+      "output": "extracted/unity/bundles/b_a38dff04ab8594e2/textassets/-8573653818717862464_UI_heroLive2d_21083.txt"
+    },
+    {
+      "source": "textasset",
+      "bundle": "download/xlualogic/modules/marry.assetbundle",
+      "pathId": "-8389759364463753686",
+      "type": "TextAsset",
+      "name": "UI_heroLive2d_1029",
+      "size": "17217",
+      "status": "indexed",
+      "output": "extracted/unity/bundles/b_a38dff04ab8594e2/textassets/-8389759364463753686_UI_heroLive2d_1029.txt"
+    },
+    {
+      "source": "textasset",
+      "bundle": "download/xlualogic/modules/marry.assetbundle",
+      "pathId": "-8201408433234090108",
+      "type": "TextAsset",
+      "name": "UI_heroLive2d_1043",
+      "size": "15993",
+      "status": "indexed",
+      "output": "extracted/unity/bundles/b_a38dff04ab8594e2/textassets/-8201408433234090108_UI_heroLive2d_1043.txt"
+    },
+    {
+      "source": "textasset",
+      "bundle": "download/xlualogic/modules/marry.assetbundle",
+      "pathId": "-8045068087649616672",
+      "type": "TextAsset",
+      "name": "UI_heroLive2d_1012",
+      "size": "20721",
+      "status": "indexed",
+      "output": "extracted/unity/bundles/b_a38dff04ab8594e2/textassets/-8045068087649616672_UI_heroLive2d_1012.txt"
+    },
+    {
+      "source": "textasset",
+      "bundle": "download/xlualogic/modules/marry.assetbundle",
+      "pathId": "-7914913033934942537",
+      "type": "TextAsset",
+      "name": "UI_heroLive2d_1052",
+      "size": "45421",
+      "status": "indexed",
+      "output": "extracted/unity/bundles/b_a38dff04ab8594e2/textassets/-7914913033934942537_UI_heroLive2d_1052.txt"
+    },
+    {
+      "source": "textasset",
+      "bundle": "download/xlualogic/modules/marry.assetbundle",
+      "pathId": "-7478209393066954067",
+      "type": "TextAsset",
+      "name": "UI_heroLive2d_21084",
+      "size": "6913",
+      "status": "indexed",
+      "output": "extracted/unity/bundles/b_a38dff04ab8594e2/textassets/-7478209393066954067_UI_heroLive2d_21084.txt"
+    },
+    {
+      "source": "textasset",
+      "bundle": "download/xlualogic/modules/marry.assetbundle",
+      "pathId": "-7332089331966259464",
+      "type": "TextAsset",
+      "name": "UI_heroLive2d_frameCommon1047",
+      "size": "26588",
+      "status": "indexed",
+      "output": "extracted/unity/bundles/b_a38dff04ab8594e2/textassets/-7332089331966259464_UI_heroLive2d_frameCommon1047.txt"
+    },
+    {
+      "source": "textasset",
+      "bundle": "download/xlualogic/modules/marry.assetbundle",
+      "pathId": "-6934873166342821937",
+      "type": "TextAsset",
+      "name": "UI_heroLive2d_frameCommon21078",
+      "size": "24276",
+      "status": "indexed",
+      "output": "extracted/unity/bundles/b_a38dff04ab8594e2/textassets/-6934873166342821937_UI_heroLive2d_frameCommon21078.txt"
+    },
+    {
+      "source": "textasset",
+      "bundle": "download/xlualogic/modules/marry.assetbundle",
+      "pathId": "-6926485273447665705",
+      "type": "TextAsset",
+      "name": "UI_heroLive2d_1044",
+      "size": "18683",
+      "status": "indexed",
+      "output": "extracted/unity/bundles/b_a38dff04ab8594e2/textassets/-6926485273447665705_UI_heroLive2d_1044.txt"
+    },
+    {
+      "source": "textasset",
+      "bundle": "download/xlualogic/modules/marry.assetbundle",
+      "pathId": "-6776509105702492367",
+      "type": "TextAsset",
+      "name": "UI_heroLive2d_1059",
+      "size": "24495",
+      "status": "indexed",
+      "output": "extracted/unity/bundles/b_a38dff04ab8594e2/textassets/-6776509105702492367_UI_heroLive2d_1059.txt"
+    },
+    {
+      "source": "textasset",
+      "bundle": "download/xlualogic/modules/marry.assetbundle",
+      "pathId": "-6710517422653411154",
+      "type": "TextAsset",
+      "name": "UI_heroLive2d_1026",
+      "size": "16320",
+      "status": "indexed",
+      "output": "extracted/unity/bundles/b_a38dff04ab8594e2/textassets/-6710517422653411154_UI_heroLive2d_1026.txt"
+    },
+    {
+      "source": "textasset",
+      "bundle": "download/xlualogic/modules/marry.assetbundle",
+      "pathId": "-6662458679281360176",
+      "type": "TextAsset",
+      "name": "UI_heroLive2d_21089",
+      "size": "4157",
+      "status": "indexed",
+      "output": "extracted/unity/bundles/b_a38dff04ab8594e2/textassets/-6662458679281360176_UI_heroLive2d_21089.txt"
+    },
+    {
+      "source": "textasset",
+      "bundle": "download/xlualogic/modules/marry.assetbundle",
+      "pathId": "-6609610316827059161",
+      "type": "TextAsset",
+      "name": "UI_heroLive2d_21087",
+      "size": "7327",
+      "status": "indexed",
+      "output": "extracted/unity/bundles/b_a38dff04ab8594e2/textassets/-6609610316827059161_UI_heroLive2d_21087.txt"
+    },
+    {
+      "source": "textasset",
+      "bundle": "download/xlualogic/modules/marry.assetbundle",
+      "pathId": "-6102632247937940463",
+      "type": "TextAsset",
+      "name": "UI_heroLive2d_1046",
+      "size": "17798",
+      "status": "indexed",
+      "output": "extracted/unity/bundles/b_a38dff04ab8594e2/textassets/-6102632247937940463_UI_heroLive2d_1046.txt"
+    },
+    {
+      "source": "textasset",
+      "bundle": "download/xlualogic/modules/marry.assetbundle",
+      "pathId": "-5832428111692999610",
+      "type": "TextAsset",
+      "name": "UI_heroLive2d_31105",
+      "size": "5894",
+      "status": "indexed",
+      "output": "extracted/unity/bundles/b_a38dff04ab8594e2/textassets/-5832428111692999610_UI_heroLive2d_31105.txt"
+    },
+    {
+      "source": "textasset",
+      "bundle": "download/xlualogic/modules/marry.assetbundle",
+      "pathId": "-5361315297948332800",
+      "type": "TextAsset",
+      "name": "UI_heroLive2d_1022",
+      "size": "19507",
+      "status": "indexed",
+      "output": "extracted/unity/bundles/b_a38dff04ab8594e2/textassets/-5361315297948332800_UI_heroLive2d_1022.txt"
+    },
+    {
+      "source": "textasset",
+      "bundle": "download/xlualogic/modules/marry.assetbundle",
+      "pathId": "-4961617776881809067",
+      "type": "TextAsset",
+      "name": "UI_heroLive2d_1048",
+      "size": "25835",
+      "status": "indexed",
+      "output": "extracted/unity/bundles/b_a38dff04ab8594e2/textassets/-4961617776881809067_UI_heroLive2d_1048.txt"
+    },
+    {
+      "source": "textasset",
+      "bundle": "download/xlualogic/modules/marry.assetbundle",
+      "pathId": "-4787872672636251354",
+      "type": "TextAsset",
+      "name": "UI_heroLive2d_1054",
+      "size": "22114",
+      "status": "indexed",
+      "output": "extracted/unity/bundles/b_a38dff04ab8594e2/textassets/-4787872672636251354_UI_heroLive2d_1054.txt"
+    },
+    {
+      "source": "textasset",
+      "bundle": "download/xlualogic/modules/marry.assetbundle",
+      "pathId": "-4698822814024554706",
+      "type": "TextAsset",
+      "name": "UI_heroLive2d_frameCommon21101",
+      "size": "32316",
+      "status": "indexed",
+      "output": "extracted/unity/bundles/b_a38dff04ab8594e2/textassets/-4698822814024554706_UI_heroLive2d_frameCommon21101.txt"
+    },
+    {
+      "source": "textasset",
+      "bundle": "download/xlualogic/modules/marry.assetbundle",
+      "pathId": "-4643184850103173764",
+      "type": "TextAsset",
+      "name": "UI_heroLive2d_21079",
+      "size": "3212",
+      "status": "indexed",
+      "output": "extracted/unity/bundles/b_a38dff04ab8594e2/textassets/-4643184850103173764_UI_heroLive2d_21079.txt"
+    },
+    {
+      "source": "textasset",
+      "bundle": "download/xlualogic/modules/marry.assetbundle",
+      "pathId": "-4594168129452987337",
+      "type": "TextAsset",
+      "name": "UI_heroLive2d_1031",
+      "size": "18688",
+      "status": "indexed",
+      "output": "extracted/unity/bundles/b_a38dff04ab8594e2/textassets/-4594168129452987337_UI_heroLive2d_1031.txt"
+    },
+    {
+      "source": "textasset",
+      "bundle": "download/xlualogic/modules/marry.assetbundle",
+      "pathId": "-4578357502257318821",
+      "type": "TextAsset",
+      "name": "UI_heroLive2d_1050",
+      "size": "21969",
+      "status": "indexed",
+      "output": "extracted/unity/bundles/b_a38dff04ab8594e2/textassets/-4578357502257318821_UI_heroLive2d_1050.txt"
+    },
+    {
+      "source": "textasset",
+      "bundle": "download/xlualogic/modules/marry.assetbundle",
+      "pathId": "-4555521362892996798",
+      "type": "TextAsset",
+      "name": "UI_heroLive2d_1023",
+      "size": "15190",
+      "status": "indexed",
+      "output": "extracted/unity/bundles/b_a38dff04ab8594e2/textassets/-4555521362892996798_UI_heroLive2d_1023.txt"
+    },
+    {
+      "source": "textasset",
+      "bundle": "download/xlualogic/modules/marry.assetbundle",
+      "pathId": "-4320156607546628427",
+      "type": "TextAsset",
+      "name": "UI_heroLive2d_21070",
+      "size": "40570",
+      "status": "indexed",
+      "output": "extracted/unity/bundles/b_a38dff04ab8594e2/textassets/-4320156607546628427_UI_heroLive2d_21070.txt"
+    },
+    {
+      "source": "textasset",
+      "bundle": "download/xlualogic/modules/marry.assetbundle",
+      "pathId": "-4219546064831137834",
+      "type": "TextAsset",
+      "name": "UI_heroLive2d_frameCommon21086",
+      "size": "27783",
+      "status": "indexed",
+      "output": "extracted/unity/bundles/b_a38dff04ab8594e2/textassets/-4219546064831137834_UI_heroLive2d_frameCommon21086.txt"
+    },
+    {
+      "source": "textasset",
+      "bundle": "download/xlualogic/modules/marry.assetbundle",
+      "pathId": "-3945175123424146741",
+      "type": "TextAsset",
+      "name": "UI_heroLive2d_frameCommon31110",
+      "size": "32739",
+      "status": "indexed",
+      "output": "extracted/unity/bundles/b_a38dff04ab8594e2/textassets/-3945175123424146741_UI_heroLive2d_frameCommon31110.txt"
+    },
+    {
+      "source": "textasset",
+      "bundle": "download/xlualogic/modules/marry.assetbundle",
+      "pathId": "-3822106272266936543",
+      "type": "TextAsset",
+      "name": "UI_heroLive2d_31103",
+      "size": "6793",
+      "status": "indexed",
+      "output": "extracted/unity/bundles/b_a38dff04ab8594e2/textassets/-3822106272266936543_UI_heroLive2d_31103.txt"
+    },
+    {
+      "source": "textasset",
+      "bundle": "download/xlualogic/modules/marry.assetbundle",
+      "pathId": "-3763545214266887454",
+      "type": "TextAsset",
+      "name": "UI_heroLive2d_1041",
+      "size": "16821",
+      "status": "indexed",
+      "output": "extracted/unity/bundles/b_a38dff04ab8594e2/textassets/-3763545214266887454_UI_heroLive2d_1041.txt"
+    },
+    {
+      "source": "textasset",
+      "bundle": "download/xlualogic/modules/marry.assetbundle",
+      "pathId": "-3628352097399851029",
+      "type": "TextAsset",
+      "name": "UI_heroLive2d_1034",
+      "size": "43944",
+      "status": "indexed",
+      "output": "extracted/unity/bundles/b_a38dff04ab8594e2/textassets/-3628352097399851029_UI_heroLive2d_1034.txt"
+    },
+    {
+      "source": "textasset",
+      "bundle": "download/xlualogic/modules/marry.assetbundle",
+      "pathId": "-3618396095687625902",
+      "type": "TextAsset",
+      "name": "UI_heroLive2d_frameCommon31103",
+      "size": "32848",
+      "status": "indexed",
+      "output": "extracted/unity/bundles/b_a38dff04ab8594e2/textassets/-3618396095687625902_UI_heroLive2d_frameCommon31103.txt"
+    },
+    {
+      "source": "textasset",
+      "bundle": "download/xlualogic/modules/marry.assetbundle",
+      "pathId": "-3416151188419527572",
+      "type": "TextAsset",
+      "name": "UI_heroLive2d_21081",
+      "size": "5771",
+      "status": "indexed",
+      "output": "extracted/unity/bundles/b_a38dff04ab8594e2/textassets/-3416151188419527572_UI_heroLive2d_21081.txt"
+    },
+    {
+      "source": "textasset",
+      "bundle": "download/xlualogic/modules/marry.assetbundle",
+      "pathId": "-3081255711441370325",
+      "type": "TextAsset",
+      "name": "UI_heroLive2d_frameCommon21085",
+      "size": "27420",
+      "status": "indexed",
+      "output": "extracted/unity/bundles/b_a38dff04ab8594e2/textassets/-3081255711441370325_UI_heroLive2d_frameCommon21085.txt"
+    },
+    {
+      "source": "textasset",
+      "bundle": "download/xlualogic/modules/marry.assetbundle",
+      "pathId": "-2693960110471818359",
+      "type": "TextAsset",
+      "name": "UI_heroLive2d_21072",
+      "size": "31872",
+      "status": "indexed",
+      "output": "extracted/unity/bundles/b_a38dff04ab8594e2/textassets/-2693960110471818359_UI_heroLive2d_21072.txt"
+    },
+    {
+      "source": "textasset",
+      "bundle": "download/xlualogic/modules/marry.assetbundle",
+      "pathId": "-2631984773318847197",
+      "type": "TextAsset",
+      "name": "UI_heroLive2d_21074",
+      "size": "27036",
+      "status": "indexed",
+      "output": "extracted/unity/bundles/b_a38dff04ab8594e2/textassets/-2631984773318847197_UI_heroLive2d_21074.txt"
+    },
+    {
+      "source": "textasset",
+      "bundle": "download/xlualogic/modules/marry.assetbundle",
+      "pathId": "-2412653351477443853",
+      "type": "TextAsset",
+      "name": "UI_heroLive2d_21101",
+      "size": "7992",
+      "status": "indexed",
+      "output": "extracted/unity/bundles/b_a38dff04ab8594e2/textassets/-2412653351477443853_UI_heroLive2d_21101.txt"
+    },
+    {
+      "source": "textasset",
+      "bundle": "download/xlualogic/modules/marry.assetbundle",
+      "pathId": "-2116364918268331880",
+      "type": "TextAsset",
+      "name": "UI_heroLive2d_1030",
+      "size": "15909",
+      "status": "indexed",
+      "output": "extracted/unity/bundles/b_a38dff04ab8594e2/textassets/-2116364918268331880_UI_heroLive2d_1030.txt"
+    },
+    {
+      "source": "textasset",
+      "bundle": "download/xlualogic/modules/marry.assetbundle",
+      "pathId": "-1974856318771548645",
+      "type": "TextAsset",
+      "name": "UI_heroLive2d_1035",
+      "size": "15002",
+      "status": "indexed",
+      "output": "extracted/unity/bundles/b_a38dff04ab8594e2/textassets/-1974856318771548645_UI_heroLive2d_1035.txt"
+    },
+    {
+      "source": "textasset",
+      "bundle": "download/xlualogic/modules/marry.assetbundle",
+      "pathId": "-1933104891210463698",
+      "type": "TextAsset",
+      "name": "UI_heroLive2d_frameCommon21081",
+      "size": "27055",
+      "status": "indexed",
+      "output": "extracted/unity/bundles/b_a38dff04ab8594e2/textassets/-1933104891210463698_UI_heroLive2d_frameCommon21081.txt"
+    },
+    {
+      "source": "textasset",
+      "bundle": "download/xlualogic/modules/marry.assetbundle",
+      "pathId": "-1699763551971965683",
+      "type": "TextAsset",
+      "name": "UI_heroLive2d_21073",
+      "size": "37416",
+      "status": "indexed",
+      "output": "extracted/unity/bundles/b_a38dff04ab8594e2/textassets/-1699763551971965683_UI_heroLive2d_21073.txt"
+    },
+    {
+      "source": "textasset",
+      "bundle": "download/xlualogic/modules/marry.assetbundle",
+      "pathId": "-1421005787926322865",
+      "type": "TextAsset",
+      "name": "UI_heroLive2d_21086",
+      "size": "5249",
+      "status": "indexed",
+      "output": "extracted/unity/bundles/b_a38dff04ab8594e2/textassets/-1421005787926322865_UI_heroLive2d_21086.txt"
+    },
+    {
+      "source": "textasset",
+      "bundle": "download/xlualogic/modules/marry.assetbundle",
+      "pathId": "-1231984908394378786",
+      "type": "TextAsset",
+      "name": "UI_heroLive2d_1015",
+      "size": "17322",
+      "status": "indexed",
+      "output": "extracted/unity/bundles/b_a38dff04ab8594e2/textassets/-1231984908394378786_UI_heroLive2d_1015.txt"
+    },
+    {
+      "source": "textasset",
+      "bundle": "download/xlualogic/modules/marry.assetbundle",
+      "pathId": "-1225459847312525128",
+      "type": "TextAsset",
+      "name": "UI_heroLive2d_frameCommon21089",
+      "size": "27798",
+      "status": "indexed",
+      "output": "extracted/unity/bundles/b_a38dff04ab8594e2/textassets/-1225459847312525128_UI_heroLive2d_frameCommon21089.txt"
+    },
+    {
+      "source": "textasset",
+      "bundle": "download/xlualogic/modules/marry.assetbundle",
+      "pathId": "-958435861430529425",
+      "type": "TextAsset",
+      "name": "UI_heroLive2d_21076",
+      "size": "29681",
+      "status": "indexed",
+      "output": "extracted/unity/bundles/b_a38dff04ab8594e2/textassets/-958435861430529425_UI_heroLive2d_21076.txt"
+    },
+    {
+      "source": "textasset",
+      "bundle": "download/xlualogic/modules/marry.assetbundle",
+      "pathId": "-902366259703575065",
+      "type": "TextAsset",
+      "name": "UI_heroLive2d_1037",
+      "size": "22602",
+      "status": "indexed",
+      "output": "extracted/unity/bundles/b_a38dff04ab8594e2/textassets/-902366259703575065_UI_heroLive2d_1037.txt"
+    },
+    {
+      "source": "textasset",
+      "bundle": "download/xlualogic/modules/marry.assetbundle",
+      "pathId": "-688298209684341729",
+      "type": "TextAsset",
+      "name": "UI_heroLive2d_21104",
+      "size": "6858",
+      "status": "indexed",
+      "output": "extracted/unity/bundles/b_a38dff04ab8594e2/textassets/-688298209684341729_UI_heroLive2d_21104.txt"
+    },
+    {
+      "source": "textasset",
+      "bundle": "download/xlualogic/modules/marry.assetbundle",
+      "pathId": "-624383608076822851",
+      "type": "TextAsset",
+      "name": "UI_heroLive2d_1042",
+      "size": "15699",
+      "status": "indexed",
+      "output": "extracted/unity/bundles/b_a38dff04ab8594e2/textassets/-624383608076822851_UI_heroLive2d_1042.txt"
+    },
+    {
+      "source": "textasset",
+      "bundle": "download/xlualogic/modules/marry.assetbundle",
+      "pathId": "-505849508819030286",
+      "type": "TextAsset",
+      "name": "UI_heroLive2d_1049",
+      "size": "18491",
+      "status": "indexed",
+      "output": "extracted/unity/bundles/b_a38dff04ab8594e2/textassets/-505849508819030286_UI_heroLive2d_1049.txt"
+    },
+    {
+      "source": "textasset",
+      "bundle": "download/xlualogic/modules/marry.assetbundle",
+      "pathId": "-365202155455648486",
+      "type": "TextAsset",
+      "name": "UI_heroLive2d_frameCommon1003",
+      "size": "27330",
+      "status": "indexed",
+      "output": "extracted/unity/bundles/b_a38dff04ab8594e2/textassets/-365202155455648486_UI_heroLive2d_frameCommon1003.txt"
+    },
+    {
+      "source": "textasset",
+      "bundle": "download/xlualogic/modules/marry.assetbundle",
+      "pathId": "-304211607725105351",
+      "type": "TextAsset",
+      "name": "UI_heroLive2d_1024",
+      "size": "18964",
+      "status": "indexed",
+      "output": "extracted/unity/bundles/b_a38dff04ab8594e2/textassets/-304211607725105351_UI_heroLive2d_1024.txt"
+    },
+    {
+      "source": "textasset",
+      "bundle": "download/xlualogic/modules/marry.assetbundle",
+      "pathId": "-92952763337531974",
+      "type": "TextAsset",
+      "name": "UI_heroLive2d_21085",
+      "size": "4698",
+      "status": "indexed",
+      "output": "extracted/unity/bundles/b_a38dff04ab8594e2/textassets/-92952763337531974_UI_heroLive2d_21085.txt"
+    },
+    {
+      "source": "textasset",
+      "bundle": "download/xlualogic/modules/marry.assetbundle",
+      "pathId": "329635494532278635",
+      "type": "TextAsset",
+      "name": "UI_heroLive2d_1032",
+      "size": "22864",
+      "status": "indexed",
+      "output": "extracted/unity/bundles/b_a38dff04ab8594e2/textassets/329635494532278635_UI_heroLive2d_1032.txt"
+    },
+    {
+      "source": "textasset",
+      "bundle": "download/xlualogic/modules/marry.assetbundle",
+      "pathId": "369112469439837888",
+      "type": "TextAsset",
+      "name": "UI_heroLive2d_1063",
+      "size": "34349",
+      "status": "indexed",
+      "output": "extracted/unity/bundles/b_a38dff04ab8594e2/textassets/369112469439837888_UI_heroLive2d_1063.txt"
+    },
+    {
+      "source": "textasset",
+      "bundle": "download/xlualogic/modules/marry.assetbundle",
+      "pathId": "451175831290662090",
+      "type": "TextAsset",
+      "name": "UI_heroLive2d_frameCommon21084",
+      "size": "27800",
+      "status": "indexed",
+      "output": "extracted/unity/bundles/b_a38dff04ab8594e2/textassets/451175831290662090_UI_heroLive2d_frameCommon21084.txt"
+    },
+    {
+      "source": "textasset",
+      "bundle": "download/xlualogic/modules/marry.assetbundle",
+      "pathId": "788435497804711771",
+      "type": "TextAsset",
+      "name": "UI_heroLive2d_frameCommon21090",
+      "size": "27712",
+      "status": "indexed",
+      "output": "extracted/unity/bundles/b_a38dff04ab8594e2/textassets/788435497804711771_UI_heroLive2d_frameCommon21090.txt"
+    },
+    {
+      "source": "textasset",
+      "bundle": "download/xlualogic/modules/marry.assetbundle",
+      "pathId": "791882521703625348",
+      "type": "TextAsset",
+      "name": "UI_heroLive2d_1033",
+      "size": "44687",
+      "status": "indexed",
+      "output": "extracted/unity/bundles/b_a38dff04ab8594e2/textassets/791882521703625348_UI_heroLive2d_1033.txt"
+    },
+    {
+      "source": "textasset",
+      "bundle": "download/xlualogic/modules/marry.assetbundle",
+      "pathId": "833458649145632341",
+      "type": "TextAsset",
+      "name": "UI_heroLive2d_1068",
+      "size": "30651",
+      "status": "indexed",
+      "output": "extracted/unity/bundles/b_a38dff04ab8594e2/textassets/833458649145632341_UI_heroLive2d_1068.txt"
+    },
+    {
+      "source": "textasset",
+      "bundle": "download/xlualogic/modules/marry.assetbundle",
+      "pathId": "1004685034597122548",
+      "type": "TextAsset",
+      "name": "UI_heroLive2d_1005",
+      "size": "17741",
+      "status": "indexed",
+      "output": "extracted/unity/bundles/b_a38dff04ab8594e2/textassets/1004685034597122548_UI_heroLive2d_1005.txt"
+    },
+    {
+      "source": "textasset",
+      "bundle": "download/xlualogic/modules/marry.assetbundle",
+      "pathId": "1019090394667688297",
+      "type": "TextAsset",
+      "name": "UI_heroLive2d_frameCommon31105",
+      "size": "32569",
+      "status": "indexed",
+      "output": "extracted/unity/bundles/b_a38dff04ab8594e2/textassets/1019090394667688297_UI_heroLive2d_frameCommon31105.txt"
+    },
+    {
+      "source": "textasset",
+      "bundle": "download/xlualogic/modules/marry.assetbundle",
+      "pathId": "1091416791296444272",
+      "type": "TextAsset",
+      "name": "UI_heroLive2d_21088",
+      "size": "6528",
+      "status": "indexed",
+      "output": "extracted/unity/bundles/b_a38dff04ab8594e2/textassets/1091416791296444272_UI_heroLive2d_21088.txt"
+    },
+    {
+      "source": "textasset",
+      "bundle": "download/xlualogic/modules/marry.assetbundle",
+      "pathId": "1313178043349945666",
+      "type": "TextAsset",
+      "name": "UI_heroLive2d_1016",
+      "size": "15379",
+      "status": "indexed",
+      "output": "extracted/unity/bundles/b_a38dff04ab8594e2/textassets/1313178043349945666_UI_heroLive2d_1016.txt"
+    },
+    {
+      "source": "textasset",
+      "bundle": "download/xlualogic/modules/marry.assetbundle",
+      "pathId": "1475964440222584857",
+      "type": "TextAsset",
+      "name": "UI_heroLive2d_frameCommon21079",
+      "size": "25953",
+      "status": "indexed",
+      "output": "extracted/unity/bundles/b_a38dff04ab8594e2/textassets/1475964440222584857_UI_heroLive2d_frameCommon21079.txt"
+    },
+    {
+      "source": "textasset",
+      "bundle": "download/xlualogic/modules/marry.assetbundle",
+      "pathId": "1540203332632135344",
+      "type": "TextAsset",
+      "name": "UI_heroLive2d_1008",
+      "size": "36134",
+      "status": "indexed",
+      "output": "extracted/unity/bundles/b_a38dff04ab8594e2/textassets/1540203332632135344_UI_heroLive2d_1008.txt"
+    },
+    {
+      "source": "textasset",
+      "bundle": "download/xlualogic/modules/marry.assetbundle",
+      "pathId": "1954465250125078380",
+      "type": "TextAsset",
+      "name": "UI_heroLive2d_1056",
+      "size": "38665",
+      "status": "indexed",
+      "output": "extracted/unity/bundles/b_a38dff04ab8594e2/textassets/1954465250125078380_UI_heroLive2d_1056.txt"
+    },
+    {
+      "source": "textasset",
+      "bundle": "download/xlualogic/modules/marry.assetbundle",
+      "pathId": "2430085843140670848",
+      "type": "TextAsset",
+      "name": "UI_heroLive2d_frameCommon21080",
+      "size": "25359",
+      "status": "indexed",
+      "output": "extracted/unity/bundles/b_a38dff04ab8594e2/textassets/2430085843140670848_UI_heroLive2d_frameCommon21080.txt"
+    },
+    {
+      "source": "textasset",
+      "bundle": "download/xlualogic/modules/marry.assetbundle",
+      "pathId": "2458613846656216362",
+      "type": "TextAsset",
+      "name": "UI_heroLive2d_1058",
+      "size": "11808",
+      "status": "indexed",
+      "output": "extracted/unity/bundles/b_a38dff04ab8594e2/textassets/2458613846656216362_UI_heroLive2d_1058.txt"
+    },
+    {
+      "source": "textasset",
+      "bundle": "download/xlualogic/modules/marry.assetbundle",
+      "pathId": "2508149968934599396",
+      "type": "TextAsset",
+      "name": "UI_heroLive2d_1065",
+      "size": "33099",
+      "status": "indexed",
+      "output": "extracted/unity/bundles/b_a38dff04ab8594e2/textassets/2508149968934599396_UI_heroLive2d_1065.txt"
+    },
+    {
+      "source": "textasset",
+      "bundle": "download/xlualogic/modules/marry.assetbundle",
+      "pathId": "2519222920473448588",
+      "type": "TextAsset",
+      "name": "UI_heroLive2d_1036",
+      "size": "33927",
+      "status": "indexed",
+      "output": "extracted/unity/bundles/b_a38dff04ab8594e2/textassets/2519222920473448588_UI_heroLive2d_1036.txt"
+    },
+    {
+      "source": "textasset",
+      "bundle": "download/xlualogic/modules/marry.assetbundle",
+      "pathId": "2791478954284153800",
+      "type": "TextAsset",
+      "name": "UI_heroLive2d_frameCommon21075",
+      "size": "26561",
+      "status": "indexed",
+      "output": "extracted/unity/bundles/b_a38dff04ab8594e2/textassets/2791478954284153800_UI_heroLive2d_frameCommon21075.txt"
+    },
+    {
+      "source": "textasset",
+      "bundle": "download/xlualogic/modules/marry.assetbundle",
+      "pathId": "2831416908139799997",
+      "type": "TextAsset",
+      "name": "UI_heroLive2d_1019",
+      "size": "15420",
+      "status": "indexed",
+      "output": "extracted/unity/bundles/b_a38dff04ab8594e2/textassets/2831416908139799997_UI_heroLive2d_1019.txt"
+    },
+    {
+      "source": "textasset",
+      "bundle": "download/xlualogic/modules/marry.assetbundle",
+      "pathId": "3655741647595593073",
+      "type": "TextAsset",
+      "name": "UI_heroLive2d_1062",
+      "size": "34281",
+      "status": "indexed",
+      "output": "extracted/unity/bundles/b_a38dff04ab8594e2/textassets/3655741647595593073_UI_heroLive2d_1062.txt"
+    },
+    {
+      "source": "textasset",
+      "bundle": "download/xlualogic/modules/marry.assetbundle",
+      "pathId": "3731599661612293785",
+      "type": "TextAsset",
+      "name": "UI_heroLive2d_1003",
+      "size": "5879",
+      "status": "indexed",
+      "output": "extracted/unity/bundles/b_a38dff04ab8594e2/textassets/3731599661612293785_UI_heroLive2d_1003.txt"
+    },
+    {
+      "source": "textasset",
+      "bundle": "download/xlualogic/modules/marry.assetbundle",
+      "pathId": "3903234979018016034",
+      "type": "TextAsset",
+      "name": "UI_heroLive2d_1067",
+      "size": "26860",
+      "status": "indexed",
+      "output": "extracted/unity/bundles/b_a38dff04ab8594e2/textassets/3903234979018016034_UI_heroLive2d_1067.txt"
+    },
+    {
+      "source": "textasset",
+      "bundle": "download/xlualogic/modules/marry.assetbundle",
+      "pathId": "3987851099240288050",
+      "type": "TextAsset",
+      "name": "UI_heroLive2d_31110",
+      "size": "4814",
+      "status": "indexed",
+      "output": "extracted/unity/bundles/b_a38dff04ab8594e2/textassets/3987851099240288050_UI_heroLive2d_31110.txt"
+    },
+    {
+      "source": "textasset",
+      "bundle": "download/xlualogic/modules/marry.assetbundle",
+      "pathId": "3994176506148924379",
+      "type": "TextAsset",
+      "name": "UI_heroLive2d_21082",
+      "size": "39865",
+      "status": "indexed",
+      "output": "extracted/unity/bundles/b_a38dff04ab8594e2/textassets/3994176506148924379_UI_heroLive2d_21082.txt"
+    },
+    {
+      "source": "textasset",
+      "bundle": "download/xlualogic/modules/marry.assetbundle",
+      "pathId": "4127036715950061910",
+      "type": "TextAsset",
+      "name": "UI_heroLive2d_21075",
+      "size": "2524",
+      "status": "indexed",
+      "output": "extracted/unity/bundles/b_a38dff04ab8594e2/textassets/4127036715950061910_UI_heroLive2d_21075.txt"
+    },
+    {
+      "source": "textasset",
+      "bundle": "download/xlualogic/modules/marry.assetbundle",
+      "pathId": "4265151029787823547",
+      "type": "TextAsset",
+      "name": "UI_heroLive2d_1038",
+      "size": "35679",
+      "status": "indexed",
+      "output": "extracted/unity/bundles/b_a38dff04ab8594e2/textassets/4265151029787823547_UI_heroLive2d_1038.txt"
+    },
+    {
+      "source": "textasset",
+      "bundle": "download/xlualogic/modules/marry.assetbundle",
+      "pathId": "4649735056791146949",
+      "type": "TextAsset",
+      "name": "UI_heroLive2d_1025",
+      "size": "40025",
+      "status": "indexed",
+      "output": "extracted/unity/bundles/b_a38dff04ab8594e2/textassets/4649735056791146949_UI_heroLive2d_1025.txt"
+    },
+    {
+      "source": "textasset",
+      "bundle": "download/xlualogic/modules/marry.assetbundle",
+      "pathId": "4732131100086089130",
+      "type": "TextAsset",
+      "name": "UI_heroLive2d_1064",
+      "size": "30822",
+      "status": "indexed",
+      "output": "extracted/unity/bundles/b_a38dff04ab8594e2/textassets/4732131100086089130_UI_heroLive2d_1064.txt"
+    },
+    {
+      "source": "textasset",
+      "bundle": "download/xlualogic/modules/marry.assetbundle",
+      "pathId": "4766253226098945916",
+      "type": "TextAsset",
+      "name": "UI_heroLive2d_1060",
+      "size": "25476",
+      "status": "indexed",
+      "output": "extracted/unity/bundles/b_a38dff04ab8594e2/textassets/4766253226098945916_UI_heroLive2d_1060.txt"
+    },
+    {
+      "source": "textasset",
+      "bundle": "download/xlualogic/modules/marry.assetbundle",
+      "pathId": "4833817685312991697",
+      "type": "TextAsset",
+      "name": "UI_heroLive2d_1053",
+      "size": "36792",
+      "status": "indexed",
+      "output": "extracted/unity/bundles/b_a38dff04ab8594e2/textassets/4833817685312991697_UI_heroLive2d_1053.txt"
+    },
+    {
+      "source": "textasset",
+      "bundle": "download/xlualogic/modules/marry.assetbundle",
+      "pathId": "5253361029782252732",
+      "type": "TextAsset",
+      "name": "UI_heroLive2d_1055",
+      "size": "20741",
+      "status": "indexed",
+      "output": "extracted/unity/bundles/b_a38dff04ab8594e2/textassets/5253361029782252732_UI_heroLive2d_1055.txt"
+    },
+    {
+      "source": "textasset",
+      "bundle": "download/xlualogic/modules/marry.assetbundle",
+      "pathId": "5480347662736777688",
+      "type": "TextAsset",
+      "name": "UI_heroLive2d_21077",
+      "size": "49583",
+      "status": "indexed",
+      "output": "extracted/unity/bundles/b_a38dff04ab8594e2/textassets/5480347662736777688_UI_heroLive2d_21077.txt"
+    },
+    {
+      "source": "textasset",
+      "bundle": "download/xlualogic/modules/marry.assetbundle",
+      "pathId": "5599377267152018689",
+      "type": "TextAsset",
+      "name": "UI_heroLive2d_common",
+      "size": "6532",
+      "status": "indexed",
+      "output": "extracted/unity/bundles/b_a38dff04ab8594e2/textassets/5599377267152018689_UI_heroLive2d_common.txt"
+    },
+    {
+      "source": "textasset",
+      "bundle": "download/xlualogic/modules/marry.assetbundle",
+      "pathId": "5927644650464486683",
+      "type": "TextAsset",
+      "name": "UI_heroLive2d_frameCommon1058",
+      "size": "27695",
+      "status": "indexed",
+      "output": "extracted/unity/bundles/b_a38dff04ab8594e2/textassets/5927644650464486683_UI_heroLive2d_frameCommon1058.txt"
+    },
+    {
+      "source": "textasset",
+      "bundle": "download/xlualogic/modules/marry.assetbundle",
+      "pathId": "5961774575117048027",
+      "type": "TextAsset",
+      "name": "UI_heroLive2d_frameCommon31106",
+      "size": "32422",
+      "status": "indexed",
+      "output": "extracted/unity/bundles/b_a38dff04ab8594e2/textassets/5961774575117048027_UI_heroLive2d_frameCommon31106.txt"
+    },
+    {
+      "source": "textasset",
+      "bundle": "download/xlualogic/modules/marry.assetbundle",
+      "pathId": "6641117993656488548",
+      "type": "TextAsset",
+      "name": "UI_heroLive2d_21078",
+      "size": "3190",
+      "status": "indexed",
+      "output": "extracted/unity/bundles/b_a38dff04ab8594e2/textassets/6641117993656488548_UI_heroLive2d_21078.txt"
+    },
+    {
+      "source": "textasset",
+      "bundle": "download/xlualogic/modules/marry.assetbundle",
+      "pathId": "7318075756572542563",
+      "type": "TextAsset",
+      "name": "UI_heroLive2d_frameCommon21088",
+      "size": "32382",
+      "status": "indexed",
+      "output": "extracted/unity/bundles/b_a38dff04ab8594e2/textassets/7318075756572542563_UI_heroLive2d_frameCommon21088.txt"
+    },
+    {
+      "source": "textasset",
+      "bundle": "download/xlualogic/modules/marry.assetbundle",
+      "pathId": "7494075850334592360",
+      "type": "TextAsset",
+      "name": "UI_heroLive2d_frameCommon21087",
+      "size": "27712",
+      "status": "indexed",
+      "output": "extracted/unity/bundles/b_a38dff04ab8594e2/textassets/7494075850334592360_UI_heroLive2d_frameCommon21087.txt"
+    },
+    {
+      "source": "textasset",
+      "bundle": "download/xlualogic/modules/marry.assetbundle",
+      "pathId": "7544080569931580749",
+      "type": "TextAsset",
+      "name": "UI_heroLive2d_1010",
+      "size": "40263",
+      "status": "indexed",
+      "output": "extracted/unity/bundles/b_a38dff04ab8594e2/textassets/7544080569931580749_UI_heroLive2d_1010.txt"
+    },
+    {
+      "source": "textasset",
+      "bundle": "download/xlualogic/modules/marry.assetbundle",
+      "pathId": "7646788135512586606",
+      "type": "TextAsset",
+      "name": "UI_heroLive2d_21080",
+      "size": "4278",
+      "status": "indexed",
+      "output": "extracted/unity/bundles/b_a38dff04ab8594e2/textassets/7646788135512586606_UI_heroLive2d_21080.txt"
+    },
+    {
+      "source": "textasset",
+      "bundle": "download/xlualogic/modules/marry.assetbundle",
+      "pathId": "7998664909183673920",
+      "type": "TextAsset",
+      "name": "UI_heroLive2d_1045",
+      "size": "20511",
+      "status": "indexed",
+      "output": "extracted/unity/bundles/b_a38dff04ab8594e2/textassets/7998664909183673920_UI_heroLive2d_1045.txt"
+    },
+    {
+      "source": "textasset",
+      "bundle": "download/xlualogic/modules/marry.assetbundle",
+      "pathId": "8215272726591916374",
+      "type": "TextAsset",
+      "name": "UI_heroLive2d_31106",
+      "size": "3391",
+      "status": "indexed",
+      "output": "extracted/unity/bundles/b_a38dff04ab8594e2/textassets/8215272726591916374_UI_heroLive2d_31106.txt"
+    },
+    {
+      "source": "textasset",
+      "bundle": "download/xlualogic/modules/marry.assetbundle",
+      "pathId": "9056735819877408320",
+      "type": "TextAsset",
+      "name": "UI_heroLive2d_1047",
+      "size": "3309",
+      "status": "indexed",
+      "output": "extracted/unity/bundles/b_a38dff04ab8594e2/textassets/9056735819877408320_UI_heroLive2d_1047.txt"
+    },
+    {
+      "source": "textasset",
+      "bundle": "download/xlualogic/modules/marry.assetbundle",
+      "pathId": "9181008506993496456",
+      "type": "TextAsset",
+      "name": "UI_heroLive2d_1020",
+      "size": "17121",
+      "status": "indexed",
+      "output": "extracted/unity/bundles/b_a38dff04ab8594e2/textassets/9181008506993496456_UI_heroLive2d_1020.txt"
+    },
+    {
+      "source": "textasset",
+      "bundle": "download/xlualogic/modules/marry.assetbundle",
+      "pathId": "9212869666100284431",
+      "type": "TextAsset",
+      "name": "UI_heroLive2d_1018",
+      "size": "27642",
+      "status": "indexed",
+      "output": "extracted/unity/bundles/b_a38dff04ab8594e2/textassets/9212869666100284431_UI_heroLive2d_1018.txt"
+    },
+    {
+      "source": "textasset",
+      "bundle": "download/xlualogic/modules/marry.assetbundle",
+      "pathId": "9222478056940306703",
+      "type": "TextAsset",
+      "name": "UI_heroLive2d_1061",
+      "size": "36922",
+      "status": "indexed",
+      "output": "extracted/unity/bundles/b_a38dff04ab8594e2/textassets/9222478056940306703_UI_heroLive2d_1061.txt"
+    },
+    {
+      "source": "image",
+      "bundle": "download/live2d/1043.assetbundle",
+      "pathId": "-3903353114922054368",
+      "type": "Texture2D",
+      "name": "texture_00",
+      "size": "2048x2048",
+      "status": "indexed",
+      "output": "extracted/unity/bundles/b_2618c58d7b326e63/images/T/-3903353114922054368_texture_00.png"
+    },
+    {
+      "source": "image",
+      "bundle": "download/live2d/1043.assetbundle",
+      "pathId": "7479956811166899722",
+      "type": "Texture2D",
+      "name": "texture_01",
+      "size": "2048x2048",
+      "status": "indexed",
+      "output": "extracted/unity/bundles/b_2618c58d7b326e63/images/T/7479956811166899722_texture_01.png"
+    },
+    {
+      "source": "image",
+      "bundle": "download/roleprefabsandres/battleprefabandres/1005.assetbundle",
+      "pathId": "6434492547273058491",
+      "type": "Texture2D",
+      "name": "1005",
+      "size": "2048x1024",
+      "status": "indexed",
+      "output": "extracted/unity/bundles/b_dbb6eb9e5987445e/images/T/6434492547273058491_1005.png"
+    },
+    {
+      "source": "image",
+      "bundle": "download/roleprefabsandres/paintingprefabandres/1005.assetbundle",
+      "pathId": "-4530015849589015318",
+      "type": "Texture2D",
+      "name": "noalphabg_PaintingBG_1005",
+      "size": "1680x720",
+      "status": "indexed",
+      "output": "extracted/unity/bundles/b_a47980c73bab4250/images/T/-4530015849589015318_noalphabg_PaintingBG_1005.png"
+    },
+    {
+      "source": "image",
+      "bundle": "download/roleprefabsandres/paintingprefabandres/1005.assetbundle",
+      "pathId": "-3719539670443368749",
+      "type": "Texture2D",
+      "name": "SP_heroname_1005",
+      "size": "512x512",
+      "status": "indexed",
+      "output": "extracted/unity/bundles/b_a47980c73bab4250/images/T/-3719539670443368749_SP_heroname_1005.png"
+    },
+    {
+      "source": "image",
+      "bundle": "download/roleprefabsandres/paintingprefabandres/1005.assetbundle",
+      "pathId": "-3614049832703651791",
+      "type": "Texture2D",
+      "name": "Painting_1005_back",
+      "size": "2048x1024",
+      "status": "indexed",
+      "output": "extracted/unity/bundles/b_a47980c73bab4250/images/T/-3614049832703651791_Painting_1005_back.png"
+    },
+    {
+      "source": "image",
+      "bundle": "download/roleprefabsandres/paintingprefabandres/1005.assetbundle",
+      "pathId": "-3423690144217353563",
+      "type": "Texture2D",
+      "name": "noalphabg_Tujian_1005",
+      "size": "1154x577",
+      "status": "indexed",
+      "output": "extracted/unity/bundles/b_a47980c73bab4250/images/T/-3423690144217353563_noalphabg_Tujian_1005.png"
+    },
+    {
+      "source": "image",
+      "bundle": "download/roleprefabsandres/paintingprefabandres/1005.assetbundle",
+      "pathId": "-1388925835232960436",
+      "type": "Texture2D",
+      "name": "Painting_1005",
+      "size": "2048x2048",
+      "status": "indexed",
+      "output": "extracted/unity/bundles/b_a47980c73bab4250/images/T/-1388925835232960436_Painting_1005.png"
+    },
+    {
+      "source": "image",
+      "bundle": "download/roleprefabsandres/paintingprefabandres/1005.assetbundle",
+      "pathId": "1249758843074273264",
+      "type": "Sprite",
+      "name": "noalphabg_PaintingBG_1005",
+      "size": "1680x720",
+      "status": "indexed",
+      "output": "extracted/unity/bundles/b_a47980c73bab4250/images/S/1249758843074273264_noalphabg_PaintingBG_1005.png"
+    },
+    {
+      "source": "image",
+      "bundle": "download/roleprefabsandres/paintingprefabandres/1005.assetbundle",
+      "pathId": "2762434863806027550",
+      "type": "Sprite",
+      "name": "noalphabg_Tujian_1005",
+      "size": "1154x577",
+      "status": "indexed",
+      "output": "extracted/unity/bundles/b_a47980c73bab4250/images/S/2762434863806027550_noalphabg_Tujian_1005.png"
+    },
+    {
+      "source": "image",
+      "bundle": "download/roleprefabsandres/paintingsleepprefabandres/1005.assetbundle",
+      "pathId": "-561917284764586450",
+      "type": "Texture2D",
+      "name": "noalphabg_Neiyi_1005",
+      "size": "1154x577",
+      "status": "indexed",
+      "output": "extracted/unity/bundles/b_f4f75aa40ac20f09/images/T/-561917284764586450_noalphabg_Neiyi_1005.png"
+    },
+    {
+      "source": "image",
+      "bundle": "download/roleprefabsandres/paintingsleepprefabandres/1005.assetbundle",
+      "pathId": "1276076274649696666",
+      "type": "Texture2D",
+      "name": "100504",
+      "size": "2048x2048",
+      "status": "indexed",
+      "output": "extracted/unity/bundles/b_f4f75aa40ac20f09/images/T/1276076274649696666_100504.png"
+    },
+    {
+      "source": "image",
+      "bundle": "download/roleprefabsandres/paintingsleepprefabandres/1005.assetbundle",
+      "pathId": "7795279116759732264",
+      "type": "Sprite",
+      "name": "noalphabg_Neiyi_1005",
+      "size": "1154x577",
+      "status": "indexed",
+      "output": "extracted/unity/bundles/b_f4f75aa40ac20f09/images/S/7795279116759732264_noalphabg_Neiyi_1005.png"
+    },
+    {
+      "source": "image",
+      "bundle": "download/roleprefabsandres/rolebigsetpainting/1005.assetbundle",
+      "pathId": "-8194239723605276549",
+      "type": "Texture2D",
+      "name": "JJC_zhezhao_1005",
+      "size": "233x512",
+      "status": "indexed",
+      "output": "extracted/unity/bundles/b_9dd4a303d80bec5b/images/T/-8194239723605276549_JJC_zhezhao_1005.png"
+    },
+    {
+      "source": "image",
+      "bundle": "download/roleprefabsandres/rolebigsetpainting/1005.assetbundle",
+      "pathId": "-5258177954875929110",
+      "type": "Texture2D",
+      "name": "Storyreview_1005",
+      "size": "188x118",
+      "status": "indexed",
+      "output": "extracted/unity/bundles/b_9dd4a303d80bec5b/images/T/-5258177954875929110_Storyreview_1005.png"
+    },
+    {
+      "source": "image",
+      "bundle": "download/roleprefabsandres/rolebigsetpainting/1005.assetbundle",
+      "pathId": "-5034729779409729366",
+      "type": "Sprite",
+      "name": "JJC_zhezhao_1005",
+      "size": "228x468",
+      "status": "indexed",
+      "output": "extracted/unity/bundles/b_9dd4a303d80bec5b/images/S/-5034729779409729366_JJC_zhezhao_1005.png"
+    },
+    {
+      "source": "image",
+      "bundle": "download/roleprefabsandres/rolebigsetpainting/1005.assetbundle",
+      "pathId": "580777516592324989",
+      "type": "Texture2D",
+      "name": "1005",
+      "size": "233x512",
+      "status": "indexed",
+      "output": "extracted/unity/bundles/b_9dd4a303d80bec5b/images/T/580777516592324989_1005.png"
+    },
+    {
+      "source": "image",
+      "bundle": "download/roleprefabsandres/rolebigsetpainting/1005.assetbundle",
+      "pathId": "2049916937252513023",
+      "type": "Texture2D",
+      "name": "1005_marry_card",
+      "size": "1280x708",
+      "status": "indexed",
+      "output": "extracted/unity/bundles/b_9dd4a303d80bec5b/images/T/2049916937252513023_1005_marry_card.png"
+    },
+    {
+      "source": "image",
+      "bundle": "download/roleprefabsandres/rolebigsetpainting/1005.assetbundle",
+      "pathId": "2807178134315115338",
+      "type": "Texture2D",
+      "name": "PHB_zhezhao_1005",
+      "size": "512x512",
+      "status": "indexed",
+      "output": "extracted/unity/bundles/b_9dd4a303d80bec5b/images/T/2807178134315115338_PHB_zhezhao_1005.png"
+    },
+    {
+      "source": "image",
+      "bundle": "download/roleprefabsandres/rolebigsetpainting/1005.assetbundle",
+      "pathId": "3321510896426918156",
+      "type": "Texture2D",
+      "name": "T_ditu_1005",
+      "size": "335x153",
+      "status": "indexed",
+      "output": "extracted/unity/bundles/b_9dd4a303d80bec5b/images/T/3321510896426918156_T_ditu_1005.png"
+    },
+    {
+      "source": "image",
+      "bundle": "download/roleprefabsandres/rolebigsetpainting/1005.assetbundle",
+      "pathId": "3403778444496367425",
+      "type": "Texture2D",
+      "name": "1005_marry_dote",
+      "size": "294x566",
+      "status": "indexed",
+      "output": "extracted/unity/bundles/b_9dd4a303d80bec5b/images/T/3403778444496367425_1005_marry_dote.png"
+    },
+    {
+      "source": "image",
+      "bundle": "download/roleprefabsandres/rolebigsetpainting/1005.assetbundle",
+      "pathId": "3465275288891941851",
+      "type": "Sprite",
+      "name": "1005_marry_dz",
+      "size": "232x512",
+      "status": "indexed",
+      "output": "extracted/unity/bundles/b_9dd4a303d80bec5b/images/S/3465275288891941851_1005_marry_dz.png"
+    },
+    {
+      "source": "image",
+      "bundle": "download/roleprefabsandres/rolebigsetpainting/1005.assetbundle",
+      "pathId": "3575297024222580856",
+      "type": "Texture2D",
+      "name": "1005_2",
+      "size": "512x512",
+      "status": "indexed",
+      "output": "extracted/unity/bundles/b_9dd4a303d80bec5b/images/T/3575297024222580856_1005_2.png"
+    },
+    {
+      "source": "image",
+      "bundle": "download/roleprefabsandres/rolebigsetpainting/1005.assetbundle",
+      "pathId": "4769943511693141536",
+      "type": "Sprite",
+      "name": "1005_marry",
+      "size": "232x512",
+      "status": "indexed",
+      "output": "extracted/unity/bundles/b_9dd4a303d80bec5b/images/S/4769943511693141536_1005_marry.png"
+    },
+    {
+      "source": "image",
+      "bundle": "download/roleprefabsandres/rolebigsetpainting/1005.assetbundle",
+      "pathId": "5013873892407844736",
+      "type": "Sprite",
+      "name": "homepage_underwear_1005",
+      "size": "233x512",
+      "status": "indexed",
+      "output": "extracted/unity/bundles/b_9dd4a303d80bec5b/images/S/5013873892407844736_homepage_underwear_1005.png"
+    },
+    {
+      "source": "image",
+      "bundle": "download/roleprefabsandres/rolebigsetpainting/1005.assetbundle",
+      "pathId": "5412379577107152517",
+      "type": "Texture2D",
+      "name": "1005_marry_dz",
+      "size": "232x512",
+      "status": "indexed",
+      "output": "extracted/unity/bundles/b_9dd4a303d80bec5b/images/T/5412379577107152517_1005_marry_dz.png"
+    },
+    {
+      "source": "image",
+      "bundle": "download/roleprefabsandres/rolebigsetpainting/1005.assetbundle",
+      "pathId": "5972182800888265379",
+      "type": "Texture2D",
+      "name": "starHeroName_1005",
+      "size": "92x146",
+      "status": "indexed",
+      "output": "extracted/unity/bundles/b_9dd4a303d80bec5b/images/T/5972182800888265379_starHeroName_1005.png"
+    },
+    {
+      "source": "image",
+      "bundle": "download/roleprefabsandres/rolebigsetpainting/1005.assetbundle",
+      "pathId": "6473801716526482946",
+      "type": "Texture2D",
+      "name": "1005_marry_ring_select",
+      "size": "287x432",
+      "status": "indexed",
+      "output": "extracted/unity/bundles/b_9dd4a303d80bec5b/images/T/6473801716526482946_1005_marry_ring_select.png"
+    },
+    {
+      "source": "image",
+      "bundle": "download/roleprefabsandres/rolebigsetpainting/1005.assetbundle",
+      "pathId": "7151044648774064856",
+      "type": "Texture2D",
+      "name": "1005_marry_ring_select_2",
+      "size": "287x432",
+      "status": "indexed",
+      "output": "extracted/unity/bundles/b_9dd4a303d80bec5b/images/T/7151044648774064856_1005_marry_ring_select_2.png"
+    },
+    {
+      "source": "image",
+      "bundle": "download/roleprefabsandres/rolebigsetpainting/1005.assetbundle",
+      "pathId": "8752902767489149565",
+      "type": "Texture2D",
+      "name": "homepage_underwear_1005",
+      "size": "233x512",
+      "status": "indexed",
+      "output": "extracted/unity/bundles/b_9dd4a303d80bec5b/images/T/8752902767489149565_homepage_underwear_1005.png"
+    },
+    {
+      "source": "image",
+      "bundle": "download/roleprefabsandres/rolebigsetpainting/1005.assetbundle",
+      "pathId": "9074999295155165373",
+      "type": "Texture2D",
+      "name": "1005_marry",
+      "size": "232x512",
+      "status": "indexed",
+      "output": "extracted/unity/bundles/b_9dd4a303d80bec5b/images/T/9074999295155165373_1005_marry.png"
+    },
+    {
+      "source": "image",
+      "bundle": "download/roleprefabsandres/rolebigsetpainting/1005.assetbundle",
+      "pathId": "9159474728264371616",
+      "type": "Texture2D",
+      "name": "T_ditu_marry_1005",
+      "size": "335x152",
+      "status": "indexed",
+      "output": "extracted/unity/bundles/b_9dd4a303d80bec5b/images/T/9159474728264371616_T_ditu_marry_1005.png"
+    },
+    {
+      "source": "image",
+      "bundle": "download/roleprefabsandres/storyprefabandres/1005_4.assetbundle",
+      "pathId": "-4754424371127142452",
+      "type": "Texture2D",
+      "name": "1005_4",
+      "size": "1024x512",
+      "status": "indexed",
+      "output": "extracted/unity/bundles/b_e3075c4798faeb04/images/T/-4754424371127142452_1005_4.png"
+    }
+  ],
+  "luaEvidence": [
+    {
+      "label": "OnInit review-only active changes",
+      "start": 103,
+      "end": 130,
+      "lines": [
+        {
+          "line": 103,
+          "text": "function OnInit(e,t)"
+        },
+        {
+          "line": 104,
+          "text": "ModulesInit.UIPosMgr:setWorldPos(ModulesInit.UIPosMgr.EPosType.Bag,btnToggle2.transform.position)"
+        },
+        {
+          "line": 105,
+          "text": "InitLeftNode()"
+        },
+        {
+          "line": 106,
+          "text": "InitRightNode()"
+        },
+        {
+          "line": 107,
+          "text": "btn_left.onClick:AddListener(onBtnLeft)"
+        },
+        {
+          "line": 108,
+          "text": "btn_right.onClick:AddListener(onBtnRight)"
+        },
+        {
+          "line": 109,
+          "text": "local t=UI_touchSpine:GetComponent(typeof(CS.YouYou.UIDragEvent))"
+        },
+        {
+          "line": 110,
+          "text": "t.onClick=onBtnSpine"
+        },
+        {
+          "line": 111,
+          "text": "ee=UI_heroSpine.transform.position"
+        },
+        {
+          "line": 112,
+          "text": "InitActBtn()"
+        },
+        {
+          "line": 113,
+          "text": "InitFaceActBtn()"
+        },
+        {
+          "line": 114,
+          "text": "GameFunction:GetFunctionOpenLists()"
+        },
+        {
+          "line": 115,
+          "text": "if GameTools:IsReview()then"
+        },
+        {
+          "line": 116,
+          "text": "LuaUtils.SetActive(btn_qinmi.transform,false)"
+        },
+        {
+          "line": 117,
+          "text": "LuaUtils.SetActive(node_renwu.transform,false)"
+        },
+        {
+          "line": 118,
+          "text": "LuaUtils.SetActive(btn_twitter.transform,false)"
+        },
+        {
+          "line": 119,
+          "text": "LuaUtils.SetActive(btn_discord.transform,false)"
+        },
+        {
+          "line": 120,
+          "text": "LuaUtils.SetActive(btn_beijing.transform,false)"
+        },
+        {
+          "line": 121,
+          "text": "LuaUtils.SetActive(btn_naver.transform,false)"
+        },
+        {
+          "line": 122,
+          "text": "local e=e:Find(\"right/node_bottom/toogles/toggle3\")"
+        },
+        {
+          "line": 123,
+          "text": "LuaUtils.SetActive(e,false)"
+        },
+        {
+          "line": 124,
+          "text": "LuaUtils.SetActive(mian_wanfa_item_3.transform,false)"
+        },
+        {
+          "line": 125,
+          "text": "LuaUtils.SetActive(mian_wanfa_item_4.transform,false)"
+        },
+        {
+          "line": 126,
+          "text": "else"
+        },
+        {
+          "line": 127,
+          "text": "end"
+        },
+        {
+          "line": 128,
+          "text": "local e=e:GetComponent(typeof(CS.UnityEngine.Animator))"
+        },
+        {
+          "line": 129,
+          "text": "e.keepAnimatorControllerStateOnDisable=true"
+        },
+        {
+          "line": 130,
+          "text": "UIUtil.AddTouchEventMulti(autoHelper_Root.transform,onClickDownAutoHelper,onClickUpAutoHelper,OnBeginDragAutoHelper,onDragingAutoHelper,OnEndDragAutoHelper)"
+        }
+      ]
+    },
+    {
+      "label": "refreshRightMiddleView and item 3/4 dynamic active state",
+      "start": 1327,
+      "end": 1385,
+      "lines": [
+        {
+          "line": 1327,
+          "text": "function refreshRightMiddleView()"
+        },
+        {
+          "line": 1328,
+          "text": "local e=mian_wanfa_item_1:GetComponents()"
+        },
+        {
+          "line": 1329,
+          "text": "LuaUtils.SetImageSprite(e[\"wanfaBgImg\"],Y[1].bgImg)"
+        },
+        {
+          "line": 1330,
+          "text": "LuaUtils.SetTextMeshText(e[\"text_name\"],GameTools.GetLocalize(Y[1].text,LanguageCategory.LangCommon))"
+        },
+        {
+          "line": 1331,
+          "text": "local e=mian_wanfa_item_2:GetComponents()"
+        },
+        {
+          "line": 1332,
+          "text": "LuaUtils.SetImageSprite(e[\"wanfaBgImg\"],Y[2].bgImg)"
+        },
+        {
+          "line": 1333,
+          "text": "LuaUtils.SetTextMeshText(e[\"text_name\"],GameTools.GetLocalize(Y[2].text,LanguageCategory.LangCommon))"
+        },
+        {
+          "line": 1334,
+          "text": "SetLimitPageView()"
+        },
+        {
+          "line": 1335,
+          "text": "SetActJumpPageView()"
+        },
+        {
+          "line": 1336,
+          "text": "end"
+        },
+        {
+          "line": 1337,
+          "text": "function OnActFirstDayRewardStatus()"
+        },
+        {
+          "line": 1338,
+          "text": "SetLimitPageView()"
+        },
+        {
+          "line": 1339,
+          "text": "end"
+        },
+        {
+          "line": 1340,
+          "text": "function SetLimitPageView()"
+        },
+        {
+          "line": 1341,
+          "text": "local a,t=ModulesInit.MainPageLimitMgr:checkCanShowLimitPage()"
+        },
+        {
+          "line": 1342,
+          "text": "if re==a and de==t then"
+        },
+        {
+          "line": 1343,
+          "text": "return"
+        },
+        {
+          "line": 1344,
+          "text": "end"
+        },
+        {
+          "line": 1345,
+          "text": "re=a"
+        },
+        {
+          "line": 1346,
+          "text": "de=t"
+        },
+        {
+          "line": 1347,
+          "text": "local e=mian_wanfa_item_3:GetComponents()"
+        },
+        {
+          "line": 1348,
+          "text": "if a==nil then"
+        },
+        {
+          "line": 1349,
+          "text": "LuaUtils.SetActive(mian_wanfa_item_3.transform,false)"
+        },
+        {
+          "line": 1350,
+          "text": "else"
+        },
+        {
+          "line": 1351,
+          "text": "if GameEntry.IsReview then"
+        },
+        {
+          "line": 1352,
+          "text": "return"
+        },
+        {
+          "line": 1353,
+          "text": "end"
+        },
+        {
+          "line": 1354,
+          "text": "LuaUtils.SetActive(mian_wanfa_item_3.transform,true)"
+        },
+        {
+          "line": 1355,
+          "text": "local t=ModulesInit.MainPageLimitMgr:getLimitTimeCfgById(t)"
+        },
+        {
+          "line": 1356,
+          "text": "local a=ModulesInit.MainPageLimitMgr:GetLimitWanfaImg(t)"
+        },
+        {
+          "line": 1357,
+          "text": "LuaUtils.SetImageSprite(e[\"wanfaBgImg\"],a)"
+        },
+        {
+          "line": 1358,
+          "text": "local a=ModulesInit.MainPageLimitMgr:GetLimitTitleText(t)"
+        },
+        {
+          "line": 1359,
+          "text": "LuaUtils.SetTextMeshText(e[\"text_name\"],a)"
+        },
+        {
+          "line": 1360,
+          "text": "LuaUtils.SetActive(e[\"text_wanfaTips\"].transform,false)"
+        },
+        {
+          "line": 1361,
+          "text": "LuaUtils.SetActive(e[\"im_bg\"].transform,false)"
+        },
+        {
+          "line": 1362,
+          "text": "local t=ModulesInit.MainPageLimitMgr:GetLimitTipText(t)"
+        },
+        {
+          "line": 1363,
+          "text": "if t~=\"\"then"
+        },
+        {
+          "line": 1364,
+          "text": "LuaUtils.SetActive(e[\"text_wanfaTips\"].transform,true)"
+        },
+        {
+          "line": 1365,
+          "text": "LuaUtils.SetTextMeshText(e[\"text_wanfaTips\"],t)"
+        },
+        {
+          "line": 1366,
+          "text": "LuaUtils.SetActive(e[\"im_bg\"].transform,true)"
+        },
+        {
+          "line": 1367,
+          "text": "end"
+        },
+        {
+          "line": 1368,
+          "text": "end"
+        },
+        {
+          "line": 1369,
+          "text": "end"
+        },
+        {
+          "line": 1370,
+          "text": "function SetActJumpPageView()"
+        },
+        {
+          "line": 1371,
+          "text": "local e=ModulesInit.MainPageLimitMgr:checkCanShowActJumpPage()"
+        },
+        {
+          "line": 1372,
+          "text": "local t=mian_wanfa_item_4:GetComponents()"
+        },
+        {
+          "line": 1373,
+          "text": "if e==nil then"
+        },
+        {
+          "line": 1374,
+          "text": "LuaUtils.SetActive(mian_wanfa_item_4.transform,false)"
+        },
+        {
+          "line": 1375,
+          "text": "else"
+        },
+        {
+          "line": 1376,
+          "text": "if GameEntry.IsReview then"
+        },
+        {
+          "line": 1377,
+          "text": "return"
+        },
+        {
+          "line": 1378,
+          "text": "end"
+        },
+        {
+          "line": 1379,
+          "text": "LuaUtils.SetActive(mian_wanfa_item_4.transform,true)"
+        },
+        {
+          "line": 1380,
+          "text": "LuaUtils.SetImageSprite(t[\"wanfaBgImg\"],e.showIcon)"
+        },
+        {
+          "line": 1381,
+          "text": "LuaUtils.SetTextMeshText(t[\"text_name\"],GameTools.GetLocalize(e.activityName,LanguageCategory.LangCommon))"
+        },
+        {
+          "line": 1382,
+          "text": "local a=GameTools.GetLocalize(e.buttonKey,LanguageCategory.LangCommon)"
+        },
+        {
+          "line": 1383,
+          "text": "LuaUtils.SetTextMeshText(t[\"text_wanfaTips\"],a)"
+        },
+        {
+          "line": 1384,
+          "text": "LuaUtils.SetActive(t[\"un_MainInterface_fire\"].transform,e.activityId==ModulesInit.FullServerBattleYearMgr.ACT_ID)"
+        },
+        {
+          "line": 1385,
+          "text": "end"
+        }
+      ]
+    },
+    {
+      "label": "right-bottom function gates",
+      "start": 1419,
+      "end": 1489,
+      "lines": [
+        {
+          "line": 1419,
+          "text": "function SetFuncShowStatus(e,t,n)"
+        },
+        {
+          "line": 1420,
+          "text": "LuaUtils.SetActive(e.transform,false)"
+        },
+        {
+          "line": 1421,
+          "text": "local o=GameFunction.IsConditionShow(t)"
+        },
+        {
+          "line": 1422,
+          "text": "local a,t,i=GameFunction.IsFunctionUnLock(t,false)"
+        },
+        {
+          "line": 1423,
+          "text": "local t=\"text_wanfaTips\""
+        },
+        {
+          "line": 1424,
+          "text": "if n then"
+        },
+        {
+          "line": 1425,
+          "text": "t='toggle_node/text_wanfaTips'"
+        },
+        {
+          "line": 1426,
+          "text": "end"
+        },
+        {
+          "line": 1427,
+          "text": "if o or a then"
+        },
+        {
+          "line": 1428,
+          "text": "LuaUtils.SetActive(e.transform,true)"
+        },
+        {
+          "line": 1429,
+          "text": "if o and not a then"
+        },
+        {
+          "line": 1430,
+          "text": "SetActBtnGray(e.transform,true)"
+        },
+        {
+          "line": 1431,
+          "text": "local a=e.transform:Find(t)"
+        },
+        {
+          "line": 1432,
+          "text": "if IsNil(a)then"
+        },
+        {
+          "line": 1433,
+          "text": "ErrInfoCollectMgr:AddInfo(\"default\",\"UI_MainPage---\",\"SetFuncShowStatus------\"..tostring(t))"
+        },
+        {
+          "line": 1434,
+          "text": "return true"
+        },
+        {
+          "line": 1435,
+          "text": "end"
+        },
+        {
+          "line": 1436,
+          "text": "LuaUtils.SetChildLabelTextMeshText(e.transform,t,i)"
+        },
+        {
+          "line": 1437,
+          "text": "LuaUtils.SetActive(a.transform,true)"
+        },
+        {
+          "line": 1438,
+          "text": "else"
+        },
+        {
+          "line": 1439,
+          "text": "SetActBtnGray(e.transform,false)"
+        },
+        {
+          "line": 1440,
+          "text": "local e=e.transform:Find(t)"
+        },
+        {
+          "line": 1441,
+          "text": "if IsNil(e)then"
+        },
+        {
+          "line": 1442,
+          "text": "ErrInfoCollectMgr:AddInfo(\"default\",\"UI_MainPage---\",\"SetFuncShowStatus------\"..tostring(t))"
+        },
+        {
+          "line": 1443,
+          "text": "return true"
+        },
+        {
+          "line": 1444,
+          "text": "end"
+        },
+        {
+          "line": 1445,
+          "text": "LuaUtils.SetActive(e.transform,false)"
+        },
+        {
+          "line": 1446,
+          "text": "end"
+        },
+        {
+          "line": 1447,
+          "text": "return true"
+        },
+        {
+          "line": 1448,
+          "text": "end"
+        },
+        {
+          "line": 1449,
+          "text": "return false"
+        },
+        {
+          "line": 1450,
+          "text": "end"
+        },
+        {
+          "line": 1451,
+          "text": "function SetActBtnGray(a,t)"
+        },
+        {
+          "line": 1452,
+          "text": "local e=LuaUtils.GetLuaComBinder(a.transform)"
+        },
+        {
+          "line": 1453,
+          "text": "if e then"
+        },
+        {
+          "line": 1454,
+          "text": "local e=e:GetComponents()"
+        },
+        {
+          "line": 1455,
+          "text": "if e and e[\"spine_root\"]then"
+        },
+        {
+          "line": 1456,
+          "text": "UIUtil.SetSpineRenderGray(e[\"spine_root\"].transform,t)"
+        },
+        {
+          "line": 1457,
+          "text": "end"
+        },
+        {
+          "line": 1458,
+          "text": "end"
+        },
+        {
+          "line": 1459,
+          "text": "UIUtil.SetSpriteRenderGray(a,t)"
+        },
+        {
+          "line": 1460,
+          "text": "end"
+        },
+        {
+          "line": 1461,
+          "text": "function refreshRightBottomView()"
+        },
+        {
+          "line": 1462,
+          "text": "for e=4,7 do"
+        },
+        {
+          "line": 1463,
+          "text": "LuaUtils.SetActive(selfEnv[\"toggle\"..e],false)"
+        },
+        {
+          "line": 1464,
+          "text": "end"
+        },
+        {
+          "line": 1465,
+          "text": "local e=0"
+        },
+        {
+          "line": 1466,
+          "text": "if GameTools:IsReview()==false then"
+        },
+        {
+          "line": 1467,
+          "text": "local t=GetMainInletTopFunc()"
+        },
+        {
+          "line": 1468,
+          "text": "local t=SetFuncShowStatus(selfEnv[\"toggle3\"],t,true)"
+        },
+        {
+          "line": 1469,
+          "text": "if t then"
+        },
+        {
+          "line": 1470,
+          "text": "e=e+1"
+        },
+        {
+          "line": 1471,
+          "text": "end"
+        },
+        {
+          "line": 1472,
+          "text": "end"
+        },
+        {
+          "line": 1473,
+          "text": "local t=SetFuncShowStatus(selfEnv[\"toggle5\"],GameFunctionType.Guild,true)"
+        },
+        {
+          "line": 1474,
+          "text": "if t then"
+        },
+        {
+          "line": 1475,
+          "text": "e=e+1"
+        },
+        {
+          "line": 1476,
+          "text": "end"
+        },
+        {
+          "line": 1477,
+          "text": "local t=SetFuncShowStatus(selfEnv[\"toggle6\"],GameFunctionType.City,true)"
+        },
+        {
+          "line": 1478,
+          "text": "if t then"
+        },
+        {
+          "line": 1479,
+          "text": "e=e+1"
+        },
+        {
+          "line": 1480,
+          "text": "end"
+        },
+        {
+          "line": 1481,
+          "text": "local t=SetFuncShowStatus(selfEnv[\"toggle4\"],GameFunctionType.Amulet,true)"
+        },
+        {
+          "line": 1482,
+          "text": "if t then"
+        },
+        {
+          "line": 1483,
+          "text": "e=e+1"
+        },
+        {
+          "line": 1484,
+          "text": "end"
+        },
+        {
+          "line": 1485,
+          "text": "if SummonPetMgr:GetSummonPetUnlock()then"
+        },
+        {
+          "line": 1486,
+          "text": "e=e+1"
+        },
+        {
+          "line": 1487,
+          "text": "LuaUtils.SetActive(selfEnv[\"toggle7\"],true)"
+        },
+        {
+          "line": 1488,
+          "text": "end"
+        },
+        {
+          "line": 1489,
+          "text": "LuaUtils.SetRectTransformSizeDelta(bg_bottom.transform,320+e*110,52)"
+        }
+      ]
+    },
+    {
+      "label": "refreshMiddle normal hero Spine and background path",
+      "start": 1491,
+      "end": 1560,
+      "lines": [
+        {
+          "line": 1491,
+          "text": "function refreshMiddle(o,e)"
+        },
+        {
+          "line": 1492,
+          "text": "local e=PlayerMgr.mainShowHeroList[t]"
+        },
+        {
+          "line": 1493,
+          "text": "if e==nil then"
+        },
+        {
+          "line": 1494,
+          "text": "e=PlayerMgr.mainShowHeroList[1]"
+        },
+        {
+          "line": 1495,
+          "text": "end"
+        },
+        {
+          "line": 1496,
+          "text": "local n=false"
+        },
+        {
+          "line": 1497,
+          "text": "F=false"
+        },
+        {
+          "line": 1498,
+          "text": "local i=e.heroDid"
+        },
+        {
+          "line": 1499,
+          "text": "DynamicModuleRes.CheckResAndDownload({"
+        },
+        {
+          "line": 1500,
+          "text": "[1]={i},"
+        },
+        {
+          "line": 1501,
+          "text": "},function()"
+        },
+        {
+          "line": 1502,
+          "text": "if e.isUnderwear then"
+        },
+        {
+          "line": 1503,
+          "text": "n=true"
+        },
+        {
+          "line": 1504,
+          "text": "UIUtil.GetPlayerUnderwearSpine("
+        },
+        {
+          "line": 1505,
+          "text": "i,"
+        },
+        {
+          "line": 1506,
+          "text": "UI_heroSpine.transform,"
+        },
+        {
+          "line": 1507,
+          "text": "\"haremPara\","
+        },
+        {
+          "line": 1508,
+          "text": "function(e)"
+        },
+        {
+          "line": 1509,
+          "text": "a=e"
+        },
+        {
+          "line": 1510,
+          "text": "r=nil"
+        },
+        {
+          "line": 1511,
+          "text": "DisposeMarryHeroModel()"
+        },
+        {
+          "line": 1512,
+          "text": "spinePoolDespawn()"
+        },
+        {
+          "line": 1513,
+          "text": "if o then"
+        },
+        {
+          "line": 1514,
+          "text": "o()"
+        },
+        {
+          "line": 1515,
+          "text": "end"
+        },
+        {
+          "line": 1516,
+          "text": "playLoopUnderwearSpine(e)"
+        },
+        {
+          "line": 1517,
+          "text": "end"
+        },
+        {
+          "line": 1518,
+          "text": ")"
+        },
+        {
+          "line": 1519,
+          "text": "LuaUtils.SetActive(UI_touchSpine.transform,true)"
+        },
+        {
+          "line": 1520,
+          "text": "elseif e.isMarry then"
+        },
+        {
+          "line": 1521,
+          "text": "F=true"
+        },
+        {
+          "line": 1522,
+          "text": "LuaUtils.SetActive(UI_touchSpine.transform,false)"
+        },
+        {
+          "line": 1523,
+          "text": "UIUtil.SpinePoolDespawnAll(a,r)"
+        },
+        {
+          "line": 1524,
+          "text": "a=nil"
+        },
+        {
+          "line": 1525,
+          "text": "r=nil"
+        },
+        {
+          "line": 1526,
+          "text": "SetMarryHeroModel(i)"
+        },
+        {
+          "line": 1527,
+          "text": "if o then"
+        },
+        {
+          "line": 1528,
+          "text": "o()"
+        },
+        {
+          "line": 1529,
+          "text": "end"
+        },
+        {
+          "line": 1530,
+          "text": "startTime()"
+        },
+        {
+          "line": 1531,
+          "text": "elseif e.isSelfMarry then"
+        },
+        {
+          "line": 1532,
+          "text": "F=true"
+        },
+        {
+          "line": 1533,
+          "text": "LuaUtils.SetActive(UI_touchSpine.transform,false)"
+        },
+        {
+          "line": 1534,
+          "text": "UIUtil.SpinePoolDespawnAll(a,r)"
+        },
+        {
+          "line": 1535,
+          "text": "a=nil"
+        },
+        {
+          "line": 1536,
+          "text": "r=nil"
+        },
+        {
+          "line": 1537,
+          "text": "SetMarryHeroModel(i,true)"
+        },
+        {
+          "line": 1538,
+          "text": "if o then"
+        },
+        {
+          "line": 1539,
+          "text": "o()"
+        },
+        {
+          "line": 1540,
+          "text": "end"
+        },
+        {
+          "line": 1541,
+          "text": "startTime()"
+        },
+        {
+          "line": 1542,
+          "text": "else"
+        },
+        {
+          "line": 1543,
+          "text": "UIUtil.GetPlayerBigSpineAll("
+        },
+        {
+          "line": 1544,
+          "text": "i,"
+        },
+        {
+          "line": 1545,
+          "text": "UI_heroSpine,"
+        },
+        {
+          "line": 1546,
+          "text": "\"homePara\","
+        },
+        {
+          "line": 1547,
+          "text": "function(e,t)"
+        },
+        {
+          "line": 1548,
+          "text": "a=e"
+        },
+        {
+          "line": 1549,
+          "text": "r=t"
+        },
+        {
+          "line": 1550,
+          "text": "DisposeMarryHeroModel()"
+        },
+        {
+          "line": 1551,
+          "text": "spinePoolDespawn()"
+        },
+        {
+          "line": 1552,
+          "text": "c=u.IDLE"
+        },
+        {
+          "line": 1553,
+          "text": "if o then"
+        },
+        {
+          "line": 1554,
+          "text": "o()"
+        },
+        {
+          "line": 1555,
+          "text": "end"
+        },
+        {
+          "line": 1556,
+          "text": "end"
+        },
+        {
+          "line": 1557,
+          "text": ")"
+        },
+        {
+          "line": 1558,
+          "text": "LuaUtils.SetActive(UI_touchSpine.transform,true)"
+        },
+        {
+          "line": 1559,
+          "text": "local e=UIUtil.GetPaintingBg(i)"
+        },
+        {
+          "line": 1560,
+          "text": "GameTools:LoadSpriteWithFullPath(UI_bg,e,true)"
+        }
+      ]
+    },
+    {
+      "label": "SetMarryHeroModel Live2D branch",
+      "start": 1637,
+      "end": 1667,
+      "lines": [
+        {
+          "line": 1637,
+          "text": "function SetMarryHeroModel(a,t)"
+        },
+        {
+          "line": 1638,
+          "text": "DisposeMarryHeroModel()"
+        },
+        {
+          "line": 1639,
+          "text": "local e=self.Depth-1"
+        },
+        {
+          "line": 1640,
+          "text": "UIUtil.GetPlayerLive2dModel(a,UI_heroSpine,nil,function(a,o)"
+        },
+        {
+          "line": 1641,
+          "text": "h=a"
+        },
+        {
+          "line": 1642,
+          "text": "m=o"
+        },
+        {
+          "line": 1643,
+          "text": "X=t"
+        },
+        {
+          "line": 1644,
+          "text": "if m then"
+        },
+        {
+          "line": 1645,
+          "text": "local a=h:Find(\"live2d_Canvas\")"
+        },
+        {
+          "line": 1646,
+          "text": "local a=a:GetComponent(typeof(CS.UnityEngine.Canvas))"
+        },
+        {
+          "line": 1647,
+          "text": "a.sortingOrder=e"
+        },
+        {
+          "line": 1648,
+          "text": "local a=m:GetComponent(typeof(CS.YouYou.Live2DHelper))"
+        },
+        {
+          "line": 1649,
+          "text": "if a then"
+        },
+        {
+          "line": 1650,
+          "text": "a:SetDepth(e)"
+        },
+        {
+          "line": 1651,
+          "text": "local e=h:GetComponent(typeof(CS.YouYou.LuaUnit))"
+        },
+        {
+          "line": 1652,
+          "text": "e:Open()"
+        },
+        {
+          "line": 1653,
+          "text": "if t then"
+        },
+        {
+          "line": 1654,
+          "text": "local e=e.scriptEnv"
+        },
+        {
+          "line": 1655,
+          "text": "e.SwitchExpression(MarryExpressionGroup.selfExpression,true)"
+        },
+        {
+          "line": 1656,
+          "text": "end"
+        },
+        {
+          "line": 1657,
+          "text": "end"
+        },
+        {
+          "line": 1658,
+          "text": "if GameTools.isSetActiveMode then"
+        },
+        {
+          "line": 1659,
+          "text": "local e=m:GetComponent(typeof(CS.UnityEngine.Animator))"
+        },
+        {
+          "line": 1660,
+          "text": "e.keepAnimatorControllerStateOnDisable=true"
+        },
+        {
+          "line": 1661,
+          "text": "end"
+        },
+        {
+          "line": 1662,
+          "text": "else"
+        },
+        {
+          "line": 1663,
+          "text": "local t=a:GetComponent(typeof(CS.UnityEngine.Canvas))"
+        },
+        {
+          "line": 1664,
+          "text": "t.sortingOrder=e"
+        },
+        {
+          "line": 1665,
+          "text": "end"
+        },
+        {
+          "line": 1666,
+          "text": "end)"
+        },
+        {
+          "line": 1667,
+          "text": "end"
+        }
+      ]
+    },
+    {
+      "label": "world button click handler",
+      "start": 2896,
+      "end": 2898,
+      "lines": [
+        {
+          "line": 2896,
+          "text": "function onBtnWorld()"
+        },
+        {
+          "line": 2897,
+          "text": "JumpMgr.OnGameJumpUIIdle()"
+        },
+        {
+          "line": 2898,
+          "text": "end"
+        }
+      ]
+    }
+  ],
+  "builderEvidence": [
+    {
+      "label": "CanvasScaler",
+      "start": 252,
+      "end": 259,
+      "lines": [
+        {
+          "line": 252,
+          "text": "            var canvasGo = new GameObject(\"Canvas_MainInterface_1280x720\", typeof(RectTransform), typeof(Canvas), typeof(CanvasScaler), typeof(GraphicRaycaster));"
+        },
+        {
+          "line": 253,
+          "text": "            var canvas = canvasGo.GetComponent<Canvas>();"
+        },
+        {
+          "line": 254,
+          "text": "            canvas.renderMode = RenderMode.ScreenSpaceOverlay;"
+        },
+        {
+          "line": 255,
+          "text": "            var scaler = canvasGo.GetComponent<CanvasScaler>();"
+        },
+        {
+          "line": 256,
+          "text": "            scaler.uiScaleMode = CanvasScaler.ScaleMode.ScaleWithScreenSize;"
+        },
+        {
+          "line": 257,
+          "text": "            scaler.referenceResolution = new Vector2(ReferenceWidth, ReferenceHeight);"
+        },
+        {
+          "line": 258,
+          "text": "            scaler.screenMatchMode = CanvasScaler.ScreenMatchMode.MatchWidthOrHeight;"
+        },
+        {
+          "line": 259,
+          "text": "            scaler.matchWidthOrHeight = 0.5f;"
+        }
+      ]
+    },
+    {
+      "label": "initial SetActive from RectTransform CSV",
+      "start": 281,
+      "end": 285,
+      "lines": [
+        {
+          "line": 281,
+          "text": "            foreach (var row in rows)"
+        },
+        {
+          "line": 282,
+          "text": "            {"
+        },
+        {
+          "line": 283,
+          "text": "                var goName = string.IsNullOrWhiteSpace(row.name) ? \"rect_\" + row.pathId : row.name + \"__\" + row.pathId;"
+        },
+        {
+          "line": 284,
+          "text": "                var go = new GameObject(SafeName(goName), typeof(RectTransform));"
+        },
+        {
+          "line": 285,
+          "text": "                go.SetActive(row.active);"
+        }
+      ]
+    },
+    {
+      "label": "sibling order and rect overrides",
+      "start": 305,
+      "end": 316,
+      "lines": [
+        {
+          "line": 305,
+          "text": "            foreach (var row in rows)"
+        },
+        {
+          "line": 306,
+          "text": "            {"
+        },
+        {
+          "line": 307,
+          "text": "                if (!byRectId.TryGetValue(row.pathId, out var parent))"
+        },
+        {
+          "line": 308,
+          "text": "                    continue;"
+        },
+        {
+          "line": 309,
+          "text": "                for (var i = 0; i < row.childIds.Length; i++)"
+        },
+        {
+          "line": 310,
+          "text": "                {"
+        },
+        {
+          "line": 311,
+          "text": "                    if (byRectId.TryGetValue(row.childIds[i], out var child) && child.parent == parent)"
+        },
+        {
+          "line": 312,
+          "text": "                        child.SetSiblingIndex(i);"
+        },
+        {
+          "line": 313,
+          "text": "                }"
+        },
+        {
+          "line": 314,
+          "text": "            }"
+        },
+        {
+          "line": 315,
+          "text": ""
+        },
+        {
+          "line": 316,
+          "text": "            var appliedRectOverrides = ApplyRectOverrides(rectOverrides, byRectId, byGameObjectId);"
+        }
+      ]
+    },
+    {
+      "label": "capture rebuilds before screenshot",
+      "start": 371,
+      "end": 383,
+      "lines": [
+        {
+          "line": 371,
+          "text": "        [MenuItem(\"GirlsWar/Capture MainInterface Restored\")]"
+        },
+        {
+          "line": 372,
+          "text": "        public static void CaptureMainInterfaceScene()"
+        },
+        {
+          "line": 373,
+          "text": "        {"
+        },
+        {
+          "line": 374,
+          "text": "            BuildMainInterfaceScene();"
+        },
+        {
+          "line": 375,
+          "text": ""
+        },
+        {
+          "line": 376,
+          "text": "            EditorSceneManager.OpenScene(ScenePath, OpenSceneMode.Single);"
+        },
+        {
+          "line": 377,
+          "text": "            var canvas = UnityEngine.Object.FindFirstObjectByType<Canvas>();"
+        },
+        {
+          "line": 378,
+          "text": "            if (canvas == null)"
+        },
+        {
+          "line": 379,
+          "text": "                throw new Exception(\"Capture failed: Canvas not found in \" + ScenePath);"
+        },
+        {
+          "line": 380,
+          "text": ""
+        },
+        {
+          "line": 381,
+          "text": "            Directory.CreateDirectory(\"Assets/RestoreCaptures\");"
+        },
+        {
+          "line": 382,
+          "text": "            var capturePath = \"Assets/RestoreCaptures/maininterface_restored_\" + (int)ReferenceWidth + \"x\" + (int)ReferenceHeight + \".png\";"
+        },
+        {
+          "line": 383,
+          "text": "            var resultPath = \"Assets/RestoreCaptures/maininterface_capture_result.json\";"
+        }
+      ]
+    },
+    {
+      "label": "ApplyRectRow preserves source localScale",
+      "start": 504,
+      "end": 510,
+      "lines": [
+        {
+          "line": 504,
+          "text": "            rt.anchorMin = row.anchorMin;"
+        },
+        {
+          "line": 505,
+          "text": "            rt.anchorMax = row.anchorMax;"
+        },
+        {
+          "line": 506,
+          "text": "            rt.pivot = row.pivot;"
+        },
+        {
+          "line": 507,
+          "text": "            rt.sizeDelta = row.sizeDelta;"
+        },
+        {
+          "line": 508,
+          "text": "            rt.anchoredPosition = row.anchoredPosition;"
+        },
+        {
+          "line": 509,
+          "text": "            rt.localScale = row.localScale;"
+        },
+        {
+          "line": 510,
+          "text": "            rt.localRotation = Quaternion.identity;"
+        }
+      ]
+    },
+    {
+      "label": "active overrides",
+      "start": 591,
+      "end": 604,
+      "lines": [
+        {
+          "line": 591,
+          "text": "        private static int ApplyActiveOverrides(OverrideSet overrides, Dictionary<string, RectTransform> byGameObjectId)"
+        },
+        {
+          "line": 592,
+          "text": "        {"
+        },
+        {
+          "line": 593,
+          "text": "            var applied = 0;"
+        },
+        {
+          "line": 594,
+          "text": "            foreach (var row in overrides.rows)"
+        },
+        {
+          "line": 595,
+          "text": "            {"
+        },
+        {
+          "line": 596,
+          "text": "                if (!row.hasActive || string.IsNullOrWhiteSpace(row.gameObjectId))"
+        },
+        {
+          "line": 597,
+          "text": "                    continue;"
+        },
+        {
+          "line": 598,
+          "text": "                if (!byGameObjectId.TryGetValue(row.gameObjectId, out var rt))"
+        },
+        {
+          "line": 599,
+          "text": "                    continue;"
+        },
+        {
+          "line": 600,
+          "text": "                rt.gameObject.SetActive(row.active);"
+        },
+        {
+          "line": 601,
+          "text": "                applied++;"
+        },
+        {
+          "line": 602,
+          "text": "            }"
+        },
+        {
+          "line": 603,
+          "text": "            Debug.Log(\"[GirlsWarRestore] Applied active overrides: \" + applied + \"/\" + overrides.rows.Count);"
+        },
+        {
+          "line": 604,
+          "text": "            return applied;"
+        }
+      ]
+    },
+    {
+      "label": "Image/Sprite application skips empty sprite refs",
+      "start": 607,
+      "end": 640,
+      "lines": [
+        {
+          "line": 607,
+          "text": "        private static int ApplyImagesAndSprites("
+        },
+        {
+          "line": 608,
+          "text": "            List<SpriteRow> sprites,"
+        },
+        {
+          "line": 609,
+          "text": "            Dictionary<string, RectTransform> byGameObjectId,"
+        },
+        {
+          "line": 610,
+          "text": "            OverrideSet overrides)"
+        },
+        {
+          "line": 611,
+          "text": "        {"
+        },
+        {
+          "line": 612,
+          "text": "            var applied = 0;"
+        },
+        {
+          "line": 613,
+          "text": "            foreach (var row in sprites)"
+        },
+        {
+          "line": 614,
+          "text": "            {"
+        },
+        {
+          "line": 615,
+          "text": "                if (!byGameObjectId.TryGetValue(row.gameObjectId, out var rt))"
+        },
+        {
+          "line": 616,
+          "text": "                    continue;"
+        },
+        {
+          "line": 617,
+          "text": "                var image = rt.GetComponent<Image>();"
+        },
+        {
+          "line": 618,
+          "text": "                if (image == null)"
+        },
+        {
+          "line": 619,
+          "text": "                    image = rt.gameObject.AddComponent<Image>();"
+        },
+        {
+          "line": 620,
+          "text": ""
+        },
+        {
+          "line": 621,
+          "text": "                var raycastTarget = row.raycastTarget;"
+        },
+        {
+          "line": 622,
+          "text": "                if (TryGetOverride(overrides, row.componentPathId, row.gameObjectId, out var overrideRow)"
+        },
+        {
+          "line": 623,
+          "text": "                    && overrideRow.hasRaycastTarget)"
+        },
+        {
+          "line": 624,
+          "text": "                {"
+        },
+        {
+          "line": 625,
+          "text": "                    raycastTarget = overrideRow.raycastTarget;"
+        },
+        {
+          "line": 626,
+          "text": "                }"
+        },
+        {
+          "line": 627,
+          "text": "                image.raycastTarget = raycastTarget;"
+        },
+        {
+          "line": 628,
+          "text": "                image.preserveAspect = row.preserveAspect;"
+        },
+        {
+          "line": 629,
+          "text": "                image.type = ToImageType(row.imageType);"
+        },
+        {
+          "line": 630,
+          "text": "                image.color = Transparent(row.color);"
+        },
+        {
+          "line": 631,
+          "text": ""
+        },
+        {
+          "line": 632,
+          "text": "                if (!string.Equals(row.status, \"ready\", StringComparison.OrdinalIgnoreCase)"
+        },
+        {
+          "line": 633,
+          "text": "                    || string.IsNullOrWhiteSpace(row.assetPath))"
+        },
+        {
+          "line": 634,
+          "text": "                    continue;"
+        },
+        {
+          "line": 635,
+          "text": ""
+        },
+        {
+          "line": 636,
+          "text": "                var sprite = AssetDatabase.LoadAssetAtPath<Sprite>(row.assetPath);"
+        },
+        {
+          "line": 637,
+          "text": "                if (sprite == null)"
+        },
+        {
+          "line": 638,
+          "text": "                {"
+        },
+        {
+          "line": 639,
+          "text": "                    Debug.LogWarning(\"[GirlsWarRestore] Sprite import missing: \" + row.assetPath + \" for \" + row.name);"
+        },
+        {
+          "line": 640,
+          "text": "                    continue;"
+        }
+      ]
+    }
+  ],
+  "conclusions": [
+    "UI_heroSpine is active in RectTransform CSV, but its Image rows are empty_sprite_ref with alpha 0 and there are no prefab children. The character is absent because no runtime Spine/Live2D asset is mounted.",
+    "Decoded UI_MainPage normal home branch uses UIUtil.GetPlayerBigSpineAll(heroDid, UI_heroSpine, 'homePara') and then UIUtil.GetPaintingBg(heroDid). For hero/background 1005 this points first to paintingprefabandres/1005, not battleprefabandres/1005.",
+    "Decoded UI_MainPage Live2D path is SetMarryHeroModel -> UIUtil.GetPlayerLive2dModel only under isMarry/isSelfMarry. Live2D assets are evidence for the marry branch, not default normal home unless player state evidence proves it.",
+    "right/node_middle/wanfaWorldNode/worldwanfaBtn are active in the source prefab rows. Lua evidence only hides mian_wanfa_item_3/4 under review/no-limit/no-act states; no normal-home SetActive evidence hides wanfaWorldNode/worldwanfaBtn.",
+    "No evidence-backed hide patch is applied. The next fix should mount the 1005 home Spine runtime on UI_heroSpine and continue looking for real runtime state evidence before changing route cluster active state."
+  ],
+  "files": {
+    "json": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_maininterface_unity\\Assets\\RestoreData\\maininterface_123_hero1005_home_spine_route_active_trace.json",
+    "markdown": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\maininterface\\MAININTERFACE_123_HERO1005_HOME_SPINE_ROUTE_ACTIVE_TRACE_RESULT.md",
+    "bundleCsv": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\maininterface\\MAININTERFACE_123_hero1005_bundle_assets.csv",
+    "routeCsv": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\maininterface\\MAININTERFACE_123_route_active_evidence.csv",
+    "tool": "C:\\Users\\godho\\Downloads\\girlswar\\_restore_tools\\cmd_archive\\123_TRACE_HERO1005_HOME_SPINE_ROUTE_ACTIVE_STATE.cmd"
+  }
+}

@@ -1,0 +1,470 @@
+{
+  "generatedAt": "2026-06-26T03:19:01",
+  "task": "MAININTERFACE_133_HOME_HEROSPINE_BG_BOTTOM_NAV_RUNTIME_LAYOUT_PROBE_NO_COORDINATE_PATCH",
+  "restoredClaim": false,
+  "scenePatchApplied": false,
+  "candidatePatchApplied": false,
+  "reference": "C:\\Users\\godho\\.codex\\attachments\\e607fc34-b674-4516-b051-8d396cd6df06\\image-1.png",
+  "candidate": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_maininterface_unity\\Assets\\RestoreCaptures\\maininterface_ui128_oldroot_runtime_activity_text_tmp_click_candidate_1680x720.png",
+  "unityProbeSummary": {
+    "generatedAt": "2026-06-26 03:15:17",
+    "restoredClaim": false,
+    "scenePatchApplied": false,
+    "candidatePatchApplied": false,
+    "scenePath": "Assets/Scenes/MainInterface_UI126_OldRootReferenceCandidate.unity",
+    "heroBgProbeCsv": "C:/Users/godho/Downloads/girlswar/reports/maininterface/MAININTERFACE_133_hero_bg_probe.csv",
+    "bottomNavProbeCsv": "C:/Users/godho/Downloads/girlswar/reports/maininterface/MAININTERFACE_133_bottom_nav_probe.csv",
+    "heroBgRows": 422,
+    "bottomNavRows": 20,
+    "activeBottomNavRows": 20,
+    "activeBottomButtons": 3,
+    "uiBgRaycastTargets": 1,
+    "uiTouchSpineActiveRows": 1,
+    "heroSkeletonRows": 1,
+    "decision": "probe_only_no_coordinate_patch",
+    "noPatchReason": "UI133 found no new source-backed static transform/layout rule for Hero1005 homePara or bottom navigation. homePara=[1,0,0] and BG1005 loading are source-backed, but UIUtil.GetPlayerBigSpineAll transform semantics and bottom nav runtime/Animator layout state remain probe-only."
+  },
+  "regionMetrics": {
+    "full": {
+      "region": "full",
+      "box": [
+        0,
+        0,
+        1680,
+        720
+      ],
+      "meanAbsDiff": 0.209078,
+      "rmsDiff": 0.293563,
+      "changedPixelRatio30": 0.70151,
+      "pixelCorrelation": 0.424216
+    },
+    "center_hero_background": {
+      "region": "center_hero_background",
+      "box": [
+        360,
+        40,
+        1180,
+        690
+      ],
+      "meanAbsDiff": 0.184641,
+      "rmsDiff": 0.27079,
+      "changedPixelRatio30": 0.61333,
+      "pixelCorrelation": 0.475187
+    },
+    "bottom_nav": {
+      "region": "bottom_nav",
+      "box": [
+        0,
+        575,
+        1680,
+        720
+      ],
+      "meanAbsDiff": 0.190902,
+      "rmsDiff": 0.270251,
+      "changedPixelRatio30": 0.68305,
+      "pixelCorrelation": 0.395621
+    },
+    "right_icon_chat": {
+      "region": "right_icon_chat",
+      "box": [
+        880,
+        60,
+        1680,
+        560
+      ],
+      "meanAbsDiff": 0.218707,
+      "rmsDiff": 0.301547,
+      "changedPixelRatio30": 0.715093,
+      "pixelCorrelation": 0.414567
+    },
+    "click_blocker_ui_bg_touch": {
+      "region": "click_blocker_ui_bg_touch",
+      "box": [
+        0,
+        0,
+        1680,
+        720
+      ],
+      "meanAbsDiff": 0.209078,
+      "rmsDiff": 0.293563,
+      "changedPixelRatio30": 0.70151,
+      "pixelCorrelation": 0.424216
+    },
+    "click_blocker_btn_discord": {
+      "region": "click_blocker_btn_discord",
+      "box": [
+        1180,
+        95,
+        1580,
+        640
+      ],
+      "meanAbsDiff": 0.208914,
+      "rmsDiff": 0.291903,
+      "changedPixelRatio30": 0.716693,
+      "pixelCorrelation": 0.493905
+    }
+  },
+  "contact": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\maininterface\\MAININTERFACE_133_REFERENCE_DIFF_CONTACT.png",
+  "heroBgProbeCsv": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\maininterface\\MAININTERFACE_133_hero_bg_probe.csv",
+  "bottomNavProbeCsv": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\maininterface\\MAININTERFACE_133_bottom_nav_probe.csv",
+  "regionDiffCsv": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\maininterface\\MAININTERFACE_133_reference_diff_regions.csv",
+  "heroDecisionCounts": {
+    "audit_row_no_patch": 207,
+    "source_backed_bg1005_binding_already_candidate_no_raycast_patch": 1,
+    "source_backed_hero_mount_probe_only_homepara_transform_unresolved": 4,
+    "guardrail_no_activity_patch_requires_snapshot": 210
+  },
+  "bottomDecisionCounts": {
+    "source_backed_bg1005_binding_already_candidate_no_raycast_patch": 1,
+    "source_backed_hero_mount_probe_only_homepara_transform_unresolved": 1,
+    "audit_row_no_patch": 18
+  },
+  "keyHeroBgRows": [
+    {
+      "name": "UI_bg__-3280973633984018659",
+      "decision": "source_backed_bg1005_binding_already_candidate_no_raycast_patch",
+      "active": "True",
+      "sibling": "0",
+      "components": "Button|CanvasRenderer|Image|RectTransform|RestoreClickLogger",
+      "raycast": "True",
+      "sprite": "runtime_UI_bg_noalphabg_PaintingBG_1005",
+      "screenRect": "-271.216,87.866,1951.215,632.134",
+      "anchoredPosition": "0,0",
+      "sizeDelta": "1680,720",
+      "localScale": "1,1,1"
+    },
+    {
+      "name": "UI_heroSpine__-2739654541028205496",
+      "decision": "source_backed_hero_mount_probe_only_homepara_transform_unresolved",
+      "active": "True",
+      "sibling": "1",
+      "components": "CanvasRenderer|Image|RectTransform|RestoreClickLogger",
+      "raycast": "True",
+      "sprite": "",
+      "screenRect": "0,0,1680,720",
+      "anchoredPosition": "0,0",
+      "sizeDelta": "0,0",
+      "localScale": "1,1,1"
+    },
+    {
+      "name": "Restore_Hero1005_SpineRoot_UI126",
+      "decision": "source_backed_hero_mount_probe_only_homepara_transform_unresolved",
+      "active": "True",
+      "sibling": "0",
+      "components": "RectTransform",
+      "raycast": "False",
+      "sprite": "",
+      "screenRect": "0,0,1680,720",
+      "anchoredPosition": "0,0",
+      "sizeDelta": "0,0",
+      "localScale": "1,1,1"
+    },
+    {
+      "name": "Restore_Hero1005_Painting_1005_UI126",
+      "decision": "source_backed_hero_mount_probe_only_homepara_transform_unresolved",
+      "active": "True",
+      "sibling": "0",
+      "components": "CanvasRenderer|RectTransform|SkeletonGraphic",
+      "raycast": "False",
+      "sprite": "",
+      "screenRect": "773.856,322.204,906.144,397.796",
+      "anchoredPosition": "0,0",
+      "sizeDelta": "100,100",
+      "localScale": "1,1,1"
+    },
+    {
+      "name": "Renderer0",
+      "decision": "source_backed_hero_mount_probe_only_homepara_transform_unresolved",
+      "active": "True",
+      "sibling": "0",
+      "components": "CanvasRenderer|RectTransform|SkeletonSubmeshGraphic",
+      "raycast": "False",
+      "sprite": "",
+      "screenRect": "773.856,322.204,906.144,397.796",
+      "anchoredPosition": "0,0",
+      "sizeDelta": "100,100",
+      "localScale": "1,1,1"
+    },
+    {
+      "name": "UI_touchSpine__-318661959714136002",
+      "decision": "audit_row_no_patch",
+      "active": "True",
+      "sibling": "2",
+      "components": "CanvasRenderer|Image|RectTransform|RestoreClickLogger",
+      "raycast": "True",
+      "sprite": "",
+      "screenRect": "410.065,171.018,1269.935,548.982",
+      "anchoredPosition": "0,0",
+      "sizeDelta": "650,500",
+      "localScale": "1,1,1"
+    }
+  ],
+  "keyBottomRows": [
+    {
+      "name": "UI_bg__-3280973633984018659",
+      "path": "Canvas_MainInterface_1280x720/MainInterface_Root_From_RectTransform_CSV/UI_MainInterface_old__2475216337245998118/UI_bg__-3280973633984018659",
+      "decision": "source_backed_bg1005_binding_already_candidate_no_raycast_patch",
+      "active": "True",
+      "button": "True",
+      "interactable": "True",
+      "raycast": "True",
+      "sprite": "runtime_UI_bg_noalphabg_PaintingBG_1005",
+      "text": "",
+      "screenRect": "-271.216,87.866,1951.215,632.134"
+    },
+    {
+      "name": "UI_heroSpine__-2739654541028205496",
+      "path": "Canvas_MainInterface_1280x720/MainInterface_Root_From_RectTransform_CSV/UI_MainInterface_old__2475216337245998118/UI_heroSpine__-2739654541028205496",
+      "decision": "source_backed_hero_mount_probe_only_homepara_transform_unresolved",
+      "active": "True",
+      "button": "False",
+      "interactable": "False",
+      "raycast": "True",
+      "sprite": "",
+      "text": "",
+      "screenRect": "0,0,1680,720"
+    },
+    {
+      "name": "UI_touchSpine__-318661959714136002",
+      "path": "Canvas_MainInterface_1280x720/MainInterface_Root_From_RectTransform_CSV/UI_MainInterface_old__2475216337245998118/UI_touchSpine__-318661959714136002",
+      "decision": "audit_row_no_patch",
+      "active": "True",
+      "button": "False",
+      "interactable": "False",
+      "raycast": "True",
+      "sprite": "",
+      "text": "",
+      "screenRect": "410.065,171.018,1269.935,548.982"
+    },
+    {
+      "name": "bg_dibu__3952187160617600986",
+      "path": "Canvas_MainInterface_1280x720/MainInterface_Root_From_RectTransform_CSV/UI_MainInterface_old__2475216337245998118/bg_dibu__3952187160617600986",
+      "decision": "audit_row_no_patch",
+      "active": "True",
+      "button": "False",
+      "interactable": "False",
+      "raycast": "False",
+      "sprite": "",
+      "text": "",
+      "screenRect": "-813.595,87.866,2493.594,124.15"
+    },
+    {
+      "name": "text__-335120057160315000",
+      "path": "Canvas_MainInterface_1280x720/MainInterface_Root_From_RectTransform_CSV/UI_MainInterface_old__2475216337245998118/bg_dibu__3952187160617600986/text__-335120057160315000",
+      "decision": "audit_row_no_patch",
+      "active": "True",
+      "button": "False",
+      "interactable": "False",
+      "raycast": "False",
+      "sprite": "",
+      "text": "탭하여 계속",
+      "screenRect": "840,90.889,840,121.127"
+    },
+    {
+      "name": "btn_download__-5750651822583549907",
+      "path": "Canvas_MainInterface_1280x720/MainInterface_Root_From_RectTransform_CSV/UI_MainInterface_old__2475216337245998118/left__8354406432209300530/btn_download__-5750651822583549907",
+      "decision": "audit_row_no_patch",
+      "active": "True",
+      "button": "True",
+      "interactable": "True",
+      "raycast": "True",
+      "sprite": "",
+      "text": "",
+      "screenRect": "487.48,209.419,594.633,275.185"
+    },
+    {
+      "name": "qipao__-5020015804280540570",
+      "path": "Canvas_MainInterface_1280x720/MainInterface_Root_From_RectTransform_CSV/UI_MainInterface_old__2475216337245998118/left__8354406432209300530/btn_download__-5750651822583549907/qipao__-5020015804280540570",
+      "decision": "audit_row_no_patch",
+      "active": "True",
+      "button": "False",
+      "interactable": "False",
+      "raycast": "False",
+      "sprite": "fid1_-6183891200660976944_Icon_qipai_3",
+      "text": "",
+      "screenRect": "487.48,209.419,594.633,275.185"
+    },
+    {
+      "name": "tmp_bubble_pro__5265363052602055773__font_EPM",
+      "path": "Canvas_MainInterface_1280x720/MainInterface_Root_From_RectTransform_CSV/UI_MainInterface_old__2475216337245998118/left__8354406432209300530/btn_download__-5750651822583549907/tmp_bubble_pro__5265363052602055773__font_EPM",
+      "decision": "audit_row_no_patch",
+      "active": "True",
+      "button": "False",
+      "interactable": "False",
+      "raycast": "False",
+      "sprite": "",
+      "text": "0%",
+      "screenRect": "542.379,216.374,542.379,239.051"
+    },
+    {
+      "name": "huodong3__-5155750984123387295",
+      "path": "Canvas_MainInterface_1280x720/MainInterface_Root_From_RectTransform_CSV/UI_MainInterface_old__2475216337245998118/left__8354406432209300530/huodong3__-5155750984123387295",
+      "decision": "audit_row_no_patch",
+      "active": "True",
+      "button": "False",
+      "interactable": "False",
+      "raycast": "False",
+      "sprite": "",
+      "text": "",
+      "screenRect": "70.112,196.719,480.204,340.346"
+    },
+    {
+      "name": "Viewport__4633266571554794787",
+      "path": "Canvas_MainInterface_1280x720/MainInterface_Root_From_RectTransform_CSV/UI_MainInterface_old__2475216337245998118/left__8354406432209300530/huodong3__-5155750984123387295/Viewport__4633266571554794787",
+      "decision": "audit_row_no_patch",
+      "active": "True",
+      "button": "False",
+      "interactable": "False",
+      "raycast": "True",
+      "sprite": "",
+      "text": "",
+      "screenRect": "70.112,196.719,480.204,340.346"
+    },
+    {
+      "name": "btn_huodong3__1647537258896707193",
+      "path": "Canvas_MainInterface_1280x720/MainInterface_Root_From_RectTransform_CSV/UI_MainInterface_old__2475216337245998118/left__8354406432209300530/huodong3__-5155750984123387295/Viewport__4633266571554794787/Content__-2821957406048891241/btn_huodong3__1647537258896707193",
+      "decision": "audit_row_no_patch",
+      "active": "True",
+      "button": "False",
+      "interactable": "False",
+      "raycast": "True",
+      "sprite": "",
+      "text": "",
+      "screenRect": "70.112,193.696,478.881,337.322"
+    },
+    {
+      "name": "bg_time__-754352213292762594",
+      "path": "Canvas_MainInterface_1280x720/MainInterface_Root_From_RectTransform_CSV/UI_MainInterface_old__2475216337245998118/left__8354406432209300530/huodong3__-5155750984123387295/Viewport__4633266571554794787/Content__-2821957406048891241/btn_huodong3__1647537258896707193/bg_time__-754352213292762594",
+      "decision": "audit_row_no_patch",
+      "active": "True",
+      "button": "False",
+      "interactable": "False",
+      "raycast": "False",
+      "sprite": "fid3_605723705451505549_T_liaotianjiaobiao",
+      "text": "",
+      "screenRect": "102.523,214.484,324.766,229.602"
+    },
+    {
+      "name": "text_num__-8449929650395926112",
+      "path": "Canvas_MainInterface_1280x720/MainInterface_Root_From_RectTransform_CSV/UI_MainInterface_old__2475216337245998118/left__8354406432209300530/huodong3__-5155750984123387295/Viewport__4633266571554794787/Content__-2821957406048891241/btn_huodong3__1647537258896707193/bg_time__-754352213292762594/text_num__-8449929650395926112",
+      "decision": "audit_row_no_patch",
+      "active": "True",
+      "button": "False",
+      "interactable": "False",
+      "raycast": "False",
+      "sprite": "",
+      "text": "2021.6.1-7.1",
+      "screenRect": "205.707,214.484,337.995,229.602"
+    },
+    {
+      "name": "text_time__997656216616295177",
+      "path": "Canvas_MainInterface_1280x720/MainInterface_Root_From_RectTransform_CSV/UI_MainInterface_old__2475216337245998118/left__8354406432209300530/huodong3__-5155750984123387295/Viewport__4633266571554794787/Content__-2821957406048891241/btn_huodong3__1647537258896707193/bg_time__-754352213292762594/text_time__997656216616295177",
+      "decision": "audit_row_no_patch",
+      "active": "True",
+      "button": "False",
+      "interactable": "False",
+      "raycast": "False",
+      "sprite": "",
+      "text": "기간: ",
+      "screenRect": "121.043,205.413,226.873,235.65"
+    },
+    {
+      "name": "btn_huodong3__-2170556351011123672",
+      "path": "Canvas_MainInterface_1280x720/MainInterface_Root_From_RectTransform_CSV/UI_MainInterface_old__2475216337245998118/left__8354406432209300530/huodong3__-5155750984123387295/Viewport__4633266571554794787/Content__-2821957406048891241/btn_huodong3__1647537258896707193/btn_huodong3__-2170556351011123672",
+      "decision": "audit_row_no_patch",
+      "active": "True",
+      "button": "True",
+      "interactable": "True",
+      "raycast": "True",
+      "sprite": "",
+      "text": "",
+      "screenRect": "70.112,197.475,506.661,295.746"
+    },
+    {
+      "name": "bg_dot__6471303635295782288",
+      "path": "Canvas_MainInterface_1280x720/MainInterface_Root_From_RectTransform_CSV/UI_MainInterface_old__2475216337245998118/left__8354406432209300530/huodong3__-5155750984123387295/bg_dot__6471303635295782288",
+      "decision": "audit_row_no_patch",
+      "active": "True",
+      "button": "False",
+      "interactable": "False",
+      "raycast": "True",
+      "sprite": "fid3_3763899259279859054_BG_huadongyemian",
+      "text": "",
+      "screenRect": "269.867,194.849,269.867,203.92"
+    },
+    {
+      "name": "text_haoyou__-8197084747081254407__font_riyu",
+      "path": "Canvas_MainInterface_1280x720/MainInterface_Root_From_RectTransform_CSV/UI_MainInterface_old__2475216337245998118/right__-7547578691690053275/btn_haoyou__-675339169157432991/text_haoyou__-8197084747081254407__font_riyu",
+      "decision": "audit_row_no_patch",
+      "active": "True",
+      "button": "False",
+      "interactable": "False",
+      "raycast": "False",
+      "sprite": "",
+      "text": "친구",
+      "screenRect": "1437.5,218.086,1552.094,229.992"
+    },
+    {
+      "name": "text_paihangbang__8703941146724642739__font_riyu",
+      "path": "Canvas_MainInterface_1280x720/MainInterface_Root_From_RectTransform_CSV/UI_MainInterface_old__2475216337245998118/right__-7547578691690053275/btn_paihangbang__-1667601919951141876/text_paihangbang__8703941146724642739__font_riyu",
+      "decision": "audit_row_no_patch",
+      "active": "True",
+      "button": "False",
+      "interactable": "False",
+      "raycast": "False",
+      "sprite": "",
+      "text": "순위",
+      "screenRect": "1558.692,218.581,1675.105,230.676"
+    },
+    {
+      "name": "text_haoyou (1)__302278427489246462__font_riyu",
+      "path": "Canvas_MainInterface_1280x720/MainInterface_Root_From_RectTransform_CSV/UI_MainInterface_old__2475216337245998118/right__-7547578691690053275/btn_shangdian__-2638148383004042968/text_haoyou (1)__302278427489246462__font_riyu",
+      "decision": "audit_row_no_patch",
+      "active": "True",
+      "button": "False",
+      "interactable": "False",
+      "raycast": "False",
+      "sprite": "",
+      "text": "상점",
+      "screenRect": "1222.153,218.581,1338.566,230.676"
+    },
+    {
+      "name": "text_youjian__2098579224181502371__font_riyu",
+      "path": "Canvas_MainInterface_1280x720/MainInterface_Root_From_RectTransform_CSV/UI_MainInterface_old__2475216337245998118/right__-7547578691690053275/btn_youjian__-1189460423525129158/text_youjian__2098579224181502371__font_riyu",
+      "decision": "audit_row_no_patch",
+      "active": "True",
+      "button": "False",
+      "interactable": "False",
+      "raycast": "False",
+      "sprite": "",
+      "text": "우편",
+      "screenRect": "1328.909,218.581,1445.322,230.676"
+    }
+  ],
+  "patchDecision": {
+    "decision": "no_scene_patch",
+    "reason": "Hero1005/BG1005 have source-backed asset selection and live SkeletonGraphic/BG binding, but no decoded UIUtil/homePara transform rule or bottom nav Animator/canvas order rule was found. Coordinate-only layout changes and dynamic activity/bottom text edits remain forbidden."
+  },
+  "nextBlocker": [
+    "Decode or recover UIUtil.GetPlayerBigSpineAll transform semantics for homePara before moving/scaling Hero1005.",
+    "Recover old-root bottom navigation runtime/Animator state or original open-stack layer proof before applying bottom strip/order patches.",
+    "Runtime activity/account snapshot remains required before activity slot/icon/text visibility changes."
+  ],
+  "changedFiles": [
+    "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_maininterface_unity\\Assets\\Editor\\MainInterface133HeroBgBottomNavLayoutProbe.cs",
+    "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_maininterface_unity\\Assets\\Editor\\MainInterface133HeroBgBottomNavLayoutProbe.cs.meta",
+    "C:\\Users\\godho\\Downloads\\girlswar\\_restore_tools\\scripts\\maininterface133_hero_bg_bottom_nav_diff_report.py",
+    "C:\\Users\\godho\\Downloads\\girlswar\\reports\\maininterface\\MAININTERFACE_133_unity_probe_summary.json",
+    "C:\\Users\\godho\\Downloads\\girlswar\\reports\\maininterface\\MAININTERFACE_133_hero_bg_probe.csv",
+    "C:\\Users\\godho\\Downloads\\girlswar\\reports\\maininterface\\MAININTERFACE_133_bottom_nav_probe.csv",
+    "C:\\Users\\godho\\Downloads\\girlswar\\reports\\maininterface\\MAININTERFACE_133_reference_diff_regions.csv",
+    "C:\\Users\\godho\\Downloads\\girlswar\\reports\\maininterface\\MAININTERFACE_133_REFERENCE_DIFF_CONTACT.png",
+    "C:\\Users\\godho\\Downloads\\girlswar\\reports\\maininterface\\MAININTERFACE_133_HOME_HEROSPINE_BG_BOTTOM_NAV_RUNTIME_LAYOUT_PROBE_NO_COORDINATE_PATCH_RESULT.json",
+    "C:\\Users\\godho\\Downloads\\girlswar\\reports\\maininterface\\MAININTERFACE_133_HOME_HEROSPINE_BG_BOTTOM_NAV_RUNTIME_LAYOUT_PROBE_NO_COORDINATE_PATCH_RESULT.md"
+  ],
+  "commandPolicy": {
+    "rootCmdCount": 1,
+    "restoreToolsDirectCmdCount": 0,
+    "policyOk": true
+  }
+}

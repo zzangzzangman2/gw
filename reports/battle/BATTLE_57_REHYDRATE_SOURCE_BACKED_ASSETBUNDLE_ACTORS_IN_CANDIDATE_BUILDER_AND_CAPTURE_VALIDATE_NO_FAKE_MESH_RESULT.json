@@ -1,0 +1,214 @@
+{
+  "prefix": "BATTLE_57_REHYDRATE_SOURCE_BACKED_ASSETBUNDLE_ACTORS_IN_CANDIDATE_BUILDER_AND_CAPTURE_VALIDATE_NO_FAKE_MESH",
+  "unityExitCode": 0,
+  "visual_status": "source_backed_assetbundle_actor_runtime_rehydrate_pixels_validated_playable_false",
+  "isFinalRestoredBattleScreen": false,
+  "patchDecision": "candidate_runtime_rehydrate_patch_no_fake_mesh",
+  "sceneSaved": true,
+  "runtimeRehydrateUsed": true,
+  "sourceBackedPersistentImportUsed": false,
+  "fakeMeshUsed": false,
+  "fakeHandlerUsed": false,
+  "baseScene": "Assets/Scenes/Battle51LuaBridgeRaycasterRegistrationCandidate.unity",
+  "outputScene": "Assets/Scenes/Battle57RuntimeRehydratedAssetBundleActorsCandidate.unity",
+  "mapping": {
+    "rows": 6,
+    "sourceBackedRehydratedRows": 3,
+    "disabledExistingHollowShellRows": 3,
+    "bundleLoadedRows": 3,
+    "prefabInstantiatedRows": 3,
+    "animationStateSetRows": 3,
+    "actors": [
+      {
+        "side": "our",
+        "heroDid": "1002",
+        "modelId": "1002",
+        "bundle": "download/roleprefabsandres/battleprefabandres/1002.assetbundle",
+        "prefabAsset": "assets/download/roleprefabsandres/battleprefabandres/1002/hero_1002.prefab",
+        "newActorPath": "BATTLE57_SourceBackedRuntimeRehydratedActors/BATTLE57_SourceBackedActor_our_w0_s2_1002_model_1002",
+        "animationUsed": "ult",
+        "skeletonDataAsset": "1002_SkeletonData"
+      },
+      {
+        "side": "our",
+        "heroDid": "1034",
+        "modelId": "1034",
+        "bundle": "download/roleprefabsandres/battleprefabandres/1034.assetbundle",
+        "prefabAsset": "assets/download/roleprefabsandres/battleprefabandres/1034/hero_1034.prefab",
+        "newActorPath": "BATTLE57_SourceBackedRuntimeRehydratedActors/BATTLE57_SourceBackedActor_our_w0_s3_1034_model_1034",
+        "animationUsed": "skill1",
+        "skeletonDataAsset": "1034_SkeletonData"
+      },
+      {
+        "side": "enemy",
+        "heroDid": "1100111",
+        "modelId": "3001",
+        "bundle": "download/roleprefabsandres/battleprefabandres/3001.assetbundle",
+        "prefabAsset": "assets/download/roleprefabsandres/battleprefabandres/3001/hero_3001.prefab",
+        "newActorPath": "BATTLE57_SourceBackedRuntimeRehydratedActors/BATTLE57_SourceBackedActor_enemy_w1_s1_1100111_model_3001",
+        "animationUsed": "attack",
+        "skeletonDataAsset": "3001_SkeletonData"
+      }
+    ]
+  },
+  "renderers": {
+    "rows": 3,
+    "meshNonNullRows": 3,
+    "meshVertexTotal": 2630,
+    "materialReadyRows": 3,
+    "unsupportedShaderRows": 0,
+    "shaderRebindAppliedTotal": 4,
+    "actors": [
+      {
+        "heroDid": "1002",
+        "modelId": "1002",
+        "meshVertexCount": 736,
+        "materialNames": "1002_Material",
+        "shaderNames": "Spine/Skeleton Tint|supported=True|passes=2",
+        "boundsSize": "1.007896/2.008275/0"
+      },
+      {
+        "heroDid": "1034",
+        "modelId": "1034",
+        "meshVertexCount": 1283,
+        "materialNames": "1034_Material|1034_Material-Screen",
+        "shaderNames": "Spine/Skeleton Tint|supported=True|passes=2|Spine/Blend Modes/Skeleton PMA Screen|supported=True|passes=2",
+        "boundsSize": "10.82376/3.948175/0"
+      },
+      {
+        "heroDid": "1100111",
+        "modelId": "3001",
+        "meshVertexCount": 611,
+        "materialNames": "3001_Material",
+        "shaderNames": "Spine/Skeleton Tint|supported=True|passes=2",
+        "boundsSize": "1.674196/1.026137/0"
+      }
+    ]
+  },
+  "visibility": {
+    "rows": 3,
+    "meshReadyRows": 3,
+    "materialReadyRows": 3,
+    "frustumRows": 3,
+    "cameraLayerRows": 3,
+    "capturePixelSignalRows": 3,
+    "pixelDiffTotal": 12732,
+    "actors": [
+      {
+        "heroDid": "1002",
+        "modelId": "1002",
+        "meshReady": true,
+        "materialReady": true,
+        "boundsSize": "1.007896/2.008275/0",
+        "screenRect": "231.74/125.31/280.12/221.71",
+        "pixelDiffCount": 9978,
+        "capturePixelSignal": true
+      },
+      {
+        "heroDid": "1034",
+        "modelId": "1034",
+        "meshReady": true,
+        "materialReady": true,
+        "boundsSize": "10.82376/3.948175/0",
+        "screenRect": "70.8/73.04/590.34/262.55",
+        "pixelDiffCount": 1120,
+        "capturePixelSignal": true
+      },
+      {
+        "heroDid": "1100111",
+        "modelId": "3001",
+        "meshReady": true,
+        "materialReady": true,
+        "boundsSize": "1.674196/1.026137/0",
+        "screenRect": "311.05/348.99/391.41/398.25",
+        "pixelDiffCount": 1634,
+        "capturePixelSignal": true
+      }
+    ]
+  },
+  "unitySummary": {
+    "prefix": "BATTLE_57_REHYDRATE_SOURCE_BACKED_ASSETBUNDLE_ACTORS_IN_CANDIDATE_BUILDER_AND_CAPTURE_VALIDATE_NO_FAKE_MESH",
+    "baseScene": "Assets/Scenes/Battle51LuaBridgeRaycasterRegistrationCandidate.unity",
+    "outputScene": "Assets/Scenes/Battle57RuntimeRehydratedAssetBundleActorsCandidate.unity",
+    "baseSceneOpened": true,
+    "sceneSaved": true,
+    "runtimeRehydrateUsed": true,
+    "sourceBackedPersistentImportUsed": false,
+    "fakeMeshUsed": false,
+    "fakeHandlerUsed": false,
+    "isFinalRestoredBattleScreen": false,
+    "patchDecision": "candidate_runtime_rehydrate_patch_no_fake_mesh",
+    "actorRows": 3,
+    "bundleLoadedActorRows": 3,
+    "prefabInstantiatedRows": 3,
+    "meshReadyRows": 3,
+    "materialReadyRows": 3,
+    "skeletonAnimationRows": 3,
+    "animationStateSetRows": 3,
+    "boundsNonZeroRows": 3,
+    "pixelDiffRows": 3,
+    "totalDiffPixels": 75968,
+    "disabledHollowShellCount": 3,
+    "shaderBundleLoaded": true,
+    "shaderBundleShaderCount": 31,
+    "captureCameraName": "BattleHudSpriteAtlasTextureRuntimeBindingClip05Camera",
+    "captureCameraPixelRect": "0/0/640/480",
+    "captureCameraOrthographic": true,
+    "captureCameraOrthographicSize": 5,
+    "captureCameraCullingMask": -1,
+    "captureCameraCreated": false,
+    "capture": "Assets/RestoreCaptures/battle_actor/Battle57RuntimeRehydratedAssetBundleActorsCandidate_1920x1080.png",
+    "baselineCapture": "Assets/RestoreCaptures/battle_actor/Battle57RuntimeRehydratedAssetBundleActorsCandidate_without_actors_1920x1080.png",
+    "diffCapture": "Assets/RestoreCaptures/battle_actor/Battle57RuntimeRehydratedAssetBundleActorsCandidate_actor_diff_1920x1080.png",
+    "captureExists": true,
+    "nextBlocker": "XLUA_GAMEENTRY_MODULESINIT_HANDLER_BINDING_AND_FULL_PAYLOAD_GAPS_REMAIN",
+    "failReason": ""
+  },
+  "b56Carryover": {
+    "liveBundleMeshReadyRows": 3,
+    "sceneMeshReadyRowsBeforeB57": 0,
+    "importGapCounts": {
+      "assetbundle_runtime_references_not_persisted_in_saved_scene": 3
+    }
+  },
+  "b55Carryover": {
+    "actorPrimaryConclusion": "actor_invisibility_primary_blocker_no_mesh_filter_mesh",
+    "rowsWithMesh": 0
+  },
+  "payloadCarryover": {
+    "classification": "local_playable_subset_only_not_full_payload",
+    "loadableActors": 3,
+    "totalActors": 12
+  },
+  "nextBlocker": "XLUA_GAMEENTRY_MODULESINIT_HANDLER_BINDING_AND_FULL_PAYLOAD_GAPS_REMAIN",
+  "referenceVideoAvailable": false,
+  "referenceVideoPath": "C:\\Users\\godho\\Downloads\\플레이.mp4",
+  "auxiliaryReferenceVideoAvailable": true,
+  "auxiliaryReferenceVideoPath": "C:\\Users\\godho\\Downloads\\참고.mp4",
+  "captureExists": true,
+  "baselineCaptureExists": true,
+  "diffCaptureExists": true,
+  "contactSheetCreated": true,
+  "rootCmdCount": 1,
+  "restoreToolsDirectCmdCount": 0,
+  "outputs": {
+    "report": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_57_REHYDRATE_SOURCE_BACKED_ASSETBUNDLE_ACTORS_IN_CANDIDATE_BUILDER_AND_CAPTURE_VALIDATE_NO_FAKE_MESH_RESULT.md",
+    "json": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_57_REHYDRATE_SOURCE_BACKED_ASSETBUNDLE_ACTORS_IN_CANDIDATE_BUILDER_AND_CAPTURE_VALIDATE_NO_FAKE_MESH_RESULT.json",
+    "mappingCsv": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_57_REHYDRATE_SOURCE_BACKED_ASSETBUNDLE_ACTORS_IN_CANDIDATE_BUILDER_AND_CAPTURE_VALIDATE_NO_FAKE_MESH_REHYDRATION_MAPPING.csv",
+    "renderersCsv": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_57_REHYDRATE_SOURCE_BACKED_ASSETBUNDLE_ACTORS_IN_CANDIDATE_BUILDER_AND_CAPTURE_VALIDATE_NO_FAKE_MESH_RENDERERS.csv",
+    "visibilityCsv": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_57_REHYDRATE_SOURCE_BACKED_ASSETBUNDLE_ACTORS_IN_CANDIDATE_BUILDER_AND_CAPTURE_VALIDATE_NO_FAKE_MESH_VISIBILITY.csv",
+    "capture": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_battle_unity\\Assets\\RestoreCaptures\\battle_actor\\Battle57RuntimeRehydratedAssetBundleActorsCandidate_1920x1080.png",
+    "baselineCapture": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_battle_unity\\Assets\\RestoreCaptures\\battle_actor\\Battle57RuntimeRehydratedAssetBundleActorsCandidate_without_actors_1920x1080.png",
+    "diffCapture": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_battle_unity\\Assets\\RestoreCaptures\\battle_actor\\Battle57RuntimeRehydratedAssetBundleActorsCandidate_actor_diff_1920x1080.png",
+    "contactSheet": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_57_REHYDRATE_SOURCE_BACKED_ASSETBUNDLE_ACTORS_IN_CANDIDATE_BUILDER_AND_CAPTURE_VALIDATE_NO_FAKE_MESH_CONTACT_SHEET.jpg",
+    "unitySummary": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_battle_unity\\Assets\\RestoreData\\battle\\BATTLE_57_REHYDRATE_SOURCE_BACKED_ASSETBUNDLE_ACTORS_IN_CANDIDATE_BUILDER_AND_CAPTURE_VALIDATE_NO_FAKE_MESH_UNITY_SUMMARY.json",
+    "unityLog": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_57_REHYDRATE_SOURCE_BACKED_ASSETBUNDLE_ACTORS_IN_CANDIDATE_BUILDER_AND_CAPTURE_VALIDATE_NO_FAKE_MESH_UNITY.log",
+    "log": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_57_REHYDRATE_SOURCE_BACKED_ASSETBUNDLE_ACTORS_IN_CANDIDATE_BUILDER_AND_CAPTURE_VALIDATE_NO_FAKE_MESH.log"
+  },
+  "notes": [
+    "No fake actor/card/icon/text/onClick/gameplay handler was added.",
+    "No screenshot paste, whole atlas actor, dummy mesh, coordinate-only success, or external package import/download was used.",
+    "Runtime rehydration is source-backed by local AssetBundle prefab assets; persistent import remains a separate task.",
+    "The local subset remains validation-only and is not a full restore claim."
+  ]
+}

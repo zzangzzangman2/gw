@@ -1,0 +1,150 @@
+{
+  "name": "CONTROL_TOWER_APPROVAL_GATE_MATRIX_20260626_055600",
+  "generatedAtKst": "2026-06-26T05:56:00+09:00",
+  "scope": "source-only control tower approval gate consolidation",
+  "goalComplete": false,
+  "restoredUiClaimAllowed": false,
+  "playableBattleClaimAllowed": false,
+  "actionsPerformedForThisReport": {
+    "packageImported": false,
+    "manifestModified": false,
+    "packagesLockModified": false,
+    "sceneSaved": false,
+    "runtimeInstrumentationExecuted": false,
+    "networkUsed": false,
+    "filesCopied": false,
+    "filesImported": false,
+    "filesMoved": false,
+    "filesDeleted": false,
+    "xLuaPatchApplied": false,
+    "handlerPatchApplied": false,
+    "mainInterfacePatchApplied": false
+  },
+  "baselines": {
+    "ui": {
+      "resultMd": "reports/maininterface/MAININTERFACE_146_RUNTIME_SNAPSHOT_PROBE_SPEC_AND_SOURCE_HOOK_POINTS_NO_EXECUTION_NO_PATCH_RESULT.md",
+      "resultJson": "reports/maininterface/MAININTERFACE_146_RUNTIME_SNAPSHOT_PROBE_SPEC_AND_SOURCE_HOOK_POINTS_NO_EXECUTION_NO_PATCH_RESULT.json",
+      "templateJson": "reports/maininterface/MAININTERFACE_146_runtime_snapshot_template.json",
+      "requiredFieldCsv": "reports/maininterface/MAININTERFACE_146_runtime_snapshot_required_field_matrix.csv",
+      "hookPointCsv": "reports/maininterface/MAININTERFACE_146_source_hook_point_observable_field_matrix.csv",
+      "runtimeInstrumentationExecuted": false,
+      "scenePatchApplied": false,
+      "snapshotValuesInvented": false,
+      "requiredRuntimeFieldsCount": 197,
+      "staticKnownFieldsCount": 8,
+      "staticPatchPossibleWithoutRuntime": false,
+      "nextBlocker": "Need approved real runtime snapshot/dump for UI_Dock/UI_MainPage form parent/group/depth/CanvasHelper cascade plus UI130-compatible dynamic activity/account/chat/currency values."
+    },
+    "battleTimeline": {
+      "resultMd": "reports/battle/BATTLE_65_LOCAL_TIMELINE_PACKAGE_AVAILABILITY_AND_REVERSIBLE_CANDIDATE_PLAN_NO_IMPORT_NO_PATCH_RESULT.md",
+      "resultJson": "reports/battle/BATTLE_65_LOCAL_TIMELINE_PACKAGE_AVAILABILITY_AND_REVERSIBLE_CANDIDATE_PLAN_NO_IMPORT_NO_PATCH_RESULT.json",
+      "candidateMatrixCsv": "reports/battle/BATTLE_65_LOCAL_TIMELINE_PACKAGE_AVAILABILITY_AND_REVERSIBLE_CANDIDATE_PLAN_NO_IMPORT_NO_PATCH_LOCAL_TIMELINE_PACKAGE_CANDIDATE_MATRIX.csv",
+      "decisionMatrixCsv": "reports/battle/BATTLE_65_LOCAL_TIMELINE_PACKAGE_AVAILABILITY_AND_REVERSIBLE_CANDIDATE_PLAN_NO_IMPORT_NO_PATCH_COMPATIBILITY_APPROVAL_DECISION_MATRIX.csv",
+      "reversiblePlanCsv": "reports/battle/BATTLE_65_LOCAL_TIMELINE_PACKAGE_AVAILABILITY_AND_REVERSIBLE_CANDIDATE_PLAN_NO_IMPORT_NO_PATCH_REVERSIBLE_FOLLOWUP_CANDIDATE_PLAN_MATRIX.csv",
+      "packageImported": false,
+      "manifestModified": false,
+      "sceneSaved": false,
+      "networkUsed": false,
+      "timelineCandidatesFound": 1,
+      "sourceCompatibleCandidates": 1,
+      "recommendedDecision": "local_candidate_found_requires_user_approval_to_import",
+      "approvalRequiredForImport": true,
+      "localCandidate": {
+        "path": "C:\\Program Files\\Unity\\Hub\\Editor\\6000.4.9f1\\Editor\\Data\\Resources\\PackageManager\\Editor\\com.unity.timeline-1.8.12.tgz",
+        "packageName": "com.unity.timeline",
+        "packageVersion": "1.8.12",
+        "unityConstraint": "2022.3",
+        "containsRuntimeTimelineAsset": true,
+        "containsRuntimeAsmdef": true,
+        "appearsSourceCompatibleWithCurrentUnity": true,
+        "imported": false
+      },
+      "nextBlocker": "user_approval_required_for_reversible_local_timeline_candidate_import_test_or_original_timelineeffect_runtime_binding_context"
+    },
+    "characterActorPayload": {
+      "resultMd": "reports/characters/CHARACTER_64_LOCAL_EXACT_1036_BUNDLE_WIDER_PC_SEARCH_NO_NETWORK_NO_COPY_NO_IMPORT_RESULT.md",
+      "resultJson": "reports/characters/CHARACTER_64_LOCAL_EXACT_1036_BUNDLE_WIDER_PC_SEARCH_NO_NETWORK_NO_COPY_NO_IMPORT_RESULT.json",
+      "targetBundle": "download/roleprefabsandres/battleprefabandres/1036.assetbundle",
+      "networkUsed": false,
+      "filesCopied": false,
+      "filesImported": false,
+      "sceneModified": false,
+      "sameNameFileCandidatesInspected": 6,
+      "archiveEntryMatches": 4,
+      "sourceBackedExactActorBundleCount": 0,
+      "weakSameFilenameMatchCount": 10,
+      "proposalWritten": false,
+      "classification": "same-name files are rolebigsetpainting/1036.assetbundle or skillprefabsandres/1036.assetbundle and must not be promoted as battle actor bundles",
+      "nextBlocker": "Exact source-backed 1036 battle actor bundle was not found as an already-local file unless sourceBackedExactActorBundlesFound is non-empty; next step remains approved acquisition/local extraction of download/roleprefabsandres/battleprefabandres/1036.assetbundle."
+    }
+  },
+  "approvalGates": [
+    {
+      "gate": "A",
+      "name": "Original runtime UI snapshot",
+      "approvalRequired": true,
+      "whyNeeded": "MainInterface requires production UI_Dock/UI_MainPage hierarchy, sorting, CanvasHelper, guarded node, UI_bg, and dynamic runtime values that are forbidden to guess.",
+      "wouldChange": "approved runtime capture/probe artifacts and reports only; no static UI patch from guesses",
+      "validationRequired": "filled UI146 runtime snapshot template with real runtime values",
+      "rollbackPlan": "discard probe artifacts; no project files should be patched by this gate",
+      "forbiddenClaims": [
+        "MainInterface restored",
+        "guarded node states inferred",
+        "UI_bg raycast/interactable guessed"
+      ],
+      "nextBlockerAfterSuccess": "source-backed static patch design and visual comparison against reference"
+    },
+    {
+      "gate": "B",
+      "name": "Reversible local Timeline package import/test",
+      "approvalRequired": true,
+      "whyNeeded": "Restored project lacks Timeline runtime/package support while original bundles serialize TimelineAsset MonoScript/PPtr relationships.",
+      "wouldChange": "Packages/manifest.json and possibly Packages/packages-lock.json after backups; reports from reprobes",
+      "validationRequired": "Unity import exits 0; TimelineAsset type loads and is assignable to PlayableAsset; timelineAssetsInspectable increases; mismatch rows decrease",
+      "rollbackPlan": "restore exact backup manifest/lock and remove candidate test package cache entries",
+      "forbiddenClaims": [
+        "battle playable",
+        "fake TimelineAsset or fake binding created",
+        "handler/runtime solved"
+      ],
+      "nextBlockerAfterSuccess": "original TimelineEffect/PlayableDirector binding context plus xLua/GameEntry/LuaManager handlers"
+    },
+    {
+      "gate": "C",
+      "name": "Exact 1036 battle actor bundle acquisition/local extraction",
+      "approvalRequired": true,
+      "whyNeeded": "Exact source-backed battle actor payload is missing; same-name assets are other categories.",
+      "wouldChange": "only exact target bundle extraction/acquisition to a traceable local staging/import path, if approved",
+      "validationRequired": "target path/category/hash/load evidence supports download/roleprefabsandres/battleprefabandres/1036.assetbundle",
+      "rollbackPlan": "remove staged extracted/acquired exact bundle and reports from that approved operation",
+      "forbiddenClaims": [
+        "same-name 1036 asset promoted",
+        "actor payload complete from rolebigsetpainting or skillprefabs",
+        "enemy actor chains solved without authoritative source"
+      ],
+      "nextBlockerAfterSuccess": "unresolved enemy actor chains and runtime battle formation binding"
+    },
+    {
+      "gate": "D",
+      "name": "Original xLua/GameEntry/LuaManager and TimelineEffect binding recovery",
+      "approvalRequired": true,
+      "whyNeeded": "Real playability requires source-backed handlers, runtime wiring, and effect binding context.",
+      "wouldChange": "scoped runtime/source recovery probes or explicitly approved handler binding restoration",
+      "validationRequired": "input-to-action verification through original/source-backed handlers, GameEntry/LuaManager wiring, and TimelineEffect/PlayableDirector binding",
+      "rollbackPlan": "revert scoped handler/runtime changes if any approved patch is made",
+      "forbiddenClaims": [
+        "no-op handler accepted",
+        "fake gameplay accepted",
+        "playability claimed without source-backed handler execution"
+      ],
+      "nextBlockerAfterSuccess": "end-to-end scene verification against reference and gameplay input flow"
+    }
+  ],
+  "recommendedOrdering": [
+    "Gate A before MainInterface patching",
+    "Gate B can be attempted first for battle visual type compatibility because a local reversible candidate exists",
+    "Gate C is required for exact 1036 actor payload and unresolved actor chains",
+    "Gate D is required for real playability even if Gates B and C succeed"
+  ]
+}
+

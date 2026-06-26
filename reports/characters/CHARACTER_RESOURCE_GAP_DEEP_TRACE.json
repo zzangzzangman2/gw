@@ -1,0 +1,768 @@
+{
+  "name": "GirlsWar character resource gap deep trace",
+  "generatedBy": "_restore_tools/scripts/build_character_resource_gap_deep_trace.py",
+  "payload": {
+    "path": "reports/battle/BATTLE_TEST_PAYLOAD.json",
+    "mapId": 11001,
+    "battleType": 1,
+    "waveCount": 3
+  },
+  "hero1036ActorBundle": {
+    "desiredBundle": "download/roleprefabsandres/battleprefabandres/1036.assetbundle",
+    "classification": "present_in_versionfile_but_not_extracted",
+    "versionfileRows": [
+      {
+        "source": "CDNVersionFile",
+        "index": "1158",
+        "AssetBundleName": "download/roleprefabsandres/battleprefabandres/1036.assetbundle",
+        "MD5": "570c8238257cd8ca00a0856427d8c0ae",
+        "Size": "1666251",
+        "IsFirstData": "False",
+        "IsEncrypt": "True",
+        "Priority": "3",
+        "Category": "0",
+        "Version": "1.0.578",
+        "ResOffset": "224"
+      }
+    ],
+    "assetbundleIndexRows": [],
+    "localFileCandidates": [
+      {
+        "path": "girlswar_merged_extracted/merged_content/AssetBundles/download/roleprefabsandres/battleprefabandres/1036.assetbundle",
+        "exists": false,
+        "size": ""
+      },
+      {
+        "path": "girlswar_merged_extracted/extracted/unity/clean_unityfs_slices/download/roleprefabsandres/battleprefabandres/1036.assetbundle",
+        "exists": false,
+        "size": ""
+      },
+      {
+        "path": "girlswar_merged_extracted/extracted/unity/clean_unityfs_slices/download/roleprefabsandres/rolebigsetpainting/1036.assetbundle",
+        "exists": true,
+        "size": 1823276,
+        "note": "same filename candidate"
+      },
+      {
+        "path": "girlswar_merged_extracted/extracted/unity/clean_unityfs_slices/download/skillprefabsandres/1036.assetbundle",
+        "exists": true,
+        "size": 341520,
+        "note": "same filename candidate"
+      },
+      {
+        "path": "girlswar_merged_extracted/merged_content/AssetBundles/download/roleprefabsandres/rolebigsetpainting/1036.assetbundle",
+        "exists": true,
+        "size": 1825731,
+        "note": "same filename candidate"
+      },
+      {
+        "path": "girlswar_merged_extracted/merged_content/AssetBundles/download/skillprefabsandres/1036.assetbundle",
+        "exists": true,
+        "size": 345333,
+        "note": "same filename candidate"
+      }
+    ],
+    "sameFilenameButDifferentCategory": [
+      {
+        "path": "girlswar_merged_extracted/extracted/unity/clean_unityfs_slices/download/roleprefabsandres/rolebigsetpainting/1036.assetbundle",
+        "exists": true,
+        "size": 1823276,
+        "note": "same filename candidate"
+      },
+      {
+        "path": "girlswar_merged_extracted/extracted/unity/clean_unityfs_slices/download/skillprefabsandres/1036.assetbundle",
+        "exists": true,
+        "size": 341520,
+        "note": "same filename candidate"
+      },
+      {
+        "path": "girlswar_merged_extracted/merged_content/AssetBundles/download/roleprefabsandres/rolebigsetpainting/1036.assetbundle",
+        "exists": true,
+        "size": 1825731,
+        "note": "same filename candidate"
+      },
+      {
+        "path": "girlswar_merged_extracted/merged_content/AssetBundles/download/skillprefabsandres/1036.assetbundle",
+        "exists": true,
+        "size": 345333,
+        "note": "same filename candidate"
+      }
+    ],
+    "conclusion": "CDNVersionFile lists the exact battle actor bundle, but no exact merged_content file, clean_unityfs_slice, or assetbundles.csv row exists in this local extraction."
+  },
+  "enemyPayloadAliasTrace": {
+    "classification": "still_unresolved",
+    "payloadEnemyRows": [
+      {
+        "waveNo": 1,
+        "position": 1,
+        "payloadHeroDid": 1100111,
+        "payloadHeroId": -1,
+        "skillDids": [
+          1012101,
+          1012201,
+          1012301,
+          1012401,
+          1012403
+        ],
+        "formulaLikeMapWaveSlot": true,
+        "directMonsterTables": "DTMonster_KEntity, DTMonster_OEntity",
+        "directModelIDs": "3001, 3001",
+        "status": "direct_monster_row_resolved",
+        "note": "No code evidence found that aliases this payload heroDid to DTMapsWave.monsterLists; normal campaign generator uses monsterLists value directly as heroDid."
+      },
+      {
+        "waveNo": 1,
+        "position": 2,
+        "payloadHeroDid": 1100112,
+        "payloadHeroId": -2,
+        "skillDids": [
+          1012101,
+          1012201,
+          1012301,
+          1012401,
+          1012403
+        ],
+        "formulaLikeMapWaveSlot": true,
+        "directMonsterTables": "",
+        "directModelIDs": "",
+        "status": "still_unresolved_payload_instance_id",
+        "note": "No code evidence found that aliases this payload heroDid to DTMapsWave.monsterLists; normal campaign generator uses monsterLists value directly as heroDid."
+      },
+      {
+        "waveNo": 1,
+        "position": 3,
+        "payloadHeroDid": 1100113,
+        "payloadHeroId": -3,
+        "skillDids": [
+          1012101,
+          1012201,
+          1012301,
+          1012401,
+          1012403
+        ],
+        "formulaLikeMapWaveSlot": true,
+        "directMonsterTables": "",
+        "directModelIDs": "",
+        "status": "still_unresolved_payload_instance_id",
+        "note": "No code evidence found that aliases this payload heroDid to DTMapsWave.monsterLists; normal campaign generator uses monsterLists value directly as heroDid."
+      },
+      {
+        "waveNo": 2,
+        "position": 1,
+        "payloadHeroDid": 1100121,
+        "payloadHeroId": -1,
+        "skillDids": [
+          1012101,
+          1012201,
+          1012301,
+          1012401,
+          1012403
+        ],
+        "formulaLikeMapWaveSlot": true,
+        "directMonsterTables": "",
+        "directModelIDs": "",
+        "status": "still_unresolved_payload_instance_id",
+        "note": "No code evidence found that aliases this payload heroDid to DTMapsWave.monsterLists; normal campaign generator uses monsterLists value directly as heroDid."
+      },
+      {
+        "waveNo": 2,
+        "position": 2,
+        "payloadHeroDid": 1100122,
+        "payloadHeroId": -2,
+        "skillDids": [
+          1012101,
+          1012201,
+          1012301,
+          1012401,
+          1012403
+        ],
+        "formulaLikeMapWaveSlot": true,
+        "directMonsterTables": "",
+        "directModelIDs": "",
+        "status": "still_unresolved_payload_instance_id",
+        "note": "No code evidence found that aliases this payload heroDid to DTMapsWave.monsterLists; normal campaign generator uses monsterLists value directly as heroDid."
+      },
+      {
+        "waveNo": 2,
+        "position": 3,
+        "payloadHeroDid": 1100123,
+        "payloadHeroId": -3,
+        "skillDids": [
+          1012101,
+          1012201,
+          1012301,
+          1012401,
+          1012403
+        ],
+        "formulaLikeMapWaveSlot": true,
+        "directMonsterTables": "",
+        "directModelIDs": "",
+        "status": "still_unresolved_payload_instance_id",
+        "note": "No code evidence found that aliases this payload heroDid to DTMapsWave.monsterLists; normal campaign generator uses monsterLists value directly as heroDid."
+      },
+      {
+        "waveNo": 3,
+        "position": 1,
+        "payloadHeroDid": 1100131,
+        "payloadHeroId": -1,
+        "skillDids": [
+          1012101,
+          1012101,
+          1001401,
+          1001403
+        ],
+        "formulaLikeMapWaveSlot": true,
+        "directMonsterTables": "",
+        "directModelIDs": "",
+        "status": "still_unresolved_payload_instance_id",
+        "note": "No code evidence found that aliases this payload heroDid to DTMapsWave.monsterLists; normal campaign generator uses monsterLists value directly as heroDid."
+      },
+      {
+        "waveNo": 3,
+        "position": 2,
+        "payloadHeroDid": 1100132,
+        "payloadHeroId": -2,
+        "skillDids": [
+          1012101,
+          1012101,
+          1001401,
+          1001403
+        ],
+        "formulaLikeMapWaveSlot": true,
+        "directMonsterTables": "",
+        "directModelIDs": "",
+        "status": "still_unresolved_payload_instance_id",
+        "note": "No code evidence found that aliases this payload heroDid to DTMapsWave.monsterLists; normal campaign generator uses monsterLists value directly as heroDid."
+      },
+      {
+        "waveNo": 3,
+        "position": 3,
+        "payloadHeroDid": 1100133,
+        "payloadHeroId": -3,
+        "skillDids": [
+          1012101,
+          1012101,
+          1001401,
+          1001403
+        ],
+        "formulaLikeMapWaveSlot": true,
+        "directMonsterTables": "",
+        "directModelIDs": "",
+        "status": "still_unresolved_payload_instance_id",
+        "note": "No code evidence found that aliases this payload heroDid to DTMapsWave.monsterLists; normal campaign generator uses monsterLists value directly as heroDid."
+      }
+    ],
+    "mapWaveRowsForMapId": [
+      {
+        "table": "DTMapsWaveEntity",
+        "rowId": 1,
+        "wave": 1,
+        "monsterLists": [
+          0,
+          1100110,
+          0,
+          0,
+          0,
+          0
+        ],
+        "newMonsterLists": [
+          0,
+          1100110,
+          0,
+          0,
+          0,
+          0
+        ],
+        "monsterEffect": [
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "name": "heroname_1003",
+        "icon": "UIHeroHead_1/head1003",
+        "level": 2
+      },
+      {
+        "table": "DTMapsWave_FEntity",
+        "rowId": 1,
+        "wave": 1,
+        "monsterLists": [
+          0,
+          1100110,
+          0,
+          0,
+          0,
+          0
+        ],
+        "newMonsterLists": [
+          0,
+          1100110,
+          0,
+          0,
+          0,
+          0
+        ],
+        "monsterEffect": [
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "name": "heroname_1003",
+        "icon": "UIHeroHead_1/head1003",
+        "level": 2
+      },
+      {
+        "table": "DTMapsWave_GEntity",
+        "rowId": 1,
+        "wave": 1,
+        "monsterLists": [
+          0,
+          1100110,
+          0,
+          0,
+          0,
+          0
+        ],
+        "newMonsterLists": [
+          0,
+          1100110,
+          0,
+          0,
+          0,
+          0
+        ],
+        "monsterEffect": [
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "name": "heroname_1003",
+        "icon": "UIHeroHead_1/head1003",
+        "level": 2
+      },
+      {
+        "table": "DTMapsWave_HEntity",
+        "rowId": 1,
+        "wave": 1,
+        "monsterLists": [
+          0,
+          1100110,
+          0,
+          0,
+          0,
+          0
+        ],
+        "newMonsterLists": [
+          0,
+          1100110,
+          0,
+          0,
+          0,
+          0
+        ],
+        "monsterEffect": [
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "name": "heroname_1003",
+        "icon": "UIHeroHead_1/head1003",
+        "level": 2
+      },
+      {
+        "table": "DTMapsWave_KEntity",
+        "rowId": 1,
+        "wave": 1,
+        "monsterLists": [
+          0,
+          1100510,
+          0,
+          1100512,
+          1100513,
+          1100511
+        ],
+        "newMonsterLists": [
+          0,
+          1100510,
+          0,
+          1100512,
+          1100513,
+          1100511
+        ],
+        "monsterEffect": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "name": "heroname_1019",
+        "icon": "UIHeroHead_1/head1019",
+        "level": 2
+      }
+    ],
+    "stageCandidateMonsterIds": [
+      1100110,
+      1100510,
+      1100511,
+      1100512,
+      1100513
+    ],
+    "stageCandidateMonsterHits": {
+      "1100110": [
+        {
+          "table": "DTMonsterEntity",
+          "modelID": 1003,
+          "monName": "heroname_1003",
+          "skills": [
+            1003101,
+            0,
+            1003301,
+            0
+          ],
+          "passiveSkills": [
+            1003402
+          ]
+        },
+        {
+          "table": "DTMonster_FEntity",
+          "modelID": 1003,
+          "monName": "heroname_1003",
+          "skills": [
+            1003101,
+            0,
+            1003301,
+            0
+          ],
+          "passiveSkills": [
+            1003402
+          ]
+        },
+        {
+          "table": "DTMonster_GEntity",
+          "modelID": 1003,
+          "monName": "heroname_1003",
+          "skills": [
+            1003101,
+            0,
+            1003301,
+            0
+          ],
+          "passiveSkills": [
+            1003402
+          ]
+        },
+        {
+          "table": "DTMonster_HEntity",
+          "modelID": 1003,
+          "monName": "heroname_1003",
+          "skills": [
+            1003101,
+            0,
+            1003301,
+            0
+          ],
+          "passiveSkills": [
+            1003402
+          ]
+        },
+        {
+          "table": "DTMonster_KEntity",
+          "modelID": 3006,
+          "monName": "monstername_3006",
+          "skills": [
+            3006101,
+            0,
+            3006301,
+            0
+          ],
+          "passiveSkills": [
+            0
+          ]
+        },
+        {
+          "table": "DTMonster_OEntity",
+          "modelID": 3006,
+          "monName": "monstername_3006",
+          "skills": [
+            3006101,
+            0,
+            3006301,
+            0
+          ],
+          "passiveSkills": [
+            0
+          ]
+        }
+      ],
+      "1100510": [
+        {
+          "table": "DTMonsterEntity",
+          "modelID": 4005,
+          "monName": "monstername_4005",
+          "skills": [
+            4005101,
+            0,
+            4005301,
+            0
+          ],
+          "passiveSkills": [
+            0
+          ]
+        },
+        {
+          "table": "DTMonster_KEntity",
+          "modelID": 3005,
+          "monName": "monstername_3005",
+          "skills": [
+            3005101,
+            0,
+            3005301,
+            0
+          ],
+          "passiveSkills": [
+            0
+          ]
+        },
+        {
+          "table": "DTMonster_OEntity",
+          "modelID": 3005,
+          "monName": "monstername_3005",
+          "skills": [
+            3005101,
+            0,
+            3005301,
+            0
+          ],
+          "passiveSkills": [
+            0
+          ]
+        }
+      ],
+      "1100511": [
+        {
+          "table": "DTMonsterEntity",
+          "modelID": 3003,
+          "monName": "monstername_3003",
+          "skills": [
+            3003101,
+            0,
+            3003301,
+            0
+          ],
+          "passiveSkills": [
+            0
+          ]
+        },
+        {
+          "table": "DTMonster_KEntity",
+          "modelID": 3003,
+          "monName": "monstername_3003",
+          "skills": [
+            3003101,
+            0,
+            3003301,
+            0
+          ],
+          "passiveSkills": [
+            0
+          ]
+        },
+        {
+          "table": "DTMonster_OEntity",
+          "modelID": 3003,
+          "monName": "monstername_3003",
+          "skills": [
+            3003101,
+            0,
+            3003301,
+            0
+          ],
+          "passiveSkills": [
+            0
+          ]
+        }
+      ],
+      "1100512": [
+        {
+          "table": "DTMonsterEntity",
+          "modelID": 4002,
+          "monName": "monstername_4002",
+          "skills": [
+            4002101,
+            0,
+            4002301,
+            0
+          ],
+          "passiveSkills": [
+            0
+          ]
+        },
+        {
+          "table": "DTMonster_KEntity",
+          "modelID": 4002,
+          "monName": "monstername_4002",
+          "skills": [
+            4002101,
+            0,
+            4002301,
+            0
+          ],
+          "passiveSkills": [
+            0
+          ]
+        },
+        {
+          "table": "DTMonster_OEntity",
+          "modelID": 4002,
+          "monName": "monstername_4002",
+          "skills": [
+            4002101,
+            0,
+            4002301,
+            0
+          ],
+          "passiveSkills": [
+            0
+          ]
+        }
+      ],
+      "1100513": [
+        {
+          "table": "DTMonsterEntity",
+          "modelID": 3004,
+          "monName": "heroname_3004",
+          "skills": [
+            3004101,
+            0,
+            3004301,
+            0
+          ],
+          "passiveSkills": [
+            0
+          ]
+        },
+        {
+          "table": "DTMonster_KEntity",
+          "modelID": 1019,
+          "monName": "heroname_1019",
+          "skills": [
+            1019101,
+            1019201,
+            1019301,
+            0
+          ],
+          "passiveSkills": [
+            1019402
+          ]
+        },
+        {
+          "table": "DTMonster_OEntity",
+          "modelID": 1019,
+          "monName": "heroname_1019",
+          "skills": [
+            1019101,
+            1019201,
+            1019301,
+            0
+          ],
+          "passiveSkills": [
+            1019402
+          ]
+        }
+      ]
+    },
+    "monsterTablesSearched": [
+      "DTMonsterEntity",
+      "DTMonster_FEntity",
+      "DTMonster_GEntity",
+      "DTMonster_HEntity",
+      "DTMonster_KEntity",
+      "DTMonster_OEntity"
+    ],
+    "conclusion": "Payload enemy ids after 1100111 look like mapId+wave+slot instance ids, but normal campaign generation and HeroCtrl lookup use monsterLists/heroDid directly. No authoritative alias from these payload ids to DTMapsWave monster ids was found."
+  },
+  "evidence": {
+    "embeddedFightPlayPayload": [
+      {
+        "file": "girlswar_merged_extracted/decoded/xlua_battle/download_xlualogic_modules_procedure/-3424355311143813575_ProcedureNormalBattle_security_xor_raw.lua",
+        "line": 589,
+        "text": "local t='{\"battleInfo\":{\"ourHeros\":[{\"heroDid\":1036,\"status\":2,\"rankLevel\":3,\"heroId\":51469,\"skills\":[{\"skillType\":1,\"skillDid\":1036101},{\"skillType\":1,\"skillDid\":1036201},{\"skillType\":1,\"skillDid\":1036301},{\"skillType\":2,\"skillDid\":1036401"
+      }
+    ],
+    "embeddedPayloadDecode": [
+      {
+        "file": "girlswar_merged_extracted/decoded/xlua_battle/download_xlualogic_modules_procedure/-3424355311143813575_ProcedureNormalBattle_security_xor_raw.lua",
+        "line": 590,
+        "text": "e.FightPlayData=JsonUtil.decode(t).battleInfo"
+      }
+    ],
+    "campaignUsesMapsWave": [
+      {
+        "file": "girlswar_merged_extracted/decoded/xlua_battle/download_xlualogic_modules_battle/7184371722040177329_CampainBBData_security_xor_raw.lua",
+        "line": 39,
+        "text": "local a=c.GetMapsWave(s,self.battleType)"
+      }
+    ],
+    "campaignPassesMonsterLists": [
+      {
+        "file": "girlswar_merged_extracted/decoded/xlua_battle/download_xlualogic_modules_battle/7184371722040177329_CampainBBData_security_xor_raw.lua",
+        "line": 43,
+        "text": "local r,s,o,i,n=t:GetFormationFromMonsterList(self.battleType,o,u,i)"
+      }
+    ],
+    "formationUsesMonsterListAsHeroDid": [
+      {
+        "file": "girlswar_merged_extracted/decoded/xlua_battle/download_xlualogic_modules_battle/2075196316440867225_BattleBeforeDataUtil_security_xor_raw.lua",
+        "line": 180,
+        "text": "heroDid=a,"
+      },
+      {
+        "file": "girlswar_merged_extracted/decoded/xlua_battle/download_xlualogic_modules_battle/2075196316440867225_BattleBeforeDataUtil_security_xor_raw.lua",
+        "line": 230,
+        "text": "heroDid=a,"
+      }
+    ],
+    "heroCtrlMonsterLookupByHeroDid": [
+      {
+        "file": "girlswar_merged_extracted/decoded/xlua_battle/download_xlualogic_modules_battle/-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+        "line": 613,
+        "text": "self.DTMonsterRow=t.GetEntity(self.heroDid)"
+      },
+      {
+        "file": "girlswar_merged_extracted/decoded/xlua_battle/download_xlualogic_modules_battle/-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+        "line": 660,
+        "text": "self.DTMonsterRow=t.GetEntity(self.heroDid)"
+      },
+      {
+        "file": "girlswar_merged_extracted/decoded/xlua_battle/download_xlualogic_modules_battle/-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+        "line": 738,
+        "text": "self.DTMonsterRow=t.GetEntity(self.heroDid)"
+      },
+      {
+        "file": "girlswar_merged_extracted/decoded/xlua_battle/download_xlualogic_modules_battle/-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+        "line": 833,
+        "text": "self.DTMonsterRow=t.GetEntity(self.heroDid)"
+      }
+    ]
+  },
+  "principles": [
+    "No fake character/card/skill data was generated.",
+    "No name-only inference was used.",
+    "Unity scenes and source evidence files were not modified."
+  ]
+}

@@ -1,0 +1,39 @@
+﻿{
+  "project_info": {
+    "project_number": "793607195922",
+    "project_id": "pc-api-7916910850400015748-946",
+    "storage_bucket": "pc-api-7916910850400015748-946.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:793607195922:android:bc7b703ef1e5764a9bb7cb",
+        "android_client_info": {
+          "package_name": "com.girlwars.kr"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "793607195922-ge40bmhpbdlam8okcrlu42nbqumothmb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDzfDu3i96wwrGpyiNhNMmasTc1ygm1qqY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "793607195922-ge40bmhpbdlam8okcrlu42nbqumothmb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

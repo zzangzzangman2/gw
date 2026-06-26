@@ -11,6 +11,7 @@ using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using TMPro;
+using Spine.Unity;
 
 namespace GirlsWarRestore
 {
@@ -30,10 +31,17 @@ namespace GirlsWarRestore
         private const string VisualOverrideCsv = "Assets/RestoreData/maininterface_visual_overrides.csv";
         private const string RouteRectOverrideCsv = "Assets/RestoreData/maininterface_route_rect_overrides.csv";
         private const string ScenePath = "Assets/Scenes/MainInterface_Wireframe.unity";
-        private const string MainPrefabRootRectId = "5568884429252053541";
-        private const bool AddDebugLabels = false;
+        private const string MainPrefabRootRectId = "2475216337245998118";
+        private const string PromotedHomeRootRectId = "2475216337245998118";
+        private const string Hero1005Root = "Assets/RestoreData/hero1005_spine_source_raw/paintingprefabandres_1005";
+        private const string Hero1005SkeletonDataPath = Hero1005Root + "/Painting_1005_SkeletonData.asset";
+        private const string Hero1005MaterialPath = Hero1005Root + "/Painting_1005_Material.mat";
+        private const string Hero1005BackgroundSpritePath = "Assets/RestoredSprites/maininterface/runtime_dynamic/runtime_UI_bg_noalphabg_PaintingBG_1005.png";
+        private const string PromotedHomeRuntimeActivityNodePrefix = "node_act_btn__-2702129779362243929";
+        private static readonly bool AddDebugLabels = false;
         private const float ReferenceWidth = 1680f;
         private const float ReferenceHeight = 720f;
+        private static string activeMainRootRectId = MainPrefabRootRectId;
         private static Dictionary<string, string> sharedMaterialNameByPathId;
         private static Dictionary<string, string> activeVariantStaticAssetByName;
 
@@ -238,16 +246,25 @@ namespace GirlsWarRestore
 
         public static void BuildMainInterfaceScene()
         {
-            var rows = FilterRowsToRoot(LoadRows(RectCsv), MainPrefabRootRectId);
-            if (rows.Count == 0)
-                throw new Exception("No RectTransform rows loaded from " + RectCsv);
-            var overrides = LoadOverrides(OverrideCsv);
-            var visualOverrides = LoadVisualOverrides(VisualOverrideCsv);
-            var rectOverrides = LoadRectOverrides(RouteRectOverrideCsv);
+            BuildMainInterfaceSceneForRoot(MainPrefabRootRectId, ScenePath, "MainInterface_Wireframe");
+        }
 
-            Directory.CreateDirectory("Assets/Scenes");
-            var scene = EditorSceneManager.NewScene(NewSceneSetup.EmptyScene, NewSceneMode.Single);
-            scene.name = "MainInterface_Wireframe";
+        public static void BuildMainInterfaceSceneForRoot(string rootRectId, string scenePath, string sceneName)
+        {
+            var previousRootRectId = activeMainRootRectId;
+            activeMainRootRectId = rootRectId;
+            try
+            {
+                var rows = FilterRowsToRoot(LoadRows(RectCsv), rootRectId);
+                if (rows.Count == 0)
+                    throw new Exception("No RectTransform rows loaded from " + RectCsv);
+                var overrides = LoadOverrides(OverrideCsv);
+                var visualOverrides = LoadVisualOverrides(VisualOverrideCsv);
+                var rectOverrides = LoadRectOverrides(RouteRectOverrideCsv);
+
+                Directory.CreateDirectory("Assets/Scenes");
+                var scene = EditorSceneManager.NewScene(NewSceneSetup.EmptyScene, NewSceneMode.Single);
+                scene.name = sceneName;
 
             var canvasGo = new GameObject("Canvas_MainInterface_1280x720", typeof(RectTransform), typeof(Canvas), typeof(CanvasScaler), typeof(GraphicRaycaster));
             var canvas = canvasGo.GetComponent<Canvas>();
@@ -333,11 +350,12 @@ namespace GirlsWarRestore
             var appliedButtons = AddButtonLoggers(buttons, buttonHandlers, buttonNavigation, byGameObjectId, overrides);
             var graphicRaycastOverrides = ApplyGraphicRaycastOverrides(sprites, byGameObjectId, overrides);
             var appliedRaycastProbes = AddRaycastProbeLoggers(sprites, buttons, byGameObjectId);
+            var promotedHomeApplied = ApplyPromotedHomeRuntimeState(rootRectId, scenePath);
 
-            EditorSceneManager.SaveScene(scene, ScenePath);
+            EditorSceneManager.SaveScene(scene, scenePath);
             File.WriteAllText("Assets/RestoreData/maininterface_build_result.json", JsonUtility.ToJson(new BuildResult
             {
-                scenePath = ScenePath,
+                scenePath = scenePath,
                 rectTransformCount = rows.Count,
                 imageComponentCount = sprites.Count,
                 spriteAppliedCount = appliedSprites,
@@ -355,6 +373,7 @@ namespace GirlsWarRestore
                 restoreOverrideCount = overrides.rows.Count,
                 rectOverrideCount = appliedRectOverrides,
                 visualOverrideCount = appliedVisualOverrides,
+                promotedHomeRuntimeStateApplied = promotedHomeApplied,
                 generatedAt = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss")
             }, true), Encoding.UTF8);
             AssetDatabase.Refresh();
@@ -365,17 +384,21 @@ namespace GirlsWarRestore
                 + " raycast probes, " + activeOverrides + " active overrides, "
                 + graphicRaycastOverrides + " graphic raycast overrides, "
                 + appliedRectOverrides + " rect overrides, "
-                + appliedVisualOverrides + " visual overrides -> " + ScenePath);
+                + appliedVisualOverrides + " visual overrides -> " + scenePath);
+            }
+            finally
+            {
+                activeMainRootRectId = previousRootRectId;
+            }
         }
 
         [MenuItem("GirlsWar/Capture MainInterface Restored")]
         public static void CaptureMainInterfaceScene()
         {
-            if (!File.Exists(ScenePath))
-                BuildMainInterfaceScene();
+            BuildMainInterfaceScene();
 
             EditorSceneManager.OpenScene(ScenePath, OpenSceneMode.Single);
-            var canvas = UnityEngine.Object.FindFirstObjectByType<Canvas>();
+            var canvas = UnityEngine.Object.FindAnyObjectByType<Canvas>();
             if (canvas == null)
                 throw new Exception("Capture failed: Canvas not found in " + ScenePath);
 
@@ -421,6 +444,7 @@ namespace GirlsWarRestore
             camera.targetTexture = renderTexture;
             RenderTexture.active = renderTexture;
             GL.Clear(true, true, new Color(0f, 0f, 0f, 0f));
+            ForcePromotedHomeSpineUpdate();
             Canvas.ForceUpdateCanvases();
             camera.Render();
 
@@ -452,6 +476,211 @@ namespace GirlsWarRestore
             }, true), Encoding.UTF8);
             AssetDatabase.Refresh();
             Debug.Log("[GirlsWarRestore] MainInterface capture saved: " + capturePath + " visiblePixels=" + visiblePixels);
+        }
+
+        private static bool ApplyPromotedHomeRuntimeState(string rootRectId, string scenePath)
+        {
+            if (!string.Equals(rootRectId, PromotedHomeRootRectId, StringComparison.Ordinal) ||
+                !string.Equals(scenePath, ScenePath, StringComparison.Ordinal))
+                return false;
+
+            var applied = false;
+            try
+            {
+                applied |= ApplyHero1005Background();
+                applied |= AttachHero1005Spine();
+                applied |= ApplyPromotedHomeActivitySlotState();
+                ForcePromotedHomeSpineUpdate();
+            }
+            catch (Exception ex)
+            {
+                Debug.LogWarning("[GirlsWarRestore] Promoted home runtime state was not fully applied: " + ex.Message);
+            }
+            return applied;
+        }
+
+        private static bool ApplyHero1005Background()
+        {
+            var background = FindTransformByPrefix("UI_bg__-3280973633984018659") ?? FindTransformByName("UI_bg");
+            if (background == null)
+                return false;
+
+            var sprite = AssetDatabase.LoadAssetAtPath<Sprite>(Hero1005BackgroundSpritePath);
+            if (sprite == null)
+            {
+                Debug.LogWarning("[GirlsWarRestore] Hero1005 background sprite missing: " + Hero1005BackgroundSpritePath);
+                return false;
+            }
+
+            background.gameObject.SetActive(true);
+            var image = background.GetComponent<Image>();
+            if (image == null)
+                image = background.gameObject.AddComponent<Image>();
+            image.sprite = sprite;
+            image.color = Color.white;
+            image.type = Image.Type.Simple;
+            image.preserveAspect = false;
+            image.raycastTarget = false;
+            var button = background.GetComponent<Button>();
+            if (button != null)
+            {
+                button.interactable = false;
+                button.enabled = false;
+            }
+
+            var rect = background.GetComponent<RectTransform>();
+            rect.anchorMin = new Vector2(0.5f, 0.5f);
+            rect.anchorMax = new Vector2(0.5f, 0.5f);
+            rect.pivot = new Vector2(0.5f, 0.5f);
+            rect.anchoredPosition = Vector2.zero;
+            rect.sizeDelta = new Vector2(ReferenceWidth, ReferenceHeight);
+            rect.localScale = Vector3.one;
+            background.SetSiblingIndex(0);
+            return true;
+        }
+
+        private static bool AttachHero1005Spine()
+        {
+            var skeletonDataAsset = AssetDatabase.LoadAssetAtPath<SkeletonDataAsset>(Hero1005SkeletonDataPath);
+            if (skeletonDataAsset == null || skeletonDataAsset.GetSkeletonData(true) == null)
+            {
+                Debug.LogWarning("[GirlsWarRestore] Hero1005 SkeletonDataAsset missing: " + Hero1005SkeletonDataPath);
+                return false;
+            }
+            var material = AssetDatabase.LoadAssetAtPath<Material>(Hero1005MaterialPath);
+            if (material == null)
+            {
+                Debug.LogWarning("[GirlsWarRestore] Hero1005 material missing: " + Hero1005MaterialPath);
+                return false;
+            }
+
+            var heroParent = FindTransformByPrefix("UI_heroSpine__") ?? FindTransformByName("UI_heroSpine");
+            if (heroParent == null)
+                return false;
+            EnsureActiveInHierarchy(heroParent);
+            foreach (var parentGraphic in heroParent.GetComponents<Graphic>())
+                parentGraphic.raycastTarget = false;
+            var parentButton = heroParent.GetComponent<Button>();
+            if (parentButton != null)
+            {
+                parentButton.interactable = false;
+                parentButton.enabled = false;
+            }
+
+            var previous = heroParent.Find("Restore_Hero1005_SpineRoot_Main");
+            if (previous != null)
+                UnityEngine.Object.DestroyImmediate(previous.gameObject);
+
+            var root = new GameObject("Restore_Hero1005_SpineRoot_Main", typeof(RectTransform));
+            var rootRect = root.GetComponent<RectTransform>();
+            rootRect.SetParent(heroParent, false);
+            rootRect.anchorMin = Vector2.zero;
+            rootRect.anchorMax = Vector2.one;
+            rootRect.offsetMin = Vector2.zero;
+            rootRect.offsetMax = Vector2.zero;
+            rootRect.pivot = new Vector2(0.5f, 0.5f);
+            rootRect.localScale = Vector3.one;
+            rootRect.localRotation = Quaternion.identity;
+
+            var graphic = SkeletonGraphic.NewSkeletonGraphicGameObject(skeletonDataAsset, rootRect, material);
+            graphic.gameObject.name = "Restore_Hero1005_Painting_1005_Main";
+            graphic.raycastTarget = false;
+            graphic.maskable = true;
+            graphic.allowMultipleCanvasRenderers = true;
+            graphic.startingAnimation = "A";
+            graphic.startingLoop = true;
+
+            var rect = graphic.GetComponent<RectTransform>();
+            rect.anchorMin = new Vector2(0.5f, 0.5f);
+            rect.anchorMax = new Vector2(0.5f, 0.5f);
+            rect.pivot = new Vector2(0.5f, 0.5f);
+            rect.anchoredPosition = Vector2.zero;
+            rect.sizeDelta = new Vector2(100f, 100f);
+            rect.localScale = Vector3.one;
+            rect.localRotation = Quaternion.identity;
+
+            graphic.Initialize(true);
+            if (skeletonDataAsset.GetSkeletonData(true).FindAnimation("A") != null)
+                graphic.AnimationState.SetAnimation(0, "A", true);
+            graphic.Update(0f);
+            graphic.LateUpdate();
+            return true;
+        }
+
+        private static bool ApplyPromotedHomeActivitySlotState()
+        {
+            var changed = false;
+            var runtimeActivityNode = FindTransformByPrefix(PromotedHomeRuntimeActivityNodePrefix);
+            if (runtimeActivityNode != null && runtimeActivityNode.gameObject.activeSelf)
+            {
+                runtimeActivityNode.gameObject.SetActive(false);
+                changed = true;
+            }
+
+            foreach (var transform in UnityEngine.Object.FindObjectsByType<Transform>(FindObjectsInactive.Include))
+            {
+                if (!transform.name.StartsWith("btn_act_", StringComparison.Ordinal) ||
+                    transform.name.StartsWith("btn_act__", StringComparison.Ordinal))
+                    continue;
+
+                var suffix = transform.name.Substring("btn_act_".Length);
+                var end = suffix.IndexOf("__", StringComparison.Ordinal);
+                var slotText = end >= 0 ? suffix.Substring(0, end) : suffix;
+                if (!int.TryParse(slotText, NumberStyles.Integer, CultureInfo.InvariantCulture, out _))
+                    continue;
+
+                if (runtimeActivityNode != null && !transform.IsChildOf(runtimeActivityNode))
+                    continue;
+
+                var shouldBeActive = false;
+                if (transform.gameObject.activeSelf == shouldBeActive)
+                    continue;
+
+                transform.gameObject.SetActive(shouldBeActive);
+                changed = true;
+            }
+            return changed;
+        }
+
+        private static void ForcePromotedHomeSpineUpdate()
+        {
+            Canvas.ForceUpdateCanvases();
+            foreach (var skeleton in UnityEngine.Object.FindObjectsByType<SkeletonGraphic>(FindObjectsInactive.Include))
+            {
+                skeleton.Initialize(false);
+                skeleton.Update(0f);
+                skeleton.LateUpdate();
+            }
+            Canvas.ForceUpdateCanvases();
+        }
+
+        private static Transform FindTransformByPrefix(string prefix)
+        {
+            foreach (var transform in UnityEngine.Object.FindObjectsByType<Transform>(FindObjectsInactive.Include))
+                if (transform.name.StartsWith(prefix, StringComparison.Ordinal))
+                    return transform;
+            return null;
+        }
+
+        private static Transform FindTransformByName(string name)
+        {
+            foreach (var transform in UnityEngine.Object.FindObjectsByType<Transform>(FindObjectsInactive.Include))
+                if (transform.name == name)
+                    return transform;
+            return null;
+        }
+
+        private static void EnsureActiveInHierarchy(Transform transform)
+        {
+            var stack = new Stack<Transform>();
+            var current = transform;
+            while (current != null)
+            {
+                stack.Push(current);
+                current = current.parent;
+            }
+            while (stack.Count > 0)
+                stack.Pop().gameObject.SetActive(true);
         }
 
         private static void AddLabels(List<RectRow> rows, Dictionary<string, RectTransform> byRectId)
@@ -487,7 +716,7 @@ namespace GirlsWarRestore
 
         private static void ApplyRectRow(RectTransform rt, RectRow row)
         {
-            if (row.pathId == MainPrefabRootRectId)
+            if (row.pathId == activeMainRootRectId)
             {
                 rt.anchorMin = Vector2.zero;
                 rt.anchorMax = Vector2.one;
@@ -507,7 +736,7 @@ namespace GirlsWarRestore
             rt.pivot = row.pivot;
             rt.sizeDelta = row.sizeDelta;
             rt.anchoredPosition = row.anchoredPosition;
-            rt.localScale = row.localScale == Vector3.zero ? Vector3.one : row.localScale;
+            rt.localScale = row.localScale;
             rt.localRotation = Quaternion.identity;
             var lp = rt.localPosition;
             lp.z = row.localPosition.z;
@@ -791,10 +1020,12 @@ namespace GirlsWarRestore
                     tmpText.wordSpacing = tmpDetail.wordSpacing;
                     tmpText.lineSpacing = tmpDetail.lineSpacing;
                     tmpText.paragraphSpacing = tmpDetail.paragraphSpacing;
+#pragma warning disable 0618
                     tmpText.enableWordWrapping = tmpDetail.enableWordWrapping;
                     tmpText.wordWrappingRatios = tmpDetail.wordWrappingRatios;
                     tmpText.overflowMode = ToTextOverflowMode(tmpDetail.overflowMode);
                     tmpText.enableKerning = tmpDetail.enableKerning;
+#pragma warning restore 0618
                     tmpText.extraPadding = tmpDetail.enableExtraPadding;
                     tmpText.richText = tmpDetail.isRichText;
                     tmpText.parseCtrlCharacters = tmpDetail.parseCtrlCharacters;
@@ -2121,6 +2352,7 @@ namespace GirlsWarRestore
             public int restoreOverrideCount;
             public int rectOverrideCount;
             public int visualOverrideCount;
+            public bool promotedHomeRuntimeStateApplied;
             public string generatedAt;
         }
 

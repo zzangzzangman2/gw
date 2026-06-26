@@ -17,9 +17,9 @@ This is not a final restored battle screen. It tests the BATTLE_28 finding that 
 - hiddenUnresolvedWhiteDataIconCount: `9`
 - visibleCardImageCount: `51`
 - visibleWhiteLikeCardImageCount: `0`
-- BATTLE_27 bottom nonFloorLikeRatio: `0.2096`
-- BATTLE_29 bottom nonFloorLikeRatio: `0.243368`
-- capture nearWhiteRatio: `0.000265`
+- BATTLE_27 bottom nonFloorLikeRatio: `0.212505`
+- BATTLE_29 bottom nonFloorLikeRatio: `0.244674`
+- capture nearWhiteRatio: `0.000278`
 
 ## Battle Map Evidence
 - capture resolution: `1920x1080`

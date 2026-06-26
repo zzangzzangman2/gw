@@ -1,0 +1,2 @@
+﻿path,name,activeInHierarchy,enabled,layer,cullingMask,cullingIncludesLayer9,cullingIncludesUILayer5,depth,targetDisplay,pixelRect,orthographic,orthographicSize,fieldOfView,nearClipPlane,farClipPlane,position,rotationEuler,clearFlags,targetTexture
+BattleHudSpriteAtlasTextureRuntimeBindingClip05Camera,BattleHudSpriteAtlasTextureRuntimeBindingClip05Camera,True,True,0,-1,True,True,1000,0,0/0/640/480,True,5,60,0.01,100,0/0/-10,0/0/0,SolidColor,

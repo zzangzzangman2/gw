@@ -1,0 +1,1721 @@
+{
+  "name": "CHARACTER_COMMON_SPEEDLINE_BUNDLE_DEEP_TRACE_RESULT",
+  "generatedBy": "_restore_tools/scripts/build_character_common_speedline_bundle_deep_trace.py",
+  "generatedAtUtc": "2026-06-25T20:14:20.425218+00:00",
+  "workspace": "C:\\Users\\godho\\Downloads\\girlswar",
+  "classification": "no_fake_resource_source_backed_trace",
+  "inputs": {
+    "manifest": "reports/battle/BATTLE_LOCAL_PLAYABLE_PAYLOAD_MANIFEST.json",
+    "assetbundleIndex": "girlswar_merged_extracted/indexes/assetbundles.csv",
+    "versionfile": "girlswar_merged_extracted/indexes/versionfile_VersionFile_bytes.csv",
+    "cdnVersionfile": "girlswar_merged_extracted/indexes/versionfile_CDNVersionFile_bytes.csv",
+    "cleanParentBundle": "girlswar_merged_extracted/extracted/unity/clean_unityfs_slices/download/commonprefabsandres/skilleffect/commonskillprefabsandres1.assetbundle"
+  },
+  "summary": {
+    "speedlineStatusCounts": {
+      "resolved_loadable_local_bundle": 3
+    },
+    "resourceUpdateProposalWritten": true,
+    "resourceUpdates": 3,
+    "affectedSkillRows": 26,
+    "skillRowsProposedLoadable": 8,
+    "networkAccessUsed": false,
+    "unitySceneModified": false,
+    "fakeResourceMappingUsed": false
+  },
+  "speedlines": [
+    {
+      "speedline": "pink",
+      "objectName": "pinkspeedline",
+      "exactManifestBundle": "download/commonprefabsandres/skilleffect/commonskillprefabsandres1/pinkspeedline.assetbundle",
+      "assetPath": "Assets/Download/CommonPrefabsAndRes/SkillEffect/CommonSkillPrefabsAndRes1/pinkspeedline/pinkspeedline.prefab",
+      "status": "resolved_loadable_local_bundle",
+      "statusReason": "exact child bundle is absent, but source asset path resolves to an object/container in local parent bundle",
+      "resolvedBundle": "download/commonprefabsandres/skilleffect/commonskillprefabsandres1.assetbundle",
+      "exactLocalExists": false,
+      "parentBundle": "download/commonprefabsandres/skilleffect/commonskillprefabsandres1.assetbundle",
+      "parentLocalExists": true,
+      "parentUnityPyAvailable": true,
+      "parentObjectOrContainerHit": true,
+      "parentMatchingNames": "pinkspeedline",
+      "assetPathTextHitCount": 3,
+      "exactVersionfileHitCount": 0,
+      "parentVersionfileHitCount": 2,
+      "yellowAliasNote": ""
+    },
+    {
+      "speedline": "red",
+      "objectName": "redspeedline",
+      "exactManifestBundle": "download/commonprefabsandres/skilleffect/commonskillprefabsandres1/redspeedline.assetbundle",
+      "assetPath": "Assets/Download/CommonPrefabsAndRes/SkillEffect/CommonSkillPrefabsAndRes1/redspeedline/redspeedline.prefab",
+      "status": "resolved_loadable_local_bundle",
+      "statusReason": "exact child bundle is absent, but source asset path resolves to an object/container in local parent bundle",
+      "resolvedBundle": "download/commonprefabsandres/skilleffect/commonskillprefabsandres1.assetbundle",
+      "exactLocalExists": false,
+      "parentBundle": "download/commonprefabsandres/skilleffect/commonskillprefabsandres1.assetbundle",
+      "parentLocalExists": true,
+      "parentUnityPyAvailable": true,
+      "parentObjectOrContainerHit": true,
+      "parentMatchingNames": "redspeedline|redspeedlines02|redspeedlinesshu|redspeedlinesshu1|redspeedlinesxie",
+      "assetPathTextHitCount": 11,
+      "exactVersionfileHitCount": 0,
+      "parentVersionfileHitCount": 2,
+      "yellowAliasNote": ""
+    },
+    {
+      "speedline": "yello",
+      "objectName": "yellospeedline",
+      "exactManifestBundle": "download/commonprefabsandres/skilleffect/commonskillprefabsandres1/yellospeedline.assetbundle",
+      "assetPath": "Assets/Download/CommonPrefabsAndRes/SkillEffect/CommonSkillPrefabsAndRes1/yellospeedline/yellospeedline.prefab",
+      "status": "resolved_loadable_local_bundle",
+      "statusReason": "exact child bundle is absent, but source asset path resolves to an object/container in local parent bundle",
+      "resolvedBundle": "download/commonprefabsandres/skilleffect/commonskillprefabsandres1.assetbundle",
+      "exactLocalExists": false,
+      "parentBundle": "download/commonprefabsandres/skilleffect/commonskillprefabsandres1.assetbundle",
+      "parentLocalExists": true,
+      "parentUnityPyAvailable": true,
+      "parentObjectOrContainerHit": true,
+      "parentMatchingNames": "yellospeedline|yellospeedline_heng|yellospeedlinesshu",
+      "assetPathTextHitCount": 4,
+      "exactVersionfileHitCount": 0,
+      "parentVersionfileHitCount": 2,
+      "yellowAliasNote": "authoritative source spelling is yellospeedline; yellowspeedline probe produced 0 text hits and is not used as an alias"
+    }
+  ],
+  "affectedSkillRows": [
+    {
+      "side": "our",
+      "waveNo": "",
+      "ownerHeroDid": "1036",
+      "ownerHeroId": 51469,
+      "skillDid": 1036201,
+      "prefabField": "prefabId",
+      "prefabId": 1036201,
+      "skillBundle": "download/skillprefabsandres/1036.assetbundle",
+      "currentStatus": "data_only_missing_actor",
+      "actorStatus": "not_fetchable_local",
+      "affectedExactBundles": "download/commonprefabsandres/skilleffect/commonskillprefabsandres1/redspeedline.assetbundle",
+      "resolvedBundles": "download/commonprefabsandres/skilleffect/commonskillprefabsandres1.assetbundle",
+      "remainingMissingDependencyBundles": "",
+      "proposedStatus": "data_only_missing_actor",
+      "blocker": "actor remains not_fetchable_local: 1036 actor bundle is present in CDNVersionFile but absent locally; CDN acquisition trace found no asset CDN build rule"
+    },
+    {
+      "side": "our",
+      "waveNo": "",
+      "ownerHeroDid": "1036",
+      "ownerHeroId": 51469,
+      "skillDid": 1036301,
+      "prefabField": "prefabId",
+      "prefabId": 1036301,
+      "skillBundle": "download/skillprefabsandres/1036.assetbundle",
+      "currentStatus": "data_only_missing_actor",
+      "actorStatus": "not_fetchable_local",
+      "affectedExactBundles": "download/commonprefabsandres/skilleffect/commonskillprefabsandres1/yellospeedline.assetbundle",
+      "resolvedBundles": "download/commonprefabsandres/skilleffect/commonskillprefabsandres1.assetbundle",
+      "remainingMissingDependencyBundles": "",
+      "proposedStatus": "data_only_missing_actor",
+      "blocker": "actor remains not_fetchable_local: 1036 actor bundle is present in CDNVersionFile but absent locally; CDN acquisition trace found no asset CDN build rule"
+    },
+    {
+      "side": "our",
+      "waveNo": "",
+      "ownerHeroDid": "1036",
+      "ownerHeroId": 51469,
+      "skillDid": 1036301,
+      "prefabField": "fastPrefabId",
+      "prefabId": 1036351,
+      "skillBundle": "download/skillprefabsandres/1036.assetbundle",
+      "currentStatus": "data_only_missing_actor",
+      "actorStatus": "not_fetchable_local",
+      "affectedExactBundles": "download/commonprefabsandres/skilleffect/commonskillprefabsandres1/yellospeedline.assetbundle",
+      "resolvedBundles": "download/commonprefabsandres/skilleffect/commonskillprefabsandres1.assetbundle",
+      "remainingMissingDependencyBundles": "",
+      "proposedStatus": "data_only_missing_actor",
+      "blocker": "actor remains not_fetchable_local: 1036 actor bundle is present in CDNVersionFile but absent locally; CDN acquisition trace found no asset CDN build rule"
+    },
+    {
+      "side": "our",
+      "waveNo": "",
+      "ownerHeroDid": "1002",
+      "ownerHeroId": 50870,
+      "skillDid": 1002201,
+      "prefabField": "prefabId",
+      "prefabId": 1002201,
+      "skillBundle": "download/skillprefabsandres/1002.assetbundle",
+      "currentStatus": "loadable_with_unresolved_common_resource_deps",
+      "actorStatus": "loadable",
+      "affectedExactBundles": "download/commonprefabsandres/skilleffect/commonskillprefabsandres1/pinkspeedline.assetbundle",
+      "resolvedBundles": "download/commonprefabsandres/skilleffect/commonskillprefabsandres1.assetbundle",
+      "remainingMissingDependencyBundles": "",
+      "proposedStatus": "loadable",
+      "blocker": ""
+    },
+    {
+      "side": "our",
+      "waveNo": "",
+      "ownerHeroDid": "1002",
+      "ownerHeroId": 50870,
+      "skillDid": 1002301,
+      "prefabField": "prefabId",
+      "prefabId": 1002301,
+      "skillBundle": "download/skillprefabsandres/1002.assetbundle",
+      "currentStatus": "loadable_with_unresolved_common_resource_deps",
+      "actorStatus": "loadable",
+      "affectedExactBundles": "download/commonprefabsandres/skilleffect/commonskillprefabsandres1/pinkspeedline.assetbundle",
+      "resolvedBundles": "download/commonprefabsandres/skilleffect/commonskillprefabsandres1.assetbundle",
+      "remainingMissingDependencyBundles": "",
+      "proposedStatus": "loadable",
+      "blocker": ""
+    },
+    {
+      "side": "our",
+      "waveNo": "",
+      "ownerHeroDid": "1002",
+      "ownerHeroId": 50870,
+      "skillDid": 1002301,
+      "prefabField": "fastPrefabId",
+      "prefabId": 1002351,
+      "skillBundle": "download/skillprefabsandres/1002.assetbundle",
+      "currentStatus": "loadable_with_unresolved_common_resource_deps",
+      "actorStatus": "loadable",
+      "affectedExactBundles": "download/commonprefabsandres/skilleffect/commonskillprefabsandres1/pinkspeedline.assetbundle",
+      "resolvedBundles": "download/commonprefabsandres/skilleffect/commonskillprefabsandres1.assetbundle",
+      "remainingMissingDependencyBundles": "",
+      "proposedStatus": "loadable",
+      "blocker": ""
+    },
+    {
+      "side": "our",
+      "waveNo": "",
+      "ownerHeroDid": "1034",
+      "ownerHeroId": 50874,
+      "skillDid": 1034201,
+      "prefabField": "prefabId",
+      "prefabId": 1034201,
+      "skillBundle": "download/skillprefabsandres/1034.assetbundle",
+      "currentStatus": "loadable_with_unresolved_common_resource_deps",
+      "actorStatus": "loadable",
+      "affectedExactBundles": "download/commonprefabsandres/skilleffect/commonskillprefabsandres1/yellospeedline.assetbundle",
+      "resolvedBundles": "download/commonprefabsandres/skilleffect/commonskillprefabsandres1.assetbundle",
+      "remainingMissingDependencyBundles": "",
+      "proposedStatus": "loadable",
+      "blocker": ""
+    },
+    {
+      "side": "our",
+      "waveNo": "",
+      "ownerHeroDid": "1034",
+      "ownerHeroId": 50874,
+      "skillDid": 1034301,
+      "prefabField": "fastPrefabId",
+      "prefabId": 1034351,
+      "skillBundle": "download/skillprefabsandres/1034.assetbundle",
+      "currentStatus": "loadable_with_unresolved_common_resource_deps",
+      "actorStatus": "loadable",
+      "affectedExactBundles": "download/commonprefabsandres/skilleffect/commonskillprefabsandres1/yellospeedline.assetbundle",
+      "resolvedBundles": "download/commonprefabsandres/skilleffect/commonskillprefabsandres1.assetbundle",
+      "remainingMissingDependencyBundles": "",
+      "proposedStatus": "loadable",
+      "blocker": ""
+    },
+    {
+      "side": "enemy",
+      "waveNo": "1",
+      "ownerHeroDid": "1100111",
+      "ownerHeroId": -1,
+      "skillDid": 1012201,
+      "prefabField": "prefabId",
+      "prefabId": 1012201,
+      "skillBundle": "download/skillprefabsandres/1012.assetbundle",
+      "currentStatus": "loadable_with_unresolved_common_resource_deps",
+      "actorStatus": "loadable",
+      "affectedExactBundles": "download/commonprefabsandres/skilleffect/commonskillprefabsandres1/redspeedline.assetbundle",
+      "resolvedBundles": "download/commonprefabsandres/skilleffect/commonskillprefabsandres1.assetbundle",
+      "remainingMissingDependencyBundles": "",
+      "proposedStatus": "loadable",
+      "blocker": ""
+    },
+    {
+      "side": "enemy",
+      "waveNo": "1",
+      "ownerHeroDid": "1100111",
+      "ownerHeroId": -1,
+      "skillDid": 1012301,
+      "prefabField": "prefabId",
+      "prefabId": 1012301,
+      "skillBundle": "download/skillprefabsandres/1012.assetbundle",
+      "currentStatus": "loadable_with_unresolved_common_resource_deps",
+      "actorStatus": "loadable",
+      "affectedExactBundles": "download/commonprefabsandres/skilleffect/commonskillprefabsandres1/redspeedline.assetbundle",
+      "resolvedBundles": "download/commonprefabsandres/skilleffect/commonskillprefabsandres1.assetbundle",
+      "remainingMissingDependencyBundles": "",
+      "proposedStatus": "loadable",
+      "blocker": ""
+    },
+    {
+      "side": "enemy",
+      "waveNo": "1",
+      "ownerHeroDid": "1100111",
+      "ownerHeroId": -1,
+      "skillDid": 1012301,
+      "prefabField": "fastPrefabId",
+      "prefabId": 1012351,
+      "skillBundle": "download/skillprefabsandres/1012.assetbundle",
+      "currentStatus": "loadable_with_unresolved_common_resource_deps",
+      "actorStatus": "loadable",
+      "affectedExactBundles": "download/commonprefabsandres/skilleffect/commonskillprefabsandres1/redspeedline.assetbundle",
+      "resolvedBundles": "download/commonprefabsandres/skilleffect/commonskillprefabsandres1.assetbundle",
+      "remainingMissingDependencyBundles": "",
+      "proposedStatus": "loadable",
+      "blocker": ""
+    },
+    {
+      "side": "enemy",
+      "waveNo": "1",
+      "ownerHeroDid": "1100112",
+      "ownerHeroId": -2,
+      "skillDid": 1012201,
+      "prefabField": "prefabId",
+      "prefabId": 1012201,
+      "skillBundle": "download/skillprefabsandres/1012.assetbundle",
+      "currentStatus": "data_only_missing_actor",
+      "actorStatus": "unresolved_enemy_payload_instance",
+      "affectedExactBundles": "download/commonprefabsandres/skilleffect/commonskillprefabsandres1/redspeedline.assetbundle",
+      "resolvedBundles": "download/commonprefabsandres/skilleffect/commonskillprefabsandres1.assetbundle",
+      "remainingMissingDependencyBundles": "",
+      "proposedStatus": "data_only_missing_actor",
+      "blocker": "actor remains unresolved_enemy_payload_instance: payload enemy id has no authoritative DTMonster_* row or alias in local evidence"
+    },
+    {
+      "side": "enemy",
+      "waveNo": "1",
+      "ownerHeroDid": "1100112",
+      "ownerHeroId": -2,
+      "skillDid": 1012301,
+      "prefabField": "prefabId",
+      "prefabId": 1012301,
+      "skillBundle": "download/skillprefabsandres/1012.assetbundle",
+      "currentStatus": "data_only_missing_actor",
+      "actorStatus": "unresolved_enemy_payload_instance",
+      "affectedExactBundles": "download/commonprefabsandres/skilleffect/commonskillprefabsandres1/redspeedline.assetbundle",
+      "resolvedBundles": "download/commonprefabsandres/skilleffect/commonskillprefabsandres1.assetbundle",
+      "remainingMissingDependencyBundles": "",
+      "proposedStatus": "data_only_missing_actor",
+      "blocker": "actor remains unresolved_enemy_payload_instance: payload enemy id has no authoritative DTMonster_* row or alias in local evidence"
+    },
+    {
+      "side": "enemy",
+      "waveNo": "1",
+      "ownerHeroDid": "1100112",
+      "ownerHeroId": -2,
+      "skillDid": 1012301,
+      "prefabField": "fastPrefabId",
+      "prefabId": 1012351,
+      "skillBundle": "download/skillprefabsandres/1012.assetbundle",
+      "currentStatus": "data_only_missing_actor",
+      "actorStatus": "unresolved_enemy_payload_instance",
+      "affectedExactBundles": "download/commonprefabsandres/skilleffect/commonskillprefabsandres1/redspeedline.assetbundle",
+      "resolvedBundles": "download/commonprefabsandres/skilleffect/commonskillprefabsandres1.assetbundle",
+      "remainingMissingDependencyBundles": "",
+      "proposedStatus": "data_only_missing_actor",
+      "blocker": "actor remains unresolved_enemy_payload_instance: payload enemy id has no authoritative DTMonster_* row or alias in local evidence"
+    },
+    {
+      "side": "enemy",
+      "waveNo": "1",
+      "ownerHeroDid": "1100113",
+      "ownerHeroId": -3,
+      "skillDid": 1012201,
+      "prefabField": "prefabId",
+      "prefabId": 1012201,
+      "skillBundle": "download/skillprefabsandres/1012.assetbundle",
+      "currentStatus": "data_only_missing_actor",
+      "actorStatus": "unresolved_enemy_payload_instance",
+      "affectedExactBundles": "download/commonprefabsandres/skilleffect/commonskillprefabsandres1/redspeedline.assetbundle",
+      "resolvedBundles": "download/commonprefabsandres/skilleffect/commonskillprefabsandres1.assetbundle",
+      "remainingMissingDependencyBundles": "",
+      "proposedStatus": "data_only_missing_actor",
+      "blocker": "actor remains unresolved_enemy_payload_instance: payload enemy id has no authoritative DTMonster_* row or alias in local evidence"
+    },
+    {
+      "side": "enemy",
+      "waveNo": "1",
+      "ownerHeroDid": "1100113",
+      "ownerHeroId": -3,
+      "skillDid": 1012301,
+      "prefabField": "prefabId",
+      "prefabId": 1012301,
+      "skillBundle": "download/skillprefabsandres/1012.assetbundle",
+      "currentStatus": "data_only_missing_actor",
+      "actorStatus": "unresolved_enemy_payload_instance",
+      "affectedExactBundles": "download/commonprefabsandres/skilleffect/commonskillprefabsandres1/redspeedline.assetbundle",
+      "resolvedBundles": "download/commonprefabsandres/skilleffect/commonskillprefabsandres1.assetbundle",
+      "remainingMissingDependencyBundles": "",
+      "proposedStatus": "data_only_missing_actor",
+      "blocker": "actor remains unresolved_enemy_payload_instance: payload enemy id has no authoritative DTMonster_* row or alias in local evidence"
+    },
+    {
+      "side": "enemy",
+      "waveNo": "1",
+      "ownerHeroDid": "1100113",
+      "ownerHeroId": -3,
+      "skillDid": 1012301,
+      "prefabField": "fastPrefabId",
+      "prefabId": 1012351,
+      "skillBundle": "download/skillprefabsandres/1012.assetbundle",
+      "currentStatus": "data_only_missing_actor",
+      "actorStatus": "unresolved_enemy_payload_instance",
+      "affectedExactBundles": "download/commonprefabsandres/skilleffect/commonskillprefabsandres1/redspeedline.assetbundle",
+      "resolvedBundles": "download/commonprefabsandres/skilleffect/commonskillprefabsandres1.assetbundle",
+      "remainingMissingDependencyBundles": "",
+      "proposedStatus": "data_only_missing_actor",
+      "blocker": "actor remains unresolved_enemy_payload_instance: payload enemy id has no authoritative DTMonster_* row or alias in local evidence"
+    },
+    {
+      "side": "enemy",
+      "waveNo": "2",
+      "ownerHeroDid": "1100121",
+      "ownerHeroId": -1,
+      "skillDid": 1012201,
+      "prefabField": "prefabId",
+      "prefabId": 1012201,
+      "skillBundle": "download/skillprefabsandres/1012.assetbundle",
+      "currentStatus": "data_only_missing_actor",
+      "actorStatus": "unresolved_enemy_payload_instance",
+      "affectedExactBundles": "download/commonprefabsandres/skilleffect/commonskillprefabsandres1/redspeedline.assetbundle",
+      "resolvedBundles": "download/commonprefabsandres/skilleffect/commonskillprefabsandres1.assetbundle",
+      "remainingMissingDependencyBundles": "",
+      "proposedStatus": "data_only_missing_actor",
+      "blocker": "actor remains unresolved_enemy_payload_instance: payload enemy id has no authoritative DTMonster_* row or alias in local evidence"
+    },
+    {
+      "side": "enemy",
+      "waveNo": "2",
+      "ownerHeroDid": "1100121",
+      "ownerHeroId": -1,
+      "skillDid": 1012301,
+      "prefabField": "prefabId",
+      "prefabId": 1012301,
+      "skillBundle": "download/skillprefabsandres/1012.assetbundle",
+      "currentStatus": "data_only_missing_actor",
+      "actorStatus": "unresolved_enemy_payload_instance",
+      "affectedExactBundles": "download/commonprefabsandres/skilleffect/commonskillprefabsandres1/redspeedline.assetbundle",
+      "resolvedBundles": "download/commonprefabsandres/skilleffect/commonskillprefabsandres1.assetbundle",
+      "remainingMissingDependencyBundles": "",
+      "proposedStatus": "data_only_missing_actor",
+      "blocker": "actor remains unresolved_enemy_payload_instance: payload enemy id has no authoritative DTMonster_* row or alias in local evidence"
+    },
+    {
+      "side": "enemy",
+      "waveNo": "2",
+      "ownerHeroDid": "1100121",
+      "ownerHeroId": -1,
+      "skillDid": 1012301,
+      "prefabField": "fastPrefabId",
+      "prefabId": 1012351,
+      "skillBundle": "download/skillprefabsandres/1012.assetbundle",
+      "currentStatus": "data_only_missing_actor",
+      "actorStatus": "unresolved_enemy_payload_instance",
+      "affectedExactBundles": "download/commonprefabsandres/skilleffect/commonskillprefabsandres1/redspeedline.assetbundle",
+      "resolvedBundles": "download/commonprefabsandres/skilleffect/commonskillprefabsandres1.assetbundle",
+      "remainingMissingDependencyBundles": "",
+      "proposedStatus": "data_only_missing_actor",
+      "blocker": "actor remains unresolved_enemy_payload_instance: payload enemy id has no authoritative DTMonster_* row or alias in local evidence"
+    },
+    {
+      "side": "enemy",
+      "waveNo": "2",
+      "ownerHeroDid": "1100122",
+      "ownerHeroId": -2,
+      "skillDid": 1012201,
+      "prefabField": "prefabId",
+      "prefabId": 1012201,
+      "skillBundle": "download/skillprefabsandres/1012.assetbundle",
+      "currentStatus": "data_only_missing_actor",
+      "actorStatus": "unresolved_enemy_payload_instance",
+      "affectedExactBundles": "download/commonprefabsandres/skilleffect/commonskillprefabsandres1/redspeedline.assetbundle",
+      "resolvedBundles": "download/commonprefabsandres/skilleffect/commonskillprefabsandres1.assetbundle",
+      "remainingMissingDependencyBundles": "",
+      "proposedStatus": "data_only_missing_actor",
+      "blocker": "actor remains unresolved_enemy_payload_instance: payload enemy id has no authoritative DTMonster_* row or alias in local evidence"
+    },
+    {
+      "side": "enemy",
+      "waveNo": "2",
+      "ownerHeroDid": "1100122",
+      "ownerHeroId": -2,
+      "skillDid": 1012301,
+      "prefabField": "prefabId",
+      "prefabId": 1012301,
+      "skillBundle": "download/skillprefabsandres/1012.assetbundle",
+      "currentStatus": "data_only_missing_actor",
+      "actorStatus": "unresolved_enemy_payload_instance",
+      "affectedExactBundles": "download/commonprefabsandres/skilleffect/commonskillprefabsandres1/redspeedline.assetbundle",
+      "resolvedBundles": "download/commonprefabsandres/skilleffect/commonskillprefabsandres1.assetbundle",
+      "remainingMissingDependencyBundles": "",
+      "proposedStatus": "data_only_missing_actor",
+      "blocker": "actor remains unresolved_enemy_payload_instance: payload enemy id has no authoritative DTMonster_* row or alias in local evidence"
+    },
+    {
+      "side": "enemy",
+      "waveNo": "2",
+      "ownerHeroDid": "1100122",
+      "ownerHeroId": -2,
+      "skillDid": 1012301,
+      "prefabField": "fastPrefabId",
+      "prefabId": 1012351,
+      "skillBundle": "download/skillprefabsandres/1012.assetbundle",
+      "currentStatus": "data_only_missing_actor",
+      "actorStatus": "unresolved_enemy_payload_instance",
+      "affectedExactBundles": "download/commonprefabsandres/skilleffect/commonskillprefabsandres1/redspeedline.assetbundle",
+      "resolvedBundles": "download/commonprefabsandres/skilleffect/commonskillprefabsandres1.assetbundle",
+      "remainingMissingDependencyBundles": "",
+      "proposedStatus": "data_only_missing_actor",
+      "blocker": "actor remains unresolved_enemy_payload_instance: payload enemy id has no authoritative DTMonster_* row or alias in local evidence"
+    },
+    {
+      "side": "enemy",
+      "waveNo": "2",
+      "ownerHeroDid": "1100123",
+      "ownerHeroId": -3,
+      "skillDid": 1012201,
+      "prefabField": "prefabId",
+      "prefabId": 1012201,
+      "skillBundle": "download/skillprefabsandres/1012.assetbundle",
+      "currentStatus": "data_only_missing_actor",
+      "actorStatus": "unresolved_enemy_payload_instance",
+      "affectedExactBundles": "download/commonprefabsandres/skilleffect/commonskillprefabsandres1/redspeedline.assetbundle",
+      "resolvedBundles": "download/commonprefabsandres/skilleffect/commonskillprefabsandres1.assetbundle",
+      "remainingMissingDependencyBundles": "",
+      "proposedStatus": "data_only_missing_actor",
+      "blocker": "actor remains unresolved_enemy_payload_instance: payload enemy id has no authoritative DTMonster_* row or alias in local evidence"
+    },
+    {
+      "side": "enemy",
+      "waveNo": "2",
+      "ownerHeroDid": "1100123",
+      "ownerHeroId": -3,
+      "skillDid": 1012301,
+      "prefabField": "prefabId",
+      "prefabId": 1012301,
+      "skillBundle": "download/skillprefabsandres/1012.assetbundle",
+      "currentStatus": "data_only_missing_actor",
+      "actorStatus": "unresolved_enemy_payload_instance",
+      "affectedExactBundles": "download/commonprefabsandres/skilleffect/commonskillprefabsandres1/redspeedline.assetbundle",
+      "resolvedBundles": "download/commonprefabsandres/skilleffect/commonskillprefabsandres1.assetbundle",
+      "remainingMissingDependencyBundles": "",
+      "proposedStatus": "data_only_missing_actor",
+      "blocker": "actor remains unresolved_enemy_payload_instance: payload enemy id has no authoritative DTMonster_* row or alias in local evidence"
+    },
+    {
+      "side": "enemy",
+      "waveNo": "2",
+      "ownerHeroDid": "1100123",
+      "ownerHeroId": -3,
+      "skillDid": 1012301,
+      "prefabField": "fastPrefabId",
+      "prefabId": 1012351,
+      "skillBundle": "download/skillprefabsandres/1012.assetbundle",
+      "currentStatus": "data_only_missing_actor",
+      "actorStatus": "unresolved_enemy_payload_instance",
+      "affectedExactBundles": "download/commonprefabsandres/skilleffect/commonskillprefabsandres1/redspeedline.assetbundle",
+      "resolvedBundles": "download/commonprefabsandres/skilleffect/commonskillprefabsandres1.assetbundle",
+      "remainingMissingDependencyBundles": "",
+      "proposedStatus": "data_only_missing_actor",
+      "blocker": "actor remains unresolved_enemy_payload_instance: payload enemy id has no authoritative DTMonster_* row or alias in local evidence"
+    }
+  ],
+  "sourceEvidence": {
+    "parentBundleInspection": {
+      "bundlePath": "girlswar_merged_extracted/extracted/unity/clean_unityfs_slices/download/commonprefabsandres/skilleffect/commonskillprefabsandres1.assetbundle",
+      "exists": true,
+      "size": 99633,
+      "unityPyAvailable": true,
+      "objectCount": 493,
+      "gameObjectNames": [
+        "Particle System",
+        "Particle System (1)",
+        "bluespeedline",
+        "bluespeedlines03",
+        "bluespeedlinesshu",
+        "gdi",
+        "greenspeedline",
+        "gy1 (2)",
+        "normalspeedline",
+        "pinkspeedline",
+        "purplespeedline",
+        "purplespeedline 1",
+        "purplespeedline 2",
+        "purplespeedline xiexiang",
+        "purplespeedline_1035201_suduxian",
+        "redspeedline",
+        "redspeedlines02",
+        "redspeedlinesshu",
+        "redspeedlinesshu1",
+        "redspeedlinesxie",
+        "sx",
+        "sx (1)",
+        "xx",
+        "xx (1)",
+        "yellospeedline",
+        "yellospeedline_heng",
+        "yellospeedlinesshu"
+      ],
+      "containerNames": [],
+      "error": ""
+    },
+    "parentIndexHits": [
+      {
+        "source": "girlswar_merged_extracted/indexes/assetbundles.csv",
+        "line": 297,
+        "matchedText": "download/commonprefabsandres/skilleffect/commonskillprefabsandres1.assetbundle | 102734 | adcf12f61dbc29d63325360569fbbf17036dfc35867b87840922dfcd37258984 | 0 | 3101 | 3101 | True | extracted/unity/clean_unityfs_slices/download/commonprefabsandres/skilleffect/commonskillprefabsandres1.assetbundle | ok | 493 | {\"GameObject\": 127, \"Transform\": 127, \"ParticleSystem\": 108, \"ParticleSystemRenderer\": 108, \"Material\": 20, \"AssetBundle\": 1, \"Shader\": 1, \"Texture2D\": 1}",
+        "bundle": "download/commonprefabsandres/skilleffect/commonskillprefabsandres1.assetbundle",
+        "size": "102734",
+        "sha256": "adcf12f61dbc29d63325360569fbbf17036dfc35867b87840922dfcd37258984",
+        "versionfile_res_offset": "0",
+        "first_unityfs_offset": "3101",
+        "used_offset": "3101",
+        "is_prefix_obfuscated": "True",
+        "clean_slice": "extracted/unity/clean_unityfs_slices/download/commonprefabsandres/skilleffect/commonskillprefabsandres1.assetbundle",
+        "status": "ok",
+        "object_count": "493",
+        "type_counts": "{\"GameObject\": 127, \"Transform\": 127, \"ParticleSystem\": 108, \"ParticleSystemRenderer\": 108, \"Material\": 20, \"AssetBundle\": 1, \"Shader\": 1, \"Texture2D\": 1}"
+      },
+      {
+        "source": "girlswar_merged_extracted/indexes/merged_files.csv",
+        "line": 1255,
+        "matchedText": "AssetBundles/download/commonprefabsandres/skilleffect/commonskillprefabsandres1.assetbundle | 102734 | adcf12f61dbc29d63325360569fbbf17036dfc35867b87840922dfcd37258984 | latest_files_build | C:\\Users\\godho\\Downloads\\girlswar\\com.girlwars.kr\\files\\build\\download\\commonprefabsandres\\skilleffect\\commonskillprefabsandres1.assetbundle | 2 | 1",
+        "relative_path": "AssetBundles/download/commonprefabsandres/skilleffect/commonskillprefabsandres1.assetbundle",
+        "size": "102734",
+        "sha256": "adcf12f61dbc29d63325360569fbbf17036dfc35867b87840922dfcd37258984",
+        "winner_source": "latest_files_build",
+        "winner_source_path": "C:\\Users\\godho\\Downloads\\girlswar\\com.girlwars.kr\\files\\build\\download\\commonprefabsandres\\skilleffect\\commonskillprefabsandres1.assetbundle",
+        "candidate_count": "2",
+        "different_hash_count": "1"
+      },
+      {
+        "source": "girlswar_merged_extracted/indexes/conflicts.csv",
+        "line": 451,
+        "matchedText": "AssetBundles/download/commonprefabsandres/skilleffect/commonskillprefabsandres1.assetbundle | True | latest_files_build | 20 | 102734 | adcf12f61dbc29d63325360569fbbf17036dfc35867b87840922dfcd37258984 | C:\\Users\\godho\\Downloads\\girlswar\\com.girlwars.kr\\files\\build\\download\\commonprefabsandres\\skilleffect\\commonskillprefabsandres1.assetbundle",
+        "relative_path": "AssetBundles/download/commonprefabsandres/skilleffect/commonskillprefabsandres1.assetbundle",
+        "kept": "True",
+        "source_kind": "latest_files_build",
+        "priority": "20",
+        "size": "102734",
+        "sha256": "adcf12f61dbc29d63325360569fbbf17036dfc35867b87840922dfcd37258984",
+        "source_path": "C:\\Users\\godho\\Downloads\\girlswar\\com.girlwars.kr\\files\\build\\download\\commonprefabsandres\\skilleffect\\commonskillprefabsandres1.assetbundle"
+      },
+      {
+        "source": "girlswar_merged_extracted/indexes/conflicts.csv",
+        "line": 452,
+        "matchedText": "AssetBundles/download/commonprefabsandres/skilleffect/commonskillprefabsandres1.assetbundle | False | old_xapk_abassets | 10 | 102734 | adcf12f61dbc29d63325360569fbbf17036dfc35867b87840922dfcd37258984 | C:\\Users\\godho\\Documents\\Codex\\2026-06-25\\c-users-godho-downloads-girlswar\\work\\probe\\abassets.apk!/assets/AssetBundles/download/commonprefabsandres/skilleffect/commonskillprefabsandres1.assetbundle",
+        "relative_path": "AssetBundles/download/commonprefabsandres/skilleffect/commonskillprefabsandres1.assetbundle",
+        "kept": "False",
+        "source_kind": "old_xapk_abassets",
+        "priority": "10",
+        "size": "102734",
+        "sha256": "adcf12f61dbc29d63325360569fbbf17036dfc35867b87840922dfcd37258984",
+        "source_path": "C:\\Users\\godho\\Documents\\Codex\\2026-06-25\\c-users-godho-downloads-girlswar\\work\\probe\\abassets.apk!/assets/AssetBundles/download/commonprefabsandres/skilleffect/commonskillprefabsandres1.assetbundle"
+      },
+      {
+        "source": "girlswar_merged_extracted/indexes/versionfile_VersionFile_bytes.csv",
+        "line": 204,
+        "matchedText": "202 | download/commonprefabsandres/skilleffect/commonskillprefabsandres1.assetbundle | 4e7b135f8d727b750d474cfbe7ebb28a | 102734 | True | True | 0 | 0 | 0",
+        "index": "202",
+        "AssetBundleName": "download/commonprefabsandres/skilleffect/commonskillprefabsandres1.assetbundle",
+        "MD5": "4e7b135f8d727b750d474cfbe7ebb28a",
+        "Size": "102734",
+        "IsFirstData": "True",
+        "IsEncrypt": "True",
+        "Priority": "0",
+        "Category": "0",
+        "Version": "",
+        "ResOffset": "0"
+      },
+      {
+        "source": "girlswar_merged_extracted/indexes/versionfile_CDNVersionFile_bytes.csv",
+        "line": 897,
+        "matchedText": "895 | download/commonprefabsandres/skilleffect/commonskillprefabsandres1.assetbundle | 4e7b135f8d727b750d474cfbe7ebb28a | 102734 | True | True | 5 | 0 | 1.0.258 | 399",
+        "index": "895",
+        "AssetBundleName": "download/commonprefabsandres/skilleffect/commonskillprefabsandres1.assetbundle",
+        "MD5": "4e7b135f8d727b750d474cfbe7ebb28a",
+        "Size": "102734",
+        "IsFirstData": "True",
+        "IsEncrypt": "True",
+        "Priority": "5",
+        "Category": "0",
+        "Version": "1.0.258",
+        "ResOffset": "399"
+      },
+      {
+        "source": "girlswar_merged_extracted/indexes/unity_bundle_export_map.csv",
+        "line": 205,
+        "matchedText": "download/commonprefabsandres/skilleffect/commonskillprefabsandres1.assetbundle | extracted/unity/bundles/b_bd982b04e86eae00",
+        "bundle": "download/commonprefabsandres/skilleffect/commonskillprefabsandres1.assetbundle",
+        "export_dir": "extracted/unity/bundles/b_bd982b04e86eae00"
+      },
+      {
+        "source": "girlswar_merged_extracted/indexes/unity_cab_to_bundle.csv",
+        "line": 309,
+        "matchedText": "CAB-3a7852ebc14700fbca867ed6b5363ad2 | download/commonprefabsandres/skilleffect/commonskillprefabsandres1.assetbundle | C:/Users/godho/Downloads/girlswar/girlswar_merged_extracted/extracted/unity/clean_unityfs_slices/download/commonprefabsandres/skilleffect/commonskillprefabsandres1.assetbundle",
+        "cab_name": "CAB-3a7852ebc14700fbca867ed6b5363ad2",
+        "bundle": "download/commonprefabsandres/skilleffect/commonskillprefabsandres1.assetbundle",
+        "clean_path": "C:/Users/godho/Downloads/girlswar/girlswar_merged_extracted/extracted/unity/clean_unityfs_slices/download/commonprefabsandres/skilleffect/commonskillprefabsandres1.assetbundle"
+      },
+      {
+        "source": "girlswar_merged_extracted/indexes/unity_objects.csv",
+        "line": 24264,
+        "matchedText": "download/commonprefabsandres/skilleffect/commonskillprefabsandres1.assetbundle | -9098469724998318443 | GameObject",
+        "bundle": "download/commonprefabsandres/skilleffect/commonskillprefabsandres1.assetbundle",
+        "path_id": "-9098469724998318443",
+        "type": "GameObject"
+      },
+      {
+        "source": "girlswar_merged_extracted/indexes/unity_objects.csv",
+        "line": 24265,
+        "matchedText": "download/commonprefabsandres/skilleffect/commonskillprefabsandres1.assetbundle | -9059105949272832936 | ParticleSystem",
+        "bundle": "download/commonprefabsandres/skilleffect/commonskillprefabsandres1.assetbundle",
+        "path_id": "-9059105949272832936",
+        "type": "ParticleSystem"
+      },
+      {
+        "source": "girlswar_merged_extracted/indexes/unity_objects.csv",
+        "line": 24266,
+        "matchedText": "download/commonprefabsandres/skilleffect/commonskillprefabsandres1.assetbundle | -9050933689879559678 | ParticleSystem",
+        "bundle": "download/commonprefabsandres/skilleffect/commonskillprefabsandres1.assetbundle",
+        "path_id": "-9050933689879559678",
+        "type": "ParticleSystem"
+      },
+      {
+        "source": "girlswar_merged_extracted/indexes/unity_objects.csv",
+        "line": 24267,
+        "matchedText": "download/commonprefabsandres/skilleffect/commonskillprefabsandres1.assetbundle | -9047199856753443729 | Transform",
+        "bundle": "download/commonprefabsandres/skilleffect/commonskillprefabsandres1.assetbundle",
+        "path_id": "-9047199856753443729",
+        "type": "Transform"
+      },
+      {
+        "source": "girlswar_merged_extracted/indexes/unity_objects.csv",
+        "line": 24268,
+        "matchedText": "download/commonprefabsandres/skilleffect/commonskillprefabsandres1.assetbundle | -8978248798180262185 | Transform",
+        "bundle": "download/commonprefabsandres/skilleffect/commonskillprefabsandres1.assetbundle",
+        "path_id": "-8978248798180262185",
+        "type": "Transform"
+      },
+      {
+        "source": "girlswar_merged_extracted/indexes/unity_objects.csv",
+        "line": 24269,
+        "matchedText": "download/commonprefabsandres/skilleffect/commonskillprefabsandres1.assetbundle | -8937600993756863949 | ParticleSystem",
+        "bundle": "download/commonprefabsandres/skilleffect/commonskillprefabsandres1.assetbundle",
+        "path_id": "-8937600993756863949",
+        "type": "ParticleSystem"
+      },
+      {
+        "source": "girlswar_merged_extracted/indexes/unity_objects.csv",
+        "line": 24270,
+        "matchedText": "download/commonprefabsandres/skilleffect/commonskillprefabsandres1.assetbundle | -8910305710324850897 | Transform",
+        "bundle": "download/commonprefabsandres/skilleffect/commonskillprefabsandres1.assetbundle",
+        "path_id": "-8910305710324850897",
+        "type": "Transform"
+      },
+      {
+        "source": "girlswar_merged_extracted/indexes/unity_objects.csv",
+        "line": 24271,
+        "matchedText": "download/commonprefabsandres/skilleffect/commonskillprefabsandres1.assetbundle | -8857376762992828528 | Transform",
+        "bundle": "download/commonprefabsandres/skilleffect/commonskillprefabsandres1.assetbundle",
+        "path_id": "-8857376762992828528",
+        "type": "Transform"
+      },
+      {
+        "source": "girlswar_merged_extracted/indexes/unity_objects.csv",
+        "line": 24272,
+        "matchedText": "download/commonprefabsandres/skilleffect/commonskillprefabsandres1.assetbundle | -8820795155607015775 | GameObject",
+        "bundle": "download/commonprefabsandres/skilleffect/commonskillprefabsandres1.assetbundle",
+        "path_id": "-8820795155607015775",
+        "type": "GameObject"
+      },
+      {
+        "source": "girlswar_merged_extracted/indexes/unity_objects.csv",
+        "line": 24273,
+        "matchedText": "download/commonprefabsandres/skilleffect/commonskillprefabsandres1.assetbundle | -8789718006314464344 | Transform",
+        "bundle": "download/commonprefabsandres/skilleffect/commonskillprefabsandres1.assetbundle",
+        "path_id": "-8789718006314464344",
+        "type": "Transform"
+      },
+      {
+        "source": "girlswar_merged_extracted/indexes/unity_objects.csv",
+        "line": 24274,
+        "matchedText": "download/commonprefabsandres/skilleffect/commonskillprefabsandres1.assetbundle | -8670181960659990676 | ParticleSystemRenderer",
+        "bundle": "download/commonprefabsandres/skilleffect/commonskillprefabsandres1.assetbundle",
+        "path_id": "-8670181960659990676",
+        "type": "ParticleSystemRenderer"
+      },
+      {
+        "source": "girlswar_merged_extracted/indexes/unity_objects.csv",
+        "line": 24275,
+        "matchedText": "download/commonprefabsandres/skilleffect/commonskillprefabsandres1.assetbundle | -8665244030916671166 | ParticleSystem",
+        "bundle": "download/commonprefabsandres/skilleffect/commonskillprefabsandres1.assetbundle",
+        "path_id": "-8665244030916671166",
+        "type": "ParticleSystem"
+      },
+      {
+        "source": "girlswar_merged_extracted/indexes/unity_objects.csv",
+        "line": 24276,
+        "matchedText": "download/commonprefabsandres/skilleffect/commonskillprefabsandres1.assetbundle | -8645293927702853641 | Transform",
+        "bundle": "download/commonprefabsandres/skilleffect/commonskillprefabsandres1.assetbundle",
+        "path_id": "-8645293927702853641",
+        "type": "Transform"
+      },
+      {
+        "source": "girlswar_merged_extracted/indexes/unity_objects.csv",
+        "line": 24277,
+        "matchedText": "download/commonprefabsandres/skilleffect/commonskillprefabsandres1.assetbundle | -8474002549328051980 | ParticleSystem",
+        "bundle": "download/commonprefabsandres/skilleffect/commonskillprefabsandres1.assetbundle",
+        "path_id": "-8474002549328051980",
+        "type": "ParticleSystem"
+      },
+      {
+        "source": "girlswar_merged_extracted/indexes/unity_objects.csv",
+        "line": 24278,
+        "matchedText": "download/commonprefabsandres/skilleffect/commonskillprefabsandres1.assetbundle | -8465300575742954327 | Transform",
+        "bundle": "download/commonprefabsandres/skilleffect/commonskillprefabsandres1.assetbundle",
+        "path_id": "-8465300575742954327",
+        "type": "Transform"
+      },
+      {
+        "source": "girlswar_merged_extracted/indexes/unity_objects.csv",
+        "line": 24279,
+        "matchedText": "download/commonprefabsandres/skilleffect/commonskillprefabsandres1.assetbundle | -8460626728311946495 | ParticleSystemRenderer",
+        "bundle": "download/commonprefabsandres/skilleffect/commonskillprefabsandres1.assetbundle",
+        "path_id": "-8460626728311946495",
+        "type": "ParticleSystemRenderer"
+      },
+      {
+        "source": "girlswar_merged_extracted/indexes/unity_objects.csv",
+        "line": 24280,
+        "matchedText": "download/commonprefabsandres/skilleffect/commonskillprefabsandres1.assetbundle | -8455011639514672412 | Transform",
+        "bundle": "download/commonprefabsandres/skilleffect/commonskillprefabsandres1.assetbundle",
+        "path_id": "-8455011639514672412",
+        "type": "Transform"
+      },
+      {
+        "source": "girlswar_merged_extracted/indexes/unity_objects.csv",
+        "line": 24281,
+        "matchedText": "download/commonprefabsandres/skilleffect/commonskillprefabsandres1.assetbundle | -8448195031972671509 | Transform",
+        "bundle": "download/commonprefabsandres/skilleffect/commonskillprefabsandres1.assetbundle",
+        "path_id": "-8448195031972671509",
+        "type": "Transform"
+      },
+      {
+        "source": "girlswar_merged_extracted/indexes/unity_objects.csv",
+        "line": 24282,
+        "matchedText": "download/commonprefabsandres/skilleffect/commonskillprefabsandres1.assetbundle | -8438984003798513615 | ParticleSystemRenderer",
+        "bundle": "download/commonprefabsandres/skilleffect/commonskillprefabsandres1.assetbundle",
+        "path_id": "-8438984003798513615",
+        "type": "ParticleSystemRenderer"
+      },
+      {
+        "source": "girlswar_merged_extracted/indexes/unity_objects.csv",
+        "line": 24283,
+        "matchedText": "download/commonprefabsandres/skilleffect/commonskillprefabsandres1.assetbundle | -8431684486884500317 | ParticleSystemRenderer",
+        "bundle": "download/commonprefabsandres/skilleffect/commonskillprefabsandres1.assetbundle",
+        "path_id": "-8431684486884500317",
+        "type": "ParticleSystemRenderer"
+      }
+    ],
+    "exactChildIndexHits": [],
+    "textHits": [
+      {
+        "source": "reports/battle/BATTLE_08_MISSING_CLASSIFICATION.csv",
+        "line": 3,
+        "matchedText": "timeline_prefab_dep,download/commonprefabsandres/skilleffect/commonskillprefabsandres1/pinkspeedline.assetbundle,download/commonprefabsandres/skilleffect/commonskillprefabsandres1.assetbundle,True,path_normalize_issue,timeline:1002201;timeline:1002301;timeline:1002351,BattleTimelineResMap.prefab"
+      },
+      {
+        "source": "reports/battle/BATTLE_08_MISSING_CLASSIFICATION.csv",
+        "line": 4,
+        "matchedText": "timeline_prefab_dep,download/commonprefabsandres/skilleffect/commonskillprefabsandres1/redspeedline.assetbundle,download/commonprefabsandres/skilleffect/commonskillprefabsandres1.assetbundle,True,path_normalize_issue,timeline:1036201;timeline:1012201;timeline:1012201;timeline:1012301;timeline:1012301;timeline:1012301;timeline:1012301;timeline:1012351;timeline:1012351;timeline:1012351;timeline:1012201;timeline:1012201;timeline:1012301;timeline:1012301;timeline:1012301;timeline:1012301;timeline:1012351;timeline:1012351;timeline:1012351;timeline:1012201;timeline:1012201;timeline:1012301;timeline:1012301;timeline:1012301;timeline:1012301;timeline:1012351;timeline:1012351;timeline:1012351;timeline:1012201;timeline:1012201;timeline:1012301;timeline:1012301;timeline:1012301;timeline:1012301;timeline:1012351;timeline:1012351;timeline:1012351;timeline:1012201;timeline:1012201;timeline:1012301;tim"
+      },
+      {
+        "source": "reports/battle/BATTLE_08_MISSING_CLASSIFICATION.csv",
+        "line": 5,
+        "matchedText": "timeline_prefab_dep,download/commonprefabsandres/skilleffect/commonskillprefabsandres1/yellospeedline.assetbundle,download/commonprefabsandres/skilleffect/commonskillprefabsandres1.assetbundle,True,path_normalize_issue,timeline:1036301;timeline:1036351;timeline:1034201;timeline:1034351,BattleTimelineResMap.prefab"
+      },
+      {
+        "source": "reports/battle/BATTLE_28_ACTOR_MOTION_SKILLCARD_EVIDENCE_RESULT.json",
+        "line": 1329,
+        "matchedText": "\"bundle\": \"download/commonprefabsandres/skilleffect/commonskillprefabsandres1/pinkspeedline.assetbundle\","
+      },
+      {
+        "source": "reports/battle/BATTLE_28_ACTOR_MOTION_SKILLCARD_EVIDENCE_RESULT.json",
+        "line": 1330,
+        "matchedText": "\"absolutePath\": \"C:\\\\Users\\\\godho\\\\Downloads\\\\girlswar\\\\girlswar_merged_extracted\\\\extracted\\\\unity\\\\clean_unityfs_slices\\\\download\\\\commonprefabsandres\\\\skilleffect\\\\commonskillprefabsandres1\\\\pinkspeedline.assetbundle\","
+      },
+      {
+        "source": "reports/battle/BATTLE_28_ACTOR_MOTION_SKILLCARD_EVIDENCE_RESULT.json",
+        "line": 1338,
+        "matchedText": "\"bundle\": \"download/commonprefabsandres/skilleffect/commonskillprefabsandres1/pinkspeedline.assetbundle\","
+      },
+      {
+        "source": "reports/battle/BATTLE_28_ACTOR_MOTION_SKILLCARD_EVIDENCE_RESULT.json",
+        "line": 1339,
+        "matchedText": "\"absolutePath\": \"C:\\\\Users\\\\godho\\\\Downloads\\\\girlswar\\\\girlswar_merged_extracted\\\\extracted\\\\unity\\\\clean_unityfs_slices\\\\download\\\\commonprefabsandres\\\\skilleffect\\\\commonskillprefabsandres1\\\\pinkspeedline.assetbundle\","
+      },
+      {
+        "source": "reports/battle/BATTLE_28_ACTOR_MOTION_SKILLCARD_EVIDENCE_RESULT.json",
+        "line": 1347,
+        "matchedText": "\"bundle\": \"download/commonprefabsandres/skilleffect/commonskillprefabsandres1/redspeedline.assetbundle\","
+      },
+      {
+        "source": "reports/battle/BATTLE_28_ACTOR_MOTION_SKILLCARD_EVIDENCE_RESULT.json",
+        "line": 1348,
+        "matchedText": "\"absolutePath\": \"C:\\\\Users\\\\godho\\\\Downloads\\\\girlswar\\\\girlswar_merged_extracted\\\\extracted\\\\unity\\\\clean_unityfs_slices\\\\download\\\\commonprefabsandres\\\\skilleffect\\\\commonskillprefabsandres1\\\\redspeedline.assetbundle\","
+      },
+      {
+        "source": "reports/battle/BATTLE_28_ACTOR_MOTION_SKILLCARD_EVIDENCE_RESULT.json",
+        "line": 1356,
+        "matchedText": "\"bundle\": \"download/commonprefabsandres/skilleffect/commonskillprefabsandres1/redspeedline.assetbundle\","
+      },
+      {
+        "source": "reports/battle/BATTLE_28_ACTOR_MOTION_SKILLCARD_EVIDENCE_RESULT.json",
+        "line": 1357,
+        "matchedText": "\"absolutePath\": \"C:\\\\Users\\\\godho\\\\Downloads\\\\girlswar\\\\girlswar_merged_extracted\\\\extracted\\\\unity\\\\clean_unityfs_slices\\\\download\\\\commonprefabsandres\\\\skilleffect\\\\commonskillprefabsandres1\\\\redspeedline.assetbundle\","
+      },
+      {
+        "source": "reports/battle/BATTLE_28_ACTOR_MOTION_SKILLCARD_EVIDENCE_RESULT.json",
+        "line": 1365,
+        "matchedText": "\"bundle\": \"download/commonprefabsandres/skilleffect/commonskillprefabsandres1/yellospeedline.assetbundle\","
+      },
+      {
+        "source": "reports/battle/BATTLE_28_ACTOR_MOTION_SKILLCARD_EVIDENCE_RESULT.json",
+        "line": 1366,
+        "matchedText": "\"absolutePath\": \"C:\\\\Users\\\\godho\\\\Downloads\\\\girlswar\\\\girlswar_merged_extracted\\\\extracted\\\\unity\\\\clean_unityfs_slices\\\\download\\\\commonprefabsandres\\\\skilleffect\\\\commonskillprefabsandres1\\\\yellospeedline.assetbundle\","
+      },
+      {
+        "source": "reports/battle/BATTLE_28_ACTOR_MOTION_SKILLCARD_EVIDENCE_RESULT.json",
+        "line": 1374,
+        "matchedText": "\"bundle\": \"download/commonprefabsandres/skilleffect/commonskillprefabsandres1/yellospeedline.assetbundle\","
+      },
+      {
+        "source": "reports/battle/BATTLE_28_ACTOR_MOTION_SKILLCARD_EVIDENCE_RESULT.json",
+        "line": 1375,
+        "matchedText": "\"absolutePath\": \"C:\\\\Users\\\\godho\\\\Downloads\\\\girlswar\\\\girlswar_merged_extracted\\\\extracted\\\\unity\\\\clean_unityfs_slices\\\\download\\\\commonprefabsandres\\\\skilleffect\\\\commonskillprefabsandres1\\\\yellospeedline.assetbundle\","
+      },
+      {
+        "source": "reports/battle/BATTLE_28_ACTOR_MOTION_SKILLCARD_EVIDENCE_RESULT.json",
+        "line": 1383,
+        "matchedText": "\"bundle\": \"download/commonprefabsandres/skilleffect/commonskillprefabsandres1/redspeedline.assetbundle\","
+      },
+      {
+        "source": "reports/battle/BATTLE_28_ACTOR_MOTION_SKILLCARD_EVIDENCE_RESULT.json",
+        "line": 1384,
+        "matchedText": "\"absolutePath\": \"C:\\\\Users\\\\godho\\\\Downloads\\\\girlswar\\\\girlswar_merged_extracted\\\\extracted\\\\unity\\\\clean_unityfs_slices\\\\download\\\\commonprefabsandres\\\\skilleffect\\\\commonskillprefabsandres1\\\\redspeedline.assetbundle\","
+      },
+      {
+        "source": "reports/battle/BATTLE_28_ACTOR_MOTION_SKILLCARD_EVIDENCE_RESULT.json",
+        "line": 1392,
+        "matchedText": "\"bundle\": \"download/commonprefabsandres/skilleffect/commonskillprefabsandres1/yellospeedline.assetbundle\","
+      },
+      {
+        "source": "reports/battle/BATTLE_28_ACTOR_MOTION_SKILLCARD_EVIDENCE_RESULT.json",
+        "line": 1393,
+        "matchedText": "\"absolutePath\": \"C:\\\\Users\\\\godho\\\\Downloads\\\\girlswar\\\\girlswar_merged_extracted\\\\extracted\\\\unity\\\\clean_unityfs_slices\\\\download\\\\commonprefabsandres\\\\skilleffect\\\\commonskillprefabsandres1\\\\yellospeedline.assetbundle\","
+      },
+      {
+        "source": "reports/battle/BATTLE_28_ACTOR_MOTION_SKILLCARD_EVIDENCE_RESULT.json",
+        "line": 1403,
+        "matchedText": "\"bundle\": \"download/commonprefabsandres/skilleffect/commonskillprefabsandres1/pinkspeedline.assetbundle\","
+      },
+      {
+        "source": "reports/battle/BATTLE_28_ACTOR_MOTION_SKILLCARD_EVIDENCE_RESULT.json",
+        "line": 1404,
+        "matchedText": "\"absolutePath\": \"C:\\\\Users\\\\godho\\\\Downloads\\\\girlswar\\\\girlswar_merged_extracted\\\\extracted\\\\unity\\\\clean_unityfs_slices\\\\download\\\\commonprefabsandres\\\\skilleffect\\\\commonskillprefabsandres1\\\\pinkspeedline.assetbundle\","
+      },
+      {
+        "source": "reports/battle/BATTLE_28_ACTOR_MOTION_SKILLCARD_EVIDENCE_RESULT.json",
+        "line": 1412,
+        "matchedText": "\"bundle\": \"download/commonprefabsandres/skilleffect/commonskillprefabsandres1/redspeedline.assetbundle\","
+      },
+      {
+        "source": "reports/battle/BATTLE_28_ACTOR_MOTION_SKILLCARD_EVIDENCE_RESULT.json",
+        "line": 1413,
+        "matchedText": "\"absolutePath\": \"C:\\\\Users\\\\godho\\\\Downloads\\\\girlswar\\\\girlswar_merged_extracted\\\\extracted\\\\unity\\\\clean_unityfs_slices\\\\download\\\\commonprefabsandres\\\\skilleffect\\\\commonskillprefabsandres1\\\\redspeedline.assetbundle\","
+      },
+      {
+        "source": "reports/battle/BATTLE_28_ACTOR_MOTION_SKILLCARD_EVIDENCE_RESULT.json",
+        "line": 1421,
+        "matchedText": "\"bundle\": \"download/commonprefabsandres/skilleffect/commonskillprefabsandres1/yellospeedline.assetbundle\","
+      },
+      {
+        "source": "reports/battle/BATTLE_28_ACTOR_MOTION_SKILLCARD_EVIDENCE_RESULT.json",
+        "line": 1422,
+        "matchedText": "\"absolutePath\": \"C:\\\\Users\\\\godho\\\\Downloads\\\\girlswar\\\\girlswar_merged_extracted\\\\extracted\\\\unity\\\\clean_unityfs_slices\\\\download\\\\commonprefabsandres\\\\skilleffect\\\\commonskillprefabsandres1\\\\yellospeedline.assetbundle\","
+      },
+      {
+        "source": "reports/battle/BATTLE_43_VALIDATE_MASK_STENCIL_TMP_BUTTON_AND_RUNTIME_FORMATION_SKILL_BINDING_RESULT.json",
+        "line": 249,
+        "matchedText": "\"download/commonprefabsandres/skilleffect/commonskillprefabsandres1/pinkspeedline.assetbundle\","
+      },
+      {
+        "source": "reports/battle/BATTLE_43_VALIDATE_MASK_STENCIL_TMP_BUTTON_AND_RUNTIME_FORMATION_SKILL_BINDING_RESULT.json",
+        "line": 250,
+        "matchedText": "\"download/commonprefabsandres/skilleffect/commonskillprefabsandres1/redspeedline.assetbundle\","
+      },
+      {
+        "source": "reports/battle/BATTLE_43_VALIDATE_MASK_STENCIL_TMP_BUTTON_AND_RUNTIME_FORMATION_SKILL_BINDING_RESULT.json",
+        "line": 251,
+        "matchedText": "\"download/commonprefabsandres/skilleffect/commonskillprefabsandres1/yellospeedline.assetbundle\""
+      },
+      {
+        "source": "reports/battle/BATTLE_43_VALIDATE_MASK_STENCIL_TMP_BUTTON_AND_RUNTIME_FORMATION_SKILL_BINDING_RESULT.json",
+        "line": 305,
+        "matchedText": "\"bundle\": \"download/commonprefabsandres/skilleffect/commonskillprefabsandres1/pinkspeedline.assetbundle\","
+      },
+      {
+        "source": "reports/battle/BATTLE_43_VALIDATE_MASK_STENCIL_TMP_BUTTON_AND_RUNTIME_FORMATION_SKILL_BINDING_RESULT.json",
+        "line": 312,
+        "matchedText": "\"bundle\": \"download/commonprefabsandres/skilleffect/commonskillprefabsandres1/redspeedline.assetbundle\","
+      },
+      {
+        "source": "reports/battle/BATTLE_43_VALIDATE_MASK_STENCIL_TMP_BUTTON_AND_RUNTIME_FORMATION_SKILL_BINDING_RESULT.json",
+        "line": 319,
+        "matchedText": "\"bundle\": \"download/commonprefabsandres/skilleffect/commonskillprefabsandres1/yellospeedline.assetbundle\","
+      },
+      {
+        "source": "reports/battle/BATTLE_43_VALIDATE_MASK_STENCIL_TMP_BUTTON_AND_RUNTIME_FORMATION_SKILL_BINDING_RESULT.md",
+        "line": 27,
+        "matchedText": "- missing bundles sample: `['download/roleprefabsandres/battleprefabandres/1036.assetbundle', 'download/commonprefabsandres/skilleffect/commonskillprefabsandres1/pinkspeedline.assetbundle', 'download/commonprefabsandres/skilleffect/commonskillprefabsandres1/redspeedline.assetbundle', 'download/commonprefabsandres/skilleffect/commonskillprefabsandres1/yellospeedline.assetbundle']`"
+      },
+      {
+        "source": "reports/battle/BATTLE_58_TRACE_XLUA_GAMEENTRY_MODULESINIT_HANDLER_BINDING_WITH_BATTLE57_ACTORS_NO_FAKE_HANDLER_FULL_PAYLOAD_GAPS.csv",
+        "line": 12,
+        "matchedText": "timeline_prefab_dep,,,unresolved_missing_common_bundle,download/commonprefabsandres/skilleffect/commonskillprefabsandres1/pinkspeedline.assetbundle,\"common timeline dependency bundle, such as speedline, is referenced but absent locally\""
+      },
+      {
+        "source": "reports/battle/BATTLE_58_TRACE_XLUA_GAMEENTRY_MODULESINIT_HANDLER_BINDING_WITH_BATTLE57_ACTORS_NO_FAKE_HANDLER_FULL_PAYLOAD_GAPS.csv",
+        "line": 13,
+        "matchedText": "timeline_prefab_dep,,,unresolved_missing_common_bundle,download/commonprefabsandres/skilleffect/commonskillprefabsandres1/redspeedline.assetbundle,\"common timeline dependency bundle, such as speedline, is referenced but absent locally\""
+      },
+      {
+        "source": "reports/battle/BATTLE_58_TRACE_XLUA_GAMEENTRY_MODULESINIT_HANDLER_BINDING_WITH_BATTLE57_ACTORS_NO_FAKE_HANDLER_FULL_PAYLOAD_GAPS.csv",
+        "line": 14,
+        "matchedText": "timeline_prefab_dep,,,unresolved_missing_common_bundle,download/commonprefabsandres/skilleffect/commonskillprefabsandres1/yellospeedline.assetbundle,\"common timeline dependency bundle, such as speedline, is referenced but absent locally\""
+      },
+      {
+        "source": "reports/battle/BATTLE_59_AUDIT_LOCAL_SOURCE_BACKED_XLUA_RUNTIME_RECOVERY_FEASIBILITY_AND_BOOTSTRAP_REQUIREMENTS_NO_STUB_NO_EXTERNAL_FULL_PAYLOAD_BLOCKER_SEPARATION.csv",
+        "line": 71,
+        "matchedText": "resource,download/commonprefabsandres/skilleffect/commonskillprefabsandres1/pinkspeedline.assetbundle,unresolved_missing_common_bundle,payload_gap,\"common timeline dependency bundle, such as speedline, is referenced but absent locally\""
+      },
+      {
+        "source": "reports/battle/BATTLE_59_AUDIT_LOCAL_SOURCE_BACKED_XLUA_RUNTIME_RECOVERY_FEASIBILITY_AND_BOOTSTRAP_REQUIREMENTS_NO_STUB_NO_EXTERNAL_FULL_PAYLOAD_BLOCKER_SEPARATION.csv",
+        "line": 72,
+        "matchedText": "resource,download/commonprefabsandres/skilleffect/commonskillprefabsandres1/redspeedline.assetbundle,unresolved_missing_common_bundle,payload_gap,\"common timeline dependency bundle, such as speedline, is referenced but absent locally\""
+      },
+      {
+        "source": "reports/battle/BATTLE_59_AUDIT_LOCAL_SOURCE_BACKED_XLUA_RUNTIME_RECOVERY_FEASIBILITY_AND_BOOTSTRAP_REQUIREMENTS_NO_STUB_NO_EXTERNAL_FULL_PAYLOAD_BLOCKER_SEPARATION.csv",
+        "line": 73,
+        "matchedText": "resource,download/commonprefabsandres/skilleffect/commonskillprefabsandres1/yellospeedline.assetbundle,unresolved_missing_common_bundle,payload_gap,\"common timeline dependency bundle, such as speedline, is referenced but absent locally\""
+      },
+      {
+        "source": "reports/battle/BATTLE_59_AUDIT_LOCAL_SOURCE_BACKED_XLUA_RUNTIME_RECOVERY_FEASIBILITY_AND_BOOTSTRAP_REQUIREMENTS_NO_STUB_NO_EXTERNAL_FULL_PAYLOAD_BLOCKER_SEPARATION.csv",
+        "line": 84,
+        "matchedText": "timeline_prefab_dep,download/commonprefabsandres/skilleffect/commonskillprefabsandres1/pinkspeedline.assetbundle,unresolved_missing_common_bundle,,\"common timeline dependency bundle, such as speedline, is referenced but absent locally\""
+      },
+      {
+        "source": "reports/battle/BATTLE_59_AUDIT_LOCAL_SOURCE_BACKED_XLUA_RUNTIME_RECOVERY_FEASIBILITY_AND_BOOTSTRAP_REQUIREMENTS_NO_STUB_NO_EXTERNAL_FULL_PAYLOAD_BLOCKER_SEPARATION.csv",
+        "line": 85,
+        "matchedText": "timeline_prefab_dep,download/commonprefabsandres/skilleffect/commonskillprefabsandres1/redspeedline.assetbundle,unresolved_missing_common_bundle,,\"common timeline dependency bundle, such as speedline, is referenced but absent locally\""
+      },
+      {
+        "source": "reports/battle/BATTLE_59_AUDIT_LOCAL_SOURCE_BACKED_XLUA_RUNTIME_RECOVERY_FEASIBILITY_AND_BOOTSTRAP_REQUIREMENTS_NO_STUB_NO_EXTERNAL_FULL_PAYLOAD_BLOCKER_SEPARATION.csv",
+        "line": 86,
+        "matchedText": "timeline_prefab_dep,download/commonprefabsandres/skilleffect/commonskillprefabsandres1/yellospeedline.assetbundle,unresolved_missing_common_bundle,,\"common timeline dependency bundle, such as speedline, is referenced but absent locally\""
+      },
+      {
+        "source": "reports/battle/BATTLE_60_VALIDATE_LOADABLE_LOCAL_SUBSET_SKILL_TIMELINE_ASSETBUNDLE_CHAIN_NO_XLUA_NO_HANDLER_PATCH_BLOCKER_SEPARATION_MATRIX.csv",
+        "line": 4,
+        "matchedText": "common_speedline_resource_gaps_if_still_missing,blocking_subset_effect_completeness,\"missing common dependency rows=8; bundles=['download/commonprefabsandres/skilleffect/commonskillprefabsandres1/pinkspeedline.assetbundle', 'download/commonprefabsandres/skilleffect/commonskillprefabsandres1/redspeedline.assetbundle', 'download/commonprefabsandres/skilleffect/commonskillprefabsandres1/yellospeedline.assetbundle']\",Find source-backed pink/red/yellow speedline bundles or keep rows excluded from resource-complete subset."
+      },
+      {
+        "source": "reports/battle/BATTLE_60_VALIDATE_LOADABLE_LOCAL_SUBSET_SKILL_TIMELINE_ASSETBUNDLE_CHAIN_NO_XLUA_NO_HANDLER_PATCH_SKILL_TIMELINE_SOURCE_LOAD_VALIDATION.csv",
+        "line": 3,
+        "matchedText": "our,,1002,1002201,1,prefabId,1002201,,download/skillprefabsandres/1002.assetbundle,C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\extracted\\unity\\clean_unityfs_slices\\download\\skillprefabsandres\\1002.assetbundle,True,True,37,assets/download/skillprefabsandres/1002/1002201.prefab,True,True,loadable_with_unresolved_common_resource_deps,False,download/commonprefabsandres/skilleffect/commonskillprefabsandres1/pinkspeedline.assetbundle,1,,False,False,False"
+      },
+      {
+        "source": "reports/battle/BATTLE_60_VALIDATE_LOADABLE_LOCAL_SUBSET_SKILL_TIMELINE_ASSETBUNDLE_CHAIN_NO_XLUA_NO_HANDLER_PATCH_SKILL_TIMELINE_SOURCE_LOAD_VALIDATION.csv",
+        "line": 4,
+        "matchedText": "our,,1002,1002301,1,prefabId,1002301,,download/skillprefabsandres/1002.assetbundle,C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\extracted\\unity\\clean_unityfs_slices\\download\\skillprefabsandres\\1002.assetbundle,True,True,37,assets/download/skillprefabsandres/1002/1002301.prefab,True,True,loadable_with_unresolved_common_resource_deps,False,download/commonprefabsandres/skilleffect/commonskillprefabsandres1/pinkspeedline.assetbundle,1,,False,False,False"
+      },
+      {
+        "source": "reports/battle/BATTLE_60_VALIDATE_LOADABLE_LOCAL_SUBSET_SKILL_TIMELINE_ASSETBUNDLE_CHAIN_NO_XLUA_NO_HANDLER_PATCH_SKILL_TIMELINE_SOURCE_LOAD_VALIDATION.csv",
+        "line": 5,
+        "matchedText": "our,,1002,1002301,1,fastPrefabId,1002351,,download/skillprefabsandres/1002.assetbundle,C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\extracted\\unity\\clean_unityfs_slices\\download\\skillprefabsandres\\1002.assetbundle,True,True,37,assets/download/skillprefabsandres/1002/1002351.prefab,True,True,loadable_with_unresolved_common_resource_deps,False,download/commonprefabsandres/skilleffect/commonskillprefabsandres1/pinkspeedline.assetbundle,1,,False,False,False"
+      },
+      {
+        "source": "reports/battle/BATTLE_60_VALIDATE_LOADABLE_LOCAL_SUBSET_SKILL_TIMELINE_ASSETBUNDLE_CHAIN_NO_XLUA_NO_HANDLER_PATCH_SKILL_TIMELINE_SOURCE_LOAD_VALIDATION.csv",
+        "line": 7,
+        "matchedText": "our,,1034,1034201,1,prefabId,1034201,,download/skillprefabsandres/1034.assetbundle,C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\extracted\\unity\\clean_unityfs_slices\\download\\skillprefabsandres\\1034.assetbundle,True,True,39,assets/download/skillprefabsandres/1034/1034201.prefab,True,True,loadable_with_unresolved_common_resource_deps,False,download/commonprefabsandres/skilleffect/commonskillprefabsandres1/yellospeedline.assetbundle,1,,False,False,False"
+      },
+      {
+        "source": "reports/battle/BATTLE_60_VALIDATE_LOADABLE_LOCAL_SUBSET_SKILL_TIMELINE_ASSETBUNDLE_CHAIN_NO_XLUA_NO_HANDLER_PATCH_SKILL_TIMELINE_SOURCE_LOAD_VALIDATION.csv",
+        "line": 9,
+        "matchedText": "our,,1034,1034301,1,fastPrefabId,1034351,,download/skillprefabsandres/1034.assetbundle,C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\extracted\\unity\\clean_unityfs_slices\\download\\skillprefabsandres\\1034.assetbundle,True,True,39,assets/download/skillprefabsandres/1034/1034351.prefab,True,True,loadable_with_unresolved_common_resource_deps,False,download/commonprefabsandres/skilleffect/commonskillprefabsandres1/yellospeedline.assetbundle,1,,False,False,False"
+      },
+      {
+        "source": "reports/battle/BATTLE_60_VALIDATE_LOADABLE_LOCAL_SUBSET_SKILL_TIMELINE_ASSETBUNDLE_CHAIN_NO_XLUA_NO_HANDLER_PATCH_SKILL_TIMELINE_SOURCE_LOAD_VALIDATION.csv",
+        "line": 11,
+        "matchedText": "enemy,1,1100111,1012201,1,prefabId,1012201,,download/skillprefabsandres/1012.assetbundle,C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\extracted\\unity\\clean_unityfs_slices\\download\\skillprefabsandres\\1012.assetbundle,True,True,58,assets/download/skillprefabsandres/1012/1012201.prefab,True,True,loadable_with_unresolved_common_resource_deps,False,download/commonprefabsandres/skilleffect/commonskillprefabsandres1/redspeedline.assetbundle,1,,False,False,False"
+      },
+      {
+        "source": "reports/battle/BATTLE_60_VALIDATE_LOADABLE_LOCAL_SUBSET_SKILL_TIMELINE_ASSETBUNDLE_CHAIN_NO_XLUA_NO_HANDLER_PATCH_SKILL_TIMELINE_SOURCE_LOAD_VALIDATION.csv",
+        "line": 12,
+        "matchedText": "enemy,1,1100111,1012301,1,prefabId,1012301,,download/skillprefabsandres/1012.assetbundle,C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\extracted\\unity\\clean_unityfs_slices\\download\\skillprefabsandres\\1012.assetbundle,True,True,58,assets/download/skillprefabsandres/1012/1012301.prefab,True,True,loadable_with_unresolved_common_resource_deps,False,download/commonprefabsandres/skilleffect/commonskillprefabsandres1/redspeedline.assetbundle,1,,False,False,False"
+      },
+      {
+        "source": "reports/battle/BATTLE_60_VALIDATE_LOADABLE_LOCAL_SUBSET_SKILL_TIMELINE_ASSETBUNDLE_CHAIN_NO_XLUA_NO_HANDLER_PATCH_SKILL_TIMELINE_SOURCE_LOAD_VALIDATION.csv",
+        "line": 13,
+        "matchedText": "enemy,1,1100111,1012301,1,fastPrefabId,1012351,,download/skillprefabsandres/1012.assetbundle,C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\extracted\\unity\\clean_unityfs_slices\\download\\skillprefabsandres\\1012.assetbundle,True,True,58,assets/download/skillprefabsandres/1012/1012351.prefab,True,True,loadable_with_unresolved_common_resource_deps,False,download/commonprefabsandres/skilleffect/commonskillprefabsandres1/redspeedline.assetbundle,1,,False,False,False"
+      },
+      {
+        "source": "reports/battle/BATTLE_ASSETBUNDLE_SPINE_LOADING_PLAN.md",
+        "line": 95,
+        "matchedText": "| timeline_prefab_dep | download/commonprefabsandres/skilleffect/commonskillprefabsandres1/pinkspeedline.assetbundle | download/commonprefabsandres/skilleffect/commonskillprefabsandres1.assetbundle | True | path_normalize_issue |"
+      },
+      {
+        "source": "reports/battle/BATTLE_ASSETBUNDLE_SPINE_LOADING_PLAN.md",
+        "line": 96,
+        "matchedText": "| timeline_prefab_dep | download/commonprefabsandres/skilleffect/commonskillprefabsandres1/redspeedline.assetbundle | download/commonprefabsandres/skilleffect/commonskillprefabsandres1.assetbundle | True | path_normalize_issue |"
+      },
+      {
+        "source": "reports/battle/BATTLE_ASSETBUNDLE_SPINE_LOADING_PLAN.md",
+        "line": 97,
+        "matchedText": "| timeline_prefab_dep | download/commonprefabsandres/skilleffect/commonskillprefabsandres1/yellospeedline.assetbundle | download/commonprefabsandres/skilleffect/commonskillprefabsandres1.assetbundle | True | path_normalize_issue |"
+      },
+      {
+        "source": "reports/battle/BATTLE_COMMON_EFFECT_DEPENDENCY_CLOSURE_RESULT.md",
+        "line": 32,
+        "matchedText": "| pinkspeedline | download/commonprefabsandres/skilleffect/commonskillprefabsandres1/pinkspeedline.assetbundle | download/commonprefabsandres/skilleffect/commonskillprefabsandres1.assetbundle | `UnityFS\u0000\u0000\u0000\u0000\u00075.x.` | True | 1 | True |  |"
+      },
+      {
+        "source": "reports/battle/BATTLE_COMMON_EFFECT_DEPENDENCY_CLOSURE_RESULT.md",
+        "line": 33,
+        "matchedText": "| redspeedline | download/commonprefabsandres/skilleffect/commonskillprefabsandres1/redspeedline.assetbundle | download/commonprefabsandres/skilleffect/commonskillprefabsandres1.assetbundle | `UnityFS\u0000\u0000\u0000\u0000\u00075.x.` | True | 6 | True |  |"
+      },
+      {
+        "source": "reports/battle/BATTLE_COMMON_EFFECT_DEPENDENCY_CLOSURE_RESULT.md",
+        "line": 34,
+        "matchedText": "| yellospeedline | download/commonprefabsandres/skilleffect/commonskillprefabsandres1/yellospeedline.assetbundle | download/commonprefabsandres/skilleffect/commonskillprefabsandres1.assetbundle | `UnityFS\u0000\u0000\u0000\u0000\u00075.x.` | True | 3 | True |  |"
+      },
+      {
+        "source": "reports/battle/BATTLE_LOCAL_PLAYABLE_PAYLOAD_MANIFEST.csv",
+        "line": 15,
+        "matchedText": "skill,data_only_missing_actor,our,,,,,1036,51469,1036201,1,prefabId,1036201,download/skillprefabsandres/1036.assetbundle,True,download/commonprefabsandres/skilleffect/commonskillprefabsandres1/redspeedline.assetbundle,\"timeline resolves, but owner actor is not_fetchable_local\",GIRLSWAR_CHARACTER_ROSTER.json skills + resource dependency checks"
+      },
+      {
+        "source": "reports/battle/BATTLE_LOCAL_PLAYABLE_PAYLOAD_MANIFEST.csv",
+        "line": 16,
+        "matchedText": "skill,data_only_missing_actor,our,,,,,1036,51469,1036301,1,prefabId,1036301,download/skillprefabsandres/1036.assetbundle,True,download/commonprefabsandres/skilleffect/commonskillprefabsandres1/yellospeedline.assetbundle,\"timeline resolves, but owner actor is not_fetchable_local\",GIRLSWAR_CHARACTER_ROSTER.json skills + resource dependency checks"
+      },
+      {
+        "source": "reports/battle/BATTLE_LOCAL_PLAYABLE_PAYLOAD_MANIFEST.csv",
+        "line": 17,
+        "matchedText": "skill,data_only_missing_actor,our,,,,,1036,51469,1036301,1,fastPrefabId,1036351,download/skillprefabsandres/1036.assetbundle,True,download/commonprefabsandres/skilleffect/commonskillprefabsandres1/yellospeedline.assetbundle,\"timeline resolves, but owner actor is not_fetchable_local\",GIRLSWAR_CHARACTER_ROSTER.json skills + resource dependency checks"
+      },
+      {
+        "source": "reports/battle/BATTLE_LOCAL_PLAYABLE_PAYLOAD_MANIFEST.csv",
+        "line": 21,
+        "matchedText": "skill,loadable_with_unresolved_common_resource_deps,our,,,,,1002,50870,1002201,1,prefabId,1002201,download/skillprefabsandres/1002.assetbundle,True,download/commonprefabsandres/skilleffect/commonskillprefabsandres1/pinkspeedline.assetbundle,\"main skill timeline bundle exists, but known common dependency bundle(s) are unresolved\",GIRLSWAR_CHARACTER_ROSTER.json skills + resource dependency checks"
+      },
+      {
+        "source": "reports/battle/BATTLE_LOCAL_PLAYABLE_PAYLOAD_MANIFEST.csv",
+        "line": 22,
+        "matchedText": "skill,loadable_with_unresolved_common_resource_deps,our,,,,,1002,50870,1002301,1,prefabId,1002301,download/skillprefabsandres/1002.assetbundle,True,download/commonprefabsandres/skilleffect/commonskillprefabsandres1/pinkspeedline.assetbundle,\"main skill timeline bundle exists, but known common dependency bundle(s) are unresolved\",GIRLSWAR_CHARACTER_ROSTER.json skills + resource dependency checks"
+      },
+      {
+        "source": "reports/battle/BATTLE_LOCAL_PLAYABLE_PAYLOAD_MANIFEST.csv",
+        "line": 23,
+        "matchedText": "skill,loadable_with_unresolved_common_resource_deps,our,,,,,1002,50870,1002301,1,fastPrefabId,1002351,download/skillprefabsandres/1002.assetbundle,True,download/commonprefabsandres/skilleffect/commonskillprefabsandres1/pinkspeedline.assetbundle,\"main skill timeline bundle exists, but known common dependency bundle(s) are unresolved\",GIRLSWAR_CHARACTER_ROSTER.json skills + resource dependency checks"
+      },
+      {
+        "source": "reports/battle/BATTLE_LOCAL_PLAYABLE_PAYLOAD_MANIFEST.csv",
+        "line": 25,
+        "matchedText": "skill,loadable_with_unresolved_common_resource_deps,our,,,,,1034,50874,1034201,1,prefabId,1034201,download/skillprefabsandres/1034.assetbundle,True,download/commonprefabsandres/skilleffect/commonskillprefabsandres1/yellospeedline.assetbundle,\"main skill timeline bundle exists, but known common dependency bundle(s) are unresolved\",GIRLSWAR_CHARACTER_ROSTER.json skills + resource dependency checks"
+      },
+      {
+        "source": "reports/battle/BATTLE_LOCAL_PLAYABLE_PAYLOAD_MANIFEST.csv",
+        "line": 27,
+        "matchedText": "skill,loadable_with_unresolved_common_resource_deps,our,,,,,1034,50874,1034301,1,fastPrefabId,1034351,download/skillprefabsandres/1034.assetbundle,True,download/commonprefabsandres/skilleffect/commonskillprefabsandres1/yellospeedline.assetbundle,\"main skill timeline bundle exists, but known common dependency bundle(s) are unresolved\",GIRLSWAR_CHARACTER_ROSTER.json skills + resource dependency checks"
+      },
+      {
+        "source": "reports/battle/BATTLE_LOCAL_PLAYABLE_PAYLOAD_MANIFEST.csv",
+        "line": 31,
+        "matchedText": "skill,loadable_with_unresolved_common_resource_deps,enemy,1,,,,1100111,-1,1012201,1,prefabId,1012201,download/skillprefabsandres/1012.assetbundle,True,download/commonprefabsandres/skilleffect/commonskillprefabsandres1/redspeedline.assetbundle,\"main skill timeline bundle exists, but known common dependency bundle(s) are unresolved\",GIRLSWAR_CHARACTER_ROSTER.json skills + resource dependency checks"
+      },
+      {
+        "source": "reports/battle/BATTLE_LOCAL_PLAYABLE_PAYLOAD_MANIFEST.csv",
+        "line": 32,
+        "matchedText": "skill,loadable_with_unresolved_common_resource_deps,enemy,1,,,,1100111,-1,1012301,1,prefabId,1012301,download/skillprefabsandres/1012.assetbundle,True,download/commonprefabsandres/skilleffect/commonskillprefabsandres1/redspeedline.assetbundle,\"main skill timeline bundle exists, but known common dependency bundle(s) are unresolved\",GIRLSWAR_CHARACTER_ROSTER.json skills + resource dependency checks"
+      },
+      {
+        "source": "reports/battle/BATTLE_LOCAL_PLAYABLE_PAYLOAD_MANIFEST.csv",
+        "line": 33,
+        "matchedText": "skill,loadable_with_unresolved_common_resource_deps,enemy,1,,,,1100111,-1,1012301,1,fastPrefabId,1012351,download/skillprefabsandres/1012.assetbundle,True,download/commonprefabsandres/skilleffect/commonskillprefabsandres1/redspeedline.assetbundle,\"main skill timeline bundle exists, but known common dependency bundle(s) are unresolved\",GIRLSWAR_CHARACTER_ROSTER.json skills + resource dependency checks"
+      },
+      {
+        "source": "reports/battle/BATTLE_LOCAL_PLAYABLE_PAYLOAD_MANIFEST.csv",
+        "line": 37,
+        "matchedText": "skill,data_only_missing_actor,enemy,1,,,,1100112,-2,1012201,1,prefabId,1012201,download/skillprefabsandres/1012.assetbundle,True,download/commonprefabsandres/skilleffect/commonskillprefabsandres1/redspeedline.assetbundle,\"timeline resolves, but owner actor is unresolved_enemy_payload_instance\",GIRLSWAR_CHARACTER_ROSTER.json skills + resource dependency checks"
+      },
+      {
+        "source": "reports/battle/BATTLE_LOCAL_PLAYABLE_PAYLOAD_MANIFEST.csv",
+        "line": 38,
+        "matchedText": "skill,data_only_missing_actor,enemy,1,,,,1100112,-2,1012301,1,prefabId,1012301,download/skillprefabsandres/1012.assetbundle,True,download/commonprefabsandres/skilleffect/commonskillprefabsandres1/redspeedline.assetbundle,\"timeline resolves, but owner actor is unresolved_enemy_payload_instance\",GIRLSWAR_CHARACTER_ROSTER.json skills + resource dependency checks"
+      },
+      {
+        "source": "reports/battle/BATTLE_LOCAL_PLAYABLE_PAYLOAD_MANIFEST.csv",
+        "line": 39,
+        "matchedText": "skill,data_only_missing_actor,enemy,1,,,,1100112,-2,1012301,1,fastPrefabId,1012351,download/skillprefabsandres/1012.assetbundle,True,download/commonprefabsandres/skilleffect/commonskillprefabsandres1/redspeedline.assetbundle,\"timeline resolves, but owner actor is unresolved_enemy_payload_instance\",GIRLSWAR_CHARACTER_ROSTER.json skills + resource dependency checks"
+      },
+      {
+        "source": "reports/battle/BATTLE_LOCAL_PLAYABLE_PAYLOAD_MANIFEST.csv",
+        "line": 43,
+        "matchedText": "skill,data_only_missing_actor,enemy,1,,,,1100113,-3,1012201,1,prefabId,1012201,download/skillprefabsandres/1012.assetbundle,True,download/commonprefabsandres/skilleffect/commonskillprefabsandres1/redspeedline.assetbundle,\"timeline resolves, but owner actor is unresolved_enemy_payload_instance\",GIRLSWAR_CHARACTER_ROSTER.json skills + resource dependency checks"
+      },
+      {
+        "source": "reports/battle/BATTLE_LOCAL_PLAYABLE_PAYLOAD_MANIFEST.csv",
+        "line": 44,
+        "matchedText": "skill,data_only_missing_actor,enemy,1,,,,1100113,-3,1012301,1,prefabId,1012301,download/skillprefabsandres/1012.assetbundle,True,download/commonprefabsandres/skilleffect/commonskillprefabsandres1/redspeedline.assetbundle,\"timeline resolves, but owner actor is unresolved_enemy_payload_instance\",GIRLSWAR_CHARACTER_ROSTER.json skills + resource dependency checks"
+      },
+      {
+        "source": "reports/battle/BATTLE_LOCAL_PLAYABLE_PAYLOAD_MANIFEST.csv",
+        "line": 45,
+        "matchedText": "skill,data_only_missing_actor,enemy,1,,,,1100113,-3,1012301,1,fastPrefabId,1012351,download/skillprefabsandres/1012.assetbundle,True,download/commonprefabsandres/skilleffect/commonskillprefabsandres1/redspeedline.assetbundle,\"timeline resolves, but owner actor is unresolved_enemy_payload_instance\",GIRLSWAR_CHARACTER_ROSTER.json skills + resource dependency checks"
+      },
+      {
+        "source": "reports/battle/BATTLE_LOCAL_PLAYABLE_PAYLOAD_MANIFEST.csv",
+        "line": 49,
+        "matchedText": "skill,data_only_missing_actor,enemy,2,,,,1100121,-1,1012201,1,prefabId,1012201,download/skillprefabsandres/1012.assetbundle,True,download/commonprefabsandres/skilleffect/commonskillprefabsandres1/redspeedline.assetbundle,\"timeline resolves, but owner actor is unresolved_enemy_payload_instance\",GIRLSWAR_CHARACTER_ROSTER.json skills + resource dependency checks"
+      },
+      {
+        "source": "reports/battle/BATTLE_LOCAL_PLAYABLE_PAYLOAD_MANIFEST.csv",
+        "line": 50,
+        "matchedText": "skill,data_only_missing_actor,enemy,2,,,,1100121,-1,1012301,1,prefabId,1012301,download/skillprefabsandres/1012.assetbundle,True,download/commonprefabsandres/skilleffect/commonskillprefabsandres1/redspeedline.assetbundle,\"timeline resolves, but owner actor is unresolved_enemy_payload_instance\",GIRLSWAR_CHARACTER_ROSTER.json skills + resource dependency checks"
+      },
+      {
+        "source": "reports/battle/BATTLE_LOCAL_PLAYABLE_PAYLOAD_MANIFEST.csv",
+        "line": 51,
+        "matchedText": "skill,data_only_missing_actor,enemy,2,,,,1100121,-1,1012301,1,fastPrefabId,1012351,download/skillprefabsandres/1012.assetbundle,True,download/commonprefabsandres/skilleffect/commonskillprefabsandres1/redspeedline.assetbundle,\"timeline resolves, but owner actor is unresolved_enemy_payload_instance\",GIRLSWAR_CHARACTER_ROSTER.json skills + resource dependency checks"
+      },
+      {
+        "source": "reports/battle/BATTLE_LOCAL_PLAYABLE_PAYLOAD_MANIFEST.csv",
+        "line": 55,
+        "matchedText": "skill,data_only_missing_actor,enemy,2,,,,1100122,-2,1012201,1,prefabId,1012201,download/skillprefabsandres/1012.assetbundle,True,download/commonprefabsandres/skilleffect/commonskillprefabsandres1/redspeedline.assetbundle,\"timeline resolves, but owner actor is unresolved_enemy_payload_instance\",GIRLSWAR_CHARACTER_ROSTER.json skills + resource dependency checks"
+      },
+      {
+        "source": "reports/battle/BATTLE_LOCAL_PLAYABLE_PAYLOAD_MANIFEST.csv",
+        "line": 56,
+        "matchedText": "skill,data_only_missing_actor,enemy,2,,,,1100122,-2,1012301,1,prefabId,1012301,download/skillprefabsandres/1012.assetbundle,True,download/commonprefabsandres/skilleffect/commonskillprefabsandres1/redspeedline.assetbundle,\"timeline resolves, but owner actor is unresolved_enemy_payload_instance\",GIRLSWAR_CHARACTER_ROSTER.json skills + resource dependency checks"
+      },
+      {
+        "source": "reports/battle/BATTLE_LOCAL_PLAYABLE_PAYLOAD_MANIFEST.csv",
+        "line": 57,
+        "matchedText": "skill,data_only_missing_actor,enemy,2,,,,1100122,-2,1012301,1,fastPrefabId,1012351,download/skillprefabsandres/1012.assetbundle,True,download/commonprefabsandres/skilleffect/commonskillprefabsandres1/redspeedline.assetbundle,\"timeline resolves, but owner actor is unresolved_enemy_payload_instance\",GIRLSWAR_CHARACTER_ROSTER.json skills + resource dependency checks"
+      },
+      {
+        "source": "reports/battle/BATTLE_LOCAL_PLAYABLE_PAYLOAD_MANIFEST.csv",
+        "line": 61,
+        "matchedText": "skill,data_only_missing_actor,enemy,2,,,,1100123,-3,1012201,1,prefabId,1012201,download/skillprefabsandres/1012.assetbundle,True,download/commonprefabsandres/skilleffect/commonskillprefabsandres1/redspeedline.assetbundle,\"timeline resolves, but owner actor is unresolved_enemy_payload_instance\",GIRLSWAR_CHARACTER_ROSTER.json skills + resource dependency checks"
+      },
+      {
+        "source": "reports/battle/BATTLE_LOCAL_PLAYABLE_PAYLOAD_MANIFEST.csv",
+        "line": 62,
+        "matchedText": "skill,data_only_missing_actor,enemy,2,,,,1100123,-3,1012301,1,prefabId,1012301,download/skillprefabsandres/1012.assetbundle,True,download/commonprefabsandres/skilleffect/commonskillprefabsandres1/redspeedline.assetbundle,\"timeline resolves, but owner actor is unresolved_enemy_payload_instance\",GIRLSWAR_CHARACTER_ROSTER.json skills + resource dependency checks"
+      },
+      {
+        "source": "reports/battle/BATTLE_LOCAL_PLAYABLE_PAYLOAD_MANIFEST.csv",
+        "line": 63,
+        "matchedText": "skill,data_only_missing_actor,enemy,2,,,,1100123,-3,1012301,1,fastPrefabId,1012351,download/skillprefabsandres/1012.assetbundle,True,download/commonprefabsandres/skilleffect/commonskillprefabsandres1/redspeedline.assetbundle,\"timeline resolves, but owner actor is unresolved_enemy_payload_instance\",GIRLSWAR_CHARACTER_ROSTER.json skills + resource dependency checks"
+      },
+      {
+        "source": "reports/battle/BATTLE_LOCAL_PLAYABLE_PAYLOAD_MANIFEST.csv",
+        "line": 84,
+        "matchedText": "resource,unresolved_missing_common_bundle,,,,,,,,,,,,download/commonprefabsandres/skilleffect/commonskillprefabsandres1/pinkspeedline.assetbundle,False,,\"common timeline dependency bundle, such as speedline, is referenced but absent locally\",BattleTimelineResMap.prefabDeps"
+      },
+      {
+        "source": "reports/battle/BATTLE_LOCAL_PLAYABLE_PAYLOAD_MANIFEST.csv",
+        "line": 85,
+        "matchedText": "resource,unresolved_missing_common_bundle,,,,,,,,,,,,download/commonprefabsandres/skilleffect/commonskillprefabsandres1/redspeedline.assetbundle,False,,\"common timeline dependency bundle, such as speedline, is referenced but absent locally\",BattleTimelineResMap.prefabDeps"
+      },
+      {
+        "source": "reports/battle/BATTLE_LOCAL_PLAYABLE_PAYLOAD_MANIFEST.csv",
+        "line": 86,
+        "matchedText": "resource,unresolved_missing_common_bundle,,,,,,,,,,,,download/commonprefabsandres/skilleffect/commonskillprefabsandres1/yellospeedline.assetbundle,False,,\"common timeline dependency bundle, such as speedline, is referenced but absent locally\",BattleTimelineResMap.prefabDeps"
+      },
+      {
+        "source": "reports/battle/BATTLE_LOCAL_PLAYABLE_PAYLOAD_MANIFEST.json",
+        "line": 556,
+        "matchedText": "\"prefabDeps\": \"Assets/Download/CommonPrefabsAndRes/SkillEffect/CommonSkillPrefabsAndRes1/redspeedline/redspeedline.prefab|Assets/Download/SkillPrefabsAndRes/1036/bd/1036skillbd.prefab\","
+      },
+      {
+        "source": "reports/battle/BATTLE_LOCAL_PLAYABLE_PAYLOAD_MANIFEST.json",
+        "line": 565,
+        "matchedText": "\"download/commonprefabsandres/skilleffect/commonskillprefabsandres1/redspeedline.assetbundle\""
+      },
+      {
+        "source": "reports/battle/BATTLE_LOCAL_PLAYABLE_PAYLOAD_MANIFEST.json",
+        "line": 592,
+        "matchedText": "\"prefabDeps\": \"Assets/Download/SkillPrefabsAndRes/1036/bd/1036ultzhlz.prefab|Assets/Download/SkillPrefabsAndRes/1036/bd/1036bp.prefab|Assets/Download/CommonPrefabsAndRes/SkillEffect/CommonSkillPrefabsAndRes1/yellospeedline/yellospeedline.prefab\","
+      },
+      {
+        "source": "reports/battle/BATTLE_LOCAL_PLAYABLE_PAYLOAD_MANIFEST.json",
+        "line": 601,
+        "matchedText": "\"download/commonprefabsandres/skilleffect/commonskillprefabsandres1/yellospeedline.assetbundle\""
+      },
+      {
+        "source": "reports/battle/BATTLE_LOCAL_PLAYABLE_PAYLOAD_MANIFEST.json",
+        "line": 628,
+        "matchedText": "\"prefabDeps\": \"Assets/Download/SkillPrefabsAndRes/1036/bd/1036zishensg.prefab|Assets/Download/SkillPrefabsAndRes/1036/bd/1036dunbd.prefab|Assets/Download/SkillPrefabsAndRes/1036/bd/1036zishensg.prefab|Assets/Download/SkillPrefabsAndRes/1036/bd/1036dunbd.prefab|Assets/Download/SkillPrefabsAndRes/1036/bd/1036dunbd.prefab|Assets/Download/SkillPrefabsAndRes/1036/bd/1036zishensg.prefab|Assets/Download/SkillPrefabsAndRes/1036/bd/1036bp.prefab|Assets/Download/SkillPrefabsAndRes/1036/bd/1036ultzhlz.prefab|Assets/Download/CommonPrefabsAndRes/SkillEffect/CommonSkillPrefabsAndRes1/yellospeedline/yellospeedline.prefab\","
+      },
+      {
+        "source": "reports/battle/BATTLE_LOCAL_PLAYABLE_PAYLOAD_MANIFEST.json",
+        "line": 637,
+        "matchedText": "\"download/commonprefabsandres/skilleffect/commonskillprefabsandres1/yellospeedline.assetbundle\""
+      },
+      {
+        "source": "reports/battle/BATTLE_LOCAL_PLAYABLE_PAYLOAD_MANIFEST.json",
+        "line": 760,
+        "matchedText": "\"prefabDeps\": \"Assets/Download/SkillPrefabsAndRes/1002/bd/1002bd.prefab|Assets/Download/CommonPrefabsAndRes/SkillEffect/CommonSkillPrefabsAndRes1/pinkspeedline/pinkspeedline.prefab|Assets/Download/SkillPrefabsAndRes/1002/bd/1002bd.prefab|Assets/Download/SkillPrefabsAndRes/1002/bd/1002bd.prefab\","
+      },
+      {
+        "source": "reports/battle/BATTLE_LOCAL_PLAYABLE_PAYLOAD_MANIFEST.json",
+        "line": 769,
+        "matchedText": "\"download/commonprefabsandres/skilleffect/commonskillprefabsandres1/pinkspeedline.assetbundle\""
+      },
+      {
+        "source": "reports/battle/BATTLE_LOCAL_PLAYABLE_PAYLOAD_MANIFEST.json",
+        "line": 796,
+        "matchedText": "\"prefabDeps\": \"Assets/Download/CommonPrefabsAndRes/SkillEffect/CommonSkillPrefabsAndRes1/pinkspeedline/pinkspeedline.prefab|Assets/Download/SkillPrefabsAndRes/1002/bd/1002ultpmzl.prefab|Assets/Download/SkillPrefabsAndRes/1002/bd/1002bp.prefab|Assets/Download/SkillPrefabsAndRes/1002/bd/1002ultxli.prefab\","
+      },
+      {
+        "source": "reports/battle/BATTLE_LOCAL_PLAYABLE_PAYLOAD_MANIFEST.json",
+        "line": 805,
+        "matchedText": "\"download/commonprefabsandres/skilleffect/commonskillprefabsandres1/pinkspeedline.assetbundle\""
+      },
+      {
+        "source": "reports/battle/BATTLE_LOCAL_PLAYABLE_PAYLOAD_MANIFEST.json",
+        "line": 832,
+        "matchedText": "\"prefabDeps\": \"Assets/Download/SkillPrefabsAndRes/1002/bd/1002ultxli.prefab|Assets/Download/SkillPrefabsAndRes/1002/bd/1002ultpmzl.prefab|Assets/Download/CommonPrefabsAndRes/SkillEffect/CommonSkillPrefabsAndRes1/pinkspeedline/pinkspeedline.prefab|Assets/Download/SkillPrefabsAndRes/1002/bd/1002bp1.prefab\","
+      },
+      {
+        "source": "reports/battle/BATTLE_LOCAL_PLAYABLE_PAYLOAD_MANIFEST.json",
+        "line": 841,
+        "matchedText": "\"download/commonprefabsandres/skilleffect/commonskillprefabsandres1/pinkspeedline.assetbundle\""
+      },
+      {
+        "source": "reports/battle/BATTLE_LOCAL_PLAYABLE_PAYLOAD_MANIFEST.json",
+        "line": 902,
+        "matchedText": "\"prefabDeps\": \"Assets/Download/SkillPrefabsAndRes/1034/bd/1034skillz.prefab|Assets/Download/SkillPrefabsAndRes/1034/bd/1034sbd1.prefab|Assets/Download/CommonPrefabsAndRes/SkillEffect/CommonSkillPrefabsAndRes1/yellospeedline/yellospeedline.prefab|Assets/Download/SkillPrefabsAndRes/1034/bd/1034SKILLBD.prefab|Assets/Download/SkillPrefabsAndRes/1034/bd/1034sbd1.prefab|Assets/Download/SkillPrefabsAndRes/1034/bd/1034sbd1.prefab|Assets/Download/SkillPrefabsAndRes/1034/bd/1034sbd1.prefab\","
+      },
+      {
+        "source": "reports/battle/BATTLE_LOCAL_PLAYABLE_PAYLOAD_MANIFEST.json",
+        "line": 911,
+        "matchedText": "\"download/commonprefabsandres/skilleffect/commonskillprefabsandres1/yellospeedline.assetbundle\""
+      },
+      {
+        "source": "reports/battle/BATTLE_LOCAL_PLAYABLE_PAYLOAD_MANIFEST.json",
+        "line": 972,
+        "matchedText": "\"prefabDeps\": \"Assets/Download/CommonPrefabsAndRes/SkillEffect/CommonSkillPrefabsAndRes1/yellospeedline/yellospeedline.prefab|Assets/Download/SkillPrefabsAndRes/1034/bd/1034SKILLBD.prefab|Assets/Download/SkillPrefabsAndRes/1034/bd/1034sbd1.prefab\","
+      },
+      {
+        "source": "reports/battle/BATTLE_LOCAL_PLAYABLE_PAYLOAD_MANIFEST.json",
+        "line": 981,
+        "matchedText": "\"download/commonprefabsandres/skilleffect/commonskillprefabsandres1/yellospeedline.assetbundle\""
+      },
+      {
+        "source": "reports/battle/BATTLE_LOCAL_PLAYABLE_PAYLOAD_MANIFEST.json",
+        "line": 1104,
+        "matchedText": "\"prefabDeps\": \"Assets/Download/SkillPrefabsAndRes/1012/ZTXC1012/bd1/bdx1.prefab|Assets/Download/SkillPrefabsAndRes/1012/ZTXC1012/bd1/xbz.prefab|Assets/Download/SkillPrefabsAndRes/1012/ZTXC1012/bd1/lztyz1.prefab|Assets/Download/SkillPrefabsAndRes/1012/ZTXC1012/bd1/bdx1.prefab|Assets/Download/SkillPrefabsAndRes/1012/ZTXC1012/bd1/xbz.prefab|Assets/Download/CommonPrefabsAndRes/SkillEffect/CommonSkillPrefabsAndRes1/redspeedline/redspeedline.prefab|Assets/Download/SkillPrefabsAndRes/1012/ZTXC1012/bd1/xbz.prefab|Assets/Download/SkillPrefabsAndRes/1012/ZTXC1012/bd1/lztyz2Variant.prefab|Assets/Download/SkillPrefabsAndRes/1012/ZTXC1012/bd1/bdx1.prefab|Assets/Download/SkillPrefabsAndRes/1012/ZTXC1012/bd1/bdx1.prefab|Assets/Download/SkillPrefabsAndRes/1012/ZTXC1012/bd1/lztyz1.prefab|Assets/Download/SkillPrefabsAndRes/1012/ZTXC1012/bd1/lztyz1.prefab|Assets/Download/SkillPrefabsAndRes/1012/ZTXC1012/bd"
+      },
+      {
+        "source": "reports/battle/BATTLE_LOCAL_PLAYABLE_PAYLOAD_MANIFEST.json",
+        "line": 1113,
+        "matchedText": "\"download/commonprefabsandres/skilleffect/commonskillprefabsandres1/redspeedline.assetbundle\""
+      },
+      {
+        "source": "reports/battle/BATTLE_LOCAL_PLAYABLE_PAYLOAD_MANIFEST.json",
+        "line": 1140,
+        "matchedText": "\"prefabDeps\": \"Assets/Download/CommonPrefabsAndRes/SkillEffect/CommonSkillPrefabsAndRes1/redspeedline/redspeedline.prefab|Assets/Download/CommonPrefabsAndRes/SkillEffect/CommonSkillPrefabsAndRes1/redspeedline/redspeedline.prefab|Assets/Download/CommonPrefabsAndRes/SkillEffect/CommonSkillPrefabsAndRes1/redspeedline/redspeedline.prefab|Assets/Download/SkillPrefabsAndRes/1012/ZTXC1012/bd1/qbz.prefab|Assets/Download/SkillPrefabsAndRes/1012/ZTXC1012/bd1/dzbd.prefab|Assets/Download/CommonPrefabsAndRes/SkillEffect/CommonSkillPrefabsAndRes1/redspeedline/redspeedline.prefab\","
+      },
+      {
+        "source": "reports/battle/BATTLE_LOCAL_PLAYABLE_PAYLOAD_MANIFEST.json",
+        "line": 1149,
+        "matchedText": "\"download/commonprefabsandres/skilleffect/commonskillprefabsandres1/redspeedline.assetbundle\""
+      },
+      {
+        "source": "reports/battle/BATTLE_LOCAL_PLAYABLE_PAYLOAD_MANIFEST.json",
+        "line": 1176,
+        "matchedText": "\"prefabDeps\": \"Assets/Download/CommonPrefabsAndRes/SkillEffect/CommonSkillPrefabsAndRes1/redspeedline/redspeedline.prefab|Assets/Download/CommonPrefabsAndRes/SkillEffect/CommonSkillPrefabsAndRes1/redspeedline/redspeedline.prefab|Assets/Download/CommonPrefabsAndRes/SkillEffect/CommonSkillPrefabsAndRes1/redspeedline/redspeedline.prefab|Assets/Download/SkillPrefabsAndRes/1012/ZTXC1012/bd1/qbz.prefab|Assets/Download/SkillPrefabsAndRes/1012/ZTXC1012/bd1/dzbd.prefab\","
+      },
+      {
+        "source": "reports/battle/BATTLE_LOCAL_PLAYABLE_PAYLOAD_MANIFEST.json",
+        "line": 1185,
+        "matchedText": "\"download/commonprefabsandres/skilleffect/commonskillprefabsandres1/redspeedline.assetbundle\""
+      },
+      {
+        "source": "reports/battle/BATTLE_LOCAL_PLAYABLE_PAYLOAD_MANIFEST.json",
+        "line": 1308,
+        "matchedText": "\"prefabDeps\": \"Assets/Download/SkillPrefabsAndRes/1012/ZTXC1012/bd1/bdx1.prefab|Assets/Download/SkillPrefabsAndRes/1012/ZTXC1012/bd1/xbz.prefab|Assets/Download/SkillPrefabsAndRes/1012/ZTXC1012/bd1/lztyz1.prefab|Assets/Download/SkillPrefabsAndRes/1012/ZTXC1012/bd1/bdx1.prefab|Assets/Download/SkillPrefabsAndRes/1012/ZTXC1012/bd1/xbz.prefab|Assets/Download/CommonPrefabsAndRes/SkillEffect/CommonSkillPrefabsAndRes1/redspeedline/redspeedline.prefab|Assets/Download/SkillPrefabsAndRes/1012/ZTXC1012/bd1/xbz.prefab|Assets/Download/SkillPrefabsAndRes/1012/ZTXC1012/bd1/lztyz2Variant.prefab|Assets/Download/SkillPrefabsAndRes/1012/ZTXC1012/bd1/bdx1.prefab|Assets/Download/SkillPrefabsAndRes/1012/ZTXC1012/bd1/bdx1.prefab|Assets/Download/SkillPrefabsAndRes/1012/ZTXC1012/bd1/lztyz1.prefab|Assets/Download/SkillPrefabsAndRes/1012/ZTXC1012/bd1/lztyz1.prefab|Assets/Download/SkillPrefabsAndRes/1012/ZTXC1012/bd"
+      },
+      {
+        "source": "reports/battle/BATTLE_LOCAL_PLAYABLE_PAYLOAD_MANIFEST.json",
+        "line": 1317,
+        "matchedText": "\"download/commonprefabsandres/skilleffect/commonskillprefabsandres1/redspeedline.assetbundle\""
+      },
+      {
+        "source": "reports/battle/BATTLE_LOCAL_PLAYABLE_PAYLOAD_MANIFEST.json",
+        "line": 1344,
+        "matchedText": "\"prefabDeps\": \"Assets/Download/CommonPrefabsAndRes/SkillEffect/CommonSkillPrefabsAndRes1/redspeedline/redspeedline.prefab|Assets/Download/CommonPrefabsAndRes/SkillEffect/CommonSkillPrefabsAndRes1/redspeedline/redspeedline.prefab|Assets/Download/CommonPrefabsAndRes/SkillEffect/CommonSkillPrefabsAndRes1/redspeedline/redspeedline.prefab|Assets/Download/SkillPrefabsAndRes/1012/ZTXC1012/bd1/qbz.prefab|Assets/Download/SkillPrefabsAndRes/1012/ZTXC1012/bd1/dzbd.prefab|Assets/Download/CommonPrefabsAndRes/SkillEffect/CommonSkillPrefabsAndRes1/redspeedline/redspeedline.prefab\","
+      },
+      {
+        "source": "reports/battle/BATTLE_LOCAL_PLAYABLE_PAYLOAD_MANIFEST.json",
+        "line": 1353,
+        "matchedText": "\"download/commonprefabsandres/skilleffect/commonskillprefabsandres1/redspeedline.assetbundle\""
+      },
+      {
+        "source": "reports/battle/BATTLE_LOCAL_PLAYABLE_PAYLOAD_MANIFEST.json",
+        "line": 1380,
+        "matchedText": "\"prefabDeps\": \"Assets/Download/CommonPrefabsAndRes/SkillEffect/CommonSkillPrefabsAndRes1/redspeedline/redspeedline.prefab|Assets/Download/CommonPrefabsAndRes/SkillEffect/CommonSkillPrefabsAndRes1/redspeedline/redspeedline.prefab|Assets/Download/CommonPrefabsAndRes/SkillEffect/CommonSkillPrefabsAndRes1/redspeedline/redspeedline.prefab|Assets/Download/SkillPrefabsAndRes/1012/ZTXC1012/bd1/qbz.prefab|Assets/Download/SkillPrefabsAndRes/1012/ZTXC1012/bd1/dzbd.prefab\","
+      },
+      {
+        "source": "reports/battle/BATTLE_LOCAL_PLAYABLE_PAYLOAD_MANIFEST.json",
+        "line": 1389,
+        "matchedText": "\"download/commonprefabsandres/skilleffect/commonskillprefabsandres1/redspeedline.assetbundle\""
+      },
+      {
+        "source": "reports/battle/BATTLE_LOCAL_PLAYABLE_PAYLOAD_MANIFEST.json",
+        "line": 1512,
+        "matchedText": "\"prefabDeps\": \"Assets/Download/SkillPrefabsAndRes/1012/ZTXC1012/bd1/bdx1.prefab|Assets/Download/SkillPrefabsAndRes/1012/ZTXC1012/bd1/xbz.prefab|Assets/Download/SkillPrefabsAndRes/1012/ZTXC1012/bd1/lztyz1.prefab|Assets/Download/SkillPrefabsAndRes/1012/ZTXC1012/bd1/bdx1.prefab|Assets/Download/SkillPrefabsAndRes/1012/ZTXC1012/bd1/xbz.prefab|Assets/Download/CommonPrefabsAndRes/SkillEffect/CommonSkillPrefabsAndRes1/redspeedline/redspeedline.prefab|Assets/Download/SkillPrefabsAndRes/1012/ZTXC1012/bd1/xbz.prefab|Assets/Download/SkillPrefabsAndRes/1012/ZTXC1012/bd1/lztyz2Variant.prefab|Assets/Download/SkillPrefabsAndRes/1012/ZTXC1012/bd1/bdx1.prefab|Assets/Download/SkillPrefabsAndRes/1012/ZTXC1012/bd1/bdx1.prefab|Assets/Download/SkillPrefabsAndRes/1012/ZTXC1012/bd1/lztyz1.prefab|Assets/Download/SkillPrefabsAndRes/1012/ZTXC1012/bd1/lztyz1.prefab|Assets/Download/SkillPrefabsAndRes/1012/ZTXC1012/bd"
+      },
+      {
+        "source": "reports/battle/BATTLE_LOCAL_PLAYABLE_PAYLOAD_MANIFEST.json",
+        "line": 1521,
+        "matchedText": "\"download/commonprefabsandres/skilleffect/commonskillprefabsandres1/redspeedline.assetbundle\""
+      },
+      {
+        "source": "reports/battle/BATTLE_LOCAL_PLAYABLE_PAYLOAD_MANIFEST.json",
+        "line": 1548,
+        "matchedText": "\"prefabDeps\": \"Assets/Download/CommonPrefabsAndRes/SkillEffect/CommonSkillPrefabsAndRes1/redspeedline/redspeedline.prefab|Assets/Download/CommonPrefabsAndRes/SkillEffect/CommonSkillPrefabsAndRes1/redspeedline/redspeedline.prefab|Assets/Download/CommonPrefabsAndRes/SkillEffect/CommonSkillPrefabsAndRes1/redspeedline/redspeedline.prefab|Assets/Download/SkillPrefabsAndRes/1012/ZTXC1012/bd1/qbz.prefab|Assets/Download/SkillPrefabsAndRes/1012/ZTXC1012/bd1/dzbd.prefab|Assets/Download/CommonPrefabsAndRes/SkillEffect/CommonSkillPrefabsAndRes1/redspeedline/redspeedline.prefab\","
+      },
+      {
+        "source": "reports/battle/BATTLE_LOCAL_PLAYABLE_PAYLOAD_MANIFEST.json",
+        "line": 1557,
+        "matchedText": "\"download/commonprefabsandres/skilleffect/commonskillprefabsandres1/redspeedline.assetbundle\""
+      },
+      {
+        "source": "reports/battle/BATTLE_LOCAL_PLAYABLE_PAYLOAD_MANIFEST.json",
+        "line": 1584,
+        "matchedText": "\"prefabDeps\": \"Assets/Download/CommonPrefabsAndRes/SkillEffect/CommonSkillPrefabsAndRes1/redspeedline/redspeedline.prefab|Assets/Download/CommonPrefabsAndRes/SkillEffect/CommonSkillPrefabsAndRes1/redspeedline/redspeedline.prefab|Assets/Download/CommonPrefabsAndRes/SkillEffect/CommonSkillPrefabsAndRes1/redspeedline/redspeedline.prefab|Assets/Download/SkillPrefabsAndRes/1012/ZTXC1012/bd1/qbz.prefab|Assets/Download/SkillPrefabsAndRes/1012/ZTXC1012/bd1/dzbd.prefab\","
+      },
+      {
+        "source": "reports/battle/BATTLE_LOCAL_PLAYABLE_PAYLOAD_MANIFEST.json",
+        "line": 1593,
+        "matchedText": "\"download/commonprefabsandres/skilleffect/commonskillprefabsandres1/redspeedline.assetbundle\""
+      },
+      {
+        "source": "reports/battle/BATTLE_LOCAL_PLAYABLE_PAYLOAD_MANIFEST.json",
+        "line": 1716,
+        "matchedText": "\"prefabDeps\": \"Assets/Download/SkillPrefabsAndRes/1012/ZTXC1012/bd1/bdx1.prefab|Assets/Download/SkillPrefabsAndRes/1012/ZTXC1012/bd1/xbz.prefab|Assets/Download/SkillPrefabsAndRes/1012/ZTXC1012/bd1/lztyz1.prefab|Assets/Download/SkillPrefabsAndRes/1012/ZTXC1012/bd1/bdx1.prefab|Assets/Download/SkillPrefabsAndRes/1012/ZTXC1012/bd1/xbz.prefab|Assets/Download/CommonPrefabsAndRes/SkillEffect/CommonSkillPrefabsAndRes1/redspeedline/redspeedline.prefab|Assets/Download/SkillPrefabsAndRes/1012/ZTXC1012/bd1/xbz.prefab|Assets/Download/SkillPrefabsAndRes/1012/ZTXC1012/bd1/lztyz2Variant.prefab|Assets/Download/SkillPrefabsAndRes/1012/ZTXC1012/bd1/bdx1.prefab|Assets/Download/SkillPrefabsAndRes/1012/ZTXC1012/bd1/bdx1.prefab|Assets/Download/SkillPrefabsAndRes/1012/ZTXC1012/bd1/lztyz1.prefab|Assets/Download/SkillPrefabsAndRes/1012/ZTXC1012/bd1/lztyz1.prefab|Assets/Download/SkillPrefabsAndRes/1012/ZTXC1012/bd"
+      }
+    ],
+    "yellowAliasProbeHits": [],
+    "apkEntryHits": [
+      {
+        "source": "girlswar_merged_extracted/split_apks/abassets.apk",
+        "entry": "assets/AssetBundles/download/commonprefabsandres/skilleffect/commonskillprefabsandres1.assetbundle"
+      }
+    ],
+    "localFileChecks": {
+      "parent": [
+        {
+          "probePath": "girlswar_merged_extracted/extracted/unity/clean_unityfs_slices/download/commonprefabsandres/skilleffect/commonskillprefabsandres1.assetbundle",
+          "exists": true,
+          "size": 99633
+        },
+        {
+          "probePath": "girlswar_merged_extracted/merged_content/AssetBundles/download/commonprefabsandres/skilleffect/commonskillprefabsandres1.assetbundle",
+          "exists": true,
+          "size": 102734
+        },
+        {
+          "probePath": "girlswar_merged_extracted/restore_overlay/files/build/download/commonprefabsandres/skilleffect/commonskillprefabsandres1.assetbundle",
+          "exists": false,
+          "size": ""
+        },
+        {
+          "probePath": "com.girlwars.kr/files/build/download/commonprefabsandres/skilleffect/commonskillprefabsandres1.assetbundle",
+          "exists": false,
+          "size": ""
+        }
+      ],
+      "download/commonprefabsandres/skilleffect/commonskillprefabsandres1/pinkspeedline.assetbundle": [
+        {
+          "probePath": "girlswar_merged_extracted/extracted/unity/clean_unityfs_slices/download/commonprefabsandres/skilleffect/commonskillprefabsandres1/pinkspeedline.assetbundle",
+          "exists": false,
+          "size": ""
+        },
+        {
+          "probePath": "girlswar_merged_extracted/merged_content/AssetBundles/download/commonprefabsandres/skilleffect/commonskillprefabsandres1/pinkspeedline.assetbundle",
+          "exists": false,
+          "size": ""
+        },
+        {
+          "probePath": "girlswar_merged_extracted/restore_overlay/files/build/download/commonprefabsandres/skilleffect/commonskillprefabsandres1/pinkspeedline.assetbundle",
+          "exists": false,
+          "size": ""
+        },
+        {
+          "probePath": "com.girlwars.kr/files/build/download/commonprefabsandres/skilleffect/commonskillprefabsandres1/pinkspeedline.assetbundle",
+          "exists": false,
+          "size": ""
+        }
+      ],
+      "download/commonprefabsandres/skilleffect/commonskillprefabsandres1/redspeedline.assetbundle": [
+        {
+          "probePath": "girlswar_merged_extracted/extracted/unity/clean_unityfs_slices/download/commonprefabsandres/skilleffect/commonskillprefabsandres1/redspeedline.assetbundle",
+          "exists": false,
+          "size": ""
+        },
+        {
+          "probePath": "girlswar_merged_extracted/merged_content/AssetBundles/download/commonprefabsandres/skilleffect/commonskillprefabsandres1/redspeedline.assetbundle",
+          "exists": false,
+          "size": ""
+        },
+        {
+          "probePath": "girlswar_merged_extracted/restore_overlay/files/build/download/commonprefabsandres/skilleffect/commonskillprefabsandres1/redspeedline.assetbundle",
+          "exists": false,
+          "size": ""
+        },
+        {
+          "probePath": "com.girlwars.kr/files/build/download/commonprefabsandres/skilleffect/commonskillprefabsandres1/redspeedline.assetbundle",
+          "exists": false,
+          "size": ""
+        }
+      ],
+      "download/commonprefabsandres/skilleffect/commonskillprefabsandres1/yellospeedline.assetbundle": [
+        {
+          "probePath": "girlswar_merged_extracted/extracted/unity/clean_unityfs_slices/download/commonprefabsandres/skilleffect/commonskillprefabsandres1/yellospeedline.assetbundle",
+          "exists": false,
+          "size": ""
+        },
+        {
+          "probePath": "girlswar_merged_extracted/merged_content/AssetBundles/download/commonprefabsandres/skilleffect/commonskillprefabsandres1/yellospeedline.assetbundle",
+          "exists": false,
+          "size": ""
+        },
+        {
+          "probePath": "girlswar_merged_extracted/restore_overlay/files/build/download/commonprefabsandres/skilleffect/commonskillprefabsandres1/yellospeedline.assetbundle",
+          "exists": false,
+          "size": ""
+        },
+        {
+          "probePath": "com.girlwars.kr/files/build/download/commonprefabsandres/skilleffect/commonskillprefabsandres1/yellospeedline.assetbundle",
+          "exists": false,
+          "size": ""
+        }
+      ]
+    }
+  },
+  "proposal": {
+    "name": "BATTLE_LOCAL_PLAYABLE_PAYLOAD_RESOURCE_UPDATE_PROPOSAL_FROM_SPEEDLINE_TRACE",
+    "generatedBy": "_restore_tools/scripts/build_character_common_speedline_bundle_deep_trace.py",
+    "generatedAtUtc": "2026-06-25T20:14:20.425218+00:00",
+    "classification": "source_backed_resource_update_proposal_only",
+    "doesNotOverwrite": "reports/battle/BATTLE_LOCAL_PLAYABLE_PAYLOAD_MANIFEST.json",
+    "resourceUpdates": [
+      {
+        "exactManifestBundle": "download/commonprefabsandres/skilleffect/commonskillprefabsandres1/pinkspeedline.assetbundle",
+        "currentStatus": "unresolved_missing_common_bundle",
+        "proposedStatus": "resolved_loadable_local_bundle",
+        "resolvedBundle": "download/commonprefabsandres/skilleffect/commonskillprefabsandres1.assetbundle",
+        "resolutionType": "source_backed_parent_bundle_contains_prefab_object",
+        "assetPath": "Assets/Download/CommonPrefabsAndRes/SkillEffect/CommonSkillPrefabsAndRes1/pinkspeedline/pinkspeedline.prefab",
+        "evidenceSummary": "BattleTimelineResMap/roster text references exact prefab asset path; assetbundles/versionfile indexes contain parent commonskillprefabsandres1.assetbundle; UnityPy inspection found parent object/container matching pinkspeedline"
+      },
+      {
+        "exactManifestBundle": "download/commonprefabsandres/skilleffect/commonskillprefabsandres1/redspeedline.assetbundle",
+        "currentStatus": "unresolved_missing_common_bundle",
+        "proposedStatus": "resolved_loadable_local_bundle",
+        "resolvedBundle": "download/commonprefabsandres/skilleffect/commonskillprefabsandres1.assetbundle",
+        "resolutionType": "source_backed_parent_bundle_contains_prefab_object",
+        "assetPath": "Assets/Download/CommonPrefabsAndRes/SkillEffect/CommonSkillPrefabsAndRes1/redspeedline/redspeedline.prefab",
+        "evidenceSummary": "BattleTimelineResMap/roster text references exact prefab asset path; assetbundles/versionfile indexes contain parent commonskillprefabsandres1.assetbundle; UnityPy inspection found parent object/container matching redspeedline"
+      },
+      {
+        "exactManifestBundle": "download/commonprefabsandres/skilleffect/commonskillprefabsandres1/yellospeedline.assetbundle",
+        "currentStatus": "unresolved_missing_common_bundle",
+        "proposedStatus": "resolved_loadable_local_bundle",
+        "resolvedBundle": "download/commonprefabsandres/skilleffect/commonskillprefabsandres1.assetbundle",
+        "resolutionType": "source_backed_parent_bundle_contains_prefab_object",
+        "assetPath": "Assets/Download/CommonPrefabsAndRes/SkillEffect/CommonSkillPrefabsAndRes1/yellospeedline/yellospeedline.prefab",
+        "evidenceSummary": "BattleTimelineResMap/roster text references exact prefab asset path; assetbundles/versionfile indexes contain parent commonskillprefabsandres1.assetbundle; UnityPy inspection found parent object/container matching yellospeedline"
+      }
+    ],
+    "skillPromotions": [
+      {
+        "side": "our",
+        "waveNo": "",
+        "ownerHeroDid": "1002",
+        "ownerHeroId": 50870,
+        "skillDid": 1002201,
+        "prefabField": "prefabId",
+        "prefabId": 1002201,
+        "skillBundle": "download/skillprefabsandres/1002.assetbundle",
+        "currentStatus": "loadable_with_unresolved_common_resource_deps",
+        "actorStatus": "loadable",
+        "affectedExactBundles": "download/commonprefabsandres/skilleffect/commonskillprefabsandres1/pinkspeedline.assetbundle",
+        "resolvedBundles": "download/commonprefabsandres/skilleffect/commonskillprefabsandres1.assetbundle",
+        "remainingMissingDependencyBundles": "",
+        "proposedStatus": "loadable",
+        "blocker": ""
+      },
+      {
+        "side": "our",
+        "waveNo": "",
+        "ownerHeroDid": "1002",
+        "ownerHeroId": 50870,
+        "skillDid": 1002301,
+        "prefabField": "prefabId",
+        "prefabId": 1002301,
+        "skillBundle": "download/skillprefabsandres/1002.assetbundle",
+        "currentStatus": "loadable_with_unresolved_common_resource_deps",
+        "actorStatus": "loadable",
+        "affectedExactBundles": "download/commonprefabsandres/skilleffect/commonskillprefabsandres1/pinkspeedline.assetbundle",
+        "resolvedBundles": "download/commonprefabsandres/skilleffect/commonskillprefabsandres1.assetbundle",
+        "remainingMissingDependencyBundles": "",
+        "proposedStatus": "loadable",
+        "blocker": ""
+      },
+      {
+        "side": "our",
+        "waveNo": "",
+        "ownerHeroDid": "1002",
+        "ownerHeroId": 50870,
+        "skillDid": 1002301,
+        "prefabField": "fastPrefabId",
+        "prefabId": 1002351,
+        "skillBundle": "download/skillprefabsandres/1002.assetbundle",
+        "currentStatus": "loadable_with_unresolved_common_resource_deps",
+        "actorStatus": "loadable",
+        "affectedExactBundles": "download/commonprefabsandres/skilleffect/commonskillprefabsandres1/pinkspeedline.assetbundle",
+        "resolvedBundles": "download/commonprefabsandres/skilleffect/commonskillprefabsandres1.assetbundle",
+        "remainingMissingDependencyBundles": "",
+        "proposedStatus": "loadable",
+        "blocker": ""
+      },
+      {
+        "side": "our",
+        "waveNo": "",
+        "ownerHeroDid": "1034",
+        "ownerHeroId": 50874,
+        "skillDid": 1034201,
+        "prefabField": "prefabId",
+        "prefabId": 1034201,
+        "skillBundle": "download/skillprefabsandres/1034.assetbundle",
+        "currentStatus": "loadable_with_unresolved_common_resource_deps",
+        "actorStatus": "loadable",
+        "affectedExactBundles": "download/commonprefabsandres/skilleffect/commonskillprefabsandres1/yellospeedline.assetbundle",
+        "resolvedBundles": "download/commonprefabsandres/skilleffect/commonskillprefabsandres1.assetbundle",
+        "remainingMissingDependencyBundles": "",
+        "proposedStatus": "loadable",
+        "blocker": ""
+      },
+      {
+        "side": "our",
+        "waveNo": "",
+        "ownerHeroDid": "1034",
+        "ownerHeroId": 50874,
+        "skillDid": 1034301,
+        "prefabField": "fastPrefabId",
+        "prefabId": 1034351,
+        "skillBundle": "download/skillprefabsandres/1034.assetbundle",
+        "currentStatus": "loadable_with_unresolved_common_resource_deps",
+        "actorStatus": "loadable",
+        "affectedExactBundles": "download/commonprefabsandres/skilleffect/commonskillprefabsandres1/yellospeedline.assetbundle",
+        "resolvedBundles": "download/commonprefabsandres/skilleffect/commonskillprefabsandres1.assetbundle",
+        "remainingMissingDependencyBundles": "",
+        "proposedStatus": "loadable",
+        "blocker": ""
+      },
+      {
+        "side": "enemy",
+        "waveNo": "1",
+        "ownerHeroDid": "1100111",
+        "ownerHeroId": -1,
+        "skillDid": 1012201,
+        "prefabField": "prefabId",
+        "prefabId": 1012201,
+        "skillBundle": "download/skillprefabsandres/1012.assetbundle",
+        "currentStatus": "loadable_with_unresolved_common_resource_deps",
+        "actorStatus": "loadable",
+        "affectedExactBundles": "download/commonprefabsandres/skilleffect/commonskillprefabsandres1/redspeedline.assetbundle",
+        "resolvedBundles": "download/commonprefabsandres/skilleffect/commonskillprefabsandres1.assetbundle",
+        "remainingMissingDependencyBundles": "",
+        "proposedStatus": "loadable",
+        "blocker": ""
+      },
+      {
+        "side": "enemy",
+        "waveNo": "1",
+        "ownerHeroDid": "1100111",
+        "ownerHeroId": -1,
+        "skillDid": 1012301,
+        "prefabField": "prefabId",
+        "prefabId": 1012301,
+        "skillBundle": "download/skillprefabsandres/1012.assetbundle",
+        "currentStatus": "loadable_with_unresolved_common_resource_deps",
+        "actorStatus": "loadable",
+        "affectedExactBundles": "download/commonprefabsandres/skilleffect/commonskillprefabsandres1/redspeedline.assetbundle",
+        "resolvedBundles": "download/commonprefabsandres/skilleffect/commonskillprefabsandres1.assetbundle",
+        "remainingMissingDependencyBundles": "",
+        "proposedStatus": "loadable",
+        "blocker": ""
+      },
+      {
+        "side": "enemy",
+        "waveNo": "1",
+        "ownerHeroDid": "1100111",
+        "ownerHeroId": -1,
+        "skillDid": 1012301,
+        "prefabField": "fastPrefabId",
+        "prefabId": 1012351,
+        "skillBundle": "download/skillprefabsandres/1012.assetbundle",
+        "currentStatus": "loadable_with_unresolved_common_resource_deps",
+        "actorStatus": "loadable",
+        "affectedExactBundles": "download/commonprefabsandres/skilleffect/commonskillprefabsandres1/redspeedline.assetbundle",
+        "resolvedBundles": "download/commonprefabsandres/skilleffect/commonskillprefabsandres1.assetbundle",
+        "remainingMissingDependencyBundles": "",
+        "proposedStatus": "loadable",
+        "blocker": ""
+      }
+    ],
+    "unchangedActorBlockers": [
+      "1036 actor exact bundle remains not_fetchable_local",
+      "enemy 1100112/1100113/1100121/1100122/1100123/1100131/1100132/1100133 remain not_resolved_from_local_evidence"
+    ],
+    "warning": "This proposal resolves common speedline resource dependencies only; it is not a full original payload restore claim."
+  },
+  "commandPolicy": {
+    "rootCmdCount": 1,
+    "rootCmdFiles": [
+      "00_COMMAND_CENTER.cmd"
+    ],
+    "restoreToolsDirectCmdCount": 0,
+    "restoreToolsDirectCmdFiles": [],
+    "policyOk": true
+  },
+  "nextBlockers": [
+    "Battle worker must apply the proposal to treat exact speedline manifest dependency strings as objects inside the source-backed parent bundle.",
+    "Full original payload remains blocked by 1036 actor not_fetchable_local and unresolved enemy payload actor mappings.",
+    "No source-backed yellow spelling alias was used; yellospeedline remains the authoritative local evidence string."
+  ]
+}

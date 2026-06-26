@@ -1,0 +1,6 @@
+action,evidenceStatus,allowedWithoutRuntime,requiresRuntimeDump,requiresRuntimeSnapshot,decision
+promote UI144 Dock candidate,"renderer/root Canvas source path compiles, but diff still trails UI128",False,True,False,blocked_do_not_promote
+patch UI_Dock parent/sibling/mask statically,source roots have father_id=0 and form table says OpenUIForm; no exact runtime parent/group object path,False,True,False,blocked_no_static_parent_patch
+reconstruct UI_Dock renderer dependencies,closed by UI144; 8/8 SkeletonGraphic attached,True,False,False,done_but_not_sufficient_for_promotion
+activity/chat/account/currency visual correction,Lua shows server/account managers drive active slots and text,False,False,True,blocked_requires_UI130_snapshot
+UI_bg raycast/interactable change,guardrail preserved true/true; no source proof for off,False,False,False,forbidden_no_patch

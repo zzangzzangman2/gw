@@ -1,0 +1,515 @@
+{
+  "verdict": "clip05 actor motion/layout/timing + map/HUD context not reproduced",
+  "visual_status": "failed_runtime_ui_graphic_image_components_not_serialized_after_scene_reload",
+  "isFinalRestoredBattleScreen": false,
+  "reference_video_used": true,
+  "videoTimeRangeSeconds": "485.0-487.0",
+  "unityExitCode": 0,
+  "cameraVisibleBattleHud": false,
+  "hudVisibilityMetrics": {
+    "topHpVs": {
+      "meanAbsDiffVsBattle29HudReference": 0.031582,
+      "pixelCorrelationVsBattle29HudReference": 0.9002,
+      "zoneVisibleByReferenceSimilarity": true
+    },
+    "bottomCards": {
+      "meanAbsDiffVsBattle29HudReference": 0.090698,
+      "pixelCorrelationVsBattle29HudReference": 0.486029,
+      "zoneVisibleByReferenceSimilarity": false
+    },
+    "rightControls": {
+      "meanAbsDiffVsBattle29HudReference": 0.026358,
+      "pixelCorrelationVsBattle29HudReference": 0.734968,
+      "zoneVisibleByReferenceSimilarity": true
+    },
+    "cameraVisibleBattleHud": false,
+    "visibleHudZoneVoteCount": 2,
+    "reason": "HUD/card regions still do not match BATTLE29/clip05 reference visibility."
+  },
+  "captureMetrics": {
+    "captureExists": true,
+    "width": 1920,
+    "height": 1080,
+    "nonBlackPixelRatio": 0.900815
+  },
+  "battle29FreshSummary": {
+    "status": "battle29_hero_list_skillcard_bind_clip05",
+    "boundHeroCardCount": 3,
+    "headSpriteBindCount": 3,
+    "extractedSpriteBindCount": 57,
+    "visibleCardImageCount": 51,
+    "hiddenUnresolvedWhiteDataIconCount": 9,
+    "cards": [
+      {
+        "slot": 1,
+        "heroDid": "1036",
+        "heroId": "51469",
+        "cloneName": "Battle29BoundHeroCard_1_1036",
+        "hierarchyPath": "HeroListContainer/Battle29BoundHeroCard_1_1036",
+        "anchoredPosition": "-190/0",
+        "sizeDelta": "269/200",
+        "headSprite": "head1036",
+        "headPngPath": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\extracted\\unity\\bundles\\b_6ca02dad4f8af848\\images\\S\\-1006758698391221614_head1036.png",
+        "headBindCount": 1,
+        "extractedSpriteBindCount": 19,
+        "hiddenUnresolvedWhiteDataIconCount": 3,
+        "activeFixCount": 0,
+        "imageCount": 22,
+        "visibleImageCount": 17,
+        "visibleWhiteLikeImageCount": 0,
+        "visibleWhiteLikeImagePaths": [],
+        "normalSkill": "1036101",
+        "smallSkill": "1036201",
+        "bigSkill": "1036301"
+      },
+      {
+        "slot": 2,
+        "heroDid": "1002",
+        "heroId": "50870",
+        "cloneName": "Battle29BoundHeroCard_2_1002",
+        "hierarchyPath": "HeroListContainer/Battle29BoundHeroCard_2_1002",
+        "anchoredPosition": "0/0",
+        "sizeDelta": "269/200",
+        "headSprite": "head1002",
+        "headPngPath": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\extracted\\unity\\bundles\\b_6ca02dad4f8af848\\images\\S\\-296058673418415307_head1002.png",
+        "headBindCount": 1,
+        "extractedSpriteBindCount": 19,
+        "hiddenUnresolvedWhiteDataIconCount": 3,
+        "activeFixCount": 0,
+        "imageCount": 22,
+        "visibleImageCount": 17,
+        "visibleWhiteLikeImageCount": 0,
+        "visibleWhiteLikeImagePaths": [],
+        "normalSkill": "1002101",
+        "smallSkill": "1002201",
+        "bigSkill": "1002301"
+      },
+      {
+        "slot": 3,
+        "heroDid": "1034",
+        "heroId": "50874",
+        "cloneName": "Battle29BoundHeroCard_3_1034",
+        "hierarchyPath": "HeroListContainer/Battle29BoundHeroCard_3_1034",
+        "anchoredPosition": "190/0",
+        "sizeDelta": "269/200",
+        "headSprite": "head1034",
+        "headPngPath": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\extracted\\unity\\bundles\\b_6ca02dad4f8af848\\images\\S\\401204702686331365_head1034.png",
+        "headBindCount": 1,
+        "extractedSpriteBindCount": 19,
+        "hiddenUnresolvedWhiteDataIconCount": 3,
+        "activeFixCount": 0,
+        "imageCount": 22,
+        "visibleImageCount": 17,
+        "visibleWhiteLikeImageCount": 0,
+        "visibleWhiteLikeImagePaths": [],
+        "normalSkill": "1034101",
+        "smallSkill": "1034201",
+        "bigSkill": "1034301"
+      }
+    ],
+    "capture": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_battle_unity\\Assets\\RestoreCaptures\\battle_hud\\BattleHeroListSkillCardBindClip05_1920x1080.png"
+  },
+  "battle29ReopenSummary": {
+    "phase": "battle29_saved_scene_reopen",
+    "scenePath": "Assets/Scenes/BattleHeroListSkillCardBindClip05.unity",
+    "sceneExists": true,
+    "opened": true,
+    "canvasCount": 18,
+    "graphicCount": 0,
+    "imageCount": 0,
+    "textCount": 0,
+    "canvasRendererCount": 799,
+    "activeGraphicCount": 0,
+    "missingScriptCount": 1205,
+    "heroCardRootCount": 3,
+    "heroListContainerCount": 2,
+    "imageLikeTransformCount": 967,
+    "imageWithSpriteCount": 0,
+    "imageWithTextureCount": 0,
+    "cameraFound": true,
+    "cameraInfo": "BattleHudSpriteAtlasTextureRuntimeBindingClip05Camera|ortho=true|size=5|pos=0/0/-10|depth=1000|clear=SolidColor|cull=-1",
+    "savedAs": "",
+    "capture": "",
+    "captureExists": false,
+    "reopenAfterSaveValid": false,
+    "reopenAfterSaveGraphicCount": 0,
+    "reopenAfterSaveImageCount": 0,
+    "reopenAfterSaveActiveGraphicCount": 0,
+    "reopenAfterSaveMissingScriptCount": 0,
+    "failReason": ""
+  },
+  "battle40ReopenSummary": {
+    "phase": "battle40_saved_scene_reopen_before_copy",
+    "scenePath": "Assets/Scenes/Battle40HudCameraRenderBindingRuntimeContext.unity",
+    "sceneExists": true,
+    "opened": true,
+    "canvasCount": 18,
+    "graphicCount": 0,
+    "imageCount": 0,
+    "textCount": 0,
+    "canvasRendererCount": 799,
+    "activeGraphicCount": 0,
+    "missingScriptCount": 1208,
+    "heroCardRootCount": 3,
+    "heroListContainerCount": 2,
+    "imageLikeTransformCount": 967,
+    "imageWithSpriteCount": 0,
+    "imageWithTextureCount": 0,
+    "cameraFound": true,
+    "cameraInfo": "BattleHudSpriteAtlasTextureRuntimeBindingClip05Camera|ortho=true|size=5|pos=0/0/-10|depth=1000|clear=SolidColor|cull=-1",
+    "savedAs": "",
+    "capture": "",
+    "captureExists": false,
+    "reopenAfterSaveValid": false,
+    "reopenAfterSaveGraphicCount": 0,
+    "reopenAfterSaveImageCount": 0,
+    "reopenAfterSaveActiveGraphicCount": 0,
+    "reopenAfterSaveMissingScriptCount": 0,
+    "failReason": ""
+  },
+  "battle41Summary": {
+    "phase": "battle41_candidate_reopen_after_copy",
+    "scenePath": "Assets/Scenes/Battle40HudCameraRenderBindingRuntimeContext.unity",
+    "sceneExists": true,
+    "opened": true,
+    "canvasCount": 18,
+    "graphicCount": 0,
+    "imageCount": 0,
+    "textCount": 0,
+    "canvasRendererCount": 799,
+    "activeGraphicCount": 0,
+    "missingScriptCount": 1208,
+    "heroCardRootCount": 3,
+    "heroListContainerCount": 2,
+    "imageLikeTransformCount": 967,
+    "imageWithSpriteCount": 0,
+    "imageWithTextureCount": 0,
+    "cameraFound": true,
+    "cameraInfo": "BattleHudSpriteAtlasTextureRuntimeBindingClip05Camera|ortho=true|size=5|pos=0/0/-10|depth=1000|clear=SolidColor|cull=-1",
+    "savedAs": "Assets/Scenes/Battle41HudRuntimeSpriteTexturePersistenceTrace.unity",
+    "capture": "Assets/RestoreCaptures/battle_actor/Battle41HudRuntimeSpriteTexturePersistenceTrace_1920x1080.png",
+    "captureExists": true,
+    "reopenAfterSaveValid": true,
+    "reopenAfterSaveGraphicCount": 0,
+    "reopenAfterSaveImageCount": 0,
+    "reopenAfterSaveActiveGraphicCount": 0,
+    "reopenAfterSaveMissingScriptCount": 1208,
+    "failReason": ""
+  },
+  "componentStats": {
+    "battle29_saved_scene_reopen": {
+      "rows": 967,
+      "missingScriptRows": 802,
+      "canvasRendererRows": 717,
+      "graphicRows": 0,
+      "imageRows": 0,
+      "imageLikeRows": 475,
+      "cardRelatedRows": 917
+    },
+    "battle40_saved_scene_reopen_before_copy": {
+      "rows": 967,
+      "missingScriptRows": 802,
+      "canvasRendererRows": 717,
+      "graphicRows": 0,
+      "imageRows": 0,
+      "imageLikeRows": 475,
+      "cardRelatedRows": 917
+    },
+    "battle41_candidate_reopen_after_copy": {
+      "rows": 967,
+      "missingScriptRows": 802,
+      "canvasRendererRows": 717,
+      "graphicRows": 0,
+      "imageRows": 0,
+      "imageLikeRows": 475,
+      "cardRelatedRows": 917
+    },
+    "battle41_candidate_reopen_after_copy_after_save_reopen": {
+      "rows": 967,
+      "missingScriptRows": 802,
+      "canvasRendererRows": 717,
+      "graphicRows": 0,
+      "imageRows": 0,
+      "imageLikeRows": 475,
+      "cardRelatedRows": 917
+    }
+  },
+  "runtimeTextureCodeEvidence": [
+    {
+      "path": "girlswar_battle_unity\\Assets\\Editor\\BattleHeroListSkillCardBindClip05Editor.cs",
+      "line": 99,
+      "text": "row.imageCount = clone.GetComponentsInChildren<Image>(true).Length;"
+    },
+    {
+      "path": "girlswar_battle_unity\\Assets\\Editor\\BattleHeroListSkillCardBindClip05Editor.cs",
+      "line": 163,
+      "text": "var textureCache = new Dictionary<string, Texture2D>(StringComparer.OrdinalIgnoreCase);"
+    },
+    {
+      "path": "girlswar_battle_unity\\Assets\\Editor\\BattleHeroListSkillCardBindClip05Editor.cs",
+      "line": 164,
+      "text": "foreach (var image in root.GetComponentsInChildren<Image>(true))"
+    },
+    {
+      "path": "girlswar_battle_unity\\Assets\\Editor\\BattleHeroListSkillCardBindClip05Editor.cs",
+      "line": 166,
+      "text": "string spriteName = image.sprite != null ? image.sprite.name : \"\";"
+    },
+    {
+      "path": "girlswar_battle_unity\\Assets\\Editor\\BattleHeroListSkillCardBindClip05Editor.cs",
+      "line": 172,
+      "text": "var oldSprite = image.sprite;"
+    },
+    {
+      "path": "girlswar_battle_unity\\Assets\\Editor\\BattleHeroListSkillCardBindClip05Editor.cs",
+      "line": 175,
+      "text": "var sprite = Sprite.Create(texture, new Rect(0f, 0f, texture.width, texture.height), new Vector2(0.5f, 0.5f), ppu, 0, SpriteMeshType.FullRect, border);"
+    },
+    {
+      "path": "girlswar_battle_unity\\Assets\\Editor\\BattleHeroListSkillCardBindClip05Editor.cs",
+      "line": 177,
+      "text": "image.sprite = sprite;"
+    },
+    {
+      "path": "girlswar_battle_unity\\Assets\\Editor\\BattleHeroListSkillCardBindClip05Editor.cs",
+      "line": 199,
+      "text": "if (image != null && image.sprite != null)"
+    },
+    {
+      "path": "girlswar_battle_unity\\Assets\\Editor\\BattleHeroListSkillCardBindClip05Editor.cs",
+      "line": 201,
+      "text": "var rect = image.sprite.rect;"
+    },
+    {
+      "path": "girlswar_battle_unity\\Assets\\Editor\\BattleHeroListSkillCardBindClip05Editor.cs",
+      "line": 213,
+      "text": "private static Texture2D LoadIndexedTexture(Battle29SpritePngEntry entry, Dictionary<string, Texture2D> cache)"
+    },
+    {
+      "path": "girlswar_battle_unity\\Assets\\Editor\\BattleHeroListSkillCardBindClip05Editor.cs",
+      "line": 219,
+      "text": "var texture = new Texture2D(2, 2, TextureFormat.RGBA32, false);"
+    },
+    {
+      "path": "girlswar_battle_unity\\Assets\\Editor\\BattleHeroListSkillCardBindClip05Editor.cs",
+      "line": 221,
+      "text": "if (!texture.LoadImage(bytes, false))"
+    },
+    {
+      "path": "girlswar_battle_unity\\Assets\\Editor\\BattleHeroListSkillCardBindClip05Editor.cs",
+      "line": 243,
+      "text": "foreach (var image in root.GetComponentsInChildren<Image>(true))"
+    },
+    {
+      "path": "girlswar_battle_unity\\Assets\\Editor\\BattleHeroListSkillCardBindClip05Editor.cs",
+      "line": 246,
+      "text": "string spriteName = image.sprite != null ? image.sprite.name.ToLowerInvariant() : \"\";"
+    },
+    {
+      "path": "girlswar_battle_unity\\Assets\\Editor\\BattleHeroListSkillCardBindClip05Editor.cs",
+      "line": 249,
+      "text": "image.sprite = sprite;"
+    },
+    {
+      "path": "girlswar_battle_unity\\Assets\\Editor\\BattleHeroListSkillCardBindClip05Editor.cs",
+      "line": 262,
+      "text": "var texture = new Texture2D(2, 2, TextureFormat.RGBA32, false);"
+    },
+    {
+      "path": "girlswar_battle_unity\\Assets\\Editor\\BattleHeroListSkillCardBindClip05Editor.cs",
+      "line": 264,
+      "text": "if (!texture.LoadImage(File.ReadAllBytes(path), false))"
+    },
+    {
+      "path": "girlswar_battle_unity\\Assets\\Editor\\BattleHeroListSkillCardBindClip05Editor.cs",
+      "line": 271,
+      "text": "var sprite = Sprite.Create(texture, new Rect(0f, 0f, texture.width, texture.height), new Vector2(0.5f, 0.5f), 100f);"
+    },
+    {
+      "path": "girlswar_battle_unity\\Assets\\Editor\\BattleHeroListSkillCardBindClip05Editor.cs",
+      "line": 305,
+      "text": "foreach (var image in root.GetComponentsInChildren<Image>(true))"
+    },
+    {
+      "path": "girlswar_battle_unity\\Assets\\Editor\\BattleHeroListSkillCardBindClip05Editor.cs",
+      "line": 315,
+      "text": "foreach (var image in root.GetComponentsInChildren<Image>(true))"
+    },
+    {
+      "path": "girlswar_battle_unity\\Assets\\Editor\\BattleHeroListSkillCardBindClip05Editor.cs",
+      "line": 321,
+      "text": "bool missingTexture = image.sprite == null;"
+    },
+    {
+      "path": "girlswar_battle_unity\\Assets\\Editor\\BattleHeroListSkillCardBindClip05Editor.cs",
+      "line": 324,
+      "text": "missingTexture = image.sprite == null || image.sprite.texture == null || image.sprite.texture.width <= 2 || image.sprite.texture.height <= 2;"
+    },
+    {
+      "path": "girlswar_battle_unity\\Assets\\Editor\\BattleHeroListSkillCardBindClip05Editor.cs",
+      "line": 340,
+      "text": "foreach (var image in root.GetComponentsInChildren<Image>(true))"
+    },
+    {
+      "path": "girlswar_battle_unity\\Assets\\Editor\\BattleHeroListSkillCardBindClip05Editor.cs",
+      "line": 344,
+      "text": "bool missingTexture = image.sprite == null;"
+    },
+    {
+      "path": "girlswar_battle_unity\\Assets\\Editor\\BattleHeroListSkillCardBindClip05Editor.cs",
+      "line": 347,
+      "text": "missingTexture = image.sprite == null || image.sprite.texture == null || image.sprite.texture.width <= 2 || image.sprite.texture.height <= 2;"
+    },
+    {
+      "path": "girlswar_battle_unity\\Assets\\Editor\\BattleHeroListSkillCardBindClip05Editor.cs",
+      "line": 371,
+      "text": "var texture = new Texture2D(CaptureWidth, CaptureHeight, TextureFormat.RGB24, false);"
+    },
+    {
+      "path": "girlswar_battle_unity\\Assets\\Editor\\BattleCorrectMapSceneHudPreviewClip05Editor.cs",
+      "line": 95,
+      "text": "var texture = new Texture2D(2, 2, TextureFormat.RGBA32, false);"
+    },
+    {
+      "path": "girlswar_battle_unity\\Assets\\Editor\\BattleCorrectMapSceneHudPreviewClip05Editor.cs",
+      "line": 97,
+      "text": "texture.LoadImage(File.ReadAllBytes(result.absolutePath), false);"
+    },
+    {
+      "path": "girlswar_battle_unity\\Assets\\Editor\\BattleCorrectMapSceneHudPreviewClip05Editor.cs",
+      "line": 109,
+      "text": "var sprite = Sprite.Create(texture, new Rect(0f, 0f, texture.width, texture.height), new Vector2(0.5f, 0.5f), 100f);"
+    },
+    {
+      "path": "girlswar_battle_unity\\Assets\\Editor\\BattleCorrectMapSceneHudPreviewClip05Editor.cs",
+      "line": 255,
+      "text": "var texture = new Texture2D(2, 2, TextureFormat.RGBA32, false);"
+    },
+    {
+      "path": "girlswar_battle_unity\\Assets\\Editor\\BattleCorrectMapSceneHudPreviewClip05Editor.cs",
+      "line": 257,
+      "text": "texture.LoadImage(File.ReadAllBytes(result.absolutePath), false);"
+    },
+    {
+      "path": "girlswar_battle_unity\\Assets\\Editor\\BattleCorrectMapSceneHudPreviewClip05Editor.cs",
+      "line": 264,
+      "text": "var sprite = Sprite.Create(texture, new Rect(0f, 0f, texture.width, texture.height), new Vector2(0.5f, 0.5f), 100f);"
+    },
+    {
+      "path": "girlswar_battle_unity\\Assets\\Editor\\BattleCorrectMapSceneHudPreviewClip05Editor.cs",
+      "line": 429,
+      "text": "private static Texture2D LoadActorAtlasTexture(string modelId, Battle27ActorResult result)"
+    },
+    {
+      "path": "girlswar_battle_unity\\Assets\\Editor\\BattleCorrectMapSceneHudPreviewClip05Editor.cs",
+      "line": 438,
+      "text": "var texture = new Texture2D(2, 2, TextureFormat.RGBA32, false);"
+    },
+    {
+      "path": "girlswar_battle_unity\\Assets\\Editor\\BattleCorrectMapSceneHudPreviewClip05Editor.cs",
+      "line": 440,
+      "text": "if (!texture.LoadImage(File.ReadAllBytes(path), false))"
+    },
+    {
+      "path": "girlswar_battle_unity\\Assets\\Editor\\BattleCorrectMapSceneHudPreviewClip05Editor.cs",
+      "line": 464,
+      "text": "private static int RepairActorMaterials(GameObject root, Texture2D actorAtlas)"
+    },
+    {
+      "path": "girlswar_battle_unity\\Assets\\Editor\\BattleCorrectMapSceneHudPreviewClip05Editor.cs",
+      "line": 490,
+      "text": "private static int BindActorAtlasTexture(GameObject root, Texture2D actorAtlas)"
+    },
+    {
+      "path": "girlswar_battle_unity\\Assets\\Editor\\BattleCorrectMapSceneHudPreviewClip05Editor.cs",
+      "line": 509,
+      "text": "private static int CountActorAtlasTextureBound(GameObject root, Texture2D actorAtlas)"
+    },
+    {
+      "path": "girlswar_battle_unity\\Assets\\Editor\\BattleCorrectMapSceneHudPreviewClip05Editor.cs",
+      "line": 566,
+      "text": "var textureCache = new Dictionary<string, Texture2D>(StringComparer.OrdinalIgnoreCase);"
+    },
+    {
+      "path": "girlswar_battle_unity\\Assets\\Editor\\BattleCorrectMapSceneHudPreviewClip05Editor.cs",
+      "line": 599,
+      "text": "var sprite = Sprite.Create(texture, new Rect(0f, 0f, texture.width, texture.height), new Vector2(0.5f, 0.5f), ppu);"
+    },
+    {
+      "path": "girlswar_battle_unity\\Assets\\Editor\\BattleCorrectMapSceneHudPreviewClip05Editor.cs",
+      "line": 647,
+      "text": "private static Texture2D LoadTextureCached(string path, Dictionary<string, Texture2D> cache)"
+    },
+    {
+      "path": "girlswar_battle_unity\\Assets\\Editor\\BattleCorrectMapSceneHudPreviewClip05Editor.cs",
+      "line": 652,
+      "text": "var texture = new Texture2D(2, 2, TextureFormat.RGBA32, false);"
+    },
+    {
+      "path": "girlswar_battle_unity\\Assets\\Editor\\BattleCorrectMapSceneHudPreviewClip05Editor.cs",
+      "line": 654,
+      "text": "if (!texture.LoadImage(File.ReadAllBytes(path), false))"
+    },
+    {
+      "path": "girlswar_battle_unity\\Assets\\Editor\\BattleCorrectMapSceneHudPreviewClip05Editor.cs",
+      "line": 721,
+      "text": "private static Material CreateFallbackMaterial(Material source, bool ui, Texture2D actorAtlas)"
+    },
+    {
+      "path": "girlswar_battle_unity\\Assets\\Editor\\BattleCorrectMapSceneHudPreviewClip05Editor.cs",
+      "line": 748,
+      "text": "material.SetTexture(\"_MainTex\", texture);"
+    },
+    {
+      "path": "girlswar_battle_unity\\Assets\\Editor\\BattleCorrectMapSceneHudPreviewClip05Editor.cs",
+      "line": 764,
+      "text": "if (texture != null) target.SetTexture(\"_MainTex\", texture);"
+    },
+    {
+      "path": "girlswar_battle_unity\\Assets\\Editor\\BattleCorrectMapSceneHudPreviewClip05Editor.cs",
+      "line": 794,
+      "text": "var texture = new Texture2D(CaptureWidth, CaptureHeight, TextureFormat.RGB24, false);"
+    }
+  ],
+  "battle40Carryover": {
+    "visual_status": "failed_hud_graphic_components_missing_after_scene_reload",
+    "componentSummary": {
+      "rowCount": 0,
+      "activeGraphicCount": 0,
+      "imageRows": 0,
+      "imageWithSpriteRows": 0,
+      "imageWithTextureRows": 0,
+      "textRows": 0,
+      "buttonCandidateByPathRows": 0
+    },
+    "unitySummary": {
+      "canvasFixCount": 0,
+      "extractedSpriteBindCount": 0,
+      "beforeCanvasCount": 18,
+      "afterCanvasCount": 18,
+      "beforeImageWithTextureCount": 0,
+      "afterImageWithTextureCount": 0,
+      "afterActiveGraphicCount": 0,
+      "captureExists": true
+    }
+  },
+  "blocker": "BATTLE29 fresh build reports visible Image/card sprites, but saved scene reopen has 0 resolved Image/Graphic components; Texture2D.LoadImage/Sprite.Create/Image.sprite state is runtime-only and not persistent.",
+  "nextBlocker": "BATTLE_42_REBUILD_PERSISTENT_BATTLE_HUD_IMAGE_COMPONENTS_FROM_ORIGINAL_PREFAB_PPTR_AND_SPRITES",
+  "rootCmdCount": 1,
+  "restoreToolsDirectCmdCount": 0,
+  "outputs": {
+    "report": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_41_TRACE_BATTLE_HUD_RUNTIME_SPRITE_TEXTURE_PERSISTENCE_AND_CAPTURE_PIPELINE_RESULT.md",
+    "resultJson": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_41_TRACE_BATTLE_HUD_RUNTIME_SPRITE_TEXTURE_PERSISTENCE_AND_CAPTURE_PIPELINE_RESULT.json",
+    "unityDataJson": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_battle_unity\\Assets\\RestoreData\\battle\\BATTLE_41_TRACE_BATTLE_HUD_RUNTIME_SPRITE_TEXTURE_PERSISTENCE_AND_CAPTURE_PIPELINE.json",
+    "unityProbeJson": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_battle_unity\\Assets\\RestoreData\\battle\\BATTLE_41_TRACE_BATTLE_HUD_RUNTIME_SPRITE_TEXTURE_PERSISTENCE_AND_CAPTURE_PIPELINE_UNITY.json",
+    "componentsCsv": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_battle_unity\\Assets\\RestoreData\\battle\\BATTLE_41_TRACE_BATTLE_HUD_RUNTIME_SPRITE_TEXTURE_PERSISTENCE_AND_CAPTURE_PIPELINE_COMPONENTS.csv",
+    "capture": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_battle_unity\\Assets\\RestoreCaptures\\battle_actor\\Battle41HudRuntimeSpriteTexturePersistenceTrace_1920x1080.png",
+    "contactSheet": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_41_TRACE_BATTLE_HUD_RUNTIME_SPRITE_TEXTURE_PERSISTENCE_AND_CAPTURE_PIPELINE_CONTACT_SHEET.jpg",
+    "unityLog": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_41_TRACE_BATTLE_HUD_RUNTIME_SPRITE_TEXTURE_PERSISTENCE_AND_CAPTURE_PIPELINE.log"
+  },
+  "notes": [
+    "No fake HUD or debug/path labels were added to the final capture.",
+    "BATTLE41 is a persistence/capture-pipeline trace; it does not claim final visual restoration.",
+    "BATTLE29 fresh capture remains useful reference, but its runtime Image/Sprite state is not persisted in reopened scenes."
+  ]
+}

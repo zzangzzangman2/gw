@@ -1,0 +1,650 @@
+{
+  "generatedAt": "2026-06-26T02:54:21",
+  "prefix": "BATTLE_54_VALIDATE_ROUTE_ACTIVE_SIBLING_MASK_TMP_SCALE_AUTOSIZE_ACTOR_PAYLOAD",
+  "summary": {
+    "scene": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_battle_unity\\Assets\\Scenes\\Battle51LuaBridgeRaycasterRegistrationCandidate.unity",
+    "capture": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_battle_unity\\Assets\\RestoreCaptures\\battle_actor\\Battle51LuaBridgeRaycasterRegistrationCandidate_1920x1080.png",
+    "referenceNotes": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\video_reference\\REFERENCE_MP4_RESTORE_NOTES_20260626_024037.md",
+    "routeCount": 1046,
+    "activeRouteZeroScaleCount": 7,
+    "activeRouteZeroScaleSamples": [
+      "BattleHudSpriteAtlasTextureRuntimeBindingClip05Root/CanvasLuaStateHUD_01_ui_normalbattle",
+      "BattleHudSpriteAtlasTextureRuntimeBindingClip05Root/CanvasLuaStateHUD_01_ui_normalbattle/root_battle/BottomCenter/HeroListContainer/Battle29BoundHeroCard_1_1036/imgIconBG/tweener/UIEffect_meili",
+      "BattleHudSpriteAtlasTextureRuntimeBindingClip05Root/CanvasLuaStateHUD_01_ui_normalbattle/root_battle/BottomCenter/HeroListContainer/Battle29BoundHeroCard_2_1002/imgIconBG/tweener/UIEffect_meili",
+      "BattleHudSpriteAtlasTextureRuntimeBindingClip05Root/CanvasLuaStateHUD_01_ui_normalbattle/root_battle/BottomCenter/HeroListContainer/Battle29BoundHeroCard_3_1034/imgIconBG/tweener/UIEffect_meili",
+      "BattleHudSpriteAtlasTextureRuntimeBindingClip05Root/CanvasLuaStateHUD_01_ui_normalbattle/root_battle/BottomCenter/UI_BigSkillPress/Particle System/lizi",
+      "BattleHudSpriteAtlasTextureRuntimeBindingClip05Root/CanvasLuaStateHUD_02_ui_battle3dui",
+      "BattleHudSpriteAtlasTextureRuntimeBindingClip05Root/CanvasLuaStateHUD_03_ui_normalbattle_heroitem/imgIconBG/tweener/UIEffect_meili"
+    ],
+    "inactiveCriticalCount": 19,
+    "inactiveCriticalSamples": [
+      "BattleHudSpriteAtlasTextureRuntimeBindingClip05Root/CanvasLuaStateHUD_01_ui_normalbattle/root_battle/UI_BattleItemFly/root_item/itemCell76/btn_icon",
+      "BattleHudSpriteAtlasTextureRuntimeBindingClip05Root/CanvasLuaStateHUD_01_ui_normalbattle/root_battle/UI_BattleItemFly/root_item/itemCell76/btn_item_seach",
+      "BattleHudSpriteAtlasTextureRuntimeBindingClip05Root/CanvasLuaStateHUD_01_ui_normalbattle/root_battle/UI_BattleItemFly/root_item/itemCell76/btn_jian",
+      "BattleHudSpriteAtlasTextureRuntimeBindingClip05Root/CanvasLuaStateHUD_01_ui_normalbattle/root_battle/btn_Explosive_All",
+      "BattleHudSpriteAtlasTextureRuntimeBindingClip05Root/CanvasLuaStateHUD_01_ui_normalbattle/root_battle/btn_Explosive_Cancel",
+      "BattleHudSpriteAtlasTextureRuntimeBindingClip05Root/CanvasLuaStateHUD_01_ui_normalbattle/root_opra/root_buff/root_buff_left/btnLeftClosebuff",
+      "BattleHudSpriteAtlasTextureRuntimeBindingClip05Root/CanvasLuaStateHUD_01_ui_normalbattle/root_opra/root_buff/root_buff_right/btnRightClosebuff",
+      "BattleHudSpriteAtlasTextureRuntimeBindingClip05Root/CanvasLuaStateHUD_03_ui_normalbattle_heroitem",
+      "BattleHudSpriteAtlasTextureRuntimeBindingClip05Root/CanvasLuaStateHUD_03_ui_normalbattle_heroitem/btnAttack",
+      "BattleHudSpriteAtlasTextureRuntimeBindingClip05Root/CanvasLuaStateHUD_04_item_buff_left",
+      "BattleHudSpriteAtlasTextureRuntimeBindingClip05Root/CanvasLuaStateHUD_05_item_buff_right",
+      "BattleHudSpriteAtlasTextureRuntimeBindingClip05Root/CanvasLuaStateHUD_06_ui_normalbattle_pause"
+    ],
+    "actorRows": 6,
+    "activeActorRows": 3,
+    "activeLoadableActorRows": 3,
+    "disabledLegacyActorRows": 3,
+    "manifestActorStatusCounts": {
+      "not_fetchable_local": 1,
+      "loadable": 3,
+      "unresolved_enemy_payload_instance": 8
+    },
+    "manifestClassification": "local_playable_subset_only_not_full_payload",
+    "manifestLoadableActors": 3,
+    "manifestTotalActors": 12,
+    "maskRows": 16,
+    "maskComponentRows": 8,
+    "maskNameOnlyRows": 8,
+    "textRows": 65,
+    "textAutosizeCounts": {
+      "0": 64,
+      "1": 1
+    },
+    "negativeCharacterSpacingRows": 15,
+    "cardRows": 4,
+    "activeCardRows": 3,
+    "activeCardsWithSpriteRows": 3,
+    "buttonRows": 31,
+    "buttonComponentRows": 26,
+    "buttonActiveRows": 16,
+    "b51": {
+      "verdict": "BATTLE51 restored source-backed Lua bridge component candidates and proved EventSystem.RaycastAll failure is RaycasterManager registration/lifecycle in the editor probe; final playable screen remains false.",
+      "visual_status": "source_backed_lua_bridge_candidate_restored_eventsystem_forced_registration_validated_but_xlua_runtime_missing",
+      "isFinalRestoredBattleScreen": false,
+      "unityExitCode": 0,
+      "referenceVideoAvailable": false,
+      "referenceVideoPath": "C:\\Users\\godho\\Downloads\\플레이.mp4",
+      "auxiliaryReferenceVideoAvailable": true,
+      "auxiliaryReferenceVideoPath": "C:\\Users\\godho\\Downloads\\참고.mp4",
+      "unitySummary": {
+        "status": "battle51_restore_source_backed_luaunit_uieventlistener_and_eventsystem_raycaster_registration",
+        "isFinalRestoredBattleScreen": false,
+        "sourceScene": "Assets/Scenes/Battle50OriginalLuaIl2cppButtonHandlerTrace.unity",
+        "scene": "Assets/Scenes/Battle51LuaBridgeRaycasterRegistrationCandidate.unity",
+        "capture": "Assets/RestoreCaptures/battle_actor/Battle51LuaBridgeRaycasterRegistrationCandidate_1920x1080.png",
+        "sourceSceneOpened": true,
+        "sceneSaved": true,
+        "captureExists": true,
+        "reopenValid": true,
+        "b50InputRows": 5,
+        "rowCount": 5,
+        "bridgeRowCount": 9,
+        "bridgeAddedCount": 5,
+        "eventSystemCount": 1,
+        "inputModuleCount": 1,
+        "inputModuleSummary": "BATTLE43_EvidenceBackedEventSystem:UnityEngine.EventSystems.StandaloneInputModule:enabled=True:active=True",
+        "directGraphicTargetIncludedCount": 5,
+        "eventSystemTargetIncludedCount": 0,
+        "forcedEventSystemTargetIncludedCount": 5,
+        "currentRaycasterRegisteredCount": 5,
+        "handlerBoundCount": 0,
+        "raycasterManagerBefore": "typeFound=true | count=0 | ",
+        "raycasterManagerAfterBridge": "typeFound=true | count=0 | ",
+        "raycasterManagerAfterForcedRegistration": "typeFound=true | count=9 | BattleHudSpriteAtlasTextureRuntimeBindingClip05Root/CanvasLuaStateHUD_01_ui_normalbattle:UnityEngine.UI.GraphicRaycaster:enabled=True:active=True ; BattleHudSpriteAtlasTextureRuntimeBindingClip05Root/CanvasLuaStateHUD_01_ui_normalbattle/root_battle/BottomCenter/HeroListContainer/Battle29BoundHeroCard_3_1034/HeadBar/imgHPBG:UnityEngine.UI.GraphicRaycaster:enabled=True:active=True ; BattleHudSpriteAtlasTextureRuntimeBindingClip05Root/CanvasLuaStateHUD_02_ui_battle3dui/root_battle:UnityEngine.UI.GraphicRaycaster:enabled=True:active=True ; BattleHudSpriteAtlasTextureRuntimeBindingClip05Root/CanvasLuaStateHUD_01_ui_normalbattle/root_battle:UnityEngine.UI.GraphicRaycaster:enabled=True:active=True ; BattleHudSpriteAtlasTextureRuntimeBindingClip05Root/CanvasLuaStateHUD_01_ui_normalbattle/root_battle/BottomCenter/HeroListContainer/Battle29BoundHeroCard_1_1036/HeadBar/imgHPBG:UnityEngine.UI.GraphicRaycaster:enabled=True:active=True ; BattleHudSpriteAtlasTextureRuntimeBindingClip05Root/CanvasLuaStateHUD_02_ui_battle3dui/root_battle/UI_BattleBoxPage/pop_Content:UnityEngine.UI.GraphicRaycaster:enabled=True:active=True ; BattleHudSpriteAtlasTextureRuntimeBindingClip05Root/CanvasLuaStateHUD_02_ui_battle3dui/root_battle/UI_BattleBoxPage/pop_Content/box_item:UnityEngine.UI.GraphicRaycaster:enabled=True:active=True ; BattleHudSpriteAtlasTextureRuntimeBindingClip05Root/CanvasLuaStateHUD_02_ui_battle3dui:UnityEngine.UI.GraphicRaycaster:enabled=True:active=True ; BattleHudSpriteAtlasTextureRuntimeBindingClip05Root/CanvasLuaStateHUD_01_ui_normalbattle/root_battle/BottomCenter/HeroListContainer/Battle29BoundHeroCard_2_1002/HeadBar/imgHPBG:UnityEngine.UI.GraphicRaycaster:enabled=True:active=True",
+        "raycasterManagerReopenBeforeForced": "typeFound=true | count=0 | ",
+        "raycasterManagerReopenAfterForced": "typeFound=true | count=9 | BattleHudSpriteAtlasTextureRuntimeBindingClip05Root/CanvasLuaStateHUD_01_ui_normalbattle:UnityEngine.UI.GraphicRaycaster:enabled=True:active=True ; BattleHudSpriteAtlasTextureRuntimeBindingClip05Root/CanvasLuaStateHUD_01_ui_normalbattle/root_battle/BottomCenter/HeroListContainer/Battle29BoundHeroCard_3_1034/HeadBar/imgHPBG:UnityEngine.UI.GraphicRaycaster:enabled=True:active=True ; BattleHudSpriteAtlasTextureRuntimeBindingClip05Root/CanvasLuaStateHUD_02_ui_battle3dui/root_battle:UnityEngine.UI.GraphicRaycaster:enabled=True:active=True ; BattleHudSpriteAtlasTextureRuntimeBindingClip05Root/CanvasLuaStateHUD_01_ui_normalbattle/root_battle:UnityEngine.UI.GraphicRaycaster:enabled=True:active=True ; BattleHudSpriteAtlasTextureRuntimeBindingClip05Root/CanvasLuaStateHUD_01_ui_normalbattle/root_battle/BottomCenter/HeroListContainer/Battle29BoundHeroCard_1_1036/HeadBar/imgHPBG:UnityEngine.UI.GraphicRaycaster:enabled=True:active=True ; BattleHudSpriteAtlasTextureRuntimeBindingClip05Root/CanvasLuaStateHUD_02_ui_battle3dui/root_battle/UI_BattleBoxPage/pop_Content:UnityEngine.UI.GraphicRaycaster:enabled=True:active=True ; BattleHudSpriteAtlasTextureRuntimeBindingClip05Root/CanvasLuaStateHUD_02_ui_battle3dui/root_battle/UI_BattleBoxPage/pop_Content/box_item:UnityEngine.UI.GraphicRaycaster:enabled=True:active=True ; BattleHudSpriteAtlasTextureRuntimeBindingClip05Root/CanvasLuaStateHUD_02_ui_battle3dui:UnityEngine.UI.GraphicRaycaster:enabled=True:active=True ; BattleHudSpriteAtlasTextureRuntimeBindingClip05Root/CanvasLuaStateHUD_01_ui_normalbattle/root_battle/BottomCenter/HeroListContainer/Battle29BoundHeroCard_2_1002/HeadBar/imgHPBG:UnityEngine.UI.GraphicRaycaster:enabled=True:active=True",
+        "before": {
+          "canvas": 18,
+          "graphicRaycaster": 9,
+          "button": 14,
+          "missingScript": 1208,
+          "luaForm": 0,
+          "luaUnit": 0,
+          "luaComBinder": 0,
+          "uiEventListener": 0
+        },
+        "after": {
+          "canvas": 18,
+          "graphicRaycaster": 9,
+          "button": 14,
+          "missingScript": 1208,
+          "luaForm": 1,
+          "luaUnit": 2,
+          "luaComBinder": 1,
+          "uiEventListener": 1
+        },
+        "reopen": {
+          "canvas": 18,
+          "graphicRaycaster": 9,
+          "button": 14,
+          "missingScript": 1208,
+          "luaForm": 1,
+          "luaUnit": 2,
+          "luaComBinder": 1,
+          "uiEventListener": 1
+        },
+        "patchDecision": "candidate_bridge_patch_no_fake_handler",
+        "nextBlocker": "BATTLE_52_CONNECT_XLUA_RUNTIME_GAMEENTRY_MODULESINIT_PROCEDURE_NORMAL_BATTLE_OR_BLOCK",
+        "failReason": ""
+      },
+      "battle50Carryover": {
+        "visual_status": "original_lua_handlers_traced_but_missing_bridge_and_eventsystem_registration_block_patch",
+        "eventRootCauseCounts": {
+          "raycaster_manager_registration_missing_while_direct_graphicraycaster_hits": 5
+        },
+        "patchDecision": "blocked_no_patch"
+      },
+      "rowSummary": {
+        "rowCount": 5,
+        "directTargetIncludedCount": 5,
+        "eventTargetIncludedCount": 0,
+        "forcedEventTargetIncludedCount": 5,
+        "uiEventListenerPresentRows": 1,
+        "uiEventListenerDelegateRows": 0,
+        "restoredOnClickKnownRows": 0,
+        "bridgeRows": 9,
+        "bridgeAddedRows": 5,
+        "missingOnParentsTotal": 34,
+        "unityPatchDecision": "candidate_bridge_patch_no_fake_handler"
+      },
+      "buttonRows": [
+        {
+          "buttonName": "btnAuto",
+          "luaLifecycleExecuted": false,
+          "runtimeListenerCount": 0,
+          "persistentListenerCount": 0,
+          "uiEventListenerPresent": false,
+          "uiEventListenerHasDelegate": false,
+          "handlerPath": "UI_NormalBattle:86-110 ChangeToAuto(true)/ChangeToManual",
+          "eventSystemTargetIncluded": false,
+          "eventSystemTargetIncludedAfterForcedRaycasterRegistration": true,
+          "directGraphicRaycasterTargetIncluded": true,
+          "executeClickResult": "not_reexecuted_in_b51_no_fake_handler",
+          "gameplayHandlerExecution": "blocked_no_xlua_gameentry_modulesinit_runtime",
+          "missingComponentChain": "BattleHudSpriteAtlasTextureRuntimeBindingClip05Root/CanvasLuaStateHUD_01_ui_normalbattle/root_opra/btnAuto:missing=2:components=UnityEngine.RectTransform;UnityEngine.CanvasRenderer;<missing>;<missing>;UnityEngine.UI.Empty4Raycast;UnityEngine.UI.Button | BattleHudSpriteAtlasTextureRuntimeBindingClip05Root/CanvasLuaStateHUD_01_ui_normalbattle:missing=4:components=UnityEngine.RectTransform;UnityEngine.Canvas;<missing>;UnityEngine.CanvasGroup;<missing>;<missing>;UnityEngine.Animator;<missing>;UnityEngine.UI.GraphicRaycaster;YouYou.LuaForm",
+          "patchDecision": "candidate_bridge_patch_no_fake_handler"
+        },
+        {
+          "buttonName": "btnBuff",
+          "luaLifecycleExecuted": false,
+          "runtimeListenerCount": 0,
+          "persistentListenerCount": 0,
+          "uiEventListenerPresent": false,
+          "uiEventListenerHasDelegate": false,
+          "handlerPath": "UI_NormalBattle:180-184 ShowBuffView(f==false)",
+          "eventSystemTargetIncluded": false,
+          "eventSystemTargetIncludedAfterForcedRaycasterRegistration": true,
+          "directGraphicRaycasterTargetIncluded": true,
+          "executeClickResult": "not_reexecuted_in_b51_no_fake_handler",
+          "gameplayHandlerExecution": "blocked_no_xlua_gameentry_modulesinit_runtime",
+          "missingComponentChain": "BattleHudSpriteAtlasTextureRuntimeBindingClip05Root/CanvasLuaStateHUD_01_ui_normalbattle/root_opra/btnBuff:missing=2:components=UnityEngine.RectTransform;UnityEngine.CanvasRenderer;<missing>;<missing>;UnityEngine.UI.Empty4Raycast;UnityEngine.UI.Button | BattleHudSpriteAtlasTextureRuntimeBindingClip05Root/CanvasLuaStateHUD_01_ui_normalbattle:missing=4:components=UnityEngine.RectTransform;UnityEngine.Canvas;<missing>;UnityEngine.CanvasGroup;<missing>;<missing>;UnityEngine.Animator;<missing>;UnityEngine.UI.GraphicRaycaster;YouYou.LuaForm",
+          "patchDecision": "candidate_bridge_patch_no_fake_handler"
+        },
+        {
+          "buttonName": "btnTwoSpeed",
+          "luaLifecycleExecuted": false,
+          "runtimeListenerCount": 0,
+          "persistentListenerCount": 0,
+          "uiEventListenerPresent": false,
+          "uiEventListenerHasDelegate": false,
+          "handlerPath": "UI_NormalBattle:111-131 SetGameSpeed",
+          "eventSystemTargetIncluded": false,
+          "eventSystemTargetIncludedAfterForcedRaycasterRegistration": true,
+          "directGraphicRaycasterTargetIncluded": true,
+          "executeClickResult": "not_reexecuted_in_b51_no_fake_handler",
+          "gameplayHandlerExecution": "blocked_no_xlua_gameentry_modulesinit_runtime",
+          "missingComponentChain": "BattleHudSpriteAtlasTextureRuntimeBindingClip05Root/CanvasLuaStateHUD_01_ui_normalbattle/root_opra/btnTwoSpeed:missing=2:components=UnityEngine.RectTransform;UnityEngine.CanvasRenderer;<missing>;<missing>;UnityEngine.UI.Empty4Raycast;UnityEngine.UI.Button | BattleHudSpriteAtlasTextureRuntimeBindingClip05Root/CanvasLuaStateHUD_01_ui_normalbattle:missing=4:components=UnityEngine.RectTransform;UnityEngine.Canvas;<missing>;UnityEngine.CanvasGroup;<missing>;<missing>;UnityEngine.Animator;<missing>;UnityEngine.UI.GraphicRaycaster;YouYou.LuaForm",
+          "patchDecision": "candidate_bridge_patch_no_fake_handler"
+        },
+        {
+          "buttonName": "btnFastSkill",
+          "luaLifecycleExecuted": false,
+          "runtimeListenerCount": 0,
+          "persistentListenerCount": 0,
+          "uiEventListenerPresent": false,
+          "uiEventListenerHasDelegate": false,
+          "handlerPath": "UI_NormalBattle:132-146 ChangeGameFastSkill/CheckFastSkill",
+          "eventSystemTargetIncluded": false,
+          "eventSystemTargetIncludedAfterForcedRaycasterRegistration": true,
+          "directGraphicRaycasterTargetIncluded": true,
+          "executeClickResult": "not_reexecuted_in_b51_no_fake_handler",
+          "gameplayHandlerExecution": "blocked_no_xlua_gameentry_modulesinit_runtime",
+          "missingComponentChain": "BattleHudSpriteAtlasTextureRuntimeBindingClip05Root/CanvasLuaStateHUD_01_ui_normalbattle/root_opra/btnFastSkill:missing=2:components=UnityEngine.RectTransform;UnityEngine.CanvasRenderer;<missing>;<missing>;UnityEngine.UI.Empty4Raycast;UnityEngine.UI.Button | BattleHudSpriteAtlasTextureRuntimeBindingClip05Root/CanvasLuaStateHUD_01_ui_normalbattle:missing=4:components=UnityEngine.RectTransform;UnityEngine.Canvas;<missing>;UnityEngine.CanvasGroup;<missing>;<missing>;UnityEngine.Animator;<missing>;UnityEngine.UI.GraphicRaycaster;YouYou.LuaForm",
+          "patchDecision": "candidate_bridge_patch_no_fake_handler"
+        },
+        {
+          "buttonName": "btn_box",
+          "luaLifecycleExecuted": false,
+          "runtimeListenerCount": 0,
+          "persistentListenerCount": 0,
+          "uiEventListenerPresent": true,
+          "uiEventListenerHasDelegate": false,
+          "handlerPath": "UI_BattleBoxPage:162-178 UIEventListener.onClick showFlyAction/RecycleBoxInstance",
+          "eventSystemTargetIncluded": false,
+          "eventSystemTargetIncludedAfterForcedRaycasterRegistration": true,
+          "directGraphicRaycasterTargetIncluded": true,
+          "executeClickResult": "not_reexecuted_in_b51_no_fake_handler",
+          "gameplayHandlerExecution": "blocked_no_xlua_gameentry_modulesinit_runtime",
+          "missingComponentChain": "BattleHudSpriteAtlasTextureRuntimeBindingClip05Root/CanvasLuaStateHUD_02_ui_battle3dui/root_battle/UI_BattleBoxPage/pop_Content/box_item/btn_box:missing=3:components=UnityEngine.RectTransform;UnityEngine.CanvasRenderer;<missing>;<missing>;<missing>;BattleHudExtractedSpriteBindingMarker25;UnityEngine.UI.Image;UnityEngine.UI.Button;YouYou.UIEventListener | BattleHudSpriteAtlasTextureRuntimeBindingClip05Root/CanvasLuaStateHUD_02_ui_battle3dui/root_battle/UI_BattleBoxPage/pop_Content/box_item:missing=3:components=UnityEngine.RectTransform;<missing>;<missing>;UnityEngine.Canvas;<missing>;UnityEngine.UI.GraphicRaycaster;LuaComponentBinder.LuaComBinder | BattleHudSpriteAtlasTextureRuntimeBindingClip05Root/CanvasLuaStateHUD_02_ui_battle3dui/root_battle/UI_BattleBoxPage/pop_Content:missing=1:components=UnityEngine.RectTransform;UnityEngine.CanvasRenderer;UnityEngine.Canvas;<missing>;UnityEngine.UI.GraphicRaycaster | BattleHudSpriteAtlasTextureRuntimeBindingClip05Root/CanvasLuaStateHUD_02_ui_battle3dui/root_battle/UI_BattleBoxPage:missing=1:components=UnityEngine.RectTransform;UnityEngine.CanvasRenderer;<missing>;YouYou.LuaUnit | BattleHudSpriteAtlasTextureRuntimeBindingClip05Root/CanvasLuaStateHUD_02_ui_battle3dui:missing=2:components=UnityEngine.RectTransform;UnityEngine.Canvas;<missing>;<missing>;BattleHudSpriteAtlasSourceMarker25;UnityEngine.UI.GraphicRaycaster;YouYou.LuaUnit",
+          "patchDecision": "candidate_bridge_patch_no_fake_handler"
+        }
+      ],
+      "originalBridgeRows": [
+        {
+          "originalPath": "UI_Battle3DUI/root_battle/UI_BattleBoxPage/pop_Content/box_item/btn_box",
+          "role": "btn_box UIEventListener",
+          "componentPathId": -3631720909858918759,
+          "assembly": "Assembly-CSharp.dll",
+          "fullName": "YouYou.UIEventListener",
+          "scriptPathId": "-6333827617915679503",
+          "sourceBundle": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\extracted\\unity\\clean_unityfs_slices\\download\\ui\\uiprefabandres\\battle_ext_prefabs.assetbundle",
+          "evidence": "UnityPy original battle_ext_prefabs typetree m_Script PPtr"
+        },
+        {
+          "originalPath": "UI_Battle3DUI/root_battle/UI_BattleBoxPage",
+          "role": "box page LuaUnit",
+          "componentPathId": 8859445106375,
+          "assembly": "Assembly-CSharp.dll",
+          "fullName": "YouYou.LuaUnit",
+          "scriptPathId": "3319520142972745523",
+          "sourceBundle": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\extracted\\unity\\clean_unityfs_slices\\download\\ui\\uiprefabandres\\battle_ext_prefabs.assetbundle",
+          "evidence": "UnityPy original battle_ext_prefabs typetree m_Script PPtr"
+        },
+        {
+          "originalPath": "UI_Battle3DUI",
+          "role": "3D panel LuaUnit",
+          "componentPathId": -3608379411989219724,
+          "assembly": "Assembly-CSharp.dll",
+          "fullName": "YouYou.LuaUnit",
+          "scriptPathId": "3319520142972745523",
+          "sourceBundle": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\extracted\\unity\\clean_unityfs_slices\\download\\ui\\uiprefabandres\\battle_ext_prefabs.assetbundle",
+          "evidence": "UnityPy original battle_ext_prefabs typetree m_Script PPtr"
+        },
+        {
+          "originalPath": "UI_NormalBattle",
+          "role": "panel LuaForm",
+          "componentPathId": 5654624533764859525,
+          "assembly": "Assembly-CSharp.dll",
+          "fullName": "YouYou.LuaForm",
+          "scriptPathId": "8347263561838679580",
+          "sourceBundle": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\extracted\\unity\\clean_unityfs_slices\\download\\ui\\uiprefabandres\\battle_ext_prefabs.assetbundle",
+          "evidence": "UnityPy original battle_ext_prefabs typetree m_Script PPtr"
+        },
+        {
+          "originalPath": "UI_NormalBattle",
+          "role": "panel LuaForm",
+          "componentPathId": 2519560972731590389,
+          "assembly": "Assembly-CSharp.dll",
+          "fullName": "YouYou.GuideNode",
+          "scriptPathId": "2349074181781781832",
+          "sourceBundle": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\extracted\\unity\\clean_unityfs_slices\\download\\ui\\uiprefabandres\\battle_ext_prefabs.assetbundle",
+          "evidence": "UnityPy original battle_ext_prefabs typetree m_Script PPtr"
+        },
+        {
+          "originalPath": "UI_Battle3DUI/root_battle/UI_BattleBoxPage/pop_Content/box_item",
+          "role": "box item LuaComBinder",
+          "componentPathId": -1617529127854530484,
+          "assembly": "Assembly-CSharp.dll",
+          "fullName": "LuaComponentBinder.LuaComBinder",
+          "scriptPathId": "1924290018182821150",
+          "sourceBundle": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\extracted\\unity\\clean_unityfs_slices\\download\\ui\\uiprefabandres\\battle_ext_prefabs.assetbundle",
+          "evidence": "UnityPy original battle_ext_prefabs typetree m_Script PPtr"
+        }
+      ],
+      "patchDecision": "candidate_bridge_patch_no_fake_handler",
+      "nextBlocker": "BATTLE_52_CONNECT_XLUA_RUNTIME_GAMEENTRY_MODULESINIT_PROCEDURE_NORMAL_BATTLE_OR_BLOCK",
+      "raycasterRegistrationFinding": {
+        "editorBefore": "typeFound=true | count=0 | ",
+        "afterBridge": "typeFound=true | count=0 | ",
+        "afterForcedRegistration": "typeFound=true | count=9 | BattleHudSpriteAtlasTextureRuntimeBindingClip05Root/CanvasLuaStateHUD_01_ui_normalbattle:UnityEngine.UI.GraphicRaycaster:enabled=True:active=True ; BattleHudSpriteAtlasTextureRuntimeBindingClip05Root/CanvasLuaStateHUD_01_ui_normalbattle/root_battle/BottomCenter/HeroListContainer/Battle29BoundHeroCard_3_1034/HeadBar/imgHPBG:UnityEngine.UI.GraphicRaycaster:enabled=True:active=True ; BattleHudSpriteAtlasTextureRuntimeBindingClip05Root/CanvasLuaStateHUD_02_ui_battle3dui/root_battle:UnityEngine.UI.GraphicRaycaster:enabled=True:active=True ; BattleHudSpriteAtlasTextureRuntimeBindingClip05Root/CanvasLuaStateHUD_01_ui_normalbattle/root_battle:UnityEngine.UI.GraphicRaycaster:enabled=True:active=True ; BattleHudSpriteAtlasTextureRuntimeBindingClip05Root/CanvasLuaStateHUD_01_ui_normalbattle/root_battle/BottomCenter/HeroListContainer/Battle29BoundHeroCard_1_1036/HeadBar/imgHPBG:UnityEngine.UI.GraphicRaycaster:enabled=True:active=True ; BattleHudSpriteAtlasTextureRuntimeBindingClip05Root/CanvasLuaStateHUD_02_ui_battle3dui/root_battle/UI_BattleBoxPage/pop_Content:UnityEngine.UI.GraphicRaycaster:enabled=True:active=True ; BattleHudSpriteAtlasTextureRuntimeBindingClip05Root/CanvasLuaStateHUD_02_ui_battle3dui/root_battle/UI_BattleBoxPage/pop_Content/box_item:UnityEngine.UI.GraphicRaycaster:enabled=True:active=True ; BattleHudSpriteAtlasTextureRuntimeBindingClip05Root/CanvasLuaStateHUD_02_ui_battle3dui:UnityEngine.UI.GraphicRaycaster:enabled=True:active=True ; BattleHudSpriteAtlasTextureRuntimeBindingClip05Root/CanvasLuaStateHUD_01_ui_normalbattle/root_battle/BottomCenter/HeroListContainer/Battle29BoundHeroCard_2_1002/HeadBar/imgHPBG:UnityEngine.UI.GraphicRaycaster:enabled=True:active=True",
+        "reopenBeforeForced": "typeFound=true | count=0 | ",
+        "reopenAfterForced": "typeFound=true | count=9 | BattleHudSpriteAtlasTextureRuntimeBindingClip05Root/CanvasLuaStateHUD_01_ui_normalbattle:UnityEngine.UI.GraphicRaycaster:enabled=True:active=True ; BattleHudSpriteAtlasTextureRuntimeBindingClip05Root/CanvasLuaStateHUD_01_ui_normalbattle/root_battle/BottomCenter/HeroListContainer/Battle29BoundHeroCard_3_1034/HeadBar/imgHPBG:UnityEngine.UI.GraphicRaycaster:enabled=True:active=True ; BattleHudSpriteAtlasTextureRuntimeBindingClip05Root/CanvasLuaStateHUD_02_ui_battle3dui/root_battle:UnityEngine.UI.GraphicRaycaster:enabled=True:active=True ; BattleHudSpriteAtlasTextureRuntimeBindingClip05Root/CanvasLuaStateHUD_01_ui_normalbattle/root_battle:UnityEngine.UI.GraphicRaycaster:enabled=True:active=True ; BattleHudSpriteAtlasTextureRuntimeBindingClip05Root/CanvasLuaStateHUD_01_ui_normalbattle/root_battle/BottomCenter/HeroListContainer/Battle29BoundHeroCard_1_1036/HeadBar/imgHPBG:UnityEngine.UI.GraphicRaycaster:enabled=True:active=True ; BattleHudSpriteAtlasTextureRuntimeBindingClip05Root/CanvasLuaStateHUD_02_ui_battle3dui/root_battle/UI_BattleBoxPage/pop_Content:UnityEngine.UI.GraphicRaycaster:enabled=True:active=True ; BattleHudSpriteAtlasTextureRuntimeBindingClip05Root/CanvasLuaStateHUD_02_ui_battle3dui/root_battle/UI_BattleBoxPage/pop_Content/box_item:UnityEngine.UI.GraphicRaycaster:enabled=True:active=True ; BattleHudSpriteAtlasTextureRuntimeBindingClip05Root/CanvasLuaStateHUD_02_ui_battle3dui:UnityEngine.UI.GraphicRaycaster:enabled=True:active=True ; BattleHudSpriteAtlasTextureRuntimeBindingClip05Root/CanvasLuaStateHUD_01_ui_normalbattle/root_battle/BottomCenter/HeroListContainer/Battle29BoundHeroCard_2_1002/HeadBar/imgHPBG:UnityEngine.UI.GraphicRaycaster:enabled=True:active=True",
+        "interpretation": "EventSystem.RaycastAll is zero while RaycasterManager count is zero in editor batch context; direct GraphicRaycaster works. Reflective AddRaycaster forced-lifecycle probe makes target inclusion 5/5, so runtime/PlayMode OnEnable registration is the next input plumbing check rather than camera/rect/art.",
+        "playModeProbe": "not_entered_in_b51_batch; forced RaycasterManager registration used as lifecycle-equivalent probe"
+      },
+      "handlerBindingFinding": {
+        "knownUnityButtonListeners": 0,
+        "uiEventListenerDelegateRows": 0,
+        "luaLifecycleExecutedRows": 0,
+        "blocker": "The source-backed bridge components and LuaScriptPath/ComBinder fields are present, but no xLua/GameEntry/ModulesInit runtime executed UI_NormalBattle/UI_Battle3DUI/UI_BattleBoxPage OnInit/Open, so no original closures are bound."
+      },
+      "captureMetrics": {
+        "captureExists": true,
+        "width": 1920,
+        "height": 1080,
+        "nonBlackPixelRatio": 0.899287
+      },
+      "battle50ToBattle51CaptureSimilarity": {
+        "available": true,
+        "meanAbsDiff": 0.0,
+        "pixelCorrelation": 1.0
+      },
+      "localPlayablePayloadManifest": {
+        "available": true,
+        "path": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_LOCAL_PLAYABLE_PAYLOAD_MANIFEST.md",
+        "useCondition": "Use only after source-backed handler binding executes; local subset is debug/runtime validation only, not full payload or final restore evidence."
+      },
+      "rootCmdCount": 1,
+      "restoreToolsDirectCmdCount": 0,
+      "outputs": {
+        "report": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_51_RESTORE_SOURCE_BACKED_LUAUNIT_UIEVENTLISTENER_AND_EVENTSYSTEM_RAYCASTER_REGISTRATION_RESULT.md",
+        "resultJson": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_51_RESTORE_SOURCE_BACKED_LUAUNIT_UIEVENTLISTENER_AND_EVENTSYSTEM_RAYCASTER_REGISTRATION_RESULT.json",
+        "rowsCsv": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_battle_unity\\Assets\\RestoreData\\battle\\BATTLE_51_RESTORE_SOURCE_BACKED_LUAUNIT_UIEVENTLISTENER_AND_EVENTSYSTEM_RAYCASTER_REGISTRATION_COMPONENTS.csv",
+        "bridgeCsv": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_battle_unity\\Assets\\RestoreData\\battle\\BATTLE_51_RESTORE_SOURCE_BACKED_LUAUNIT_UIEVENTLISTENER_AND_EVENTSYSTEM_RAYCASTER_REGISTRATION_BRIDGE.csv",
+        "originalBridgeCsv": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_51_RESTORE_SOURCE_BACKED_LUAUNIT_UIEVENTLISTENER_AND_EVENTSYSTEM_RAYCASTER_REGISTRATION_ORIGINAL_BRIDGE_COMPONENTS.csv",
+        "buttonCsv": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_51_RESTORE_SOURCE_BACKED_LUAUNIT_UIEVENTLISTENER_AND_EVENTSYSTEM_RAYCASTER_REGISTRATION_BUTTONS.csv",
+        "scene": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_battle_unity\\Assets\\Scenes\\Battle51LuaBridgeRaycasterRegistrationCandidate.unity",
+        "capture": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_battle_unity\\Assets\\RestoreCaptures\\battle_actor\\Battle51LuaBridgeRaycasterRegistrationCandidate_1920x1080.png",
+        "contactSheet": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_51_RESTORE_SOURCE_BACKED_LUAUNIT_UIEVENTLISTENER_AND_EVENTSYSTEM_RAYCASTER_REGISTRATION_CONTACT_SHEET.jpg",
+        "unityLog": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_51_RESTORE_SOURCE_BACKED_LUAUNIT_UIEVENTLISTENER_AND_EVENTSYSTEM_RAYCASTER_REGISTRATION.log"
+      },
+      "notes": [
+        "BATTLE51 does not add fake transparent overlays, fake onClick closures, fake gameplay handlers, fake HUD/cards/icons, screenshot paste, or whole-atlas placement.",
+        "플레이.mp4 remains missing when referenceVideoAvailable is false; 참고.mp4 is auxiliary only."
+      ]
+    },
+    "b52": {
+      "verdict": "BATTLE52 traced original xLua/GameEntry/LuaManager/ModulesInit runtime chain and blocked without fake handler because the restored Unity project lacks executable xLua/GameEntry/LuaManager bootstrap.",
+      "visual_status": "blocked_missing_xlua_runtime_modulesinit_bootstrap_no_fake_handler_patch",
+      "isFinalRestoredBattleScreen": false,
+      "patchDecision": "blocked_no_patch",
+      "unityExitCode": 0,
+      "playmodeExitCode": -999,
+      "referenceVideoAvailable": false,
+      "referenceVideoPath": "C:\\Users\\godho\\Downloads\\플레이.mp4",
+      "auxiliaryReferenceVideoAvailable": true,
+      "auxiliaryReferenceVideoPath": "C:\\Users\\godho\\Downloads\\참고.mp4",
+      "xluaRuntimeAvailable": false,
+      "xluaLuaTableAvailable": false,
+      "xluaLuaFunctionAvailable": false,
+      "youyouGameEntryAvailable": false,
+      "youyouLuaManagerAvailable": false,
+      "actualXluaRuntimeAssetCount": 0,
+      "actualXluaRuntimeAssets": [],
+      "projectXluaProbeSelfMatches": "Assets/Editor/Battle52ConnectXluaRuntimeGameEntryModulesInitEditor.cs | Assets/Editor/Battle52ConnectXluaRuntimeGameEntryModulesInitEditor.cs.meta",
+      "sourceBackedBridgeStillPresent": {
+        "luaForm": 1,
+        "luaUnit": 2,
+        "luaComBinder": 1,
+        "uiEventListener": 1
+      },
+      "eventSystemTargetIncludedEditBefore": 0,
+      "directGraphicTargetIncludedEditBefore": 0,
+      "eventSystemTargetIncludedB51CarryoverBefore": 0,
+      "directGraphicTargetIncludedB51Carryover": 5,
+      "eventSystemTargetIncludedB51CarryoverForced": 5,
+      "eventSystemTargetIncludedAfterToggle": 0,
+      "eventSystemTargetIncludedForced": 0,
+      "eventSystemTargetIncludedPlayMode": 0,
+      "listenerBoundCount": 0,
+      "luaLifecycleExecutedCount": 0,
+      "raycasterManagerEditBefore": "typeFound=true | count=0 | ",
+      "raycasterManagerAfterToggle": "typeFound=true | count=0 | ",
+      "raycasterManagerAfterForced": "typeFound=true | count=9 | BattleHudSpriteAtlasTextureRuntimeBindingClip05Root/CanvasLuaStateHUD_01_ui_normalbattle:UnityEngine.UI.GraphicRaycaster:enabled=True:active=True ; BattleHudSpriteAtlasTextureRuntimeBindingClip05Root/CanvasLuaStateHUD_01_ui_normalbattle/root_battle/BottomCenter/HeroListContainer/Battle29BoundHeroCard_3_1034/HeadBar/imgHPBG:UnityEngine.UI.GraphicRaycaster:enabled=True:active=True ; BattleHudSpriteAtlasTextureRuntimeBindingClip05Root/CanvasLuaStateHUD_02_ui_battle3dui/root_battle:UnityEngine.UI.GraphicRaycaster:enabled=True:active=True ; BattleHudSpriteAtlasTextureRuntimeBindingClip05Root/CanvasLuaStateHUD_01_ui_normalbattle/root_battle:UnityEngine.UI.GraphicRaycaster:enabled=True:active=True ; BattleHudSpriteAtlasTextureRuntimeBindingClip05Root/CanvasLuaStateHUD_01_ui_normalbattle/root_battle/BottomCenter/HeroListContainer/Battle29BoundHeroCard_1_1036/HeadBar/imgHPBG:UnityEngine.UI.GraphicRaycaster:enabled=True:active=True ; BattleHudSpriteAtlasTextureRuntimeBindingClip05Root/CanvasLuaStateHUD_02_ui_battle3dui/root_battle/UI_BattleBoxPage/pop_Content:UnityEngine.UI.GraphicRaycaster:enabled=True:active=True ; BattleHudSpriteAtlasTextureRuntimeBindingClip05Root/CanvasLuaStateHUD_02_ui_battle3dui/root_battle/UI_BattleBoxPage/pop_Content/box_item:UnityEngine.UI.GraphicRaycaster:enabled=True:active=True ; BattleHudSpriteAtlasTextureRuntimeBindingClip05Root/CanvasLuaStateHUD_02_ui_battle3dui:UnityEngine.UI.GraphicRaycaster:enabled=True:active=True ; BattleHudSpriteAtlasTextureRuntimeBindingClip05Root/CanvasLuaStateHUD_01_ui_normalbattle/root_battle/BottomCenter/HeroListContainer/Battle29BoundHeroCard_2_1002/HeadBar/imgHPBG:UnityEngine.UI.GraphicRaycaster:enabled=True:active=True",
+      "raycasterManagerPlayMode": "",
+      "playModeProbe": {
+        "available": false,
+        "failReason": "deferred_by_checkpoint_not_blocking_result",
+        "sceneOpened": false
+      },
+      "buttonRows": [
+        {
+          "buttonName": "btnAuto",
+          "luaFile": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_50_DECODED_MAINCITY_LUA\\874003978109174219_UI_NormalBattle.lua",
+          "luaLines": "86-110",
+          "handlerPath": "UI_NormalBattle.OnInit btnAuto closure -> ModulesInit.ProcedureNormalBattle.ChangeToAuto(true)/ChangeToManual",
+          "luaLifecycleExecuted": false,
+          "listenerBound": false,
+          "eventSystemTargetIncludedEditBefore": false,
+          "eventSystemTargetIncludedPlayMode": false,
+          "eventSystemTargetIncludedForced": true,
+          "directGraphicTargetIncluded": true,
+          "missingGlobalCsTypeMethodObject": "XLua.LuaEnv; GameEntry.Lua/LuaManager.LoadUIScript; ModulesInit.ProcedureNormalBattle; GameFunction/GameFunctionType; ModulesInit.PhotoArtistMgr; LuaUtils",
+          "handlerExecution": "blocked_missing_xlua_runtime_and_modulesinit_bootstrap",
+          "patchDecision": "blocked_no_patch_no_fake_handler"
+        },
+        {
+          "buttonName": "btnBuff",
+          "luaFile": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_50_DECODED_MAINCITY_LUA\\874003978109174219_UI_NormalBattle.lua",
+          "luaLines": "180-184, 1446-1452",
+          "handlerPath": "UI_NormalBattle.OnInit btnBuff closure -> ShowBuffView(f==false)",
+          "luaLifecycleExecuted": false,
+          "listenerBound": false,
+          "eventSystemTargetIncludedEditBefore": false,
+          "eventSystemTargetIncludedPlayMode": false,
+          "eventSystemTargetIncludedForced": true,
+          "directGraphicTargetIncluded": true,
+          "missingGlobalCsTypeMethodObject": "XLua.LuaEnv; GameEntry.Lua/LuaManager.LoadUIScript; LuaUtils; ModulesInit.ProcedureNormalBattle:GetAllBuffIconShowMap for opened buff view",
+          "handlerExecution": "blocked_missing_xlua_runtime_and_modulesinit_bootstrap",
+          "patchDecision": "blocked_no_patch_no_fake_handler"
+        },
+        {
+          "buttonName": "btnTwoSpeed",
+          "luaFile": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_50_DECODED_MAINCITY_LUA\\874003978109174219_UI_NormalBattle.lua",
+          "luaLines": "111-131; ProcedureNormalBattle 933-947",
+          "handlerPath": "UI_NormalBattle.OnInit btnTwoSpeed closure -> ModulesInit.ProcedureNormalBattle.SetGameSpeed",
+          "luaLifecycleExecuted": false,
+          "listenerBound": false,
+          "eventSystemTargetIncludedEditBefore": false,
+          "eventSystemTargetIncludedPlayMode": false,
+          "eventSystemTargetIncludedForced": true,
+          "directGraphicTargetIncluded": true,
+          "missingGlobalCsTypeMethodObject": "XLua.LuaEnv; GameEntry.Lua/LuaManager.LoadUIScript; ModulesInit.ProcedureNormalBattle; SaveMgr; PlayerMgr; GameTools; SetTimeScaleType; LuaUtils",
+          "handlerExecution": "blocked_missing_xlua_runtime_and_modulesinit_bootstrap",
+          "patchDecision": "blocked_no_patch_no_fake_handler"
+        },
+        {
+          "buttonName": "btnFastSkill",
+          "luaFile": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_50_DECODED_MAINCITY_LUA\\874003978109174219_UI_NormalBattle.lua",
+          "luaLines": "132-146, 690-699; ProcedureNormalBattle 964-974",
+          "handlerPath": "UI_NormalBattle.OnInit btnFastSkill closure -> ChangeGameFastSkill + CheckFastSkill",
+          "luaLifecycleExecuted": false,
+          "listenerBound": false,
+          "eventSystemTargetIncludedEditBefore": false,
+          "eventSystemTargetIncludedPlayMode": false,
+          "eventSystemTargetIncludedForced": true,
+          "directGraphicTargetIncluded": true,
+          "missingGlobalCsTypeMethodObject": "XLua.LuaEnv; GameEntry.Lua/LuaManager.LoadUIScript; ModulesInit.ProcedureNormalBattle; SaveMgr; PlayerMgr; GameFunction/GameFunctionType; LuaUtils",
+          "handlerExecution": "blocked_missing_xlua_runtime_and_modulesinit_bootstrap",
+          "patchDecision": "blocked_no_patch_no_fake_handler"
+        },
+        {
+          "buttonName": "btn_box",
+          "luaFile": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_50_DECODED_MAINCITY_LUA\\8374052518232552317_UI_BattleBoxPage.lua",
+          "luaLines": "149-178; UI_Battle3DUI 3-20",
+          "handlerPath": "UI_BattleBoxPage.GenBox -> CS.YouYou.UIEventListener.onClick reward animation",
+          "luaLifecycleExecuted": false,
+          "listenerBound": false,
+          "eventSystemTargetIncludedEditBefore": false,
+          "eventSystemTargetIncludedPlayMode": false,
+          "eventSystemTargetIncludedForced": true,
+          "directGraphicTargetIncluded": true,
+          "missingGlobalCsTypeMethodObject": "XLua.LuaEnv; UI_Battle3DUI LuaUnit Init/Open; UI_BattleBoxPage LuaUnit Open; LuaComponentBinder.GetComponents; ModulesInit.ProcedureNormalBattle.dropBoxData/GetWaveData; UIUtil; DOTween; GameEntry.CameraCtrl",
+          "handlerExecution": "blocked_missing_xlua_runtime_and_modulesinit_bootstrap",
+          "patchDecision": "blocked_no_patch_no_fake_handler"
+        }
+      ],
+      "runtimeDependencyRows": 17,
+      "runtimeDependencySchemaCsv": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_52_CONNECT_XLUA_RUNTIME_GAMEENTRY_MODULESINIT_PROCEDURE_NORMAL_BATTLE_OR_BLOCK_RUNTIME_DEPENDENCY_SCHEMA.csv",
+      "runtimeDependencySchemaJson": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_52_CONNECT_XLUA_RUNTIME_GAMEENTRY_MODULESINIT_PROCEDURE_NORMAL_BATTLE_OR_BLOCK_RUNTIME_DEPENDENCY_SCHEMA.json",
+      "typeRowsCsv": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_battle_unity\\Assets\\RestoreData\\battle\\BATTLE_52_CONNECT_XLUA_RUNTIME_GAMEENTRY_MODULESINIT_PROCEDURE_NORMAL_BATTLE_OR_BLOCK_TYPES.csv",
+      "editRowsCsv": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_battle_unity\\Assets\\RestoreData\\battle\\BATTLE_52_CONNECT_XLUA_RUNTIME_GAMEENTRY_MODULESINIT_PROCEDURE_NORMAL_BATTLE_OR_BLOCK_EDITMODE.csv",
+      "playRowsCsv": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_battle_unity\\Assets\\RestoreData\\battle\\BATTLE_52_CONNECT_XLUA_RUNTIME_GAMEENTRY_MODULESINIT_PROCEDURE_NORMAL_BATTLE_OR_BLOCK_PLAYMODE.csv",
+      "localPlayablePayloadManifest": {
+        "available": true,
+        "path": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_LOCAL_PLAYABLE_PAYLOAD_MANIFEST.md",
+        "useCondition": "Use only after source-backed handler binding executes; local subset is debug/runtime validation only, not full payload or final restore evidence."
+      },
+      "captureMetrics": {
+        "captureExists": true,
+        "width": 1920,
+        "height": 1080,
+        "nonBlackPixelRatio": 0.899287
+      },
+      "rootCmdCount": 1,
+      "restoreToolsDirectCmdCount": 0,
+      "outputs": {
+        "report": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_52_CONNECT_XLUA_RUNTIME_GAMEENTRY_MODULESINIT_PROCEDURE_NORMAL_BATTLE_OR_BLOCK_RESULT.md",
+        "json": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_52_CONNECT_XLUA_RUNTIME_GAMEENTRY_MODULESINIT_PROCEDURE_NORMAL_BATTLE_OR_BLOCK_RESULT.json",
+        "buttonsCsv": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_52_CONNECT_XLUA_RUNTIME_GAMEENTRY_MODULESINIT_PROCEDURE_NORMAL_BATTLE_OR_BLOCK_BUTTONS.csv",
+        "runtimeDependencySchemaCsv": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_52_CONNECT_XLUA_RUNTIME_GAMEENTRY_MODULESINIT_PROCEDURE_NORMAL_BATTLE_OR_BLOCK_RUNTIME_DEPENDENCY_SCHEMA.csv",
+        "runtimeDependencySchemaJson": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_52_CONNECT_XLUA_RUNTIME_GAMEENTRY_MODULESINIT_PROCEDURE_NORMAL_BATTLE_OR_BLOCK_RUNTIME_DEPENDENCY_SCHEMA.json",
+        "contactSheet": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_52_CONNECT_XLUA_RUNTIME_GAMEENTRY_MODULESINIT_PROCEDURE_NORMAL_BATTLE_OR_BLOCK_CONTACT_SHEET.jpg",
+        "unityLog": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_52_CONNECT_XLUA_RUNTIME_GAMEENTRY_MODULESINIT_PROCEDURE_NORMAL_BATTLE_OR_BLOCK.log"
+      },
+      "nextBlocker": "BATTLE_53_RESTORE_OR_IMPORT_SOURCE_BACKED_XLUA_RUNTIME_AND_MODULESINIT_BOOTSTRAP_OR_ACCEPT_BLOCK",
+      "notes": [
+        "No fake transparent overlay, fake onClick closure, fake gameplay handler, fake art, screenshot paste, or coordinate-only success was added.",
+        "BATTLE_LOCAL_PLAYABLE_PAYLOAD_MANIFEST remains validation context only after real source-backed handler binding.",
+        "플레이.mp4 is missing when referenceVideoAvailable is false; 참고.mp4 is auxiliary only."
+      ]
+    },
+    "b53": {
+      "generatedAt": "2026-06-26T02:38:40",
+      "verdict": "accepted_block_no_source_backed_xlua_runtime_available_locally",
+      "visual_status": "xlua_runtime_inventory_complete_no_fake_handler_patch",
+      "isFinalRestoredBattleScreen": false,
+      "patchDecision": "blocked_no_patch",
+      "sourceBackedImportableEditorRuntimeCount": 0,
+      "classificationCounts": {
+        "native_player_runtime_not_editor_importable": 1,
+        "non_source_backed_external_package_option_requires_user_approval": 1,
+        "not_found": 1915,
+        "source_backed_type_signature_only_not_executable": 9138
+      },
+      "b52Carryover": {
+        "sourceBackedBridgeStillPresent": {
+          "luaForm": 1,
+          "luaUnit": 2,
+          "luaComBinder": 1,
+          "uiEventListener": 1
+        },
+        "listenerBoundCount": 0,
+        "luaLifecycleExecutedCount": 0,
+        "directGraphicTargetIncludedB51Carryover": 5,
+        "eventSystemTargetIncludedB51CarryoverForced": 5,
+        "correctedCarryover": "BATTLE52 result JSON now has bridge counts; editmode JSON remains corroborating evidence."
+      },
+      "buttonRowsCarriedFromB52": [
+        {
+          "buttonName": "btnAuto",
+          "luaFile": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_50_DECODED_MAINCITY_LUA\\874003978109174219_UI_NormalBattle.lua",
+          "luaLines": "86-110",
+          "handlerPath": "UI_NormalBattle.OnInit btnAuto closure -> ModulesInit.ProcedureNormalBattle.ChangeToAuto(true)/ChangeToManual",
+          "luaLifecycleExecuted": "False",
+          "listenerBound": "False",
+          "eventSystemTargetIncludedEditBefore": "False",
+          "eventSystemTargetIncludedPlayMode": "False",
+          "eventSystemTargetIncludedForced": "True",
+          "directGraphicTargetIncluded": "True",
+          "missingGlobalCsTypeMethodObject": "XLua.LuaEnv; GameEntry.Lua/LuaManager.LoadUIScript; ModulesInit.ProcedureNormalBattle; GameFunction/GameFunctionType; ModulesInit.PhotoArtistMgr; LuaUtils",
+          "handlerExecution": "blocked_missing_xlua_runtime_and_modulesinit_bootstrap",
+          "patchDecision": "blocked_no_patch_no_fake_handler"
+        },
+        {
+          "buttonName": "btnBuff",
+          "luaFile": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_50_DECODED_MAINCITY_LUA\\874003978109174219_UI_NormalBattle.lua",
+          "luaLines": "180-184, 1446-1452",
+          "handlerPath": "UI_NormalBattle.OnInit btnBuff closure -> ShowBuffView(f==false)",
+          "luaLifecycleExecuted": "False",
+          "listenerBound": "False",
+          "eventSystemTargetIncludedEditBefore": "False",
+          "eventSystemTargetIncludedPlayMode": "False",
+          "eventSystemTargetIncludedForced": "True",
+          "directGraphicTargetIncluded": "True",
+          "missingGlobalCsTypeMethodObject": "XLua.LuaEnv; GameEntry.Lua/LuaManager.LoadUIScript; LuaUtils; ModulesInit.ProcedureNormalBattle:GetAllBuffIconShowMap for opened buff view",
+          "handlerExecution": "blocked_missing_xlua_runtime_and_modulesinit_bootstrap",
+          "patchDecision": "blocked_no_patch_no_fake_handler"
+        },
+        {
+          "buttonName": "btnTwoSpeed",
+          "luaFile": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_50_DECODED_MAINCITY_LUA\\874003978109174219_UI_NormalBattle.lua",
+          "luaLines": "111-131; ProcedureNormalBattle 933-947",
+          "handlerPath": "UI_NormalBattle.OnInit btnTwoSpeed closure -> ModulesInit.ProcedureNormalBattle.SetGameSpeed",
+          "luaLifecycleExecuted": "False",
+          "listenerBound": "False",
+          "eventSystemTargetIncludedEditBefore": "False",
+          "eventSystemTargetIncludedPlayMode": "False",
+          "eventSystemTargetIncludedForced": "True",
+          "directGraphicTargetIncluded": "True",
+          "missingGlobalCsTypeMethodObject": "XLua.LuaEnv; GameEntry.Lua/LuaManager.LoadUIScript; ModulesInit.ProcedureNormalBattle; SaveMgr; PlayerMgr; GameTools; SetTimeScaleType; LuaUtils",
+          "handlerExecution": "blocked_missing_xlua_runtime_and_modulesinit_bootstrap",
+          "patchDecision": "blocked_no_patch_no_fake_handler"
+        },
+        {
+          "buttonName": "btnFastSkill",
+          "luaFile": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_50_DECODED_MAINCITY_LUA\\874003978109174219_UI_NormalBattle.lua",
+          "luaLines": "132-146, 690-699; ProcedureNormalBattle 964-974",
+          "handlerPath": "UI_NormalBattle.OnInit btnFastSkill closure -> ChangeGameFastSkill + CheckFastSkill",
+          "luaLifecycleExecuted": "False",
+          "listenerBound": "False",
+          "eventSystemTargetIncludedEditBefore": "False",
+          "eventSystemTargetIncludedPlayMode": "False",
+          "eventSystemTargetIncludedForced": "True",
+          "directGraphicTargetIncluded": "True",
+          "missingGlobalCsTypeMethodObject": "XLua.LuaEnv; GameEntry.Lua/LuaManager.LoadUIScript; ModulesInit.ProcedureNormalBattle; SaveMgr; PlayerMgr; GameFunction/GameFunctionType; LuaUtils",
+          "handlerExecution": "blocked_missing_xlua_runtime_and_modulesinit_bootstrap",
+          "patchDecision": "blocked_no_patch_no_fake_handler"
+        },
+        {
+          "buttonName": "btn_box",
+          "luaFile": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_50_DECODED_MAINCITY_LUA\\8374052518232552317_UI_BattleBoxPage.lua",
+          "luaLines": "149-178; UI_Battle3DUI 3-20",
+          "handlerPath": "UI_BattleBoxPage.GenBox -> CS.YouYou.UIEventListener.onClick reward animation",
+          "luaLifecycleExecuted": "False",
+          "listenerBound": "False",
+          "eventSystemTargetIncludedEditBefore": "False",
+          "eventSystemTargetIncludedPlayMode": "False",
+          "eventSystemTargetIncludedForced": "True",
+          "directGraphicTargetIncluded": "True",
+          "missingGlobalCsTypeMethodObject": "XLua.LuaEnv; UI_Battle3DUI LuaUnit Init/Open; UI_BattleBoxPage LuaUnit Open; LuaComponentBinder.GetComponents; ModulesInit.ProcedureNormalBattle.dropBoxData/GetWaveData; UIUtil; DOTween; GameEntry.CameraCtrl",
+          "handlerExecution": "blocked_missing_xlua_runtime_and_modulesinit_bootstrap",
+          "patchDecision": "blocked_no_patch_no_fake_handler"
+        }
+      ],
+      "outputs": {
+        "report": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_53_RESTORE_OR_IMPORT_SOURCE_BACKED_XLUA_RUNTIME_AND_MODULESINIT_BOOTSTRAP_OR_ACCEPT_BLOCK_RESULT.md",
+        "json": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_53_RESTORE_OR_IMPORT_SOURCE_BACKED_XLUA_RUNTIME_AND_MODULESINIT_BOOTSTRAP_OR_ACCEPT_BLOCK_RESULT.json",
+        "importCandidatesCsv": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_53_RESTORE_OR_IMPORT_SOURCE_BACKED_XLUA_RUNTIME_AND_MODULESINIT_BOOTSTRAP_OR_ACCEPT_BLOCK_IMPORT_CANDIDATES.csv",
+        "bootstrapDependencySchemaCsv": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_53_RESTORE_OR_IMPORT_SOURCE_BACKED_XLUA_RUNTIME_AND_MODULESINIT_BOOTSTRAP_OR_ACCEPT_BLOCK_BOOTSTRAP_DEPENDENCY_SCHEMA.csv",
+        "bootstrapDependencySchemaJson": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_53_RESTORE_OR_IMPORT_SOURCE_BACKED_XLUA_RUNTIME_AND_MODULESINIT_BOOTSTRAP_OR_ACCEPT_BLOCK_BOOTSTRAP_DEPENDENCY_SCHEMA.json"
+      },
+      "nextBlocker": "USER_DECISION_OR_SOURCE_RUNTIME_REQUIRED_FOR_XLUA_GAMEENTRY_BOOTSTRAP",
+      "allowedNextOptions": [
+        "Provide original xLua/GameEntry/LuaManager source or editor-compatible binaries from the same game/client.",
+        "Explicitly approve a non-source-backed external xLua package experiment.",
+        "Keep battle work blocked at source-backed runtime absence and continue non-runtime evidence tasks."
+      ],
+      "notes": [
+        "No fake onClick, fake UIEventListener delegate, fake gameplay handler, overlay, screenshot paste, or external package import was added.",
+        "DummyDll/IL2CPP dump artifacts are source-backed signatures, not executable runtime.",
+        "global-metadata.dat/player native files are source-backed runtime evidence, not editor-importable managed xLua runtime."
+      ],
+      "rootCmdCount": 1,
+      "rootCmdFiles": [
+        "C:\\Users\\godho\\Downloads\\girlswar\\00_COMMAND_CENTER.cmd"
+      ],
+      "restoreToolsDirectCmdCount": 0,
+      "restoreToolsDirectCmdFiles": []
+    }
+  },
+  "outputs": {
+    "report": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_54_VALIDATE_ROUTE_ACTIVE_SIBLING_MASK_TMP_SCALE_AUTOSIZE_ACTOR_PAYLOAD_RESULT.md",
+    "json": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_54_VALIDATE_ROUTE_ACTIVE_SIBLING_MASK_TMP_SCALE_AUTOSIZE_ACTOR_PAYLOAD_RESULT.json",
+    "routesCsv": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_54_VALIDATE_ROUTE_ACTIVE_SIBLING_MASK_TMP_SCALE_AUTOSIZE_ACTOR_PAYLOAD_ROUTES.csv",
+    "actorsCsv": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_54_VALIDATE_ROUTE_ACTIVE_SIBLING_MASK_TMP_SCALE_AUTOSIZE_ACTOR_PAYLOAD_ACTORS.csv",
+    "masksCsv": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_54_VALIDATE_ROUTE_ACTIVE_SIBLING_MASK_TMP_SCALE_AUTOSIZE_ACTOR_PAYLOAD_MASKS.csv",
+    "textCsv": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_54_VALIDATE_ROUTE_ACTIVE_SIBLING_MASK_TMP_SCALE_AUTOSIZE_ACTOR_PAYLOAD_TMP_TEXT.csv",
+    "cardsCsv": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_54_VALIDATE_ROUTE_ACTIVE_SIBLING_MASK_TMP_SCALE_AUTOSIZE_ACTOR_PAYLOAD_HERO_CARDS.csv",
+    "buttonsCsv": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_54_VALIDATE_ROUTE_ACTIVE_SIBLING_MASK_TMP_SCALE_AUTOSIZE_ACTOR_PAYLOAD_BUTTON_ROUTES.csv"
+  },
+  "commandPolicy": {
+    "rootCmdCount": 1,
+    "rootCmdFiles": [
+      "C:\\Users\\godho\\Downloads\\girlswar\\00_COMMAND_CENTER.cmd"
+    ],
+    "restoreToolsDirectCmdCount": 0,
+    "restoreToolsDirectCmdFiles": []
+  }
+}

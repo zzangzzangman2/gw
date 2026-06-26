@@ -1,0 +1,54 @@
+{
+  "generatedAt": "2026-06-26T05:09:20",
+  "restoredClaim": false,
+  "scenePatchApplied": false,
+  "candidatePatchApplied": false,
+  "ui144Promoted": false,
+  "staticParentEvidenceFound": true,
+  "staticMaskStencilEvidenceFound": true,
+  "staticDepthBehaviorReconciled": false,
+  "staticPatchPossibleWithoutRuntime": false,
+  "requiresRuntimeDump": true,
+  "requiresRuntimeSnapshot": true,
+  "requiredNextEvidence": [
+    "Runtime-equivalent UI_Dock/UI_MainPage form parent/group object path, CurrCanvas.sortingOrder, Depth, OnDepthChanged cascade, and mask/stencil state.",
+    "UI130-compatible activity/account/chat/currency snapshot for dynamic home state."
+  ],
+  "outputs": {
+    "parentOpenStackCsv": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\maininterface\\MAININTERFACE_145_uidock_parent_openstack_source_evidence_matrix.csv",
+    "maskStencilCsv": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\maininterface\\MAININTERFACE_145_uidock_mask_stencil_canvasgroup_component_chain_matrix.csv",
+    "depthReconciliationCsv": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\maininterface\\MAININTERFACE_145_disableuilayer_root_canvas_depth_reconciliation_matrix.csv",
+    "dynamicBlockerCsv": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\maininterface\\MAININTERFACE_145_dynamic_home_state_static_vs_runtime_blocker_matrix.csv",
+    "nextActionCsv": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\maininterface\\MAININTERFACE_145_next_action_decision_matrix.csv",
+    "md": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\maininterface\\MAININTERFACE_145_STATIC_UIDOCK_OPENSTACK_PARENT_MASK_DEPTH_TRACE_NO_PATCH_RESULT.md",
+    "json": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\maininterface\\MAININTERFACE_145_STATIC_UIDOCK_OPENSTACK_PARENT_MASK_DEPTH_TRACE_NO_PATCH_RESULT.json"
+  },
+  "rowCounts": {
+    "parentOpenStack": 9,
+    "maskStencilCanvasGroup": 704,
+    "realMaskOrRectMask2D": 0,
+    "depth": 4,
+    "dynamic": 6,
+    "next": 5
+  },
+  "changedFiles": [
+    "C:\\Users\\godho\\Downloads\\girlswar\\reports\\maininterface\\MAININTERFACE_145_uidock_parent_openstack_source_evidence_matrix.csv",
+    "C:\\Users\\godho\\Downloads\\girlswar\\reports\\maininterface\\MAININTERFACE_145_uidock_mask_stencil_canvasgroup_component_chain_matrix.csv",
+    "C:\\Users\\godho\\Downloads\\girlswar\\reports\\maininterface\\MAININTERFACE_145_disableuilayer_root_canvas_depth_reconciliation_matrix.csv",
+    "C:\\Users\\godho\\Downloads\\girlswar\\reports\\maininterface\\MAININTERFACE_145_dynamic_home_state_static_vs_runtime_blocker_matrix.csv",
+    "C:\\Users\\godho\\Downloads\\girlswar\\reports\\maininterface\\MAININTERFACE_145_next_action_decision_matrix.csv",
+    "C:\\Users\\godho\\Downloads\\girlswar\\reports\\maininterface\\MAININTERFACE_145_STATIC_UIDOCK_OPENSTACK_PARENT_MASK_DEPTH_TRACE_NO_PATCH_RESULT.md",
+    "C:\\Users\\godho\\Downloads\\girlswar\\reports\\maininterface\\MAININTERFACE_145_STATIC_UIDOCK_OPENSTACK_PARENT_MASK_DEPTH_TRACE_NO_PATCH_RESULT.json",
+    "C:\\Users\\godho\\Downloads\\girlswar\\_restore_tools\\scripts\\maininterface145_static_uidock_openstack_parent_mask_depth_trace.py"
+  ],
+  "guardrailsTouched": [],
+  "commandPolicy": {
+    "rootCmdCount": 1,
+    "rootCmdFiles": [
+      "00_COMMAND_CENTER.cmd"
+    ],
+    "restoreToolsDirectCmdCount": 0,
+    "restoreToolsDirectCmdFiles": [],
+    "policySatisfied": true
+  }
+}

@@ -1,0 +1,3599 @@
+{
+  "name": "CHARACTER_1036_CDN_ACQUISITION_TRACE",
+  "generatedBy": "_restore_tools/scripts/build_character_1036_cdn_acquisition_trace.py",
+  "classification": "not_fetchable_from_local_evidence",
+  "target": {
+    "bundle": "download/roleprefabsandres/battleprefabandres/1036.assetbundle",
+    "md5": "570c8238257cd8ca00a0856427d8c0ae",
+    "size": 1666251,
+    "isEncrypt": true,
+    "resOffset": 224,
+    "cdnVersionFileEvidence": [
+      {
+        "category": "index_row",
+        "classification": "exact_target_index_evidence",
+        "source": "cdn_versionfile",
+        "path": "girlswar_merged_extracted/indexes/versionfile_CDNVersionFile_bytes.csv",
+        "evidence": "{\"index\": \"1158\", \"AssetBundleName\": \"download/roleprefabsandres/battleprefabandres/1036.assetbundle\", \"MD5\": \"570c8238257cd8ca00a0856427d8c0ae\", \"Size\": \"1666251\", \"IsFirstData\": \"False\", \"IsEncrypt\": \"True\", \"Priority\": \"3\", \"Category\": \"0\", \"Version\": \"1.0.578\", \"ResOffset\": \"224\"}",
+        "size": "1666251",
+        "md5": "570c8238257cd8ca00a0856427d8c0ae",
+        "isExactTarget": true
+      }
+    ]
+  },
+  "localAcquisitionTrace": {
+    "exactLocalFileExists": false,
+    "rows": [
+      {
+        "category": "index_row",
+        "classification": "exact_target_index_evidence",
+        "source": "cdn_versionfile",
+        "path": "girlswar_merged_extracted/indexes/versionfile_CDNVersionFile_bytes.csv",
+        "evidence": "{\"index\": \"1158\", \"AssetBundleName\": \"download/roleprefabsandres/battleprefabandres/1036.assetbundle\", \"MD5\": \"570c8238257cd8ca00a0856427d8c0ae\", \"Size\": \"1666251\", \"IsFirstData\": \"False\", \"IsEncrypt\": \"True\", \"Priority\": \"3\", \"Category\": \"0\", \"Version\": \"1.0.578\", \"ResOffset\": \"224\"}",
+        "size": "1666251",
+        "md5": "570c8238257cd8ca00a0856427d8c0ae",
+        "isExactTarget": true
+      },
+      {
+        "category": "local_exact_path",
+        "classification": "local_exact_path_check",
+        "source": "filesystem",
+        "path": "girlswar_merged_extracted/merged_content/AssetBundles/download/roleprefabsandres/battleprefabandres/1036.assetbundle",
+        "size": "",
+        "md5": "",
+        "isExactTarget": false,
+        "note": "missing"
+      },
+      {
+        "category": "local_exact_path",
+        "classification": "local_exact_path_check",
+        "source": "filesystem",
+        "path": "girlswar_merged_extracted/restore_overlay/Android/data/com.girlwars.kr/files/download/roleprefabsandres/battleprefabandres/1036.assetbundle",
+        "size": "",
+        "md5": "",
+        "isExactTarget": false,
+        "note": "missing"
+      },
+      {
+        "category": "local_exact_path",
+        "classification": "local_exact_path_check",
+        "source": "filesystem",
+        "path": "girlswar_merged_extracted/restore_overlay/Android/data/com.girlwars.kr/files/build/download/roleprefabsandres/battleprefabandres/1036.assetbundle",
+        "size": "",
+        "md5": "",
+        "isExactTarget": false,
+        "note": "missing"
+      },
+      {
+        "category": "local_exact_path",
+        "classification": "local_exact_path_check",
+        "source": "filesystem",
+        "path": "girlswar_merged_extracted/extracted/unity/clean_unityfs_slices/download/roleprefabsandres/battleprefabandres/1036.assetbundle",
+        "size": "",
+        "md5": "",
+        "isExactTarget": false,
+        "note": "missing"
+      },
+      {
+        "category": "local_exact_path",
+        "classification": "local_exact_path_check",
+        "source": "filesystem",
+        "path": "girlswar_merged_extracted/extracted/unity/bundles/download/roleprefabsandres/battleprefabandres/1036.assetbundle",
+        "size": "",
+        "md5": "",
+        "isExactTarget": false,
+        "note": "missing"
+      },
+      {
+        "category": "local_exact_path",
+        "classification": "local_exact_path_check",
+        "source": "filesystem",
+        "path": "girlswar_merged_extracted/split_apks/download/roleprefabsandres/battleprefabandres/1036.assetbundle",
+        "size": "",
+        "md5": "",
+        "isExactTarget": false,
+        "note": "missing"
+      },
+      {
+        "category": "same_filename",
+        "classification": "same_filename_different_path",
+        "source": "filesystem",
+        "path": "girlswar_merged_extracted/extracted/unity/clean_unityfs_slices/download/roleprefabsandres/rolebigsetpainting/1036.assetbundle",
+        "size": 1823276,
+        "md5": "0b9b8e6d04cf4bc45046b601960ed24c",
+        "isExactTarget": false,
+        "note": "same filename; path must not be treated as target unless exact"
+      },
+      {
+        "category": "same_filename",
+        "classification": "same_filename_different_path",
+        "source": "filesystem",
+        "path": "girlswar_merged_extracted/extracted/unity/clean_unityfs_slices/download/skillprefabsandres/1036.assetbundle",
+        "size": 341520,
+        "md5": "1dd429ec8c32f7806bd0159500681cee",
+        "isExactTarget": false,
+        "note": "same filename; path must not be treated as target unless exact"
+      },
+      {
+        "category": "same_filename",
+        "classification": "same_filename_different_path",
+        "source": "filesystem",
+        "path": "girlswar_merged_extracted/merged_content/AssetBundles/download/roleprefabsandres/rolebigsetpainting/1036.assetbundle",
+        "size": 1825731,
+        "md5": "14114e8e96837ed386327c7cc86b8fe3",
+        "isExactTarget": false,
+        "note": "same filename; path must not be treated as target unless exact"
+      },
+      {
+        "category": "same_filename",
+        "classification": "same_filename_different_path",
+        "source": "filesystem",
+        "path": "girlswar_merged_extracted/merged_content/AssetBundles/download/skillprefabsandres/1036.assetbundle",
+        "size": 345333,
+        "md5": "96d14a9638ea63431dfe928d5937a852",
+        "isExactTarget": false,
+        "note": "same filename; path must not be treated as target unless exact"
+      },
+      {
+        "category": "same_filename",
+        "classification": "same_filename_different_path",
+        "source": "filesystem",
+        "path": "girlswar_merged_extracted/restore_overlay/Android/data/com.girlwars.kr/files/build/download/roleprefabsandres/rolebigsetpainting/1036.assetbundle",
+        "size": 1825731,
+        "md5": "14114e8e96837ed386327c7cc86b8fe3",
+        "isExactTarget": false,
+        "note": "same filename; path must not be treated as target unless exact"
+      },
+      {
+        "category": "same_filename",
+        "classification": "same_filename_different_path",
+        "source": "filesystem",
+        "path": "girlswar_merged_extracted/restore_overlay/Android/data/com.girlwars.kr/files/build/download/skillprefabsandres/1036.assetbundle",
+        "size": 345333,
+        "md5": "96d14a9638ea63431dfe928d5937a852",
+        "isExactTarget": false,
+        "note": "same filename; path must not be treated as target unless exact"
+      }
+    ]
+  },
+  "urlEvidence": {
+    "candidateAssetCdnUrls": [],
+    "loginOrAccountUrls": [
+      {
+        "category": "url",
+        "classification": "login_or_account_url",
+        "source": "bootstrap_or_native",
+        "path": "work/apk_probe/data.unity3d",
+        "entry": "",
+        "url": "http://girlwars-kr-login.tianlonginc.com/bigdAccServer/",
+        "domain": "girlwars-kr-login.tianlonginc.com",
+        "evidence": "http://girlwars-kr-login.tianlonginc.com/bigdAccServer/"
+      },
+      {
+        "category": "url",
+        "classification": "login_or_account_url",
+        "source": "bootstrap_or_native",
+        "path": "work/apk_probe/data.unity3d",
+        "entry": "",
+        "url": "http://dev.next-1b.com:8081/bigdAccServer/0",
+        "domain": "dev.next-1b.com",
+        "evidence": "http://dev.next-1b.com:8081/bigdAccServer/0"
+      }
+    ],
+    "otherUrls": [
+      {
+        "category": "url",
+        "classification": "unclassified_url",
+        "source": "bootstrap_or_native",
+        "path": "work/apk_probe/data.unity3d",
+        "entry": "",
+        "url": "http://chilliant.blogspot.com.au/2012/08/srgb-aG",
+        "domain": "chilliant.blogspot.com.au",
+        "evidence": "http://chilliant.blogspot.com.au/2012/08/srgb-aG"
+      },
+      {
+        "category": "url",
+        "classification": "unclassified_url",
+        "source": "bootstrap_or_native",
+        "path": "work/apk_probe/data.unity3d",
+        "entry": "",
+        "url": "http://www.fatorcaos.com.brPerfect",
+        "domain": "www.fatorcaos.com.brperfect",
+        "evidence": "http://www.fatorcaos.com.brPerfect"
+      },
+      {
+        "category": "url",
+        "classification": "unclassified_url",
+        "source": "bootstrap_or_native",
+        "path": "work/apk_probe/global-metadata.dat",
+        "entry": "",
+        "url": "https://bitbucket.org/sirenix/odin-inspector/issues/526",
+        "domain": "bitbucket.org",
+        "evidence": "https://bitbucket.org/sirenix/odin-inspector/issues/526"
+      },
+      {
+        "category": "url",
+        "classification": "third_party_docs_url",
+        "source": "bootstrap_or_native",
+        "path": "work/apk_probe/global-metadata.dat",
+        "entry": "",
+        "url": "https://docs.unity3d.com/Manual/LogFiles.html",
+        "domain": "docs.unity3d.com",
+        "evidence": "https://docs.unity3d.com/Manual/LogFiles.html"
+      },
+      {
+        "category": "url",
+        "classification": "unclassified_url",
+        "source": "bootstrap_or_native",
+        "path": "work/apk_probe/global-metadata.dat",
+        "entry": "",
+        "url": "http://docs.poolmanager.path-o-logical.comPrecisionPrecondition",
+        "domain": "docs.poolmanager.path-o-logical.comprecisionprecondition",
+        "evidence": "http://docs.poolmanager.path-o-logical.comPrecisionPrecondition"
+      },
+      {
+        "category": "url",
+        "classification": "unclassified_url",
+        "source": "bootstrap_or_native",
+        "path": "work/apk_probe/global-metadata.dat",
+        "entry": "",
+        "url": "http://www.w3.org/XML/1998/namespace",
+        "domain": "www.w3.org",
+        "evidence": "http://www.w3.org/XML/1998/namespace"
+      },
+      {
+        "category": "url",
+        "classification": "unclassified_url",
+        "source": "bootstrap_or_native",
+        "path": "work/apk_probe/global-metadata.dat",
+        "entry": "",
+        "url": "http://www.w3.org/2000/xmlns/'.The",
+        "domain": "www.w3.org",
+        "evidence": "http://www.w3.org/2000/xmlns/'.The"
+      },
+      {
+        "category": "url",
+        "classification": "third_party_sdk_or_docs_url",
+        "source": "bootstrap_or_native",
+        "path": "work/apk_probe/global-metadata.dat",
+        "entry": "",
+        "url": "https://www.facebook.com/analytics/You",
+        "domain": "www.facebook.com",
+        "evidence": "https://www.facebook.com/analytics/You"
+      },
+      {
+        "category": "url",
+        "classification": "unclassified_url",
+        "source": "bootstrap_or_native",
+        "path": "work/apk_probe/global-metadata.dat",
+        "entry": "",
+        "url": "http://192.168.1.248:9000",
+        "domain": "192.168.1.248",
+        "evidence": "http://192.168.1.248:9000"
+      },
+      {
+        "category": "url",
+        "classification": "unclassified_url",
+        "source": "bootstrap_or_native",
+        "path": "work/apk_probe/global-metadata.dat",
+        "entry": "",
+        "url": "http://192.168.1.47/api/aws/s3/test",
+        "domain": "192.168.1.47",
+        "evidence": "http://192.168.1.47/api/aws/s3/test"
+      },
+      {
+        "category": "url",
+        "classification": "unclassified_url",
+        "source": "bootstrap_or_native",
+        "path": "work/apk_probe/global-metadata.dat",
+        "entry": "",
+        "url": "http://alb-ybwcx5ymte4wlfc0al.ap-northeast-1.alb.aliyuncsslbintl.com",
+        "domain": "alb-ybwcx5ymte4wlfc0al.ap-northeast-1.alb.aliyuncsslbintl.com",
+        "evidence": "http://alb-ybwcx5ymte4wlfc0al.ap-northeast-1.alb.aliyuncsslbintl.com"
+      },
+      {
+        "category": "url",
+        "classification": "unclassified_url",
+        "source": "bootstrap_or_native",
+        "path": "work/apk_probe/global-metadata.dat",
+        "entry": "",
+        "url": "http://i.imgur.com/j4M7vCO.jpg",
+        "domain": "i.imgur.com",
+        "evidence": "http://i.imgur.com/j4M7vCO.jpg"
+      },
+      {
+        "category": "url",
+        "classification": "unclassified_url",
+        "source": "bootstrap_or_native",
+        "path": "work/apk_probe/global-metadata.dat",
+        "entry": "",
+        "url": "http://i.imgur.com/zkYlB.jpg",
+        "domain": "i.imgur.com",
+        "evidence": "http://i.imgur.com/zkYlB.jpg"
+      },
+      {
+        "category": "url",
+        "classification": "unclassified_url",
+        "source": "bootstrap_or_native",
+        "path": "work/apk_probe/global-metadata.dat",
+        "entry": "",
+        "url": "http://localhost/",
+        "domain": "localhost",
+        "evidence": "http://localhost/"
+      },
+      {
+        "category": "url",
+        "classification": "unclassified_url",
+        "source": "bootstrap_or_native",
+        "path": "work/apk_probe/global-metadata.dat",
+        "entry": "",
+        "url": "http://microsoft.com/wsdl/types/",
+        "domain": "microsoft.com",
+        "evidence": "http://microsoft.com/wsdl/types/"
+      },
+      {
+        "category": "url",
+        "classification": "unclassified_url",
+        "source": "bootstrap_or_native",
+        "path": "work/apk_probe/global-metadata.dat",
+        "entry": "",
+        "url": "http://oss-accelerate.aliyuncs.com/",
+        "domain": "oss-accelerate.aliyuncs.com",
+        "evidence": "http://oss-accelerate.aliyuncs.com/"
+      },
+      {
+        "category": "url",
+        "classification": "unclassified_url",
+        "source": "bootstrap_or_native",
+        "path": "work/apk_probe/global-metadata.dat",
+        "entry": "",
+        "url": "http://oss-cn-beijing.aliyuncs.com/",
+        "domain": "oss-cn-beijing.aliyuncs.com",
+        "evidence": "http://oss-cn-beijing.aliyuncs.com/"
+      },
+      {
+        "category": "url",
+        "classification": "unclassified_url",
+        "source": "bootstrap_or_native",
+        "path": "work/apk_probe/global-metadata.dat",
+        "entry": "",
+        "url": "http://oss.service.aliyun.com/acl/group/ALL_USERS",
+        "domain": "oss.service.aliyun.com",
+        "evidence": "http://oss.service.aliyun.com/acl/group/ALL_USERS"
+      },
+      {
+        "category": "url",
+        "classification": "unclassified_url",
+        "source": "bootstrap_or_native",
+        "path": "work/apk_probe/global-metadata.dat",
+        "entry": "",
+        "url": "http://schemas.microsoft.com/clr/assem/",
+        "domain": "schemas.microsoft.com",
+        "evidence": "http://schemas.microsoft.com/clr/assem/"
+      },
+      {
+        "category": "url",
+        "classification": "unclassified_url",
+        "source": "bootstrap_or_native",
+        "path": "work/apk_probe/global-metadata.dat",
+        "entry": "",
+        "url": "http://schemas.microsoft.com/clr/ns/",
+        "domain": "schemas.microsoft.com",
+        "evidence": "http://schemas.microsoft.com/clr/ns/"
+      },
+      {
+        "category": "url",
+        "classification": "unclassified_url",
+        "source": "bootstrap_or_native",
+        "path": "work/apk_probe/global-metadata.dat",
+        "entry": "",
+        "url": "http://schemas.microsoft.com/clr/nsassem/",
+        "domain": "schemas.microsoft.com",
+        "evidence": "http://schemas.microsoft.com/clr/nsassem/"
+      },
+      {
+        "category": "url",
+        "classification": "unclassified_url",
+        "source": "bootstrap_or_native",
+        "path": "work/apk_probe/global-metadata.dat",
+        "entry": "",
+        "url": "http://schemas.microsoft.com/ws/2008/06/identity/claims/role",
+        "domain": "schemas.microsoft.com",
+        "evidence": "http://schemas.microsoft.com/ws/2008/06/identity/claims/role"
+      },
+      {
+        "category": "url",
+        "classification": "unclassified_url",
+        "source": "bootstrap_or_native",
+        "path": "work/apk_probe/global-metadata.dat",
+        "entry": "",
+        "url": "http://schemas.xmlsoap.org/soap/encoding/",
+        "domain": "schemas.xmlsoap.org",
+        "evidence": "http://schemas.xmlsoap.org/soap/encoding/"
+      },
+      {
+        "category": "url",
+        "classification": "unclassified_url",
+        "source": "bootstrap_or_native",
+        "path": "work/apk_probe/global-metadata.dat",
+        "entry": "",
+        "url": "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name",
+        "domain": "schemas.xmlsoap.org",
+        "evidence": "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name"
+      },
+      {
+        "category": "url",
+        "classification": "unclassified_url",
+        "source": "bootstrap_or_native",
+        "path": "work/apk_probe/global-metadata.dat",
+        "entry": "",
+        "url": "http://schemas.xmlsoap.org/wsdl/",
+        "domain": "schemas.xmlsoap.org",
+        "evidence": "http://schemas.xmlsoap.org/wsdl/"
+      },
+      {
+        "category": "url",
+        "classification": "third_party_observability_url",
+        "source": "bootstrap_or_native",
+        "path": "work/apk_probe/global-metadata.dat",
+        "entry": "",
+        "url": "http://uwa-public.oss-cn-beijing.aliyuncs.com/online-pa%2FAndroid%2FUWACore.dll",
+        "domain": "uwa-public.oss-cn-beijing.aliyuncs.com",
+        "evidence": "http://uwa-public.oss-cn-beijing.aliyuncs.com/online-pa%2FAndroid%2FUWACore.dll"
+      },
+      {
+        "category": "url",
+        "classification": "unclassified_url",
+        "source": "bootstrap_or_native",
+        "path": "work/apk_probe/global-metadata.dat",
+        "entry": "",
+        "url": "http://www.hko.gov.hk/cgi-bin/gts/time5a.pr?a=2",
+        "domain": "www.hko.gov.hk",
+        "evidence": "http://www.hko.gov.hk/cgi-bin/gts/time5a.pr?a=2"
+      },
+      {
+        "category": "url",
+        "classification": "unclassified_url",
+        "source": "bootstrap_or_native",
+        "path": "work/apk_probe/global-metadata.dat",
+        "entry": "",
+        "url": "http://www.w3.org/1999/XMLSchema-instance",
+        "domain": "www.w3.org",
+        "evidence": "http://www.w3.org/1999/XMLSchema-instance"
+      },
+      {
+        "category": "url",
+        "classification": "unclassified_url",
+        "source": "bootstrap_or_native",
+        "path": "work/apk_probe/global-metadata.dat",
+        "entry": "",
+        "url": "http://www.w3.org/2000/09/xmldsig#dsa-sha1",
+        "domain": "www.w3.org",
+        "evidence": "http://www.w3.org/2000/09/xmldsig#dsa-sha1"
+      },
+      {
+        "category": "url",
+        "classification": "unclassified_url",
+        "source": "bootstrap_or_native",
+        "path": "work/apk_probe/global-metadata.dat",
+        "entry": "",
+        "url": "http://www.w3.org/2000/09/xmldsig#rsa-sha1",
+        "domain": "www.w3.org",
+        "evidence": "http://www.w3.org/2000/09/xmldsig#rsa-sha1"
+      },
+      {
+        "category": "url",
+        "classification": "unclassified_url",
+        "source": "bootstrap_or_native",
+        "path": "work/apk_probe/global-metadata.dat",
+        "entry": "",
+        "url": "http://www.w3.org/2000/09/xmldsig#sha1",
+        "domain": "www.w3.org",
+        "evidence": "http://www.w3.org/2000/09/xmldsig#sha1"
+      },
+      {
+        "category": "url",
+        "classification": "unclassified_url",
+        "source": "bootstrap_or_native",
+        "path": "work/apk_probe/global-metadata.dat",
+        "entry": "",
+        "url": "http://www.w3.org/2000/10/XMLSchema-instance",
+        "domain": "www.w3.org",
+        "evidence": "http://www.w3.org/2000/10/XMLSchema-instance"
+      },
+      {
+        "category": "url",
+        "classification": "unclassified_url",
+        "source": "bootstrap_or_native",
+        "path": "work/apk_probe/global-metadata.dat",
+        "entry": "",
+        "url": "http://www.w3.org/2000/xmlns/",
+        "domain": "www.w3.org",
+        "evidence": "http://www.w3.org/2000/xmlns/"
+      },
+      {
+        "category": "url",
+        "classification": "unclassified_url",
+        "source": "bootstrap_or_native",
+        "path": "work/apk_probe/global-metadata.dat",
+        "entry": "",
+        "url": "http://www.w3.org/2001/04/xmldsig-more#hmac-ripemd160",
+        "domain": "www.w3.org",
+        "evidence": "http://www.w3.org/2001/04/xmldsig-more#hmac-ripemd160"
+      },
+      {
+        "category": "url",
+        "classification": "unclassified_url",
+        "source": "bootstrap_or_native",
+        "path": "work/apk_probe/global-metadata.dat",
+        "entry": "",
+        "url": "http://www.w3.org/2001/04/xmldsig-more#hmac-sha256",
+        "domain": "www.w3.org",
+        "evidence": "http://www.w3.org/2001/04/xmldsig-more#hmac-sha256"
+      },
+      {
+        "category": "url",
+        "classification": "unclassified_url",
+        "source": "bootstrap_or_native",
+        "path": "work/apk_probe/global-metadata.dat",
+        "entry": "",
+        "url": "http://www.w3.org/2001/04/xmldsig-more#hmac-sha384",
+        "domain": "www.w3.org",
+        "evidence": "http://www.w3.org/2001/04/xmldsig-more#hmac-sha384"
+      },
+      {
+        "category": "url",
+        "classification": "unclassified_url",
+        "source": "bootstrap_or_native",
+        "path": "work/apk_probe/global-metadata.dat",
+        "entry": "",
+        "url": "http://www.w3.org/2001/04/xmldsig-more#hmac-sha512",
+        "domain": "www.w3.org",
+        "evidence": "http://www.w3.org/2001/04/xmldsig-more#hmac-sha512"
+      },
+      {
+        "category": "url",
+        "classification": "unclassified_url",
+        "source": "bootstrap_or_native",
+        "path": "work/apk_probe/global-metadata.dat",
+        "entry": "",
+        "url": "http://www.w3.org/2001/04/xmldsig-more#rsa-sha256",
+        "domain": "www.w3.org",
+        "evidence": "http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"
+      },
+      {
+        "category": "url",
+        "classification": "unclassified_url",
+        "source": "bootstrap_or_native",
+        "path": "work/apk_probe/global-metadata.dat",
+        "entry": "",
+        "url": "http://www.w3.org/2001/04/xmldsig-more#rsa-sha384",
+        "domain": "www.w3.org",
+        "evidence": "http://www.w3.org/2001/04/xmldsig-more#rsa-sha384"
+      },
+      {
+        "category": "url",
+        "classification": "unclassified_url",
+        "source": "bootstrap_or_native",
+        "path": "work/apk_probe/global-metadata.dat",
+        "entry": "",
+        "url": "http://www.w3.org/2001/04/xmldsig-more#rsa-sha512",
+        "domain": "www.w3.org",
+        "evidence": "http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"
+      },
+      {
+        "category": "url",
+        "classification": "unclassified_url",
+        "source": "bootstrap_or_native",
+        "path": "work/apk_probe/global-metadata.dat",
+        "entry": "",
+        "url": "http://www.w3.org/2001/04/xmldsig-more#sha384",
+        "domain": "www.w3.org",
+        "evidence": "http://www.w3.org/2001/04/xmldsig-more#sha384"
+      },
+      {
+        "category": "url",
+        "classification": "unclassified_url",
+        "source": "bootstrap_or_native",
+        "path": "work/apk_probe/global-metadata.dat",
+        "entry": "",
+        "url": "http://www.w3.org/2001/04/xmlenc#sha256",
+        "domain": "www.w3.org",
+        "evidence": "http://www.w3.org/2001/04/xmlenc#sha256"
+      },
+      {
+        "category": "url",
+        "classification": "unclassified_url",
+        "source": "bootstrap_or_native",
+        "path": "work/apk_probe/global-metadata.dat",
+        "entry": "",
+        "url": "http://www.w3.org/2001/04/xmlenc#sha512",
+        "domain": "www.w3.org",
+        "evidence": "http://www.w3.org/2001/04/xmlenc#sha512"
+      },
+      {
+        "category": "url",
+        "classification": "unclassified_url",
+        "source": "bootstrap_or_native",
+        "path": "work/apk_probe/global-metadata.dat",
+        "entry": "",
+        "url": "http://www.w3.org/2001/XMLSchema",
+        "domain": "www.w3.org",
+        "evidence": "http://www.w3.org/2001/XMLSchema"
+      },
+      {
+        "category": "url",
+        "classification": "unclassified_url",
+        "source": "bootstrap_or_native",
+        "path": "work/apk_probe/global-metadata.dat",
+        "entry": "",
+        "url": "http://www.w3.org/2001/XMLSchema#string",
+        "domain": "www.w3.org",
+        "evidence": "http://www.w3.org/2001/XMLSchema#string"
+      },
+      {
+        "category": "url",
+        "classification": "unclassified_url",
+        "source": "bootstrap_or_native",
+        "path": "work/apk_probe/global-metadata.dat",
+        "entry": "",
+        "url": "http://www.w3.org/2001/XMLSchema-instance",
+        "domain": "www.w3.org",
+        "evidence": "http://www.w3.org/2001/XMLSchema-instance"
+      },
+      {
+        "category": "url",
+        "classification": "unclassified_url",
+        "source": "bootstrap_or_native",
+        "path": "work/apk_probe/global-metadata.dat",
+        "entry": "",
+        "url": "http://www.w3.org/2003/11/xpath-datatypes",
+        "domain": "www.w3.org",
+        "evidence": "http://www.w3.org/2003/11/xpath-datatypes"
+      },
+      {
+        "category": "url",
+        "classification": "unclassified_url",
+        "source": "bootstrap_or_native",
+        "path": "work/apk_probe/global-metadata.dat",
+        "entry": "",
+        "url": "http://www.w3.org/XML/1998/namespacehttps",
+        "domain": "www.w3.org",
+        "evidence": "http://www.w3.org/XML/1998/namespacehttps"
+      },
+      {
+        "category": "url",
+        "classification": "third_party_sdk_or_docs_url",
+        "source": "bootstrap_or_native",
+        "path": "work/apk_probe/global-metadata.dat",
+        "entry": "",
+        "url": "https://connect.facebook.net",
+        "domain": "connect.facebook.net",
+        "evidence": "https://connect.facebook.net"
+      },
+      {
+        "category": "url",
+        "classification": "third_party_sdk_or_docs_url",
+        "source": "bootstrap_or_native",
+        "path": "work/apk_probe/global-metadata.dat",
+        "entry": "",
+        "url": "https://developers.facebook.com/",
+        "domain": "developers.facebook.com",
+        "evidence": "https://developers.facebook.com/"
+      },
+      {
+        "category": "url",
+        "classification": "third_party_sdk_or_docs_url",
+        "source": "bootstrap_or_native",
+        "path": "work/apk_probe/global-metadata.dat",
+        "entry": "",
+        "url": "https://developers.facebook.com/tools/accesstoken/?app_id=",
+        "domain": "developers.facebook.com",
+        "evidence": "https://developers.facebook.com/tools/accesstoken/?app_id="
+      },
+      {
+        "category": "url",
+        "classification": "third_party_observability_url",
+        "source": "bootstrap_or_native",
+        "path": "work/apk_probe/global-metadata.dat",
+        "entry": "",
+        "url": "https://en.uwa4d.com",
+        "domain": "en.uwa4d.com",
+        "evidence": "https://en.uwa4d.com"
+      },
+      {
+        "category": "url",
+        "classification": "third_party_observability_url",
+        "source": "bootstrap_or_native",
+        "path": "work/apk_probe/global-metadata.dat",
+        "entry": "",
+        "url": "https://jp.uwa4d.com",
+        "domain": "jp.uwa4d.com",
+        "evidence": "https://jp.uwa4d.com"
+      },
+      {
+        "category": "url",
+        "classification": "third_party_observability_url",
+        "source": "bootstrap_or_native",
+        "path": "work/apk_probe/global-metadata.dat",
+        "entry": "",
+        "url": "https://sandbox-api.uwa4d.com",
+        "domain": "sandbox-api.uwa4d.com",
+        "evidence": "https://sandbox-api.uwa4d.com"
+      },
+      {
+        "category": "url",
+        "classification": "third_party_observability_url",
+        "source": "bootstrap_or_native",
+        "path": "work/apk_probe/global-metadata.dat",
+        "entry": "",
+        "url": "https://secure-api.uwa4d.com",
+        "domain": "secure-api.uwa4d.com",
+        "evidence": "https://secure-api.uwa4d.com"
+      },
+      {
+        "category": "url",
+        "classification": "third_party_observability_url",
+        "source": "bootstrap_or_native",
+        "path": "work/apk_probe/global-metadata.dat",
+        "entry": "",
+        "url": "https://test.uwa4d.com",
+        "domain": "test.uwa4d.com",
+        "evidence": "https://test.uwa4d.com"
+      },
+      {
+        "category": "url",
+        "classification": "third_party_observability_url",
+        "source": "bootstrap_or_native",
+        "path": "work/apk_probe/global-metadata.dat",
+        "entry": "",
+        "url": "https://testen.uwa4d.com",
+        "domain": "testen.uwa4d.com",
+        "evidence": "https://testen.uwa4d.com"
+      },
+      {
+        "category": "url",
+        "classification": "third_party_observability_url",
+        "source": "bootstrap_or_native",
+        "path": "work/apk_probe/global-metadata.dat",
+        "entry": "",
+        "url": "https://testjp.uwa4d.com",
+        "domain": "testjp.uwa4d.com",
+        "evidence": "https://testjp.uwa4d.com"
+      },
+      {
+        "category": "url",
+        "classification": "third_party_observability_url",
+        "source": "bootstrap_or_native",
+        "path": "work/apk_probe/global-metadata.dat",
+        "entry": "",
+        "url": "https://uwa-private.s3-us-east-2.amazonaws.com/",
+        "domain": "uwa-private.s3-us-east-2.amazonaws.com",
+        "evidence": "https://uwa-private.s3-us-east-2.amazonaws.com/"
+      },
+      {
+        "category": "url",
+        "classification": "third_party_observability_url",
+        "source": "bootstrap_or_native",
+        "path": "work/apk_probe/global-metadata.dat",
+        "entry": "",
+        "url": "https://uwa-public.oss-cn-beijing.aliyuncs.com/unitypacore%2F",
+        "domain": "uwa-public.oss-cn-beijing.aliyuncs.com",
+        "evidence": "https://uwa-public.oss-cn-beijing.aliyuncs.com/unitypacore%2F"
+      },
+      {
+        "category": "url",
+        "classification": "third_party_observability_url",
+        "source": "bootstrap_or_native",
+        "path": "work/apk_probe/global-metadata.dat",
+        "entry": "",
+        "url": "https://uwa-public.oss-cn-beijing.aliyuncs.com/uwa-got/version/got_online_config-test.json",
+        "domain": "uwa-public.oss-cn-beijing.aliyuncs.com",
+        "evidence": "https://uwa-public.oss-cn-beijing.aliyuncs.com/uwa-got/version/got_online_config-test.json"
+      },
+      {
+        "category": "url",
+        "classification": "third_party_observability_url",
+        "source": "bootstrap_or_native",
+        "path": "work/apk_probe/global-metadata.dat",
+        "entry": "",
+        "url": "https://uwa-public.oss-cn-beijing.aliyuncs.com/uwa-got/version/got_online_config.json",
+        "domain": "uwa-public.oss-cn-beijing.aliyuncs.com",
+        "evidence": "https://uwa-public.oss-cn-beijing.aliyuncs.com/uwa-got/version/got_online_config.json"
+      },
+      {
+        "category": "url",
+        "classification": "third_party_sdk_or_docs_url",
+        "source": "bootstrap_or_native",
+        "path": "work/apk_probe/global-metadata.dat",
+        "entry": "",
+        "url": "https://www.gstatic.com/firebase/ssl/roots.pem",
+        "domain": "www.gstatic.com",
+        "evidence": "https://www.gstatic.com/firebase/ssl/roots.pem"
+      },
+      {
+        "category": "url",
+        "classification": "third_party_observability_url",
+        "source": "bootstrap_or_native",
+        "path": "work/apk_probe/global-metadata.dat",
+        "entry": "",
+        "url": "https://www.uwa4d.com",
+        "domain": "www.uwa4d.com",
+        "evidence": "https://www.uwa4d.com"
+      },
+      {
+        "category": "url",
+        "classification": "third_party_docs_url",
+        "source": "bootstrap_or_native",
+        "path": "work/apk_probe/global-metadata.dat",
+        "entry": "",
+        "url": "https://docs.unity3d.com/Packages/com.unity.render-pipelines.core@",
+        "domain": "docs.unity3d.com",
+        "evidence": "https://docs.unity3d.com/Packages/com.unity.render-pipelines.core@"
+      },
+      {
+        "category": "url",
+        "classification": "third_party_docs_url",
+        "source": "bootstrap_or_native",
+        "path": "work/apk_probe/global-metadata.dat",
+        "entry": "",
+        "url": "https://docs.unity3d.com/Packages/com.unity.render-pipelines.high-definition@",
+        "domain": "docs.unity3d.com",
+        "evidence": "https://docs.unity3d.com/Packages/com.unity.render-pipelines.high-definition@"
+      },
+      {
+        "category": "url",
+        "classification": "third_party_sdk_or_docs_url",
+        "source": "bootstrap_or_native",
+        "path": "work/apk_probe/libil2cpp.so",
+        "entry": "",
+        "url": "https://github.com/adjust/unity_purchase_sdk",
+        "domain": "github.com",
+        "evidence": "https://github.com/adjust/unity_purchase_sdk"
+      },
+      {
+        "category": "url",
+        "classification": "third_party_observability_url",
+        "source": "bootstrap_or_native",
+        "path": "work/apk_probe/libil2cpp.so",
+        "entry": "",
+        "url": "https://www.uwa4d.com/uwagot.html",
+        "domain": "www.uwa4d.com",
+        "evidence": "https://www.uwa4d.com/uwagot.html"
+      },
+      {
+        "category": "url",
+        "classification": "unclassified_url",
+        "source": "bootstrap_or_native",
+        "path": "work/apk_probe/libil2cpp.so",
+        "entry": "",
+        "url": "http://go.microsoft.com/fwlink/?linkid=14202",
+        "domain": "go.microsoft.com",
+        "evidence": "http://go.microsoft.com/fwlink/?linkid=14202"
+      },
+      {
+        "category": "url",
+        "classification": "third_party_docs_url",
+        "source": "bootstrap_or_native",
+        "path": "work/apk_probe/libil2cpp.so",
+        "entry": "",
+        "url": "https://docs.unity3d.com/Packages/com.unity.render-pipelines.universal@latest/index.html?subfolder=/manual/2DLightProperties.html",
+        "domain": "docs.unity3d.com",
+        "evidence": "https://docs.unity3d.com/Packages/com.unity.render-pipelines.universal@latest/index.html?subfolder=/manual/2DLightProperties.html"
+      },
+      {
+        "category": "url",
+        "classification": "third_party_docs_url",
+        "source": "bootstrap_or_native",
+        "path": "work/apk_probe/libil2cpp.so",
+        "entry": "",
+        "url": "https://docs.unity3d.com/Packages/com.unity.render-pipelines.universal@latest/index.html?subfolder=/manual/2d-pixelperfect.html%23properties",
+        "domain": "docs.unity3d.com",
+        "evidence": "https://docs.unity3d.com/Packages/com.unity.render-pipelines.universal@latest/index.html?subfolder=/manual/2d-pixelperfect.html%23properties"
+      },
+      {
+        "category": "url",
+        "classification": "third_party_docs_url",
+        "source": "bootstrap_or_native",
+        "path": "work/apk_probe/libil2cpp.so",
+        "entry": "",
+        "url": "https://docs.unity3d.com/Packages/com.unity.render-pipelines.universal@latest/index.html?subfolder=/manual/2DRendererData_overview.html",
+        "domain": "docs.unity3d.com",
+        "evidence": "https://docs.unity3d.com/Packages/com.unity.render-pipelines.universal@latest/index.html?subfolder=/manual/2DRendererData_overview.html"
+      },
+      {
+        "category": "url",
+        "classification": "third_party_docs_url",
+        "source": "bootstrap_or_native",
+        "path": "work/apk_probe/libil2cpp.so",
+        "entry": "",
+        "url": "https://docs.unity3d.com/Packages/com.unity.render-pipelines.core@10.2/manual/Camera-Switcher.html",
+        "domain": "docs.unity3d.com",
+        "evidence": "https://docs.unity3d.com/Packages/com.unity.render-pipelines.core@10.2/manual/Camera-Switcher.html"
+      },
+      {
+        "category": "url",
+        "classification": "third_party_docs_url",
+        "source": "bootstrap_or_native",
+        "path": "work/apk_probe/libil2cpp.so",
+        "entry": "",
+        "url": "https://docs.unity3d.com/Packages/com.unity.render-pipelines.core@10.2/manual/Free-Camera.html",
+        "domain": "docs.unity3d.com",
+        "evidence": "https://docs.unity3d.com/Packages/com.unity.render-pipelines.core@10.2/manual/Free-Camera.html"
+      },
+      {
+        "category": "url",
+        "classification": "third_party_docs_url",
+        "source": "bootstrap_or_native",
+        "path": "work/apk_probe/libil2cpp.so",
+        "entry": "",
+        "url": "https://docs.unity3d.com/Packages/com.unity.render-pipelines.high-definition@10.2/manual/Volumes.html",
+        "domain": "docs.unity3d.com",
+        "evidence": "https://docs.unity3d.com/Packages/com.unity.render-pipelines.high-definition@10.2/manual/Volumes.html"
+      },
+      {
+        "category": "url",
+        "classification": "third_party_docs_url",
+        "source": "bootstrap_or_native",
+        "path": "work/apk_probe/libil2cpp.so",
+        "entry": "",
+        "url": "https://docs.unity3d.com/Packages/com.unity.render-pipelines.high-definition@10.2/manual/Volume-Profile.html",
+        "domain": "docs.unity3d.com",
+        "evidence": "https://docs.unity3d.com/Packages/com.unity.render-pipelines.high-definition@10.2/manual/Volume-Profile.html"
+      },
+      {
+        "category": "url",
+        "classification": "unclassified_url",
+        "source": "bootstrap_or_native",
+        "path": "work/apk_probe/libil2cpp.so",
+        "entry": "",
+        "url": "http://esotericsoftware.com/spine-unity#BoneFollower",
+        "domain": "esotericsoftware.com",
+        "evidence": "http://esotericsoftware.com/spine-unity#BoneFollower"
+      },
+      {
+        "category": "url",
+        "classification": "unclassified_url",
+        "source": "bootstrap_or_native",
+        "path": "work/apk_probe/libil2cpp.so",
+        "entry": "",
+        "url": "http://esotericsoftware.com/spine-unity#BoneFollowerGraphic",
+        "domain": "esotericsoftware.com",
+        "evidence": "http://esotericsoftware.com/spine-unity#BoneFollowerGraphic"
+      },
+      {
+        "category": "url",
+        "classification": "unclassified_url",
+        "source": "bootstrap_or_native",
+        "path": "work/apk_probe/libil2cpp.so",
+        "entry": "",
+        "url": "http://esotericsoftware.com/spine-unity#BoundingBoxFollower",
+        "domain": "esotericsoftware.com",
+        "evidence": "http://esotericsoftware.com/spine-unity#BoundingBoxFollower"
+      },
+      {
+        "category": "url",
+        "classification": "unclassified_url",
+        "source": "bootstrap_or_native",
+        "path": "work/apk_probe/libil2cpp.so",
+        "entry": "",
+        "url": "http://esotericsoftware.com/spine-unity#BoundingBoxFollowerGraphic",
+        "domain": "esotericsoftware.com",
+        "evidence": "http://esotericsoftware.com/spine-unity#BoundingBoxFollowerGraphic"
+      },
+      {
+        "category": "url",
+        "classification": "unclassified_url",
+        "source": "bootstrap_or_native",
+        "path": "work/apk_probe/libil2cpp.so",
+        "entry": "",
+        "url": "http://esotericsoftware.com/spine-unity#PointFollower",
+        "domain": "esotericsoftware.com",
+        "evidence": "http://esotericsoftware.com/spine-unity#PointFollower"
+      },
+      {
+        "category": "url",
+        "classification": "unclassified_url",
+        "source": "bootstrap_or_native",
+        "path": "work/apk_probe/libil2cpp.so",
+        "entry": "",
+        "url": "http://esotericsoftware.com/spine-unity#SkeletonMecanimRootMotion",
+        "domain": "esotericsoftware.com",
+        "evidence": "http://esotericsoftware.com/spine-unity#SkeletonMecanimRootMotion"
+      },
+      {
+        "category": "url",
+        "classification": "unclassified_url",
+        "source": "bootstrap_or_native",
+        "path": "work/apk_probe/libil2cpp.so",
+        "entry": "",
+        "url": "http://esotericsoftware.com/spine-unity#SkeletonRootMotion",
+        "domain": "esotericsoftware.com",
+        "evidence": "http://esotericsoftware.com/spine-unity#SkeletonRootMotion"
+      },
+      {
+        "category": "url",
+        "classification": "unclassified_url",
+        "source": "bootstrap_or_native",
+        "path": "work/apk_probe/libil2cpp.so",
+        "entry": "",
+        "url": "http://esotericsoftware.com/spine-unity#SkeletonAnimation-Component",
+        "domain": "esotericsoftware.com",
+        "evidence": "http://esotericsoftware.com/spine-unity#SkeletonAnimation-Component"
+      },
+      {
+        "category": "url",
+        "classification": "unclassified_url",
+        "source": "bootstrap_or_native",
+        "path": "work/apk_probe/libil2cpp.so",
+        "entry": "",
+        "url": "http://esotericsoftware.com/spine-unity#SkeletonGraphic-Component",
+        "domain": "esotericsoftware.com",
+        "evidence": "http://esotericsoftware.com/spine-unity#SkeletonGraphic-Component"
+      },
+      {
+        "category": "url",
+        "classification": "unclassified_url",
+        "source": "bootstrap_or_native",
+        "path": "work/apk_probe/libil2cpp.so",
+        "entry": "",
+        "url": "http://esotericsoftware.com/spine-unity#SkeletonMecanim-Component",
+        "domain": "esotericsoftware.com",
+        "evidence": "http://esotericsoftware.com/spine-unity#SkeletonMecanim-Component"
+      },
+      {
+        "category": "url",
+        "classification": "unclassified_url",
+        "source": "bootstrap_or_native",
+        "path": "work/apk_probe/libil2cpp.so",
+        "entry": "",
+        "url": "http://esotericsoftware.com/spine-unity#SkeletonRenderSeparator",
+        "domain": "esotericsoftware.com",
+        "evidence": "http://esotericsoftware.com/spine-unity#SkeletonRenderSeparator"
+      },
+      {
+        "category": "url",
+        "classification": "unclassified_url",
+        "source": "bootstrap_or_native",
+        "path": "work/apk_probe/libil2cpp.so",
+        "entry": "",
+        "url": "http://esotericsoftware.com/spine-unity#SkeletonRenderer-Component",
+        "domain": "esotericsoftware.com",
+        "evidence": "http://esotericsoftware.com/spine-unity#SkeletonRenderer-Component"
+      },
+      {
+        "category": "url",
+        "classification": "unclassified_url",
+        "source": "bootstrap_or_native",
+        "path": "work/apk_probe/libil2cpp.so",
+        "entry": "",
+        "url": "http://esotericsoftware.com/spine-unity#SkeletonGraphicCustomMaterials",
+        "domain": "esotericsoftware.com",
+        "evidence": "http://esotericsoftware.com/spine-unity#SkeletonGraphicCustomMaterials"
+      },
+      {
+        "category": "url",
+        "classification": "unclassified_url",
+        "source": "bootstrap_or_native",
+        "path": "work/apk_probe/libil2cpp.so",
+        "entry": "",
+        "url": "http://esotericsoftware.com/spine-unity#SkeletonRendererCustomMaterials",
+        "domain": "esotericsoftware.com",
+        "evidence": "http://esotericsoftware.com/spine-unity#SkeletonRendererCustomMaterials"
+      },
+      {
+        "category": "url",
+        "classification": "unclassified_url",
+        "source": "bootstrap_or_native",
+        "path": "work/apk_probe/libil2cpp.so",
+        "entry": "",
+        "url": "http://esotericsoftware.com/spine-unity#SkeletonUtility",
+        "domain": "esotericsoftware.com",
+        "evidence": "http://esotericsoftware.com/spine-unity#SkeletonUtility"
+      },
+      {
+        "category": "url",
+        "classification": "unclassified_url",
+        "source": "bootstrap_or_native",
+        "path": "work/apk_probe/libil2cpp.so",
+        "entry": "",
+        "url": "http://esotericsoftware.com/spine-unity#SkeletonUtilityBone",
+        "domain": "esotericsoftware.com",
+        "evidence": "http://esotericsoftware.com/spine-unity#SkeletonUtilityBone"
+      },
+      {
+        "category": "url",
+        "classification": "unclassified_url",
+        "source": "bootstrap_or_native",
+        "path": "work/apk_probe/libil2cpp.so",
+        "entry": "",
+        "url": "http://esotericsoftware.com/spine-unity#SkeletonUtilityConstraint",
+        "domain": "esotericsoftware.com",
+        "evidence": "http://esotericsoftware.com/spine-unity#SkeletonUtilityConstraint"
+      },
+      {
+        "category": "url",
+        "classification": "third_party_docs_url",
+        "source": "bootstrap_or_native",
+        "path": "work/apk_probe/libil2cpp.so",
+        "entry": "",
+        "url": "https://docs.unity3d.com/Packages/com.unity.textmeshpro@3.0",
+        "domain": "docs.unity3d.com",
+        "evidence": "https://docs.unity3d.com/Packages/com.unity.textmeshpro@3.0"
+      },
+      {
+        "category": "url",
+        "classification": "unclassified_url",
+        "source": "bootstrap_or_native",
+        "path": "work/apk_probe/libil2cpp.so",
+        "entry": "",
+        "url": "https://www.renderheads.com/products/avpro-video/",
+        "domain": "www.renderheads.com",
+        "evidence": "https://www.renderheads.com/products/avpro-video/"
+      },
+      {
+        "category": "url",
+        "classification": "third_party_docs_url",
+        "source": "bootstrap_or_native",
+        "path": "work/apk_probe/libil2cpp.so",
+        "entry": "",
+        "url": "https://docs.unity3d.com/Manual/Tilemap-TileAsset.html",
+        "domain": "docs.unity3d.com",
+        "evidence": "https://docs.unity3d.com/Manual/Tilemap-TileAsset.html"
+      },
+      {
+        "category": "url",
+        "classification": "unclassified_url",
+        "source": "bootstrap_or_native",
+        "path": "work/apk_probe/libil2cpp.so",
+        "entry": "",
+        "url": "http://renderheads.com/products/avpro-video/",
+        "domain": "renderheads.com",
+        "evidence": "http://renderheads.com/products/avpro-video/"
+      },
+      {
+        "category": "url",
+        "classification": "unclassified_url",
+        "source": "bootstrap_or_native",
+        "path": "work/apk_probe/libil2cpp.so",
+        "entry": "",
+        "url": "https://android.googlesource.com/toolchain/clang",
+        "domain": "android.googlesource.com",
+        "evidence": "https://android.googlesource.com/toolchain/clang"
+      },
+      {
+        "category": "url",
+        "classification": "unclassified_url",
+        "source": "bootstrap_or_native",
+        "path": "work/apk_probe/libil2cpp.so",
+        "entry": "",
+        "url": "https://android.googlesource.com/toolchain/llvm",
+        "domain": "android.googlesource.com",
+        "evidence": "https://android.googlesource.com/toolchain/llvm"
+      },
+      {
+        "category": "url",
+        "classification": "unclassified_url",
+        "source": "bootstrap_or_native",
+        "path": "work/apk_probe/libunity.so",
+        "entry": "",
+        "url": "https://curl.haxx.se/docs/http-cookies.html",
+        "domain": "curl.haxx.se",
+        "evidence": "https://curl.haxx.se/docs/http-cookies.html"
+      },
+      {
+        "category": "url",
+        "classification": "unclassified_url",
+        "source": "split_apk",
+        "path": "girlswar_merged_extracted/split_apks/com.girlwars.kr.apk",
+        "entry": "assets/bin/Data/Managed/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx",
+        "url": "http://www.ximian.com",
+        "domain": "www.ximian.com",
+        "evidence": "http://www.ximian.com"
+      },
+      {
+        "category": "url",
+        "classification": "unclassified_url",
+        "source": "split_apk",
+        "path": "girlswar_merged_extracted/split_apks/com.girlwars.kr.apk",
+        "entry": "assets/bin/Data/Managed/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx",
+        "url": "http://schemas.xmlsoap.org/soap/envelope/",
+        "domain": "schemas.xmlsoap.org",
+        "evidence": "http://schemas.xmlsoap.org/soap/envelope/"
+      },
+      {
+        "category": "url",
+        "classification": "unclassified_url",
+        "source": "split_apk",
+        "path": "girlswar_merged_extracted/split_apks/com.girlwars.kr.apk",
+        "entry": "assets/bin/Data/Managed/etc/mono/browscap.ini",
+        "url": "http://browsers.garykeith.com",
+        "domain": "browsers.garykeith.com",
+        "evidence": "http://browsers.garykeith.com"
+      },
+      {
+        "category": "url",
+        "classification": "unclassified_url",
+        "source": "split_apk",
+        "path": "girlswar_merged_extracted/split_apks/com.girlwars.kr.apk",
+        "entry": "assets/bin/Data/Managed/etc/mono/browscap.ini",
+        "url": "http://www.google.com/bot.html)]",
+        "domain": "www.google.com",
+        "evidence": "http://www.google.com/bot.html)]"
+      },
+      {
+        "category": "url",
+        "classification": "unclassified_url",
+        "source": "split_apk",
+        "path": "girlswar_merged_extracted/split_apks/com.girlwars.kr.apk",
+        "entry": "assets/bin/Data/Managed/etc/mono/browscap.ini",
+        "url": "http://www.google.com/adsbot.html)]",
+        "domain": "www.google.com",
+        "evidence": "http://www.google.com/adsbot.html)]"
+      },
+      {
+        "category": "url",
+        "classification": "unclassified_url",
+        "source": "split_apk",
+        "path": "girlswar_merged_extracted/split_apks/com.girlwars.kr.apk",
+        "entry": "assets/bin/Data/Managed/etc/mono/browscap.ini",
+        "url": "http://www.google.com/feedfetcher.html)]",
+        "domain": "www.google.com",
+        "evidence": "http://www.google.com/feedfetcher.html)]"
+      },
+      {
+        "category": "url",
+        "classification": "unclassified_url",
+        "source": "split_apk",
+        "path": "girlswar_merged_extracted/split_apks/com.girlwars.kr.apk",
+        "entry": "assets/bin/Data/Managed/etc/mono/browscap.ini",
+        "url": "http://www.googlebot.com/bot.html)]",
+        "domain": "www.googlebot.com",
+        "evidence": "http://www.googlebot.com/bot.html)]"
+      },
+      {
+        "category": "url",
+        "classification": "unclassified_url",
+        "source": "split_apk",
+        "path": "girlswar_merged_extracted/split_apks/com.girlwars.kr.apk",
+        "entry": "assets/bin/Data/Managed/etc/mono/browscap.ini",
+        "url": "http://help.yahoo.com/help/us/ysearch/slurp)]",
+        "domain": "help.yahoo.com",
+        "evidence": "http://help.yahoo.com/help/us/ysearch/slurp)]"
+      },
+      {
+        "category": "url",
+        "classification": "unclassified_url",
+        "source": "split_apk",
+        "path": "girlswar_merged_extracted/split_apks/com.girlwars.kr.apk",
+        "entry": "assets/bin/Data/Managed/etc/mono/browscap.ini",
+        "url": "http://misc.yahoo.com.cn/help.html)]",
+        "domain": "misc.yahoo.com.cn",
+        "evidence": "http://misc.yahoo.com.cn/help.html)]"
+      },
+      {
+        "category": "url",
+        "classification": "unclassified_url",
+        "source": "split_apk",
+        "path": "girlswar_merged_extracted/split_apks/com.girlwars.kr.apk",
+        "entry": "assets/bin/Data/Managed/etc/mono/browscap.ini",
+        "url": "http://www.inktomi.com/slurp.html)]",
+        "domain": "www.inktomi.com",
+        "evidence": "http://www.inktomi.com/slurp.html)]"
+      },
+      {
+        "category": "url",
+        "classification": "unclassified_url",
+        "source": "split_apk",
+        "path": "girlswar_merged_extracted/split_apks/com.girlwars.kr.apk",
+        "entry": "assets/bin/Data/Managed/etc/mono/browscap.ini",
+        "url": "http://search.msn.com/msnbot.htm)]",
+        "domain": "search.msn.com",
+        "evidence": "http://search.msn.com/msnbot.htm)]"
+      },
+      {
+        "category": "url",
+        "classification": "unclassified_url",
+        "source": "split_apk",
+        "path": "girlswar_merged_extracted/split_apks/com.girlwars.kr.apk",
+        "entry": "assets/bin/Data/Managed/etc/mono/browscap.ini",
+        "url": "http://botw.org)]",
+        "domain": "botw.org)]",
+        "evidence": "http://botw.org)]"
+      },
+      {
+        "category": "url",
+        "classification": "unclassified_url",
+        "source": "split_apk",
+        "path": "girlswar_merged_extracted/split_apks/com.girlwars.kr.apk",
+        "entry": "assets/bin/Data/Managed/etc/mono/browscap.ini",
+        "url": "http://www.dotnetdotcom.org/*)]",
+        "domain": "www.dotnetdotcom.org",
+        "evidence": "http://www.dotnetdotcom.org/*)]"
+      },
+      {
+        "category": "url",
+        "classification": "unclassified_url",
+        "source": "split_apk",
+        "path": "girlswar_merged_extracted/split_apks/com.girlwars.kr.apk",
+        "entry": "assets/bin/Data/Managed/etc/mono/browscap.ini",
+        "url": "http://www.entireweb.com*)]",
+        "domain": "www.entireweb.com*)]",
+        "evidence": "http://www.entireweb.com*)]"
+      },
+      {
+        "category": "url",
+        "classification": "unclassified_url",
+        "source": "split_apk",
+        "path": "girlswar_merged_extracted/split_apks/com.girlwars.kr.apk",
+        "entry": "assets/bin/Data/Managed/etc/mono/browscap.ini",
+        "url": "http://www.envolk.com/envolk*)]",
+        "domain": "www.envolk.com",
+        "evidence": "http://www.envolk.com/envolk*)]"
+      },
+      {
+        "category": "url",
+        "classification": "unclassified_url",
+        "source": "split_apk",
+        "path": "girlswar_merged_extracted/split_apks/com.girlwars.kr.apk",
+        "entry": "assets/bin/Data/Managed/etc/mono/browscap.ini",
+        "url": "http://www.bestwhois.net/)]",
+        "domain": "www.bestwhois.net",
+        "evidence": "http://www.bestwhois.net/)]"
+      },
+      {
+        "category": "url",
+        "classification": "unclassified_url",
+        "source": "split_apk",
+        "path": "girlswar_merged_extracted/split_apks/com.girlwars.kr.apk",
+        "entry": "assets/bin/Data/Managed/etc/mono/browscap.ini",
+        "url": "http://www.displaydetails.com)]",
+        "domain": "www.displaydetails.com)]",
+        "evidence": "http://www.displaydetails.com)]"
+      },
+      {
+        "category": "url",
+        "classification": "unclassified_url",
+        "source": "split_apk",
+        "path": "girlswar_merged_extracted/split_apks/com.girlwars.kr.apk",
+        "entry": "assets/bin/Data/Managed/etc/mono/browscap.ini",
+        "url": "http://www.domaincrawler.com/domains/view/*)]",
+        "domain": "www.domaincrawler.com",
+        "evidence": "http://www.domaincrawler.com/domains/view/*)]"
+      },
+      {
+        "category": "url",
+        "classification": "unclassified_url",
+        "source": "split_apk",
+        "path": "girlswar_merged_extracted/split_apks/com.girlwars.kr.apk",
+        "entry": "assets/bin/Data/Managed/etc/mono/browscap.ini",
+        "url": "http://hilfe.acont.de/bot.html",
+        "domain": "hilfe.acont.de",
+        "evidence": "http://hilfe.acont.de/bot.html"
+      },
+      {
+        "category": "url",
+        "classification": "unclassified_url",
+        "source": "split_apk",
+        "path": "girlswar_merged_extracted/split_apks/com.girlwars.kr.apk",
+        "entry": "assets/bin/Data/Managed/etc/mono/browscap.ini",
+        "url": "http://MapoftheInternet.com)]",
+        "domain": "mapoftheinternet.com)]",
+        "evidence": "http://MapoftheInternet.com)]"
+      },
+      {
+        "category": "url",
+        "classification": "unclassified_url",
+        "source": "split_apk",
+        "path": "girlswar_merged_extracted/split_apks/com.girlwars.kr.apk",
+        "entry": "assets/bin/Data/Managed/etc/mono/browscap.ini",
+        "url": "http://www.meta-spinner.de/",
+        "domain": "www.meta-spinner.de",
+        "evidence": "http://www.meta-spinner.de/"
+      },
+      {
+        "category": "url",
+        "classification": "unclassified_url",
+        "source": "split_apk",
+        "path": "girlswar_merged_extracted/split_apks/com.girlwars.kr.apk",
+        "entry": "assets/bin/Data/Managed/etc/mono/browscap.ini",
+        "url": "http://gnomit.com/",
+        "domain": "gnomit.com",
+        "evidence": "http://gnomit.com/"
+      },
+      {
+        "category": "url",
+        "classification": "unclassified_url",
+        "source": "split_apk",
+        "path": "girlswar_merged_extracted/split_apks/com.girlwars.kr.apk",
+        "entry": "assets/bin/Data/Managed/etc/mono/browscap.ini",
+        "url": "http://www.diffbot.com)]",
+        "domain": "www.diffbot.com)]",
+        "evidence": "http://www.diffbot.com)]"
+      },
+      {
+        "category": "url",
+        "classification": "unclassified_url",
+        "source": "split_apk",
+        "path": "girlswar_merged_extracted/split_apks/com.girlwars.kr.apk",
+        "entry": "assets/bin/Data/Managed/etc/mono/browscap.ini",
+        "url": "http://www.healthdash.com)]",
+        "domain": "www.healthdash.com)]",
+        "evidence": "http://www.healthdash.com)]"
+      },
+      {
+        "category": "url",
+        "classification": "unclassified_url",
+        "source": "split_apk",
+        "path": "girlswar_merged_extracted/split_apks/com.girlwars.kr.apk",
+        "entry": "assets/bin/Data/Managed/etc/mono/browscap.ini",
+        "url": "http://www.jadynave.com/robot*]",
+        "domain": "www.jadynave.com",
+        "evidence": "http://www.jadynave.com/robot*]"
+      },
+      {
+        "category": "url",
+        "classification": "unclassified_url",
+        "source": "split_apk",
+        "path": "girlswar_merged_extracted/split_apks/com.girlwars.kr.apk",
+        "entry": "assets/bin/Data/Managed/etc/mono/browscap.ini",
+        "url": "http://www.kyluka.com/crawl.html",
+        "domain": "www.kyluka.com",
+        "evidence": "http://www.kyluka.com/crawl.html"
+      },
+      {
+        "category": "url",
+        "classification": "unclassified_url",
+        "source": "split_apk",
+        "path": "girlswar_merged_extracted/split_apks/com.girlwars.kr.apk",
+        "entry": "assets/bin/Data/Managed/etc/mono/browscap.ini",
+        "url": "http://www.majestic12.co.uk/bot.php*)]",
+        "domain": "www.majestic12.co.uk",
+        "evidence": "http://www.majestic12.co.uk/bot.php*)]"
+      },
+      {
+        "category": "url",
+        "classification": "unclassified_url",
+        "source": "split_apk",
+        "path": "girlswar_merged_extracted/split_apks/com.girlwars.kr.apk",
+        "entry": "assets/bin/Data/Managed/etc/mono/browscap.ini",
+        "url": "http://www.europarchive.org)]",
+        "domain": "www.europarchive.org)]",
+        "evidence": "http://www.europarchive.org)]"
+      },
+      {
+        "category": "url",
+        "classification": "unclassified_url",
+        "source": "split_apk",
+        "path": "girlswar_merged_extracted/split_apks/com.girlwars.kr.apk",
+        "entry": "assets/bin/Data/Managed/etc/mono/browscap.ini",
+        "url": "http://www.twingly.com/)]",
+        "domain": "www.twingly.com",
+        "evidence": "http://www.twingly.com/)]"
+      },
+      {
+        "category": "url",
+        "classification": "unclassified_url",
+        "source": "split_apk",
+        "path": "girlswar_merged_extracted/split_apks/com.girlwars.kr.apk",
+        "entry": "assets/bin/Data/Managed/etc/mono/browscap.ini",
+        "url": "http://www.unwrap.jp*)]",
+        "domain": "www.unwrap.jp*)]",
+        "evidence": "http://www.unwrap.jp*)]"
+      },
+      {
+        "category": "url",
+        "classification": "unclassified_url",
+        "source": "split_apk",
+        "path": "girlswar_merged_extracted/split_apks/com.girlwars.kr.apk",
+        "entry": "assets/bin/Data/Managed/etc/mono/browscap.ini",
+        "url": "http://www.opentagger.com/opentaggerbot.htm)]",
+        "domain": "www.opentagger.com",
+        "evidence": "http://www.opentagger.com/opentaggerbot.htm)]"
+      },
+      {
+        "category": "url",
+        "classification": "unclassified_url",
+        "source": "split_apk",
+        "path": "girlswar_merged_extracted/split_apks/com.girlwars.kr.apk",
+        "entry": "assets/bin/Data/Managed/etc/mono/browscap.ini",
+        "url": "http://www.herz-power.de/technik.html)]",
+        "domain": "www.herz-power.de",
+        "evidence": "http://www.herz-power.de/technik.html)]"
+      },
+      {
+        "category": "url",
+        "classification": "unclassified_url",
+        "source": "split_apk",
+        "path": "girlswar_merged_extracted/split_apks/com.girlwars.kr.apk",
+        "entry": "assets/bin/Data/Managed/etc/mono/browscap.ini",
+        "url": "http://babelserver.org/rix)]",
+        "domain": "babelserver.org",
+        "evidence": "http://babelserver.org/rix)]"
+      },
+      {
+        "category": "url",
+        "classification": "unclassified_url",
+        "source": "split_apk",
+        "path": "girlswar_merged_extracted/split_apks/com.girlwars.kr.apk",
+        "entry": "assets/bin/Data/Managed/etc/mono/browscap.ini",
+        "url": "http://tinyurl.com/64t5n",
+        "domain": "tinyurl.com",
+        "evidence": "http://tinyurl.com/64t5n"
+      },
+      {
+        "category": "url",
+        "classification": "unclassified_url",
+        "source": "split_apk",
+        "path": "girlswar_merged_extracted/split_apks/com.girlwars.kr.apk",
+        "entry": "assets/bin/Data/Managed/etc/mono/browscap.ini",
+        "url": "http://www.tecomi.com/bot.htm)]",
+        "domain": "www.tecomi.com",
+        "evidence": "http://www.tecomi.com/bot.htm)]"
+      },
+      {
+        "category": "url",
+        "classification": "unclassified_url",
+        "source": "split_apk",
+        "path": "girlswar_merged_extracted/split_apks/com.girlwars.kr.apk",
+        "entry": "assets/bin/Data/Managed/etc/mono/browscap.ini",
+        "url": "http://www.yoow.eu)]",
+        "domain": "www.yoow.eu)]",
+        "evidence": "http://www.yoow.eu)]"
+      },
+      {
+        "category": "url",
+        "classification": "unclassified_url",
+        "source": "split_apk",
+        "path": "girlswar_merged_extracted/split_apks/com.girlwars.kr.apk",
+        "entry": "assets/bin/Data/Managed/etc/mono/browscap.ini",
+        "url": "http://www.answerbus.com/)]",
+        "domain": "www.answerbus.com",
+        "evidence": "http://www.answerbus.com/)]"
+      },
+      {
+        "category": "url",
+        "classification": "unclassified_url",
+        "source": "split_apk",
+        "path": "girlswar_merged_extracted/split_apks/com.girlwars.kr.apk",
+        "entry": "assets/bin/Data/Managed/etc/mono/browscap.ini",
+        "url": "http://www.busiverse.com/bot.php)]",
+        "domain": "www.busiverse.com",
+        "evidence": "http://www.busiverse.com/bot.php)]"
+      },
+      {
+        "category": "url",
+        "classification": "unclassified_url",
+        "source": "split_apk",
+        "path": "girlswar_merged_extracted/split_apks/com.girlwars.kr.apk",
+        "entry": "assets/bin/Data/Managed/etc/mono/browscap.ini",
+        "url": "http://www.catchbot.com]",
+        "domain": "www.catchbot.com]",
+        "evidence": "http://www.catchbot.com]"
+      },
+      {
+        "category": "url",
+        "classification": "unclassified_url",
+        "source": "split_apk",
+        "path": "girlswar_merged_extracted/split_apks/com.girlwars.kr.apk",
+        "entry": "assets/bin/Data/Managed/etc/mono/browscap.ini",
+        "url": "http://www.cipinet.com/bot.html)]",
+        "domain": "www.cipinet.com",
+        "evidence": "http://www.cipinet.com/bot.html)]"
+      },
+      {
+        "category": "url",
+        "classification": "unclassified_url",
+        "source": "split_apk",
+        "path": "girlswar_merged_extracted/split_apks/com.girlwars.kr.apk",
+        "entry": "assets/bin/Data/Managed/etc/mono/browscap.ini",
+        "url": "http://www.sqwidge.com/bot/)]",
+        "domain": "www.sqwidge.com",
+        "evidence": "http://www.sqwidge.com/bot/)]"
+      },
+      {
+        "category": "url",
+        "classification": "unclassified_url",
+        "source": "split_apk",
+        "path": "girlswar_merged_extracted/split_apks/com.girlwars.kr.apk",
+        "entry": "assets/bin/Data/Managed/etc/mono/browscap.ini",
+        "url": "http://www.goforit.com/about/?)]",
+        "domain": "www.goforit.com",
+        "evidence": "http://www.goforit.com/about/?)]"
+      },
+      {
+        "category": "url",
+        "classification": "unclassified_url",
+        "source": "split_apk",
+        "path": "girlswar_merged_extracted/split_apks/com.girlwars.kr.apk",
+        "entry": "assets/bin/Data/Managed/etc/mono/browscap.ini",
+        "url": "http://holmes.ge)]",
+        "domain": "holmes.ge)]",
+        "evidence": "http://holmes.ge)]"
+      },
+      {
+        "category": "url",
+        "classification": "unclassified_url",
+        "source": "split_apk",
+        "path": "girlswar_merged_extracted/split_apks/com.girlwars.kr.apk",
+        "entry": "assets/bin/Data/Managed/etc/mono/browscap.ini",
+        "url": "http://corp.infocious.com/tech_crawler.php)]",
+        "domain": "corp.infocious.com",
+        "evidence": "http://corp.infocious.com/tech_crawler.php)]"
+      },
+      {
+        "category": "url",
+        "classification": "unclassified_url",
+        "source": "split_apk",
+        "path": "girlswar_merged_extracted/split_apks/com.girlwars.kr.apk",
+        "entry": "assets/bin/Data/Managed/etc/mono/browscap.ini",
+        "url": "http://knight.zook.in/",
+        "domain": "knight.zook.in",
+        "evidence": "http://knight.zook.in/"
+      },
+      {
+        "category": "url",
+        "classification": "unclassified_url",
+        "source": "split_apk",
+        "path": "girlswar_merged_extracted/split_apks/com.girlwars.kr.apk",
+        "entry": "assets/bin/Data/Managed/etc/mono/browscap.ini",
+        "url": "http://search.thunderstone.com/texis/websearch/about.html)]",
+        "domain": "search.thunderstone.com",
+        "evidence": "http://search.thunderstone.com/texis/websearch/about.html)]"
+      },
+      {
+        "category": "url",
+        "classification": "unclassified_url",
+        "source": "split_apk",
+        "path": "girlswar_merged_extracted/split_apks/com.girlwars.kr.apk",
+        "entry": "assets/bin/Data/Managed/etc/mono/browscap.ini",
+        "url": "http://www.girafa.com)]",
+        "domain": "www.girafa.com)]",
+        "evidence": "http://www.girafa.com)]"
+      },
+      {
+        "category": "url",
+        "classification": "unclassified_url",
+        "source": "split_apk",
+        "path": "girlswar_merged_extracted/split_apks/com.girlwars.kr.apk",
+        "entry": "assets/bin/Data/Managed/etc/mono/browscap.ini",
+        "url": "http://www.whizbang.com/crawler)]",
+        "domain": "www.whizbang.com",
+        "evidence": "http://www.whizbang.com/crawler)]"
+      },
+      {
+        "category": "url",
+        "classification": "unclassified_url",
+        "source": "split_apk",
+        "path": "girlswar_merged_extracted/split_apks/com.girlwars.kr.apk",
+        "entry": "assets/bin/Data/Managed/etc/mono/browscap.ini",
+        "url": "http://www.activetourist.com)]",
+        "domain": "www.activetourist.com)]",
+        "evidence": "http://www.activetourist.com)]"
+      },
+      {
+        "category": "url",
+        "classification": "unclassified_url",
+        "source": "split_apk",
+        "path": "girlswar_merged_extracted/split_apks/com.girlwars.kr.apk",
+        "entry": "assets/bin/Data/Managed/etc/mono/browscap.ini",
+        "url": "http://www.dontbuylists.com/)]",
+        "domain": "www.dontbuylists.com",
+        "evidence": "http://www.dontbuylists.com/)]"
+      },
+      {
+        "category": "url",
+        "classification": "unclassified_url",
+        "source": "split_apk",
+        "path": "girlswar_merged_extracted/split_apks/com.girlwars.kr.apk",
+        "entry": "assets/bin/Data/Managed/etc/mono/browscap.ini",
+        "url": "http://www.lipperhey.com/)]",
+        "domain": "www.lipperhey.com",
+        "evidence": "http://www.lipperhey.com/)]"
+      },
+      {
+        "category": "url",
+        "classification": "unclassified_url",
+        "source": "split_apk",
+        "path": "girlswar_merged_extracted/split_apks/com.girlwars.kr.apk",
+        "entry": "assets/bin/Data/Managed/etc/mono/browscap.ini",
+        "url": "http://www.mojeek.com/bot.html)]",
+        "domain": "www.mojeek.com",
+        "evidence": "http://www.mojeek.com/bot.html)]"
+      },
+      {
+        "category": "url",
+        "classification": "unclassified_url",
+        "source": "split_apk",
+        "path": "girlswar_merged_extracted/split_apks/com.girlwars.kr.apk",
+        "entry": "assets/bin/Data/Managed/etc/mono/browscap.ini",
+        "url": "http://www.scoutjet.com/)]",
+        "domain": "www.scoutjet.com",
+        "evidence": "http://www.scoutjet.com/)]"
+      },
+      {
+        "category": "url",
+        "classification": "unclassified_url",
+        "source": "split_apk",
+        "path": "girlswar_merged_extracted/split_apks/com.girlwars.kr.apk",
+        "entry": "assets/bin/Data/Managed/etc/mono/browscap.ini",
+        "url": "http://www.scrubtheweb.com/abs/meta-check.html)]",
+        "domain": "www.scrubtheweb.com",
+        "evidence": "http://www.scrubtheweb.com/abs/meta-check.html)]"
+      },
+      {
+        "category": "url",
+        "classification": "unclassified_url",
+        "source": "split_apk",
+        "path": "girlswar_merged_extracted/split_apks/com.girlwars.kr.apk",
+        "entry": "assets/bin/Data/Managed/etc/mono/browscap.ini",
+        "url": "http://www.youdao.com/help/webmaster/spider/*)]",
+        "domain": "www.youdao.com",
+        "evidence": "http://www.youdao.com/help/webmaster/spider/*)]"
+      },
+      {
+        "category": "url",
+        "classification": "unclassified_url",
+        "source": "split_apk",
+        "path": "girlswar_merged_extracted/split_apks/com.girlwars.kr.apk",
+        "entry": "assets/bin/Data/Managed/etc/mono/browscap.ini",
+        "url": "http://www.pagebull.com/]",
+        "domain": "www.pagebull.com",
+        "evidence": "http://www.pagebull.com/]"
+      },
+      {
+        "category": "url",
+        "classification": "unclassified_url",
+        "source": "split_apk",
+        "path": "girlswar_merged_extracted/split_apks/com.girlwars.kr.apk",
+        "entry": "assets/bin/Data/Managed/etc/mono/browscap.ini",
+        "url": "http://www.SiteSpider.com/)]",
+        "domain": "www.sitespider.com",
+        "evidence": "http://www.SiteSpider.com/)]"
+      },
+      {
+        "category": "url",
+        "classification": "unclassified_url",
+        "source": "split_apk",
+        "path": "girlswar_merged_extracted/split_apks/com.girlwars.kr.apk",
+        "entry": "assets/bin/Data/Managed/etc/mono/browscap.ini",
+        "url": "http://www.kosmix.com/html/crawler.html)]",
+        "domain": "www.kosmix.com",
+        "evidence": "http://www.kosmix.com/html/crawler.html)]"
+      },
+      {
+        "category": "url",
+        "classification": "unclassified_url",
+        "source": "split_apk",
+        "path": "girlswar_merged_extracted/split_apks/com.girlwars.kr.apk",
+        "entry": "assets/bin/Data/Managed/etc/mono/browscap.ini",
+        "url": "http://www.bloglines.com*)]",
+        "domain": "www.bloglines.com*)]",
+        "evidence": "http://www.bloglines.com*)]"
+      },
+      {
+        "category": "url",
+        "classification": "unclassified_url",
+        "source": "split_apk",
+        "path": "girlswar_merged_extracted/split_apks/com.girlwars.kr.apk",
+        "entry": "assets/bin/Data/Managed/etc/mono/browscap.ini",
+        "url": "http://www.kinja.com",
+        "domain": "www.kinja.com",
+        "evidence": "http://www.kinja.com"
+      },
+      {
+        "category": "url",
+        "classification": "unclassified_url",
+        "source": "split_apk",
+        "path": "girlswar_merged_extracted/split_apks/com.girlwars.kr.apk",
+        "entry": "assets/bin/Data/Managed/etc/mono/browscap.ini",
+        "url": "http://minutillo.com/steve/feedonfeeds/)]",
+        "domain": "minutillo.com",
+        "evidence": "http://minutillo.com/steve/feedonfeeds/)]"
+      },
+      {
+        "category": "url",
+        "classification": "unclassified_url",
+        "source": "split_apk",
+        "path": "girlswar_merged_extracted/split_apks/com.girlwars.kr.apk",
+        "entry": "assets/bin/Data/Managed/etc/mono/browscap.ini",
+        "url": "http://liferea.sf.net/)]",
+        "domain": "liferea.sf.net",
+        "evidence": "http://liferea.sf.net/)]"
+      },
+      {
+        "category": "url",
+        "classification": "unclassified_url",
+        "source": "split_apk",
+        "path": "girlswar_merged_extracted/split_apks/com.girlwars.kr.apk",
+        "entry": "assets/bin/Data/Managed/etc/mono/browscap.ini",
+        "url": "http://reader.livedoor.com/;*)]",
+        "domain": "reader.livedoor.com",
+        "evidence": "http://reader.livedoor.com/;*)]"
+      },
+      {
+        "category": "url",
+        "classification": "unclassified_url",
+        "source": "split_apk",
+        "path": "girlswar_merged_extracted/split_apks/com.girlwars.kr.apk",
+        "entry": "assets/bin/Data/Managed/etc/mono/browscap.ini",
+        "url": "http://www.rojo.com/corporate/help/agg",
+        "domain": "www.rojo.com",
+        "evidence": "http://www.rojo.com/corporate/help/agg"
+      },
+      {
+        "category": "url",
+        "classification": "unclassified_url",
+        "source": "split_apk",
+        "path": "girlswar_merged_extracted/split_apks/com.girlwars.kr.apk",
+        "entry": "assets/bin/Data/Managed/etc/mono/browscap.ini",
+        "url": "http://tailrank.com/robot)*]",
+        "domain": "tailrank.com",
+        "evidence": "http://tailrank.com/robot)*]"
+      },
+      {
+        "category": "url",
+        "classification": "unclassified_url",
+        "source": "split_apk",
+        "path": "girlswar_merged_extracted/split_apks/com.girlwars.kr.apk",
+        "entry": "assets/bin/Data/Managed/etc/mono/browscap.ini",
+        "url": "http://www.newzcrawler.com/?)]",
+        "domain": "www.newzcrawler.com",
+        "evidence": "http://www.newzcrawler.com/?)]"
+      },
+      {
+        "category": "url",
+        "classification": "unclassified_url",
+        "source": "split_apk",
+        "path": "girlswar_merged_extracted/split_apks/com.girlwars.kr.apk",
+        "entry": "assets/bin/Data/Managed/etc/mono/browscap.ini",
+        "url": "http://www.strategicboard.com)]",
+        "domain": "www.strategicboard.com)]",
+        "evidence": "http://www.strategicboard.com)]"
+      },
+      {
+        "category": "url",
+        "classification": "unclassified_url",
+        "source": "split_apk",
+        "path": "girlswar_merged_extracted/split_apks/com.girlwars.kr.apk",
+        "entry": "assets/bin/Data/Managed/etc/mono/browscap.ini",
+        "url": "http://www.tumblr.com/",
+        "domain": "www.tumblr.com",
+        "evidence": "http://www.tumblr.com/"
+      },
+      {
+        "category": "url",
+        "classification": "unclassified_url",
+        "source": "split_apk",
+        "path": "girlswar_merged_extracted/split_apks/com.girlwars.kr.apk",
+        "entry": "assets/bin/Data/Managed/etc/mono/browscap.ini",
+        "url": "http://wiki.creativecommons.org/Metadata_Scraper]",
+        "domain": "wiki.creativecommons.org",
+        "evidence": "http://wiki.creativecommons.org/Metadata_Scraper]"
+      },
+      {
+        "category": "url",
+        "classification": "unclassified_url",
+        "source": "split_apk",
+        "path": "girlswar_merged_extracted/split_apks/com.girlwars.kr.apk",
+        "entry": "assets/bin/Data/Managed/etc/mono/browscap.ini",
+        "url": "http://www.inclue.com",
+        "domain": "www.inclue.com",
+        "evidence": "http://www.inclue.com"
+      },
+      {
+        "category": "url",
+        "classification": "unclassified_url",
+        "source": "split_apk",
+        "path": "girlswar_merged_extracted/split_apks/com.girlwars.kr.apk",
+        "entry": "assets/bin/Data/Managed/etc/mono/browscap.ini",
+        "url": "http://www.runnk.com/",
+        "domain": "www.runnk.com",
+        "evidence": "http://www.runnk.com/"
+      },
+      {
+        "category": "url",
+        "classification": "unclassified_url",
+        "source": "split_apk",
+        "path": "girlswar_merged_extracted/split_apks/com.girlwars.kr.apk",
+        "entry": "assets/bin/Data/Managed/etc/mono/browscap.ini",
+        "url": "http://www.searchengineworld.com/validator/)]",
+        "domain": "www.searchengineworld.com",
+        "evidence": "http://www.searchengineworld.com/validator/)]"
+      },
+      {
+        "category": "url",
+        "classification": "unclassified_url",
+        "source": "split_apk",
+        "path": "girlswar_merged_extracted/split_apks/com.girlwars.kr.apk",
+        "entry": "assets/bin/Data/Managed/etc/mono/browscap.ini",
+        "url": "http://www.html2jpg.com]",
+        "domain": "www.html2jpg.com]",
+        "evidence": "http://www.html2jpg.com]"
+      },
+      {
+        "category": "url",
+        "classification": "unclassified_url",
+        "source": "split_apk",
+        "path": "girlswar_merged_extracted/split_apks/com.girlwars.kr.apk",
+        "entry": "assets/bin/Data/Managed/etc/mono/browscap.ini",
+        "url": "http://herbert.groot.jebbink.nl/?app=rssImages)]",
+        "domain": "herbert.groot.jebbink.nl",
+        "evidence": "http://herbert.groot.jebbink.nl/?app=rssImages)]"
+      },
+      {
+        "category": "url",
+        "classification": "unclassified_url",
+        "source": "split_apk",
+        "path": "girlswar_merged_extracted/split_apks/com.girlwars.kr.apk",
+        "entry": "assets/bin/Data/Managed/etc/mono/browscap.ini",
+        "url": "http://herbert.groot.jebbink.nl/?app=WebImages?)]",
+        "domain": "herbert.groot.jebbink.nl",
+        "evidence": "http://herbert.groot.jebbink.nl/?app=WebImages?)]"
+      },
+      {
+        "category": "url",
+        "classification": "unclassified_url",
+        "source": "split_apk",
+        "path": "girlswar_merged_extracted/split_apks/com.girlwars.kr.apk",
+        "entry": "assets/bin/Data/Managed/etc/mono/browscap.ini",
+        "url": "http://www.sync2it.com/susie)]",
+        "domain": "www.sync2it.com",
+        "evidence": "http://www.sync2it.com/susie)]"
+      },
+      {
+        "category": "url",
+        "classification": "unclassified_url",
+        "source": "split_apk",
+        "path": "girlswar_merged_extracted/split_apks/com.girlwars.kr.apk",
+        "entry": "assets/bin/Data/Managed/etc/mono/browscap.ini",
+        "url": "http://doc.php.net)]",
+        "domain": "doc.php.net)]",
+        "evidence": "http://doc.php.net)]"
+      },
+      {
+        "category": "url",
+        "classification": "unclassified_url",
+        "source": "split_apk",
+        "path": "girlswar_merged_extracted/split_apks/com.girlwars.kr.apk",
+        "entry": "assets/bin/Data/Managed/etc/mono/browscap.ini",
+        "url": "http://www.linktiger.com*)]",
+        "domain": "www.linktiger.com*)]",
+        "evidence": "http://www.linktiger.com*)]"
+      },
+      {
+        "category": "url",
+        "classification": "unclassified_url",
+        "source": "split_apk",
+        "path": "girlswar_merged_extracted/split_apks/com.girlwars.kr.apk",
+        "entry": "assets/bin/Data/Managed/etc/mono/browscap.ini",
+        "url": "http://net-promoter.com)]",
+        "domain": "net-promoter.com)]",
+        "evidence": "http://net-promoter.com)]"
+      },
+      {
+        "category": "url",
+        "classification": "unclassified_url",
+        "source": "split_apk",
+        "path": "girlswar_merged_extracted/split_apks/com.girlwars.kr.apk",
+        "entry": "assets/bin/Data/Managed/etc/mono/browscap.ini",
+        "url": "http://www.dead-links.com/)]",
+        "domain": "www.dead-links.com",
+        "evidence": "http://www.dead-links.com/)]"
+      },
+      {
+        "category": "url",
+        "classification": "unclassified_url",
+        "source": "split_apk",
+        "path": "girlswar_merged_extracted/split_apks/com.girlwars.kr.apk",
+        "entry": "assets/bin/Data/Managed/etc/mono/browscap.ini",
+        "url": "http://www.coriolis.ch/)]",
+        "domain": "www.coriolis.ch",
+        "evidence": "http://www.coriolis.ch/)]"
+      },
+      {
+        "category": "url",
+        "classification": "unclassified_url",
+        "source": "split_apk",
+        "path": "girlswar_merged_extracted/split_apks/com.girlwars.kr.apk",
+        "entry": "assets/bin/Data/Managed/etc/mono/browscap.ini",
+        "url": "http://www.simpy.com/?ref=bot",
+        "domain": "www.simpy.com",
+        "evidence": "http://www.simpy.com/?ref=bot"
+      },
+      {
+        "category": "url",
+        "classification": "unclassified_url",
+        "source": "split_apk",
+        "path": "girlswar_merged_extracted/split_apks/com.girlwars.kr.apk",
+        "entry": "assets/bin/Data/Managed/etc/mono/browscap.ini",
+        "url": "http://www.sync2it.com/bms/susie.php]",
+        "domain": "www.sync2it.com",
+        "evidence": "http://www.sync2it.com/bms/susie.php]"
+      },
+      {
+        "category": "url",
+        "classification": "unclassified_url",
+        "source": "split_apk",
+        "path": "girlswar_merged_extracted/split_apks/com.girlwars.kr.apk",
+        "entry": "assets/bin/Data/Managed/etc/mono/browscap.ini",
+        "url": "http://www.live.com/)]",
+        "domain": "www.live.com",
+        "evidence": "http://www.live.com/)]"
+      },
+      {
+        "category": "url",
+        "classification": "unclassified_url",
+        "source": "split_apk",
+        "path": "girlswar_merged_extracted/split_apks/com.girlwars.kr.apk",
+        "entry": "assets/bin/Data/Managed/etc/mono/browscap.ini",
+        "url": "http://Anonymouse.org/*]",
+        "domain": "anonymouse.org",
+        "evidence": "http://Anonymouse.org/*]"
+      },
+      {
+        "category": "url",
+        "classification": "unclassified_url",
+        "source": "split_apk",
+        "path": "girlswar_merged_extracted/split_apks/com.girlwars.kr.apk",
+        "entry": "assets/bin/Data/Managed/etc/mono/browscap.ini",
+        "url": "http://ponderer.org/*]",
+        "domain": "ponderer.org",
+        "evidence": "http://ponderer.org/*]"
+      },
+      {
+        "category": "url",
+        "classification": "unclassified_url",
+        "source": "split_apk",
+        "path": "girlswar_merged_extracted/split_apks/com.girlwars.kr.apk",
+        "entry": "assets/bin/Data/Managed/etc/mono/browscap.ini",
+        "url": "http://buytaert.net/crawler/)]",
+        "domain": "buytaert.net",
+        "evidence": "http://buytaert.net/crawler/)]"
+      },
+      {
+        "category": "url",
+        "classification": "unclassified_url",
+        "source": "split_apk",
+        "path": "girlswar_merged_extracted/split_apks/com.girlwars.kr.apk",
+        "entry": "assets/bin/Data/Managed/etc/mono/browscap.ini",
+        "url": "http://www.yama.info.waseda.ac.jp/~yamana/es/)]",
+        "domain": "www.yama.info.waseda.ac.jp",
+        "evidence": "http://www.yama.info.waseda.ac.jp/~yamana/es/)]"
+      },
+      {
+        "category": "url",
+        "classification": "unclassified_url",
+        "source": "split_apk",
+        "path": "girlswar_merged_extracted/split_apks/com.girlwars.kr.apk",
+        "entry": "assets/bin/Data/Managed/etc/mono/browscap.ini",
+        "url": "http://buytaert.net/crawler]",
+        "domain": "buytaert.net",
+        "evidence": "http://buytaert.net/crawler]"
+      },
+      {
+        "category": "url",
+        "classification": "unclassified_url",
+        "source": "split_apk",
+        "path": "girlswar_merged_extracted/split_apks/com.girlwars.kr.apk",
+        "entry": "assets/bin/Data/Managed/etc/mono/browscap.ini",
+        "url": "http://www.inetbot.com/bot.html)]",
+        "domain": "www.inetbot.com",
+        "evidence": "http://www.inetbot.com/bot.html)]"
+      },
+      {
+        "category": "url",
+        "classification": "unclassified_url",
+        "source": "split_apk",
+        "path": "girlswar_merged_extracted/split_apks/com.girlwars.kr.apk",
+        "entry": "assets/bin/Data/Managed/etc/mono/browscap.ini",
+        "url": "http://otc.dyndns.org/webscan/)]",
+        "domain": "otc.dyndns.org",
+        "evidence": "http://otc.dyndns.org/webscan/)]"
+      },
+      {
+        "category": "url",
+        "classification": "unclassified_url",
+        "source": "split_apk",
+        "path": "girlswar_merged_extracted/split_apks/com.girlwars.kr.apk",
+        "entry": "assets/bin/Data/Managed/etc/mono/browscap.ini",
+        "url": "http://www.kapere.com)]",
+        "domain": "www.kapere.com)]",
+        "evidence": "http://www.kapere.com)]"
+      },
+      {
+        "category": "url",
+        "classification": "unclassified_url",
+        "source": "split_apk",
+        "path": "girlswar_merged_extracted/split_apks/com.girlwars.kr.apk",
+        "entry": "assets/bin/Data/Managed/etc/mono/browscap.ini",
+        "url": "http://bookmarkbase.com)]",
+        "domain": "bookmarkbase.com)]",
+        "evidence": "http://bookmarkbase.com)]"
+      },
+      {
+        "category": "url",
+        "classification": "unclassified_url",
+        "source": "split_apk",
+        "path": "girlswar_merged_extracted/split_apks/com.girlwars.kr.apk",
+        "entry": "assets/bin/Data/Managed/etc/mono/browscap.ini",
+        "url": "http://www.scifihifi.com/cocoalicious)]",
+        "domain": "www.scifihifi.com",
+        "evidence": "http://www.scifihifi.com/cocoalicious)]"
+      },
+      {
+        "category": "url",
+        "classification": "unclassified_url",
+        "source": "split_apk",
+        "path": "girlswar_merged_extracted/split_apks/com.girlwars.kr.apk",
+        "entry": "assets/bin/Data/Managed/etc/mono/browscap.ini",
+        "url": "http://www.skycomp.ca]",
+        "domain": "www.skycomp.ca]",
+        "evidence": "http://www.skycomp.ca]"
+      },
+      {
+        "category": "url",
+        "classification": "unclassified_url",
+        "source": "split_apk",
+        "path": "girlswar_merged_extracted/split_apks/com.girlwars.kr.apk",
+        "entry": "assets/bin/Data/Managed/etc/mono/browscap.ini",
+        "url": "http://www.briansmodelcars.com/links/)]",
+        "domain": "www.briansmodelcars.com",
+        "evidence": "http://www.briansmodelcars.com/links/)]"
+      },
+      {
+        "category": "url",
+        "classification": "unclassified_url",
+        "source": "split_apk",
+        "path": "girlswar_merged_extracted/split_apks/com.girlwars.kr.apk",
+        "entry": "assets/bin/Data/Managed/etc/mono/browscap.ini",
+        "url": "http://browsers.garykeith.com/sitemail/contact-me.asp)]",
+        "domain": "browsers.garykeith.com",
+        "evidence": "http://browsers.garykeith.com/sitemail/contact-me.asp)]"
+      },
+      {
+        "category": "url",
+        "classification": "unclassified_url",
+        "source": "split_apk",
+        "path": "girlswar_merged_extracted/split_apks/com.girlwars.kr.apk",
+        "entry": "assets/bin/Data/Managed/etc/mono/browscap.ini",
+        "url": "http://subtextproject.com/",
+        "domain": "subtextproject.com",
+        "evidence": "http://subtextproject.com/"
+      },
+      {
+        "category": "url",
+        "classification": "unclassified_url",
+        "source": "split_apk",
+        "path": "girlswar_merged_extracted/split_apks/com.girlwars.kr.apk",
+        "entry": "assets/bin/Data/Managed/etc/mono/browscap.ini",
+        "url": "http://www.feedhub.com)]",
+        "domain": "www.feedhub.com)]",
+        "evidence": "http://www.feedhub.com)]"
+      },
+      {
+        "category": "url",
+        "classification": "unclassified_url",
+        "source": "split_apk",
+        "path": "girlswar_merged_extracted/split_apks/com.girlwars.kr.apk",
+        "entry": "assets/bin/Data/Managed/etc/mono/browscap.ini",
+        "url": "http://www.avantbrowser.com)]",
+        "domain": "www.avantbrowser.com)]",
+        "evidence": "http://www.avantbrowser.com)]"
+      },
+      {
+        "category": "url",
+        "classification": "unclassified_url",
+        "source": "split_apk",
+        "path": "girlswar_merged_extracted/split_apks/com.girlwars.kr.apk",
+        "entry": "assets/bin/Data/unity default resources",
+        "url": "http://www.ascendercorp.com/",
+        "domain": "www.ascendercorp.com",
+        "evidence": "http://www.ascendercorp.com/"
+      },
+      {
+        "category": "url",
+        "classification": "unclassified_url",
+        "source": "split_apk",
+        "path": "girlswar_merged_extracted/split_apks/com.girlwars.kr.apk",
+        "entry": "assets/bin/Data/unity default resources",
+        "url": "http://www.ascendercorp.com/typedesigners.html",
+        "domain": "www.ascendercorp.com",
+        "evidence": "http://www.ascendercorp.com/typedesigners.html"
+      },
+      {
+        "category": "url",
+        "classification": "unclassified_url",
+        "source": "split_apk",
+        "path": "girlswar_merged_extracted/split_apks/com.girlwars.kr.apk",
+        "entry": "assets/bin/Data/unity default resources",
+        "url": "http://scripts.sil.org/OFL",
+        "domain": "scripts.sil.org",
+        "evidence": "http://scripts.sil.org/OFL"
+      },
+      {
+        "category": "url",
+        "classification": "app_store_or_market_url",
+        "source": "split_apk",
+        "path": "girlswar_merged_extracted/split_apks/com.girlwars.kr.apk",
+        "entry": "assets/global-appstores.json",
+        "url": "https://m.onestore.co.kr/mobilepoc/etc/downloadGuide.omp",
+        "domain": "m.onestore.co.kr",
+        "evidence": "https://m.onestore.co.kr/mobilepoc/etc/downloadGuide.omp"
+      },
+      {
+        "category": "url",
+        "classification": "android_schema_url",
+        "source": "split_apk",
+        "path": "girlswar_merged_extracted/split_apks/com.girlwars.kr.apk",
+        "entry": "res/anim/abc_fade_in.xml",
+        "url": "http://schemas.android.com/apk/res/android",
+        "domain": "schemas.android.com",
+        "evidence": "http://schemas.android.com/apk/res/android"
+      },
+      {
+        "category": "url",
+        "classification": "android_schema_url",
+        "source": "split_apk",
+        "path": "girlswar_merged_extracted/split_apks/com.girlwars.kr.apk",
+        "entry": "res/color/abc_btn_colored_text_material.xml",
+        "url": "http://schemas.android.com/apk/res-auto",
+        "domain": "schemas.android.com",
+        "evidence": "http://schemas.android.com/apk/res-auto"
+      },
+      {
+        "category": "url",
+        "classification": "android_schema_url",
+        "source": "split_apk",
+        "path": "girlswar_merged_extracted/split_apks/com.girlwars.kr.apk",
+        "entry": "res/raw/firebase_common_keep.xml",
+        "url": "http://schemas.android.com/tools",
+        "domain": "schemas.android.com",
+        "evidence": "http://schemas.android.com/tools"
+      },
+      {
+        "category": "url",
+        "classification": "unclassified_url",
+        "source": "split_apk",
+        "path": "girlswar_merged_extracted/split_apks/config.arm64_v8a.apk",
+        "entry": "lib/arm64-v8a/libAVProVideo2Native.so",
+        "url": "https://android.googlesource.com/toolchain/llvm-project",
+        "domain": "android.googlesource.com",
+        "evidence": "https://android.googlesource.com/toolchain/llvm-project"
+      },
+      {
+        "category": "url",
+        "classification": "unclassified_url",
+        "source": "split_apk",
+        "path": "girlswar_merged_extracted/split_apks/config.arm64_v8a.apk",
+        "entry": "lib/arm64-v8a/libmemory_advice.so",
+        "url": "https://www.tensorflow.org/lite/guide/ops_select",
+        "domain": "www.tensorflow.org",
+        "evidence": "https://www.tensorflow.org/lite/guide/ops_select"
+      },
+      {
+        "category": "url",
+        "classification": "unclassified_url",
+        "source": "split_apk",
+        "path": "girlswar_merged_extracted/split_apks/config.arm64_v8a.apk",
+        "entry": "lib/arm64-v8a/libmemory_advice.so",
+        "url": "https://www.tensorflow.org/lite/guide/ops_custom",
+        "domain": "www.tensorflow.org",
+        "evidence": "https://www.tensorflow.org/lite/guide/ops_custom"
+      },
+      {
+        "category": "url",
+        "classification": "unclassified_url",
+        "source": "split_apk",
+        "path": "girlswar_merged_extracted/split_apks/config.arm64_v8a.apk",
+        "entry": "lib/arm64-v8a/libresonanceaudio.so",
+        "url": "http://gcc.gnu.org/bugs.html):",
+        "domain": "gcc.gnu.org",
+        "evidence": "http://gcc.gnu.org/bugs.html):"
+      },
+      {
+        "category": "url",
+        "classification": "third_party_observability_url",
+        "source": "split_apk",
+        "path": "girlswar_merged_extracted/split_apks/config.arm64_v8a.apk",
+        "entry": "lib/arm64-v8a/libuwa_gpm.so",
+        "url": "http://uwa-profdata.oss-cn-beijing.aliyuncs.com",
+        "domain": "uwa-profdata.oss-cn-beijing.aliyuncs.com",
+        "evidence": "http://uwa-profdata.oss-cn-beijing.aliyuncs.com"
+      }
+    ],
+    "bootstrapKeywordStrings": [
+      {
+        "category": "keyword_string",
+        "classification": "bootstrap_string",
+        "source": "bootstrap_or_native",
+        "path": "girlswar_merged_extracted/merged_content/AssetBundles/VersionFile.bytes",
+        "entry": "",
+        "evidence": "download/artsources/map/battlemap/map_11001/map_11001_1.assetbundle"
+      },
+      {
+        "category": "keyword_string",
+        "classification": "bootstrap_string",
+        "source": "bootstrap_or_native",
+        "path": "girlswar_merged_extracted/merged_content/AssetBundles/VersionFile.bytes",
+        "entry": "",
+        "evidence": "download/audio/dubvoice_1058.assetbundle"
+      },
+      {
+        "category": "keyword_string",
+        "classification": "bootstrap_string",
+        "source": "bootstrap_or_native",
+        "path": "girlswar_merged_extracted/merged_content/AssetBundles/VersionFile.bytes",
+        "entry": "",
+        "evidence": "download/audio/guide2.assetbundle"
+      },
+      {
+        "category": "keyword_string",
+        "classification": "bootstrap_string",
+        "source": "bootstrap_or_native",
+        "path": "girlswar_merged_extracted/merged_content/AssetBundles/VersionFile.bytes",
+        "entry": "",
+        "evidence": "download/audio/guide.assetbundle"
+      },
+      {
+        "category": "keyword_string",
+        "classification": "bootstrap_string",
+        "source": "bootstrap_or_native",
+        "path": "girlswar_merged_extracted/merged_content/AssetBundles/VersionFile.bytes",
+        "entry": "",
+        "evidence": "download/audio/gaoxiao.assetbundle"
+      },
+      {
+        "category": "keyword_string",
+        "classification": "bootstrap_string",
+        "source": "bootstrap_or_native",
+        "path": "girlswar_merged_extracted/merged_content/AssetBundles/VersionFile.bytes",
+        "entry": "",
+        "evidence": "download/audio/dumvoice_1043.assetbundle"
+      },
+      {
+        "category": "keyword_string",
+        "classification": "bootstrap_string",
+        "source": "bootstrap_or_native",
+        "path": "girlswar_merged_extracted/merged_content/AssetBundles/VersionFile.bytes",
+        "entry": "",
+        "evidence": "download/audio/dubvoice_21073.assetbundle"
+      },
+      {
+        "category": "keyword_string",
+        "classification": "bootstrap_string",
+        "source": "bootstrap_or_native",
+        "path": "girlswar_merged_extracted/merged_content/AssetBundles/VersionFile.bytes",
+        "entry": "",
+        "evidence": "download/audio/dubvoice_21015.assetbundle"
+      },
+      {
+        "category": "keyword_string",
+        "classification": "bootstrap_string",
+        "source": "bootstrap_or_native",
+        "path": "girlswar_merged_extracted/merged_content/AssetBundles/VersionFile.bytes",
+        "entry": "",
+        "evidence": "download/audio/dubvoice_1067.assetbundle"
+      },
+      {
+        "category": "keyword_string",
+        "classification": "bootstrap_string",
+        "source": "bootstrap_or_native",
+        "path": "girlswar_merged_extracted/merged_content/AssetBundles/VersionFile.bytes",
+        "entry": "",
+        "evidence": "download/audio/dubvoice_1065.assetbundle"
+      },
+      {
+        "category": "keyword_string",
+        "classification": "bootstrap_string",
+        "source": "bootstrap_or_native",
+        "path": "girlswar_merged_extracted/merged_content/AssetBundles/VersionFile.bytes",
+        "entry": "",
+        "evidence": "download/audio/dubvoice_1062.assetbundle"
+      },
+      {
+        "category": "keyword_string",
+        "classification": "bootstrap_string",
+        "source": "bootstrap_or_native",
+        "path": "girlswar_merged_extracted/merged_content/AssetBundles/VersionFile.bytes",
+        "entry": "",
+        "evidence": "download/audio/dubvoice_1060.assetbundle"
+      },
+      {
+        "category": "keyword_string",
+        "classification": "bootstrap_string",
+        "source": "bootstrap_or_native",
+        "path": "girlswar_merged_extracted/merged_content/AssetBundles/VersionFile.bytes",
+        "entry": "",
+        "evidence": "download/audio/dubvoice_1056.assetbundle"
+      },
+      {
+        "category": "keyword_string",
+        "classification": "bootstrap_string",
+        "source": "bootstrap_or_native",
+        "path": "girlswar_merged_extracted/merged_content/AssetBundles/VersionFile.bytes",
+        "entry": "",
+        "evidence": "download/audio/huanle1.assetbundle"
+      },
+      {
+        "category": "keyword_string",
+        "classification": "bootstrap_string",
+        "source": "bootstrap_or_native",
+        "path": "girlswar_merged_extracted/merged_content/AssetBundles/VersionFile.bytes",
+        "entry": "",
+        "evidence": "download/audio/dubvoice_1054.assetbundle"
+      },
+      {
+        "category": "keyword_string",
+        "classification": "bootstrap_string",
+        "source": "bootstrap_or_native",
+        "path": "girlswar_merged_extracted/merged_content/AssetBundles/VersionFile.bytes",
+        "entry": "",
+        "evidence": "download/audio/dubvoice_1053.assetbundle"
+      },
+      {
+        "category": "keyword_string",
+        "classification": "bootstrap_string",
+        "source": "bootstrap_or_native",
+        "path": "girlswar_merged_extracted/merged_content/AssetBundles/VersionFile.bytes",
+        "entry": "",
+        "evidence": "download/audio/dubvoice_1052.assetbundle"
+      },
+      {
+        "category": "keyword_string",
+        "classification": "bootstrap_string",
+        "source": "bootstrap_or_native",
+        "path": "girlswar_merged_extracted/merged_content/AssetBundles/VersionFile.bytes",
+        "entry": "",
+        "evidence": "download/audio/dubvoice_1050.assetbundle"
+      },
+      {
+        "category": "keyword_string",
+        "classification": "bootstrap_string",
+        "source": "bootstrap_or_native",
+        "path": "girlswar_merged_extracted/merged_content/AssetBundles/VersionFile.bytes",
+        "entry": "",
+        "evidence": "download/audio/dubvoice_1037.assetbundle"
+      },
+      {
+        "category": "keyword_string",
+        "classification": "bootstrap_string",
+        "source": "bootstrap_or_native",
+        "path": "girlswar_merged_extracted/merged_content/AssetBundles/VersionFile.bytes",
+        "entry": "",
+        "evidence": "download/audio/dubvoice_1035.assetbundle"
+      },
+      {
+        "category": "keyword_string",
+        "classification": "bootstrap_string",
+        "source": "bootstrap_or_native",
+        "path": "girlswar_merged_extracted/merged_content/AssetBundles/VersionFile.bytes",
+        "entry": "",
+        "evidence": "download/audio/dubvoice_1034.assetbundle"
+      },
+      {
+        "category": "keyword_string",
+        "classification": "bootstrap_string",
+        "source": "bootstrap_or_native",
+        "path": "girlswar_merged_extracted/merged_content/AssetBundles/VersionFile.bytes",
+        "entry": "",
+        "evidence": "download/audio/dubvoice_1030.assetbundle"
+      },
+      {
+        "category": "keyword_string",
+        "classification": "bootstrap_string",
+        "source": "bootstrap_or_native",
+        "path": "girlswar_merged_extracted/merged_content/AssetBundles/VersionFile.bytes",
+        "entry": "",
+        "evidence": "download/audio/dubvoice_1029.assetbundle"
+      },
+      {
+        "category": "keyword_string",
+        "classification": "bootstrap_string",
+        "source": "bootstrap_or_native",
+        "path": "girlswar_merged_extracted/merged_content/AssetBundles/VersionFile.bytes",
+        "entry": "",
+        "evidence": "download/audio/dubvoice_1025.assetbundle"
+      },
+      {
+        "category": "keyword_string",
+        "classification": "bootstrap_string",
+        "source": "bootstrap_or_native",
+        "path": "girlswar_merged_extracted/merged_content/AssetBundles/VersionFile.bytes",
+        "entry": "",
+        "evidence": "download/audio/heavybattle.assetbundle"
+      },
+      {
+        "category": "keyword_string",
+        "classification": "bootstrap_string",
+        "source": "bootstrap_or_native",
+        "path": "girlswar_merged_extracted/merged_content/AssetBundles/VersionFile.bytes",
+        "entry": "",
+        "evidence": "download/audio/huanle2.assetbundle"
+      },
+      {
+        "category": "keyword_string",
+        "classification": "bootstrap_string",
+        "source": "bootstrap_or_native",
+        "path": "girlswar_merged_extracted/merged_content/AssetBundles/VersionFile.bytes",
+        "entry": "",
+        "evidence": "download/config/activity.zip"
+      },
+      {
+        "category": "keyword_string",
+        "classification": "bootstrap_string",
+        "source": "bootstrap_or_native",
+        "path": "girlswar_merged_extracted/merged_content/AssetBundles/VersionFile.bytes",
+        "entry": "",
+        "evidence": "download/audio/richang2.assetbundle"
+      },
+      {
+        "category": "keyword_string",
+        "classification": "bootstrap_string",
+        "source": "bootstrap_or_native",
+        "path": "girlswar_merged_extracted/merged_content/AssetBundles/VersionFile.bytes",
+        "entry": "",
+        "evidence": "download/audio/wenxin1.assetbundle"
+      },
+      {
+        "category": "keyword_string",
+        "classification": "bootstrap_string",
+        "source": "bootstrap_or_native",
+        "path": "girlswar_merged_extracted/merged_content/AssetBundles/VersionFile.bytes",
+        "entry": "",
+        "evidence": "download/audio/weiji.assetbundle"
+      },
+      {
+        "category": "keyword_string",
+        "classification": "bootstrap_string",
+        "source": "bootstrap_or_native",
+        "path": "girlswar_merged_extracted/merged_content/AssetBundles/VersionFile.bytes",
+        "entry": "",
+        "evidence": "download/audio/summonpetbattlese.assetbundle"
+      },
+      {
+        "category": "keyword_string",
+        "classification": "bootstrap_string",
+        "source": "bootstrap_or_native",
+        "path": "girlswar_merged_extracted/merged_content/AssetBundles/VersionFile.bytes",
+        "entry": "",
+        "evidence": "download/audio/storyvoice_char0.assetbundle"
+      },
+      {
+        "category": "keyword_string",
+        "classification": "bootstrap_string",
+        "source": "bootstrap_or_native",
+        "path": "girlswar_merged_extracted/merged_content/AssetBundles/VersionFile.bytes",
+        "entry": "",
+        "evidence": "download/audio/storyvoice.assetbundle"
+      },
+      {
+        "category": "keyword_string",
+        "classification": "bootstrap_string",
+        "source": "bootstrap_or_native",
+        "path": "girlswar_merged_extracted/merged_content/AssetBundles/VersionFile.bytes",
+        "entry": "",
+        "evidence": "download/audio/storyse2.assetbundle"
+      },
+      {
+        "category": "keyword_string",
+        "classification": "bootstrap_string",
+        "source": "bootstrap_or_native",
+        "path": "girlswar_merged_extracted/merged_content/AssetBundles/VersionFile.bytes",
+        "entry": "",
+        "evidence": "download/audio/storyse.assetbundle"
+      },
+      {
+        "category": "keyword_string",
+        "classification": "bootstrap_string",
+        "source": "bootstrap_or_native",
+        "path": "girlswar_merged_extracted/merged_content/AssetBundles/VersionFile.bytes",
+        "entry": "",
+        "evidence": "download/audio/shuqing2.assetbundle"
+      },
+      {
+        "category": "keyword_string",
+        "classification": "bootstrap_string",
+        "source": "bootstrap_or_native",
+        "path": "girlswar_merged_extracted/merged_content/AssetBundles/VersionFile.bytes",
+        "entry": "",
+        "evidence": "download/audio/shuqing1.assetbundle"
+      },
+      {
+        "category": "keyword_string",
+        "classification": "bootstrap_string",
+        "source": "bootstrap_or_native",
+        "path": "girlswar_merged_extracted/merged_content/AssetBundles/VersionFile.bytes",
+        "entry": "",
+        "evidence": "download/audio/showbattle.assetbundle"
+      },
+      {
+        "category": "keyword_string",
+        "classification": "bootstrap_string",
+        "source": "bootstrap_or_native",
+        "path": "girlswar_merged_extracted/merged_content/AssetBundles/VersionFile.bytes",
+        "entry": "",
+        "evidence": "download/audio/richang1.assetbundle"
+      },
+      {
+        "category": "keyword_string",
+        "classification": "bootstrap_string",
+        "source": "bootstrap_or_native",
+        "path": "girlswar_merged_extracted/merged_content/AssetBundles/VersionFile.bytes",
+        "entry": "",
+        "evidence": "download/audio/jinzhang.assetbundle"
+      },
+      {
+        "category": "keyword_string",
+        "classification": "bootstrap_string",
+        "source": "bootstrap_or_native",
+        "path": "girlswar_merged_extracted/merged_content/AssetBundles/VersionFile.bytes",
+        "entry": "",
+        "evidence": "download/audio/newplayerbattlebgm.assetbundle"
+      },
+      {
+        "category": "keyword_string",
+        "classification": "bootstrap_string",
+        "source": "bootstrap_or_native",
+        "path": "girlswar_merged_extracted/merged_content/AssetBundles/VersionFile.bytes",
+        "entry": "",
+        "evidence": "download/audio/newplayerbattle.assetbundle"
+      },
+      {
+        "category": "keyword_string",
+        "classification": "bootstrap_string",
+        "source": "bootstrap_or_native",
+        "path": "girlswar_merged_extracted/merged_content/AssetBundles/VersionFile.bytes",
+        "entry": "",
+        "evidence": "download/audio/m37.assetbundle"
+      },
+      {
+        "category": "keyword_string",
+        "classification": "bootstrap_string",
+        "source": "bootstrap_or_native",
+        "path": "girlswar_merged_extracted/merged_content/AssetBundles/VersionFile.bytes",
+        "entry": "",
+        "evidence": "download/audio/m35.assetbundle"
+      },
+      {
+        "category": "keyword_string",
+        "classification": "bootstrap_string",
+        "source": "bootstrap_or_native",
+        "path": "girlswar_merged_extracted/merged_content/AssetBundles/VersionFile.bytes",
+        "entry": "",
+        "evidence": "download/audio/m25.assetbundle"
+      },
+      {
+        "category": "keyword_string",
+        "classification": "bootstrap_string",
+        "source": "bootstrap_or_native",
+        "path": "girlswar_merged_extracted/merged_content/AssetBundles/VersionFile.bytes",
+        "entry": "",
+        "evidence": "download/audio/m15.assetbundle"
+      },
+      {
+        "category": "keyword_string",
+        "classification": "bootstrap_string",
+        "source": "bootstrap_or_native",
+        "path": "girlswar_merged_extracted/merged_content/AssetBundles/VersionFile.bytes",
+        "entry": "",
+        "evidence": "download/audio/m08.assetbundle"
+      },
+      {
+        "category": "keyword_string",
+        "classification": "bootstrap_string",
+        "source": "bootstrap_or_native",
+        "path": "girlswar_merged_extracted/merged_content/AssetBundles/VersionFile.bytes",
+        "entry": "",
+        "evidence": "download/audio/m06.assetbundle"
+      },
+      {
+        "category": "keyword_string",
+        "classification": "bootstrap_string",
+        "source": "bootstrap_or_native",
+        "path": "girlswar_merged_extracted/merged_content/AssetBundles/VersionFile.bytes",
+        "entry": "",
+        "evidence": "download/audio/m04.assetbundle"
+      },
+      {
+        "category": "keyword_string",
+        "classification": "bootstrap_string",
+        "source": "bootstrap_or_native",
+        "path": "girlswar_merged_extracted/merged_content/AssetBundles/VersionFile.bytes",
+        "entry": "",
+        "evidence": "download/audio/m03.assetbundle"
+      },
+      {
+        "category": "keyword_string",
+        "classification": "bootstrap_string",
+        "source": "bootstrap_or_native",
+        "path": "girlswar_merged_extracted/merged_content/AssetBundles/VersionFile.bytes",
+        "entry": "",
+        "evidence": "download/audio/dubvoice_1024.assetbundle"
+      },
+      {
+        "category": "keyword_string",
+        "classification": "bootstrap_string",
+        "source": "bootstrap_or_native",
+        "path": "girlswar_merged_extracted/merged_content/AssetBundles/VersionFile.bytes",
+        "entry": "",
+        "evidence": "download/audio/dubvoice_1023.assetbundle"
+      },
+      {
+        "category": "keyword_string",
+        "classification": "bootstrap_string",
+        "source": "bootstrap_or_native",
+        "path": "girlswar_merged_extracted/merged_content/AssetBundles/VersionFile.bytes",
+        "entry": "",
+        "evidence": "download/audio/dubvoice_1022.assetbundle"
+      },
+      {
+        "category": "keyword_string",
+        "classification": "bootstrap_string",
+        "source": "bootstrap_or_native",
+        "path": "girlswar_merged_extracted/merged_content/AssetBundles/VersionFile.bytes",
+        "entry": "",
+        "evidence": "download/audio/battle.assetbundle"
+      },
+      {
+        "category": "keyword_string",
+        "classification": "bootstrap_string",
+        "source": "bootstrap_or_native",
+        "path": "girlswar_merged_extracted/merged_content/AssetBundles/VersionFile.bytes",
+        "entry": "",
+        "evidence": "download/audio/avgvoice_7.assetbundle"
+      },
+      {
+        "category": "keyword_string",
+        "classification": "bootstrap_string",
+        "source": "bootstrap_or_native",
+        "path": "girlswar_merged_extracted/merged_content/AssetBundles/VersionFile.bytes",
+        "entry": "",
+        "evidence": "download/audio/avgvoice_6.assetbundle"
+      },
+      {
+        "category": "keyword_string",
+        "classification": "bootstrap_string",
+        "source": "bootstrap_or_native",
+        "path": "girlswar_merged_extracted/merged_content/AssetBundles/VersionFile.bytes",
+        "entry": "",
+        "evidence": "download/audio/avgvoice_5.assetbundle"
+      },
+      {
+        "category": "keyword_string",
+        "classification": "bootstrap_string",
+        "source": "bootstrap_or_native",
+        "path": "girlswar_merged_extracted/merged_content/AssetBundles/VersionFile.bytes",
+        "entry": "",
+        "evidence": "download/audio/avgvoice_3.assetbundle"
+      },
+      {
+        "category": "keyword_string",
+        "classification": "bootstrap_string",
+        "source": "bootstrap_or_native",
+        "path": "girlswar_merged_extracted/merged_content/AssetBundles/VersionFile.bytes",
+        "entry": "",
+        "evidence": "download/audio/avgvoice_2.assetbundle"
+      },
+      {
+        "category": "keyword_string",
+        "classification": "bootstrap_string",
+        "source": "bootstrap_or_native",
+        "path": "girlswar_merged_extracted/merged_content/AssetBundles/VersionFile.bytes",
+        "entry": "",
+        "evidence": "download/audio/avgvoice_1.assetbundle"
+      },
+      {
+        "category": "keyword_string",
+        "classification": "bootstrap_string",
+        "source": "bootstrap_or_native",
+        "path": "girlswar_merged_extracted/merged_content/AssetBundles/VersionFile.bytes",
+        "entry": "",
+        "evidence": "download/audio/dubvoice_1021.assetbundle"
+      },
+      {
+        "category": "keyword_string",
+        "classification": "bootstrap_string",
+        "source": "bootstrap_or_native",
+        "path": "girlswar_merged_extracted/merged_content/AssetBundles/VersionFile.bytes",
+        "entry": "",
+        "evidence": "download/audio/battlese.assetbundle"
+      },
+      {
+        "category": "keyword_string",
+        "classification": "bootstrap_string",
+        "source": "bootstrap_or_native",
+        "path": "girlswar_merged_extracted/merged_content/AssetBundles/VersionFile.bytes",
+        "entry": "",
+        "evidence": "download/audio/battlese_2.assetbundle"
+      },
+      {
+        "category": "keyword_string",
+        "classification": "bootstrap_string",
+        "source": "bootstrap_or_native",
+        "path": "girlswar_merged_extracted/merged_content/AssetBundles/VersionFile.bytes",
+        "entry": "",
+        "evidence": "download/audio/battlese_3.assetbundle"
+      },
+      {
+        "category": "keyword_string",
+        "classification": "bootstrap_string",
+        "source": "bootstrap_or_native",
+        "path": "girlswar_merged_extracted/merged_content/AssetBundles/VersionFile.bytes",
+        "entry": "",
+        "evidence": "download/audio/battlese_4.assetbundle"
+      },
+      {
+        "category": "keyword_string",
+        "classification": "bootstrap_string",
+        "source": "bootstrap_or_native",
+        "path": "girlswar_merged_extracted/merged_content/AssetBundles/VersionFile.bytes",
+        "entry": "",
+        "evidence": "download/audio/dubvoice_1019.assetbundle"
+      },
+      {
+        "category": "keyword_string",
+        "classification": "bootstrap_string",
+        "source": "bootstrap_or_native",
+        "path": "girlswar_merged_extracted/merged_content/AssetBundles/VersionFile.bytes",
+        "entry": "",
+        "evidence": "download/audio/dubvoice_1018.assetbundle"
+      },
+      {
+        "category": "keyword_string",
+        "classification": "bootstrap_string",
+        "source": "bootstrap_or_native",
+        "path": "girlswar_merged_extracted/merged_content/AssetBundles/VersionFile.bytes",
+        "entry": "",
+        "evidence": "download/audio/dubvoice_1015.assetbundle"
+      },
+      {
+        "category": "keyword_string",
+        "classification": "bootstrap_string",
+        "source": "bootstrap_or_native",
+        "path": "girlswar_merged_extracted/merged_content/AssetBundles/VersionFile.bytes",
+        "entry": "",
+        "evidence": "download/audio/dubvoice_1012.assetbundle"
+      },
+      {
+        "category": "keyword_string",
+        "classification": "bootstrap_string",
+        "source": "bootstrap_or_native",
+        "path": "girlswar_merged_extracted/merged_content/AssetBundles/VersionFile.bytes",
+        "entry": "",
+        "evidence": "download/audio/dubvoice_1011.assetbundle"
+      },
+      {
+        "category": "keyword_string",
+        "classification": "bootstrap_string",
+        "source": "bootstrap_or_native",
+        "path": "girlswar_merged_extracted/merged_content/AssetBundles/VersionFile.bytes",
+        "entry": "",
+        "evidence": "download/audio/dubvoice_1010.assetbundle"
+      },
+      {
+        "category": "keyword_string",
+        "classification": "bootstrap_string",
+        "source": "bootstrap_or_native",
+        "path": "girlswar_merged_extracted/merged_content/AssetBundles/VersionFile.bytes",
+        "entry": "",
+        "evidence": "download/audio/dubvoice_1009.assetbundle"
+      },
+      {
+        "category": "keyword_string",
+        "classification": "bootstrap_string",
+        "source": "bootstrap_or_native",
+        "path": "girlswar_merged_extracted/merged_content/AssetBundles/VersionFile.bytes",
+        "entry": "",
+        "evidence": "download/audio/dubvoice_1008.assetbundle"
+      },
+      {
+        "category": "keyword_string",
+        "classification": "bootstrap_string",
+        "source": "bootstrap_or_native",
+        "path": "girlswar_merged_extracted/merged_content/AssetBundles/VersionFile.bytes",
+        "entry": "",
+        "evidence": "download/audio/dubvoice_1007.assetbundle"
+      },
+      {
+        "category": "keyword_string",
+        "classification": "bootstrap_string",
+        "source": "bootstrap_or_native",
+        "path": "girlswar_merged_extracted/merged_content/AssetBundles/VersionFile.bytes",
+        "entry": "",
+        "evidence": "download/audio/dubvoice_1006.assetbundle"
+      },
+      {
+        "category": "keyword_string",
+        "classification": "bootstrap_string",
+        "source": "bootstrap_or_native",
+        "path": "girlswar_merged_extracted/merged_content/AssetBundles/VersionFile.bytes",
+        "entry": "",
+        "evidence": "download/audio/dubvoice_1005.assetbundle"
+      },
+      {
+        "category": "keyword_string",
+        "classification": "bootstrap_string",
+        "source": "bootstrap_or_native",
+        "path": "girlswar_merged_extracted/merged_content/AssetBundles/VersionFile.bytes",
+        "entry": "",
+        "evidence": "download/audio/dubvoice_1003.assetbundle"
+      },
+      {
+        "category": "keyword_string",
+        "classification": "bootstrap_string",
+        "source": "bootstrap_or_native",
+        "path": "girlswar_merged_extracted/merged_content/AssetBundles/VersionFile.bytes",
+        "entry": "",
+        "evidence": "download/audio/dubvoice_1002.assetbundle"
+      },
+      {
+        "category": "keyword_string",
+        "classification": "bootstrap_string",
+        "source": "bootstrap_or_native",
+        "path": "girlswar_merged_extracted/merged_content/AssetBundles/VersionFile.bytes",
+        "entry": "",
+        "evidence": "download/audio/dubvoice_1001.assetbundle"
+      },
+      {
+        "category": "keyword_string",
+        "classification": "bootstrap_string",
+        "source": "bootstrap_or_native",
+        "path": "girlswar_merged_extracted/merged_content/AssetBundles/VersionFile.bytes",
+        "entry": "",
+        "evidence": "download/audio/doubi.assetbundle"
+      },
+      {
+        "category": "keyword_string",
+        "classification": "bootstrap_string",
+        "source": "bootstrap_or_native",
+        "path": "girlswar_merged_extracted/merged_content/AssetBundles/CDNVersionFile.bytes",
+        "entry": "",
+        "evidence": "download/xlualogic/modules/warofattrition.assetbundle"
+      },
+      {
+        "category": "keyword_string",
+        "classification": "bootstrap_string",
+        "source": "bootstrap_or_native",
+        "path": "girlswar_merged_extracted/merged_content/AssetBundles/CDNVersionFile.bytes",
+        "entry": "",
+        "evidence": "download/xlualogic/modules/vipdiscountshop.assetbundle"
+      },
+      {
+        "category": "keyword_string",
+        "classification": "bootstrap_string",
+        "source": "bootstrap_or_native",
+        "path": "girlswar_merged_extracted/merged_content/AssetBundles/CDNVersionFile.bytes",
+        "entry": "",
+        "evidence": "download/xlualogic/modules/vip.assetbundle"
+      },
+      {
+        "category": "keyword_string",
+        "classification": "bootstrap_string",
+        "source": "bootstrap_or_native",
+        "path": "girlswar_merged_extracted/merged_content/AssetBundles/CDNVersionFile.bytes",
+        "entry": "",
+        "evidence": "download/xlualogic/modules/urequip.assetbundle"
+      },
+      {
+        "category": "keyword_string",
+        "classification": "bootstrap_string",
+        "source": "bootstrap_or_native",
+        "path": "girlswar_merged_extracted/merged_content/AssetBundles/CDNVersionFile.bytes",
+        "entry": "",
+        "evidence": "download/xlualogic/modules/upgradestar.assetbundle"
+      },
+      {
+        "category": "keyword_string",
+        "classification": "bootstrap_string",
+        "source": "bootstrap_or_native",
+        "path": "girlswar_merged_extracted/merged_content/AssetBundles/CDNVersionFile.bytes",
+        "entry": "",
+        "evidence": "download/xlualogic/modules/underwearlucky.assetbundle"
+      },
+      {
+        "category": "keyword_string",
+        "classification": "bootstrap_string",
+        "source": "bootstrap_or_native",
+        "path": "girlswar_merged_extracted/merged_content/AssetBundles/CDNVersionFile.bytes",
+        "entry": "",
+        "evidence": "download/xlualogic/modules/underwear.assetbundle"
+      },
+      {
+        "category": "keyword_string",
+        "classification": "bootstrap_string",
+        "source": "bootstrap_or_native",
+        "path": "girlswar_merged_extracted/merged_content/AssetBundles/CDNVersionFile.bytes",
+        "entry": "",
+        "evidence": "download/xlualogic/modules/uiglobal.assetbundle"
+      },
+      {
+        "category": "keyword_string",
+        "classification": "bootstrap_string",
+        "source": "bootstrap_or_native",
+        "path": "girlswar_merged_extracted/merged_content/AssetBundles/CDNVersionFile.bytes",
+        "entry": "",
+        "evidence": "download/xlualogic/modules/ui_titanhero.assetbundle"
+      },
+      {
+        "category": "keyword_string",
+        "classification": "bootstrap_string",
+        "source": "bootstrap_or_native",
+        "path": "girlswar_merged_extracted/merged_content/AssetBundles/CDNVersionFile.bytes",
+        "entry": "",
+        "evidence": "download/xlualogic/modules/tujian.assetbundle"
+      },
+      {
+        "category": "keyword_string",
+        "classification": "bootstrap_string",
+        "source": "bootstrap_or_native",
+        "path": "girlswar_merged_extracted/merged_content/AssetBundles/CDNVersionFile.bytes",
+        "entry": "",
+        "evidence": "download/xlualogic/modules/treasure.assetbundle"
+      },
+      {
+        "category": "keyword_string",
+        "classification": "bootstrap_string",
+        "source": "bootstrap_or_native",
+        "path": "girlswar_merged_extracted/merged_content/AssetBundles/CDNVersionFile.bytes",
+        "entry": "",
+        "evidence": "download/xlualogic/modules/tower.assetbundle"
+      },
+      {
+        "category": "keyword_string",
+        "classification": "bootstrap_string",
+        "source": "bootstrap_or_native",
+        "path": "girlswar_merged_extracted/merged_content/AssetBundles/CDNVersionFile.bytes",
+        "entry": "",
+        "evidence": "download/xlualogic/modules/titan.assetbundle"
+      },
+      {
+        "category": "keyword_string",
+        "classification": "bootstrap_string",
+        "source": "bootstrap_or_native",
+        "path": "girlswar_merged_extracted/merged_content/AssetBundles/CDNVersionFile.bytes",
+        "entry": "",
+        "evidence": "download/xlualogic/modules/tasknotice.assetbundle"
+      },
+      {
+        "category": "keyword_string",
+        "classification": "bootstrap_string",
+        "source": "bootstrap_or_native",
+        "path": "girlswar_merged_extracted/merged_content/AssetBundles/CDNVersionFile.bytes",
+        "entry": "",
+        "evidence": "download/xlualogic/modules/tale.assetbundle"
+      },
+      {
+        "category": "keyword_string",
+        "classification": "bootstrap_string",
+        "source": "bootstrap_or_native",
+        "path": "girlswar_merged_extracted/merged_content/AssetBundles/CDNVersionFile.bytes",
+        "entry": "",
+        "evidence": "download/xlualogic/modules/summonpetequip.assetbundle"
+      },
+      {
+        "category": "keyword_string",
+        "classification": "bootstrap_string",
+        "source": "bootstrap_or_native",
+        "path": "girlswar_merged_extracted/merged_content/AssetBundles/CDNVersionFile.bytes",
+        "entry": "",
+        "evidence": "download/xlualogic/modules/summonpetegg.assetbundle"
+      },
+      {
+        "category": "keyword_string",
+        "classification": "bootstrap_string",
+        "source": "bootstrap_or_native",
+        "path": "girlswar_merged_extracted/merged_content/AssetBundles/CDNVersionFile.bytes",
+        "entry": "",
+        "evidence": "download/xlualogic/modules/summonpet.assetbundle"
+      },
+      {
+        "category": "keyword_string",
+        "classification": "bootstrap_string",
+        "source": "bootstrap_or_native",
+        "path": "girlswar_merged_extracted/merged_content/AssetBundles/CDNVersionFile.bytes",
+        "entry": "",
+        "evidence": "download/xlualogic/modules/subcity.assetbundle"
+      },
+      {
+        "category": "keyword_string",
+        "classification": "bootstrap_string",
+        "source": "bootstrap_or_native",
+        "path": "girlswar_merged_extracted/merged_content/AssetBundles/CDNVersionFile.bytes",
+        "entry": "",
+        "evidence": "download/xlualogic/modules/story.assetbundle"
+      },
+      {
+        "category": "keyword_string",
+        "classification": "bootstrap_string",
+        "source": "bootstrap_or_native",
+        "path": "girlswar_merged_extracted/merged_content/AssetBundles/CDNVersionFile.bytes",
+        "entry": "",
+        "evidence": "download/xlualogic/modules/spa.assetbundle"
+      },
+      {
+        "category": "keyword_string",
+        "classification": "bootstrap_string",
+        "source": "bootstrap_or_native",
+        "path": "girlswar_merged_extracted/merged_content/AssetBundles/CDNVersionFile.bytes",
+        "entry": "",
+        "evidence": "download/xlualogic/modules/sourceworld.assetbundle"
+      },
+      {
+        "category": "keyword_string",
+        "classification": "bootstrap_string",
+        "source": "bootstrap_or_native",
+        "path": "girlswar_merged_extracted/merged_content/AssetBundles/CDNVersionFile.bytes",
+        "entry": "",
+        "evidence": "download/xlualogic/modules/smallgame.assetbundle"
+      },
+      {
+        "category": "keyword_string",
+        "classification": "bootstrap_string",
+        "source": "bootstrap_or_native",
+        "path": "girlswar_merged_extracted/merged_content/AssetBundles/CDNVersionFile.bytes",
+        "entry": "",
+        "evidence": "download/xlualogic/modules/smalldragon.assetbundle"
+      },
+      {
+        "category": "keyword_string",
+        "classification": "bootstrap_string",
+        "source": "bootstrap_or_native",
+        "path": "girlswar_merged_extracted/merged_content/AssetBundles/CDNVersionFile.bytes",
+        "entry": "",
+        "evidence": "download/xlualogic/modules/skycity.assetbundle"
+      },
+      {
+        "category": "keyword_string",
+        "classification": "bootstrap_string",
+        "source": "bootstrap_or_native",
+        "path": "girlswar_merged_extracted/merged_content/AssetBundles/CDNVersionFile.bytes",
+        "entry": "",
+        "evidence": "download/xlualogic/modules/shop.assetbundle"
+      },
+      {
+        "category": "keyword_string",
+        "classification": "bootstrap_string",
+        "source": "bootstrap_or_native",
+        "path": "girlswar_merged_extracted/merged_content/AssetBundles/CDNVersionFile.bytes",
+        "entry": "",
+        "evidence": "download/xlualogic/modules/score.assetbundle"
+      },
+      {
+        "category": "keyword_string",
+        "classification": "bootstrap_string",
+        "source": "bootstrap_or_native",
+        "path": "girlswar_merged_extracted/merged_content/AssetBundles/CDNVersionFile.bytes",
+        "entry": "",
+        "evidence": "download/xlualogic/modules/school.assetbundle"
+      },
+      {
+        "category": "keyword_string",
+        "classification": "bootstrap_string",
+        "source": "bootstrap_or_native",
+        "path": "girlswar_merged_extracted/merged_content/AssetBundles/CDNVersionFile.bytes",
+        "entry": "",
+        "evidence": "download/xlualogic/modules/realm.assetbundle"
+      },
+      {
+        "category": "keyword_string",
+        "classification": "bootstrap_string",
+        "source": "bootstrap_or_native",
+        "path": "girlswar_merged_extracted/merged_content/AssetBundles/CDNVersionFile.bytes",
+        "entry": "",
+        "evidence": "download/xlualogic/modules/ranklist.assetbundle"
+      },
+      {
+        "category": "keyword_string",
+        "classification": "bootstrap_string",
+        "source": "bootstrap_or_native",
+        "path": "girlswar_merged_extracted/merged_content/AssetBundles/CDNVersionFile.bytes",
+        "entry": "",
+        "evidence": "download/xlualogic/modules/quest.assetbundle"
+      },
+      {
+        "category": "keyword_string",
+        "classification": "bootstrap_string",
+        "source": "bootstrap_or_native",
+        "path": "girlswar_merged_extracted/merged_content/AssetBundles/CDNVersionFile.bytes",
+        "entry": "",
+        "evidence": "download/xlualogic/modules/procedure.assetbundle"
+      },
+      {
+        "category": "keyword_string",
+        "classification": "bootstrap_string",
+        "source": "bootstrap_or_native",
+        "path": "girlswar_merged_extracted/merged_content/AssetBundles/CDNVersionFile.bytes",
+        "entry": "",
+        "evidence": "download/xlualogic/modules/playercity.assetbundle"
+      },
+      {
+        "category": "keyword_string",
+        "classification": "bootstrap_string",
+        "source": "bootstrap_or_native",
+        "path": "girlswar_merged_extracted/merged_content/AssetBundles/CDNVersionFile.bytes",
+        "entry": "",
+        "evidence": "download/xlualogic/modules/playdownload.assetbundle"
+      },
+      {
+        "category": "keyword_string",
+        "classification": "bootstrap_string",
+        "source": "bootstrap_or_native",
+        "path": "girlswar_merged_extracted/merged_content/AssetBundles/CDNVersionFile.bytes",
+        "entry": "",
+        "evidence": "download/xlualogic/modules/photoartist.assetbundle"
+      },
+      {
+        "category": "keyword_string",
+        "classification": "bootstrap_string",
+        "source": "bootstrap_or_native",
+        "path": "girlswar_merged_extracted/merged_content/AssetBundles/CDNVersionFile.bytes",
+        "entry": "",
+        "evidence": "download/xlualogic/modules/officer.assetbundle"
+      },
+      {
+        "category": "keyword_string",
+        "classification": "bootstrap_string",
+        "source": "bootstrap_or_native",
+        "path": "girlswar_merged_extracted/merged_content/AssetBundles/CDNVersionFile.bytes",
+        "entry": "",
+        "evidence": "download/xlualogic/modules/monthsign.assetbundle"
+      },
+      {
+        "category": "keyword_string",
+        "classification": "bootstrap_string",
+        "source": "bootstrap_or_native",
+        "path": "girlswar_merged_extracted/merged_content/AssetBundles/CDNVersionFile.bytes",
+        "entry": "",
+        "evidence": "download/xlualogic/modules/monthcardnew.assetbundle"
+      },
+      {
+        "category": "keyword_string",
+        "classification": "bootstrap_string",
+        "source": "bootstrap_or_native",
+        "path": "girlswar_merged_extracted/merged_content/AssetBundles/CDNVersionFile.bytes",
+        "entry": "",
+        "evidence": "download/xlualogic/modules/monthcard.assetbundle"
+      },
+      {
+        "category": "keyword_string",
+        "classification": "bootstrap_string",
+        "source": "bootstrap_or_native",
+        "path": "girlswar_merged_extracted/merged_content/AssetBundles/CDNVersionFile.bytes",
+        "entry": "",
+        "evidence": "download/xlualogic/modules/modulesinit.assetbundle"
+      },
+      {
+        "category": "keyword_string",
+        "classification": "bootstrap_string",
+        "source": "bootstrap_or_native",
+        "path": "girlswar_merged_extracted/merged_content/AssetBundles/CDNVersionFile.bytes",
+        "entry": "",
+        "evidence": "download/xlualogic/modules/minebattle.assetbundle"
+      },
+      {
+        "category": "keyword_string",
+        "classification": "bootstrap_string",
+        "source": "bootstrap_or_native",
+        "path": "girlswar_merged_extracted/merged_content/AssetBundles/CDNVersionFile.bytes",
+        "entry": "",
+        "evidence": "download/xlualogic/modules/maze.assetbundle"
+      },
+      {
+        "category": "keyword_string",
+        "classification": "bootstrap_string",
+        "source": "bootstrap_or_native",
+        "path": "girlswar_merged_extracted/merged_content/AssetBundles/CDNVersionFile.bytes",
+        "entry": "",
+        "evidence": "download/xlualogic/modules/marry.assetbundle"
+      },
+      {
+        "category": "keyword_string",
+        "classification": "bootstrap_string",
+        "source": "bootstrap_or_native",
+        "path": "girlswar_merged_extracted/merged_content/AssetBundles/CDNVersionFile.bytes",
+        "entry": "",
+        "evidence": "download/xlualogic/modules/maininterface.assetbundle"
+      },
+      {
+        "category": "keyword_string",
+        "classification": "bootstrap_string",
+        "source": "bootstrap_or_native",
+        "path": "girlswar_merged_extracted/merged_content/AssetBundles/CDNVersionFile.bytes",
+        "entry": "",
+        "evidence": "download/xlualogic/modules/maincity.assetbundle"
+      },
+      {
+        "category": "keyword_string",
+        "classification": "bootstrap_string",
+        "source": "bootstrap_or_native",
+        "path": "girlswar_merged_extracted/merged_content/AssetBundles/CDNVersionFile.bytes",
+        "entry": "",
+        "evidence": "download/xlualogic/modules/mail.assetbundle"
+      },
+      {
+        "category": "keyword_string",
+        "classification": "bootstrap_string",
+        "source": "bootstrap_or_native",
+        "path": "girlswar_merged_extracted/merged_content/AssetBundles/CDNVersionFile.bytes",
+        "entry": "",
+        "evidence": "download/xlualogic/modules/magicorchard.assetbundle"
+      },
+      {
+        "category": "keyword_string",
+        "classification": "bootstrap_string",
+        "source": "bootstrap_or_native",
+        "path": "girlswar_merged_extracted/merged_content/AssetBundles/CDNVersionFile.bytes",
+        "entry": "",
+        "evidence": "download/xlualogic/modules/luxury.assetbundle"
+      },
+      {
+        "category": "keyword_string",
+        "classification": "bootstrap_string",
+        "source": "bootstrap_or_native",
+        "path": "girlswar_merged_extracted/merged_content/AssetBundles/CDNVersionFile.bytes",
+        "entry": "",
+        "evidence": "download/xlualogic/modules/luckyfood.assetbundle"
+      },
+      {
+        "category": "keyword_string",
+        "classification": "bootstrap_string",
+        "source": "bootstrap_or_native",
+        "path": "girlswar_merged_extracted/merged_content/AssetBundles/CDNVersionFile.bytes",
+        "entry": "",
+        "evidence": "download/xlualogic/modules/loading.assetbundle"
+      },
+      {
+        "category": "keyword_string",
+        "classification": "bootstrap_string",
+        "source": "bootstrap_or_native",
+        "path": "girlswar_merged_extracted/merged_content/AssetBundles/CDNVersionFile.bytes",
+        "entry": "",
+        "evidence": "download/xlualogic/modules/live2dpreload.assetbundle"
+      },
+      {
+        "category": "keyword_string",
+        "classification": "bootstrap_string",
+        "source": "bootstrap_or_native",
+        "path": "girlswar_merged_extracted/merged_content/AssetBundles/CDNVersionFile.bytes",
+        "entry": "",
+        "evidence": "download/xlualogic/modules/killdragons.assetbundle"
+      },
+      {
+        "category": "keyword_string",
+        "classification": "bootstrap_string",
+        "source": "bootstrap_or_native",
+        "path": "girlswar_merged_extracted/merged_content/AssetBundles/CDNVersionFile.bytes",
+        "entry": "",
+        "evidence": "download/xlualogic/modules/keyin.assetbundle"
+      },
+      {
+        "category": "keyword_string",
+        "classification": "bootstrap_string",
+        "source": "bootstrap_or_native",
+        "path": "girlswar_merged_extracted/merged_content/AssetBundles/CDNVersionFile.bytes",
+        "entry": "",
+        "evidence": "download/xlualogic/modules/inspiration.assetbundle"
+      },
+      {
+        "category": "keyword_string",
+        "classification": "bootstrap_string",
+        "source": "bootstrap_or_native",
+        "path": "girlswar_merged_extracted/merged_content/AssetBundles/CDNVersionFile.bytes",
+        "entry": "",
+        "evidence": "download/xlualogic/modules/hunzhisuo.assetbundle"
+      },
+      {
+        "category": "keyword_string",
+        "classification": "bootstrap_string",
+        "source": "bootstrap_or_native",
+        "path": "girlswar_merged_extracted/merged_content/AssetBundles/CDNVersionFile.bytes",
+        "entry": "",
+        "evidence": "download/xlualogic/modules/herowall.assetbundle"
+      },
+      {
+        "category": "keyword_string",
+        "classification": "bootstrap_string",
+        "source": "bootstrap_or_native",
+        "path": "girlswar_merged_extracted/merged_content/AssetBundles/CDNVersionFile.bytes",
+        "entry": "",
+        "evidence": "download/xlualogic/modules/herosymphony.assetbundle"
+      },
+      {
+        "category": "keyword_string",
+        "classification": "bootstrap_string",
+        "source": "bootstrap_or_native",
+        "path": "girlswar_merged_extracted/merged_content/AssetBundles/CDNVersionFile.bytes",
+        "entry": "",
+        "evidence": "download/xlualogic/modules/herostarupgrade.assetbundle"
+      },
+      {
+        "category": "keyword_string",
+        "classification": "bootstrap_string",
+        "source": "bootstrap_or_native",
+        "path": "girlswar_merged_extracted/merged_content/AssetBundles/CDNVersionFile.bytes",
+        "entry": "",
+        "evidence": "download/xlualogic/modules/heroshow.assetbundle"
+      },
+      {
+        "category": "keyword_string",
+        "classification": "bootstrap_string",
+        "source": "bootstrap_or_native",
+        "path": "girlswar_merged_extracted/merged_content/AssetBundles/CDNVersionFile.bytes",
+        "entry": "",
+        "evidence": "download/xlualogic/modules/heroqualityupgrade.assetbundle"
+      },
+      {
+        "category": "keyword_string",
+        "classification": "bootstrap_string",
+        "source": "bootstrap_or_native",
+        "path": "girlswar_merged_extracted/merged_content/AssetBundles/CDNVersionFile.bytes",
+        "entry": "",
+        "evidence": "download/xlualogic/modules/herolive2d.assetbundle"
+      },
+      {
+        "category": "keyword_string",
+        "classification": "bootstrap_string",
+        "source": "bootstrap_or_native",
+        "path": "girlswar_merged_extracted/merged_content/AssetBundles/CDNVersionFile.bytes",
+        "entry": "",
+        "evidence": "download/xlualogic/modules/heroinherit.assetbundle"
+      },
+      {
+        "category": "keyword_string",
+        "classification": "bootstrap_string",
+        "source": "bootstrap_or_native",
+        "path": "girlswar_merged_extracted/merged_content/AssetBundles/CDNVersionFile.bytes",
+        "entry": "",
+        "evidence": "download/xlualogic/modules/herofragmentbuy.assetbundle"
+      },
+      {
+        "category": "keyword_string",
+        "classification": "bootstrap_string",
+        "source": "bootstrap_or_native",
+        "path": "girlswar_merged_extracted/merged_content/AssetBundles/CDNVersionFile.bytes",
+        "entry": "",
+        "evidence": "download/xlualogic/modules/heroactive.assetbundle"
+      },
+      {
+        "category": "keyword_string",
+        "classification": "bootstrap_string",
+        "source": "bootstrap_or_native",
+        "path": "girlswar_merged_extracted/merged_content/AssetBundles/CDNVersionFile.bytes",
+        "entry": "",
+        "evidence": "download/xlualogic/modules/haogandu.assetbundle"
+      },
+      {
+        "category": "keyword_string",
+        "classification": "bootstrap_string",
+        "source": "bootstrap_or_native",
+        "path": "girlswar_merged_extracted/merged_content/AssetBundles/CDNVersionFile.bytes",
+        "entry": "",
+        "evidence": "download/xlualogic/modules/guildtrials.assetbundle"
+      },
+      {
+        "category": "keyword_string",
+        "classification": "bootstrap_string",
+        "source": "bootstrap_or_native",
+        "path": "girlswar_merged_extracted/merged_content/AssetBundles/CDNVersionFile.bytes",
+        "entry": "",
+        "evidence": "download/xlualogic/modules/guildterritory.assetbundle"
+      },
+      {
+        "category": "keyword_string",
+        "classification": "bootstrap_string",
+        "source": "bootstrap_or_native",
+        "path": "girlswar_merged_extracted/merged_content/AssetBundles/CDNVersionFile.bytes",
+        "entry": "",
+        "evidence": "download/xlualogic/modules/guild.assetbundle"
+      },
+      {
+        "category": "keyword_string",
+        "classification": "bootstrap_string",
+        "source": "bootstrap_or_native",
+        "path": "girlswar_merged_extracted/merged_content/AssetBundles/CDNVersionFile.bytes",
+        "entry": "",
+        "evidence": "download/xlualogic/modules/guide.assetbundle"
+      },
+      {
+        "category": "keyword_string",
+        "classification": "bootstrap_string",
+        "source": "bootstrap_or_native",
+        "path": "girlswar_merged_extracted/merged_content/AssetBundles/CDNVersionFile.bytes",
+        "entry": "",
+        "evidence": "download/xlualogic/modules/guard.assetbundle"
+      },
+      {
+        "category": "keyword_string",
+        "classification": "bootstrap_string",
+        "source": "bootstrap_or_native",
+        "path": "girlswar_merged_extracted/merged_content/AssetBundles/CDNVersionFile.bytes",
+        "entry": "",
+        "evidence": "download/xlualogic/modules/greatboss.assetbundle"
+      },
+      {
+        "category": "keyword_string",
+        "classification": "bootstrap_string",
+        "source": "bootstrap_or_native",
+        "path": "girlswar_merged_extracted/merged_content/AssetBundles/CDNVersionFile.bytes",
+        "entry": "",
+        "evidence": "download/xlualogic/modules/goodfriend.assetbundle"
+      },
+      {
+        "category": "keyword_string",
+        "classification": "bootstrap_string",
+        "source": "bootstrap_or_native",
+        "path": "girlswar_merged_extracted/merged_content/AssetBundles/CDNVersionFile.bytes",
+        "entry": "",
+        "evidence": "download/xlualogic/modules/girlchallenge.assetbundle"
+      },
+      {
+        "category": "keyword_string",
+        "classification": "bootstrap_string",
+        "source": "bootstrap_or_native",
+        "path": "girlswar_merged_extracted/merged_content/AssetBundles/CDNVersionFile.bytes",
+        "entry": "",
+        "evidence": "download/xlualogic/modules/functionhandbook.assetbundle"
+      },
+      {
+        "category": "keyword_string",
+        "classification": "bootstrap_string",
+        "source": "bootstrap_or_native",
+        "path": "girlswar_merged_extracted/merged_content/AssetBundles/CDNVersionFile.bytes",
+        "entry": "",
+        "evidence": "download/xlualogic/modules/fullserverbattleyear.assetbundle"
+      },
+      {
+        "category": "keyword_string",
+        "classification": "bootstrap_string",
+        "source": "bootstrap_or_native",
+        "path": "girlswar_merged_extracted/merged_content/AssetBundles/CDNVersionFile.bytes",
+        "entry": "",
+        "evidence": "download/xlualogic/modules/fullserverbattle.assetbundle"
+      },
+      {
+        "category": "keyword_string",
+        "classification": "bootstrap_string",
+        "source": "bootstrap_or_native",
+        "path": "girlswar_merged_extracted/merged_content/AssetBundles/CDNVersionFile.bytes",
+        "entry": "",
+        "evidence": "download/xlualogic/modules/friend.assetbundle"
+      },
+      {
+        "category": "keyword_string",
+        "classification": "bootstrap_string",
+        "source": "bootstrap_or_native",
+        "path": "girlswar_merged_extracted/merged_content/AssetBundles/CDNVersionFile.bytes",
+        "entry": "",
+        "evidence": "download/xlualogic/modules/formation.assetbundle"
+      },
+      {
+        "category": "keyword_string",
+        "classification": "bootstrap_string",
+        "source": "bootstrap_or_native",
+        "path": "girlswar_merged_extracted/merged_content/AssetBundles/CDNVersionFile.bytes",
+        "entry": "",
+        "evidence": "download/xlualogic/modules/flowerfight.assetbundle"
+      },
+      {
+        "category": "keyword_string",
+        "classification": "bootstrap_string",
+        "source": "bootstrap_or_native",
+        "path": "girlswar_merged_extracted/merged_content/AssetBundles/CDNVersionFile.bytes",
+        "entry": "",
+        "evidence": "download/xlualogic/modules/expedition.assetbundle"
+      }
+    ]
+  },
+  "downloadAssessment": {
+    "headOrGetReady": false,
+    "actualDownloadExecuted": false,
+    "reason": "No asset CDN base URL/build rule was strong enough to combine with path+md5+size. Login/account URLs are explicitly not used for asset download."
+  },
+  "principles": [
+    "No original/evidence files were deleted or moved.",
+    "No Unity scene was modified.",
+    "No fake actor mapping or guessed URL was introduced.",
+    "No download, HEAD, or GET was executed."
+  ]
+}

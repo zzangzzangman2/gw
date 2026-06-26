@@ -1,0 +1,7 @@
+﻿item,finding,action,productionPatchAllowed
+"capture_aspect","Reference image is 1180x526 / 2.243346 while previous captures were 1680x720 / 2.333333.","UI149 captures both variants at 1180x526 for coordinate/framing validation.",True
+"default_root_route_active_state","Default root preserves source CSV active state for route/world nodes such as right/node_middle/wanfaWorldNode/worldwanfaBtn/spine_diqiu.","Do not hide guarded route nodes without runtime active/sibling evidence; compare against old-root candidate instead.",False
+"oldroot_home_candidate","UI_MainInterface_old is the strongest static prefab/open-stack candidate for the attached home reference.","Build a separate candidate scene with only source-backed BG1005 and Hero1005 SkeletonGraphic applied.",False
+"ui_dock_bottom_nav","Source-backed UI_Dock renderer/root-canvas candidates compile, but UI136/UI144 visual metrics trail UI128.","Keep UI_Dock promotion blocked pending runtime parent/depth/mask/open-stack evidence.",False
+"dynamic_activity_chat_account_currency","Activity slots, chat text, account/profile, and currencies depend on server/account runtime values.","No fake labels, no forced hides, and no currency/chat value patches without UI130-compatible snapshot.",False
+"tmp_mask_stencil_skeleton_material","Static TMP/material lanes are auditable; runtime mask/stencil/effective renderer state still decides final draw order.","Audit actual TMP autosize/material, mask/stencil rows, and SkeletonGraphic bindings in both captures.",False

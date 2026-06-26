@@ -1,0 +1,95 @@
+{
+  "generatedAt": "2026-06-26T03:20:00",
+  "prefix": "BATTLE_55_VALIDATE_CANVAS_ZERO_SCALE_RUNTIME_RENDER_AND_ACTOR_VISIBILITY_OR_SOURCE_BACKED_PATCH",
+  "unityExitCode": 0,
+  "visual_status": "runtime_zero_scale_actor_visibility_probe_complete_no_patch",
+  "isFinalRestoredBattleScreen": false,
+  "patchDecision": "blocked_no_patch",
+  "scene": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_battle_unity\\Assets\\Scenes\\Battle51LuaBridgeRaycasterRegistrationCandidate.unity",
+  "sceneOpened": true,
+  "sceneSaved": false,
+  "zeroScale": {
+    "rows": 7,
+    "canvasRows": 2,
+    "runtimeZeroLocalScaleRows": 5,
+    "runtimeZeroLocalScaleCanvasRows": 0,
+    "canvasRowsWithDepthReadyDescendantGraphics": 2,
+    "collapsedGraphicRoutes": 0,
+    "interpretationCounts": {
+      "zero_local_scale_canvas_but_screen_space_canvas_has_registered_depth_ready_descendant_graphics": 2,
+      "zero_scale_runtime_effect_requires_visual_comparison_no_patch": 5
+    },
+    "zeroScaleCanvasConclusion": "b54_static_zero_canvas_candidates_deserialize_as_nonzero_runtime_canvas_scale_and_have_depth_ready_graphics",
+    "samples": [
+      "BattleHudSpriteAtlasTextureRuntimeBindingClip05Root/CanvasLuaStateHUD_01_ui_normalbattle",
+      "BattleHudSpriteAtlasTextureRuntimeBindingClip05Root/CanvasLuaStateHUD_01_ui_normalbattle/root_battle/BottomCenter/HeroListContainer/Battle29BoundHeroCard_1_1036/imgIconBG/tweener/UIEffect_meili",
+      "BattleHudSpriteAtlasTextureRuntimeBindingClip05Root/CanvasLuaStateHUD_01_ui_normalbattle/root_battle/BottomCenter/HeroListContainer/Battle29BoundHeroCard_2_1002/imgIconBG/tweener/UIEffect_meili",
+      "BattleHudSpriteAtlasTextureRuntimeBindingClip05Root/CanvasLuaStateHUD_01_ui_normalbattle/root_battle/BottomCenter/HeroListContainer/Battle29BoundHeroCard_3_1034/imgIconBG/tweener/UIEffect_meili",
+      "BattleHudSpriteAtlasTextureRuntimeBindingClip05Root/CanvasLuaStateHUD_01_ui_normalbattle/root_battle/BottomCenter/UI_BigSkillPress/Particle System/lizi",
+      "BattleHudSpriteAtlasTextureRuntimeBindingClip05Root/CanvasLuaStateHUD_02_ui_battle3dui",
+      "BattleHudSpriteAtlasTextureRuntimeBindingClip05Root/CanvasLuaStateHUD_03_ui_normalbattle_heroitem/imgIconBG/tweener/UIEffect_meili"
+    ]
+  },
+  "actors": {
+    "rows": 3,
+    "payloadHeroDid": [
+      "1002",
+      "1034",
+      "1100111"
+    ],
+    "rowsWithEnabledRenderer": 3,
+    "rowsWithMesh": 0,
+    "rowsWithCameraLayerCandidate": 3,
+    "rowsWithFrustumCandidate": 3,
+    "rowsWithCaptureSignal": 0,
+    "visibilityBlockerCounts": {
+      "no_mesh_filter_mesh": 3
+    },
+    "enabledRendererRows": 3,
+    "enabledCamerasIncludingLayer9": 1,
+    "primaryConclusion": "actor_invisibility_primary_blocker_no_mesh_filter_mesh"
+  },
+  "cameraRows": 1,
+  "rendererRows": 3,
+  "b54Carryover": {
+    "routeCount": 1046,
+    "activeRouteZeroScaleCount": 7,
+    "activeLoadableActorRows": 3,
+    "manifestClassification": "local_playable_subset_only_not_full_payload",
+    "textAutosizeCounts": {
+      "0": 64,
+      "1": 1
+    },
+    "negativeCharacterSpacingRows": 15
+  },
+  "b53Carryover": {
+    "verdict": "accepted_block_no_source_backed_xlua_runtime_available_locally",
+    "patchDecision": "blocked_no_patch",
+    "nextBlocker": "USER_DECISION_OR_SOURCE_RUNTIME_REQUIRED_FOR_XLUA_GAMEENTRY_BOOTSTRAP"
+  },
+  "referenceVideoAvailable": false,
+  "referenceVideoPath": "C:\\Users\\godho\\Downloads\\플레이.mp4",
+  "auxiliaryReferenceVideoAvailable": true,
+  "auxiliaryReferenceVideoPath": "C:\\Users\\godho\\Downloads\\참고.mp4",
+  "contactSheetExists": true,
+  "nextBlocker": "USER_DECISION_OR_SOURCE_RUNTIME_REQUIRED_FOR_XLUA_GAMEENTRY_BOOTSTRAP_OR_ACTOR_RENDER_SOURCE_PATCH",
+  "rootCmdCount": 1,
+  "restoreToolsDirectCmdCount": 0,
+  "outputs": {
+    "report": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_55_VALIDATE_CANVAS_ZERO_SCALE_RUNTIME_RENDER_AND_ACTOR_VISIBILITY_OR_SOURCE_BACKED_PATCH_RESULT.md",
+    "json": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_55_VALIDATE_CANVAS_ZERO_SCALE_RUNTIME_RENDER_AND_ACTOR_VISIBILITY_OR_SOURCE_BACKED_PATCH_RESULT.json",
+    "zeroScaleRuntimeCsv": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_55_VALIDATE_CANVAS_ZERO_SCALE_RUNTIME_RENDER_AND_ACTOR_VISIBILITY_OR_SOURCE_BACKED_PATCH_ZERO_SCALE_RUNTIME.csv",
+    "actorVisibilityCsv": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_55_VALIDATE_CANVAS_ZERO_SCALE_RUNTIME_RENDER_AND_ACTOR_VISIBILITY_OR_SOURCE_BACKED_PATCH_ACTOR_VISIBILITY.csv",
+    "camerasCsv": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_55_VALIDATE_CANVAS_ZERO_SCALE_RUNTIME_RENDER_AND_ACTOR_VISIBILITY_OR_SOURCE_BACKED_PATCH_CAMERAS.csv",
+    "renderersCsv": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_55_VALIDATE_CANVAS_ZERO_SCALE_RUNTIME_RENDER_AND_ACTOR_VISIBILITY_OR_SOURCE_BACKED_PATCH_RENDERERS.csv",
+    "contactSheet": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_55_VALIDATE_CANVAS_ZERO_SCALE_RUNTIME_RENDER_AND_ACTOR_VISIBILITY_OR_SOURCE_BACKED_PATCH_CONTACT_SHEET.jpg",
+    "unitySummary": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_battle_unity\\Assets\\RestoreData\\battle\\BATTLE_55_VALIDATE_CANVAS_ZERO_SCALE_RUNTIME_RENDER_AND_ACTOR_VISIBILITY_OR_SOURCE_BACKED_PATCH_UNITY_SUMMARY.json",
+    "log": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_55_VALIDATE_CANVAS_ZERO_SCALE_RUNTIME_RENDER_AND_ACTOR_VISIBILITY_OR_SOURCE_BACKED_PATCH.log"
+  },
+  "notes": [
+    "No fake actor/card/icon/text/onClick/gameplay handler was added.",
+    "No external xLua package was downloaded/imported.",
+    "No Mask/Stencil/TMP autosize/character-spacing patch was applied.",
+    "BATTLE_LOCAL_PLAYABLE_PAYLOAD_MANIFEST remains local subset validation context only."
+  ]
+}

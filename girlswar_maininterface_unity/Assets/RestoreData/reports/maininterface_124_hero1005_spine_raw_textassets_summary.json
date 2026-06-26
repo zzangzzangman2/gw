@@ -1,0 +1,25 @@
+{
+  "source_bundle": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\extracted\\unity\\clean_unityfs_slices\\download\\roleprefabsandres\\paintingprefabandres\\1005.assetbundle",
+  "merged_raw_dir": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\extracted\\unity\\raw_textassets\\download_roleprefabsandres_paintingprefabandres_1005",
+  "unity_raw_dir": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_maininterface_unity\\Assets\\RestoreData\\hero1005_spine_source_raw\\paintingprefabandres_1005",
+  "textassets": 6,
+  "copied_pngs": [
+    "noalphabg_PaintingBG_1005.png",
+    "noalphabg_Tujian_1005.png",
+    "Painting_1005.png",
+    "Painting_1005_back.png",
+    "SP_heroname_1005.png",
+    "sprite_noalphabg_PaintingBG_1005.png",
+    "sprite_noalphabg_Tujian_1005.png"
+  ],
+  "raw_total_bytes": 682380,
+  "old_total_bytes": 685569,
+  "raw_question_count": 28668,
+  "old_question_count": 256529,
+  "differing_exports": 6,
+  "outputs": {
+    "csv": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_maininterface_unity\\Assets\\RestoreData\\reports\\maininterface_124_hero1005_spine_raw_textassets.csv",
+    "json": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_maininterface_unity\\Assets\\RestoreData\\reports\\maininterface_124_hero1005_spine_raw_textassets_summary.json",
+    "md": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\maininterface\\MAININTERFACE_124_HERO1005_SPINE_RAW_TEXTASSETS.md"
+  }
+}

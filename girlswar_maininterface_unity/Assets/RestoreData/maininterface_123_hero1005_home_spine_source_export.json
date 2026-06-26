@@ -1,0 +1,188 @@
+{
+  "generatedAt": "2026-06-26T01:04:40",
+  "heroId": 1005,
+  "sourceExportDir": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_maininterface_unity\\Assets\\RestoreData\\hero1005_spine_source",
+  "sourceExportCount": 35,
+  "dtmodelRawRowPrefix": "{1005,100501,100507,1,1,9991005,161,9911005,{{100502,100503},{100504}},{1,0,0},{1,0,0},{0.8,0,0},{0.75,-100,50},{0.45,78,-15,1,0},{1,125,-59},{1,164,0},{1,-150,0,-1},100504,{{100505,100506},{100507}},{1,0,0},{1,0,0},\"1005\",\"UIMainInterface/BG_JJC_1\",\"JJC_arena_1005\",\"homepage_underwear_1005\",8100518,8100517,{0.9,8,-25},{1,-200,0},{-582,0},{1,33.5,87.5},{0.8,33.5,-40.5},{0.5,-93,5},\"1005_2\",\"PHB_fightranklist_1005\",100505,0,\"noalphabg_PaintingBG_1005\",\"Assets/Download/RolePrefabsAndRes/RoleBigSet",
+  "dtmodelSelected": {
+    "id": "1005",
+    "painting": "100501",
+    "paintingGroup": "100507",
+    "paintingGroup_A2": "1",
+    "paintingGroup_A2_front": "1",
+    "live2d": "9991005",
+    "homePara": "[1,0,0]",
+    "teamPara": "[1,0,0]",
+    "haremPara": "[1,0,0]",
+    "bigPainting": "\"1005\"",
+    "paintingBg_back": "100505",
+    "paintingBg_front": "0",
+    "paintingBg": "\"noalphabg_PaintingBG_1005\"",
+    "collection_normal_Pic": "\"noalphabg_Tujian_1005\"",
+    "collectionPic": "\"noalphabg_Neiyi_1005\"",
+    "prefabId": "1005",
+    "prefabUiId": "8881005",
+    "prefabUiGroupId": "0",
+    "battleZoom": "1.48",
+    "uiZoom": "1",
+    "storyPainting": "100502",
+    "storyPainting2": "100503",
+    "lovePainting": "[100502]",
+    "lovePaintingPara": "[1.2,0,-30]",
+    "getHeroName": "100508",
+    "getHeroNamePara": "[1,-405,-200]",
+    "marryMainInterfaceSelect": "\"Assets/Download/RolePrefabsAndRes/RoleBigSetPainting/1005/1005_marry\"",
+    "selfMarryMainInterfaceSelect": "\"Assets/Download/RolePrefabsAndRes/RoleBigSetPainting/1005/1005_marry_dz\""
+  },
+  "bundleRows": [
+    {
+      "bundle": "download/roleprefabsandres/paintingprefabandres/1005.assetbundle",
+      "status": "ok",
+      "size": "3976259",
+      "object_count": "295",
+      "type_counts": "{\"MonoBehaviour\": 75, \"CanvasRenderer\": 65, \"RectTransform\": 65, \"GameObject\": 65, \"TextAsset\": 6, \"Material\": 6, \"MonoScript\": 5, \"Texture2D\": 5, \"Sprite\": 2, \"AssetBundle\": 1}",
+      "export_dir": "extracted/unity/bundles/b_a47980c73bab4250"
+    },
+    {
+      "bundle": "download/roleprefabsandres/rolebigsetpainting/1005.assetbundle",
+      "status": "ok",
+      "size": "1769688",
+      "object_count": "33",
+      "type_counts": "{\"Sprite\": 15, \"Texture2D\": 15, \"Material\": 2, \"AssetBundle\": 1}",
+      "export_dir": "extracted/unity/bundles/b_9dd4a303d80bec5b"
+    },
+    {
+      "bundle": "download/roleprefabsandres/battleprefabandres/1005.assetbundle",
+      "status": "ok",
+      "size": "1512900",
+      "object_count": "22",
+      "type_counts": "{\"MonoBehaviour\": 4, \"MonoScript\": 4, \"GameObject\": 2, \"TextAsset\": 2, \"Material\": 2, \"RectTransform\": 1, \"MeshRenderer\": 1, \"Transform\": 1, \"CanvasRenderer\": 1, \"AssetBundle\": 1, \"MeshFilter\": 1, \"Mesh\": 1, \"Texture2D\": 1}",
+      "export_dir": "extracted/unity/bundles/b_dbb6eb9e5987445e"
+    },
+    {
+      "bundle": "download/commonprefabsandres/spinematandshaders.assetbundle",
+      "status": "ok",
+      "size": "63615",
+      "object_count": "44",
+      "type_counts": "{\"Shader\": 31, \"Material\": 11, \"ShaderVariantCollection\": 1, \"AssetBundle\": 1}",
+      "export_dir": "extracted/unity/bundles/b_60f9c03224a30ca7"
+    }
+  ],
+  "atlasRows": [
+    {
+      "atlas_file": "-3076532181206688105_Painting_1005.atlas.txt",
+      "page": "Painting_1005.png",
+      "region_count": 142,
+      "first_regions": "A_eyeball_L, A_eyeball_L2, A_eyeball_R, A_eyeball_R2, A_eyeblow, A_eyelash_L1, A_eyelash_L2, A_eyelash_L3, A_eyelash_R1, A_eyelash_R2, A_eyelash_R3, A_mouth"
+    },
+    {
+      "atlas_file": "5081366588584777480_SP_heroname_1005.atlas.txt",
+      "page": "SP_heroname_1005.png",
+      "region_count": 3,
+      "first_regions": "images/1005, images/sr, images/t3"
+    },
+    {
+      "atlas_file": "8883680961857034524_Painting_1005_back.atlas.txt",
+      "page": "Painting_1005_back.png",
+      "region_count": 19,
+      "first_regions": "bgb, bgb1, bgb10, bgb11, bgb12, bgb13, bgb14, bgb15, bgb16, bgb17, bgb18, bgb2"
+    }
+  ],
+  "paintingprefabStructure": {
+    "type_counts": {
+      "MonoBehaviour": 75,
+      "RectTransform": 65,
+      "GameObject": 65
+    },
+    "root_count": 4,
+    "skeleton_behaviour_count": 5,
+    "skeleton_behaviours_sample": [
+      {
+        "game_object_id": -304114863843865765,
+        "game_object_name": "SP_heroname_1005",
+        "starting_animation": "A1",
+        "starting_loop": 1,
+        "skeleton_data_asset": "{\"m_FileID\":0,\"m_PathID\":-5538124453423489143}"
+      },
+      {
+        "game_object_id": 6434113961565601622,
+        "game_object_name": "Painting_1005",
+        "starting_animation": "A",
+        "starting_loop": 1,
+        "skeleton_data_asset": "{\"m_FileID\":0,\"m_PathID\":-149282230390880246}"
+      },
+      {
+        "game_object_id": -988108478649024868,
+        "game_object_name": "Painting_1005_back",
+        "starting_animation": "A",
+        "starting_loop": 1,
+        "skeleton_data_asset": "{\"m_FileID\":0,\"m_PathID\":87356403628614173}"
+      },
+      {
+        "game_object_id": -1705338342382464627,
+        "game_object_name": "Painting_1005_back",
+        "starting_animation": "A",
+        "starting_loop": 1,
+        "skeleton_data_asset": "{\"m_FileID\":0,\"m_PathID\":87356403628614173}"
+      },
+      {
+        "game_object_id": 1998541601850355341,
+        "game_object_name": "Painting_1005",
+        "starting_animation": "A",
+        "starting_loop": 1,
+        "skeleton_data_asset": "{\"m_FileID\":0,\"m_PathID\":-149282230390880246}"
+      }
+    ]
+  },
+  "luaEvidence": [
+    {
+      "line": 1543,
+      "note": "default home BigSpine loader",
+      "text": "UIUtil.GetPlayerBigSpineAll("
+    },
+    {
+      "line": 1546,
+      "note": "homePara parameter",
+      "text": "\"homePara\","
+    },
+    {
+      "line": 1558,
+      "note": "UI_touchSpine active for default branch",
+      "text": "LuaUtils.SetActive(UI_touchSpine.transform,true)"
+    },
+    {
+      "line": 1559,
+      "note": "painting background lookup",
+      "text": "local e=UIUtil.GetPaintingBg(i)"
+    },
+    {
+      "line": 1560,
+      "note": "UI_bg LoadSpriteWithFullPath",
+      "text": "GameTools:LoadSpriteWithFullPath(UI_bg,e,true)"
+    },
+    {
+      "line": 1640,
+      "note": "marry/self marry Live2D branch loader",
+      "text": "UIUtil.GetPlayerLive2dModel(a,UI_heroSpine,nil,function(a,o)"
+    }
+  ],
+  "spineRuntime": {
+    "present": true,
+    "matching_files": [
+      "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_maininterface_unity\\Assets\\Spine\\Runtime\\spine-unity\\Asset Types\\SkeletonDataAsset.cs",
+      "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_maininterface_unity\\Assets\\Spine\\Runtime\\spine-unity\\Asset Types\\SpineAtlasAsset.cs",
+      "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_maininterface_unity\\Assets\\Spine\\Runtime\\spine-unity\\Components\\SkeletonGraphic.cs"
+    ]
+  },
+  "restoreDecision": {
+    "defaultHomeSource": "download/roleprefabsandres/paintingprefabandres/1005.assetbundle",
+    "doNotUseWholeAtlasAsUiImage": true,
+    "homeParameter": [
+      1,
+      0,
+      0
+    ],
+    "backgroundSpriteName": "noalphabg_PaintingBG_1005",
+    "nextBlocker": "Create/import SpineAtlasAsset + SkeletonDataAsset for Painting_1005 and mount a SkeletonGraphic under UI_heroSpine."
+  }
+}

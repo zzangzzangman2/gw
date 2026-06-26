@@ -1,0 +1,8 @@
+blockerCategory,confirmed,evidence,separateFrom,patchAllowedNow,nextEvidenceNeeded
+wrong_render_aspect_view_rect,True,referenceAspect=2.2456; candidateCaptureAspect=1.777778; aspectDelta=0.467822,"route active state, payload, Timeline, xLua",False,aspect-correct capture/probe using source-backed camera/canvas/capture settings
+wrong_route_active_state_sibling_order,pending_after_aspect,routeRows=1046; activeRouteZeroScale=7; inactiveCritical=19,render aspect and payload gaps,False,source-backed RectTransform/sibling/active comparison after aspect-correct reprobe
+incomplete_card_icon_payload,True,activeCardRows=3; activeCardsWithSprite=3; expected reference region is five cards,render aspect,False,source-backed 1036/card/icon payload resolution
+incomplete_actor_payload,True,activeLoadableActorRows=3; actorRows=6; BATTLE_LOCAL_PLAYABLE_PAYLOAD remains local subset only,actor renderer visibility already solved for local subset,False,source-backed 1036 and unresolved enemy payloads
+timeline_package_and_binding_blocker,True,BATTLE64/65: Timeline package absent in project; local candidate requires approval; BATTLE63 TimelineAsset assignability mismatch,HUD/card coordinate validation,False,approval for local Timeline package candidate import/test or original runtime context
+xlua_gameentry_handler_blocker,True,BATTLE58/59: original xLua/GameEntry/LuaManager runtime unavailable; listener/lifecycle rows remain 0,raycast target inclusion and actor visibility,False,original runtime or approved external xLua path; no fake handler
+tmp_mask_source_validation_pending,True,TMP rows reviewed=65; mask rows reviewed=16; negativeSpacing=15; maskNameOnly=8,visual aspect mismatch,False,source-backed prefab/runtime TMP and working stencil proof

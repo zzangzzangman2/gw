@@ -1,0 +1,13 @@
+skillDid,prefabId,blockerType,evidence,nextAction
+1002101,1002101,skill_asset_load_only_no_visual_signal,director=True; outputs=0; renderers=0; pixelDiff=0,Load succeeds but no visual signal in diagnostic camera; treat as asset load evidence only.
+1002201,1002201,skill_asset_load_only_no_visual_signal,director=True; outputs=0; renderers=0; pixelDiff=0,Load succeeds but no visual signal in diagnostic camera; treat as asset load evidence only.
+1002301,1002301,skill_asset_load_only_no_visual_signal,director=True; outputs=0; renderers=0; pixelDiff=0,Load succeeds but no visual signal in diagnostic camera; treat as asset load evidence only.
+1002301,1002351,skill_asset_load_only_no_visual_signal,director=True; outputs=0; renderers=0; pixelDiff=0,Load succeeds but no visual signal in diagnostic camera; treat as asset load evidence only.
+1034101,1034101,skill_asset_load_only_no_visual_signal,director=True; outputs=0; renderers=0; pixelDiff=0,Load succeeds but no visual signal in diagnostic camera; treat as asset load evidence only.
+1034201,1034201,skill_asset_load_only_no_visual_signal,director=True; outputs=0; renderers=0; pixelDiff=0,Load succeeds but no visual signal in diagnostic camera; treat as asset load evidence only.
+1034301,1034301,skill_asset_load_only_no_visual_signal,director=True; outputs=0; renderers=0; pixelDiff=0,Load succeeds but no visual signal in diagnostic camera; treat as asset load evidence only.
+1034301,1034351,skill_asset_load_only_no_visual_signal,director=True; outputs=0; renderers=0; pixelDiff=0,Load succeeds but no visual signal in diagnostic camera; treat as asset load evidence only.
+1012101,1012101,skill_asset_load_only_no_visual_signal,director=True; outputs=0; renderers=0; pixelDiff=0,Load succeeds but no visual signal in diagnostic camera; treat as asset load evidence only.
+1012201,1012201,skill_asset_load_only_no_visual_signal,director=True; outputs=0; renderers=0; pixelDiff=0,Load succeeds but no visual signal in diagnostic camera; treat as asset load evidence only.
+1012301,1012301,skill_asset_load_only_no_visual_signal,director=True; outputs=0; renderers=0; pixelDiff=0,Load succeeds but no visual signal in diagnostic camera; treat as asset load evidence only.
+1012301,1012351,skill_asset_load_only_no_visual_signal,director=True; outputs=0; renderers=0; pixelDiff=0,Load succeeds but no visual signal in diagnostic camera; treat as asset load evidence only.

@@ -1,0 +1,4 @@
+area,evidenceStatus,futurePatchAllowedNow,reason,nextEvidence
+UI_Dock normal sp_* renderer chain,source_components_and_dependencies_resolved,False,"Renderer-only source chain is feasible, but UI142 is no-patch and UI_Dock promotion still requires exact production depth.",Compile-time import validation and exact parent form CurrCanvas.sortingOrder for DisableUILayer=1 forms.
+UI_Dock promotion,blocked_by_depth,False,UI141/UI140 show DisableUILayer=1 forms need runtime/default parent depth; sibling mount already worsened UI136.,Runtime dump or source-backed default parent CurrCanvas.sortingOrder/depth for UI_Dock/UI_MainPage.
+dianjigq1,control_no_renderer,False,UI141 and source components show no SkeletonGraphic/UISpineCtr on this control node.,None for renderer; keep as no-renderer control unless new source evidence appears.

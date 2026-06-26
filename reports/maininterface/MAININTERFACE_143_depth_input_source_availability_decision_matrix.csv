@@ -1,0 +1,5 @@
+evidenceTarget,source,valueRecovered,details,decision
+native Canvas under UI_Dock/UI_MainInterface source roots,C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\extracted\unity\clean_unityfs_slices\download\ui\uiprefabandres\maininterface.assetbundle,yes,38 Canvas rows under target roots,source_root_canvas_sorting_available
+root Canvas m_SortingOrder for disabled-layer forms,C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\extracted\unity\clean_unityfs_slices\download\ui\uiprefabandres\maininterface.assetbundle,yes,UI_MainInterface:0; UI_MainInterface_old:0; UI_Dock:100; UI_Dock_old:100,can_use_serialized_root_canvas_if_runtime_keeps_it
+serialized UIFormBase CurrCanvas/Depth/GroupId on roots,C:\Users\godho\Downloads\girlswar\girlswar_maininterface_unity\Assets\RestoreData\maininterface_components.csv,no,0 root components expose depth/canvas/group-like keys,not_serialized_on_prefab_root
+UI142 renderer dependency chain,MAININTERFACE_142,yes,renderer-only dependencies closed; depth remains separate,renderer_patch_future_feasible_but_not_allowed_now

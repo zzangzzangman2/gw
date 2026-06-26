@@ -1,0 +1,189 @@
+{
+  "verdict": "BATTLE44 traced original Button m_TargetGraphic serialization and attempted minimal targetGraphic-only patch; final playable screen remains false",
+  "visual_status": "failed_original_target_graphic_mapping_still_not_raycast_ready",
+  "isFinalRestoredBattleScreen": false,
+  "unityExitCode": 0,
+  "referenceVideoAvailable": false,
+  "referenceVideoPath": "C:\\Users\\godho\\Downloads\\플레이.mp4",
+  "auxiliaryReferenceVideoAvailable": true,
+  "auxiliaryReferenceVideoPath": "C:\\Users\\godho\\Downloads\\참고.mp4",
+  "originalButtonCount": 33,
+  "patchEligibleButtonCount": 20,
+  "empty4RaycastTargetCount": 7,
+  "imageTargetCount": 26,
+  "typeEvidenceCounts": {
+    "Button": "33",
+    "Image": "306",
+    "Empty4Raycast": "7",
+    "GraphicRaycaster": "14",
+    "Mask": "8",
+    "RectMask2D": "14",
+    "TextMeshProUGUI": "69"
+  },
+  "unitySummary": {
+    "status": "battle44_trace_original_button_monoscript_and_target_graphic_serialization",
+    "isFinalRestoredBattleScreen": false,
+    "sourceScene": "Assets/Scenes/Battle43PlayableContextValidationCandidate.unity",
+    "scene": "Assets/Scenes/Battle44OriginalButtonTargetGraphicCandidate.unity",
+    "capture": "Assets/RestoreCaptures/battle_actor/Battle44OriginalButtonTargetGraphicCandidate_1920x1080.png",
+    "sourceSceneOpened": true,
+    "sceneSaved": true,
+    "captureExists": true,
+    "reopenValid": true,
+    "patchManifestCount": 20,
+    "matchedButtonCount": 20,
+    "patchedButtonCount": 14,
+    "buttonAddedCount": 10,
+    "empty4RaycastAddedCount": 7,
+    "removedHeuristicButtonCount": 6,
+    "eventSystemAdded": false,
+    "graphicRaycasterAddedCount": 0,
+    "raycastReadyButtonCount": 0,
+    "reopenRaycastReadyButtonCount": 0,
+    "reopenEventSystemCount": 1,
+    "raycastFailureReasons": {
+      "no_graphic_hits_at_target_center": 5
+    },
+    "before": {
+      "canvas": 18,
+      "graphicRaycaster": 9,
+      "image": 232,
+      "graphic": 232,
+      "activeGraphic": 56,
+      "button": 10,
+      "empty4Raycast": 0,
+      "mask": 0,
+      "rectMask2D": 0,
+      "text": 0,
+      "tmp": 0,
+      "missingScript": 1208
+    },
+    "after": {
+      "canvas": 18,
+      "graphicRaycaster": 9,
+      "image": 232,
+      "graphic": 239,
+      "activeGraphic": 62,
+      "button": 14,
+      "empty4Raycast": 7,
+      "mask": 0,
+      "rectMask2D": 0,
+      "text": 0,
+      "tmp": 0,
+      "missingScript": 1208
+    },
+    "reopen": {
+      "canvas": 18,
+      "graphicRaycaster": 9,
+      "image": 232,
+      "graphic": 234,
+      "activeGraphic": 57,
+      "button": 14,
+      "empty4Raycast": 2,
+      "mask": 0,
+      "rectMask2D": 0,
+      "text": 0,
+      "tmp": 0,
+      "missingScript": 1213
+    },
+    "reopenButtonCount": 14,
+    "reopenMaskCount": 0,
+    "reopenRectMask2DCount": 0,
+    "reopenTmpCount": 0,
+    "reopenTextCount": 0,
+    "failReason": ""
+  },
+  "battle43Carryover": {
+    "visual_status": "failed_button_raycast_context_not_ready",
+    "reopenButtonCount": 10,
+    "reopenRaycastReadyButtonCount": 0,
+    "raycastFailureSummary": {
+      "missCount": 20,
+      "reasonCounts": {
+        "no_graphic_hits_at_button_center": 20
+      },
+      "allMissesHadZeroGraphicHits": true,
+      "samples": [
+        {
+          "path": "BattleHudSpriteAtlasTextureRuntimeBindingClip05Root/CanvasLuaStateHUD_01_ui_normalbattle/root_opra/btnTwoSpeed/im_lock_TwoSpeed",
+          "rectSize": "17/22",
+          "canvasPath": "BattleHudSpriteAtlasTextureRuntimeBindingClip05Root/CanvasLuaStateHUD_01_ui_normalbattle",
+          "evidence": "component-only raycast validation; persistent Lua handler still missing; screen=606/171; hitCount=0; topHit=; hits=; eventCamera=BattleHudSpriteAtlasTextureRuntimeBindingClip05Camera; reason=no_graphic_hits_at_button_center"
+        },
+        {
+          "path": "BattleHudSpriteAtlasTextureRuntimeBindingClip05Root/CanvasLuaStateHUD_01_ui_normalbattle/root_opra/btnTwoSpeed/im_off",
+          "rectSize": "73/78",
+          "canvasPath": "BattleHudSpriteAtlasTextureRuntimeBindingClip05Root/CanvasLuaStateHUD_01_ui_normalbattle",
+          "evidence": "component-only raycast validation; persistent Lua handler still missing; screen=578/169; hitCount=0; topHit=; hits=; eventCamera=BattleHudSpriteAtlasTextureRuntimeBindingClip05Camera; reason=no_graphic_hits_at_button_center"
+        },
+        {
+          "path": "BattleHudSpriteAtlasTextureRuntimeBindingClip05Root/CanvasLuaStateHUD_01_ui_normalbattle/root_opra/btnAuto/im_new_auto/im_new",
+          "rectSize": "63/42",
+          "canvasPath": "BattleHudSpriteAtlasTextureRuntimeBindingClip05Root/CanvasLuaStateHUD_01_ui_normalbattle",
+          "evidence": "component-only raycast validation; persistent Lua handler still missing; screen=543/371; hitCount=0; topHit=; hits=; eventCamera=BattleHudSpriteAtlasTextureRuntimeBindingClip05Camera; reason=no_graphic_hits_at_button_center"
+        },
+        {
+          "path": "BattleHudSpriteAtlasTextureRuntimeBindingClip05Root/CanvasLuaStateHUD_01_ui_normalbattle/root_opra/btnFastSkill/im_lock_FastSkill",
+          "rectSize": "17/22",
+          "canvasPath": "BattleHudSpriteAtlasTextureRuntimeBindingClip05Root/CanvasLuaStateHUD_01_ui_normalbattle",
+          "evidence": "component-only raycast validation; persistent Lua handler still missing; screen=606/81; hitCount=0; topHit=; hits=; eventCamera=BattleHudSpriteAtlasTextureRuntimeBindingClip05Camera; reason=no_graphic_hits_at_button_center"
+        },
+        {
+          "path": "BattleHudSpriteAtlasTextureRuntimeBindingClip05Root/CanvasLuaStateHUD_01_ui_normalbattle/root_opra/btnSkip",
+          "rectSize": "73/78",
+          "canvasPath": "BattleHudSpriteAtlasTextureRuntimeBindingClip05Root/CanvasLuaStateHUD_01_ui_normalbattle",
+          "evidence": "component-only raycast validation; persistent Lua handler still missing; screen=578/259; hitCount=0; topHit=; hits=; eventCamera=BattleHudSpriteAtlasTextureRuntimeBindingClip05Camera; reason=no_graphic_hits_at_button_center"
+        },
+        {
+          "path": "BattleHudSpriteAtlasTextureRuntimeBindingClip05Root/CanvasLuaStateHUD_01_ui_normalbattle/root_opra/btnPause",
+          "rectSize": "92/54",
+          "canvasPath": "BattleHudSpriteAtlasTextureRuntimeBindingClip05Root/CanvasLuaStateHUD_01_ui_normalbattle",
+          "evidence": "component-only raycast validation; persistent Lua handler still missing; screen=76/551; hitCount=0; topHit=; hits=; eventCamera=BattleHudSpriteAtlasTextureRuntimeBindingClip05Camera; reason=no_graphic_hits_at_button_center"
+        },
+        {
+          "path": "BattleHudSpriteAtlasTextureRuntimeBindingClip05Root/CanvasLuaStateHUD_01_ui_normalbattle/root_opra/btnAuto/im_lock_Auto",
+          "rectSize": "17/22",
+          "canvasPath": "BattleHudSpriteAtlasTextureRuntimeBindingClip05Root/CanvasLuaStateHUD_01_ui_normalbattle",
+          "evidence": "component-only raycast validation; persistent Lua handler still missing; screen=606/351; hitCount=0; topHit=; hits=; eventCamera=BattleHudSpriteAtlasTextureRuntimeBindingClip05Camera; reason=no_graphic_hits_at_button_center"
+        },
+        {
+          "path": "BattleHudSpriteAtlasTextureRuntimeBindingClip05Root/CanvasLuaStateHUD_01_ui_normalbattle/root_battle/cizhui_group/btn_arrow",
+          "rectSize": "40/35",
+          "canvasPath": "BattleHudSpriteAtlasTextureRuntimeBindingClip05Root/CanvasLuaStateHUD_01_ui_normalbattle/root_battle",
+          "evidence": "component-only raycast validation; persistent Lua handler still missing; screen=1242.3/-55.3; hitCount=0; topHit=; hits=; eventCamera=BattleHudSpriteAtlasTextureRuntimeBindingClip05Camera; reason=no_graphic_hits_at_button_center"
+        }
+      ]
+    }
+  },
+  "captureMetrics": {
+    "captureExists": true,
+    "width": 1920,
+    "height": 1080,
+    "nonBlackPixelRatio": 0.899287
+  },
+  "battle43ToBattle44CaptureSimilarity": {
+    "available": true,
+    "meanAbsDiff": 0.0,
+    "pixelCorrelation": 1.0
+  },
+  "blocker": "Original Button root/targetGraphic mapping did not produce raycast-ready controls.",
+  "nextBlocker": "BATTLE_45_TRACE_CANVAS_GRAPHIC_REGISTRY_CAMERA_AND_EMPTY4RAYCAST_RUNTIME_ENABLE",
+  "rootCmdCount": 1,
+  "restoreToolsDirectCmdCount": 0,
+  "outputs": {
+    "report": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_44_TRACE_ORIGINAL_BUTTON_MONOSCRIPT_AND_TARGET_GRAPHIC_SERIALIZATION_RESULT.md",
+    "resultJson": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_44_TRACE_ORIGINAL_BUTTON_MONOSCRIPT_AND_TARGET_GRAPHIC_SERIALIZATION_RESULT.json",
+    "evidenceCsv": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_battle_unity\\Assets\\RestoreData\\battle\\BATTLE_44_ORIGINAL_BUTTON_TARGET_GRAPHIC_EVIDENCE.csv",
+    "patchManifest": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_battle_unity\\Assets\\RestoreData\\battle\\BATTLE_44_ORIGINAL_BUTTON_TARGET_GRAPHIC_PATCH_MANIFEST.csv",
+    "unityDataJson": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_battle_unity\\Assets\\RestoreData\\battle\\BATTLE_44_TRACE_ORIGINAL_BUTTON_MONOSCRIPT_AND_TARGET_GRAPHIC_SERIALIZATION_UNITY.json",
+    "unityRowsCsv": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_battle_unity\\Assets\\RestoreData\\battle\\BATTLE_44_TRACE_ORIGINAL_BUTTON_MONOSCRIPT_AND_TARGET_GRAPHIC_SERIALIZATION_COMPONENTS.csv",
+    "capture": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_battle_unity\\Assets\\RestoreCaptures\\battle_actor\\Battle44OriginalButtonTargetGraphicCandidate_1920x1080.png",
+    "contactSheet": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_44_TRACE_ORIGINAL_BUTTON_MONOSCRIPT_AND_TARGET_GRAPHIC_SERIALIZATION_CONTACT_SHEET.jpg",
+    "unityLog": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_44_TRACE_ORIGINAL_BUTTON_MONOSCRIPT_AND_TARGET_GRAPHIC_SERIALIZATION.log"
+  },
+  "notes": [
+    "BATTLE44 does not add fake art, fake HUD/cards/icons, screenshot paste, whole-atlas placement, or fake onClick handlers.",
+    "Mask/RectMask2D and TMP/Text are counted only in BATTLE44.",
+    "TargetGraphic mapping is from original battle_ext_prefabs MonoBehaviour m_TargetGraphic PPtr evidence."
+  ]
+}

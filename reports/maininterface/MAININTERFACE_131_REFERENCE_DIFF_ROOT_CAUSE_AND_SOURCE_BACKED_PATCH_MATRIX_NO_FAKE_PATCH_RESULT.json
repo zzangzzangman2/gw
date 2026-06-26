@@ -1,0 +1,181 @@
+{
+  "generatedAt": "2026-06-26T02:59:49",
+  "restoredClaim": false,
+  "candidatePatchApplied": false,
+  "scenePatchApplied": false,
+  "reference": "C:\\Users\\godho\\.codex\\attachments\\e607fc34-b674-4516-b051-8d396cd6df06\\image-1.png",
+  "candidate": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_maininterface_unity\\Assets\\RestoreCaptures\\maininterface_ui128_oldroot_runtime_activity_text_tmp_click_candidate_1680x720.png",
+  "contact": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\maininterface\\MAININTERFACE_131_REFERENCE_DIFF_CONTACT.png",
+  "matrixCsv": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\maininterface\\MAININTERFACE_131_reference_diff_root_cause_matrix.csv",
+  "patchPlanMd": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\maininterface\\MAININTERFACE_131_source_backed_static_patch_plan_NO_SCENE_PATCH.md",
+  "regionMetrics": {
+    "full": {
+      "region": "full",
+      "box": [
+        0,
+        0,
+        1680,
+        720
+      ],
+      "meanAbsDiff": 0.209078,
+      "rmsDiff": 0.293563,
+      "changedPixelRatio30": 0.70151,
+      "pixelCorrelation": 0.424216
+    },
+    "top_bar": {
+      "region": "top_bar",
+      "box": [
+        0,
+        0,
+        1680,
+        118
+      ],
+      "meanAbsDiff": 0.264475,
+      "rmsDiff": 0.352052,
+      "changedPixelRatio30": 0.844476,
+      "pixelCorrelation": 0.24431
+    },
+    "left_lobby": {
+      "region": "left_lobby",
+      "box": [
+        0,
+        95,
+        420,
+        620
+      ],
+      "meanAbsDiff": 0.237522,
+      "rmsDiff": 0.321507,
+      "changedPixelRatio30": 0.766154,
+      "pixelCorrelation": 0.294033
+    },
+    "center_hero_background": {
+      "region": "center_hero_background",
+      "box": [
+        360,
+        40,
+        1180,
+        690
+      ],
+      "meanAbsDiff": 0.184641,
+      "rmsDiff": 0.27079,
+      "changedPixelRatio30": 0.61333,
+      "pixelCorrelation": 0.475187
+    },
+    "right_icon_chat": {
+      "region": "right_icon_chat",
+      "box": [
+        880,
+        60,
+        1680,
+        560
+      ],
+      "meanAbsDiff": 0.218707,
+      "rmsDiff": 0.301547,
+      "changedPixelRatio30": 0.715093,
+      "pixelCorrelation": 0.414567
+    },
+    "right_activity_stack": {
+      "region": "right_activity_stack",
+      "box": [
+        900,
+        95,
+        1680,
+        335
+      ],
+      "meanAbsDiff": 0.247383,
+      "rmsDiff": 0.330944,
+      "changedPixelRatio30": 0.787842,
+      "pixelCorrelation": 0.17393
+    },
+    "chat_bubble": {
+      "region": "chat_bubble",
+      "box": [
+        1030,
+        215,
+        1565,
+        410
+      ],
+      "meanAbsDiff": 0.176602,
+      "rmsDiff": 0.258216,
+      "changedPixelRatio30": 0.661452,
+      "pixelCorrelation": 0.559898
+    },
+    "bottom_nav": {
+      "region": "bottom_nav",
+      "box": [
+        0,
+        575,
+        1680,
+        720
+      ],
+      "meanAbsDiff": 0.190902,
+      "rmsDiff": 0.270251,
+      "changedPixelRatio30": 0.68305,
+      "pixelCorrelation": 0.395621
+    },
+    "click_blocker_ui_bg_touch": {
+      "region": "click_blocker_ui_bg_touch",
+      "box": [
+        0,
+        0,
+        1680,
+        720
+      ],
+      "meanAbsDiff": 0.209078,
+      "rmsDiff": 0.293563,
+      "changedPixelRatio30": 0.70151,
+      "pixelCorrelation": 0.424216
+    },
+    "click_blocker_btn_discord": {
+      "region": "click_blocker_btn_discord",
+      "box": [
+        1180,
+        95,
+        1580,
+        640
+      ],
+      "meanAbsDiff": 0.208914,
+      "rmsDiff": 0.291903,
+      "changedPixelRatio30": 0.716693,
+      "pixelCorrelation": 0.493905
+    }
+  },
+  "classificationCounts": {
+    "requires_runtime_snapshot": 4,
+    "needs_unity_runtime_probe": 3,
+    "source_backed_static_patch_possible": 1,
+    "already_matches_or_low_priority": 1,
+    "source_backed_static_patch_not_allowed_by_guardrail": 2
+  },
+  "staticPatchPossibleItems": [
+    "text/TMP/font material"
+  ],
+  "unityProbeNeededItems": [
+    "right icon cluster non-activity buttons",
+    "bottom navigation",
+    "hero1005 spine/background"
+  ],
+  "blockedOrGuardedItems": [
+    "activity stack count/position/icons/text",
+    "face activity row",
+    "chat bubble and chat text",
+    "top profile/currencies",
+    "btn_discord click blocker",
+    "zhuye_di1/zhuye_bian and route/world guardrail nodes"
+  ],
+  "commandPolicy": {
+    "rootCmdCount": 1,
+    "rootCmdFiles": [
+      "C:\\Users\\godho\\Downloads\\girlswar\\00_COMMAND_CENTER.cmd"
+    ],
+    "restoreToolsDirectCmdCount": 0,
+    "restoreToolsDirectCmdFiles": []
+  },
+  "inputs": {
+    "ui128Result": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\maininterface\\MAININTERFACE_128_OLDROOT_RUNTIME_ACTIVITY_TEXT_TMP_AND_CLICK_LAYER_RECONSTRUCTION_RESULT.md",
+    "ui128ActivityCsv": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\maininterface\\MAININTERFACE_128_runtime_activity_slot_candidates.csv",
+    "ui128EvidenceCsv": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\maininterface\\MAININTERFACE_128_runtime_activity_text_tmp_click_evidence.csv",
+    "ui129Result": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\maininterface\\MAININTERFACE_129_TRACE_RUNTIME_ACCOUNT_ACTIVITY_SNAPSHOT_LOCALIZATION_FONT_BINDING_RESULT.md",
+    "ui130Result": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\maininterface\\MAININTERFACE_130_RUNTIME_ACTIVITY_SNAPSHOT_IMPORT_REPLAY_PIPELINE_NO_FAKE_PATCH_RESULT.md"
+  }
+}

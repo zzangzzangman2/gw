@@ -1,0 +1,74 @@
+{
+  "prefix": "BATTLE_60_VALIDATE_LOADABLE_LOCAL_SUBSET_SKILL_TIMELINE_ASSETBUNDLE_CHAIN_NO_XLUA_NO_HANDLER_PATCH",
+  "generatedAt": "2026-06-26T05:13:35",
+  "unitySummary": {
+    "prefix": "BATTLE_60_VALIDATE_LOADABLE_LOCAL_SUBSET_SKILL_TIMELINE_ASSETBUNDLE_CHAIN_NO_XLUA_NO_HANDLER_PATCH",
+    "sourceBackedSkillRowsChecked": 12,
+    "resourceCompleteSkillRowsChecked": 4,
+    "resourceCompleteSkillRowsVerified": 4,
+    "missingCommonDependencyRows": 8,
+    "bundleLoadSuccessRows": 12,
+    "assetLoadSuccessRows": 12,
+    "instantiateSuccessRows": 12,
+    "sceneSaved": false,
+    "handlerBindingApplied": false,
+    "xLuaRuntimeUsed": false,
+    "skillTimelineChainVerifiedForResourceCompleteSubset": true
+  },
+  "restoredClaim": false,
+  "playableClaim": false,
+  "isFinalRestoredBattleScreen": false,
+  "sceneSaved": false,
+  "handlerBindingApplied": false,
+  "xLuaRuntimeUsed": false,
+  "sourceBackedSkillRowsChecked": 12,
+  "resourceCompleteSkillRowsVerified": 4,
+  "resourceCompleteSkillRowsChecked": 4,
+  "missingCommonDependencyRows": 8,
+  "bundleLoadSuccessRows": 12,
+  "assetLoadSuccessRows": 12,
+  "instantiateSuccessRows": 12,
+  "componentRefRows": 12,
+  "skillTimelineChainVerifiedForResourceCompleteSubset": true,
+  "nextBlocker": "original_xlua_runtime_required_for_handlers_and_full_payload_actor_common_speedline_gaps",
+  "guardrailsTouched": {
+    "fakeSkillCreated": false,
+    "fakeEffectCreated": false,
+    "fakeCardIconTextCreated": false,
+    "handlerPatchApplied": false,
+    "dummyLuaUsed": false,
+    "externalXluaImported": false,
+    "androidInstrumentationUsed": false,
+    "mainInterfaceTouched": false
+  },
+  "commandPolicy": {
+    "rootCmdCount": 1,
+    "rootCmdFiles": [
+      "C:\\Users\\godho\\Downloads\\girlswar\\00_COMMAND_CENTER.cmd"
+    ],
+    "restoreToolsDirectCmdCount": 0,
+    "restoreToolsDirectCmdFiles": []
+  },
+  "payloadClassification": "local_playable_subset_only_not_full_payload",
+  "statusCounts": {
+    "timelineLocalStatus": {
+      "loadable": 4,
+      "loadable_with_unresolved_common_resource_deps": 8
+    },
+    "blockers": {
+      "blocking_playable_handlers": 1,
+      "blocking_full_payload": 1,
+      "blocking_subset_effect_completeness": 1,
+      "verified": 1,
+      "guardrail_preserved": 1
+    }
+  },
+  "outputs": {
+    "resultMd": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_60_VALIDATE_LOADABLE_LOCAL_SUBSET_SKILL_TIMELINE_ASSETBUNDLE_CHAIN_NO_XLUA_NO_HANDLER_PATCH_RESULT.md",
+    "resultJson": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_60_VALIDATE_LOADABLE_LOCAL_SUBSET_SKILL_TIMELINE_ASSETBUNDLE_CHAIN_NO_XLUA_NO_HANDLER_PATCH_RESULT.json",
+    "skillTimelineValidationCsv": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_60_VALIDATE_LOADABLE_LOCAL_SUBSET_SKILL_TIMELINE_ASSETBUNDLE_CHAIN_NO_XLUA_NO_HANDLER_PATCH_SKILL_TIMELINE_SOURCE_LOAD_VALIDATION.csv",
+    "skillPrefabComponentDependencyRefsCsv": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_60_VALIDATE_LOADABLE_LOCAL_SUBSET_SKILL_TIMELINE_ASSETBUNDLE_CHAIN_NO_XLUA_NO_HANDLER_PATCH_SKILL_PREFAB_COMPONENT_DEPENDENCY_REFS.csv",
+    "blockerSeparationCsv": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_60_VALIDATE_LOADABLE_LOCAL_SUBSET_SKILL_TIMELINE_ASSETBUNDLE_CHAIN_NO_XLUA_NO_HANDLER_PATCH_BLOCKER_SEPARATION_MATRIX.csv",
+    "log": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_60_VALIDATE_LOADABLE_LOCAL_SUBSET_SKILL_TIMELINE_ASSETBUNDLE_CHAIN_NO_XLUA_NO_HANDLER_PATCH.log"
+  }
+}

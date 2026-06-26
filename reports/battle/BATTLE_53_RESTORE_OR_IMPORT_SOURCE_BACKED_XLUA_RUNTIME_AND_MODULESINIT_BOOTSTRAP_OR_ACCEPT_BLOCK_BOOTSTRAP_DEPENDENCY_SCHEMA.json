@@ -1,0 +1,173 @@
+[
+  {
+    "component": "xLua runtime",
+    "requiredTypeOrGlobal": "XLua.LuaEnv",
+    "status": "missing_in_restored_unity_project",
+    "evidence": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\extracted\\il2cpp_dump\\dump.cs:451037",
+    "requiredBy": "YouYou.LuaManager.luaEnv and LoadUIScript",
+    "blockerIfMissing": "blocked_missing_xlua_runtime",
+    "b53Disposition": "required_after_xlua_runtime_inventory"
+  },
+  {
+    "component": "xLua runtime",
+    "requiredTypeOrGlobal": "XLua.LuaTable",
+    "status": "missing_in_restored_unity_project",
+    "evidence": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\extracted\\il2cpp_dump\\dump.cs:451405",
+    "requiredBy": "LuaForm/LuaUnit scriptEnv and LuaComBinder.GetComponents",
+    "blockerIfMissing": "blocked_missing_xlua_runtime",
+    "b53Disposition": "required_after_xlua_runtime_inventory"
+  },
+  {
+    "component": "xLua runtime",
+    "requiredTypeOrGlobal": "XLua.LuaFunction",
+    "status": "missing_in_restored_unity_project",
+    "evidence": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\extracted\\il2cpp_dump\\dump.cs:451187",
+    "requiredBy": "LuaManager event delegates",
+    "blockerIfMissing": "blocked_missing_xlua_runtime",
+    "b53Disposition": "required_after_xlua_runtime_inventory"
+  },
+  {
+    "component": "GameEntry",
+    "requiredTypeOrGlobal": "YouYou.GameEntry.Lua",
+    "status": "missing_in_restored_unity_project",
+    "evidence": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\extracted\\il2cpp_dump\\dump.cs:498815; C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\extracted\\il2cpp_dump\\dump.cs:499143",
+    "requiredBy": "LuaForm/LuaUnit lifecycle script loading and decoded Lua GameEntry.* calls",
+    "blockerIfMissing": "blocked_missing_gameentry_lua_manager",
+    "b53Disposition": "required_after_xlua_runtime_inventory"
+  },
+  {
+    "component": "LuaManager",
+    "requiredTypeOrGlobal": "YouYou.LuaManager.LoadUIScript",
+    "status": "missing_in_restored_unity_project",
+    "evidence": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\extracted\\il2cpp_dump\\dump.cs:502840",
+    "requiredBy": "LuaForm/LuaUnit OnInit/Init",
+    "blockerIfMissing": "blocked_missing_lua_manager_loader",
+    "b53Disposition": "required_after_xlua_runtime_inventory"
+  },
+  {
+    "component": "LuaManager loader",
+    "requiredTypeOrGlobal": "MyLoader/GetLuaBuff/LoadLuaAssetBundle",
+    "status": "missing_in_restored_unity_project",
+    "evidence": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\extracted\\il2cpp_dump\\dump.cs:502831; C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\extracted\\il2cpp_dump\\dump.cs:502834",
+    "requiredBy": "Load decoded UI and procedure Lua bytes",
+    "blockerIfMissing": "blocked_missing_lua_asset_loader",
+    "b53Disposition": "required_after_xlua_runtime_inventory"
+  },
+  {
+    "component": "Bridge",
+    "requiredTypeOrGlobal": "YouYou.LuaForm",
+    "status": "source_backed_stub_present_not_runtime_lifecycle",
+    "evidence": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\extracted\\il2cpp_dump\\dump.cs:502186",
+    "requiredBy": "UI_NormalBattle OnInit/Open",
+    "blockerIfMissing": "blocked_stub_does_not_execute_xlua",
+    "b53Disposition": "required_after_xlua_runtime_inventory"
+  },
+  {
+    "component": "Bridge",
+    "requiredTypeOrGlobal": "YouYou.LuaUnit",
+    "status": "source_backed_stub_present_not_runtime_lifecycle",
+    "evidence": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\extracted\\il2cpp_dump\\dump.cs:514483",
+    "requiredBy": "UI_Battle3DUI and UI_BattleBoxPage Init/Open",
+    "blockerIfMissing": "blocked_stub_does_not_execute_xlua",
+    "b53Disposition": "required_after_xlua_runtime_inventory"
+  },
+  {
+    "component": "Bridge",
+    "requiredTypeOrGlobal": "LuaComponentBinder.LuaComBinder",
+    "status": "source_backed_stub_present_partial_schema_only",
+    "evidence": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\extracted\\il2cpp_dump\\dump.cs:444585",
+    "requiredBy": "UI_BattleBoxPage GenBox LuaUtils.GetLuaComBinder/GetComponents",
+    "blockerIfMissing": "blocked_no_luatable_components",
+    "b53Disposition": "required_after_xlua_runtime_inventory"
+  },
+  {
+    "component": "Bridge",
+    "requiredTypeOrGlobal": "YouYou.UIEventListener.onClick",
+    "status": "source_backed_stub_present_delegate_unbound",
+    "evidence": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\extracted\\il2cpp_dump\\dump.cs:513943",
+    "requiredBy": "btn_box lines 162-178",
+    "blockerIfMissing": "blocked_no_lua_closure_delegate",
+    "b53Disposition": "required_after_xlua_runtime_inventory"
+  },
+  {
+    "component": "Lua module table",
+    "requiredTypeOrGlobal": "ModulesInit.ProcedureNormalBattle",
+    "status": "decoded_source_available_not_bootstrapped",
+    "evidence": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_procedure\\-3424355311143813575_ProcedureNormalBattle_security_xor_raw.lua:1; SetGameSpeed:933; ChangeToAuto:3795",
+    "requiredBy": "btnAuto/btnTwoSpeed/btnFastSkill/btnBuff/UI_Battle3DUI/UI_BattleBoxPage",
+    "blockerIfMissing": "blocked_modulesinit_not_initialized",
+    "b53Disposition": "required_after_xlua_runtime_inventory"
+  },
+  {
+    "component": "Lua global",
+    "requiredTypeOrGlobal": "ModulesInit.PhotoArtistMgr",
+    "status": "required_unresolved",
+    "evidence": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_50_DECODED_MAINCITY_LUA\\874003978109174219_UI_NormalBattle.lua:100",
+    "requiredBy": "btnAuto closure",
+    "blockerIfMissing": "blocked_missing_photo_artist_mgr",
+    "b53Disposition": "required_after_xlua_runtime_inventory"
+  },
+  {
+    "component": "Lua global",
+    "requiredTypeOrGlobal": "GameFunction/GameFunctionType",
+    "status": "required_unresolved",
+    "evidence": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_50_DECODED_MAINCITY_LUA\\874003978109174219_UI_NormalBattle.lua:95; C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_50_DECODED_MAINCITY_LUA\\874003978109174219_UI_NormalBattle.lua:118; C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_50_DECODED_MAINCITY_LUA\\874003978109174219_UI_NormalBattle.lua:139",
+    "requiredBy": "btnAuto/btnTwoSpeed/btnFastSkill gates",
+    "blockerIfMissing": "blocked_missing_game_function_globals",
+    "b53Disposition": "required_after_xlua_runtime_inventory"
+  },
+  {
+    "component": "Lua global",
+    "requiredTypeOrGlobal": "LuaUtils",
+    "status": "required_unresolved",
+    "evidence": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_50_DECODED_MAINCITY_LUA\\874003978109174219_UI_NormalBattle.lua:103; C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_50_DECODED_MAINCITY_LUA\\8374052518232552317_UI_BattleBoxPage.lua:49; C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_50_DECODED_MAINCITY_LUA\\-712482409242173665_UI_Battle3DUI.lua:3",
+    "requiredBy": "UI state toggles and box item lifecycle",
+    "blockerIfMissing": "blocked_missing_lua_utils",
+    "b53Disposition": "required_after_xlua_runtime_inventory"
+  },
+  {
+    "component": "Lua global",
+    "requiredTypeOrGlobal": "EventSystem/CommonEventId",
+    "status": "required_unresolved",
+    "evidence": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_50_DECODED_MAINCITY_LUA\\-712482409242173665_UI_Battle3DUI.lua:8; C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_50_DECODED_MAINCITY_LUA\\8374052518232552317_UI_BattleBoxPage.lua:24; C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_procedure\\-3424355311143813575_ProcedureNormalBattle_security_xor_raw.lua:3805",
+    "requiredBy": "Battle UI events and ProcedureNormalBattle auto/manual",
+    "blockerIfMissing": "blocked_missing_lua_event_bus",
+    "b53Disposition": "required_after_xlua_runtime_inventory"
+  },
+  {
+    "component": "Lua global",
+    "requiredTypeOrGlobal": "SaveMgr/PlayerMgr/GameTools/SetTimeScaleType",
+    "status": "required_unresolved",
+    "evidence": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\decoded\\xlua_battle\\download_xlualogic_modules_procedure\\-3424355311143813575_ProcedureNormalBattle_security_xor_raw.lua:933-947",
+    "requiredBy": "ProcedureNormalBattle.SetGameSpeed",
+    "blockerIfMissing": "blocked_missing_save_player_time_globals",
+    "b53Disposition": "required_after_xlua_runtime_inventory"
+  },
+  {
+    "component": "Lua global",
+    "requiredTypeOrGlobal": "UIUtil/DOTween/GameEntry.CameraCtrl",
+    "status": "required_unresolved",
+    "evidence": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_50_DECODED_MAINCITY_LUA\\8374052518232552317_UI_BattleBoxPage.lua:163-178",
+    "requiredBy": "btn_box click reward animation",
+    "blockerIfMissing": "blocked_missing_box_animation_runtime",
+    "b53Disposition": "required_after_xlua_runtime_inventory"
+  },
+  {
+    "component": "Runtime import decision",
+    "requiredTypeOrGlobal": "source-backed importable editor xLua runtime",
+    "status": "not_found",
+    "evidence": "BATTLE53 import candidates CSV",
+    "requiredBy": "LuaForm/LuaUnit original lifecycle and Lua closure binding",
+    "blockerIfMissing": "accepted_block_no_source_backed_xlua_runtime_available_locally",
+    "b53Disposition": "do_not_import_external_package_without_user_approval"
+  },
+  {
+    "component": "Runtime import decision",
+    "requiredTypeOrGlobal": "external xLua package",
+    "status": "approval_required_not_used",
+    "evidence": "not downloaded or installed",
+    "requiredBy": "possible future experiment only",
+    "blockerIfMissing": "non_source_backed_external_package_option_requires_user_approval",
+    "b53Disposition": "requires explicit user approval"
+  }
+]

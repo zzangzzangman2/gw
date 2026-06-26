@@ -1,0 +1,6 @@
+candidateOrBlocker,count,evidence,decision,nextAction
+source_backed_static_patch_candidate,0,No route/HUD/right rail field has a proven static source delta after B72; current state is only candidate scene/prefab observation.,no_static_patch_in_battle73,collect runtime snapshot first
+runtime_snapshot_required,269,RectTransform/sibling/TMP/mask/canvas fields are observable but not safely patchable without original runtime state.,blocked_pending_runtime_snapshot,use minimal runtime snapshot field spec
+handler_or_xlua_required,94,UI_NormalBattle button/top HUD state is owned by ModulesInit.ProcedureNormalBattle; xLua/GameEntry runtime remains unavailable.,blocked_pending_xlua_gameentry_modulesinit,provide source-backed runtime or approved snapshot evidence
+forbidden_guess,1,Coordinate-only active/RectTransform/TMP/mask changes would only match a screenshot region and are forbidden.,do_not_patch,avoid arbitrary HUD/right rail movement/hide/show
+map_reprojection,1,BATTLE72 map reprojection remains validated persisted candidate.,already_validated_out_of_scope_for_battle73,keep as mapReprojectionCandidateState=validated_persisted_battle72

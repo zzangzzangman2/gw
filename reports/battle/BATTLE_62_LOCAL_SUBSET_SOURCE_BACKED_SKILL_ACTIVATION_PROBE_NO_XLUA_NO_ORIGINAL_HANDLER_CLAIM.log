@@ -1,0 +1,9 @@
+BATTLE_62_LOCAL_SUBSET_SOURCE_BACKED_SKILL_ACTIVATION_PROBE_NO_XLUA_NO_ORIGINAL_HANDLER_CLAIM
+sourceBackedSkillRowsChecked=12
+skillPrefabsLoaded=12
+skillPrefabsInstantiated=12
+skillRowsWithVisualSignal=0
+actorsVisibleDuringProbe=3
+diagnosticCaptureProduced=False
+originalHandlerBindingClaim=false
+sceneSaved=false

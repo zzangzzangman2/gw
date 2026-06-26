@@ -2,7 +2,7 @@
   "verdict": "battle29_hero_list_skillcard_bind_preview_not_final",
   "visual_status": "improved_hero_list_cards_bound_not_final",
   "reference_video_used": true,
-  "video_clip05_sequence_extracted": true,
+  "video_clip05_sequence_extracted": false,
   "unityJson": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_battle_unity\\Assets\\RestoreData\\battle\\BATTLE_HERO_LIST_SKILLCARD_BIND_CLIP05.json",
   "capture": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_battle_unity\\Assets\\RestoreCaptures\\battle_hud\\BattleHeroListSkillCardBindClip05_1920x1080.png",
   "contactSheet": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_29_HERO_LIST_SKILLCARD_BIND_CLIP05_CONTACT_SHEET.jpg",
@@ -10,24 +10,24 @@
     "exists": true,
     "width": 1920,
     "height": 1080,
-    "nearWhiteRatio": 0.000265,
+    "nearWhiteRatio": 0.000278,
     "nearBlackRatio": 0.071402,
-    "visiblePixelRatio": 0.91336,
+    "visiblePixelRatio": 0.913558,
     "meanRgb": [
-      103.283,
-      73.689,
-      71.545
+      103.361,
+      73.697,
+      71.544
     ]
   },
   "battle27BottomScore": {
     "exists": true,
-    "highChromaRatio": 0.003874,
-    "nonFloorLikeRatio": 0.2096
+    "highChromaRatio": 0.005347,
+    "nonFloorLikeRatio": 0.212505
   },
   "battle29BottomScore": {
     "exists": true,
-    "highChromaRatio": 0.036716,
-    "nonFloorLikeRatio": 0.243368
+    "highChromaRatio": 0.037474,
+    "nonFloorLikeRatio": 0.244674
   },
   "battle27MapSummary": {
     "capture": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_battle_unity\\Assets\\RestoreCaptures\\battle_hud\\BattleCorrectMapSceneHudPreviewClip05_1920x1080.png",
@@ -68,6 +68,11 @@
         "slot": 1,
         "heroDid": "1036",
         "heroId": "51469",
+        "nameKo": "프리드리히",
+        "rarity": "5",
+        "level": "1",
+        "roleKo": "로마의 황제・ 전군 돌격",
+        "actorBundle": "download/roleprefabsandres/battleprefabandres/1036.assetbundle",
         "cloneName": "Battle29BoundHeroCard_1_1036",
         "hierarchyPath": "HeroListContainer/Battle29BoundHeroCard_1_1036",
         "anchoredPosition": "-190/0",
@@ -90,6 +95,11 @@
         "slot": 2,
         "heroDid": "1002",
         "heroId": "50870",
+        "nameKo": "차차",
+        "rarity": "4",
+        "level": "1",
+        "roleKo": "전체 치유・ 방어 금지",
+        "actorBundle": "download/roleprefabsandres/battleprefabandres/1002.assetbundle",
         "cloneName": "Battle29BoundHeroCard_2_1002",
         "hierarchyPath": "HeroListContainer/Battle29BoundHeroCard_2_1002",
         "anchoredPosition": "0/0",
@@ -112,6 +122,11 @@
         "slot": 3,
         "heroDid": "1034",
         "heroId": "50874",
+        "nameKo": "비스마르크",
+        "rarity": "5",
+        "level": "1",
+        "roleKo": "스플래시 피해・ 철혈 재상",
+        "actorBundle": "download/roleprefabsandres/battleprefabandres/1034.assetbundle",
         "cloneName": "Battle29BoundHeroCard_3_1034",
         "hierarchyPath": "HeroListContainer/Battle29BoundHeroCard_3_1034",
         "anchoredPosition": "190/0",

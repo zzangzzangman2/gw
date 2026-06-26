@@ -10,6 +10,7 @@ using System.Text;
 public static class BattleHeroListSkillCardBindClip05Editor
 {
     private const string ResultJsonPath = "Assets/RestoreData/battle/BATTLE_HERO_LIST_SKILLCARD_BIND_CLIP05.json";
+    private const string CharacterBattleUiListPath = "Assets/RestoreData/battle/GIRLSWAR_CHARACTER_BATTLE_UI_LIST.json";
     private const string CapturePath = "Assets/RestoreCaptures/battle_hud/BattleHeroListSkillCardBindClip05_1920x1080.png";
     private const string ScenePath = "Assets/Scenes/BattleHeroListSkillCardBindClip05.unity";
     private const string MergedExtractedRoot = @"C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted";
@@ -48,12 +49,7 @@ public static class BattleHeroListSkillCardBindClip05Editor
 
     private static void BindHeroCards(RectTransform container, GameObject template, Dictionary<string, List<Battle29SpritePngEntry>> spriteIndex, List<Battle29HeroCardRow> rows)
     {
-        var heroes = new[]
-        {
-            new Battle29HeroCardData { slot = 1, heroDid = "1036", heroId = "51469", headSprite = "head1036", headOutput = "extracted/unity/bundles/b_6ca02dad4f8af848/images/S/-1006758698391221614_head1036.png", normalSkill = "1036101", smallSkill = "1036201", bigSkill = "1036301" },
-            new Battle29HeroCardData { slot = 2, heroDid = "1002", heroId = "50870", headSprite = "head1002", headOutput = "extracted/unity/bundles/b_6ca02dad4f8af848/images/S/-296058673418415307_head1002.png", normalSkill = "1002101", smallSkill = "1002201", bigSkill = "1002301" },
-            new Battle29HeroCardData { slot = 3, heroDid = "1034", heroId = "50874", headSprite = "head1034", headOutput = "extracted/unity/bundles/b_6ca02dad4f8af848/images/S/401204702686331365_head1034.png", normalSkill = "1034101", smallSkill = "1034201", bigSkill = "1034301" },
-        };
+        var heroes = LoadBattleUiHeroCards();
 
         var containerRect = container.rect;
         float spacing = Mathf.Clamp(containerRect.width / 4f, 130f, 190f);
@@ -85,6 +81,11 @@ public static class BattleHeroListSkillCardBindClip05Editor
             row.slot = hero.slot;
             row.heroDid = hero.heroDid;
             row.heroId = hero.heroId;
+            row.nameKo = hero.nameKo;
+            row.rarity = hero.rarity;
+            row.level = hero.level;
+            row.roleKo = hero.roleKo;
+            row.actorBundle = hero.assetBundle;
             row.normalSkill = hero.normalSkill;
             row.smallSkill = hero.smallSkill;
             row.bigSkill = hero.bigSkill;
@@ -104,6 +105,36 @@ public static class BattleHeroListSkillCardBindClip05Editor
             row.headPngPath = Path.Combine(MergedExtractedRoot, hero.headOutput.Replace('/', Path.DirectorySeparatorChar));
             rows.Add(row);
         }
+    }
+
+    private static Battle29HeroCardData[] LoadBattleUiHeroCards()
+    {
+        string fullPath = ProjectPath(CharacterBattleUiListPath);
+        if (File.Exists(fullPath))
+        {
+            try
+            {
+                var json = File.ReadAllText(fullPath, Encoding.UTF8);
+                var list = JsonUtility.FromJson<Battle29CharacterBattleUiList>(json);
+                if (list != null && list.battleCards != null && list.battleCards.Length > 0)
+                    return list.battleCards;
+            }
+            catch (Exception ex)
+            {
+                Debug.LogWarning("Failed to load " + CharacterBattleUiListPath + ": " + ex.Message);
+            }
+        }
+        return FallbackHeroCards();
+    }
+
+    private static Battle29HeroCardData[] FallbackHeroCards()
+    {
+        return new[]
+        {
+            new Battle29HeroCardData { slot = 1, heroDid = "1036", heroId = "51469", headSprite = "head1036", headOutput = "extracted/unity/bundles/b_6ca02dad4f8af848/images/S/-1006758698391221614_head1036.png", normalSkill = "1036101", smallSkill = "1036201", bigSkill = "1036301" },
+            new Battle29HeroCardData { slot = 2, heroDid = "1002", heroId = "50870", headSprite = "head1002", headOutput = "extracted/unity/bundles/b_6ca02dad4f8af848/images/S/-296058673418415307_head1002.png", normalSkill = "1002101", smallSkill = "1002201", bigSkill = "1002301" },
+            new Battle29HeroCardData { slot = 3, heroDid = "1034", heroId = "50874", headSprite = "head1034", headOutput = "extracted/unity/bundles/b_6ca02dad4f8af848/images/S/401204702686331365_head1034.png", normalSkill = "1034101", smallSkill = "1034201", bigSkill = "1034301" },
+        };
     }
 
     private static int ActivateVisibleCardChildren(GameObject root)
@@ -236,7 +267,9 @@ public static class BattleHeroListSkillCardBindClip05Editor
 
     private static int BindHeroHeadSprites(GameObject root, Battle29HeroCardData hero)
     {
-        string path = Path.Combine(MergedExtractedRoot, hero.headOutput.Replace('/', Path.DirectorySeparatorChar));
+        string path = string.IsNullOrWhiteSpace(hero.headPngPath)
+            ? Path.Combine(MergedExtractedRoot, hero.headOutput.Replace('/', Path.DirectorySeparatorChar))
+            : hero.headPngPath;
         Sprite sprite = LoadPngSprite(path, hero.headSprite);
         if (sprite == null) return 0;
         int count = 0;
@@ -421,7 +454,7 @@ public static class BattleHeroListSkillCardBindClip05Editor
         for (int i = 0; i < rows.Count; i++)
         {
             var row = rows[i];
-            sb.Append("    {\"slot\":" + row.slot + ",\"heroDid\":\"" + Json(row.heroDid) + "\",\"heroId\":\"" + Json(row.heroId) + "\",\"cloneName\":\"" + Json(row.cloneName) + "\",\"hierarchyPath\":\"" + Json(row.hierarchyPath) + "\",\"anchoredPosition\":\"" + Json(row.anchoredPosition) + "\",\"sizeDelta\":\"" + Json(row.sizeDelta) + "\",\"headSprite\":\"" + Json(row.headSprite) + "\",\"headPngPath\":\"" + Json(row.headPngPath) + "\",\"headBindCount\":" + row.headBindCount + ",\"extractedSpriteBindCount\":" + row.extractedSpriteBindCount + ",\"hiddenUnresolvedWhiteDataIconCount\":" + row.hiddenUnresolvedWhiteDataIconCount + ",\"activeFixCount\":" + row.activeFixCount + ",\"imageCount\":" + row.imageCount + ",\"visibleImageCount\":" + row.visibleImageCount + ",\"visibleWhiteLikeImageCount\":" + row.visibleWhiteLikeImageCount + ",\"visibleWhiteLikeImagePaths\":[");
+            sb.Append("    {\"slot\":" + row.slot + ",\"heroDid\":\"" + Json(row.heroDid) + "\",\"heroId\":\"" + Json(row.heroId) + "\",\"nameKo\":\"" + Json(row.nameKo) + "\",\"rarity\":\"" + Json(row.rarity) + "\",\"level\":\"" + Json(row.level) + "\",\"roleKo\":\"" + Json(row.roleKo) + "\",\"actorBundle\":\"" + Json(row.actorBundle) + "\",\"cloneName\":\"" + Json(row.cloneName) + "\",\"hierarchyPath\":\"" + Json(row.hierarchyPath) + "\",\"anchoredPosition\":\"" + Json(row.anchoredPosition) + "\",\"sizeDelta\":\"" + Json(row.sizeDelta) + "\",\"headSprite\":\"" + Json(row.headSprite) + "\",\"headPngPath\":\"" + Json(row.headPngPath) + "\",\"headBindCount\":" + row.headBindCount + ",\"extractedSpriteBindCount\":" + row.extractedSpriteBindCount + ",\"hiddenUnresolvedWhiteDataIconCount\":" + row.hiddenUnresolvedWhiteDataIconCount + ",\"activeFixCount\":" + row.activeFixCount + ",\"imageCount\":" + row.imageCount + ",\"visibleImageCount\":" + row.visibleImageCount + ",\"visibleWhiteLikeImageCount\":" + row.visibleWhiteLikeImageCount + ",\"visibleWhiteLikeImagePaths\":[");
             for (int w = 0; w < row.visibleWhiteLikeImagePaths.Count; w++)
             {
                 sb.Append("\"" + Json(row.visibleWhiteLikeImagePaths[w]) + "\"");
@@ -455,23 +488,42 @@ public static class BattleHeroListSkillCardBindClip05Editor
     private static string Vec2(Vector2 v) { return v.x.ToString("0.###") + "/" + v.y.ToString("0.###"); }
 }
 
+[Serializable]
+public sealed class Battle29CharacterBattleUiList
+{
+    public Battle29HeroCardData[] battleCards = new Battle29HeroCardData[0];
+}
+
+[Serializable]
 public sealed class Battle29HeroCardData
 {
     public int slot;
     public string heroDid = "";
     public string heroId = "";
+    public string nameKo = "";
+    public string rarity = "";
+    public string level = "";
+    public string roleKo = "";
+    public string assetBundle = "";
     public string headSprite = "";
     public string headOutput = "";
+    public string headPngPath = "";
     public string normalSkill = "";
     public string smallSkill = "";
     public string bigSkill = "";
 }
 
+[Serializable]
 public sealed class Battle29HeroCardRow
 {
     public int slot;
     public string heroDid = "";
     public string heroId = "";
+    public string nameKo = "";
+    public string rarity = "";
+    public string level = "";
+    public string roleKo = "";
+    public string actorBundle = "";
     public string cloneName = "";
     public string hierarchyPath = "";
     public string anchoredPosition = "";

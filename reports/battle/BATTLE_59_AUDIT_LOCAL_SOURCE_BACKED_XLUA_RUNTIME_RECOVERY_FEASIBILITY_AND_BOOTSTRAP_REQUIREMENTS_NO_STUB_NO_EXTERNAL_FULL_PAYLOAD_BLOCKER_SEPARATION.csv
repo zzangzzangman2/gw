@@ -1,0 +1,86 @@
+﻿blockerKind,item,status,localSubsetRelation,detail
+runtime_handler,xLua/GameEntry/LuaManager/ModulesInit bootstrap,blocking_handler_binding,independent_of_actor_rendering,"BATTLE57 actors render, but BATTLE58/BATTLE59 handler closures cannot bind without original runtime bootstrap."
+actor_payload,local actors,local_subset_only,3/12 loadable,"summary={'classification': 'local_playable_subset_only_not_full_payload', 'actorStatusCounts': {'not_fetchable_local': 1, 'loadable': 3, 'unresolved_enemy_payload_instance': 8}, 'skillStatusCounts': {'data_only_missing_actor': 27, 'passive_no_timeline': 22, 'loadable': 4, 'loadable_with_unresolved_common_resource_deps': 8}, 'resourceStatusCounts': {'loadable': 8, 'not_fetchable_local': 1, 'unresolved_missing_common_bundle': 3}, 'loadableActors': 3, 'totalActors': 12, 'timelineResolvedSkillRows': 39, 'totalSkillRows': 61, 'resourceCompleteLoadableSkillRows': 4, 'timelineLoadableWithMissingCommonDeps': 8}"
+actor_payload,1036,not_fetchable_local,our,1036 actor bundle is present in CDNVersionFile but absent locally; CDN acquisition trace found no asset CDN build rule
+actor_payload,1100112,unresolved_enemy_payload_instance,enemy,payload enemy id has no authoritative DTMonster_* row or alias in local evidence
+actor_payload,1100113,unresolved_enemy_payload_instance,enemy,payload enemy id has no authoritative DTMonster_* row or alias in local evidence
+actor_payload,1100121,unresolved_enemy_payload_instance,enemy,payload enemy id has no authoritative DTMonster_* row or alias in local evidence
+actor_payload,1100122,unresolved_enemy_payload_instance,enemy,payload enemy id has no authoritative DTMonster_* row or alias in local evidence
+actor_payload,1100123,unresolved_enemy_payload_instance,enemy,payload enemy id has no authoritative DTMonster_* row or alias in local evidence
+actor_payload,1100131,unresolved_enemy_payload_instance,enemy,payload enemy id has no authoritative DTMonster_* row or alias in local evidence
+actor_payload,1100132,unresolved_enemy_payload_instance,enemy,payload enemy id has no authoritative DTMonster_* row or alias in local evidence
+actor_payload,1100133,unresolved_enemy_payload_instance,enemy,payload enemy id has no authoritative DTMonster_* row or alias in local evidence
+skill,1036101,data_only_missing_actor,payload_gap,"timeline resolves, but owner actor is not_fetchable_local"
+skill,1036201,data_only_missing_actor,payload_gap,"timeline resolves, but owner actor is not_fetchable_local"
+skill,1036301,data_only_missing_actor,payload_gap,"timeline resolves, but owner actor is not_fetchable_local"
+skill,1036301,data_only_missing_actor,payload_gap,"timeline resolves, but owner actor is not_fetchable_local"
+skill,1036401,passive_no_timeline,payload_gap,passive-style skill row has no DTSkillAct prefab/timeline mapping
+skill,1036402,passive_no_timeline,payload_gap,passive-style skill row has no DTSkillAct prefab/timeline mapping
+skill,1002201,loadable_with_unresolved_common_resource_deps,payload_gap,"main skill timeline bundle exists, but known common dependency bundle(s) are unresolved"
+skill,1002301,loadable_with_unresolved_common_resource_deps,payload_gap,"main skill timeline bundle exists, but known common dependency bundle(s) are unresolved"
+skill,1002301,loadable_with_unresolved_common_resource_deps,payload_gap,"main skill timeline bundle exists, but known common dependency bundle(s) are unresolved"
+skill,1034201,loadable_with_unresolved_common_resource_deps,payload_gap,"main skill timeline bundle exists, but known common dependency bundle(s) are unresolved"
+skill,1034301,loadable_with_unresolved_common_resource_deps,payload_gap,"main skill timeline bundle exists, but known common dependency bundle(s) are unresolved"
+skill,1034401,passive_no_timeline,payload_gap,passive-style skill row has no DTSkillAct prefab/timeline mapping
+skill,1034402,passive_no_timeline,payload_gap,passive-style skill row has no DTSkillAct prefab/timeline mapping
+skill,1012201,loadable_with_unresolved_common_resource_deps,payload_gap,"main skill timeline bundle exists, but known common dependency bundle(s) are unresolved"
+skill,1012301,loadable_with_unresolved_common_resource_deps,payload_gap,"main skill timeline bundle exists, but known common dependency bundle(s) are unresolved"
+skill,1012301,loadable_with_unresolved_common_resource_deps,payload_gap,"main skill timeline bundle exists, but known common dependency bundle(s) are unresolved"
+skill,1012401,passive_no_timeline,payload_gap,passive-style skill row has no DTSkillAct prefab/timeline mapping
+skill,1012403,passive_no_timeline,payload_gap,passive-style skill row has no DTSkillAct prefab/timeline mapping
+skill,1012101,data_only_missing_actor,payload_gap,"timeline resolves, but owner actor is unresolved_enemy_payload_instance"
+skill,1012201,data_only_missing_actor,payload_gap,"timeline resolves, but owner actor is unresolved_enemy_payload_instance"
+skill,1012301,data_only_missing_actor,payload_gap,"timeline resolves, but owner actor is unresolved_enemy_payload_instance"
+skill,1012301,data_only_missing_actor,payload_gap,"timeline resolves, but owner actor is unresolved_enemy_payload_instance"
+skill,1012401,passive_no_timeline,payload_gap,passive-style skill row has no DTSkillAct prefab/timeline mapping
+skill,1012403,passive_no_timeline,payload_gap,passive-style skill row has no DTSkillAct prefab/timeline mapping
+skill,1012101,data_only_missing_actor,payload_gap,"timeline resolves, but owner actor is unresolved_enemy_payload_instance"
+skill,1012201,data_only_missing_actor,payload_gap,"timeline resolves, but owner actor is unresolved_enemy_payload_instance"
+skill,1012301,data_only_missing_actor,payload_gap,"timeline resolves, but owner actor is unresolved_enemy_payload_instance"
+skill,1012301,data_only_missing_actor,payload_gap,"timeline resolves, but owner actor is unresolved_enemy_payload_instance"
+skill,1012401,passive_no_timeline,payload_gap,passive-style skill row has no DTSkillAct prefab/timeline mapping
+skill,1012403,passive_no_timeline,payload_gap,passive-style skill row has no DTSkillAct prefab/timeline mapping
+skill,1012101,data_only_missing_actor,payload_gap,"timeline resolves, but owner actor is unresolved_enemy_payload_instance"
+skill,1012201,data_only_missing_actor,payload_gap,"timeline resolves, but owner actor is unresolved_enemy_payload_instance"
+skill,1012301,data_only_missing_actor,payload_gap,"timeline resolves, but owner actor is unresolved_enemy_payload_instance"
+skill,1012301,data_only_missing_actor,payload_gap,"timeline resolves, but owner actor is unresolved_enemy_payload_instance"
+skill,1012401,passive_no_timeline,payload_gap,passive-style skill row has no DTSkillAct prefab/timeline mapping
+skill,1012403,passive_no_timeline,payload_gap,passive-style skill row has no DTSkillAct prefab/timeline mapping
+skill,1012101,data_only_missing_actor,payload_gap,"timeline resolves, but owner actor is unresolved_enemy_payload_instance"
+skill,1012201,data_only_missing_actor,payload_gap,"timeline resolves, but owner actor is unresolved_enemy_payload_instance"
+skill,1012301,data_only_missing_actor,payload_gap,"timeline resolves, but owner actor is unresolved_enemy_payload_instance"
+skill,1012301,data_only_missing_actor,payload_gap,"timeline resolves, but owner actor is unresolved_enemy_payload_instance"
+skill,1012401,passive_no_timeline,payload_gap,passive-style skill row has no DTSkillAct prefab/timeline mapping
+skill,1012403,passive_no_timeline,payload_gap,passive-style skill row has no DTSkillAct prefab/timeline mapping
+skill,1012101,data_only_missing_actor,payload_gap,"timeline resolves, but owner actor is unresolved_enemy_payload_instance"
+skill,1012201,data_only_missing_actor,payload_gap,"timeline resolves, but owner actor is unresolved_enemy_payload_instance"
+skill,1012301,data_only_missing_actor,payload_gap,"timeline resolves, but owner actor is unresolved_enemy_payload_instance"
+skill,1012301,data_only_missing_actor,payload_gap,"timeline resolves, but owner actor is unresolved_enemy_payload_instance"
+skill,1012401,passive_no_timeline,payload_gap,passive-style skill row has no DTSkillAct prefab/timeline mapping
+skill,1012403,passive_no_timeline,payload_gap,passive-style skill row has no DTSkillAct prefab/timeline mapping
+skill,1012101,data_only_missing_actor,payload_gap,"timeline resolves, but owner actor is unresolved_enemy_payload_instance"
+skill,1001401,passive_no_timeline,payload_gap,passive-style skill row has no DTSkillAct prefab/timeline mapping
+skill,1001403,passive_no_timeline,payload_gap,passive-style skill row has no DTSkillAct prefab/timeline mapping
+skill,1012101,data_only_missing_actor,payload_gap,"timeline resolves, but owner actor is unresolved_enemy_payload_instance"
+skill,1001401,passive_no_timeline,payload_gap,passive-style skill row has no DTSkillAct prefab/timeline mapping
+skill,1001403,passive_no_timeline,payload_gap,passive-style skill row has no DTSkillAct prefab/timeline mapping
+skill,1012101,data_only_missing_actor,payload_gap,"timeline resolves, but owner actor is unresolved_enemy_payload_instance"
+skill,1001401,passive_no_timeline,payload_gap,passive-style skill row has no DTSkillAct prefab/timeline mapping
+skill,1001403,passive_no_timeline,payload_gap,passive-style skill row has no DTSkillAct prefab/timeline mapping
+resource,download/roleprefabsandres/battleprefabandres/1036.assetbundle,not_fetchable_local,payload_gap,1036 actor bundle row is known from CDNVersionFile but exact local bundle and asset CDN rule are absent
+resource,download/commonprefabsandres/skilleffect/commonskillprefabsandres1/pinkspeedline.assetbundle,unresolved_missing_common_bundle,payload_gap,"common timeline dependency bundle, such as speedline, is referenced but absent locally"
+resource,download/commonprefabsandres/skilleffect/commonskillprefabsandres1/redspeedline.assetbundle,unresolved_missing_common_bundle,payload_gap,"common timeline dependency bundle, such as speedline, is referenced but absent locally"
+resource,download/commonprefabsandres/skilleffect/commonskillprefabsandres1/yellospeedline.assetbundle,unresolved_missing_common_bundle,payload_gap,"common timeline dependency bundle, such as speedline, is referenced but absent locally"
+actor,1036,not_fetchable_local,our,1036 actor bundle is present in CDNVersionFile but absent locally; CDN acquisition trace found no asset CDN build rule
+actor,1100112,unresolved_enemy_payload_instance,enemy,payload enemy id has no authoritative DTMonster_* row or alias in local evidence
+actor,1100113,unresolved_enemy_payload_instance,enemy,payload enemy id has no authoritative DTMonster_* row or alias in local evidence
+actor,1100121,unresolved_enemy_payload_instance,enemy,payload enemy id has no authoritative DTMonster_* row or alias in local evidence
+actor,1100122,unresolved_enemy_payload_instance,enemy,payload enemy id has no authoritative DTMonster_* row or alias in local evidence
+actor,1100123,unresolved_enemy_payload_instance,enemy,payload enemy id has no authoritative DTMonster_* row or alias in local evidence
+actor,1100131,unresolved_enemy_payload_instance,enemy,payload enemy id has no authoritative DTMonster_* row or alias in local evidence
+actor,1100132,unresolved_enemy_payload_instance,enemy,payload enemy id has no authoritative DTMonster_* row or alias in local evidence
+actor,1100133,unresolved_enemy_payload_instance,enemy,payload enemy id has no authoritative DTMonster_* row or alias in local evidence
+actor_bundle,download/roleprefabsandres/battleprefabandres/1036.assetbundle,not_fetchable_local,,1036 actor bundle row is known from CDNVersionFile but exact local bundle and asset CDN rule are absent
+timeline_prefab_dep,download/commonprefabsandres/skilleffect/commonskillprefabsandres1/pinkspeedline.assetbundle,unresolved_missing_common_bundle,,"common timeline dependency bundle, such as speedline, is referenced but absent locally"
+timeline_prefab_dep,download/commonprefabsandres/skilleffect/commonskillprefabsandres1/redspeedline.assetbundle,unresolved_missing_common_bundle,,"common timeline dependency bundle, such as speedline, is referenced but absent locally"
+timeline_prefab_dep,download/commonprefabsandres/skilleffect/commonskillprefabsandres1/yellospeedline.assetbundle,unresolved_missing_common_bundle,,"common timeline dependency bundle, such as speedline, is referenced but absent locally"

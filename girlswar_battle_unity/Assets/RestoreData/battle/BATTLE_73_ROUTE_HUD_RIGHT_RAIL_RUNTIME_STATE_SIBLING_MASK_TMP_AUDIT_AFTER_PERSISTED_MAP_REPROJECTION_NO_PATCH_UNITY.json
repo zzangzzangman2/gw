@@ -1,0 +1,21 @@
+﻿{
+  "prefix": "BATTLE_73_ROUTE_HUD_RIGHT_RAIL_RUNTIME_STATE_SIBLING_MASK_TMP_AUDIT_AFTER_PERSISTED_MAP_REPROJECTION_NO_PATCH",
+  "status": "battle73_candidate_scene_component_state_exported_no_save",
+  "candidateScenePath": "Assets/Scenes/Battle72Map11003TrueAspectReprojectionPersistedCandidate.unity",
+  "sceneOpened": true,
+  "sceneSaved": false,
+  "canonicalSceneOverwritten": false,
+  "sceneDirtyBefore": false,
+  "sceneDirtyAfter": false,
+  "packageImported": false,
+  "manifestModified": false,
+  "runtimeInstrumentationUsed": false,
+  "hudRoutePatched": false,
+  "cardPayloadPatched": false,
+  "actorPayloadPatched": false,
+  "hudNodesReviewed": 353,
+  "rightRailNodesReviewed": 293,
+  "tmpRowsReviewed": 0,
+  "maskStencilRowsReviewed": 0,
+  "siblingOrderRowsReviewed": 353
+}

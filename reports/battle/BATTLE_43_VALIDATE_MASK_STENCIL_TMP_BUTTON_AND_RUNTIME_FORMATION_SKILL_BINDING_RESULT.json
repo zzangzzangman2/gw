@@ -1,0 +1,441 @@
+{
+  "verdict": "playable context validation advanced, but final battle screen is not restored",
+  "visual_status": "failed_button_raycast_context_not_ready",
+  "isFinalRestoredBattleScreen": false,
+  "unityExitCode": 0,
+  "referenceVideoAvailable": false,
+  "referenceVideoPath": "C:\\Users\\godho\\Downloads\\플레이.mp4",
+  "auxiliaryReferenceVideoAvailable": true,
+  "auxiliaryReferenceVideoPath": "C:\\Users\\godho\\Downloads\\참고.mp4",
+  "unitySummary": {
+    "status": "battle43_validate_mask_stencil_tmp_button_and_runtime_formation_skill_binding",
+    "isFinalRestoredBattleScreen": false,
+    "sourceScene": "Assets/Scenes/Battle42PersistentBattleHudImagesFromOriginalSpriteEvidence.unity",
+    "scene": "Assets/Scenes/Battle43PlayableContextValidationCandidate.unity",
+    "capture": "Assets/RestoreCaptures/battle_actor/Battle43PlayableContextValidationCandidate_1920x1080.png",
+    "sourceSceneOpened": true,
+    "sceneSaved": true,
+    "captureExists": true,
+    "reopenValid": true,
+    "before": {
+      "canvas": 18,
+      "canvasScaler": 0,
+      "graphicRaycaster": 0,
+      "image": 232,
+      "graphic": 232,
+      "activeGraphic": 56,
+      "button": 0,
+      "activeButton": 0,
+      "mask": 0,
+      "rectMask2D": 0,
+      "stencilMaterial": 0,
+      "text": 0,
+      "tmp": 0,
+      "missingScript": 1208
+    },
+    "after": {
+      "canvas": 18,
+      "canvasScaler": 0,
+      "graphicRaycaster": 9,
+      "image": 232,
+      "graphic": 232,
+      "activeGraphic": 56,
+      "button": 10,
+      "activeButton": 10,
+      "mask": 0,
+      "rectMask2D": 0,
+      "stencilMaterial": 0,
+      "text": 0,
+      "tmp": 0,
+      "missingScript": 1208
+    },
+    "reopen": {
+      "canvas": 18,
+      "canvasScaler": 0,
+      "graphicRaycaster": 9,
+      "image": 232,
+      "graphic": 232,
+      "activeGraphic": 56,
+      "button": 10,
+      "activeButton": 10,
+      "mask": 0,
+      "rectMask2D": 0,
+      "stencilMaterial": 0,
+      "text": 0,
+      "tmp": 0,
+      "missingScript": 1208
+    },
+    "maskLikeTransformCount": 14,
+    "buttonLikeActiveImageCount": 10,
+    "eventSystemAdded": true,
+    "graphicRaycasterAddedCount": 9,
+    "buttonAddedCount": 10,
+    "raycastReadyButtonCount": 0,
+    "reopenRaycastReadyButtonCount": 0,
+    "reopenEventSystemCount": 1,
+    "heroCardRootCount": 186,
+    "heroListContainerCount": 199,
+    "actorRuntimeRootCount": 0,
+    "failReason": ""
+  },
+  "typeEvidenceSummary": {
+    "Image": {
+      "fullName": "UnityEngine.UI.Image",
+      "likelyRole": "visual image/raycast",
+      "monoBehaviourRefCount": "306",
+      "scriptPathIds": "-7030229213176759517;-7030229213176759517",
+      "bundles": "download/ui/uiprefabandres/battle_ext_prefabs.assetbundle;download/ui/uiprefabandres/winlose_ext_prefabs.assetbundle",
+      "luaEvidenceCount": "2"
+    },
+    "TextMeshProUGUI": {
+      "fullName": "TMPro.TextMeshProUGUI",
+      "likelyRole": "text/font",
+      "monoBehaviourRefCount": "69",
+      "scriptPathIds": "-5755350681981302373",
+      "bundles": "download/ui/uiprefabandres/battle_ext_prefabs.assetbundle",
+      "luaEvidenceCount": "2"
+    },
+    "Button": {
+      "fullName": "UnityEngine.UI.Button",
+      "likelyRole": "button/click",
+      "monoBehaviourRefCount": "33",
+      "scriptPathIds": "-787143586316466668",
+      "bundles": "download/ui/uiprefabandres/battle_ext_prefabs.assetbundle",
+      "luaEvidenceCount": "2"
+    },
+    "GraphicRaycaster": {
+      "fullName": "UnityEngine.UI.GraphicRaycaster",
+      "likelyRole": "canvas/raycast",
+      "monoBehaviourRefCount": "14",
+      "scriptPathIds": "8390977652835490180",
+      "bundles": "download/ui/uiprefabandres/battle_ext_prefabs.assetbundle",
+      "luaEvidenceCount": "0"
+    },
+    "RectMask2D": {
+      "fullName": "UnityEngine.UI.RectMask2D",
+      "likelyRole": "layout/mask",
+      "monoBehaviourRefCount": "14",
+      "scriptPathIds": "4452942400327435936",
+      "bundles": "download/ui/uiprefabandres/battle_ext_prefabs.assetbundle",
+      "luaEvidenceCount": "0"
+    },
+    "Text": {
+      "fullName": "UnityEngine.UI.Text",
+      "likelyRole": "text/font",
+      "monoBehaviourRefCount": "10",
+      "scriptPathIds": "-7978266203517415465",
+      "bundles": "download/ui/uiprefabandres/battle_ext_prefabs.assetbundle",
+      "luaEvidenceCount": "2"
+    },
+    "Mask": {
+      "fullName": "UnityEngine.UI.Mask",
+      "likelyRole": "layout/mask",
+      "monoBehaviourRefCount": "8",
+      "scriptPathIds": "-7784299604066853536",
+      "bundles": "download/ui/uiprefabandres/battle_ext_prefabs.assetbundle",
+      "luaEvidenceCount": "2"
+    },
+    "CanvasScaler": {
+      "fullName": "UnityEngine.UI.CanvasScaler",
+      "likelyRole": "canvas/raycast",
+      "monoBehaviourRefCount": "4",
+      "scriptPathIds": "-8797238614672040712",
+      "bundles": "download/ui/uiprefabandres/battle_ext_prefabs.assetbundle",
+      "luaEvidenceCount": "0"
+    }
+  },
+  "payloadSummary": {
+    "mapId": 11001,
+    "battleType": 1,
+    "ourHeroCount": 3,
+    "ourHeroes": [
+      {
+        "heroDid": 1036,
+        "heroId": 51469,
+        "curHp": 1040392,
+        "curMp": 1000,
+        "skills": [
+          1036101,
+          1036201,
+          1036301,
+          1036401,
+          1036402
+        ]
+      },
+      {
+        "heroDid": 1002,
+        "heroId": 50870,
+        "curHp": 636907,
+        "curMp": 1000,
+        "skills": [
+          1002101,
+          1002201,
+          1002301
+        ]
+      },
+      {
+        "heroDid": 1034,
+        "heroId": 50874,
+        "curHp": 1123327,
+        "curMp": 1000,
+        "skills": [
+          1034101,
+          1034201,
+          1034301,
+          1034401,
+          1034402
+        ]
+      }
+    ],
+    "ourTeamFormation": [
+      {
+        "formationId": 68744,
+        "position": 1,
+        "heroId": 51469
+      },
+      {
+        "formationId": 65137,
+        "position": 2,
+        "heroId": 50870
+      },
+      {
+        "formationId": 68745,
+        "position": 3,
+        "heroId": 50874
+      },
+      {
+        "heroId": 0,
+        "position": 4
+      },
+      {
+        "heroId": 0,
+        "position": 5
+      },
+      {
+        "heroId": 0,
+        "position": 6
+      }
+    ],
+    "waveCount": 3,
+    "firstWaveEnemyFormation": [
+      {
+        "formationId": 0,
+        "heroDid": 1100111,
+        "position": 1,
+        "firstValue": 0,
+        "heroId": -1
+      },
+      {
+        "formationId": 0,
+        "heroDid": 1100112,
+        "position": 2,
+        "firstValue": 0,
+        "heroId": -2
+      },
+      {
+        "formationId": 0,
+        "heroDid": 1100113,
+        "position": 3,
+        "firstValue": 0,
+        "heroId": -3
+      }
+    ]
+  },
+  "resourceSummary": {
+    "relevantBundleCount": 13,
+    "missingBundleCount": 4,
+    "missingBundles": [
+      "download/roleprefabsandres/battleprefabandres/1036.assetbundle",
+      "download/commonprefabsandres/skilleffect/commonskillprefabsandres1/pinkspeedline.assetbundle",
+      "download/commonprefabsandres/skilleffect/commonskillprefabsandres1/redspeedline.assetbundle",
+      "download/commonprefabsandres/skilleffect/commonskillprefabsandres1/yellospeedline.assetbundle"
+    ],
+    "relevantBundles": [
+      {
+        "kind": "actor_spine",
+        "bundle": "download/roleprefabsandres/battleprefabandres/1002.assetbundle",
+        "exists": "True",
+        "referenced_by": "our:1002",
+        "source": "HeroCtrl->DTmodel.prefabId"
+      },
+      {
+        "kind": "actor_spine",
+        "bundle": "download/roleprefabsandres/battleprefabandres/1034.assetbundle",
+        "exists": "True",
+        "referenced_by": "our:1034",
+        "source": "HeroCtrl->DTmodel.prefabId"
+      },
+      {
+        "kind": "actor_spine",
+        "bundle": "download/roleprefabsandres/battleprefabandres/1036.assetbundle",
+        "exists": "False",
+        "referenced_by": "our:1036",
+        "source": "HeroCtrl->DTmodel.prefabId"
+      },
+      {
+        "kind": "battle_map",
+        "bundle": "download/artsources/map/battlemap/map_11001/map_11001_1.assetbundle",
+        "exists": "True",
+        "referenced_by": "mapId:11001",
+        "source": "mapId bundle search"
+      },
+      {
+        "kind": "skill_prefab",
+        "bundle": "download/skillprefabsandres/1002.assetbundle",
+        "exists": "True",
+        "referenced_by": "skill:1002101:prefabId:1002101;skill:1002201:prefabId:1002201;skill:1002301:prefabId:1002301;skill:1002301:fastPrefabId:1002351",
+        "source": "BattleResPreloadMgr->BattleTimelineResMap"
+      },
+      {
+        "kind": "skill_prefab",
+        "bundle": "download/skillprefabsandres/1034.assetbundle",
+        "exists": "True",
+        "referenced_by": "skill:1034101:prefabId:1034101;skill:1034201:prefabId:1034201;skill:1034301:prefabId:1034301;skill:1034301:fastPrefabId:1034351",
+        "source": "BattleResPreloadMgr->BattleTimelineResMap"
+      },
+      {
+        "kind": "skill_prefab",
+        "bundle": "download/skillprefabsandres/1036.assetbundle",
+        "exists": "True",
+        "referenced_by": "skill:1036101:prefabId:1036101;skill:1036201:prefabId:1036201;skill:1036301:prefabId:1036301;skill:1036301:fastPrefabId:1036351",
+        "source": "BattleResPreloadMgr->BattleTimelineResMap"
+      },
+      {
+        "kind": "timeline_prefab_dep",
+        "bundle": "download/commonprefabsandres/skilleffect/commonskillprefabsandres1/pinkspeedline.assetbundle",
+        "exists": "False",
+        "referenced_by": "timeline:1002201;timeline:1002301;timeline:1002351",
+        "source": "BattleTimelineResMap.prefab"
+      },
+      {
+        "kind": "timeline_prefab_dep",
+        "bundle": "download/commonprefabsandres/skilleffect/commonskillprefabsandres1/redspeedline.assetbundle",
+        "exists": "False",
+        "referenced_by": "timeline:1036201;timeline:1012201;timeline:1012201;timeline:1012301;timeline:1012301;timeline:1012301;timeline:1012301;timeline:1012351;timeline:1012351;timeline:1012351;timeline:1012201;timeline:1012201;timeline:1012301;timeline:1012301;timeline:1012301;timeline:1012301;timeline:1012351;timeline:1012351;timeline:1012351;timeline:1012201;timeline:1012201;timeline:1012301;timeline:1012301;timeline:1012301;timeline:1012301;timeline:1012351;timeline:1012351;timeline:1012351;timeline:1012201;timeline:1012201;timeline:1012301;timeline:1012301;timeline:1012301;timeline:1012301;timeline:1012351;timeline:1012351;timeline:1012351;timeline:1012201;timeline:1012201;timeline:1012301;timeline:1012301;timeline:1012301;timeline:1012301;timeline:1012351;timeline:1012351;timeline:1012351;timeline:1012201;timeline:1012201;timeline:1012301;timeline:1012301;timeline:1012301;timeline:1012301;timeline:1012351;timeline:1012351;timeline:1012351",
+        "source": "BattleTimelineResMap.prefab"
+      },
+      {
+        "kind": "timeline_prefab_dep",
+        "bundle": "download/commonprefabsandres/skilleffect/commonskillprefabsandres1/yellospeedline.assetbundle",
+        "exists": "False",
+        "referenced_by": "timeline:1036301;timeline:1036351;timeline:1034201;timeline:1034351",
+        "source": "BattleTimelineResMap.prefab"
+      },
+      {
+        "kind": "timeline_prefab_dep",
+        "bundle": "download/skillprefabsandres/1002.assetbundle",
+        "exists": "True",
+        "referenced_by": "timeline:1002101;timeline:1002101;timeline:1002201;timeline:1002201;timeline:1002201;timeline:1002301;timeline:1002301;timeline:1002301;timeline:1002351;timeline:1002351;timeline:1002351",
+        "source": "BattleTimelineResMap.prefab"
+      },
+      {
+        "kind": "timeline_prefab_dep",
+        "bundle": "download/skillprefabsandres/1034.assetbundle",
+        "exists": "True",
+        "referenced_by": "timeline:1034101;timeline:1034201;timeline:1034201;timeline:1034201;timeline:1034201;timeline:1034201;timeline:1034201;timeline:1034301;timeline:1034351;timeline:1034351",
+        "source": "BattleTimelineResMap.prefab"
+      },
+      {
+        "kind": "timeline_prefab_dep",
+        "bundle": "download/skillprefabsandres/1036.assetbundle",
+        "exists": "True",
+        "referenced_by": "timeline:1036101;timeline:1036101;timeline:1036201;timeline:1036301;timeline:1036301;timeline:1036351;timeline:1036351;timeline:1036351;timeline:1036351;timeline:1036351;timeline:1036351;timeline:1036351;timeline:1036351",
+        "source": "BattleTimelineResMap.prefab"
+      }
+    ]
+  },
+  "raycastFailureSummary": {
+    "missCount": 20,
+    "reasonCounts": {
+      "no_graphic_hits_at_button_center": 20
+    },
+    "allMissesHadZeroGraphicHits": true,
+    "samples": [
+      {
+        "path": "BattleHudSpriteAtlasTextureRuntimeBindingClip05Root/CanvasLuaStateHUD_01_ui_normalbattle/root_opra/btnTwoSpeed/im_lock_TwoSpeed",
+        "rectSize": "17/22",
+        "canvasPath": "BattleHudSpriteAtlasTextureRuntimeBindingClip05Root/CanvasLuaStateHUD_01_ui_normalbattle",
+        "evidence": "component-only raycast validation; persistent Lua handler still missing; screen=606/171; hitCount=0; topHit=; hits=; eventCamera=BattleHudSpriteAtlasTextureRuntimeBindingClip05Camera; reason=no_graphic_hits_at_button_center"
+      },
+      {
+        "path": "BattleHudSpriteAtlasTextureRuntimeBindingClip05Root/CanvasLuaStateHUD_01_ui_normalbattle/root_opra/btnTwoSpeed/im_off",
+        "rectSize": "73/78",
+        "canvasPath": "BattleHudSpriteAtlasTextureRuntimeBindingClip05Root/CanvasLuaStateHUD_01_ui_normalbattle",
+        "evidence": "component-only raycast validation; persistent Lua handler still missing; screen=578/169; hitCount=0; topHit=; hits=; eventCamera=BattleHudSpriteAtlasTextureRuntimeBindingClip05Camera; reason=no_graphic_hits_at_button_center"
+      },
+      {
+        "path": "BattleHudSpriteAtlasTextureRuntimeBindingClip05Root/CanvasLuaStateHUD_01_ui_normalbattle/root_opra/btnAuto/im_new_auto/im_new",
+        "rectSize": "63/42",
+        "canvasPath": "BattleHudSpriteAtlasTextureRuntimeBindingClip05Root/CanvasLuaStateHUD_01_ui_normalbattle",
+        "evidence": "component-only raycast validation; persistent Lua handler still missing; screen=543/371; hitCount=0; topHit=; hits=; eventCamera=BattleHudSpriteAtlasTextureRuntimeBindingClip05Camera; reason=no_graphic_hits_at_button_center"
+      },
+      {
+        "path": "BattleHudSpriteAtlasTextureRuntimeBindingClip05Root/CanvasLuaStateHUD_01_ui_normalbattle/root_opra/btnFastSkill/im_lock_FastSkill",
+        "rectSize": "17/22",
+        "canvasPath": "BattleHudSpriteAtlasTextureRuntimeBindingClip05Root/CanvasLuaStateHUD_01_ui_normalbattle",
+        "evidence": "component-only raycast validation; persistent Lua handler still missing; screen=606/81; hitCount=0; topHit=; hits=; eventCamera=BattleHudSpriteAtlasTextureRuntimeBindingClip05Camera; reason=no_graphic_hits_at_button_center"
+      },
+      {
+        "path": "BattleHudSpriteAtlasTextureRuntimeBindingClip05Root/CanvasLuaStateHUD_01_ui_normalbattle/root_opra/btnSkip",
+        "rectSize": "73/78",
+        "canvasPath": "BattleHudSpriteAtlasTextureRuntimeBindingClip05Root/CanvasLuaStateHUD_01_ui_normalbattle",
+        "evidence": "component-only raycast validation; persistent Lua handler still missing; screen=578/259; hitCount=0; topHit=; hits=; eventCamera=BattleHudSpriteAtlasTextureRuntimeBindingClip05Camera; reason=no_graphic_hits_at_button_center"
+      },
+      {
+        "path": "BattleHudSpriteAtlasTextureRuntimeBindingClip05Root/CanvasLuaStateHUD_01_ui_normalbattle/root_opra/btnPause",
+        "rectSize": "92/54",
+        "canvasPath": "BattleHudSpriteAtlasTextureRuntimeBindingClip05Root/CanvasLuaStateHUD_01_ui_normalbattle",
+        "evidence": "component-only raycast validation; persistent Lua handler still missing; screen=76/551; hitCount=0; topHit=; hits=; eventCamera=BattleHudSpriteAtlasTextureRuntimeBindingClip05Camera; reason=no_graphic_hits_at_button_center"
+      },
+      {
+        "path": "BattleHudSpriteAtlasTextureRuntimeBindingClip05Root/CanvasLuaStateHUD_01_ui_normalbattle/root_opra/btnAuto/im_lock_Auto",
+        "rectSize": "17/22",
+        "canvasPath": "BattleHudSpriteAtlasTextureRuntimeBindingClip05Root/CanvasLuaStateHUD_01_ui_normalbattle",
+        "evidence": "component-only raycast validation; persistent Lua handler still missing; screen=606/351; hitCount=0; topHit=; hits=; eventCamera=BattleHudSpriteAtlasTextureRuntimeBindingClip05Camera; reason=no_graphic_hits_at_button_center"
+      },
+      {
+        "path": "BattleHudSpriteAtlasTextureRuntimeBindingClip05Root/CanvasLuaStateHUD_01_ui_normalbattle/root_battle/cizhui_group/btn_arrow",
+        "rectSize": "40/35",
+        "canvasPath": "BattleHudSpriteAtlasTextureRuntimeBindingClip05Root/CanvasLuaStateHUD_01_ui_normalbattle/root_battle",
+        "evidence": "component-only raycast validation; persistent Lua handler still missing; screen=1242.3/-55.3; hitCount=0; topHit=; hits=; eventCamera=BattleHudSpriteAtlasTextureRuntimeBindingClip05Camera; reason=no_graphic_hits_at_button_center"
+      }
+    ]
+  },
+  "captureMetrics": {
+    "captureExists": true,
+    "width": 1920,
+    "height": 1080,
+    "nonBlackPixelRatio": 0.899287
+  },
+  "battle42ToBattle43CaptureSimilarity": {
+    "available": true,
+    "meanAbsDiff": 0.0,
+    "pixelCorrelation": 1.0
+  },
+  "battle42Carryover": {
+    "visual_status": "failed_persistent_hud_images_survive_scene_reload_but_clip05_playable_context_not_restored",
+    "cameraVisibleBattleHud": true,
+    "reopenImageCount": 232,
+    "reopenGraphicCount": 232
+  },
+  "blocker": "BATTLE43 did not produce persistent raycast-ready button candidates. Mask/RectMask2D are still absent. TMP/Text are still absent.",
+  "nextBlocker": "BATTLE_44_TRACE_ORIGINAL_BUTTON_MONOSCRIPT_AND_TARGET_GRAPHIC_SERIALIZATION",
+  "rootCmdCount": 1,
+  "restoreToolsDirectCmdCount": 0,
+  "outputs": {
+    "report": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_43_VALIDATE_MASK_STENCIL_TMP_BUTTON_AND_RUNTIME_FORMATION_SKILL_BINDING_RESULT.md",
+    "resultJson": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_43_VALIDATE_MASK_STENCIL_TMP_BUTTON_AND_RUNTIME_FORMATION_SKILL_BINDING_RESULT.json",
+    "unityDataJson": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_battle_unity\\Assets\\RestoreData\\battle\\BATTLE_43_VALIDATE_MASK_STENCIL_TMP_BUTTON_AND_RUNTIME_FORMATION_SKILL_BINDING_UNITY.json",
+    "componentsCsv": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_battle_unity\\Assets\\RestoreData\\battle\\BATTLE_43_VALIDATE_MASK_STENCIL_TMP_BUTTON_AND_RUNTIME_FORMATION_SKILL_BINDING_COMPONENTS.csv",
+    "capture": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_battle_unity\\Assets\\RestoreCaptures\\battle_actor\\Battle43PlayableContextValidationCandidate_1920x1080.png",
+    "contactSheet": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_43_VALIDATE_MASK_STENCIL_TMP_BUTTON_AND_RUNTIME_FORMATION_SKILL_BINDING_CONTACT_SHEET.jpg",
+    "patchPlan": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_43_MINIMAL_PLAYABLE_CONTEXT_PATCH_PLAN.md",
+    "unityLog": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_43_VALIDATE_MASK_STENCIL_TMP_BUTTON_AND_RUNTIME_FORMATION_SKILL_BINDING.log"
+  },
+  "notes": [
+    "BATTLE43 does not add fake art, fake cards, fake icons, screenshot paste, or whole-atlas placement.",
+    "BATTLE43 only patches component/raycast plumbing where original Button/GraphicRaycaster evidence exists.",
+    "No fake onClick handlers were attached.",
+    "Final restored battle screen remains false."
+  ]
+}

@@ -1,0 +1,5 @@
+decision,recommended,reason,nextAction,claimAllowed
+true_capture_generated_no_scene_save,True,BATTLE68 capture-only editor method generated a true 1920x855 reference-aspect capture without SaveScene.,Use the true capture for route/HUD/card/actor normalized validation; keep payload/runtime blockers separate.,no restored/playable claim
+do_not_use_BATTLE67_crop_as_final,True,"Crop is diagnostic image processing, not runtime/GameView view rect.",Keep crop as comparison guide only.,analysis-only
+defer_route_hud_card_actor_layout_patch,True,Coordinate/layout changes before true aspect capture would be coordinate-only.,"Run true aspect capture first, then compare BATTLE67 focused route rows.",no layout success claim
+preserve_separate_payload_and_runtime_blockers,True,True aspect capture does not solve card/icon/full actor/Timeline/xLua gaps.,Keep blocker categories separate in control tower.,diagnostic only

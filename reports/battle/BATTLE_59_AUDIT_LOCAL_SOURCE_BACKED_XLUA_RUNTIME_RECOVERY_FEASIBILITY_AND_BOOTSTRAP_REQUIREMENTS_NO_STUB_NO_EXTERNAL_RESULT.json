@@ -1,0 +1,75 @@
+{
+  "name": "BATTLE_59_AUDIT_LOCAL_SOURCE_BACKED_XLUA_RUNTIME_RECOVERY_FEASIBILITY_AND_BOOTSTRAP_REQUIREMENTS_NO_STUB_NO_EXTERNAL",
+  "generatedAt": "2026-06-26T03:38:39",
+  "visual_status": "blocked_no_local_source_backed_executable_xlua_runtime_no_stub_no_external",
+  "isFinalRestoredBattleScreen": false,
+  "patchDecision": "blocked_no_patch",
+  "sceneSaved": false,
+  "sourceBackedBootstrapApplied": false,
+  "handlerBindingApplied": false,
+  "nextBlocker": "requires_original_xlua_runtime_or_user_approved_external_xlua_and_full_payload_gaps",
+  "executableXluaRuntimeAvailable": false,
+  "gameEntryLuaManagerBootstrapAvailable": false,
+  "sourceBackedImportableEditorRuntimeCandidates": 0,
+  "runtimeEvidenceRows": 32,
+  "bootstrapRequirementRows": 37,
+  "handlerFeasibilityRows": 5,
+  "fullPayloadSeparationRows": 85,
+  "runtimeEvidenceClassificationCounts": {
+    "generated_probe_or_restore_evidence_not_runtime": 5,
+    "not_found": 1,
+    "bridge_schema_present_not_lifecycle": 2,
+    "bridge_schema_present_partial": 1,
+    "bridge_schema_present_delegate_unbound": 1,
+    "not_verified_executable_runtime": 5,
+    "source_backed_type_signature_only_not_executable": 9,
+    "native_player_runtime_not_editor_importable": 1,
+    "source_backed_lua_source_available_not_runtime": 6,
+    "non_source_backed_external_package_option_requires_user_approval": 1
+  },
+  "battle57Carryover": {
+    "runtimeRehydrateUsed": true,
+    "sourceBackedRehydratedActors": 3,
+    "meshReadyRows": 3,
+    "materialReadyRows": 3,
+    "frustumRows": 3,
+    "pixelSignalRows": 3,
+    "isFinalRestoredBattleScreen": false
+  },
+  "battle58CarryoverButtons": {
+    "rows": 10,
+    "beforeRows": 5,
+    "forcedRows": 5,
+    "activeInteractableRows": 5,
+    "directTargetIncludedRows": 5,
+    "eventTargetIncludedRows": 0,
+    "eventTargetIncludedForcedRows": 5,
+    "onClickKnownRows": 0,
+    "uiEventListenerDelegateRows": 0,
+    "handlerBoundRows": 0
+  },
+  "battle58Carryover": {
+    "visual_status": "blocked_missing_xlua_gameentry_modulesinit_bootstrap_no_fake_handler_patch",
+    "patchDecision": "blocked_no_patch",
+    "handlerBindingApplied": false,
+    "sceneSaved": false,
+    "nextBlocker": "SOURCE_BACKED_XLUA_GAMEENTRY_LUAMANAGER_RUNTIME_REQUIRED_FOR_ORIGINAL_HANDLER_BINDING_AND_FULL_PAYLOAD_GAPS"
+  },
+  "outputs": {
+    "md": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_59_AUDIT_LOCAL_SOURCE_BACKED_XLUA_RUNTIME_RECOVERY_FEASIBILITY_AND_BOOTSTRAP_REQUIREMENTS_NO_STUB_NO_EXTERNAL_RESULT.md",
+    "json": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_59_AUDIT_LOCAL_SOURCE_BACKED_XLUA_RUNTIME_RECOVERY_FEASIBILITY_AND_BOOTSTRAP_REQUIREMENTS_NO_STUB_NO_EXTERNAL_RESULT.json",
+    "runtimeEvidenceCsv": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_59_AUDIT_LOCAL_SOURCE_BACKED_XLUA_RUNTIME_RECOVERY_FEASIBILITY_AND_BOOTSTRAP_REQUIREMENTS_NO_STUB_NO_EXTERNAL_XLUA_RUNTIME_AVAILABILITY_EVIDENCE.csv",
+    "bootstrapGraphCsv": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_59_AUDIT_LOCAL_SOURCE_BACKED_XLUA_RUNTIME_RECOVERY_FEASIBILITY_AND_BOOTSTRAP_REQUIREMENTS_NO_STUB_NO_EXTERNAL_GAMEENTRY_LUAMANAGER_MODULESINIT_BOOTSTRAP_REQUIREMENT_GRAPH.csv",
+    "handlerFeasibilityCsv": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_59_AUDIT_LOCAL_SOURCE_BACKED_XLUA_RUNTIME_RECOVERY_FEASIBILITY_AND_BOOTSTRAP_REQUIREMENTS_NO_STUB_NO_EXTERNAL_ORIGINAL_HANDLER_BINDING_FEASIBILITY_DECISION_MATRIX.csv",
+    "fullPayloadSeparationCsv": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_59_AUDIT_LOCAL_SOURCE_BACKED_XLUA_RUNTIME_RECOVERY_FEASIBILITY_AND_BOOTSTRAP_REQUIREMENTS_NO_STUB_NO_EXTERNAL_FULL_PAYLOAD_BLOCKER_SEPARATION.csv",
+    "log": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_59_AUDIT_LOCAL_SOURCE_BACKED_XLUA_RUNTIME_RECOVERY_FEASIBILITY_AND_BOOTSTRAP_REQUIREMENTS_NO_STUB_NO_EXTERNAL.log"
+  },
+  "playVideo": "missing",
+  "auxReferenceVideo": "available_auxiliary_only",
+  "rootCmdCount": 1,
+  "rootCmdFiles": [
+    "C:\\Users\\godho\\Downloads\\girlswar\\00_COMMAND_CENTER.cmd"
+  ],
+  "restoreToolsDirectCmdCount": 0,
+  "restoreToolsDirectCmdFiles": []
+}

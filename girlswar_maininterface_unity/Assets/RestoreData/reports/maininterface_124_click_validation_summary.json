@@ -1,0 +1,11 @@
+﻿{
+    "generatedAt": "2026-06-26 01:16:13",
+    "scenePath": "Assets/Scenes/MainInterface_UI124_Hero1005HomeSpine.unity",
+    "csv": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_maininterface_unity\\Assets\\RestoreData\\reports\\maininterface_124_click_validation.csv",
+    "json": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_maininterface_unity\\Assets\\RestoreData\\reports\\maininterface_124_click_validation_summary.json",
+    "totalButtons": 77,
+    "activeButtons": 24,
+    "raycastClickableButtons": 24,
+    "raycastBlockedButtons": 0,
+    "heroSkeletonRaycastTarget": false
+}

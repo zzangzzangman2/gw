@@ -1,0 +1,14 @@
+﻿gapKind,id,side,status,bundle,reason
+actor,1036,our,not_fetchable_local,download/roleprefabsandres/battleprefabandres/1036.assetbundle,1036 actor bundle is present in CDNVersionFile but absent locally; CDN acquisition trace found no asset CDN build rule
+actor,1100112,enemy,unresolved_enemy_payload_instance,,payload enemy id has no authoritative DTMonster_* row or alias in local evidence
+actor,1100113,enemy,unresolved_enemy_payload_instance,,payload enemy id has no authoritative DTMonster_* row or alias in local evidence
+actor,1100121,enemy,unresolved_enemy_payload_instance,,payload enemy id has no authoritative DTMonster_* row or alias in local evidence
+actor,1100122,enemy,unresolved_enemy_payload_instance,,payload enemy id has no authoritative DTMonster_* row or alias in local evidence
+actor,1100123,enemy,unresolved_enemy_payload_instance,,payload enemy id has no authoritative DTMonster_* row or alias in local evidence
+actor,1100131,enemy,unresolved_enemy_payload_instance,,payload enemy id has no authoritative DTMonster_* row or alias in local evidence
+actor,1100132,enemy,unresolved_enemy_payload_instance,,payload enemy id has no authoritative DTMonster_* row or alias in local evidence
+actor,1100133,enemy,unresolved_enemy_payload_instance,,payload enemy id has no authoritative DTMonster_* row or alias in local evidence
+actor_bundle,,,not_fetchable_local,download/roleprefabsandres/battleprefabandres/1036.assetbundle,1036 actor bundle row is known from CDNVersionFile but exact local bundle and asset CDN rule are absent
+timeline_prefab_dep,,,unresolved_missing_common_bundle,download/commonprefabsandres/skilleffect/commonskillprefabsandres1/pinkspeedline.assetbundle,"common timeline dependency bundle, such as speedline, is referenced but absent locally"
+timeline_prefab_dep,,,unresolved_missing_common_bundle,download/commonprefabsandres/skilleffect/commonskillprefabsandres1/redspeedline.assetbundle,"common timeline dependency bundle, such as speedline, is referenced but absent locally"
+timeline_prefab_dep,,,unresolved_missing_common_bundle,download/commonprefabsandres/skilleffect/commonskillprefabsandres1/yellospeedline.assetbundle,"common timeline dependency bundle, such as speedline, is referenced but absent locally"

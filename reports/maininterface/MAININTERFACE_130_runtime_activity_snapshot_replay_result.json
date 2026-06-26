@@ -1,0 +1,24 @@
+{
+  "status": "blocked_missing_runtime_snapshot_fields",
+  "missingFields": [
+    "activitys",
+    "faceActivitys",
+    "playerInfo.level",
+    "playerInfo.vip",
+    "redPointState.serverRedPointIds",
+    "reviewState.GameTools_IsReview",
+    "reviewState.GameEntry_IsReview",
+    "reviewState.GameEntry_IsCommittee",
+    "guideState.ModulesInit_GuideMgr_isGuide",
+    "timeState.serverTimeStep",
+    "timeState.serverMillTimeStamp",
+    "clientCallbackOutputs.showInMainFunc",
+    "clientCallbackOutputs.clientCheckIsOpen",
+    "clientCallbackOutputs.getActNewName",
+    "clientCallbackOutputs.mainPageTouchJumpId"
+  ],
+  "candidatePatchAllowed": false,
+  "mainSlots": [],
+  "faceSlots": [],
+  "reason": "Replayer refuses fake default activity state. Fill template fields from real runtime evidence first."
+}

@@ -1,0 +1,78 @@
+{
+  "packet": "CONTROL_TOWER_UNIFIED_PRE_RUNTIME_APPROVAL_PACKET_20260626_093259",
+  "status": "pre_approval_only",
+  "runtimeExecutedByThisPacket": false,
+  "scenePatchedByThisPacket": false,
+  "packageImportedByThisPacket": false,
+  "externalXluaImportedByThisPacket": false,
+  "fakeValuesAllowed": false,
+  "coordinateOnlyPatchAllowed": false,
+  "sourceArtifacts": {
+    "battle75Result": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_75_ORIGINAL_RUNTIME_SNAPSHOT_APPROVAL_PACKET_FOR_UI_NORMALBATTLE_ROUTE_TMP_MASK_HANDLER_AFTER_B74_NO_EXECUTION_NO_PATCH_RESULT.json",
+    "battle75ApprovalTemplate": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_75_ORIGINAL_RUNTIME_SNAPSHOT_APPROVAL_PACKET_FOR_UI_NORMALBATTLE_ROUTE_TMP_MASK_HANDLER_AFTER_B74_NO_EXECUTION_NO_PATCH_APPROVAL_PACKET_TEMPLATE.json",
+    "battle75HookMatrix": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_75_ORIGINAL_RUNTIME_SNAPSHOT_APPROVAL_PACKET_FOR_UI_NORMALBATTLE_ROUTE_TMP_MASK_HANDLER_AFTER_B74_NO_EXECUTION_NO_PATCH_HOOK_SOURCE_CANDIDATE_MATRIX.csv",
+    "maininterface148Result": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\maininterface\\MAININTERFACE_148_RUNTIME_SNAPSHOT_APPROVAL_PACKET_AND_STATIC_FIELD_EXHAUSTION_NO_RUNTIME_NO_PATCH_RESULT.json",
+    "maininterface148ApprovalTemplate": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\maininterface\\MAININTERFACE_148_RUNTIME_SNAPSHOT_APPROVAL_PACKET_AND_STATIC_FIELD_EXHAUSTION_NO_RUNTIME_NO_PATCH_approval_packet_template.json",
+    "character66Result": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\characters\\CHARACTER_66_UNRESOLVED_ENEMY_ID_SOURCE_ALIAS_TRACE_NO_NETWORK_NO_PROMOTION_RESULT.json",
+    "controlGate": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\CONTROL_TOWER_RUNTIME_APPROVAL_GATE_20260626_072517.md"
+  },
+  "battle": {
+    "deduplicatedRuntimeFieldsCount": 7337,
+    "requiredFieldCount": 5133,
+    "componentRehydrationFieldCount": 2204,
+    "handlerLifecycleFieldCount": 148,
+    "hookCandidatesCount": 12,
+    "sourceBackedStaticPatchCandidatesNow": 0,
+    "nextBlocker": "APPROVAL_REQUIRED_FOR_ORIGINAL_UI_NORMALBATTLE_RUNTIME_SNAPSHOT_OR_SOURCE_BACKED_XLUA_GAMEENTRY_MODULESINIT_RECOVERY",
+    "approvalScope": [
+      "Observe original UI_NormalBattle route active state after original Open/Refresh lifecycle.",
+      "Observe sibling order, right rail button state, TMP font/material/autosize, mask/stencil and component rehydration state.",
+      "Observe original Lua/GameEntry/ModulesInit handler lifecycle and button delegate binding state.",
+      "Do not import external xLua or replace handlers unless separately approved."
+    ]
+  },
+  "maininterface": {
+    "requiredRuntimeFieldsCount": 197,
+    "staticKnownFieldsCount": 8,
+    "staticallyInferableNewFieldsCount": 0,
+    "forbiddenGuessFieldsCount": 197,
+    "approvalScope": [
+      "Observe UI_Dock/UI_MainPage parent/group/depth/form stack.",
+      "Observe root Canvas, CanvasGroup and YouYouCanvasHelper depth cascade.",
+      "Observe guarded route/world/zhuye/activity/chat/account/currency active and sibling state.",
+      "Observe UI_bg raycast/interactable state and runtime TMP/material/mask/stencil renderer state."
+    ]
+  },
+  "characters": {
+    "unresolvedIdsChecked": [
+      1100112,
+      1100113,
+      1100121,
+      1100122,
+      1100123,
+      1100131,
+      1100132,
+      1100133
+    ],
+    "sourceHitsFound": 1095,
+    "sourceBackedAliasesFound": 0,
+    "approvalOrInputNeeded": [
+      "Provide authoritative DTMonster/DTmodel actor-chain evidence.",
+      "Provide an explicit source alias rule for unresolved payload ids.",
+      "Provide the missing exact 1036 battle actor bundle or source-backed equivalent."
+    ]
+  },
+  "allowedAfterExplicitApproval": [
+    "Collect original runtime snapshot or dump values for UI148 and B75 packet fields.",
+    "Use captured values to decide source-backed scene/UI patches.",
+    "Validate patched candidate captures against the reference image and 참고.mp4 as auxiliary evidence."
+  ],
+  "stillForbiddenWithoutSeparateApproval": [
+    "APK or emulator runtime instrumentation beyond the approved snapshot scope.",
+    "External xLua import or package/manifest modification.",
+    "Fake HUD/card/icon/text/spine/effect/actor/handler creation.",
+    "Screenshot or atlas paste restoration.",
+    "Coordinate-only success claim."
+  ],
+  "recommendedUserApprovalText": "Approve original runtime snapshot/dump for UI148 and B75 approval packets only. Do not import external xLua, do not modify packages/manifests, do not create fake handlers/assets, and do not overwrite canonical scenes without a separate patch review."
+}

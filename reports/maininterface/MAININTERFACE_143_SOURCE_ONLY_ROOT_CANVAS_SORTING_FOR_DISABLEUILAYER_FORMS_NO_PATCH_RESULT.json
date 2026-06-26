@@ -1,0 +1,36 @@
+{
+  "generatedAt": "2026-06-26T04:48:18",
+  "restoredClaim": false,
+  "scenePatchApplied": false,
+  "candidatePatchApplied": false,
+  "patchDecision": "trace_only_no_patch",
+  "nativeCanvasRowsUnderTargetRoots": 64,
+  "nativeCanvasComponentsUnderTargetRoots": 38,
+  "rootCanvasSortingRecovered": true,
+  "rootUIFormBaseDepthFieldsSerialized": false,
+  "sourceRootCanvasSortingValues": {
+    "UI_MainInterface": 0,
+    "UI_MainInterface_old": 0,
+    "UI_Dock": 100,
+    "UI_Dock_old": 100
+  },
+  "requiresRuntimeDumpForDepth": false,
+  "requiresRuntimeValidationForDepth": true,
+  "uiDockPromotionAllowed": false,
+  "requiredNextEvidence": [
+    "Unity candidate validation using source root Canvas sorting values: UI_MainInterface=0 and UI_Dock=100",
+    "verify whether production-equivalent UIManager mount path keeps serialized root Canvas sorting for DisableUILayer=1 forms",
+    "Unity compile/import validation before applying UI142 renderer components"
+  ],
+  "outputs": {
+    "canvasCsv": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\maininterface\\MAININTERFACE_143_native_canvas_components_under_uidock_mainpage_roots.csv",
+    "rootComponentCsv": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\maininterface\\MAININTERFACE_143_root_form_serialized_component_matrix.csv",
+    "decisionCsv": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\maininterface\\MAININTERFACE_143_depth_input_source_availability_decision_matrix.csv"
+  },
+  "guardrailsTouched": [],
+  "commandPolicy": {
+    "rootCmdCountActual": 1,
+    "restoreToolsDirectCmdCountActual": 0,
+    "policyOk": true
+  }
+}

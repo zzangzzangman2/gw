@@ -1,0 +1,190 @@
+{
+  "prefix": "BATTLE_56_TRACE_ACTOR_PREFAB_MESH_MATERIAL_SHADER_SOURCE_IMPORT_GAP_OR_SOURCE_BACKED_PATCH",
+  "unityExitCode": 0,
+  "visual_status": "actor_prefab_source_import_gap_audit_complete_no_scene_patch",
+  "isFinalRestoredBattleScreen": false,
+  "patchDecision": "blocked_no_patch",
+  "sceneSaved": false,
+  "sourceBackedPatchAvailableNow": false,
+  "sceneOpened": true,
+  "prefabAudit": {
+    "rows": 3,
+    "bundleLoadSuccess": 3,
+    "prefabLoaded": 3,
+    "liveMeshReadyRows": 3,
+    "skeletonAnimationRows": 3,
+    "skeletonDataNonNullRows": 3,
+    "assetDatabasePrefabExistsRows": 0,
+    "totalMeshVertices": 2626,
+    "totalMaterialSlots": 4,
+    "unsupportedShaderMaterialRows": 3,
+    "statuses": {
+      "live_assetbundle_prefab_has_source_backed_spine_mesh_material_data": 3
+    },
+    "actors": [
+      {
+        "heroDid": "1002",
+        "modelId": "1002",
+        "meshVertices": 732,
+        "materials": "1002_Material",
+        "skeletonData": "1002_SkeletonData",
+        "liveMeshReady": true,
+        "projectPrefabImported": false
+      },
+      {
+        "heroDid": "1034",
+        "modelId": "1034",
+        "meshVertices": 1283,
+        "materials": "1034_Material|1034_Material-Screen",
+        "skeletonData": "1034_SkeletonData",
+        "liveMeshReady": true,
+        "projectPrefabImported": false
+      },
+      {
+        "heroDid": "1100111",
+        "modelId": "3001",
+        "meshVertices": 611,
+        "materials": "3001_Material",
+        "skeletonData": "3001_SkeletonData",
+        "liveMeshReady": true,
+        "projectPrefabImported": false
+      }
+    ]
+  },
+  "dependencies": {
+    "rows": 58,
+    "actorBundleAssetTypeCounts": {
+      "UnityEngine.TextAsset": 6,
+      "UnityEngine.Texture2D": 3,
+      "Spine.Unity.SpineAtlasAsset": 3,
+      "UnityEngine.Material": 5,
+      "Spine.Unity.SkeletonDataAsset": 3,
+      "UnityEngine.GameObject": 6
+    },
+    "shaderNames": [
+      "Spine/Blend Modes/Skeleton PMA Additive",
+      "Spine/Blend Modes/Skeleton PMA Multiply",
+      "Spine/Blend Modes/Skeleton PMA Screen",
+      "Spine/Outline/Blend Modes/Skeleton PMA Additive",
+      "Spine/Outline/Blend Modes/Skeleton PMA Multiply",
+      "Spine/Outline/Blend Modes/Skeleton PMA Screen",
+      "Spine/Outline/OutlineOnly-ZWrite",
+      "Spine/Outline/Skeleton",
+      "Spine/Outline/Skeleton Fill",
+      "Spine/Outline/Skeleton Lit",
+      "Spine/Outline/Skeleton Lit ZWrite",
+      "Spine/Outline/Skeleton Tint",
+      "Spine/Outline/Skeleton Tint Black",
+      "Spine/Outline/SkeletonGraphic",
+      "Spine/Outline/SkeletonGraphic Tint Black",
+      "Spine/Outline/Special/Skeleton Grayscale",
+      "Spine/Outline/Sprite/Pixel Lit",
+      "Spine/Outline/Sprite/Unlit",
+      "Spine/Outline/Sprite/Vertex Lit",
+      "Spine/Skeleton",
+      "Spine/Skeleton Fill",
+      "Spine/Skeleton Lit",
+      "Spine/Skeleton Lit ZWrite",
+      "Spine/Skeleton Tint",
+      "Spine/Skeleton Tint Black",
+      "Spine/SkeletonGraphic",
+      "Spine/SkeletonGraphic Additive",
+      "Spine/SkeletonGraphic Multiply",
+      "Spine/SkeletonGraphic Screen",
+      "Spine/SkeletonGraphic Tint Black",
+      "Spine/Special/Skeleton Grayscale"
+    ],
+    "shaderBundleShaderRows": 31,
+    "textAssetRows": 6,
+    "textureRows": 3,
+    "materialRows": 5
+  },
+  "currentScene": {
+    "rows": 3,
+    "foundRows": 3,
+    "sceneMeshReadyRows": 0,
+    "sceneMaterialReadyRows": 0,
+    "importGapCounts": {
+      "assetbundle_runtime_references_not_persisted_in_saved_scene": 3
+    },
+    "actors": [
+      {
+        "heroDid": "1002",
+        "modelId": "1002",
+        "meshFilters": 1,
+        "meshWithMesh": 0,
+        "meshVertices": 0,
+        "materialSlots": 1,
+        "materialNull": 1,
+        "boundsSize": "0/0/0",
+        "importGap": "assetbundle_runtime_references_not_persisted_in_saved_scene"
+      },
+      {
+        "heroDid": "1034",
+        "modelId": "1034",
+        "meshFilters": 1,
+        "meshWithMesh": 0,
+        "meshVertices": 0,
+        "materialSlots": 2,
+        "materialNull": 2,
+        "boundsSize": "0/0/0",
+        "importGap": "assetbundle_runtime_references_not_persisted_in_saved_scene"
+      },
+      {
+        "heroDid": "1100111",
+        "modelId": "3001",
+        "meshFilters": 1,
+        "meshWithMesh": 0,
+        "meshVertices": 0,
+        "materialSlots": 1,
+        "materialNull": 1,
+        "boundsSize": "0/0/0",
+        "importGap": "assetbundle_runtime_references_not_persisted_in_saved_scene"
+      }
+    ]
+  },
+  "b55Carryover": {
+    "primaryConclusion": "actor_invisibility_primary_blocker_no_mesh_filter_mesh",
+    "rowsWithMesh": 0,
+    "rowsWithEnabledRenderer": 3
+  },
+  "priorSpineEvidence": {
+    "b31VisualStatus": "failed_missing_spine_animation_runtime_class",
+    "b31BundleLoadSuccess": 3,
+    "b34VisualStatus": "failed_spine_animationstate_mesh_generator_missing",
+    "b34RuntimeProbe": {},
+    "b37VisualStatus": "failed_clip05_actor_motion_layout_not_yet_matched_after_shader_binding"
+  },
+  "payloadCarryover": {
+    "classification": "local_playable_subset_only_not_full_payload",
+    "loadableActors": 3,
+    "totalActors": 12,
+    "actorStatusCounts": {
+      "not_fetchable_local": 1,
+      "loadable": 3,
+      "unresolved_enemy_payload_instance": 8
+    }
+  },
+  "nextBlocker": "SOURCE_BACKED_ACTOR_PREFAB_IMPORT_PIPELINE_REQUIRED_OR_REUSE_BATTLE37_RUNTIME_IN_SCENE_BUILDER",
+  "referenceVideoAvailable": false,
+  "referenceVideoPath": "C:\\Users\\godho\\Downloads\\플레이.mp4",
+  "auxiliaryReferenceVideoAvailable": true,
+  "auxiliaryReferenceVideoPath": "C:\\Users\\godho\\Downloads\\참고.mp4",
+  "rootCmdCount": 1,
+  "restoreToolsDirectCmdCount": 0,
+  "outputs": {
+    "report": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_56_TRACE_ACTOR_PREFAB_MESH_MATERIAL_SHADER_SOURCE_IMPORT_GAP_OR_SOURCE_BACKED_PATCH_RESULT.md",
+    "json": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_56_TRACE_ACTOR_PREFAB_MESH_MATERIAL_SHADER_SOURCE_IMPORT_GAP_OR_SOURCE_BACKED_PATCH_RESULT.json",
+    "actorPrefabAuditCsv": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_56_TRACE_ACTOR_PREFAB_MESH_MATERIAL_SHADER_SOURCE_IMPORT_GAP_OR_SOURCE_BACKED_PATCH_ACTOR_PREFAB_AUDIT.csv",
+    "rendererMaterialShaderDependencyCsv": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_56_TRACE_ACTOR_PREFAB_MESH_MATERIAL_SHADER_SOURCE_IMPORT_GAP_OR_SOURCE_BACKED_PATCH_RENDERER_MATERIAL_SHADER_DEPENDENCIES.csv",
+    "currentSceneActorCsv": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_56_TRACE_ACTOR_PREFAB_MESH_MATERIAL_SHADER_SOURCE_IMPORT_GAP_OR_SOURCE_BACKED_PATCH_CURRENT_SCENE_ACTORS.csv",
+    "unitySummary": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_battle_unity\\Assets\\RestoreData\\battle\\BATTLE_56_TRACE_ACTOR_PREFAB_MESH_MATERIAL_SHADER_SOURCE_IMPORT_GAP_OR_SOURCE_BACKED_PATCH_UNITY_SUMMARY.json",
+    "unityLog": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_56_TRACE_ACTOR_PREFAB_MESH_MATERIAL_SHADER_SOURCE_IMPORT_GAP_OR_SOURCE_BACKED_PATCH_UNITY.log",
+    "log": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_56_TRACE_ACTOR_PREFAB_MESH_MATERIAL_SHADER_SOURCE_IMPORT_GAP_OR_SOURCE_BACKED_PATCH.log"
+  },
+  "notes": [
+    "No fake actor/card/icon/text/onClick/gameplay handler was added.",
+    "No screenshot paste, whole atlas actor, dummy mesh, coordinate-only success, or external package import/download was used.",
+    "The local subset remains validation-only and is not a full restore claim."
+  ]
+}

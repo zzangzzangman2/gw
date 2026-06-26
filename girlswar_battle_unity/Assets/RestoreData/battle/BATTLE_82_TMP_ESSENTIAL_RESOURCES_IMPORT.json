@@ -1,0 +1,13 @@
+﻿{
+    "generatedAt": "2026-06-26 11:41:19",
+    "status": "battle82_tmp_essential_resources_import_verified",
+    "expectedSettingsPath": "Assets/TextMesh Pro/Resources/TMP Settings.asset",
+    "expectedFontPath": "Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset",
+    "settingsExistsBefore": true,
+    "liberationSansSdfExistsBefore": true,
+    "settingsExistsAfter": true,
+    "liberationSansSdfExistsAfter": true,
+    "liberationSansSdfLoads": true,
+    "liberationSansSdfHasMaterial": true,
+    "exception": ""
+}

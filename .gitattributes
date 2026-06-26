@@ -31,3 +31,17 @@ girlswar_merged_extracted/extracted/il2cpp_dump/*.json filter=lfs diff=lfs merge
 girlswar_merged_extracted/extracted/il2cpp_dump/*.h filter=lfs diff=lfs merge=lfs -text
 girlswar_battle_unity/Assets/Scenes/BattleCorrectMapSceneHudPreviewClip05.unity filter=lfs diff=lfs merge=lfs -text
 girlswar_battle_unity/Assets/Scenes/BattleHeroListSkillCardBindClip05.unity filter=lfs diff=lfs merge=lfs -text
+girlswar_battle_unity/Assets/Scenes/Battle41HudRuntimeSpriteTexturePersistenceTrace.unity filter=lfs diff=lfs merge=lfs -text
+girlswar_battle_unity/Assets/Scenes/Battle42PersistentBattleHudImagesFromOriginalSpriteEvidence.unity filter=lfs diff=lfs merge=lfs -text
+girlswar_battle_unity/Assets/Scenes/Battle43PlayableContextValidationCandidate.unity filter=lfs diff=lfs merge=lfs -text
+girlswar_battle_unity/Assets/Scenes/Battle44OriginalButtonTargetGraphicCandidate.unity filter=lfs diff=lfs merge=lfs -text
+girlswar_battle_unity/Assets/Scenes/Battle45Empty4RaycastRegistryCandidate.unity filter=lfs diff=lfs merge=lfs -text
+girlswar_battle_unity/Assets/Scenes/Battle46GraphicRaycasterEventCameraScreenSpaceCandidate.unity filter=lfs diff=lfs merge=lfs -text
+girlswar_battle_unity/Assets/Scenes/Battle47GraphicDepthRaycastCandidateRegistration.unity filter=lfs diff=lfs merge=lfs -text
+girlswar_battle_unity/Assets/Scenes/Battle48SortOrderDisplayHitOcclusionTrace.unity filter=lfs diff=lfs merge=lfs -text
+girlswar_battle_unity/Assets/Scenes/Battle49RealClickInputHandlerValidation.unity filter=lfs diff=lfs merge=lfs -text
+girlswar_battle_unity/Assets/Scenes/Battle50OriginalLuaIl2cppButtonHandlerTrace.unity filter=lfs diff=lfs merge=lfs -text
+girlswar_battle_unity/Assets/Scenes/Battle51LuaBridgeRaycasterRegistrationCandidate.unity filter=lfs diff=lfs merge=lfs -text
+girlswar_battle_unity/Assets/Scenes/Battle57RuntimeRehydratedAssetBundleActorsCandidate.unity filter=lfs diff=lfs merge=lfs -text
+girlswar_battle_unity/Assets/Scenes/Battle72Map11003TrueAspectReprojectionPersistedCandidate.unity filter=lfs diff=lfs merge=lfs -text
+girlswar_battle_unity/Assets/Scenes/Battle76PlayableRosterCandidate.unity filter=lfs diff=lfs merge=lfs -text

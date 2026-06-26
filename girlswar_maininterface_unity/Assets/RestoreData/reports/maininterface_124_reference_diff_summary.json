@@ -1,0 +1,72 @@
+{
+  "reference": "C:\\Users\\godho\\.codex\\attachments\\e607fc34-b674-4516-b051-8d396cd6df06\\image-1.png",
+  "referenceOriginalSize": [
+    1180,
+    526
+  ],
+  "capture": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_maininterface_unity\\Assets\\RestoreCaptures\\maininterface_ui124_hero1005_spine_1680x720.png",
+  "captureSize": [
+    1680,
+    720
+  ],
+  "heroOnlyCapture": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_maininterface_unity\\Assets\\RestoreCaptures\\maininterface_ui124_hero1005_spine_hero_only_1680x720.png",
+  "contactSheet": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\maininterface\\MAININTERFACE_124_REFERENCE_DIFF_CONTACT.png",
+  "csv": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_maininterface_unity\\Assets\\RestoreData\\reports\\maininterface_124_reference_diff_regions.csv",
+  "restoredClaim": false,
+  "manualVerdict": "not_restored_reference_mismatch",
+  "mainBlockers": [
+    "route/world cluster remains visible in UI124 capture",
+    "right sibling index is above UI_heroSpine, so route can overlay the mounted hero",
+    "hero mount is real SkeletonGraphic, but overall home lobby state still mismatches reference"
+  ],
+  "regions": [
+    {
+      "region": "full",
+      "meanAbsDiff": 0.265278,
+      "rmsDiff": 0.343341,
+      "changedPixelRatio30": 0.860502,
+      "pixelCorrelation": 0.188564,
+      "boxNorm": "0.0,0.0,1.0,1.0"
+    },
+    {
+      "region": "top_bar",
+      "meanAbsDiff": 0.291487,
+      "rmsDiff": 0.380424,
+      "changedPixelRatio30": 0.875696,
+      "pixelCorrelation": 0.110685,
+      "boxNorm": "0.0,0.0,1.0,0.18"
+    },
+    {
+      "region": "left_lobby",
+      "meanAbsDiff": 0.270011,
+      "rmsDiff": 0.347993,
+      "changedPixelRatio30": 0.880997,
+      "pixelCorrelation": 0.162509,
+      "boxNorm": "0.0,0.12,0.35,0.92"
+    },
+    {
+      "region": "center_hero",
+      "meanAbsDiff": 0.256085,
+      "rmsDiff": 0.3327,
+      "changedPixelRatio30": 0.853481,
+      "pixelCorrelation": 0.18055,
+      "boxNorm": "0.18,0.0,0.72,0.92"
+    },
+    {
+      "region": "right_cluster",
+      "meanAbsDiff": 0.266764,
+      "rmsDiff": 0.345988,
+      "changedPixelRatio30": 0.832856,
+      "pixelCorrelation": 0.149644,
+      "boxNorm": "0.68,0.1,1.0,0.92"
+    },
+    {
+      "region": "bottom_nav",
+      "meanAbsDiff": 0.281403,
+      "rmsDiff": 0.350866,
+      "changedPixelRatio30": 0.910804,
+      "pixelCorrelation": 0.061431,
+      "boxNorm": "0.0,0.76,1.0,1.0"
+    }
+  ]
+}

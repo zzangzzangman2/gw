@@ -1,0 +1,8 @@
+﻿kind,classification,source,index,AssetBundleName,MD5,Size,IsFirstData,IsEncrypt,Priority,Category,Version,ResOffset,bundle,status,path,exists,localFileSize,note
+versionfile,present_in_versionfile_but_not_extracted,CDNVersionFile,1158,download/roleprefabsandres/battleprefabandres/1036.assetbundle,570c8238257cd8ca00a0856427d8c0ae,1666251,False,True,3,0,1.0.578,224,,,,,,
+local_file,present_in_versionfile_but_not_extracted,,,,,,,,,,,,,,girlswar_merged_extracted/merged_content/AssetBundles/download/roleprefabsandres/battleprefabandres/1036.assetbundle,False,,
+local_file,present_in_versionfile_but_not_extracted,,,,,,,,,,,,,,girlswar_merged_extracted/extracted/unity/clean_unityfs_slices/download/roleprefabsandres/battleprefabandres/1036.assetbundle,False,,
+local_file,present_in_versionfile_but_not_extracted,,,,,,,,,,,,,,girlswar_merged_extracted/extracted/unity/clean_unityfs_slices/download/roleprefabsandres/rolebigsetpainting/1036.assetbundle,True,1823276,same filename candidate
+local_file,present_in_versionfile_but_not_extracted,,,,,,,,,,,,,,girlswar_merged_extracted/extracted/unity/clean_unityfs_slices/download/skillprefabsandres/1036.assetbundle,True,341520,same filename candidate
+local_file,present_in_versionfile_but_not_extracted,,,,,,,,,,,,,,girlswar_merged_extracted/merged_content/AssetBundles/download/roleprefabsandres/rolebigsetpainting/1036.assetbundle,True,1825731,same filename candidate
+local_file,present_in_versionfile_but_not_extracted,,,,,,,,,,,,,,girlswar_merged_extracted/merged_content/AssetBundles/download/skillprefabsandres/1036.assetbundle,True,345333,same filename candidate

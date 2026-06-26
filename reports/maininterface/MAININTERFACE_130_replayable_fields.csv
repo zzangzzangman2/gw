@@ -1,0 +1,16 @@
+﻿field,status,sourceRule,requiredFor,valueSummary
+activitys,missing,ActMgr:GetAllActInfo(true) iterates ActMgr.activitys; IsActShowInMain checks each server activity.,blocking replay without fake defaults,list[0]
+faceActivitys,missing,UI129 required snapshot schema.,blocking replay without fake defaults,list[0]
+playerInfo.level,missing,ActMgr:IsActShowInMain checks PlayerMgr.PlayerInfo.vip and PlayerMgr.PlayerInfo.level.,blocking replay without fake defaults,
+playerInfo.vip,missing,ActMgr:IsActShowInMain checks PlayerMgr.PlayerInfo.vip and PlayerMgr.PlayerInfo.level.,blocking replay without fake defaults,
+redPointState.serverRedPointIds,missing,UI_MainPageActItem/FaceActItem and ActCfgData callbacks call RedPointMgr:checkServerRedPoint.,blocking replay without fake defaults,
+reviewState.GameTools_IsReview,missing,GameTools:IsReview/GameEntry review flags alter home buttons and activity visibility.,blocking replay without fake defaults,
+reviewState.GameEntry_IsReview,missing,GameTools:IsReview/GameEntry review flags alter home buttons and activity visibility.,blocking replay without fake defaults,
+reviewState.GameEntry_IsCommittee,missing,GameTools:IsReview/GameEntry review flags alter home buttons and activity visibility.,blocking replay without fake defaults,
+guideState.ModulesInit_GuideMgr_isGuide,missing,UI_MainPage home logic and activity jumps can branch on guide/current-enter state.,blocking replay without fake defaults,
+timeState.serverTimeStep,missing,ActMgr:IsOpen and face activity timers require server time.,source-backed open/closed filtering,
+timeState.serverMillTimeStamp,missing,ActMgr:IsOpen and face activity timers require server time.,source-backed open/closed filtering,
+clientCallbackOutputs.showInMainFunc,missing,ActCfgData/client activity callbacks can override show/open/name/touch jump decisions.,source-backed callback filtering without guessing,
+clientCallbackOutputs.clientCheckIsOpen,missing,ActCfgData/client activity callbacks can override show/open/name/touch jump decisions.,source-backed callback filtering without guessing,
+clientCallbackOutputs.getActNewName,missing,ActCfgData/client activity callbacks can override show/open/name/touch jump decisions.,source-backed runtime label override,
+clientCallbackOutputs.mainPageTouchJumpId,missing,ActCfgData/client activity callbacks can override show/open/name/touch jump decisions.,source-backed callback filtering without guessing,

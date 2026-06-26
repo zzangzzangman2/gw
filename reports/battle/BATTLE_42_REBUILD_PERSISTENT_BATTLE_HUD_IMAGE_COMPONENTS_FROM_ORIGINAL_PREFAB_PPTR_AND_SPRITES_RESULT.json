@@ -1,0 +1,266 @@
+{
+  "verdict": "persistent HUD Image/Sprite reconstruction advanced, but playable battle screen not restored",
+  "visual_status": "failed_persistent_hud_images_survive_scene_reload_but_clip05_playable_context_not_restored",
+  "isFinalRestoredBattleScreen": false,
+  "reference_video_used": false,
+  "referenceVideoPath": "C:\\Users\\godho\\Downloads\\플레이.mp4",
+  "referenceVideoAvailable": false,
+  "auxiliaryReferenceVideoPath": "C:\\Users\\godho\\Downloads\\참고.mp4",
+  "auxiliaryReferenceVideoAvailable": true,
+  "videoTimeRangeSeconds": "",
+  "unityExitCode": 0,
+  "cameraVisibleBattleHud": true,
+  "hudVisibilityMetrics": {
+    "topHpVs": {
+      "meanAbsDiffVsBattle29HudReference": 0.01182,
+      "pixelCorrelationVsBattle29HudReference": 0.960561,
+      "zoneVisibleByReferenceSimilarity": true
+    },
+    "bottomCards": {
+      "meanAbsDiffVsBattle29HudReference": 0.083024,
+      "pixelCorrelationVsBattle29HudReference": 0.569136,
+      "zoneVisibleByReferenceSimilarity": true
+    },
+    "rightControls": {
+      "meanAbsDiffVsBattle29HudReference": 0.013626,
+      "pixelCorrelationVsBattle29HudReference": 0.859624,
+      "zoneVisibleByReferenceSimilarity": true
+    },
+    "visibleHudZoneVoteCount": 3,
+    "cameraVisibleBattleHud": true,
+    "reason": "HUD/card regions visible by BATTLE29 reference similarity."
+  },
+  "captureMetrics": {
+    "captureExists": true,
+    "width": 1920,
+    "height": 1080,
+    "nonBlackPixelRatio": 0.899287
+  },
+  "unitySummary": {
+    "status": "battle42_rebuild_persistent_battle_hud_image_components_from_original_prefab_pptr_and_sprites",
+    "isFinalRestoredBattleScreen": false,
+    "sourceScene": "Assets/Scenes/Battle40HudCameraRenderBindingRuntimeContext.unity",
+    "scene": "Assets/Scenes/Battle42PersistentBattleHudImagesFromOriginalSpriteEvidence.unity",
+    "capture": "Assets/RestoreCaptures/battle_actor/Battle42PersistentBattleHudImagesFromOriginalSpriteEvidence_1920x1080.png",
+    "persistentSpriteDir": "Assets/RestoreData/battle/PersistentHudSprites/BATTLE42",
+    "sourceSceneOpened": true,
+    "sceneSaved": true,
+    "captureExists": true,
+    "reopenValid": true,
+    "originalSpriteMarkerCount": 232,
+    "reconstructedImageCount": 232,
+    "importedSpriteAssetCount": 76,
+    "beforeImageCount": 0,
+    "beforeGraphicCount": 0,
+    "beforeActiveGraphicCount": 0,
+    "beforeMissingScriptCount": 1208,
+    "afterImageCount": 232,
+    "afterGraphicCount": 232,
+    "afterImageWithSpriteCount": 232,
+    "afterImageWithTextureCount": 232,
+    "afterActiveGraphicCount": 56,
+    "afterMissingScriptCount": 1208,
+    "reopenCanvasCount": 18,
+    "reopenImageCount": 232,
+    "reopenGraphicCount": 232,
+    "reopenImageWithSpriteCount": 232,
+    "reopenImageWithTextureCount": 232,
+    "reopenActiveGraphicCount": 56,
+    "reopenTextCount": 0,
+    "reopenMissingScriptCount": 1208,
+    "failReason": "",
+    "rowCount": 232,
+    "boundRowSample": [
+      {
+        "path": "BattleHudSpriteAtlasTextureRuntimeBindingClip05Root/CanvasLuaStateHUD_03_ui_normalbattle_heroitem/imgIconBG/tweener/im_quality",
+        "spriteName": "Image_blank",
+        "bundle": "download/artsources/uispriteres/uicommonother.assetbundle",
+        "pathId": "6617065208850742552",
+        "spriteAssetPath": "Assets/RestoreData/battle/PersistentHudSprites/BATTLE42/download_artsources_uispriteres_uicommonother.assetbundle_6617065208850742552_Image_blank.png",
+        "activeInHierarchy": false
+      },
+      {
+        "path": "BattleHudSpriteAtlasTextureRuntimeBindingClip05Root/CanvasLuaStateHUD_01_ui_normalbattle/root_opra/root_buff/root_buff_right/grid_all_buff_right/item_buff_right_4/UI_BattleHeroItem/im_bg",
+        "spriteName": "BG_zhuangbeikuang_3",
+        "bundle": "download/artsources/uispriteres/uicommonother.assetbundle",
+        "pathId": "4043117267995258628",
+        "spriteAssetPath": "Assets/RestoreData/battle/PersistentHudSprites/BATTLE42/download_artsources_uispriteres_uicommonother.assetbundle_4043117267995258628_BG_zhuangbeikuang_3.png",
+        "activeInHierarchy": false
+      },
+      {
+        "path": "BattleHudSpriteAtlasTextureRuntimeBindingClip05Root/CanvasLuaStateHUD_01_ui_normalbattle/root_opra/root_buff/root_buff_left/grid_all_buff_left/item_buff_left_6/UI_BattleHeroItem/starts/im_start1",
+        "spriteName": "im_battle_start",
+        "bundle": "download/artsources/uispriteres/uibattle.assetbundle",
+        "pathId": "7674985865767693901",
+        "spriteAssetPath": "Assets/RestoreData/battle/PersistentHudSprites/BATTLE42/download_artsources_uispriteres_uibattle.assetbundle_7674985865767693901_im_battle_start.png",
+        "activeInHierarchy": false
+      },
+      {
+        "path": "BattleHudSpriteAtlasTextureRuntimeBindingClip05Root/CanvasLuaStateHUD_06_ui_normalbattle_pause/Center/BT_chetui",
+        "spriteName": "BTN_fangqizhandou",
+        "bundle": "download/artsources/uispriteres/uibattle.assetbundle",
+        "pathId": "-8244930706257120366",
+        "spriteAssetPath": "Assets/RestoreData/battle/PersistentHudSprites/BATTLE42/download_artsources_uispriteres_uibattle.assetbundle_-8244930706257120366_BTN_fangqizhandou.png",
+        "activeInHierarchy": false
+      },
+      {
+        "path": "BattleHudSpriteAtlasTextureRuntimeBindingClip05Root/CanvasLuaStateHUD_01_ui_normalbattle/root_battle/BottomCenter/HeroListContainer/Battle29BoundHeroCard_2_1002/imgIconBG/tweener/starts/im_start3",
+        "spriteName": "im_battle_start",
+        "bundle": "download/artsources/uispriteres/uibattle.assetbundle",
+        "pathId": "7674985865767693901",
+        "spriteAssetPath": "Assets/RestoreData/battle/PersistentHudSprites/BATTLE42/download_artsources_uispriteres_uibattle.assetbundle_7674985865767693901_im_battle_start.png",
+        "activeInHierarchy": true
+      },
+      {
+        "path": "BattleHudSpriteAtlasTextureRuntimeBindingClip05Root/CanvasLuaStateHUD_01_ui_normalbattle/root_battle/root_top/TopCenter/PlayerInfo/imgPlayerHPBG/bg",
+        "spriteName": "ba_xuecao_bg1",
+        "bundle": "download/artsources/uispriteres/uibattle.assetbundle",
+        "pathId": "6533218848006892483",
+        "spriteAssetPath": "Assets/RestoreData/battle/PersistentHudSprites/BATTLE42/download_artsources_uispriteres_uibattle.assetbundle_6533218848006892483_ba_xuecao_bg1.png",
+        "activeInHierarchy": true
+      },
+      {
+        "path": "BattleHudSpriteAtlasTextureRuntimeBindingClip05Root/CanvasLuaStateHUD_01_ui_normalbattle/root_opra/root_buff/root_buff_left/grid_all_buff_left/item_buff_left_6/UI_BattleHeroItem/starts/im_start3",
+        "spriteName": "im_battle_start",
+        "bundle": "download/artsources/uispriteres/uibattle.assetbundle",
+        "pathId": "7674985865767693901",
+        "spriteAssetPath": "Assets/RestoreData/battle/PersistentHudSprites/BATTLE42/download_artsources_uispriteres_uibattle.assetbundle_7674985865767693901_im_battle_start.png",
+        "activeInHierarchy": false
+      },
+      {
+        "path": "BattleHudSpriteAtlasTextureRuntimeBindingClip05Root/CanvasLuaStateHUD_01_ui_normalbattle/root_opra/root_buff/root_buff_left/btnLeftClosebuff",
+        "spriteName": "zd_sqan1",
+        "bundle": "download/artsources/uispriteres/uibattle.assetbundle",
+        "pathId": "2270490347931202257",
+        "spriteAssetPath": "Assets/RestoreData/battle/PersistentHudSprites/BATTLE42/download_artsources_uispriteres_uibattle.assetbundle_2270490347931202257_zd_sqan1.png",
+        "activeInHierarchy": false
+      },
+      {
+        "path": "BattleHudSpriteAtlasTextureRuntimeBindingClip05Root/CanvasLuaStateHUD_01_ui_normalbattle/root_opra/root_buff/root_buff_left/grid_all_buff_left/item_buff_left_6/UI_BattleHeroItem/starts/im_start7",
+        "spriteName": "im_battle_start",
+        "bundle": "download/artsources/uispriteres/uibattle.assetbundle",
+        "pathId": "7674985865767693901",
+        "spriteAssetPath": "Assets/RestoreData/battle/PersistentHudSprites/BATTLE42/download_artsources_uispriteres_uibattle.assetbundle_7674985865767693901_im_battle_start.png",
+        "activeInHierarchy": false
+      },
+      {
+        "path": "BattleHudSpriteAtlasTextureRuntimeBindingClip05Root/CanvasLuaStateHUD_01_ui_normalbattle/root_opra/root_buff/root_buff_left/grid_all_buff_left/item_buff_left_2/UI_BattleHeroItem/im_bg",
+        "spriteName": "BG_zhuangbeikuang_3",
+        "bundle": "download/artsources/uispriteres/uicommonother.assetbundle",
+        "pathId": "4043117267995258628",
+        "spriteAssetPath": "Assets/RestoreData/battle/PersistentHudSprites/BATTLE42/download_artsources_uispriteres_uicommonother.assetbundle_4043117267995258628_BG_zhuangbeikuang_3.png",
+        "activeInHierarchy": false
+      },
+      {
+        "path": "BattleHudSpriteAtlasTextureRuntimeBindingClip05Root/CanvasLuaStateHUD_01_ui_normalbattle/root_battle/BottomCenter/HeroListContainer/Battle29BoundHeroCard_3_1034/HeadBar/imgHPBG/imgFury",
+        "spriteName": "im_nuqitiao",
+        "bundle": "download/artsources/uispriteres/uibattle.assetbundle",
+        "pathId": "4489750091565491747",
+        "spriteAssetPath": "Assets/RestoreData/battle/PersistentHudSprites/BATTLE42/download_artsources_uispriteres_uibattle.assetbundle_4489750091565491747_im_nuqitiao.png",
+        "activeInHierarchy": true
+      },
+      {
+        "path": "BattleHudSpriteAtlasTextureRuntimeBindingClip05Root/CanvasLuaStateHUD_01_ui_normalbattle/root_battle/longzhan/EnemyInfo2/imgPlayerHPBG/imgPlayerHP",
+        "spriteName": "ba_xuecao_bg2",
+        "bundle": "download/artsources/uispriteres/uibattle.assetbundle",
+        "pathId": "1259280165231821685",
+        "spriteAssetPath": "Assets/RestoreData/battle/PersistentHudSprites/BATTLE42/download_artsources_uispriteres_uibattle.assetbundle_1259280165231821685_ba_xuecao_bg2.png",
+        "activeInHierarchy": false
+      },
+      {
+        "path": "BattleHudSpriteAtlasTextureRuntimeBindingClip05Root/CanvasLuaStateHUD_01_ui_normalbattle/root_battle/BottomCenter/HeroListContainer/Battle29BoundHeroCard_2_1002/imgIconBG/tweener/starts/im_start1",
+        "spriteName": "im_battle_start",
+        "bundle": "download/artsources/uispriteres/uibattle.assetbundle",
+        "pathId": "7674985865767693901",
+        "spriteAssetPath": "Assets/RestoreData/battle/PersistentHudSprites/BATTLE42/download_artsources_uispriteres_uibattle.assetbundle_7674985865767693901_im_battle_start.png",
+        "activeInHierarchy": true
+      },
+      {
+        "path": "BattleHudSpriteAtlasTextureRuntimeBindingClip05Root/CanvasLuaStateHUD_01_ui_normalbattle/root_opra/root_buff/root_buff_left/grid_all_buff_left/item_buff_left_5/UI_BattleHeroItem/starts/im_start5",
+        "spriteName": "im_battle_start",
+        "bundle": "download/artsources/uispriteres/uibattle.assetbundle",
+        "pathId": "7674985865767693901",
+        "spriteAssetPath": "Assets/RestoreData/battle/PersistentHudSprites/BATTLE42/download_artsources_uispriteres_uibattle.assetbundle_7674985865767693901_im_battle_start.png",
+        "activeInHierarchy": false
+      },
+      {
+        "path": "BattleHudSpriteAtlasTextureRuntimeBindingClip05Root/CanvasLuaStateHUD_01_ui_normalbattle/root_battle/longzhan/PlayerInfo2/2p/im_2p",
+        "spriteName": "UI_longzhan_juneiP2",
+        "bundle": "download/artsources/uispriteres/uicommonother.assetbundle",
+        "pathId": "-2245594471237426907",
+        "spriteAssetPath": "Assets/RestoreData/battle/PersistentHudSprites/BATTLE42/download_artsources_uispriteres_uicommonother.assetbundle_-2245594471237426907_UI_longzhan_juneiP2.png",
+        "activeInHierarchy": false
+      },
+      {
+        "path": "BattleHudSpriteAtlasTextureRuntimeBindingClip05Root/CanvasLuaStateHUD_01_ui_normalbattle/root_opra/root_buff/root_buff_right/grid_all_buff_right/item_buff_right_2/UI_BattleHeroItem/starts/im_start5",
+        "spriteName": "im_battle_start",
+        "bundle": "download/artsources/uispriteres/uibattle.assetbundle",
+        "pathId": "7674985865767693901",
+        "spriteAssetPath": "Assets/RestoreData/battle/PersistentHudSprites/BATTLE42/download_artsources_uispriteres_uibattle.assetbundle_7674985865767693901_im_battle_start.png",
+        "activeInHierarchy": false
+      },
+      {
+        "path": "BattleHudSpriteAtlasTextureRuntimeBindingClip05Root/CanvasLuaStateHUD_01_ui_normalbattle/root_battle/BottomCenter/HeroListContainer/Battle29BoundHeroCard_1_1036/imgIconBG/tweener/starts/im_start1",
+        "spriteName": "im_battle_start",
+        "bundle": "download/artsources/uispriteres/uibattle.assetbundle",
+        "pathId": "7674985865767693901",
+        "spriteAssetPath": "Assets/RestoreData/battle/PersistentHudSprites/BATTLE42/download_artsources_uispriteres_uibattle.assetbundle_7674985865767693901_im_battle_start.png",
+        "activeInHierarchy": true
+      },
+      {
+        "path": "BattleHudSpriteAtlasTextureRuntimeBindingClip05Root/CanvasLuaStateHUD_08_ui_testbattle/root_battle/TopCenter/EnemyInfo/imgPlayerHPBG/imgPlayerHP",
+        "spriteName": "touxiang_xuetiao_1",
+        "bundle": "download/artsources/uispriteres/uibattle.assetbundle",
+        "pathId": "5352385815829829096",
+        "spriteAssetPath": "Assets/RestoreData/battle/PersistentHudSprites/BATTLE42/download_artsources_uispriteres_uibattle.assetbundle_5352385815829829096_touxiang_xuetiao_1.png",
+        "activeInHierarchy": false
+      },
+      {
+        "path": "BattleHudSpriteAtlasTextureRuntimeBindingClip05Root/CanvasLuaStateHUD_01_ui_normalbattle/root_opra/root_buff/root_buff_left/grid_all_buff_left/item_buff_left_6/UI_BattleHeroItem/starts/im_start2",
+        "spriteName": "im_battle_start",
+        "bundle": "download/artsources/uispriteres/uibattle.assetbundle",
+        "pathId": "7674985865767693901",
+        "spriteAssetPath": "Assets/RestoreData/battle/PersistentHudSprites/BATTLE42/download_artsources_uispriteres_uibattle.assetbundle_7674985865767693901_im_battle_start.png",
+        "activeInHierarchy": false
+      },
+      {
+        "path": "BattleHudSpriteAtlasTextureRuntimeBindingClip05Root/CanvasLuaStateHUD_01_ui_normalbattle/root_opra/root_buff/root_buff_left/grid_all_buff_left/item_buff_left_1/UI_BattleHeroItem/starts/im_start5",
+        "spriteName": "im_battle_start",
+        "bundle": "download/artsources/uispriteres/uibattle.assetbundle",
+        "pathId": "7674985865767693901",
+        "spriteAssetPath": "Assets/RestoreData/battle/PersistentHudSprites/BATTLE42/download_artsources_uispriteres_uibattle.assetbundle_7674985865767693901_im_battle_start.png",
+        "activeInHierarchy": false
+      }
+    ]
+  },
+  "battle41Carryover": {
+    "visual_status": "failed_runtime_ui_graphic_image_components_not_serialized_after_scene_reload",
+    "battle29FreshVisibleCardImageCount": 51,
+    "battle29ReopenImageCount": 0,
+    "battle41ReopenImageCount": 0
+  },
+  "battle29Carryover": {
+    "visual_status": "improved_hero_list_cards_bound_not_final",
+    "boundHeroCardCount": 3
+  },
+  "blocker": "Persistent Image/Sprite components now survive scene reopen, but capture/contact sheet is not a final playable clip05 match and runtime text/button/mask/actor/skill flow is still incomplete.",
+  "nextBlocker": "BATTLE_43_VALIDATE_MASK_STENCIL_TMP_BUTTON_AND_RUNTIME_FORMATION_SKILL_BINDING",
+  "rootCmdCount": 1,
+  "restoreToolsDirectCmdCount": 0,
+  "outputs": {
+    "report": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_42_REBUILD_PERSISTENT_BATTLE_HUD_IMAGE_COMPONENTS_FROM_ORIGINAL_PREFAB_PPTR_AND_SPRITES_RESULT.md",
+    "resultJson": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_42_REBUILD_PERSISTENT_BATTLE_HUD_IMAGE_COMPONENTS_FROM_ORIGINAL_PREFAB_PPTR_AND_SPRITES_RESULT.json",
+    "unityDataJson": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_battle_unity\\Assets\\RestoreData\\battle\\BATTLE_42_REBUILD_PERSISTENT_BATTLE_HUD_IMAGE_COMPONENTS_FROM_ORIGINAL_PREFAB_PPTR_AND_SPRITES_UNITY.json",
+    "componentsCsv": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_battle_unity\\Assets\\RestoreData\\battle\\BATTLE_42_REBUILD_PERSISTENT_BATTLE_HUD_IMAGE_COMPONENTS_FROM_ORIGINAL_PREFAB_PPTR_AND_SPRITES_COMPONENTS.csv",
+    "capture": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_battle_unity\\Assets\\RestoreCaptures\\battle_actor\\Battle42PersistentBattleHudImagesFromOriginalSpriteEvidence_1920x1080.png",
+    "contactSheet": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_42_REBUILD_PERSISTENT_BATTLE_HUD_IMAGE_COMPONENTS_FROM_ORIGINAL_PREFAB_PPTR_AND_SPRITES_CONTACT_SHEET.jpg",
+    "manifestGap": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_42_CHARACTER_SKILL_FORMATION_MANIFEST_GAP.md",
+    "unityLog": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_42_REBUILD_PERSISTENT_BATTLE_HUD_IMAGE_COMPONENTS_FROM_ORIGINAL_PREFAB_PPTR_AND_SPRITES.log"
+  },
+  "notes": [
+    "BATTLE42 uses original BattleHudExtractedSpriteBindingMarker25 evidence: sprite name, bundle, pathId, and extracted PNG path.",
+    "Extracted PNGs are imported as persistent Unity Sprite assets before Image.sprite assignment.",
+    "No fake HUD, screenshot paste, whole-atlas placement, or debug/evidence labels were added to the capture.",
+    "This is not a final restored battle screen."
+  ]
+}

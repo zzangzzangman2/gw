@@ -1,0 +1,6 @@
+blocker,status,evidence,requiredNextEvidence,doNotMixWith
+route_hud_right_rail_runtime_state,blocked,BATTLE73 runtimeSnapshotRequiredRows=269 and handlerOrXluaRequiredRows=94,approved UI_NormalBattle runtime hierarchy snapshot after Open/Refresh,map reprojection already solved by BATTLE72
+tmp_mask_stencil_component_rehydration,blocked,BATTLE74 candidateLoadedTmpComponentRows=0 and candidateLoadedMaskComponentRows=0,resolved TMP/Mask component type/script persistence plus runtime material/stencil snapshot,reference-video visual alignment
+xlua_gameentry_modulesinit_runtime,blocked,BATTLE59 executableXluaRuntimeAvailable=false and GameEntry/LuaManager bootstrap unavailable,original runtime binary/source or user-approved external xLua experiment,fake/no-op handlers
+original_button_handler_binding,blocked,"BATTLE58 onClickKnownRows=0, UIEventListener delegate rows=0, handlerBoundRows=0",source-backed Lua lifecycle and closure binding snapshot,input raycast readiness
+card_actor_timeline_payload,separate_blocker,local subset actor/skill progress exists but full payload/timeline/xLua blockers remain,"1036/enemy payload chain, Timeline package/runtime binding, original battle manager context",HUD route patch

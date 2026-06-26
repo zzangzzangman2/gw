@@ -1,0 +1,63 @@
+{
+  "task": "BATTLE_67_ASPECT_CORRECT_CROP_VISUAL_VALIDATION_NO_PATCH",
+  "generatedAt": "2026-06-26T06:18:46",
+  "restoredClaim": false,
+  "playableClaim": false,
+  "patchApplied": false,
+  "sceneSaved": false,
+  "packageImported": false,
+  "manifestModified": false,
+  "runtimeInstrumentationUsed": false,
+  "referenceAspect": 2.2456,
+  "contentRect": {
+    "x": 0,
+    "yExact": 112.4973,
+    "y": 112,
+    "width": 1920,
+    "height": 855,
+    "bottom": 967,
+    "extraVerticalPixelsExact": 224.9947,
+    "extraVerticalPixelsInt": 225,
+    "normalizedY": 0.103704,
+    "normalizedHeight": 0.791667
+  },
+  "analysisOnlyCropGenerated": true,
+  "trueReferenceAspectRuntimeCaptureGenerated": false,
+  "imageRows": 4,
+  "actorRows": 3,
+  "actorCentersInsideReferenceBand": 1,
+  "focusedRouteCardTmpMaskRows": 240,
+  "outputs": {
+    "imageCropAndSignalMatrix": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_67_ASPECT_CORRECT_CROP_VISUAL_VALIDATION_NO_PATCH_IMAGE_CROP_AND_SIGNAL_MATRIX.csv",
+    "actorContentRectPositionMatrix": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_67_ASPECT_CORRECT_CROP_VISUAL_VALIDATION_NO_PATCH_ACTOR_CONTENT_RECT_POSITION_MATRIX.csv",
+    "focusedRouteCardTmpMaskRows": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_67_ASPECT_CORRECT_CROP_VISUAL_VALIDATION_NO_PATCH_FOCUSED_ROUTE_CARD_TMP_MASK_ROWS.csv",
+    "decisionMatrix": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_67_ASPECT_CORRECT_CROP_VISUAL_VALIDATION_NO_PATCH_DECISION_MATRIX.csv",
+    "json": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_67_ASPECT_CORRECT_CROP_VISUAL_VALIDATION_NO_PATCH_RESULT.json",
+    "markdown": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_67_ASPECT_CORRECT_CROP_VISUAL_VALIDATION_NO_PATCH_RESULT.md",
+    "battle57_fullCrop": "C:\\Users\\godho\\Downloads\\girlswar\\work\\battle67_aspect_correct_crop\\battle57_full_reference_aspect_content_rect_1920x855.png",
+    "battle57_fullGuide": "C:\\Users\\godho\\Downloads\\girlswar\\work\\battle67_aspect_correct_crop\\battle57_full_reference_aspect_guide_1920x1080.jpg",
+    "battle57_without_actorsCrop": "C:\\Users\\godho\\Downloads\\girlswar\\work\\battle67_aspect_correct_crop\\battle57_without_actors_reference_aspect_content_rect_1920x855.png",
+    "battle57_without_actorsGuide": "C:\\Users\\godho\\Downloads\\girlswar\\work\\battle67_aspect_correct_crop\\battle57_without_actors_reference_aspect_guide_1920x1080.jpg",
+    "battle57_actor_diffCrop": "C:\\Users\\godho\\Downloads\\girlswar\\work\\battle67_aspect_correct_crop\\battle57_actor_diff_reference_aspect_content_rect_1920x855.png",
+    "battle57_actor_diffGuide": "C:\\Users\\godho\\Downloads\\girlswar\\work\\battle67_aspect_correct_crop\\battle57_actor_diff_reference_aspect_guide_1920x1080.jpg",
+    "battle51_bridgeCrop": "C:\\Users\\godho\\Downloads\\girlswar\\work\\battle67_aspect_correct_crop\\battle51_bridge_reference_aspect_content_rect_1920x855.png",
+    "battle51_bridgeGuide": "C:\\Users\\godho\\Downloads\\girlswar\\work\\battle67_aspect_correct_crop\\battle51_bridge_reference_aspect_guide_1920x1080.jpg",
+    "contactSheet": "C:\\Users\\godho\\Downloads\\girlswar\\work\\battle67_aspect_correct_crop\\BATTLE_67_ASPECT_CORRECT_CROP_VISUAL_VALIDATION_NO_PATCH_reference_vs_candidate_contact_sheet.jpg"
+  },
+  "guardrails": {
+    "noSceneSave": true,
+    "noPackageImport": true,
+    "noManifestEdit": true,
+    "noRuntimeInstrumentation": true,
+    "noXluaOrHandlerPatch": true,
+    "noFakeHudCardIconTextActorEffect": true,
+    "noScreenshotOrAtlasPaste": true,
+    "noCoordinateOnlySuccess": true
+  },
+  "commandPolicy": {
+    "rootCmdCount": 1,
+    "restoreToolsDirectCmdCount": 0,
+    "policyOk": true
+  },
+  "nextBlocker": "TRUE_REFERENCE_ASPECT_CAPTURE_OR_SOURCE_BACKED_VIEWRECT_REQUIRED_BEFORE_LAYOUT_PATCH"
+}

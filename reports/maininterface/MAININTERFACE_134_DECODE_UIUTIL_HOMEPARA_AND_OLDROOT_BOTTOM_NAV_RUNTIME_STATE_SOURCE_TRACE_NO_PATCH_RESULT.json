@@ -1,0 +1,114 @@
+{
+  "generatedAt": "2026-06-26T03:27:48",
+  "task": "MAININTERFACE_134_DECODE_UIUTIL_HOMEPARA_AND_OLDROOT_BOTTOM_NAV_RUNTIME_STATE_SOURCE_TRACE_NO_PATCH",
+  "restoredClaim": false,
+  "scenePatchApplied": false,
+  "candidatePatchApplied": false,
+  "uiutil": {
+    "decodedUiUtil": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\maininterface\\MAININTERFACE_134_UIUtil_security_xor_raw.lua",
+    "getPlayerBigSpineAllLine": 2472,
+    "homeParaMeaning": {
+      "value1": "scale",
+      "value2": "localPosition.x",
+      "value3": "localPosition.y",
+      "value4_optional": "x scale flip flag; when present xScale = -scale",
+      "targetTransform": "spawned Painting_<modelId> child under paintingGroup root, not UI_heroSpine RectTransform itself",
+      "parentTransform": "passed UI_heroSpine transform receives spawned paintingGroup root at local position 0,0,0"
+    }
+  },
+  "dtmodel": {
+    "source": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\extracted\\unity\\bundles\\b_a6bf6dda1077db5c\\textassets\\-741484770043515851_DTmodelEntityTableData.txt",
+    "parsedRows": 244,
+    "sampleRowsWritten": 78,
+    "nonDefaultHomeParaRows": 73,
+    "topHomeParaPatterns": [
+      [
+        "[1.0,0.0,0.0]",
+        171
+      ],
+      [
+        "[0.0]",
+        47
+      ],
+      [
+        "[1.0,50.0,0.0]",
+        26
+      ]
+    ],
+    "topTeamParaPatterns": [
+      [
+        "[1.0,0.0,0.0]",
+        218
+      ],
+      [
+        "[1.0,0.0,-177.0]",
+        11
+      ],
+      [
+        "[1.0,0.0,-205.0]",
+        8
+      ],
+      [
+        "[1.0,0.0,-220.0]",
+        2
+      ],
+      [
+        "[1.0,0.0,-140.0]",
+        2
+      ],
+      [
+        "[1.0,0.0,-164.0]",
+        1
+      ],
+      [
+        "[1.0,0.0,-166.0]",
+        1
+      ],
+      [
+        "[1.0,0.0,-260.0]",
+        1
+      ]
+    ]
+  },
+  "bottomNav": {
+    "rows": 260,
+    "counts": {
+      "decoded_lua": 13,
+      "lua_component_binding": 17,
+      "ui133_candidate_probe": 20,
+      "ui125_prefab_node": 9,
+      "ui125_button_handler": 9,
+      "ui126_reference_element": 191,
+      "animator_binding_summary": 1
+    },
+    "uiDockOpenStackCandidate": true,
+    "mainInterfaceNodeBottomStaticEvidence": true,
+    "oldRootBottomStripStaticPatchAllowedNow": false,
+    "reason": "UI_MainInterface node_bottom exists as source prefab evidence, but current old-root candidate lacks that active strip; UI_Dock appears to be a separate open-stack dock UI and needs candidate scene/open-stack validation before a patch."
+  },
+  "patchDecision": "no_scene_patch_source_trace_only",
+  "patchMatrixCsv": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\maininterface\\MAININTERFACE_134_source_backed_patch_matrix_NO_SCENE_PATCH.csv",
+  "outputs": {
+    "resultMd": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\maininterface\\MAININTERFACE_134_DECODE_UIUTIL_HOMEPARA_AND_OLDROOT_BOTTOM_NAV_RUNTIME_STATE_SOURCE_TRACE_NO_PATCH_RESULT.md",
+    "resultJson": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\maininterface\\MAININTERFACE_134_DECODE_UIUTIL_HOMEPARA_AND_OLDROOT_BOTTOM_NAV_RUNTIME_STATE_SOURCE_TRACE_NO_PATCH_RESULT.json",
+    "uiutilTraceCsv": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\maininterface\\MAININTERFACE_134_uiutil_homepara_source_trace.csv",
+    "dtmodelPatternCsv": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\maininterface\\MAININTERFACE_134_dtmodel_homepara_pattern.csv",
+    "bottomNavEvidenceCsv": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\maininterface\\MAININTERFACE_134_bottom_nav_source_animator_runtime_state_evidence.csv",
+    "decodedUiUtilLua": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\maininterface\\MAININTERFACE_134_UIUtil_security_xor_raw.lua"
+  },
+  "commandPolicy": {
+    "rootCmdCount": 1,
+    "restoreToolsDirectCmdCount": 0,
+    "policyOk": true
+  },
+  "changedFiles": [
+    "C:\\Users\\godho\\Downloads\\girlswar\\_restore_tools\\scripts\\maininterface134_decode_uiutil_homepara_bottom_nav_trace.py",
+    "C:\\Users\\godho\\Downloads\\girlswar\\reports\\maininterface\\MAININTERFACE_134_UIUtil_security_xor_raw.lua",
+    "C:\\Users\\godho\\Downloads\\girlswar\\reports\\maininterface\\MAININTERFACE_134_uiutil_homepara_source_trace.csv",
+    "C:\\Users\\godho\\Downloads\\girlswar\\reports\\maininterface\\MAININTERFACE_134_dtmodel_homepara_pattern.csv",
+    "C:\\Users\\godho\\Downloads\\girlswar\\reports\\maininterface\\MAININTERFACE_134_bottom_nav_source_animator_runtime_state_evidence.csv",
+    "C:\\Users\\godho\\Downloads\\girlswar\\reports\\maininterface\\MAININTERFACE_134_source_backed_patch_matrix_NO_SCENE_PATCH.csv",
+    "C:\\Users\\godho\\Downloads\\girlswar\\reports\\maininterface\\MAININTERFACE_134_DECODE_UIUTIL_HOMEPARA_AND_OLDROOT_BOTTOM_NAV_RUNTIME_STATE_SOURCE_TRACE_NO_PATCH_RESULT.json",
+    "C:\\Users\\godho\\Downloads\\girlswar\\reports\\maininterface\\MAININTERFACE_134_DECODE_UIUTIL_HOMEPARA_AND_OLDROOT_BOTTOM_NAV_RUNTIME_STATE_SOURCE_TRACE_NO_PATCH_RESULT.md"
+  ]
+}

@@ -1,0 +1,116 @@
+{
+  "generatedAt": "2026-06-26T02:08:25",
+  "restoredClaim": false,
+  "reference": "C:\\Users\\godho\\.codex\\attachments\\e607fc34-b674-4516-b051-8d396cd6df06\\image-1.png",
+  "capture": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_maininterface_unity\\Assets\\RestoreCaptures\\maininterface_ui128_oldroot_runtime_activity_text_tmp_click_candidate_1680x720.png",
+  "contact": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\maininterface\\MAININTERFACE_128_REFERENCE_DIFF_CONTACT.png",
+  "actMgrDecodedFrom": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\extracted\\unity\\clean_unityfs_slices\\download\\xlualogic\\datanode\\datamanager\\datamgr.assetbundle",
+  "actCfgDataDecodedFrom": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\extracted\\unity\\clean_unityfs_slices\\download\\xlualogic\\datanode\\datamanager\\datamgr.assetbundle",
+  "evidenceCsv": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\maininterface\\MAININTERFACE_128_runtime_activity_text_tmp_click_evidence.csv",
+  "activityCsv": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\maininterface\\MAININTERFACE_128_runtime_activity_slot_candidates.csv",
+  "diffCsv": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\maininterface\\MAININTERFACE_128_reference_diff_regions.csv",
+  "clickValidationCsv": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_maininterface_unity\\Assets\\RestoreData\\reports\\maininterface_128_oldroot_runtime_activity_text_tmp_click_validation.csv",
+  "click126": {
+    "generatedAt": "2026-06-26 01:43:07",
+    "scenePath": "Assets/Scenes/MainInterface_UI126_OldRootReferenceCandidate.unity",
+    "csv": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_maininterface_unity\\Assets\\RestoreData\\reports\\maininterface_126_oldroot_click_validation.csv",
+    "json": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_maininterface_unity\\Assets\\RestoreData\\reports\\maininterface_126_oldroot_click_validation_summary.json",
+    "totalButtons": 55,
+    "activeButtons": 44,
+    "activeInteractableButtons": 44,
+    "raycastClickableButtons": 43,
+    "raycastBlockedButtons": 1
+  },
+  "click127": {
+    "generatedAt": "2026-06-26 01:49:37",
+    "scenePath": "Assets/Scenes/MainInterface_UI126_OldRootReferenceCandidate.unity",
+    "csv": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_maininterface_unity\\Assets\\RestoreData\\reports\\maininterface_127_oldroot_bg1005_click_validation.csv",
+    "json": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_maininterface_unity\\Assets\\RestoreData\\reports\\maininterface_127_oldroot_bg1005_click_validation_summary.json",
+    "totalButtons": 55,
+    "activeButtons": 45,
+    "activeInteractableButtons": 45,
+    "raycastClickableButtons": 43,
+    "raycastBlockedButtons": 2
+  },
+  "click128": {
+    "generatedAt": "2026-06-26 02:08:15",
+    "scenePath": "Assets/Scenes/MainInterface_UI126_OldRootReferenceCandidate.unity",
+    "csv": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_maininterface_unity\\Assets\\RestoreData\\reports\\maininterface_128_oldroot_runtime_activity_text_tmp_click_validation.csv",
+    "json": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_maininterface_unity\\Assets\\RestoreData\\reports\\maininterface_128_oldroot_runtime_activity_text_tmp_click_validation_summary.json",
+    "totalButtons": 55,
+    "activeButtons": 45,
+    "activeInteractableButtons": 45,
+    "raycastClickableButtons": 43,
+    "raycastBlockedButtons": 2
+  },
+  "blockedClicks128": [
+    {
+      "buttonName": "UI_bg__-3280973633984018659",
+      "hierarchyPath": "Canvas_MainInterface_1280x720/MainInterface_Root_From_RectTransform_CSV/UI_MainInterface_old__2475216337245998118/UI_bg__-3280973633984018659",
+      "activeInHierarchy": "True",
+      "interactable": "True",
+      "targetGraphicReady": "True",
+      "screenX": "1160",
+      "screenY": "600",
+      "raycastHitCount": "3",
+      "raycastTopDepth": "4",
+      "raycastTopWithinButton": "False",
+      "raycastClickable": "False",
+      "raycastTopObject": "Canvas_MainInterface_1280x720/MainInterface_Root_From_RectTransform_CSV/UI_MainInterface_old__2475216337245998118/UI_touchSpine__-318661959714136002"
+    },
+    {
+      "buttonName": "btn_discord__-4707263110286473242",
+      "hierarchyPath": "Canvas_MainInterface_1280x720/MainInterface_Root_From_RectTransform_CSV/UI_MainInterface_old__2475216337245998118/left__8354406432209300530/bg_juese__-2194597288458085354/btn_discord__-4707263110286473242",
+      "activeInHierarchy": "True",
+      "interactable": "True",
+      "targetGraphicReady": "True",
+      "screenX": "985.063",
+      "screenY": "713.087",
+      "raycastHitCount": "4",
+      "raycastTopDepth": "132",
+      "raycastTopWithinButton": "False",
+      "raycastClickable": "False",
+      "raycastTopObject": "Canvas_MainInterface_1280x720/MainInterface_Root_From_RectTransform_CSV/UI_MainInterface_old__2475216337245998118/right__-7547578691690053275/node_act_btn__-2702129779362243929/btn_act_12__2652907961449290088/btn_act__6358558666799476393"
+    }
+  ],
+  "fullDiffRows": [
+    {
+      "captureLabel": "ui126_old_root_candidate",
+      "region": "full",
+      "meanAbsDiff": 0.317361,
+      "rmsDiff": 0.411613,
+      "changedPixelRatio30": 0.804619,
+      "pixelCorrelation": 0.394045,
+      "capturePath": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_maininterface_unity\\Assets\\RestoreCaptures\\maininterface_ui126_oldroot_hero1005_candidate_1680x720.png"
+    },
+    {
+      "captureLabel": "ui127_oldroot_bg1005_candidate",
+      "region": "full",
+      "meanAbsDiff": 0.209078,
+      "rmsDiff": 0.293563,
+      "changedPixelRatio30": 0.70151,
+      "pixelCorrelation": 0.424216,
+      "capturePath": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_maininterface_unity\\Assets\\RestoreCaptures\\maininterface_ui127_oldroot_bg1005_runtime_candidate_1680x720.png"
+    },
+    {
+      "captureLabel": "ui128_oldroot_activity_text_tmp_click_candidate",
+      "region": "full",
+      "meanAbsDiff": 0.209078,
+      "rmsDiff": 0.293563,
+      "changedPixelRatio30": 0.70151,
+      "pixelCorrelation": 0.424216,
+      "capturePath": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_maininterface_unity\\Assets\\RestoreCaptures\\maininterface_ui128_oldroot_runtime_activity_text_tmp_click_candidate_1680x720.png"
+    }
+  ],
+  "commandPolicy": {
+    "rootCmdCount": 1,
+    "rootCmdFiles": [
+      "C:\\Users\\godho\\Downloads\\girlswar\\00_COMMAND_CENTER.cmd"
+    ],
+    "restoreToolsDirectCmdCount": 0,
+    "restoreToolsDirectCmdFiles": []
+  },
+  "candidatePatchApplied": false,
+  "candidateCaptureRegenerated": true,
+  "blocker": "ActMgr:GetActInMain/GetActInMainFace require runtime server/account activity state; text/icon/TMP placeholders cannot be resolved from prefab alone."
+}

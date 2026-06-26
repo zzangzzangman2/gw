@@ -1,0 +1,85 @@
+{
+  "task": "BATTLE_66_ASPECT_CORRECT_VIEWRECT_ROUTE_HUD_CARD_ACTOR_LAYOUT_VALIDATION_NO_PATCH",
+  "generatedAt": "2026-06-26T06:12:18",
+  "restoredClaim": false,
+  "playableClaim": false,
+  "patchApplied": false,
+  "sceneSaved": false,
+  "packageImported": false,
+  "manifestModified": false,
+  "runtimeInstrumentationUsed": false,
+  "referenceAspect": 2.2456,
+  "candidateCaptureAspect": 1.777778,
+  "aspectMismatchConfirmed": true,
+  "aspectCorrectContentRect": {
+    "x": 0,
+    "y": 112.5,
+    "width": 1920,
+    "height": 855,
+    "bottom": 967.5,
+    "extraVerticalPixels": 225,
+    "normalized": {
+      "x": 0,
+      "y": 0.104167,
+      "width": 1,
+      "height": 0.791667
+    },
+    "note": "analysis-only content rect for reference-aspect comparison; not a patch"
+  },
+  "routeHudMismatchRows": 3,
+  "bottomCardMismatchRows": 1,
+  "actorFormationMismatchRows": 2,
+  "tmpMaskRowsReviewed": 81,
+  "tmpMaskRowsReviewedDetail": {
+    "tmpTextRows": 65,
+    "maskRows": 16
+  },
+  "recommendedDecision": "safe_no_patch_report_only_then_aspect_correct_capture_validation",
+  "nextBlocker": "ASPECT_CORRECT_CAPTURE_VALIDATION_REQUIRED_BEFORE_ROUTE_HUD_CARD_ACTOR_LAYOUT_PATCH",
+  "guardrailsTouched": [
+    "no_scene_save",
+    "no_package_import",
+    "no_manifest_edit",
+    "no_xlua_or_handler_patch",
+    "no_fake_hud_card_icon_text_actor_effect",
+    "no_screenshot_or_atlas_paste",
+    "no_coordinate_only_success",
+    "no_runtime_instrumentation"
+  ],
+  "commandPolicy": {
+    "rootCmdCount": 1,
+    "restoreToolsDirectCmdCount": 0,
+    "policy": "root .cmd count 1 / _restore_tools direct .cmd count 0 maintained",
+    "policyOk": true
+  },
+  "inputs": {
+    "controlTowerStatus": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\CONTROL_TOWER_STATUS_20260626_060425.md",
+    "referenceMatrix": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\video_reference\\REFERENCE_MP4_VISUAL_CHECKPOINT_MATRIX_20260626_060212.json",
+    "battle54Result": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_54_VALIDATE_ROUTE_ACTIVE_SIBLING_MASK_TMP_SCALE_AUTOSIZE_ACTOR_PAYLOAD_RESULT.json",
+    "battle57Result": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_57_REHYDRATE_SOURCE_BACKED_ASSETBUNDLE_ACTORS_IN_CANDIDATE_BUILDER_AND_CAPTURE_VALIDATE_NO_FAKE_MESH_RESULT.json",
+    "battle57Capture": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_battle_unity\\Assets\\RestoreCaptures\\battle_actor\\Battle57RuntimeRehydratedAssetBundleActorsCandidate_1920x1080.png",
+    "battle51Capture": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_battle_unity\\Assets\\RestoreCaptures\\battle_actor\\Battle51LuaBridgeRaycasterRegistrationCandidate_1920x1080.png"
+  },
+  "counts": {
+    "routeRows": 1046,
+    "activeRouteZeroScaleRows": 7,
+    "inactiveCriticalRows": 19,
+    "cardRows": 4,
+    "activeCardRows": 3,
+    "activeCardsWithSpriteRows": 3,
+    "actorRows": 6,
+    "activeActorRows": 3,
+    "activeLoadableActorRows": 3,
+    "buttonRouteRows": 31,
+    "tmpTextRows": 65,
+    "tmpAutosizeOnRows": 1,
+    "tmpNegativeCharacterSpacingRows": 15,
+    "maskRows": 16,
+    "maskComponentRows": 8,
+    "maskNameOnlyRows": 8
+  },
+  "battle57Carryover": {
+    "sourceBackedActorsVisible": "see BATTLE57 result",
+    "isFinalRestoredBattleScreen": false
+  }
+}

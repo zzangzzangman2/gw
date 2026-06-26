@@ -1,0 +1,58 @@
+{
+  "task": "BATTLE_69_TRUE_ASPECT_CAPTURE_ROUTE_HUD_CARD_ACTOR_NORMALIZED_VALIDATION_NO_PATCH",
+  "generatedAt": "2026-06-26T06:32:30",
+  "restoredClaim": false,
+  "playableClaim": false,
+  "patchApplied": false,
+  "sceneSaved": false,
+  "packageImported": false,
+  "manifestModified": false,
+  "runtimeInstrumentationUsed": false,
+  "trueCaptureUsed": true,
+  "trueCaptureAspect": 2.245614,
+  "blackGutterDetected": true,
+  "blackGutter": {
+    "leftGutterPx": 200,
+    "rightGutterPx": 27,
+    "leftGutterNorm": 0.104167,
+    "rightGutterNorm": 0.014063,
+    "totalGutterRatio": 0.118229,
+    "detected": true
+  },
+  "routeHudMismatchRows": 3,
+  "bottomCardMismatchRows": 1,
+  "actorPayloadBlockedRows": 9,
+  "tmpMaskRowsReviewed": 81,
+  "safePatchCandidatesCount": 2,
+  "nextBlocker": "TRUE_ASPECT_ROUTE_HUD_VIEWRECT_SOURCE_DELTA_AND_PAYLOAD_GAPS_BEFORE_PATCH",
+  "guardrailsTouched": [
+    "no_scene_save",
+    "no_package_import",
+    "no_manifest_edit",
+    "no_xlua_or_handler_patch",
+    "no_fake_hud_card_icon_text_actor_effect",
+    "no_screenshot_or_atlas_paste_as_asset",
+    "no_coordinate_only_success",
+    "no_runtime_instrumentation"
+  ],
+  "commandPolicy": {
+    "rootCmdCount": 1,
+    "restoreToolsDirectCmdCount": 0,
+    "policyOk": true
+  },
+  "inputs": {
+    "trueCapture": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_battle_unity\\Assets\\RestoreCaptures\\battle_actor\\Battle68TrueReferenceAspectNoSceneSave_1920x855.png",
+    "battle68Result": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_68_TRUE_REFERENCE_ASPECT_CAPTURE_PIPELINE_AND_VIEWRECT_SOURCE_TRACE_NO_SCENE_SAVE_RESULT.json",
+    "character65": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\characters\\CHARACTER_65_FULL_BATTLE_PAYLOAD_ROSTER_AND_BUNDLE_GAP_MATRIX_NO_NETWORK_NO_IMPORT_RESULT.json"
+  },
+  "payloadCounts": {
+    "readyActors": 3,
+    "sourceKnownMissingActors": 1,
+    "unresolvedEnemyActors": 8,
+    "readySkillRows": 12,
+    "blockedSkillRows": 49
+  },
+  "outputs": {
+    "contactSheet": "C:\\Users\\godho\\Downloads\\girlswar\\work\\battle69_true_aspect_validation\\BATTLE_69_TRUE_ASPECT_CAPTURE_ROUTE_HUD_CARD_ACTOR_NORMALIZED_VALIDATION_NO_PATCH_reference_vs_true_capture_contact_sheet.jpg"
+  }
+}

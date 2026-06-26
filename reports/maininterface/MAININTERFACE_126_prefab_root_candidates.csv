@@ -1,0 +1,3 @@
+﻿rootName,rootRectId,nodeCount,activeNodeCount,hasLuaMainPageComponent,hasAnimatorUI_MainInterface,evidence
+UI_MainInterface,5568884429252053541,806,540,yes,yes,UnityPy component trace: both roots contain UI_MainPage.bytes MonoBehaviour and UI_MainInterface Animator controller
+UI_MainInterface_old,2475216337245998118,419,333,yes,yes,UnityPy component trace: both roots contain UI_MainPage.bytes MonoBehaviour and UI_MainInterface Animator controller

@@ -1,0 +1,43 @@
+{
+  "generatedAt": "2026-06-26T04:00:44",
+  "task": "MAININTERFACE_137_TRACE_PRODUCTION_FORM_LAYER_ORDER_AND_ACTIVITY_ACCOUNT_CHAT_RUNTIME_STATE_NO_FAKE_PATCH",
+  "restoredClaim": false,
+  "scenePatchApplied": false,
+  "candidatePatchApplied": false,
+  "patchDecision": "trace_only_no_patch",
+  "uiDockSiblingPromotionAllowed": false,
+  "reasonNoPatch": "UI_Dock form/open-stack evidence is strong, but UI136 source-built sibling capture worsened reference metrics and still lacks runtime UIManager canvas depth, form group, animator, mask, and UISpineCtr renderer semantics.",
+  "ui136Metrics": {
+    "ui128FullCorr": 0.424216,
+    "ui136FullCorr": 0.210779,
+    "ui128BottomNavCorr": 0.395621,
+    "ui136BottomNavCorr": 0.120721
+  },
+  "csvs": {
+    "productionFormLayerOrderOpenStack": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\maininterface\\MAININTERFACE_137_production_form_layer_order_open_stack_evidence.csv",
+    "activityAccountChatRuntimeStateDecisionMatrix": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\maininterface\\MAININTERFACE_137_activity_account_chat_runtime_state_decision_matrix.csv",
+    "maskStencilCanvasSortingAnimatorEvidence": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\maininterface\\MAININTERFACE_137_mask_stencil_canvas_sorting_animator_evidence.csv"
+  },
+  "rowCounts": {
+    "formEvidence": 21,
+    "stateMatrix": 9,
+    "layerEvidence": 303
+  },
+  "requiredNextEvidence": [
+    "runtime UIManager/YouYouCanvasHelper form group/canvas depth dump for UI_Dock and UI_MainPage",
+    "runtime UISpineCtr/sp_* renderer reconstruction or original component execution path",
+    "real activity/account/chat snapshot accepted by UI130 replay pipeline"
+  ],
+  "guardrails": {
+    "uiBgRaycastInteractableChanged": false,
+    "btnDiscordReviewHideApplied": false,
+    "activitySlotsHiddenOrFaked": false,
+    "painting1005BackCarriedOver": false,
+    "routeWorldZhuyeNodesHidden": false
+  },
+  "commandPolicy": {
+    "rootCmdCount": 1,
+    "restoreToolsDirectCmdCount": 0,
+    "policyOk": true
+  }
+}

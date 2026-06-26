@@ -1,0 +1,7 @@
+item,oldroot_evidence,uidock_evidence,classification,decision
+old-root right/shop/mail/friends/ranking cluster,present in UI133 bottom probe; UI_MainPage handlers/static labels exist,not the UI_Dock form; remains part of UI_MainPage old-root candidate,keep_oldroot_no_patch,do not hide or replace
+old-root node_bottom/toogles/btnToggle*,UI_MainPage has bindings/handlers but current old-root candidate does not expose active new-root strip,UI_Dock has independent DOCK_TYPE MAIN_PAGE..MAIN_CITY mapping and source root,uidock_open_stack_candidate_stronger,probe UI_Dock sibling form instead of importing node_bottom coordinates
+UI_Dock MAIN_PAGE selected tab,not represented by old-root alone,UI_Dock.lua line 67 defaults to MAIN_PAGE; initTab lines 138-149 toggles on/off,source_backed_candidate_patch_applied,main_on active/main_off inactive; other off nodes active
+UI_Dock icons/spines/sprites,old-root uses separate right/bottom/social buttons,source prefab/bindings/restored sprites and SP_Dock assets exist,source_asset_prefab_driven,use source-built hierarchy only; no fake icons/text
+activity stack and face activity,requires ActMgr runtime snapshot from UI129/UI130,UI_Dock does not solve activity server list,requires_runtime_snapshot,no activity slot hide/text/icon/spine patch
+Hero1005 back layer,UI135 zero-offset mount worsened full/hero correlation,not part of UI_Dock task,source_backed_static_patch_not_allowed_by_guardrail,do not include Painting_1005_back in UI136 candidate

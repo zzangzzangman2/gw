@@ -1,0 +1,5 @@
+capturePath,allowedNow,runtimeExecution,requiresApproval,input,output,decision
+no_execution_static_schema_only,True,False,False,local reports/source evidence,schema/template/CSV only,this_task_only
+approved_original_runtime_dump_required,False,True,True,explicit user approval plus safe original runtime target,filled form/depth/mask/dynamic JSON snapshot,blocked_until_approval
+approved_manual_screenshot_plus_json_snapshot,False,external/manual,True,user-provided manual runtime values/screenshots,filled template checked by replay scripts,acceptable_if_user_supplies_real_values
+approved_unity_replay_import_only,False,False,True,real filled snapshot JSON,candidate replay/import and validation,blocked_until_snapshot_exists

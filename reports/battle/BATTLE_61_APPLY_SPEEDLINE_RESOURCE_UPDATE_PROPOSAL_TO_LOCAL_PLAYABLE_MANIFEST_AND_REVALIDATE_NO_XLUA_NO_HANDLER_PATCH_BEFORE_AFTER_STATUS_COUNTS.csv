@@ -1,0 +1,12 @@
+﻿category,status,before,after,delta
+actorStatusCounts,loadable,3,3,0
+actorStatusCounts,not_fetchable_local,1,1,0
+actorStatusCounts,unresolved_enemy_payload_instance,8,8,0
+skillStatusCounts,data_only_missing_actor,27,27,0
+skillStatusCounts,loadable,4,12,8
+skillStatusCounts,loadable_with_unresolved_common_resource_deps,8,0,-8
+skillStatusCounts,passive_no_timeline,22,22,0
+resourceStatusCounts,loadable,8,8,0
+resourceStatusCounts,not_fetchable_local,1,1,0
+resourceStatusCounts,resolved_loadable_local_bundle,0,3,3
+resourceStatusCounts,unresolved_missing_common_bundle,3,0,-3

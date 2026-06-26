@@ -1,0 +1,7 @@
+region,referenceRegionDescription,normBox,referenceMeanNonDarkRatio,trueCaptureNonDarkRatio,deltaNonDarkRatio,referenceMeanBrightRatio,trueCaptureBrightRatio,deltaBrightRatio,trueCaptureNonDarkBBox,classification,patchDecision
+full_frame,full capture/reference frame,0.0/0.0/1.0/1.0,0.955674,0.705352,-0.250322,0.561816,0.392314,-0.169502,32/0/1894/846,black_gutter_or_global_framing_check,no_patch_source_validation_only
+top_hud,reference top HUD/portraits/VS/wave band,0.0/0.03/1.0/0.16,0.945239,0.718285,-0.226954,0.578903,0.440358,-0.138545,32/26/1715/136,hud_route_layout_mismatch,no_patch_source_validation_only
+right_control_rail,reference right AUTO/play/x2 control rail,0.88/0.3/0.99/0.66,0.9939,0.248831,-0.745069,0.754771,0.071244,-0.683527,1690/256/1894/563,right_rail_visual_layout_mismatch_plus_handler_blocker,no_patch_source_validation_only
+bottom_five_cards,reference bottom five-card assembly,0.25/0.75/0.78/1.0,0.946085,0.742747,-0.203338,0.578026,0.440501,-0.137525,480/641/1497/843,bottom_card_payload_and_layout_mismatch,no_patch_source_validation_only
+friendly_actor_band,reference friendly formation band,0.12/0.2/0.48/0.92,0.967432,0.963645,-0.003787,0.503938,0.57164,0.067702,230/171/921/786,actor_subset_payload_layout_mismatch,no_patch_source_validation_only
+enemy_actor_band,reference enemy formation band,0.5/0.2/0.88/0.92,0.987327,0.929216,-0.058111,0.598024,0.478683,-0.119341,960/171/1689/786,actor_subset_payload_layout_mismatch,no_patch_source_validation_only

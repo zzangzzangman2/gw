@@ -1,0 +1,8 @@
+BATTLE_60_VALIDATE_LOADABLE_LOCAL_SUBSET_SKILL_TIMELINE_ASSETBUNDLE_CHAIN_NO_XLUA_NO_HANDLER_PATCH
+sourceBackedSkillRowsChecked=12
+resourceCompleteSkillRowsVerified=4
+missingCommonDependencyRows=8
+skillTimelineChainVerifiedForResourceCompleteSubset=True
+sceneSaved=false
+handlerBindingApplied=false
+xLuaRuntimeUsed=false

@@ -1,0 +1,46 @@
+{
+  "task": "BATTLE_70_TRUE_ASPECT_BLACK_GUTTER_ROUTE_HUD_SOURCE_DELTA_NO_PATCH",
+  "generatedAt": "2026-06-26T06:40:45",
+  "restoredClaim": false,
+  "playableClaim": false,
+  "patchApplied": false,
+  "sceneSaved": false,
+  "packageImported": false,
+  "manifestModified": false,
+  "runtimeInstrumentationUsed": false,
+  "trueCaptureUsed": true,
+  "blackGutterInputPxLeft": 200,
+  "blackGutterInputPxRight": 27,
+  "cameraMapFramingRowsReviewed": 16,
+  "routeHudRowsReviewed": 386,
+  "safeSourceBackedPatchCandidates": 1,
+  "runtimeOrHandlerEvidenceRequiredRows": 122,
+  "patchCandidateRuntimeOrHandlerEvidenceRequiredRows": 1,
+  "routeRuntimeOrHandlerEvidenceRequiredRows": 121,
+  "payloadBlockedRows": 2,
+  "forbiddenGuessRows": 1,
+  "recommendedNextAction": "CREATE_CANDIDATE_ONLY_MAP_FRAMING_REPROJECTION_PATCH_AND_VALIDATE_WITH_BATTLE68_TRUE_ASPECT_CAPTURE_BEFORE_ROUTE_HUD_PATCH",
+  "nextBlocker": "MAP_FRAMING_REPROJECTION_CANDIDATE_VALIDATION_AND_ROUTE_HUD_RUNTIME_STATE_BLOCKERS",
+  "guardrailsTouched": [
+    "no_scene_save",
+    "no_package_import",
+    "no_manifest_edit",
+    "no_xlua_or_handler_patch",
+    "no_fake_hud_card_icon_text_actor_effect",
+    "no_screenshot_or_atlas_paste_as_asset",
+    "no_coordinate_only_success",
+    "no_runtime_instrumentation"
+  ],
+  "commandPolicy": {
+    "rootCmdCount": 1,
+    "restoreToolsDirectCmdCount": 0,
+    "policyOk": true
+  },
+  "inputs": {
+    "battle69Result": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_69_TRUE_ASPECT_CAPTURE_ROUTE_HUD_CARD_ACTOR_NORMALIZED_VALIDATION_NO_PATCH_RESULT.json",
+    "battle68UnitySummary": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_battle_unity\\Assets\\RestoreData\\battle\\BATTLE_68_TRUE_REFERENCE_ASPECT_CAPTURE_PIPELINE_AND_VIEWRECT_SOURCE_TRACE_NO_SCENE_SAVE_UNITY.json",
+    "battle68EditorMethod": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_battle_unity\\Assets\\Editor\\Battle68TrueReferenceAspectCaptureNoSceneSaveEditor.cs",
+    "battle27MapBuilder": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_battle_unity\\Assets\\Editor\\BattleCorrectMapSceneHudPreviewClip05Editor.cs",
+    "uiNormalBattleLua": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_50_DECODED_MAINCITY_LUA\\874003978109174219_UI_NormalBattle.lua"
+  }
+}

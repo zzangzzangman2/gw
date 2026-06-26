@@ -1,0 +1,8 @@
+BATTLE_65_LOCAL_TIMELINE_PACKAGE_AVAILABILITY_AND_REVERSIBLE_CANDIDATE_PLAN_NO_IMPORT_NO_PATCH
+timelineCandidatesFound=1
+sourceCompatibleCandidates=1
+recommendedDecision=local_candidate_found_requires_user_approval_to_import
+patchApplied=false
+packageImported=false
+manifestModified=false
+networkUsed=false

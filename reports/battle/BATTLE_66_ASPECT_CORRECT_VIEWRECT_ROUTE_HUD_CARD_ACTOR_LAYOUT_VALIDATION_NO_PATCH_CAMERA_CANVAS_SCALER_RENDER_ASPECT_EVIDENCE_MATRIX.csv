@@ -1,0 +1,9 @@
+evidenceKind,path,width,height,aspect,finding,mutation
+reference_video,C:\Users\godho\Downloads\참고.mp4,1280,570,2.2456,reference aspect baseline from auxiliary video,none
+attached_reference_image,C:\Users\godho\.codex\attachments\e607fc34-b674-4516-b051-8d396cd6df06\image-1.png,1180,526,2.2433,attached MainInterface reference is also ~2.24:1,none
+battle57_capture,C:\Users\godho\Downloads\girlswar\girlswar_battle_unity\Assets\RestoreCaptures\battle_actor\Battle57RuntimeRehydratedAssetBundleActorsCandidate_1920x1080.png,1920,1080,1.777778,"candidate capture is 16:9 1920x1080, not reference aspect",none
+battle51_capture,C:\Users\godho\Downloads\girlswar\girlswar_battle_unity\Assets\RestoreCaptures\battle_actor\Battle51LuaBridgeRaycasterRegistrationCandidate_1920x1080.png,1920,1080,1.777778,"candidate capture is 16:9 1920x1080, not reference aspect",none
+project_version,C:\Users\godho\Downloads\girlswar\girlswar_battle_unity\ProjectSettings\ProjectVersion.txt,,,,Unity 6000.4.9f1 project; no Timeline/package mutation in this task,none
+capture_script_constant,C:\Users\godho\Downloads\girlswar\girlswar_battle_unity\Assets\Editor\Battle51RestoreLuaBridgeAndRaycasterRegistrationEditor.cs,1920,1080,1.777778,BATTLE51 RenderCamera called with 1920x1080,none
+capture_script_constant,C:\Users\godho\Downloads\girlswar\girlswar_battle_unity\Assets\Editor\Battle57RehydrateSourceBackedAssetBundleActorsEditor.cs,1920,1080,1.777778,BATTLE57 report/capture path is 1920x1080; aspect-correct reprobe required before coordinate/layout patch,none
+aspect_correct_content_rect,computed_from_reference_aspect_and_1920x1080_capture,1920,855,2.245614,letterbox-equivalent analysis rect top=112.5 bottom=967.5 extraVertical=225,none

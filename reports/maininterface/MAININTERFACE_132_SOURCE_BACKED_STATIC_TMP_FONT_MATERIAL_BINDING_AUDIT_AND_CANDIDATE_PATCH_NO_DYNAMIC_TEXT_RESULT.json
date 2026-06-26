@@ -1,0 +1,24 @@
+﻿{
+    "generatedAt": "2026-06-26 03:08:10",
+    "restoredClaim": false,
+    "candidatePatchApplied": false,
+    "scenePatchApplied": false,
+    "status": "blocked_no_patch_static_tmp_bindings_already_bound_or_no_unambiguous_static_patch_targets",
+    "scenePath": "Assets/Scenes/MainInterface_UI126_OldRootReferenceCandidate.unity",
+    "nodeAuditCsv": "C:/Users/godho/Downloads/girlswar/reports/maininterface/MAININTERFACE_132_tmp_text_node_audit.csv",
+    "materialEvidenceCsv": "C:/Users/godho/Downloads/girlswar/reports/maininterface/MAININTERFACE_132_static_tmp_material_binding_evidence.csv",
+    "totalTextNodes": 80,
+    "visibleTextNodes": 27,
+    "staticSourceIdentified": 7,
+    "dynamicRuntimeSnapshotRequired": 62,
+    "guardrailBlocked": 0,
+    "unknownNeedsProbe": 11,
+    "staticTmpEvidenceRows": 7,
+    "staticTmpAlreadyBound": 7,
+    "staticTmpUnmatched": 0,
+    "noPatchReason": "No source-backed dynamic text edits are allowed. Static TMP material candidates are already using matched source-backed shared/static-probe materials, so UI132 has no new material patch to apply.",
+    "commandPolicy": {
+        "rootCmdCount": 1,
+        "restoreToolsDirectCmdCount": 0
+    }
+}

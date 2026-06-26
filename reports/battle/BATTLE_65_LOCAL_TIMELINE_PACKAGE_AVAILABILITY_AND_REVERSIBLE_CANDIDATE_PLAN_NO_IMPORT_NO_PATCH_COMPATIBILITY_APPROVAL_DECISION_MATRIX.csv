@@ -1,0 +1,6 @@
+decision,status,evidence,nextAction
+no_local_timeline_candidate_found,not_current,timelineCandidateCount=1,"If no local candidate exists, continue blocked on approved package/runtime source."
+local_candidate_found_requires_user_approval_to_import,recommended,sourceCompatibleCandidates=1,Do not import now; request explicit approval for reversible candidate test.
+candidate_version_mismatch_requires_manual_review,not_current,timelineCandidates=1; compatible=1,Review package version/unity constraints before any manifest change.
+do_not_import_external_package_without_approval,guardrail_active,No network/package install/import was executed.,Keep packageImported=false and manifestModified=false until approval.
+recommendedDecision,local_candidate_found_requires_user_approval_to_import,Derived from local candidate matrix.,Use the reversible plan CSV only after user/control tower approval.

@@ -1,0 +1,64 @@
+{
+  "prefix": "BATTLE_61_APPLY_SPEEDLINE_RESOURCE_UPDATE_PROPOSAL_TO_LOCAL_PLAYABLE_MANIFEST_AND_REVALIDATE_NO_XLUA_NO_HANDLER_PATCH",
+  "generatedAt": "2026-06-26T05:19:51",
+  "restoredClaim": false,
+  "playableClaim": false,
+  "isFinalRestoredBattleScreen": false,
+  "sourceBackedProposalApplied": true,
+  "manifestVariantWritten": true,
+  "canonicalManifestOverwritten": false,
+  "sceneSaved": false,
+  "handlerBindingApplied": false,
+  "xLuaRuntimeUsed": false,
+  "sourceBackedSkillRowsChecked": 12,
+  "localSubsetResourceCompleteSkillRowsBefore": 4,
+  "localSubsetResourceCompleteSkillRowsAfter": 12,
+  "missingCommonDependencyRowsBefore": 8,
+  "missingCommonDependencyRowsAfter": 0,
+  "unchangedActorBlockers": [
+    "1036 actor exact bundle remains not_fetchable_local",
+    "enemy 1100112/1100113/1100121/1100122/1100123/1100131/1100132/1100133 remain not_resolved_from_local_evidence"
+  ],
+  "nextBlocker": "original_xlua_runtime_required_for_handlers_and_full_payload_actor_gaps_1036_unresolved_enemies",
+  "guardrailsTouched": {
+    "fakeSkillCreated": false,
+    "fakeEffectCreated": false,
+    "fakeCardIconTextCreated": false,
+    "handlerPatchApplied": false,
+    "dummyLuaUsed": false,
+    "externalXluaImported": false,
+    "androidInstrumentationUsed": false,
+    "canonicalManifestOverwritten": false,
+    "mainInterfaceTouched": false
+  },
+  "commandPolicy": {
+    "rootCmdCount": 1,
+    "rootCmdFiles": [
+      "C:\\Users\\godho\\Downloads\\girlswar\\00_COMMAND_CENTER.cmd"
+    ],
+    "restoreToolsDirectCmdCount": 0,
+    "restoreToolsDirectCmdFiles": []
+  },
+  "proposalAppliedSummary": {
+    "resourceUpdatesApplied": 3,
+    "skillPromotionsApplied": 8,
+    "resourceUpdateExactBundles": [
+      "download/commonprefabsandres/skilleffect/commonskillprefabsandres1/pinkspeedline.assetbundle",
+      "download/commonprefabsandres/skilleffect/commonskillprefabsandres1/redspeedline.assetbundle",
+      "download/commonprefabsandres/skilleffect/commonskillprefabsandres1/yellospeedline.assetbundle"
+    ]
+  },
+  "beforeAfterStatusCountsCsv": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_61_APPLY_SPEEDLINE_RESOURCE_UPDATE_PROPOSAL_TO_LOCAL_PLAYABLE_MANIFEST_AND_REVALIDATE_NO_XLUA_NO_HANDLER_PATCH_BEFORE_AFTER_STATUS_COUNTS.csv",
+  "appliedProposalRowsCsv": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_61_APPLY_SPEEDLINE_RESOURCE_UPDATE_PROPOSAL_TO_LOCAL_PLAYABLE_MANIFEST_AND_REVALIDATE_NO_XLUA_NO_HANDLER_PATCH_APPLIED_PROPOSAL_ROWS_AND_UNCHANGED_ACTOR_BLOCKERS.csv",
+  "localSubsetSkillResourceCompletenessValidationCsv": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_61_APPLY_SPEEDLINE_RESOURCE_UPDATE_PROPOSAL_TO_LOCAL_PLAYABLE_MANIFEST_AND_REVALIDATE_NO_XLUA_NO_HANDLER_PATCH_LOCAL_SUBSET_SKILL_RESOURCE_COMPLETENESS_VALIDATION.csv",
+  "manifestVariant": {
+    "md": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_LOCAL_PLAYABLE_PAYLOAD_MANIFEST_SPEEDLINE_RESOLVED.md",
+    "json": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_LOCAL_PLAYABLE_PAYLOAD_MANIFEST_SPEEDLINE_RESOLVED.json",
+    "csv": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_LOCAL_PLAYABLE_PAYLOAD_MANIFEST_SPEEDLINE_RESOLVED.csv"
+  },
+  "outputs": {
+    "resultMd": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_61_APPLY_SPEEDLINE_RESOURCE_UPDATE_PROPOSAL_TO_LOCAL_PLAYABLE_MANIFEST_AND_REVALIDATE_NO_XLUA_NO_HANDLER_PATCH_RESULT.md",
+    "resultJson": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_61_APPLY_SPEEDLINE_RESOURCE_UPDATE_PROPOSAL_TO_LOCAL_PLAYABLE_MANIFEST_AND_REVALIDATE_NO_XLUA_NO_HANDLER_PATCH_RESULT.json",
+    "log": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_61_APPLY_SPEEDLINE_RESOURCE_UPDATE_PROPOSAL_TO_LOCAL_PLAYABLE_MANIFEST_AND_REVALIDATE_NO_XLUA_NO_HANDLER_PATCH.log"
+  }
+}

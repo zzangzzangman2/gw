@@ -1,0 +1,52 @@
+{
+  "prefix": "BATTLE_62_LOCAL_SUBSET_SOURCE_BACKED_SKILL_ACTIVATION_PROBE_NO_XLUA_NO_ORIGINAL_HANDLER_CLAIM",
+  "generatedAt": "2026-06-26T05:28:00",
+  "restoredClaim": false,
+  "playableClaim": false,
+  "isFinalRestoredBattleScreen": false,
+  "originalHandlerBindingClaim": false,
+  "sceneSaved": false,
+  "xLuaRuntimeUsed": false,
+  "sourceBackedSkillRowsChecked": 12,
+  "skillPrefabsLoaded": 12,
+  "skillPrefabsInstantiated": 12,
+  "skillRowsWithVisualSignal": 0,
+  "actorsVisibleDuringProbe": 3,
+  "diagnosticCaptureProduced": false,
+  "diagnosticCaptureCount": 0,
+  "diagnosticCapturePaths": "",
+  "sourceBackedSkillActivationProbeFeasible": true,
+  "classificationCounts": {
+    "skill_asset_load_only_no_visual_signal": 12
+  },
+  "nextBlocker": "original_xlua_gameentry_handler_runtime_required_for_true_input_playability_and_full_payload_actor_gaps",
+  "guardrailsTouched": {
+    "fakeSkillCreated": false,
+    "fakeEffectCreated": false,
+    "fakeCardIconTextCreated": false,
+    "handlerPatchApplied": false,
+    "dummyLuaUsed": false,
+    "externalXluaImported": false,
+    "androidInstrumentationUsed": false,
+    "originalHandlerBindingClaim": false,
+    "sceneSaved": false,
+    "mainInterfaceTouched": false
+  },
+  "commandPolicy": {
+    "rootCmdCount": 1,
+    "rootCmdFiles": [
+      "C:\\Users\\godho\\Downloads\\girlswar\\00_COMMAND_CENTER.cmd"
+    ],
+    "restoreToolsDirectCmdCount": 0,
+    "restoreToolsDirectCmdFiles": []
+  },
+  "outputs": {
+    "resultMd": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_62_LOCAL_SUBSET_SOURCE_BACKED_SKILL_ACTIVATION_PROBE_NO_XLUA_NO_ORIGINAL_HANDLER_CLAIM_RESULT.md",
+    "resultJson": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_62_LOCAL_SUBSET_SOURCE_BACKED_SKILL_ACTIVATION_PROBE_NO_XLUA_NO_ORIGINAL_HANDLER_CLAIM_RESULT.json",
+    "skillActivationProbeMatrixCsv": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_62_LOCAL_SUBSET_SOURCE_BACKED_SKILL_ACTIVATION_PROBE_NO_XLUA_NO_ORIGINAL_HANDLER_CLAIM_SKILL_ACTIVATION_PROBE_MATRIX.csv",
+    "actorTargetAnchorContextCsv": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_62_LOCAL_SUBSET_SOURCE_BACKED_SKILL_ACTIVATION_PROBE_NO_XLUA_NO_ORIGINAL_HANDLER_CLAIM_ACTOR_TARGET_ANCHOR_CONTEXT.csv",
+    "dependencyRuntimeBlockerCsv": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_62_LOCAL_SUBSET_SOURCE_BACKED_SKILL_ACTIVATION_PROBE_NO_XLUA_NO_ORIGINAL_HANDLER_CLAIM_DEPENDENCY_RUNTIME_COMPONENT_BLOCKERS.csv",
+    "candidateClassificationCsv": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_62_LOCAL_SUBSET_SOURCE_BACKED_SKILL_ACTIVATION_PROBE_NO_XLUA_NO_ORIGINAL_HANDLER_CLAIM_CANDIDATE_CLASSIFICATION_NEXT_ACTION.csv",
+    "log": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_62_LOCAL_SUBSET_SOURCE_BACKED_SKILL_ACTIVATION_PROBE_NO_XLUA_NO_ORIGINAL_HANDLER_CLAIM.log"
+  }
+}

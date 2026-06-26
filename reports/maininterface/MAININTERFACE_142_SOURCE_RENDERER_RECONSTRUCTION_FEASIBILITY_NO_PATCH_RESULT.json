@@ -1,0 +1,44 @@
+{
+  "restoredClaim": false,
+  "scenePatchApplied": false,
+  "candidatePatchApplied": false,
+  "patchDecision": "trace_only_no_patch",
+  "rendererDependencyChainRecovered": true,
+  "rendererDependencyChainStatus": "normal_uidock_sp_renderer_components_and_local_dependencies_resolved_but_depth_blocks_promotion",
+  "skeletonDataAssetsResolved": true,
+  "materialsResolved": true,
+  "texturesOrAtlasResolved": true,
+  "unityProjectSpineRuntimeAvailable": true,
+  "futureSourceBackedRendererPatchFeasible": true,
+  "futureSourceBackedRendererPatchStatus": "renderer_dependency_chain_feasible_but_scene_promotion_blocked_by_depth",
+  "rendererPatchAllowedNow": false,
+  "uiDockPromotionAllowed": false,
+  "requiresRuntimeDumpForDepth": true,
+  "rowCounts": {
+    "componentMatrix": 9,
+    "dependencyMatrix": 80,
+    "projectMatrix": 9,
+    "patchMatrix": 3
+  },
+  "requiredNextEvidence": [
+    "runtime or source-backed UI_Dock/UI_MainPage parent CurrCanvas.sortingOrder/depth for DisableUILayer=1 forms",
+    "future Unity compile/import validation if renderer assets are actually imported into a candidate",
+    "runtime-equivalent CanvasHelper depth propagation before any UI_Dock visual promotion"
+  ],
+  "guardrailsTouched": [],
+  "commandPolicy": {
+    "rootCmdCountExpected": 1,
+    "rootCmdCountActual": 1,
+    "restoreToolsDirectCmdCountExpected": 0,
+    "restoreToolsDirectCmdCountActual": 0,
+    "gitCommitPush": false,
+    "sceneModified": false,
+    "battleFoldersModified": false
+  },
+  "outputs": {
+    "componentMatrix": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\maininterface\\MAININTERFACE_142_uidock_normal_sp_renderer_component_field_matrix.csv",
+    "dependencyMatrix": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\maininterface\\MAININTERFACE_142_skeletondata_material_atlas_texture_dependency_resolution_matrix.csv",
+    "projectMatrix": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\maininterface\\MAININTERFACE_142_unity_project_spine_runtime_import_feasibility_matrix.csv",
+    "patchMatrix": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\maininterface\\MAININTERFACE_142_future_patch_proposal_vs_blocker_decision_matrix.csv"
+  }
+}

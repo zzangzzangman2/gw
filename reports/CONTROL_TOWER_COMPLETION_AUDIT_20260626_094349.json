@@ -1,0 +1,99 @@
+{
+  "audit": "CONTROL_TOWER_COMPLETION_AUDIT_20260626_094349",
+  "goalComplete": false,
+  "restoredClaim": false,
+  "playableClaim": false,
+  "runtimeInstrumentationUsed": false,
+  "scenePatchedByThisAudit": false,
+  "evidenceBasis": [
+    "BATTLE_75_ORIGINAL_RUNTIME_SNAPSHOT_APPROVAL_PACKET_FOR_UI_NORMALBATTLE_ROUTE_TMP_MASK_HANDLER_AFTER_B74_NO_EXECUTION_NO_PATCH_RESULT.json",
+    "MAININTERFACE_148_RUNTIME_SNAPSHOT_APPROVAL_PACKET_AND_STATIC_FIELD_EXHAUSTION_NO_RUNTIME_NO_PATCH_RESULT.json",
+    "CHARACTER_66_UNRESOLVED_ENEMY_ID_SOURCE_ALIAS_TRACE_NO_NETWORK_NO_PROMOTION_RESULT.json",
+    "CONTROL_TOWER_RUNTIME_SNAPSHOT_PACKET_VALIDATOR_20260626_093911_RESULT.json",
+    "CONTROL_TOWER_THREAD_REGISTRY_20260626_093536.md",
+    "CONTROL_TOWER_POST_APPROVAL_WORKER_PROMPTS_20260626_094058.md"
+  ],
+  "requirements": [
+    {
+      "id": "R1",
+      "requirement": "Actual main screen root cause must be identified",
+      "status": "partially_proven_not_complete",
+      "currentEvidence": "UI147/UI148 identify aspect as contributor but not primary; primary remaining cause is missing original runtime UI_Dock/UI_MainPage form stack, CanvasHelper cascade, guarded active/sibling, UI_bg, mask/stencil, and dynamic values.",
+      "blockingEvidence": "UI148 requiredRuntimeFieldsCount=197, staticallyInferableNewFieldsCount=0, forbiddenGuessFieldsCount=197.",
+      "proofNeededForCompletion": "Approved original runtime snapshot/dump or user-supplied filled UI148 snapshot values, then candidate patch and reference capture validation."
+    },
+    {
+      "id": "R2",
+      "requirement": "Main screen must be corrected to match reference image",
+      "status": "not_complete",
+      "currentEvidence": "No scene patch applied in UI148; source-backed static patch candidates exhausted.",
+      "blockingEvidence": "UI148 staticPatchApplied=false; restoredClaim=false; validator UI missing runtime values=203.",
+      "proofNeededForCompletion": "Runtime-backed patch review, candidate patch, rendered capture matching C:\\Users\\godho\\.codex\\attachments\\e607fc34-b674-4516-b051-8d396cd6df06\\image-1.png."
+    },
+    {
+      "id": "R3",
+      "requirement": "Reference video 참고.mp4 should be auxiliary only",
+      "status": "satisfied_as_guardrail",
+      "currentEvidence": "Control reports and worker prompts repeatedly mark 참고.mp4 as auxiliary evidence only.",
+      "blockingEvidence": "",
+      "proofNeededForCompletion": "Maintain guardrail through final patch/capture validation."
+    },
+    {
+      "id": "R4",
+      "requirement": "Battle coordinates, route active state, sibling order, mask/stencil, TMP scale/autosize must be verified",
+      "status": "verified_as_blocked_not_patchable",
+      "currentEvidence": "B73/B74/B75 reviewed HUD/right rail/TMP/mask and generated runtime snapshot specs.",
+      "blockingEvidence": "B75 deduplicatedRuntimeFieldsCount=7337, requiredFieldCount=5133, componentRehydrationFieldCount=2204, sourceBackedStaticPatchCandidatesNow=0.",
+      "proofNeededForCompletion": "Approved B75 runtime snapshot values and subsequent source-backed patch review."
+    },
+    {
+      "id": "R5",
+      "requirement": "Battle screen must become actually playable",
+      "status": "not_complete",
+      "currentEvidence": "B72 map framing candidate validated only; no playable claim.",
+      "blockingEvidence": "B75 playableClaim=false; handlerLifecycleFieldCount=148; local executable xLua/GameEntry/ModulesInit runtime recovery not available.",
+      "proofNeededForCompletion": "Original runtime handler state or source-backed xLua/GameEntry/ModulesInit recovery, real input/handler validation, capture and interaction test."
+    },
+    {
+      "id": "R6",
+      "requirement": "Characters and battle list must include all real source-backed information",
+      "status": "partially_complete_data_report_not_playable",
+      "currentEvidence": "CHAR65 produced battle list rows=73 and ready_local=15; CHAR66 checked unresolved ids.",
+      "blockingEvidence": "CHAR66 sourceBackedAliasesFound=0; unresolved ids remain; exact 1036 battle actor bundle missing.",
+      "proofNeededForCompletion": "Authoritative DTMonster/DTmodel actor chains or explicit alias rules for unresolved enemies, and exact 1036 battle actor bundle or approved acquisition."
+    },
+    {
+      "id": "R7",
+      "requirement": "Four-chat control tower structure must be maintained",
+      "status": "satisfied_current_state",
+      "currentEvidence": "CONTROL_TOWER_THREAD_REGISTRY_20260626_093536.md maps control, battle, UI, and character threads.",
+      "blockingEvidence": "",
+      "proofNeededForCompletion": "Continue using existing thread IDs unless user explicitly asks to create or change threads."
+    },
+    {
+      "id": "R8",
+      "requirement": "No fake assets, screenshot paste, coordinate-only success, or unapproved runtime/package/xLua work",
+      "status": "satisfied_current_state",
+      "currentEvidence": "Latest control reports show runtimeInstrumentationUsed=false, packageImported=false, externalXluaImported=false, fakeValuesGenerated=false, command policy ok.",
+      "blockingEvidence": "",
+      "proofNeededForCompletion": "Maintain guardrails during future runtime-backed patch review and final verification."
+    }
+  ],
+  "validatorGate": {
+    "readyForPatchReview": false,
+    "approvalStillRequired": true,
+    "battleMissingRuntimeValues": 7337,
+    "uiMissingRuntimeValues": 203,
+    "runtimeValuesMissingTotal": 7540
+  },
+  "nextRequiredExternalInput": [
+    "Explicit approval for original runtime snapshot/dump using UI148 and B75 approval packets, or filled UI148/B75 runtime snapshot files with approval evidence.",
+    "Source-backed executable xLua/GameEntry/ModulesInit recovery material if runtime snapshot cannot be captured.",
+    "Authoritative actor bundle/DTMonster/DTmodel/alias evidence for missing 1036 and unresolved enemy ids."
+  ],
+  "commandPolicy": {
+    "rootCmdCount": 1,
+    "restoreToolsDirectCmdCount": 0,
+    "policyOk": true
+  }
+}

@@ -1,6 +1,6 @@
 # MainInterface 121 Verify Route SkeletonGraphic CanvasRenderer Texture Handoff And Clipping Triangulation Zong1 Result
 
-Generated: 2026-06-25 23:28:25 KST
+Generated: 2026-06-26 00:47:28 KST
 
 ## Verdict
 
@@ -82,7 +82,7 @@ zhuye_di1/zhuye_bian are confirmed pre-clipping attachments and should not be hi
 | --- | --- |
 | graphics capture reviewed | `C:\Users\godho\Downloads\girlswar\girlswar_maininterface_unity\Assets\RestoreCaptures\maininterface_route_spine_runtime_ui_material_bound_1680x720.png` |
 | new visual capture generated | `False` |
-| click validation generated | `2026-06-25 23:22:51` |
+| click validation generated | `2026-06-25 23:28:26` |
 | active/clickable/blocked/invoked | `24 / 24 / 0 / 24` |
 | root CMD count | `1` |
 | root CMDs | `00_COMMAND_CENTER.cmd` |

@@ -1,0 +1,11 @@
+﻿{
+    "generatedAt": "2026-06-26 02:08:15",
+    "scenePath": "Assets/Scenes/MainInterface_UI126_OldRootReferenceCandidate.unity",
+    "csv": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_maininterface_unity\\Assets\\RestoreData\\reports\\maininterface_128_oldroot_runtime_activity_text_tmp_click_validation.csv",
+    "json": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_maininterface_unity\\Assets\\RestoreData\\reports\\maininterface_128_oldroot_runtime_activity_text_tmp_click_validation_summary.json",
+    "totalButtons": 55,
+    "activeButtons": 45,
+    "activeInteractableButtons": 45,
+    "raycastClickableButtons": 43,
+    "raycastBlockedButtons": 2
+}

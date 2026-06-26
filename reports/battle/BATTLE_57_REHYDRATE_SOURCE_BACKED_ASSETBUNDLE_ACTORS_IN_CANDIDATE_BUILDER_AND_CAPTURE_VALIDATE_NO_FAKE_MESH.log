@@ -1,0 +1,8 @@
+BATTLE_57_REHYDRATE_SOURCE_BACKED_ASSETBUNDLE_ACTORS_IN_CANDIDATE_BUILDER_AND_CAPTURE_VALIDATE_NO_FAKE_MESH
+unityExitCode=0
+mappingRows=6
+rendererRows=3
+visibilityRows=3
+capturePixelSignalRows=3
+patchDecision=candidate_runtime_rehydrate_patch_no_fake_mesh
+isFinalRestoredBattleScreen=False

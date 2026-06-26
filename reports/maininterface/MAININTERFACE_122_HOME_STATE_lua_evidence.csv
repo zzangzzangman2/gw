@@ -1,0 +1,322 @@
+﻿file,line,text
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,6,"local be=require(""Modules/MainInterface/UI_MainPageActItem"")"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,7,"local ve=require(""Modules/MainInterface/UI_MainPageFaceActItem"")"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,106,InitRightNode()
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,107,btn_left.onClick:AddListener(onBtnLeft)
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,108,btn_right.onClick:AddListener(onBtnRight)
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,109,local t=UI_touchSpine:GetComponent(typeof(CS.YouYou.UIDragEvent))
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,111,ee=UI_heroSpine.transform.position
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,116,"LuaUtils.SetActive(btn_qinmi.transform,false)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,117,"LuaUtils.SetActive(node_renwu.transform,false)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,118,"LuaUtils.SetActive(btn_twitter.transform,false)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,119,"LuaUtils.SetActive(btn_discord.transform,false)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,120,"LuaUtils.SetActive(btn_beijing.transform,false)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,121,"LuaUtils.SetActive(btn_naver.transform,false)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,122,"local e=e:Find(""right/node_bottom/toogles/toggle3"")"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,123,"LuaUtils.SetActive(e,false)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,124,"LuaUtils.SetActive(mian_wanfa_item_3.transform,false)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,125,"LuaUtils.SetActive(mian_wanfa_item_4.transform,false)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,171,"LuaUtils.SetActive(showBannerDescNode.transform,n)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,172,"LuaUtils.SetActive(bg_dibu.transform,n)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,180,function InitRightNode()
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,185,worldwanfaBtn.onClick:AddListener(onBtnWorld)
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,186,local e=mian_wanfa_item_1:GetComponents()
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,187,"e[""wanfaBtn""].onClick:AddListener(onBtnAdventure)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,188,local e=mian_wanfa_item_2:GetComponents()
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,189,"e[""wanfaBtn""].onClick:AddListener(onBtnJinji)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,190,local e=mian_wanfa_item_3:GetComponents()
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,191,"e[""wanfaBtn""].onClick:AddListener(onBtnLimit)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,192,local e=mian_wanfa_item_4:GetComponents()
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,193,"e[""wanfaBtn""].onClick:AddListener(onBtnActJump)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,210,"LuaUtils.SetActive(guide_mask.transform,false)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,217,"LuaUtils.SetActive(p_changeBgHero,false)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,260,"EventSystem.AddListener(CommonEventId.OnHideMainPageHero,OnHideMainPageHero)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,267,GameTools.isWillCloseMainPage=false
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,276,ModulesInit.MainPageLimitMgr:InitData()
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,288,"LuaUtils.SetActive(guide_mask.transform,false)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,293,"LuaUtils.SetActive(guide_mask.transform,true)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,300,"LuaUtils.SetActive(llvChat.transform,GameFunction.IsFunctionUnLock(GameFunctionType.Chat))"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,353,"EventSystem.RemoveListener(CommonEventId.OnHideMainPageHero,OnHideMainPageHero)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,392,if ModulesInit.MainPageMgr.isFormEarthRoot then
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,394,if e==ModulesInit.MainPageMgr.playMainMapId then
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,395,if not ModulesInit.PhotoArtistMgr:getDataById(ModulesInit.MainPageMgr.playMainSaveId)then
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,411,if o(UIFormId.UI_MainPage)==false then
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,412,GameTools.CloseUIForm(UIFormId.UI_MainPage)
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,429,GameEntry.UI:HideUIForm(UIFormId.UI_MainPage)
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,431,GameEntry.UI:ShowUIForm(UIFormId.UI_MainPage)
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,451,"LuaUtils.SetActive(guide_mask.transform,e)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,457,"LuaUtils.SetActive(guide_mask.transform,false)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,460,ModulesInit.MainPageLimitMgr.enGameMainOnGuide=true
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,493,"LuaUtils.SetActive(fanhui_guide_shou.transform,false)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,521,"LuaUtils.SetActive(fanhui_guide_shou.transform,false)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,530,"LuaUtils.SetActive(fanhui_guide_shou.transform,true)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,539,"LuaUtils.SetActive(fanhui_guide_shou.transform,false)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,573,"LuaUtils.SetActive(im_beigingRed.transform,false)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,579,"LuaUtils.SetActive(im_beigingRed.transform,true)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,590,function OnHideMainPageHero(e)
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,596,"LuaUtils.SetActive(UI_heroSpine.transform,e)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,600,local e=ViewMgr:checkIsTopShowView(UIFormId.UI_MainPage)
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,633,if ModulesInit.MainPageLimitMgr.enGameMainOnGuide then
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,637,"LuaUtils.SetActive(guide_mask.transform,false)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,641,PlayerMgr:sendPlayerMainPage()
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,659,local t=ViewMgr:checkIsTopShowView(UIFormId.UI_MainPage)
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,666,if not ModulesInit.MainPageMgr.isCheckPopView then return end
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,668,if GameTools.isWillCloseMainPage then return end
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,670,local e=ViewMgr:checkIsTopShowView(UIFormId.UI_MainPage)
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,761,"LuaUtils.SetActive(btn_download.transform,e and GameTools:IsReview(true)==false)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,763,"LuaUtils.SetActive(btn_download.transform,e)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,770,"LuaUtils.SetActive(im_start.transform,e.isDownloadStop==false)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,771,"LuaUtils.SetActive(im_stop.transform,e.isDownloadStop)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,772,"LuaUtils.SetActive(p_download_redpoint.transform,e.isDownloadStop)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,775,"LuaUtils.SetActive(p_download_redpoint.transform,e.downloadComplete)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,776,"LuaUtils.SetActive(im_start.transform,true)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,777,"LuaUtils.SetActive(im_stop.transform,false)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,779,"LuaUtils.SetActive(p_download_redpoint.transform,true)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,784,"LuaUtils.SetActive(p_download_redpoint.transform,true)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,785,"LuaUtils.SetActive(im_start.transform,true)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,786,"LuaUtils.SetActive(im_stop.transform,false)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,790,"LuaUtils.SetActive(btn_download.transform,e.HideBubble==false and GameTools:IsReview(true)==false)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,793,"LuaUtils.SetActive(btn_download.transform,false)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,799,"LuaUtils.SetActive(root_noticeTween.transform,false)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,807,"LuaUtils.SetActive(root_taskNotice.transform,e)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,869,"LuaUtils.SetActive(o,true)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,876,"LuaUtils.SetActive(UIUtil.GetChild(a[""reward_group""],e-1),false)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,895,"LuaUtils.SetActive(e,true)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,1024,p[e]:SetActive(false)
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,1040,t:SetActive(true)
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,1043,t:SetActive(false)
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,1050,y[e]:SetActive(false)
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,1067,t:SetActive(true)
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,1070,t:SetActive(false)
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,1082,"LuaUtils.SetActive(faceGiftNode.transform,true)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,1085,"LuaUtils.SetActive(faceGiftNode.transform,false)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,1088,"LuaUtils.SetActive(faceGiftNode.transform,false)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,1091,"LuaUtils.SetActive(faceGiftNode.transform,false)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,1125,"LuaUtils.SetActive(im_youjian_bg.transform,GameTools:IsReview()==false)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,1126,"LuaUtils.SetActive(im_haoyou_bg.transform,GameTools:IsReview()==false)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,1127,"LuaUtils.SetActive(im_paihangbang_bg.transform,GameTools:IsReview()==false and GameFunction.IsFunctionUnLock(GameFunctionType.Rank))"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,1128,"LuaUtils.SetActive(im_funhandbook_bg.transform,GameTools:IsReview()==false and GameFunction.IsFunctionUnLock(GameFunctionType.FunHandBook))"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,1132,"LuaUtils.SetActive(node_renwu.transform,false)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,1137,"LuaUtils.SetActive(btn_shangdian.transform,false)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,1141,"LuaUtils.SetActive(openUnlockTips.transform,false)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,1144,"LuaUtils.SetActive(openUnlockTips.transform,true)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,1162,"LuaUtils.SetActive(bg_guanzhi.transform,false)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,1165,"LuaUtils.SetActive(bg_guanzhi.transform,true)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,1171,"LuaUtils.SetActive(im_redpoint_name.transform,ChangeNameStatus())"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,1256,"LuaUtils.SetActive(llv_activity_pageview.transform,t>0)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,1258,"LuaUtils.SetActive(showBannerDescNode.transform,false)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,1259,"LuaUtils.SetActive(bg_dibu.transform,false)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,1278,"LuaUtils.SetActive(e,true)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,1287,"LuaUtils.SetActive(img_actBanner_nun_bg.transform,false)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,1295,"LuaUtils.SetActive(img_actBanner_nun_bg.transform,true)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,1322,"LuaUtils.SetActive(node_negative,true)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,1324,"LuaUtils.SetActive(node_negative,false)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,1328,local e=mian_wanfa_item_1:GetComponents()
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,1329,"LuaUtils.SetImageSprite(e[""wanfaBgImg""],Y[1].bgImg)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,1331,local e=mian_wanfa_item_2:GetComponents()
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,1332,"LuaUtils.SetImageSprite(e[""wanfaBgImg""],Y[2].bgImg)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,1341,"local a,t=ModulesInit.MainPageLimitMgr:checkCanShowLimitPage()"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,1347,local e=mian_wanfa_item_3:GetComponents()
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,1349,"LuaUtils.SetActive(mian_wanfa_item_3.transform,false)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,1354,"LuaUtils.SetActive(mian_wanfa_item_3.transform,true)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,1355,local t=ModulesInit.MainPageLimitMgr:getLimitTimeCfgById(t)
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,1356,local a=ModulesInit.MainPageLimitMgr:GetLimitWanfaImg(t)
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,1357,"LuaUtils.SetImageSprite(e[""wanfaBgImg""],a)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,1358,local a=ModulesInit.MainPageLimitMgr:GetLimitTitleText(t)
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,1360,"LuaUtils.SetActive(e[""text_wanfaTips""].transform,false)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,1361,"LuaUtils.SetActive(e[""im_bg""].transform,false)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,1362,local t=ModulesInit.MainPageLimitMgr:GetLimitTipText(t)
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,1364,"LuaUtils.SetActive(e[""text_wanfaTips""].transform,true)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,1365,"LuaUtils.SetTextMeshText(e[""text_wanfaTips""],t)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,1366,"LuaUtils.SetActive(e[""im_bg""].transform,true)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,1371,local e=ModulesInit.MainPageLimitMgr:checkCanShowActJumpPage()
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,1372,local t=mian_wanfa_item_4:GetComponents()
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,1374,"LuaUtils.SetActive(mian_wanfa_item_4.transform,false)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,1379,"LuaUtils.SetActive(mian_wanfa_item_4.transform,true)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,1380,"LuaUtils.SetImageSprite(t[""wanfaBgImg""],e.showIcon)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,1383,"LuaUtils.SetTextMeshText(t[""text_wanfaTips""],a)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,1384,"LuaUtils.SetActive(t[""un_MainInterface_fire""].transform,e.activityId==ModulesInit.FullServerBattleYearMgr.ACT_ID)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,1420,"LuaUtils.SetActive(e.transform,false)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,1423,"local t=""text_wanfaTips"""
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,1425,t='toggle_node/text_wanfaTips'
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,1428,"LuaUtils.SetActive(e.transform,true)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,1433,"ErrInfoCollectMgr:AddInfo(""default"",""UI_MainPage---"",""SetFuncShowStatus------""..tostring(t))"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,1437,"LuaUtils.SetActive(a.transform,true)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,1442,"ErrInfoCollectMgr:AddInfo(""default"",""UI_MainPage---"",""SetFuncShowStatus------""..tostring(t))"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,1445,"LuaUtils.SetActive(e.transform,false)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,1463,"LuaUtils.SetActive(selfEnv[""toggle""..e],false)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,1487,"LuaUtils.SetActive(selfEnv[""toggle7""],true)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,1492,local e=PlayerMgr.mainShowHeroList[t]
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,1494,e=PlayerMgr.mainShowHeroList[1]
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,1506,"UI_heroSpine.transform,"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,1519,"LuaUtils.SetActive(UI_touchSpine.transform,true)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,1522,"LuaUtils.SetActive(UI_touchSpine.transform,false)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,1533,"LuaUtils.SetActive(UI_touchSpine.transform,false)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,1545,"UI_heroSpine,"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,1558,"LuaUtils.SetActive(UI_touchSpine.transform,true)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,1560,"GameTools:LoadSpriteWithFullPath(UI_bg,e,true)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,1562,"LuaUtils.SetActive(btn_marry.transform,false)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,1563,"LuaUtils.SetActive(btn_qinmi.transform,false)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,1564,"LuaUtils.SetActive(btn_qinmi2.transform,false)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,1565,"LuaUtils.SetActive(btn_watch2.transform,false)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,1566,"LuaUtils.SetActive(btn_watch.transform,false)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,1593,"LuaUtils.SetActive(btn_qinmi.transform,true)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,1594,local e=PlayerMgr.mainShowHeroList[t]
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,1601,"LuaUtils.SetActive(btn_qinmi2.transform,true)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,1622,local e=PlayerMgr.mainShowHeroList[t]
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,1625,"LuaUtils.SetActive(btn_watch.transform,true)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,1626,"LuaUtils.SetActive(btn_watch2.transform,true)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,1631,"LuaUtils.SetActive(btn_marry.transform,true)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,1633,"LuaUtils.SetActive(btn_left.transform,#PlayerMgr.mainShowHeroList>1)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,1634,"LuaUtils.SetActive(btn_right.transform,#PlayerMgr.mainShowHeroList>1)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,1640,"UIUtil.GetPlayerLive2dModel(a,UI_heroSpine,nil,function(a,o)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,1658,if GameTools.isSetActiveMode then
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,1710,D:PushSample(D.ESampleType.UI_MainPage_RefreshRedPoint)
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,1712,D:PopSample(D.ESampleType.UI_MainPage_RefreshRedPoint)
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,1721,"LuaUtils.SetActive(im_redpoint_haoyou.transform,true)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,1723,"LuaUtils.SetActive(im_redpoint_haoyou.transform,false)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,1756,"LuaUtils.SetActive(im_redpoint_vip.transform,true)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,1758,"LuaUtils.SetActive(im_redpoint_vip.transform,false)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,1763,local t=mian_wanfa_item_1:GetComponents()
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,1765,"LuaUtils.SetActive(t[""im_new""],false)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,1766,"LuaUtils.SetActive(t[""im_redpoint""],false)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,1771,"LuaUtils.SetActive(t[""im_new""],e)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,1774,"LuaUtils.SetActive(t[""im_redpoint""],e)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,1777,local t=mian_wanfa_item_2:GetComponents()
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,1779,"LuaUtils.SetActive(t[""im_redpoint""],false)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,1780,"LuaUtils.SetActive(t[""im_new""],false)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,1784,"LuaUtils.SetActive(t[""im_new""],e)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,1787,"LuaUtils.SetActive(t[""im_redpoint""],e)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,1791,"LuaUtils.SetActive(world_node_red.transform,RedPointMgr.checkFightRedPoint())"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,1792,"LuaUtils.SetActive(im_redpoint_line.transform,RedPointMgr:GetLineRedStatus())"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,1794,"LuaUtils.SetActive(im_redpoint_funhandbook.transform,e)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,1798,"LuaUtils.SetActive(im_camp_can_compose.transform,e)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,1801,"LuaUtils.SetActive(im_camp_red_point.transform,e)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,1803,"LuaUtils.SetActive(im_camp_underwear_gift.transform,not e and t)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,1804,"LuaUtils.SetActive(im_camp_shengji.transform,false)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,1806,"LuaUtils.SetActive(im_camp_shengji.transform,true and HeroMgr.canComposeHeroCount==0)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,1810,"LuaUtils.SetActive(btnToggle3.transform.parent:Find(""im_red""),CheckShouhuBtnRedDot())"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,1811,"LuaUtils.SetActive(guild_red_point.transform,RedPointMgr:checkGuildRedPoint())"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,1814,"LuaUtils.SetActive(im_city_buildable.transform,false)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,1815,"LuaUtils.SetActive(im_city_qipaoup.transform,false)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,1816,"LuaUtils.SetActive(im_city_full.transform,false)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,1817,"LuaUtils.SetActive(city_red_point.transform,false)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,1819,"LuaUtils.SetActive(im_city_buildable.transform,e)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,1822,"LuaUtils.SetActive(im_city_qipaoup.transform,e)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,1826,"LuaUtils.SetActive(im_city_full.transform,e)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,1833,"LuaUtils.SetActive(city_red_point.transform,e)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,1843,"LuaUtils.SetActive(city_red_point.transform,e)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,1846,"LuaUtils.SetActive(im_fuhu_red.transform,AmuletMgr:CheckRedPoint())"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,1847,"LuaUtils.SetActive(im_summonpet_red_point.transform,RedPointMgr:CheckSummonPetRedPoint())"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,1876,"LuaUtils.SetActive(spine_bag_full.transform,e)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,1881,"LuaUtils.SetActive(im_bag_red.transform,false)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,1883,"LuaUtils.SetActive(im_bag_red.transform,CheckItemAir())"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,1901,"LuaUtils.SetActive(im_camp_new.transform,e and HeroMgr.canComposeHeroCount==0)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,1904,"LuaUtils.SetActive(im_guild_can_join.transform,e)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,1905,"LuaUtils.SetActive(im_guild_new.transform,not e and t)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,1906,"LuaUtils.SetActive(im_summonpet_new.transform,RedPointMgr:checkSummonPetNew())"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,1935,function changeBg(e)
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,1936,if#PlayerMgr.mainShowHeroList>1 and e~=0 and E then
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,1938,if t>#PlayerMgr.mainShowHeroList then
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,1941,t=#PlayerMgr.mainShowHeroList
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,1943,UI_heroSpine.transform:DOKill()
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,1948,UI_heroSpine.transform.position=ee
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,1949,if PlayerMgr.mainShowHeroList[t].isUnderwear==false then
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,1954,"LuaUtils.SetActive(p_changeBgHero.transform,false)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,1955,"LuaUtils.SetActive(p_changeBgHero.transform,true)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,1964,UI_heroSpine.transform.position=ee
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,1973,local a=PlayerMgr.mainShowHeroList[t]
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,1995,local a=PlayerMgr.mainShowHeroList[t]
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,2033,local e=PlayerMgr.mainShowHeroList[t]
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,2062,local e=PlayerMgr.mainShowHeroList[t]
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,2077,if e~=UIFormId.UI_MainPage and e~=UIFormId.UI_DrawMarquee and e~=UIFormId.UI_PlayBgDownload then
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,2090,"for e=1,LuaUtils.GetChildrenCount(UI_heroSpine)do"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,2091,"local e=UIUtil.GetChild(UI_heroSpine,e-1)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,2111,"LuaUtils.SetActive(a[""im_newstar""].transform,false)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,2116,"LuaUtils.SetActive(a[""im_newstar""].transform,true)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,2125,"LuaUtils.SetActive(showBannerDescNode.transform,n)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,2126,"LuaUtils.SetActive(bg_dibu.transform,n)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,2131,"LuaUtils.SetActive(img_actBannerJiantouXia.transform,false)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,2132,"LuaUtils.SetActive(img_actBannerJiantouShang.transform,false)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,2135,"LuaUtils.SetActive(img_actBannerJiantouXia.transform,true)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,2137,"LuaUtils.SetActive(img_actBannerJiantouShang.transform,true)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,2139,"LuaUtils.SetActive(img_actBannerJiantouXia.transform,true)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,2140,"LuaUtils.SetActive(img_actBannerJiantouShang.transform,true)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,2162,"LuaUtils.SetActive(a[""im_redpoint""].transform,ActMgr:CheckRedPoint(t))"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,2163,"LuaUtils.SetActive(a[""text_actTime""].transform,false)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,2168,"LuaUtils.SetActive(a[""text_actTime""].transform,true)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,2174,"LuaUtils.SetActive(a[""text_actTime""].transform,false)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,2183,"LuaUtils.SetActive(showBannerDescNode.transform,n)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,2184,"LuaUtils.SetActive(bg_dibu.transform,n)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,2201,"LuaUtils.SetActive(showBannerDescNode.transform,n)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,2349,"LuaUtils.SetActive(img_actBannerJiantouXia.transform,false)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,2350,"LuaUtils.SetActive(img_actBannerJiantouShang.transform,false)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,2352,"LuaUtils.SetActive(img_actBannerJiantouXia.transform,true)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,2354,"LuaUtils.SetActive(img_actBannerJiantouShang.transform,true)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,2356,"LuaUtils.SetActive(img_actBannerJiantouXia.transform,true)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,2357,"LuaUtils.SetActive(img_actBannerJiantouShang.transform,true)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,2377,"LuaUtils.SetActive(p_chat_private.transform,e==PROTO_ENUM.ENUM_CHAT_TYPE.CHAT_PRIVATE)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,2378,"LuaUtils.SetActive(img_chat_type.transform,e~=PROTO_ENUM.ENUM_CHAT_TYPE.CHAT_PRIVATE)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,2429,"e,o=ChatMgr:analysisMainPageMsg(a.msg)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,2616,"LuaUtils.SetActive(llvChat.transform,true)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,2618,"LuaUtils.SetActive(llvChat.transform,false)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,2630,"LuaUtils.SetActive(node_friday.transform,e)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,2631,"LuaUtils.SetActive(im_redpoint_shangdian.transform,RedPointMgr:checkVipShopPoint())"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,2638,local t=PlayerMgr.mainShowHeroList[t]
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,2640,t=PlayerMgr.mainShowHeroList[1]
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,2675,ModulesInit.MainPageLimitMgr.mFlowerServerInfo=e
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,2676,ModulesInit.MainPageLimitMgr.mFlowerRaceInfo=e.raceInfo
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,2687,"LuaUtils.SetActive(autoHelper_Root.transform,false)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,2688,"LuaUtils.SetActive(btn_show.transform,true)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,2694,"LuaUtils.SetActive(btn_show.transform,false)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,2704,local e=PlayerMgr.mainShowHeroList[t]
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,2728,local e=PlayerMgr.mainShowHeroList[t]
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,2787,if#PlayerMgr.mainShowHeroList<=1 then
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,2790,changeBg(1)
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,2793,if#PlayerMgr.mainShowHeroList<=1 then
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,2796,changeBg(-1)
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,2799,local e=PlayerMgr.mainShowHeroList[t]
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,2858,"local e,t=ModulesInit.MainPageLimitMgr:checkCanShowLimitPage()"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,2860,ModulesInit.MainPageLimitMgr:LimitClickHandler(t)
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,2864,local e=ModulesInit.MainPageLimitMgr:GetCanMainActivityJump()
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,2871,"LuaUtils.SetActive(showBannerDescNode.transform,n)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,2872,"LuaUtils.SetActive(bg_dibu.transform,n)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,2882,"LuaUtils.SetActive(img_actBannerJiantouXia.transform,false)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,2883,"LuaUtils.SetActive(img_actBannerJiantouShang.transform,false)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,2886,"LuaUtils.SetActive(img_actBannerJiantouXia.transform,true)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,2888,"LuaUtils.SetActive(img_actBannerJiantouShang.transform,true)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,2890,"LuaUtils.SetActive(img_actBannerJiantouXia.transform,true)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,2891,"LuaUtils.SetActive(img_actBannerJiantouShang.transform,true)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,2976,"LuaUtils.SetActive(autoHelper_Root.transform,GameFunction.IsFunctionUnLock(GameFunctionType.AutoHelper))"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,2983,"LuaUtils.SetActive(autoHelperRedDot.transform,ModulesInit.AutoHelperOtherMgr:GetAutoHelperRed())"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,3030,"LuaUtils.SetActive(autoHelper_Root.transform,false)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,3102,"LuaUtils.SetActive(festival_bottom.transform,e)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,3103,"LuaUtils.SetActive(festival_liaotian.transform,e)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-6351603197391775840_UI_MainPage_security_xor_raw.lua,3114,"LuaUtils.SetActive(btn_temporary_buff.transform,t)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-7919191389644174794_UI_MainPageFaceActItem_security_xor_raw.lua,1,"local e=Class(""UI_MainPageFaceActItem"",{})"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-7919191389644174794_UI_MainPageFaceActItem_security_xor_raw.lua,75,"LuaUtils.SetActive(self._bicoms[""txt_act_leftTime""].transform,false)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-7919191389644174794_UI_MainPageFaceActItem_security_xor_raw.lua,86,"LuaUtils.SetActive(self._bicoms[""txt_act_leftTime""].transform,true)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-7919191389644174794_UI_MainPageFaceActItem_security_xor_raw.lua,115,"LuaUtils.SetActive(self._bicoms[""txt_act_leftTime""].transform,true)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-7919191389644174794_UI_MainPageFaceActItem_security_xor_raw.lua,127,"LuaUtils.SetActive(self._bicoms[""txt_act_leftTime""].transform,true)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-7919191389644174794_UI_MainPageFaceActItem_security_xor_raw.lua,139,"LuaUtils.SetActive(self._bicoms[""txt_act_leftTime""].transform,true)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-7919191389644174794_UI_MainPageFaceActItem_security_xor_raw.lua,153,"LuaUtils.SetActive(self._bicoms[""txt_act_leftTime""].transform,true)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-7919191389644174794_UI_MainPageFaceActItem_security_xor_raw.lua,156,"LuaUtils.SetActive(self._bicoms[""txt_act_leftTime""].transform,true)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-7919191389644174794_UI_MainPageFaceActItem_security_xor_raw.lua,173,"LuaUtils.SetActive(self._bicoms[""txt_act_leftTime""].transform,true)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-7919191389644174794_UI_MainPageFaceActItem_security_xor_raw.lua,190,"LuaUtils.SetActive(self._bicoms[""txt_act_leftTime""].transform,true)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-7919191389644174794_UI_MainPageFaceActItem_security_xor_raw.lua,191,if e.showLeftTimeInMainPage==true then
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-7919191389644174794_UI_MainPageFaceActItem_security_xor_raw.lua,234,function e:SetActive(e)
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-7919191389644174794_UI_MainPageFaceActItem_security_xor_raw.lua,235,"LuaUtils.SetActive(self._trans.transform,e)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-7919191389644174794_UI_MainPageFaceActItem_security_xor_raw.lua,238,"LuaUtils.SetActive(self._bicoms[""im_qipao1""].transform,false)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-7919191389644174794_UI_MainPageFaceActItem_security_xor_raw.lua,239,"LuaUtils.SetActive(self._bicoms[""root_red_special""].transform,false)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-7919191389644174794_UI_MainPageFaceActItem_security_xor_raw.lua,242,"LuaUtils.SetActive(self._bicoms[""im_qipao1""].transform,ActMgr:CheckRedPoint(self._actId,true,true))"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-7919191389644174794_UI_MainPageFaceActItem_security_xor_raw.lua,244,"LuaUtils.SetActive(self._bicoms[""root_red_special""].transform,true)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-8694572285188909557_UI_MainPageActItem_security_xor_raw.lua,1,"local e=Class(""UI_MainPageActItem"",{})"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-8694572285188909557_UI_MainPageActItem_security_xor_raw.lua,75,function e:SetActive(e)
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-8694572285188909557_UI_MainPageActItem_security_xor_raw.lua,76,"LuaUtils.SetActive(self._trans.transform,e)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-8694572285188909557_UI_MainPageActItem_security_xor_raw.lua,79,"LuaUtils.SetActive(self._bicoms[""im_qipao1""].transform,false)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-8694572285188909557_UI_MainPageActItem_security_xor_raw.lua,80,"LuaUtils.SetActive(self._bicoms[""root_red_special""].transform,false)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-8694572285188909557_UI_MainPageActItem_security_xor_raw.lua,88,"LuaUtils.SetActive(self._bicoms[""root_red_special""].transform,true)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-8694572285188909557_UI_MainPageActItem_security_xor_raw.lua,94,"LuaUtils.SetActive(self._bicoms[""im_qipao1""].transform,true)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-8694572285188909557_UI_MainPageActItem_security_xor_raw.lua,99,"LuaUtils.SetActive(self._bicoms[""im_qipao1""].transform,true)"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-8694572285188909557_UI_MainPageActItem_security_xor_raw.lua,103,"LuaUtils.SetActive(self._bicoms[""im_qipao1""].transform,ActMgr:CheckRedPoint(self._actId,true,true))"
+C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua\-8694572285188909557_UI_MainPageActItem_security_xor_raw.lua,106,"LuaUtils.SetActive(self._bicoms[""root_red_special""].transform,true)"

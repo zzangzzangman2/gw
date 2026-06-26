@@ -1,0 +1,48 @@
+{
+  "prefix": "BATTLE_64_TIMELINE_PLAYABLEASSET_COMPATIBILITY_AND_ORIGINAL_BINDING_SOURCE_TRACE_NO_PATCH",
+  "generatedAt": "2026-06-26T05:44:15",
+  "restoredClaim": false,
+  "playableClaim": false,
+  "isFinalRestoredBattleScreen": false,
+  "patchApplied": false,
+  "sceneSaved": false,
+  "xLuaRuntimeUsed": false,
+  "externalPackageImported": false,
+  "runtimeInstrumentationUsed": false,
+  "sourceBackedSkillRowsChecked": 12,
+  "playableAssetTypeMismatchRows": 12,
+  "timelinePackageCompatibilityFinding": "timeline_package_and_timelineasset_type_absent_in_restored_editor_but_bundles_serialize_timelineasset_monoscript",
+  "bundledTimelineAssetRows": 12,
+  "originalBindingEvidenceRows": 147,
+  "recommendedDecision": "safe_no_patch_report_only",
+  "nextBlocker": "source_compatible_unity_timeline_runtime_package_or_original_timelineeffect_playabledirector_binding_context_required_plus_xlua_handler_and_full_payload_gaps",
+  "guardrailsTouched": {
+    "fakeTimelineCreated": false,
+    "fakeBindingCreated": false,
+    "fakeHandlerCreated": false,
+    "patchApplied": false,
+    "sceneSaved": false,
+    "xLuaRuntimeUsed": false,
+    "externalPackageImported": false,
+    "runtimeInstrumentationUsed": false,
+    "mainInterfaceTouched": false
+  },
+  "commandPolicy": {
+    "rootCmdCount": 1,
+    "rootCmdFiles": [
+      "C:\\Users\\godho\\Downloads\\girlswar\\00_COMMAND_CENTER.cmd"
+    ],
+    "restoreToolsDirectCmdCount": 0,
+    "restoreToolsDirectCmdFiles": []
+  },
+  "outputs": {
+    "resultMd": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_64_TIMELINE_PLAYABLEASSET_COMPATIBILITY_AND_ORIGINAL_BINDING_SOURCE_TRACE_NO_PATCH_RESULT.md",
+    "resultJson": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_64_TIMELINE_PLAYABLEASSET_COMPATIBILITY_AND_ORIGINAL_BINDING_SOURCE_TRACE_NO_PATCH_RESULT.json",
+    "compatibilityCsv": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_64_TIMELINE_PLAYABLEASSET_COMPATIBILITY_AND_ORIGINAL_BINDING_SOURCE_TRACE_NO_PATCH_UNITY_PACKAGE_TYPE_IDENTITY_COMPATIBILITY_MATRIX.csv",
+    "bundledTimelineAssetMatrixCsv": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_64_TIMELINE_PLAYABLEASSET_COMPATIBILITY_AND_ORIGINAL_BINDING_SOURCE_TRACE_NO_PATCH_BUNDLED_TIMELINE_ASSET_ASSIGNED_TYPE_CLASS_MATRIX.csv",
+    "originalBindingSourceEvidenceCsv": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_64_TIMELINE_PLAYABLEASSET_COMPATIBILITY_AND_ORIGINAL_BINDING_SOURCE_TRACE_NO_PATCH_ORIGINAL_BINDING_SOURCE_EVIDENCE_MATRIX.csv",
+    "decisionNextActionCsv": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_64_TIMELINE_PLAYABLEASSET_COMPATIBILITY_AND_ORIGINAL_BINDING_SOURCE_TRACE_NO_PATCH_DECISION_NEXT_ACTION_MATRIX.csv",
+    "unityLog": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_64_TIMELINE_PLAYABLEASSET_COMPATIBILITY_AND_ORIGINAL_BINDING_SOURCE_TRACE_NO_PATCH_UNITY.log",
+    "log": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_64_TIMELINE_PLAYABLEASSET_COMPATIBILITY_AND_ORIGINAL_BINDING_SOURCE_TRACE_NO_PATCH.log"
+  }
+}

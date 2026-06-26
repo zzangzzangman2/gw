@@ -1,0 +1,5 @@
+decision,recommended,why,patchAllowedNow,nextAction
+aspect_correct_crop_generated,True,A visual crop/guide now exists for the 2.24:1 reference content rect without mutating the Unity scene.,False,use crop artifacts to separate visible aspect error from payload/route/runtime gaps
+do_not_claim_real_aspect_capture_yet,True,"Cropping an existing 16:9 capture is analysis evidence, not a true reference-aspect GameView/camera capture.",False,produce a source-backed reference-aspect render/capture before coordinate patching
+full_actor_card_payload_still_required,True,BATTLE57 actor visibility is only a local subset; bottom card payload still lacks the complete source-backed five-card/1036 state.,False,continue exact 1036 and unresolved enemy/source payload tracing
+route_tmp_mask_patch_deferred,True,"Focused route/TMP/mask rows are exported, but field changes need source-backed runtime or exact prefab evidence.",False,derive exact route active/sibling/mask/TMP deltas only after aspect-correct capture/source evidence

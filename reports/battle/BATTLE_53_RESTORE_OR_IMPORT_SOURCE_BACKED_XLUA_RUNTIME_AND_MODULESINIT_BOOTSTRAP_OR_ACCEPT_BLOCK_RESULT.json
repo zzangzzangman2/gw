@@ -1,0 +1,128 @@
+{
+  "generatedAt": "2026-06-26T02:38:40",
+  "verdict": "accepted_block_no_source_backed_xlua_runtime_available_locally",
+  "visual_status": "xlua_runtime_inventory_complete_no_fake_handler_patch",
+  "isFinalRestoredBattleScreen": false,
+  "patchDecision": "blocked_no_patch",
+  "sourceBackedImportableEditorRuntimeCount": 0,
+  "classificationCounts": {
+    "native_player_runtime_not_editor_importable": 1,
+    "non_source_backed_external_package_option_requires_user_approval": 1,
+    "not_found": 1915,
+    "source_backed_type_signature_only_not_executable": 9138
+  },
+  "b52Carryover": {
+    "sourceBackedBridgeStillPresent": {
+      "luaForm": 1,
+      "luaUnit": 2,
+      "luaComBinder": 1,
+      "uiEventListener": 1
+    },
+    "listenerBoundCount": 0,
+    "luaLifecycleExecutedCount": 0,
+    "directGraphicTargetIncludedB51Carryover": 5,
+    "eventSystemTargetIncludedB51CarryoverForced": 5,
+    "correctedCarryover": "BATTLE52 result JSON now has bridge counts; editmode JSON remains corroborating evidence."
+  },
+  "buttonRowsCarriedFromB52": [
+    {
+      "buttonName": "btnAuto",
+      "luaFile": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_50_DECODED_MAINCITY_LUA\\874003978109174219_UI_NormalBattle.lua",
+      "luaLines": "86-110",
+      "handlerPath": "UI_NormalBattle.OnInit btnAuto closure -> ModulesInit.ProcedureNormalBattle.ChangeToAuto(true)/ChangeToManual",
+      "luaLifecycleExecuted": "False",
+      "listenerBound": "False",
+      "eventSystemTargetIncludedEditBefore": "False",
+      "eventSystemTargetIncludedPlayMode": "False",
+      "eventSystemTargetIncludedForced": "True",
+      "directGraphicTargetIncluded": "True",
+      "missingGlobalCsTypeMethodObject": "XLua.LuaEnv; GameEntry.Lua/LuaManager.LoadUIScript; ModulesInit.ProcedureNormalBattle; GameFunction/GameFunctionType; ModulesInit.PhotoArtistMgr; LuaUtils",
+      "handlerExecution": "blocked_missing_xlua_runtime_and_modulesinit_bootstrap",
+      "patchDecision": "blocked_no_patch_no_fake_handler"
+    },
+    {
+      "buttonName": "btnBuff",
+      "luaFile": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_50_DECODED_MAINCITY_LUA\\874003978109174219_UI_NormalBattle.lua",
+      "luaLines": "180-184, 1446-1452",
+      "handlerPath": "UI_NormalBattle.OnInit btnBuff closure -> ShowBuffView(f==false)",
+      "luaLifecycleExecuted": "False",
+      "listenerBound": "False",
+      "eventSystemTargetIncludedEditBefore": "False",
+      "eventSystemTargetIncludedPlayMode": "False",
+      "eventSystemTargetIncludedForced": "True",
+      "directGraphicTargetIncluded": "True",
+      "missingGlobalCsTypeMethodObject": "XLua.LuaEnv; GameEntry.Lua/LuaManager.LoadUIScript; LuaUtils; ModulesInit.ProcedureNormalBattle:GetAllBuffIconShowMap for opened buff view",
+      "handlerExecution": "blocked_missing_xlua_runtime_and_modulesinit_bootstrap",
+      "patchDecision": "blocked_no_patch_no_fake_handler"
+    },
+    {
+      "buttonName": "btnTwoSpeed",
+      "luaFile": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_50_DECODED_MAINCITY_LUA\\874003978109174219_UI_NormalBattle.lua",
+      "luaLines": "111-131; ProcedureNormalBattle 933-947",
+      "handlerPath": "UI_NormalBattle.OnInit btnTwoSpeed closure -> ModulesInit.ProcedureNormalBattle.SetGameSpeed",
+      "luaLifecycleExecuted": "False",
+      "listenerBound": "False",
+      "eventSystemTargetIncludedEditBefore": "False",
+      "eventSystemTargetIncludedPlayMode": "False",
+      "eventSystemTargetIncludedForced": "True",
+      "directGraphicTargetIncluded": "True",
+      "missingGlobalCsTypeMethodObject": "XLua.LuaEnv; GameEntry.Lua/LuaManager.LoadUIScript; ModulesInit.ProcedureNormalBattle; SaveMgr; PlayerMgr; GameTools; SetTimeScaleType; LuaUtils",
+      "handlerExecution": "blocked_missing_xlua_runtime_and_modulesinit_bootstrap",
+      "patchDecision": "blocked_no_patch_no_fake_handler"
+    },
+    {
+      "buttonName": "btnFastSkill",
+      "luaFile": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_50_DECODED_MAINCITY_LUA\\874003978109174219_UI_NormalBattle.lua",
+      "luaLines": "132-146, 690-699; ProcedureNormalBattle 964-974",
+      "handlerPath": "UI_NormalBattle.OnInit btnFastSkill closure -> ChangeGameFastSkill + CheckFastSkill",
+      "luaLifecycleExecuted": "False",
+      "listenerBound": "False",
+      "eventSystemTargetIncludedEditBefore": "False",
+      "eventSystemTargetIncludedPlayMode": "False",
+      "eventSystemTargetIncludedForced": "True",
+      "directGraphicTargetIncluded": "True",
+      "missingGlobalCsTypeMethodObject": "XLua.LuaEnv; GameEntry.Lua/LuaManager.LoadUIScript; ModulesInit.ProcedureNormalBattle; SaveMgr; PlayerMgr; GameFunction/GameFunctionType; LuaUtils",
+      "handlerExecution": "blocked_missing_xlua_runtime_and_modulesinit_bootstrap",
+      "patchDecision": "blocked_no_patch_no_fake_handler"
+    },
+    {
+      "buttonName": "btn_box",
+      "luaFile": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_50_DECODED_MAINCITY_LUA\\8374052518232552317_UI_BattleBoxPage.lua",
+      "luaLines": "149-178; UI_Battle3DUI 3-20",
+      "handlerPath": "UI_BattleBoxPage.GenBox -> CS.YouYou.UIEventListener.onClick reward animation",
+      "luaLifecycleExecuted": "False",
+      "listenerBound": "False",
+      "eventSystemTargetIncludedEditBefore": "False",
+      "eventSystemTargetIncludedPlayMode": "False",
+      "eventSystemTargetIncludedForced": "True",
+      "directGraphicTargetIncluded": "True",
+      "missingGlobalCsTypeMethodObject": "XLua.LuaEnv; UI_Battle3DUI LuaUnit Init/Open; UI_BattleBoxPage LuaUnit Open; LuaComponentBinder.GetComponents; ModulesInit.ProcedureNormalBattle.dropBoxData/GetWaveData; UIUtil; DOTween; GameEntry.CameraCtrl",
+      "handlerExecution": "blocked_missing_xlua_runtime_and_modulesinit_bootstrap",
+      "patchDecision": "blocked_no_patch_no_fake_handler"
+    }
+  ],
+  "outputs": {
+    "report": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_53_RESTORE_OR_IMPORT_SOURCE_BACKED_XLUA_RUNTIME_AND_MODULESINIT_BOOTSTRAP_OR_ACCEPT_BLOCK_RESULT.md",
+    "json": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_53_RESTORE_OR_IMPORT_SOURCE_BACKED_XLUA_RUNTIME_AND_MODULESINIT_BOOTSTRAP_OR_ACCEPT_BLOCK_RESULT.json",
+    "importCandidatesCsv": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_53_RESTORE_OR_IMPORT_SOURCE_BACKED_XLUA_RUNTIME_AND_MODULESINIT_BOOTSTRAP_OR_ACCEPT_BLOCK_IMPORT_CANDIDATES.csv",
+    "bootstrapDependencySchemaCsv": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_53_RESTORE_OR_IMPORT_SOURCE_BACKED_XLUA_RUNTIME_AND_MODULESINIT_BOOTSTRAP_OR_ACCEPT_BLOCK_BOOTSTRAP_DEPENDENCY_SCHEMA.csv",
+    "bootstrapDependencySchemaJson": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_53_RESTORE_OR_IMPORT_SOURCE_BACKED_XLUA_RUNTIME_AND_MODULESINIT_BOOTSTRAP_OR_ACCEPT_BLOCK_BOOTSTRAP_DEPENDENCY_SCHEMA.json"
+  },
+  "nextBlocker": "USER_DECISION_OR_SOURCE_RUNTIME_REQUIRED_FOR_XLUA_GAMEENTRY_BOOTSTRAP",
+  "allowedNextOptions": [
+    "Provide original xLua/GameEntry/LuaManager source or editor-compatible binaries from the same game/client.",
+    "Explicitly approve a non-source-backed external xLua package experiment.",
+    "Keep battle work blocked at source-backed runtime absence and continue non-runtime evidence tasks."
+  ],
+  "notes": [
+    "No fake onClick, fake UIEventListener delegate, fake gameplay handler, overlay, screenshot paste, or external package import was added.",
+    "DummyDll/IL2CPP dump artifacts are source-backed signatures, not executable runtime.",
+    "global-metadata.dat/player native files are source-backed runtime evidence, not editor-importable managed xLua runtime."
+  ],
+  "rootCmdCount": 1,
+  "rootCmdFiles": [
+    "C:\\Users\\godho\\Downloads\\girlswar\\00_COMMAND_CENTER.cmd"
+  ],
+  "restoreToolsDirectCmdCount": 0,
+  "restoreToolsDirectCmdFiles": []
+}

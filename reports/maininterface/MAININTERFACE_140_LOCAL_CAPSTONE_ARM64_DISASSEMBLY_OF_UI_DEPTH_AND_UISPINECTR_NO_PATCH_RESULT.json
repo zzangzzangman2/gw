@@ -1,0 +1,50 @@
+{
+  "generatedAt": "2026-06-26T04:26:09",
+  "task": "MAININTERFACE_140_LOCAL_CAPSTONE_ARM64_DISASSEMBLY_OF_UI_DEPTH_AND_UISPINECTR_NO_PATCH",
+  "restoredClaim": false,
+  "scenePatchApplied": false,
+  "candidatePatchApplied": false,
+  "patchDecision": "trace_only_no_patch",
+  "capstoneAvailable": true,
+  "arm64DisassemblyRecovered": true,
+  "uiDepthFormulaRecovered": "partial_static_formula_recovered_requires_runtime_validation",
+  "uiSpineRuntimeBindingRecovered": "partial_static_binding_recovered_requires_source_scene_components",
+  "uiDockPromotionAllowed": false,
+  "runtimeDumpExecuted": false,
+  "requiresUserApproval": false,
+  "requiredNextEvidence": [
+    "runtime or source-backed UI_Dock/UI_MainPage GroupId/open-order/group-cursor values to compute exact Canvas.sortingOrder",
+    "source-backed SkeletonGraphic/SkeletonDataAsset/material bindings for UI_Dock sp_* nodes, or original runtime dump of those bindings",
+    "UI130-compatible activity/account/chat snapshot remains required for dynamic labels/icons"
+  ],
+  "guardrailsTouched": {
+    "sceneOrCandidatePatched": false,
+    "uiBgRaycastInteractableAltered": false,
+    "btnDiscordReviewHideApplied": false,
+    "activitySlotsHiddenOrFaked": false,
+    "routeWorldZhuyeNodesHidden": false,
+    "painting1005BackPromoted": false,
+    "fakeHudIconTextSpineCreated": false,
+    "androidOrEmulatorRuntimeExecuted": false,
+    "externalToolOrPackageInstalled": false
+  },
+  "inputs": {
+    "ui139NativeEvidenceCsv": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\maininterface\\MAININTERFACE_139_native_method_body_rva_symbol_recovery_evidence.csv",
+    "libil2cpp": "C:\\Users\\godho\\Downloads\\girlswar\\il2cpp_native\\libil2cpp.so",
+    "libil2cppSha256": "8bb3e249a9cf03d309170a4fdeb9af81e4649107d50a6f3d72b1321b8d5916f1"
+  },
+  "outputs": {
+    "instructionTraceCsv": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\maininterface\\MAININTERFACE_140_capstone_arm64_instruction_trace.csv",
+    "staticFormulaAndBindingFindingsCsv": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\maininterface\\MAININTERFACE_140_static_formula_and_binding_findings.csv"
+  },
+  "rowCounts": {
+    "targetMethods": 11,
+    "instructionRows": 1285,
+    "findings": 11
+  },
+  "commandPolicy": {
+    "rootCmdCount": 1,
+    "restoreToolsDirectCmdCount": 0,
+    "policyOk": true
+  }
+}

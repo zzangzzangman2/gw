@@ -1,0 +1,144 @@
+{
+  "name": "REFERENCE_MP4_VISUAL_CHECKPOINT_MATRIX_20260626_060212",
+  "generatedAtKst": "2026-06-26T06:02:12+09:00",
+  "source": {
+    "video": "C:\\Users\\godho\\Downloads\\참고.mp4",
+    "videoWidth": 1280,
+    "videoHeight": 570,
+    "videoFps": 30,
+    "videoDurationSeconds": 121.277823,
+    "videoAspect": 2.2456,
+    "mainReferenceImage": "C:\\Users\\godho\\.codex\\attachments\\e607fc34-b674-4516-b051-8d396cd6df06\\image-1.png",
+    "mainReferenceImageWidth": 1180,
+    "mainReferenceImageHeight": 526,
+    "mainReferenceImageAspect": 2.2433,
+    "newSampleFrameDir": "work/reference_video/frames_5s",
+    "newContactSheet": "work/reference_video/reference_5s_contact_sheet.jpg",
+    "existingReferenceNotes": "reports/video_reference/REFERENCE_MP4_RESTORE_NOTES_20260626_024037.md"
+  },
+  "actionsPerformedForThisReport": {
+    "videoRead": true,
+    "frameExtractionToWorkDir": true,
+    "packageImported": false,
+    "manifestModified": false,
+    "packagesLockModified": false,
+    "sceneSaved": false,
+    "runtimeInstrumentationExecuted": false,
+    "unityAssetImportOrCopy": false,
+    "networkUsed": false,
+    "xLuaPatchApplied": false,
+    "handlerPatchApplied": false,
+    "fakeHudPatchApplied": false,
+    "fakeActorPatchApplied": false,
+    "coordinateOnlySuccessClaimed": false
+  },
+  "currentCandidateComparison": {
+    "battle57Capture": "girlswar_battle_unity/Assets/RestoreCaptures/battle_actor/Battle57RuntimeRehydratedAssetBundleActorsCandidate_1920x1080.png",
+    "battle57Width": 1920,
+    "battle57Height": 1080,
+    "battle57Aspect": 1.7778,
+    "aspectFinding": "Reference video/image are about 2.24:1, while current battle candidate captures are 16:9. Coordinates must be compared inside an aspect-correct view rect.",
+    "aspectCorrectHeightFor1920Width": 855,
+    "extraVerticalPixelsIn1080Capture": 225,
+    "topHudFinding": "Reference normal-battle top HUD is near y~0.03-0.14, while current BATTLE57 top HUD appears around y~0.19-0.28 in the 1080p capture.",
+    "bottomCardFinding": "Reference cards occupy y~0.80-1.00 with frames/icons; current BATTLE57 mostly shows detached labels/glows and lacks complete card frames/icons.",
+    "actorFinding": "BATTLE57 proves a source-backed local actor subset, but not the complete reference formation or payload."
+  },
+  "checkpoints": [
+    {
+      "checkpoint": "Main home aspect/layout",
+      "referenceFrameTime": "sample_000 0s; attached image",
+      "referenceNormalizedRegion": "aspect ~2.24; bottom nav y~0.88-1.00; top/player/currency y~0.02-0.16",
+      "currentBattle57Observation": "Not checked in battle capture; UI146 needs runtime snapshot",
+      "projectEvidenceToJoin": "MAININTERFACE_146 runtime snapshot template and required field matrix",
+      "validationTarget": "Compare after approved runtime UI snapshot; do not infer active events/redpoints from video"
+    },
+    {
+      "checkpoint": "Formation screen slots",
+      "referenceFrameTime": "sample_003 15s",
+      "referenceNormalizedRegion": "arena x~0.02-0.98 y~0.15-0.78; roster y~0.82-0.98",
+      "currentBattle57Observation": "Current battle candidate does not reproduce formation screen",
+      "projectEvidenceToJoin": "Character roster/actor payload reports; BATTLE54 actors/cards CSV",
+      "validationTarget": "Use as formation/roster layout reference only"
+    },
+    {
+      "checkpoint": "Normal battle top HUD",
+      "referenceFrameTime": "sample_004 20s; sample_007 35s; sample_012 60s",
+      "referenceNormalizedRegion": "HP/portraits y~0.03-0.14; centered VS; wave under center",
+      "currentBattle57Observation": "BATTLE57 top HUD is much lower around upper-middle of 1080p capture",
+      "projectEvidenceToJoin": "BATTLE54 routes CSV; BATTLE57 capture; root_battle/root_top/TopCenter rows",
+      "validationTarget": "Fix through aspect-correct view rect plus source-backed RectTransform/Canvas state"
+    },
+    {
+      "checkpoint": "Right battle control rail",
+      "referenceFrameTime": "sample_004 20s; sample_012 60s; skill frames",
+      "referenceNormalizedRegion": "x~0.90-0.96; AUTO/play/x2 stack y~0.38-0.59; rail persists through skill overlays",
+      "currentBattle57Observation": "BATTLE57 rail is further right/lower and labels differ",
+      "projectEvidenceToJoin": "BATTLE54 button routes CSV; BATTLE50 decoded Lua; BATTLE52/BATTLE53 xLua blocker",
+      "validationTarget": "Validate route active state, sibling order, and handler binding together"
+    },
+    {
+      "checkpoint": "Bottom hero cards",
+      "referenceFrameTime": "sample_004 20s; sample_007 35s; sample_012 60s; sample_018 90s",
+      "referenceNormalizedRegion": "five cards x~0.30-0.71 y~0.80-1.00",
+      "currentBattle57Observation": "BATTLE57 shows detached labels/glows but not full five card frames/icons",
+      "projectEvidenceToJoin": "BATTLE54 hero cards CSV; TMP/text CSV; CHARACTER64 exact 1036 blocker",
+      "validationTarget": "Need full actor/card payload plus mask/stencil/material/scale validation"
+    },
+    {
+      "checkpoint": "Friendly actor formation",
+      "referenceFrameTime": "normal battle 20-60s",
+      "referenceNormalizedRegion": "five friendly units x~0.18-0.45 y~0.25-0.86",
+      "currentBattle57Observation": "BATTLE57 has only local subset actors and distribution differs",
+      "projectEvidenceToJoin": "BATTLE57 actor evidence; CHARACTER64 exact 1036 missing; CHARACTER63 unresolved enemies",
+      "validationTarget": "Do not claim complete actor list until exact 1036 and unresolved chains are source-backed"
+    },
+    {
+      "checkpoint": "Enemy actor formation",
+      "referenceFrameTime": "normal battle 20-60s",
+      "referenceNormalizedRegion": "enemy units x~0.55-0.82 y~0.25-0.82; wave 2 has more enemies",
+      "currentBattle57Observation": "BATTLE57 shows limited enemy/actor subset; one overlaps top HUD area",
+      "projectEvidenceToJoin": "BATTLE54 actor CSV; CHARACTER63/64 actor payload blockers",
+      "validationTarget": "Validate source-backed enemy ids and formation slots before final battle claim"
+    },
+    {
+      "checkpoint": "Skill white/black mask overlay",
+      "referenceFrameTime": "sample_013 65s",
+      "referenceNormalizedRegion": "screen-wide white stage; black silhouettes; right rail visible",
+      "currentBattle57Observation": "TimelineAsset mismatch blocks source-evaluated playback",
+      "projectEvidenceToJoin": "BATTLE63/BATTLE64/BATTLE65 reports; TimelineEffect evidence matrix",
+      "validationTarget": "Use as mask/stencil/effect overlay validation, not normal coordinate reference"
+    },
+    {
+      "checkpoint": "Skill cinematic overlay",
+      "referenceFrameTime": "sample_015 75s; sample_018 90s",
+      "referenceNormalizedRegion": "dark/red/pink screen-wide effects; top/bottom HUD can persist; right rail persists",
+      "currentBattle57Observation": "Project cannot source-evaluate TimelineAsset bindings yet",
+      "projectEvidenceToJoin": "BATTLE64 original binding evidence; BATTLE65 local Timeline candidate",
+      "validationTarget": "Requires Timeline type compatibility plus original TimelineEffect/PlayableDirector binding"
+    },
+    {
+      "checkpoint": "TMP/text visual state",
+      "referenceFrameTime": "all battle HUD frames",
+      "referenceNormalizedRegion": "compact Korean labels; high contrast; no broad overflow in normal frames",
+      "currentBattle57Observation": "BATTLE54 has 65 TMP/text rows, autosize 1/65, negative spacing rows 15; visual state differs",
+      "projectEvidenceToJoin": "BATTLE54 TMP/text CSV; BATTLE50 decoded Lua text paths",
+      "validationTarget": "Validate font/material/autosize/scale after correct aspect and route state"
+    }
+  ],
+  "rootCauseSplitUpdatedFromVideo": [
+    "Aspect/view-rect mismatch is a first-order blocker for any coordinate comparison.",
+    "HUD route placement is also wrong after accounting for aspect.",
+    "Actor visibility is a local-subset state, not a complete roster state.",
+    "Skill visual playback is blocked by Timeline type/binding/runtime gaps, not only missing particles.",
+    "MainInterface video confirms visual density and aspect, but does not supply runtime activity/redpoint/account state."
+  ],
+  "safeNextValidationRules": [
+    "Normalize every reference comparison to a 2.24:1 render area before evaluating coordinates.",
+    "Validate route active state, sibling order, mask/stencil, and TMP scale/autosize as a bundle.",
+    "Use sample_007 and sample_012 as normal-battle layout references.",
+    "Use sample_013, sample_015, and sample_018 only as skill overlay and Timeline/mask/stencil references.",
+    "Keep 참고.mp4 auxiliary; it cannot replace missing original xLua/GameEntry/LuaManager, exact actor bundles, or approved runtime UI snapshots."
+  ]
+}
+

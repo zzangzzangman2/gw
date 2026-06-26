@@ -1,0 +1,17 @@
+{
+  "prefix": "BATTLE_63_SKILL_TIMELINE_PLAYABLEDIRECTOR_BINDING_REQUIREMENTS_TRACE_NO_XLUA_NO_HANDLER_PATCH",
+  "restoredClaim": false,
+  "playableClaim": false,
+  "handlerPatchApplied": false,
+  "xLuaRuntimeUsed": false,
+  "sceneSaved": false,
+  "sourceBackedSkillRowsChecked": 12,
+  "playableDirectorsFound": 12,
+  "timelineAssetsInspectable": 0,
+  "rowsWithPlayableAssetTypeMismatch": 12,
+  "rowsRequiringTimelineBindings": 12,
+  "rowsWithRenderableAtRest": 0,
+  "rowsWithSourceBackedVisualActivationCandidate": 0,
+  "classificationCounts": {"timeline_asset_type_mismatch_blocks_evaluate": 12},
+  "nextBlocker": "original_timeline_playabledirector_runtime_binding_or_source_compatible_timeline_asset_bridge_required"
+}

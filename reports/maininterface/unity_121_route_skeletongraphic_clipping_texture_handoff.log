@@ -5,8 +5,8 @@ OS: 'Windows 11  (10.0.26200) Professional' Language: 'ko' Physical Memory: 3202
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1
 System  architecture: x64
 Process architecture: x64
-Date: 2026-06-25T14:28:16Z
-[Licensing::Module] Successfully launched the LicensingClient (PId: 3324)
+Date: 2026-06-25T15:47:19Z
+[Licensing::Module] Successfully launched the LicensingClient (PId: 34520)
 
 COMMAND LINE ARGUMENTS:
 C:\Program Files\Unity\Hub\Editor\6000.4.9f1\Editor\Unity.exe
@@ -55,35 +55,35 @@ C:/Users/godho/Downloads/girlswar/girlswar_maininterface_unity
     "memorysetup-job-temp-allocator-block-size=2097152"
     "memorysetup-job-temp-allocator-block-size-background=1048576"
     "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
-Player connection [12428]  Target information:
+Player connection [23680]  Target information:
 
-Player connection [12428]  * "[IP] 10.10.1.159 [Port] 55504 [Flags] 2 [Guid] 489026339 [EditorId] 489026339 [Version] 1048832 [Id] WindowsEditor(7,sjpark) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor"
+Player connection [23680]  * "[IP] 10.10.1.159 [Port] 55504 [Flags] 2 [Guid] 3089149651 [EditorId] 3089149651 [Version] 1048832 [Id] WindowsEditor(7,sjpark) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [12428]  * "[IP] 172.26.64.1 [Port] 55504 [Flags] 2 [Guid] 489026339 [EditorId] 489026339 [Version] 1048832 [Id] WindowsEditor(7,sjpark) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor"
+Player connection [23680]  * "[IP] 172.26.64.1 [Port] 55504 [Flags] 2 [Guid] 3089149651 [EditorId] 3089149651 [Version] 1048832 [Id] WindowsEditor(7,sjpark) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [12428]  * "[IP] 100.66.239.97 [Port] 55504 [Flags] 2 [Guid] 489026339 [EditorId] 489026339 [Version] 1048832 [Id] WindowsEditor(7,sjpark) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor"
+Player connection [23680]  * "[IP] 100.66.239.97 [Port] 55504 [Flags] 2 [Guid] 3089149651 [EditorId] 3089149651 [Version] 1048832 [Id] WindowsEditor(7,sjpark) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [12428] Host joined multi-casting on [225.0.0.222:54997]...
-Player connection [12428] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [23680] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [23680] Host joined alternative multi-casting on [225.0.0.222:34997]...
 Input System module state changed to: Initialized.
 [Physics::Module] Initialized fallback backend.
 [Physics::Module] Id: 0xdecafbad
 Starting IPC server.
 Waiting for clients to connect on \\.\pipe\Unity-LicenseClient-godho, press Ctrl-C to exit.
-[Package Manager] Connected to IPC stream "Upm-20352" after 0.2 seconds.
+[Package Manager] Connected to IPC stream "Upm-25572" after 0.2 seconds.
 [Licensing::Module] Licensing is not yet initialized.
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-godho" at "2026-06-25T14:28:16.888064Z"
-[Licensing::Client] Code 10 while verifying Licensing Client signature (process Id: 3324, path: "C:/Program Files/Unity/Hub/Editor/6000.4.9f1/Editor/Data/Resources/Licensing/Client/Unity.Licensing.Client.exe")
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-godho" at "2026-06-25T15:47:20.0085615Z"
+[Licensing::Client] Code 10 while verifying Licensing Client signature (process Id: 34520, path: "C:/Program Files/Unity/Hub/Editor/6000.4.9f1/Editor/Data/Resources/Licensing/Client/Unity.Licensing.Client.exe")
 [Licensing::Module] LicensingClient has failed validation; ignoring
 [Licensing::Client] Handshaking with LicensingClient:
   Version:                 1.18.1+9fbee8e
-  Session Id:              a3c847a1ef6141c3b1d0aab249830004
-  Correlation Id:          7c1078ee048ab056d6a567b0b44e0f63
-  External correlation Id: 752776646175977905
+  Session Id:              abeb0bec5d5c4c12b740f792c19d40b9
+  Correlation Id:          6027ae1ff70fe70322c65f16833972a4
+  External correlation Id: 5065544261074238276
   Machine Id:              nETCb6mCOTg3uD4qHH44hI9aRsg=
 [Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-godho" (connect: 0.37s, validation: 0.03s, handshake: 0.04s)
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-godho-notifications" at "2026-06-25T14:28:16.9662222Z"
-[Licensing::Module] Connected to LicensingClient (PId: 3324, launch time: 0.00, total connection time: 0.45s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-godho-notifications" at "2026-06-25T15:47:20.0813931Z"
+[Licensing::Module] Connected to LicensingClient (PId: 34520, launch time: 0.00, total connection time: 0.45s)
 [Licensing::Module] Error: Access token is unavailable; failed to update
 [Licensing::Client] Successfully resolved entitlement details
 [Licensing::Module] License group:
@@ -93,8 +93,8 @@ Waiting for clients to connect on \\.\pipe\Unity-LicenseClient-godho, press Ctrl
   Expiration: Unlimited
 [Licensing::Client] Successfully updated license, isAsync: True, time: 0.01
 [Licensing::Client] Successfully resolved entitlement details
-[Licensing::Module] Licensing Background thread has ended after 0.48s
-[Licensing::Module] Licensing is initialized (took 0.13s).
+[Licensing::Module] Licensing Background thread has ended after 0.47s
+[Licensing::Module] Licensing is initialized (took 0.10s).
 [Licensing::Client] Successfully resolved entitlement details
 Library Redirect Path: Library/
 [Physics::Module] Selected backend.
@@ -121,7 +121,7 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.4.9f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.4.9f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.4.9f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56352
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56572
 CodeReloadManager initialized
 Using cacheserver namespaces - metadata:defaultmetadata, artifacts:defaultartifacts
 Using cacheserver namespaces - metadata:defaultmetadata, artifacts:defaultartifacts
@@ -131,29 +131,30 @@ Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.4.9f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.4.9f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.002304 seconds.
+Registered in 0.002009 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
 Package Manager log level set to [2]
 ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:False
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.262 seconds
-Domain Reload Profiling: 571ms
-	BeginReloadAssembly (96ms)
-	RebuildCommonClasses (24ms)
+- Finished resetting the current domain, in  0.279 seconds
+Domain Reload Profiling: 605ms
+	BeginReloadAssembly (101ms)
+		CreateAndSetChildDomain (4ms)
+	RebuildCommonClasses (25ms)
 	RebuildNativeTypeToScriptingClass (8ms)
-	initialDomainReloadingComplete (45ms)
-	LoadAllAssembliesAndSetupDomain (135ms)
-		LoadAssemblies (92ms)
-		AnalyzeDomain (129ms)
-			TypeCache.Refresh (127ms)
-				TypeCache.ScanAssembly (116ms)
-	FinalizeReload (263ms)
+	initialDomainReloadingComplete (49ms)
+	LoadAllAssembliesAndSetupDomain (141ms)
+		LoadAssemblies (94ms)
+		AnalyzeDomain (134ms)
+			TypeCache.Refresh (133ms)
+				TypeCache.ScanAssembly (122ms)
+	FinalizeReload (280ms)
 		SetupLoadedEditorAssemblies (0ms)
-			InitializePlatformSupportModulesInManaged (30ms)
+			InitializePlatformSupportModulesInManaged (33ms)
 			BeforeProcessingInitializeOnLoad (55ms)
-			ProcessInitializeOnLoadAttributes (70ms)
-			ProcessInitializeOnLoadMethodAttributes (66ms)
+			ProcessInitializeOnLoadAttributes (76ms)
+			ProcessInitializeOnLoadMethodAttributes (72ms)
 [Licensing::Client] Successfully resolved entitlement details
 Application.AssetDatabase Initial Refresh Start
 [Package Manager] Restoring resolved packages state from cache
@@ -200,6 +201,7 @@ Application.AssetDatabase Initial Refresh Start
     com.unity.modules.hierarchycore@1.0.0 (location: C:\Users\godho\Downloads\girlswar\girlswar_maininterface_unity\Library\PackageCache\com.unity.modules.hierarchycore)
 [Subsystems] No new subsystems found in resolved package list.
 [Package Manager] Done registering packages in 0.01 seconds
+[ScriptCompilation] Requested script compilation because: AssetDatabase observed changes in script compilation related files
 info: Microsoft.Hosting.Lifetime[14]
       Now listening on: http://localhost:80
 info: Microsoft.Hosting.Lifetime[0]
@@ -215,13 +217,156 @@ info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
 info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
       Executed endpoint 'gRPC - /UnityILPP.PostProcessing/Ping'
 info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
-      Request finished HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/Ping - 200 - application/grpc 21.4378ms
+      Request finished HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/Ping - 200 - application/grpc 21.1988ms
 Starting: C:\Program Files\Unity\Hub\Editor\6000.4.9f1\Editor\Data\Tools\BuildPipeline\bee_backend.exe --ipc --defer-dag-verification --dagfile="Library/Bee/1900b0aE.dag" --continue-on-failure --profile="Library/Bee/backend1.traceevents" ScriptAssemblies
 WorkingDir: C:/Users/godho/Downloads/girlswar/girlswar_maininterface_unity
 DisplayProgressbar: Compiling Scripts
-ExitCode: 0 Duration: 0s70ms
-*** Tundra build success (0.05 seconds), 0 items updated, 247 evaluated
-AssetDatabase: script compilation time: 0.354645s
+ExitCode: 0 Duration: 1s984ms
+[244/247    1s] Csc Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp-Editor.dll (+2 others)
+Assets\Editor\MainInterfaceRouteTmpVariantMaterialAudit.cs(93,111): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+
+Assets\Editor\MainInterfaceRouteTmpVariantMaterialAudit.cs(93,28): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsInactive, FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+
+Assets\Editor\MainInterfaceSceneBuilder.cs(329,17): warning CS0162: Unreachable code detected
+
+Assets\Editor\MainInterfaceRouteLabelRectOverrideRevalidation.cs(104,111): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+
+Assets\Editor\MainInterfaceRouteLabelRectOverrideRevalidation.cs(104,30): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsInactive, FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+
+Assets\Editor\MainInterfaceRouteLabelRectOverrideRevalidation.cs(154,53): warning CS0618: 'TMP_Text.enableWordWrapping' is obsolete: 'The enabledWordWrapping property is now obsolete. Please use the textWrappingMode property instead.'
+
+Assets\Editor\MainInterfaceSceneBuilder.cs(378,26): warning CS0618: 'Object.FindFirstObjectByType<T>()' is obsolete: 'FindFirstObjectByType has been deprecated because it relies on instance ID ordering. Use FindAnyObjectByType instead, which does not depend on ordering.'
+
+Assets\Editor\MainInterfaceGuildMainWhitePanelTrace.cs(256,87): warning CS0618: 'Object.GetInstanceID()' is obsolete: 'GetInstanceID is deprecated. Use GetEntityId instead. This will be removed in a future version.'
+
+Assets\Editor\MainInterfaceGuildMainWhitePanelTrace.cs(256,50): warning CS0618: 'Unsupported.GetLocalIdentifierInFile(int)' is obsolete: 'GetLocalIdentifierInFile() is deprecated. Use GetLocalIdentifierInFileForPersistentObject() instead.'
+
+Assets\Editor\MainInterfaceGuildMainWhitePanelTrace.cs(265,91): warning CS0618: 'Object.GetInstanceID()' is obsolete: 'GetInstanceID is deprecated. Use GetEntityId instead. This will be removed in a future version.'
+
+Assets\Editor\MainInterfaceGuildMainWhitePanelTrace.cs(265,54): warning CS0618: 'Unsupported.GetLocalIdentifierInFile(int)' is obsolete: 'GetLocalIdentifierInFile() is deprecated. Use GetLocalIdentifierInFileForPersistentObject() instead.'
+
+Assets\Editor\MainInterfaceRouteSkeletonGraphicReplayIntegration.cs(264,104): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+
+Assets\Editor\MainInterfaceRouteSkeletonGraphicReplayIntegration.cs(264,23): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsInactive, FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+
+Assets\Editor\MainInterface116RouteSpineRuntimeBridgeReplay.cs(214,26): warning CS0618: 'Object.FindFirstObjectByType<T>()' is obsolete: 'FindFirstObjectByType has been deprecated because it relies on instance ID ordering. Use FindAnyObjectByType instead, which does not depend on ordering.'
+
+Assets\Editor\MainInterface116RouteSpineRuntimeBridgeReplay.cs(252,112): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+
+Assets\Editor\MainInterface116RouteSpineRuntimeBridgeReplay.cs(252,37): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsInactive, FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+
+Assets\Editor\MainInterface117RouteSkeletonGraphicLayoutValidation.cs(233,116): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+
+Assets\Editor\MainInterface117RouteSkeletonGraphicLayoutValidation.cs(233,35): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsInactive, FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+
+Assets\Editor\MainInterface116RouteSpineRuntimeBridgeReplay.cs(298,104): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+
+Assets\Editor\MainInterface116RouteSpineRuntimeBridgeReplay.cs(298,23): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsInactive, FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+
+Assets\Editor\MainInterface117RouteSkeletonGraphicLayoutValidation.cs(276,97): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+
+Assets\Editor\MainInterface117RouteSkeletonGraphicLayoutValidation.cs(276,20): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsInactive, FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+
+Assets\Editor\MainInterface118RouteSkeletonGraphicUIMaterialBinder.cs(278,26): warning CS0618: 'Object.FindFirstObjectByType<T>()' is obsolete: 'FindFirstObjectByType has been deprecated because it relies on instance ID ordering. Use FindAnyObjectByType instead, which does not depend on ordering.'
+
+Assets\Editor\MainInterface118RouteSkeletonGraphicUIMaterialBinder.cs(316,112): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+
+Assets\Editor\MainInterface118RouteSkeletonGraphicUIMaterialBinder.cs(316,37): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsInactive, FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+
+Assets\Editor\MainInterface117RouteSkeletonGraphicLayoutValidation.cs(283,26): warning CS0618: 'Object.FindFirstObjectByType<T>()' is obsolete: 'FindFirstObjectByType has been deprecated because it relies on instance ID ordering. Use FindAnyObjectByType instead, which does not depend on ordering.'
+
+Assets\Editor\MainInterface117RouteSkeletonGraphicLayoutValidation.cs(321,112): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+
+Assets\Editor\MainInterface117RouteSkeletonGraphicLayoutValidation.cs(321,37): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsInactive, FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+
+Assets\Editor\MainInterface118RouteSkeletonGraphicUIMaterialBinder.cs(365,104): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+
+Assets\Editor\MainInterface118RouteSkeletonGraphicUIMaterialBinder.cs(365,23): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsInactive, FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+
+Assets\Editor\MainInterfaceNavigationTargetReferenceTrace.cs(294,73): warning CS0618: 'Object.GetInstanceID()' is obsolete: 'GetInstanceID is deprecated. Use GetEntityId instead. This will be removed in a future version.'
+
+Assets\Editor\MainInterfaceNavigationTargetReferenceTrace.cs(294,36): warning CS0618: 'Unsupported.GetLocalIdentifierInFile(int)' is obsolete: 'GetLocalIdentifierInFile() is deprecated. Use GetLocalIdentifierInFileForPersistentObject() instead.'
+
+Assets\Editor\MainInterface117RouteSkeletonGraphicLayoutValidation.cs(366,104): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+
+Assets\Editor\MainInterface117RouteSkeletonGraphicLayoutValidation.cs(366,23): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsInactive, FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+
+Assets\Editor\MainInterfaceNavigationTargetReferenceTrace.cs(305,67): warning CS0618: 'SerializedProperty.objectReferenceInstanceIDValue' is obsolete: 'objectReferenceInstanceIDValue is obsolete. Use objectReferenceEntityIdValue instead'
+
+Assets\Editor\MainInterfaceNavigationTargetReferenceTrace.cs(307,20): warning CS0618: 'SerializedProperty.objectReferenceInstanceIDValue' is obsolete: 'objectReferenceInstanceIDValue is obsolete. Use objectReferenceEntityIdValue instead'
+
+Assets\Editor\MainInterfaceNavigationTargetReferenceTrace.cs(308,32): warning CS0618: 'SerializedProperty.objectReferenceInstanceIDValue' is obsolete: 'objectReferenceInstanceIDValue is obsolete. Use objectReferenceEntityIdValue instead'
+
+Assets\Editor\MainInterface120RouteSkeletonGraphicRuntimeMaskStencilVisibilityTrace.cs(406,104): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+
+Assets\Editor\MainInterface120RouteSkeletonGraphicRuntimeMaskStencilVisibilityTrace.cs(406,23): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsInactive, FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+
+Assets\Editor\MainInterface119RouteSkeletonGraphicMeshBoundsTrace.cs(381,104): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+
+Assets\Editor\MainInterface119RouteSkeletonGraphicMeshBoundsTrace.cs(381,23): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsInactive, FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+
+Assets\Editor\MainInterfaceSceneBuilder.cs(794,21): warning CS0618: 'TMP_Text.enableWordWrapping' is obsolete: 'The enabledWordWrapping property is now obsolete. Please use the textWrappingMode property instead.'
+
+Assets\Editor\MainInterfaceSceneBuilder.cs(797,21): warning CS0618: 'TMP_Text.enableKerning' is obsolete: 'The "enableKerning" property has been deprecated. Use the "fontFeatures" property to control what features are enabled on the text component.'
+
+Assets\Editor\MainInterfaceRouteNonImageRendererEffectRuntimeStateTrace.cs(336,113): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+
+Assets\Editor\MainInterfaceRouteNonImageRendererEffectRuntimeStateTrace.cs(336,32): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsInactive, FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+
+Assets\Editor\MainInterface121RouteSkeletonGraphicClippingTextureHandoffTrace.cs(425,104): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+
+Assets\Editor\MainInterface121RouteSkeletonGraphicClippingTextureHandoffTrace.cs(425,23): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsInactive, FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+[245/247    0s] CopyFiles Library/ScriptAssemblies/Assembly-CSharp-Editor.pdb
+[246/247    0s] CopyFiles Library/ScriptAssemblies/Assembly-CSharp-Editor.dll
+*** Tundra build success (1.96 seconds), 3 items updated, 247 evaluated
+Assets\Editor\MainInterfaceRouteTmpVariantMaterialAudit.cs(93,111): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+Assets\Editor\MainInterfaceRouteTmpVariantMaterialAudit.cs(93,28): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsInactive, FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+Assets\Editor\MainInterfaceSceneBuilder.cs(329,17): warning CS0162: Unreachable code detected
+Assets\Editor\MainInterfaceRouteLabelRectOverrideRevalidation.cs(104,111): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+Assets\Editor\MainInterfaceRouteLabelRectOverrideRevalidation.cs(104,30): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsInactive, FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+Assets\Editor\MainInterfaceRouteLabelRectOverrideRevalidation.cs(154,53): warning CS0618: 'TMP_Text.enableWordWrapping' is obsolete: 'The enabledWordWrapping property is now obsolete. Please use the textWrappingMode property instead.'
+Assets\Editor\MainInterfaceSceneBuilder.cs(378,26): warning CS0618: 'Object.FindFirstObjectByType<T>()' is obsolete: 'FindFirstObjectByType has been deprecated because it relies on instance ID ordering. Use FindAnyObjectByType instead, which does not depend on ordering.'
+Assets\Editor\MainInterfaceGuildMainWhitePanelTrace.cs(256,87): warning CS0618: 'Object.GetInstanceID()' is obsolete: 'GetInstanceID is deprecated. Use GetEntityId instead. This will be removed in a future version.'
+Assets\Editor\MainInterfaceGuildMainWhitePanelTrace.cs(256,50): warning CS0618: 'Unsupported.GetLocalIdentifierInFile(int)' is obsolete: 'GetLocalIdentifierInFile() is deprecated. Use GetLocalIdentifierInFileForPersistentObject() instead.'
+Assets\Editor\MainInterfaceGuildMainWhitePanelTrace.cs(265,91): warning CS0618: 'Object.GetInstanceID()' is obsolete: 'GetInstanceID is deprecated. Use GetEntityId instead. This will be removed in a future version.'
+Assets\Editor\MainInterfaceGuildMainWhitePanelTrace.cs(265,54): warning CS0618: 'Unsupported.GetLocalIdentifierInFile(int)' is obsolete: 'GetLocalIdentifierInFile() is deprecated. Use GetLocalIdentifierInFileForPersistentObject() instead.'
+Assets\Editor\MainInterfaceRouteSkeletonGraphicReplayIntegration.cs(264,104): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+Assets\Editor\MainInterfaceRouteSkeletonGraphicReplayIntegration.cs(264,23): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsInactive, FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+Assets\Editor\MainInterface116RouteSpineRuntimeBridgeReplay.cs(214,26): warning CS0618: 'Object.FindFirstObjectByType<T>()' is obsolete: 'FindFirstObjectByType has been deprecated because it relies on instance ID ordering. Use FindAnyObjectByType instead, which does not depend on ordering.'
+Assets\Editor\MainInterface116RouteSpineRuntimeBridgeReplay.cs(252,112): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+Assets\Editor\MainInterface116RouteSpineRuntimeBridgeReplay.cs(252,37): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsInactive, FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+Assets\Editor\MainInterface117RouteSkeletonGraphicLayoutValidation.cs(233,116): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+Assets\Editor\MainInterface117RouteSkeletonGraphicLayoutValidation.cs(233,35): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsInactive, FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+Assets\Editor\MainInterface116RouteSpineRuntimeBridgeReplay.cs(298,104): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+Assets\Editor\MainInterface116RouteSpineRuntimeBridgeReplay.cs(298,23): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsInactive, FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+Assets\Editor\MainInterface117RouteSkeletonGraphicLayoutValidation.cs(276,97): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+Assets\Editor\MainInterface117RouteSkeletonGraphicLayoutValidation.cs(276,20): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsInactive, FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+Assets\Editor\MainInterface118RouteSkeletonGraphicUIMaterialBinder.cs(278,26): warning CS0618: 'Object.FindFirstObjectByType<T>()' is obsolete: 'FindFirstObjectByType has been deprecated because it relies on instance ID ordering. Use FindAnyObjectByType instead, which does not depend on ordering.'
+Assets\Editor\MainInterface118RouteSkeletonGraphicUIMaterialBinder.cs(316,112): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+Assets\Editor\MainInterface118RouteSkeletonGraphicUIMaterialBinder.cs(316,37): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsInactive, FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+Assets\Editor\MainInterface117RouteSkeletonGraphicLayoutValidation.cs(283,26): warning CS0618: 'Object.FindFirstObjectByType<T>()' is obsolete: 'FindFirstObjectByType has been deprecated because it relies on instance ID ordering. Use FindAnyObjectByType instead, which does not depend on ordering.'
+Assets\Editor\MainInterface117RouteSkeletonGraphicLayoutValidation.cs(321,112): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+Assets\Editor\MainInterface117RouteSkeletonGraphicLayoutValidation.cs(321,37): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsInactive, FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+Assets\Editor\MainInterface118RouteSkeletonGraphicUIMaterialBinder.cs(365,104): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+Assets\Editor\MainInterface118RouteSkeletonGraphicUIMaterialBinder.cs(365,23): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsInactive, FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+Assets\Editor\MainInterfaceNavigationTargetReferenceTrace.cs(294,73): warning CS0618: 'Object.GetInstanceID()' is obsolete: 'GetInstanceID is deprecated. Use GetEntityId instead. This will be removed in a future version.'
+Assets\Editor\MainInterfaceNavigationTargetReferenceTrace.cs(294,36): warning CS0618: 'Unsupported.GetLocalIdentifierInFile(int)' is obsolete: 'GetLocalIdentifierInFile() is deprecated. Use GetLocalIdentifierInFileForPersistentObject() instead.'
+Assets\Editor\MainInterface117RouteSkeletonGraphicLayoutValidation.cs(366,104): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+Assets\Editor\MainInterface117RouteSkeletonGraphicLayoutValidation.cs(366,23): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsInactive, FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+Assets\Editor\MainInterfaceNavigationTargetReferenceTrace.cs(305,67): warning CS0618: 'SerializedProperty.objectReferenceInstanceIDValue' is obsolete: 'objectReferenceInstanceIDValue is obsolete. Use objectReferenceEntityIdValue instead'
+Assets\Editor\MainInterfaceNavigationTargetReferenceTrace.cs(307,20): warning CS0618: 'SerializedProperty.objectReferenceInstanceIDValue' is obsolete: 'objectReferenceInstanceIDValue is obsolete. Use objectReferenceEntityIdValue instead'
+Assets\Editor\MainInterfaceNavigationTargetReferenceTrace.cs(308,32): warning CS0618: 'SerializedProperty.objectReferenceInstanceIDValue' is obsolete: 'objectReferenceInstanceIDValue is obsolete. Use objectReferenceEntityIdValue instead'
+Assets\Editor\MainInterface120RouteSkeletonGraphicRuntimeMaskStencilVisibilityTrace.cs(406,104): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+Assets\Editor\MainInterface120RouteSkeletonGraphicRuntimeMaskStencilVisibilityTrace.cs(406,23): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsInactive, FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+Assets\Editor\MainInterface119RouteSkeletonGraphicMeshBoundsTrace.cs(381,104): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+Assets\Editor\MainInterface119RouteSkeletonGraphicMeshBoundsTrace.cs(381,23): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsInactive, FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+Assets\Editor\MainInterfaceSceneBuilder.cs(794,21): warning CS0618: 'TMP_Text.enableWordWrapping' is obsolete: 'The enabledWordWrapping property is now obsolete. Please use the textWrappingMode property instead.'
+Assets\Editor\MainInterfaceSceneBuilder.cs(797,21): warning CS0618: 'TMP_Text.enableKerning' is obsolete: 'The "enableKerning" property has been deprecated. Use the "fontFeatures" property to control what features are enabled on the text component.'
+Assets\Editor\MainInterfaceRouteNonImageRendererEffectRuntimeStateTrace.cs(336,113): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+Assets\Editor\MainInterfaceRouteNonImageRendererEffectRuntimeStateTrace.cs(336,32): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsInactive, FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+Assets\Editor\MainInterface121RouteSkeletonGraphicClippingTextureHandoffTrace.cs(425,104): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+Assets\Editor\MainInterface121RouteSkeletonGraphicClippingTextureHandoffTrace.cs(425,23): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsInactive, FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+AssetDatabase: script compilation time: 2.286173s
 Begin MonoManager ReloadAssembly
 Assembly Assembly-CSharp-Editor-firstpass.dll at Library/ScriptAssemblies/Assembly-CSharp-Editor-firstpass.dll not valid. Loading of assembly skipped.
 Assembly Assembly-CSharp-firstpass.dll at Library/ScriptAssemblies/Assembly-CSharp-firstpass.dll not valid. Loading of assembly skipped.
@@ -236,89 +381,116 @@ Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
 ScheduleIndexationOnStartup MainProcess:True IndexOnStartup:True
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.310 seconds
-Domain Reload Profiling: 656ms
-	BeginReloadAssembly (256ms)
-		DisableScriptedObjects (19ms)
-		CreateAndSetChildDomain (136ms)
-	RebuildCommonClasses (25ms)
-	RebuildNativeTypeToScriptingClass (8ms)
-	initialDomainReloadingComplete (32ms)
-	LoadAllAssembliesAndSetupDomain (25ms)
-		LoadAssemblies (83ms)
-		AnalyzeDomain (17ms)
-			TypeCache.Refresh (10ms)
-				TypeCache.ScanAssembly (6ms)
+- Finished resetting the current domain, in  0.285 seconds
+Domain Reload Profiling: 633ms
+	BeginReloadAssembly (267ms)
+		DisableScriptedObjects (16ms)
+		CreateAndSetChildDomain (148ms)
+	RebuildCommonClasses (23ms)
+	RebuildNativeTypeToScriptingClass (7ms)
+	initialDomainReloadingComplete (27ms)
+	LoadAllAssembliesAndSetupDomain (23ms)
+		LoadAssemblies (78ms)
+		AnalyzeDomain (15ms)
+			TypeCache.Refresh (9ms)
+				TypeCache.ScanAssembly (5ms)
 			BuildScriptInfoCaches (3ms)
-	FinalizeReload (311ms)
+	FinalizeReload (286ms)
 		SetupLoadedEditorAssemblies (0ms)
-			InitializePlatformSupportModulesInManaged (18ms)
-			BeforeProcessingInitializeOnLoad (75ms)
-			ProcessInitializeOnLoadAttributes (50ms)
-			ProcessInitializeOnLoadMethodAttributes (29ms)
-			AfterProcessingInitializeOnLoad (8ms)
-		AwakeInstancesAfterBackupRestoration (18ms)
+			InitializePlatformSupportModulesInManaged (17ms)
+			BeforeProcessingInitializeOnLoad (76ms)
+			ProcessInitializeOnLoadAttributes (55ms)
+			ProcessInitializeOnLoadMethodAttributes (30ms)
+			AfterProcessingInitializeOnLoad (6ms)
+		AwakeInstancesAfterBackupRestoration (19ms)
+Start importing Assets/RestoredSprites/maininterface/runtime_dynamic/runtime_UI_bg_noalphabg_PaintingBG_1005.png using Guid(be2caab93ff62c840b99644256a87ce3) (TextureImporter) -> (Import Result ID: '6acb153513038e7d0d4f7d0cdd54abe8') in 0.045292 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=0cd0b004bd9349cde90febb0b003fb2c DependenciesID=41e349cbe3cef9e111e69a6239a8bcb0 StaticDependenciesID=003f6a6ae41c33b3a6d401180f3b89b1 
+Start importing Assets/RestoreData/maininterface_122_home_reference_route_runtime_state_trace.json using Guid(40e9e3fac06bb1646a85698ad6c420de) (TextScriptImporter) -> (Import Result ID: 'afbe9f4eb30d0d2416db0cfc4dcd8d66') in 0.0028444 seconds [static dependencies only]. Details - ImportResultOutputID=676c47c5c798008b56008bce0e58a781 DependenciesID=feba818296df9087b45192879722295f StaticDependenciesID=9a5fcfdb7063b28454f9b4b9168b2e43 
+Start importing Assets/RestoreData/reports/maininterface_121_route_skeletongraphic_canvasrenderer_texture_handoff_clipping_zong1.csv using Guid(8199bf0dc9bf67a428f383768a491930) (TextScriptImporter) -> (Import Result ID: 'e240c5be337224237b78f9c29b3b2977') in 0.0013643 seconds [static dependencies only]. Details - ImportResultOutputID=70d122bcbb23947c140e564e19a93aa8 DependenciesID=16f1516e20e501d3a7fbcbb28e040794 StaticDependenciesID=0d0941eef13eb8a30fcc06bc4addbf06 
+Start importing Assets/RestoreData/maininterface_visual_overrides.csv using Guid(e9a5322349faaf641803883b0754b6a0) (TextScriptImporter) -> (Import Result ID: '24757b9a24bb910ff41f73b234ae8e0e') in 0.001254 seconds [static dependencies only]. Details - ImportResultOutputID=537587aeadc3700a7b224bccf4994f4a DependenciesID=22d1eca74cfc5ff46c76bfd2638b167d StaticDependenciesID=219dfbe7d691ee2da445bf48bccd530f 
+Start importing Assets/RestoreData/reports/maininterface_119_route_skeletongraphic_mesh_bounds_canvasrenderer_submesh_material.csv using Guid(aa376c3fb2528ac419f1330f91af7a41) (TextScriptImporter) -> (Import Result ID: '1ecf5d7e5a96cc81cf6894812b24046e') in 0.0013783 seconds [static dependencies only]. Details - ImportResultOutputID=0451ad677ec3d49c6bf4da7be4701f90 DependenciesID=2c465058234f2e67d52d19dce2951dbb StaticDependenciesID=8f0e1c83674e600440afb13346a229f9 
+Start importing Assets/RestoreData/maininterface_120_route_skeletongraphic_original_runtime_mask_stencil_attachment_visibility.json using Guid(7b22f3e43f5782742bb73ec64d352f7c) (TextScriptImporter) -> (Import Result ID: 'c7acd876930baea36bea780b586af13d') in 0.0010957 seconds [static dependencies only]. Details - ImportResultOutputID=fc2fa1fb69c1b9dec4e9daf0d7b8f53f DependenciesID=77177869fed351dbeeb98c51d84258e6 StaticDependenciesID=690b3c9b536d9eb82a12f3e3ced9bbc2 
+Start importing Assets/RestoreData/maininterface_121_route_skeletongraphic_canvasrenderer_texture_handoff_clipping_zong1.json using Guid(ae763ea3055b01947a328681a665d068) (TextScriptImporter) -> (Import Result ID: '4530b4c2fd07c04b11c39c545de6c88f') in 0.0010967 seconds [static dependencies only]. Details - ImportResultOutputID=ad2659ed6b106109a92bc0138720601d DependenciesID=51d3d5919c398984926daee44289c67a StaticDependenciesID=8437da991521f06fbad087da902b9faa 
+Start importing Assets/RestoreData/reports/maininterface_120_route_skeletongraphic_original_runtime_mask_stencil_attachment_visibility.csv using Guid(ae68f18e1cf250d4fa0e911a0e584951) (TextScriptImporter) -> (Import Result ID: 'df149ad67e287fc6d0ed6dbe1a01c7d9') in 0.0012492 seconds [static dependencies only]. Details - ImportResultOutputID=026c70a30847b9792c0c2bdf75169e14 DependenciesID=27242acb9b8e9f47852baf77b45e777a StaticDependenciesID=71fd843a517a097861dc393be6228149 
 (Values over 0.050ms)
-Asset Pipeline Refresh (id=be01db53b233bb6479114b0f817d60f4): Total: 1.141 seconds - Initiated by InitialRefreshV2(ForceSynchronousImport)
+Asset Pipeline Refresh (id=41fcf5ec1f3cd294499c4ed62f9db0ae): Total: 3.160 seconds - Initiated by InitialRefreshV2(ForceSynchronousImport)
 	Summary:
-		Imports: total=0 (actual=0, local cache=0, cache server=0)
-		Asset DB Process Time: managed=0 ms, native=401 ms
-		Asset DB Callback time: managed=11 ms, native=12 ms
-		Scripting: domain reloads=1, domain reload time=349 ms, compile time=356 ms, other=8 ms
-		Project Asset Count: scripts=294, non-scripts=747
-		Asset File Changes: new=0, changed=0, moved=0, deleted=0
+		Imports: total=8 (actual=8, local cache=0, cache server=0)
+		Asset DB Process Time: managed=2 ms, native=455 ms
+		Asset DB Callback time: managed=41 ms, native=13 ms
+		Scripting: domain reloads=1, domain reload time=349 ms, compile time=2287 ms, other=9 ms
+		Project Asset Count: scripts=294, non-scripts=749
+		Asset File Changes: new=2, changed=9, moved=0, deleted=0
 		Scan Filter Count: 0
-	InvokePackagesCallback: 14.097ms
-	ApplyChangesToAssetFolders: 0.456ms
-	Scan: 23.726ms
-	CategorizeScriptCompilationAssets: 1.013ms
-	ProcessAssetsWithTransientArtifactChanges: 5.563ms
-	CategorizeAssets: 4.243ms
-	CompileScripts: 355.871ms
-	ImportOutOfDateAssets: 311.495ms (311.156ms without children)
-		UnloadImportedAssets: 0.085ms
-		EnsureUptoDateAssetsAreRegisteredWithGuidPM: 0.073ms
-		OnDemandSchedulerStart: 0.178ms
-	PostProcessAllAssets: 12.037ms
-		MonoPostProcessAllAssets: 11.980ms
-			WindowAssetPostprocessingWatcher.OnPostprocessAllAssets 4.320ms
-			SyncVS.PostprocessSyncProject 0.861ms
-			SpeedTree9Postprocessor.OnPostprocessAllAssets 0.457ms
-			ReferencedClipsPostProcessor.OnPostprocessAllAssets 0.202ms
-			TerrainToolbarOverlayPostProcessor.OnPostprocessAllAssets 0.123ms
-			AssetDatabaseCallbacks.OnPostprocessAllAssets 0.097ms
-			RenderPipelineGlobalSettingsPostprocessor.OnPostprocessAllAssets 0.051ms
-	UnloadStreamsBegin: 1.133ms
-	GenerateScriptTypeHashes: 0.168ms
-	GenerateScriptTypeSerializationHashes: 0.371ms
-	Untracked: 406.453ms
+	InvokePackagesCallback: 13.911ms
+	ApplyChangesToAssetFolders: 0.521ms
+	Scan: 41.535ms
+	OnSourceAssetsModified: 0.618ms
+	CategorizeScriptCompilationAssets: 1.074ms
+	ProcessAssetsWithTransientArtifactChanges: 5.288ms
+	CategorizeAssets: 3.982ms
+	CompileScripts: 2287.375ms
+	ImportOutOfDateAssets: 346.065ms (287.019ms without children)
+		ImportManagerImport: 58.694ms (0.771ms without children)
+		UnloadImportedAssets: 0.079ms
+		EnsureUptoDateAssetsAreRegisteredWithGuidPM: 0.083ms
+		OnDemandSchedulerStart: 0.180ms
+	PostProcessAllAssets: 41.736ms
+		VersionControlSettings.HiddenFilePostprocess 0.052ms
+		MonoPostProcessAllAssets: 41.026ms
+			AssetPostprocessor.OnPostprocessAllAssets 12.451ms
+			StyleCatalogPostProcessor.OnPostprocessAllAssets 7.651ms
+			WindowAssetPostprocessingWatcher.OnPostprocessAllAssets 4.405ms
+			BuilderAssetPostprocessor.OnPostprocessAllAssets 3.853ms
+			AssetChangedListener.OnPostprocessAllAssets 1.055ms
+			TextAssetPostProcessor.OnPostprocessAllAssets 1.028ms
+			SyncVS.PostprocessSyncProject 0.903ms
+			RetainedModeAssetPostprocessor.OnPostprocessAllAssets 0.848ms
+			SpeedTree9Postprocessor.OnPostprocessAllAssets 0.484ms
+			ArtifactBrowserPostProcessor.OnPostprocessAllAssets 0.334ms
+			TMPro_TexturePostProcessor.OnPostprocessAllAssets 0.300ms
+			ReferencedClipsPostProcessor.OnPostprocessAllAssets 0.216ms
+			AudioMixerPostprocessor.OnPostprocessAllAssets 0.155ms
+			TerrainToolbarOverlayPostProcessor.OnPostprocessAllAssets 0.140ms
+			AssetEvents.OnPostprocessAllAssets 0.129ms
+			AssetDatabaseCallbacks.OnPostprocessAllAssets 0.124ms
+			RenderPipelineGlobalSettingsPostprocessor.OnPostprocessAllAssets 0.102ms
+			SpeedTreePostProcessor.OnPostprocessAllAssets 0.093ms
+			ConfigAssetsTracker.OnPostprocessAllAssets 0.078ms
+			ScenarioDriftAssetsTracker.OnPostprocessAllAssets 0.075ms
+	PostAssetChangesProfiler: 0.587ms
+	UnloadStreamsBegin: 1.092ms
+	PersistCurrentRevisions: 0.153ms
+	GenerateScriptTypeHashes: 0.178ms
+	GenerateScriptTypeSerializationHashes: 0.385ms
+	Untracked: 410.788ms
 
 Application.AssetDatabase Initial Refresh End
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.01 seconds
-Scanning for USB devices : 1.893ms
+Scanning for USB devices : 1.892ms
 Initializing Unity extensions:
 [MODES] ModeService[none].Initialize
 [MODES] ModeService[none].LoadModes
 [MODES] Loading mode Default (0) for mode-current-id-girlswar_maininterface_unity
 Unloading 58 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 611 unused Assets / (6.2 MB). Loaded Objects now: 1194.
-Memory consumption went from 118.8 MB to 112.5 MB.
-Total: 5.289400 ms (FindLiveObjects: 0.096600 ms CreateObjectMapping: 0.026300 ms MarkObjects: 2.914500 ms  DeleteObjects: 2.249900 ms)
+Unloading 611 unused Assets / (6.2 MB). Loaded Objects now: 1196.
+Memory consumption went from 120.6 MB to 114.4 MB.
+Total: 5.373900 ms (FindLiveObjects: 0.088500 ms CreateObjectMapping: 0.022700 ms MarkObjects: 3.037600 ms  DeleteObjects: 2.223200 ms)
 
 Opening scene 'Assets/Scenes/MainInterface_RouteSpineRuntimeReplay_UIMaterialBound.unity'
-Unloading 136 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 135 Unused Serialized files (Serialized files now loaded: 0)
 Loaded scene 'Assets/Scenes/MainInterface_RouteSpineRuntimeReplay_UIMaterialBound.unity'
-	Deserialize:            78.958 ms
-	Integration:            101.176 ms
-	Integration of assets:  8.730 ms
-	Thread Wait Time:       -0.154 ms
-	Total Operation Time:   188.710 ms
+	Deserialize:            79.787 ms
+	Integration:            101.427 ms
+	Integration of assets:  8.923 ms
+	Thread Wait Time:       0.115 ms
+	Total Operation Time:   190.252 ms
 Unloading 1 unused Assets / (0.5 KB). Loaded Objects now: 4239.
-Memory consumption went from 130.5 MB to 130.5 MB.
-Total: 3.385000 ms (FindLiveObjects: 0.207700 ms CreateObjectMapping: 0.030000 ms MarkObjects: 3.128200 ms  DeleteObjects: 0.018500 ms)
+Memory consumption went from 131.9 MB to 131.9 MB.
+Total: 3.263800 ms (FindLiveObjects: 0.162700 ms CreateObjectMapping: 0.021800 ms MarkObjects: 3.064100 ms  DeleteObjects: 0.014700 ms)
 
-Start importing Assets/RestoreData/maininterface_121_route_skeletongraphic_canvasrenderer_texture_handoff_clipping_zong1.json using Guid(ae763ea3055b01947a328681a665d068) (TextScriptImporter) -> (Import Result ID: 'e7012c90efa79fa8d4df4c1e0b6d7b55') in 0.008964 seconds [static dependencies only]. Details - ImportResultOutputID=ad2659ed6b106109a92bc0138720601d DependenciesID=d8e69109143e34e5b4a9372b81ed7d93 StaticDependenciesID=e3235125c999d1ed60cff7ba4e0a0cf2
-Asset Pipeline Refresh (id=1ffec991eacc50744b7d6f116a53d6c9): Total: 0.077 seconds - Initiated by RefreshV2(NoUpdateAssetOptions)
+Start importing Assets/RestoreData/reports/maininterface_121_route_skeletongraphic_canvasrenderer_texture_handoff_clipping_zong1.csv using Guid(8199bf0dc9bf67a428f383768a491930) (TextScriptImporter) -> (Import Result ID: 'f94ddacc47c713274727afc7fcc7e19b') in 0.0016155 seconds [static dependencies only]. Details - ImportResultOutputID=c82b26c917c8ef7d0b404031127a0edf DependenciesID=a6f3566d20e782c656927bcb98b06d98 StaticDependenciesID=19f800d66bab9b29a8e3427251f62621 
+Start importing Assets/RestoreData/maininterface_121_route_skeletongraphic_canvasrenderer_texture_handoff_clipping_zong1.json using Guid(ae763ea3055b01947a328681a665d068) (TextScriptImporter) -> (Import Result ID: '165a28173d1c1a92164c79572dc6c8ac') in 0.0013612 seconds [static dependencies only]. Details - ImportResultOutputID=5edcb969262416d9af6f4ed5c983ddfb DependenciesID=f5e81736c1855455201817d1d9fc2a0c StaticDependenciesID=240653d3894c5fcc7730bc6f3d623ab0 
+Asset Pipeline Refresh (id=230a8c2fb87a559439220e9aaae524f7): Total: 0.050 seconds - Initiated by RefreshV2(NoUpdateAssetOptions)
 [GirlsWarRestore] UI121 route SkeletonGraphic clipping/texture handoff trace complete: Assets/RestoreData/maininterface_121_route_skeletongraphic_canvasrenderer_texture_handoff_clipping_zong1.json
 UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
 UnityEngine.StackTraceUtility:ExtractStackTrace ()
@@ -331,6 +503,7 @@ GirlsWarRestore.MainInterface121RouteSkeletonGraphicClippingTextureHandoffTrace:
 (Filename: Assets/Editor/MainInterface121RouteSkeletonGraphicClippingTextureHandoffTrace.cs Line: 76)
 
 Batchmode quit successfully invoked - shutting down!
+Curl error 42: Callback aborted
 [Physics::Module] Cleanup current backend.
 [Physics::Module] Id: 0xf2b8ea05
 Input System module state changed to: ShutdownInProgress.
@@ -342,14 +515,14 @@ AcceleratorClientConnectionCallback - disconnected - :0
 Cleanup mono
 CodeReloadManager destroyed
 Shut down.
-abort_threads: Failed aborting id: 0000000000008318, mono_thread_manage will ignore it
+abort_threads: Failed aborting id: 0000000000000FEC, mono_thread_manage will ignore it
 
-abort_threads: Failed aborting id: 0000000000003C08, mono_thread_manage will ignore it
+abort_threads: Failed aborting id: 0000000000006BF4, mono_thread_manage will ignore it
 
-abort_threads: Failed aborting id: 0000000000008318, mono_thread_manage will ignore it
+abort_threads: Failed aborting id: 0000000000000FEC, mono_thread_manage will ignore it
 
-abort_threads: Failed aborting id: 0000000000003C08, mono_thread_manage will ignore it
+abort_threads: Failed aborting id: 0000000000006BF4, mono_thread_manage will ignore it
 
-debugger-agent: Unable to listen on 3768
+debugger-agent: Unable to listen on 3784
 Exiting batchmode successfully now!
 Exiting without the bug reporter. Application will terminate with return code 0

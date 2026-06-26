@@ -1,0 +1,51 @@
+{
+  "prefix": "BATTLE_63_SKILL_TIMELINE_PLAYABLEDIRECTOR_BINDING_REQUIREMENTS_TRACE_NO_XLUA_NO_HANDLER_PATCH",
+  "generatedAt": "2026-06-26T05:36:14",
+  "restoredClaim": false,
+  "playableClaim": false,
+  "isFinalRestoredBattleScreen": false,
+  "handlerPatchApplied": false,
+  "xLuaRuntimeUsed": false,
+  "sceneSaved": false,
+  "sourceBackedSkillRowsChecked": 12,
+  "playableDirectorsFound": 12,
+  "timelineAssetsInspectable": 0,
+  "rowsWithPlayableAssetTypeMismatch": 12,
+  "rowsRequiringTimelineBindings": 12,
+  "rowsWithRenderableAtRest": 0,
+  "rowsWithSourceBackedVisualActivationCandidate": 0,
+  "dominantClassification": "timeline_asset_type_mismatch_blocks_evaluate",
+  "classificationCounts": {
+    "timeline_asset_type_mismatch_blocks_evaluate": 12
+  },
+  "nextBlocker": "source_compatible_timeline_playableasset_bridge_or_original_playabledirector_binding_runtime_required_plus_original_xlua_handler_and_full_payload_actor_gaps",
+  "guardrailsTouched": {
+    "fakeSkillCreated": false,
+    "fakeEffectCreated": false,
+    "fakeCardIconTextCreated": false,
+    "handlerPatchApplied": false,
+    "dummyLuaUsed": false,
+    "externalXluaImported": false,
+    "androidInstrumentationUsed": false,
+    "mainInterfaceTouched": false,
+    "sceneSaved": false
+  },
+  "commandPolicy": {
+    "rootCmdCount": 1,
+    "rootCmdFiles": [
+      "C:\\Users\\godho\\Downloads\\girlswar\\00_COMMAND_CENTER.cmd"
+    ],
+    "restoreToolsDirectCmdCount": 0,
+    "restoreToolsDirectCmdFiles": []
+  },
+  "outputs": {
+    "resultMd": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_63_SKILL_TIMELINE_PLAYABLEDIRECTOR_BINDING_REQUIREMENTS_TRACE_NO_XLUA_NO_HANDLER_PATCH_RESULT.md",
+    "resultJson": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_63_SKILL_TIMELINE_PLAYABLEDIRECTOR_BINDING_REQUIREMENTS_TRACE_NO_XLUA_NO_HANDLER_PATCH_RESULT.json",
+    "directorTypeMismatchCsv": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_63_SKILL_TIMELINE_PLAYABLEDIRECTOR_BINDING_REQUIREMENTS_TRACE_NO_XLUA_NO_HANDLER_PATCH_DIRECTOR_TYPE_MISMATCH_MATRIX.csv",
+    "timelineBindingRequirementsCsv": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_63_SKILL_TIMELINE_PLAYABLEDIRECTOR_BINDING_REQUIREMENTS_TRACE_NO_XLUA_NO_HANDLER_PATCH_TIMELINE_TRACKS_EXPOSED_BINDING_REQUIREMENTS.csv",
+    "prefabRestStateVisualCapabilityCsv": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_63_SKILL_TIMELINE_PLAYABLEDIRECTOR_BINDING_REQUIREMENTS_TRACE_NO_XLUA_NO_HANDLER_PATCH_PREFAB_COMPONENT_REST_STATE_VISUAL_CAPABILITY.csv",
+    "classificationNextActionCsv": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_63_SKILL_TIMELINE_PLAYABLEDIRECTOR_BINDING_REQUIREMENTS_TRACE_NO_XLUA_NO_HANDLER_PATCH_CLASSIFICATION_NEXT_ACTION.csv",
+    "unityLog": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_63_SKILL_TIMELINE_PLAYABLEDIRECTOR_BINDING_REQUIREMENTS_TRACE_NO_XLUA_NO_HANDLER_PATCH_UNITY.log",
+    "log": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_63_SKILL_TIMELINE_PLAYABLEDIRECTOR_BINDING_REQUIREMENTS_TRACE_NO_XLUA_NO_HANDLER_PATCH.log"
+  }
+}

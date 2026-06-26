@@ -1,0 +1,182 @@
+{
+  "verdict": "BATTLE49 validated direct GraphicRaycaster/ExecuteEvents click receiver path and handler binding state; EventSystem.RaycastAll target inclusion remains 0 and final playable screen remains false",
+  "visual_status": "real_click_path_reaches_buttons_but_gameplay_handlers_missing",
+  "isFinalRestoredBattleScreen": false,
+  "unityExitCode": 0,
+  "referenceVideoAvailable": false,
+  "referenceVideoPath": "C:\\Users\\godho\\Downloads\\플레이.mp4",
+  "auxiliaryReferenceVideoAvailable": true,
+  "auxiliaryReferenceVideoPath": "C:\\Users\\godho\\Downloads\\참고.mp4",
+  "unitySummary": {
+    "status": "battle49_validate_real_click_input_and_handler_binding",
+    "isFinalRestoredBattleScreen": false,
+    "sourceScene": "Assets/Scenes/Battle48SortOrderDisplayHitOcclusionTrace.unity",
+    "scene": "Assets/Scenes/Battle49RealClickInputHandlerValidation.unity",
+    "capture": "Assets/RestoreCaptures/battle_actor/Battle49RealClickInputHandlerValidation_1920x1080.png",
+    "sourceSceneOpened": true,
+    "sceneSaved": true,
+    "captureExists": true,
+    "reopenValid": true,
+    "readyInputRowCount": 5,
+    "rowCount": 5,
+    "eventSystemCount": 1,
+    "inputModuleCount": 1,
+    "inputModuleSummary": "BATTLE43_EvidenceBackedEventSystem:UnityEngine.EventSystems.StandaloneInputModule:enabled=True",
+    "graphicRaycastTargetIncludedCount": 5,
+    "eventSystemTargetIncludedCount": 0,
+    "executeClickReceiverCount": 5,
+    "clickPathValidatedCount": 5,
+    "uniqueClickPathButtonCount": 5,
+    "onClickListenerBoundCount": 0,
+    "boundGameplayHandlerCount": 0,
+    "executeExceptionCount": 0,
+    "before": {
+      "canvas": 18,
+      "raycaster": 9,
+      "button": 14,
+      "missingScript": 1208
+    },
+    "reopen": {
+      "canvas": 18,
+      "raycaster": 9,
+      "button": 14,
+      "missingScript": 1208
+    },
+    "blockerSummary": "click_path_reaches_button_but_no_bound_gameplay_handler:5",
+    "patchDecision": "real_click_path_reaches_original_buttons_but_gameplay_handler_binding_missing",
+    "failReason": ""
+  },
+  "rowSummary": {
+    "rowCount": 5,
+    "graphicTargetIncludedCount": 5,
+    "eventTargetIncludedCount": 0,
+    "executePointerClickCount": 5,
+    "clickPathValidatedCount": 5,
+    "knownOnClickListenerRows": 0,
+    "gameplayHandlerBoundRows": 0,
+    "executeExceptionRows": 0,
+    "totalParentMissingMonoBehaviours": 34,
+    "blockerCounts": {
+      "click_path_reaches_button_but_no_bound_gameplay_handler": 5
+    },
+    "samples": [
+      {
+        "button": "btnAuto",
+        "pointer": "578/349",
+        "graphicHits": "1",
+        "eventHits": "0",
+        "graphicTarget": "true",
+        "eventTarget": "false",
+        "clickReceiver": "BattleHudSpriteAtlasTextureRuntimeBindingClip05Root/CanvasLuaStateHUD_01_ui_normalbattle/root_opra/btnAuto",
+        "executeClick": "true",
+        "onClickKnown": "0",
+        "missingParents": "6",
+        "handlerBound": "false",
+        "blocker": "click_path_reaches_button_but_no_bound_gameplay_handler"
+      },
+      {
+        "button": "btnBuff",
+        "pointer": "578/439",
+        "graphicHits": "1",
+        "eventHits": "0",
+        "graphicTarget": "true",
+        "eventTarget": "false",
+        "clickReceiver": "BattleHudSpriteAtlasTextureRuntimeBindingClip05Root/CanvasLuaStateHUD_01_ui_normalbattle/root_opra/btnBuff",
+        "executeClick": "true",
+        "onClickKnown": "0",
+        "missingParents": "6",
+        "handlerBound": "false",
+        "blocker": "click_path_reaches_button_but_no_bound_gameplay_handler"
+      },
+      {
+        "button": "btnTwoSpeed",
+        "pointer": "578/169",
+        "graphicHits": "2",
+        "eventHits": "0",
+        "graphicTarget": "true",
+        "eventTarget": "false",
+        "clickReceiver": "BattleHudSpriteAtlasTextureRuntimeBindingClip05Root/CanvasLuaStateHUD_01_ui_normalbattle/root_opra/btnTwoSpeed",
+        "executeClick": "true",
+        "onClickKnown": "0",
+        "missingParents": "6",
+        "handlerBound": "false",
+        "blocker": "click_path_reaches_button_but_no_bound_gameplay_handler"
+      },
+      {
+        "button": "btn_box",
+        "pointer": "2.75/4.15",
+        "graphicHits": "1",
+        "eventHits": "0",
+        "graphicTarget": "true",
+        "eventTarget": "false",
+        "clickReceiver": "BattleHudSpriteAtlasTextureRuntimeBindingClip05Root/CanvasLuaStateHUD_02_ui_battle3dui/root_battle/UI_BattleBoxPage/pop_Content/box_item/btn_box",
+        "executeClick": "true",
+        "onClickKnown": "0",
+        "missingParents": "10",
+        "handlerBound": "false",
+        "blocker": "click_path_reaches_button_but_no_bound_gameplay_handler"
+      },
+      {
+        "button": "btnFastSkill",
+        "pointer": "578/79",
+        "graphicHits": "2",
+        "eventHits": "0",
+        "graphicTarget": "true",
+        "eventTarget": "false",
+        "clickReceiver": "BattleHudSpriteAtlasTextureRuntimeBindingClip05Root/CanvasLuaStateHUD_01_ui_normalbattle/root_opra/btnFastSkill",
+        "executeClick": "true",
+        "onClickKnown": "0",
+        "missingParents": "6",
+        "handlerBound": "false",
+        "blocker": "click_path_reaches_button_but_no_bound_gameplay_handler"
+      }
+    ]
+  },
+  "sceneYamlSummary": {
+    "sceneExists": true,
+    "empty4RaycastIdentifierCount": 7,
+    "missingScriptFileId0Count": 1089
+  },
+  "battle48Carryover": {
+    "visual_status": "raycast_ready_candidate_found_after_sort_display_trace",
+    "reopenRaycastReadyCount": 15,
+    "pointReadyCounts": {
+      "eventCamera_worldToScreen": 5,
+      "b47_before_open_baseline": 5,
+      "viewport_pixelRect": 5
+    }
+  },
+  "localPlayablePayloadManifest": {
+    "available": true,
+    "path": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_LOCAL_PLAYABLE_PAYLOAD_MANIFEST.md",
+    "useCondition": "Use only after input handler binding is restored; local subset is debug/runtime validation only, not full payload or final restore evidence."
+  },
+  "captureMetrics": {
+    "captureExists": true,
+    "width": 1920,
+    "height": 1080,
+    "nonBlackPixelRatio": 0.899287
+  },
+  "battle48ToBattle49CaptureSimilarity": {
+    "available": true,
+    "meanAbsDiff": 0.0,
+    "pixelCorrelation": 1.0
+  },
+  "blocker": "Direct GraphicRaycaster + ExecuteEvents reaches original Button click receivers, but EventSystem.RaycastAll target inclusion is still 0 and no known onClick/EventTrigger/non-Unity gameplay handler is bound in the restored scene.",
+  "nextBlocker": "BATTLE_50_TRACE_ORIGINAL_LUA_IL2CPP_BUTTON_HANDLER_BINDING_AND_MISSING_SCRIPTS",
+  "rootCmdCount": 1,
+  "restoreToolsDirectCmdCount": 0,
+  "outputs": {
+    "report": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_49_VALIDATE_REAL_CLICK_INPUT_AND_HANDLER_BINDING_RESULT.md",
+    "resultJson": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_49_VALIDATE_REAL_CLICK_INPUT_AND_HANDLER_BINDING_RESULT.json",
+    "unityDataJson": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_battle_unity\\Assets\\RestoreData\\battle\\BATTLE_49_VALIDATE_REAL_CLICK_INPUT_AND_HANDLER_BINDING_UNITY.json",
+    "rowsCsv": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_battle_unity\\Assets\\RestoreData\\battle\\BATTLE_49_VALIDATE_REAL_CLICK_INPUT_AND_HANDLER_BINDING_COMPONENTS.csv",
+    "capture": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_battle_unity\\Assets\\RestoreCaptures\\battle_actor\\Battle49RealClickInputHandlerValidation_1920x1080.png",
+    "contactSheet": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_49_VALIDATE_REAL_CLICK_INPUT_AND_HANDLER_BINDING_CONTACT_SHEET.jpg",
+    "unityLog": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\battle\\BATTLE_49_VALIDATE_REAL_CLICK_INPUT_AND_HANDLER_BINDING.log"
+  },
+  "notes": [
+    "BATTLE49 does not add fake transparent overlays, fake onClick handlers, fake gameplay handlers, fake HUD/cards/icons, screenshot paste, or whole-atlas placement.",
+    "플레이.mp4 remains missing when referenceVideoAvailable is false; 참고.mp4 is auxiliary only."
+  ]
+}

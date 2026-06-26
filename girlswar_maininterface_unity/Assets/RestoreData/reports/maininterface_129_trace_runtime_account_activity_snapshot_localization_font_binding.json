@@ -1,0 +1,45 @@
+{
+  "generatedAt": "2026-06-26T02:18:12",
+  "restoredClaim": false,
+  "candidatePatchApplied": false,
+  "searchRoots": [
+    "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted",
+    "C:\\Users\\godho\\Downloads\\girlswar\\reports\\maininterface",
+    "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_maininterface_unity\\Assets\\RestoreData"
+  ],
+  "candidateCount": 7651,
+  "candidateTypeCounts": {
+    "font_tmp_binding": 247,
+    "handler_or_code": 3217,
+    "report_or_restore_artifact": 59,
+    "runtime_snapshot_candidate": 8,
+    "static_datatable": 1216,
+    "static_localization": 1,
+    "unknown": 2903
+  },
+  "canDriveGetActInMainCount": 0,
+  "canDriveGetActInMainCandidates": [],
+  "activeActivityReconstructionPossible": false,
+  "activeActivityReconstructionVerdict": "impossible_from_local_evidence",
+  "localizationEvidence": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_merged_extracted\\extracted\\unity\\bundles\\b_7e5552edea2c10f4\\textassets\\-2670652165716608051_DTLangCommon.txt",
+  "tmpFontMaterialEvidence": "C:\\Users\\godho\\Downloads\\girlswar\\girlswar_maininterface_unity\\Assets\\RestoreData\\reports\\maininterface_tmp_shared_materials.csv",
+  "requiredSnapshotSchemaJson": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\maininterface\\MAININTERFACE_129_required_snapshot_schema.json",
+  "requiredSnapshotSchemaMd": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\maininterface\\MAININTERFACE_129_required_snapshot_schema.md",
+  "searchCsv": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\maininterface\\MAININTERFACE_129_runtime_snapshot_search_candidates.csv",
+  "evidenceCsv": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\maininterface\\MAININTERFACE_129_runtime_snapshot_evidence.csv",
+  "commandPolicy": {
+    "rootCmdCount": 1,
+    "rootCmdFiles": [
+      "C:\\Users\\godho\\Downloads\\girlswar\\00_COMMAND_CENTER.cmd"
+    ],
+    "restoreToolsDirectCmdCount": 0,
+    "restoreToolsDirectCmdFiles": []
+  },
+  "guardrails": {
+    "noActivitySlotArbitraryHide": true,
+    "noBtnDiscordReviewHide": true,
+    "noUiBgRaycastOff": true,
+    "noFakeIconTextSpine": true,
+    "preserveHero1005SkeletonGraphic": true
+  }
+}

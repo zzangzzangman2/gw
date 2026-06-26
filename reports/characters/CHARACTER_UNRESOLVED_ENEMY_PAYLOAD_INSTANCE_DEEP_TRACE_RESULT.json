@@ -1,0 +1,1169 @@
+{
+  "name": "CHARACTER_UNRESOLVED_ENEMY_PAYLOAD_INSTANCE_DEEP_TRACE_NO_FAKE_MAPPING",
+  "generatedBy": "_restore_tools/scripts/build_character_unresolved_enemy_payload_instance_deep_trace.py",
+  "workspace": "C:\\Users\\godho\\Downloads\\girlswar",
+  "sourceInputs": {
+    "localManifestMd": "reports/battle/BATTLE_LOCAL_PLAYABLE_PAYLOAD_MANIFEST.md",
+    "localManifestJson": "reports/battle/BATTLE_LOCAL_PLAYABLE_PAYLOAD_MANIFEST.json",
+    "localManifestCsv": "reports/battle/BATTLE_LOCAL_PLAYABLE_PAYLOAD_MANIFEST.csv",
+    "auditCsv": "reports/battle/BATTLE_59_AUDIT_LOCAL_SOURCE_BACKED_XLUA_RUNTIME_RECOVERY_FEASIBILITY_AND_BOOTSTRAP_REQUIREMENTS_NO_STUB_NO_EXTERNAL_FULL_PAYLOAD_BLOCKER_SEPARATION.csv",
+    "rosterJson": "reports/characters/GIRLSWAR_CHARACTER_ROSTER.json",
+    "gapReport": "reports/characters/GIRLSWAR_CHARACTER_GAP_REPORT.md",
+    "resourceGapDeepTrace": "reports/characters/CHARACTER_RESOURCE_GAP_DEEP_TRACE.md",
+    "character1036CdnTrace": "reports/characters/CHARACTER_1036_CDN_ACQUISITION_TRACE.md",
+    "battleTestPayload": "reports/battle/BATTLE_TEST_PAYLOAD.json",
+    "battlePrototypeManifest": "reports/battle/BATTLE_PROTOTYPE_MANIFEST.json"
+  },
+  "summary": {
+    "mapId": 11001,
+    "targetIds": [
+      1100112,
+      1100113,
+      1100121,
+      1100122,
+      1100123,
+      1100131,
+      1100132,
+      1100133
+    ],
+    "controlIds": [
+      1100111
+    ],
+    "targetStatusCounts": {
+      "not_resolved_from_local_evidence": 8
+    },
+    "sourceBackedProposalCount": 0,
+    "proposalWritten": false,
+    "commandPolicy": {
+      "rootCmdCount": 1,
+      "rootCmdFiles": [
+        "00_COMMAND_CENTER.cmd"
+      ],
+      "restoreToolsDirectCmdCount": 0,
+      "restoreToolsDirectCmdFiles": [],
+      "status": "ok"
+    }
+  },
+  "finalRows": [
+    {
+      "waveNo": 1,
+      "position": 1,
+      "payloadHeroDid": 1100111,
+      "payloadHeroId": -1,
+      "skillDids": [
+        1012101,
+        1012201,
+        1012301,
+        1012401,
+        1012403
+      ],
+      "rankLevel": 2,
+      "curHp": 917880,
+      "curMp": 1000,
+      "targetKind": "control_resolved_reference",
+      "formulaLikeMapWaveSlot": true,
+      "previousLocalStatus": "loadable",
+      "finalStatus": "resolved_loadable_actor_bundle",
+      "reason": "DTMonster -> DTmodel.prefabId -> actor bundle exists locally.",
+      "directMonsterHits": [
+        {
+          "targetId": 1100111,
+          "table": "DTMonster_KEntity",
+          "rowId": 1100111,
+          "modelId": 3001,
+          "modelFound": true,
+          "prefabId": 3001,
+          "bundle": "download/roleprefabsandres/battleprefabandres/3001.assetbundle",
+          "bundleExists": true,
+          "monName": "monstername_3001",
+          "skills": [
+            3001101,
+            0,
+            3001301,
+            0,
+            [
+              0
+            ]
+          ],
+          "source": "girlswar_merged_extracted/extracted/unity/bundles/b_ec5be11875c4dacf/textassets/-2279990784320368822_DTMonster_KEntityTableData.txt"
+        },
+        {
+          "targetId": 1100111,
+          "table": "DTMonster_OEntity",
+          "rowId": 1100111,
+          "modelId": 3001,
+          "modelFound": true,
+          "prefabId": 3001,
+          "bundle": "download/roleprefabsandres/battleprefabandres/3001.assetbundle",
+          "bundleExists": true,
+          "monName": "monstername_3001",
+          "skills": [
+            3001101,
+            0,
+            3001301,
+            0,
+            [
+              0
+            ]
+          ],
+          "source": "girlswar_merged_extracted/extracted/unity/bundles/b_ec5be11875c4dacf/textassets/-6086283079442341522_DTMonster_OEntityTableData.txt"
+        }
+      ],
+      "directMonsterTables": [
+        "DTMonster_KEntity",
+        "DTMonster_OEntity"
+      ],
+      "skillImpact": "control_already_loadable",
+      "affectedSkillStatusCounts": {
+        "loadable": 1,
+        "loadable_with_unresolved_common_resource_deps": 3,
+        "passive_no_timeline": 2
+      }
+    },
+    {
+      "waveNo": 1,
+      "position": 2,
+      "payloadHeroDid": 1100112,
+      "payloadHeroId": -2,
+      "skillDids": [
+        1012101,
+        1012201,
+        1012301,
+        1012401,
+        1012403
+      ],
+      "rankLevel": 2,
+      "curHp": 917880,
+      "curMp": 1000,
+      "targetKind": "unresolved_target",
+      "formulaLikeMapWaveSlot": true,
+      "previousLocalStatus": "unresolved_enemy_payload_instance",
+      "finalStatus": "not_resolved_from_local_evidence",
+      "reason": "No direct DTMonster*/DTmodel actor chain was found for this payload id.",
+      "directMonsterHits": [],
+      "directMonsterTables": [],
+      "skillImpact": "no_change_existing_actor_unresolved",
+      "affectedSkillStatusCounts": {
+        "data_only_missing_actor": 4,
+        "passive_no_timeline": 2
+      }
+    },
+    {
+      "waveNo": 1,
+      "position": 3,
+      "payloadHeroDid": 1100113,
+      "payloadHeroId": -3,
+      "skillDids": [
+        1012101,
+        1012201,
+        1012301,
+        1012401,
+        1012403
+      ],
+      "rankLevel": 2,
+      "curHp": 917880,
+      "curMp": 1000,
+      "targetKind": "unresolved_target",
+      "formulaLikeMapWaveSlot": true,
+      "previousLocalStatus": "unresolved_enemy_payload_instance",
+      "finalStatus": "not_resolved_from_local_evidence",
+      "reason": "No direct DTMonster*/DTmodel actor chain was found for this payload id.",
+      "directMonsterHits": [],
+      "directMonsterTables": [],
+      "skillImpact": "no_change_existing_actor_unresolved",
+      "affectedSkillStatusCounts": {
+        "data_only_missing_actor": 4,
+        "passive_no_timeline": 2
+      }
+    },
+    {
+      "waveNo": 2,
+      "position": 1,
+      "payloadHeroDid": 1100121,
+      "payloadHeroId": -1,
+      "skillDids": [
+        1012101,
+        1012201,
+        1012301,
+        1012401,
+        1012403
+      ],
+      "rankLevel": 2,
+      "curHp": 917880,
+      "curMp": 1000,
+      "targetKind": "unresolved_target",
+      "formulaLikeMapWaveSlot": true,
+      "previousLocalStatus": "unresolved_enemy_payload_instance",
+      "finalStatus": "not_resolved_from_local_evidence",
+      "reason": "No direct DTMonster*/DTmodel actor chain was found for this payload id.",
+      "directMonsterHits": [],
+      "directMonsterTables": [],
+      "skillImpact": "no_change_existing_actor_unresolved",
+      "affectedSkillStatusCounts": {
+        "data_only_missing_actor": 4,
+        "passive_no_timeline": 2
+      }
+    },
+    {
+      "waveNo": 2,
+      "position": 2,
+      "payloadHeroDid": 1100122,
+      "payloadHeroId": -2,
+      "skillDids": [
+        1012101,
+        1012201,
+        1012301,
+        1012401,
+        1012403
+      ],
+      "rankLevel": 2,
+      "curHp": 917880,
+      "curMp": 1000,
+      "targetKind": "unresolved_target",
+      "formulaLikeMapWaveSlot": true,
+      "previousLocalStatus": "unresolved_enemy_payload_instance",
+      "finalStatus": "not_resolved_from_local_evidence",
+      "reason": "No direct DTMonster*/DTmodel actor chain was found for this payload id.",
+      "directMonsterHits": [],
+      "directMonsterTables": [],
+      "skillImpact": "no_change_existing_actor_unresolved",
+      "affectedSkillStatusCounts": {
+        "data_only_missing_actor": 4,
+        "passive_no_timeline": 2
+      }
+    },
+    {
+      "waveNo": 2,
+      "position": 3,
+      "payloadHeroDid": 1100123,
+      "payloadHeroId": -3,
+      "skillDids": [
+        1012101,
+        1012201,
+        1012301,
+        1012401,
+        1012403
+      ],
+      "rankLevel": 2,
+      "curHp": 917880,
+      "curMp": 1000,
+      "targetKind": "unresolved_target",
+      "formulaLikeMapWaveSlot": true,
+      "previousLocalStatus": "unresolved_enemy_payload_instance",
+      "finalStatus": "not_resolved_from_local_evidence",
+      "reason": "No direct DTMonster*/DTmodel actor chain was found for this payload id.",
+      "directMonsterHits": [],
+      "directMonsterTables": [],
+      "skillImpact": "no_change_existing_actor_unresolved",
+      "affectedSkillStatusCounts": {
+        "data_only_missing_actor": 4,
+        "passive_no_timeline": 2
+      }
+    },
+    {
+      "waveNo": 3,
+      "position": 1,
+      "payloadHeroDid": 1100131,
+      "payloadHeroId": -1,
+      "skillDids": [
+        1012101,
+        1012101,
+        1001401,
+        1001403
+      ],
+      "rankLevel": 2,
+      "curHp": 917880,
+      "curMp": 1000,
+      "targetKind": "unresolved_target",
+      "formulaLikeMapWaveSlot": true,
+      "previousLocalStatus": "unresolved_enemy_payload_instance",
+      "finalStatus": "not_resolved_from_local_evidence",
+      "reason": "No direct DTMonster*/DTmodel actor chain was found for this payload id.",
+      "directMonsterHits": [],
+      "directMonsterTables": [],
+      "skillImpact": "no_change_existing_actor_unresolved",
+      "affectedSkillStatusCounts": {
+        "data_only_missing_actor": 1,
+        "passive_no_timeline": 2
+      }
+    },
+    {
+      "waveNo": 3,
+      "position": 2,
+      "payloadHeroDid": 1100132,
+      "payloadHeroId": -2,
+      "skillDids": [
+        1012101,
+        1012101,
+        1001401,
+        1001403
+      ],
+      "rankLevel": 2,
+      "curHp": 917880,
+      "curMp": 1000,
+      "targetKind": "unresolved_target",
+      "formulaLikeMapWaveSlot": true,
+      "previousLocalStatus": "unresolved_enemy_payload_instance",
+      "finalStatus": "not_resolved_from_local_evidence",
+      "reason": "No direct DTMonster*/DTmodel actor chain was found for this payload id.",
+      "directMonsterHits": [],
+      "directMonsterTables": [],
+      "skillImpact": "no_change_existing_actor_unresolved",
+      "affectedSkillStatusCounts": {
+        "data_only_missing_actor": 1,
+        "passive_no_timeline": 2
+      }
+    },
+    {
+      "waveNo": 3,
+      "position": 3,
+      "payloadHeroDid": 1100133,
+      "payloadHeroId": -3,
+      "skillDids": [
+        1012101,
+        1012101,
+        1001401,
+        1001403
+      ],
+      "rankLevel": 2,
+      "curHp": 917880,
+      "curMp": 1000,
+      "targetKind": "unresolved_target",
+      "formulaLikeMapWaveSlot": true,
+      "previousLocalStatus": "unresolved_enemy_payload_instance",
+      "finalStatus": "not_resolved_from_local_evidence",
+      "reason": "No direct DTMonster*/DTmodel actor chain was found for this payload id.",
+      "directMonsterHits": [],
+      "directMonsterTables": [],
+      "skillImpact": "no_change_existing_actor_unresolved",
+      "affectedSkillStatusCounts": {
+        "data_only_missing_actor": 1,
+        "passive_no_timeline": 2
+      }
+    }
+  ],
+  "proposalRows": [],
+  "searched": {
+    "monsterTables": [
+      "DTMonsterEntity",
+      "DTMonster_FEntity",
+      "DTMonster_GEntity",
+      "DTMonster_HEntity",
+      "DTMonster_KEntity",
+      "DTMonster_OEntity"
+    ],
+    "stageBattleTables": [
+      "DTMapsWaveEntity",
+      "DTMapsWave_FEntity",
+      "DTMapsWave_GEntity",
+      "DTMapsWave_HEntity",
+      "DTMapsWave_KEntity",
+      "DTBattleAttrEntity",
+      "DTBattleEntity",
+      "DTBattlePreviewDetailEntity",
+      "DTBattlePreviewEntity",
+      "DTBattleTestPetAttrEntity",
+      "DTBattleTestPetEntity",
+      "DTBattleTestTreasureEntity",
+      "DTBattleZoneEntity"
+    ],
+    "decodedLuaRoots": [
+      "girlswar_merged_extracted/decoded/xlua_battle",
+      "girlswar_merged_extracted/decoded/xlua_guildmain_runtime_trace"
+    ],
+    "assetbundleAndRestoreIndexes": [
+      "girlswar_merged_extracted/indexes/assetbundles.csv",
+      "girlswar_merged_extracted/indexes/merged_files.csv",
+      "girlswar_merged_extracted/indexes/conflicts.csv",
+      "girlswar_merged_extracted/indexes/versionfile_VersionFile_bytes.csv",
+      "girlswar_merged_extracted/indexes/versionfile_CDNVersionFile_bytes.csv"
+    ],
+    "binaryStringRefs": "il2cpp/global-metadata/libil2cpp plus AssetInfo/AssetGuid restore indexes"
+  },
+  "stageWaveRowsForMap": [
+    {
+      "table": "DTMapsWaveEntity",
+      "rowId": 1,
+      "mapId": 11001,
+      "wave": 1,
+      "monsterLists": [
+        0,
+        1100110,
+        0,
+        0,
+        0,
+        0
+      ],
+      "newMonsterLists": [
+        0,
+        1100110,
+        0,
+        0,
+        0,
+        0
+      ],
+      "monsterEffect": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "name": "heroname_1003"
+    },
+    {
+      "table": "DTMapsWave_FEntity",
+      "rowId": 1,
+      "mapId": 11001,
+      "wave": 1,
+      "monsterLists": [
+        0,
+        1100110,
+        0,
+        0,
+        0,
+        0
+      ],
+      "newMonsterLists": [
+        0,
+        1100110,
+        0,
+        0,
+        0,
+        0
+      ],
+      "monsterEffect": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "name": "heroname_1003"
+    },
+    {
+      "table": "DTMapsWave_GEntity",
+      "rowId": 1,
+      "mapId": 11001,
+      "wave": 1,
+      "monsterLists": [
+        0,
+        1100110,
+        0,
+        0,
+        0,
+        0
+      ],
+      "newMonsterLists": [
+        0,
+        1100110,
+        0,
+        0,
+        0,
+        0
+      ],
+      "monsterEffect": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "name": "heroname_1003"
+    },
+    {
+      "table": "DTMapsWave_HEntity",
+      "rowId": 1,
+      "mapId": 11001,
+      "wave": 1,
+      "monsterLists": [
+        0,
+        1100110,
+        0,
+        0,
+        0,
+        0
+      ],
+      "newMonsterLists": [
+        0,
+        1100110,
+        0,
+        0,
+        0,
+        0
+      ],
+      "monsterEffect": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "name": "heroname_1003"
+    },
+    {
+      "table": "DTMapsWave_KEntity",
+      "rowId": 1,
+      "mapId": 11001,
+      "wave": 1,
+      "monsterLists": [
+        0,
+        1100510,
+        0,
+        1100512,
+        1100513,
+        1100511
+      ],
+      "newMonsterLists": [
+        0,
+        1100510,
+        0,
+        1100512,
+        1100513,
+        1100511
+      ],
+      "monsterEffect": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "name": "heroname_1019"
+    }
+  ],
+  "samePrefixMonsterRows": [
+    {
+      "table": "DTMonsterEntity",
+      "rowId": 1100110,
+      "modelId": 1003,
+      "monName": "heroname_1003",
+      "note": "same 11001 prefix evidence only; not an alias candidate without code/table join"
+    },
+    {
+      "table": "DTMonster_FEntity",
+      "rowId": 1100110,
+      "modelId": 1003,
+      "monName": "heroname_1003",
+      "note": "same 11001 prefix evidence only; not an alias candidate without code/table join"
+    },
+    {
+      "table": "DTMonster_GEntity",
+      "rowId": 1100110,
+      "modelId": 1003,
+      "monName": "heroname_1003",
+      "note": "same 11001 prefix evidence only; not an alias candidate without code/table join"
+    },
+    {
+      "table": "DTMonster_HEntity",
+      "rowId": 1100110,
+      "modelId": 1003,
+      "monName": "heroname_1003",
+      "note": "same 11001 prefix evidence only; not an alias candidate without code/table join"
+    },
+    {
+      "table": "DTMonster_KEntity",
+      "rowId": 1100110,
+      "modelId": 3006,
+      "monName": "monstername_3006",
+      "note": "same 11001 prefix evidence only; not an alias candidate without code/table join"
+    },
+    {
+      "table": "DTMonster_KEntity",
+      "rowId": 1100111,
+      "modelId": 3001,
+      "monName": "monstername_3001",
+      "note": "same 11001 prefix evidence only; not an alias candidate without code/table join"
+    },
+    {
+      "table": "DTMonster_OEntity",
+      "rowId": 1100110,
+      "modelId": 3006,
+      "monName": "monstername_3006",
+      "note": "same 11001 prefix evidence only; not an alias candidate without code/table join"
+    },
+    {
+      "table": "DTMonster_OEntity",
+      "rowId": 1100111,
+      "modelId": 3001,
+      "monName": "monstername_3001",
+      "note": "same 11001 prefix evidence only; not an alias candidate without code/table join"
+    }
+  ],
+  "evidenceRows": [
+    {
+      "targetId": 1100111,
+      "evidenceKind": "direct_monster_actor_chain",
+      "status": "resolved_loadable_actor_bundle",
+      "source": "girlswar_merged_extracted/extracted/unity/bundles/b_ec5be11875c4dacf/textassets/-2279990784320368822_DTMonster_KEntityTableData.txt",
+      "table": "DTMonster_KEntity",
+      "rowId": 1100111,
+      "modelId": 3001,
+      "prefabId": 3001,
+      "bundle": "download/roleprefabsandres/battleprefabandres/3001.assetbundle",
+      "bundleExists": true,
+      "value": "monstername_3001",
+      "note": "authoritative direct actor chain evidence"
+    },
+    {
+      "targetId": 1100111,
+      "evidenceKind": "direct_monster_actor_chain",
+      "status": "resolved_loadable_actor_bundle",
+      "source": "girlswar_merged_extracted/extracted/unity/bundles/b_ec5be11875c4dacf/textassets/-6086283079442341522_DTMonster_OEntityTableData.txt",
+      "table": "DTMonster_OEntity",
+      "rowId": 1100111,
+      "modelId": 3001,
+      "prefabId": 3001,
+      "bundle": "download/roleprefabsandres/battleprefabandres/3001.assetbundle",
+      "bundleExists": true,
+      "value": "monstername_3001",
+      "note": "authoritative direct actor chain evidence"
+    },
+    {
+      "targetId": 1100112,
+      "evidenceKind": "direct_monster_actor_chain_absent",
+      "status": "not_resolved_from_local_evidence",
+      "source": "DTMonsterEntity, DTMonster_FEntity, DTMonster_GEntity, DTMonster_HEntity, DTMonster_KEntity, DTMonster_OEntity",
+      "note": "searched all decoded non-Attr DTMonster*Entity tables with modelID fields"
+    },
+    {
+      "targetId": 1100113,
+      "evidenceKind": "direct_monster_actor_chain_absent",
+      "status": "not_resolved_from_local_evidence",
+      "source": "DTMonsterEntity, DTMonster_FEntity, DTMonster_GEntity, DTMonster_HEntity, DTMonster_KEntity, DTMonster_OEntity",
+      "note": "searched all decoded non-Attr DTMonster*Entity tables with modelID fields"
+    },
+    {
+      "targetId": 1100121,
+      "evidenceKind": "direct_monster_actor_chain_absent",
+      "status": "not_resolved_from_local_evidence",
+      "source": "DTMonsterEntity, DTMonster_FEntity, DTMonster_GEntity, DTMonster_HEntity, DTMonster_KEntity, DTMonster_OEntity",
+      "note": "searched all decoded non-Attr DTMonster*Entity tables with modelID fields"
+    },
+    {
+      "targetId": 1100122,
+      "evidenceKind": "direct_monster_actor_chain_absent",
+      "status": "not_resolved_from_local_evidence",
+      "source": "DTMonsterEntity, DTMonster_FEntity, DTMonster_GEntity, DTMonster_HEntity, DTMonster_KEntity, DTMonster_OEntity",
+      "note": "searched all decoded non-Attr DTMonster*Entity tables with modelID fields"
+    },
+    {
+      "targetId": 1100123,
+      "evidenceKind": "direct_monster_actor_chain_absent",
+      "status": "not_resolved_from_local_evidence",
+      "source": "DTMonsterEntity, DTMonster_FEntity, DTMonster_GEntity, DTMonster_HEntity, DTMonster_KEntity, DTMonster_OEntity",
+      "note": "searched all decoded non-Attr DTMonster*Entity tables with modelID fields"
+    },
+    {
+      "targetId": 1100131,
+      "evidenceKind": "direct_monster_actor_chain_absent",
+      "status": "not_resolved_from_local_evidence",
+      "source": "DTMonsterEntity, DTMonster_FEntity, DTMonster_GEntity, DTMonster_HEntity, DTMonster_KEntity, DTMonster_OEntity",
+      "note": "searched all decoded non-Attr DTMonster*Entity tables with modelID fields"
+    },
+    {
+      "targetId": 1100132,
+      "evidenceKind": "direct_monster_actor_chain_absent",
+      "status": "not_resolved_from_local_evidence",
+      "source": "DTMonsterEntity, DTMonster_FEntity, DTMonster_GEntity, DTMonster_HEntity, DTMonster_KEntity, DTMonster_OEntity",
+      "note": "searched all decoded non-Attr DTMonster*Entity tables with modelID fields"
+    },
+    {
+      "targetId": 1100133,
+      "evidenceKind": "direct_monster_actor_chain_absent",
+      "status": "not_resolved_from_local_evidence",
+      "source": "DTMonsterEntity, DTMonster_FEntity, DTMonster_GEntity, DTMonster_HEntity, DTMonster_KEntity, DTMonster_OEntity",
+      "note": "searched all decoded non-Attr DTMonster*Entity tables with modelID fields"
+    },
+    {
+      "table": "DTMonsterEntity",
+      "rowId": 1100110,
+      "modelId": 1003,
+      "monName": "heroname_1003",
+      "note": "same 11001 prefix evidence only; not an alias candidate without code/table join",
+      "targetId": "",
+      "evidenceKind": "same_prefix_monster_row",
+      "status": "context_only"
+    },
+    {
+      "table": "DTMonster_FEntity",
+      "rowId": 1100110,
+      "modelId": 1003,
+      "monName": "heroname_1003",
+      "note": "same 11001 prefix evidence only; not an alias candidate without code/table join",
+      "targetId": "",
+      "evidenceKind": "same_prefix_monster_row",
+      "status": "context_only"
+    },
+    {
+      "table": "DTMonster_GEntity",
+      "rowId": 1100110,
+      "modelId": 1003,
+      "monName": "heroname_1003",
+      "note": "same 11001 prefix evidence only; not an alias candidate without code/table join",
+      "targetId": "",
+      "evidenceKind": "same_prefix_monster_row",
+      "status": "context_only"
+    },
+    {
+      "table": "DTMonster_HEntity",
+      "rowId": 1100110,
+      "modelId": 1003,
+      "monName": "heroname_1003",
+      "note": "same 11001 prefix evidence only; not an alias candidate without code/table join",
+      "targetId": "",
+      "evidenceKind": "same_prefix_monster_row",
+      "status": "context_only"
+    },
+    {
+      "table": "DTMonster_KEntity",
+      "rowId": 1100110,
+      "modelId": 3006,
+      "monName": "monstername_3006",
+      "note": "same 11001 prefix evidence only; not an alias candidate without code/table join",
+      "targetId": "",
+      "evidenceKind": "same_prefix_monster_row",
+      "status": "context_only"
+    },
+    {
+      "table": "DTMonster_KEntity",
+      "rowId": 1100111,
+      "modelId": 3001,
+      "monName": "monstername_3001",
+      "note": "same 11001 prefix evidence only; not an alias candidate without code/table join",
+      "targetId": "",
+      "evidenceKind": "same_prefix_monster_row",
+      "status": "context_only"
+    },
+    {
+      "table": "DTMonster_OEntity",
+      "rowId": 1100110,
+      "modelId": 3006,
+      "monName": "monstername_3006",
+      "note": "same 11001 prefix evidence only; not an alias candidate without code/table join",
+      "targetId": "",
+      "evidenceKind": "same_prefix_monster_row",
+      "status": "context_only"
+    },
+    {
+      "table": "DTMonster_OEntity",
+      "rowId": 1100111,
+      "modelId": 3001,
+      "monName": "monstername_3001",
+      "note": "same 11001 prefix evidence only; not an alias candidate without code/table join",
+      "targetId": "",
+      "evidenceKind": "same_prefix_monster_row",
+      "status": "context_only"
+    },
+    {
+      "targetId": "",
+      "evidenceKind": "map_wave_row_for_payload_map",
+      "status": "context_only",
+      "source": "DTMapsWaveEntity",
+      "rowId": 1,
+      "value": "{\"table\": \"DTMapsWaveEntity\", \"rowId\": 1, \"mapId\": 11001, \"wave\": 1, \"monsterLists\": [0, 1100110, 0, 0, 0, 0], \"newMonsterLists\": [0, 1100110, 0, 0, 0, 0], \"monsterEffect\": [0, 1, 0, 0, 0, 0], \"name\": \"heroname_1003\"}",
+      "note": "stage/wave source row; not an alias unless payload id appears or code maps to it"
+    },
+    {
+      "targetId": "",
+      "evidenceKind": "map_wave_row_for_payload_map",
+      "status": "context_only",
+      "source": "DTMapsWave_FEntity",
+      "rowId": 1,
+      "value": "{\"table\": \"DTMapsWave_FEntity\", \"rowId\": 1, \"mapId\": 11001, \"wave\": 1, \"monsterLists\": [0, 1100110, 0, 0, 0, 0], \"newMonsterLists\": [0, 1100110, 0, 0, 0, 0], \"monsterEffect\": [0, 1, 0, 0, 0, 0], \"name\": \"heroname_1003\"}",
+      "note": "stage/wave source row; not an alias unless payload id appears or code maps to it"
+    },
+    {
+      "targetId": "",
+      "evidenceKind": "map_wave_row_for_payload_map",
+      "status": "context_only",
+      "source": "DTMapsWave_GEntity",
+      "rowId": 1,
+      "value": "{\"table\": \"DTMapsWave_GEntity\", \"rowId\": 1, \"mapId\": 11001, \"wave\": 1, \"monsterLists\": [0, 1100110, 0, 0, 0, 0], \"newMonsterLists\": [0, 1100110, 0, 0, 0, 0], \"monsterEffect\": [0, 1, 0, 0, 0, 0], \"name\": \"heroname_1003\"}",
+      "note": "stage/wave source row; not an alias unless payload id appears or code maps to it"
+    },
+    {
+      "targetId": "",
+      "evidenceKind": "map_wave_row_for_payload_map",
+      "status": "context_only",
+      "source": "DTMapsWave_HEntity",
+      "rowId": 1,
+      "value": "{\"table\": \"DTMapsWave_HEntity\", \"rowId\": 1, \"mapId\": 11001, \"wave\": 1, \"monsterLists\": [0, 1100110, 0, 0, 0, 0], \"newMonsterLists\": [0, 1100110, 0, 0, 0, 0], \"monsterEffect\": [0, 1, 0, 0, 0, 0], \"name\": \"heroname_1003\"}",
+      "note": "stage/wave source row; not an alias unless payload id appears or code maps to it"
+    },
+    {
+      "targetId": "",
+      "evidenceKind": "map_wave_row_for_payload_map",
+      "status": "context_only",
+      "source": "DTMapsWave_KEntity",
+      "rowId": 1,
+      "value": "{\"table\": \"DTMapsWave_KEntity\", \"rowId\": 1, \"mapId\": 11001, \"wave\": 1, \"monsterLists\": [0, 1100510, 0, 1100512, 1100513, 1100511], \"newMonsterLists\": [0, 1100510, 0, 1100512, 1100513, 1100511], \"monsterEffect\": [0, 0, 0, 0, 0, 0], \"name\": \"heroname_1019\"}",
+      "note": "stage/wave source row; not an alias unless payload id appears or code maps to it"
+    },
+    {
+      "targetId": "",
+      "evidenceKind": "decoded_lua_string_or_flow",
+      "source": "girlswar_merged_extracted/decoded/xlua_battle/download_xlualogic_modules_battle/-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+      "line": 124,
+      "value": "self.DTMonsterRow=nil",
+      "note": "id hit is payload/string evidence only unless joined by DTMonster/DTmodel chain"
+    },
+    {
+      "targetId": "",
+      "evidenceKind": "decoded_lua_string_or_flow",
+      "source": "girlswar_merged_extracted/decoded/xlua_battle/download_xlualogic_modules_battle/-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+      "line": 613,
+      "value": "self.DTMonsterRow=t.GetEntity(self.heroDid)",
+      "note": "id hit is payload/string evidence only unless joined by DTMonster/DTmodel chain"
+    },
+    {
+      "targetId": "",
+      "evidenceKind": "decoded_lua_string_or_flow",
+      "source": "girlswar_merged_extracted/decoded/xlua_battle/download_xlualogic_modules_battle/-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+      "line": 614,
+      "value": "if(not self.DTMonsterRow and GameInit.DebugLog and not GameInit.IsBattlePlayVerify)then",
+      "note": "id hit is payload/string evidence only unless joined by DTMonster/DTmodel chain"
+    },
+    {
+      "targetId": "",
+      "evidenceKind": "decoded_lua_string_or_flow",
+      "source": "girlswar_merged_extracted/decoded/xlua_battle/download_xlualogic_modules_battle/-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+      "line": 617,
+      "value": "self.hideBar=self.DTMonsterRow.hideBar==1 and true or false",
+      "note": "id hit is payload/string evidence only unless joined by DTMonster/DTmodel chain"
+    },
+    {
+      "targetId": "",
+      "evidenceKind": "decoded_lua_string_or_flow",
+      "source": "girlswar_merged_extracted/decoded/xlua_battle/download_xlualogic_modules_battle/-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+      "line": 618,
+      "value": "self.hideShadow=self.DTMonsterRow.hideShadow==1 and true or false",
+      "note": "id hit is payload/string evidence only unless joined by DTMonster/DTmodel chain"
+    },
+    {
+      "targetId": "",
+      "evidenceKind": "decoded_lua_string_or_flow",
+      "source": "girlswar_merged_extracted/decoded/xlua_battle/download_xlualogic_modules_battle/-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+      "line": 619,
+      "value": "self.DTmodelRow=n.GetEntity(self.DTMonsterRow.modelID)",
+      "note": "id hit is payload/string evidence only unless joined by DTMonster/DTmodel chain"
+    },
+    {
+      "targetId": "",
+      "evidenceKind": "decoded_lua_string_or_flow",
+      "source": "girlswar_merged_extracted/decoded/xlua_battle/download_xlualogic_modules_battle/-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+      "line": 624,
+      "value": "self.NickName=GameEntry.Localization:GetString(self.DTMonsterRow.monName,CS.YouYou.YouYouLanguageCategory.LangBattle)",
+      "note": "id hit is payload/string evidence only unless joined by DTMonster/DTmodel chain"
+    },
+    {
+      "targetId": "",
+      "evidenceKind": "decoded_lua_string_or_flow",
+      "source": "girlswar_merged_extracted/decoded/xlua_battle/download_xlualogic_modules_battle/-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+      "line": 626,
+      "value": "self.HeroBattleInfo:SetMonsterSkill(self.DTMonsterRow)",
+      "note": "id hit is payload/string evidence only unless joined by DTMonster/DTmodel chain"
+    },
+    {
+      "targetId": "",
+      "evidenceKind": "decoded_lua_string_or_flow",
+      "source": "girlswar_merged_extracted/decoded/xlua_battle/download_xlualogic_modules_battle/-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+      "line": 630,
+      "value": "self.profession=self.DTMonsterRow.profession",
+      "note": "id hit is payload/string evidence only unless joined by DTMonster/DTmodel chain"
+    },
+    {
+      "targetId": "",
+      "evidenceKind": "decoded_lua_string_or_flow",
+      "source": "girlswar_merged_extracted/decoded/xlua_battle/download_xlualogic_modules_battle/-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+      "line": 631,
+      "value": "self.HeroBattleInfo.Level=self.DTMonsterRow.monLevel or 1",
+      "note": "id hit is payload/string evidence only unless joined by DTMonster/DTmodel chain"
+    },
+    {
+      "targetId": "",
+      "evidenceKind": "decoded_lua_string_or_flow",
+      "source": "girlswar_merged_extracted/decoded/xlua_battle/download_xlualogic_modules_battle/-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+      "line": 647,
+      "value": "self.rankLevel=self.DTMonsterRow.rankLevel",
+      "note": "id hit is payload/string evidence only unless joined by DTMonster/DTmodel chain"
+    },
+    {
+      "targetId": "",
+      "evidenceKind": "decoded_lua_string_or_flow",
+      "source": "girlswar_merged_extracted/decoded/xlua_battle/download_xlualogic_modules_battle/-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+      "line": 648,
+      "value": "self.lockLevel=self.DTMonsterRow.lockLevel",
+      "note": "id hit is payload/string evidence only unless joined by DTMonster/DTmodel chain"
+    },
+    {
+      "targetId": "",
+      "evidenceKind": "decoded_lua_string_or_flow",
+      "source": "girlswar_merged_extracted/decoded/xlua_battle/download_xlualogic_modules_battle/-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+      "line": 649,
+      "value": "self.soulId=self.DTMonsterRow.soulId",
+      "note": "id hit is payload/string evidence only unless joined by DTMonster/DTmodel chain"
+    },
+    {
+      "targetId": "",
+      "evidenceKind": "decoded_lua_string_or_flow",
+      "source": "girlswar_merged_extracted/decoded/xlua_battle/download_xlualogic_modules_battle/-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+      "line": 660,
+      "value": "self.DTMonsterRow=t.GetEntity(self.heroDid)",
+      "note": "id hit is payload/string evidence only unless joined by DTMonster/DTmodel chain"
+    },
+    {
+      "targetId": "",
+      "evidenceKind": "decoded_lua_string_or_flow",
+      "source": "girlswar_merged_extracted/decoded/xlua_battle/download_xlualogic_modules_battle/-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+      "line": 661,
+      "value": "if(not self.DTMonsterRow and GameInit.DebugLog and not GameInit.IsBattlePlayVerify)then",
+      "note": "id hit is payload/string evidence only unless joined by DTMonster/DTmodel chain"
+    },
+    {
+      "targetId": "",
+      "evidenceKind": "decoded_lua_string_or_flow",
+      "source": "girlswar_merged_extracted/decoded/xlua_battle/download_xlualogic_modules_battle/-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+      "line": 664,
+      "value": "self.hideBar=self.DTMonsterRow.hideBar==1 and true or false",
+      "note": "id hit is payload/string evidence only unless joined by DTMonster/DTmodel chain"
+    },
+    {
+      "targetId": "",
+      "evidenceKind": "decoded_lua_string_or_flow",
+      "source": "girlswar_merged_extracted/decoded/xlua_battle/download_xlualogic_modules_battle/-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+      "line": 665,
+      "value": "self.hideShadow=self.DTMonsterRow.hideShadow==1 and true or false",
+      "note": "id hit is payload/string evidence only unless joined by DTMonster/DTmodel chain"
+    },
+    {
+      "targetId": "",
+      "evidenceKind": "decoded_lua_string_or_flow",
+      "source": "girlswar_merged_extracted/decoded/xlua_battle/download_xlualogic_modules_battle/-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+      "line": 666,
+      "value": "self.DTmodelRow=n.GetEntity(self.DTMonsterRow.modelID)",
+      "note": "id hit is payload/string evidence only unless joined by DTMonster/DTmodel chain"
+    },
+    {
+      "targetId": "",
+      "evidenceKind": "decoded_lua_string_or_flow",
+      "source": "girlswar_merged_extracted/decoded/xlua_battle/download_xlualogic_modules_battle/-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+      "line": 670,
+      "value": "self.soulId=self.DTMonsterRow.soulId",
+      "note": "id hit is payload/string evidence only unless joined by DTMonster/DTmodel chain"
+    },
+    {
+      "targetId": "",
+      "evidenceKind": "decoded_lua_string_or_flow",
+      "source": "girlswar_merged_extracted/decoded/xlua_battle/download_xlualogic_modules_battle/-2133702496468653963_HeroCtrl_security_xor_raw.lua",
+      "line": 672,
+      "value": "self.HeroBattleInfo:SetMonsterSkill(self.DTMonsterRow)",
+      "note": "id hit is payload/string evidence only unless joined by DTMonster/DTmodel chain"
+    },
+    {
+      "targetId": "",
+      "evidenceKind": "decoded_lua_string_or_flow",
+      "source": "girlswar_merged_extracted/decoded/xlua_battle/download_xlualogic_modules_battle/191332877364712173_BattleUtil_security_xor_raw.lua",
+      "line": 1900,
+      "value": "LuaUtils.SetImageSprite(t[\"im_quality\"],string.format(\"UICommonOther/%s\",CardQuailtyFont[e.DTMonsterRow.star]),true)",
+      "note": "id hit is payload/string evidence only unless joined by DTMonster/DTmodel chain"
+    },
+    {
+      "targetId": "",
+      "evidenceKind": "decoded_lua_string_or_flow",
+      "source": "girlswar_merged_extracted/decoded/xlua_battle/download_xlualogic_modules_battle/2075196316440867225_BattleBeforeDataUtil_security_xor_raw.lua",
+      "line": 163,
+      "value": "function e:GetFormationFromMonsterList(t,a,f,o)",
+      "note": "id hit is payload/string evidence only unless joined by DTMonster/DTmodel chain"
+    },
+    {
+      "targetId": "",
+      "evidenceKind": "decoded_lua_string_or_flow",
+      "source": "girlswar_merged_extracted/decoded/xlua_battle/download_xlualogic_modules_battle/2075196316440867225_BattleBeforeDataUtil_security_xor_raw.lua",
+      "line": 180,
+      "value": "heroDid=a,",
+      "note": "id hit is payload/string evidence only unless joined by DTMonster/DTmodel chain"
+    },
+    {
+      "targetId": "",
+      "evidenceKind": "decoded_lua_string_or_flow",
+      "source": "girlswar_merged_extracted/decoded/xlua_battle/download_xlualogic_modules_battle/2075196316440867225_BattleBeforeDataUtil_security_xor_raw.lua",
+      "line": 230,
+      "value": "heroDid=a,",
+      "note": "id hit is payload/string evidence only unless joined by DTMonster/DTmodel chain"
+    },
+    {
+      "targetId": "",
+      "evidenceKind": "decoded_lua_string_or_flow",
+      "source": "girlswar_merged_extracted/decoded/xlua_battle/download_xlualogic_modules_battle/7184371722040177329_CampainBBData_security_xor_raw.lua",
+      "line": 39,
+      "value": "local a=c.GetMapsWave(s,self.battleType)",
+      "note": "id hit is payload/string evidence only unless joined by DTMonster/DTmodel chain"
+    },
+    {
+      "targetId": "",
+      "evidenceKind": "decoded_lua_string_or_flow",
+      "source": "girlswar_merged_extracted/decoded/xlua_battle/download_xlualogic_modules_battle/7184371722040177329_CampainBBData_security_xor_raw.lua",
+      "line": 43,
+      "value": "local r,s,o,i,n=t:GetFormationFromMonsterList(self.battleType,o,u,i)",
+      "note": "id hit is payload/string evidence only unless joined by DTMonster/DTmodel chain"
+    },
+    {
+      "targetId": "1100111,1100112,1100113,1100121,1100122,1100123,1100131,1100132,1100133",
+      "evidenceKind": "decoded_lua_string_or_flow",
+      "source": "girlswar_merged_extracted/decoded/xlua_battle/download_xlualogic_modules_procedure/-3424355311143813575_ProcedureNormalBattle_security_xor_raw.lua",
+      "line": 589,
+      "value": "local t='{\"battleInfo\":{\"ourHeros\":[{\"heroDid\":1036,\"status\":2,\"rankLevel\":3,\"heroId\":51469,\"skills\":[{\"skillType\":1,\"skillDid\":1036101},{\"skillType\":1,\"skillDid\":1036201},{\"skillType\":1,\"skillDid\":1036301},{\"skillType\":2,\"skillDid\":1036401},{\"skillType\":2,\"skillDid\":1036402},{\"skillType\":2,\"skillDid\":0}],\"curMp\":1000,\"soul\":{\"soulType\":8,\"soulLevel\":1,\"soul",
+      "note": "id hit is payload/string evidence only unless joined by DTMonster/DTmodel chain"
+    },
+    {
+      "targetId": "",
+      "evidenceKind": "decoded_lua_string_or_flow",
+      "source": "girlswar_merged_extracted/decoded/xlua_battle/download_xlualogic_modules_procedure/-3424355311143813575_ProcedureNormalBattle_security_xor_raw.lua",
+      "line": 590,
+      "value": "e.FightPlayData=JsonUtil.decode(t).battleInfo",
+      "note": "id hit is payload/string evidence only unless joined by DTMonster/DTmodel chain"
+    },
+    {
+      "targetId": "",
+      "evidenceKind": "decoded_lua_string_or_flow",
+      "source": "girlswar_merged_extracted/decoded/xlua_battle/download_xlualogic_modules_procedure/-3424355311143813575_ProcedureNormalBattle_security_xor_raw.lua",
+      "line": 1476,
+      "value": "e.CurrMapsWaves=s.GetMapsWave(e.MapId,ModulesInit.ProcedureNormalBattle.BattleType)",
+      "note": "id hit is payload/string evidence only unless joined by DTMonster/DTmodel chain"
+    },
+    {
+      "targetId": "",
+      "evidenceKind": "decoded_lua_string_or_flow",
+      "source": "girlswar_merged_extracted/decoded/xlua_battle/download_xlualogic_modules_procedure/-3424355311143813575_ProcedureNormalBattle_security_xor_raw.lua",
+      "line": 1483,
+      "value": "e.CurrMapsWaves=s.GetMapsWave(e.MapId,ModulesInit.ProcedureNormalBattle.BattleType)",
+      "note": "id hit is payload/string evidence only unless joined by DTMonster/DTmodel chain"
+    },
+    {
+      "targetId": "",
+      "evidenceKind": "decoded_lua_string_or_flow",
+      "source": "girlswar_merged_extracted/decoded/xlua_battle/download_xlualogic_modules_procedure/-3424355311143813575_ProcedureNormalBattle_security_xor_raw.lua",
+      "line": 1723,
+      "value": "e.CurrMapsWaves=s.GetMapsWave(e.MapId,ModulesInit.ProcedureNormalBattle.BattleType)",
+      "note": "id hit is payload/string evidence only unless joined by DTMonster/DTmodel chain"
+    },
+    {
+      "targetId": "",
+      "evidenceKind": "decoded_lua_string_or_flow",
+      "source": "girlswar_merged_extracted/decoded/xlua_guildmain_runtime_trace/7394964758178317413_UI_GuildTerritory_TeamBattle_security_xor_raw.lua",
+      "line": 634,
+      "value": "e.heroDid=a.heroDid",
+      "note": "id hit is payload/string evidence only unless joined by DTMonster/DTmodel chain"
+    },
+    {
+      "evidenceKind": "searched_index_no_id_hit",
+      "source": "girlswar_merged_extracted/indexes/assetbundles.csv",
+      "note": "no unresolved/control id string hit"
+    },
+    {
+      "evidenceKind": "searched_index_no_id_hit",
+      "source": "girlswar_merged_extracted/indexes/merged_files.csv",
+      "note": "no unresolved/control id string hit"
+    },
+    {
+      "evidenceKind": "searched_index_no_id_hit",
+      "source": "girlswar_merged_extracted/indexes/conflicts.csv",
+      "note": "no unresolved/control id string hit"
+    },
+    {
+      "evidenceKind": "searched_index_no_id_hit",
+      "source": "girlswar_merged_extracted/indexes/versionfile_VersionFile_bytes.csv",
+      "note": "no unresolved/control id string hit"
+    },
+    {
+      "evidenceKind": "searched_index_no_id_hit",
+      "source": "girlswar_merged_extracted/indexes/versionfile_CDNVersionFile_bytes.csv",
+      "note": "no unresolved/control id string hit"
+    },
+    {
+      "evidenceKind": "searched_index_no_id_hit",
+      "source": "reports/battle/BATTLE_ASSETBUNDLE_CANDIDATES.csv",
+      "note": "no unresolved/control id string hit"
+    },
+    {
+      "evidenceKind": "searched_index_no_id_hit",
+      "source": "reports/battle/BATTLE_TEXTASSET_CANDIDATES.csv",
+      "note": "no unresolved/control id string hit"
+    },
+    {
+      "evidenceKind": "searched_index_no_id_hit",
+      "source": "reports/battle/BATTLE_IMAGE_CANDIDATES.csv",
+      "note": "no unresolved/control id string hit"
+    },
+    {
+      "evidenceKind": "searched_index_no_id_hit",
+      "source": "reports/battle/BATTLE_XLUA_DECODE_TARGETS.csv",
+      "note": "no unresolved/control id string hit"
+    },
+    {
+      "evidenceKind": "searched_index_no_id_hit",
+      "source": "reports/battle/battle_restore_index_summary.json",
+      "note": "no unresolved/control id string hit"
+    },
+    {
+      "targetId": 1100122,
+      "evidenceKind": "binary_little_endian_int_hit",
+      "source": "il2cpp_native/global-metadata.dat",
+      "offset": 7354304,
+      "value": "uint32_le:1100122",
+      "note": "raw integer occurrence is weak evidence and not an actor mapping"
+    },
+    {
+      "evidenceKind": "searched_binary_no_id_hit",
+      "source": "il2cpp_native/libil2cpp.so",
+      "note": "no ascii or uint32_le target id hit"
+    },
+    {
+      "evidenceKind": "searched_binary_no_id_hit",
+      "source": "work/apk_probe/global-metadata.dat",
+      "note": "no ascii or uint32_le target id hit"
+    },
+    {
+      "evidenceKind": "searched_binary_no_id_hit",
+      "source": "work/apk_probe/libil2cpp.so",
+      "note": "no ascii or uint32_le target id hit"
+    },
+    {
+      "evidenceKind": "searched_binary_no_id_hit",
+      "source": "girlswar_merged_extracted/restore_overlay/Android/data/com.girlwars.kr/files/AssetInfo.bytes",
+      "note": "no ascii or uint32_le target id hit"
+    },
+    {
+      "evidenceKind": "searched_binary_no_id_hit",
+      "source": "girlswar_merged_extracted/restore_overlay/Android/data/com.girlwars.kr/files/AssetGuid.bytes",
+      "note": "no ascii or uint32_le target id hit"
+    },
+    {
+      "evidenceKind": "searched_binary_no_id_hit",
+      "source": "girlswar_merged_extracted/extracted/decoded_gzip_bytes/AssetInfo.bytes.gunzipped",
+      "note": "no ascii or uint32_le target id hit"
+    },
+    {
+      "evidenceKind": "searched_binary_no_id_hit",
+      "source": "girlswar_merged_extracted/extracted/decoded_gzip_bytes/AssetGuid.bytes.gunzipped",
+      "note": "no ascii or uint32_le target id hit"
+    }
+  ],
+  "nextBlockers": [
+    "No unresolved enemy payload instance can be promoted without a source-backed DTMonster/DTmodel/prefab/bundle chain or an authoritative code/data alias.",
+    "The formula-like ids mapId+wave+slot are payload instance ids unless local code/data proves otherwise.",
+    "1036 actor remains not_fetchable_local; this trace does not change 1036."
+  ],
+  "principles": [
+    "No Unity scene was modified.",
+    "No fake actor/card/skill mapping was generated.",
+    "No placeholder bundle path was introduced.",
+    "Existing BATTLE_LOCAL_PLAYABLE_PAYLOAD_MANIFEST was not overwritten."
+  ]
+}

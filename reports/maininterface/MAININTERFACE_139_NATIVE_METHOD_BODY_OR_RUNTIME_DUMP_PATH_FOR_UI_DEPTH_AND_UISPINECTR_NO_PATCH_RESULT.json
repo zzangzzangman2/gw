@@ -1,0 +1,62 @@
+{
+  "generatedAt": "2026-06-26T04:16:25",
+  "task": "MAININTERFACE_139_NATIVE_METHOD_BODY_OR_RUNTIME_DUMP_PATH_FOR_UI_DEPTH_AND_UISPINECTR_NO_PATCH",
+  "restoredClaim": false,
+  "scenePatchApplied": false,
+  "candidatePatchApplied": false,
+  "patchDecision": "trace_only_no_patch",
+  "nativeMethodBodiesRecovered": false,
+  "uiDepthFormulaRecovered": false,
+  "uiSpineRuntimeBindingRecovered": false,
+  "runtimeDumpExecuted": false,
+  "runtimeDumpPlanAvailable": true,
+  "requiresUserApproval": true,
+  "requiredApprovalText": "Approve launching/instrumenting the original APK on a local Android device/emulator, or approve use/installation of a native ARM64 IL2CPP disassembler/lifter, to dump UI_Dock/UI_MainPage form group/BaseOrder/Depth/Canvas.sortingOrder/mask-stencil/CanvasScaler and UISpineCtr SkeletonGraphic/SkeletonDataAsset/material bindings.",
+  "requiredNextEvidence": [
+    "Disassembled/lifted bodies for UILayer.SetSortingOrder, AbstractUIManager.OpenUI/OpenUIForm, UIFormBase.Init/Open, YouYouCanvasHelper.SetDepth/ResetRenderDepth/OnDepthChanged, and UISpineCtr.Awake/PlayAnimation",
+    "Or original runtime dump of UI_Dock and UI_MainPage after OnOpen/initTab with form GroupId, UIGroup.BaseOrder, UIFormBase.Depth, Canvas.sortingOrder, CanvasScaler, masks/stencils, active state, and UISpineCtr skeletonGraphic binding",
+    "UI130-compatible activity/account/chat snapshot remains separately required before dynamic labels/icons can be changed"
+  ],
+  "guardrailsTouched": {
+    "sceneOrCandidatePatched": false,
+    "uiBgRaycastInteractableAltered": false,
+    "btnDiscordReviewHideApplied": false,
+    "activitySlotsHiddenOrFaked": false,
+    "routeWorldZhuyeNodesHidden": false,
+    "painting1005BackPromoted": false,
+    "fakeHudIconTextSpineCreated": false,
+    "androidOrEmulatorRuntimeExecuted": false,
+    "externalToolOrPackageInstalled": false
+  },
+  "localToolAvailability": {
+    "ilspycmd": "C:\\Users\\godho\\.dotnet\\tools\\ilspycmd.EXE",
+    "dotnet": "C:\\Program Files\\dotnet\\dotnet.EXE",
+    "python": "C:\\Users\\godho\\AppData\\Local\\Programs\\Python\\Python312\\python.EXE",
+    "adb": "",
+    "frida": "",
+    "objdump": "",
+    "readelf": "",
+    "llvm-objdump": "",
+    "ghidraRun": "",
+    "analyzeHeadless": "",
+    "Cpp2IL": "",
+    "Il2CppDumper": ""
+  },
+  "rowCounts": {
+    "nativeMethodEvidence": 102,
+    "uiDepthFormulaMatrix": 5,
+    "uiSpineRuntimeBindingMatrix": 3,
+    "runtimeDumpPlanMatrix": 4
+  },
+  "csvs": {
+    "nativeMethodBodyRvaSymbolRecoveryEvidence": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\maininterface\\MAININTERFACE_139_native_method_body_rva_symbol_recovery_evidence.csv",
+    "uiDepthFormulaRecoveryDecisionMatrix": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\maininterface\\MAININTERFACE_139_ui_depth_formula_recovery_decision_matrix.csv",
+    "uispinectrRuntimeBindingRecoveryDecisionMatrix": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\maininterface\\MAININTERFACE_139_uispinectr_runtime_binding_recovery_decision_matrix.csv",
+    "approvedRuntimeDumpPlanBlockerMatrix": "C:\\Users\\godho\\Downloads\\girlswar\\reports\\maininterface\\MAININTERFACE_139_approved_runtime_dump_plan_blocker_matrix.csv"
+  },
+  "commandPolicy": {
+    "rootCmdCount": 1,
+    "restoreToolsDirectCmdCount": 0,
+    "policyOk": true
+  }
+}

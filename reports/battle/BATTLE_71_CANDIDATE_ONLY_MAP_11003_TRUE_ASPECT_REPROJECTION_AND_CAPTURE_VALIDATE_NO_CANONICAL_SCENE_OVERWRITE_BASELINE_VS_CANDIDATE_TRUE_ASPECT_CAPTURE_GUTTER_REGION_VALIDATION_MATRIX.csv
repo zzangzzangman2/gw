@@ -1,0 +1,8 @@
+metricKind,region,baselineValue,candidateValue,deltaCandidateMinusBaseline,referenceMean,classification,evidence
+gutter,full_frame,left=200; right=27; total=0.118229,left=0; right=0; total=0.0,-0.118229,reference total gutter ~0.00625 from BATTLE69,gutter_improved,"baselineSize={'width': 1920, 'height': 855, 'aspect': 2.245614}; candidateSize={'width': 1920, 'height': 855, 'aspect': 2.245614}"
+region_non_dark,full_frame,0.705352,0.928469,0.223117,0.955674,region_signal_preserved_or_increased,baselineBBox=32/0/1894/846; candidateBBox=0/0/1919/854
+region_non_dark,top_hud,0.718285,0.897527,0.179242,0.945239,region_signal_preserved_or_increased,baselineBBox=32/26/1715/136; candidateBBox=0/26/1873/136
+region_non_dark,right_control_rail,0.248831,0.861205,0.612374,0.9939,region_signal_preserved_or_increased,baselineBBox=1690/256/1894/563; candidateBBox=1690/256/1900/563
+region_non_dark,bottom_five_cards,0.742747,1.0,0.257253,0.946085,region_signal_preserved_or_increased,baselineBBox=480/641/1497/843; candidateBBox=480/641/1497/854
+region_non_dark,friendly_actor_band,0.963645,0.952481,-0.011164,0.967432,region_signal_preserved_or_increased,baselineBBox=230/171/921/786; candidateBBox=230/171/921/786
+region_non_dark,enemy_actor_band,0.929216,0.923074,-0.006142,0.987327,region_signal_preserved_or_increased,baselineBBox=960/171/1689/786; candidateBBox=960/171/1689/786

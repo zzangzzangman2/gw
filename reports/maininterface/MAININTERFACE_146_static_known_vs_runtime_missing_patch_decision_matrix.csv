@@ -1,0 +1,9 @@
+decisionArea,fieldPattern,staticKnown,runtimeMissing,staticPatchPossibleWithoutRuntime,forbiddenToGuess,patchDecision,notes
+form identity/path,forms.*.formName/formId/sourcePrefabPath,True,False,False,False,static_identity_only,static-known identity only; no patch by itself
+root Canvas source sorting,forms.*.rootCanvas.sortingOrder,True,True,False,True,no_patch,source known but runtime effective behavior still missing
+form parent/group/depth,forms.*.parentTransformFullPath/uiGroup/uiFormBase,False,True,False,True,no_patch,required for UI_Dock promotion
+CanvasHelper cascade,forms.*.canvasHelpers,False,True,False,True,no_patch,required to reconcile child Canvas/SkeletonGraphic render order
+guarded nodes active/order,guardedNodes.*,False,True,False,True,no_patch,forbidden to guess; no hide/reorder patch
+UI_bg raycast/interactable,uiBg.*,False,True,False,True,no_patch,preserve unless real runtime says otherwise
+activity/chat/account/currency,dynamicRuntime.*,False,True,False,True,no_patch,UI130 snapshot required
+mask/stencil runtime,runtimeMaskStencil.*,False,True,False,True,no_patch,UI145 direct source Mask/RectMask2D=0 but runtime active state still needed
