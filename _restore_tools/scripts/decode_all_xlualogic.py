@@ -42,6 +42,15 @@ def xor(data: bytes, key: bytes) -> bytes:
     return bytes(b ^ key[i % len(key)] for i, b in enumerate(data))
 
 
+_LUA_TOKENS = ("local", "function", "require", "end", "return", "=", "{", "}", "(", ")")
+
+
+def luaish(data: bytes) -> int:
+    """Heuristic score: how much the first chunk reads like Lua source."""
+    s = data[:600].decode("latin1", "replace")
+    return sum(s.count(t) for t in _LUA_TOKENS)
+
+
 def main() -> int:
     xs = META.read_bytes()[XORSCALE_OFFSET:XORSCALE_OFFSET + XORSCALE_SIZE]
     bundles = sorted(SLICES.rglob("*.assetbundle"))
@@ -71,15 +80,16 @@ def main() -> int:
             raw = raw_payload(payload)
             if not raw:
                 continue
-            # Only XOR-encrypted TextAssets carry the 'A-EV' magic; data-table TextAssets
-            # were stored as plaintext Lua already. XORing plaintext would corrupt it
-            # (XOR is symmetric: plaintext ^ key == the A-EV form), so pass plaintext through.
-            dec = xor(raw, xs) if raw[:4] == b"A-EV" else raw
+            # Some TextAssets are stored as plaintext Lua (data tables), others are XOR-
+            # encrypted (modules) with or without an 'A-EV' magic. Don't trust the magic:
+            # XOR-decode, then keep whichever of {raw, decoded} reads more like Lua.
+            dec = xor(raw, xs)
+            out_bytes = dec if luaish(dec) >= luaish(raw) else raw
             safe_name = SAFE.sub("_", str(name)) or "unnamed"
             if not any_here:
                 out_dir.mkdir(parents=True, exist_ok=True)
                 any_here = True
-            (out_dir / f"{o.path_id}_{safe_name}_security_xor_raw.lua").write_bytes(dec)
+            (out_dir / f"{o.path_id}_{safe_name}_security_xor_raw.lua").write_bytes(out_bytes)
             written += 1
         if any_here:
             bundles_ok += 1

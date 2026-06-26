@@ -250,22 +250,14 @@ namespace XLua.LuaDLL
             IntPtr str = lua_tolstring(L, index, out strlen);
             if (str != IntPtr.Zero)
 			{
-#if XLUA_GENERAL || (UNITY_WSA && !UNITY_EDITOR)
+                // GirlsWar: always decode as UTF-8. The decoded game Lua contains CJK
+                // (Korean/Chinese) strings; Marshal.PtrToStringAnsi THROWS "Illegal byte
+                // sequence" on those (so the original null-fallback never ran). Use the
+                // byte-copy + UTF-8 path unconditionally (matches the XLUA_GENERAL branch).
                 int len = strlen.ToInt32();
                 byte[] buffer = new byte[len];
                 Marshal.Copy(str, buffer, 0, len);
                 return Encoding.UTF8.GetString(buffer);
-#else
-                string ret = Marshal.PtrToStringAnsi(str, strlen.ToInt32());
-                if (ret == null)
-                {
-                    int len = strlen.ToInt32();
-                    byte[] buffer = new byte[len];
-                    Marshal.Copy(str, buffer, 0, len);
-                    return Encoding.UTF8.GetString(buffer);
-                }
-                return ret;
-#endif
             }
             else
 			{

@@ -1,0 +1,8 @@
+{
+  "milestone": "BATTLE_88_m2_headless_battle",
+  "stagesCompleted": "luaenv+loader > permissive-_G > local ok,m = pcall(require, 'Jso... > local ok,m = pcall(require, 'Gam... > local ok,m = pcall(require, 'Gam... > local ok,m = pcall(require, 'Com... > local ok,m = pcall(require, 'Eve... > local ok,m = pcall(require, 'Mod... > local ok,m = pcall(require, 'Pla... > 
+                    for _,g in ... > PNB = require('ProcedureNormalBa...",
+  "battleEntered": false,
+  "failedStage": "local data = JsonUtil and JsonUtil.decode and Js...",
+  "error": "GameTools:451: No such type: YouYou.GameEntry.Time.RemoveTimeActionByName | stack traceback: | 	[C]: in function 'error' | 	[string 'Init']:42: in method 'RemoveTimeActionByName' | 	GameTools:451: in function 'GameTools.SwitchBGMFadeOutLua' | 	ProcedureNormalBattle:828: in function 'ProcedureNormalBattle.ProcedureNormalBattle_OnEnter' | 	[string 'chunk']:5: in main chunk"
+}
