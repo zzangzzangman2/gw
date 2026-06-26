@@ -33,6 +33,7 @@ TARGETS = [
     ("download/xlualogic/modules/battleskillscript.assetbundle", None),
     ("download/xlualogic/modules/battlebuffscript.assetbundle", None),
     ("download/xlualogic/modules/procedure.assetbundle", re.compile(r"^ProcedureNormalBattle$")),
+    ("download/xlualogic/modules/maincity.assetbundle", re.compile(r"^UI_NormalBattle")),
 ]
 
 LUA_MARKERS = [

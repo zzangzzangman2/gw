@@ -22,48 +22,60 @@ Provenance: `reports/battle/BATTLE_85_STATIC_SNAPSHOT_RESOLVER_PROVENANCE.csv`
 
 `control_tower_validate_runtime_snapshot_packets.py --battle-template <FILLED>`:
 
-| metric | before | v1 | v2 (this) |
-| --- | ---: | ---: | ---: |
-| expectedFields | 7337 | 7337 | 7337 |
-| filledRuntimeValues | 0 | 427 | **2681** |
-| missingRuntimeValues | 7337 | 6910 | **4656** |
-| placeholderRuntimeValues | 0 | 0 | **0** |
-| templateMode (empty template) | True | False | **False** |
+| metric | before | v1 | v2 | v3 (final, all lanes) |
+| --- | ---: | ---: | ---: | ---: |
+| expectedFields | 7337 | 7337 | 7337 | 7337 |
+| filledRuntimeValues | 0 | 427 | 2681 | **5422** |
+| missingRuntimeValues | 7337 | 6910 | 4656 | **1915** |
+| placeholderRuntimeValues | 0 | 0 | 0 | **0** |
+| values with mojibake | - | - | - | **0** |
+| templateMode (empty template) | True | False | False | **False** |
 
-No fake/placeholder values introduced (placeholderRuntimeValues = 0). All filled values
-carry `staticSource` provenance (origin index + bundle + path_id + suffix-match length).
+**74% of the battle checklist is now source-backed**, zero fake/placeholder/garbage values.
+Every filled value carries `staticSource` provenance (origin index + bundle + path_id).
 
-## Filled categories (all index-provenanced)
+## All four lanes executed
 
-- `rect_transform`: **2298 / 2356** (anchorMin/Max, anchoredPosition, sizeDelta, pivot, localScale)
-- `sibling_order`: **383 / 390** (siblingIndex from father child_ids order)
+- **Lane 1 — crosswalk (rect + sibling)**: longest-suffix father_id crosswalk.
+  `rect_transform` **2298 / 2356**, `sibling_order` **383 / 390**.
+- **Lane 3 — component index**: built `_restore_tools/scripts/build_ui_component_index.py`
+  -> `girlswar_merged_extracted/indexes/ui_components.csv` (118,953 GameObject rows from
+  the pre-exported `structure.jsonl.gz` typetrees, joined GameObject->components). Joined
+  to each node by `rect.game_object_id == component.go_path_id` (exact, no re-matching).
+  Fills `graphic_image_button_raycast` **777** (graphicEnabled, raycastTarget,
+  buttonInteractable, imageSprite, graphicMaterial, showMaskGraphic),
+  `mask_rectmask_stencil_material` **361** (hasMask, maskType, maskEnabled),
+  `tmp_autosize_font_material` **609** (fontSize/min/max, enableAutoSizing,
+  characterSpacing, fontAsset, tmpEnabled, tmpMaterial, tmpRaycastTarget, tmpColor),
+  `component_rehydration` **130** (componentTypes, missingScriptCount).
+- **Lane 4 — UI_NormalBattle form Lua decode**: added `maincity.assetbundle` to
+  `battle_extract_decode_xlua.py` TARGETS and decoded the full UI_NormalBattle form family
+  (6 files, e.g. `decoded/xlua_battle/download_xlualogic_modules_maincity/874003978109174219_UI_NormalBattle_security_xor_raw.lua`).
+  `active_chain` **842** filled from the original prefab serialized `game_object_active`
+  (activeSelf / activeInHierarchy / parentActiveChain via the father chain).
+- **Lane 2 — text: deliberately NOT filled** (both `ui_texts.csv` and the typetree
+  `m_text` have CJK encoding corruption + effect-param noise; would break the no-garbage
+  guardrail). Font metrics ARE filled; only the display-text strings are withheld.
 
-These two categories are essentially closed (97% / 98%).
+### Note on active_chain provenance
 
-## Lane 2 (text) deliberately NOT filled
+`activeSelf`/`activeInHierarchy` are filled from the ORIGINAL prefab serialized active
+flag, not a live runtime snapshot. The decoded UI_NormalBattle form Lua shows many nodes
+are toggled BOTH true and false at different lifecycle points (e.g. btnPause true x7 /
+false x11), so a single steady-state value cannot be derived from Lua — the prefab
+serialized flag is the correct deterministic default. The decoded form Lua is delivered as
+the source for the next refinement (per-state active + handler binding), not auto-filled.
 
-`ui_texts.csv` `m_text` mixes real display text with effect/material param strings
-(`EPM_wuxiaoguo_dongtai`, `riyu_zi_dazei`, ...) and has CJK encoding corruption.
-Filling `text` from it would violate the no-fake/no-garbage guardrail, so it is skipped.
-Real display text must come from the lane-3 component extraction (the node's actual TMP
-component), not this index.
+## Honest residual (1915)
 
-## Honest residual (4656) and how to close it
+- `graphic_image_button_raycast` ~1003 — buttonTargetGraphicPath, tmpAlpha, and graphic
+  fields on nodes whose graphic is not a plain Image; need finer per-component resolution.
+- `tmp_autosize_font_material` ~324 — tmpAlpha and a few unmatched metrics.
+- `handler_lua_lifecycle` 148 — genuinely needs handler binding parsed from the now-decoded
+  UI_NormalBattle form Lua (next step), not a runtime dump.
+- `other_runtime_state` 113, `active_chain` ~100 (component `enabled`), `rect_transform` 58
+  (the ambiguous nodes), `mask` 50, `battle_payload_related_ui` 30 (runtime/account),
+  `canvas` 16, `sibling` 7, `component_rehydration` 2.
 
-The finding doc's ~80-90% conflated "category has a static source somewhere" with "this
-row is safely auto-fillable." v2 closes the two categories that the existing indexes fully
-support. The remaining 4656 need NEW static extractions (still no live runtime dump):
-
-1. **Component/mask/material/sprite index (lane 3)** — `graphic_image_button_raycast`
-   (1780), `mask_rectmask_stencil_material` (411), `component_rehydration` (132),
-   `tmp_*` font metrics (~933). The existing `unity_objects.csv` has component type +
-   path_id but NO component->GameObject link, so a UnityPy re-parse of the raw bundles is
-   required to emit per-GameObject component lists, sprite/material refs, and mask flags.
-2. **UI_NormalBattle form Lua decode (lane 4)** — `active_chain` (942),
-   `handler_lua_lifecycle` (148). The form script was not in the decoded batch; decode it
-   with the same xor pipeline used for UI_Dock/UI_MainPage.
-3. **Genuinely runtime/account** — `battle_payload_related_ui` (52) and similar content
-   (chat, currency, redpoint). Not layout; does not block structural restore.
-
-Lane 3/4 tooling feasibility is being assessed separately (UnityPy availability + raw
-bundle presence + the existing decode script).
+None of the residual requires a live runtime dump for STRUCTURE; the account/content slice
+(payload, chat, currency) is genuinely runtime and does not block the structural restore.

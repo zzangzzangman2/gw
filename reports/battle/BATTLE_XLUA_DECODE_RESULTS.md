@@ -2,9 +2,9 @@
 
 ## Summary
 
-- Raw TextAssets extracted: `4378`
-- Decode rows: `4378`
-- Saved decoded Lua/bytecode outputs: `4375`
+- Raw TextAssets extracted: `4384`
+- Decode rows: `4384`
+- Saved decoded Lua/bytecode outputs: `4381`
 - `SecurityUtil.xorScale`: `2D 42 26 37 17 FE 09 A5 5A 13 29 2D C9 3A 37 25 FE B9 A5 A9 13 AB`
 
 ## Classification Counts
@@ -12,7 +12,7 @@
 | Classification | Count |
 |---|---:|
 | `binary` | `3` |
-| `lua_like_text` | `4375` |
+| `lua_like_text` | `4381` |
 
 ## Best High-Value Results
 
@@ -30,6 +30,7 @@
 | `download/xlualogic/modules/battle.assetbundle` | `FormulaPet` | `security_xor_raw` | `lua_like_text` | `242` | `C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua_battle\download_xlualogic_modules_battle\7673967317362961371_FormulaPet_security_xor_raw.lua` | `local a=require("DataNode/DataManager/DataMgr/DataUtil")\nlocal u=require("Modules/Battle/BattleUtil` |
 | `download/xlualogic/modules/battle.assetbundle` | `DeathState` | `security_xor_raw` | `lua_like_text` | `242` | `C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua_battle\download_xlualogic_modules_battle\7968390365784036768_DeathState_security_xor_raw.lua` | `local e=require("Modules/Battle/HeroState/BaseState")\nlocal a=require("Modules/Battle/BattleUtil")\` |
 | `download/xlualogic/modules/battlepreview.assetbundle` | `UI_BattlePreviewTalk` | `security_xor_raw` | `lua_like_text` | `242` | `C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua_battle\download_xlualogic_modules_battlepreview\8361315881198412209_UI_BattlePreviewTalk_security_xor_raw.lua` | `local u=require("Common/cs_coroutine")\nlocal p=0.03\nlocal q=1.5\nlocal j=1\nlocal x=0.6\nlocal e=0` |
+| `download/xlualogic/modules/maincity.assetbundle` | `UI_NormalBattle_HeroItem` | `security_xor_raw` | `lua_like_text` | `242` | `C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua_battle\download_xlualogic_modules_maincity\-8124635541773359808_UI_NormalBattle_HeroItem_security_xor_raw.lua` | `local e={}\nfunction e:New(t)\nlocal e={\nownerUIForm=nil,\nheroCtrl=nil,\nheroItemTrans=nil,\ntween` |
 | `download/xlualogic/modules/battle.assetbundle` | `IdleState` | `security_xor_raw` | `lua_like_text` | `228` | `C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua_battle\download_xlualogic_modules_battle\-8262218030809429078_IdleState_security_xor_raw.lua` | `local e=require("Modules/Battle/HeroState/BaseState")\nlocal t={}\nfunction t:New(t)\nself.__index=s` |
 | `download/xlualogic/modules/battle.assetbundle` | `LeaveState` | `security_xor_raw` | `lua_like_text` | `228` | `C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua_battle\download_xlualogic_modules_battle\-7910455586439828426_LeaveState_security_xor_raw.lua` | `local t=require("Modules/Battle/HeroState/BaseState")\nlocal e={}\nfunction e:New(a)\nself.__index=s` |
 | `download/xlualogic/modules/battle.assetbundle` | `BlockState` | `security_xor_raw` | `lua_like_text` | `228` | `C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua_battle\download_xlualogic_modules_battle\-5762981643748165001_BlockState_security_xor_raw.lua` | `local e=require("Modules/Battle/HeroState/BaseState")\nlocal t={}\nfunction t:New(t)\nself.__index=s` |
@@ -47,7 +48,6 @@
 | `download/xlualogic/modules/battle.assetbundle` | `DefenseState` | `security_xor_raw` | `lua_like_text` | `228` | `C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua_battle\download_xlualogic_modules_battle\7585021079159617408_DefenseState_security_xor_raw.lua` | `local t=require("Modules/Battle/HeroState/BaseState")\nlocal e={}\nfunction e:New(a)\nself.__index=s` |
 | `download/xlualogic/modules/battle.assetbundle` | `RunState` | `security_xor_raw` | `lua_like_text` | `228` | `C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua_battle\download_xlualogic_modules_battle\7858923423994092458_RunState_security_xor_raw.lua` | `local t=require("Modules/Battle/HeroState/BaseState")\nlocal e={}\nfunction e:New(a)\nself.__index=s` |
 | `download/xlualogic/modules/battle.assetbundle` | `UndeadState` | `security_xor_raw` | `lua_like_text` | `228` | `C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua_battle\download_xlualogic_modules_battle\8666997779149777830_UndeadState_security_xor_raw.lua` | `local t=require("Modules/Battle/HeroState/BaseState")\nlocal e={}\nfunction e:New(a)\nself.__index=s` |
-| `download/xlualogic/modules/battle.assetbundle` | `HeroBuffInfo` | `security_xor_raw` | `lua_like_text` | `228` | `C:\Users\godho\Downloads\girlswar\girlswar_merged_extracted\decoded\xlua_battle\download_xlualogic_modules_battle\8670581931106237520_HeroBuffInfo_security_xor_raw.lua` | `local e=require("DataNode/DataTable/Create/skillAct/DTBuffDBModel")\nlocal a=require("Modules/Battle` |
 
 ## Outputs
 

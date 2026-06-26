@@ -1,9 +1,9 @@
 {
-  "raw_textassets": 4378,
-  "decode_rows": 4378,
-  "saved_decoded_outputs": 4375,
+  "raw_textassets": 4384,
+  "decode_rows": 4384,
+  "saved_decoded_outputs": 4381,
   "classification_counts": {
-    "lua_like_text": 4375,
+    "lua_like_text": 4381,
     "binary": 3
   },
   "bundle_counts": {
@@ -12,7 +12,8 @@
     "download/xlualogic/modules/battlerelicscript.assetbundle": 55,
     "download/xlualogic/modules/battleskillscript.assetbundle": 1728,
     "download/xlualogic/modules/battlebuffscript.assetbundle": 2540,
-    "download/xlualogic/modules/procedure.assetbundle": 1
+    "download/xlualogic/modules/procedure.assetbundle": 1,
+    "download/xlualogic/modules/maincity.assetbundle": 6
   },
   "security_xorscale_offset": "0x5829D1",
   "security_xorscale_hex": "2D 42 26 37 17 FE 09 A5 5A 13 29 2D C9 3A 37 25 FE B9 A5 A9 13 AB",

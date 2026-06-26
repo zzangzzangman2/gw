@@ -41,6 +41,10 @@ from pathlib import Path
 ROOT = Path(r"C:\Users\godho\Downloads\girlswar")
 CSV_PATH = ROOT / "girlswar_merged_extracted" / "indexes" / "ui_recttransforms.csv"
 TEXTS_PATH = ROOT / "girlswar_merged_extracted" / "indexes" / "ui_texts.csv"
+COMPONENTS_PATH = ROOT / "girlswar_merged_extracted" / "indexes" / "ui_components.csv"
+
+import sys as _sys
+csv.field_size_limit(min(_sys.maxsize, 2147483647))
 B75 = (
     ROOT / "reports" / "battle"
     / ("BATTLE_75_ORIGINAL_RUNTIME_SNAPSHOT_APPROVAL_PACKET_FOR_UI_NORMALBATTLE_"
@@ -61,8 +65,43 @@ GEOMETRY_FIELDS = {
 # Categories we fill, and which fieldNames within them.
 GEOMETRY_CATEGORY = "rect_transform"
 SIBLING_CATEGORY = "sibling_order"
-TEXT_CATEGORY = "tmp_autosize_font_material"
 SUFFIX_MAX = 4  # longest path-suffix length used for crosswalk
+
+# B75 fieldName -> ui_components.csv column. Filled only when the resolved GameObject
+# actually has the relevant component (empty column value -> left null), via the precise
+# rect.game_object_id == component.go_path_id join.
+COMPONENT_FIELD_MAP = {
+    "graphicEnabled": "graphic_enabled",
+    "graphicRaycastTarget": "raycast_target",
+    "buttonInteractable": "button_interactable",
+    "maskShowMaskGraphic": "show_mask_graphic",
+    "showMaskGraphic": "show_mask_graphic",
+    "imageSprite": "image_sprite",
+    "graphicMaterial": "graphic_material",
+    "maskComponentType": "mask_type",
+    "maskEnabled": "mask_enabled",
+    "tmpEnabled": "tmp_enabled",
+    "tmpRaycastTarget": "tmp_raycast_target",
+    "tmpMaterial": "tmp_material",
+    "enableAutoSizing": "enable_autosizing",
+    "tmpEnableAutoSizing": "enable_autosizing",
+    "characterSpacing": "character_spacing",
+    "fontAssetRef": "font_asset",
+    "fontSize": "font_size",
+    "fontSizeBase": "font_size",
+    "fontSizeMin": "font_size_min",
+    "fontSizeMax": "font_size_max",
+    # NOTE: "text" intentionally omitted. m_text in the exported typetrees has CJK
+    # encoding corruption (mojibake), so display text cannot be filled without violating
+    # the no-garbage guardrail. Font metrics (size/autosize) are unaffected and ARE filled.
+    "tmpColor": "tmp_color",
+}
+# fields where 0/empty is itself a valid value (always fill from component row)
+COMPONENT_FIELD_ALWAYS = {
+    "hasMask": "has_mask",
+    "missingScriptCount": "missing_script_count",
+    "componentTypes": "component_types",
+}
 
 
 def fmt_num(s: str) -> str:
@@ -122,6 +161,40 @@ def load_texts():
     return by_goid
 
 
+def load_components():
+    """go_path_id -> component row."""
+    by_goid: dict[str, dict] = {}
+    if COMPONENTS_PATH.exists():
+        with COMPONENTS_PATH.open("r", encoding="utf-8-sig", newline="") as f:
+            for row in csv.DictReader(f):
+                by_goid[row.get("go_path_id", "")] = row
+    return by_goid
+
+
+def active_in_hierarchy(row: dict, by_pathid: dict, include_self: bool = True) -> str | None:
+    """AND of game_object_active up the father_id chain (prefab serialized)."""
+    cur = row
+    seen = set()
+    first = True
+    for _ in range(64):
+        pid = cur.get("path_id")
+        if pid in seen:
+            break
+        seen.add(pid)
+        if not (first and not include_self):
+            if cur.get("game_object_active", "").strip().lower() != "true":
+                return "False"
+        first = False
+        fid = cur.get("father_id", "")
+        if not fid or fid == "0":
+            break
+        f = by_pathid.get(fid)
+        if not f:
+            break
+        cur = f
+    return "True"
+
+
 def geometry_signature(row: dict) -> tuple:
     cols = ("anchor_min_x", "anchor_min_y", "anchor_max_x", "anchor_max_y",
             "anchored_pos_x", "anchored_pos_y", "size_delta_x", "size_delta_y",
@@ -163,7 +236,7 @@ def sibling_index_from_csv(row: dict, by_pathid: dict) -> str | None:
 
 def main() -> int:
     by_pathid, suffix_idx = load_csv()
-    texts_by_goid = load_texts()
+    comp_by_goid = load_components()
     packet = json.loads(B75.read_text(encoding="utf-8-sig"))
     fields = packet.get("fieldChecklist", [])
 
@@ -181,15 +254,13 @@ def main() -> int:
         field_name = row.get("fieldName")
         object_path = row.get("objectPath", "")
 
-        # only categories/fields with a real static source
-        # NOTE: lane 2 (TEXT_CATEGORY "text") is intentionally NOT filled. ui_texts.csv
-        # m_text mixes effect/material param strings (EPM_*, riyu_*) with display text and
-        # has CJK encoding corruption, so it cannot be used without violating the
-        # no-fake/no-garbage guardrail. Display text needs the lane-3 component extraction
-        # (real TMP component on the node) instead.
+        # only fields with a real static source
         want = (
             (category == GEOMETRY_CATEGORY and field_name in GEOMETRY_FIELDS)
             or (category == SIBLING_CATEGORY and field_name == "siblingIndex")
+            or field_name in COMPONENT_FIELD_MAP
+            or field_name in COMPONENT_FIELD_ALWAYS
+            or field_name in ("activeSelf", "activeInHierarchy", "parentActiveChain")
         )
         if not want:
             continue
@@ -199,6 +270,7 @@ def main() -> int:
         node, reason = resolve_cache[object_path]
         if node is None:
             continue
+        comp = comp_by_goid.get(node.get("game_object_id", ""))
 
         value = None
         source_index = "ui_recttransforms.csv"
@@ -207,14 +279,27 @@ def main() -> int:
             value = ",".join(fmt_num(node.get(c, "")) for c in cols)
         elif field_name == "siblingIndex":
             value = sibling_index_from_csv(node, by_pathid)
-        elif field_name == "text":
-            goid = node.get("game_object_id", "")
-            if goid in texts_by_goid:
-                value = texts_by_goid[goid]
-                source_index = "ui_texts.csv"
+        elif field_name == "activeSelf":
+            av = node.get("game_object_active", "")
+            value = "True" if av.strip().lower() == "true" else "False"
+            source_index = "ui_recttransforms.csv(prefab_serialized_active)"
+        elif field_name == "activeInHierarchy":
+            value = active_in_hierarchy(node, by_pathid, include_self=True)
+            source_index = "ui_recttransforms.csv(prefab_serialized_active)"
+        elif field_name == "parentActiveChain":
+            value = active_in_hierarchy(node, by_pathid, include_self=False)
+            source_index = "ui_recttransforms.csv(prefab_serialized_active)"
+        elif comp is not None and field_name in COMPONENT_FIELD_ALWAYS:
+            value = comp.get(COMPONENT_FIELD_ALWAYS[field_name], "")
+            source_index = "ui_components.csv"
+        elif comp is not None and field_name in COMPONENT_FIELD_MAP:
+            v = comp.get(COMPONENT_FIELD_MAP[field_name], "")
+            if v not in ("", None):  # node actually has this component
+                value = v
+                source_index = "ui_components.csv"
 
-        if value is None:
-            continue
+        if value is None or value == "":
+            continue  # never write an empty/placeholder value
 
         row["runtimeValue"] = value
         row["staticSource"] = {
