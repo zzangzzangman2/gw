@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using Spine;
@@ -23,6 +24,68 @@ namespace GirlsWar
         public bool IsSpineActor;
         public string AnimationName = "";
         public string FallbackReason = "";
+
+        private Vector3 baseLocalPosition;
+        private Vector3 baseLocalScale = Vector3.one;
+        private bool hasBasePose;
+
+        public void RememberBasePose()
+        {
+            baseLocalPosition = transform.localPosition;
+            baseLocalScale = transform.localScale;
+            hasBasePose = true;
+        }
+
+        public IEnumerator PlayPreviewAction(int actionType, int fireHeroId, int skillDid, int delayFrames)
+        {
+            if (!hasBasePose)
+                RememberBasePose();
+
+            for (var i = 0; i < delayFrames; i++)
+                yield return null;
+
+            var isAttack = actionType == 1 || actionType == 2;
+            if (isAttack)
+                PlayFirstExistingAnimation(actionType == 1 ? new[] { "ult", "skill1", "attack", "stand" } : new[] { "attack", "skill1", "stand" });
+            else
+                PlayFirstExistingAnimation(new[] { "stand", "idle", "Idle" });
+
+            var direction = RequestedHeroId < 0 ? -1f : 1f;
+            var distance = isAttack ? 0.28f : 0.08f;
+            var frames = isAttack ? 12 : 8;
+            for (var frame = 0; frame < frames; frame++)
+            {
+                var t = (frame + 1f) / frames;
+                var wave = Mathf.Sin(t * Mathf.PI);
+                transform.localPosition = baseLocalPosition + new Vector3(direction * distance * wave, 0.04f * wave, 0f);
+                transform.localScale = baseLocalScale * (1f + 0.04f * wave);
+                yield return null;
+            }
+
+            transform.localPosition = baseLocalPosition;
+            transform.localScale = baseLocalScale;
+            PlayFirstExistingAnimation(new[] { "stand", "idle", "Idle" });
+            BattleRuntimeSpineActorFactory.NotePreviewCompleted();
+        }
+
+        private bool PlayFirstExistingAnimation(string[] names)
+        {
+            if (SkeletonAnimation == null || SkeletonAnimation.skeletonDataAsset == null)
+                return false;
+            var data = SkeletonAnimation.skeletonDataAsset.GetSkeletonData(true);
+            if (data == null)
+                return false;
+
+            foreach (var name in names)
+            {
+                if (string.IsNullOrEmpty(name) || data.FindAnimation(name) == null) continue;
+                SkeletonAnimation.AnimationName = name;
+                AnimationName = name;
+                return true;
+            }
+
+            return false;
+        }
     }
 
     public static class BattleRuntimeSpineActorFactory
@@ -30,6 +93,8 @@ namespace GirlsWar
         private const string ActorAssetRoot = "Assets/RestoreData/battle/VisualAssets/actors";
         private static readonly HashSet<int> ImportedActorIds = new HashSet<int> { 1002, 1034, 1100111 };
         private static readonly Dictionary<string, AssetBundle> LoadedBundles = new Dictionary<string, AssetBundle>(StringComparer.OrdinalIgnoreCase);
+        private static readonly Dictionary<int, BattleRuntimeActorHandle> HandlesByHeroId = new Dictionary<int, BattleRuntimeActorHandle>();
+        private static int previewCursor;
 
         public static int AttachCount { get; private set; }
         public static int PrefabCount { get; private set; }
@@ -37,6 +102,9 @@ namespace GirlsWar
         public static int VisualFallbackCount { get; private set; }
         public static int QuadFallbackCount { get; private set; }
         public static int MissingAssetCount { get; private set; }
+        public static int PreviewActionCount { get; private set; }
+        public static int PreviewCompletedCount { get; private set; }
+        public static int PreviewMissCount { get; private set; }
         public static string LastSummary { get; private set; } = "";
 
         public static void ResetDiagnostics()
@@ -47,6 +115,11 @@ namespace GirlsWar
             VisualFallbackCount = 0;
             QuadFallbackCount = 0;
             MissingAssetCount = 0;
+            PreviewActionCount = 0;
+            PreviewCompletedCount = 0;
+            PreviewMissCount = 0;
+            previewCursor = 0;
+            HandlesByHeroId.Clear();
             LastSummary = "";
         }
 
@@ -87,6 +160,7 @@ namespace GirlsWar
                 PrefabCount++;
                 SpineCount++;
                 handle.IsSpineActor = true;
+                RegisterHandle(handle);
                 LastSummary = BuildSummary(handle);
                 return handle;
             }
@@ -95,6 +169,7 @@ namespace GirlsWar
             {
                 SpineCount++;
                 handle.IsSpineActor = true;
+                RegisterHandle(handle);
                 LastSummary = BuildSummary(handle);
                 return handle;
             }
@@ -110,8 +185,39 @@ namespace GirlsWar
 
             AttachTexturedQuad(handle, resolved, isOurHero);
             QuadFallbackCount++;
+            RegisterHandle(handle);
             LastSummary = BuildSummary(handle);
             return handle;
+        }
+
+        public static bool PreviewAction(int heroId, int actionType, int fireHeroId, int skillDid)
+        {
+            PreviewActionCount++;
+            if (!HandlesByHeroId.TryGetValue(heroId, out var handle) || handle == null)
+            {
+                PreviewMissCount++;
+                return false;
+            }
+
+            var delay = Math.Min(96, previewCursor);
+            previewCursor++;
+            handle.StartCoroutine(handle.PlayPreviewAction(actionType, fireHeroId, skillDid, delay));
+            return true;
+        }
+
+        internal static void NotePreviewCompleted()
+        {
+            PreviewCompletedCount++;
+        }
+
+        private static void RegisterHandle(BattleRuntimeActorHandle handle)
+        {
+            if (handle == null) return;
+            handle.RememberBasePose();
+            if (handle.RequestedHeroId != 0)
+                HandlesByHeroId[handle.RequestedHeroId] = handle;
+            if (handle.RequestedHeroDid != 0)
+                HandlesByHeroId[handle.RequestedHeroDid] = handle;
         }
 
         private static int ResolveActorId(int heroId, int heroDid, bool isMonster)

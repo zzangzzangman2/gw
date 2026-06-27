@@ -454,6 +454,17 @@ namespace GirlsWar
                                   local count = rawget(_G, 'BATTLE90_ATTACK_ACTION_COUNT')
                                   if type(count) ~= 'number' then count = 0 end
                                   rawset(_G, 'BATTLE90_ATTACK_ACTION_COUNT', count + #actions)
+                                  for _, action in ipairs(actions) do
+                                    local hero_id = tonumber(action.heroId) or 0
+                                    local action_type = tonumber(action.actionType) or 0
+                                    local fire_hero_id = tonumber(action.fireHeroId) or 0
+                                    local skill_did = tonumber(action.skillDid) or 0
+                                    if CS.GirlsWar.BattleRuntimeSpineActorFactory.PreviewAction(hero_id, action_type, fire_hero_id, skill_did) then
+                                      inc_global('BATTLE90_ATTACK_PREVIEW_ACTION_COUNT')
+                                    else
+                                      inc_global('BATTLE90_ATTACK_PREVIEW_MISS_COUNT')
+                                    end
+                                  end
                                 end
                               end
                               PNB.CurrIsAttacking = false
@@ -587,6 +598,9 @@ namespace GirlsWar
             result.runtimeActorVisualFallbackCount = BattleRuntimeSpineActorFactory.VisualFallbackCount;
             result.runtimeActorQuadFallbackCount = BattleRuntimeSpineActorFactory.QuadFallbackCount;
             result.runtimeActorMissingAssetCount = BattleRuntimeSpineActorFactory.MissingAssetCount;
+            result.runtimePreviewActionCount = BattleRuntimeSpineActorFactory.PreviewActionCount;
+            result.runtimePreviewCompletedCount = BattleRuntimeSpineActorFactory.PreviewCompletedCount;
+            result.runtimePreviewMissCount = BattleRuntimeSpineActorFactory.PreviewMissCount;
             result.runtimeActorLastSummary = BattleRuntimeSpineActorFactory.LastSummary;
             try { result.monsterBaseFallbackCount = env.Global.Get<int>("BATTLE90_MONSTER_BASE_FALLBACK_COUNT"); } catch { }
             try { result.firstReadyShortcutCount = env.Global.Get<int>("BATTLE90_FIRST_READY_SHORTCUT_COUNT"); } catch { }
@@ -619,6 +633,8 @@ namespace GirlsWar
                       ' attackTaskShortcut='..tostring(rawget(_G,'BATTLE90_ATTACK_TASK_SHORTCUT_COUNT') or 0)..
                       ' attackTaskGuard='..tostring(rawget(_G,'BATTLE90_ATTACK_TASK_GUARD_COUNT') or 0)..
                       ' attackActions='..tostring(rawget(_G,'BATTLE90_ATTACK_ACTION_COUNT') or 0)..
+                      ' attackPreview='..tostring(rawget(_G,'BATTLE90_ATTACK_PREVIEW_ACTION_COUNT') or 0)..
+                      ' attackPreviewMiss='..tostring(rawget(_G,'BATTLE90_ATTACK_PREVIEW_MISS_COUNT') or 0)..
                       ' coroutineInline='..tostring(rawget(_G,'BATTLE90_COROUTINE_INLINE_COUNT') or 0)");
                 result.diagSummary = env.Global.Get<string>("DIAG_SUMMARY") ?? "";
             }
@@ -629,7 +645,10 @@ namespace GirlsWar
                 " runtimeSpine=" + result.runtimeActorSpineCount +
                 " runtimeVisualFallback=" + result.runtimeActorVisualFallbackCount +
                 " runtimeQuadFallback=" + result.runtimeActorQuadFallbackCount +
-                " runtimeMissingAsset=" + result.runtimeActorMissingAssetCount;
+                " runtimeMissingAsset=" + result.runtimeActorMissingAssetCount +
+                " runtimePreview=" + result.runtimePreviewActionCount +
+                " runtimePreviewDone=" + result.runtimePreviewCompletedCount +
+                " runtimePreviewMiss=" + result.runtimePreviewMissCount;
         }
 
         private static void MaterializeOpenedHeroSprites(LuaEnv env, List<string> stages, ref string failStage, ref string err)
@@ -780,6 +799,9 @@ namespace GirlsWar
             public int runtimeActorVisualFallbackCount;
             public int runtimeActorQuadFallbackCount;
             public int runtimeActorMissingAssetCount;
+            public int runtimePreviewActionCount;
+            public int runtimePreviewCompletedCount;
+            public int runtimePreviewMissCount;
             public string runtimeActorLastSummary;
             public int monsterBaseFallbackCount;
             public int firstReadyShortcutCount;
