@@ -212,10 +212,10 @@ namespace YouYou
 
     public class GE_Effect
     {
-        public object ShowUIEffect(object a = null, object b = null, object c = null) { return LuaNoopHolder.N; }
-        public object ShowBuffEffect(object a = null, object b = null, object c = null) { return LuaNoopHolder.N; }
-        public object ShowEffect(object a = null, object b = null, object c = null) { return LuaNoopHolder.N; }
-        public object ShowEffectPro(object a = null, object b = null, object c = null) { return LuaNoopHolder.N; }
+        public object ShowUIEffect(params object[] args) { return LuaNoopHolder.N; }
+        public object ShowBuffEffect(params object[] args) { return LuaNoopHolder.N; }
+        public object ShowEffect(params object[] args) { return LuaNoopHolder.N; }
+        public object ShowEffectPro(params object[] args) { return LuaNoopHolder.N; }
         public void RemoveEffect(object a = null) { }
     }
 

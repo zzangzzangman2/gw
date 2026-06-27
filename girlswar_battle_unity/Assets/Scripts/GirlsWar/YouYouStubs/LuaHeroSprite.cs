@@ -1,18 +1,30 @@
 using UnityEngine;
+using System.Collections.Generic;
 
 namespace YouYou
 {
     public class LuaHeroSprite : MonoBehaviour
     {
+        public static readonly List<LuaHeroSprite> OpenedSprites = new List<LuaHeroSprite>();
+
         public bool IsMonster;
         public int BaseHeroID;
         public int HeroID;
         public bool IsOurHero;
         public int BattleStationIndex;
         public bool IsSupplementHero;
+        public Transform Shadow;
+        public Renderer ShadowRenderer;
+        public object CurrMaterialProperty;
+        public object IdleData;
         public string CurrentAnimation { get; private set; }
         public bool IsLooping { get; private set; }
         public bool IsStopped { get; private set; } = true;
+
+        public static void ResetOpenedSprites()
+        {
+            OpenedSprites.Clear();
+        }
 
         public void Init()
         {
@@ -28,7 +40,25 @@ namespace YouYou
 
         public void OnOpen()
         {
+            EnsureRuntimePlaceholders();
             gameObject.SetActive(true);
+            if (!OpenedSprites.Contains(this))
+                OpenedSprites.Add(this);
+        }
+
+        public void EnsureRuntimePlaceholders()
+        {
+            EnsureChild("HeroRoot");
+            EnsureChild("PetRoot");
+            var shadow = EnsureChild("Shadow");
+            Shadow = shadow;
+            if (ShadowRenderer == null)
+            {
+                var renderer = shadow.GetComponent<MeshRenderer>();
+                if (renderer == null)
+                    renderer = shadow.gameObject.AddComponent<MeshRenderer>();
+                ShadowRenderer = renderer;
+            }
         }
 
         public void Play(string animationName)
@@ -129,6 +159,16 @@ namespace YouYou
 
         public void Dispose()
         {
+        }
+
+        private Transform EnsureChild(string childName)
+        {
+            var child = transform.Find(childName);
+            if (child != null) return child;
+
+            var go = new GameObject(childName);
+            go.transform.SetParent(transform, false);
+            return go.transform;
         }
     }
 }

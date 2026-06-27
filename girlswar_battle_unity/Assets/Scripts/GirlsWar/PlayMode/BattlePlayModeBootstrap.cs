@@ -43,6 +43,7 @@ namespace GirlsWar
             })
             _G.NOOP_STUB = NOOP
             rawset(_G, 'IsNil', function(v) return v == nil or v == NOOP end)
+            rawset(_G, 'WaitUntil', function() return nil end)
             local function logf() end
             for _,n in ipairs({'log','logerror','logwarn','logblue','loggreen','logyellow','logtable','logProto','logBattle'}) do
               rawset(_G, n, logf)
@@ -80,6 +81,7 @@ namespace GirlsWar
             frameBudget = configuredFrameBudget > 0 ? configuredFrameBudget : frameBudget;
             YouYou.GameEntry.Instance.CoroutineHost = this;
             YouYou.GameEntry.Procedure.ResetRuntimeState();
+            YouYou.LuaHeroSprite.ResetOpenedSprites();
             Application.logMessageReceived += OnLogMessage;
         }
 
@@ -191,6 +193,34 @@ namespace GirlsWar
                           PlayerMgr.PlayerInfo.uid = PlayerMgr.PlayerInfo.uid or info.ourPlayerId or 0
                         end
                         if ModulesInit and PNB then rawset(ModulesInit, 'ProcedureNormalBattle', PNB) end
+                        if ModulesInit then
+                          rawset(ModulesInit, 'GuideMgr', setmetatable({
+                            isGuide = false,
+                            guideId = 0,
+                            SpeacalId = { FirstBattleRedy = -101, ThreeBattleRedy = -102 },
+                          }, { __index = function() return NOOP_STUB end }))
+                          rawset(ModulesInit, 'TimeActionMgr', {
+                            CreateTimeAction = function()
+                              return {
+                                Init = function(self, ...)
+                                  self.callback = nil
+                                  for i = select('#', ...), 1, -1 do
+                                    local value = select(i, ...)
+                                    if type(value) == 'function' then
+                                      self.callback = value
+                                      break
+                                    end
+                                  end
+                                  return self
+                                end,
+                                Run = function(self)
+                                  if type(self.callback) == 'function' then self.callback() end
+                                  return self
+                                end,
+                              }
+                            end,
+                          })
+                        end
                         do
                           local byId = {}
                           local function idx(list)
@@ -223,6 +253,8 @@ namespace GirlsWar
                         end
                         if PNB then
                           PNB.IsOpenPlayMusic = false
+                          PNB.IsOpenBattleBeginAnim = false
+                          PNB.mBattleRunInMode = EBattleRunInMode and EBattleRunInMode.None or 0
                           PNB.FightPlayData = info
                           PNB.IsFightPlay = true
                           local function make_station_setting(prefix)
@@ -248,6 +280,174 @@ namespace GirlsWar
                           PNB.OurCenterTransform = PNB.OurCenterTransform or CS.UnityEngine.GameObject('B90_OurCenter').transform
                           PNB.EnemyCenterTransform = PNB.EnemyCenterTransform or CS.UnityEngine.GameObject('B90_EnemyCenter').transform
                         end
+                        do
+                          local function inc_global(name)
+                            local value = rawget(_G, name)
+                            if type(value) ~= 'number' then value = 0 end
+                            rawset(_G, name, value + 1)
+                          end
+                          do
+                            local ok_co, co = pcall(require, 'Common/cs_coroutine')
+                            if ok_co and type(co) == 'table' and not rawget(co, '__battle90_inline_runner') then
+                              co.start = function(fn)
+                                inc_global('BATTLE90_COROUTINE_INLINE_COUNT')
+                                if type(fn) ~= 'function' then return nil end
+                                local thread = coroutine.create(fn)
+                                local guard = 0
+                                while coroutine.status(thread) ~= 'dead' do
+                                  guard = guard + 1
+                                  if guard > 512 then error('BATTLE90 inline coroutine guard exceeded') end
+                                  local ok, message = coroutine.resume(thread)
+                                  if not ok then error(message) end
+                                end
+                                return thread
+                              end
+                              co.stop = function() end
+                              rawset(co, '__battle90_inline_runner', true)
+                            end
+                          end
+                          local function wrap_monster_model(model, label)
+                            if type(model) ~= 'table' or type(model.GetEntity) ~= 'function' or rawget(model, '__battle90_base_fallback') then
+                              return model
+                            end
+                            local orig = model.GetEntity
+                            model.GetEntity = function(self_or_id, maybe_id)
+                              local colon = maybe_id ~= nil
+                              local id = colon and maybe_id or self_or_id
+                              local row = colon and orig(self_or_id, id) or orig(id)
+                              if row == nil and type(id) == 'number' then
+                                local base = id - (id % 10)
+                                if base ~= id then
+                                  row = colon and orig(self_or_id, base) or orig(base)
+                                  if row ~= nil then
+                                    inc_global('BATTLE90_MONSTER_BASE_FALLBACK_COUNT')
+                                    rawset(_G, 'BATTLE90_MONSTER_BASE_FALLBACK_LAST', tostring(label)..':'..tostring(id)..'->'..tostring(base))
+                                  end
+                                end
+                              end
+                              return row
+                            end
+                            rawset(model, '__battle90_base_fallback', true)
+                            return model
+                          end
+                          if PNB and type(PNB.GetMonsterCfgData) == 'function' and not rawget(PNB, '__battle90_monster_cfg_patch') then
+                            local orig_cfg = PNB.GetMonsterCfgData
+                            PNB.GetMonsterCfgData = function(...)
+                              return wrap_monster_model(orig_cfg(...), 'cfg')
+                            end
+                            rawset(PNB, '__battle90_monster_cfg_patch', true)
+                          end
+                          if PNB and type(PNB.GetMonsterAttrCfgData) == 'function' and not rawget(PNB, '__battle90_monster_attr_patch') then
+                            local orig_attr = PNB.GetMonsterAttrCfgData
+                            PNB.GetMonsterAttrCfgData = function(...)
+                              return wrap_monster_model(orig_attr(...), 'attr')
+                            end
+                            rawset(PNB, '__battle90_monster_attr_patch', true)
+                          end
+                          if type(HeroCtrl) == 'table' and not rawget(HeroCtrl, '__battle90_skin_patch') then
+                            HeroCtrl.LoadPet = function(self)
+                              if PNB and PNB.IsSkipBattle == true then return end
+                              if not self.PetRoot and self.transform then self.PetRoot = self.transform:Find('PetRoot') end
+                              if self.PetRoot then
+                                local go = CS.UnityEngine.GameObject('B90_Pet_' .. tostring(self.HeroId))
+                                self.CurrPetTransform = go.transform
+                                self.CurrPetTransform:SetParent(self.PetRoot, false)
+                              end
+                              inc_global('BATTLE90_PET_STUB_COUNT')
+                            end
+                            HeroCtrl.LoadSkin = function(self, prefab_id, enter_battle)
+                              if PNB and PNB.IsSkipBattle == true then return end
+                              if not self.HeroRoot and self.transform then self.HeroRoot = self.transform:Find('HeroRoot') end
+                              local root = self.HeroRoot or self.transform
+                              local go = CS.UnityEngine.GameObject('B90_Skin_' .. tostring(self.HeroId))
+                              self.CurrSkinTransform = go.transform
+                              if root then self.CurrSkinTransform:SetParent(root, false) end
+                              self.CurrSkinTransform.localPosition = CS.UnityEngine.Vector3.zero
+                              self.CurrSkinTransform.localEulerAngles = CS.UnityEngine.Vector3(0, -90, 0)
+                              self.CurrMeshRenderer = go:AddComponent(typeof(CS.UnityEngine.MeshRenderer))
+                              self.spineboy = NOOP_STUB
+                              self.spineboyTransform = self.CurrSkinTransform
+                              self.topBone = NOOP_STUB
+                              self.pointBone = NOOP_STUB
+                              self.Ready = true
+                              self.mIsEnterBattle = true
+                              if self.CurrFsm and self.CurrFsm.ParamDic then
+                                self.CurrFsm.ParamDic['changeToIdleType'] = ChangeToIdleType and ChangeToIdleType.NormalIdle or 0
+                              end
+                              if HeroState and type(self.ChangeStateUnCheckState) == 'function' then
+                                pcall(function() self:ChangeStateUnCheckState(HeroState.Idle) end)
+                              end
+                              inc_global('BATTLE90_SKIN_STUB_COUNT')
+                            end
+                            rawset(HeroCtrl, '__battle90_skin_patch', true)
+                          end
+                          if PNB and type(PNB.FirstBattleTeamReady) == 'function' and not rawget(PNB, '__battle90_first_ready_patch') then
+                            PNB.FirstBattleTeamReady = function(...)
+                              inc_global('BATTLE90_FIRST_READY_SHORTCUT_COUNT')
+                              PNB.IsOpenBattleBeginAnim = false
+                              PNB.mBattleRunInMode = EBattleRunInMode and EBattleRunInMode.None or 0
+                              if type(PNB.AfterBattleTeamReady) == 'function' then
+                                return PNB.AfterBattleTeamReady(...)
+                              end
+                            end
+                            rawset(PNB, '__battle90_first_ready_patch', true)
+                          end
+                          if PNB and type(PNB.BattleRoundBeginAddBuffComplete) == 'function' and not rawget(PNB, '__battle90_begin_buff_patch') then
+                            PNB.BattleRoundBeginAddBuff = function(...)
+                              inc_global('BATTLE90_BEGIN_BUFF_SHORTCUT_COUNT')
+                              return PNB.BattleRoundBeginAddBuffComplete(...)
+                            end
+                            rawset(PNB, '__battle90_begin_buff_patch', true)
+                          end
+                          if PNB and type(PNB.BattleBigRoundBegin) == 'function' and not rawget(PNB, '__battle90_all_big_round_patch') then
+                            PNB.BattleAllBigRoundBegin = function(...)
+                              inc_global('BATTLE90_ALL_BIG_ROUND_SHORTCUT_COUNT')
+                              if type(PNB.RefreshHeroHud) == 'function' then pcall(PNB.RefreshHeroHud) end
+                              PNB.IsBattleBigAttacking = true
+                              return PNB.BattleBigRoundBegin(...)
+                            end
+                            rawset(PNB, '__battle90_all_big_round_patch', true)
+                          end
+                          if PNB and type(PNB.BattleRoundExplosive) == 'function' and not rawget(PNB, '__battle90_small_round_patch') then
+                            PNB.BattleSmallRoundBegin = function(...)
+                              inc_global('BATTLE90_SMALL_ROUND_SHORTCUT_COUNT')
+                              local round = rawget(PNB, 'CurrBattleSmallRound')
+                              if type(round) ~= 'number' then round = 0 end
+                              PNB.CurrBattleSmallRound = round + 1
+                              PNB.IsBattleSmallAttacking = true
+                              return PNB.BattleRoundExplosive(...)
+                            end
+                            rawset(PNB, '__battle90_small_round_patch', true)
+                          end
+                          if PNB and type(PNB.BattleRoundEndCheckBuff) == 'function' and not rawget(PNB, '__battle90_attack_task_patch') then
+                            PNB.StartAttackTask = function(...)
+                              local shortcut_count = rawget(_G, 'BATTLE90_ATTACK_TASK_SHORTCUT_COUNT')
+                              if type(shortcut_count) ~= 'number' then shortcut_count = 0 end
+                              if shortcut_count >= 12 then
+                                inc_global('BATTLE90_ATTACK_TASK_GUARD_COUNT')
+                                PNB.CurrIsAttacking = false
+                                PNB.IsBattleSmallAttacking = false
+                                PNB.IsBattleBigAttacking = false
+                                PNB.BattleRounding = false
+                                return
+                              end
+                              rawset(_G, 'BATTLE90_ATTACK_TASK_SHORTCUT_COUNT', shortcut_count + 1)
+                              local team = PNB.CurrAttackTeam
+                              if team and type(team.GetFightAction) == 'function' then
+                                local ok_actions, actions = pcall(function() return team:GetFightAction() end)
+                                if ok_actions and type(actions) == 'table' then
+                                  local count = rawget(_G, 'BATTLE90_ATTACK_ACTION_COUNT')
+                                  if type(count) ~= 'number' then count = 0 end
+                                  rawset(_G, 'BATTLE90_ATTACK_ACTION_COUNT', count + #actions)
+                                end
+                              end
+                              PNB.CurrIsAttacking = false
+                              PNB.BattleRounding = false
+                              return PNB.BattleRoundEndCheckBuff()
+                            end
+                            rawset(PNB, '__battle90_attack_task_patch', true)
+                          end
+                        end
                         TRACE = ''
                         CNT = {}
                         local function wrap(name)
@@ -260,8 +460,16 @@ namespace GirlsWar
                         end
                         for _,n in ipairs({'ProcedureNormalBattle_OnEnter','LoadPlayerHeros','LoadEnemyPlayerHeros',
                           'LoadPlayerHero','OnBattleTeamReady','FirstBattleTeamReady','AfterBattleTeamReady',
-                          'CheckBattleBegin','BattleBegin','BattleAllBigRoundBegin','BattleBigRoundBegin',
-                          'BattleSmallRoundBegin','FinalBattleEnd'}) do wrap(n) end",
+                          'CheckBattleBegin','BattleBegin','CheckFirstAttackTeam','CheckRelic','BattleFightSuppress',
+                          'BattleRoundBeginAddTreasure','BattleRoundBeginAddBuff','BattleRoundBeginAddBuffComplete',
+                          'BattleAllBigRoundBegin','BattleBigRoundBegin','BattleSmallRoundBegin',
+                          'BattleRoundCheckResurgence','BattleRoundCheckResurgenceComplete','SupplementPositionComplete',
+                          'BattleRoundBeginAddAfterBuff','BattleRoundBeginCheckBuff','CheckIsOurTeamAtkAfterBattleRoundBeginCheckBuff',
+                          'BattleRoundBeginChangeToIdle','BattleRoundExplosive','BattleRoundExplosiveComplete',
+                          'SmallRoundStartTeamAttack','SmallRoundStartTeamAttackComplete','BattleRoundBigSkill',
+                          'BattleRoundNormalSkill','StartAttackTask','BattleRoundEndCheckBuff',
+                          'BattleRoundEndCheckBuffComplete','BattleSmallRoundEnd','BattleBigRoundEnd',
+                          'FinalBattleEnd'}) do wrap(n) end",
                         stages, ref failStage, ref err);
                 }
 
@@ -283,6 +491,11 @@ namespace GirlsWar
                         fn(PNB.FightPlayData)",
                         stages, ref failStage, ref err);
                     battleEntered = string.IsNullOrEmpty(failStage);
+                }
+
+                if (string.IsNullOrEmpty(failStage))
+                {
+                    MaterializeOpenedHeroSprites(env, stages, ref failStage, ref err);
                 }
 
             }
@@ -345,6 +558,11 @@ namespace GirlsWar
         {
             if (env == null) return;
             try { result.trace = env.Global.Get<string>("TRACE") ?? ""; } catch { }
+            try { result.openedSpriteCount = YouYou.LuaHeroSprite.OpenedSprites.Count; } catch { }
+            try { result.heroViewBridgeCount = env.Global.Get<int>("BATTLE90_HERO_VIEW_BRIDGE_COUNT"); } catch { }
+            try { result.skinStubCount = env.Global.Get<int>("BATTLE90_SKIN_STUB_COUNT"); } catch { }
+            try { result.monsterBaseFallbackCount = env.Global.Get<int>("BATTLE90_MONSTER_BASE_FALLBACK_COUNT"); } catch { }
+            try { result.firstReadyShortcutCount = env.Global.Get<int>("BATTLE90_FIRST_READY_SHORTCUT_COUNT"); } catch { }
             try
             {
                 env.DoString(@"
@@ -352,12 +570,93 @@ namespace GirlsWar
                       'loadPlayerHero='..tostring(CNT and CNT['LoadPlayerHero'] or 0)..
                       ' loadEnemy='..tostring(CNT and CNT['LoadEnemyPlayerHeros'] or 0)..
                       ' teamReady='..tostring(CNT and CNT['OnBattleTeamReady'] or 0)..
+                      ' firstReady='..tostring(CNT and CNT['FirstBattleTeamReady'] or 0)..
+                      ' afterReady='..tostring(CNT and CNT['AfterBattleTeamReady'] or 0)..
                       ' battleBegin='..tostring(CNT and CNT['BattleBegin'] or 0)..
                       ' bigRound='..tostring(CNT and CNT['BattleBigRoundBegin'] or 0)..
-                      ' currBigRound='..tostring(PNB and rawget(PNB,'CurrBattleBigRound'))");
+                      ' currBigRound='..tostring(PNB and rawget(PNB,'CurrBattleBigRound'))..
+                      ' heroViewBridge='..tostring(rawget(_G,'BATTLE90_HERO_VIEW_BRIDGE_COUNT') or 0)..
+                      ' skinStub='..tostring(rawget(_G,'BATTLE90_SKIN_STUB_COUNT') or 0)..
+                      ' monsterFallback='..tostring(rawget(_G,'BATTLE90_MONSTER_BASE_FALLBACK_COUNT') or 0)..
+                      ' readyTeams='..tostring(PNB and rawget(PNB,'ReadyTeamCount'))..
+                      ' ourCur='..tostring(PNB and PNB.OurTeam and rawget(PNB.OurTeam,'CurrHeroCount'))..
+                      ' enemyCur='..tostring(PNB and PNB.EnemyTeam and rawget(PNB.EnemyTeam,'CurrHeroCount'))..
+                      ' firstShortcut='..tostring(rawget(_G,'BATTLE90_FIRST_READY_SHORTCUT_COUNT') or 0)..
+                      ' beginBuffShortcut='..tostring(rawget(_G,'BATTLE90_BEGIN_BUFF_SHORTCUT_COUNT') or 0)..
+                      ' allBigShortcut='..tostring(rawget(_G,'BATTLE90_ALL_BIG_ROUND_SHORTCUT_COUNT') or 0)..
+                      ' smallRoundShortcut='..tostring(rawget(_G,'BATTLE90_SMALL_ROUND_SHORTCUT_COUNT') or 0)..
+                      ' attackTaskShortcut='..tostring(rawget(_G,'BATTLE90_ATTACK_TASK_SHORTCUT_COUNT') or 0)..
+                      ' attackTaskGuard='..tostring(rawget(_G,'BATTLE90_ATTACK_TASK_GUARD_COUNT') or 0)..
+                      ' attackActions='..tostring(rawget(_G,'BATTLE90_ATTACK_ACTION_COUNT') or 0)..
+                      ' coroutineInline='..tostring(rawget(_G,'BATTLE90_COROUTINE_INLINE_COUNT') or 0)");
                 result.diagSummary = env.Global.Get<string>("DIAG_SUMMARY") ?? "";
             }
             catch { }
+        }
+
+        private static void MaterializeOpenedHeroSprites(LuaEnv env, List<string> stages, ref string failStage, ref string err)
+        {
+            if (env == null || !string.IsNullOrEmpty(failStage)) return;
+
+            var sprites = new List<YouYou.LuaHeroSprite>(YouYou.LuaHeroSprite.OpenedSprites);
+            stages.Add("heroViewBridge:sprites=" + sprites.Count);
+            for (var i = 0; i < sprites.Count; i++)
+            {
+                var sprite = sprites[i];
+                if (sprite == null) continue;
+
+                try
+                {
+                    sprite.EnsureRuntimePlaceholders();
+                    env.Global.Set("BATTLE90_LUA_HERO_SPRITE", sprite);
+                    env.DoString(@"
+                        local sprite = BATTLE90_LUA_HERO_SPRITE
+                        assert(sprite, 'no LuaHeroSprite')
+                        local bridged = rawget(_G, 'BATTLE90_HERO_VIEW_BRIDGED')
+                        if type(bridged) ~= 'table' then
+                          bridged = {}
+                          rawset(_G, 'BATTLE90_HERO_VIEW_BRIDGED', bridged)
+                        end
+                        if not bridged[sprite] then
+                          assert(HeroCtrl and HeroCtrl.Create, 'HeroCtrl missing')
+                          local ctrl = HeroCtrl:Create()
+                          ctrl.transform = sprite.transform
+                          local shadow = sprite.Shadow or sprite.transform
+                          ctrl:InitViewWith(
+                            sprite.IsOurHero,
+                            sprite.BaseHeroID,
+                            sprite.HeroID,
+                            shadow,
+                            sprite.CurrMaterialProperty,
+                            sprite.IdleData,
+                            sprite.IsSupplementHero)
+                          ctrl.shadowRenderer = sprite.ShadowRenderer
+                          ctrl.IsMonster = sprite.IsMonster
+                          ctrl.battleStationIndex = sprite.BattleStationIndex
+                          ctrl.IsSupplementHero = sprite.IsSupplementHero
+                          ctrl:OnOpen()
+                          local pnb = PNB or (ModulesInit and ModulesInit.ProcedureNormalBattle)
+                          assert(pnb and pnb.OurTeam and pnb.EnemyTeam, 'ProcedureNormalBattle teams missing')
+                          if sprite.IsOurHero then
+                            if ctrl:IsPet() then pnb.OurTeam:AddPetCtrl(ctrl) else pnb.OurTeam:AddHeroCtrl(ctrl) end
+                          else
+                            if ctrl:IsPet() then pnb.EnemyTeam:AddPetCtrl(ctrl) else pnb.EnemyTeam:AddHeroCtrl(ctrl) end
+                          end
+                          bridged[sprite] = ctrl
+                          local count = rawget(_G, 'BATTLE90_HERO_VIEW_BRIDGE_COUNT')
+                          if type(count) ~= 'number' then count = 0 end
+                          rawset(_G, 'BATTLE90_HERO_VIEW_BRIDGE_COUNT', count + 1)
+                        end");
+                }
+                catch (Exception e)
+                {
+                    failStage = "heroViewBridge[" + i + "]";
+                    err = e.Message;
+                    return;
+                }
+            }
+
+            try { env.Global.Set<string, object>("BATTLE90_LUA_HERO_SPRITE", null); } catch { }
         }
 
         private static void Safe(LuaEnv env, string lua, List<string> stages, ref string failStage, ref string err, bool optional = false)
@@ -429,6 +728,11 @@ namespace GirlsWar
             public string firstLogException;
             public string trace;
             public string diagSummary;
+            public int openedSpriteCount;
+            public int heroViewBridgeCount;
+            public int skinStubCount;
+            public int monsterBaseFallbackCount;
+            public int firstReadyShortcutCount;
             public List<string> stagesCompleted;
         }
     }

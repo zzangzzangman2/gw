@@ -1,5 +1,5 @@
 {
-    "generatedAt": "2026-06-27 09:29:26",
+    "generatedAt": "2026-06-27 10:00:42",
     "status": "playmode_bootstrap_entered_battle",
     "playModeEntered": true,
     "frameBudget": 240,
@@ -14,8 +14,13 @@
     "error": "",
     "errorLogCount": 0,
     "firstLogException": "",
-    "trace": "ProcedureNormalBattle_OnEnter;LoadPlayerHeros;LoadPlayerHero;LoadPlayerHero;LoadPlayerHero;LoadEnemyPlayerHeros;LoadPlayerHero;",
-    "diagSummary": "loadPlayerHero=6 loadEnemy=1 teamReady=0 battleBegin=0 bigRound=0 currBigRound=0",
+    "trace": "ProcedureNormalBattle_OnEnter;LoadPlayerHeros;LoadPlayerHero;LoadPlayerHero;LoadPlayerHero;LoadEnemyPlayerHeros;LoadPlayerHero;OnBattleTeamReady;OnBattleTeamReady;FirstBattleTeamReady;AfterBattleTeamReady;CheckBattleBegin;BattleBegin;CheckFirstAttackTeam;CheckRelic;BattleFightSuppress;BattleRoundBeginAddTreasure;BattleRoundBeginAddBuff;BattleRoundBeginAddBuffComplete;BattleAllBigRoundBegin;BattleBigRoundBegin;BattleSmallRoundBegin;BattleRoundExplosive;BattleRoundExplosiveComplete;BattleRoundEndCheckBuff;BattleRoundEndCheckBuffComplete;StartAttackTask;BattleRoundEndCheckBuff;BattleRoundEndCheckBuffComplete;StartAttackTask;BattleRoundEndCheckBuff;BattleRoundEndCheckBuffComplete;StartAttackTask;BattleRoundEndCheckBuff;BattleRoundEndCheckBuffComplete;StartAttackTask;",
+    "diagSummary": "loadPlayerHero=6 loadEnemy=1 teamReady=2 firstReady=1 afterReady=1 battleBegin=1 bigRound=1 currBigRound=1 heroViewBridge=6 skinStub=6 monsterFallback=6 readyTeams=2 ourCur=3 enemyCur=3 firstShortcut=1 beginBuffShortcut=1 allBigShortcut=1 smallRoundShortcut=1 attackTaskShortcut=12 attackTaskGuard=1 attackActions=72 coroutineInline=1",
+    "openedSpriteCount": 6,
+    "heroViewBridgeCount": 6,
+    "skinStubCount": 6,
+    "monsterBaseFallbackCount": 6,
+    "firstReadyShortcutCount": 1,
     "stagesCompleted": [
         "luaenv+loader",
         "permissive-_G",
@@ -32,6 +37,7 @@
         "PNB = require('ProcedureNormalBattle')",
         "\n                        local data = JsonUtil a...",
         "assert(PNB and PNB.PlayFightClientReplay, 'no Pl...",
-        "\n                        local fn = PNB and (PNB..."
+        "\n                        local fn = PNB and (PNB...",
+        "heroViewBridge:sprites=6"
     ]
 }
