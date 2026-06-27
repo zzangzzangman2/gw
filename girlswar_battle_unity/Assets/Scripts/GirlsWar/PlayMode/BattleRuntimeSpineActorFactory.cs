@@ -53,6 +53,7 @@ namespace GirlsWar
         public bool IsExactActor;
         public bool IsSpineActor;
         public bool IsOurHero;
+        public SpriteRenderer GroundShadowRenderer;
         public string AnimationName = "";
         public string FallbackReason = "";
 
@@ -264,7 +265,9 @@ namespace GirlsWar
 
             var requested = heroDid != 0 ? heroDid : heroId;
             var resolved = ResolveActorId(heroId, heroDid, isMonster, out var resolveReason);
-            var exact = resolved == requested || (heroDid == 0 && resolved == heroId);
+            var exact = resolved == requested ||
+                        (heroDid == 0 && resolved == heroId) ||
+                        (isMonster && IsMonsterModelMappedResolution(resolveReason));
 
             var go = new GameObject("B90_RuntimeActor_" + requested + "_as_" + resolved);
             if (parent != null)
@@ -313,6 +316,7 @@ namespace GirlsWar
                 PrefabCount++;
                 SpineCount++;
                 handle.IsSpineActor = true;
+                AttachGroundShadow(handle, resolved, isOurHero);
                 RegisterHandle(handle);
                 LastSummary = BuildSummary(handle);
                 return handle;
@@ -322,6 +326,7 @@ namespace GirlsWar
             {
                 SpineCount++;
                 handle.IsSpineActor = true;
+                AttachGroundShadow(handle, resolved, isOurHero);
                 RegisterHandle(handle);
                 LastSummary = BuildSummary(handle);
                 return handle;
@@ -340,6 +345,7 @@ namespace GirlsWar
             }
 
             AttachTexturedQuad(handle, resolved, isOurHero);
+            AttachGroundShadow(handle, resolved, isOurHero);
             QuadFallbackCount++;
             RegisterHandle(handle);
             LastSummary = BuildSummary(handle);
@@ -1180,7 +1186,7 @@ namespace GirlsWar
             {
                 if (modelId != 0 && HasImportedActor(modelId))
                 {
-                    var resolveKind = sourceMonsterId == requested ? "monster_model_exact:" : "monster_model_base_fallback:";
+                    var resolveKind = MonsterResolveKind(requested, sourceMonsterId);
                     resolveReason = resolveKind + requested + "->" + sourceMonsterId + "/" + sourceTable + "/model_" + modelId;
                     return modelId;
                 }
@@ -1192,6 +1198,27 @@ namespace GirlsWar
                     return candidate;
             }
             return 0;
+        }
+
+        private static bool IsMonsterModelMappedResolution(string resolveReason)
+        {
+            if (string.IsNullOrEmpty(resolveReason))
+                return false;
+            return resolveReason.StartsWith("monster_model_exact:", StringComparison.Ordinal) ||
+                   resolveReason.StartsWith("monster_model_group_variant:", StringComparison.Ordinal);
+        }
+
+        private static string MonsterResolveKind(int requestedMonsterId, int sourceMonsterId)
+        {
+            if (sourceMonsterId == requestedMonsterId)
+                return "monster_model_exact:";
+            if (requestedMonsterId >= 1100000)
+            {
+                var firstVariant = requestedMonsterId - (requestedMonsterId % 10) + 1;
+                if (sourceMonsterId == firstVariant)
+                    return "monster_model_group_variant:";
+            }
+            return "monster_model_base_fallback:";
         }
 
         private static IEnumerable<int> BuildCandidates(int heroId, int heroDid, bool isMonster)
@@ -1256,6 +1283,10 @@ namespace GirlsWar
                 yield break;
 
             var lastDigitBase = monsterId - (monsterId % 10);
+            var firstVariant = lastDigitBase + 1;
+            if (firstVariant != monsterId)
+                yield return firstVariant;
+
             if (lastDigitBase != monsterId)
                 yield return lastDigitBase;
 
@@ -1777,17 +1808,75 @@ namespace GirlsWar
         {
             switch (actorId)
             {
-                case 1036: return 1.62f;
-                case 1034: return 1.62f;
-                case 1002: return 1.38f;
-                case 1025: return 1.38f;
-                case 1005: return 1.34f;
-                case 1029: return 1.32f;
-                case 1037: return 1.38f;
-                case 1050: return 1.36f;
-                case 3001: return 1.5f;
-                case 3006: return 1.36f;
-                default: return actorId >= 3000 ? 1.38f : 1.4f;
+                case 1036: return 2.45f;
+                case 1034: return 2.65f;
+                case 1002: return 1.95f;
+                case 1025: return 2.05f;
+                case 1005: return 1.92f;
+                case 1029: return 1.9f;
+                case 1037: return 2.0f;
+                case 1050: return 2.05f;
+                case 3001: return 1.85f;
+                case 3006: return 1.62f;
+                default: return actorId >= 3000 ? 1.7f : 2.0f;
+            }
+        }
+
+        private static Sprite groundShadowSprite;
+
+        private static Sprite GroundShadowSprite()
+        {
+            if (groundShadowSprite != null)
+                return groundShadowSprite;
+
+            const int width = 128;
+            const int height = 64;
+            var texture = new Texture2D(width, height, TextureFormat.RGBA32, false);
+            texture.name = "B90_GroundShadowTexture";
+            for (var y = 0; y < height; y++)
+            {
+                for (var x = 0; x < width; x++)
+                {
+                    var nx = (x + 0.5f - width * 0.5f) / (width * 0.5f);
+                    var ny = (y + 0.5f - height * 0.5f) / (height * 0.5f);
+                    var dist = Mathf.Sqrt(nx * nx + ny * ny);
+                    var alpha = Mathf.Pow(Mathf.Clamp01(1f - dist), 1.85f) * 0.42f;
+                    texture.SetPixel(x, y, new Color(0f, 0f, 0f, alpha));
+                }
+            }
+            texture.Apply(false, true);
+            groundShadowSprite = Sprite.Create(texture, new Rect(0, 0, width, height), new Vector2(0.5f, 0.5f), 96f);
+            groundShadowSprite.name = "B90_GroundShadowSprite";
+            return groundShadowSprite;
+        }
+
+        private static void AttachGroundShadow(BattleRuntimeActorHandle handle, int actorId, bool isOurHero)
+        {
+            if (handle == null || actorId == 0 || handle.GroundShadowRenderer != null)
+                return;
+
+            var go = new GameObject("B90_GroundShadow");
+            go.transform.SetParent(handle.transform, false);
+            go.transform.localPosition = new Vector3(0f, 0.035f, 0.12f);
+            var shadowScale = GroundShadowScale(actorId, isOurHero);
+            go.transform.localScale = new Vector3(shadowScale.x, shadowScale.y, 1f);
+            var renderer = go.AddComponent<SpriteRenderer>();
+            renderer.sprite = GroundShadowSprite();
+            renderer.color = new Color(0f, 0f, 0f, 0.74f);
+            renderer.sortingOrder = -80;
+            handle.GroundShadowRenderer = renderer;
+        }
+
+        private static Vector2 GroundShadowScale(int actorId, bool isOurHero)
+        {
+            switch (actorId)
+            {
+                case 1002: return new Vector2(0.78f, 0.28f);
+                case 1034: return new Vector2(1.05f, 0.34f);
+                case 1036: return new Vector2(1.02f, 0.34f);
+                case 3001: return new Vector2(1.34f, 0.4f);
+                case 3006: return new Vector2(1.12f, 0.34f);
+                default: return actorId >= 3000 ? new Vector2(1.12f, 0.34f) : new Vector2(isOurHero ? 0.96f : 1.05f, 0.32f);
             }
         }
 

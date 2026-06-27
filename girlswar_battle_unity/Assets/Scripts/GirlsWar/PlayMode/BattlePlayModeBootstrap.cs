@@ -29,11 +29,31 @@ namespace GirlsWar
         private static int[] configuredHudCardActorIds = { 1036, 1002, 1034, 0, 0 };
         private const int CaptureWidth = 1280;
         private const int CaptureHeight = 570;
-        private const string VisualTuningVersion = "battle90-dynamic-payload-hud-wide-formation-v6";
+        private const string VisualTuningVersion = "battle90-payload-slots-scale-realism-v8";
         private const float VisualMapWidthUnits = 12.85f;
         private static readonly int[] DefaultHudCardActorIds = { 1036, 1002, 1034, 0, 0 };
         private static readonly int[] RosterExpansionHudCardActorIds = { 1025, 1050, 1029, 1034, 1002 };
         private static readonly int[] StandingSnapshotEnemyActorIds = { 1100111, 1100112, 1100113 };
+        private static readonly Vector3[] OurFormationSlotPositions =
+        {
+            new Vector3(-3.05f, -1.05f, -0.02f),
+            new Vector3(-1.55f, -0.92f, 0f),
+            new Vector3(-1.22f, -2.2f, -0.24f),
+            new Vector3(-2.34f, -1.58f, -0.12f),
+            new Vector3(-3.42f, -1.52f, -0.1f),
+            new Vector3(-2.56f, -2.48f, -0.28f),
+        };
+        private static readonly Vector3[] EnemyFormationSlotPositions =
+        {
+            new Vector3(1.42f, -1.04f, -0.02f),
+            new Vector3(2.76f, -1.34f, -0.1f),
+            new Vector3(1.42f, -2.28f, -0.26f),
+            new Vector3(2.7f, -2.46f, -0.3f),
+            new Vector3(3.88f, -1.18f, -0.08f),
+            new Vector3(3.42f, -2.5f, -0.32f),
+        };
+        private static readonly float[] OurFormationSlotScales = { 1f, 1f, 0.96f, 0.94f, 0.92f, 0.95f };
+        private static readonly float[] EnemyFormationSlotScales = { 0.74f, 0.68f, 0.72f, 0.68f, 0.74f, 0.68f };
         private static readonly Dictionary<string, Sprite> RuntimeUiSpriteCache = new Dictionary<string, Sprite>(StringComparer.OrdinalIgnoreCase);
         private static readonly Dictionary<string, string> RuntimeLocalizationCache = new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase);
         private static bool runtimeLocalizationCacheLoaded;
@@ -377,12 +397,15 @@ namespace GirlsWar
                             local root = rootGo.transform
                             local stations = {}
                             local is_our = string.find(prefix, 'Our') ~= nil
-                            local xs = is_our and {-3.55, -2.85, -1.25, -2.25, -0.35, -1.45} or {1.75, 4.05, 4.75, 2.85, 4.95, 3.35}
-                            local ys = {-0.78, -2.35, -0.72, -2.58, -1.22, -2.7}
+                            local xs = is_our and {-3.05, -1.55, -1.22, -2.34, -3.42, -2.56} or {1.42, 2.76, 1.42, 2.7, 3.88, 3.42}
+                            local ys = is_our and {-1.05, -0.92, -2.2, -1.58, -1.52, -2.48} or {-1.04, -1.34, -2.28, -2.46, -1.18, -2.5}
+                            local zs = is_our and {-0.02, 0.0, -0.24, -0.12, -0.1, -0.28} or {-0.02, -0.1, -0.26, -0.3, -0.08, -0.32}
+                            local ss = is_our and {1.0, 1.0, 0.96, 0.94, 0.92, 0.95} or {0.74, 0.68, 0.72, 0.68, 0.74, 0.68}
                             for idx=0,5 do
                               local go = CS.UnityEngine.GameObject(prefix .. '_Station_' .. tostring(idx))
                               go.transform:SetParent(root, false)
-                              go.transform.localPosition = CS.UnityEngine.Vector3(xs[idx + 1] or 0, ys[idx + 1] or 0, 0)
+                              go.transform.localPosition = CS.UnityEngine.Vector3(xs[idx + 1] or 0, ys[idx + 1] or 0, zs[idx + 1] or 0)
+                              go.transform.localScale = CS.UnityEngine.Vector3.one * (ss[idx + 1] or 1)
                               stations[idx] = go.transform
                             end
                             return {
@@ -535,14 +558,21 @@ namespace GirlsWar
                               if row == nil and type(id) == 'number' then
                                 local candidates = {}
                                 local last_digit_base = id - (id % 10)
-                                if last_digit_base ~= id then table.insert(candidates, last_digit_base) end
+                                local first_variant = last_digit_base + 1
+                                if first_variant ~= id then table.insert(candidates, {id=first_variant, kind='variant'}) end
+                                if last_digit_base ~= id and last_digit_base ~= first_variant then table.insert(candidates, {id=last_digit_base, kind='base'}) end
                                 local stage_base = math.floor(id / 100) * 100 + 10
-                                if stage_base ~= id and stage_base ~= last_digit_base then table.insert(candidates, stage_base) end
-                                for _, base in ipairs(candidates) do
-                                  row = colon and orig(self_or_id, base) or orig(base)
+                                if stage_base ~= id and stage_base ~= last_digit_base and stage_base ~= first_variant then table.insert(candidates, {id=stage_base, kind='base'}) end
+                                for _, candidate in ipairs(candidates) do
+                                  row = colon and orig(self_or_id, candidate.id) or orig(candidate.id)
                                   if row ~= nil then
-                                    inc_global('BATTLE90_MONSTER_BASE_FALLBACK_COUNT')
-                                    rawset(_G, 'BATTLE90_MONSTER_BASE_FALLBACK_LAST', tostring(label)..':'..tostring(id)..'->'..tostring(base))
+                                    if candidate.kind == 'base' then
+                                      inc_global('BATTLE90_MONSTER_BASE_FALLBACK_COUNT')
+                                      rawset(_G, 'BATTLE90_MONSTER_BASE_FALLBACK_LAST', tostring(label)..':'..tostring(id)..'->'..tostring(candidate.id))
+                                    else
+                                      inc_global('BATTLE90_MONSTER_GROUP_VARIANT_COUNT')
+                                      rawset(_G, 'BATTLE90_MONSTER_GROUP_VARIANT_LAST', tostring(label)..':'..tostring(id)..'->'..tostring(candidate.id))
+                                    end
                                     break
                                   end
                                 end
@@ -1247,9 +1277,12 @@ namespace GirlsWar
                 " visualActors=" + result.visualActorHandleCount +
                 " visualRenderers=" + result.visualActorRendererCount +
                 " visualScreenArea=" + result.visualActorScreenAreaRatio.ToString("0.######") +
+                " visualHeightMinMax=" + result.visualActorMinHeightPixels.ToString("0.#") + "/" + result.visualActorMaxHeightPixels.ToString("0.#") +
                 " visualMaxOverlap=" + result.visualActorMaxOverlapRatio.ToString("0.######") +
                 " visualOverlapPairs=" + result.visualActorOverlappedPairCount +
                 " visualMinCenterPx=" + result.visualActorMinCenterDistancePixels.ToString("0.##") +
+                " visualShadows=" + result.visualActorShadowCount +
+                " visualAnimated=" + result.visualActorAnimatedCount +
                 " visualHudSlots=" + result.visualHudSkillSlotCount +
                 " visualHudSourceSprites=" + result.visualHudSourceSpriteCount +
                 " visualHudDamage=" + result.visualHudDamageTextCount +
@@ -1281,13 +1314,18 @@ namespace GirlsWar
 
             var ourSlot = 0;
             var enemySlot = 0;
+            var payload = LoadConfiguredBattlePayload();
             var summaries = new List<string>();
             foreach (var handle in handles)
             {
                 if (handle == null)
                     continue;
 
-                var slot = handle.IsOurHero ? ourSlot++ : enemySlot++;
+                var fallbackSlot = handle.IsOurHero ? ourSlot++ : enemySlot++;
+                var heroId = handle.RequestedHeroId;
+                var heroDid = handle.RequestedHeroDid != 0 ? handle.RequestedHeroDid : handle.ResolvedActorId;
+                var isMonster = !handle.IsOurHero && (heroId < 0 || heroDid >= 1100000 || handle.ResolvedActorId >= 3000);
+                var slot = ResolvePayloadFormationSlot(payload, handle.IsOurHero, heroId, heroDid, isMonster, fallbackSlot);
                 handle.transform.SetParent(root.transform, true);
                 handle.transform.position = PreviewFormationPosition(handle.IsOurHero, slot);
                 handle.transform.localRotation = Quaternion.identity;
@@ -1295,7 +1333,7 @@ namespace GirlsWar
                 handle.RememberBasePose();
 
                 var actorKey = handle.RequestedHeroDid != 0 ? handle.RequestedHeroDid : handle.RequestedHeroId;
-                summaries.Add(actorKey + "@" + slot + "x" + factor.ToString("0.###"));
+                summaries.Add(actorKey + "@p" + (slot + 1) + "x" + factor.ToString("0.###"));
                 result.standingSnapshotActorNormalizeCount++;
             }
 
@@ -1381,10 +1419,12 @@ namespace GirlsWar
         private static float StandingSnapshotTargetHeight(BattleRuntimeActorHandle handle)
         {
             if (handle == null)
-                return 1.36f;
+                return 2.0f;
             if (!handle.IsOurHero)
-                return handle.ResolvedActorId == 3001 ? 1.5f : 1.36f;
-            return 1.36f;
+                return handle.ResolvedActorId == 3001 ? 2.25f : 2.05f;
+            if (handle.ResolvedActorId == 1002)
+                return 1.95f;
+            return 2.35f;
         }
 
         private static bool TryCollectRendererBounds(GameObject root, out Bounds bounds)
@@ -1427,8 +1467,8 @@ namespace GirlsWar
             camera.clearFlags = CameraClearFlags.SolidColor;
             camera.backgroundColor = new Color(0.025f, 0.028f, 0.034f, 1f);
             camera.orthographic = true;
-            camera.orthographicSize = 2.55f;
-            camera.transform.position = new Vector3(0f, -0.5f, -10f);
+            camera.orthographicSize = 2.2f;
+            camera.transform.position = new Vector3(0.05f, -0.82f, -10f);
             camera.transform.rotation = Quaternion.identity;
 
             var stage = GameObject.Find("B90_VisualStage");
@@ -2171,6 +2211,7 @@ namespace GirlsWar
             public string name;
             public PlayerInfoPayload playerInfo;
             public HeroEntry[] ourHeros;
+            public FormationEntry[] ourTeamFormation;
             public WaveEntry[] waveData;
         }
 
@@ -2189,8 +2230,19 @@ namespace GirlsWar
         {
             public int waveNo;
             public HeroEntry[] enemyHeros;
+            public FormationEntry[] enemyTeamFormation;
             public BigRoundEntry[] bigRoundData;
             public HeroStatistic[] heroStatistics;
+        }
+
+        [Serializable]
+        private sealed class FormationEntry
+        {
+            public int formationId;
+            public int position;
+            public int heroId;
+            public int heroDid;
+            public int firstValue;
         }
 
         [Serializable]
@@ -2290,11 +2342,67 @@ namespace GirlsWar
             return heroes != null && heroes.Length > 0 ? heroes[0] : null;
         }
 
-        private static HeroEntry FirstWaveEnemy(BattleInfo info)
+        private static BattlePayload LoadConfiguredBattlePayload()
+        {
+            var payloadPath = Path.Combine(Application.dataPath, "RestoreData", "battle", configuredPayloadFileName ?? DefaultPayloadFileName);
+            if (!File.Exists(payloadPath))
+                return null;
+
+            try
+            {
+                return JsonUtility.FromJson<BattlePayload>(File.ReadAllText(payloadPath));
+            }
+            catch
+            {
+                return null;
+            }
+        }
+
+        private static WaveEntry FirstWave(BattleInfo info)
         {
             if (info == null || info.waveData == null || info.waveData.Length == 0)
                 return null;
-            return FirstHero(info.waveData[0].enemyHeros);
+            return info.waveData[0];
+        }
+
+        private static HeroEntry FirstWaveEnemy(BattleInfo info)
+        {
+            var wave = FirstWave(info);
+            return FirstHero(wave != null ? wave.enemyHeros : null);
+        }
+
+        private static int ResolvePayloadFormationSlot(BattlePayload payload, bool isOurHero, int heroId, int heroDid, bool isMonster, int fallbackSlot)
+        {
+            var info = payload != null ? payload.battleInfo : null;
+            var wave = FirstWave(info);
+            var formation = isOurHero
+                ? (info != null ? info.ourTeamFormation : null)
+                : (wave != null ? wave.enemyTeamFormation : null);
+
+            var slot = ResolvePayloadFormationSlot(formation, heroId, heroDid, isMonster);
+            return slot >= 0 ? slot : Mathf.Clamp(fallbackSlot, 0, 5);
+        }
+
+        private static int ResolvePayloadFormationSlot(FormationEntry[] formation, int heroId, int heroDid, bool isMonster)
+        {
+            if (formation == null)
+                return -1;
+
+            for (var i = 0; i < formation.Length; i++)
+            {
+                var entry = formation[i];
+                if (entry == null || entry.position <= 0)
+                    continue;
+
+                if (heroDid != 0 && entry.heroDid == heroDid)
+                    return Mathf.Clamp(entry.position - 1, 0, 5);
+                if (heroId != 0 && entry.heroId == heroId)
+                    return Mathf.Clamp(entry.position - 1, 0, 5);
+                if (isMonster && heroId < 0 && entry.heroId == heroId)
+                    return Mathf.Clamp(entry.position - 1, 0, 5);
+            }
+
+            return -1;
         }
 
         private static int[] HudActorIdsFromPayload(BattleInfo info)
@@ -2773,16 +2881,34 @@ namespace GirlsWar
             var rendererCount = 0;
             var actorRects = new List<Rect>();
             var actorRectSummaries = new List<string>();
+            var actorHeightSummaries = new List<string>();
+            var actorAnimationSummaries = new List<string>();
             var actorPositions = new List<string>();
+            var actorShadowCount = 0;
+            var actorAnimatedCount = 0;
+            var hasActorHeight = false;
+            var minActorHeight = 0f;
+            var maxActorHeight = 0f;
             foreach (var handle in handles)
             {
                 if (handle == null) continue;
+                var actorKey = (handle.RequestedHeroDid != 0 ? handle.RequestedHeroDid : handle.RequestedHeroId).ToString();
+                if (handle.GroundShadowRenderer != null && handle.GroundShadowRenderer.enabled && handle.GroundShadowRenderer.gameObject.activeInHierarchy)
+                    actorShadowCount++;
+                if (handle.SkeletonAnimation != null && !string.IsNullOrEmpty(handle.AnimationName))
+                {
+                    actorAnimatedCount++;
+                    actorAnimationSummaries.Add(actorKey + "->" + handle.ResolvedActorId + ":" + handle.AnimationName);
+                }
+
                 var renderers = handle.GetComponentsInChildren<Renderer>(true);
                 var actorHasBounds = false;
                 var actorBounds = new Bounds();
                 foreach (var renderer in renderers)
                 {
                     if (renderer == null || !renderer.enabled || !renderer.gameObject.activeInHierarchy)
+                        continue;
+                    if (string.Equals(renderer.gameObject.name, "B90_GroundShadow", StringComparison.Ordinal))
                         continue;
                     rendererCount++;
                     if (!hasBounds)
@@ -2806,24 +2932,41 @@ namespace GirlsWar
                     }
                 }
 
-                var actorKey = (handle.RequestedHeroDid != 0 ? handle.RequestedHeroDid : handle.RequestedHeroId).ToString();
                 actorPositions.Add(actorKey + "@" + Vec(handle.transform.position));
                 if (actorHasBounds && camera != null)
                 {
                     var rect = ScreenRectValue(camera, actorBounds);
                     actorRects.Add(rect);
                     actorRectSummaries.Add(actorKey + "->" + handle.ResolvedActorId + ":" + RectString(rect));
+                    actorHeightSummaries.Add(actorKey + "->" + handle.ResolvedActorId + "=" + rect.height.ToString("0.#") + "px");
+                    if (!hasActorHeight)
+                    {
+                        minActorHeight = rect.height;
+                        maxActorHeight = rect.height;
+                        hasActorHeight = true;
+                    }
+                    else
+                    {
+                        minActorHeight = Mathf.Min(minActorHeight, rect.height);
+                        maxActorHeight = Mathf.Max(maxActorHeight, rect.height);
+                    }
                 }
             }
 
             result.visualActorRendererCount = rendererCount;
             result.visualTuningVersion = VisualTuningVersion;
-            result.visualLayoutSummary = "payload=" + configuredPayloadFileName + "/mapWidthUnits=" + VisualMapWidthUnits.ToString("0.##") + "/wide-two-row-diagonal/standingSnapshot=" + configuredStandingSnapshotOnly;
+            result.visualLayoutSummary = "payload=" + configuredPayloadFileName + "/mapWidthUnits=" + VisualMapWidthUnits.ToString("0.##") + "/native-height-camera2.2-shadow-depth/standingSnapshot=" + configuredStandingSnapshotOnly;
             result.visualActorWorldBounds = hasBounds ? Vec(combined.center) + "|" + Vec(combined.size) : "";
             result.visualActorScreenRect = hasBounds && camera != null ? ScreenRect(camera, combined) : "";
             result.visualActorScreenAreaRatio = hasBounds && camera != null ? ScreenAreaRatio(camera, combined) : 0f;
             result.visualActorWorldPositions = string.Join(";", actorPositions.ToArray());
             result.visualActorScreenRects = string.Join(";", actorRectSummaries.ToArray());
+            result.visualActorHeightSummary = string.Join(";", actorHeightSummaries.ToArray());
+            result.visualActorMinHeightPixels = hasActorHeight ? minActorHeight : 0f;
+            result.visualActorMaxHeightPixels = hasActorHeight ? maxActorHeight : 0f;
+            result.visualActorShadowCount = actorShadowCount;
+            result.visualActorAnimatedCount = actorAnimatedCount;
+            result.visualActorAnimationSummary = string.Join(";", actorAnimationSummaries.ToArray());
             ComputeVisualOverlap(actorRects, out result.visualActorMaxOverlapRatio, out result.visualActorMinCenterDistancePixels, out result.visualActorOverlappedPairCount);
             CollectHudDiagnostics(result);
         }
@@ -3100,6 +3243,7 @@ namespace GirlsWar
             stages.Add("heroViewBridge:sprites=" + sprites.Count);
             var ourSlot = 0;
             var enemySlot = 0;
+            var payload = LoadConfiguredBattlePayload();
             for (var i = 0; i < sprites.Count; i++)
             {
                 var sprite = sprites[i];
@@ -3108,7 +3252,10 @@ namespace GirlsWar
                 try
                 {
                     sprite.EnsureRuntimePlaceholders();
-                    var slot = sprite.IsOurHero ? ourSlot++ : enemySlot++;
+                    var fallbackSlot = sprite.IsOurHero ? ourSlot++ : enemySlot++;
+                    var heroId = sprite.HeroID;
+                    var heroDid = sprite.BaseHeroID;
+                    var slot = ResolvePayloadFormationSlot(payload, sprite.IsOurHero, heroId, heroDid, sprite.IsMonster || heroId < 0, fallbackSlot);
                     ApplyPreviewFormationPosition(sprite, slot);
                     env.Global.Set("BATTLE90_LUA_HERO_SPRITE", sprite);
                     env.DoString(@"
@@ -3172,34 +3319,22 @@ namespace GirlsWar
             var index = Mathf.Clamp(slot, 0, 5);
             sprite.transform.position = PreviewFormationPosition(sprite.IsOurHero, slot);
             sprite.transform.localRotation = Quaternion.identity;
-            sprite.transform.localScale = Vector3.one;
+            sprite.transform.localScale = Vector3.one * PreviewFormationScale(sprite.IsOurHero, index);
             sprite.BattleStationIndex = index;
         }
 
         private static Vector3 PreviewFormationPosition(bool isOurHero, int slot)
         {
-            var positions = isOurHero
-                ? new[]
-                {
-                    new Vector3(-3.55f, -0.78f, 0f),
-                    new Vector3(-2.85f, -2.35f, 0f),
-                    new Vector3(-1.25f, -0.72f, 0f),
-                    new Vector3(-2.25f, -2.58f, 0f),
-                    new Vector3(-0.35f, -1.22f, 0f),
-                    new Vector3(-1.45f, -2.7f, 0f),
-                }
-                : new[]
-                {
-                    new Vector3(1.75f, -0.78f, 0f),
-                    new Vector3(4.05f, -2.35f, 0f),
-                    new Vector3(4.75f, -0.72f, 0f),
-                    new Vector3(2.85f, -2.58f, 0f),
-                    new Vector3(4.95f, -1.22f, 0f),
-                    new Vector3(3.35f, -2.7f, 0f),
-                };
+            var positions = isOurHero ? OurFormationSlotPositions : EnemyFormationSlotPositions;
 
             var index = Mathf.Clamp(slot, 0, positions.Length - 1);
             return positions[index];
+        }
+
+        private static float PreviewFormationScale(bool isOurHero, int slot)
+        {
+            var scales = isOurHero ? OurFormationSlotScales : EnemyFormationSlotScales;
+            return scales[Mathf.Clamp(slot, 0, scales.Length - 1)];
         }
 
         private static int PrimaryHudActorId()
@@ -3363,6 +3498,12 @@ namespace GirlsWar
             public float visualActorScreenAreaRatio;
             public string visualActorWorldPositions;
             public string visualActorScreenRects;
+            public string visualActorHeightSummary;
+            public float visualActorMinHeightPixels;
+            public float visualActorMaxHeightPixels;
+            public int visualActorShadowCount;
+            public int visualActorAnimatedCount;
+            public string visualActorAnimationSummary;
             public float visualActorMaxOverlapRatio;
             public float visualActorMinCenterDistancePixels;
             public int visualActorOverlappedPairCount;
