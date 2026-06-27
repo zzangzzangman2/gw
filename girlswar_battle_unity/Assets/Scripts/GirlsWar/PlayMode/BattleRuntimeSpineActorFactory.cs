@@ -392,6 +392,7 @@ namespace GirlsWar
             handle.MeshRenderer = skeletonAnimation.GetComponent<MeshRenderer>() ?? instance.GetComponentInChildren<MeshRenderer>(true);
             handle.AnimationName = animationName ?? "";
             ApplyActorPose(handle.transform, isOurHero, true);
+            NormalizeRendererDepth(handle.transform);
             return handle.MeshRenderer != null;
         }
 
@@ -527,6 +528,30 @@ namespace GirlsWar
                 scale.x = -Mathf.Abs(scale.x);
                 transform.localScale = scale;
             }
+        }
+
+        private static void NormalizeRendererDepth(Transform root)
+        {
+            if (root == null) return;
+            var renderers = root.GetComponentsInChildren<Renderer>(true);
+            var hasBounds = false;
+            var combined = new Bounds();
+            foreach (var renderer in renderers)
+            {
+                if (renderer == null) continue;
+                if (!hasBounds)
+                {
+                    combined = renderer.bounds;
+                    hasBounds = true;
+                }
+                else
+                {
+                    combined.Encapsulate(renderer.bounds);
+                }
+            }
+
+            if (!hasBounds) return;
+            root.position += new Vector3(0f, 0f, -combined.center.z);
         }
 
         private static string AppendReason(string current, string reason)

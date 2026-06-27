@@ -18,11 +18,14 @@ namespace GirlsWar
         public static string ResultPath { get; private set; }
 
         private static int configuredFrameBudget = 240;
+        private const int CaptureWidth = 1280;
+        private const int CaptureHeight = 720;
 
         [SerializeField] private int frameBudget = 240;
 
         private string firstLogException = "";
         private int errorLogCount;
+        private Camera visualCamera;
 
         private const string SetupEnv = @"
             local NOOP = {}
@@ -83,6 +86,7 @@ namespace GirlsWar
             YouYou.GameEntry.Procedure.ResetRuntimeState();
             YouYou.LuaHeroSprite.ResetOpenedSprites();
             BattleRuntimeSpineActorFactory.ResetDiagnostics();
+            visualCamera = EnsureVisualStage();
             Application.logMessageReceived += OnLogMessage;
         }
 
@@ -262,9 +266,13 @@ namespace GirlsWar
                             local rootGo = CS.UnityEngine.GameObject(prefix .. '_Root')
                             local root = rootGo.transform
                             local stations = {}
+                            local is_our = string.find(prefix, 'Our') ~= nil
+                            local xs = is_our and {-2.65, -1.75, -0.85, -2.25, -1.35, -0.45} or {2.65, 1.75, 0.85, 2.25, 1.35, 0.45}
+                            local ys = {-0.65, -0.65, -0.65, -1.55, -1.55, -1.55}
                             for idx=0,5 do
                               local go = CS.UnityEngine.GameObject(prefix .. '_Station_' .. tostring(idx))
                               go.transform:SetParent(root, false)
+                              go.transform.localPosition = CS.UnityEngine.Vector3(xs[idx + 1] or 0, ys[idx + 1] or 0, 0)
                               stations[idx] = go.transform
                             end
                             return {
@@ -543,6 +551,9 @@ namespace GirlsWar
             }
 
             TryReadLuaDiagnostics(env, result);
+            CollectVisualDiagnostics(result, visualCamera);
+            CaptureVisualEvidence(result, visualCamera);
+            AppendVisualDiagnostics(result);
             try { env?.Dispose(); } catch { }
 
             result.stagesCompleted = stages;
@@ -649,6 +660,213 @@ namespace GirlsWar
                 " runtimePreview=" + result.runtimePreviewActionCount +
                 " runtimePreviewDone=" + result.runtimePreviewCompletedCount +
                 " runtimePreviewMiss=" + result.runtimePreviewMissCount;
+        }
+
+        private static void AppendVisualDiagnostics(Result result)
+        {
+            result.diagSummary = (result.diagSummary ?? "") +
+                " visualActors=" + result.visualActorHandleCount +
+                " visualRenderers=" + result.visualActorRendererCount +
+                " visualScreenArea=" + result.visualActorScreenAreaRatio.ToString("0.######") +
+                " captureNonDark=" + result.captureNonDarkSampleCount;
+        }
+
+        private static Camera EnsureVisualStage()
+        {
+            var camera = Camera.main;
+            if (camera == null)
+            {
+                var cameraGo = new GameObject("B90_VisualCamera");
+                cameraGo.tag = "MainCamera";
+                camera = cameraGo.AddComponent<Camera>();
+            }
+
+            camera.name = "B90_VisualCamera";
+            camera.clearFlags = CameraClearFlags.SolidColor;
+            camera.backgroundColor = new Color(0.025f, 0.028f, 0.034f, 1f);
+            camera.orthographic = true;
+            camera.orthographicSize = 3.35f;
+            camera.transform.position = new Vector3(0f, -0.35f, -10f);
+            camera.transform.rotation = Quaternion.identity;
+
+            var stage = GameObject.Find("B90_VisualStage");
+            if (stage == null)
+                stage = new GameObject("B90_VisualStage");
+
+            if (stage.transform.Find("B90_Map_11001") == null)
+                CreateMapSprite(stage.transform);
+
+            return camera;
+        }
+
+        private static void CreateMapSprite(Transform parent)
+        {
+            var path = Path.Combine(Application.dataPath, "RestoreData", "battle", "VisualAssets", "map", "Map_11001_2.png");
+            if (!File.Exists(path))
+                path = Path.Combine(Application.dataPath, "RestoreData", "battle", "VisualAssets", "map", "sactx-0-2048x2048-ETC2-Map_11001_1-2ccb5b85.png");
+
+            if (!File.Exists(path))
+                return;
+
+            var texture = new Texture2D(2, 2, TextureFormat.RGBA32, false);
+            texture.name = "B90_Map_11001_Texture";
+            if (!texture.LoadImage(File.ReadAllBytes(path)))
+                return;
+
+            var pixelsPerUnit = Mathf.Max(1f, texture.width / 10.5f);
+            var sprite = Sprite.Create(texture, new Rect(0, 0, texture.width, texture.height), new Vector2(0.5f, 0.5f), pixelsPerUnit);
+            sprite.name = "B90_Map_11001_Sprite";
+
+            var go = new GameObject("B90_Map_11001");
+            go.transform.SetParent(parent, false);
+            go.transform.localPosition = new Vector3(0f, -0.1f, 2f);
+            var renderer = go.AddComponent<SpriteRenderer>();
+            renderer.sprite = sprite;
+            renderer.sortingOrder = -100;
+        }
+
+        private static void CollectVisualDiagnostics(Result result, Camera camera)
+        {
+            var handles = UnityEngine.Object.FindObjectsOfType<BattleRuntimeActorHandle>();
+            result.visualActorHandleCount = handles.Length;
+            result.visualCameraName = camera != null ? camera.name : "";
+            result.visualCameraOrthographicSize = camera != null ? camera.orthographicSize : 0f;
+
+            var hasBounds = false;
+            var combined = new Bounds();
+            var rendererCount = 0;
+            foreach (var handle in handles)
+            {
+                if (handle == null) continue;
+                var renderers = handle.GetComponentsInChildren<Renderer>(true);
+                foreach (var renderer in renderers)
+                {
+                    if (renderer == null || !renderer.enabled || !renderer.gameObject.activeInHierarchy)
+                        continue;
+                    rendererCount++;
+                    if (!hasBounds)
+                    {
+                        combined = renderer.bounds;
+                        hasBounds = true;
+                    }
+                    else
+                    {
+                        combined.Encapsulate(renderer.bounds);
+                    }
+                }
+            }
+
+            result.visualActorRendererCount = rendererCount;
+            result.visualActorWorldBounds = hasBounds ? Vec(combined.center) + "|" + Vec(combined.size) : "";
+            result.visualActorScreenRect = hasBounds && camera != null ? ScreenRect(camera, combined) : "";
+            result.visualActorScreenAreaRatio = hasBounds && camera != null ? ScreenAreaRatio(camera, combined) : 0f;
+        }
+
+        private static void CaptureVisualEvidence(Result result, Camera camera)
+        {
+            if (camera == null)
+                return;
+
+            var output = Path.Combine(GetResultDirectory(), "BATTLE_90_PLAYMODE_BOOTSTRAP_CAPTURE.png");
+            Directory.CreateDirectory(Path.GetDirectoryName(output));
+
+            var rt = new RenderTexture(CaptureWidth, CaptureHeight, 24, RenderTextureFormat.ARGB32);
+            var previousTarget = camera.targetTexture;
+            var previousActive = RenderTexture.active;
+            camera.targetTexture = rt;
+            RenderTexture.active = rt;
+            camera.Render();
+
+            var texture = new Texture2D(CaptureWidth, CaptureHeight, TextureFormat.RGB24, false);
+            texture.ReadPixels(new Rect(0, 0, CaptureWidth, CaptureHeight), 0, 0);
+            texture.Apply();
+            var bytes = texture.EncodeToPNG();
+            File.WriteAllBytes(output, bytes);
+
+            result.capturePath = output;
+            result.captureExists = File.Exists(output);
+            result.captureBytes = bytes != null ? bytes.Length : 0;
+            result.captureNonDarkSampleCount = CountNonDarkSamples(texture);
+
+            camera.targetTexture = previousTarget;
+            RenderTexture.active = previousActive;
+            Destroy(texture);
+            Destroy(rt);
+        }
+
+        private static int CountNonDarkSamples(Texture2D texture)
+        {
+            if (texture == null) return 0;
+            var count = 0;
+            const int step = 16;
+            for (var y = 0; y < texture.height; y += step)
+            {
+                for (var x = 0; x < texture.width; x += step)
+                {
+                    var color = texture.GetPixel(x, y);
+                    if (color.r + color.g + color.b > 0.18f)
+                        count++;
+                }
+            }
+            return count;
+        }
+
+        private static string GetResultDirectory()
+        {
+            var path = ResultPath;
+            if (string.IsNullOrEmpty(path))
+                path = Path.GetFullPath(Path.Combine(Application.dataPath, "..", "..", "reports", "battle", DefaultResultFileName));
+            return Path.GetDirectoryName(path);
+        }
+
+        private static string Vec(Vector3 value)
+        {
+            return value.x.ToString("0.###") + "/" + value.y.ToString("0.###") + "/" + value.z.ToString("0.###");
+        }
+
+        private static string ScreenRect(Camera camera, Bounds bounds)
+        {
+            var min = new Vector2(float.MaxValue, float.MaxValue);
+            var max = new Vector2(float.MinValue, float.MinValue);
+            foreach (var point in BoundsCorners(bounds))
+            {
+                var screen = camera.WorldToScreenPoint(point);
+                min.x = Mathf.Min(min.x, screen.x);
+                min.y = Mathf.Min(min.y, screen.y);
+                max.x = Mathf.Max(max.x, screen.x);
+                max.y = Mathf.Max(max.y, screen.y);
+            }
+            return min.x.ToString("0.##") + "/" + min.y.ToString("0.##") + "/" + max.x.ToString("0.##") + "/" + max.y.ToString("0.##");
+        }
+
+        private static float ScreenAreaRatio(Camera camera, Bounds bounds)
+        {
+            var min = new Vector2(float.MaxValue, float.MaxValue);
+            var max = new Vector2(float.MinValue, float.MinValue);
+            foreach (var point in BoundsCorners(bounds))
+            {
+                var screen = camera.WorldToScreenPoint(point);
+                min.x = Mathf.Min(min.x, screen.x);
+                min.y = Mathf.Min(min.y, screen.y);
+                max.x = Mathf.Max(max.x, screen.x);
+                max.y = Mathf.Max(max.y, screen.y);
+            }
+            var area = Mathf.Max(0f, max.x - min.x) * Mathf.Max(0f, max.y - min.y);
+            return area / Mathf.Max(1f, Screen.width * Screen.height);
+        }
+
+        private static IEnumerable<Vector3> BoundsCorners(Bounds bounds)
+        {
+            var min = bounds.min;
+            var max = bounds.max;
+            yield return new Vector3(min.x, min.y, min.z);
+            yield return new Vector3(min.x, min.y, max.z);
+            yield return new Vector3(min.x, max.y, min.z);
+            yield return new Vector3(min.x, max.y, max.z);
+            yield return new Vector3(max.x, min.y, min.z);
+            yield return new Vector3(max.x, min.y, max.z);
+            yield return new Vector3(max.x, max.y, min.z);
+            yield return new Vector3(max.x, max.y, max.z);
         }
 
         private static void MaterializeOpenedHeroSprites(LuaEnv env, List<string> stages, ref string failStage, ref string err)
@@ -803,6 +1021,17 @@ namespace GirlsWar
             public int runtimePreviewCompletedCount;
             public int runtimePreviewMissCount;
             public string runtimeActorLastSummary;
+            public string visualCameraName;
+            public float visualCameraOrthographicSize;
+            public int visualActorHandleCount;
+            public int visualActorRendererCount;
+            public string visualActorWorldBounds;
+            public string visualActorScreenRect;
+            public float visualActorScreenAreaRatio;
+            public string capturePath;
+            public bool captureExists;
+            public int captureBytes;
+            public int captureNonDarkSampleCount;
             public int monsterBaseFallbackCount;
             public int firstReadyShortcutCount;
             public List<string> stagesCompleted;
