@@ -138,6 +138,7 @@ namespace GirlsWar
 
                 env.DoString(SetupEnv);
                 env.Global.Set("BATTLE90_USE_ATTACK_TASK_PREVIEW", configuredUseAttackTaskPreview);
+                env.Global.Set("BATTLE90_USE_FRAME_COROUTINES", !configuredUseAttackTaskPreview);
                 LuaNoopHolder.Noop = env.Global.Get<LuaTable>("NOOP_STUB");
                 stages.Add("permissive-_G");
 
@@ -293,10 +294,13 @@ namespace GirlsWar
                           GameTools.SwitchBGMFadeOut = function() end
                           GameTools.SetTimeScale = function() end
                         end
-                        rawset(_G, 'WaitUntil', function()
+                        rawset(_G, 'WaitUntil', function(predicate)
                           local count = rawget(_G, 'BATTLE90_WAIT_UNTIL_NOOP_COUNT')
                           if type(count) ~= 'number' then count = 0 end
                           rawset(_G, 'BATTLE90_WAIT_UNTIL_NOOP_COUNT', count + 1)
+                          if rawget(_G, 'BATTLE90_USE_FRAME_COROUTINES') == true and type(predicate) == 'function' then
+                            return { __battle90_wait_until = true, predicate = predicate, frames = 0 }
+                          end
                           return nil
                         end)
                         for _, mod in pairs(package.loaded) do
@@ -313,8 +317,8 @@ namespace GirlsWar
                             local root = rootGo.transform
                             local stations = {}
                             local is_our = string.find(prefix, 'Our') ~= nil
-                            local xs = is_our and {-2.65, -1.75, -0.85, -2.25, -1.35, -0.45} or {2.65, 1.75, 0.85, 2.25, 1.35, 0.45}
-                            local ys = {-0.65, -0.65, -0.65, -1.55, -1.55, -1.55}
+                            local xs = is_our and {-4.2, -2.8, -1.4, -3.6, -2.2, -0.8} or {4.2, 2.8, 1.4, 3.6, 2.2, 0.8}
+                            local ys = {-0.9, -0.45, -1.35, -1.85, -1.4, -2.3}
                             for idx=0,5 do
                               local go = CS.UnityEngine.GameObject(prefix .. '_Station_' .. tostring(idx))
                               go.transform:SetParent(root, false)
@@ -344,20 +348,118 @@ namespace GirlsWar
                           do
                             local ok_co, co = pcall(require, 'Common/cs_coroutine')
                             if ok_co and type(co) == 'table' and not rawget(co, '__battle90_inline_runner') then
-                              co.start = function(fn)
-                                inc_global('BATTLE90_COROUTINE_INLINE_COUNT')
-                                if type(fn) ~= 'function' then return nil end
-                                local thread = coroutine.create(fn)
-                                local guard = 0
-                                while coroutine.status(thread) ~= 'dead' do
-                                  guard = guard + 1
-                                  if guard > 512 then error('BATTLE90 inline coroutine guard exceeded') end
-                                  local ok, message = coroutine.resume(thread)
-                                  if not ok then error(message) end
-                                end
-                                return thread
+                              local function is_wait_until_token(value)
+                                return type(value) == 'table' and rawget(value, '__battle90_wait_until') == true
                               end
-                              co.stop = function() end
+                              if rawget(_G, 'BATTLE90_USE_FRAME_COROUTINES') == true then
+                                local tasks = rawget(_G, 'BATTLE90_COROUTINE_TASKS')
+                                if type(tasks) ~= 'table' then
+                                  tasks = {}
+                                  rawset(_G, 'BATTLE90_COROUTINE_TASKS', tasks)
+                                end
+                                local function append_label(name, label)
+                                  label = tostring(label or '?')
+                                  local current = rawget(_G, name)
+                                  if type(current) ~= 'string' then current = '' end
+                                  if string.len(current) < 900 then
+                                    if current ~= '' then current = current .. '|' end
+                                    rawset(_G, name, current .. label)
+                                  end
+                                end
+                                local function caller_label()
+                                  local info = debug and debug.getinfo and debug.getinfo(3, 'Sl') or nil
+                                  if type(info) == 'table' then
+                                    return tostring(info.short_src or info.source or '?') .. ':' .. tostring(info.currentline or 0)
+                                  end
+                                  return '?'
+                                end
+                                local next_id = rawget(_G, 'BATTLE90_COROUTINE_NEXT_ID')
+                                if type(next_id) ~= 'number' then next_id = 0 end
+                                local function resume_task(task)
+                                  if type(task) ~= 'table' or task.done == true then return end
+                                  if type(task.waitUntil) == 'table' then
+                                    task.waitUntil.frames = (tonumber(task.waitUntil.frames) or 0) + 1
+                                    inc_global('BATTLE90_WAIT_UNTIL_POLL_COUNT')
+                                    local ok, ready = pcall(task.waitUntil.predicate)
+                                    if not ok then error(ready) end
+                                    if ready == true then
+                                      inc_global('BATTLE90_WAIT_UNTIL_READY_COUNT')
+                                      task.waitUntil = nil
+                                    else
+                                      return
+                                    end
+                                  end
+                                  if type(task.frameDelay) == 'number' and task.frameDelay > 0 then
+                                    task.frameDelay = task.frameDelay - 1
+                                    return
+                                  end
+                                  local ok, yielded = coroutine.resume(task.thread)
+                                  inc_global('BATTLE90_COROUTINE_FRAME_RESUME_COUNT')
+                                  if not ok then error(yielded) end
+                                  if coroutine.status(task.thread) == 'dead' then
+                                    task.done = true
+                                    inc_global('BATTLE90_COROUTINE_FRAME_DONE_COUNT')
+                                    append_label('BATTLE90_COROUTINE_DONE_LABELS', task.label)
+                                    return
+                                  end
+                                  if is_wait_until_token(yielded) then
+                                    task.waitUntil = yielded
+                                  elseif yielded ~= nil then
+                                    task.frameDelay = 1
+                                    inc_global('BATTLE90_COROUTINE_FRAME_YIELD_COUNT')
+                                  end
+                                end
+                                co.start = function(fn)
+                                  inc_global('BATTLE90_COROUTINE_FRAME_START_COUNT')
+                                  if type(fn) ~= 'function' then return nil end
+                                  next_id = next_id + 1
+                                  rawset(_G, 'BATTLE90_COROUTINE_NEXT_ID', next_id)
+                                  local label = caller_label()
+                                  local task = { id = next_id, label = label, thread = coroutine.create(fn), done = false, frameDelay = 0 }
+                                  table.insert(tasks, task)
+                                  append_label('BATTLE90_COROUTINE_START_LABELS', label)
+                                  return task
+                                end
+                                co.stop = function(task)
+                                  if type(task) == 'table' then
+                                    task.done = true
+                                    inc_global('BATTLE90_COROUTINE_FRAME_STOP_COUNT')
+                                    append_label('BATTLE90_COROUTINE_STOP_LABELS', task.label)
+                                  end
+                                end
+                                rawset(_G, 'BATTLE90_PUMP_COROUTINES', function(max_steps)
+                                  max_steps = tonumber(max_steps) or 64
+                                  local steps = 0
+                                  local pending = 0
+                                  for idx = 1, #tasks do
+                                    local task = tasks[idx]
+                                    if type(task) == 'table' and task.done ~= true then
+                                      pending = pending + 1
+                                      if steps < max_steps then
+                                        resume_task(task)
+                                        steps = steps + 1
+                                      end
+                                    end
+                                  end
+                                  rawset(_G, 'BATTLE90_COROUTINE_PENDING_COUNT', pending)
+                                  rawset(_G, 'BATTLE90_COROUTINE_LAST_PUMP_STEPS', steps)
+                                end)
+                              else
+                                co.start = function(fn)
+                                  inc_global('BATTLE90_COROUTINE_INLINE_COUNT')
+                                  if type(fn) ~= 'function' then return nil end
+                                  local thread = coroutine.create(fn)
+                                  local guard = 0
+                                  while coroutine.status(thread) ~= 'dead' do
+                                    guard = guard + 1
+                                    if guard > 512 then error('BATTLE90 inline coroutine guard exceeded') end
+                                    local ok, message = coroutine.resume(thread)
+                                    if not ok then error(message) end
+                                  end
+                                  return thread
+                                end
+                                co.stop = function() end
+                              end
                               rawset(co, '__battle90_inline_runner', true)
                             end
                           end
@@ -468,7 +570,9 @@ namespace GirlsWar
                             end
                             rawset(PNB, '__battle90_begin_buff_patch', true)
                           end
-                          if PNB and type(PNB.BattleBigRoundBegin) == 'function' and not rawget(PNB, '__battle90_all_big_round_patch') then
+                          if rawget(_G, 'BATTLE90_USE_ATTACK_TASK_PREVIEW') == true
+                            and PNB and type(PNB.BattleBigRoundBegin) == 'function'
+                            and not rawget(PNB, '__battle90_all_big_round_patch') then
                             PNB.BattleAllBigRoundBegin = function(...)
                               inc_global('BATTLE90_ALL_BIG_ROUND_SHORTCUT_COUNT')
                               if type(PNB.RefreshHeroHud) == 'function' then pcall(PNB.RefreshHeroHud) end
@@ -477,7 +581,9 @@ namespace GirlsWar
                             end
                             rawset(PNB, '__battle90_all_big_round_patch', true)
                           end
-                          if PNB and type(PNB.BattleRoundExplosive) == 'function' and not rawget(PNB, '__battle90_small_round_patch') then
+                          if rawget(_G, 'BATTLE90_USE_ATTACK_TASK_PREVIEW') == true
+                            and PNB and type(PNB.BattleRoundExplosive) == 'function'
+                            and not rawget(PNB, '__battle90_small_round_patch') then
                             PNB.BattleSmallRoundBegin = function(...)
                               inc_global('BATTLE90_SMALL_ROUND_SHORTCUT_COUNT')
                               local round = rawget(PNB, 'CurrBattleSmallRound')
@@ -632,6 +738,21 @@ namespace GirlsWar
                               end
                               rawset(HeroCtrl, '__battle90_spine_invisible_guard', true)
                             end
+                            if type(HeroCtrl.CheckInAttackCommandQueue) == 'function' and not rawget(HeroCtrl, '__battle90_attack_queue_guard') then
+                              local orig_check_attack_queue = HeroCtrl.CheckInAttackCommandQueue
+                              HeroCtrl.CheckInAttackCommandQueue = function(self, ...)
+                                local team = type(self) == 'table' and rawget(self, 'CurrBattleTeam') or nil
+                                local queue = type(team) == 'table' and rawget(team, 'SmallSkillAttackQueue') or nil
+                                if type(queue) ~= 'table'
+                                  or type(rawget(queue, 'first')) ~= 'number'
+                                  or type(rawget(queue, 'last')) ~= 'number' then
+                                  inc_global('BATTLE90_ATTACK_QUEUE_GUARD_COUNT')
+                                  return false
+                                end
+                                return orig_check_attack_queue(self, ...)
+                              end
+                              rawset(HeroCtrl, '__battle90_attack_queue_guard', true)
+                            end
                             local function hero_id_of(hero)
                               if type(hero) ~= 'table' then return 0 end
                               return tonumber(rawget(hero, 'HeroId') or rawget(hero, 'HeroID') or rawget(hero, 'heroId') or rawget(hero, 'Heroid') or 0) or 0
@@ -773,6 +894,33 @@ namespace GirlsWar
         {
             if (env == null) return;
             try { result.trace = env.Global.Get<string>("TRACE") ?? ""; } catch { }
+            try
+            {
+                env.DoString(@"
+                    if PNB then
+                      rawset(_G, 'BATTLE90_CURR_SMALL_ROUND', tonumber(rawget(PNB,'CurrBattleSmallRound')) or 0)
+                      rawset(_G, 'BATTLE90_CURR_BIG_ROUND', tonumber(rawget(PNB,'CurrBattleBigRound')) or 0)
+                      rawset(_G, 'BATTLE90_TEST_BATTLE_TYPE', tonumber(rawget(PNB,'TestBattleType')) or -1)
+                      rawset(_G, 'BATTLE90_IS_BATTLE_END', rawget(PNB,'isBattleEnd') == true)
+                      rawset(_G, 'BATTLE90_IS_BIG_ATTACKING', rawget(PNB,'IsBattleBigAttacking') == true)
+                      rawset(_G, 'BATTLE90_IS_SMALL_ATTACKING', rawget(PNB,'IsBattleSmallAttacking') == true)
+                      rawset(_G, 'BATTLE90_IS_PET_ATTACKING', rawget(PNB,'IsBattlePetAttacking') == true)
+                      rawset(_G, 'BATTLE90_CURR_ATTACK_TEAM_ID',
+                        PNB.CurrAttackTeam and tonumber(rawget(PNB.CurrAttackTeam,'TeamId')) or 0)
+                      rawset(_G, 'BATTLE90_OUR_ALL_DEATH',
+                        PNB.OurTeam and type(PNB.OurTeam.IsAllDeath) == 'function' and PNB.OurTeam:IsAllDeath() == true or false)
+                      rawset(_G, 'BATTLE90_ENEMY_ALL_DEATH',
+                        PNB.EnemyTeam and type(PNB.EnemyTeam.IsAllDeath) == 'function' and PNB.EnemyTeam:IsAllDeath() == true or false)
+                    end
+                    if CNT then
+                      rawset(_G, 'BATTLE90_CNT_SMALL_ROUND_BEGIN', tonumber(CNT['BattleSmallRoundBegin']) or 0)
+                      rawset(_G, 'BATTLE90_CNT_SMALL_ROUND_END', tonumber(CNT['BattleSmallRoundEnd']) or 0)
+                      rawset(_G, 'BATTLE90_CNT_BIG_ROUND_BEGIN', tonumber(CNT['BattleBigRoundBegin']) or 0)
+                      rawset(_G, 'BATTLE90_CNT_BIG_ROUND_END', tonumber(CNT['BattleBigRoundEnd']) or 0)
+                      rawset(_G, 'BATTLE90_CNT_FINAL_BATTLE_END', tonumber(CNT['FinalBattleEnd']) or 0)
+                    end");
+            }
+            catch { }
             try { result.openedSpriteCount = YouYou.LuaHeroSprite.OpenedSprites.Count; } catch { }
             try { result.heroViewBridgeCount = env.Global.Get<int>("BATTLE90_HERO_VIEW_BRIDGE_COUNT"); } catch { }
             try { result.skinStubCount = env.Global.Get<int>("BATTLE90_SKIN_STUB_COUNT"); } catch { }
@@ -798,7 +946,35 @@ namespace GirlsWar
             try { result.firstRateDefaultCount = env.Global.Get<int>("BATTLE90_FIRST_RATE_DEFAULT_COUNT"); } catch { }
             try { result.spineInvisibleGuardCount = env.Global.Get<int>("BATTLE90_SPINE_INVISIBLE_GUARD_COUNT"); } catch { }
             try { result.spineAnimationGuardCount = env.Global.Get<int>("BATTLE90_SPINE_ANIMATION_GUARD_COUNT"); } catch { }
+            try { result.attackQueueGuardCount = env.Global.Get<int>("BATTLE90_ATTACK_QUEUE_GUARD_COUNT"); } catch { }
             try { result.waitUntilNoopCount = env.Global.Get<int>("BATTLE90_WAIT_UNTIL_NOOP_COUNT"); } catch { }
+            try { result.waitUntilPollCount = env.Global.Get<int>("BATTLE90_WAIT_UNTIL_POLL_COUNT"); } catch { }
+            try { result.waitUntilReadyCount = env.Global.Get<int>("BATTLE90_WAIT_UNTIL_READY_COUNT"); } catch { }
+            try { result.coroutineFrameStartCount = env.Global.Get<int>("BATTLE90_COROUTINE_FRAME_START_COUNT"); } catch { }
+            try { result.coroutineFrameResumeCount = env.Global.Get<int>("BATTLE90_COROUTINE_FRAME_RESUME_COUNT"); } catch { }
+            try { result.coroutineFrameYieldCount = env.Global.Get<int>("BATTLE90_COROUTINE_FRAME_YIELD_COUNT"); } catch { }
+            try { result.coroutineFrameDoneCount = env.Global.Get<int>("BATTLE90_COROUTINE_FRAME_DONE_COUNT"); } catch { }
+            try { result.coroutineFrameStopCount = env.Global.Get<int>("BATTLE90_COROUTINE_FRAME_STOP_COUNT"); } catch { }
+            try { result.coroutinePendingCount = env.Global.Get<int>("BATTLE90_COROUTINE_PENDING_COUNT"); } catch { }
+            try { result.coroutineLastPumpSteps = env.Global.Get<int>("BATTLE90_COROUTINE_LAST_PUMP_STEPS"); } catch { }
+            try { result.coroutineStartLabels = env.Global.Get<string>("BATTLE90_COROUTINE_START_LABELS") ?? ""; } catch { }
+            try { result.coroutineDoneLabels = env.Global.Get<string>("BATTLE90_COROUTINE_DONE_LABELS") ?? ""; } catch { }
+            try { result.coroutineStopLabels = env.Global.Get<string>("BATTLE90_COROUTINE_STOP_LABELS") ?? ""; } catch { }
+            try { result.currBattleBigRound = env.Global.Get<int>("BATTLE90_CURR_BIG_ROUND"); } catch { }
+            try { result.currBattleSmallRound = env.Global.Get<int>("BATTLE90_CURR_SMALL_ROUND"); } catch { }
+            try { result.testBattleType = env.Global.Get<int>("BATTLE90_TEST_BATTLE_TYPE"); } catch { }
+            try { result.isBattleEnd = env.Global.Get<bool>("BATTLE90_IS_BATTLE_END"); } catch { }
+            try { result.isBattleBigAttacking = env.Global.Get<bool>("BATTLE90_IS_BIG_ATTACKING"); } catch { }
+            try { result.isBattleSmallAttacking = env.Global.Get<bool>("BATTLE90_IS_SMALL_ATTACKING"); } catch { }
+            try { result.isBattlePetAttacking = env.Global.Get<bool>("BATTLE90_IS_PET_ATTACKING"); } catch { }
+            try { result.currAttackTeamId = env.Global.Get<int>("BATTLE90_CURR_ATTACK_TEAM_ID"); } catch { }
+            try { result.ourAllDeath = env.Global.Get<bool>("BATTLE90_OUR_ALL_DEATH"); } catch { }
+            try { result.enemyAllDeath = env.Global.Get<bool>("BATTLE90_ENEMY_ALL_DEATH"); } catch { }
+            try { result.battleSmallRoundBeginCount = env.Global.Get<int>("BATTLE90_CNT_SMALL_ROUND_BEGIN"); } catch { }
+            try { result.battleSmallRoundEndCount = env.Global.Get<int>("BATTLE90_CNT_SMALL_ROUND_END"); } catch { }
+            try { result.battleBigRoundBeginCount = env.Global.Get<int>("BATTLE90_CNT_BIG_ROUND_BEGIN"); } catch { }
+            try { result.battleBigRoundEndCount = env.Global.Get<int>("BATTLE90_CNT_BIG_ROUND_END"); } catch { }
+            try { result.finalBattleEndCount = env.Global.Get<int>("BATTLE90_CNT_FINAL_BATTLE_END"); } catch { }
             try { result.pnbStartAttackTaskCount = env.Global.Get<int>("BATTLE90_PNB_START_ATTACK_TASK_COUNT"); } catch { }
             try { result.startAttackLastArgs = env.Global.Get<string>("BATTLE90_START_ATTACK_LAST_ARGS") ?? ""; } catch { }
             try { result.pnbAddAttackTaskCount = env.Global.Get<int>("BATTLE90_PNB_ADD_ATTACK_TASK_COUNT"); } catch { }
@@ -845,6 +1021,16 @@ namespace GirlsWar
                       ' firstRateDefault='..tostring(rawget(_G,'BATTLE90_FIRST_RATE_DEFAULT_COUNT') or 0)..
                       ' spineInvisibleGuard='..tostring(rawget(_G,'BATTLE90_SPINE_INVISIBLE_GUARD_COUNT') or 0)..
                       ' spineAnimationGuard='..tostring(rawget(_G,'BATTLE90_SPINE_ANIMATION_GUARD_COUNT') or 0)..
+                      ' attackQueueGuard='..tostring(rawget(_G,'BATTLE90_ATTACK_QUEUE_GUARD_COUNT') or 0)..
+                      ' currSmall='..tostring(rawget(_G,'BATTLE90_CURR_SMALL_ROUND') or 0)..
+                      ' testBattleType='..tostring(rawget(_G,'BATTLE90_TEST_BATTLE_TYPE') or -1)..
+                      ' isBattleEnd='..tostring(rawget(_G,'BATTLE90_IS_BATTLE_END'))..
+                      ' currAttackTeam='..tostring(rawget(_G,'BATTLE90_CURR_ATTACK_TEAM_ID') or 0)..
+                      ' ourAllDeath='..tostring(rawget(_G,'BATTLE90_OUR_ALL_DEATH'))..
+                      ' enemyAllDeath='..tostring(rawget(_G,'BATTLE90_ENEMY_ALL_DEATH'))..
+                      ' cntSmallBegin='..tostring(rawget(_G,'BATTLE90_CNT_SMALL_ROUND_BEGIN') or 0)..
+                      ' cntSmallEnd='..tostring(rawget(_G,'BATTLE90_CNT_SMALL_ROUND_END') or 0)..
+                      ' cntBigEnd='..tostring(rawget(_G,'BATTLE90_CNT_BIG_ROUND_END') or 0)..
                       ' heroViewBridge='..tostring(rawget(_G,'BATTLE90_HERO_VIEW_BRIDGE_COUNT') or 0)..
                       ' skinStub='..tostring(rawget(_G,'BATTLE90_SKIN_STUB_COUNT') or 0)..
                       ' skinRuntime='..tostring(rawget(_G,'BATTLE90_SKIN_RUNTIME_COUNT') or 0)..
@@ -891,7 +1077,14 @@ namespace GirlsWar
                       ' realAttackPreview='..tostring(rawget(_G,'BATTLE90_REAL_ATTACK_PREVIEW_ACTION_COUNT') or 0)..
                       ' realAttackPreviewMiss='..tostring(rawget(_G,'BATTLE90_REAL_ATTACK_PREVIEW_MISS_COUNT') or 0)..
                       ' waitUntilNoop='..tostring(rawget(_G,'BATTLE90_WAIT_UNTIL_NOOP_COUNT') or 0)..
-                      ' coroutineInline='..tostring(rawget(_G,'BATTLE90_COROUTINE_INLINE_COUNT') or 0)");
+                      ' waitUntilPoll='..tostring(rawget(_G,'BATTLE90_WAIT_UNTIL_POLL_COUNT') or 0)..
+                      ' waitUntilReady='..tostring(rawget(_G,'BATTLE90_WAIT_UNTIL_READY_COUNT') or 0)..
+                      ' coroutineInline='..tostring(rawget(_G,'BATTLE90_COROUTINE_INLINE_COUNT') or 0)..
+                      ' coroutineFrameStart='..tostring(rawget(_G,'BATTLE90_COROUTINE_FRAME_START_COUNT') or 0)..
+                      ' coroutineFrameResume='..tostring(rawget(_G,'BATTLE90_COROUTINE_FRAME_RESUME_COUNT') or 0)..
+                      ' coroutineFrameDone='..tostring(rawget(_G,'BATTLE90_COROUTINE_FRAME_DONE_COUNT') or 0)..
+                      ' coroutinePending='..tostring(rawget(_G,'BATTLE90_COROUTINE_PENDING_COUNT') or 0)..
+                      ' coroutineStopLabels='..tostring(rawget(_G,'BATTLE90_COROUTINE_STOP_LABELS') or '')");
                 result.diagSummary = env.Global.Get<string>("DIAG_SUMMARY") ?? "";
             }
             catch { }
@@ -1123,6 +1316,8 @@ namespace GirlsWar
 
             var sprites = new List<YouYou.LuaHeroSprite>(YouYou.LuaHeroSprite.OpenedSprites);
             stages.Add("heroViewBridge:sprites=" + sprites.Count);
+            var ourSlot = 0;
+            var enemySlot = 0;
             for (var i = 0; i < sprites.Count; i++)
             {
                 var sprite = sprites[i];
@@ -1131,6 +1326,8 @@ namespace GirlsWar
                 try
                 {
                     sprite.EnsureRuntimePlaceholders();
+                    var slot = sprite.IsOurHero ? ourSlot++ : enemySlot++;
+                    ApplyPreviewFormationPosition(sprite, slot);
                     env.Global.Set("BATTLE90_LUA_HERO_SPRITE", sprite);
                     env.DoString(@"
                         local sprite = BATTLE90_LUA_HERO_SPRITE
@@ -1182,6 +1379,37 @@ namespace GirlsWar
             try { env.Global.Set<string, object>("BATTLE90_LUA_HERO_SPRITE", null); } catch { }
         }
 
+        private static void ApplyPreviewFormationPosition(YouYou.LuaHeroSprite sprite, int slot)
+        {
+            if (sprite == null) return;
+
+            var positions = sprite.IsOurHero
+                ? new[]
+                {
+                    new Vector3(-4.15f, -0.98f, 0f),
+                    new Vector3(-2.75f, -0.5f, 0f),
+                    new Vector3(-1.35f, -1.45f, 0f),
+                    new Vector3(-3.55f, -1.95f, 0f),
+                    new Vector3(-2.15f, -1.45f, 0f),
+                    new Vector3(-0.75f, -2.35f, 0f),
+                }
+                : new[]
+                {
+                    new Vector3(4.15f, -0.98f, 0f),
+                    new Vector3(2.75f, -0.5f, 0f),
+                    new Vector3(1.35f, -1.45f, 0f),
+                    new Vector3(3.55f, -1.95f, 0f),
+                    new Vector3(2.15f, -1.45f, 0f),
+                    new Vector3(0.75f, -2.35f, 0f),
+                };
+
+            var index = Mathf.Clamp(slot, 0, positions.Length - 1);
+            sprite.transform.position = positions[index];
+            sprite.transform.localRotation = Quaternion.identity;
+            sprite.transform.localScale = Vector3.one;
+            sprite.BattleStationIndex = index;
+        }
+
         private static void Safe(LuaEnv env, string lua, List<string> stages, ref string failStage, ref string err, bool optional = false)
         {
             if (!string.IsNullOrEmpty(failStage)) return;
@@ -1205,7 +1433,13 @@ namespace GirlsWar
         private static void PumpFrame(LuaEnv env, ref string failStage, ref string err)
         {
             if (env == null || !string.IsNullOrEmpty(failStage)) return;
-            try { env.DoString("if PNB and PNB.OnUpdate then PNB.OnUpdate(CS.UnityEngine.Time.deltaTime) end"); }
+            try
+            {
+                env.DoString(@"
+                    if BATTLE90_PUMP_COROUTINES then BATTLE90_PUMP_COROUTINES(128) end
+                    if PNB and PNB.OnUpdate then PNB.OnUpdate(CS.UnityEngine.Time.deltaTime) end
+                    if BATTLE90_PUMP_COROUTINES then BATTLE90_PUMP_COROUTINES(128) end");
+            }
             catch (Exception e)
             {
                 failStage = "PNB.OnUpdate";
@@ -1288,7 +1522,35 @@ namespace GirlsWar
             public int firstRateDefaultCount;
             public int spineInvisibleGuardCount;
             public int spineAnimationGuardCount;
+            public int attackQueueGuardCount;
             public int waitUntilNoopCount;
+            public int waitUntilPollCount;
+            public int waitUntilReadyCount;
+            public int coroutineFrameStartCount;
+            public int coroutineFrameResumeCount;
+            public int coroutineFrameYieldCount;
+            public int coroutineFrameDoneCount;
+            public int coroutineFrameStopCount;
+            public int coroutinePendingCount;
+            public int coroutineLastPumpSteps;
+            public string coroutineStartLabels;
+            public string coroutineDoneLabels;
+            public string coroutineStopLabels;
+            public int currBattleBigRound;
+            public int currBattleSmallRound;
+            public int testBattleType;
+            public bool isBattleEnd;
+            public bool isBattleBigAttacking;
+            public bool isBattleSmallAttacking;
+            public bool isBattlePetAttacking;
+            public int currAttackTeamId;
+            public bool ourAllDeath;
+            public bool enemyAllDeath;
+            public int battleSmallRoundBeginCount;
+            public int battleSmallRoundEndCount;
+            public int battleBigRoundBeginCount;
+            public int battleBigRoundEndCount;
+            public int finalBattleEndCount;
             public int pnbStartAttackTaskCount;
             public string startAttackLastArgs;
             public int pnbAddAttackTaskCount;

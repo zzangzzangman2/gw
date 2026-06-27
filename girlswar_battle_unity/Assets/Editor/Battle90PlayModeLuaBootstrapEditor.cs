@@ -12,7 +12,7 @@ namespace GirlsWar
         private const string ScenePath = "Assets/Scenes/Battle90PlayModeLuaBootstrap.unity";
         private const double TimeoutSeconds = 90.0;
         private const int FrameBudget = 240;
-        private const int RealAttackProbeFrameBudget = 360;
+        private const int RealAttackProbeFrameBudget = 900;
 
         private static double startedAt;
         private static bool previousEnterPlayModeOptionsEnabled;

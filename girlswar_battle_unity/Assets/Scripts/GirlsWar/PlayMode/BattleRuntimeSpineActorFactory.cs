@@ -521,7 +521,7 @@ namespace GirlsWar
         private static void ApplyActorPose(Transform transform, bool isOurHero, bool isSpine)
         {
             transform.localRotation = Quaternion.identity;
-            transform.localScale = Vector3.one * (isSpine ? 0.7f : 1f);
+            transform.localScale = Vector3.one * (isSpine ? 0.5f : 0.75f);
             if (!isOurHero)
             {
                 var scale = transform.localScale;
