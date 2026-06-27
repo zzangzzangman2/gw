@@ -23,7 +23,7 @@ namespace GirlsWar
         private static bool configuredUseAttackTaskPreview = true;
         private const int CaptureWidth = 1280;
         private const int CaptureHeight = 570;
-        private const string VisualTuningVersion = "battle90-source-hud-cutin-v1";
+        private const string VisualTuningVersion = "battle90-source-hud-cutin-material-scale-v2";
         private const float VisualMapWidthUnits = 12.85f;
         private static readonly int[] HudCardActorIds = { 1036, 1002, 1034, 0, 0 };
         private static readonly Dictionary<string, Sprite> RuntimeUiSpriteCache = new Dictionary<string, Sprite>(StringComparer.OrdinalIgnoreCase);
@@ -963,6 +963,9 @@ namespace GirlsWar
             result.runtimeActorVisualFallbackCount = BattleRuntimeSpineActorFactory.VisualFallbackCount;
             result.runtimeActorQuadFallbackCount = BattleRuntimeSpineActorFactory.QuadFallbackCount;
             result.runtimeActorMissingAssetCount = BattleRuntimeSpineActorFactory.MissingAssetCount;
+            result.runtimeMaterialShaderFallbackCount = BattleRuntimeSpineActorFactory.RuntimeMaterialShaderFallbackCount;
+            result.runtimeSpineAtlasMaterialFallbackCount = BattleRuntimeSpineActorFactory.RuntimeSpineAtlasMaterialFallbackCount;
+            result.runtimeBlendModeMaterialFallbackCount = BattleRuntimeSpineActorFactory.RuntimeBlendModeMaterialFallbackCount;
             result.runtimeMonsterModelResolveCount = BattleRuntimeSpineActorFactory.MonsterModelResolveCount;
             result.runtimeMonsterModelExactResolveCount = BattleRuntimeSpineActorFactory.MonsterModelExactResolveCount;
             result.runtimeMonsterModelBaseFallbackResolveCount = BattleRuntimeSpineActorFactory.MonsterModelBaseFallbackResolveCount;
@@ -1155,6 +1158,9 @@ namespace GirlsWar
                 " runtimeVisualFallback=" + result.runtimeActorVisualFallbackCount +
                 " runtimeQuadFallback=" + result.runtimeActorQuadFallbackCount +
                 " runtimeMissingAsset=" + result.runtimeActorMissingAssetCount +
+                " runtimeMaterialFallback=" + result.runtimeMaterialShaderFallbackCount +
+                " runtimeAtlasMaterialFallback=" + result.runtimeSpineAtlasMaterialFallbackCount +
+                " runtimeBlendMaterialFallback=" + result.runtimeBlendModeMaterialFallbackCount +
                 " runtimeMonsterModelResolve=" + result.runtimeMonsterModelResolveCount +
                 " runtimeMonsterExact=" + result.runtimeMonsterModelExactResolveCount +
                 " runtimeMonsterBaseFallback=" + result.runtimeMonsterModelBaseFallbackResolveCount +
@@ -2261,6 +2267,9 @@ namespace GirlsWar
             public int runtimeActorVisualFallbackCount;
             public int runtimeActorQuadFallbackCount;
             public int runtimeActorMissingAssetCount;
+            public int runtimeMaterialShaderFallbackCount;
+            public int runtimeSpineAtlasMaterialFallbackCount;
+            public int runtimeBlendModeMaterialFallbackCount;
             public int runtimeMonsterModelResolveCount;
             public int runtimeMonsterModelExactResolveCount;
             public int runtimeMonsterModelBaseFallbackResolveCount;

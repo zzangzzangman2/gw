@@ -195,6 +195,9 @@ namespace GirlsWar
         public static int SourceSkillCommonEffectInstantiateCount { get; private set; }
         public static int SourceSkillPrefabWorldCutinSuppressedCount { get; private set; }
         public static int SourceSkillPrefabFailureCount { get; private set; }
+        public static int RuntimeMaterialShaderFallbackCount { get; private set; }
+        public static int RuntimeSpineAtlasMaterialFallbackCount { get; private set; }
+        public static int RuntimeBlendModeMaterialFallbackCount { get; private set; }
         public static string LastSummary { get; private set; } = "";
         public static string MonsterModelResolveSummary { get; private set; } = "";
         public static string MonsterModelResolveTraceSummary { get; private set; } = "";
@@ -235,6 +238,9 @@ namespace GirlsWar
             SourceSkillCommonEffectInstantiateCount = 0;
             SourceSkillPrefabWorldCutinSuppressedCount = 0;
             SourceSkillPrefabFailureCount = 0;
+            RuntimeMaterialShaderFallbackCount = 0;
+            RuntimeSpineAtlasMaterialFallbackCount = 0;
+            RuntimeBlendModeMaterialFallbackCount = 0;
             previewCursor = 0;
             HandlesByHeroId.Clear();
             SkillSpecTrace.Clear();
@@ -1530,22 +1536,126 @@ namespace GirlsWar
         private static void RebindMaterials(GameObject instance)
         {
             if (instance == null) return;
-            var fallback = Shader.Find("Spine/Skeleton") ?? Shader.Find("Sprites/Default") ?? Shader.Find("Unlit/Texture");
+            var fallback = ResolveFallbackShader();
+            foreach (var skeletonAnimation in instance.GetComponentsInChildren<SkeletonAnimation>(true))
+                RebindSkeletonDataAssetMaterials(skeletonAnimation != null ? skeletonAnimation.skeletonDataAsset : null, fallback);
+
             foreach (var renderer in instance.GetComponentsInChildren<Renderer>(true))
             {
                 var materials = renderer.sharedMaterials;
                 for (var i = 0; i < materials.Length; i++)
                 {
-                    var material = materials[i];
-                    if (material == null) continue;
-                    var shader = material.shader != null ? Shader.Find(material.shader.name) : null;
-                    if (shader == null || !shader.isSupported || shader.passCount <= 0)
-                        shader = fallback;
-                    if (shader != null)
-                        material.shader = shader;
+                    if (RebindMaterial(materials[i], fallback))
+                        RuntimeMaterialShaderFallbackCount++;
                 }
                 renderer.sharedMaterials = materials;
             }
+
+            foreach (var graphic in instance.GetComponentsInChildren<Graphic>(true))
+            {
+                if (RebindMaterial(graphic.material, fallback))
+                    RuntimeMaterialShaderFallbackCount++;
+            }
+        }
+
+        private static Shader ResolveFallbackShader()
+        {
+            return Shader.Find("Spine/Skeleton") ?? Shader.Find("Sprites/Default") ?? Shader.Find("Unlit/Texture");
+        }
+
+        private static void RebindSkeletonDataAssetMaterials(SkeletonDataAsset skeletonDataAsset, Shader fallback)
+        {
+            if (skeletonDataAsset == null)
+                return;
+
+            if (skeletonDataAsset.atlasAssets != null)
+            {
+                foreach (var atlasAsset in skeletonDataAsset.atlasAssets)
+                {
+                    if (atlasAsset == null)
+                        continue;
+                    var materials = atlasAsset.Materials;
+                    if (materials == null)
+                        continue;
+                    foreach (var material in materials)
+                    {
+                        if (RebindMaterial(material, fallback))
+                            RuntimeSpineAtlasMaterialFallbackCount++;
+                    }
+                }
+            }
+
+            var blendModeMaterials = skeletonDataAsset.blendModeMaterials;
+            if (blendModeMaterials == null)
+                return;
+
+            RebindReplacementMaterials(blendModeMaterials.additiveMaterials, fallback);
+            RebindReplacementMaterials(blendModeMaterials.multiplyMaterials, fallback);
+            RebindReplacementMaterials(blendModeMaterials.screenMaterials, fallback);
+        }
+
+        private static void RebindReplacementMaterials(List<BlendModeMaterials.ReplacementMaterial> replacements, Shader fallback)
+        {
+            if (replacements == null)
+                return;
+            foreach (var replacement in replacements)
+            {
+                if (replacement == null)
+                    continue;
+                if (RebindMaterial(replacement.material, fallback))
+                    RuntimeBlendModeMaterialFallbackCount++;
+            }
+        }
+
+        private static bool RebindMaterial(Material material, Shader fallback)
+        {
+            if (material == null)
+                return false;
+
+            var shader = material.shader;
+            var replacement = shader != null ? Shader.Find(shader.name) : null;
+            if (!NeedsShaderFallback(shader) && replacement != null && replacement.isSupported && replacement.passCount > 0)
+                return false;
+
+            if (fallback == null)
+                return false;
+
+            Texture mainTexture = null;
+            Color color = Color.white;
+            var hasColor = false;
+            try
+            {
+                if (material.HasProperty("_MainTex"))
+                    mainTexture = material.GetTexture("_MainTex");
+                if (material.HasProperty("_Color"))
+                {
+                    color = material.GetColor("_Color");
+                    hasColor = true;
+                }
+            }
+            catch { }
+
+            material.shader = fallback;
+            try
+            {
+                if (mainTexture != null && material.HasProperty("_MainTex"))
+                    material.SetTexture("_MainTex", mainTexture);
+                if (hasColor && material.HasProperty("_Color"))
+                    material.SetColor("_Color", color);
+            }
+            catch { }
+            return true;
+        }
+
+        private static bool NeedsShaderFallback(Shader shader)
+        {
+            if (shader == null)
+                return true;
+            var name = shader.name ?? "";
+            if (name.IndexOf("InternalErrorShader", StringComparison.OrdinalIgnoreCase) >= 0 ||
+                name.IndexOf("error", StringComparison.OrdinalIgnoreCase) >= 0)
+                return true;
+            return !shader.isSupported || shader.passCount <= 0;
         }
 
         private static string ActorPath(int actorId, string suffix)
@@ -1658,7 +1768,7 @@ namespace GirlsWar
                 return;
 
             var target = TargetActorWorldHeight(actorId);
-            var factor = Mathf.Clamp(target / height, 0.55f, 2.85f);
+            var factor = Mathf.Clamp(target / height, 0.12f, 2.85f);
             root.localScale = root.localScale * factor;
             NormalizeRendererDepth(root);
         }

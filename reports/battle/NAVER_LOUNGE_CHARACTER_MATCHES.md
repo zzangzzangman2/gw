@@ -32,13 +32,15 @@ Matched but not currently active in the live lineup:
 
 - `1025` 다테 마사무네: local battle bundle/head/art exist; removed from active lineup because U0-B requires payload 3v3 only
 - `1050` 사카모토 료마: local battle bundle/head/art exist; removed from active lineup because U0-B requires payload 3v3 only
-- `1005` 맹획: battle bundle exists, but current restored Play Mode material output is magenta/broken
-- `1029` 사이고 다카모리: battle bundle exists, but current restored Play Mode material output is magenta/broken
-- `1037` 제갈공명: battle bundle exists, but current restored Play Mode material output is magenta/broken
+- `1005` 맹획: battle bundle exists; BATTLE91 material probe renders it with `Spine/Skeleton` and `errorShaderMaterialCount=0`
+- `1029` 사이고 다카모리: battle bundle exists; BATTLE91 material probe renders it with `Spine/Skeleton` and `errorShaderMaterialCount=0`
+- `1037` 제갈공명: battle bundle exists; BATTLE91 material probe renders it with `Spine/Skeleton`, `errorShaderMaterialCount=0`, and normalized height `1.38`
+
+2026-06-27 update: these material/scale fixes are proven by `reports/battle/BATTLE_91_ROSTER_EXPANSION_MATERIAL_PROBE_RESULT.json`. They are still not active in the live 3v3 replay and must be added only through a payload-backed roster expansion test.
 
 ## Next Extraction/Restore Targets
 
 1. Find or import exact `battleprefabandres/1036.assetbundle`.
-2. Fix material/atlas binding for `1005`, `1029`, and `1037` before re-adding them to the visible lineup.
-3. Re-add `1025` and `1050` only through a payload-backed roster test, not through the removed visual-only insertion path.
-4. Use the `battleActorBundleExists=true` rows in `NAVER_LOUNGE_CHARACTER_MATCHES.csv` as the next source-backed roster expansion queue.
+2. Re-add `1025`, `1050`, `1005`, `1029`, and `1037` only through a payload-backed roster test, not through the removed visual-only insertion path.
+3. Use the `battleActorBundleExists=true` rows in `NAVER_LOUNGE_CHARACTER_MATCHES.csv` as the next source-backed roster expansion queue.
+4. Keep BATTLE91 (`reports/battle/BATTLE_91_ROSTER_EXPANSION_MATERIAL_PROBE_RESULT.json`) as the material/scale gate for candidate actors before they enter a live replay payload.
