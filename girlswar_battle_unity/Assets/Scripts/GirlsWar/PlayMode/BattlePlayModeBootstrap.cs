@@ -975,6 +975,7 @@ namespace GirlsWar
             result.runtimeSourceSkillPrefabDirectorPlayedCount = BattleRuntimeSpineActorFactory.SourceSkillPrefabDirectorPlayedCount;
             result.runtimeSourceSkillPrefabDirectorBlockedCount = BattleRuntimeSpineActorFactory.SourceSkillPrefabDirectorBlockedCount;
             result.runtimeSourceSkillPrefabPlayableLoadCount = BattleRuntimeSpineActorFactory.SourceSkillPrefabPlayableLoadCount;
+            result.runtimeSourceSkillCommonEffectInstantiateCount = BattleRuntimeSpineActorFactory.SourceSkillCommonEffectInstantiateCount;
             result.runtimeSourceSkillPrefabWorldCutinSuppressedCount = BattleRuntimeSpineActorFactory.SourceSkillPrefabWorldCutinSuppressedCount;
             result.runtimeSourceSkillPrefabFailureCount = BattleRuntimeSpineActorFactory.SourceSkillPrefabFailureCount;
             result.runtimeActorLastSummary = BattleRuntimeSpineActorFactory.LastSummary;
@@ -1149,6 +1150,7 @@ namespace GirlsWar
                 " runtimeHitEffect=" + result.runtimeSkillHitEffectCount +
                 " sourceSkillPrefabInst=" + result.runtimeSourceSkillPrefabInstantiateCount +
                 " sourceSkillPrefabRenderable=" + result.runtimeSourceSkillPrefabRenderableCount +
+                " sourceSkillCommonEffect=" + result.runtimeSourceSkillCommonEffectInstantiateCount +
                 " sourceSkillDirectorPlayed=" + result.runtimeSourceSkillPrefabDirectorPlayedCount +
                 " sourceSkillDirectorBlocked=" + result.runtimeSourceSkillPrefabDirectorBlockedCount +
                 " sourceSkillWorldCutinSuppressed=" + result.runtimeSourceSkillPrefabWorldCutinSuppressedCount;
@@ -1929,6 +1931,7 @@ namespace GirlsWar
             public int runtimeSourceSkillPrefabDirectorPlayedCount;
             public int runtimeSourceSkillPrefabDirectorBlockedCount;
             public int runtimeSourceSkillPrefabPlayableLoadCount;
+            public int runtimeSourceSkillCommonEffectInstantiateCount;
             public int runtimeSourceSkillPrefabWorldCutinSuppressedCount;
             public int runtimeSourceSkillPrefabFailureCount;
             public string runtimeActorLastSummary;

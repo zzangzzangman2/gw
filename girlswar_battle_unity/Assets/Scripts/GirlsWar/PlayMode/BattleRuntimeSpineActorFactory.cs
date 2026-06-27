@@ -189,6 +189,7 @@ namespace GirlsWar
         public static int SourceSkillPrefabDirectorPlayedCount { get; private set; }
         public static int SourceSkillPrefabDirectorBlockedCount { get; private set; }
         public static int SourceSkillPrefabPlayableLoadCount { get; private set; }
+        public static int SourceSkillCommonEffectInstantiateCount { get; private set; }
         public static int SourceSkillPrefabWorldCutinSuppressedCount { get; private set; }
         public static int SourceSkillPrefabFailureCount { get; private set; }
         public static string LastSummary { get; private set; } = "";
@@ -224,6 +225,7 @@ namespace GirlsWar
             SourceSkillPrefabDirectorPlayedCount = 0;
             SourceSkillPrefabDirectorBlockedCount = 0;
             SourceSkillPrefabPlayableLoadCount = 0;
+            SourceSkillCommonEffectInstantiateCount = 0;
             SourceSkillPrefabWorldCutinSuppressedCount = 0;
             SourceSkillPrefabFailureCount = 0;
             previewCursor = 0;
@@ -473,7 +475,21 @@ namespace GirlsWar
             var particleCount = PlayParticles(instance);
             var suppressedCutinCount = SuppressWorldCutinRenderers(instance);
             var rendererCount = PrepareSourceSkillRenderers(instance);
-            NormalizeSourceSkillEffect(root, instance, worldPosition, spec);
+            var commonEffectRendererCount = 0;
+            if (rendererCount == 0)
+            {
+                var commonEffect = TryAttachCommonSourceSkillEffect(root.transform, spec);
+                if (commonEffect != null)
+                {
+                    ActivateHierarchy(commonEffect);
+                    RebindMaterials(commonEffect);
+                    animatorCount += PlayAnimators(commonEffect);
+                    particleCount += PlayParticles(commonEffect);
+                    commonEffectRendererCount = PrepareSourceSkillRenderers(commonEffect);
+                    rendererCount += commonEffectRendererCount;
+                }
+            }
+            NormalizeSourceSkillEffect(root, root, worldPosition, spec);
 
             SourceSkillPrefabPlayableLoadCount += playableLoaded;
             SourceSkillPrefabDirectorCount += directorCount.Total;
@@ -497,6 +513,7 @@ namespace GirlsWar
                 " directorPlayed=" + directorCount.Played +
                 " directorBlocked=" + directorCount.Blocked +
                 " playableLoaded=" + playableLoaded +
+                " commonEffect=" + commonEffectRendererCount +
                 " worldCutinSuppressed=" + suppressedCutinCount;
             LastSourceSkillPrefabSummary = summary;
             if (SourceSkillPrefabTrace.Count < 16)
@@ -534,6 +551,93 @@ namespace GirlsWar
             }
 
             return null;
+        }
+
+        private static GameObject TryAttachCommonSourceSkillEffect(Transform parent, BattleRuntimeSkillPreviewSpec spec)
+        {
+            if (parent == null || spec == null)
+                return null;
+
+            var absolutePath = Path.Combine(
+                BundleRoot(),
+                "download/commonprefabsandres/skilleffect/commonskillprefabsandres1.assetbundle".Replace("/", Path.DirectorySeparatorChar.ToString()));
+            if (!File.Exists(absolutePath))
+                return null;
+
+            var bundle = GetOrLoadBundle(absolutePath, out _);
+            if (bundle == null)
+                return null;
+
+            var prefab = LoadCommonSourceSkillEffectPrefab(bundle, spec, out var assetPath);
+            if (prefab == null)
+                return null;
+
+            var instance = UnityEngine.Object.Instantiate(prefab, parent, false);
+            instance.name = "B90_CommonSourceSkillEffect_" + spec.SourceFamilyId + "_" + spec.EffectiveSkillDid;
+            instance.transform.localPosition = new Vector3(0f, spec.Big ? 0.1f : 0.04f, -0.02f);
+            instance.transform.localRotation = Quaternion.identity;
+            instance.transform.localScale = Vector3.one * (spec.Big ? 0.68f : 0.52f);
+            SourceSkillCommonEffectInstantiateCount++;
+            LastSourceSkillPrefabSummary = "common_effect:" + assetPath;
+            return instance;
+        }
+
+        private static GameObject LoadCommonSourceSkillEffectPrefab(AssetBundle bundle, BattleRuntimeSkillPreviewSpec spec, out string assetPath)
+        {
+            assetPath = "";
+            foreach (var candidate in CommonSourceSkillEffectCandidates(spec))
+            {
+                var prefab = bundle.LoadAsset<GameObject>(candidate);
+                if (prefab == null)
+                    continue;
+                assetPath = candidate;
+                return prefab;
+            }
+
+            var familyHint = CommonSourceSkillEffectFamilyName(spec);
+            foreach (var name in bundle.GetAllAssetNames())
+            {
+                var lower = name.ToLowerInvariant();
+                if (!lower.EndsWith(".prefab")) continue;
+                if (!string.IsNullOrEmpty(familyHint) && !lower.Contains(familyHint)) continue;
+                var prefab = bundle.LoadAsset<GameObject>(name);
+                if (prefab == null) continue;
+                assetPath = name;
+                return prefab;
+            }
+
+            return null;
+        }
+
+        private static IEnumerable<string> CommonSourceSkillEffectCandidates(BattleRuntimeSkillPreviewSpec spec)
+        {
+            var root = "assets/download/commonprefabsandres/skilleffect/commonskillprefabsandres1/";
+            switch (CommonSourceSkillEffectFamilyName(spec))
+            {
+                case "pinkspeedline":
+                    yield return root + "pinkspeedline/pinkspeedline.prefab";
+                    break;
+                case "yellospeedline":
+                    yield return root + "yellospeedline/yellospeedline.prefab";
+                    yield return root + "yellospeedline/yellowspeedline.prefab";
+                    break;
+                case "redspeedline":
+                    yield return root + "redspeedline/redspeedline.prefab";
+                    yield return root + "redspeedline/bluespeedlines03.prefab";
+                    yield return root + "redspeedline/redspeedlines03.prefab";
+                    break;
+            }
+        }
+
+        private static string CommonSourceSkillEffectFamilyName(BattleRuntimeSkillPreviewSpec spec)
+        {
+            if (spec == null)
+                return "";
+            if (spec.SourceFamilyId == 1002)
+                return "pinkspeedline";
+            if (spec.SourceFamilyId == 1012)
+                return "redspeedline";
+            return "yellospeedline";
         }
 
         private static IEnumerable<int> SkillPrefabCandidates(BattleRuntimeSkillPreviewSpec spec)
@@ -694,6 +798,7 @@ namespace GirlsWar
                 {
                     particle.Clear(true);
                     particle.Play(true);
+                    particle.Simulate(0.18f, true, false, true);
                     count++;
                 }
                 catch

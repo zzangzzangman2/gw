@@ -12,7 +12,8 @@
 - actors: `attach=6`, `prefab=5`, `spine=5`, `missingAsset=1`
 - missing exact actor: `1036` (`DTHero`/`DTmodel` say model/prefab `1036`, but local `battleprefabandres/1036` is absent)
 - visual fallbacks: `3` enemy monster model resolves (`1100111 -> 3001`, `1100112/1100113 -> 3006`)
-- source skill prefabs: `72` instantiated, `72` directors played, `0` renderable world effects, `0` playable-loaded resources
+- source skill prefabs: `72` instantiated, `72` directors played, `72` renderable source-backed common effects, `0` playable-loaded resources
+- source common effects: `72` attached from `commonprefabsandres/skilleffect/commonskillprefabsandres1.assetbundle`
 - latest visual overlap metric: `maxOverlap=0`, `overlapPairs=0`, `minCenterPx=162.5`
 - missing script / no script asset log count in latest PlayMode log: `0`
 
@@ -41,6 +42,7 @@ Important boundary: `1025` and `1050` are valid matched/source-backed extraction
 - full-round proof: `finalBattleEndCount=1`
 - real attack proof: `attackMgrAddTask=29`, `attackMgrExecuteTask=29`, `heroNormal=22`, `heroBig=7`
 - runtime preview proof: `runtimePreview=29`, `runtimePreviewMiss=0`
+- source skill proof: `29` instantiated, `29` renderable source-backed common effects, `0` playable-loaded resources
 - actors: `attach=6`, `prefab=5`, `spine=5`, `missingAsset=1`
 - overlap: `maxOverlap=0`, `overlapPairs=0`
 - missing script / no script asset log count in latest RealAttack log: `0`
@@ -51,6 +53,7 @@ Important boundary: `1025` and `1050` are valid matched/source-backed extraction
 - Removed the `ReferenceLineupExtraActorIds` path and the visual-only actor attach path, so `1025/1050` no longer get inserted beside the payload actors.
 - Stopped the fake non-monster fallback chain (`1036 -> 1034/1002`). Missing exact actor assets are now counted as `missingAsset` and not drawn as another character.
 - Split the `YouYou.SkillPlayable.*` and `YouYou.CommonPlayable.*` stubs into Unity file-name-matched script assets, including `PlayVideoTrack` and `SimulateAtkHit*`, so Timeline prefab logs no longer report missing referenced scripts.
+- Added a source-backed common skill-effect bridge: when the original skill prefab has no renderers, it attaches the matching `pinkspeedline`/`redspeedline`/`yellospeedline` prefab from the aggregate common effect bundle. This moves `runtimeSourceSkillPrefabRenderableCount` from `0` to `72` in PlayMode and `29` in RealAttack.
 - Added separate `skinMissingActorCount` and `skinVisualFallbackCount` counters so missing assets and real visual fallbacks do not collapse into the same number.
 - Added battlehead sprites to the temporary HUD cards/top badges from extracted `battlehead*.png` files.
 - Added the Naver Lounge character match JSON/CSV and a battlehead contact sheet for follow-up extraction choices.
@@ -62,7 +65,7 @@ This is still not a perfect original-client battle replay.
 1. `1036` still has no local `download/roleprefabsandres/battleprefabandres/1036.assetbundle`, so it is intentionally missing/invisible instead of being faked with `1034`.
 2. `1005`, `1029`, and `1037` are matched and their battle bundles exist, but the current Play Mode restoration renders them with broken magenta material/backdrop artifacts. Their atlas/material binding needs a focused fix before using them in the live lineup.
 3. The HUD is still a temporary Play Mode overlay, not the original `UI_NormalBattle` route.
-4. Source skill prefabs instantiate and their directors play, but visible source world effects remain `renderable=0`; the next blocker is implementing the original Playable/ResourceLoad behaviours or decoding their serialized resource fields, not missing class binding.
+4. Source skill prefabs instantiate and visible source-backed common speedline effects now render, but `runtimeSourceSkillPrefabPlayableLoadCount` is still `0`; the next blocker is implementing the original Playable/ResourceLoad behaviours or decoding their serialized resource fields so the exact Timeline-authored effects play without the bridge.
 5. Enemy `1100112/1100113` still resolve through the source-backed base monster row `1100110 -> model_3006`.
 
 Next useful work: import/find the exact `1036` SD battle bundle, then fix material/atlas binding for matched-but-broken actor IDs before expanding the roster beyond the 3v3 payload.
