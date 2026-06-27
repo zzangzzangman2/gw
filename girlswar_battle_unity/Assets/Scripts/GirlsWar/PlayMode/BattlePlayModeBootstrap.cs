@@ -13,6 +13,9 @@ namespace GirlsWar
     {
         public const string DefaultResultFileName = "BATTLE_90_PLAYMODE_BOOTSTRAP_RESULT.json";
         public const string RealAttackProbeResultFileName = "BATTLE_90_REAL_ATTACK_PROBE_RESULT.json";
+        public const string RosterExpansionResultFileName = "BATTLE_92_ROSTER_EXPANSION_PLAYMODE_RESULT.json";
+        public const string DefaultPayloadFileName = "BATTLE_TEST_PAYLOAD.json";
+        public const string RosterExpansionPayloadFileName = "BATTLE_TEST_PAYLOAD_ROSTER_EXPANSION.json";
 
         public static bool Completed { get; private set; }
         public static int LastExitCode { get; private set; } = 1;
@@ -21,11 +24,16 @@ namespace GirlsWar
 
         private static int configuredFrameBudget = 240;
         private static bool configuredUseAttackTaskPreview = true;
+        private static bool configuredStandingSnapshotOnly;
+        private static string configuredPayloadFileName = DefaultPayloadFileName;
+        private static int[] configuredHudCardActorIds = { 1036, 1002, 1034, 0, 0 };
         private const int CaptureWidth = 1280;
         private const int CaptureHeight = 570;
-        private const string VisualTuningVersion = "battle90-source-hud-cutin-material-scale-v2";
+        private const string VisualTuningVersion = "battle90-source-hud-cutin-material-scale-v4-payload-roster-standing-snapshot";
         private const float VisualMapWidthUnits = 12.85f;
-        private static readonly int[] HudCardActorIds = { 1036, 1002, 1034, 0, 0 };
+        private static readonly int[] DefaultHudCardActorIds = { 1036, 1002, 1034, 0, 0 };
+        private static readonly int[] RosterExpansionHudCardActorIds = { 1025, 1050, 1029, 1034, 1002 };
+        private static readonly int[] StandingSnapshotEnemyActorIds = { 1100111, 1100112, 1100113 };
         private static readonly Dictionary<string, Sprite> RuntimeUiSpriteCache = new Dictionary<string, Sprite>(StringComparer.OrdinalIgnoreCase);
         private static int ultimateCutinOverlayRequestCount;
         private static int ultimateCutinOverlayShownCount;
@@ -93,9 +101,33 @@ namespace GirlsWar
 
         public static void ConfigureForEditorRun(string resultPath, int frames, bool useAttackTaskPreview)
         {
+            ConfigureForEditorRun(resultPath, frames, useAttackTaskPreview, DefaultPayloadFileName, DefaultHudCardActorIds);
+        }
+
+        public static void ConfigureForEditorRun(string resultPath, int frames, bool useAttackTaskPreview, string payloadFileName, int[] hudCardActorIds)
+        {
+            ConfigureForEditorRun(resultPath, frames, useAttackTaskPreview, payloadFileName, hudCardActorIds, false);
+        }
+
+        public static void ConfigureForEditorRun(string resultPath, int frames, bool useAttackTaskPreview, string payloadFileName, int[] hudCardActorIds, bool standingSnapshotOnly)
+        {
             ResultPath = resultPath;
             configuredFrameBudget = frames;
             configuredUseAttackTaskPreview = useAttackTaskPreview;
+            configuredStandingSnapshotOnly = standingSnapshotOnly;
+            configuredPayloadFileName = string.IsNullOrEmpty(payloadFileName) ? DefaultPayloadFileName : payloadFileName;
+            if (hudCardActorIds != null && hudCardActorIds.Length > 0)
+            {
+                configuredHudCardActorIds = (int[])hudCardActorIds.Clone();
+            }
+            else if (string.Equals(configuredPayloadFileName, RosterExpansionPayloadFileName, StringComparison.OrdinalIgnoreCase))
+            {
+                configuredHudCardActorIds = (int[])RosterExpansionHudCardActorIds.Clone();
+            }
+            else
+            {
+                configuredHudCardActorIds = (int[])DefaultHudCardActorIds.Clone();
+            }
             Completed = false;
             LastExitCode = 1;
             LastStatus = "";
@@ -132,6 +164,7 @@ namespace GirlsWar
                 generatedAt = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"),
                 frameBudget = frameBudget,
                 useAttackTaskPreview = configuredUseAttackTaskPreview,
+                standingSnapshotOnly = configuredStandingSnapshotOnly,
                 playModeEntered = Application.isPlaying,
                 decodedLuaIndexCount = GirlsWarLuaLoader.IndexCount,
             };
@@ -151,6 +184,7 @@ namespace GirlsWar
                 env.DoString(SetupEnv);
                 env.Global.Set("BATTLE90_USE_ATTACK_TASK_PREVIEW", configuredUseAttackTaskPreview);
                 env.Global.Set("BATTLE90_USE_FRAME_COROUTINES", !configuredUseAttackTaskPreview);
+                env.Global.Set("BATTLE90_STANDING_SNAPSHOT_ONLY", configuredStandingSnapshotOnly);
                 LuaNoopHolder.Noop = env.Global.Get<LuaTable>("NOOP_STUB");
                 stages.Add("permissive-_G");
 
@@ -229,7 +263,8 @@ namespace GirlsWar
                 if (string.IsNullOrEmpty(failStage))
                 {
                     var payloadPath = Path.GetFullPath(Path.Combine(
-                        Application.dataPath, "RestoreData", "battle", "BATTLE_TEST_PAYLOAD.json"));
+                        Application.dataPath, "RestoreData", "battle", configuredPayloadFileName));
+                    result.payloadFileName = configuredPayloadFileName;
                     result.payloadPath = payloadPath;
                     result.payloadExists = File.Exists(payloadPath);
                     env.Global.Set("BATTLE_TEST_JSON", result.payloadExists ? File.ReadAllText(payloadPath) : "");
@@ -644,7 +679,9 @@ namespace GirlsWar
                                     local action_type = tonumber(action.actionType) or 0
                                     local fire_hero_id = tonumber(action.fireHeroId) or 0
                                     local skill_did = tonumber(action.skillDid) or 0
-                                    if CS.GirlsWar.BattleRuntimeSpineActorFactory.PreviewAction(hero_id, action_type, fire_hero_id, skill_did) then
+                                    if rawget(_G, 'BATTLE90_STANDING_SNAPSHOT_ONLY') == true then
+                                      inc_global('BATTLE90_STANDING_SNAPSHOT_PREVIEW_SKIP_COUNT')
+                                    elseif CS.GirlsWar.BattleRuntimeSpineActorFactory.PreviewAction(hero_id, action_type, fire_hero_id, skill_did) then
                                       inc_global('BATTLE90_ATTACK_PREVIEW_ACTION_COUNT')
                                     else
                                       inc_global('BATTLE90_ATTACK_PREVIEW_MISS_COUNT')
@@ -788,7 +825,9 @@ namespace GirlsWar
                               return function(hero, action)
                                 local hero_id = hero_id_of(hero)
                                 local skill_id = skill_id_of(action)
-                                if hero_id ~= 0 and CS.GirlsWar.BattleRuntimeSpineActorFactory.PreviewAction(hero_id, action_type, 0, skill_id) then
+                                if rawget(_G, 'BATTLE90_STANDING_SNAPSHOT_ONLY') == true then
+                                  inc_global('BATTLE90_STANDING_SNAPSHOT_PREVIEW_SKIP_COUNT')
+                                elseif hero_id ~= 0 and CS.GirlsWar.BattleRuntimeSpineActorFactory.PreviewAction(hero_id, action_type, 0, skill_id) then
                                   inc_global('BATTLE90_REAL_ATTACK_PREVIEW_ACTION_COUNT')
                                 else
                                   inc_global('BATTLE90_REAL_ATTACK_PREVIEW_MISS_COUNT')
@@ -874,14 +913,28 @@ namespace GirlsWar
                     CaptureVisualSequenceFrame(sequenceCaptures, visualCamera, frame + 1);
             }
 
+            if (string.IsNullOrEmpty(failStage) && configuredStandingSnapshotOnly)
+                NormalizeStandingSnapshotActors(result);
+
             TryReadLuaDiagnostics(env, result);
             CollectVisualDiagnostics(result, visualCamera);
             CaptureVisualEvidence(result, visualCamera);
             result.captureSequenceFrameCount = sequenceCaptures.Count;
             result.captureSequencePaths = string.Join(";", sequenceCaptures.ToArray());
+            PopulateFinalResultState(result, stages, battleEntered, failStage, err);
+            WriteResult(result);
             AppendVisualDiagnostics(result);
             try { env?.Dispose(); } catch { }
 
+            PopulateFinalResultState(result, stages, battleEntered, failStage, err);
+            WriteResult(result);
+            LastStatus = result.status;
+            LastExitCode = result.status == "playmode_bootstrap_entered_battle" ? 0 : 1;
+            Completed = true;
+        }
+
+        private void PopulateFinalResultState(Result result, List<string> stages, bool battleEntered, string failStage, string err)
+        {
             result.stagesCompleted = stages;
             result.battleEntered = battleEntered;
             result.failedStage = Scrub(failStage);
@@ -897,11 +950,6 @@ namespace GirlsWar
                 result.status = "playmode_bootstrap_entered_battle";
             else
                 result.status = "playmode_bootstrap_no_battle_entry";
-
-            WriteResult(result);
-            LastStatus = result.status;
-            LastExitCode = result.status == "playmode_bootstrap_entered_battle" ? 0 : 1;
-            Completed = true;
         }
 
         private void OnLogMessage(string condition, string stackTrace, LogType type)
@@ -1063,6 +1111,7 @@ namespace GirlsWar
             try { result.heroExplosiveCount = env.Global.Get<int>("BATTLE90_HERO_EXPLOSIVE_COUNT"); } catch { }
             try { result.realAttackPreviewActionCount = env.Global.Get<int>("BATTLE90_REAL_ATTACK_PREVIEW_ACTION_COUNT"); } catch { }
             try { result.realAttackPreviewMissCount = env.Global.Get<int>("BATTLE90_REAL_ATTACK_PREVIEW_MISS_COUNT"); } catch { }
+            try { result.standingSnapshotPreviewSkipCount = env.Global.Get<int>("BATTLE90_STANDING_SNAPSHOT_PREVIEW_SKIP_COUNT"); } catch { }
             try { result.firstReadyShortcutCount = env.Global.Get<int>("BATTLE90_FIRST_READY_SHORTCUT_COUNT"); } catch { }
             try
             {
@@ -1192,7 +1241,158 @@ namespace GirlsWar
                 " visualHudSourceSprites=" + result.visualHudSourceSpriteCount +
                 " visualHudDamage=" + result.visualHudDamageTextCount +
                 " ultimateCutinShown=" + result.runtimeUltimateCutinOverlayShownCount +
-                " captureNonDark=" + result.captureNonDarkSampleCount;
+                " captureNonDark=" + result.captureNonDarkSampleCount +
+                " standingSnapshot=" + result.standingSnapshotOnly +
+                " standingPreviewSkip=" + result.standingSnapshotPreviewSkipCount +
+                " standingActorsNormalized=" + result.standingSnapshotActorNormalizeCount;
+        }
+
+        private static void NormalizeStandingSnapshotActors(Result result)
+        {
+            EnsureStandingSnapshotActorPool();
+
+            var handles = UnityEngine.Object.FindObjectsOfType<BattleRuntimeActorHandle>();
+            if (handles == null || handles.Length == 0)
+                return;
+
+            Array.Sort(handles, (a, b) => StandingSnapshotSortKey(a).CompareTo(StandingSnapshotSortKey(b)));
+
+            var root = GameObject.Find("B90_StandingSnapshotActors");
+            if (root == null)
+                root = new GameObject("B90_StandingSnapshotActors");
+
+            var ourSlot = 0;
+            var enemySlot = 0;
+            var summaries = new List<string>();
+            foreach (var handle in handles)
+            {
+                if (handle == null)
+                    continue;
+
+                var slot = handle.IsOurHero ? ourSlot++ : enemySlot++;
+                handle.transform.SetParent(root.transform, true);
+                handle.transform.position = PreviewFormationPosition(handle.IsOurHero, slot);
+                handle.transform.localRotation = Quaternion.identity;
+                var factor = NormalizeStandingSnapshotActorHeight(handle);
+                handle.RememberBasePose();
+
+                var actorKey = handle.RequestedHeroDid != 0 ? handle.RequestedHeroDid : handle.RequestedHeroId;
+                summaries.Add(actorKey + "@" + slot + "x" + factor.ToString("0.###"));
+                result.standingSnapshotActorNormalizeCount++;
+            }
+
+            result.standingSnapshotActorSummary = string.Join(";", summaries.ToArray());
+        }
+
+        private static void EnsureStandingSnapshotActorPool()
+        {
+            var root = GameObject.Find("B90_StandingSnapshotDirectActors");
+            if (root == null)
+                root = new GameObject("B90_StandingSnapshotDirectActors");
+
+            for (var i = 0; configuredHudCardActorIds != null && i < configuredHudCardActorIds.Length; i++)
+            {
+                var actorId = configuredHudCardActorIds[i];
+                if (actorId == 0 || HasRuntimeActorHandle(actorId, true))
+                    continue;
+                BattleRuntimeSpineActorFactory.AttachActor(actorId, actorId, root.transform, true, false, actorId);
+            }
+
+            for (var i = 0; i < StandingSnapshotEnemyActorIds.Length; i++)
+            {
+                var actorId = StandingSnapshotEnemyActorIds[i];
+                if (HasRuntimeActorHandle(actorId, false))
+                    continue;
+                BattleRuntimeSpineActorFactory.AttachActor(actorId, actorId, root.transform, false, true, actorId);
+            }
+        }
+
+        private static bool HasRuntimeActorHandle(int actorId, bool isOurHero)
+        {
+            var handles = UnityEngine.Object.FindObjectsOfType<BattleRuntimeActorHandle>();
+            foreach (var handle in handles)
+            {
+                if (handle == null || handle.IsOurHero != isOurHero)
+                    continue;
+                var key = handle.RequestedHeroDid != 0 ? handle.RequestedHeroDid : handle.RequestedHeroId;
+                if (key == actorId)
+                    return true;
+            }
+            return false;
+        }
+
+        private static int StandingSnapshotSortKey(BattleRuntimeActorHandle handle)
+        {
+            if (handle == null)
+                return int.MaxValue;
+
+            var actorKey = handle.RequestedHeroDid != 0 ? handle.RequestedHeroDid : handle.RequestedHeroId;
+            if (handle.IsOurHero)
+            {
+                for (var i = 0; configuredHudCardActorIds != null && i < configuredHudCardActorIds.Length; i++)
+                {
+                    if (configuredHudCardActorIds[i] == actorKey)
+                        return i;
+                }
+                return 50 + Mathf.Abs(actorKey % 1000);
+            }
+
+            return 1000 + Mathf.Abs(actorKey % 1000);
+        }
+
+        private static float NormalizeStandingSnapshotActorHeight(BattleRuntimeActorHandle handle)
+        {
+            if (handle == null || !TryCollectRendererBounds(handle.gameObject, out var bounds))
+                return 1f;
+
+            var height = bounds.size.y;
+            if (height <= 0.01f)
+                return 1f;
+
+            var target = StandingSnapshotTargetHeight(handle);
+            var factor = Mathf.Clamp(target / height, 0.08f, 8f);
+            handle.transform.localScale = handle.transform.localScale * factor;
+            if (handle.SkeletonAnimation != null)
+            {
+                handle.SkeletonAnimation.Update(0f);
+                handle.SkeletonAnimation.LateUpdate();
+            }
+            return factor;
+        }
+
+        private static float StandingSnapshotTargetHeight(BattleRuntimeActorHandle handle)
+        {
+            if (handle == null)
+                return 1.36f;
+            if (!handle.IsOurHero)
+                return handle.ResolvedActorId == 3001 ? 1.5f : 1.36f;
+            return 1.36f;
+        }
+
+        private static bool TryCollectRendererBounds(GameObject root, out Bounds bounds)
+        {
+            bounds = new Bounds();
+            if (root == null)
+                return false;
+
+            var renderers = root.GetComponentsInChildren<Renderer>(true);
+            var hasBounds = false;
+            foreach (var renderer in renderers)
+            {
+                if (renderer == null || !renderer.enabled || !renderer.gameObject.activeInHierarchy)
+                    continue;
+                if (!hasBounds)
+                {
+                    bounds = renderer.bounds;
+                    hasBounds = true;
+                }
+                else
+                {
+                    bounds.Encapsulate(renderer.bounds);
+                }
+            }
+
+            return hasBounds;
         }
 
         private static Camera EnsureVisualStage()
@@ -1290,7 +1490,7 @@ namespace GirlsWar
             scaler.referenceResolution = new Vector2(CaptureWidth, CaptureHeight);
             canvasGo.AddComponent<GraphicRaycaster>();
 
-            CreateTopCombatantHud(canvasGo.transform, "Our", 1036, "\uc131\uc8fc13918", "Lv.12", new Vector2(332f, -10f), true, 0.72f);
+            CreateTopCombatantHud(canvasGo.transform, "Our", PrimaryHudActorId(), "\uc131\uc8fc13918", "Lv.12", new Vector2(332f, -10f), true, 0.72f);
             CreateTopCombatantHud(canvasGo.transform, "Enemy", 3001, "\uc815\uc608\uc790\uac1d", "Lv.6", new Vector2(-332f, -10f), false, 0.64f);
             CreateSpritePanel(canvasGo.transform, "VsLabel", new Vector2(0f, -36f), new Vector2(56f, 56f),
                 LoadRestoreHudSprite("download_artsources_uispriteres_uibattle.assetbundle_1943103129572916828_multilang_T_duijue.png"),
@@ -1302,7 +1502,8 @@ namespace GirlsWar
             for (var i = 0; i < 5; i++)
                 CreateSkillCard(canvasGo.transform, i);
 
-            CreateDamageNumber(canvasGo.transform, "DamagePopup_1303", "1303", new Vector2(132f, -16f));
+            if (!configuredStandingSnapshotOnly)
+                CreateDamageNumber(canvasGo.transform, "DamagePopup_1303", "1303", new Vector2(132f, -16f));
             CreateSideButton(canvasGo.transform, "AutoButton", "\uc790\ub3d9", "download_artsources_uispriteres_uibattle.assetbundle_-3599735801722606192_btn_zidong_on.png", new Vector2(-18f, 78f));
             CreateSideButton(canvasGo.transform, "SkipButton", "\uc2a4\ud0b5", "download_artsources_uispriteres_uibattle.assetbundle_-668223970973157061_btn_Skip.png", new Vector2(-18f, 18f));
             CreateSideButton(canvasGo.transform, "SpeedButton", "x2", "download_artsources_uispriteres_uibattle.assetbundle_988442367583666760_btn_x2_1.png", new Vector2(-18f, -42f));
@@ -1355,7 +1556,7 @@ namespace GirlsWar
         private static void CreateSkillCard(Transform parent, int index)
         {
             var x = -176f + index * 88f;
-            var actorId = HudCardActorIds[Mathf.Clamp(index, 0, HudCardActorIds.Length - 1)];
+            var actorId = HudCardActorId(index);
             var card = CreatePanel(parent, "SkillCard_" + index, new Vector2(x, 18f), new Vector2(78f, 90f), new Color(0f, 0f, 0f, 0f), TextAnchor.LowerCenter);
             CreateSpritePanel(card.transform, "SkillCard_" + index + "_Frame", new Vector2(0f, 45f), new Vector2(72f, 72f),
                 LoadRestoreHudSprite("download_artsources_uispriteres_uicommonother.assetbundle_4043117267995258628_BG_zhuangbeikuang_3.png"),
@@ -1666,6 +1867,12 @@ namespace GirlsWar
         public static bool TryShowUltimateCutinOverlay(int actorId, int skillDid, out string summary)
         {
             ultimateCutinOverlayRequestCount++;
+            if (configuredStandingSnapshotOnly)
+            {
+                summary = "standing_snapshot_suppressed actor=" + actorId + " skill=" + skillDid;
+                ultimateCutinOverlaySummary = summary;
+                return false;
+            }
             var family = actorId != 0 ? actorId : SkillFamilyFromDid(skillDid);
             var hud = GameObject.Find("B90_ReferenceBattleHud");
             if (hud == null)
@@ -1825,7 +2032,7 @@ namespace GirlsWar
 
             result.visualActorRendererCount = rendererCount;
             result.visualTuningVersion = VisualTuningVersion;
-            result.visualLayoutSummary = "mapWidthUnits=" + VisualMapWidthUnits.ToString("0.##") + "/centered-three-lane/no-overlap-scale";
+            result.visualLayoutSummary = "payload=" + configuredPayloadFileName + "/mapWidthUnits=" + VisualMapWidthUnits.ToString("0.##") + "/five-slot-readable-scale/standingSnapshot=" + configuredStandingSnapshotOnly;
             result.visualActorWorldBounds = hasBounds ? Vec(combined.center) + "|" + Vec(combined.size) : "";
             result.visualActorScreenRect = hasBounds && camera != null ? ScreenRect(camera, combined) : "";
             result.visualActorScreenAreaRatio = hasBounds && camera != null ? ScreenAreaRatio(camera, combined) : 0f;
@@ -1898,9 +2105,7 @@ namespace GirlsWar
             if (camera == null)
                 return;
 
-            var captureFileName = string.Equals(Path.GetFileName(ResultPath), RealAttackProbeResultFileName, StringComparison.OrdinalIgnoreCase)
-                ? "BATTLE_90_REAL_ATTACK_PROBE_CAPTURE.png"
-                : "BATTLE_90_PLAYMODE_BOOTSTRAP_CAPTURE.png";
+            var captureFileName = CaptureFileNameForResult(Path.GetFileName(ResultPath));
             var output = Path.Combine(GetResultDirectory(), captureFileName);
             Directory.CreateDirectory(Path.GetDirectoryName(output));
 
@@ -1930,6 +2135,8 @@ namespace GirlsWar
 
         private static bool ShouldCaptureSequenceFrame(int frame)
         {
+            if (configuredStandingSnapshotOnly)
+                return false;
             if (configuredUseAttackTaskPreview)
                 return frame == 24 || frame == 48 || frame == 72 || frame == 96 || frame == 120 || frame == 160;
             return frame == 24 || frame == 48 || frame == 72 || frame == 96 || frame == 120 || frame == 160;
@@ -1940,9 +2147,7 @@ namespace GirlsWar
             if (camera == null || sequenceCaptures == null)
                 return;
 
-            var prefix = string.Equals(Path.GetFileName(ResultPath), RealAttackProbeResultFileName, StringComparison.OrdinalIgnoreCase)
-                ? "BATTLE_90_REAL_ATTACK_PROBE_SEQ_"
-                : "BATTLE_90_PLAYMODE_BOOTSTRAP_SEQ_";
+            var prefix = SequencePrefixForResult(Path.GetFileName(ResultPath));
             var output = Path.Combine(GetResultDirectory(), prefix + frame.ToString("0000") + ".png");
             Directory.CreateDirectory(Path.GetDirectoryName(output));
 
@@ -1988,6 +2193,24 @@ namespace GirlsWar
             if (string.IsNullOrEmpty(path))
                 path = Path.GetFullPath(Path.Combine(Application.dataPath, "..", "..", "reports", "battle", DefaultResultFileName));
             return Path.GetDirectoryName(path);
+        }
+
+        private static string CaptureFileNameForResult(string resultFileName)
+        {
+            if (string.Equals(resultFileName, RealAttackProbeResultFileName, StringComparison.OrdinalIgnoreCase))
+                return "BATTLE_90_REAL_ATTACK_PROBE_CAPTURE.png";
+            if (string.Equals(resultFileName, RosterExpansionResultFileName, StringComparison.OrdinalIgnoreCase))
+                return "BATTLE_92_ROSTER_EXPANSION_PLAYMODE_CAPTURE.png";
+            return "BATTLE_90_PLAYMODE_BOOTSTRAP_CAPTURE.png";
+        }
+
+        private static string SequencePrefixForResult(string resultFileName)
+        {
+            if (string.Equals(resultFileName, RealAttackProbeResultFileName, StringComparison.OrdinalIgnoreCase))
+                return "BATTLE_90_REAL_ATTACK_PROBE_SEQ_";
+            if (string.Equals(resultFileName, RosterExpansionResultFileName, StringComparison.OrdinalIgnoreCase))
+                return "BATTLE_92_ROSTER_EXPANSION_PLAYMODE_SEQ_";
+            return "BATTLE_90_PLAYMODE_BOOTSTRAP_SEQ_";
         }
 
         private static string Vec(Vector3 value)
@@ -2131,6 +2354,11 @@ namespace GirlsWar
                 }
                 catch (Exception e)
                 {
+                    if (configuredStandingSnapshotOnly)
+                    {
+                        stages.Add("heroViewBridgeSkip[" + i + "]=" + Scrub(e.Message));
+                        continue;
+                    }
                     failStage = "heroViewBridge[" + i + "]";
                     err = e.Message;
                     return;
@@ -2155,25 +2383,44 @@ namespace GirlsWar
             var positions = isOurHero
                 ? new[]
                 {
-                    new Vector3(-2.45f, -0.86f, 0f),
-                    new Vector3(-2.76f, -2.42f, 0f),
-                    new Vector3(-0.2f, -1.48f, 0f),
-                    new Vector3(-0.52f, -2.28f, 0f),
-                    new Vector3(-3.78f, -1.78f, 0f),
-                    new Vector3(-1.82f, -2.46f, 0f),
+                    new Vector3(-3.2f, -0.92f, 0f),
+                    new Vector3(-2.55f, -2.18f, 0f),
+                    new Vector3(-1.75f, -0.92f, 0f),
+                    new Vector3(-0.95f, -2.2f, 0f),
+                    new Vector3(-0.15f, -1.15f, 0f),
+                    new Vector3(-1.55f, -2.55f, 0f),
                 }
                 : new[]
                 {
-                    new Vector3(2.35f, -1.05f, 0f),
-                    new Vector3(4.1f, -2.5f, 0f),
-                    new Vector3(4.25f, -0.78f, 0f),
-                    new Vector3(2.2f, -2.2f, 0f),
-                    new Vector3(4.86f, -1.76f, 0f),
-                    new Vector3(3.14f, -2.52f, 0f),
+                    new Vector3(2.05f, -1.04f, 0f),
+                    new Vector3(3.35f, -2.12f, 0f),
+                    new Vector3(4.55f, -0.88f, 0f),
+                    new Vector3(2.65f, -2.52f, 0f),
+                    new Vector3(4.7f, -2.05f, 0f),
+                    new Vector3(3.4f, -0.48f, 0f),
                 };
 
             var index = Mathf.Clamp(slot, 0, positions.Length - 1);
             return positions[index];
+        }
+
+        private static int PrimaryHudActorId()
+        {
+            if (configuredHudCardActorIds == null)
+                configuredHudCardActorIds = (int[])DefaultHudCardActorIds.Clone();
+            for (var i = 0; i < configuredHudCardActorIds.Length; i++)
+            {
+                if (configuredHudCardActorIds[i] != 0)
+                    return configuredHudCardActorIds[i];
+            }
+            return 1036;
+        }
+
+        private static int HudCardActorId(int index)
+        {
+            if (configuredHudCardActorIds == null || configuredHudCardActorIds.Length == 0)
+                configuredHudCardActorIds = (int[])DefaultHudCardActorIds.Clone();
+            return configuredHudCardActorIds[Mathf.Clamp(index, 0, configuredHudCardActorIds.Length - 1)];
         }
 
         private static void Safe(LuaEnv env, string lua, List<string> stages, ref string failStage, ref string err, bool optional = false)
@@ -2238,9 +2485,11 @@ namespace GirlsWar
             public string status;
             public bool playModeEntered;
             public bool useAttackTaskPreview;
+            public bool standingSnapshotOnly;
             public int frameBudget;
             public int framesPumped;
             public int decodedLuaIndexCount;
+            public string payloadFileName;
             public string payloadPath;
             public bool payloadExists;
             public int changeStateCount;
@@ -2394,6 +2643,9 @@ namespace GirlsWar
             public int heroExplosiveCount;
             public int realAttackPreviewActionCount;
             public int realAttackPreviewMissCount;
+            public int standingSnapshotPreviewSkipCount;
+            public int standingSnapshotActorNormalizeCount;
+            public string standingSnapshotActorSummary;
             public int firstReadyShortcutCount;
             public List<string> stagesCompleted;
         }

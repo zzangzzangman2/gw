@@ -1,11 +1,11 @@
 {
-    "generatedAt": "2026-06-27 18:29:18",
+    "generatedAt": "2026-06-27 19:30:23",
     "status": "roster_expansion_material_probe_ok",
     "scene": "Assets/Scenes/Battle91RosterExpansionMaterialProbe.unity",
     "capturePath": "reports/battle/BATTLE_91_ROSTER_EXPANSION_MATERIAL_PROBE_CAPTURE.png",
     "captureExists": true,
-    "captureBytes": 172124,
-    "captureNonDarkSampleCount": 144720,
+    "captureBytes": 181048,
+    "captureNonDarkSampleCount": 147086,
     "captureMagentaSampleCount": 0,
     "runtimeActorAttachCount": 8,
     "runtimeActorPrefabCount": 8,
@@ -78,35 +78,6 @@
             ]
         },
         {
-            "requestedHeroId": 1005,
-            "requestedHeroDid": 1005,
-            "resolvedActorId": 1005,
-            "isExactActor": true,
-            "isSpineActor": true,
-            "animationName": "stand",
-            "fallbackReason": "",
-            "worldPosition": "-1.8/-0.82/0",
-            "worldBounds": "-1.869/-0.254/0|1.153/1.34/0",
-            "screenRect": "89.9/186/108.5x126.2",
-            "rendererCount": 1,
-            "enabledRendererCount": 1,
-            "skeletonAnimationCount": 1,
-            "materialCount": 1,
-            "errorShaderMaterialCount": 0,
-            "shaderNames": [
-                "Spine/Skeleton"
-            ],
-            "textureNames": [
-                "1005"
-            ],
-            "materialNames": [
-                "1005_Material|Spine/Skeleton|1005"
-            ],
-            "atlasMaterialNames": [
-                "1005_Material|Spine/Skeleton|1005"
-            ]
-        },
-        {
             "requestedHeroId": 1029,
             "requestedHeroDid": 1029,
             "resolvedActorId": 1029,
@@ -114,9 +85,9 @@
             "isSpineActor": true,
             "animationName": "stand",
             "fallbackReason": "",
-            "worldPosition": "-0.75/-0.64/0",
-            "worldBounds": "-0.789/0.02/0|1.168/1.321/0",
-            "screenRect": "190.8/212.7/109.9x124.3",
+            "worldPosition": "-1.8/-0.82/0",
+            "worldBounds": "-1.839/-0.16/0|1.168/1.321/0",
+            "screenRect": "92/195.7/109.9x124.3",
             "rendererCount": 1,
             "enabledRendererCount": 1,
             "skeletonAnimationCount": 1,
@@ -136,16 +107,46 @@
             ]
         },
         {
-            "requestedHeroId": 1037,
-            "requestedHeroDid": 1037,
-            "resolvedActorId": 1037,
+            "requestedHeroId": 1034,
+            "requestedHeroDid": 1034,
+            "resolvedActorId": 1034,
+            "isExactActor": true,
+            "isSpineActor": true,
+            "animationName": "stand",
+            "fallbackReason": "",
+            "worldPosition": "-0.75/-0.64/0",
+            "worldBounds": "-0.826/0.149/0|2.734/1.622/0",
+            "screenRect": "113.6/210.6/257.3x152.7",
+            "rendererCount": 1,
+            "enabledRendererCount": 1,
+            "skeletonAnimationCount": 1,
+            "materialCount": 2,
+            "errorShaderMaterialCount": 0,
+            "shaderNames": [
+                "Spine/Skeleton"
+            ],
+            "textureNames": [
+                "1034"
+            ],
+            "materialNames": [
+                "1034_Material|Spine/Skeleton|1034",
+                "1034_Material-Screen|Spine/Skeleton|1034"
+            ],
+            "atlasMaterialNames": [
+                "1034_Material|Spine/Skeleton|1034"
+            ]
+        },
+        {
+            "requestedHeroId": 1002,
+            "requestedHeroDid": 1002,
+            "resolvedActorId": 1002,
             "isExactActor": true,
             "isSpineActor": true,
             "animationName": "stand",
             "fallbackReason": "",
             "worldPosition": "0.3/-0.82/0",
-            "worldBounds": "-0.211/-0.133/0|1.155/1.38/0",
-            "screenRect": "245.8/195.4/108.7x129.9",
+            "worldBounds": "0.098/-0.173/0|0.893/1.372/0",
+            "screenRect": "287.2/192.1/84x129.1",
             "rendererCount": 1,
             "enabledRendererCount": 1,
             "skeletonAnimationCount": 1,
@@ -155,13 +156,13 @@
                 "Spine/Skeleton"
             ],
             "textureNames": [
-                "1037"
+                "1002"
             ],
             "materialNames": [
-                "1037_Material|Spine/Skeleton|1037"
+                "1002_Material|Spine/Skeleton|1002"
             ],
             "atlasMaterialNames": [
-                "1037_Material|Spine/Skeleton|1037"
+                "1002_Material|Spine/Skeleton|1002"
             ]
         },
         {

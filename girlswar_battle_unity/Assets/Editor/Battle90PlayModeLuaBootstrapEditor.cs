@@ -13,6 +13,7 @@ namespace GirlsWar
         private const double TimeoutSeconds = 90.0;
         private const int FrameBudget = 240;
         private const int RealAttackProbeFrameBudget = 900;
+        private const int RosterExpansionFrameBudget = 12;
 
         private static double startedAt;
         private static bool previousEnterPlayModeOptionsEnabled;
@@ -20,6 +21,9 @@ namespace GirlsWar
         private static string activeResultFileName = BattlePlayModeBootstrap.DefaultResultFileName;
         private static int activeFrameBudget = FrameBudget;
         private static bool activeUseAttackTaskPreview = true;
+        private static bool activeStandingSnapshotOnly;
+        private static string activePayloadFileName = BattlePlayModeBootstrap.DefaultPayloadFileName;
+        private static readonly int[] RosterExpansionHudCards = { 1025, 1050, 1029, 1034, 1002 };
 
         [MenuItem("GirlsWar/Battle/BATTLE90 PlayMode Lua Bootstrap")]
         public static void Verify()
@@ -33,7 +37,29 @@ namespace GirlsWar
             StartRun(BattlePlayModeBootstrap.RealAttackProbeResultFileName, RealAttackProbeFrameBudget, false);
         }
 
+        [MenuItem("GirlsWar/Battle/BATTLE92 Roster Expansion PlayMode")]
+        public static void VerifyRosterExpansionPlayMode()
+        {
+            StartRun(
+                BattlePlayModeBootstrap.RosterExpansionResultFileName,
+                RosterExpansionFrameBudget,
+                true,
+                BattlePlayModeBootstrap.RosterExpansionPayloadFileName,
+                RosterExpansionHudCards,
+                true);
+        }
+
         private static void StartRun(string resultFileName, int frameBudget, bool useAttackTaskPreview)
+        {
+            StartRun(resultFileName, frameBudget, useAttackTaskPreview, BattlePlayModeBootstrap.DefaultPayloadFileName, null, false);
+        }
+
+        private static void StartRun(string resultFileName, int frameBudget, bool useAttackTaskPreview, string payloadFileName, int[] hudCardActorIds)
+        {
+            StartRun(resultFileName, frameBudget, useAttackTaskPreview, payloadFileName, hudCardActorIds, false);
+        }
+
+        private static void StartRun(string resultFileName, int frameBudget, bool useAttackTaskPreview, string payloadFileName, int[] hudCardActorIds, bool standingSnapshotOnly)
         {
             Directory.CreateDirectory(ProjectPath("Assets/Scenes"));
             Directory.CreateDirectory(RepoPath("reports/battle"));
@@ -43,6 +69,8 @@ namespace GirlsWar
             activeResultFileName = resultFileName;
             activeFrameBudget = frameBudget;
             activeUseAttackTaskPreview = useAttackTaskPreview;
+            activeStandingSnapshotOnly = standingSnapshotOnly;
+            activePayloadFileName = string.IsNullOrEmpty(payloadFileName) ? BattlePlayModeBootstrap.DefaultPayloadFileName : payloadFileName;
 
             previousEnterPlayModeOptionsEnabled = EditorSettings.enterPlayModeOptionsEnabled;
             previousEnterPlayModeOptions = EditorSettings.enterPlayModeOptions;
@@ -52,7 +80,7 @@ namespace GirlsWar
             var resultPath = RepoPath("reports/battle/" + activeResultFileName);
             if (File.Exists(resultPath)) File.Delete(resultPath);
             DeleteOldSequenceCaptures(activeResultFileName);
-            BattlePlayModeBootstrap.ConfigureForEditorRun(resultPath, activeFrameBudget, activeUseAttackTaskPreview);
+            BattlePlayModeBootstrap.ConfigureForEditorRun(resultPath, activeFrameBudget, activeUseAttackTaskPreview, activePayloadFileName, hudCardActorIds, activeStandingSnapshotOnly);
 
             EditorSceneManager.OpenScene(ScenePath, OpenSceneMode.Single);
             startedAt = EditorApplication.timeSinceStartup;
@@ -144,7 +172,9 @@ namespace GirlsWar
                 "  \"status\": \"playmode_bootstrap_timeout\",\n" +
                 "  \"playModeEntered\": " + (EditorApplication.isPlaying ? "true" : "false") + ",\n" +
                 "  \"useAttackTaskPreview\": " + (activeUseAttackTaskPreview ? "true" : "false") + ",\n" +
+                "  \"standingSnapshotOnly\": " + (activeStandingSnapshotOnly ? "true" : "false") + ",\n" +
                 "  \"frameBudget\": " + activeFrameBudget + ",\n" +
+                "  \"payloadFileName\": \"" + activePayloadFileName + "\",\n" +
                 "  \"battleEntered\": false,\n" +
                 "  \"failedStage\": \"editor_timeout\",\n" +
                 "  \"error\": \"BATTLE90 timed out before BattlePlayModeBootstrap.Completed\"\n" +
@@ -154,9 +184,7 @@ namespace GirlsWar
 
         private static void DeleteOldSequenceCaptures(string resultFileName)
         {
-            var prefix = string.Equals(resultFileName, BattlePlayModeBootstrap.RealAttackProbeResultFileName, StringComparison.OrdinalIgnoreCase)
-                ? "BATTLE_90_REAL_ATTACK_PROBE_SEQ_"
-                : "BATTLE_90_PLAYMODE_BOOTSTRAP_SEQ_";
+            var prefix = SequencePrefixForResult(resultFileName);
             var reportDir = RepoPath("reports/battle");
             if (!Directory.Exists(reportDir))
                 return;
@@ -165,6 +193,15 @@ namespace GirlsWar
             {
                 try { File.Delete(path); } catch { }
             }
+        }
+
+        private static string SequencePrefixForResult(string resultFileName)
+        {
+            if (string.Equals(resultFileName, BattlePlayModeBootstrap.RealAttackProbeResultFileName, StringComparison.OrdinalIgnoreCase))
+                return "BATTLE_90_REAL_ATTACK_PROBE_SEQ_";
+            if (string.Equals(resultFileName, BattlePlayModeBootstrap.RosterExpansionResultFileName, StringComparison.OrdinalIgnoreCase))
+                return "BATTLE_92_ROSTER_EXPANSION_PLAYMODE_SEQ_";
+            return "BATTLE_90_PLAYMODE_BOOTSTRAP_SEQ_";
         }
 
         private static string ProjectPath(string projectRelativePath)

@@ -14,7 +14,7 @@ namespace GirlsWar
         private const string ScenePath = "Assets/Scenes/Battle91RosterExpansionMaterialProbe.unity";
         private const string ResultPath = "reports/battle/BATTLE_91_ROSTER_EXPANSION_MATERIAL_PROBE_RESULT.json";
         private const string CapturePath = "reports/battle/BATTLE_91_ROSTER_EXPANSION_MATERIAL_PROBE_CAPTURE.png";
-        private static readonly int[] SourceBackedActorIds = { 1025, 1050, 1005, 1029, 1037 };
+        private static readonly int[] SourceBackedActorIds = { 1025, 1050, 1029, 1034, 1002 };
         private static readonly int[] EnemyMonsterIds = { 1100111, 1100112, 1100113 };
 
         [MenuItem("GirlsWar/Battle/BATTLE91 Roster Expansion Material Probe")]

@@ -12,6 +12,36 @@
 - Rows with local `battleprefabandres` actor bundles: `41`
 - Rows with local name/head/art but no battle actor bundle: `73`
 - Detail pages were lounge-gated in the browser, so this pass did not bypass the gate and used only public list titles plus local extracted data.
+- Local art cache for manual visual reference: `work/naver_lounge_art_images/` (`114` JPG files, not committed as source data).
+
+## BATTLE92 Current Verified Lineup
+
+2026-06-27 update: BATTLE92 now uses a payload-backed standing snapshot roster, not visual-only injection. Field actors are SD/Spine only; large art remains HUD/cutin material and is not placed on the battlefield.
+
+Active BATTLE92 payload roster:
+
+- `1025` 다테 마사무네: Naver rows `6968110`, `4527904`, `2274359`; local battle bundle/head/art/skill all present.
+- `1050` 사카모토 료마: Naver row `2292045`; local battle bundle/head/art/skill all present.
+- `1029` 사이토 기쵸: Naver rows `5765288`, `2274393`; local battle bundle/head/art/skill all present.
+- `1034` 비스마르크: Naver row `2024959`; local battle bundle/head/art/skill all present.
+- `1002` 차차: Naver row `2024949`; local battle bundle/head/art/skill all present.
+
+Enemy actors in the same BATTLE92 capture:
+
+- `1100111 -> 3001`: exact monster model row.
+- `1100112 -> 3006`, `1100113 -> 3006`: base monster row fallback through `1100110`.
+
+BATTLE92 proof:
+
+- payload: `girlswar_battle_unity/Assets/RestoreData/battle/BATTLE_TEST_PAYLOAD_ROSTER_EXPANSION.json`
+- result: `reports/battle/BATTLE_92_ROSTER_EXPANSION_PLAYMODE_RESULT.json`
+- capture: `reports/battle/BATTLE_92_ROSTER_EXPANSION_PLAYMODE_CAPTURE.png`
+- latest result summary: `status=playmode_bootstrap_entered_battle`, `runtimeActorSpineCount=8`, `runtimeActorMissingAssetCount=0`, `runtimePreviewActionCount=0`, `runtimeUltimateCutinOverlayShownCount=0`, `visualHudDamageTextCount=0`, `visualActorMaxOverlapRatio=0.098122254`
+
+Matched but not kept in the current BATTLE92 readability lineup:
+
+- `1005` 링링: battle bundle exists and BATTLE91 material probe renders it, but current field readability is better with `1002`.
+- `1037` 제갈공명: battle bundle exists and BATTLE91 material probe renders it, but this actor reads too small in the current battle composition.
 
 ## Current PlayMode Lineup Result
 
