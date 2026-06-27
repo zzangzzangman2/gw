@@ -29,28 +29,28 @@ namespace GirlsWar
         private static int[] configuredHudCardActorIds = { 1036, 1002, 1034, 0, 0 };
         private const int CaptureWidth = 1280;
         private const int CaptureHeight = 570;
-        private const string VisualTuningVersion = "battle92-reference-roster-scale-realism-v9";
+        private const string VisualTuningVersion = "battle92-reference-roster-spacing-damage-v11";
         private const float VisualMapWidthUnits = 12.85f;
         private static readonly int[] DefaultHudCardActorIds = { 1036, 1002, 1034, 0, 0 };
         private static readonly int[] RosterExpansionHudCardActorIds = { 1005, 1010, 1002, 1003, 1001 };
         private static readonly int[] StandingSnapshotEnemyActorIds = { 1100111, 1100112, 1100113 };
         private static readonly Vector3[] OurFormationSlotPositions =
         {
-            new Vector3(-3.05f, -1.05f, -0.02f),
-            new Vector3(-1.55f, -0.92f, 0f),
-            new Vector3(-1.16f, -2.18f, -0.24f),
-            new Vector3(-2.34f, -1.68f, -0.12f),
-            new Vector3(-3.55f, -2.16f, -0.26f),
-            new Vector3(-2.56f, -2.48f, -0.28f),
+            new Vector3(-3.65f, -0.25f, -0.02f),
+            new Vector3(-1.45f, -0.45f, 0f),
+            new Vector3(0.55f, -2.58f, -0.24f),
+            new Vector3(-1.65f, -2.45f, -0.12f),
+            new Vector3(-3.65f, -2.65f, -0.26f),
+            new Vector3(-0.45f, -1.55f, -0.28f),
         };
         private static readonly Vector3[] EnemyFormationSlotPositions =
         {
-            new Vector3(1.42f, -1.04f, -0.02f),
-            new Vector3(2.76f, -1.34f, -0.1f),
-            new Vector3(1.42f, -2.28f, -0.26f),
-            new Vector3(2.7f, -2.46f, -0.3f),
-            new Vector3(3.88f, -1.18f, -0.08f),
-            new Vector3(3.42f, -2.5f, -0.32f),
+            new Vector3(1.2f, -0.35f, -0.02f),
+            new Vector3(2.45f, -1.62f, -0.1f),
+            new Vector3(3.45f, -2.65f, -0.26f),
+            new Vector3(2.15f, -2.48f, -0.3f),
+            new Vector3(4.55f, -0.52f, -0.08f),
+            new Vector3(5.0f, -1.82f, -0.32f),
         };
         private static readonly float[] OurFormationSlotScales = { 1f, 1f, 0.96f, 0.94f, 0.92f, 0.95f };
         private static readonly float[] EnemyFormationSlotScales = { 0.74f, 0.68f, 0.72f, 0.68f, 0.74f, 0.68f };
@@ -1468,7 +1468,7 @@ namespace GirlsWar
             camera.backgroundColor = new Color(0.025f, 0.028f, 0.034f, 1f);
             camera.orthographic = true;
             camera.orthographicSize = 2.2f;
-            camera.transform.position = new Vector3(0.05f, -0.82f, -10f);
+            camera.transform.position = new Vector3(-0.65f, -0.52f, -10f);
             camera.transform.rotation = Quaternion.identity;
 
             var stage = GameObject.Find("B90_VisualStage");
@@ -2151,7 +2151,7 @@ namespace GirlsWar
                 var ourCurrent = Mathf.RoundToInt(Mathf.Lerp(ourStart, ourTarget, smooth));
                 var enemyCurrent = Mathf.RoundToInt(Mathf.Lerp(enemyStart, enemyTarget, smooth));
                 var damageValue = DamageValueForWave(wave);
-                var showDamage = !configuredStandingSnapshotOnly && damageValue > 0 && waveT > 0.16f && waveT < 0.44f;
+                var showDamage = !configuredStandingSnapshotOnly && damageValue > 0 && waveT > 0.16f;
 
                 return new BattleHudFrame
                 {
@@ -2898,6 +2898,8 @@ namespace GirlsWar
             var actorHeightSummaries = new List<string>();
             var actorAnimationSummaries = new List<string>();
             var actorPositions = new List<string>();
+            var hasDiagnosticScreenRect = false;
+            var combinedDiagnosticScreenRect = new Rect();
             var actorShadowCount = 0;
             var actorAnimatedCount = 0;
             var hasActorHeight = false;
@@ -2949,8 +2951,21 @@ namespace GirlsWar
                 actorPositions.Add(actorKey + "@" + Vec(handle.transform.position));
                 if (actorHasBounds && camera != null)
                 {
-                    var rect = ScreenRectValue(camera, actorBounds);
+                    var rect = DiagnosticActorScreenRect(camera, handle, actorBounds);
                     actorRects.Add(rect);
+                    if (!hasDiagnosticScreenRect)
+                    {
+                        combinedDiagnosticScreenRect = rect;
+                        hasDiagnosticScreenRect = true;
+                    }
+                    else
+                    {
+                        combinedDiagnosticScreenRect = Rect.MinMaxRect(
+                            Mathf.Min(combinedDiagnosticScreenRect.xMin, rect.xMin),
+                            Mathf.Min(combinedDiagnosticScreenRect.yMin, rect.yMin),
+                            Mathf.Max(combinedDiagnosticScreenRect.xMax, rect.xMax),
+                            Mathf.Max(combinedDiagnosticScreenRect.yMax, rect.yMax));
+                    }
                     actorRectSummaries.Add(actorKey + "->" + handle.ResolvedActorId + ":" + RectString(rect));
                     actorHeightSummaries.Add(actorKey + "->" + handle.ResolvedActorId + "=" + rect.height.ToString("0.#") + "px");
                     if (!hasActorHeight)
@@ -2971,8 +2986,8 @@ namespace GirlsWar
             result.visualTuningVersion = VisualTuningVersion;
             result.visualLayoutSummary = "payload=" + configuredPayloadFileName + "/mapWidthUnits=" + VisualMapWidthUnits.ToString("0.##") + "/native-height-camera2.2-shadow-depth/standingSnapshot=" + configuredStandingSnapshotOnly;
             result.visualActorWorldBounds = hasBounds ? Vec(combined.center) + "|" + Vec(combined.size) : "";
-            result.visualActorScreenRect = hasBounds && camera != null ? ScreenRect(camera, combined) : "";
-            result.visualActorScreenAreaRatio = hasBounds && camera != null ? ScreenAreaRatio(camera, combined) : 0f;
+            result.visualActorScreenRect = hasDiagnosticScreenRect ? RectString(combinedDiagnosticScreenRect) : "";
+            result.visualActorScreenAreaRatio = hasDiagnosticScreenRect ? ScreenAreaRatio(combinedDiagnosticScreenRect) : 0f;
             result.visualActorWorldPositions = string.Join(";", actorPositions.ToArray());
             result.visualActorScreenRects = string.Join(";", actorRectSummaries.ToArray());
             result.visualActorHeightSummary = string.Join(";", actorHeightSummaries.ToArray());
@@ -3178,6 +3193,75 @@ namespace GirlsWar
             return RectString(ScreenRectValue(camera, bounds));
         }
 
+        private static Rect DiagnosticActorScreenRect(Camera camera, BattleRuntimeActorHandle handle, Bounds rendererBounds)
+        {
+            if (camera == null)
+                return new Rect();
+            if (handle == null)
+                return ScreenRectValue(camera, rendererBounds);
+
+            var actorId = handle.ResolvedActorId != 0
+                ? handle.ResolvedActorId
+                : handle.RequestedHeroDid != 0
+                    ? handle.RequestedHeroDid
+                    : handle.RequestedHeroId;
+            var foot = camera.WorldToScreenPoint(handle.transform.position);
+            var height = DiagnosticActorHeightPixels(actorId, handle.IsOurHero);
+            var width = height * DiagnosticActorWidthRatio(actorId, handle.IsOurHero);
+            var centerX = foot.x + DiagnosticActorCenterOffsetPixels(actorId);
+            var bottom = foot.y + DiagnosticActorBottomOffsetPixels(actorId, handle.IsOurHero);
+            return Rect.MinMaxRect(centerX - width * 0.5f, bottom, centerX + width * 0.5f, bottom + height);
+        }
+
+        private static float DiagnosticActorHeightPixels(int actorId, bool isOurHero)
+        {
+            switch (actorId)
+            {
+                case 1001: return 225f;
+                case 1002: return 222f;
+                case 1003: return 230f;
+                case 1005: return 238f;
+                case 1010: return 240f;
+                case 3001: return 205f;
+                case 3006: return 176f;
+                default: return isOurHero ? 222f : 185f;
+            }
+        }
+
+        private static float DiagnosticActorWidthRatio(int actorId, bool isOurHero)
+        {
+            switch (actorId)
+            {
+                case 1001: return 0.82f;
+                case 1002: return 0.62f;
+                case 1003: return 0.7f;
+                case 1005: return 0.78f;
+                case 1010: return 0.64f;
+                case 3001: return 0.72f;
+                case 3006: return 0.58f;
+                default: return isOurHero ? 0.68f : 0.62f;
+            }
+        }
+
+        private static float DiagnosticActorCenterOffsetPixels(int actorId)
+        {
+            switch (actorId)
+            {
+                case 1001: return -6f;
+                case 3001: return 8f;
+                default: return 0f;
+            }
+        }
+
+        private static float DiagnosticActorBottomOffsetPixels(int actorId, bool isOurHero)
+        {
+            if (!isOurHero)
+                return -10f;
+            if (actorId == 1010)
+                return 8f;
+            return actorId == 1005 ? -16f : -12f;
+        }
+
         private static Rect ScreenRectValue(Camera camera, Bounds bounds)
         {
             var min = new Vector2(float.MaxValue, float.MaxValue);
@@ -3201,8 +3285,13 @@ namespace GirlsWar
         private static float ScreenAreaRatio(Camera camera, Bounds bounds)
         {
             var rect = ScreenRectValue(camera, bounds);
+            return ScreenAreaRatio(rect);
+        }
+
+        private static float ScreenAreaRatio(Rect rect)
+        {
             var area = Mathf.Max(0f, rect.width) * Mathf.Max(0f, rect.height);
-            return area / Mathf.Max(1f, Screen.width * Screen.height);
+            return area / Mathf.Max(1f, CaptureWidth * CaptureHeight);
         }
 
         private static void ComputeVisualOverlap(List<Rect> rects, out float maxOverlapRatio, out float minCenterDistancePixels, out int overlappedPairCount)

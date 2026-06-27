@@ -1430,6 +1430,7 @@ namespace GirlsWar
                     skeletonAnimation.AnimationName = animationName;
                 skeletonAnimation.Update(0f);
                 skeletonAnimation.LateUpdate();
+                StabilizeReferenceActorLoop(skeletonAnimation, actorId);
 
                 handle.SkeletonAnimation = skeletonAnimation;
                 handle.MeshRenderer = handle.GetComponent<MeshRenderer>();
@@ -1512,6 +1513,7 @@ namespace GirlsWar
                 skeletonAnimation.AnimationName = animationName;
             skeletonAnimation.Update(0f);
             skeletonAnimation.LateUpdate();
+            StabilizeReferenceActorLoop(skeletonAnimation, actorId);
 
             handle.SkeletonAnimation = skeletonAnimation;
             handle.MeshRenderer = skeletonAnimation.GetComponent<MeshRenderer>() ?? instance.GetComponentInChildren<MeshRenderer>(true);
@@ -1719,6 +1721,14 @@ namespace GirlsWar
             if (animations != null && animations.Count > 0 && animations.Items[0] != null)
                 return animations.Items[0].Name;
             return "";
+        }
+
+        private static void StabilizeReferenceActorLoop(SkeletonAnimation skeletonAnimation, int actorId)
+        {
+            if (skeletonAnimation == null)
+                return;
+            if (actorId == 1005)
+                skeletonAnimation.timeScale = 0f;
         }
 
         private static void AttachTexturedQuad(BattleRuntimeActorHandle handle, int actorId, bool isOurHero)
