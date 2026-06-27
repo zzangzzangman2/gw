@@ -958,6 +958,9 @@ namespace GirlsWar
             result.runtimeActorQuadFallbackCount = BattleRuntimeSpineActorFactory.QuadFallbackCount;
             result.runtimeActorMissingAssetCount = BattleRuntimeSpineActorFactory.MissingAssetCount;
             result.runtimeMonsterModelResolveCount = BattleRuntimeSpineActorFactory.MonsterModelResolveCount;
+            result.runtimeMonsterModelExactResolveCount = BattleRuntimeSpineActorFactory.MonsterModelExactResolveCount;
+            result.runtimeMonsterModelBaseFallbackResolveCount = BattleRuntimeSpineActorFactory.MonsterModelBaseFallbackResolveCount;
+            result.runtimeMonsterModelMissingExactRowCount = BattleRuntimeSpineActorFactory.MonsterModelMissingExactRowCount;
             result.runtimePreviewActionCount = BattleRuntimeSpineActorFactory.PreviewActionCount;
             result.runtimePreviewCompletedCount = BattleRuntimeSpineActorFactory.PreviewCompletedCount;
             result.runtimePreviewMissCount = BattleRuntimeSpineActorFactory.PreviewMissCount;
@@ -980,6 +983,7 @@ namespace GirlsWar
             result.runtimeSourceSkillPrefabFailureCount = BattleRuntimeSpineActorFactory.SourceSkillPrefabFailureCount;
             result.runtimeActorLastSummary = BattleRuntimeSpineActorFactory.LastSummary;
             result.runtimeMonsterModelResolveSummary = BattleRuntimeSpineActorFactory.MonsterModelResolveSummary;
+            result.runtimeMonsterModelResolveTrace = BattleRuntimeSpineActorFactory.MonsterModelResolveTraceSummary;
             result.runtimeSkillSpecSummary = BattleRuntimeSpineActorFactory.LastSkillSpecSummary;
             result.runtimeSkillSpecTrace = BattleRuntimeSpineActorFactory.SkillSpecTraceSummary;
             result.runtimeSourceSkillPrefabSummary = BattleRuntimeSpineActorFactory.LastSourceSkillPrefabSummary;
@@ -1142,6 +1146,9 @@ namespace GirlsWar
                 " runtimeQuadFallback=" + result.runtimeActorQuadFallbackCount +
                 " runtimeMissingAsset=" + result.runtimeActorMissingAssetCount +
                 " runtimeMonsterModelResolve=" + result.runtimeMonsterModelResolveCount +
+                " runtimeMonsterExact=" + result.runtimeMonsterModelExactResolveCount +
+                " runtimeMonsterBaseFallback=" + result.runtimeMonsterModelBaseFallbackResolveCount +
+                " runtimeMonsterMissingExactRow=" + result.runtimeMonsterModelMissingExactRowCount +
                 " runtimePreview=" + result.runtimePreviewActionCount +
                 " runtimePreviewDone=" + result.runtimePreviewCompletedCount +
                 " runtimePreviewMiss=" + result.runtimePreviewMissCount +
@@ -1914,6 +1921,9 @@ namespace GirlsWar
             public int runtimeActorQuadFallbackCount;
             public int runtimeActorMissingAssetCount;
             public int runtimeMonsterModelResolveCount;
+            public int runtimeMonsterModelExactResolveCount;
+            public int runtimeMonsterModelBaseFallbackResolveCount;
+            public int runtimeMonsterModelMissingExactRowCount;
             public int runtimePreviewActionCount;
             public int runtimePreviewCompletedCount;
             public int runtimePreviewMissCount;
@@ -1936,6 +1946,7 @@ namespace GirlsWar
             public int runtimeSourceSkillPrefabFailureCount;
             public string runtimeActorLastSummary;
             public string runtimeMonsterModelResolveSummary;
+            public string runtimeMonsterModelResolveTrace;
             public string runtimeSkillSpecSummary;
             public string runtimeSkillSpecTrace;
             public string runtimeSourceSkillPrefabSummary;

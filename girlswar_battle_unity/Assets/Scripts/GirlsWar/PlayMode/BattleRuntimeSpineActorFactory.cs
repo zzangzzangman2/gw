@@ -172,6 +172,9 @@ namespace GirlsWar
         public static int QuadFallbackCount { get; private set; }
         public static int MissingAssetCount { get; private set; }
         public static int MonsterModelResolveCount { get; private set; }
+        public static int MonsterModelExactResolveCount { get; private set; }
+        public static int MonsterModelBaseFallbackResolveCount { get; private set; }
+        public static int MonsterModelMissingExactRowCount { get; private set; }
         public static int PreviewActionCount { get; private set; }
         public static int PreviewCompletedCount { get; private set; }
         public static int PreviewMissCount { get; private set; }
@@ -194,6 +197,7 @@ namespace GirlsWar
         public static int SourceSkillPrefabFailureCount { get; private set; }
         public static string LastSummary { get; private set; } = "";
         public static string MonsterModelResolveSummary { get; private set; } = "";
+        public static string MonsterModelResolveTraceSummary { get; private set; } = "";
         public static string LastSkillSpecSummary { get; private set; } = "";
         public static string SkillSpecTraceSummary { get { return string.Join("|", SkillSpecTrace.ToArray()); } }
         public static string LastSourceSkillPrefabSummary { get; private set; } = "";
@@ -208,6 +212,9 @@ namespace GirlsWar
             QuadFallbackCount = 0;
             MissingAssetCount = 0;
             MonsterModelResolveCount = 0;
+            MonsterModelExactResolveCount = 0;
+            MonsterModelBaseFallbackResolveCount = 0;
+            MonsterModelMissingExactRowCount = 0;
             PreviewActionCount = 0;
             PreviewCompletedCount = 0;
             PreviewMissCount = 0;
@@ -234,6 +241,7 @@ namespace GirlsWar
             SourceSkillPrefabTrace.Clear();
             LastSummary = "";
             MonsterModelResolveSummary = "";
+            MonsterModelResolveTraceSummary = "";
             LastSkillSpecSummary = "";
             LastSourceSkillPrefabSummary = "";
         }
@@ -275,10 +283,22 @@ namespace GirlsWar
 
             if (!exact && resolved != 0)
                 VisualFallbackCount++;
-            if (!string.IsNullOrEmpty(resolveReason) && resolveReason.StartsWith("monster_model:", StringComparison.Ordinal))
+            if (!string.IsNullOrEmpty(resolveReason) && resolveReason.StartsWith("monster_model_", StringComparison.Ordinal))
             {
                 MonsterModelResolveCount++;
                 MonsterModelResolveSummary = resolveReason;
+                if (!string.IsNullOrEmpty(MonsterModelResolveTraceSummary))
+                    MonsterModelResolveTraceSummary += "|";
+                MonsterModelResolveTraceSummary += resolveReason;
+                if (resolveReason.StartsWith("monster_model_exact:", StringComparison.Ordinal))
+                {
+                    MonsterModelExactResolveCount++;
+                }
+                else if (resolveReason.StartsWith("monster_model_base_fallback:", StringComparison.Ordinal))
+                {
+                    MonsterModelBaseFallbackResolveCount++;
+                    MonsterModelMissingExactRowCount++;
+                }
             }
 
             var spineFailure = "";
@@ -1148,7 +1168,8 @@ namespace GirlsWar
             {
                 if (modelId != 0 && HasImportedActor(modelId))
                 {
-                    resolveReason = "monster_model:" + requested + "->" + sourceMonsterId + "/" + sourceTable + "/model_" + modelId;
+                    var resolveKind = sourceMonsterId == requested ? "monster_model_exact:" : "monster_model_base_fallback:";
+                    resolveReason = resolveKind + requested + "->" + sourceMonsterId + "/" + sourceTable + "/model_" + modelId;
                     return modelId;
                 }
             }

@@ -11,7 +11,8 @@
 - active lineup: payload 3v3 only, no visual-only extras
 - actors: `attach=6`, `prefab=5`, `spine=5`, `missingAsset=1`
 - missing exact actor: `1036` (`DTHero`/`DTmodel` say model/prefab `1036`, but local `battleprefabandres/1036` is absent)
-- visual fallbacks: `3` enemy monster model resolves (`1100111 -> 3001`, `1100112/1100113 -> 3006`)
+- visual fallbacks: `3` enemy monster model resolves
+- enemy monster rows: `exact=1` (`1100111 -> 1100111/model_3001`), `baseFallback=2` (`1100112/1100113 -> 1100110/model_3006`), `missingExactRow=2`
 - source skill prefabs: `72` instantiated, `72` directors played, `72` renderable source-backed common effects, `0` playable-loaded resources
 - source common effects: `72` attached from `commonprefabsandres/skilleffect/commonskillprefabsandres1.assetbundle`
 - latest visual overlap metric: `maxOverlap=0`, `overlapPairs=0`, `minCenterPx=162.5`
@@ -22,12 +23,12 @@ Latest capture check: the bad full-size `rolebigsetpainting` portrait is gone fr
 ## Naver Lounge Character Matching
 
 - public source inspected: `https://game.naver.com/lounge/girlwars/board/34?page=1&order=new`
-- source scrape: `reports/battle/NAVER_LOUNGE_GIRL_ART_BOARD34_TITLES.json`
-- match outputs: `reports/battle/NAVER_LOUNGE_CHARACTER_MATCHES.json`, `reports/battle/NAVER_LOUNGE_CHARACTER_MATCHES.csv`
-- public rows matched: `114 / 114`
-- rows with local battle actor bundles: `41`
-- rows with local name/head/art but no local battle actor bundle: `73`
-- detail pages require lounge join in the current browser session, so this pass used only publicly visible board-list titles and local extracted data.
+- source scrape: `reports/characters/naver_lounge_art/NAVER_LOUNGE_GIRLWARS_ART_FEED_20260627.json`
+- image candidate outputs: `reports/characters/naver_lounge_art/NAVER_LOUNGE_GIRLWARS_ART_MATCH_20260627.json`, `reports/characters/naver_lounge_art/NAVER_LOUNGE_GIRLWARS_ART_MATCH_20260627.csv`
+- public rows collected: `114 / 114`
+- local art candidates compared: `335` (`T_ditu`/`Painting` images from extracted bundles)
+- automatic visual match confidence: `strong=0`, `medium=3`, `candidate=111`
+- important boundary: this is a reference/candidate matrix for manual follow-up, not an authoritative character-ID map yet. The next pass should use higher-grade visual embedding or manual review before importing actors from it.
 
 Important boundary: `1025` and `1050` are valid matched/source-backed extraction candidates, but they are not active battle actors in the current U0-B 3v3 proof lane. They should be re-added only through the payload or a dedicated roster-expansion test, not as visual-only extras.
 
@@ -44,6 +45,7 @@ Important boundary: `1025` and `1050` are valid matched/source-backed extraction
 - runtime preview proof: `runtimePreview=29`, `runtimePreviewMiss=0`
 - source skill proof: `29` instantiated, `29` renderable source-backed common effects, `0` playable-loaded resources
 - actors: `attach=6`, `prefab=5`, `spine=5`, `missingAsset=1`
+- enemy monster rows: `exact=1`, `baseFallback=2`, `missingExactRow=2`
 - overlap: `maxOverlap=0`, `overlapPairs=0`
 - missing script / no script asset log count in latest RealAttack log: `0`
 
@@ -55,8 +57,9 @@ Important boundary: `1025` and `1050` are valid matched/source-backed extraction
 - Split the `YouYou.SkillPlayable.*` and `YouYou.CommonPlayable.*` stubs into Unity file-name-matched script assets, including `PlayVideoTrack` and `SimulateAtkHit*`, so Timeline prefab logs no longer report missing referenced scripts.
 - Added a source-backed common skill-effect bridge: when the original skill prefab has no renderers, it attaches the matching `pinkspeedline`/`redspeedline`/`yellospeedline` prefab from the aggregate common effect bundle. This moves `runtimeSourceSkillPrefabRenderableCount` from `0` to `72` in PlayMode and `29` in RealAttack.
 - Added separate `skinMissingActorCount` and `skinVisualFallbackCount` counters so missing assets and real visual fallbacks do not collapse into the same number.
+- Split runtime monster model diagnostics into exact/base-fallback/missing-exact-row counters. `1100111` is exact; `1100112/1100113` remain visible through the source-backed `1100110 -> model_3006` group row and are no longer presented as exact matches.
 - Added battlehead sprites to the temporary HUD cards/top badges from extracted `battlehead*.png` files.
-- Added the Naver Lounge character match JSON/CSV and a battlehead contact sheet for follow-up extraction choices.
+- Added the Naver Lounge source-art feed scrape and pHash candidate match matrix for follow-up extraction choices.
 
 ## Current Boundary / SOS
 
