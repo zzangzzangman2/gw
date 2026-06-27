@@ -244,29 +244,6 @@ namespace GirlsWar
             bool isMonster,
             object prefabId)
         {
-            return AttachActorInternal(heroId, heroDid, parent, isOurHero, isMonster, prefabId, true);
-        }
-
-        public static BattleRuntimeActorHandle AttachVisualOnlyActor(
-            int heroId,
-            int heroDid,
-            Transform parent,
-            bool isOurHero,
-            bool isMonster,
-            object prefabId)
-        {
-            return AttachActorInternal(heroId, heroDid, parent, isOurHero, isMonster, prefabId, false);
-        }
-
-        private static BattleRuntimeActorHandle AttachActorInternal(
-            int heroId,
-            int heroDid,
-            Transform parent,
-            bool isOurHero,
-            bool isMonster,
-            object prefabId,
-            bool registerForReplay)
-        {
             AttachCount++;
 
             var requested = heroDid != 0 ? heroDid : heroId;
@@ -290,9 +267,11 @@ namespace GirlsWar
                 ? ""
                 : !string.IsNullOrEmpty(resolveReason)
                     ? resolveReason
-                    : "visual_fallback:" + requested + "->" + resolved;
+                    : resolved == 0
+                        ? "missing_actor_asset:" + requested
+                        : "visual_fallback:" + requested + "->" + resolved;
 
-            if (!exact)
+            if (!exact && resolved != 0)
                 VisualFallbackCount++;
             if (!string.IsNullOrEmpty(resolveReason) && resolveReason.StartsWith("monster_model:", StringComparison.Ordinal))
             {
@@ -306,8 +285,7 @@ namespace GirlsWar
                 PrefabCount++;
                 SpineCount++;
                 handle.IsSpineActor = true;
-                if (registerForReplay)
-                    RegisterHandle(handle);
+                RegisterHandle(handle);
                 LastSummary = BuildSummary(handle);
                 return handle;
             }
@@ -316,8 +294,7 @@ namespace GirlsWar
             {
                 SpineCount++;
                 handle.IsSpineActor = true;
-                if (registerForReplay)
-                    RegisterHandle(handle);
+                RegisterHandle(handle);
                 LastSummary = BuildSummary(handle);
                 return handle;
             }
@@ -329,12 +306,14 @@ namespace GirlsWar
             {
                 MissingAssetCount++;
                 handle.FallbackReason = AppendReason(handle.FallbackReason, "no_imported_actor_asset");
+                RegisterHandle(handle);
+                LastSummary = BuildSummary(handle);
+                return handle;
             }
 
             AttachTexturedQuad(handle, resolved, isOurHero);
             QuadFallbackCount++;
-            if (registerForReplay)
-                RegisterHandle(handle);
+            RegisterHandle(handle);
             LastSummary = BuildSummary(handle);
             return handle;
         }
@@ -1083,20 +1062,14 @@ namespace GirlsWar
             if (heroId != 0) yield return heroId;
 
             var requested = heroDid != 0 ? heroDid : heroId;
+            if (isMonster)
+                yield break;
+
             if (requested >= 1100000)
             {
                 var baseId = requested - (requested % 10);
                 yield return baseId + 1;
                 yield return baseId;
-            }
-
-            if (isMonster)
-                yield return 1100111;
-            else
-            {
-                if (requested == 1036) yield return 1034;
-                yield return 1034;
-                yield return 1002;
             }
         }
 

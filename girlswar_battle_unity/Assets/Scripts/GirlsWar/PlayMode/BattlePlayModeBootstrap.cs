@@ -25,8 +25,7 @@ namespace GirlsWar
         private const int CaptureHeight = 570;
         private const string VisualTuningVersion = "battle90-reference-scale-v4";
         private const float VisualMapWidthUnits = 12.85f;
-        private static readonly int[] HudCardActorIds = { 1002, 1025, 1036, 1034, 1050 };
-        private static readonly int[] ReferenceLineupExtraActorIds = { 1025, 1050 };
+        private static readonly int[] HudCardActorIds = { 1036, 1002, 1034, 0, 0 };
         private static readonly Dictionary<string, Sprite> RuntimeUiSpriteCache = new Dictionary<string, Sprite>(StringComparer.OrdinalIgnoreCase);
 
         [SerializeField] private int frameBudget = 240;
@@ -559,7 +558,13 @@ namespace GirlsWar
                               end
                               inc_global('BATTLE90_SKIN_RUNTIME_COUNT')
                               if actor.IsSpineActor then inc_global('BATTLE90_SKIN_SPINE_COUNT') else inc_global('BATTLE90_SKIN_QUAD_FALLBACK_COUNT') end
-                              if not actor.IsExactActor then inc_global('BATTLE90_SKIN_VISUAL_FALLBACK_COUNT') end
+                              if not actor.IsExactActor then
+                                if tonumber(actor.ResolvedActorId) == 0 then
+                                  inc_global('BATTLE90_SKIN_MISSING_ACTOR_COUNT')
+                                else
+                                  inc_global('BATTLE90_SKIN_VISUAL_FALLBACK_COUNT')
+                                end
+                              end
                               rawset(_G, 'BATTLE90_SKIN_LAST_ACTOR', tostring(hero_did)..'/'..tostring(hero_id)..'->'..tostring(actor.ResolvedActorId)..':'..tostring(actor.FallbackReason))
                             end
                             rawset(HeroCtrl, '__battle90_skin_patch', true)
@@ -841,8 +846,6 @@ namespace GirlsWar
                 if (string.IsNullOrEmpty(failStage))
                 {
                     MaterializeOpenedHeroSprites(env, stages, ref failStage, ref err);
-                    if (string.IsNullOrEmpty(failStage))
-                        MaterializeReferenceLineupExtras(result, stages);
                 }
 
             }
@@ -945,6 +948,7 @@ namespace GirlsWar
             try { result.skinRuntimeCount = env.Global.Get<int>("BATTLE90_SKIN_RUNTIME_COUNT"); } catch { }
             try { result.skinSpineCount = env.Global.Get<int>("BATTLE90_SKIN_SPINE_COUNT"); } catch { }
             try { result.skinQuadFallbackCount = env.Global.Get<int>("BATTLE90_SKIN_QUAD_FALLBACK_COUNT"); } catch { }
+            try { result.skinMissingActorCount = env.Global.Get<int>("BATTLE90_SKIN_MISSING_ACTOR_COUNT"); } catch { }
             try { result.skinVisualFallbackCount = env.Global.Get<int>("BATTLE90_SKIN_VISUAL_FALLBACK_COUNT"); } catch { }
             try { result.skinLastActor = env.Global.Get<string>("BATTLE90_SKIN_LAST_ACTOR") ?? ""; } catch { }
             result.runtimeActorAttachCount = BattleRuntimeSpineActorFactory.AttachCount;
@@ -1076,6 +1080,7 @@ namespace GirlsWar
                       ' skinRuntime='..tostring(rawget(_G,'BATTLE90_SKIN_RUNTIME_COUNT') or 0)..
                       ' skinSpine='..tostring(rawget(_G,'BATTLE90_SKIN_SPINE_COUNT') or 0)..
                       ' skinQuadFallback='..tostring(rawget(_G,'BATTLE90_SKIN_QUAD_FALLBACK_COUNT') or 0)..
+                      ' skinMissing='..tostring(rawget(_G,'BATTLE90_SKIN_MISSING_ACTOR_COUNT') or 0)..
                       ' skinVisualFallback='..tostring(rawget(_G,'BATTLE90_SKIN_VISUAL_FALLBACK_COUNT') or 0)..
                       ' monsterFallback='..tostring(rawget(_G,'BATTLE90_MONSTER_BASE_FALLBACK_COUNT') or 0)..
                       ' readyTeams='..tostring(PNB and rawget(PNB,'ReadyTeamCount'))..
@@ -1789,60 +1794,6 @@ namespace GirlsWar
             sprite.BattleStationIndex = index;
         }
 
-        private static int MaterializeReferenceLineupExtras(Result result, List<string> stages)
-        {
-            var stage = GameObject.Find("B90_VisualStage");
-            if (stage == null)
-                return 0;
-
-            var root = new GameObject("B90_ReferenceLineupExtras");
-            root.transform.SetParent(stage.transform, false);
-
-            var added = 0;
-            var labels = new List<string>();
-            for (var i = 0; i < ReferenceLineupExtraActorIds.Length; i++)
-            {
-                var actorId = ReferenceLineupExtraActorIds[i];
-                var slot = i + 3;
-                var anchor = new GameObject("B90_ReferenceLineup_" + actorId);
-                anchor.transform.SetParent(root.transform, false);
-                anchor.transform.position = ReferenceLineupExtraPosition(actorId, slot);
-                anchor.transform.localRotation = Quaternion.identity;
-                anchor.transform.localScale = Vector3.one;
-
-                var handle = BattleRuntimeSpineActorFactory.AttachVisualOnlyActor(
-                    900000 + actorId,
-                    actorId,
-                    anchor.transform,
-                    true,
-                    false,
-                    actorId);
-                if (handle == null)
-                    continue;
-
-                added++;
-                labels.Add(actorId + "->" + handle.ResolvedActorId + (handle.IsExactActor ? "" : "/fallback"));
-            }
-
-            if (result != null)
-            {
-                result.referenceLineupExtraActorCount = added;
-                result.referenceLineupExtraActorIds = string.Join(",", labels.ToArray());
-            }
-            stages?.Add("referenceLineupExtras:" + added + ":" + string.Join(",", labels.ToArray()));
-            return added;
-        }
-
-        private static Vector3 ReferenceLineupExtraPosition(int actorId, int fallbackSlot)
-        {
-            switch (actorId)
-            {
-                case 1025: return new Vector3(-1.28f, -1.1f, 0f);
-                case 1050: return new Vector3(-0.82f, -2.22f, 0f);
-                default: return PreviewFormationPosition(true, fallbackSlot);
-            }
-        }
-
         private static Vector3 PreviewFormationPosition(bool isOurHero, int slot)
         {
             var positions = isOurHero
@@ -1951,6 +1902,7 @@ namespace GirlsWar
             public int skinRuntimeCount;
             public int skinSpineCount;
             public int skinQuadFallbackCount;
+            public int skinMissingActorCount;
             public int skinVisualFallbackCount;
             public string skinLastActor;
             public int runtimeActorAttachCount;
@@ -1979,8 +1931,6 @@ namespace GirlsWar
             public int runtimeSourceSkillPrefabPlayableLoadCount;
             public int runtimeSourceSkillPrefabWorldCutinSuppressedCount;
             public int runtimeSourceSkillPrefabFailureCount;
-            public int referenceLineupExtraActorCount;
-            public string referenceLineupExtraActorIds;
             public string runtimeActorLastSummary;
             public string runtimeMonsterModelResolveSummary;
             public string runtimeSkillSpecSummary;
