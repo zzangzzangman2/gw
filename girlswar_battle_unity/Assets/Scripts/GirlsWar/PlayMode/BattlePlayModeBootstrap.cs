@@ -23,7 +23,7 @@ namespace GirlsWar
         private static bool configuredUseAttackTaskPreview = true;
         private const int CaptureWidth = 1280;
         private const int CaptureHeight = 570;
-        private const string VisualTuningVersion = "battle90-reference-scale-v4";
+        private const string VisualTuningVersion = "battle90-source-hud-v1";
         private const float VisualMapWidthUnits = 12.85f;
         private static readonly int[] HudCardActorIds = { 1036, 1002, 1034, 0, 0 };
         private static readonly Dictionary<string, Sprite> RuntimeUiSpriteCache = new Dictionary<string, Sprite>(StringComparer.OrdinalIgnoreCase);
@@ -1172,6 +1172,9 @@ namespace GirlsWar
                 " visualMaxOverlap=" + result.visualActorMaxOverlapRatio.ToString("0.######") +
                 " visualOverlapPairs=" + result.visualActorOverlappedPairCount +
                 " visualMinCenterPx=" + result.visualActorMinCenterDistancePixels.ToString("0.##") +
+                " visualHudSlots=" + result.visualHudSkillSlotCount +
+                " visualHudSourceSprites=" + result.visualHudSourceSpriteCount +
+                " visualHudDamage=" + result.visualHudDamageTextCount +
                 " captureNonDark=" + result.captureNonDarkSampleCount;
         }
 
@@ -1270,40 +1273,102 @@ namespace GirlsWar
             scaler.referenceResolution = new Vector2(CaptureWidth, CaptureHeight);
             canvasGo.AddComponent<GraphicRaycaster>();
 
-            CreatePanel(canvasGo.transform, "TopLeftNamePlate", new Vector2(258f, -28f), new Vector2(350f, 28f), new Color(0.09f, 0.07f, 0.08f, 0.72f), TextAnchor.UpperLeft);
-            CreatePanel(canvasGo.transform, "TopRightNamePlate", new Vector2(-258f, -28f), new Vector2(350f, 28f), new Color(0.09f, 0.07f, 0.08f, 0.72f), TextAnchor.UpperRight);
-            CreateHeadBadge(canvasGo.transform, "TopLeftHead1036", 1036, new Vector2(244f, -28f), TextAnchor.UpperLeft);
-            CreateHeadBadge(canvasGo.transform, "TopRightHead3001", 3001, new Vector2(-244f, -28f), TextAnchor.UpperRight);
-            CreateBattleGauge(canvasGo.transform, "OurHpGauge", new Vector2(298f, -48f), true, 0.72f);
-            CreateBattleGauge(canvasGo.transform, "EnemyHpGauge", new Vector2(-298f, -48f), false, 0.64f);
-            CreateLabel(canvasGo.transform, "VsLabel", "VS", new Vector2(0f, -43f), new Vector2(62f, 34f), 25, new Color(1f, 0.78f, 0.2f, 1f), TextAnchor.MiddleCenter);
-            CreateLabel(canvasGo.transform, "RoundLabel", "2/20", new Vector2(214f, -76f), new Vector2(72f, 24f), 16, Color.white, TextAnchor.MiddleCenter);
+            CreateTopCombatantHud(canvasGo.transform, "Our", 1036, "\uc131\uc8fc13918", "Lv.12", new Vector2(332f, -10f), true, 0.72f);
+            CreateTopCombatantHud(canvasGo.transform, "Enemy", 3001, "\uc815\uc608\uc790\uac1d", "Lv.6", new Vector2(-332f, -10f), false, 0.64f);
+            CreateSpritePanel(canvasGo.transform, "VsLabel", new Vector2(0f, -36f), new Vector2(56f, 56f),
+                LoadRestoreHudSprite("download_artsources_uispriteres_uibattle.assetbundle_1943103129572916828_multilang_T_duijue.png"),
+                new Color(1f, 0.74f, 0.18f, 1f), TextAnchor.UpperCenter, true);
+            CreateLabel(canvasGo.transform, "RoundLabel", "\ud134 1/20", new Vector2(0f, -72f), new Vector2(86f, 24f), 16, Color.white, TextAnchor.MiddleCenter, TextAnchor.UpperCenter);
+            CreateLabel(canvasGo.transform, "WaveLabel", "WAVE 1/2", new Vector2(140f, -76f), new Vector2(110f, 22f), 13, Color.white, TextAnchor.MiddleCenter, TextAnchor.UpperCenter);
 
+            CreatePanel(canvasGo.transform, "SkillCardDock", new Vector2(0f, 10f), new Vector2(472f, 92f), new Color(0.02f, 0.016f, 0.016f, 0.58f), TextAnchor.LowerCenter);
             for (var i = 0; i < 5; i++)
                 CreateSkillCard(canvasGo.transform, i);
 
-            CreateRoundButton(canvasGo.transform, "AutoButton", "AUTO", new Vector2(-36f, 78f), 58f, new Color(0.97f, 0.9f, 0.58f, 0.92f));
-            CreateRoundButton(canvasGo.transform, "SpeedButton", "x2", new Vector2(-36f, 22f), 54f, new Color(1f, 0.72f, 0.18f, 0.95f));
-            CreateRoundButton(canvasGo.transform, "SkipButton", ">>", new Vector2(-36f, -34f), 54f, new Color(1f, 0.75f, 0.2f, 0.9f));
+            CreateDamageNumber(canvasGo.transform, "DamagePopup_1303", "1303", new Vector2(132f, -16f));
+            CreateSideButton(canvasGo.transform, "AutoButton", "\uc790\ub3d9", "download_artsources_uispriteres_uibattle.assetbundle_-3599735801722606192_btn_zidong_on.png", new Vector2(-18f, 78f));
+            CreateSideButton(canvasGo.transform, "SkipButton", "\uc2a4\ud0b5", "download_artsources_uispriteres_uibattle.assetbundle_-668223970973157061_btn_Skip.png", new Vector2(-18f, 18f));
+            CreateSideButton(canvasGo.transform, "SpeedButton", "x2", "download_artsources_uispriteres_uibattle.assetbundle_988442367583666760_btn_x2_1.png", new Vector2(-18f, -42f));
         }
 
         private static void CreateBattleGauge(Transform parent, string name, Vector2 anchoredPosition, bool left, float fill)
         {
-            var root = CreatePanel(parent, name, anchoredPosition, new Vector2(248f, 16f), new Color(0.06f, 0.05f, 0.05f, 0.86f), left ? TextAnchor.UpperLeft : TextAnchor.UpperRight);
-            CreatePanel(root.transform, name + "_Hp", Vector2.zero, new Vector2(238f * Mathf.Clamp01(fill), 8f), new Color(0.35f, 0.95f, 0.25f, 0.95f), TextAnchor.MiddleLeft);
-            CreatePanel(root.transform, name + "_Energy", new Vector2(0f, -8f), new Vector2(188f, 4f), new Color(1f, 0.72f, 0.2f, 0.88f), TextAnchor.MiddleLeft);
+            var root = CreatePanel(parent, name, anchoredPosition, new Vector2(230f, 32f), new Color(0f, 0f, 0f, 0f), left ? TextAnchor.UpperLeft : TextAnchor.UpperRight);
+            var bg = CreateSpritePanel(root.transform, name + "_HpBg", Vector2.zero, new Vector2(228f, 30f),
+                LoadRestoreHudSprite("download_artsources_uispriteres_uibattle.assetbundle_6533218848006892483_ba_xuecao_bg1.png"),
+                new Color(0.06f, 0.05f, 0.05f, 0.88f), TextAnchor.MiddleCenter, false);
+            var hp = CreateSpritePanel(bg.transform, name + "_HpFill", Vector2.zero, new Vector2(222f, 28f),
+                LoadRestoreHudSprite("download_artsources_uispriteres_uibattle.assetbundle_7955921820150679454_ba_xuecao_bg3.png"),
+                new Color(0.35f, 0.95f, 0.25f, 0.95f), TextAnchor.MiddleCenter, false);
+            var hpImage = hp.GetComponent<Image>();
+            hpImage.type = Image.Type.Filled;
+            hpImage.fillMethod = Image.FillMethod.Horizontal;
+            hpImage.fillOrigin = left ? 0 : 1;
+            hpImage.fillAmount = Mathf.Clamp01(fill);
+
+            var furyBg = CreateSpritePanel(root.transform, name + "_FuryBg", new Vector2(0f, -16f), new Vector2(182f, 8f),
+                LoadRestoreHudSprite("download_artsources_uispriteres_uibattle.assetbundle_-3873075873417088988_bg_nuqitiao2.png"),
+                new Color(0.08f, 0.06f, 0.04f, 0.9f), TextAnchor.MiddleCenter, false);
+            var fury = CreateSpritePanel(furyBg.transform, name + "_FuryFill", Vector2.zero, new Vector2(178f, 6f),
+                LoadRestoreHudSprite("download_artsources_uispriteres_uibattle.assetbundle_4489750091565491747_im_nuqitiao.png"),
+                new Color(1f, 0.72f, 0.2f, 0.95f), TextAnchor.MiddleCenter, false);
+            var furyImage = fury.GetComponent<Image>();
+            furyImage.type = Image.Type.Filled;
+            furyImage.fillMethod = Image.FillMethod.Horizontal;
+            furyImage.fillOrigin = left ? 0 : 1;
+            furyImage.fillAmount = left ? 0.92f : 0.68f;
+        }
+
+        private static void CreateTopCombatantHud(Transform parent, string prefix, int actorId, string name, string level, Vector2 badgePosition, bool left, float hpFill)
+        {
+            var anchor = left ? TextAnchor.UpperLeft : TextAnchor.UpperRight;
+            var badge = CreateSpritePanel(parent, prefix + "HeadFrame", badgePosition, new Vector2(72f, 72f),
+                LoadRestoreHudSprite("download_artsources_uispriteres_uicommonother.assetbundle_9178922751791648479_BG_touxiangkuang.png"),
+                new Color(0.08f, 0.06f, 0.08f, 0.86f), anchor, true);
+            var image = CreatePanel(badge.transform, prefix + "HeadImage", Vector2.zero, new Vector2(54f, 54f), new Color(0.2f, 0.18f, 0.24f, 0.96f), TextAnchor.MiddleCenter);
+            SetImageSprite(image, HeadSpriteForActor(actorId), new Color(0.22f, 0.18f, 0.24f, 0.95f), true);
+
+            var textX = left ? badgePosition.x + 78f : badgePosition.x - 78f;
+            var nameAnchor = left ? TextAnchor.UpperLeft : TextAnchor.UpperRight;
+            CreateLabel(parent, prefix + "NameLabel", name, new Vector2(textX, -12f), new Vector2(206f, 24f), 18, Color.white, left ? TextAnchor.MiddleLeft : TextAnchor.MiddleRight, nameAnchor);
+            CreateLabel(parent, prefix + "LevelLabel", level, new Vector2(left ? badgePosition.x + 20f : badgePosition.x - 20f, -72f), new Vector2(74f, 22f), 16, Color.white, TextAnchor.MiddleCenter, anchor);
+            CreateBattleGauge(parent, prefix + "HpGauge", new Vector2(left ? badgePosition.x + 76f : badgePosition.x - 76f, -38f), left, hpFill);
         }
 
         private static void CreateSkillCard(Transform parent, int index)
         {
-            var x = -156f + index * 78f;
+            var x = -176f + index * 88f;
             var actorId = HudCardActorIds[Mathf.Clamp(index, 0, HudCardActorIds.Length - 1)];
-            var card = CreatePanel(parent, "SkillCard_" + index, new Vector2(x, 26f), new Vector2(68f, 74f), new Color(0.1f, 0.08f, 0.12f, 0.9f), TextAnchor.LowerCenter);
-            CreatePanel(card.transform, "SkillCard_" + index + "_Frame", new Vector2(0f, 11f), new Vector2(58f, 52f), index == 4 ? new Color(0.78f, 0.55f, 0.18f, 0.96f) : new Color(0.45f, 0.24f, 0.72f, 0.96f), TextAnchor.MiddleCenter);
-            var portrait = CreatePanel(card.transform, "SkillCard_" + index + "_Portrait", new Vector2(0f, 11f), new Vector2(52f, 46f), new Color(0.72f, 0.58f, 0.96f, 0.92f), TextAnchor.MiddleCenter);
-            SetImageSprite(portrait, HeadSpriteForActor(actorId), new Color(0.72f, 0.58f, 0.96f, 0.92f));
-            CreateLabel(card.transform, "SkillCard_" + index + "_Rank", "SR", new Vector2(-18f, 34f), new Vector2(34f, 18f), 15, new Color(0.94f, 0.2f, 1f, 1f), TextAnchor.MiddleCenter);
-            CreatePanel(card.transform, "SkillCard_" + index + "_Ready", new Vector2(0f, -24f), new Vector2(54f, 9f), index == 4 ? new Color(1f, 0.76f, 0.2f, 0.95f) : new Color(0.3f, 0.75f, 1f, 0.9f), TextAnchor.MiddleCenter);
+            var card = CreatePanel(parent, "SkillCard_" + index, new Vector2(x, 18f), new Vector2(78f, 90f), new Color(0f, 0f, 0f, 0f), TextAnchor.LowerCenter);
+            CreateSpritePanel(card.transform, "SkillCard_" + index + "_Frame", new Vector2(0f, 45f), new Vector2(72f, 72f),
+                LoadRestoreHudSprite("download_artsources_uispriteres_uicommonother.assetbundle_4043117267995258628_BG_zhuangbeikuang_3.png"),
+                actorId == 0 ? new Color(0.07f, 0.055f, 0.08f, 0.78f) : new Color(0.45f, 0.24f, 0.72f, 0.96f),
+                TextAnchor.LowerCenter, false);
+
+            if (actorId == 0)
+            {
+                var locked = CreatePanel(card.transform, "SkillCard_" + index + "_Locked", new Vector2(0f, 45f), new Vector2(62f, 62f), new Color(0.03f, 0.025f, 0.03f, 0.82f), TextAnchor.LowerCenter);
+                CreateSpritePanel(locked.transform, "SkillCard_" + index + "_LockIcon", Vector2.zero, new Vector2(22f, 22f),
+                    LoadRestoreHudSprite("download_artsources_uispriteres_uibattle.assetbundle_5634039594450520577_IC_lock.png"),
+                    new Color(0.35f, 0.32f, 0.4f, 0.9f), TextAnchor.MiddleCenter, true);
+                CreatePanel(card.transform, "SkillCard_" + index + "_FuryEmpty", new Vector2(0f, 8f), new Vector2(58f, 8f), new Color(0.12f, 0.09f, 0.08f, 0.75f), TextAnchor.LowerCenter);
+                return;
+            }
+
+            var portrait = CreatePanel(card.transform, "SkillCard_" + index + "_Portrait", new Vector2(0f, 47f), new Vector2(60f, 60f), new Color(0.16f, 0.12f, 0.2f, 0.96f), TextAnchor.LowerCenter);
+            SetImageSprite(portrait, HeroCardHeadSpriteForActor(actorId), new Color(0.18f, 0.14f, 0.22f, 0.95f), false);
+            CreateLabel(card.transform, "SkillCard_" + index + "_Rank", "SR", new Vector2(-25f, 75f), new Vector2(34f, 18f), 15, new Color(0.95f, 0.16f, 1f, 1f), TextAnchor.MiddleCenter);
+            CreateSpritePanel(card.transform, "SkillCard_" + index + "_FuryBg", new Vector2(0f, 8f), new Vector2(62f, 9f),
+                LoadRestoreHudSprite("download_artsources_uispriteres_uibattle.assetbundle_-3873075873417088988_bg_nuqitiao2.png"),
+                new Color(0.08f, 0.06f, 0.04f, 0.9f), TextAnchor.LowerCenter, false);
+            var fill = CreateSpritePanel(card.transform, "SkillCard_" + index + "_FuryFill", new Vector2(0f, 8f), new Vector2(58f, 7f),
+                LoadRestoreHudSprite("download_artsources_uispriteres_uibattle.assetbundle_4489750091565491747_im_nuqitiao.png"),
+                new Color(1f, 0.72f, 0.2f, 0.96f), TextAnchor.LowerCenter, false);
+            var fillImage = fill.GetComponent<Image>();
+            fillImage.type = Image.Type.Filled;
+            fillImage.fillMethod = Image.FillMethod.Horizontal;
+            fillImage.fillOrigin = 0;
+            fillImage.fillAmount = index == 0 ? 0.34f : (index == 1 ? 0.58f : 0.76f);
         }
 
         private static void CreateHeadBadge(Transform parent, string name, int actorId, Vector2 anchoredPosition, TextAnchor anchor)
@@ -1342,6 +1407,33 @@ namespace GirlsWar
             }
         }
 
+        private static Sprite HeroCardHeadSpriteForActor(int actorId)
+        {
+            switch (actorId)
+            {
+                case 1036:
+                    return LoadExtractedSprite("b_6ca02dad4f8af848", "S", "-1006758698391221614_head1036.png");
+                case 1002:
+                    return LoadExtractedSprite("b_6ca02dad4f8af848", "S", "-296058673418415307_head1002.png");
+                case 1034:
+                    return LoadExtractedSprite("b_6ca02dad4f8af848", "S", "401204702686331365_head1034.png");
+                default:
+                    return HeadSpriteForActor(actorId);
+            }
+        }
+
+        private static Sprite LoadRestoreHudSprite(string fileName)
+        {
+            var path = Path.GetFullPath(Path.Combine(
+                Application.dataPath,
+                "RestoreData",
+                "battle",
+                "PersistentHudSprites",
+                "BATTLE42",
+                fileName));
+            return LoadSpriteFromPath(path);
+        }
+
         private static Sprite LoadExtractedSprite(string bundleFolder, string imageFolder, string fileName)
         {
             var path = Path.GetFullPath(Path.Combine(
@@ -1356,6 +1448,11 @@ namespace GirlsWar
                 "images",
                 imageFolder,
                 fileName));
+            return LoadSpriteFromPath(path);
+        }
+
+        private static Sprite LoadSpriteFromPath(string path)
+        {
             if (RuntimeUiSpriteCache.TryGetValue(path, out var cached))
                 return cached;
             if (!File.Exists(path))
@@ -1365,7 +1462,7 @@ namespace GirlsWar
             }
 
             var texture = new Texture2D(2, 2, TextureFormat.RGBA32, false);
-            texture.name = Path.GetFileNameWithoutExtension(fileName) + "_Texture";
+            texture.name = Path.GetFileNameWithoutExtension(path) + "_Texture";
             if (!texture.LoadImage(File.ReadAllBytes(path)))
             {
                 RuntimeUiSpriteCache[path] = null;
@@ -1373,19 +1470,24 @@ namespace GirlsWar
             }
 
             var sprite = Sprite.Create(texture, new Rect(0, 0, texture.width, texture.height), new Vector2(0.5f, 0.5f), 100f);
-            sprite.name = Path.GetFileNameWithoutExtension(fileName) + "_Sprite";
+            sprite.name = Path.GetFileNameWithoutExtension(path) + "_Sprite";
             RuntimeUiSpriteCache[path] = sprite;
             return sprite;
         }
 
         private static void SetImageSprite(GameObject go, Sprite sprite, Color fallbackColor)
         {
+            SetImageSprite(go, sprite, fallbackColor, true);
+        }
+
+        private static void SetImageSprite(GameObject go, Sprite sprite, Color fallbackColor, bool preserveAspect)
+        {
             if (go == null)
                 return;
             var image = go.GetComponent<Image>();
             if (image == null)
                 return;
-            image.preserveAspect = true;
+            image.preserveAspect = preserveAspect;
             if (sprite == null)
             {
                 image.sprite = SolidSprite();
@@ -1397,10 +1499,43 @@ namespace GirlsWar
             image.color = Color.white;
         }
 
-        private static void CreateRoundButton(Transform parent, string name, string text, Vector2 anchoredPosition, float size, Color color)
+        private static GameObject CreateSpritePanel(Transform parent, string name, Vector2 anchoredPosition, Vector2 size, Sprite sprite, Color fallbackColor, TextAnchor anchor, bool preserveAspect)
         {
-            var go = CreatePanel(parent, name, anchoredPosition, new Vector2(size, size), color, TextAnchor.MiddleRight);
-            CreateLabel(go.transform, name + "_Text", text, Vector2.zero, new Vector2(size, size), 12, new Color(0.17f, 0.11f, 0.03f, 1f), TextAnchor.MiddleCenter);
+            var go = CreatePanel(parent, name, anchoredPosition, size, fallbackColor, anchor);
+            SetImageSprite(go, sprite, fallbackColor, preserveAspect);
+            return go;
+        }
+
+        private static void CreateSideButton(Transform parent, string name, string label, string spriteFileName, Vector2 anchoredPosition)
+        {
+            var go = CreateSpritePanel(parent, name, anchoredPosition, new Vector2(72f, 58f),
+                LoadRestoreHudSprite(spriteFileName), new Color(1f, 0.72f, 0.18f, 0.95f), TextAnchor.MiddleRight, true);
+            if (go.GetComponent<Image>().sprite == SolidSprite())
+                CreateLabel(go.transform, name + "_Text", label, Vector2.zero, new Vector2(62f, 24f), 13, new Color(0.17f, 0.11f, 0.03f, 1f), TextAnchor.MiddleCenter);
+        }
+
+        private static void CreateDamageNumber(Transform parent, string name, string text, Vector2 anchoredPosition)
+        {
+            CreateLabel(parent, name + "_Shadow", text, anchoredPosition + new Vector2(3f, -3f), new Vector2(112f, 40f), 30, new Color(0.08f, 0.055f, 0.04f, 0.86f), TextAnchor.MiddleCenter);
+            var go = new GameObject(name);
+            go.transform.SetParent(parent, false);
+            var rect = go.AddComponent<RectTransform>();
+            rect.anchorMin = new Vector2(0.5f, 0.5f);
+            rect.anchorMax = new Vector2(0.5f, 0.5f);
+            rect.pivot = new Vector2(0.5f, 0.5f);
+            rect.anchoredPosition = anchoredPosition;
+            rect.sizeDelta = new Vector2(112f, 40f);
+            var label = go.AddComponent<Text>();
+            label.text = text;
+            label.font = Resources.GetBuiltinResource<Font>("LegacyRuntime.ttf");
+            label.fontSize = 31;
+            label.resizeTextForBestFit = true;
+            label.resizeTextMinSize = 24;
+            label.resizeTextMaxSize = 31;
+            label.alignment = TextAnchor.MiddleCenter;
+            label.fontStyle = FontStyle.BoldAndItalic;
+            label.color = Color.white;
+            label.raycastTarget = false;
         }
 
         private static GameObject CreatePanel(Transform parent, string name, Vector2 anchoredPosition, Vector2 size, Color color, TextAnchor anchor)
@@ -1414,17 +1549,21 @@ namespace GirlsWar
             var image = go.AddComponent<Image>();
             image.sprite = SolidSprite();
             image.color = color;
+            image.raycastTarget = false;
             return go;
         }
 
         private static void CreateLabel(Transform parent, string name, string text, Vector2 anchoredPosition, Vector2 size, int fontSize, Color color, TextAnchor alignment)
         {
+            CreateLabel(parent, name, text, anchoredPosition, size, fontSize, color, alignment, TextAnchor.MiddleCenter);
+        }
+
+        private static void CreateLabel(Transform parent, string name, string text, Vector2 anchoredPosition, Vector2 size, int fontSize, Color color, TextAnchor alignment, TextAnchor anchor)
+        {
             var go = new GameObject(name);
             go.transform.SetParent(parent, false);
             var rect = go.AddComponent<RectTransform>();
-            rect.anchorMin = new Vector2(0.5f, 0.5f);
-            rect.anchorMax = new Vector2(0.5f, 0.5f);
-            rect.pivot = new Vector2(0.5f, 0.5f);
+            ApplyAnchor(rect, anchor);
             rect.anchoredPosition = anchoredPosition;
             rect.sizeDelta = size;
             var label = go.AddComponent<Text>();
@@ -1447,11 +1586,29 @@ namespace GirlsWar
                 rect.anchorMax = new Vector2(0f, 1f);
                 rect.pivot = new Vector2(0f, 1f);
             }
-            else if (anchor == TextAnchor.UpperRight || anchor == TextAnchor.MiddleRight)
+            else if (anchor == TextAnchor.UpperRight)
             {
-                rect.anchorMin = new Vector2(1f, anchor == TextAnchor.UpperRight ? 1f : 0.5f);
+                rect.anchorMin = new Vector2(1f, 1f);
+                rect.anchorMax = rect.anchorMin;
+                rect.pivot = new Vector2(1f, 1f);
+            }
+            else if (anchor == TextAnchor.UpperCenter)
+            {
+                rect.anchorMin = new Vector2(0.5f, 1f);
+                rect.anchorMax = rect.anchorMin;
+                rect.pivot = new Vector2(0.5f, 1f);
+            }
+            else if (anchor == TextAnchor.MiddleRight)
+            {
+                rect.anchorMin = new Vector2(1f, 0.5f);
                 rect.anchorMax = rect.anchorMin;
                 rect.pivot = new Vector2(1f, 0.5f);
+            }
+            else if (anchor == TextAnchor.MiddleLeft)
+            {
+                rect.anchorMin = new Vector2(0f, 0.5f);
+                rect.anchorMax = rect.anchorMin;
+                rect.pivot = new Vector2(0f, 0.5f);
             }
             else if (anchor == TextAnchor.LowerCenter)
             {
@@ -1544,6 +1701,65 @@ namespace GirlsWar
             result.visualActorWorldPositions = string.Join(";", actorPositions.ToArray());
             result.visualActorScreenRects = string.Join(";", actorRectSummaries.ToArray());
             ComputeVisualOverlap(actorRects, out result.visualActorMaxOverlapRatio, out result.visualActorMinCenterDistancePixels, out result.visualActorOverlappedPairCount);
+            CollectHudDiagnostics(result);
+        }
+
+        private static void CollectHudDiagnostics(Result result)
+        {
+            var hud = GameObject.Find("B90_ReferenceBattleHud");
+            if (hud == null)
+                return;
+
+            var images = hud.GetComponentsInChildren<Image>(true);
+            var sourceSprites = 0;
+            foreach (var image in images)
+            {
+                if (image != null && image.sprite != null && image.sprite != SolidSprite())
+                    sourceSprites++;
+            }
+
+            var rootSlots = 0;
+            var lockedSlots = 0;
+            var damageText = 0;
+            var gauges = 0;
+            var transforms = hud.GetComponentsInChildren<Transform>(true);
+            foreach (var transform in transforms)
+            {
+                if (transform == null)
+                    continue;
+                var objectName = transform.gameObject.name;
+                if (IsSkillCardRootName(objectName))
+                    rootSlots++;
+                if (objectName.IndexOf("_Locked", StringComparison.OrdinalIgnoreCase) >= 0)
+                    lockedSlots++;
+                if (string.Equals(objectName, "OurHpGauge", StringComparison.Ordinal) || string.Equals(objectName, "EnemyHpGauge", StringComparison.Ordinal))
+                    gauges++;
+
+                var text = transform.GetComponent<Text>();
+                if (text != null && text.text == "1303" && string.Equals(objectName, "DamagePopup_1303", StringComparison.Ordinal))
+                    damageText++;
+            }
+
+            result.visualHudImageCount = images.Length;
+            result.visualHudSourceSpriteCount = sourceSprites;
+            result.visualHudSkillSlotCount = rootSlots;
+            result.visualHudLockedSlotCount = lockedSlots;
+            result.visualHudDamageTextCount = damageText;
+            result.visualHudGaugeCount = gauges;
+            result.visualHudSummary = "sourceHudSprites=BATTLE42 slots=" + rootSlots + " locked=" + lockedSlots + " damage1303=" + damageText;
+        }
+
+        private static bool IsSkillCardRootName(string objectName)
+        {
+            const string prefix = "SkillCard_";
+            if (string.IsNullOrEmpty(objectName) || !objectName.StartsWith(prefix, StringComparison.Ordinal))
+                return false;
+            for (var i = prefix.Length; i < objectName.Length; i++)
+            {
+                if (!char.IsDigit(objectName[i]))
+                    return false;
+            }
+            return objectName.Length > prefix.Length;
         }
 
         private static void CaptureVisualEvidence(Result result, Camera camera)
@@ -1965,6 +2181,13 @@ namespace GirlsWar
             public float visualActorMaxOverlapRatio;
             public float visualActorMinCenterDistancePixels;
             public int visualActorOverlappedPairCount;
+            public int visualHudImageCount;
+            public int visualHudSourceSpriteCount;
+            public int visualHudSkillSlotCount;
+            public int visualHudLockedSlotCount;
+            public int visualHudDamageTextCount;
+            public int visualHudGaugeCount;
+            public string visualHudSummary;
             public string capturePath;
             public bool captureExists;
             public int captureBytes;
