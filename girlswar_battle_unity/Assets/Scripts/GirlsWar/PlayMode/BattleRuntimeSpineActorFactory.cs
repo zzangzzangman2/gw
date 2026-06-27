@@ -1832,16 +1832,16 @@ namespace GirlsWar
                 case 1036: return 2.45f;
                 case 1034: return 2.65f;
                 case 1001: return 2.0f;
-                case 1002: return 1.95f;
-                case 1003: return 2.0f;
+                case 1002: return 1.82f;
+                case 1003: return 2.08f;
                 case 1025: return 2.05f;
-                case 1005: return 16.5f;
-                case 1010: return 2.0f;
+                case 1005: return 1.96f;
+                case 1010: return 2.28f;
                 case 1029: return 1.9f;
                 case 1037: return 2.0f;
                 case 1050: return 2.05f;
-                case 3001: return 1.85f;
-                case 3006: return 1.62f;
+                case 3001: return 1.92f;
+                case 3006: return 1.82f;
                 default: return actorId >= 3000 ? 1.7f : 2.0f;
             }
         }

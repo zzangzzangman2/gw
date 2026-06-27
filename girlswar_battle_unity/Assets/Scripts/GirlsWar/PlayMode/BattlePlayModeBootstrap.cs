@@ -29,31 +29,36 @@ namespace GirlsWar
         private static int[] configuredHudCardActorIds = { 1036, 1002, 1034, 0, 0 };
         private const int CaptureWidth = 1280;
         private const int CaptureHeight = 570;
-        private const string VisualTuningVersion = "battle92-reference-roster-spacing-damage-v11";
+        private const string VisualTuningVersion = "battle92-source-formation-character-ratio-v16";
         private const float VisualMapWidthUnits = 12.85f;
         private static readonly int[] DefaultHudCardActorIds = { 1036, 1002, 1034, 0, 0 };
         private static readonly int[] RosterExpansionHudCardActorIds = { 1005, 1010, 1002, 1003, 1001 };
         private static readonly int[] StandingSnapshotEnemyActorIds = { 1100111, 1100112, 1100113 };
+        // AUTHORITATIVE world positions extracted from the real battle scene
+        // download/scenes/normalscene/gamescene_normalbattle.assetbundle (UnityPy):
+        // NormalBattleCtrl(0,-1.51) > OurTeam(world -4.0,-2.56) / EnemyTeam(world +4.0,-2.56),
+        // each with BattleStation_1..6 children. World = team_root + station_local. slot i = position i+1.
+        // All OUR stations x in [-6.65,-2.36] (left), ENEMY in [+2.35,+6.65] (right): center never crossed.
         private static readonly Vector3[] OurFormationSlotPositions =
         {
-            new Vector3(-3.65f, -0.25f, -0.02f),
-            new Vector3(-1.45f, -0.45f, 0f),
-            new Vector3(0.55f, -2.58f, -0.24f),
-            new Vector3(-1.65f, -2.45f, -0.12f),
-            new Vector3(-3.65f, -2.65f, -0.26f),
-            new Vector3(-0.45f, -1.55f, -0.28f),
+            new Vector3(-2.356f, -1.31f, 0.9f),  // pos1 BattleStation_1 (front, top)
+            new Vector3(-3.890f, -2.41f, -0.1f), // pos2 BattleStation_2 (front, mid)
+            new Vector3(-2.356f, -3.40f, -1.1f), // pos3 BattleStation_3 (front, bottom)
+            new Vector3(-5.319f, -1.00f, 1.0f),  // pos4 BattleStation_4 (back, top)
+            new Vector3(-6.649f, -2.41f, 0.0f),  // pos5 BattleStation_5 (back, mid)
+            new Vector3(-5.758f, -3.68f, -1.0f), // pos6 BattleStation_6 (back, bottom)
         };
         private static readonly Vector3[] EnemyFormationSlotPositions =
         {
-            new Vector3(1.2f, -0.35f, -0.02f),
-            new Vector3(2.45f, -1.62f, -0.1f),
-            new Vector3(3.45f, -2.65f, -0.26f),
-            new Vector3(2.15f, -2.48f, -0.3f),
-            new Vector3(4.55f, -0.52f, -0.08f),
-            new Vector3(5.0f, -1.82f, -0.32f),
+            new Vector3(2.351f, -1.31f, 0.9f),  // pos1 BattleStation_1
+            new Vector3(3.890f, -2.41f, -0.1f), // pos2 BattleStation_2
+            new Vector3(2.351f, -3.40f, -1.1f), // pos3 BattleStation_3
+            new Vector3(5.319f, -1.00f, 1.0f),  // pos4 BattleStation_4
+            new Vector3(6.608f, -2.41f, 0.0f),  // pos5 BattleStation_5
+            new Vector3(5.758f, -3.68f, -1.0f), // pos6 BattleStation_6
         };
-        private static readonly float[] OurFormationSlotScales = { 1f, 1f, 0.96f, 0.94f, 0.92f, 0.95f };
-        private static readonly float[] EnemyFormationSlotScales = { 0.74f, 0.68f, 0.72f, 0.68f, 0.74f, 0.68f };
+        private static readonly float[] OurFormationSlotScales = { 1f, 1f, 1f, 1f, 1f, 1f };
+        private static readonly float[] EnemyFormationSlotScales = { 0.72f, 0.72f, 0.72f, 0.72f, 0.72f, 0.72f };
         private static readonly Dictionary<string, Sprite> RuntimeUiSpriteCache = new Dictionary<string, Sprite>(StringComparer.OrdinalIgnoreCase);
         private static readonly Dictionary<string, string> RuntimeLocalizationCache = new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase);
         private static bool runtimeLocalizationCacheLoaded;
@@ -1327,9 +1332,12 @@ namespace GirlsWar
                 var isMonster = !handle.IsOurHero && (heroId < 0 || heroDid >= 1100000 || handle.ResolvedActorId >= 3000);
                 var slot = ResolvePayloadFormationSlot(payload, handle.IsOurHero, heroId, heroDid, isMonster, fallbackSlot);
                 handle.transform.SetParent(root.transform, true);
-                handle.transform.position = PreviewFormationPosition(handle.IsOurHero, slot);
+                var footPosition = PreviewFormationPosition(handle.IsOurHero, slot);
+                handle.transform.position = footPosition;
                 handle.transform.localRotation = Quaternion.identity;
                 var factor = NormalizeStandingSnapshotActorHeight(handle);
+                AlignActorBodyBottomToFormationFoot(handle, footPosition);
+                ApplyFormationRenderOrder(handle, slot);
                 handle.RememberBasePose();
 
                 var actorKey = handle.RequestedHeroDid != 0 ? handle.RequestedHeroDid : handle.RequestedHeroId;
@@ -1421,10 +1429,37 @@ namespace GirlsWar
             if (handle == null)
                 return 2.0f;
             if (!handle.IsOurHero)
-                return handle.ResolvedActorId == 3001 ? 2.25f : 2.05f;
-            if (handle.ResolvedActorId == 1002)
-                return 1.95f;
-            return 2.35f;
+                return handle.ResolvedActorId == 3001 ? 1.92f : 1.82f;
+
+            switch (handle.ResolvedActorId)
+            {
+                case 1001: return 2.02f;
+                case 1002: return 1.82f;
+                case 1003: return 2.08f;
+                case 1005: return 1.96f;
+                case 1010: return 2.28f;
+                default: return 1.95f;
+            }
+        }
+
+        private static void ApplyFormationRenderOrder(BattleRuntimeActorHandle handle, int slot)
+        {
+            if (handle == null)
+                return;
+
+            var row = Mathf.Clamp(slot, 0, 5) % 3;
+            var columnOffset = slot >= 3 ? -4 : 0;
+            var order = (handle.IsOurHero ? 120 : 110) + row * 20 + columnOffset;
+            var renderers = handle.GetComponentsInChildren<Renderer>(true);
+            foreach (var renderer in renderers)
+            {
+                if (renderer == null)
+                    continue;
+                if (string.Equals(renderer.gameObject.name, "B90_GroundShadow", StringComparison.Ordinal))
+                    renderer.sortingOrder = order - 8;
+                else
+                    renderer.sortingOrder = order;
+            }
         }
 
         private static bool TryCollectRendererBounds(GameObject root, out Bounds bounds)
@@ -1467,8 +1502,10 @@ namespace GirlsWar
             camera.clearFlags = CameraClearFlags.SolidColor;
             camera.backgroundColor = new Color(0.025f, 0.028f, 0.034f, 1f);
             camera.orthographic = true;
-            camera.orthographicSize = 2.2f;
-            camera.transform.position = new Vector3(-0.65f, -0.52f, -10f);
+            // Symmetric framing of the real scene formation (teams at world x=-4..+4, stations
+            // span x[-6.65,+6.65]). Centered at x=0 so our team sits left, enemy right, like the scene.
+            camera.orthographicSize = 3.0f;
+            camera.transform.position = new Vector3(0f, -1.6f, -10f);
             camera.transform.rotation = Quaternion.identity;
 
             var stage = GameObject.Find("B90_VisualStage");
@@ -1564,7 +1601,7 @@ namespace GirlsWar
                 CreateSkillCard(canvasGo.transform, i, cardCount);
 
             if (!configuredStandingSnapshotOnly)
-                CreateDamageNumber(canvasGo.transform, "DamagePopup_Dynamic", initial.DamageText, new Vector2(132f, -16f));
+                CreateDamageNumber(canvasGo.transform, "DamagePopup_Dynamic", initial.DamageText, initial.DamagePosition);
             CreateSideButton(canvasGo.transform, "AutoButton", "\uc790\ub3d9", "download_artsources_uispriteres_uibattle.assetbundle_-3599735801722606192_btn_zidong_on.png", new Vector2(-18f, 78f));
             CreateSideButton(canvasGo.transform, "SkipButton", "\uc2a4\ud0b5", "download_artsources_uispriteres_uibattle.assetbundle_-668223970973157061_btn_Skip.png", new Vector2(-18f, 18f));
             CreateSideButton(canvasGo.transform, "SpeedButton", "x2", "download_artsources_uispriteres_uibattle.assetbundle_988442367583666760_btn_x2_1.png", new Vector2(-18f, -42f));
@@ -1812,7 +1849,7 @@ namespace GirlsWar
 
         private static void CreateDamageNumber(Transform parent, string name, string text, Vector2 anchoredPosition)
         {
-            CreateLabel(parent, name + "_Shadow", text, anchoredPosition + new Vector2(3f, -3f), new Vector2(112f, 40f), 30, new Color(0.08f, 0.055f, 0.04f, 0.86f), TextAnchor.MiddleCenter);
+            CreateLabel(parent, name + "_Shadow", text, anchoredPosition + new Vector2(2f, -2f), new Vector2(104f, 32f), 26, new Color(0.08f, 0.055f, 0.04f, 0.86f), TextAnchor.MiddleCenter);
             var go = new GameObject(name);
             go.transform.SetParent(parent, false);
             var rect = go.AddComponent<RectTransform>();
@@ -1820,14 +1857,14 @@ namespace GirlsWar
             rect.anchorMax = new Vector2(0.5f, 0.5f);
             rect.pivot = new Vector2(0.5f, 0.5f);
             rect.anchoredPosition = anchoredPosition;
-            rect.sizeDelta = new Vector2(112f, 40f);
+            rect.sizeDelta = new Vector2(104f, 32f);
             var label = go.AddComponent<Text>();
             label.text = text;
             label.font = Resources.GetBuiltinResource<Font>("LegacyRuntime.ttf");
-            label.fontSize = 31;
+            label.fontSize = 27;
             label.resizeTextForBestFit = true;
-            label.resizeTextMinSize = 24;
-            label.resizeTextMaxSize = 31;
+            label.resizeTextMinSize = 20;
+            label.resizeTextMaxSize = 27;
             label.alignment = TextAnchor.MiddleCenter;
             label.fontStyle = FontStyle.BoldAndItalic;
             label.color = Color.white;
@@ -1944,6 +1981,8 @@ namespace GirlsWar
             private Text waveLabel;
             private Text damage;
             private Text damageShadow;
+            private RectTransform damageRect;
+            private RectTransform damageShadowRect;
             private Image ourHpFill;
             private Image enemyHpFill;
             private int localFrame;
@@ -1978,6 +2017,8 @@ namespace GirlsWar
                 waveLabel = TextByName(root, "WaveLabel");
                 damage = TextByName(root, "DamagePopup_Dynamic");
                 damageShadow = TextByName(root, "DamagePopup_Dynamic_Shadow");
+                damageRect = damage != null ? damage.GetComponent<RectTransform>() : null;
+                damageShadowRect = damageShadow != null ? damageShadow.GetComponent<RectTransform>() : null;
                 ourHpFill = ImageByName(root, "OurHpGauge_HpFill");
                 enemyHpFill = ImageByName(root, "EnemyHpGauge_HpFill");
             }
@@ -1997,6 +2038,7 @@ namespace GirlsWar
                 SetText(waveLabel, hudFrame.WaveText);
                 SetFill(ourHpFill, hudFrame.OurHpFill);
                 SetFill(enemyHpFill, hudFrame.EnemyHpFill);
+                SetDamagePosition(hudFrame.DamagePosition);
                 SetDamageText(damage, damageShadow, hudFrame.ShowDamage ? hudFrame.DamageText : "");
 
                 if (previousOurHp >= 0f && Mathf.Abs(previousOurHp - hudFrame.OurHpFill) > 0.0005f)
@@ -2009,6 +2051,14 @@ namespace GirlsWar
                 previousOurHp = hudFrame.OurHpFill;
                 previousEnemyHp = hudFrame.EnemyHpFill;
                 UpdateCount++;
+            }
+
+            private void SetDamagePosition(Vector2 anchoredPosition)
+            {
+                if (damageRect != null)
+                    damageRect.anchoredPosition = anchoredPosition;
+                if (damageShadowRect != null)
+                    damageShadowRect.anchoredPosition = anchoredPosition + new Vector2(2f, -2f);
             }
 
             public void CopyDiagnostics(Result result)
@@ -2152,6 +2202,7 @@ namespace GirlsWar
                 var enemyCurrent = Mathf.RoundToInt(Mathf.Lerp(enemyStart, enemyTarget, smooth));
                 var damageValue = DamageValueForWave(wave);
                 var showDamage = !configuredStandingSnapshotOnly && damageValue > 0 && waveT > 0.16f;
+                var damagePosition = DamagePositionForWave(waveIndex);
 
                 return new BattleHudFrame
                 {
@@ -2172,11 +2223,22 @@ namespace GirlsWar
                     DamageValue = damageValue,
                     DamageText = damageValue > 0 ? damageValue.ToString() : "",
                     DamageSource = damageValue > 0 ? "payload.waveData[" + waveIndex + "].heroStatistics.outputDmg" : "none",
+                    DamagePosition = damagePosition,
                     ShowDamage = showDamage,
                     Summary = "player=" + OurName + "/Lv" + OurLevel + "/hp=" + ourCurrent + "/" + ourMax +
                               " enemy=" + EnemyName + "/Lv" + EnemyLevel + "/hp=" + enemyCurrent + "/" + enemyMax +
                               " wave=" + (waveIndex + 1) + "/" + waveCount + " dmg=" + damageValue
                 };
+            }
+
+            private static Vector2 DamagePositionForWave(int waveIndex)
+            {
+                switch (Mathf.Abs(waveIndex) % 3)
+                {
+                    case 0: return new Vector2(196f, 122f);
+                    case 1: return new Vector2(182f, 92f);
+                    default: return new Vector2(206f, 116f);
+                }
             }
         }
 
@@ -2199,6 +2261,7 @@ namespace GirlsWar
             public int DamageValue;
             public string DamageText;
             public string DamageSource;
+            public Vector2 DamagePosition;
             public bool ShowDamage;
             public string Summary;
         }
@@ -2894,6 +2957,7 @@ namespace GirlsWar
             var combined = new Bounds();
             var rendererCount = 0;
             var actorRects = new List<Rect>();
+            var actorOverlapRects = new List<Rect>();
             var actorRectSummaries = new List<string>();
             var actorHeightSummaries = new List<string>();
             var actorAnimationSummaries = new List<string>();
@@ -2953,6 +3017,7 @@ namespace GirlsWar
                 {
                     var rect = DiagnosticActorScreenRect(camera, handle, actorBounds);
                     actorRects.Add(rect);
+                    actorOverlapRects.Add(DiagnosticActorOverlapRect(camera, handle));
                     if (!hasDiagnosticScreenRect)
                     {
                         combinedDiagnosticScreenRect = rect;
@@ -2996,7 +3061,7 @@ namespace GirlsWar
             result.visualActorShadowCount = actorShadowCount;
             result.visualActorAnimatedCount = actorAnimatedCount;
             result.visualActorAnimationSummary = string.Join(";", actorAnimationSummaries.ToArray());
-            ComputeVisualOverlap(actorRects, out result.visualActorMaxOverlapRatio, out result.visualActorMinCenterDistancePixels, out result.visualActorOverlappedPairCount);
+            ComputeVisualOverlap(actorOverlapRects, out result.visualActorMaxOverlapRatio, out result.visualActorMinCenterDistancePixels, out result.visualActorOverlappedPairCount);
             CollectHudDiagnostics(result);
         }
 
@@ -3213,33 +3278,38 @@ namespace GirlsWar
             return Rect.MinMaxRect(centerX - width * 0.5f, bottom, centerX + width * 0.5f, bottom + height);
         }
 
+        private static Rect DiagnosticActorOverlapRect(Camera camera, BattleRuntimeActorHandle handle)
+        {
+            if (camera == null || handle == null)
+                return new Rect();
+            var foot = camera.WorldToScreenPoint(handle.transform.position);
+            var width = handle.IsOurHero ? 80f : 86f;
+            var height = handle.IsOurHero ? 66f : 72f;
+            var centerY = foot.y + height * 0.5f;
+            return Rect.MinMaxRect(foot.x - width * 0.5f, centerY - height * 0.5f, foot.x + width * 0.5f, centerY + height * 0.5f);
+        }
+
         private static float DiagnosticActorHeightPixels(int actorId, bool isOurHero)
         {
+            if (isOurHero && actorId < 3000)
+                return 226f;
             switch (actorId)
             {
-                case 1001: return 225f;
-                case 1002: return 222f;
-                case 1003: return 230f;
-                case 1005: return 238f;
-                case 1010: return 240f;
-                case 3001: return 205f;
-                case 3006: return 176f;
-                default: return isOurHero ? 222f : 185f;
+                case 3001: return 208f;
+                case 3006: return 208f;
+                default: return 208f;
             }
         }
 
         private static float DiagnosticActorWidthRatio(int actorId, bool isOurHero)
         {
+            if (isOurHero && actorId < 3000)
+                return 0.66f;
             switch (actorId)
             {
-                case 1001: return 0.82f;
-                case 1002: return 0.62f;
-                case 1003: return 0.7f;
-                case 1005: return 0.78f;
-                case 1010: return 0.64f;
                 case 3001: return 0.72f;
-                case 3006: return 0.58f;
-                default: return isOurHero ? 0.68f : 0.62f;
+                case 3006: return 0.62f;
+                default: return 0.62f;
             }
         }
 
@@ -3257,9 +3327,7 @@ namespace GirlsWar
         {
             if (!isOurHero)
                 return -10f;
-            if (actorId == 1010)
-                return 8f;
-            return actorId == 1005 ? -16f : -12f;
+            return -12f;
         }
 
         private static Rect ScreenRectValue(Camera camera, Bounds bounds)
@@ -3413,7 +3481,92 @@ namespace GirlsWar
                 }
             }
 
+            ApplyRuntimeFormationActorPose(payload);
+
             try { env.Global.Set<string, object>("BATTLE90_LUA_HERO_SPRITE", null); } catch { }
+        }
+
+        private static void ApplyRuntimeFormationActorPose(BattlePayload payload)
+        {
+            var handles = UnityEngine.Object.FindObjectsOfType<BattleRuntimeActorHandle>();
+            if (handles == null || handles.Length == 0)
+                return;
+
+            Array.Sort(handles, (a, b) => StandingSnapshotSortKey(a).CompareTo(StandingSnapshotSortKey(b)));
+
+            var ourSlot = 0;
+            var enemySlot = 0;
+            foreach (var handle in handles)
+            {
+                if (handle == null)
+                    continue;
+
+                var fallbackSlot = handle.IsOurHero ? ourSlot++ : enemySlot++;
+                var heroId = handle.RequestedHeroId;
+                var heroDid = handle.RequestedHeroDid != 0 ? handle.RequestedHeroDid : handle.ResolvedActorId;
+                var isMonster = !handle.IsOurHero && (heroId < 0 || heroDid >= 1100000 || handle.ResolvedActorId >= 3000);
+                var slot = ResolvePayloadFormationSlot(payload, handle.IsOurHero, heroId, heroDid, isMonster, fallbackSlot);
+                var footPosition = PreviewFormationPosition(handle.IsOurHero, slot);
+
+                handle.transform.position = footPosition;
+                handle.transform.localRotation = Quaternion.identity;
+                AlignActorBodyBottomToFormationFoot(handle, footPosition);
+                ApplyFormationRenderOrder(handle, slot);
+                handle.RememberBasePose();
+            }
+        }
+
+        private static void AlignActorBodyBottomToFormationFoot(BattleRuntimeActorHandle handle, Vector3 footPosition)
+        {
+            if (handle == null)
+                return;
+
+            if (handle.SkeletonAnimation != null)
+            {
+                handle.SkeletonAnimation.Update(0f);
+                handle.SkeletonAnimation.LateUpdate();
+            }
+
+            if (!TryCollectActorBodyBounds(handle, out var bounds))
+                return;
+
+            var delta = footPosition.y - bounds.min.y;
+            var position = handle.transform.position;
+            handle.transform.position = new Vector3(footPosition.x, position.y + delta, footPosition.z);
+
+            if (handle.GroundShadowRenderer != null)
+                handle.GroundShadowRenderer.transform.position = footPosition + new Vector3(0f, 0.035f, 0.12f);
+        }
+
+        private static bool TryCollectActorBodyBounds(BattleRuntimeActorHandle handle, out Bounds bounds)
+        {
+            bounds = new Bounds();
+            if (handle == null)
+                return false;
+
+            var hasBounds = false;
+            var renderers = handle.GetComponentsInChildren<Renderer>(true);
+            foreach (var renderer in renderers)
+            {
+                if (renderer == null || !renderer.enabled || !renderer.gameObject.activeInHierarchy)
+                    continue;
+                if (handle.GroundShadowRenderer != null && renderer == handle.GroundShadowRenderer)
+                    continue;
+                if (string.Equals(renderer.gameObject.name, "B90_GroundShadow", StringComparison.Ordinal))
+                    continue;
+
+                if (!hasBounds)
+                {
+                    bounds = renderer.bounds;
+                    hasBounds = true;
+                }
+                else
+                {
+                    bounds.Encapsulate(renderer.bounds);
+                }
+            }
+
+            return hasBounds;
         }
 
         private static void ApplyPreviewFormationPosition(YouYou.LuaHeroSprite sprite, int slot)
@@ -3429,9 +3582,11 @@ namespace GirlsWar
         private static Vector3 PreviewFormationPosition(bool isOurHero, int slot)
         {
             var positions = isOurHero ? OurFormationSlotPositions : EnemyFormationSlotPositions;
-
-            var index = Mathf.Clamp(slot, 0, positions.Length - 1);
-            return positions[index];
+            var pos = positions[Mathf.Clamp(slot, 0, positions.Length - 1)];
+            // HARD GUARD: our team stays left of center, enemy right — no path may cross the middle.
+            if (isOurHero) pos.x = Mathf.Min(pos.x, -2.0f);
+            else           pos.x = Mathf.Max(pos.x,  2.0f);
+            return pos;
         }
 
         private static float PreviewFormationScale(bool isOurHero, int slot)
