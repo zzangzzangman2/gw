@@ -23,8 +23,11 @@ namespace GirlsWar
         private static bool configuredUseAttackTaskPreview = true;
         private const int CaptureWidth = 1280;
         private const int CaptureHeight = 570;
-        private const string VisualTuningVersion = "battle90-no-overlap-v2";
+        private const string VisualTuningVersion = "battle90-reference-scale-v4";
         private const float VisualMapWidthUnits = 12.85f;
+        private static readonly int[] HudCardActorIds = { 1002, 1025, 1036, 1034, 1050 };
+        private static readonly int[] ReferenceLineupExtraActorIds = { 1025, 1050 };
+        private static readonly Dictionary<string, Sprite> RuntimeUiSpriteCache = new Dictionary<string, Sprite>(StringComparer.OrdinalIgnoreCase);
 
         [SerializeField] private int frameBudget = 240;
 
@@ -838,6 +841,8 @@ namespace GirlsWar
                 if (string.IsNullOrEmpty(failStage))
                 {
                     MaterializeOpenedHeroSprites(env, stages, ref failStage, ref err);
+                    if (string.IsNullOrEmpty(failStage))
+                        MaterializeReferenceLineupExtras(result, stages);
                 }
 
             }
@@ -955,10 +960,25 @@ namespace GirlsWar
             result.runtimeSourceSkillSpecResolveCount = BattleRuntimeSpineActorFactory.SourceSkillSpecResolveCount;
             result.runtimeSkillTimelineBlockedCount = BattleRuntimeSpineActorFactory.SkillTimelineBlockedCount;
             result.runtimeSkillHitEffectCount = BattleRuntimeSpineActorFactory.HitEffectCount;
+            result.runtimeSourceSkillPrefabAttemptCount = BattleRuntimeSpineActorFactory.SourceSkillPrefabAttemptCount;
+            result.runtimeSourceSkillPrefabLoadCount = BattleRuntimeSpineActorFactory.SourceSkillPrefabLoadCount;
+            result.runtimeSourceSkillPrefabInstantiateCount = BattleRuntimeSpineActorFactory.SourceSkillPrefabInstantiateCount;
+            result.runtimeSourceSkillPrefabRenderableCount = BattleRuntimeSpineActorFactory.SourceSkillPrefabRenderableCount;
+            result.runtimeSourceSkillPrefabRendererTotalCount = BattleRuntimeSpineActorFactory.SourceSkillPrefabRendererTotalCount;
+            result.runtimeSourceSkillPrefabParticlePlayCount = BattleRuntimeSpineActorFactory.SourceSkillPrefabParticlePlayCount;
+            result.runtimeSourceSkillPrefabAnimatorPlayCount = BattleRuntimeSpineActorFactory.SourceSkillPrefabAnimatorPlayCount;
+            result.runtimeSourceSkillPrefabDirectorCount = BattleRuntimeSpineActorFactory.SourceSkillPrefabDirectorCount;
+            result.runtimeSourceSkillPrefabDirectorPlayedCount = BattleRuntimeSpineActorFactory.SourceSkillPrefabDirectorPlayedCount;
+            result.runtimeSourceSkillPrefabDirectorBlockedCount = BattleRuntimeSpineActorFactory.SourceSkillPrefabDirectorBlockedCount;
+            result.runtimeSourceSkillPrefabPlayableLoadCount = BattleRuntimeSpineActorFactory.SourceSkillPrefabPlayableLoadCount;
+            result.runtimeSourceSkillPrefabWorldCutinSuppressedCount = BattleRuntimeSpineActorFactory.SourceSkillPrefabWorldCutinSuppressedCount;
+            result.runtimeSourceSkillPrefabFailureCount = BattleRuntimeSpineActorFactory.SourceSkillPrefabFailureCount;
             result.runtimeActorLastSummary = BattleRuntimeSpineActorFactory.LastSummary;
             result.runtimeMonsterModelResolveSummary = BattleRuntimeSpineActorFactory.MonsterModelResolveSummary;
             result.runtimeSkillSpecSummary = BattleRuntimeSpineActorFactory.LastSkillSpecSummary;
             result.runtimeSkillSpecTrace = BattleRuntimeSpineActorFactory.SkillSpecTraceSummary;
+            result.runtimeSourceSkillPrefabSummary = BattleRuntimeSpineActorFactory.LastSourceSkillPrefabSummary;
+            result.runtimeSourceSkillPrefabTrace = BattleRuntimeSpineActorFactory.SourceSkillPrefabTraceSummary;
             try { result.monsterBaseFallbackCount = env.Global.Get<int>("BATTLE90_MONSTER_BASE_FALLBACK_COUNT"); } catch { }
             try { result.defineLoadOk = env.Global.Get<bool>("BATTLE90_DEFINE_LOAD_OK"); } catch { }
             try { result.enumSnapshot = env.Global.Get<string>("BATTLE90_ENUM_SNAPSHOT") ?? ""; } catch { }
@@ -1121,7 +1141,12 @@ namespace GirlsWar
                 " runtimePreviewMiss=" + result.runtimePreviewMissCount +
                 " runtimeSourceSkillSpec=" + result.runtimeSourceSkillSpecResolveCount +
                 " runtimeSkillTimelineBlocked=" + result.runtimeSkillTimelineBlockedCount +
-                " runtimeHitEffect=" + result.runtimeSkillHitEffectCount;
+                " runtimeHitEffect=" + result.runtimeSkillHitEffectCount +
+                " sourceSkillPrefabInst=" + result.runtimeSourceSkillPrefabInstantiateCount +
+                " sourceSkillPrefabRenderable=" + result.runtimeSourceSkillPrefabRenderableCount +
+                " sourceSkillDirectorPlayed=" + result.runtimeSourceSkillPrefabDirectorPlayedCount +
+                " sourceSkillDirectorBlocked=" + result.runtimeSourceSkillPrefabDirectorBlockedCount +
+                " sourceSkillWorldCutinSuppressed=" + result.runtimeSourceSkillPrefabWorldCutinSuppressedCount;
         }
 
         private static void AppendVisualDiagnostics(Result result)
@@ -1150,8 +1175,8 @@ namespace GirlsWar
             camera.clearFlags = CameraClearFlags.SolidColor;
             camera.backgroundColor = new Color(0.025f, 0.028f, 0.034f, 1f);
             camera.orthographic = true;
-            camera.orthographicSize = 2.86f;
-            camera.transform.position = new Vector3(0f, -0.58f, -10f);
+            camera.orthographicSize = 2.55f;
+            camera.transform.position = new Vector3(0f, -0.5f, -10f);
             camera.transform.rotation = Quaternion.identity;
 
             var stage = GameObject.Find("B90_VisualStage");
@@ -1233,6 +1258,8 @@ namespace GirlsWar
 
             CreatePanel(canvasGo.transform, "TopLeftNamePlate", new Vector2(258f, -28f), new Vector2(350f, 28f), new Color(0.09f, 0.07f, 0.08f, 0.72f), TextAnchor.UpperLeft);
             CreatePanel(canvasGo.transform, "TopRightNamePlate", new Vector2(-258f, -28f), new Vector2(350f, 28f), new Color(0.09f, 0.07f, 0.08f, 0.72f), TextAnchor.UpperRight);
+            CreateHeadBadge(canvasGo.transform, "TopLeftHead1036", 1036, new Vector2(244f, -28f), TextAnchor.UpperLeft);
+            CreateHeadBadge(canvasGo.transform, "TopRightHead3001", 3001, new Vector2(-244f, -28f), TextAnchor.UpperRight);
             CreateBattleGauge(canvasGo.transform, "OurHpGauge", new Vector2(298f, -48f), true, 0.72f);
             CreateBattleGauge(canvasGo.transform, "EnemyHpGauge", new Vector2(-298f, -48f), false, 0.64f);
             CreateLabel(canvasGo.transform, "VsLabel", "VS", new Vector2(0f, -43f), new Vector2(62f, 34f), 25, new Color(1f, 0.78f, 0.2f, 1f), TextAnchor.MiddleCenter);
@@ -1241,9 +1268,9 @@ namespace GirlsWar
             for (var i = 0; i < 5; i++)
                 CreateSkillCard(canvasGo.transform, i);
 
-            CreateRoundButton(canvasGo.transform, "AutoButton", "AUTO", new Vector2(-40f, 76f), 46f, new Color(0.97f, 0.9f, 0.58f, 0.92f));
-            CreateRoundButton(canvasGo.transform, "SpeedButton", "x2", new Vector2(-40f, 28f), 42f, new Color(1f, 0.72f, 0.18f, 0.95f));
-            CreateRoundButton(canvasGo.transform, "SkipButton", ">>", new Vector2(-40f, -20f), 42f, new Color(1f, 0.75f, 0.2f, 0.9f));
+            CreateRoundButton(canvasGo.transform, "AutoButton", "AUTO", new Vector2(-36f, 78f), 58f, new Color(0.97f, 0.9f, 0.58f, 0.92f));
+            CreateRoundButton(canvasGo.transform, "SpeedButton", "x2", new Vector2(-36f, 22f), 54f, new Color(1f, 0.72f, 0.18f, 0.95f));
+            CreateRoundButton(canvasGo.transform, "SkipButton", ">>", new Vector2(-36f, -34f), 54f, new Color(1f, 0.75f, 0.2f, 0.9f));
         }
 
         private static void CreateBattleGauge(Transform parent, string name, Vector2 anchoredPosition, bool left, float fill)
@@ -1255,10 +1282,105 @@ namespace GirlsWar
 
         private static void CreateSkillCard(Transform parent, int index)
         {
-            var x = -128f + index * 64f;
-            var card = CreatePanel(parent, "SkillCard_" + index, new Vector2(x, 38f), new Vector2(54f, 58f), new Color(0.12f, 0.1f, 0.16f, 0.86f), TextAnchor.LowerCenter);
-            CreatePanel(card.transform, "SkillCard_" + index + "_Portrait", new Vector2(0f, 8f), new Vector2(40f, 34f), new Color(0.72f, 0.58f, 0.96f, 0.92f), TextAnchor.MiddleCenter);
-            CreatePanel(card.transform, "SkillCard_" + index + "_Ready", new Vector2(0f, -19f), new Vector2(44f, 8f), index == 4 ? new Color(1f, 0.76f, 0.2f, 0.95f) : new Color(0.3f, 0.75f, 1f, 0.9f), TextAnchor.MiddleCenter);
+            var x = -156f + index * 78f;
+            var actorId = HudCardActorIds[Mathf.Clamp(index, 0, HudCardActorIds.Length - 1)];
+            var card = CreatePanel(parent, "SkillCard_" + index, new Vector2(x, 26f), new Vector2(68f, 74f), new Color(0.1f, 0.08f, 0.12f, 0.9f), TextAnchor.LowerCenter);
+            CreatePanel(card.transform, "SkillCard_" + index + "_Frame", new Vector2(0f, 11f), new Vector2(58f, 52f), index == 4 ? new Color(0.78f, 0.55f, 0.18f, 0.96f) : new Color(0.45f, 0.24f, 0.72f, 0.96f), TextAnchor.MiddleCenter);
+            var portrait = CreatePanel(card.transform, "SkillCard_" + index + "_Portrait", new Vector2(0f, 11f), new Vector2(52f, 46f), new Color(0.72f, 0.58f, 0.96f, 0.92f), TextAnchor.MiddleCenter);
+            SetImageSprite(portrait, HeadSpriteForActor(actorId), new Color(0.72f, 0.58f, 0.96f, 0.92f));
+            CreateLabel(card.transform, "SkillCard_" + index + "_Rank", "SR", new Vector2(-18f, 34f), new Vector2(34f, 18f), 15, new Color(0.94f, 0.2f, 1f, 1f), TextAnchor.MiddleCenter);
+            CreatePanel(card.transform, "SkillCard_" + index + "_Ready", new Vector2(0f, -24f), new Vector2(54f, 9f), index == 4 ? new Color(1f, 0.76f, 0.2f, 0.95f) : new Color(0.3f, 0.75f, 1f, 0.9f), TextAnchor.MiddleCenter);
+        }
+
+        private static void CreateHeadBadge(Transform parent, string name, int actorId, Vector2 anchoredPosition, TextAnchor anchor)
+        {
+            var badge = CreatePanel(parent, name, anchoredPosition, new Vector2(58f, 58f), new Color(0.08f, 0.06f, 0.08f, 0.86f), anchor);
+            var image = CreatePanel(badge.transform, name + "_Image", Vector2.zero, new Vector2(50f, 50f), new Color(0.58f, 0.44f, 0.72f, 0.92f), TextAnchor.MiddleCenter);
+            SetImageSprite(image, HeadSpriteForActor(actorId), new Color(0.58f, 0.44f, 0.72f, 0.92f));
+        }
+
+        private static Sprite HeadSpriteForActor(int actorId)
+        {
+            switch (actorId)
+            {
+                case 1036:
+                    return LoadExtractedSprite("b_d7eb2078b5de6a0d", "S", "4603583428255641265_battlehead1036.png");
+                case 1002:
+                    return LoadExtractedSprite("b_d7eb2078b5de6a0d", "S", "2376383340128146740_battlehead1002.png");
+                case 1025:
+                    return LoadExtractedSprite("b_d7eb2078b5de6a0d", "S", "7392474969561896688_battlehead1025.png");
+                case 1005:
+                    return LoadExtractedSprite("b_d7eb2078b5de6a0d", "S", "2579982693657195477_battlehead1005.png");
+                case 1029:
+                    return LoadExtractedSprite("b_d7eb2078b5de6a0d", "S", "-4434463221669571637_battlehead1029.png");
+                case 1034:
+                    return LoadExtractedSprite("b_d7eb2078b5de6a0d", "S", "-4647259651891963510_battlehead1034.png");
+                case 1037:
+                    return LoadExtractedSprite("b_d7eb2078b5de6a0d", "S", "2620829852264607562_battlehead1037.png");
+                case 1050:
+                    return LoadExtractedSprite("b_d7eb2078b5de6a0d", "S", "6717487950183757051_battlehead1050.png");
+                case 3001:
+                    return LoadExtractedSprite("b_d7eb2078b5de6a0d", "S", "6089819859888126356_battlehead3001.png");
+                case 3006:
+                    return LoadExtractedSprite("b_d7eb2078b5de6a0d", "S", "864296424559781393_battlehead3006.png");
+                default:
+                    return null;
+            }
+        }
+
+        private static Sprite LoadExtractedSprite(string bundleFolder, string imageFolder, string fileName)
+        {
+            var path = Path.GetFullPath(Path.Combine(
+                Application.dataPath,
+                "..",
+                "..",
+                "girlswar_merged_extracted",
+                "extracted",
+                "unity",
+                "bundles",
+                bundleFolder,
+                "images",
+                imageFolder,
+                fileName));
+            if (RuntimeUiSpriteCache.TryGetValue(path, out var cached))
+                return cached;
+            if (!File.Exists(path))
+            {
+                RuntimeUiSpriteCache[path] = null;
+                return null;
+            }
+
+            var texture = new Texture2D(2, 2, TextureFormat.RGBA32, false);
+            texture.name = Path.GetFileNameWithoutExtension(fileName) + "_Texture";
+            if (!texture.LoadImage(File.ReadAllBytes(path)))
+            {
+                RuntimeUiSpriteCache[path] = null;
+                return null;
+            }
+
+            var sprite = Sprite.Create(texture, new Rect(0, 0, texture.width, texture.height), new Vector2(0.5f, 0.5f), 100f);
+            sprite.name = Path.GetFileNameWithoutExtension(fileName) + "_Sprite";
+            RuntimeUiSpriteCache[path] = sprite;
+            return sprite;
+        }
+
+        private static void SetImageSprite(GameObject go, Sprite sprite, Color fallbackColor)
+        {
+            if (go == null)
+                return;
+            var image = go.GetComponent<Image>();
+            if (image == null)
+                return;
+            image.preserveAspect = true;
+            if (sprite == null)
+            {
+                image.sprite = SolidSprite();
+                image.color = fallbackColor;
+                return;
+            }
+
+            image.sprite = sprite;
+            image.color = Color.white;
         }
 
         private static void CreateRoundButton(Transform parent, string name, string text, Vector2 anchoredPosition, float size, Color color)
@@ -1295,6 +1417,9 @@ namespace GirlsWar
             label.text = text;
             label.font = Resources.GetBuiltinResource<Font>("LegacyRuntime.ttf");
             label.fontSize = fontSize;
+            label.resizeTextForBestFit = true;
+            label.resizeTextMinSize = Mathf.Max(8, fontSize - 4);
+            label.resizeTextMaxSize = fontSize;
             label.alignment = alignment;
             label.color = color;
             label.raycastTarget = false;
@@ -1657,32 +1782,91 @@ namespace GirlsWar
         private static void ApplyPreviewFormationPosition(YouYou.LuaHeroSprite sprite, int slot)
         {
             if (sprite == null) return;
-
-            var positions = sprite.IsOurHero
-                ? new[]
-                {
-                    new Vector3(-1.15f, -1.18f, 0f),
-                    new Vector3(-2.55f, -2.25f, 0f),
-                    new Vector3(-3.55f, -0.78f, 0f),
-                    new Vector3(-1.95f, -2.1f, 0f),
-                    new Vector3(-3.15f, -2.12f, 0f),
-                    new Vector3(-0.55f, -1.78f, 0f),
-                }
-                : new[]
-                {
-                    new Vector3(1.15f, -1.18f, 0f),
-                    new Vector3(2.55f, -2.25f, 0f),
-                    new Vector3(3.55f, -0.78f, 0f),
-                    new Vector3(1.95f, -2.1f, 0f),
-                    new Vector3(3.15f, -2.12f, 0f),
-                    new Vector3(0.55f, -1.78f, 0f),
-                };
-
-            var index = Mathf.Clamp(slot, 0, positions.Length - 1);
-            sprite.transform.position = positions[index];
+            var index = Mathf.Clamp(slot, 0, 5);
+            sprite.transform.position = PreviewFormationPosition(sprite.IsOurHero, slot);
             sprite.transform.localRotation = Quaternion.identity;
             sprite.transform.localScale = Vector3.one;
             sprite.BattleStationIndex = index;
+        }
+
+        private static int MaterializeReferenceLineupExtras(Result result, List<string> stages)
+        {
+            var stage = GameObject.Find("B90_VisualStage");
+            if (stage == null)
+                return 0;
+
+            var root = new GameObject("B90_ReferenceLineupExtras");
+            root.transform.SetParent(stage.transform, false);
+
+            var added = 0;
+            var labels = new List<string>();
+            for (var i = 0; i < ReferenceLineupExtraActorIds.Length; i++)
+            {
+                var actorId = ReferenceLineupExtraActorIds[i];
+                var slot = i + 3;
+                var anchor = new GameObject("B90_ReferenceLineup_" + actorId);
+                anchor.transform.SetParent(root.transform, false);
+                anchor.transform.position = ReferenceLineupExtraPosition(actorId, slot);
+                anchor.transform.localRotation = Quaternion.identity;
+                anchor.transform.localScale = Vector3.one;
+
+                var handle = BattleRuntimeSpineActorFactory.AttachVisualOnlyActor(
+                    900000 + actorId,
+                    actorId,
+                    anchor.transform,
+                    true,
+                    false,
+                    actorId);
+                if (handle == null)
+                    continue;
+
+                added++;
+                labels.Add(actorId + "->" + handle.ResolvedActorId + (handle.IsExactActor ? "" : "/fallback"));
+            }
+
+            if (result != null)
+            {
+                result.referenceLineupExtraActorCount = added;
+                result.referenceLineupExtraActorIds = string.Join(",", labels.ToArray());
+            }
+            stages?.Add("referenceLineupExtras:" + added + ":" + string.Join(",", labels.ToArray()));
+            return added;
+        }
+
+        private static Vector3 ReferenceLineupExtraPosition(int actorId, int fallbackSlot)
+        {
+            switch (actorId)
+            {
+                case 1025: return new Vector3(-1.28f, -1.1f, 0f);
+                case 1050: return new Vector3(-0.82f, -2.22f, 0f);
+                default: return PreviewFormationPosition(true, fallbackSlot);
+            }
+        }
+
+        private static Vector3 PreviewFormationPosition(bool isOurHero, int slot)
+        {
+            var positions = isOurHero
+                ? new[]
+                {
+                    new Vector3(-2.45f, -0.86f, 0f),
+                    new Vector3(-2.76f, -2.42f, 0f),
+                    new Vector3(-0.2f, -1.48f, 0f),
+                    new Vector3(-0.52f, -2.28f, 0f),
+                    new Vector3(-3.78f, -1.78f, 0f),
+                    new Vector3(-1.82f, -2.46f, 0f),
+                }
+                : new[]
+                {
+                    new Vector3(2.35f, -1.05f, 0f),
+                    new Vector3(4.1f, -2.5f, 0f),
+                    new Vector3(4.25f, -0.78f, 0f),
+                    new Vector3(2.2f, -2.2f, 0f),
+                    new Vector3(4.86f, -1.76f, 0f),
+                    new Vector3(3.14f, -2.52f, 0f),
+                };
+
+            var index = Mathf.Clamp(slot, 0, positions.Length - 1);
+            return positions[index];
         }
 
         private static void Safe(LuaEnv env, string lua, List<string> stages, ref string failStage, ref string err, bool optional = false)
@@ -1782,10 +1966,27 @@ namespace GirlsWar
             public int runtimeSourceSkillSpecResolveCount;
             public int runtimeSkillTimelineBlockedCount;
             public int runtimeSkillHitEffectCount;
+            public int runtimeSourceSkillPrefabAttemptCount;
+            public int runtimeSourceSkillPrefabLoadCount;
+            public int runtimeSourceSkillPrefabInstantiateCount;
+            public int runtimeSourceSkillPrefabRenderableCount;
+            public int runtimeSourceSkillPrefabRendererTotalCount;
+            public int runtimeSourceSkillPrefabParticlePlayCount;
+            public int runtimeSourceSkillPrefabAnimatorPlayCount;
+            public int runtimeSourceSkillPrefabDirectorCount;
+            public int runtimeSourceSkillPrefabDirectorPlayedCount;
+            public int runtimeSourceSkillPrefabDirectorBlockedCount;
+            public int runtimeSourceSkillPrefabPlayableLoadCount;
+            public int runtimeSourceSkillPrefabWorldCutinSuppressedCount;
+            public int runtimeSourceSkillPrefabFailureCount;
+            public int referenceLineupExtraActorCount;
+            public string referenceLineupExtraActorIds;
             public string runtimeActorLastSummary;
             public string runtimeMonsterModelResolveSummary;
             public string runtimeSkillSpecSummary;
             public string runtimeSkillSpecTrace;
+            public string runtimeSourceSkillPrefabSummary;
+            public string runtimeSourceSkillPrefabTrace;
             public string visualCameraName;
             public float visualCameraOrthographicSize;
             public string visualTuningVersion;

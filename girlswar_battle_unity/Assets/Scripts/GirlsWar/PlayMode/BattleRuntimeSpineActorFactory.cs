@@ -6,6 +6,8 @@ using System.Text;
 using Spine;
 using Spine.Unity;
 using UnityEngine;
+using UnityEngine.Playables;
+using UnityEngine.UI;
 
 #if UNITY_EDITOR
 using UnityEditor;
@@ -35,6 +37,7 @@ namespace GirlsWar
         public Color SecondaryColor;
         public string BundlePath = "";
         public string AssetPath = "";
+        public string PlayablePath = "";
         public string Summary = "";
         public string[] AnimationCandidates = new[] { "stand", "idle", "Idle" };
     }
@@ -159,6 +162,7 @@ namespace GirlsWar
         private static readonly Dictionary<int, MonsterModelResolution> MonsterModelCache = new Dictionary<int, MonsterModelResolution>();
         private static readonly Dictionary<int, BattleRuntimeActorHandle> HandlesByHeroId = new Dictionary<int, BattleRuntimeActorHandle>();
         private static readonly List<string> SkillSpecTrace = new List<string>();
+        private static readonly List<string> SourceSkillPrefabTrace = new List<string>();
         private static int previewCursor;
 
         public static int AttachCount { get; private set; }
@@ -174,10 +178,25 @@ namespace GirlsWar
         public static int SourceSkillSpecResolveCount { get; private set; }
         public static int SkillTimelineBlockedCount { get; private set; }
         public static int HitEffectCount { get; private set; }
+        public static int SourceSkillPrefabAttemptCount { get; private set; }
+        public static int SourceSkillPrefabLoadCount { get; private set; }
+        public static int SourceSkillPrefabInstantiateCount { get; private set; }
+        public static int SourceSkillPrefabRenderableCount { get; private set; }
+        public static int SourceSkillPrefabRendererTotalCount { get; private set; }
+        public static int SourceSkillPrefabParticlePlayCount { get; private set; }
+        public static int SourceSkillPrefabAnimatorPlayCount { get; private set; }
+        public static int SourceSkillPrefabDirectorCount { get; private set; }
+        public static int SourceSkillPrefabDirectorPlayedCount { get; private set; }
+        public static int SourceSkillPrefabDirectorBlockedCount { get; private set; }
+        public static int SourceSkillPrefabPlayableLoadCount { get; private set; }
+        public static int SourceSkillPrefabWorldCutinSuppressedCount { get; private set; }
+        public static int SourceSkillPrefabFailureCount { get; private set; }
         public static string LastSummary { get; private set; } = "";
         public static string MonsterModelResolveSummary { get; private set; } = "";
         public static string LastSkillSpecSummary { get; private set; } = "";
         public static string SkillSpecTraceSummary { get { return string.Join("|", SkillSpecTrace.ToArray()); } }
+        public static string LastSourceSkillPrefabSummary { get; private set; } = "";
+        public static string SourceSkillPrefabTraceSummary { get { return string.Join("|", SourceSkillPrefabTrace.ToArray()); } }
 
         public static void ResetDiagnostics()
         {
@@ -194,12 +213,27 @@ namespace GirlsWar
             SourceSkillSpecResolveCount = 0;
             SkillTimelineBlockedCount = 0;
             HitEffectCount = 0;
+            SourceSkillPrefabAttemptCount = 0;
+            SourceSkillPrefabLoadCount = 0;
+            SourceSkillPrefabInstantiateCount = 0;
+            SourceSkillPrefabRenderableCount = 0;
+            SourceSkillPrefabRendererTotalCount = 0;
+            SourceSkillPrefabParticlePlayCount = 0;
+            SourceSkillPrefabAnimatorPlayCount = 0;
+            SourceSkillPrefabDirectorCount = 0;
+            SourceSkillPrefabDirectorPlayedCount = 0;
+            SourceSkillPrefabDirectorBlockedCount = 0;
+            SourceSkillPrefabPlayableLoadCount = 0;
+            SourceSkillPrefabWorldCutinSuppressedCount = 0;
+            SourceSkillPrefabFailureCount = 0;
             previewCursor = 0;
             HandlesByHeroId.Clear();
             SkillSpecTrace.Clear();
+            SourceSkillPrefabTrace.Clear();
             LastSummary = "";
             MonsterModelResolveSummary = "";
             LastSkillSpecSummary = "";
+            LastSourceSkillPrefabSummary = "";
         }
 
         public static BattleRuntimeActorHandle AttachActor(
@@ -209,6 +243,29 @@ namespace GirlsWar
             bool isOurHero,
             bool isMonster,
             object prefabId)
+        {
+            return AttachActorInternal(heroId, heroDid, parent, isOurHero, isMonster, prefabId, true);
+        }
+
+        public static BattleRuntimeActorHandle AttachVisualOnlyActor(
+            int heroId,
+            int heroDid,
+            Transform parent,
+            bool isOurHero,
+            bool isMonster,
+            object prefabId)
+        {
+            return AttachActorInternal(heroId, heroDid, parent, isOurHero, isMonster, prefabId, false);
+        }
+
+        private static BattleRuntimeActorHandle AttachActorInternal(
+            int heroId,
+            int heroDid,
+            Transform parent,
+            bool isOurHero,
+            bool isMonster,
+            object prefabId,
+            bool registerForReplay)
         {
             AttachCount++;
 
@@ -249,7 +306,8 @@ namespace GirlsWar
                 PrefabCount++;
                 SpineCount++;
                 handle.IsSpineActor = true;
-                RegisterHandle(handle);
+                if (registerForReplay)
+                    RegisterHandle(handle);
                 LastSummary = BuildSummary(handle);
                 return handle;
             }
@@ -258,7 +316,8 @@ namespace GirlsWar
             {
                 SpineCount++;
                 handle.IsSpineActor = true;
-                RegisterHandle(handle);
+                if (registerForReplay)
+                    RegisterHandle(handle);
                 LastSummary = BuildSummary(handle);
                 return handle;
             }
@@ -274,7 +333,8 @@ namespace GirlsWar
 
             AttachTexturedQuad(handle, resolved, isOurHero);
             QuadFallbackCount++;
-            RegisterHandle(handle);
+            if (registerForReplay)
+                RegisterHandle(handle);
             LastSummary = BuildSummary(handle);
             return handle;
         }
@@ -347,6 +407,7 @@ namespace GirlsWar
             if (shader == null)
                 yield break;
 
+            var sourcePrefab = TryPlaySourceSkillPrefab(worldPosition, spec);
             var go = new GameObject(spec.Big ? "B90_SourceBackedBigHit_" + spec.EffectiveSkillDid : "B90_SourceBackedHit_" + spec.EffectiveSkillDid);
             go.transform.position = worldPosition + new Vector3(0f, spec.Big ? 0.78f : 0.66f, -0.25f);
             var line = go.AddComponent<LineRenderer>();
@@ -378,6 +439,456 @@ namespace GirlsWar
             }
 
             UnityEngine.Object.Destroy(go);
+            if (sourcePrefab != null)
+                UnityEngine.Object.Destroy(sourcePrefab);
+        }
+
+        private static GameObject TryPlaySourceSkillPrefab(Vector3 worldPosition, BattleRuntimeSkillPreviewSpec spec)
+        {
+            SourceSkillPrefabAttemptCount++;
+            if (spec == null || !spec.SourceBacked || string.IsNullOrEmpty(spec.BundlePath))
+                return null;
+
+            var absolutePath = Path.Combine(BundleRoot(), spec.BundlePath.Replace("/", Path.DirectorySeparatorChar.ToString()));
+            if (!File.Exists(absolutePath))
+            {
+                NoteSourceSkillPrefabFailure("missing_bundle:" + spec.BundlePath);
+                return null;
+            }
+
+            var bundle = GetOrLoadBundle(absolutePath, out var failure);
+            if (bundle == null)
+            {
+                NoteSourceSkillPrefabFailure(failure);
+                return null;
+            }
+
+            var assetPath = "";
+            var prefabId = 0;
+            var prefab = LoadSkillPrefab(bundle, spec, out assetPath, out prefabId);
+            if (prefab == null)
+            {
+                NoteSourceSkillPrefabFailure("missing_prefab:" + spec.AssetPath);
+                return null;
+            }
+
+            SourceSkillPrefabLoadCount++;
+            var root = new GameObject("B90_SourceSkillPrefabRoot_" + prefabId);
+            root.transform.position = worldPosition + new Vector3(0f, spec.Big ? 0.72f : 0.58f, -0.32f);
+            root.transform.localRotation = Quaternion.identity;
+            root.transform.localScale = Vector3.one;
+
+            var instance = UnityEngine.Object.Instantiate(prefab, root.transform, false);
+            instance.name = "B90_SourceSkillPrefab_" + prefabId;
+            instance.transform.localPosition = Vector3.zero;
+            instance.transform.localRotation = Quaternion.identity;
+            instance.transform.localScale = Vector3.one;
+            SourceSkillPrefabInstantiateCount++;
+
+            ActivateHierarchy(instance);
+            RebindMaterials(instance);
+
+            var playableLoaded = AssignPlayableAssets(bundle, instance, spec, prefabId);
+            var directorCount = PlayDirectors(instance);
+            var animatorCount = PlayAnimators(instance);
+            var particleCount = PlayParticles(instance);
+            var suppressedCutinCount = SuppressWorldCutinRenderers(instance);
+            var rendererCount = PrepareSourceSkillRenderers(instance);
+            NormalizeSourceSkillEffect(root, instance, worldPosition, spec);
+
+            SourceSkillPrefabPlayableLoadCount += playableLoaded;
+            SourceSkillPrefabDirectorCount += directorCount.Total;
+            SourceSkillPrefabDirectorPlayedCount += directorCount.Played;
+            SourceSkillPrefabDirectorBlockedCount += directorCount.Blocked;
+            SourceSkillPrefabAnimatorPlayCount += animatorCount;
+            SourceSkillPrefabParticlePlayCount += particleCount;
+            SourceSkillPrefabWorldCutinSuppressedCount += suppressedCutinCount;
+            SourceSkillPrefabRendererTotalCount += rendererCount;
+            if (rendererCount > 0)
+                SourceSkillPrefabRenderableCount++;
+
+            var summary =
+                "skill=" + spec.EffectiveSkillDid +
+                " prefab=" + prefabId +
+                " asset=" + assetPath +
+                " renderers=" + rendererCount +
+                " particles=" + particleCount +
+                " animators=" + animatorCount +
+                " directors=" + directorCount.Total +
+                " directorPlayed=" + directorCount.Played +
+                " directorBlocked=" + directorCount.Blocked +
+                " playableLoaded=" + playableLoaded +
+                " worldCutinSuppressed=" + suppressedCutinCount;
+            LastSourceSkillPrefabSummary = summary;
+            if (SourceSkillPrefabTrace.Count < 16)
+                SourceSkillPrefabTrace.Add(summary);
+
+            return root;
+        }
+
+        private static GameObject LoadSkillPrefab(AssetBundle bundle, BattleRuntimeSkillPreviewSpec spec, out string assetPath, out int prefabId)
+        {
+            assetPath = "";
+            prefabId = 0;
+            foreach (var candidateId in SkillPrefabCandidates(spec))
+            {
+                var candidatePath = "assets/download/skillprefabsandres/" + spec.SourceFamilyId + "/" + candidateId + ".prefab";
+                var prefab = bundle.LoadAsset<GameObject>(candidatePath);
+                if (prefab != null)
+                {
+                    assetPath = candidatePath;
+                    prefabId = candidateId;
+                    return prefab;
+                }
+            }
+
+            foreach (var name in bundle.GetAllAssetNames())
+            {
+                var lower = name.ToLowerInvariant();
+                if (!lower.EndsWith(".prefab")) continue;
+                if (!lower.Contains("/" + spec.SourceFamilyId + "/")) continue;
+                var prefab = bundle.LoadAsset<GameObject>(name);
+                if (prefab == null) continue;
+                assetPath = name;
+                prefabId = ParseTrailingInt(Path.GetFileNameWithoutExtension(name));
+                return prefab;
+            }
+
+            return null;
+        }
+
+        private static IEnumerable<int> SkillPrefabCandidates(BattleRuntimeSkillPreviewSpec spec)
+        {
+            if (spec.FastPrefabId != 0)
+                yield return spec.FastPrefabId;
+            if (spec.PrefabId != 0)
+                yield return spec.PrefabId;
+            if (spec.EffectiveSkillDid != 0 && spec.EffectiveSkillDid != spec.PrefabId)
+                yield return spec.EffectiveSkillDid;
+        }
+
+        private static int AssignPlayableAssets(AssetBundle bundle, GameObject instance, BattleRuntimeSkillPreviewSpec spec, int prefabId)
+        {
+            if (bundle == null || instance == null)
+                return 0;
+
+            var loaded = 0;
+            var playable = LoadSkillPlayable(bundle, spec, prefabId);
+            if (playable == null)
+                return 0;
+
+            foreach (var director in instance.GetComponentsInChildren<PlayableDirector>(true))
+            {
+                if (director == null || director.playableAsset != null)
+                    continue;
+                director.playableAsset = playable;
+                loaded++;
+            }
+
+            return loaded;
+        }
+
+        private static PlayableAsset LoadSkillPlayable(AssetBundle bundle, BattleRuntimeSkillPreviewSpec spec, int prefabId)
+        {
+            foreach (var candidateId in SkillPlayableCandidates(spec, prefabId))
+            {
+                var candidatePath = "assets/download/skillprefabsandres/" + spec.SourceFamilyId + "/" + candidateId + ".playable";
+                var playable = bundle.LoadAsset<PlayableAsset>(candidatePath);
+                if (playable != null)
+                    return playable;
+            }
+
+            foreach (var name in bundle.GetAllAssetNames())
+            {
+                var lower = name.ToLowerInvariant();
+                if (!lower.EndsWith(".playable")) continue;
+                if (!lower.Contains("/" + spec.SourceFamilyId + "/")) continue;
+                var playable = bundle.LoadAsset<PlayableAsset>(name);
+                if (playable != null)
+                    return playable;
+            }
+
+            return null;
+        }
+
+        private static IEnumerable<int> SkillPlayableCandidates(BattleRuntimeSkillPreviewSpec spec, int prefabId)
+        {
+            if (prefabId != 0)
+                yield return prefabId;
+            if (spec.FastPrefabId != 0 && spec.FastPrefabId != prefabId)
+                yield return spec.FastPrefabId;
+            if (spec.PrefabId != 0 && spec.PrefabId != prefabId)
+                yield return spec.PrefabId;
+            if (spec.EffectiveSkillDid != 0 && spec.EffectiveSkillDid != prefabId)
+                yield return spec.EffectiveSkillDid;
+        }
+
+        private static SourceSkillDirectorPlayCount PlayDirectors(GameObject instance)
+        {
+            var count = new SourceSkillDirectorPlayCount();
+            if (instance == null)
+                return count;
+
+            foreach (var director in instance.GetComponentsInChildren<PlayableDirector>(true))
+            {
+                if (director == null) continue;
+                count.Total++;
+                director.enabled = true;
+                director.time = 0;
+                if (director.playableAsset == null)
+                {
+                    count.Blocked++;
+                    continue;
+                }
+
+                try
+                {
+                    director.Evaluate();
+                    director.Play();
+                    director.Evaluate();
+                    count.Played++;
+                }
+                catch
+                {
+                    count.Blocked++;
+                }
+            }
+
+            return count;
+        }
+
+        private static int PlayAnimators(GameObject instance)
+        {
+            var count = 0;
+            if (instance == null)
+                return count;
+
+            foreach (var animator in instance.GetComponentsInChildren<Animator>(true))
+            {
+                if (animator == null) continue;
+                animator.enabled = true;
+                animator.speed = 1f;
+                try
+                {
+                    animator.Rebind();
+                    animator.Update(0.016f);
+                    count++;
+                }
+                catch
+                {
+                    // Some restored controllers are intentionally incomplete; keep the prefab visible anyway.
+                }
+            }
+
+            foreach (var animation in instance.GetComponentsInChildren<UnityEngine.Animation>(true))
+            {
+                if (animation == null) continue;
+                animation.enabled = true;
+                try
+                {
+                    foreach (UnityEngine.AnimationState state in animation)
+                    {
+                        if (state == null || string.IsNullOrEmpty(state.name)) continue;
+                        animation.Play(state.name);
+                        count++;
+                        break;
+                    }
+                }
+                catch
+                {
+                }
+            }
+
+            return count;
+        }
+
+        private static int PlayParticles(GameObject instance)
+        {
+            var count = 0;
+            if (instance == null)
+                return count;
+
+            foreach (var particle in instance.GetComponentsInChildren<ParticleSystem>(true))
+            {
+                if (particle == null) continue;
+                try
+                {
+                    particle.Clear(true);
+                    particle.Play(true);
+                    count++;
+                }
+                catch
+                {
+                }
+            }
+
+            return count;
+        }
+
+        private static int PrepareSourceSkillRenderers(GameObject instance)
+        {
+            var count = 0;
+            if (instance == null)
+                return count;
+
+            foreach (var renderer in instance.GetComponentsInChildren<Renderer>(true))
+            {
+                if (renderer == null || !renderer.enabled) continue;
+                renderer.enabled = true;
+                renderer.sortingOrder = Math.Max(renderer.sortingOrder, 540);
+                count++;
+            }
+
+            return count;
+        }
+
+        private static int SuppressWorldCutinRenderers(GameObject instance)
+        {
+            var count = 0;
+            if (instance == null)
+                return count;
+
+            foreach (var canvas in instance.GetComponentsInChildren<Canvas>(true))
+            {
+                if (canvas == null) continue;
+                canvas.enabled = false;
+                count++;
+            }
+
+            foreach (var graphic in instance.GetComponentsInChildren<Graphic>(true))
+            {
+                if (graphic == null) continue;
+                graphic.enabled = false;
+                count++;
+            }
+
+            foreach (var renderer in instance.GetComponentsInChildren<SpriteRenderer>(true))
+            {
+                if (renderer == null || !renderer.enabled) continue;
+                if (!LooksLikeWorldCutin(renderer))
+                    continue;
+                renderer.enabled = false;
+                count++;
+            }
+
+            return count;
+        }
+
+        private static bool LooksLikeWorldCutin(SpriteRenderer renderer)
+        {
+            if (renderer == null)
+                return false;
+
+            var path = HierarchyPath(renderer.transform).ToLowerInvariant();
+            if (path.Contains("rolebig") ||
+                path.Contains("painting") ||
+                path.Contains("bigset") ||
+                path.Contains("cutin") ||
+                path.Contains("portrait") ||
+                path.Contains("head") ||
+                path.Contains("live2d") ||
+                path.Contains("video"))
+                return true;
+
+            var sprite = renderer.sprite;
+            var texture = sprite != null ? sprite.texture : null;
+            var textureLooksLikePortrait = texture != null && (texture.width >= 512 || texture.height >= 512);
+            var bounds = renderer.bounds;
+            var boundsLookLikeScreenArt = bounds.size.x >= 2.6f || bounds.size.y >= 2.6f;
+            return textureLooksLikePortrait && boundsLookLikeScreenArt;
+        }
+
+        private static string HierarchyPath(Transform transform)
+        {
+            if (transform == null)
+                return "";
+
+            var names = new List<string>();
+            while (transform != null)
+            {
+                names.Add(transform.name ?? "");
+                transform = transform.parent;
+            }
+
+            names.Reverse();
+            return string.Join("/", names.ToArray());
+        }
+
+        private static void NormalizeSourceSkillEffect(GameObject root, GameObject instance, Vector3 targetWorldPosition, BattleRuntimeSkillPreviewSpec spec)
+        {
+            if (root == null || instance == null)
+                return;
+
+            if (!TryCollectRendererBounds(instance, out var bounds))
+                return;
+
+            var maxSize = Mathf.Max(bounds.size.x, bounds.size.y);
+            if (maxSize > 0.01f)
+            {
+                var desired = spec.Big ? 1.65f : 1.18f;
+                var factor = Mathf.Clamp(desired / maxSize, 0.08f, 5.5f);
+                root.transform.localScale = root.transform.localScale * factor;
+            }
+
+            if (TryCollectRendererBounds(instance, out bounds))
+            {
+                var desiredCenter = targetWorldPosition + new Vector3(0f, spec.Big ? 0.76f : 0.62f, -0.32f);
+                root.transform.position += desiredCenter - bounds.center;
+            }
+        }
+
+        private static bool TryCollectRendererBounds(GameObject instance, out Bounds bounds)
+        {
+            bounds = new Bounds();
+            var has = false;
+            if (instance == null)
+                return false;
+
+            foreach (var renderer in instance.GetComponentsInChildren<Renderer>(true))
+            {
+                if (renderer == null || !renderer.enabled) continue;
+                if (!has)
+                {
+                    bounds = renderer.bounds;
+                    has = true;
+                }
+                else
+                {
+                    bounds.Encapsulate(renderer.bounds);
+                }
+            }
+
+            return has;
+        }
+
+        private static void ActivateHierarchy(GameObject instance)
+        {
+            if (instance == null)
+                return;
+
+            foreach (var transform in instance.GetComponentsInChildren<Transform>(true))
+            {
+                if (transform == null || transform.gameObject == null) continue;
+                transform.gameObject.SetActive(true);
+            }
+        }
+
+        private static void NoteSourceSkillPrefabFailure(string reason)
+        {
+            SourceSkillPrefabFailureCount++;
+            LastSourceSkillPrefabSummary = reason ?? "";
+            if (SourceSkillPrefabTrace.Count < 16)
+                SourceSkillPrefabTrace.Add(LastSourceSkillPrefabSummary);
+        }
+
+        private static int ParseTrailingInt(string text)
+        {
+            if (string.IsNullOrEmpty(text))
+                return 0;
+            var start = 0;
+            while (start < text.Length && !char.IsDigit(text[start]))
+                start++;
+            return start < text.Length && int.TryParse(text.Substring(start), out var value) ? value : 0;
         }
 
         private static BattleRuntimeSkillPreviewSpec BuildSkillPreviewSpec(BattleRuntimeActorHandle handle, int actionType, int skillDid)
@@ -389,7 +900,7 @@ namespace GirlsWar
             var effectiveSkillDid = skillDid >= 100000 ? skillDid : family * 1000 + tier * 100 + 1;
             var prefabId = effectiveSkillDid;
             var fastPrefabId = tier == 3 ? family * 1000 + 351 : 0;
-            var sourceBacked = family == 1002 || family == 1034 || family == 1012;
+            var sourceBacked = family == 1002 || family == 1034 || family == 1036 || family == 1012;
             var spec = new BattleRuntimeSkillPreviewSpec
             {
                 IsAttack = isAttack,
@@ -402,6 +913,7 @@ namespace GirlsWar
                 FastPrefabId = fastPrefabId,
                 BundlePath = "download/skillprefabsandres/" + family + ".assetbundle",
                 AssetPath = "assets/download/skillprefabsandres/" + family + "/" + prefabId + ".prefab",
+                PlayablePath = "assets/download/skillprefabsandres/" + family + "/" + prefabId + ".playable",
                 MotionFrames = big ? 12 : 9,
                 DashDistance = big ? 0.58f : 0.38f,
                 DashLift = big ? 0.075f : 0.055f,
@@ -444,6 +956,12 @@ namespace GirlsWar
                     spec.SecondaryColor = new Color(1f, 1f, 0.9f, big ? 0.88f : 0.72f);
                     spec.LineWidth *= 1.08f;
                     break;
+                case 1036:
+                    spec.EffectShape = big ? 2 : 1;
+                    spec.PrimaryColor = big ? new Color(1f, 0.18f, 0.62f, 0.96f) : new Color(1f, 0.48f, 0.22f, 0.9f);
+                    spec.SecondaryColor = big ? new Color(1f, 0.82f, 0.36f, 0.82f) : new Color(1f, 0.95f, 0.62f, 0.74f);
+                    spec.LineWidth *= 1.12f;
+                    break;
                 case 1012:
                     spec.EffectShape = 2;
                     spec.PrimaryColor = big ? new Color(1f, 0.16f, 0.22f, 0.96f) : new Color(1f, 0.42f, 0.18f, 0.9f);
@@ -465,6 +983,8 @@ namespace GirlsWar
             var requested = handle.RequestedHeroDid != 0 ? handle.RequestedHeroDid : handle.RequestedHeroId;
             if (!handle.IsOurHero || requested >= 1100000 || handle.ResolvedActorId >= 3000)
                 return 1012;
+            if (requested == 1036)
+                return 1036;
             if (handle.ResolvedActorId == 1034 || requested == 1034 || requested == 1036)
                 return 1034;
             return 1002;
@@ -527,6 +1047,13 @@ namespace GirlsWar
                 HandlesByHeroId[handle.RequestedHeroId] = handle;
             if (handle.RequestedHeroDid != 0)
                 HandlesByHeroId[handle.RequestedHeroDid] = handle;
+        }
+
+        private struct SourceSkillDirectorPlayCount
+        {
+            public int Total;
+            public int Played;
+            public int Blocked;
         }
 
         private static int ResolveActorId(int heroId, int heroDid, bool isMonster, out string resolveReason)
@@ -762,6 +1289,7 @@ namespace GirlsWar
                 handle.MeshRenderer = handle.GetComponent<MeshRenderer>();
                 handle.AnimationName = animationName ?? "";
                 ApplyActorPose(handle.transform, isOurHero, true, actorId);
+                NormalizeActorHeight(handle.transform, actorId);
                 return handle.MeshRenderer != null;
             }
             catch (Exception e)
@@ -844,6 +1372,7 @@ namespace GirlsWar
             handle.AnimationName = animationName ?? "";
             ApplyActorPose(handle.transform, isOurHero, true, actorId);
             NormalizeRendererDepth(handle.transform);
+            NormalizeActorHeight(handle.transform, actorId);
             return handle.MeshRenderer != null;
         }
 
@@ -1001,14 +1530,49 @@ namespace GirlsWar
         private static float ActorVisualScale(int actorId, bool isSpine)
         {
             if (!isSpine)
-                return 0.68f;
+                return actorId == 1036 ? 0.82f : 0.68f;
             switch (actorId)
             {
-                case 1002: return 0.42f;
-                case 1034: return 0.36f;
-                case 3001: return 0.37f;
-                case 3006: return 0.34f;
-                default: return actorId >= 3000 ? 0.34f : 0.42f;
+                case 1002: return 0.58f;
+                case 1034: return 0.46f;
+                case 3001: return 0.6f;
+                case 3006: return 0.52f;
+                default: return actorId >= 3000 ? 0.52f : 0.58f;
+            }
+        }
+
+        private static void NormalizeActorHeight(Transform root, int actorId)
+        {
+            if (root == null)
+                return;
+            if (!TryCollectRendererBounds(root.gameObject, out var bounds))
+                return;
+
+            var height = bounds.size.y;
+            if (height <= 0.01f)
+                return;
+
+            var target = TargetActorWorldHeight(actorId);
+            var factor = Mathf.Clamp(target / height, 0.55f, 2.85f);
+            root.localScale = root.localScale * factor;
+            NormalizeRendererDepth(root);
+        }
+
+        private static float TargetActorWorldHeight(int actorId)
+        {
+            switch (actorId)
+            {
+                case 1036: return 1.62f;
+                case 1034: return 1.62f;
+                case 1002: return 1.38f;
+                case 1025: return 1.38f;
+                case 1005: return 1.34f;
+                case 1029: return 1.32f;
+                case 1037: return 1.38f;
+                case 1050: return 1.36f;
+                case 3001: return 1.5f;
+                case 3006: return 1.36f;
+                default: return actorId >= 3000 ? 1.38f : 1.4f;
             }
         }
 
