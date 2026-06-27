@@ -1,31 +1,31 @@
-﻿{
+{
     "battleInfo":  {
                        "ourHeros":  [
                                         {
-                                            "heroDid":  1025,
+                                            "heroDid":  1005,
                                             "status":  2,
                                             "rankLevel":  3,
                                             "heroId":  61025,
                                             "skills":  [
                                                            {
                                                                "skillType":  1,
-                                                               "skillDid":  1025101
+                                                               "skillDid":  1005101
                                                            },
                                                            {
                                                                "skillType":  1,
-                                                               "skillDid":  1025201
+                                                               "skillDid":  1005201
                                                            },
                                                            {
                                                                "skillType":  1,
-                                                               "skillDid":  1025301
+                                                               "skillDid":  1005301
                                                            },
                                                            {
                                                                "skillType":  2,
-                                                               "skillDid":  1025401
+                                                               "skillDid":  1005401
                                                            },
                                                            {
                                                                "skillType":  2,
-                                                               "skillDid":  1025402
+                                                               "skillDid":  1005402
                                                            },
                                                            {
                                                                "skillType":  2,
@@ -143,30 +143,30 @@
                                                             ]
                                         },
                                         {
-                                            "heroDid":  1050,
+                                            "heroDid":  1010,
                                             "status":  2,
                                             "rankLevel":  3,
                                             "heroId":  61050,
                                             "skills":  [
                                                            {
                                                                "skillType":  1,
-                                                               "skillDid":  1050101
+                                                               "skillDid":  1010101
                                                            },
                                                            {
                                                                "skillType":  1,
-                                                               "skillDid":  1050201
+                                                               "skillDid":  1010201
                                                            },
                                                            {
                                                                "skillType":  1,
-                                                               "skillDid":  1050301
+                                                               "skillDid":  1010301
                                                            },
                                                            {
                                                                "skillType":  2,
-                                                               "skillDid":  1050401
+                                                               "skillDid":  1010401
                                                            },
                                                            {
                                                                "skillType":  2,
-                                                               "skillDid":  1050402
+                                                               "skillDid":  1010402
                                                            },
                                                            {
                                                                "skillType":  2,
@@ -284,30 +284,30 @@
                                                             ]
                                         },
                                         {
-                                            "heroDid":  1029,
+                                            "heroDid":  1002,
                                             "status":  2,
                                             "rankLevel":  3,
-                                            "heroId":  61029,
+                                            "heroId":  61037,
                                             "skills":  [
                                                            {
                                                                "skillType":  1,
-                                                               "skillDid":  1029101
+                                                               "skillDid":  1002101
                                                            },
                                                            {
                                                                "skillType":  1,
-                                                               "skillDid":  1029201
+                                                               "skillDid":  1002201
                                                            },
                                                            {
                                                                "skillType":  1,
-                                                               "skillDid":  1029301
+                                                               "skillDid":  1002301
                                                            },
                                                            {
                                                                "skillType":  2,
-                                                               "skillDid":  1029401
+                                                               "skillDid":  1002401
                                                            },
                                                            {
                                                                "skillType":  2,
-                                                               "skillDid":  1029402
+                                                               "skillDid":  1002402
                                                            },
                                                            {
                                                                "skillType":  2,
@@ -328,7 +328,7 @@
                                             "lockLevel":  1,
                                             "attribute":  [
                                                               {
-                                                                  "value":  820000,
+                                                                  "value":  860000,
                                                                   "id":  1
                                                               },
                                                               {
@@ -408,7 +408,7 @@
                                                                   "id":  27
                                                               }
                                                           ],
-                                            "curHp":  820000,
+                                            "curHp":  860000,
                                             "commonSouls":  [
                                                                 {
                                                                     "soulType":  9,
@@ -425,30 +425,30 @@
                                                             ]
                                         },
                                         {
-                                            "heroDid":  1034,
+                                            "heroDid":  1003,
                                             "status":  2,
                                             "rankLevel":  3,
-                                            "heroId":  61034,
+                                            "heroId":  61029,
                                             "skills":  [
                                                            {
                                                                "skillType":  1,
-                                                               "skillDid":  1034101
+                                                               "skillDid":  1003101
                                                            },
                                                            {
                                                                "skillType":  1,
-                                                               "skillDid":  1034201
+                                                               "skillDid":  1003201
                                                            },
                                                            {
                                                                "skillType":  1,
-                                                               "skillDid":  1034301
+                                                               "skillDid":  1003301
                                                            },
                                                            {
                                                                "skillType":  2,
-                                                               "skillDid":  1034401
+                                                               "skillDid":  1003401
                                                            },
                                                            {
                                                                "skillType":  2,
-                                                               "skillDid":  1034402
+                                                               "skillDid":  1003402
                                                            },
                                                            {
                                                                "skillType":  2,
@@ -566,30 +566,30 @@
                                                             ]
                                         },
                                         {
-                                            "heroDid":  1002,
+                                            "heroDid":  1001,
                                             "status":  2,
                                             "rankLevel":  3,
-                                            "heroId":  61002,
+                                            "heroId":  61005,
                                             "skills":  [
                                                            {
                                                                "skillType":  1,
-                                                               "skillDid":  1002101
+                                                               "skillDid":  1001101
                                                            },
                                                            {
                                                                "skillType":  1,
-                                                               "skillDid":  1002201
+                                                               "skillDid":  1001201
                                                            },
                                                            {
                                                                "skillType":  1,
-                                                               "skillDid":  1002301
+                                                               "skillDid":  1001301
                                                            },
                                                            {
                                                                "skillType":  2,
-                                                               "skillDid":  1002401
+                                                               "skillDid":  1001401
                                                            },
                                                            {
                                                                "skillType":  2,
-                                                               "skillDid":  1002402
+                                                               "skillDid":  1001402
                                                            },
                                                            {
                                                                "skillType":  2,
@@ -610,7 +610,7 @@
                                             "lockLevel":  1,
                                             "attribute":  [
                                                               {
-                                                                  "value":  860000,
+                                                                  "value":  820000,
                                                                   "id":  1
                                                               },
                                                               {
@@ -690,7 +690,7 @@
                                                                   "id":  27
                                                               }
                                                           ],
-                                            "curHp":  860000,
+                                            "curHp":  820000,
                                             "commonSouls":  [
                                                                 {
                                                                     "soulType":  9,
@@ -711,33 +711,33 @@
                        "ourPlayerId":  48044,
                        "ourTeamFormation":  [
                                                 {
-                                                    "formationId":  92025,
+                                                    "formationId":  92005,
                                                     "position":  1,
                                                     "heroId":  61025
                                                 },
                                                 {
-                                                    "formationId":  92050,
+                                                    "formationId":  92010,
                                                     "position":  2,
                                                     "heroId":  61050
                                                 },
                                                 {
-                                                    "formationId":  92005,
+                                                    "formationId":  92001,
                                                     "position":  3,
                                                     "heroId":  61005
                                                 },
                                                 {
-                                                    "formationId":  92029,
+                                                    "formationId":  92003,
                                                     "position":  4,
                                                     "heroId":  61029
                                                 },
                                                 {
-                                                    "formationId":  92037,
+                                                    "formationId":  92002,
                                                     "position":  5,
                                                     "heroId":  61037
                                                 },
                                                 {
-                                                    "heroId":  0,
-                                                    "position":  6
+                                                    "position":  6,
+                                                    "heroId":  0
                                                 }
                                             ],
                        "randomSeed":  445106,
@@ -1103,7 +1103,7 @@
                                                                        "controllRate":  0,
                                                                        "curMp":  1000,
                                                                        "isOurHero":  true,
-                                                                       "heroDid":  1025,
+                                                                       "heroDid":  1005,
                                                                        "playerId":  48044,
                                                                        "lockLevel":  1,
                                                                        "hpRate":  10000,
@@ -1118,7 +1118,7 @@
                                                                        "controllRate":  0,
                                                                        "curMp":  1000,
                                                                        "isOurHero":  true,
-                                                                       "heroDid":  1050,
+                                                                       "heroDid":  1010,
                                                                        "playerId":  48044,
                                                                        "lockLevel":  1,
                                                                        "hpRate":  10000,
@@ -1133,7 +1133,7 @@
                                                                        "controllRate":  0,
                                                                        "curMp":  1000,
                                                                        "isOurHero":  true,
-                                                                       "heroDid":  1005,
+                                                                       "heroDid":  1001,
                                                                        "playerId":  48044,
                                                                        "lockLevel":  1,
                                                                        "hpRate":  10000,
@@ -1148,7 +1148,7 @@
                                                                        "controllRate":  0,
                                                                        "curMp":  1000,
                                                                        "isOurHero":  true,
-                                                                       "heroDid":  1029,
+                                                                       "heroDid":  1003,
                                                                        "playerId":  48044,
                                                                        "lockLevel":  1,
                                                                        "hpRate":  10000,
@@ -1163,7 +1163,7 @@
                                                                        "controllRate":  0,
                                                                        "curMp":  1000,
                                                                        "isOurHero":  true,
-                                                                       "heroDid":  1037,
+                                                                       "heroDid":  1002,
                                                                        "playerId":  48044,
                                                                        "lockLevel":  1,
                                                                        "hpRate":  10000,
@@ -1838,7 +1838,7 @@
                                                                        "controllRate":  0,
                                                                        "curMp":  1000,
                                                                        "isOurHero":  true,
-                                                                       "heroDid":  1025,
+                                                                       "heroDid":  1005,
                                                                        "playerId":  48044,
                                                                        "lockLevel":  1,
                                                                        "hpRate":  10000,
@@ -1853,7 +1853,7 @@
                                                                        "controllRate":  0,
                                                                        "curMp":  1000,
                                                                        "isOurHero":  true,
-                                                                       "heroDid":  1050,
+                                                                       "heroDid":  1010,
                                                                        "playerId":  48044,
                                                                        "lockLevel":  1,
                                                                        "hpRate":  10000,
@@ -1868,7 +1868,7 @@
                                                                        "controllRate":  0,
                                                                        "curMp":  1000,
                                                                        "isOurHero":  true,
-                                                                       "heroDid":  1005,
+                                                                       "heroDid":  1001,
                                                                        "playerId":  48044,
                                                                        "lockLevel":  1,
                                                                        "hpRate":  10000,
@@ -1883,7 +1883,7 @@
                                                                        "controllRate":  0,
                                                                        "curMp":  1000,
                                                                        "isOurHero":  true,
-                                                                       "heroDid":  1029,
+                                                                       "heroDid":  1003,
                                                                        "playerId":  48044,
                                                                        "lockLevel":  1,
                                                                        "hpRate":  10000,
@@ -1898,7 +1898,7 @@
                                                                        "controllRate":  0,
                                                                        "curMp":  1000,
                                                                        "isOurHero":  true,
-                                                                       "heroDid":  1037,
+                                                                       "heroDid":  1002,
                                                                        "playerId":  48044,
                                                                        "lockLevel":  1,
                                                                        "hpRate":  10000,
@@ -2648,7 +2648,7 @@
                                                                        "controllRate":  0,
                                                                        "curMp":  1000,
                                                                        "isOurHero":  true,
-                                                                       "heroDid":  1025,
+                                                                       "heroDid":  1005,
                                                                        "playerId":  48044,
                                                                        "lockLevel":  1,
                                                                        "hpRate":  10000,
@@ -2663,7 +2663,7 @@
                                                                        "controllRate":  0,
                                                                        "curMp":  1000,
                                                                        "isOurHero":  true,
-                                                                       "heroDid":  1050,
+                                                                       "heroDid":  1010,
                                                                        "playerId":  48044,
                                                                        "lockLevel":  1,
                                                                        "hpRate":  10000,
@@ -2678,7 +2678,7 @@
                                                                        "controllRate":  0,
                                                                        "curMp":  1000,
                                                                        "isOurHero":  true,
-                                                                       "heroDid":  1005,
+                                                                       "heroDid":  1001,
                                                                        "playerId":  48044,
                                                                        "lockLevel":  1,
                                                                        "hpRate":  10000,
@@ -2693,7 +2693,7 @@
                                                                        "controllRate":  0,
                                                                        "curMp":  1000,
                                                                        "isOurHero":  true,
-                                                                       "heroDid":  1029,
+                                                                       "heroDid":  1003,
                                                                        "playerId":  48044,
                                                                        "lockLevel":  1,
                                                                        "hpRate":  10000,
@@ -2708,7 +2708,7 @@
                                                                        "controllRate":  0,
                                                                        "curMp":  1000,
                                                                        "isOurHero":  true,
-                                                                       "heroDid":  1037,
+                                                                       "heroDid":  1002,
                                                                        "playerId":  48044,
                                                                        "lockLevel":  1,
                                                                        "hpRate":  10000,

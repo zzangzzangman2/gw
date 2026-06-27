@@ -81,7 +81,7 @@ namespace GirlsWar
             if (isAttack)
                 PlayFirstExistingAnimation(spec.AnimationCandidates);
             else
-                PlayFirstExistingAnimation(new[] { "stand", "idle", "Idle" });
+                PlayFirstExistingAnimation(BattleRuntimeSpineActorFactory.IdleAnimationCandidates(ResolvedActorId));
 
             var target = isAttack ? BattleRuntimeSpineActorFactory.FindNearestOpponent(this) : null;
             var direction = IsOurHero ? 1f : -1f;
@@ -105,7 +105,7 @@ namespace GirlsWar
 
             transform.localPosition = baseLocalPosition;
             transform.localScale = baseLocalScale;
-            PlayFirstExistingAnimation(new[] { "stand", "idle", "Idle" });
+            PlayFirstExistingAnimation(BattleRuntimeSpineActorFactory.IdleAnimationCandidates(ResolvedActorId));
             BattleRuntimeSpineActorFactory.NotePreviewCompleted();
         }
 
@@ -1421,7 +1421,7 @@ namespace GirlsWar
                 var skeletonAnimation = SkeletonAnimation.AddToGameObject(handle.gameObject, skeletonDataAsset, true);
                 skeletonAnimation.loop = true;
                 skeletonAnimation.Initialize(true, false);
-                var animationName = ChooseAnimation(skeletonData);
+                var animationName = ChooseAnimation(skeletonData, actorId);
                 if (!string.IsNullOrEmpty(animationName))
                     skeletonAnimation.AnimationName = animationName;
                 skeletonAnimation.Update(0f);
@@ -1503,7 +1503,7 @@ namespace GirlsWar
             var skeletonData = skeletonAnimation.skeletonDataAsset != null
                 ? skeletonAnimation.skeletonDataAsset.GetSkeletonData(true)
                 : null;
-            var animationName = ChooseAnimation(skeletonData);
+            var animationName = ChooseAnimation(skeletonData, actorId);
             if (!string.IsNullOrEmpty(animationName))
                 skeletonAnimation.AnimationName = animationName;
             skeletonAnimation.Update(0f);
@@ -1694,10 +1694,17 @@ namespace GirlsWar
             return ActorAssetRoot + "/" + actorId + "/" + actorId + suffix;
         }
 
-        private static string ChooseAnimation(SkeletonData skeletonData)
+        internal static string[] IdleAnimationCandidates(int actorId)
+        {
+            return actorId == 1005
+                ? new[] { "attack", "attack2", "skill1", "stand", "idle", "Idle", "run1", "wait" }
+                : new[] { "stand", "idle", "Idle", "wait", "run1", "attack", "skill1" };
+        }
+
+        private static string ChooseAnimation(SkeletonData skeletonData, int actorId)
         {
             if (skeletonData == null) return "";
-            var candidates = new[] { "stand", "idle", "Idle", "wait", "run1", "attack", "skill1" };
+            var candidates = IdleAnimationCandidates(actorId);
             foreach (var candidate in candidates)
             {
                 if (skeletonData.FindAnimation(candidate) != null)
@@ -1799,7 +1806,7 @@ namespace GirlsWar
                 return;
 
             var target = TargetActorWorldHeight(actorId);
-            var factor = Mathf.Clamp(target / height, 0.12f, 2.85f);
+            var factor = Mathf.Clamp(target / height, 0.12f, 32f);
             root.localScale = root.localScale * factor;
             NormalizeRendererDepth(root);
         }
@@ -1810,9 +1817,12 @@ namespace GirlsWar
             {
                 case 1036: return 2.45f;
                 case 1034: return 2.65f;
+                case 1001: return 2.0f;
                 case 1002: return 1.95f;
+                case 1003: return 2.0f;
                 case 1025: return 2.05f;
-                case 1005: return 1.92f;
+                case 1005: return 13.2f;
+                case 1010: return 2.0f;
                 case 1029: return 1.9f;
                 case 1037: return 2.0f;
                 case 1050: return 2.05f;

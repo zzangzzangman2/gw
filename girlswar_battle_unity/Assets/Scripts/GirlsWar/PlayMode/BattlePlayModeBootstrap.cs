@@ -29,18 +29,18 @@ namespace GirlsWar
         private static int[] configuredHudCardActorIds = { 1036, 1002, 1034, 0, 0 };
         private const int CaptureWidth = 1280;
         private const int CaptureHeight = 570;
-        private const string VisualTuningVersion = "battle90-payload-slots-scale-realism-v8";
+        private const string VisualTuningVersion = "battle92-reference-roster-scale-realism-v9";
         private const float VisualMapWidthUnits = 12.85f;
         private static readonly int[] DefaultHudCardActorIds = { 1036, 1002, 1034, 0, 0 };
-        private static readonly int[] RosterExpansionHudCardActorIds = { 1025, 1050, 1029, 1034, 1002 };
+        private static readonly int[] RosterExpansionHudCardActorIds = { 1005, 1010, 1002, 1003, 1001 };
         private static readonly int[] StandingSnapshotEnemyActorIds = { 1100111, 1100112, 1100113 };
         private static readonly Vector3[] OurFormationSlotPositions =
         {
             new Vector3(-3.05f, -1.05f, -0.02f),
             new Vector3(-1.55f, -0.92f, 0f),
-            new Vector3(-1.22f, -2.2f, -0.24f),
-            new Vector3(-2.34f, -1.58f, -0.12f),
-            new Vector3(-3.42f, -1.52f, -0.1f),
+            new Vector3(-1.16f, -2.18f, -0.24f),
+            new Vector3(-2.34f, -1.68f, -0.12f),
+            new Vector3(-3.55f, -2.16f, -0.26f),
             new Vector3(-2.56f, -2.48f, -0.28f),
         };
         private static readonly Vector3[] EnemyFormationSlotPositions =
@@ -1664,6 +1664,10 @@ namespace GirlsWar
         {
             switch (actorId)
             {
+                case 1001:
+                    return LoadExtractedSprite("b_d7eb2078b5de6a0d", "S", "6810259492667770510_battlehead1001.png");
+                case 1003:
+                    return LoadExtractedSprite("b_d7eb2078b5de6a0d", "S", "7544100942075933984_battlehead1003.png");
                 case 1036:
                     return LoadExtractedSprite("b_d7eb2078b5de6a0d", "S", "4603583428255641265_battlehead1036.png");
                 case 1002:
@@ -1672,6 +1676,8 @@ namespace GirlsWar
                     return LoadExtractedSprite("b_d7eb2078b5de6a0d", "S", "7392474969561896688_battlehead1025.png");
                 case 1005:
                     return LoadExtractedSprite("b_d7eb2078b5de6a0d", "S", "2579982693657195477_battlehead1005.png");
+                case 1010:
+                    return LoadExtractedSprite("b_d7eb2078b5de6a0d", "S", "3916718346668450318_battlehead1010.png");
                 case 1029:
                     return LoadExtractedSprite("b_d7eb2078b5de6a0d", "S", "-4434463221669571637_battlehead1029.png");
                 case 1034:
@@ -1693,10 +1699,18 @@ namespace GirlsWar
         {
             switch (actorId)
             {
+                case 1001:
+                    return LoadExtractedSprite("b_6ca02dad4f8af848", "S", "-8812393343277448458_head1001.png");
                 case 1036:
                     return LoadExtractedSprite("b_6ca02dad4f8af848", "S", "-1006758698391221614_head1036.png");
                 case 1002:
                     return LoadExtractedSprite("b_6ca02dad4f8af848", "S", "-296058673418415307_head1002.png");
+                case 1003:
+                    return LoadExtractedSprite("b_6ca02dad4f8af848", "S", "-7705346780790675844_head1003.png");
+                case 1005:
+                    return LoadExtractedSprite("b_6ca02dad4f8af848", "S", "-5835513882802061140_head1005.png");
+                case 1010:
+                    return LoadExtractedSprite("b_6ca02dad4f8af848", "S", "-2155862227574749595_head1010.png");
                 case 1034:
                     return LoadExtractedSprite("b_6ca02dad4f8af848", "S", "401204702686331365_head1034.png");
                 default:

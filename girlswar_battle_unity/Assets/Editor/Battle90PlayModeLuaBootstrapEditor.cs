@@ -13,7 +13,7 @@ namespace GirlsWar
         private const double TimeoutSeconds = 90.0;
         private const int FrameBudget = 240;
         private const int RealAttackProbeFrameBudget = 900;
-        private const int RosterExpansionFrameBudget = 12;
+        private const int RosterExpansionFrameBudget = 360;
 
         private static double startedAt;
         private static bool previousEnterPlayModeOptionsEnabled;
@@ -23,7 +23,7 @@ namespace GirlsWar
         private static bool activeUseAttackTaskPreview = true;
         private static bool activeStandingSnapshotOnly;
         private static string activePayloadFileName = BattlePlayModeBootstrap.DefaultPayloadFileName;
-        private static readonly int[] RosterExpansionHudCards = { 1025, 1050, 1029, 1034, 1002 };
+        private static readonly int[] RosterExpansionHudCards = { 1005, 1010, 1002, 1003, 1001 };
 
         [MenuItem("GirlsWar/Battle/BATTLE90 PlayMode Lua Bootstrap")]
         public static void Verify()
@@ -46,7 +46,7 @@ namespace GirlsWar
                 true,
                 BattlePlayModeBootstrap.RosterExpansionPayloadFileName,
                 RosterExpansionHudCards,
-                true);
+                false);
         }
 
         private static void StartRun(string resultFileName, int frameBudget, bool useAttackTaskPreview)
