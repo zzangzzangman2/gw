@@ -1205,6 +1205,7 @@ namespace GirlsWar
             if (string.IsNullOrEmpty(resolveReason))
                 return false;
             return resolveReason.StartsWith("monster_model_exact:", StringComparison.Ordinal) ||
+                   resolveReason.StartsWith("monster_model_group_base:", StringComparison.Ordinal) ||
                    resolveReason.StartsWith("monster_model_group_variant:", StringComparison.Ordinal);
         }
 
@@ -1214,7 +1215,10 @@ namespace GirlsWar
                 return "monster_model_exact:";
             if (requestedMonsterId >= 1100000)
             {
-                var firstVariant = requestedMonsterId - (requestedMonsterId % 10) + 1;
+                var lastDigitBase = requestedMonsterId - (requestedMonsterId % 10);
+                if (sourceMonsterId == lastDigitBase)
+                    return "monster_model_group_base:";
+                var firstVariant = lastDigitBase + 1;
                 if (sourceMonsterId == firstVariant)
                     return "monster_model_group_variant:";
             }
@@ -1283,12 +1287,12 @@ namespace GirlsWar
                 yield break;
 
             var lastDigitBase = monsterId - (monsterId % 10);
+            if (lastDigitBase != monsterId)
+                yield return lastDigitBase;
+
             var firstVariant = lastDigitBase + 1;
             if (firstVariant != monsterId)
                 yield return firstVariant;
-
-            if (lastDigitBase != monsterId)
-                yield return lastDigitBase;
 
             var stageBase = (monsterId / 100) * 100 + 10;
             if (stageBase != monsterId && stageBase != lastDigitBase)
@@ -1821,7 +1825,7 @@ namespace GirlsWar
                 case 1002: return 1.95f;
                 case 1003: return 2.0f;
                 case 1025: return 2.05f;
-                case 1005: return 13.2f;
+                case 1005: return 16.5f;
                 case 1010: return 2.0f;
                 case 1029: return 1.9f;
                 case 1037: return 2.0f;
