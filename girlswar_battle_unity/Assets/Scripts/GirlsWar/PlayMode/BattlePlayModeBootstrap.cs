@@ -29,12 +29,14 @@ namespace GirlsWar
         private static int[] configuredHudCardActorIds = { 1036, 1002, 1034, 0, 0 };
         private const int CaptureWidth = 1280;
         private const int CaptureHeight = 570;
-        private const string VisualTuningVersion = "battle90-source-hud-cutin-material-scale-v4-payload-roster-standing-snapshot";
+        private const string VisualTuningVersion = "battle90-dynamic-payload-hud-wide-formation-v6";
         private const float VisualMapWidthUnits = 12.85f;
         private static readonly int[] DefaultHudCardActorIds = { 1036, 1002, 1034, 0, 0 };
         private static readonly int[] RosterExpansionHudCardActorIds = { 1025, 1050, 1029, 1034, 1002 };
         private static readonly int[] StandingSnapshotEnemyActorIds = { 1100111, 1100112, 1100113 };
         private static readonly Dictionary<string, Sprite> RuntimeUiSpriteCache = new Dictionary<string, Sprite>(StringComparer.OrdinalIgnoreCase);
+        private static readonly Dictionary<string, string> RuntimeLocalizationCache = new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase);
+        private static bool runtimeLocalizationCacheLoaded;
         private static int ultimateCutinOverlayRequestCount;
         private static int ultimateCutinOverlayShownCount;
         private static int ultimateCutinOverlaySourceSpriteCount;
@@ -280,10 +282,21 @@ namespace GirlsWar
                         setmetatable(LuaUtils, { __index = function() return NOOP_STUB end })
                         rawset(_G, 'IsNil', function(v) return v == nil or v == NOOP_STUB or LuaUtils.IsNull(v) end)
                         if GameInit then rawset(GameInit,'IsClient',true); rawset(GameInit,'IsBattlePlayVerify',false) end
+                        local function first_hero_rank()
+                          if type(info.ourHeros) == 'table' and info.ourHeros[1] then
+                            return tonumber(info.ourHeros[1].rankLevel or info.ourHeros[1].level or info.ourHeros[1].lockLevel or 1) or 1
+                          end
+                          return 1
+                        end
+                        local payload_player = type(info.playerInfo) == 'table' and info.playerInfo or {}
+                        local player_name = tostring(payload_player.name or info.playerName or info.nickName or info.nickname or info.name or ('P' .. tostring(info.ourPlayerId or 0)))
+                        local player_level = tonumber(info.playerLevel or info.level or payload_player.level or first_hero_rank()) or 1
                         if PlayerMgr and type(rawget(PlayerMgr,'PlayerInfo'))~='table' then
-                          rawset(PlayerMgr, 'PlayerInfo', { uid = info.ourPlayerId or 0, head = 0, name = 'offline', level = 1 })
+                          rawset(PlayerMgr, 'PlayerInfo', { uid = info.ourPlayerId or payload_player.uid or 0, head = payload_player.head or 0, name = player_name, level = player_level, headFrame = payload_player.headFrame or 0 })
                         elseif PlayerMgr and PlayerMgr.PlayerInfo then
                           PlayerMgr.PlayerInfo.uid = PlayerMgr.PlayerInfo.uid or info.ourPlayerId or 0
+                          PlayerMgr.PlayerInfo.name = PlayerMgr.PlayerInfo.name or player_name
+                          PlayerMgr.PlayerInfo.level = tonumber(PlayerMgr.PlayerInfo.level or 0) > 0 and PlayerMgr.PlayerInfo.level or player_level
                         end
                         if ModulesInit and PNB then rawset(ModulesInit, 'ProcedureNormalBattle', PNB) end
                         if ModulesInit then
@@ -364,8 +377,8 @@ namespace GirlsWar
                             local root = rootGo.transform
                             local stations = {}
                             local is_our = string.find(prefix, 'Our') ~= nil
-                            local xs = is_our and {-4.2, -2.8, -1.4, -3.6, -2.2, -0.8} or {4.2, 2.8, 1.4, 3.6, 2.2, 0.8}
-                            local ys = {-0.9, -0.45, -1.35, -1.85, -1.4, -2.3}
+                            local xs = is_our and {-3.55, -2.85, -1.25, -2.25, -0.35, -1.45} or {1.75, 4.05, 4.75, 2.85, 4.95, 3.35}
+                            local ys = {-0.78, -2.35, -0.72, -2.58, -1.22, -2.7}
                             for idx=0,5 do
                               local go = CS.UnityEngine.GameObject(prefix .. '_Station_' .. tostring(idx))
                               go.transform:SetParent(root, false)
@@ -1240,6 +1253,11 @@ namespace GirlsWar
                 " visualHudSlots=" + result.visualHudSkillSlotCount +
                 " visualHudSourceSprites=" + result.visualHudSourceSpriteCount +
                 " visualHudDamage=" + result.visualHudDamageTextCount +
+                " visualHudSource=" + result.visualHudDataSource +
+                " visualHudHpChanged=" + result.visualHudHpChangedCount +
+                " visualHudDamageValue=" + result.visualHudDamageValue +
+                " visualHudPlayer=" + result.visualHudPlayerName + "/Lv" + result.visualHudPlayerLevel +
+                " visualHudEnemy=" + result.visualHudEnemyName + "/Lv" + result.visualHudEnemyLevel +
                 " ultimateCutinShown=" + result.runtimeUltimateCutinOverlayShownCount +
                 " captureNonDark=" + result.captureNonDarkSampleCount +
                 " standingSnapshot=" + result.standingSnapshotOnly +
@@ -1478,6 +1496,8 @@ namespace GirlsWar
 
         private static void CreateReferenceBattleHud(Transform parent, Camera camera)
         {
+            var timeline = BattleHudTimeline.Load(configuredPayloadFileName, configuredFrameBudget);
+            var initial = timeline.FrameAt(0);
             var canvasGo = new GameObject("B90_ReferenceBattleHud");
             canvasGo.transform.SetParent(parent, false);
             var canvas = canvasGo.AddComponent<Canvas>();
@@ -1490,23 +1510,27 @@ namespace GirlsWar
             scaler.referenceResolution = new Vector2(CaptureWidth, CaptureHeight);
             canvasGo.AddComponent<GraphicRaycaster>();
 
-            CreateTopCombatantHud(canvasGo.transform, "Our", PrimaryHudActorId(), "\uc131\uc8fc13918", "Lv.12", new Vector2(332f, -10f), true, 0.72f);
-            CreateTopCombatantHud(canvasGo.transform, "Enemy", 3001, "\uc815\uc608\uc790\uac1d", "Lv.6", new Vector2(-332f, -10f), false, 0.64f);
+            CreateTopCombatantHud(canvasGo.transform, "Our", timeline.OurActorId, initial.OurName, initial.OurLevelText, new Vector2(332f, -10f), true, initial.OurHpFill);
+            CreateTopCombatantHud(canvasGo.transform, "Enemy", timeline.EnemyActorId, initial.EnemyName, initial.EnemyLevelText, new Vector2(-332f, -10f), false, initial.EnemyHpFill);
             CreateSpritePanel(canvasGo.transform, "VsLabel", new Vector2(0f, -36f), new Vector2(56f, 56f),
                 LoadRestoreHudSprite("download_artsources_uispriteres_uibattle.assetbundle_1943103129572916828_multilang_T_duijue.png"),
                 new Color(1f, 0.74f, 0.18f, 1f), TextAnchor.UpperCenter, true);
-            CreateLabel(canvasGo.transform, "RoundLabel", "\ud134 1/20", new Vector2(0f, -72f), new Vector2(86f, 24f), 16, Color.white, TextAnchor.MiddleCenter, TextAnchor.UpperCenter);
-            CreateLabel(canvasGo.transform, "WaveLabel", "WAVE 1/2", new Vector2(140f, -76f), new Vector2(110f, 22f), 13, Color.white, TextAnchor.MiddleCenter, TextAnchor.UpperCenter);
+            CreateLabel(canvasGo.transform, "RoundLabel", initial.RoundText, new Vector2(0f, -72f), new Vector2(86f, 24f), 16, Color.white, TextAnchor.MiddleCenter, TextAnchor.UpperCenter);
+            CreateLabel(canvasGo.transform, "WaveLabel", initial.WaveText, new Vector2(140f, -76f), new Vector2(110f, 22f), 13, Color.white, TextAnchor.MiddleCenter, TextAnchor.UpperCenter);
 
-            CreatePanel(canvasGo.transform, "SkillCardDock", new Vector2(0f, 10f), new Vector2(472f, 92f), new Color(0.02f, 0.016f, 0.016f, 0.58f), TextAnchor.LowerCenter);
-            for (var i = 0; i < 5; i++)
-                CreateSkillCard(canvasGo.transform, i);
+            var cardCount = Mathf.Clamp(timeline.SkillCardCount, 1, 6);
+            CreatePanel(canvasGo.transform, "SkillCardDock", new Vector2(0f, 10f), new Vector2(32f + cardCount * 88f, 92f), new Color(0.02f, 0.016f, 0.016f, 0.58f), TextAnchor.LowerCenter);
+            for (var i = 0; i < cardCount; i++)
+                CreateSkillCard(canvasGo.transform, i, cardCount);
 
             if (!configuredStandingSnapshotOnly)
-                CreateDamageNumber(canvasGo.transform, "DamagePopup_1303", "1303", new Vector2(132f, -16f));
+                CreateDamageNumber(canvasGo.transform, "DamagePopup_Dynamic", initial.DamageText, new Vector2(132f, -16f));
             CreateSideButton(canvasGo.transform, "AutoButton", "\uc790\ub3d9", "download_artsources_uispriteres_uibattle.assetbundle_-3599735801722606192_btn_zidong_on.png", new Vector2(-18f, 78f));
             CreateSideButton(canvasGo.transform, "SkipButton", "\uc2a4\ud0b5", "download_artsources_uispriteres_uibattle.assetbundle_-668223970973157061_btn_Skip.png", new Vector2(-18f, 18f));
             CreateSideButton(canvasGo.transform, "SpeedButton", "x2", "download_artsources_uispriteres_uibattle.assetbundle_988442367583666760_btn_x2_1.png", new Vector2(-18f, -42f));
+
+            var controller = canvasGo.AddComponent<BattleReferenceHudController>();
+            controller.Configure(timeline);
         }
 
         private static void CreateBattleGauge(Transform parent, string name, Vector2 anchoredPosition, bool left, float fill)
@@ -1553,9 +1577,9 @@ namespace GirlsWar
             CreateBattleGauge(parent, prefix + "HpGauge", new Vector2(left ? badgePosition.x + 76f : badgePosition.x - 76f, -38f), left, hpFill);
         }
 
-        private static void CreateSkillCard(Transform parent, int index)
+        private static void CreateSkillCard(Transform parent, int index, int totalCount)
         {
-            var x = -176f + index * 88f;
+            var x = (index - (Mathf.Max(1, totalCount) - 1) * 0.5f) * 88f;
             var actorId = HudCardActorId(index);
             var card = CreatePanel(parent, "SkillCard_" + index, new Vector2(x, 18f), new Vector2(78f, 90f), new Color(0f, 0f, 0f, 0f), TextAnchor.LowerCenter);
             CreateSpritePanel(card.transform, "SkillCard_" + index + "_Frame", new Vector2(0f, 45f), new Vector2(72f, 72f),
@@ -1855,6 +1879,771 @@ namespace GirlsWar
             return solidSprite;
         }
 
+        private sealed class BattleReferenceHudController : MonoBehaviour
+        {
+            private BattleHudTimeline timeline;
+            private Text ourName;
+            private Text ourLevel;
+            private Text enemyName;
+            private Text enemyLevel;
+            private Text roundLabel;
+            private Text waveLabel;
+            private Text damage;
+            private Text damageShadow;
+            private Image ourHpFill;
+            private Image enemyHpFill;
+            private int localFrame;
+            private float previousOurHp = -1f;
+            private float previousEnemyHp = -1f;
+
+            public int UpdateCount { get; private set; }
+            public int HpChangedCount { get; private set; }
+            public int DamageVisibleCount { get; private set; }
+            public BattleHudFrame LastFrame { get; private set; }
+
+            public void Configure(BattleHudTimeline value)
+            {
+                timeline = value ?? BattleHudTimeline.Fallback(configuredFrameBudget);
+                Bind(transform);
+                ApplyFrame(0);
+            }
+
+            private void Update()
+            {
+                localFrame++;
+                ApplyFrame(localFrame);
+            }
+
+            private void Bind(Transform root)
+            {
+                ourName = TextByName(root, "OurNameLabel");
+                ourLevel = TextByName(root, "OurLevelLabel");
+                enemyName = TextByName(root, "EnemyNameLabel");
+                enemyLevel = TextByName(root, "EnemyLevelLabel");
+                roundLabel = TextByName(root, "RoundLabel");
+                waveLabel = TextByName(root, "WaveLabel");
+                damage = TextByName(root, "DamagePopup_Dynamic");
+                damageShadow = TextByName(root, "DamagePopup_Dynamic_Shadow");
+                ourHpFill = ImageByName(root, "OurHpGauge_HpFill");
+                enemyHpFill = ImageByName(root, "EnemyHpGauge_HpFill");
+            }
+
+            private void ApplyFrame(int frame)
+            {
+                if (timeline == null)
+                    return;
+
+                var hudFrame = timeline.FrameAt(frame);
+                LastFrame = hudFrame;
+                SetText(ourName, hudFrame.OurName);
+                SetText(ourLevel, hudFrame.OurLevelText);
+                SetText(enemyName, hudFrame.EnemyName);
+                SetText(enemyLevel, hudFrame.EnemyLevelText);
+                SetText(roundLabel, hudFrame.RoundText);
+                SetText(waveLabel, hudFrame.WaveText);
+                SetFill(ourHpFill, hudFrame.OurHpFill);
+                SetFill(enemyHpFill, hudFrame.EnemyHpFill);
+                SetDamageText(damage, damageShadow, hudFrame.ShowDamage ? hudFrame.DamageText : "");
+
+                if (previousOurHp >= 0f && Mathf.Abs(previousOurHp - hudFrame.OurHpFill) > 0.0005f)
+                    HpChangedCount++;
+                if (previousEnemyHp >= 0f && Mathf.Abs(previousEnemyHp - hudFrame.EnemyHpFill) > 0.0005f)
+                    HpChangedCount++;
+                if (hudFrame.ShowDamage && hudFrame.DamageValue > 0)
+                    DamageVisibleCount++;
+
+                previousOurHp = hudFrame.OurHpFill;
+                previousEnemyHp = hudFrame.EnemyHpFill;
+                UpdateCount++;
+            }
+
+            public void CopyDiagnostics(Result result)
+            {
+                if (result == null || timeline == null)
+                    return;
+
+                result.visualHudDataSource = timeline.DataSource;
+                result.visualHudPlayerName = LastFrame.OurName;
+                result.visualHudPlayerLevel = LastFrame.OurLevel;
+                result.visualHudPlayerNameSource = timeline.PlayerNameSource;
+                result.visualHudPlayerLevelSource = timeline.PlayerLevelSource;
+                result.visualHudPlayerHpFill = LastFrame.OurHpFill;
+                result.visualHudPlayerHpCurrent = LastFrame.OurHpCurrent;
+                result.visualHudPlayerHpMax = LastFrame.OurHpMax;
+                result.visualHudEnemyName = LastFrame.EnemyName;
+                result.visualHudEnemyLevel = LastFrame.EnemyLevel;
+                result.visualHudEnemyNameSource = timeline.EnemyNameSource;
+                result.visualHudEnemyLevelSource = timeline.EnemyLevelSource;
+                result.visualHudEnemyHpFill = LastFrame.EnemyHpFill;
+                result.visualHudEnemyHpCurrent = LastFrame.EnemyHpCurrent;
+                result.visualHudEnemyHpMax = LastFrame.EnemyHpMax;
+                result.visualHudUpdateCount = UpdateCount;
+                result.visualHudHpChangedCount = HpChangedCount;
+                result.visualHudDamageValue = LastFrame.DamageValue;
+                result.visualHudDamageValueSource = LastFrame.DamageSource;
+                result.visualHudDynamicDamageVisibleFrames = DamageVisibleCount;
+                result.visualHudLiveSummary = LastFrame.Summary;
+            }
+        }
+
+        private sealed class BattleHudTimeline
+        {
+            private BattlePayload payload;
+            private HeroEntry leader;
+            private HeroEntry firstEnemy;
+            private int leaderHeroId;
+            private int leaderHeroDid;
+            private int enemyHeroId;
+            private int enemyHeroDid;
+            private int frameBudget;
+
+            public int OurActorId = 1036;
+            public int EnemyActorId = 3001;
+            public int SkillCardCount = 3;
+            public string DataSource = "fallback";
+            public string PlayerNameSource = "fallback";
+            public string PlayerLevelSource = "fallback";
+            public string EnemyNameSource = "fallback";
+            public string EnemyLevelSource = "fallback";
+            public string OurName = "P0";
+            public int OurLevel = 1;
+            public string EnemyName = "enemy";
+            public int EnemyLevel = 1;
+
+            public static BattleHudTimeline Fallback(int frameBudget)
+            {
+                return new BattleHudTimeline { frameBudget = Mathf.Max(1, frameBudget) };
+            }
+
+            public static BattleHudTimeline Load(string payloadFileName, int frameBudget)
+            {
+                var timeline = Fallback(frameBudget);
+                timeline.DataSource = "payload_missing";
+                var payloadPath = Path.Combine(Application.dataPath, "RestoreData", "battle", payloadFileName ?? DefaultPayloadFileName);
+                if (!File.Exists(payloadPath))
+                    return timeline;
+
+                try
+                {
+                    timeline.payload = JsonUtility.FromJson<BattlePayload>(File.ReadAllText(payloadPath));
+                }
+                catch (Exception e)
+                {
+                    timeline.DataSource = "payload_parse_failed:" + e.GetType().Name;
+                    return timeline;
+                }
+
+                var info = timeline.payload != null ? timeline.payload.battleInfo : null;
+                if (info == null)
+                    return timeline;
+
+                timeline.DataSource = "payload:" + Path.GetFileName(payloadPath);
+                timeline.leader = FirstHero(info.ourHeros);
+                timeline.firstEnemy = FirstWaveEnemy(info);
+                if (timeline.leader != null)
+                {
+                    timeline.leaderHeroId = timeline.leader.heroId;
+                    timeline.leaderHeroDid = timeline.leader.heroDid;
+                    timeline.OurActorId = timeline.leader.heroDid != 0 ? timeline.leader.heroDid : PrimaryHudActorId();
+                }
+                if (timeline.firstEnemy != null)
+                {
+                    timeline.enemyHeroId = timeline.firstEnemy.heroId;
+                    timeline.enemyHeroDid = timeline.firstEnemy.heroDid;
+                    timeline.EnemyActorId = ResolveMonsterActorId(timeline.enemyHeroDid);
+                }
+
+                var ids = HudActorIdsFromPayload(info);
+                if (!configuredStandingSnapshotOnly && ids.Length > 0)
+                    configuredHudCardActorIds = ids;
+                timeline.SkillCardCount = Mathf.Clamp(ids.Length > 0 ? ids.Length : CountNonZeroHudCards(), 1, 6);
+                timeline.OurName = ResolvePlayerName(info, timeline.leader, out timeline.PlayerNameSource);
+                timeline.OurLevel = ResolvePlayerLevel(info, timeline.leader, out timeline.PlayerLevelSource);
+                timeline.EnemyName = ResolveEnemyName(timeline.enemyHeroDid, timeline.firstEnemy, out timeline.EnemyNameSource);
+                timeline.EnemyLevel = ResolveEnemyLevel(timeline.enemyHeroDid, timeline.firstEnemy, out timeline.EnemyLevelSource);
+                return timeline;
+            }
+
+            public BattleHudFrame FrameAt(int frame)
+            {
+                var info = payload != null ? payload.battleInfo : null;
+                var waveCount = info != null && info.waveData != null && info.waveData.Length > 0 ? info.waveData.Length : 1;
+                var clampedFrame = Mathf.Clamp(frame, 0, Mathf.Max(1, frameBudget));
+                var progress = Mathf.Clamp01(clampedFrame / (float)Mathf.Max(1, frameBudget));
+                var waveFloat = progress * waveCount;
+                var waveIndex = Mathf.Clamp(Mathf.FloorToInt(waveFloat), 0, waveCount - 1);
+                var waveT = Mathf.Clamp01(waveFloat - waveIndex);
+                var wave = info != null && info.waveData != null && info.waveData.Length > waveIndex ? info.waveData[waveIndex] : null;
+                var previousWave = info != null && waveIndex > 0 && info.waveData != null && info.waveData.Length > waveIndex - 1 ? info.waveData[waveIndex - 1] : null;
+                var activeEnemy = FirstHero(wave != null ? wave.enemyHeros : null) ?? firstEnemy;
+                var roundTotal = Mathf.Max(1, wave != null && wave.bigRoundData != null ? wave.bigRoundData.Length : 1);
+                var roundNo = Mathf.Clamp(Mathf.FloorToInt(waveT * roundTotal) + 1, 1, roundTotal);
+
+                var ourStart = HpCurrentFromEntry(leader);
+                var ourTarget = ourStart;
+                var ourMax = Mathf.Max(1, HpMaxFromEntry(leader));
+                var prevOur = FindStatistic(previousWave, true, leaderHeroId, leaderHeroDid);
+                var currOur = FindStatistic(wave, true, leaderHeroId, leaderHeroDid);
+                if (prevOur != null)
+                    ourStart = HpCurrentFromStat(prevOur, ourMax);
+                if (currOur != null)
+                    ourTarget = HpCurrentFromStat(currOur, ourMax);
+
+                var enemyMax = Mathf.Max(1, HpMaxFromEntry(activeEnemy));
+                var enemyStart = HpCurrentFromEntry(activeEnemy);
+                var currEnemy = FindStatistic(wave, false, activeEnemy != null ? activeEnemy.heroId : enemyHeroId, activeEnemy != null ? activeEnemy.heroDid : enemyHeroDid);
+                var enemyTarget = currEnemy != null ? HpCurrentFromStat(currEnemy, enemyMax) : enemyStart;
+                var smooth = waveT * waveT * (3f - 2f * waveT);
+                var ourCurrent = Mathf.RoundToInt(Mathf.Lerp(ourStart, ourTarget, smooth));
+                var enemyCurrent = Mathf.RoundToInt(Mathf.Lerp(enemyStart, enemyTarget, smooth));
+                var damageValue = DamageValueForWave(wave);
+                var showDamage = !configuredStandingSnapshotOnly && damageValue > 0 && waveT > 0.16f && waveT < 0.44f;
+
+                return new BattleHudFrame
+                {
+                    OurName = OurName,
+                    OurLevel = OurLevel,
+                    OurLevelText = "Lv." + OurLevel,
+                    OurHpCurrent = ourCurrent,
+                    OurHpMax = ourMax,
+                    OurHpFill = Mathf.Clamp01(ourCurrent / (float)ourMax),
+                    EnemyName = EnemyName,
+                    EnemyLevel = EnemyLevel,
+                    EnemyLevelText = "Lv." + EnemyLevel,
+                    EnemyHpCurrent = enemyCurrent,
+                    EnemyHpMax = enemyMax,
+                    EnemyHpFill = Mathf.Clamp01(enemyCurrent / (float)enemyMax),
+                    RoundText = "\ud134 " + roundNo + "/" + roundTotal,
+                    WaveText = "WAVE " + (waveIndex + 1) + "/" + waveCount,
+                    DamageValue = damageValue,
+                    DamageText = damageValue > 0 ? damageValue.ToString() : "",
+                    DamageSource = damageValue > 0 ? "payload.waveData[" + waveIndex + "].heroStatistics.outputDmg" : "none",
+                    ShowDamage = showDamage,
+                    Summary = "player=" + OurName + "/Lv" + OurLevel + "/hp=" + ourCurrent + "/" + ourMax +
+                              " enemy=" + EnemyName + "/Lv" + EnemyLevel + "/hp=" + enemyCurrent + "/" + enemyMax +
+                              " wave=" + (waveIndex + 1) + "/" + waveCount + " dmg=" + damageValue
+                };
+            }
+        }
+
+        private struct BattleHudFrame
+        {
+            public string OurName;
+            public int OurLevel;
+            public string OurLevelText;
+            public int OurHpCurrent;
+            public int OurHpMax;
+            public float OurHpFill;
+            public string EnemyName;
+            public int EnemyLevel;
+            public string EnemyLevelText;
+            public int EnemyHpCurrent;
+            public int EnemyHpMax;
+            public float EnemyHpFill;
+            public string RoundText;
+            public string WaveText;
+            public int DamageValue;
+            public string DamageText;
+            public string DamageSource;
+            public bool ShowDamage;
+            public string Summary;
+        }
+
+        [Serializable]
+        private sealed class BattlePayload
+        {
+            public BattleInfo battleInfo;
+        }
+
+        [Serializable]
+        private sealed class BattleInfo
+        {
+            public int ourPlayerId;
+            public int enemyPlayerId;
+            public int battleType;
+            public int mapId;
+            public int fightResult;
+            public int playerLevel;
+            public int level;
+            public string playerName;
+            public string nickName;
+            public string nickname;
+            public string name;
+            public PlayerInfoPayload playerInfo;
+            public HeroEntry[] ourHeros;
+            public WaveEntry[] waveData;
+        }
+
+        [Serializable]
+        private sealed class PlayerInfoPayload
+        {
+            public int uid;
+            public int head;
+            public int headFrame;
+            public int level;
+            public string name;
+        }
+
+        [Serializable]
+        private sealed class WaveEntry
+        {
+            public int waveNo;
+            public HeroEntry[] enemyHeros;
+            public BigRoundEntry[] bigRoundData;
+            public HeroStatistic[] heroStatistics;
+        }
+
+        [Serializable]
+        private sealed class BigRoundEntry
+        {
+            public int bigRoundNo;
+        }
+
+        [Serializable]
+        private sealed class HeroEntry
+        {
+            public int heroDid;
+            public int heroId;
+            public int rankLevel;
+            public int lockLevel;
+            public int level;
+            public int curHp;
+            public int curMp;
+            public int playerId;
+            public AttributeEntry[] attribute;
+        }
+
+        [Serializable]
+        private sealed class AttributeEntry
+        {
+            public int id;
+            public int value;
+        }
+
+        [Serializable]
+        private sealed class HeroStatistic
+        {
+            public bool isOurHero;
+            public int heroDid;
+            public int heroId;
+            public int rankLevel;
+            public int curHp;
+            public int hpRate;
+            public int dmg;
+            public int outputDmg;
+            public int healHp;
+            public int curMp;
+        }
+
+        private static Text TextByName(Transform root, string name)
+        {
+            var child = FindChildByName(root, name);
+            return child != null ? child.GetComponent<Text>() : null;
+        }
+
+        private static Image ImageByName(Transform root, string name)
+        {
+            var child = FindChildByName(root, name);
+            return child != null ? child.GetComponent<Image>() : null;
+        }
+
+        private static Transform FindChildByName(Transform root, string name)
+        {
+            if (root == null || string.IsNullOrEmpty(name))
+                return null;
+            if (root.name == name)
+                return root;
+            for (var i = 0; i < root.childCount; i++)
+            {
+                var found = FindChildByName(root.GetChild(i), name);
+                if (found != null)
+                    return found;
+            }
+            return null;
+        }
+
+        private static void SetText(Text text, string value)
+        {
+            if (text != null)
+                text.text = value ?? "";
+        }
+
+        private static void SetFill(Image image, float value)
+        {
+            if (image != null)
+                image.fillAmount = Mathf.Clamp01(value);
+        }
+
+        private static void SetDamageText(Text damage, Text shadow, string value)
+        {
+            var hasText = !string.IsNullOrEmpty(value);
+            SetText(damage, value);
+            SetText(shadow, value);
+            if (damage != null)
+                damage.gameObject.SetActive(hasText);
+            if (shadow != null)
+                shadow.gameObject.SetActive(hasText);
+        }
+
+        private static HeroEntry FirstHero(HeroEntry[] heroes)
+        {
+            return heroes != null && heroes.Length > 0 ? heroes[0] : null;
+        }
+
+        private static HeroEntry FirstWaveEnemy(BattleInfo info)
+        {
+            if (info == null || info.waveData == null || info.waveData.Length == 0)
+                return null;
+            return FirstHero(info.waveData[0].enemyHeros);
+        }
+
+        private static int[] HudActorIdsFromPayload(BattleInfo info)
+        {
+            if (info == null || info.ourHeros == null || info.ourHeros.Length == 0)
+                return new int[0];
+            var ids = new List<int>();
+            foreach (var hero in info.ourHeros)
+            {
+                if (hero != null && hero.heroDid != 0)
+                    ids.Add(hero.heroDid);
+            }
+            return ids.ToArray();
+        }
+
+        private static int CountNonZeroHudCards()
+        {
+            var count = 0;
+            if (configuredHudCardActorIds == null)
+                return 0;
+            for (var i = 0; i < configuredHudCardActorIds.Length; i++)
+            {
+                if (configuredHudCardActorIds[i] != 0)
+                    count++;
+            }
+            return count;
+        }
+
+        private static int HpMaxFromEntry(HeroEntry hero)
+        {
+            if (hero == null)
+                return 1;
+            if (hero.attribute != null)
+            {
+                foreach (var attr in hero.attribute)
+                {
+                    if (attr != null && attr.id == 1 && attr.value > 0)
+                        return attr.value;
+                }
+            }
+            return Mathf.Max(1, hero.curHp);
+        }
+
+        private static int HpCurrentFromEntry(HeroEntry hero)
+        {
+            return hero != null ? Mathf.Max(0, hero.curHp) : 1;
+        }
+
+        private static int HpCurrentFromStat(HeroStatistic stat, int maxHp)
+        {
+            if (stat == null)
+                return maxHp;
+            if (stat.curHp > 0 || stat.hpRate == 0)
+                return Mathf.Clamp(stat.curHp, 0, Mathf.Max(1, maxHp));
+            return Mathf.Clamp(Mathf.RoundToInt(maxHp * Mathf.Clamp(stat.hpRate, 0, 10000) / 10000f), 0, Mathf.Max(1, maxHp));
+        }
+
+        private static HeroStatistic FindStatistic(WaveEntry wave, bool isOurHero, int heroId, int heroDid)
+        {
+            if (wave == null || wave.heroStatistics == null)
+                return null;
+            foreach (var stat in wave.heroStatistics)
+            {
+                if (stat == null || stat.isOurHero != isOurHero)
+                    continue;
+                if ((heroId != 0 && stat.heroId == heroId) || (heroDid != 0 && stat.heroDid == heroDid))
+                    return stat;
+            }
+            return null;
+        }
+
+        private static int DamageValueForWave(WaveEntry wave)
+        {
+            if (wave == null || wave.heroStatistics == null)
+                return 0;
+            var value = 0;
+            foreach (var stat in wave.heroStatistics)
+            {
+                if (stat == null || !stat.isOurHero)
+                    continue;
+                value = Mathf.Max(value, stat.outputDmg);
+            }
+            return value;
+        }
+
+        private static string ResolvePlayerName(BattleInfo info, HeroEntry leader, out string source)
+        {
+            source = "none";
+            if (info == null)
+                return "P0";
+            if (info.playerInfo != null && !string.IsNullOrEmpty(info.playerInfo.name))
+            {
+                source = "payload.playerInfo.name";
+                return info.playerInfo.name;
+            }
+            if (!string.IsNullOrEmpty(info.playerName))
+            {
+                source = "payload.playerName";
+                return info.playerName;
+            }
+            if (!string.IsNullOrEmpty(info.nickName))
+            {
+                source = "payload.nickName";
+                return info.nickName;
+            }
+            if (!string.IsNullOrEmpty(info.nickname))
+            {
+                source = "payload.nickname";
+                return info.nickname;
+            }
+            if (!string.IsNullOrEmpty(info.name))
+            {
+                source = "payload.name";
+                return info.name;
+            }
+            source = "payload.ourPlayerId";
+            return "P" + info.ourPlayerId;
+        }
+
+        private static int ResolvePlayerLevel(BattleInfo info, HeroEntry leader, out string source)
+        {
+            source = "fallback";
+            if (info != null && info.playerInfo != null && info.playerInfo.level > 0)
+            {
+                source = "payload.playerInfo.level";
+                return info.playerInfo.level;
+            }
+            if (info != null && info.playerLevel > 0)
+            {
+                source = "payload.playerLevel";
+                return info.playerLevel;
+            }
+            if (info != null && info.level > 0)
+            {
+                source = "payload.level";
+                return info.level;
+            }
+            if (leader != null && leader.rankLevel > 0)
+            {
+                source = "payload.ourHeros[0].rankLevel";
+                return leader.rankLevel;
+            }
+            return 1;
+        }
+
+        private static string ResolveEnemyName(int monsterDid, HeroEntry enemy, out string source)
+        {
+            source = "fallback";
+            if (TryResolveMonsterProfile(monsterDid, out var name, out _, out _))
+            {
+                source = "DTMonster.monName+DTLangBattle";
+                return name;
+            }
+            if (enemy != null && enemy.heroDid != 0)
+            {
+                source = "payload.enemyHeros[0].heroDid";
+                return "M" + enemy.heroDid;
+            }
+            return "enemy";
+        }
+
+        private static int ResolveEnemyLevel(int monsterDid, HeroEntry enemy, out string source)
+        {
+            source = "fallback";
+            if (TryResolveMonsterProfile(monsterDid, out _, out var level, out _) && level > 0)
+            {
+                source = "DTMonster.monLevel";
+                return level;
+            }
+            if (enemy != null && enemy.rankLevel > 0)
+            {
+                source = "payload.enemyHeros[0].rankLevel";
+                return enemy.rankLevel;
+            }
+            return 1;
+        }
+
+        private static int ResolveMonsterActorId(int monsterDid)
+        {
+            if (TryResolveMonsterProfile(monsterDid, out _, out _, out var actorId) && actorId > 0)
+                return actorId;
+            return monsterDid == 1100111 ? 3001 : monsterDid;
+        }
+
+        private static bool TryResolveMonsterProfile(int monsterDid, out string localizedName, out int level, out int actorId)
+        {
+            localizedName = "";
+            level = 0;
+            actorId = 0;
+            if (monsterDid == 0)
+                return false;
+
+            var paths = new[]
+            {
+                Path.Combine(Application.dataPath, "../../girlswar_merged_extracted/extracted/unity/bundles/b_ec5be11875c4dacf/textassets/-2279990784320368822_DTMonster_KEntityTableData.txt"),
+                Path.Combine(Application.dataPath, "../../girlswar_merged_extracted/extracted/unity/bundles/b_ec5be11875c4dacf/textassets/-6086283079442341522_DTMonster_OEntityTableData.txt"),
+                Path.Combine(Application.dataPath, "../../girlswar_merged_extracted/extracted/unity/bundles/b_ec5be11875c4dacf/textassets/-448120736505355731_DTMonsterEntityTableData.txt"),
+            };
+            foreach (var path in paths)
+            {
+                if (!TryReadLuaTableRow(path, monsterDid, out var fields))
+                    continue;
+                actorId = IntField(fields, 1);
+                var key = FirstQuotedFieldWithPrefix(fields, "monstername_");
+                if (string.IsNullOrEmpty(key))
+                    key = FirstQuotedFieldWithPrefix(fields, "heroname_");
+                localizedName = LocalizeKey(key);
+                level = fields.Count > 11 ? IntField(fields, 11) : 0;
+                if (level <= 0 && fields.Count > 14)
+                    level = IntField(fields, 14);
+                return true;
+            }
+            return false;
+        }
+
+        private static bool TryReadLuaTableRow(string path, int rowId, out List<string> fields)
+        {
+            fields = null;
+            path = Path.GetFullPath(path);
+            if (!File.Exists(path))
+                return false;
+            var prefix = "{" + rowId + ",";
+            foreach (var raw in File.ReadLines(path))
+            {
+                var line = (raw ?? "").Trim();
+                if (!line.StartsWith(prefix, StringComparison.Ordinal))
+                    continue;
+                fields = ParseLuaTableFields(line);
+                return fields != null && fields.Count > 0;
+            }
+            return false;
+        }
+
+        private static List<string> ParseLuaTableFields(string row)
+        {
+            var fields = new List<string>();
+            if (string.IsNullOrEmpty(row))
+                return fields;
+            var start = row.IndexOf('{');
+            var end = row.LastIndexOf('}');
+            if (start < 0 || end <= start)
+                return fields;
+            var value = row.Substring(start + 1, end - start - 1);
+            var sb = new StringBuilder();
+            var depth = 0;
+            var inString = false;
+            for (var i = 0; i < value.Length; i++)
+            {
+                var ch = value[i];
+                if (ch == '"' && (i == 0 || value[i - 1] != '\\'))
+                    inString = !inString;
+                if (!inString)
+                {
+                    if (ch == '{')
+                        depth++;
+                    else if (ch == '}')
+                        depth--;
+                    else if (ch == ',' && depth == 0)
+                    {
+                        fields.Add(sb.ToString().Trim());
+                        sb.Length = 0;
+                        continue;
+                    }
+                }
+                sb.Append(ch);
+            }
+            fields.Add(sb.ToString().Trim());
+            return fields;
+        }
+
+        private static int IntField(List<string> fields, int index)
+        {
+            if (fields == null || index < 0 || index >= fields.Count)
+                return 0;
+            var text = fields[index].Trim();
+            if (text.Length == 0)
+                return 0;
+            if (text[0] == '"')
+                return 0;
+            return int.TryParse(text, out var value) ? value : 0;
+        }
+
+        private static string FirstQuotedFieldWithPrefix(List<string> fields, string prefix)
+        {
+            if (fields == null)
+                return "";
+            foreach (var field in fields)
+            {
+                var text = Unquote(field);
+                if (!string.IsNullOrEmpty(text) && text.StartsWith(prefix, StringComparison.OrdinalIgnoreCase))
+                    return text;
+            }
+            return "";
+        }
+
+        private static string Unquote(string value)
+        {
+            value = (value ?? "").Trim();
+            if (value.Length >= 2 && value[0] == '"' && value[value.Length - 1] == '"')
+                return value.Substring(1, value.Length - 2);
+            return value;
+        }
+
+        private static string LocalizeKey(string key)
+        {
+            if (string.IsNullOrEmpty(key))
+                return key ?? "";
+            EnsureRuntimeLocalizationCache();
+            return RuntimeLocalizationCache.TryGetValue(key, out var value) && !string.IsNullOrEmpty(value) ? value : key;
+        }
+
+        private static void EnsureRuntimeLocalizationCache()
+        {
+            if (runtimeLocalizationCacheLoaded)
+                return;
+            runtimeLocalizationCacheLoaded = true;
+            LoadLocalizationFile("girlswar_merged_extracted/extracted/unity/bundles/b_7e5552edea2c10f4/textassets/4475614301707336171_DTLangBattle.txt");
+            LoadLocalizationFile("girlswar_merged_extracted/extracted/unity/bundles/b_7e5552edea2c10f4/textassets/-2670652165716608051_DTLangCommon.txt");
+        }
+
+        private static void LoadLocalizationFile(string relativePath)
+        {
+            var path = Path.GetFullPath(Path.Combine(Application.dataPath, "../..", relativePath));
+            if (!File.Exists(path))
+                return;
+            foreach (var raw in File.ReadLines(path))
+            {
+                var line = raw ?? "";
+                var keyStart = line.IndexOf("['", StringComparison.Ordinal);
+                if (keyStart < 0)
+                    continue;
+                keyStart += 2;
+                var keyEnd = line.IndexOf("']", keyStart, StringComparison.Ordinal);
+                if (keyEnd <= keyStart)
+                    continue;
+                var valueStart = line.IndexOf("='", keyEnd, StringComparison.Ordinal);
+                if (valueStart < 0)
+                    continue;
+                valueStart += 2;
+                var valueEnd = line.LastIndexOf('\'');
+                if (valueEnd <= valueStart)
+                    continue;
+                var key = line.Substring(keyStart, keyEnd - keyStart);
+                var value = line.Substring(valueStart, valueEnd - valueStart);
+                if (!RuntimeLocalizationCache.ContainsKey(key))
+                    RuntimeLocalizationCache.Add(key, value);
+            }
+        }
+
         private static void ResetUltimateCutinDiagnostics()
         {
             ultimateCutinOverlayRequestCount = 0;
@@ -1915,12 +2704,9 @@ namespace GirlsWar
             background.color = new Color(0.025f, 0.018f, 0.032f, 0.78f);
             background.raycastTarget = false;
 
-            CreatePanel(overlay.transform, "B90_UltimateCutin_Band", new Vector2(-210f, -6f), new Vector2(900f, 168f), new Color(0.05f, 0.035f, 0.05f, 0.88f), TextAnchor.MiddleCenter);
-            var art = CreateSpritePanel(overlay.transform, "B90_UltimateCutin_SourceSprite_" + family, new Vector2(-80f, -4f), new Vector2(690f, 540f),
-                sprite, new Color(0.18f, 0.14f, 0.2f, 0.96f), TextAnchor.MiddleRight, true);
-            art.transform.localScale = new Vector3(1.06f, 1.06f, 1f);
-            CreateLabel(overlay.transform, "B90_UltimateCutin_Title", "ULTIMATE", new Vector2(72f, -176f), new Vector2(250f, 44f), 30, new Color(1f, 0.82f, 0.22f, 1f), TextAnchor.MiddleCenter);
-            CreateLabel(overlay.transform, "B90_UltimateCutin_Skill", skillDid.ToString(), new Vector2(72f, -212f), new Vector2(210f, 28f), 18, new Color(0.92f, 0.92f, 1f, 0.92f), TextAnchor.MiddleCenter);
+            var art = CreateSpritePanel(overlay.transform, "B90_UltimateCutin_SourceSprite_" + family, new Vector2(0f, 0f), new Vector2(CaptureWidth, CaptureHeight),
+                sprite, new Color(0.18f, 0.14f, 0.2f, 0.96f), TextAnchor.MiddleCenter, true);
+            art.transform.localScale = new Vector3(1.12f, 1.12f, 1f);
             overlay.AddComponent<UltimateCutinOverlayLifetime>().FramesRemaining = 90;
 
             ultimateCutinOverlayShownCount++;
@@ -2032,7 +2818,7 @@ namespace GirlsWar
 
             result.visualActorRendererCount = rendererCount;
             result.visualTuningVersion = VisualTuningVersion;
-            result.visualLayoutSummary = "payload=" + configuredPayloadFileName + "/mapWidthUnits=" + VisualMapWidthUnits.ToString("0.##") + "/five-slot-readable-scale/standingSnapshot=" + configuredStandingSnapshotOnly;
+            result.visualLayoutSummary = "payload=" + configuredPayloadFileName + "/mapWidthUnits=" + VisualMapWidthUnits.ToString("0.##") + "/wide-two-row-diagonal/standingSnapshot=" + configuredStandingSnapshotOnly;
             result.visualActorWorldBounds = hasBounds ? Vec(combined.center) + "|" + Vec(combined.size) : "";
             result.visualActorScreenRect = hasBounds && camera != null ? ScreenRect(camera, combined) : "";
             result.visualActorScreenAreaRatio = hasBounds && camera != null ? ScreenAreaRatio(camera, combined) : 0f;
@@ -2074,9 +2860,18 @@ namespace GirlsWar
                     gauges++;
 
                 var text = transform.GetComponent<Text>();
-                if (text != null && text.text == "1303" && string.Equals(objectName, "DamagePopup_1303", StringComparison.Ordinal))
+                if (text != null &&
+                    string.Equals(objectName, "DamagePopup_Dynamic", StringComparison.Ordinal) &&
+                    transform.gameObject.activeInHierarchy &&
+                    !string.IsNullOrEmpty(text.text))
+                {
                     damageText++;
+                }
             }
+
+            var controller = hud.GetComponent<BattleReferenceHudController>();
+            if (controller != null)
+                controller.CopyDiagnostics(result);
 
             result.visualHudImageCount = images.Length;
             result.visualHudSourceSpriteCount = sourceSprites;
@@ -2084,7 +2879,10 @@ namespace GirlsWar
             result.visualHudLockedSlotCount = lockedSlots;
             result.visualHudDamageTextCount = damageText;
             result.visualHudGaugeCount = gauges;
-            result.visualHudSummary = "sourceHudSprites=BATTLE42 slots=" + rootSlots + " locked=" + lockedSlots + " damage1303=" + damageText;
+            result.visualHudSummary = "sourceHudSprites=BATTLE42 slots=" + rootSlots +
+                                      " locked=" + lockedSlots +
+                                      " damageDynamic=" + damageText +
+                                      " hud=" + result.visualHudLiveSummary;
         }
 
         private static bool IsSkillCardRootName(string objectName)
@@ -2383,21 +3181,21 @@ namespace GirlsWar
             var positions = isOurHero
                 ? new[]
                 {
-                    new Vector3(-3.2f, -0.92f, 0f),
-                    new Vector3(-2.55f, -2.18f, 0f),
-                    new Vector3(-1.75f, -0.92f, 0f),
-                    new Vector3(-0.95f, -2.2f, 0f),
-                    new Vector3(-0.15f, -1.15f, 0f),
-                    new Vector3(-1.55f, -2.55f, 0f),
+                    new Vector3(-3.55f, -0.78f, 0f),
+                    new Vector3(-2.85f, -2.35f, 0f),
+                    new Vector3(-1.25f, -0.72f, 0f),
+                    new Vector3(-2.25f, -2.58f, 0f),
+                    new Vector3(-0.35f, -1.22f, 0f),
+                    new Vector3(-1.45f, -2.7f, 0f),
                 }
                 : new[]
                 {
-                    new Vector3(2.05f, -1.04f, 0f),
-                    new Vector3(3.35f, -2.12f, 0f),
-                    new Vector3(4.55f, -0.88f, 0f),
-                    new Vector3(2.65f, -2.52f, 0f),
-                    new Vector3(4.7f, -2.05f, 0f),
-                    new Vector3(3.4f, -0.48f, 0f),
+                    new Vector3(1.75f, -0.78f, 0f),
+                    new Vector3(4.05f, -2.35f, 0f),
+                    new Vector3(4.75f, -0.72f, 0f),
+                    new Vector3(2.85f, -2.58f, 0f),
+                    new Vector3(4.95f, -1.22f, 0f),
+                    new Vector3(3.35f, -2.7f, 0f),
                 };
 
             var index = Mathf.Clamp(slot, 0, positions.Length - 1);
@@ -2575,6 +3373,27 @@ namespace GirlsWar
             public int visualHudDamageTextCount;
             public int visualHudGaugeCount;
             public string visualHudSummary;
+            public string visualHudDataSource;
+            public string visualHudPlayerName;
+            public int visualHudPlayerLevel;
+            public string visualHudPlayerNameSource;
+            public string visualHudPlayerLevelSource;
+            public float visualHudPlayerHpFill;
+            public int visualHudPlayerHpCurrent;
+            public int visualHudPlayerHpMax;
+            public string visualHudEnemyName;
+            public int visualHudEnemyLevel;
+            public string visualHudEnemyNameSource;
+            public string visualHudEnemyLevelSource;
+            public float visualHudEnemyHpFill;
+            public int visualHudEnemyHpCurrent;
+            public int visualHudEnemyHpMax;
+            public int visualHudUpdateCount;
+            public int visualHudHpChangedCount;
+            public int visualHudDamageValue;
+            public string visualHudDamageValueSource;
+            public int visualHudDynamicDamageVisibleFrames;
+            public string visualHudLiveSummary;
             public string capturePath;
             public bool captureExists;
             public int captureBytes;
