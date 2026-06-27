@@ -23,10 +23,15 @@ namespace GirlsWar
         private static bool configuredUseAttackTaskPreview = true;
         private const int CaptureWidth = 1280;
         private const int CaptureHeight = 570;
-        private const string VisualTuningVersion = "battle90-source-hud-v1";
+        private const string VisualTuningVersion = "battle90-source-hud-cutin-v1";
         private const float VisualMapWidthUnits = 12.85f;
         private static readonly int[] HudCardActorIds = { 1036, 1002, 1034, 0, 0 };
         private static readonly Dictionary<string, Sprite> RuntimeUiSpriteCache = new Dictionary<string, Sprite>(StringComparer.OrdinalIgnoreCase);
+        private static int ultimateCutinOverlayRequestCount;
+        private static int ultimateCutinOverlayShownCount;
+        private static int ultimateCutinOverlaySourceSpriteCount;
+        private static int ultimateCutinOverlayLastFrame = -9999;
+        private static string ultimateCutinOverlaySummary = "";
 
         [SerializeField] private int frameBudget = 240;
 
@@ -103,6 +108,7 @@ namespace GirlsWar
             YouYou.GameEntry.Procedure.ResetRuntimeState();
             YouYou.LuaHeroSprite.ResetOpenedSprites();
             BattleRuntimeSpineActorFactory.ResetDiagnostics();
+            ResetUltimateCutinDiagnostics();
             visualCamera = EnsureVisualStage();
             Application.logMessageReceived += OnLogMessage;
         }
@@ -981,6 +987,10 @@ namespace GirlsWar
             result.runtimeSourceSkillCommonEffectInstantiateCount = BattleRuntimeSpineActorFactory.SourceSkillCommonEffectInstantiateCount;
             result.runtimeSourceSkillPrefabWorldCutinSuppressedCount = BattleRuntimeSpineActorFactory.SourceSkillPrefabWorldCutinSuppressedCount;
             result.runtimeSourceSkillPrefabFailureCount = BattleRuntimeSpineActorFactory.SourceSkillPrefabFailureCount;
+            result.runtimeUltimateCutinOverlayRequestCount = ultimateCutinOverlayRequestCount;
+            result.runtimeUltimateCutinOverlayShownCount = ultimateCutinOverlayShownCount;
+            result.runtimeUltimateCutinOverlaySourceSpriteCount = ultimateCutinOverlaySourceSpriteCount;
+            result.runtimeUltimateCutinOverlaySummary = ultimateCutinOverlaySummary;
             result.runtimeActorLastSummary = BattleRuntimeSpineActorFactory.LastSummary;
             result.runtimeMonsterModelResolveSummary = BattleRuntimeSpineActorFactory.MonsterModelResolveSummary;
             result.runtimeMonsterModelResolveTrace = BattleRuntimeSpineActorFactory.MonsterModelResolveTraceSummary;
@@ -1175,6 +1185,7 @@ namespace GirlsWar
                 " visualHudSlots=" + result.visualHudSkillSlotCount +
                 " visualHudSourceSprites=" + result.visualHudSourceSpriteCount +
                 " visualHudDamage=" + result.visualHudDamageTextCount +
+                " ultimateCutinShown=" + result.runtimeUltimateCutinOverlayShownCount +
                 " captureNonDark=" + result.captureNonDarkSampleCount;
         }
 
@@ -1635,6 +1646,120 @@ namespace GirlsWar
             texture.Apply();
             solidSprite = Sprite.Create(texture, new Rect(0, 0, 1, 1), new Vector2(0.5f, 0.5f), 1f);
             return solidSprite;
+        }
+
+        private static void ResetUltimateCutinDiagnostics()
+        {
+            ultimateCutinOverlayRequestCount = 0;
+            ultimateCutinOverlayShownCount = 0;
+            ultimateCutinOverlaySourceSpriteCount = 0;
+            ultimateCutinOverlayLastFrame = -9999;
+            ultimateCutinOverlaySummary = "";
+        }
+
+        public static bool TryShowUltimateCutinOverlay(int actorId, int skillDid, out string summary)
+        {
+            ultimateCutinOverlayRequestCount++;
+            var family = actorId != 0 ? actorId : SkillFamilyFromDid(skillDid);
+            var hud = GameObject.Find("B90_ReferenceBattleHud");
+            if (hud == null)
+            {
+                summary = "missing_hud actor=" + family + " skill=" + skillDid;
+                ultimateCutinOverlaySummary = summary;
+                return false;
+            }
+
+            if (Time.frameCount - ultimateCutinOverlayLastFrame < 8)
+            {
+                summary = "cooldown actor=" + family + " skill=" + skillDid;
+                ultimateCutinOverlaySummary = summary;
+                return false;
+            }
+
+            var sprite = UltimateCutinSpriteForActor(family);
+            if (sprite == null)
+            {
+                summary = "missing_source_art actor=" + family + " skill=" + skillDid;
+                ultimateCutinOverlaySummary = summary;
+                return false;
+            }
+
+            var existing = hud.transform.Find("B90_UltimateCutinOverlay");
+            if (existing != null)
+                Destroy(existing.gameObject);
+
+            var overlay = new GameObject("B90_UltimateCutinOverlay");
+            overlay.transform.SetParent(hud.transform, false);
+            overlay.transform.SetAsLastSibling();
+            var rect = overlay.AddComponent<RectTransform>();
+            rect.anchorMin = Vector2.zero;
+            rect.anchorMax = Vector2.one;
+            rect.pivot = new Vector2(0.5f, 0.5f);
+            rect.offsetMin = Vector2.zero;
+            rect.offsetMax = Vector2.zero;
+            var background = overlay.AddComponent<Image>();
+            background.sprite = SolidSprite();
+            background.color = new Color(0.025f, 0.018f, 0.032f, 0.78f);
+            background.raycastTarget = false;
+
+            CreatePanel(overlay.transform, "B90_UltimateCutin_Band", new Vector2(-210f, -6f), new Vector2(900f, 168f), new Color(0.05f, 0.035f, 0.05f, 0.88f), TextAnchor.MiddleCenter);
+            var art = CreateSpritePanel(overlay.transform, "B90_UltimateCutin_SourceSprite_" + family, new Vector2(-80f, -4f), new Vector2(690f, 540f),
+                sprite, new Color(0.18f, 0.14f, 0.2f, 0.96f), TextAnchor.MiddleRight, true);
+            art.transform.localScale = new Vector3(1.06f, 1.06f, 1f);
+            CreateLabel(overlay.transform, "B90_UltimateCutin_Title", "ULTIMATE", new Vector2(72f, -176f), new Vector2(250f, 44f), 30, new Color(1f, 0.82f, 0.22f, 1f), TextAnchor.MiddleCenter);
+            CreateLabel(overlay.transform, "B90_UltimateCutin_Skill", skillDid.ToString(), new Vector2(72f, -212f), new Vector2(210f, 28f), 18, new Color(0.92f, 0.92f, 1f, 0.92f), TextAnchor.MiddleCenter);
+            overlay.AddComponent<UltimateCutinOverlayLifetime>().FramesRemaining = 90;
+
+            ultimateCutinOverlayShownCount++;
+            ultimateCutinOverlaySourceSpriteCount++;
+            ultimateCutinOverlayLastFrame = Time.frameCount;
+            summary = "shown actor=" + family + " skill=" + skillDid + " sprite=" + sprite.name;
+            ultimateCutinOverlaySummary = summary;
+            return true;
+        }
+
+        private static int SkillFamilyFromDid(int skillDid)
+        {
+            return skillDid >= 100000 ? skillDid / 1000 : 0;
+        }
+
+        private static Sprite UltimateCutinSpriteForActor(int actorId)
+        {
+            switch (actorId)
+            {
+                case 1002:
+                    return LoadExtractedSprite("b_c58dc3ddb653f250", "T", "-3088853708589737389_T_ditu_1002.png");
+                case 1012:
+                    return LoadExtractedSprite("b_42bc4f1e8d28cb18", "T", "-2943793649454508527_T_ditu_1012.png");
+                case 1034:
+                    return LoadExtractedSprite("b_3ee8c0344685c2d2", "T", "-1394947549575562419_T_ditu_1034.png");
+                case 1036:
+                    return LoadExtractedSprite("b_2516176d6c2b7cc4", "T", "8836626965277414394_T_ditu_1036.png");
+                default:
+                    return null;
+            }
+        }
+
+        private sealed class UltimateCutinOverlayLifetime : MonoBehaviour
+        {
+            public int FramesRemaining = 90;
+
+            private CanvasGroup group;
+
+            private void Awake()
+            {
+                group = gameObject.AddComponent<CanvasGroup>();
+                group.alpha = 1f;
+            }
+
+            private void Update()
+            {
+                FramesRemaining--;
+                if (group != null && FramesRemaining < 20)
+                    group.alpha = Mathf.Clamp01(FramesRemaining / 20f);
+                if (FramesRemaining <= 0)
+                    Destroy(gameObject);
+            }
         }
 
         private static void CollectVisualDiagnostics(Result result, Camera camera)
@@ -2160,6 +2285,10 @@ namespace GirlsWar
             public int runtimeSourceSkillCommonEffectInstantiateCount;
             public int runtimeSourceSkillPrefabWorldCutinSuppressedCount;
             public int runtimeSourceSkillPrefabFailureCount;
+            public int runtimeUltimateCutinOverlayRequestCount;
+            public int runtimeUltimateCutinOverlayShownCount;
+            public int runtimeUltimateCutinOverlaySourceSpriteCount;
+            public string runtimeUltimateCutinOverlaySummary;
             public string runtimeActorLastSummary;
             public string runtimeMonsterModelResolveSummary;
             public string runtimeMonsterModelResolveTrace;

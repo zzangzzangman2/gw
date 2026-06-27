@@ -409,6 +409,12 @@ namespace GirlsWar
                 yield break;
 
             var sourcePrefab = TryPlaySourceSkillPrefab(worldPosition, spec);
+            if (spec.Big)
+            {
+                string cutinSummary;
+                BattlePlayModeBootstrap.TryShowUltimateCutinOverlay(spec.SourceFamilyId, spec.EffectiveSkillDid, out cutinSummary);
+            }
+
             var go = new GameObject(spec.Big ? "B90_SourceBackedBigHit_" + spec.EffectiveSkillDid : "B90_SourceBackedHit_" + spec.EffectiveSkillDid);
             go.transform.position = worldPosition + new Vector3(0f, spec.Big ? 0.78f : 0.66f, -0.25f);
             var line = go.AddComponent<LineRenderer>();
