@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.IO;
+using System.Text;
 using Spine;
 using Spine.Unity;
 using UnityEngine;
@@ -91,8 +92,16 @@ namespace GirlsWar
     public static class BattleRuntimeSpineActorFactory
     {
         private const string ActorAssetRoot = "Assets/RestoreData/battle/VisualAssets/actors";
-        private static readonly HashSet<int> ImportedActorIds = new HashSet<int> { 1002, 1034, 1100111 };
+        private static readonly HashSet<int> ImportedActorIds = new HashSet<int> { 1002, 1034, 1100111, 3001, 3006 };
+        private static readonly string[] MonsterModelTables =
+        {
+            "DTMonster_KEntityTableData",
+            "DTMonster_OEntityTableData",
+            "DTMonsterEntityTableData",
+        };
         private static readonly Dictionary<string, AssetBundle> LoadedBundles = new Dictionary<string, AssetBundle>(StringComparer.OrdinalIgnoreCase);
+        private static readonly Dictionary<string, MonsterTableCache> MonsterTableCaches = new Dictionary<string, MonsterTableCache>(StringComparer.OrdinalIgnoreCase);
+        private static readonly Dictionary<int, MonsterModelResolution> MonsterModelCache = new Dictionary<int, MonsterModelResolution>();
         private static readonly Dictionary<int, BattleRuntimeActorHandle> HandlesByHeroId = new Dictionary<int, BattleRuntimeActorHandle>();
         private static int previewCursor;
 
@@ -102,10 +111,12 @@ namespace GirlsWar
         public static int VisualFallbackCount { get; private set; }
         public static int QuadFallbackCount { get; private set; }
         public static int MissingAssetCount { get; private set; }
+        public static int MonsterModelResolveCount { get; private set; }
         public static int PreviewActionCount { get; private set; }
         public static int PreviewCompletedCount { get; private set; }
         public static int PreviewMissCount { get; private set; }
         public static string LastSummary { get; private set; } = "";
+        public static string MonsterModelResolveSummary { get; private set; } = "";
 
         public static void ResetDiagnostics()
         {
@@ -115,12 +126,14 @@ namespace GirlsWar
             VisualFallbackCount = 0;
             QuadFallbackCount = 0;
             MissingAssetCount = 0;
+            MonsterModelResolveCount = 0;
             PreviewActionCount = 0;
             PreviewCompletedCount = 0;
             PreviewMissCount = 0;
             previewCursor = 0;
             HandlesByHeroId.Clear();
             LastSummary = "";
+            MonsterModelResolveSummary = "";
         }
 
         public static BattleRuntimeActorHandle AttachActor(
@@ -134,7 +147,7 @@ namespace GirlsWar
             AttachCount++;
 
             var requested = heroDid != 0 ? heroDid : heroId;
-            var resolved = ResolveActorId(heroId, heroDid, isMonster);
+            var resolved = ResolveActorId(heroId, heroDid, isMonster, out var resolveReason);
             var exact = resolved == requested || (heroDid == 0 && resolved == heroId);
 
             var go = new GameObject("B90_RuntimeActor_" + requested + "_as_" + resolved);
@@ -149,10 +162,19 @@ namespace GirlsWar
             handle.RequestedHeroDid = heroDid;
             handle.ResolvedActorId = resolved;
             handle.IsExactActor = exact;
-            handle.FallbackReason = exact ? "" : "visual_fallback:" + requested + "->" + resolved;
+            handle.FallbackReason = exact
+                ? ""
+                : !string.IsNullOrEmpty(resolveReason)
+                    ? resolveReason
+                    : "visual_fallback:" + requested + "->" + resolved;
 
             if (!exact)
                 VisualFallbackCount++;
+            if (!string.IsNullOrEmpty(resolveReason) && resolveReason.StartsWith("monster_model:", StringComparison.Ordinal))
+            {
+                MonsterModelResolveCount++;
+                MonsterModelResolveSummary = resolveReason;
+            }
 
             var spineFailure = "";
             if (resolved != 0 && TryAttachPrefab(handle, resolved, isOurHero, out spineFailure))
@@ -220,8 +242,19 @@ namespace GirlsWar
                 HandlesByHeroId[handle.RequestedHeroDid] = handle;
         }
 
-        private static int ResolveActorId(int heroId, int heroDid, bool isMonster)
+        private static int ResolveActorId(int heroId, int heroDid, bool isMonster, out string resolveReason)
         {
+            resolveReason = "";
+            var requested = heroDid != 0 ? heroDid : heroId;
+            if (isMonster && TryResolveMonsterModelId(requested, out var modelId, out var sourceMonsterId, out var sourceTable))
+            {
+                if (modelId != 0 && HasImportedActor(modelId))
+                {
+                    resolveReason = "monster_model:" + requested + "->" + sourceMonsterId + "/" + sourceTable + "/model_" + modelId;
+                    return modelId;
+                }
+            }
+
             foreach (var candidate in BuildCandidates(heroId, heroDid, isMonster))
             {
                 if (candidate != 0 && HasImportedActor(candidate))
@@ -255,7 +288,138 @@ namespace GirlsWar
 
         private static bool HasImportedActor(int actorId)
         {
-            return ImportedActorIds.Contains(actorId);
+            return ImportedActorIds.Contains(actorId) || HasLocalPrefabBundle(actorId) || HasImportedSpineAsset(actorId);
+        }
+
+        private static bool TryResolveMonsterModelId(int monsterId, out int modelId, out int sourceMonsterId, out string sourceTable)
+        {
+            modelId = 0;
+            sourceMonsterId = 0;
+            sourceTable = "";
+            if (monsterId == 0)
+                return false;
+
+            if (MonsterModelCache.TryGetValue(monsterId, out var cached))
+            {
+                modelId = cached.ModelId;
+                sourceMonsterId = cached.SourceMonsterId;
+                sourceTable = cached.SourceTable;
+                return modelId != 0;
+            }
+
+            foreach (var candidate in BuildMonsterRowCandidates(monsterId))
+            {
+                foreach (var tableName in MonsterModelTables)
+                {
+                    if (!TryReadMonsterModelId(tableName, candidate, out var candidateModelId)) continue;
+                    modelId = candidateModelId;
+                    sourceMonsterId = candidate;
+                    sourceTable = tableName;
+                    MonsterModelCache[monsterId] = new MonsterModelResolution(modelId, sourceMonsterId, sourceTable);
+                    return true;
+                }
+            }
+
+            MonsterModelCache[monsterId] = new MonsterModelResolution(0, 0, "");
+            return false;
+        }
+
+        private static IEnumerable<int> BuildMonsterRowCandidates(int monsterId)
+        {
+            yield return monsterId;
+            if (monsterId < 1100000)
+                yield break;
+
+            var lastDigitBase = monsterId - (monsterId % 10);
+            if (lastDigitBase != monsterId)
+                yield return lastDigitBase;
+
+            var stageBase = (monsterId / 100) * 100 + 10;
+            if (stageBase != monsterId && stageBase != lastDigitBase)
+                yield return stageBase;
+        }
+
+        private static bool TryReadMonsterModelId(string tableName, int rowId, out int modelId)
+        {
+            modelId = 0;
+            if (!TryGetMonsterTable(tableName, out var table))
+                return false;
+            if (!table.Rows.TryGetValue(rowId, out var slice))
+                return false;
+            if (slice.Begin < 0 || slice.Length <= 0 || slice.Begin + slice.Length > table.Data.Length)
+                return false;
+
+            var json = Encoding.UTF8.GetString(table.Data, slice.Begin, slice.Length);
+            return TryReadJsonInt(json, "\"modelID\":", out modelId);
+        }
+
+        private static bool TryGetMonsterTable(string tableName, out MonsterTableCache table)
+        {
+            if (MonsterTableCaches.TryGetValue(tableName, out table))
+                return table != null;
+
+            table = null;
+            var root = Path.Combine(MergedRoot(), "extracted", "config_zips", "download", "config", "monster");
+            var headerPath = Path.Combine(root, tableName + "Header.bigd");
+            var dataPath = Path.Combine(root, tableName + ".bigd");
+            if (!File.Exists(headerPath) || !File.Exists(dataPath))
+            {
+                MonsterTableCaches[tableName] = null;
+                return false;
+            }
+
+            var loaded = new MonsterTableCache();
+            loaded.Data = File.ReadAllBytes(dataPath);
+            var header = Encoding.UTF8.GetString(File.ReadAllBytes(headerPath));
+            var entries = header.Split(new[] { ';', '\r', '\n' }, StringSplitOptions.RemoveEmptyEntries);
+            foreach (var entry in entries)
+            {
+                var colon = entry.IndexOf(':');
+                if (colon <= 0) continue;
+                var comma = entry.IndexOf(',', colon + 1);
+                if (comma <= colon + 1) continue;
+                if (!int.TryParse(entry.Substring(0, colon), out var id)) continue;
+                if (!int.TryParse(entry.Substring(colon + 1, comma - colon - 1), out var begin)) continue;
+                if (!int.TryParse(entry.Substring(comma + 1), out var length)) continue;
+                loaded.Rows[id] = new DataSlice(begin, length);
+            }
+
+            MonsterTableCaches[tableName] = loaded;
+            table = loaded;
+            return true;
+        }
+
+        private static bool TryReadJsonInt(string json, string marker, out int value)
+        {
+            value = 0;
+            if (string.IsNullOrEmpty(json)) return false;
+            var start = json.IndexOf(marker, StringComparison.Ordinal);
+            if (start < 0) return false;
+            start += marker.Length;
+            while (start < json.Length && char.IsWhiteSpace(json[start]))
+                start++;
+            var end = start;
+            while (end < json.Length && char.IsDigit(json[end]))
+                end++;
+            return end > start && int.TryParse(json.Substring(start, end - start), out value);
+        }
+
+        private static bool HasLocalPrefabBundle(int actorId)
+        {
+            var bundlePath = PrefabBundlePath(PrefabModelId(actorId));
+            var absolutePath = Path.Combine(BundleRoot(), bundlePath.Replace("/", Path.DirectorySeparatorChar.ToString()));
+            return File.Exists(absolutePath);
+        }
+
+        private static bool HasImportedSpineAsset(int actorId)
+        {
+#if UNITY_EDITOR
+            return AssetDatabase.LoadAssetAtPath<TextAsset>(ActorPath(actorId, ".atlas.txt")) != null &&
+                   AssetDatabase.LoadAssetAtPath<TextAsset>(ActorPath(actorId, ".skel.txt")) != null &&
+                   AssetDatabase.LoadAssetAtPath<Texture2D>(ActorPath(actorId, "_texture.png")) != null;
+#else
+            return false;
+#endif
         }
 
         private static bool TryAttachSpine(BattleRuntimeActorHandle handle, int actorId, bool isOurHero, out string failure)
@@ -398,15 +562,31 @@ namespace GirlsWar
 
         private static bool TryGetPrefabSpec(int actorId, out string bundlePath, out string prefabPath)
         {
-            var modelId = actorId == 1100111 ? 3001 : actorId;
-            bundlePath = "download/roleprefabsandres/battleprefabandres/" + modelId + ".assetbundle";
+            var modelId = PrefabModelId(actorId);
+            bundlePath = PrefabBundlePath(modelId);
             prefabPath = "assets/download/roleprefabsandres/battleprefabandres/" + modelId + "/hero_" + modelId + ".prefab";
-            return actorId == 1002 || actorId == 1034 || actorId == 1100111;
+            return File.Exists(Path.Combine(BundleRoot(), bundlePath.Replace("/", Path.DirectorySeparatorChar.ToString()))) ||
+                   ImportedActorIds.Contains(actorId);
+        }
+
+        private static int PrefabModelId(int actorId)
+        {
+            return actorId == 1100111 ? 3001 : actorId;
+        }
+
+        private static string PrefabBundlePath(int modelId)
+        {
+            return "download/roleprefabsandres/battleprefabandres/" + modelId + ".assetbundle";
         }
 
         private static string BundleRoot()
         {
             return Path.GetFullPath(Path.Combine(Application.dataPath, "../../girlswar_merged_extracted/extracted/unity/clean_unityfs_slices"));
+        }
+
+        private static string MergedRoot()
+        {
+            return Path.GetFullPath(Path.Combine(Application.dataPath, "../../girlswar_merged_extracted"));
         }
 
         private static AssetBundle GetOrLoadBundle(string absolutePath, out string failure)
@@ -569,6 +749,38 @@ namespace GirlsWar
                    " spine=" + handle.IsSpineActor +
                    " anim=" + handle.AnimationName +
                    " reason=" + handle.FallbackReason;
+        }
+
+        private struct DataSlice
+        {
+            public readonly int Begin;
+            public readonly int Length;
+
+            public DataSlice(int begin, int length)
+            {
+                Begin = begin;
+                Length = length;
+            }
+        }
+
+        private sealed class MonsterTableCache
+        {
+            public readonly Dictionary<int, DataSlice> Rows = new Dictionary<int, DataSlice>();
+            public byte[] Data = new byte[0];
+        }
+
+        private struct MonsterModelResolution
+        {
+            public readonly int ModelId;
+            public readonly int SourceMonsterId;
+            public readonly string SourceTable;
+
+            public MonsterModelResolution(int modelId, int sourceMonsterId, string sourceTable)
+            {
+                ModelId = modelId;
+                SourceMonsterId = sourceMonsterId;
+                SourceTable = sourceTable;
+            }
         }
     }
 }

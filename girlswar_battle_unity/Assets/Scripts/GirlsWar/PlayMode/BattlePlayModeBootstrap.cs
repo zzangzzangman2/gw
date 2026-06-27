@@ -473,12 +473,17 @@ namespace GirlsWar
                               local id = colon and maybe_id or self_or_id
                               local row = colon and orig(self_or_id, id) or orig(id)
                               if row == nil and type(id) == 'number' then
-                                local base = id - (id % 10)
-                                if base ~= id then
+                                local candidates = {}
+                                local last_digit_base = id - (id % 10)
+                                if last_digit_base ~= id then table.insert(candidates, last_digit_base) end
+                                local stage_base = math.floor(id / 100) * 100 + 10
+                                if stage_base ~= id and stage_base ~= last_digit_base then table.insert(candidates, stage_base) end
+                                for _, base in ipairs(candidates) do
                                   row = colon and orig(self_or_id, base) or orig(base)
                                   if row ~= nil then
                                     inc_global('BATTLE90_MONSTER_BASE_FALLBACK_COUNT')
                                     rawset(_G, 'BATTLE90_MONSTER_BASE_FALLBACK_LAST', tostring(label)..':'..tostring(id)..'->'..tostring(base))
+                                    break
                                   end
                                 end
                               end
@@ -935,10 +940,12 @@ namespace GirlsWar
             result.runtimeActorVisualFallbackCount = BattleRuntimeSpineActorFactory.VisualFallbackCount;
             result.runtimeActorQuadFallbackCount = BattleRuntimeSpineActorFactory.QuadFallbackCount;
             result.runtimeActorMissingAssetCount = BattleRuntimeSpineActorFactory.MissingAssetCount;
+            result.runtimeMonsterModelResolveCount = BattleRuntimeSpineActorFactory.MonsterModelResolveCount;
             result.runtimePreviewActionCount = BattleRuntimeSpineActorFactory.PreviewActionCount;
             result.runtimePreviewCompletedCount = BattleRuntimeSpineActorFactory.PreviewCompletedCount;
             result.runtimePreviewMissCount = BattleRuntimeSpineActorFactory.PreviewMissCount;
             result.runtimeActorLastSummary = BattleRuntimeSpineActorFactory.LastSummary;
+            result.runtimeMonsterModelResolveSummary = BattleRuntimeSpineActorFactory.MonsterModelResolveSummary;
             try { result.monsterBaseFallbackCount = env.Global.Get<int>("BATTLE90_MONSTER_BASE_FALLBACK_COUNT"); } catch { }
             try { result.defineLoadOk = env.Global.Get<bool>("BATTLE90_DEFINE_LOAD_OK"); } catch { }
             try { result.enumSnapshot = env.Global.Get<string>("BATTLE90_ENUM_SNAPSHOT") ?? ""; } catch { }
@@ -1095,6 +1102,7 @@ namespace GirlsWar
                 " runtimeVisualFallback=" + result.runtimeActorVisualFallbackCount +
                 " runtimeQuadFallback=" + result.runtimeActorQuadFallbackCount +
                 " runtimeMissingAsset=" + result.runtimeActorMissingAssetCount +
+                " runtimeMonsterModelResolve=" + result.runtimeMonsterModelResolveCount +
                 " runtimePreview=" + result.runtimePreviewActionCount +
                 " runtimePreviewDone=" + result.runtimePreviewCompletedCount +
                 " runtimePreviewMiss=" + result.runtimePreviewMissCount;
@@ -1500,10 +1508,12 @@ namespace GirlsWar
             public int runtimeActorVisualFallbackCount;
             public int runtimeActorQuadFallbackCount;
             public int runtimeActorMissingAssetCount;
+            public int runtimeMonsterModelResolveCount;
             public int runtimePreviewActionCount;
             public int runtimePreviewCompletedCount;
             public int runtimePreviewMissCount;
             public string runtimeActorLastSummary;
+            public string runtimeMonsterModelResolveSummary;
             public string visualCameraName;
             public float visualCameraOrthographicSize;
             public int visualActorHandleCount;
