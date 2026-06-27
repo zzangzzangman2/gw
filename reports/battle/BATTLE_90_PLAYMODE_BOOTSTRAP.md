@@ -19,8 +19,9 @@
 - attack preview proof: `runtimePreview=72`, `runtimePreviewDone=72`, `runtimePreviewMiss=0`
 - capture size: `1280x570`
 - sequence captures: `6`
-- visual actor overlap metric: `maxOverlap=0.17733`, `overlapPairs=1`
-- capture non-dark sample count: `2537`
+- visual tuning: `battle90-no-overlap-v2`, `mapWidthUnits=12.85/centered-three-lane/no-overlap-scale`
+- visual actor overlap metric: `maxOverlap=0`, `overlapPairs=0`, `minCenterPx=139.81`
+- capture non-dark sample count: `2565`
 
 ## Real Attack Task Probe
 
@@ -36,7 +37,8 @@
 - full-round proof: `bigBegin=20`, `bigEnd=20`, `smallBegin=20`, `smallEnd=40`, `finalBattleEnd=1`, `isBattleEnd=true`, `coroutinePending=0`
 - real attack proof: `mgrAddTask=29`, `mgrExecute=29`, `mgrExecuteNormal=22`, `heroBig=7`, `heroNormal=22`, `realAttackPreview=29`, `realAttackPreviewMiss=0`
 - runtime preview proof: `runtimePreview=29`, `runtimePreviewDone=29`, `runtimePreviewMiss=0`
-- visual actor overlap metric: `maxOverlap=0`, `overlapPairs=0`
+- visual tuning: `battle90-no-overlap-v2`, `mapWidthUnits=12.85/centered-three-lane/no-overlap-scale`
+- visual actor overlap metric: `maxOverlap=0`, `overlapPairs=0`, `minCenterPx=141.1`
 - sequence captures: `6`
 - source-backed monster model proof: `runtimeMonsterModelResolve=3`, last resolve `1100113 -> 1100110/DTMonster_KEntityTableData/model_3006`
 
@@ -46,6 +48,8 @@
 - Replaced the old `Map_11001` rocky background with extracted `Map_11003` layers (`Map_11003_2`, `Map_11003_3`, `Map_11003_5`), matching the reference battle-map family previously identified by BATTLE26 as the top video match.
 - Added a lightweight reference battle HUD overlay in the BATTLE90 Play Mode camera: top HP/energy bars, `VS`, right AUTO/speed buttons, and bottom skill-card slots.
 - Reworked formation placement for the reference-video battle framing, keeping actors readable while moving them closer to the original 1280x570 battle composition.
+- Expanded the `Map_11003` layer width to the 1280x570 camera framing, reducing the brown side margins that made actors feel squeezed.
+- Added the `battle90-no-overlap-v2` visual layout: centered three-lane 3v3 positions, smaller per-actor Spine scales for large mounted/monster bodies, and shorter capped attack dash distance so attack frames no longer shove actors into each other.
 - Added per-actor screen rect diagnostics, max-overlap metrics, min center distance, and world/screen position summaries to the result JSON.
 - Added sequence capture output for both default PlayMode and RealAttackProbe runs, so motion is verified as multiple frames instead of a single idle/final screenshot.
 - Upgraded actor preview motion from a small pulse to an attack dash toward the opposing side.
@@ -54,7 +58,7 @@
 
 ## Current Boundary / SOS
 
-BATTLE90 is much closer to the supplied reference video now: it uses the same `1280x570` battle aspect, the `Map_11003` reference map family, a visible battle HUD frame, 6 real Spine/prefab-backed actors, source-backed enemy monster visual resolution, and frame-sequence captures showing dash/slash attack moments. RealAttackProbe also completes the original full-round coroutine path with 29 real attack previews and no Unity errors.
+BATTLE90 is much closer to the supplied reference video now: it uses the same `1280x570` battle aspect, the `Map_11003` reference map family, a visible battle HUD frame, 6 real Spine/prefab-backed actors, source-backed enemy monster visual resolution, and frame-sequence captures showing dash/slash attack moments. The latest no-overlap visual pass verifies `visualMaxOverlap=0` and `visualOverlapPairs=0` in both Default PlayMode and RealAttackProbe. RealAttackProbe also completes the original full-round coroutine path with 29 real attack previews and no Unity errors.
 
 This is still not a perfect original-client battle replay. The remaining gaps are:
 

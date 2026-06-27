@@ -23,6 +23,8 @@ namespace GirlsWar
         private static bool configuredUseAttackTaskPreview = true;
         private const int CaptureWidth = 1280;
         private const int CaptureHeight = 570;
+        private const string VisualTuningVersion = "battle90-no-overlap-v2";
+        private const float VisualMapWidthUnits = 12.85f;
 
         [SerializeField] private int frameBudget = 240;
 
@@ -1140,8 +1142,8 @@ namespace GirlsWar
             camera.clearFlags = CameraClearFlags.SolidColor;
             camera.backgroundColor = new Color(0.025f, 0.028f, 0.034f, 1f);
             camera.orthographic = true;
-            camera.orthographicSize = 2.85f;
-            camera.transform.position = new Vector3(0f, -0.55f, -10f);
+            camera.orthographicSize = 2.86f;
+            camera.transform.position = new Vector3(0f, -0.58f, -10f);
             camera.transform.rotation = Quaternion.identity;
 
             var stage = GameObject.Find("B90_VisualStage");
@@ -1162,9 +1164,9 @@ namespace GirlsWar
             root.transform.SetParent(parent, false);
             CreateMapFill(root.transform);
             var created =
-                CreateMapLayer(root.transform, "Map_11003_5.png", "B90_Map_11003_BackVillage", 10.5f, -1.52f, 2f, -130) |
-                CreateMapLayer(root.transform, "Map_11003_3.png", "B90_Map_11003_Skyline", 10.5f, 0.25f, 1.95f, -125) |
-                CreateMapLayer(root.transform, "Map_11003_2.png", "B90_Map_11003_Ground", 10.5f, -2.42f, 1.9f, -120);
+                CreateMapLayer(root.transform, "Map_11003_5.png", "B90_Map_11003_BackVillage", VisualMapWidthUnits, -1.63f, 2f, -130) |
+                CreateMapLayer(root.transform, "Map_11003_3.png", "B90_Map_11003_Skyline", VisualMapWidthUnits, 0.04f, 1.95f, -125) |
+                CreateMapLayer(root.transform, "Map_11003_2.png", "B90_Map_11003_Ground", VisualMapWidthUnits, -2.78f, 1.9f, -120);
 
             if (!created)
                 CreateMapLayer(root.transform, "Map_11001_2.png", "B90_Map_11001_Fallback", 10.5f, -2.1f, 2f, -120);
@@ -1175,7 +1177,7 @@ namespace GirlsWar
             var go = new GameObject("B90_Map_11003_SunsetFill");
             go.transform.SetParent(parent, false);
             go.transform.localPosition = new Vector3(0f, 0f, 2.1f);
-            go.transform.localScale = new Vector3(12.5f, 5.8f, 1f);
+            go.transform.localScale = new Vector3(13.2f, 5.9f, 1f);
             var renderer = go.AddComponent<SpriteRenderer>();
             renderer.sprite = SolidSprite();
             renderer.color = new Color(0.38f, 0.22f, 0.17f, 1f);
@@ -1387,6 +1389,8 @@ namespace GirlsWar
             }
 
             result.visualActorRendererCount = rendererCount;
+            result.visualTuningVersion = VisualTuningVersion;
+            result.visualLayoutSummary = "mapWidthUnits=" + VisualMapWidthUnits.ToString("0.##") + "/centered-three-lane/no-overlap-scale";
             result.visualActorWorldBounds = hasBounds ? Vec(combined.center) + "|" + Vec(combined.size) : "";
             result.visualActorScreenRect = hasBounds && camera != null ? ScreenRect(camera, combined) : "";
             result.visualActorScreenAreaRatio = hasBounds && camera != null ? ScreenAreaRatio(camera, combined) : 0f;
@@ -1649,21 +1653,21 @@ namespace GirlsWar
             var positions = sprite.IsOurHero
                 ? new[]
                 {
-                    new Vector3(-1.55f, -1.05f, 0f),
-                    new Vector3(-3.35f, -1.85f, 0f),
-                    new Vector3(-4.7f, -0.65f, 0f),
-                    new Vector3(-2.4f, -1.95f, 0f),
-                    new Vector3(-3.75f, -2.2f, 0f),
-                    new Vector3(-0.95f, -1.85f, 0f),
+                    new Vector3(-1.15f, -1.18f, 0f),
+                    new Vector3(-2.55f, -2.25f, 0f),
+                    new Vector3(-3.55f, -0.78f, 0f),
+                    new Vector3(-1.95f, -2.1f, 0f),
+                    new Vector3(-3.15f, -2.12f, 0f),
+                    new Vector3(-0.55f, -1.78f, 0f),
                 }
                 : new[]
                 {
-                    new Vector3(1.55f, -1.05f, 0f),
-                    new Vector3(3.35f, -1.85f, 0f),
-                    new Vector3(4.7f, -0.65f, 0f),
-                    new Vector3(2.4f, -1.95f, 0f),
-                    new Vector3(3.75f, -2.2f, 0f),
-                    new Vector3(0.95f, -1.85f, 0f),
+                    new Vector3(1.15f, -1.18f, 0f),
+                    new Vector3(2.55f, -2.25f, 0f),
+                    new Vector3(3.55f, -0.78f, 0f),
+                    new Vector3(1.95f, -2.1f, 0f),
+                    new Vector3(3.15f, -2.12f, 0f),
+                    new Vector3(0.55f, -1.78f, 0f),
                 };
 
             var index = Mathf.Clamp(slot, 0, positions.Length - 1);
@@ -1771,6 +1775,8 @@ namespace GirlsWar
             public string runtimeMonsterModelResolveSummary;
             public string visualCameraName;
             public float visualCameraOrthographicSize;
+            public string visualTuningVersion;
+            public string visualLayoutSummary;
             public int visualActorHandleCount;
             public int visualActorRendererCount;
             public string visualActorWorldBounds;

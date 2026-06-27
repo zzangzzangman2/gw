@@ -54,14 +54,16 @@ namespace GirlsWar
 
             var target = isAttack ? BattleRuntimeSpineActorFactory.FindNearestOpponent(this) : null;
             var direction = IsOurHero ? 1f : -1f;
-            var distance = isAttack ? (actionType == 1 ? 0.92f : 0.68f) : 0.08f;
+            var distance = isAttack ? (actionType == 1 ? 0.58f : 0.38f) : 0.05f;
+            if (isAttack && target != null)
+                distance = Mathf.Min(distance, Mathf.Max(0.12f, Mathf.Abs(target.transform.position.x - transform.position.x) * 0.22f));
             var frames = isAttack ? 10 : 8;
             for (var frame = 0; frame < frames; frame++)
             {
                 var t = (frame + 1f) / frames;
                 var wave = Mathf.Sin(t * Mathf.PI);
-                transform.localPosition = baseLocalPosition + new Vector3(direction * distance * wave, 0.08f * wave, 0f);
-                transform.localScale = baseLocalScale * (1f + 0.08f * wave);
+                transform.localPosition = baseLocalPosition + new Vector3(direction * distance * wave, 0.06f * wave, 0f);
+                transform.localScale = baseLocalScale * (1f + 0.045f * wave);
                 if (isAttack && frame == frames / 2 && target != null)
                 {
                     StartCoroutine(BattleRuntimeSpineActorFactory.PlayHitSlash(target.transform.position, actionType == 1));
@@ -86,8 +88,8 @@ namespace GirlsWar
             {
                 var t = (frame + 1f) / frames;
                 var wave = Mathf.Sin(t * Mathf.PI);
-                transform.localPosition = baseLocalPosition + new Vector3((IsOurHero ? -1f : 1f) * 0.08f * wave, 0f, 0f);
-                transform.localScale = baseLocalScale * (1f + 0.05f * wave);
+                transform.localPosition = baseLocalPosition + new Vector3((IsOurHero ? -1f : 1f) * 0.055f * wave, 0f, 0f);
+                transform.localScale = baseLocalScale * (1f + 0.03f * wave);
                 yield return null;
             }
 
@@ -789,15 +791,27 @@ namespace GirlsWar
         private static void ApplyActorPose(Transform transform, bool isOurHero, bool isSpine, int actorId)
         {
             transform.localRotation = Quaternion.identity;
-            var scale = isSpine ? 0.46f : 0.75f;
-            if (isSpine && actorId >= 3000)
-                scale = 0.4f;
+            var scale = ActorVisualScale(actorId, isSpine);
             transform.localScale = Vector3.one * scale;
             if (!isOurHero)
             {
                 var localScale = transform.localScale;
                 localScale.x = -Mathf.Abs(localScale.x);
                 transform.localScale = localScale;
+            }
+        }
+
+        private static float ActorVisualScale(int actorId, bool isSpine)
+        {
+            if (!isSpine)
+                return 0.68f;
+            switch (actorId)
+            {
+                case 1002: return 0.42f;
+                case 1034: return 0.36f;
+                case 3001: return 0.37f;
+                case 3006: return 0.34f;
+                default: return actorId >= 3000 ? 0.34f : 0.42f;
             }
         }
 
