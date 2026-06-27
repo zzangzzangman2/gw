@@ -952,8 +952,13 @@ namespace GirlsWar
             result.runtimePreviewActionCount = BattleRuntimeSpineActorFactory.PreviewActionCount;
             result.runtimePreviewCompletedCount = BattleRuntimeSpineActorFactory.PreviewCompletedCount;
             result.runtimePreviewMissCount = BattleRuntimeSpineActorFactory.PreviewMissCount;
+            result.runtimeSourceSkillSpecResolveCount = BattleRuntimeSpineActorFactory.SourceSkillSpecResolveCount;
+            result.runtimeSkillTimelineBlockedCount = BattleRuntimeSpineActorFactory.SkillTimelineBlockedCount;
+            result.runtimeSkillHitEffectCount = BattleRuntimeSpineActorFactory.HitEffectCount;
             result.runtimeActorLastSummary = BattleRuntimeSpineActorFactory.LastSummary;
             result.runtimeMonsterModelResolveSummary = BattleRuntimeSpineActorFactory.MonsterModelResolveSummary;
+            result.runtimeSkillSpecSummary = BattleRuntimeSpineActorFactory.LastSkillSpecSummary;
+            result.runtimeSkillSpecTrace = BattleRuntimeSpineActorFactory.SkillSpecTraceSummary;
             try { result.monsterBaseFallbackCount = env.Global.Get<int>("BATTLE90_MONSTER_BASE_FALLBACK_COUNT"); } catch { }
             try { result.defineLoadOk = env.Global.Get<bool>("BATTLE90_DEFINE_LOAD_OK"); } catch { }
             try { result.enumSnapshot = env.Global.Get<string>("BATTLE90_ENUM_SNAPSHOT") ?? ""; } catch { }
@@ -1113,7 +1118,10 @@ namespace GirlsWar
                 " runtimeMonsterModelResolve=" + result.runtimeMonsterModelResolveCount +
                 " runtimePreview=" + result.runtimePreviewActionCount +
                 " runtimePreviewDone=" + result.runtimePreviewCompletedCount +
-                " runtimePreviewMiss=" + result.runtimePreviewMissCount;
+                " runtimePreviewMiss=" + result.runtimePreviewMissCount +
+                " runtimeSourceSkillSpec=" + result.runtimeSourceSkillSpecResolveCount +
+                " runtimeSkillTimelineBlocked=" + result.runtimeSkillTimelineBlockedCount +
+                " runtimeHitEffect=" + result.runtimeSkillHitEffectCount;
         }
 
         private static void AppendVisualDiagnostics(Result result)
@@ -1771,8 +1779,13 @@ namespace GirlsWar
             public int runtimePreviewActionCount;
             public int runtimePreviewCompletedCount;
             public int runtimePreviewMissCount;
+            public int runtimeSourceSkillSpecResolveCount;
+            public int runtimeSkillTimelineBlockedCount;
+            public int runtimeSkillHitEffectCount;
             public string runtimeActorLastSummary;
             public string runtimeMonsterModelResolveSummary;
+            public string runtimeSkillSpecSummary;
+            public string runtimeSkillSpecTrace;
             public string visualCameraName;
             public float visualCameraOrthographicSize;
             public string visualTuningVersion;

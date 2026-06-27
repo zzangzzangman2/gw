@@ -13,6 +13,32 @@ using UnityEditor;
 
 namespace GirlsWar
 {
+    internal sealed class BattleRuntimeSkillPreviewSpec
+    {
+        public bool IsAttack;
+        public bool Big;
+        public bool SourceBacked;
+        public bool TimelineBlocked;
+        public int SourceFamilyId;
+        public int EffectiveSkillDid;
+        public int PrefabId;
+        public int FastPrefabId;
+        public int EffectShape;
+        public int MotionFrames;
+        public float DashDistance;
+        public float DashLift;
+        public float ScalePulse;
+        public float LineWidth;
+        public float StartScale;
+        public float EndScale;
+        public Color PrimaryColor;
+        public Color SecondaryColor;
+        public string BundlePath = "";
+        public string AssetPath = "";
+        public string Summary = "";
+        public string[] AnimationCandidates = new[] { "stand", "idle", "Idle" };
+    }
+
     public sealed class BattleRuntimeActorHandle : MonoBehaviour
     {
         public Transform Transform { get { return transform; } }
@@ -46,28 +72,29 @@ namespace GirlsWar
             for (var i = 0; i < delayFrames; i++)
                 yield return null;
 
-            var isAttack = actionType == 1 || actionType == 2;
+            var spec = BattleRuntimeSpineActorFactory.ResolveSkillPreviewSpec(this, actionType, skillDid);
+            var isAttack = spec.IsAttack;
             if (isAttack)
-                PlayFirstExistingAnimation(actionType == 1 ? new[] { "ult", "skill1", "attack", "stand" } : new[] { "attack", "skill1", "stand" });
+                PlayFirstExistingAnimation(spec.AnimationCandidates);
             else
                 PlayFirstExistingAnimation(new[] { "stand", "idle", "Idle" });
 
             var target = isAttack ? BattleRuntimeSpineActorFactory.FindNearestOpponent(this) : null;
             var direction = IsOurHero ? 1f : -1f;
-            var distance = isAttack ? (actionType == 1 ? 0.58f : 0.38f) : 0.05f;
+            var distance = isAttack ? spec.DashDistance : 0.05f;
             if (isAttack && target != null)
                 distance = Mathf.Min(distance, Mathf.Max(0.12f, Mathf.Abs(target.transform.position.x - transform.position.x) * 0.22f));
-            var frames = isAttack ? 10 : 8;
+            var frames = isAttack ? spec.MotionFrames : 8;
             for (var frame = 0; frame < frames; frame++)
             {
                 var t = (frame + 1f) / frames;
                 var wave = Mathf.Sin(t * Mathf.PI);
-                transform.localPosition = baseLocalPosition + new Vector3(direction * distance * wave, 0.06f * wave, 0f);
-                transform.localScale = baseLocalScale * (1f + 0.045f * wave);
+                transform.localPosition = baseLocalPosition + new Vector3(direction * distance * wave, spec.DashLift * wave, 0f);
+                transform.localScale = baseLocalScale * (1f + spec.ScalePulse * wave);
                 if (isAttack && frame == frames / 2 && target != null)
                 {
-                    StartCoroutine(BattleRuntimeSpineActorFactory.PlayHitSlash(target.transform.position, actionType == 1));
-                    target.StartCoroutine(target.PlayHitPulse(actionType == 1));
+                    StartCoroutine(BattleRuntimeSpineActorFactory.PlayHitSlash(target.transform.position, spec));
+                    target.StartCoroutine(target.PlayHitPulse(spec.Big));
                 }
                 yield return null;
             }
@@ -131,6 +158,7 @@ namespace GirlsWar
         private static readonly Dictionary<string, MonsterTableCache> MonsterTableCaches = new Dictionary<string, MonsterTableCache>(StringComparer.OrdinalIgnoreCase);
         private static readonly Dictionary<int, MonsterModelResolution> MonsterModelCache = new Dictionary<int, MonsterModelResolution>();
         private static readonly Dictionary<int, BattleRuntimeActorHandle> HandlesByHeroId = new Dictionary<int, BattleRuntimeActorHandle>();
+        private static readonly List<string> SkillSpecTrace = new List<string>();
         private static int previewCursor;
 
         public static int AttachCount { get; private set; }
@@ -143,8 +171,13 @@ namespace GirlsWar
         public static int PreviewActionCount { get; private set; }
         public static int PreviewCompletedCount { get; private set; }
         public static int PreviewMissCount { get; private set; }
+        public static int SourceSkillSpecResolveCount { get; private set; }
+        public static int SkillTimelineBlockedCount { get; private set; }
+        public static int HitEffectCount { get; private set; }
         public static string LastSummary { get; private set; } = "";
         public static string MonsterModelResolveSummary { get; private set; } = "";
+        public static string LastSkillSpecSummary { get; private set; } = "";
+        public static string SkillSpecTraceSummary { get { return string.Join("|", SkillSpecTrace.ToArray()); } }
 
         public static void ResetDiagnostics()
         {
@@ -158,10 +191,15 @@ namespace GirlsWar
             PreviewActionCount = 0;
             PreviewCompletedCount = 0;
             PreviewMissCount = 0;
+            SourceSkillSpecResolveCount = 0;
+            SkillTimelineBlockedCount = 0;
+            HitEffectCount = 0;
             previewCursor = 0;
             HandlesByHeroId.Clear();
+            SkillSpecTrace.Clear();
             LastSummary = "";
             MonsterModelResolveSummary = "";
+            LastSkillSpecSummary = "";
         }
 
         public static BattleRuntimeActorHandle AttachActor(
@@ -283,43 +321,202 @@ namespace GirlsWar
             return best;
         }
 
-        internal static IEnumerator PlayHitSlash(Vector3 worldPosition, bool big)
+        internal static BattleRuntimeSkillPreviewSpec ResolveSkillPreviewSpec(BattleRuntimeActorHandle handle, int actionType, int skillDid)
         {
+            var spec = BuildSkillPreviewSpec(handle, actionType, skillDid);
+            if (spec.SourceBacked)
+                SourceSkillSpecResolveCount++;
+            if (spec.TimelineBlocked)
+                SkillTimelineBlockedCount++;
+
+            LastSkillSpecSummary = spec.Summary;
+            if (SkillSpecTrace.Count < 16)
+                SkillSpecTrace.Add(spec.Summary);
+            return spec;
+        }
+
+        internal static IEnumerator PlayHitSlash(Vector3 worldPosition, BattleRuntimeSkillPreviewSpec spec)
+        {
+            if (spec == null)
+                yield break;
+
+            HitEffectCount++;
             var shader = Shader.Find("Sprites/Default");
             if (shader == null)
                 shader = Shader.Find("Legacy Shaders/Particles/Alpha Blended");
             if (shader == null)
                 yield break;
 
-            var go = new GameObject(big ? "B90_BigHitSlash" : "B90_HitSlash");
-            go.transform.position = worldPosition + new Vector3(0f, 0.72f, -0.25f);
+            var go = new GameObject(spec.Big ? "B90_SourceBackedBigHit_" + spec.EffectiveSkillDid : "B90_SourceBackedHit_" + spec.EffectiveSkillDid);
+            go.transform.position = worldPosition + new Vector3(0f, spec.Big ? 0.78f : 0.66f, -0.25f);
             var line = go.AddComponent<LineRenderer>();
             line.useWorldSpace = false;
-            line.positionCount = big ? 5 : 4;
-            line.widthMultiplier = big ? 0.12f : 0.08f;
+            var points = SkillEffectPoints(spec);
+            line.positionCount = points.Length;
+            line.widthMultiplier = spec.LineWidth;
             line.sortingOrder = 500;
             line.material = new Material(shader);
-            line.material.color = big ? new Color(1f, 0.18f, 0.82f, 0.95f) : new Color(0.45f, 0.9f, 1f, 0.92f);
-            line.SetPosition(0, new Vector3(-0.52f, -0.36f, 0f));
-            line.SetPosition(1, new Vector3(-0.12f, 0.08f, 0f));
-            line.SetPosition(2, new Vector3(0.28f, 0.34f, 0f));
-            line.SetPosition(3, new Vector3(0.58f, 0.48f, 0f));
-            if (big)
-                line.SetPosition(4, new Vector3(0.82f, 0.62f, 0f));
+            line.material.color = Color.white;
+            line.startColor = spec.PrimaryColor;
+            line.endColor = spec.SecondaryColor;
+            for (var i = 0; i < points.Length; i++)
+                line.SetPosition(i, points[i]);
 
-            var frames = big ? 14 : 10;
+            var frames = spec.Big ? 14 : 10;
             for (var frame = 0; frame < frames; frame++)
             {
                 var t = (frame + 1f) / frames;
                 var alpha = 1f - t;
-                go.transform.localScale = Vector3.one * (0.72f + t * (big ? 1.25f : 0.9f));
-                var color = line.material.color;
-                color.a = alpha;
-                line.material.color = color;
+                go.transform.localScale = Vector3.one * Mathf.Lerp(spec.StartScale, spec.EndScale, t);
+                var start = spec.PrimaryColor;
+                var end = spec.SecondaryColor;
+                start.a *= alpha;
+                end.a *= alpha;
+                line.startColor = start;
+                line.endColor = end;
                 yield return null;
             }
 
             UnityEngine.Object.Destroy(go);
+        }
+
+        private static BattleRuntimeSkillPreviewSpec BuildSkillPreviewSpec(BattleRuntimeActorHandle handle, int actionType, int skillDid)
+        {
+            var isAttack = actionType == 1 || actionType == 2 || actionType == 3 || actionType == 4;
+            var big = actionType == 1 || actionType == 3 || SkillTierFromDid(skillDid) == 3;
+            var family = ResolveSkillFamily(handle);
+            var tier = ResolveSkillTier(skillDid, actionType);
+            var effectiveSkillDid = skillDid >= 100000 ? skillDid : family * 1000 + tier * 100 + 1;
+            var prefabId = effectiveSkillDid;
+            var fastPrefabId = tier == 3 ? family * 1000 + 351 : 0;
+            var sourceBacked = family == 1002 || family == 1034 || family == 1012;
+            var spec = new BattleRuntimeSkillPreviewSpec
+            {
+                IsAttack = isAttack,
+                Big = big,
+                SourceBacked = sourceBacked,
+                TimelineBlocked = sourceBacked,
+                SourceFamilyId = family,
+                EffectiveSkillDid = effectiveSkillDid,
+                PrefabId = prefabId,
+                FastPrefabId = fastPrefabId,
+                BundlePath = "download/skillprefabsandres/" + family + ".assetbundle",
+                AssetPath = "assets/download/skillprefabsandres/" + family + "/" + prefabId + ".prefab",
+                MotionFrames = big ? 12 : 9,
+                DashDistance = big ? 0.58f : 0.38f,
+                DashLift = big ? 0.075f : 0.055f,
+                ScalePulse = big ? 0.055f : 0.035f,
+                LineWidth = big ? 0.13f : 0.085f,
+                StartScale = big ? 0.7f : 0.62f,
+                EndScale = big ? 1.95f : 1.25f,
+                AnimationCandidates = big
+                    ? new[] { "ult", "skill2", "skill1", "attack", "stand" }
+                    : new[] { "attack", "skill1", "stand" },
+            };
+
+            ApplySkillFamilyStyle(spec, family, big);
+            spec.Summary =
+                "actor=" + (handle != null ? handle.RequestedHeroDid : 0) +
+                " resolved=" + (handle != null ? handle.ResolvedActorId : 0) +
+                " action=" + actionType +
+                " skillIn=" + skillDid +
+                " sourceFamily=" + family +
+                " skill=" + effectiveSkillDid +
+                " prefab=" + prefabId +
+                (fastPrefabId != 0 ? "/fast=" + fastPrefabId : "") +
+                " bundle=" + spec.BundlePath +
+                " timelineBlocked=" + spec.TimelineBlocked;
+            return spec;
+        }
+
+        private static void ApplySkillFamilyStyle(BattleRuntimeSkillPreviewSpec spec, int family, bool big)
+        {
+            switch (family)
+            {
+                case 1002:
+                    spec.EffectShape = 0;
+                    spec.PrimaryColor = big ? new Color(0.35f, 0.95f, 1f, 0.96f) : new Color(0.42f, 0.82f, 1f, 0.92f);
+                    spec.SecondaryColor = big ? new Color(1f, 1f, 1f, 0.88f) : new Color(0.8f, 1f, 1f, 0.78f);
+                    break;
+                case 1034:
+                    spec.EffectShape = 1;
+                    spec.PrimaryColor = big ? new Color(1f, 0.78f, 0.18f, 0.96f) : new Color(1f, 0.92f, 0.45f, 0.9f);
+                    spec.SecondaryColor = new Color(1f, 1f, 0.9f, big ? 0.88f : 0.72f);
+                    spec.LineWidth *= 1.08f;
+                    break;
+                case 1012:
+                    spec.EffectShape = 2;
+                    spec.PrimaryColor = big ? new Color(1f, 0.16f, 0.22f, 0.96f) : new Color(1f, 0.42f, 0.18f, 0.9f);
+                    spec.SecondaryColor = big ? new Color(1f, 0.15f, 0.9f, 0.82f) : new Color(1f, 0.74f, 0.35f, 0.72f);
+                    spec.DashDistance *= 0.92f;
+                    break;
+                default:
+                    spec.EffectShape = 0;
+                    spec.PrimaryColor = big ? new Color(1f, 0.18f, 0.82f, 0.95f) : new Color(0.45f, 0.9f, 1f, 0.92f);
+                    spec.SecondaryColor = new Color(1f, 1f, 1f, 0.7f);
+                    break;
+            }
+        }
+
+        private static int ResolveSkillFamily(BattleRuntimeActorHandle handle)
+        {
+            if (handle == null)
+                return 1002;
+            var requested = handle.RequestedHeroDid != 0 ? handle.RequestedHeroDid : handle.RequestedHeroId;
+            if (!handle.IsOurHero || requested >= 1100000 || handle.ResolvedActorId >= 3000)
+                return 1012;
+            if (handle.ResolvedActorId == 1034 || requested == 1034 || requested == 1036)
+                return 1034;
+            return 1002;
+        }
+
+        private static int ResolveSkillTier(int skillDid, int actionType)
+        {
+            var fromDid = SkillTierFromDid(skillDid);
+            if (fromDid != 0)
+                return fromDid;
+            if (actionType == 1 || actionType == 3)
+                return 3;
+            if (actionType == 4)
+                return 2;
+            return 1;
+        }
+
+        private static int SkillTierFromDid(int skillDid)
+        {
+            var suffix = Mathf.Abs(skillDid) % 1000;
+            if (suffix >= 300)
+                return 3;
+            if (suffix >= 200)
+                return 2;
+            if (suffix >= 100)
+                return 1;
+            if (skillDid == 3)
+                return 3;
+            if (skillDid == 2)
+                return 2;
+            if (skillDid == 1)
+                return 1;
+            return 0;
+        }
+
+        private static Vector3[] SkillEffectPoints(BattleRuntimeSkillPreviewSpec spec)
+        {
+            switch (spec.EffectShape)
+            {
+                case 1:
+                    return spec.Big
+                        ? new[] { new Vector3(-0.62f, 0.5f, 0f), new Vector3(-0.2f, 0.16f, 0f), new Vector3(0.08f, -0.1f, 0f), new Vector3(0.32f, -0.42f, 0f), new Vector3(0.54f, -0.68f, 0f) }
+                        : new[] { new Vector3(-0.42f, 0.34f, 0f), new Vector3(-0.1f, 0.08f, 0f), new Vector3(0.24f, -0.22f, 0f), new Vector3(0.44f, -0.42f, 0f) };
+                case 2:
+                    return spec.Big
+                        ? new[] { new Vector3(-0.72f, -0.24f, 0f), new Vector3(-0.34f, 0.2f, 0f), new Vector3(0.16f, 0.46f, 0f), new Vector3(0.58f, 0.34f, 0f), new Vector3(0.9f, 0.08f, 0f) }
+                        : new[] { new Vector3(-0.5f, -0.18f, 0f), new Vector3(-0.12f, 0.12f, 0f), new Vector3(0.28f, 0.22f, 0f), new Vector3(0.58f, 0.1f, 0f) };
+                default:
+                    return spec.Big
+                        ? new[] { new Vector3(-0.58f, -0.38f, 0f), new Vector3(-0.18f, 0.1f, 0f), new Vector3(0.26f, 0.38f, 0f), new Vector3(0.62f, 0.54f, 0f), new Vector3(0.9f, 0.68f, 0f) }
+                        : new[] { new Vector3(-0.52f, -0.34f, 0f), new Vector3(-0.12f, 0.08f, 0f), new Vector3(0.28f, 0.32f, 0f), new Vector3(0.58f, 0.46f, 0f) };
+            }
         }
 
         private static void RegisterHandle(BattleRuntimeActorHandle handle)
