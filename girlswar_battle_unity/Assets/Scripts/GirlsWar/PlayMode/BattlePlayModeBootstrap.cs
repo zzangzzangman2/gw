@@ -1504,7 +1504,9 @@ namespace GirlsWar
             camera.orthographic = true;
             // Symmetric framing of the real scene formation (teams at world x=-4..+4, stations
             // span x[-6.65,+6.65]). Centered at x=0 so our team sits left, enemy right, like the scene.
-            camera.orthographicSize = 3.0f;
+            // ortho 3.5: half-width = 3.5*aspect(2.245) = 7.86 world units, so even the back-corner
+            // station (x=-6.65) plus the actor's ~0.75 half-width stays inside the frame (no clipping).
+            camera.orthographicSize = 3.5f;
             camera.transform.position = new Vector3(0f, -1.6f, -10f);
             camera.transform.rotation = Quaternion.identity;
 
