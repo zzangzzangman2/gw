@@ -11,6 +11,7 @@ namespace GirlsWar
     public sealed class BattlePlayModeBootstrap : MonoBehaviour
     {
         public const string DefaultResultFileName = "BATTLE_90_PLAYMODE_BOOTSTRAP_RESULT.json";
+        public const string RealAttackProbeResultFileName = "BATTLE_90_REAL_ATTACK_PROBE_RESULT.json";
 
         public static bool Completed { get; private set; }
         public static int LastExitCode { get; private set; } = 1;
@@ -18,6 +19,7 @@ namespace GirlsWar
         public static string ResultPath { get; private set; }
 
         private static int configuredFrameBudget = 240;
+        private static bool configuredUseAttackTaskPreview = true;
         private const int CaptureWidth = 1280;
         private const int CaptureHeight = 720;
 
@@ -45,6 +47,10 @@ namespace GirlsWar
               __tostring = function() return '' end,
             })
             _G.NOOP_STUB = NOOP
+            rawset(_G, 'LuaUtils', {
+              IsNull = function(v) return v == nil or v == NOOP end,
+            })
+            setmetatable(LuaUtils, { __index = function() return NOOP end })
             rawset(_G, 'IsNil', function(v) return v == nil or v == NOOP end)
             rawset(_G, 'WaitUntil', function() return nil end)
             local function logf() end
@@ -72,8 +78,14 @@ namespace GirlsWar
 
         public static void ConfigureForEditorRun(string resultPath, int frames)
         {
+            ConfigureForEditorRun(resultPath, frames, true);
+        }
+
+        public static void ConfigureForEditorRun(string resultPath, int frames, bool useAttackTaskPreview)
+        {
             ResultPath = resultPath;
             configuredFrameBudget = frames;
+            configuredUseAttackTaskPreview = useAttackTaskPreview;
             Completed = false;
             LastExitCode = 1;
             LastStatus = "";
@@ -108,6 +120,7 @@ namespace GirlsWar
             {
                 generatedAt = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"),
                 frameBudget = frameBudget,
+                useAttackTaskPreview = configuredUseAttackTaskPreview,
                 playModeEntered = Application.isPlaying,
                 decodedLuaIndexCount = GirlsWarLuaLoader.IndexCount,
             };
@@ -124,6 +137,7 @@ namespace GirlsWar
                 stages.Add("luaenv+loader");
 
                 env.DoString(SetupEnv);
+                env.Global.Set("BATTLE90_USE_ATTACK_TASK_PREVIEW", configuredUseAttackTaskPreview);
                 LuaNoopHolder.Noop = env.Global.Get<LuaTable>("NOOP_STUB");
                 stages.Add("permissive-_G");
 
@@ -139,6 +153,27 @@ namespace GirlsWar
                     if ok and type(m)=='table' and type(rawget(_G,'GameInit'))~='table' then rawset(_G,'GameInit',m) end
                     if GameInit then rawset(GameInit,'IsClient',true); rawset(GameInit,'IsBattlePlayVerify',false) end",
                     stages, ref failStage, ref err, optional: true);
+
+                Safe(env, @"
+                    local gi = rawget(_G, 'GameInit')
+                    assert(type(gi) == 'table', 'GameInit table missing before Common/Define')
+                    local old_client = rawget(gi, 'IsClient')
+                    rawset(gi, 'IsClient', false)
+                    local ok, err = pcall(require, 'Common/Define')
+                    rawset(gi, 'IsClient', old_client ~= nil and old_client or true)
+                    rawset(gi, 'IsBattlePlayVerify', false)
+                    assert(ok, 'Common/Define load failed: '..tostring(err))
+                    rawset(_G, 'LuaUtils', {
+                      IsNull = function(v) return v == nil or v == NOOP_STUB end,
+                    })
+                    setmetatable(LuaUtils, { __index = function() return NOOP_STUB end })
+                    rawset(_G, 'IsNil', function(v) return v == nil or v == NOOP_STUB or LuaUtils.IsNull(v) end)
+                    rawset(_G, 'BATTLE90_DEFINE_LOAD_OK', true)
+                    rawset(_G, 'BATTLE90_ENUM_SNAPSHOT',
+                      'skillSmall='..tostring(EBattleSkillAttackType and EBattleSkillAttackType.SmallSkillAttacking)..
+                      '/skillEndPet='..tostring(EBattleSkillAttackType and EBattleSkillAttackType.SmallRoundEndPetHelpSkillAttacking)..
+                      '/actionNormal='..tostring(EBattleActionType and EBattleActionType.NormalOrSmallSkill))",
+                    stages, ref failStage, ref err);
 
                 string[] globals =
                 {
@@ -191,6 +226,11 @@ namespace GirlsWar
                         local info = data and data.battleInfo or data
                         assert(info, 'no battleInfo in payload')
                         BATTLE_PLAYMODE_INFO = info
+                        rawset(_G, 'LuaUtils', {
+                          IsNull = function(v) return v == nil or v == NOOP_STUB end,
+                        })
+                        setmetatable(LuaUtils, { __index = function() return NOOP_STUB end })
+                        rawset(_G, 'IsNil', function(v) return v == nil or v == NOOP_STUB or LuaUtils.IsNull(v) end)
                         if GameInit then rawset(GameInit,'IsClient',true); rawset(GameInit,'IsBattlePlayVerify',false) end
                         if PlayerMgr and type(rawget(PlayerMgr,'PlayerInfo'))~='table' then
                           rawset(PlayerMgr, 'PlayerInfo', { uid = info.ourPlayerId or 0, head = 0, name = 'offline', level = 1 })
@@ -253,6 +293,12 @@ namespace GirlsWar
                           GameTools.SwitchBGMFadeOut = function() end
                           GameTools.SetTimeScale = function() end
                         end
+                        rawset(_G, 'WaitUntil', function()
+                          local count = rawget(_G, 'BATTLE90_WAIT_UNTIL_NOOP_COUNT')
+                          if type(count) ~= 'number' then count = 0 end
+                          rawset(_G, 'BATTLE90_WAIT_UNTIL_NOOP_COUNT', count + 1)
+                          return nil
+                        end)
                         for _, mod in pairs(package.loaded) do
                           if type(mod)=='table' and rawget(mod,'isLoadIO')==true then rawset(mod,'isLoadIO', false) end
                         end
@@ -442,7 +488,9 @@ namespace GirlsWar
                             end
                             rawset(PNB, '__battle90_small_round_patch', true)
                           end
-                          if PNB and type(PNB.BattleRoundEndCheckBuff) == 'function' and not rawget(PNB, '__battle90_attack_task_patch') then
+                          if rawget(_G, 'BATTLE90_USE_ATTACK_TASK_PREVIEW') == true
+                            and PNB and type(PNB.BattleRoundEndCheckBuff) == 'function'
+                            and not rawget(PNB, '__battle90_attack_task_patch') then
                             PNB.StartAttackTask = function(...)
                               local shortcut_count = rawget(_G, 'BATTLE90_ATTACK_TASK_SHORTCUT_COUNT')
                               if type(shortcut_count) ~= 'number' then shortcut_count = 0 end
@@ -480,6 +528,136 @@ namespace GirlsWar
                               return PNB.BattleRoundEndCheckBuff()
                             end
                             rawset(PNB, '__battle90_attack_task_patch', true)
+                          end
+                          local function wrap_method(tbl, name, counter, before)
+                            if type(tbl) ~= 'table' or type(tbl[name]) ~= 'function' then return end
+                            local flag = '__battle90_probe_wrap_' .. tostring(name) .. '_' .. tostring(counter)
+                            if rawget(tbl, flag) then return end
+                            local orig = tbl[name]
+                            tbl[name] = function(...)
+                              inc_global(counter)
+                              if type(before) == 'function' then before(...) end
+                              return orig(...)
+                            end
+                            rawset(tbl, flag, true)
+                          end
+                          local function wrap_attack_mgr()
+                            local mgr = PNB and rawget(PNB, 'AttackTaskMgr')
+                            if type(mgr) ~= 'table' or rawget(mgr, '__battle90_probe_wrapped') then return end
+                            wrap_method(mgr, 'AddTask', 'BATTLE90_ATTACK_MGR_ADD_TASK_COUNT')
+                            wrap_method(mgr, 'CheckStartTask', 'BATTLE90_ATTACK_MGR_CHECK_START_COUNT')
+                            wrap_method(mgr, 'CheckExcuteNextTask', 'BATTLE90_ATTACK_MGR_CHECK_NEXT_COUNT')
+                            wrap_method(mgr, 'ExcuteNextTask', 'BATTLE90_ATTACK_MGR_EXECUTE_NEXT_COUNT')
+                            wrap_method(mgr, 'ExcuteTask', 'BATTLE90_ATTACK_MGR_EXECUTE_TASK_COUNT')
+                            wrap_method(mgr, 'ExcuteBigTask', 'BATTLE90_ATTACK_MGR_EXECUTE_BIG_COUNT')
+                            wrap_method(mgr, 'ExcuteNormalTask', 'BATTLE90_ATTACK_MGR_EXECUTE_NORMAL_COUNT')
+                            wrap_method(mgr, 'ExcutePetFightTask', 'BATTLE90_ATTACK_MGR_EXECUTE_PET_COUNT')
+                            wrap_method(mgr, 'HandleTaskComplete', 'BATTLE90_ATTACK_MGR_TASK_COMPLETE_COUNT')
+                            wrap_method(mgr, 'AllTaskComplete', 'BATTLE90_ATTACK_MGR_ALL_COMPLETE_COUNT')
+                            rawset(mgr, '__battle90_probe_wrapped', true)
+                          end
+                          if PNB and not rawget(PNB, '__battle90_real_attack_probe_wrap') then
+                            local function skill_state()
+                              if PNB and type(PNB.GetSkillAttackType) == 'function' then
+                                local ok, value = pcall(function() return PNB.GetSkillAttackType() end)
+                                if ok then return tostring(value) end
+                              end
+                              return tostring(PNB and rawget(PNB, 'CurrSkillAttackType'))
+                            end
+                            local function task_summary(task)
+                              if type(task) ~= 'table' then return tostring(task) end
+                              return 'hero='..tostring(task.heroId)..'/action='..tostring(task.actionType)..'/skill='..tostring(task.skillDid)
+                            end
+                            wrap_method(PNB, 'StartAttackTask', 'BATTLE90_PNB_START_ATTACK_TASK_COUNT', function(a, i)
+                              rawset(_G, 'BATTLE90_START_ATTACK_LAST_ARGS', 'a='..tostring(a)..' i='..tostring(i)..' skill='..skill_state())
+                              wrap_attack_mgr()
+                            end)
+                            wrap_method(PNB, 'AddAttackTask', 'BATTLE90_PNB_ADD_ATTACK_TASK_COUNT', wrap_attack_mgr)
+                            wrap_method(PNB, 'CheckStartTask', 'BATTLE90_PNB_CHECK_START_TASK_COUNT', wrap_attack_mgr)
+                            wrap_method(PNB, 'HandleAttackTaskComplete', 'BATTLE90_PNB_ATTACK_TASK_COMPLETE_COUNT', wrap_attack_mgr)
+                            if type(PNB.GetAttackTask) == 'function' and not rawget(PNB, '__battle90_probe_get_attack_task') then
+                              local orig_get_attack_task = PNB.GetAttackTask
+                              PNB.GetAttackTask = function(...)
+                                inc_global('BATTLE90_PNB_GET_ATTACK_TASK_COUNT')
+                                local manual, task = orig_get_attack_task(...)
+                                if task == nil then inc_global('BATTLE90_PNB_GET_ATTACK_TASK_NIL_COUNT') end
+                                rawset(_G, 'BATTLE90_PNB_GET_ATTACK_TASK_LAST', 'manual='..tostring(manual)..' task='..task_summary(task)..' skill='..skill_state())
+                                return manual, task
+                              end
+                              rawset(PNB, '__battle90_probe_get_attack_task', true)
+                            end
+                            rawset(PNB, '__battle90_real_attack_probe_wrap', true)
+                          end
+                          if BattleTeam and type(BattleTeam) == 'table' and not rawget(BattleTeam, '__battle90_real_attack_probe_wrap') then
+                            if type(BattleTeam.GetTotalFirstValueWithRate) == 'function' and not rawget(BattleTeam, '__battle90_first_value_guard') then
+                              local orig_get_total_first = BattleTeam.GetTotalFirstValueWithRate
+                              BattleTeam.GetTotalFirstValueWithRate = function(self, ...)
+                                if type(self) == 'table' then
+                                  if type(rawget(self, 'TotalFirstValue')) ~= 'number' then
+                                    rawset(self, 'TotalFirstValue', 0)
+                                    inc_global('BATTLE90_FIRST_VALUE_DEFAULT_COUNT')
+                                  end
+                                  if type(rawget(self, 'mFirstAddRate')) ~= 'number' then
+                                    rawset(self, 'mFirstAddRate', 0)
+                                    inc_global('BATTLE90_FIRST_RATE_DEFAULT_COUNT')
+                                  end
+                                end
+                                return orig_get_total_first(self, ...)
+                              end
+                              rawset(BattleTeam, '__battle90_first_value_guard', true)
+                            end
+                            wrap_method(BattleTeam, 'BeginHeroBigAttack_FightPlay', 'BATTLE90_TEAM_BEGIN_BIG_FIGHTPLAY_COUNT')
+                            wrap_method(BattleTeam, 'BeginHeroNormalAttack_FightPlay', 'BATTLE90_TEAM_BEGIN_NORMAL_FIGHTPLAY_COUNT')
+                            wrap_method(BattleTeam, 'BeginAttackTask', 'BATTLE90_TEAM_BEGIN_ATTACK_TASK_COUNT', function(self, a, i)
+                              rawset(_G, 'BATTLE90_TEAM_BEGIN_ATTACK_LAST_ARGS', 'a='..tostring(a)..' i='..tostring(i)..' team='..tostring(type(self)=='table' and rawget(self,'TeamId')))
+                            end)
+                            wrap_method(BattleTeam, 'GetFightAction', 'BATTLE90_TEAM_GET_FIGHT_ACTION_COUNT')
+                            wrap_method(BattleTeam, 'GetFightActionWithType', 'BATTLE90_TEAM_GET_FIGHT_ACTION_WITH_TYPE_COUNT')
+                            wrap_method(BattleTeam, 'GetBigAttackTaskFightPlay', 'BATTLE90_TEAM_GET_BIG_FIGHTPLAY_TASK_COUNT')
+                            wrap_method(BattleTeam, 'GetNormalAttackTaskFightPlay', 'BATTLE90_TEAM_GET_NORMAL_FIGHTPLAY_TASK_COUNT')
+                            rawset(BattleTeam, '__battle90_real_attack_probe_wrap', true)
+                          end
+                          if HeroCtrl and type(HeroCtrl) == 'table' and not rawget(HeroCtrl, '__battle90_real_attack_probe_wrap') then
+                            if not rawget(HeroCtrl, '__battle90_spine_invisible_guard') then
+                              HeroCtrl.SetSpineInvisible = function()
+                                inc_global('BATTLE90_SPINE_INVISIBLE_GUARD_COUNT')
+                              end
+                              HeroCtrl.SetSpineAnimation = function()
+                                inc_global('BATTLE90_SPINE_ANIMATION_GUARD_COUNT')
+                                return nil
+                              end
+                              HeroCtrl.AddSpineAnimation = function()
+                                inc_global('BATTLE90_SPINE_ANIMATION_GUARD_COUNT')
+                                return nil
+                              end
+                              rawset(HeroCtrl, '__battle90_spine_invisible_guard', true)
+                            end
+                            local function hero_id_of(hero)
+                              if type(hero) ~= 'table' then return 0 end
+                              return tonumber(rawget(hero, 'HeroId') or rawget(hero, 'HeroID') or rawget(hero, 'heroId') or rawget(hero, 'Heroid') or 0) or 0
+                            end
+                            local function skill_id_of(action)
+                              if type(action) ~= 'table' then return 0 end
+                              return tonumber(action.skillDid or action.SkillDid or 0) or 0
+                            end
+                            local function preview(counter, action_type)
+                              return function(hero, action)
+                                local hero_id = hero_id_of(hero)
+                                local skill_id = skill_id_of(action)
+                                if hero_id ~= 0 and CS.GirlsWar.BattleRuntimeSpineActorFactory.PreviewAction(hero_id, action_type, 0, skill_id) then
+                                  inc_global('BATTLE90_REAL_ATTACK_PREVIEW_ACTION_COUNT')
+                                else
+                                  inc_global('BATTLE90_REAL_ATTACK_PREVIEW_MISS_COUNT')
+                                end
+                              end
+                            end
+                            wrap_method(HeroCtrl, 'BigAttack', 'BATTLE90_HERO_BIG_ATTACK_COUNT', preview('BATTLE90_HERO_BIG_ATTACK_COUNT', 1))
+                            wrap_method(HeroCtrl, 'NormalAttack', 'BATTLE90_HERO_NORMAL_ATTACK_COUNT', preview('BATTLE90_HERO_NORMAL_ATTACK_COUNT', 2))
+                            wrap_method(HeroCtrl, 'PetFightAttack', 'BATTLE90_HERO_PET_ATTACK_COUNT', preview('BATTLE90_HERO_PET_ATTACK_COUNT', 4))
+                            wrap_method(HeroCtrl, 'Explosive', 'BATTLE90_HERO_EXPLOSIVE_COUNT', preview('BATTLE90_HERO_EXPLOSIVE_COUNT', 3))
+                            wrap_method(HeroCtrl, 'ExplosiveAfter', 'BATTLE90_HERO_EXPLOSIVE_AFTER_COUNT')
+                            wrap_method(HeroCtrl, 'ExplosiveAfter2', 'BATTLE90_HERO_EXPLOSIVE_AFTER2_COUNT')
+                            rawset(HeroCtrl, '__battle90_real_attack_probe_wrap', true)
                           end
                         end
                         TRACE = ''
@@ -614,6 +792,39 @@ namespace GirlsWar
             result.runtimePreviewMissCount = BattleRuntimeSpineActorFactory.PreviewMissCount;
             result.runtimeActorLastSummary = BattleRuntimeSpineActorFactory.LastSummary;
             try { result.monsterBaseFallbackCount = env.Global.Get<int>("BATTLE90_MONSTER_BASE_FALLBACK_COUNT"); } catch { }
+            try { result.defineLoadOk = env.Global.Get<bool>("BATTLE90_DEFINE_LOAD_OK"); } catch { }
+            try { result.enumSnapshot = env.Global.Get<string>("BATTLE90_ENUM_SNAPSHOT") ?? ""; } catch { }
+            try { result.firstValueDefaultCount = env.Global.Get<int>("BATTLE90_FIRST_VALUE_DEFAULT_COUNT"); } catch { }
+            try { result.firstRateDefaultCount = env.Global.Get<int>("BATTLE90_FIRST_RATE_DEFAULT_COUNT"); } catch { }
+            try { result.spineInvisibleGuardCount = env.Global.Get<int>("BATTLE90_SPINE_INVISIBLE_GUARD_COUNT"); } catch { }
+            try { result.spineAnimationGuardCount = env.Global.Get<int>("BATTLE90_SPINE_ANIMATION_GUARD_COUNT"); } catch { }
+            try { result.waitUntilNoopCount = env.Global.Get<int>("BATTLE90_WAIT_UNTIL_NOOP_COUNT"); } catch { }
+            try { result.pnbStartAttackTaskCount = env.Global.Get<int>("BATTLE90_PNB_START_ATTACK_TASK_COUNT"); } catch { }
+            try { result.startAttackLastArgs = env.Global.Get<string>("BATTLE90_START_ATTACK_LAST_ARGS") ?? ""; } catch { }
+            try { result.pnbAddAttackTaskCount = env.Global.Get<int>("BATTLE90_PNB_ADD_ATTACK_TASK_COUNT"); } catch { }
+            try { result.pnbCheckStartTaskCount = env.Global.Get<int>("BATTLE90_PNB_CHECK_START_TASK_COUNT"); } catch { }
+            try { result.pnbGetAttackTaskCount = env.Global.Get<int>("BATTLE90_PNB_GET_ATTACK_TASK_COUNT"); } catch { }
+            try { result.pnbGetAttackTaskNilCount = env.Global.Get<int>("BATTLE90_PNB_GET_ATTACK_TASK_NIL_COUNT"); } catch { }
+            try { result.pnbGetAttackTaskLast = env.Global.Get<string>("BATTLE90_PNB_GET_ATTACK_TASK_LAST") ?? ""; } catch { }
+            try { result.attackMgrAddTaskCount = env.Global.Get<int>("BATTLE90_ATTACK_MGR_ADD_TASK_COUNT"); } catch { }
+            try { result.attackMgrExecuteTaskCount = env.Global.Get<int>("BATTLE90_ATTACK_MGR_EXECUTE_TASK_COUNT"); } catch { }
+            try { result.attackMgrExecuteNormalCount = env.Global.Get<int>("BATTLE90_ATTACK_MGR_EXECUTE_NORMAL_COUNT"); } catch { }
+            try { result.attackMgrTaskCompleteCount = env.Global.Get<int>("BATTLE90_ATTACK_MGR_TASK_COMPLETE_COUNT"); } catch { }
+            try { result.attackMgrAllCompleteCount = env.Global.Get<int>("BATTLE90_ATTACK_MGR_ALL_COMPLETE_COUNT"); } catch { }
+            try { result.teamBeginAttackTaskCount = env.Global.Get<int>("BATTLE90_TEAM_BEGIN_ATTACK_TASK_COUNT"); } catch { }
+            try { result.teamBeginAttackLastArgs = env.Global.Get<string>("BATTLE90_TEAM_BEGIN_ATTACK_LAST_ARGS") ?? ""; } catch { }
+            try { result.teamBeginBigFightPlayCount = env.Global.Get<int>("BATTLE90_TEAM_BEGIN_BIG_FIGHTPLAY_COUNT"); } catch { }
+            try { result.teamBeginNormalFightPlayCount = env.Global.Get<int>("BATTLE90_TEAM_BEGIN_NORMAL_FIGHTPLAY_COUNT"); } catch { }
+            try { result.teamGetFightActionCount = env.Global.Get<int>("BATTLE90_TEAM_GET_FIGHT_ACTION_COUNT"); } catch { }
+            try { result.teamGetFightActionWithTypeCount = env.Global.Get<int>("BATTLE90_TEAM_GET_FIGHT_ACTION_WITH_TYPE_COUNT"); } catch { }
+            try { result.teamGetBigFightPlayTaskCount = env.Global.Get<int>("BATTLE90_TEAM_GET_BIG_FIGHTPLAY_TASK_COUNT"); } catch { }
+            try { result.teamGetNormalFightPlayTaskCount = env.Global.Get<int>("BATTLE90_TEAM_GET_NORMAL_FIGHTPLAY_TASK_COUNT"); } catch { }
+            try { result.heroBigAttackCount = env.Global.Get<int>("BATTLE90_HERO_BIG_ATTACK_COUNT"); } catch { }
+            try { result.heroNormalAttackCount = env.Global.Get<int>("BATTLE90_HERO_NORMAL_ATTACK_COUNT"); } catch { }
+            try { result.heroPetAttackCount = env.Global.Get<int>("BATTLE90_HERO_PET_ATTACK_COUNT"); } catch { }
+            try { result.heroExplosiveCount = env.Global.Get<int>("BATTLE90_HERO_EXPLOSIVE_COUNT"); } catch { }
+            try { result.realAttackPreviewActionCount = env.Global.Get<int>("BATTLE90_REAL_ATTACK_PREVIEW_ACTION_COUNT"); } catch { }
+            try { result.realAttackPreviewMissCount = env.Global.Get<int>("BATTLE90_REAL_ATTACK_PREVIEW_MISS_COUNT"); } catch { }
             try { result.firstReadyShortcutCount = env.Global.Get<int>("BATTLE90_FIRST_READY_SHORTCUT_COUNT"); } catch { }
             try
             {
@@ -627,6 +838,13 @@ namespace GirlsWar
                       ' battleBegin='..tostring(CNT and CNT['BattleBegin'] or 0)..
                       ' bigRound='..tostring(CNT and CNT['BattleBigRoundBegin'] or 0)..
                       ' currBigRound='..tostring(PNB and rawget(PNB,'CurrBattleBigRound'))..
+                      ' attackPreviewMode='..tostring(rawget(_G,'BATTLE90_USE_ATTACK_TASK_PREVIEW'))..
+                      ' defineLoadOk='..tostring(rawget(_G,'BATTLE90_DEFINE_LOAD_OK'))..
+                      ' enumSnapshot='..tostring(rawget(_G,'BATTLE90_ENUM_SNAPSHOT') or '')..
+                      ' firstValueDefault='..tostring(rawget(_G,'BATTLE90_FIRST_VALUE_DEFAULT_COUNT') or 0)..
+                      ' firstRateDefault='..tostring(rawget(_G,'BATTLE90_FIRST_RATE_DEFAULT_COUNT') or 0)..
+                      ' spineInvisibleGuard='..tostring(rawget(_G,'BATTLE90_SPINE_INVISIBLE_GUARD_COUNT') or 0)..
+                      ' spineAnimationGuard='..tostring(rawget(_G,'BATTLE90_SPINE_ANIMATION_GUARD_COUNT') or 0)..
                       ' heroViewBridge='..tostring(rawget(_G,'BATTLE90_HERO_VIEW_BRIDGE_COUNT') or 0)..
                       ' skinStub='..tostring(rawget(_G,'BATTLE90_SKIN_STUB_COUNT') or 0)..
                       ' skinRuntime='..tostring(rawget(_G,'BATTLE90_SKIN_RUNTIME_COUNT') or 0)..
@@ -646,6 +864,33 @@ namespace GirlsWar
                       ' attackActions='..tostring(rawget(_G,'BATTLE90_ATTACK_ACTION_COUNT') or 0)..
                       ' attackPreview='..tostring(rawget(_G,'BATTLE90_ATTACK_PREVIEW_ACTION_COUNT') or 0)..
                       ' attackPreviewMiss='..tostring(rawget(_G,'BATTLE90_ATTACK_PREVIEW_MISS_COUNT') or 0)..
+                      ' pnbStartAttack='..tostring(rawget(_G,'BATTLE90_PNB_START_ATTACK_TASK_COUNT') or 0)..
+                      ' startArgs='..tostring(rawget(_G,'BATTLE90_START_ATTACK_LAST_ARGS') or '')..
+                      ' pnbAddAttack='..tostring(rawget(_G,'BATTLE90_PNB_ADD_ATTACK_TASK_COUNT') or 0)..
+                      ' pnbCheckStart='..tostring(rawget(_G,'BATTLE90_PNB_CHECK_START_TASK_COUNT') or 0)..
+                      ' pnbGetAttack='..tostring(rawget(_G,'BATTLE90_PNB_GET_ATTACK_TASK_COUNT') or 0)..
+                      ' pnbGetAttackNil='..tostring(rawget(_G,'BATTLE90_PNB_GET_ATTACK_TASK_NIL_COUNT') or 0)..
+                      ' getAttackLast='..tostring(rawget(_G,'BATTLE90_PNB_GET_ATTACK_TASK_LAST') or '')..
+                      ' mgrAddTask='..tostring(rawget(_G,'BATTLE90_ATTACK_MGR_ADD_TASK_COUNT') or 0)..
+                      ' mgrExecuteTask='..tostring(rawget(_G,'BATTLE90_ATTACK_MGR_EXECUTE_TASK_COUNT') or 0)..
+                      ' mgrExecuteNormal='..tostring(rawget(_G,'BATTLE90_ATTACK_MGR_EXECUTE_NORMAL_COUNT') or 0)..
+                      ' mgrTaskComplete='..tostring(rawget(_G,'BATTLE90_ATTACK_MGR_TASK_COMPLETE_COUNT') or 0)..
+                      ' mgrAllComplete='..tostring(rawget(_G,'BATTLE90_ATTACK_MGR_ALL_COMPLETE_COUNT') or 0)..
+                      ' teamBeginAttack='..tostring(rawget(_G,'BATTLE90_TEAM_BEGIN_ATTACK_TASK_COUNT') or 0)..
+                      ' teamBeginArgs='..tostring(rawget(_G,'BATTLE90_TEAM_BEGIN_ATTACK_LAST_ARGS') or '')..
+                      ' teamBeginBigFP='..tostring(rawget(_G,'BATTLE90_TEAM_BEGIN_BIG_FIGHTPLAY_COUNT') or 0)..
+                      ' teamBeginNormalFP='..tostring(rawget(_G,'BATTLE90_TEAM_BEGIN_NORMAL_FIGHTPLAY_COUNT') or 0)..
+                      ' teamFightAction='..tostring(rawget(_G,'BATTLE90_TEAM_GET_FIGHT_ACTION_COUNT') or 0)..
+                      ' teamFightActionType='..tostring(rawget(_G,'BATTLE90_TEAM_GET_FIGHT_ACTION_WITH_TYPE_COUNT') or 0)..
+                      ' teamBigTaskFP='..tostring(rawget(_G,'BATTLE90_TEAM_GET_BIG_FIGHTPLAY_TASK_COUNT') or 0)..
+                      ' teamNormalTaskFP='..tostring(rawget(_G,'BATTLE90_TEAM_GET_NORMAL_FIGHTPLAY_TASK_COUNT') or 0)..
+                      ' heroBig='..tostring(rawget(_G,'BATTLE90_HERO_BIG_ATTACK_COUNT') or 0)..
+                      ' heroNormal='..tostring(rawget(_G,'BATTLE90_HERO_NORMAL_ATTACK_COUNT') or 0)..
+                      ' heroPet='..tostring(rawget(_G,'BATTLE90_HERO_PET_ATTACK_COUNT') or 0)..
+                      ' heroExplosive='..tostring(rawget(_G,'BATTLE90_HERO_EXPLOSIVE_COUNT') or 0)..
+                      ' realAttackPreview='..tostring(rawget(_G,'BATTLE90_REAL_ATTACK_PREVIEW_ACTION_COUNT') or 0)..
+                      ' realAttackPreviewMiss='..tostring(rawget(_G,'BATTLE90_REAL_ATTACK_PREVIEW_MISS_COUNT') or 0)..
+                      ' waitUntilNoop='..tostring(rawget(_G,'BATTLE90_WAIT_UNTIL_NOOP_COUNT') or 0)..
                       ' coroutineInline='..tostring(rawget(_G,'BATTLE90_COROUTINE_INLINE_COUNT') or 0)");
                 result.diagSummary = env.Global.Get<string>("DIAG_SUMMARY") ?? "";
             }
@@ -767,7 +1012,10 @@ namespace GirlsWar
             if (camera == null)
                 return;
 
-            var output = Path.Combine(GetResultDirectory(), "BATTLE_90_PLAYMODE_BOOTSTRAP_CAPTURE.png");
+            var captureFileName = string.Equals(Path.GetFileName(ResultPath), RealAttackProbeResultFileName, StringComparison.OrdinalIgnoreCase)
+                ? "BATTLE_90_REAL_ATTACK_PROBE_CAPTURE.png"
+                : "BATTLE_90_PLAYMODE_BOOTSTRAP_CAPTURE.png";
+            var output = Path.Combine(GetResultDirectory(), captureFileName);
             Directory.CreateDirectory(Path.GetDirectoryName(output));
 
             var rt = new RenderTexture(CaptureWidth, CaptureHeight, 24, RenderTextureFormat.ARGB32);
@@ -989,6 +1237,7 @@ namespace GirlsWar
             public string generatedAt;
             public string status;
             public bool playModeEntered;
+            public bool useAttackTaskPreview;
             public int frameBudget;
             public int framesPumped;
             public int decodedLuaIndexCount;
@@ -1033,6 +1282,39 @@ namespace GirlsWar
             public int captureBytes;
             public int captureNonDarkSampleCount;
             public int monsterBaseFallbackCount;
+            public bool defineLoadOk;
+            public string enumSnapshot;
+            public int firstValueDefaultCount;
+            public int firstRateDefaultCount;
+            public int spineInvisibleGuardCount;
+            public int spineAnimationGuardCount;
+            public int waitUntilNoopCount;
+            public int pnbStartAttackTaskCount;
+            public string startAttackLastArgs;
+            public int pnbAddAttackTaskCount;
+            public int pnbCheckStartTaskCount;
+            public int pnbGetAttackTaskCount;
+            public int pnbGetAttackTaskNilCount;
+            public string pnbGetAttackTaskLast;
+            public int attackMgrAddTaskCount;
+            public int attackMgrExecuteTaskCount;
+            public int attackMgrExecuteNormalCount;
+            public int attackMgrTaskCompleteCount;
+            public int attackMgrAllCompleteCount;
+            public int teamBeginAttackTaskCount;
+            public string teamBeginAttackLastArgs;
+            public int teamBeginBigFightPlayCount;
+            public int teamBeginNormalFightPlayCount;
+            public int teamGetFightActionCount;
+            public int teamGetFightActionWithTypeCount;
+            public int teamGetBigFightPlayTaskCount;
+            public int teamGetNormalFightPlayTaskCount;
+            public int heroBigAttackCount;
+            public int heroNormalAttackCount;
+            public int heroPetAttackCount;
+            public int heroExplosiveCount;
+            public int realAttackPreviewActionCount;
+            public int realAttackPreviewMissCount;
             public int firstReadyShortcutCount;
             public List<string> stagesCompleted;
         }

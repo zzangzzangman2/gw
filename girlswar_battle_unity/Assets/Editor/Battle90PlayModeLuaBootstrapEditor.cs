@@ -12,27 +12,46 @@ namespace GirlsWar
         private const string ScenePath = "Assets/Scenes/Battle90PlayModeLuaBootstrap.unity";
         private const double TimeoutSeconds = 90.0;
         private const int FrameBudget = 240;
+        private const int RealAttackProbeFrameBudget = 360;
 
         private static double startedAt;
         private static bool previousEnterPlayModeOptionsEnabled;
         private static EnterPlayModeOptions previousEnterPlayModeOptions;
+        private static string activeResultFileName = BattlePlayModeBootstrap.DefaultResultFileName;
+        private static int activeFrameBudget = FrameBudget;
+        private static bool activeUseAttackTaskPreview = true;
 
         [MenuItem("GirlsWar/Battle/BATTLE90 PlayMode Lua Bootstrap")]
         public static void Verify()
+        {
+            StartRun(BattlePlayModeBootstrap.DefaultResultFileName, FrameBudget, true);
+        }
+
+        [MenuItem("GirlsWar/Battle/BATTLE90 Real Attack Task Probe")]
+        public static void VerifyRealAttackProbe()
+        {
+            StartRun(BattlePlayModeBootstrap.RealAttackProbeResultFileName, RealAttackProbeFrameBudget, false);
+        }
+
+        private static void StartRun(string resultFileName, int frameBudget, bool useAttackTaskPreview)
         {
             Directory.CreateDirectory(ProjectPath("Assets/Scenes"));
             Directory.CreateDirectory(RepoPath("reports/battle"));
 
             EnsureScene();
 
+            activeResultFileName = resultFileName;
+            activeFrameBudget = frameBudget;
+            activeUseAttackTaskPreview = useAttackTaskPreview;
+
             previousEnterPlayModeOptionsEnabled = EditorSettings.enterPlayModeOptionsEnabled;
             previousEnterPlayModeOptions = EditorSettings.enterPlayModeOptions;
             EditorSettings.enterPlayModeOptionsEnabled = true;
             EditorSettings.enterPlayModeOptions = EnterPlayModeOptions.DisableDomainReload;
 
-            var resultPath = RepoPath("reports/battle/" + BattlePlayModeBootstrap.DefaultResultFileName);
+            var resultPath = RepoPath("reports/battle/" + activeResultFileName);
             if (File.Exists(resultPath)) File.Delete(resultPath);
-            BattlePlayModeBootstrap.ConfigureForEditorRun(resultPath, FrameBudget);
+            BattlePlayModeBootstrap.ConfigureForEditorRun(resultPath, activeFrameBudget, activeUseAttackTaskPreview);
 
             EditorSceneManager.OpenScene(ScenePath, OpenSceneMode.Single);
             startedAt = EditorApplication.timeSinceStartup;
@@ -116,14 +135,15 @@ namespace GirlsWar
 
         private static void WriteTimeout()
         {
-            var path = RepoPath("reports/battle/" + BattlePlayModeBootstrap.DefaultResultFileName);
+            var path = RepoPath("reports/battle/" + activeResultFileName);
             Directory.CreateDirectory(Path.GetDirectoryName(path));
             var json =
                 "{\n" +
                 "  \"generatedAt\": \"" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "\",\n" +
                 "  \"status\": \"playmode_bootstrap_timeout\",\n" +
                 "  \"playModeEntered\": " + (EditorApplication.isPlaying ? "true" : "false") + ",\n" +
-                "  \"frameBudget\": " + FrameBudget + ",\n" +
+                "  \"useAttackTaskPreview\": " + (activeUseAttackTaskPreview ? "true" : "false") + ",\n" +
+                "  \"frameBudget\": " + activeFrameBudget + ",\n" +
                 "  \"battleEntered\": false,\n" +
                 "  \"failedStage\": \"editor_timeout\",\n" +
                 "  \"error\": \"BATTLE90 timed out before BattlePlayModeBootstrap.Completed\"\n" +
