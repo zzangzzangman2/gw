@@ -82,6 +82,7 @@ namespace GirlsWar
             YouYou.GameEntry.Instance.CoroutineHost = this;
             YouYou.GameEntry.Procedure.ResetRuntimeState();
             YouYou.LuaHeroSprite.ResetOpenedSprites();
+            BattleRuntimeSpineActorFactory.ResetDiagnostics();
             Application.logMessageReceived += OnLogMessage;
         }
 
@@ -359,16 +360,27 @@ namespace GirlsWar
                               if PNB and PNB.IsSkipBattle == true then return end
                               if not self.HeroRoot and self.transform then self.HeroRoot = self.transform:Find('HeroRoot') end
                               local root = self.HeroRoot or self.transform
-                              local go = CS.UnityEngine.GameObject('B90_Skin_' .. tostring(self.HeroId))
-                              self.CurrSkinTransform = go.transform
-                              if root then self.CurrSkinTransform:SetParent(root, false) end
-                              self.CurrSkinTransform.localPosition = CS.UnityEngine.Vector3.zero
-                              self.CurrSkinTransform.localEulerAngles = CS.UnityEngine.Vector3(0, -90, 0)
-                              self.CurrMeshRenderer = go:AddComponent(typeof(CS.UnityEngine.MeshRenderer))
-                              self.spineboy = NOOP_STUB
+                              local hero_id = tonumber(self.HeroId) or 0
+                              local hero_did = tonumber(self.heroDid) or tonumber(self.BaseHeroID) or hero_id
+                              local actor = CS.GirlsWar.BattleRuntimeSpineActorFactory.AttachActor(
+                                hero_id,
+                                hero_did,
+                                root,
+                                self.IsOurHero == true,
+                                self.IsMonster == true or hero_id < 0,
+                                prefab_id)
+                              self.CurrSkinTransform = actor.Transform
+                              self.CurrMeshRenderer = actor.MeshRenderer
+                              self.spineboy = actor.SkeletonAnimation or NOOP_STUB
                               self.spineboyTransform = self.CurrSkinTransform
                               self.topBone = NOOP_STUB
                               self.pointBone = NOOP_STUB
+                              if actor.SkeletonAnimation then
+                                pcall(function()
+                                  self.topBone = actor.SkeletonAnimation.skeleton:FindBone('top') or NOOP_STUB
+                                  self.pointBone = actor.SkeletonAnimation.skeleton:FindBone('point') or NOOP_STUB
+                                end)
+                              end
                               self.Ready = true
                               self.mIsEnterBattle = true
                               if self.CurrFsm and self.CurrFsm.ParamDic then
@@ -377,7 +389,10 @@ namespace GirlsWar
                               if HeroState and type(self.ChangeStateUnCheckState) == 'function' then
                                 pcall(function() self:ChangeStateUnCheckState(HeroState.Idle) end)
                               end
-                              inc_global('BATTLE90_SKIN_STUB_COUNT')
+                              inc_global('BATTLE90_SKIN_RUNTIME_COUNT')
+                              if actor.IsSpineActor then inc_global('BATTLE90_SKIN_SPINE_COUNT') else inc_global('BATTLE90_SKIN_QUAD_FALLBACK_COUNT') end
+                              if not actor.IsExactActor then inc_global('BATTLE90_SKIN_VISUAL_FALLBACK_COUNT') end
+                              rawset(_G, 'BATTLE90_SKIN_LAST_ACTOR', tostring(hero_did)..'/'..tostring(hero_id)..'->'..tostring(actor.ResolvedActorId)..':'..tostring(actor.FallbackReason))
                             end
                             rawset(HeroCtrl, '__battle90_skin_patch', true)
                           end
@@ -561,6 +576,18 @@ namespace GirlsWar
             try { result.openedSpriteCount = YouYou.LuaHeroSprite.OpenedSprites.Count; } catch { }
             try { result.heroViewBridgeCount = env.Global.Get<int>("BATTLE90_HERO_VIEW_BRIDGE_COUNT"); } catch { }
             try { result.skinStubCount = env.Global.Get<int>("BATTLE90_SKIN_STUB_COUNT"); } catch { }
+            try { result.skinRuntimeCount = env.Global.Get<int>("BATTLE90_SKIN_RUNTIME_COUNT"); } catch { }
+            try { result.skinSpineCount = env.Global.Get<int>("BATTLE90_SKIN_SPINE_COUNT"); } catch { }
+            try { result.skinQuadFallbackCount = env.Global.Get<int>("BATTLE90_SKIN_QUAD_FALLBACK_COUNT"); } catch { }
+            try { result.skinVisualFallbackCount = env.Global.Get<int>("BATTLE90_SKIN_VISUAL_FALLBACK_COUNT"); } catch { }
+            try { result.skinLastActor = env.Global.Get<string>("BATTLE90_SKIN_LAST_ACTOR") ?? ""; } catch { }
+            result.runtimeActorAttachCount = BattleRuntimeSpineActorFactory.AttachCount;
+            result.runtimeActorPrefabCount = BattleRuntimeSpineActorFactory.PrefabCount;
+            result.runtimeActorSpineCount = BattleRuntimeSpineActorFactory.SpineCount;
+            result.runtimeActorVisualFallbackCount = BattleRuntimeSpineActorFactory.VisualFallbackCount;
+            result.runtimeActorQuadFallbackCount = BattleRuntimeSpineActorFactory.QuadFallbackCount;
+            result.runtimeActorMissingAssetCount = BattleRuntimeSpineActorFactory.MissingAssetCount;
+            result.runtimeActorLastSummary = BattleRuntimeSpineActorFactory.LastSummary;
             try { result.monsterBaseFallbackCount = env.Global.Get<int>("BATTLE90_MONSTER_BASE_FALLBACK_COUNT"); } catch { }
             try { result.firstReadyShortcutCount = env.Global.Get<int>("BATTLE90_FIRST_READY_SHORTCUT_COUNT"); } catch { }
             try
@@ -577,6 +604,10 @@ namespace GirlsWar
                       ' currBigRound='..tostring(PNB and rawget(PNB,'CurrBattleBigRound'))..
                       ' heroViewBridge='..tostring(rawget(_G,'BATTLE90_HERO_VIEW_BRIDGE_COUNT') or 0)..
                       ' skinStub='..tostring(rawget(_G,'BATTLE90_SKIN_STUB_COUNT') or 0)..
+                      ' skinRuntime='..tostring(rawget(_G,'BATTLE90_SKIN_RUNTIME_COUNT') or 0)..
+                      ' skinSpine='..tostring(rawget(_G,'BATTLE90_SKIN_SPINE_COUNT') or 0)..
+                      ' skinQuadFallback='..tostring(rawget(_G,'BATTLE90_SKIN_QUAD_FALLBACK_COUNT') or 0)..
+                      ' skinVisualFallback='..tostring(rawget(_G,'BATTLE90_SKIN_VISUAL_FALLBACK_COUNT') or 0)..
                       ' monsterFallback='..tostring(rawget(_G,'BATTLE90_MONSTER_BASE_FALLBACK_COUNT') or 0)..
                       ' readyTeams='..tostring(PNB and rawget(PNB,'ReadyTeamCount'))..
                       ' ourCur='..tostring(PNB and PNB.OurTeam and rawget(PNB.OurTeam,'CurrHeroCount'))..
@@ -592,6 +623,13 @@ namespace GirlsWar
                 result.diagSummary = env.Global.Get<string>("DIAG_SUMMARY") ?? "";
             }
             catch { }
+            result.diagSummary = (result.diagSummary ?? "") +
+                " runtimeAttach=" + result.runtimeActorAttachCount +
+                " runtimePrefab=" + result.runtimeActorPrefabCount +
+                " runtimeSpine=" + result.runtimeActorSpineCount +
+                " runtimeVisualFallback=" + result.runtimeActorVisualFallbackCount +
+                " runtimeQuadFallback=" + result.runtimeActorQuadFallbackCount +
+                " runtimeMissingAsset=" + result.runtimeActorMissingAssetCount;
         }
 
         private static void MaterializeOpenedHeroSprites(LuaEnv env, List<string> stages, ref string failStage, ref string err)
@@ -731,6 +769,18 @@ namespace GirlsWar
             public int openedSpriteCount;
             public int heroViewBridgeCount;
             public int skinStubCount;
+            public int skinRuntimeCount;
+            public int skinSpineCount;
+            public int skinQuadFallbackCount;
+            public int skinVisualFallbackCount;
+            public string skinLastActor;
+            public int runtimeActorAttachCount;
+            public int runtimeActorPrefabCount;
+            public int runtimeActorSpineCount;
+            public int runtimeActorVisualFallbackCount;
+            public int runtimeActorQuadFallbackCount;
+            public int runtimeActorMissingAssetCount;
+            public string runtimeActorLastSummary;
             public int monsterBaseFallbackCount;
             public int firstReadyShortcutCount;
             public List<string> stagesCompleted;
