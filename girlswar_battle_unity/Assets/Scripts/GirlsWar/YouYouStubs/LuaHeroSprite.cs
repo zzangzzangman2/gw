@@ -4,6 +4,12 @@ namespace YouYou
 {
     public class LuaHeroSprite : MonoBehaviour
     {
+        public bool IsMonster;
+        public int BaseHeroID;
+        public int HeroID;
+        public bool IsOurHero;
+        public int BattleStationIndex;
+        public bool IsSupplementHero;
         public string CurrentAnimation { get; private set; }
         public bool IsLooping { get; private set; }
         public bool IsStopped { get; private set; } = true;
@@ -18,6 +24,11 @@ namespace YouYou
 
         public void SetHeroData(object data)
         {
+        }
+
+        public void OnOpen()
+        {
+            gameObject.SetActive(true);
         }
 
         public void Play(string animationName)

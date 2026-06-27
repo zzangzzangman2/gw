@@ -5,6 +5,8 @@
 // Object-returning members hand back the harness's Lua NOOP so `form:GetXxx()` chains
 // stay no-crash headless. Covers the observed subsystem surface; extend on new blockers.
 using System;
+using System.Collections;
+using UnityEngine;
 using XLua;
 
 namespace GirlsWar
@@ -27,6 +29,12 @@ namespace GirlsWar
         {
             var f = c as LuaFunction;
             if (f != null) f.Call(LuaNoopHolder.Noop, LuaNoopHolder.Noop, LuaNoopHolder.Noop);
+        }
+
+        public static void InvokeCallback(object c, params object[] args)
+        {
+            var f = c as LuaFunction;
+            if (f != null) f.Call(args);
         }
     }
 }
@@ -82,6 +90,7 @@ namespace YouYou
 
     public class GE_Instance
     {
+        public MonoBehaviour CoroutineHost { get; set; }
         public object UIRoot => LuaNoopHolder.N;
         public object UI3DRoot => LuaNoopHolder.N;
         public object UIRootCanvas => LuaNoopHolder.N;
@@ -91,9 +100,24 @@ namespace YouYou
         public float MinWidth = 720f;
         public float MaxWidth = 1280f;
         public object OGDesignSize => LuaNoopHolder.N;
-        public object StartCoroutine(object a) { return null; }
-        public void StopCoroutine(object a) { }
-        public void StopAllCoroutines() { }
+        public object StartCoroutine(object a)
+        {
+            if (CoroutineHost == null || a == null) return null;
+            if (a is IEnumerator routine) return CoroutineHost.StartCoroutine(routine);
+            return null;
+        }
+
+        public void StopCoroutine(object a)
+        {
+            if (CoroutineHost == null || a == null) return;
+            if (a is Coroutine coroutine) CoroutineHost.StopCoroutine(coroutine);
+            else if (a is IEnumerator routine) CoroutineHost.StopCoroutine(routine);
+        }
+
+        public void StopAllCoroutines()
+        {
+            if (CoroutineHost != null) CoroutineHost.StopAllCoroutines();
+        }
     }
 
     public class GE_Video
@@ -104,17 +128,35 @@ namespace YouYou
 
     public class GE_Pool
     {
-        // Lua calls GameObjectSpawn(prefabId, parent_or_nil, callback). The real pool spawns
-        // async then invokes callback(transform,...). We must accept the 3-arg form, but we do
-        // NOT invoke the callback headless: those callbacks configure the spawned VIEW object
-        // via CS calls (e.g. LuaUtils.SetActive(transform,...)) that need a real GameObject, not
-        // the NOOP. View object setup is the M3 view lane; for M2 logic these spawns are inert.
         public object GameObjectSpawn(object a = null, object b = null, object c = null)
-        { return LuaNoopHolder.N; }
+        {
+            return Spawn("PoolSpawn", a, b, c);
+        }
+
         public object GameObjectSpawnWithPath(object a = null, object b = null, object c = null)
-        { return LuaNoopHolder.N; }
-        public void GameObjectDespawn(object a = null) { }
+        {
+            return Spawn("PoolSpawnPath", a, b, c);
+        }
+
+        public void GameObjectDespawn(object a = null)
+        {
+            if (a is Transform transform) UnityEngine.Object.Destroy(transform.gameObject);
+            else if (a is GameObject gameObject) UnityEngine.Object.Destroy(gameObject);
+        }
+
         public void ReleaseAndDestroyUnused() { }
+
+        private static object Spawn(string prefix, object prefabId, object parent, object callback)
+        {
+            var go = new GameObject(prefix + "_" + (prefabId ?? "null"));
+            if (go.GetComponent<LuaHeroSprite>() == null) go.AddComponent<LuaHeroSprite>();
+            if (go.GetComponent<ScrollScene>() == null) go.AddComponent<ScrollScene>();
+            if (go.GetComponent<LuaUnit>() == null) go.AddComponent<LuaUnit>();
+            var transform = go.transform;
+            if (parent is Transform parentTransform) transform.SetParent(parentTransform, false);
+            StubUtil.InvokeCallback(callback, transform, false, parent);
+            return transform;
+        }
     }
 
     // Scene loading is async in the real game (load -> callback). The OnEnter LoadScene
@@ -146,8 +188,26 @@ namespace YouYou
 
     public class GE_Procedure
     {
-        public object CurrProcedureState => ProcedureState.NormalBattle;
-        public void ChangeState(object a = null, object b = null) { }
+        public object CurrProcedureState { get; private set; } = ProcedureState.NormalBattle;
+        public object LastRequestedState { get; private set; }
+        public object LastRequestedData { get; private set; }
+        public int ChangeStateCount { get; private set; }
+
+        public void ChangeState(object a = null, object b = null)
+        {
+            LastRequestedState = a;
+            LastRequestedData = b;
+            ChangeStateCount++;
+            if (a != null) CurrProcedureState = a;
+        }
+
+        public void ResetRuntimeState()
+        {
+            CurrProcedureState = ProcedureState.NormalBattle;
+            LastRequestedState = null;
+            LastRequestedData = null;
+            ChangeStateCount = 0;
+        }
     }
 
     public class GE_Effect
