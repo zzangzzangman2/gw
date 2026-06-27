@@ -23,6 +23,7 @@ namespace GirlsWar
         public int ResolvedActorId;
         public bool IsExactActor;
         public bool IsSpineActor;
+        public bool IsOurHero;
         public string AnimationName = "";
         public string FallbackReason = "";
 
@@ -51,15 +52,21 @@ namespace GirlsWar
             else
                 PlayFirstExistingAnimation(new[] { "stand", "idle", "Idle" });
 
-            var direction = RequestedHeroId < 0 ? -1f : 1f;
-            var distance = isAttack ? 0.28f : 0.08f;
-            var frames = isAttack ? 12 : 8;
+            var target = isAttack ? BattleRuntimeSpineActorFactory.FindNearestOpponent(this) : null;
+            var direction = IsOurHero ? 1f : -1f;
+            var distance = isAttack ? (actionType == 1 ? 0.92f : 0.68f) : 0.08f;
+            var frames = isAttack ? 10 : 8;
             for (var frame = 0; frame < frames; frame++)
             {
                 var t = (frame + 1f) / frames;
                 var wave = Mathf.Sin(t * Mathf.PI);
-                transform.localPosition = baseLocalPosition + new Vector3(direction * distance * wave, 0.04f * wave, 0f);
-                transform.localScale = baseLocalScale * (1f + 0.04f * wave);
+                transform.localPosition = baseLocalPosition + new Vector3(direction * distance * wave, 0.08f * wave, 0f);
+                transform.localScale = baseLocalScale * (1f + 0.08f * wave);
+                if (isAttack && frame == frames / 2 && target != null)
+                {
+                    StartCoroutine(BattleRuntimeSpineActorFactory.PlayHitSlash(target.transform.position, actionType == 1));
+                    target.StartCoroutine(target.PlayHitPulse(actionType == 1));
+                }
                 yield return null;
             }
 
@@ -67,6 +74,25 @@ namespace GirlsWar
             transform.localScale = baseLocalScale;
             PlayFirstExistingAnimation(new[] { "stand", "idle", "Idle" });
             BattleRuntimeSpineActorFactory.NotePreviewCompleted();
+        }
+
+        private IEnumerator PlayHitPulse(bool big)
+        {
+            if (!hasBasePose)
+                RememberBasePose();
+
+            var frames = big ? 12 : 8;
+            for (var frame = 0; frame < frames; frame++)
+            {
+                var t = (frame + 1f) / frames;
+                var wave = Mathf.Sin(t * Mathf.PI);
+                transform.localPosition = baseLocalPosition + new Vector3((IsOurHero ? -1f : 1f) * 0.08f * wave, 0f, 0f);
+                transform.localScale = baseLocalScale * (1f + 0.05f * wave);
+                yield return null;
+            }
+
+            transform.localPosition = baseLocalPosition;
+            transform.localScale = baseLocalScale;
         }
 
         private bool PlayFirstExistingAnimation(string[] names)
@@ -162,6 +188,7 @@ namespace GirlsWar
             handle.RequestedHeroDid = heroDid;
             handle.ResolvedActorId = resolved;
             handle.IsExactActor = exact;
+            handle.IsOurHero = isOurHero;
             handle.FallbackReason = exact
                 ? ""
                 : !string.IsNullOrEmpty(resolveReason)
@@ -230,6 +257,67 @@ namespace GirlsWar
         internal static void NotePreviewCompleted()
         {
             PreviewCompletedCount++;
+        }
+
+        internal static BattleRuntimeActorHandle FindNearestOpponent(BattleRuntimeActorHandle source)
+        {
+            if (source == null)
+                return null;
+
+            BattleRuntimeActorHandle best = null;
+            var bestDistance = float.MaxValue;
+            foreach (var handle in HandlesByHeroId.Values)
+            {
+                if (handle == null || handle == source || handle.IsOurHero == source.IsOurHero)
+                    continue;
+
+                var distance = Vector3.SqrMagnitude(handle.transform.position - source.transform.position);
+                if (distance >= bestDistance)
+                    continue;
+
+                best = handle;
+                bestDistance = distance;
+            }
+            return best;
+        }
+
+        internal static IEnumerator PlayHitSlash(Vector3 worldPosition, bool big)
+        {
+            var shader = Shader.Find("Sprites/Default");
+            if (shader == null)
+                shader = Shader.Find("Legacy Shaders/Particles/Alpha Blended");
+            if (shader == null)
+                yield break;
+
+            var go = new GameObject(big ? "B90_BigHitSlash" : "B90_HitSlash");
+            go.transform.position = worldPosition + new Vector3(0f, 0.72f, -0.25f);
+            var line = go.AddComponent<LineRenderer>();
+            line.useWorldSpace = false;
+            line.positionCount = big ? 5 : 4;
+            line.widthMultiplier = big ? 0.12f : 0.08f;
+            line.sortingOrder = 500;
+            line.material = new Material(shader);
+            line.material.color = big ? new Color(1f, 0.18f, 0.82f, 0.95f) : new Color(0.45f, 0.9f, 1f, 0.92f);
+            line.SetPosition(0, new Vector3(-0.52f, -0.36f, 0f));
+            line.SetPosition(1, new Vector3(-0.12f, 0.08f, 0f));
+            line.SetPosition(2, new Vector3(0.28f, 0.34f, 0f));
+            line.SetPosition(3, new Vector3(0.58f, 0.48f, 0f));
+            if (big)
+                line.SetPosition(4, new Vector3(0.82f, 0.62f, 0f));
+
+            var frames = big ? 14 : 10;
+            for (var frame = 0; frame < frames; frame++)
+            {
+                var t = (frame + 1f) / frames;
+                var alpha = 1f - t;
+                go.transform.localScale = Vector3.one * (0.72f + t * (big ? 1.25f : 0.9f));
+                var color = line.material.color;
+                color.a = alpha;
+                line.material.color = color;
+                yield return null;
+            }
+
+            UnityEngine.Object.Destroy(go);
         }
 
         private static void RegisterHandle(BattleRuntimeActorHandle handle)
@@ -474,7 +562,7 @@ namespace GirlsWar
                 handle.SkeletonAnimation = skeletonAnimation;
                 handle.MeshRenderer = handle.GetComponent<MeshRenderer>();
                 handle.AnimationName = animationName ?? "";
-                ApplyActorPose(handle.transform, isOurHero, true);
+                ApplyActorPose(handle.transform, isOurHero, true, actorId);
                 return handle.MeshRenderer != null;
             }
             catch (Exception e)
@@ -555,7 +643,7 @@ namespace GirlsWar
             handle.SkeletonAnimation = skeletonAnimation;
             handle.MeshRenderer = skeletonAnimation.GetComponent<MeshRenderer>() ?? instance.GetComponentInChildren<MeshRenderer>(true);
             handle.AnimationName = animationName ?? "";
-            ApplyActorPose(handle.transform, isOurHero, true);
+            ApplyActorPose(handle.transform, isOurHero, true, actorId);
             NormalizeRendererDepth(handle.transform);
             return handle.MeshRenderer != null;
         }
@@ -655,7 +743,7 @@ namespace GirlsWar
             meshFilter.sharedMesh = BuildQuadMesh();
             meshRenderer.sharedMaterial = BuildQuadMaterial(actorId);
             handle.MeshRenderer = meshRenderer;
-            ApplyActorPose(handle.transform, isOurHero, false);
+            ApplyActorPose(handle.transform, isOurHero, false, actorId);
         }
 
         private static Mesh BuildQuadMesh()
@@ -698,15 +786,18 @@ namespace GirlsWar
             return material;
         }
 
-        private static void ApplyActorPose(Transform transform, bool isOurHero, bool isSpine)
+        private static void ApplyActorPose(Transform transform, bool isOurHero, bool isSpine, int actorId)
         {
             transform.localRotation = Quaternion.identity;
-            transform.localScale = Vector3.one * (isSpine ? 0.5f : 0.75f);
+            var scale = isSpine ? 0.46f : 0.75f;
+            if (isSpine && actorId >= 3000)
+                scale = 0.4f;
+            transform.localScale = Vector3.one * scale;
             if (!isOurHero)
             {
-                var scale = transform.localScale;
-                scale.x = -Mathf.Abs(scale.x);
-                transform.localScale = scale;
+                var localScale = transform.localScale;
+                localScale.x = -Mathf.Abs(localScale.x);
+                transform.localScale = localScale;
             }
         }
 

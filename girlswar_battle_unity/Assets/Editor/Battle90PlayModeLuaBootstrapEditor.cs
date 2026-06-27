@@ -51,6 +51,7 @@ namespace GirlsWar
 
             var resultPath = RepoPath("reports/battle/" + activeResultFileName);
             if (File.Exists(resultPath)) File.Delete(resultPath);
+            DeleteOldSequenceCaptures(activeResultFileName);
             BattlePlayModeBootstrap.ConfigureForEditorRun(resultPath, activeFrameBudget, activeUseAttackTaskPreview);
 
             EditorSceneManager.OpenScene(ScenePath, OpenSceneMode.Single);
@@ -149,6 +150,21 @@ namespace GirlsWar
                 "  \"error\": \"BATTLE90 timed out before BattlePlayModeBootstrap.Completed\"\n" +
                 "}\n";
             File.WriteAllText(path, json, new UTF8Encoding(false));
+        }
+
+        private static void DeleteOldSequenceCaptures(string resultFileName)
+        {
+            var prefix = string.Equals(resultFileName, BattlePlayModeBootstrap.RealAttackProbeResultFileName, StringComparison.OrdinalIgnoreCase)
+                ? "BATTLE_90_REAL_ATTACK_PROBE_SEQ_"
+                : "BATTLE_90_PLAYMODE_BOOTSTRAP_SEQ_";
+            var reportDir = RepoPath("reports/battle");
+            if (!Directory.Exists(reportDir))
+                return;
+
+            foreach (var path in Directory.GetFiles(reportDir, prefix + "*.png"))
+            {
+                try { File.Delete(path); } catch { }
+            }
         }
 
         private static string ProjectPath(string projectRelativePath)

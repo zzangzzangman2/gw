@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Text;
 using UnityEngine;
+using UnityEngine.UI;
 using XLua;
 
 namespace GirlsWar
@@ -21,7 +22,7 @@ namespace GirlsWar
         private static int configuredFrameBudget = 240;
         private static bool configuredUseAttackTaskPreview = true;
         private const int CaptureWidth = 1280;
-        private const int CaptureHeight = 720;
+        private const int CaptureHeight = 570;
 
         [SerializeField] private int frameBudget = 240;
 
@@ -128,6 +129,7 @@ namespace GirlsWar
             string failStage = "";
             string err = "";
             bool battleEntered = false;
+            var sequenceCaptures = new List<string>();
 
             LuaEnv env = null;
             try
@@ -852,11 +854,15 @@ namespace GirlsWar
                 PumpFrame(env, ref failStage, ref err);
                 try { env?.Tick(); } catch (Exception e) { failStage = "LuaEnv.Tick"; err = e.Message; }
                 yield return null;
+                if (ShouldCaptureSequenceFrame(frame + 1))
+                    CaptureVisualSequenceFrame(sequenceCaptures, visualCamera, frame + 1);
             }
 
             TryReadLuaDiagnostics(env, result);
             CollectVisualDiagnostics(result, visualCamera);
             CaptureVisualEvidence(result, visualCamera);
+            result.captureSequenceFrameCount = sequenceCaptures.Count;
+            result.captureSequencePaths = string.Join(";", sequenceCaptures.ToArray());
             AppendVisualDiagnostics(result);
             try { env?.Dispose(); } catch { }
 
@@ -1114,6 +1120,9 @@ namespace GirlsWar
                 " visualActors=" + result.visualActorHandleCount +
                 " visualRenderers=" + result.visualActorRendererCount +
                 " visualScreenArea=" + result.visualActorScreenAreaRatio.ToString("0.######") +
+                " visualMaxOverlap=" + result.visualActorMaxOverlapRatio.ToString("0.######") +
+                " visualOverlapPairs=" + result.visualActorOverlappedPairCount +
+                " visualMinCenterPx=" + result.visualActorMinCenterDistancePixels.ToString("0.##") +
                 " captureNonDark=" + result.captureNonDarkSampleCount;
         }
 
@@ -1131,44 +1140,195 @@ namespace GirlsWar
             camera.clearFlags = CameraClearFlags.SolidColor;
             camera.backgroundColor = new Color(0.025f, 0.028f, 0.034f, 1f);
             camera.orthographic = true;
-            camera.orthographicSize = 3.35f;
-            camera.transform.position = new Vector3(0f, -0.35f, -10f);
+            camera.orthographicSize = 2.85f;
+            camera.transform.position = new Vector3(0f, -0.55f, -10f);
             camera.transform.rotation = Quaternion.identity;
 
             var stage = GameObject.Find("B90_VisualStage");
             if (stage == null)
                 stage = new GameObject("B90_VisualStage");
 
-            if (stage.transform.Find("B90_Map_11001") == null)
+            if (stage.transform.Find("B90_Map_11003_Root") == null)
                 CreateMapSprite(stage.transform);
+            if (stage.transform.Find("B90_ReferenceBattleHud") == null)
+                CreateReferenceBattleHud(stage.transform, camera);
 
             return camera;
         }
 
         private static void CreateMapSprite(Transform parent)
         {
-            var path = Path.Combine(Application.dataPath, "RestoreData", "battle", "VisualAssets", "map", "Map_11001_2.png");
-            if (!File.Exists(path))
-                path = Path.Combine(Application.dataPath, "RestoreData", "battle", "VisualAssets", "map", "sactx-0-2048x2048-ETC2-Map_11001_1-2ccb5b85.png");
+            var root = new GameObject("B90_Map_11003_Root");
+            root.transform.SetParent(parent, false);
+            CreateMapFill(root.transform);
+            var created =
+                CreateMapLayer(root.transform, "Map_11003_5.png", "B90_Map_11003_BackVillage", 10.5f, -1.52f, 2f, -130) |
+                CreateMapLayer(root.transform, "Map_11003_3.png", "B90_Map_11003_Skyline", 10.5f, 0.25f, 1.95f, -125) |
+                CreateMapLayer(root.transform, "Map_11003_2.png", "B90_Map_11003_Ground", 10.5f, -2.42f, 1.9f, -120);
 
+            if (!created)
+                CreateMapLayer(root.transform, "Map_11001_2.png", "B90_Map_11001_Fallback", 10.5f, -2.1f, 2f, -120);
+        }
+
+        private static void CreateMapFill(Transform parent)
+        {
+            var go = new GameObject("B90_Map_11003_SunsetFill");
+            go.transform.SetParent(parent, false);
+            go.transform.localPosition = new Vector3(0f, 0f, 2.1f);
+            go.transform.localScale = new Vector3(12.5f, 5.8f, 1f);
+            var renderer = go.AddComponent<SpriteRenderer>();
+            renderer.sprite = SolidSprite();
+            renderer.color = new Color(0.38f, 0.22f, 0.17f, 1f);
+            renderer.sortingOrder = -150;
+        }
+
+        private static bool CreateMapLayer(Transform parent, string fileName, string objectName, float widthUnits, float bottomY, float z, int sortingOrder)
+        {
+            var path = Path.Combine(Application.dataPath, "RestoreData", "battle", "VisualAssets", "map", fileName);
             if (!File.Exists(path))
-                return;
+                return false;
 
             var texture = new Texture2D(2, 2, TextureFormat.RGBA32, false);
-            texture.name = "B90_Map_11001_Texture";
+            texture.name = objectName + "_Texture";
             if (!texture.LoadImage(File.ReadAllBytes(path)))
-                return;
+                return false;
 
-            var pixelsPerUnit = Mathf.Max(1f, texture.width / 10.5f);
+            var pixelsPerUnit = Mathf.Max(1f, texture.width / widthUnits);
+            var heightUnits = texture.height / pixelsPerUnit;
             var sprite = Sprite.Create(texture, new Rect(0, 0, texture.width, texture.height), new Vector2(0.5f, 0.5f), pixelsPerUnit);
-            sprite.name = "B90_Map_11001_Sprite";
+            sprite.name = objectName + "_Sprite";
 
-            var go = new GameObject("B90_Map_11001");
+            var go = new GameObject(objectName);
             go.transform.SetParent(parent, false);
-            go.transform.localPosition = new Vector3(0f, -0.1f, 2f);
+            go.transform.localPosition = new Vector3(0f, bottomY + heightUnits * 0.5f, z);
             var renderer = go.AddComponent<SpriteRenderer>();
             renderer.sprite = sprite;
-            renderer.sortingOrder = -100;
+            renderer.sortingOrder = sortingOrder;
+            return true;
+        }
+
+        private static void CreateReferenceBattleHud(Transform parent, Camera camera)
+        {
+            var canvasGo = new GameObject("B90_ReferenceBattleHud");
+            canvasGo.transform.SetParent(parent, false);
+            var canvas = canvasGo.AddComponent<Canvas>();
+            canvas.renderMode = RenderMode.ScreenSpaceCamera;
+            canvas.worldCamera = camera;
+            canvas.planeDistance = 1f;
+            canvas.sortingOrder = 1000;
+            var scaler = canvasGo.AddComponent<CanvasScaler>();
+            scaler.uiScaleMode = CanvasScaler.ScaleMode.ScaleWithScreenSize;
+            scaler.referenceResolution = new Vector2(CaptureWidth, CaptureHeight);
+            canvasGo.AddComponent<GraphicRaycaster>();
+
+            CreatePanel(canvasGo.transform, "TopLeftNamePlate", new Vector2(258f, -28f), new Vector2(350f, 28f), new Color(0.09f, 0.07f, 0.08f, 0.72f), TextAnchor.UpperLeft);
+            CreatePanel(canvasGo.transform, "TopRightNamePlate", new Vector2(-258f, -28f), new Vector2(350f, 28f), new Color(0.09f, 0.07f, 0.08f, 0.72f), TextAnchor.UpperRight);
+            CreateBattleGauge(canvasGo.transform, "OurHpGauge", new Vector2(298f, -48f), true, 0.72f);
+            CreateBattleGauge(canvasGo.transform, "EnemyHpGauge", new Vector2(-298f, -48f), false, 0.64f);
+            CreateLabel(canvasGo.transform, "VsLabel", "VS", new Vector2(0f, -43f), new Vector2(62f, 34f), 25, new Color(1f, 0.78f, 0.2f, 1f), TextAnchor.MiddleCenter);
+            CreateLabel(canvasGo.transform, "RoundLabel", "2/20", new Vector2(214f, -76f), new Vector2(72f, 24f), 16, Color.white, TextAnchor.MiddleCenter);
+
+            for (var i = 0; i < 5; i++)
+                CreateSkillCard(canvasGo.transform, i);
+
+            CreateRoundButton(canvasGo.transform, "AutoButton", "AUTO", new Vector2(-40f, 76f), 46f, new Color(0.97f, 0.9f, 0.58f, 0.92f));
+            CreateRoundButton(canvasGo.transform, "SpeedButton", "x2", new Vector2(-40f, 28f), 42f, new Color(1f, 0.72f, 0.18f, 0.95f));
+            CreateRoundButton(canvasGo.transform, "SkipButton", ">>", new Vector2(-40f, -20f), 42f, new Color(1f, 0.75f, 0.2f, 0.9f));
+        }
+
+        private static void CreateBattleGauge(Transform parent, string name, Vector2 anchoredPosition, bool left, float fill)
+        {
+            var root = CreatePanel(parent, name, anchoredPosition, new Vector2(248f, 16f), new Color(0.06f, 0.05f, 0.05f, 0.86f), left ? TextAnchor.UpperLeft : TextAnchor.UpperRight);
+            CreatePanel(root.transform, name + "_Hp", Vector2.zero, new Vector2(238f * Mathf.Clamp01(fill), 8f), new Color(0.35f, 0.95f, 0.25f, 0.95f), TextAnchor.MiddleLeft);
+            CreatePanel(root.transform, name + "_Energy", new Vector2(0f, -8f), new Vector2(188f, 4f), new Color(1f, 0.72f, 0.2f, 0.88f), TextAnchor.MiddleLeft);
+        }
+
+        private static void CreateSkillCard(Transform parent, int index)
+        {
+            var x = -128f + index * 64f;
+            var card = CreatePanel(parent, "SkillCard_" + index, new Vector2(x, 38f), new Vector2(54f, 58f), new Color(0.12f, 0.1f, 0.16f, 0.86f), TextAnchor.LowerCenter);
+            CreatePanel(card.transform, "SkillCard_" + index + "_Portrait", new Vector2(0f, 8f), new Vector2(40f, 34f), new Color(0.72f, 0.58f, 0.96f, 0.92f), TextAnchor.MiddleCenter);
+            CreatePanel(card.transform, "SkillCard_" + index + "_Ready", new Vector2(0f, -19f), new Vector2(44f, 8f), index == 4 ? new Color(1f, 0.76f, 0.2f, 0.95f) : new Color(0.3f, 0.75f, 1f, 0.9f), TextAnchor.MiddleCenter);
+        }
+
+        private static void CreateRoundButton(Transform parent, string name, string text, Vector2 anchoredPosition, float size, Color color)
+        {
+            var go = CreatePanel(parent, name, anchoredPosition, new Vector2(size, size), color, TextAnchor.MiddleRight);
+            CreateLabel(go.transform, name + "_Text", text, Vector2.zero, new Vector2(size, size), 12, new Color(0.17f, 0.11f, 0.03f, 1f), TextAnchor.MiddleCenter);
+        }
+
+        private static GameObject CreatePanel(Transform parent, string name, Vector2 anchoredPosition, Vector2 size, Color color, TextAnchor anchor)
+        {
+            var go = new GameObject(name);
+            go.transform.SetParent(parent, false);
+            var rect = go.AddComponent<RectTransform>();
+            ApplyAnchor(rect, anchor);
+            rect.anchoredPosition = anchoredPosition;
+            rect.sizeDelta = size;
+            var image = go.AddComponent<Image>();
+            image.sprite = SolidSprite();
+            image.color = color;
+            return go;
+        }
+
+        private static void CreateLabel(Transform parent, string name, string text, Vector2 anchoredPosition, Vector2 size, int fontSize, Color color, TextAnchor alignment)
+        {
+            var go = new GameObject(name);
+            go.transform.SetParent(parent, false);
+            var rect = go.AddComponent<RectTransform>();
+            rect.anchorMin = new Vector2(0.5f, 0.5f);
+            rect.anchorMax = new Vector2(0.5f, 0.5f);
+            rect.pivot = new Vector2(0.5f, 0.5f);
+            rect.anchoredPosition = anchoredPosition;
+            rect.sizeDelta = size;
+            var label = go.AddComponent<Text>();
+            label.text = text;
+            label.font = Resources.GetBuiltinResource<Font>("LegacyRuntime.ttf");
+            label.fontSize = fontSize;
+            label.alignment = alignment;
+            label.color = color;
+            label.raycastTarget = false;
+        }
+
+        private static void ApplyAnchor(RectTransform rect, TextAnchor anchor)
+        {
+            if (anchor == TextAnchor.UpperLeft)
+            {
+                rect.anchorMin = new Vector2(0f, 1f);
+                rect.anchorMax = new Vector2(0f, 1f);
+                rect.pivot = new Vector2(0f, 1f);
+            }
+            else if (anchor == TextAnchor.UpperRight || anchor == TextAnchor.MiddleRight)
+            {
+                rect.anchorMin = new Vector2(1f, anchor == TextAnchor.UpperRight ? 1f : 0.5f);
+                rect.anchorMax = rect.anchorMin;
+                rect.pivot = new Vector2(1f, 0.5f);
+            }
+            else if (anchor == TextAnchor.LowerCenter)
+            {
+                rect.anchorMin = new Vector2(0.5f, 0f);
+                rect.anchorMax = new Vector2(0.5f, 0f);
+                rect.pivot = new Vector2(0.5f, 0f);
+            }
+            else
+            {
+                rect.anchorMin = new Vector2(0.5f, 0.5f);
+                rect.anchorMax = new Vector2(0.5f, 0.5f);
+                rect.pivot = new Vector2(0.5f, 0.5f);
+            }
+        }
+
+        private static Sprite solidSprite;
+
+        private static Sprite SolidSprite()
+        {
+            if (solidSprite != null)
+                return solidSprite;
+            var texture = new Texture2D(1, 1, TextureFormat.RGBA32, false);
+            texture.SetPixel(0, 0, Color.white);
+            texture.Apply();
+            solidSprite = Sprite.Create(texture, new Rect(0, 0, 1, 1), new Vector2(0.5f, 0.5f), 1f);
+            return solidSprite;
         }
 
         private static void CollectVisualDiagnostics(Result result, Camera camera)
@@ -1181,10 +1341,15 @@ namespace GirlsWar
             var hasBounds = false;
             var combined = new Bounds();
             var rendererCount = 0;
+            var actorRects = new List<Rect>();
+            var actorRectSummaries = new List<string>();
+            var actorPositions = new List<string>();
             foreach (var handle in handles)
             {
                 if (handle == null) continue;
                 var renderers = handle.GetComponentsInChildren<Renderer>(true);
+                var actorHasBounds = false;
+                var actorBounds = new Bounds();
                 foreach (var renderer in renderers)
                 {
                     if (renderer == null || !renderer.enabled || !renderer.gameObject.activeInHierarchy)
@@ -1199,6 +1364,25 @@ namespace GirlsWar
                     {
                         combined.Encapsulate(renderer.bounds);
                     }
+
+                    if (!actorHasBounds)
+                    {
+                        actorBounds = renderer.bounds;
+                        actorHasBounds = true;
+                    }
+                    else
+                    {
+                        actorBounds.Encapsulate(renderer.bounds);
+                    }
+                }
+
+                var actorKey = (handle.RequestedHeroDid != 0 ? handle.RequestedHeroDid : handle.RequestedHeroId).ToString();
+                actorPositions.Add(actorKey + "@" + Vec(handle.transform.position));
+                if (actorHasBounds && camera != null)
+                {
+                    var rect = ScreenRectValue(camera, actorBounds);
+                    actorRects.Add(rect);
+                    actorRectSummaries.Add(actorKey + "->" + handle.ResolvedActorId + ":" + RectString(rect));
                 }
             }
 
@@ -1206,6 +1390,9 @@ namespace GirlsWar
             result.visualActorWorldBounds = hasBounds ? Vec(combined.center) + "|" + Vec(combined.size) : "";
             result.visualActorScreenRect = hasBounds && camera != null ? ScreenRect(camera, combined) : "";
             result.visualActorScreenAreaRatio = hasBounds && camera != null ? ScreenAreaRatio(camera, combined) : 0f;
+            result.visualActorWorldPositions = string.Join(";", actorPositions.ToArray());
+            result.visualActorScreenRects = string.Join(";", actorRectSummaries.ToArray());
+            ComputeVisualOverlap(actorRects, out result.visualActorMaxOverlapRatio, out result.visualActorMinCenterDistancePixels, out result.visualActorOverlappedPairCount);
         }
 
         private static void CaptureVisualEvidence(Result result, Camera camera)
@@ -1236,6 +1423,43 @@ namespace GirlsWar
             result.captureExists = File.Exists(output);
             result.captureBytes = bytes != null ? bytes.Length : 0;
             result.captureNonDarkSampleCount = CountNonDarkSamples(texture);
+
+            camera.targetTexture = previousTarget;
+            RenderTexture.active = previousActive;
+            Destroy(texture);
+            Destroy(rt);
+        }
+
+        private static bool ShouldCaptureSequenceFrame(int frame)
+        {
+            if (configuredUseAttackTaskPreview)
+                return frame == 24 || frame == 48 || frame == 72 || frame == 96 || frame == 120 || frame == 160;
+            return frame == 24 || frame == 48 || frame == 72 || frame == 96 || frame == 120 || frame == 160;
+        }
+
+        private static void CaptureVisualSequenceFrame(List<string> sequenceCaptures, Camera camera, int frame)
+        {
+            if (camera == null || sequenceCaptures == null)
+                return;
+
+            var prefix = string.Equals(Path.GetFileName(ResultPath), RealAttackProbeResultFileName, StringComparison.OrdinalIgnoreCase)
+                ? "BATTLE_90_REAL_ATTACK_PROBE_SEQ_"
+                : "BATTLE_90_PLAYMODE_BOOTSTRAP_SEQ_";
+            var output = Path.Combine(GetResultDirectory(), prefix + frame.ToString("0000") + ".png");
+            Directory.CreateDirectory(Path.GetDirectoryName(output));
+
+            var rt = new RenderTexture(CaptureWidth, CaptureHeight, 24, RenderTextureFormat.ARGB32);
+            var previousTarget = camera.targetTexture;
+            var previousActive = RenderTexture.active;
+            camera.targetTexture = rt;
+            RenderTexture.active = rt;
+            camera.Render();
+
+            var texture = new Texture2D(CaptureWidth, CaptureHeight, TextureFormat.RGB24, false);
+            texture.ReadPixels(new Rect(0, 0, CaptureWidth, CaptureHeight), 0, 0);
+            texture.Apply();
+            File.WriteAllBytes(output, texture.EncodeToPNG());
+            sequenceCaptures.Add(output);
 
             camera.targetTexture = previousTarget;
             RenderTexture.active = previousActive;
@@ -1275,20 +1499,10 @@ namespace GirlsWar
 
         private static string ScreenRect(Camera camera, Bounds bounds)
         {
-            var min = new Vector2(float.MaxValue, float.MaxValue);
-            var max = new Vector2(float.MinValue, float.MinValue);
-            foreach (var point in BoundsCorners(bounds))
-            {
-                var screen = camera.WorldToScreenPoint(point);
-                min.x = Mathf.Min(min.x, screen.x);
-                min.y = Mathf.Min(min.y, screen.y);
-                max.x = Mathf.Max(max.x, screen.x);
-                max.y = Mathf.Max(max.y, screen.y);
-            }
-            return min.x.ToString("0.##") + "/" + min.y.ToString("0.##") + "/" + max.x.ToString("0.##") + "/" + max.y.ToString("0.##");
+            return RectString(ScreenRectValue(camera, bounds));
         }
 
-        private static float ScreenAreaRatio(Camera camera, Bounds bounds)
+        private static Rect ScreenRectValue(Camera camera, Bounds bounds)
         {
             var min = new Vector2(float.MaxValue, float.MaxValue);
             var max = new Vector2(float.MinValue, float.MinValue);
@@ -1300,8 +1514,49 @@ namespace GirlsWar
                 max.x = Mathf.Max(max.x, screen.x);
                 max.y = Mathf.Max(max.y, screen.y);
             }
-            var area = Mathf.Max(0f, max.x - min.x) * Mathf.Max(0f, max.y - min.y);
+            return Rect.MinMaxRect(min.x, min.y, max.x, max.y);
+        }
+
+        private static string RectString(Rect rect)
+        {
+            return rect.xMin.ToString("0.##") + "/" + rect.yMin.ToString("0.##") + "/" + rect.xMax.ToString("0.##") + "/" + rect.yMax.ToString("0.##");
+        }
+
+        private static float ScreenAreaRatio(Camera camera, Bounds bounds)
+        {
+            var rect = ScreenRectValue(camera, bounds);
+            var area = Mathf.Max(0f, rect.width) * Mathf.Max(0f, rect.height);
             return area / Mathf.Max(1f, Screen.width * Screen.height);
+        }
+
+        private static void ComputeVisualOverlap(List<Rect> rects, out float maxOverlapRatio, out float minCenterDistancePixels, out int overlappedPairCount)
+        {
+            maxOverlapRatio = 0f;
+            minCenterDistancePixels = rects.Count > 1 ? float.MaxValue : 0f;
+            overlappedPairCount = 0;
+
+            for (var i = 0; i < rects.Count; i++)
+            {
+                var a = rects[i];
+                for (var j = i + 1; j < rects.Count; j++)
+                {
+                    var b = rects[j];
+                    minCenterDistancePixels = Mathf.Min(minCenterDistancePixels, Vector2.Distance(a.center, b.center));
+
+                    var width = Mathf.Min(a.xMax, b.xMax) - Mathf.Max(a.xMin, b.xMin);
+                    var height = Mathf.Min(a.yMax, b.yMax) - Mathf.Max(a.yMin, b.yMin);
+                    if (width <= 0f || height <= 0f)
+                        continue;
+
+                    overlappedPairCount++;
+                    var overlapArea = width * height;
+                    var smallerArea = Mathf.Max(1f, Mathf.Min(a.width * a.height, b.width * b.height));
+                    maxOverlapRatio = Mathf.Max(maxOverlapRatio, overlapArea / smallerArea);
+                }
+            }
+
+            if (minCenterDistancePixels == float.MaxValue)
+                minCenterDistancePixels = 0f;
         }
 
         private static IEnumerable<Vector3> BoundsCorners(Bounds bounds)
@@ -1394,21 +1649,21 @@ namespace GirlsWar
             var positions = sprite.IsOurHero
                 ? new[]
                 {
-                    new Vector3(-4.15f, -0.98f, 0f),
-                    new Vector3(-2.75f, -0.5f, 0f),
-                    new Vector3(-1.35f, -1.45f, 0f),
-                    new Vector3(-3.55f, -1.95f, 0f),
-                    new Vector3(-2.15f, -1.45f, 0f),
-                    new Vector3(-0.75f, -2.35f, 0f),
+                    new Vector3(-1.55f, -1.05f, 0f),
+                    new Vector3(-3.35f, -1.85f, 0f),
+                    new Vector3(-4.7f, -0.65f, 0f),
+                    new Vector3(-2.4f, -1.95f, 0f),
+                    new Vector3(-3.75f, -2.2f, 0f),
+                    new Vector3(-0.95f, -1.85f, 0f),
                 }
                 : new[]
                 {
-                    new Vector3(4.15f, -0.98f, 0f),
-                    new Vector3(2.75f, -0.5f, 0f),
-                    new Vector3(1.35f, -1.45f, 0f),
-                    new Vector3(3.55f, -1.95f, 0f),
-                    new Vector3(2.15f, -1.45f, 0f),
-                    new Vector3(0.75f, -2.35f, 0f),
+                    new Vector3(1.55f, -1.05f, 0f),
+                    new Vector3(3.35f, -1.85f, 0f),
+                    new Vector3(4.7f, -0.65f, 0f),
+                    new Vector3(2.4f, -1.95f, 0f),
+                    new Vector3(3.75f, -2.2f, 0f),
+                    new Vector3(0.95f, -1.85f, 0f),
                 };
 
             var index = Mathf.Clamp(slot, 0, positions.Length - 1);
@@ -1521,10 +1776,17 @@ namespace GirlsWar
             public string visualActorWorldBounds;
             public string visualActorScreenRect;
             public float visualActorScreenAreaRatio;
+            public string visualActorWorldPositions;
+            public string visualActorScreenRects;
+            public float visualActorMaxOverlapRatio;
+            public float visualActorMinCenterDistancePixels;
+            public int visualActorOverlappedPairCount;
             public string capturePath;
             public bool captureExists;
             public int captureBytes;
             public int captureNonDarkSampleCount;
+            public int captureSequenceFrameCount;
+            public string captureSequencePaths;
             public int monsterBaseFallbackCount;
             public bool defineLoadOk;
             public string enumSnapshot;
