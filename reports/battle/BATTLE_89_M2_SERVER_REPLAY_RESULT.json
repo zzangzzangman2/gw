@@ -1,0 +1,11 @@
+{
+  "milestone": "BATTLE_89_m2_server_replay",
+  "stagesCompleted": "luaenv+loader > permissive-_G > 
+                    pcall(requ... > local ok,m = pcall(require, 'Gam... > if GameInit then rawset(GameInit... > local ok,m = pcall(require, 'Jso... > local ok,m = pcall(require, 'Gam... > local ok,m = pcall(require, 'Gam... > local ok,m = pcall(require, 'Com... > local ok,m = pcall(require, 'Eve... > local ok,m = pcall(require, 'Mod... > local ok,m = pcall(require, 'Pla... > 
+                    local NOOP... > PNB = require('ProcedureNormalBa...",
+  "replayRan": false,
+  "playFightServerCheckReturn_isValid": "unknown",
+  "chainTrace": "unknown",
+  "failedStage": "local data = JsonUtil and JsonUtil.decode and Js...",
+  "error": "Modules/Battle/HeroCtrl:834: attempt to index a nil value (field 'DTMonsterRow') | stack traceback: | 	Modules/Battle/HeroCtrl:834: in method 'OnOpen' | 	ProcedureNormalBattle:1842: in function <ProcedureNormalBattle:1791> | 	(...tail calls...) | 	ProcedureNormalBattle:1784: in function 'ProcedureNormalBattle.LoadEnemyPlayerHeros' | 	ProcedureNormalBattle:435: in function 'ProcedureNormalBattle.BeginFightPlayWithServer' | 	[string 'chunk']:97: in main chunk"
+}

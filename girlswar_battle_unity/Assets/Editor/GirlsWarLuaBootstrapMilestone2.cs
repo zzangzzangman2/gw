@@ -29,7 +29,11 @@ namespace GirlsWar
             -- LOGIC. (Branches it controls collapse to false/0 — fine for a headless run.)
             local NOOP = {}
             setmetatable(NOOP, {
-              __index   = function() return NOOP end,
+              -- numeric keys -> nil so `ipairs(NOOP)` terminates at index 1 (Lua 5.3 ipairs
+              -- reads t[i] through __index; returning NOOP forever = infinite loop, e.g.
+              -- HeroBattleInfo.SetHeroSkill's `for _ in ipairs(e.underwearSuits)`). Non-numeric
+              -- keys still chain to NOOP so field/method access stays absorbing.
+              __index   = function(_, k) if type(k)=='number' then return nil end return NOOP end,
               __newindex= function() end,
               __call    = function() return NOOP end,
               __lt = function() return false end,
@@ -228,6 +232,230 @@ namespace GirlsWar
             File.WriteAllText(Path.Combine(outDir, "BATTLE_88_M2_HEADLESS_BATTLE_RESULT.json"),
                               sb.ToString(), new UTF8Encoding(false));
             Debug.Log($"[GirlsWarLua] M2 entered={battleEntered} failStage={failStage} err={err}");
+        }
+
+        // M2 finish line: run the battle as the SERVER does (verify mode). With GameInit.IsClient
+        // =false the battle modules bind the SYNCHRONOUS coroutine driver (cs_coroutine_server.start
+        // = fn -> fn()) and skip the entire view/animation surface, so the wave/round replay runs
+        // start-to-finish headless and FightDataReportMgr validates it. No Play Mode needed.
+        // (Client mode's replay is Unity-coroutine/time-driven -> that's the watchable M3 path.)
+        public static void RunServerReplay()
+        {
+            var stages = new System.Collections.Generic.List<string>();
+            string failStage = "", err = "";
+            bool replayRan = false;
+            string isValid = "unknown", bigRound = "unknown";
+
+            LuaEnv env = null;
+            try
+            {
+                env = new LuaEnv();
+                env.AddLoader((ref string p) => GirlsWarLuaLoader.Load(ref p));
+                stages.Add("luaenv+loader");
+
+                env.DoString(SetupEnv);
+                LuaNoopHolder.Noop = env.Global.Get<LuaTable>("NOOP_STUB");
+                stages.Add("permissive-_G");
+
+                Safe(env, @"
+                    pcall(require, 'Common/Class')      -- global Class(): battle modules do HeroCtrl=Class(...)
+                    pcall(require, 'Common/StringUtil')
+                    pcall(require, 'Common/TableUtil')", stages, ref failStage, ref err, optional: true);
+
+                // SERVER MODE FIRST: load GameInit, then force IsClient=false BEFORE any battle
+                // module is required, so each binds cs_coroutine_server (sync) at load time.
+                Safe(env, @"local ok,m = pcall(require, 'GameInit')
+                            if ok and type(m)=='table' and type(rawget(_G,'GameInit'))~='table' then rawset(_G,'GameInit',m) end",
+                     stages, ref failStage, ref err, optional: true);
+                Safe(env, @"if GameInit then rawset(GameInit,'IsClient',false); rawset(GameInit,'IsBattlePlayVerify',false) end",
+                     stages, ref failStage, ref err, optional: true);
+
+                string[] globals = {
+                    "JsonUtil", "GameTools", "GameInit", "CommonEventId",
+                    "EventSystem", "ModulesInit", "PlayerMgr",
+                };
+                foreach (var g in globals)
+                {
+                    if (!string.IsNullOrEmpty(failStage)) break;
+                    Safe(env,
+                        $"local ok,m = pcall(require, '{g}'); " +
+                        $"if ok and type(m)=='table' and type(rawget(_G,'{g}'))~='table' then rawset(_G,'{g}',m) end",
+                        stages, ref failStage, ref err, optional: true);
+                }
+
+                Safe(env, @"
+                    local NOOP = NOOP_STUB
+                    for _,g in ipairs({'GameInit','EventSystem','ModulesInit','GameTools','PlayerMgr','CommonEventId','CameraMgr','FightLogMgr'}) do
+                      local m = rawget(_G, g)
+                      if type(m)=='table' then
+                        local mt = getmetatable(m)
+                        if mt == nil then
+                          setmetatable(m, { __index = function() return NOOP end })
+                        else
+                          local orig = rawget(mt, '__index')
+                          rawset(mt, '__index', function(t,k)
+                            local v
+                            if type(orig)=='function' then v = orig(t,k)
+                            elseif orig ~= nil then v = orig[k] end
+                            if v ~= nil then return v end
+                            return NOOP
+                          end)
+                        end
+                      end
+                    end", stages, ref failStage, ref err, optional: true);
+
+                if (string.IsNullOrEmpty(failStage))
+                    Safe(env, "PNB = require('ProcedureNormalBattle')", stages, ref failStage, ref err);
+
+                if (string.IsNullOrEmpty(failStage))
+                {
+                    var payloadPath = Path.GetFullPath(Path.Combine(
+                        Application.dataPath, "RestoreData", "battle", "BATTLE_TEST_PAYLOAD.json"));
+                    var json = File.Exists(payloadPath) ? File.ReadAllText(payloadPath) : "";
+                    env.Global.Set("BATTLE_TEST_JSON", json);
+                    Safe(env,
+                        @"local data = JsonUtil and JsonUtil.decode and JsonUtil.decode(BATTLE_TEST_JSON) or nil
+                          local info = data and data.battleInfo or data
+                          assert(info, 'no battleInfo in payload')
+                          if PlayerMgr and type(rawget(PlayerMgr,'PlayerInfo'))~='table' then
+                            rawset(PlayerMgr, 'PlayerInfo', { uid = info.ourPlayerId or 0 })
+                          end
+                          -- CRITICAL: PlayFightServerCheck dispatches via
+                          -- ModulesInit.ProcedureNormalBattle.BeginFightPlayWithServer(...), and the
+                          -- battle reads ModulesInit.ProcedureNormalBattle.<state> throughout. Our
+                          -- permissive __index leaves that = NOOP (so the whole entry no-ops:
+                          -- chainTrace was NOCHAIN). Bind it to the real required PNB table.
+                          if ModulesInit and PNB then rawset(ModulesInit, 'ProcedureNormalBattle', PNB) end
+                          -- HeroMgr: player's hero inventory keyed by heroId. ourTeamFormation
+                          -- entries carry only heroId; LoadPlayerHeros fills heroDid via
+                          -- HeroMgr:GetHeroDataByHeroId(heroId), and HeroCtrl:OnOpen needs a valid
+                          -- heroDid to load DTHeroRow (config). The payload's ourHeros pairs
+                          -- heroId<->heroDid, so build the lookup from it (source-backed).
+                          do
+                            local byId = {}
+                            local function idx(list) if type(list)=='table' then for k=1,#list do local hh=list[k]; if hh and hh.heroId then byId[hh.heroId]=hh end end end end
+                            idx(info.ourHeros); idx(info.enemyHeros)
+                            if type(info.waveData)=='table' then for _,wv in ipairs(info.waveData) do idx(wv.enemyHeros) end end
+                            rawset(_G,'HeroMgr', setmetatable({
+                              GetHeroDataByHeroId = function(_, id) return byId[id] end,
+                              GetHeroData         = function(_, id) return byId[id] end,
+                            }, { __index = function() return NOOP_STUB end }))
+                          end
+                          -- Localization is display-only; the real GetLocalize gsubs a NOOP
+                          -- language template headless. Return the key as a string so name/text
+                          -- reads (e.g. HeroCtrl NickName) never crash the battle logic.
+                          if GameTools then
+                            GameTools.GetLocalize = function(a) return type(a)=='string' and a or tostring(a) end
+                          end
+                          -- Data tables: large tables (monster/soul/buff/...) default to isLoadIO=true
+                          -- (read .bigd binary IO at a runtime path we don't provision -> GetEntity
+                          -- crashes on a nil DataTableHeader). The game flips them to inline-Lua mode
+                          -- when GameTools.ClientIsSupportIOLoad()==false (LoadList sets isLoadIO=false
+                          -- -> GetEntity uses InitRequire over the decoded *EntityTableData Lua).
+                          -- Force offline Lua-load: flag false + flip every loaded DB model's field.
+                          if GameTools then GameTools.ClientIsSupportIOLoad = function() return false end end
+                          for _, mod in pairs(package.loaded) do
+                            if type(mod)=='table' and rawget(mod,'isLoadIO')==true then rawset(mod,'isLoadIO', false) end
+                          end
+                          -- TRACE the begin chain: wrap PNB functions (PNB is the procedure table,
+                          -- called as e.X()) to record call order. Tells us exactly where the
+                          -- teams-load -> ready -> BattleBegin -> round-loop chain stops. (Wrapping
+                          -- before fn() works for OnBattleTeamReady too: InitBattleTeam re-captures
+                          -- e.OnBattleTeamReady into the teams during fn, picking up the wrapper.)
+                          TRACE = ''
+                          local CNT = {}
+                          local function wrap(name)
+                            local orig = rawget(PNB, name)
+                            PNB[name] = function(...)
+                              CNT[name] = (CNT[name] or 0) + 1
+                              if CNT[name] <= 3 then TRACE = TRACE .. name .. ';' end
+                              if type(orig)=='function' then return orig(...) end
+                            end
+                          end
+                          for _,n in ipairs({'OnBattleTeamReady','FirstBattleTeamReady',
+                            'AfterBattleTeamReady','CheckBattleBegin','BattleBegin',
+                            'BattleAllBigRoundBegin','BattleBigRoundBegin','BattleSmallRoundBegin',
+                            'LoadPlayerHero','FinalBattleEnd'}) do wrap(n) end
+                          -- Call BeginFightPlayWithServer DIRECTLY (the real replay entry) instead
+                          -- of PlayFightServerCheck, whose Exit() wipes team/round state before we
+                          -- can inspect it. Same synchronous path: InitBattleInfo -> teams load
+                          -- (IsSkipBattle) -> OnBattleTeamReady -> BattleBegin -> round loop.
+                          pcall(function() PNB.IsOpenCurBattleCheck = true end)
+                          -- DIAGNOSTIC: count which hero-load branch runs. sync branch (IsSkipBattle
+                          -- true) -> BattleTeam:AddHeroCtrl; async branch -> GameTools:PoolGameObjectSpawn.
+                          DIAG = { pool=0, addHero=0, addPet=0 }
+                          if GameTools then
+                            local o = rawget(GameTools,'PoolGameObjectSpawn')
+                            GameTools.PoolGameObjectSpawn = function(...) DIAG.pool=DIAG.pool+1; if type(o)=='function' then return o(...) end end
+                          end
+                          local BT = rawget(_G,'BattleTeam')
+                          if type(BT)=='table' then
+                            local oh = rawget(BT,'AddHeroCtrl'); BT.AddHeroCtrl = function(...) DIAG.addHero=DIAG.addHero+1; if type(oh)=='function' then return oh(...) end end
+                            local op = rawget(BT,'AddPetCtrl'); BT.AddPetCtrl = function(...) DIAG.addPet=DIAG.addPet+1; if type(op)=='function' then return op(...) end end
+                          end
+                          -- Re-assert server mode right before entry: GameInit defaults IsClient=true
+                          -- (init/GameInit.lua) and helpers re-set it; for a headless SYNC replay it
+                          -- MUST stay false so client view/animation code (which waits on frames we
+                          -- never tick) is bypassed instead of spinning forever.
+                          if GameInit then rawset(GameInit,'IsClient',false) end
+                          PROBE = 'Class='..type(rawget(_G,'Class'))
+                            ..' HeroCtrlIsClass='..tostring(type(IsLuaClass)=='function' and IsLuaClass(rawget(_G,'HeroCtrl')))
+                            ..' IsClient='..tostring(GameInit and GameInit.IsClient)
+                          pcall(function() CS.UnityEngine.Debug.Log('[GirlsWarLua] PRE-BEGIN '..PROBE) end)
+                          -- safety: the replay engine expects frames/time; if a loop runs away
+                          -- headless, abort with a traceback instead of hanging forever.
+                          pcall(function()
+                            local _n = 0
+                            debug.sethook(function() _n = _n + 1; if _n > 300 then error('INSTR_LIMIT runaway loop (headless replay)') end end, '', 10000000)
+                          end)
+                          local begin = PNB.BeginFightPlayWithServer
+                          assert(begin, 'no BeginFightPlayWithServer')
+                          begin(info)
+                          pcall(function() debug.sethook() end)
+                          local ot, et = rawget(PNB,'OurTeam'), rawget(PNB,'EnemyTeam')
+                          REPLAY_ISVALID =
+                            'skip='..tostring(rawget(PNB,'IsSkipBattle'))..
+                            ' pool='..tostring(DIAG.pool)..' addHero='..tostring(DIAG.addHero)..' addPet='..tostring(DIAG.addPet)..
+                            ' ourMax='..tostring(ot and rawget(ot,'MaxHeroCount'))..
+                            ' ourCur='..tostring(ot and rawget(ot,'CurrHeroCount'))..
+                            ' readyCount='..tostring(rawget(PNB,'ReadyTeamCount'))..
+                            ' isFirstReady='..tostring(rawget(PNB,'IsFirstBattleTeamReady'))
+                          REPLAY_BIGROUND = (TRACE=='' and 'NOCHAIN' or TRACE)
+                                            .. ' | loadHero=' .. tostring(CNT['LoadPlayerHero'] or 0)
+                                            .. ' bigRound=' .. tostring(CNT['BattleBigRoundBegin'] or 0)
+                                            .. ' currBigRound=' .. tostring(rawget(PNB,'CurrBattleBigRound'))",
+                        stages, ref failStage, ref err);
+                    if (string.IsNullOrEmpty(failStage))
+                    {
+                        replayRan = true;
+                        try { isValid = env.Global.Get<string>("REPLAY_ISVALID"); } catch { }
+                        try { bigRound = env.Global.Get<string>("REPLAY_BIGROUND"); } catch { }
+                        try { isValid = (env.Global.Get<string>("PROBE") ?? "") + " || " + isValid; } catch { }
+                    }
+                }
+            }
+            catch (Exception e)
+            {
+                if (string.IsNullOrEmpty(failStage)) { failStage = "init"; err = e.Message; }
+            }
+            finally { try { env?.Dispose(); } catch { } }
+
+            err = (err ?? "").Replace("\\", "/").Replace("\"", "'").Replace("\n", " | ");
+            var sb = new StringBuilder();
+            sb.Append("{\n");
+            sb.Append("  \"milestone\": \"BATTLE_89_m2_server_replay\",\n");
+            sb.Append($"  \"stagesCompleted\": \"{string.Join(" > ", stages)}\",\n");
+            sb.Append($"  \"replayRan\": {replayRan.ToString().ToLower()},\n");
+            sb.Append($"  \"playFightServerCheckReturn_isValid\": \"{isValid}\",\n");
+            sb.Append($"  \"chainTrace\": \"{bigRound}\",\n");
+            sb.Append($"  \"failedStage\": \"{failStage}\",\n");
+            sb.Append($"  \"error\": \"{err}\"\n");
+            sb.Append("}\n");
+            var outDir = Path.GetFullPath(Path.Combine(Application.dataPath, "..", "..", "reports", "battle"));
+            Directory.CreateDirectory(outDir);
+            File.WriteAllText(Path.Combine(outDir, "BATTLE_89_M2_SERVER_REPLAY_RESULT.json"),
+                              sb.ToString(), new UTF8Encoding(false));
+            Debug.Log($"[GirlsWarLua] M2 serverReplay ran={replayRan} isValid={isValid} bigRound={bigRound} failStage={failStage} err={err}");
         }
 
         private static void Safe(LuaEnv env, string lua, System.Collections.Generic.List<string> stages,
