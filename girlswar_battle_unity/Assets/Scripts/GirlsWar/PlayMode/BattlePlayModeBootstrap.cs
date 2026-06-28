@@ -2973,6 +2973,7 @@ namespace GirlsWar
             var actorOverlapRects = new List<Rect>();
             var actorRectSummaries = new List<string>();
             var actorHeightSummaries = new List<string>();
+            var actorRealHeightSummaries = new List<string>();
             var actorAnimationSummaries = new List<string>();
             var actorPositions = new List<string>();
             var hasDiagnosticScreenRect = false;
@@ -3046,6 +3047,13 @@ namespace GirlsWar
                     }
                     actorRectSummaries.Add(actorKey + "->" + handle.ResolvedActorId + ":" + RectString(rect));
                     actorHeightSummaries.Add(actorKey + "->" + handle.ResolvedActorId + "=" + rect.height.ToString("0.#") + "px");
+                    // REAL measured render height (world bounds, incl. weapons/effects), resolution-
+                    // independent. capPx = world height projected into the 1280x570 capture. Unlike
+                    // visualActorHeightSummary (synthetic DiagnosticActorHeightPixels), this is the
+                    // actual rendered size -> trust this for size verification.
+                    var realWorldH = actorBounds.size.y;
+                    var realCapPx = realWorldH / (2f * camera.orthographicSize) * CaptureHeight;
+                    actorRealHeightSummaries.Add(actorKey + "->" + handle.ResolvedActorId + "=" + realWorldH.ToString("0.00") + "u/" + realCapPx.ToString("0") + "px/" + (realCapPx / CaptureHeight * 100f).ToString("0") + "%");
                     if (!hasActorHeight)
                     {
                         minActorHeight = rect.height;
@@ -3069,6 +3077,7 @@ namespace GirlsWar
             result.visualActorWorldPositions = string.Join(";", actorPositions.ToArray());
             result.visualActorScreenRects = string.Join(";", actorRectSummaries.ToArray());
             result.visualActorHeightSummary = string.Join(";", actorHeightSummaries.ToArray());
+            result.visualActorRealHeightSummary = string.Join(";", actorRealHeightSummaries.ToArray());
             result.visualActorMinHeightPixels = hasActorHeight ? minActorHeight : 0f;
             result.visualActorMaxHeightPixels = hasActorHeight ? maxActorHeight : 0f;
             result.visualActorShadowCount = actorShadowCount;
@@ -3770,6 +3779,7 @@ namespace GirlsWar
             public string visualActorWorldPositions;
             public string visualActorScreenRects;
             public string visualActorHeightSummary;
+            public string visualActorRealHeightSummary;
             public float visualActorMinHeightPixels;
             public float visualActorMaxHeightPixels;
             public int visualActorShadowCount;
