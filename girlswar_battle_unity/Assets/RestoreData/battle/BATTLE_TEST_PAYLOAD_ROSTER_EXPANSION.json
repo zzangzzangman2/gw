@@ -745,14 +745,14 @@
      {
       "formationId": 0,
       "heroDid": 1100112,
-      "position": 3,
+      "position": 2,
       "firstValue": 0,
       "heroId": -2
      },
      {
       "formationId": 0,
       "heroDid": 1100113,
-      "position": 5,
+      "position": 3,
       "firstValue": 0,
       "heroId": -3
      }
@@ -1600,14 +1600,14 @@
      {
       "formationId": 0,
       "heroDid": 1100122,
-      "position": 3,
+      "position": 2,
       "firstValue": 0,
       "heroId": -2
      },
      {
       "formationId": 0,
       "heroDid": 1100123,
-      "position": 5,
+      "position": 3,
       "firstValue": 0,
       "heroId": -3
      }
@@ -2335,14 +2335,14 @@
      {
       "formationId": 0,
       "heroDid": 1100132,
-      "position": 3,
+      "position": 2,
       "firstValue": 0,
       "heroId": -2
      },
      {
       "formationId": 0,
       "heroDid": 1100133,
-      "position": 5,
+      "position": 3,
       "firstValue": 0,
       "heroId": -3
      }

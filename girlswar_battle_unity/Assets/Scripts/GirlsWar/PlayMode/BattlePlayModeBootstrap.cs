@@ -30,7 +30,7 @@ namespace GirlsWar
         private const int CaptureWidth = 1280;
         private const int CaptureHeight = 570;
         private const string VisualTuningVersion = "battle92-source-formation-character-ratio-v16";
-        private const float VisualMapWidthUnits = 12.85f;
+        private const float VisualMapWidthUnits = 22.6f; // fill the real ortho-5.0 view width (22.46)
         private static readonly int[] DefaultHudCardActorIds = { 1036, 1002, 1034, 0, 0 };
         private static readonly int[] RosterExpansionHudCardActorIds = { 1005, 1010, 1002, 1003, 1001 };
         private static readonly int[] StandingSnapshotEnemyActorIds = { 1100111, 1100112, 1100113 };
@@ -1502,12 +1502,11 @@ namespace GirlsWar
             camera.clearFlags = CameraClearFlags.SolidColor;
             camera.backgroundColor = new Color(0.025f, 0.028f, 0.034f, 1f);
             camera.orthographic = true;
-            // Symmetric framing of the real scene formation (teams at world x=-4..+4, stations
-            // span x[-6.65,+6.65]). Centered at x=0 so our team sits left, enemy right, like the scene.
-            // ortho 3.5: half-width = 3.5*aspect(2.245) = 7.86 world units, so even the back-corner
-            // station (x=-6.65) plus the actor's ~0.75 half-width stays inside the frame (no clipping).
-            camera.orthographicSize = 3.5f;
-            camera.transform.position = new Vector3(0f, -1.6f, -10f);
+            // REAL game camera values (not guessed): Common/Define.lua OG_DESIGN_SIZE=5,
+            // OGAdjustSizeRate=1.0 -> CameraCtrlOriginalOrthographicSize = 5*1.0 = 5.0; and PNB
+            // DoCameraCtrlReset -> CameraMgr:SetCameraPosition(NormalBattle, Vector3(0,0,-50)).
+            camera.orthographicSize = 5.0f;
+            camera.transform.position = new Vector3(0f, 0f, -10f);
             camera.transform.rotation = Quaternion.identity;
 
             var stage = GameObject.Find("B90_VisualStage");
@@ -1528,9 +1527,11 @@ namespace GirlsWar
             root.transform.SetParent(parent, false);
             CreateMapFill(root.transform);
             var created =
-                CreateMapLayer(root.transform, "Map_11003_5.png", "B90_Map_11003_BackVillage", VisualMapWidthUnits, -1.63f, 2f, -130) |
-                CreateMapLayer(root.transform, "Map_11003_3.png", "B90_Map_11003_Skyline", VisualMapWidthUnits, 0.04f, 1.95f, -125) |
-                CreateMapLayer(root.transform, "Map_11003_2.png", "B90_Map_11003_Ground", VisualMapWidthUnits, -2.78f, 1.9f, -120);
+                // bottomY refit for camera y=0, ortho 5.0 (view y -5..+5) at the wider map scale:
+                // ground fills the lower (where actors stand), buildings mid, skyline top.
+                CreateMapLayer(root.transform, "Map_11003_5.png", "B90_Map_11003_BackVillage", VisualMapWidthUnits, -1.0f, 2f, -130) |
+                CreateMapLayer(root.transform, "Map_11003_3.png", "B90_Map_11003_Skyline", VisualMapWidthUnits, 2.0f, 1.95f, -125) |
+                CreateMapLayer(root.transform, "Map_11003_2.png", "B90_Map_11003_Ground", VisualMapWidthUnits, -5.0f, 1.9f, -120);
 
             if (!created)
                 CreateMapLayer(root.transform, "Map_11001_2.png", "B90_Map_11001_Fallback", 10.5f, -2.1f, 2f, -120);
@@ -1541,7 +1542,9 @@ namespace GirlsWar
             var go = new GameObject("B90_Map_11003_SunsetFill");
             go.transform.SetParent(parent, false);
             go.transform.localPosition = new Vector3(0f, 0f, 2.1f);
-            go.transform.localScale = new Vector3(13.2f, 5.9f, 1f);
+            // Cover the FULL real-camera view (ortho 5.0 -> 22.46 x 10 world units) so there are
+            // no black borders behind the village strips. Sized with margin and centered at camera.
+            go.transform.localScale = new Vector3(24f, 11f, 1f);
             var renderer = go.AddComponent<SpriteRenderer>();
             renderer.sprite = SolidSprite();
             renderer.color = new Color(0.38f, 0.22f, 0.17f, 1f);
