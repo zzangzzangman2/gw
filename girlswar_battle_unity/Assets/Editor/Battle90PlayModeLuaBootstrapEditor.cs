@@ -49,6 +49,18 @@ namespace GirlsWar
                 false);
         }
 
+        [MenuItem("GirlsWar/Battle/BATTLE92 Manual Roster Expansion Play")]
+        public static void OpenRosterExpansionManualPlay()
+        {
+            StartManualPlay(
+                BattlePlayModeBootstrap.RosterExpansionResultFileName,
+                RosterExpansionFrameBudget,
+                true,
+                BattlePlayModeBootstrap.RosterExpansionPayloadFileName,
+                RosterExpansionHudCards,
+                false);
+        }
+
         private static void StartRun(string resultFileName, int frameBudget, bool useAttackTaskPreview)
         {
             StartRun(resultFileName, frameBudget, useAttackTaskPreview, BattlePlayModeBootstrap.DefaultPayloadFileName, null, false);
@@ -90,6 +102,34 @@ namespace GirlsWar
             EditorApplication.EnterPlaymode();
         }
 
+        private static void StartManualPlay(string resultFileName, int frameBudget, bool useAttackTaskPreview, string payloadFileName, int[] hudCardActorIds, bool standingSnapshotOnly)
+        {
+            Directory.CreateDirectory(ProjectPath("Assets/Scenes"));
+            Directory.CreateDirectory(RepoPath("reports/battle"));
+
+            EnsureScene();
+
+            activeResultFileName = resultFileName;
+            activeFrameBudget = frameBudget;
+            activeUseAttackTaskPreview = useAttackTaskPreview;
+            activeStandingSnapshotOnly = standingSnapshotOnly;
+            activePayloadFileName = string.IsNullOrEmpty(payloadFileName) ? BattlePlayModeBootstrap.DefaultPayloadFileName : payloadFileName;
+
+            previousEnterPlayModeOptionsEnabled = EditorSettings.enterPlayModeOptionsEnabled;
+            previousEnterPlayModeOptions = EditorSettings.enterPlayModeOptions;
+            EditorSettings.enterPlayModeOptionsEnabled = true;
+            EditorSettings.enterPlayModeOptions = EnterPlayModeOptions.DisableDomainReload;
+
+            var resultPath = RepoPath("reports/battle/" + activeResultFileName);
+            BattlePlayModeBootstrap.ConfigureForEditorRun(resultPath, activeFrameBudget, activeUseAttackTaskPreview, activePayloadFileName, hudCardActorIds, activeStandingSnapshotOnly);
+
+            EditorSceneManager.OpenScene(ScenePath, OpenSceneMode.Single);
+
+            EditorApplication.playModeStateChanged -= OnManualPlayModeStateChanged;
+            EditorApplication.playModeStateChanged += OnManualPlayModeStateChanged;
+            EditorApplication.EnterPlaymode();
+        }
+
         private static void OnUpdate()
         {
             if (EditorApplication.timeSinceStartup - startedAt > TimeoutSeconds)
@@ -115,6 +155,15 @@ namespace GirlsWar
             if (EditorApplication.isPlaying)
                 EditorApplication.ExitPlaymode();
             EditorApplication.Exit(exitCode);
+        }
+
+        private static void OnManualPlayModeStateChanged(PlayModeStateChange state)
+        {
+            if (state != PlayModeStateChange.ExitingPlayMode && state != PlayModeStateChange.EnteredEditMode)
+                return;
+
+            EditorApplication.playModeStateChanged -= OnManualPlayModeStateChanged;
+            RestoreEnterPlayModeSettings();
         }
 
         private static void RestoreEnterPlayModeSettings()
