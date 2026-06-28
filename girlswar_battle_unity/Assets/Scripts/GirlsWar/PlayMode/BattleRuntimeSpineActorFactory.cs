@@ -1825,7 +1825,18 @@ namespace GirlsWar
             NormalizeRendererDepth(root);
         }
 
+        // Reference-match scale. The per-character base heights below render heroes at ~17% body
+        // height (head ~41%) vs the reference 참고.mp4 (1280x570, ortho 5.0) where heroes sit at
+        // ~24% body (head ~34%, feet aligned ~58%). Feet are anchored by the real station coords,
+        // so only the height differs; (330-195)/(330-235)=1.42 raises our heads to match. 1.4x.
+        private const float ReferenceSizeScale = 1.4f;
+
         private static float TargetActorWorldHeight(int actorId)
+        {
+            return BaseTargetActorWorldHeight(actorId) * ReferenceSizeScale;
+        }
+
+        private static float BaseTargetActorWorldHeight(int actorId)
         {
             switch (actorId)
             {

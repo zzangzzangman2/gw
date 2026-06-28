@@ -57,6 +57,10 @@ namespace GirlsWar
             new Vector3(6.608f, -2.41f, 0.0f),  // pos5 BattleStation_5
             new Vector3(5.758f, -3.68f, -1.0f), // pos6 BattleStation_6
         };
+        // Pre-scale only used by ApplyPreviewFormationPosition for the static preview pass. The live
+        // actor size is set by BattleRuntimeSpineActorFactory.NormalizeActorHeight (measures world
+        // bounds -> TargetActorWorldHeight), which cancels this pre-scale, so it does NOT size the
+        // live battle. Left at native 1.0 / enemy 0.72; change TargetActorWorldHeight to resize.
         private static readonly float[] OurFormationSlotScales = { 1f, 1f, 1f, 1f, 1f, 1f };
         private static readonly float[] EnemyFormationSlotScales = { 0.72f, 0.72f, 0.72f, 0.72f, 0.72f, 0.72f };
         private static readonly Dictionary<string, Sprite> RuntimeUiSpriteCache = new Dictionary<string, Sprite>(StringComparer.OrdinalIgnoreCase);
@@ -1426,19 +1430,23 @@ namespace GirlsWar
 
         private static float StandingSnapshotTargetHeight(BattleRuntimeActorHandle handle)
         {
+            // Mirrors BattleRuntimeSpineActorFactory.TargetActorWorldHeight (the live path): base
+            // per-character heights x1.4 to match 참고.mp4 (heroes at ~24% body, feet aligned ~58%).
+            // This standing-snapshot path is currently inactive (normalize count 0 in the roster run)
+            // but kept consistent so a snapshot-only render matches the live battle size.
             if (handle == null)
-                return 2.0f;
+                return 2.8f;
             if (!handle.IsOurHero)
-                return handle.ResolvedActorId == 3001 ? 1.92f : 1.82f;
+                return handle.ResolvedActorId == 3001 ? 2.69f : 2.55f;
 
             switch (handle.ResolvedActorId)
             {
-                case 1001: return 2.02f;
-                case 1002: return 1.82f;
-                case 1003: return 2.08f;
-                case 1005: return 1.96f;
-                case 1010: return 2.28f;
-                default: return 1.95f;
+                case 1001: return 2.8f;
+                case 1002: return 2.55f;
+                case 1003: return 2.91f;
+                case 1005: return 2.74f;
+                case 1010: return 3.19f;
+                default: return 2.73f;
             }
         }
 
